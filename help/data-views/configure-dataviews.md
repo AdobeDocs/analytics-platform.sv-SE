@@ -2,7 +2,7 @@
 title: Konfigurera datavyer och attribuering
 description: Beskriver hur du skapar en datavy för en plattformsdatauppsättning i kundreseanalysen
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 ---
 
@@ -32,7 +32,7 @@ Tänk på detta innan du använder attribueringsinställningar:
 När du har [angett och sparat datavyinställningar](/help/data-views/create-dataview.md) och lagt till komponenter kan du ange attribueringsinställningar, om du vill göra det. Du kan ange inställningar för attribuering/förfallodatum/uppslag för mått och mätvärden. Om du t.ex. vill att attribueringen för en dimension ska finnas kvar, vill du förmodligen ange en anpassad förfallotid. Om du till exempel vill att en spårningskod (en kampanjvariabel) som är inställd på attributet Sista handen ska finnas kvar i en vecka, lägger du till en anpassad förfallotid på 1 vecka.
 
 >[!IMPORTANT]
->Du kan välja att inte ange allokering/förfallodatum. I så fall uppför sig dimensionerna som... . Mätvärden utan attributinställningar ärver inställningarna för den dimension som det här måttet används på.
+>Du kan välja att inte ange allokering/förfallodatum. I så fall fungerar dimensionerna som proppar (&quot;Samma Touch&quot;-attribueringsmodell). Mätvärden utan attributinställningar ärver inställningarna för den dimension som det här måttet används på.
 
 ![](assets/edit-component.png)
 
