@@ -2,7 +2,7 @@
 title: Frågor och svar om kundreseanalys
 description: Customer Journey Analytics - Frågor och svar.
 translation-type: tm+mt
-source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
+source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
 | Var finns alla inställningar för session och variabel beständighet nu? | Kundreseanalys tillämpar alla dessa inställningar vid rapporttillfället, och de här inställningarna finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer! |
 | Vad händer med våra befintliga segment/beräknade värden? | Customer Journey Analytics använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller beräkningarna är kompatibelt med kundreseanalysen. |
 | Hur hanterar kundreseanalyser `Uniques Exceeded` begränsningar? | Customer Journey Analytics har inga unika värdebegränsningar, så du behöver inte bekymra dig om dem! |
-| Om jag är en befintlig [!DNL Data Workbench] kund, kan jag då gå över till kundreseanalys just nu? | Det beror på. Om ni är starkt beroende av den enhetliga kundprocessen (UCP) vill ni vänta tills vi har sytt ihop. Om ni redan har höga kundautentiseringsnivåer, eller om ni vill ha alla data på ett och samma ställe, eller vill bli av med eVars, kan kundreseanalysen vara en bra passning. |
+| Om jag är en befintlig [!DNL Data Workbench] kund, kan jag då gå över till kundreseanalys just nu? | Det beror på. Om ni är starkt beroende av den enhetliga kundprocessen (UCP) vill ni vänta tills vi har sytt ihop. Om ni redan har höga kundautentiseringsnivåer, eller om ni vill ha alla era data på ett och samma ställe, eller vill bli av med eVars, kan kundreseanalysen passa bra. |
 
