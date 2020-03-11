@@ -2,7 +2,7 @@
 title: Frågor och svar om kundreseanalys
 description: Customer Journey Analytics - Frågor och svar.
 translation-type: tm+mt
-source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 | **Förutsättningar** |  |
 | Behöver ni Device Graph eller Device Coop för kundreseanalys? | Nej, privat enhetsdiagram eller enhetskoop krävs inte för kundreseanalys. Faktum är att de ännu inte stöds. |
 | Behöver ni Experience Cloud ID (ECID) för kundreseanalys? | Nej, kundreseanalysen stöder alla ID:n i en datauppsättning, oavsett om det är ECID eller något annat ID du väljer. |
-| Vad händer om ni behöver ETL era data före kundreseanalysen? | Idag måste ni arbeta tillsammans med en ETL-partner (Unifi eller Informatica) om ni behöver omvandla era data innan ni lägger in dem i AEP. Om du behöver ETL efter att data redan har importerats, kan AEP Query Services erbjuda några begränsade alternativ. |
+| Vad händer om ni behöver ETL (Extract, Transform, Load) för era data före kundreseanalysen? | Idag måste ni arbeta tillsammans med en ETL-partner (Unifi eller Informatica) om ni behöver omvandla era data innan ni lägger in dem i AEP. Om du behöver ETL efter att data redan har importerats, kan AEP Query Services erbjuda några begränsade alternativ. |
 | **Stitlar** |  |
 | Kan kundreseanalys&quot;sy ihop&quot; mellan olika enheter eller mellan datauppsättningar? | Nej. Customer Journey Analytics är ett analyssystem för att ta fram ditt eget ID. Planer för en bra sammanslagning är på gång. |
 | Stöds sammanslagning från anonymt beteende till autentiserat beteende? | Nej, inte än. |
