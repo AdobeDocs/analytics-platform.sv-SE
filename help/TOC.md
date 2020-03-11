@@ -13,7 +13,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Självstudiekurser
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5f97a68f90150c6d42ce6022473004602769fef2
+source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 5f97a68f90150c6d42ce6022473004602769fef2
    + [Frågor och svar](getting-started/cja-faq.md)
    + [Funktioner för kundreseanalys](getting-started/cja-aa.md)
    + [CJA-ordlista](getting-started/cja-glossary.md)
-+ Projekt {#cja-reporting}
++ Arbetsyteprojekt {#cja-reporting}
    + [Introduktion till arbetsytan](projects/workspace-basics.md)
    + [Utför grundläggande analys](projects/perform-basic-analysis.md)
    + [Avancerad analys](projects/perform-adv-analysis.md)
