@@ -2,7 +2,7 @@
 title: Översikt över kundreseanalys
 description: Introduktion till kundreseanalys
 translation-type: tm+mt
-source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -11,28 +11,22 @@ source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
 
 Customer Journey Analytics är en analysfunktion som gör att ni kan använda Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamodeller och datatyper. Med hjälp av XDM ( **Experience Data Model)** kan data representeras och organiseras på ett enhetligt sätt, vara klara för kombinering och utforskande. **Med Experience Query Services** kan ni använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla era data.
 
-## Jämföra CJA med Analysis Workspace
+## Jämföra CJA med traditionell Adobe Analytics
 
 Customer Journey Analytics utökar räckvidden för Analytics genom att erbjuda lättanvända funktioner för flera kanaler och ta bort begränsningar i tidigare versioner av Adobe Analytics. Några viktiga förbättringar är:
 
 * **Obegränsade variabler och händelser**: Begreppen eVars, props och events finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha en obegränsad mängd unika mått och mätvärden.
-* **Obegränsat antal uniques**: Adobe Experience Platform begränsas inte till några unika begränsningar, som 500 kB unika värden i traditionella rapportsviter.
+* **Obegränsade unika värden**: Adobe Experience Platform begränsas inte till några unika begränsningar, som 500 kB unika värden i traditionella rapportsviter.
 * **Ändra historiska data**: Med Adobe Experience Platform kan data tas bort eller korrigeras.
-* **Rapportövergripande data**: Befintliga implementeringar från flera datauppsättningar kan kombineras i Platform.
+* **Data** för flera rapporter: Befintliga implementeringar från flera datauppsättningar kan kombineras i Platform.
 
 Den första versionen av kundreseanalysen innehåller många av de funktioner som ingår i Analysis Workspace. En fullständig lista finns i Funktioner för [kundreseanalys](cja-aa.md).
 
-### Uppdateringar om terminologi
+## Jämföra CJA med enhetsövergripande analys
 
-Flera funktioner i CJA har bytt namn så att de överensstämmer med branschstandarder. Några av de uppdaterade namnen:
+[Enhetsövergripande analys](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) integreras med Adobe Experience Platform Identity Service, som använder Co-op Graph eller Private Graph, för att identifiera hur digitala enheter mappar till människor. Det är tillgängligt för Adobe Analytics Ultimate-kunder.
 
-* Segment kallas nu för filter
-* Virtuella rapportsviter kallas nu för vyer
-* Klassificeringar kallas nu&quot;Sök efter datauppsättningar&quot;
-* Kundattribut kallas nu profildatamängder
-* Träffbehållare kallas nu Event-behållare
-* Besöksbehållare kallas nu för sessionsbehållare
-* Besöksbehållare kallas nu för personbehållare
+CJA kan integreras med Adobe Experience Platform-datauppsättningar och möjliggör flerkanalsanalys i Analysis Workspace. Även om CJA ännu inte är integrerat med Co-op- eller Private-identitetsdiagram kan du&quot;sammanföra ditt eget ID&quot; för att sammanfoga datauppsättningar, och dessa datauppsättningar kan gå utöver digitala data och inkludera både online- och offlinekontaktpunkter. CJA-kraven beskrivs närmare nedan.
 
 ## Viktiga användningsexempel
 
@@ -47,7 +41,7 @@ Med kundreseanalys kan ni:
 
 ## Förutsättningar
 
-Innan du kan börja använda kundreseanalys måste du utföra följande steg:
+Innan du kan börja använda kundreseanalys måste följande krav vara uppfyllda:
 
 * Din organisation har ett aktivt kontrakt med Adobe Analytics för Select, Prime eller Ultimate med kundreseanalystillägget. Om du är osäker på vilken typ av kontrakt du har, eller om du är osäker på om du har CJA-tillägget, kontaktar du din organisations Account Manager.
 * Din organisation har etablerats för Adobe Experience Platform.
@@ -63,6 +57,18 @@ Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du f
    * Hantera identitetsnamnutrymmen
    * Visa sandlådor
 * Om du vill få tillgång till kundreseanalys eller skapa en anslutning måste du också läggas till i en kundreseanalysproduktprofil i [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+### Uppdateringar om terminologi
+
+Flera funktioner i CJA har bytt namn så att de överensstämmer med branschstandarder. Några av de uppdaterade namnen:
+
+* Segment kallas nu för filter.
+* Virtuella rapportsviter kallas nu för vyer.
+* Klassificeringar kallas nu&quot;Sök efter datauppsättningar&quot;.
+* Kundattribut kallas nu profildatamängder.
+* Träffbehållare kallas nu Event-behållare.
+* Besöksbehållare kallas nu för sessionsbehållare.
+* Besöksbehållare kallas nu för personbehållare.
 
 ## Andra funktioner som bygger på Adobe Experience Platform
 
