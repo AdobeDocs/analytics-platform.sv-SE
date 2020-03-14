@@ -2,7 +2,7 @@
 title: Hantera datumintervall
 description: Dela, byt namn på eller ta bort datumintervall i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
+source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 ---
 
@@ -29,8 +29,8 @@ Datumintervallhanteraren innehåller följande alternativ:
 Klicka i kryssrutan bredvid ett eller flera datumintervall om du vill se fler alternativ.
 
 * **Tagg**: Använd en tagg för alla markerade datumintervall. Med taggar kan du ordna datumintervall och filtrera dem med den vänstra kolumnen.
-* **Dela**: Dela en tagg med andra Experience Cloud-användare. Om du är produktadministratör kan du även dela filer till hela organisationen eller grupper. Datumintervall som delas med andra användare i organisationen innehåller en ![delad](../assets/shared.png) ikon bredvid titeln.
-* **Ta bort**: Ta bort de markerade datumintervallen permanent.
+* **Dela**: Dela ett datumintervall med andra Experience Cloud-användare. Om du är produktadministratör kan du även dela filer till hela organisationen eller grupper. Datumintervall som delas med andra användare i organisationen innehåller en ![delad](../assets/shared.png) ikon bredvid titeln.
+* **Ta bort**: Ta bort markerade datumintervall permanent.
 * **Byt namn**: Om ett datumintervall är markerat kan du ändra dess titel.
 * **Godkänn**: Om du är produktadministratör kan du lägga till en godkännandestämpel i ett datumintervall. Godkända datumintervall talar om för användarna i organisationen att de är&quot;officiella&quot; och skiljer dem från datumintervall som andra användare i organisationen har skapat. Godkända datumintervall innehåller en ![godkänd](../assets/approved.png) ikon bredvid titeln.
 * **Ogodkänd**: Om du är produktadministratör och väljer ett datumintervall som redan har godkänts kan du avgodkänna det.
