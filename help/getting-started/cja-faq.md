@@ -16,7 +16,7 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 | Behöver ni Experience Cloud ID (ECID) för kundreseanalys? | Nej, kundreseanalysen stöder alla ID:n i en datauppsättning, oavsett om det är ECID eller något annat ID du väljer. |
 | Vad händer om ni behöver ETL (Extract, Transform, Load) för era data före kundreseanalysen? | Idag måste ni arbeta tillsammans med en ETL-partner (Unifi eller Informatica) om ni behöver omvandla era data innan ni lägger in dem i AEP. Om du behöver ETL efter att data redan har importerats, kan AEP Query Services erbjuda några begränsade alternativ. |
 | **Stitlar** |  |
-| Kan kundreseanalys&quot;sy ihop&quot; mellan olika enheter eller mellan datauppsättningar? | Nej. Customer Journey Analytics är ett analyssystem för att ta fram ditt eget ID. Planer för en bra sammanslagning är på gång. |
+| Kan kundreseanalysen&quot;sy ihop&quot; mellan olika enheter eller mellan datauppsättningar? | Nej. Customer Journey Analytics är ett analyssystem för att ta fram ditt eget ID. Planer för en bra sammanslagning är på gång. |
 | Stöds sammanslagning från anonymt beteende till autentiserat beteende? | Nej, inte än. |
 | **Hämta data till kundreseanalys** |  |
 | Vilken fördröjning förväntas för kundreseanalys på plattformen? | <ul><li>Under normal belastning: &lt; 60<br>**minuterObs!**Om dataflödet genom rörledningen är ovanligt stort kan det ta upp till 24 timmar.</li><li>Data för säkerhetskopiering (upp till 10 miljarder händelser): &lt; 4 veckor</li></ul> |
