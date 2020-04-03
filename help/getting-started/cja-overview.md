@@ -9,7 +9,7 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 # Översikt över kundreseanalys
 
-Customer Journey Analytics är en analysfunktion som gör att ni kan använda Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamodeller och datatyper. Med hjälp av XDM ( **Experience Data Model)** kan data representeras och organiseras på ett enhetligt sätt, vara klara för kombinering och utforskande. **Med Experience Query Services** kan ni använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla era data.
+Customer Journey Analytics är en analysfunktion som gör att ni kan använda Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamappningar och datatyper. Med hjälp av XDM ( **Experience Data Model)** kan data representeras och organiseras på ett enhetligt sätt, vara klara för kombinering och utforskande. **Med Experience Query Services** kan ni använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla era data.
 
 ## Jämföra CJA med traditionell Adobe Analytics
 
