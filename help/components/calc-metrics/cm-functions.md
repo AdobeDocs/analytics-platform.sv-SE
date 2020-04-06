@@ -2,7 +2,7 @@
 title: Referens - grundläggande funktioner
 description: 'Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden. '
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -13,7 +13,7 @@ Med beräkningsverktyget kan du använda statistiska och matematiska funktioner 
 
 Här är en lista i alfabetisk ordning över funktionerna och deras definitioner.
 
-> [!NOTE] Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck av mätvärden. Till exempel [!DNL MAXV(metrics)] tillåter även [!DNL MAXV(PageViews + Visits).]
+>[!NOTE] Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck av mätvärden. Till exempel [!DNL MAXV(metrics)] tillåter även [!DNL MAXV(PageViews + Visits).]
 
 ## Tabellfunktioner kontra radfunktioner
 
