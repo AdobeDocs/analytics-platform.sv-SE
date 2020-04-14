@@ -2,7 +2,7 @@
 title: Funktioner för kundreseanalys
 description: Funktioner i kundreseanalys jämfört med funktionerna i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -28,7 +28,7 @@ I följande tabeller visas vilka funktioner i Adobe Analytics som stöds, stöds
 | Virtuella rapportsviter | Kallas nu [datavyer](/help/data-views/create-dataview.md). |
 | VRS-komponenturval | Nu en del av datavyer. |
 | Bearbetning av rapporttid | CJA använder sig enbart av Report Time Processing. |
-| Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med Adobe Experience Platform - CJA ärver alla dataändringar Experience Platform gör i underliggande datauppsättningar. |
+| Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med [!UICONTROL Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] som görs i underliggande datauppsättningar. |
 
 ## Stöds med caveats
 
@@ -36,7 +36,7 @@ I följande tabeller visas vilka funktioner i Adobe Analytics som stöds, stöds
 | --- | --- |
 | Produktvariabel | Den produktvariabel som för närvarande är tillgänglig för rapportering av data som överensstämmer med Experience Event-schemat (särskilt med objektet productListItems). |
 | Visualiseringar | Alla visualiseringar stöds förutom för kartvisualisering. |
-| AAM-målgrupper | Om kunderna använder datauppsättningar från Analytics Data Connector blir dessa data en del av ADC-data. |
+| AAM-målgrupper | Om kunderna använder [!UICONTROL Analytics Data Connector] datauppsättningar kommer dessa data att ingå i ADC-data. |
 | Projektdelning | Projektdelning stöds bara mellan CJA-användare - det finns ingen projektdelning mellan CJA och den traditionella Analysis Workspace. |
 | Skräddarsydd professionalisering | Stöd för alla anpassade sessioneringsfunktioner förutom mobilbakgrundstötar. |
 | eVar persistence-inställningar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Detta innebär att all beständighet baseras på rapporteringsdatumintervallet i stället för på alla data. |
@@ -50,9 +50,9 @@ I följande tabeller visas vilka funktioner i Adobe Analytics som stöds, stöds
 | Färdiga dimensioner av analysarbetsytan (t.ex. webbläsartyp, referenstyp, marknadsföringskanaler, besöksnummer osv.) | CJA har inte dessa dimensioner internt. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Se vår [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Paneler | Panelen Tom, panelen Attribution och panelen Frihand stöds till fullo. Segmentjämförelse stöds inte. |
 | Merchandising eVars | Merchandising eVars fungerar bara med ADC-baserade datauppsättningar om de inte följer samma XDM-schema (liknande produktlistans begränsningar ovan). |
-| Punktfiltrering | För ADC-baserade datauppsättningar (Analytics Data Connector) tillämpas robotfiltrering. Allmän robotfiltreringslogik för andra datauppsättningar utförs inte av Experience Platform eller CJA. |
+| Punktfiltrering | För ADC-baserade datauppsättningar (Analytics Data Connector) tillämpas robotfiltrering. Allmän robotfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
 | Bearbetar regler | För ADC-baserade datauppsättningar tillämpas fortfarande bearbetningsregler. |
-| Stitching av enhetsidentitet | Kunderna är begränsade till&quot;engångssammanfogningar&quot; av data via Query Service, eller måste för närvarande tillämpa denna logik på data innan Experience Platform-data kan hämtas. |
+| Stitching av enhetsidentitet | Kunderna är begränsade till&quot;engångsöppningar&quot; av data via Query Service, eller måste för närvarande tillämpa denna logik på data innan de kan matas in [!UICONTROL Experience Platform] . |
 
 ## Stöds inte just nu, men är planerad
 
@@ -95,6 +95,6 @@ I följande tabeller visas vilka funktioner i Adobe Analytics som stöds, stöds
 | Rapporter och analysmål |  |
 | Rapporter och analyskalenderhändelser |  |
 | Ad hoc-analys |  |
-| Rapportering av datalager | Adobe Experience Platform Query Service kommer att vara det nya gränssnittet för dessa användningsområden i CJA. |
+| Rapportering av datalager | [!UICONTROL Experience Platform Query Service] kommer att bli det nya gränssnittet för de här användningsområdena i CJA. |
 | Mobiltjänster |  |
 | Dataflöden |  |
