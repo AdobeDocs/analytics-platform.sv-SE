@@ -2,7 +2,7 @@
 title: Skapa en datavy
 description: Beskriver hur du skapar en datavy för en plattformsdatauppsättning i kundreseanalys (CJA).
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ## Förutsättning
 
-Innan du kan skapa datavyer måste du [skapa en eller flera anslutningar till Adobe Experience Platform-datauppsättningar](/help/connections/create-connection.md).
+Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till Experience Platform] -datauppsättningar](/help/connections/create-connection.md).
 
 ## Konfigurera inställningar
 
@@ -27,7 +27,7 @@ Innan du kan skapa datavyer måste du [skapa en eller flera anslutningar till Ad
 
    | Sessionsinställning | Definition |
    |---|---|
-   | Anslutning | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller plattformsdatauppsättningen/-typerna. |
+   | Anslutning | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller [!UICONTROL Experience Platform] datauppsättningen/datauppsättningarna. |
    | Namn | Det är obligatoriskt att ge datavyn ett namn. |
    | Beskrivning | En detaljerad beskrivning är inte obligatorisk, men rekommenderas. |
    | Lägg till taggar | Med taggar kan du ordna datavyer i kategorier. |
