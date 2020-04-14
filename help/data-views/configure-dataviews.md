@@ -2,7 +2,7 @@
 title: Konfigurera datavyer och attribuering
 description: Beskriver hur du skapar en datavy för en plattformsdatauppsättning i kundreseanalysen
 translation-type: tm+mt
-source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Tänk på detta innan du använder attribueringsinställningar:
 
 * I användargränssnittet för datavyer anger du standardattribuering. **Obs**: Vid ett senare datum kan du åsidosätta de här inställningarna i Workspace-projekt. Den här funktionen är dock inte tillgänglig för tillfället.
 
-* Attributinställningarna i kundreseanalys är icke-förstörande och retroaktiva. Med andra ord kan ni inte göra datauppsättningarna obotliga skador i kundreseanalysen. Även om du råkar ta bort något av misstag kan du alltid gå tillbaka till Experience Platform och hämta in datauppsättningen igen. (Tänk dock på att det kommer att kosta ytterligare att få in datauppsättningen igen.)
+* Attributinställningarna i kundreseanalys är icke-förstörande och retroaktiva. Med andra ord kan ni inte göra datauppsättningarna obotliga skador i kundreseanalysen. Även om du råkar ta bort något av misstag kan du alltid gå tillbaka till [!UICONTROL Experience Platform] och hämta tillbaka datauppsättningen. (Tänk dock på att det kommer att kosta ytterligare att få in datauppsättningen igen.)
 
 * Om du vill ha en dimension som fungerar som en traditionell eVar (konverteringsvariabel) bör du konfigurera den med attributet&quot;Last Touch Visit&quot; som standard.
 
