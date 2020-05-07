@@ -2,7 +2,10 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 09dcb36b96d95276b357e0f1308a977f5db5d711
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön)
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
 >[!IMPORTANT]
-Filter kallas&quot;segment&quot; i Adobe Analytics. Vi bytte namn på segment till filter eftersom Adobe Experience Platform har en annan definition av&quot;segment&quot;. Ett segment i AEP refererar till..
+>Filter kallas&quot;segment&quot; i Adobe Analytics. Vi bytte namn på segment till filter eftersom Adobe Experience Platform har en annan definition av&quot;segment&quot;.
 
 Filtreringen innefattar [Filter Builder](/help/components/filters/create-filters.md) för att konstruera filter och köra ett förtest samt [Filter Manager](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
 
