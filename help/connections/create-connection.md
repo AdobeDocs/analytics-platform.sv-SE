@@ -2,7 +2,10 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i kundreseanalysen.
 translation-type: tm+mt
-source-git-commit: f17994c7d6812480102b9dc5fdbfc4609d2d1012
+source-git-commit: b81116bba59c4b52dfe5b8b628c581e332a05c48
+workflow-type: tm+mt
+source-wordcount: '843'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,9 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ![Skapa anslutning](assets/create-connection.png)
 
-1. Den vänstra listen visar alla datauppsättningar som du kan hämta från [!DNL Experience Platform] . Markera en eller flera datauppsättningar som du vill hämta till [!UICONTROL Customer Journey Analytics] och klicka på **[!UICONTROL Add]**. (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet ovanför listan med datauppsättningar.)
+1. Välj först en sandlåda i Experience Platform som innehåller de datauppsättningar som du vill skapa en anslutning till. Adobe Experience Platform innehåller [sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar. Du kan inte komma åt data över sandlådor.
+
+1. När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen. Markera en eller flera datauppsättningar som du vill hämta till [!UICONTROL Customer Journey Analytics] och klicka på **[!UICONTROL Add]**. (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet ovanför listan med datauppsättningar.)
 
 1. För varje datauppsättning som du har lagt till i den här anslutningen anges datauppsättningstypen automatiskt baserat på de data som kommer in. [!UICONTROL Customer Journey Analytics] Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] data och [!UICONTROL Lookup] data.
 
