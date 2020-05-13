@@ -2,14 +2,17 @@
 title: Översikt över kundreseanalys
 description: Introduktion till kundreseanalys
 translation-type: tm+mt
-source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
+source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 0%
 
 ---
 
 
 # Översikt över kundreseanalys
 
-Customer Journey Analytics är en analysfunktion som gör att ni kan använda Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamappningar och datatyper. Med hjälp av XDM ( **Experience Data Model)** kan data representeras och organiseras på ett enhetligt sätt, vara klara för kombinering och utforskande. **Med Experience Query Services** kan ni använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla era data.
+Customer Journey Analytics är en analysfunktion som gör att ni kan använda Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamodeller och datatyper. Med hjälp av XDM ( **Experience Data Model)** kan data representeras och organiseras på ett enhetligt sätt, vara klara för kombinering och utforskande. **Med Experience Query Services** kan ni använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla era data.
 
 ## Jämföra CJA med traditionell Adobe Analytics
 
@@ -32,7 +35,7 @@ CJA kan integreras med Adobe Experience Platform-datauppsättningar och möjligg
 
 Med kundreseanalys kan ni:
 
-* **Se kunden i ett kundsammanhang**: Du kan visa och analysera data sekventiellt, över flera kanaler. Data från callcenter, POS-system och onlineegenskaper kan kombineras till en enda rapportvy.
+* **Se kunden i ett kundsammanhang**: Du kan visa och analysera data sekventiellt, över flera kanaler. Data från ert callcenter, era POS-system och onlineegenskaper kan kombineras till en enda rapportvy.
 * **Gör insikter tillgängliga för alla**: Demokratisera dataåtkomsten och låt fler människor fatta affärsbeslut med hjälp av datainriktade insikter. Alla i organisationen som ansvarar för någon aspekt av kundupplevelsen kan fatta riktiga beslut snabbare, baserat på mer fullständiga data.
 * **Utnyttja datavetenskapens styrka för era analytiker**: Med kundreseanalys kan vanliga människor använda datavetenskap för att få djupgående insikter och analyser.
 * **Visualisera och interagera med era datauppsättningar med ad hoc-rapportering**: Arbetsytan kan använda alla datauppsättningar från Adobe Experience Platform som följer vissa grundläggande regler.
