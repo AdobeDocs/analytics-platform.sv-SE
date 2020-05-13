@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i kundreseanalysen.
 translation-type: tm+mt
-source-git-commit: b81116bba59c4b52dfe5b8b628c581e332a05c48
+source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Klicka **[!UICONTROL Create new connection]** högst upp till höger.
 
-![Skapa anslutning](assets/create-connection.png)
+   ![Skapa anslutning](assets/create-connection.png)
 
 1. Välj först en sandlåda i Experience Platform som innehåller de datauppsättningar som du vill skapa en anslutning till. Adobe Experience Platform innehåller [sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar. Du kan inte komma åt data över sandlådor.
 
