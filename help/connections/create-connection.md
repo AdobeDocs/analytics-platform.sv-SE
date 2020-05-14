@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i kundreseanalysen.
 translation-type: tm+mt
-source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
+source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '834'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,8 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    ![Skapa anslutning](assets/create-connection.png)
 
-1. Välj först en sandlåda i Experience Platform som innehåller de datauppsättningar som du vill skapa en anslutning till. Adobe Experience Platform innehåller [sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar. Du kan inte komma åt data över sandlådor.
+1. Först **[!UICONTROL Select Datasets]** väljer du en [!UICONTROL sandbox] i Experience Platform som innehåller de datauppsättningar som du vill skapa en anslutning till.
+Adobe Experience Platform innehåller [sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans i separata virtuella miljöer. Du kan tänka dig [!UICONTROL sandboxes] som&quot;dataisoleringar&quot; som innehåller datauppsättningar och som används för att styra åtkomsten till datauppsättningar. Observera att du inte kan komma åt data över [!UICONTROL sandboxes].
 
 1. När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen. Markera en eller flera datauppsättningar som du vill hämta till [!UICONTROL Customer Journey Analytics] och klicka på **[!UICONTROL Add]**. (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet ovanför listan med datauppsättningar.)
 
