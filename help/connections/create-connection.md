@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i kundreseanalysen.
 translation-type: tm+mt
-source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
+source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
@@ -26,12 +26,17 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    ![Skapa anslutning](assets/create-connection.png)
 
-1. Först **[!UICONTROL Select Datasets]** väljer du en [!UICONTROL sandbox] i Experience Platform som innehåller de datauppsättningar som du vill skapa en anslutning till.
-Adobe Experience Platform innehåller [sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans i separata virtuella miljöer. Du kan tänka dig [!UICONTROL sandboxes] som&quot;dataisoleringar&quot; som innehåller datauppsättningar och som används för att styra åtkomsten till datauppsättningar. Observera att du inte kan komma åt data över [!UICONTROL sandboxes].
+1. Välj en sandlåda i Experience Platform som innehåller den eller de datauppsättningar som du vill skapa en anslutning till.
 
-1. När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen. Markera en eller flera datauppsättningar som du vill hämta till [!UICONTROL Customer Journey Analytics] och klicka på **[!UICONTROL Add]**. (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet ovanför listan med datauppsättningar.)
+   Adobe Experience Platform innehåller [sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar. Du kan inte komma åt data över sandlådor. När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen.
 
-1. För varje datauppsättning som du har lagt till i den här anslutningen anges datauppsättningstypen automatiskt baserat på de data som kommer in. [!UICONTROL Customer Journey Analytics] Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] data och [!UICONTROL Lookup] data.
+1. Markera en eller flera datauppsättningar som du vill hämta till [!UICONTROL Customer Journey Analytics] och klicka på **[!UICONTROL Add]**.
+
+   (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet ovanför listan med datauppsättningar.)
+
+1. För varje datauppsättning som du har lagt till i den här anslutningen anges datauppsättningstypen automatiskt baserat på de data som kommer in. [!UICONTROL Customer Journey Analytics]
+
+   Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] data och [!UICONTROL Lookup] data.
 
    | Typ av datauppsättning | Beskrivning | Tidsstämpel | Schema | Person-ID |
    |---|---|---|---|---|
@@ -39,7 +44,7 @@ Adobe Experience Platform innehåller [sandlådor](https://docs.adobe.com/conten
    | [!UICONTROL Lookup] | Motsvarar en klassificeringsfil. Dessa data används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på en XDM-klass med beteendet &quot;Record&quot;, förutom klassen &quot;XDM Individual Profile&quot;. | Ej tillämpligt |
    | [!UICONTROL Profile] | Motsvarar [!UICONTROL Customer Attributes] - för attribut som inte ändras eller som inte är temporala. Data som tillämpas på era besökare, användare eller kunder i [!UICONTROL Event] data. Du kan till exempel överföra CRM-data om dina kunder. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på klassen &quot;XDM Individual Profile&quot;. | Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning som definieras i [!DNL Experience Platform] har en egen uppsättning med ett eller flera definierade person-ID, t.ex. cookie-ID, Stitched ID, User ID, Tracking Code, osv.<br>![Person](assets/person-id.png)**IDNote **: Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du verkligen vill sammanfoga datauppsättningar måste du använda samma person-ID. |
 
-1. När du klickar **[!UICONTROL Next]** öppnas [!UICONTROL Create Connection] dialogrutan.
+1. Klicka **[!UICONTROL Next]** för att gå till [!UICONTROL Create Connection] dialogrutan.
 
    ![Skapa anslutning](assets/create-connection2.png)
 
