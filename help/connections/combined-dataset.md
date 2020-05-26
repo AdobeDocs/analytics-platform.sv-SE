@@ -2,7 +2,10 @@
 title: Kombinerade datauppsättningar
 description: Lär dig hur CJA skapar en anslutning genom att kombinera datauppsättningar.
 translation-type: tm+mt
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 1%
 
 ---
 
@@ -58,8 +61,8 @@ Om din anslutning endast innehöll den första tabellen och inte den andra skull
 
 | string_color | metrisk_a |
 | --- | --- |
-| Blå | 5 |
 | Ospecificerad | 6 |
+| Blå | 3 |
 | Röd | 2 |
 
 Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribueringen eftersom den `user_847` finns i båda datauppsättningarna. En rad från den andra datauppsättningsattributen `metric_a` till Gul, där de tidigare inte var angivna:
@@ -67,5 +70,5 @@ Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribuering
 | string_color | metrisk_a |
 | --- | --- |
 | Gul | 6 |
-| Röd | 2 |
 | Blå | 3 |
+| Röd | 2 |
