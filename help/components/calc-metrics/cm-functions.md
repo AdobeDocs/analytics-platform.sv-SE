@@ -2,12 +2,17 @@
 title: Referens - grundläggande funktioner
 description: 'Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden. '
 translation-type: tm+mt
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 2%
 
 ---
 
 
 # Referens - grundläggande funktioner
+
+>[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
 
@@ -273,7 +278,7 @@ STDEV(metric)
    <td> <b> Beskrivning</b> </td> 
   </tr> 
   <tr> 
-   <td> <b> <i> mått</i></b> </td> 
+   <td> <b> <i> mått</i> </b> </td> 
    <td> <p> Det mått som du vill använda för standardavvikelsen. </p> </td> 
   </tr> 
  </tbody> 
@@ -315,7 +320,7 @@ Anta att du har en kolumn med tre objekt:
 
 3
 
-Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. I Ad hoc-analys ser detta ut så här:
+Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. I Ad Hoc Analysis kommer detta att se ut så här:
 
 1 2/3
 
