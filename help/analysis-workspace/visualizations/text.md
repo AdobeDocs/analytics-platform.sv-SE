@@ -1,0 +1,32 @@
+---
+description: Gör att du kan lägga till användardefinierad text på arbetsytan.
+title: Text
+uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 3%
+
+---
+
+
+# Text
+
+>[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+
+Gör att du kan lägga till användardefinierad text på arbetsytan.
+
+Du kan ändra teckensnittsinställningarna (fet, kursiv, osv.) och lägga till hyperlänkar i textrutevisualiseringar och beskrivningar av paneler/visualiseringar.
+
+## Ändra teckensnittsinställningar {#section_32727EE03FD04A8EB1D1B387DCAF6537}
+
+![](assets/rich-text1.png)
+
+När du har dragit en textvisualisering till en panel och lagt till text kan du formatera texten genom att lägga till rubriknivåer, ändra textens fet/kursiv/understruken, ändra textfärgen osv.
+
+## Lägg till hyperlänkar {#section_D55B857188A74A06B49006DF3511DC7C}
+
+![](assets/rich-text2.png)
+
+Markera text och klicka på hyperlänkikonen på formateringsmenyn för att lägga till hyperlänkar.
