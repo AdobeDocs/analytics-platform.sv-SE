@@ -2,14 +2,17 @@
 title: Skapa ett projekt
 description: Kom igång med Analysis Workspace genom att skapa ett projekt.
 translation-type: tm+mt
-source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
 
 
 # Skapa ett projekt
 
-Det finns två metoder för att skapa ett projekt i Analysis Workspace:
+Det finns två sätt att [skapa ett projekt](/help/analysis-workspace/home.md) i Analysis Workspace:
 
 * Klicka [!UICONTROL Projects] i sidhuvudet och sedan på [!UICONTROL Create New Project].
 * Klicka [!UICONTROL Components] > [!UICONTROL Projects]och sedan på ![Lägg till](../assets/add.png) [!UICONTROL Add].
