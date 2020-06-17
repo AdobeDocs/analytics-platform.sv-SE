@@ -2,12 +2,17 @@
 title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 translation-type: tm+mt
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '2946'
+ht-degree: 1%
 
 ---
 
 
 # Referens - avancerade funktioner
+
+>[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du får åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i **[!UICONTROL Functions]** listrutan.
 
