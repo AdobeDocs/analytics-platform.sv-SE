@@ -1,13 +1,18 @@
 ---
 title: Hantera datumintervall
-description: Dela, byt namn på eller ta bort datumintervall i Analysis Workspace.
+description: Dela, byta namn på eller ta bort datumintervall i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 0%
 
 ---
 
 
 # Hantera datumintervall
+
+>[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Använd datumintervallhanteraren för att dela, byta namn på eller ta bort datumintervall. Så här når du datumhanteraren:
 
