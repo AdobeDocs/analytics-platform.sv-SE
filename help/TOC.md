@@ -1,5 +1,5 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.sv-SE
 cloud: experience-cloud
 product: adobe analytics
 sub-product: kundresa
@@ -13,9 +13,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Självstudiekurser
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: d8450b8435400aa16ce4d87868f804b82d1df4d7
+source-git-commit: 17e6cc8f79c542465971162666d846e2b1e0da58
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '375'
 ht-degree: 58%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 58%
 + Customer Journey Analytics overview {#cja-overview}
    + [Customer Journey Analytics - översikt](getting-started/cja-overview.md)
    + [Komma igång](getting-started/cja-getting-started.md)
-   + [Frågor och svar](getting-started/cja-faq.md)
+   + [Vanliga frågor](getting-started/cja-faq.md)
    + [Funktioner i Customer Journey Analytics](getting-started/cja-aa.md)
    + [CJA-ordlista](getting-started/cja-glossary.md)
 + Anslutningar {#cja-connections}
@@ -141,6 +141,7 @@ ht-degree: 58%
       + [Datumjämförelse](components/date-ranges/time-comparison.md)
 + Användningsexempel {#cja-usecases}
    + [Användningsexempel för Customer Journey Analytics](use-cases/cja-usecases.md)
+   + [Använda arrayer med objekt](use-cases/object-arrays.md)
 + Sekretess {#cja-privacy}
    + [Sekretessöversikt](privacy/privacy-overview.md)
 + [CJA - dokumentationsuppdateringar](doc-changes.md)
