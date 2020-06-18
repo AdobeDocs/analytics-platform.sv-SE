@@ -1,16 +1,16 @@
 ---
-title: Använda CJA med arrayer med objekt
+title: Använda arrayer med objekt
 description: Lär dig hur CJA rapporterar om datahierarkier.
 translation-type: tm+mt
-source-git-commit: b7cd74f3fe2f0222e78452f58a7c387f6e0c86d2
+source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
 
-# Använda CJA med arrayer med objekt
+# Använda arrayer med objekt
 
 Vissa plattformsscheman kan ha objektarrayer. Ett av de vanligaste exemplen är en varukorg som innehåller flera produkter. Varje produkt har ett namn, SKU, kategori, pris, kvantitet och andra dimensioner som du vill spåra. Alla de här ansiktena har olika krav, men måste alla få plats i samma träff.
 
@@ -206,7 +206,7 @@ Det finns en produktorder utan ett garantinamn som är knutet till den, så dime
       "SKU": "1234", 
       "category": "Washing Machines", 
       "name": "LG Washing Machine 2000", 
-      "orders": 1, 
++      "orders": 1, 
       "revenue": 1600, 
       "units": 1,
       "order_id":"abc123", 
@@ -239,3 +239,30 @@ Det finns en produktorder utan ett garantinamn som är knutet till den, så dime
 +  "timestamp": 1534219229
 +}
 ```
+
+Observera order som inte har ett namn som är knutet till dem. Detta är de order som har tilldelats dimensionsvärdet &#39;Ospecificerad&#39;.
+
+### Kombinera mätvärden
+
+CJA kombinerar inte mätvärden med liknande namn om de finns på olika objektnivåer.
+
+| `product : category` | `product : revenue` | `product : warranty : revenue` |
+| --- | --- | --- |
+| `Washing Machines` | `1600` | `250` |
+| `Dryers` | `500` | `0` |
+| `Total` | `2100` | `250` |
+
+Du kan dock skapa ett beräknat mått som kombinerar de önskade måtten:
+
+Beräknad&quot;total intäkt&quot;: `[product : revenue] + [product : warranty : revenue]`
+
+När du använder det här beräknade måttet visas det önskade resultatet:
+
+| `product : warranty : name` | `Total revenue (calculated metric)` |
+| --- | --- |
+| `Washing Machines` | `1850` |
+| `Dryers` | `500` |
+| `Total` | `2350` |
+
+## Exempel på persistence
+
