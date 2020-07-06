@@ -2,7 +2,7 @@
 title: Vad är kohortanalys?
 description: Läs om kohortanalys i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Vad är [!UICONTROL Cohort Analysis]?
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 A *`cohort`* is a group of people sharing common characteristics over a specified period. [!UICONTROL Cohort Analysis] är till exempel användbart när du vill veta hur en kohort interagerar med ett varumärke. Du kan enkelt upptäcka ändringar i trender och sedan svara på dem. (Förklaringar [!UICONTROL Cohort Analysis] finns på webben, t.ex. i [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
@@ -32,7 +34,9 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL Cohort Analysis] stöder inte icke-filterbara mått (inklusive beräknade värden), icke-heltalsmått (som Intäkter) eller förekomster. Endast mätvärden som kan användas i segment kan användas i
+>[!UICONTROL Cohort Analysis]
+>
+>stöder inte icke-filterbara mått (inklusive beräknade värden), icke-heltalsmått (som Intäkter) eller förekomster. Endast mätvärden som kan användas i segment kan användas i
 >[!UICONTROL Cohort Analysis]och de kan bara ökas med 1 i taget.
 
 ## Funktioner för kohortanalyser
