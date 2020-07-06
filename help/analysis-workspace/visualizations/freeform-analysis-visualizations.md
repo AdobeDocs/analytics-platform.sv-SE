@@ -3,7 +3,7 @@ description: Lär dig mer om visualiseringar och visualiseringsinställningar i 
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 translation-type: tm+mt
-source-git-commit: c6d98c03362617d34213e5d0d4ca35a24350b26c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 4%
@@ -13,7 +13,9 @@ ht-degree: 4%
 
 # Översikt över visualiseringar
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. Varje visualisering har sina egna inställningar som du kan hantera. Klicka på namnet på visualiseringen för mer detaljerad information.
 
