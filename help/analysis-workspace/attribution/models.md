@@ -2,7 +2,7 @@
 title: Attributmodeller och uppslagsfönster
 description: Hur olika typer av attribuering delar upp kredit mellan dimensionsvärden.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1539'
 ht-degree: 0%
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Attributmodeller och uppslagsfönster
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Attributkonceptet i Adobe Analytics kräver två komponenter:
 
@@ -45,7 +47,9 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 
 * **Anpassat uppslagsfönster:** Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet upp till maximalt 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
 
->[!NOTE] **[!UICONTROL Custom lookback windows]** har för närvarande begränsad testning. Mer information finns i [funktionsreleaser](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html) för Adobe Analytics.
+>[!NOTE]
+>
+>**[!UICONTROL Custom lookback windows]** har för närvarande begränsad testning. Mer information finns i [funktionsreleaser](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html) för Adobe Analytics.
 
 ## Exempel
 
@@ -76,4 +80,6 @@ Beroende på ditt sökfönster och din attribueringsmodell får kanalerna olika 
       * Socialt: 18,6 %, får 9,32 USD
       * Betalsökning: 13,8 %, får 6,92 USD
 
->[!TIP] Andra konverteringshändelser, som order eller anpassade händelser, delas också upp om kredit tillhör mer än en kanal. Om två kanaler till exempel bidrar till en anpassad händelse med en linjär attribueringsmodell får båda kanalerna 0,5 av den anpassade händelsen. Dessa händelsebråktal summeras för alla besök och avrundas sedan till närmaste heltal för rapportering.
+>[!NOTE]
+>
+>Andra konverteringshändelser, som order eller anpassade händelser, delas också upp om kredit tillhör mer än en kanal. Om två kanaler till exempel bidrar till en anpassad händelse med en linjär attribueringsmodell får båda kanalerna 0,5 av den anpassade händelsen. Dessa händelsebråktal summeras för alla besök och avrundas sedan till närmaste heltal för rapportering.
