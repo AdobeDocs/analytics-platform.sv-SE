@@ -2,7 +2,7 @@
 title: Kombinerade datauppsättningar
 description: Lär dig hur CJA skapar en anslutning genom att kombinera datauppsättningar.
 translation-type: tm+mt
-source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -22,7 +22,9 @@ När du skapar en anslutning kombinerar CJA alla scheman och datauppsättningar 
 
 Titta på följande exempel. Du har två datauppsättningar, där vart och ett har olika fält som innehåller olika data.
 
->[!NOTE] Adobe Experience Platform lagrar vanligtvis tidsstämplar i Unix millisekunder. I det här exemplet används datum och tid för läsbarhet.
+>[!NOTE]
+>
+>Adobe Experience Platform lagrar vanligtvis tidsstämplar i Unix millisekunder. I det här exemplet används datum och tid för läsbarhet.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
