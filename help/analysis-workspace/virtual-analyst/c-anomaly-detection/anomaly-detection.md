@@ -3,7 +3,7 @@ description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom An
 title: Översikt över avvikelseidentifiering
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 7%
@@ -13,7 +13,9 @@ ht-degree: 7%
 
 # Översikt över avvikelseidentifiering
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace.
 
@@ -34,7 +36,9 @@ Exempel på avvikelser du kan undersöka är:
 
 Both Anomaly Detection and [Contribution Analysis](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) are core workflows in Analysis Workspace. Du kan köra Contribute Analysis mot alla dagliga avvikelser och bädda in resultatet i ditt Analysis Workspace-projekt.
 
->[!IMPORTANT] Det finns ännu ingen bidragsanalys i Customer Journey Analytics.
+>[!IMPORTANT]
+>
+>Det finns ännu ingen bidragsanalys i Customer Journey Analytics.
 
 Analysis Workspace, avvikelalidentifieringsalgoritm
 
