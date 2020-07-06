@@ -5,7 +5,7 @@ title: Kortkommandon i Analysis Workspace
 topic: Reports and analytics
 uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 8%
@@ -15,7 +15,9 @@ ht-degree: 8%
 
 # Kortkommandon i Analysis Workspace
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden som är tillgängliga i Analysis Workspace.
 
@@ -28,7 +30,7 @@ Tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden som är t
 | Rensa alla | alt + w |
 | Komprimera/expandera alla paneler | alt + m |
 | Visa/dölj aktiv panel | alt + Ctrl + m |
-| Kopiera | ctrl (eller cmd) + c |
+| Kopiera | ctrl (eller cmd) + s |
 | Skapa en avisering | Ctrl (eller cmd) + Skift + a |
 | Skapa beräknat mått | Ctrl (eller cmd) + Skift + c |
 | Skapa ett datumintervall | Ctrl (eller cmd) + Skift + d |
@@ -53,7 +55,7 @@ Tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden som är t
 | Öppna befintligt projekt | ctrl (eller cmd) + o |
 | Uppdatera komponenter | Alt + Skift + R |
 | Uppdatera projekt | alt + r |
-| Spara projekt | ctrl (eller cmd) + s |
+| Spara projekt | ctrl (eller cmd) + c |
 | Spara projekt som | Ctrl (eller cmd) + Skift + s |
 | Spara som mall | alt + t |
 | Sök i vänster list | ctrl + / |
