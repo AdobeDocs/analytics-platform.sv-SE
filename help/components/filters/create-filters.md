@@ -2,7 +2,7 @@
 title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 1%
@@ -26,7 +26,9 @@ Kom ihåg:
 
 ![](assets/segment-dropzone.png)
 
->[!NOTE] Filter som skapas på det här sättet är interna för projektet.
+>[!NOTE]
+>
+>Filter som skapas på det här sättet är interna för projektet.
 
 Du kan välja att göra dessa filter offentliga (globala) genom att följa dessa steg:
 
