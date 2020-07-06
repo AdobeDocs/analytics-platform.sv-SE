@@ -3,7 +3,7 @@ description: Det finns två sätt att använda mätvärden i Analysis Workspace.
 title: Mätvärden
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 8%
@@ -19,7 +19,9 @@ Du kan antingen dra en standardmall för mått, beräknade värden eller beräkn
 
 ![](assets/metrics_icons.png)
 
->[!NOTE] Även om detta ser enkelt ut är användningen av mätvärden ganska kraftfull. Du kan lägga till mätvärden i en rapport genom att dra lämpliga mätvärden till måttavsnittet i en tabell. Du kan också dela upp mått efter mått och på så sätt få detaljkontroll över tabellvyn. Dessutom kan du infoga ett mått som en dimension och en dimension som ett mått för att skapa en övertidsrapport. Lek med de olika komponenterna och se vad du kan göra. Möjligheterna är oändliga.
+>[!NOTE]
+>
+>Även om detta ser enkelt ut är användningen av mätvärden ganska kraftfull. Du kan lägga till mätvärden i en rapport genom att dra lämpliga mätvärden till måttavsnittet i en tabell. Du kan också dela upp mått efter mått och på så sätt få detaljkontroll över tabellvyn. Dessutom kan du infoga ett mått som en dimension och en dimension som ett mått för att skapa en övertidsrapport. Lek med de olika komponenterna och se vad du kan göra. Möjligheterna är oändliga.
 
 Du kan också klicka **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Då kommer du till [beräkningsverktyget](https://docs.adobe.com/content/help/sv-SE/analytics/components/calculated-metrics/cm-overview.html)där du kan skapa anpassade mätvärden utifrån befintliga mätvärden.
 
