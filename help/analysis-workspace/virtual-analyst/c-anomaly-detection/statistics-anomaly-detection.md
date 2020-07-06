@@ -3,7 +3,7 @@ description: Anomaldetektering i Analysis Workspace använder en rad avancerade 
 title: Statistiska tekniker som används för avvikelseidentifiering
 uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -13,11 +13,13 @@ ht-degree: 2%
 
 # Statistiska tekniker som används för avvikelseidentifiering
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Anomaldetektering i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 
-Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för avvikelseidentifiering varje timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
+Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för att upptäcka avvikelser per timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
 
 ## Analysidentifiering för daglig granularitet
 
