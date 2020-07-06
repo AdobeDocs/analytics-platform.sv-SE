@@ -3,7 +3,7 @@ description: Med kolumninställningar kan du konfigurera kolumnformatering, som 
 title: Kolumninställningar
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 25%
@@ -13,7 +13,9 @@ ht-degree: 25%
 
 # Kolumninställningar
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med kolumninställningar kan du konfigurera kolumnformatering, som vissa kan vara villkorliga.
 
