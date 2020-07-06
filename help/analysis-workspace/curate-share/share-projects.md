@@ -3,7 +3,7 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace sharing
 title: Dela arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: 3a2cb7ad15f1491ef4fe6fdcb3135b29675c40e8
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 2%
@@ -13,7 +13,9 @@ ht-degree: 2%
 
 # Dela arbetsyteprojekt
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Delning gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. All [kuration](curate.md) du har använt återspeglas när mottagarna öppnar projektet.
 
