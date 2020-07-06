@@ -2,7 +2,7 @@
 title: Komponenter – översikt
 description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem vid rapportering.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 28%
@@ -12,7 +12,7 @@ ht-degree: 28%
 
 # Komponenter – översikt
 
-Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller komplettera rapporteringsfunktioner. Du kan hantera de här komponenterna med följande steg:
+Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller komplettera rapporteringsfunktioner. Du kan hantera de här komponenterna på följande sätt:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your Adobe ID credentials.
 2. Navigera till [!UICONTORL Komponenter] > [!UICONTROL Components] i rubrikmenyn.
@@ -38,7 +38,9 @@ Mer information om hur du använder komponenter i ett projekt finns i [Skapa ett
 
 Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka **[!UICONTROL Actions]** högst upp i komponentlistan.
 
->[!NOTE] Dessa åtgärder gäller inte för tidskomponenter.
+>[!NOTE]
+>
+>Dessa åtgärder gäller inte för tidskomponenter.
 
 | Komponentåtgärd | Beskrivning |
 |--- |--- |
