@@ -4,7 +4,7 @@ keywords: fallout and segmentation;segments in fallout analysis;compare segments
 title: Använda segment i utfallsanalys
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 1%
@@ -14,11 +14,15 @@ ht-degree: 1%
 
 # Använda filter i bortfallsanalys
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan skapa filter från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
 
->[!IMPORTANT] Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontext-utrullning måste filter som används som kontrollpunkter vara besök eller träffbaserade filter. Med en kontextutvikning för besök måste filter som används som kontrollpunkt vara träffbaserade segment. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
+>[!IMPORTANT]
+>
+>Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontext-utrullning måste filter som används som kontrollpunkter vara besök eller träffbaserade filter. Med en kontextutvikning för besök måste filter som används som kontrollpunkt vara träffbaserade segment. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
 
 * Använda ett besöksbaserat filter som kontaktyta inuti en besökarsammanhangsbaserad utfallsvisualisering
 * Använda ett besöksbaserat filter som kontaktyta i en snabbutfallsvisualisering
