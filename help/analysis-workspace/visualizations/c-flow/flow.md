@@ -3,7 +3,7 @@ description: 'null'
 title: Översikt över flöden
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 2%
@@ -13,7 +13,9 @@ ht-degree: 2%
 
 # Översikt över flöden
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Flödesfunktionen visar kundvägar via era webbplatser och appar.
 
@@ -23,7 +25,9 @@ Här kan du:
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, som inmatning, en viss dimension eller avslut
 * Skapa segment genom att ange en specifik punkt i en vald bana
 
->[!NOTE] Mer information om hur resultatet av att använda segment i Flow kan skilja sig åt mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
+>[!NOTE]
+>
+>Mer information om hur resultatet av att använda segment i Flow kan skilja sig åt mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
 [Flödesvisualisering på YouTube](https://www.youtube.com/watch?v=3R1HTM7y_RM&amp;index=55&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)(4:56)
 
