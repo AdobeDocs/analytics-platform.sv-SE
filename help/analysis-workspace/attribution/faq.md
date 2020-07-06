@@ -2,7 +2,7 @@
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 2%
@@ -12,7 +12,9 @@ ht-degree: 2%
 
 # Vanliga frågor om attribuering
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 **Vad är radobjektet &quot;Inget&quot; när du använder attribuering?**
 
@@ -85,4 +87,6 @@ Om du till exempel skapar ett VRS med segmentet &quot;Visa träffar&quot; kan du
 
 ![Virtuellt rapportpaket endast för visning](assets/vrs-aiq-example.png)
 
->[!NOTE] Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsvärden, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment returnera lägre värden än ett filter med en jämförbar definition.
+>[!NOTE]
+>
+>Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsvärden, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment returnera lägre värden än ett filter med en jämförbar definition.
