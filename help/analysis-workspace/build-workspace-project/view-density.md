@@ -2,7 +2,7 @@
 description: Lär dig hur du justerar visningsdensiteten.
 title: Visa densitet
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -12,7 +12,9 @@ ht-degree: 4%
 
 # Visa densitet
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Genom att justera visningsdensiteten kan du se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra listen, frihandstabeller och kohorttabeller.
 Det finns tre alternativ när du växlar visningsdensitet med alternativknappar:
