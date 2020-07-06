@@ -2,7 +2,7 @@
 title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2946'
 ht-degree: 1%
@@ -12,7 +12,9 @@ ht-degree: 1%
 
 # Referens - avancerade funktioner
 
->[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du får åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i **[!UICONTROL Functions]** listrutan.
 
@@ -32,7 +34,9 @@ Om du till exempel har ett intäktsmått och sedan lägger till ett sidvymått i
 
 Returnerar värdet för dess argument. Använd NOT för att kontrollera att ett värde inte är lika med ett visst värde.
 
->[!NOTE] 0 (noll) betyder False och alla andra värden är True.
+>[!NOTE]
+>
+>0 (noll) betyder False och alla andra värden är True.
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -208,7 +212,9 @@ Returnerar medelvärdet för de sista N raderna.
 
 Om N &lt;= 0 används alla föregående rader. Eftersom den ordnas efter dimensionen är den bara användbar för dimensioner som har en naturlig ordning som datum eller längd.
 
->[!NOTE] Detta fungerar inte som du kan förvänta dig med tariffvärden som intäkter/besökare: i stället för att summera intäkterna under det senaste N:et och summera besökarna under det senaste N:et och sedan dela upp dem. Använd i stället
+>[!NOTE]
+>
+>Detta fungerar inte som du kan förvänta dig med tariffvärden som intäkter/besökare: i stället för att summera intäkterna under det senaste N:et och summera besökarna under det senaste N:et och sedan dela upp dem. Använd i stället
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -451,7 +457,9 @@ Returnerar alla objekt som inte innehåller den exakta matchningen av det angivn
 
 Returnerar TRUE om något argument är TRUE, eller returnerar FALSE om alla argument är FALSE.
 
->[!NOTE] 0 (noll) betyder False och alla andra värden är True.
+>[!NOTE]
+>
+>0 (noll) betyder False och alla andra värden är True.
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -692,7 +700,9 @@ Ekvationen för Z-score är:
 
 där [!DNL x] är råpoängen, [!DNL μ] är medelvärdet av populationen och [!DNL σ] är standardavvikelsen för populationen.
 
->[!NOTE] [!DNL μ] (mu) och[!DNL σ] (sigma) beräknas automatiskt utifrån måttet.
+>[!NOTE]
+>
+>[!DNL μ] (mu) och[!DNL σ] (sigma) beräknas automatiskt utifrån måttet.
 
 Z-score (metrisk)
 
@@ -717,5 +727,7 @@ Utför ett n-tailed Z-test med Z-score på A.
 
 Returnerar sannolikheten för att den aktuella raden kan ses av en slump i kolumnen.
 
->[!NOTE] Anta att värdena normalt fördelas.
+>[!NOTE]
+>
+>Anta att värdena normalt fördelas.
 
