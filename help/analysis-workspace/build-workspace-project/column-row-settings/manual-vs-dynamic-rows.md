@@ -1,43 +1,53 @@
 ---
-description: Så här interagerar du med statiska rader i tabeller.
-title: Statiska kontra dynamiska rader
-uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
+title: Dynamiska eller statiska dimensionsvärden
+description: Hur man interagerar med dynamiska och statiska dimensionsvärden i tabeller.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 0477302df92ccab30d9f3a45cc7b22f2112a0c70
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 1%
+source-wordcount: '503'
+ht-degree: 2%
 
 ---
 
 
-# Statiska kontra dynamiska rader
+# Dynamiska eller statiska dimensionsvärden i frihandstabeller
 
->[!NOTE]
->
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>[!NOTE] Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Analysis Workspace-tabeller genererar&quot;dynamiska&quot; rader när du släpper en dimension i tabellen, vilket innebär att alla objekt som motsvarar dimensionen, för ett givet mätvärde, hämtas till tabellen.
+I frihandstabeller kan raderna och kolumnerna innehålla olika komponentvärden. Dessa värden kan vara dynamiska (ändras med tid) eller statiska (ändras inte med tid), beroende på vilken analys du vill skapa.
 
-När du till exempel drar webbläsardimensionen till tabellen, alla dess dimensionsobjekt (t.ex. Android-webbläsare, Mobile Safari, Firefox) dras dynamiskt in i bordet.
+## Dynamiska dimensionsvärden
 
-Om du däremot manuellt markerar och släpper ett visst mått, segment, dataområde eller enskilt dimensionsobjekt i en tabell blir resultatet en hårdkodad eller&quot;statisk&quot; rad eller lista. Du kan nu interagera med en statisk rad på följande sätt:
+Dynamiska dimensionsvärden ändras med tiden och är beroende av vilket mått som sorteras i friformstabellen. Dynamiska dimensionsvärden är att föredra när du vill analysera de översta artiklarna för en given tidsperiod.
 
-* Klicka på ikonen Förhandsgranska i statiska rader där du kan förhandsgranska segment, mätvärden och datumintervall.
-* Klicka på x-ikonen för att ta bort raden från tabellen.
-* Begränsa hur många rader som ska visas och aktivera sidindelning.
-* Lägg till&quot;blandade dimensionsobjekt&quot;. Lägg till exempel till en artikel från en webbläsardimension och en annan artikel från en produktdimension.
+När du släpper en dimension i en frihandstabell returneras dynamiska rader. De representerar de översta artiklarna som motsvarar dimensionen för ett givet mätvärde och en viss tidsperiod. Du kan också släppa en dimension i tabellkolumner på fri hand, och dimensionen utökas automatiskt till de fem övre dimensionsvärdena.
 
-   Här är en illustration:
+När du t.ex. drar dimensionen Webbläsartyp till tabellen visas de översta dimensionerna för Webbläsartyp (t.ex. Microsoft, Apple, Google) Återgå dynamiskt till tabellraderna. Om de utelämnas i en kolumn returneras dimensionerna för de fem vanligaste webbläsartyperna dynamiskt.
 
-   ![](assets/static_rows.png)
+Dynamiska dimensionsvärden har radfilteralternativet och har **inga** lås- och X-ikoner.
 
-Dessutom kan du nu ändra hur kolumnsummor beräknas när du är i statiskt radläge. Klicka bara på kugghjulsikonen och växla mellan dessa två alternativ:
+## Statiska dimensionsvärden
 
-![](assets/column-totals.png)
+Statiska dimensionsvärden ändras inte med tiden. de är fasta komponenter som alltid returneras i en frihandstabell. Statiska dimensionsvärden är att föredra när du alltid vill analysera samma artikel, oavsett om det är specifika kampanjer eller specifika dagar i veckan.
 
-| Alternativ | Beskrivning |
-|---|---|
-| (Standard) Beräkna summor genom att summera de värden som finns i varje kolumn. | Med det här alternativet beräknas endast de rader som finns i tabellen. (Beräkning på klientsidan) |
-| Beräkna summor baserat på alla rader för varje mätvärde. | Det här alternativet inkluderar alla dimensionsartiklar för den här dimensionen, även de som inte finns med i tabellen. (Beräkning på serversidan) |
+Varje gång du manuellt markerar och släpper specifika komponentvärden (mått, mått, segment, datumintervall) i en tabell blir resultatet en statisk lista med rader eller kolumner. Statiska dimensionsvärden kan också skapas om du väljer att:
 
+* Högerklicka från rader > [!UICONTROL Display only selected rows]
+* Högerklicka från kolumner > [!UICONTROL Make item static]
+
+Om du t.ex. drar över vissa objekt i webbläsartypen, t.ex. Microsoft och Apple, hämtas dessa två objekt alltid till tabellen.
+
+Statiska dimensionsvärden har **inte** radfilteralternativet. Istället visas lås- och X-ikoner för varje objekt. Klicka på X-ikonen för att ta bort det måttvärdet från tabellen.
+
+## Blandade dimensionsvärden
+
+Dimensionsvärden från olika dimensioner kan läggas till i samma tabell. Radhuvudet säger&quot;Blandade dimensioner&quot; i dessa fall. Dessa dimensionsvärden är statiska. Du kan till exempel lägga till specifika dimensionsvärden från dimensionen Webbläsartyp och andra dimensionsvärden från dimensionen Webbläsare.
+
+## Frihandsrader
+
+Dynamiska och statiska rader fungerar på olika sätt i den totala frihandsraden. Som standard:
+
+* Dynamiska rader summeras på serversidan och dubblettvärden som besök och besökare tas bort
+* Statiska rader summeras på klientsidan och dubbletter tas **inte** bort.
+
+[Läs mer om alternativen för total](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) arbetsyta för dynamiska och statiska rader.
