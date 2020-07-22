@@ -1,15 +1,18 @@
 ---
 title: Konfigurera datavyer och attribuering
-description: Beskriver hur du skapar en datavy för en plattformsdatauppsättning i kundreseanalysen
+description: Beskriver hur du skapar en datavy för en Platform-datauppsättning i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+workflow-type: tm+mt
+source-wordcount: '1520'
+ht-degree: 0%
 
 ---
 
 
 # Komponent- och attribueringsinställningar
 
-eVars, props och events i traditionell Adobe Analytics-mening finns inte längre i kundreseanalysen. I stället har du ett obegränsat antal schemaelement (dimensioner, mått, listfält). Alla attribueringsinställningar som du använde för att tillämpa på eVars och props under datainsamlingsprocessen tillämpas nu vid frågetiden - kallas även för rapporttidsbearbetning.
+Varor, props och event i traditionell Adobe Analytics-mening finns inte längre i Customer Journey Analytics. I stället har du ett obegränsat antal schemaelement (dimensioner, mått, listfält). Alla attribueringsinställningar som du använde för att tillämpa på eVars och props under datainsamlingsprocessen tillämpas nu vid frågetiden - kallas även för rapporttidsbearbetning.
 
 Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) för en videoöversikt.
 
@@ -17,7 +20,7 @@ Tänk på detta innan du använder attribueringsinställningar:
 
 * I användargränssnittet för datavyer anger du standardattribuering. **Obs**: Vid ett senare datum kan du åsidosätta de här inställningarna i Workspace-projekt. Den här funktionen är dock inte tillgänglig för tillfället.
 
-* Attributinställningarna i kundreseanalys är icke-förstörande och retroaktiva. Med andra ord kan ni inte göra datauppsättningarna obotliga skador i kundreseanalysen. Även om du råkar ta bort något av misstag kan du alltid gå tillbaka till [!UICONTROL Experience Platform] och hämta tillbaka datauppsättningen. (Tänk dock på att det kommer att kosta ytterligare att få in datauppsättningen igen.)
+* Attributinställningar i Customer Journey Analytics är icke-förstörande och retroaktiva. Med andra ord kan du inte göra datauppsättningarna i Customer Journey Analytics obotliga skador. Även om du råkar ta bort något av misstag kan du alltid gå tillbaka till [!UICONTROL Experience Platform] och hämta tillbaka datauppsättningen. (Tänk dock på att det kommer att kosta ytterligare att få in datauppsättningen igen.)
 
 * Om du vill ha en dimension som fungerar som en traditionell eVar (konverteringsvariabel) bör du konfigurera den med attributet&quot;Last Touch Visit&quot; som standard.
 
@@ -47,7 +50,7 @@ Du kan ändra namnet på måttet eller dimensionen till något mer användarvän
 
 ### Attributionsmodell
 
-Modellen beskriver distributionen av konverteringar till händelser i en grupp. Till exempel första beröringen eller sista beröringen. Avgör hur kundreseanalys tilldelar kredit för en success-händelse om en variabel tar emot flera värden före händelsen.
+Modellen beskriver distributionen av konverteringar till händelser i en grupp. Till exempel första beröringen eller sista beröringen. Avgör hur Customer Journey Analytics tilldelar krediter för en success-händelse om en variabel tar emot flera värden före händelsen.
 
 | UI-ikon | Attributionsmodell | Definition | När ska användas |
 | --- | --- | --- | --- |
@@ -58,13 +61,13 @@ Modellen beskriver distributionen av konverteringar till händelser i en grupp. 
 | ![U-formad](assets/u_shaped.png) | U-formad | Ger 40 % uppskattning av den första interaktionen, 40 % tack vare den sista interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får båda 50 % rabatt. | En bra modell för dem som värderar interaktioner som har orsakat eller avslutat en konvertering, men ändå vill känna igen hjälpinteraktioner. U-Shaped-attribuering används ofta av team som har ett mer balanserat tillvägagångssätt, men som vill tillgodoräkna sig fler kanaler som har hittat eller avslutat en konvertering. |
 | ![J-Shaped](assets/j_shaped.png) | J-Shaped | Ger 60 % kreativitet till den senaste interaktionen, 20 % tack till den första interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % poäng för den senaste interaktionen och 25 % kredit ges till den första. | Den här modellen passar perfekt för dem som prioriterar Finders och Closers, men som vill fokusera på att stänga interaktioner. J-Shaped-attribuering används ofta av team som har ett mer balanserat tillvägagångssätt och vill tillgodoräkna kanaler som stängt en konvertering mer. |
 | ![Inverterad J-formad](assets/inverse_j.png) | Inverterad J | Ger 60 % kredit till den första beröringspunkten, 20 % kredit till den sista beröringspunkten och delar de återstående 20 % till alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % kredit för den första interaktionen och 25 % kredit för den sista. | Den här modellen är perfekt för dem som prioriterar finare och närare, men som vill fokusera på att hitta interaktioner. Inverterad J-attribuering används av team som använder ett mer balanserat tillvägagångssätt och vill tillgodoräkna kanaler som initierade en konvertering mer. |
-| ![Egen](assets/custom.png) | Egen | Gör att du kan ange de vikter du vill ge de första beröringspunkterna, de sista beröringspunkterna och eventuella mellanliggande beröringspunkter. De angivna värdena normaliseras till 100 % även om de anpassade siffrorna inte läggs till i 100. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För interaktioner med två beröringspunkter ignoreras parametern middle. Den första och sista beröringspunkten normaliseras sedan till 100 % och krediteringen tilldelas därefter. | Den här modellen är perfekt för dem som vill ha fullständig kontroll över sin attribueringsmodell och har särskilda behov som andra attribueringsmodeller inte uppfyller. |
+| ![Anpassat](assets/custom.png) | Anpassad | Gör att du kan ange de vikter du vill ge de första beröringspunkterna, de sista beröringspunkterna och eventuella mellanliggande beröringspunkter. De angivna värdena normaliseras till 100 % även om de anpassade siffrorna inte läggs till i 100. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För interaktioner med två beröringspunkter ignoreras parametern middle. Den första och sista beröringspunkten normaliseras sedan till 100 % och krediteringen tilldelas därefter. | Den här modellen är perfekt för dem som vill ha fullständig kontroll över sin attribueringsmodell och har särskilda behov som andra attribueringsmodeller inte uppfyller. |
 | ![Tidsminskning](assets/time_decay.png) | Time-Decay | Följer och exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2`<sup>`(-t/halflife)`</sup>, där `t` är tiden mellan en kontaktpunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %. | Perfekt för team som regelbundet genomför videoreklam eller marknadsför mot händelser med ett förutbestämt datum. Ju längre en konvertering sker efter en marknadsföringshändelse, desto mindre kredit ges. |
-| ![deltagande](assets/participation.png) | deltagande | Alla unika kontaktpunkter får 100 % beröm. Det totala antalet konverteringar är uppblåst jämfört med andra attribueringsmodeller. Deltagande duplicerar kanaler som ses flera gånger. | Utmärkt för att förstå vilka kunder som ofta exponeras för en viss interaktion. Medieorganisationer använder ofta den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder ofta den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
+| ![Deltagande](assets/participation.png) | Deltagande | Alla unika kontaktpunkter får 100 % beröm. Det totala antalet konverteringar är uppblåst jämfört med andra attribueringsmodeller. Deltagande duplicerar kanaler som ses flera gånger. | Utmärkt för att förstå vilka kunder som ofta exponeras för en viss interaktion. Medieorganisationer använder ofta den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder ofta den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
 
 ### Förfaller
 
-Anger en tidsperiod eller händelse efter vilken dimensionsvärdet förfaller (får inte längre kredit för lyckade händelser). Du kan ange att attributet ska förfalla på session, person eller anpassad nivå.
+Anger en tidsperiod eller händelse efter vilken dimensionsobjektet förfaller (inte längre får kredit för lyckade händelser). Du kan ange att attributet ska förfalla på session, person eller anpassad nivå.
 
 | Inställning | Definition |
 |---|---|
