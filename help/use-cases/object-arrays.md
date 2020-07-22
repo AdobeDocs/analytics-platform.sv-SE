@@ -2,7 +2,7 @@
 title: Använda arrayer med objekt
 description: Lär dig hur CJA rapporterar om datahierarkier.
 translation-type: tm+mt
-source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -188,7 +188,7 @@ CJA tittar på de här delarna av träffen för att generera rapporten:
 
 Eftersom torktumlaren inte innehöll någon garanti ingår den inte i tabellen.
 
-Eftersom du kan kombinera alla dimensioner med alla mätvärden visas i följande tabell hur data skulle kunna kombineras med ospecificerade dimensionsvärden:
+Eftersom du kan kombinera alla dimensioner med alla mätvärden, visar följande tabell hur data skulle kunna användas med ospecificerade dimensionsobjekt:
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ Eftersom du kan kombinera alla dimensioner med alla mätvärden visas i följand
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Det finns en produktorder utan ett garantinamn som är knutet till den, så dimensionsvärdeattributen är &#39;Ospecificerad&#39;. Samma situation gäller även för produktgarantiordern:
+Det finns en produktorder utan ett garantinamn som är knutet till den, så dimensionsobjektsattributen är &#39;Ospecificerad&#39;. Samma situation gäller även för produktgarantiordern:
 
 ```diff
 {
@@ -240,7 +240,7 @@ Det finns en produktorder utan ett garantinamn som är knutet till den, så dime
 +}
 ```
 
-Observera order som inte har ett namn som är knutet till dem. Detta är de order som har tilldelats dimensionsvärdet &#39;Ospecificerad&#39;.
+Observera order som inte har ett namn som är knutet till dem. Detta är de order som har tilldelats dimensionsobjektet &#39;Ospecificerad&#39;.
 
 ### Kombinera mätvärden
 
