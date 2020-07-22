@@ -3,7 +3,7 @@ description: Lär dig mer om visualiseringar och visualiseringsinställningar i 
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 4%
@@ -34,7 +34,7 @@ YouTube Video: [Visualiseringstyper i Analysis Workspace](https://www.youtube.co
 | [Histogram](/help/analysis-workspace/visualizations/histogram.md) | Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). |
 | [Vågrätt fält](/help/analysis-workspace/visualizations/horizontal-bar.md) | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
 | [Linjediagram](/help/analysis-workspace/visualizations/line.md) | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension. |
-| [Spridningsdiagram](/help/analysis-workspace/visualizations/scatterplot.md) | Visar relationen mellan dimensionsvärden och upp till tre mätvärden. |
+| [Spridningsdiagram](/help/analysis-workspace/visualizations/scatterplot.md) | Visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
 | [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md) | Beroende på vilken cell som är markerad visar den här visualiseringen summor och sammanfattningar. |
 | [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) | Beroende på vilka celler som är markerade jämförs cellerna med varandra. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. |
