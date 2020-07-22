@@ -1,8 +1,8 @@
 ---
 title: Översikt över attribuering
-description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsvärden.
+description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsobjekt.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 48%
@@ -16,7 +16,7 @@ ht-degree: 48%
 >
 >Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Attribution ger analytiker möjlighet att anpassa hur dimensionsvärden får kredit för lyckade händelser. Exempel:
+Attribution ger analytiker möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
 
 1. En besökare på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. Lägg produkten i kundvagnen, men köp den inte.
 2. Nästa dag ser du ett inlägg på sociala medier från en av deras vänner, klickar på länken och slutför sedan köpet.
