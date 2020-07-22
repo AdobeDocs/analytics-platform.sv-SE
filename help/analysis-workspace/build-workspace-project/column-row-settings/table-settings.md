@@ -3,10 +3,10 @@ description: Radinställningarna varierar beroende på vilken komponent du har d
 title: Radinställningar
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: df326581abbbd0dd0d29638962ccb71bb0aee837
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 6%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
@@ -17,17 +17,13 @@ ht-degree: 6%
 >
 >Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen.
-
-Du kan också använda [högerklicksåtgärder i en tabell](/help/analysis-workspace/visualizations/freeform-table.md) för att hantera markerade rader.
-
-Om du vill komma åt tabellradsinställningarna klickar du på inställningsikonen bredvid en dimension, ett segment, ett mått, en tidsperiod eller en uppdelning i var och en av dessa:
+Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen. Om du vill komma åt tabellradsinställningarna klickar du på inställningsikonen bredvid en dimension, ett segment, ett mått, en tidsperiod eller en uppdelning i var och en av dessa:
 
 ![](assets/row-settings.png)
 
-| Radinställning | Beskrivning |
+| Inställning | Beskrivning |
 |--- |--- |
-| Datumjämförelser | Justera datum från varje kolumn så att alla börjar på samma rad.   När du väljer att justera datumen, till exempel i en månadsjämförelse mellan oktober och september 2016, börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september.<br>Inaktiverad som standard. |
-| Procenttal | Beräkna procentandelar per rad Tvingar fram friformstabellen för att beräkna cellprocenten över raden i stället för nedåt i kolumnen. Detta är särskilt användbart för att hantera procentsatser.<br>Aktiveras som standard när du använder ikonen Visualisera. |
-| Kolumnsummor | De här inställningarna visas bara med [statiska rader](/help/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md) (när du har markerat en begränsad uppsättning med objekt), inte med dynamiska rader (d.v.s. när du släpper i en dimension som visar alla objekt).<ul><li>**[!UICONTROL Show sum of current rows as the total]** - här visas en summa av raderna i tabellen på klientsidan, vilket innebär att summan **inte** kan deduplicera mått som besök eller besökare.</li><li>**[!UICONTROL Show Grand Total]** - detta visar en summa på serversidan, vilket innebär att summan kommer att ta bort dubbletter av statistik som besök eller besökare.</li></ul> |
-| Uppdelningar | **[!UICONTROL Breakdown by position]**: Du kan utföra uppdelningar baserat på en fast plats i en frihandstabell. Du kan till exempel ange att de sju översta raderna alltid ska brytas ned.<br>(Tidigare var listan med värden i neddelningen &quot;låst&quot;. Detta ledde till en situation där du, om du t.ex. bröt ned Datum för sida, fick en lista över de 50 översta sidorna för det valda datumintervallet. Om du sparade den rapporten och sedan körde den igen en månad senare hade de 50 översta sidorna förmodligen ändrats. Analysis Workspace använder dock resultaten från den ursprungliga uppdelningen och returnerar samma sidor, men med den aktuella månaden som datumintervall.)<br>Så här utför du uppdelningar baserade på en fast plats: 1. Dela upp några av raderna i tabellen. 2. Klicka på ikonen Inställningar (kugghjulet) bredvid tabellraden som du vill ha i fast position. 3. Markera kryssrutan bredvid Uppdelning efter position. 4. Ändra sorteringsordningen eller datumintervallet och lägg märke till att uppdelningarna nu är knutna till radpositionen, inte till de hårdkodade raderna.<br>Inaktiverad som standard. |
+| Justera datum | Det här är en inställning på tabellnivå som justerar datum från varje kolumn så att alla börjar på samma rad. Datumjustering är aktiverat som standard när en tidsdimension används i tabellraderna och olika datumintervall används i kolumnerna. I en daglig tabell där oktober och september tillämpas på kolumnerna börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september. |
+| Uppdelning efter position | Som standard är den här inställningen inaktiverad och uppdelningar är fasta på statiska radobjekt. Låt oss till exempel säga att du har delat upp de tre viktigaste sidobjekten (startsida, sökresultat, utcheckning) efter marknadsföringskanal. Sedan lämnar du projektet och återvänder två veckor senare. När du öppnar projektet igen har de tre översta sidorna ändrats, och nu är startsidan, sökresultaten och utcheckningen de 4-6 översta sidorna istället. Som standard visas dina Marketing Channel-indelningar fortfarande under Hemsida, Sökresultat och Utcheckning, även om de nu finns på raderna 4-6. <br> Däremot kommer **Uppdelning efter position** alltid att dela upp de tre främsta objekten, oavsett vad de är. När du öppnar ditt projekt på nytt, som en hänvisning till vårt exempel, kommer de tre främsta sidorna i tabellen att vara kopplade till Marketing Channel-uppdelningarna, inte till Hemsida, Sökresultat och Utcheckning, som nu finns på raderna 4-6. |
+| Procenttal | **Standardinställningen är att beräkna procentandelar per kolumn** . de procentsatser som visas i en kolumn beräknas utifrån kolumnsumman. <br>**Beräkna procentandelar per rad **tvingar friformstabellen att beräkna cellprocenten över raden i stället för nedåt i kolumnen, med totalsumman som nämnare. Detta är särskilt användbart för att hantera procentsatser. Den här inställningen är aktiverad som standard när du använder ikonen Visa. |
+| Kolumnsummor | De här inställningarna är bara tillgängliga för [statiska rader](manual-vs-dynamic-rows.md). <br> **Visa som summan av de aktuella raderna** med en summa av raderna på klientsidan, vilket innebär att summan *inte* avduplicerar mått som besök eller besökare. <br> **Visa totalsumman** visar en summa på serversidan vilket innebär att summan kommer att dubblera måtten. |
