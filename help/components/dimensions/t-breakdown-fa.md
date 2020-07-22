@@ -5,7 +5,7 @@ title: Dela upp dimensioner
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 13%
@@ -28,7 +28,7 @@ Analysera data på obegränsade sätt efter just era behov och bygg frågor med 
 
    ![Stegresultat](assets/fa_data_table_actions.png)
 
-   Du kan dela upp mätvärden efter dimensionsvärden eller målgruppssegment under valda tidsperioder. Du kan även gå ned mer i detalj.
+   Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppssegment under valda tidsperioder. Du kan även gå ned mer i detalj.
 
    >[!NOTE] Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen kommer att öka för export av uppdelningar.
 
