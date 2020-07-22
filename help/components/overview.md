@@ -2,7 +2,7 @@
 title: Komponenter – översikt
 description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem vid rapportering.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 28%
@@ -12,14 +12,14 @@ ht-degree: 28%
 
 # Komponenter – översikt
 
-Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller komplettera rapporteringsfunktioner. Du kan hantera de här komponenterna på följande sätt:
+Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller komplettera rapporteringsfunktioner. Du kan hantera de här komponenterna med följande steg:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your Adobe ID credentials.
 2. Navigera till [!UICONTORL Komponenter] > [!UICONTROL Components] i rubrikmenyn.
 
 Du kan hantera följande komponenter:
 
-* [**Filter **](filters/filters-overview.md): Uteslut delar av dina data för att fokusera på gemensamma dimensionsvärden
+* [**Filter **](filters/filters-overview.md): Uteslut delar av dina data för att fokusera på gemensamma dimensionsobjekt
 * [**Beräknade mått **](calc-metrics/calc-metr-overview.md): Använd mätvärden och formler som nya komponenter för rapportering
 * [**Datumintervall **](date-ranges/overview.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder
 * [**Projekt **](/help/analysis-workspace/home.md): Ordna och underhålla projekt i Analysis Workspace
