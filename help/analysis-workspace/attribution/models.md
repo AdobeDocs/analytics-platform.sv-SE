@@ -1,8 +1,8 @@
 ---
 title: Attributmodeller och uppslagsfönster
-description: Hur olika typer av attribuering delar upp kredit mellan dimensionsvärden.
+description: Hur olika typer av attribuering delar upp kredit mellan dimensionsposter.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1539'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Titta på följande exempel:
 2. Den 18 september kommer besökaren till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
 3. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
 
-Beroende på ditt sökfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
+Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
 
 * Med **första beröring** och ett **besöksfönster** tittar attribueringen bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
 * Med hjälp av **första beröring** och ett fönster **för** besökarsökning tittar attribueringen på alla tre besöken. Betalsökning var först, så den får 100 % rabatt på 50 USD.
