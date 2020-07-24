@@ -1,10 +1,10 @@
 ---
-title: Dynamiska jämfört med statiska dimensionsobjekt
+title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 description: Hur man interagerar med dynamiska och statiska dimensionsobjekt i tabeller.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,8 @@ När du t.ex. drar dimensionen Webbläsartyp till tabellen visas dimensionsobjek
 
 Objekt med dynamiska dimensioner har alternativet radfilter och har **inga** lås- och X-ikoner.
 
+![](assets/dynamic-items.png)
+
 ## Statiska dimensionsobjekt
 
 Statiska dimensionsobjekt ändras inte med tiden. de är fasta komponenter som alltid returneras i en frihandstabell. Statiska dimensionsobjekt föredras när du alltid vill analysera samma objekt, oavsett om det är specifika kampanjer eller specifika dagar i veckan.
@@ -39,15 +41,18 @@ Om du t.ex. drar över vissa objekt i webbläsartypen, t.ex. Microsoft och Apple
 
 Statiska dimensionsobjekt har **inte** alternativet radfilter. Istället visas lås- och X-ikoner för varje objekt. Klicka på X-ikonen för att ta bort dimensionsobjektet från tabellen.
 
+![](assets/static-items.png)
+
 ## Blandade dimensionsobjekt
 
 Dimensionsobjekt från olika dimensioner kan läggas till i samma register. Radhuvudet säger&quot;Blandade dimensioner&quot; i dessa fall. Dessa dimensionsobjekt är statiska. Du kan till exempel lägga till specifika dimensionsobjekt från dimensionen Webbläsartyp och andra dimensionsobjekt från dimensionen Webbläsare.
+
+![](assets/mixed-dimensions.png)
 
 ## Frihandsrader
 
 Dynamiska och statiska rader fungerar på olika sätt i den totala frihandsraden. Som standard:
 
 * Dynamiska rader summeras på serversidan och dubblettvärden som besök och besökare tas bort
-* Statiska rader summeras på klientsidan och dubbletter tas **inte** bort.
+* Statiska rader summeras på klientsidan och dubbletter tas **inte** bort. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
 
-[Läs mer om alternativen för total](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) arbetsyta för dynamiska och statiska rader.
