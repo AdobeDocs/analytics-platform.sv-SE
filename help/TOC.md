@@ -13,7 +13,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Självstudiekurser
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 57%
@@ -47,7 +47,7 @@ ht-degree: 57%
       + Kolumn- och radinställningar {#column-row-settings}
          + [Kolumninställningar](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
          + [Radinställningar](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Manuella kontra dynamiska rader](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Dynamiska jämfört med statiska artiklar](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
       + [Ångra och göra om inställningar](analysis-workspace/build-workspace-project/undo-redo.md)
       + [Kortkommandon i Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Sidnumrering, filtrering och sortering av tabeller](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
@@ -93,7 +93,7 @@ ht-degree: 57%
    + Samla in eller dela projekt {#curate-share}
       + [Kuratera arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
-      + [Visa endast arbetsyteprojekt](analysis-workspace/curate-share/view-only-projects.md)
+      + [Skrivskyddade Workspace-projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
       + [Skicka fil – schemalägga ett projekt för leverans](analysis-workspace/curate-share/t-schedule-report.md)
