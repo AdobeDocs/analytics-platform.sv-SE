@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en Platform-datauppsättning i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
+source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '943'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Klicka **[!UICONTROL Create new connection]** högst upp till höger.
 
-   ![Skapa anslutning](assets/create-connection.png)
+   ![Skapa anslutning](assets/create-connection0.png)
 
 1. Välj en sandlåda i Experience Platform som innehåller den eller de datauppsättningar som du vill skapa en anslutning till.
 
@@ -40,6 +40,8 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 Till höger kan du nu konfigurera den datauppsättning som du har lagt till.
 
+![Konfigurera datauppsättning](assets/create-connection.png)
+
 1. **[!UICONTROL Dataset type]**: För varje datauppsättning som du har lagt till i den här anslutningen anges datauppsättningstypen automatiskt baserat på de data som kommer in. [!UICONTROL Customer Journey Analytics]
 
    Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] data och [!UICONTROL Lookup] data.
@@ -52,19 +54,27 @@ Till höger kan du nu konfigurera den datauppsättning som du har lagt till.
 
 1. **[!UICONTROL Dataset ID]**: Detta ID genereras automatiskt.
 
-1. **[!UICONTROL Timestamp]**: lägg till innehåll här
+1. **[!UICONTROL Time stamp]**: lägg till innehåll här
 
-1. **[!UICONTROL Schema]**:
+1. **[!UICONTROL Schema]**: Detta är schemat som baserar sig på vilket datauppsättningen skapades i Adobe Experience Platform.
 
-1. **[!UICONTROL Person ID]**:
+1. **[!UICONTROL Person ID]**: Välj ett person-ID bland de tillgängliga identiteter som definieras i dataset-schemat i Experience Platform.
+
+   >[!IMPORTANT]
+   >
+   >Om det inte finns några person-ID:n att välja mellan, innebär det att ett eller flera person-ID:n inte har definierats i schemat. Se [den här videon](https://youtu.be/G_ttmGl_LRU) om hur du definierar en identitet i Experience Platform.
 
 1. Klicka **[!UICONTROL Next]** för att gå till [!UICONTROL Enable Connection] dialogrutan.
 
-   ![Aktivera anslutning](assets/create-connection2.png)
+### Identitetskarta
+
+
 
 ## Aktivera anslutning
 
-1. Ange följande inställningar i [!UICONTROL Create Connection] dialogrutan:
+![Aktivera anslutning](assets/create-connection2.png)
+
+1. Om du vill aktivera en anslutning definierar du följande inställningar:
 
    | Fält | Beskrivning |
    |---|---|
