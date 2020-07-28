@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en Platform-datauppsättning i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '866'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,13 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Markera en eller flera datauppsättningar som du vill hämta till [!UICONTROL Customer Journey Analytics] och klicka på **[!UICONTROL Add]**.
 
-   (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet ovanför listan med datauppsättningar.)
+   (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet **[!UICONTROL Search datasets]** ovanför listan med datauppsättningar.)
 
-1. För varje datauppsättning som du har lagt till i den här anslutningen anges datauppsättningstypen automatiskt baserat på de data som kommer in. [!UICONTROL Customer Journey Analytics]
+## Konfigurera datauppsättning
+
+Till höger kan du nu konfigurera den datauppsättning som du har lagt till.
+
+1. **[!UICONTROL Dataset type]**: För varje datauppsättning som du har lagt till i den här anslutningen anges datauppsättningstypen automatiskt baserat på de data som kommer in. [!UICONTROL Customer Journey Analytics]
 
    Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] data och [!UICONTROL Lookup] data.
 
@@ -46,9 +50,19 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
    | [!UICONTROL Lookup] | Motsvarar en klassificeringsfil. Dessa data används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på en XDM-klass med beteendet &quot;Record&quot;, förutom klassen &quot;XDM Individual Profile&quot;. | Ej tillämpligt |
    | [!UICONTROL Profile] | Motsvarar [!UICONTROL Customer Attributes] - för attribut som inte ändras eller som inte är temporala. Data som tillämpas på era besökare, användare eller kunder i [!UICONTROL Event] data. Du kan till exempel överföra CRM-data om dina kunder. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på klassen &quot;XDM Individual Profile&quot;. | Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning som definieras i [!DNL Experience Platform] har en egen uppsättning med ett eller flera definierade person-ID, t.ex. cookie-ID, Stitched ID, User ID, Tracking Code, osv.<br>![Person](assets/person-id.png)**IDNote **: Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du verkligen vill sammanfoga datauppsättningar måste du använda samma person-ID. |
 
-1. Klicka **[!UICONTROL Next]** för att gå till [!UICONTROL Create Connection] dialogrutan.
+1. **[!UICONTROL Dataset ID]**: Detta ID genereras automatiskt.
 
-   ![Skapa anslutning](assets/create-connection2.png)
+1. **[!UICONTROL Timestamp]**: lägg till innehåll här
+
+1. **[!UICONTROL Schema]**:
+
+1. **[!UICONTROL Person ID]**:
+
+1. Klicka **[!UICONTROL Next]** för att gå till [!UICONTROL Enable Connection] dialogrutan.
+
+   ![Aktivera anslutning](assets/create-connection2.png)
+
+## Aktivera anslutning
 
 1. Ange följande inställningar i [!UICONTROL Create Connection] dialogrutan:
 
