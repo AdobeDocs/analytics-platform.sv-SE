@@ -2,9 +2,9 @@
 title: (B2B) Lägg till kontonivådata som en uppslagsuppdatamängd
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatamängd till CJA
 translation-type: tm+mt
-source-git-commit: 721915ffdc9f196a13a360fb5ac145f750788bcf
+source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -46,8 +46,15 @@ När schemat har skapats måste du skapa en uppslagsdatauppsättning från det s
 1. Ge datamängden ett namn (i vårt exempel B2B Info) och ge en beskrivning.
 1. Klicka på **[!UICONTROL Finish]**.
 
+## 3 Ingest-data från Experience Platform
 
-## 3 Kombinera datauppsättningar i en anslutning (Customer Journey Analytics)
+Instruktioner för hur du ska [Koppla en CSV-fil till ett XDM-schema](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) bör vara till hjälp om du använder en CSV-fil.
+
+[Andra metoder](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) finns också tillgängliga.
+
+Det tar cirka 2 till 4 timmar att gå ombord på data och att konfigurera sökningen, beroende på storleken på uppslagstabellen.
+
+## 4 Kombinera datauppsättningar i en anslutning (Customer Journey Analytics)
 
 I det här exemplet kombinerar vi tre datauppsättningar till en CJA-anslutning:
 
@@ -61,20 +68,18 @@ Så här kombinerar du datauppsättningarna:
 
 1. I Customer Journey Analytics väljer du **[!UICONTROL Connections]** flik.
 1. Markera de datauppsättningar (i vårt exempel de tre ovan) som du vill kombinera.
-1. (Osäker på var steget hör..) Markera datamängden B2B för att se var steget hör. `accountID` nyckel som ska användas i uppslagstabellen. Välj sedan dess matchande nyckel (motsvarande dimension), även `accountID` i din händelsedatamängd.
+1. För datamängden B2B-info väljer du `accountID` nyckel som ska användas i uppslagstabellen. Välj sedan dess matchande nyckel (motsvarande dimension), även `accountID` i din händelsedatamängd.
 1. Klicka på **[!UICONTROL Next]**.
 1. Namnge och beskriv anslutningen och konfigurera den enligt [dessa instruktioner](/help/connections/create-connection.md).
 1. Klicka på **[!UICONTROL Save]**.
 
-Nu tas data upp. Det tar cirka 2 till 4 timmar att gå ombord på data och att konfigurera sökningen, beroende på storleken på uppslagstabellen.
-
-## Skapa en datavy från den här anslutningen
+## 5 Skapa en datavy från den här anslutningen
 
 Följ instruktionerna på [skapa datavivyer](/help/data-views/create-dataview.md).
 
 * Lägg till alla komponenter (mått och mått) som du behöver från datauppsättningarna.
 
-## Analysera data på arbetsytan
+## 6 Analysera data på arbetsytan
 
 Du kan nu skapa arbetsyteprojekt baserat på data från alla tre datauppsättningarna.
 
