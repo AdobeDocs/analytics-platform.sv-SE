@@ -1,8 +1,11 @@
 ---
-title: Frågor och svar om kundreseanalys
-description: Customer Journey Analytics - Frågor och svar.
+title: FAQ för kundfärgsanalys
+description: Customer Journey Analytics - Vanliga frågor och svar.
 translation-type: tm+mt
-source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
+source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 1%
 
 ---
 
@@ -10,27 +13,28 @@ source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
 # Frågor och svar
 
 | Fråga | Svar |
-|---|---|
+| --- | --- |
 | **Förutsättningar** |  |
-| Behöver du Device Graph eller Device Coop för [!UICONTROL Customer Journey Analytics]? | Nej, privat enhetsdiagram eller enhetskopia krävs inte för [!UICONTROL Customer Journey Analytics]. Faktum är att de ännu inte stöds. |
-| Behöver du Experience Cloud ID (ECID) för [!UICONTROL Customer Journey Analytics]? | Nej, det finns stöd för alla ID:n i en datauppsättning, oavsett om det är ECID eller något annat ID du väljer. [!UICONTROL Customer Journey Analytics] |
-| Vad händer om ni behöver ETL (Extract, Transform, Load) för era data före kundreseanalysen? | Idag måste ni arbeta tillsammans med en ETL-partner (Unifi eller Informatica) om ni behöver omvandla era data innan ni lägger in dem i AEP. Om du behöver ETL efter att data redan har importerats, kan AEP Query Services erbjuda några begränsade alternativ. |
-| **Stitlar** |  |
-| Kan [!UICONTROL Customer Journey Analytics] &quot;sy ihop&quot; mellan olika enheter eller datauppsättningar? | Nej. [!UICONTROL Customer Journey Analytics] är ett&quot;plocka fram ditt eget ID&quot;-analyssystem. Planer för en bra sammanslagning är på gång. |
-| Stöds sammanslagning från anonymt beteende till autentiserat beteende? | Nej, inte än. |
+| Behöver jag Device Graph eller Device Coop för [!UICONTROL Customer Journey Analytics]? | Nej, Private Device Graph eller Device Coop krävs inte för [!UICONTROL Customer Journey Analytics]. I själva verket har de ännu inte fått något stöd. |
+| Behöver jag uppleva Cloud ID (ECID) för [!UICONTROL Customer Journey Analytics]? | Nej. [!UICONTROL Customer Journey Analytics] stöder valfritt ID i en datamängd, oavsett om det är ECID eller något annat ID som du väljer. |
+| Tänk om jag behöver ETL (Extract, Transform, Load) mina data före kundens färjeanalys? | Idag behöver du samarbeta med en ETL-partner (Unifi eller Informatica) om du behöver omvandla dina data innan du sätter in dem i AEP. Om du behöver ETL när data redan har intagits, ger AEP Query Services vissa begränsade alternativ. |
+| **Spekande** |  |
+| Kan [!UICONTROL Customer Journey Analytics] &quot;STICK&quot; mellan olika enheter eller datauppsättningar? | Nej. [!UICONTROL Customer Journey Analytics] är ett system för att &quot;hämta ditt eget ID&quot;-analys. Det finns planer på ett bra lappverk. |
+| Stöds sömnad från anonymt beteende till autentiserat beteende? | Nej, inte än. |
 | **Hämta data till[!UICONTROL Customer Journey Analytics]** |  |
-| Vad är den förväntade fördröjningen för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Experience Platform]? | <ul><li>Under normal belastning: &lt; 60<br>**minuterObs!**Om dataflödet genom rörledningen är ovanligt stort kan det ta upp till 24 timmar.</li><li>Data för säkerhetskopiering (upp till 10 miljarder händelser): &lt; 4 veckor</li></ul> |
-| Hur kopplar man onlinedata till offlinedata i [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Customer Journey Analytics] är ett&quot;hämta ditt eget ID&quot;-analyssystem. Så länge person-ID:t matchar mellan datauppsättningar kan [!UICONTROL Customer Journey Analytics] koppla segment, attribuering, flöde, utfall osv. över datauppsättningar. |
-| Hur får jag in mina offlinedata i kundreseanalysen? | Kunderna måste först hämta alla data till Experience Platform innan de kan använda dem med kundreseanalysen. Experience Platforms team för datainhämtning kan hjälpa er att ge rekommendationer eller konsulttjänster för kunder vid behov. |
-| Hur får jag in analysdata i kundreseanalysen? | Analysdata kan anslutas till Experience Platform via Analytics Data Connector. De flesta Analytics-fälten visas i XDM-format, men andra fält är ännu inte tillgängliga (som dimensionerna för marknadsföringskanaler). |
-| Hur lång tid tar det att sätta ihop datauppsättningselement till en datavy? | Några timmar att komma igång och några dagar att fylla i de senaste 13 månadernas data. |
-| Är det nödvändigt att hämta in PII-data för att upprätta kopplingar mellan data? | Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är PII. |
+| Kan jag kombinera data från olika Experience Platform-sandlådor i en CJA-anslutning? | Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera datauppsättningar som finns i samma sandlåda. [Läs mer …](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
+| Vad är förväntad latens för [!UICONTROL Customer Journey Analytics] den [!UICONTROL Experience Platform]? | <ul><li>Vid normal belastning: &lt; 60 minuter <br>**Anmärkning:** Om dataflödet genom rörledningen är ovanligt stort kan det ta upp till 24 timmar.</li><li>Säkerhetskopiera data (upp till 10 miljarder händelser): &lt; 4 veckor</li></ul> |
+| Hur ansluter jag online-data till offline-data i [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Customer Journey Analytics] är ett analytiksystem för &quot;ta med ditt eget ID&quot;-kort. Så länge person-ID:t överensstämmer mellan datauppsättningarna [!UICONTROL Customer Journey Analytics] kan ansluta segment, attribut, flöde, utfall osv. över datauppsättningar. |
+| Hur tar jag med mina offlinedata till Customer Journey Analytics? | Du måste först hämta alla data till Experience Platform innan du kan använda dem med Customer Journey Analytics. Expertplattformens datateam för ombordstigning kan hjälpa dig att ge rekommendationer eller konsultera dig vid behov. |
+| Hur får jag analysdata till kundens Journey Analytics? | Analysdata kan anslutas till Experience Platform via [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html). De flesta analysfält överförs i XDM-format, men andra fält är ännu inte tillgängliga (t.ex. marknadsföringskanalernas dimensioner). |
+| Hur lång tid tar det att samla in datauppsättningselement i en datavy? | Några timmar att komma igång, och några dagar att backa upp de senaste 13 månaderna av data. |
+| Är det nödvändigt att föra in PII-uppgifter för att upprätta samband mellan uppgifterna? | Nej, du kan använda valfritt ID, inklusive ett hash-värde för ett kund-ID som inte är PII. |
 | **Traditionella analyskomponenter** |  |
-| Vad innebär detta för vår traditionella Adobe Analytics-produkt? | Customer Journey Analytics är nästa generationens analysprodukt. Att gå från våra nuvarande produkter till kundreseanalyser kommer att ta år och mycket samordning tillsammans. Den här versionen är ett stort steg i den riktningen. |
-| Kan jag dela segment från kundreseanalys till AEP eller andra lösningar? | Inte än. Vi letar efter nya, innovativa sätt att dela segment från kundreseanalys till AEP i framtiden som inte har en så lång fördröjning. Med andra ord kan du dela resultatet av frågetjänster till en enhetlig profil som en möjlig lösning. |
-| Vad hände med min gamla eVar-inställning? | eVars, props och events i traditionell Adobe Analytics-mening finns inte längre i kundreseanalysen. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden. |
-| Var finns alla inställningar för session och variabel beständighet nu? | Kundreseanalys tillämpar alla dessa inställningar vid rapporttillfället, och de här inställningarna finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer! |
-| Vad händer med våra befintliga segment/beräknade värden? | Customer Journey Analytics använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller beräkningarna är kompatibelt med kundreseanalysen. |
-| Hur hanterar kundreseanalyser `Uniques Exceeded` begränsningar? | Customer Journey Analytics har inga unika värdebegränsningar, så du behöver inte bekymra dig om dem! |
-| Om jag är en befintlig [!DNL Data Workbench] kund, kan jag då gå över till kundreseanalys just nu? | Det beror på. Om ni är starkt beroende av den enhetliga kundprocessen (UCP) vill ni vänta tills vi har sytt ihop. Om ni redan har höga kundautentiseringsnivåer, eller om ni vill ha alla era data på ett och samma ställe, eller vill bli av med eVars, kan kundreseanalysen passa bra. |
+| Vad betyder detta för vår traditionella Adobe Analytics-produkt? | Customer Journey Analytics är vår nästa generations analysprodukt. Att gå från våra nuvarande produkter till Customer Journey Analytics kommer att ta flera år och det kommer att krävas mycket samordning tillsammans. |
+| Kan jag dela segment från Customer Journey Analytics till AEP eller andra lösningar? | Inte än. Vi undersöker nya, innovativa sätt att dela segment från Customer Journey Analytics till AEP i framtiden som inte har så lång fördröjning. Med det sagt kan du dela resultatet av Query Services till Unified Profile som en möjlig lösning. |
+| Vad hände med min gamla eVar-inställning? | Varor, support och händelser i traditionell Adobe Analytics-mening finns inte längre i Customer Journey Analytics. Du har obegränsade schemaelement (dimensioner, mått, listfält). Alla de tilldelningsinställningar som du tidigare tillämpade under datainsamlingsprocessen tillämpas nu vid frågestunden. |
+| Var är alla inställningar för session och variabel persistence nu? | Alla dessa inställningar används vid rapporttid i kundresanalysen, och de här inställningarna finns nu i datavyer. Ändringarna av dessa inställningar är nu retroaktiva och du kan ha flera versioner med hjälp av flera datavyer! |
+| Vad händer med våra befintliga segment/beräknade mått? | Customer Journey Analytics använder inte längre eVars, props eller händelser och använder istället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller kalkmåtten är kompatibelt med kundens Journey Analytics. |
+| Hur hanterar kundens researrangör? `Uniques Exceeded` begränsningar? | Customer Journey Analytics har inga unika värdebegränsningar, så du behöver inte oroa dig för dem! |
+| Om jag är en befintlig [!DNL Data Workbench] Kan jag gå till Customer Journey Analytics just nu? | Det beror på. Om du är mycket beroende av UCP (Unified Customer Process), vill du vänta tills vi har sytt till implementerat. Om du redan har höga autentiseringstariffer för kunder, eller om du vill ha alla dina data på ett ställe, eller vill bli av med eVars, kan kundens Journey Analytics vara en bra passning. |
 
