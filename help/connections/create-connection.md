@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatamängd i kundresanalysen.
 translation-type: tm+mt
-source-git-commit: bbe86f2d6e052262f0e8a84bca0996f4e2589433
+source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1594'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    >[!IMPORTANT]
    >
-   >Du kan inte komma åt data över sandlådor, d.v.s. du kan bara kombinera datauppsättningar inom en sandlåda.
+   >Du kan inte komma åt data över sandlådor, d.v.s. du kan bara kombinera datauppsättningar som finns i samma sandlåda.
 
 1. Markera en eller flera datamängder som du vill dra in i [!UICONTROL Customer Journey Analytics] och klicka **[!UICONTROL Add]**.
 
