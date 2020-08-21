@@ -13,7 +13,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Självstudier
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 41ad1eeb2510fce0d73c7f14fe11621445e43420
+source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 55%
