@@ -1,8 +1,8 @@
 ---
 title: Använda arrayer med objekt
-description: Lär dig hur CJA rapporterar om datahierarkier.
+description: Förstå hur CJA rapporterar om datalänkar.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Använda arrayer med objekt
 
-Vissa plattformsscheman kan ha objektarrayer. Ett av de vanligaste exemplen är en varukorg som innehåller flera produkter. Varje produkt har ett namn, SKU, kategori, pris, kvantitet och andra dimensioner som du vill spåra. Alla de här ansiktena har olika krav, men måste alla få plats i samma träff.
+Vissa plattformsscheman kan ha objektarrayer. Ett av de vanligaste exemplen skulle vara en shoppingvagn som innehåller flera produkter. Varje produkt har ett namn, SKU, kategori, pris, kvantitet och andra dimensioner som du vill spåra. Alla dessa aspekter har separata krav, men måste alla passa in i samma träff.
 
-I tidigare versioner av Adobe Analytics utfördes den här funktionen med hjälp av `products` variabeln. Det var en sammanfogad sträng som separerades med semikolon (`;`) för att separera en produkts delar, medan kommatecken (`,`) avgränsade produkter. Den var den enda variabeln med begränsat stöd för&quot;objektarrayer&quot;. Multivärdesvariabler som listvariabler kan ha stöd för motsvarande arrayer, men de kan inte ha stöd för &quot;objektarrayer&quot;. CJA bygger vidare på detta koncept genom att ha stöd för godtyckligt djupa hierarkier i en enda datarad, en funktion som inte finns i någon tidigare version av Adobe Analytics.
+I tidigare versioner av Adobe Analytics utfördes den här funktionen med hjälp av `products` variabel. Det var en sammanfogad sträng åtskild med semikolon (`;`) för att separera olika aspekter av en produkt, medan kommatecken (`,`) avgränsade produkter. Det var den enda variabeln med begränsat stöd för &quot;objektmatriser&quot;. Multivärdiga variabler som listvars kan stödja motsvarande arrayer, men de kan inte stödja &quot;objektarrayer&quot;. CJA utökar konceptet genom att stödja godtyckligt djupa hierarkier i en enda rad data, en funktion som inte finns tillgänglig i någon tidigare version av Adobe Analytics.
 
 ## Samma träffexempel
 
-Följande träff är ett JSON-objekt som representerar ett köp av en kund gjord av en tvättmaskin och torktumlare.
+Följande träff är ett JSON-objekt som representerar ett köp som en kund gjort av en tvättmaskin och en torktumlare.
 
 ```json
 {
@@ -62,27 +62,27 @@ Följande träff är ett JSON-objekt som representerar ett köp av en kund gjord
 }
 ```
 
-När du skapar en datavy är följande mått och mått tillgängliga (baserat på schema):
+När du skapar en datavy är följande dimensioner och mått tillgängliga (baserat på schema):
 
 * **Dimensioner:**
    * ID
-   * product: SKU
-   * product: name
-   * product: order_id
-   * product: garanti: täckning
-   * product: garanti: length
-   * product: garanti: name
-   * product: garanti: type
+   * produkt: SKU
+   * produkt: namn
+   * produkt: order_id
+   * produkt: garanti: täckning
+   * produkt: garanti: längd
+   * produkt: garanti: namn
+   * produkt: garanti: typ
 * **Mätvärden:**
-   * product: order
-   * product: enheter
-   * product: omsättning
-   * product: garanti
-   * product: garanti: omsättning
+   * produkt: order
+   * produkt: enheter
+   * produkt: inkomster
+   * produkt: garanti
+   * produkt: garanti: inkomster
 
 ### Samma träffexempel (rapporteringsbeteende)
 
-Med hjälp av bara träffen ovan visas Workspace-rapporter med mått och måttkombinationer i följande tabeller.
+Med hjälp av bara träffen ovan visar följande tabeller arbetsyterapporter med vissa dimensioner och metriska kombinationer.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ Med hjälp av bara träffen ovan visas Workspace-rapporter med mått och måttko
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-CJA tittar selektivt på objektets mått och mått baserat på tabellen.
+CJA tittar selektivt på objektets dimension och mått baserat på tabellen.
 
 ```diff
 {
@@ -134,7 +134,7 @@ CJA tittar selektivt på objektets mått och mått baserat på tabellen.
 +}
 ```
 
-Om du bara vill rapportera garantiintäkter ser ditt projekt ut ungefär så här:
+Om du vill rapportera om enbart garantiintäkter ser ditt projekt ut så här:
 
 | `product : warranty : coverage` | `product : warranty : revenue` |
 | --- | --- |
@@ -188,7 +188,7 @@ CJA tittar på de här delarna av träffen för att generera rapporten:
 
 Eftersom torktumlaren inte innehöll någon garanti ingår den inte i tabellen.
 
-Eftersom du kan kombinera alla dimensioner med alla mätvärden, visar följande tabell hur data skulle kunna användas med ospecificerade dimensionsobjekt:
+Eftersom du kan kombinera alla dimensioner med alla mått visar följande tabell hur data skulle användas med ospecificerade dimensionsobjekt:
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ Eftersom du kan kombinera alla dimensioner med alla mätvärden, visar följande
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Det finns en produktorder utan ett garantinamn som är knutet till den, så dimensionsobjektsattributen är &#39;Ospecificerad&#39;. Samma situation gäller även för produktgarantiordern:
+Det finns en produktorder som inte har något garantinamn som är kopplat till den, så dimensionsobjektets attribut är &quot;Ospecificerat&quot;. Samma situation gäller även för produktgarantiordern:
 
 ```diff
 {
@@ -240,11 +240,11 @@ Det finns en produktorder utan ett garantinamn som är knutet till den, så dime
 +}
 ```
 
-Observera order som inte har ett namn som är knutet till dem. Detta är de order som har tilldelats dimensionsobjektet &#39;Ospecificerad&#39;.
+Observera order som inte har ett namn som är kopplat till dem. Detta är de order som tilldelats till dimensionsartikeln Ospecificerad.
 
-### Kombinera mätvärden
+### Kombinera mått
 
-CJA kombinerar inte mätvärden med liknande namn om de finns på olika objektnivåer.
+I CJA kombineras inte måtten med liknande namn om de finns på olika objektnivåer.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |
@@ -254,9 +254,9 @@ CJA kombinerar inte mätvärden med liknande namn om de finns på olika objektni
 
 Du kan dock skapa ett beräknat mått som kombinerar de önskade måtten:
 
-Beräknad&quot;total intäkt&quot;: `[product : revenue] + [product : warranty : revenue]`
+Beräknad &quot;summa inkomster&quot;: `[product : revenue] + [product : warranty : revenue]`
 
-När du använder det här beräknade måttet visas det önskade resultatet:
+Om du använder det här beräknade måttet visas önskade resultat:
 
 | `product : warranty : name` | `Total revenue (calculated metric)` |
 | --- | --- |
@@ -264,5 +264,5 @@ När du använder det här beräknade måttet visas det önskade resultatet:
 | `Dryers` | `500` |
 | `Total` | `2350` |
 
-## Exempel på persistence
+## Persistensexempel
 
