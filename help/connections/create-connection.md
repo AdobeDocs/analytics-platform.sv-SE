@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatamängd i kundresanalysen.
 translation-type: tm+mt
-source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
+source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1591'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ På höger sida kan du nu konfigurera den eller de datamängder du har lagt till
 
    | Datauppsättningstyp | Beskrivning | Tidsstämpel | Schema | Person-ID |
    |---|---|---|---|---|
-   | [!UICONTROL Event] | Data som representerar händelser i tid (t.ex. webbbesök, interaktioner, transaktioner, POS-data, undersökningsdata, intryck-data osv.). Detta kan till exempel vara typiska data för klickstream, med ett kund-ID eller ett cookie-ID och en tidsstämpel. Med händelsedata kan du vara flexibel när det gäller vilket ID som används som person-ID. | Anger automatiskt standardfältet för tidsstämpel från händelsebaserade scheman i [UICONTROL Experience Platform]. | Alla inbyggda eller anpassade scheman som är baserade på en XDM-klass med beteendet &quot;Time Series&quot;. Exempel på detta är XDM Experience Event eller XDM Decision Event. | Du kan välja vilket person-ID du vill inkludera. Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som har definierats och associerats med ett identitetsnamnområde. Alla dessa kan användas som ID för person. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. |
+   | [!UICONTROL Event] | Data som representerar händelser i tid (t.ex. webbbesök, interaktioner, transaktioner, POS-data, undersökningsdata, intryck-data osv.). Detta kan till exempel vara typiska data för klickstream, med ett kund-ID eller ett cookie-ID och en tidsstämpel. Med händelsedata kan du vara flexibel när det gäller vilket ID som används som person-ID. | Anger automatiskt standardfältet för tidsstämpel från händelsebaserade scheman i [!UICONTROL Experience Platform]. | Alla inbyggda eller anpassade scheman som är baserade på en XDM-klass med beteendet &quot;Time Series&quot;. Exempel på detta är XDM Experience Event eller XDM Decision Event. | Du kan välja vilket person-ID du vill inkludera. Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som har definierats och associerats med ett identitetsnamnområde. Alla dessa kan användas som ID för person. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. |
    | [!UICONTROL Lookup] | (Analogt med en klassifikationsfil i traditionell Adobe Analytics.) Dessa data används för att söka efter värden eller nycklar som hittats i data för Händelse eller Profil. Du kan t.ex. överföra uppslagsdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [detta användningsfall](/help/use-cases/b2b.md) till exempel. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som är baserade på en XDM-klass med beteendet Record, förutom klassen XDM-individuell profil. | Ej tillämpligt |
    | [!UICONTROL Profile] | Motsvarande [!UICONTROL Customer Attributes] - för attribut som inte ändras och som inte är temporala. Data som används för besökare, användare eller kunder i [!UICONTROL Event] uppgifter. Du kan till exempel överföra CRM-data om dina kunder. | Ej tillämpligt | Ett inbyggt eller anpassat schema som är baserat på klassen XDM-individuell profil. | Du kan välja vilket person-ID du vill inkludera. Varje datamängd som definieras i [!DNL Experience Platform] har en egen uppsättning av ett eller flera angivna person-ID, t.ex. cookie-ID, Stitched ID, User ID, Tracking Code, etc.<br>![Person-ID ](assets/person-id.png)**Anteckning**: Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n kommer rapporteringen att återspegla detta. Om du verkligen vill sammanfoga datauppsättningar måste du använda samma person-ID. |
 
