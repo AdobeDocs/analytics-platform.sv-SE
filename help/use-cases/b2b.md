@@ -2,9 +2,9 @@
 title: (B2B) Lägg till kontonivådata som en uppslagsuppdatamängd
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatamängd till CJA
 translation-type: tm+mt
-source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
+source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,12 @@ Skapa ett eget schema för [sökning](/help/getting-started/cja-glossary.md) tab
 ## 2 Skapa uppsättningen med uppslagsdata (Experience Platform)
 
 När schemat har skapats måste du skapa en uppslagsdatauppsättning från det schemat i Experience Platform. Den här uppslagsuppsättningen innehåller marknadsföringsinformation på kontonivå, t.ex.: Företagsnamn, totalt antal anställda, domännamn, vilken bransch de tillhör, årliga intäkter, vare sig de är nuvarande kunder i Experience Platform eller inte, vilket försäljningsstadium de befinner sig i, vilket team på kontot använder CJA osv.
+
+>[!IMPORTANT]
+>
+>CJA stöder inte heltal i uppslagsdatauppsättningar. Om du lägger till heltalsfälten i XDM-schemat för uppslagsdatauppsättningen kan du inte använda dessa heltal som mått eller beräknade mått. Om exempelvis annualRevenue eller TotalEmployees definieras som heltal visas de som &quot;0&quot; vid rapportering i CJA. Om du däremot tilldelar dem som strängar kan du använda dem som uppslagsinformation.
+
+Exempelvis definieras annualRevenue eller totalEmployees som heltal i följande exempel, det är anledningen till att den visar &quot;0&quot; i CJA.
 
 1. Gå till Adobe Experience Platform **[!UICONTROL Data Management > Datasets]**.
 1. Klicka på **[!UICONTROL + Create dataset]**.
@@ -75,7 +81,7 @@ Så här kombinerar du datauppsättningarna:
 
 ## 5 Skapa en datavy från den här anslutningen
 
-Följ instruktionerna på [skapa datavivyer](/help/data-views/create-dataview.md).
+Följ instruktionerna på [skapa datavyer](/help/data-views/create-dataview.md).
 
 * Lägg till alla komponenter (mått och mått) som du behöver från datauppsättningarna.
 
