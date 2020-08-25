@@ -2,9 +2,9 @@
 title: (B2B) Lägg till kontonivådata som en uppslagsuppdatamängd
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatamängd till CJA
 translation-type: tm+mt
-source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ I det här exemplet kombinerar vi tre datauppsättningar till en CJA-anslutning:
 | Datauppsättningsnamn | Beskrivning | AEP-schemaklass | Datauppsättningsinformation |
 |---|---|---|---|
 | B2B-komprimering | Innehåller data på kontonivå för klickström, händelsenivå. Den innehåller t.ex. e-post-ID och motsvarande konto-ID samt marknadsföringsnamn för att köra marknadsföringsannonser. Den innehåller även intryck för annonserna, per användare. | Baserat på schemaklassen XDM ExperienceEvent | De `emailID` används som primär identitet och tilldelas en `Customer ID` namnområde. Som ett resultat av detta visas den som standard **[!UICONTROL Person ID]** i Customer Journey Analytics. ![Impression](assets/impressions-mixins.png) |
-| B2B-profil | Den här profildatamängden ger dig mer information om användarna i ett konto, till exempel deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM-individuell profil | Du behöver inte välja `emailID` som primärt ID i det här schemat. Se till att aktivera **[!UICONTROL Profile]**; Om du inte gör det kommer inte CJA att kunna ansluta `emailID` i B2B-profilen med `emailID` i B2B-data om intryckning. (Denna funktion kallas fältbaserad sömnad.) ![Profil](assets/profile-mixins.png) |
+| B2B-profil | Den här profildatamängden ger dig mer information om användarna i ett konto, till exempel deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM-individuell profil | Du behöver inte välja `emailID` som primärt ID i det här schemat. Se till att aktivera **[!UICONTROL Profile]**; Om du inte gör det kommer inte CJA att kunna ansluta `emailID` i B2B-profilen med `emailID` i B2B-data om intryckning. ![Profil](assets/profile-mixins.png) |
 | B2B-info | Se &quot;Skapa uppsättningen sökdata&quot; ovan. | B2BAccount (anpassad sökschemaklass) | Förhållandet mellan `accountID` och datauppsättningen B2B Impression har skapats automatiskt genom att datauppsättningen B2B Info ansluts till datauppsättningen B2B Impression i CJA, enligt beskrivningen i stegen nedan. ![Uppslag](assets/lookup-mixins.png) |
 
 Så här kombinerar du datauppsättningarna:
