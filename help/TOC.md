@@ -13,9 +13,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Självstudier
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 55%
 
 ---
@@ -93,6 +93,7 @@ ht-degree: 55%
    + Samla in eller dela projekt {#curate-share}
       + [Kurva arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
+      + [Skapa delbara länkar](analysis-workspace/curate-share/shareable-links.md)
       + [Skrivskyddade Workspace-projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
