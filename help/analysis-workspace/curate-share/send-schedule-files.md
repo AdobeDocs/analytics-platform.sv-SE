@@ -1,54 +1,24 @@
 ---
-description: Du kan dela och strukturera projekt och skicka projektfiler (i PDF- eller CSV-format) direkt eller enligt ett schema.
+description: Du kan beskära, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen.
 title: Dela-menyn
 uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c4c6bc367ba1a45146267b968edb88a634cbc7ae
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 2%
+source-wordcount: '170'
+ht-degree: 17%
 
 ---
 
 
 # Dela-menyn
 
->[!NOTE]
->
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+Du kan boka, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen på arbetsytan **Dela-menyn**.
 
-Du kan dela och strukturera projekt och skicka projektfiler (i PDF- eller CSV-format) direkt eller enligt ett schema.
-
-**[!UICONTROL Workplace]** > **[!UICONTROL Share]**
-
-<table id="table_5104A6D817E94A268BBDD47C5C8BB26E"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Alternativ </th> 
-   <th colname="col2" class="entry"> Använda </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Dela projekt </td> 
-   <td colname="col2"><a href="/help/analysis-workspace/curate-share/share-projects.md"  > Mer information</a> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Hämta projektlänk </td> 
-   <td colname="col2"> <p>Kopiera och dela länken för att skicka andra direkt till det här projektet. Användarna måste logga in. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Skicka fil nu </td> 
-   <td colname="col2"> <p>Ange filtyp, beskrivning och mottagare. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Skicka fil enligt schema </td> 
-   <td colname="col2"> <p>Ange startdatum, intervall och frekvens samt slutdatum. <a href="/help/analysis-workspace/curate-share/schedule-projects.md"  > Mer information</a> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Kuratera projektdata </td> 
-   <td colname="col2"> <p><a href="/help/analysis-workspace/curate-share/curate.md"  > Mer information</a> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
+| Menyalternativ | Beskrivning |
+|---|---|
+| Dela projekt | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
+| Hämta projektlänk | Skapa en shareable-länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
+| Skicka fil nu | Skicka ett projekt som CSV eller PDF direkt till angivna mottagare. |
+| Skicka fil i schema | Skicka ett projekt som CSV eller PDF enligt ett schema till angivna mottagare. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
+| Kurva projektdata | Begränsa de komponenter (dimensioner, mått, segment, datumintervall) som är tillgängliga i ett projekt. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) |
