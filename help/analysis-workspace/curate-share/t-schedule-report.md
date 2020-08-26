@@ -1,33 +1,60 @@
 ---
-description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
+description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägga det för leverans.
 keywords: Analysis Workspace
-title: Skicka fil – schemalägga ett projekt för leverans
+title: Schemalagda projekt
+topic: Reports and analytics
+uuid: 9244d7b2-1b7e-4323-98ef-cf22de3b666a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c4c6bc367ba1a45146267b968edb88a634cbc7ae
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 34%
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
 
-# Skicka fil – schemalägga ett projekt för leverans
+# Schemalagda projekt
 
->[!NOTE]
->
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+Från arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till valda mottagare. Filer kan skickas i CSV- eller PDF-format.
 
-Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
+## Skicka filen nu
 
-1. [Skapa ett Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) och spara det.
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Send File On Schedule]**.
+Så här skickar du en fil direkt till mottagarna via e-post:
 
-   ![Stegresultat](assets/send-file.png)
+1. Klicka **Dela > Skicka fil nu**.
+1. Ange filtyp (CSV eller PDF).
+1. (Valfritt) Lägg till en beskrivning som kommer att ingå i e-postmeddelandet för att förklara den mottagna filen.
+1. Lägg till mottagare eller grupper. E-postadresser kan också anges.
+1. Klicka **Skicka nu**.
+1. (Valfritt) Klicka på **Visa schemaläggningsalternativ** för att ange ett leveransschema.
 
-1. Ange filtypen (CSV eller PDF) på [!UICONTROL Send File] sidan.
+## Skicka fil enligt schema
 
-   ![Stegresultat](assets/send-file-pop-up.png)
+Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
-1. Lägg till mottagarnas e-postadresser eller namn genom att klicka **[!UICONTROL Send Now]**.
-1. (Valfritt) Klicka **[!UICONTROL Show Scheduling Options]** för att ange ett leveransschema och klicka sedan på **[!UICONTROL Send on Schedule]**.
-1. Hantera schemalagda projekt i **[!UICONTROL Components]** > [Schemalagda projekt](/help/analysis-workspace/curate-share/schedule-projects.md).
+1. Klicka **Dela > Skicka fil i schema**.
+1. Ange filtyp (CSV eller PDF).
+1. (Valfritt) Lägg till en beskrivning som kommer att ingå i e-postmeddelandet för att förklara den mottagna filen.
+1. Lägg till mottagare eller grupper. E-postadresser kan också anges.
+1. Ange intervallet som schemat ska levereras över genom att ändra Start on och Ending on input. Slutdatumet måste infalla inom ett år från den dag då schemat skapas eller ändras.
+1. Ange leveransfrekvens. Varje frekvens möjliggör olika anpassningar.
+1. Klicka **Skicka enligt schema**.
+
+## Projektansvarig för schemalagda projekt
+
+Schemalagda Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Schemalagda projekt**.
+
+I projekthanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med hjälp av filteralternativen i den vänstra rälen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
+
+Följande är vanliga åtgärder i projekthanteraren för schemalagda projekt:
+
+| Åtgärd | Beskrivning |
+|---|---|
+| **Redigera schema** | Klicka på rubriken för schemat för att uppdatera dess leveransinställningar. |
+| **Ta bort schema** | Markera det schemalagda projektet i listan och klicka sedan på Ta bort på menyn. Detta innebär att det valda schemat för projektet tas bort. själva projektet inte kommer att tas bort. |
+| **Lägg till taggar** | Markera det schemalagda projektet i listan och välj sedan &quot;Tagg&quot; eller &quot;Godkänn&quot; för att ordna scheman och göra det enklare att söka efter dem. |
+| **Visa misslyckade scheman** | Navigera till vänster räl > Andra filter > Det gick inte att visa scheman som har misslyckats. |
+| **Visa förfallna scheman** | Navigera till vänster räl > Andra filter > Förfallit om du vill visa förfallna scheman. Klicka på schemats titel för att konfigurera ett nytt leveransschema. |
+| **Visa schema-ID** | Navigera till kolumnalternativ längst upp till höger och lägg till kolumnen Schema-ID i tabellen. Det schemalagda ID:t är ofta användbart för felsökning. |
+
+I projekthanteraren visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägarskap kan vara **överförd** till en ny användare enligt **Admin > Analytiska användare och tillgångar > Överför tillgångar**.
