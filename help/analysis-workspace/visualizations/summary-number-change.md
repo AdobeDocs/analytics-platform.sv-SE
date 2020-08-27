@@ -3,10 +3,10 @@ description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att
 title: Sammanfattning av antal och förändring
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 3e8e628ac7fe782e060fd3e0ced209853d53540e
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 6%
+source-wordcount: '403'
+ht-degree: 5%
 
 ---
 
@@ -21,6 +21,8 @@ Använd visualisering av sammanfattningsnummer för att markera ett stort antal 
 * Om du har markerat en enda cell visas sammanfattningen för den cellen.
 * Om mer än en cell är markerad visas den första markerade cellen.
 * Om kolumnen är markerad, väljs det första cellvärdet i kolumnen.
+
+![Sammanfattningsnummer](assets/summary-number.png)
 
 Klicka på **Visualiseringsinställningar** Växla till höger överst för att konfigurera inställningarna för sammanfattningsnummer:
 
@@ -43,6 +45,8 @@ Denna visualisering fungerar på följande sätt:
 * Om fler än två celler är markerade, beaktas bara de två första för jämförelse.
 * Om ett cellområde är markerat jämförs det första med det sista cellområdet.
 * Om kolumnen är markerad jämförs det första värdet med det egna, vilket visar en ändring med 0.
+
+![Sammanfattningsändring](assets/summary-change.png)
 
 Klicka på **Visualiseringsinställningar** Växla till höger överst för att konfigurera inställningarna för Sammanfattningsändring:
 
