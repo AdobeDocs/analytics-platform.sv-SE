@@ -3,9 +3,9 @@ description: 'null'
 title: Optimera prestanda för Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -13,102 +13,96 @@ ht-degree: 0%
 
 # Optimera prestanda för Analysis Workspace
 
->[!NOTE]
->
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
-
-Vissa faktorer kan påverka ett projekts prestanda i Analysis Workspace. Det är viktigt att du vet vad dessa medarbetare är innan du börjar bygga ett projekt, så att du kan planera och bygga projektet på det optimala sättet. Nedan visas en lista med faktorer som påverkar prestanda och bästa praxis för optimering av projekt. Prestanda i Analysis Workspace är en av Adobes främsta prioriteringar och något som vi fortsätter att förbättra varje dag.
+Vissa faktorer kan påverka ett projekts prestanda inom Analysis Workspace. Det är viktigt att veta vilka dessa bidragsgivare är innan du börjar bygga ett projekt så att du kan planera och bygga projektet på bästa möjliga sätt. Nedan visas en lista över faktorer som påverkar prestanda och bästa praxis för optimering av dina projekt. Prestandan i Analysis Workspace är en av Adobes främsta prioriteringar och något som vi fortsätter att förbättra varje dag.
 
 ## Segmentlogikens komplexitet
 
-Integrerade segment kan ha en betydande inverkan på projektresultatet. Faktorer som ökar komplexiteten i ett segment (i fallande effektordning) är bland annat:
+Intrikala segment kan ha en betydande inverkan på projektresultaten. Faktorer som ökar komplexiteten i ett segment (i fallande kollisionsordning) omfattar:
 
-* Operatorer för &quot;contains&quot;, &quot;contains any of&quot;, &quot;match&quot;, &quot;starting with&quot; eller &quot;ends with&quot;
+* Operatorer för &quot;innehåller,&quot;, &quot;innehåller något av&quot;, &quot;matchar&quot;, &quot;börjar med,&quot; eller &quot;slutar med&quot;
 * Sekventiell segmentering, särskilt när dimensionsbegränsningar (inom/efter) används
-* Antal unika dimensionsobjekt inom dimensioner som används i segmentet (t.ex. Sida = &#39;A&#39; när sidan har 10 unika objekt blir snabbare än Sida = &#39;A&#39; när sidan har 100000 unika objekt)
+* Antal unika dimensioner som används i segmentet (t.ex. Page = &#39;A&#39; när sidan har 10 unika objekt blir snabbare än Page = &#39;A&#39; när sidan har 10000 unika objekt)
 * Antal olika dimensioner som används (t.ex. Page = &#39;Home&#39; och Page = &#39;Search results&#39; är snabbare än eVar 1 = &#39;red&#39; och eVar 2 = &#39;blue&#39;)
-* Många OR-operatorer (i stället för AND)
-* Kapslade behållare som varierar i omfång (t.ex. &quot;Träff&quot; inuti &quot;Besök&quot; inuti &quot;Besök&quot;)
+* Många ELLER-operatorer (i stället för OCH)
+* Kapade behållare som varierar i omfattning (t.ex. &quot;Träff&quot; inuti &quot;Besök&quot; inuti &quot;Besök&quot;)
 
-**Bästa tillvägagångssätt för logikkomplexitet**
+**Bästa praxis för logisk komplexitet**
 
-Vissa av komplexitetsfaktorerna kan inte förhindras, men tänk på möjligheter att minska komplexiteten i era segment. Ju mer specifik du kan vara med dina segmentkriterier, desto bättre. Exempel:
+Vissa av komplexitetsfaktorerna kan inte förhindras, men tänk på möjligheterna att minska komplexiteten hos dina segment. I allmänhet, ju mer specifika du kan vara med dina segmentkriterier, desto bättre. Exempel:
 
-* Med behållare blir det snabbare att använda en enda behållare högst upp i segmentet än en serie kapslade behållare.
-* Med operatorer blir&quot;lika&quot; snabbare än&quot;innehåller&quot;, och&quot;är lika med&quot; är snabbare än&quot;innehåller något av&quot;.
-* Med många kriterier blir AND-operatorer snabbare än en serie OR-operatorer. Du kan också söka efter möjligheter att minska många OR-satser till en enda &quot;motsvarar&quot;-programsats.
+* Med containrar är det snabbare att använda en enda behållare överst i segmentet än en serie kapslade behållare.
+* Med operatorer blir &quot;lika&quot; snabbare än &quot;innehåller&quot; och &quot;lika med&quot; snabbare än &quot;innehåller&quot;.
+* Med många kriterier är OCH-operatorer snabbare än en serie ELLER-operatorer. Sök också efter möjligheter att reducera många ELLER-satser till en enda &quot;lika med&quot;-sats.
 
-Dessutom kan [klassificeringar](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) hjälpa till att konsolidera många värden till koncisa grupper som du sedan kan skapa segment från. Segmentering i klassificeringsgrupper ger prestandafördelar jämfört med segment som innehåller många OR-satser eller&quot;contains&quot;-kriterier.
+Dessutom [klassificeringar](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) kan hjälpa till att konsolidera många värden till koncisa grupper som du sedan kan skapa segment från. Segmentering i klassificeringsgrupper ger prestandafördelar över segment som innehåller många OR-satser eller &quot;innehåller&quot;-kriterier.
 
-## Intervall med begärda data
+## Intervall för begärda data
 
-De data som begärs i ett helt projekt påverkar Analysis Workspace prestanda.
+Det dataintervall som begärs i ett projekt påverkar Analysis Workspace-prestanda.
 
-**Bästa tillvägagångssätt för dataintervall**
+**Bästa praxis för datumintervall**
 
-Dra inte in mer data än du behöver när det är möjligt.
+Dra inte in mer data än vad du behöver. Begränsa panelkalendern till relevanta datum för analysen eller använd datumintervallskomponenter (lila komponenter) i frihandstabellerna. Datumintervall som används i en tabell åsidosätter panelens datumintervall. Du kan till exempel lägga till förra månaden, förra veckan och i går till tabellkolumnerna för att begära dessa specifika dataintervall. Mer information om hur du arbetar med datumintervall i Analysis Workspace finns på [det här videoklippet](https://www.youtube.com/watch?v=MIkT6FZ5gKk) .
 
-Kom ihåg att datumintervall (lila komponenter) åsidosätter panelens datumintervall. Om du använder olika datumintervall som kolumner (t.ex. sista månaden, sista veckan och sista kolumnen) behöver alltså inte panelens datumintervall omfatta alla kolumndatumintervall. Den kan helt enkelt ställas in på igår eftersom de dataområden som används i frihandstabellen åsidosätter panelen. Mer information om hur du arbetar med datumintervall i Analysis Workspace finns i [den här videon](https://www.youtube.com/watch?v=ybmv6EBmhn0) .
-
-Använd [datumjämförelsealternativ](/help/components/date-ranges/time-comparison.md) för att hämta in de specifika tidsperioderna för data som du vill jämföra. Om du t.ex. vill visa data för förra månaden jämfört med samma månad förra året, i stället för att ställa in panelen på de sista 13 månaderna, använder du bara alternativet för att jämföra tidsperioder för att visa resultatet för varje år.
+Minimera antalet jämförelser över året som används i projektet. När en jämförelse mellan år och år beräknas, ser den ut över de 13 fullständiga månaderna av data mellan de berörda månaderna. Detta har samma effekt som att ändra panelens datumintervall till 13 månader.
 
 ## Antal visualiseringar
 
-Antalet grafvisualiseringar i ett projekt kommer att påverka Analysis Workspace allmänna svarstider.
+Antalet visualiseringar som ingår i ett projekt kommer att påverka analysens arbetsfärds allmänna respons. Detta beror på att varje visualisering, oavsett om det är en tabell eller ett diagram, har en datakälla som måste begäras.
 
 **Bästa praxis för antal visualiseringar**
 
-Minska antalet visualiseringar i projektet. Analysis Workspace arbetar mycket bakom kulisserna för varje bild som ni lägger till, så prioritera de bilder som är viktigast för rapportens konsument och dela upp stödet till ett separat, mer detaljerat projekt om det behövs.
+Minska antalet visualiseringar i projektet. Analysarbetsytan bearbetar mycket bakom kulisserna för varje visuell bild som du lägger till, så prioriterar de bilder som är viktigast för rapportens konsument och delar ut stödjande bilder till ett separat, mer detaljerat projekt om det behövs.
 
-## Komplexitet i visualiseringar (segment, mätvärden, filter)
+## Synualiseringarnas komplexitet (segment, mått, filter)
 
-Den typ av visualisering (t.ex. bortfall jämfört med frihandstabell) som läggs till i ett projekt påverkar inte projektets prestanda särskilt mycket. Det är komplexiteten i den visualisering som kommer att öka bearbetningstiden. Faktorer som gör en visualisering mer komplicerad:
+Den typ av visualisering (t.ex. fallout jämfört med ett frihandsregister) som läggs till i ett projekt i sig påverkar inte projektprestanda särskilt mycket. Det är visualiseringens komplexitet som kommer att öka bearbetningstiden. Faktorer som gör visualiseringen mer komplicerad omfattar:
 
-* Intervall av begärda uppgifter enligt ovan
-* Antal segment som används. till exempel segment som används som rader i en frihandstabell
+* Intervall för begärda uppgifter enligt ovan
+* Antal segment som tillämpats. till exempel segment som används som rader i en frihandstabell
 * Användning av komplicerade segment
-* Statiska objektrader eller kolumner i frihandstabeller
+* [Statiskt objekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html) rader eller kolumner i frihandstabeller
 * Filter som används på rader i frihandstabeller
-* Antal mätvärden som ingår, särskilt beräknade mätvärden som använder segment
+* Antal mått som ingår, särskilt beräknade mått som använder segment
 
-**Bästa sättet att se på komplexitet**
+**Bästa praxis för visualiseringens komplexitet**
 
-Om du märker att dina projekt inte läses in så snabbt du vill kan du ersätta vissa segment med eVars och Filter där det är möjligt.
+Om du upptäcker att dina projekt inte laddas så snabbt som du vill kan du prova att ersätta vissa segment med eVars och filter, om det är möjligt.
 
-Om du hela tiden använder segment och beräknade värden för datapunkter som är viktiga för ditt företag bör du förbättra implementeringen för att hämta in dessa datapunkter mer direkt. Användning av en tagghanterare som Adobe Experience Platform Launch och Adobes bearbetningsregler kan göra implementeringsändringar snabba och enkla att implementera. Mer information om hur du förenklar komplicerade segment finns i&quot;Segmentlogikens komplexitet&quot; ovan.
+Om du hela tiden använder segment och beräknade mått för datapunkter som är viktiga för ditt företag bör du överväga att förbättra implementeringen för att hämta dessa datapunkter mer direkt. Om du använder en tagghanterare som Adobe Experience Platform Launch och Adobes bearbetningsregler kan implementeringsändringarna göras snabbt och enkelt att implementera. För att bättre förstå hur man förenklar komplicerade segment, se &quot;Segment Logics komplexitet&quot; ovan.
 
 ## Antal paneler
 
-En panel kan innehålla många visualiseringar, och därför kan antalet paneler också påverka Analysis Workspace allmänna svarstider.
+En panel kan innehålla många visualiseringar, vilket innebär att antalet paneler också kan påverka analysytans övergripande respons.
 
 **Bästa praxis för antal paneler**
 
-Försök inte att lägga till allt i ett projekt, utan i stället skapa distinkta projekt som har ett specifikt syfte eller en grupp intressenter. Använd taggar för att ordna projekt i viktiga teman och dela relaterade projekt med grupper av intressenter.
+Försök inte lägga till allt i ett projekt utan skapa specifika projekt som tjänar ett specifikt syfte eller en grupp av intressenter. Använd taggar för att organisera projekt i centrala teman och dela relaterade projekt med grupper av intressenter.
 
-Om du vill organisera fler projekt bör du tänka på att [direktlänkning](https://www.youtube.com/watch?v=6IOEewflG2U) till projektet är ett alternativ. Skapa ett internt projektindex så att intressenter enklare kan hitta det de behöver.
+Om mer organisation av projekten önskas, kom ihåg att [direktkoppling](https://www.youtube.com/watch?v=6IOEewflG2U) för projektet är ett alternativ. Skapa ett internt projektindex så att intressenterna lättare kan hitta vad de behöver.
 
-Om flera paneler behövs i en arbetsyta bör du komprimera panelerna innan du sparar och delar dem. När ett projekt har lästs in läser Analysis Workspace bara in innehåll för de utökade panelerna. Komprimerade paneler läses inte in förrän användaren expanderar dem. Detta tillvägagångssätt hjälper på två sätt:
+Om många paneler behövs i ett projekt komprimerar du panelerna innan du sparar och delar. När ett projekt läses in läser Analysis Workspace bara in innehåll för de expanderade panelerna. Komprimerade paneler läses inte in förrän användaren expanderar dem. Detta tillvägagångssätt bidrar på två sätt:
 
-* Komprimerade paneler sparar tid på den totala inläsningstiden för ett projekt
-* Komprimerade paneler är ett bra sätt att ordna dina projekt på ett logiskt sätt för rapportens konsument
+* Komprimerade paneler spara vid en projekts totala inläsningstid
+* Kollapserade paneler är ett bra sätt att organisera dina projekt på ett logiskt sätt för betänkandets konsument
 
-## Rapportsvitens storlek
+## Rapportsvitstorlek
 
-Rapportsvitens storlek kan tyckas vara en drivkraft, men i själva verket spelar den bara en liten roll i projektresultatet på grund av hur Adobe hanterar databearbetningen
+Rapportsvitens storlek kan verka som en drivkraft, men i själva verket spelar den bara en liten roll för projektprestanda på grund av hur Adobe hanterar databehandling. Det kan finnas undantag från denna regel. samråda med implementeringsteamet eller en Adobe-expert för att ta reda på om det finns några implementeringsförbättringar som kan göras för att förbättra den övergripande erfarenheten i Adobe Analytics.
 
-## Antal användare som samtidigt använder Analysis Workspace
+## Antal användare som samtidigt ansluter till Analysis Workspace
 
-Antalet användare som samtidigt använder Analysis Workspace eller särskilda projekt påverkar inte Analysis Workspace prestanda i någon större utsträckning, om användare använder olika rapportsviter. Om samtidiga användare använder samma rapportserie påverkas prestandan.
+Antalet användare som samtidigt ansluter till Analysis Workspace eller specifika projekt har ingen väsentlig inverkan på Analysis Workspace-prestanda om användare använder olika rapportuppsättningar. Om samtidiga användare använder samma rapportsvit påverkas prestanda.
 
 ## Vanliga felmeddelanden i Analysis Workspace
 
-Fel kan uppstå vid interaktion med Analysis Workspace. Fel kan uppstå av flera orsaker och de vanligaste är de som anges nedan.
+Det kan uppstå fel när du interagerar med Analysis Workspace. Fel kan inträffa av flera skäl och de vanligaste är de som anges nedan.
 
 | Felmeddelande | Varför inträffar detta? |
 |---|---|
-| `The report suite is experiencing unusually heavy reporting. Please try again later.` | Din organisation försöker köra för många samtidiga begäranden mot en viss rapportserie. Medarbetare till det här felet är API-begäranden, schemalagda projekt, schemalagda rapporter, schemalagda aviseringar och samtidiga användare som gör rapporteringsförfrågningar. Vi rekommenderar att era förfrågningar och tidsplaner för rapportsviten sprids jämnare under dagen. |
-| `A system error has occurred. Please log a Customer Care request under Help > Submit Support Ticket and include your error code.` | Adobe har ett problem som behöver lösas. Vi rekommenderar att du skickar felkoden via en kundtjänst. |
-| `The request is too complex.` | Din rapporteringsbegäran är för stor och kan inte utföras. Medarbetare till det här felet är timeout på grund av begärans storlek, för många matchade objekt i ett segment eller sökfilter, för många mätvärden, inkompatibla mått- och mätkombinationer osv. Vi rekommenderar att du förenklar din begäran. |
-| `One of the segments or the search in this visualization contains a text search that returned too many results.` | Vi rekommenderar att du begränsar sökvillkoren och försöker utföra begäran igen. |
-| `This dimension does not currently support non-default attribution models.` | Vi rekommenderar att du ersätter dimensionen i tabellen med en som är kompatibel med [Attribution IQ](../attribution/overview.md). |
-| `Your request failed as a result of too many columns or pre-configured rows.` | Vi rekommenderar att du tar bort vissa kolumner eller rader, eller att du delar upp dem i separata visualiseringar. |
+| `The report suite is experiencing unusually heavy reporting. Please try again later.` | Din organisation försöker köra för många samtidiga förfrågningar mot en specifik rapportsvit. Medverkare till det här felet är API-begäranden, schemalagda projekt, schemalagda rapporter, schemalagda aviseringar och samtidiga användare som gör rapportbegäranden. Vi rekommenderar att era krav och tidsplaner för rapportpaketet fördelas jämnare över dagen. |
+| `A system error has occurred. Please log a Customer Care request under Help > Submit Support Ticket and include your error code.` | Adobe har ett problem som måste lösas. Vi rekommenderar att du skickar felkoden via en kundvårdsbegäran. |
+| `The request is too complex.` | Din rapporteringsbegäran är för stor och kan inte utföras. Medverkare till det här felet är timeout på grund av begärans storlek, för många matchade objekt i ett segment eller sökfilter, för många mått som ingår, inkompatibla dimensioner och metriska kombinationer osv. Vi rekommenderade att du skulle förenkla din begäran. |
+| `One of the segments or the search in this visualization contains a text search that returned too many results.` | Vi rekommenderar att du begränsar söktextkriterierna och försöker göra om begäran. |
+| `This dimension does not currently support non-default attribution models.` | Vi rekommenderar att du ersätter dimensionen i tabellen med en som är kompatibel med [Attribut-IQ](../attribution/overview.md). |
+| `Your request failed as a result of too many columns or pre-configured rows.` | Vi rekommenderar att du tar bort några av kolumnerna eller raderna, eller att du överväger att dela upp dem i separata visualiseringar. |
