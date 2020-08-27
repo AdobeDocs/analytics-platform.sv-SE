@@ -1,67 +1,81 @@
 ---
-description: Tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden som är tillgängliga i Analysis Workspace.
+description: Tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden som finns i Analysis Workspace.
 keywords: Analysis Workspace
-title: Kortkommandon i Analysis Workspace
+title: Hotkey (kortkommandon) finns i Analysis Workspace
 topic: Reports and analytics
 uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 8%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
 
-# Kortkommandon i Analysis Workspace
+# Hotkey (kortkommandon) finns i Analysis Workspace
 
->[!NOTE]
->
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+Hotkey (kortkommandon) finns på Analysis Workspace för sömlös navigering, analys och demokratisering.
 
-Tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden som är tillgängliga i Analysis Workspace.
+Anmärkning: `CTRL` = Windows och `command` = Mac
 
-`CTRL` = Windows
-
-`command` = Mac
+## Navigeringsåtgärder
 
 | Åtgärd | Genväg |
 |---|---|
-| Rensa alla | alt + w |
-| Komprimera/expandera alla paneler | alt + m |
-| Visa/dölj aktiv panel | alt + Ctrl + m |
-| Kopiera | ctrl (eller cmd) + s |
-| Skapa en avisering | Ctrl (eller cmd) + Skift + a |
-| Skapa beräknat mått | Ctrl (eller cmd) + Skift + c |
-| Skapa ett datumintervall | Ctrl (eller cmd) + Skift + d |
-| Skapa nytt projekt | Ctrl (eller cmd) + Skift + p |
-| Skapa ett segment | Ctrl (eller cmd) + Skift + e |
-| Kuratera projektdata | Ctrl (eller cmd) + Skift + g |
-| Hämta som CSV | Ctrl (eller cmd) + Skift + V |
-| Hämta som PDF | Ctrl (eller cmd) + Skift + b |
-| Hämta projektlänk | alt + l |
-| Gå till rutan Paneler | Alt + Skift + 1 |
-| Gå till fönstret Visualiseringar | Alt + Skift + 2 |
-| Gå till rutan Komponenter | Alt + Skift + 3 |
-| Gå till nästa panel | Alt + Högertangent |
-| Gå till föregående panel | Alt + Vänsterpil |
-| Ny attributpanel | alt + e |
-| Nytt stapeldiagram | alt + 3 |
-| Ny tom panel | alt + b |
-| Ny friformspanel | alt + a |
-| Ny friformstabell | alt + 1 |
-| Nytt linjediagram | alt + 2 |
-| Ny jämförelsepanel för segment | alt + C |
+| Skapa nytt projekt | ctrl (eller cmd) + shift + p |
 | Öppna befintligt projekt | ctrl (eller cmd) + o |
-| Uppdatera komponenter | Alt + Skift + R |
-| Uppdatera projekt | alt + r |
-| Spara projekt | ctrl (eller cmd) + c |
-| Spara projekt som | Ctrl (eller cmd) + Skift + s |
-| Spara som mall | alt + t |
+| Gå till rutan Paneler | alt + skift + 1 |
+| Gå till rutan Visualisationer | alt + skift + 2 |
+| Gå till rutan Komponenter | alt + skift + 3 |
+| Dölj/expandera alla paneler | alt + m |
+| Visa/dölj aktiv panel | alt + ctrl + m |
+| Gå till nästa panel | alt + högertangent |
+| Gå till föregående panel | alt + vänstertangent |
+
+## Analysåtgärder
+
+| Åtgärd | Genväg |
+|---|---|
 | Sök i vänster list | ctrl + / |
-| Skicka fil nu | alt + s |
-| Skicka fil enligt schema | Skift+Alt+s |
-| Ange som landningssida | Ctrl (eller cmd) + Skift + l |
-| Dela projekt | ctrl (eller cmd) + g |
-| Gör om | Ctrl (eller cmd) + Skift + z |
+| Skapa en varning | ctrl (eller cmd) + shift + a |
+| Skapa beräknat mått | ctrl (eller cmd) + shift + c |
+| Skapa ett datumintervall | ctrl (eller cmd) + shift + d |
+| Skapa ett segment | ctrl (eller cmd) + shift + e |
+| Rensa alla | alt + w |
+| Kopiera | ctrl (eller cmd) + c |
+| Redo | ctrl (eller cmd) + shift + z |
 | Ångra | ctrl (eller cmd) + z |
+| Uppdatera komponenter | alt + skift + r |
+| Uppdatera projekt | alt + r |
+| Ange som landningssida | ctrl (eller cmd) + shift + l |
+
+## Lägga till paneler och visualiseringar, åtgärder
+
+| Åtgärd | Genväg |
+|---|---|
+| Ny analys för målpanelen | alt + g |
+| Ny attributpanel | alt + e |
+| Ny tom panel | alt + b |
+| Ny frihandspanel | alt + a |
+| Ny panel för samtidiga visningsprogram för media | alt + h |
+| Ny snabbinformationspanel | alt + f |
+| Ny segmentjämförelsepanel | alt + c |
+| Ny frihandstabell | alt + 1 |
+| Nytt linjediagram | alt + 2 |
+| Nytt stapeldiagram | alt + 3 |
+
+## Demokratiseringsåtgärder
+
+| Åtgärd | Genväg |
+|---|---|
+| Spara projekt | ctrl (eller cmd) + s |
+| Spara projekt som | ctrl (eller cmd) + shift + s |
+| Spara som mall | alt + t |
+| Hämta som CSV | ctrl (eller cmd) + shift + v |
+| Hämta som PDF | ctrl (eller cmd) + shift + b |
+| Kurva projektdata | Ctrl (eller cmd) + shift + g |
+| Dela projekt | ctrl (eller cmd) + g |
+| Hämta projektlänk | alt + l |
+| Skicka filen nu | alt + s |
+| Skicka fil enligt schema | skift + alt + s |
