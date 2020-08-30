@@ -1,5 +1,5 @@
 ---
-description: Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel"Dagens timme" eller"Veckodag".
+description: Tidsåtgången tar tidsstämpeln för insamlade träffar och gör att den blir mer meningsfull, t.ex. "Dagens timme" eller "Veckodag".
 title: Tidsdelning av dimensioner
 uuid: c9fa7921-aa57-483c-b2f9-da55013ada17
 translation-type: tm+mt
@@ -13,28 +13,28 @@ ht-degree: 3%
 
 # Tidsdelning av dimensioner
 
-Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel&quot;Dagens timme&quot; eller&quot;Veckodag&quot;.
+Tidsåtgången tar tidsstämpeln för insamlade träffar och gör att den blir mer meningsfull, t.ex. &quot;Dagens timme&quot; eller &quot;Veckodag&quot;.
 
-Tidsdelningsdimensionerna baseras på tidszonen för rapportsviten eller den virtuella rapportsviten. Dessa dimensioner finns i Analysis Workspace och kan hjälpa dig att svara på följande frågor:
+Tidsdelningsdimensionerna baseras på tidszonen för rapportsviten eller den virtuella rapportsviten. De här dimensionerna finns på Analysis Workspace och kan hjälpa dig att besvara följande frågor:
 
-* Vilken är den populäraste tiden på dagen för besökare som har tillgång till min webbplats eller app över ett stort datumintervall?
-* Finns det några dagar i veckan, eller timmar på dagen, där konverteringen är högre på min webbplats eller app?
-* Hur skiljer sig min helgsförsäljning från min veckodagsförsäljning?
-* Genererar en viss marknadsföringskampanj högre konverteringar på morgonen eller på eftermiddagen?
+* Vilken är den populäraste tiden på dagen för besökare att komma åt min webbplats eller app över ett stort datumintervall?
+* Finns det dagar i veckan, eller timmar på dagen, där konverteringen är högre på min webbplats eller app?
+* Hur kan min försäljning under helgen jämföras med min försäljning under veckodagen?
+* Genererar en viss marknadsföringskampanj högre omställningar på morgonen eller på eftermiddagen?
 
 >[!NOTE]
 >
->Tidsdelningsdimensioner är bara tillgängliga i Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra Analytics-lösningar kan du implementera plugin-programmet [getTimeParting](https://docs.adobe.com/content/help/en/analytics/implementation/vars/plugins/gettimeparting.html).
+>Tidsdelningsdimensioner är bara tillgängliga på Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra analyslösningar kan du implementera [getTimeParting-plugin-program](https://docs.adobe.com/content/help/en/analytics/implementation/vars/plugins/gettimeparting.html).
 
-Tidsdelningsdimensionerna i Analysis Workspace är:
+Tidsdelningsdimensioner i analysarbetsytan omfattar:
 
 | Dimension | Exempelvärden |
 |--- |--- |
-| Timme på dagen | 0-23 |
-| AM/PM | AM, PM |
+| Dagens timme | 0-23 |
+| AM/EM | AM, EM |
 | Veckodag | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
-| Helg/veckodag | Weekend, Veckodag |
-| Dag i månaden | 1-31 |
-| Månad på året | Januari-december |
+| Vecka/Veckodag | Vecka, Veckodag |
+| Dag i månad | 1-31 |
+| Årets månad | Januari-december |
 | Dag på året | 1-366 |
-| Kvartal på året | Q1, Q2, Q3, Q4 |
+| Kvartal | Q1, Q2, Q3, Q4 |
