@@ -1,5 +1,5 @@
 ---
-description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
+description: Du kan visa och analysera dataanomalier i sammanhangsbaserat läge i Analysis Workspace.
 title: Översikt över avvikelseidentifiering
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
@@ -15,38 +15,38 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace.
+Du kan visa och analysera dataanomalier i ett sammanhang i Analysis Workspace.
 
-[Analysidentifiering på YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&amp;index=63&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
+[Anomalys upptäckt på YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&amp;index=63&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) 4:53)
 
-Analysidentifiering är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data.
+Anomaly Detection är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data.
 
-Anomaly Detection gör det möjligt att skilja &quot;sanna signaler&quot; från &quot;brus&quot; och sedan identifiera potentiella faktorer som bidragit till dessa signaler eller avvikelser. Med andra ord kan du identifiera vilka statistiska fluktuationer som är viktiga och vilka som inte gör det. Sedan kan du identifiera roten till en sann avvikelse. Dessutom kan du få tillförlitliga KPI-prognoser.
+Anomaly Detection gör att du kan separera &quot;verkliga signaler&quot; från &quot;brus&quot; och sedan identifiera potentiella faktorer som bidrog till dessa signaler eller anomalier. Med andra ord kan man identifiera vilka statistiska fluktuationer som är viktiga och vilka som inte är det. Sedan kan du identifiera roten till en sann anomali. Dessutom kan du få tillförlitliga prognoser för mätning (KPI).
 
-Exempel på avvikelser du kan undersöka är:
+Exempel på avvikelser som du kan undersöka är:
 
 * Drastiska droppar i genomsnittligt ordervärde
-* Inträffar i order med låg intäkt
-* Taggar eller droppar i testregistreringar
-* Droppar i landningssidvyer
-* Inslag i videobufferthändelser
-* Taggar i låga videobithastigheter
+* Spikes i order med låg avkastning
+* Spikes eller droppar i testregistreringar
+* Droppar i landningssidvyerna
+* Spikes i videobufferthändelser
+* Spikes i låga videobithastigheter
 
-Both Anomaly Detection and [Contribution Analysis](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) are core workflows in Analysis Workspace. Du kan köra Contribute Analysis mot alla dagliga avvikelser och bädda in resultatet i ditt Analysis Workspace-projekt.
+Både anomalisk detektion och [Bidragsanalys](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra kostnadsanalys mot varje daglig avvikelse och bädda in resultatet i Analysis Workspace-projektet.
 
 >[!IMPORTANT]
 >
->Det finns ännu ingen bidragsanalys i Customer Journey Analytics.
+>Det finns ännu inte någon kostnadsanalys i kundresanalysen.
 
-Analysis Workspace, avvikelalidentifieringsalgoritm
+Analysarbetsytans algoritm för onormal identifiering innehåller
 
-* Stöd för kornighet varje timme, vecka och månad utöver den befintliga kornigheten.
-* Kännedom om säsongsvaraktighet (t.ex. &quot;Black Friday&quot;) och semester.
+* Stöd för granularitet per timme, vecka och månad, utöver den befintliga dagliga granulariteten.
+* Kännedom om säsongsvariation (t.ex. &quot;Black Fredag&quot;) och helgdagar.
 
 ## Inaktivera avvikelseidentifiering
 
-Du kan inaktivera avvikelseidentifiering på kolumnnivå genom att gå till kolumninställningarna och avmarkera **[!UICONTROL Anomalies]**.
+Du kan inaktivera avvikelsidentifiering på kolumnnivå genom att gå till kolumninställningarna och ta bort kontrollen **[!UICONTROL Anomalies]**.
 
 ![](assets/turnoff_anomalies.png)
