@@ -1,19 +1,22 @@
 ---
-title: Användningsexempel i kundreseanalys
-description: Användningsexempel för kundreseanalys
+title: Användningsfall för kundresanalysen
+description: Använd fall för kundressanalys
 translation-type: tm+mt
 source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
 
-# Användningsexempel i kundreseanalys
+# Användningsfall för kundresanalysen
 
-Med kundreseanalys kan du använda följande viktiga exempel:
+Kundresresegasanalys möjliggör följande fall av nyckelanvändning:
 
-* **Se kunden i ett kundsammanhang**: Du kan visa och analysera data sekventiellt, över flera kanaler. Data från kundtjänst, butikssystem och onlinebutiker kan kombineras till en enda rapportvy.
-* **Gör insikter tillgängliga för alla**: Demokratisera dataåtkomsten och låt fler människor fatta affärsbeslut med hjälp av datainriktade insikter. Alla i organisationen som ansvarar för någon aspekt av kundupplevelsen kan fatta riktiga beslut snabbare, baserat på mer fullständiga data.
-* **Utnyttja datavetenskapens styrka för era analytiker**: Med kundreseanalys kan vanliga människor använda datavetenskap för att få djupgående insikter och analyser.
-* **Visualisera och interagera med era datauppsättningar med ad hoc-rapportering**: Arbetsytan kan använda alla datauppsättningar från Adobe Experience Platform som följer vissa grundläggande regler.
-* **Visa icke-webbdata**: Arbetsytan är inte längre begränsad till en fast definition av en träff eller händelse. Anpassade scheman ger fullständig kontroll över data och definitioner.
-* **Få bättre kontroll över datahanteringen**: Ändra data som du har överfört, skapa nya datauppsättningar och importera dem till arbetsytan. Adobe Experience Platform erbjuder verktyg för att fråga, extrahera, omvandla och läsa in, via Experience Cloud-frågetjänsten.
+* **Visa kunden i ett resekontext**: Du kan visa och analysera data sekventiellt och sprida flera kanaler. Data från call center, Point of sale-system och online-egenskaper kan kombineras till en enda rapporteringsvy.
+* **Gör insikter tillgängliga för alla**: Demokratisera tillgången till data och låta fler människor fatta affärsbeslut med databaserade insikter. Alla i organisationen som har ansvar för någon aspekt av kundens erfarenhet kan fatta verkliga beslut snabbare, baserat på mer fullständiga data.
+* **Utnyttja dataveteknikens kraft för dina analytiker**: Med Customer Journey Analytics kan vanliga människor använda datavetenskap för att låsa upp djupa insikter och analyser.
+* **Visualisera och interagera med datauppsättningarna med hjälp av ad hoc-rapportering**: Arbetsytan kan använda alla datamängder från Adobe Experience Platform som överensstämmer med vissa grundläggande regler.
+* **Visa icke-webbdata**: Arbetsytan är inte längre begränsad till en strikt definition av &quot;träff&quot; eller &quot;händelse&quot;. Anpassade scheman ger fullständig kontroll över data och definitioner.
+* **Få större kontroll över datamanipuleringen**: Ändra data som du har överfört, skapa nya datauppsättningar och importera dem till arbetsytan. I Adobe Experience Platform finns verktyg för att söka, extrahera, omforma och läsa in via Experience Cloud Query Service.
