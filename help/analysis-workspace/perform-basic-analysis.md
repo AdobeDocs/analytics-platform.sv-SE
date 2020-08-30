@@ -1,6 +1,6 @@
 ---
-title: Utför grundläggande analyser i Customer Journey Analytics
-description: Beskriver hur du använder grundläggande visualiseringar för att analysera data i Customer Journey Analytics
+title: Utför grundläggande analys i kundresanalysen
+description: Beskriver hur grundläggande visualiseringar ska användas för att analysera data i kundresanalysen
 translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-När du har skapat anslutningar och datavyer kan du analysera de data du har tagit med hjälp av kraften och flexibiliteten i Analysis Workspace. Experimentera och dra i mått och mätvärden, ändra dimensionerna och måttattribueringsinställningar, egna namn, tidszon, sessionsinställningar osv.
+När du har skapat anslutningar och datavyer analyserar du de data du har lagt in med hjälp av kraften och flexibiliteten i Analysis Workspace. Du kan gärna experimentera och dra i dimensioner och mått, ändra inställningar för dimensioner och metriska attribut, egna namn, tidszon, sessionsinställningar osv.
 
-Här är ett exempel på grundläggande visualiseringar i Workspace. Du kan till exempel
+Här följer ett exempel på grundläggande visualiseringar på arbetsytan. Du kan t.ex.
 
-* Skapa en rankad rapport över vilka datakällor som visar flest händelser, sessioner och personer.
+* Skapa en rankad rapport över vilka datakällor som visar de flesta händelser, sessioner och personer.
 
-* Skapa en trendrapport över intäkter online eller i butik som jämför de två datakällorna över tiden.
+* Skapa en trendrapport över onlineintäkter jämfört med butiksinkomster som jämför de två datakällorna över tiden.
 
-* Avbilda målgruppsstorleken efter datakällor, t.ex. annonsvisningsdata, Adobe Analytics-data, e-postdata, POS-data, callcenter-data och undersökningsdata.
+* Visa målgruppens storlek efter datakällor, t.ex. annonsdata, Adobe Analytics-data, e-postdata, POS-data, samtalscentdata och undersökningsdata.
 
 ![](assets/cja-basic-analysis.png)
 
