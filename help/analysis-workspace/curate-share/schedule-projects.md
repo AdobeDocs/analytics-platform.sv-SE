@@ -17,7 +17,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Hantera schemalagda Analysis Workspace-projekt.
 
@@ -25,18 +25,18 @@ Hantera schemalagda Analysis Workspace-projekt.
 
 ![](assets/components-scheduled-projects.png)
 
-I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektleveranser. Du kan skapa leveransscheman som skickar rapporter via e-post till en angiven adress. Du kan konfigurera dessa scheman så att rapporter automatiskt skickas med angivna intervall under en tid eller obegränsad tid, eller så kan du stoppa leveransen av ett återkommande projekt.
+I projekthanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektleveranser. Du kan skapa leveransscheman som skickar rapporterna via e-post till en angiven adress. Du kan konfigurera dessa scheman så att rapporterna skickas automatiskt med angivna intervall under en tid eller på obestämd tid, eller så att leveransen av ett återkommande projekt stoppas.
 
-I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser.
+I projekthanteraren visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser.
 
 ![](assets/scheduled-projects.png)
 
 * Redigera schemalagda projekt.
-* Visa ett projekts Schedule-ID (används huvudsakligen för felsökning).
+* Visa projektets schema-ID (används främst för felsökning).
 * Sök efter schemalagda projekt.
 * Tagga schemalagda projekt.
 * Ange/ändra ägaren till ett schemalagt projekt.
-* Lägg till andra filter, till exempel Godkänd, Misslyckad, Favoriter, Min, Visa alla och Förfallna projekt.
+* Lägg till andra filter, till exempel Godkänd, Misslyckad, Favoriter, Min, Visa alla och Utgångna projekt.
 
-* Definiera ett schemalagt projektförfallodatum.
+* Ange ett förfallodatum för schemalagda projekt.
 
