@@ -1,5 +1,5 @@
 ---
-description: Läs om frihandspaneler
+description: Läs mer om frihandspaneler
 title: Frihandspanel
 translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
@@ -14,9 +14,9 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-En friformspanel är en tom panel med en friformstabell som startläge.
+En friformspanel är en tom panel med en friformstabell som är inkluderad som startläge.
 
 ![](assets/freeform-panel.png)
 
