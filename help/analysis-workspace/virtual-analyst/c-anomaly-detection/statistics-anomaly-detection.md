@@ -1,5 +1,5 @@
 ---
-description: Anomaldetektering i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
+description: Anomalys detektion i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör betraktas som onormal eller inte.
 title: Statistiska tekniker som används för avvikelseidentifiering
 uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
 translation-type: tm+mt
@@ -15,64 +15,64 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Anomaldetektering i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
+Anomalys detektion i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör betraktas som onormal eller inte.
 
-Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för att upptäcka avvikelser per timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
+Beroende på vilket datum granulariteten används i rapporten används tre olika statistiska metoder - särskilt för timbaserad, daglig, veckovis/månadsvis upptäckt av anomalier. Varje statistisk teknik beskrivs nedan.
 
-## Analysidentifiering för daglig granularitet
+## Anomalsidentifiering för daglig granularitet
 
-För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
+För dagliga granularitetsrapporter tar algoritmen hänsyn till flera viktiga faktorer för att ge så korrekta resultat som möjligt. För det första avgör algoritmen vilken typ av modell som ska tillämpas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en outlier-detektionsmodell (kallas funktionell filtrering).
 
-Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsberoende (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Algoritmen försöker i synnerhet med följande kombinationer:
+Urvalet av tidsseriemodell baseras på följande kombinationer för typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman m.fl. (2008)](https://www.springer.com/us/book/9783540719168). I algoritmen används följande kombinationer:
 
-1. ANA (additivt fel, ingen trend, additiv säsongsvariation)
-1. AAA (additivt fel, additiv trend, additiv säsongsvariation)
+1. ANA (additivt fel, ingen trend, additiv säsongsbundenhet)
+1. AAA (additivt fel, additiv tendens, additiv säsongsbundenhet)
 1. MNM (multiplikativt fel, ingen trend, multiplikativ säsongsvariation)
-1. MNA (multiplikativt fel, ingen trend, additiv säsongsvariation)
-1. AAN (additivt fel, additiv trend, ingen säsongsvariation)
+1. MNA (multiplikativt fel, ingen trend, additiv säsongsbundenhet)
+1. AAN (additivt fel, additiv tendens, ingen säsongsbundenhet)
 
-Algoritmen testar lämpligheten hos vart och ett av dessa genom att välja det som har det bästa genomsnittliga absoluta procentfelet (MAPE). Om MAPE för modellen med bästa tidsserie är större än 15 % används emellertid funktionell filtrering. Vanligtvis är data med hög repetitionsgrad (t.ex. vecka över vecka eller månad över månad) bäst lämpade för en tidsseriemodell.
+Algoritmen testar lämpligheten hos var och en av dessa genom att välja den med det bästa medelvärdet för absolut procentfel (MAPE). Om MAPE för modellen med bästa tidsserie är större än 15 % tillämpas dock funktionell filtrering. Vanligtvis är data med hög repetitionsgrad (t.ex. vecka över vecka eller månad över månad) bäst lämpade för en tidsseriemodell.
 
-Efter modellval justerar algoritmen sedan resultaten baserat på helger och årstidsberoende. För helger kontrollerar algoritmen om någon av följande helger finns i datumintervallet för rapportering:
+Efter modellval justerar algoritmen sedan resultaten baserat på semester och årstidsbetingelser över året. För semesterdagar kontrollerar algoritmen om det finns någon av följande semesterdagar i rapporteringsdatumintervallet:
 
 * Minnesdag
 * Juli 4
 * Thanksgiving
-* Black Friday
-* Cyber Monday
+* Svarta fredagen
+* Cyber Måndag
 * 24-26 december
 * Januari 1
 * 31 december
 
-Dessa helgdagar valdes ut baserat på omfattande statistisk analys av många kunddatapunkter för att identifiera helger som har störst betydelse för det högsta antalet kundtrender. Även om listan inte är fullständig för alla kunder eller affärscykler, fann vi att användningen av dessa helger avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
+Dessa helgdagar valdes ut på grundval av omfattande statistiska analyser över många kunddatapunkter för att identifiera de semesterdagar som var viktigast för det största antalet kunder. Även om listan inte är fullständig för alla kunder eller affärscykler fann vi att tillämpningen av dessa helgdagar avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
 
-När modellen har valts och helger har identifierats i rapportdatumintervallet utförs algoritmen på följande sätt:
+När modellen har valts och helgdagar har identifierats i rapporteringsdatumintervallet, fungerar algoritmen på följande sätt:
 
-1. Konstruera avvikelsens referensperiod - detta omfattar upp till 35 dagar före rapporteringsdatumintervallet och ett matchande datumintervall från ett år före (redovisning för skottdagar vid behov och inklusive eventuella helgdagar som kan ha inträffat på en annan kalenderdag föregående år).
-1. Testa om helgdagar under den aktuella perioden (exklusive föregående år) är onormala baserat på de senaste uppgifterna.
-1. Om semestern i det aktuella datumintervallet är onormal justerar du det förväntade värdet och konfidensintervallet för den aktuella semestern med hänsyn till föregående års semester (med hänsyn till två dagar före och efter). Korrigeringen för den aktuella ledigheten baseras på det lägsta genomsnittliga absoluta procentfelet för:
+1. Konstruera den onormala referensperioden - detta omfattar upp till 35 dagar före rapporteringsdatumintervallet och ett matchningsdatumintervall ett år tidigare (redovisning av skottdagar när så krävs och inklusive eventuella tillämpliga helgdagar som kan ha inträffat på en annan kalenderdag under föregående år).
+1. Testa om semesterdagar under innevarande period (exklusive föregående år) är onormala baserat på de senaste uppgifterna.
+1. Om semestern i det aktuella datumintervallet är onormal, justera det förväntade värdet och konfidensintervallet för den aktuella semestern med tanke på föregående års semester (med beaktande av två dagar före och efter). Korrigeringen för den aktuella semestern baseras på det lägsta genomsnittliga absoluta felprocentet:
 
    1. Additiva effekter
    1. Multiplicerande effekter
    1. YoY-differens
 
-Lägg märke till den dramatiska förbättringen av juldagen och nyårsdagen i följande exempel:
+Observera den dramatiska förbättringen av prestandan på juldagen och nyårsdagen i följande exempel:
 
 ![](assets/anomaly_statistics.png)
 
-## Analysidentifiering för timgranularitet
+## Anomalys detektion för timgranularitet
 
-Timdata bygger på samma algoritm för tidsserier som den dagliga granularitetsalgoritmen gör. Den är dock starkt beroende av två trendmönster: 24-timmarscykeln samt veckodagscykeln. För att fånga upp dessa två säsongseffekter konstruerar timalgoritmen två separata modeller för en helg och en veckodag med samma metod som beskrivs ovan.
+Timdata bygger på samma algoritmansmetod för tidsserier som den dagliga granularitetsalgoritmen gör. Den är dock starkt beroende av två trender: 24-timmarscykeln samt veckosluts-/veckodagscykeln. För att fånga upp dessa två säsongseffekter bygger timalgoritmen två separata modeller för en helg och en vardag med samma metod som beskrivs ovan.
 
 Utbildningsfönstren för timtrender är beroende av ett 336-timmars uppslagsfönster.
 
-## Analysidentifiering för varje vecka och månad
+## Anomalsidentifiering för vecko- och månadsgranularitet
 
-Trender för varje vecka och månad visar inte samma trender för varje vecka eller varje dag som finns på en daglig eller timbaserad noggrannhet, vilket innebär att en sådan separat algoritm används. För varje vecka och varje månad används en metod med tvåstegsidentifiering som kallas GESD-test (Generalized Extreme Studentized Deviate). I detta test beaktas det maximala antalet förväntade avvikelser i kombination med den justerade boxrumsmetoden (en icke-parametrisk metod för oulier-upptäckt) för att fastställa det maximala antalet avvikande värden. De två stegen är:
+Trenderna per vecka och månad uppvisar inte samma vecko- eller dagstrender som konstateras vid granularitet per dag eller per timme, vilket innebär att en sådan separat algoritm används. För varje vecka och varje månad används en metod för detektion i två steg som kallas GESD-test (Generalized Extreme Studentized Deviate). I detta test beaktas det maximala antalet förväntade anomalier i kombination med den justerade rutnätsmetoden (en icke-parametrisk metod för outlier-upptäckt) för att fastställa det maximala antalet avvikande värden. De två stegen är följande:
 
-1. Justerad box-plot-funktion: Den här funktionen avgör det maximala antalet avvikelser som anges av indata.
-1. GESD-funktion: Tillämpas på indata med utdata från steg 1.
+1. Justerad rutnätsfunktion: Den här funktionen bestämmer det maximala antalet avvikelser som anges i inmatningsdata.
+1. GESD-funktion: Används på indata med utdata från steg 1.
 
-Avvikelseprocessen för semester och YY-årstidsavvikelsen tar sedan bort förra årets data från årets data och itererar sedan på uppgifterna igen med tvåstegsprocessen ovan för att kontrollera att avvikelserna är säsongsrelaterade. Var och en av dessa datumgranulariteter använder en 15-periodsökning inklusive det valda datumintervallet för rapportering (antingen 15 månader eller 15 veckor) och ett motsvarande datumintervall för 1 år sedan för utbildning.
+Under semestersäsongen och Unga på väg-årsjubileet subtraheras sedan förra årets data från årets data och upprepas sedan med hjälp av tvåstegsprocessen ovan för att kontrollera att avvikelser är säsongsmässigt lämpliga. Vid var och en av dessa datum används en 15-perioders uppslag med det valda rapporteringsdatumintervallet (antingen 15 månader eller 15 veckor) och ett motsvarande datumintervall för 1 år sedan för utbildning.
