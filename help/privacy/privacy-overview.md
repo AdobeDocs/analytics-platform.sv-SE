@@ -1,22 +1,25 @@
 ---
-title: Sekretessöversikt för Customer Journey Analytics
-description: Beskriver hur sekretessinställningarna fungerar i kundreseanalysen.
+title: Översikt över sekretesspolicyn för kundresursanalys
+description: Beskriver hur sekretessinställningarna fungerar i kundresekontrollen.
 translation-type: tm+mt
 source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
 
-# Sekretessöversikt för Customer Journey Analytics
+# Översikt över sekretesspolicyn för kundresursanalys
 
-I allmänhet ärvs alla sekretessrelaterade inställningar i kundreseanalysen från Adobe Experience Platform.
+I allmänhet ärvs alla sekretessrelaterade inställningar i Customer Journey Analytics från Adobe Experience Platform.
 
 ## GDPR
 
-Customer Journey Analytics kommer inte att prenumerera direkt på den centrala tjänsten i den allmänna dataskyddsförordningen (GDPR), utan ärver i stället alla datauppsättningsändringar som gjorts i Experience Platform. Vi förlitar oss på Platform Data Lake för att driva igenom förfrågningar om GDPR-borttagning och meddela oss när de har slutförts i pipeline. Vi lyssnar på Pipeline och synkroniserar alla ändringar av berörda grupper i kundreseanalysen för att se händelsedatamängder. Datauppsättningar för profiler och sökningar som påverkas av GDPR-borttagningsbegäranden importeras helt och hållet igen efter varje borttagningsbegäran. Vi kan garantera att begäranden om borttagning verkställs inom 7 dagar efter en raderingshändelse i Data Lake.
+Customer Journey Analytics prenumererar inte direkt på GDPR-centraltjänsten (General Data Protection Regulation) och ärver i stället alla datauppsättningsändringar som gjorts i Experience Platform. Vi är beroende av Platform Data Lake för att verkställa GDPR-begäranden om borttagning och meddela oss när de har slutförts i pipeline. Vi lyssnar på Pipeline och synkroniserar alla ändringar i de berörda batcharna i kundens Journey Analytics för händelsedatamängder. Profil- och uppslagsdatauppsättningar som påverkas av begäranden om GDPR-borttagning kommer att tas över helt efter varje begäran om borttagning. Vi kan garantera att begäran om borttagning utförs inom sju dagar efter en borttagningshändelse i Data Lake.
 
 ## CCPA
 
-California Consumer Privacy Act (CCPA) förbättrar sekretessen och konsumentskyddet för personer bosatta i Kalifornien. Denna lag träder i kraft den 1 januari 2020.
-CCPA ger personer bosatta i Kalifornien nya integritetsrättigheter, t.ex. rätten att få tillgång till och radera sina personuppgifter, att få veta om deras personuppgifter har sålts eller lämnats ut (och till vem) samt att vägra att sälja deras personuppgifter.
-I väntan på CCPA-avtalet kommer integritetstjänsten att stödja ansökningar om att avanmäla sig från försäljning av personuppgifter.
+Kalifornien Consumer Privacy Act (CCPA) förbättrar integritetsskyddet och konsumentskyddet för invånare i Kalifornien, Förenta staterna. Denna lag ska träda i kraft den 1 januari 2020.
+CCPA ger personer bosatta i Kalifornien nya rättigheter till skydd av personuppgifter, såsom rätten att få tillgång till och radera sina personuppgifter, att få veta om deras personuppgifter säljs eller lämnas ut (och till vem) och att vägra att sälja deras personuppgifter.
+I väntan på CCPA kommer Privacy Service att stödja begäran om undantag från försäljning av personuppgifter.
