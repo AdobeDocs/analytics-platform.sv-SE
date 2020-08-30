@@ -17,33 +17,33 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
 
 **[!UICONTROL Components]** > **[!UICONTROL New Date Range]**
 
-Ett datumintervall används på panelnivå. Om du vill lägga till ett datumintervall i projektet klickar du på **Paneler** > *`<select panel>`* och anger ett nytt datumintervall.
+Ett datumintervall gäller på panelnivå. Om du vill lägga till ett datumintervall i projektet klickar du på **Paneler** > *`<select panel>`* och ange ett nytt datumintervall.
 
-## Datumintervall för&quot;två månader sedan&quot;
+## Datumintervall för &quot;två månader sedan&quot;
 
-I följande anpassade datumintervall visas ett datumintervall för&quot;två månader sedan&quot;, med en visualisering av Sammanfattningsändring som visar en riktningsändring.
+I följande anpassade datumintervall visas ett datumintervall för &quot;för två månader sedan&quot; med visualisering av sammanfattning av ändring som visar riktningsändring.
 
 ![](assets/date-range-two-months-ago.png)
 
-Det anpassade datumintervallet visas högst upp på [!UICONTROL Date Range] komponentpanelen i projektet:
+Det anpassade datumintervallet visas överst i [!UICONTROL Date Range] komponentpanelen i projektet:
 
 ![](assets/date-range-panel-two-months-ago.png)
 
-Du kan dra det här anpassade datumintervallet till en kolumn tillsammans med ett anpassat, månatligt löpande datumintervall med hjälp av förinställningen Sista månaden för en jämförelse. Lägg till en visualisering av sammanfattningsändring och välj summorna från varje kolumn för att visa riktningsändring:
+Du kan dra det här anpassade datumintervallet till en kolumn bredvid ett anpassat månatligt rullande datumintervall med hjälp av Förinställningen Sista månaden för jämförelse. Lägg till en visualisering av sammanfattning för ändring och markera summorna från varje kolumn för att visa riktningsändring:
 
 ![](assets/date-range-two-months-table.png)
 
 ## Använd ett 7-dagars rullande datumintervall
 
-Ett datumintervall gäller för panelnivån. Om du vill lägga till ett datumintervall i projektet klickar du på **Åtgärder** > **Lägg till panel** och anger ett nytt datumintervall.
+Ett datumintervall gäller för panelnivån. Om du vill lägga till ett datumintervall i projektet klickar du på **Åtgärder** > **Lägg till panel** och ange ett nytt datumintervall.
 
-I Date Range Builder kan du skapa ett anpassat datumintervall som visas med andra datumintervall på panelen Komponenter.
+I verktyget för datumomfång kan du skapa ett anpassat datumintervall som visas på panelen Komponenter med andra datumintervall.
 
 Du kan till exempel skapa ett datumintervall som anger ett 7-dagars rullande fönster som slutar för en vecka sedan:
 
@@ -51,8 +51,8 @@ Du kan till exempel skapa ett datumintervall som anger ett 7-dagars rullande fö
 
 Använd *`rolling daily`*.
 
-* Startinställningarna blir *`current day minus 14 days`*.
+* Startinställningarna skulle vara *`current day minus 14 days`*.
 
-* Slutinställningarna blir *`current day minus 7 days`*.
+* Slutinställningarna skulle vara *`current day minus 7 days`*.
 
-Datumintervallet kan vara en komponent som du drar till en frihandstabell.
+Det här datumintervallet kan vara en komponent som du drar till i en frihandstabell.
