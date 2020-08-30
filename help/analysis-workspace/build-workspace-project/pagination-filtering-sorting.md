@@ -15,15 +15,15 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Titta på den här videon på YouTube för en översikt:
+Se videon på YouTube om en översikt:
 
-[Sidnumrering, filtrering och sortering av tabeller i Analysis Workspace](https://www.youtube.com/watch?v=2zxpRPCGspg)
+[Sidnumrering, filtrering och sortering av tabeller i analysarbetsytan](https://www.youtube.com/watch?v=2zxpRPCGspg)
 
 ## Avancerade filtreringsalternativ
 
-Om du klickar på filterikonen och sedan på Visa avancerat bredvid en dimension i en frihandstabell kan du filtrera enligt följande kriterier:
+Om du klickar på filterikonen och sedan på Visa avancerat bredvid en dimension i en frihandstabell kan du filtrera med följande kriterier:
 
 * Innehåller
 * Innehåller inte
