@@ -15,21 +15,21 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-## Vågrätt streck {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
+## Vågrät stapel {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
 
-Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
+Den här visualiseringen visar vågräta staplar som representerar olika värden över ett eller flera mått.
 
 ![](assets/horizontal_bar.png)
 
 ## Staplad vågrät stapel {#section_50C08E9E20A94024A6553BC352ADB597}
 
-Den här visualiseringen är som [!UICONTROL Horizontal Bar Chart]den, men seriestaplarna ser skiktade ut.
+Denna visualisering liknar [!UICONTROL Horizontal Bar Chart], men seriestaplarna visas staplade.
 
 ![](assets/horizontal-bar-stacked.png)
 
-Visualiseringsinställningen på staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering: [!UICONTROL Horizontal Bar Stacked]
+De [!UICONTROL Horizontal Bar Stacked] Visualiseringsinställning för staplade visualiseringar gör diagrammet till en &quot;100 % staplad&quot; visualisering:
 
 ![](assets/horizstacked100.png)
 
