@@ -1,5 +1,5 @@
 ---
-description: Använd exempel för kohortanalys.
+description: Använd fallexempel för kohortanalys.
 keywords: Analysis Workspace
 title: Användningsexempel på kohortanalyser
 topic: Reports and analytics
@@ -17,56 +17,56 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Använd exempel för [!UICONTROL Cohort Analysis].
+Använd exempel på fall för [!UICONTROL Cohort Analysis].
 
-## Användningsexempel för appinteraktion
+## Användningsfall för programåtagande
 
-Anta att du vill analysera hur användare som installerar din app interagerar med den med tiden. Installerar de den och använder den aldrig? Använder de den en stund och faller sedan bort? Eller förblir de förlovade med tiden?
+Anta att du vill analysera hur användare som installerar din app hanterar den med tiden. Installerar de den och använder den aldrig? Använder de den ett tag och faller sedan bort? Eller är de fortfarande engagerade över tiden?
 
 Du kan skapa en sexmånadersperiod [!UICONTROL Cohort Analysis]:
 
-**Kornighet**: Månadsvis, från januari 2015 till juni 2015.
+**Granularitet**: Månadsvis, från januari 2015 till juni 2015.
 
 **Inkluderingsmått**: Appinstallationer.
 
 **Returmått**: Sessioner eller starter
 
-Besökarna räknas inte som *`engaged`* de efterföljande månaderna såvida de inte har en session eller åtminstone startar programmet. [!UICONTROL Cohort Analysis] visar sedan mönster som används där *`App Install`* alltid finns på månad 0. Du kan märka att användningen minskar i månad 2, oavsett när användarna installerade appen. (För dem som installerade programmet i januari 2015 är månad 2 mars 2015. För dem som installerade programmet i februari 2015 är månad 2 april 2015 och så vidare.) Med den här analysen kan du skicka ett e-postmeddelande eller ett push-meddelande till alla användare under den andra månaden efter att de har installerat appen för att påminna dem om att använda appen.
+Besökare räknas inte som *`engaged`* under de följande månaderna, såvida de inte har en session eller åtminstone startar appen. [!UICONTROL Cohort Analysis] visar då mönster som används där *`App Install`* inträffar alltid månad 0. Du kanske märker att det händer att det händer något i månad 2, oavsett när användare installerar appen. (För dem som installerade appen i januari 2015 är månad 2 mars 2015. För dem som installerade appen i februari 2015 är månad 2 april 2015 och så vidare.) Med den här analysen kan du skicka ett e-postmeddelande eller ett push-meddelande till alla användare under den andra månaden efter att de har installerat appen för att påminna dem om att använda appen.
 
-## Användningsexempel för prenumeration
+## Prenumerationsanvändningsfall
 
-Du arbetar på Adobe.com och erbjuder en kostnadsfri Creative Cloud-prenumeration. Målet är att man ska uppgradera från den kostnadsfria versionen till den 30-dagars testversionen eller, i slutändan, den betalda versionen.
+Du arbetar på Adobe.com och erbjuder en kostnadsfri Creative Cloud-prenumeration. Målet är att användarna ska kunna uppgradera från den kostnadsfria versionen till testversionen på 30 dagar eller, i sista hand, den betalda versionen.
 
-**Kornighet**: Månadsvis
+**Granularitet**: Månadsvis
 
 **Inkluderingsmått**: Hämta länk
 
-**Returmått**: Köp betald Creative Cloud
+**Returmått**: Köp betald kreativ moln
 
-Med detta [!UICONTROL Cohort Analysis]kan du till exempel se att mellan 8 % och 10 % av de kostnadsfria Creative Cloud-användarna uppgraderar under den första månaden efter installationen, oavsett när de installerade. 12-15 % uppgradering under den andra månaden. Efter det kommer en uppgradering av programmet att upphöra: 4-5 % i den tredje månaden, 3-4 % i den fjärde månaden och 1-2 % i den femte månaden.
+Använda detta [!UICONTROL Cohort Analysis]kan du t.ex. se att mellan 8 % och 10 % av de kostnadsfria Creative Cloud-användarna uppgraderar under den första månaden efter installationen, oavsett när de installeras. Uppgradera 12-15 % under den andra användningsmånaden. Efter detta avtar uppgraderingen betydligt: 4-5% i månad 3, 3-4% i månad 4 och 1-2% i månad 5.
 
-Eftersom ni vet att ni inte behöver förlora potentiella kunder under den tredje månaden har ni skapat en e-postkampanj som är utformad att skickas ut i mitten av den tredje månaden till ett urval av användare och som erbjuder en rabattkupong på 50 USD till användare som ännu inte har uppgraderat.
+Eftersom du inser att du inte behöver förlora potentiella kunder under månad tre, har du skapat en e-postkampanj som är utformad för att gå ut i mitten av månad tre till ett urval av användare och erbjuder en kupong på 50 dollar till användare som ännu inte har uppgraderat.
 
-Kolla in rapporten från kohortanalysen några månader senare. För kohorter som bildas efter lanseringen av kampanjen har konverteringen till betalda Creative Cloud-prenumerationer under den tredje månaden ökat från 4-5 % till 13-14 %, vilket resulterar i hundratusentals dollar per kohort för varje månadskohort som kommer tre månader från den tidpunkten och framåt.
+Kom tillbaka med din kohortanalysrapport några månader senare. För kohorter som bildades efter lanseringen av kampanjen har omvandlingen till betalda kreativa molnprenumerationer under månad tre ökat från 4-5 procent till 13-14 procent, vilket resulterat i hundratusentals dollar per kohort, för varje månatlig kohort som träffar månad tre från den punkten framåt.
 
-## Komplexa kohortsegment använder skiftläge
+## Fall för komplexa kohortsegment används
 
-En stor hotellkedja vänder sig till flera kundgrupper för att få kampanjer och hålla koll på resultatet. För att identifiera de bästa grupperna med användarkohorter att rikta sig till, vill de skapa mycket specifika kohortgrupper. Med hjälp av de utökade [!UICONTROL Inclusion] och [!UICONTROL Return] förbättrade villkoren i [!UICONTROL Cohort] tabeller kan de definiera precis rätt kohortgrupperingar med flera mätvärden och segment för att identifiera underpresterande kundgrupper för att rikta in dem på kampanjer och erbjudanden för att öka bokningarna.
+En stor hotellkedja riktar in sig på flera kundgrupper för befordran och spårning mot prestanda. För att identifiera de bästa grupperna av användarkohorter att nå målet vill de skapa mycket specifika kohortgrupper. Använda det ökade [!UICONTROL Inclusion] och [!UICONTROL Return] Kriterier inom [!UICONTROL Cohort] Tabellerna kan bara definiera rätt kohortgrupperingar med flera mått och segment för att identifiera kundgrupper som inte uppnår resultat, så att de kan få erbjudanden och erbjudanden om att öka bokningar.
 
-## App Version Adobes användningsexempel
+## Användningsfall för programversion
 
-Ett stort försäkringsföretag driver mycket av kundengagemanget genom att använda sin mobilapp. Men när nya funktioner läggs till i appen är det viktigt att kunderna uppgraderar till den senaste appversionen. De kan analysera och jämföra alla sina appversioner sida vid sida med [!UICONTROL Custom Dimension] Cohort för att se vilka kunder som har vilken appversion de ska rikta sig till. Dessutom kan de spåra både lojalitet och bortfall för att se om specifika appversioner gör att kunderna slipper använda appen över tid. Tack vare mobilmeddelanden kan de återengagera dessa användare för att få dem att uppgradera till den senaste versionen och dra nytta av de senaste funktionerna.
+Ett stort försäkringsföretag driver en hel del kundengagemang genom att använda sin mobilapp. När nya funktioner läggs till i appen är det dock viktigt att deras kunder uppgraderar till den senaste appversionen. De kan analysera och jämföra alla sina appversioner sida vid sida med hjälp av [!UICONTROL Custom Dimension] Kohort för att se vilka kunder som ska omfattas av vilken programversion. Dessutom kan de spåra både kvarhållning och churn för att se om specifika appversioner leder kunderna bort från att använda appen över tiden. Genom att arbeta med mobila meddelanden kan de ta nya kontakter med dessa användare för att få dem att uppgradera till den senaste versionen och utnyttja sina senaste funktioner.
 
-## Användningsexempel för kampanjfokus
+## Användningsfall för kampanjskärpa
 
-Ett multinationella medieföretag använder riktade kampanjer för att locka användare till olika plattformar för att öka engagemanget. Annonskostnaderna per plattform bygger på kundengagemang och kundlojalitet. Därför är framgångsrika kampanjer avgörande för att deras verksamhet ska lyckas. De använder vår nya [!UICONTROL Custom Dimension] kohortfunktion i [!UICONTROL Cohort] tabeller för att jämföra olika kampanjer sida vid sida för att identifiera vilka kampanjer som är mest effektiva när det gäller att värva och behålla användare för att öka engagemanget. De kan sedan identifiera vilka aspekter som gör en kampanj framgångsrik och använda den på andra kampanjer för att öka engagemanget på deras olika plattformar.
+Ett multinationellt medieföretag använder riktade kampanjer för att driva användare till deras olika plattformar för att driva engagemang. Förbrukningsutgifter per plattform är baserade på kundengagemang och kvarhållande. Därför är framgångsrika kampanjer avgörande för att deras verksamhet ska lyckas. De använder våra nya [!UICONTROL Custom Dimension] Kohortfunktion i [!UICONTROL Cohort] Tabeller för att jämföra olika kampanjer sida vid sida för att identifiera vilka kampanjer som är mest effektiva när det gäller att skaffa och behålla användare för att öka engagemanget. De kan sedan identifiera vilka aspekter som gör en kampanj framgångsrik och tillämpa den på andra kampanjer för att öka engagemanget på olika plattformar.
 
-## Produktstartexempel
+## Användningsfall för produktlansering
 
-En stor klädhandlare har många specifika kundsegment som genererar stora delar av intäkterna för sin verksamhet. Varje segment har specifika produkter som är utformade och skapade med segmentet i åtanke. När de lanserar en produkt vill de veta hur den nya produkten har ökat försäljningen till olika kohorter med tiden. Med den nya [!UICONTROL Latency Table] inställningen i [!UICONTROL Cohort Analysis]kan de analysera ett visst kundsegments beteende och intäkter före och efter lanseringen. Med hjälp av den här informationen kan de identifiera vilka produkter som genererar nya intäkter och vilka som inte drar nytta av kundernas intresse.
+En stor klädåterförsäljare har många specifika kundsegment som driver stora delar av intäkterna till sin verksamhet. Varje segment har specifika produkter som utformats och skapats med segmentet i åtanke. Med varje lansering av produkten vill de veta hur den nya produkten har ökat försäljningen till olika kohorter med tiden. Använda nya [!UICONTROL Latency Table] ange [!UICONTROL Cohort Analysis]kan de analysera ett visst kundsegments beteende och intäkter före och efter lanseringen. Med hjälp av denna information kan de identifiera vilka produkter som driver på nya intäkter och som inte drar nytta av kundkontakten.
 
-## Individuell tröghet - De flesta lojala användare använder skiftläge
+## Individuell tröghet - de flesta lojala användare använder fall
 
-Ett stort flygbolag får större delen av sin framgång och sina intäkter från återkommande och lojala kunder. I många fall utgör deras lojala resenärer merparten av intäkterna och att behålla dessa kunder är avgörande för deras långsiktiga framgång. Det kan ofta vara svårt att identifiera sina mest lojala och enhetliga kunder. Men med hjälp av den nya [!UICONTROL Rolling Calculation] inställningen i [!UICONTROL Cohort Analysis]kunde de analysera lojala kundsegment och ta reda på vilka resenärer som var återkommande köpare varje månad. De kunde sedan inrikta sig på resenärerna med belöningar och förmåner för deras lojalitet. Genom att byta från lojalitet till bortfall kunde de också identifiera vilka kunder som inte var återkommande köpare varje månad och inrikta sig på dessa segment med kampanjer för att återengagera dem och säkerställa att de fortsätter att vara lojala kunder i framtiden.
+Ett stort flygbolag får merparten av sina framgångar och intäkter från upprepade och lojala kunder. I många fall utgör deras lojala resenärer merparten av deras inkomster, och att behålla dessa kunder är avgörande för deras framgång på lång sikt. Det kan ofta vara svårt att identifiera sina mest lojala och konsekventa kunder. Med hjälp av det nya [!UICONTROL Rolling Calculation] ange [!UICONTROL Cohort Analysis], kunde de analysera lojala kundsegment och ta reda på vilka resenärer som var upprepade köpare månad över månad. De kunde då rikta in sig på dessa resenärer med belöningar och prestationer för sin lojalitet. Genom att byta från kvarhållningstyp till churn kunde de också identifiera vilka kunder som inte var upprepade köpare månad över månad och rikta in sig på dessa segment med erbjudanden för att återknyta kontakten med dem och se till att de förblir lojala kunder i framtiden.
