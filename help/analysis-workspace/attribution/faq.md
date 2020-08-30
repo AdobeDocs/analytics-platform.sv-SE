@@ -1,6 +1,6 @@
 ---
 title: Vanliga frågor om attribuering
-description: Få svar på vanliga frågor om attribuering.
+description: Få svar på vanliga frågor om tilldelning.
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
@@ -14,79 +14,79 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Dokumentationen för Analysis Workspace i Customer Journey Analytics finns nu. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-**Vad är radobjektet &quot;Inget&quot; när du använder attribuering?**
+**Vad är radobjektet &quot;Ingen&quot; när attributet används?**
 
-Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som har gjorts utan några beröringspunkter i uppslagsfönstret. Försök att inkludera ett längre tidsintervall i rapportfönstret.
+Radelementet Inget är ett catch-all-objekt som representerar alla konverteringar som har skett utan några pekpunkter i uppslagsfönstret. Försök att inkludera ett längre tidsintervall i rapportfönstret.
 
-**Varför ser jag ibland datum utanför mitt rapporteringsfönster när jag använder attribueringsmodeller?**
+**Varför ser jag ibland datum utanför mitt rapporteringsfönster när jag använder attributmodeller?**
 
-Dessa extra datum beror på besökarens rapportfönster. Mer information finns i [Data som visas utanför rapportfönstret](https://helpx.adobe.com/analytics/kb/data-appearing-outside-reporting-window.html) i Analytics KB. Adobe planerar att filtrera bort de här extra raderna i en kommande release.
+De här extra datumen beror på besökarrapportuppslagsfönstret. Se [Data som visas utanför rapporteringsfönstret](https://helpx.adobe.com/analytics/kb/data-appearing-outside-reporting-window.html) I analysdatabasen finns mer information. Adobe planerar att filtrera bort dessa extra rader i en kommande version.
 
-**När ska jag använda ett besöks- eller besöksattribueringsbesök?**
+**När ska jag använda ett besök jämfört med besökarattributgranskning?**
 
-Vilken attribueringssökning du väljer beror på ditt användningsfall. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa ett virtuellt rapportpaket med en längre besöksdefinition är också en potentiell lösning.
+Valet av återföringssökning beror på ditt användningsfall. Om konverteringar vanligtvis tar längre tid än ett besök rekommenderas ett besöksbesök. Att skapa en virtuell rapportsvit med en längre besöksdefinition är också en möjlig lösning.
 
-**Hur är props och eVars jämfört när man använder attribuering?**
+**Hur är proportionerna mellan props och eVars när attributet används?**
 
-Attribution beräknas om vid rapportkörning, så det finns ingen skillnad mellan prop eller eVar (eller någon annan dimension) för attribueringsmodelleringens skull. Props kan behållas med alla uppslagsfönster eller attribueringsmodeller, och eVar-allokerings-/förfalloinställningar ignoreras.
+Attributet beräknas på nytt vid rapportkörning, så det är ingen skillnad mellan en prop eller eVar (eller någon annan dimension) för attributmodelleringens skull. Props kan bestå med valfritt uppslagsfönster eller attributmodell, och eVar-allokerings-/förfalloinställningar ignoreras.
 
-**Är attribueringsmodeller bara tillgängliga om jag använder en virtuell rapportsvit med rapporttidsbearbetning aktiverad?**
+**Är attributmodeller endast tillgängliga om jag använder en virtuell rapportsvit med rapporttidsbearbetning aktiverad?**
 
-Attributionsmodeller är tillgängliga utanför virtuella rapportsviter. Även om de använder rapporttidsbearbetning i serverdelen är attribueringsmodeller tillgängliga för både standardrapporteringssviter och virtuella rapportsviter.
+Attributmodeller är tillgängliga utanför virtuella rapportuppsättningar. Medan de använder rapporttidsbearbetning på serverdelen är attributmodeller tillgängliga för både standardrapportpaket och virtuella rapportpaket.
 
-**Vilka mått och mätvärden stöds inte?**
+**Vilka mått och mått stöds inte?**
 
-Attributpanelen har stöd för alla dimensioner. Mätvärden som inte stöds är:
+Attributpanelen stöder alla dimensioner. Mått som inte stöds omfattar:
 
 * Unika besökare
 * Besök
 * Förekomster
 * Sidvisningar
 * A4T-mått
-* Tidsmått
+* Förbrukade tidsmått
 * Studsar
-* Studsfrekvens
+* Räntesats
 * Första besökssida
 * Sista besökssida
 * Sidor som inte hittades
 * Sökningar
-* Besök på en sida
+* Ensidiga besök
 * Enkelt besök
 
-**Fungerar attribuering med klassificeringar?**
+**Arbetar tilldelningen med klassificeringar?**
 
-Ja, klassificeringar stöds fullt ut.
+Ja, klassificeringar stöds helt.
 
-**Fungerar attribuering med datakällor?**
+**Arbetar tilldelningen med datakällor?**
 
-Ja, de flesta datakällor stöds. Attribuering är inte möjligt med datakällor på sammanfattningsnivå eftersom de inte är kopplade till en Analytics-besökaridentifierare. Datakällor för transaktions-ID stöds också, såvida de inte används i en virtuell rapportsvit med rapporttidsbearbetning aktiverad.
+Ja, de flesta datakällor stöds. Attribut är inte möjligt med datakällor på sammanfattningsnivå eftersom de inte är kopplade till en analytikerbesöksidentifierare. Datakällor för transaktions-ID stöds också, såvida de inte används i en virtuell rapportsvit där rapporttidsbearbetning är aktiverad.
 
-**Fungerar attribuering med Advertising Analytics-integrering?**
+**Fungerar tilldelningen med reklamanalytikintegrationen?**
 
-Metadata-dimensioner, som matchningstyp och nyckelord, fungerar med attribuering. Mätvärden (inklusive visningar, kostnader, klickningar, genomsnittlig position och medelkvalitet) använder sammanfattningsnivådatakällor och är därför inkompatibla.
+Metadatadimensioner, till exempel matchningstyp och nyckelord, fungerar med attribut. Mått (inklusive imponeringar, kostnad, klick, genomsnittlig position och medelkvalitet) använder dock datakällor på sammanfattningsnivå och är därför inkompatibla.
 
-**Hur fungerar attribuering med marknadsföringskanaler?**
+**Hur fungerar tilldelningen med marknadsföringskanaler?**
 
-När marknadsföringskanalerna lanserades för första gången fick de bara första och sista touch-dimensioner. Explicit första/sista beröringsdimensioner behövs inte längre med den aktuella versionen av attribuering. Adobe tillhandahåller allmänna dimensioner för&quot;marknadsföringskanal&quot; och&quot;marknadsföringskanaldetaljer&quot; så att du kan använda dem med den önskade attribueringsmodellen. Dessa generiska dimensioner fungerar på samma sätt som Senaste beröringskanal, men är märkta annorlunda för att förhindra förvirring när marknadsföringskanaler med en annan attribueringsmodell används.
+När marknadsföringskanalerna först introducerades kom de bara med första och sista beröringspunkten. Uttryckliga första/sista pektydimensioner behövs inte längre med den aktuella versionen av attribut. Adobe tillhandahåller allmänna dimensioner för Marketing Channel och Marketing Channel Detail så att du kan använda dem med önskad attributmodell. Dessa allmänna dimensioner uppträder på samma sätt som Senaste Touch Channel-dimensioner, men märks på ett annat sätt för att förhindra förvirring när marknadsföringskanaler med en annan attributmodell används.
 
-Eftersom dimensionerna för marknadsföringskanalen är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler), kan deras besöksdefinition inte ändras med hjälp av virtuella rapportsviter.
+Eftersom marknadsföringskanalernas dimensioner är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler) kan deras besöksdefinition inte ändras med hjälp av virtuella rapportsviter.
 
-**Hur fungerar attribuering med flervärdesvariabler som listvariabler?**
+**Hur fungerar attributet med variabler med flera värden, t.ex. listvarianter?**
 
-Vissa dimensioner i Analytics kan innehålla flera värden för en enda träff. Vanliga exempel är listvar och variabeln products.
+Vissa dimensioner i Analytics kan innehålla flera värden på en enda träff. Vanliga exempel är listvariabeln och produktvariabeln.
 
-När attribuering tillämpas på träffar med flera värden får alla värden i samma träff samma kredit. Eftersom många värden kan ta emot krediten kan rapportsumman vara annorlunda än om du summerade varje enskild radartikel. Rapportsumman dedupliceras medan varje enskild dimensionspost får rätt kredit.
+När attributet används för multivärdeträffar får alla värden i samma träff samma kredit. Eftersom många värden kan få den här krediten kan rapportsumman vara annorlunda än om du summerade varje enskild radartikel. Rapportsumman har deduplicerats, medan varje enskild dimensionspost får rätt kredit.
 
-**Hur fungerar attribuering med segmentering?**
+**Hur fungerar tilldelningen med segmentering?**
 
-Attribuering körs alltid före segmentering, och segmentering körs innan rapportfilter tillämpas. Detta koncept gäller även virtuella rapportsviter som använder segment.
+Attributet körs alltid före segmentering och segmenteringen körs innan rapportfilter används. Det här konceptet gäller även virtuella rapportpaket som använder segment.
 
-Om du till exempel skapar ett VRS med segmentet &quot;Visa träffar&quot; kan du se andra kanaler i en tabell med hjälp av vissa attribueringsmodeller.
+Om du t.ex. skapar ett VRS-segment med segmentet &quot;Bildskärmsträffar&quot; tillämpat kan du se andra kanaler i en tabell med hjälp av vissa attributmodeller.
 
-![Virtuellt rapportpaket endast för visning](assets/vrs-aiq-example.png)
+![Virtuell rapportsvit som endast visas](assets/vrs-aiq-example.png)
 
 >[!NOTE]
 >
->Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsobjekt, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment returnera lägre värden än ett filter med en jämförbar definition.
+>Om ett segment undertrycker träffar som innehåller måttet, kommer de metriska förekomsterna inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer dock helt enkelt vissa dimensionsobjekt, utan att det påverkar de mått som bearbetas enligt attributmodellen. Ett segment kan därför returnera lägre värden än ett filter med en jämförbar definition.
