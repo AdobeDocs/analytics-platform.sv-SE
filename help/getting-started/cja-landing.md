@@ -1,44 +1,45 @@
 ---
-title: Produktdokumentation för kundfärgsanalys
-description: Landningssida för kundresanalys.
+title: Customer Journey Analytics produktdokumentation
+description: Customer Journey Analytics landningssida.
 translation-type: tm+mt
-source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+source-git-commit: 59c255d6428db7795cce507f9de7c3c67ea0c743
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 12%
+source-wordcount: '288'
+ht-degree: 11%
 
 ---
 
 
-# Kundfärdsanalys - Produktdokumentation
+# Customer Journey Analytics - produktdokumentation
 
-Den här handboken för teknisk dokumentation ger självhjälp för kundressanalys. Med Customer Journey Analytics kan du lägga dina kunddata från valfri kanal - både online och offline - till Adobe Experience Platform och sedan analysera dessa data precis som du gör med dina befintliga digitala data med Analysis Workspace idag.
+Den här tekniska handboken ger självhjälp för Customer Journey Analytics. Med Customer Journey Analytics kan ni hämta kunddata från valfri kanal - både online och offline - till Adobe Experience Platform och sedan analysera dessa data på samma sätt som ni gör med era befintliga digitala data via Analysis Workspace idag.
 
-Med Customer Journey Analytics kan du styra hur du ansluter dina online- och offline-data i Analysis Workspace på vilket vanligt kund-ID som helst, så att du äntligen kan göra attribut, segmentering, flöde, utfall osv. över hela din kunddatauppsättning i Adobe Analytics.
+Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och offlinedata i Analysis Workspace med vilket kundID som helst, vilket slutligen gör att ni kan skapa attribuering, segmentering, flöde, utfall osv. för hela er kunddatauppsättning i Adobe Analytics.
 
-Analytikerna Select, Prime och Ultimate kan köpa den här tilläggsprodukten. Kontakta ditt Adobe-kontoteam om du vill ha mer information.
+Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna tilläggsprodukt. Kontakta ditt Adobe-kontoteam för mer information.
 
 <table frame="none"> 
  <tbody> 
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Nya eller aktuella objekt</b> </p> <p> 
      <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> Uppdaterade krav på användarbehörigheter (från 9 september 2020) </a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/object-arrays.html"> Använda arrayer med objekt </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> Lägg till kontonivådata som en uppslagsdatamängd </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html"> Komma igång med kundresekontroll </a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> Lägg till data på kontonivå som en uppslagsdatauppsättning </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html"> Komma igång med Customer Journey Analytics </a> </li> 
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html"> Vanliga frågor</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html"> Glossary för kundresanalys</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html"> Customer Journey Analytics - ordlista</a> </li> 
       <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"> Adobe Analytics API 2.0</a> </li> 
      </ul> </p> </td> 
    <td colname="col2" valign="top"> <p class="head"><b>Versionsinformation</b> </p> 
     <ul> 
-     <li>Se senaste <a href="https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html" format="https" scope="external"> Experience Cloud Release Notes</a> för nya funktioner och korrigeringar. </li> 
-    </ul> <p class="head"> <b>Resurser för Adobe Experience Platform</b> </p> 
+     <li>Se de senaste <a href="https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html" format="https" scope="external"> Versionsinformation för Experience Cloud</a> för nya funktioner och korrigeringar. </li> 
+    </ul> <p class="head"> <b>Adobe Experience Platform Resources</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
-     <li> <a href="https://www.adobe.io/apis/experienceplatform/home/tutorials.html" format="https" scope="external"> Självstudier i Adobe Experience Platform</a> </li> 
+     <li> <a href="https://www.adobe.io/apis/experienceplatform/home/tutorials.html" format="https" scope="external"> Adobe Experience Platform Tutorials</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API-referens</a> </li> 
-     <li><a href="https://www.adobe.com/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Resurser för dokumentation och utvecklare</a> </li> 
+     <li><a href="https://www.adobe.com/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Dokumentation och utvecklarresurser</a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
