@@ -1,103 +1,101 @@
 ---
-title: Support för kundens Journey Analytics-funktion
-description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner som har angetts.
+title: Funktioner i Customer Journey Analytics
+description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 translation-type: tm+mt
-source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '864'
 ht-degree: 5%
 
 ---
 
 
-# Support för kundens Journey Analytics-funktion
+# Funktioner i Customer Journey Analytics
 
-Följande tabelllista med funktioner i Adobe Analytics stöds, stöds delvis eller stöds inte i Customer Journey Analytics (CJA). Dessa listor kommer att ändras med tiden när funktioner läggs till i CJA.
+I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds delvis eller inte alls i Customer Journey Analytics (CJA). De här listorna ändras över tid när funktioner läggs till i CJA.
 
-## Funktioner/komponenter som stöds helt
+## Funktioner/komponenter som stöds fullt ut
 
-| Funktion | Anmärkningar |
+| Funktion | Anteckningar |
 | --- | --- |
-| Mätvärden | CJA använder XDM (Experience Data Model) och har stöd för obegränsade mått och är inte bundet till traditionella lyckohändelser i traditionell analys. Observera att vissa standardmått har bytt namn från traditionell analys: Besökare = Personer, Besök = sessioner, träffar = händelser. |
-| Mått | CJA använder XDM och har stöd för obegränsade dimensioner och är inte bundet till traditionella lyckohändelser i traditionell analys. |
-| Visa variabler/liståtgärder | CJA använder XDM och stöder obegränsade listvariabler |
-| Datumintervall | Stöd för anpassad kalender planeras. |
-| Beräknade mätvärden | Observera att befintliga kalkmått i den traditionella Analysis Workspace inte kommer att porteras till CJA. |
-| Segment | Nu kallade &quot;Filter&quot; - notera att eventuella befintliga segment i den traditionella Analysis Workspace inte kommer att porteras till CJA. |
-| Avvikelseidentifiering | Fullt stöd från och med juni 2020 |
-| Attribution IQ | Fullständig support |
-| Projektkursion | Fullständig support |
-| Projektlänkning | Fullständig support |
-| Datumjämförelser | Fullständig support |
+| Mätvärden | CJA utnyttjar Experience Data Model (XDM) och stöder obegränsade mätvärden och är inte knutet till anpassade framgångshändelser i traditionell Analytics. Observera att vissa standardvärden har bytt namn från traditionell analys: Besökare = människor, besök = sessioner, träffar = händelser. |
+| Mått | CJA utnyttjar XDM och har ett obegränsat antal dimensioner och är inte knutet till anpassade framgångshändelser i traditionell Analytics. |
+| Lista variabler/listutkast | CJA utnyttjar XDM och stöder obegränsat antal listvariabler |
+| Datumintervall | Stöd för anpassade kalendrar planeras. |
+| Beräknade mätvärden | Observera att alla befintliga kalkylmått i det traditionella Analysis Workspace inte kommer att porteras till CJA. |
+| Segment | Nu kallat &quot;Filter&quot; - lägg märke till att befintliga segment i traditionella Analysis Workspace inte kommer att porteras till CJA. |
+| Avvikelseidentifiering | Fullt stöd från september 2020 |
+| Attribution IQ | Fullt stöd |
+| Projekturval | Fullt stöd |
+| Projektlänkning | Fullt stöd |
+| Datumjämförelser | Fullt stöd |
 | Virtual Report Suites | Har anropats [Datavyer](/help/data-views/create-dataview.md). |
-| VRS-komponentkursion | Delas nu i datavyer. |
-| Rapporttid, bearbetning | CJA förlitar sig uteslutande på rapporttidsbearbetning. |
-| GDPR-borttagning | Observera att GDPR nu hanteras i samordning med [!UICONTROL Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] används för underliggande datauppsättningar. |
+| VRS-komponenturval | Nu en del av datavyer. |
+| Bearbetning av rapporttid | CJA använder sig enbart av Report Time Processing. |
+| Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med [!UICONTROL Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] till underliggande datamängder. |
 
-## Stöds med mattor
+## Stöds med caveats
 
-| Funktion | Anmärkningar |
+| Funktion | Anteckningar |
 | --- | --- |
-| Produktvariabel | Den produktvariabel som för närvarande är tillgänglig för rapportering av data som överensstämmer med Experience-schemat (specifikt med objektet productListItems). |
+| Produktvariabel | Den produktvariabel som för närvarande är tillgänglig för rapportering av data som överensstämmer med Experience Event-schemat (särskilt med objektet productListItems). |
 | Visualiseringar | Alla visualiseringar stöds förutom för kartvisualisering. |
-| AAM-målgrupper | Om kunder använder [!UICONTROL Analytics Data Connector] dessa data kommer att ingå i ADC-data. |
-| Projektdelning | Projektdelning stöds endast mellan användare av CJA - det finns ingen projektdelning mellan CJA och den traditionella Analysis Workspace. |
-| Anpassad sessioner | Stöd för alla anpassade sessionsfunktioner förutom mobila bakgrundshöjningar. |
-| eVar-persistence-inställningar | Vars ingår inte längre i CJA. Beständighetsinställningarna ingår nu i datavyer och är tillgängliga för alla dimensioner. Kom ihåg att uthållighet baseras på bearbetning av rapporttid, inte behandling av datainsamling. Detta innebär att all uthållighet kommer att baseras på rapporteringsdatumintervallet i stället för på alla uppgifter. |
-| Klassificeringar | De kallas nu &quot;Uppslagna datauppsättningar&quot; och importeras inte automatiskt från traditionell analys. De måste överföras till AEP innan de är tillgängliga i CJA. |
-| Kundattribut | Profildatauppsättningar importeras inte automatiskt från Experience Cloud, utan måste överföras till AEP innan de är tillgängliga i CJA. |
+| AAM | Om kunderna använder [!UICONTROL Analytics Data Connector] datauppsättningar, kommer dessa data att ingå i ADC-data. |
+| Projektdelning | Projektdelning stöds endast mellan CJA-användare - det finns ingen projektdelning mellan CJA och det traditionella Analysis Workspace. |
+| Skräddarsydd professionalisering | Stöd för alla anpassade sessioneringsfunktioner förutom mobilbakgrundstötar. |
+| Inställningar för beständighet av eVar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Detta innebär att all beständighet baseras på rapporteringsdatumintervallet i stället för på alla data. |
+| Klassificeringar | De kallas nu&quot;Sök efter datauppsättningar&quot; och importeras inte automatiskt från traditionell Analytics. De måste överföras till AEP innan de är tillgängliga i CJA. |
+| Kundattribut | De kallas nu&quot;profildatauppsättningar&quot; och importeras inte automatiskt från Experience Cloud, utan måste överföras till AEP innan de blir tillgängliga i CJA. |
 
-## Partiellt stöd
+## Delvis stöd
 
-| Funktion | Anmärkningar |
+| Funktion | Anteckningar |
 | --- | --- |
-| Analysarbetsytedimensioner som inte är aktuella (t.ex. webbläsartyp, referenstyp, marknadsföringskanaler, besöksnummer osv.) | Dessa dimensioner anges inte i CJA. För kunder som använder ADC (Analytics Data Connector) är vissa av dessa dimensioner tillgängliga, men inte alla. Se vår [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Paneler | Tom panel, attributpanel, frihandspanel och Snabbinsikter stöds helt. Segmentjämförelsepanelerna och segmentanalyserna för målpanelerna (A4T) stöds inte. |
-| Marknadsförande eVars | Merchandising eVars fungerar bara med ADC-baserade datauppsättningar om de inte strikt följer samma XDM-schema (liknande de begränsningar som finns ovan i produktlistan). |
-| Bot Filtering | För ADC-baserade (Analytics Data Connector) datauppsättningar tillämpas båda-filtrering. Allmän Båda-filtreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
+| Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, marknadsföringskanaler, besöksnummer osv.) | CJA har inte dessa dimensioner internt. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Se våra [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
+| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
+| Marknadsförande eVars | Merchandising eVars fungerar bara med ADC-baserade datauppsättningar om de inte följer samma XDM-schema (liknande produktlistans begränsningar ovan). |
+| Punktfiltrering | För ADC-baserade datauppsättningar (Analytics Data Connector) tillämpas robotfiltrering. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
 | Bearbetningsregler | För ADC-baserade datauppsättningar tillämpas fortfarande bearbetningsregler. |
-| Stitling för enhetsidentitet | Kunderna är begränsade till &quot;engångsöglor&quot; av data via Query Service, eller måste för närvarande tillämpa denna logik på data före [!UICONTROL Experience Platform] Intag av data. |
+| Stitching av enhetsidentitet | Kunderna är begränsade till&quot;engångskarvar&quot; av data via Query Service, eller måste för närvarande tillämpa denna logik på data före [!UICONTROL Experience Platform] dataintag. |
 
-## Stöds inte just nu, men planeras
+## Stöds inte just nu, men är planerad
 
-| Funktion | Anmärkningar |
+| Funktion | Anteckningar |
 | --- | --- |
-| Bidragsanalys | Stödet planeras. |
-| Segment IQ | Stödet planeras. |
-| Segment Publishing (skicka segment från arbetsyta till Experience Cloud) | Stödet planeras. |
-| Användarbehörigheter/Dataåtkomstkontroller | Alla användare i CJA har samma åtkomstkontroller - detta innebär att alla användare har tillgång till alla anslutningar, datavyer osv. I princip är alla användare användare på administratörsnivå i CJA. Stödet planeras till 2020. |
-| CSV-hämtning | Stödet planeras. |
-| Schemalagda rapporter/projekt | Stödet planeras. |
-| Larm | Stödet planeras. |
-| Anpassade kalendrar | Stödet planeras. |
-| Marknadsföringskanaler | Stödet planeras. |
-| PDF-export | Stödet planeras. |
-| API-åtkomst för rapportering | Support planeras - kommer endast att vara tillgängligt med API 2.0. |
-| ID-sökning via Device Graph | Stödet planeras. |
+| Bidragsanalys | Support planeras. |
+| Segment IQ | Support planeras. |
+| Segmentpublicering (skickar segment från Workspace till Experience Cloud) | Support planeras. |
+| Användarbehörigheter/dataåtkomstkontroller | Alla användare i CJA har samma åtkomstkontroller - det innebär att alla användare har tillgång till alla anslutningar, datavyer osv. I princip är alla användare användare på administratörsnivå i CJA. Stöd planeras för 2020. |
+| CSV-nedladdning | Support planeras. |
+| Schemalagda rapporter/projekt | Support planeras. |
+| Larm | Support planeras. |
+| Anpassade kalendrar | Support planeras. |
+| Marknadsföringskanaler | Support planeras. |
+| PDF-export | Support planeras. |
+| API-åtkomst för rapportering | Support planeras - endast med API 2.0. |
+| ID Stitching via Device Graph | Support planeras. |
 
 ## Stöd ännu inte planerat
 
-| Funktion | Anmärkningar |
+| Funktion | Anteckningar |
 | --- | --- |
-| A4T | Stödet har ännu inte planerats. |
-| Videoanalys | Stödet har ännu inte planerats. |
-| Advertising Cloud | Stödet har ännu inte planerats. |
-| Report Builder (Excel-plugin) | Stödet har ännu inte planerats. |
-| Activity Map | Stödet har ännu inte planerats. |
-| Classification Rule Builder | Stödet har ännu inte planerats. |
-| Sammanfattande datakällor | Stödet har ännu inte planerats. |
-| Realtidsrapportering | Stödet har ännu inte planerats. |
+| A4T | Support är ännu inte planerat. |
+| Medieanalys | Support är ännu inte planerat. |
+| Advertising Cloud | Support är ännu inte planerat. |
+| Report Builder (Excel-plugin) | Support är ännu inte planerat. |
+| Activity Map | Support är ännu inte planerat. |
+| Classification Rule Builder | Support är ännu inte planerat. |
+| Sammanfattningsdatakällor | Support är ännu inte planerat. |
+| Realtidsrapportering | Support är ännu inte planerat. |
 
 ## Stöds aldrig
 
-| Funktion | Anmärkningar |
-| --- | --- |
-| Personmätare med hjälp av enhetskop |  |
-| Instrumentpaneler för rapporter och analyser |  |
-| Bokmärken för rapporter och analyser |  |
-| Rapporter och analysmål |  |
-| Rapporter och analyskalenderhändelser |  |
-| Ad Hoc Analysis |  |
-| Rapportering av datalager | [!UICONTROL Experience Platform Query Service] kommer att bli det nya gränssnittet för dessa användningsfall i CJA. |
-| Mobile Services |  |
-| Datafeeds |  |
+* Personmätvärden med Coop för olika enheter
+* Rapporter och analyser på kontrollpaneler
+* Bokmärken för rapporter och analyser
+* Rapporter och analysmål
+* Rapporter och analyskalenderhändelser
+* Ad Hoc Analysis
+* Rapportering från data warehouse - [!UICONTROL Experience Platform Query Service] kommer att bli det nya gränssnittet för de här användningsområdena i CJA.
+* Mobiltjänster
+* Datafeeds
