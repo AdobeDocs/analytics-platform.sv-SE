@@ -2,7 +2,7 @@
 title: Customer Journey Analytics - översikt
 description: Customer Journey Analytics introduktion
 translation-type: tm+mt
-source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
+source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -61,7 +61,9 @@ Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du f
    * Visa scheman
    * Hantera scheman
    * Visa identitetsnamnutrymmen
-   * Visa datauppsättningar Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+   * Visa datauppsättningar
+
+Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### Användaråtkomst
 
