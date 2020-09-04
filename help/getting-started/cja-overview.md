@@ -2,9 +2,9 @@
 title: Customer Journey Analytics - översikt
 description: Customer Journey Analytics introduktion
 translation-type: tm+mt
-source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
+source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Den första releasen av Customer Journey Analytics innehåller många av de funk
 
 [Enhetsövergripande analys](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) integreras med Adobe Experience Platform Identity Service, med Co-op Graph eller Private Graph, för att identifiera hur digitala enheter mappar till människor. Det finns för Adobe Analytics Ultimate-kunder.
 
-CJA kan integreras med Adobe Experience Platform datauppsättningar och möjliggör flerkanalsanalys i Analysis Workspace. Även om CJA ännu inte är integrerat med Co-op- eller Private-identitetsdiagram kan du&quot;sammanföra ditt eget ID&quot; för att sammanfoga datauppsättningar, och dessa datauppsättningar kan gå utöver digitala data och inkludera både online- och offlinekontaktpunkter. CJA-kraven beskrivs närmare nedan.
+CJA kan å andra sidan integreras med Adobe Experience Platform datauppsättningar och möjliggör flerkanalsanalys i Analysis Workspace. Även om CJA ännu inte är integrerat med Co-op- eller Private-identitetsdiagram kan du&quot;sammanföra ditt eget ID&quot; för att sammanfoga datauppsättningar, och dessa datauppsättningar kan gå utöver digitala data och inkludera både online- och offlinekontaktpunkter. CJA-kraven beskrivs närmare nedan.
 
 ## Viktiga användningsexempel
 
@@ -49,23 +49,25 @@ Innan du kan börja använda Customer Journey Analytics måste följande krav va
 * Din organisation har ett aktivt kontrakt med Adobe Analytics för Select, Prime eller Ultimate med tillägget Customer Journey Analytics. Om du är osäker på vilken typ av kontrakt du har, eller om du är osäker på om du har CJA-tillägget, kontaktar du din organisations Account Manager.
 * Din organisation har etablerats för Adobe Experience Platform.
 
-## Behörigheter för användaråtkomst
+## Behörigheter för administratörsåtkomst
 
 Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du följande behörigheter i dialogrutan [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* Om du vill hantera datauppsättningar i Experience Platform måste du vara en del av en plattformsproduktprofil som ger dig behörigheten&quot;Hantera datauppsättningar&quot;. Mer information finns i [Åtkomstkontroll i Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
-* Om du vill skapa en anslutning till en Experience Platform-datauppsättning måste du ingå i en plattformsproduktprofil som ger dig följande behörigheter:
-   * Visa scheman
-   * Visa datauppsättningar
-   * Hantera identitetsnamnutrymmen
-   * Visa sandlådor
-* Från och med 9 september 2020 måste du också läggas till som administratör för en Customer Journey Analytics-produktprofil i dialogrutan [Admin Console](https://adminconsole.adobe.com/enterprise/). Administratörer har följande behörigheter:
+* Från och med 9 september 2020 måste du läggas till som administratör för en **Customer Journey Analytics produktprofil** i [Admin Console](https://adminconsole.adobe.com/enterprise/). Administratörer behöver följande behörigheter:
    * Skapa/uppdatera/ta bort anslutningar eller datavyer
    * Uppdatera/ta bort projekt, filter, beräkningstal eller segment som skapats av andra användare
    * Dela ett Workspace-projekt till alla användare
-* Icke-administratörer (användare) i Customer Journey Analytics kan inte visa datavyer eller anslutningar, men kan skapa filter, projekt och beräknade värden.
+* Att bli produktadministratör i Customer Journey Analytics räcker inte för att skapa, uppdatera eller ta bort en anslutning. Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform produktprofil** som ger dig följande behörigheter:
+   * Visa scheman
+   * Hantera scheman
+   * Visa identitetsnamnutrymmen
+   * Visa datauppsättningar Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
-### Uppdateringar om terminologi
+### Användaråtkomst
+
+Icke-administratörer (användare) i Customer Journey Analytics kan inte visa datavyer eller anslutningar, men kan skapa filter, projekt och beräknade värden.
+
+## Uppdateringar om terminologi
 
 Flera funktioner i CJA har bytt namn, jämfört med traditionella Adobe Analytics, för att passa in i branschstandarder. Några av de uppdaterade terminologin:
 
