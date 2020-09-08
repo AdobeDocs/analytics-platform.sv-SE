@@ -2,9 +2,9 @@
 title: Alternativ för dataintag för Customer Journey Analytics
 description: Förstå olika sätt att importera data till Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 540b170c3429f04b7f63872b30cbb01852d30179
+source-git-commit: 32dd6194ab2777652c3fb7df5fadd42395a0697d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Alternativ för dataintag för Customer Journey Analytics
 
-Du har ett antal alternativ när det gäller att hämta in data till Customer Journey Analytics. Vissa av dem utgår ifrån att man vill flytta traditionella Adobe Analytics-data, vissa av dem förutsätter att man importerar data direkt från Adobe Experience Platform.
+Du har ett antal alternativ när det gäller att hämta in data till Customer Journey Analytics. Vissa av dem utgår ifrån att man vill flytta traditionella Adobe Analytics-data, vissa av dem förutsätter att man importerar data direkt från Adobe Experience Platform. Den här referensen innehåller steg på hög nivå att följa.
 
 ## Ingrediera data från traditionella Adobe Analytics
 
