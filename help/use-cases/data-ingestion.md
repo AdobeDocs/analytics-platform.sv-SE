@@ -2,9 +2,9 @@
 title: Alternativ för dataintag för Customer Journey Analytics
 description: Förstå olika sätt att importera data till Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 32dd6194ab2777652c3fb7df5fadd42395a0697d
+source-git-commit: a48ebc2fbd4cb43de4424e9c1805504752a44fce
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -31,27 +31,3 @@ Det här arbetsflödet använder Adobe Analytics Data Connector och varierar ber
 1. Använd [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/en/analytics/implementation/launch/overview.html) för att implementera kod på din webbplats för datainsamling, om du inte redan gjort det. Launch är en tagghanteringslösning som gör att ni kan driftsätta Analytics-kod tillsammans med andra taggningskrav. Launch erbjuder integrering med andra lösningar och produkter och låter er driftsätta anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
 1. Skapa en [Adobe Analytics källanslutning](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) i Adobe Experience Platform. Den här källkopplingen kommer att importera dina Analytics-data till Experience Platform i ett standardiserat ramverk som kallas [Experience Data Model (XDM) System](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html).
 1. Använd [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) om du vill skapa en eller flera anslutningar och datavyer som ska informera er flerkanalsrapportering.
-
-## Infoga data från AEP Web SDK
-
-TBD
-
-### Via Experience Edge
-
-TBD
-
-### Via Launch
-
-TBD
-
-## Intag av batchdata och direktuppspelning
-
-TBD
-
-## Ingest Google Analytics data
-
-TBD
-
-## Infoga data via API:t för massinmatning
-
-TBD
