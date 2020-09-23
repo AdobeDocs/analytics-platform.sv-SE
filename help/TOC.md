@@ -5,7 +5,7 @@ product: adobe analytics
 sub-product: kundresa
 index: true
 user-guide-title: Customer Journey Analytics Guide
-user-guide-description: This guide provides self-help assistance for Customer Journey Analytics.
+user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
@@ -16,7 +16,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 1c5f134fc28fd02d58117d72db9afe5ada84cd40
+source-git-commit: 47e4d06be87ef32d63a1003f5073d75f61d6f38d
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 54%
