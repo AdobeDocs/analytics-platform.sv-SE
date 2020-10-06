@@ -2,9 +2,9 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 translation-type: tm+mt
-source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
+source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön)
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
 >[!IMPORTANT]
->Filter kallas för&quot;segment&quot; i Adobe Analytics. Vi har bytt namn på segment till filter eftersom Adobe Experience Platform har en annan definition av&quot;segment&quot;.
+>Filter kallas för&quot;segment&quot; i Adobe Analytics. Vi har ändrat namn på segment till filter eftersom Adobe Experience Platform har [en annan definition av&quot;segment&quot;](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
 
 Filtreringen innehåller [Filter Builder](/help/components/filters/create-filters.md) för att skapa filter och köra ett förtest samt [Filterhanteraren](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
 
@@ -32,7 +32,7 @@ Här är ett exempel:
 ![](assets/sequential_fil.png)
 
 | Besök en | Besök två | Besök tre |
-|---|---|---|
+| --- | --- | --- |
 | Besökaren gick till huvudlandningssidan (A), uteslöt kampanjsidan (B) och visade sedan produktsidan (C). | Besökaren gick åter till huvudlandningssidan (A), exkluderade kampanjsidan (B), gick tillbaka till produktsidan (C) och sedan till en ny sida (D). | Besökaren gick in på och följde samma väg som i det första och andra besöket och uteslöt sedan sidan F för att gå direkt till en målproduktsida (G). |
 
 ## Filterbehållare
@@ -52,9 +52,7 @@ Personbehållaren innehåller alla besök och sidvisningar för besökare inom e
 Personbehållare kan innehålla värden som baseras på en besökares övergripande historik:
 
 * Dagar före första köp
-
 * Ursprunglig startsida
-
 * Ursprungliga referensdomäner
 
 ### Sessionsbehållare
@@ -62,19 +60,14 @@ Personbehållare kan innehålla värden som baseras på en besökares övergripa
 Med sessionsbehållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar upp beteenden för hela besökssessionen när regeln har uppfyllts och låter dig definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett segment. Den kan hjälpa dig att svara på följande frågor:
 
 * Hur många besökare tittade på News and Sports-delen i samma session?
-
 * Vilka sidor bidrog till en lyckad konvertering till en försäljning?
 
 Sessionsbehållare innehåller värden som baseras på förekomst per session:
 
 * Sessionsnummer
-
 * Startsida
-
 * Återbesöksfrekvens
-
 * Deltagandemått
-
 * Linjärt allokerade mätvärden
 
 ### Händelsebehållare
@@ -84,9 +77,6 @@ Händelsebehållaren definierar vilka sidhändelser som du vill inkludera eller 
 Händelsebehållare innehåller värdebaserade ensidesindelningar:
 
 * Produkter
-
 * Visa utkast
-
 * Listdimensioner
-
 * Marknadsföringsdimensioner (i samband med händelser)
