@@ -1,41 +1,41 @@
 ---
-description: Lär dig hur du skapar utdelningsbara länkar till projekt eller visualiseringar
+description: Lär dig hur du skapar delningsbara länkar till projekt eller visualiseringar
 keywords: Analysis Workspace sharing
-title: Skapa delbara länkar
+title: Skapa delningsbara länkar
 translation-type: tm+mt
-source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Skapa delbara länkar
+# Skapa delningsbara länkar
 
-Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, inklusive möjligheten att få en länk till ett projekt eller en specifik del av ett projekt. Användare som får en länk måste logga in på Adobe Analytics innan de kan komma till projektet.
+Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Användare som får en länk måste logga in på Adobe Analytics innan de kan komma åt projektet.
 
 ## Hämta projektlänk {#project-link}
 
-Om du vill dela en länk till hela projektet går du till **[!UICONTROL Share > Get project link]**. Om mottagaren av länken inte har tilldelats en [projektroll](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html)tar emot administratörer **[!UICONTROL Can edit]** och icke-administratörer tar emot **[!UICONTROL Can duplicate]** erfarenheter.
+Om du vill dela en länk till hela projektet går du till **[!UICONTROL Share > Get project link]**. Om länkens mottagare inte har tilldelats en [projektroll](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html), administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]** upplevelser.
 
 ![](assets/get-project-link.png)
 
 ## Hämta panel- eller visualiseringslänk {#panel-link}
 
-Du kan också dela en länk till en viss del av ett projekt, t.ex. en panel eller individuell visualisering. Detta kallas ibland för interlinkmekanismen. Detta kan vara användbart om du vill uppmärksamma användarna på de viktigaste insikterna i projektet.
+Du kan också dela en länk till en viss del av ett projekt, till exempel en panel eller en enskild visualisering. Detta kallas ibland för koncernintern länkning. Detta kan vara användbart för att dra användarnas uppmärksamhet till viktiga insikter i projektet.
 
-* Från valfritt panelhuvud högerklickar du **[!UICONTROL Get panel link]**
-* Högerklicka på ett tabell- eller visualiseringshuvud **[!UICONTROL Get visualization link]**
+* Högerklicka på en panelrubrik **[!UICONTROL Get panel link]**
+* Högerklicka på en tabell eller ett visualiseringshuvud **[!UICONTROL Get visualization link]**
 
-[Titta på videon](https://www.youtube.com/watch?v=lvmAdKNfWQw) om hur du skapar länkar och använder dem för att köra mottagare till specifika delar av projektet.
+[Se videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att locka mottagare till specifika delar av projektet.
 
 ![](assets/get-viz-link.png)
 
-## Använd länkar i en innehållsförteckning {#TOC}
+## Använda länkar i en innehållsförteckning {#TOC}
 
-Ett tips för att dra nytta av de olika länkalternativen är att alltid inkludera en innehållsförteckning överst i arbetsyteprojektet. I innehållsförteckningen kan du länka till andra relevanta projekt, specifika paneler och specifika visualiseringar. Detta gör det lättare för projektmottagaren att navigera.
+Ett tips för att utnyttja de olika länkalternativen är att alltid ta med en innehållsförteckning högst upp i arbetsyteprojektet. I innehållsförteckningen kan du länka till andra relevanta projekt, särskilda paneler och specifika visualiseringar. Detta gör det enklare för projektmottagaren att navigera.
 
-[Titta på videon](https://www.youtube.com/watch?v=Xo6fTguWm-M) om hur du skapar en innehållsförteckning med hjälp av länkar och arbetsytans textredigerare.
+[Se videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) om hur du skapar en innehållsförteckning med hjälp av länkar och arbetsytans redigerare för formaterad text.
 
 ![](assets/toc.png)
