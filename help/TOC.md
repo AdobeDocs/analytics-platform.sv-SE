@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 8cf9f257ccf2afd830a7f8e211c8e42b3f786e86
+source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 55%
+source-wordcount: '395'
+ht-degree: 54%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 55%
 + Anslutningar {#cja-connections}
    + [Skapa en anslutning](connections/create-connection.md)
    + [Hantera anslutningar](connections/manage-connection.md)
-   + [Kombinerade datauppsättningar](connections/combined-dataset.md)
+   + [Kombinerade händelsedatamängder](connections/combined-dataset.md)
 + Datavyer {#cja-dataviews}
    + [Skapa en datavy](data-views/create-dataview.md)
    + [Konfigurera datavyer och attribuering](data-views/configure-dataviews.md)
