@@ -3,10 +3,10 @@ description: Mallar i arbetsytan
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: bb75be2608a9eedaa856cfb5f0a233fff7f8c074
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1382'
+ht-degree: 3%
 
 ---
 
@@ -59,9 +59,11 @@ När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra li
 
 Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter dina behov (genom att till exempel lägga till eller ersätta mått eller visualiseringar) och spara dem under ett nytt namn.
 
->[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
+>[!VIDEO](https://video.tv.adobe.com/v/23960)
 
-Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
+*(2:46)*
+
+Här finns mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
