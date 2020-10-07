@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 translation-type: tm+mt
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
+source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '875'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Datumintervall | Stöd för anpassade kalendrar planeras. |
 | Beräknade mätvärden | Observera att alla befintliga kalkylmått i det traditionella Analysis Workspace inte kommer att porteras till CJA. |
 | Segment | Nu kallat &quot;Filter&quot; - lägg märke till att befintliga segment i traditionella Analysis Workspace inte kommer att porteras till CJA. |
-| Avvikelseidentifiering | Fullt stöd från september 2020 |
+| Avvikelseidentifiering | Fullt stöd |
 | Attribution IQ | Fullt stöd |
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
@@ -33,6 +33,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | VRS-komponenturval | Nu en del av datavyer. |
 | Bearbetning av rapporttid | CJA använder sig enbart av Report Time Processing. |
 | Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med [!UICONTROL Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] till underliggande datamängder. |
+| Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan Adobe Admin Console produktadministratörer och användare. Endast produktadministratörer kan 1) skapa/uppdatera/ta bort anslutningar eller datavyer, 2) uppdatera/ta bort projekt, filter eller beräkningstal som har skapats av andra användare och 3) dela ett Workspace-projekt med alla användare |
 
 ## Stöds med caveats
 
@@ -52,7 +53,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, marknadsföringskanaler, besöksnummer osv.) | CJA har inte dessa dimensioner internt. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Se våra [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
+| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Panelerna Segmentjämförelse, Analytics for Target (A4T) och Media Concurrent Viewer stöds inte. |
 | Marknadsförande eVars | Merchandising eVars fungerar bara med ADC-baserade datauppsättningar om de inte följer samma XDM-schema (liknande produktlistans begränsningar ovan). |
 | Punktfiltrering | För ADC-baserade datauppsättningar (Analytics Data Connector) tillämpas robotfiltrering. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
 | Bearbetningsregler | För ADC-baserade datauppsättningar tillämpas fortfarande bearbetningsregler. |
@@ -65,7 +66,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Bidragsanalys | Support planeras. |
 | Segment IQ | Support planeras. |
 | Segmentpublicering (skickar segment från Workspace till Experience Cloud) | Support planeras. |
-| Användarbehörigheter/dataåtkomstkontroller | Alla användare i CJA har samma åtkomstkontroller - det innebär att alla användare har tillgång till alla anslutningar, datavyer osv. I princip är alla användare användare på administratörsnivå i CJA. Stöd planeras för 2020. |
 | CSV-nedladdning | Support planeras. |
 | Schemalagda rapporter/projekt | Support planeras. |
 | Larm | Support planeras. |
