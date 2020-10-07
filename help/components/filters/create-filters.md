@@ -2,7 +2,7 @@
 title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
 translation-type: tm+mt
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -46,4 +46,6 @@ Det finns flera andra metoder för att tillämpa filter på ett projekt:
 | Skapa filter från markering | Skapa ett textbundet filter. Markera rader, högerklicka på markeringen och skapa sedan ett textbundet filter. Det här filtret gäller bara för det öppna projektet och sparas inte som ett CJA-filter. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka *Skapa filter från markering*. |
 | Komponenter > Nytt filter | Visar Filter Builder. Se [Filter Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html) för mer information om filtrering. |
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)Läs om hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
-| Använd filter som dimensioner | Video: Använda filter som Dimensioner i Analysis Workspace<br>>[!VIDEO](https://video.tv.adobe.com/v/23974) |
+| Använd filter som dimensioner | Video: Använda filter som Dimensioner i Analysis Workspace |
+
+>[!VIDEO](https://video.tv.adobe.com/v/23974)
