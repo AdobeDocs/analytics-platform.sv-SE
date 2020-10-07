@@ -1,30 +1,30 @@
 ---
-title: Kombinerade datauppsättningar
-description: Läs mer om hur CJA skapar en anslutning genom att kombinera datauppsättningar.
+title: Kombinerade händelsedatamängder
+description: Lär dig hur CJA skapar en anslutning genom att kombinera datauppsättningar.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
 
 
-# Kombinerade datauppsättningar
+# Kombinerade händelsedatamängder
 
-När du skapar en anslutning kombinerar CJA alla scheman och datauppsättningar till en enda datamängd. Denna kombinerade datamängd är vad CJA använder för rapportering. När du tar med flera scheman eller datauppsättningar i en anslutning:
+När du skapar en anslutning kombinerar CJA alla scheman och datauppsättningar i en enda datauppsättning. Den här kombinerade händelsedatamängden är vad CJA använder för rapportering. När du inkluderar flera scheman eller datauppsättningar i en anslutning:
 
-* Systemen kombineras. Dubbla schemafält slås samman.
-* Kolumnen &#39;Person ID&#39; i varje datamängd slås samman till en enda kolumn, oavsett deras namn. Denna kolumn är grunden för att identifiera unika besökare i CJA.
-* Raderna bearbetas utifrån tidsstämpel.
+* Scheman kombineras. Duplicerade schemafält sammanfogas.
+* Kolumnen &quot;Person-ID&quot; i varje datauppsättning sammanfogas till en enda kolumn, oavsett namn. Den här kolumnen är grunden för att identifiera unika besökare i CJA.
+* Rader bearbetas baserat på tidsstämpel.
 
 ## Exempel
 
-Tänk på följande exempel. Du har två datauppsättningar med olika fält som innehåller olika data.
+Titta på följande exempel. Du har två händelsedatamängder, där vart och ett har olika fält som innehåller olika data.
 
 >[!NOTE]
 >
->I Adobe Experience Platform lagras vanligtvis tidsstämpel i Unix millisekunder. I det här exemplet används datum och tid för läsbarhet.
+>Adobe Experience Platform lagrar vanligtvis tidsstämplar i Unix millisekunder. I det här exemplet används datum och tid för läsbarhet.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ Tänk på följande exempel. Du har två datauppsättningar med olika fält som 
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
 
-När du skapar en anslutning med dessa två datauppsättningar används följande tabell för rapportering.
+När du skapar en anslutning med dessa två händelsedatamängder används följande tabell för rapportering.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -55,21 +55,21 @@ När du skapar en anslutning med dessa två datauppsättningar används följand
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Denna kombinerade datamängd är vad som används vid rapportering. Det spelar ingen roll från vilken datamängd en rad kommer. CJA behandlar alla data som om de finns i samma datamängd. Om ett matchande person-ID visas i båda datauppsättningarna anses de vara samma unika besökare. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter anses de vara en del av samma session.
+Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. CJA hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika besökare. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session.
 
-Detta koncept gäller också för tilldelning. Det spelar ingen roll från vilken datamängd en rad kommer. attributet fungerar exakt som om alla händelser kom från en enda datamängd. Använda ovanstående tabeller som exempel:
+Detta koncept gäller också attribuering. Det spelar ingen roll vilken datauppsättning en rad kommer från. attribuering fungerar precis som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
 
-Om din anslutning bara omfattade den första tabellen och inte den andra, drar du en rapport med hjälp av `string_color` dimension och `metric_a` Mått som använder den sista pektilattributet skulle visa:
+Om anslutningen bara innehöll den första tabellen och inte den andra, drar du en rapport med hjälp av `string_color` dimension och `metric_a` mätvärden som använder den senaste beröringsattribueringen skulle visa:
 
-| sträng_färg | metrisk_a |
+| string_color | metrisk_a |
 | --- | --- |
 | Ospecificerad | 6 |
 | Blå | 3 |
 | Röd | 2 |
 
-Om du har inkluderat båda tabellerna i anslutningen ändras attributet sedan `user_847` finns i båda datauppsättningarna. En rad från andra datauppsättningsattribut `metric_a` till &quot;Gul&quot; om de tidigare inte har specificerats:
+Om du däremot inkluderar båda tabellerna i anslutningen ändras attribueringen sedan `user_847` finns i båda datauppsättningarna. En rad från de andra datauppsättningsattributen `metric_a` till &#39;Gul&#39; där de tidigare inte var angivna:
 
-| sträng_färg | metrisk_a |
+| string_color | metrisk_a |
 | --- | --- |
 | Gul | 6 |
 | Blå | 3 |
