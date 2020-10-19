@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
+source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1614'
 ht-degree: 2%
 
 ---
@@ -114,7 +114,7 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
 
    * Om den kumulativa storleken på historiska data för alla datauppsättningar i anslutningen överstiger 1,5 miljarder rader visas ett felmeddelande om att du inte kan importera den här mängden historiska data. Men om du lägger till en datauppsättning med 1 miljard rader med historiska data och importerar dessa data, och en vecka senare, lägger till ytterligare en datauppsättning med samma storlek och importerar dess historiska data, skulle det fungera.
    * Vi prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa data har den lägsta latensen.
-   * Eventuella bakåtfyllnadsdata (historiska) importeras i en långsammare takt.
+   * Eventuella bakåtfyllda (historiska) data importeras i långsammare takt (upp till 13 månaders data, oavsett storlek).
 
 1. Klicka på **[!UICONTROL Save]**.
 
