@@ -2,9 +2,9 @@
 title: Customer Journey Analytics - översikt
 description: Lär dig hur du kan använda Analysis Workspace med data från Experience Platform i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
+source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,11 @@ Innan du kan börja använda Customer Journey Analytics måste följande krav va
 
 Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du följande behörigheter i dialogrutan [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* Från och med 9 september 2020 måste du läggas till som administratör för en **Customer Journey Analytics produktprofil** i [Admin Console](https://adminconsole.adobe.com/enterprise/). Administratörer behöver följande behörigheter:
+* Från och med 9 september 2020 måste du läggas till som administratör för att få tillgång till Customer Journey Analytics eller skapa en anslutning i **Customer Journey Analytics** i [Admin Console](https://adminconsole.adobe.com/enterprise/). Produktadministratörer har följande behörigheter:
    * Skapa/uppdatera/ta bort anslutningar eller datavyer
    * Uppdatera/ta bort projekt, filter, beräkningstal eller segment som skapats av andra användare
    * Dela ett Workspace-projekt till alla användare
-* Att bli produktadministratör i Customer Journey Analytics räcker inte för att skapa, uppdatera eller ta bort en anslutning. Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform produktprofil** som ger dig följande behörigheter:
+* Det räcker inte att bli produktadministratör i Customer Journey Analytics för att skapa, uppdatera eller ta bort en anslutning. Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform produktprofil** som ger dig följande behörigheter:
    * Visa scheman
    * Hantera scheman
    * Visa identitetsnamnutrymmen
@@ -67,7 +67,7 @@ Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll
 
 ### Användaråtkomst
 
-Icke-administratörer (användare) i Customer Journey Analytics kan inte visa datavyer eller anslutningar, men kan skapa filter, projekt och beräknade värden.
+Icke-produktadministratörer (användare) i Customer Journey Analytics kan inte visa datavyer eller anslutningar, men kan skapa filter, projekt och beräknade värden.
 
 ## Uppdateringar om terminologi
 
