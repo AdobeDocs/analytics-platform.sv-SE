@@ -2,10 +2,10 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
+source-git-commit: 64c77d3080bc2a36af4e80a854f10adce2632064
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 2%
+source-wordcount: '1736'
+ht-degree: 1%
 
 ---
 
@@ -100,22 +100,26 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
 
 ![Aktivera anslutning](assets/create-connection2.png)
 
-1. Om du vill aktivera en anslutning definierar du följande inställningar:
+1. Om du vill aktivera en anslutning definierar du de här inställningarna för hela anslutningen, dvs. alla datauppsättningar i anslutningen:
 
    | Alternativ | Beskrivning |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL Name Connection] | Ge anslutningen ett beskrivande namn. Anslutningen kan inte sparas utan ett namn. |
    | [!UICONTROL Description] | Lägg till mer information för att skilja den här anslutningen från andra. |
    | [!UICONTROL Datasets] | De datauppsättningar som ingår i den här anslutningen. |
    | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar in i [!UICONTROL Workspace]. |
-   | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen kommer alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar som finns i den här anslutningen importeras. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. <br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
+   | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen kommer alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar i den här anslutningen kommer att importeras eller fyllas i i bakgrunden. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. <br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
+   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet dagliga händelser som ska importeras (nya data) **och** backfill-data) för alla datauppsättningar i anslutningen. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera, kan du göra en enkel SQL-fråga i [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) för att ta reda på.<!--Rohit to provide and make sure we include multiple datasets.--> |
 
-   **Kom ihåg:**
+1. Klicka på **[!UICONTROL Save and create data view]**. Dokumentation finns på [skapa en datavy](/help/data-views/create-dataview.md).
 
-   * Om den kumulativa storleken på historiska data för alla datauppsättningar i anslutningen överstiger 1,5 miljarder rader visas ett felmeddelande om att du inte kan importera den här mängden historiska data. Men om du lägger till en datauppsättning med 1 miljard rader med historiska data och importerar dessa data, och en vecka senare, lägger till ytterligare en datauppsättning med samma storlek och importerar dess historiska data, skulle det fungera.
-   * Vi prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa data har den lägsta latensen.
-   * Eventuella bakåtfyllda (historiska) data importeras i långsammare takt (upp till 13 månaders data, oavsett storlek).
+### Bakgrundsfyllningshistorikdata
 
-1. Klicka på **[!UICONTROL Save]**.
+**[!UICONTROL Import all existing data]** gör att du kan fylla i historiska data baklänges. Tänk på detta:
 
-Nästa steg i arbetsflödet är att [skapa en datavy](/help/data-views/create-dataview.md).
+* Vi prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa nya data har den lägsta latensen.
+* Eventuella bakåtfyllnadsdata (historiska) importeras i en långsammare takt. Latensen påverkas av hur mycket historisk information du har, i kombination med **[!UICONTROL Average number of daily events]** inställningen du valde. Om du till exempel har mer än en miljard rader data per dag, plus tre års historiska data, kan det ta flera veckor att importera dem. Å andra sidan, om du har mindre än en miljon rader per dag och en vecka med historiska data, tar det mindre än en timme.
+* Påfyllning gäller för hela anslutningen, inte för varje enskild datauppsättning.
+* The [Adobe Analytics Data Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importerar upp till 13 månaders data, oavsett storlek.
+
+<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
