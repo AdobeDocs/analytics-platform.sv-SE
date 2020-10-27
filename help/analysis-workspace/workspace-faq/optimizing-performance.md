@@ -3,15 +3,15 @@ description: Faktorer som påverkar arbetsytans prestanda och rekommenderade opt
 title: Analysis Workspace prestandafaktorer och optimering
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
+source-git-commit: 3928307fb51d1bde628773a91d5f4e2d4e5c2a5c
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 0%
+source-wordcount: '1937'
+ht-degree: 1%
 
 ---
 
 
-# Analysis Workspace prestandafaktorer och optimering
+# Optimera prestanda för Analysis Workspace
 
 Olika faktorer kan påverka prestanda i ett projekt inom Analysis Workspace. Det är viktigt att du vet vad dessa medarbetare är innan du börjar bygga ett projekt, så att du kan planera och bygga projektet på det optimala sättet. Den här sidan innehåller en lista med faktorer som påverkar prestandan och rekommenderade optimeringar som du kan göra för att säkerställa topprestanda i Analysis Workspace.
 
