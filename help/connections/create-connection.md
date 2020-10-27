@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 64c77d3080bc2a36af4e80a854f10adce2632064
+source-git-commit: 619eaeabfbd0fb6a7205488075c1c9cfb0fd5a26
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1761'
 ht-degree: 1%
 
 ---
@@ -108,8 +108,8 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
    | [!UICONTROL Description] | Lägg till mer information för att skilja den här anslutningen från andra. |
    | [!UICONTROL Datasets] | De datauppsättningar som ingår i den här anslutningen. |
    | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar in i [!UICONTROL Workspace]. |
-   | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen kommer alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar i den här anslutningen kommer att importeras eller fyllas i i bakgrunden. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. <br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
-   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet dagliga händelser som ska importeras (nya data) **och** backfill-data) för alla datauppsättningar i anslutningen. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera, kan du göra en enkel SQL-fråga i [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) för att ta reda på.<!--Rohit to provide and make sure we include multiple datasets.--> |
+   | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen kommer alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar i den här anslutningen kommer att importeras eller fyllas i i bakgrunden. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. Se även [Bakgrundsfyllningshistorikdata](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) nedan.<br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
+   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet dagliga händelser som ska importeras (nya data) **och** backfill-data) för alla datauppsättningar i anslutningen. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera, kan du göra en enkel SQL-fråga i [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) för att ta reda på. Här är alternativen för det här alternativet: ![dagliga händelser](assets/daily_size.png) |
 
 1. Klicka på **[!UICONTROL Save and create data view]**. Dokumentation finns på [skapa en datavy](/help/data-views/create-dataview.md).
 
