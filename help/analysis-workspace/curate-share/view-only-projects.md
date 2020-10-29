@@ -3,19 +3,15 @@ description: projekt med endast visning i arbetsytan
 keywords: View-only projects
 title: Visa endast  projekt
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '246'
 ht-degree: 2%
 
 ---
 
 
 # Visa endast  projekt
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
@@ -40,7 +36,7 @@ Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 Några av de mer välkända interaktionerna i ett projekt med endast visning är:
 
 | Yta | Aktiverade interaktioner |
-|---|---|
+| --- | --- |
 | Frihandsregister | <ul><li>Sidindelning och sortering</li><li>Hovring</li><li>Cellmarkeringar som uppdaterar länkade visualiseringar</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Högerklicka > Kopiera till Urklipp</li></ul> |
 | Visualiseringar | <ul><li>Klicka för att aktivera/inaktivera förklaring</li><li>Hovring</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Komprimera/expandera</li><li>Flöde - expandera flödesnoder</li><li>Karta - zoom</li></ul> |
 | Paneler | <ul><li>Interaktiva listrutefilter</li><li>Högerklicka > Hämta panellänk</li><li>Komprimera/expandera</li></ul> |
