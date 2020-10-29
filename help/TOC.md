@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 51%
+source-wordcount: '410'
+ht-degree: 49%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 51%
    + [Avancerad analys](analysis-workspace/perform-adv-analysis.md)
    + Bygga ett Workspace-projekt {#build-workspace-project}
       + [Skapa projekt – översikt](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
       + Kolumn- och radinställningar {#column-row-settings}
          + [Kolumninställningar](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
@@ -94,13 +95,13 @@ ht-degree: 51%
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
    + Samla in eller dela projekt {#curate-share}
-      + [Kuratera arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
-      + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
+      + [Dela-menyn](analysis-workspace/curate-share/send-schedule-files.md)
+      + [Kuratprojekt](analysis-workspace/curate-share/curate.md)
+      + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
-      + [Skrivskyddade Workspace-projekt](analysis-workspace/curate-share/view-only-projects.md)
+      + [Visa endast  projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
-      + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
-      + [Skicka fil – schemalägga ett projekt för leverans](analysis-workspace/curate-share/t-schedule-report.md)
+      + [Schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
       + [Projekthanterare för schemaläggning](analysis-workspace/curate-share/schedule-projects.md)
    + Attribution IQ {#attribution}
       + [Översikt över attribuering](analysis-workspace/attribution/overview.md)
