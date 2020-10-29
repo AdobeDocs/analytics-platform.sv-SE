@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 240c0d33eb3db8bd3618698cac7f61f88048e953
+source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1874'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
    | [!UICONTROL Datasets] | De datauppsättningar som ingår i den här anslutningen. |
    | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar in i [!UICONTROL Workspace]. |
    | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen kommer alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar i den här anslutningen kommer att importeras eller fyllas i i bakgrunden. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. Se även [Bakgrundsfyllningshistorikdata](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) nedan.<br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
-   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet dagliga händelser som ska importeras (nya data) **och** backfill-data) för alla datauppsättningar i anslutningen. Välj ett alternativ i listrutan. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera, kan du göra en enkel SQL-fråga i [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) för att ta reda på. Frågan skulle se ut så här:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` |
+   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet dagliga händelser som ska importeras (nya data) **och** backfill-data) för alla datauppsättningar i anslutningen. Välj ett alternativ i listrutan. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera, kan du göra en enkel SQL-fråga i [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) för att ta reda på.<br>Se &quot;Beräkna det genomsnittliga antalet dagliga händelser&quot; nedan. |
 
 1. Klicka på **[!UICONTROL Save and create data view]**. Dokumentation finns på [skapa en datavy](/help/data-views/create-dataview.md).
 
@@ -123,4 +123,13 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
 * Påfyllning gäller för hela anslutningen, inte för varje enskild datauppsättning.
 * The [Adobe Analytics Data Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importerar upp till 13 månaders data, oavsett storlek.
 
-<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
+### Beräkna det genomsnittliga antalet dagliga händelser
+
+Denna beräkning måste göras för varje datauppsättning i anslutningen.
+
+1. Gå till [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) och skapa en ny fråga.
+
+1. Frågan skulle se ut så här:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+
+* I det här exemplet är &quot;analytics_demo_data&quot; namnet på datauppsättningen.
+* Utför `Show Tables` -fråga för att visa alla datauppsättningar som finns i AEP.
