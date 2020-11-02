@@ -1,16 +1,16 @@
 ---
-description: Lista över kända begränsningar i Analysis Workspace och dess tillhörande komponenter
-title: Kända begränsningar i Analysis Workspace
+description: Lista med felmeddelanden i Analysis Workspace och dess relaterade komponenter
+title: Felmeddelanden
 translation-type: tm+mt
-source-git-commit: 3d3620ef9180688b6216be0c930769e0f836370a
+source-git-commit: 130dd81b580a8a011d24401918c9cb1d6bb545e7
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
 
 
-# Vanliga felmeddelanden
+# Felmeddelanden
 
 Det kan uppstå fel vid interaktion med Analysis Workspace som också påverkar prestandan. Nedan visas de vanligaste feltyperna, varför de inträffar och optimeringar som kan göras.
 
