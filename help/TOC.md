@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
+source-git-commit: a5f7a17d99d5ea7c8f944d02fb304bddf759030a
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '409'
 ht-degree: 49%
 
 ---
@@ -116,6 +116,7 @@ ht-degree: 49%
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Vanliga frågor](analysis-workspace/workspace-faq/faq.md)
       + [Optimera prestanda för Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Felmeddelanden](analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar i Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
