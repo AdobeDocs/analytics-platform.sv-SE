@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 translation-type: tm+mt
-source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
+source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '933'
 ht-degree: 5%
 
 ---
@@ -46,6 +46,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Inställningar för beständighet av eVar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Detta innebär att all beständighet baseras på rapporteringsdatumintervallet i stället för på alla data. |
 | Klassificeringar | De kallas nu&quot;Sök efter datauppsättningar&quot; och importeras inte automatiskt från traditionell Analytics. De måste överföras till AEP innan de är tillgängliga i CJA. |
 | Kundattribut | De kallas nu&quot;profildatauppsättningar&quot; och importeras inte automatiskt från Experience Cloud, utan måste överföras till AEP innan de blir tillgängliga i CJA. |
+| Enhet, webbläsare, teknikdimensioner | Dessa dimensioner inkluderas automatiskt när en AEP-datauppsättning innehåller specifika XDM-schemafält och följer XDM Experience Event-klassen. |
+| Poster, avslutningar och tidsmått | Stöds (Poster och avslutningar kallas nu för Sessionsstart och Sessionsslut) och beräknas på ett något annorlunda sätt. |
 
 ## Delvis stöd
 
@@ -66,6 +68,10 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Segment IQ | Support planeras. |
 | Segmentpublicering (skickar segment från Workspace till Experience Cloud) | Support planeras. |
 | CSV-nedladdning | Support planeras. |
+| Metrisk deduplicering | Support planeras. |
+| Anpassade kalendrar | Support planeras. |
+| Metrisk deduplicering | Support planeras. |
+| Varaktighet för marknadsföringsvariabel | Support planeras. |
 | Schemalagda rapporter/projekt | Support planeras. |
 | Larm | Support planeras. |
 | Anpassade kalendrar | Support planeras. |
