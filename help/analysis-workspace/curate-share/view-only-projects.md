@@ -3,15 +3,19 @@ description: projekt med endast visning i arbetsytan
 keywords: View-only projects
 title: Visa endast  projekt
 translation-type: tm+mt
-source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '281'
 ht-degree: 2%
 
 ---
 
 
 # Visa endast  projekt
+
+>[!NOTE]
+>
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
