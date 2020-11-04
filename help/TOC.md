@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: a5f7a17d99d5ea7c8f944d02fb304bddf759030a
+source-git-commit: 1a1b439f4b2c8d7a03dd6431edd5271fc5af0b18
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 49%
+source-wordcount: '404'
+ht-degree: 48%
 
 ---
 
@@ -48,20 +48,20 @@ ht-degree: 49%
       + [Skapa projekt – översikt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
-      + Kolumn- och radinställningar {#column-row-settings}
-         + [Kolumninställningar](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
-         + [Radinställningar](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Dynamiska jämfört med statiska artiklar](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Ångra och göra om inställningar](analysis-workspace/build-workspace-project/undo-redo.md)
-      + [Kortkommandon i Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
-      + [Sidnumrering, filtrering och sortering av tabeller](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
-      + [Summor för Workspace](analysis-workspace/build-workspace-project/workspace-totals.md)
    + Visualiseringar {#visualizations}
       + [Översikt över visualiseringar](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)
-      + [Frihandstabell](analysis-workspace/visualizations/freeform-table.md)
+      + Frihandstabell {#freeform-table}
+         + [Frihandstabell](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + Kolumn- och radinställningar {#column-row-settings}
+            + [Kolumninställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
+            + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+            + [Dynamiska jämfört med statiska artiklar](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Sidnumrering, filtrering och sortering av tabeller](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [Summor för Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
          + [Vad är kohortanalys?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera en kohortanalysrapport](analysis-workspace/visualizations/cohort-table/t-cohort.md)
