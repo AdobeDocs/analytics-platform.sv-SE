@@ -1,8 +1,8 @@
 ---
 title: Översikt över attribuering
-description: Konceptet att tilldela kredit för en lyckad händelse till flera dimensionsobjekt.
+description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsobjekt.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 48%
@@ -14,16 +14,16 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Attribut ger analytiker möjlighet att anpassa hur dimensionsartiklar får kredit för lyckade händelser. Exempel:
+Attribution ger analytiker möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
 
-1. En besökare på webbplatsen klickar på en betald söklänk till en av dina produktsidor. Lägg till produkten i kundvagnen, men köp den inte.
-2. Nästa dag ser du ett socialt medieinlägg från en av sina vänner, klickar på länken och slutför sedan köpet.
+1. En besökare på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. Lägg produkten i kundvagnen, men köp den inte.
+2. Nästa dag ser du ett inlägg på sociala medier från en av deras vänner, klickar på länken och slutför sedan köpet.
 
-I vissa rapporter kanske du vill ha den beställning som tilldelats till Paid-sökning. I andra rapporter kanske du vill att ordern ska tilldelas till Sociala. Med attribut kan du styra den här aspekten av rapportering. Den är tillgänglig för alla organisationer på Adobe Analytics Ultimate, Prime, Select and Foundation. Om du inte är säker på vilken typ av avtal du har med Adobe kontaktar du organisationens kontoansvarig.
+I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering. Det är tillgängligt för alla organisationer på Adobe Analytics Ultimate, Prime, Select och Foundation. Om du är osäker på vilken typ av kontrakt du har med Adobe kontaktar du din organisations Account Manager.
 
-## Värde för attribut IQ
+## Attribution IQ värde
 
 Kundresor är inte linjära, och de är dessutom ofta oförutsägbara. Alla kunder har sitt eget tempo. De går fram och tillbaka, hit och dit, börjar om eller rör sig på andra icke-linjära sätt. De här organiska aktiviteterna gör det svårt att veta hur olika marknadsföringssatsningar påverkar olika delar av kundresan. Det hämmar också arbetet med att knyta samman olika datakanaler.
 
@@ -44,7 +44,7 @@ Adobe Analytics förbättrar attribueringen eftersom ni kan:
 
 Attribution IQ omfattar följande funktioner:
 
-* [Panelen Attribut](../c-panels/attribution.md): Ta vilken dimension och vilket mått som helst och jämför den snabbt med olika attributmodeller.
-* [Tillämpa attribut på ett mått](../build-workspace-project/column-row-settings/column-settings.md): Använd ett icke-standardattribut för ett projekts metersystem.
-* [Tillämpa tilldelning på en uppdelning](/help/components/dimensions/t-breakdown-fa.md): Använd ett icke-standardattribut vid en uppdelning.
-* [Jämför tilldelningsmodeller](/help/components/apply-create-metrics.md): Se snabbt hur olika attributmodeller kan jämföras för alla mått.
+* [Attributionspanelen](../c-panels/attribution.md): Utnyttja alla dimensioner och mätvärden och jämför dem snabbt med olika attribueringsmodeller.
+* [Tillämpa attribuering på ett mätresultat](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md): Använd en icke-standardattribuering för alla mätvärden i ett projekt.
+* [Tillämpa attribuering på en fördelning](/help/components/dimensions/t-breakdown-fa.md): Använd en icke-standardattribuering vid en uppdelning.
+* [Jämför attribueringsmodeller](/help/components/apply-create-metrics.md): Se snabbt hur olika attribueringsmodeller jämför olika mätvärden.
