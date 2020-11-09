@@ -2,9 +2,9 @@
 title: Vanliga frågor om Customer Journey Analytics
 description: Customer Journey Analytics - Frågor och svar.
 translation-type: tm+mt
-source-git-commit: 3b3d0b0858d559e94f1bed6a31a63b018ed32a23
+source-git-commit: 830e7d71ad38539d1a73fe2df9f8886956f57acc
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1118'
 ht-degree: 1%
 
 ---
@@ -57,11 +57,11 @@ När det gäller borttagning är vi oroade för sex komponenter: sandbox-, schem
 
 | Tänk om jag.. | Det här händer.. |
 | --- | --- |
-| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform]? | Om du tar bort en sandlåda bryts alla [!UICONTROL Customer Journey Analytics] anslutningar till datauppsättningar i den sandlådan. Datauppsättningar i CJA kommer dock inte att tas bort. |
+| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform]? | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics] anslutningar till datauppsättningar i den sandlådan. För närvarande tas inte anslutningar i CJA som är kopplade till den sandlådan bort automatiskt. |
 | Ta bort ett schema i [!UICONTROL Adobe Experience Platform], men inte den eller de datauppsättningar som är associerade med det här schemat? | [!UICONTROL Adobe Experience Platform] tillåter inte att scheman som har en eller flera datauppsättningar associerade tas bort. En administratör med rätt behörighetsuppsättning kan dock ta bort datauppsättningarna först och sedan ta bort schemat. |
-| Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform]? | Det finns inget meddelande i [!UICONTROL Customer Journey Analytics]; Om direktuppspelningsdata är aktiverat kommer inga fler nya data in efter den tidpunkt då datauppsättningarna togs bort.<br>Med andra ord, om inställningen **[!UICONTROL Automatically import all new datasets in this connection, beginning today]** när anslutningen är aktiverad kommer inga fler nya data in efter att datauppsättningarna har tagits bort. |
+| Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform]? | Om du tar bort en datauppsättning i AEP avbryts dataflödet från den datauppsättningen till alla anslutningar som innehåller den datauppsättningen. Data från den datauppsättningen tas inte automatiskt bort från associerade CJA-anslutningar. |
 | Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics]? | För närvarande kan du inte ta bort en datauppsättning i en anslutning som har sparats. Du måste ta bort hela anslutningen och börja om från början. (Du kan dock ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform].) |
-| Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform])? | Om batchen redan har importerats till [!UICONTROL Customer Journey Analytics], [!UICONTROL Customer Journey Analytics] är inte medveten om att batchen har tagits bort. Om batchen inte har importerats kan den naturligtvis inte importeras när den har tagits bort i [!UICONTROL Adobe Experience Platform]. |
+| Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform])? | Om en batch tas bort från en AEP-datauppsättning tas samma batch bort från alla CJA-anslutningar som innehåller den specifika gruppen. |
 | Ta bort en grupp **medan den importeras** till [!UICONTROL Customer Journey Analytics]? | Om det bara finns en batch i datauppsättningen kommer inga data eller delar av data från den gruppen att visas i [!UICONTROL Customer Journey Analytics]. Intag kommer att återställas. Om det till exempel finns 5 batchar i datauppsättningen och 3 av dem redan har importerats när datauppsättningen togs bort, kommer data från dessa tre batchar att visas i [!UICONTROL Customer Journey Analytics]. |
 | Ta bort en anslutning i [!UICONTROL Customer Journey Analytics]? | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
 | Ta bort en datavy i [!UICONTROL Customer Journey Analytics]? | Ett felmeddelande visar att alla arbetsyteprojekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
