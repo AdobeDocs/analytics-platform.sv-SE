@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5fe2177d8e1da64304b0f9c84caa5383b6909d06
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 48%
+source-wordcount: '407'
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 48%
 # Customer Journey Analytics Guide {#using}
 
 + [Customer Journey Analytics Guide](getting-started/cja-landing.md)
-+ Customer Journey Analytics - översikt {#cja-overview}
++ Customer Journey Analytics översikt {#cja-overview}
    + [Customer Journey Analytics - översikt](getting-started/cja-overview.md)
    + [Komma igång](getting-started/cja-getting-started.md)
    + [Vanliga frågor](getting-started/cja-faq.md)
@@ -38,6 +38,7 @@ ht-degree: 48%
 + Anslutningar {#cja-connections}
    + [Skapa en anslutning](connections/create-connection.md)
    + [Hantera anslutningar](connections/manage-connection.md)
+   + [Beräkna anslutningsstorlek](connections/estimate-connection-size.md)
    + [Kombinerade händelsedatamängder](connections/combined-dataset.md)
 + Datavyer {#cja-dataviews}
    + [Skapa en datavy](data-views/create-dataview.md)
