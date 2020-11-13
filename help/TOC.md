@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
+source-git-commit: 8eb7d3e24a941eaf882426e230561e2bf0d0145e
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 47%
+source-wordcount: '424'
+ht-degree: 45%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 47%
    + [Hantera anslutningar](connections/manage-connection.md)
    + [Beräkna anslutningsstorlek](connections/estimate-connection-size.md)
    + [Kombinerade händelsedatamängder](connections/combined-dataset.md)
+   + Flerkanalsanalys {#cca}
+      + [Översikt över flerkanalsanalys](connections/cca/overview.md)
+      + [Så här spelar du upp](connections/cca/replay.md)
+      + [Vanliga frågor om flerkanalsanalys](connections/cca/faq.md)
 + Datavyer {#cja-dataviews}
    + [Skapa en datavy](data-views/create-dataview.md)
    + [Konfigurera datavyer och attribuering](data-views/configure-dataviews.md)
@@ -152,6 +156,7 @@ ht-degree: 47%
    + [Användningsexempel i Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Använda arrayer med objekt](use-cases/object-arrays.md)
    + [(B2B) Lägg till data på kontonivå som en uppslagsuppsättning](use-cases/b2b.md)
+   + [Importera callcenter och webbdata](use-cases/call-center.md)
    + [Användningsfall vid datainhämtning](use-cases/data-ingestion.md)
 + Sekretess {#cja-privacy}
    + [Sekretessöversikt](privacy/privacy-overview.md)
