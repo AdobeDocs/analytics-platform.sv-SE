@@ -2,10 +2,10 @@
 title: Customer Journey Analytics Guide
 description: Customer Journey Analytics landningssida.
 translation-type: tm+mt
-source-git-commit: 8cf9f257ccf2afd830a7f8e211c8e42b3f786e86
+source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 11%
+source-wordcount: '284'
+ht-degree: 6%
 
 ---
 
@@ -23,17 +23,15 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Nya eller aktuella objekt</b> </p> <p> 
      <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> Uppdaterade krav på användarbehörigheter (från 9 september 2020) </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/object-arrays.html"> Använda arrayer med objekt </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> Lägg till data på kontonivå som en uppslagsdatauppsättning </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html"> Komma igång med Customer Journey Analytics </a> </li> 
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Ny dokumentation om flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics)  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> Uppdaterade krav på användarbehörigheter  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> Använda arrayer med objekt  </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> Lägg till data på kontonivå som en uppslagsdatauppsättning  </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html"> Komma igång med Customer Journey Analytics  </a> </li> 
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html"> Vanliga frågor</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html"> Customer Journey Analytics - ordlista</a> </li> 
-      <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"> Adobe Analytics API 2.0</a> </li> 
-     </ul> </p> </td> 
    <td colname="col2" valign="top"> <p class="head"><b>Versionsinformation</b> </p> 
     <ul> 
-     <li>Se de senaste <a href="https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html" format="https" scope="external"> Versionsinformation för Experience Cloud</a> för nya funktioner och korrigeringar. </li> 
+     <li>Läs den senaste <a href="https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html" format="https" scope="external"> versionsinformationen för Experience Cloud</a> för nya funktioner och korrigeringar. </li> 
     </ul> <p class="head"> <b>Adobe Experience Platform Resources</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
