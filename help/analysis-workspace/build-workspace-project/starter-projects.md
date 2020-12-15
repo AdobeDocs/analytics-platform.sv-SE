@@ -15,17 +15,17 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan välja om du vill skapa ett projekt från:
 
-* **Tomt projekt (standard)**: Instruktioner finns i [Skapa ett Analysis Workspace-projekt](/help/analysis-workspace/home.md).
+* **Tomt projekt (standard)**: Instruktioner finns i  [Skapa ett Analysis Workspace-projekt](/help/analysis-workspace/home.md).
 * **Standardmall**: Mallarna skapas av Adobe och levereras med produkten.
-* **Egen mall**: Mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har tilldelats [!UICONTROL Analysis Workspace: Save as Template] tillstånd i Admin Console. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
+* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats  [!UICONTROL Analysis Workspace: Save as Template] tillstånd i Admin Console. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
-## Skapa en egen mall {#create-custom-template}
+## Skapa en anpassad mall {#create-custom-template}
 
 Användare med administratörsbehörighet kan omvandla projekt de skapar till en egen mall. Så här:
 
@@ -38,7 +38,7 @@ Användare med administratörsbehörighet kan omvandla projekt de skapar till en
 
    >[!NOTE]
    >
-   >Som standard är projektmallar synliga för alla i organisationen. Du kan ordna dem genom att använda taggar. (Gå till **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** för att redigera taggar och beskrivningar.)
+   >Som standard är projektmallar synliga för alla i organisationen. Du kan ordna dem genom att använda taggar. (Gå till **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** om du vill redigera taggar och beskrivningar.)
 
 ### Åtgärder som du kan utföra på anpassade mallar
 
@@ -46,7 +46,7 @@ Användare med administratörsbehörighet kan omvandla projekt de skapar till en
 
 | Åtgärd | Beskrivning |
 |--- |--- |
-| Redigera mall | Låter en administratör redigera mallen genom att ändra dess datakälla, ändra komponenter, visualiseringar, datumintervall osv.  Om du vill redigera en anpassad mall, antingen<ul><li>Visa listan med egna mallar i Analysis Workspace, markera en och klicka sedan på Redigera mall, eller</li><li>Navigera till Komponenter > Projekt i Analytics och filtrera sedan efter Mallar. Klicka på namnet på mallen som du vill redigera.</li></ul>**Obs!** När du har redigerat en mall kan du välja mellan två alternativ: Spara, Spara som. Så här skiljer de sig:<ul><li>**Spara:** Uppdaterar den anpassade mallen för alla användare. När någon annan skapar ett projekt från den här anpassade mallen ser de ändringarna som du har gjort.</li><li>**Spara som:** Skapar en kopia av den anpassade mallen med dina ändringar. (Du ser att du är i redigeringsläge när menyalternativet Dela > Dela projekt är inaktiverat.)</li></ul> |
+| Redigera mall | Låter en administratör redigera mallen genom att ändra dess datakälla, ändra komponenter, visualiseringar, datumintervall osv.  Om du vill redigera en anpassad mall, antingen<ul><li>Visa listan med egna mallar i Analysis Workspace, markera en och klicka sedan på Redigera mall, eller</li><li>Navigera till Komponenter > Projekt i Analytics och filtrera sedan efter Mallar. Klicka på namnet på mallen som du vill redigera.</li></ul>**Obs!** När du har redigerat en mall kan du välja mellan två alternativ, beroende på situationen: Spara, Spara som. Så här skiljer de sig:<ul><li>**Spara:** Uppdaterar den anpassade mallen för alla användare. När någon annan skapar ett projekt från den här anpassade mallen ser de ändringarna som du har gjort.</li><li>**Spara som:** Skapar en kopia av den anpassade mallen med dina ändringar. (Du ser att du är i redigeringsläge när menyalternativet Dela > Dela projekt är inaktiverat.)</li></ul> |
 | Sök efter mallar | I dialogrutan Egna mallar klickar du på Sökmallar. |
 | Sortera mallar | Du kan sortera mallar i bokstavsordning, efter relevans och efter skapandedatum.  I dialogrutan Egna mallar klickar du på Sortera:. |
 | Använd taggar på mall | Öppna mallen och gå till Projekt > Projektinformation och inställningar. Klicka på Lägg till taggar. |
@@ -98,11 +98,11 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 >
 >Mobilmallar är bara tillgängliga om rapportsviten är aktiverad för Mobile.
 
-* **Meddelanden:** Fokuserar på prestanda i appen och push-meddelanden.
+* **Meddelanden:** Fokusera på prestanda i appen och push-meddelanden.
 * **Plats:** Innehåller en karta som visar platsdata.
-* **Nyckeltal:** Håll koll på nyckelmätningarna i appen.
-* **Appanvändning:** Hur många appanvändare, starter och första starter hade appen och hur lång var den genomsnittliga sessionslängden?
-* **Förvärv:** Se hur länkar till mobilförvärv fungerar.
+* **Viktiga mätvärden:** Håll koll på nyckelmätningarna i appen.
+* **Appanvändning:** Hur många appanvändare, starter och första starter har appen och vilken genomsnittlig sessionslängd var den?
+* **Anskaffning:** Se hur mobilförvärv fungerar.
 * **Prestanda:** Hur fungerar appen och var har användarna problem?
 * **Kvarhållning:** Vilka är mina lojala användare och vad gör de?
 * **Resor:** Vilka är de framträdande användningsmönstren för min app?
@@ -114,10 +114,10 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 ### Webb
 
-* **Förvärv:** Vilka är de viktigaste trafikdrivande faktorerna på min webbplats?
+* **Förvärv:** Vilka är de viktigaste trafikdrivrutinerna på min webbplats?
 * **Innehållskonsumtion:** Vilka är de främsta platserna på min webbplats?
 * **Kvarhållning:** Vilka typer av användare är sannolikt lojala användare på min webbplats?
-* **Teknik:** Vilken teknik använder folk för att komma åt min webbplats?
+* **Teknik:** Vilken teknik använder människor för att komma åt min webbplats?
 
 ### Personer
 
@@ -139,17 +139,17 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 
 <!--This content is mirrored in the CDA doc.-->
 
-Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Enhetsövergripande analys](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (CDA).
+Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (CDA).
 
-* **Specialanteckning för medlemmar i Co-op Graph**: Visar vilken del av rapportsviten som innehåller besökare i regioner där koordinatdiagrammet stöds och regioner där det inte stöds.
+* **Specialanteckning för medlemmarna i Co-op Graph**: Visar vilken del av rapportsviten som innehåller besökare i regioner där koordinatdiagrammet stöds och regioner där det inte stöds.
 * **Identifiering av användare**: Visar hur ofta besökare på er webbplats identifieras med hjälp av metoder som baseras på enhetsövergripande analys.
 * **Mäta målgruppens storlek**: Visar en jämförelse mellan Unika enheter och Personer. Andelen av dessa två tal kallas för komprimering mellan enheter, ett beräknat mått som visas på den här panelen. Detta komprimeringsmått är beroende av ett stort antal faktorer:
    * **Använda Co-op-diagrammet eller det privata diagrammet**: I allmänhet tenderar organisationer som använder enhetskoordinaterna att se bättre komprimeringsgrader än organisationer som använder det privata diagrammet.
    * **Inloggningshastighet**: Ju fler användare som loggar in på er webbplats, desto mer kan Adobe identifiera och sätta ihop besökare på olika enheter. Platser med låg inloggningshastighet har också låg komprimeringshastighet.
    * **Experience Cloud ID-täckning**: Endast besökare med ett ECID kan sammanfogas. En lägre andel besökare på er webbplats som använder ett ECID-kort motsvarar lägre komprimeringsgrader.
-   * **Användning av flera enheter**: Om besökarna på webbplatsen inte använder flera enheter kan du se lägre komprimeringsgrader.
+   * **Användning** av flera enheter: Om besökarna på webbplatsen inte använder flera enheter kan du se lägre komprimeringsgrader.
    * **Rapportgranularitet**: Komprimering per dag är vanligtvis mindre än komprimering per månad eller år. Risken för att en individ ska använda flera enheter blir mindre inom en dag än under en hel månad. Segmentering, filtrering eller användning av nedbrytningsdimensioner kan också ge en lägre komprimeringsgrad.
 * **Personbaserade segment**: Innehåller en segmentlistruta där du kan visa enhetsspecifika data. Den här panelen uppmuntrar till experimenterande med segment för att se hur rapporter påverkas om du inkluderar eller utesluter enhetstyper.
-* **Analysera resan mellan olika enheter**: Tillhandahåller flödes- och utfallsrapporter baserat på enhetstyp.
-* **Tilldelning över olika enheter**: Kombinera funktionerna i Journey IQ och Attribution IQ.
+* **Analysera resan** mellan olika enheter: Tillhandahåller flödes- och utfallsrapporter baserat på enhetstyp.
+* **Tilldelning** mellan enheter: Kombinera funktionerna i Journey IQ och Attribution IQ.
 * **Andra tips och tricks**: Hjälpsamma ämnen kring CDA som gör att du kan få ut mer av att använda det.
