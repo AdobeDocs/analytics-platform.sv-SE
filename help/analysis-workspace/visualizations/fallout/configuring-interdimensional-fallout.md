@@ -1,5 +1,5 @@
 ---
-description: Med Fallout i Analysis Workspace kan du blanda och matcha dimensioner och mått som styrpunkter i trattar och arbetsflöden. Detta ger dig större flexibilitet när du definierar de användarsteg som du vill undersöka.
+description: Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
 title: Intradimensionella utfall
 uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
 translation-type: tm+mt
@@ -15,21 +15,21 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Med Fallout i Analysis Workspace kan du blanda och matcha dimensioner och mått som styrpunkter i trattar och arbetsflöden. Detta ger dig större flexibilitet när du definierar de användarsteg som du vill undersöka.
+Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
 
-**Exempel**: Förutom en siddimension kan du lägga till åtgärdsbaserade dimensionsobjekt till en Fallout-visualisering. På så sätt kan du visualisera hur sidor och vissa åtgärder samspelar i kundernas banor.
+**Exempel**: Förutom siddimensionen kan du lägga till åtgärdsbaserade dimensionsobjekt i en utfallsvisualisering. På så sätt kan ni visualisera hur sidor och vissa åtgärder interagerar på kundens vägar.
 
 ![](assets/interdimensional-fallout1.png)
 
-Utfall uppdateras dynamiskt och du kan se utfall över flera dimensioner.
+Utfallet uppdateras dynamiskt så att du kan se utfallet i flera dimensioner.
 
-Du kan också lägga till mått i den här mixen. I det här exemplet har vi lagt till måttet &quot;Delat foto&quot; för att komplettera den väg som kunderna valde:
+Du kan också lägga till mätvärden i den här mixen. I det här exemplet har vi lagt till måttet&quot;Delat foto&quot; för att ge intryck av kundens väg:
 
 ![](assets/interdimensional-fallout2.png)
 
-Dessutom kan du kombinera olika dimensioner och mått till OCH-kontrollpunkter. Dra bara en annan dimension eller ett mått ovanpå en befintlig:
+Dessutom kan du kombinera olika mått och mätvärden i AND-kontrollpunkter. Bara dra ytterligare mått eller mätvärden över en befintlig dimension:
 
 ![](assets/interdimensional-fallout3.png)
 
