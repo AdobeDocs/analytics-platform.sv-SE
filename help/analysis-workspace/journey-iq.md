@@ -1,6 +1,6 @@
 ---
-title: Journey IQ
-description: Förstå de funktioner som utgör Journey IQ, en uppsättning funktioner som ingår i Adobe Analytics.
+title: Resa-IQ
+description: Förstå de funktioner som Journey IQ består av, en uppsättning funktioner som ingår i Adobe Analytics.
 translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
@@ -10,19 +10,19 @@ ht-degree: 1%
 ---
 
 
-# Journey IQ
+# Resa-IQ
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Journey IQ är en uppsättning funktioner som gör det enkelt att använda, helt anpassningsbara visualiseringar och inställningar för att bättre förstå kundens upplevelse. Det gör det möjligt för dig att mäta varje beröringspunkt under en kunds resa, även över kanaler. Använd de här funktionerna för att bättre förstå var kunderna kan återanlita, hålla dem lojala och anpassa sina upplevelser på vägen.
+Resans-IQ är en uppsättning funktioner som ger lättanvända, helt anpassningsbara visualiseringar och inställningar för att bättre förstå kundens upplevelse. Det gör att ni kan mäta varje kontaktyta i en kunds resa, även i alla kanaler. Använd de här funktionerna för att bättre förstå var kunderna ska engagera igen, behålla dem lojala och personalisera sina upplevelser längs vägen.
 
 ## Funktioner
 
-Journey IQ omfattar följande:
+Resans IQ omfattar följande:
 
-* [Kohortanalys:](visualizations/cohort-table/cohort-analysis.md) Visualisera kundens kvarhållning och engagemang för att förstå var det händer att det uppstår en klyfta.
-* [Flödesanalys:](visualizations/c-flow/flow.md) Förstå var användarna navigerar härnäst och varifrån de kommer.
-* [Utfallsanalys:](visualizations/fallout/fallout-flow.md) Fånga när en kund gör sig av med, och förstå vart han eller hon går.
+* [Kohortanalys:](visualizations/cohort-table/cohort-analysis.md) Visualisera kundlojalitet och kundernas engagemang för att förstå var förändringar sker.
+* [Flödesanalys:](visualizations/c-flow/flow.md) Förstå var användarna navigerar och varifrån de kommer.
+* [Bortfallsanalys:](visualizations/fallout/fallout-flow.md) Fånga när en kund tappar kontakten och förstå vart den ska gå.
 
