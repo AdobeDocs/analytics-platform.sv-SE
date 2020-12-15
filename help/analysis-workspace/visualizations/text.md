@@ -15,20 +15,20 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Gör att du kan lägga till användardefinierad text på arbetsytan.
 
-Du kan ändra teckensnittsinställningarna (fetstil, kursiv stil osv.) och lägga till hyperlänkar i visualiseringar i textrutor och beskrivningar av panel/visualisering.
+Du kan ändra teckensnittsinställningarna (fet, kursiv, osv.) och lägga till hyperlänkar i textrutevisualiseringar och beskrivningar av paneler/visualiseringar.
 
 ## Ändra teckensnittsinställningar {#section_32727EE03FD04A8EB1D1B387DCAF6537}
 
 ![](assets/rich-text1.png)
 
-När du har dragit en textvisualisering till en panel och lagt till text kan du formatera texten genom att lägga till rubriknivåer, ändra texten fet/kursiv/understruken, ändra textfärg osv.
+När du har dragit en textvisualisering till en panel och lagt till text kan du formatera texten genom att lägga till rubriknivåer, ändra textens fet/kursiv/understruken, ändra textfärgen osv.
 
 ## Lägg till hyperlänkar {#section_D55B857188A74A06B49006DF3511DC7C}
 
 ![](assets/rich-text2.png)
 
-Markera text och klicka på hyperlänksikonen på formateringsmenyn för att lägga till hyperlänkar.
+Markera text och klicka på hyperlänkikonen på formateringsmenyn för att lägga till hyperlänkar.
