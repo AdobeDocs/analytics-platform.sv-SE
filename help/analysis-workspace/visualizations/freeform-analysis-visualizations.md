@@ -39,7 +39,7 @@ Videosjälvstudiekurs: [Visualiseringstyper i Analysis Workspace](https://docs.a
 
 ## Panelen Visualiseringar {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-Om du vill visa visualiseringspanelen klickar du på **[!UICONTROL Visualizations]** till vänster.
+Om du vill visa visualiseringspanelen klickar du på **[!UICONTROL Visualizations]** i den vänstra listen.
 
 ![Stegresultat](assets/visualizations.png)
 
@@ -47,11 +47,11 @@ De flesta visualiseringstyper (till exempel diagram för område, stapel, ring o
 
 ## Visualiseringsinställningar {#section_D3BB5042A92245D8BF6BCF072C66624B}
 
-För åtkomst [!UICONTROL Visualization Settings], dra en visualisering till [!UICONTROL Freeform Panel]klickar du på [!UICONTROL Visualization Settings] kugghjulsikon.
+Om du vill komma åt [!UICONTROL Visualization Settings] drar du en visualisering till [!UICONTROL Freeform Panel] och klickar sedan på kugghjulsikonen [!UICONTROL Visualization Settings].
 
 >[!IMPORTANT]
 >
->Vilka visualiseringsinställningar som visas beror på visualiseringen. Alla inställningar gäller inte för alla visualiseringar. Dessutom visas vissa avancerade inställningar **endast** för specifika visualiseringar, som [Histograminställningar](/help/analysis-workspace/visualizations/histogram.md#section_09D774C584864D4CA6B5672DC2927477).
+>Vilka visualiseringsinställningar som visas beror på visualiseringen. Alla inställningar gäller inte för alla visualiseringar. Dessutom visas vissa avancerade inställningar **endast** för specifika visualiseringar, som [histograminställningarna](/help/analysis-workspace/visualizations/histogram.md#section_09D774C584864D4CA6B5672DC2927477).
 
 ![](assets/visualization_settings.png)
 
@@ -66,13 +66,13 @@ För åtkomst [!UICONTROL Visualization Settings], dra en visualisering till [!U
 | Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). |
 | Visa avvikelser | Förbättrar linjediagram och frihandstabeller för att visa dataavvikelser. |
 
-## Ikonen Skapa visuell {#section_9C11D9DEDC42413AA53E69A71A509DFC}
+## Skapa visuell ikon {#section_9C11D9DEDC42413AA53E69A71A509DFC}
 
-Om du är osäker på vilken visualisering du ska välja klickar du på **[!UICONTROL Create Visual]** -ikonen i valfri tabellrad. Den här ikonen visas när du hovrar över tabellraden. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat upp till tre segment skapas ett Venndiagram. För mer än tre segment skapas ett stapeldiagram. För andra typer av data kan det skapa ett linjediagram osv.
+Om du är osäker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i valfri tabellrad. Den här ikonen visas när du hovrar över tabellraden. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat upp till tre segment skapas ett Venndiagram. För mer än tre segment skapas ett stapeldiagram. För andra typer av data kan det skapa ett linjediagram osv.
 
 ![](assets/create-visual.png)
 
-## Högerklicka på visualisering/panelmeny {#section_05B7914D4C9E443F97E2BFFDEC70240C}
+## Högerklicka på menyn för visualisering/panel {#section_05B7914D4C9E443F97E2BFFDEC70240C}
 
 Inställningar som är sammanhangsbaserade för ett diagram kan nås när du högerklickar bredvid ett visualiserings- eller panelhuvud. Vissa eller alla av följande inställningar kommer att vara tillgängliga:
 
@@ -96,7 +96,7 @@ Inställningar som är sammanhangsbaserade för ett diagram kan nås när du hö
 
 Du kan byta namn på serienamn i visualiseringsteckenförklaringar (Utfall, Område, Staplad, Stapel, Staplad liggande stapel, Donut, Histogram, Vågrät stapel, Staplad linje, Spridning och Venndiagram) för att göra bilderna mer konsumerbara.
 
-Legenredigering gör **not** gäller för: Treemap, Bullet, Summary Change or Number, Text, Freeform, Histogram, Kohort eller Flow-visualiseringar.
+Förklaringsredigering **gäller inte** för: Treemap, Bullet, Summary Change or Number, Text, Freeform, Histogram, Kohort eller Flow-visualiseringar.
 
 Om du vill redigera en förklaringsetikett i ett linjediagram, till exempel
 
@@ -106,6 +106,6 @@ Om du vill redigera en förklaringsetikett i ett linjediagram, till exempel
    ![](assets/edit-label.png)
 
 1. Ange den nya etikettexten.
-1. Tryck **[!UICONTROL Enter]** att spara.
+1. Tryck på **[!UICONTROL Enter]** för att spara.
 
-Här är en [länk till en video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om detta ämne.
+Här är en [länk till en video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om det här ämnet.
