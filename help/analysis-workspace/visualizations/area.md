@@ -15,21 +15,21 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-## Område
+## Yta
 
-Den här visualiseringen är som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mått och vill visualisera området som uttrycks genom skärningspunkten mellan två eller flera mått.
+Den här visualiseringen är som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden.
 
 ![](assets/area.png)
 
-## Område staplat
+## Skiktat område
 
-Den här visualiseringen är som ett ytdiagram, men varje serie börjar längst upp i föregående serie.
+Den här visualiseringen är som ett ytdiagram, men varje serie börjar högst upp i föregående serie.
 
 ![](assets/area-stacked.png)
 
-En ny visualiseringsinställning för ytstaplade visualiseringar gör diagrammet till en &quot;100 % staplad&quot; visualisering.
+En ny visualiseringsinställning för staplade ytvisualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering.
 
 ![](assets/areastacked100.png)
 
