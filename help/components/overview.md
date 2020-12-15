@@ -28,15 +28,15 @@ Du kan hantera följande komponenter:
 
 Komponenterna i Analysis Workspace består av mått, dimensioner, segment och tidsdetaljer som du kan dra och släppa i ett projekt. Anpassade komponenter som du skapar läggs till i dessa paneler, till exempel anpassade datumintervall.
 
-Du öppnar panelen Komponenter genom att klicka på **[!UICONTROL Components]** ikonen i den vänstra listen. Du kan växla mellan paneler (panelen Tom, [Frihandspanelen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md), eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och komponenter som använder ikonerna för den vänstra listen eller med [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Du öppnar panelen Komponenter genom att klicka på ikonen **[!UICONTROL Components]** i den vänstra listen. Du kan växla mellan paneler (Tom panel, [Frihandspanel](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabbinsikter](/help/analysis-workspace/c-panels/quickinsight.md) eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) och Komponenter med ikonerna för vänster spår eller genom att använda [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
 ![](assets/components.png)
 
-Se [Skapa ett projekt](/help/analysis-workspace/home.md) om du vill ha information om hur du använder komponenter i ett projekt.
+Mer information om hur du använder komponenter i ett projekt finns i [Skapa ett projekt](/help/analysis-workspace/home.md).
 
 ## Komponentåtgärder
 
-Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka **[!UICONTROL Actions]** längst upp i komponentlistan.
+Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka på **[!UICONTROL Actions]** högst upp i komponentlistan.
 
 >[!NOTE]
 >
