@@ -14,7 +14,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Attribution ger analytiker möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
 
@@ -44,7 +44,7 @@ Adobe Analytics förbättrar attribueringen eftersom ni kan:
 
 Attribution IQ omfattar följande funktioner:
 
-* [Attributionspanelen](../c-panels/attribution.md): Utnyttja alla dimensioner och mätvärden och jämför dem snabbt med olika attribueringsmodeller.
-* [Tillämpa attribuering på ett mätresultat](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md): Använd en icke-standardattribuering för alla mätvärden i ett projekt.
+* [Attribution panel](../c-panels/attribution.md): Utnyttja alla dimensioner och mätvärden och jämför dem snabbt med olika attribueringsmodeller.
+* [Tillämpa attribuering på ett mätvärde](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md): Använd en icke-standardattribuering för alla mätvärden i ett projekt.
 * [Tillämpa attribuering på en fördelning](/help/components/dimensions/t-breakdown-fa.md): Använd en icke-standardattribuering vid en uppdelning.
 * [Jämför attribueringsmodeller](/help/components/apply-create-metrics.md): Se snabbt hur olika attribueringsmodeller jämför olika mätvärden.
