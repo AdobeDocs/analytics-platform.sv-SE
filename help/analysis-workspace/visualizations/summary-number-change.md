@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 ## Visualisering av sammanfattningsnummer {#summary-number}
 
@@ -28,7 +28,7 @@ Använd visualisering av sammanfattningsnummer för att markera ett stort tal so
 
 ![Sammanfattningsnummer](assets/summary-number.png)
 
-Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
 
 | Inställning | Definition |
 |--- |--- |
@@ -37,9 +37,9 @@ Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet
 | Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
 | Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
 
-## Visualisering av sammanfattningsändring {#summary-change}
+## Visualisering av sammanfattning {#summary-change}
 
-Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) eller ett beräknat mått [Visa uppåttrend som](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) alternativ.
+Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) eller [alternativet Visa uppåttrend som](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) för ett beräknat mått.
 
 Den här visualiseringen fungerar på följande sätt:
 
@@ -52,7 +52,7 @@ Den här visualiseringen fungerar på följande sätt:
 
 ![Sammanfattningsändring](assets/summary-change.png)
 
-Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
 
 | Inställning | Definition |
 |--- |--- |
