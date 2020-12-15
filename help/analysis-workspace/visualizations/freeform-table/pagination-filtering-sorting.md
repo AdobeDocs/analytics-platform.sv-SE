@@ -16,7 +16,7 @@ Titta på den här videosjälvstudiekursen om du vill se en översikt:
 
 [Sidnumrering, filtrering och sortering av tabeller i Analysis Workspace](https://docs.adobe.com/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
-## Avancerade filtreringsalternativ {#section_36E92E31442B4EBCB052073590C1F025}
+## Avancerade filteralternativ {#section_36E92E31442B4EBCB052073590C1F025}
 
 Om du klickar på filterikonen och sedan på Visa avancerat bredvid en dimension i en frihandstabell kan du filtrera enligt följande kriterier:
 
