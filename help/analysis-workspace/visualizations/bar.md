@@ -15,23 +15,23 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-## Stapel
+## Liggande
 
-Den här visualiseringen visar lodräta staplar som representerar olika värden över ett eller flera mått.
+Den här visualiseringen visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
 
 ![](assets/bar.png)
 
-Med hjälp av en granularitetslistruta i visualiseringsinställningarna kan du ändra en trenderad visualisering (t.ex. linje, stapel) från dag till vecka till månad osv.
+Med en listruta för granularitet i visualiseringsinställningarna kan du ändra en trendvisualisering (t.ex. rad, stapel) från dag till vecka till månad, osv.
 
-## Stapelstaplar
+## Stapel staplad
 
-Den här visualiseringen är som ett stapeldiagram, men med seriestaplarna ovanpå varandra.
+Den här visualiseringen är som ett stapeldiagram, men med seriestaplarna staplade ovanpå varandra.
 
 ![](assets/bar-stacked.png)
 
-En ny visualiseringsinställning för staplade visualiseringar gör diagrammet till en &quot;100 % staplad&quot; visualisering:
+En ny visualiseringsinställning för staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering:
 
 ![](assets/stacked_100_percent.png)
 
