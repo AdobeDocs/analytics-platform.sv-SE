@@ -1,6 +1,6 @@
 ---
-title: Konfigurera datavyer och attribut
-description: Beskriver hur du skapar en datavy till en plattformsdatamängd i kundresanalysen
+title: Konfigurera datavyer och attribuering
+description: Beskriver hur du skapar en datavy till en plattformsdatauppsättning i Customer Journey Analytics
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
@@ -10,76 +10,76 @@ ht-degree: 0%
 ---
 
 
-# Inställningar för komponenter och tilldelning
+# Komponent- och attribueringsinställningar
 
-Varor, support och händelser i traditionell Adobe Analytics-mening finns inte längre i Customer Journey Analytics. I stället har du obegränsade schemaelement (dimensioner, mått, listfält). Alla tilldelningsinställningar som du tidigare tillämpade på eVars och support under datainsamlingsprocessen tillämpas nu vid frågestunden - kallas även för rapporttidsbearbetning.
+Varor, props och händelser i traditionell Adobe Analytics-mening finns inte längre i Customer Journey Analytics. I stället har du ett obegränsat antal schemaelement (dimensioner, mått, listfält). Alla attribueringsinställningar som du använde för att tillämpa på eVars och props under datainsamlingsprocessen tillämpas nu vid frågetiden - kallas även för rapporttidsbearbetning.
 
-Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) för en videoöversikt.
+Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) om du vill se en videoöversikt.
 
-Tänk på detta innan du tillämpar attributinställningar:
+Tänk på detta innan du använder attribueringsinställningar:
 
-* I användargränssnittet för datavyer anger du standardattributet. **Anteckning**: Vid ett senare tillfälle kan du åsidosätta dessa inställningar i arbetsyteprojekt. Den här funktionen är dock inte tillgänglig för tillfället.
+* I användargränssnittet för datavyer anger du standardattribuering. **Obs**: Vid ett senare datum kan du åsidosätta de här inställningarna i Workspace-projekt. Den här funktionen är dock inte tillgänglig för tillfället.
 
-* Attributinställningarna i Customer Journey Analytics är icke-destruktiva och retroaktiva. Med andra ord kan du inte göra oåterkallelig skada på dina datamängder i Customer Journey Analytics. Även om du av misstag tar bort något kan du alltid gå tillbaka till [!UICONTROL Experience Platform] och för in datauppsättningen igen. (Kom ihåg att det kommer att medföra extra kostnader om datamängden återinförs.)
+* Attributinställningarna i Customer Journey Analytics är icke-förstörande och retroaktiva. Med andra ord kan du inte göra datauppsättningarna i Customer Journey Analytics obotliga skador. Även om du råkar ta bort något av misstag kan du alltid gå tillbaka till [!UICONTROL Experience Platform] och hämta datauppsättningen igen. (Tänk dock på att det kommer att kosta ytterligare att få in datauppsättningen igen.)
 
-* Om du vill ha en dimension som &quot;uppför&quot; som en traditionell eVar (konverteringsvariabel) bör du konfigurera den med attributet &quot;Last Touch Visit&quot; som standard.
+* Om du vill ha en dimension som beter sig som en traditionell eVar (konverteringsvariabel) bör du konfigurera den med attributet&quot;Senaste beröringsbesök&quot; som standard.
 
-* Om du vill ha en dimension &quot;bete&quot; som ett traditionellt stöd (trafikvariabel) bör du konfigurera den med &quot;Samma Touch&quot;-attribut som standard.
+* Om du vill ha en dimension som&quot;uppför sig&quot; som ett traditionellt utkast (trafikvariabel) bör du konfigurera den med&quot;samma Touch&quot;-attribuering som standard.
 
-* Om du vill ha ett metriskt &quot;beteende&quot; som ett standardmått bör du inte ändra någonting.
+* Om du vill ha ett mätresultat som fungerar som standardmått bör du inte ändra någonting.
 
-* Attributinställningar för mått åsidosätter attributinställningar för dimensioner.
+* Attributinställningar för mått åsidosätter attribueringsinställningar för dimensioner.
 
-## Ange inställningar för komponenter och attribut
+## Ange komponent- och attribueringsinställningar
 
-Efter det att du har [ange och spara inställningar för datavyn](/help/data-views/create-dataview.md) och tillagda komponenter kan du ange attributinställningar om du väljer att göra det. Du kan ange inställningar för attribut/förfallotid/återsökning för dimensioner och mått. Om du t.ex. vill att attributet för en dimension ska bestå, kommer du troligen att ange en anpassad förfallotid. Om du t.ex. vill att en &#39;spårningskod&#39;-dimension (en kampanjvariabel) som är inställd på &#39;Last Touch&#39;-attribut ska bestå i en vecka, lägger du till en anpassad förfallotid på 1 vecka.
+När du har [angett och sparat datavyinställningar](/help/data-views/create-dataview.md) och lagt till komponenter kan du ange attribueringsinställningar om du vill göra det. Du kan ange inställningar för attribuering/förfallodatum/uppslag för mått och mätvärden. Om du t.ex. vill att attribueringen för en dimension ska finnas kvar, vill du förmodligen ange en anpassad förfallotid. Om du till exempel vill att en spårningskod (en kampanjvariabel) som är inställd på attributet Sista handen ska finnas kvar i en vecka, lägger du till en anpassad förfallotid på 1 vecka.
 
 >[!IMPORTANT]
->Du kan välja att inte ange allokering/förfallodatum. I så fall beter sig dimensionerna på samma sätt som proppar (&quot;Samma Touch&quot;-attributmodell). Metoder utan attributinställningar ärver inställningarna för dimensionen som det här måttet används på.
+>Du kan välja att inte ange allokering/förfallodatum. I så fall fungerar dimensionerna som proppar (&quot;Samma Touch&quot;-attribueringsmodell). Mätvärden utan attributinställningar ärver inställningarna för den dimension som det här måttet används på.
 
 ![](assets/edit-component.png)
 
-1. Ange inställningar för komponenter och attribut för dimensioner och mått. Se nedan för information om enskilda inställningar.
+1. Ange komponent- och attribueringsinställningar för mått och mått. Mer information om de enskilda inställningarna finns nedan.
 
-1. Klicka **[!UICONTROL Save]** för att spara datavyn.
+1. Klicka på **[!UICONTROL Save]** för att spara datavyn.
 
 
 ### Komponentinställning
 
 Du kan ändra namnet på måttet eller dimensionen till något mer användarvänligt. Observera att det underliggande namnet inte ändras, bara visningsnamnet.
 
-### Attributmodell
+### Attributionsmodell
 
-Modellen beskriver distributionen av konverteringar till händelserna i en grupp. Till exempel första eller sista beröringen. Bestämmer hur kundresanalysen tilldelar kredit för en lyckad händelse om en variabel erhåller flera värden före händelsen.
+Modellen beskriver distributionen av konverteringar till händelser i en grupp. Till exempel första beröringen eller sista beröringen. Avgör hur Customer Journey Analytics tilldelar kredit för en success-händelse om en variabel tar emot flera värden före händelsen.
 
-| UI-ikon | Attributmodell | Definition | När ska du använda |
+| UI-ikon | Attributionsmodell | Definition | När ska användas |
 | --- | --- | --- | --- |
-| ![Sista beröring](assets/last_touch1.png) | Sista beröring | Ger 100 % beröm till den beröringspunkt som inträffade senast före konverteringen. | Den mest grundläggande och gemensamma tilldelningsmodellen. Den används ofta för omräkningar med kort omräkningscykel. Last Touch används vanligen av team som hanterar sökmarknadsföring eller analyserar interna söknyckelord. |
-| ![Första beröring](assets/first_touch.png) | Första beröring | Ger 100 % kredit till den beröringspunkt som först sågs i attributsökfönstret. | En annan gemensam tilldelningsmodell som är användbar för analys av marknadsföringskanaler som är avsedda att öka medvetenheten om varumärket eller förvärvet av kunder. Den används ofta av presentationsgrupper eller sociala marknadsföringsteam, men är också bra för att bedöma produktrekommendationernas effektivitet på plats. |
-| ![Samma beröring](assets/same_touch.png) | Samma beröring | Ger 100 % kredit till den mycket drabbade platsen för omvandlingen. Om en pekpunkt inte inträffar på samma träff som en konvertering, så blockeras den under &quot;Ingen&quot;. | En användbar modell när du utvärderar innehållet eller användarupplevelsen som presenterades omedelbart vid konverteringen. Produkt- eller designgrupper använder ofta den här modellen för att bedöma effektiviteten hos en sida där konvertering sker. |
-| ![Linjär](assets/linear.png) | Linjär | Ger lika mycket beröm till varje beröringspunkt som leder fram till en konvertering. | Användbar för konverteringar med längre eftertanke eller användarupplevelser som kräver mer frekvent kundservice. Den används ofta av team som mäter effektiviteten hos mobilappmeddelanden eller med prenumerationsbaserade produkter. |
-| ![U-formad](assets/u_shaped.png) | U-formad | Ger 40 % kredit till den första interaktionen, 40 % kredit till den sista interaktionen och delar upp de återstående 20 % till eventuella kontaktpunkter mellan. För konverteringar med en enda kontaktpunkt ges 100 % kredit. För konverteringar med två kontaktpunkter ges 50 % kredit till båda. | En utmärkt modell för dem som värderar interaktioner som införde eller avslutade en konvertering, men som ändå vill känna igen medhjälpande interaktioner. U-formad tilldelning används ofta av grupper som har en mer balanserad inställning men som vill ge större kredit till kanaler som hittat eller avslutat en konvertering. |
-| ![J-Shaped](assets/j_shaped.png) | J-Shaped | Ger 60 % kredit till den senaste interaktionen, 20 % kredit till den första interaktionen och delar upp de återstående 20 % till eventuella kontaktpunkter mellan. För konverteringar med en enda kontaktpunkt ges 100 % kredit. För konverteringar med två beröringspunkter ges 75 % kredit till den sista interaktionen, och 25 % kredit ges till den första. | Den här modellen är utmärkt för dem som prioriterar findrar och closers, men som vill fokusera på att stänga interaktioner. J-Shaped-tilldelningen används ofta av grupper som intar en mer balanserad hållning och vill ge större kredit till kanaler som avslutade en konvertering. |
-| ![Inverterad J-formad](assets/inverse_j.png) | Inverse J | Ger 60 % kredit till den första pekpunkten, 20 % kredit till den sista pekpunkten och delar upp de återstående 20 % till eventuella kontaktpunkter däremellan. För konverteringar med en enda kontaktpunkt ges 100 % kredit. För konverteringar med två beröringspunkter ges 75 procent kredit till den första interaktionen, och 25 procent kredit ges till den sista. | Den här modellen är idealisk för dem som prioriterar sökare och stängare, men som vill fokusera på att hitta interaktioner. Inverterad J-tilldelning används av team som har en mer balanserad inställning och vill ge mer kredit till kanaler som initierade en konvertering. |
-| ![Anpassat](assets/custom.png) | Anpassad | Med det här alternativet kan du ange de vikter du vill ge till de första pekpunkterna, de sista pekpunkterna och eventuella mellanliggande pekpunkter. De angivna värdena normaliseras till 100 % även om de angivna anpassade talen inte läggs till i 100. För konverteringar med en enda kontaktpunkt ges 100 % kredit. För interaktioner med två pekpunkter ignoreras mittparametern. Den första och sista punkten normaliseras sedan till 100 procent, och krediter tilldelas därefter. | Denna modell är perfekt för dem som vill ha full kontroll över sin tilldelningsmodell och som har särskilda behov som andra tilldelningsmodeller inte uppfyller. |
-| ![Tidsfördröjning](assets/time_decay.png) | Tidsfrist | Följer och exponentiell nedgång med en anpassad halveringstid, där standardvärdet är 7 dagar. Vikten på varje kanal beror på hur lång tid som förflutit mellan aktivering av pekpunkten och eventuell konvertering. Den formel som används för att fastställa krediten är `2`<sup>`(-t/halflife)`</sup>där `t` är tiden mellan en pekpunkt och en konvertering. Alla pekpunkter normaliseras sedan till 100 %. | Perfekt för lag som regelbundet gör videoreklam eller marknadsför mot evenemang med ett förutbestämt datum. Ju längre en konvertering sker efter en marknadsföringshändelse, desto mindre kredit ges. |
-| ![Deltagande](assets/participation.png) | Deltagande | Ger 100 % kredit till alla unika pekpunkter. Det totala antalet konverteringar är uppblåst jämfört med andra attributmodeller. Deltagande deduplicerar kanaler som visas flera gånger. | Utmärkt för att förstå vilka kunder som ofta exponeras för en given interaktion. Medieorganisationer använder ofta den här modellen för att beräkna innehållshastigheten. Detaljhandelsorganisationer använder ofta den här modellen för att förstå vilka delar av deras webbplats som är avgörande för konverteringen. |
+| ![Sista beröring](assets/last_touch1.png) | Sista beröring | Ger 100 % uppskattning av den beröringspunkt som inträffade senast före konverteringen. | Den mest grundläggande och vanliga attribueringsmodellen. Den används ofta för konverteringar med kort övervägandecykel. Last Touch används ofta av team som hanterar sökmarknadsföring eller analyserar interna söknyckelord. |
+| ![Första beröring](assets/first_touch.png) | Första beröring | Ger 100 % kredit till den beröringspunkt som först visas i attribueringssökningsfönstret. | En annan gemensam attribueringsmodell som är användbar för att analysera marknadsföringskanaler som är avsedda att öka varumärkeskännedomen eller kundvärvningen. Den används ofta av webbannonsörer eller marknadsföringsteam på sociala medier, men den är också användbar när det gäller att utvärdera produktrekommendationernas effektivitet på plats. |
+| ![Samma beröring](assets/same_touch.png) | Samma beröring | Ger 100 % kredit till just den händelse konverteringen inträffade. Om en beröringspunkt inte inträffar vid samma träff som en konvertering, klickas den under&quot;Ingen&quot;. | En användbar modell när du utvärderar innehållet eller användarupplevelsen som presenteras direkt vid konverteringen. Produkt- eller designteam använder ofta den här modellen för att bedöma hur effektiv en sida är där konverteringen sker. |
+| ![Linjär](assets/linear.png) | Linjär | Ger samma beröm till alla kontaktytor som leder till konvertering. | Användbar för konverteringar med längre övervägandecykler eller användarupplevelser som kräver mer frekvent kundengagemang. Det används ofta av team som mäter hur effektiva mobilappsmeddelanden är eller med prenumerationsbaserade produkter. |
+| ![U-formad](assets/u_shaped.png) | U-formad | Ger 40 % uppskattning av den första interaktionen, 40 % tack vare den sista interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får båda 50 % rabatt. | En bra modell för dem som värderar interaktioner som har orsakat eller avslutat en konvertering, men ändå vill känna igen hjälpinteraktioner. U-Shaped-attribuering används ofta av team som har ett mer balanserat tillvägagångssätt, men som vill tillgodoräkna sig fler kanaler som har hittat eller avslutat en konvertering. |
+| ![J-Shaped](assets/j_shaped.png) | J-Shaped | Ger 60 % kreativitet till den senaste interaktionen, 20 % tack till den första interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % poäng för den senaste interaktionen och 25 % kredit ges till den första. | Den här modellen passar perfekt för dem som prioriterar Finders och Closers, men som vill fokusera på att stänga interaktioner. J-Shaped-attribuering används ofta av team som har ett mer balanserat tillvägagångssätt och vill tillgodoräkna kanaler som stängt en konvertering mer. |
+| ![Inverterad J-formad](assets/inverse_j.png) | Inverterad J | Ger 60 % kredit till den första beröringspunkten, 20 % kredit till den sista beröringspunkten och delar de återstående 20 % till alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % kredit för den första interaktionen och 25 % kredit för den sista. | Den här modellen är perfekt för dem som prioriterar finare och närare, men som vill fokusera på att hitta interaktioner. Inverterad J-attribuering används av team som använder ett mer balanserat tillvägagångssätt och vill tillgodoräkna kanaler som initierade en konvertering mer. |
+| ![Anpassat](assets/custom.png) | Anpassad | Gör att du kan ange de vikter du vill ge de första beröringspunkterna, de sista beröringspunkterna och eventuella mellanliggande beröringspunkter. De angivna värdena normaliseras till 100 % även om de anpassade siffrorna inte läggs till i 100. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För interaktioner med två beröringspunkter ignoreras parametern middle. Den första och sista beröringspunkten normaliseras sedan till 100 % och krediteringen tilldelas därefter. | Den här modellen är perfekt för dem som vill ha fullständig kontroll över sin attribueringsmodell och har särskilda behov som andra attribueringsmodeller inte uppfyller. |
+| ![Tidsminskning](assets/time_decay.png) | Time-Decay | Följer och exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2`<sup>`(-t/halflife)`</sup>, där `t` är tiden mellan en beröringspunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %. | Perfekt för team som regelbundet genomför videoreklam eller marknadsför mot händelser med ett förutbestämt datum. Ju längre en konvertering sker efter en marknadsföringshändelse, desto mindre kredit ges. |
+| ![Deltagande](assets/participation.png) | Deltagande | Alla unika kontaktpunkter får 100 % beröm. Det totala antalet konverteringar är uppblåst jämfört med andra attribueringsmodeller. Deltagande duplicerar kanaler som ses flera gånger. | Utmärkt för att förstå vilka kunder som ofta exponeras för en viss interaktion. Medieorganisationer använder ofta den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder ofta den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
 
-### Förfallodatum
+### Förfaller
 
-Anger en tidsperiod eller händelse efter vilken dimensionsobjektet upphör att gälla (tar inte längre emot kredit för lyckade händelser). Du kan ställa in attributets förfallotid på session, person eller anpassad nivå.
+Anger en tidsperiod eller händelse efter vilken dimensionsobjektet förfaller (inte längre får kredit för lyckade händelser). Du kan ange att attributet ska förfalla på session, person eller anpassad nivå.
 
 | Inställning | Definition |
 |---|---|
-| Sessionssession | Tidigare känd som &quot;besöksnivån&quot;. Konverteringshändelser utanför sidvyn eller sessionen associeras inte med dimensionen eller måttet. |
-| Person (rapporteringsfönster) | Tidigare känd som Visitor-nivån. Konverteringshändelser som inte är kopplade till den här personen associeras inte med dimensionen eller måttet. |
-| Anpassad tid | Ange anpassade minuter, timmar, dagar, månader eller kvartal. Omvandlingshändelser efter den angivna tidsperioden associeras inte med dimensionen eller måttet. |
+| Session | Kallas tidigare nivån &#39;Besök&#39;. Konverteringshändelser utanför sidvyn eller sessionen associeras inte med dimensionen eller måttet. |
+| Person (rapporteringsfönster) | Kallas tidigare nivån &quot;Besökare&quot;. Konverteringshändelser som inte är kopplade till den här personen är inte kopplade till dimensionen eller måttet. |
+| Anpassad tid | Ange anpassade minuter, timmar, dagar, månader eller kvartal. Konverteringshändelser efter den angivna tidsperioden associeras inte med dimensionen eller måttet. |
 
-Mer information finns i [Attribut IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
+Mer information finns i [Attribution IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
 
 ### Fönstret Lookback
 
-Ett uppslagsfönster är den tid som en konvertering ska titta tillbaka för att inkludera pekpunkter. Attributmodeller som ger större kredit till de första interaktionerna ser större skillnader när du ser olika uppslagsfönster.
+Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för att inkludera kontaktpunkter. Attributionsmodeller som ger större tilltro till första interaktioner ser större skillnader när du visar olika uppslagsfönster.
 
-* **Session:** Söker tillbaka till början av den session där en konvertering inträffade. Besök uppslagsfönster är smala eftersom de inte ser längre ut än till sessionen. Sessionsgranskningsfönster respekterar den ändrade besöksdefinitionen i datavyer.
-* **Person (rapportperiod):** Alla sessioner säkerhetskopieras fram till den 1:a i månaden för det aktuella datumintervallet. Personsökfönster är breda, eftersom de kan omfatta många sessioner. Om rapportdatumintervallet t.ex. är den 15 september - den 30 september, omfattar personsökningsdatumintervallet den 1 september - den 30 september.
+* **Session:** Går tillbaka till början av sessionen där en konvertering inträffade. Besöksfönster är smala eftersom de inte ser längre ut än själva sessionen. Sessionssökningsfönster respekterar den ändrade besöksdefinitionen i datavyer.
+* **Person (rapportfönster):** Looks at all sessions back to the 1st of the month of the current date range. Personsökningsfönster är breda, eftersom de kan omfatta många sessioner. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för personsökning 1 september - 30 september.
