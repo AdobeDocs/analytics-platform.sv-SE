@@ -23,13 +23,13 @@ Här kan du:
 
 >[!NOTE]
 >
->Information om hur resultaten av att tillämpa segment på Flow kan skilja sig åt mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som grund för flöde och utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
+>Information om hur resultatet av att tillämpa segment på Flow kan skilja sig åt mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
-[Videosjälvstudiekurs om flödesvisualisering](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
+[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) om flödesvisualisering (4:56)
 
-## Mellandimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Medeldimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
-Du kan visa [flöde mellan dimensioner](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
+Du kan visa [flödet mellan dimensioner](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
 
 Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en släppzon för att lägga till den dimensionen i diagrammet.
 
