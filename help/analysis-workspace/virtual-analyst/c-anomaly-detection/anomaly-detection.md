@@ -5,8 +5,8 @@ uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
 source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '184'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace.
 
-[Videosjälvstudiekurs om avvikelseidentifiering](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
+[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html)  om avvikelseidentifiering (4:53)
 
 Analysidentifiering är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data.
 
