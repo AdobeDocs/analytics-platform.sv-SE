@@ -59,7 +59,7 @@ Den här kombinerade händelsedatamängden används för rapportering. Det spela
 
 Detta koncept gäller också attribuering. Det spelar ingen roll vilken datauppsättning en rad kommer från. attribuering fungerar precis som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
 
-Om anslutningen bara innehöll den första tabellen och inte den andra, drar du en rapport med hjälp av `string_color` dimension och `metric_a` mätvärden som använder den senaste beröringsattribueringen skulle visa:
+Om din anslutning endast innehöll den första tabellen och inte den andra skulle det visa att dra en rapport med måtten `string_color` och `metric_a` med hjälp av den senaste beröringsattribueringen:
 
 | string_color | metrisk_a |
 | --- | --- |
@@ -67,7 +67,7 @@ Om anslutningen bara innehöll den första tabellen och inte den andra, drar du 
 | Blå | 3 |
 | Röd | 2 |
 
-Om du däremot inkluderar båda tabellerna i anslutningen ändras attribueringen sedan `user_847` finns i båda datauppsättningarna. En rad från de andra datauppsättningsattributen `metric_a` till &#39;Gul&#39; där de tidigare inte var angivna:
+Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribueringen eftersom `user_847` finns i båda datauppsättningarna. En rad från den andra datauppsättningsattributen `metric_a` till Gul, där de tidigare var ospecificerade:
 
 | string_color | metrisk_a |
 | --- | --- |
