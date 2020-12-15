@@ -16,7 +16,7 @@ ht-degree: 23%
 
 ## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
 
-För åtkomst [!UICONTROL Column Settings]drar du en friformstabell till projektet och klickar sedan på kugghjulsikonen i kolumnrubriken.
+Om du vill komma åt [!UICONTROL Column Settings] drar du en frihandstabell till projektet och klickar sedan på kugghjulsikonen i kolumnrubriken.
 
 ![](assets/column_settings.png)
 
@@ -25,7 +25,7 @@ Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara f
 | Element | Beskrivning |
 | --- | --- |
 | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
-| Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Vi kan visa procenttal större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna kan växa i för stora bredder. |
+| Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs!  Vi kan visa procenttal större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna kan växa i för stora bredder. |
 | Anomalier | Avgör om avvikelseidentifiering körs på värdena i den här kolumnen. |
 | Radbryt rubriktext | Gör att du kan radbryta rubriktexten i frihandstabeller så att rubrikerna blir mer läsbara och tabellerna mer delbara. Detta är användbart för .pdf-återgivning och för mått med långa namn. Aktiverat som standard. |
 | Tolka noll som inget värde | För celler med värdet 0 anger om en 0-cell eller en tom cell ska visas. Det här är användbart när du tittar på data för varje dag i en månad, och vissa dagar har inte inträffat än.  I stället för att visa 0 för framtida datum kan tomma celler visas i stället. Diagram följer även den här inställningen (d.v.s. de visar inte en linje eller en stapel med 0 värden när den här inställningen är markerad). |
@@ -47,7 +47,7 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 | Automatiskt genererad | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
 | Anpassad | Tilldela manuellt övre/mellersta/nedre gränser. Då får du den flexibilitet du behöver för att avgöra när ett kolumnvärde blir bra, medelbra eller dåligt. |
 
-## Använd en attribueringsmodell som inte är standard {#attribution}
+## Använd en icke-standardattribueringsmodell {#attribution}
 
 Analysis Workspace stöder [attribuering](/help/analysis-workspace/attribution/overview.md) för nästan alla mätvärden.
 
@@ -55,7 +55,7 @@ Analysis Workspace stöder [attribuering](/help/analysis-workspace/attribution/o
 
    ![Kryssrutan Attribut](assets/attribution-checkbox.png)
 
-1. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributionsmodeller](/help/analysis-workspace/attribution/models.md).
+1. Markera **[!UICONTROL Use non-default attribution model]** under **[!UICONTROL Data Settings]**. Mer information om olika attribueringsmodeller finns i [Attribution models](/help/analysis-workspace/attribution/models.md).
 
    ![Välj attribueringsmodell](assets/attribution-select.png)
 
