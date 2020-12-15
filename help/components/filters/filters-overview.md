@@ -19,9 +19,9 @@ Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön)
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
 >[!IMPORTANT]
->Filter kallas för&quot;segment&quot; i Adobe Analytics. Vi har ändrat namn på segment till filter eftersom Adobe Experience Platform har [en annan definition av&quot;segment&quot;](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
+>Filter kallas för&quot;segment&quot; i Adobe Analytics. Vi har ändrat namn på segment till filter eftersom Adobe Experience Platform har [en annan definition av &quot;segment&quot;](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
 
-Filtreringen innehåller [Filter Builder](/help/components/filters/create-filters.md) för att skapa filter och köra ett förtest samt [Filterhanteraren](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
+Filtreringen innehåller [Filter Builder](/help/components/filters/create-filters.md) för att konstruera filter och köra ett förtest samt [Filter Manager](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
 
 ## Sekventiella filter
 
