@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Från arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
+På arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
 
 ## Skicka filen nu
 
 Så här skickar du en fil direkt till mottagarna via e-post:
 
-1. Klicka **Dela > Skicka fil nu**.
+1. Klicka på **Dela > Skicka fil nu**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
-1. Klicka **Skicka nu**.
+1. Klicka på **Skicka nu**.
 1. (Valfritt) Klicka på **Visa schemaläggningsalternativ** för att ange ett leveransschema.
 
 ![Skicka filen nu](assets/send-file-now.png)
@@ -36,19 +36,19 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
-1. Klicka **Dela > Skicka fil enligt schema**.
+1. Klicka på **Dela > Skicka fil på schema**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
 1. Ange intervallet som schemat ska levereras över genom att ändra Inledande och Avslutande på indata. Slutdatumet måste vara inom ett år från den dag då schemat skapas eller ändras.
 1. Ange leveransfrekvens. Varje frekvens tillåter olika anpassningar.
-1. Klicka **Skicka enligt schema**.
+1. Klicka på **Skicka enligt schema**.
 
 ![](assets/send-on-schedule.png)
 
 ## Schemalagd projekthanterare
 
-Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
+Schemalagda Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Schemalagda projekt**.
 
 I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
 
@@ -65,4 +65,4 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **Visa utgångna scheman** | Navigera till den vänstra listen > Andra filter > Förfallen om du vill visa scheman som har upphört att gälla. Klicka på schemats titel för att ställa in ett nytt leveransschema. |
 | **Visa schema-ID** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
-I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägare kan vara **överförd** till en ny användare under **Admin > Analytics Users &amp; Assets > Transfer Assets**.
+I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägarskap kan vara **överförd** till en ny användare under **Admin > Analysanvändare och resurser > Överför resurser**.
