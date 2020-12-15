@@ -15,9 +15,9 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen på arbetsytan **Dela-menyn**.
+Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i din organisation på menyn Dela **Dela**.
 
 | Menyalternativ | Beskrivning |
 |---|---|
