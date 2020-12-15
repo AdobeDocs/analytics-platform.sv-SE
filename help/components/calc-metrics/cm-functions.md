@@ -1,6 +1,6 @@
 ---
 title: Referens - grundläggande funktioner
-description: 'Med verktyget Calculated Metrics Builder kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade mått. '
+description: 'Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden. '
 translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
@@ -14,23 +14,23 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktionsuppsättning skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Med verktyget Calculated Metrics Builder kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade mått.
+Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
 
-Här följer en alfabetisk lista över funktioner och definitioner.
+Här är en lista i alfabetisk ordning över funktionerna och deras definitioner.
 
 >[!NOTE]
 >
->Om [!DNL metric] är identifierat som ett argument i en funktion, men andra måttuttryck är också tillåtna. Exempelvis [!DNL MAXV(metrics)] även [!DNL MAXV(PageViews + Visits).]
+>Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck för mätvärden. [!DNL MAXV(metrics)] tillåter till exempel även för [!DNL MAXV(PageViews + Visits).]
 
 ## Tabellfunktioner kontra radfunktioner
 
-En tabellfunktion är en funktion där utdata är desamma för varje rad i tabellen. En radfunktion är en funktion där utdata skiljer sig åt för varje rad i tabellen.
+En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen.
 
 ## Absolut värde (rad)
 
-Returnerar det absoluta värdet för ett tal. Det absoluta värdet för ett tal är talet med ett positivt värde.
+Returnerar det absoluta värdet av ett tal. Det absoluta värdet för ett tal är talet med ett positivt värde.
 
 ```
 ABS(metric)
@@ -38,11 +38,11 @@ ABS(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mått för vilket du vill ha det absoluta värdet. |
+| *mått* | Det mått som du vill ha det absoluta värdet för. |
 
-## Kolumn max
+## Högsta kolumn
 
-Returnerar det största värdet i en uppsättning dimensionselement för en metrisk kolumn. MAXV utvärderar vertikalt inom en enskild kolumn (metrisk) över dimensionselement.
+Returnerar det största värdet i en uppsättning dimensionselement för en måttkolumn. MAXV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement.
 
 ```
 MAXV(metric)
@@ -50,11 +50,11 @@ MAXV(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Ett mått som du skulle ha velat utvärdera. |
+| *mått* | Ett mått som du skulle vilja ha utvärderat. |
 
-## Kolumn minst
+## Minsta kolumn
 
-Returnerar det minsta värdet i en uppsättning dimensionselement för en metrisk kolumn. MINV utvärderar lodrätt inom en enskild kolumn (metrisk) över dimensionselement.
+Returnerar det minsta värdet i en uppsättning dimensionselement för en måttkolumn. MINV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement.
 
 ```
 MINV(metric)
@@ -62,7 +62,7 @@ MINV(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Ett mått som du skulle ha velat utvärdera. |
+| *mått* | Ett mått som du skulle vilja ha utvärderat. |
 
 ## Kolumnsumma
 
@@ -74,11 +74,11 @@ SUM(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mått för vilket du vill ha det totala värdet eller summan. |
+| *mått* | Det mått som du vill ha det totala värdet eller summan för. |
 
 ## Antal (tabell)
 
-Returnerar antalet eller antalet värden som inte är noll för ett mått i en kolumn (antalet unika element som rapporteras inom en dimension).
+Returnerar antalet, eller antalet, värden som inte är noll för ett mätvärde i en kolumn (antalet unika element som rapporteras inom en dimension).
 
 ```
 COUNT(metric)
@@ -90,7 +90,7 @@ COUNT(metric)
 
 ## Exponent (rad)
 
-Returnerar *e* upphöjt till ett visst nummer. Konstanten *e* är lika med 2,71828182845904, basen av den naturliga logaritmen. EXP är inverteringen av LN, den naturliga logaritmen för ett tal.
+Returnerar *e* upphöjt till ett angivet tal. Konstanten *e* är lika med 2.71828182845904, basen för den naturliga logaritmen. EXP är den inverterade LN, den naturliga logaritmen av ett tal.
 
 ```
 EXP(metric)
@@ -98,19 +98,19 @@ EXP(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | exponenten som används på basen *e*. |
+| *mått* | Exponenten som används på basen *e*. |
 
-## Uppskattning
+## Exponentiering
 
-Energiansvarig
+Strömoperator
 
 <pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*.. (y gånger)
+pow(x,y) = x<sup>y</sup> = x*x*x*... (y gånger)
 </pre>
 
-## Medelvärde (tabell)
+## Medel (tabell)
 
-Returnerar det aritmetiska medelvärdet eller medelvärdet för ett mått i en kolumn.
+Returnerar det aritmetiska medelvärdet, eller medelvärdet, för ett mått i en kolumn.
 
 ```
 MEAN(metric)
@@ -118,11 +118,11 @@ MEAN(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Måttet som du vill ha medelvärdet för. |
+| *mått* | Det mätvärde som du vill ha medelvärdet för. |
 
 ## Median (tabell)
 
-Returnerar medianvärdet för ett mått i en kolumn. Medianvärdet är talet i mitten av en uppsättning tal, d.v.s. hälften av talen har värden som är större än eller lika med medianvärdet och hälften är mindre än eller lika med medianvärdet.
+Returnerar medianvärdet för ett mått i en kolumn. Medianvärdet är talet i mitten av en uppsättning tal, det vill säga hälften av talen har värden som är större än eller lika med medianvärdet och hälften är mindre än eller lika med medianvärdet.
 
 ```
 MEDIAN(metric)
@@ -130,19 +130,19 @@ MEDIAN(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Måttet som du vill ha medianvärdet för. |
+| *mått* | Det mätvärde som du vill ha medianen för. |
 
 ## Modulo
 
-Återstoden av kol1 / kol2, med användning av Euclidean division.
+Resten av col1 / col2, med division Euclidean.
 
-Returnerar återstoden efter att x dividerats med y.
+Returnerar resten efter att x delats med y.
 
 ```
 x = floor(x/y) + modulo(x,y)
 ```
 
-Returvärdet har samma tecken som inmatningen (eller är noll).
+Returvärdet har samma tecken som indata (eller är noll).
 
 ```
 modulo(4,3) = 1 
@@ -150,15 +150,15 @@ modulo(-4,3) = -1
 modulo(-3,3) = 0
 ```
 
-Om du alltid vill få ett positivt tal använder du
+Använd om du alltid vill få ett positivt tal
 
 ```
 modulo(modulo(x,y)+y,y)
 ```
 
-## Percentil (tabell)
+## Procent (tabell)
 
-Returnerar den k:te percentilen för värden för ett mått. Med den här funktionen kan du fastställa ett tröskelvärde för godkännande. Du kan t.ex. bestämma dig för att undersöka dimensionselement som ligger över 90-percentilen.
+Returnerar den n:te percentilen av värden för ett mätvärde. Du kan använda den här funktionen för att fastställa ett tröskelvärde för godkännande. Du kan t.ex. bestämma att undersöka dimensionselement som får en poäng över 90-percentilen.
 
 ```
 PERCENTILE(metric,k)
@@ -174,18 +174,18 @@ PERCENTILE(metric,k)
  <tbody> 
   <tr> 
    <td colname="col1"> <i>mått</i> </td> 
-   <td colname="col2"> Den metriska kolumn som definierar relativ position. </td> 
+   <td colname="col2"> Den måttkolumn som definierar relativ position. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>k </p> </td> 
-   <td colname="col2"> percentilvärdet i intervallet 0 till och med 100. </td> 
+   <td colname="col2"> Procentvärdet i intervallet 0 till 100. </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Kvartartikel (tabell)
+## Quartile (tabell)
 
-Returnerar kvartilen med värden för ett mått. Kvartiler kan till exempel användas för att hitta de 25 procent av de bästa produkterna som ger mest avkastning. MINV, MEDIAN och MAXV ger samma värde som QUARTILE när quart är lika med 0 (noll), 2 respektive 4.
+Returnerar kvartilen med värden för ett mått. Du kan till exempel använda kvartilarna för att hitta de 25 % av de bästa produkterna som genererar störst intäkter. MINV, MEDIAN och MAXV returnerar samma värde som QUARTILE när quart är lika med 0 (noll), 2 respektive 4.
 
 ```
 QUARTILE(metric,quart)
@@ -201,20 +201,20 @@ QUARTILE(metric,quart)
  <tbody> 
   <tr> 
    <td colname="col1"> <i>mått</i> </td> 
-   <td colname="col2"> Måttet som du vill ha kvartilvärdet för. </td> 
+   <td colname="col2"> Måttet som du vill ha kvartilsvärdet för. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>kvast </p> </td> 
+   <td colname="col1"> <p>quart </p> </td> 
    <td colname="col2"> Anger vilket *värde som ska returneras. </td> 
   </tr> 
  </tbody> 
 </table>
 
-*Om *kvast* = 0, QUARTILE returnerar minimivärdet. Om *kvast* = 1, KVARTIL returnerar den första kvartilen (25 percentil). Om *kvast* = 2, KVARTIL returnerar den första kvartilen (50 percentil). Om *kvast* = 3, KVARTIL returnerar den första kvartilen (75 percentil). Om *kvast* = 4, QUARTILE returnerar maxvärdet.
+*Om *quart* = 0 returnerar QUARTILE minimivärdet. Om *quart* = 1 returnerar QUARTILE den första kvartilen (25 percentiler). Om *quart* = 2 returnerar QUARTILE den första kvartilen (50 percentil). Om *quart* = 3 returnerar QUARTILE den första kvartilen (75 percentiler). Om *quart* = 4 returnerar QUARTILE det maximala värdet.
 
-## Rund
+## Ansökningstillfälle
 
-Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har $569,34, använder du formeln Round( *Intäkter*) för att avrunda intäkter till närmaste dollar, eller 569 dollar. En produkt med 569,51 dollar kommer att vara runt till närmaste dollar, eller 570 dollar.
+Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln Round( *Intäkter*) för att avrunda intäkten till närmaste dollar, eller 569 USD. En produkt som rapporterar 569,51 USD avrundas till närmaste dollar, eller 570 USD.
 
 ```
 ROUND(metric)
@@ -222,9 +222,9 @@ ROUND(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *nummer* | Måttet du vill runda av. |
+| *tal* | Det mätvärde som du vill runda av. |
 
-Rund utan sifferparameter är densamma som rund med en sifferparameter på 0, nämligen rund till närmaste heltal. Med en decimalparameter returneras så många decimaler till höger om decimalkommat. Om siffrorna är negativa returneras 0 till vänster om decimaltecknet.
+Round without a digits parameter is the same as round with a digits parameter of 0, DVS. round to the leading integer. Med en sifferparameter returneras så många siffror till höger om decimaltecknet. Om siffrorna är negativa returneras 0 till vänster om decimaltecknet.
 
 ```
 round( 314.15, 0) = 314 
@@ -233,25 +233,25 @@ round( 314.15, -1) = 310
 round( 314.15, -2) = 300
 ```
 
-## Radantal
+## Antal rader
 
-Returnerar antalet rader för en given kolumn (antalet unika element som rapporteras inom en dimension). &quot;Överskridna enheter&quot; räknas som 1.
+Returnerar antalet rader för en given kolumn (antalet unika element som rapporteras inom en dimension). &quot;Uniques beyond&quot; räknas som 1.
 
-## Radmax
+## Max rad
 
-Maximalt antal kolumner på varje rad.
+Det maximala antalet kolumner i varje rad.
 
-## Radmin
+## Min rad
 
-Minsta antal kolumner på varje rad.
+Minimivärdet för kolumnerna i varje rad.
 
 ## Radsumma
 
 Summan av kolumnerna på varje rad.
 
-## Kvadratisk rot (rad)
+## Kvadratrot (rad)
 
-Returnerar den positiva kvadratroten för ett tal. Kvadratroten för ett tal är värdet för det tal som upphöjts till effekten 1/2.
+Returnerar den positiva kvadratroten av ett tal. Kvadratroten av ett tal är värdet av talet upphöjt till 1/2.
 
 ```
 SQRT(metric)
@@ -259,17 +259,17 @@ SQRT(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *nummer* | Måttet som du vill ha kvadratroten för. |
+| *tal* | Måttet som du vill ha kvadratroten för. |
 
 ## Standardavvikelse (tabell)
 
-Returnerar standardavvikelsen, eller kvadratroten av variansen, baserat på en provpopulation data.
+Returnerar standardavvikelsen, eller kvadratroten av variansen, baserat på en exempelpopulation med data.
 
 Ekvationen för STDEV är:
 
 ![](assets/std_dev.png)
 
-där x är provets medelvärde (*mått* och *n* är provstorleken.
+där x är samplingsmedelvärdet (*metrisk*) och *n* är samplingsstorleken.
 
 ```
 STDEV(metric)
@@ -290,13 +290,13 @@ STDEV(metric)
 
 ## Varians (tabell)
 
-Returnerar variansen baserat på en provpopulation med data.
+Returnerar variansen baserat på en exempelpopulation med data.
 
-Ekvationen för VARIANCE är:
+Ekvationen för VARIANS är:
 
 ![](assets/variance_eq.png)
 
-där x är provets medelvärde, MEAN(*mått*) och *n* är provstorleken.
+där x är medelvärdet för samplingen, MEAN(*metrisk*) och *n* är samplingsstorleken.
 
 ```
 VARIANCE(metric)
@@ -304,30 +304,30 @@ VARIANCE(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Måttet som du vill ha variansen för. |
+| *mått* | Det mått som du vill ha variansen för. |
 
-Om du vill beräkna en varians tittar du på en hel sifferkolumn. Från den nummerlistan beräknar du först medelvärdet. När du har genomsnittet går du igenom varje post och gör följande:
+För att kunna beräkna en varians tittar du på en hel sifferkolumn. Från den listan med tal beräknar du först medelvärdet. När du har ett genomsnitt går du igenom varje inlägg och gör följande:
 
-1. Ta bort medelvärdet från talet.
+1. Subtrahera medelvärdet från talet.
 
-2. Fyrkantigt resultat.
+2. Fyrkantiga resultatet.
 
 3. Lägg till det till summan.
 
-När du har itererat över hela kolumnen har du en enda summa. Sedan delar du upp summan efter antalet objekt i kolumnen. Det talet är variansen för kolumnen. Det är ett enda nummer. Den visas dock som en numreringskolumn.
+När du har itererat över hela kolumnen får du en totalsumma. Sedan dividerar du summan med antalet objekt i kolumnen. Talet är variansen för kolumnen. Det är ett enda tal. Den visas dock som en kolumn med siffror.
 
-Låt oss till exempel säga att du har en kolumn med tre element:
+Anta att du har en kolumn med tre objekt:
 
-1
+3
 
 2
 
 3
 
-Genomsnittet för den här kolumnen är 2. Kolonnens avvikelse skall vara ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. I ad hoc-analysen kommer detta att se ut så här:
+Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. I Ad Hoc Analysis ser detta ut så här:
 
 1 2/3
 
-2/3
+2 2/3
 
 3 2/3
