@@ -2,9 +2,9 @@
 title: Lägg till globala sökningar i datauppsättningarna
 description: Använd globala sökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: e57d92f702445d8caac25a7cc11a6aafe6c62262
+source-git-commit: b3c9757421537d2d84a78a4d37e9bfc362438d40
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -12,11 +12,10 @@ ht-degree: 0%
 
 # Lägg till globala sökningar i datauppsättningarna
 
-Globala sökningar gör det lättare för Customer Journey Analytics att rapportera om vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En Global sökning liknar en uppslagsuppsättning (klassificeringar i traditionell Adobe Analytics). Den är dock global i alla Experience Cloud-organisationer. Globala sökningar tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten).
+Globala sökningar gör det lättare för Customer Journey Analytics att rapportera om vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En Global sökning liknar en uppslagsuppsättning (klassificeringar i traditionell Adobe Analytics). Globala sökningar kan dock användas i olika Experience Cloud-organisationer. Globala sökningar tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten).
 För varje schemaplats som Adobe klassificerar finns det en global sökdatamängd. Du kan använda globala uppslagsdatauppsättningar med Analytics Source Connector eller med andra anpassade datauppsättningar som kan acceptera dem.
 
-I traditionella Adobe Analytics visas de här dimensionerna fristående, men i CJA måste du aktivt ta med de här dimensionerna när du skapar datavyer. När en datauppsättning väljs för att inkluderas i en anslutning i CJA flaggas vissa datauppsättningar som kompatibla med globala uppslag. Arbetsflödet för datavyer kan inkludera dessa globala sökningsdimensioner som tillgängliga för datavyn. Uppslagsfilerna uppdateras automatiskt och är tillgängliga i alla regioner och för alla konton. De lagras i regionspecifika organisationer som är kopplade till kunden.
-När en användare i anslutningsarbetsflödet väljer en datauppsättning som är flaggad som en med en nyckel för globala sökningar, så vet användargränssnittet att alla globala sökningsdimensioner som är tillgängliga för rapportering ingår.
+I traditionella Adobe Analytics visas de här dimensionerna fristående, men i CJA måste du aktivt ta med de här dimensionerna när du skapar datavyer. När en användare i anslutningsarbetsflödet väljer en datauppsättning som är flaggad som en med en nyckel för globala sökningar, så vet användargränssnittet att alla globala sökningsdimensioner som är tillgängliga för rapportering ingår. Arbetsflödet för datavyer kan inkludera dessa globala sökningsdimensioner som tillgängliga för datavyn. Uppslagsfilerna uppdateras automatiskt och är tillgängliga i alla regioner och för alla konton. De lagras i regionspecifika organisationer som är kopplade till kunden.
 
 ## Använd globala sökningar med datauppsättningar i Adobe Data Connector
 
@@ -28,36 +27,36 @@ Det måste finnas en nyckel i händelsedatauppsättningen som är kompatibel med
 
 ## Tillgängliga globala sökfält
 
-* webbläsare
-*browser, group_id, id
-* browser_group
-*browser_group, id
-* os
-   * os, grupp_id, id
-* os_group
-   * os_group, id
-* mobile_audio_support - multi
-* mobile_color_depth
-* mobile_cookie_support
-* mobile_device_name
-* mobile_device_number_transfer
-* mobile_device_type
-* mobile_drm - multi
-* mobile_image_support - multi
-* mobile_information_services
-* mobile_java_vm - multi
-* mobile_mail_decoration
-* mobile_manufacturer
-* mobile_max_bookmark_url_length
-* mobile_max_browser_url_length
-* mobile_max_mail_url_length
-* mobile_net_protocol - multi
-* mobile_os
-* mobile_push_to_talk
-* mobile_screen_height
-* mobile_screen_size
-* mobile_screen_width
-* mobile_video_support - flera
+* `browser`
+   * `browser`, `group_id`, `id`
+* `browser_group`
+   * `browser_group`, `id`
+* `os`
+   * `os`,  `group_id`,  `id`
+* `os_group`
+   * `os_group`,  `id`
+* `mobile_audio_support - multi`
+* `mobile_color_depth`
+* `mobile_cookie_support`
+* `mobile_device_name`
+* `mobile_device_number_transmit`
+* `mobile_device_type`
+* `mobile_drm - multi`
+* `mobile_image_support - multi`
+* `mobile_information_services`
+* `mobile_java_vm - multi`
+* `mobile_mail_decoration`
+* `mobile_manufacturer`
+* `mobile_max_bookmark_url_length`
+* `mobile_max_browser_url_length`
+* `mobile_max_mail_url_length`
+* `mobile_net_protocols - multi`
+* `mobile_os`
+* `mobile_push_to_talk`
+* `mobile_screen_height`
+* `mobile_screen_size`
+* `mobile_screen_width`
+* `mobile_video_support - multi`
 
 ## Rapport om dimensioner för global sökning
 
