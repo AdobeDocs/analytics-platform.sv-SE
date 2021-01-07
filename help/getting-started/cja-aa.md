@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 translation-type: tm+mt
-source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '973'
 ht-degree: 5%
 
 ---
@@ -40,6 +40,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Produktvariabel | Den produktvariabel som för närvarande är tillgänglig för rapportering av data som överensstämmer med Experience Event-schemat (särskilt med objektet productListItems). |
+| Marknadsföringskanaler | Data för marknadsföringskanaler flödar nu in i CJA via Analytics Data Connector. Reglerna för marknadsföringskanaler måste fortfarande konfigureras i traditionella Adobe Analytics. Vissa regler stöds inte. Mer information finns i [dokumentationen för CJA Marketing Channels](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
 | Visualiseringar | Alla visualiseringar stöds förutom för kartvisualisering. |
 | Projektdelning | Projektdelning stöds endast mellan CJA-användare - det finns ingen projektdelning mellan CJA och det traditionella Analysis Workspace. |
 | Skräddarsydd professionalisering | Stöd för alla anpassade sessioneringsfunktioner förutom mobilbakgrundstötar. |
@@ -75,10 +76,11 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Schemalagda rapporter/projekt | Support planeras. |
 | Larm | Support planeras. |
 | Anpassade kalendrar | Support planeras. |
-| Marknadsföringskanaler | Support planeras. |
 | PDF-export | Support planeras. |
 | API-åtkomst för rapportering | Support planeras - endast med API 2.0. |
 | ID Stitching via Device Graph | Support planeras. |
+| Report Builder (Excel-plugin) | Support planeras. |
+| Realtidsrapportering | Support planeras. |
 
 ## Stöd ännu inte planerat
 
@@ -87,11 +89,9 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | A4T | Support är ännu inte planerat. |
 | Medieanalys | Support är ännu inte planerat. |
 | Advertising Cloud | Support är ännu inte planerat. |
-| Report Builder (Excel-plugin) | Support är ännu inte planerat. |
 | Activity Map | Support är ännu inte planerat. |
 | Classification Rule Builder | Support är ännu inte planerat. |
 | Sammanfattningsdatakällor | Support är ännu inte planerat. |
-| Realtidsrapportering | Support är ännu inte planerat. |
 
 ## Stöds aldrig
 
