@@ -3,32 +3,32 @@ description: Gör att du kan lägga till användardefinierad text på arbetsytan
 title: Text
 uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 3%
+source-wordcount: '166'
+ht-degree: 1%
 
 ---
 
 
 # Text
 
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+Du kan lägga till användardefinierad text i ett Workspace-projekt med hjälp av textvisualiseringar eller panel-/visualiseringsbeskrivningar (högerklicka på sidhuvud > **[!UICONTROL Edit description]**). Du kan också ändra textens formatering, lägga till hyperlänkar och lägga till bilder.
 
-Gör att du kan lägga till användardefinierad text på arbetsytan.
+## Justera formatering {#format}
 
-Du kan ändra teckensnittsinställningarna (fet, kursiv, osv.) och lägga till hyperlänkar i textrutevisualiseringar och beskrivningar av paneler/visualiseringar.
+När du redigerar en textruta eller beskrivning kan du justera den markerade textens teckensnittsstorlek (rubriknivåer), färg, format (fet, kursiv) och justering. Du kan också lägga till punktlistor och numrerade listor.
 
-## Ändra teckensnittsinställningar {#section_32727EE03FD04A8EB1D1B387DCAF6537}
+![](assets/format.png)
 
-![](assets/rich-text1.png)
+## Lägg till hyperlänkar {#hyperlinks}
 
-När du har dragit en textvisualisering till en panel och lagt till text kan du formatera texten genom att lägga till rubriknivåer, ändra textens fet/kursiv/understruken, ändra textfärgen osv.
+Om du vill lägga till en hyperlänk markerar du texten och klickar på hyperlänksikonen på menyn. Hyperlänkar kan länka till externa webbplatser, dokumentationssidor, [projekt/paneler/visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) med mera för att ytterligare hjälpa projektmottagarna.
 
-## Lägg till hyperlänkar {#section_D55B857188A74A06B49006DF3511DC7C}
+![](assets/hyperlink.png)
 
-![](assets/rich-text2.png)
+## Lägg till bilder {#images}
 
-Markera text och klicka på hyperlänkikonen på formateringsmenyn för att lägga till hyperlänkar.
+Om du vill lägga till en bild i projektet klickar du på bildikonen på menyn och infogar en URL för en offentlig bild. Bildens URL måste vara tillgänglig för alla, börja med `https` och ha formatet `.png`, `.jpeg`, `.jpg` eller `.gif`. Statiska och animerade bilder stöds.
+
+![](assets/image.png)
