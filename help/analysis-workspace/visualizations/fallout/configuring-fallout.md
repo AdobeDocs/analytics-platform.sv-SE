@@ -3,19 +3,15 @@ description: 'null'
 title: Konfigurera en utfallsvisualisering
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
 
 
 # Konfigurera en utfallsvisualisering
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan till exempel lägga till händelser, som enheter, samt unika besökare och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
@@ -69,7 +65,6 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
 | Inställning | Beskrivning |
 |--- |--- |
 | Utfallsbehållare <ul><li>Gå in på</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
-| Visa&quot;Alla besökare&quot; som första kontaktyta | Du kan avmarkera det här alternativet om du inte vill ha&quot;Alla besökare&quot; som första kontaktyta. |
 
 När du **högerklickar på en kontaktyta** visas följande alternativ:
 
