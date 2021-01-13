@@ -3,19 +3,15 @@ description: Här kan du se hur ett värde som du är intresserad av kan jämfö
 title: Punktdiagram
 uuid: 2f133189-2a50-45af-b225-7d2b433fbef5
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 10%
+source-wordcount: '84'
+ht-degree: 11%
 
 ---
 
 
 # Punktdiagram
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Här kan du se hur ett värde som du är intresserad av kan jämföras med eller mäta mot andra prestandaintervall (mål).
 
