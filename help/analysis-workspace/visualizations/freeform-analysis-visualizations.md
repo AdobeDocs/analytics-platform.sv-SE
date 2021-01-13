@@ -1,104 +1,72 @@
 ---
-description: Lär dig mer om visualiseringar och visualiseringsinställningar i Analysis Workspace.
+description: Visa dina data visuellt med visualiseringar.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 5%
+source-wordcount: '1048'
+ht-degree: 4%
 
 ---
 
 
 # Översikt över visualiseringar
 
-Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. Varje visualisering har sina egna inställningar som du kan hantera. Klicka på namnet på visualiseringen för mer detaljerad information.
+Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
-Videosjälvstudiekurs: [Visualiseringstyper i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
+Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html) eller genom högerklicksmenyn i arbetsflödet.
+
+![](assets/viz-rail.png)
+
+Följande visualiseringstyper finns i Analysis Workspace:
 
 | Visualiseringsnamn | Beskrivning |
 | --- | --- |
 | [Yta](/help/analysis-workspace/visualizations/area.md) | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
 | [Liggande](/help/analysis-workspace/visualizations/bar.md) | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
 | [Punktdiagram](/help/analysis-workspace/visualizations/bullet-graph.md) | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
-| [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | En kohort är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är till exempel användbart när du vill veta hur en kohort interagerar med ett varumärke. Du kan enkelt upptäcka ändringar i trender och sedan svara på dem. |
+| [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | En *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
 | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. |
-| [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. |
-| [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | Visar kundvägar via era webbplatser och appar. |
-| [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. |
-| [Histogram](/help/analysis-workspace/visualizations/histogram.md) | Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). |
+| [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Kan anges till sekvenser av typen slutlig eller exakt |
+| [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | Visar exakta kundvägar via era webbplatser och appar. |
+| [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. Det är grunden för dataanalys i Workspace. |
+| [Histogram](/help/analysis-workspace/visualizations/histogram.md) | Ett histogram lurar besökare, besök eller träffar i grupper baserat på en mätvolym. |
 | [Vågrätt fält](/help/analysis-workspace/visualizations/horizontal-bar.md) | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
-| [Linjediagram](/help/analysis-workspace/visualizations/line.md) | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension. |
+| [Linjediagram](/help/analysis-workspace/visualizations/line.md) | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram använder tid längs x-axeln. |
 | [Spridningsdiagram](/help/analysis-workspace/visualizations/scatterplot.md) | Visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
-| [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md) | Beroende på vilken cell som är markerad visar den här visualiseringen summor och sammanfattningar. |
-| [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) | Beroende på vilka celler som är markerade jämförs cellerna med varandra. |
-| [Text](/help/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. |
+| [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md) | Visar den markerade cellen som ett stort tal. |
+| [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) | Visar ändringen mellan de markerade cellerna som ett stort tal/procent. |
+| [Text](/help/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
 | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md) | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Gör att du kan dra i upp till tre segment (från komponenter) och ett mätvärde för att skapa ett Venndiagram. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Använder cirklar för att beskriva måttöverlappningen för upp till 3 segment. |
 
-## Panelen Visualiseringar {#section_DC07F032FBEF4046A40F7B95C28DA018}
+## Inställningar {#settings}
 
-Om du vill visa visualiseringspanelen klickar du på **[!UICONTROL Visualizations]** i den vänstra listen.
+Varje visualisering har sina egna inställningar som du kan hantera. Om du vill komma åt [!UICONTROL Visualization Settings] klickar du på kugghjulsikonen [!UICONTROL Visualization Settings].
 
-![Stegresultat](assets/visualizations.png)
-
-De flesta visualiseringstyper (till exempel diagram för område, stapel, ring och linje) är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
-
-## Visualiseringsinställningar {#section_D3BB5042A92245D8BF6BCF072C66624B}
-
-Om du vill komma åt [!UICONTROL Visualization Settings] drar du en visualisering till [!UICONTROL Freeform Panel] och klickar sedan på kugghjulsikonen [!UICONTROL Visualization Settings].
-
->[!IMPORTANT]
->
->Vilka visualiseringsinställningar som visas beror på visualiseringen. Alla inställningar gäller inte för alla visualiseringar. Dessutom visas vissa avancerade inställningar **endast** för specifika visualiseringar, som [histograminställningarna](/help/analysis-workspace/visualizations/histogram.md#section_09D774C584864D4CA6B5672DC2927477).
-
-![](assets/visualization_settings.png)
+![](assets/settings.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
+| Visualiseringstyp | Ändra den typ av visuell information som används för att avbilda data. |
+| Kornighet | För trendvisualiseringar kan du ändra tidshalten (dag, vecka, månad osv.) från den här listrutan. Den här ändringen gäller även för datakälltabellen. |
 | Procenttal | Visar värden i procent. |
-| 100 % staplad | Den här inställningen för staplade ytor, stolpdiagram eller skiktade vågräta staplar gör diagrammet till en&quot;100 % staplade&quot; visualisering. Exempel: ![](assets/stacked_100_percent.png) |
-| Förklaring synlig | Gör att du kan dölja filterinformationstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
+| 100 % staplad | Den här inställningen för staplade ytor, staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Staplad 100 %](assets/stacked_100_percent.png) |
+| Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
 | Begränsa maximalt antal objekt | Gör att du kan begränsa antalet objekt som visas i en visualisering. |
 | Ankra Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
-| Normalisering | Tvingar måtten att ha samma proportioner. |
-| Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). |
-| Visa avvikelser | Förbättrar linjediagram och frihandstabeller för att visa dataavvikelser. |
+| Normalisering | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
+| Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
+| Visa avvikelser | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
 
-## Skapa visuell ikon {#section_9C11D9DEDC42413AA53E69A71A509DFC}
+## Förklaring {#legend}
 
-Om du är osäker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i valfri tabellrad. Den här ikonen visas när du hovrar över tabellraden. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat upp till tre segment skapas ett Venndiagram. För mer än tre segment skapas ett stapeldiagram. För andra typer av data kan det skapa ett linjediagram osv.
+En visualiseringsförklaring hjälper dig att relatera datum i en källtabell till plottade serier i visualiseringen. Förklaringen är interaktiv - du kan klicka på ett förklaringsobjekt om du vill visa/dölja en serie i visualiseringen. Detta är praktiskt om du vill förenkla de data som visualiseras.
 
-![](assets/create-visual.png)
+Dessutom kan du byta namn på förklaringsetiketter så att det blir lättare att använda bilderna. Obs! förklaringsredigering **gäller inte** för: Treemap, Bullet, Summary Change/Number, Text, Freeform, Histogram, Kohort eller Flow-visualiseringar.
 
-## Högerklicka på menyn för visualisering/panel {#section_05B7914D4C9E443F97E2BFFDEC70240C}
-
-Inställningar som är sammanhangsbaserade för ett diagram kan nås när du högerklickar bredvid ett visualiserings- eller panelhuvud. Vissa eller alla av följande inställningar kommer att vara tillgängliga:
-
-![](assets/right-click_menu.png)
-
-| Inställning | Beskrivning |
-| --- | --- |
-| Infoga kopierad visualisering/panel | Gör att du kan klistra in (&quot;infoga&quot;) det kopierade elementet på en annan plats i projektet eller i ett helt annat projekt. |
-| Kopiera visualisering/panel | Gör att du kan högerklicka och kopiera en visualisering eller panel. |
-| Duplicera visualisering/panel | Skapar en exakt kopia av den aktuella visualiseringen, som du sedan kan ändra. |
-| Komprimera alla paneler | Komprimerar alla projektpaneler. |
-| Komprimera alla visualiseringar i panelen | Komprimerar alla visualiseringar i den här projektpanelen. |
-| Expandera alla paneler | Expanderar alla projektpaneler. |
-| Expandera alla visualiseringar i panelen | Utökar alla visualiseringar i den här projektpanelen. |
-| Redigera beskrivning | Lägg till (eller redigera) en textbeskrivning för visualiseringen/panelen. Den här beskrivningen visas i Projekt > Projektinformation och inställningar . |
-| Hämta panellänk | Du kan dirigera någon till en viss panel i ett projekt. |
-| Hämta visualiseringslänk | Gör att du kan kopiera och dela den här länken för att skicka andra direkt till den här visualiseringen. Användarna måste logga in. |
-| Börja om | (Works for Flow, Venn, Histogram) Tar bort konfigurationen för den aktuella visualiseringen och öppnar en ny panel där du kan konfigurera om den. |
-
-## Redigera förklaringsetiketter {#section_94F1988CB4B9434BA1D9C6034062C3DE}
-
-Du kan byta namn på serienamn i visualiseringsteckenförklaringar (Utfall, Område, Staplad, Stapel, Staplad liggande stapel, Donut, Histogram, Vågrät stapel, Staplad linje, Spridning och Venndiagram) för att göra bilderna mer konsumerbara.
-
-Förklaringsredigering **gäller inte** för: Treemap, Bullet, Summary Change or Number, Text, Freeform, Histogram, Kohort eller Flow-visualiseringar.
-
-Om du vill redigera en förklaringsetikett i ett linjediagram, till exempel
+Så här redigerar du en förklaringsetikett:
 
 1. Högerklicka på någon av förklaringsetiketterna.
 1. Klicka på **[!UICONTROL Edit Label]**.
@@ -109,3 +77,26 @@ Om du vill redigera en förklaringsetikett i ett linjediagram, till exempel
 1. Tryck på **[!UICONTROL Enter]** för att spara.
 
 Här är en [länk till en video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om det här ämnet.
+
+## Högerklicka på menyn {#right-click}
+
+Ytterligare funktioner för en visualisering är tillgängliga genom att högerklicka på rubriken för visualisering. Inställningarna varierar beroende på visualisering. Några av de tillgängliga inställningarna är:
+
+![](assets/right-click.png)
+
+| Inställning | Beskrivning |
+| --- | --- |
+| Infoga kopierad panel/visualisering | Gör att du kan klistra in (&quot;infoga&quot;) en kopierad panel eller visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
+| Kopiera visualisering | Högerklicka och kopiera en visualisering så att du kan infoga den på en annan plats i projektet eller i ett helt annat projekt. |
+| [Hämta objekt som CSV](/help/analysis-workspace/curate-share/download-send.md) | Hämta upp till 50 000 dimensionsobjekt för den valda dimensionen som en CSV-fil. |
+| [Hämta data som CSV](/help/analysis-workspace/curate-share/download-send.md) | Hämta en datakälla för visualisering som en CSV-fil. |
+| Duplicera visualisering | Skapar en exakt kopia av den aktuella visualiseringen, som du sedan kan ändra. |
+| Redigera beskrivning | Lägg till (eller redigera) en textbeskrivning för visualiseringen. |
+| Hämta visualiseringslänk | Gör att du kan dirigera någon till en viss visualisering i ett projekt. När användaren klickar på länken måste mottagaren logga in innan den dirigeras till den exakta visualisering som är länkad till den. |
+| Börja om | (Works for Flow, Venn, Histogram) Tar bort konfigurationen för den aktuella visualiseringen så att du kan konfigurera om den från början. |
+
+## Skapa visuell ikon {#quick-viz}
+
+Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat 3 segmentrader skapas ett Venndiagram.
+
+![](assets/quick-viz.png)
