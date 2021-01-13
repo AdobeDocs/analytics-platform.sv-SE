@@ -3,19 +3,15 @@ description: Visar hierarkiska data (i trädstrukturer) som en uppsättning kaps
 title: Treemap-diagram
 uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 74%
+source-wordcount: '94'
+ht-degree: 100%
 
 ---
 
 
 # Treemap-diagram
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar.
 
