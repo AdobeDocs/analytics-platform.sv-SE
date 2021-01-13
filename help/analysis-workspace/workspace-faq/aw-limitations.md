@@ -2,19 +2,15 @@
 description: Förteckning över kända begränsningar i Adobe Analysis Workspace och dess tillhörande komponenter
 title: Kända begränsningar i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
 
 # Kända begränsningar i Analysis Workspace
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Här är en lista över kända begränsningar i Analysis Workspace och dess komponenter:
 
@@ -32,14 +28,14 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 * [!UICONTROL Flow]: Ingångs-/avslutningsdimensioner, t.ex.  [!UICONTROL Entry page], kan inte användas i Flow.
 * [!UICONTROL Cohort]: Icke-heltal kan inte användas som kohortvillkor.
 
-<!--## Panels
+## Paneler
 
-* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.<-->
+* Segmentjämförelse: Segmentet [!UICONTROL Everyone Else] skapas inte om en segmentmall används i den inledande släppzonen.
 
 ## Komponenter > Filter
 
-* Vissa mått och mått kan inte segmenteras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors].
-* Vissa komponenter och operatorer är inte tillgängliga om ett filter skapas från arbetsytan (till skillnad från när det skapas från [!UICONTROL Components > Filters]). Exempel: IP-adress.
+* Vissa mått och mått kan inte filtreras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors].
+* Ad hoc-filter som skapas i [panelens dropzone](/help/analysis-workspace/c-panels/panels.md) visas inte i den vänstra listen i Workspace eller i Filter-komponenthanteraren, såvida de inte är offentliga. Detta kan du göra genom att redigera filtret och välja **[!UICONTROL Make this filter public]**.
 
 ## Komponenter > Beräknade mått
 
@@ -50,6 +46,7 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 ## Komponenter > Datumintervall
 
 * Anpassade datumintervall stöder inte [!UICONTROL This day last year], [!UICONTROL This day last month] osv.
+
 
 ## Komponenter > Rapportinställningar
 
