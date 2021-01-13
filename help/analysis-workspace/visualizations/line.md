@@ -3,27 +3,19 @@ description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade
 title: Linjediagram
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 3%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
 
 # Linjediagram
 
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
-
 Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension.
 
 ![Radvisualisering](assets/line-viz.png)
-
->[!IMPORTANT]
->
->Vissa inställningar för linjevisualisering, till exempel [!UICONTROL Show trendline], är för närvarande i begränsad testning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html)
 
 Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen för att komma åt [**Visualiseringsinställningarna**](freeform-analysis-visualizations.md) tillgängliga. Inställningarna är indelade i:
 
@@ -45,11 +37,15 @@ Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!
 
 ## Visa trendlinjeövertäckning
 
-Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]** kan du välja att lägga till en regressionstrendlinje i radserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
+Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]** kan du välja att lägga till en regression eller en glidande medeltrendlinje i radserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
+
+>[!TIP]
+>
+>Vi rekommenderar att trendlinjer tillämpas på data som inte innehåller dagens (partiella data) eller framtida datum, eftersom de skevar trendlinjen. Om du behöver ta med framtida datum tar du dock bort nollor från data för att undvika skevning för dessa dagar. Det gör du genom att gå till visualiseringens datakälltabell, välja måttkolumnen och sedan aktivera **[!UICONTROL Column Settings]** > **[!UICONTROL Interpret zero as no value]**.
 
 ![Linjär trendlinje](assets/show-linear-trendline.png)
 
-Alla modeller passas in med vanliga minsta fyrkanter:
+Alla trendlinjer för regressionsmodellen passas in med vanliga minsta fyrkanter:
 
 | Modell | Beskrivning |
 | --- | --- |
@@ -58,3 +54,4 @@ Alla modeller passas in med vanliga minsta fyrkanter:
 | Exponentiell | Skapar en böjd linje och är användbar när data ökar eller minskar med konstant ökande hastighet. Det här alternativet ska inte användas om dina data innehåller noll eller negativa värden. Ekvation: `y = a + e^(b * x)` |
 | Strömförsörjning | Skapar en böjd linje och är användbar för datauppsättningar som jämför mått som ökar med en viss hastighet. Det här alternativet ska inte användas om dina data innehåller noll eller negativa värden. Ekvation: `y = a * x^b` |
 | Kvadratisk | Söker efter den bästa passningen för en datauppsättning som är formad som en parabola (konkav uppåt eller nedåt). Ekvation: `y = a + b * x + c * x^2` |
+| Glidande medelvärde | Skapar en jämn trendlinje baserad på en uppsättning medelvärden. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av ditt urval av &#39;Perioder&#39;), jämför dem och använder medelvärdet som en punkt på raden. Exempel är 7 dagars glidande medelvärde eller 4 veckors glidande medelvärde. |
