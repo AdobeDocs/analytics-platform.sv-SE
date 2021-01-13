@@ -3,21 +3,17 @@ description: 'null'
 title: Stapeldiagram och staplat stapeldiagram
 uuid: 45d2d9f3-3fb3-460f-bc87-7d6e3cc44494
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 9%
+source-wordcount: '81'
+ht-degree: 11%
 
 ---
 
 
 # Stapeldiagram och staplat stapeldiagram
 
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
-
-## Liggande
+## Stapel {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
 
 Den här visualiseringen visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
 
@@ -25,7 +21,7 @@ Den här visualiseringen visar lodräta staplar som representerar olika värden 
 
 Med en listruta för granularitet i visualiseringsinställningarna kan du ändra en trendvisualisering (t.ex. rad, stapel) från dag till vecka till månad, osv.
 
-## Stapel staplad
+## Stapel staplad {#section_9EA83779AE964635907EE5031A785A49}
 
 Den här visualiseringen är som ett stapeldiagram, men med seriestaplarna staplade ovanpå varandra.
 
