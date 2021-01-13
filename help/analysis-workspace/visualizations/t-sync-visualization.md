@@ -3,19 +3,15 @@ description: Med synkronisering av visualiseringar kan du styra vilken datatabel
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: Hantera datakällor
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 4%
+source-wordcount: '555'
+ht-degree: 3%
 
 ---
 
 
 # Hantera datakällor
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
 
@@ -23,7 +19,7 @@ Med synkronisering av visualiseringar kan du styra vilken datatabell eller datak
 
 Genom att hantera en datakälla kan du visa datakällan eller låsa markeringen. Dessa inställningar avgör hur visualiseringen ändras (eller inte ändras) när nya data kommer in.
 
-1. [Skapa ett ](/help/analysis-workspace/home.md) projekt med en datatabell och en  [visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+1. [Skapa ett ](//help/analysis-workspace/home.md) projekt med en datatabell och en  [visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 1. Markera cellerna (datakällan) som du vill koppla till visualiseringen i datatabellen.
 1. I visualiseringen klickar du på punkten bredvid titeln för att visa dialogrutan **[!UICONTROL Data Source]**. Välj **[!UICONTROL Show Data Source]** eller **[!UICONTROL Lock Selection]**.
 
