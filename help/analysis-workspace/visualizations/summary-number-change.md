@@ -3,19 +3,15 @@ description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att
 title: Sammanfattning av antal och förändring
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '462'
 ht-degree: 5%
 
 ---
 
 
 # Sammanfattning av antal och förändring
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 ## Visualisering av sammanfattningsnummer {#summary-number}
 
@@ -26,7 +22,15 @@ Använd visualisering av sammanfattningsnummer för att markera ett stort tal so
 * Om flera celler är markerade visas den första cellen som är markerad.
 * Om kolumnen är markerad väljs det första cellvärdet i kolumnen.
 
-![Sammanfattningsnummer](assets/summary-number.png)
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
+
+| Inställning | Definition |
+|--- |--- |
+| Procenttal | Visa procenttal i stället för råa tal. |
+| Förklaring synlig | Visa information om måttet som visas. |
+| Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
+| Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
+
 
 Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
 
@@ -36,6 +40,7 @@ Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för at
 | Förklaring synlig | Visa information om måttet som visas. |
 | Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
 | Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
+
 
 ## Visualisering av sammanfattning {#summary-change}
 
@@ -50,7 +55,9 @@ Den här visualiseringen fungerar på följande sätt:
 * Om ett cellintervall är markerat jämförs den första med den sista cellen i intervallet.
 * Om kolumnen är markerad jämförs det första värdet med sig självt, vilket innebär en ändring på 0.
 
-![Sammanfattningsändring](assets/summary-change.png)
+
+![](assets/summary-change.png)
+
 
 Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
 
