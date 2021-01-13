@@ -2,19 +2,15 @@
 description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 1%
+source-wordcount: '642'
+ht-degree: 2%
 
 ---
 
 
 # Tillgänglighet i Analysis Workspace
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Läs om stödet för tillgänglighet i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Adobe Analytics.
 
@@ -26,11 +22,20 @@ Med hjälpmedel avses att göra produkter användbara för personer med funktion
 
 Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och vänster > höger. Följande navigeringselement underlättar tillgängligheten:
 
-* `F6`-tangenten aktiverar kortkommandon för landmärken
-* Tangenten `Tab` rör sig mellan enskilda element.
+* Med `Tab`-tangenten kan du skapa genvägar mellan större avsnitt i arbetsytan. I den vänstra listen kan du också med `Tab` gå från ett dragbart alternativ till nästa.
+* `left/right arrows`-förflyttningen mellan enskilda element efter att `Tab` har markerat den.
+* `F6` navigerar till den första panelen i projektet och förflyttar sig mellan visualiseringarna på den panelen. Sedan flyttas den till nästa panel i projektet och upprepas.
 * Vi använder fokusindikatorer så att synkade tangentbordsanvändare får en tydlig indikation på vilket gränssnittselement som för närvarande är i fokus. Indikatorn är en blå ram runt det markerade elementet.
 
    ![Fokusindikator](assets/focus-indicator.png)
+
+### Tangentbordsnavigering för menyraden
+
+1. Tabba tills du har nått menyraden.
+1. Använd vänster-/högerpilstangenterna för att navigera till den meny som du vill använda.
+1. Tryck på `Enter` för att markera menyn och visa dess alternativ.
+1. Använd upp-/nedpilarna för att navigera till det menyalternativ du vill använda.
+1. Tryck på `Enter` för att välja alternativet.
 
 ### Tangentbordsnavigering för dra och släpp-interaktioner
 
@@ -43,7 +48,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 
 ### Kortkommandon (snabbtangenter)
 
-[!UICONTROL Analysis Workspace] erbjuder en mängd  [kortkommandon ](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
+[!UICONTROL Analysis Workspace] erbjuder en mängd  [kortkommandon ](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
 
 #### Navigering
 
@@ -85,7 +90,7 @@ En skärmläsare läser upp text som visas på datorskärmen. Den läser även i
 
 [!UICONTROL Analysis Workspace] eftersträvar WCAG 2.1-överensstämmelse, inklusive krav på färgkontrast.
 
-Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md).
+Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
 
 ## Obligatorisk fältvalidering i komponentbyggare
 
