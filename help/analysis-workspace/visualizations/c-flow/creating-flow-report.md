@@ -3,19 +3,15 @@ description: 'null'
 title: Konfigurera en flödesvisualisering
 uuid: ff36dc09-6175-43ed-a82a-630d28bca806
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '337'
 ht-degree: 2%
 
 ---
 
 
 # Konfigurera en flödesvisualisering
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med Flow kan du spåra en bana genom sidorna eller dimensionerna, t.ex. eVars:
 
