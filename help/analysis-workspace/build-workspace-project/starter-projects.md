@@ -1,11 +1,11 @@
 ---
-description: Mallar i arbetsytan
+description: Använd mallar i Workspace och skapa egna mallar.
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1387'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter 
 
 *(2:46)*
 
-Här finns mallar och de frågor som varje mall kan besvara.
+Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
