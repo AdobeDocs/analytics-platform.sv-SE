@@ -2,7 +2,7 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 translation-type: tm+mt
-source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 5%
@@ -32,7 +32,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Virtual Report Suites | Ringde nu [datavyer](/help/data-views/create-dataview.md). |
 | VRS-komponenturval | Nu en del av datavyer. |
 | Bearbetning av rapporttid | CJA använder sig enbart av Report Time Processing. |
-| Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med [!UICONTROL Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] som görs i underliggande datauppsättningar. |
+| Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] som görs i underliggande datauppsättningar. |
 | Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan Adobe Admin Console produktadministratörer och användare. Endast produktadministratörer kan 1) skapa/uppdatera/ta bort anslutningar eller datavyer, 2) uppdatera/ta bort projekt, filter eller beräkningstal som har skapats av andra användare och 3) dela ett Workspace-projekt med alla användare |
 
 ## Stöds med caveats
