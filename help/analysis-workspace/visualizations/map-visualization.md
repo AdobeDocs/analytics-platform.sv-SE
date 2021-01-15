@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: Lär dig hur du skapar en visuell karta över alla mätvärden i Analysis Workspace.
 title: Mappa
-uuid: 6038f336-62a3-4efa-8316-4d7792468db3
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 3%
+source-wordcount: '629'
+ht-degree: 2%
 
 ---
 
