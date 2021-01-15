@@ -1,9 +1,8 @@
 ---
 description: Du kan hämta data från Analysis Workspace genom att kopiera dem eller i PDF- och CSV-format.
 title: Hämta PDF- eller CSV-filer
-uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
