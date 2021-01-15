@@ -1,11 +1,11 @@
 ---
-description: Visa dina data visuellt med visualiseringar.
+description: Visuellt presentera data i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1049'
 ht-degree: 4%
 
 ---
