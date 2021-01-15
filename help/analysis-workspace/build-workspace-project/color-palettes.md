@@ -1,12 +1,12 @@
 ---
-description: 'null'
-title: Färgpaletter
+description: Så här ändrar du färgpaletten för visualisering eller anger en egen anpassad färgpalett.
+title: Visualiseringsfärgpalett
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 4%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
