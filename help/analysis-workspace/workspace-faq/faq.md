@@ -1,10 +1,10 @@
 ---
-description: Vanliga frågor om Workspace
+description: Vanliga frågor om arbetsytan och felsökningstips.
 title: Frågor och svar
 translation-type: tm+mt
-source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '427'
 ht-degree: 43%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 43%
 
 | Fråga | Svar |
 |--- |--- |
-| Vilka är förutsättningarna för att använda Analysis Workspace? | Analysis Workspace kräver en fungerande implementering av Customer Journey Analytics. Kontrollera att din organisation skickar data till Adobe Experience Platform innan du använder verktyget. |
-| Vilka är kraven för administration och åtkomst för Analysis Workspace? | Se [Administrationskrav](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| Kommer Analysis Workspace att påverka datainsamlingen? | Eftersom Analysis Workspace är ett rapportverktyg påverkar det inte datainsamlingen. Du kan dra komponenter till ett projekt för att se vad som fungerar utan att oroa dig för följderna. Dra olika kombinationer av mått och mätvärden till Workspace-projektet för att se vad som är tillgängligt för dig. Om du av misstag drar en ogiltig komponent till Workspace-projektet eller vill gå bakåt ett steg trycker du på Ctrl+Z (Windows) eller Kommando+Z (Mac) för att ångra den senaste åtgärden. Du kan också börja från början genom att klicka på *[!UICONTROL Project] > [!UICONTROL New]* i den övre vänstra menyn. |
-| Hur implementerar man Analysis Workspace? | Ingen särskild implementering krävs. Analysis Workspace är tillgängligt för alla företag i Customer Journey Analytics. Standardbehörigheter för innehåll (t.ex. projektkomponenter) gäller, och för att strukturera och dela projekt. Se [Krav för administration och åtkomst](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| Hur kan jag optimera Analysis Workspace prestanda? | Se [Optimera prestanda](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
+| **Vilka är förutsättningarna för att använda Analysis Workspace?** | Analysis Workspace kräver en fungerande implementering av Customer Journey Analytics. Kontrollera att din organisation skickar data till Adobe Experience Platform innan du använder verktyget. |
+| **Vilka är kraven för administration och åtkomst för Analysis Workspace?** | Se [Administrationskrav](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
+| **Kommer Analysis Workspace att påverka datainsamlingen?** | Eftersom Analysis Workspace är ett rapportverktyg påverkar det inte datainsamlingen. Du kan dra komponenter till ett projekt för att se vad som fungerar utan att oroa dig för följderna. Dra olika kombinationer av mått och mätvärden till Workspace-projektet för att se vad som är tillgängligt för dig. Om du av misstag drar en ogiltig komponent till Workspace-projektet eller vill gå bakåt ett steg trycker du på Ctrl+Z (Windows) eller Kommando+Z (Mac) för att ångra den senaste åtgärden. Du kan också börja från början genom att klicka på *[!UICONTROL Project] > [!UICONTROL New]* i den övre vänstra menyn. |
+| **Hur implementerar jag Analysis Workspace?** | Ingen särskild implementering krävs. Analysis Workspace är tillgängligt för alla företag i Customer Journey Analytics. Standardbehörigheter för innehåll (t.ex. projektkomponenter) gäller, och för att strukturera och dela projekt. Se [Krav för administration och åtkomst](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
+| **Hur kan jag optimera Analysis Workspace prestanda?** | Se [Optimera prestanda](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
 
 ## Felsökning
 
