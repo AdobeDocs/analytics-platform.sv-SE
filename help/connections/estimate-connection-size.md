@@ -2,7 +2,7 @@
 title: Beräkna anslutningsstorlek
 description: Rapportera om din nuvarande användning av Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -54,4 +54,4 @@ I vissa fall kanske du märker att det totala antalet händelser som är inkapsl
 
 1. Om vi dessutom checkar in [!UICONTROL Adobe Experience Platform] finns det ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon tog bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades den till i [!UICONTROL Customer Journey Analytics] igen, men en annan [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
 
-   Läs mer om [konsekvenserna av datauppsättningen och borttagningen av anslutningen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) i [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
+Läs mer om [konsekvenserna av datauppsättningen och borttagningen av anslutningen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) i [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
