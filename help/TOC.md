@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: e57d92f702445d8caac25a7cc11a6aafe6c62262
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 44%
+source-wordcount: '430'
+ht-degree: 43%
 
 ---
 
@@ -51,8 +51,8 @@ ht-degree: 44%
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + [Utför grundläggande analys](analysis-workspace/perform-basic-analysis.md)
    + [Avancerad analys](analysis-workspace/perform-adv-analysis.md)
-   + Bygga ett Workspace-projekt {#build-workspace-project}
-      + [Skapa projekt – översikt](analysis-workspace/build-workspace-project/freeform-overview.md)
+   + Projekt {#build-workspace-project}
+      + [Översikt över projekt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
       + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
