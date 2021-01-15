@@ -1,11 +1,10 @@
 ---
-description: 'null'
+description: Flödesfunktionen visar kundvägar via era webbplatser och appar.
 title: Översikt över flöden
-uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '184'
 ht-degree: 2%
 
 ---
@@ -19,11 +18,7 @@ Här kan du:
 
 * Visualisera kundresan via er webbplats eller tillämpning
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, som inmatning, en viss dimension eller avslut
-* Skapa segment genom att ange en specifik punkt i en vald bana
-
->[!NOTE]
->
->Information om hur resultatet av att tillämpa segment på Flow kan skilja sig åt mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
+* Skapa filter genom att ange en specifik punkt i en vald bana
 
 [Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) om flödesvisualisering (4:56)
 
