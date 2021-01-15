@@ -1,12 +1,11 @@
 ---
 keywords: Analysis Workspace
 title: Översikt över Analysis Workspace
-topic: Reports and analytics
-uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
+description: Översikt över Analysis Workspace funktioner
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '506'
 ht-degree: 4%
 
 ---
