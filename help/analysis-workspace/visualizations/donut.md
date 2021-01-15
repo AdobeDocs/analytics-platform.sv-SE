@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Visualisering av omgivande objekt visar data som delar eller segment av en helhet.
 title: Ringdiagram
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 7%
+source-wordcount: '81'
+ht-degree: 4%
 
 ---
 
