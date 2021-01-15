@@ -1,12 +1,11 @@
 ---
 description: Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen.
 title: Dela-menyn
-uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
 translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 15%
+source-wordcount: '190'
+ht-degree: 16%
 
 ---
 
@@ -17,12 +16,12 @@ ht-degree: 15%
 >
 >Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i din organisation på menyn Dela **Dela**.
+Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen på menyn Dela **Dela**.
 
 | Menyalternativ | Beskrivning |
-|---|---|
-| Dela projekt | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
-| Hämta projektlänk | Skapa en delbar länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
-| Skicka fil nu | Skicka ett projekt som en CSV eller PDF direkt till angivna mottagare. |
-| Skicka fil enligt schema | Skicka ett projekt som en CSV- eller PDF-fil enligt ett schema till angivna mottagare. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
-| Kuratera projektdata | Begränsa de komponenter (mått, mått, segment, datumintervall) som finns i ett projekt. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) |
+| --- | --- |
+| [!UICONTROL Share Project] | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
+| [!UICONTROL Get Project Link] | Skapa en delbar länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
+| [!UICONTROL Send File now] | Skicka ett projekt som en CSV eller PDF direkt till angivna mottagare. |
+| [!UICONTROL Send File on Schedule] | Skicka ett projekt som en CSV- eller PDF-fil enligt ett schema till angivna mottagare. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
+| [!UICONTROL Curate Project Data] | Begränsa de komponenter (mått, mått, segment, datumintervall) som finns i ett projekt. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) |
