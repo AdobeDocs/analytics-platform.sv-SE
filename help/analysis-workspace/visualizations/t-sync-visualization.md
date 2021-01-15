@@ -3,10 +3,10 @@ description: Med synkronisering av visualiseringar kan du styra vilken datatabel
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: Hantera datakällor
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '548'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ Med synkronisering av visualiseringar kan du styra vilken datatabell eller datak
 
 Genom att hantera en datakälla kan du visa datakällan eller låsa markeringen. Dessa inställningar avgör hur visualiseringen ändras (eller inte ändras) när nya data kommer in.
 
-1. [Skapa ett ](//help/analysis-workspace/home.md) projekt med en datatabell och en  [visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+1. [Skapa ett ](/help/analysis-workspace/home.md) projekt med en datatabell och en  [visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 1. Markera cellerna (datakällan) som du vill koppla till visualiseringen i datatabellen.
 1. I visualiseringen klickar du på punkten bredvid titeln för att visa dialogrutan **[!UICONTROL Data Source]**. Välj **[!UICONTROL Show Data Source]** eller **[!UICONTROL Lock Selection]**.
 
@@ -29,9 +29,9 @@ Genom att hantera en datakälla kan du visa datakällan eller låsa markeringen.
 
 | Element | Beskrivning |
 |--- |--- |
-| Länkade visualiseringar | Om det finns visualiseringar kopplade till en frihands- eller kohorttabell öppnas den övre vänstra punkten för att visa de anslutna visualiseringarna och har kryssrutan &quot;visa&quot; för att visa/dölja tabellen.  När du hovrar markeras den länkade visualiseringen och du klickar på den. |
-| Visa datakälla | Gör att du kan visa (genom att aktivera kryssrutan) eller dölja (genom att inaktivera) den datatabell som motsvarar visualiseringen. |
-| Lås markering | Aktivera den här inställningen för att låsa visualiseringen till de data som är markerade i motsvarande datatabell. När det är aktiverat väljer du mellan:  <ul><li>**Markerade positioner**: Välj det här alternativet om du vill att visualiseringen ska förbli låst på de positioner som är markerade i motsvarande datatabell. Dessa positioner kommer även fortsättningsvis att visualiseras, även om de specifika objekten i dessa positioner ändras. Välj till exempel det här alternativet om du alltid vill visa de fem främsta kampanjnamnen i den här visualiseringen, oavsett vilka kampanjnamn som visas i de fem främsta.</li> <li>**Markerade objekt**: Välj det här alternativet om du vill att visualiseringen ska förbli låst för de specifika objekt som är markerade i motsvarande datatabell. Dessa objekt kommer även fortsättningsvis att visualiseras, även om de ändrar sin rankning bland objekt i tabellen. Välj till exempel det här alternativet om du alltid vill visa samma fem specifika kampanjnamn i den här visualiseringen, oavsett var kampanjnamnen rangordnas.</li></ul> |
+| [!UICONTROL Linked Visualizations] | Om det finns visualiseringar kopplade till en frihands- eller kohorttabell öppnas den övre vänstra punkten för att visa de anslutna visualiseringarna och har kryssrutan &quot;visa&quot; för att visa/dölja tabellen.  När du hovrar markeras den länkade visualiseringen och du klickar på den. |
+| [!UICONTROL Show Data Source] | Gör att du kan visa (genom att aktivera kryssrutan) eller dölja (genom att inaktivera) den datatabell som motsvarar visualiseringen. |
+| [!UICONTROL Lock Selection] | Aktivera den här inställningen för att låsa visualiseringen till de data som är markerade i motsvarande datatabell. När det är aktiverat väljer du mellan:  <ul><li>**Markerade positioner**: Välj det här alternativet om du vill att visualiseringen ska förbli låst på de positioner som är markerade i motsvarande datatabell. Dessa positioner kommer även fortsättningsvis att visualiseras, även om de specifika objekten i dessa positioner ändras. Välj till exempel det här alternativet om du alltid vill visa de fem främsta kampanjnamnen i den här visualiseringen, oavsett vilka kampanjnamn som visas i de fem främsta.</li> <li>**Markerade objekt**: Välj det här alternativet om du vill att visualiseringen ska förbli låst för de specifika objekt som är markerade i motsvarande datatabell. Dessa objekt kommer även fortsättningsvis att visualiseras, även om de ändrar sin rankning bland objekt i tabellen. Välj till exempel det här alternativet om du alltid vill visa samma fem specifika kampanjnamn i den här visualiseringen, oavsett var kampanjnamnen rangordnas.</li></ul> |
 
 Arkitekturen skiljer sig från den tidigare på så sätt att Analysis Workspace inte längre skapar en dold tabell som lagrar den låsta markeringen åt dig. Datakällan pekar nu på tabellen som du skapade visualiseringen från.
 
