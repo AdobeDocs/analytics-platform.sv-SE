@@ -2,10 +2,10 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 2%
+source-wordcount: '768'
+ht-degree: 1%
 
 ---
 
@@ -27,14 +27,6 @@ En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt
 
 Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den tomma panelen](/help/analysis-workspace/c-panels/blank-panel.md) till standard.[
 
-## Rapportsviten {#report-suite}
-
-Tabeller och visualiseringar i en panel hämtar data från det [!UICONTROL report suite] som är markerat i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [många rapportsviter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt **högerklickar du på panelhuvudet > Använd rapportserie för alla paneler**.
-
-Listan med rapportsviter sorteras efter relevans, som Adobe definierar utifrån hur nyligen och ofta sviten har använts av den aktuella användaren och hur ofta sviten används i organisationen.
-
-![](assets/panel-report-suite.png)
-
 ## Kalender {#calendar}
 
 Panelkalendern styr rapporteringsintervallet för tabeller och visualiseringar inom en panel.
@@ -49,15 +41,15 @@ Med panelens listruta kan du tillämpa segment- och listrutefilter på alla tabe
 
 ### Segmentfilter
 
-Dra och släpp ett segment från den vänstra listen i panelens släppzon för att börja filtrera panelen.
+Dra och släpp eventuella filter från den vänstra listen i panelens släppzon för att börja filtrera panelen.
 
 ![](assets/segment-filter.png)
 
-### Ad hoc-segmentfilter
+### Ad hoc-filter
 
-Komponenter som inte tillhör segment kan också dras direkt till dropzone för att skapa ad hoc-segment, vilket sparar tid och kraft åt att gå till Segment Builder. Segment som skapas på det här sättet definieras automatiskt som träffnivåsegment. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
+Komponenter som inte tillhör segment kan också dras direkt till dropzone för att skapa ad hoc-filter, vilket sparar tid och arbete med att gå till Filter Builder. Filter som skapas på det här sättet definieras automatiskt som träffnivåfilter. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid filtret, sedan den pennformade redigeringsikonen och redigera den i Filterverktyget.
 
-Ad-hoc-segment är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
+Ad-hoc-filter är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
 
 ![](assets/adhoc-segment-filter.png)
 
@@ -89,11 +81,10 @@ Följande inställningar är tillgängliga:
 
 | Inställning | Beskrivning |
 | --- | --- |
-| Infoga kopierad panel/visualisering | Gör att du kan klistra in (&quot;infoga&quot;) en kopierad panel eller visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
-| Kopiera panel | Högerklicka och kopiera en panel så att du kan infoga den på en annan plats i projektet eller i ett helt annat projekt. |
-| Tillämpa Report Suite på alla paneler | Gör att du kan använda den aktiva panelrapportsviten på alla paneler i projektet. |
-| Duplicera panel | Skapar en exakt kopia av den aktuella panelen, som du sedan kan ändra. |
-| Komprimera/expandera alla paneler | Komprimerar och utökar alla projektpaneler. |
-| Komprimera/utöka alla visualiseringar i panelen | Komprimerar och utökar alla visualiseringar i den aktuella panelen. |
-| Redigera beskrivning | Lägg till (eller redigera) en textbeskrivning för panelen. |
-| Hämta panellänk | Du kan dirigera någon till en viss panel i ett projekt. När användaren klickar på länken måste mottagaren logga in innan han eller hon dirigeras till just den panel som är länkad till. |
+| [!UICONTROL Insert Copied Panel/Visualization] | Gör att du kan klistra in (&quot;infoga&quot;) en kopierad panel eller visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
+| [!UICONTROL Copy Panel] | Högerklicka och kopiera en panel så att du kan infoga den på en annan plats i projektet eller i ett helt annat projekt. |
+| [!UICONTROL Duplicate Panel] | Skapar en exakt kopia av den aktuella panelen, som du sedan kan ändra. |
+| [!UICONTROL Collapse/Expand all Panels] | Komprimerar och utökar alla projektpaneler. |
+| [!UICONTROL Collapse/Expand all Visualizations in Panel] | Komprimerar och utökar alla visualiseringar i den aktuella panelen. |
+| [!UICONTROL Edit Description] | Lägg till (eller redigera) en textbeskrivning för panelen. |
+| [!UICONTROL Get Panel Link] | Du kan dirigera någon till en viss panel i ett projekt. När användaren klickar på länken måste mottagaren logga in innan han eller hon dirigeras till just den panel som är länkad till. |
