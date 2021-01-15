@@ -1,11 +1,10 @@
 ---
-description: Ett histogram är en ny visualiseringstyp i Analysis Workspace.
+description: Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall).
 title: Histogram
-uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '418'
 ht-degree: 3%
 
 ---
