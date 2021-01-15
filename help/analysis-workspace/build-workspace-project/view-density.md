@@ -1,10 +1,10 @@
 ---
-description: Lär dig hur du justerar visningsdensiteten.
+description: Lär dig justera visningsdensiteten i Analysis Workspace.
 title: Visa densitet
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '98'
 ht-degree: 4%
 
 ---
