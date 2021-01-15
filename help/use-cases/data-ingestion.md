@@ -2,9 +2,9 @@
 title: Alternativ för dataintag för Customer Journey Analytics
 description: Förstå olika sätt att importera data till Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 8a3a868ff4e2fbbcdf83ff7769382c6a92f78ec2
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '968'
 ht-degree: 1%
 
 ---
@@ -34,15 +34,9 @@ Det här arbetsflödet använder Adobe Analytics Data Connector och varierar ber
 
 ## Importera data via Adobe Experience Platform Web SDK och Edge Network
 
-[Adobe Experience Platform Web ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) SDK är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud kunder kan interagera med de olika tjänsterna i Experience Cloud via Adobe Experience Platform Edge Network. Du kan konfigurera det här intaget med eller utan Launch.
+[Adobe Experience Platform Web ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) SDK är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud kunder kan interagera med de olika tjänsterna i Experience Cloud via Adobe Experience Platform Edge Network.
 
-### Utan start
-
-Den här länken fungerar inte: https://docs.adobe.com/content/help/en/experience-platform/edge/get-started/quick-start-without-launch.html. Är detta fortfarande möjligt utan Launch?
-
-### Med Launch
-
-1. [Konfigurera AEP Web SDK-](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) tillägget för att skicka data till Adobe Experience Cloud från webbegenskaper via Adobe Experience Platform Edge Network.
+1. [Konfigurera AEP Web SDK-tillägget i ](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) Launchför att skicka data till Adobe Experience Cloud från webbegenskaper via Adobe Experience Platform Edge Network.
 1. Använd [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) för att skapa en eller flera anslutningar och datavyer som informerar din flerkanalsrapportering.
 
 ## Inmatningsdata med batchinmatning och direktuppspelning
