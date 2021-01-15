@@ -2,10 +2,8 @@
 description: Skapa ett projekt och lägg till komponenter (mått, mått, segment, datumintervall) på frihandspanelen.
 keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
-topic: Reports and analytics
-uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 14%
