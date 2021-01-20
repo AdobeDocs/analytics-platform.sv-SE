@@ -2,7 +2,7 @@
 title: Vanliga frågor om flerkanalsanalys
 description: Frågor och svar om flerkanalsanalys
 translation-type: tm+mt
-source-git-commit: dd4e7e5cd04db6483f0e4a1f3161f23f8a5a8294
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Antalet beständiga ID:n är irrelevant för det tillfälliga ID:t. En enskild a
 
 ## När jag har kontaktat min kontoansvarige med den önskade informationen, hur lång tid tar det innan den inmatade datauppsättningen blir tillgänglig?
 
-Liveutjämning är tillgänglig cirka en vecka efter att Adobe har aktiverat flerkanalsanalys. Tillgängligheten för förifyllning beror på mängden befintliga data. Små datauppsättningar (mindre än 1 miljon händelser per dag) tar normalt några dagar, medan stora datauppsättningar (1 miljard händelser per dag) kan ta en vecka eller mer.
+Liveutjämning är tillgänglig cirka en vecka efter att Adobe har möjliggjort kanalövergripande analys. Tillgängligheten för förifyllning beror på mängden befintliga data. Små datauppsättningar (mindre än 1 miljon händelser per dag) tar normalt några dagar, medan stora datauppsättningar (1 miljard händelser per dag) kan ta en vecka eller mer.
 
 ## Hur hanterar flerkanalsanalys GDPR- och CCPA-begäranden?
 
