@@ -2,7 +2,7 @@
 title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 translation-type: tm+mt
-source-git-commit: b57895d037f8db3ffc418312b95fc43dd0280dc9
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Översikt över flerkanalsanalys
 
-**Resa-IQ: Flerkanalsanalys** är en funktion som gör att du kan ändra nyckelord för en datamängds person-ID, vilket möjliggör en sömlös kombination av flera datamängder. CCA undersöker användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. Med flerkanalsanalys kan ni besvara frågor som:
+**Resa-IQ: Flerkanalsanalys** är en funktion som gör att du kan ändra inmatningen av en datauppsättnings person-ID, vilket möjliggör en sömlös kombination av flera datauppsättningar. CCA undersöker användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. Med flerkanalsanalys kan ni besvara frågor som:
 
 * Hur många börjar sin upplevelse i en kanal och avslutar den i en annan?
 * Hur många interagerar med mitt varumärke? Hur många och vilka typer av enheter använder de? Hur överlappar de?
@@ -21,7 +21,7 @@ ht-degree: 0%
 * Vilka är de vanligaste sökvägarna som användare tar från en enhet till en annan? Var faller de? Var lyckas de?
 * Hur skiljer sig beteendet hos användare med flera enheter från dem som har en enda enhet?
 
-När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att lösa det. Med flerkanalsanalys kan ni attribuera callcenter-händelser till annonsen som de ursprungligen klickade på.
+När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att lösa det. Med Cross-Channel Analytics kan ni attribuera callcenter-händelser till den annons som de ursprungligen klickade på.
 
 ## Förutsättningar
 
@@ -57,7 +57,7 @@ När organisationen uppfyller alla krav och förstår sina begränsningar kan du
    * Kolumnnamnet för det beständiga ID:t för den önskade datauppsättningen (identifierare som visas på varje rad)
    * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (länken för personidentifierare mellan datauppsättningar)
    * Din inställning är [repetitionsfrekvens och uppslagslängd](replay.md). Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
-1. Kontohanteraren för Adobe aktiverar flerkanalsanalys när du tar emot din begäran. När den är aktiverad visas en ny inmatad datauppsättning i Adobe Experience Platform som innehåller en ny person-ID-kolumn. Kontohanteraren för Adobe kan ange det nya datauppsättnings-ID:t och kolumnnamnet för person-ID.
+1. Kontohanteraren för Adobe aktiverar kanalövergripande analys när du tar emot din begäran. När den är aktiverad visas en ny inmatad datauppsättning i Adobe Experience Platform som innehåller en ny person-ID-kolumn. Kontohanteraren för Adobe kan ange det nya datauppsättnings-ID:t och kolumnnamnet för person-ID.
 1. [Skapa en ](../create-connection.md) anslutning i CJA med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
 1. [Skapa en ](/help/data-views/create-dataview.md) datavy baserad på anslutningen.
 
