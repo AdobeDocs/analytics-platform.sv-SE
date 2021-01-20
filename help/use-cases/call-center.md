@@ -2,9 +2,9 @@
 title: Importera callcenter och webbdata
 description: Lär dig hur du skapar en datauppsättning som länkar callcenter och webbplatsdata.
 translation-type: tm+mt
-source-git-commit: 8d2f70ad47dcf9b97808da3a04d32d3412a1f0c8
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Importera callcenter och webbdata
 
-Customer Journey Analytics har den värdefulla och robusta möjligheten att kombinera datauppsättningar från olika källor till ett enda Workspace-projekt. Använd den här vägledningen när du vill veta hur din organisation kan sammanfoga data från din webbplats med data som kommer från ditt callcenter.
+Customer Journey Analytics har den värdefulla och robusta möjligheten att kombinera datauppsättningar från olika källor till ett enda Workspace-projekt. Använd den här vägledningen när du vill veta hur organisationen kan kombinera webbplatsdata med callcenterdata.
 
 ## Förutsättningar
 
@@ -31,7 +31,7 @@ Customer Journey Analytics har den värdefulla och robusta möjligheten att komb
 
 ## Importera webb- och callcenterdata till plattformen
 
-Börja importera data till Adobe Experience Platform. Se [Skapa ett schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
+Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 
 När du importerar data till plattformen kan följande tips hjälpa dig att få bättre insikter i de resulterande rapporterna:
 
@@ -43,7 +43,7 @@ När du importerar data till plattformen kan följande tips hjälpa dig att få 
 CJA kräver en gemensam identifierare för att generera en [kombinerad datamängd](../connections/combined-dataset.md).
 
 * Om dina datauppsättningar redan har en gemensam identifierare för varje händelse i båda datauppsättningarna kan du hoppa över det här steget och fortsätta skapa en anslutning.
-* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser kan du sammanfoga data med hjälp av flerkanalsanalys. Se [Översikt över flerkanalsanalys](/help/connections/cca/overview.md) för steg som aktiverar CCA för dessa två datauppsättningar.
+* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser kan du sammanfoga data med hjälp av kanalövergripande analys. Se [Översikt över flerkanalsanalys](/help/connections/cca/overview.md) för steg som aktiverar CCA för dessa två datauppsättningar.
 
 ## Skapa en anslutning i CJA
 
@@ -100,9 +100,19 @@ step 3: call
 another good one
 
 step 1: all sessions
-step 2: -->
+step 2: 
 
-<!--  use target (AB testing) to test new versions of these pages so they reduce calls (using an eVar to determine A/B?)
-  filter by specific call reason using workspace dropdowns
-  visualize flow of pages > call reason 
--->
+Orrr we could also use dataset ID
+
+### Site sections that result in a call within 30 minutes
+
+Slide 4
+
+Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+
+wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
+
+use sequential segmentation, but you lose the ability to use attribution IQ
+
+## What to do when you've found insight -->
+
