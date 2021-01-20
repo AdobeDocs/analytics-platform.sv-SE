@@ -2,7 +2,7 @@
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i flerkanalsanalys
 translation-type: tm+mt
-source-git-commit: 26486c79f6d94db1aa795bf024f581cad74c25f6
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Så här spelar du upp
 
-Flerkanalsanalys gör att data kan skickas vidare på en viss anslutning:
+Flerkanalsanalys gör att data kan skickas på en viss anslutning:
 
 * **Livestning**: CCA försöker sy ihop varje träff när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
 * **Spela upp**: CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. I det här steget sammanfogas nya enheter till anslutningen. Adobe har två repriser:
