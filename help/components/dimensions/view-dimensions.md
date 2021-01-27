@@ -4,8 +4,8 @@ title: Förhandsgranska dimensioner i CJA Workspace
 translation-type: tm+mt
 source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 24%
 
 ---
 
