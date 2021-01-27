@@ -2,23 +2,27 @@
 description: Sidnumrering, filtrering och sortering av tabeller i arbetsytan
 title: Sidnumrering, filtrering och sortering av tabeller
 translation-type: tm+mt
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
+source-git-commit: 71401db7bf034136eb053f559962b1eb49175ec1
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 39%
+source-wordcount: '238'
+ht-degree: 16%
 
 ---
 
 
 # Sidnumrering, filtrering och sortering av tabeller
 
-Titta på den här videosjälvstudiekursen om du vill se en översikt:
+>[!NOTE]
+>
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-[Sidnumrering, filtrering och sortering av tabeller i Analysis Workspace](https://docs.adobe.com/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
+Titta på den här videosjälvstudien för en översikt över paginering, filtrering och sortering av tabeller i Analysis Workspace:
+
+>[!VIDEO](https://publish.tv.adobe.com/bucket/1/category/2282/video/23968/)
 
 ## Avancerade filteralternativ {#section_36E92E31442B4EBCB052073590C1F025}
 
-Om du klickar på filterikonen och sedan på Visa avancerat bredvid en dimension i en frihandstabell kan du filtrera enligt följande kriterier:
+Om du klickar på filterikonen och sedan **[!UICONTROL Show Advanced]** bredvid en dimension i en frihandstabell kan du filtrera enligt följande kriterier. Du kan använda flera filtreringsregler.
 
 * Innehåller
 * Innehåller inte
@@ -34,3 +38,15 @@ Om du klickar på filterikonen och sedan på Visa avancerat bredvid en dimension
 
 ![](assets/advanced-filter.png)
 
+## Dimension sortering i frihandsritabeller
+
+>[!NOTE]
+>
+>Sortering av Dimensioner gäller endast för frihandsritabeller i Customer Journey Analytics, inte i vanliga Adobe Analytics. Mätsortering kan göras i båda versionerna av Analytics.
+
+1. Klicka på pilen bredvid dimensionsnamnet i valfri friformstabell i ett projekt:
+
+Infoga skärmbild här.
+
+* Nedpilen sorterar i fallande ordning och uppilen (standard) i stigande ordning.
+* Du kan sortera dimensionerna alfabetiskt eller numeriskt. Du kan till exempel ha numrerade steg i ett arbetsflöde och vill kanske sortera efter stegnumret. Du kan sortera en datumrelaterad dimension efter datum. Du kan också sortera en produktnamnsdimension i bokstavsordning.
