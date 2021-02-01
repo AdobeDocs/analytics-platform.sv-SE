@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 translation-type: tm+mt
-source-git-commit: c70662468126279110f14291c135a3f60dd919db
+source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1003'
 ht-degree: 4%
 
 ---
@@ -34,6 +34,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Bearbetning av rapporttid | CJA använder sig enbart av Report Time Processing. |
 | Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] som görs i underliggande datauppsättningar. |
 | Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan Adobe Admin Console produktadministratörer och användare. Endast produktadministratörer kan 1) skapa/uppdatera/ta bort anslutningar eller datavyer, 2) uppdatera/ta bort projekt, filter eller beräkningstal som har skapats av andra användare och 3) dela ett Workspace-projekt med alla användare |
+| Sammanfogning mellan olika enheter och kanaler | Se [Flerkanalsanalys](/help/connections/cca/overview.md). |
 | Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, operativsystem etc.) | CJA tillhandahåller dessa dimensioner internt så länge som bas-XDM-fälten (till exempel användaragent eller enhets-ID) fylls i. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Läs vår [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | API-åtkomst för rapportering | För närvarande tillgängligt med Analytics API 2.0. |
 
@@ -59,8 +60,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Panelerna Segmentjämförelse, Analytics for Target (A4T) och Media Concurrent Viewer stöds inte. |
 | Marknadsförande eVars | Beteendet hos Merchandising eVars kan uppnås med dimensioner inom en Object-array eftersom en eVar inte är inställd på att använda persistence. För närvarande är beständighet för försäljningsdimension inte tillgängligt. |
 | Punktfiltrering | För ADC-baserade datauppsättningar (Analytics Data Connector) tillämpas robotfiltrering. Allmän robotfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
-| Bearbetningsregler | För ADC-baserade datauppsättningar tillämpas fortfarande bearbetningsregler. |
-| Stitching av enhetsidentitet | CJA har kontinuerligt stöd för att stygga identiteter mellan olika enheter och kanaler, inklusive periodisk omräkning av historiska data. För närvarande kan detta bara göras med en enda kundset-identitet i kombination med ett enda cookie-ID. |
+| Bearbetningsregler | För datauppsättningar baserade på Analytics Data Connector tillämpas fortfarande bearbetningsregler. |
 | Medieanalys | Mediedata är tillgängliga som en del av Analytics Data Connector. |
 
 ## Stöds inte just nu, men är planerad
