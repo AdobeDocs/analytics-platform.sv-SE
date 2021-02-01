@@ -2,7 +2,7 @@
 description: Sidnumrering, filtrering och sortering av tabeller i arbetsytan
 title: Sidnumrering, filtrering och sortering av tabeller
 translation-type: tm+mt
-source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
+source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 17%
@@ -46,7 +46,7 @@ Om du klickar på filterikonen och sedan **[!UICONTROL Show Advanced]** bredvid 
 
 1. Klicka på pilen bredvid dimensionsnamnet i valfri friformstabell i ett projekt:
 
-Infoga skärmbild här.
+![](assets/sort-dimensions.png)
 
 * Nedpilen sorterar i fallande ordning och uppilen (standard) i stigande ordning.
-* Du kan sortera dimensionerna alfabetiskt eller numeriskt. Du kan till exempel ha numrerade steg i ett arbetsflöde och vill kanske sortera efter stegnumret. Du kan sortera en datumrelaterad dimension efter datum. Du kan också sortera en produktnamnsdimension i bokstavsordning.
+* Du kan sortera dimensionerna alfabetiskt eller numeriskt. Du kan till exempel ha numrerade steg i ett arbetsflöde och vill kanske sortera efter stegnumret. Du kan sortera en datumrelaterad dimension efter datum. Du kan också sortera datakällor i bokstavsordning, som i skärmbilden ovan.
