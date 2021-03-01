@@ -4,7 +4,7 @@ cloud: experience-cloud
 product: adobe analytics
 sub-product: kundresa
 solution: Customer Journey Analytics
-type: Documentation
+type: Dokumentation
 index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
@@ -20,7 +20,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 43%
 
 ---
