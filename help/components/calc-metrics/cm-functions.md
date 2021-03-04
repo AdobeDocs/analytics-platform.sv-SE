@@ -2,10 +2,10 @@
 title: Referens - grundläggande funktioner
 description: 'Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden. '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 2%
+source-wordcount: '1079'
+ht-degree: 1%
 
 ---
 
@@ -324,10 +324,4 @@ Anta att du har en kolumn med tre objekt:
 
 3
 
-Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. I Ad Hoc Analysis ser detta ut så här:
-
-1 2/3
-
-2 2/3
-
-3 2/3
+Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.
