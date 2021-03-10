@@ -2,9 +2,9 @@
 title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 translation-type: tm+mt
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
+source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 * Vilka är de vanligaste sökvägarna som användare tar från en enhet till en annan? Var faller de? Var lyckas de?
 * Hur skiljer sig beteendet hos användare med flera enheter från dem som har en enda enhet?
 
-När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att lösa det. Med Cross-Channel Analytics kan ni attribuera callcenter-händelser till den annons som de ursprungligen klickade på.
+När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att lösa det. Med Cross-Channel Analytics kan ni attribuera callcenter-händelser till annonsen som de ursprungligen klickade på.
 
 ## Förutsättningar
 
@@ -45,6 +45,8 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 * Endast händelsedatamängder stöds. Andra datauppsättningar, till exempel uppslagsdatauppsättningar, stöds inte.
 * Anpassade ID-mappningar som används i din organisation stöds inte.
 * Adobe Co-op-diagrammet och det privata diagrammet stöds inte.
+* Flerkanalsanalys omformar inte det fält som används för sammanfogning på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns i den icke-sammanfogade datauppsättningen inom datarjön. Om ibland ordet &#39;Bob&#39; visas i fältet och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer.
+
 
 ## Aktivera flerkanalsanalys
 
