@@ -2,9 +2,9 @@
 title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 translation-type: tm+mt
-source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+source-git-commit: cc78a3941a4179be0dbf46055fea60df8e7e8b97
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,8 @@ När organisationen uppfyller alla krav och förstår sina begränsningar kan du
    * Kolumnnamnet för det beständiga ID:t för den önskade datauppsättningen (identifierare som visas på varje rad)
    * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (länken för personidentifierare mellan datauppsättningar)
    * Din inställning är [repetitionsfrekvens och uppslagslängd](replay.md). Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
-1. Kontohanteraren för Adobe aktiverar kanalövergripande analys när du tar emot din begäran. När den är aktiverad visas en ny inmatad datauppsättning i Adobe Experience Platform som innehåller en ny person-ID-kolumn. Kontohanteraren för Adobe kan ange det nya datauppsättnings-ID:t och kolumnnamnet för person-ID.
+1. Kontohanteraren för Adobe kommer att arbeta tillsammans med Adobe för att aktivera kanalövergripande analys när du tar emot din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Kontohanteraren för Adobe kan ange det nya datauppsättnings-ID:t och kolumnnamnet för person-ID.
+1. När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som i början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data så långt tillbaka i tiden.
 1. [Skapa en ](../create-connection.md) anslutning i CJA med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
 1. [Skapa en ](/help/data-views/create-dataview.md) datavy baserad på anslutningen.
 
