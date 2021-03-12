@@ -2,9 +2,9 @@
 title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 translation-type: tm+mt
-source-git-commit: cc78a3941a4179be0dbf46055fea60df8e7e8b97
+source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,11 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 * Endast händelsedatamängder stöds. Andra datauppsättningar, till exempel uppslagsdatauppsättningar, stöds inte.
 * Anpassade ID-mappningar som används i din organisation stöds inte.
 * Adobe Co-op-diagrammet och det privata diagrammet stöds inte.
-* Flerkanalsanalys omformar inte det fält som används för sammanfogning på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns i den icke-sammanfogade datauppsättningen inom datarjön. Om ibland ordet &#39;Bob&#39; visas i fältet och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer.
+* Flerkanalsanalys omformar inte det fält som används för sammanfogning på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns i den icke-sammanfogade datauppsättningen inom datarjön. Staplingsprocessen är skiftlägeskänslig. Om ibland ordet &#39;Bob&#39; visas i fältet och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer.
+* För Analytics-datauppsättningar som genererats via dataanslutningen för Analytics rekommenderar Adobe att man granskar VISTA-regler eller bearbetningsregler som gäller för det tillfälliga ID-fältet för att säkerställa att inga av dessa regler inför nya former av samma ID. Du bör t.ex. se till att inga VISTA-regler eller bearbetningsregler för endast en del av händelserna introducerar lägre radering till det tillfälliga ID-fältet.
+* Fältbaserad sammanfogning varken kombinerar eller sammanfogar fält.
+* Det tillfälliga ID-fältet ska innehålla en enda typ av ID (t.ex. ID:n från ett enda namnutrymme). Det tillfälliga ID-fältet ska till exempel inte innehålla en kombination av inloggnings-ID och e-post-ID.
+* Om flera händelser inträffar med samma tidsstämpel för samma beständiga ID, men med olika värden i fältet för transient ID, väljer fältbaserad sammanslagning baserat på alfabetisk ordning. Om beständigt ID A har två händelser med samma tidsstämpel och en av händelserna anger Bob och den andra anger Ann, väljer fältbaserad stitling Ann.
 
 
 ## Aktivera flerkanalsanalys
