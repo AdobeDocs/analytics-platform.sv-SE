@@ -2,10 +2,10 @@
 title: Komponenter – översikt
 description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem vid rapportering.
 translation-type: tm+mt
-source-git-commit: c1699c4319b3b840d8420f3ffa1a4bd1c1d9a4d4
+source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 17%
+source-wordcount: '338'
+ht-degree: 13%
 
 ---
 
@@ -43,10 +43,10 @@ Du kan hantera komponenter (individuellt eller genom att markera flera) på fler
 >Dessa åtgärder gäller inte för tidskomponenter.
 
 | Komponentåtgärd | Beskrivning |
-|--- |--- |
-| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Sedan visas de i respektive komponenthanterare, som Analytics > Komponenter > Segment eller Analytics > Komponenter > Projekt. |
-| Favorit | Lägg till komponenten i listan med favoriter. Sedan visas de i respektive komponenthanterare, som Analytics > Komponenter > Segment eller Analytics > Komponenter > Projekt. |
-| Godkänn | Godkänn komponenten för att göra den kanonisk. Sedan visas de i respektive komponenthanterare, som Analytics > Komponenter > Segment eller Analytics > Komponenter > Projekt. |
+| --- | --- |
+| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Favorit | Lägg till komponenten i listan med favoriter. Därefter visas det i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
+| Godkänn | Godkänn komponenten för att göra den kanonisk. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
 | Dela | Gäller endast segment. |
 | Ta bort | Gäller endast segment. |
 
@@ -56,12 +56,4 @@ Se videon Creating Metrics, Segments, and Dates:
 
 ## Behörigheter för komponentåtkomst
 
-Administratörer kan styra (via [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en#manage-users-and-products)) vilka komponenter som exponeras för användare vid rapportering. I följande tabell visas hur de här åtkomstbehörigheterna för komponenter fungerar:
-
-| Kurvtyp | Administratören kan se | Projektägaren (eller redigeringsrollen) som inte är administratör kan se | Duplicerad roll som inte är administratör |
-| --- | --- | --- | --- |
-| **Komponenter&quot;dolda&quot; från en datavy** | Alla datavykomponenter som är tillgängliga för rapportering (dolda komponenter kräver att du klickar på Visa alla) | Ej tillgängligt för rapportering | Ej tillgängligt för rapportering |
-| **Komponenter som har lagts till eller tagits bort från en datavy** | Endast komponenter som har lagts till i datavyn (dolda eller inte dolda). Administratörer kan inte rapportera fält eller komponenter som inte har definierats i datavyn. | Endast komponenter som har lagts till i datavyn, eller komponenter som ägs eller delas med användaren. Dolda komponenter är inte tillgängliga (som VRS-kurering). | Endast komponenter som lagts till i DV-filen är inte dolda och har inkluderats i projektkurationen. |
-| **Kuraterade komponenter i ett projekt** | Alla datavykomponenter som är tillgängliga för rapportering (dolda komponenter kräver att du klickar på Visa alla) | Alla icke-dolda datavykomponenter (kräver att du klickar på Visa alla) | Endast förvaltade komponenter, plus eventuella komponenter som ägs eller delas med användaren |
-| **Kuraterat projekt med en datavy med dolda komponenter** | Alla datakomponenter som är tillgängliga för rapportering (dolda och icke-förvaltade komponenter kräver att du klickar på Visa alla) | Alla icke-förvaltade projektkomponenter, alla icke-dolda datavykomponenter och alla komponenter som ägs eller delas med användaren | Endast förvaltade komponenter, plus alla komponenter som ägs eller delas med användaren |
-
+I Analysis Workspace kan administratörer [kontrollera](/help/analysis-workspace/curate-share/curate.md) vilka komponenter som exponeras för användare vid rapportering.
