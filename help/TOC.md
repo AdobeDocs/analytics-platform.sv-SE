@@ -18,9 +18,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
+source-git-commit: c4338e2d53f56b97bab06a1ba862bbfd35126c2d
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 43%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 43%
          + [Översikt över avvikelseidentifiering](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [Visa avvikelser i Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Statistiska tekniker som används för avvikelseidentifiering](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + [Användarinställningar](analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Vanliga frågor](analysis-workspace/workspace-faq/faq.md)
       + [Optimera prestanda för Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
