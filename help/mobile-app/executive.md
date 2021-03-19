@@ -1,23 +1,23 @@
 ---
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
-title: Chefshandbok för Adobe Analytics Dashboards
+title: Chefshandbok för kontrollpaneler för analyser
 translation-type: tm+mt
-source-git-commit: 132aba710395c46e123b4c13d6d8ef32c86d2e15
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Analytics kontrollpaneler: snabbstartsguide för företagsanvändare
+# Kontrollpaneler för analyser: snabbstartsguide för företagsanvändare
 
-Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics dashboards. En video som visar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://youtu.be/QXqQ_PkArbA).
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa kontrollpaneler i Analytics. En video som visar den här informationen finns i [Analysinstrumentpaneler i appupplevelsen](https://youtu.be/QXqQ_PkArbA).
 
 
 ## Introduktion
 
-Adobe Analytics dashboards ger dig insikter från Adobe Analytics när som helst och var som helst.  Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Kontrollpaneler stöds på både iOS- och Android-operativsystem.
+Med kontrollpanelerna för analyser kan du alltid få insikter från Customer Journey Analytics.  Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Kontrollpaneler stöds på både iOS- och Android-operativsystem.
 
 ## Mer om den här guiden
 
@@ -27,8 +27,8 @@ Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrk
 
 | Term | Definition |
 |--- |--- |
-| Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från Analytics på en mobil enhet |
-| Kurator | Datalitterera persona som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
+| Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från CJA på en mobil enhet |
+| Kurator | Personen som hittar och distribuerar insikter från CJA och konfigurerar styrkorten så att de kan ses av konsumenten |
 | Insamling | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
 | Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
 | Platta | En återgivning för ett mätresultat i en styrkortsvy |
@@ -44,7 +44,7 @@ Om du vill använda kontrollpanelerna effektivt måste du ha styrkortets kurator
 
 Om du vill få åtkomst till styrkort på instrumentpaneler ser du till att:
 
-* Du har en giltig inloggning på Adobe Analytics
+* Du har en giltig inloggning i Customer Journey Analytics
 * Markören har skapat mobila styrkort korrekt och delat dem med dig
 
 ### Hämta och installera kontrollpaneler
@@ -53,13 +53,13 @@ Följ stegen i operativsystemet på enheten för att hämta och installera progr
 
 **För företagsledare på iOS:**
 
-Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den är även tillgänglig i CJA under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 [iOS-länk](https://apple.co/2zXq0aN)
 
 **För chefsanvändare på Android:**
 
-Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den är även tillgänglig i CJA under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 [Android-länk](https://bit.ly/2LM38Oo)
 
