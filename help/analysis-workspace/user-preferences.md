@@ -2,7 +2,7 @@
 title: Ange användarinställningar i Analysis Workspace
 description: Du kan ange allmänna inställningar och projektinställningar för användare.
 translation-type: tm+mt
-source-git-commit: 90b69c13a7a63228f62c4b6291b3d66f8e3c821b
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 1%
@@ -36,8 +36,8 @@ Projektinställningar gäller för nya projekt och nya paneler som skapas i Anal
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
 | **Visa** |  |  |
-|  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
-|  | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Paletter som tillhandahålls av Adobe (standard)</li><li>Egna paletter</li></ul> |
+|  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
+|  | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Paletter som tillhandahålls av Adobe (standard)</li><li>Egna paletter</li></ul> |
 | **Data** |  |  |
 |  | [Rapportsviter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#report-suite) | <ul><li>Senaste (standard)</li><li>Specifik - vald från en lista</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#calendar) | Lista över körklara datumintervall, inklusive **[!UICONTROL This month]** (standard) |
