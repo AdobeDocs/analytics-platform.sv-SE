@@ -1,20 +1,20 @@
 ---
-title: Kontrollpaneler i Customer Journey Analytics - översikt
+title: Kontrollpaneler för analyser - översikt
 description: Produktdokumentation och självhjälp för kontrollpaneler i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6a2e32f6bdac3b47a74e262c0b0e0f4f93b2dc4d
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
 
-# Customer Journey Analytics [!UICONTROL dashboards] - översikt
+# Analytics [!UICONTROL dashboards] - översikt
 
-**Customer Journey Analytics[!UICONTROL dashboards]** ger alltid insikter från Customer Journey Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS- och Android-operativsystem.
+**Analyserna[!UICONTROL dashboards]** ger alltid insikter från Customer Journey Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS- och Android-operativsystem.
 
-Mer information om Customer Journey Analytics [!UICONTROL dashboards] finns i följande resurser:
+Mer information om Analytics [!UICONTROL dashboards] finns i följande resurser:
 
 * [Kuratorguide](/help/mobile-app/curator.md): Den här guiden är avsedd att hjälpa datakonstruktörer att konfigurera styrkort för sina chefsanvändare  [!UICONTROL dashboards]. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att inrätta styrkort.
 
