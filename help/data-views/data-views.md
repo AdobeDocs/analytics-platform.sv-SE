@@ -1,10 +1,10 @@
 ---
 title: Vad är en datavy i Customer Journey Analytics?
-description: null
+description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 translation-type: tm+mt
-source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
+source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
@@ -52,13 +52,15 @@ Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäl
 ## Förutsättning
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till datauppsättningar i Experience Platform](/help/connections/create-connection.md).
-* Om du vill skapa eller hantera en datavy behöver du följande behörigheter i Adobe Admin Console:
+* Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions).
 
 ## Visa information om en komponent
 
 Klicka på ikonen (i) info i Workspace för att visa vilket schemafält en komponent baseras på och dess inställningar, till exempel en beskrivning.
 
 ## Datavy Settings you can override in Workspace
+
+Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektnivå, andra kan inte det.
 
 * Fönstret Lookback
 * Måttattribut
@@ -70,10 +72,6 @@ Klicka på ikonen (i) info i Workspace för att visa vilket schemafält en kompo
 * Metrisk formatering
 * Datavy name
 * Dimension
-
-## Inget värde
-
-Du kan bestämma vad som ska kallas Ingen/Inget värde/Ospecificerad dimension och om den ska vara synlig för användare vid rapportering. Administratörer och användare (för projekt de äger) kan dock ändra synlighetsinställningen i Workspace.
 
 ## Ta bort datavyer
 
