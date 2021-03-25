@@ -2,9 +2,9 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för instrumentpaneler på Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6a2e32f6bdac3b47a74e262c0b0e0f4f93b2dc4d
+source-git-commit: 026771a61bcbd0eec8cb59a1d06f3dad0b96acf6
 workflow-type: tm+mt
-source-wordcount: '2290'
+source-wordcount: '2328'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Följande information beskriver för chefer av Adobe Analytics-data hur man konf
 
 ## Introduktion
 
-Med kontrollpanelerna för analyser kan du alltid få insikter baserat på dina Customer Journey Analytics-data. Med appen får användare mobil åtkomst till intuitiva styrkort som du skapar och delar från användargränssnittet i Customer Journey Analytics. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Du kan anpassa styrkort efter de data som är viktigast för dig. Kontrollpaneler för analyser stöds på både iOS- och Android-operativsystem.
+Adobe Analytics kontrollpaneler ger alltid insikter baserat på dina Customer Journey Analytics-data. Med appen får användare mobil åtkomst till intuitiva styrkort som du skapar och delar från användargränssnittet i Customer Journey Analytics. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade indelningar och trendade datavyer. Du kan anpassa styrkort efter de data som är viktigast för dig. Kontrollpaneler för analyser stöds på både iOS- och Android-operativsystem.
 
 ## Mer om den här guiden
 
@@ -26,10 +26,10 @@ Den här handboken är avsedd att hjälpa chefer för Customer Journey Analytics
 
 ## Ordlista
 
-I följande tabell beskrivs villkoren för att förstå Customer Journey Analytics kontrollpanelernas målgrupp, funktioner och funktion.
+I följande tabell beskrivs villkoren för att förstå målgruppen, funktionerna och funktionen för kontrollpanelerna i Analytics.
 
 | Term | Definition |
-| --- | --- |
+|--- |--- |
 | Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från CJA på en mobil enhet |
 | Kurator | Personen som hittar och distribuerar insikter från CJA och konfigurerar styrkorten så att de kan ses av konsumenten |
 | Insamling | Att skapa eller redigera ett mobilstyrt styrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
@@ -60,31 +60,31 @@ Du kan komma åt [!UICONTROL Blank Mobile Scorecard]-mallen på något av följa
 
 **Skapa ett nytt projekt**
 
-1. Öppna CJA och klicka på fliken **[!UICONTROL Workspace]**.
-2. Klicka på **[!UICONTROL Create New Project]** och välj projektmallen **[!UICONTROL Blank Mobile Scorecard]**.
-3. Klicka på **[!UICONTROL Create]**.
+1. Öppna Customer Journey Analytics och klicka på **Projekt**.
+2. Klicka på knappen **[!UICONTROL Create New Project]** och välj projektmallen **[!UICONTROL Blank Mobile Scorecard]**.
+3. Klicka på knappen **[!UICONTROL Create]**.
 
-![Styrkortsmall](assets/new_template.png)
+![Styrkortsmall](assets/new_template_cja.png)
 
 **Lägg till ett projekt**
 
-På skärmen **[!UICONTROL Projects]**, under fliken **[!UICONTROL Components]**, klickar du på **[!UICONTROL Add]** och väljer **[!UICONTROL Mobile Scorecard]**.
+På skärmen **[!UICONTROL Projects]**, under fliken **[!UICONTROL Components]**, klickar du på knappen **[!UICONTROL Add]** och väljer **[!UICONTROL Mobile Scorecard]**.
 
 ![Lägg till projekt](assets/add_project.png)
 
-**Använda  [!DNL Analytics] verktyg**
+**eller**
 
-I [!DNL Analytics] klickar du på menyn **[!UICONTROL Tools]** och väljer **[!UICONTROL Analytics dashboards (Mobile App)]**. Klicka på knappen **[!UICONTROL Create new scorecard]** på nästa skärm.
+Välj **[!UICONTROL Analytics dashboards (Mobile App)]** på menyn **[!UICONTROL Tools]**. Klicka på knappen **[!UICONTROL Create new scorecard]** på nästa skärm.
 
 ### Konfigurera styrkortet med data och spara det
 
 Så här implementerar du styrkortsmallen:
 
-1. Under **[!UICONTROL Properties]** (i den högra listen) anger du **[!UICONTROL Project report suite]** från vilken du vill använda data.
+1. Under **[!UICONTROL Properties]** (i den högra listen) anger du **[!UICONTROL Project data view]** från vilken du vill använda data.
 
-   ![Val av rapportsvit](assets/properties_save.png)
+   ![Val av datumvy](assets/properties_save.png)
 
-1. Om du vill lägga till en ny platta i styrkortet drar du ett mått från den vänstra panelen och släpper det i **[!UICONTROL Drag and Drop Metrics Here]**-zonen. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
+2. Om du vill lägga till en ny platta i styrkortet drar du ett mått från den vänstra panelen och släpper det i **[!UICONTROL Drag and Drop Metrics Here]**-zonen. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
 
    ![Lägg till rutor](assets/build_list.png)
 
@@ -92,13 +92,13 @@ Så här implementerar du styrkortsmallen:
    *Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.*
 
 
-1. Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta. Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL DMA Region]**, i det här exemplet) till **[!UICONTROL Unique Visitors]**-måttet genom att dra och släppa det på plattan; Dimensionerna som du lägger till visas under detaljavsnittet för den rutspecifikt **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
+3. Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta. Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL DMA Region]**, i det här exemplet) till **[!UICONTROL Unique Visitors]**-måttet genom att dra och släppa det på plattan; Dimensionerna som du lägger till visas under detaljavsnittet för den rutspecifikt **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
 
    ![Lägg till dimensioner](assets/layer_dimensions.png)
 
-   Du kan också lägga till en dimension till alla plattor genom att släppa den på styrkortets arbetsyta.
-
    När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. I den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och alternativt konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
+
+   ![Egenskapspanelen](assets/properties_tile.png)
 
    Om du klickar på plattor visas även ett dynamiskt popup-fönster hur fördelningsvyn ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
 
@@ -106,23 +106,35 @@ Så här implementerar du styrkortsmallen:
 
    Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
 
-1. Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan. Om du vill använda segmentet på alla plattor i styrkortet, släpper du rutan ovanpå styrkortet. Du kan också tillämpa segment genom att markera segment på filtermenyn under datumintervallen. Du [konfigurerar och tillämpar filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Adobe Analytics Workspace.
+4. Om du vill använda filter på enskilda plattor drar du ett filter från den vänstra panelen och släpper det direkt ovanpå plattan. Om du vill använda filtret på alla rutor i styrkortet släpper du rutan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurerar och tillämpar filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Adobe Analytics Workspace.
 
-   ![Skapa segment för filter](assets/segment_ui.png)
+   ![Skapa ett filter](assets/segment_ui.png)
 
-1. Om du vill ta bort en komponent som används på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **[!DNL Mobile Customers]**-segmentet:
+5. Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, så som visas nedan för filtret **First Time Visits**:
 
    ![Remove_components](assets/new_remove.png)
 
-1. Under styrkort **[!UICONTROL Properties]** kan du även ange följande:
+6. Lägg till och ta bort datumintervallkombinationer som kan väljas i styrkortet genom att markera listrutan för datumintervall.
 
-   * A **[!UICONTROL Default date range]**. De intervall som du anger här kommer att vara samma som används för den verkställande användarens första åtkomst till styrkortet i deras app.
+   ![Nytt poängkort](assets/new_score_card.png)
 
-   * A **[!UICONTROL Comparison date range]**
+   Varje nytt styrkort börjar med 6 kombinationer av datumintervall som fokuserar på data från idag och igår. Du kan ta bort onödiga datumintervall genom att klicka på x eller redigera varje datumintervallkombination genom att klicka på pennan.
 
-   * Alla **[!UICONTROL Segments]** som ska användas på hela styrkortet
+   ![Nytt poängkort2](assets/new_score_card2.png)
 
-1. Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänster på skärmen och skriver det nya namnet.
+   Om du vill skapa eller ändra ett primärt datum använder du listrutan för att välja bland tillgängliga datumintervall eller drar och släpper en datumkomponent från den högra listen i släppzonen.
+
+   ![Nytt poängkort3](assets/new_score_card3.png)
+
+   Om du vill skapa ett jämförelsedatum kan du välja bland praktiska förinställningar för vanliga tidsjämförelser i listrutan. Du kan också dra och släppa en datumkomponent från den högra listen.
+
+   ![Nytt poängkort4](assets/new_score_card4.png)
+
+   Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett nytt genom att klicka på kalenderikonen.
+
+   ![Nytt poängkort4](assets/new_score_card5.png)
+
+7. Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent. Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänster på skärmen och skriver det nya namnet.
 
    ![Naming_Scorecards](assets/new_name.png)
 
@@ -158,7 +170,7 @@ För att underlätta för chefsanvändare att komma åt dina styrkort i appen se
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
 * De har en giltig inloggning på Adobe Analytics
 * Du har skapat mobila styrkort för dem och delat dessa styrkort med dem
-* De har tillgång till Analysis Workspace och rapportsviten som styrkortet bygger på
+* De har tillgång till Analysis Workspace och datavyn som styrkortet baseras på
 * De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort till **[!UICONTROL Share embedded components]**.
 
 ### Hjälp chefsanvändare med appen
@@ -225,13 +237,9 @@ För chefer:
 
    * En tabell inkluderas för att visa data med dimensioner som lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
 
-5. Så här ändrar du datumintervall för styrkortet:
+5. Om du vill ändra datumintervall för styrkortet trycker du på datumhuvudet och väljer den primära kombination och den kombination av datumintervall som du vill visa.
 
    ![Ändra datum](assets/changedate.png)
-
-   * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
-
-   * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det intervall som omedelbart föregår det. Tryck på något av dessa två alternativ för att markera det första intervallet. I listan **[!UICONTROL COMPARE TO]** trycker du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
 6. Lämna feedback om den här appen:
 
