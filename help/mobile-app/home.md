@@ -2,9 +2,9 @@
 title: Kontrollpaneler för analyser - översikt
 description: Produktdokumentation och självhjälp för kontrollpaneler i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
+source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Analytics [!UICONTROL dashboards] - översikt
 
-**Analyserna[!UICONTROL dashboards]** ger alltid insikter från Customer Journey Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS- och Android-operativsystem.
+**Analyserna[!UICONTROL dashboards]** ger alltid insikter från Adobe Analytics, inklusive Customer Journey Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade indelningar och trendade datavyer. Mobilappen stöds på både iOS- och Android-operativsystem.
 
 Mer information om Analytics [!UICONTROL dashboards] finns i följande resurser:
 
