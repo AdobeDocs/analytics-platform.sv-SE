@@ -2,10 +2,10 @@
 title: Översikt över beräknade mätvärden
 description: 'Läs mer om '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 5%
+source-wordcount: '510'
+ht-degree: 4%
 
 ---
 
@@ -43,7 +43,16 @@ Här följer en jämförelse av funktionerna för beräknade värden och avancer
 
 | Verktyg | Funktioner |
 |--- |--- |
-| Beräknad metrisk Builder | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till textbundna filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala besökare med internationella besökare.</li><li>Använd statistiska funktioner.</li><li> Ange detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
+| Beräknad metrisk Builder | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till inline-filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala besökare med internationella besökare.</li><li>Använd statistiska funktioner.</li><li> Tillhandahåll detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
 | Hanterare för beräknade mätvärden | <ul><li>Dela mätvärden med andra.</li><li>Godkänn och strukturera mätvärden.</li><li>Ordna (tagga) mätvärden så att andra kan hitta dem.</li><li>Ta bort mätvärden.</li><li>Byt namn på mätvärden.</li></ul> |
 | API för beräknade värden | En del av API-uppsättningen för Adobe Analytics 2.0. |
 
+## Mallar för beräknade värden i CJA
+
+| Namn på beräknat mått | Beskrivning av beräknat mått |
+| --- | --- |
+| Sessioner per person | Genomsnittligt antal sessioner per person |
+| Starthastighet för session | Den procentandel av tiden som ett dimensionsobjekt inträffade vid den första händelsen i en session. |
+| Sessionens sluthastighet | Den procentandel av tiden som ett dimensionsobjekt inträffade för den senaste händelsen i en session. |
+| Tilldelad tid per person | Den genomsnittliga tiden en person tillbringat på en given dimensionspost. |
+| Tilldelad tid per session | Den genomsnittliga tiden en person tillbringat per session för ett givet dimensionsobjekt. |
