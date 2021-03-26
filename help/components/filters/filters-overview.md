@@ -2,9 +2,9 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 translation-type: tm+mt
-source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '967'
 ht-degree: 1%
 
 ---
@@ -80,3 +80,11 @@ Händelsebehållare innehåller värdebaserade ensidesindelningar:
 * Visa utkast
 * Listdimensioner
 * Marknadsföringsdimensioner (i samband med händelser)
+
+## Inkörbar filtermall
+
+Traditionell analys innehåller många färdiga mallsegment (filter) och beräknade värden. Många av dem gäller inte i CJA, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i CJA.
+
+| Filternamn | Beskrivning |
+| --- | --- |
+| Alla data | Detta är ett obligatoriskt filter som liknar segmentet&quot;Alla besök&quot; i traditionell Adobe-analys. Den läggs till dynamiskt i rapporter när ett mätvärde läggs till på raden i en frihandstabell. |
