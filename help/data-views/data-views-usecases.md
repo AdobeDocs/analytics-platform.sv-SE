@@ -2,15 +2,19 @@
 title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
 
 # Datavyer använder exempel
+
+>[!IMPORTANT]
+>
+>Den här funktionen är för närvarande begränsad i testningen.
 
 De här användningsexemplen visar flexibiliteten och kraften i datavyer i Customer Journey Analytics.
 
