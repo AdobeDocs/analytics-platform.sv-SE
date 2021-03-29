@@ -2,7 +2,7 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 translation-type: tm+mt
-source-git-commit: 6cfab7fc7ce3360b5ea2ed8bdd7f3e0a8e76a24d
+source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 1%
@@ -19,7 +19,7 @@ När du skapar en datavy måste du antingen skapa mått och mått från schemael
 1. Gå till fliken **Datavyer** i Customer Journey Analytics.
 2. Klicka på **Lägg till** för att skapa en ny datavy och konfigurera dess inställningar.
 
-![](assets/)
+![](assets/new-data-view.png)
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
