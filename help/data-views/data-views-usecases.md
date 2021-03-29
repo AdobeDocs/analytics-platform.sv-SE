@@ -2,9 +2,9 @@
 title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
+source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Datavyer använder exempel
 
-Möjligheterna att
+De här användningsexemplen visar flexibiliteten och kraften i datavyer i Customer Journey Analytics.
 
 ## Skapa ett ordermått från ett pageTitle-schemafält (sträng)
 
