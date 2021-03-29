@@ -2,42 +2,48 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 translation-type: tm+mt
-source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 1%
+source-wordcount: '2364'
+ht-degree: 0%
 
 ---
 
 
 # Skapa en ny datavy
 
-När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. Genom att skapa mätvärden eller dimensioner får du en enorm flexibilitet. Tidigare var antagandet att om du hade datauppsättningar i Adobe Experience Platform var strängfält dimensioner och numeriska fält var mätvärden. För att kunna ändra något av dessa fält var du tvungen att redigera schemat i Platform. Gränssnittet för datavyer ger nu en friare definition av mått och mått.
+>[!IMPORTANT]
+>
+>Den här funktionen är för närvarande begränsad i testningen.
 
-## Konfigurera inställningar och behållare för datavyer
+När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. Genom att skapa mätvärden eller dimensioner får du en enorm flexibilitet. Tidigare var antagandet att om du hade datauppsättningar i Adobe Experience Platform användes strängfält som dimensioner och numeriska fält som mått. För att kunna ändra något av dessa fält var du tvungen att redigera schemat i Platform. Gränssnittet för datavyer tillåter nu en [frihandsdefinition av mått och mått](/help/data-views/data-views.md).
 
-1. Gå till fliken **Datavyer** i Customer Journey Analytics.
-2. Klicka på **Lägg till** för att skapa en ny datavy och konfigurera dess inställningar.
+## 1. Konfigurera inställningar och behållare för datavyer
+
+1. Gå till fliken **[!UICONTROL Data Views]** i Customer Journey Analytics.
+2. Klicka på **[!UICONTROL Add]** om du vill skapa en ny datavy och konfigurera dess inställningar.
 
 ![](assets/new-data-view.png)
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| Anslutning | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller en eller flera Adobe Experience Platform-datauppsättningar. |
-| Namn | Det är obligatoriskt att ge datavyn ett namn. |
-| Beskrivning | En detaljerad beskrivning är inte obligatorisk, men rekommenderas. |
-| Tidszon | Välj vilken tidszon du vill att dina data ska visas i. |
-| Taggar | Med taggar kan du ordna datavyer i kategorier. |
-| Behållare | Du kan byta namn på behållarna här och så här visas de i alla Workspace-projekt som baseras på den här datavyn. Behållare används i filter och utfall/flöde för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
-| Personbehållarens namn är.. | Person (standard). Personbehållaren innehåller alla besök och sidvisningar för besökare inom en viss tidsperiod. Du kan byta namn på detta till &quot;Användare&quot; eller något annat uttryck som du föredrar. |
-| Sessionsbehållarens namn är.. | Session (standard). Med sessionsbehållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på detta till Besök eller något annat uttryck som du föredrar. |
-| Händelsebehållarens namn är.. | Händelse (standard). Händelsebehållaren definierar vilka sidhändelser som du vill inkludera eller exkludera från ett filter. |
+| [!UICONTROL Connection] | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller en eller flera Adobe Experience Platform-datauppsättningar. |
+| [!UICONTROL Name] | Det är obligatoriskt att ge datavyn ett namn. |
+| [!UICONTROL Description] | En detaljerad beskrivning är inte obligatorisk, men rekommenderas. |
+| [!UICONTROL Time zone] | Välj vilken tidszon du vill att dina data ska visas i. |
+| [!UICONTROL Tags] | Med taggar kan du ordna datavyer i kategorier. |
+| [!UICONTROL Containers] | Du kan byta namn på behållarna här och så här visas de i alla Workspace-projekt som baseras på den här datavyn. Behållare används i filter och utfall/flöde för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Person container name is…] | [!UICONTROL Person] (standard). Behållaren [!UICONTROL Person] innehåller alla besök och sidvisningar för besökare inom en viss tidsperiod. Du kan byta namn på detta till &quot;Användare&quot; eller något annat uttryck som du föredrar. |
+| [!UICONTROL Session container name is…] | [!UICONTROL Session] (standard). Med [!UICONTROL Session]-behållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på detta till Besök eller något annat uttryck som du föredrar. |
+| [!UICONTROL Event container name is…] | [!UICONTROL Event] (standard). Behållaren [!UICONTROL Event] definierar vilka sidhändelser som du vill ta med eller exkludera från ett filter. |
 
-Därefter ska du skapa mått och mått utifrån schemaelement.
+Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använda standardkomponenter.
 
-## Skapa mått och dimensioner från schemaelement
+## 2. Skapa mått och dimensioner från schemaelement
 
-1. Klicka på fliken [!UICONTROL Components] i [!UICONTROL Customer Journey Aalytics] > [!UICONTROL Data Views].
+
+
+1. Klicka på fliken [!UICONTROL Components] i [!UICONTROL Customer Journey Analytics] > [!UICONTROL Data Views].
 
 ![](assets/components-tab.png)
 
@@ -45,9 +51,13 @@ Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller dat
 
 1. Dra nu ett schemafält, till exempel [!UICONTROL pageTitle], från den vänstra listen till avsnittet Metrisk eller Dimensioner.
 
-   Du kan dra samma schemafält till mått- eller mätområdena flera gånger och konfigurera samma mått eller mätvärden på olika sätt. I fältet **[!UICONTROL pageTitle]** kan du till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot;. Från **[!UICONTROL pageTitle]**; kan du också skapa mätvärden från ett strängvärde. Du kan till exempel skapa ett eller flera **[!UICONTROL Orders]**-mått med olika attribueringsinställningar och olika include/exclude-värden.
+   Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt. I fältet **[!UICONTROL pageTitle]** kan du till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot;. Från **[!UICONTROL pageTitle]**; kan du också skapa mätvärden från ett strängvärde. Du kan till exempel skapa ett eller flera **[!UICONTROL Orders]**-mått med olika attribueringsinställningar och olika include/exclude-värden.
 
    ![](assets/components-tab-3.png)
+
+   >[!NOTE]
+   >
+   >Du kan dra i hela schemafältsmappar från den vänstra listen och de sorteras automatiskt i traditionella avsnitt. Strängfält avslutas med avsnittet [!UICONTROL Dimensions] och siffror i avsnittet [!UICONTROL Metrics]. Du kan också klicka på **[!UICONTROL Add all]** och lägga till alla schemafält.
 
 1. När du har valt komponenten visas ett antal inställningar till höger. Konfigurera komponenten med de inställningar som beskrivs nedan.
 
@@ -66,8 +76,8 @@ Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller dat
 | [!UICONTROL Dataset] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken typ av fält som komponenten kommer från (t.ex. String, Integer, osv.). Det här fältet kan innehålla flera datauppsättningar, till exempel när du kombinerar flera rapportsviter. |
 | [!UICONTROL Schema type] | Avser om komponenten är en sträng, ett heltal osv. |
 | [!UICONTROL Component ID] | Obligatoriskt. [CJA API](https://adobe.io/cja-apis/docs) använder det här fältet för att referera till komponenten. Du kan klicka på redigeringsikonen och ändra det här komponent-ID:t. Om du ändrar det här komponent-ID:t bryts alla befintliga arbetsyteprojekt som innehåller den här komponenten.<br>Om du någonsin skapar en annan datavy som använder ett annat fält för en pageTitle-dimension, kan du byta namn på den och göra dimensionen tvärdatavyn kompatibel. |
-| Bana | Obligatoriskt. Ett icke-redigerbart fält som visar schemasökvägen som komponenten kommer från. |
-| Dölj komponent i rapportering | Standard = av. Gör att du kan strukturera ut komponenten från datavyn när den används i rapporter. Detta påverkar inte behörigheter, bara komponentkurering. Du kan med andra ord dölja komponenten för icke-administratörer i rapporter. Administratörer kan fortfarande komma åt den genom att klicka på [!UICONTROL Show All Components] i ett Analysis Workspace-projekt. |
+| [!UICONTROL Path] | Obligatoriskt. Ett icke-redigerbart fält som visar schemasökvägen som komponenten kommer från. |
+| [!UICONTROL Hide component in reporting] | Standard = av. Gör att du kan strukturera ut komponenten från datavyn när den används i rapporter. Detta påverkar inte behörigheter, bara komponentkurering. Du kan med andra ord dölja komponenten för icke-administratörer i rapporter. Administratörer kan fortfarande komma åt den genom att klicka på [!UICONTROL Show All Components] i ett Analysis Workspace-projekt. |
 
 ### Konfigurera formatinställningar
 
@@ -121,18 +131,20 @@ Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &
 
 [!UICONTROL No Value Options] -inställningarna motsvarar  [!UICONTROL Unspecified] eller  [!UICONTROL None] värden vid rapportering. I datavysningsgränssnittet kan du, komponentvis, bestämma hur du vill att dessa värden ska behandlas i rapporter. Du kan också byta namn på [!UICONTROL No value] till något som passar din miljö bättre, till exempel [!UICONTROL Null], [!UICONTROL Not set] eller andra.
 
-Viktigt: När du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla förekomster av strängen &quot;Red&quot; som visas i själva data också att hamna under samma radobjekt som du har angett.
+>[!NOTE]
+>
+>När du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla förekomster av strängen &quot;Red&quot; som visas i själva data också att hamna under samma radobjekt som du har angett.
 
-Observera också att det du anger i det här fältet kan användas för speciell användargränssnittsbehandling av radobjektet Inget värde i rapporteringen enligt inställningen Inga värdealternativ. (Inte säker på vad detta innebär.)
+Observera också att det du anger i det här fältet kan användas för speciell gränssnittsbehandling av radobjektet [!UICONTROL No Value] vid rapportering enligt inställningen [!UICONTROL No Value Options].
 
 ![](assets/no-value-options.png)
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| Ring [!UICONTROL No value] om det visas... | Här kan du byta namn på **[!UICONTROL No value]** till något annat. |
-| Visa inte **[!UICONTROL No value]** som standard | Visar inte det här värdet vid rapportering. |
-| Visa **[!UICONTROL No value]** som standard | Visar det här värdet vid rapportering. |
-| Behandla **[!UICONTROL No value]** som ett värde | Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. |
+| [!UICONTROL If shown, call No value]… | Här kan du byta namn på **[!UICONTROL No value]** till något annat. |
+| [!UICONTROL Don't show No value by default] | Visar inte det här värdet vid rapportering. |
+| [!UICONTROL Show No value by default] | Visar det här värdet vid rapportering. |
+| [!UICONTROL Treat No value as a value] | Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. |
 
 ### Konfigurera inställningar för beständighet
 
@@ -142,9 +154,9 @@ De här inställningarna liknar eVar i vanliga Adobe Analytics.
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| Ange beständighet | Växla nyckel |
-| Allokering | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: Senaste, Original, Instance, Alla. Om du vill att ett värde ska finnas kvar (liknande eVars i traditionell Analytics) är det här du skulle ange det. Den enda viktiga skillnaden är att den maximala beständighet du kan ange är 90 dagar. [!UICONTROL Never expire] är inte heller ett alternativ. |
-| Förfaller | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: Session (standard), Person, Time, Metric. Du kanske måste kunna förfalla dimensionen på ett köp (t.ex. interna sökvillkor eller andra användningsfall för varuexponering). Med &quot;Metrisk&quot; kan du ange någon av de definierade måtten som måttets förfallotid för den här dimensionen (t.ex. ett &quot;Inköp&quot;-mått). |
+| [!UICONTROL Set persistence] | Växla nyckel |
+| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: Senaste, Original, Instance, Alla. Om du vill att ett värde ska finnas kvar (liknande eVars i traditionell Analytics) är det här du skulle ange det. Den enda viktiga skillnaden är att den maximala beständighet du kan ange är 90 dagar. [!UICONTROL Never expire] är inte heller ett alternativ. |
+| [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). [!UICONTROL Metric] gör att du kan ange något av de definierade måtten som förfallodatum för den här dimensionen (t.ex. ett  [!UICONTROL Purchase] mått). |
 
 ### Konfigurera inställningar för värdepaketering
 
@@ -152,35 +164,35 @@ De här inställningarna liknar eVar i vanliga Adobe Analytics.
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| Bucket-värde | Gör att du kan skapa en paketerad version av en numerisk dimension. På så sätt kan du rapportera flera intäktsgrupper eller andra numeriska värden som en dimension i rapporteringen. Du kan skapa upp till fem fickor. |
-| Upp till | Här kan du ange gränserna för den första numeriska dimensionskassetten. Detta gäller endast för numeriska mått. |
-| Mellan och upp till | Här kan du ange gränserna för efterföljande numeriska dimensionsintervall. |
-| Lägg till bucket | Gör att du kan lägga till ytterligare en bucket i en numerisk dimensionsbucketning. |
+| [!UICONTROL Bucket value] | Gör att du kan skapa en paketerad version av en numerisk dimension. På så sätt kan du rapportera flera intäktsgrupper eller andra numeriska värden som en dimension i rapporteringen. Du kan skapa upp till fem fickor. |
+| [!UICONTROL Up to] | Här kan du ange gränserna för den första numeriska dimensionskassetten. Detta gäller endast för numeriska mått. |
+| [!UICONTROL Between and up to] | Här kan du ange gränserna för efterföljande numeriska dimensionsintervall. |
+| [!UICONTROL Add bucket] | Gör att du kan lägga till ytterligare en bucket i en numerisk dimensionsbucketning. |
 
-## Använd standardkomponenter
+### Använd [!UICONTROL Standard components]
 
 Förutom att skapa mått och mått från schemaelement kan du även använda standardkomponenter i datavyer.
 
-Standardkomponenter är komponenter som inte genereras från schemafält för datauppsättningar, utan i stället genereras av systemet. Vissa systemkomponenter krävs i en datavy för att underlätta rapportering i Analysis Workspace, medan andra systemkomponenter är valfria.
+[!UICONTROL Standard components] är komponenter som inte genereras från schemafält för datauppsättningar, utan i stället genereras av systemet. Vissa systemkomponenter krävs i en datavy för att underlätta rapportering i Analysis Workspace, medan andra systemkomponenter är valfria.
 
-![](RackMultipart20210326-4-374d6q_html_1100d8d54f8c09ac.png)
+![](assets/standard-components.png)
 
 Nödvändiga standardkomponenter
 
 | Komponentnamn | Dimension eller mått | Anteckningar |
 | --- | --- | --- |
-| Personer | Mått | Kallas tidigare [!UICONTROL Unique Visitors] i traditionell analys. Det här måttet baseras på det person-ID som anges i en anslutning. |
-| Sessioner | Mått | Kallas tidigare [!UICONTROL Visits] i traditionell analys. Det här måttet baseras på sessionsinställningarna som anges nedan. |
-| Händelser | Mått | Kallas tidigare [!UICONTROL Occurrences] i traditionell analys. Det här måttet representerar antalet rader från alla händelsedatamängder i en anslutning. |
-| Dag | Dimension |  |
-| Vecka | Dimension |  |
-| Månad | Dimension |  |
-| Kvartal | Dimension |  |
-| År | Dimension |  |
-| Timme | Dimension |  |
-| Minut | Dimension |  |
+| [!UICONTROL People] | Mått | Kallas tidigare [!UICONTROL Unique Visitors] i traditionell analys. Det här måttet baseras på det person-ID som anges i en anslutning. |
+| [!UICONTROL Sessions] | Mått | Kallas tidigare [!UICONTROL Visits] i traditionell analys. Det här måttet baseras på sessionsinställningarna som anges nedan. |
+| [!UICONTROL Events] | Mått | Kallas tidigare [!UICONTROL Occurrences] i traditionell analys. Det här måttet representerar antalet rader från alla händelsedatamängder i en anslutning. |
+| [!UICONTROL Day] | Dimension |  |
+| [!UICONTROL Week] | Dimension |  |
+| [!UICONTROL Month] | Dimension |  |
+| [!UICONTROL Quarter] | Dimension |  |
+| [!UICONTROL Year] | Dimension |  |
+| [!UICONTROL Hour] | Dimension |  |
+| [!UICONTROL Minute] | Dimension |  |
 
-## Valfria standardkomponenter
+### Valfria standardkomponenter
 
 Vissa systemkomponenter krävs i en datavy för att underlätta rapportering i Analysis Workspace, medan de nedan är valfria.
 
@@ -190,7 +202,24 @@ Vissa systemkomponenter krävs i en datavy för att underlätta rapportering i A
 | [!UICONTROL Session Ends] | Mått | Det här måttet räknar antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en filterdefinition för att filtrera ned saker till den sista händelsen i varje session. Observera att detta är ett annat beteende än [!UICONTROL Exits] eftersom det alltid räknar den sista händelsen i en session - inte det sista värdet som finns för en dimension i en session. |
 | [!UICONTROL Time Spent (seconds)] | Mått | Måttet [!UICONTROL Time Spent] fungerar på liknande sätt som i traditionella Adobe Analytics - vilket ökar tiden mellan två olika värden för en dimension. Men med måtten Session Starts and Session Ends kan kunderna själva konstruera de beräknade värdena [!UICONTROL Time Spent per Person] och [!UICONTROL Time Spent per Session] (se OTB-filter och beräknade värden nedan). |
 | [!UICONTROL Time Spent per Event] | Dimension | Det här är faktiskt bara en felsökning av ovanstående mätvärden. Vi erbjuder standardfickor, men du kan ändra bucklarna till vad du vill. |
-| Tilldelad tid per session | Dimension |  |
-| Tilldelad tid per person | Dimension |  |
-| Batch-ID | Dimension |  |
-| Datauppsättnings-ID | Dimension |  |
+| [!UICONTROL Time Spent per Session] | Dimension |  |
+| [!UICONTROL Time Spent per Person] | Dimension |  |
+| [!UICONTROL Batch ID] | Dimension |  |
+| [!UICONTROL Dataset ID] | Dimension |  |
+
+### Filtrera schemafält och dimensioner/mått
+
+Du kan filtrera schemafält i den vänstra listen med följande datatyper:
+
+![](assets/filter-fields.png)
+
+Du kan också filtrera efter datauppsättningar och efter om ett schemafält innehåller data eller om det är en identitet:
+
+![](assets/filter-other.png)
+
+## 3. Lägga till ett globalt filter i datavyn
+
+Du kan lägga till filter (kallades tidigare segment) som gäller för hela datavyn, ungefär som den filtrerade datavyn i virtuella rapportsviter (traditionella Adobe Analytics).
+
+1. Klicka på fliken [!UICONTROL Settings] i [!UICONTROL Data views].
+1. Dra ett filter från listan i den vänstra listen till fältet [!UICONTROL Add filters].
