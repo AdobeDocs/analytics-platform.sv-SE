@@ -2,9 +2,9 @@
 title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Den här funktionen är för närvarande begränsad i testningen.
+>Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
 De här användningsexemplen visar flexibiliteten och kraften i datavyer i Customer Journey Analytics.
 
@@ -38,7 +38,12 @@ Du kan också skapa ytterligare ett [!UICONTROL Orders]-mått från samma fält 
 Tidigare behandlades heltal automatiskt som mått i CJA. Nu kan siffror (inklusive anpassade händelser från Adobe Analytics) behandlas som dimensioner. Här är ett exempel:
 
 1. Dra heltalet [!UICONTROL call_length_min] till avsnittet [!UICONTROL Dimensions] under [!UICONTROL Included Components]:
+
    ![](assets/integers.png)
 
-1. Nu kan du lägga till [!UICONTROL Value Bucketing] för att presentera den här dimensionen på ett paketerat sätt vid rapportering. I annat fall visas varje instans av den här dimensionen som ett radobjekt i arbetsytan.
+1. Nu kan du lägga till [!UICONTROL Value Bucketing] för att presentera den här dimensionen på ett paketerat sätt vid rapportering. (Utan att låsa visas varje instans av den här dimensionen som ett radobjekt i Workspace-rapporten.)
+
    ![](assets/bucketing.png)
+
+Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview2.md).
+En konceptuell översikt över datavyer finns i [Översikt över datavyer](/help/data-views/data-views.md).
