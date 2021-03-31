@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2347'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Den här funktionen är för närvarande begränsad i testningen.
+>Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
-När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. Genom att skapa mätvärden eller dimensioner får du en enorm flexibilitet. Tidigare var antagandet att om du hade datauppsättningar i Adobe Experience Platform användes strängfält som dimensioner och numeriska fält som mått. För att kunna ändra något av dessa fält var du tvungen att redigera schemat i Platform. Gränssnittet för datavyer tillåter nu en [frihandsdefinition av mått och mått](/help/data-views/data-views.md).
+När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. Genom att skapa mätvärden eller dimensioner får du en enorm flexibilitet. Tidigare var antagandet att om du hade datauppsättningar i Adobe Experience Platform användes strängfält som dimensioner och numeriska fält som mått. För att kunna ändra något av dessa fält var du tvungen att redigera schemat i Platform. Gränssnittet för datavyer tillåter nu en [frihandsdefinition av mått och mått](/help/data-views/data-views.md). Mer användningsexempel finns i [Datavyer använder exempel](/help/data-views/data-views-usecases.md).
 
 ## 1. Konfigurera inställningar och behållare för datavyer
 
@@ -40,8 +40,6 @@ När du skapar en datavy måste du antingen skapa mått och mått från schemael
 Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använda standardkomponenter.
 
 ## 2. Skapa mått och dimensioner från schemaelement
-
-
 
 1. Klicka på fliken [!UICONTROL Components] i [!UICONTROL Customer Journey Analytics] > [!UICONTROL Data Views].
 
@@ -112,7 +110,7 @@ Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL Case sensitive] | Standard = På. Den här inställningen skiljer sig något åt för Dimensioner jämfört med mått.<ul><li>**Mått**: Den här inställningen gäller bara för  [!UICONTROL Include/Exclude Values] avsnittet. Du kan ange om filtret du använder ska vara skiftlägeskänsligt.</li><li>**Dimension** : Den här inställningen avgör om data i den här dimensionen ska aggregeras på ett skiftlägeskänsligt eller skiftlägeskänsligt sätt. Detta ändrar hur rapporter/filter/attribueringsinställningar körs för ett strängfält.</li></ul> |
+| [!UICONTROL Case sensitive] | Standard = På. Den här inställningen gäller bara för avsnittet [!UICONTROL Include/Exclude Values]. Du kan ange om inkluderings-/exkluderingsregeln som du tillämpar ska vara skiftlägeskänslig. |
 | [!UICONTROL Match] | Här kan du ange vilka värden du vill ta hänsyn till för rapportering före attribuering och segmentering (t.ex. endast använda värden som innehåller frasen &quot;error&quot;). Du kan ange: **[!UICONTROL If all criteria are met]** eller **[!UICONTROL If any criteria are met]**. |
 | [!UICONTROL Criteria] | Här kan du ange den matchningslogik som ska användas för en viss filterregel.<ul><li>**Sträng**: Innehåller frasen, Innehåller valfri term, Innehåller alla termer, Innehåller ingen term, Innehåller inte frasen, Lika med, Är inte lika, Börjar med, Slutar med</li><li>**Dubbel/heltal**: är lika med, inte lika med, är större än, är mindre än, är större än eller lika med, är mindre än eller lika med</li><li>**Datum**: är lika med, inte lika med, är senare än, är före, finns i</li></ul> |
 | [!UICONTROL Match operand] | Här kan du ange den matchningsoperand som matchningsoperatorn ska användas på.<ul><li>**Sträng**: Textfält</li><li>**Dubbel/heltal**: Textfält med upp-/nedpilar för numeriska värden</li><li>**Datum**: Väljare för daggranularitet (kalender)</li><li>**Datum och tid**: Val för datum- och tidsgranularitet</li></ul> |
@@ -131,10 +129,6 @@ Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &
 
 [!UICONTROL No Value Options] -inställningarna motsvarar  [!UICONTROL Unspecified] eller  [!UICONTROL None] värden vid rapportering. I datavysningsgränssnittet kan du, komponentvis, bestämma hur du vill att dessa värden ska behandlas i rapporter. Du kan också byta namn på [!UICONTROL No value] till något som passar din miljö bättre, till exempel [!UICONTROL Null], [!UICONTROL Not set] eller andra.
 
->[!NOTE]
->
->När du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla förekomster av strängen &quot;Red&quot; som visas i själva data också att hamna under samma radobjekt som du har angett.
-
 Observera också att det du anger i det här fältet kan användas för speciell gränssnittsbehandling av radobjektet [!UICONTROL No Value] vid rapportering enligt inställningen [!UICONTROL No Value Options].
 
 ![](assets/no-value-options.png)
@@ -144,7 +138,7 @@ Observera också att det du anger i det här fältet kan användas för speciell
 | [!UICONTROL If shown, call No value]… | Här kan du byta namn på **[!UICONTROL No value]** till något annat. |
 | [!UICONTROL Don't show No value by default] | Visar inte det här värdet vid rapportering. |
 | [!UICONTROL Show No value by default] | Visar det här värdet vid rapportering. |
-| [!UICONTROL Treat No value as a value] | Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. |
+| [!UICONTROL Treat No value as a value] | Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. Observera att när du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla förekomster av strängen &quot;Red&quot; som visas i själva data också att hamna under samma radobjekt som du har angett. |
 
 ### Konfigurera inställningar för beständighet
 
@@ -155,10 +149,12 @@ De här inställningarna liknar eVar i vanliga Adobe Analytics.
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
 | [!UICONTROL Set persistence] | Växla nyckel |
-| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: Senaste, Original, Instance, Alla. Om du vill att ett värde ska finnas kvar (liknande eVars i traditionell Analytics) är det här du skulle ange det. Den enda viktiga skillnaden är att den maximala beständighet du kan ange är 90 dagar. [!UICONTROL Never expire] är inte heller ett alternativ. |
+| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Om du vill att ett värde ska finnas kvar (liknande eVars i traditionell Analytics) är det här du skulle ange det. Den enda viktiga skillnaden är att den maximala beständighet du kan ange är 90 dagar. [!UICONTROL Never expire] är inte heller ett alternativ. |
 | [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). [!UICONTROL Metric] gör att du kan ange något av de definierade måtten som förfallodatum för den här dimensionen (t.ex. ett  [!UICONTROL Purchase] mått). |
 
 ### Konfigurera inställningar för värdepaketering
+
+En&quot;kryss mellan 5 och 10&quot; kommer till exempel att visas som en radpost&quot;5 till 10&quot; i Workspace-rapportering.
 
 ![](assets/value-bucketing.png)
 
@@ -173,7 +169,7 @@ De här inställningarna liknar eVar i vanliga Adobe Analytics.
 
 Förutom att skapa mått och mått från schemaelement kan du även använda standardkomponenter i datavyer.
 
-[!UICONTROL Standard components] är komponenter som inte genereras från schemafält för datauppsättningar, utan i stället genereras av systemet. Vissa systemkomponenter krävs i en datavy för att underlätta rapportering i Analysis Workspace, medan andra systemkomponenter är valfria.
+[!UICONTROL Standard components] är komponenter som inte genereras från schemafält för datauppsättningar, utan i stället genereras av systemet. Vissa systemkomponenter krävs i alla datavyer för att underlätta rapporteringen i Analysis Workspace, medan andra systemkomponenter är valfria.
 
 ![](assets/standard-components.png)
 
