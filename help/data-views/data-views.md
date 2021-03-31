@@ -2,9 +2,9 @@
 title: Vad är en datavy i Customer Journey Analytics?
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Den här funktionen är för närvarande begränsad i testningen.
+>Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
 En datavy placeras ovanpå en Customer Journey Analytics (CJA) [anslutning](/help/connections/create-connection.md). En anslutning kombinerar en eller flera datauppsättningar från Adobe Experience Platform och kopplar den till CJA. Datavyn anger hur du vill tolka element i data i anslutningen, t.ex. mått, dimensioner, sessioner osv. Datavyer definieras som förberedelser för rapportering av data i Workspace.
 
@@ -37,15 +37,15 @@ Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäl
 
 * **Du kan redigera ID:t för en komponent**  - det används för kompatibilitet mellan datavyer. Komponent-ID är det som API:t för rapportering använder för att identifiera ett visst mått eller en viss dimension. Eftersom du godtyckligt kan skapa många mätvärden eller dimensioner från ett XDM-fält får du möjlighet att definiera ditt eget komponent-ID. Därför kan ett mätresultat som du använder i ett Workspace-projekt vara kompatibelt med alla datavyer (och API:t), även om de baseras på helt olika fält från olika anslutningar eller datavyer eller från ett annat schema i XDM.
 
-* **Du kan ange ett eget komponentnamn som ska visas i Analysis Workspace**. Som standard ärvs det här namnet från schemats visningsnamn, men du kan nu skriva över det för den specifika datavyn. (Detta är också hur komponentkurering fungerar i virtuella rapportsviter i traditionella Adobe Analytics).
+* **Du kan ange ett eget komponentnamn som ska visas i Analysis Workspace**. Som standard ärvs det här namnet från schemats visningsnamn, men du kan nu skriva över det för den här specifika datavyn. (Detta är också hur komponentkurering fungerar i virtuella rapportsviter i traditionella Adobe Analytics).
 
 * **Du kan visa mer schemarelaterad information om komponenter** , till exempel: vilken datamängdstyp (händelse, profil, sökning) som den kommer från, vilken schematyp (sträng, heltal osv.) Den kom från. och dess schemasökväg (det XDM-fält som det baseras på).
 
 * **Du kan tagga en** komponent så att det blir enklare att söka efter den i arbetsytan.
 
-* **Du kan dölja en komponent i rapporter**. Vissa mått- och dimensionsinställningar i DV2 kräver ett andra mått eller en andra dimension för konfigurationen (som till exempel metrisk borttagning av dubbletter eller borttagning av dubbletter). På så sätt kan du definiera ett mått eller en dimension som kan användas i inställningarna för ett annat mått eller en annan dimension utan att exponeras direkt i rapporter (till exempel köp-ID).
+* **Du kan dölja en komponent i rapporter**. Vissa mått- och dimensionsinställningar kräver ett andra mått eller en andra dimension för konfiguration (som till exempel metrisk borttagning av dubbletter eller borttagning av dubbletter). På så sätt kan du definiera ett mått eller en dimension som kan användas i inställningarna för ett annat mått eller en annan dimension utan att exponeras direkt i rapporter (till exempel köp-ID).
 
-* **Du kan använda formatering för ett mått** , till exempel decimal, time, percent eller currency; specificera decimaler, uppåtgående trend som grönt eller rött, och ange valutaalternativ.
+* **Du kan använda formatering för ett mått**, till exempel decimal, time, percent eller currency; specificera decimaler, uppåtgående trend som grönt eller rött, och ange valutaalternativ.
 
 * Du kan **skapa ett mått eller en dimension baserat på endast vissa av värdena i schemafältet**. Om du till exempel vill ha ett felmått kan du skapa ett mätvärde från sidnamnsfältet, men bara inkludera sidor som innehåller ordet &quot;error&quot;. Felmåttet som skapas från detta stöds av filter, kan infogas i beräknade värden och fungerar med attribuering, flöde, utfall osv.
 
