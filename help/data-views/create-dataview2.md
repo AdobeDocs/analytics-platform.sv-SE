@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2308'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,6 @@ Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL Count values] | Detta gör att du kan skapa ett antal gånger ett booleskt fält har angetts till `true`; som ett mått. Exempelvis är antalet [!UICONTROL Page Views] där ett booleskt fält med namnet `isPage` är inställt på `true`. |
 | [!UICONTROL Count instances] | Här kan du ange om ett numeriskt fält eller ett datumtypsfält som används som ett mätvärde ska räkna tiden som det ställdes in i stället för själva värdet.<br> Om du vill lägga till förekomsterna av ett numeriskt fält och bara vill lägga till antalet gånger som ett fält har angetts, i stället för det faktiska värdet  ** i fältet.<br>Detta är användbart om du till exempel vill skapa ett  [!UICONTROL Orders] mätvärde från ett  [!UICONTROL Revenue] fält. Om intäkten har ställts in vill vi räkna med en enda order i stället för det numeriska intäktsbeloppet. |
 
 ### Konfigurera [!UICONTROL No Value Options]-inställningar
@@ -160,7 +159,7 @@ En&quot;kryss mellan 5 och 10&quot; kommer till exempel att visas som en radpost
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL Bucket value] | Gör att du kan skapa en paketerad version av en numerisk dimension. På så sätt kan du rapportera flera intäktsgrupper eller andra numeriska värden som en dimension i rapporteringen. Du kan skapa upp till fem fickor. |
+| [!UICONTROL Bucket value] | Gör att du kan skapa en paketerad version av en numerisk dimension. På så sätt kan du rapportera flera intäktsgrupper eller andra numeriska värden som en dimension i rapporteringen. |
 | [!UICONTROL Up to] | Här kan du ange gränserna för den första numeriska dimensionskassetten. Detta gäller endast för numeriska mått. |
 | [!UICONTROL Between and up to] | Här kan du ange gränserna för efterföljande numeriska dimensionsintervall. |
 | [!UICONTROL Add bucket] | Gör att du kan lägga till ytterligare en bucket i en numerisk dimensionsbucketning. |
@@ -190,7 +189,7 @@ Nödvändiga standardkomponenter
 
 ### Valfria standardkomponenter
 
-Vissa systemkomponenter krävs i en datavy för att underlätta rapportering i Analysis Workspace, medan de nedan är valfria.
+Vissa systemkomponenter krävs i alla datavyer för att underlätta rapportering i Analysis Workspace, medan de nedan är valfria.
 
 | Komponentnamn | Dimension eller mått | Anteckningar |
 | --- | --- | --- |
