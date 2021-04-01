@@ -2,9 +2,9 @@
 title: Kombinerade händelsedatamängder
 description: Lär dig hur CJA skapar en anslutning genom att kombinera datauppsättningar.
 translation-type: tm+mt
-source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,6 @@ När du skapar en anslutning kombinerar CJA alla scheman och datauppsättningar 
 * Scheman kombineras. Duplicerade schemafält sammanfogas.
 * Kolumnen &quot;Person-ID&quot; i varje datauppsättning sammanfogas till en enda kolumn, oavsett namn. Den här kolumnen är grunden för att identifiera unika besökare i CJA.
 * Rader bearbetas baserat på tidsstämpel.
-
-Begreppet med kombinerade datauppsättningar liknar begreppet att kombinera rapportsviter i traditionella Adobe Analytics.
 
 ## Exempel
 
@@ -74,5 +72,5 @@ Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribuering
 | string_color | metrisk_a |
 | --- | --- |
 | Gul | 6 |
-| Blå | 1 |
+| Blå | 3 |
 | Röd | 2 |
