@@ -2,9 +2,9 @@
 title: Vad är en datavy i Customer Journey Analytics?
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1080'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 0%
 >
 >Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
-En datavy placeras ovanpå en Customer Journey Analytics (CJA) [anslutning](/help/connections/create-connection.md). En anslutning kombinerar en eller flera datauppsättningar från Adobe Experience Platform och kopplar den till CJA. Datavyn anger hur du vill tolka element i data i anslutningen, t.ex. mått, dimensioner, sessioner osv. Datavyer definieras som förberedelser för rapportering av data i Workspace. Datavyer är retroaktiva och icke-förstörande. Med andra ord ändrar de inte dina underliggande data permanent.
+En datavy placeras ovanpå en Customer Journey Analytics (CJA) [anslutning](/help/connections/create-connection.md). En anslutning kombinerar en eller flera datauppsättningar från Adobe Experience Platform och kopplar den till CJA. Datavyn anger hur du vill tolka element i data i anslutningen, t.ex. mått, dimensioner, sessioner osv. Datavyer definieras som förberedelser för rapportering av data i Workspace.
 
-Om du tidigare har använt traditionella Adobe Analytics-program liknar datavyn en virtuell rapportsvit eftersom den kan vara en&quot;filtrerad&quot; vy av data.
+>[!NOTE]
+>
+>Alla inställningar som du markerar eller ändrar i en datavy är retroaktiva och icke-förstörande. Med andra ord ändrar de inte dina underliggande data permanent.
 
 Du kan skapa olika datavyer för samma anslutning, med mycket olika uppsättningar komponenter (mått/mått). Eller skapa datavyer med olika inställningar för tidsgräns för besök, attribuering osv. Du kan till exempel ha en datavy där alla dimensioner är inställda på [!UICONTROL Last Touch] och samtidigt en annan datavy (baserad på samma datamängd) med alla dimensioner inställda på [!UICONTROL First Touch].
 
@@ -28,7 +30,7 @@ Arbetsyteprojekt i Customer Journey Analytics baseras på datavyer.
 
 Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäller vad du kan göra med datavyer. Med dessa förbättringar kan du **ändra schemaelementinställningarna spontant i datavyer, utan att behöva ändra schemat i Adobe Experience Platform eller implementera om CJA-miljön**.
 
-* **Du kan ändra en komponent från ett mått till en Dimension och tvärtom**. Du kan skapa mått från strängfält eller skapa dimensioner från numeriska fält. Det gör livet enklare genom att du inte behöver skapa ett numeriskt fält i XDM-schemat för varje mätvärde du vill ha. I stället kan du skapa det spontant i dialogrutan för datavyer. Här är några exempel:
+* **Du kan ändra en komponent från ett mått till en Dimension och tvärtom**. Du kan skapa mått från strängfält eller skapa dimensioner från numeriska fält. Det gör livet enklare eftersom du inte behöver skapa ett numeriskt fält i XDM-schemat för varje mätvärde du vill ha. I stället kan du skapa det spontant i dialogrutan för datavyer. Här är några exempel:
    * **Skapa en eller flera och/eller en dimension från ett enda schemafält**. Det är en en-till-många-relation. Du kan till exempel skapa en eller flera intäktsmått och/eller en eller flera intäktsdimensioner från ett enda schemafält.
    * **Använd ett strängfält som mått**: När du fyller i ett schema i Experience Platform med en datauppsättning kanske du inte vet i förväg vilka schemaelement du behöver. Du kanske inte har insett att du behöver ett mått för&quot;Fel på en sida&quot;. Därför skapade du inte ett numeriskt schemaelement med den här effekten. Genom att använda ett strängelement som mätvärden kan du nu använda datavysinställningarna för att ange att en sträng som innehåller ordet error kan användas som mätvärden.
    * **Använd ett numeriskt fält som dimension**: Om du till exempel vill hämta intäktsmåtten från dimensionen Intäkter, visar dimensionen Intäkter varje värde som en dimensionspost ($100, $175, $1,000, osv.) och antalet instanser för varje dimensionsartikel. Intäkter som mått skulle uppträda som de alltid har gjort.
@@ -37,7 +39,7 @@ Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäl
 
 * **Du kan redigera ID:t för en komponent**  - det används för kompatibilitet mellan datavyer. Komponent-ID är det som API:t för rapportering använder för att identifiera ett visst mått eller en viss dimension. Eftersom du godtyckligt kan skapa många mätvärden eller dimensioner från ett XDM-fält får du möjlighet att definiera ditt eget komponent-ID. Därför kan ett mätresultat som du använder i ett Workspace-projekt vara kompatibelt med alla datavyer (och API:t), även om de baseras på helt olika fält från olika anslutningar eller datavyer eller från ett annat schema i XDM.
 
-* **Du kan ange ett eget komponentnamn som ska visas i Analysis Workspace**. Som standard ärvs det här namnet från schemats visningsnamn, men du kan nu skriva över det för den här specifika datavyn. (Detta är också hur komponentkurering fungerar i virtuella rapportsviter i traditionella Adobe Analytics).
+* **Du kan ange ett eget komponentnamn som ska visas i Analysis Workspace**. Som standard ärvs det här namnet från schemats visningsnamn, men du kan nu skriva över det för den här specifika datavyn.
 
 * **Du kan visa mer schemarelaterad information om komponenter** , till exempel: vilken datamängdstyp (händelse, profil, sökning) som den kommer från, vilken schematyp (sträng, heltal osv.) Den kom från. och dess schemasökväg (det XDM-fält som det baseras på).
 
@@ -58,11 +60,7 @@ Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäl
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till datauppsättningar i Experience Platform](/help/connections/create-connection.md).
 * Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions).
 
-## Visa information om en komponent
-
-Klicka på ikonen (i) info i Workspace för att visa vilket schemafält en komponent baseras på och dess inställningar, till exempel en beskrivning.
-
-## Datavy Settings you can override in Workspace
+## Datavy settings you can override in Workspace
 
 Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektnivå, andra kan inte det.
 
@@ -70,7 +68,7 @@ Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektniv
 * Måttattribut
 * Om användare ser radobjektet&quot;Inget värde&quot; i en rapport eller inte
 
-## Datavy Settings you cannot override in Workspace
+## Datavy settings you cannot override in Workspace
 
 * Komponenttyp
 * Metrisk formatering
