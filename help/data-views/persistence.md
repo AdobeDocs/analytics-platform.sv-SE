@@ -1,10 +1,10 @@
 ---
-title: Vad är uthållighet i Customer Journey Analytics?
+title: Vad är dimensionskonsistens i Customer Journey Analytics?
 description: Dimensionens beständighet är en kombination av allokering och förfallodatum. Tillsammans avgör de vilka dimensionsvärden som kvarstår.
 translation-type: tm+mt
-source-git-commit: 09f49cff89d69ae630e917243425967dbf56a9ed
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
