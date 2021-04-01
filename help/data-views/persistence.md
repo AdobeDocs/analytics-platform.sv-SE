@@ -2,10 +2,10 @@
 title: Vad är dimensionskonsistens i Customer Journey Analytics?
 description: Dimensionens beständighet är en kombination av allokering och förfallodatum. Tillsammans avgör de vilka dimensionsvärden som kvarstår.
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: efe92e25229addadf57bff3f2ba73d831a3161ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '587'
+ht-degree: 12%
 
 ---
 
@@ -14,29 +14,85 @@ ht-degree: 0%
 
 Dimensionens beständighet är en kombination av allokering och förfallodatum. Tillsammans avgör de vilka dimensionsvärden som kvarstår. Adobe rekommenderar att du diskuterar inom organisationen hur flera värden för varje dimension hanteras (allokering) och när dimensionsvärden avbryter bestående data (förfallodatum).
 
-* Som standard använder ett dimensionsvärde den senaste allokeringen. Nya värden skriver över beständiga värden.
+* Som standard använder ett dimensionsvärde ? allokering.
 * Som standard används en förfallotid på [!UICONTROL Session] för ett dimensionsvärde.
 
 ## Allokering
 
-Avgör hur CJA tilldelar kredit för en success-händelse om en variabel tar emot flera värden före händelsen. Värden som stöds är:
+Allokering använder en omformning på det underliggande värdet som du använder. Följande allokeringsmodeller stöds:
 
-* Senaste: Det sista eVar får alltid medarbetare för lyckade händelser tills den eVar förfaller.
-* Originalvärde: Den första eVar får alltid erkännande för lyckade händelser tills den eVar går ut.
-* Instans: ?
+* Senaste
+* Original
+* Alla
+* Första kända
+* Senast känd
 
-Obs! Genom att växla allokering till eller från Linear förhindrar du att historiska data visas. Blandning av allokeringstyper i rapporteringsgränssnittet kan leda till feldata i rapporter. En linjär fördelning kan t.ex. dela intäkterna med ett antal olika eVar. När du har ändrat tillbaka till Senaste allokering är 100 % av denna intäkt kopplad till det senaste värdet. Den här associationen kan leda till felaktiga slutsatser från användarna.
+### [!UICONTROL Most recent] allokering
 
-För att undvika risken för förvirring i rapporteringen gör Analytics att historiska data inte är tillgängliga för gränssnittet. Den kan visas om du bestämmer dig för att ändra tillbaka den angivna eVar till den ursprungliga allokeringsinställningen, men du bör inte ändra eVar allokeringsinställningar bara för att komma åt historiska data. Adobe rekommenderar att du använder en ny eVar när nya allokeringsinställningar är önskade för data som redan registreras, i stället för att ändra allokeringsinställningarna för en eVar som redan har en stor mängd historiska data inbyggda.
+Här följer ett före och efter-exempel på [!UICONTROL Most recent]-allokering:
+
+| Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+| --- | --- | --- | --- | --- | --- |
+| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
+| originalvärden |  | C | B |  | A |
+| Senaste allokering |  | C | B | B | A |
+
+### [!UICONTROL Original] allokering
+
+Här följer ett före och efter-exempel på [!UICONTROL Original]-allokering:
+
+| Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+| --- | --- | --- | --- | --- | --- |
+| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
+| originalvärden |  | C | B |  | A |
+| Ursprunglig allokering |  | C | C | C | C |
+
+### [!UICONTROL All] allokering
+
+Den nya dimensionsallokeringen kan användas för både matrisbaserade dimensioner och dimensioner med ett värde. Den fungerar ungefär som [!UICONTROL Participation]-attribueringsmodellen för mått. Skillnaden är att enskilda värden i fältet kan förfalla vid olika punkter. Vi har t.ex. 5 händelser i ett strängfält med allokeringen inställd på &quot;Alla&quot; och förfallotiden inställd på 5 minuter. Vi förväntar oss följande beteenden:
+
+| Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+| --- | --- | --- | --- | --- | --- |
+| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
+| originalvärden | A | B | C |  | A |
+| after-persistence | A | A,B | A, B, C | B,C | A,C |
+
+Observera att värdet för A kvarstår tills det når 5-minutersmarkeringen, medan B och C fortsätter till Träff 4 eftersom 5 minuter ännu inte har passerat för dessa värden. Observera att den här allokeringen skapar en flervärdesdimension från ett fält med ett värde. Den här modellen bör även ha stöd för matrisbaserade dimensioner:
+
+| Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+| --- | --- | --- | --- | --- | --- |
+| tidsstämpel (min) | 1 | 2 | 3 | 6 | 7 |
+| originalvärden | A,B | C | B,C |  | A |
+| after-persistence | A,B | A, B, C | A, B, C | B,C | A, B, C |
+
+### &quot;First Known&quot; och &quot;Last Known&quot;-allokeringar
+
+Dessa två nya allokeringsmodeller tar det första eller sista observerade värdet för en dimension inom ett angivet beständigt omfång (session, person eller anpassad tidsperiod med uppslag) och tillämpar det på alla händelser inom det angivna omfånget. Exempel:
+
+| Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+| --- | --- | --- | --- | --- | --- |
+| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
+| originalvärden |  | C | B |  | A |
+| först känd | C | C | C | C | C |
+| senast känd | A | A | A | A | A |
+
+De första eller sista kända värdena kan användas endast för en session eller i en persons (rapportfönstrets) omfång eller i ett anpassat eller tidsbaserat omfång (i huvudsak ett personomfång med ett uppslagsfönster tillagt).
 
 ## Förfaller
 
-Dimensionen förfaller efter den tidsperiod som du anger. När dimensionsvärdet har gått ut får det inte längre någon kredit för ett mätvärde. Dimensioner kan också konfigureras så att de förfaller enligt mätvärden. Om du t.ex. har en intern kampanj som upphör efter ett besök, får den interna kampanjen endast kredit för inköp eller registreringar som sker under det besök där de aktiverades.
+[!UICONTROL Expiration] gör att du kan ange det beständiga fönstret för en dimension.
 
-Det finns två sätt att förfalla en eVar:
+Det finns fyra sätt att förfalla ett dimensionsvärde:
 
-Du kan ange att eVar ska förfalla efter en angiven tidsperiod eller händelse.
-Du kan använda Framtvinga förfallodatum för en eVar genom att återställa den, vilket är användbart när du återanvänder en variabel.
-Om du t.ex. ändrar förfallotiden för en eVar från 30 till 90 dagar, kommer de insamlade eVar att finnas kvar så länge den nya förfallotiden varar (i det här fallet 90 dagar). Systemet tittar bara på den aktuella förfalloinställningen och den sista angivna tidsstämpeln för det insamlade eVar för att avgöra förfallodatum. Endast alternativet Återställ förfaller värden och gör det omedelbart.
+* Session (standard): Upphör att gälla efter en viss session.
+* Person: ?
+* Tid: Du kan ange att dimensionsvärdet ska förfalla efter en angiven tidsperiod eller händelse.
+* Mått: Du kan ange vilken som helst av de definierade måtten som förfallodatum för den här dimensionen (t.ex. ett köpmått).
+* Anpassad:
 
-Ett annat exempel: Om en eVar används i maj för att återspegla interna kampanjer och upphör efter 21 dagar, och i juni används den för att fånga in interna söknyckelord, bör du den 1 juni tvinga fram en förfallotid för, eller återställning av, variabeln. Om du gör det kommer det att bidra till att bevara de interna kampanjvärdena från juni-rapporterna.
+### Vad är skillnaden mellan allokering och attribuering?
+
+**Allokering**: Tänk på allokering som&quot;dataomvandling&quot; av dimensionen. Allokering sker före filtrering. Om du skapar ett filter avaktiveras den omformade dimensionen.
+
+**Attribution**: Hur fördelar jag krediten för ett mätresultat till den dimension som det tillämpas på? Attribuering sker efter filtrering.
+
