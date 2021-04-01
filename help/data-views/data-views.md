@@ -2,9 +2,9 @@
 title: Vad är en datavy i Customer Journey Analytics?
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 >
 >Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
-En datavy placeras ovanpå en Customer Journey Analytics (CJA) [anslutning](/help/connections/create-connection.md). En anslutning kombinerar en eller flera datauppsättningar från Adobe Experience Platform och kopplar den till CJA. Datavyn anger hur du vill tolka element i data i anslutningen, t.ex. mått, dimensioner, sessioner osv. Datavyer definieras som förberedelser för rapportering av data i Workspace.
+En datavy placeras ovanpå en Customer Journey Analytics (CJA) [anslutning](/help/connections/create-connection.md). En anslutning kombinerar en eller flera datauppsättningar från Adobe Experience Platform och kopplar den till CJA. Datavyn anger hur du vill tolka element i data i anslutningen, t.ex. mått, dimensioner, sessioner osv. Datavyer definieras som förberedelser för rapportering av data i Workspace. Datavyer är retroaktiva och icke-förstörande. Med andra ord ändrar de inte dina underliggande data permanent.
 
-Om du tidigare har använt traditionell Adobe Analytics liknar datavyn en virtuell rapportsvit eftersom den är en&quot;filtrerad&quot; vy av data.
+Om du tidigare har använt traditionella Adobe Analytics-program liknar datavyn en virtuell rapportsvit eftersom den kan vara en&quot;filtrerad&quot; vy av data.
 
-Du kan skapa olika datavyer för samma anslutning, med olika inställningar för tidsgräns för besök, attribuering osv. Du kan också skapa flera datavyer för en enskild datamängd. Du kan till exempel ha en datavy där alla dimensioner är inställda på [!UICONTROL Last Touch] och samtidigt en annan datavy (baserad på samma datamängd) med alla dimensioner inställda på [!UICONTROL First Touch].
+Du kan skapa olika datavyer för samma anslutning, med mycket olika uppsättningar komponenter (mått/mått). Eller skapa datavyer med olika inställningar för tidsgräns för besök, attribuering osv. Du kan till exempel ha en datavy där alla dimensioner är inställda på [!UICONTROL Last Touch] och samtidigt en annan datavy (baserad på samma datamängd) med alla dimensioner inställda på [!UICONTROL First Touch].
 
 Arbetsyteprojekt i Customer Journey Analytics baseras på datavyer.
 
