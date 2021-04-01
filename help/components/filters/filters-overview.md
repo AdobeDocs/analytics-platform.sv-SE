@@ -2,9 +2,9 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -87,4 +87,4 @@ Traditionell analys innehåller många färdiga mallsegment (filter) och beräkn
 
 | Filternamn | Beskrivning |
 | --- | --- |
-| Alla data | Detta är ett obligatoriskt filter som liknar segmentet&quot;Alla besök&quot; i traditionell Adobe-analys. Den läggs till dynamiskt i rapporter när ett mätvärde läggs till på raden i en frihandstabell. |
+| Alla data | Det här är ett obligatoriskt filter som läggs till dynamiskt i rapporter när ett mätvärde läggs till på raden i en Freeform-tabell. |
