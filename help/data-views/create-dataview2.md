@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2334'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Observera också att det du anger i det här fältet kan användas för speciell
 
 ![](assets/persistence.png)
 
-De här inställningarna liknar eVar i vanliga Adobe Analytics.
+Mer information finns i avsnittet [Persistence](/help/data-views/persistence.md).
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
@@ -215,7 +215,7 @@ Du kan också filtrera efter datauppsättningar och efter om ett schemafält inn
 
 ## 3. Lägga till ett globalt filter i datavyn
 
-Du kan lägga till filter (kallades tidigare segment) som gäller för hela datavyn, ungefär som den filtrerade datavyn i virtuella rapportsviter (traditionella Adobe Analytics).
+Du kan lägga till filter som gäller för hela datavyn. Det här filtret används för alla rapporter som du kör i Workspace.
 
 1. Klicka på fliken [!UICONTROL Settings] i [!UICONTROL Data views].
 1. Dra ett filter från listan i den vänstra listen till fältet [!UICONTROL Add filters].
