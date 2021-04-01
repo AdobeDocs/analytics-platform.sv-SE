@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 translation-type: tm+mt
-source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2342'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ När du skapar en datavy måste du antingen skapa mått och mått från schemael
 | [!UICONTROL Description] | En detaljerad beskrivning är inte obligatorisk, men rekommenderas. |
 | [!UICONTROL Time zone] | Välj vilken tidszon du vill att dina data ska visas i. |
 | [!UICONTROL Tags] | Med taggar kan du ordna datavyer i kategorier. |
-| [!UICONTROL Containers] | Du kan byta namn på behållarna här och så här visas de i alla Workspace-projekt som baseras på den här datavyn. Behållare används i filter och utfall/flöde för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Containers] | Du kan byta namn på behållarna här och så här visas de i alla Workspace-projekt som baseras på den här datavyn. Behållare används i filter och utfall/flöde osv. för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
 | [!UICONTROL Person container name is…] | [!UICONTROL Person] (standard). Behållaren [!UICONTROL Person] innehåller alla besök och sidvisningar för besökare inom en viss tidsperiod. Du kan byta namn på detta till &quot;Användare&quot; eller något annat uttryck som du föredrar. |
 | [!UICONTROL Session container name is…] | [!UICONTROL Session] (standard). Med [!UICONTROL Session]-behållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på detta till Besök eller något annat uttryck som du föredrar. |
 | [!UICONTROL Event container name is…] | [!UICONTROL Event] (standard). Behållaren [!UICONTROL Event] definierar vilka sidhändelser som du vill ta med eller exkludera från ett filter. |
@@ -45,11 +45,12 @@ Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använd
 
 ![](assets/components-tab.png)
 
-Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan.
+Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan. Komponenterna som redan finns är de standardkomponenter som krävs (systemgenererade).
 
 1. Dra nu ett schemafält, till exempel [!UICONTROL pageTitle], från den vänstra listen till avsnittet Metrisk eller Dimensioner.
 
-   Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt. I fältet **[!UICONTROL pageTitle]** kan du till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot;. Från **[!UICONTROL pageTitle]**; kan du också skapa mätvärden från ett strängvärde. Du kan till exempel skapa ett eller flera **[!UICONTROL Orders]**-mått med olika attribueringsinställningar och olika include/exclude-värden.
+   Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt.
+Du kan till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot; från fältet **[!UICONTROL pageTitle]** genom att byta namn på **[!UICONTROL Component Name]** till höger. Från **[!UICONTROL pageTitle]**; kan du också skapa mätvärden från ett strängvärde. Du kan till exempel skapa ett eller flera **[!UICONTROL Orders]**-mått med olika attribueringsinställningar och olika include/exclude-värden.
 
    ![](assets/components-tab-3.png)
 
@@ -134,10 +135,10 @@ Observera också att det du anger i det här fältet kan användas för speciell
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL If shown, call No value]… | Här kan du byta namn på **[!UICONTROL No value]** till något annat. |
+| [!UICONTROL If shown, call No value...] | Här kan du byta namn på **[!UICONTROL No value]** till något annat. |
 | [!UICONTROL Don't show No value by default] | Visar inte det här värdet vid rapportering. |
 | [!UICONTROL Show No value by default] | Visar det här värdet vid rapportering. |
-| [!UICONTROL Treat No value as a value] | Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. Observera att när du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla förekomster av strängen &quot;Red&quot; som visas i själva data också att hamna under samma radobjekt som du har angett. |
+| [!UICONTROL Treat No value as a value] | Den här inställningen ersätter tomma värden i data med texten som du angav under [!UICONTROL If shown, call No value ...]. Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. Observera att när du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla förekomster av strängen &quot;Red&quot; som visas i själva data också att hamna under samma radobjekt som du har angett. |
 
 ### Konfigurera inställningar för beständighet
 
