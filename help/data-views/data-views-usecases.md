@@ -2,9 +2,9 @@
 title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
-De här användningsexemplen visar flexibiliteten och kraften i datavyer i Customer Journey Analytics.
+De här användningsexemplen visar hur flexibla och kraftfulla datavyer är i Customer Journey Analytics.
 
 ## Skapa ett ordermått från ett pageTitle-schemafält (sträng)
 
@@ -29,7 +29,7 @@ När du skapar en datavy kan du till exempel skapa ett [!UICONTROL Orders]-mått
 1. Öppna dialogrutan [!UICONTROL Include/Exclude Values] till höger och ange följande:
    ![](assets/orders2.png)
 
-   &quot;Bekräftelsefrasen&quot; anger att detta är en order. När du har granskat alla sidrubriker där dessa kriterier uppfylls räknas &quot;1&quot; för varje förekomst. Resultatet är ett nytt mått (inte ett beräknat mått). Det fungerar med Attribution IQ, filter och var du än är kan du använda standardvärden.
+   &quot;Bekräftelsefrasen&quot; anger att detta är en order. När du har granskat alla sidrubriker där dessa kriterier uppfylls räknas &quot;1&quot; för varje förekomst. Resultatet är ett nytt mått (inte ett beräknat mått). Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Det fungerar med Attribution IQ, filter och var du än är kan du använda standardvärden.
 1. Du kan ange en attribueringsmodell för det här måttet, till exempel [!UICONTROL Last Touch], med [!UICONTROL Lookback window] [!UICONTROL Session].
 Du kan också skapa ytterligare ett [!UICONTROL Orders]-mått från samma fält och ange en annan attribueringsmodell för det, till exempel [!UICONTROL First Touch] och en annan [!UICONTROL Lookback window], till exempel [!UICONTROL 30 days].
 
