@@ -18,9 +18,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5182e6c97e475296ca5ecd4014193770491b1988
+source-git-commit: 16341ab99e24d40580a1052aacc7daedb5b5f9c1
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '457'
 ht-degree: 42%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 42%
    + [Skapa en datavy 2](data-views/create-dataview2.md)
    + [Konfigurera datavyer och attribuering](data-views/configure-dataviews.md)
    + [Datavyer använder exempel](data-views/data-views-usecases.md)
+   + [Persistence](data-views/persistence.md)
 + Arbetsyteprojekt {#cja-workspace}
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + [Utför grundläggande analys](analysis-workspace/perform-basic-analysis.md)
