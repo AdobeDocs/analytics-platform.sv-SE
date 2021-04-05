@@ -1,20 +1,20 @@
 ---
 title: Vad är dimensionskonsistens i Customer Journey Analytics?
 description: Dimensionens beständighet är en kombination av allokering och förfallodatum. Tillsammans avgör de vilka dimensionsvärden som kvarstår.
+exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: efe92e25229addadf57bff3f2ba73d831a3161ea
+source-git-commit: 16e43f5d938ac25445f382e5eba8fc12e0e67161
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 12%
 
 ---
-
 
 # Persistence
 
 Dimensionens beständighet är en kombination av allokering och förfallodatum. Tillsammans avgör de vilka dimensionsvärden som kvarstår. Adobe rekommenderar att du diskuterar inom organisationen hur flera värden för varje dimension hanteras (allokering) och när dimensionsvärden avbryter bestående data (förfallodatum).
 
-* Som standard använder ett dimensionsvärde ? allokering.
+* Som standard använder ett dimensionsvärde [VAD?] allokering.
 * Som standard används en förfallotid på [!UICONTROL Session] för ett dimensionsvärde.
 
 ## Allokering
@@ -43,7 +43,7 @@ Här följer ett före och efter-exempel på [!UICONTROL Original]-allokering:
 
 | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
 | --- | --- | --- | --- | --- | --- |
-| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
+| tidsstämpel (min) | 1 | 2 | 1 | 6 | 7 |
 | originalvärden |  | C | B |  | A |
 | Ursprunglig allokering |  | C | C | C | C |
 
@@ -53,7 +53,7 @@ Den nya dimensionsallokeringen kan användas för både matrisbaserade dimension
 
 | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
 | --- | --- | --- | --- | --- | --- |
-| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
+| tidsstämpel (min) | 1 | 2 | 1 | 6 | 7 |
 | originalvärden | A | B | C |  | A |
 | after-persistence | A | A,B | A, B, C | B,C | A,C |
 
@@ -61,7 +61,7 @@ Observera att värdet för A kvarstår tills det når 5-minutersmarkeringen, med
 
 | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
 | --- | --- | --- | --- | --- | --- |
-| tidsstämpel (min) | 1 | 2 | 3 | 6 | 7 |
+| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
 | originalvärden | A,B | C | B,C |  | A |
 | after-persistence | A,B | A, B, C | A, B, C | B,C | A, B, C |
 
@@ -71,7 +71,7 @@ Dessa två nya allokeringsmodeller tar det första eller sista observerade värd
 
 | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
 | --- | --- | --- | --- | --- | --- |
-| tidsstämpel (min) | 3 | 2 | 3 | 6 | 7 |
+| tidsstämpel (min) | 1 | 2 | 3 | 6 | 7 |
 | originalvärden |  | C | B |  | A |
 | först känd | C | C | C | C | C |
 | senast känd | A | A | A | A | A |
@@ -95,4 +95,3 @@ Det finns fyra sätt att förfalla ett dimensionsvärde:
 **Allokering**: Tänk på allokering som&quot;dataomvandling&quot; av dimensionen. Allokering sker före filtrering. Om du skapar ett filter avaktiveras den omformade dimensionen.
 
 **Attribution**: Hur fördelar jag krediten för ett mätresultat till den dimension som det tillämpas på? Attribuering sker efter filtrering.
-
