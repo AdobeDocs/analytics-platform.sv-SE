@@ -1,14 +1,14 @@
 ---
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
+exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2533'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en ny datavy
 
@@ -45,7 +45,10 @@ Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använd
 
 ![](assets/components-tab.png)
 
-Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan. Komponenterna som redan finns är de standardkomponenter som krävs (systemgenererade).
+Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan. Kom ihåg:
+
+* De komponenter som redan ingår är de standardkomponenter som krävs (systemgenererade).
+* Vi använder också filtret **[!UICONTROL Contains data]** som standard, så att endast schemafält som innehåller data visas. Om du letar efter ett fält som inte innehåller data behöver du bara ta bort filtret.
 
 1. Dra nu ett schemafält, till exempel [!UICONTROL pageTitle], från den vänstra listen till avsnittet Metrisk eller Dimensioner.
 
@@ -173,35 +176,35 @@ Förutom att skapa mått och mått från schemaelement kan du även använda sta
 
 ![](assets/standard-components.png)
 
-Nödvändiga standardkomponenter
+Nödvändiga standardkomponenter läggs till i datavyn som standard.
 
 | Komponentnamn | Dimension eller mått | Anteckningar |
 | --- | --- | --- |
-| [!UICONTROL People] | Mått | Kallas tidigare [!UICONTROL Unique Visitors] i traditionell analys. Det här måttet baseras på det person-ID som anges i en anslutning. |
-| [!UICONTROL Sessions] | Mått | Kallas tidigare [!UICONTROL Visits] i traditionell analys. Det här måttet baseras på sessionsinställningarna som anges nedan. |
-| [!UICONTROL Events] | Mått | Kallas tidigare [!UICONTROL Occurrences] i traditionell analys. Det här måttet representerar antalet rader från alla händelsedatamängder i en anslutning. |
-| [!UICONTROL Day] | Dimension |  |
-| [!UICONTROL Week] | Dimension |  |
-| [!UICONTROL Month] | Dimension |  |
-| [!UICONTROL Quarter] | Dimension |  |
-| [!UICONTROL Year] | Dimension |  |
-| [!UICONTROL Hour] | Dimension |  |
-| [!UICONTROL Minute] | Dimension |  |
+| [!UICONTROL People] | Mått | Det här måttet baseras på det person-ID som anges i en anslutning. |
+| [!UICONTROL Sessions] | Mått | Det här måttet baseras på sessionsinställningarna som anges nedan. |
+| [!UICONTROL Events] | Mått | Det här måttet representerar antalet rader från alla händelsedatamängder i en anslutning. |
+| [!UICONTROL Day] | Dimension | I dimensionen&quot;dag&quot; rapporteras dagen då ett visst mått inträffade. Den första dimensionsartikeln är den första dagen i datumintervallet och den sista dimensionsuppgiften är den sista dagen i datumintervallet. |
+| [!UICONTROL Week] | Dimension | Veckodimensionen rapporterar veckan om att ett visst mått har inträffat. Den första dimensionsuppgiften är den första veckan i datumintervallet och den sista dimensionsuppgiften är den sista veckan i datumintervallet. |
+| [!UICONTROL Month] | Dimension | Dimensionen Month rapporterar månaden då ett visst mått inträffade. Den första dimensionsuppgiften är den första månaden i datumintervallet och den sista dimensionsuppgiften är den sista månaden i datumintervallet. |
+| [!UICONTROL Quarter] | Dimension | Dimensionen&quot;Kvartal&quot; rapporterar kvartalet om att ett visst mått har inträffat. Den första dimensionsuppgiften är det första kvartalet i datumintervallet och den sista dimensionsuppgiften är det sista kvartalet i datumintervallet. |
+| [!UICONTROL Year] | Dimension | I dimensionen&quot;År&quot; rapporteras året då ett givet mätresultat inträffade. Den första dimensionsuppgiften är det första året i datumintervallet och den sista dimensionsuppgiften är det senaste året i datumintervallet. |
+| [!UICONTROL Hour] | Dimension | I måttet&quot;Timme&quot; rapporteras timmen då ett givet mätresultat inträffade (avrundat nedåt). Den första dimensionsartikeln är den första timmen i datumintervallet, och den sista dimensionsartikeln är den sista timmen i datumintervallet. |
+| [!UICONTROL Minute] | Dimension | Minutdimensionen anger den minut då ett givet mätvärde inträffade (avrundat nedåt). Den första dimensionsposten är den första minuten i datumintervallet och den sista dimensionsposten är den sista minuten i datumintervallet. |
 
 ### Valfria standardkomponenter
 
-Vissa systemkomponenter krävs i alla datavyer för att underlätta rapportering i Analysis Workspace, medan de nedan är valfria.
+Valfria standardkomponenter finns under fliken **[!UICONTROL Standard Components]**.
 
 | Komponentnamn | Dimension eller mått | Anteckningar |
 | --- | --- | --- |
-| [!UICONTROL Session Starts] | Mått | Det här måttet räknar antalet händelser som var den första händelsen i en session. Vid användning i en filterdefinition (t.ex. [!UICONTROL Session Starts] existerar&#39;), filtreras ned till den första händelsen i varje session. Observera att detta är ett annat beteende än [!UICONTROL Entries] eftersom det alltid räknar den första händelsen i en session - inte det första värdet som finns för en dimension i en session. |
-| [!UICONTROL Session Ends] | Mått | Det här måttet räknar antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en filterdefinition för att filtrera ned saker till den sista händelsen i varje session. Observera att detta är ett annat beteende än [!UICONTROL Exits] eftersom det alltid räknar den sista händelsen i en session - inte det sista värdet som finns för en dimension i en session. |
-| [!UICONTROL Time Spent (seconds)] | Mått | Måttet [!UICONTROL Time Spent] fungerar på liknande sätt som i traditionella Adobe Analytics - vilket ökar tiden mellan två olika värden för en dimension. Men med måtten Session Starts and Session Ends kan kunderna själva konstruera de beräknade värdena [!UICONTROL Time Spent per Person] och [!UICONTROL Time Spent per Session] (se OTB-filter och beräknade värden nedan). |
-| [!UICONTROL Time Spent per Event] | Dimension | Det här är faktiskt bara en felsökning av ovanstående mätvärden. Vi erbjuder standardfickor, men du kan ändra bucklarna till vad du vill. |
-| [!UICONTROL Time Spent per Session] | Dimension |  |
-| [!UICONTROL Time Spent per Person] | Dimension |  |
-| [!UICONTROL Batch ID] | Dimension |  |
-| [!UICONTROL Dataset ID] | Dimension |  |
+| [!UICONTROL Session Starts] | Mått | Det här måttet räknar antalet händelser som var den första händelsen i en session. Vid användning i en filterdefinition (t.ex. [!UICONTROL Session Starts] existerar&#39;), filtreras ned till den första händelsen i varje session. |
+| [!UICONTROL Session Ends] | Mått | Det här måttet räknar antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en filterdefinition för att filtrera ned saker till den sista händelsen i varje session. |
+| [!UICONTROL Time Spent (seconds)] | Mått | Måttet [!UICONTROL Time Spent] sammanställer tiden mellan två olika värden för en dimension. |
+| [!UICONTROL Time Spent per Event] | Dimension | [!UICONTROL Time Spent per Event] sätter  [!UICONTROL Time Spent] in mätvärdena i  [!UICONTROL Event] fickorna. |
+| [!UICONTROL Time Spent per Session] | Dimension | [!UICONTROL Time Spent per Session] sätter  [!UICONTROL Time Spent] in mätvärdena i  [!UICONTROL Session] fickorna. |
+| [!UICONTROL Time Spent per Person] | Dimension | [!UICONTROL Time Spent per Person] sätter  [!UICONTROL Time Spent] in mätvärdena i  [!UICONTROL Person] fickorna. |
+| [!UICONTROL Batch ID] | Dimension | Representerar den Experience Platform-batch som en [!UICONTROL Event] var en del av. |
+| [!UICONTROL Dataset ID] | Dimension | Representerar datauppsättningen Experience Platform som en [!UICONTROL Event] var en del av. |
 
 ### Filtrera schemafält och dimensioner/mått
 
@@ -209,9 +212,10 @@ Du kan filtrera schemafält i den vänstra listen med följande datatyper:
 
 ![](assets/filter-fields.png)
 
-Du kan också filtrera efter datauppsättningar och efter om ett schemafält innehåller data eller om det är en identitet:
+Du kan också filtrera efter datauppsättningar och efter om ett schemafält innehåller data eller om det är en identitet. Som standard tillämpar vi filtret **[!UICONTROL Contains data]** på alla datavyer.
 
 ![](assets/filter-other.png)
+
 
 ## 3. Lägga till ett globalt filter i datavyn
 
