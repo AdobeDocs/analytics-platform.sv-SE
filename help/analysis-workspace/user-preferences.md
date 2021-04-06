@@ -1,14 +1,14 @@
 ---
 title: Ange användarinställningar i Analysis Workspace
 description: Du kan ange allmänna inställningar och projektinställningar för användare.
+exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 translation-type: tm+mt
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '192'
 ht-degree: 1%
 
 ---
-
 
 # Användarinställningar
 
@@ -39,7 +39,6 @@ Projektinställningar gäller för nya projekt och nya paneler som skapas i Anal
 |  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
 |  | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Paletter som tillhandahålls av Adobe (standard)</li><li>Egna paletter</li></ul> |
 | **Data** |  |  |
-|  | [Rapportsviter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#report-suite) | <ul><li>Senaste (standard)</li><li>Specifik - vald från en lista</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#calendar) | Lista över körklara datumintervall, inklusive **[!UICONTROL This month]** (standard) |
 |  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
 |  | Nummerformat | <ul><li>1 000,00 (standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
