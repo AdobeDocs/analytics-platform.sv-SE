@@ -1,14 +1,14 @@
 ---
 description: Hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
+exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 translation-type: tm+mt
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
-
 
 # Summor för arbetsyta
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan visa två summor:
 
-* **[!UICONTROL Grand Total]** (grå &#39;av&#39;-tal) - denna summa representerar alla träffar som har samlats in, ibland kallat &#39;rapportsvitens totala&#39;. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar segmentvillkoren visas.
+* **[!UICONTROL Grand Total]** (antal grå &#39;utanför&#39;) - det här totala antalet representerar alla träffar som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar segmentvillkoren visas.
 * **[!UICONTROL Table Total]** (svart tal) - den här summan är vanligtvis lika med eller en delmängd av  [!UICONTROL Grand Total]. Alla tabellfilter som används i friformstabellen, inklusive alternativet [!UICONTROL Include None], visas.
 
 ![](assets/total-row.png)
@@ -47,4 +47,3 @@ Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL S
 | När anpassade tabellfilter tillämpas på en frihandstabell, gör jag då alla mina beräknade värden och villkorsstyrda formateringskonton för filtret? | Inte just nu. **[!UICONTROL Include Unspecified (None)]** tas med i beräkningen, men anpassade tabellfilter påverkar inte följande:<ul><li>Kolumnens max/min-intervall som villkorsstyrd formatering använder ser ut över alla data.</li><li>Beräknade mätvärden som utnyttjar **[!UICONTROL Grand Total]** mätningstyper.</li><li>Beräknade mätvärden med funktioner som beräknas över rader i en friformstabell, t.ex. kolumnsumma, kolumnmax, kolumnmin, antal, medel, medel, medel, percentil, kvartil, radantal, standardavvikelse, varians, ackumulerat, kumulativt genomsnitt, regressionsvarianter, T-poäng, T-test, Z-poäng, Z-test, Z-test.</li></ul> |
 | I Beräknade mått, vad återspeglar måtttypen **[!UICONTROL Grand Total]**? | **[!UICONTROL Grand Total]** fortsätter att referera till  **[!UICONTROL Grand Total]** och reflekterar inte filter som används i en tabell eller i  **[!UICONTROL Table Total]**. |
 | Vilken summa visas när data kopieras och klistras in från en frihandstabell eller hämtas via CSV? | Den totala raden återspeglar endast **[!UICONTROL Table Total]** och respekterar inställningen för kolumnen **[!UICONTROL Show Totals]**. |
-
