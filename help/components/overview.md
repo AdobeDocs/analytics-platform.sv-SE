@@ -1,14 +1,14 @@
 ---
 title: Komponenter – översikt
 description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem vid rapportering.
+exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 translation-type: tm+mt
-source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 13%
+ht-degree: 11%
 
 ---
-
 
 # Komponenter – översikt
 
@@ -26,7 +26,7 @@ Du kan hantera följande komponenter:
 
 ## Analysis Workspace-komponenter
 
-Komponenterna i Analysis Workspace består av mått, dimensioner, segment och tidsdetaljer som du kan dra och släppa i ett projekt. Anpassade komponenter som du skapar läggs till i dessa paneler, till exempel anpassade datumintervall.
+Komponenterna i Analysis Workspace består av mätvärden, dimensioner, filter och tidsdetaljer som du kan dra och släppa i ett projekt. Anpassade komponenter som du skapar läggs till i dessa paneler, till exempel anpassade datumintervall.
 
 Du öppnar panelen Komponenter genom att klicka på ikonen **[!UICONTROL Components]** i den vänstra listen. Du kan växla mellan paneler (Tom panel, [Frihandspanel](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabbinsikter](/help/analysis-workspace/c-panels/quickinsight.md) eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) och Komponenter med ikonerna för vänster spår eller genom att använda [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
@@ -44,13 +44,13 @@ Du kan hantera komponenter (individuellt eller genom att markera flera) på fler
 
 | Komponentåtgärd | Beskrivning |
 | --- | --- |
-| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
-| Favorit | Lägg till komponenten i listan med favoriter. Därefter visas det i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
-| Godkänn | Godkänn komponenten för att göra den kanonisk. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
-| Dela | Gäller endast segment. |
-| Ta bort | Gäller endast segment. |
+| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Favorit | Lägg till komponenten i listan med favoriter. Därefter visas det i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
+| Godkänn | Godkänn komponenten för att göra den kanonisk. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Dela | Gäller endast filter. |
+| Ta bort | Gäller endast filter. |
 
-Se videon Creating Metrics, Segments, and Dates:
+Se videon Creating Metrics, Filters, and Dates:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
 
