@@ -3,9 +3,9 @@ title: Skapa en datavy
 description: Beskriver hur du skapar en datavy för en plattformsdatauppsättning i Customer Journey Analytics (CJA).
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar t
    | Beskrivning | En detaljerad beskrivning är inte obligatorisk, men rekommenderas. |
    | Lägg till taggar | Med taggar kan du ordna datavyer i kategorier. |
    | Tidszon | Välj tidszon för datavyn. |
-   | Tidsgräns för session | Välj vad din definition av en &quot;session&quot; är. Sessionens timeout-inställning definierar hur mycket inaktivitet en unik besökare måste ha innan en ny session startas automatiskt. Standardvärdet är 30 minuter. Om du till exempel anger timeout för sessionen till 45 minuter skapas en ny sessionsgruppering för varje sekvens av träffar som samlats in, åtskilda med 45 minuters inaktivitet. <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | Starta ny session med händelse | En ny session startar när en händelse utlöses, oavsett om en session har uppnått tidsgränsen eller inte. Den nyligen skapade sessionen innehåller händelsen som startade den. Dessutom kan du använda flera händelser för att starta en session och en ny session utlöses om någon av dessa händelser observeras i data. Den här inställningen påverkar antalet besök, segmentbehållaren för session (tidigare besök) och besökets förfallologik för dimensioner. |
-   | Lägg till filter | &quot;Filter&quot; är termen för&quot;segment&quot; i Customer Journey Analytics. Om du vill filtrera data drar du lämpligt filter   här från den vänstra listen. Om du inte väljer ett filter kommer datavyn att innehålla alla dina data. |
+   | Tidsgräns för session | Välj vad din definition av en &quot;session&quot; är. Sessionens timeout-inställning definierar hur mycket inaktivitet en unik besökare måste ha innan en ny session startas automatiskt. Standardvärdet är 30 minuter. Om du till exempel anger timeout för sessionen till 45 minuter skapas en ny sessionsgruppering för varje sekvens av träffar som samlats in, åtskilda med 45 minuters inaktivitet. <!--This setting impacts not only your visit counts, but also how visit filter containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
+   | Starta ny session med händelse | En ny session startar när en händelse utlöses, oavsett om en session har uppnått tidsgränsen eller inte. Den nyligen skapade sessionen innehåller händelsen som startade den. Dessutom kan du använda flera händelser för att starta en session och en ny session utlöses om någon av dessa händelser observeras i data. Den här inställningen påverkar antalet besök, sessionsfilterbehållaren (tidigare besök) och besökets förfallologik för dimensioner. |
+   | Lägg till filter | Om du vill filtrera dina data drar du lämpligt filter hit från den vänstra listen. Om du inte väljer ett filter kommer datavyn att innehålla alla dina data. |
 
 1. Klicka på **[!UICONTROL Continue]**.
 
