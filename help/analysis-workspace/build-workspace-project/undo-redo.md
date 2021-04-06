@@ -3,9 +3,9 @@ description: Läs mer om alternativen Ångra och Gör om i Analysis Workspace.
 title: Ångra och göra om inställningar
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '271'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 4%
 * Rensa alla
 * Tidsperiod
 * Bidragsanalys
-* Segmentjämförelse
 * Projektnamn
 * Lägg till/ta bort visualisering
 * Komprimera/utöka panel eller visualisering
@@ -45,7 +44,7 @@ ht-degree: 4%
 * Alternativ för högerklick i frihandsfigur
 * Markering
 * Visualiseringsförklaringsmarkering
-* Lägga till ett segment i en panel
+* Lägga till ett filter på en panel
 * Visualiseringsinställningar för diagram
 * Redigera förklaringsetiketter
 * Magisk visualisering
@@ -63,9 +62,9 @@ ht-degree: 4%
 
 * Ändringar av projektinformation och inställningar (Lägg till taggar, Beskrivningsändringar, Antal upprepningsförekomster)
 * Ange som landningssida
-* Lägg till ny (segment/mått/datumintervall/varning)
+* Lägg till ny (filter/mått/datumintervall/varning)
 * Dela projekt, Hämta projektlänk, Skicka fil (nu eller Schema)
-* Skapa segment för den här sökvägen vid Flödesvisualisering
+* Skapa filter för den här sökvägen vid Flödesvisualisering
 * Skapa beräknat mått
 * Skapa datumintervall
 
