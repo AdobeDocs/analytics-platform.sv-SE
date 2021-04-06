@@ -3,7 +3,7 @@ title: Hantera filter
 description: Lär dig hantera filter i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Hantera filter
 
-Filterhanteraren erbjuder många sätt att strukturera segment, t.ex. dela, tagga, godkänna, kopiera, ta bort och markera som favoriter.
+Filterhanteraren erbjuder många sätt att strukturera filter, som att dela, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
 Filterhanteraren visar alla filter som du äger och som har delats med dig. Administratörsnivåanvändare kan se alla filter i organisationen. I den här översikten visas användargränssnittet och funktionerna i Filterhanteraren.
 
@@ -39,7 +39,7 @@ Gå till Filterhanteraren genom att gå till **[!UICONTROL Customer Journey Anal
 
 ## Planfilter
 
-Genom att ägna lite tid åt att planera segment förbättras chanserna att de kan vara användbara för din organisation och att deras nummer hålls i schack.
+Genom att ägna lite tid åt att planera filter ökar du chansen att de kan vara användbara för din organisation och att deras nummer hålls i schack.
 
 * Tänk på målgruppen: Vem konsumerar den? Med vem ska du dela det? Vilka grupper av människor kommer att använda det här filtret och hur ska jag tagga det därefter? Det innebär också att du får en bra filterbeskrivning. Beskrivningen ska åtminstone svara på följande frågor:
 
@@ -57,7 +57,7 @@ Genom att ägna lite tid åt att planera segment förbättras chanserna att de k
 
 ### Taggfilter
 
-I Filterhanteraren kan du ordna taggningsfiltren. Alla användare kan skapa taggar för filter och använda en eller flera taggar för ett segment. Men du kan bara se taggar för de filter som du äger eller som har delats med dig.
+I Filterhanteraren kan du ordna taggningsfiltren. Alla användare kan skapa taggar för filter och använda en eller flera taggar för ett filter. Men du kan bara se taggar för de filter som du äger eller som har delats med dig.
 
 Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:
 
@@ -79,7 +79,7 @@ Så här taggar du ett filter:
 
    * Ange ett nytt taggnamn och tryck på **[!UICONTROL Enter]**.
 
-1. Klicka på **[!UICONTROL Tag]** igen för att tagga segmentet.
+1. Klicka på **[!UICONTROL Tag]** igen för att tagga filtret.
 
 Taggen ska nu visas i kolumnen Taggar. (Klicka på kugghjulsikonen uppe till höger för att hantera kolumnerna.)
 Du kan också filtrera på taggar genom att gå till **[!UICONTROL Filters > Tags]**.
@@ -94,7 +94,7 @@ Så här flaggar du ett filter som godkänt:
 
 1. Klicka på **[!UICONTROL Approve]** i aktivitetsfältet för filterhantering.
 
-1. Överväg att dela de godkända segmenten med din organisation.
+1. Överväg att dela de godkända filtren med din organisation.
 
 1. Klicka på **[!UICONTROL OK]**.
 
@@ -102,7 +102,7 @@ Så här flaggar du ett filter som godkänt:
 
    ![](assets/seg_approved.png)
 
-1. Du kan också avgodkänna ett godkänt segment genom att klicka på **[!UICONTROL Unapprove]**.
+1. Du kan också avgodkänna ett godkänt filter genom att klicka på **[!UICONTROL Unapprove]**.
 
 ### Dela filter
 
@@ -132,7 +132,7 @@ Så här delar du ett filter:
 
 ### Markera filter som favoriter
 
-Att markera segment som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
+Att markera filter som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
 
 1. I Filterhanteraren markerar du stjärnan bredvid eventuella filter som du vill markera som favoriter. Stjärnan blir gul när du markerar den.
 
