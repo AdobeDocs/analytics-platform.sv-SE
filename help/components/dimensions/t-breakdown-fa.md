@@ -2,16 +2,16 @@
 description: Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 keywords: Analysis Workspace
 title: Dela upp dimensioner
-topic: Reports and analytics
+topic: Rapporter och analyser
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
+exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 translation-type: tm+mt
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 15%
+source-wordcount: '235'
+ht-degree: 5%
 
 ---
-
 
 # Dela upp dimensioner
 
@@ -21,14 +21,14 @@ ht-degree: 15%
 
 Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 
-Analysera data på obegränsade sätt efter just era behov och bygg frågor med hjälp av relevanta mätvärden, mått, segment, tidslinjer och andra analysvärden.
+Anpassa era data på ett obegränsat sätt efter era specifika behov. skapa frågor med hjälp av relevanta mått, dimensioner, filter, tidslinjer och andra analysvärden.
 
 1. [Skapa ett ](/help/analysis-workspace/home.md) projekt med en datatabell.
 1. Högerklicka på ett radobjekt i datatabellen och välj **[!UICONTROL Breakdown]** > *`<item>`*.
 
    ![Stegresultat](assets/fa_data_table_actions.png)
 
-   Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppssegment under valda tidsperioder. Du kan även gå ned mer i detalj.
+   Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppsfilter över valda tidsperioder. Du kan även gå ned mer i detalj.
 
    >[!NOTE]
    >
