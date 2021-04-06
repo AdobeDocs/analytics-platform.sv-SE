@@ -1,14 +1,14 @@
 ---
 description: Inställningar för Flödesvisualisering i arbetsytan
 title: Flödesinställningar
+exl-id: 85de8ee7-b79f-4ac4-9601-a4e7f6fb3b2a
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
 
 ---
-
 
 # Flödesinställningar
 
@@ -23,7 +23,7 @@ ht-degree: 4%
 | --- | --- |
 | Fokus på den här noden | Ändra fokus till den valda noden. Flödesdiagrammets fokusnod visas i mitten. |
 | Börja om | Returnerar dig till Frihand-diagramverktyget, där du kan skapa ett nytt flödesdiagram. |
-| Skapa segment från den här flödespunkten | Skapa ett segment. Då kommer du till segmentbyggaren där du kan konfigurera det nya segmentet. |
+| Skapa filter från den här flödespunkten | Skapa ett filter. Detta tar dig in i filterverktyget, där du kan konfigurera det nya filtret. |
 | Uppdelningar | Dela upp noden efter tillgängliga Dimensioner, mått eller tid. |
 | Trend | Skapa ett trenddiagram för noden. |
 | Expandera hela kolumnen | Expandera en kolumn om du vill visa alla noder. Som standard visas bara de fem översta noderna. |
