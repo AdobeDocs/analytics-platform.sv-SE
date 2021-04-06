@@ -3,9 +3,9 @@ title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: c021892119cbebccaa49e5c04fd7cc7450cce8c6
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: '2534'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ Du kan också filtrera efter datauppsättningar och efter om ett schemafält inn
 
 ## 3. Lägga till ett globalt filter i datavyn
 
-Du kan lägga till filter som gäller för hela datavyn. Det här filtret används för alla rapporter som du kör i Workspace.
+Du kan lägga till filter som gäller för hela datavyn. Det här filtret tillämpas på alla rapporter som du kör i Workspace.
 
 1. Klicka på fliken [!UICONTROL Settings] i [!UICONTROL Data views].
 1. Dra ett filter från listan i den vänstra listen till fältet [!UICONTROL Add filters].
