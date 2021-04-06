@@ -3,7 +3,7 @@ description: Hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan visa två summor:
 
-* **[!UICONTROL Grand Total]** (antal grå &#39;utanför&#39;) - det här totala antalet representerar alla träffar som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar segmentvillkoren visas.
+* **[!UICONTROL Grand Total]** (antal grå &#39;utanför&#39;) - det här totala antalet representerar alla träffar som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar filtervillkoren visas.
 * **[!UICONTROL Table Total]** (svart tal) - den här summan är vanligtvis lika med eller en delmängd av  [!UICONTROL Grand Total]. Alla tabellfilter som används i friformstabellen, inklusive alternativet [!UICONTROL Include None], visas.
 
 ![](assets/total-row.png)
