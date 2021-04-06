@@ -1,14 +1,14 @@
 ---
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
+exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '926'
 ht-degree: 1%
 
 ---
-
 
 # Översikt över filter
 
@@ -18,14 +18,11 @@ Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön)
 
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
->[!IMPORTANT]
->Filter kallas för&quot;segment&quot; i Adobe Analytics. Vi har ändrat namn på segment till filter eftersom Adobe Experience Platform har [en annan definition av &quot;segment&quot;](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
-
 Filtreringen innehåller [Filter Builder](/help/components/filters/create-filters.md) för att konstruera filter och köra ett förtest samt [Filter Manager](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
 
 ## Sekventiella filter
 
-Med sekventiella filter kan du identifiera besökare baserat på navigering och sidvisning på webbplatsen, vilket ger ett filter med definierade åtgärder och interaktioner. Sekventiella segment hjälper er att identifiera vad en besökare gillar och vad en besökare undviker. När sekventiella filter skapas används operatorn THEN för att definiera och ordna besökarnavigering.
+Med sekventiella filter kan du identifiera besökare baserat på navigering och sidvisning på webbplatsen, vilket ger ett filter med definierade åtgärder och interaktioner. Med sekventiella filter kan du identifiera vad en besökare gillar och vad en besökare undviker. När sekventiella filter skapas används operatorn THEN för att definiera och ordna besökarnavigering.
 
 Här är ett exempel:
 
@@ -57,7 +54,7 @@ Personbehållare kan innehålla värden som baseras på en besökares övergripa
 
 ### Sessionsbehållare
 
-Med sessionsbehållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar upp beteenden för hela besökssessionen när regeln har uppfyllts och låter dig definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett segment. Den kan hjälpa dig att svara på följande frågor:
+Med sessionsbehållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar upp beteenden för hela besökssessionen när regeln har uppfyllts och låter dig definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett filter. Den kan hjälpa dig att svara på följande frågor:
 
 * Hur många besökare tittade på News and Sports-delen i samma session?
 * Vilka sidor bidrog till en lyckad konvertering till en försäljning?
@@ -83,7 +80,7 @@ Händelsebehållare innehåller värdebaserade ensidesindelningar:
 
 ## Inkörbar filtermall
 
-Traditionell analys innehåller många färdiga mallsegment (filter) och beräknade värden. Många av dem gäller inte i CJA, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i CJA.
+Traditionell analys innehåller många färdiga mallfilter (filter) och beräknade mätvärden. Många av dem gäller inte i CJA, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i CJA.
 
 | Filternamn | Beskrivning |
 | --- | --- |
