@@ -3,9 +3,9 @@ description: Läs mer om alternativen Ångra och Gör om i Analysis Workspace.
 title: Ångra och göra om inställningar
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '273'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 4%
 
 * **[!UICONTROL New Project]** eller  **[!UICONTROL Open Existing Project]** rensa  **[!UICONTROL Undo]** stacken
 
-* Du kan ångra/göra om ändring av rapportsviten.
 * Ett Ångra/Gör om-meddelande visas nära projektnamnet - det visar när en Ångra eller Gör om pågår.
 * Du kan använda följande [snabbtangenter](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md):
 
@@ -36,7 +35,6 @@ ht-degree: 4%
 * Bidragsanalys
 * Segmentjämförelse
 * Projektnamn
-* Val av rapportsvit
 * Lägg till/ta bort visualisering
 * Komprimera/utöka panel eller visualisering
 * Infoga med snabbtangenter (CTRL (CMD)+Z för Ångra), (CTRL (CMD)+SKIFT+Z för Gör om)
