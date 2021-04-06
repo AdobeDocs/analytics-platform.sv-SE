@@ -1,14 +1,14 @@
 ---
 description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 2%
 
 ---
-
 
 # Tillgänglighet i Analysis Workspace
 
@@ -67,9 +67,9 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 | Alt+1 | Ny frihandstabell |
 | Ctrl + Skift + C | Nytt beräknat mått |
 | Ctrl + Skift + D | Nytt datumintervall |
-| Ctrl + Skift + E | Nytt segment |
+| Ctrl + Skift + E | Nytt filter |
 | Ctrl + Z | Ångra |
-| Håll ned skift (i panelsegmentets dropzone) | Skapa ett [listrutefilter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| Håll ned skift (i panelfilterdropzone) | Skapa ett [listrutefilter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
 
 #### Demokratisering
 
