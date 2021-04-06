@@ -1,14 +1,14 @@
 ---
 title: Lång detaljdimensionsartikel
 description: Beskriver dimensionsposten "Long Tail" och varför den visas i rapporter.
+exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
 translation-type: tm+mt
-source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # Lång detaljdimensionsartikel
 
@@ -33,4 +33,4 @@ Om du vill minska dimensionsobjektet &quot;Lång stjärna&quot; rekommenderar Ad
 * Använd ett [filter](/help/components/filters/create-filters.md). Filter tillämpas när varje server bearbetar en delmängd av data. Om du begränsar antalet unika värden som returneras minskas dimensionsobjektet Lång sek.
 * Använd en dimension för uppslagsdatauppsättning. Dimensionerna för uppslagsdatauppsättningen kombinerar dimensionsobjekt för händelsedatamängd, som begränsar antalet unika värden som returneras.
 
-Generellt sett är det svårt att få en rapport som innehåller mer än 500 kB unika dimensionsposter. Om du använder ett segment eller en dimension för uppslagsdatauppsättning kan du minska förekomsten av&quot;Long Tail&quot; samtidigt som du gör rapporten lättare att använda. Adobe planerar att förbättra denna upplevelse när CJA utvecklas ytterligare.
+Generellt sett är det svårt att få en rapport som innehåller mer än 500 kB unika dimensionsposter. Om du använder ett filter eller en dimension för uppslagsdatauppsättning kan du minska förekomsten av&quot;Long Tail&quot; samtidigt som du gör rapporten lättare att använda. Adobe planerar att förbättra denna upplevelse när CJA utvecklas ytterligare.
