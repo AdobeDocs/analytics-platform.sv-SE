@@ -1,15 +1,15 @@
 ---
 description: Projektdelning och projektroller på arbetsytan
-keywords: Analysis Workspace sharing
+keywords: Analysis Workspace-delning
 title: Dela projekt
+exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1066'
 ht-degree: 3%
 
 ---
-
 
 # Dela projekt
 
@@ -52,7 +52,7 @@ Så här lägger du till mottagare i ditt delade projekt:
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
 1. Lägg till mottagare eller grupper med mottagare.
 Använd hjälpikonen längst upp för att få beskrivningar av de olika rollerna.
-1. (Valfritt) Dela inbäddade projektkomponenter (segment, beräknade värden och datumintervall) med alla mottagare.
+1. (Valfritt) Dela inbäddade projektkomponenter (filter, beräknade värden och datumintervall) med alla mottagare.
 När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Observera att den här inställningen inte kvarstår - det är en enkel åtgärd vid tidpunkten för delningen.
 1. (Valfritt) Ange den här sidan som landningssida för mottagare.
 Den här inställningen kvarstår inte - det är en enkel åtgärd vid tidpunkten för delningen.
