@@ -2,14 +2,14 @@
 description: Använd mallar i Workspace och skapa egna mallar.
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
+exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
 translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 3%
+source-wordcount: '700'
+ht-degree: 1%
 
 ---
-
 
 # Mallar
 
@@ -55,7 +55,7 @@ Användare med administratörsbehörighet kan omvandla projekt de skapar till en
 
 ## Standardmallar
 
-När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra listen. Analysis Workspace-mallar täcker vanliga användningsområden. De grupperas efter de lodräta värden de tillhör och fylls i med olika dimensioner, segment, mätvärden och visualiseringar, beroende på vilken rapportserie du har valt.
+När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra listen. Analysis Workspace-mallar täcker vanliga användningsområden. De grupperas efter lodrät som de tillhör och fylls i med olika dimensioner, filter, mätvärden och visualiseringar, beroende på vilken datavy du har valt.
 
 Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter dina behov (genom att till exempel lägga till eller ersätta mått eller visualiseringar) och spara dem under ett nytt namn.
 
@@ -73,39 +73,11 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 * **Självstudiekurs - marknadsanalys**: Den här självstudiekursen visar hur ni sammanställer en marknadsföringsanalys för era chefer, inklusive vilka anpassade mått och mätvärden som är viktiga.
 
-### Reklam
-
->[!IMPORTANT]
->
->Annonsmallar är bara tillgängliga om rapportsviten är aktiverad för Advertising Cloud.
-
-* **Betalsökmotorer**: Den här mallen bryter ned reklamtrender, annonsplattformar, nyckelord, konton, kampanjer med mera.
-
-### Handel
-
-* **Magento: Marknadsföring och handel**: Den här mallen bryter ned e-handelskonverteringen genom kanalattribuering, och ger insikt genom sökord, landningssida, geografisk plats med mera. En videoöversikt finns i:
-
->[!VIDEO](https://video.tv.adobe.com/v/28164)
-
 ### Media
 
 * **Ljudförbrukning**: Vilket innehåll konsumeras mest och engagerar användarna?
 * **Nyhet - frekvens - lojalitet**: Vilka är mina lojala läsare?
 
-### Mobil
-
->[!IMPORTANT]
->
->Mobilmallar är bara tillgängliga om rapportsviten är aktiverad för Mobile.
-
-* **Meddelanden:** Fokusera på prestanda i appen och push-meddelanden.
-* **Plats:** Innehåller en karta som visar platsdata.
-* **Viktiga mätvärden:** Håll koll på nyckelmätningarna i appen.
-* **Appanvändning:** Hur många appanvändare, starter och första starter har appen och vilken genomsnittlig sessionslängd var den?
-* **Anskaffning:** Se hur mobilförvärv fungerar.
-* **Prestanda:** Hur fungerar appen och var har användarna problem?
-* **Kvarhållning:** Vilka är mina lojala användare och vad gör de?
-* **Resor:** Vilka är de framträdande användningsmönstren för min app?
 
 ### Detaljhandel
 
@@ -119,37 +91,3 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 * **Kvarhållning:** Vilka typer av användare är sannolikt lojala användare på min webbplats?
 * **Teknik:** Vilken teknik använder människor för att komma åt min webbplats?
 
-### Personer
-
->[!NOTE]
->
->Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/data/people.html).
-
-Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
-
-* Segmentera era data för USA/Kanada jämfört med resten av världen. Device Co-op finns för närvarande endast i Nordamerika.
-* Jämför mätvärden för personer och unika besökare sida vid sida.
-* Se&quot;komprimeringsgraden&quot;, ett beräknat mått som beräknar hur mycket mindre personmätningen är som en procentandel av Unika besökare.
-* Jämför de enhetstyper kunderna använder
-* Se hur många enheter per person som används i genomsnitt.
-* Upptäck hur du använder segmentstackning med personmåttet.
-* Upptäck hur Experience Cloud-ID:t i din miljö förbättrar effektiviteten i personmätningen.
-
-### Resa-IQ: Mall för enhetsövergripande analys
-
-<!--This content is mirrored in the CDA doc.-->
-
-Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (CDA).
-
-* **Specialanteckning för medlemmarna i Co-op Graph**: Visar vilken del av rapportsviten som innehåller besökare i regioner där koordinatdiagrammet stöds och regioner där det inte stöds.
-* **Identifiering av användare**: Visar hur ofta besökare på er webbplats identifieras med hjälp av metoder som baseras på enhetsövergripande analys.
-* **Mäta målgruppens storlek**: Visar en jämförelse mellan Unika enheter och Personer. Andelen av dessa två tal kallas för komprimering mellan enheter, ett beräknat mått som visas på den här panelen. Detta komprimeringsmått är beroende av ett stort antal faktorer:
-   * **Använda Co-op-diagrammet eller det privata diagrammet**: I allmänhet tenderar organisationer som använder enhetskoordinaterna att se bättre komprimeringsgrader än organisationer som använder det privata diagrammet.
-   * **Inloggningshastighet**: Ju fler användare som loggar in på er webbplats, desto mer kan Adobe identifiera och sätta ihop besökare på olika enheter. Platser med låg inloggningshastighet har också låg komprimeringshastighet.
-   * **Experience Cloud ID-täckning**: Endast besökare med ett ECID kan sammanfogas. En lägre andel besökare på er webbplats som använder ett ECID-kort motsvarar lägre komprimeringsgrader.
-   * **Användning** av flera enheter: Om besökarna på webbplatsen inte använder flera enheter kan du se lägre komprimeringsgrader.
-   * **Rapportgranularitet**: Komprimering per dag är vanligtvis mindre än komprimering per månad eller år. Risken för att en individ ska använda flera enheter blir mindre inom en dag än under en hel månad. Segmentering, filtrering eller användning av nedbrytningsdimensioner kan också ge en lägre komprimeringsgrad.
-* **Personbaserade segment**: Innehåller en segmentlistruta där du kan visa enhetsspecifika data. Den här panelen uppmuntrar till experimenterande med segment för att se hur rapporter påverkas om du inkluderar eller utesluter enhetstyper.
-* **Analysera resan** mellan olika enheter: Tillhandahåller flödes- och utfallsrapporter baserat på enhetstyp.
-* **Tilldelning** mellan enheter: Kombinera funktionerna i Journey IQ och Attribution IQ.
-* **Andra tips och tricks**: Hjälpsamma ämnen kring CDA som gör att du kan få ut mer av att använda det.
