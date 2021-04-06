@@ -3,10 +3,10 @@ description: Vanliga frågor om arbetsytan och felsökningstips.
 title: Frågor och svar
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 44%
+ht-degree: 42%
 
 ---
 
@@ -34,6 +34,6 @@ Ogiltiga data innebär att Adobe inte kan returnera data med den kombination av 
 
 Om du har skapat en rapport om arbetsytan men det inte finns några data kan du kontrollera några saker:
 
-* Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.
+* Om du tillämpade ett filter i rapporten kanske filtervillkoren inte matchar några data. Försök att ta bort filtret eller justera filterdefinitionen.
 * Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
 * Navigera till webbplatsen och använd [Felsökning](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html) för att validera att data samlas in.
