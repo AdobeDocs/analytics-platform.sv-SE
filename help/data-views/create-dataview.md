@@ -1,14 +1,14 @@
 ---
 title: Skapa en datavy
 description: Beskriver hur du skapar en datavy för en plattformsdatauppsättning i Customer Journey Analytics (CJA).
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 translation-type: tm+mt
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en datavy
 
@@ -43,7 +43,7 @@ Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar t
 
 ## Lägg till komponenter
 
-1. Nu är det dags att lägga till komponenter (mått, mätvärden) i datavyn (liknande kureringsupplevelsen i virtuella rapportsviter). Observera att vart och ett av fälten i datauppsättningarna nu översätts till mått eller mätvärden. Dra mått och mätvärden till panelen eller **[!UICONTROL Select All]** för att lägga till alla komponenter.
+1. Nu är det dags att lägga till komponenter (mått, mått) i datavyn. Observera att vart och ett av fälten i datauppsättningarna nu översätts till mått eller mätvärden. Dra mått och mätvärden till panelen eller **[!UICONTROL Select All]** för att lägga till alla komponenter.
 
    ![](assets/add-all-components.png)
 
