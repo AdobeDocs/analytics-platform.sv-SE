@@ -5,9 +5,9 @@ title: Översikt över projekt
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1155'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 
 | Element | Beskrivning |
 |---|---|
-| [Skapa nytt projekt](/help/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden eller från en [mall](/help/analysis-workspace/build-workspace-project/starter-projects.md) som skapats åt dig. |
+| [Skapa nytt projekt](/help/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden. |
 | Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla projekt och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
 | Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
 | [Visa Tutorials](/help/analysis-workspace/home.md) | Här finns Analysis Workspace videokurser. |
@@ -47,12 +47,12 @@ I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga
 
 | Menyalternativ | Beskrivning |
 |---|---|
-| Projekt | Innehåller vanliga åtgärder för projekthantering, inklusive Nytt, Öppna, Spara, Spara som och [Spara som mall](/help/analysis-workspace/build-workspace-project/starter-projects.md). Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Med alternativen för att hämta CSV och ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) PDF kan du exportera data från Workspace. [Projektinformation och ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?#info-settings) inställningar innehåller många alternativ för att hantera ditt projekt. |
+| Projekt | Innehåller vanliga åtgärder för projekthantering, bland annat Ny, Öppna, Spara, Spara som och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Med alternativen för att hämta CSV och ](/help/analysis-workspace/curate-share/download-send.md) PDF kan du exportera data från Workspace. **Projektinformation och inställningar**  (se nedan) innehåller många alternativ för att hantera ditt projekt. |
 | Redigera | Ångra eller gör om den senaste åtgärden. Rensa alla återställer projektet till en tom startpunkt. |
 | Infoga | Infoga nya paneler eller visualiseringar från den här menyn. Du kan även infoga nya paneler och visualiseringar från den vänstra listen. |
-| [Komponenter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) | Skapa nya segment, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |
-| [Dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/send-schedule-files.html) | Kuratera, dela och schemalägg PDF/CSV-projekt för mottagare i organisationen. |
-| Hjälp | Få tillgång till hjälpdokumentation, videor och Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för arbetsytetips samt [felsökaren](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om arbetsytan och faktorer som påverkar projektet [prestanda](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html). |
+| [Komponenter](/help/components/overview.md) | Skapa nya filter, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |
+| [Dela](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratera, dela och schemalägg PDF/CSV-projekt för mottagare i organisationen. |
+| Hjälp | Få tillgång till hjälpdokumentation, videor och Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för arbetsytetips samt [felsökaren](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om arbetsytan och faktorer som påverkar projektet [prestanda](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
 | Dela-knapp eller ägare | Om du är i en egen eller Redigera för projektet ger knappen Dela i det övre högra hörnet tillgång till ett klick för att hantera projektmottagarna. Om du har en dubblett- eller vyroll för projektet visas projektägarens namn. |
 
 ### Projektinformation och inställningar {#info-settings}
@@ -106,7 +106,7 @@ Följande är vanliga åtgärder i Projects Manager och kan utföras på ett ell
 
 | Åtgärd | Beskrivning |
 |---|---|
-| Lägg till | Skapa ett nytt projekt från grunden eller starta från en [mall](/help/analysis-workspace/build-workspace-project/starter-projects.md). |
+| Lägg till | Skapa ett nytt projekt från grunden. |
 | Tagga eller godkänn | Välj &quot;Tagga&quot; eller &quot;Godkänn&quot; för att ordna dina projekt och göra dem enklare att söka efter. |
 | [Dela](/help/analysis-workspace/curate-share/share-projects.md) | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. |
 | Ta bort | Ta bort projektet. |
