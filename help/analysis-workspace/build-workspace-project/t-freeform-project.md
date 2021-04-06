@@ -3,9 +3,9 @@ description: Skapa ett projekt och lägg till komponenter (mått, mått, segment
 keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
 translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '729'
 ht-degree: 14%
 
 ---
@@ -124,9 +124,9 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
  </tbody> 
 </table>
 
-**[Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
+**[Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
 
-Panelen [!UICONTROL Visualizations] innehåller standarddiagram för analyser, diagram, donuts, datatabeller, [kohort](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)-tabeller, Venndiagram o.s.v. Du kan dra och släppa flera visualiseringar i ditt projekt.
+Panelen [!UICONTROL Visualizations] innehåller standarddiagram för analyser, diagram, donuts, datatabeller, [kohort](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)-tabeller, Venndiagram o.s.v. Du kan dra och släppa flera visualiseringar i ditt projekt.
 
 ![Stegresultat](assets/visualizations.png)
 
@@ -149,11 +149,11 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Lägg till tidsperiodkolumn</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Lägg till tidsperiodkolumn</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Jämför tidsperioder</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Jämför tidsperioder</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -169,7 +169,7 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Uppdelningar</a> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Uppdelningar</a> 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Mått </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Mätvärden </li> 
@@ -179,23 +179,23 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualisera</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualisera</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/curate-share/download-send.md"  > Hämta som CSV</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/curate-share/download-send.md"  > Hämta som CSV</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/home.md"  > Trendval</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/home.md"  > Trendval</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Skapa segment från markering</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Skapa segment från markering</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Kör i segmentjämförelse</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Kör i segmentjämförelse</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -209,4 +209,4 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
  </tbody> 
 </table>
 
-Mer information om hur du kopierar och markerar rader finns i [Interaktioner för tangentbord och mus i Analysis Workspace](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Mer information om hur du kopierar och markerar rader finns i [Interaktioner för tangentbord och mus i Analysis Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
