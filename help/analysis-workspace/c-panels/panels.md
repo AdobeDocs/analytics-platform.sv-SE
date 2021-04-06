@@ -3,9 +3,9 @@ description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights],  [!UICONTROL Blank] och  [!UICONTROL Freeform] paneler är bra platser för att starta analysen, medan  [!UICONTROL Analytics for Target],  [!UICONTROL Attribution IQ]och  [!UICONTROL Media Concurrent Viewers]   [!UICONTROL Segment Comparison] ge sig ut på mer avancerade analyser. En `"+"`-knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
+[!UICONTROL Quick Insights],  [!UICONTROL Blank] och  [!UICONTROL Freeform] paneler är bra platser att börja med och  [!UICONTROL Attribution IQ] ger sig på mer avancerade analyser. En `"+"`-knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
 
 Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den tomma panelen](/help/analysis-workspace/c-panels/blank-panel.md) till standard.[
 
@@ -37,9 +37,9 @@ Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering el
 
 ## Dropzone {#dropzone}
 
-Med panelens listruta kan du tillämpa segment- och listrutefilter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel. Titeln ovanför varje filter kan ändras genom att du klickar på redigeringspennan eller så kan du högerklicka för att ta bort den helt.
+Med panelens dropzone kan du använda filter och nedrullningsbara filter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel. Titeln ovanför varje filter kan ändras genom att du klickar på redigeringspennan eller så kan du högerklicka för att ta bort den helt.
 
-### Segmentfilter
+### Filter
 
 Dra och släpp eventuella filter från den vänstra listen i panelens släppzon för att börja filtrera panelen.
 
@@ -47,7 +47,7 @@ Dra och släpp eventuella filter från den vänstra listen i panelens släppzon 
 
 ### Ad hoc-filter
 
-Komponenter som inte tillhör segment kan också dras direkt till dropzone för att skapa ad hoc-filter, vilket sparar tid och arbete med att gå till Filter Builder. Filter som skapas på det här sättet definieras automatiskt som träffnivåfilter. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid filtret, sedan den pennformade redigeringsikonen och redigera den i Filterverktyget.
+Komponenter som inte är filterkomponenter kan också dras direkt till dropzone för att skapa ad hoc-filter, vilket sparar tid och arbete med att gå till Filter Builder. Filter som skapas på det här sättet definieras automatiskt som träffnivåfilter. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid filtret, sedan den pennformade redigeringsikonen och redigera den i Filterverktyget.
 
 Ad-hoc-filter är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
 
@@ -55,16 +55,16 @@ Ad-hoc-filter är lokala för projektet och visas inte i den vänstra listen om 
 
 ### Nedrullningsbara filter {#dropdown-filter}
 
-Förutom segmentfilter kan du med hjälp av nedrullningsbara filter interagera med data på ett kontrollerat sätt. Du kan t.ex. lägga till ett nedrullningsbart filter för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
+Förutom filter kan du med hjälp av nedrullningsbara filter interagera med data på ett kontrollerat sätt. Du kan till exempel lägga till ett nedrullningsbart filter för mobila enhetstyper så att du kan filtrera panelen efter Surfplatta, Mobiltelefon eller Skrivbord.
 
-Nedrullningsbara filter kan även användas för att konsolidera flera projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landsfilter.
+Nedrullningsbara filter kan även användas för att konsolidera flera projekt till ett. Om du t.ex. har många versioner av samma projekt med olika landsfilter kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landsfilter.
 
 ![](assets/dropdown-filter-intro.png)
 
 Så här skapar du nedrullningsbara filter:
 
-1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items], t.ex. värden inom dimensionen [!UICONTROL Marketing Channel], klickar du på högerpilsikonen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift-tangenten**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
-1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, segment eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
+1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items], t.ex. värden inom dimensionen [!UICONTROL Marketing Channel], klickar du på högerpilsikonen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift-tangenten**. Detta gör komponenterna till ett nedrullningsbart filter i stället för att bli ett enda filter.
+1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, filter eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens dropzon **samtidigt som du håller ned Skift-tangenten**.
 1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att välja **[!UICONTROL No filter]**.
 
 ![](assets/create-dropdown.png)
