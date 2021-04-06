@@ -2,14 +2,14 @@
 description: Visuellt presentera data i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
+exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1051'
 ht-degree: 4%
 
 ---
-
 
 # Översikt över visualiseringar
 
@@ -27,7 +27,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Liggande](/help/analysis-workspace/visualizations/bar.md) | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
 | [Punktdiagram](/help/analysis-workspace/visualizations/bullet-graph.md) | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
 | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | En *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
-| [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. |
+| [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller filter av en helhet. |
 | [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Kan anges till sekvenser av typen slutlig eller exakt |
 | [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | Visar exakta kundvägar via era webbplatser och appar. |
 | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. Det är grunden för dataanalys i Workspace. |
@@ -39,7 +39,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) | Visar ändringen mellan de markerade cellerna som ett stort tal/procent. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
 | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md) | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Använder cirklar för att beskriva måttöverlappningen för upp till 3 segment. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Använder cirklar för att beskriva måttöverlappningen för upp till 3 filter. |
 
 ## Inställningar {#settings}
 
@@ -97,6 +97,6 @@ Ytterligare funktioner för en visualisering är tillgängliga genom att högerk
 
 ## Skapa visuell ikon {#quick-viz}
 
-Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat 3 segmentrader skapas ett Venndiagram.
+Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat tre filterrader skapas ett Venndiagram.
 
 ![](assets/quick-viz.png)
