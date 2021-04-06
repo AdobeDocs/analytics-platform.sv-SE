@@ -3,9 +3,9 @@ title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Formatinställningarna gäller endast för mätvärden.
 
 ### Konfigurera inställningar för Inkludera/exkludera värden
 
-Med den här inställningen kan du ändra de underliggande data som du rapporterar om vid en fråga. Det är inte detsamma som ett filter (kallades tidigare segment). Men filtren kommer att ta hänsyn till denna nya dimension, liksom målning och attribuering.
+Med den här inställningen kan du ändra de underliggande data som du rapporterar om vid en fråga. Det är inte detsamma som ett filter. Men filtren kommer att ta hänsyn till denna nya dimension, liksom målning och attribuering.
 
 Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &quot;felsidor&quot; och inkludera alla sidor som [!UICONTROL contains the phrase] &quot;fel&quot;.
 
@@ -115,7 +115,7 @@ Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
 | [!UICONTROL Case sensitive] | Standard = På. Den här inställningen gäller bara för avsnittet [!UICONTROL Include/Exclude Values]. Du kan ange om inkluderings-/exkluderingsregeln som du tillämpar ska vara skiftlägeskänslig. |
-| [!UICONTROL Match] | Här kan du ange vilka värden du vill ta hänsyn till för rapportering före attribuering och segmentering (t.ex. endast använda värden som innehåller frasen &quot;error&quot;). Du kan ange: **[!UICONTROL If all criteria are met]** eller **[!UICONTROL If any criteria are met]**. |
+| [!UICONTROL Match] | Här kan du ange vilka värden du vill ta hänsyn till för rapportering före attribuering och filter (t.ex. endast använda värden som innehåller frasen &quot;error&quot;). Du kan ange: **[!UICONTROL If all criteria are met]** eller **[!UICONTROL If any criteria are met]**. |
 | [!UICONTROL Criteria] | Här kan du ange den matchningslogik som ska användas för en viss filterregel.<ul><li>**Sträng**: Innehåller frasen, Innehåller valfri term, Innehåller alla termer, Innehåller ingen term, Innehåller inte frasen, Lika med, Är inte lika, Börjar med, Slutar med</li><li>**Dubbel/heltal**: är lika med, inte lika med, är större än, är mindre än, är större än eller lika med, är mindre än eller lika med</li><li>**Datum**: är lika med, inte lika med, är senare än, är före, finns i</li></ul> |
 | [!UICONTROL Match operand] | Här kan du ange den matchningsoperand som matchningsoperatorn ska användas på.<ul><li>**Sträng**: Textfält</li><li>**Dubbel/heltal**: Textfält med upp-/nedpilar för numeriska värden</li><li>**Datum**: Väljare för daggranularitet (kalender)</li><li>**Datum och tid**: Val för datum- och tidsgranularitet</li></ul> |
 | [!UICONTROL Add rule] | Här kan du ange ytterligare en matchningsoperator och -operand. |
