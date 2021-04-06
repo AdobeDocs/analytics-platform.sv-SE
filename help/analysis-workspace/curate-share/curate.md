@@ -4,7 +4,7 @@ keywords: Analysis Workspace kurser
 title: Kuratprojekt
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Kuratprojekt
 
-Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderas innan du delar ett projekt.
+Med kurering kan du begränsa komponenterna (mått, mått, filter, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderas innan du delar ett projekt.
 
 >[!NOTE]
 > Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via [Adobe Experience Cloud Admin Console](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html). Curation är ett sekundärt filter.
