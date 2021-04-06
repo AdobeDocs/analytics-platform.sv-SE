@@ -1,15 +1,15 @@
 ---
 description: projekt med endast visning i arbetsytan
-keywords: View-only projects
+keywords: Visa endast  projekt
 title: Visa endast  projekt
+exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Visa endast  projekt
 
@@ -26,7 +26,6 @@ Du kan dela projekt som&quot;endast visning&quot; till mottagare via arbetsflöd
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dolt vänster spår
-* Rapportsvit
 * Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till ett [nedrullningsbart filter med datumintervall](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
 * Frihand # av synliga rader
