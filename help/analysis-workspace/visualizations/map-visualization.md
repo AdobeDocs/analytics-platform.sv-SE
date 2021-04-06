@@ -2,10 +2,10 @@
 description: Lär dig hur du skapar en visuell karta över alla mätvärden i Analysis Workspace.
 title: Mappa
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 2%
+source-wordcount: '520'
+ht-degree: 3%
 
 ---
 
@@ -30,19 +30,6 @@ The Map Visualization in Analysis Workspace
 
 1. Dra ett mätvärde från listan med mätvärden (inklusive beräknade värden).
 1. Ange den datakälla som du vill rita från. (Den här dialogrutan visas bara om du har platsspårning aktiverad för mobilappsdata.)
-
-<table id="table_CD54B433464B4282A7524FB187016C47"> 
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Mobile Lat/Long</b> </p> </td> 
-   <td colname="col2"> <p>Det här alternativet representerar mobilappsdata. </p> <p>Det här alternativet visas bara om du har aktiverat det för din rapportsserie i <span class="ignoretag"> <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Report Suites </span> &gt; <span class="uicontrol"> &lt;select report suite&gt; </span> &gt; <span class="uicontrol"> Redigera inställningar </span> &gt; &lt;a1 1/&gt; Mobile Management </span> &gt; <span class="uicontrol"> Enable Location Tracking </span> </span>.<span class="uicontrol"> </span></p> <p>Det här är standardinställningen (om platsspårning är aktiverat). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Geografisk Dimension  </b> </p> </td> 
-   <td colname="col2"> <p>Det här alternativet representerar geosegmenteringsdata om besökarens plats baserat på besökarens IP-adress. Dessa data omvandlas till Land, Region och Stad. Observera att det inte går till DMA- eller Zip-kodnivån. </p> <p>Nästan alla rapportsviter har den här dimensionen aktiverad. Om du inte har det kontaktar du Adobe kundtjänst för att aktivera geografiska rapporter. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 1. Klicka på **[!UICONTROL Build]**.
 
