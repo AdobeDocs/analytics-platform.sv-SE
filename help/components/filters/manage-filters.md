@@ -1,14 +1,14 @@
 ---
 title: Hantera filter
 description: Lär dig hantera filter i Customer Journey Analytics
+exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1079'
 ht-degree: 1%
 
 ---
-
 
 # Hantera filter
 
@@ -24,11 +24,10 @@ Gå till Filterhanteraren genom att gå till **[!UICONTROL Customer Journey Anal
 
 | # | Gränssnittsfunktion | Beskrivning |
 |---|---|---|
-| 3 | Verktygsfältet Filterhantering | När du har markerat ett filter visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
+| 1 | Verktygsfältet Filterhantering | När du har markerat ett filter visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
 | 2 | Kryssrutor | Kontrollera ett filter för att hantera det. |
 | 4 | Favoriter | Om du klickar på stjärnan bredvid ett filter ändras stjärnan till gul och filtret markeras som en favorit. |
 | 5 | Titel och beskrivning | Finns i Filter Builder. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till Filterverktyget. |
-| 6 | Rapportsviter | Den här kolumnen anger i vilken rapportsserie filtret senast sparades. |
 | 7 | Ägare | Anger vem som äger filtret. Om du inte är administratör kan du bara se filter som du äger eller de som delats med dig. |
 | 8 | Taggar (inte incheckad i kolumnväljare, därför visas inte kolumnen) | Taggar som har tillämpats på filtret, antingen av dig eller av personer som delat filtret med dig. |
 | 9 | Delas med | Visar enskilda personer eller grupper (endast Admin) eller Alla (endast Admin) som du har delat filtret med. |
@@ -36,7 +35,7 @@ Gå till Filterhanteraren genom att gå till **[!UICONTROL Customer Journey Anal
 | 11 | Kolumnväljare | (Överst till höger) Gör att du kan välja vilka kolumner som ska visas i Filterhanteraren. |
 | 12 | Ikon för delad | Anger att det här filtret delas av dig eller med dig. |
 | 13 | Ikonen Godkänd | Anger att det här filtret har godkänts av en administratör. |
-| 14 | Andra filter | Gör att du kan se filter efter taggar, rapportsviter, ägare och annan (Visa alla, Min, Delas med mig, Godkänd, Favoriter). |
+| 14 | Andra filter | Gör att du kan se filter efter taggar, datavyer, ägare och annat (Visa alla, Min, Delas med mig, Godkänd, Favoriter). |
 
 ## Planfilter
 
@@ -138,4 +137,3 @@ Att markera segment som favoriter är ett annat sätt att ordna dem så att de b
 1. I Filterhanteraren markerar du stjärnan bredvid eventuella filter som du vill markera som favoriter. Stjärnan blir gul när du markerar den.
 
 1. Du kan även filtrera efter favoriter under Filter > Andra filter > Favoriter.
-
