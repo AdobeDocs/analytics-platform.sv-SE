@@ -2,14 +2,14 @@
 keywords: Analysis Workspace
 title: Översikt över Analysis Workspace
 description: Översikt över Analysis Workspace funktioner
+exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '461'
 ht-degree: 4%
 
 ---
-
 
 # Översikt över Analysis Workspace
 
@@ -40,8 +40,6 @@ När du har loggat in bör du använda Analysis Workspace självstudiekurs, som 
 När självstudiekursen är klar kan du börja skapa ditt första projekt. **Det nya projektet modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [ett tomt mobilstyrkort](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela analysen från webbläsaren eller mobilappen Adobe Analytics dashboards.
 
 ![](assets/create-new-project.png)
-
-Du kan också börja analysera från färdiga **mallar**, antingen standardmallar som tillhandahålls av Adobe eller egna mallar som skapats av din organisation. Det finns flera olika mallar tillgängliga, beroende på vilken analys eller vilket användningsfall du har tänkt dig. [Läs ](/help/analysis-workspace/build-workspace-project/starter-projects.md) mer om de olika mallalternativen.
 
 ## Bygg din analys {#analysis}
 
