@@ -1,14 +1,14 @@
 ---
 description: Quick Insights är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
 title: Panelen Snabbinsikter
+exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 translation-type: tm+mt
-source-git-commit: 468f1f3bbe8ed555e944be49ec3bf3dcc577a23e
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 2%
 
 ---
-
 
 # Panelen Snabbinsikter
 
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 [!UICONTROL Quick Insights] ger vägledning till icke-analytiker och nya användare av [!UICONTROL Analysis Workspace] så att de kan lära sig att snabbt och enkelt svara på affärsfrågor. Det är också ett bra verktyg för avancerade användare som snabbt vill besvara en enkel fråga utan att själva behöva skapa en tabell.
 
-När du börjar använda denna [!UICONTROL Analysis Workspace] kanske du undrar vilka visualiseringar som skulle vara mest användbara, vilka dimensioner och mätvärden som skulle kunna underlätta insikter, var objekten ska dras och släppas, var segmenten ska skapas osv.
+När du börjar använda denna [!UICONTROL Analysis Workspace] kanske du undrar vilka visualiseringar som skulle vara mest användbara, vilka dimensioner och mätvärden som skulle kunna underlätta insikter, var objekten ska dras och släppas, var ett filter ska skapas osv.
 
-[!UICONTROL Quick Insights] använder en algoritm som ger dig de vanligaste måtten, måtten, segmenten och datumintervallen som ditt företag använder för att hjälpa till med detta och baserat på hur ditt eget företag använder datakomponenter i [!UICONTROL Analysis Workspace]. I listrutan visas faktiskt dimensioner, mått och segment som är taggade som [!UICONTROL Popular]:
+[!UICONTROL Quick Insights] använder en algoritm som ger dig de vanligaste måtten, måtten, filtren och datumintervallen som ditt företag använder för att hjälpa till med detta och baserat på hur ditt företag använder datakomponenter i [!UICONTROL Analysis Workspace]. I listrutan visas faktiskt mått, mätvärden och filter som är taggade som [!UICONTROL Popular]:
 
 ![](assets/popular-tag.png)
 
@@ -32,7 +32,7 @@ När du börjar använda denna [!UICONTROL Analysis Workspace] kanske du undrar 
 
 * Bygg en datatabell och en medföljande visualisering i [!UICONTROL Analysis Workspace].
 * Lär dig terminologi och vokabulär för grundläggande komponenter och delar i [!UICONTROL Analysis Workspace].
-* Gör enkla uppdelningar av dimensioner, lägg till flera mätvärden eller jämför segment enkelt i en [!UICONTROL Freeform table].
+* Gör enkla uppdelningar av dimensioner, lägg till flera mätvärden eller jämför enkelt filter i en [!UICONTROL Freeform table].
 * Ändra eller prova olika visualiseringstyper för att snabbt och intuitivt hitta sökverktyget för din analys.
 
 ## Grundläggande nyckelterminologi
@@ -46,7 +46,7 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 | [!UICONTROL Metric] | Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
 | [!UICONTROL Visualization] | Workspace erbjuder [ett antal visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data, som stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram och andra. |
 | [!UICONTROL Dimension Breakdown] | En dimensionsuppdelning är ett sätt att bokstavligen dela upp en dimension med andra dimensioner. I det här exemplet kan du bryta ned USA efter mobila enheter för att få mobilenhetsbesök per delstat, eller så kan du bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer osv. |
-| [!UICONTROL Segment] | Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor]-segment baserat på attribut: webbläsartyp, enhet, antal besök, land, kön eller baserat på interaktioner: kampanjer, sökordssökningar, sökmotorer eller baserat på avslutningar och tävlingsbidrag: besökare från Facebook, en definierad landningssida, hänvisande domän eller baserad på anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
+| [!UICONTROL filter] | Med -filter kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor]-filter baserat på attribut: webbläsartyp, enhet, antal besök, land, kön eller baserat på interaktioner: kampanjer, sökordssökningar, sökmotorer eller baserat på avslutningar och tävlingsbidrag: besökare från Facebook, en definierad landningssida, hänvisande domän eller baserad på anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
 
 ## Kom igång med Quick Insights
 
@@ -58,7 +58,7 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
    ![](assets/qi-panel.png)
 
 1. När du börjar ska du gå igenom den korta självstudiekurs som lär ut några av grunderna i [!UICONTROL Quick Insights panel]. Du kan också klicka för att **[!UICONTROL Skip Tutorial]**.
-1. Markera dina byggstenar (kallas även komponenter): dimensioner (orange), mått (grönt), segment (blått) eller datumintervall (lila) Du måste välja minst en dimension och ett mått för att en tabell ska skapas automatiskt.
+1. Markera dina byggstenar (kallas även komponenter): dimensioner (orange), mått (grönt), filter (blått) eller datumintervall (lila) Du måste välja minst en dimension och ett mått för att en tabell ska skapas automatiskt.
 
    ![](assets/qibuilder2.png)
 
@@ -98,7 +98,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder], vissa beroen
 
    ![](assets/qibuilder6.png)
 
-* **Lägg till fler segment**: Du kan lägga till upp till två segment till genom att använda operatorerna AND eller OR för att lägga till dem i tabellen. Se vad som händer med tabellen när du lägger till mobilanvändare eller lojala besökare. De står bredvid varandra, ovanför mätvärdena. Om du lade till mobila användare och lojala besökare skulle du se resultat från båda segmenten tillsammans, och de skulle staplas ovanpå varandra i tabellen.
+* **Lägg till fler filter**: Du kan lägga till ytterligare upp till två filter genom att använda operatorerna AND eller OR för att lägga till dem i tabellen. Se vad som händer med tabellen när du lägger till mobilanvändare eller lojala besökare. De står bredvid varandra, ovanför mätvärdena. Om du lade till mobila användare OCH lojala besökare skulle du se resultat från båda filtren tillsammans, och de skulle staplas ovanpå varandra i tabellen.
 
    ![](assets/qibuilder7.png)
 
@@ -113,4 +113,3 @@ Du får en varning innan du lägger till något direkt i tabellen:
 ![](assets/qibuilder8.png)
 
 Om du skapar direkt kommer tabellen nu att fungera som en traditionell Freeform-tabell, utan de praktiska funktionerna för nya användare.
-
