@@ -2,14 +2,14 @@
 description: Interaktioner med tangentbord, kortkommandon och beteenden för peka och klicka som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
 title: Snabbtangenter (kortkommandon)
+exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 4%
+source-wordcount: '288'
+ht-degree: 5%
 
 ---
-
 
 # Snabbtangenter (kortkommandon)
 
@@ -39,7 +39,7 @@ Obs! `CTRL` = Windows och `command` = Mac
 | Skapa en avisering | Ctrl (eller cmd) + Skift + a |
 | Skapa beräknat mått | Ctrl (eller cmd) + Skift + c |
 | Skapa ett datumintervall | Ctrl (eller cmd) + Skift + d |
-| Skapa ett segment | Ctrl (eller cmd) + Skift + e |
+| Skapa ett filter | Ctrl (eller cmd) + Skift + e |
 | Rensa alla | alt + w |
 | Kopiera | ctrl (eller cmd) + c |
 | Gör om | Ctrl (eller cmd) + Skift + z |
@@ -52,13 +52,10 @@ Obs! `CTRL` = Windows och `command` = Mac
 
 | Åtgärd | Genväg |
 |---|---|
-| Ny analys för målpanelen | alt + g |
 | Ny attributpanel | alt + e |
 | Ny tom panel | alt + b |
 | Ny friformspanel | alt + a |
-| Ny panel för samtidiga visningsprogram för media | alt + h |
 | Ny snabbinsikter-panel | alt + f |
-| Ny jämförelsepanel för segment | alt + C |
 | Ny friformstabell | alt + 1 |
 | Nytt linjediagram | alt + 2 |
 | Nytt stapeldiagram | alt + 3 |
