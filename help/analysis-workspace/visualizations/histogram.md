@@ -1,14 +1,14 @@
 ---
 description: Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall).
 title: Histogram
+exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 3%
 
 ---
-
 
 # Histogram
 
@@ -60,7 +60,7 @@ Om du vill visa eller ändra datakällan för histogramdiagrammet klickar du på
 
 ![](assets/manage-data-source.png)
 
-Färdiga segment som visas i tabellen är interna segment och visas inte i segmentväljaren. Klicka på ikonen&quot;i&quot; bredvid segmentnamnet och klicka sedan på **[!UICONTROL Make public]** för att göra segmentet offentligt.
+Fördefinierade filter som visas i tabellen är interna filter och visas inte i filterväljaren. Klicka på ikonen &quot;i&quot; bredvid filternamnet och klicka sedan på **[!UICONTROL Make public]** för att göra filtret offentligt.
 
 ![](assets/prebuilt_segments.png)
 
