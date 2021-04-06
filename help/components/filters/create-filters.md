@@ -1,20 +1,20 @@
 ---
 title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
+exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 translation-type: tm+mt
-source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
 
 ---
 
-
 # Skapa filter
 
 I Filter Builder finns en arbetsyta som du kan använda för att dra och släppa mätvärden, dimensioner, filter och händelser för att filtrera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa filter som identifierar besökares attribut och åtgärder i olika besök och sidträffar.
 
-Du kan skapa direktfilter genom att släppa valfri komponenttyp (dimension, dimensionsobjekt, händelse, mått, segment, segmentmall, datumintervall) i filtersläppzonen högst upp på en panel.
+Du kan skapa direktfilter genom att släppa valfri komponenttyp (dimension, dimensionsobjekt, händelse, mått, filter, filtermall, datumintervall) i filtersläppzonen högst upp på en panel.
 
 Komponenttyper konverteras automatiskt till filter. Du kan också klicka på plustecknet (+) i rutan **[!UICONTROL Add Filter]**.
 
