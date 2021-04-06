@@ -1,8 +1,9 @@
 ---
 description: Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel"Dagens timme" eller"Veckodag".
 title: Tidsdelning av dimensioner
+exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 2685d75dac9ad7e74f2010dda82cd1d4d65dbd7b
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 3%
