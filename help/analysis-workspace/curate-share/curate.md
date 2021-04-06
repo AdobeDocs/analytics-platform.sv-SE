@@ -2,14 +2,14 @@
 description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
 keywords: Analysis Workspace kurser
 title: Kuratprojekt
+exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 translation-type: tm+mt
-source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '473'
 ht-degree: 2%
 
 ---
-
 
 # Kuratprojekt
 
@@ -22,7 +22,6 @@ Med kurering kan du begränsa komponenterna (mått, mått, segment, datuminterva
 
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 De komponenter som används i projektet läggs automatiskt till.
-   **Obs**: Om ett projekt har flera rapportsviter visas ett kuratefält för varje rapportserie i projektet.
 1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till fältet [!UICONTROL Curate Components].
 1. Klicka på **[!UICONTROL Done]**.
 
@@ -58,4 +57,3 @@ I ett välstrukturerat projekt får mottagaren alternativet att **[!UICONTROL Sh
 | **Komponenter som har lagts till eller tagits bort från en datavy** | Endast komponenter som har lagts till i datavyn (dolda eller inte dolda). Administratörer kan inte rapportera fält eller komponenter som inte har definierats i datavyn. | Endast komponenter som har lagts till i datavyn, eller komponenter som ägs eller delas med användaren. Dolda komponenter är inte tillgängliga (som VRS-kurering). | Endast komponenter som lagts till i DV-filen är inte dolda och har inkluderats i projektkurationen. |
 | **Kuraterade komponenter i ett projekt** | Alla datavykomponenter som är tillgängliga för rapportering (dolda komponenter kräver att du klickar på Visa alla) | Alla icke-dolda datavykomponenter (kräver att du klickar på Visa alla) | Endast förvaltade komponenter, plus eventuella komponenter som ägs eller delas med användaren |
 | **Kuraterat projekt med en datavy med dolda komponenter** | Alla datakomponenter som är tillgängliga för rapportering (dolda och icke-förvaltade komponenter kräver att du klickar på Visa alla) | Alla icke-förvaltade projektkomponenter, alla icke-dolda datavykomponenter och alla komponenter som ägs eller delas med användaren | Endast förvaltade komponenter, plus alla komponenter som ägs eller delas med användaren |
-
