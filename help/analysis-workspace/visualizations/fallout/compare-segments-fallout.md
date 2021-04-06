@@ -1,15 +1,15 @@
 ---
-description: Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace.
-keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
+description: Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
+keywords: bortfall och filter;filter i bortfallsanalys;jämför filter i bortfall
 title: Använda filter i bortfallsanalys
+exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
-
 
 # Använda filter i bortfallsanalys
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 >
 >Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Du kan skapa filter från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
+Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
 
 >[!IMPORTANT]
 >
->Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontext-utrullning måste filter som används som kontrollpunkter vara besök eller träffbaserade filter. Med en kontextutvikning för besök måste filter som används som kontrollpunkt vara träffbaserade segment. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
+>Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontext-utrullning måste filter som används som kontrollpunkter vara besök eller träffbaserade filter. Med en kontextutfällning måste filter som används som kontrollpunkt vara träffbaserade. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
 
 * Använda ett besöksbaserat filter som kontaktyta inuti en besökarsammanhangsbaserad utfallsvisualisering
 * Använda ett besöksbaserat filter som kontaktyta i en snabbutfallsvisualisering
@@ -53,7 +53,7 @@ Du kan också skapa en OCH-kontaktyta genom att dra filtret för amerikanska anv
 
 Du kan jämföra ett obegränsat antal filter i Utfallsvisualiseringen.
 
-1. Markera de segment som du vill jämföra från [!UICONTROL Filter]-listen till vänster. I vårt exempel har vi valt två segment: Användare i USA och användare utanför USA.
+1. Välj de filter som du vill jämföra från [!UICONTROL Filter]-listen till vänster. I vårt exempel har vi valt två filter: Användare i USA och användare utanför USA.
 1. Dra dem till filtersläppzonen längst upp.
 
    ![](assets/segment-drop.png)
