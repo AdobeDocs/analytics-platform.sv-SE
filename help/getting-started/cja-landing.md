@@ -1,20 +1,20 @@
 ---
 title: Customer Journey Analytics Guide
 description: Customer Journey Analytics landningssida.
+exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 translation-type: tm+mt
-source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 6%
 
 ---
 
-
 # Customer Journey Analytics Guide
 
 Den här tekniska handboken ger självhjälp för Customer Journey Analytics. Med Customer Journey Analytics kan ni hämta kunddata från valfri kanal - både online och offline - till Adobe Experience Platform och sedan analysera dessa data på samma sätt som ni gör med era befintliga digitala data via Analysis Workspace idag.
 
-Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och offlinedata i Analysis Workspace med vilket kundID som helst, vilket slutligen gör att ni kan skapa attribuering, segmentering, flöde, utfall osv. för hela er kunddatauppsättning i Adobe Analytics.
+Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och offlinedata i Analysis Workspace med vilket kundID som helst, så att ni till sist kan utföra attribuering, filter, flöde, bortfall osv. för hela er kunddatauppsättning i Adobe Analytics.
 
 Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna tilläggsprodukt. Kontakta ditt Adobe-kontoteam för mer information.
 
