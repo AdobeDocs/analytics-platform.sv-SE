@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics - översikt
 description: Lär dig hur du kan använda Analysis Workspace med data från Experience Platform i Customer Journey Analytics.
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
-
 
 # Customer Journey Analytics - översikt
 
@@ -19,7 +19,7 @@ Customer Journey Analytics är en analysfunktion som gör att ni kan använda kr
 Customer Journey Analytics utökar räckvidden för Analytics genom att erbjuda lättanvända flerkanalsfunktioner och tar bort begränsningar i tidigare versioner av Adobe Analytics. Några viktiga förbättringar är:
 
 * **Obegränsade variabler och händelser**: Begreppen eVars, props och events finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha en obegränsad mängd unika mått och mätvärden.
-* **Obegränsade unika värden**: Adobe Experience Platform begränsas inte till några unika begränsningar, som 500 kB unika värden i traditionella rapportsviter.
+* **Obegränsade unika värden**: Adobe Experience Platform begränsas inte till några unika begränsningar.
 * **Ändra historiska data**: Med Adobe Experience Platform kan data tas bort eller korrigeras.
 * **Data** för flera rapporter: Befintliga implementeringar från flera datauppsättningar kan kombineras i Platform.
 
@@ -74,7 +74,7 @@ Icke-produktadministratörer (användare) i Customer Journey Analytics kan inte 
 Flera funktioner i CJA har bytt namn, jämfört med traditionella Adobe Analytics, för att passa in i branschstandarder. Några av de uppdaterade terminologin:
 
 * Segment kallas nu för filter.
-* Virtuella rapportsviter kallas nu för vyer.
+* Virtuella rapportsviter kallas nu datavyer.
 * Klassificeringar kallas nu&quot;Sök efter datauppsättningar&quot;.
 * Kundattribut kallas nu profildatamängder.
 * Träffbehållare kallas nu Event-behållare.
