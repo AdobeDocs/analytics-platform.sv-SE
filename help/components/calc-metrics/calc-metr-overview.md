@@ -1,14 +1,14 @@
 ---
 title: Översikt över beräknade mätvärden
-description: 'Läs mer om '
+description: Läs mer om
+exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '484'
 ht-degree: 4%
 
 ---
-
 
 # Översikt över beräknade mätvärden
 
@@ -16,12 +16,11 @@ ht-degree: 4%
 >
 >Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden. Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan du som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra din [!DNL Analytics]-implementering.
+Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden. Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen.
 
 Ni kan
 
-* Skapa filtrerade mätvärden som härleds vid rapportkörningen, [utan att behöva ändra implementeringen](https://youtu.be/CuQTm9RaUpY). Dessa kan visas historiskt eftersom de baseras på filter.
-* Dela mätvärden mellan olika rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
+* Skapa filtrerade mätvärden som genereras vid rapportkörning, utan att behöva ändra implementeringen. Dessa kan visas historiskt eftersom de baseras på filter.
 * (Endast avancerade beräknade värden) Filtrera på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot; med antalet personer som det här är den första sessionen för.
 * (Endast avancerade beräknade värden) Inkludera statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
 
