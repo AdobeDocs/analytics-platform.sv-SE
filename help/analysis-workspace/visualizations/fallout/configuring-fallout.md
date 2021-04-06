@@ -1,20 +1,20 @@
 ---
 description: Lär dig hur du anger kontaktytorna för att skapa en flerdimensionell utfallssekvens.
 title: Konfigurera en utfallsvisualisering
+exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 1%
 
 ---
 
-
 # Konfigurera en utfallsvisualisering
 
 Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan till exempel lägga till händelser, som enheter, samt unika besökare och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
-Du kan till och med lägga till segment inom en kontaktyta. Du kanske vill jämföra segment, till exempel iOS- och Android-användare. Dra de önskade segmenten högst upp i utfallet och information om dessa segment läggs till i utfallsrapporten. Om du bara vill visa dessa segment, kan du ta bort baslinjen Alla besök.
+Du kan till och med lägga till filter i en kontaktyta. Du kanske vill jämföra filter, till exempel iOS- och Android-användare. Dra de önskade filtren högst upp i utfallet och information om dessa filter läggs till i utfallsrapporten. Om du bara vill visa dessa filter, kan du ta bort baslinjen Alla besök.
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
@@ -38,7 +38,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
 
    >[!NOTE]
    >
-   >Flera segment är sammanfogade med AND, men flera objekt, som dimensionsobjekt och mått, är sammanfogade med OR.
+   >Flera filter förenas med AND, men flera objekt som dimensionsobjekt och mått förenas med OR.
 
    ![](assets/multiple_obj_touchpoint.png)
 
@@ -74,4 +74,4 @@ När du **högerklickar på en kontaktyta** visas följande alternativ:
 | Trend all touchpoints (%) | Trends all the touchpoint percentage in the fallout (except &quot;All Visits&quot;, if it is included), on the same chart. |
 | Bryt ner fallthrough vid den här kontaktytan | Se vad besökarna gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
 | Bryt ned bortfallet vid den här kontaktytan | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. |
-| Skapa segment från kontaktyta | Skapa ett nytt segment från den markerade kontaktytan. |
+| Skapa filter från kontaktyta | Skapa ett nytt filter från den valda kontaktytan. |
