@@ -5,7 +5,7 @@ title: Översikt över projekt
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 2%
@@ -80,7 +80,7 @@ I ett projekt är [paneler](/help/analysis-workspace/c-panels/panels.md), tabell
 
 Du kan även komma åt visualiseringar och paneler från den tomma panelen[a1/>.](/help/analysis-workspace/c-panels/blank-panel.md)
 
-Komponenter (Dimensioner, Metrisk, Segment, Datumintervall) i det vänstra fältet relaterar till den aktiva panelens datavy. Den aktiva panelen kommer att ha en blå ram runt sig och den aktiva datavyn kommer att visas högst upp i komponentspåret.
+Komponenter (Dimensioner, Metrisk, Filter, Datumintervall) i den vänstra listen relaterar till den aktiva panelens datavy. Den aktiva panelen kommer att ha en blå ram runt sig och den aktiva datavyn kommer att visas högst upp i komponentspåret.
 
 ![](assets/left-rail.png)
 
