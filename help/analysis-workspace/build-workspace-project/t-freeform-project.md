@@ -3,17 +3,17 @@ description: Skapa ett projekt och lägg till komponenter (mått, mått, segment
 keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 14%
+source-wordcount: '648'
+ht-degree: 16%
 
 ---
 
 
 # Skapa ett Workspace-projekt
 
-Skapa ett projekt och lägg till komponenter (mått, mått, segment, datumintervall) på frihandspanelen.
+Skapa ett projekt och lägg till komponenter (mått, mått, filter, datumintervall) på frihandspanelen.
 
 I den här artikeln får du information om Analysis Workspace gränssnittselement och hur du skapar ett projekt.
 
@@ -36,8 +36,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
    Du kan välja om du vill skapa ett projekt från
 
 * Ett tomt projekt (standard). Instruktioner finns nedan.
-* En standardmall. Mallarna skapas av Adobe och skickas ut. Mer information finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
-* En anpassad mall. De här mallarna skapas av användare med administratörsbehörighet. Mer information finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
+* En anpassad mall. De här mallarna skapas av användare med administratörsbehörighet.
 
    ![](assets/start_modal.png)
 
@@ -49,10 +48,6 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
    Ett tomt projekt visas med en friformspanel och en datatabellvisualisering.
 
    ![](assets/fa_project_new.png)
-
-   >[!NOTE]
-   >
-   >Ibland visas meddelandet&quot;Inkompatibel rapportserie&quot; när du läser in ett projekt (eller byter till en rapportsvit) där inte alla komponenter (mått/mått) som ingår i projektet ingår i rapportsviten. Du kan se en lista över komponenter som inte är kompatibla, så att du vet varför du får meddelandet.
 
 <table id="table_3989E45D9D4241CBB2E58B29DA257B2F"> 
  <thead> 
@@ -173,7 +168,7 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Mått </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Mätvärden </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Segment </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Filter </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">Tid </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -191,7 +186,7 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Skapa segment från markering</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Skapa filter från markering</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
