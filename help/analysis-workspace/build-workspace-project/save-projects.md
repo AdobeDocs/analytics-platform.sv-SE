@@ -1,11 +1,12 @@
 ---
 description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som och spara som mall.
 title: Spara projekt
+exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 translation-type: tm+mt
-source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 3%
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +22,7 @@ Det finns olika åtgärder att spara som du kan utföra under menyn **[!UICONTRO
 |---|---| 
 | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en (valfri) beskrivning och (valfritt) att lägga till taggar. |
 | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
-| **[!UICONTROL Save as template]** | Spara projektet som en [anpassad mall](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgänglig för din organisation under **[!UICONTROL Project > New]** |
+| **[!UICONTROL Save as template]** | Spara projektet som en anpassad mall som blir tillgänglig för din organisation under **[!UICONTROL Project > New]** |
 
 ![](assets/save-project.png)
 
