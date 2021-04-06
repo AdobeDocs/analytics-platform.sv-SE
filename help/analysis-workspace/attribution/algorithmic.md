@@ -1,14 +1,14 @@
 ---
 title: Algoritmisk attribuering
 description: Information om algoritmisk attribueringsmodell.
+exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 4%
 
 ---
-
 
 # Algoritmisk attribuering
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 >
 >**[!UICONTROL Algorithmic attribution]** har för närvarande begränsad testning. Mer information finns i [Adobe Analytics-funktionsreleaser](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html).
 
-Algoritmisk [attribueringsmodell](models.md) i Analysis Workspace skiljer sig från andra modeller på så sätt att den använder statistiska tekniker för att allokera kredit över dimensionsobjekten i din rapport eller frihandstabell. Precis som alla andra attribueringsmodeller i Analysis Workspace kan den användas på alla dimensioner eller mätvärden och har stöd för obegränsad segmentering och uppdelningar och distribuerar 100 % av konverteringarna till de dimensioner som anges i tabellen (kallas även&quot;fraktionerad&quot; attribuering).
+Algoritmisk [attribueringsmodell](models.md) i Analysis Workspace skiljer sig från andra modeller på så sätt att den använder statistiska tekniker för att allokera kredit över dimensionsobjekten i din rapport eller frihandstabell. Precis som alla andra attribueringsmodeller i Analysis Workspace kan den användas på alla mått och mätvärden och har stöd för obegränsade filter och uppdelningar och distribuerar 100 % av konverteringarna till de mått som anges i tabellen (kallas även&quot;bråkdelsattribuering&quot;).
 
 Den algoritm som används för attribuering bygger på Harsanyi Dividend från kooperativ spelteori. Harsanyi-utdelningen är en generalisering av Shapley-värdelösningen (som uppges efter Lloyd Shapley, en Nobel Laureate-ekonom) för att distribuera krediter bland spelarna i ett spel med olika bidrag till resultatet.
 
