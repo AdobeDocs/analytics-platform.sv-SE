@@ -1,20 +1,20 @@
 ---
 title: Vad är kohortanalys?
 description: Läs om kohortanalys i Analysis Workspace
+exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 translation-type: tm+mt
-source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-
 # Vad är [!UICONTROL Cohort Analysis]?
 
 En *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. [!UICONTROL Cohort Analysis] är till exempel användbart när du vill veta hur en kohort interagerar med ett varumärke. Du kan enkelt upptäcka ändringar i trender och sedan svara på dem. (Förklaringar av [!UICONTROL Cohort Analysis] finns på webben, t.ex. [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
-När du har skapat en kohortrapport kan du strukturera komponenterna (specifika dimensioner, mått och segment) och sedan dela kohortrapporten med vem som helst. Se [Kuratera och dela](/help/analysis-workspace/curate-share/curate.md).
+När du har skapat en kohortrapport kan du strukturera komponenterna (specifika dimensioner, mätvärden och filter) och sedan dela kohortrapporten med vem som helst. Se [Kuratera och dela](/help/analysis-workspace/curate-share/curate.md).
 
 Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 
@@ -32,7 +32,7 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 >
 >[!UICONTROL Cohort Analysis]
 >
->stöder inte icke-segmenterbara mått (inklusive beräknade värden), icke-heltalsvärden (t.ex. Intäkter) eller förekomster. Endast mätvärden som kan användas i segment kan användas i
+>stöder inte icke-filterbara mått (inklusive beräknade värden), icke-heltalsmått (som Intäkter) eller förekomster. Endast mätvärden som kan användas i filter kan användas i
 >[!UICONTROL Cohort Analysis]och de kan bara ökas med 1 i taget.
 
 ## Funktioner för kohortanalyser
@@ -41,13 +41,13 @@ Följande funktioner gör att du kan finjustera kontrollen över de kohorter du 
 
 ### [!UICONTROL Retention] Tabell
 
-En [!UICONTROL Retention]-kohortrapport returnerar besökare: varje datacell visar det obearbetade antalet och den procentuella andelen besökare i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
+En [!UICONTROL Retention]-kohortrapport returnerar besökare: varje datacell visar det obearbetade antalet och den procentuella andelen besökare i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Churn] Tabell
 
-En [!UICONTROL Churn]-kohort är omvänd till en kvarhållningstabell och visar de besökare som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
+En [!UICONTROL Churn]-kohort är omvänd till en kvarhållningstabell och visar de besökare som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
 
 ![](assets/churn-report.png)
 
@@ -70,4 +70,3 @@ Skapa kohorter baserat på en vald dimension, och inte tidsbaserade kohorter, so
 ![](assets/cohort-customizable-cohort-row.png)
 
 Instruktioner om hur du konfigurerar och kör en kohortrapport finns i [Konfigurera en kohortanalysrapport](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
-
