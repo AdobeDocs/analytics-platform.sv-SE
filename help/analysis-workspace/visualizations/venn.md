@@ -1,23 +1,23 @@
 ---
-description: Med Vennvisualiseringen kan du dra i upp till tre segment (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
+description: Med Vennvisualiseringen kan du dra in upp till tre filter (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
 title: Venn
 uuid: 0a743378-f588-417f-9108-4a1313d6bfeb
+exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 2%
 
 ---
 
-
 # Venn
 
-Med Vennvisualiseringen kan du dra i upp till tre segment (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
+Med Vennvisualiseringen kan du dra in upp till tre filter (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
 
 ![](assets/venn.png)
 
-Sedan kan du hålla markören över segmenten för att få bättre insikt i procentandelar, osv.
+Du kan sedan hålla muspekaren över filtren för att få mer insikt i procenttal, osv.
 
 ![](assets/venn_hover.png)
 
@@ -26,4 +26,3 @@ Om du vill omvandla Venndiagrammet till en frihandstabell klickar du på den fä
 Gå till ikonen Visualiseringsinställningar och välj **[!UICONTROL Normalization]** för att normalisera Venndiagrammet (ta bort storleken).
 
 ![](assets/normalization.png)
-
