@@ -18,9 +18,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 16341ab99e24d40580a1052aacc7daedb5b5f9c1
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 42%
 
 ---
@@ -58,7 +58,6 @@ ht-degree: 42%
    + Projekt {#build-workspace-project}
       + [Översikt över projekt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
-      + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
       + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
