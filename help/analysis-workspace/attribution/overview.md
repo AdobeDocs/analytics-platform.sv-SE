@@ -1,14 +1,14 @@
 ---
 title: Översikt över attribuering
 description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsobjekt.
+exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 48%
+ht-degree: 42%
 
 ---
-
 
 # Översikt över attribuering
 
@@ -35,7 +35,7 @@ Adobe Analytics förbättrar attribueringen eftersom ni kan:
 * Jämföra attribueringsmodeller utan begränsningar: jämför dynamiskt hur många modeller ni vill.
 * Undvika implementeringsändringar: med hjälp av rapporttidshantering och sammanhangsberoende sessioner kan kundresan byggas in och användas vid körning.
 * Skapa den session som bäst matchar attribueringsscenariot.
-* Dela upp attribueringen efter segment: jämför enkelt resultatet för marknadsföringskanalerna i alla viktiga segment (till exempel nya jämfört med återkommande kunder, produkt X jämfört med produkt Y, lojalitetsnivå eller kundens livstidsvärde).
+* Dela upp attribuering med filter: Jämför enkelt resultatet i era marknadsföringskanaler i alla viktiga filter (t.ex. nya jämfört med upprepade kunder, produkt X jämfört med produkt Y, lojalitetsnivå eller CLV).
 * Granska analyser av kontaktytor och kanalbyten: använd venndiagram och histogram samt trendattribuering.
 * Analysera viktiga marknadsföringssekvenser visuellt: utforska vägar som leder till konvertering visuellt med flernodsflöde och bortfallsvisualisering.
 * Skapa beräknade värden: använd valfria metoder för attribueringstilldelning.
