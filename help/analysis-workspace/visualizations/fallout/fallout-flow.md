@@ -1,14 +1,14 @@
 ---
 description: Bortfallsvisualiseringar visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
 title: Översikt över utfall
+exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 2%
+source-wordcount: '245'
+ht-degree: 4%
 
 ---
-
 
 # Översikt över utfall
 
@@ -16,7 +16,7 @@ Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Utfa
 
 Med hjälp av bortfallsvisualiseringar kan du
 
-* Jämför två olika segment sida vid sida i samma rapport.
+* Jämför två olika filter sida vid sida i samma rapport.
 * Dra, släpp och ordna om steg i tratten (kontaktytor)
 * Mixa och matcha värden från olika dimensioner och mätvärden
 * Skapa en flerdimensionell utfallsrapport
@@ -34,27 +34,3 @@ En bortfallsvisualisering är användbar vid analys av:
 
 [Videosjälvstudievideo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)  för bortfallsvisualisering (4:15)
 
-## Segmentering som grund för flöde och utfall {#section_654F37A398C24DDDB1552A543EE29AA9}
-
-Segment som tillämpas på arbetsytepaneler fungerar något annorlunda än segment som tillämpas på bortfalls- och flödesrapporter i rapporter och analyser i Adobe Analytics. Oftast ger de exakt samma resultat. Den största skillnaden är att Rapporter och analyser använder segmentet vid varje steg i sekvensen. Detta kan ge något annorlunda resultat.
-
-Låt oss ta ett exempel på bortfallet med två steg:
-
-![](assets/fallout_segments1.png)
-
-Om du sedan använder ett segment på arbetsytans panelnivå kombineras segmentet med utfallet så här:
-
-![](assets/fallout_seg.png)
-
-När Rapporter och analyser däremot beräknar segmentet kombineras segmentet på det här sättet:
-
-![](assets/fallout_segments3.png)
-
-Rapporter och analyser kombinerar segmentet med varje steg. När behållarna är på samma nivå som utfallet (t.ex. besök eller besöksnivå) kommer detta att resultera i matchning av antalet besök eller besökare.
-
-Om segmentet som används på panelen är mindre än utfallsnivån (t.ex. träffnivå) visas dock olika resultat på grund av hur det kombineras av rapporten. I de flesta fall matchar siffrorna i Analysis Workspace siffrorna i Rapporter och analyser. De **matchar inte** bara om alla fall nedan är sanna:
-
-* Segmentet är inte på samma nivå som utfallet.
-* Segmentet har en variabel där besökaren/besöket kan ha flera värden under ett besök/en besökare.
-
-I de sällsynta fall där du behöver ha Analysis Workspace som matchar metoden Rapporter och analyser för att tillämpa segment på bortfall/flöde, släpper du bara segmentet i varje utfallssteg i Workspace och ger samma antal.
