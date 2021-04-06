@@ -3,7 +3,7 @@ title: Customer Journey Analytics - översikt
 description: Lär dig hur du kan använda Analysis Workspace med data från Experience Platform i Customer Journey Analytics.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du f
 
 * Om du vill få åtkomst till Customer Journey Analytics eller skapa en anslutning måste du läggas till som administratör för **Customer Journey Analytics-produkten** i [Admin Console](https://adminconsole.adobe.com/enterprise/). Produktadministratörer har följande behörigheter:
    * Skapa/uppdatera/ta bort anslutningar eller datavyer
-   * Uppdatera/ta bort projekt, filter, beräkningstal eller segment som skapats av andra användare
+   * Uppdatera/ta bort projekt, filter, beräkningstal eller filter som skapats av andra användare
    * Dela ett Workspace-projekt till alla användare
 * Det räcker inte att bli produktadministratör i Customer Journey Analytics för att skapa, uppdatera eller ta bort en anslutning. Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform-produktprofil** som ger dig följande behörigheter:
    * Visa scheman
