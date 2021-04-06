@@ -1,11 +1,11 @@
 ---
-description: Skapa ett projekt och lägg till komponenter (mått, mått, segment, datumintervall) på frihandspanelen.
+description: Skapa ett projekt och lägg till komponenter (mått, mått, filter, datumintervall) på frihandspanelen.
 keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '644'
 ht-degree: 16%
 
 ---
@@ -59,7 +59,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > Komponenter</a> </td> 
-   <td colname="col2"> <p>Dimensioner, mätvärden, segment och datumintervall som du kan dra in i projekt. </p> </td> 
+   <td colname="col2"> <p>Dimensioner, mätvärden, filter och datumintervall som du kan dra in i projekt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualiseringar</a> </td> 
@@ -90,7 +90,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
 
    **Komponenter**
 
-   I verktygsfältet Komponent visas sökbara mått, mått, segment och datumintervall som du använder oftast.
+   I verktygsfältet Komponent visas sökbara mått, mått, filter och datumintervall som du använder oftast.
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -109,8 +109,8 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
    <td colname="col2"> <p>Använd på projektnivå. </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term"> Förekomst </span> är datatabellens standardmått. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Segment (blå) </td> 
-   <td colname="col2"> <p>Det går bara att dra på panelnivå, men du kan skapa textbundna segment i datatabellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Mer information finns i <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segment </a>. </p> </td> 
+   <td colname="col1"> Filter (blå) </td> 
+   <td colname="col2"> <p>Det går bara att dra på panelnivå, men du kan skapa textbundna filter i datatabellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Mer information finns i <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  >-filter </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Datumintervall och detaljrikedom (lila) </td> 
@@ -187,10 +187,6 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Skapa filter från markering</a> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Kör i segmentjämförelse</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
