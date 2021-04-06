@@ -4,7 +4,7 @@ title: Översikt över Analysis Workspace
 description: Översikt över Analysis Workspace funktioner
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 4%
@@ -47,7 +47,7 @@ I ditt Workspace-projekt är **paneler, tabeller, visualiseringar och komponente
 
 ### Komponenter
 
-**** Komponenter är dimensioner, mått, segment eller datumintervall, som alla kan kombineras i ett  **[!UICONTROL Freeform table]** formulär för att du ska kunna besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](/help/components/overview.md) innan du går in i analysen. När du har mastered component terminology kan du börja dra och släppa till [skapa en analys](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i en **[!UICONTROL Freeform table]**.
+**** Komponenter är dimensioner, mått, filter eller datumintervall, som alla kan kombineras i ett  **[!UICONTROL Freeform table]** formulär för att du ska kunna besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](/help/components/overview.md) innan du går in i analysen. När du har mastered component terminology kan du börja dra och släppa till [skapa en analys](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i en **[!UICONTROL Freeform table]**.
 
 ![](assets/build-components.png)
 
