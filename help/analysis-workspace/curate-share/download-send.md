@@ -1,14 +1,14 @@
 ---
 description: Du kan hämta data från Analysis Workspace genom att kopiera dem eller i PDF- och CSV-format.
 title: Hämta PDF- eller CSV-filer
+exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
 
 ---
-
 
 # Hämta PDF- eller CSV-filer
 
@@ -53,7 +53,7 @@ Med högerklicksalternativet **[!UICONTROL Download data as CSV]** kan du hämta
 
 ## Hämta objekt som CSV {#download-items}
 
-Om du vill analysera fler än de 400 synliga dataraderna i en tabell högerklickar du på tabellrubriken eller valfri rad och väljer **Hämta objekt som CSV (Dimensionens namn)**. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt (baserat på tabellsortering) för den valda dimensionen med filter och segment. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen. Även om inga begränsningar används i friformstabellen rekommenderar vi att alternativet Hämta objekt används i tabeller med mindre än 20 kolumner för att optimera prestandan.
+Om du vill analysera fler än de 400 synliga dataraderna i en tabell högerklickar du på tabellrubriken eller valfri rad och väljer **Hämta objekt som CSV (Dimensionens namn)**. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt (baserat på tabellsortering) för den valda dimensionen med filter och filter. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen. Även om inga begränsningar används i friformstabellen rekommenderar vi att alternativet Hämta objekt används i tabeller med mindre än 20 kolumner för att optimera prestandan.
 
 >[!TIP]
 >
@@ -67,11 +67,11 @@ Du kan utföra flera uppgifter samtidigt i projektet och till och med navigera t
 
 Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följande:
 
-* Alla panelsegment används som filter.
+* Alla panelfilter används som filter.
 * Uppdelningar **ovanför** den valda dimensionen i tabellen tillämpas som filter ovanför varje kolumn.
 * Uppdelningar **nedanför** den valda dimensionen i tabellen tas bort.
 
-I exemplet ovan hämtas sidobjekt med panelsegmentet (kunder med nya besökare) och komponenterna ovan (marknadsföringskanal = e-post) som filter, och komponenterna nedan (mobilenhetstyp) tas bort från den hämtade CSV-filen.
+I exemplet ovan hämtas sidobjekt med panelfiltret (kunder med nya besökare) och komponenterna ovan (marknadsföringskanal = e-post) tillämpade som filter, och komponenterna nedan (mobilenhetstyp) tas bort från den hämtade CSV-filen.
 
 ![](assets/downloaded-file.png)
 
@@ -92,4 +92,3 @@ Om du begär mer än en nedladdning åt gången får du ett meddelande om att va
 | Varför är min nedladdade PDF-fil en sida? | Arbetsytan sidnumrerar för närvarande inte hämtade PDF-filer. |
 | Kan jag exportera mer än 50 000 objekt med alternativet &quot;Hämta objekt som CSV&quot;? | Varje nedladdning kan innehålla upp till 50 000 dimensionsobjekt, men du kan ändra sorteringsordningen i tabellen för att hämta längre slutobjekt eller använda ett filter för att hämta mer specifika objekt. |
 | Vad gör **[!UICONTROL Copy visualization]**? | **[!UICONTROL Copy visualization]** är inte ett exportalternativ. Du kan kopiera en visualisering eller panel från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. [Intralänkande video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
-
