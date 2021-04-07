@@ -2,14 +2,14 @@
 description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
 keywords: Analysis Workspace
 title: Schemalägg projekt
+exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 5f9dc79e666303165f07fd203e29a3daf478e980
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 0%
+source-wordcount: '488'
+ht-degree: 1%
 
 ---
-
 
 # Schemalägg projekt
 
@@ -30,7 +30,7 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 1. Klicka på **Skicka nu**.
 1. (Valfritt) Klicka på **Visa schemaläggningsalternativ** för att ange ett leveransschema.
 
-![Skicka filen nu](assets/send-file-now.png)
+![Skicka filen nu](assets/send-file-no-scheduling-options.JPG)
 
 ## Skicka fil enligt schema
 
@@ -44,15 +44,13 @@ Så här skickar du en fil i ett återkommande schema till mottagarna via e-post
 1. Ange leveransfrekvens. Varje frekvens tillåter olika anpassningar.
 1. Klicka på **Skicka enligt schema**.
 
-![](assets/send-on-schedule.png)
+![](assets/send-file.JPG)
 
 ## Schemalagd projekthanterare
 
 Schemalagda Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Schemalagda projekt**.
 
 I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
-
-![](assets/scheduled-project-manager.png)
 
 Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 
@@ -65,4 +63,4 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **Visa utgångna scheman** | Navigera till den vänstra listen > Andra filter > Förfallen om du vill visa scheman som har upphört att gälla. Klicka på schemats titel för att ställa in ett nytt leveransschema. |
 | **Visa schema-ID** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
-I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägarskap kan vara **överförd** till en ny användare under **Admin > Analysanvändare och resurser > Överför resurser**.
+I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser.
