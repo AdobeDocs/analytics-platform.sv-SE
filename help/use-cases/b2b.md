@@ -1,14 +1,14 @@
 ---
 title: (B2B) Lägg till data på kontonivå som en uppslagsuppsättning
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatauppsättning i CJA
+exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
+source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 0%
 
 ---
-
 
 # (B2B) Lägg till data på kontonivå som en uppslagsuppsättning
 
@@ -20,9 +20,9 @@ Det här B2B-användningsexemplet visar hur du anger data på kontonivå i stäl
 * Hur fungerar det här kontot tillsammans med en viss marknadsföringskampanj jämfört med ett annat konto?
 * Beter sig vissa roller (t.ex. IT-chef) på ett konto annorlunda än samma roll på ett annat konto?
 
-Du uppnår allt detta genom att infoga kontonivåinformation som en [uppslagsuppsättning](/help/getting-started/cja-glossary.md)-datauppsättning (liknande klassificeringar i traditionella Adobe Analytics).
+Du uppnår allt detta genom att infoga kontonivåinformation som en [uppslagsuppsättning](/help/getting-started/cja-glossary.md)-datauppsättning.
 
-Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en uppslagstabelldatauppsättning genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning-CJA som kombinerar olika datauppsättningar, inklusive den sökning som du skapade. Sedan skapar du en datavy och kan använda alla dessa data i Workspace.
+Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en uppslagstabelldatauppsättning genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (CJA0) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Sedan skapar du en datavy och kan till slut använda alla dessa data i Workspace.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ När schemat har skapats måste du skapa en uppslagsdatauppsättning från det s
 >
 >CJA stöder inte heltal i uppslagsdatauppsättningar. Om du lägger till heltalsfälten i XDM-schemat för din uppslagsdatauppsättning kan du inte använda dessa heltal som mått eller beräknade värden. Om till exempel annualRevenue eller totalEmployees definieras som heltal visas de som&quot;0&quot; vid rapportering i CJA. Om du däremot tilldelar dem som strängar kan du använda dem som sökinformation.
 
-Till exempel definieras annualRevenue eller totalEmployees som Integer i följande exempel, det är orsaken, det visar&quot;0&quot; i CJA.
+Exempelvis definieras annualRevenue eller totalEmployees som Integer i följande exempel - det är anledningen till att det visar &quot;0&quot; i CJA.
 
 1. Gå till **[!UICONTROL Data Management > Datasets]** i Adobe Experience Platform.
 1. Klicka på **[!UICONTROL + Create dataset]**.
@@ -54,7 +54,7 @@ Till exempel definieras annualRevenue eller totalEmployees som Integer i följan
 
 ## 3. Infoga data i Experience Platform
 
-Instruktioner om hur du kan mappa en CSV-fil till ett XDM-schema[ bör vara till hjälp om du använder en CSV-fil.](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html)
+Instruktioner om hur du kan mappa en CSV-fil till ett XDM-schema](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) bör vara till hjälp om du använder en CSV-fil.[
 
 [Det finns även andra ](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) metoder.
 
@@ -65,7 +65,7 @@ Det tar cirka 2 till 4 timmar att introducera data och upprätta sökningen, ber
 I det här exemplet kombinerar vi tre datauppsättningar i en CJA-anslutning:
 
 | Namn på datauppsättning | Beskrivning | Klassen AEP Schema | Information om datauppsättning |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | B2B-komprimering | Innehåller klickströmsdata på händelsenivå på kontonivån. Den innehåller till exempel e-post-ID och motsvarande konto-ID samt marknadsföringsnamn för att köra marknadsföringsannonser. Det innehåller även visningar för dessa annonser per användare. | Baserat på schemaklassen XDM ExperienceEvent | `emailID` används som primär identitet och tilldelas ett `Customer ID`-namnutrymme. Därför visas den som standard **[!UICONTROL Person ID]** i Customer Journey Analytics. ![Impressions](assets/impressions-mixins.png) |
 | B2B-profil | Den här profildatauppsättningen ger dig mer information om användarna i ett konto, t.ex. deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM Individual Profile | Du behöver inte välja `emailID` som primärt ID i det här schemat. Se till att aktivera **[!UICONTROL Profile]**; Om du inte gör det kan CJA inte ansluta `emailID` i B2B-profilen med `emailID` i B2B-komprimeringsdata. ![Profil](assets/profile-mixins.png) |
 | B2B-information | Se&quot;Skapa datauppsättning för sökning&quot; ovan. | B2BAccount (anpassad sökschemaklass) | Förhållandet mellan `accountID` och datauppsättningen B2B-Impressions har automatiskt skapats genom att koppla datauppsättningen B2B-information till datauppsättningen B2B-Impression i CJA, vilket beskrivs i stegen nedan. ![Sök](assets/lookup-mixins.png) |
