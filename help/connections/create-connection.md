@@ -1,20 +1,30 @@
 ---
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
+exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1893'
 ht-degree: 1%
 
 ---
-
 
 # Skapa en anslutning
 
 Med en anslutning kan du integrera datauppsättningar från [!DNL Adobe Experience Platform] i [!UICONTROL Workspace]. För att kunna rapportera [!DNL Experience Platform]-datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i [!DNL Experience Platform] och [!UICONTROL Workspace].
 
 Klicka [här](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) om du vill se en videoöversikt.
+
+Om du vill skapa en CJA-anslutning behöver du följande behörigheter:
+
+Adobe Experience Platform:
+* Datamodellering: Visa scheman, hantera scheman
+* Datahantering: Visa datauppsättningar, hantera datauppsättningar
+* Dataintag: Hantera källor
+
+Customer Journey Analytics
+* Produktadministratörsåtkomst
 
 >[!IMPORTANT]
 >
