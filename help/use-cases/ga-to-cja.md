@@ -2,7 +2,7 @@
 title: Ställ in Google Analytics-rapportering i Customer Journey Analytics
 description: null
 translation-type: tm+mt
-source-git-commit: c07d32eef579432bf92f94cbbe4e99188b2de74c
+source-git-commit: 13828f484ec1edcd00a6d049ff78c7e2642d2b01
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 1%
@@ -47,7 +47,8 @@ Mer information finns i [dessa instruktioner](https://support.google.com/analyti
 
    ![](assets/ga-bigquery.png)
 Du måste skapa en SQL-fråga för att omvandla data från den universella analysen till ett Experience-Platform-kompatibelt format.
-   * I den här videon finns instruktioner.
+   * I den här videon finns instruktioner:
+   >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. Exportera Google Analytics-händelser i JSON-format till Google Cloud-lagring och spara dem i en hink.
 Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
