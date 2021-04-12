@@ -2,9 +2,9 @@
 title: Ställ in Google Analytics-rapportering i Customer Journey Analytics
 description: null
 translation-type: tm+mt
-source-git-commit: 13828f484ec1edcd00a6d049ff78c7e2642d2b01
+source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '272'
 ht-degree: 1%
 
 ---
@@ -12,15 +12,7 @@ ht-degree: 1%
 
 # Ställ in Google Analytics-rapportering i Customer Journey Analytics
 
-konfigurera Google Cloud Storage Connector,
 
-konfigurera Google Tag Manager
-
-Export av BigQuery-schema (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
-1. Konvertera GA-sessioner till händelser i Big Query
-1. Exportera Google Analytics-händelser till Google Cloud-lagring
-1. Importera GCS-händelser till Adobe Experience Platform och mappa till XDM-schema
 
 ## Förutsättningar
 
@@ -41,16 +33,26 @@ Följande instruktioner bygger på Universal Google Analytics.
 
 1. Koppla Google Analytics-data till BigQuery och
 Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3416092?hl=en).
-1. (Endast kunder med Universal Analytics) Omvandla sessioner med Google Analytics till händelser i BigQuery. Detta gör att data blir kompatibla med Adobe Experience Platform. Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437618?hl=en).
+
+1. (Endast kunder med Universal Analytics) Omvandla sessioner med Google Analytics till händelser i BigQuery.
+Detta gör att data blir kompatibla med Adobe Experience Platform. Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437618?hl=en).
 
    Information: I BigQuery visas dina GA-data som en tabell:
 
    ![](assets/ga-bigquery.png)
-Du måste skapa en SQL-fråga för att omvandla data från den universella analysen till ett Experience-Platform-kompatibelt format.
-   * I den här videon finns instruktioner:
+Du måste skapa en SQL-fråga för att omvandla data från den universella analysen till ett Experience-Platform-kompatibelt format. I den här videon finns instruktioner:
+
    >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. Exportera Google Analytics-händelser i JSON-format till Google Cloud-lagring och spara dem i en hink.
 Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
-1. Hämta in data från Google Cloud Storage i Experience Platform. (hämta bild 10 från Trevor.)
+
+1. Hämta in data från Google Cloud Storage i Experience Platform.
+I den här videon finns instruktioner:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+1. Importera GCS-händelser till Adobe Experience Platform och mappa till XDM-schema
+
+Export av BigQuery-schema (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
 
