@@ -3,9 +3,9 @@ title: Hämta Google Analytics data till Adobe Experience Platform för analys i
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics- och Firebase-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
+source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Hur du överför Google Analytics data till Adobe Experience Platform beror på 
 
 | Om du använder ... | Du behöver också den här licensen.. | Och gör det här.. |
 | --- | --- | --- |
-| **Universal Google Analytics** | Google Analytics 360 | Utför steg 1-5 i instruktionerna nedan |
+| **Universal Analytics** | Google Analytics 360 | Utför steg 1-5 i instruktionerna nedan |
 | **Google Analytics 4** | Kostnadsfri GA-version eller Google Analytics 360 | Utför steg 1 och 3-5 i instruktionerna nedan. Inget behov av steg 2. |
 
 ## Inkommande historiska data
@@ -53,11 +53,30 @@ Mer information finns i [dessa instruktioner](https://support.google.com/analyti
 
 GA-data lagrar varje post i sina data som en användarsession i stället för som enskilda händelser. Du måste skapa en SQL-fråga för att omvandla data från den universella analysen till ett Experience-Platform-kompatibelt format. Du använder funktionen &quot;unest&quot; för fältet &quot;hits&quot; i GA-schemat. Här är SQL-exemplet som du kan använda:
 
-`SQL sample`
+`SELECT
+*,
+timestamp_seconds(`` + hit.time) AS `` 
+FROM
+(
+SELECT
+fullVisitorId,
+visitNumber,
+visitId,
+visitStartTime,
+trafficSource,
+socialEngagementType,
+channelGrouping,
+device,
+geoNetwork,
+hit 
+FROM
+`visitStartTimestampyour_bq_table_2021_04_*`,
+UNNEST(hits) AS hit 
+)`
 
 När frågan är klar sparar du de fullständiga resultaten i en BigQuery-tabell.
 
-Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437618?hl=en).
+Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql).
 
 Eller se den här videon:
 
