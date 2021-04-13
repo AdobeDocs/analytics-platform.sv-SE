@@ -1,14 +1,14 @@
 ---
 title: Lägg till globala sökningar i datauppsättningarna
 description: Använd globala sökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
+exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: b3c9757421537d2d84a78a4d37e9bfc362438d40
+source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
 
 ---
-
 
 # Lägg till globala sökningar i datauppsättningarna
 
@@ -67,4 +67,3 @@ För att kunna rapportera om de globala uppslagsdimensionerna måste du lägga t
 Du kan sedan se sökdata i arbetsytan:
 
 ![](assets/gl-reporting.png)
-
