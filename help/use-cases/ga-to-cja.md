@@ -3,9 +3,9 @@ title: Hämta Google Analytics data till Adobe Experience Platform för analys i
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics- och Firebase-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 793b2ce4ec8a487f6c4290fe2eff00879fcca13d
+source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Importera data från Google Analytics till Adobe Experience Platform
 
-I det här användningsexemplet fokuseras på hur du importerar data från Google Analytics som en datauppsättning till Adobe Experience Platform. (Detta gäller både historiska data och livedata.) När du är klar kan du kombinera båda datauppsättningarna för att få en överblick över användarens resa på olika enheter.
+I det här användningsexemplet fokuseras på hur du importerar data från Google Analytics som en datauppsättning till Adobe Experience Platform. Vi kommer att förklara hur vi kan importera både historiska och livedata. När du är klar kan du kombinera båda datauppsättningarna i Customer Journey Analytics för att få en översikt över användarens resa på olika enheter.
 
 Datauppsättningarna i Experience Platform består av två saker: ett schema och de faktiska posterna i datauppsättningen. Schemat (vi kallar Experience Data Model eller XDM för kort) är som kolumnerna i datauppsättningen och liknar planen eller reglerna som beskriver själva data. Inom plattformen tillhandahåller Adobe två typer av scheman:
 
@@ -37,36 +37,83 @@ Hur du överför Google Analytics data till Adobe Experience Platform beror på 
 | **Universal Google Analytics** | Google Analytics 360 | Utför steg 1-5 i instruktionerna nedan |
 | **Google Analytics 4** | Kostnadsfri GA-version eller Google Analytics 360 | Utför steg 1 och 3-5 i instruktionerna nedan. Inget behov av steg 2. |
 
-## 1. Koppla Google Analytics-data till BigQuery
+## Inkommande historiska data
 
-Observera att följande instruktioner är baserade på Universal Google Analytics.
+### 1. Koppla Google Analytics-data till BigQuery
+
+Observera att följande instruktioner är baserade på Universal Google Analytics. De gäller historiska uppgifter. Mer information om liveströmningsdata finns i Hämta liveströmningsdata till AEP.
 
 Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3416092?hl=en).
 
-## 2. Omvandla sessioner med Google Analytics till händelser i BigQuery
+### 2. Omvandla sessioner med Google Analytics till händelser i BigQuery
 
 >[!IMPORTANT]
 >
 >Detta steg gäller endast kunder som har Universal Analytics
 
-GA-data lagrar varje post i sina data som en användarsession i stället för som enskilda händelser. När data omvandlas blir de kompatibla med Adobe Experience Platform.
+GA-data lagrar varje post i sina data som en användarsession i stället för som enskilda händelser. Du måste skapa en SQL-fråga för att omvandla data från den universella analysen till ett Experience-Platform-kompatibelt format. Du använder funktionen &quot;unest&quot; för fältet &quot;hits&quot; i GA-schemat. Här är SQL-exemplet som du kan använda:
+
+`SQL sample`
+
+När frågan är klar sparar du de fullständiga resultaten i en BigQuery-tabell.
 
 Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437618?hl=en).
 
-Du måste skapa en SQL-fråga för att omvandla data från den universella analysen till ett Experience-Platform-kompatibelt format. I den här videon finns instruktioner:
+Eller se den här videon:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
-## 3. Exportera Google Analytics-händelser i JSON-format till Google Cloud-lagring och spara dem i en hink
+### 3. Exportera Google Analytics-händelser i JSON-format till Google Cloud-lagring och spara dem i en hink
+
+Därefter importerar du Google Analytics-händelserna till Google Cloud-lagring i JSON-format. Sen tar du in den i Experience Platform.
 
 Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
 
-## 4. Hämta data från Google Cloud-lagring till Experience Platform
+### 4. Hämta data från Google Cloud-lagring till Experience Platform
+
+I Experience Platform väljer du **[!UICONTROL Sources]** och söker efter alternativet **[!UICONTROL Google Cloud Storage]**. Därifrån behöver du bara hitta den datauppsättning du sparat från Big Query.
 
 I den här videon finns instruktioner:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332641)
 
-## 5. Importera GCS-händelser till Adobe Experience Platform och mappa till XDM-schema
+### 5. Importera GCS-händelser till Adobe Experience Platform och mappa till XDM-schema
 
-Export av BigQuery-schema (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
+Därefter kan du mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa alla fält i Google Analytics till ditt eget schema.
+
+Mappningar är mycket enkla att ändra och du kan till och med skapa härledda eller beräknade fält från Google Analytics data. När du är klar med mappningen av fälten i XDM-schemat kan du schemalägga den här importen regelbundet och tillämpa felvalidering under importen. Detta säkerställer att det inte uppstår några problem med de data du har importerat.
+
+## Importera data från Google Analytics som strömmas live
+
+Du kan också spela in liveströmningshändelser från Google Tag Manager direkt till Adobe Experience Platform.
+
+### Lägg till anpassade variabler
+
+När du har loggat in på Google Tag Manager-kontot måste du lägga till anpassade konstantvariabler som är kopplade till Adobe org-ID:n och datauppsättnings-ID:n. Du har förmodligen redan variabler i Google Tag Manager som skickas till Google Analytics, till exempel kundens e-postadress, kundens namn, språk och kundens inloggningsstatus. Du måste definiera fem nya anpassade variabler:
+
+* Adobe Experience Cloud org-ID
+* Slutpunkt för DCS-direktuppspelning
+* Experience Platform dataset-ID
+* Schemareferens
+* Tidsstämpel för sida.
+
+Om du hämtar dessa värden skickas alla data från Google Analytics till rätt datauppsättning och har rätt schema. Om du inte känner till din Experience Cloud-organisation eller någon av de andra variablerna som vi just nämnde kan din kontoansvarige på Adobe hjälpa dig att hitta den.
+
+När du har definierat de här anpassade variablerna kan vi ställa in en utlösare för att skicka alla data som du redan skickar till Google Analytics till Experience Platform.
+
+### Konfigurera en utlösare i Google Tag Manager
+
+I det här exemplet har utlösaren för att skapa konto definierats, där `pageUrl equals account-creation` används. Genom att lägga till viss information i den här utlösaren kan du se till att data skickas till både Google Analytics och AEP när användaren autentiserar och sidan där kontot skapas läses in.
+
+Instruktioner finns i den här videon:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332668)
+
+### Nästa steg
+
+När Adobe Experience Platform har börjat ta emot data från live-Google Analytics och du har fyllt i de historiska Google Analytics från BigQuery är du redo att börja använda CJA och
+
+1. [Skapa din första ](/help/connections/create-connection.md) anslutning som sammanfogar GA-data med alla dina övriga kunddata med ett gemensamt&quot;Kund-ID&quot;.
+1. Gör några fantastiska analyser i Workspace, till exempel ...
+
+*Är det här ämnet ska sluta eller måste vi gå in på detaljerna om anslutningen?*
