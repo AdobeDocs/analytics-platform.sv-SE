@@ -3,7 +3,7 @@ title: (B2B) Lägg till data på kontonivå som en uppslagsuppsättning
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatauppsättning i CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Det här B2B-användningsexemplet visar hur du anger data på kontonivå i stäl
 
 Du uppnår allt detta genom att infoga kontonivåinformation som en [uppslagsuppsättning](/help/getting-started/cja-glossary.md)-datauppsättning.
 
-Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en uppslagstabelldatauppsättning genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (CJA0) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Sedan skapar du en datavy och kan till slut använda alla dessa data i Workspace.
+Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en uppslagstabelldatauppsättning genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (CJA0) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Därefter skapar du en datavy och kan till slut använda alla dessa data i Workspace.
 
 >[!NOTE]
 >
