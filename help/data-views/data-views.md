@@ -3,9 +3,9 @@ title: Vad är en datavy i Customer Journey Analytics?
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäl
 
 * Du kan **byta namn på dina behållare** i en datavy och låta de namnändrade behållarna visas i alla Workspace-projekt som baseras på den datavyn.
 
-## Förutsättning
+## Krav för datavyer
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till datauppsättningar i Experience Platform](/help/connections/create-connection.md).
 * Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions).
