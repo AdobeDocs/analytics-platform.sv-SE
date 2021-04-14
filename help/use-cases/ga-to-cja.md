@@ -3,9 +3,9 @@ title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics- och Firebase-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
+source-git-commit: df3b69b837fda821e1b50b0ba211ac578d856892
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,8 @@ Eller se den här videon:
 
 Därefter exporterar du Google Analytics-händelserna till Google Cloud-lagring i JSON-format. Klicka bara på **Exportera > Exportera till GCS**. När informationen finns tillgänglig kan den hämtas till Adobe Experience Platform.
 
-Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
+Mer information finns i [dessa instruktioner för Universal Analytics](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
+Se [dessa instruktioner för Google Analytics 4](https://support.google.com/analytics/answer/7029846?hl=en).
 
 ### 4. Importera data från Google Cloud-lagring till Experience Platform
 
@@ -98,10 +99,11 @@ Tänk på detta:
 * Du kan välja en befintlig datauppsättning eller skapa en ny (rekommenderas).
 * Se till att du väljer samma schema för historiska data om Google Analytics och liveströmmande Google Analytics, även om de finns i separata datauppsättningar. Du kan sedan sammanfoga datauppsättningarna i en [CJA-anslutning](/help/connections/combined-dataset.md).
 
-
 I den här videon finns instruktioner:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+Om du vill schemalägga den här importen regelbundet, se Googles dokumentation.
 
 ### 5. Importera GCS-händelser till Adobe Experience Platform och mappa till XDM-schema
 
@@ -110,6 +112,10 @@ Därefter kan du mappa GA-händelsedata till en befintlig datauppsättning som d
 ![](assets/schema-map.png)
 
 Mappningar är mycket enkla att ändra och du kan till och med skapa härledda eller beräknade fält från Google Analytics data. När du är klar med mappningen av fälten i XDM-schemat kan du schemalägga den här importen regelbundet och tillämpa felvalidering under importen. Detta säkerställer att det inte uppstår några problem med de data du har importerat.
+
+I den här videon finns instruktioner:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **Beräkningsfält för tidsstämpel**
 
@@ -133,13 +139,13 @@ Du kan också spela in liveströmningshändelser från Google Tag Manager direkt
 
 ### 1. Lägg till anpassade variabler
 
-När du har loggat in på Google Tag Manager-kontot måste du lägga till anpassade konstantvariabler som är kopplade till Adobe org-ID:n och datauppsättnings-ID:n. Du har förmodligen redan variabler i Google Tag Manager som skickas till Google Analytics, till exempel kundens e-postadress, kundens namn, språk och kundens inloggningsstatus. Du måste definiera fem nya anpassade variabler:
+När du har loggat in på Google Tag Manager-kontot måste du lägga till vissa anpassade konstantvariabler för Adobe. Du har förmodligen redan variabler i Google Tag Manager som skickas till Google Analytics, till exempel kundens e-postadress, kundens namn, språk och kundens inloggningsstatus. Du måste definiera fem nya anpassade variabler:
 
 * Adobe Experience Cloud org-ID
 * Slutpunkt för DCS-direktuppspelning
 * Experience Platform dataset-ID
 * Schemareferens
-* Tidsstämpel för sida.
+* Sidtidsstämpel
 
 Om du hämtar dessa värden skickas alla data från Google Analytics till rätt datauppsättning och har rätt schema. Om du inte känner till din Experience Cloud-organisation eller någon av de andra variablerna som vi just nämnde kan din kontoansvarige på Adobe hjälpa dig att hitta den.
 
@@ -153,10 +159,16 @@ Instruktioner finns i den här videon:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
+Du kan även läsa [Datainmatning och Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9).
+
 ## Skapa en anslutning i CJA till datauppsättningen Google Analytics
 
 När Adobe Experience Platform har börjat ta emot data från live-Google Analytics och du har fyllt i de historiska Google Analytics från BigQuery är du redo att börja använda CJA och
 [skapa din första anslutning](/help/connections/create-connection.md). Den här anslutningen sammanfogar GA-data med alla dina andra kunddata med ett gemensamt&quot;Kund-ID&quot;.
+
+Instruktioner finns i den här videon:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332676)
 
 ## Gör några fantastiska analyser i Workspace
 
