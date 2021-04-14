@@ -3,9 +3,9 @@ title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics- och Firebase-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Hur du överför Google Analytics data till Adobe Experience Platform beror på 
 | **Universal Analytics** | Google Analytics 360 | Utför steg 1-5 i instruktionerna nedan |
 | **Google Analytics 4** | Kostnadsfri GA-version eller Google Analytics 360 | Utför steg 1 och 3-5 i instruktionerna nedan. Inget behov av steg 2. |
 
-## Inkommande historiska data
+## Ingest history (backfill) data
 
 ### 1. Koppla Google Analytics-data till BigQuery
 
@@ -84,13 +84,20 @@ Eller se den här videon:
 
 ### 3. Exportera Google Analytics-händelser i JSON-format till Google Cloud-lagring och spara dem i en hink
 
-Därefter importerar du Google Analytics-händelserna till Google Cloud-lagring i JSON-format.
+Därefter exporterar du Google Analytics-händelserna till Google Cloud-lagring i JSON-format. Klicka bara på **Exportera > Exportera till GCS**. När informationen finns tillgänglig kan den hämtas till Adobe Experience Platform.
 
 Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
 
-### 4. Hämta data från Google Cloud-lagring till Experience Platform
+### 4. Importera data från Google Cloud-lagring till Experience Platform
 
-I Experience Platform väljer du **[!UICONTROL Sources]** och söker efter alternativet **[!UICONTROL Google Cloud Storage]**. Därifrån behöver du bara hitta den datauppsättning du sparat från Big Query.
+I Experience Platform väljer du **[!UICONTROL Sources]** och söker efter alternativet **[!UICONTROL Google Cloud Storage]**. Därifrån behöver du bara hitta den datauppsättning du sparat från BigQuery.
+
+Tänk på detta:
+
+* Se till att du väljer JSON-format.
+* Du kan välja en befintlig datauppsättning eller skapa en ny (rekommenderas).
+* Se till att du väljer samma schema för historiska data om Google Analytics och liveströmmande Google Analytics, även om de finns i separata datauppsättningar. Du kan sedan sammanfoga datauppsättningarna i en [CJA-anslutning](/help/connections/combined-dataset.md).
+
 
 I den här videon finns instruktioner:
 
@@ -98,7 +105,7 @@ I den här videon finns instruktioner:
 
 ### 5. Importera GCS-händelser till Adobe Experience Platform och mappa till XDM-schema
 
-Därefter kan du mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa alla fält i Google Analytics till ditt eget schema.
+Därefter kan du mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning, med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till ditt [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
 
 Mappningar är mycket enkla att ändra och du kan till och med skapa härledda eller beräknade fält från Google Analytics data. När du är klar med mappningen av fälten i XDM-schemat kan du schemalägga den här importen regelbundet och tillämpa felvalidering under importen. Detta säkerställer att det inte uppstår några problem med de data du har importerat.
 
