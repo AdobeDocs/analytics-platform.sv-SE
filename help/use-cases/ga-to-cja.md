@@ -3,9 +3,9 @@ title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics- och Firebase-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,25 @@ I den här videon finns instruktioner:
 
 Därefter kan du mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning, med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till ditt [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
 
+![](assets/schema-map.png)
+
 Mappningar är mycket enkla att ändra och du kan till och med skapa härledda eller beräknade fält från Google Analytics data. När du är klar med mappningen av fälten i XDM-schemat kan du schemalägga den här importen regelbundet och tillämpa felvalidering under importen. Detta säkerställer att det inte uppstår några problem med de data du har importerat.
+
+**Beräkningsfält för tidsstämpel**
+
+För `timestamp`-fältet i Google Analytics data måste du skapa ett särskilt beräkningsfält i användargränssnittet för Experience Platform-schemat. Klicka på **[!UICONTROL Add calculated field]** och bryt strängen `timestamp` i en `date`-funktion så här:
+
+`date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+
+Du måste sedan spara det här beräknade fältet i tidsstämpeldatastrukturen i schemat:
+
+![](assets/timestamp.png)
+
+**_id XDM beräknat fält**
+
+Schemafältet `_id` måste ha ett värde i det - CJA bryr sig inte om vad värdet är. Du kan bara lägga till&quot;1&quot; i fältet:
+
+![](assets/_id.png)
 
 ## Importera data från Google Analytics som strömmas live
 
