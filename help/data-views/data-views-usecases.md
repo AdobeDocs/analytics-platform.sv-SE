@@ -1,14 +1,14 @@
 ---
 title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
+exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
-
 
 # Datavyer använder exempel
 
@@ -45,5 +45,5 @@ Tidigare behandlades heltal automatiskt som mått i CJA. Nu kan siffror (inklusi
 
    ![](assets/bucketing.png)
 
-Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview2.md).
+Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview.md).
 En konceptuell översikt över datavyer finns i [Översikt över datavyer](/help/data-views/data-views.md).
