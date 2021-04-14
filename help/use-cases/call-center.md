@@ -3,7 +3,7 @@ title: Importera callcenter och webbdata
 description: Lär dig hur du skapar en datauppsättning som länkar callcenter och webbplatsdata.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -80,7 +80,7 @@ I den här frihandstabellen kan du se de översta sidorna som bidrar till att ri
 1. Dra den dimension som innehåller webbsidans namn till en frihandsritabellvisualisering.
 1. Ersätt måttet med det anropscentrerade mått som du vill mäta konverteringen med.
 1. Klicka på kugghjulsikonen nära måtthuvudet. Klicka på **[!UICONTROL Use non-default attribution model]**.
-1. Ange önskad [attribueringsmodell](/help/data-views/configure-dataviews.md#Attribution-model).
+1. Ange önskad [attribueringsmodell](/help/data-views/create-dataview.md).
 
 Resultatrapporten visar det högsta mätvärdet från kundtjänstdata. <!-- Complement with donut visualization -->
 
