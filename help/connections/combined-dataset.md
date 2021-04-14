@@ -1,8 +1,9 @@
 ---
 title: Kombinerade händelsedatamängder
 description: Lär dig hur CJA skapar en anslutning genom att kombinera datauppsättningar.
+exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 1%
@@ -64,7 +65,7 @@ Om din anslutning endast innehöll den första tabellen och inte den andra skull
 | string_color | metrisk_a |
 | --- | --- |
 | Ospecificerad | 6 |
-| Blå | 3 |
+| Blå | 1 |
 | Röd | 2 |
 
 Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribueringen eftersom `user_847` finns i båda datauppsättningarna. En rad från den andra datauppsättningsattributen `metric_a` till Gul, där de tidigare var ospecificerade:
@@ -72,5 +73,5 @@ Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribuering
 | string_color | metrisk_a |
 | --- | --- |
 | Gul | 6 |
-| Blå | 3 |
+| Blå | 1 |
 | Röd | 2 |
