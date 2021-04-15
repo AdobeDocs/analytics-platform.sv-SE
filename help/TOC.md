@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
+source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 41%
+source-wordcount: '454'
+ht-degree: 42%
 
 ---
 
