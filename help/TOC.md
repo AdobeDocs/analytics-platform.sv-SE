@@ -47,8 +47,6 @@ ht-degree: 41%
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](data-views/data-views.md)
    + [Skapa en datavy](data-views/create-dataview.md)
-   + [Skapa en datavy 2](data-views/create-dataview2.md)
-   + [Konfigurera datavyer och attribuering](data-views/configure-dataviews.md)
    + [Datavyer använder exempel](data-views/data-views-usecases.md)
    + [Persistence](data-views/persistence.md)
 + Arbetsyteprojekt {#cja-workspace}
