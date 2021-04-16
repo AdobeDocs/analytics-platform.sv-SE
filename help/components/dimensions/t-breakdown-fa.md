@@ -2,13 +2,11 @@
 description: Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 keywords: Analysis Workspace
 title: Dela upp dimensioner
-topic: Rapporter och analyser
-uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c086f21e1a13ef4dec4e1be63d9f462bfb32f2ea
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 5%
 
 ---
