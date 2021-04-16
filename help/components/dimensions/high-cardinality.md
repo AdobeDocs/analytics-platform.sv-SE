@@ -1,14 +1,14 @@
 ---
 title: Dimensioner med mycket hög kardinalitet i Customer Journey Analytics
 description: Beskriver de bästa sätten att hantera högkardinalitetsmått i Customer Journey Analytics
+exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 translation-type: tm+mt
-source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
+source-git-commit: 8ae1cb5a84b26258fb30f6e630744b2e36a48e5c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
-
 
 # Dimensioner med mycket hög kardinalitet
 
@@ -49,7 +49,7 @@ För att eliminera varningar och uppskattningar som kan förekomma när du anvä
 
 * Lägg till ett filter i kolumnen eller panelen som påverkas.
 * Använd en sökning i din frihandstabell.
-* Använda en uppdelning på intressanta rader eller använd den högkardinala dimensionen som indelningsdimension
+* Använd en uppdelning på intressanta rader eller använd den högkardinala dimensionen som en detaljdimension.
 * Lägg till inkluderings-/exkluderingskriterier i dimensionens datavykonfiguration för att begränsa antalet unika värden som finns i dimensionen.
 
 Om du använder dessa tekniker kan du ofta eliminera oönskade uppskattningar eller varningar när du använder höga kardinaldimensioner.
