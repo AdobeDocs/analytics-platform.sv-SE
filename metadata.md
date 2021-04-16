@@ -1,19 +1,13 @@
 ---
 cloud: Experience Cloud
-solution-title: Adobe Analytics
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
-solution-image: help/assets/experience-cloud-logo-24.png
-getting-started-title: Komma igång
-getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/analytics/how-to/adobe-launch-publishing-process.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.sv-SE
 description: Den här filen innehåller metadata på postnivå som skickas till användarhandboken TOC.md-filer i svaret.
+feature-set: Analytics
 translation-type: tm+mt
-source-git-commit: 5182e6c97e475296ca5ecd4014193770491b1988
+source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 2%
+source-wordcount: '127'
+ht-degree: 0%
 
 ---
 
