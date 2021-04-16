@@ -2,9 +2,9 @@
 title: Dimensioner med mycket hög kardinalitet i Customer Journey Analytics
 description: Beskriver de bästa sätten att hantera högkardinalitetsmått i Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 9af5c74164462851ac4a6cbc4764569789f677fc
+source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Beroende på antalet händelser i en viss CJA-anslutning kan följande två begr
 
 ### 1. Radantalet kanske inte är exakt rapporteringsbart
 
-Radantal vid höga kardinalitetsmått kanske inte kan rapporteras exakt. När detta inträffar kommer friformstabeller att ge en indikation som visas nedan:
+Radantalet i högkardinalitetsmått kanske inte är exakt rapporteringsbart. När detta inträffar kommer friformstabeller att ge en indikation, vilket visas nedan:
 
 ![](assets/high-cardinality.png)
 
