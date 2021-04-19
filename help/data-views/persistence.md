@@ -3,9 +3,9 @@ title: Vad är dimensionskonsistens i Customer Journey Analytics?
 description: Dimensionens beständighet är en kombination av allokering och förfallodatum. Tillsammans avgör de hur eller om dimensionsvärdena kvarstår från en händelse till nästa.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: 7370caf3495ff707698022889bf17528582da803
+source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '562'
 ht-degree: 5%
 
 ---
@@ -60,7 +60,7 @@ Det finns fyra sätt att förfalla ett dimensionsvärde:
 
 * Session (standard): Upphör att gälla efter en viss session.
 * Person: Upphör att gälla i slutet av rapportfönstret.
-* Tid: Du kan ange att dimensionsvärdet ska förfalla efter en angiven tidsperiod eller händelse. Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste.
+* Tid: Du kan ange att dimensionsvärdet ska förfalla efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. Vid tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
 * Mått: Du kan ange vilken som helst av de definierade måtten som förfallodatum för den här dimensionen (t.ex. ett köpmått). Den här förfallotiden är endast tillgänglig för allokeringsmodellerna Original och Senaste.
 
 ### Vad är skillnaden mellan allokering och attribuering?
