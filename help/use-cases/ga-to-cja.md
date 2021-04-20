@@ -3,9 +3,9 @@ title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics- och Firebase-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1dcc566f286b0399e5ebd1e06e9d42a9522a1684
+source-git-commit: de822eb00a5e205889b4fa96f729845ad4c7e356
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -99,10 +99,6 @@ Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade 
 ![](assets/schema-map.png)
 
 Mappningar är mycket enkla att ändra och du kan till och med skapa härledda eller beräknade fält från Google Analytics data. När du är klar med mappningen av fälten i XDM-schemat kan du schemalägga den här importen regelbundet och tillämpa felvalidering under importen. Detta säkerställer att det inte uppstår några problem med de data du har importerat.
-
-I den här videon finns instruktioner:
-
->[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **Beräkningsfältet Tidsstämpel**
 
