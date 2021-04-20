@@ -3,9 +3,9 @@ title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics- och Firebase-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 99ae3fb2978afc2f5ec7db05ac82cfb5113df3b4
+source-git-commit: 1dcc566f286b0399e5ebd1e06e9d42a9522a1684
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Importera data från Google Analytics till Adobe Experience Platform
 
-I det här användningsexemplet fokuseras på hur du importerar data från Google Analytics som en datauppsättning till Adobe Experience Platform. Vi kommer att förklara hur vi kan importera både historiska och livedata. När du är klar kan du kombinera båda datauppsättningarna i Customer Journey Analytics för att få en översikt över användarens resa på olika enheter.
+I det här användningsexemplet fokuseras på hur du importerar data från Google Analytics som en datauppsättning till Adobe Experience Platform. Vi förklarar hur man importerar både historiska och livedata. När du är klar kan du kombinera båda datauppsättningarna i Customer Journey Analytics för att få en översikt över användarens resa på olika enheter.
 
 Datauppsättningarna i Experience Platform består av två saker: ett schema och de faktiska posterna i datauppsättningen. Schemat (vi kallar Experience Data Model eller XDM för kort) är som kolumnerna i datauppsättningen och liknar planen eller reglerna som beskriver själva data. Inom plattformen tillhandahåller Adobe två typer av scheman:
 
@@ -34,18 +34,16 @@ Hur du överför Google Analytics data till Adobe Experience Platform beror på 
 
 | Om du använder ... | Du behöver också den här licensen.. | Och gör det här.. |
 | --- | --- | --- |
-| **Universal Analytics** | Google Analytics 360 | Utför steg 1-5 i instruktionerna nedan |
-| **Google Analytics 4** | Kostnadsfri GA-version eller Google Analytics 360 | Utför steg 1 och 3-5 i instruktionerna nedan. Inget behov av steg 2. |
+| **Universal Analytics** | Google Analytics 360 | Utför steg 1-3 i instruktionerna nedan |
+| **Google Analytics 4** | Kostnadsfri GA-version eller Google Analytics 360 | Utför steg 1 och 3 i instruktionerna nedan. Inget behov av steg 2. |
 
 ## Ingest history (backfill) data
 
 ### 1. Koppla Google Analytics-data till BigQuery
 
-Observera att följande instruktioner är baserade på Universal Google Analytics. De gäller historiska uppgifter. Mer information om liveströmningsdata finns i [Hämta liveströmningsdata till AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#ingest-live-streaming-google-analytics-data).
+Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3416092?hl=en). Observera att dessa instruktioner bygger på Universal Google Analytics.
 
-Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/3416092?hl=en).
-
-### 2. Omvandla sessioner med Google Analytics till händelser i BigQuery
+### 2. Omvandla sessioner med Google Analytics till händelser i BigQuery och exportera till Google Cloud-lagring
 
 >[!IMPORTANT]
 >
@@ -76,20 +74,13 @@ UNNEST(hits) AS hit
 
 När frågan är klar sparar du de fullständiga resultaten i en BigQuery-tabell.
 
-Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql).
+Mer information finns i [dessa instruktioner](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql), som innehåller instruktioner för SQL-frågan.
 
-Eller se den här videon:
+I följande video förklaras också nästa steg, som är att exportera Google Analytics-händelserna till Google Cloud-lagring i JSON-format. Klicka bara på **Exportera > Exportera till GCS**. När informationen finns tillgänglig kan den hämtas till Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
-### 3. Exportera Google Analytics-händelser i JSON-format till Google Cloud-lagring och spara dem i en hink
-
-Därefter exporterar du Google Analytics-händelserna till Google Cloud-lagring i JSON-format. Klicka bara på **Exportera > Exportera till GCS**. När informationen finns tillgänglig kan den hämtas till Adobe Experience Platform.
-
-Mer information finns i [dessa instruktioner för Universal Analytics](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
-Se [dessa instruktioner för Google Analytics 4](https://support.google.com/analytics/answer/7029846?hl=en).
-
-### 4. Importera data från Google Cloud-lagring till Experience Platform
+### 3. Importera data från Google Cloud Storage till Experience Platform och mappa till XDM-schema
 
 I Experience Platform väljer du **[!UICONTROL Sources]** och söker efter alternativet **[!UICONTROL Google Cloud Storage]**. Därifrån behöver du bara hitta den datauppsättning du sparat från BigQuery.
 
@@ -99,15 +90,11 @@ Tänk på detta:
 * Du kan välja en befintlig datauppsättning eller skapa en ny (rekommenderas).
 * Se till att du väljer samma schema för historiska data om Google Analytics och liveströmmande Google Analytics, även om de finns i separata datauppsättningar. Du kan sedan sammanfoga datauppsättningarna i en [CJA-anslutning](/help/connections/combined-dataset.md).
 
-I den här videon finns instruktioner:
+Instruktioner finns i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/332641)
+>[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-Om du vill schemalägga den här importen regelbundet, se Googles dokumentation.
-
-### 5. Importera GCS-händelser till Adobe Experience Platform och mappa till XDM-schema
-
-Därefter kan du mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning, med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till ditt [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
+Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning, med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till ditt [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
 
 ![](assets/schema-map.png)
 
@@ -117,9 +104,9 @@ I den här videon finns instruktioner:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332641)
 
-**Beräkningsfält för tidsstämpel**
+**Beräkningsfältet Tidsstämpel**
 
-För `timestamp`-fältet i Google Analytics data måste du skapa ett särskilt beräkningsfält i användargränssnittet för Experience Platform-schemat. Klicka på **[!UICONTROL Add calculated field]** och bryt strängen `timestamp` i en `date`-funktion så här:
+För schemafältet `timestamp` i Google Analytics data måste du skapa ett särskilt beräkningsfält i Experience Platform-schemagränssnittet. Klicka på **[!UICONTROL Add calculated field]** och bryt strängen `timestamp` i en `date`-funktion så här:
 
 `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
@@ -127,7 +114,7 @@ Du måste sedan spara det här beräknade fältet i tidsstämpeldatastrukturen i
 
 ![](assets/timestamp.png)
 
-**_id XDM beräknat fält**
+**&#39;_id&#39; beräknat fält**
 
 Schemafältet `_id` måste ha ett värde i det - CJA bryr sig inte om vad värdet är. Du kan bara lägga till&quot;1&quot; i fältet:
 
@@ -155,24 +142,19 @@ När du har definierat de här anpassade variablerna kan vi ställa in en utlös
 
 I det här exemplet har utlösaren för att skapa konto definierats, där `pageUrl equals account-creation` används. Genom att lägga till viss information i den här utlösaren kan du se till att data skickas till både Google Analytics och AEP när användaren autentiserar och sidan där kontot skapas läses in.
 
+Du kan även läsa [Datainmatning och Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9).
+
 Instruktioner finns i den här videon:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
-Du kan även läsa [Datainmatning och Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9).
-
 ## Skapa en anslutning i CJA till datauppsättningen Google Analytics
 
-När Adobe Experience Platform har börjat ta emot data från live-Google Analytics och du har fyllt i de historiska Google Analytics från BigQuery är du redo att börja använda CJA och
-[skapa din första anslutning](/help/connections/create-connection.md). Den här anslutningen sammanfogar GA-data med alla dina andra kunddata med ett gemensamt&quot;Kund-ID&quot;.
-
-Instruktioner finns i den här videon:
-
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+När Adobe Experience Platform har börjat ta emot data i live-Google Analytics och du har fyllt i tidigare Google Analytics-data från BigQuery är du redo att hoppa till CJA och [skapa din första anslutning](/help/connections/create-connection.md). Den här anslutningen sammanfogar GA-data med alla dina andra kunddata med ett gemensamt&quot;Kund-ID&quot;.
 
 ## Nästa steg
 
 * Skapa en datavy baserad på data från Google Analytics
 Sedan [skapar du en datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) i CJA utifrån anslutningen som innehåller Google Analytics data.
 
-* Gör en enastående analys i [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace).
+* Gör en enastående analys i [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace). Gå tillbaka senare för att få rapporter om användningsfall.
