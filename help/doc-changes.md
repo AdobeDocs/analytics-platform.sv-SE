@@ -1,14 +1,14 @@
 ---
 title: CJA - dokumentationsuppdateringar
-description: 'Listar innehållsuppdateringar för den dokumentation för Customer Journey Analytics som angetts sedan december 2019. '
+description: Listar innehållsuppdateringar för den dokumentation för Customer Journey Analytics som angetts sedan december 2019.
+exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 translation-type: tm+mt
-source-git-commit: 06079f13a61ec9732a69c8acee0bed7356910a84
+source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Customer Journey Analytics - dokumentationsuppdateringar
 
@@ -16,6 +16,13 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| April 2021 | Nya ämnen om [förbättrad datavyer](/help/data-views/data-views.md). |
+| April 2021 | Nya ämnen om [inhämtning av Google Analytics-data](/help/use-cases/ga-to-cja.md) och [analys av data](/help/use-cases/ga-to-cja-reporting.md) |
+| April 2021 | Tillagt ämne på [schemalagda rapporter](/help/analysis-workspace/curate-share/t-schedule-report.md) i arbetsytan |
+| Februari 2021 | Nytt avsnitt om hur du använder [mått för marknadsföringskanal i Adobe Experience Platform](/help/use-cases/marketing-channels.md) |
+| Mars 2021 | Avsnittet om stöd för [kontrollpaneler för analys](/help/mobile-app/home.md) (mobilapp) har lagts till |
+| Mars 2021 | Nytt avsnitt om [användarinställningar](/help/analysis-workspace/user-preferences.md) i arbetsytan |
+| Januari 2021 | Nytt avsnitt om [att lägga till globala sökningar i din datamängd](/help/use-cases/global-lookups.md) |
 | 13 november 2020 | Nya ämnen om [Flerkanalsanalys](/help/connections/cca/overview.md), som gör att du kan ändra inmatningen för en datauppsättnings person-ID, vilket möjliggör en sömlös kombination av flera datauppsättningar. |
 | 13 november 2020 | Ett nytt användningsexempel för [import av callcenter och webbdata](/help/use-cases/call-center.md) lades till. |
 | 11 november 2020 | Ett ämne har lagts till [Uppskattar anslutningsstorleken](/help/connections/estimate-connection-size.md). |
