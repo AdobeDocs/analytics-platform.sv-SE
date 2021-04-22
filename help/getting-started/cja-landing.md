@@ -3,10 +3,10 @@ title: Customer Journey Analytics Guide
 description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 6%
+source-wordcount: '338'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,10 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Nya eller aktuella objekt</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Ny dokumentation om flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics)  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en#cja-dataviews"> Ny dokumentation om förbättrade datavyer  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#cja-usecases"> Ny dokumentation om inhämtning av Google Analytics till Adobe Experience Platform  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=en#cja-usecases"> Ny dokumentation om analys av Google Analytics-data i CJA  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics)  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> Uppdaterade krav på användarbehörigheter  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> Använda arrayer med objekt  </a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> Lägg till data på kontonivå som en uppslagsdatauppsättning  </a> </li>
