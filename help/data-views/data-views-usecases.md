@@ -3,18 +3,14 @@ title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
 
 # Datavyer använder exempel
-
->[!IMPORTANT]
->
->Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
 De här användningsexemplen visar hur flexibla och kraftfulla datavyer är i Customer Journey Analytics.
 
