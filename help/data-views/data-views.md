@@ -3,9 +3,9 @@ title: Vad är en datavy i Customer Journey Analytics?
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
+source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,9 @@ Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektniv
 ## Ta bort datavyer
 
 Om du tar bort en datavy i [!UICONTROL Customer Journey Analytics] visas ett felmeddelande om att alla arbetsyteprojekt som är beroende av den här borttagna datavyn inte längre fungerar.
+
+## Nästa steg
+
+* [Skapa datavyer](/help/data-views/create-dataview.md)
+* [Datavyer använder exempel](/help/data-views/data-views-usecases.md)
+* Information om hur [persistence](/help/data-views/persistence.md) fungerar
