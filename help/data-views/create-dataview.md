@@ -1,20 +1,16 @@
 ---
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
-exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---
 
 # Skapa en ny datavy
-
->[!IMPORTANT]
->
->Den här funktionen kommer att vara allmänt tillgänglig den 22 april 2021.
 
 När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. Genom att skapa mätvärden eller dimensioner får du en enorm flexibilitet. Tidigare var antagandet att om du hade datauppsättningar i Adobe Experience Platform användes strängfält som dimensioner och numeriska fält som mått. För att kunna ändra något av dessa fält var du tvungen att redigera schemat i Platform. Gränssnittet för datavyer tillåter nu en [frihandsdefinition av mått och mått](/help/data-views/data-views.md). Mer användningsexempel finns i [Datavyer använder exempel](/help/data-views/data-views-usecases.md).
 
