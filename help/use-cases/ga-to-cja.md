@@ -3,9 +3,9 @@ title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,6 @@ När Adobe Experience Platform har börjat ta emot data i live-Google Analytics 
 
 ## Nästa steg
 
-* Skapa en datavy baserad på data från Google Analytics
-Sedan [skapar du en datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) i CJA utifrån anslutningen som innehåller Google Analytics data.
+* Skapa en [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) baserad på anslutningen som innehåller Google Analytics-data.
 
-* Gör en enastående analys i [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace). Gå tillbaka senare för att få rapporter om användningsfall.
+* Gör några fantastiska [analyser i Workspace](/help/use-cases/ga-to-cja-reporting.md).
