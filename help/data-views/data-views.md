@@ -3,9 +3,9 @@ title: Vad är en datavy i Customer Journey Analytics?
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
+source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
@@ -60,20 +60,20 @@ Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäl
 
 Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektnivå, andra kan inte det.
 
-* Fönstret Lookback
-* Måttattribut
-* Om användare ser radobjektet&quot;Inget värde&quot; i en rapport eller inte
+* [!UICONTROL Lookback window]
+* Måttattribuering
+* Om användarna ser radobjektet [!UICONTROL No Value] i en rapport eller inte
 
 ## Datavy settings you cannot override in Workspace
 
-* Komponenttyp
+* [!UICONTROL Component type]
 * Metrisk formatering
 * Datavy name
 * Dimension
 
 ## Ta bort datavyer
 
-Om du tar bort en datavy i [!UICONTROL Customer Journey Analytics] visas ett felmeddelande om att alla arbetsyteprojekt som är beroende av den här borttagna datavyn inte längre fungerar.
+Om du tar bort en datavy i [!UICONTROL Customer Journey Analytics] visas ett felmeddelande om att alla [!UICONTROL Workspace]-projekt som är beroende av den här borttagna datavyn inte längre fungerar.
 
 ## Nästa steg
 
