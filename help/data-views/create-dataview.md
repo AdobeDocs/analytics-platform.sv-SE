@@ -3,9 +3,9 @@ title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
+source-git-commit: c6ce71788582b20f6542ff8e26a7b86d8b1b3eb3
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Förutom att skapa mått och mått från schemaelement kan du även använda sta
 
 ![](assets/standard-components.png)
 
-Nödvändiga standardkomponenter läggs till i datavyn som standard.
+Dessa nödvändiga standardkomponenter läggs som standard till i datavyn.
 
 | Komponentnamn | Dimension eller mått | Anteckningar |
 | --- | --- | --- |
