@@ -3,9 +3,9 @@ title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: c6ce71788582b20f6542ff8e26a7b86d8b1b3eb3
+source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
 workflow-type: tm+mt
-source-wordcount: '2515'
+source-wordcount: '2513'
 ht-degree: 0%
 
 ---
@@ -172,13 +172,13 @@ Förutom att skapa mått och mått från schemaelement kan du även använda sta
 
 ![](assets/standard-components.png)
 
-Dessa nödvändiga standardkomponenter läggs som standard till i datavyn.
+Dessa nödvändiga standardkomponenter läggs som standard till i varje datavy.
 
 | Komponentnamn | Dimension eller mått | Anteckningar |
 | --- | --- | --- |
-| [!UICONTROL People] | Mått | Det här måttet baseras på det person-ID som anges i en anslutning. |
+| [!UICONTROL People] | Mått | Det här måttet baseras på det person-ID som anges i en [!UICONTROL Connection]. |
 | [!UICONTROL Sessions] | Mått | Det här måttet baseras på sessionsinställningarna som anges nedan. |
-| [!UICONTROL Events] | Mått | Det här måttet representerar antalet rader från alla händelsedatamängder i en anslutning. |
+| [!UICONTROL Events] | Mått | Det här måttet representerar antalet rader från alla händelsedatamängder i en [!UICONTROL Connection]. |
 | [!UICONTROL Day] | Dimension | I dimensionen&quot;dag&quot; rapporteras dagen då ett visst mått inträffade. Den första dimensionsartikeln är den första dagen i datumintervallet och den sista dimensionsuppgiften är den sista dagen i datumintervallet. |
 | [!UICONTROL Week] | Dimension | Veckodimensionen rapporterar veckan om att ett visst mått har inträffat. Den första dimensionsuppgiften är den första veckan i datumintervallet och den sista dimensionsuppgiften är den sista veckan i datumintervallet. |
 | [!UICONTROL Month] | Dimension | Dimensionen Month rapporterar månaden då ett visst mått inträffade. Den första dimensionsuppgiften är den första månaden i datumintervallet och den sista dimensionsuppgiften är den sista månaden i datumintervallet. |
