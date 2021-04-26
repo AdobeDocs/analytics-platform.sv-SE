@@ -1,14 +1,14 @@
 ---
 title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
+exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 translation-type: tm+mt
-source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
+source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
-
 
 # Översikt över flerkanalsanalys
 
@@ -50,6 +50,7 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 * Fältbaserad sammanfogning varken kombinerar eller sammanfogar fält.
 * Det tillfälliga ID-fältet ska innehålla en enda typ av ID (t.ex. ID:n från ett enda namnutrymme). Det tillfälliga ID-fältet ska till exempel inte innehålla en kombination av inloggnings-ID och e-post-ID.
 * Om flera händelser inträffar med samma tidsstämpel för samma beständiga ID, men med olika värden i fältet för transient ID, väljer fältbaserad sammanslagning baserat på alfabetisk ordning. Om beständigt ID A har två händelser med samma tidsstämpel och en av händelserna anger Bob och den andra anger Ann, väljer fältbaserad stitling Ann.
+* Flerkanalsanalys håller reda på varje beständigt ID-värde i ett år (TTL = 1 år). Om en enhet inte har någon aktivitet på mer än ett år och sedan börjar få aktivitet igen kopplas de nya händelserna till en anonym person tills användaren identifieras igen (till exempel via en ny inloggning).
 
 
 ## Aktivera flerkanalsanalys
