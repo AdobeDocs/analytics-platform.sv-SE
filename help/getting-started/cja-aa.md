@@ -1,14 +1,14 @@
 ---
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
+exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 4b543a1566580a8f3060c2387928148d55be70f2
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1026'
 ht-degree: 4%
 
 ---
-
 
 # Funktioner i Customer Journey Analytics
 
@@ -36,7 +36,9 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan Adobe Admin Console produktadministratörer och användare. Endast produktadministratörer kan 1) skapa/uppdatera/ta bort anslutningar eller datavyer, 2) uppdatera/ta bort projekt, filter eller beräkningstal som har skapats av andra användare och 3) dela ett Workspace-projekt med alla användare |
 | Sammanfogning mellan olika enheter och kanaler | Se [Flerkanalsanalys](/help/connections/cca/overview.md). |
 | Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, operativsystem etc.) | CJA tillhandahåller dessa dimensioner internt så länge som bas-XDM-fälten (till exempel användaragent eller enhets-ID) fylls i. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Läs vår [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| API-åtkomst för rapportering | För närvarande tillgängligt med Analytics API 2.0. |
+| API-åtkomst för rapportering | Finns nu med [CJA API](https://www.adobe.io/cja-apis/docs/). |
+| Schemalagda rapporter/projekt | Fullt stöd |
+| PDF-export | Fullt stöd |
 
 ## Stöds med caveats
 
@@ -74,9 +76,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Anpassade kalendrar | Support planeras. |
 | Metrisk deduplicering | Support planeras. |
 | Varaktighet för marknadsföringsvariabel | Support planeras. |
-| Schemalagda rapporter/projekt | Support planeras. |
 | Larm | Support planeras. |
-| PDF-export | Support planeras. |
 | ID Stitching via Device Graph | Support planeras. |
 | Report Builder (Excel-plugin) | Support planeras. |
 | Realtidsrapportering | Support planeras. |
