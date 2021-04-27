@@ -3,7 +3,7 @@ title: Vanliga frågor om Customer Journey Analytics
 description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
+source-git-commit: 9bc3e1c211c8cafa0abf73a8732d70185a4f0861
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
@@ -37,8 +37,8 @@ ht-degree: 1%
 
 ## 3. Hämta data till [!UICONTROL Customer Journey Analytics]
 
-| # | Fråga | Svar |
-| --- | --- | --- |
+| Fråga | Svar |
+| --- | --- |
 | Kan jag kombinera data från olika [!UICONTROL Adobe Experience Platform]-sandlådor i en [!UICONTROL Customer Journey Analytics]-anslutning? | Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera datauppsättningar som finns i samma sandlåda. [Läs mer](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | Vilken fördröjning förväntas för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]? | <ul><li>Under normal belastning: &lt; 60 minuter <br>**Obs!** Om dataflödet är ovanligt stort genom pipeline kan det ta upp till 24 timmar.</li><li>Data för förifyllning (upp till 13 månaders data, oavsett storlek): &lt; 4 veckor</li></ul> |
 | Hur ansluter jag onlinedata till offlinedata i [!UICONTROL Customer Journey Analytics]? | Så länge person-ID:t matchar mellan datauppsättningar kan [!UICONTROL Customer Journey Analytics] koppla filter, attribuering, flöde, utfall osv. över datauppsättningar. |
