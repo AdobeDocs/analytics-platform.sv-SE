@@ -3,9 +3,9 @@ title: Lägg till globala sökningar i datauppsättningarna
 description: Använd globala sökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
+source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,6 @@ I traditionella Adobe Analytics visas de här dimensionerna fristående, men i C
 ## Använd globala sökningar med datauppsättningar i Adobe Data Connector
 
 Datauppsättningar för global sökning tillämpas automatiskt vid rapporttidpunkten. Om du använder [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors) och du anger en dimension som Adobe tillhandahåller en global sökning för, tillämpar vi automatiskt den här globala sökningen. Om en händelsedatamängd innehåller [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en)-fält kan vi tillämpa globala sökningar på den.
-
-## Använd globala sökningar med anpassade datauppsättningar
-
-Det måste finnas en nyckel i händelsedatauppsättningen som är kompatibel med de globala sökningsdatauppsättningarna. Så länge du fyller i rätt XDM-fält genom att lägga till några av våra [Adobe Experience Platform schemomixningar](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins) kan du få anpassade datamängder att fungera med globala sökningar.
 
 ## Tillgängliga globala sökfält
 
