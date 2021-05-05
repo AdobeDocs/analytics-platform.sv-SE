@@ -3,23 +3,22 @@ title: Lägg till globala sökningar i datauppsättningarna
 description: Använd globala sökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
+source-git-commit: 26ee2b61fb80b55a7982d90941ec121547423cfc
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
 
 # Lägg till globala sökningar i datauppsättningarna
 
-Globala sökningar gör det lättare för Customer Journey Analytics att rapportera om vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En Global sökning liknar en uppslagsuppsättning (klassificeringar i traditionell Adobe Analytics). Globala sökningar kan dock användas i olika Experience Cloud-organisationer. Globala sökningar tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten).
-För varje schemaplats som Adobe klassificerar finns det en global sökdatamängd. Du kan använda globala uppslagsdatauppsättningar med Analytics Source Connector eller med andra anpassade datauppsättningar som kan acceptera dem.
+Globala sökningar gör det lättare för Customer Journey Analytics att rapportera om vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En Global sökning liknar en uppslagsuppsättning. Globala sökningar kan användas i olika Experience Cloud-organisationer. De tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten). Det finns en global sökdatamängd för varje schemaplats som Adobe klassificerar.
 
-I traditionella Adobe Analytics visas de här dimensionerna fristående, men i CJA måste du aktivt ta med de här dimensionerna när du skapar datavyer. När en användare i anslutningsarbetsflödet väljer en datauppsättning som är flaggad som en med en nyckel för globala sökningar, så vet användargränssnittet att alla globala sökningsdimensioner som är tillgängliga för rapportering ingår. Arbetsflödet för datavyer kan inkludera dessa globala sökningsdimensioner som tillgängliga för datavyn. Uppslagsfilerna uppdateras automatiskt och är tillgängliga i alla regioner och för alla konton. De lagras i regionspecifika organisationer som är kopplade till kunden.
+I traditionella Adobe Analytics visas de här dimensionerna fristående, men i CJA måste du aktivt ta med de här dimensionerna när du skapar datavyer. I anslutningsarbetsflödet väljer du en datauppsättning som är flaggad som en med en nyckel för global sökning. Användargränssnittet för datavyer kan automatiskt inkludera alla globala sökningsdimensioner som är tillgängliga för rapportering. Uppslagsfilerna uppdateras automatiskt och är tillgängliga i alla regioner och för alla konton. De lagras i regionspecifika organisationer som är kopplade till kunden.
 
 ## Använd globala sökningar med datauppsättningar i Adobe Data Connector
 
-Datauppsättningar för global sökning tillämpas automatiskt vid rapporttidpunkten. Om du använder [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors) och du anger en dimension som Adobe tillhandahåller en global sökning för, tillämpar vi automatiskt den här globala sökningen. Om en händelsedatamängd innehåller [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en)-fält kan vi tillämpa globala sökningar på den.
+Datauppsättningar för global sökning tillämpas automatiskt vid rapporttidpunkten. Om du använder Analytics Data Connector och har en dimension som Adobe tillhandahåller en global sökning för, tillämpar vi automatiskt den här globala sökningen. Om en händelsedatamängd innehåller XDM-fält kan vi tillämpa globala sökningar på den.
 
 ## Tillgängliga globala sökfält
 
