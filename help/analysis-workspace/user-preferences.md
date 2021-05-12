@@ -2,19 +2,14 @@
 title: Ange användarinställningar i Analysis Workspace
 description: Du kan ange allmänna inställningar och projektinställningar för användare.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '183'
 ht-degree: 1%
 
 ---
 
 # Användarinställningar
-
->[!NOTE]
->
->Den här funktionen kommer snart. Allmän tillgänglighet är 25 mars 2021.
 
 På sidan [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera Analysis Workspace-inställningar och relaterade komponenter för dina användare. Användarinställningarna gäller för *alla* nya projekt eller paneler.
 
