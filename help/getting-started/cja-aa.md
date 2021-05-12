@@ -2,10 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-translation-type: tm+mt
-source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
+source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1060'
 ht-degree: 4%
 
 ---
@@ -63,7 +62,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Medieanalys | Mediedata är tillgängliga som en del av Analytics Data Connector. |
 | Marknadsförande eVars | Beteendet hos Merchandising eVars kan uppnås med hjälp av dimensioner i en Object-array eftersom en eVar inte är inställd på att använda persistence. För närvarande är beständighet för försäljningsdimension inte tillgängligt. |
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Panelerna Segmentjämförelse, Analytics for Target (A4T) och Media Concurrent Viewer stöds inte. |
-| Bearbetningsregler | För datauppsättningar baserade på Analytics Data Connector tillämpas fortfarande bearbetningsregler. |
+| Bearbetningsregler | För datauppsättningar baserade på Analytics Data Connector tillämpas fortfarande bearbetningsregler. [Funktionerna för förinställningar av data i Adobe Experience ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Platform kan också användas som ersättning för bearbetningsregler för data som går direkt till Platform. |
 
 ## Stöds inte just nu, men är planerad
 
