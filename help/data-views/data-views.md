@@ -2,10 +2,9 @@
 title: Vad är en datavy i Customer Journey Analytics?
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-translation-type: tm+mt
-source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
+source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -22,9 +21,9 @@ Du kan skapa olika datavyer för samma anslutning, med mycket olika uppsättning
 
 Arbetsyteprojekt i Customer Journey Analytics baseras på datavyer.
 
-## Nyheter i datavyer
+## Funktioner för datavyer
 
-Den senaste uppdateringen av datavyer ger dig större flexibilitet när det gäller vad du kan göra med datavyer. Med dessa förbättringar kan du **ändra schemaelementinställningarna spontant i datavyer, utan att behöva ändra schemat i Adobe Experience Platform eller implementera om CJA-miljön**.
+Med datavyer kan du ändra inställningar för schemaelement spontant utan att behöva ändra schemat i Adobe Experience Platform eller implementera CJA-miljön på nytt.
 
 * **Du kan ändra en komponent från ett mått till en Dimension och tvärtom**. Du kan skapa mått från strängfält eller skapa dimensioner från numeriska fält. Det gör livet enklare eftersom du inte behöver skapa ett numeriskt fält i XDM-schemat för varje mätvärde du vill ha. I stället kan du skapa det spontant i dialogrutan för datavyer. Här är några exempel:
    * **Skapa en eller flera och/eller en dimension från ett enda schemafält**. Det är en en-till-många-relation. Du kan till exempel skapa en eller flera intäktsmått och/eller en eller flera intäktsdimensioner från ett enda schemafält.
