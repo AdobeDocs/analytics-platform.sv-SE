@@ -2,10 +2,9 @@
 title: Customer Journey Analytics - översikt
 description: Lär dig hur du kan använda Analysis Workspace med data från Experience Platform i Customer Journey Analytics.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1257'
 ht-degree: 0%
 
 ---
@@ -64,6 +63,10 @@ Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du f
    * Visa datauppsättningar
 
 Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+
+>[!NOTE]
+>
+>Du kan inte tillåta enskilda värden eller dimensioner i Customer Journey Analytics, som i vanliga Adobe Analytics. Mätvärden och dimensioner kan ändras i datavyer och kan därför ändras i CJA, som också ändrar rapporteringen retroaktivt.
 
 ### Användaråtkomst
 
