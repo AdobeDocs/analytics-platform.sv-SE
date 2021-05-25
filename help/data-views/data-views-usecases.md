@@ -2,10 +2,9 @@
 title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-translation-type: tm+mt
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -40,6 +39,14 @@ Tidigare behandlades heltal automatiskt som mått i CJA. Nu kan siffror (inklusi
 1. Nu kan du lägga till [!UICONTROL Value Bucketing] för att presentera den här dimensionen på ett paketerat sätt vid rapportering. (Utan att låsa visas varje instans av den här dimensionen som ett radobjekt i Workspace-rapporten.)
 
    ![](assets/bucketing.png)
+
+## Använd numeriska mått som&quot;mått&quot; i flödesdiagram
+
+Du kan använda en numerisk dimension för att få in &quot;mått&quot; i din [!UICONTROL  Flow]-visualisering. I exemplet nedan visas [!UICONTROL Marketing Channels] som flödar in i [!UICONTROL Orders]:
+
+![](assets/flow.png)
+
+## Inkludera eller exkludera mätvärden
 
 Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview.md).
 En konceptuell översikt över datavyer finns i [Översikt över datavyer](/help/data-views/data-views.md).
