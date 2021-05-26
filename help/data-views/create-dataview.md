@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2551'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,9 @@ Du kan till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en
 | [!UICONTROL Field Name] | Schemafältets namn. |
 | [!UICONTROL Dataset type] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken datamängdstyp (händelse, sökning eller profil) som komponenten kommer från. |
 | [!UICONTROL Dataset] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken typ av fält som komponenten kommer från (t.ex. String, Integer, osv.). Det här fältet kan innehålla flera datauppsättningar. |
-| [!UICONTROL Schema type] | Avser om komponenten är en sträng, ett heltal osv. |
+| [!UICONTROL Schema Data Type] | Avser om komponenten är en sträng, ett heltal osv. |
 | [!UICONTROL Component ID] | Obligatoriskt. [CJA API](https://adobe.io/cja-apis/docs) använder det här fältet för att referera till komponenten. Du kan klicka på redigeringsikonen och ändra det här komponent-ID:t. Om du ändrar det här komponent-ID:t bryts alla befintliga arbetsyteprojekt som innehåller den här komponenten.<br>Om du någonsin skapar en annan datavy som använder ett annat fält för en pageTitle-dimension, kan du byta namn på den och göra dimensionen tvärdatavyn kompatibel. |
-| [!UICONTROL Path] | Obligatoriskt. Ett icke-redigerbart fält som visar schemasökvägen som komponenten kommer från. |
+| [!UICONTROL Schema Path] | Obligatoriskt. Ett icke-redigerbart fält som visar schemasökvägen som komponenten kommer från. |
 | [!UICONTROL Hide component in reporting] | Standard = av. Gör att du kan strukturera ut komponenten från datavyn när den används i rapporter. Detta påverkar inte behörigheter, bara komponentkurering. Du kan med andra ord dölja komponenten för icke-administratörer i rapporter. Administratörer kan fortfarande komma åt den genom att klicka på [!UICONTROL Show All Components] i ett Analysis Workspace-projekt. |
 
 ### Konfigurera formatinställningar
@@ -121,6 +121,7 @@ Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
+| [!UICONTROL Count values] | Endast för booleska värden gör den här inställningen att du kan ange om du vill [!UICONTROL Count True], [!UICONTROL Count False] eller [!UICONTROL Count True or False] som måttvärde. Standardvärdet är [!UICONTROL Count True]. |
 | [!UICONTROL Count instances] | Här kan du ange om ett numeriskt fält eller ett datumtypsfält som används som ett mätvärde ska räkna tiden som det ställdes in i stället för själva värdet.<br> Om du vill lägga till förekomsterna av ett numeriskt fält och bara vill lägga till antalet gånger som ett fält har angetts, i stället för det faktiska värdet  ** i fältet.<br>Detta är användbart om du till exempel vill skapa ett  [!UICONTROL Orders] mätvärde från ett  [!UICONTROL Revenue] fält. Om intäkten har ställts in vill vi räkna med en enda order i stället för det numeriska intäktsbeloppet. |
 
 ### Konfigurera [!UICONTROL No Value Options]-inställningar
