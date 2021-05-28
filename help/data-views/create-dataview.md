@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2635'
 ht-degree: 0%
 
 ---
@@ -117,11 +117,13 @@ Du kan t.ex. skapa en dimension utanför pageTitle-fältet, men anropa det som &
 
 ### Konfigurera beteendeinställningar
 
+Här kan du ange hur ett mätvärde ska fungera i rapporter.
+
 ![](assets/behavior-settings.png)
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL Count values] | Endast för booleska värden gör den här inställningen att du kan ange om du vill [!UICONTROL Count True], [!UICONTROL Count False] eller [!UICONTROL Count True or False] som måttvärde. Standardvärdet är [!UICONTROL Count True]. |
+| [!UICONTROL Count values] | Endast för booleska värden gör den här inställningen att du kan ange om du vill [!UICONTROL Count True], [!UICONTROL Count False] eller [!UICONTROL Count True or False] som måttvärde. Standardvärdet är [!UICONTROL Count True]. Detta ger dig det faktiska värdet för ett mätvärde, till exempel &quot;50&quot; om det fanns ett ordervärde på 50. |
 | [!UICONTROL Count instances] | Här kan du ange om ett numeriskt fält eller ett datumtypsfält som används som ett mätvärde ska räkna tiden som det ställdes in i stället för själva värdet.<br> Om du vill lägga till förekomsterna av ett numeriskt fält och bara vill lägga till antalet gånger som ett fält har angetts, i stället för det faktiska värdet  ** i fältet.<br>Detta är användbart om du till exempel vill skapa ett  [!UICONTROL Orders] mätvärde från ett  [!UICONTROL Revenue] fält. Om intäkten har ställts in vill vi räkna med en enda order i stället för det numeriska intäktsbeloppet. |
 
 ### Konfigurera [!UICONTROL No Value Options]-inställningar
@@ -202,6 +204,12 @@ Valfria standardkomponenter finns under fliken **[!UICONTROL Standard Components
 | [!UICONTROL Batch ID] | Dimension | Representerar den Experience Platform-batch som en [!UICONTROL Event] var en del av. |
 | [!UICONTROL Dataset ID] | Dimension | Representerar datauppsättningen Experience Platform som en [!UICONTROL Event] var en del av. |
 
+## Använd funktionen [!UICONTROL Duplicate]
+
+Att duplicera mått och dimensioner och sedan ändra specifika inställningar är ett enkelt sätt att skapa flera mått eller dimensioner från ett enda schemafält. Välj bara inställningen [!UICONTROL Duplicate] under måttets eller dimensionens namn högst upp till höger. Ändra sedan det nya måttet eller måttet och spara det under ett mer beskrivande namn.
+
+![](assets/duplicate.png)
+
 ### Filtrera schemafält och dimensioner/mått
 
 Du kan filtrera schemafält i den vänstra listen med följande datatyper:
@@ -212,8 +220,7 @@ Du kan också filtrera efter datauppsättningar och efter om ett schemafält inn
 
 ![](assets/filter-other.png)
 
-
-## 3. Lägga till ett globalt filter i datavyn
+## Lägga till ett globalt filter i datavyn
 
 Du kan lägga till filter som gäller för hela datavyn. Det här filtret tillämpas på alla rapporter som du kör i Workspace.
 
