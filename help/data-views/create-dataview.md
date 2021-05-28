@@ -2,7 +2,7 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
 workflow-type: tm+mt
 source-wordcount: '2635'
 ht-degree: 0%
@@ -27,9 +27,9 @@ När du skapar en datavy måste du antingen skapa mått och mått från schemael
 | [!UICONTROL Description] | En detaljerad beskrivning är inte obligatorisk, men rekommenderas. |
 | [!UICONTROL Time zone] | Välj vilken tidszon du vill att dina data ska visas i. |
 | [!UICONTROL Tags] | Med taggar kan du ordna datavyer i kategorier. |
-| [!UICONTROL Containers] | Du kan byta namn på behållarna här och så här visas de i alla Workspace-projekt som baseras på den här datavyn. Behållare används i filter och utfall/flöde osv. för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
-| [!UICONTROL Person container name is…] | [!UICONTROL Person] (standard). Behållaren [!UICONTROL Person] innehåller alla besök och sidvisningar för besökare inom en viss tidsperiod. Du kan byta namn på detta till &quot;Användare&quot; eller något annat uttryck som du föredrar. |
-| [!UICONTROL Session container name is…] | [!UICONTROL Session] (standard). Med [!UICONTROL Session]-behållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på detta till Besök eller något annat uttryck som du föredrar. |
+| [!UICONTROL Containers] | Du kan byta namn på behållarna här för att bestämma hur de visas i ett arbetsyteprojekt som baseras på den här datavyn. Behållare används i filter och utfall/flöde och så vidare för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Person container name is…] | [!UICONTROL Person] (standard). Behållaren [!UICONTROL Person] innehåller alla besök och sidvisningar för besökare inom en viss tidsperiod. Du kan byta namn på den här behållaren till &quot;Användare&quot; eller något annat uttryck som du föredrar. |
+| [!UICONTROL Session container name is…] | [!UICONTROL Session] (standard). Med [!UICONTROL Session]-behållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som du föredrar. |
 | [!UICONTROL Event container name is…] | [!UICONTROL Event] (standard). Behållaren [!UICONTROL Event] definierar vilka sidhändelser som du vill ta med eller exkludera från ett filter. |
 
 Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använda standardkomponenter.
@@ -43,7 +43,7 @@ Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använd
 Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan. Kom ihåg:
 
 * De komponenter som redan ingår är de standardkomponenter som krävs (systemgenererade).
-* Vi använder också filtret **[!UICONTROL Contains data]** som standard, så att endast schemafält som innehåller data visas. Om du letar efter ett fält som inte innehåller data behöver du bara ta bort filtret.
+* Adobe använder filtret **[!UICONTROL Contains data]** som standard, så att endast schemafält som innehåller data visas. Om du söker efter ett fält som inte innehåller data tar du bort filtret.
 
 1. Dra nu ett schemafält, till exempel [!UICONTROL pageTitle], från den vänstra listen till avsnittet Metrisk eller Dimensioner.
 
