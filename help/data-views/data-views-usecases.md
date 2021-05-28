@@ -2,9 +2,9 @@
 title: Använd exempel för datavyer i Customer Journey Analytics
 description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 De här användningsexemplen visar hur flexibla och kraftfulla datavyer är i Customer Journey Analytics.
 
-## 1. Skapa ett ordermått från ett pageTitle-schemafält (sträng)
+## 1. Skapa ett mått från ett strängschemafält
 
 När du skapar en datavy kan du till exempel skapa ett [!UICONTROL Orders]-mått från ett [!UICONTROL pageTitle]-schemafält som är en sträng. Så här gör du:
 
@@ -27,6 +27,8 @@ När du skapar en datavy kan du till exempel skapa ett [!UICONTROL Orders]-mått
    &quot;Bekräftelsefrasen&quot; anger att detta är en order. När du har granskat alla sidrubriker där dessa kriterier uppfylls räknas &quot;1&quot; för varje förekomst. Resultatet är ett nytt mått (inte ett beräknat mått). Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Det fungerar med Attribution IQ, filter och var du än är kan du använda standardvärden.
 1. Du kan ange en attribueringsmodell för det här måttet, till exempel [!UICONTROL Last Touch], med [!UICONTROL Lookback window] [!UICONTROL Session].
 Du kan också skapa ytterligare ett [!UICONTROL Orders]-mått från samma fält och ange en annan attribueringsmodell för det, till exempel [!UICONTROL First Touch] och en annan [!UICONTROL Lookback window], till exempel [!UICONTROL 30 days].
+
+Ett annat exempel är att använda besökar-ID, en dimension, som ett mått för att avgöra hur många besökar-ID ditt företag har.
 
 ## 2. Använd heltal som dimensioner
 
@@ -68,17 +70,9 @@ Med de här nya inställningarna kan du bara visa värdefulla intäkter och filt
 
 Företaget kan ha ägnat tid åt att utbilda dina användare så att de förväntar sig&quot;Ospecificerat&quot; i rapporter. Standardvärdet i datavyer är &quot;Inget värde&quot;. Du kan nu [ändra namn på &quot;Inget värde&quot; till &quot;Ospecificerat&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) i användargränssnittet för datavyer.
 
-## 6. Använd funktionen [!UICONTROL Duplicate]
+## 6. Skapa flera mått med olika [!UICONTROL Attribution]-inställningar
 
-Att duplicera ett mätvärde och sedan ändra specifika inställningar är ett enkelt sätt att skapa flera mätvärden eller dimensioner från ett enda schemafält.
-
-Välj bara inställningen Duplicera under måttets eller dimensionens namn längst upp till höger:
-
-![](assets/duplicate.png)
-
-## Skapa flera mätvärden med olika attributinställningar
-
-Använd [!UICONTROL Duplicate]-funktionen som nämns ovan för att skapa ett antal intäktsmått med olika attribueringsinställningar som [!UICONTROL First Touch], [!UICONTROL Last Touch] och [!UICONTROL Algorithmic].
+Använd funktionen [!UICONTROL Duplicate] längst upp till höger och skapa ett antal intäktsmått med olika attribueringsinställningar som [!UICONTROL First Touch], [!UICONTROL Last Touch] och [!UICONTROL Algorithmic].
 
 Glöm inte att byta namn på varje mätvärde för att återspegla skillnaderna, t.ex.&quot;Algoritmisk omsättning&quot;:
 
