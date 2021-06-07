@@ -2,14 +2,13 @@
 description: Det finns två sätt att använda mätvärden i Analysis Workspace.
 title: Mätvärden
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
-translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '239'
 ht-degree: 5%
 
 ---
-
 
 # Mätvärden
 
@@ -29,7 +28,7 @@ Du kan också klicka på **[!UICONTROL Components]** > **[!UICONTROL New Metric]
 
 ![](assets/calc_metrics.png)
 
-[Beräknade mått: Implementeringsfria mätvärden](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html)  (3:42)
+[Beräknade mått: Implementeringsfria mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html)  (3:42)
 
 ## Jämför mätvärden med olika attribueringsmodeller
 
