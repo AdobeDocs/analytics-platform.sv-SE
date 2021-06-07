@@ -2,10 +2,9 @@
 description: Vanliga frågor om arbetsytan och felsökningstips.
 title: Frågor och svar
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '410'
 ht-degree: 42%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 | Fråga | Svar |
 |--- |--- |
@@ -36,4 +35,4 @@ Om du har skapat en rapport om arbetsytan men det inte finns några data kan du 
 
 * Om du tillämpade ett filter i rapporten kanske filtervillkoren inte matchar några data. Försök att ta bort filtret eller justera filterdefinitionen.
 * Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
-* Navigera till webbplatsen och använd [Felsökning](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html) för att validera att data samlas in.
+* Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att validera att data samlas in.
