@@ -1,14 +1,13 @@
 ---
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
 title: Chefshandbok för kontrollpaneler för analyser
-translation-type: tm+mt
-source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
-
 
 # Kontrollpaneler för analyser: snabbstartsguide för företagsanvändare
 
@@ -120,7 +119,7 @@ Så här använder du kontrollpaneler:
 
    * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det intervall som omedelbart föregår det. Tryck på något av dessa två alternativ för att markera det första intervallet. I listan **[!UICONTROL COMPARE TO]** trycker du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
-7. Om du vill använda ett filter på styrkortet trycker du på filterlistrutan och väljer ett filter som har konfigurerats av markören. [Filtren ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i arbetsytan för analyser.
+7. Om du vill använda ett filter på styrkortet trycker du på filterlistrutan och väljer ett filter som har konfigurerats av markören. [Filtren ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i arbetsytan för analyser.
 
    ![Filter](assets/segment_filter.png)
 
