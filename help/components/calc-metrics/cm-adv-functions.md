@@ -1,20 +1,19 @@
 ---
 title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '2946'
+source-wordcount: '2944'
 ht-degree: 1%
 
 ---
-
 
 # Referens - avancerade funktioner
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du får åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i listrutan **[!UICONTROL Functions]**.
 
@@ -730,4 +729,3 @@ Returnerar sannolikheten för att den aktuella raden kan ses av en slump i kolum
 >[!NOTE]
 >
 >Anta att värdena normalt fördelas.
-
