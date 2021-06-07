@@ -1,26 +1,25 @@
 ---
 description: Sidnumrering, filtrering och sortering av tabeller i arbetsytan
 title: Sidnumrering, filtrering och sortering av tabeller
-translation-type: tm+mt
-source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
+exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 17%
 
 ---
-
 
 # Sidnumrering, filtrering och sortering av tabeller
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Titta på den här videosjälvstudien för en översikt över paginering, filtrering och sortering av tabeller i Analysis Workspace:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)
 
-## Avancerade filteralternativ {#section_36E92E31442B4EBCB052073590C1F025}
+## Avancerade filtreringsalternativ {#section_36E92E31442B4EBCB052073590C1F025}
 
 Om du klickar på filterikonen och sedan **[!UICONTROL Show Advanced]** bredvid en dimension i en frihandstabell kan du filtrera enligt följande kriterier. Du kan använda flera filtreringsregler.
 
