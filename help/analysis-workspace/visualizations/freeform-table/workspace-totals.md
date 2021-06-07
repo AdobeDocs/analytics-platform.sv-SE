@@ -2,10 +2,9 @@
 description: Hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan visa två summor:
 
@@ -25,7 +24,7 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 
 ## Visa total inställning
 
-Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte är rimliga, t.ex. i vissa [beräknade måttscenarier](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
+Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte är rimliga, t.ex. i vissa [beräknade måttscenarier](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
 
 ![](assets/column-settings-total.png)
 
@@ -43,7 +42,7 @@ Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL S
 | Frågor | Svar |
 |---|---|
 | Vilken summa är procentsatserna för gråa kolumner baserade på? | Detta beror på **[!UICONTROL Percentages]**-inställningsvalet under **[!UICONTROL Row Settings]**:<ul><li>Beräkna procentandelar per kolumn - Det här är standardinställningen. Procentsatserna baseras på tabellsumman.</li><li>Beräkna procentandelar per rad - Procentsatserna baseras på totalsumman.</li></ul> |
-| Hur påverkar inställningen **[!UICONTROL Include Unspecified (None)]** summorna? | Om inställningen **[!UICONTROL Include Unspecified (None)]** inte är markerad tas raden Inget/Ospecificerad bort från tabellen, Tabellsumma, och utförs på alla beräknade mått som använder [&#39;Total&#39; metric-typer](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/m-metric-type-alloc.html) |
+| Hur påverkar inställningen **[!UICONTROL Include Unspecified (None)]** summorna? | Om inställningen **[!UICONTROL Include Unspecified (None)]** inte är markerad tas raden Inget/Ospecificerad bort från tabellen, Tabellsumma, och utförs på alla beräknade mått som använder [&#39;Total&#39; metric-typer](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/m-metric-type-alloc.html) |
 | När anpassade tabellfilter tillämpas på en frihandstabell, gör jag då alla mina beräknade värden och villkorsstyrda formateringskonton för filtret? | Inte just nu. **[!UICONTROL Include Unspecified (None)]** tas med i beräkningen, men anpassade tabellfilter påverkar inte följande:<ul><li>Kolumnens max/min-intervall som villkorsstyrd formatering använder ser ut över alla data.</li><li>Beräknade mätvärden som utnyttjar **[!UICONTROL Grand Total]** mätningstyper.</li><li>Beräknade mätvärden med funktioner som beräknas över rader i en friformstabell, t.ex. kolumnsumma, kolumnmax, kolumnmin, antal, medel, medel, medel, percentil, kvartil, radantal, standardavvikelse, varians, ackumulerat, kumulativt genomsnitt, regressionsvarianter, T-poäng, T-test, Z-poäng, Z-test, Z-test.</li></ul> |
 | I Beräknade mått, vad återspeglar måtttypen **[!UICONTROL Grand Total]**? | **[!UICONTROL Grand Total]** fortsätter att referera till  **[!UICONTROL Grand Total]** och reflekterar inte filter som används i en tabell eller i  **[!UICONTROL Table Total]**. |
 | Vilken summa visas när data kopieras och klistras in från en frihandstabell eller hämtas via CSV? | Den totala raden återspeglar endast **[!UICONTROL Table Total]** och respekterar inställningen för kolumnen **[!UICONTROL Show Totals]**. |
