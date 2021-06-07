@@ -2,20 +2,19 @@
 description: Analysupptäckt i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 title: Statistiska tekniker som används för avvikelseidentifiering
 uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '827'
 ht-degree: 2%
 
 ---
-
 
 # Statistiska tekniker som används för avvikelseidentifiering
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Analysupptäckt i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 
@@ -46,11 +45,11 @@ Efter modellval justerar algoritmen sedan resultaten baserat på helger och års
 * Januari 1
 * 31 december
 
-Dessa helgdagar valdes ut baserat på omfattande statistisk analys av många kunddatapunkter för att identifiera helger som har störst betydelse för det högsta antalet kundtrender. Även om listan inte är fullständig för alla kunder eller affärscykler, fann vi att användningen av dessa helger avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
+Dessa helgdagar valdes ut baserat på omfattande statistisk analys av många kunddatapunkter för att identifiera helger som matchar flest kundtrender. Även om listan inte är fullständig för alla kunder eller affärscykler, fann vi att användningen av dessa helger avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
 
 När modellen har valts och helger har identifierats i rapportdatumintervallet utförs algoritmen på följande sätt:
 
-1. Konstruera avvikelsens referensperiod - detta omfattar upp till 35 dagar före rapporteringsdatumintervallet och ett matchande datumintervall från ett år tidigare (med redovisning för skottdagar vid behov och inklusive eventuella helgdagar som kan ha inträffat på en annan kalenderdag föregående år).
+1. Konstruera avvikelsens referensperiod - detta omfattar upp till 35 dagar före rapporteringsdatumintervallet och ett matchande datumintervall från ett år före (redovisning för skottdagar vid behov och inklusive eventuella helgdagar som kan ha inträffat på en annan kalenderdag föregående år).
 1. Testa om helgdagar under den aktuella perioden (exklusive föregående år) är onormala baserat på de senaste uppgifterna.
 1. Om semestern i det aktuella datumintervallet är onormal justerar du det förväntade värdet och konfidensintervallet för den aktuella semestern med hänsyn till föregående års semester (med hänsyn till två dagar före och efter). Korrigeringen för den aktuella ledigheten baseras på det lägsta genomsnittliga absoluta procentfelet för:
 
