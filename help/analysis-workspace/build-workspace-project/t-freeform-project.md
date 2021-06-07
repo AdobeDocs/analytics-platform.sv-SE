@@ -2,11 +2,10 @@
 description: Skapa ett projekt och lägg till komponenter (mått, mått, filter, datumintervall) på frihandspanelen.
 keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 16%
+source-wordcount: '642'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +20,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
 
 1. Ange användarbehörighet för att skapa och strukturera projekt.
 
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med behörigheten **[!UICONTROL Create / Curate Projects in Analysis Workspace]** aktiverad, eller i användargruppen **[!UICONTROL All Report Access]**. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Grupper](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)).
+   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med behörigheten **[!UICONTROL Create / Curate Projects in Analysis Workspace]** aktiverad, eller i användargruppen **[!UICONTROL All Report Access]**. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Grupper](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** i [!DNL Experience Cloud].
 
@@ -84,7 +83,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
    >
    >När du har kopierat/sparat som är länkar nu relativt till det projekt de bor i, inte det ursprungliga projektet som de kopierades från.
 
-## Lägg till komponenter och visualiseringar {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## Lägga till komponenter och visualiseringar {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. Bygg ditt projekt genom att dra *`components`* och *`visualizations`* till projektet.
 
@@ -129,7 +128,7 @@ Panelen [!UICONTROL Visualizations] innehåller standarddiagram för analyser, d
 
 1. Steg
 
-## Använd högerklicksmenyn för att anpassa dina data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Använd högerklicksmenyn för att anpassa data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken cell i en tabell du högerklickar på.
 
