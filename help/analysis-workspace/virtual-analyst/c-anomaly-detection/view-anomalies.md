@@ -2,20 +2,19 @@
 description: Du kan visa avvikelser i en tabell eller i ett linjediagram.
 title: Visa avvikelser i Analysis Workspace
 uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '266'
 ht-degree: 4%
 
 ---
-
 
 # Visa avvikelser i Analysis Workspace
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan visa avvikelser i en tabell eller i ett linjediagram.
 
@@ -48,4 +47,3 @@ Konfidensintervallet för avvikelseidentifiering skalar inte automatiskt y-axeln
 Du kan välja att tillåta konfidensintervallet för att skala diagrammet. Klicka bara på inställningsikonen (kugghjulsikonen) och markera **[!UICONTROL Allow Anomaly Detection to Scale Y Axis]**.
 
 ![](assets/scale-y-axis.png)
-
