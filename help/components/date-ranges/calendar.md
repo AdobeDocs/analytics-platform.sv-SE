@@ -2,14 +2,13 @@
 description: I kalendern kan du ange datum och datumintervall eller välja en förinställning.
 title: Översikt över kalender- och datumintervall
 uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
-translation-type: tm+mt
-source-git-commit: 7dc245671d98e63cc4f0d97c1b1fdb11509b7d45
+exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '362'
 ht-degree: 3%
 
 ---
-
 
 # Översikt över kalender- och datumintervall
 
@@ -23,7 +22,7 @@ Första klicket i en kalender startar ett datumintervallval. Den andra klickning
 
 Du kan också dra datum (och tidsdimensioner) till ett Workspace-projekt. Du kan välja specifika dagar, veckor, månader, år eller rullande datum.
 
-[Använda datumintervall och kalender i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html)  (4:07)
+[Använda datumintervall och kalender i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html)  (4:07)
 
 | Inställning | Beskrivning |
 | --- | --- |
