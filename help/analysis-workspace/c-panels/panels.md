@@ -2,10 +2,9 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -35,7 +34,7 @@ Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering el
 
 ![](assets/panel-calendar.png)
 
-## Dropzone {#dropzone}
+## Dropzon {#dropzone}
 
 Med panelens dropzone kan du använda filter och nedrullningsbara filter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel. Titeln ovanför varje filter kan ändras genom att du klickar på redigeringspennan eller så kan du högerklicka för att ta bort den helt.
 
@@ -69,7 +68,7 @@ Så här skapar du nedrullningsbara filter:
 
 ![](assets/create-dropdown.png)
 
-[Titta på ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) videon och lär dig mer om hur du lägger till nedrullningsbara filter i ditt projekt.
+[Titta på ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) videon och lär dig mer om hur du lägger till nedrullningsbara filter i ditt projekt.
 
 ## Högerklicka på menyn {#right-click}
 
