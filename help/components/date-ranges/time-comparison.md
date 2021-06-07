@@ -2,20 +2,19 @@
 description: Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år för år, kvartal för kvartal, månad för månad.
 title: Datumjämförelse
 uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 08113536-658f-486b-ac56-6c531240c3c2
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '593'
 ht-degree: 6%
 
 ---
-
 
 # Datumjämförelse
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
@@ -84,7 +83,7 @@ Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan l
 
 1. Du kan dessutom sortera efter varje kolumn, vilket ändrar ordningen på dagar beroende på vilken kolumn du sorterar efter.
 
-## Justera kolumndatum så att de startar på samma rad {#section_5085E200082048CB899C3F355062A733}
+## Justera kolumndatum så att de börjar på samma rad {#section_5085E200082048CB899C3F355062A733}
 
 Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from each column to all start on the same row (applies to entire table)]**. &quot;Gäller hela tabellen&quot; betyder att om du t.ex. gör en uppdelning i tabellen, och om du ändrar den här inställningen för uppdelningen, så ändras inställningen för hela tabellen.
 
@@ -103,4 +102,3 @@ Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse m
 <p>See Jonny Moon's email from November 3. </p>
 
  -->
-
