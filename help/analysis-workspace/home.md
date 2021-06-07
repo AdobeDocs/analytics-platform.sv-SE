@@ -3,11 +3,10 @@ keywords: Analysis Workspace
 title: Översikt över Analysis Workspace
 description: Översikt över Analysis Workspace funktioner
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 4%
+source-wordcount: '457'
+ht-degree: 3%
 
 ---
 
@@ -37,11 +36,11 @@ När du har loggat in bör du använda Analysis Workspace självstudiekurs, som 
 
 ## Skapa ett nytt projekt {#new-project}
 
-När självstudiekursen är klar kan du börja skapa ditt första projekt. **Det nya projektet modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [ett tomt mobilstyrkort](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela analysen från webbläsaren eller mobilappen Adobe Analytics dashboards.
+När självstudiekursen är klar kan du börja skapa ditt första projekt. **Det nya projektet modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [ett tomt mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela analysen från webbläsaren eller mobilappen Adobe Analytics dashboards.
 
 ![](assets/create-new-project.png)
 
-## Bygg din analys {#analysis}
+## Bygg en analys {#analysis}
 
 I ditt Workspace-projekt är **paneler, tabeller, visualiseringar och komponenter** tillgängliga från den vänstra listen. Detta är era projektbyggstenar.
 
@@ -65,4 +64,4 @@ I ditt Workspace-projekt är **paneler, tabeller, visualiseringar och komponente
 
 ## Ytterligare resurser {#resources}
 
-* Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html).
+* Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
