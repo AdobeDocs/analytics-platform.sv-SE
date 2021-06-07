@@ -2,10 +2,9 @@
 title: (B2B) Lägg till data på kontonivå som en uppslagsuppsättning
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatauppsättning i CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
-translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -30,7 +29,7 @@ Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en 
 
 ## 1. Skapa uppslagsschema (Experience Platform)
 
-Om du skapar ett eget schema för tabellen [lookup](/help/getting-started/cja-glossary.md) säkerställer du att den datauppsättning som används är tillgänglig i CJA med rätt inställning (posttyp). Det bästa sättet är att [skapa en anpassad schemaklass](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) med namnet&quot;Sök efter&quot;, som är tom för alla element och som kan återanvändas för alla uppslagstabeller.
+Om du skapar ett eget schema för tabellen [lookup](/help/getting-started/cja-glossary.md) säkerställer du att den datauppsättning som används är tillgänglig i CJA med rätt inställning (posttyp). Det bästa sättet är att [skapa en anpassad schemaklass](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) med namnet&quot;Sök efter&quot;, som är tom för alla element och som kan återanvändas för alla uppslagstabeller.
 
 ![](assets/create-new-class.png)
 
@@ -54,9 +53,9 @@ Exempelvis definieras annualRevenue eller totalEmployees som Integer i följande
 
 ## 3. Infoga data i Experience Platform
 
-Instruktioner om hur du kan mappa en CSV-fil till ett XDM-schema](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) bör vara till hjälp om du använder en CSV-fil.[
+Instruktioner om hur du kan mappa en CSV-fil till ett XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html) bör vara till hjälp om du använder en CSV-fil.[
 
-[Det finns även andra ](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) metoder.
+[Det finns även andra ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) metoder.
 
 Det tar cirka 2 till 4 timmar att introducera data och upprätta sökningen, beroende på storleken på uppslagstabellen.
 
@@ -67,7 +66,7 @@ I det här exemplet kombinerar vi tre datauppsättningar i en CJA-anslutning:
 | Namn på datauppsättning | Beskrivning | Klassen AEP Schema | Information om datauppsättning |
 | --- | --- | --- | --- |
 | B2B-komprimering | Innehåller klickströmsdata på händelsenivå på kontonivån. Den innehåller till exempel e-post-ID och motsvarande konto-ID samt marknadsföringsnamn för att köra marknadsföringsannonser. Det innehåller även visningar för dessa annonser per användare. | Baserat på schemaklassen XDM ExperienceEvent | `emailID` används som primär identitet och tilldelas ett `Customer ID`-namnutrymme. Därför visas den som standard **[!UICONTROL Person ID]** i Customer Journey Analytics. ![Impressions](assets/impressions-mixins.png) |
-| B2B-profil | Den här profildatauppsättningen ger dig mer information om användarna i ett konto, t.ex. deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM Individual Profile | Du behöver inte välja `emailID` som primärt ID i det här schemat. Se till att aktivera **[!UICONTROL Profile]**; Om du inte gör det kan CJA inte ansluta `emailID` i B2B-profilen med `emailID` i B2B-komprimeringsdata. ![Profil](assets/profile-mixins.png) |
+| B2B-profil | Den här profildatauppsättningen ger dig mer information om användarna på ett konto, t.ex. deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM Individual Profile | Du behöver inte välja `emailID` som primärt ID i det här schemat. Se till att aktivera **[!UICONTROL Profile]**; Om du inte gör det kan CJA inte ansluta `emailID` i B2B-profilen med `emailID` i B2B-komprimeringsdata. ![Profil](assets/profile-mixins.png) |
 | B2B-information | Se&quot;Skapa datauppsättning för sökning&quot; ovan. | B2BAccount (anpassad sökschemaklass) | Förhållandet mellan `accountID` och datauppsättningen B2B-Impressions har automatiskt skapats genom att koppla datauppsättningen B2B-information till datauppsättningen B2B-Impression i CJA, vilket beskrivs i stegen nedan. ![Sök](assets/lookup-mixins.png) |
 
 Så här kombinerar du datauppsättningarna:
