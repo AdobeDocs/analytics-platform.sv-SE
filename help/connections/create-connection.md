@@ -2,10 +2,10 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 1%
+source-wordcount: '1887'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ Med en anslutning kan du integrera datauppsättningar från [!DNL Adobe Experien
 
 Klicka [här](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) om du vill se en videoöversikt.
 
-Om du vill skapa en CJA-anslutning behöver du följande behörigheter:
+Om du vill skapa en CJA-anslutning behöver du följande behörigheter i [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Datamodellering: Visa scheman, hantera scheman
@@ -41,7 +41,7 @@ Customer Journey Analytics
 
 1. Välj en sandlåda i Experience Platform som innehåller den eller de datauppsättningar som du vill skapa en anslutning till.
 
-   Adobe Experience Platform tillhandahåller [sandlådor](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.  När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen.
+   Adobe Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.  När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen.
 
    >[!IMPORTANT]
    >
@@ -71,7 +71,7 @@ Till höger kan du nu konfigurera de datauppsättningar som du har lagt till.
 
 1. **[!UICONTROL Time stamp]**: Endast för händelsedatamängder anges den här inställningen automatiskt till standardfältet för tidsstämpling från händelsebaserade scheman i  [!UICONTROL Experience Platform].
 
-1. **[!UICONTROL Schema]**: Det här är den  [](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html) schemaläggning som datauppsättningen skapades på i Adobe Experience Platform.
+1. **[!UICONTROL Schema]**: Det här är den  [](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) schemaläggning som datauppsättningen skapades på i Adobe Experience Platform.
 
 1. **[!UICONTROL Person ID]**: Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Nedan finns information om hur du använder identitetskartan som ett person-ID.
 
@@ -85,7 +85,7 @@ Till höger kan du nu konfigurera de datauppsättningar som du har lagt till.
 
 Customer Journey Analytics har nu stöd för möjligheten att använda identitetskartan för sitt person-ID. Identitetskarta är en kartdatastruktur som gör att någon kan överföra nyckel -> värdepar. Nycklarna är ID-namnutrymmen och värdet är den struktur som innehåller identitetsvärdet. Identitetskartan finns för varje överförd rad/händelse och fylls i för varje rad i enlighet med detta.
 
-Identitetskartan är tillgänglig för alla datauppsättningar som använder ett schema baserat på klassen [ExperienceEvent XDM](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html). När du väljer en sådan datauppsättning som ska inkluderas i en CJA-anslutning kan du välja att antingen välja ett fält som primärt ID eller identitetskartan:
+Identitetskartan är tillgänglig för alla datauppsättningar som använder ett schema baserat på klassen [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html). När du väljer en sådan datauppsättning som ska inkluderas i en CJA-anslutning kan du välja att antingen välja ett fält som primärt ID eller identitetskartan:
 
 ![](assets/idmap1.png)
 
@@ -94,7 +94,7 @@ Om du väljer Identitetskarta får du ytterligare två konfigurationsalternativ:
 | Alternativ | Beskrivning |
 |---|---|
 | [!UICONTROL Use Primary ID Namespace] | Detta instruerar CJA, per rad, att hitta identiteten i identitetskartan som är markerad med ett primär=true-attribut och använda det som ID för den raden. Detta innebär att det här är den primärnyckel som ska användas i Experience Platform för partitionering. Det är också den primära kandidaten för CJA:s besökar-ID (beroende på hur datauppsättningen konfigureras i en CJA-anslutning). |
-| [!UICONTROL Namespace] | (Det här alternativet är bara tillgängligt om du inte använder namnutrymmet för primärt ID.) Identitetsnamnutrymmen är en komponent i [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) som fungerar som indikatorer för det sammanhang som en identitet relateras till. Om du anger ett namnutrymme söker CJA efter den här namnutrymmesnyckeln i varje rads identitetskarta och använder identiteten under namnutrymmet som ID för den raden. Observera att eftersom CJA inte kan göra en fullständig datauppsättningssökning av alla rader för att avgöra vilka namnutrymmen som faktiskt finns, visas alla möjliga namnutrymmen i listrutan. Du måste veta vilka namnutrymmen som anges i data; detta kan inte identifieras automatiskt. |
+| [!UICONTROL Namespace] | (Det här alternativet är bara tillgängligt om du inte använder namnutrymmet för primärt ID.) Identitetsnamnutrymmen är en komponent i [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) som fungerar som indikatorer för det sammanhang som en identitet relateras till. Om du anger ett namnutrymme söker CJA efter den här namnutrymmesnyckeln i varje rads identitetskarta och använder identiteten under namnutrymmet som ID för den raden. Observera att eftersom CJA inte kan göra en fullständig datauppsättningssökning av alla rader för att avgöra vilka namnutrymmen som faktiskt finns, visas alla möjliga namnutrymmen i listrutan. Du måste veta vilka namnutrymmen som anges i data; detta kan inte identifieras automatiskt. |
 
 ### Kantärenden för identitetskarta
 
@@ -117,8 +117,8 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
    | [!UICONTROL Description] | Lägg till mer information för att skilja den här anslutningen från andra. |
    | [!UICONTROL Datasets] | De datauppsättningar som ingår i den här anslutningen. |
    | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar till [!UICONTROL Workspace]. |
-   | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen importeras eller fylls alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar i den här anslutningen i bakgrunden. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. Se även [Bakåtfyll historiska data](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) nedan.<br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
-   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet händelser per dag som ska importeras (nya data **och** data för bakgrundsfyllning) för alla datauppsättningar i anslutningen. Välj ett alternativ i listrutan. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera kan du göra en enkel SQL-fråga i  [Adobe Experience Platform Query ](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) Services för att ta reda på det.<br>Se &quot;Beräkna det genomsnittliga antalet dagliga händelser&quot; nedan. |
+   | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen importeras eller fylls alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar i den här anslutningen i bakgrunden. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. Se även [Bakåtfyll historiska data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) nedan.<br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
+   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet händelser per dag som ska importeras (nya data **och** data för bakgrundsfyllning) för alla datauppsättningar i anslutningen. Välj ett alternativ i listrutan. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera kan du göra en enkel SQL-fråga i  [Adobe Experience Platform Query ](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) Services för att ta reda på det.<br>Se &quot;Beräkna det genomsnittliga antalet dagliga händelser&quot; nedan. |
 
 1. Klicka på **[!UICONTROL Save and create data view]**. Mer information finns i [skapa en datavy](/help/data-views/create-dataview.md).
 
@@ -130,13 +130,13 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
 * Vi prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa nya data har den lägsta latensen.
 * Eventuella bakåtfyllnadsdata (historiska) importeras i en långsammare takt. Fördröjningen påverkas av hur mycket historisk information du har, i kombination med **[!UICONTROL Average number of daily events]**-inställningen du valde. Om du till exempel har mer än en miljard rader data per dag, plus tre års historiska data, kan det ta flera veckor att importera dem. Å andra sidan, om du har mindre än en miljon rader per dag och en vecka med historiska data, tar det mindre än en timme.
 * Påfyllning gäller för hela anslutningen, inte för varje enskild datauppsättning.
-* Med [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importeras upp till 13 månaders data, oavsett storlek.
+* Med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importeras upp till 13 månaders data, oavsett storlek.
 
 ### Beräkna det genomsnittliga antalet dagliga händelser
 
 Denna beräkning måste göras för varje datauppsättning i anslutningen.
 
-1. Gå till [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) och skapa en ny fråga.
+1. Gå till [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) och skapa en ny fråga.
 
 1. Frågan skulle se ut så här:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
