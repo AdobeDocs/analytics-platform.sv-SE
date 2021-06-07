@@ -2,10 +2,9 @@
 title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 description: Hur man interagerar med dynamiska och statiska dimensionsobjekt i tabeller.
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 I frihandstabeller kan raderna och kolumnerna innehålla olika komponentvärden. Dessa värden kan vara dynamiska (ändras med tid) eller statiska (ändras inte med tid), beroende på vilken analys du vill skapa.
 
@@ -56,4 +55,4 @@ Dimensioner från olika dimensioner kan läggas till i samma tabell. Radhuvudet 
 Dynamiska och statiska rader fungerar på olika sätt i den totala frihandsraden. Som standard:
 
 * Dynamiska rader summeras på serversidan och dubblettvärden som besök och besökare tas bort
-* Statiska rader summeras på klientsidan och gör **inte** avduplicerade mått. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* Statiska rader summeras på klientsidan och gör **inte** avduplicerade mått. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
