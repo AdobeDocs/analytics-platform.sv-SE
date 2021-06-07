@@ -1,14 +1,13 @@
 ---
 description: Flödesfunktionen visar kundvägar via era webbplatser och appar.
 title: Översikt över flöden
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '182'
 ht-degree: 2%
 
 ---
-
 
 # Översikt över flöden
 
@@ -20,9 +19,9 @@ Här kan du:
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, som inmatning, en viss dimension eller avslut
 * Skapa filter genom att ange en specifik punkt i en vald bana
 
-[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) om flödesvisualisering (4:56)
+[Videosjälvstudiekurs](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) om flödesvisualisering (4:56)
 
-## Medeldimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Mellandimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
 Du kan visa [flödet mellan dimensioner](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
 
