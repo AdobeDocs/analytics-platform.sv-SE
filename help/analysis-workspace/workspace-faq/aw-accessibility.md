@@ -2,11 +2,10 @@
 description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 2%
+source-wordcount: '636'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +47,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 
 ### Kortkommandon (snabbtangenter)
 
-[!UICONTROL Analysis Workspace] erbjuder en mängd  [kortkommandon ](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
+[!UICONTROL Analysis Workspace] erbjuder en mängd  [kortkommandon ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
 
 #### Navigering
 
@@ -69,7 +68,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 | Ctrl + Skift + D | Nytt datumintervall |
 | Ctrl + Skift + E | Nytt filter |
 | Ctrl + Z | Ångra |
-| Håll ned skift (i panelfilterdropzone) | Skapa ett [listrutefilter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| Håll ned skift (i panelfilterdropzone) | Skapa ett [listrutefilter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
 
 #### Demokratisering
 
@@ -90,7 +89,7 @@ En skärmläsare läser upp text som visas på datorskärmen. Den läser även i
 
 [!UICONTROL Analysis Workspace] eftersträvar WCAG 2.1-överensstämmelse, inklusive krav på färgkontrast.
 
-Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
+Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
 
 ## Obligatorisk fältvalidering i komponentbyggare
 
