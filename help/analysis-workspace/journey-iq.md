@@ -1,10 +1,9 @@
 ---
 title: Resa-IQ
 description: Förstå de funktioner som Journey IQ består av, en uppsättning funktioner som ingår i Adobe Analytics.
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Resans-IQ är en uppsättning funktioner som ger lättanvända, helt anpassningsbara visualiseringar och inställningar för att bättre förstå kundens upplevelse. Det gör att ni kan mäta varje kontaktyta i en kunds resa, även i alla kanaler. Använd de här funktionerna för att bättre förstå var kunderna ska engagera igen, behålla dem lojala och personalisera sina upplevelser längs vägen.
 
