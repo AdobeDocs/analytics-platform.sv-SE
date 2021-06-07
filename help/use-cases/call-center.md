@@ -2,10 +2,9 @@
 title: Importera callcenter och webbdata
 description: Lär dig hur du skapar en datauppsättning som länkar callcenter och webbplatsdata.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-translation-type: tm+mt
-source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -31,7 +30,7 @@ Customer Journey Analytics har den värdefulla och robusta möjligheten att komb
 
 ## Importera webb- och callcenterdata till plattformen
 
-Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
+Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 
 När du importerar data till plattformen kan följande tips hjälpa dig att få bättre insikter i de resulterande rapporterna:
 
