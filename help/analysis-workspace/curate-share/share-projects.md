@@ -3,11 +3,10 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace-delning
 title: Dela projekt
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 3%
+source-wordcount: '1054'
+ht-degree: 0%
 
 ---
 
@@ -15,13 +14,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Delning gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. Alla [kurationer](curate.md) som du har tillämpat återspeglas när mottagarna öppnar projektet.
 
 ## Projektroller {#Roles}
 
-Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 | Roll | Projektkontroll |
 |---|---|
@@ -34,7 +33,7 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 
 ### Ingen roll har tilldelats (mottagare av projektlänkar)
 
-Om en mottagare inte har tilldelats en roll och får en [länk](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**.
+Om en mottagare inte har tilldelats en roll och får en [länk](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**.
 
 ### Flera roller har tilldelats
 
@@ -57,20 +56,20 @@ När komponenterna har delats visas de i listrutan Komponenter på mottagarens a
 1. (Valfritt) Ange den här sidan som landningssida för mottagare.
 Den här inställningen kvarstår inte - det är en enkel åtgärd vid tidpunkten för delningen.
 1. Klicka på Dela.
-Du kan också klicka på **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. Om ett projekt redan har delats, kommer dessa knappar att säga **[!UICONTROL Update]** och **[!UICONTROL Curate & Update]**. Läs mer om [projektstrukturering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html).
+Du kan också klicka på **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. Om ett projekt redan har delats, kommer dessa knappar att säga **[!UICONTROL Update]** och **[!UICONTROL Curate & Update]**. Läs mer om [projektstrukturering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
 
 ![](assets/share-proj-modal.png)
 
 ## Dela till grupper med mottagare {#Groups}
 
-Alla användare kan dela projekt med grupper, som är en samling mottagare. I Adobe Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Alla användare kan dela projekt med grupper, som är en samling mottagare. I Adobe Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 * Administratörer kan dela till alla grupper, inklusive&quot;Alla&quot;.
 * Icke-administratörer kan dela grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
 
 ## Dela en projektlänk {#Links}
 
-Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. [Läs ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) mer om hur du skapar delningsbara länkar till arbetsyteprojekt.
+Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. [Läs ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) mer om hur du skapar delningsbara länkar till arbetsyteprojekt.
 
 ## Dela projekt i projektledaren {#Manager}
 
