@@ -2,10 +2,9 @@
 description: Lär dig hur du anger kontaktytorna för att skapa en flerdimensionell utfallssekvens.
 title: Konfigurera en utfallsvisualisering
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -18,7 +17,7 @@ Du kan till och med lägga till filter i en kontaktyta. Du kanske vill jämföra
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
-Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
 1. Dra en [!UICONTROL Fallout]-visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
 
@@ -59,7 +58,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
  </tbody> 
 </table>
 
-## Bortfallsinställningar {#section_0C7C89D72F0B4D6EB467F278AC979093}
+## Utfallsinställningar {#section_0C7C89D72F0B4D6EB467F278AC979093}
 
 | Inställning | Beskrivning |
 |--- |--- |
