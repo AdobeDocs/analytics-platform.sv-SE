@@ -1,20 +1,19 @@
 ---
 title: Utför grundläggande analys i Customer Journey Analytics
 description: Beskriver hur du använder grundläggande visualiseringar för att analysera data i Customer Journey Analytics
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '171'
 ht-degree: 1%
 
 ---
-
 
 # Utför grundläggande analys
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 När du har skapat anslutningar och datavyer kan du analysera de data du har tagit med hjälp av kraften och flexibiliteten i Analysis Workspace. Experimentera och dra i mått och mätvärden, ändra dimensionerna och måttattribueringsinställningar, egna namn, tidszon, sessionsinställningar osv.
 
@@ -29,4 +28,3 @@ Här är ett exempel på grundläggande visualiseringar i Workspace. Du kan till
 ![](assets/cja-basic-analysis.png)
 
 ![](assets/cja-basic-analysis2.png)
-
