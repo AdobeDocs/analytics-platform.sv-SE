@@ -3,10 +3,9 @@ description: Använd mallar i Workspace och skapa egna mallar.
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
-translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
@@ -15,13 +14,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan välja om du vill skapa ett projekt från:
 
 * **Tomt projekt (standard)**: Instruktioner finns i  [Skapa ett Analysis Workspace-projekt](/help/analysis-workspace/home.md).
 * **Standardmall**: Mallarna skapas av Adobe och levereras med produkten.
-* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats  [!UICONTROL Analysis Workspace: Save as Template] tillstånd i Admin Console. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
+* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats  [!UICONTROL Analysis Workspace: Save as Template] tillstånd i Admin Console. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
