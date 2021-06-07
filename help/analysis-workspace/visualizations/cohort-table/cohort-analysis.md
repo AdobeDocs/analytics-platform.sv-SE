@@ -2,10 +2,9 @@
 title: Vad är kohortanalys?
 description: Läs om kohortanalys i Analysis Workspace
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 
 [!UICONTROL Cohort Analysis] är tillgängligt för alla Adobe Analytics-kunder med åtkomsträttigheter till  [!UICONTROL Analysis Workspace].
 
-[Självstudievideo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html)  om kohortanalys (4:36)
+[Självstudievideo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html)  om kohortanalys (4:36)
 
 >[!IMPORTANT]
 >
