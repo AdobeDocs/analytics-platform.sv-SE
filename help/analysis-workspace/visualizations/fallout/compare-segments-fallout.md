@@ -3,10 +3,9 @@ description: Du kan skapa filter från en kontaktyta, lägga till filter som kon
 keywords: bortfall och filter;filter i bortfallsanalys;jämför filter i bortfall
 title: Använda filter i bortfallsanalys
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
 
@@ -41,7 +40,7 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
    Du kan nu använda det här filtret i vilket projekt som helst.
 
-## Lägg till ett filter som kontaktyta {#section_17611C1A07444BE891DC21EE8FC03EFC}
+## Lägga till ett filter som kontaktyta {#section_17611C1A07444BE891DC21EE8FC03EFC}
 
 Om du till exempel vill se hur användarna i USA trendar och påverkar utfallet drar du bara filtret för användare i USA till utfallet:
 
