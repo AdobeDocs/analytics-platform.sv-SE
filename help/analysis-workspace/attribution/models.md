@@ -2,10 +2,9 @@
 title: Attributmodeller och uppslagsfönster
 description: Hur olika typer av attribuering delar upp kredit mellan dimensionsposter.
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Attributkonceptet i Adobe Analytics kräver två komponenter:
 
@@ -49,7 +48,7 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 
 >[!NOTE]
 >
->**[!UICONTROL Custom lookback windows]** har för närvarande begränsad testning. Mer information finns i [Adobe Analytics-funktionsreleaser](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html).
+>**[!UICONTROL Custom lookback windows]** har för närvarande begränsad testning. Mer information finns i [Adobe Analytics-funktionsreleaser](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html).
 
 ## Exempel
 
