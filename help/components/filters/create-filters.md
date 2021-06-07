@@ -2,10 +2,9 @@
 title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -44,8 +43,8 @@ Det finns flera andra metoder för att tillämpa filter på ett projekt:
 | Åtgärd | Beskrivning |
 |--- |--- |
 | Skapa filter från markering | Skapa ett textbundet filter. Markera rader, högerklicka på markeringen och skapa sedan ett textbundet filter. Det här filtret gäller bara för det öppna projektet och sparas inte som ett CJA-filter. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka på *Skapa filter från markering*. |
-| Komponenter > Nytt filter | Visar Filter Builder. Mer information om filtrering finns i [Filter Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html). |
-| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Curate and Share](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) kan du lära dig hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
+| Komponenter > Nytt filter | Visar Filter Builder. Mer information om filtrering finns i [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html). |
+| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Curate and Share](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) kan du lära dig hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
 | Använd filter som dimensioner | Video: Använda filter som Dimensioner i Analysis Workspace |
 
 >[!VIDEO](https://video.tv.adobe.com/v/23974)
