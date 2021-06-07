@@ -2,10 +2,9 @@
 title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-translation-type: tm+mt
-source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -57,7 +56,7 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 
 När organisationen uppfyller alla krav och förstår sina begränsningar kan du följa de här stegen för att börja använda den i CJA.
 
-1. Importera önskade data till Adobe Experience Platform. Se [Skapa ett schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
+1. Importera önskade data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 1. Kontakta kontohanteraren för Adobe som innehåller följande:
    * En begäran om att aktivera flerkanalsanalys
    * Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för
