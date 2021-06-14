@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
+source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ När du skapar en datavy måste du antingen skapa mått och mått från schemael
 | [!UICONTROL Name] | Det är obligatoriskt att ge datavyn ett namn. |
 | [!UICONTROL Description] | En detaljerad beskrivning är inte obligatorisk, men rekommenderas. |
 | [!UICONTROL Time zone] | Välj vilken tidszon du vill att dina data ska visas i. |
-| [!UICONTROL Tags] | Med taggar kan du ordna datavyer i kategorier. |
-| [!UICONTROL Containers] | Du kan byta namn på behållarna här för att bestämma hur de visas i ett arbetsyteprojekt som baseras på den här datavyn. Behållare används i filter och utfall/flöde och så vidare för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Tags] | [!UICONTROL Tags] kan du ordna datavyer i kategorier. |
+| [!UICONTROL Containers] | Du kan byta namn på behållarna här för att bestämma hur de visas i ett arbetsyteprojekt som baseras på den här datavyn. [!UICONTROL Containers] används i filter och utfall/flöde och så vidare för att definiera hur brett eller smalt omfånget eller sammanhanget är. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
 | [!UICONTROL Person container name is…] | [!UICONTROL Person] (standard). Behållaren [!UICONTROL Person] innehåller alla besök och sidvisningar för besökare inom en viss tidsperiod. Du kan byta namn på den här behållaren till &quot;Användare&quot; eller något annat uttryck som du föredrar. |
 | [!UICONTROL Session container name is…] | [!UICONTROL Session] (standard). Med [!UICONTROL Session]-behållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som du föredrar. |
 | [!UICONTROL Event container name is…] | [!UICONTROL Event] (standard). Behållaren [!UICONTROL Event] definierar vilka sidhändelser som du vill ta med eller exkludera från ett filter. |
@@ -71,7 +71,7 @@ Du kan till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en
 | [!UICONTROL Field Name] | Schemafältets namn. |
 | [!UICONTROL Dataset type] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken datamängdstyp (händelse, sökning eller profil) som komponenten kommer från. |
 | [!UICONTROL Dataset] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken typ av fält som komponenten kommer från (t.ex. String, Integer, osv.). Det här fältet kan innehålla flera datauppsättningar. |
-| [!UICONTROL Schema Data Type] | Avser om komponenten är en sträng, ett heltal osv. |
+| [!UICONTROL Schema Data Type] | Avser om komponenten är en sträng, ett heltal och så vidare.  Även om du kan använda en schemafälttyp som stöds i Platform stöds inte alla fälttyper i CJA. Du kan lägga till datauppsättningar i CJA med andra schemafälttyper än strängar eller heltal, men CJA kan inte visa dessa data. Dessutom är endast strängar tillåtna i uppslagsuppsättningar just nu. |
 | [!UICONTROL Component ID] | Obligatoriskt. [CJA API](https://adobe.io/cja-apis/docs) använder det här fältet för att referera till komponenten. Du kan klicka på redigeringsikonen och ändra det här komponent-ID:t. Om du ändrar det här komponent-ID:t bryts alla befintliga arbetsyteprojekt som innehåller den här komponenten.<br>Om du någonsin skapar en annan datavy som använder ett annat fält för en pageTitle-dimension, kan du byta namn på den och göra dimensionen tvärdatavyn kompatibel. |
 | [!UICONTROL Schema Path] | Obligatoriskt. Ett icke-redigerbart fält som visar schemasökvägen som komponenten kommer från. |
 | [!UICONTROL Hide component in reporting] | Standard = av. Gör att du kan strukturera ut komponenten från datavyn när den används i rapporter. Detta påverkar inte behörigheter, bara komponentkurering. Du kan med andra ord dölja komponenten för icke-administratörer i rapporter. Administratörer kan fortfarande komma åt den genom att klicka på [!UICONTROL Show All Components] i ett Analysis Workspace-projekt. |
@@ -95,9 +95,9 @@ Formatinställningarna gäller endast för mätvärden.
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL Set attribution] | Här kan du ange de attributinställningar som du vill använda för det här måttet som standard när det används. Den här standardinställningen kan åsidosättas i en frihandstabell eller i ett beräknat mått. |
+| [!UICONTROL Set attribution] | Här kan du ange de attributinställningar som du vill använda för det här måttet som standard när det används. Den här standardinställningen kan åsidosättas i ett [!UICONTROL Freeform Table]-värde eller i ett beräknat mått. |
 | [!UICONTROL Attribution model] | Gör att du kan ange en standardattribueringsmodell - bara aktiv när du aktiverar inställningen [!UICONTROL Use Non-default attribution model]. Standardvärdet är [!UICONTROL Last Touch]. Alternativen är: Senaste beröring, första beröring, linjär, deltagande, samma beröring, U-Shaped, J-kurva, omvänd J, tidsfördröjning, anpassad, algoritmisk. Vissa av dessa alternativ skapar ytterligare fält som måste fyllas i, till exempel Anpassad eller Tidsåtgång. Du kan skapa flera mätvärden med samma fält - det innebär att du kan ha ett [!UICONTROL Last touch]-intäktsmått och ett [!UICONTROL First Touch]-intäktsmått, men baserat på samma intäktsfält i schemat. |
-| [!UICONTROL Lookback window] | Gör att du kan ange ett standardfönster för sökning till ett mätvärde - bara aktivt när du aktiverar inställningen [!UICONTROL Use Non-default attribution model]. Alternativen är: Person (rapporteringsfönster), session, anpassad. När du har valt Anpassad får du också möjlighet att välja valfritt antal dagar/veckor/månader/osv. (upp till 90 dagar), precis som Attribution IQ. Du kan ha flera mätvärden med samma schemafält, men var och en med ett separat uppslagsfönster. |
+| [!UICONTROL Lookback window] | Gör att du kan ange ett standardfönster för sökning till ett mätvärde - bara aktivt när du aktiverar inställningen [!UICONTROL Use Non-default attribution model]. Alternativen är: [!UICONTROL Person] (rapporteringsfönster), [!UICONTROL Session], [!UICONTROL Custom]. När [!UICONTROL Custom] är markerat ger vi dig också möjlighet att välja valfritt antal dagar/veckor/månader/osv. (upp till 90 dagar), precis som [!UICONTROL Attribution IQ]. Du kan ha flera mätvärden med samma schemafält, men var och en med ett separat uppslagsfönster. |
 
 ### Konfigurera inställningar för Inkludera/exkludera värden
 
