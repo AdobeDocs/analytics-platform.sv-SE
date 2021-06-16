@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
+source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Du kan till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en
 | [!UICONTROL Field Name] | Schemafältets namn. |
 | [!UICONTROL Dataset type] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken datamängdstyp (händelse, sökning eller profil) som komponenten kommer från. |
 | [!UICONTROL Dataset] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken typ av fält som komponenten kommer från (t.ex. String, Integer, osv.). Det här fältet kan innehålla flera datauppsättningar. |
-| [!UICONTROL Schema Data Type] | Avser om komponenten är en sträng, ett heltal och så vidare.  Även om du kan använda en schemafälttyp som stöds i Platform stöds inte alla fälttyper i CJA. Du kan lägga till datauppsättningar i CJA med andra schemafälttyper än strängar eller heltal, men CJA kan inte visa dessa data. Dessutom är endast strängar tillåtna i uppslagsuppsättningar just nu. |
+| [!UICONTROL Schema Data Type] | Avser om komponenten är en sträng, ett heltal och så vidare.  Även om du kan använda en schemafälttyp som stöds i Platform stöds inte alla fälttyper i CJA. Följande datatyper stöds: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` och `Boolean`. Observera att endast strängar tillåts i Uppslagsuppsättningar för närvarande. |
 | [!UICONTROL Component ID] | Obligatoriskt. [CJA API](https://adobe.io/cja-apis/docs) använder det här fältet för att referera till komponenten. Du kan klicka på redigeringsikonen och ändra det här komponent-ID:t. Om du ändrar det här komponent-ID:t bryts alla befintliga arbetsyteprojekt som innehåller den här komponenten.<br>Om du någonsin skapar en annan datavy som använder ett annat fält för en pageTitle-dimension, kan du byta namn på den och göra dimensionen tvärdatavyn kompatibel. |
 | [!UICONTROL Schema Path] | Obligatoriskt. Ett icke-redigerbart fält som visar schemasökvägen som komponenten kommer från. |
 | [!UICONTROL Hide component in reporting] | Standard = av. Gör att du kan strukturera ut komponenten från datavyn när den används i rapporter. Detta påverkar inte behörigheter, bara komponentkurering. Du kan med andra ord dölja komponenten för icke-administratörer i rapporter. Administratörer kan fortfarande komma åt den genom att klicka på [!UICONTROL Show All Components] i ett Analysis Workspace-projekt. |
