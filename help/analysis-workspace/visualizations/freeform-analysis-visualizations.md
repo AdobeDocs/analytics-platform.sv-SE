@@ -3,9 +3,9 @@ description: Visuellt presentera data i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1042'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
-Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html) eller genom högerklicksmenyn i arbetsflödet.
+Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) eller genom högerklicksmenyn i arbetsflödet.
 
 ![](assets/viz-rail.png)
 
