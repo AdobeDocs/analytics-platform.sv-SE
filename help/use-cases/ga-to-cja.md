@@ -2,10 +2,9 @@
 title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
-translation-type: tm+mt
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
+source-git-commit: 316819116e9b47110763479af4e8504a2bffaff3
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -51,26 +50,28 @@ Mer information finns i [dessa instruktioner](https://support.google.com/analyti
 
 GA-data lagrar varje post i sina data som en användarsession i stället för som enskilda händelser. Du måste skapa en SQL-fråga för att omvandla data från den universella analysen till ett Experience-Platform-kompatibelt format. Du använder funktionen &quot;unest&quot; för fältet &quot;hits&quot; i GA-schemat. Här är SQL-exemplet som du kan använda:
 
-`SELECT
-*,
-timestamp_seconds(`` + hit.time) AS `` 
-FROM
-(
+```
 SELECT
-fullVisitorId,
-visitNumber,
-visitId,
-visitStartTime,
-trafficSource,
-socialEngagementType,
-channelGrouping,
-device,
-geoNetwork,
-hit 
+   *,
+   timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
 FROM
-`visitStartTimestampyour_bq_table_2021_04_*`,
-UNNEST(hits) AS hit 
-)`
+   (
+      SELECT
+         fullVisitorId,
+         visitNumber,
+         visitId,
+         visitStartTime,
+         trafficSource,
+         socialEngagementType,
+         channelGrouping,
+         device,
+         geoNetwork,
+         hit 
+      FROM
+         `your_bq_table_2021_04_*`,
+         UNNEST(hits) AS hit 
+   )
+```
 
 När frågan är klar sparar du de fullständiga resultaten i en BigQuery-tabell.
 
