@@ -2,9 +2,9 @@
 title: Vad är kohortanalys?
 description: Läs om kohortanalys i Analysis Workspace
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 * Få idéer för A/B-testning inom områden som priser, uppgraderingsalternativ osv.
 * Visa en [!UICONTROL Cohort Analysis]-rapport i en rapport för guidad analys.
 
-[!UICONTROL Cohort Analysis] är tillgängligt för alla Adobe Analytics-kunder med åtkomsträttigheter till  [!UICONTROL Analysis Workspace].
+[!UICONTROL Cohort Analysis] är tillgängligt för alla Customer Journey Analytics-kunder med åtkomsträttigheter till  [!UICONTROL Analysis Workspace].
 
 [Självstudievideo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html)  om kohortanalys (4:36)
 
@@ -64,7 +64,7 @@ Mäter den tid som har gått före och efter det att inkluderingshändelsen intr
 
 ### [!UICONTROL Custom Dimension] Kohort
 
-Skapa kohorter baserat på en vald dimension, och inte tidsbaserade kohorter, som är standard. Använd dimensioner som [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region] eller någon annan dimension i Adobe Analytics för att visa hur kvarhållningen ändras baserat på de olika värdena för de här dimensionerna.
+Skapa kohorter baserat på en vald dimension, och inte tidsbaserade kohorter, som är standard. Använd dimensioner som [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region] eller någon annan dimension i Customer Journey Analytics för att visa hur kvarhållningen ändras baserat på de olika värdena för de här dimensionerna.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
