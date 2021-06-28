@@ -2,10 +2,9 @@
 title: Lång detaljdimensionsartikel
 description: Beskriver dimensionsposten "Long Tail" och varför den visas i rapporter.
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -22,7 +21,7 @@ Om någon enskild server som bearbetar en delmängd av data stöter på mer än 
 
 ## Skillnader mellan&quot;långrev&quot; och&quot;lågtrafik&quot;
 
-I tidigare versioner av Adobe Analytics användes en annan bearbetningsarkitektur. Data bearbetades när de samlades in. Dimensioner placerades under Lågtrafik efter att en dimension uppnådde 500 kB unika värden och tillämpade mer aggressiv filtrering vid 1 MB unika värden. Det unika värdet återställdes i början av varje kalendermånad. Bearbetade uppgifter var permanenta. det fanns inget sätt att få bort befintliga data från lågtrafik.
+I tidigare versioner av Analytics användes en annan bearbetningsarkitektur. Data bearbetades när de samlades in. Dimensioner placerades under Lågtrafik efter att en dimension uppnådde 500 kB unika värden och tillämpade mer aggressiv filtrering vid 1 MB unika värden. Det unika värdet återställdes i början av varje kalendermånad. Bearbetade uppgifter var permanenta. det fanns inget sätt att få bort befintliga data från lågtrafik.
 
 I CJA placeras dimensionsobjekt bara i &quot;Long Tail&quot; om en enskild bearbetningsserver innehåller fler än 500 kB unika värden. Bearbetade data är inte permanenta, vilket innebär att du kan minska dimensionsobjektet Lång stjärna genom att ändra rapporten.
 
