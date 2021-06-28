@@ -2,9 +2,9 @@
 title: Utför grundläggande analys i Customer Journey Analytics
 description: Beskriver hur du använder grundläggande visualiseringar för att analysera data i Customer Journey Analytics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Här är ett exempel på grundläggande visualiseringar i Workspace. Du kan till
 
 * Skapa en trendrapport över intäkter online eller i butik som jämför de två datakällorna över tiden.
 
-* Avbilda målgruppsstorleken efter datakällor, t.ex. annonsvisningsdata, Adobe Analytics-data, e-postdata, POS-data, callcenter-data och undersökningsdata.
+* Avbilda målgruppsstorleken efter datakällor, t.ex. annonsvisningsdata, Customer Journey Analytics-data, e-postdata, POS-data, callcenterdata och undersökningsdata.
 
 ![](assets/cja-basic-analysis.png)
 
