@@ -3,9 +3,9 @@ description: Lär dig hur du skapar delningsbara länkar till projekt eller visu
 keywords: Analysis Workspace-delning
 title: Skapa delningsbara länkar
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Användare som får en länk måste logga in på Adobe Analytics innan de kan komma åt projektet.
+Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Användare som får en länk måste logga in på Customer Journey Analytics innan de kan komma åt projektet.
 
 ## Hämta projektlänk {#project-link}
 
@@ -24,7 +24,7 @@ Om du vill dela en länk till hela projektet går du till **[!UICONTROL Share > 
 
 ![](assets/get-project-link.png)
 
-## Hämta panel eller visualiseringslänk {#panel-link}
+## Hämta panel- eller visualiseringslänk {#panel-link}
 
 Du kan också dela en länk till en viss del av ett projekt, till exempel en panel eller en enskild visualisering. Detta kallas ibland för koncernintern länkning. Detta kan vara användbart för att dra användarnas uppmärksamhet till viktiga insikter i projektet.
 
