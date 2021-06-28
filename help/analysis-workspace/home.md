@@ -3,9 +3,9 @@ keywords: Analysis Workspace
 title: Översikt över Analysis Workspace
 description: Översikt över Analysis Workspace funktioner
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ Om du bara har några minuter kan du titta på den här korta översikten för a
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Logga in på Adobe Analytics {#login}
+## Logga in Customer Journey Analytics {#login}
 
-Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics på [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
+Om du vill börja använda Analysis Workspace loggar du in på Customer Journey Analytics på [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
 
 ![](assets/login-analytics.png)
 
-## Använd självstudiekursen {#training-tutorial}
+## Använda självstudiekursen Utbildning {#training-tutorial}
 
 När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Starta självstudiekursen genom att klicka på **[!UICONTROL Create New Project]** och sedan välja **Utbildningskurs** inom det nya projektets modala.
 
@@ -36,7 +36,7 @@ När du har loggat in bör du använda Analysis Workspace självstudiekurs, som 
 
 ## Skapa ett nytt projekt {#new-project}
 
-När självstudiekursen är klar kan du börja skapa ditt första projekt. **Det nya projektet modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [ett tomt mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela analysen från webbläsaren eller mobilappen Adobe Analytics dashboards.
+När självstudiekursen är klar kan du börja skapa ditt första projekt. **Det nya projektet modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [ett tomt mobilstyrkort](/help/mobile-app/curator.md), beroende på om du tänker dela din analys från webbläsaren eller mobilappen Customer Journey Analytics dashboards.
 
 ![](assets/create-new-project.png)
 
