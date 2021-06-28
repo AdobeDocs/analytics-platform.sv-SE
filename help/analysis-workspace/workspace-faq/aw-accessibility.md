@@ -2,16 +2,16 @@
 description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '637'
 ht-degree: 1%
 
 ---
 
 # Tillgänglighet i Analysis Workspace
 
-Läs om stödet för tillgänglighet i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Adobe Analytics.
+Läs om stödet för hjälpmedel i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Customer Journey Analytics.
 
 Med hjälpmedel avses att göra produkter användbara för personer med funktionshinder som syn-, hörsel-, kognitiv-, motor- eller andra funktionshinder. Exempel på hjälpmedelsfunktioner för programprodukter är skärmläsarstöd, textmotsvarigheter för grafik, kortkommandon, ändringar av visningsfärger till hög kontrast osv.
 
