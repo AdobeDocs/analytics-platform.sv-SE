@@ -2,9 +2,9 @@
 title: Översikt över beräknade mätvärden
 description: Läs mer om
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '481'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ Här följer en jämförelse av funktionerna för beräknade värden och avancer
 |--- |--- |
 | Beräknad metrisk Builder | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till inline-filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala besökare med internationella besökare.</li><li>Använd statistiska funktioner.</li><li> Tillhandahåll detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
 | Hanterare för beräknade mätvärden | <ul><li>Dela mätvärden med andra.</li><li>Godkänn och strukturera mätvärden.</li><li>Ordna (tagga) mätvärden så att andra kan hitta dem.</li><li>Ta bort mätvärden.</li><li>Byt namn på mätvärden.</li></ul> |
-| API för beräknade värden | En del av API-uppsättningen för Adobe Analytics 2.0. |
+| API för beräknade värden | En del av CJA API-uppsättningen. |
 
 ## Mallar för beräknade värden i CJA
 
