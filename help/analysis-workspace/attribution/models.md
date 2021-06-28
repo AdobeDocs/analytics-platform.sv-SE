@@ -2,9 +2,9 @@
 title: Attributmodeller och uppslagsfönster
 description: Hur olika typer av attribuering delar upp kredit mellan dimensionsposter.
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Attributkonceptet i Adobe Analytics kräver två komponenter:
+Attributkonceptet i Customer Journey Analytics kräver två komponenter:
 
 * **Attributionsmodell:** Modellen beskriver distributionen av konverteringar till träffar i en grupp. Till exempel första beröringen eller sista beröringen.
 * **Fönster för attribueringssökning:** Uppslagsfönstret beskriver vilka grupper av träffar som beaktas för varje modell. Exempel: besök eller besökare.
@@ -45,10 +45,6 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 * **fönster för besökarsökning:** ser ut vid alla besök fram till den 1:e i månaden av det aktuella datumintervallet. Besöksfönster är breda, eftersom de kan omfatta många besök. Vid sökning efter besökare beaktas alla värden från början av månaden i rapportens datumintervall. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september.
 
 * **Anpassat fönster för sökning:** Gör att du kan utöka attribueringsfönstret utanför rapportdatumintervallet upp till maximalt 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
-
->[!NOTE]
->
->**[!UICONTROL Custom lookback windows]** har för närvarande begränsad testning. Mer information finns i [Adobe Analytics-funktionsreleaser](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html).
 
 ## Exempel
 
