@@ -2,10 +2,10 @@
 title: Översikt över attribuering
 description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsobjekt.
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 42%
+source-wordcount: '421'
+ht-degree: 43%
 
 ---
 
@@ -20,7 +20,7 @@ Attribution ger analytiker möjlighet att anpassa hur dimensionsposter får kred
 1. En besökare på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. Lägg produkten i kundvagnen, men köp den inte.
 2. Nästa dag ser du ett inlägg på sociala medier från en av deras vänner, klickar på länken och slutför sedan köpet.
 
-I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering. Det är tillgängligt för alla organisationer på Adobe Analytics Ultimate, Prime, Select och Foundation. Om du är osäker på vilken typ av kontrakt du har med Adobe kontaktar du din organisations Account Manager.
+I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering.
 
 ## Attribution IQ värde
 
@@ -28,7 +28,7 @@ Kundresor är inte linjära, och de är dessutom ofta oförutsägbara. Alla kund
 
 ![Problemet med Attribution IQ](assets/attribution_iq_problem.png)
 
-Adobe Analytics förbättrar attribueringen eftersom ni kan:
+Customer Journey Analytics förbättrar attribueringen genom att låta dig:
 
 * Definiera attribuering för mer än betalda medier: alla mått, mätvärden, kanaler och händelser kan användas i modellerna (till exempel intern sökning), inte bara marknadsföringskampanjer.
 * Jämföra attribueringsmodeller utan begränsningar: jämför dynamiskt hur många modeller ni vill.
