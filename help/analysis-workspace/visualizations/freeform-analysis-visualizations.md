@@ -3,16 +3,16 @@ description: Visuellt presentera data i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 4%
 
 ---
 
 # Översikt över visualiseringar
 
-Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
+Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Customer Journey Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
 Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) eller genom högerklicksmenyn i arbetsflödet.
 
@@ -94,7 +94,7 @@ Ytterligare funktioner för en visualisering är tillgängliga genom att högerk
 | Hämta visualiseringslänk | Gör att du kan dirigera någon till en viss visualisering i ett projekt. När användaren klickar på länken måste mottagaren logga in innan den dirigeras till den exakta visualisering som är länkad till den. |
 | Börja om | (Works for Flow, Venn, Histogram) Tar bort konfigurationen för den aktuella visualiseringen så att du kan konfigurera om den från början. |
 
-## Skapa visuell ikon {#quick-viz}
+## Ikonen Skapa visuell {#quick-viz}
 
 Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat tre filterrader skapas ett Venndiagram.
 
