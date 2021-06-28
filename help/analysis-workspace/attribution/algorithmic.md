@@ -2,10 +2,10 @@
 title: Algoritmisk attribuering
 description: Information om algoritmisk attribueringsmodell.
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 34a1e7cea518e39ee665470dc3e1087d728b654d
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 1%
+source-wordcount: '290'
+ht-degree: 2%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
-
->[!NOTE]
->
->**[!UICONTROL Algorithmic attribution]** har för närvarande begränsad testning. Mer information finns i [Adobe Analytics-funktionsreleaser](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html).
 
 Algoritmisk [attribueringsmodell](models.md) i Analysis Workspace skiljer sig från andra modeller på så sätt att den använder statistiska tekniker för att allokera kredit över dimensionsobjekten i din rapport eller frihandstabell. Precis som alla andra attribueringsmodeller i Analysis Workspace kan den användas på alla mått och mätvärden och har stöd för obegränsade filter och uppdelningar och distribuerar 100 % av konverteringarna till de mått som anges i tabellen (kallas även&quot;bråkdelsattribuering&quot;).
 
