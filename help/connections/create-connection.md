@@ -2,9 +2,9 @@
 title: Skapa en anslutning
 description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
+source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '1899'
 ht-degree: 2%
 
 ---
@@ -15,9 +15,9 @@ Med en anslutning kan du integrera datauppsättningar från [!DNL Adobe Experien
 
 Klicka [här](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) om du vill se en videoöversikt.
 
-## Behörigheter krävs
+## Nödvändiga behörigheter
 
-Om du vill skapa en Customer Journey Analytics-anslutning (CJA) behöver du följande behörigheter i [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Om du vill skapa en CJA-anslutning behöver du följande behörigheter i [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Datamodellering: Visa scheman, hantera scheman
@@ -33,7 +33,9 @@ Customer Journey Analytics
 
 ## Välj sandlåda och datauppsättningar
 
-1. Gå till [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Gå till [https://analytics.adobe.com](https://analytics.adobe.com) och logga in med din Adobe ID.
+
+1. Klicka på ikonen [!DNL Customer Journey Analytics].
 
 1. Klicka på fliken **[!UICONTROL Connections]**.
 
@@ -53,10 +55,7 @@ Customer Journey Analytics
 
    (Om du har många datauppsättningar att välja bland kan du söka efter de rätta med hjälp av sökfältet **[!UICONTROL Search datasets]** ovanför listan med datauppsättningar.)
 
-   CJA baseras på datauppsättningar från Experience Platform. Även om du kan använda en schemafälttyp som stöds i Platform stöds inte alla fälttyper i CJA. Du kan lägga till datauppsättningar i CJA med andra schemafälttyper än strängar eller numeriska värden, men CJA kan inte visa dessa data. Dessutom är endast strängar tillåtna i uppslagsuppsättningar just nu.
-Om du letar efter ett fält att lägga till i en datavy efter att du har lagt till datauppsättningen i en anslutning, är standardtaggen [!UICONTROL Contains data] tillgänglig för alla fält i datauppsättningarna. Den här taggen gör datavyer mer hanterbara eftersom den bara innehåller schemafält som har data i datauppsättningarna.
-
-## Konfigurera datauppsättning
+## 2. Konfigurera datauppsättning
 
 Till höger kan du nu konfigurera de datauppsättningar som du har lagt till.
 
