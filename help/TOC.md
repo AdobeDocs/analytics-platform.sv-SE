@@ -10,11 +10,10 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: tm+mt
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
+source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 42%
+source-wordcount: '449'
+ht-degree: 41%
 
 ---
 
@@ -25,12 +24,13 @@ ht-degree: 42%
 + Customer Journey Analytics översikt {#cja-overview}
    + [Customer Journey Analytics - översikt](getting-started/cja-overview.md)
    + [Komma igång](getting-started/cja-getting-started.md)
-   + [Vanliga frågor](getting-started/cja-faq.md)
+   + [Frågor och svar](getting-started/cja-faq.md)
    + [Funktioner i Customer Journey Analytics](getting-started/cja-aa.md)
+   + [Borttagningskonsekvenser](getting-started/cja-deletion.md)
    + [CJA-ordlista](getting-started/cja-glossary.md)
 + Anslutningar {#cja-connections}
    + [Skapa en anslutning](connections/create-connection.md)
-   + [Hantera anslutningar](connections/manage-connection.md)
+   + [Hantera anslutningar](connections/manage-connections.md)
    + [Beräkna anslutningsstorlek](connections/estimate-connection-size.md)
    + [Kombinerade händelsedatamängder](connections/combined-dataset.md)
    + Flerkanalsanalys {#cca}
@@ -116,7 +116,7 @@ ht-degree: 42%
          + [Statistiska tekniker som används för avvikelseidentifiering](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Användarinställningar](analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
-      + [Vanliga frågor](analysis-workspace/workspace-faq/faq.md)
+      + [Frågor och svar](analysis-workspace/workspace-faq/faq.md)
       + [Optimera prestanda för Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Felmeddelanden](analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar i Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
