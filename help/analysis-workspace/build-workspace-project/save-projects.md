@@ -2,9 +2,9 @@
 description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som, spara som mall och öppna tidigare versioner.
 title: Spara projekt
 feature: Grundläggande om arbetsytan
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 734f1fe702398034090e25c251b5ff193db8381e
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
