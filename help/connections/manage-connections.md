@@ -2,7 +2,7 @@
 title: Hantera anslutningar
 description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
 mini-toc-levels: 3
-source-git-commit: fb0b35173d7a2b0daa17c34272b2b2b271095f4a
+source-git-commit: ec76734f270666d13db28fd60ffdf62c04e378bf
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -18,7 +18,7 @@ När administratörsanvändare har [skapat en eller flera anslutningar](/help/co
 * Du kan **identifiera eventuella datameddelanden** på grund av felaktig konfiguration. Saknar du några rader? Om ja, vilka rader saknas och varför? Har du felkonfigurerat anslutningar och orsakat saknade data i CJA?
 
 >[!NOTE]
-> Den här funktionen kommer att vara allmänt tillgänglig den 26 juli 2021.
+> Den här funktionen kommer att vara allmänt tillgänglig den 19 augusti 2021.
 
 ## Anslutningshanteraren {#connections-manager}
 
