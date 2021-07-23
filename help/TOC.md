@@ -10,10 +10,10 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
+source-git-commit: a2e8f8a48078bfe247645b4ca57e10bf4f4e3fab
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 41%
+source-wordcount: '448'
+ht-degree: 42%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 41%
       + [Hantera beräknade värden](components/calc-metrics/manage.md)
       + [Grundfunktioner](components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](components/calc-metrics/cm-adv-functions.md)
-   + Datumintervall {cja-date-range}
+   + Datumintervall {#cja-date-ranges}
       + [Översikt över datumintervall](components/date-ranges/overview.md)
       + [Skapa ett datumintervall](components/date-ranges/create.md)
       + [Hantera datumintervall](components/date-ranges/manage.md)
