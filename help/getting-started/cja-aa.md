@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
+source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1075'
 ht-degree: 4%
 
 ---
@@ -38,6 +38,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan Adobe Admin Console produktadministratörer och användare. Endast produktadministratörer kan 1) skapa/uppdatera/ta bort anslutningar eller datavyer, 2) uppdatera/ta bort projekt, filter eller beräkningstal som har skapats av andra användare och 3) dela ett Workspace-projekt med alla användare |
 | Virtual Report Suites | Ringde nu [datavyer](/help/data-views/create-dataview.md). |
 | VRS-komponenturval | Nu en del av datavyer. |
+| A4T | Stöd ges via fält i [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 
 ## Stöds med caveats
 
@@ -85,7 +86,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Funktion | Anteckningar |
 | --- | --- |
-| A4T | Support är ännu inte planerat. |
 | Activity Map | Support är ännu inte planerat. |
 | Advertising Cloud | Support är ännu inte planerat. |
 | Classification Rule Builder | Support är ännu inte planerat. |
