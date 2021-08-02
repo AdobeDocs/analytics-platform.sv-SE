@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
+source-git-commit: 423cf7d8a73c307bef42a62e91e7b64219f02670
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1082'
 ht-degree: 4%
 
 ---
@@ -17,6 +17,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Adobe Analytics Feature | Anmärkningar om stöd |
 | --- | --- |
+| A4T | Stöd finns i fälten i [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 | Avvikelseidentifiering | Fullt stöd |
 | Attribution IQ | Fullt stöd |
 | Beräknade mätvärden | Observera att alla befintliga kalkylmått i det traditionella Analysis Workspace inte kommer att porteras till CJA. |
@@ -32,13 +33,12 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
 | Bearbetning av rapporttid | CJA använder sig enbart av Report Time Processing. |
-| API-åtkomst för rapportering | Finns nu med [CJA API](https://www.adobe.io/cja-apis/docs/). |
+| API-åtkomst för rapportering | Tillgängligt via [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Schemalagda rapporter/projekt | Fullt stöd |
 | Segment | Nu kallat &quot;Filter&quot; - lägg märke till att befintliga segment i traditionella Analysis Workspace inte kommer att porteras till CJA. |
-| Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan Adobe Admin Console produktadministratörer och användare. Endast produktadministratörer kan 1) skapa/uppdatera/ta bort anslutningar eller datavyer, 2) uppdatera/ta bort projekt, filter eller beräkningstal som har skapats av andra användare och 3) dela ett Workspace-projekt med alla användare |
+| Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) produktadministratörer och användare. Endast produktadministratörer kan <ul><li>Skapa/uppdatera/ta bort anslutningar eller datavyer</li><li>Uppdatera/ta bort projekt, filter eller beräkningstal som skapats av andra användare, och</li><li>Dela ett Workspace-projekt med alla användare.</li></ul> |
 | Virtual Report Suites | Ringde nu [datavyer](/help/data-views/create-dataview.md). |
 | VRS-komponenturval | Nu en del av datavyer. |
-| A4T | Stöd ges via fält i [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 
 ## Stöds med caveats
 
