@@ -2,10 +2,10 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: 423cf7d8a73c307bef42a62e91e7b64219f02670
+source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 4%
+source-wordcount: '1177'
+ht-degree: 3%
 
 ---
 
@@ -17,39 +17,40 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Adobe Analytics Feature | Anmärkningar om stöd |
 | --- | --- |
-| A4T | Stöd finns i fälten i [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 | Avvikelseidentifiering | Fullt stöd |
 | Attribution IQ | Fullt stöd |
-| Beräknade mätvärden | Observera att alla befintliga kalkylmått i det traditionella Analysis Workspace inte kommer att porteras till CJA. |
-| Sammanfogning mellan olika enheter och kanaler | Se [Flerkanalsanalys](/help/connections/cca/overview.md). |
+| Beräknade mätvärden | Fullt stöd; Observera att befintliga beräknade värden i den traditionella Analysis Workspace inte kommer att porteras till CJA. |
+| Sammanfogning mellan olika enheter och kanaler | Fullt stöd; Se [Flerkanalsanalys](/help/connections/cca/overview.md). |
 | Datumjämförelser | Fullt stöd |
-| Datumintervall | Stöd för anpassade kalendrar planeras. |
-| Mått | CJA utnyttjar XDM och har stöd för obegränsade dimensioner och är inte knuten till anpassade eVars-variabler eller props från traditionell Analytics. |
+| Mått | Fullt stöd; CJA utnyttjar XDM och har stöd för obegränsade dimensioner. CJA är inte knutet till de anpassade eVars- eller propparna hos traditionella Adobe Analytics. |
 | Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, operativsystem etc.) | CJA tillhandahåller dessa dimensioner internt så länge som bas-XDM-fälten (till exempel användaragent eller enhets-ID) fylls i. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Läs vår [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Borttagning av GDPR | Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform] - CJA ärver alla dataändringar [!UICONTROL Experience Platform] som görs i underliggande datauppsättningar. |
-| Lista variabler/listutkast | CJA utnyttjar XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
-| Mätvärden | CJA utnyttjar Experience Data Model (XDM) och stöder obegränsade mätvärden och är inte knutet till anpassade framgångshändelser i traditionell Analytics. Observera att vissa standardvärden har bytt namn från traditionell analys: Besökare = människor, besök = sessioner, träffar = händelser. |
+| Borttagning av GDPR | Fullt stöd; Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform]. CJA ärver alla dataändringar [!UICONTROL Experience Platform] gör i underliggande datauppsättningar. |
+| Lista variabler/listutkast | Fullt stöd; CJA utnyttjar XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
+| Mätvärden | Fullt stöd; CJA utnyttjar Experience Data Model (XDM) och stöder obegränsade mätvärden och är inte knutet till anpassade framgångshändelser i traditionell Analytics. Observera att vissa standardvärden har bytt namn från traditionell analys: Besökare = människor, besök = sessioner, träffar = händelser. |
 | PDF-export | Fullt stöd |
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
-| Bearbetning av rapporttid | CJA använder sig enbart av Report Time Processing. |
-| API-åtkomst för rapportering | Tillgängligt via [CJA API](https://www.adobe.io/cja-apis/docs/). |
+| Bearbetning av rapporttid | Fullt stöd; CJA använder sig enbart av Report Time Processing. |
+| API-åtkomst för rapportering | Fullt stöd; Tillgängligt via [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Schemalagda rapporter/projekt | Fullt stöd |
-| Segment | Nu kallat &quot;Filter&quot; - lägg märke till att befintliga segment i traditionella Analysis Workspace inte kommer att porteras till CJA. |
-| Användarbehörigheter/dataåtkomstkontroller | CJA skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) produktadministratörer och användare. Endast produktadministratörer kan <ul><li>Skapa/uppdatera/ta bort anslutningar eller datavyer</li><li>Uppdatera/ta bort projekt, filter eller beräkningstal som skapats av andra användare, och</li><li>Dela ett Workspace-projekt med alla användare.</li></ul> |
-| Virtual Report Suites | Ringde nu [datavyer](/help/data-views/create-dataview.md). |
-| VRS-komponenturval | Nu en del av datavyer. |
+| Segment | Fullt stöd; Nu kallat &quot;Filter&quot; - lägg märke till att befintliga segment i traditionella Analysis Workspace inte kommer att porteras till CJA. |
+| Användarbehörigheter/dataåtkomstkontroller | Fullt stöd; CJA skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) produktadministratörer och användare. Endast produktadministratörer kan <ul><li>Skapa/uppdatera/ta bort anslutningar eller datavyer</li><li>Uppdatera/ta bort projekt, filter eller beräkningstal som skapats av andra användare, och</li><li>Dela ett Workspace-projekt med alla användare.</li></ul> |
+| Virtual Report Suites | Fullt stöd; Ringde nu [datavyer](/help/data-views/create-dataview.md). |
+| VRS-komponenturval | Fullt stöd; Nu en del av datavyer. |
 
 ## Stöds med caveats
 
 | Funktion | Anteckningar |
 | --- | --- |
+| A4T | Stöd finns i fälten i [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 | Klassificeringar | Kallas nu&quot;Sök efter datauppsättningar&quot;. Klassifikationer som används i Analytics kan importeras till Experience Platform och CJA med Data Connector för Analytics-klassificeringar. Uppslagsdatauppsättningar kan också överföras direkt till AEP och göras tillgängliga i CJA. |
 | Skräddarsydd professionalisering | Stöd för alla anpassade sessioneringsfunktioner förutom mobilbakgrundstötar. |
 | Kundattribut | De kallas nu&quot;profildatauppsättningar&quot; och importeras inte automatiskt från Experience Cloud, utan måste överföras till AEP innan de blir tillgängliga i CJA. |
+| Datumintervall | Alla funktioner för datumintervall stöds, förutom för anpassade kalenderfunktioner som planeras. |
 | Enhet, webbläsare, teknikdimensioner | Dessa dimensioner inkluderas automatiskt när en AEP-datauppsättning innehåller specifika XDM-schemafält och följer XDM Experience Event-klassen. |
 | Poster, avslutningar och använd tid för mått och mätvärden | Stöds (Poster och avslutningar kallas nu för Sessionsstart och Sessionsslut) och beräknas på ett något annorlunda sätt. |
 | Inställningar för beständighet av eVar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Dimensioner som anges i datavyer är begränsade till högst 90 dagars beständighet och stöder inte obegränsad beständighet. |
+| GeoSegmenteringsdimensioner | Alla GeoSegmentation/geografi som samlas in i Adobe Analytics flödar till CJA via Analytics Data Connector. Implementeringar som inte använder Analytics Data Connector, t.ex. de som använder AEP Web SDK för digital datainsamling, kommer inte att ha det totala antalet geografiska sökningar som utförs automatiskt (land och stat stöds, stad och postnummer stöds inte). |
 | Marknadsföringskanaler | Marknadsföringskanalernas data flödar till CJA via Analytics Data Connector. Reglerna för marknadsföringskanaler måste fortfarande konfigureras i traditionella Adobe Analytics. Vissa regler stöds inte. Mer information finns i [dokumentationen för CJA Marketing Channels](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
 | Produktvariabel | I Experience Platform kan användare använda en array med objekttypsfält i ett dataset-schema för att tillgodose detta användningsfall. Inom CJA kan kunderna använda valfritt antal produktvariabler och begränsas inte till en enda variabel som i Adobe Analytics. |
 | Projektdelning | Projektdelning stöds endast mellan CJA-användare - det finns ingen projektdelning mellan CJA och det traditionella Analysis Workspace. |
