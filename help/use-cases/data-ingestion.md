@@ -2,9 +2,9 @@
 title: Alternativ för dataintag för Customer Journey Analytics
 description: Förstå olika sätt att importera data till Customer Journey Analytics
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Det här arbetsflödet använder Adobe Analytics Data Connector och varierar ber
 
 [Adobe Experience Platform Web ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) SDK är ett JavaScript-bibliotek på klientsidan som gör att Adobe Experience Cloud kunder kan interagera med de olika tjänsterna i Experience Cloud via Adobe Experience Platform Edge Network.
 
-1. [Konfigurera AEP Web SDK-tillägget i ](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) Launchför att skicka data till Adobe Experience Cloud från webbegenskaper via Adobe Experience Platform Edge Network.
+1. [Konfigurera AEP Web SDK-tillägget i ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=en) Launchför att skicka data till Adobe Experience Cloud från webbegenskaper via Adobe Experience Platform Edge Network.
 1. Använd [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) för att skapa en eller flera anslutningar och datavyer som informerar din flerkanalsrapportering.
 
 ## Inmatningsdata med batchinmatning och direktuppspelning
