@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: f2e13469faf540d997fcac4687aa51533b543c84
+source-git-commit: bf3744ce700adf29e63066c3f15a72f0b20d01b1
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2739'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Här kan du ange hur ett mätvärde ska fungera i rapporter.
 | --- | --- |
 | [!UICONTROL Count values] | Endast för booleska värden gör den här inställningen att du kan ange om du vill [!UICONTROL Count True], [!UICONTROL Count False] eller [!UICONTROL Count True or False] som måttvärde. Standardvärdet är [!UICONTROL Count True]. Detta ger dig det faktiska värdet för ett mätvärde, till exempel &quot;50&quot; om det fanns ett ordervärde på 50. |
 | [!UICONTROL Count instances] | Här kan du ange om ett numeriskt fält eller ett datumtypsfält som används som ett mätvärde ska räkna tiden som det ställdes in i stället för själva värdet.<br> Om du vill lägga till förekomsterna av ett numeriskt fält och bara vill lägga till antalet gånger som ett fält har angetts, i stället för det faktiska värdet  ** i fältet.<br>Detta är användbart om du till exempel vill skapa ett  [!UICONTROL Orders] mätvärde från ett  [!UICONTROL Revenue] fält. Om intäkten har ställts in vill vi räkna med en enda order i stället för det numeriska intäktsbeloppet. |
-| [!UICONTROL Lower case] | *Nytt*  - För strängtypsdimensioner. Med den här inställningen kan du styra om Customer Journey Analytics ska hantera dimensionsvärden som skiftlägeskänsliga. Det möjliggör borttagning av dubbletter av rader som har samma värde, men med ett annat skiftläge. På den här skärmbilden visas ett exempel på en skiftlägeskänslig dimension i arbetsytan:<br>![skiftlägeskänslig dimension](assets/case-sens-workspace.png) |
+| [!UICONTROL Lower case] | *Nytt*  - För dimensioner av typen &quot;string&quot;. Med den här inställningen kan du styra om Customer Journey Analytics ska hantera dimensionsvärden som skiftlägeskänsliga. Det möjliggör borttagning av dubbletter av rader som har samma värde, men med ett annat skiftläge. Om du markerar **[!UICONTROL Lower case]** rapporteras alla instanser av en dimension med samma värde som gemener. På den här skärmbilden visas vad som händer om du inte **kontrollerar** [!UICONTROL Lower case]. Observera hur&quot;liverpool&quot;,&quot;Liverpool&quot; och&quot;LIVERPOOL&quot; resulterar i tre separata radartiklar i rapporteringen:<br>![skiftlägeskänslig dimension](assets/case-sens-workspace.png) |
 
 ### Konfigurera [!UICONTROL No Value Options]-inställningar
 
@@ -140,7 +140,7 @@ Observera också att det du anger i det här fältet kan användas för speciell
 | [!UICONTROL If shown, call No value...] | Här kan du byta namn på **[!UICONTROL No value]** till något annat. |
 | [!UICONTROL Don't show No value by default] | Visar inte det här värdet vid rapportering. |
 | [!UICONTROL Show No value by default] | Visar det här värdet vid rapportering. |
-| [!UICONTROL Treat No value as a value] | Den här inställningen ersätter tomma värden i data med texten som du angav under [!UICONTROL If shown, call No value ...]. Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. Observera att när du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla förekomster av strängen &quot;Red&quot; som visas i själva data också att hamna under samma radobjekt som du har angett. |
+| [!UICONTROL Treat No value as a value] | Den här inställningen ersätter tomma värden i data med texten som du angav under [!UICONTROL If shown, call No value ...]. Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på **[!UICONTROL No value]**-objektet till &quot;Desktop&quot;. Observera att när du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla instanser av strängen &quot;Red&quot; som visas i själva data att hamna under samma radobjekt som du har angett. |
 
 ### Konfigurera inställningar för beständighet
 
