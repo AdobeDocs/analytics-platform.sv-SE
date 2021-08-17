@@ -2,9 +2,9 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: bf3744ce700adf29e63066c3f15a72f0b20d01b1
+source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2754'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Här kan du ange hur ett mätvärde ska fungera i rapporter.
 | --- | --- |
 | [!UICONTROL Count values] | Endast för booleska värden gör den här inställningen att du kan ange om du vill [!UICONTROL Count True], [!UICONTROL Count False] eller [!UICONTROL Count True or False] som måttvärde. Standardvärdet är [!UICONTROL Count True]. Detta ger dig det faktiska värdet för ett mätvärde, till exempel &quot;50&quot; om det fanns ett ordervärde på 50. |
 | [!UICONTROL Count instances] | Här kan du ange om ett numeriskt fält eller ett datumtypsfält som används som ett mätvärde ska räkna tiden som det ställdes in i stället för själva värdet.<br> Om du vill lägga till förekomsterna av ett numeriskt fält och bara vill lägga till antalet gånger som ett fält har angetts, i stället för det faktiska värdet  ** i fältet.<br>Detta är användbart om du till exempel vill skapa ett  [!UICONTROL Orders] mätvärde från ett  [!UICONTROL Revenue] fält. Om intäkten har ställts in vill vi räkna med en enda order i stället för det numeriska intäktsbeloppet. |
-| [!UICONTROL Lower case] | *Nytt*  - För dimensioner av typen &quot;string&quot;. Med den här inställningen kan du styra om Customer Journey Analytics ska hantera dimensionsvärden som skiftlägeskänsliga. Det möjliggör borttagning av dubbletter av rader som har samma värde, men med ett annat skiftläge. Om du markerar **[!UICONTROL Lower case]** rapporteras alla instanser av en dimension med samma värde som gemener. På den här skärmbilden visas vad som händer om du inte **kontrollerar** [!UICONTROL Lower case]. Observera hur&quot;liverpool&quot;,&quot;Liverpool&quot; och&quot;LIVERPOOL&quot; resulterar i tre separata radartiklar i rapporteringen:<br>![skiftlägeskänslig dimension](assets/case-sens-workspace.png) |
+| [!UICONTROL Lower case] | *Nytt*  - För dimensioner av typen &quot;string&quot;. Med den här inställningen kan du styra om Customer Journey Analytics ska hantera dimensionsvärden som skiftlägeskänsliga. Det möjliggör borttagning av dubbletter av rader som har samma värde, men med ett annat skiftläge. Om du markerar **[!UICONTROL Lower case]** rapporteras alla instanser av en dimension med samma värde som gemener. På den här skärmbilden visas vad som händer om du **inte** markerar [!UICONTROL Lower case] jämfört med om du **do** markerar kryssrutan. I den vänstra tabellen observerar du hur&quot;liverpool&quot;,&quot;Liverpool&quot; och&quot;LIVERPOOL&quot; resulterar i tre separata radartiklar vid rapportering. I den högra tabellen har samma värden tagits bort och faller under ett radobjekt:<br>![skiftlägeskänslig dimension](assets/case-sens-workspace.png) |
 
 ### Konfigurera [!UICONTROL No Value Options]-inställningar
 
@@ -151,7 +151,7 @@ Mer information finns i avsnittet [Persistence](/help/data-views/persistence.md)
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
 | [!UICONTROL Set persistence] | Växla nyckel |
-| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Om du vill att ett värde ska finnas kvar (liknande eVars i traditionell Analytics) är det här du skulle ange det. Den enda viktiga skillnaden är att den maximala beständighet du kan ange är 90 dagar. [!UICONTROL Never expire] är inte heller ett alternativ. |
+| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Om du vill att ett värde ska finnas kvar är det här du ställt in det. Den maximala beständighet du kan ange är 90 dagar. [!UICONTROL Never expire] är inte heller ett alternativ. |
 | [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). [!UICONTROL Metric] gör att du kan ange något av de definierade måtten som förfallodatum för den här dimensionen (t.ex. ett  [!UICONTROL Purchase] mått).<br>**Obs**: Du kan inte ange en anpassad förfallotid för en dimension när du väljer en allokering av  [!UICONTROL All]. |
 
 ### Konfigurera inställningar för värdepaketering
