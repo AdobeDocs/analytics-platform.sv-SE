@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: f6ec268d3820a7bcbcc84521e486c26e8ea9329b
+source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '452'
 ht-degree: 41%
 
 ---
@@ -107,6 +107,7 @@ ht-degree: 41%
       + [Översikt över attribuering](analysis-workspace/attribution/overview.md)
       + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)
       + [Algoritmisk attribuering](analysis-workspace/attribution/algorithmic.md)
+      + [Bästa praxis för attribuering](analysis-workspace/attribution/best-practices.md)
       + [Vanliga frågor](analysis-workspace/attribution/faq.md)
    + Virtual Analyst {#virtual-analyst}
       + [Översikt över Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
