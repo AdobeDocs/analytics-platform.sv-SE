@@ -1,9 +1,9 @@
 ---
 title: Bästa praxis för attribuering
 description: Vilka är de bästa sätten att fatta beslut om en attribueringsmodell?
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Hur ni väljer rätt attribueringsmodell för er organisation beror på ett anta
 >[!NOTE]
 >Denna analys måste ske innan du väljer en attribueringsmodell.
 
-Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en) (för rådata) eller Analysis Workspace underlätta din förståelse av
+Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som Analysis Workspace och att hämta in datakällor från flera kanaler (t.ex. Impressions-data) hjälpa dig att förstå
 
 * Hur många kunder tar sig an olika marknadsföringskanaler innan de konverterar?
 * Andelen/fördelningen av dessa beteenden.
@@ -53,6 +53,3 @@ Eftersom det är mycket svårt att validera ett stort antal möjliga hypoteser o
 ## Andra överväganden
 
 * Du kan behöva använda en datavetare istället för att förlita dig på Analysis Workspace.
-* Du kan förlita dig på rådata, som i dataflöden från Adobe.
-* Du kan till exempel använda [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en) om du vill ta hänsyn till dina Impressions-data.
-
