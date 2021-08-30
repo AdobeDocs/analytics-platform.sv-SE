@@ -2,9 +2,9 @@
 title: Alternativ för dataintag för Customer Journey Analytics
 description: Förstå olika sätt att importera data till Customer Journey Analytics
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
-source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -17,18 +17,11 @@ Du har ett antal alternativ när det gäller att hämta in data till Customer Jo
 
 Det här arbetsflödet använder Adobe Analytics Data Connector och varierar beroende på om du använder DTM eller Launch som tagghanterare.
 
-### Via dynamisk tagghantering (DTM)
-
-1. [Skapa ett datalager](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html), om du inte redan gjort det. Ett datalager är ett ramverk av JavaScript-objekt på platsen som innehåller alla variabelvärden som används i implementeringen. Det ger bättre kontroll och enklare underhåll vid implementeringen.
-1. Använd [DTM](https://experienceleague.adobe.com/docs/analytics/implementation/other/dtm/dtm-implementation-overview.html) för att implementera kod på din webbplats för datainsamling, om du inte redan gjort det. Dynamic Tag Management är ett enda datalager som överför data från flera källor.
-1. Skapa en [Adobe Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) i Adobe Experience Platform. Den här källkopplingen kommer att importera dina Analytics-data till Experience Platform i ett standardiserat ramverk som heter [Experience Data Model (XDM) System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
-1. Använd [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) för att skapa en eller flera anslutningar och datavyer som informerar din flerkanalsrapportering.
-
 ### Via Launch
 
 1. [Skapa ett datalager](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html), om du inte redan gjort det. Ett datalager är ett ramverk av JavaScript-objekt på platsen som innehåller alla variabelvärden som används i implementeringen. Det ger bättre kontroll och enklare underhåll vid implementeringen.
 1. Använd [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html) för att implementera kod på din webbplats för datainsamling, om du inte redan gjort det. Launch är en tagghanteringslösning som gör att ni kan driftsätta Analytics-kod tillsammans med andra taggningskrav. Launch erbjuder integrering med andra lösningar och produkter och låter er driftsätta anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
-1. Skapa en [Adobe Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) i Adobe Experience Platform. Den här källkopplingen kommer att importera dina Analytics-data till Experience Platform i ett standardiserat ramverk som heter [Experience Data Model (XDM) System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+1. Skapa en [Adobe Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) i Adobe Experience Platform. Den här källkopplingen kommer att importera dina Analytics-data till Experience Platform i ett standardiserat ramverk som heter [Experience Data Model (XDM) System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
 1. Använd [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) för att skapa en eller flera anslutningar och datavyer som informerar din flerkanalsrapportering.
 
 ## Importera data via Adobe Experience Platform Web SDK och Edge Network

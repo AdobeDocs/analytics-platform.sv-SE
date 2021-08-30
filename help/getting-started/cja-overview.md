@@ -2,7 +2,7 @@
 title: Customer Journey Analytics - översikt
 description: Lär dig hur du kan använda Analysis Workspace med data från Experience Platform i Customer Journey Analytics.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Den första releasen av Customer Journey Analytics innehåller många av de funk
 
 ## Jämföra CJA med enhetsövergripande analys
 
-[Enhetsövergripande ](https://experienceleague.adobe.com/docs/analytics/components/cda/cda-home.html) analyser kan integreras med Adobe Experience Platform identitetstjänst, antingen med Co-op Graph eller Private Graph, för att identifiera hur digitala enheter kan mappas till människor. Det finns för Adobe Analytics Ultimate-kunder.
+[Enhetsövergripande ](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) analyser kan integreras med Adobe Experience Platform identitetstjänst, antingen med Co-op Graph eller Private Graph, för att identifiera hur digitala enheter kan mappas till människor. Det finns för Adobe Analytics Ultimate-kunder.
 
 CJA kan å andra sidan integreras med Adobe Experience Platform datauppsättningar och möjliggör flerkanalsanalys i Analysis Workspace. Även om CJA ännu inte är integrerat med Co-op- eller Private-identitetsdiagram kan du&quot;sammanföra ditt eget ID&quot; för att sammanfoga datauppsättningar, och dessa datauppsättningar kan gå utöver digitala data och inkludera både online- och offlinekontaktpunkter. CJA-kraven beskrivs närmare nedan.
 

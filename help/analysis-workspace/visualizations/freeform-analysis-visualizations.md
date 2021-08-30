@@ -3,9 +3,9 @@ description: Visuellt presentera data i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1034'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuel
 
 Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) eller genom högerklicksmenyn i arbetsflödet.
 
-![](assets/viz-rail.png)
+![Visualiseringsspår](assets/viz-rail.png)
 
 Följande visualiseringstyper finns i Analysis Workspace:
 
@@ -44,7 +44,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
 Varje visualisering har sina egna inställningar som du kan hantera. Om du vill komma åt [!UICONTROL Visualization Settings] klickar du på kugghjulsikonen [!UICONTROL Visualization Settings].
 
-![](assets/settings.png)
+![Inställningar](assets/settings.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -70,18 +70,16 @@ Så här redigerar du en förklaringsetikett:
 1. Högerklicka på någon av förklaringsetiketterna.
 1. Klicka på **[!UICONTROL Edit Label]**.
 
-   ![](assets/edit-label.png)
+   ![Redigera etikett](assets/edit-label.png)
 
 1. Ange den nya etikettexten.
 1. Tryck på **[!UICONTROL Enter]** för att spara.
-
-Här är en [länk till en video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om det här ämnet.
 
 ## Högerklicka på menyn {#right-click}
 
 Ytterligare funktioner för en visualisering är tillgängliga genom att högerklicka på rubriken för visualisering. Inställningarna varierar beroende på visualisering. Några av de tillgängliga inställningarna är:
 
-![](assets/right-click.png)
+![Högerklicka](assets/right-click.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -98,4 +96,4 @@ Ytterligare funktioner för en visualisering är tillgängliga genom att högerk
 
 Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat tre filterrader skapas ett Venndiagram.
 
-![](assets/quick-viz.png)
+![Snabb visualisering](assets/quick-viz.png)
