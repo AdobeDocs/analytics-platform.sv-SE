@@ -2,10 +2,9 @@
 title: Vad är dimensionskonsistens i Customer Journey Analytics?
 description: Dimensionens beständighet är en kombination av allokering och förfallodatum. Tillsammans avgör de hur eller om dimensionsvärdena kvarstår från en händelse till nästa.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
-translation-type: tm+mt
-source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
+source-git-commit: ab81c7fff2b7e942491fd417cfa115dd428f222d
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -27,7 +26,7 @@ Allokering använder en omformning på det underliggande värdet som du använde
 
 ### [!UICONTROL Most recent] allokering
 
-Den senaste allokeringen kommer att behålla det senaste (efter tidsstämpel) värdet i dimensionen. Eventuella efterföljande värden som förekommer i samma session ersätter det tidigare beständiga värdet. Observera att om&quot;Inget värde&quot; har valts för den här dimensionen ersätts de tomma värdena med&quot;Inget värde&quot; innan persistence används. Här följer ett före och efter-exempel på [!UICONTROL Most recent]-allokering, förutsatt att [!UICONTROL Session] används för förfallodatum och att alla händelser inträffar inom en [!UICONTROL Session]:
+Den senaste allokeringen innehåller det senaste (per tidsstämpel) värdet i dimensionen. Eventuella efterföljande värden som förekommer i samma session ersätter det tidigare beständiga värdet. Observera att om&quot;Inget värde&quot; har valts för den här dimensionen ersätts de tomma värdena med&quot;Inget värde&quot; innan persistence används. Här följer ett före och efter-exempel på [!UICONTROL Most recent]-allokering, förutsatt att [!UICONTROL Session] används för förfallodatum och att alla händelser inträffar inom en [!UICONTROL Session]:
 
 | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -36,7 +35,7 @@ Den senaste allokeringen kommer att behålla det senaste (efter tidsstämpel) v�
 
 ### [!UICONTROL Original] allokering
 
-Ursprunglig allokering kommer att behålla det ursprungliga värdet (med tidsstämpel) som finns i dimensionen för en förfalloperiod. Här följer ett före och efter-exempel på [!UICONTROL Original]-allokering:
+Ursprunglig allokering består av det ursprungliga värdet (med tidsstämpel) som finns i dimensionen för en förfalloperiod. Här följer ett före och efter-exempel på [!UICONTROL Original]-allokering:
 
 | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -60,7 +59,7 @@ Det finns fyra sätt att förfalla ett dimensionsvärde:
 
 * Session (standard): Upphör att gälla efter en viss session.
 * Person: Upphör att gälla i slutet av rapportfönstret.
-* Tid: Du kan ange att dimensionsvärdet ska förfalla efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. Vid tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
+* Tid: Du kan ange att dimensionsvärdet ska förfalla efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. När du använder tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
 * Mått: Du kan ange vilken som helst av de definierade måtten som förfallodatum för den här dimensionen (t.ex. ett köpmått). Den här förfallotiden är endast tillgänglig för allokeringsmodellerna Original och Senaste.
 
 ### Vad är skillnaden mellan allokering och attribuering?

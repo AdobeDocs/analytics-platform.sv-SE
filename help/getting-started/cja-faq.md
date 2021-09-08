@@ -2,9 +2,9 @@
 title: Vanliga frågor om Customer Journey Analytics
 description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: e605682ee4df06589ec343a27941f5d6a5928d7d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1411'
 ht-degree: 1%
 
 ---
@@ -75,3 +75,16 @@ När det gäller borttagning av data är vi oroade för sex typer av komponenter
 | Ta bort en batch **medan den importeras** till [!UICONTROL Customer Journey Analytics] | Om det bara finns en batch i datauppsättningen visas inga data eller delar av data från den gruppen i [!UICONTROL Customer Journey Analytics]. Intag kommer att återställas. Om det till exempel finns 5 batchar i datauppsättningen och 3 av dem redan har importerats när datauppsättningen togs bort, visas data från dessa tre batchar i [!UICONTROL Customer Journey Analytics]. |
 | Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
 | Ta bort en datavy i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att alla arbetsyteprojekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
+
+## 6. Att tänka på när du sammanfogar rapportsviter i CJA
+
+Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) bör du överväga dessa förändringar när du sammanfogar två eller flera av Adobe Analytics rapportsviter.
+
+| Problem | Villkor |
+| --- | --- |
+| Variabler | Variabler som [!UICONTROL eVars] kanske inte passar i alla rapportsviter. eVar1 i rapportsviten 1 kan till exempel peka på **[!UICONTROL Page]**. I rapportserie 2 kan eVar1 peka på **[!UICONTROL Internal Campaign]**, vilket leder till blandad och felaktig rapportering. |
+| [!UICONTROL Sessions] och  [!UICONTROL People] antal | De dedupliceras i alla rapporteringsprogram. Därför kanske antalet inte matchar. |
+| Metrisk deduplicering | Duplicerar instanser av ett mått (till exempel [!UICONTROL Orders]) om flera rader har samma transaktions-ID (till exempel [!UICONTROL Purchase ID]). Detta förhindrar att nyckeltal räknas för mycket. Därför är det inte säkert att mätvärden som [!UICONTROL Orders] sammanställs i alla rapportsviter. |
+| Valuta | Valutakonvertering stöds ännu inte i CJA. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
+| [!UICONTROL Persistence] | [Persistenceenceextends ](/help/data-views/persistence.md) across report suites, which impact  [!UICONTROL filters],  [!UICONTROL attribution]osv. Siffrorna kanske inte läggs ihop korrekt. |
+| [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När du kombinerar flera klassificeringsfiler till en enda [!UICONTROL lookup]-datauppsättning kan du stöta på problem. |
