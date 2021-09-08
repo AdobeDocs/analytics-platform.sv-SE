@@ -2,10 +2,9 @@
 title: CJA - dokumentationsuppdateringar
 description: Listar innehållsuppdateringar för den dokumentation för Customer Journey Analytics som angetts sedan december 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-translation-type: tm+mt
-source-git-commit: b552fc55e2c4167c1ff903a0ac2a8d6559839606
+source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '399'
 ht-degree: 5%
 
 ---
@@ -16,6 +15,11 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| September 2021 | Nytt avsnitt om [konsekvenserna av att sammanfoga rapportsviter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#6.-Consi-when-merging-report-suites-in-cja) i CJA. |
+| Augusti 2021 | Nytt avsnitt om förbättrad [Anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en) i CJA. |
+| Augusti 2021 | Nytt avsnitt om [skiftlägeskänslighet i datavy-dimensioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-behavior-settings) |
+| Juni 2021 | Ny dokumentation om [tidigare projektversioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version) i Workspace. |
+| April 2021 | Ny dokumentation om stöd för schemalagda projekt i Workspace. |
 | April 2021 | Nya ämnen om [upplevelsen datavyer](/help/data-views/data-views.md). |
 | April 2021 | Nya ämnen om [inhämtning av Google Analytics-data](/help/use-cases/ga-to-cja.md) och [analys av data](/help/use-cases/ga-to-cja-reporting.md) |
 | April 2021 | Tillagt ämne på [schemalagda rapporter](/help/analysis-workspace/curate-share/t-schedule-report.md) i arbetsytan |
