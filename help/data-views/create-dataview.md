@@ -2,14 +2,14 @@
 title: Så här skapar du en ny datavy i Customer Journey Analytics.
 description: Beskriver alla inställningar som behövs för att skapa nya datavyer.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
+source-git-commit: fb8de8c65b44fd57ca5da6d993bb02b8574f7f47
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2759'
 ht-degree: 0%
 
 ---
 
-# Skapa en ny datavy
+# Skapa en datavy
 
 När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. Genom att skapa mätvärden eller dimensioner får du en enorm flexibilitet. Tidigare var antagandet att om du hade datauppsättningar i Adobe Experience Platform användes strängfält som dimensioner och numeriska fält som mått. För att kunna ändra något av dessa fält var du tvungen att redigera schemat i Platform. Gränssnittet för datavyer tillåter nu en [frihandsdefinition av mått och mått](/help/data-views/data-views.md). Mer användningsexempel finns i [Datavyer använder exempel](/help/data-views/data-views-usecases.md).
 
@@ -125,7 +125,11 @@ Här kan du ange hur ett mätvärde ska fungera i rapporter.
 | --- | --- |
 | [!UICONTROL Count values] | Endast för booleska värden gör den här inställningen att du kan ange om du vill [!UICONTROL Count True], [!UICONTROL Count False] eller [!UICONTROL Count True or False] som måttvärde. Standardvärdet är [!UICONTROL Count True]. Detta ger dig det faktiska värdet för ett mätvärde, till exempel &quot;50&quot; om det fanns ett ordervärde på 50. |
 | [!UICONTROL Count instances] | Här kan du ange om ett numeriskt fält eller ett datumtypsfält som används som ett mätvärde ska räkna tiden som det ställdes in i stället för själva värdet.<br> Om du vill lägga till förekomsterna av ett numeriskt fält och bara vill lägga till antalet gånger som ett fält har angetts, i stället för det faktiska värdet  ** i fältet.<br>Detta är användbart om du till exempel vill skapa ett  [!UICONTROL Orders] mätvärde från ett  [!UICONTROL Revenue] fält. Om intäkten har ställts in vill vi räkna med en enda order i stället för det numeriska intäktsbeloppet. |
-| [!UICONTROL Lower case] | *Nytt*  - För dimensioner av typen &quot;string&quot;. Med den här inställningen kan du styra om Customer Journey Analytics ska hantera dimensionsvärden som skiftlägeskänsliga. Det möjliggör borttagning av dubbletter av rader som har samma värde, men med ett annat skiftläge. Om du markerar **[!UICONTROL Lower case]** rapporteras alla instanser av en dimension med samma värde som gemener. På den här skärmbilden visas vad som händer om du **inte** markerar [!UICONTROL Lower case] jämfört med om du **do** markerar kryssrutan. I den vänstra tabellen observerar du hur&quot;liverpool&quot;,&quot;Liverpool&quot; och&quot;LIVERPOOL&quot; resulterar i tre separata radartiklar vid rapportering. I den högra tabellen har samma värden tagits bort och faller under ett radobjekt:<br>![skiftlägeskänslig dimension](assets/case-sens-workspace.png) |
+| [!UICONTROL Lower case] | Används med strängdimensioner. Raderar rader som har samma värde men olika fall. Om det här alternativet är aktiverat rapporteras alla instanser av en dimension med samma värde som gemener. Din datauppsättning innehåller till exempel värdena `"liverpool"`, `"Liverpool"` och `"LIVERPOOL"` i en strängdimension. Om [!UICONTROL Lower case] är aktiverat kombineras alla tre värdena till `"liverpool"`. Om det är inaktiverat behandlas alla tre värden som distinkta värden:<br>![skiftlägeskänslig dimension](assets/case-sens-workspace.png)<br> |
+
+>[!NOTE]
+>
+>Om du aktiverar [!UICONTROL Lower case] för en sökdatauppsättningsdimension kan det finnas flera uppslagsvärden för samma identifierare. Om den här konflikten inträffar använder CJA det första ASCII-sorterade värdet (versalvärden före gemener). Adobe rekommenderar att du inte använder uppslagsdatauppsättningar som innehåller samma värde när [!UICONTROL Lower case] är aktiverat.
 
 ### Konfigurera [!UICONTROL No Value Options]-inställningar
 
