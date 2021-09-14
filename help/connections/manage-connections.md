@@ -3,9 +3,9 @@ title: Hantera anslutningar
 description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
+source-git-commit: d099c2559eea68aa1f44d345b103618f55fd0559
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,9 @@ Här kan du:
 * Identifiera konfigurationsproblem som leder till överhoppade eller borttagna poster.
 * Se när data är tillgängliga för rapportering.
 
+>[!IMPORTANT]
+>Data som har importerats före den 13 augusti 2021 visas inte i den här [!UICONTROL Connections]-dialogrutan.
+
 Här beskrivs widgetar och inställningar:
 
 ![Visa anslutningsinformation](assets/conn-details.png)
@@ -88,11 +91,11 @@ Här beskrivs widgetar och inställningar:
 | --- | --- |
 | Datauppsättningsväljare | Gör att du kan välja en eller alla datauppsättningar i anslutningen. Du kan inte markera datauppsättningar i flera steg. Standardvärdet är [!UICONTROL All datasets]. |
 | Kalender-/datumintervall | Datumintervallet anger när du lade till data i anslutningen. Alla standardförinställningar för kalendrar ingår. Du kan anpassa datumintervallet, men inga anpassade datumintervall visas i listrutan. |
-| [!UICONTROL Records available] widget | Representerar det totala antalet rader som är tillgängliga för rapportering, **för hela anslutningen**. Antalet är oberoende av eventuella kalenderinställningar. Den ändras om du väljer en datauppsättning från datauppsättningsväljaren eller genom att markera en datauppsättning i tabellen. (Observera att det finns en fördröjning på 1-2 timmar för att visa data i rapporter, när de har lagts till.) |
-| [!UICONTROL Metrics] widget | Sammanfattar de poster som lagts till/hoppats över/tagits bort och antalet batchar som lagts till **för den datamängd och det datumintervall som du har valt**. |
-| [!UICONTROL Records added] widget | Anger hur många rader som har lagts till under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Uppdaterades var 10:e minut. |
-| [!UICONTROL Records skipped] widget | Anger hur många rader som hoppades över under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Orsaker till att hoppa över poster är: Tidsstämplar saknas, person-ID saknas osv. Uppdaterades var 10:e minut. |
-| [!UICONTROL Records deleted] widget | Anger hur många rader som togs bort under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Någon kan till exempel ha tagit bort en datauppsättning i Experience Platform. Uppdaterades var 10:e minut. |
+| [!UICONTROL Records of event data available] widget | Representerar det totala antalet händelsedatamängdsrader som är tillgängliga för rapportering, **för hela anslutningen**. Antalet är oberoende av eventuella kalenderinställningar. Den ändras om du väljer en datauppsättning från datauppsättningsväljaren eller genom att markera en datauppsättning i tabellen. (Observera att det finns en fördröjning på 1-2 timmar för att visa data i rapporter, när de har lagts till.) |
+| [!UICONTROL Metrics] widget | Sammanfattar de händelseposter som lagts till/hoppats över/tagits bort, och antalet batchar som lagts till **för den datamängd och det datumintervall som du har valt**. |
+| [!UICONTROL Records added] widget | Anger hur många rader som har lagts till under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Uppdaterades var 10:e minut. **Obs**: Data för  **[!UICONTROL Records added]** inkluderar endast händelsedata just nu, inte profil- eller sökdata. |
+| [!UICONTROL Records skipped] widget | Anger hur många rader som hoppades över under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Orsaker till att hoppa över poster är: Tidsstämplar saknas, person-ID saknas osv. Uppdaterades var 10:e minut. **Obs**: Data för  **[!UICONTROL Records skipped]** inkluderar endast händelsedata just nu, inte profil- eller sökdata. |
+| [!UICONTROL Records deleted] widget | Anger hur många rader som togs bort under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Någon kan till exempel ha tagit bort en datauppsättning i Experience Platform. Uppdaterades var 10:e minut. **Obs**: Data för  **[!UICONTROL Records deleted]** inkluderar endast händelsedata just nu, inte profil- eller sökdata. |
 | Sökruta för datauppsättning | Du kan söka efter datauppsättningsnamn eller [!UICONTROL Dataset ID]. |
 | [!UICONTROL Datasets] | Visar de datauppsättningar som ingår i anslutningen. Du kan klicka på hyperlänken om du vill visa alla datauppsättningar i anslutningen. |
 | [!UICONTROL Dataset ID] | Detta ID genereras automatiskt av Adobe Experience Platform. |
@@ -114,10 +117,11 @@ Här beskrivs widgetar och inställningar:
 | [!UICONTROL Import new data] | Anger om nya datagrupper ska läggas till i historiska data (bakåtfyllnad) eller inte. |
 | **Högerspåret på datauppsättningsnivå** |  |
 | [!UICONTROL Dataset description] | Beskriver parametrarna för varje datauppsättning i den här anslutningen. |
-| [!UICONTROL Records available] | Representerar det totala antalet rader som har infogats för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. (Undantaget är att när du skapar en helt ny anslutning kommer det att finnas [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-travel-analytics). |
-| [!UICONTROL Records added] | Hur många rader som lades till under den valda tidsperioden. |
-| [!UICONTROL Records skipped] | Hur många rader hoppades över under intag under den valda tidsperioden. |
-| [!UICONTROL Record skipped errors] | Orsaken till varför poster hoppades över anges här. De kan innehålla saknade tidsstämplar, person-ID saknas osv. |
+| [!UICONTROL Records available] | Representerar det totala antalet rader som kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. (Undantaget är att när du skapar en helt ny anslutning kommer det att finnas [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-travel-analytics). |
+| [!UICONTROL Records added] | Hur många rader som lades till under den valda tidsperioden. **Obs**: Data för  **[!UICONTROL Records added]** inkluderar endast händelsedata just nu, inte profil- eller sökdata. |
+| [!UICONTROL Records skipped] | Hur många rader hoppades över under intag under den valda tidsperioden. **Obs**: Data för  **[!UICONTROL Records skipped]** inkluderar endast händelsedata just nu, inte profil- eller sökdata. |
+| [!UICONTROL Records deleted] | Hur många poster som togs bort under den valda tidsperioden. **Obs**: Data för  **[!UICONTROL Records deleted]** inkluderar endast händelsedata just nu, inte profil- eller sökdata. |
+| [!UICONTROL Record skipped errors] | Orsaken till varför poster hoppades över anges här. Orsaker kan vara saknade tidsstämplar, person-ID saknas osv. |
 | [!UICONTROL Batches ingested] | Hur många datagrupper som har lagts till i den här datauppsättningen. |
 | [!UICONTROL Last added] | När den sista batchen lades till. |
 | [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Lookup] eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
@@ -131,3 +135,5 @@ Tillåter administratörer att redigera anslutningen. Välj en anslutning och kl
 
 * Starta och sluta importera nya data. Denna process kallades tidigare för&quot;dataströmning&quot;.
 * Byt namn på en anslutning.
+* Uppdatera datauppsättningen/datauppsättningarna.
+* Ta bort datauppsättningar från anslutningarna.
