@@ -1,15 +1,15 @@
 ---
 title: Inställningar för värdepaketeringskomponenter
 description: Kombinera numeriska värden i en dimension.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '171'
 ht-degree: 1%
 
 ---
 
 
-# Inställningar för värdepaketkomponent
+# [!UICONTROL Value Bucketing] komponentinställningar
 
 När du skapar eller redigerar en datavy kan du med värdeberäkning kombinera numeriska värden som baseras på ett intervall. Den är bara tillgänglig för dimensioner med datatyperna Heltal eller Dubbelt schema.
 

@@ -2,9 +2,9 @@
 title: Skapa en datavy
 description: Alla inställningar som du kan justera för att skapa eller redigera en datavy.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+source-git-commit: 49b4998194274eec2ab8eca231029ccb5ccf648d
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '732'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,17 @@ Du kan till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en
    >
    >Du kan dra i hela schemafältsmappar från den vänstra listen och de sorteras automatiskt i traditionella avsnitt. Strängfält hamnar i [!UICONTROL Dimensions]-avsnittet och siffror i [!UICONTROL Metrics]-avsnittet. Du kan också klicka på **[!UICONTROL Add all]** och lägga till alla schemafält.
 
-1. När du har valt komponenten visas ett antal inställningar till höger. Konfigurera komponenten med de inställningar som beskrivs nedan.
+1. När du har valt komponenten visas ett antal inställningar till höger. Konfigurera komponenten med de inställningar som beskrivs i
+
+* [[!UICONTROL Component] översikt över inställningar](/help/data-views/component-settings/overview.md)
+* [[!UICONTROL Attribution] komponentinställningar](/help/data-views/component-settings/attribution.md)
+* [[!UICONTROL Behavior] komponentinställningar](/help/data-views/component-settings/behavior.md)
+* [[!UICONTROL Format] komponentinställningar](/help/data-views/component-settings/format.md)
+* [[!UICONTROL Include|exclude] komponentinställningar](/help/data-views/component-settings/include-exclude-values.md)
+* [[!UICONTROL Metric deduplication] komponentinställningar](/help/data-views/component-settings/metric-deduplication.md)
+* [[!UICONTROL No value] komponentinställningar](/help/data-views/component-settings/no-value-options.md)
+* [[!UICONTROL Persistence] komponentinställningar](/help/data-views/component-settings/persistence.md)
+   [[!UICONTROL Value bucketing] komponentinställningar](/help/data-views/component-settings/value-bucketing.md)
 
 ## Använd funktionen [!UICONTROL Duplicate]
 
