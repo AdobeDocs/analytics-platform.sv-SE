@@ -2,7 +2,7 @@
 title: Vanliga frågor om Customer Journey Analytics
 description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: af683f97284ed24c3285a5819217ad329d5a8067
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '1411'
 ht-degree: 1%
@@ -86,5 +86,5 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 | [!UICONTROL Sessions] och  [!UICONTROL People] antal | De dedupliceras över flera rapportsviter. Därför kanske antalet inte matchar. |
 | Metrisk deduplicering | Duplicerar instanser av ett mått (till exempel [!UICONTROL Orders]) om flera rader har samma transaktions-ID (till exempel [!UICONTROL Purchase ID]). Detta förhindrar att nyckeltal räknas för mycket. Därför är det inte säkert att mätvärden som [!UICONTROL Orders] sammanställs i alla rapportsviter. |
 | Valuta | Valutakonvertering stöds ännu inte i CJA. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
-| [!UICONTROL Persistence] | [Persistenceenceextends ](/help/data-views/persistence.md) across report suites, which impact  [!UICONTROL filters],  [!UICONTROL attribution]osv. Siffrorna kanske inte läggs ihop korrekt. |
+| [!UICONTROL Persistence] | [Persistenceenceextends ](../data-views/component-settings/persistence.md) across report suites, which impact  [!UICONTROL filters],  [!UICONTROL attribution]osv. Siffrorna kanske inte läggs ihop korrekt. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När du kombinerar flera klassificeringsfiler till en enda [!UICONTROL lookup]-datauppsättning kan du stöta på problem. |

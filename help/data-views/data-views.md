@@ -1,17 +1,17 @@
 ---
-title: Vad är en datavy i Customer Journey Analytics?
+title: Översikt över datavyer
 description: En datavy anger hur du vill tolka element i data i CJA-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
+source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
 
-# Vad är en datavy?
+# Översikt över datavyer
 
-En datavy placeras ovanpå en Customer Journey Analytics (CJA) [anslutning](/help/connections/create-connection.md). En anslutning kombinerar en eller flera datauppsättningar från Adobe Experience Platform och kopplar den till CJA. Datavyn anger hur du vill tolka element i data i anslutningen, t.ex. mått, dimensioner, sessioner osv. Datavyer definieras som förberedelser för rapportering av data i Workspace.
+En datavy är en behållare som är specifik för Customer Journey Analytics och som gör att du kan avgöra hur data från en [anslutning](/help/connections/create-connection.md) ska tolkas. Här anges alla mått och mätvärden som är tillgängliga i Analysis Workspace och vilka kolumner som måtten och mätvärdena hämtar data från. Datavyer definieras som förberedelser för rapportering i Analysis Workspace.
 
 >[!NOTE]
 >
@@ -78,4 +78,3 @@ Om du tar bort en datavy i [!UICONTROL Customer Journey Analytics] visas ett fel
 
 * [Skapa datavyer](/help/data-views/create-dataview.md)
 * [Datavyer använder exempel](/help/data-views/data-views-usecases.md)
-* Information om hur [persistence](/help/data-views/persistence.md) fungerar

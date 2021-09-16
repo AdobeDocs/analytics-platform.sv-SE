@@ -2,7 +2,7 @@
 git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.sv-SE
 cloud: Experience Cloud
 product: adobe analytics
-sub-product: kundresa
+sub-product: customer journey
 solution: Customer Journey Analytics
 type: Documentation
 index: true
@@ -10,10 +10,10 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: dd88dc79d523d6e5ef4fa868eef4bbb22df6b61b
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 41%
+source-wordcount: '471'
+ht-degree: 39%
 
 ---
 
@@ -40,8 +40,18 @@ ht-degree: 41%
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](data-views/data-views.md)
    + [Skapa en datavy](data-views/create-dataview.md)
+   + Komponentinställningar {#component-settings}
+      + [Översikt över komponentinställningar](data-views/component-settings/overview.md)
+      + [Attribuering](data-views/component-settings/attribution.md)
+      + [Beteende](data-views/component-settings/behavior.md)
+      + [Format](data-views/component-settings/format.md)
+      + [Inkludera exkluderingsvärden](data-views/component-settings/include-exclude-values.md)
+      + [Metrisk deduplicering](data-views/component-settings/metric-deduplication.md)
+      + [Inga värdealternativ](data-views/component-settings/no-value-options.md)
+      + [Persistence](data-views/component-settings/persistence.md)
+      + [Värdebuckning](data-views/component-settings/value-bucketing.md)
+   + [Standard, komponentreferens](data-views/component-reference.md)
    + [Datavyer använder exempel](data-views/data-views-usecases.md)
-   + [Persistence](data-views/persistence.md)
 + Arbetsyteprojekt {#cja-workspace}
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + [Utför grundläggande analys](analysis-workspace/perform-basic-analysis.md)

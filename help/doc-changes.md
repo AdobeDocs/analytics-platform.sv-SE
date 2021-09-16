@@ -2,10 +2,10 @@
 title: CJA - dokumentationsuppdateringar
 description: Listar innehållsuppdateringar för den dokumentation för Customer Journey Analytics som angetts sedan december 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 8f576a8321c0e50cc34c1c08c8f8f7c48b427233
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '404'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Augusti 2021 | Nytt avsnitt om förbättrad [Anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en) i CJA. |
 | Augusti 2021 | Nytt avsnitt om [skiftlägeskänslighet i datavy-dimensioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-behavior-settings). |
 | Juni 2021 | Ny dokumentation om [tidigare projektversioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version) i Workspace. |
-| April 2021 | Nytt avsnitt om [beständighet](/help/data-views/persistence.md). |
+| April 2021 | Nytt avsnitt om [beständighet](data-views/component-settings/persistence.md). |
 | April 2021 | Ny dokumentation om stöd för schemalagda projekt i Workspace. |
 | April 2021 | Nya ämnen om [upplevelsen datavyer](/help/data-views/data-views.md). |
 | April 2021 | Nya ämnen om [inhämtning av Google Analytics-data](/help/use-cases/ga-to-cja.md) och [analys av data](/help/use-cases/ga-to-cja-reporting.md). |
