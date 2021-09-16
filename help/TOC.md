@@ -10,9 +10,9 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: dd88dc79d523d6e5ef4fa868eef4bbb22df6b61b
+source-git-commit: 46dbc257e7e2ec1709f5380061033a7ed8578797
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 39%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 39%
       + [Vanliga frågor om flerkanalsanalys](connections/cca/faq.md)
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](data-views/data-views.md)
-   + [Skapa en datavy](data-views/create-dataview.md)
+   + [Skapa eller redigera en datavy](data-views/create-dataview.md)
    + Komponentinställningar {#component-settings}
       + [Översikt över komponentinställningar](data-views/component-settings/overview.md)
       + [Attribuering](data-views/component-settings/attribution.md)
