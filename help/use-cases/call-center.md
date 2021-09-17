@@ -2,16 +2,16 @@
 title: Importera callcenter och webbdata
 description: Lär dig hur du skapar en datauppsättning som länkar callcenter och webbplatsdata.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Importera callcenter och webbdata
 
-Customer Journey Analytics har den värdefulla och robusta möjligheten att kombinera datauppsättningar från olika källor till ett enda Workspace-projekt. Använd den här vägledningen när du vill veta hur organisationen kan kombinera webbplatsdata med callcenterdata.
+Customer Journey Analytics har den värdefulla och robusta möjligheten att kombinera datauppsättningar från olika källor till ett enda Workspace-projekt. Använd den här vägledningen när du vill veta hur organisationen kan kombinera webbplatsdata med callcenterdata. Ni kan till exempel förstå vilka åtgärder en kund vidtar, vilket innehåll de ser och vilka termer de söker innan de kontaktar kundsupporten. Sedan kan ni avgöra vilka verktyg för innehåll och självbetjäning som ska förbättras så att kunderna själva kan lösa problem bättre utan att behöva ringa in.
 
 ## Förutsättningar
 
@@ -53,8 +53,10 @@ CJA kräver en gemensam identifierare för att generera en [kombinerad datamäng
 
 ## Skapa en datavy
 
-När du har skapat en anslutning kan du [skapa en datavy](/help/data-views/create-dataview.md) som kan användas i Analysis Workspace. <!-- page dimension last touch, session persistence -->
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+När du har skapat en anslutning kan du [skapa en datavy](/help/data-views/create-dataview.md) som kan användas i Analysis Workspace. Några praktiska komponenter:
+
+* En siddimension med senaste berörings- och sessionsbeständighet. Ni kan koppla kundens statistik till den sista sidan som kunden visade innan de ringde in.
+* A call metric that uses a Call center reason&#39; schema field to increase instances. Använd [Måttborttagning](/help/data-views/component-settings/metric-deduplication.md) så att den bara ökas en gång per session.
 
 ## Skapa visualiseringar
 
@@ -81,14 +83,13 @@ I den här frihandstabellen kan du se de översta sidorna som bidrar till att ri
 1. Klicka på kugghjulsikonen nära måtthuvudet. Klicka på **[!UICONTROL Use non-default attribution model]**.
 1. Ange önskad [attribueringsmodell](/help/data-views/create-dataview.md).
 
-Resultatrapporten visar det högsta mätvärdet från kundtjänstdata. <!-- Complement with donut visualization -->
+Resultatrapporten visar det högsta mätvärdet från kundtjänstdata.
 
 <!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
 ### Histogram
-
 
 ### Fallout
 

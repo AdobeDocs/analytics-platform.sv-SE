@@ -2,10 +2,10 @@
 title: Skapa eller redigera en datavy
 description: Alla inställningar som du kan justera för att skapa eller redigera en datavy.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 384679788d140a01a12e1c830b47099398a920b1
+source-git-commit: 36b7cc72c34e27f90af29146f7a32c525b279b9b
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -60,12 +60,9 @@ Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använd
 1. Klicka på **[!UICONTROL Add]** om du vill skapa en datavy eller klicka på en befintlig datavy om du vill redigera den.
 1. Klicka på fliken **[!UICONTROL Components]**.
 
-![Fliken Komponenter](assets/components-tab.png)
+   ![Fliken Komponenter](assets/components-tab.png)
 
-Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan. Kom ihåg:
-
-    * Komponenterna som redan ingår är de standardkomponenter som krävs (systemgenererade).
-    * Adobe använder filtret **[!UICONTROL Contains data]** som standard, så att endast schemafält som innehåller data visas. Om du söker efter ett fält som inte innehåller data tar du bort filtret.
+   Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan. Observera att de komponenter som redan ingår är nödvändiga standardkomponenter (systemgenererade) för alla datavyer. Adobe använder också filtret **[!UICONTROL Contains data]** som standard, så att endast schemafält som innehåller data visas. Om du vill ha ett fält som inte innehåller data tar du bort det här filtret.
 
 1. Dra ett schemafält, till exempel `pageTitle`, från den vänstra listen till avsnittet Metrisk eller Dimensioner.
 
