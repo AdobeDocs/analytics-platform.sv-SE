@@ -2,9 +2,9 @@
 title: Importera callcenter och webbdata
 description: Lär dig hur du skapar en datauppsättning som länkar callcenter och webbplatsdata.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -79,30 +79,58 @@ Den resulterande Vennbildningen visar antalet personer i datauppsättningen som 
 I den här frihandstabellen kan du se de översta sidorna som bidrar till att ringa in center-händelser. Kontrollera först att de önskade måtten och mätvärdena har rätt attribueringsmodell:
 
 1. Dra den dimension som innehåller webbsidans namn till en frihandsritabellvisualisering.
-1. Ersätt måttet med det anropscentrerade mått som du vill mäta konverteringen med.
+1. Ersätt mätvärdet med det anropscentrerade mått som du vill mäta.
 1. Klicka på kugghjulsikonen nära måtthuvudet. Klicka på **[!UICONTROL Use non-default attribution model]**.
-1. Ange önskad [attribueringsmodell](/help/data-views/create-dataview.md).
+1. Ange önskad [attribueringsmodell](/help/analysis-workspace/attribution/models.md). Exempel: en Time Decay-modell med en halveringstid på 15 minuter och ett Lookback-fönster för session. Den här attribueringsmodellen ger meriter till sidorna som leder fram till samtalet till ert callcenter.
 
-Resultatrapporten visar det högsta mätvärdet från kundtjänstdata.
+Den resulterande rapporten visar de översta sidorna som driver samtal till ert callcenter. <!-- use case behind what we use these pages for -->
 
-<!-- ### Flow between web data and call center
+<!-- Complement with donut visualization -->
 
-call reason as an exit dimension, web page name for previous pages
+Du kan öka insikterna ytterligare med den här tabellen genom att dela upp samtal utifrån orsak eller kategori.
+
+1. Klicka på den högra markören under dimensionen Anropsorsak i komponentlistan. Den här åtgärden visar enskilda dimensionsvärden.
+2. Dra önskade dimensionsvärden under anropsmåttet, som filtrerar mätvärdena efter varje anropsorsak.
+3. Upprepa för varje samtalsorsak som du vill fördjupa dig i. Använd filtret Alla sessioner om du vill visa den sammanlagda summan.
+
+<!-- screenshot -->
+
+### Flödesvisualisering
+
+Ni kan få insikt i vad en kund försökte göra innan de använde callcenterkanalen. Denna flödesvisualisering hjälper er att förstå de vanligaste resorna en kund tar för att nå ert callcenter. Med den här insikten kan ni fastställa de mest effektiva förbättringarna av er webbplats så att kunderna inte är lika benägna att ringa in.
+
+1. Klicka på fliken **[!UICONTROL Visualizations]** till vänster och dra en flödesvisualisering till arbetsytan.
+2. Klicka på fliken **[!UICONTROL Components]** till vänster och leta upp dimensionen Anledning till samtal.
+3. Klicka på den högra markören bredvid den här dimensionen. Den här åtgärden visar enskilda dimensionsvärden.
+4. Dra det önskade måttobjektet för anropsorsaken till mittplatsen för flödesvisualiseringen.
+5. Flödesvisualiseringen fyller automatiskt i tidigare och nästa anropsorsaker. Ersätt den föregående samtalsorsaken med webbplatsens siddimension.
+6. Klicka på kugghjulsikonen i det övre högra hörnet av flödesvisualiseringen och ändra flödesbehållaren till **[!UICONTROL Session]**.
 
 ### Histogram
 
+Hur många har ringt en gång, två gånger eller ringt 6+ gånger? En del av dem besöker aldrig webbplatsen. Använd histogramvisualisering för att avgöra hur många som hamnar i varje hink. För personer som aldrig besöker webbplatsen, se hur vi kan uppmuntra dem att själva använda webbtjänsten.
+
+1. Klicka på fliken **[!UICONTROL Visualizations]** till vänster och dra en histogramvisualisering till arbetsytan.
+2. Klicka på fliken **[!UICONTROL Components]** till vänster och dra anropsmåttet till histogramvisualiseringen.
+3. Klicka på **[!UICONTROL Show advanced settings]** i mitten av visualiseringen och anpassa önskade bucket.
+4. Klicka på **[!UICONTROL Build]**.
+
+<!--
+### Web to call, call to web
+
 ### Fallout
 
-step 1: all sessions
-step 2: purchase step 1
-step 3: call
+Fallout sessions - session
 
-another good one
+All sessions > page views metric > calls metric
+
+All sessions > calls metric > page views
+
+Orrr we could also use dataset ID
 
 step 1: all sessions
 step 2: 
 
-Orrr we could also use dataset ID
 
 ### Site sections that result in a call within 30 minutes
 

@@ -1,14 +1,13 @@
 ---
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i flerkanalsanalys
-translation-type: tm+mt
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
+exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
+source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
-
 
 # Så här spelar du upp
 
@@ -54,6 +53,10 @@ Med regelbundna intervall (en gång i veckan eller en gång om dagen beroende p�
 | `5` | `3579` | `Bob` | - | `Bob` | Bob loggar in via mobilen | `1` (Bob) |
 | `6` | - | - | `Bob` | `Bob` | Bob ringer till kundtjänst igen | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob besöker din webbplats på sin dator igen, oautentiserad | `1` (Bob) |
+
+>[!NOTE]
+>
+>Data spelas bara upp för webbplatsens datamängd. Datamängden för callcenter ändras inte, men matchar när rätt person-ID används.
 
 ## Omslag
 
