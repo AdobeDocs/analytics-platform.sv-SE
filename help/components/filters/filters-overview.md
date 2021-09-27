@@ -2,8 +2,7 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 1%
@@ -14,7 +13,7 @@ ht-degree: 1%
 
 Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
 
-Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön), interaktioner (kampanjer, nyckelordssökning, sökmotor), utträden och poster (besökare från Facebook, en definierad landningssida, referensdomän), anpassade variabler (formulärfält, definierade kategorier, kund-ID) och andra kriterier.
+Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön), interaktioner (kampanjer, nyckelordssökning, sökmotor), utgångar och poster (besökare från Facebook, en definierad landningssida, referensdomän), anpassade variabler (formulärfält, definierade kategorier, kund-ID) och andra kriterier.
 
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
