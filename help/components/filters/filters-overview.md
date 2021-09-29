@@ -2,9 +2,9 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
+source-git-commit: ff1f28015a2c52f79fae975c16bb7cb76f6179c3
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1099'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,18 @@ Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön)
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
 Filtreringen innehåller [Filter Builder](/help/components/filters/create-filters.md) för att konstruera filter och köra ett förtest samt [Filter Manager](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
+
+## Filtertyper
+
+Du kan skapa olika typer av filter i Workspace och Filter Builder, beroende på hur komplexa de behöver vara, om de bara ska gälla för det här projektet osv. Här följer en sammanfattning av filtertyper:
+
+| Filtertyp | Skapad var? | Tillämpligt var? | När ska användas |
+| --- | --- | --- | --- |
+| Komponentlistefilter | Klicka på +, vilket tar dig till [Filter Builder](/help/components/filters/create-filters.md) | Alla arbetsyteprojekt | För mer komplexa filter, sekventiella filter |
+| Snabbfilter | [Snabbfilterverktyg](/help/components/filters/quick-filters.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
+| Ad hoc-projektfilter | [Dra och släpp i segmentsläppzonen i ett projekt](/help/components/filters/ad-hoc-filters.md) | Endast projekt, men du kan spara och lägga till i filterlistan. | För enkelradsfilter |
+| Filter i bortfallsanalys | [Bortfallsvisualisering ](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) i Analysis Workspace | Till individuella utfallsvisualiseringar | Skapa filter från en kontaktyta, lägg till filter som kontaktyta och jämför viktiga arbetsflöden mellan olika filter |
+| Beräknat mätningsbaserat filter | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd filter i måttdefinitionen |
 
 ## Sekventiella filter
 
