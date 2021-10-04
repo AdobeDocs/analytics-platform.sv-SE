@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+source-git-commit: d833e12c67d74696438be9547db159438e671b2c
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1185'
 ht-degree: 3%
 
 ---
@@ -31,9 +31,11 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Lista variabler/listutkast | Fullt stöd; CJA utnyttjar XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
 | Mätvärden | Fullt stöd; CJA utnyttjar Experience Data Model (XDM) och stöder obegränsade mätvärden och är inte knutet till anpassade framgångshändelser i traditionell Analytics. Observera att vissa standardvärden har bytt namn från traditionell analys: Besökare = människor, besök = sessioner, träffar = händelser. |
 | Metrisk deduplicering | Fullt stöd |
+| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. |
 | PDF-export | Fullt stöd |
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
+| Report Builder (Excel-plugin) | Fullt stöd (oktober 2021) |
 | Bearbetning av rapporttid | Fullt stöd; CJA använder sig enbart av Report Time Processing. |
 | API-åtkomst för rapportering | Fullt stöd; Tillgängligt via [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Schemalagda rapporter/projekt | Fullt stöd |
@@ -80,7 +82,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | ID Stitching via Device Graph | Support planeras. |
 | Varaktighet för marknadsföringsvariabel | Support planeras. |
 | Realtidsrapportering | Support planeras. |
-| Report Builder (Excel-plugin) | Support planeras. |
 | Segment IQ | Support planeras. |
 | Segmentpublicering (skickar segment från Workspace till Experience Cloud) | Support planeras. |
 
