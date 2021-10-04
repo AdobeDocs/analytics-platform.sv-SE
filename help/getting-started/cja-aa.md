@@ -2,9 +2,9 @@
 title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
+source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1172'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,16 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Attribution IQ | Fullt stöd |
 | Beräknade mätvärden | Fullt stöd; Observera att befintliga beräknade värden i den traditionella Analysis Workspace inte kommer att porteras till CJA. |
 | Sammanfogning mellan olika enheter och kanaler | Fullt stöd; Se [Flerkanalsanalys](/help/connections/cca/overview.md). |
+| Anpassade kalendrar | Fullt stöd |
 | Datumjämförelser | Fullt stöd |
+| Datumintervall | Alla funktioner för datumintervall stöds. |
+| Besparingstid för dagsljus | Fullt stöd |
 | Mått | Fullt stöd; CJA utnyttjar XDM och har stöd för obegränsade dimensioner. CJA är inte knutet till de anpassade eVars- eller propparna hos traditionella Adobe Analytics. |
 | Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, operativsystem etc.) | CJA tillhandahåller dessa dimensioner internt så länge som bas-XDM-fälten (till exempel användaragent eller enhets-ID) fylls i. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Läs vår [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Borttagning av GDPR | Fullt stöd; Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform]. CJA ärver alla dataändringar [!UICONTROL Experience Platform] gör i underliggande datauppsättningar. |
 | Lista variabler/listutkast | Fullt stöd; CJA utnyttjar XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
 | Mätvärden | Fullt stöd; CJA utnyttjar Experience Data Model (XDM) och stöder obegränsade mätvärden och är inte knutet till anpassade framgångshändelser i traditionell Analytics. Observera att vissa standardvärden har bytt namn från traditionell analys: Besökare = människor, besök = sessioner, träffar = händelser. |
+| Metrisk deduplicering | Fullt stöd |
 | PDF-export | Fullt stöd |
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
@@ -46,7 +50,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Klassificeringar | Kallas nu&quot;Sök efter datauppsättningar&quot;. Klassifikationer som används i Analytics kan importeras till Experience Platform och CJA med Data Connector för Analytics-klassificeringar. Uppslagsdatauppsättningar kan också överföras direkt till AEP och göras tillgängliga i CJA. |
 | Skräddarsydd professionalisering | Stöd för alla anpassade sessioneringsfunktioner förutom mobilbakgrundstötar. |
 | Kundattribut | De kallas nu&quot;profildatauppsättningar&quot; och importeras inte automatiskt från Experience Cloud, utan måste överföras till AEP innan de blir tillgängliga i CJA. |
-| Datumintervall | Alla funktioner för datumintervall stöds, förutom för anpassade kalenderfunktioner som planeras. |
 | Enhet, webbläsare, teknikdimensioner | Dessa dimensioner inkluderas automatiskt när en AEP-datauppsättning innehåller specifika XDM-schemafält och följer XDM Experience Event-klassen. |
 | Poster, avslutningar och använd tid för mått och mätvärden | Stöds (Poster och avslutningar kallas nu för Sessionsstart och Sessionsslut) och beräknas på ett något annorlunda sätt. |
 | Inställningar för beständighet av eVar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Dimensioner som anges i datavyer är begränsade till högst 90 dagars beständighet och stöder inte obegränsad beständighet. |
@@ -73,10 +76,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Larm | Support planeras. |
 | Bidragsanalys | Support planeras. |
 | CSV-nedladdning | Support planeras. |
-| Anpassade kalendrar | Support planeras. |
 | data warehouse-rapportering (100 % radexport) | Support planeras från Analysis Workspace gränssnitt. [!UICONTROL Experience Platform Query Service] har också ett gränssnitt för de här användningsfallen i CJA. |
 | ID Stitching via Device Graph | Support planeras. |
-| Metrisk deduplicering | Support planeras. |
 | Varaktighet för marknadsföringsvariabel | Support planeras. |
 | Realtidsrapportering | Support planeras. |
 | Report Builder (Excel-plugin) | Support planeras. |
