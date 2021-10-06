@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 1ee998aa4c5c429ebb62be83f56431842dd75602
+source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 39%
+source-wordcount: '490'
+ht-degree: 37%
 
 ---
 
@@ -173,7 +173,9 @@ ht-degree: 39%
    + [Rapport om Google Analytics data i CJA](use-cases/ga-to-cja-reporting.md)
 + Kontrollpaneler för analyser {#cja-dashboards}
    + [Kontrollpaneler för analyser - översikt](mobile-app/home.md)
-   + [Insamlingshandsbok](mobile-app/curator.md)
+   + [Läraruppgifter](mobile-app/curator.md)
+   + [Skapa ett styrkort](mobile-app/create-scorecard.md)
+   + [Konfigurera chefer för att använda kontrollpaneler](mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
 + Sekretess {#cja-privacy}
    + [Sekretessöversikt](privacy/privacy-overview.md)

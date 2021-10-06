@@ -1,26 +1,29 @@
 ---
-title: Kontrollpaneler för analyser - översikt
-description: Produktdokumentation och självhjälp för kontrollpaneler i Customer Journey Analytics
-translation-type: tm+mt
-source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
+title: Adobe Analytics Dashboards - Översikt
+description: Produktdokumentation och självhjälp för Adobe Analytics dashboards
+feature: Analytics Dashboards
+role: User, Admin
+exl-id: 7c5fa374-fa39-4bbc-9bd7-0ef17914d593
+source-git-commit: 020d59268873776aeec8fc7a90be70c3b6c55b69
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
+# Adobe Analytics [!UICONTROL dashboards] - översikt
 
-# Analytics [!UICONTROL dashboards] - översikt
+**Adobe Analytics[!UICONTROL dashboards]** ger alltid insikter från Adobe Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS och Android.
 
-**Analyserna[!UICONTROL dashboards]** ger alltid insikter från Adobe Analytics, inklusive Customer Journey Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade indelningar och trendade datavyer. Mobilappen stöds på både iOS- och Android-operativsystem.
+Mer information om Adobe Analytics [!UICONTROL dashboards] finns i följande resurser:
 
-Mer information om Analytics [!UICONTROL dashboards] finns i följande resurser:
+* [Kuratorresurser](/help/mobile-app/curator.md): Avsett att hjälpa dataskåparna att konfigurera styrkort för sina chefsanvändare  [!UICONTROL dashboards]. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att inrätta styrkort:
 
-* [Kuratorguide](/help/mobile-app/curator.md): Den här guiden är avsedd att hjälpa datakonstruktörer att konfigurera styrkort för sina chefsanvändare  [!UICONTROL dashboards]. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att inrätta styrkort.
-
-   Om du vill se en videoöversikt av den här guiden kan du läsa [Adobe Analytics dashboards Scorecard Builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-scorecard-builder.html).
+   * [Skapa styrkort](/help/mobile-app/create-scorecard.md)
+   * [Hjälper chefer med appkonfiguration och användning av appen](/help/mobile-app/set-up-execs.md)
+   * Om du vill se en videoöversikt över kurateringen går du till [Adobe Analytics dashboards Scorecard Builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-scorecard-builder.html).
 
 
 * [Snabbstartsguide](/help/mobile-app/executive.md): Handboken är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort  [!UICONTROL dashboards]. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
 
-   Om du vill se en video som markerar den här informationen går du till [Adobe Analytics-instrumentpaneler i appupplevelsen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-in-app-experience.html).
+   * En video som markerar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-in-app-experience.html).
