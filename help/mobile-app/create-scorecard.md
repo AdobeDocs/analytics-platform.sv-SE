@@ -3,13 +3,13 @@ description: Skapa ett Adobe Analytics-styrkort
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
+exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
-
 
 # Skapa ett styrkort
 
@@ -112,32 +112,31 @@ Du kan också klicka på ikonen [!UICONTROL Visualizations] i den vänstra liste
 
 ![Visualiseringar](assets/vizs.png)
 
-**[!UICONTROL Summary Number]**
+### [!UICONTROL Summary Number]
 
 Använd visualisering av sammanfattningsnummer för att markera ett stort tal som är viktigt i ett projekt.
 
 ![Sammanfattningsnummer](assets/sparkline.png)
 
-**[!UICONTROL Donut]visualisering**
+### [!UICONTROL Donut]
 
 På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd ett mundiagram när du jämför procentandelar av en summa. Låt oss till exempel säga att du vill se vilken annonsplattform som har bidragit till det totala antalet unika besökare:
 
 ![Visualisering av ring](assets/donut-viz.png)
 
-**[!UICONTROL Line]visualisering**
+### [!UICONTROL Line]
 
 Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram visar måtten över tiden men fungerar med alla visualiseringar. Du visualiserar produktkategoridimensionen i det här exemplet.
 
 ![Radvisualisering](assets/line.png)
 
-
-**[!UICONTROL Horizontal Bar]visualisering**
+### [!UICONTROL Horizontal Bar]
 
 Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. Du kan till exempel enkelt se vilka produkter du gillar bäst genom att använda [!UICONTROL Horizontal Bar] som visualisering.
 
 ![vågrätt streck](assets/horizontal.png)
 
-**Ta bort[!UICONTROL Unspecified]**
+### Ta bort [!UICONTROL Unspecified]-dimensionsobjekt
 
 Om du vill ta bort [!UICONTROL Unspecified]-dimensionsobjekt från dina data gör du följande:
 
@@ -153,6 +152,8 @@ Om du vill ta bort [!UICONTROL Unspecified]-dimensionsobjekt från dina data gö
 När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. I den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och alternativt konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
 
 ![Egenskapspanelen](assets/properties_tile.png)
+
+## Visa detaljnivåer (brytningar)
 
 När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
 

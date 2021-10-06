@@ -3,13 +3,13 @@ description: Så här konfigurerar du användare att använda mobilappen Analyti
 title: Konfigurera chefer för att använda kontrollpaneler
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 020d59268873776aeec8fc7a90be70c3b6c55b69
+exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
 
 ---
-
 
 # Ställ in chefsanvändare för att använda kontrollpaneler
 
@@ -19,7 +19,7 @@ I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt oc
 
 1. Konfigurera nya användare i [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en).
 
-1. För att kunna dela styrkort måste du ge appanvändare behörighet att komma åt styrkortskomponenter som Analysis Workspace, de rapportsviter som styrkort baseras på samt segment, mått och mått.
+1. För att kunna dela styrkort måste du ge programanvändare behörighet att komma åt styrkortskomponenter som Analysis Workspace, de datavyer som styrkort baseras på samt filter, mått och mått.
 
 ## Systemkrav för appanvändare
 
@@ -111,4 +111,3 @@ Om den verkställande användaren loggar in och ser ett meddelande om att inget 
 * Styrkortet kanske inte har delats med den verkställande användaren.
 
 Kontrollera att chefsanvändaren kan logga in på rätt Adobe Analytics-instans och att styrkortet har delats.
-
