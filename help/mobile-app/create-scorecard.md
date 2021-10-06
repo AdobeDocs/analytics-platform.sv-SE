@@ -3,9 +3,9 @@ description: Skapa ett Adobe Analytics-styrkort
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ På samma sätt som ett cirkeldiagram visar den här visualiseringen data som de
 
 **[!UICONTROL Line]visualisering**
 
-Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension.
+Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram visar måtten över tiden men fungerar med alla visualiseringar. Du visualiserar produktkategoridimensionen i det här exemplet.
 
 ![Radvisualisering](assets/line.png)
 
@@ -146,7 +146,7 @@ Om du vill ta bort [!UICONTROL Unspecified]-dimensionsobjekt från dina data gö
 
    ![ospecificerad](assets/unspecified.png)
 
-1. Klicka på ikonen bredvid **[!UICONTROL Unspecified]** för att ta bort ospecificerade data från din rapportering.
+1. Klicka på ikonen bredvid **[!UICONTROL Unspecified]** för att ta bort ospecificerade data från din rapportering. (Du kan även ta bort andra dimensionsobjekt.)
 
 ## Visa och konfigurera egenskaper för paneler
 
