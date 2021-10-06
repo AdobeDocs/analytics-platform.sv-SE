@@ -4,9 +4,9 @@ title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
-source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
+source-git-commit: 9a7fa68bd7b4b9a7164a80691ddfb7aedaf8e3e4
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 Följande information beskriver för chefer av Adobe Analytics-data hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Börja med att titta på videon Adobe Analytics dashboards Scorecard Builder:
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
+
+>[!NOTE]
+>Styrkortsskärmbilder för den här sidan har tagits från Adobe Analytics-gränssnittet, inte från CJA. Gränssnitten är nästan identiska.
 
 Ett Adobe Analytics-styrkort visar viktiga datavisualiseringar för chefsanvändare i en sidindelad layout, vilket visas nedan:
 
@@ -116,7 +119,7 @@ Du kan också klicka på ikonen [!UICONTROL Visualizations] i den vänstra liste
 
 Använd visualisering av sammanfattningsnummer för att markera ett stort tal som är viktigt i ett projekt.
 
-![Sammanfattningsnummer](assets/sparkline.png)
+![Sammanfattningsnummer](assets/summary-number.png)
 
 ### [!UICONTROL Donut]
 
@@ -153,11 +156,11 @@ När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskap
 
 ![Egenskapspanelen](assets/properties_tile.png)
 
-## Visa detaljnivåer (brytningar)
+## Visa detaljnivåer (uppdelningar)
 
-När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
+När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Du kan dela upp dimensioner och dimensionsobjekt för att dela upp dina data efter dina specifika behov. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
 
-Uppdelningar förfinar analysen genom att bokstavligen dela upp mätvärden och dimensioner med andra mått och mått, som i det här exemplet:
+Uppdelningar förfinar analysen genom att bokstavligen dela upp dimensionerna efter andra mått och mått, som i det här exemplet:
 
 * Unika besökarvärden uppdelade efter annonsplattform (AMO-ID)
 * Besök uppdelade efter produktkategori (detaljhandel)
