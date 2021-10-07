@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '904'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,6 @@ Du kan skapa snabbfilter i ett projekt för att kringgå komplexiteten i den ful
 * Gäller endast projekt i vilka de har skapats (du kan ändra detta).
 * Tillåt upp till tre regler
 * Innesluta inte kapslade behållare eller sekventiella regler.
-* Arbeta i projekt med flera rapportsviter
 
 En jämförelse av vad snabbfilter kan göra jämfört med fullständiga filter för komponentlistor finns [här](/help/components/filters/filters-overview.md).
 
