@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: 4b528ef401cbe63b6237c66c2e9f39ee831aa71e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 37%
+source-wordcount: '518'
+ht-degree: 36%
 
 ---
 
@@ -133,6 +133,15 @@ ht-degree: 37%
       + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Långsvansar i Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
++ Report Builder {#cja-reportbuilder}
+   + [Översikt över Report Builder](report-builder/report-buider-overview.md)
+   + [Konfigurera Report Builder](report-builder/report-builder-setup.md)
+   + [Skapa ett datablock](report-builder/create-a-data-block.md)
+   + [Report Builder Hub](report-builder/report-builder-hub.md)
+   + [Välj ett datumintervall](report-builder/select-date-range.md)
+   + [Arbeta med filter](report-builder/work-with-filters.md)
+   + [Filtrera Dimensioner](report-builder/filter-dimensions.md)
+   + [Inställningar för Report Builder](report-builder/report-builder-settings.md)
 + Komponenter {#cja-components}
    + [Komponenter – översikt](components/overview.md)
    + Dimensioner {#dimensions}

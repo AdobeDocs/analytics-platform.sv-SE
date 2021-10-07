@@ -2,7 +2,7 @@
 title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
+source-git-commit: d6902af2d5e8a706e6b572c3daca2f60661dbbe9
 workflow-type: tm+mt
 source-wordcount: '2941'
 ht-degree: 1%
@@ -97,7 +97,7 @@ ACOS(metric)
 Returnerar arcus sinus, eller inverterad sinus, för ett tal. Arcussinus är vinkeln vars sinus är tal. Den returnerade vinkeln anges i radianer i intervallet -pi/2 till pi/2. Om du vill uttrycka arcussinus i grader multiplicerar du resultatet med 180/PI( ).
 
 ```
-ASIN(metric) 
+ASIN(metric)
 ```
 
 | Argument |  |
@@ -134,10 +134,10 @@ ESTIMATE.EXP(metric_X, metric_Y)
 Returnerar procentandelen av värden i en elevs t-fördelning, med n frihetsgrader som har ett z-score mindre än x.
 
 ```
-cdf_t( -∞, n ) = 0 
-cdf_t(  ∞, n ) = 1 
-cdf_t( 3, 5 ) ? 0.99865 
-cdf_t( -2, 7 ) ? 0.0227501 
+cdf_t( -∞, n ) = 0
+cdf_t(  ∞, n ) = 1
+cdf_t( 3, 5 ) ? 0.99865
+cdf_t( -2, 7 ) ? 0.0227501
 cdf_t( x, ∞ ) ? cdf_z( x )
 ```
 
@@ -146,12 +146,11 @@ cdf_t( x, ∞ ) ? cdf_z( x )
 Returnerar procentandelen av värden i en normal fördelning som har ett z-score mindre än x.
 
 ```
-cdf_z( -∞ ) = 0 
-cdf_z( ∞ ) = 1 
-cdf_z( 0 ) = 0.5 
-cdf_z( 2 ) ? 0.97725 
-cdf_z( -3 ) ? 0.0013499 
- 
+cdf_z( -∞ ) = 0
+cdf_z( ∞ ) = 1
+cdf_z( 0 ) = 0.5
+cdf_z( 2 ) ? 0.97725
+cdf_z( -3 ) ? 0.0013499
 ```
 
 ## Tak (rad)
@@ -197,12 +196,11 @@ Returnerar summan av x för de sista N-raderna (enligt ordningen i dimensionen, 
 Om N &lt;= 0 används alla föregående rader. Eftersom den ordnas efter dimensionen är den bara användbar för dimensioner som har en naturlig ordning som datum eller längd.
 
 ```
-| Date | Rev  | cumul(0,Rev) | cumul(2,Rev) | 
-|------+------+--------------+--------------| 
-| May  | $500 | $500         | $500         | 
-| June | $200 | $700         | $700         | 
-| July | $400 | $1100        | $600         | 
- 
+| Date | Rev  | cumul(0,Rev) | cumul(2,Rev) |
+|------+------+--------------+--------------|
+| May  | $500 | $500         | $500         |
+| June | $200 | $700         | $700         |
+| July | $400 | $1100        | $600         |
 ```
 
 ## Kumulativt genomsnitt
@@ -705,19 +703,19 @@ där [!DNL x] är råpoängen, är [!DNL μ] medelvärdet för populationen och 
 
 Z-score (metrisk)
 
-<table id="table_AEA3622A58F54EA495468A9402651E1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Argument </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr> 
+<table id="table_AEA3622A58F54EA495468A9402651E1B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Argument </th>
+   <th colname="col2" class="entry"> Beskrivning </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <i>mått</i> </td> 
-   <td colname="col2"> <p> Returnerar värdet för dess första argument som inte är noll. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <i>mått</i> </td>
+   <td colname="col2"> <p> Returnerar värdet för dess första argument som inte är noll. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Z-test
