@@ -4,13 +4,13 @@ description: Beskriver hur du skapar ett datablock.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: d946e6dbda608499594cf48a9456131485e7349a
+exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
+source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Skapa ett datablock
 
@@ -36,7 +36,7 @@ Konfigurera de inledande datablocksparametrarna för datablockets plats, datavye
 
 1. Ange **datumintervall**.
 
-   Med datumintervallalternativet kan du välja ett datumintervall. Datumintervall kan vara fasta eller rullande. Mer information om dataområdesalternativ finns i &lt;&lt; link to date range section >>.
+   Med datumintervallalternativet kan du välja ett datumintervall. Datumintervall kan vara fasta eller rullande. Mer information om dataområdesalternativ finns i [Välj ett datumintervall](select-date-range.md).
 
 1. Klicka på **Nästa**.
 
