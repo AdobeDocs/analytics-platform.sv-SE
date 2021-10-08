@@ -2,9 +2,9 @@
 title: CJA - dokumentationsuppdateringar
 description: Listar innehållsuppdateringar för den dokumentation för Customer Journey Analytics som angetts sedan december 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 6fca2dbffb0a631b0c5425c7d8964296ad22b7cc
+source-git-commit: 5eb2e4e27a64edec5670ef5a78e2bbfe63a0168d
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '580'
 ht-degree: 5%
 
 ---
@@ -15,6 +15,14 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| Oktober 2021 | Dokumentation för [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) i CJA. |
+| Oktober 2021 | Customer Journey Analytics [API-dokumentation för granskningslogg](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) |
+| Oktober 2021 | Dokumenterad [Visualiseringar för kontrollpaneler för analyser](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en#apply-visualizations) |
+| Oktober 2021 | Dok för rullande fönster för [!UICONTROL Connection] [datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#set-rolling-window-for-connection-data-retention).<p>**Obs! Kontakta kundtjänst eller din kontoansvarige på Adobe för att få den här inställningen implementerad. Den är ännu inte tillgänglig via CJA-gränssnittet.** |
+| September 2021 | [Metrisk ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=en) dedupliceringsdoc |
+| September 2021 | [Tidsstöd för sommartid vid rapportering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar) |
+| September 2021 | [Dokumentation ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar) för kundkalendrar |
+| September 2021 | [Booleska ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=en) fältdokumentation |
 | September 2021 | Öka komponentinställningarna i datavyer till enskilda filer:<ul><li>[[!UICONTROL Component] översikt över inställningar](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL Attribution] komponentinställningar](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Behavior] komponentinställningar](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] komponentinställningar](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Include/exclude] komponentinställningar](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metric deduplication] komponentinställningar](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL No value] komponentinställningar](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistence] komponentinställningar](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Value bucketing] komponentinställningar](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | September 2021 | Nytt avsnitt om [konsekvenserna av att sammanfoga rapportsviter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#6.-Consi-when-merging-report-suites-in-cja) i CJA. |
 | Augusti 2021 | Nytt avsnitt i det förbättrade [anslutningsgränssnittet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en) i CJA. |
