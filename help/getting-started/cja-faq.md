@@ -2,9 +2,9 @@
 title: Vanliga frågor om Customer Journey Analytics
 description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1453'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,6 @@ ht-degree: 1%
 | Fråga | Svar |
 | --- | --- |
 | Kan jag kombinera data från olika [!UICONTROL Adobe Experience Platform]-sandlådor i en [!UICONTROL Customer Journey Analytics]-anslutning? | Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera datauppsättningar som finns i samma sandlåda. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
-| Vilken fördröjning förväntas för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]? | <ul><li>Under normal belastning: &lt; 60 minuter <br>**Obs!** Om dataflödet är ovanligt stort genom pipeline kan det ta upp till 24 timmar.</li><li>Data för förifyllning (upp till 13 månaders data, oavsett storlek): &lt; 4 veckor</li></ul> |
 | Hur ansluter jag onlinedata till offlinedata i [!UICONTROL Customer Journey Analytics]? | Så länge person-ID:t matchar mellan datauppsättningar kan [!UICONTROL Customer Journey Analytics] koppla filter, attribuering, flöde, utfall osv. över datauppsättningar. |
 | Hur överför jag mina offlinedata till [!UICONTROL Customer Journey Analytics]? | Din rätt till Customer Journey Analytics gör att du kan importera data till Experience Platform. Du kan sedan skapa anslutningar till dessa data- och datavyer i [!UICONTROL Customer Journey Analytics] för rapportering i Analysis Workspace. Experience Platform datagrupp kan hjälpa dig att ge rekommendationer eller konsulttjänster vid behov. |
 | Hur hämtar jag [!UICONTROL Adobe Analytics]-data till [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics] data kan anslutas till Experience Platform via  [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). De flesta [!UICONTROL Adobe Analytics]-fält överförs i XDM-format, men andra fält är inte tillgängliga än. |
@@ -48,7 +47,17 @@ ht-degree: 1%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. Traditionella [!UICONTROL Adobe Analytics]-komponenter
+## 4. Svarstidsfrågor
+
+>[!NOTE]
+>Det finns ingen fast datastorlek i CJA och Adobe kan därför inte binda sig till en standardintag. Vi arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
+
+| Fråga | Svar |
+| --- | --- |
+| Vilken fördröjning förväntas för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-data eller händelser: Behandlas och importeras inom 90 minuter, när data finns tillgängliga i AEP.</li><li>Batchstorlek > 50 miljoner rader: längre än 90 minuter.</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 24 timmar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul> |
+
+
+## 5. Traditionella [!UICONTROL Adobe Analytics]-komponenter
 
 | Fråga | Svar |
 | --- | --- |
@@ -61,7 +70,7 @@ ht-degree: 1%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 5. Konsekvenser av borttagning av datakomponenter
+## 6. Konsekvenser av borttagning av datakomponenter
 
 När det gäller borttagning av data är vi oroade för sex typer av komponenter: sandlåda, schema, datauppsättning, anslutning, datavy och Workspace-projekt. Här följer några möjliga scenarier när du tar bort någon av dessa komponenter:
 
@@ -76,7 +85,7 @@ När det gäller borttagning av data är vi oroade för sex typer av komponenter
 | Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
 | Ta bort en datavy i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att alla arbetsyteprojekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
 
-## 6. Att tänka på när du sammanfogar rapportsviter i CJA
+## 7. Att tänka på när du sammanfogar rapportsviter i CJA
 
 Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) bör du överväga dessa förändringar när du sammanfogar två eller flera av Adobe Analytics rapportsviter.
 
@@ -86,5 +95,5 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 | [!UICONTROL Sessions] och  [!UICONTROL People] antal | De dedupliceras över flera rapportsviter. Därför kanske antalet inte matchar. |
 | Metrisk deduplicering | Duplicerar instanser av ett mått (till exempel [!UICONTROL Orders]) om flera rader har samma transaktions-ID (till exempel [!UICONTROL Purchase ID]). Detta förhindrar att nyckeltal räknas för mycket. Därför är det inte säkert att mätvärden som [!UICONTROL Orders] sammanställs i alla rapportsviter. |
 | Valuta | Valutakonvertering stöds ännu inte i CJA. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
-| [!UICONTROL Persistence] | [Persistenceenceextends ](../data-views/component-settings/persistence.md) across report suites, which impact  [!UICONTROL filters],  [!UICONTROL attribution]osv. Siffrorna kanske inte läggs ihop korrekt. |
+| [!UICONTROL Persistence] | [](../data-views/component-settings/persistence.md) Persistenceextends extends across report suites, which impact  [!UICONTROL filters],  [!UICONTROL attribution]o.s.v. Siffrorna kanske inte läggs ihop korrekt. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När du kombinerar flera klassificeringsfiler till en enda [!UICONTROL lookup]-datauppsättning kan du stöta på problem. |
