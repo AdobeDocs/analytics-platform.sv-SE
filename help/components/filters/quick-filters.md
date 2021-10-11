@@ -4,10 +4,10 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
+source-git-commit: 1334e1edb36583ba978936fecbff2657e63a94bf
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -32,15 +32,15 @@ Vem som helst kan skapa ett snabbsegment. Du måste dock ha behörighet att skap
 
 I en friformstabell klickar du på ikonen filter+ i panelhuvudet:
 
-![](assets/quick-seg1.png)
+![Segmentfilter](assets/quick-seg1.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
 | Namn | Standardnamnet för ett filter är en kombination av regelnamnen i filtret. Du kan byta namn på filtret till ett mer eget namn. |
 | Inkludera/exkludera | Du kan antingen inkludera eller exkludera komponenter i filterdefinitionen, men inte båda. |
 | Behållare för träff/besök/besök | Snabbfilter innehåller bara en [filterbehållare](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) som gör att du kan inkludera ett mått-/mätvärde-/datumintervall i (eller exkludera det från) filtret. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren vid besök och sidvisningar. Med en [!UICONTROL Visit]-behållare kan du ange regler för att dela upp besökarens data baserat på besök, och med en [!UICONTROL Hit]-behållare kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
-| Komponenter (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (mått och/eller mått och/eller datumintervall) och deras värden. Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva så hittar verktyget [!UICONTROL Quick Filter] automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
-| Operator | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count]-operatorer. [Läs mer](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
+| Komponenter (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (dimensioner, mått, datumintervall eller dimensionsvärden). Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva så hittar verktyget [!UICONTROL Quick Filter] automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
+| Operator | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count]-operatorer. Se [Filteroperatorer](operators.md). |
 | Plustecken (+) | Lägg till en annan regel |
 | OCH/ELLER-kvalificerare | Du kan lägga till&quot;AND&quot;- eller&quot;OR&quot;-kvalificerare i reglerna, men du kan inte blanda&quot;AND&quot; och&quot;OR&quot; i en enda filterdefinition. |
 | Använd | Använd det här filtret på panelen. Om filtret inte innehåller några data tillfrågas du om du vill fortsätta. |
@@ -51,11 +51,11 @@ I en friformstabell klickar du på ikonen filter+ i panelhuvudet:
 
 Här är ett exempel på ett filter som kombinerar mått och mätvärden:
 
-![](assets/quick-seg2.png)
+![Exempel på filterdefinition](assets/quick-seg2.png)
 
 Filtret visas högst upp. Lägg märke till dess blå, randiga sidospalt, till skillnad från den blå sidopanelen för filter på komponentnivå i filterbiblioteket till vänster.
 
-![](assets/quick-seg3.png)
+![Filtrera komponentplatser](assets/quick-seg3.png)
 
 ## Redigera snabbfilter
 
@@ -86,7 +86,7 @@ Lägg märke till hur filtrets sidlist ändras från randig blå till ljusblå. 
 
    Gå tillbaka till arbetsytan och se hur filtret nu har en ljusblå sidospalt. Det innebär att den inte längre kan redigeras/öppnas i snabbfilterverktyget. Och genom att spara det blir det en del av komponentlistan.
 
-   ![](assets/quick-seg4.png)
+   ![Filtrera komponentlista](assets/quick-seg4.png)
 
 När du har tillämpat filtret kan du lägga till det i filterkomponentlistan och göra det tillgängligt för alla projekt.
 
@@ -94,7 +94,7 @@ När du har tillämpat filtret kan du lägga till det i filterkomponentlistan oc
 
 1. Lägg märke till den här dialogrutan längst upp i Filter Builder:
 
-   ![](assets/project-only.png)
+   ![Dialogrutan Filter](assets/project-only.png)
 
 1. Markera kryssrutan bredvid **[!UICONTROL Make available to all your projects and add to your component list.]**
 1. Klicka på **[!UICONTROL Save]**.

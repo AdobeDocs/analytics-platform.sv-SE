@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 4b528ef401cbe63b6237c66c2e9f39ee831aa71e
+source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '519'
 ht-degree: 36%
 
 ---
@@ -156,6 +156,7 @@ ht-degree: 36%
       + [Hantera filter](components/filters/manage-filters.md)
       + [Snabbfilter](components/filters/quick-filters.md)
       + [Ad hoc-filter](components/filters/ad-hoc-filters.md)
+      + [Operatorer](components/filters/operators.md)
    + Beräknade mätvärden {#cja-calcmetrics}
       + [Översikt över beräknade mätvärden](components/calc-metrics/calc-metr-overview.md)
       + [Skapa ett beräknat mått](components/calc-metrics/create.md)
