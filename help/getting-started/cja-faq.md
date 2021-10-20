@@ -2,7 +2,7 @@
 title: Vanliga frågor om Customer Journey Analytics
 description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: d88502218cd94fbb430a0fc5a3af994e7edaa73c
+source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -44,7 +44,7 @@ ht-degree: 1%
 | Hur får jag [!UICONTROL Adobe Analytics] data till [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics] data kan anslutas till Experience Platform via [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Mest [!UICONTROL Adobe Analytics] fält hämtas till XDM-format, men andra fält är inte tillgängliga ännu. |
 | Hur lång tid tar det att sätta ihop datauppsättningselement till en datavy? | Några timmar att komma igång och några dagar att fylla i de senaste 13 månadernas data. |
 | Är det nödvändigt att hämta in PII-data för att upprätta kopplingar mellan data? | Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är PII. |
-| Vilka är gränserna för inmatning av tidigare eller framtida datum/tidsstämplar i CJA-händelsedatamängder? | <ul><li>Angående tidigare datum/tidsstämplar: Händelsedata som är upp till 10 år gamla.</li><li>Om framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.</li></ul> |
+| Vilka begränsningar gäller för inmatning av tidigare eller framtida datum/tidsstämplar i CJA-händelsedatamängder? | <ul><li>Angående tidigare datum/tidsstämplar: Händelsedata som är upp till 10 år gamla.</li><li>Om framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
