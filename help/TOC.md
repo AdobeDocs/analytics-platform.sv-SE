@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
+source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 36%
+source-wordcount: '560'
+ht-degree: 41%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 36%
 # Customer Journey Analytics Guide {#using}
 
 + [Customer Journey Analytics Guide](getting-started/cja-landing.md)
-+ Customer Journey Analytics översikt {#cja-overview}
++ Customer Journey Analytics - översikt {#cja-overview}
    + [Customer Journey Analytics - översikt](getting-started/cja-overview.md)
    + [Komma igång](getting-started/cja-getting-started.md)
    + [Frågor och svar](getting-started/cja-faq.md)
@@ -159,8 +159,21 @@ ht-degree: 36%
       + [Operatorer](components/filters/operators.md)
    + Beräknade mätvärden {#cja-calcmetrics}
       + [Översikt över beräknade mätvärden](components/calc-metrics/calc-metr-overview.md)
-      + [Skapa ett beräknat mått](components/calc-metrics/create.md)
-      + [Hantera beräknade värden](components/calc-metrics/manage.md)
+      + Arbetsflöde för beräknade värden {#cm-workflow}
+         + [Arbetsflöde för beräknade mätvärden](components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Hitta mätvärden](components/calc-metrics/cm-workflow/cm-finding.md)
+         + [Skapa mätvärden](components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Mätvärdestyp och attribuering](components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+         + [Skapa ett enkelt mätvärde för sidvisningar per besök](components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Filtrerade mätvärden](components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [Stapla och ersätta segment](components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Filtrerade och viktade mätvärden](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+         + [Använda funktioner](components/calc-metrics/cm-workflow/cm-using-functions.md)
+         + [Mätvärden för deltagande](components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Tagga beräknade mätvärden](components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [Godkänna beräknade mätvärden](components/calc-metrics/cm-workflow/cm-approving.md)
+         + [Dela beräknade mätvärden](components/calc-metrics/cm-workflow/cm-sharing.md)
+         + [Hanterare för beräknade mätvärden](components/calc-metrics/cm-workflow/cm-manager.md)
       + [Grundfunktioner](components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](components/calc-metrics/cm-adv-functions.md)
    + Datumintervall {#cja-date-ranges}
