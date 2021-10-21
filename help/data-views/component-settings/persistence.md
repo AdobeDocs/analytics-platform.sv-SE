@@ -2,9 +2,9 @@
 title: Inställningar för Persistence-komponent
 description: Bestäm hur eller om dimensionsvärdena ska behållas från en händelse till nästa.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
-source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
+source-git-commit: e8f372692e60158ce7f30837ee4da0f922e1d752
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '553'
 ht-degree: 6%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 6%
 
 [!UICONTROL Persistence] är möjligheten för ett givet dimensionsvärde att relatera till ett mätvärde efter händelsen det är inställt på. Den använder en kombination av allokering och förfallodatum.
 
-* **Med** Allokering kan du bestämma vilket värde som ska behållas när mer än en dimensionspost kan finnas i taget i en enda kolumn.
-* **Med** Förfallotid kan du bestämma hur länge en dimensionspost ska vara kvar efter den händelse den är inställd på.
+* **Allokering** I kan du bestämma vilket värde som ska behållas när mer än en dimensionspost kan finnas i taget i en enda kolumn.
+* **Förfaller** I kan du bestämma hur länge ett dimensionsobjekt kvarstår efter den händelse det är inställt på.
 
 [!UICONTROL Persistence] är bara tillgängligt för dimensioner och är retroaktivt för de data som det tillämpas på. Det är en omedelbar dataomvandling som sker innan filtrering eller andra analysåtgärder tillämpas.
 
@@ -24,28 +24,28 @@ ht-degree: 6%
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Set persistence] | Aktivera beständighet för dimensionen. Om persistence inte är aktiverat, relaterar dimensionen endast till mått som finns i samma händelse. Den här inställningen är inaktiverad som standard. |
-| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. |
-| [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). Den maximala förfallotiden som du kan ange är 90 dagar. Om du väljer en allokering av [!UICONTROL All] är endast [!UICONTROL Session] eller [!UICONTROL Person] förfallodatum tillgängliga. |
+| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Från och med den 28 oktober 2021 kommer ett uppslagsfönster på upp till 90 dagar att läggas till i [!UICONTROL Allocation] inställning. |
+| [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). Den maximala förfallotiden som du kan ange är 90 dagar. Om du väljer en tilldelning av [!UICONTROL All], endast [!UICONTROL Session] eller [!UICONTROL Person] kan förfalla. |
 
 ## [!UICONTROL Allocation] inställningar
 
 Information om tillgängliga allokeringsinställningar.
 
-* **[!UICONTROL Most Recent]**: Bevarar det senaste (med tidsstämpel) värdet i dimensionen. Eventuella efterföljande värden som inträffar inom dimensionens förfalloperiod ersätter det tidigare beständiga värdet. Om Behandla &#39;Inget värde&#39; som ett värde&#39; är aktiverat för den här dimensionen under [Inga värdealternativ](no-value-options.md), skriver tomma värden över tidigare beständiga värden. Ta till exempel följande tabell med [!UICONTROL Most recent]-allokering och [!UICONTROL Session] förfallodatum:
+* **[!UICONTROL Most Recent]**: Bevarar det senaste (med tidsstämpel) värdet i dimensionen. Eventuella efterföljande värden som inträffar inom dimensionens förfalloperiod ersätter det tidigare beständiga värdet. Om Behandla &#39;Inget värde&#39; som ett värde&#39; är aktiverat för den här dimensionen under [Inga värdealternativ](no-value-options.md), tomma värden skriver över tidigare beständiga värden. Ta till exempel följande tabell med [!UICONTROL Most recent] tilldelning och [!UICONTROL Session] förfallodatum:
 
    | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
    | --- | --- | --- | --- | --- | --- |
    | Datamängdsvärden |  | C | B |  | A |
    | Senaste allokering |  | C | B | B | A |
 
-* **[!UICONTROL Original]**: Bevarar det ursprungliga värdet med en tidsstämpel som finns i dimensionen under förfalloperioden. Om den här dimensionen har ett värde skrivs den inte över när ett annat värde visas för en efterföljande händelse. Ta till exempel följande tabell med [!UICONTROL Original]-allokering och [!UICONTROL Session] förfallodatum:
+* **[!UICONTROL Original]**: Bevarar det ursprungliga värdet med en tidsstämpel som finns i dimensionen under förfalloperioden. Om den här dimensionen har ett värde skrivs den inte över när ett annat värde visas för en efterföljande händelse. Ta till exempel följande tabell med [!UICONTROL Original] tilldelning och [!UICONTROL Session] förfallodatum:
 
    | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
    | --- | --- | --- | --- | --- | --- |
    | Datamängdsvärden |  | C | B |  | A |
    | Ursprunglig allokering |  | C | C | C | C |
 
-* **[!UICONTROL All]**: Fungerar ungefär som  [!UICONTROL Participation] attribueringsmodellen för mätvärden. Bevarar alla värden lika så att alla får full uppskattning för måttet i rapporteringen. Ta till exempel följande tabell med [!UICONTROL All]-allokering och [!UICONTROL Session] förfallodatum:
+* **[!UICONTROL All]**: Fungerar på liknande sätt som [!UICONTROL Participation] attribueringsmodell för mätvärden. Bevarar alla värden lika så att alla får full uppskattning för måttet i rapporteringen. Ta till exempel följande tabell med [!UICONTROL All] tilldelning och [!UICONTROL Session] förfallodatum:
 
    | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
    | --- | --- | --- | --- | --- | --- |
