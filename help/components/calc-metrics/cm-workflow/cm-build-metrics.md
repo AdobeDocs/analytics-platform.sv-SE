@@ -1,9 +1,9 @@
 ---
 description: I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, filter och funktioner för att skapa anpassade mått baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
 title: Skapa mätvärden
-source-git-commit: 92d9c3bd7478af5fbd4aca20fd814e2c9f2d6ef4
+source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '917'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
 | Definition | Här drar du i mått/beräknade mått, filter och/eller funktioner för att skapa det beräknade måttet. Om du drar i ett beräknat mått expanderas måttdefinitionen automatiskt. Du kan kapsla definitioner med behållare. Till skillnad från segmentbehållare fungerar dessa behållare som ett matematiskt uttryck och avgör ordningen på åtgärderna. |
 | Operator | [!UICONTROL Divided by] är standardoperatorn, plus operatorerna +, - och x. |
 | Förhandsgranska | Ger en snabb läsning av eventuella fel. Förhandsvisningen täcker de senaste 90 dagarna. Det här är ett sätt att först mäta om du har valt rätt komponenter för måttet. Ett oväntat resultat skulle innebära att du måste ta en andra titt på måttdefinitionen. |
+| Produktkompatibilitet | Produktkompatibiliteten visar om mätvärdena är kompatibla med fullständigt bearbetade data. |
 | Lägg till | För alla typer av beräknade värden kan du lägga till behållare och statiska tal i definitionen. För avancerade beräknade mätvärden kan du även lägga till filter och funktioner.<ul><li>Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas alltså före nästa åtgärd.</li><li>När du drar ett segment till en behållare segmenteras allt i behållaren. (Endast avancerade beräknade värden)</li><li>Du kan stapla flera filter i en behållare.</li></ul> |
 | Kugghjulsikon (Mättyp, Attribution) | Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mät- och attribueringsmodeller. |
 | + Ny | Gör att du kan skapa en ny komponent, till exempel ett nytt filter (som tar dig till filterverktyget .) |
