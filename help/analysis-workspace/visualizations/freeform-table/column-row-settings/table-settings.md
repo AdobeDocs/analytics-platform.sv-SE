@@ -3,9 +3,9 @@ description: Radinställningarna varierar beroende på vilken komponent du har d
 title: Radinställningar
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 941c32ce5ec9bfec020a68297397574f687d5e2b
+source-git-commit: 7abd4d08f02597aed1af27970b8497898a553a10
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Radinställningarna varierar beroende på vilken komponent du har dragit till ta
 
 Så här ändrar du antalet rader som visas:
 
-1. Klicka på siffran bredvid Rader högst upp i tabellen.
+1. Klicka på siffran bredvid [!UICONTROL Rows] längst upp på bordet.
 
    ![](assets/row-number.png)
 
