@@ -3,9 +3,9 @@ description: Radinställningarna varierar beroende på vilken komponent du har d
 title: Radinställningar
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 7abd4d08f02597aed1af27970b8497898a553a10
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '470'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 2%
 >[!NOTE]
 >
 >Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+
+Visa en video om rad- och kolumninställningar här:
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen. Klicka på knappen [!UICONTROL Settings] -ikon bredvid en dimension, ett filter, ett mått, en tidsperiod eller en uppdelning i var och en av dessa:
 
