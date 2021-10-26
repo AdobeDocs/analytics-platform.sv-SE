@@ -2,10 +2,9 @@
 title: Kombinerade händelsedatamängder
 description: Lär dig hur CJA skapar en anslutning genom att kombinera datauppsättningar.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
-translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: dd68a85b1398fa99e6ee5fff1c356a005ebb9482
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -18,6 +17,7 @@ När du skapar en anslutning kombinerar CJA alla scheman och datauppsättningar 
 * Scheman kombineras. Duplicerade schemafält sammanfogas.
 * Kolumnen &quot;Person-ID&quot; i varje datauppsättning sammanfogas till en enda kolumn, oavsett namn. Den här kolumnen är grunden för att identifiera unika besökare i CJA.
 * Rader bearbetas baserat på tidsstämpel.
+* Händelser löses ned till millisekundnivån.
 
 ## Exempel
 
@@ -60,18 +60,18 @@ Den här kombinerade händelsedatamängden används för rapportering. Det spela
 
 Detta koncept gäller också attribuering. Det spelar ingen roll vilken datauppsättning en rad kommer från. attribuering fungerar precis som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
 
-Om din anslutning endast innehöll den första tabellen och inte den andra skulle det visa att dra en rapport med måtten `string_color` och `metric_a` med hjälp av den senaste beröringsattribueringen:
+Om anslutningen bara innehöll den första tabellen och inte den andra, drar du en rapport med hjälp av `string_color` dimension och `metric_a` mätvärden som använder den senaste beröringsattribueringen skulle visa:
 
 | string_color | metrisk_a |
 | --- | --- |
 | Ospecificerad | 6 |
-| Blå | 1 |
+| Blå | 3 |
 | Röd | 2 |
 
-Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribueringen eftersom `user_847` finns i båda datauppsättningarna. En rad från den andra datauppsättningsattributen `metric_a` till Gul, där de tidigare var ospecificerade:
+Om du däremot inkluderar båda tabellerna i anslutningen ändras attribueringen sedan `user_847` finns i båda datauppsättningarna. En rad från de andra datauppsättningsattributen `metric_a` till &#39;Gul&#39; där de tidigare inte var angivna:
 
 | string_color | metrisk_a |
 | --- | --- |
 | Gul | 6 |
-| Blå | 1 |
+| Blå | 3 |
 | Röd | 2 |
