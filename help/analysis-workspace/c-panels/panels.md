@@ -2,16 +2,20 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+source-git-commit: 94b086c9eb0b148ebb176a37205030b862ac2678
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '810'
 ht-degree: 1%
 
 ---
 
 # Översikt över paneler
 
-A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser. Följande paneltyper är tillgängliga i Analysis Workspace:
+A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser.
+
+## Paneltyper
+
+Följande paneltyper är tillgängliga i Analysis Workspace:
 
 | Panelnamn | Beskrivning |
 | --- | --- |
