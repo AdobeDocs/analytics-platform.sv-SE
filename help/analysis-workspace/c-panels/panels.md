@@ -2,16 +2,16 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
 
 # Översikt över paneler
 
-En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser. Följande paneltyper är tillgängliga i Analysis Workspace:
+A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser. Följande paneltyper är tillgängliga i Analysis Workspace:
 
 | Panelnamn | Beskrivning |
 | --- | --- |
@@ -22,9 +22,9 @@ En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights],  [!UICONTROL Blank] och  [!UICONTROL Freeform] paneler är bra platser att börja med och  [!UICONTROL Attribution IQ] ger sig på mer avancerade analyser. En `"+"`-knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
+[!UICONTROL Quick Insights], [!UICONTROL Blank] och [!UICONTROL Freeform] paneler är bra att använda för att starta analysen, medan [!UICONTROL Attribution IQ] ger sig själv till mer avancerade analyser. A `"+"` -knappen är tillgänglig i projekt så att du kan lägga till tomma paneler när som helst.
 
-Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den tomma panelen](/help/analysis-workspace/c-panels/blank-panel.md) till standard.[
+Standardstartpanelen är [!UICONTROL Freeform] men du kan göra [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) även din standard.
 
 ## Kalender {#calendar}
 
@@ -33,6 +33,8 @@ Panelkalendern styr rapporteringsintervallet för tabeller och visualiseringar i
 Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering eller paneldropzon åsidosätts panelkalendern.
 
 ![](assets/panel-calendar.png)
+
+Du kan använda ett datumintervall på minutnivå under de avancerade inställningarna i panelkalendern. Om du rapporterar i ett datumintervall som sträcker sig över många dagar, gäller starttiden den första dagen och sluttiden den sista dagen i intervallet.
 
 ## Dropzon {#dropzone}
 
@@ -62,13 +64,13 @@ Nedrullningsbara filter kan även användas för att konsolidera flera projekt t
 
 Så här skapar du nedrullningsbara filter:
 
-1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items], t.ex. värden inom dimensionen [!UICONTROL Marketing Channel], klickar du på högerpilsikonen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift-tangenten**. Detta gör komponenterna till ett nedrullningsbart filter i stället för att bli ett enda filter.
-1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, filter eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens dropzon **samtidigt som du håller ned Skift-tangenten**.
-1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att välja **[!UICONTROL No filter]**.
+1. Skapa ett nedrullningsbart filter med [!UICONTROL Dimension items], till exempel värden i [!UICONTROL Marketing Channel] klickar du på högerpilsikonen bredvid dimensionen i det vänstra fältet. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **medan du håller ned Skift-tangenten**. Detta gör komponenterna till ett nedrullningsbart filter i stället för att bli ett enda filter.
+1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter som mått, filter eller datumintervall väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
+1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
 
 ![](assets/create-dropdown.png)
 
-[Titta på ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) videon och lär dig mer om hur du lägger till nedrullningsbara filter i ditt projekt.
+[Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) om du vill veta mer om hur du lägger till nedrullningsbara filter i ett projekt.
 
 ## Högerklicka på menyn {#right-click}
 
