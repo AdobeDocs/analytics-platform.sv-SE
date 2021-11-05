@@ -3,9 +3,9 @@ title: Hantera anslutningar
 description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
+source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1579'
 ht-degree: 0%
 
 ---
@@ -114,19 +114,19 @@ Här beskrivs widgetar och inställningar:
 | [!UICONTROL Data views using connection] | Visar alla datavyer som använder den här anslutningen. |
 | [!UICONTROL Import new data] | (På/av) Anger om nya datagrupper ska läggas till i historiska data (backfill) eller inte. |
 | [!UICONTROL Backfill data] | Bakgrundsfyllningsdata (historiska) spåras i tre lägen: [!UICONTROL In queue], [!UICONTROL In progress] (med en förloppsprocent angiven), och [!UICONTROL Complete]. |
-| [!UICONTROL Created by] | Namnet på den person som skapade anslutningen. |
-| [!UICONTROL Last modified] | Datum och tid för senaste ändring av anslutningen. |
-| [!UICONTROL Last modified by] | Person som senast ändrade anslutningen. |
+| [!UICONTROL Created by] | Visar namnet på den person som skapade anslutningen. |
+| [!UICONTROL Last modified] | Visar datum och tid för den senaste ändringen av anslutningen. |
+| [!UICONTROL Last modified by] | Visar den person som senast ändrade anslutningen. |
 | **Högerspåret på datauppsättningsnivå** |  |
 | [!UICONTROL Person ID] | Visar en identitet som definierades i datauppsättningsschemat i Experience Platform. Detta är det person-ID som du valde när anslutningen skapades. Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du verkligen vill sammanfoga datauppsättningar måste du använda samma person-ID för alla datauppsättningar. |
 | [!UICONTROL Records available] | Representerar det totala antalet rader som kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. (Undantaget är att när du skapar en helt ny anslutning kommer det att finnas [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-travel-analytics). |
-| [!UICONTROL Records added] | Hur många rader som lades till under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records added]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
-| [!UICONTROL Records deleted] | Hur många poster som togs bort under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records deleted]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
-| [!UICONTROL Batches added] | Hur många datagrupper som har lagts till i den här datauppsättningen. |
-| [!UICONTROL Records skipped] | Hur många rader hoppades över under intag under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records skipped]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
-| [!UICONTROL Last added] | När den sista batchen lades till. |
+| [!UICONTROL Records added] | Anger hur många rader som har lagts till under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records added]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
+| [!UICONTROL Records deleted] | Anger hur många poster som togs bort under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records deleted]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
+| [!UICONTROL Batches added] | Anger hur många datagrupper som har lagts till i den här datauppsättningen. |
+| [!UICONTROL Records skipped] | Anger hur många rader som hoppats över under intag under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records skipped]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
+| [!UICONTROL Last added] | Anger när den senaste batchen lades till. |
 | [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
-| [!UICONTROL Schema] | Det Adobe Experience Platform-schema som den här datauppsättningen baseras på. |
+| [!UICONTROL Schema] | Visar det Adobe Experience Platform-schema som den här datauppsättningen baseras på. |
 | [!UICONTROL Dataset ID] | Detta ID genereras i Adobe Experience Platform. |
 
 ### Redigera anslutning
