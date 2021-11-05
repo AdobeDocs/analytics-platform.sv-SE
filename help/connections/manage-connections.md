@@ -3,9 +3,9 @@ title: Hantera anslutningar
 description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
+source-git-commit: 236bba2e3ff851f6e7097c4c41a04f1b6221efa0
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1665'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Här beskrivs widgetar och inställningar:
 | [!UICONTROL Records of event data available] widget | Representerar det totala antalet händelsedatarader som är tillgängliga för rapportering, **för hela anslutningen**. Antalet är oberoende av eventuella kalenderinställningar. Den ändras om du väljer en datauppsättning från datauppsättningsväljaren eller genom att markera en datauppsättning i tabellen. (Observera att det finns en fördröjning på 1-2 timmar för att visa data i rapporter, när de har lagts till.) |
 | [!UICONTROL Metrics] widget | Sammanfattar de händelseposter som lagts till/hoppats över/tagits bort och antalet batchar som lagts till, **för den datauppsättning och det datumintervall som du har valt**. |
 | [!UICONTROL Records added] widget | Anger hur många rader som har lagts till under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Uppdaterades var 10:e minut. **Anteckning**: Data för **[!UICONTROL Records added]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
-| [!UICONTROL Records skipped] widget | Anger hur många rader som hoppades över under den valda tidsperioden. **för den datauppsättning och det datumintervall som du har valt**. Orsaker till att hoppa över poster är: Tidsstämplar saknas, person-ID saknas osv. Uppdaterades var 10:e minut. **Anteckning**: Data för **[!UICONTROL Records skipped]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
+| [!UICONTROL Records skipped] widget | Anger hur många rader som hoppades över under den valda tidsperioden. **för den datauppsättning och det datumintervall som du har valt**. Orsaker till att hoppa över poster är: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut. **Anteckning**: Data för **[!UICONTROL Records skipped]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata.<p>Ogiltiga person-ID:n (odefinierade, alla nollor) kan inte tilldelas en viss användare eller person. De kan inte förtäras i systemet och leder till felbenägna intag- och rapporteringsprocesser. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd sammanfogning för att fylla i användar-ID:n som är odefinierade eller helt noll med giltiga användar-ID:n.</li> | <li>Ta bort användar-ID:t, som också kommer att hoppas över vid förtäring (helst inte med ogiltiga eller helt nolla användar-ID:n).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
 | [!UICONTROL Records deleted] widget | Anger hur många rader som har tagits bort under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Någon kan till exempel ha tagit bort en datauppsättning i Experience Platform. Uppdaterades var 10:e minut. **Anteckning**: Data för **[!UICONTROL Records deleted]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
 | Sökruta för datauppsättning | Du kan söka efter datauppsättningsnamn eller [!UICONTROL Dataset ID]. |
 | [!UICONTROL Datasets] | Visar de datauppsättningar som ingår i anslutningen. Du kan klicka på hyperlänken om du vill visa alla datauppsättningar i anslutningen. |
