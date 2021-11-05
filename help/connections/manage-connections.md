@@ -3,7 +3,7 @@ title: Hantera anslutningar
 description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
+source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
 workflow-type: tm+mt
 source-wordcount: '1816'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Här beskrivs widgetar och inställningar:
 | [!UICONTROL Schema] | Visar det Adobe Experience Platform-schema som den här datauppsättningen baseras på. |
 | [!UICONTROL Dataset ID] | Detta ID genereras i Adobe Experience Platform. |
 
-### Redigera anslutning
+## Redigera anslutning
 
 Tillåter administratörer att redigera anslutningen. Välj en anslutning och klicka sedan på [!UICONTROL Edit Connection] för att komma till den här dialogrutan. Här kan du göra följande:
 
