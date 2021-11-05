@@ -3,9 +3,9 @@ title: Hantera anslutningar
 description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6d1907d676ea01b3956d5ce2ce76d43d7a8f0f1d
+source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1744'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Med Anslutningshanteraren kan du:
 * Byt namn på en anslutning.
 * Skapa en datavy från en anslutning.
 
-![Hantera anslutningar](assets/conn-manager.png)
+![](assets/conn-manager.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -85,7 +85,7 @@ Här kan du:
 
 Här beskrivs widgetar och inställningar:
 
-![Visa anslutningsinformation](assets/conn-details.png)
+![](assets/conn-details.png)
 
 | Widget/Setting | Beskrivning |
 | --- | --- |
