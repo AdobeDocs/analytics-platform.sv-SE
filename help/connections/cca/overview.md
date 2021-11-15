@@ -2,16 +2,16 @@
 title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: a1b4ddc0799d741edb9a4624e22a800a0307e5eb
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
 
 # Översikt över flerkanalsanalys
 
-**Resa-IQ: Flerkanalsanalys** är en funktion som gör att du kan ändra inmatningen av en datauppsättnings person-ID, vilket möjliggör en sömlös kombination av flera datauppsättningar. CCA undersöker användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. Med flerkanalsanalys kan ni besvara frågor som:
+**Resa-IQ: Flerkanalsanalys** är en funktion som gör att du kan ändra inmatningen i en datauppsättnings person-ID, vilket möjliggör en sömlös kombination av flera datauppsättningar. CCA undersöker användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. Med flerkanalsanalys kan ni besvara frågor som:
 
 * Hur många börjar sin upplevelse i en kanal och avslutar den i en annan?
 * Hur många interagerar med mitt varumärke? Hur många och vilka typer av enheter använder de? Hur överlappar de?
@@ -20,7 +20,7 @@ ht-degree: 0%
 * Vilka är de vanligaste sökvägarna som användare tar från en enhet till en annan? Var faller de? Var lyckas de?
 * Hur skiljer sig beteendet hos användare med flera enheter från dem som har en enda enhet?
 
-När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att lösa det. Med Cross-Channel Analytics kan ni attribuera callcenter-händelser till annonsen som de ursprungligen klickade på.
+När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att hjälpa till att lösa det. Med Cross-Channel Analytics kan ni attribuera callcenter-händelser till annonsen som de ursprungligen klickade på.
 
 ## Förutsättningar
 
@@ -31,8 +31,8 @@ När du kombinerar datauppsättningar med liknande person-ID:n överförs attrib
 Innan du använder flerkanalsanalys bör du kontrollera att din organisation har förberetts med följande:
 
 * En datauppsättning i Adobe Experience Platform måste ha två kolumner som hjälper till att identifiera besökare:
-   * Ett **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett besökar-ID som genereras av ett Adobe Analytics AppMeasurement-bibliotek.
-   * Ett **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget alla identifierare som du vill, förutsatt att de finns minst en gång för samma händelse som ett visst beständigt ID.
+   * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett besökar-ID som genereras av ett Adobe Analytics AppMeasurement-bibliotek.
+   * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget alla identifierare som du vill, förutsatt att de finns minst en gång för samma händelse som ett visst beständigt ID.
 * En annan datauppsättning, till exempel callcenter-data, som innehåller ett tillfälligt ID på varje rad. Detta person-ID måste formateras på samma sätt som det tillfälliga ID:t i den andra datauppsättningen.
 * Med den här funktionen kan du sammanfoga datauppsättningar som kan omfatta sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du sammanfogar datauppsättningar.
 
@@ -56,17 +56,17 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 
 När organisationen uppfyller alla krav och förstår sina begränsningar kan du följa de här stegen för att börja använda den i CJA.
 
-1. Importera önskade data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
-1. Kontakta kontohanteraren för Adobe som innehåller följande:
+1. Importera önskade data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Ingrediera data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
+1. Kontakta din kontoansvarige på Adobe med följande information:
    * En begäran om att aktivera flerkanalsanalys
    * Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för
    * Kolumnnamnet för det beständiga ID:t för den önskade datauppsättningen (identifierare som visas på varje rad)
    * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (länken för personidentifierare mellan datauppsättningar)
-   * Din inställning är [repetitionsfrekvens och uppslagslängd](replay.md). Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
-1. Kontohanteraren för Adobe kommer att arbeta tillsammans med Adobe för att aktivera kanalövergripande analys när du tar emot din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Kontohanteraren för Adobe kan ange det nya datauppsättnings-ID:t och kolumnnamnet för person-ID.
+   * Din inställning [spela upp](replay.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
+1. Adobe Technical Account Manager kommer att arbeta tillsammans med Adobe för att möjliggöra kanalövergripande analys när ni får er begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Den tekniska kontohanteraren för Adobe kan ange det nya datauppsättnings-ID:t och kolumnnamnet för person-ID:t.
 1. När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som i början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data så långt tillbaka i tiden.
-1. [Skapa en ](../create-connection.md) anslutning i CJA med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
-1. [Skapa en ](/help/data-views/create-dataview.md) datavy baserad på anslutningen.
+1. [Skapa en anslutning](../create-connection.md) i CJA med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
+1. [Skapa en datavy](/help/data-views/create-dataview.md) baserat på anslutningen.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
