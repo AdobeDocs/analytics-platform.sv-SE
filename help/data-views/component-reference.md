@@ -1,13 +1,14 @@
 ---
 title: Standard, komponentreferens
 description: Information och information om alla standardkomponenter som du kan lägga till i en datavy.
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
 
 ---
-
 
 # Standard, komponentreferens
 
@@ -36,15 +37,15 @@ Dessa nödvändiga standardkomponenter läggs som standard till i varje datavy. 
 
 ## Valfria standardkomponenter
 
-Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > fliken **[!UICONTROL Components]** > fliken **[!UICONTROL Standard Components]**.
+Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Standard Components]** -fliken.
 
 | Komponentnamn | Dimension eller mått | Anteckningar |
 | --- | --- | --- |
-| [!UICONTROL Session Starts] | Mått | Antalet händelser som var den första händelsen i en session. Vid användning i en filterdefinition (t.ex. [!UICONTROL Session Starts] existerar&#39;), filtreras ned till den första händelsen i varje session. |
-| [!UICONTROL Session Ends] | Mått | Antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en filterdefinition för att filtrera ned saker till den sista händelsen i varje session. |
+| [!UICONTROL Session Starts] | Mått | Antalet händelser som var den första händelsen i en session. Vid användning i en filterdefinition (t.ex. &#39;[!UICONTROL Session Starts] finns&#39;), filtreras ned till den första händelsen i varje session. |
+| [!UICONTROL Session Ends] | Mått | Antalet händelser som var den sista händelsen i en session. Liknar [!UICONTROL Session Starts]kan den också användas i en filterdefinition för att filtrera fram till den sista händelsen i varje session. |
 | [!UICONTROL Time Spent (seconds)] | Mått | Sammanställer tiden mellan två olika värden för en dimension. |
-| [!UICONTROL Time Spent per Event] | Dimension | Sparar [!UICONTROL Time Spent]-måttet i [!UICONTROL Event]-bucket. |
-| [!UICONTROL Time Spent per Session] | Dimension | Sparar [!UICONTROL Time Spent]-måttet i [!UICONTROL Session]-bucket. |
-| [!UICONTROL Time Spent per Person] | Dimension | Sparar [!UICONTROL Time Spent]-måttet i [!UICONTROL Person]-bucket. |
-| [!UICONTROL Batch ID] | Dimension | Representerar den Experience Platform-batch som en [!UICONTROL Event] var en del av. |
-| [!UICONTROL Dataset ID] | Dimension | Representerar datauppsättningen Experience Platform som en [!UICONTROL Event] var en del av. |
+| [!UICONTROL Time Spent per Event] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Event] fickor. |
+| [!UICONTROL Time Spent per Session] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Session] fickor. |
+| [!UICONTROL Time Spent per Person] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Person] fickor. |
+| [!UICONTROL Batch ID] | Dimension | Representerar Experience Platform-batchen som en [!UICONTROL Event] var en del av. |
+| [!UICONTROL Dataset ID] | Dimension | Representerar datauppsättningen Experience Platform som [!UICONTROL Event] var en del av. |

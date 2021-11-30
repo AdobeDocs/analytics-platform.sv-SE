@@ -4,13 +4,14 @@ description: Beskriver komponenterna för Report Builder Hub
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: bb53440ac1019b639b5c4dd1e0ecd41fc1150ec3
+exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
 
 ---
-
 
 # Report Builder Hub
 
@@ -47,9 +48,9 @@ De ändringar du gör i snabbredigeringsavsnitten gäller för alla markerade da
 
 ### Datavyer
 
-Datablocken hämtar data från en markerad datavy. Om flera datablock är markerade i ett kalkylblad och de inte hämtar data från samma datavy, visar länken **Datavyer** *Flera*.
+Datablocken hämtar data från en markerad datavy. Om flera datablock är markerade i ett kalkylblad och de inte hämtar data från samma datavy, kan du **Datavyer** länk *Flera*.
 
-När du ändrar datavyn används den nya datavyn för alla datablock i markeringen. Komponenterna i datablocket matchas mot den nya datavyn baserat på ID, till exempel matchning av ```evars```). Om en komponent inte hittas i ett datablock visas ett varningsmeddelande och komponenten tas bort från datablocket.
+När du ändrar datavyn används den nya datavyn för alla datablock i markeringen. Komponenterna i datablocket matchas mot den nya datavyn baserat på ID, till exempel matchning ```evars```). Om en komponent inte hittas i ett datablock visas ett varningsmeddelande och komponenten tas bort från datablocket.
 
 Om du vill ändra datavyn väljer du en ny datavy i listrutan.
 
@@ -57,8 +58,8 @@ Om du vill ändra datavyn väljer du en ny datavy i listrutan.
 
 ### Datumintervall
 
-**Datumintervall** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall visas **Datumintervallet**-länken *Flera*.
+**Datumintervall** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall **Datumintervall** länk *Flera*.
 
 ### Filter
 
-Länken **Filter** visar en sammanfattningslista över de filter som används av de markerade datablocken. Om flera datablock har markerats med flera filter visas **Filter**-länken *Flera*.
+The **Filter** I visas en lista med de filter som används av de markerade datablocken. Om flera datablock är markerade med flera filter **Filter** länk *Flera*.

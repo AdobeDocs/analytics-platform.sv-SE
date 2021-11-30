@@ -5,7 +5,8 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
-source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -14,31 +15,31 @@ ht-degree: 0%
 
 # Skapa ett datablock
 
-Ett *datablock* är den datatabell som skapas av en enskild databegäran. En Report Builder-arbetsbok kan innehålla flera datablock. När du skapar ett datablock konfigurerar du först datablocket och skapar sedan datablocket.
+A *datablock* är den datatabell som skapas av en enskild databegäran. En Report Builder-arbetsbok kan innehålla flera datablock. När du skapar ett datablock konfigurerar du först datablocket och skapar sedan datablocket.
 
 ## Konfigurera datablocket
 
 Konfigurera de inledande datablocksparametrarna för datablockets plats, datavyer och datumintervall.
 
-1. Klicka på **Skapa datablock**.
+1. Klicka **Skapa datablock**.
 
    ![](./assets/create_db.png)
 
-1. Ange platsen **för datablocket**.
+1. Ange **Plats för datablock**.
 
    Platsalternativet för datablocket definierar den plats i kalkylbladet där rapportbyggaren lägger till data i kalkylbladet.
 
    Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som a3, \\\$a3, a\\\$3 eller sheet1!a2. Den angivna cellen kommer att vara det övre vänstra hörnet i datablocket när data hämtas.
 
-1. Välj **datavyer**.
+1. Välj **Datavyer**.
 
    Med alternativet Datavyer kan du välja en datavy från en nedrullningsbar meny eller referera till en datavy från en cellplats.
 
-1. Ange **datumintervall**.
+1. Ange **Datumintervall**.
 
    Med datumintervallalternativet kan du välja ett datumintervall. Datumintervall kan vara fasta eller rullande. Mer information om dataområdesalternativ finns i [Välj ett datumintervall](select-date-range.md).
 
-1. Klicka på **Nästa**.
+1. Klicka **Nästa**.
 
    ![](./assets/choose_date_data_view3.png)
 
@@ -54,7 +55,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
 1. Lägg till Dimensioner, mätvärden och filter.
 
-   Bläddra i komponentlistorna eller använd fältet **sök** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
+   Bläddra i komponentlistorna eller använd **sök** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
 
    Dubbelklicka på en komponent för att lägga till den i ett standardavsnitt i tabellen.
 
@@ -70,7 +71,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    ![](./assets/image10.png)
 
-1. Klicka på **Slutför**.
+1. Klicka **Slutför**.
 
    Ett bearbetningsmeddelande visas när analysdata hämtas.
 

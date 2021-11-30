@@ -2,7 +2,8 @@
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i flerkanalsanalys
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
-source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -13,9 +14,9 @@ ht-degree: 0%
 
 Flerkanalsanalys gör att data kan skickas på en viss anslutning:
 
-* **Livestning**: CCA försöker sy ihop varje träff när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
+* **Live-syn**: CCA försöker sy ihop varje träff när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
 * **Spela upp**: CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. I det här steget sammanfogas nya enheter till anslutningen. Adobe har två repriser:
-   * Dagligen: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
+   * Dagligen: Data spelas upp varje dag med ett 24-timmarsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
    * Vecka: Data spelas upp en gång i veckan med ett 7-dagars uppslagsfönster. Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Data som är yngre än en vecka sammanfogas dock inte.
 
 ## Steg 1: Live-syn
@@ -36,7 +37,7 @@ CCA försöker sammanfoga varje händelse när den samlas till kända enheter oc
 
 Både oautentiserade och autentiserade händelser på nya enheter räknas som separata personer (tillfälligt). Oautentiserade händelser på kända enheter sys i realtid.
 
-Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla händelser utom händelserna 1 och 4 sammanfogade (de använder alla identifieraren `Bob`). Attribution works on events 1 and 4 after replay stitching.
+Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla händelser utom händelserna 1 och 4 sammansydda (de använder alla `Bob` identifierare). Attribution works on events 1 and 4 after replay stitching.
 
 ## Steg 2: Spela upp sammanfogning
 

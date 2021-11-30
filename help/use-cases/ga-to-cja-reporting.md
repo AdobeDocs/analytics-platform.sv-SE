@@ -1,18 +1,18 @@
 ---
 title: Rapport om Google Analytics data i Customer Journey Analytics
 description: Visar användbara rapporter om Google Analytics data i Customer Journey Analytics
-translation-type: tm+mt
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
+exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
 
 ---
 
-
 # Rapport om Google Analytics data i Customer Journey Analytics
 
-Nu när du har [inhämtat data från Google Analytics till Experience Platform och Customer Journey Analytics (CJA)](/help/use-cases/ga-to-cja.md) visar vi några användbara scenarier för rapportering av dessa data.
+Nu när du har [har inhämtat data från Google Analytics till Experience Platform och Customer Journey Analytics (CJA)](/help/use-cases/ga-to-cja.md)kommer vi att visa dig några användbara scenarier för rapportering av dessa data.
 
 ## Visualisera webbdata och appdata som kombinerade datauppsättningar
 
@@ -39,7 +39,7 @@ Nu ska vi titta på vilka webbsidor som ledde inkommande samtal till callcenter.
 Vi gör det här
 
 * Använder ett beräknat mätvärde för att filtrera data ner till endast sessioner som avslutades med ett anrop till en callcenter.
-* Använder deltagarmodellen i CJA:s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#cja-workspace).
+* Använda&quot;deltagarmodellen&quot; i CJA:s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#cja-workspace).
 
 Du ser enkelt vilka sidor som oftast deltar i en session som avslutas med ett samtal. Du ser att sidorna&quot;Kundvagn&quot; och&quot;Kassainformation&quot; ledde de flesta samtal. Eftersom du även har inkluderat data för mobilappen i Firebase kan du till och med se sidfel och appkrascher som genererar anropen. Detta är en mycket viktig datapunkt om ni vill leverera fantastiska upplevelser för webben och mobilappar.
 
@@ -63,10 +63,10 @@ Med Attribution IQ kan du enkelt filtrera data. Du kan bara se attribuering mot 
 
 ![](assets/filter.png)
 
-Slutligen kan du även tilldela dina webb- och appintäkter till ditt Google Ad-innehåll. Du kommer att märka att du har fått mer intäkter av att mobilappen drivs av våra Google Ads online än från webben. Genom att sortera annonser efter webb- och appintäkter får ni en helt annan bild av vad era främsta Google-annonser var.
+Slutligen kan du även tilldela dina webb- och appintäkter till ditt Google Ad Content. Du kommer att märka att du har fått mer intäkter av att mobilappen drivs av Google Ads online än via webben. Genom att sortera annonser efter webb- och appintäkter får ni en helt annan bild av vad era främsta Google-annonser var.
 
 ![](assets/google-ad.png)
 
-Utan CJA kunde du inte ha vetat att dina onlineannonser hade någon effekt på produkter som köpts i din mobilapp. Nu ser du att intäkterna från Google Ads för mobilappar utgör ytterligare 14 000-5 000 dollar jämfört med bara webben.
+Utan CJA kunde du inte ha vetat att dina onlineannonser hade någon effekt på produkter som köpts i din mobilapp. Nu ser du att Google Ads intäkter från mobilappar utgör ytterligare 14 000-5 000 dollar jämfört med bara webben.
 
 ![](assets/google-ad2.png)

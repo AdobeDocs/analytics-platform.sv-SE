@@ -2,9 +2,10 @@
 title: Customer Journey Analytics Guide
 description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
-source-git-commit: 0a44d4c80caa0198938a8f9c57f492c2aaaf9539
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '348'
 ht-degree: 4%
 
 ---
@@ -22,8 +23,8 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Nya eller aktuella objekt</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> Dokumentation om utökade anslutningsfunktioner </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en#cja-dataviews"> Dokumentation om förbättrade datavyer </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> Så här använder du de utökade funktionerna för anslutningshantering </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en#cja-dataviews"> Så här använder du de förbättrade datavyer-funktionerna </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#cja-usecases"> Dokumentation om inmatning av data från Google Analytics till Adobe Experience Platform </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=en#cja-usecases"> Dokumentation om att analysera Google Analytics-data i CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics) </a> </li>

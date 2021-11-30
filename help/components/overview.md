@@ -1,18 +1,18 @@
 ---
-title: Komponenter – översikt
+title: Vad är komponenterna i Customer Journey Analytics?
 description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem vid rapportering.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 11%
+source-wordcount: '344'
+ht-degree: 10%
 
 ---
 
 # Komponenter – översikt
 
-Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller komplettera rapporteringsfunktioner. Du kan hantera de här komponenterna på följande sätt:
+Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller som komplement till rapporteringsfunktioner. Du kan hantera de här komponenterna på följande sätt:
 
 1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) med dina Adobe ID-inloggningsuppgifter.
 2. Navigera till [!UICONTROL Components] > [!UICONTROL Components] i rubrikmenyn.
@@ -28,15 +28,15 @@ Du kan hantera följande komponenter:
 
 Komponenterna i Analysis Workspace består av mätvärden, dimensioner, filter och tidsdetaljer som du kan dra och släppa i ett projekt. Anpassade komponenter som du skapar läggs till i dessa paneler, till exempel anpassade datumintervall.
 
-Du öppnar panelen Komponenter genom att klicka på ikonen **[!UICONTROL Components]** i den vänstra listen. Du kan växla mellan paneler (Tom panel, [Frihandspanel](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabbinsikter](/help/analysis-workspace/c-panels/quickinsight.md) eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) och Komponenter med ikonerna för vänster spår eller genom att använda [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Du öppnar panelen Komponenter genom att klicka på **[!UICONTROL Components]** ikonen i den vänstra listen. Du kan växla mellan paneler (panelen Tom, [Frihandspanelen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md), eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och komponenter som använder ikonerna för den vänstra listen eller med [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
 ![](assets/components.png)
 
-Mer information om hur du använder komponenter i ett projekt finns i [Skapa ett projekt](/help/analysis-workspace/home.md).
+Se [Skapa ett projekt](/help/analysis-workspace/home.md) om du vill ha information om hur du använder komponenter i ett projekt.
 
 ## Komponentåtgärder
 
-Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka på **[!UICONTROL Actions]** högst upp i komponentlistan.
+Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka **[!UICONTROL Actions]** längst upp i komponentlistan.
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ Du kan hantera komponenter (individuellt eller genom att markera flera) på fler
 
 | Komponentåtgärd | Beskrivning |
 | --- | --- |
-| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
-| Favorit | Lägg till komponenten i listan med favoriter. Därefter visas det i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
-| Godkänn | Godkänn komponenten för att göra den kanonisk. Den visas sedan i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Sedan visas den i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters], eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Favorit | Lägg till komponenten i listan med favoriter. Sedan visas den i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL filters], eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
+| Godkänn | Godkänn komponenten för att göra den kanonisk. Sedan visas den i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters], eller  [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
 | Dela | Gäller endast filter. |
 | Ta bort | Gäller endast filter. |
 
@@ -56,4 +56,4 @@ Se videon Creating Metrics, Filters, and Dates:
 
 ## Behörigheter för komponentåtkomst
 
-I Analysis Workspace kan administratörer [kontrollera](/help/analysis-workspace/curate-share/curate.md) vilka komponenter som exponeras för användare vid rapportering.
+I Analysis Workspace kan administratörer [kuratera](/help/analysis-workspace/curate-share/curate.md) vilka komponenter som exponeras för användare vid rapportering.

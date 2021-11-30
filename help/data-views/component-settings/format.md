@@ -1,13 +1,14 @@
 ---
 title: Formatera komponentinställningar
 description: Konfigurera hur ett mått formateras.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 2%
 
 ---
-
 
 # Formatera komponentinställningar
 
@@ -18,7 +19,7 @@ Med Format kan du bestämma hur ett givet mätvärde ska visas.
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Format] | Här kan du ange formatering för ett mätresultat som Decimal, Time, Percent eller Currency. |
-| [!UICONTROL Decimal Places] | Visas inte i datatyperna för heltalsschemat. Här kan du ange hur många decimaler ett mätresultat ska visa. |
+| [!UICONTROL Decimal Places] | Visas inte på datatyperna för heltalsschemat. Här kan du ange hur många decimaler ett mätresultat ska visa. |
 | [!UICONTROL Currency] | Om formatet är Valuta, avgör vilken valuta du vill att måttet ska visas i. Detta alternativ gäller inte någon valutakonvertering. för gränssnittsformatering. |
 | [!UICONTROL Show upward trend as] | Här kan du ange om en uppåtgående trend för det här måttet är god (grön) eller dålig (röd). |
-| [!UICONTROL True value] och [!UICONTROL False value] | Endast synlig för datatyperna Boolean-schema. Gör att du kan anpassa dimensionsobjektetiketten för `true`- och `false`-värden. |
+| [!UICONTROL True value] och [!UICONTROL False value] | Endast synlig för datatyperna Boolean-schema. Här kan du anpassa dimensionsobjektetiketten för `true` och `false` värden. |

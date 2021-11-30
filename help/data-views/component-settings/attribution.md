@@ -1,13 +1,14 @@
 ---
 title: Inställningar för attribueringskomponent
 description: Gör att du kan ange standardattribuering för ett mätresultat.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 1%
 
 ---
-
 
 # Inställningar för attribueringskomponent
 
@@ -17,6 +18,6 @@ Med Attribution kan du ange en standardattribueringsmodell för ett mätresultat
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL Set attribution] | Aktiverar en standardattribueringsmodell när det här måttet används. Den här standardinställningen kan åsidosättas i ett [!UICONTROL Freeform Table]-värde eller i ett beräknat mått. |
-| [!UICONTROL Attribution model] | Här kan du ange vilken [standardattribueringsmodell](/help/analysis-workspace/attribution/models.md) som ska användas. Standardvärdet är [!UICONTROL Last Touch]. Alternativen är: Senaste beröring, första beröring, linjär, deltagande, samma beröring, U-Shaped, J-kurva, omvänd J, tidsfördröjning, anpassad, algoritmisk. Vissa av dessa alternativ skapar ytterligare fält som måste fyllas i, till exempel Anpassad eller Tidsåtgång. Du kan skapa flera mätvärden med samma fält - det innebär att du kan ha ett [!UICONTROL Last touch]-intäktsmått och ett [!UICONTROL First Touch]-intäktsmått, men baserat på samma intäktsfält i schemat. |
-| [!UICONTROL Lookback window] | Gör att du kan ange ett standardfönster för uppslag till ett mätvärde. Alternativen är: [!UICONTROL Person] (rapporteringsfönster), [!UICONTROL Session], [!UICONTROL Custom]. När [!UICONTROL Custom] är markerat ger vi dig också möjlighet att välja valfritt antal dagar/veckor/månader/osv. (upp till 90 dagar), precis som [!UICONTROL Attribution IQ]. Du kan ha flera mätvärden med samma schemafält, men var och en med ett separat uppslagsfönster. |
+| [!UICONTROL Set attribution] | Aktiverar en standardattribueringsmodell när det här måttet används. Den här standardinställningen kan åsidosättas i en [!UICONTROL Freeform Table] eller i ett beräknat mått. |
+| [!UICONTROL Attribution model] | Här kan du ange vilket standardvärde du vill använda [attribueringsmodell](/help/analysis-workspace/attribution/models.md) att använda. Standardvärdet är [!UICONTROL Last Touch]. Alternativen är: Senaste beröring, första beröring, linjär, deltagande, samma beröring, U-Shaped, J-kurva, omvänd J, tidsfördröjning, anpassad, algoritmisk. Vissa av dessa alternativ skapar ytterligare fält som måste fyllas i, till exempel Anpassad eller Tidsåtgång. Du kan skapa flera mätvärden med samma fält - det betyder att du kan ha ett [!UICONTROL Last touch] intäktsmått och ett [!UICONTROL First Touch] intäktsmått, men baserat på samma intäktsfält i schemat. |
+| [!UICONTROL Lookback window] | Gör att du kan ange ett standardfönster för uppslag till ett mätvärde. Alternativen är: [!UICONTROL Person] (Rapporteringsfönster), [!UICONTROL Session], [!UICONTROL Custom]. När [!UICONTROL Custom] har valts, ger vi dig också möjlighet att välja valfritt antal dagar/veckor/månader/osv. (upp till 90 dagar), precis som [!UICONTROL Attribution IQ]. Du kan ha flera mätvärden med samma schemafält, men var och en med ett separat uppslagsfönster. |

@@ -1,13 +1,14 @@
 ---
 title: Inställningar för värdepaketeringskomponenter
 description: Kombinera numeriska värden i en dimension.
-source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
+exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 1%
 
 ---
-
 
 # [!UICONTROL Value Bucketing] komponentinställningar
 

@@ -3,7 +3,8 @@ keywords: Analysis Workspace
 title: Översikt över Analysis Workspace
 description: Översikt över Analysis Workspace funktioner
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 3%
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en#analysis-workspace). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en#analysis-workspace). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt kan skapa analyser och dela insikter. Med dra-och-släpp-gränssnittet kan ni utforma analyser, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning, dela och schemalägga projekt med vem som helst i organisationen.
 
@@ -24,44 +25,44 @@ Om du bara har några minuter kan du titta på den här korta översikten för a
 
 ## Logga in Customer Journey Analytics {#login}
 
-Om du vill börja använda Analysis Workspace loggar du in på Customer Journey Analytics på [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
+Om du vill börja använda Analysis Workspace loggar du in på Customer Journey Analytics genom att gå till [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
 
 ![](assets/login-analytics.png)
 
 ## Använda självstudiekursen Utbildning {#training-tutorial}
 
-När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Starta självstudiekursen genom att klicka på **[!UICONTROL Create New Project]** och sedan välja **Utbildningskurs** inom det nya projektets modala.
+När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Klicka på **[!UICONTROL Create New Project]** och sedan markera **Utbildning - självstudiekurs** inom det nya projektet modalt.
 
 ![](assets/training-tutorial.png)
 
 ## Skapa ett nytt projekt {#new-project}
 
-När självstudiekursen är klar kan du börja skapa ditt första projekt. **Det nya projektet modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [ett tomt mobilstyrkort](/help/mobile-app/curator.md), beroende på om du tänker dela din analys från webbläsaren eller mobilappen Customer Journey Analytics dashboards.
+När självstudiekursen är klar kan du börja skapa ditt första projekt. The **nytt projekt modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [tomt mobilstyrkort](/help/mobile-app/curator.md), beroende på om du tänker dela din analys via webbläsaren eller mobilappen Customer Journey Analytics dashboards.
 
 ![](assets/create-new-project.png)
 
 ## Bygg en analys {#analysis}
 
-I ditt Workspace-projekt är **paneler, tabeller, visualiseringar och komponenter** tillgängliga från den vänstra listen. Detta är era projektbyggstenar.
+I ditt Workspace-projekt **paneler, tabeller, visualiseringar och komponenter** är åtkomliga från den vänstra listen. Detta är era projektbyggstenar.
 
 ### Komponenter
 
-**** Komponenter är dimensioner, mått, filter eller datumintervall, som alla kan kombineras i ett  **[!UICONTROL Freeform table]** formulär för att du ska kunna besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](/help/components/overview.md) innan du går in i analysen. När du har mastered component terminology kan du börja dra och släppa till [skapa en analys](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i en **[!UICONTROL Freeform table]**.
+**Komponenter** är dimensioner, mått, filter eller datumintervall, som alla kan kombineras i en **[!UICONTROL Freeform table]** för att börja besvara din affärsfråga. Var noga med att bekanta dig med varje [komponenttyp](/help/components/overview.md) innan du går in i analysen. När du har mastered component terminology kan du börja dra och släppa till [bygga en analys](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i en **[!UICONTROL Freeform table]**.
 
 ![](assets/build-components.png)
 
 ### Visualiseringar
 
-**Visualiseringar**, som stapel- eller linjediagram, läggs sedan till ovanpå data för att visuellt förverkliga dem. På den vänstra listen väljer du den mittersta **[!UICONTROL Visualizations]**-ikonen för att visa den fullständiga listan med [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) tillgängliga.
+**Visualiseringar**, t.ex. en stapel eller ett linjediagram, läggs sedan till ovanpå data för att visuellt ge dem liv. Markera mitten längst till vänster **[!UICONTROL Visualizations]** om du vill se hela listan med [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) tillgängliga.
 
 ![](assets/build-visualizations.png)
 
 ### Paneler
 
-**Paneler** används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. På den vänstra listen väljer du den översta **[!UICONTROL Panels]**-ikonen för att visa en fullständig lista över [paneler](/help/analysis-workspace/c-panels/panels.md) som är tillgängliga.
+**Paneler** används för att organisera analysen i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. Markera den översta **[!UICONTROL Panels]** om du vill se en fullständig lista över [paneler](/help/analysis-workspace/c-panels/panels.md) tillgängliga.
 
 ![](assets/build-panels.png)
 
 ## Ytterligare resurser {#resources}
 
-* Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
+* Adobe erbjuder hundratals [Videokurser om analys](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).

@@ -2,7 +2,8 @@
 title: Importera callcenter och webbdata
 description: Lär dig hur du skapar en datauppsättning som länkar callcenter och webbplatsdata.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 0%
@@ -30,33 +31,33 @@ Customer Journey Analytics har den värdefulla och robusta möjligheten att komb
 
 ## Importera webb- och callcenterdata till plattformen
 
-Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
+Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Ingrediera data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 
 När du importerar data till plattformen kan följande tips hjälpa dig att få bättre insikter i de resulterande rapporterna:
 
 * Kontrollera att den identifierare som används för att länka samman anropscenter- och webbdata är i liknande format.
-* Inkludera datakällan i varje datauppsättning. Ta till exempel med en `data_source`-kolumn i varje schema och ange värdet för varje händelse till `"Web"` eller `"Call center"`. <!--mapper-->
+* Inkludera datakällan i varje datauppsättning. Ta till exempel med en `data_source` -kolumnen i varje schema och ange värdet för varje händelse till `"Web"` eller `"Call center"`, respektive. <!--mapper-->
 
 ## Koppla samman person-ID:n
 
 CJA kräver en gemensam identifierare för att generera en [kombinerad datamängd](../connections/combined-dataset.md).
 
 * Om dina datauppsättningar redan har en gemensam identifierare för varje händelse i båda datauppsättningarna kan du hoppa över det här steget och fortsätta skapa en anslutning.
-* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser kan du sammanfoga data med hjälp av kanalövergripande analys. Se [Översikt över flerkanalsanalys](/help/connections/cca/overview.md) för steg som aktiverar CCA för dessa två datauppsättningar.
+* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser kan du sammanfoga data med hjälp av kanalövergripande analys. Se [Översikt över flerkanalsanalys](/help/connections/cca/overview.md) för steg för att aktivera CCA för dessa två datauppsättningar.
 
 ## Skapa en anslutning i CJA
 
-[Skapa en ](/help/connections/create-connection.md) anslutning i CJA.
+[Skapa en anslutning](/help/connections/create-connection.md) i CJA.
 
 * Om CCA används finns det en ny sammansatt datauppsättning att använda. Använd det nya sammanslagna ID-fältet som person-ID.
 * I annat fall kan du välja både ursprungliga webb- och callcenter-datauppsättningar som ska användas i anslutningen.
 
 ## Skapa en datavy
 
-När du har skapat en anslutning kan du [skapa en datavy](/help/data-views/create-dataview.md) som kan användas i Analysis Workspace. Några praktiska komponenter:
+När du har skapat en anslutning kan du [Skapa en datavy](/help/data-views/create-dataview.md) för användning i Analysis Workspace. Några praktiska komponenter:
 
 * En siddimension med senaste berörings- och sessionsbeständighet. Ni kan koppla kundens statistik till den sista sidan som kunden visade innan de ringde in.
-* A call metric that uses a Call center reason&#39; schema field to increase instances. Använd [Måttborttagning](/help/data-views/component-settings/metric-deduplication.md) så att den bara ökas en gång per session.
+* A call metric that uses a Call center reason&#39; schema field to increase instances. Använd [Metrisk deduplicering](/help/data-views/component-settings/metric-deduplication.md) så det bara ökas en gång per session.
 
 ## Skapa visualiseringar
 
@@ -66,13 +67,13 @@ Följande visualiseringar kan användas för att få insikter från din sammansl
 
 Denna visualisering hjälper er att förstå hur väl CCA sammanfogar data.
 
-1. Skapa två filter. Variabeln som används i dessa två filter är samma variabel som nämns ovan som återspeglar datakällan för varje händelse. Mer information finns i [Skapa ett filter](/help/components/filters/create-filters.md).
+1. Skapa två filter. Variabeln som används i dessa två filter är samma variabel som nämns ovan som återspeglar datakällan för varje händelse. Se [Skapa ett filter](/help/components/filters/create-filters.md) för mer information.
    * Personbehållare där datauppsättnings-ID är lika med dina webbdata
    * Personbehållare där datauppsättnings-ID är lika med dina kundtjänstdata
-2. I Analysis Workspace drar du en [Venn](/help/analysis-workspace/visualizations/venn.md)-visualisering till arbetsytan.
-3. Dra de två nyskapade filtren till **[!UICONTROL Add Filter]**-området och personmåttet till **[!UICONTROL Add Metric]**-området.
+2. I Analysis Workspace drar du en [Venn](/help/analysis-workspace/visualizations/venn.md) visualisering på arbetsytan.
+3. Dra de två nyskapade filtren till **[!UICONTROL Add Filter]** och personmåttet på **[!UICONTROL Add Metric]** område.
 
-Den resulterande Vennbildningen visar antalet personer i datauppsättningen som innehåller både webb- och callcenterdata. Ju större överlappning, desto fler personer sys ihop. De områden som inte överlappar representerar personer som endast finns i den ena datauppsättningen eller den andra.
+I den resulterande Venndatavisualiseringen visas antalet personer i datauppsättningen som innehåller både webb- och callcenterdata. Ju större överlappning, desto fler personer sys ihop. De områden som inte överlappar representerar personer som endast finns i den ena datauppsättningen eller den andra.
 
 ### Attribuera callcenter-händelser till webbsidor
 
@@ -81,7 +82,7 @@ I den här frihandstabellen kan du se de översta sidorna som bidrar till att ri
 1. Dra den dimension som innehåller webbsidans namn till en frihandsritabellvisualisering.
 1. Ersätt mätvärdet med det anropscentrerade mått som du vill mäta.
 1. Klicka på kugghjulsikonen nära måtthuvudet. Klicka på **[!UICONTROL Use non-default attribution model]**.
-1. Ange önskad [attribueringsmodell](/help/analysis-workspace/attribution/models.md). Exempel: en Time Decay-modell med en halveringstid på 15 minuter och ett Lookback-fönster för session. Den här attribueringsmodellen ger meriter till sidorna som leder fram till samtalet till ert callcenter.
+1. Ange önskat [Attributionsmodell](/help/analysis-workspace/attribution/models.md). Exempel: en Time Decay-modell med en halveringstid på 15 minuter och ett Lookback-fönster för session. Den här attribueringsmodellen ger meriter till sidorna som leder fram till samtalet till ert callcenter.
 
 Den resulterande rapporten visar de översta sidorna som driver samtal till ert callcenter. <!-- use case behind what we use these pages for -->
 
@@ -99,8 +100,8 @@ Du kan öka insikterna ytterligare med den här tabellen genom att dela upp samt
 
 Ni kan få insikt i vad en kund försökte göra innan de använde callcenterkanalen. Denna flödesvisualisering hjälper er att förstå de vanligaste resorna en kund tar för att nå ert callcenter. Med den här insikten kan ni fastställa de mest effektiva förbättringarna av er webbplats så att kunderna inte är lika benägna att ringa in.
 
-1. Klicka på fliken **[!UICONTROL Visualizations]** till vänster och dra en flödesvisualisering till arbetsytan.
-2. Klicka på fliken **[!UICONTROL Components]** till vänster och leta upp dimensionen Anledning till samtal.
+1. Klicka på **[!UICONTROL Visualizations]** till vänster och dra en flödesvisualisering till arbetsytan.
+2. Klicka på **[!UICONTROL Components]** till vänster och leta upp dimensionen Anledning till samtal.
 3. Klicka på den högra markören bredvid den här dimensionen. Den här åtgärden visar enskilda dimensionsvärden.
 4. Dra det önskade måttobjektet för anropsorsaken till mittplatsen för flödesvisualiseringen.
 5. Flödesvisualiseringen fyller automatiskt i tidigare och nästa anropsorsaker. Ersätt den föregående samtalsorsaken med webbplatsens siddimension.
@@ -110,9 +111,9 @@ Ni kan få insikt i vad en kund försökte göra innan de använde callcenterkan
 
 Hur många har ringt en gång, två gånger eller ringt 6+ gånger? En del av dem besöker aldrig webbplatsen. Använd histogramvisualisering för att avgöra hur många som hamnar i varje hink. För personer som aldrig besöker webbplatsen, se hur vi kan uppmuntra dem att själva använda webbtjänsten.
 
-1. Klicka på fliken **[!UICONTROL Visualizations]** till vänster och dra en histogramvisualisering till arbetsytan.
-2. Klicka på fliken **[!UICONTROL Components]** till vänster och dra anropsmåttet till histogramvisualiseringen.
-3. Klicka på **[!UICONTROL Show advanced settings]** i mitten av visualiseringen och anpassa önskade bucket.
+1. Klicka på **[!UICONTROL Visualizations]** till vänster och dra en histogramvisualisering till arbetsytan.
+2. Klicka på **[!UICONTROL Components]** till vänster och dra anropsmåtten till histogramvisualiseringen.
+3. Klicka **[!UICONTROL Show advanced settings]** mitt i visualiseringen och anpassa de önskade buckorna.
 4. Klicka på **[!UICONTROL Build]**.
 
 <!--

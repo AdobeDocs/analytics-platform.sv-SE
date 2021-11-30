@@ -2,7 +2,8 @@
 title: Vanliga frågor om Customer Journey Analytics
 description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%

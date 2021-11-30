@@ -1,11 +1,12 @@
 ---
-title: Hantera anslutningar
+title: Hantera anslutningar i Customer Journey Analytics
 description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
