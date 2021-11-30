@@ -4,13 +4,13 @@ description: Beskriver hur du konfigurerar Report Builder i CJA
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: e76f6cbb8ecf2032a8211d1c6bd18a79c2a6f5d2
+exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
+source-git-commit: fb4c8cf2d5dec5b49ecc81494a888fb6090379d6
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera Report Builder
 
@@ -32,7 +32,7 @@ Report Builder för Customer Journey Analytics stöds av följande operativsyste
 
    Alla Excel-användare med Windows-datorer måste installera Microsoft Edge Webview2 för att kunna använda tillägget. Så här installerar du styrenheten:
 
-   1. Gå till <http://aka.ms/webview2installer>.
+   1. Gå till <https://aka.ms/webview2installer>.
    1. Välj och hämta Evergreen Standalone Installer.
    1. Följ installationsanvisningarna.
 
@@ -85,7 +85,7 @@ När du har installerat tillägget Report Builder for Excel för din operativpla
 
 1. Klicka på ikonen Report Builder för att starta Report Builder.
 
-1. Klicka på **Logga in** i verktygsfältet Adobe Report Builder.
+1. I verktygsfältet i Adobe Report Builder klickar du på **Inloggning**.
 
    ![](./assets/rb_login.png)
 
@@ -115,4 +115,4 @@ Du kan logga ut från Report Builder från användarprofilen.
 
    ![](./assets/image6.png)
 
-1. Klicka på **Logga ut**.
+1. Klicka **Logga ut**.
