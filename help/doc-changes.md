@@ -3,7 +3,7 @@ title: CJA - dokumentationsuppdateringar
 description: Listar innehållsuppdateringar för den dokumentation för Customer Journey Analytics som angetts sedan december 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 5%
@@ -40,7 +40,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Mars 2021 | Nytt ämne [användarinställningar](/help/analysis-workspace/user-preferences.md) i Workspace. |
 | Februari 2021 | Nytt ämne om att använda [Marketing Channel-dimensioner i Adobe Experience Platform](/help/use-cases/marketing-channels.md). |
 | Februari 2021 | Publicera det nya [CJA API](https://www.adobe.io/cja-apis/docs/) dokumentation. |
-| Januari 2021 | Nytt ämne [lägga till globala sökningar i datauppsättningen](/help/use-cases/global-lookups.md). |
+| Januari 2021 | Nytt ämne [lägga till standardsökningar i datauppsättningen](/help/connections/standard-lookups.md). |
 | 13 november 2020 | Nya ämnen om [Flerkanalsanalys](/help/connections/cca/overview.md)som gör att du kan ändra inmatningen av en datauppsättnings person-ID och som möjliggör en sömlös kombination av flera datauppsättningar. |
 | 13 november 2020 | Ett nytt användningsexempel på [importera callcenter och webbdata](/help/use-cases/call-center.md) lades till. |
 | 11 november 2020 | Lagt till ett ämne [Uppskattar anslutningsstorleken](/help/connections/estimate-connection-size.md). |

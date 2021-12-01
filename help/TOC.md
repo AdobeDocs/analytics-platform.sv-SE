@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
+source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '556'
 ht-degree: 41%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 41%
    + [Hantera anslutningar](connections/manage-connections.md)
    + [Beräkna anslutningsstorlek](connections/estimate-connection-size.md)
    + [Kombinerade händelsedatamängder](connections/combined-dataset.md)
+   + [Standardsökningar](connections/standard-lookups.md)
    + Flerkanalsanalys {#cca}
       + [Översikt över flerkanalsanalys](connections/cca/overview.md)
       + [Så här spelar du upp](connections/cca/replay.md)
@@ -191,7 +192,6 @@ ht-degree: 41%
    + [Importera callcenter och webbdata](use-cases/call-center.md)
    + [Användningsfall vid datainhämtning](use-cases/data-ingestion.md)
    + [Använd mått för marknadsföringskanal](use-cases/marketing-channels.md)
-   + [Lägg till globala sökningar i datauppsättningarna](use-cases/global-lookups.md)
    + [Importera data från Google Analytics till Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Rapport om Google Analytics data i CJA](use-cases/ga-to-cja-reporting.md)
 + Kontrollpaneler för analyser {#cja-dashboards}
