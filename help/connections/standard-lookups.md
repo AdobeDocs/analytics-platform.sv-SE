@@ -3,9 +3,9 @@ title: Lägga till standardsökningar i datauppsättningar
 description: Använd standardsökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 4e31b02815e32695d97eab0f563c71725bc79c11
+source-git-commit: 0f2cbe4ff8bdc083fff363d9623afe68a5132d6f
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Lägga till standardsökningar i datauppsättningar
 
 >[!IMPORTANT]
->Standardsökningar är bara tillgängliga för datakällor i Analytics Data Connector i CJA. Du kan bara använda dem med Adobe Analytics standardimplementeringar eller [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)eller Experience Platform datainsamlings-API:erna.
+>Standardsökningar är bara tillgängliga för datakällor i Analytics Data Connector i CJA. Du kan använda dem med Adobe Analytics standardimplementeringar eller [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)eller Experience Platform datainsamlings-API:erna.
 
 Standarduppslag (kallas även uppslag som tillhandahålls av Adobe) förbättrar möjligheten för Customer Journey Analytics att rapportera om vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En &#39;standardsökning&#39; liknar en uppsättningen sökdata. Standardsökningar kan användas i olika Experience Cloud-organisationer. De tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten). Det finns en standarddatauppsättning för sökning för varje schemaplats som Adobe klassificerar.
 
@@ -21,7 +21,20 @@ I traditionella Adobe Analytics visas de här dimensionerna fristående, men i C
 
 ## Använd standardsökningar med datauppsättningar för Adobe Data Connector
 
-Datauppsättningar för standardsökning tillämpas automatiskt vid rapporttidpunkten. Om du använder Analytics Data Connector och har en dimension som Adobe tillhandahåller en standardsökning för, tillämpar vi automatiskt den här standardsökningen. Om en händelsedatamängd innehåller XDM-fält kan vi använda standardsökningar på den.
+Datauppsättningar för standardsökning tillämpas automatiskt vid rapporttillfället. Om du använder Analytics Data Connector och har en dimension som Adobe tillhandahåller en standardsökning för, tillämpar vi automatiskt den här standardsökningen. Om en händelsedatamängd innehåller XDM-fält kan vi använda standardsökningar på den.
+
+<!--
+### Specific IDs that need to be populated
+
+The following IDs need to be populated in the specific XDM mixins for this functionality to work:
+
+* Environment Details Mixin – device/typeID value populated - Must match Device Atlas IDs and will populate device data.
+* Adobe Analytics ExperienceEvent Template Mixin or Adobe Analytics ExperienceEvent Full Extension Mixin with analytics/environment/browserIDStr and analytics/environment/operatingSystemIDStr. Both must match the Adobe IDs and  populate browser and OS data, respectively.
+
+You need these mixins with the three IDs populated (device/typeID, environment/browserIDStr, and environment/operatingSystemIDStr). The lookup dimensions will then be pulled automatically by CJA and will be available in the Data View.
+
+The catch here is that they can only populate those IDs today if they have a direct relationship with Device Atlas. They are Device Atlas IDs, and they provide an API to allow a customer to look them up. This is a significant hurdle, and we may just want to take the reference to this capability out of the product documentation until we have a productized way to expose the Device Atlas ID lookup functionality.
+-->
 
 ### Tillgängliga standardsökfält
 
