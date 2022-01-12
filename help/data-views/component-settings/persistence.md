@@ -3,10 +3,10 @@ title: Inställningar för Persistence-komponent
 description: Bestäm hur eller om dimensionsvärdena ska behållas från en händelse till nästa.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 6%
+source-wordcount: '716'
+ht-degree: 5%
 
 ---
 
@@ -61,3 +61,15 @@ Information om tillgängliga förfalloinställningar.
 * **Person**: Upphör att gälla i slutet av rapporteringsfönstret.
 * **Tid**: Du kan ange att dimensionsvärdet ska förfalla efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. När du använder tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
 * **Mått**: När det här måttet visas i en träff upphör det beständiga värdet i dimensionen omedelbart att gälla. Du kan använda valfritt mätvärde som förfallodatum för den här dimensionen. Det här förfalloalternativet är bara tillgängligt för allokeringsinställningarna Original och Senaste.
+
+## [!UICONTROL Binding Dimension]
+
+En listruta där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga listrutealternativ innehåller andra dimensioner som ingår i datavyn.
+
+Den här inställningen används vanligtvis i objektarrayer och används oftast för att mäta t.ex. produktsökningsmetoder, interna sökresultat, visningar av interna erbjudanden eller innehåll- eller produktrekommendationer. I tidigare versioner av Adobe Analytics kallas detta för konverteringssyntaxförsäljning.
+
+## [!UICONTROL Binding Metric]
+
+En listruta där du kan välja ett mått som fungerar som en bindningsutlösare. Giltiga listrutealternativ är mått som ingår i datavyn.
+
+Den här inställningen visas bara när Dimensionen Bindning är lägre i objektarrayen än i komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen. I tidigare versioner av Adobe Analytics kallas detta för försäljning av produktsyntax.
