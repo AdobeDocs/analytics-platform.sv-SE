@@ -3,7 +3,7 @@ title: Inställningar för Persistence-komponent
 description: Bestäm hur eller om dimensionsvärdena ska behållas från en händelse till nästa.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 25557196c9841489e2732dece2c3402ebaf6224e
+source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 6%
@@ -55,12 +55,12 @@ Information om tillgängliga allokeringsinställningar.
 
 * **[!UICONTROL First Known]** och **[!UICONTROL Last Known]**: (19 januari 2022) Dessa två allokeringsmodeller uppfyller användningsvillkoren för &quot;inträde&quot; och &quot;avslutning&quot;. De tar det första eller sista observerade värdet för en dimension inom ett angivet beständigt omfång (session, person eller anpassad tidsperiod med uppslag) och tillämpar det på alla händelser inom det angivna omfånget. Exempel:
 
-| Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
-| --- | --- | --- | --- | --- | --- |
-| Tidsstämpel (min) | 1 | 2 | 3 | 6 | 7 |
-| Ursprungliga värden |  | C | B |  | A |
-| Första kända | C | C | C | C | C |
-| Senast känd | A | A | A | A | A |
+   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+   | --- | --- | --- | --- | --- | --- |
+   | Tidsstämpel (min) | 1 | 2 | 3 | 6 | 7 |
+   | Ursprungliga värden |  | C | B |  | A |
+   | Första kända | C | C | C | C | C |
+   | Senast känd | A | A | A | A | A |
 
 ## [!UICONTROL Expiration] inställningar
 
