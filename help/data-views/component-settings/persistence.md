@@ -3,9 +3,9 @@ title: Inställningar för Persistence-komponent
 description: Bestäm hur eller om dimensionsvärdena ska behållas från en händelse till nästa.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+source-git-commit: 3b00b8fe5dd4687bb8022d8e6e5e98ad2d535866
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '714'
 ht-degree: 5%
 
 ---
@@ -66,10 +66,10 @@ Information om tillgängliga förfalloinställningar.
 
 En listruta där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga listrutealternativ innehåller andra dimensioner som ingår i datavyn.
 
-Den här inställningen används vanligtvis i objektarrayer och används oftast för att mäta t.ex. produktsökningsmetoder, interna sökresultat, visningar av interna erbjudanden eller innehåll- eller produktrekommendationer. I tidigare versioner av Adobe Analytics kallas detta för konverteringssyntaxförsäljning.
+Den här inställningen används vanligtvis i objektarrayer och används oftast för att mäta t.ex. produktsökningsmetoder, interna sökresultat, visningar av interna erbjudanden eller innehåll- eller produktrekommendationer. I tidigare versioner av Adobe Analytics liknar detta konverteringssyntaxmarknadsföring.
 
 ## [!UICONTROL Binding Metric]
 
 En listruta där du kan välja ett mått som fungerar som en bindningsutlösare. Giltiga listrutealternativ är mått som ingår i datavyn.
 
-Den här inställningen visas bara när Dimensionen Bindning är lägre i objektarrayen än i komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen. I tidigare versioner av Adobe Analytics kallas detta för försäljning av produktsyntax.
+Den här inställningen visas bara när Dimensionen Bindning är lägre i objektarrayen än i komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen. I tidigare versioner av Adobe Analytics kallas produktsyntaxmarknadsföring för ett liknande men mer begränsat koncept.
