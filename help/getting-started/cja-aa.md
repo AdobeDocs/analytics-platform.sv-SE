@@ -3,9 +3,9 @@ title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1194'
 ht-degree: 3%
 
 ---
@@ -31,13 +31,14 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, operativsystem etc.) | CJA tillhandahåller dessa dimensioner internt så länge som bas-XDM-fälten (till exempel användaragent eller enhets-ID) fylls i. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Se våra [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Borttagning av GDPR | Fullt stöd; Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform]. CJA ärver alla dataändringar [!UICONTROL Experience Platform] till underliggande datamängder. |
 | Lista variabler/listutkast | Fullt stöd; CJA utnyttjar XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
+| Varaktighet för marknadsföringsvariabel | Fullt stöd (januari 2022) |
 | Mätvärden | Fullt stöd; CJA utnyttjar Experience Data Model (XDM) och stöder obegränsade mätvärden och är inte knutet till anpassade framgångshändelser i traditionell Analytics. Observera att vissa standardvärden har bytt namn från traditionell analys: Besökare = människor, besök = sessioner, träffar = händelser. |
 | Metrisk deduplicering | Fullt stöd |
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. |
 | PDF Export | Fullt stöd |
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
-| Report Builder (Excel-plugin) | Fullt stöd (oktober 2021) |
+| Report Builder (Excel-plugin) | Fullt stöd |
 | Bearbetning av rapporttid | Fullt stöd; CJA använder sig enbart av Report Time Processing. |
 | API-åtkomst för rapportering | Fullt stöd; Tillgängligt via [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Schemalagda rapporter/projekt | Fullt stöd |
@@ -79,9 +80,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Larm | Support planeras. |
 | Bidragsanalys | Support planeras. |
-| data warehouse-rapportering (100 % radexport) | Support planeras från Analysis Workspace gränssnitt. [!UICONTROL Experience Platform Query Service] har också ett gränssnitt för de här användningsfallen i CJA. |
+| data warehouse-rapportering (100 % radexport) | Support planeras från Analysis Workspace gränssnitt. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) har också ett gränssnitt för de här användningsfallen i CJA. |
 | ID Stitching via Device Graph | Support planeras. |
-| Varaktighet för marknadsföringsvariabel | Support planeras. |
 | Realtidsrapportering | Support planeras. |
 | Segment IQ | Support planeras. |
 | Segmentpublicering (skickar segment från Workspace till Experience Cloud) | Support planeras. |
