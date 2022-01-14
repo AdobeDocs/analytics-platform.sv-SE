@@ -2,18 +2,18 @@
 description: Visar de 5 högsta värdena för icke-tidsdimensioner (och 15 för tidsdimensioner).
 title: Förhandsgranska dimensioner i CJA Workspace
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 24%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Förhandsvisa dimensioner
+# Förhandsgranska dimensioner i Analysis Workspace
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Håll pekaren över informationsikonen (i) bredvid en dimension. Detta visar de 5 högsta värdena för icke-tidsdimensioner (och 15 för tidsdimensioner). Vi brukade hålla dessa värden statiska (dvs. de 5 valda värdena ändrades aldrig).
 
@@ -31,4 +31,4 @@ Som standard visas nu dynamiska värden i stället för statiska, med möjlighet
 
 När du håller muspekaren över ett mått och klickar på den grå högerpilen bredvid det visas en lista med dimensionsobjekt. Alla listor med dimensionsobjekt visar vanligtvis de översta artiklarna de senaste 30 dagarna.
 
-Om du bläddrar nedåt i listan visas ett **[!UICONTROL Show Top Items From Last 6 Months]**. Klicka på det här alternativet om du vill visa de översta dimensionsobjekten från de senaste 180 dagarna.
+Om du bläddrar nedåt till listan visas en **[!UICONTROL Show Top Items From Last 6 Months]**. Klicka på det här alternativet om du vill visa de översta dimensionsobjekten från de senaste 180 dagarna.

@@ -3,9 +3,9 @@ title: Skapa eller redigera en datavy
 description: Alla inställningar som du kan justera för att skapa eller redigera en datavy.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ När du skapar en datavy måste du antingen skapa mått och mått från schemael
 
 ![Ny datavy](assets/new-data-view.png)
 
-### Inställningar
+### Inställningar för datavy
 
 Innehåller övergripande inställningar för datavyn.
 
