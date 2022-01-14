@@ -3,9 +3,9 @@ title: Standard, komponentreferens
 description: Information och information om alla standardkomponenter som du kan lägga till i en datavy.
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: b4d2c564f9fc477212306dc022b4afc5ab92db97
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,23 @@ Dessa nödvändiga standardkomponenter läggs som standard till i varje datavy. 
 
 Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Standard Components]** -fliken.
 
-| Komponentnamn | Dimension eller mått | Anteckningar |
+| Komponentnamn | Dimension eller mått | Anteckningar och värden |
 | --- | --- | --- |
+| [!UICONTROL AM/PM] | Tidsdelningsdimension | FM eller EM |
+| [!UICONTROL Batch ID] | Dimension | Representerar Experience Platform-batchen som en [!UICONTROL Event] var en del av. |
+| [!UICONTROL Dataset ID] | Dimension | Representerar datauppsättningen Experience Platform som [!UICONTROL Event] var en del av. |
+| [!UICONTROL Day of Month] | Tidsdelningsdimension | 1-31 |
+| [!UICONTROL Day of Week] | Tidsdelningsdimension | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
+| [!UICONTROL Day of Year] | Tidsdelningsdimension | 1-366 |
+| [!UICONTROL Hour of Day] | Tidsdelningsdimension | 0-23 |
+| [!UICONTROL  Month of Year] | Tidsdelningsdimension | Januari-december |
+| [!UICONTROL Person ID] | Dimension | Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. The [!UICONTROL Person ID] är grunden för att kombinera datauppsättningar och identifiera unika besökare i CJA. |
+| [!UICONTROL Person ID namespace] | Dimension | Vilken typ av ID [!UICONTROL Person ID] består av. Exempel: `email address`, `cookie ID`, `Analytics ID`, osv. |
+| [!UICONTROL Quarter of Year] | Tidsdelningsdimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Session Starts] | Mått | Antalet händelser som var den första händelsen i en session. Vid användning i en filterdefinition (t.ex. &#39;[!UICONTROL Session Starts] finns&#39;), filtreras ned till den första händelsen i varje session. |
 | [!UICONTROL Session Ends] | Mått | Antalet händelser som var den sista händelsen i en session. Liknar [!UICONTROL Session Starts]kan den också användas i en filterdefinition för att filtrera fram till den sista händelsen i varje session. |
 | [!UICONTROL Time Spent (seconds)] | Mått | Sammanställer tiden mellan två olika värden för en dimension. |
 | [!UICONTROL Time Spent per Event] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Event] fickor. |
 | [!UICONTROL Time Spent per Session] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Session] fickor. |
 | [!UICONTROL Time Spent per Person] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Person] fickor. |
-| [!UICONTROL Batch ID] | Dimension | Representerar Experience Platform-batchen som en [!UICONTROL Event] var en del av. |
-| [!UICONTROL Dataset ID] | Dimension | Representerar datauppsättningen Experience Platform som [!UICONTROL Event] var en del av. |
+| [!UICONTROL Weekend]/[!UICONTROL Weekday] | Tidsdelningsdimension | Veckoslut eller Veckodag |
