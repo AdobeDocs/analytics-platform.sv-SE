@@ -3,9 +3,9 @@ title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 0f348f1d2119c902716a5e096a859521a4b316b0
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Innan du använder flerkanalsanalys bör du kontrollera att din organisation har
 
 ## Begränsningar
 
+>[!IMPORTANT]
+>
+>Observera att alla ändringar i det globala händelsedatamängdsschemat måste tillämpas även i det nya sammanfogade dataschemat, annars bryts den sammanfogade datauppsättningen.
+
 Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar för hur den kan användas.
 
 * Aktuella återskrivningsfunktioner är begränsade till ett steg (beständigt ID till tillfälligt ID). Återinmatning i flera steg (till exempel beständigt ID till ett tillfälligt ID och sedan till ett annat tillfälligt ID) stöds inte.
@@ -58,13 +62,14 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 När organisationen uppfyller alla krav och förstår sina begränsningar kan du följa de här stegen för att börja använda den i CJA.
 
 1. Importera önskade data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Ingrediera data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
-1. Kontakta din kontoansvarige på Adobe med följande information:
+1. Kontakta Adobe kundsupport med följande information:
    * En begäran om att aktivera flerkanalsanalys
    * Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för
    * Kolumnnamnet för det beständiga ID:t för den önskade datauppsättningen (identifierare som visas på varje rad)
    * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (länken för personidentifierare mellan datauppsättningar)
-   * Din inställning [spela upp](replay.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
-1. Adobe Technical Account Manager kommer att arbeta tillsammans med Adobe för att möjliggöra kanalövergripande analys när ni får er begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Den tekniska kontohanteraren för Adobe kan ange det nya datauppsättnings-ID:t och kolumnnamnet för person-ID:t.
+   * Din inställning [spela upp](replay.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster
+   * Namn på sandlåda.
+1. Adobe kundsupport kommer att arbeta tillsammans med Adobe-teknik för att möjliggöra flerkanalsanalys när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Adobe kundsupport kan ange det nya datauppsättnings-ID:t och namn på kolumn för person-ID.
 1. När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som i början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data så långt tillbaka i tiden.
 1. [Skapa en anslutning](../create-connection.md) i CJA med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
 1. [Skapa en datavy](/help/data-views/create-dataview.md) baserat på anslutningen.
