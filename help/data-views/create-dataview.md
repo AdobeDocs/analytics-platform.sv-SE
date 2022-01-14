@@ -3,9 +3,9 @@ title: Skapa eller redigera en datavy
 description: Alla inställningar som du kan justera för att skapa eller redigera en datavy.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -84,21 +84,23 @@ Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använd
    * [[!UICONTROL Persistence]](component-settings/persistence.md)
    * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
 
-Om det behövs kan du använda följande funktioner:
+## Duplicera mått eller dimensioner
 
-* **[!UICONTROL Duplicate]**: Att duplicera mått och dimensioner och sedan ändra specifika inställningar är ett enkelt sätt att skapa flera mått eller dimensioner från ett enda schemafält. Välj [!UICONTROL Duplicate] inställningen under måttets eller dimensionernas namn högst upp till höger. Ändra den nya dimensionen eller måttet och spara det under ett mer beskrivande namn.
+Att duplicera mått och dimensioner och sedan ändra specifika inställningar är ett enkelt sätt att skapa flera mått eller dimensioner från ett enda schemafält. Välj [!UICONTROL Duplicate] inställningen under måttets eller dimensionernas namn högst upp till höger. Ändra den nya dimensionen eller måttet och spara det under ett mer beskrivande namn.
 
-   ![Duplicera](assets/duplicate.png)
+![Duplicera](assets/duplicate.png)
 
-* **[!UICONTROL Filter]**: Du kan filtrera schemafält i den vänstra listen med följande datatyper:
+## Filtrera schemafält eller datauppsättningar
 
-   ![Filtrera fält](assets/filter-fields.png)
+Du kan filtrera schemafält i den vänstra listen med följande datatyper:
 
-   Du kan också filtrera efter datauppsättningar och efter om ett schemafält innehåller data eller om det är en identitet. Som standard använder Adobe från början **[!UICONTROL Contains data]** filtrera till alla datavyer.
+![Filtrera fält](assets/filter-fields.png)
 
-   ![Filtrera andra](assets/filter-other.png)
+Du kan också filtrera efter datauppsättningar och efter om ett schemafält innehåller data eller om det är en identitet. Som standard använder Adobe från början **[!UICONTROL Contains data]** filtrera till alla datavyer.
 
-## Inställningar
+![Filtrera andra](assets/filter-other.png)
+
+## Fliken Inställningar
 
 1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och går till **[!UICONTROL Data Views]** -fliken.
 1. Klicka **[!UICONTROL Add]** om du vill skapa en datavy eller klicka på en befintlig datavy för att redigera den.
