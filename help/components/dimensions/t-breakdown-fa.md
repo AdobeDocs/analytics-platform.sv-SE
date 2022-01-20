@@ -3,10 +3,10 @@ description: Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 keywords: Analysis Workspace
 title: Dela upp dimensioner
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
+source-git-commit: 0176f10ffed85786b0bfa77204ca7a19d9c39ba7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,3 +44,25 @@ Anpassa era data på ett obegränsat sätt efter era specifika behov. skapa frå
 Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar **[!UICONTROL Edit]**:
 
 ![Brytningsinställningar](assets/breakdown_settings.png)
+
+Detta är det förväntade beteendet när du tillämpar attribueringsmodeller på uppdelningar eller redigerar dem:
+
+* Om du tillämpar en attribuering när det inte finns några andra attribut gäller attribueringen för hela kolumnträdet.
+
+* Om du lägger till en uppdelning efter att en attribuering har tillämpats, används standardvärdet för den angivna uppdelning som lades till (om den dimensionen har ett standardvärde). I annat fall används den uppdelning som görs från den överordnade kolumnen. Vissa dimensioner har en standardallokering. Tidsdimensioner och Referens använder till exempel samma beröring. Produktdimensionen använder Senaste beröring. Andra dimensioner saknar standardvärde och använder den överordnade kolumntilldelningen.
+
+* Om det redan finns attribut i kolumnträdet påverkas bara den du redigerar om du ändrar attributet.
+
+## Videor
+
+Lägga till mått och mätvärden i ditt projekt i Analysis Workspace:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30606)
+
+Arbeta med dimensioner i en friformstabell:
+
+>[!VIDEO](https://video.tv.adobe.com/v/40179)
+
+Dimension uppdelad efter position:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24033)
