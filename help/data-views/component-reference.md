@@ -3,9 +3,9 @@ title: Standard, komponentreferens
 description: Information och information om alla standardkomponenter som du kan lägga till i en datavy.
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
-source-git-commit: b4d2c564f9fc477212306dc022b4afc5ab92db97
+source-git-commit: 9d08d5c80c8d31ffeca4f829798d0fd1700b0cc8
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONT
 | [!UICONTROL Day of Year] | Tidsdelningsdimension | 1-366 |
 | [!UICONTROL Hour of Day] | Tidsdelningsdimension | 0-23 |
 | [!UICONTROL  Month of Year] | Tidsdelningsdimension | Januari-december |
-| [!UICONTROL Person ID] | Dimension | Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. The [!UICONTROL Person ID] är grunden för att kombinera datauppsättningar och identifiera unika besökare i CJA. |
+| [!UICONTROL Person ID] | Dimension | Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. The [!UICONTROL Person ID] är grunden för att kombinera datauppsättningar och identifiera unika besökare i CJA.<p>Möjliga användningsområden:<ul><li>Skapa ett filter för ett specifikt person-ID-värde för att filtrera allt efter användarens beteende.</li><li>Felsökning: Kontrollera att det finns data för ett specifikt cookie-ID (eller ett specifikt kund-ID).</li><li>Identifiera de användare som ringde in till ett callcenter.</li></ul> |
 | [!UICONTROL Person ID namespace] | Dimension | Vilken typ av ID [!UICONTROL Person ID] består av. Exempel: `email address`, `cookie ID`, `Analytics ID`, osv. |
 | [!UICONTROL Quarter of Year] | Tidsdelningsdimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Session Starts] | Mått | Antalet händelser som var den första händelsen i en session. Vid användning i en filterdefinition (t.ex. &#39;[!UICONTROL Session Starts] finns&#39;), filtreras ned till den första händelsen i varje session. |
