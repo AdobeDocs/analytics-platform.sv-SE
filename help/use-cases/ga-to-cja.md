@@ -3,7 +3,7 @@ title: Importera data från Google Analytics till Adobe Experience Platform
 description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) för att importera Google Analytics-data till Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 445317efa636024dbaf0ac34b6a74b52b92b9000
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Du kan också spela in direktuppspelningshändelser från Google Tag Manager dir
 
 ### 1. Lägg till anpassade variabler
 
-När du har loggat in på Google Tag Manager-kontot måste du lägga till vissa anpassade konstantvariabler för Adobe. Du har förmodligen redan variabler i Google Tag Manager som skickas till Google Analytics, som kundens e-postadress, kundens namn, språk och kundens inloggningsstatus. Du måste definiera fem nya anpassade variabler:
+När du har loggat in på Google Tag Manager-kontot måste du lägga till vissa anpassade konstantvariabler för Adobe. Du har antagligen redan variabler i Google Tag Manager som skickas till Google Analytics, som kundens e-postadress, kundens namn, språk och kundens inloggningsstatus. Du måste definiera fem nya anpassade variabler:
 
 * Adobe Experience Cloud org-ID
 * Slutpunkt för DCS-direktuppspelning
