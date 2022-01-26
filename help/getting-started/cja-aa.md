@@ -3,9 +3,9 @@ title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
+source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1304'
 ht-degree: 3%
 
 ---
@@ -79,6 +79,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Larm | Support planeras. |
+| Kalenderhändelser | Anteckningar kallas för Anteckningar i Workspace. |
 | Classification Rule Builder | Fungerar något annorlunda i CJA, med hjälp av strängändringar vid rapporttidpunkten i stället för att söka efter datauppsättningar. |
 | Bidragsanalys | Support planeras. |
 | data warehouse-rapportering (100 % radexport) | Support planeras från Analysis Workspace gränssnitt. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) har också ett gränssnitt för de här användningsfallen i CJA. |
@@ -98,11 +99,11 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Activity Map | Support är ännu inte planerat. |
 | Advertising Cloud | Support är ännu inte planerat. |
 | Klassificeringsregelverktyget | Support är ännu inte planerat. |
+| Valutakonvertering | Support är ännu inte planerat. |
 | Datafeeds | Support är ännu inte planerat. |
+| Realtidsrapporter | Support är ännu inte planerat. |
 | Sammanfattningsdatakällor | Support är ännu inte planerat. |
 | Datakällor för transaktions-ID | Support är ännu inte planerat. |
-| Valutakonvertering | Support är ännu inte planerat. |
-| Realtidsrapporter | Support är ännu inte planerat. |
 
 ## Stöds aldrig
 
@@ -110,5 +111,4 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 * Rapporter och analyser på kontrollpaneler
 * Bokmärken för rapporter och analyser
 * Rapporter och analysmål
-* Rapporter och analyskalenderhändelser
 * Mobiltjänster
