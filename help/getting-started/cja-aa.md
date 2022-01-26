@@ -3,9 +3,9 @@ title: Funktioner i Customer Journey Analytics
 description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics-funktioner.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
+source-git-commit: d46779a30fd841194f8ba0e80ab17ea5714569db
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1300'
 ht-degree: 3%
 
 ---
@@ -69,8 +69,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Funktion | Anteckningar |
 | --- | --- |
-| Punktfiltrering | För Analytics Source Connector-baserade datauppsättningar tillämpas robotfiltrering. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
-| Medieanalys | Mediedata är tillgängliga som en del av Analytics Data Connector. |
+| Punktfiltrering | För [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
+| Medieanalys | Mediedata är tillgängliga som en del av Analytics Source Connector. |
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Panelerna Segmentjämförelse, Analytics for Target (A4T) och Media Concurrent Viewer stöds inte. |
 | Bearbetningsregler | För datauppsättningar baserade på Analytics Data Connector tillämpas fortfarande bearbetningsregler. [Prestandafunktioner för data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) kan också användas som ersättning för bearbetningsregler för data som går direkt till plattformen. |
 
@@ -98,10 +98,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Activity Map | Support är ännu inte planerat. |
 | Advertising Cloud | Support är ännu inte planerat. |
-| Klassificeringsregelverktyget | Support är ännu inte planerat. |
 | Valutakonvertering | Support är ännu inte planerat. |
 | Datafeeds | Support är ännu inte planerat. |
-| Realtidsrapporter | Support är ännu inte planerat. |
 | Sammanfattningsdatakällor | Support är ännu inte planerat. |
 | Datakällor för transaktions-ID | Support är ännu inte planerat. |
 
