@@ -1,13 +1,13 @@
 ---
 title: Använda bindningsdimensioner och mätvärden i CJA
 description: Attributdimensioner till objektarrayer för komplex beständighetsanalys.
-source-git-commit: b93809c9af02227295c9dd66565f04675236c393
+exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
+source-git-commit: 4381a01b072084701d065d7f41de539412c8d371
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '837'
 ht-degree: 1%
 
 ---
-
 
 # Använda bindningsdimensioner och mätvärden i CJA
 
@@ -15,7 +15,81 @@ Customer Journey Analytics erbjuder flera sätt att behålla dimensionsvärden e
 
 Även om du kan använda bindningsdimensioner med händelsedata på den översta nivån är detta koncept bäst när du arbetar med [Arrayer med objekt](object-arrays.md). Du kan tilldela en dimension till en del av en objektarray utan att använda den på alla attribut i en viss händelse. Du kan t.ex. tilldela en sökterm till en produkt i kundvagnens objektmatris utan att binda söktermen till hela händelsen.
 
-## Exempel 2: Använda bindningsmått för att koppla söktermen till ett produktköp
+## Exempel 1: Använd bindningsdimensioner för att tilldela ytterligare produktattribut till ett inköp
+
+Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När den bundna dimensionsobjektet visas, kommer CJA tillbaka den bundna dimensionen och inkluderar den i händelsen för dig. Tänk på följande kundresa:
+
+1. En besökare ser en produktsida på en tvättmaskin.
+
+   ```json
+   {
+       "PersonID": "1",
+       "product_views": 1,
+       "product": [
+           {
+               "name": "Washing Machine 2000",
+               "color": "white",
+               "type": "front loader",
+           },
+       ],
+       "timestamp": 1534219229
+   }
+   ```
+
+1. Besökaren visar sedan en produktsida på en torktumlare.
+
+   ```json
+   {
+       "PersonID": "1",
+       "product_views": 1,
+       "product": [
+           {
+               "name": "Dryer 2000",
+               "color": "neon orange",
+           },
+       ],
+       "timestamp": 1534219502
+   }
+   ```
+
+1. I slutändan handlar de om ett inköp. Färgen på varje produkt ingick inte i köphändelsen.
+
+   ```json
+   {
+       "PersonID": "1",
+       "orders": 1,
+       "product": [
+           {
+               "name": "Washing Machine 2000",
+               "price": 1600,
+           },
+           {
+               "name": "Dryer 2000",
+               "price": 499
+           }
+       ],
+       "timestamp": 1534219768
+   }
+   ```
+
+Om du vill se intäkt per färg utan en bindande dimension, dimensionen `product.color` Bevaras och attribuerar felaktigt tillgodoräknande av torktumlarens färg:
+
+| product.color | intäkt |
+| --- | --- |
+| neon orange | 2099 |
+
+Du kan gå till Data View Manager och binda produktfärg till produktnamn:
+
+![Bindningsdimension](assets/binding-dimension.png)
+
+När du anger den här beständighetsmodellen tar Adobe hänsyn till produktnamnet när produktfärgen anges. När den känner igen samma produktnamn i en efterföljande händelse för den här besökaren, hämtas även produktfärgen. Samma data skulle se ut ungefär så här när du binder produktfärg till produktnamn:
+
+| product.color | intäkt |
+| --- | --- |
+| vit | 1600 |
+| neon orange | 499 |
+
+## Exempel 2: Använd bindningsmått för att koppla söktermen till ett produktköp
 
 En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att binda en sökterm till en produkt så att varje sökterm får erkännande för den produkt som passar bäst. Tänk på följande kundresa:
 
@@ -204,11 +278,7 @@ Om du använde den senaste allokeringen med söktermdimensionen tilldelar alla t
 
 Det här exemplet innehåller bara en besökare, men många besökare som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
 
-Med en bindningsdimension noterar Adobe vilken dimensionsartikel den är bunden till. När samma bindningsvärde visas i en efterföljande händelse, förs dimensionsobjektet över så att du kan tilldela det önskade måttet till det. I det här exemplet kan vi ange bindningsdimensionen för search_term till produktnamn:
-
-![Bindningsdimension](assets/binding-dimension.png)
-
-När vi anger den här dimensionen i Data View Manager måste vi också ange ett bindningsmått eftersom bindningsdimensionen finns i en objektmatris. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I den här exempelimplementeringen innehåller sökresultatsidan alltid en sökterm och ett sökmått. Vi kan binda söktermer till produktnamn när sökstatistiken finns.
+Med en bindningsdimension noterar Adobe vilken dimensionsartikel den är bunden till. När samma bindningsvärde visas i en efterföljande händelse, förs dimensionsobjektet över så att du kan tilldela det önskade måttet till det. I det här exemplet kan vi ange bindningsdimensionen för search_term till produktnamn. När vi anger den här dimensionen i Data View Manager måste vi också ange ett bindningsmått eftersom bindningsdimensionen finns i en objektmatris. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I den här exempelimplementeringen innehåller sökresultatsidan alltid en sökterm och ett sökmått. Vi kan binda söktermer till produktnamn när sökstatistiken finns.
 
 ![Bindningsmått](assets/binding-metric.png)
 
