@@ -3,7 +3,8 @@ title: Hur man beräknar CJA-anslutningsstorlek
 description: Rapportera om din nuvarande användning av Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+feature: Connections
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%

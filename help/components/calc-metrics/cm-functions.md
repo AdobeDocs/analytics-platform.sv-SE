@@ -1,8 +1,9 @@
 ---
 title: Referens - grundläggande funktioner
 description: Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
+feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
 
@@ -21,7 +22,7 @@ Här är en lista i alfabetisk ordning över funktionerna och deras definitioner
 
 >[!NOTE]
 >
->Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck för mätvärden. [!DNL MAXV(metrics)] tillåter till exempel även för [!DNL MAXV(PageViews + Visits).]
+>Plats [!DNL metric] identifieras som ett argument i en funktion, tillåts även andra uttryck för mätvärden. Till exempel: [!DNL MAXV(metrics)] kan även [!DNL MAXV(PageViews + Visits).]
 
 ## Tabellfunktioner kontra radfunktioner
 
@@ -89,7 +90,7 @@ COUNT(metric)
 
 ## Exponent (rad)
 
-Returnerar *e* upphöjt till ett angivet tal. Konstanten *e* är lika med 2.71828182845904, basen för den naturliga logaritmen. EXP är den inverterade LN, den naturliga logaritmen av ett tal.
+Returnerar *e* upphöjt till ett visst tal. Konstanten *e* är lika med 2,71828182845904, den naturliga logaritmens bas. EXP är den inverterade LN, den naturliga logaritmen av ett tal.
 
 ```
 EXP(metric)
@@ -104,7 +105,7 @@ EXP(metric)
 Strömoperator
 
 <pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*... (y gånger)
+pow(x,y) = x<sup>y</sup> = x*x*x*.. (y gånger)
 </pre>
 
 ## Medel (tabell)
@@ -209,11 +210,11 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-*Om *quart* = 0 returnerar QUARTILE minimivärdet. Om *quart* = 1 returnerar QUARTILE den första kvartilen (25 percentiler). Om *quart* = 2 returnerar QUARTILE den första kvartilen (50 percentil). Om *quart* = 3 returnerar QUARTILE den första kvartilen (75 percentiler). Om *quart* = 4 returnerar QUARTILE det maximala värdet.
+*Om *quart* = 0, QUARTILE returnerar det minsta värdet. If *quart* = 1, KVARTIL returnerar den första kvartilen (25 percentiler). If *quart* = 2, KVARTIL returnerar den första kvartilen (50 percentiler). If *quart* = 3, KVARTIL returnerar den första kvartilen (75 percentiler). If *quart* = 4, QUARTILE returnerar maxvärdet.
 
 ## Ansökningstillfälle
 
-Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln Round( *Intäkter*) för att avrunda intäkten till närmaste dollar, eller 569 USD. En produkt som rapporterar 569,51 USD avrundas till närmaste dollar, eller 570 USD.
+Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln Round() *Intäkter*) för att avrunda intäkterna till närmaste dollar, eller 569 dollar. En produkt som rapporterar 569,51 USD avrundas till närmaste dollar, eller 570 USD.
 
 ```
 ROUND(metric)
@@ -268,7 +269,7 @@ Ekvationen för STDEV är:
 
 ![](assets/std_dev.png)
 
-där x är samplingsmedelvärdet (*metrisk*) och *n* är samplingsstorleken.
+där x är provets medelvärde (*mått*) och *n* är samplingsstorleken.
 
 ```
 STDEV(metric)
@@ -295,7 +296,7 @@ Ekvationen för VARIANS är:
 
 ![](assets/variance_eq.png)
 
-där x är medelvärdet för samplingen, MEAN(*metrisk*) och *n* är samplingsstorleken.
+där x är medelvärdet för provet, MEAN(*mått*), och *n* är samplingsstorleken.
 
 ```
 VARIANCE(metric)
@@ -321,6 +322,6 @@ Anta att du har en kolumn med tre objekt:
 
 2
 
-1
+3
 
 Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.

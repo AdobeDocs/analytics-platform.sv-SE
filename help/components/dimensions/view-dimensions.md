@@ -1,11 +1,12 @@
 ---
 description: Visar de 5 högsta värdena för icke-tidsdimensioner (och 15 för tidsdimensioner).
 title: Förhandsgranska dimensioner i CJA Workspace
+feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '225'
+ht-degree: 23%
 
 ---
 

@@ -2,8 +2,9 @@
 description: projekt med endast visning i arbetsytan
 keywords: Visa endast  projekt
 title: Visa endast  projekt
+feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 3%
@@ -14,9 +15,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-Du kan dela projekt som&quot;endast visning&quot; till mottagare via arbetsflödet [Projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
+Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
 ![](assets/view-only-project.png)
 
@@ -25,7 +26,7 @@ Du kan dela projekt som&quot;endast visning&quot; till mottagare via arbetsflöd
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dolt vänster spår
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till ett [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till en [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
 * Frihand # av synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering

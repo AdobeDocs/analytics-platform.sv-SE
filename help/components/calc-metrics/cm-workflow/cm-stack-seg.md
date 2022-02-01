@@ -1,25 +1,27 @@
 ---
 description: Visar hur du staplar och ersätter filter i verktyget för beräkning av mätvärden.
-title: Stapla och ersätta filter
-source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
+title: Stack and replace filters
+feature: Calculated Metrics
+exl-id: a396599c-2033-40a7-90b5-f9c84106c328
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
 
 ---
 
-# Stapla och ersätta filter
+# Stack and replace filters
 
-Visar hur du staplar och ersätter filter i verktyget för beräkning av mätvärden.
+Shows how to stack and replace filters within the Calculated Metric Builder.
 
 ## Staplingsfilter {#stack-filter}
 
-I arbetsytan Definition släpper du bara det nya filtret bredvid det befintliga:
+In the Definition canvas, simply drop the new filter next to the existing one:
 
 ![](assets/cm_stack_seg.png)
 
 ## Ersätta ett filter med ett annat {#replace-filter}
 
-I arbetsytan Definition släpper du bara det nya filtret ovanpå det befintliga:
+In the Definition canvas, simply drop the new filter on top of the existing one:
 
 ![](assets/cm_replace_seg.png)

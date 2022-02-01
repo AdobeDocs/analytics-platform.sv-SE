@@ -1,9 +1,9 @@
 ---
 description: Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen.
 title: Radinställningar
-uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
+feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 2%

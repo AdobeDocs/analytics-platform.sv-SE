@@ -1,9 +1,10 @@
 ---
 title: Dimensioner med mycket hög kardinalitet i Customer Journey Analytics
 description: Beskriver de bästa sätten att hantera högkardinalitetsmått i Customer Journey Analytics
+feature: Dimensions
+solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-translation-type: tm+mt
-source-git-commit: 8ae1cb5a84b26258fb30f6e630744b2e36a48e5c
+source-git-commit: 0e9d612e1c0f6d64cd6f1e045c1049a1f8202b72
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -34,7 +35,7 @@ Observera att även om beräknade värden ibland kan returnera uppskattningar ä
 
 ### Om alla dimensionsvärden beaktas
 
-Även om det finns begränsningar för vissa beräknade värden och antal dimensionsrader, ska du vara medveten om att följande funktioner alltid tar hänsyn till alla unika värden i alla dimensioner, oavsett om en dimension är mycket kardinal eller inte:
+Även om det finns begränsningar för vissa beräknade mått och antal dimensionsrader, ska du vara medveten om att följande funktioner alltid tar hänsyn till alla unika värden i alla dimensioner, oavsett om en dimension är mycket kardinal eller inte:
 
 * Måttattribuering och dimensionsallokering
 * Sökningar efter radobjekt som har tillämpats på en frihandsritabell

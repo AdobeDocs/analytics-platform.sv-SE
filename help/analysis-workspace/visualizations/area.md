@@ -1,18 +1,18 @@
 ---
 description: Områdesvisualiseringen är som ett linjediagram, men med ett färgat område under linjen.
 title: Områdesdiagram och staplat områdesdiagram
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: d9662b29-fc41-4074-8cf6-031202994ece
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 8%
 
 ---
 
-
 # Områdesdiagram och staplat områdesdiagram
 
-## Område {#section_FDC4B6AA944F4F8AAAEAA5E17359F28A}
+## Yta {#section_FDC4B6AA944F4F8AAAEAA5E17359F28A}
 
 Den här visualiseringen är som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden.
 
@@ -27,4 +27,3 @@ Den här visualiseringen är som ett ytdiagram, men varje serie börjar högst u
 En ny visualiseringsinställning för staplade ytvisualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering.
 
 ![](assets/areastacked100.png)
-

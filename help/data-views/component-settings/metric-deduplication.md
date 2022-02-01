@@ -3,7 +3,8 @@ title: Komponentinställningar för måttborttagning av dubbletter
 description: Räkna bara den första förekomsten av ett mätvärde i rapporter.
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+feature: Data Views
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 1%

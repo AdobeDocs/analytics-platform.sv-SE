@@ -2,10 +2,9 @@
 description: Översikt över arbetsyteprojekt med menyrad och inställningar
 keywords: Analysis Workspace
 title: Översikt över projekt
-uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
+feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 2%
@@ -18,7 +17,7 @@ Med arbetsyteprojekt kan du kombinera datakomponenter, tabeller och visualiserin
 
 ## Projektlista {#project-list}
 
-När du först går till **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** visar sidan alla projekt som du äger eller har delats med dig. Detta är också landningssidan för Adobe Analytics, såvida du inte tidigare har angett en anpassad landningssida.
+När du först besöker **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** visas alla projekt som du äger eller har delat med dig. Detta är också landningssidan för Adobe Analytics, såvida du inte tidigare har angett en anpassad landningssida.
 
 ![](assets/sample-project.png)
 
@@ -27,12 +26,12 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 | Element | Beskrivning |
 |---|---|
 | [Skapa nytt projekt](/help/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden. |
-| Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla projekt och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
+| Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt i en lista och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
 | Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
 | [Visa Tutorials](/help/analysis-workspace/home.md) | Här finns Analysis Workspace videokurser. |
 | Namn | Namn på Workspace-projektet. |
 | Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
-| Typ | Anger om det här är ett Workspace-projekt eller ett [Mobile Scorecard](/help/mobile-app/home.md). |
+| Typ | Anger om det här är ett arbetsyteprojekt eller ett [Mobile Scorecard](/help/mobile-app/home.md). |
 | [Projektroll](/help/analysis-workspace/curate-share/share-projects.md) | Anger din roll för projektet - ägare, redigera, duplicera, visa. |
 | Taggar | Taggar som tillämpades på projektet. |
 | Senast ändrad | Datum och tid när projektet senast ändrades. |
@@ -41,23 +40,23 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 
 ## Menyrad {#menu-bar}
 
-I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga till komponenter, söka efter hjälp och mycket mer. Du kan även komma åt alla menyalternativ via tangentbordet [kortkommandon](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga till komponenter, söka efter hjälp och mycket mer. Alla menyalternativ kan också nås via tangentbordet [genvägar](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
 ![](assets/menu.png)
 
 | Menyalternativ | Beskrivning |
 |---|---|
-| Projekt | Innehåller vanliga åtgärder för projekthantering, bland annat Ny, Öppna, Spara, Spara som och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Med alternativen för att hämta CSV och ](/help/analysis-workspace/curate-share/download-send.md) PDF kan du exportera data från Workspace. **Projektinformation och inställningar**  (se nedan) innehåller många alternativ för att hantera ditt projekt. |
+| Projekt | Innehåller vanliga åtgärder för projekthantering, bland annat Ny, Öppna, Spara, Spara som och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Hämta CSV och PDF](/help/analysis-workspace/curate-share/download-send.md) kan du exportera data från arbetsytan. **Projektinformation och inställningar** (se nedan) erbjuder många alternativ för att hantera ditt projekt. |
 | Redigera | Ångra eller gör om den senaste åtgärden. Rensa alla återställer projektet till en tom startpunkt. |
 | Infoga | Infoga nya paneler eller visualiseringar från den här menyn. Du kan även infoga nya paneler och visualiseringar från den vänstra listen. |
 | [Komponenter](/help/components/overview.md) | Skapa nya filter, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |
-| [Dela](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratera, dela och schemalägg PDF/CSV-projekt för mottagare i organisationen. |
-| Hjälp | Få tillgång till hjälpdokumentation, videor och Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för arbetsytetips samt [felsökaren](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om arbetsytan och faktorer som påverkar projektet [prestanda](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
+| [Dela](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratera, dela och schemalägg PDF/CSV-projekt till mottagare i organisationen. |
+| Hjälp om  | Få tillgång till hjälpdokumentation, videor och analyser [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för arbetsytetips och [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om arbetsytan och faktorer som påverkar projektet [prestanda](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
 | Dela-knapp eller ägare | Om du är i en egen eller Redigera för projektet ger knappen Dela i det övre högra hörnet tillgång till ett klick för att hantera projektmottagarna. Om du har en dubblett- eller vyroll för projektet visas projektägarens namn. |
 
 ### Projektinformation och inställningar {#info-settings}
 
-**[!UICONTROL Workspace]** >  **[!UICONTROL Project]** >  **[!UICONTROL Project Info & Settings]** innehåller projektnivåinformation om det aktiva projektet.
+**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** innehåller information på projektnivå om det aktiva projektet.
 
 ![](assets/projectinfo.png)
 
@@ -76,9 +75,9 @@ Inställningarna inkluderar:
 
 ## Vänster räl {#left-rail}
 
-I ett projekt är [paneler](/help/analysis-workspace/c-panels/panels.md), tabeller, [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) och [komponenter] tillgängliga från den vänstra listen. Detta är era projektbyggstenar.
+Inom ett projekt [paneler](/help/analysis-workspace/c-panels/panels.md), tabeller, [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och [komponenter] är åtkomliga från den vänstra listen. Detta är era projektbyggstenar.
 
-Du kan även komma åt visualiseringar och paneler från den tomma panelen[a1/>.](/help/analysis-workspace/c-panels/blank-panel.md)
+Du kan även komma åt visualiseringar och paneler via [Tom panel](/help/analysis-workspace/c-panels/blank-panel.md) också.
 
 Komponenter (Dimensioner, Metrisk, Filter, Datumintervall) i den vänstra listen relaterar till den aktiva panelens datavy. Den aktiva panelen kommer att ha en blå ram runt sig och den aktiva datavyn kommer att visas högst upp i komponentspåret.
 
@@ -90,13 +89,13 @@ Projektarbetsytan är där du sammanför paneler, tabeller, visualiseringar och 
 
 Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser. Den aktiva panelen har en blå ram runt sig och avgör vilka komponenter som är tillgängliga i den vänstra listen.
 
-Beroende på vilken startpunkt du väljer för dina projekt har du antingen en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) på arbetsytan som ska börja med. Det snabbaste sättet att börja analysera är att markera en eller flera komponenter och helt enkelt dra och släppa dem på arbetsytan i projektet. En datatabell återges automatiskt åt dig. [Lär dig ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mer om de olika alternativen för att skapa en tabell, eller använd vår  [självstudiekurs ](/help/analysis-workspace/home.md) för mer vägledning om hur du skapar ditt första projekt.
+Beroende på vilken startpunkt du väljer för dina projekt har du antingen en [frihandsritbord](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) på arbetsytan till att börja med. Det snabbaste sättet att börja analysera är att markera en eller flera komponenter och helt enkelt dra och släppa dem på arbetsytan i projektet. En datatabell återges automatiskt åt dig. [Läs mer](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) om de olika alternativen för att skapa en tabell eller utnyttja [självstudiekurs](/help/analysis-workspace/home.md) för mer vägledning om hur du skapar ditt första projekt.
 
 ![](assets/canvas.png)
 
 ## Projektledare {#manager}
 
-Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Projekt**. Projekthanteraren visar de objekt som en viss användare har skapat. Projektägarskap kan överföras till en ny användare under Admin > Analytics Users &amp; Assets > Transfer Assets.
+Analysis Workspace-projekt kan hanteras under **Analytics > Components > Projects**. Projekthanteraren visar de objekt som en viss användare har skapat. Projektägarskap kan överföras till en ny användare under Admin > Analytics Users &amp; Assets > Transfer Assets.
 
 I Projects Manager kan du lägga till, tagga, dela, duplicera/kopiera och mycket mer. Sök efter ett projekt i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, ägare, projekttyp med mera.
 

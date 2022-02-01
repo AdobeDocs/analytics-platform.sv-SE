@@ -1,9 +1,9 @@
 ---
 description: Analysupptäckt i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 title: Statistiska tekniker som används för avvikelseidentifiering
-uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
+feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 2%
@@ -14,17 +14,17 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Analysupptäckt i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 
-Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för att upptäcka avvikelser per timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
+Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för avvikelseidentifiering varje timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
 
 ## Analysidentifiering för daglig granularitet
 
 För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
 
-Urvalet av tidsseriemodell baseras på följande kombinationer för typ av fel, trend och säsongsberoende (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Algoritmen försöker i synnerhet med följande kombinationer:
+Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Algoritmen försöker i synnerhet med följande kombinationer:
 
 1. ANA (additivt fel, ingen trend, additiv säsongsvariation)
 1. AAA (additivt fel, additiv trend, additiv säsongsvariation)
@@ -43,9 +43,9 @@ Efter modellval justerar algoritmen sedan resultaten baserat på helger och års
 * Cyber Monday
 * 24-26 december
 * Januari 1
-* 31 december
+* December 31
 
-Dessa helgdagar valdes ut baserat på omfattande statistisk analys av många kunddatapunkter för att identifiera helger som matchar flest kundtrender. Även om listan inte är fullständig för alla kunder eller affärscykler, fann vi att användningen av dessa helger avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
+Dessa helgdagar valdes ut baserat på omfattande statistisk analys av många kunddatapunkter för att identifiera helger som har störst betydelse för det högsta antalet kundtrender. Även om listan inte är fullständig för alla kunder eller affärscykler, fann vi att användningen av dessa helger avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
 
 När modellen har valts och helger har identifierats i rapportdatumintervallet utförs algoritmen på följande sätt:
 

@@ -1,18 +1,19 @@
 ---
 title: Komponentinställningar
-description: Visa kärninställningar för en komponent.
+description: Visa huvudinställningar för en datavykomponent.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+feature: Data Views
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
 # Komponentinställningar
 
-Kärninställningar som en komponent använder.
+Kärninställningar som används av en datavykomponent.
 
 ![Komponentinställningar](../assets/component-settings.png)
 

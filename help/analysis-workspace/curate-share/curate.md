@@ -2,8 +2,9 @@
 description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
 keywords: Analysis Workspace kurser
 title: Kuratprojekt
+feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 1%
@@ -21,10 +22,10 @@ Med kurering kan du begränsa komponenterna (mått, mått, filter, datuminterval
 
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 De komponenter som används i projektet läggs automatiskt till.
-1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till fältet [!UICONTROL Curate Components].
+1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till [!UICONTROL Curate Components] fält.
 1. Klicka på **[!UICONTROL Done]**.
 
-Du kan också använda kurering från menyn [!UICONTROL Share] genom att klicka på **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
+Du kan också använda Kurva från [!UICONTROL Share] genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
 ![](assets/curation-field.png)
 
@@ -44,7 +45,7 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## Alternativ för komponenturval
 
-I ett välstrukturerat projekt får mottagaren alternativet att **[!UICONTROL Show All]**-komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
+I ett välstrukturerat projekt kan mottagaren välja att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
 
 * Användarens behörighetsnivå (admin eller icke-admin)
 * Projektroll (ägare/redigerare eller inte)

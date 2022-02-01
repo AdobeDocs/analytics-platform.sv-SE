@@ -1,15 +1,15 @@
 ---
 description: Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
-keywords: Analysis Workspace;Synchronize visualization with data source
+keywords: Analysis Workspace;Synkronisera visualisering med datakälla
 title: Hantera datakällor
-translation-type: tm+mt
-source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
+feature: Visualizations
+exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 4%
+source-wordcount: '555'
+ht-degree: 3%
 
 ---
-
 
 # Hantera datakällor
 
@@ -19,9 +19,9 @@ Med synkronisering av visualiseringar kan du styra vilken datatabell eller datak
 
 Genom att hantera en datakälla kan du visa datakällan eller låsa markeringen. Dessa inställningar avgör hur visualiseringen ändras (eller inte ändras) när nya data kommer in.
 
-1. [Skapa ett ](/help/analysis-workspace/home.md) projekt med en datatabell och en  [visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+1. [Skapa ett projekt](/help/analysis-workspace/home.md) med en datatabell och en [visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 1. Markera cellerna (datakällan) som du vill koppla till visualiseringen i datatabellen.
-1. I visualiseringen klickar du på punkten bredvid titeln för att visa dialogrutan **[!UICONTROL Data Source]**. Välj **[!UICONTROL Show Data Source]** eller **[!UICONTROL Lock Selection]**.
+1. I visualiseringen klickar du på punkten bredvid titeln för att visa **[!UICONTROL Data Source]** -dialogrutan. Välj **[!UICONTROL Show Data Source]** eller **[!UICONTROL Lock Selection]**.
 
    ![](assets/manage-data-source.png)
 

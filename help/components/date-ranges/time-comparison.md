@@ -1,9 +1,9 @@
 ---
 description: Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år för år, kvartal för kvartal, månad för månad.
 title: Datumjämförelse
-uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
+feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
@@ -53,7 +53,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
    ![](assets/compare-time-barchart.png)
 
-   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages]-inställningen markerad i [!UICONTROL Visualization Settings].
+   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages] inställningen är markerad i [!UICONTROL Visualization Settings].
 
 ## Lägg till en tidsperiodkolumn för jämförelse
 
@@ -91,7 +91,7 @@ Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from 
 
 >[!IMPORTANT]
 >
->Den här inställningen är **inaktiverad** (omarkerad) för alla befintliga projekt och **aktiverad** (markerad) för alla nya projekt.
+>Den här inställningen är **inaktiverad** (ej markerat) för alla befintliga projekt och **aktiverad** (markerat) för alla nya projekt.
 
 Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse mellan oktober och september 2016 börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september:
 

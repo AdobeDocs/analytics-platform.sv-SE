@@ -1,7 +1,9 @@
 ---
 description: Visar hur du skapar ett enkelt mått för"Sidvyer per besök".
 title: Skapa ett enkelt mätvärde för sidvisningar per besök
-source-git-commit: 50c56d718ae7a7f6e3d788b9f755831a7522337c
+feature: Calculated Metrics
+exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 7%
@@ -12,7 +14,7 @@ ht-degree: 7%
 
 Visar hur du skapar ett enkelt mått för&quot;Sidvyer per besök&quot;.
 
-En detaljerad beskrivning av UI-komponenterna finns i [Byggmått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+En detaljerad beskrivning av UI-komponenterna finns i [Bygg mått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 Så här skapar du ett enkelt mått för&quot;Sidvyer per besök&quot;.
 

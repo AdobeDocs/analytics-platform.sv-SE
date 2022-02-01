@@ -3,7 +3,8 @@ title: Inställningar för värdepaketeringskomponenter
 description: Kombinera numeriska värden i en dimension.
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+feature: Data Views
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 1%

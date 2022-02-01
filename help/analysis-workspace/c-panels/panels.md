@@ -1,8 +1,9 @@
 ---
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
+feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 1%

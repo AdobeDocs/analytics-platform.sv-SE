@@ -2,8 +2,9 @@
 description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
 keywords: Analysis Workspace
 title: Schemalägg projekt
+feature: Curate and Share
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 1%
@@ -14,19 +15,19 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
-På arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
+Från arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
 
 ## Skicka filen nu
 
 Så här skickar du en fil direkt till mottagarna via e-post:
 
-1. Klicka på **Dela > Skicka fil nu**.
+1. Klicka **Dela > Skicka fil nu**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
-1. Klicka på **Skicka nu**.
+1. Klicka **Skicka nu**.
 1. (Valfritt) Klicka på **Visa schemaläggningsalternativ** för att ange ett leveransschema.
 
 ![Skicka filen nu](assets/send-file-no-scheduling-options.JPG)
@@ -35,19 +36,19 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
-1. Klicka på **Dela > Skicka fil på schema**.
+1. Klicka **Dela > Skicka fil enligt schema**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
 1. Ange intervallet som schemat ska levereras över genom att ändra Inledande och Avslutande på indata. Slutdatumet måste vara inom ett år från den dag då schemat skapas eller ändras.
 1. Ange leveransfrekvens. Varje frekvens tillåter olika anpassningar.
-1. Klicka på **Skicka enligt schema**.
+1. Klicka **Skicka enligt schema**.
 
 ![](assets/send-file.JPG)
 
 ## Schemalagd projekthanterare
 
-Schemalagda Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Schemalagda projekt**.
+Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
 
 I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
 

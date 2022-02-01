@@ -1,8 +1,9 @@
 ---
 title: Översikt över attribuering
 description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsobjekt.
+Feature: Attribution
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 43%
@@ -13,7 +14,7 @@ ht-degree: 43%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Attribution ger analytiker möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
 
@@ -43,7 +44,7 @@ Customer Journey Analytics förbättrar attribueringen genom att låta dig:
 
 Attribution IQ omfattar följande funktioner:
 
-* [Attribution panel](../c-panels/attribution.md): Utnyttja alla dimensioner och mätvärden och jämför dem snabbt med olika attribueringsmodeller.
-* [Tillämpa attribuering på ett mätvärde](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md): Använd en icke-standardattribuering för alla mätvärden i ett projekt.
+* [Attributionspanelen](../c-panels/attribution.md): Utnyttja alla dimensioner och mätvärden och jämför dem snabbt med olika attribueringsmodeller.
+* [Tillämpa attribuering på ett mätresultat](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md): Använd en icke-standardattribuering för alla mätvärden i ett projekt.
 * [Tillämpa attribuering på en fördelning](/help/components/dimensions/t-breakdown-fa.md): Använd en icke-standardattribuering vid en uppdelning.
 * [Jämför attribueringsmodeller](/help/components/apply-create-metrics.md): Se snabbt hur olika attribueringsmodeller jämför olika mätvärden.

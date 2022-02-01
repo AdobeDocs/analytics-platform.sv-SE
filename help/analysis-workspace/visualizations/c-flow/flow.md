@@ -1,8 +1,9 @@
 ---
 description: Flödesfunktionen visar kundvägar via era webbplatser och appar.
 title: Översikt över flöden
+feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 2%
@@ -19,11 +20,11 @@ Här kan du:
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, som inmatning, en viss dimension eller avslut
 * Skapa filter genom att ange en specifik punkt i en vald bana
 
-[Videosjälvstudiekurs](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) om flödesvisualisering (4:56)
+[Videosjälvstudiekurs om flödesvisualisering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
 ## Mellandimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
-Du kan visa [flödet mellan dimensioner](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
+Du kan visa [flöde mellan dimensioner](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
 
 Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en släppzon för att lägga till den dimensionen i diagrammet.
 

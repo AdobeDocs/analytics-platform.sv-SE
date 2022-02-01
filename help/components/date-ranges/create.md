@@ -1,8 +1,9 @@
 ---
 title: Skapa ett datumintervall
 description: Skapa ett datumintervall för rapportering.
+feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -13,18 +14,18 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan skapa ett anpassat datumintervall på något av följande två sätt:
 
-* Direkt i ett arbetsyteprojekt genom att klicka på knappen `+` bredvid listan med datumintervallkomponenter till vänster
+* Direkt i ett arbetsyteprojekt genom att klicka på`+`&#39; vid listan med datumintervallkomponenter till vänster
 * Inom datumintervallhanteraren
 
 Så här skapar du ett datumintervall i datumintervallhanteraren:
 
-1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 1. Navigera till [!UICONTROL Components] > [!UICONTROL Date Ranges].
-1. Klicka på knappen [!UICONTROL Add] för att öppna det modala fönstret som skapar ett datumintervall.
+1. Klicka på [!UICONTROL Add] för att öppna det modala fönstret som skapar ett datumintervall.
 
 ## Skapa ett modalt datumintervallfönster
 
@@ -32,7 +33,7 @@ Det modala fönstret har fyra fält som du kan redigera:
 
 * **Datumintervall**: Datumintervallet som du vill använda för den här komponenten.
 * **Titel**: Namnet som du vill använda för den här komponenten. Titeln används i arbetsyteprojekt.
-* **Beskrivning**: Den beskrivning som du vill använda för den här komponenten. Beskrivningen visas när du klickar på ikonen ![i](../assets/i.png).
+* **Beskrivning**: Den beskrivning som du vill använda för den här komponenten. Beskrivningen visas när du klickar på ![i](../assets/i.png) ikon.
 * **Taggar**: Använd taggar för att ordna datumintervallen. Ett datumintervall kan tillhöra flera taggar.
 
 ## Markera ett datumintervall

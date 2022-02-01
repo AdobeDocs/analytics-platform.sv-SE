@@ -3,7 +3,8 @@ title: Översikt över flerkanalsanalys
 description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-source-git-commit: 0f348f1d2119c902716a5e096a859521a4b316b0
+feature: Cross-Channel Analytics
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%

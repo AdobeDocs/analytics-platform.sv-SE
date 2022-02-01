@@ -1,10 +1,10 @@
 ---
 description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som, spara som mall och öppna tidigare versioner.
 title: Spara projekt
-feature: Workspace Basics
+feature: CJA Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 1c19c8cb9cad7b4b7938915d04396cc4646a1f32
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Spara projekt
 
-Om du vill spara ändringarna i ett projekt går du till menyn Arbetsyta **[!UICONTROL Project]**. Arbetsytan sparar även projekt automatiskt i vissa fall.
+Om du vill spara ändringarna i ett projekt går du till arbetsytan **[!UICONTROL Project]** -menyn. Arbetsytan sparar även projekt automatiskt i vissa fall.
 
 ## Spara projektalternativ {#Save}
 
-Det finns olika åtgärder att spara som du kan utföra under menyn **[!UICONTROL Project]**, beroende på hur du vill komma åt analysen i framtiden.
+Det finns olika åtgärder att spara som du kan utföra under **[!UICONTROL Project]** -menyn, beroende på hur du vill komma åt analysen i framtiden.
 
 | Åtgärd | Beskrivning |
 |---|---|
 | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en beskrivning (valfritt) och lägga till (valfria) taggar. |
-| **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningar lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
+| **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningarna lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
 | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
-| **[!UICONTROL Save as template]** | Spara projektet som en [anpassad mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgänglig för din organisation under **[!UICONTROL Project > New]** |
+| **[!UICONTROL Save as template]** | Spara projektet som en [egen mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
 
 ![](assets/save-project.png)
 
@@ -48,11 +48,11 @@ Webbläsaren varnar för att ändringar som inte sparats går förlorade. Du kan
 
 ### Webbläsaren kraschar eller sessionstider ut
 
-När du återgår till arbetsytan för **befintliga**-projekt visas en modal **projektåterställning**. Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
+För **befintlig** projekt, när du återgår till arbetsytan visas en **Projektåterställning** modal. Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
 
 ![](assets/project-recovery.png)
 
-För **nya**-projekt som aldrig har sparats går det inte att återställa ändringar som inte har sparats.
+För **new** projekt som aldrig har sparats går inte att återställa ändringar som inte har sparats.
 
 ## Öppna föregående version {#previous-version}
 
@@ -67,6 +67,6 @@ Så här öppnar du en tidigare version av ett projekt:
    ![](assets/previous-versions.png)
 
 1. Granska listan över tidigare versioner.
-   [!UICONTROL Timestamp] och  [!UICONTROL Editor] visas förutom  [!UICONTROL Notes] om de lades till när de  [!UICONTROL Editor] sparades. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
+   [!UICONTROL Timestamp] och [!UICONTROL Editor] visas utöver [!UICONTROL Notes] om de lades till när [!UICONTROL Editor] sparad. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
 1. Välj en tidigare version och klicka på **[!UICONTROL Load]**.
 Den föregående versionen läses sedan in med ett meddelande. Den tidigare versionen blir inte den aktuella sparade versionen av projektet förrän du klickar på **[!UICONTROL Save]**. Om du navigerar bort från den inlästa versionen visas den senast sparade versionen av projektet när du kommer tillbaka.

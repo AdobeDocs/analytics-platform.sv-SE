@@ -1,10 +1,10 @@
 ---
 description: Interaktioner med tangentbord, kortkommandon och beteenden för peka och klicka som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
+feature: CJA Workspace Basics
 title: Snabbtangenter (kortkommandon)
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 5%

@@ -1,18 +1,18 @@
 ---
 description: Streckvisualiseringen visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
 title: Stapeldiagram och staplat stapeldiagram
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: a4458694-0c90-4e44-88d5-575737a61c36
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 8%
 
 ---
 
-
 # Stapeldiagram och staplat stapeldiagram
 
-## Stapel {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
+## Liggande {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
 
 Den här visualiseringen visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
 
@@ -29,4 +29,3 @@ Den här visualiseringen är som ett stapeldiagram, men med seriestaplarna stapl
 En ny visualiseringsinställning för staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering:
 
 ![](assets/stacked_100_percent.png)
-

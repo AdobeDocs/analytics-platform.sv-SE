@@ -1,7 +1,9 @@
 ---
 description: Visar exempel på filtrerade och viktade mätvärden.
 title: Filtrerade och viktade mätvärden
-source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
+feature: Calculated Metrics
+exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 5%

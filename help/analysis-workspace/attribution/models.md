@@ -1,8 +1,9 @@
 ---
 title: Attributmodeller och uppslagsfönster
 description: Hur olika typer av attribuering delar upp kredit mellan dimensionsposter.
+Feature: Attribution
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 0%
@@ -13,12 +14,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Attributkonceptet i Customer Journey Analytics kräver två komponenter:
 
 * **Attributionsmodell:** Modellen beskriver distributionen av konverteringar till träffar i en grupp. Till exempel första beröringen eller sista beröringen.
-* **Fönster för attribueringssökning:** Uppslagsfönstret beskriver vilka grupper av träffar som beaktas för varje modell. Exempel: besök eller besökare.
+* **Fönster för attributsökning:** Uppslagsfönstret beskriver vilka grupper av träffar som ska användas för varje modell. Exempel: besök eller besökare.
 
 ## Attributionsmodeller
 
@@ -32,19 +33,19 @@ Attributkonceptet i Customer Journey Analytics kräver två komponenter:
 | ![J-Shaped](assets/j_shaped.png) | J-Shaped | Ger 60 % kreativitet till den senaste interaktionen, 20 % tack till den första interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % poäng för den senaste interaktionen och 25 % kredit ges till den första. | Den här modellen passar perfekt för dem som prioriterar Finders och Closers, men som vill fokusera på att stänga interaktioner. J-Shaped-attribuering används ofta av team som har ett mer balanserat tillvägagångssätt och vill tillgodoräkna kanaler som stängt en konvertering mer. |
 | ![Inverterad J-formad](assets/inverse_j.png) | Inverterad J | Ger 60 % kredit till den första beröringspunkten, 20 % kredit till den sista beröringspunkten och delar de återstående 20 % till alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % kredit för den första interaktionen och 25 % kredit för den sista. | Den här modellen är perfekt för dem som prioriterar finare och närare, men som vill fokusera på att hitta interaktioner. Inverterad J-attribuering används av team som använder ett mer balanserat tillvägagångssätt och vill tillgodoräkna kanaler som initierade en konvertering mer. |
 | ![Anpassat](assets/custom.png) | Anpassad | Gör att du kan ange de vikter du vill ge de första beröringspunkterna, de sista beröringspunkterna och eventuella mellanliggande beröringspunkter. De angivna värdena normaliseras till 100 % även om de anpassade siffrorna inte läggs till i 100. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För interaktioner med två beröringspunkter ignoreras parametern middle. Den första och sista beröringspunkten normaliseras sedan till 100 % och krediteringen tilldelas därefter. | Den här modellen är perfekt för dem som vill ha fullständig kontroll över sin attribueringsmodell och har särskilda behov som andra attribueringsmodeller inte uppfyller. |
-| ![Tidsminskning](assets/time_decay.png) | Time-Decay | Följer och exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2^(-t/halflife)`, där `t` är tiden mellan en beröringspunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %. | Perfekt för team som regelbundet genomför videoreklam eller marknadsför mot händelser med ett förutbestämt datum. Ju längre en konvertering sker efter en marknadsföringshändelse, desto mindre kredit ges. |
+| ![Tidsminskning](assets/time_decay.png) | Time-Decay | Följer och exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2^(-t/halflife)`, där `t` är tiden mellan en kontaktpunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %. | Perfekt för team som regelbundet genomför videoreklam eller marknadsför mot händelser med ett förutbestämt datum. Ju längre en konvertering sker efter en marknadsföringshändelse, desto mindre kredit ges. |
 | ![Deltagande](assets/participation.png) | Deltagande | Alla unika kontaktpunkter får 100 % beröm. Det totala antalet konverteringar är uppblåst jämfört med andra attribueringsmodeller. Deltagande duplicerar kanaler som ses flera gånger. | Utmärkt för att förstå vilka kunder som ofta exponeras för en viss interaktion. Medieorganisationer använder ofta den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder ofta den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
 | ![Algoritmisk](assets/algorithmic.png) | [Algoritmisk](/help/analysis-workspace/attribution/algorithmic.md) | Använder statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. | Användbar för att undvika gissningar och krångel när du väljer rätt attribueringsmodell för ditt företag. |
 
 ## Sökfönster
 
-Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för att inkludera kontaktpunkter. Attributionsmodeller som ger större tilltro till första interaktioner ser större skillnader när du visar olika uppslagsfönster.
+Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för att inkludera kontaktpunkter. Attributionsmodeller som ger större kreativitet åt de första interaktionerna ser större skillnader när du visar olika uppslagsfönster.
 
 * **Besök fönstret för sökning:** Går tillbaka till början av besöket där en konvertering inträffade. Besöksfönster är smala eftersom de inte ser bortom besöket. Besöksfönster respekterar den ändrade besöksdefinitionen i datavyer.
 
-* **fönster för besökarsökning:** ser ut vid alla besök fram till den 1:e i månaden av det aktuella datumintervallet. Besöksfönster är breda, eftersom de kan omfatta många besök. Vid sökning efter besökare beaktas alla värden från början av månaden i rapportens datumintervall. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september.
+* **Sökfönster:** Alla besök utförs fram till den 1:e i månaden av det aktuella datumintervallet. Besöksfönster är breda, eftersom de kan omfatta många besök. Vid sökning efter besökare beaktas alla värden från början av månaden i rapportens datumintervall. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september.
 
-* **Anpassat fönster för sökning:** Gör att du kan utöka attribueringsfönstret utanför rapportdatumintervallet upp till maximalt 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
+* **Anpassat uppslagsfönster:** Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet upp till maximalt 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
 
 ## Exempel
 
@@ -56,15 +57,15 @@ Titta på följande exempel:
 
 Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
 
-* Om du använder **första beröring** och ett **besöksfönster** letar attribueringen bara efter det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
-* Med **första beröring** och ett **besökarfönster**, söker attribueringen efter alla tre besöken. Betalsökning var först, så den får 100 % rabatt på 50 USD.
-* Om du använder **linear** och ett **besöksfönster** delas krediteringen mellan e-post och skärm. Båda dessa kanaler får 25 krediter.
-* Om du använder **linjär** och ett **besökarfönster** delas krediteringen mellan betalsökningar, sociala medier, e-post och visning. Varje kanal får 12,50 dollar i rabatt för detta inköp.
-* Om du använder **J-formad** och ett **besökarfönster**, delas krediteringen mellan betalsökningar, sociala medier, e-post och visning.
+* Använda **första beröringen** och **besök uppslagsfönstret**, attribuering tittar bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
+* Använda **första beröringen** och **besökarfönster**, attribueringen tittar på alla tre besöken. Betalsökning var först, så den får 100 % rabatt på 50 USD.
+* Använda **linjär** och **besök uppslagsfönstret**&#x200B;är krediten fördelad mellan e-post och visning. Båda dessa kanaler får 25 krediter.
+* Använda **linjär** och **besökarfönster**&#x200B;är krediten fördelad mellan betalsökningar, sociala medier, e-post och displayannonser. Varje kanal får 12,50 dollar i rabatt för detta inköp.
+* Använda **J-formad** och **besökarfönster**&#x200B;är krediten fördelad mellan betalsökningar, sociala medier, e-post och displayannonser.
    * 60 % kredit ges för 30 dollar.
    * 20 % kredit ges till betald sökning för 10 dollar.
    * De återstående 20 % är uppdelade i sociala medier och e-post, vilket ger 5 USD till var och en.
-* Om du använder **Time Decay** och **besökarfönstret**, delas krediteringen mellan betalsökningar, sociala medier, e-post och visning. Använd standardhalveringstiden på 7 dagar:
+* Använda **Tidsminskning** och **besökarfönster**&#x200B;är krediten fördelad mellan betalsökningar, sociala medier, e-post och displayannonser. Använd standardhalveringstiden på 7 dagar:
    * Mellanrum på 0 dagar mellan visning och konvertering. `2^(-0/7) = 1`
    * Mellanrum på 0 dagar mellan e-postens kontaktpunkt och konvertering. `2^(-0/7) = 1`
    * Mellanrum på 6 dagar mellan social kontaktyta och konvertering. `2^(-6/7) = 0.552`

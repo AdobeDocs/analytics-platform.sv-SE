@@ -1,9 +1,9 @@
 ---
 description: Inställningar för Flödesvisualisering i arbetsytan
 title: Flödesinställningar
+feature: Visualizations
 exl-id: 85de8ee7-b79f-4ac4-9601-a4e7f6fb3b2a
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%

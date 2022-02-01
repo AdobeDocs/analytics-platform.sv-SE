@@ -3,7 +3,8 @@ title: Använd mått för marknadsföringskanaler i Adobe Experience Platform
 description: Använd Analytics Data Connector för att överföra regler för bearbetning av marknadsföringskanaler till Adobe Experience Platform.
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+feature: Use Cases
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%

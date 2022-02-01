@@ -1,13 +1,14 @@
 ---
 title: Bästa praxis för attribuering
 description: Vilka är de bästa sätten att fatta beslut om en attribueringsmodell?
-source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
+feature: Attribution
+exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # Bästa praxis för attribuering
 
@@ -28,7 +29,7 @@ Sedan kan ni göra analyser både internt och externt för att öka er förståe
 
 ### Övre trattanalys
 
-Analyser av de vanligaste kanalerna som används för att skapa varumärkes- eller produktmedvetenhet. Målet för de flesta TV-annonser är till exempel varumärkesmedvetenhet. Du kan använda attribueringsmodellen [&quot;Tidsminskning&quot;](/help/analysis-workspace/attribution/models.md), eftersom folk kommer att glömma bort din TV-annons över tiden.
+Analyser av de vanligaste kanalerna som används för att skapa varumärkes- eller produktmedvetenhet. Målet för de flesta TV-annonser är till exempel varumärkesmedvetenhet. Du kan använda [&quot;Time Decay&quot;-attribueringsmodell](/help/analysis-workspace/attribution/models.md), eftersom folk kommer att glömma bort din TV-annons över tiden.
 
 ### Nedre trattanalys
 
@@ -40,15 +41,15 @@ Syftet med det här steget är att validera dina hypoteser.
 
 **Exempel 1**
 
-Låt oss säga att din hypotes är &quot;Min första-beröringskanal har större effekt på konverteringen än min sista-beröringskanal. Du använder sedan attributmodellen [&quot;Inverse J-formad&quot;](/help/analysis-workspace/attribution/models.md) för att testa hypotesen. Den här modellen ger 60 % av äran till den första beröringspunkten.
+Låt oss säga att din hypotes är &quot;Min första-beröringskanal har större effekt på konverteringen än min sista-beröringskanal. Då använder du [&quot;Omvänd J-formad&quot; attribueringsmodell](/help/analysis-workspace/attribution/models.md) för att testa hypotesen. Den här modellen ger 60 % av äran till den första beröringspunkten.
 
 **Exempel 2**
 
-Din hypotes kan vara: &quot;I vår bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör mycket efterforskningar innan de köper en produkt. Du skulle sedan ändra [uppslagsfönstret](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#lookback-windows) till 90 dagar.
+Din hypotes kan vara: &quot;I vår bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör mycket efterforskningar innan de köper en produkt. Du skulle då ändra din [uppslagsfönster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#lookback-windows) till 90 dagar.
 
 ## Steg 3: Använd algoritmisk attribuering
 
-Eftersom det är mycket svårt att validera ett stort antal möjliga hypoteser och kombinationer kan du använda [algoritmisk attribuering](/help/analysis-workspace/attribution/algorithmic.md) för att lämna det här arbetet åt inbyggda algoritmer. Om du redan har hittat den perfekta attribueringsmodellen som besvarar alla dina frågor och är perfekt, behöver du naturligtvis inte ta det här steget.
+Eftersom det är mycket svårt att validera ett stort antal möjliga hypoteser och kombinationer kan du använda [algoritmisk attribuering](/help/analysis-workspace/attribution/algorithmic.md) för att lämna detta arbete åt inbyggda algoritmer. Om du redan har hittat den perfekta attribueringsmodellen som besvarar alla dina frågor och är perfekt, behöver du naturligtvis inte ta det här steget.
 
 ## Andra överväganden
 

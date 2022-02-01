@@ -1,9 +1,9 @@
 ---
 description: Förteckning över kända begränsningar i Adobe Analysis Workspace och dess tillhörande komponenter
 title: Kända begränsningar i Analysis Workspace
+feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 1%
@@ -20,33 +20,33 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 * Skapa mätvärden från markering är inaktiverat när filter används som rader i en tabell. Dessutom ska Skapa mätvärden från markering inte tillämpas på datumjusterade kolumner.
 * Villkorsstyrd formatering för uppdelningsrader kan inte använda anpassade intervall.
 * Tabellsummeringsrader kan inte trendas när inställningen för att beräkna summor har tillämpats (används vanligtvis för statiska radobjekt).
-* [!UICONTROL Contribution Analysis] kan köras med  [!UICONTROL daily] granularitet  _endast_. Det kan inte köras mot [!UICONTROL hourly], [!UICONTROL weekly], osv., data.
+* [!UICONTROL Contribution Analysis] kan köras på [!UICONTROL daily] granularitet _endast_. Den kan inte köras mot [!UICONTROL hourly], [!UICONTROL weekly], etc., data.
 
 ## Visualiseringar
 
-* Visualiseringar som utnyttjar filter, som [!UICONTROL Fallout], [!UICONTROL Flow], [!UICONTROL Cohort] och [!UICONTROL Histogram], kan inte acceptera beräknade värden som indata.
-* [!UICONTROL Flow]: Ingångs-/avslutningsdimensioner, t.ex.  [!UICONTROL Entry page], kan inte användas i Flow.
+* Visualiseringar som utnyttjar filter, som [!UICONTROL Fallout], [!UICONTROL Flow], [!UICONTROL Cohort]och [!UICONTROL Histogram], kan inte acceptera beräknade värden som indata.
+* [!UICONTROL Flow]: Ingångs-/avslutningsdimensioner, t.ex. [!UICONTROL Entry page], kan inte användas i Flow.
 * [!UICONTROL Cohort]: Icke-heltal kan inte användas som kohortvillkor.
 
 ## Komponenter > Filter
 
-* Vissa mått och mått kan inte filtreras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors].
-* Ad hoc-filter som skapas i [panelens dropzone](/help/analysis-workspace/c-panels/panels.md) visas inte i den vänstra listen i Workspace eller i Filter-komponenthanteraren, såvida de inte är offentliga. Detta kan du göra genom att redigera filtret och välja **[!UICONTROL Make this filter public]**.
+* Vissa mått kan inte filtreras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], osv.
+* Ad hoc-filter skapade i [panelens dropzon](/help/analysis-workspace/c-panels/panels.md) visas inte i den vänstra listen i Workspace eller i Filter-komponenthanteraren, såvida de inte är offentliga. Detta kan du göra genom att redigera filtret och markera **[!UICONTROL Make this filter public]**.
 
 ## Komponenter > Beräknade mått
 
 * Beräknade mått kan inte användas i vissa visualiseringar. Se Visualiseringar ovan.
-* Beräknade mått kan inte användas i panelen [!UICONTROL Attribution] eftersom beräknade värden i sig kan innehålla separata attribueringsmodeller.
-* Vissa komponenter och operatorer är inte tillgängliga om ett beräknat mått skapas från arbetsytan (till skillnad från när det skapas från [!UICONTROL Components > filters]). Exempel, [!UICONTROL IP Address].
+* Beräknade mått kan inte användas i [!UICONTROL Attribution] eftersom beräknade värden i sig kan innehålla separata attribueringsmodeller.
+* Vissa komponenter och operatorer är inte tillgängliga om ett beräknat mått skapas från arbetsytan (till skillnad från om de skapas från [!UICONTROL Components > filters]). Exempel, [!UICONTROL IP Address].
 
 ## Komponenter > Datumintervall
 
-* Anpassade datumintervall stöder inte [!UICONTROL This day last year], [!UICONTROL This day last month] osv.
+* Anpassade datumintervall stöds inte [!UICONTROL This day last year], [!UICONTROL This day last month], osv.
 
 
 ## Komponenter > Rapportinställningar
 
-* Vissa inställningar på [!UICONTROL Report Settings]-sidan gäller inte. Analysis Workspace använder bara [!UICONTROL Language/Currency/Encoding]-inställningarna längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding] och [!UICONTROL CSV Separator Character].
+* Vissa av inställningarna på [!UICONTROL Report Settings] sidan gäller inte. Analysis Workspace använder bara [!UICONTROL Language/Currency/Encoding] inställningarna längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding]och [!UICONTROL CSV Separator Character].
 
 ## Attribution IQ
 

@@ -2,7 +2,8 @@
 title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
-source-git-commit: 6585e3b3f5a48edcf4357f710630ebbd36175e7d
+feature: Release Notes
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 2%

@@ -3,7 +3,8 @@ title: Lägga till standardsökningar i datauppsättningar
 description: Använd standardsökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 0f2cbe4ff8bdc083fff363d9623afe68a5132d6f
+feature: Connections
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%

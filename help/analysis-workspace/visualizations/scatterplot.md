@@ -1,8 +1,9 @@
 ---
 title: Spridningsdiagram
 description: En visualisering som visar relationen mellan upp till tre mätvärden.
+feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Spridningsvisningen visar förhållandet mellan dimensionsobjekt och upp till tre mätvärden. Den kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
 

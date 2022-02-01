@@ -1,8 +1,9 @@
 ---
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
+feature: Attribution
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 6%
@@ -13,19 +14,19 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 **Vad är radobjektet &quot;Inget&quot; när du använder attribuering?**
 
-Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som sker utan beröringspunkter i uppslagsfönstret. Försök att inkludera ett längre tidsintervall i rapportfönstret.
+Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som har gjorts utan några beröringspunkter i uppslagsfönstret. Försök att inkludera ett längre tidsintervall i rapportfönstret.
 
 **Varför ser jag ibland datum utanför mitt rapporteringsfönster när jag använder attribueringsmodeller?**
 
-Dessa extra datum beror på besökarens rapportfönster. Mer information finns i [Data som visas utanför rapportfönstret](https://helpx.adobe.com/analytics/kb/data-appearing-outside-reporting-window.html) i KB för analyser. Adobe planerar att filtrera bort de här extra raderna i en kommande release.
+Dessa extra datum beror på besökarens rapportfönster. Se [Data visas utanför rapportfönstret](https://helpx.adobe.com/analytics/kb/data-appearing-outside-reporting-window.html) i KB:n för analyser för mer information. Adobe planerar att filtrera bort de här extra raderna i en kommande release.
 
 **När ska jag använda ett besöks- eller besöksattribueringsbesök?**
 
-Vilken attribueringslookback du väljer beror på ditt användningssätt. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa en datavy med en längre besöksdefinition är också en möjlig lösning.
+Vilken attribueringssökning du väljer beror på ditt användningsfall. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa en datavy med en längre besöksdefinition är också en möjlig lösning.
 
 **Hur är props och eVars jämfört när man använder attribuering?**
 

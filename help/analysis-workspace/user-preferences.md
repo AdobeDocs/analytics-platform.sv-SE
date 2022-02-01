@@ -1,9 +1,10 @@
 ---
 title: Ange användarinställningar i Analysis Workspace
 description: Du kan ange allmänna inställningar och projektinställningar för användare.
+feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%

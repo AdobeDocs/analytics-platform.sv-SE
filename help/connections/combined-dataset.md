@@ -3,7 +3,8 @@ title: Kombinerade händelsedatamängder
 description: Lär dig hur CJA skapar en anslutning genom att kombinera datauppsättningar.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+feature: Connections
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 1%

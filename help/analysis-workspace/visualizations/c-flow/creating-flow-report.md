@@ -1,14 +1,14 @@
 ---
 description: Med Flödesvisualiseringen kan du spåra en bana genom sidorna eller dimensionerna.
 title: Konfigurera en flödesvisualisering
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: b379f1f0-e51a-44ec-91e1-b6479901c945
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurera en flödesvisualisering
 
@@ -34,11 +34,11 @@ Flödesdiagrammet är interaktivt. För musen över diagrammet för att ändra d
 
 Banorna i diagrammet är proportionella. Banor med mer aktivitet ser tjockare ut.
 
-När du klickar på en nod i diagrammet visas information om den noden. Om du till exempel klickar på **[!UICONTROL Search Results]** längst upp till höger i det övre diagrammet ovan, expanderas diagrammet så att mer information om noden för sökresultat visas. Klicka på en nod igen för att komprimera den.
+När du klickar på en nod i diagrammet visas information om den noden. Om du till exempel klickar **[!UICONTROL Search Results]** längst upp till höger i det övre diagrammet ovan utökas diagrammet så att mer information om noden för sökresultat visas. Klicka på en nod igen för att komprimera den.
 
 ![](assets/flow3.jpg)
 
-Som standard visas de fem översta flödena i diagrammet. Om du klickar på noden **[!UICONTROL More]** längst ned i diagrammet utökas diagrammet nedåt så att ytterligare fem flöden visas. Fortsätt att klicka på **[!UICONTROL More]** för att expandera tills det inte finns några ytterligare flöden att visa.
+Som standard visas de fem översta flödena i diagrammet. Om du klickar på **[!UICONTROL More]** noden längst ned i diagrammet, expanderas diagrammet nedåt så att ytterligare fem flöden visas. Fortsätt klicka **[!UICONTROL More]** för att expandera tills det inte finns några ytterligare flöden att visa.
 
 Det finns inga gränser för hur mycket du kan utforska i flödesdiagrammet.
 

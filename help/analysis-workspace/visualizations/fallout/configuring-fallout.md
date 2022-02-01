@@ -1,8 +1,9 @@
 ---
 description: Lär dig hur du anger kontaktytorna för att skapa en flerdimensionell utfallssekvens.
 title: Konfigurera en utfallsvisualisering
+feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%
@@ -13,15 +14,15 @@ ht-degree: 1%
 
 Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan till exempel lägga till händelser, som enheter, samt unika besökare och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
-Du kan till och med lägga till filter i en kontaktyta. Du kanske vill jämföra filter, till exempel iOS- och Android-användare. Dra de önskade filtren högst upp i utfallet och information om dessa filter läggs till i utfallsrapporten. Om du bara vill visa dessa filter, kan du ta bort baslinjen Alla besök.
+Du kan till och med lägga till filter i en kontaktyta. Du kanske vill jämföra filter som iOS- och Android-användare. Dra de önskade filtren högst upp i utfallet och information om dessa filter läggs till i utfallsrapporten. Om du bara vill visa dessa filter, kan du ta bort baslinjen Alla besök.
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
-Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
-1. Dra en [!UICONTROL Fallout]-visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
+1. Dra en [!UICONTROL Fallout] visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
 
-1. Dra siddimensionen till friformstabellen och dra sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]**-fältet som första kontaktyta.
+1. Dra siddimensionen till frihandstabellen och sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]** som första kontaktyta.
 
    ![](assets/fallout1.png)
 
@@ -33,7 +34,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
 
 1. Fortsätt lägga till kontaktytor tills sekvensen är klar.
 
-   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare kontaktytor till en kontaktyta.
+   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare till en kontaktyta.
 
    >[!NOTE]
    >
@@ -64,7 +65,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
 |--- |--- |
 | Utfallsbehållare <ul><li>Gå in på</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
 
-När du **högerklickar på en kontaktyta** visas följande alternativ:
+När du **högerklicka på en kontaktyta** visas följande alternativ:
 
 | Alternativ | Beskrivning |
 |--- |--- |

@@ -3,7 +3,8 @@ title: (B2B) Lägg till data på kontonivå som en uppslagsuppsättning
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatauppsättning i CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+feature: Use Cases
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 0%

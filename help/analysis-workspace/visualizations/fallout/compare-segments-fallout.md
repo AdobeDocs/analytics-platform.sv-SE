@@ -2,8 +2,9 @@
 description: Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
 keywords: bortfall och filter;filter i bortfallsanalys;jämför filter i bortfall
 title: Använda filter i bortfallsanalys
+feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
 
@@ -28,7 +29,7 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 ## Skapa ett filter från en kontaktyta {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Skapa ett filter från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbart för andra rapporter. Det gör du genom att högerklicka på kontaktytan och välja **[!UICONTROL Create filter from touchpoint]**.
+1. Skapa ett filter från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbart för andra rapporter. Du gör detta genom att högerklicka på kontaktytan och välja **[!UICONTROL Create filter from touchpoint]**.
 
    ![](assets/segment-from-touchpoint.png)
 
@@ -52,7 +53,7 @@ Du kan också skapa en OCH-kontaktyta genom att dra filtret för amerikanska anv
 
 Du kan jämföra ett obegränsat antal filter i Utfallsvisualiseringen.
 
-1. Välj de filter som du vill jämföra från [!UICONTROL Filter]-listen till vänster. I vårt exempel har vi valt två filter: Användare i USA och användare utanför USA.
+1. Välj de filter som du vill jämföra i dialogrutan [!UICONTROL Filter] till vänster. I vårt exempel har vi valt två filter: Användare i USA och användare utanför USA.
 1. Dra dem till filtersläppzonen längst upp.
 
    ![](assets/segment-drop.png)

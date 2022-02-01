@@ -1,7 +1,9 @@
 ---
-description: 'Läs mer om '
+description: Läs mer om
 title: Mätvärdestyp och attribuering
-source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
+feature: Calculated Metrics
+exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 5%
@@ -25,4 +27,3 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 
 >[!IMPORTANT]
 >En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attributmodeller och uppslagsfönster](/help/analysis-workspace/attribution/models.md).
-

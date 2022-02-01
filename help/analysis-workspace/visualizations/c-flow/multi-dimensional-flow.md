@@ -1,9 +1,9 @@
 ---
 description: Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
 title: Intradimensionella flöden
-uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
+feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Dess funktioner skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
+>Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
 
@@ -26,17 +26,17 @@ Vi ska titta på två användningsfall: ett exempel på appanvändning och ett e
 
 ## Använd fall ett: app
 
-Dimensionen [!UICONTROL Action Name] lades till i flödet, där det översta returnerade objektet var [!UICONTROL ItemAdded]:
+The [!UICONTROL Action Name] dimension lades till i flödet, med den översta returnerade artikeln [!UICONTROL ItemAdded]:
 
 ![](assets/multi-dimensional-flow.png)
 
 Om du vill utforska interaktionen mellan skärmar/sidor och åtgärder i den här appen kan du dra siddimensionen till flera platser, beroende på vad du vill utforska:
 
-* Dra den till valfri ände av släppzonen (inuti den svarta trimmade rektangulära zonen som visas) för att **ersätta** det övre resultatet i ändarna:
+* Dra den till valfri ände av släppzonen (inuti den svarta trimmade rektangulära zonen som visas) för att **ersätt** de främsta resultaten i slutet:
 
    ![](assets/multi-dimensional-flow2.png) ![](assets/multi-dimensional-flow3.png)
 
-* Dra den till det tomma utrymmet på slutet (lägg märke till den svarta parentesen) för att **lägga till i** visualiseringen:
+* Dra den till det tomma utrymmet på slutet (lägg märke till den svarta parentesen) för att **lägg till i** visualisering:
 
    ![](assets/multi-dimensional-flow4.png)
 

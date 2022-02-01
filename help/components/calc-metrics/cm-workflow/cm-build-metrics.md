@@ -1,7 +1,9 @@
 ---
 description: I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, filter och funktioner för att skapa anpassade mått baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
 title: Skapa mätvärden
-source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
+feature: Calculated Metrics
+exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
@@ -48,4 +50,3 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
 | Lista med filter | (Endast avancerade beräknade värden) Som administratör visar den här listan alla filter som har skapats i ditt inloggningsföretag. Om du inte är administratör visas de filter som du äger och de som delas med dig. |
 | Lista över funktioner | (Endast avancerade beräknade mätvärden) Funktionerna är uppdelade i två listor: Grundläggande (används oftast) och Avancerat. |
 | Datavyväljare | Med den här väljaren (längst upp till höger) kan du växla till en annan datavy. |
-

@@ -1,10 +1,10 @@
 ---
 description: Använd snabbfilter i Analysis Workspace för Customer Journey Analytics
 title: Snabbfilter
-feature: Workspace Basics
+feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 1334e1edb36583ba978936fecbff2657e63a94bf
+source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -13,20 +13,20 @@ ht-degree: 0%
 
 # Snabbfilter
 
-Du kan skapa snabbfilter i ett projekt för att kringgå komplexiteten i den fullständiga [filterverktyget](/help/components/filters/create-filters.md). Snabbfilter
+Du kan skapa snabbfilter i ett projekt för att slippa komplexiteten i den fullständiga [Filter Builder](/help/components/filters/create-filters.md). Snabbfilter
 
 * Gäller endast projekt i vilka de har skapats (du kan ändra detta).
 * Tillåt upp till tre regler
 * Innesluta inte kapslade behållare eller sekventiella regler.
 
-En jämförelse av vad snabbfilter kan göra jämfört med fullständiga filter för komponentlistor finns [här](/help/components/filters/filters-overview.md).
+En jämförelse mellan vad snabbfilter kan göra och fullständiga filter för komponentlistor finns på [här](/help/components/filters/filters-overview.md).
 
 >[!IMPORTANT]
 > Snabbfilter testas för närvarande i begränsad omfattning och är ännu inte tillgängliga i allmänhet.
 
 ## Förutsättningar
 
-Vem som helst kan skapa ett snabbsegment. Du måste dock ha behörighet att skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) för att kunna spara ett snabbsegment eller öppna det i Segment Builder.
+Vem som helst kan skapa ett snabbsegment. Du behöver dock behörigheten Skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) för att kunna spara ett snabbt segment eller öppna det i segmentbyggaren.
 
 ## Skapa snabbfilter
 
@@ -38,9 +38,9 @@ I en friformstabell klickar du på ikonen filter+ i panelhuvudet:
 | --- | --- |
 | Namn | Standardnamnet för ett filter är en kombination av regelnamnen i filtret. Du kan byta namn på filtret till ett mer eget namn. |
 | Inkludera/exkludera | Du kan antingen inkludera eller exkludera komponenter i filterdefinitionen, men inte båda. |
-| Behållare för träff/besök/besök | Snabbfilter innehåller bara en [filterbehållare](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) som gör att du kan inkludera ett mått-/mätvärde-/datumintervall i (eller exkludera det från) filtret. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren vid besök och sidvisningar. Med en [!UICONTROL Visit]-behållare kan du ange regler för att dela upp besökarens data baserat på besök, och med en [!UICONTROL Hit]-behållare kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
-| Komponenter (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (dimensioner, mått, datumintervall eller dimensionsvärden). Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva så hittar verktyget [!UICONTROL Quick Filter] automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
-| Operator | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count]-operatorer. Se [Filteroperatorer](operators.md). |
+| Behållare för träff/besök/besök | Snabbfilter innehåller ett [filterbehållare](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) bara det som gör att du kan inkludera ett mått/mått/datumintervall i (eller exkludera det från) filtret. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren vid besök och sidvisningar. A [!UICONTROL Visit] kan du ange regler för att dela upp besökarens data baserat på besök och en [!UICONTROL Hit] kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
+| Komponenter (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (dimensioner, mått, datumintervall eller dimensionsvärden). Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva och [!UICONTROL Quick Filter] builder hittar automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
+| Operator | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count] operatorer. Se [Filteroperatorer](operators.md). |
 | Plustecken (+) | Lägg till en annan regel |
 | OCH/ELLER-kvalificerare | Du kan lägga till&quot;AND&quot;- eller&quot;OR&quot;-kvalificerare i reglerna, men du kan inte blanda&quot;AND&quot; och&quot;OR&quot; i en enda filterdefinition. |
 | Använd | Använd det här filtret på panelen. Om filtret inte innehåller några data tillfrågas du om du vill fortsätta. |
@@ -64,7 +64,7 @@ Filtret visas högst upp. Lägg märke till dess blå, randiga sidospalt, till s
 
 ## Spara snabbfilter
 
-Du kan välja att spara snabbfilter antingen i [!UICONTROL Quick Filter Builder] eller i [!UICONTROL Filter Builder].
+Du kan välja att spara snabbfilter i [!UICONTROL Quick Filter Builder] eller i [!UICONTROL Filter Builder].
 
 >[!IMPORTANT]
 >När du har sparat eller använt filtret kan du inte längre redigera det i snabbfilterverktyget, utan bara i den vanliga filterverktyget.
@@ -99,10 +99,10 @@ När du har tillämpat filtret kan du lägga till det i filterkomponentlistan oc
 1. Markera kryssrutan bredvid **[!UICONTROL Make available to all your projects and add to your component list.]**
 1. Klicka på **[!UICONTROL Save]**.
 1. Filtret visas nu i filterkomponentlistan för alla dina projekt.
-1. Du kan även [dela filtret](/help/components/filters/manage-filters.md) med andra personer i organisationen.
+1. Du kan också [dela filtret](/help/components/filters/manage-filters.md) med andra i organisationen.
 
 ## Vad är filter som endast är projektbaserade?
 
-Endast projektfilter är antingen snabbfilter eller ad hoc-projektfilter för arbetsytan. När du redigerar/öppnar dem i [!UICONTROL Filter Builder] visas rutan för endast projekt.
+Endast projektfilter är antingen snabbfilter eller ad hoc-projektfilter för arbetsytan. När du redigerar/öppnar dem i [!UICONTROL Filter Builder]visas den projektspecifika rutan.
 
-Om du använder ett snabbfilter i byggaren men inte markerar kryssrutan &quot;Gör tillgänglig&quot; är det fortfarande ett projektfilter, men det kan inte längre öppnas i [!UICONTROL Quick Filter Builder]. Om du markerar rutan och klickar på **[!UICONTROL Save]** är det nu ett komponentlistfilter.
+Om du använder ett snabbfilter i verktyget men inte markerar kryssrutan &quot;Gör tillgänglig&quot; är det fortfarande ett projektfilter, men det kan inte längre öppnas i [!UICONTROL Quick Filter Builder]. Om du markerar rutan och klickar på **[!UICONTROL Save]**&#x200B;är det nu ett komponentlistfilter.

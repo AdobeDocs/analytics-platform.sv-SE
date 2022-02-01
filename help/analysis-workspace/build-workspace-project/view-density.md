@@ -1,14 +1,14 @@
 ---
 description: Lär dig justera visningsdensiteten i Analysis Workspace.
 title: Visa densitet
-translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+feature: CJA Workspace Basics
+exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 4%
 
 ---
-
 
 # Visa densitet
 
@@ -23,6 +23,6 @@ Det finns tre alternativ när du växlar visningsdensitet med alternativknappar:
 
 Så här anger du visningsdensitet:
 
-1. Gå till **[!UICONTROL Projects]** > **[!UICONTROL Project Info and Settings]** i arbetsytan.
+1. Navigera till **[!UICONTROL Projects]** > **[!UICONTROL Project Info and Settings]**.
 
-1. Välj något av de tre alternativen ovan och klicka på **[!UICONTROL Save]**.
+1. Välj bland de tre alternativen ovan och klicka på **[!UICONTROL Save]**.
