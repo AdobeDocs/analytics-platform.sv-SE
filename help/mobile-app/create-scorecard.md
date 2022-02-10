@@ -5,14 +5,14 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
 
-# Skapa ett styrkort
+# Skapa ett mobilstyrkort
 
 Följande information beskriver för chefer av Adobe Analytics-data hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Börja med att titta på videon Adobe Analytics dashboards Scorecard Builder:
 
@@ -34,11 +34,11 @@ Om du vill skapa styrkortet måste du göra följande:
 1. Öppna [!UICONTROL Blank Mobile Scorecard] mall.
 2. Konfigurera styrkortet med data och spara det.
 
-## Öppna [!UICONTROL Blank Mobile Scorecard] mall
+## Öppna [!UICONTROL Blank Mobile Scorecard] mall {#template}
 
 Du kommer åt [!UICONTROL Blank Mobile Scorecard] mall antingen genom att skapa ett nytt projekt eller från Verktyg-menyn.
 
-### Skapa ett nytt projekt
+### Skapa ett nytt projekt {#create}
 
 1. Öppna Adobe Analytics och klicka på **[!UICONTROL Workspace]** -fliken.
 1. Klicka **[!UICONTROL Create project]** och väljer **[!UICONTROL Blank mobile scorecard]** projektmall.
@@ -51,7 +51,7 @@ Du kommer åt [!UICONTROL Blank Mobile Scorecard] mall antingen genom att skapa 
 1. Från **[!UICONTROL Tools]** meny, välja **[!UICONTROL Analytics dashboards (Mobile App)]**.
 1. På nästa skärm klickar du på **[!UICONTROL Create new scorecard]**.
 
-## Konfigurera styrkortet med data och spara det
+## Konfigurera styrkortet med data och spara det {#configure}
 
 Så här implementerar du styrkortsmallen:
 
@@ -66,7 +66,7 @@ Så här implementerar du styrkortsmallen:
 
 1. Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.
 
-## Lägg till mått eller mätvärden
+## Lägg till mått eller mätvärden (#dimsmetrics)
 
 Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta.
 
@@ -74,7 +74,7 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 ![Lägg till dimensioner](assets/layer_dimensions.png)
 
-## Använd segment
+## Använd segment {#segments}
 
 Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan.
 
@@ -82,7 +82,7 @@ Om du vill använda segmentet på alla plattor i styrkortet, släpper du rutan o
 
 ![Skapa segment för filter](assets/segment_ui.png)
 
-## Lägg till datumintervall
+## Lägg till datumintervall {#dates}
 
 Lägg till och ta bort datumintervallkombinationer som kan väljas i styrkortet genom att markera listrutan för datumintervall.
 
@@ -106,7 +106,7 @@ Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett n
 
 Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent.
 
-## Använd visualiseringar
+## Använd visualiseringar {#viz}
 
 Kontrollpanelerna för analyser erbjuder fyra visualiseringar som ger er insikt i dimensionsobjekt och mätvärden. Byt till en annan visualisering genom att ändra [!UICONTROL chart type] av en bricka [!UICONTROL Properties]. Markera bara den högra rutan och ändra sedan diagramtypen.
 
@@ -151,13 +151,13 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 1. Klicka på ikonen bredvid **[!UICONTROL Unspecified]** för att ta bort ospecificerade data från din rapportering. (Du kan även ta bort andra dimensionsobjekt.)
 
-## Visa och konfigurera egenskaper för paneler
+## Visa och konfigurera egenskaper för paneler {#tiles}
 
 När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. På den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
 
 ![Egenskapspanelen](assets/properties_tile.png)
 
-## Visa detaljnivåer (uppdelningar)
+## Visa detaljnivåer (uppdelningar) {#breakdowns}
 
 När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Du kan dela upp dimensioner och dimensionsobjekt för att dela upp dina data efter dina specifika behov. Om ingen dimension har tillämpats på plattan kommer detaljdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
 
@@ -171,19 +171,39 @@ Uppdelningar förfinar analysen genom att bokstavligen dela upp dimensionerna ef
 
 Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
 
-## Ta bort komponenter
+## Ta bort komponenter {#remove}
 
 Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **Första gången du besöker** segment:
 
 ![Remove_components](assets/new_remove.png)
 
-## Namnge ett styrkort
+## Styrkort för förhandsgranskning {#preview}
+
+Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har publicerats i kontrollpanelsappen för Analytics.
+
+1. Klicka **[!UICONTROL Preview]** i skärmens övre högra hörn.
+
+   ![Preview_scorecards](assets/preview.png)
+
+1. Om du vill visa hur styrkortet kommer att se ut på olika enheter väljer du en enhet på menyn [!UICONTROL Device preview] nedrullningsbar meny.
+
+   ![Device_preview](assets/device-preview.png)
+
+1. Om du vill interagera med förhandsgranskningen kan du:
+
+   * Vänsterklicka för att simulera knackning på telefonskärmen.
+
+   * Använd datorns rullningsfunktion för att simulera rullning av telefonskärmen med fingret.
+
+   * Klicka och håll ned för att simulera att du trycker och håller fingret på telefonskärmen. Detta är användbart när du vill interagera med visualiseringarna i den detaljerade vyn.
+
+## Namnge ett styrkort {#name}
 
 Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänster på skärmen och skriver det nya namnet.
 
 ![Naming_Scorecards](assets/new_name.png)
 
-## Dela ett styrkort
+## Dela ett styrkort {#share}
 
 Så här delar du styrkortet med en verkställande användare:
 
