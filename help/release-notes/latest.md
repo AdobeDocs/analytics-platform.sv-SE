@@ -3,20 +3,28 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b32822f8513e2c4fb2fbabc0315314a56aa903dd
+source-git-commit: 70d16bd241531b84cc7314a7d11439381e90b566
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 21%
+source-wordcount: '143'
+ht-degree: 2%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics
+# Versionsinformation för Customer Journey Analytics (februari 2022)
+
+>[!IMPORTANT]
+>
+>Versionsinformationen innehåller information om förhandsversioner som kan ändras.
+
+**Senaste uppdatering**: 10 februari 2022
 
 ## Viktiga funktioner
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Inga nya funktioner den här månaden | Ej tillämpligt | Ej tillämpligt |
+| Förhandsgranskningsläge för mobilstyrda projekt | Starta en förhandsgranskning av hur ditt mobilstyrkort kommer att se ut i kontrollpanelsappen för Analytics, direkt från styrkortsverktyget. I förhandsgranskningsläget kan användarna interagera med filter och diagram på samma sätt som i appen, vilket gör att de kan förhandsgranska upplevelsen innan de sparar och delar styrkortet. Användare kan också använda enhetsväljaren i förhandsgranskningsläge för att se hur styrkortet kommer att se ut på olika enheter. | 16 februari 2022 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Korrigeringar
 
