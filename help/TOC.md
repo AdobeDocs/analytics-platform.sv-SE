@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '589'
 ht-degree: 40%
 
 ---
@@ -20,10 +20,18 @@ ht-degree: 40%
 # Customer Journey Analytics Guide {#using}
 
 + [Customer Journey Analytics Guide](getting-started/cja-landing.md)
++ Versionsinformation {#releases}
+   + [Senaste versionen](release-notes/latest.md)
+   + [2022 års utgåvor](release-notes/2022.md)
+   + [2021 års utgåvor](release-notes/2021.md)
+   + [2020-versioner](release-notes/2020.md)
+   + [CJA-releaser](release-notes/releases.md)
+   + [CJA - dokumentationsuppdateringar](release-notes/doc-changes.md)
 + Customer Journey Analytics - översikt {#cja-overview}
    + [Customer Journey Analytics - översikt](getting-started/cja-overview.md)
    + [Komma igång](getting-started/cja-getting-started.md)
    + [Frågor och svar](getting-started/cja-faq.md)
+   + [Förbered migrering från Adobe Analytics till Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Funktioner i Customer Journey Analytics](getting-started/cja-aa.md)
    + [Borttagningskonsekvenser](getting-started/cja-deletion.md)
    + [CJA-ordlista](getting-started/cja-glossary.md)
@@ -205,11 +213,5 @@ ht-degree: 40%
    + [Jämför dina Adobe Analytics-data med CJA-data](troubleshooting/compare.md)
 + Sekretess {#cja-privacy}
    + [Sekretessöversikt](privacy/privacy-overview.md)
-+ Versionsinformation {#releases}
-   + [Senaste versionen](release-notes/latest.md)
-   + [2022 års utgåvor](release-notes/2022.md)
-   + [2021 års utgåvor](release-notes/2021.md)
-   + [2020-versioner](release-notes/2020.md)
-   + [CJA-releaser](release-notes/releases.md)
-   + [CJA - dokumentationsuppdateringar](release-notes/doc-changes.md)
+
 
