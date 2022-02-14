@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: b9b6c411552e8be98547e834ce81ba45d28dda60
+source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1479'
 ht-degree: 1%
 
 ---
@@ -79,8 +79,8 @@ När det gäller borttagning av data är vi oroade för sex typer av komponenter
 
 | Om du.. | Det här händer.. |
 | --- | --- |
-| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics] anslutningar till datauppsättningar i den sandlådan. För närvarande tas inte anslutningar i CJA som är kopplade till den borttagna sandlådan bort automatiskt. |
-| Ta bort ett schema i [!UICONTROL Adobe Experience Platform], men inte den eller de datauppsättningar som är associerade med det här schemat | [!UICONTROL Adobe Experience Platform] tillåter inte att scheman som har en eller flera datauppsättningar associerade tas bort. En administratör med rätt behörighetsuppsättning kan dock ta bort datauppsättningarna först och sedan ta bort schemat. |
+| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics] anslutningar till datauppsättningar i den sandlådan. För närvarande [!UICONTROL Connections] i CJA som är knuten till den borttagna sandlådan tas inte bort automatiskt. |
+| Ta bort ett schema i [!UICONTROL Adobe Experience Platform], men inte den eller de datauppsättningar som är associerade med det här schemat | [!UICONTROL Adobe Experience Platform] tillåter inte att [!UICONTROL schemas] som har en eller flera [!UICONTROL datasets] som är kopplade till dem. En administratör med rätt behörighetsuppsättning kan dock ta bort datauppsättningarna först och sedan ta bort schemat. |
 | Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform] Data Lake | Om du tar bort en datauppsättning i AEP-datasjön avbryts dataflödet från den datauppsättningen till alla CJA-anslutningar som innehåller den datauppsättningen. Data från den datauppsättningen tas inte automatiskt bort från associerade CJA-anslutningar. |
 | Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | För närvarande kan du inte ta bort en datauppsättning i en anslutning som har sparats. Du måste ta bort hela anslutningen och börja om från början. (Kunder som har köpt CJA-SKU:n kan dock ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform] användargränssnitt.) |
 | Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform]) | Om en batch tas bort från en [!UICONTROL Adobe Experience Platform] datauppsättning, kommer samma batch att tas bort från alla CJA-anslutningar som innehåller den specifika gruppen.  CJA meddelas om batchborttagningar i [!UICONTROL Adobe Experience Platform]. |
