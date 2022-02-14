@@ -3,13 +3,13 @@ title: Migrera från Adobe Analytics till Customer Journey Analytics
 description: Steg för att migrera från Adobe Analytics till Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 868cd819148b29436fbd92cf220c8bc4cb9e0725
+exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
+source-git-commit: 2a330a430b48eb753d269e1165e95b61cb5fb483
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
-
 
 # Förbered migrering från Adobe Analytics till Customer Journey Analytics
 
@@ -24,10 +24,10 @@ Att förbereda dina Adobe Analytics-data för en smidig övergång till Customer
 Den kanske viktigaste faktorn när det gäller att förstå en kundresa är att veta vem kunden är i varje steg. Om du till exempel har en identifierare som finns i alla dina kanaler och motsvarande data för Customer Journey Analytics kan du sammanfoga flera källor inom CJA.
 Exempel på identiteter kan vara ett kund-ID, konto-ID eller e-post-ID. Oavsett vilken identitet (och det kan finnas flera) måste du tänka på följande för varje ID:
 
-* Finns eller kan läggas till i på alla datakällor som du vill hämta till CJA
-* Fylls i på varje datarad
-* Innehåller inte PII. Hash-koda allt som kan vara känsligt.
-* Använder samma format i alla källor (samma längd, samma hash-metod osv.)
+* ID finns eller kan läggas till i alla datakällor som du vill hämta till CJA
+* ID fylls i på varje datarad
+* ID:t innehåller inte PII. Hash-koda allt som kan vara känsligt.
+* ID använder samma format för alla källor (samma längd, samma hash-metod osv.)
 
 I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje datarad, men det gör en sekundär identitet. I det här fallet kan flerkanalsanalys (som tidigare kallades&quot;fältbaserad namngivning&quot;) användas för att överbrygga klyftan mellan rader när en kund bara identifieras med sitt ECID och när en identitet samlas in (till exempel när en kund autentiseras). [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en)
 
@@ -51,9 +51,9 @@ De traditionella inställningarna för Adobe Analytics Marketing Channel fungera
 
 Adobe har publicerat [uppdaterade metodtips för implementering av marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=en). Dessa uppdaterade rekommendationer hjälper dig att få ut det mesta av de funktioner som redan finns i Adobe Analytics med Attribution IQ. De kommer också att hjälpa dig att lyckas när du går över till Customer Journey Analytics.
 
-### 4. Bestäm dig för att använda Analytics Data Connector jämfört med Experience Platform SDK:er
+### 4. Bestäm dig för att använda Analytics Source Connector jämfört med Experience Platform SDK:er
 
-Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) datainsamlingen utvecklas. Du kommer troligen att migrera till antingen Adobe Experience Platform Web SDK eller Adobe Experience Platform Mobile SDK med Adobe Experience Platform Edge Network. En vanlig implementering av SDK:er skickar data till Adobe Analytics, men det finns en ny möjlighet att skicka data direkt till Adobe Experience Platform. Den kan sedan importeras till Customer Journey Analytics, samtidigt som data skickas till Adobe Analytics bevaras.
+Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) datainsamlingen utvecklas, du kommer troligen att migrera till [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) med Adobe Experience Platform Edge Network. En vanlig implementering av SDK:er skickar data till Adobe Analytics, men det finns en ny möjlighet att skicka data direkt till Adobe Experience Platform. Den kan sedan importeras till Customer Journey Analytics, samtidigt som data skickas till Adobe Analytics bevaras.
 
 Med den här metoden utökas möjligheterna för datainsamling avsevärt: Det finns inte längre någon begränsning av antalet fält eller behovet av att mappa dataelement till props, eVars och händelser som i Analytics. Du kan använda ett obegränsat antal schemaelement av olika typer och representera dem på flera sätt med CJA [Datavyer](/help/data-views/data-views.md). Snabbheten för datatillgänglighet ökar när data skickas direkt till Adobe Experience Platform, när tiden för databehandling via Adobe Analytics tas bort.
 
