@@ -4,9 +4,9 @@ description: Steg för att migrera från Adobe Analytics till Customer Journey A
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 2a330a430b48eb753d269e1165e95b61cb5fb483
+source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Med den här metoden utökas möjligheterna för datainsamling avsevärt: Det fi
 
 **Nackdelar med att använda Experience Platform SDK**
 
-Följande Adobe Analytics-komponenter stöds inte:
+Följande Adobe Analytics-funktioner eller -komponenter stöds inte:
 
 * Marknadsföringskanaler
 * Punktfiltrering
@@ -77,15 +77,15 @@ Följande Adobe Analytics-komponenter stöds inte:
 
 ### Arbeta bekvämt med rapporttidsbearbetning
 
-Rapporteringen i Adobe Analytics bygger på en betydande mängd förbearbetning av data för att generera resultat som den persistence som du ser i eVars. Customer Journey Analytics kör dessa beräkningar vid rapportkörning.
+Rapporteringen i Adobe Analytics bygger på en stor mängd förbearbetning av data för att generera resultat, som den persistence du ser i [!UICONTROL eVars]. Customer Journey Analytics kör dessa beräkningar vid rapportkörning.
 
-Med rapporttidsbearbetning kan du använda inställningar som är retroaktiva och skapa flera versioner av variabel beständighet utan att behöva ändra hur underliggande data samlas in.
+[!UICONTROL Report time processing] öppnar möjligheten att tillämpa inställningar som är retroaktiva och skapa flera versioner av variabel beständighet utan att behöva ändra hur underliggande data samlas in.
 
 Denna förskjutning resulterar i vissa skillnader i hur data rapporteras, särskilt för variabler som kan ha ett långt utgångsfönster. Du kan börja med att utvärdera hur rapporttidsbearbetning kan påverka din rapportering med en [virtuell rapportsvit](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html).
 
 ### Identifiera kritiska segment och beräknade värden
 
-Adobe Analytics-segment (kallas filter i CJA) och beräknade värden är inte kompatibla med Customer Journey Analytics. I många fall kan dessa komponenter återskapas i CJA med hjälp av nya scheman och tillgängliga data.
+Adobe Analytics segment (kallas [!UICONTROL filters] i CJA) och beräknade värden är inte kompatibla med Customer Journey Analytics. I många fall kan dessa komponenter återskapas i CJA med hjälp av nya scheman och tillgängliga data.
 
 För att övergången ska bli så smidig som möjligt för användarna när de växlar mellan systemen ska du planera i förväg med
 
@@ -100,3 +100,7 @@ Här är några videor som vägleder dig:
 * [Flytta Adobe Analytics-segment till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Flytta dina beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+## Nästa steg
+
+När du har flyttat till CJA kan du jämföra dina ursprungliga Adobe Analytics-data med Adobe Analytics-data som nu finns i Customer Journey Analytics. [Läs mer](/help/troubleshooting/compare.md)

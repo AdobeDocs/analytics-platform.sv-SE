@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ Den första releasen av Customer Journey Analytics innehåller många av de funk
 
 ## Jämföra CJA med enhetsövergripande analys
 
-[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integreras med Adobe Experience Platform Identity Service, med Co-op Graph eller Private Graph, för att identifiera hur digitala enheter mappar till människor. Det finns för Adobe Analytics Ultimate-kunder.
+[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrerar med [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en), som använder Co-op Graph eller Private Graph för att identifiera hur digitala enheter mappar till människor. Det finns för Adobe Analytics Ultimate-kunder.
 
-CJA kan å andra sidan integreras med Adobe Experience Platform datauppsättningar och möjliggör flerkanalsanalys i Analysis Workspace. Även om CJA ännu inte är integrerat med Co-op- eller Private-identitetsdiagram kan du&quot;sammanföra ditt eget ID&quot; för att sammanfoga datauppsättningar, och dessa datauppsättningar kan gå utöver digitala data och inkludera både online- och offlinekontaktpunkter. CJA-kraven beskrivs närmare nedan.
+CJA kan å andra sidan integreras med Adobe Experience Platform datauppsättningar och möjliggör flerkanalsanalys i Analysis Workspace. Även om CJA ännu inte är integrerat med Co-op- eller Private-identitetsdiagram kan du&quot;föra ditt eget ID&quot; för att sammanfoga datauppsättningar. Dessa datauppsättningar kan gå bortom digitala data och innehålla kontaktytor både online och offline. CJA-kraven beskrivs närmare nedan.
 
 ## Viktiga användningsexempel
 
