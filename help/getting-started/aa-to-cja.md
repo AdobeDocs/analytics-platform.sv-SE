@@ -4,9 +4,9 @@ description: Steg för att migrera från Adobe Analytics till Customer Journey A
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
+source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje 
 
 ### 2. Justera variablerna
 
-Den enklaste migreringen av Adobe Analytics-data till Customer Journey Analytics är att importera en global rapportserie till Experience Platform med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i AEP, som i sin tur enkelt kan anslutas till CJA.
+Den enklaste migreringen av Adobe Analytics-data till Customer Journey Analytics är att importera en [global rapportsvit](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) till Experience Platform med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i AEP, som i sin tur enkelt kan anslutas till CJA.
 
 En fullständig global rapportsvit kanske inte alltid är möjlig för en implementering. Om du planerar att ta in flera rapportsviter i Customer Journey Analytics måste du planera i förväg för att få variablerna att stämma överens i alla dessa rapportsviter.
 
@@ -77,7 +77,7 @@ Följande Adobe Analytics-funktioner eller -komponenter stöds inte:
 
 ### Arbeta bekvämt med rapporttidsbearbetning
 
-Rapporteringen i Adobe Analytics bygger på en stor mängd förbearbetning av data för att generera resultat, som den persistence du ser i [!UICONTROL eVars]. Customer Journey Analytics kör dessa beräkningar vid rapportkörning.
+Rapporteringen i Adobe Analytics bygger på en stor mängd förbearbetning av data för att generera resultat, som den persistence du ser i [!UICONTROL eVars]. Customer Journey Analytics kör däremot dessa beräkningar vid rapportkörning.
 
 [!UICONTROL Report time processing] öppnar möjligheten att tillämpa inställningar som är retroaktiva och skapa flera versioner av variabel beständighet utan att behöva ändra hur underliggande data samlas in.
 
@@ -100,6 +100,14 @@ Här är några videor som vägleder dig:
 * [Flytta Adobe Analytics-segment till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Flytta dina beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+### Andra överväganden
+
+* Tack vare CJA-datavyer har ni större flexibilitet när det gäller att definiera mått och mått inom Customer Journey Analytics. Du kan till exempel använda värdet för en dimension för att bli definitionen av ett mätvärde. [Läs mer](/help/data-views/data-views-usecases.md)
+
+* Om du har definierat en anpassad kalender i Adobe Analytics har du liknande kalenderfunktioner i CJA. Du måste se till att din kalender är korrekt definierad.
+
+* I Customer Journey Analytics kan du definiera en anpassad tidsgräns för besök/session samt definiera ett mätvärde som startar en ny session. Du kan skapa datavyer med olika sessionsdefinitioner för att få insikter över vad som var möjligt i Adobe Analytics. Den här funktionen kan vara särskilt användbar för mobildatauppsättningar.
 
 ## Nästa steg
 
