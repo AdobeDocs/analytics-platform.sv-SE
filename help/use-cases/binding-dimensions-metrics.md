@@ -3,9 +3,9 @@ title: Använda bindningsdimensioner och mätvärden i CJA
 description: Attributdimensioner till objektarrayer för komplex beständighetsanalys.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 38c10e395b816d812d30f0698dc821ee0ea5c9b1
+source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '1210'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Du kan gå till Data View Manager och binda produktfärg till produktnamn:
 
 ![Bindningsdimension](assets/binding-dimension.png)
 
-När du anger den här beständighetsmodellen tar Adobe hänsyn till produktnamnet när produktfärgen anges. När den känner igen samma produktnamn i en efterföljande händelse för den här besökaren, hämtas även produktfärgen. Samma data skulle se ut ungefär så här när du binder produktfärg till produktnamn:
+När du anger den här beständighetsmodellen tar CJA hänsyn till produktnamnet när produktfärgen anges. När den känner igen samma produktnamn i en efterföljande händelse för den här besökaren, hämtas även produktfärgen. Samma data skulle se ut ungefär så här när du binder produktfärg till produktnamn:
 
 | product.color | intäkt |
 | --- | --- |
@@ -94,7 +94,7 @@ När du anger den här beständighetsmodellen tar Adobe hänsyn till produktnamn
 
 En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att binda en sökterm till en produkt så att varje sökterm får erkännande för den produkt som passar bäst. Tänk på följande kundresa:
 
-1. En besökare kommer till er webbplats och söker efter &quot;boxingshandskar&quot;.
+1. En besökare kommer till er webbplats och söker efter &quot;boxingshandskar&quot;. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
 
    ```json
    {
@@ -105,24 +105,18 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
        "product": [
            {
                "name": "Beginner gloves",
-               "color": "Red",
-               "price": "25.69"
            },
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            },
            {
                "name": "Professional gloves",
-               "color": "Blue",
-               "price": "224.99"
            }
        ]
    }
    ```
 
-1. De hittar ett par handskar som de gillar och lägger till dem i kundvagnen.
+2. De hittar ett par handskar som de gillar och lägger till dem i kundvagnen.
 
    ```json
    {
@@ -132,14 +126,12 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            }
        ]
    }
    ```
 
-1. Besökaren söker sedan efter &quot;tennisracket&quot;.
+3. Besökaren söker sedan efter &quot;tennisracket&quot;. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
 
    ```json
    {
@@ -150,21 +142,18 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
        "product": [
            {
                "name": "Shock absorb racket",
-               "price": "34.99"
            },
            {
                "name": "Women's open racket",
-               "price": "49.99"
            },
            {
                "name": "Extreme racket",
-               "price": "134.99"
            }
        ]
    }
    ```
 
-1. De hittar ett racket de gillar och lägger det i kundvagnen.
+4. De hittar ett racket de gillar och lägger det i kundvagnen.
 
    ```json
    {
@@ -174,18 +163,15 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            },
            {
                "name": "Shock absorb racket",
-               "price": "34.99"
            }
        ]
    }
    ```
 
-1. Besökaren söker en tredje gång efter &quot;skor&quot;.
+5. Besökaren söker en tredje gång efter &quot;skor&quot;. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
 
    ```json
    {
@@ -196,24 +182,18 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
        "product": [
            {
                "name": "Men's walking shoes",
-               "color": "Grey",
-               "price": "54.95"
            },
            {
                "name": "Tennis shoes",
-               "color": "White",
-               "price": "42.59"
            },
            {
                "name": "Skate shoes",
-               "color": "Black",
-               "price": "79.99"
            }
        ]
    }
    ```
 
-1. De hittar ett par skor de gillar och lägger till dem i kundvagnen.
+6. De hittar ett par skor de gillar och lägger till dem i kundvagnen.
 
    ```json
    {
@@ -223,23 +203,18 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            },
            {
                "name": "Shock absorb racket",
-               "price": "34.99"
            },
            {
                "name": "Skate shoes",
-               "color": "Black",
-               "price": "79.99"
            }
        ]
    }
    ```
 
-1. Besökaren går igenom utcheckningsprocessen och köper dessa tre artiklar.
+7. Besökaren går igenom utcheckningsprocessen och köper dessa tre artiklar.
 
    ```json
    {
@@ -249,7 +224,6 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
                "price": "89.99"
            },
            {
@@ -258,20 +232,19 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
            },
            {
                "name": "Skate shoes",
-               "color": "Black",
                "price": "79.99"
            }
        ]
    }
    ```
 
-Om du använder en traditionell allokeringsmodell med sökord, tilldelar alla tre produkterna intäkter till endast ett sökord. Om du till exempel använde första allokeringen med söktermsdimensionen:
+Om du använder en allokeringsmodell som inte innehåller någon bindningsdimension med söktermen, tilldelar alla tre produkterna intäkter endast till en enda sökterm. Om du till exempel använde Ursprunglig allokering med söktermsdimensionen:
 
 | search_term | intäkt |
 | --- | --- |
 | boxingshandskar | $204.97 |
 
-Om du använde den senaste allokeringen med söktermdimensionen tilldelar alla tre produkterna fortfarande intäkter till en enda sökterm:
+Om du använde Senaste allokering med söktermdimensionen tilldelar alla tre produkterna fortfarande intäkter till en enda sökterm:
 
 | search_term | intäkt |
 | --- | --- |
@@ -279,18 +252,20 @@ Om du använde den senaste allokeringen med söktermdimensionen tilldelar alla t
 
 Det här exemplet innehåller bara en besökare, men många besökare som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
 
-Med en bindningsdimension noterar Adobe vilken dimensionsartikel den är bunden till. När samma bindningsvärde visas i en efterföljande händelse, förs dimensionsobjektet över så att du kan tilldela det önskade måttet till det. I det här exemplet kan vi ange bindningsdimensionen för search_term till produktnamn. När vi anger den här dimensionen i Data View Manager måste vi också ange ett bindningsmått eftersom bindningsdimensionen finns i en objektmatris. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I den här exempelimplementeringen innehåller sökresultatsidan alltid en sökterm och ett sökmått. Vi kan binda söktermer till produktnamn när sökstatistiken finns.
+CJA identifierar automatiskt relationen mellan den valda dimensionen och bindningsdimensionen. Om bindningsdimensionen finns i en objektmatris när den valda dimensionen är på en högre nivå, krävs ett bindningsmått. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått.
+
+I den här exempelimplementeringen innehåller sökresultatsidan alltid en sökterm och ett sökmått. Vi kan binda söktermer till produktnamn när sökstatistiken finns.
 
 ![Bindningsmått](assets/binding-metric.png)
 
 Om du ställer in söktermsdimensionen på den här beständiga modellen körs följande logik:
 
-* När search_term är i en händelse, kontrollera om det finns något produktnamn.
+* När söktermdimensionen är inställd kontrollerar du om det finns något produktnamn.
 * Om produktnamnet inte finns där, gör ingenting.
 * Om det finns ett produktnamn kontrollerar du om det finns något sökmått.
 * Om sökstatistiken inte finns där, gör ingenting.
-* Om sökstatistiken finns där binder du söktermen till alla produktnamn. Det fungerar som om det vore på samma nivå som produktnamnet för den händelsen. I det här exemplet behandlas det som product.search_term.
-* Om samma produktnamn visas i en efterföljande händelse finns den bundna söktermen också där.
+* Om sökstatistiken finns där binder du söktermen till alla produktnamn i den händelsen. Den kopierar sig själv till samma nivå som produktnamnet för händelsen. I det här exemplet behandlas det som product.search_term.
+* Om samma produktnamn visas i en efterföljande händelse överförs den bundna söktermen även till den händelsen.
 
 I Analysis Workspace ser resultatet ut ungefär så här:
 
@@ -299,3 +274,137 @@ I Analysis Workspace ser resultatet ut ungefär så här:
 | boxingshandskar | 89,99 USD |
 | tennisracket | 34,99 USD |
 | skor | 79,99 USD |
+
+## Exempel 3: Bind söktermen för video till användarprofilen
+
+Du kan binda en sökterm till en användarprofil så att persistensen mellan profiler förblir helt åtskild. Din organisation kör till exempel en direktuppspelningstjänst där ett konto kan ha flera profiler. Besökaren har ett barnkonto och ett vuxenkonto.
+
+1. Kontot loggar in under det underordnade kontot och söker efter ett barns TV-program. Observera att `"AccountID"` är `2` som representerar den underordnade profilen.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "2",
+       "Searches": "1",
+       "search_term": "kids TV show"
+   }
+   ```
+
+1. De hittar programmet &quot;Orangey&quot; och spelar det så att deras barn kan se det.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "2",
+       "ShowName": "Orangey",
+       "VideoStarts": "1"
+   }
+   ```
+
+1. Senare den kvällen växlar den överordnade till sin profil och söker efter nytt innehåll som ska bevakas. Observera att `"AccountID"` är `1` som representerar vuxenprofilen. Båda profilerna tillhör samma konto, som representeras av samma `"PersonID"`.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "1",
+       "Searches": "1",
+       "search_term": "inappropriate adult movie"
+   }
+   ```
+
+1. Hitta föreställningen &quot;Game of Dethones&quot; och njut av deras kväll när de tittar på den.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "1",
+       "ShowName": "Game of Dethrones",
+       "VideoStarts": "1"
+   }
+   ```
+
+1. Dagen därpå fortsätter de TV-programmet &quot;Orangey&quot; för sitt barn. De behöver inte söka eftersom de nu redan är medvetna om programmet.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "2",
+       "ShowName": "Orangey",
+       "VideoStarts": "1"
+   }
+   ```
+
+Om du använder en allokeringsmodell utan en bindningsdimension `"inappropriate adult movie"` söktermen är den sista vyn i barnets TV-program. Om du binder `search_term` till `AccountID`, skulle varje profils sökningar isoleras till sin egen profil, vilket tillskrivs de rätta visar att de söker efter.
+
+## Exempel 4: Utvärdera webbläsarbeteende jämfört med sökbeteenden i en detaljhandelsinställning
+
+1. En besökare söker efter `"camera"`. Observera att inga produkter har angetts på den här sidan.
+
+   ```json
+   {
+       "search_term": "camera",
+       "product_finding_method": "search"
+   }
+   ```
+
+1. De klickar på en kamera de gillar och lägger in den i kundvagnen.
+
+   ```json
+   {
+       "Product": [
+           {
+               "name": "DSLR Camera"
+           }
+       ],
+       "CartAdd": "1"
+   }
+   ```
+
+1. Besökaren bläddrar sedan in i manskategorin utan att göra en sökning. Observera att inga produkter har angetts på den här sidan.
+
+   ```json
+   {
+       "category": "Men's belts",
+       "product_finding_method": "browse"
+   }
+   ```
+
+1. De klickar på ett bälte de gillar och lägger till det i kundvagnen.
+
+   ```json
+   {
+       "Product": [
+           {
+               "name": "Ratchet belt"
+           }
+       ],
+       "CartAdd": "1"
+   }
+   ```
+
+1. De går igenom utcheckningsprocessen och köper dessa två artiklar.
+
+   ```json
+   {
+       "Product": [
+           {
+               "name": "DSLR Camera",
+               "price": "399.99"
+           },
+           {
+               "name": "Ratchet belt",
+               "price": "19.99"
+           }
+       ],
+       "Purchase": "1"
+   }
+   ```
+
+Om beständighet anges till den senaste allokeringen utan någon bindande dimension, kommer alla intäkter på 419,98 USD att tillskrivas `browse` sökmetod. Om beständighet anges med ursprunglig allokering utan en bindande dimension, fördelas alla 419,98 USD av intäkten på `search` sökmetod.
+
+Men om du binder `product_finding_method` I Cart Adds-måttet kopplas varje produkt till rätt sökmetod.
+
+| Produktsökningsmetod | Intäkter |
+| --- | --- |
+| sök | 399,99 |
+| bläddra | 19,99 |
