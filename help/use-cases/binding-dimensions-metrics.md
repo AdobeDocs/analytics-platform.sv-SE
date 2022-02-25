@@ -3,12 +3,13 @@ title: Använda bindningsdimensioner och mätvärden i CJA
 description: Attributdimensioner till objektarrayer för komplex beständighetsanalys.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
+source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1330'
 ht-degree: 1%
 
 ---
+
 
 # Använda bindningsdimensioner och mätvärden i CJA
 
@@ -25,7 +26,6 @@ Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När 
    ```json
    {
        "PersonID": "1",
-       "product_views": 1,
        "product": [
            {
                "name": "Washing Machine 2000",
@@ -42,7 +42,6 @@ Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När 
    ```json
    {
        "PersonID": "1",
-       "product_views": 1,
        "product": [
            {
                "name": "Dryer 2000",
@@ -252,11 +251,19 @@ Om du använde Senaste allokering med söktermdimensionen tilldelar alla tre pro
 
 Det här exemplet innehåller bara en besökare, men många besökare som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
 
-CJA identifierar automatiskt relationen mellan den valda dimensionen och bindningsdimensionen. Om bindningsdimensionen finns i en objektmatris när den valda dimensionen är på en högre nivå, krävs ett bindningsmått. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått.
-
-I den här exempelimplementeringen innehåller sökresultatsidan alltid en sökterm och ett sökmått. Vi kan binda söktermer till produktnamn när sökstatistiken finns.
+Du kan binda söktermer till produktnamn när sökningsmåttet finns för att korrekt tilldela söktermer intäkter.
 
 ![Bindningsmått](assets/binding-metric.png)
+
+I Analysis Workspace ser resultatet ut ungefär så här:
+
+| search_term | intäkt |
+| --- | --- |
+| boxingshandskar | 89,99 USD |
+| tennisracket | 34,99 USD |
+| skor | 79,99 USD |
+
+CJA identifierar automatiskt relationen mellan den valda dimensionen och bindningsdimensionen. Om bindningsdimensionen finns i en objektmatris när den valda dimensionen är på en högre nivå, krävs ett bindningsmått. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I ovanstående exempel innehåller sökresultatsidan alltid en sökterm och ett sökmått.
 
 Om du ställer in söktermsdimensionen på den här beständiga modellen körs följande logik:
 
@@ -267,26 +274,18 @@ Om du ställer in söktermsdimensionen på den här beständiga modellen körs f
 * Om sökstatistiken finns där binder du söktermen till alla produktnamn i den händelsen. Den kopierar sig själv till samma nivå som produktnamnet för händelsen. I det här exemplet behandlas det som product.search_term.
 * Om samma produktnamn visas i en efterföljande händelse överförs den bundna söktermen även till den händelsen.
 
-I Analysis Workspace ser resultatet ut ungefär så här:
-
-| search_term | intäkt |
-| --- | --- |
-| boxingshandskar | 89,99 USD |
-| tennisracket | 34,99 USD |
-| skor | 79,99 USD |
-
 ## Exempel 3: Bind söktermen för video till användarprofilen
 
-Du kan binda en sökterm till en användarprofil så att persistensen mellan profiler förblir helt åtskild. Din organisation kör till exempel en direktuppspelningstjänst där ett konto kan ha flera profiler. Besökaren har ett barnkonto och ett vuxenkonto.
+Du kan binda en sökterm till en användarprofil så att persistensen mellan profiler förblir helt åtskild. Din organisation kör till exempel en direktuppspelningstjänst där ett övergripande konto kan ha flera profiler. Besökaren har en underordnad profil och en vuxenprofil.
 
-1. Kontot loggar in under det underordnade kontot och söker efter ett barns TV-program. Observera att `"AccountID"` är `2` som representerar den underordnade profilen.
+1. Kontot loggar in under den underordnade profilen och söker efter ett barns TV-program. Observera att `"ProfileID"` är `2` som representerar den underordnade profilen.
 
    ```json
    {
        "PersonID": "7078",
-       "AccountID": "2",
+       "ProfileID": "2",
        "Searches": "1",
-       "search_term": "kids TV show"
+       "search_term": "kids show"
    }
    ```
 
@@ -295,48 +294,66 @@ Du kan binda en sökterm till en användarprofil så att persistensen mellan pro
    ```json
    {
        "PersonID": "7078",
-       "AccountID": "2",
+       "ProfileID": "2",
        "ShowName": "Orangey",
        "VideoStarts": "1"
    }
    ```
 
-1. Senare den kvällen växlar den överordnade till sin profil och söker efter nytt innehåll som ska bevakas. Observera att `"AccountID"` är `1` som representerar vuxenprofilen. Båda profilerna tillhör samma konto, som representeras av samma `"PersonID"`.
+1. Senare den kvällen växlar den överordnade till sin profil och söker efter vuxeninnehåll att titta på. Observera att `"ProfileID"` är `1` som representerar vuxenprofilen. Båda profilerna tillhör samma konto, som representeras av samma `"PersonID"`.
 
    ```json
    {
        "PersonID": "7078",
-       "AccountID": "1",
+       "ProfileID": "1",
        "Searches": "1",
-       "search_term": "inappropriate adult movie"
+       "search_term": "grownup movie"
    }
    ```
 
-1. Hitta föreställningen &quot;Game of Dethones&quot; och njut av deras kväll när de tittar på den.
+1. Filmen&quot;Analytics After Hours&quot; visas och njuter av sin kväll när de tittar på den.
 
    ```json
    {
        "PersonID": "7078",
-       "AccountID": "1",
-       "ShowName": "Game of Dethrones",
+       "ProfileID": "1",
+       "ShowName": "Analytics After Hours",
        "VideoStarts": "1"
    }
    ```
 
-1. Dagen därpå fortsätter de TV-programmet &quot;Orangey&quot; för sitt barn. De behöver inte söka eftersom de nu redan är medvetna om programmet.
+1. Nästa dag fortsätter de att visa &quot;Orangey&quot; för sina barn. De behöver inte söka eftersom de nu redan är medvetna om programmet.
 
    ```json
    {
        "PersonID": "7078",
-       "AccountID": "2",
+       "ProfileID": "2",
        "ShowName": "Orangey",
        "VideoStarts": "1"
    }
    ```
 
-Om du använder en allokeringsmodell utan en bindningsdimension `"inappropriate adult movie"` söktermen är den sista vyn i barnets TV-program. Om du binder `search_term` till `AccountID`, skulle varje profils sökningar isoleras till sin egen profil, vilket tillskrivs de rätta visar att de söker efter.
+Om du använder den senaste allokeringen med förfallodatum för person visas `"grownup movie"` söktermen är den sista vyn i barnshowen.
+
+| Sökterm | Videon startar |
+| --- | --- |
+| gruppfilm | 2 |
+| barnshow | 1 |
+
+Om du binder `search_term` till `ProfileID`, skulle varje profils sökningar isoleras till sin egen profil, vilket tillskrivs de rätta visar att de söker efter.
+
+![Besökarbindning](assets/binding-visitor.png)
+
+Analysis Workspace attribuerar det andra avsnittet av Orangey korrekt till söktermen `"kids show"` utan att ta hänsyn till sökningar från andra profiler.
+
+| Sökterm | Videon startar |
+| --- | --- |
+| barnshow | 2 |
+| gruppfilm | 1 |
 
 ## Exempel 4: Utvärdera webbläsarbeteende jämfört med sökbeteenden i en detaljhandelsinställning
+
+Du kan binda värden till dimensioner som angetts för tidigare händelser. När du anger en variabel med en bindningsdimension, tar CJA hänsyn till det beständiga värdet. Om du inte vill använda det här beteendet kan du justera bindningsdimensionens beständighetsinställningar. Titta på följande exempel där `product_finding_method` anges för en händelse och binds sedan till Cart Adds-måttet för följande händelse.
 
 1. En besökare söker efter `"camera"`. Observera att inga produkter har angetts på den här sidan.
 
@@ -400,7 +417,17 @@ Om du använder en allokeringsmodell utan en bindningsdimension `"inappropriate 
    }
    ```
 
-Om beständighet anges till den senaste allokeringen utan någon bindande dimension, kommer alla intäkter på 419,98 USD att tillskrivas `browse` sökmetod. Om beständighet anges med ursprunglig allokering utan en bindande dimension, fördelas alla 419,98 USD av intäkten på `search` sökmetod.
+Om beständighet anges till den senaste allokeringen utan någon bindande dimension, kommer alla intäkter på 419,98 USD att tillskrivas `browse` sökmetod.
+
+| Produktsökningsmetod | Intäkter |
+| --- | --- |
+| bläddra | 419,98 |
+
+Om beständighet anges med ursprunglig allokering utan en bindande dimension, fördelas alla 419,98 USD av intäkten på `search` sökmetod.
+
+| Produktsökningsmetod | Intäkter |
+| --- | --- |
+| sök | 419,98 |
 
 Men om du binder `product_finding_method` I Cart Adds-måttet kopplas varje produkt till rätt sökmetod.
 
