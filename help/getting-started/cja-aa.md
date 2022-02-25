@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 2ebbee4ae7990bdb69f42cf25f8fcef3c20a26ee
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1311'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Datumintervall | Alla funktioner för datumintervall stöds. |
 | Besparingstid för dagsljus | Fullt stöd |
 | Mått | Fullt stöd; CJA utnyttjar XDM och har stöd för obegränsade dimensioner. CJA är inte knutet till de anpassade eVars- eller propparna hos traditionella Adobe Analytics. |
-| Färdiga Analysis Workspace-dimensioner (t.ex. webbläsartyp, referenstyp, operativsystem etc.) | CJA tillhandahåller dessa dimensioner internt så länge som bas-XDM-fälten (till exempel användaragent eller enhets-ID) fylls i. För kunder som använder Analytics Data Connector (ADC) är vissa av dessa dimensioner tillgängliga, men inte alla. Se våra [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Borttagning av GDPR | Fullt stöd; Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform]. CJA ärver alla dataändringar [!UICONTROL Experience Platform] till underliggande datamängder. |
 | Lista variabler/listutkast | Fullt stöd; CJA utnyttjar XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
 | Varaktighet för marknadsföringsvariabel | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) (januari 2022) |
@@ -57,10 +56,10 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Klassificeringar | Kallas nu&quot;Sök efter datauppsättningar&quot;. Klassifikationer som används i Analytics kan importeras till Experience Platform och CJA med Data Connector för Analytics-klassificeringar. Uppslagsdatauppsättningar kan också överföras direkt till AEP och göras tillgängliga i CJA. |
 | Skräddarsydd professionalisering | Stöd för alla anpassade sessioneringsfunktioner förutom mobilbakgrundstötar. |
 | Kundattribut | De kallas nu&quot;profildatauppsättningar&quot; och importeras inte automatiskt från Experience Cloud, utan måste överföras till AEP innan de blir tillgängliga i CJA. |
-| Enhet, webbläsare, teknikdimensioner | Dessa dimensioner inkluderas automatiskt när en AEP-datauppsättning innehåller specifika XDM-schemafält och följer XDM Experience Event-klassen. |
+| [!UICONTROL Device], [!UICONTROL Browser], [!UICONTROL Referrer], [!UICONTROL Technology] dimensioner | Dessa dimensioner inkluderas automatiskt när en AEP-datauppsättning innehåller specifika XDM-schemafält och följer XDM Experience Event-klassen. Se våra [dokumentation om vilka analysvariabler som stöds via Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en). För CJA-kunder som inte använder källkopplingen för att fylla i data från Adobe Analytics till CJA, utan i stället använder AEP Web SDK-datainsamling, [!UICONTROL Device] och dimensioner baserade på enhetssökningen stöds för närvarande inte, men kommer inom den närmaste framtiden. |
 | Poster, avslutningar och använd tid för mått och mätvärden | Stöds (Poster och avslutningar kallas nu för Sessionsstart och Sessionsslut) och beräknas på ett något annorlunda sätt. |
 | Inställningar för beständighet av eVar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Dimensioner som anges i datavyer är begränsade till högst 90 dagars beständighet och stöder inte obegränsad beständighet. |
-| GeoSegmenteringsdimensioner | Alla GeoSegmentation/geografi som samlas in i Adobe Analytics flödar till CJA via Analytics Data Connector. Implementeringar som inte använder Analytics Data Connector, t.ex. de som använder AEP Web SDK för digital datainsamling, kommer inte att ha det totala antalet geografiska sökningar som utförs automatiskt (land och stat stöds, stad och postnummer stöds inte). |
+| GeoSegmenteringsdimensioner | All GeoSegmentation/geography som samlas in i Adobe Analytics flödar till CJA via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). Implementeringar som inte använder Analytics Source Connector, t.ex. de som använder AEP Web SDK för digital datainsamling, kommer inte att ha det fullständiga urvalet av geografiska sökningar som utförs automatiskt: Land och delstat i USA stöds inte. Det finns för närvarande begränsat eller inget stöd för delstater/regioner utanför USA. |
 | Marknadsföringskanaler | Marknadsföringskanalernas data flödar till CJA via Analytics Data Connector. Reglerna för marknadsföringskanaler måste fortfarande konfigureras i traditionella Adobe Analytics. Vissa regler stöds inte. Mer information finns på [Dokumentation för CJA Marketing Channels](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
 | Produktvariabel | I Experience Platform kan användare använda en array med objekttypsfält i ett dataset-schema för att tillgodose detta användningsfall. Inom CJA kan kunderna använda valfritt antal produktvariabler och begränsas inte till en enda variabel som i Adobe Analytics. |
 | Projektdelning | Projektdelning stöds endast mellan CJA-användare - det finns ingen projektdelning mellan CJA och det traditionella Analysis Workspace. |
