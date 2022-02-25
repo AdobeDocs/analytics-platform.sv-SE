@@ -4,9 +4,9 @@ description: Customer Journey Analytics ordlista.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 Vissa Customer Journey Analytics-termer skiljer sig från hur de traditionellt har använts i Adobe Analytics:
 
 | Ny Customer Journey Analytics-term | Adobe Analytics | Beskrivning |
-|---|---|---|
+| --- | --- | --- |
 | Sök datauppsättning | Klassificering | Använd sökning för att hämta värdet från den angivna datauppsättningen för en nyckel/matchande nyckel (i en händelsedatamängd) där det finns en 1-till-1-relation. Du kan till exempel ange&quot;tracking_code&quot; som den nyckel som matchar&quot;tracking_code&quot; i händelsedatamängden. |
 | Profildatamängd | Kundattribut | Om du samlar in företagsdata i en CRM-databas (customer relationship management) kan du överföra dessa data till en profildatauppsättning i Adobe Experience Platform. När du har skapat en anslutning till datauppsättningen i Customer Journey Analytics och skapat en datavy kan du utnyttja data i Workspace. |
 | Inloggningsföretag | Experience Cloud organisation | Se [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
@@ -27,4 +27,4 @@ Vissa Customer Journey Analytics-termer skiljer sig från hur de traditionellt h
 ## Adobe Experience Platform ordlista
 
 Adobe Experience Platform standardiserar data och innehåll i hela företaget, vilket driver konsumentprofiler i realtid, möjliggör datavetenskap och snabbar upp innehållets hastighet för att driva upplevelsepersonalisering över hela kundresan.
-Se [Adobe Experience Platform-ordlista](https://www.adobe.io/apis/experienceplatform/home/services/acp-glossary.html)för mer information.
+Se [Adobe Experience Platform-ordlista](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=en)för mer information.
