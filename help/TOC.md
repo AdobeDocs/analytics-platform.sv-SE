@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Customer Journey Analytics Guide
-user-guide-description: Den här guiden ger självhjälp för Customer Journey Analytics, nästa generations Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
+user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
+source-git-commit: 47c025bc8c84515cfb9ba3d357fe897bb018648a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 40%
+source-wordcount: '597'
+ht-degree: 39%
 
 ---
 
@@ -153,6 +153,11 @@ ht-degree: 40%
    + [Inställningar för Report Builder](report-builder/report-builder-settings.md)
 + Komponenter {#cja-components}
    + [Komponenter – översikt](components/overview.md)
+   + Anteckningar {#annotations}
+      + [Översikt över anteckningar](components/annotations/overview.md)
+      + [Skapa anteckningar](components/annotations/create-annotations.md)
+      + [Hantera anteckningar](components/annotations/manage-annotations.md)
+      + [Visa anteckningar](components/annotations/view-annotations.md)
    + Dimensioner {#dimensions}
       + [Förhandsvisa dimensioner](components/dimensions/view-dimensions.md)
       + [Dela upp dimensioner](components/dimensions/t-breakdown-fa.md)

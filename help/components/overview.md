@@ -4,10 +4,10 @@ description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 10%
+source-wordcount: '361'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,7 @@ Komponenter är funktioner i Customer Journey Analytics som kan användas i rapp
 
 Du kan hantera följande komponenter:
 
+* [**Anteckningar**](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till organisationen. **Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).**
 * [**Filter**](filters/filters-overview.md): Uteslut delar av dina data för att fokusera på gemensamma dimensionsobjekt
 * [**Beräknade mått**](calc-metrics/calc-metr-overview.md): Använd mätvärden och formler som nya komponenter för rapportering
 * [**Datumintervall**](date-ranges/overview.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder
