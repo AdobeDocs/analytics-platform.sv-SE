@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,11 @@ CJA-arkitekturen på hög nivå visas här:
 
 ![arkitektur](assets/cja-architecture.png)
 
+För en video på
+
 ## Jämföra CJA med traditionell Adobe Analytics
 
-Customer Journey Analytics utökar räckvidden för Analytics genom att erbjuda lättanvända flerkanalsfunktioner och tar bort begränsningar i tidigare versioner av Adobe Analytics. Några viktiga förbättringar är:
+Customer Journey Analytics utvidgar räckvidden för Adobe Analytics genom att erbjuda lättanvända funktioner för flera kanaler och ta bort begränsningar i tidigare versioner av Adobe Analytics. Några viktiga förbättringar är:
 
 * **Obegränsade variabler och händelser**: Begreppen eVars, props och events finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha en obegränsad mängd unika mått och mätvärden.
 * **Obegränsade unika värden**: Adobe Experience Platform begränsas inte till några unika begränsningar.
@@ -68,11 +70,11 @@ Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du f
    * Visa identitetsnamnutrymmen
    * Visa datauppsättningar
 
-Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en).
 
 >[!NOTE]
 >
->Du kan inte tillåta enskilda värden eller dimensioner i Customer Journey Analytics, som i vanliga Adobe Analytics. Mätvärden och dimensioner kan ändras i datavyer och kan därför ändras i CJA, som också ändrar rapporteringen retroaktivt.
+>Du kan inte tillåta enskilda värden eller dimensioner i Customer Journey Analytics, som i vanliga Adobe Analytics. Mätvärden och dimensioner kan ändras i [datavyer](/help/data-views/data-views.md) och kan således komma att ändras i CJA, vilket också ändrar rapporteringen retroaktivt.
 
 ### Användaråtkomst
 
@@ -102,3 +104,14 @@ Från datainmatning till direkt SQL-åtkomst - flera komponenter i Experience Pl
 * [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en):
 * [Identitetstjänst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en):
 * [Datavetenskapens arbetsyta](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) i&quot;developer&quot; option: kan ni använda färdiga artificiell intelligens (AI) och maskininlärningsmodeller i Adobe Experience Platform för att påverka olika delar av kundresan. Genom att lyfta fram dolda insikter kan ni göra bättre prognoser över kundresan, föreslå rekommenderade bästa nästa steg eller automatisera krångliga processer.
+
+## Videor
+
+* Arbeta med data i Customer Journey Analytics:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+
+* Arkitektur och integrering av Customer Journey Analytics:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+

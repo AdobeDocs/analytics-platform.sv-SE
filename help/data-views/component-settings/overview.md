@@ -4,9 +4,9 @@ description: Visa huvudinställningar för en datavykomponent.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,7 @@ Kärninställningar som används av en datavykomponent.
 | [!UICONTROL Component ID] | Obligatoriskt. The [CJA API](https://adobe.io/cja-apis/docs) använder det här fältet för att referera till komponenten. Varje komponent i en datavy måste vara unik. Adobe genererar automatiskt ett ID för varje komponent. Du kan dock klicka på redigeringsikonen och ändra komponent-ID:t. Om du ändrar komponent-ID bryts alla befintliga arbetsyteprojekt som innehåller den här komponenten. Även om varje komponent behöver ett unikt ID i en enda datavy, kan du använda samma komponent-ID i andra datavyer. Om du använder samma komponent-ID i andra datavyer kan du göra arbetsyteprojekt kompatibla över datavyer. |
 | [!UICONTROL Schema Path] | Obligatoriskt. Ett icke-redigerbart fält som visar schemasökvägen som komponenten kommer från. |
 | [!UICONTROL Hide component in reporting] | Gör att du kan strukturera komponenten utanför datavyn för icke-administratörer. Administratörer kan fortfarande komma åt den genom att klicka på [!UICONTROL Show All Components] i ett Analysis Workspace-projekt. |
+
+Här är en video om komponentinställningar i datavyer:
+
+>[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
