@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+source-git-commit: e397ff4de0f65ebb0264eac3813046452c572256
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ CJA-arkitekturen på hög nivå visas här:
 
 ![arkitektur](assets/cja-architecture.png)
 
-För en video på
+Här är en videoöversikt av Customer Journey Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
 ## Jämföra CJA med traditionell Adobe Analytics
 
