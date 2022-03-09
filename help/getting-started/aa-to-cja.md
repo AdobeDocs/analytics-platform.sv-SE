@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+source-git-commit: a47343628ace3063d23c6ba023f73dcbdc24dbcc
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Adobe Analytics till Customer Journey Analytics evolutionen
 
-I takt med att ni går över från Adobe Analytics till Customer Journey Analytics kan ni ta hjälp av dessa steg för att ta fram data och bli medvetna om viktiga skillnader mellan de båda teknikerna. Den här artikeln riktar sig till en administratörspass.
+I takt med att er organisation utvecklas till att använda Customer Journey Analytics kan ni ta hjälp av dessa steg för att förbereda era data och bli medvetna om de kritiska skillnaderna mellan de båda teknikerna. Den här artikeln riktar sig till en administratörspass.
 
 ## Förbered data
 
@@ -34,7 +34,7 @@ I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje 
 
 ### 2. Justera variablerna
 
-Den enklaste migreringen av Adobe Analytics-data till Customer Journey Analytics är att importera en [global rapportsvit](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) till Experience Platform med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i AEP, som i sin tur enkelt kan anslutas till CJA.
+Den enklaste metoden att omvandla Adobe Analytics-data till data från Customer Journey Analytics är att importera en [global rapportsvit](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) till Experience Platform med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i Experience Platform, som i sin tur enkelt kan anslutas till Customer Journey Analytics.
 
 En fullständig global rapportsvit kanske inte alltid är möjlig för en implementering. Om du planerar att ta in flera rapportsviter i Customer Journey Analytics måste du planera i förväg för att få variablerna att stämma överens i alla dessa rapportsviter.
 
