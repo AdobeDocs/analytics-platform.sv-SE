@@ -1,19 +1,20 @@
 ---
-title: Migrera från Adobe Analytics till Customer Journey Analytics
-description: Steg för att migrera från Adobe Analytics till Customer Journey Analytics
+title: Adobe Analytics till Customer Journey Analytics evolutionen
+description: Steg för att flytta data från Adobe Analytics till Customer Journey Analytics
+role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---
 
-# Förbered migrering från Adobe Analytics till Customer Journey Analytics
+# Adobe Analytics till Customer Journey Analytics evolutionen
 
-Innan du migrerar data från Adobe Analytics till Customer Journey Analytics bör du ta reda på dessa överväganden för att förbereda dina data och för att bli medveten om kritiska skillnader mellan de båda teknikerna.
+I takt med att ni går över från Adobe Analytics till Customer Journey Analytics kan ni ta hjälp av dessa steg för att ta fram data och bli medvetna om viktiga skillnader mellan de båda teknikerna. Den här artikeln riktar sig till en administratörspass.
 
 ## Förbered data
 
@@ -57,7 +58,7 @@ Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platfor
 
 Med den här metoden utökas möjligheterna för datainsamling avsevärt: Det finns inte längre någon begränsning av antalet fält eller behovet av att mappa dataelement till props, eVars och händelser som i Analytics. Du kan använda ett obegränsat antal schemaelement av olika typer och representera dem på flera sätt med CJA [Datavyer](/help/data-views/data-views.md). Snabbheten för datatillgänglighet ökar när data skickas direkt till Adobe Experience Platform, när tiden för databehandling via Adobe Analytics tas bort.
 
-**Fördelar med att använda Experience Platform SDK**
+**Fördelar med att använda Experience Platform SDK:**
 
 * Flexibelt schema för att definiera de fält du behöver
 * Inte beroende av Adobe Analytics nomenklatur (prop, eVar, event osv.)
@@ -105,7 +106,7 @@ Här är några videor som vägleder dig:
 
 * Tack vare CJA-datavyer har ni större flexibilitet när det gäller att definiera mått och mått inom Customer Journey Analytics. Du kan till exempel använda värdet för en dimension för att bli definitionen av ett mätvärde. [Läs mer](/help/data-views/data-views-usecases.md)
 
-* Om du har definierat en anpassad kalender i Adobe Analytics har du liknande kalenderfunktioner i CJA. Du måste se till att din kalender är korrekt definierad.
+* Om du har definierat en anpassad kalender i Adobe Analytics har du liknande [anpassade kalenderfunktioner](/help/components/date-ranges/custom-date-ranges.md) inom CJA. Du måste se till att din kalender är korrekt definierad.
 
 * I Customer Journey Analytics kan du definiera en anpassad tidsgräns för besök/session samt definiera ett mätvärde som startar en ny session. Du kan skapa datavyer med olika sessionsdefinitioner för att få insikter över vad som var möjligt i Adobe Analytics. Den här funktionen kan vara särskilt användbar för mobildatauppsättningar.
 

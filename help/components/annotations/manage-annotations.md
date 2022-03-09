@@ -4,9 +4,9 @@ description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '665'
 ht-degree: 1%
 
 ---
@@ -47,6 +47,22 @@ Att redigera en anteckning innebär att du kan justera datumintervall, färger, 
 * I [!UICONTROL Annotations Manager]klickar du på anteckningens titel.
 
 Båda dessa alternativ ger dig tillbaka i Annotations Builder. Där kan du göra nödvändiga justeringar och spara den nya versionen.
+
+## Dela anteckningar
+
+När du delar anteckningar eller arbetar med anteckningar som delats med dig bör du tänka på följande:
+
+* Anta att du skapar ett projekt med enbart projektkommentarer och sedan delar projektet med en annan användare. De här anteckningarna visas, men de kan inte redigeras eller tas bort av någon som delar projektet med.
+
+* Om du sparar en anteckning och delar den direkt med en användare, kan han/hon bara redigera/ta bort anteckningen om han/hon har administratörsbehörighet.
+
+* Om projektet delas med dig visas det bara i det projektet. Om anteckningen delas direkt med dig visas den i alla projekt där anteckningen kan visas.
+
+## Anteckningar och tidszoner
+
+Alla anteckningar skapas med en tidsstämpel, men ingen &quot;timme&quot;- eller &quot;tidszon&quot;-information. Vid rapporttillfället används alltid tidszonen för panelens datavy. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du har för rapportsviten.
+
+Ett annat exempel är nyårsdagen. Varje timme sätter olika tidszoner igång för fyrverkerier när det nya året börjar. På 10.00 amerikanska Mountain Time startar USA:s östkust brandarbeten eftersom det redan är 12.00 Eastern Time.
 
 ## Andra anteckningsuppgifter
 
