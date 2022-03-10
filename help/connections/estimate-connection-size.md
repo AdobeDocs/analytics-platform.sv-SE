@@ -4,9 +4,9 @@ description: Rapportera om din nuvarande användning av Customer Journey Analyti
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 74934c8684198104c808284310bcdfd633085574
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Du kan behöva veta hur många rader med data du har i [!UICONTROL Customer Jour
 
 Användningsgränserna övervakas noga och upprätthålls dagligen av Adobe. datarader: de dagliga genomsnittliga datarader som finns tillgängliga för analys inom Customer Journey Analytics.
 
-Anta att ditt avtalsberättigande begränsar antalet rader till 1 miljon. Anta att du laddar upp 2 miljoner rader med data dag 1 av Customer Journey Analytics. Dag 2 tar du bort 1 miljon rader och behåller det högsta antalet som används. Du skulle fortfarande ådra dig överanvändningsavgifter för dag 1.
+Anta att ditt avtalsberättigande begränsar antalet rader till 1 miljon. Anta att du laddar upp 2 miljoner rader med data dag 1 av Customer Journey Analytics. Dag 2 tar du bort 1 miljon rader och behåller det högsta antalet för resten av din licensperiod. Beroende på dina avtalsvillkor kan du fortfarande debitera proportionella överanvändningsavgifter för dag 1.
 
 ## Diagnostisera avvikelser
 
