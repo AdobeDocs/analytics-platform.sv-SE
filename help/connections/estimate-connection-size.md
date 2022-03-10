@@ -4,46 +4,43 @@ description: Rapportera om din nuvarande användning av Customer Journey Analyti
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # Beräkna anslutningsstorlek
 
-Du kan behöva veta hur många rader med data du har i [!UICONTROL Customer Journey Analytics]. Syftet med det här avsnittet är att visa hur du rapporterar hur du använder [!UICONTROL Customer Journey Analytics].
+Du kan behöva veta hur många rader med data du har i [!UICONTROL Customer Journey Analytics]. Gör så här för att få en korrekt redovisning av hur din organisation använder händelsedatarader **för var och en av de anslutningar som din organisation har skapat**.
 
 1. I [!UICONTROL Customer Journey Analytics]klickar du på **[!UICONTROL Connections]** -fliken.
-1. På [!UICONTROL Edit connection] väljer du en anslutning som du vill ange användnings-/anslutningsstorlek för.
 
-   ![Redigera anslutning](assets/edit-connection.png)
+   Nu kan du se en lista över alla dina aktuella anslutningar.
 
-1. Välj en datauppsättning som är din del av anslutningen från den vänstra listen. I det här fallet är det datauppsättningen&quot;B2B-komprimering&quot;.
+1. Klicka på varje anslutningsnamn för att komma till Anslutningshanteraren.
 
-   ![datauppsättning](assets/dataset.png)
+1. Lägg till **[!UICONTROL Records of event data available]** för alla anslutningar som skapas. (Beroende på storleken på anslutningen kan det ta en stund innan numret visas.)
 
-1. Klicka på den blå (i) ikonen (info) bredvid namnet. Du kommer att märka att datauppsättningen har 3,8 kB rader/händelser. Om du vill se det exakta antalet rader klickar du **[!UICONTROL Edit in Experience Platform]** nedanför förhandsgranskningstabellen. Detta dirigerar om dig till datauppsättningarna i [!UICONTROL Adobe Experience Platform].
+   ![händelsedata](assets/event-data.png)
 
-   ![AEP-datauppsättningsinformation](assets/data-size.png)
+1. När du har angett summan av alla händelsedatarader ska du slå upp behörigheten&quot;Rader med data&quot; i det Customer Journey Analytics-kontrakt som ditt företag signerade med Adobe.
 
-1. Lägg märke till **[!UICONTROL Total records]** för den här datauppsättningen är 3,83 kB-poster med storleken 388,59 kB.
+   Detta ger det maximala antalet rader med data som tillåts i försäljningsordern. Om antalet rader med data som kom från steg 3 är större än det här talet, får du ett överskott.
 
-1. Upprepa steg 1-5 för andra datauppsättningar i anslutningen och lägg till antalet poster/rader. Det slutliga aggregerade numret är anslutningsens användningsmått. Detta är antalet rader i datauppsättningarna för anslutningen som du kommer att importera från [!UICONTROL Adobe Experience Platform].
+1. Du kan åtgärda detta på flera sätt:
 
-## Bestämma antalet inkapslade rader
+   * Ändra dina [inställningar för datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#set-rolling-window-for-connection-data-retention).
+   * [Ta bort oanvända anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * [Ta bort en datauppsättning i AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * Kontakta kontohanteraren för Adobe om du vill licensiera ytterligare kapacitet.
 
-Antalet händelser som faktiskt har skickats in [!UICONTROL Customer Journey Analytics] beror på inställningarna för din anslutningskonfiguration. Om du dessutom har valt fel person-ID eller om detta ID inte är tillgängligt för vissa rader i datauppsättningarna [!UICONTROL Customer Journey Analytics] ignorerar de raderna. Så här avgör du vilka rader av händelser som faktiskt hämtas:
+## Angående användningsövertäckning
 
-1. När du har sparat anslutningen skapar du en datavy av samma anslutning utan några filter.
-1. Skapa ett Workspace-projekt och välj rätt datavy. Skapa en frihandstabell och dra och släpp **[!UICONTROL Events]** med **[!UICONTROL Year]** dimension. Välj ett stort datumintervall i datumvalskalendern för att kapsla in alla data i anslutningen. På så sätt kan du se hur många händelser som inhämtas till [!UICONTROL Customer Journey Analytics].
+Användningsgränserna övervakas noga och upprätthålls dagligen av Adobe. datarader: de dagliga genomsnittliga datarader som finns tillgängliga för analys inom Customer Journey Analytics.
 
-   ![Arbetsyteprojekt](assets/event-number.png)
-
-   >[!NOTE]
-   >
-   >På så sätt kan du se antalet händelser som hämtas från din händelsedatamängd. Det omfattar inte profil- och uppslagstypsdatamängder. Följ steg 1-3 under &quot;Beräkna anslutningsstorlek&quot; för profil- och uppslagsdatauppsättningar och lägg till siffrorna för att få det totala antalet rader för den här anslutningen.
+Anta att ditt avtalsberättigande begränsar antalet rader till 1 miljon. Anta att du laddar upp 2 miljoner rader med data dag 1 av Customer Journey Analytics. Dag 2 tar du bort 1 miljon rader och behåller det högsta antalet som används. Du skulle fortfarande ådra dig överanvändningsavgifter för dag 1.
 
 ## Diagnostisera avvikelser
 
@@ -53,6 +50,6 @@ I vissa fall kanske du märker att det totala antalet händelser som är inkapsl
 
    ![uppdelning](assets/data-size2.png)
 
-1. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades det till i [!UICONTROL Customer Journey Analytics] igen, men en annan [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
+1. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades det till Customer Journey Analytics igen, men med ett annat [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
 
 Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
