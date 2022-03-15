@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cae8402c35d82483f6947c9082d074a18ac85dd9
+source-git-commit: 621b40ffebe0c28376bcb36fabf84b53b54e4992
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '686'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
-| Mars | Innehåll som uppdaterats avsevärt på [beräknar anslutningsstorlek](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/estimate-connection-size.html?lang=en). |
+| Mars | Innehåll som uppdaterats avsevärt på [beräknar anslutningsstorlek](/help/getting-started/cja-faq.md). |
 | Februari 2022 | [Adobe Analytics till Customer Journey Analytics evolutionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en) |
 | Januari 2022 | Nytt användningsexempel för [Använda bindningsdimensioner och mätvärden i CJA](/help/use-cases/binding-dimensions-metrics.md) |
 | Januari 2022 | Dokumentation om tillagda nya funktioner på [bindningsdimensioner och mätvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) och på nya [[!UICONTROL First Known] och [!UICONTROL Last Known] allokeringsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#allocation-settings) |
@@ -49,7 +49,6 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Januari 2021 | Nytt ämne [lägga till standardsökningar i datauppsättningen](/help/connections/standard-lookups.md). |
 | 13 november 2020 | Nya ämnen om [Flerkanalsanalys](/help/connections/cca/overview.md)som gör att du kan ändra inmatningen av en datauppsättnings person-ID och som möjliggör en sömlös kombination av flera datauppsättningar. |
 | 13 november 2020 | Ett nytt användningsexempel på [importera callcenter och webbdata](/help/use-cases/call-center.md) lades till. |
-| 11 november 2020 | Lagt till ett ämne [Uppskattar anslutningsstorleken](/help/connections/estimate-connection-size.md). |
 | 10 november 2020 | Ett avsnitt om konsekvenserna av att ta bort datakomponenter har lagts till i [Vanliga frågor](/help/getting-started/cja-faq.md). |
 | 2 november 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/cja-aa.md) sida. |
 | November 2020 | Lagt till innehåll på [ta bort begränsningar för bakgrundsfyllning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#backfill-historical-data) för anslutningar. |

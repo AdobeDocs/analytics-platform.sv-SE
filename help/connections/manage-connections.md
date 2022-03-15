@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -152,9 +152,3 @@ Tillåter administratörer att redigera anslutningen. Välj en anslutning och kl
 * Uppdatera datauppsättningen/datauppsättningarna.
 * Ta bort datauppsättningar från anslutningarna.
 
-## Ange rullande fönster för [!UICONTROL Connection] datalagring
-
->[!IMPORTANT]
->Kontakta kundtjänst eller din kontoansvarige på Adobe för att få den här inställningen implementerad. Den är ännu inte tillgänglig via CJA-gränssnittet.
-
-Med den här inställningen kan du definiera CJA-datalagring som ett rullande fönster på månader (3 månader, 6 månader osv.), vid [!UICONTROL connection] nivå (inte på [!UICONTROL dataset] nivå). Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.

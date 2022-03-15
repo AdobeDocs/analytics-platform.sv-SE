@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '2074'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 [!UICONTROL Customer Journey Analytics] (CJA) är nästa generation av analysprodukter. Här följer svar på vanliga frågor om CJA. Mer information finns på [Funktioner i Customer Journey Analytics](/help/getting-started/cja-aa.md).
 
-## 1. Förutsättningar
+## 1. Förutsättningar {#prerequisites}
 
 | Fråga | Svar |
 | --- | --- |
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2. Stitching data (Cross-Channel Analytics)
+## 2. Stitching data (Cross-Channel Analytics) {#stitching}
 
 | Fråga | Svar |
 | --- | --- |
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 3. Hämta data till [!UICONTROL Customer Journey Analytics]
+## 3. Hämta data till [!UICONTROL Customer Journey Analytics] {#ingest}
 
 | Fråga | Svar |
 | --- | --- |
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. Svarstidsfrågor
+## 4. Svarstidsfrågor {#latency}
 
 >[!NOTE]
 >Det finns ingen fast datastorlek i CJA och Adobe kan därför inte binda sig till en standardintag. Vi arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
@@ -59,21 +59,16 @@ ht-degree: 1%
 | --- | --- |
 | Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-data eller händelser: Behandlas och importeras inom 90 minuter, när data finns tillgängliga i AEP. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 24 timmar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul> |
 
+## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
-## 5. Traditionell [!UICONTROL Adobe Analytics] komponenter
+>[!IMPORTANT]
+>Kontakta kundtjänst eller din kontoansvarige på Adobe för att få den här inställningen implementerad. Den är ännu inte tillgänglig via CJA-gränssnittet.
 
-| Fråga | Svar |
-| --- | --- |
-| Kan jag dela/publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform Unified Profile eller andra program från Experience Cloud? | Inte ännu, men vi arbetar aktivt för att leverera den här funktionen. |
-| Vad hände med min gamla [!UICONTROL eVar] inställning? | [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden. |
-| Var finns alla inställningar för session och variabel beständighet nu? | [!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer! |
-| Vad händer med våra befintliga segment/beräknade värden? | [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller beräkningstalen är kompatibelt med [!UICONTROL Customer Journey Analytics]. |
-| Hur [!UICONTROL Customer Journey Analytics] handtag `Uniques Exceeded` begränsningar? | [!UICONTROL Customer Journey Analytics] har inga unika värdebegränsningar, så du behöver inte bekymra dig om dem! |
-| Om jag är en befintlig [!DNL Data Workbench] kund, kan jag gå över till [!UICONTROL Customer Journey Analytics] just nu? | Det beror på ditt användningssätt - samarbeta med ditt Adobe-kontoteam. Dina nuvarande användningsexempel kanske redan passar Customer Journey Analytics! |
+Med den här inställningen kan du definiera CJA-datalagring som ett rullande fönster på månader (3 månader, 6 månader osv.), vid [!UICONTROL connection] nivå (inte på [!UICONTROL dataset] nivå). Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
 
-{style=&quot;table-layout:auto&quot;}
+Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
 
-## 6. Konsekvenser av borttagning av datakomponenter
+## 6. Konsekvenser av borttagning av datakomponenter {#deletion}
 
 När det gäller borttagning av data är vi oroade för sex typer av komponenter: sandlåda, schema, datauppsättning, anslutning, datavy och Workspace-projekt. Här följer några möjliga scenarier när du tar bort någon av dessa komponenter:
 
@@ -88,7 +83,7 @@ När det gäller borttagning av data är vi oroade för sex typer av komponenter
 | Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
 | Ta bort en datavy i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att alla arbetsyteprojekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
 
-## 7. Att tänka på när du sammanfogar rapportsviter i CJA
+## 7. Att tänka på när du sammanfogar rapportsviter i CJA {#merge-reportsuite}
 
 Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)bör du ta hänsyn till dessa förändringar när du sammanfogar två eller fler rapportsviter från Adobe Analytics.
 
@@ -100,3 +95,60 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 | Valuta | Valutakonvertering stöds ännu inte i CJA. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
 | [!UICONTROL Persistence] | [Persistence](../data-views/component-settings/persistence.md) omfattar flera rapportsviter, vilket påverkar [!UICONTROL filters], [!UICONTROL attribution]och så vidare. Siffrorna kanske inte läggs ihop korrekt. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När flera klassificeringsfiler kombineras till en enda [!UICONTROL lookup] datauppsättningen kan du stöta på problem. |
+
+
+## 8. Traditionell [!UICONTROL Adobe Analytics] komponenter
+
+| Fråga | Svar |
+| --- | --- |
+| Kan jag dela/publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform Unified Profile eller andra program från Experience Cloud? | Inte ännu, men vi arbetar aktivt för att leverera den här funktionen. |
+| Vad hände med min gamla [!UICONTROL eVar] inställning? | [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden. |
+| Var finns alla inställningar för session och variabel beständighet nu? | [!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer! |
+| Vad händer med våra befintliga segment/beräknade värden? | [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller beräkningstalen är kompatibelt med [!UICONTROL Customer Journey Analytics]. |
+| Hur [!UICONTROL Customer Journey Analytics] handtag `Uniques Exceeded` begränsningar? | [!UICONTROL Customer Journey Analytics] har inga unika värdebegränsningar, så du behöver inte bekymra dig om dem! |
+| Om jag är en befintlig [!DNL Data Workbench] kund, kan jag gå över till [!UICONTROL Customer Journey Analytics] just nu? | Det beror på ditt användningssätt - samarbeta med ditt Adobe-kontoteam. Dina nuvarande användningsexempel kanske redan passar Customer Journey Analytics! |
+
+{style=&quot;table-layout:auto&quot;}
+
+## 9. Beräkna anslutningsstorlek {#estimate-size}
+
+Du kan behöva veta hur många rader med data du har i [!UICONTROL Customer Journey Analytics]. Gör så här för att få en korrekt redovisning av hur din organisation använder händelsedatarader **för var och en av de anslutningar som din organisation har skapat**.
+
+1. I [!UICONTROL Customer Journey Analytics]klickar du på **[!UICONTROL Connections]** -fliken.
+
+   Nu kan du se en lista över alla dina aktuella anslutningar.
+
+1. Klicka på varje anslutningsnamn för att komma till Anslutningshanteraren.
+
+1. Lägg till **[!UICONTROL Records of event data available]** för alla anslutningar som skapas. (Beroende på storleken på anslutningen kan det ta en stund innan numret visas.)
+
+   ![händelsedata](assets/event-data.png)
+
+1. När du har angett summan av alla händelsedatarader ska du slå upp behörigheten&quot;Rader med data&quot; i det Customer Journey Analytics-kontrakt som ditt företag signerade med Adobe.
+
+   Detta ger det maximala antalet rader med data som tillåts i försäljningsordern. Om antalet rader med data som kom från steg 3 är större än det här talet, får du ett överskott.
+
+1. Du kan åtgärda detta på flera sätt:
+
+   * Ändra dina [inställningar för datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#set-rolling-window-for-connection-data-retention).
+   * [Ta bort oanvända anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * [Ta bort en datauppsättning i AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * Kontakta kontohanteraren för Adobe om du vill licensiera ytterligare kapacitet.
+
+## 10. Angående användningsövertäckning {#overage}
+
+Användningsgränserna övervakas regelbundet och upprätthålls av Adobe. datarader: de dagliga genomsnittliga datarader som finns tillgängliga för analys inom Customer Journey Analytics.
+
+Anta till exempel att ditt avtal ger dig rätt till en miljon rader med data. Anta att du laddar upp två miljoner rader med data dag 1 av Customer Journey Analytics. På dag 2 tar du bort 1 miljon rader och behåller din användning på det högsta tillåtna antalet (dvs. en miljon rader data) under återstoden av licensvillkoren. Beroende på dina avtalsvillkor kan du ändå ådra dig en proportionell överanvändningsavgift för dag 1 eftersom du har överskridit dina licensrättigheter för&quot;datarader&quot;.
+
+## 11. Diagnostisera dataavvikelser {#discrepancies}
+
+I vissa fall kanske du märker att det totala antalet händelser som är inkapslade av din anslutning skiljer sig från antalet rader i datauppsättningen i [!UICONTROL Adobe Experience Platform]. I det här exemplet har datauppsättningen &quot;B2B-komprimering&quot; 7 650 rader, men datauppsättningen innehåller 3 830 rader i [!UICONTROL Adobe Experience Platform]. Det finns flera orsaker till varför avvikelser kan inträffa, och följande åtgärder kan vidtas för att diagnostisera:
+
+1. Dela upp den här dimensionen med **[!UICONTROL Platform Dataset ID]** och du kommer att märka två datauppsättningar med samma storlek men olika **[!UICONTROL Platform Dataset IDs]**. Varje datauppsättning har 3825 poster. Det betyder [!UICONTROL Customer Journey Analytics] 5 poster ignorerades på grund av saknade person-ID:n eller saknade tidsstämplar:
+
+   ![uppdelning](assets/data-size2.png)
+
+1. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades det till Customer Journey Analytics igen, men med ett annat [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
+
+Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
