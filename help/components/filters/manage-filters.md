@@ -2,8 +2,7 @@
 title: Hantera filter
 description: Lär dig hantera filter i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 1%
@@ -16,9 +15,9 @@ Filterhanteraren erbjuder många sätt att strukturera filter, som att dela, tag
 
 Filterhanteraren visar alla filter som du äger och som har delats med dig. Administratörsnivåanvändare kan se alla filter i organisationen. I den här översikten visas användargränssnittet och funktionerna i Filterhanteraren.
 
-Gå till Filterhanteraren genom att gå till **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** i den översta navigeringen.
+Öppna Filterhanteraren genom att gå till **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** i den övre navigeringen.
 
-## Användargränssnitt för Filterhanteraren
+## Användargränssnitt för Filterhanteraren {#ui}
 
 ![](assets/filter-manager-ui.png)
 
@@ -37,7 +36,7 @@ Gå till Filterhanteraren genom att gå till **[!UICONTROL Customer Journey Anal
 | 13 | Ikonen Godkänd | Anger att det här filtret har godkänts av en administratör. |
 | 14 | Andra filter | Gör att du kan se filter efter taggar, datavyer, ägare och annat (Visa alla, Min, Delas med mig, Godkänd, Favoriter). |
 
-## Planfilter
+## Planfilter {#plan}
 
 Genom att ägna lite tid åt att planera filter ökar du chansen att de kan vara användbara för din organisation och att deras nummer hålls i schack.
 
@@ -47,7 +46,7 @@ Genom att ägna lite tid åt att planera filter ökar du chansen att de kan vara
 
    * När ska jag använda det här filtret?
 
-* Bestäm filteromfånget. Vilken [filterbehållare](/help/components/filters/filters-overview.md) är bäst för omfånget? Använd den minsta möjliga behållaren.
+* Bestäm filteromfånget. som [filterbehållare](/help/components/filters/filters-overview.md) bäst representerar omfattningen? Använd den minsta möjliga behållaren.
 
 * Bestäm vilka element som ska inkluderas i filterdefinitionen och vilka värden.
 
@@ -55,7 +54,7 @@ Genom att ägna lite tid åt att planera filter ökar du chansen att de kan vara
 
 * Definiera filtren i ett filterbibliotek som ger användarna möjlighet att stapla och återanvända filterdelar eller komponenter på ett modulärt sätt. Vilka moduler behöver du definiera för att göra det här biblioteket till verklighet?
 
-### Taggfilter
+### Taggfilter {#tag}
 
 I Filterhanteraren kan du ordna taggningsfiltren. Alla användare kan skapa taggar för filter och använda en eller flera taggar för ett filter. Men du kan bara se taggar för de filter som du äger eller som har delats med dig.
 
@@ -73,18 +72,18 @@ Så här taggar du ett filter:
 
 1. Markera kryssrutan bredvid filtret som du vill tagga i Filterhanteraren. Verktygsfältet för filterhantering visas.
 
-1. Klicka på **[!UICONTROL Tag]** och antingen
+1. Klicka **[!UICONTROL Tag]** och antingen
 
    * välj bland befintliga taggar, eller
 
-   * Ange ett nytt taggnamn och tryck på **[!UICONTROL Enter]**.
+   * ange ett nytt taggnamn och tryck på **[!UICONTROL Enter]**.
 
-1. Klicka på **[!UICONTROL Tag]** igen för att tagga filtret.
+1. Klicka **[!UICONTROL Tag]** igen för att tagga filtret.
 
 Taggen ska nu visas i kolumnen Taggar. (Klicka på kugghjulsikonen uppe till höger för att hantera kolumnerna.)
-Du kan också filtrera på taggar genom att gå till **[!UICONTROL Filters > Tags]**.
+Du kan även filtrera på taggar genom att gå till **[!UICONTROL Filters > Tags]**.
 
-### Godkänn filter
+### Godkänn filter {#approve}
 
 I Filterhanteraren kan du konfigurera ett arbetsflöde som innefattar godkännande av filter för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapportobjekten.
 
@@ -92,7 +91,7 @@ Så här flaggar du ett filter som godkänt:
 
 1. Markera kryssrutan till vänster om filtertiteln i Filterhanteraren.
 
-1. Klicka på **[!UICONTROL Approve]** i aktivitetsfältet för filterhantering.
+1. Klicka **[!UICONTROL Approve]** i aktivitetsfältet för filterhantering.
 
 1. Överväg att dela de godkända filtren med din organisation.
 
@@ -104,13 +103,13 @@ Så här flaggar du ett filter som godkänt:
 
 1. Du kan också avgodkänna ett godkänt filter genom att klicka på **[!UICONTROL Unapprove]**.
 
-### Dela filter
+### Dela filter {#share}
 
 Beroende på dina behörigheter kan du dela filter med hela organisationen, grupper eller enskilda användare.
 
 | Administratör | Icke-administratör |
 |---|---|
-| Kan dela filter med Alla, med Grupper och med Användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html). | Kan endast dela filter med enskilda användare. |
+| Kan dela filter med Alla, med Grupper och med Användare. Se [Admin Console dokumentation](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) för mer information. | Kan endast dela filter med enskilda användare. |
 
 När bör du dela filter med hela företaget jämfört med bara en grupp användare eller personer? Här är några tips du kan följa:
 
@@ -124,13 +123,13 @@ Så här delar du ett filter:
 
 1. Markera kryssrutan bredvid filtret som du vill dela i Filterhanteraren.
 
-1. Klicka på **[!UICONTROL Share]** i verktygsfältet för filterhantering.
+1. Klicka på **[!UICONTROL Share]**.
 
 1. Om du är administratör kan du välja Alla eller välja Grupper och Användare i organisationen. Som icke-administratör kan du bara se enskilda användare. Använd sökfältet för att söka efter grupper eller användare. Klicka på **[!UICONTROL Share]**. Ikonen Delad visas bredvid filtret: ![](assets/share_icon.png)
 
 1. Du kan filtrera efter filter som delas med dig genom att gå till Filter > Andra filter > Delade med mig.
 
-### Markera filter som favoriter
+### Markera filter som favoriter {#favorites}
 
 Att markera filter som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
 

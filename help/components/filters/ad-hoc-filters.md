@@ -4,31 +4,32 @@ title: Ad hoc-projektfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
+source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
 
 # Ad hoc-projektfilter
 
+Med ad hoc-projektfilter kan du dra och släppa valfri komponent direkt i panelens släppzon för att skapa ett filter. Filtret blir ett [projektnivåfilter](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?#what-are-project-only-segments) lokalt till det aktuella projektet.
+
 Här är en video om hur du skapar ad hoc-projektfilter:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
-Du kan skapa ad hoc-projektfilter om du snabbt vill utforska hur ett filter kan påverka ditt projekt, utan att gå till segmentbyggaren. Tänk på dessa filter som temporära filter på projektnivå. De är vanligtvis inte en del av ditt filterbibliotek som komponentfilter i den vänstra listen. Du kan dock spara dem enligt nedan.
 
-Om du vill jämföra vad ad hoc-projektfilter kan göra med fullständiga filter på komponentnivå går du till [här](/help/components/filters/filters-overview.md).
+1. 
+   1. Släpp en komponenttyp (dimension, dimensionsobjekt, händelse, mått, segment, segmentmall, datumintervall) i filtersläppzonen högst upp på en panel. Komponenttyper konverteras automatiskt till ad hoc-filter eller [Snabbfilter](/help/components/filters/quick-filters.md) om det är kompatibelt.
 
-1. Släpp en komponenttyp (dimension, dimensionsobjekt, händelse, mått, filter, filtermall, datumintervall) i filtersläppzonen högst upp på en panel. Komponenttyper konverteras automatiskt till filter.
-Här följer ett exempel på hur du skapar ett filter för den hänvisande domänen för Twitter:
+   Här följer ett exempel på hur du skapar ett filter för den hänvisande domänen för Twitter:
 
    ![](assets/ad-hoc1.png)
 
    Panelen tillämpar automatiskt det här filtret och du ser resultatet direkt.
 
-1. Du kan lägga till ett obegränsat antal komponenter på en panel.
+1. Du kan lägga till ett obegränsat antal filter på en panel.
 1. Om du bestämmer dig för att du vill spara det här filtret kan du läsa avsnittet nedan.
 
 Tänk på följande:
@@ -37,19 +38,14 @@ Tänk på följande:
 * För alla dimensioner och händelser skapar Analysis Workspace&quot;exists&quot;-träfffilter. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
 * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i filtersläppzonen konverteras den automatiskt till filtret &quot;does not exist&quot; så att det behandlas korrekt vid filtrering.
 
->[!NOTE]
->
->Segment som skapas på det här sättet är interna för projektet.
-
 ## Spara ad hoc-projektfilter {#ad-hoc-save}
 
 Du kan välja att spara dessa filter genom att följa dessa steg:
 
 1. Håll pekaren över filtret i släppzonen och klicka på ikonen i.
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka på redigeringspennan för att gå till filterverktyget.
+1. Kontrollera **[!UICONTROL Make available to all projects and add to your component list]**.
+1. Klicka på **[!UICONTROL SAVE]**.
 
-   ![](assets/segment-info.png)
+När filtret har sparats är det tillgängligt i komponentlistan till vänster och kan delas med andra användare från Filterhanteraren.
 
-## Vad är filter som endast är projektbaserade?
-
-Endast projektfilter är antingen snabbfilter eller ad hoc-projektfilter för arbetsytan. När du redigerar/öppnar dem i filterverktyget visas rutan för endast projekt. Om de använder ett snabbfilter i verktyget men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett projektfilter, men det kan inte längre öppnas i QS-verktyget. Om de markerar kryssrutan och SPARA är det nu ett komponentlistfilter.

@@ -4,10 +4,10 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 0%
+source-wordcount: '227'
+ht-degree: 1%
 
 ---
 
@@ -40,6 +40,7 @@ Projektinställningar gäller för nya projekt och nya paneler som skapas i Anal
 |  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
 |  | Nummerformat | <ul><li>1 000,00 (standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-avgränsare | <ul><li>Komma (standard)</li><li>Semikolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Blanksteg</li><li>Tabb</li></ul> |
+|  | Frihandstabell | <ul><li>Visa avvikelser </li><li>Visa miniatyrbilder</li><li>Visa anteckningar</li></ul> |
 
 ## [!UICONTROL Dark theme]
 
