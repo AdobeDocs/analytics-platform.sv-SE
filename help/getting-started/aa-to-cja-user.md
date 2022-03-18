@@ -4,9 +4,9 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
+source-git-commit: 24a6319b1303eaef80ddf6142deae60e7f664ae4
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,17 @@ ht-degree: 0%
 
 # CJA User Guide for Adobe Analytics users
 
+>[!NOTE]
+>
+>Den här sidan håller på att byggas.
+
 Grattis, ditt företag börjar arbeta Customer Journey Analytics! Som användare av Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
 
 ## Vad som inte har ändrats
 
-Mycket av det ni känner till på rapporteringssidan har inte förändrats. Du kan fortfarande använda kraften i Analysis Workspace för att analysera dina data, plus Adobe Analytics dashboards och en ny version av Report Builder. Arbetsytan och kontrollpanelerna fungerar i stort sett på samma sätt som i traditionella Adobe Analytics. Report Builder har ett nytt gränssnitt och kan nu köras på datorer, Mac-datorer och webbversionen av Excel. Medvetet om att ni har tillgång till betydligt fler flerkanalsdata som ni kan analysera är skillnaden. Här är ett exempel på en arbetsyta
+Mycket av det ni känner till på rapporteringssidan har inte förändrats. Du kan fortfarande använda kraften i Analysis Workspace för att analysera dina data. Du har också tillgång till samma version av Adobe Analytics-kontrollpaneler. Arbetsytan och kontrollpanelerna fungerar i stort sett på samma sätt som i traditionella Adobe Analytics. Report Builder har ett nytt gränssnitt och kan nu köras på datorer, Mac-datorer och webbversionen av Excel. Medvetet om att ni har tillgång till betydligt fler flerkanalsdata som ni kan analysera är skillnaden. Här är ett exempel på några visualiseringar i flera kanaler:
+
+![flerkanaligt](assets/cross-channel.png)
 
 ## Ny arkitektur
 
@@ -26,7 +32,7 @@ Customer Journey Analytics får sina data från Adobe Experience Platform. Med E
 
 Kunddata på plattformen lagras som datauppsättningar, som består av ett schema och grupper med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
-CJA-administratören upprättar anslutningar till data i plattformen och skapar datavyer inom dessa anslutningar. Tänk på datavyer som liknar virtuella rapportsviter. Datavyer är grunden för rapportering i Customer Journey Analytics.
+Din CJA-administratör har etablerat [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Platform. De har sedan byggt [datavyer](/help/data-views/data-views.md) inom dessa anslutningar. Tänk på datavyer som liknar virtuella rapportsviter. Datavyer är grunden för rapportering i Customer Journey Analytics.
 
 ## Nya begrepp och terminologi
 
