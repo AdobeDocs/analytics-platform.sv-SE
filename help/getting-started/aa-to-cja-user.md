@@ -4,9 +4,9 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 24a6319b1303eaef80ddf6142deae60e7f664ae4
+source-git-commit: d31f07d8b26ea4d60481c040a0ca1ba491d4ecf0
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >Den här sidan håller på att byggas.
 
-Grattis, ditt företag börjar arbeta Customer Journey Analytics! Som användare av Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
+Grattis, ditt företag börjar arbeta med Customer Journey Analytics! Som användare som är bekant med Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
 
 ## Vad som inte har ändrats
 
