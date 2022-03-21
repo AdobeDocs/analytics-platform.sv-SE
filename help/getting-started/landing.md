@@ -3,9 +3,9 @@ description: Beskriver den nya landningssidans funktioner.
 title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 186c462c363660970080acbb9a906c4cf8254df8
+source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,13 @@ Ni kan
 
 [!UICONTROL Projects] fungerar som [!UICONTROL Workspace] hemsida. Alla arbetsyteprojekt visas här, inklusive Mobile Scorecards. **[!UICONTROL Projects]** är saker som du har skapat eller som någon annan har byggt och delat med dig. [!UICONTROL Projects] hänvisar också till tomma projekt och tomma mobilstyrkort.
 
-![Alla landningar](assets/landing-all.png)
-
 >[!NOTE]
 >
 >Flera av följande inställningar finns kvar (sparas) både under sessionen och mellan sessionerna. Exempel: Vilken flik du är på, vilka filter som har markerats, vilka kolumner som har markerats och kolumnsorteringsriktningen. Sökresultaten sparas dock inte.
 
 | UI-element | Definition |
 | --- | --- |
-| ... Mer | Gör att du kan [!UICONTROL View Tutorials]och [Redigera användarinställningar](/help/analyze/analysis-workspace/user-preferences.md). |
+| ... Mer | Gör att du kan [!UICONTROL View Tutorials]och [Redigera användarinställningar](/help/analysis-workspace/user-preferences.md). |
 | **[!UICONTROL Create new]** modal är tillbaka | När du klickar **[!UICONTROL Create new]** i arbetsytan får du ännu en gång möjlighet att välja mellan [!UICONTROL Blank project] och [!UICONTROL Blank mobile scorecard]. Du kan också välja bland de mallar som företaget har skapat. |
 | [!UICONTROL Show less/more] | Växlar mellan att inte visa och visa banderollen: ![Övre banderoll](assets/top-banner.png) |
 | [!UICONTROL Blank project] | Skapar en tom [Arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) för att fylla i. |
@@ -52,7 +50,7 @@ Ni kan
 | Markeringsruta | Om du klickar i den här rutan bredvid ett eller flera projekt visas de projekthanteringsåtgärder du kan utföra: Ta bort, tagga, fästa, godkänn, dela, byta namn, kopiera och exportera till CSV. Du kanske inte har behörighet att utföra alla dessa åtgärder. |
 | [!UICONTROL Favorites] | Om du väljer att Favoritera ett projekt placeras en stjärna bredvid sig och taggas som en favorit som du kan filtrera på. |
 | [!UICONTROL Name] | Projektets namn. |
-| Info (i), ikon | Om du klickar på informationsikonen visas följande information om det här projektet: Typ, Projektroll, Ägare, Beskrivning och vem det delas med. Det anger också vem som kan [redigera eller duplicera](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/curate-share/share-projects.html) det här projektet. |
+| Info (i), ikon | Om du klickar på informationsikonen visas följande information om det här projektet: Typ, Projektroll, Ägare, Beskrivning och vem det delas med. Det anger också vem som kan [redigera eller duplicera](/help/analysis-workspace/curate-share/share-projects.md) det här projektet. |
 | Ellips (..) | När du klickar på ellipsen bredvid ett projekt visas de projekthanteringsåtgärder du kan utföra: Ta bort, tagga, fästa, godkänn, dela, byta namn, kopiera och exportera till CSV. Observera att du kanske inte har behörighet att utföra alla dessa åtgärder. |
 | [!UICONTROL Type] | Anger om den här typen är ett Workspace-projekt eller ett Mobile-styrkort. |
 | [!UICONTROL Tags] | Du kan tagga rapporter för att ordna dem i grupper. |
@@ -62,7 +60,7 @@ Ni kan
 | [!UICONTROL Shared with] | Vem projektet delades med. |
 | [!UICONTROL Last Modified] | När det här projektet senast ändrades. |
 | [!UICONTROL Last opened] | När det här projektet senast öppnades av dig. |
-| [!UICONTROL Scheduled] | Ange till [!UICONTROL On] när ett projekt är schemalagt eller **[!UICONTROL Off]** när det inte är det. Klicka på **[!UICONTROL On]** -länken kan du visa information om det schemalagda projektet. Du kan också [redigera projektschemat](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) om du är projektägare. |
+| [!UICONTROL Scheduled] | Ange till [!UICONTROL On] när ett projekt är schemalagt eller **[!UICONTROL Off]** när det inte är det. Klicka på **[!UICONTROL On]** -länken kan du visa information om det schemalagda projektet. Du kan också [redigera projektschemat](/help/analysis-workspace/curate-share/t-schedule-report.md) om du är projektägare. |
 | [!UICONTROL Project ID] | Projekt-ID kan användas för felsökningsprojekt. |
 | [!UICONTROL Longest Date Range] | Längre datumintervall ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiderna. |
 | [!UICONTROL Number of Queries] | Ett högre antal projektfrågor ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiden. |
