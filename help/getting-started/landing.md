@@ -3,9 +3,10 @@ description: Beskriver den nya landningssidans funktioner.
 title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
+exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
+source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ Ni kan
 | [!UICONTROL Scheduled] | Ange till [!UICONTROL On] när ett projekt är schemalagt eller **[!UICONTROL Off]** när det inte är det. Klicka på **[!UICONTROL On]** -länken kan du visa information om det schemalagda projektet. Du kan också [redigera projektschemat](/help/analysis-workspace/curate-share/t-schedule-report.md) om du är projektägare. |
 | [!UICONTROL Project ID] | Projekt-ID kan användas för felsökningsprojekt. |
 | [!UICONTROL Longest Date Range] | Längre datumintervall ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiderna. |
-| [!UICONTROL Number of Queries] | Ett högre antal projektfrågor ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiden. |
+| [!UICONTROL Number of Queries] | Det totala antalet begäranden som gjorts till Analytics när projektet läses in. Ett högre antal projektfrågor ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiden. Dessa data är bara tillgängliga när ett projekt har lästs in eller när ett schemalagt projekt har skickats. |
 | Anpassa tabellikon | (Överst till höger) Om du vill lägga till eller ta bort kolumner från listan med projekt kan du göra det genom att markera eller avmarkera dem. |
 | &lt; (Bakåt-knappen) | Den här knappen i ett Workspace-projekt tar dig tillbaka till den senaste konfigurationen för landningssidan. Vilken sidkonfiguration du än hade när du lämnade landningssidan kommer att finnas kvar när du kommer tillbaka. |
 
