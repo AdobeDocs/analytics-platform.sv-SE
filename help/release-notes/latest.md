@@ -3,18 +3,14 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4afb87d0160dff9cd3249889bab84dacfdc43e2a
+source-git-commit: 39869e6ab2da8b15cb5dde876fe5233fc7c35adf
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '183'
 ht-degree: 4%
 
 ---
 
 # Versionsinformation för Customer Journey Analytics (mars 2022)
-
->[!IMPORTANT]
->
->Versionsinformationen innehåller information om förhandsversioner som kan ändras.
 
 **Senaste uppdatering**: 23 mars 2022
 
