@@ -4,16 +4,16 @@ title: Ad hoc-projektfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '283'
 ht-degree: 1%
 
 ---
 
 # Ad hoc-projektfilter
 
-Med ad hoc-projektfilter kan du dra och släppa valfri komponent direkt i panelens släppzon för att skapa ett filter. Filtret blir ett [projektnivåfilter](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?#what-are-project-only-segments) lokalt till det aktuella projektet.
+Med ad hoc-projektfilter kan du dra och släppa valfri komponent direkt i panelens släppzon för att skapa ett filter. Filtret blir ett [projektnivåfilter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html) lokalt till det aktuella projektet.
 
 Här är en video om hur du skapar ad hoc-projektfilter:
 

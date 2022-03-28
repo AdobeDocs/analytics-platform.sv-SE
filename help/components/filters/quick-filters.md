@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Du kan skapa snabbfilter i ett projekt för att slippa komplexiteten i den fullständiga [Filter Builder](/help/components/filters/create-filters.md). Snabbfilter
 
-* Använd som [endast projektsegment](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?lang=en#what-are-project-only-filters).
+* Använd som [endast projektsegment](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html).
 * Tillåt upp till tre regler
 * Innesluta inte kapslade behållare eller sekventiella regler.
 
@@ -99,7 +99,7 @@ När du har tillämpat filtret kan du lägga till det i filterkomponentlistan oc
 1. Filtret visas nu i filterkomponentlistan för alla dina projekt.
 1. Du kan också [dela filtret](/help/components/filters/manage-filters.md) med andra i organisationen.
 
-## Vad är filter som endast är projektbaserade?
+## Vad är filter som endast är projektbaserade? {#project-only}
 
 Endast projektfilter är filter som bara gäller för det aktuella projektet som de skapades i. De är inte tillgängliga i andra projekt och kan inte delas med andra användare. De är avsedda för att snabbt kunna utforska dina data utan att du behöver skapa och spara ett filter i den vänstra listen. Du kan skapa filter som bara innehåller projekt i panelens släppzon med snabbfilter eller [ad hoc-filter](/help/components/filters/ad-hoc-filters.md).
 
