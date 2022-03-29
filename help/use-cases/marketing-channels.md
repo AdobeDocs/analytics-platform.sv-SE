@@ -4,9 +4,9 @@ description: Använd Analytics Data Connector för att överföra regler för be
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 0b4dbe76e21c443b46b56f302b1a23858c65f828
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,13 @@ Nu kan du använda dina mått för marknadsföringskanalen i Analysis Workspace.
 >
 >Det finns flera grundläggande dataskillnader mellan rapportsvitens data och plattformsdata. Adobe rekommenderar starkt att man justerar reglerna för hur marknadsföringskanalen i din rapportsvit hanteras för att underlätta en korrekt datainsamling i Platform.
 
+>[!NOTE]
+>
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=en).
+
 Inställningarna för marknadsföringskanaler fungerar annorlunda mellan plattformsdata och rapportsvitsdata. Tänk på följande skillnader när du skapar marknadsföringskanaler för CJA:
 
-* **Är första sidan av besök**: Det här regelvillkoret är vanligt för flera standarddefinitioner av marknadsföringskanaler. Alla bearbetningsregler som innehåller det här villkoret ignoreras i Plattform (andra villkor i samma regel gäller fortfarande). Sessionerna bestäms vid datafrågetiden i stället för vid datainsamlingen, vilket förhindrar att den här specifika regelkriterierna används av plattformen. Adobe rekommenderar att villkoret&quot;Är första sidan i besöket&quot; tas bort från varje regel för hantering av marknadsföringskanaler.
+* **Är första sidan av besök**: Det här regelvillkoret är vanligt för flera standarddefinitioner av marknadsföringskanaler. Alla bearbetningsregler som innehåller det här villkoret ignoreras i Plattform (andra villkor i samma regel gäller fortfarande). Sessionerna bestäms vid datafrågetiden i stället för vid datainsamlingen, vilket förhindrar att den här specifika regelkriterierna används av plattformen. Adobe rekommenderar att man omvärderar alla regler för bearbetning av marknadsföringskanaler som innehåller villkoret&quot;Är första sidan i besöket&quot; och väljer alternativa strategier som uppfyller era mål.
 
    ![Första sidan av besöket](assets/first-page-of-visit.png)
 
