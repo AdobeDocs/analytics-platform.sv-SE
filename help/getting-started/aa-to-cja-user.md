@@ -4,9 +4,9 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d31f07d8b26ea4d60481c040a0ca1ba491d4ecf0
+source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,15 @@ Grattis, ditt företag börjar arbeta med Customer Journey Analytics! Som använ
 
 ## Vad som inte har ändrats
 
-Mycket av det ni känner till på rapporteringssidan har inte förändrats. Du kan fortfarande använda kraften i Analysis Workspace för att analysera dina data. Du har också tillgång till samma version av Adobe Analytics-kontrollpaneler. Arbetsytan och kontrollpanelerna fungerar i stort sett på samma sätt som i traditionella Adobe Analytics. Report Builder har ett nytt gränssnitt och kan nu köras på datorer, Mac-datorer och webbversionen av Excel. Medvetet om att ni har tillgång till betydligt fler flerkanalsdata som ni kan analysera är skillnaden. Här är ett exempel på några visualiseringar i flera kanaler:
+Mycket av det ni känner till på rapporteringssidan har inte förändrats.
 
-![flerkanaligt](assets/cross-channel.png)
+* Du kan fortfarande använda [Analysis Workspace](/help/analysis-workspace/home.md) för att analysera era data.
+* Du har också samma version av [Adobe Analytics dashboards](/help/mobile-app/home.md) till ditt förfogande. Arbetsytan och kontrollpanelerna fungerar på samma sätt som i traditionella Adobe Analytics.
+* [Report Builder](/help/report-builder/report-buider-overview.md) har ett nytt gränssnitt och kan nu köras på PC, Mac och webbversionen av Excel.
+
+När det gäller rapportering är skillnaden att ni har tillgång till betydligt fler flerkanalsdata att analysera. Här är ett exempel på några visualiseringar för flera kanaler som innehåller ett antal datakällor för flera kanaler:
+
+![visualiseringar med flera kanaler](assets/cross-channel.png)
 
 ## Ny arkitektur
 
