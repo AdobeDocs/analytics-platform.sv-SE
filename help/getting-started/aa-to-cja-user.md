@@ -4,9 +4,9 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
+source-git-commit: 07c9bda0c40bf1e7bd39bf75bdce900a4749f0da
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,13 @@ Din CJA-administratör har etablerat [anslutningar](/help/connections/create-con
 
 Flera funktioner i CJA har fått ett nytt namn och fått en ny arkitektur jämfört med traditionella Adobe Analytics för att passa in i branschens standarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Välbekanta koncept som eVars och props finns inte längre, tillsammans med de begränsningar de hade.
 
-### eVars och props
+### Inga fler eVars och props
 
 [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden.
+
+**Vad du behöver göra**:
+
+* Bekanta dig med de många sätt du kan
 
 ### Segmenten är nu &#39;Filter&#39;
 
@@ -54,28 +58,44 @@ Flera funktioner i CJA har fått ett nytt namn och fått en ny arkitektur jämf�
 
 Du kan för närvarande inte dela/publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform Unified Profile eller andra program i Experience Cloud. Den här funktionen håller på att utvecklas.
 
+**Vad du behöver göra**:
+
+* Om du vill flytta befintliga Adobe Analytics-segment till Customer Journey Analytics kan du visa [den här videon](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en).
+* Annars återskapar du filtren i Customer Journey Analytics.
+
 ### Beräknade värden
 
 [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inga befintliga beräknade värden är kompatibla med [!UICONTROL Customer Journey Analytics].
 
+**Vad du behöver göra**:
+
+* Om du vill flytta Adobe Analytics beräknade värden till Customer Journey Analytics kan du visa [den här videon](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en).
+* Annars återskapar du de beräknade måtten i Customer Journey Analytics.
+
 ### Inställningar för session och variabel beständighet
 
-[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
+[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i [datavyer](help/data-views/component-settings/persistence.md). Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
 
 ### Virtuella rapportsviter är nu datavyer
 
+Datavyer tar begreppet virtuella rapportsviter så som de finns idag och expanderar det till [aktivera ytterligare kontroller av data](/help/data-views/create-dataview.md) som är tillgängliga via anslutningar. Detta gör att tidszon- och timeout-intervall för sessioner kan konfigureras. Du kan också använda attribut- och förfalloegenskaper för enskilda dimensioner dynamiskt. Observera att dessa tillämpas retroaktivt på alla data.
 
+### Data för flera rapporter
+
+Befintliga implementeringar från flera datauppsättningar kan kombineras i Experience Platform.
 
 ### Klassificeringarna är nu &#39;Sök efter datauppsättningar&#39;
 
 ### Kundattribut är nu &#39;Profildatamängder&#39;
 
 
-### Träffbehållare är nu Event-behållare
+### Namnet på behållarna har ändrats
 
-### Besöksbehållare är nu &#39;Sessionsbehållare&#39;
+Du anger en behållare för [varje datavy du skapar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). Observera att du kan byta namn på vilken behållare som helst efter organisationens behov.
 
-### Besöksbehållare är nu &#39;Person&#39;-behållare
+* **Träffbehållare är nu Event-behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
+* **Besöksbehållare är nu &#39;Sessionsbehållare&#39;**. The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session.
+* **Besöksbehållare är nu [!UICONTROL Person] behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
 
 ### `Uniques Exceeded` begränsningar
 
