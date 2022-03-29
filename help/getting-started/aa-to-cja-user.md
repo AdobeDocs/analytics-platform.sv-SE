@@ -4,9 +4,9 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 07c9bda0c40bf1e7bd39bf75bdce900a4749f0da
+source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >Den här sidan håller på att byggas.
 
-Grattis, ditt företag börjar arbeta med Customer Journey Analytics! Som användare som är bekant med Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
+Grattis, ditt företag börjar anställa Customer Journey Analytics! Som användare som är bekant med Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
 
 ## Vad som inte har ändrats
 
@@ -28,7 +28,7 @@ Mycket av det ni känner till på rapporteringssidan har inte förändrats.
 * Du har också samma version av [Adobe Analytics dashboards](/help/mobile-app/home.md) till ditt förfogande. Arbetsytan och kontrollpanelerna fungerar på samma sätt som i traditionella Adobe Analytics.
 * [Report Builder](/help/report-builder/report-buider-overview.md) har ett nytt gränssnitt och kan nu köras på PC, Mac och webbversionen av Excel.
 
-När det gäller rapportering är skillnaden att ni har tillgång till betydligt fler flerkanalsdata att analysera. Här är ett exempel på några visualiseringar för flera kanaler som innehåller ett antal datakällor för flera kanaler:
+När det gäller rapportering är skillnaden att ni har tillgång till betydligt fler flerkanalsdata att analysera. Här är ett exempel på några visualiseringar som inkluderar datakällor för flera kanaler:
 
 ![visualiseringar med flera kanaler](assets/cross-channel.png)
 
@@ -38,7 +38,7 @@ Customer Journey Analytics får sina data från Adobe Experience Platform. Med E
 
 Kunddata på plattformen lagras som datauppsättningar, som består av ett schema och grupper med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
-Din CJA-administratör har etablerat [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Platform. De har sedan byggt [datavyer](/help/data-views/data-views.md) inom dessa anslutningar. Tänk på datavyer som liknar virtuella rapportsviter. Datavyer är grunden för rapportering i Customer Journey Analytics.
+Din CJA-administratör har etablerat [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Platform. De har sedan byggt [datavyer](/help/data-views/data-views.md) inom dessa anslutningar. Tänk på datavyer som liknar virtuella rapportsviter. Datavyer är grunden för rapportering i Customer Journey Analytics. Begreppet rapportsvit finns inte längre.
 
 ## Nya begrepp och terminologi
 
@@ -72,17 +72,30 @@ Du kan för närvarande inte dela/publicera [!UICONTROL filters] ([!UICONTROL se
 * Om du vill flytta Adobe Analytics beräknade värden till Customer Journey Analytics kan du visa [den här videon](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en).
 * Annars återskapar du de beräknade måtten i Customer Journey Analytics.
 
-### Inställningar för session och variabel beständighet
-
-[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i [datavyer](help/data-views/component-settings/persistence.md). Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
-
 ### Virtuella rapportsviter är nu datavyer
 
 Datavyer tar begreppet virtuella rapportsviter så som de finns idag och expanderar det till [aktivera ytterligare kontroller av data](/help/data-views/create-dataview.md) som är tillgängliga via anslutningar. Detta gör att tidszon- och timeout-intervall för sessioner kan konfigureras. Du kan också använda attribut- och förfalloegenskaper för enskilda dimensioner dynamiskt. Observera att dessa tillämpas retroaktivt på alla data.
 
+**Vad du behöver göra**:
+
+* Bekanta dig med de många användningsexemplen runt datavyer.
+* Observera att du kan välja bland de datavyer som administratören har delat med dig i den rapportsvitsväljare som du är van vid i Workspace:
+
+   ![data-view-selector](assets/data-views.png)
+
 ### Data för flera rapporter
 
-Befintliga implementeringar från flera datauppsättningar kan kombineras i Experience Platform.
+Befintliga implementeringar från flera datauppsättningar kan kombineras i Experience Platform. De anslutningar och datavyer som baseras på dessa datauppsättningar kan kombinera data som tidigare fanns i separata rapportsviter.
+
+**Vad du behöver göra**:
+
+
+### Inställningar för session och variabel beständighet
+
+[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i [datavyer](help/data-views/component-settings/persistence.md). Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
+
+**Vad du behöver göra**:
+
 
 ### Klassificeringarna är nu &#39;Sök efter datauppsättningar&#39;
 
@@ -91,11 +104,15 @@ Befintliga implementeringar från flera datauppsättningar kan kombineras i Expe
 
 ### Namnet på behållarna har ändrats
 
-Du anger en behållare för [varje datavy du skapar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). Observera att du kan byta namn på vilken behållare som helst efter organisationens behov.
-
+Du anger en behållare för [varje datavy du skapar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
 * **Träffbehållare är nu Event-behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
 * **Besöksbehållare är nu &#39;Sessionsbehållare&#39;**. The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session.
 * **Besöksbehållare är nu [!UICONTROL Person] behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
+
+**Vad du behöver göra**:
+
+Du kan byta namn på alla behållare efter behov.
+
 
 ### `Uniques Exceeded` begränsningar
 
