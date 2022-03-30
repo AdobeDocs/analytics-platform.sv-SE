@@ -4,9 +4,9 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ Grattis, ditt företag börjar anställa Customer Journey Analytics! Som använd
 
 Mycket av det ni känner till på rapporteringssidan har inte förändrats.
 
-* Du kan fortfarande använda [Analysis Workspace](/help/analysis-workspace/home.md) för att analysera era data.
-* Du har också samma version av [Adobe Analytics dashboards](/help/mobile-app/home.md) till ditt förfogande. Arbetsytan och kontrollpanelerna fungerar på samma sätt som i traditionella Adobe Analytics.
+* Du kan fortfarande använda [Analysis Workspace](/help/analysis-workspace/home.md) för att analysera era data. Arbetsytan fungerar på samma sätt som i traditionella Adobe Analytics.
+* Du har också samma version av [Adobe Analytics dashboards](/help/mobile-app/home.md) till ditt förfogande. Kontrollpaneler (alias Dashboards) Mobile App) fungerar på samma sätt som i traditionella Adobe Analytics.
 * [Report Builder](/help/report-builder/report-buider-overview.md) har ett nytt gränssnitt och kan nu köras på PC, Mac och webbversionen av Excel.
 
 När det gäller rapportering är skillnaden att ni har tillgång till betydligt fler flerkanalsdata att analysera. Här är ett exempel på några visualiseringar som inkluderar datakällor för flera kanaler:
@@ -78,10 +78,11 @@ Datavyer tar begreppet virtuella rapportsviter så som de finns idag och expande
 
 **Vad du behöver göra**:
 
-* Bekanta dig med de många användningsexemplen runt datavyer.
 * Observera att du kan välja bland de datavyer som administratören har delat med dig i den rapportsvitsväljare som du är van vid i Workspace:
 
    ![data-view-selector](assets/data-views.png)
+
+* Bekanta dig med de många [användningsexempel runt datavyer](/help/data-views/data-views-usecases.md).
 
 ### Data för flera rapporter
 

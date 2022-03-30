@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Du kan skapa snabbfilter i ett projekt för att slippa komplexiteten i den fulls
 * Innesluta inte kapslade behållare eller sekventiella regler.
 
 En jämförelse mellan vad snabbfilter kan göra och fullständiga filter för komponentlistor finns på [här](/help/components/filters/filters-overview.md).
+
+Här är en video om snabbfilter (observera att termen&quot;snabbsegment&quot; används i stället). Funktionen är dock densamma.
+
+>[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## Förutsättningar {#prereqs}
 
