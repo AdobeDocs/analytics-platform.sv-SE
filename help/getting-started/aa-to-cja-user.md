@@ -4,9 +4,9 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 48cde188fffd810f7bb292923fb0137fb476dcd4
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >Den här sidan håller på att byggas.
 
-Grattis, ditt företag börjar anställa Customer Journey Analytics! Som användare som är bekant med Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
+Ditt företag börjar anställa Customer Journey Analytics. Som användare som är bekant med Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
 
 ## Vad som inte har ändrats
 
@@ -44,13 +44,25 @@ Din CJA-administratör har etablerat [anslutningar](/help/connections/create-con
 
 Flera funktioner i CJA har fått ett nytt namn och fått en ny arkitektur jämfört med traditionella Adobe Analytics för att passa in i branschens standarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Välbekanta koncept som eVars och props finns inte längre, tillsammans med de begränsningar de hade.
 
-## Inga fler eVars och props
+## (Virtuella) rapportsviter är nu datavyer
 
-[!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden.
+[!UICONTROL Data views] ta begreppet virtuella rapportsviter som de finns idag och utvidga det till [aktivera ytterligare kontroller av data](/help/data-views/create-dataview.md) som är tillgängliga via anslutningar. Detta gör att tidszon- och timeout-intervall för sessioner kan konfigureras. Du kan också använda attribut- och förfalloegenskaper för enskilda dimensioner dynamiskt. Observera att dessa tillämpas retroaktivt på alla data.
 
 **Vad du behöver göra**:
 
-* Bekanta dig med de många sätt du kan
+* Observera att du kan välja bland de datavyer som administratören har delat med dig i den rapportsvitsväljare som du är van vid i Workspace:
+
+   ![data-view-selector](assets/data-views.png)
+
+* Bekanta dig med de många [användningsexempel runt datavyer](/help/data-views/data-views-usecases.md).
+
+## Inga fler eVars och props
+
+[!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden. Din CJA-administratör har skapat datavyer
+
+**Vad du behöver göra**:
+
+* Bekanta dig med de många olika sätt som dessa schemaelement kan användas för att fördjupa dig i dina data.
 
 ## Segmenten är nu &#39;Filter&#39;
 
@@ -72,17 +84,6 @@ Du kan för närvarande inte dela/publicera [!UICONTROL filters] ([!UICONTROL se
 * Om du vill flytta Adobe Analytics beräknade värden till Customer Journey Analytics kan du visa [den här videon](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en).
 * Annars återskapar du de beräknade måtten i Customer Journey Analytics.
 
-## Virtuella rapportsviter är nu datavyer
-
-Datavyer tar begreppet virtuella rapportsviter så som de finns idag och expanderar det till [aktivera ytterligare kontroller av data](/help/data-views/create-dataview.md) som är tillgängliga via anslutningar. Detta gör att tidszon- och timeout-intervall för sessioner kan konfigureras. Du kan också använda attribut- och förfalloegenskaper för enskilda dimensioner dynamiskt. Observera att dessa tillämpas retroaktivt på alla data.
-
-**Vad du behöver göra**:
-
-* Observera att du kan välja bland de datavyer som administratören har delat med dig i den rapportsvitsväljare som du är van vid i Workspace:
-
-   ![data-view-selector](assets/data-views.png)
-
-* Bekanta dig med de många [användningsexempel runt datavyer](/help/data-views/data-views-usecases.md).
 
 ## Data för flera rapporter
 
@@ -96,8 +97,9 @@ Befintliga implementeringar från flera datauppsättningar kan kombineras i Expe
 
 **Vad du behöver göra**:
 
-
 ## Klassificeringarna är nu &#39;Sök efter datauppsättningar&#39;
+
+
 
 ## Kundattribut är nu &#39;Profildatamängder&#39;
 

@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1699'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,9 @@ När administratörsanvändare har [skapade en eller flera anslutningar](/help/c
 
 * Med den kan du **identifiera eventuella dataavvikelser** på grund av felkonfigurering. Saknar du några rader? Om ja, vilka rader saknas och varför? Har du felkonfigurerat anslutningar och orsakat saknade data i CJA?
 
->[!NOTE]
-> Den här funktionen kommer att vara allmänt tillgänglig den 20 september 2021.
+Här är ett videoklipp om den nya anslutningshanteraren:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342097/?quality=12&learn=on)
 
 ## Anslutningshanteraren {#connections-manager}
 

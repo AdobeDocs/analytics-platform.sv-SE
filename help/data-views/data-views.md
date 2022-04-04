@@ -4,7 +4,7 @@ description: En datavy anger hur du vill tolka element i data i CJA-anslutningen
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Du kan skapa olika datavyer för samma anslutning, med mycket olika uppsättning
 
 Arbetsyteprojekt i Customer Journey Analytics baseras på datavyer.
 
-## Funktioner för datavyer
+## Funktioner för datavyer {#capabilities}
 
 Med datavyer kan du ändra inställningar för schemaelement spontant utan att behöva ändra schemat i Adobe Experience Platform eller implementera CJA-miljön på nytt.
 
@@ -52,12 +52,12 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 
 * Du kan **byta namn på behållare** i en datavy och låta dessa namnändrade behållare visa i ett arbetsyteprojekt som baseras på den datavyn.
 
-## Krav för datavyer
+## Krav för datavyer {#prerequisites}
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till datauppsättningar i Experience Platform](/help/connections/create-connection.md).
 * Om du vill skapa eller hantera en datavy behöver du en [behörighetsuppsättning i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions).
 
-## Datavy settings you can override in Workspace
+## Datavy settings you can override in Workspace {#settings-override}
 
 Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektnivå, andra kan inte det.
 
@@ -65,14 +65,14 @@ Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektniv
 * Måttattribuering
 * Om användarna ser [!UICONTROL No Value] radartikel i en rapport
 
-## Datavy settings you cannot override in Workspace
+## Datavy settings you cannot override in Workspace {#settings-no-override}
 
 * [!UICONTROL Component type]
 * Metrisk formatering
 * Datavy name
 * Dimension
 
-## Ta bort datavyer
+## Ta bort datavyer {#delete}
 
 Om du tar bort en datavy i [!UICONTROL Customer Journey Analytics]visas ett felmeddelande om att [!UICONTROL Workspace] projekt som är beroende av den här borttagna datavyn kommer inte längre att fungera.
 
