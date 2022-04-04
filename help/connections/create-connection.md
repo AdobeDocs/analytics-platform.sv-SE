@@ -4,7 +4,7 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 59d9fa8d4e4fa4aa3d297e70a619a7456527c5cd
+source-git-commit: 386feb602a276672f79ee8a612b5d288ce6ad981
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Customer Journey Analytics
 
    (Om du har många datauppsättningar att välja bland kan du söka efter rätt datauppsättningar med **[!UICONTROL Search datasets]** sökfältet ovanför listan med datauppsättningar.)
 
-## 2. Konfigurera datauppsättning
+## Konfigurera datauppsättning
 
 Till höger kan du nu konfigurera de datauppsättningar som du har lagt till.
 
