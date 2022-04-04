@@ -4,7 +4,7 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: fcd178add387cc79dabecace3fa1f84bd64c904f
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Befintliga implementeringar från flera datauppsättningar kan kombineras i Expe
 
 ## Inställningar för session och variabel beständighet
 
-[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i [datavyer](help/data-views/component-settings/persistence.md). Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
+[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i [datavyer](/help/data-views/component-settings/persistence.md). Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
 
 **Vad du behöver göra**:
 
