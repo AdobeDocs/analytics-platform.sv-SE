@@ -4,7 +4,7 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: ff642069b058626fa049ef4dad7ee565e501b0c6
+source-git-commit: 8dfebc4af72c57118bdad36b4374aa81efb05591
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Med en anslutning kan du integrera datauppsättningar från [!DNL Adobe Experien
 
 Här är en videoöversikt:
 
->[!VIDEO](https://video.tv.adobe.com/35111/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
 
 ## Nödvändiga behörigheter
 
