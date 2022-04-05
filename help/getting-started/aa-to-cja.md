@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,11 @@ I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje 
 
 Den enklaste metoden att omvandla Adobe Analytics-data till data från Customer Journey Analytics är att importera en [global rapportsvit](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) till Experience Platform med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i Experience Platform, som i sin tur enkelt kan anslutas till Customer Journey Analytics.
 
-En fullständig global rapportsvit kanske inte alltid är möjlig för en implementering. Om du planerar att ta in flera rapportsviter i Customer Journey Analytics måste du planera i förväg för att få variablerna att stämma överens i alla dessa rapportsviter.
+En fullständig global rapportsvit kanske inte alltid är möjlig för en implementering. Om du planerar att ta in flera rapportsviter i Customer Journey Analytics har du två alternativ:
 
-eVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportserie 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När de hämtas in till CJA blandas dessa variabler in i en enda eVar1-dimension, vilket kan leda till förvirrande och felaktig rapportering.
+* Planera för att få variablerna att stämma överens i alla dessa rapportsviter. eVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportserie 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När de hämtas in till CJA blandas dessa variabler in i en enda eVar1-dimension, vilket kan leda till förvirrande och felaktig rapportering.
+
+* Använd [Förbered datum](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktion för att mappa variabler. Även om det blir enklare om alla rapportsviter använder samma vanliga variabeldesign är det inte nödvändigt om du använder nya Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#mapping) -funktion. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
 
 Om du har undvikit att gå över till en global rapportserie på grund av problem med [!UICONTROL Uniques Exceeded] eller [!UICONTROL Low Traffic], vet att CJA inte har [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md). Det gör att alla unika värden kan visas och räknas.
 

@@ -4,13 +4,13 @@ description: Vad man ska tänka på när man flyttar data från Adobe Analytics 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 13743c627ae0af608e63c39ca1f0b8c54f61bbe0
+exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
-
 
 # CJA User Guide for Adobe Analytics users
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >Den här sidan håller på att byggas.
 
-Ditt företag börjar anställa Customer Journey Analytics. Som användare som är bekant med Adobe Analytics har du redan ett försprång. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
+Ditt företag börjar anställa Customer Journey Analytics. Som användare som är bekant med Adobe Analytics har du redan fått en bra start. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
 
 ## Vad som inte har ändrats
 
@@ -28,7 +28,7 @@ Mycket av det ni känner till på rapporteringssidan har inte förändrats.
 * Du har också samma version av [Adobe Analytics dashboards](/help/mobile-app/home.md) till ditt förfogande. Kontrollpaneler (alias Dashboards) Mobile App) fungerar på samma sätt som i traditionella Adobe Analytics.
 * [Report Builder](/help/report-builder/report-buider-overview.md) har ett nytt gränssnitt och kan nu köras på PC, Mac och webbversionen av Excel.
 
-När det gäller rapportering är skillnaden att ni har tillgång till betydligt fler flerkanalsdata att analysera. Här är ett exempel på några visualiseringar som inkluderar datakällor för flera kanaler:
+När det gäller rapportering, **vad som är annorlunda** är att ni har tillgång till betydligt fler flerkanalsdata att analysera. Här är ett exempel på några visualiseringar som inkluderar datakällor för flera kanaler:
 
 ![visualiseringar med flera kanaler](assets/cross-channel.png)
 
