@@ -4,9 +4,9 @@ description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar fö
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 16ebf5672099b0cd0c5e4dafd577f175370fa9b5
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ Innan du använder flerkanalsanalys bör du kontrollera att din organisation har
 >[!IMPORTANT]
 >
 >Observera att alla ändringar i det globala händelsedatamängdsschemat måste tillämpas även i det nya sammanfogade dataschemat, annars bryts den sammanfogade datauppsättningen.
+>
+>Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
 
 Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar för hur den kan användas.
 
@@ -56,6 +58,7 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 * Det tillfälliga ID-fältet ska innehålla en enda typ av ID (t.ex. ID:n från ett enda namnutrymme). Det tillfälliga ID-fältet ska till exempel inte innehålla en kombination av inloggnings-ID och e-post-ID.
 * Om flera händelser inträffar med samma tidsstämpel för samma beständiga ID, men med olika värden i fältet för transient ID, väljer fältbaserad sammanslagning baserat på alfabetisk ordning. Om beständigt ID A har två händelser med samma tidsstämpel och en av händelserna anger Bob och den andra anger Ann, väljer fältbaserad stitling Ann.
 * Flerkanalsanalys håller reda på varje beständigt ID-värde i ett år (TTL = 1 år). Om en enhet inte har någon aktivitet på mer än ett år och sedan börjar få aktivitet igen kopplas de nya händelserna till en anonym person tills användaren identifieras igen (till exempel via en ny inloggning).
+* Om en enhet delas av flera personer och det totala antalet övergångar mellan användare överstiger 50 000, upphör CCA att sammanfoga data för den enheten.
 
 
 ## Aktivera flerkanalsanalys
