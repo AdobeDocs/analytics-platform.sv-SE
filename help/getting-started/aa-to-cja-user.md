@@ -5,20 +5,18 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
+source-git-commit: 171b174624dbb48873024368884992766dcd0922
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
 
 # CJA User Guide for Adobe Analytics users
 
->[!NOTE]
->
->Den här sidan håller på att byggas.
+Ditt företag börjar anställa Customer Journey Analytics. Som användare som är bekant med Adobe Analytics har du redan fått en bra start. När du arbetar med Customer Journey Analytics kommer du att märka vissa likheter och stora skillnader. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
 
-Ditt företag börjar anställa Customer Journey Analytics. Som användare som är bekant med Adobe Analytics har du redan fått en bra start. När du arbetar med Customer Journey Analytics kommer du att märka några stora skillnader och vissa likheter. Den här sidan syftar till att förklara de saker som inte har ändrats samt några av de stora skillnaderna. Vi kommer också att berätta för er hur ni kan få mer information om nya koncept och ytterligare steg för att göra kundresan enklare och mer framgångsrik.
+Flera funktioner i CJA har fått ett nytt namn och fått en ny arkitektur jämfört med traditionella Adobe Analytics för att passa in i branschens standarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Välbekanta koncept som eVars och props finns inte längre, tillsammans med de begränsningar de hade.
 
 ## Vad som inte har ändrats
 
@@ -40,9 +38,9 @@ Kunddata på plattformen lagras som datauppsättningar, som består av ett schem
 
 Din CJA-administratör har etablerat [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Platform. De har sedan byggt [datavyer](/help/data-views/data-views.md) inom dessa anslutningar. Tänk på datavyer som liknar virtuella rapportsviter. Datavyer är grunden för rapportering i Customer Journey Analytics. Begreppet rapportsvit finns inte längre.
 
-## Nya begrepp och terminologi
+## Rapportsviter
 
-Flera funktioner i CJA har fått ett nytt namn och fått en ny arkitektur jämfört med traditionella Adobe Analytics för att passa in i branschens standarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Välbekanta koncept som eVars och props finns inte längre, tillsammans med de begränsningar de hade.
+Data i din rapportsvit kan hämtas till Experience Platform via Adobe Analytics Source Connector eller Web SDK, särskilt om din organisation fortfarande använder Adobe Analytics och lägger till CJA/AEP. Vanligtvis kommer du att hämta datauppsättningar som är specifika för rapportsviten med Analytics-schemat.
 
 ## (Virtuella) rapportsviter är nu datavyer
 
@@ -50,7 +48,7 @@ Flera funktioner i CJA har fått ett nytt namn och fått en ny arkitektur jämf�
 
 **Vad du behöver göra**:
 
-* Observera att du kan välja bland de datavyer som administratören har delat med dig i den rapportsvitsväljare som du är van vid i Workspace:
+* Observera att i Workspace kan du nu välja bland de datavyer som administratören har delat med dig i den rapportsvitsväljare som du är van vid:
 
    ![data-view-selector](assets/data-views.png)
 
