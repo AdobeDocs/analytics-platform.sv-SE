@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 171b174624dbb48873024368884992766dcd0922
+source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ När det gäller rapportering, **vad som är annorlunda** är att ni har tillgå
 
 ![visualiseringar med flera kanaler](assets/cross-channel.png)
 
-## Ny arkitektur
+## Ny arkitektur {#architecture}
 
 Customer Journey Analytics får sina data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
 
@@ -38,11 +38,11 @@ Kunddata på plattformen lagras som datauppsättningar, som består av ett schem
 
 Din CJA-administratör har etablerat [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Platform. De har sedan byggt [datavyer](/help/data-views/data-views.md) inom dessa anslutningar. Tänk på datavyer som liknar virtuella rapportsviter. Datavyer är grunden för rapportering i Customer Journey Analytics. Begreppet rapportsvit finns inte längre.
 
-## Rapportsviter
+## Rapportsviter {#report-suites}
 
 Data i din rapportsvit kan hämtas till Experience Platform via Adobe Analytics Source Connector eller Web SDK, särskilt om din organisation fortfarande använder Adobe Analytics och lägger till CJA/AEP. Vanligtvis kommer du att hämta datauppsättningar som är specifika för rapportsviten med Analytics-schemat.
 
-## (Virtuella) rapportsviter är nu datavyer
+## (Virtuella) rapportsviter är nu datavyer {#data-views}
 
 [!UICONTROL Data views] ta begreppet virtuella rapportsviter som de finns idag och utvidga det till [aktivera ytterligare kontroller av data](/help/data-views/create-dataview.md) som är tillgängliga via anslutningar. Detta gör att tidszon- och timeout-intervall för sessioner kan konfigureras. Du kan också använda attribut- och förfalloegenskaper för enskilda dimensioner dynamiskt. Observera att dessa tillämpas retroaktivt på alla data.
 
@@ -54,7 +54,7 @@ Data i din rapportsvit kan hämtas till Experience Platform via Adobe Analytics 
 
 * Bekanta dig med de många [användningsexempel runt datavyer](/help/data-views/data-views-usecases.md).
 
-## Inga fler eVars och props
+## eVars och props
 
 [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden. Din CJA-administratör har skapat datavyer
 
