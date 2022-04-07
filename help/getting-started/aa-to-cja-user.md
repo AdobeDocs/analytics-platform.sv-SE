@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,21 @@ Kunddata på plattformen lagras som datauppsättningar, som består av ett schem
 
 Din CJA-administratör har etablerat [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Platform. De har sedan byggt [datavyer](/help/data-views/data-views.md) inom dessa anslutningar. Tänk på datavyer som liknar virtuella rapportsviter. Datavyer är grunden för rapportering i Customer Journey Analytics. Begreppet rapportsvit finns inte längre.
 
+## Anslutningar
+
+Med en anslutning kan Analytics Admin integrera datauppsättningar från [!DNL Adobe Experience Platform] till [!UICONTROL Workspace]. För att rapportera [!DNL Experience Platform] datauppsättningar måste du först skapa en anslutning mellan datauppsättningar i [!DNL Experience Platform] och [!UICONTROL Workspace].
+
+Här är en videoöversikt:
+
+>[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
+
 ## Rapportsviter {#report-suites}
 
-Data i din rapportsvit kan hämtas till Experience Platform via Adobe Analytics Source Connector eller Web SDK, särskilt om din organisation fortfarande använder Adobe Analytics och lägger till CJA/AEP. Vanligtvis kommer du att hämta datauppsättningar som är specifika för rapportsviten med Analytics-schemat.
+Data från rapportsviten kan hämtas till Experience Platform via Adobe Analytics Source Connector eller Web SDK om din organisation fortfarande använder Adobe Analytics och lägger till CJA/AEP. Vanligtvis kommer du att hämta datauppsättningar som är specifika för rapportsviten med Analytics-schemat.
+
+Rapporteringssviter är dock inte längre grunden för rapportering i CJA - [datavyer](/help/data-views/data-views.md) är. Mer information om datavyer finns i avsnittet nedan.
+
+Befintliga implementeringar från flera datauppsättningar kan kombineras i Experience Platform. De anslutningar och datavyer som baseras på dessa datauppsättningar kan kombinera data som tidigare fanns i separata rapportsviter.
 
 ## (Virtuella) rapportsviter är nu datavyer {#data-views}
 
@@ -56,7 +68,7 @@ Data i din rapportsvit kan hämtas till Experience Platform via Adobe Analytics 
 
 ## eVars och props
 
-[!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden. Din CJA-administratör har skapat datavyer
+[!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden.
 
 **Vad du behöver göra**:
 
@@ -82,29 +94,30 @@ Du kan för närvarande inte dela/publicera [!UICONTROL filters] ([!UICONTROL se
 * Om du vill flytta Adobe Analytics beräknade värden till Customer Journey Analytics kan du visa [den här videon](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en).
 * Annars återskapar du de beräknade måtten i Customer Journey Analytics.
 
-
-## Data för flera rapporter
-
-Befintliga implementeringar från flera datauppsättningar kan kombineras i Experience Platform. De anslutningar och datavyer som baseras på dessa datauppsättningar kan kombinera data som tidigare fanns i separata rapportsviter.
-
-**Vad du behöver göra**:
-
 ## Inställningar för session och variabel beständighet
 
 [!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i [datavyer](/help/data-views/component-settings/persistence.md). Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
 
-**Vad du behöver göra**:
-
 ## Klassificeringarna är nu &#39;Sök efter datauppsättningar&#39;
 
-
+Uppslagsdatauppsättningar används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [det här användningsfallet](/help/use-cases/b2b.md) till exempel.
 
 ## Kundattribut är nu &#39;Profildatamängder&#39;
 
+Profildatauppsättningar innehåller data som tillämpas på besökare, användare eller kunder i [!UICONTROL Event] data. Du kan till exempel överföra CRM-data om dina kunder. Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning som definieras i [!DNL Experience Platform] har en egen uppsättning av ett eller flera definierade person-ID, t.ex. cookie-ID, Stitched ID, User ID, Tracking Code osv.
+
+## Identiteter
+
+CJA utvidgar begreppet identiteter utöver ECID:n till att omfatta alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Använda ett gemensamt namnområdes-ID för datauppsättningar, eller använda [Flerkanalsanalys](/help/connections/cca/overview.md) hjälper till att länka samman personer över olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i CJA måste förstå de ID som används i datauppsättningarna.
+
+Här är en video som visar hur du använder identiteter i Customer Journey Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Namnet på behållarna har ändrats
 
 Du anger en behållare för [varje datavy du skapar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
+
 * **Träffbehållare är nu Event-behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
 * **Besöksbehållare är nu &#39;Sessionsbehållare&#39;**. The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session.
 * **Besöksbehållare är nu [!UICONTROL Person] behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
@@ -112,7 +125,6 @@ Du anger en behållare för [varje datavy du skapar](https://experienceleague.ad
 **Vad du behöver göra**:
 
 Du kan byta namn på alla behållare efter behov.
-
 
 ## `Uniques Exceeded` begränsningar
 

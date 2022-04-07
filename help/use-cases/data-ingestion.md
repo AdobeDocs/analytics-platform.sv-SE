@@ -4,9 +4,9 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 06ef2da0f66b1f8fa1597a618d64974cb6c320ce
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Du har ett antal alternativ när det gäller att hämta in data till Customer Jo
 
 Det här arbetsflödet använder Adobe Analytics Data Connector och varierar beroende på om du använder DTM eller Launch som tagghanterare.
 
-### Via-taggar i Adobe Experience Platform (kallades tidigare Launch)
+### Via-taggar i Adobe Experience Platform (kallades tidigare [!UICONTROL Launch])
 
 1. [Skapa ett datalager](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html)om du inte redan gjort det. Ett datalager är ett ramverk av JavaScript-objekt på platsen som innehåller alla variabelvärden som används i implementeringen. Det ger bättre kontroll och enklare underhåll vid implementeringen.
 1. Använd [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html) för att implementera kod på din webbplats för datainsamling, om du inte redan gjort det. Med den här tagghanteringslösningen kan ni driftsätta Analytics-kod tillsammans med andra taggningskrav. Taggar erbjuder integreringar med andra lösningar och produkter, och gör att du kan distribuera anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
