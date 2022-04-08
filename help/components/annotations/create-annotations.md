@@ -4,9 +4,9 @@ description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: dfd38a9f668dcb0434b107e947aa74b4f9b826a3
+source-git-commit: 97cbe0d376892a86d35f38956bc11f3d43bf754a
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
 | **Högerklicka på en punkt i en [!UICONTROL Line] diagram.** | The [!UICONTROL Annotation builder] öppnas. Observera att som standard visas anteckningar som skapats på det här sättet bara i det projekt där de skapades. Men du kan göra dem tillgängliga för alla projekt. Lägg även märke till att datum och mätvärden redan har fyllts i.<p>![](assets/annotate-line.png) |
 | **Gå till [!UICONTROL Components] > [!UICONTROL Create annotation].** | The [!UICONTROL Annotation builder] öppnas. |
 | **Använd den här snabbtangenten** för att öppna Annotation Builder: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Observera, att när du använder snabbtangenten för att skapa en anteckning, skapar du en endagarsanteckning för det aktuella datumet, utan något förvalt omfång (mått eller mått). |
+| **Använd [CJA Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Med CJA Annotations API:er kan du skapa, uppdatera eller hämta anteckningar via Adobe I/O. Dessa API:er använder samma data och metoder som Adobe använder i produktgränssnittet. |
 
 1. Fyll i [!UICONTROL Annotation builder] -element.
 
