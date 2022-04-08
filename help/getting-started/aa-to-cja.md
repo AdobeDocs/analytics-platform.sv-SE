@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 59355c37d7bae28c1de52cd12ae63c37cdd09eb6
+source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,8 @@ Här är några videor som vägleder dig:
 * Om du har definierat en anpassad kalender i Adobe Analytics har du liknande [anpassade kalenderfunktioner](/help/components/date-ranges/custom-date-ranges.md) inom CJA. Du måste se till att din kalender är korrekt definierad.
 
 * I Customer Journey Analytics kan du definiera en anpassad tidsgräns för besök/session samt definiera ett mätvärde som startar en ny session. Du kan skapa datavyer med olika sessionsdefinitioner för att få insikter över vad som var möjligt i Adobe Analytics. Den här funktionen kan vara särskilt användbar för mobildatauppsättningar.
+
+* Överväg att tillhandahålla en dataordlista för dina användare - eller utöka SDR-filen så att den innehåller Experience Platform-fältnamnet för schemaelement.
 
 ## Nästa steg
 
