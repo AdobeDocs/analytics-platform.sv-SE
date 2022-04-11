@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
+source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan t
 
 CJA hämtar data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
 
-Kunddata i Experience Platform lagras som datamängder, som består av ett schema och datagrupper. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Kunddata i Experience Platform lagras som datauppsättningar, som består av en [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=sv) och batchar med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
 Din CJA-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. Sedan bygger de [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar begreppsmässigt virtuella rapportsviter och är grunden för rapportering i CJA. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
 
@@ -58,7 +58,9 @@ Se [Använda exempel på datavyer](/help/data-views/data-views-usecases.md) för
 
 ## Förändringar av begreppet eVars och Props
 
-Begreppen [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics finns inte längre i [!UICONTROL Customer Journey Analytics]. Det finns ett obegränsat antal schemaelement, inklusive mått, mått och listfält. Dessa mappas till ett obegränsat antal schemaelement, inklusive mått, mått och listfält i Experience Platform. Alla inställningar för besök och attribuering som används efter bearbetning av regler i Adobe Analytics gäller nu vid frågetiden i Customer Journey Analytics.
+Begreppen [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics finns inte längre i [!UICONTROL Customer Journey Analytics]. I Adobe Analytics kan eVars och props lagra beskrivningar av innehåll, kunder, kampanjer osv. och händelser räknas saker som intäkter, prenumerationer eller genererade leads. Customer Journey Analytics bevarar båda datatyperna och du kan få tillgång till dem på samma sätt - från den vänstra listen i Analysis Workspace, under Dimensioner respektive Metrisk.
+
+I CJA finns det ett obegränsat antal schemaelement, inklusive mått, mått och listfält. Dessa mappas till ett obegränsat antal schemaelement, inklusive mått, mått och listfält i Experience Platform. Alla inställningar för besök och attribuering som används efter bearbetning av regler i Adobe Analytics gäller nu vid frågetiden i Customer Journey Analytics.
 
 Med den här flexibiliteten kan du råka ut för situationer där ett enda schemafält kan användas både som en dimension och ett mått för olika spårningsbehov.
 
