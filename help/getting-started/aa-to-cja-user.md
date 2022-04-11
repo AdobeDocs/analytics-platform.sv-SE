@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
+source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,8 @@ Se [Använda exempel på datavyer](/help/data-views/data-views-usecases.md) för
 
 Begreppen [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics finns inte längre i [!UICONTROL Customer Journey Analytics]. Det finns ett obegränsat antal schemaelement, inklusive mått, mått och listfält. Dessa mappas till ett obegränsat antal schemaelement, inklusive mått, mått och listfält i Experience Platform. Alla inställningar för besök och attribuering som används efter bearbetning av regler i Adobe Analytics gäller nu vid frågetiden i Customer Journey Analytics.
 
+Med den här flexibiliteten kan du råka ut för situationer där ett enda schemafält kan användas både som en dimension och ett mått för olika spårningsbehov.
+
 ## Förändringar av segmentkonceptet
 
 Adobe har bytt namn på&quot;segment&quot;-komponenten till&quot;filter&quot; för att bättre anpassa sig till branschstandarder och ge bättre distinktion till segment i Adobe Experience Platform.
@@ -100,10 +102,10 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 ## Ändringar i hur Adobe identifierar besökare
 
-CJA utvidgar begreppet identiteter utöver ECID:n till att omfatta alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Använda ett gemensamt namnområdes-ID för datauppsättningar, eller använda [Flerkanalsanalys](/help/connections/cca/overview.md) hjälper till att länka samman personer över olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i CJA måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics:
+CJA utvidgar begreppet identiteter utöver ECID:n till att omfatta alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Använda ett gemensamt namnområdes-ID för datauppsättningar, eller använda [Flerkanalsanalys](/help/connections/cca/overview.md) hjälper till att länka samman personer över olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i CJA måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i CJA:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Förändringar av begreppet lågtrafikdimensionsobjekt
 
-I traditionell Adobe Analytics börjar en variabel som får för många unika värden att buffra dimensionsobjekt under [!UICONTROL Low-Traffic]. CJA har många begränsningar för högkardinalfält. Tack vare förändringar i rapporteringsarkitekturen kan Analysis Workspace rapportera om många fler unika dimensionsobjekt. Se [Lång stjärna](../analysis-workspace/workspace-faq/long-tail.md) för mer information om hur CJA optimerar rapporteringen för dimensioner med många unika värden.
+I traditionell Adobe Analytics börjar en variabel som får för många unika värden att buffra dimensionsobjekt under [!UICONTROL Low-Traffic]. CJA har färre begränsningar för högkardinalfält. Tack vare förändringar i rapporteringsarkitekturen kan Analysis Workspace rapportera om många fler unika dimensionsobjekt. Se [Lång stjärna](../analysis-workspace/workspace-faq/long-tail.md) för mer information om hur CJA optimerar rapporteringen för dimensioner med många unika värden.
