@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+source-git-commit: 3c353d668bbf1f0d276edfa0d3491969a1a9dfeb
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 1%
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 | Fråga | Svar |
 | --- | --- |
-| Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-data eller händelser: Behandlas och importeras inom 90 minuter, när data finns tillgängliga i AEP. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 24 timmar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul> |
+| Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-data eller händelser: Behandlas och importeras inom 90 minuter, när data finns tillgängliga i AEP. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul> |
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
