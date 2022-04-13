@@ -4,10 +4,10 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 0%
+source-wordcount: '1257'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Den första releasen av Customer Journey Analytics innehåller många av de funk
 
 ## Jämföra CJA med enhetsövergripande analys
 
-[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrerar med [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en), som använder Co-op Graph eller Private Graph för att identifiera hur digitala enheter mappar till människor. Det finns för Adobe Analytics Ultimate-kunder.
+[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrerar med [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv), som använder Co-op Graph eller Private Graph för att identifiera hur digitala enheter mappar till människor. Det finns för Adobe Analytics Ultimate-kunder.
 
 CJA kan å andra sidan integreras med Adobe Experience Platform datauppsättningar och möjliggör flerkanalsanalys i Analysis Workspace. Även om CJA ännu inte är integrerat med Co-op- eller Private-identitetsdiagram kan du&quot;föra ditt eget ID&quot; för att sammanfoga datauppsättningar. Dessa datauppsättningar kan gå bortom digitala data och innehålla kontaktytor både online och offline. CJA-kraven beskrivs närmare nedan.
 
@@ -72,7 +72,7 @@ Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du f
    * Visa identitetsnamnutrymmen
    * Visa datauppsättningar
 
-Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en).
+Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
 >[!NOTE]
 >
@@ -98,14 +98,14 @@ Flera funktioner i CJA har bytt namn, jämfört med traditionella Adobe Analytic
 
 Customer Journey Analytics är en funktion bland många som är beroende av Adobe Experience Platform. Flera andra funktioner, som också bygger på Experience Platform, gör att du får ut så mycket som möjligt av dina data.
 
-Med Adobe Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser. Kunddata på plattformen lagras som datauppsättningar, som består av ett schema och grupper med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Med Adobe Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser. Kunddata på plattformen lagras som datauppsättningar, som består av ett schema och grupper med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
 Från datainmatning till direkt SQL-åtkomst - flera komponenter i Experience Platform är centrala för Customer Journey Analytics och samverkar med dem:
 
-* [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en): Använd standard-SQL för att hämta data från Adobe Experience Platform, t.ex. data från Adobe-lösningar, kunddata från första part eller andra plattformsdata. Det är ett serverlöst verktyg som gör att du kan ansluta till valfria datauppsättningar och samla in frågeresultaten som en ny datamängd som kan användas för rapportering, datavetenskapen eller för inmatning i profiltjänsten. Du kan använda frågetjänsten för att bygga dataanalysekosystem och skapa en bild av konsumenterna över deras olika interaktionskanaler. Dessa kanaler kan omfatta försäljningsställen, webb-, mobil-, CRM-system etc.
-* [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en):
-* [Identitetstjänst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en):
-* [Datavetenskapens arbetsyta](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) i&quot;developer&quot; option: kan ni använda färdiga artificiell intelligens (AI) och maskininlärningsmodeller i Adobe Experience Platform för att påverka olika delar av kundresan. Genom att lyfta fram dolda insikter kan ni göra bättre prognoser över kundresan, föreslå rekommenderade bästa nästa steg eller automatisera krångliga processer.
+* [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html): Använd standard-SQL för att hämta data från Adobe Experience Platform, t.ex. data från Adobe-lösningar, kunddata från första part eller andra plattformsdata. Det är ett serverlöst verktyg som gör att du kan ansluta till valfria datauppsättningar och samla in frågeresultaten som en ny datamängd som kan användas för rapportering, datavetenskapen eller för inmatning i profiltjänsten. Du kan använda frågetjänsten för att bygga dataanalysekosystem och skapa en bild av konsumenterna över deras olika interaktionskanaler. Dessa kanaler kan omfatta försäljningsställen, webb-, mobil-, CRM-system etc.
+* [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html):
+* [Identitetstjänst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html):
+* [Datavetenskapens arbetsyta](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html) i&quot;developer&quot; option: kan ni använda färdiga artificiell intelligens (AI) och maskininlärningsmodeller i Adobe Experience Platform för att påverka olika delar av kundresan. Genom att lyfta fram dolda insikter kan ni göra bättre prognoser över kundresan, föreslå rekommenderade bästa nästa steg eller automatisera krångliga processer.
 
 ## Videor
 

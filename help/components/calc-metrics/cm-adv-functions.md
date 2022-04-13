@@ -3,9 +3,9 @@ title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '2941'
+source-wordcount: '2939'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Så här kan måttet&quot;Approximate Customers&quot; användas vid rapportering
 
 ## Uniques överskreds
 
-Precis som Count() och RowCount(), tillämpas Distinct() för ungefärligt antal [Gränsvärden för ’uniques överstigit’](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
+Precis som Count() och RowCount(), tillämpas Distinct() för ungefärligt antal [Gränsvärden för ’uniques överstigit’](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
 
 ## Jämföra räkningsfunktioner
 

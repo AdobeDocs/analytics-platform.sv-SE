@@ -4,9 +4,9 @@ description: Customer Journey Analytics ordlista.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
@@ -27,4 +27,4 @@ Vissa Customer Journey Analytics-termer skiljer sig från hur de traditionellt h
 ## Adobe Experience Platform ordlista
 
 Adobe Experience Platform standardiserar data och innehåll i hela företaget, vilket driver konsumentprofiler i realtid, möjliggör datavetenskap och snabbar upp innehållets hastighet för att driva upplevelsepersonalisering över hela kundresan.
-Se [Adobe Experience Platform-ordlista](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=en)för mer information.
+Se [Adobe Experience Platform-ordlista](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html)för mer information.

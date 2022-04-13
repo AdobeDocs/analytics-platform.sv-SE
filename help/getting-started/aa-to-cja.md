@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ Exempel på identiteter kan vara ett kund-ID, konto-ID eller e-post-ID. Oavsett 
 * ID:t innehåller inte PII. Hash-koda allt som kan vara känsligt.
 * ID använder samma format för alla källor (samma längd, samma hash-metod osv.)
 
-I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje datarad, men det gör en sekundär identitet. I det här fallet kan flerkanalsanalys (som tidigare kallades&quot;fältbaserad namngivning&quot;) användas för att överbrygga klyftan mellan rader när en kund bara identifieras med sitt ECID och när en identitet samlas in (till exempel när en kund autentiseras). [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en)
+I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje datarad, men det gör en sekundär identitet. I det här fallet kan flerkanalsanalys (som tidigare kallades&quot;fältbaserad namngivning&quot;) användas för att överbrygga klyftan mellan rader när en kund bara identifieras med sitt ECID och när en identitet samlas in (till exempel när en kund autentiseras). [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)
 
 ### 2. Justera variablerna {#variables}
 
-Den enklaste metoden att omvandla Adobe Analytics-data till data från Customer Journey Analytics är att importera en [global rapportsvit](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) till Experience Platform med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i Experience Platform, som i sin tur enkelt kan anslutas till Customer Journey Analytics.
+Den enklaste metoden att omvandla Adobe Analytics-data till data från Customer Journey Analytics är att importera en [global rapportsvit](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) till Experience Platform med [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i Experience Platform, som i sin tur enkelt kan anslutas till Customer Journey Analytics.
 
 En fullständig global rapportsvit kanske inte alltid är möjlig för en implementering. Om du planerar att ta in flera rapportsviter i Customer Journey Analytics har du två alternativ:
 
 * Planera för att få variablerna att stämma överens i alla dessa rapportsviter. eVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportserie 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När de hämtas in till CJA blandas dessa variabler in i en enda eVar1-dimension, vilket kan leda till förvirrande och felaktig rapportering.
 
-* Använd [Förbered datum](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktion för att mappa variabler. Även om det blir enklare om alla rapportsviter använder samma vanliga variabeldesign är det inte nödvändigt om du använder nya Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#mapping) -funktion. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
+* Använd [Förbered datum](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktion för att mappa variabler. Även om det blir enklare om alla rapportsviter använder samma vanliga variabeldesign är det inte nödvändigt om du använder nya Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) -funktion. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
 
 Om du har undvikit att gå över till en global rapportserie på grund av problem med [!UICONTROL Uniques Exceeded] eller [!UICONTROL Low Traffic], vet att CJA inte har [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md). Det gör att alla unika värden kan visas och räknas.
 
@@ -52,11 +52,11 @@ De traditionella inställningarna för Adobe Analytics Marketing Channel fungera
 
 * Customer Journey Analytics är rapporttidskaraktär
 
-Adobe har publicerat [uppdaterade metodtips för implementering av marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=en). Dessa uppdaterade rekommendationer hjälper dig att få ut det mesta av de funktioner som redan finns i Adobe Analytics med Attribution IQ. De kommer också att hjälpa dig att lyckas när du går över till Customer Journey Analytics.
+Adobe har publicerat [uppdaterade metodtips för implementering av marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html). Dessa uppdaterade rekommendationer hjälper dig att få ut det mesta av de funktioner som redan finns i Adobe Analytics med Attribution IQ. De kommer också att hjälpa dig att lyckas när du går över till Customer Journey Analytics.
 
 ### 4. Bestäm dig för att använda Analytics Source Connector jämfört med Experience Platform SDK:er {#connector-vs-sdk}
 
-Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) datainsamlingen utvecklas, du kommer troligen att migrera till [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) med Adobe Experience Platform Edge Network. En vanlig implementering av SDK:er skickar data till Adobe Analytics, men det finns en ny möjlighet att skicka data direkt till Adobe Experience Platform. Den kan sedan importeras till Customer Journey Analytics, samtidigt som data skickas till Adobe Analytics bevaras.
+Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) datainsamlingen utvecklas, du kommer troligen att migrera till [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) med Adobe Experience Platform Edge Network. En vanlig implementering av SDK:er skickar data till Adobe Analytics, men det finns en ny möjlighet att skicka data direkt till Adobe Experience Platform. Den kan sedan importeras till Customer Journey Analytics, samtidigt som data skickas till Adobe Analytics bevaras.
 
 Med den här metoden utökas möjligheterna för datainsamling avsevärt: Det finns inte längre någon begränsning av antalet fält eller behovet av att mappa dataelement till props, eVars och händelser som i Analytics. Du kan använda ett obegränsat antal schemaelement av olika typer och representera dem på flera sätt med CJA [Datavyer](/help/data-views/data-views.md). Snabbheten för datatillgänglighet ökar när data skickas direkt till Adobe Experience Platform, när tiden för databehandling via Adobe Analytics tas bort.
 
@@ -100,9 +100,9 @@ För att övergången ska bli så smidig som möjligt för användarna när de v
 
 Här är några videor som vägleder dig:
 
-* [Flytta Adobe Analytics-segment till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
+* [Flytta Adobe Analytics-segment till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 
-* [Flytta dina beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+* [Flytta dina beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html)
 
 ### Andra överväganden
 

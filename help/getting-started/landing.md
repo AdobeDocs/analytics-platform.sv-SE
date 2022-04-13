@@ -4,9 +4,9 @@ title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,8 @@ Ni kan
 | ... Mer | Gör att du kan [!UICONTROL View Tutorials]och [Redigera användarinställningar](/help/analysis-workspace/user-preferences.md). |
 | **[!UICONTROL Create new]** modal är tillbaka | När du klickar **[!UICONTROL Create new]** i arbetsytan får du ännu en gång möjlighet att välja mellan [!UICONTROL Blank project] och [!UICONTROL Blank mobile scorecard]. Du kan också välja bland de mallar som företaget har skapat. |
 | [!UICONTROL Show less/more] | Växlar mellan att inte visa och visa banderollen: ![Övre banderoll](assets/top-banner.png) |
-| [!UICONTROL Blank project] | Skapar en tom [Arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) för att fylla i. |
-| [!UICONTROL Blank mobile scorecard] | Skapar en tom [mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=en) för att fylla i. |
+| [!UICONTROL Blank project] | Skapar en tom [Arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) för att fylla i. |
+| [!UICONTROL Blank mobile scorecard] | Skapar en tom [mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) för att fylla i. |
 | [!UICONTROL Open Training Tutorial] | Öppnar självstudiekursen om arbetsytan där du kan vägleda nya användare genom att bygga ett projekt steg för steg. |
 | [!UICONTROL Open release notes] | Öppnar den senaste versionsinformationen för Adobe Experience Cloud. |
 | Filterikon | Du kan filtrera på taggar, rapportsviter, ägare, typer och andra filter (Min, Delad med mig, Favoriter och Godkänd) |

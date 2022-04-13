@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1425'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan t
 
 CJA hämtar data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
 
-Kunddata i Experience Platform lagras som datauppsättningar, som består av en [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=sv) och batchar med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Kunddata i Experience Platform lagras som datauppsättningar, som består av en [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) och batchar med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
 Din CJA-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. Sedan bygger de [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar begreppsmässigt virtuella rapportsviter och är grunden för rapportering i CJA. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
 

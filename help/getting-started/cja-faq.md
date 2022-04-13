@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 3c353d668bbf1f0d276edfa0d3491969a1a9dfeb
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 | --- | --- |
 | Behöver jag [!UICONTROL Private Device Graph] eller [!UICONTROL Device Coop] for [!UICONTROL Customer Journey Analytics]? | Nej, [!UICONTROL Private Device Graph] eller [!UICONTROL Device Coop] krävs inte för [!UICONTROL Customer Journey Analytics]. Faktum är att de ännu inte stöds. |
 | Behöver jag [!UICONTROL Experience Cloud ID] (ECID) för [!UICONTROL Customer Journey Analytics]? | Nej, [!UICONTROL Customer Journey Analytics] stöder alla ID:n i en datauppsättning, oavsett om [!UICONTROL ECID] eller något annat ID du väljer. |
-| Vad händer om jag behöver ETL (Extract, Transform, Load) före [!UICONTROL Customer Journey Analytics]? | Customer Journey Analytics omfattar [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) funktioner för att omvandla data innan de läggs in i Adobe Experience Platform datasjön. Om du behöver ETL efter att data redan har importerats, [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=en#queries) innehåller några begränsade alternativ, men det kan tillkomma extra avgifter. |
+| Vad händer om jag behöver ETL (Extract, Transform, Load) före [!UICONTROL Customer Journey Analytics]? | Customer Journey Analytics omfattar [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) funktioner för att omvandla data innan de läggs in i Adobe Experience Platform datasjön. Om du behöver ETL efter att data redan har importerats, [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) innehåller några begränsade alternativ, men det kan tillkomma extra avgifter. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -31,8 +31,8 @@ ht-degree: 1%
 | --- | --- |
 | Kan [!UICONTROL Customer Journey Analytics] &quot;sammanfoga&quot; på olika enheter eller i olika datauppsättningar? | Ja. [!UICONTROL Customer Journey Analytics] har en sytlösning som kallas [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). Det gör att du kan ändra datamängdens personnummer, vilket möjliggör en sömlös kombination av flera datauppsättningar. |
 | Stöds sammanslagning från anonymt beteende till autentiserat beteende? | Ja. [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) läser användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. |
-| Hur fungerar&quot;replay&quot; i CCA? | CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. Replay gör att nya enheter i anslutningen sammanfogas. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=en#step-1%3A-live-stitching) |
-| Hur fungerar sammanfogning av historiska data (backfill) i CCA? | När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#enable-cross-channel-analytics) |
+| Hur fungerar&quot;replay&quot; i CCA? | CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. Replay gör att nya enheter i anslutningen sammanfogas. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
+| Hur fungerar sammanfogning av historiska data (backfill) i CCA? | När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -85,7 +85,7 @@ När det gäller borttagning av data är vi oroade för sex typer av komponenter
 
 ## 7. Att tänka på när du sammanfogar rapportsviter i CJA {#merge-reportsuite}
 
-Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)bör du ta hänsyn till dessa förändringar när du sammanfogar två eller fler rapportsviter från Adobe Analytics.
+Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)bör du ta hänsyn till dessa förändringar när du sammanfogar två eller fler rapportsviter från Adobe Analytics.
 
 | Problem | Villkor |
 | --- | --- |
@@ -130,9 +130,9 @@ Du kan behöva veta hur många rader med data du har i [!UICONTROL Customer Jour
 
 1. Du kan åtgärda detta på flera sätt:
 
-   * Ändra dina [inställningar för datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#set-rolling-window-for-connection-data-retention).
-   * [Ta bort oanvända anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
-   * [Ta bort en datauppsättning i AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * Ändra dina [inställningar för datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
+   * [Ta bort oanvända anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
+   * [Ta bort en datauppsättning i AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
    * Kontakta kontohanteraren för Adobe om du vill licensiera ytterligare kapacitet.
 
 ## 10. Angående användningsövertäckning {#overage}
@@ -151,4 +151,4 @@ I vissa fall kanske du märker att det totala antalet händelser som är inkapsl
 
 1. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades det till Customer Journey Analytics igen, men med ett annat [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
 
-Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
+Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].

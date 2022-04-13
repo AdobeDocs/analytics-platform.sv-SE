@@ -4,10 +4,10 @@ description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '334'
+ht-degree: 4%
 
 ---
 
@@ -24,20 +24,20 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Nya eller aktuella objekt</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en"> Förbered migrering från Adobe Analytics till Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html?lang=en"> Använda bindningsdimensioner och mätvärden i CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en"> Använd mått för marknadsföringskanaler i Adobe Experience Platform
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html"> Förbered migrering från Adobe Analytics till Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html"> Använda bindningsdimensioner och mätvärden i CJA </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html"> Använd mått för marknadsföringskanaler i Adobe Experience Platform
  </a> </li>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> Använd de utökade funktionerna för anslutningshantering </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en#cja-dataviews"> Använd de förbättrade datavyer-funktionerna </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#cja-usecases"> Importera data från Google Analytics till Adobe Experience Platform </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=en#cja-usecases"> Analysera Google Analytics-data i CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics) </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Använd de utökade funktionerna för anslutningshantering </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html#cja-dataviews"> Använd de förbättrade datavyer-funktionerna </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html#cja-usecases"> Importera data från Google Analytics till Adobe Experience Platform </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html#cja-usecases"> Analysera Google Analytics-data i CJA </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#cja-connections"> Flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics) </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html"> Komma igång med Customer Journey Analytics </a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html"> Vanliga frågor</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>Versionsinformation</b> </p> 
     <ul> 
-     <li>Se de senaste <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=en" format="https" scope="external"> Customer Journey Analytics Notes</a> för nya funktioner och korrigeringar. </li> 
+     <li>Se de senaste <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html" format="https" scope="external"> Customer Journey Analytics Notes</a> för nya funktioner och korrigeringar. </li> 
     </ul> <p class="head"> <b>Adobe Experience Platform Resources</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 

@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Tidigare behandlades heltal automatiskt som mått i CJA. Nu kan numeriska värde
 
 Du kan använda en numerisk dimension för att få in &quot;mått&quot; i [!UICONTROL  Flow] visualisering.
 
-1. På datavyer [Komponenter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) -fliken, dra [!UICONTROL Marketing Channels] schemafält till [!UICONTROL Metrics] areal under [!UICONTROL Included components].
+1. På datavyer [Komponenter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) -fliken, dra [!UICONTROL Marketing Channels] schemafält till [!UICONTROL Metrics] areal under [!UICONTROL Included components].
 2. I Workspace-rapporter visas det här flödet [!UICONTROL Marketing Channels] flöda in i [!UICONTROL Orders]:
 
 ![](assets/flow.png)
@@ -59,7 +59,7 @@ Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionern
 
 Använd till exempel funktionerna Inkludera/exkludera i datavyer om du bara vill fokusera på produkter som genererade mer än 50 dollar för försäljning. Om du har en beställning som innehåller ett produktköp på 50 dollar och ett inköp på 25 dollar tar vi bara bort 25 dollar, inte hela beställningen.
 
-1. På datavyer [Komponenter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) -fliken, dra [!UICONTROL Revenue] schemafält till [!UICONTROL Metrics] areal under [!UICONTROL Included components].
+1. På datavyer [Komponenter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) -fliken, dra [!UICONTROL Revenue] schemafält till [!UICONTROL Metrics] areal under [!UICONTROL Included components].
 1. Markera måtten och konfigurera följande på höger sida: a. Under [!UICONTROL Format], markera [!UICONTROL Currency].
 b. Under [!UICONTROL Currency]väljer du USD.
 c. Under [!UICONTROL Include/Exclude Values]markerar du kryssrutan bredvid [!UICONTROL Set include/exclude values].
@@ -71,7 +71,7 @@ Med de här nya inställningarna kan du bara visa värdefulla intäkter och filt
 
 ## 5. Använd [!UICONTROL No Value Options] inställning
 
-Företaget kan ha ägnat tid åt att utbilda dina användare så att de förväntar sig&quot;Ospecificerat&quot; i rapporter. Standardvärdet i datavyer är &quot;Inget värde&quot;. Nu kan du [ändra namn på &quot;Inget värde&quot; till &quot;Ospecificerat&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) i användargränssnittet för datavyer.
+Företaget kan ha ägnat tid åt att utbilda dina användare så att de förväntar sig&quot;Ospecificerat&quot; i rapporter. Standardvärdet i datavyer är &quot;Inget värde&quot;. Nu kan du [ändra namn på &quot;Inget värde&quot; till &quot;Ospecificerat&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-no-value-options-settings) i användargränssnittet för datavyer.
 
 Ett annat exempel är en dimension för registrering av medlemsprogram. I det här fallet kan du ändra namnet&quot;Inget värde&quot; till&quot;Inget medlemskap i programmet&quot;.
 

@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt oc
 
 ## Se till att appanvändare har tillgång till Adobe Analytics
 
-1. Konfigurera nya användare i [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en).
+1. Konfigurera nya användare i [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html).
 
 1. För att kunna dela styrkort måste du ge programanvändare behörighet att komma åt styrkortskomponenter som Analysis Workspace, de datavyer som styrkort baseras på samt filter, mått och mått.
 

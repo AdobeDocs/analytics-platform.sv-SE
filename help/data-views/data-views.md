@@ -4,9 +4,9 @@ description: En datavy anger hur du vill tolka element i data i CJA-anslutningen
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 ## Krav för datavyer {#prerequisites}
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till datauppsättningar i Experience Platform](/help/connections/create-connection.md).
-* Om du vill skapa eller hantera en datavy behöver du en [behörighetsuppsättning i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions).
+* Om du vill skapa eller hantera en datavy behöver du en [behörighetsuppsättning i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions).
 
 ## Datavy settings you can override in Workspace {#settings-override}
 

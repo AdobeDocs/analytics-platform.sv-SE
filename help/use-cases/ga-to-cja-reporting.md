@@ -4,9 +4,9 @@ description: Visar användbara rapporter om Google Analytics data i Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Nu ska vi titta på vilka webbsidor som ledde inkommande samtal till callcenter.
 Vi gör det här
 
 * Använder ett beräknat mätvärde för att filtrera data ner till endast sessioner som avslutades med ett anrop till en callcenter.
-* Använda&quot;deltagarmodellen&quot; i CJA:s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#cja-workspace).
+* Använda&quot;deltagarmodellen&quot; i CJA:s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace).
 
 Du ser enkelt vilka sidor som oftast deltar i en session som avslutas med ett samtal. Du ser att sidorna&quot;Kundvagn&quot; och&quot;Kassainformation&quot; ledde de flesta samtal. Eftersom du även har inkluderat data för mobilappen i Firebase kan du till och med se sidfel och appkrascher som genererar anropen. Detta är en mycket viktig datapunkt om ni vill leverera fantastiska upplevelser för webben och mobilappar.
 

@@ -4,9 +4,9 @@ description: 'Beskriver hur du kan använda Customer Journey Analytics (CJA) fö
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ För att kunna utföra dessa uppgifter behöver du följande åtkomst och behör
 
 * Tillgång till Adobe Experience Platform
 * Tillgång till Universal Google Analytics (Google Analytics 360-versionen) eller Google Analytics 4 (kostnadsfri version eller Google Analytics 360-versionen)
-* Tillgång till Customer Journey Analytics och dess [Administratörsbehörigheter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions).
+* Tillgång till Customer Journey Analytics och dess [Administratörsbehörigheter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions).
 
 Hur du överför Google Analytics data till Adobe Experience Platform beror på vilken version av Google Analytics du använder:
 
@@ -97,7 +97,7 @@ Instruktioner finns i den här videon:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning, med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till dina [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
+Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en ny datauppsättning, med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till dina [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui).
 
 ![](assets/schema-map.png)
 
@@ -141,7 +141,7 @@ När du har definierat de här anpassade variablerna kan vi ställa in en utlös
 
 I det här exemplet har utlösaren för att skapa konto definierats, där `pageUrl equals account-creation`. Genom att lägga till viss information i den här utlösaren kan du se till att data skickas till både Google Analytics och AEP när användaren autentiserar och sidan där kontot skapas läses in.
 
-Du kan även referera till [Datainmatning och Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9).
+Du kan även referera till [Datainmatning och Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html#module9).
 
 Instruktioner finns i den här videon:
 
@@ -153,6 +153,6 @@ När Adobe Experience Platform har börjat ta emot data från live-Google Analyt
 
 ## Nästa steg
 
-* Skapa en [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) baserat på den anslutning som innehåller Google Analytics data.
+* Skapa en [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#cja-dataviews) baserat på den anslutning som innehåller Google Analytics data.
 
 * Gör några fantastiska [analys i arbetsytan](/help/use-cases/ga-to-cja-reporting.md).

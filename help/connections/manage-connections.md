@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Med Anslutningshanteraren kan du:
 | Anslutningsinformation | Klicka på informationsikonen bredvid anslutningsnamnet för att visa följande information:![Visa anslutningsinformation](assets/conn-info.png) |
 | Redigera en anslutning | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Edit].![Redigera anslutning](assets/conn-edit-delete.png) Mer information finns i Redigera anslutning nedan. |
 | Ta bort en anslutning | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Delete]. Mer information under rubriken &quot;Ta bort anslutningar&quot; nedan. |
-| Skapa datavy | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Create data view]. Den här åtgärden skapar en ny datavy baserad på den här anslutningen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
+| Skapa datavy | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Create data view]. Den här åtgärden skapar en ny datavy baserad på den här anslutningen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) |
 | [!UICONTROL Datasets] | De datauppsättningar som ingår i anslutningen. Du kan klicka på hyperlänken om du vill visa alla datauppsättningar i anslutningen. När du klickar på en datauppsättning öppnas datauppsättningen i Adobe Experience Platform på en ny flik. |
-| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) från vilken den här anslutningen ritar sina datauppsättningar. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
+| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) från vilken den här anslutningen ritar sina datauppsättningar. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
 | [!UICONTROL Owner] | Den person som skapade anslutningen. |
 | [!UICONTROL Import Data Sets] | Gör att du kan aktivera eller inaktivera det som tidigare kallades&quot;dataströmning&quot;. |
 | [!UICONTROL Date Created] | Det datum då anslutningen skapades för första gången. |
@@ -108,7 +108,7 @@ Här beskrivs widgetar och inställningar:
 | [!UICONTROL Dataset ID] | Detta ID genereras automatiskt av Adobe Experience Platform. |
 | [!UICONTROL Batches] | Anger hur många databatchar som har lagts till i den här datauppsättningen. |
 | [!UICONTROL Last added] | Visar tidsstämpeln för den senast tillagda batchen till den här datauppsättningen. |
-| [!UICONTROL Dataset type] | Datamängdstypen för den här datauppsättningen kan [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
+| [!UICONTROL Dataset type] | Datamängdstypen för den här datauppsättningen kan [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | Schema | Det Adobe Experience Platform-schema som datauppsättningarna i den här anslutningen baseras på. |
 
 ### Inställningar för höger räls på anslutningsnivå
@@ -117,10 +117,10 @@ Här beskrivs widgetar och inställningar:
 | --- | --- |
 | [!UICONTROL Refresh] | Uppdatera anslutningen så att nyligen tillagda poster kan återspeglas. |
 | [!UICONTROL Delete] | Ta bort den här anslutningen. |
-| [!UICONTROL Create data view] | Skapa en ny datavy baserad på den här anslutningen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
+| [!UICONTROL Create data view] | Skapa en ny datavy baserad på den här anslutningen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) |
 | [!UICONTROL Connection name] | Visar det egna namnet för anslutningen. |
 | [!UICONTROL Connection description] | Visar en mer detaljerad beskrivning som idealiskt beskriver syftet med den här anslutningen. |
-| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) som den här anslutningen hämtar sina datauppsättningar från. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
+| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) som den här anslutningen hämtar sina datauppsättningar från. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
 | [!UICONTROL Connection ID] | Detta ID genereras i Adobe Experience Platform. |
 | [!UICONTROL Data views using connection] | Visar alla datavyer som använder den här anslutningen. |
 | [!UICONTROL Import new data] | (På/av) Anger om nya datagrupper ska läggas till i historiska data (backfill) eller inte. |
@@ -134,13 +134,13 @@ Här beskrivs widgetar och inställningar:
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Person ID] | Visar en identitet som definierades i datauppsättningsschemat i Experience Platform. Detta är det person-ID som du valde när anslutningen skapades. Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du verkligen vill sammanfoga datauppsättningar måste du använda samma person-ID för alla datauppsättningar. |
-| [!UICONTROL Records available] | Representerar det totala antalet rader som kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. (Undantaget är att när du skapar en helt ny anslutning kommer det att finnas [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-travel-analytics). |
+| [!UICONTROL Records available] | Representerar det totala antalet rader som kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. (Undantaget är att när du skapar en helt ny anslutning kommer det att finnas [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#3.-getting-data-into-customer-travel-analytics). |
 | [!UICONTROL Records added] | Anger hur många rader som har lagts till under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records added]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
 | [!UICONTROL Records deleted] | Anger hur många poster som togs bort under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records deleted]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
 | [!UICONTROL Batches added] | Anger hur många datagrupper som har lagts till i den här datauppsättningen. |
 | [!UICONTROL Records skipped] | Anger hur många rader som hoppats över under intag under den valda tidsperioden.<p>Orsaker till att hoppa över poster är: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel &quot;undefined&quot; eller &quot;000000&quot;) eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) inte kan tillskrivas någon specifik användare eller person. De kan inte importeras till systemet och leder till felbenägen intag och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Flerkanalsanalys](/help/connections/cca/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som också kommer att hoppas över vid förtäring (helst inte med ogiltiga eller helt nolla användar-ID:n).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul><p>**Anteckning**: Data för **[!UICONTROL Records skipped]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
 | [!UICONTROL Last added] | Anger när den senaste batchen lades till. |
-| [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
+| [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | [!UICONTROL Schema] | Visar det Adobe Experience Platform-schema som den här datauppsättningen baseras på. |
 | [!UICONTROL Dataset ID] | Detta ID genereras i Adobe Experience Platform. |
 

@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a1bb56c5a7e6d3bb6b59e2cf3448409d85ec2efa
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Du kan skapa snabbfilter i ett projekt för att slippa komplexiteten i den fullständiga [Filter Builder](/help/components/filters/create-filters.md). Snabbfilter
 
-* Använd som [filter endast för projekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=en#project-only).
+* Använd som [filter endast för projekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html#project-only).
 * Tillåt upp till tre regler
 * Innesluta inte kapslade behållare eller sekventiella regler.
 
@@ -27,7 +27,7 @@ Här är en video om snabbfilter (observera att termen&quot;snabbsegment&quot; a
 
 ## Förutsättningar {#prereqs}
 
-Vem som helst kan skapa ett snabbfilter. Du måste dock ha behörigheten Skapa filter i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) för att kunna spara ett snabbfilter eller öppna det i Filter Builder.
+Vem som helst kan skapa ett snabbfilter. Du måste dock ha behörigheten Skapa filter i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) för att kunna spara ett snabbfilter eller öppna det i Filter Builder.
 
 ## Skapa snabbfilter {#create}
 
@@ -39,7 +39,7 @@ I en friformstabell klickar du på ikonen filter+ i panelhuvudet:
 | --- | --- |
 | [!UICONTROL Name] | Standardnamnet för ett filter är en kombination av regelnamnen i filtret. Du kan byta namn på filtret till ett mer eget namn. |
 | [!UICONTROL Include/exclude] | Du kan antingen inkludera eller exkludera komponenter i filterdefinitionen, men inte båda. |
-| [!UICONTROL Hit/Visit/Visitor] container | Snabbfilter innehåller ett [filterbehållare](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) bara det som gör att du kan inkludera ett mått/mått/datumintervall i (eller exkludera det från) filtret. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren vid besök och sidvisningar. A [!UICONTROL Visit] kan du ange regler för att dela upp besökarens data baserat på besök och en [!UICONTROL Hit] kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
+| [!UICONTROL Hit/Visit/Visitor] container | Snabbfilter innehåller ett [filterbehållare](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) bara det som gör att du kan inkludera ett mått/mått/datumintervall i (eller exkludera det från) filtret. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren vid besök och sidvisningar. A [!UICONTROL Visit] kan du ange regler för att dela upp besökarens data baserat på besök och en [!UICONTROL Hit] kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
 | [!UICONTROL Components] (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (dimensioner, mått, datumintervall eller dimensionsvärden). Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva och [!UICONTROL Quick Filter] builder hittar automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
 | [!UICONTROL Operator] | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count] operatorer. Se [Filteroperatorer](operators.md). |
 | Plustecken (+) | Lägg till en annan regel |

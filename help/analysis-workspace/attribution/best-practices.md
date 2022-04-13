@@ -3,9 +3,9 @@ title: Bästa praxis för attribuering
 description: Vilka är de bästa sätten att fatta beslut om en attribueringsmodell?
 feature: Attribution
 exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Låt oss säga att din hypotes är &quot;Min första-beröringskanal har större
 
 **Exempel 2**
 
-Din hypotes kan vara: &quot;I vår bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör mycket efterforskningar innan de köper en produkt. Du skulle då ändra din [uppslagsfönster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#lookback-windows) till 90 dagar.
+Din hypotes kan vara: &quot;I vår bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör mycket efterforskningar innan de köper en produkt. Du skulle då ändra din [uppslagsfönster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#lookback-windows) till 90 dagar.
 
 ## Steg 3: Använd algoritmisk attribuering
 

@@ -4,9 +4,9 @@ description: Lär dig hur du jämför dina Adobe Analytics-data med data i Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 När ni börjar använda CJA kan det finnas vissa skillnader i data mellan Adobe Analytics och CJA. Detta är normalt och kan inträffa av flera orsaker. CJA är utformat för att du ska kunna förbättra vissa begränsningar av dina data i AA. Oväntade/oavsiktliga avvikelser kan dock förekomma. Den här artikeln är utformad för att hjälpa dig att diagnostisera och lösa de skillnaderna så att du och ditt team kan använda CJA utan hinder av oron för dataintegritet.
 
-Låt oss anta att du har inhämtat Adobe Analytics-data till AEP via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en)och skapade sedan en CJA-anslutning med den här datauppsättningen.
+Låt oss anta att du har inhämtat Adobe Analytics-data till AEP via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)och skapade sedan en CJA-anslutning med den här datauppsättningen.
 
 ![dataflöde](assets/compare.png)
 
@@ -31,7 +31,7 @@ Här följer några steg för att jämföra dina ursprungliga Adobe Analytics-da
 
 ## Steg 1: Kör förekomstmåttet i Adobe Analytics
 
-The [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en) mätvärdet visar antalet träffar där en given dimension angavs eller bestals.
+The [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html) mätvärdet visar antalet träffar där en given dimension angavs eller bestals.
 
 1. I Analytics > [!UICONTROL Workspace]drar du datumintervallet som du vill rapportera som en dimension till en [!UICONTROL Freeform] tabell.
 
@@ -63,7 +63,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. I [Dataflöden för analyser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en)identifierar du utifrån rådata om några rader kan ha tagits bort av Analytics-källkopplingen.
+1. I [Dataflöden för analyser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)identifierar du utifrån rådata om några rader kan ha tagits bort av Analytics-källkopplingen.
 
    The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kan släppa rader under omvandlingen till XDM-schemat. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande analysfält har dessa värden kommer hela raden att tas bort.
 
