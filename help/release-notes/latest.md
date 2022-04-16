@@ -3,30 +3,29 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f1f6fa889bad331378218dc1cee3356828fd847f
+source-git-commit: 56f62d8af96e64a6867e38a9701219bcefc62a6a
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 4%
+source-wordcount: '244'
+ht-degree: 1%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (mars 2022)
+# Versionsinformation för Customer Journey Analytics (CJA) (april 2022)
 
-**Senaste uppdatering**: 11 april 2022
+>[!NOTE]
+>
+>Den här sidan innehåller information om förhandsversioner som kan ändras.
+
+**Senaste uppdatering**: 13 april 2022
 
 ## Viktiga funktioner
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Anteckningar i arbetsytan | Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. [Läs mer](/help/components/annotations/overview.md) | gradvis utrullning börjar 23 mars 2022 |
-| Ny landningssida för Customer Journey Analytics | På landningssidan för Customer Journey Analytics finns en startsida för projektledaren och ett utbildningsavsnitt som hjälper dig att komma igång effektivare. [Läs mer](/help/getting-started/landing.md) | 1 april 2022 |
-| [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | The [!UICONTROL Next or Previous item] kan du utforska objekt som följer efter eller föregår ett önskat dimensionsobjekt. Använd den om du till exempel vill se nästa eller föregående sidor till en viss produktsida, marknadsföringskanal eller till och med enhetstyp. Den här panelen går längre än äldre rapportering nästa/föregående eftersom den gör att du kan titta på alla dimensioner och inte kräver någon ny implementering för att få insikter. | 20 april 2022 |
+| Dimensionens delsträngar | Innehåller flera metoder för att extrahera den önskade delen av en sträng för användning som dimensionsobjekt. Med den här funktionen kan du också behandla en strängdimension som en array om strängen innehåller avgränsade värden. [Läs mer](../data-views/component-settings/substring.md) | 20 april 2022 |
+| Dataförberedelse för Analytics-källkoppling | The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) är nu integrerat med [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktioner från Adobe Experience Platform. Adobe Real-time Customer Data Platform (RTCDP)-, CJA- och Adobe Journey Optimizer-kunder (AJO) kan nu utöka fältgruppen Analytics med ytterligare fältgrupper. De kan också utnyttja över 100 Data Prep-operatorer för att berika analysdata vid intag i Adobe Experience Platform (AEP). RTCDP-kunder kan nu aktivera flera rapportsviter som har aktiverats för dataprep för profilen.<p>CJA-kunder som importerar flera rapportsviter via Analytics Source Connector kan nu frigöra kolumnskillnader mellan olika rapportsviter. Om&quot;Sökord&quot; till exempel lagras i `eVar1` i en rapportserie och `eVar2` i en annan rapportserie kan du med Data Prep utöka fältgruppen Analytics med en ny kolumn som sammanfogar värdena från de två eVars-elementen. | 25 april 2022 |
 
 {style=&quot;table-layout:auto&quot;}
-
-## Korrigeringar
-
-* Ett konsolfel har korrigerats vid åtkomst av CJA från Experience Cloud hemsida. (AN-281468)
 
 >[!MORELIKETHIS]
 >[Dokumentationsuppdateringar för Customer Journey Analytics](/help/release-notes/doc-changes.md)
