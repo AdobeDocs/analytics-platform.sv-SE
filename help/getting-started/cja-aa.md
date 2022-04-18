@@ -4,7 +4,7 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 4%
@@ -23,6 +23,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Attribution IQ | Fullt stöd |
 | Beräknade mätvärden | Fullt stöd; Observera att befintliga beräknade värden i den traditionella Analysis Workspace inte kommer att porteras till CJA. |
 | Kalenderhändelser | Fullt stöd. Kalenderhändelser har implementerats som [Anteckningar](/help/components/annotations/overview.md) i Workspace. |
+| Classification Rule Builder | Fullt stöd. Anropat [delsträngar](/help/data-views/component-settings/substring.md) i CJA. Använder strängändringar vid rapporttidpunkten i stället för att söka efter datauppsättningar. |
 | Sammanfogning mellan olika enheter och kanaler | Fullt stöd; Se [Flerkanalsanalys](/help/connections/cca/overview.md). |
 | CSV-nedladdning | Fullt stöd |
 | Anpassade kalendrar | Fullt stöd |
@@ -80,7 +81,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Larm | Support planeras. |
-| Classification Rule Builder | Fungerar något annorlunda i CJA, med hjälp av strängändringar vid rapporttidpunkten i stället för att söka efter datauppsättningar. |
 | Bidragsanalys | Support planeras. |
 | data warehouse-rapportering (100 % radexport) | Support planeras från Analysis Workspace gränssnitt. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) har också ett gränssnitt för de här användningsfallen i CJA. |
 | ID Stitching via Device Graph | Support planeras. |
