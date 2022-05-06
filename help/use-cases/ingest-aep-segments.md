@@ -4,40 +4,42 @@ description: Beskriver hur man importerar AEP-målgrupper till Customer Journey 
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 535095dc82680882d1a53076ea0655b1333b576b
+source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Ingest AEP-målgrupper in i Customer Journey Analytics (CJA)
 
->[!NOTE]
->
->Det här avsnittet är under uppbyggnad.
-
 I det här användningsexemplet utforskas ett tillfälligt, manuellt sätt att föra in Adobe Experience Platform-målgrupper i CJA. Dessa målgrupper kan ha skapats i AEP Segment Builder, Adobe Audience Manager eller andra verktyg och lagras i kundprofilen i realtid (RTCP). Målgrupperna består av en uppsättning profil-ID:n, tillsammans med tillämpliga attribut/händelser/osv. och vi vill ta in dem i CJA Workspace för analys.
 
 ## Förutsättningar
 
-* Tillgång till Adobe Experience Platform (AEP), särskilt kundprofil i realtid.  Åtkomst till att skapa/hantera AEP-scheman och datauppsättningar.
-* Tillgång till AEP Query Service (och möjlighet att skriva SQL) eller ett annat verktyg för att utföra vissa ljusomvandlingar
-* Tillgång till Customer Journey Analytics (behöver vara CJA-produktadministratör för att kunna skapa/ändra CJA-anslutningar och datavyer)
+* Tillgång till Adobe Experience Platform (AEP), särskilt kundprofil i realtid.
+* Tillgång till att skapa/hantera AEP-scheman och datauppsättningar.
+* Tillgång till AEP Query Service (och möjlighet att skriva SQL) eller ett annat verktyg för att utföra vissa ljusomvandlingar.
+* Tillgång till Customer Journey Analytics. Du måste vara CJA-produktadministratör för att kunna skapa/ändra CJA-anslutningar och datavyer.
 * Möjlighet att använda Adobe-API:er (segmentering, eventuellt andra)
 
 ## Steg 1: Välj målgrupp(er) i kundprofilen i realtid {#audience}
 
-Adobe Experience Platform [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Du har förmodligen redan målgrupper i RTCP som kan ha kommit från olika källor. Välj en eller flera målgrupper att importera till CJA.
+Adobe Experience Platform [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part.
+
+Du har förmodligen redan målgrupper i RTCP som kan ha kommit från olika källor. Välj en eller flera målgrupper att importera till CJA.
 
 ## Steg 2: Skapa en profilunionsdatauppsättning för exporten
 
 För att kunna exportera målgruppen till en datauppsättning som sedan kan läggas till i en anslutning i CJA måste du skapa en datauppsättning vars schema är en profil [Unionsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
+
 Unionsscheman består av flera scheman som delar samma klass och har aktiverats för profilen. Med unionsschemat kan du se en sammanslagning av alla fält i scheman som delar samma klass. Kundprofilen i realtid använder unionsschemat för att skapa en helhetsbild av varje enskild kund.
 
 ## Steg 3: Exportera en målgrupp till profilunionens datauppsättning via API-anrop {#export}
 
-Innan du kan hämta en målgrupp till CJA måste du exportera den till en AEP-datauppsättning. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkt för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en). Du kan skapa ett exportjobb med valfritt målgrupps-ID och skicka resultatet i den AEP-datauppsättning för profilunionen som du skapade i steg 2.  Även om du kan exportera olika attribut/händelser för målgruppen behöver du bara exportera det specifika profil-ID-fält som matchar det person-ID-fält som används i den CJA-anslutning som du kommer att använda (se steg 5 nedan).
+Innan du kan hämta en målgrupp till CJA måste du exportera den till en AEP-datauppsättning. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkt för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en).
+
+Du kan skapa ett exportjobb med valfritt målgrupps-ID och skicka resultatet i den AEP-datauppsättning för profilunionen som du skapade i steg 2. Även om du kan exportera olika attribut/händelser för målgruppen behöver du bara exportera det specifika profil-ID-fält som matchar det person-ID-fält som används i den CJA-anslutning som du kommer att använda (se steg 5 nedan).
 
 ## Steg 4: Redigera exportutdata
 
@@ -67,7 +69,9 @@ Här är de dataelement som måste finnas:
 
 * Lägg till andra målgruppsmetadata om du vill.
 
-## Steg 5: Lägg till den här profildatauppsättningen i en befintlig anslutning i CJA (BG: kan ni skapa en ny, men 99 % av den tid kunderna kommer att vilja lägga till den i en befintlig anslutning där de redan har sina data, målgruppen bara&quot;berikar&quot; befintliga data i CJA)
+## Steg 5: Lägg till den här profildatauppsättningen i en befintlig anslutning i CJA
+
+Du kan skapa en ny anslutning, men de flesta kunder vill lägga till den i en befintlig anslutning. Målgrupps-ID:n&quot;berikar&quot; befintliga data i CJA.
 
 [Skapa en anslutning](/help/connections/create-connection.md)
 
