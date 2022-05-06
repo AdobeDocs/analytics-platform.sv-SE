@@ -3,13 +3,13 @@ title: Ingest AEP-målgrupper into Customer Journey Analytics
 description: Beskriver hur man importerar AEP-målgrupper till Customer Journey Analytics för vidare analys.
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: ed01fd0899cac21fff156e0c31dc2b52ff7c8cca
+exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
+source-git-commit: 535095dc82680882d1a53076ea0655b1333b576b
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
-
 
 # Ingest AEP-målgrupper in i Customer Journey Analytics (CJA)
 
@@ -17,33 +17,31 @@ ht-degree: 0%
 >
 >Det här avsnittet är under uppbyggnad.
 
-(Brandon, fyi, &#39;Unified Profile&#39; är en föråldrad term för &#39;kundprofil i realtid&#39; - enligt AEP:s doc manager. Du hittar inget dokument på UP i AEP-dokumentuppsättningen.)
-
-I det här användningsexemplet utforskas ett tillfälligt, manuellt sätt att föra in Adobe Experience Platform-målgrupper i CJA. Dessa målgrupper kan ha skapats i AEP Segment Builder, Adobe Audience Manager eller andra verktyg och lagras i kundprofilen i realtid (RTCP). Målgrupperna består av listor med person-ID:n, profil-ID:n osv. och vi vill ta in dem i CJA Workspace för analys.
+I det här användningsexemplet utforskas ett tillfälligt, manuellt sätt att föra in Adobe Experience Platform-målgrupper i CJA. Dessa målgrupper kan ha skapats i AEP Segment Builder, Adobe Audience Manager eller andra verktyg och lagras i kundprofilen i realtid (RTCP). Målgrupperna består av en uppsättning profil-ID:n, tillsammans med tillämpliga attribut/händelser/osv. och vi vill ta in dem i CJA Workspace för analys.
 
 ## Förutsättningar
 
-* Tillgång till Adobe Experience Platform (AEP), särskilt kundprofil i realtid.
-* Åtkomst till Customer Journey Analytics
-* Kan du skriva egen kod?
-* Vad annat.
+* Tillgång till Adobe Experience Platform (AEP), särskilt kundprofil i realtid.  Åtkomst till att skapa/hantera AEP-scheman och datauppsättningar.
+* Tillgång till AEP Query Service (och möjlighet att skriva SQL) eller ett annat verktyg för att utföra vissa ljusomvandlingar
+* Tillgång till Customer Journey Analytics (behöver vara CJA-produktadministratör för att kunna skapa/ändra CJA-anslutningar och datavyer)
+* Möjlighet att använda Adobe-API:er (segmentering, eventuellt andra)
 
 ## Steg 1: Välj målgrupp(er) i kundprofilen i realtid {#audience}
 
-Adobe Experience Platform [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Du har förmodligen redan målgrupper i RTCP som kan ha kommit från olika källor. Välj en eller flera målgrupper.
+Adobe Experience Platform [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Du har förmodligen redan målgrupper i RTCP som kan ha kommit från olika källor. Välj en eller flera målgrupper att importera till CJA.
 
 ## Steg 2: Skapa en profilunionsdatauppsättning för exporten
 
-För att kunna exportera målgruppen till en datauppsättning som sedan kan ansluta till CJA måste du skapa en datauppsättning vars schema är en profil [Unionsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
+För att kunna exportera målgruppen till en datauppsättning som sedan kan läggas till i en anslutning i CJA måste du skapa en datauppsättning vars schema är en profil [Unionsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
 Unionsscheman består av flera scheman som delar samma klass och har aktiverats för profilen. Med unionsschemat kan du se en sammanslagning av alla fält i scheman som delar samma klass. Kundprofilen i realtid använder unionsschemat för att skapa en helhetsbild av varje enskild kund.
 
-## Steg 3: Exportera en målgrupp till en datauppsättning via API-anrop {#export}
+## Steg 3: Exportera en målgrupp till profilunionens datauppsättning via API-anrop {#export}
 
-Innan du kan hämta en målgrupp till CJA måste du exportera den till en datauppsättning i AEP. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkt för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en). Du kan skapa ett exportjobb och skicka resultaten i den AEP-datauppsättning för profilunion som du skapade i steg 2.
+Innan du kan hämta en målgrupp till CJA måste du exportera den till en AEP-datauppsättning. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkt för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en). Du kan skapa ett exportjobb med valfritt målgrupps-ID och skicka resultatet i den AEP-datauppsättning för profilunionen som du skapade i steg 2.  Även om du kan exportera olika attribut/händelser för målgruppen behöver du bara exportera det specifika profil-ID-fält som matchar det person-ID-fält som används i den CJA-anslutning som du kommer att använda (se steg 5 nedan).
 
 ## Steg 4: Redigera exportutdata
 
-När vi skapar exportjobbet för en målgrupp behöver vi bara person-ID:t och målgrupps-ID:t för att kunna rapportera i CJA. Standardexportjobbet innehåller emellertid fler data och därför måste vi redigera dessa utdata för att ta bort överflödiga data.
+Resultaten av exportjobbet måste omvandlas till en separat profildatauppsättning för att kunna hämtas till CJA.  Omvandlingen kan göras med AEP Query Service eller något annat omformningsverktyg.  Vi behöver bara profil-ID (som matchar person-ID:t i CJA) och ett eller flera målgrupps-ID:n för att kunna rapportera i CJA. Standardexportjobbet innehåller emellertid mer data och därför måste vi redigera dessa utdata för att ta bort överflödiga data, liksom flytta runt saker.  Du måste också skapa ett schema/en datauppsättning först innan du lägger till omformade data i den.
 
 Här är ett exempel på exportutdata i profilunionens datauppsättning, **före** redigering:
 
@@ -52,7 +50,7 @@ Här är ett exempel på exportutdata i profilunionens datauppsättning, **före
 Observera följande:
 
 * Målgrupps-ID:t finns under `segmentmembership.ups.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.status`.
-* Statusen måste vara&quot;realiserad&quot;,&quot;införd&quot;, men inte&quot;avslutad&quot;. Ersätt &quot;avslutad&quot; med &quot;tom&quot;.
+* Statusen måste vara&quot;realiserad&quot;,&quot;införd&quot;, men inte&quot;avslutad&quot;.
 
 Det här är formatet på profildatauppsättningen som du kan skicka till CJA.
 
@@ -60,30 +58,32 @@ Det här är formatet på profildatauppsättningen som du kan skicka till CJA.
 
 Här är de dataelement som måste finnas:
 
-* `_aresprodvalidation`: Hänvisar till ditt organisations-ID. Din blir annorlunda.
-* `personID`: I det här fallet ett eget namn
-* `audienceMembershipIdList` strängfält: Målgrupps-ID
+* `_aresprodvalidation` strängfält: Hänvisar till ditt organisations-ID. Din blir annorlunda.
+* `personID` strängfält: Det här är det vanliga XDM-schemafältet för profildatauppsättningar som identifierar personen. Använd profil-ID:t från exporten.
+* `audienceMembershipId` strängfält: Målgrupps-ID från exporten.  OBS! Det här fältet kan namnges vad du vill (från ditt eget schema).
 * Lägg till ett eget namn för målgruppen (`audienceMembershipIdName`), till exempel
 
    ![Eget målgruppsnamn](assets/audience-name.png)
 
-## Steg 5: Skapa en anslutning i CJA till den här profildatauppsättningen
+* Lägg till andra målgruppsmetadata om du vill.
+
+## Steg 5: Lägg till den här profildatauppsättningen i en befintlig anslutning i CJA (BG: kan ni skapa en ny, men 99 % av den tid kunderna kommer att vilja lägga till den i en befintlig anslutning där de redan har sina data, målgruppen bara&quot;berikar&quot; befintliga data i CJA)
 
 [Skapa en anslutning](/help/connections/create-connection.md)
 
-## Steg 6: Skapa en datavy
+## Steg 6: Ändra befintlig (eller skapa ny) CJA-datavy
 
-Lägg till `audienceMembershipIdName` och `personID` till datavyn.
+Lägg till `audienceMembershipId`, `audienceMembershipIdName` och `personID` till datavyn.
 
 ## Steg 7: Rapport på arbetsytan
 
-Nu kan du rapportera om `audienceMembershipIdName` och `personID` i Workspace.
-Skärmdump vore bra.
+Nu kan du rapportera om `audienceMembershipId`, `audienceMembershipIdName` och `personID` i Workspace.
 
-Så här gör du:
+## Ytterligare information
 
-skriva upp fler steg för när ni har att göra med personer som är medlemmar i flera olika målgrupper.
-
-
-
-
+* Du bör utföra den här processen regelbundet så att målgruppsdata uppdateras kontinuerligt i CJA.
+* Du kan importera flera målgrupper inom en enda CJA-anslutning. Detta gör processen ännu mer komplicerad, men det är möjligt. För att detta ska fungera måste du göra några ändringar i ovanstående process:
+   1. Utför den här processen för varje målgrupp i målgruppssamlingen inom RTCP.
+   1. När du utför omvandlingar av exportutdata måste du skapa en lista med `audienceMembershipId(s)`, eftersom ett enskilt CJA person-ID kan tillhöra flera målgrupper. I framtiden kommer CJA att ha stöd för arrayer/objektarrayer i profildatamängder. När dessa stöds använder du en array med objekt för `audienceMembershipId` eller `audienceMembershipIdName` är det bästa alternativet. Under tiden kan du extrahera alla aktuella målgrupps-ID:n för varje profil-ID i utdata för exportjobbet (med statusen&quot;realiserad&quot; eller&quot;införd&quot;) och placera dem i en kommaavgränsad värdesträng (d.v.s. `<id1>,<id2>,...`).  Om det finns ett målgrupps-ID med statusen &quot;avslutad&quot;, kontrollerar du att det INTE finns med i listan.  Om du vill behålla den egna namnassociationen med ID:t kan du bifoga det i slutet av varje ID i listan (tillsammans med andra metadata).
+   1. I datavyn skapar du en ny dimension med hjälp av delsträngsomformningen på `audienceMembershipId` fält för att konvertera den kommaavgränsade värdesträngen till en array. OBS! det finns för närvarande en gräns på 10 värden i arrayen.
+   1. Nu kan du rapportera om den nya dimensionen `audienceMembershipIds` i CJA Workspace.
