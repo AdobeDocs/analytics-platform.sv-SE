@@ -1,162 +1,162 @@
 ---
-title: Skapa en anslutning
-description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
+title: Create a connection
+description: Describes how to create a connection to a Platform dataset in Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 5ca6c92f1d06cb5a388fa37f232ee0b870f14f33
+source-git-commit: b17bdb20b120ec37a9f11425062bc7f8bcebd7e7
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1896'
 ht-degree: 2%
 
 ---
 
-# Skapa en anslutning
+# Create a connection
 
-Med en anslutning kan du integrera datauppsättningar från [!DNL Adobe Experience Platform] till [!UICONTROL Workspace]. För att rapportera [!DNL Experience Platform] datauppsättningar måste du först skapa en anslutning mellan datauppsättningar i [!DNL Experience Platform] och [!UICONTROL Workspace].
+[!DNL Adobe Experience Platform][!UICONTROL Workspace] [!DNL Experience Platform][!DNL Experience Platform][!UICONTROL Workspace]
 
-Här är en videoöversikt:
+Here is a video overview:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
 
-## Nödvändiga behörigheter
+## Required permissions
 
-Om du vill skapa en CJA-anslutning behöver du följande behörigheter i [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+[](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html)
 
 Adobe Experience Platform:
-* Datamodellering: Visa scheman, hantera scheman
-* Datahantering: Visa datauppsättningar, hantera datauppsättningar
-* Dataintag: Hantera källor
+* Data Modeling: View Schemas, Manage Schemas
+* Data Management: View Datasets, Manage Datasets
+* Data Ingestion: Manage Sources
 
 Customer Journey Analytics
-* Produktadministratörsåtkomst
+* Product Admin Access
 
 >[!IMPORTANT]
 >
->Du kan kombinera flera [!DNL Experience Platform] datauppsättningar till en enda anslutning.
+>[!DNL Experience Platform]
 
-## Välj sandlåda och datauppsättningar
+## Select sandbox and datasets
 
-1. Gå till [https://analytics.adobe.com](https://analytics.adobe.com) och logga in med din Adobe ID.
+1. [](https://analytics.adobe.com)
 
-1. Klicka på [!DNL Customer Journey Analytics] ikon.
+1. [!DNL Customer Journey Analytics]
 
-1. Klicka på **[!UICONTROL Connections]** -fliken.
+1. **[!UICONTROL Connections]**
 
-1. Klicka **[!UICONTROL Create new connection]** överst till höger.
+1. **[!UICONTROL Create new connection]**
 
-   ![Skapa anslutning](assets/create-connection0.png)
+   ![](assets/create-connection0.png)
 
-1. Välj en sandlåda i Experience Platform som innehåller den eller de datauppsättningar som du vill skapa en anslutning till.
+1. Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.
 
-   Adobe Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) som partitionerar en enda plattformsinstans i separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.  När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen.
-
-   >[!IMPORTANT]
-   >
-   >Du kan inte komma åt data över sandlådor, d.v.s. du kan bara kombinera datauppsättningar som finns i samma sandlåda.
-
-1. Välj en eller flera datauppsättningar som du vill hämta till [!UICONTROL Customer Journey Analytics] och klicka **[!UICONTROL Add]**.
-
-   (Om du har många datauppsättningar att välja bland kan du söka efter rätt datauppsättningar med **[!UICONTROL Search datasets]** sökfältet ovanför listan med datauppsättningar.)
-
-## Konfigurera datauppsättning
-
-Till höger kan du nu konfigurera de datauppsättningar som du har lagt till.
-
-![Konfigurera datauppsättning](assets/create-connection.png)
-
-1. **[!UICONTROL Dataset type]**: För varje datauppsättning som du har lagt till i den här anslutningen [!UICONTROL Customer Journey Analytics] anger automatiskt datamängdstypen baserat på de data som kommer in.
-
->[!IMPORTANT]
->
->    Du måste lägga till minst en händelsedatamängd som en del av en anslutning.
-
-
-    Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] data, och [!UICONTROL Lookup] data.
-    
-    |Datauppsättningstyp|Beskrivning|Tidsstämpel|Schema|Person-ID|
-    |—|—|—|—|—|—|
-    | [!UICONTROL Event] | Data som representerar händelser i tid (t.ex. webbbesök, interaktioner, transaktioner, POS-data, undersökningsdata, annonsinformation osv.). Detta kan till exempel vara typiska klickströmsdata, med ett kund-ID eller ett cookie-ID och en tidsstämpel. Med händelsedata får du flexibilitet vad gäller vilket ID som används som person-ID. |Är automatiskt inställt på standardfältet för tidsstämpling från händelsebaserade scheman i [!UICONTROL Experience Platform]. | Ett inbyggt eller anpassat schema som är baserat på en XDM-klass med beteendet &quot;Time Series&quot;. Exempel är &quot;XDM Experience Event&quot; eller &quot;XDM Decision Event&quot;. | Du kan välja vilket person-ID du vill inkludera. Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. |
-    | [!UICONTROL Lookup] | Dessa data används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [this use case](/help/use-cases/b2b.md) för ett exempel. | Ej tillämpligt | Ett inbyggt eller anpassat schema som är baserat på en XDM-klass med beteendet &quot;Record&quot;, förutom klassen &quot;XDM Individual Profile&quot;. | Ej tillämpligt |
-    | [!UICONTROL Profile] | Uppgifter som ska gälla för besökare, användare eller kunder i [!UICONTROL Event] data. Du kan till exempel överföra CRM-data om dina kunder. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på klassen &quot;XDM Individual Profile&quot;. | Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning som definieras i [!DNL Experience Platform] har en egen uppsättning av ett eller flera definierade person-ID, t.ex. cookie-ID, Stitched ID, User ID, Tracking Code osv.&lt;br>![Person-ID](assets/person-id.png)**Anm**: Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du verkligen vill sammanfoga datauppsättningar måste du använda samma person-ID. |
-
-1. **[!UICONTROL Dataset ID]**: Detta ID genereras automatiskt.
-
-1. **[!UICONTROL Time stamp]**: Endast för händelsedatamängder anges den här inställningen automatiskt till standardfältet för tidsstämpling från händelsebaserade scheman i [!UICONTROL Experience Platform].
-
-1. **[!UICONTROL Schema]**: Det här är [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) baserat på vilket datauppsättningen skapades i Adobe Experience Platform.
-
-1. **[!UICONTROL Person ID]**: Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Nedan finns information om hur du använder identitetskartan som ett person-ID.
+   [](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) You can think of sandboxes as &quot;data silos&quot; that contain data sets. Sandboxes are used to control access to data sets.  Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.
 
    >[!IMPORTANT]
    >
-   >Om det inte finns några person-ID:n att välja mellan, innebär det att ett eller flera person-ID:n inte har definierats i schemat. Visa [den här videon](https://youtu.be/G_ttmGl_LRU) om hur du definierar en identitet i Experience Platform.
+   >You cannot access data across sandboxes, i.e., you can only combine datasets that are located within the same sandbox.
 
-1. Klicka **[!UICONTROL Next]** för att gå till [!UICONTROL Enable Connection] -dialogrutan.
+1. [!UICONTROL Customer Journey Analytics]**[!UICONTROL Add]**
 
-### Använd identitetskarta som person-ID
+   **[!UICONTROL Search datasets]**
 
-Customer Journey Analytics har nu stöd för möjligheten att använda identitetskartan för sitt person-ID. Identitetskarta är en kartdatastruktur som gör att någon kan överföra nyckel -> värdepar. Nycklarna är ID-namnutrymmen och värdet är den struktur som innehåller identitetsvärdet. Identitetskartan finns för varje överförd rad/händelse och fylls i för varje rad i enlighet med detta.
+## Configure dataset
 
-Identitetskartan är tillgänglig för alla datauppsättningar som använder ett schema baserat på [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) klassen. När du väljer en sådan datauppsättning som ska inkluderas i en CJA-anslutning kan du välja att antingen välja ett fält som primärt ID eller identitetskartan:
+On the right-hand side, you can now configure the dataset/s you have added.
+
+![](assets/create-connection.png)
+
+1. **[!UICONTROL Dataset type]**[!UICONTROL Customer Journey Analytics]
+
+   >[!IMPORTANT]
+   >
+   >You need to add at least one event dataset as part of a connection.
+
+
+   [!UICONTROL Event][!UICONTROL Profile][!UICONTROL Lookup]
+
+   | Dataset Type | Beskrivning | Timestamp | Schema | Person ID |
+   |---|---|---|---|---|
+   | [!UICONTROL Event] | Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). For example, this could be typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, you have flexibility as to which ID is used as the Person ID. | [!UICONTROL Experience Platform] | Any built-in or custom schema that is based on an XDM class with the &quot;Time Series&quot; behavior. Examples include &quot;XDM Experience Event&quot; or &quot;XDM Decision Event.&quot; | You can pick which Person ID you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. |
+   | [!UICONTROL Lookup] | This data is used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. [](/help/use-cases/b2b.md) | Ej tillämpligt | Any built-in or custom schema that is based on an XDM class with the &quot;Record&quot; behavior, except for the &quot;XDM Individual Profile&quot; class. | Ej tillämpligt |
+   | [!UICONTROL Profile] | [!UICONTROL Event] For example, allows you to upload CRM data about your customers. | Ej tillämpligt | Any built-in or custom schema that is based on the &quot;XDM Individual Profile&quot; class. | You can pick which Person ID you want to include. [!DNL Experience Platform]<br>![](assets/person-id.png)**** To really merge datasets, you need use the same Person ID. |
+
+1. **[!UICONTROL Dataset ID]**
+
+1. **[!UICONTROL Time stamp]**[!UICONTROL Experience Platform]
+
+1. **[!UICONTROL Schema]**[](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)
+
+1. **[!UICONTROL Person ID]** These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.
+
+   >[!IMPORTANT]
+   >
+   >If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. [](https://youtu.be/G_ttmGl_LRU)
+
+1. **[!UICONTROL Next]**[!UICONTROL Enable Connection]
+
+### Use Identity Map as a Person ID
+
+Customer Journey Analytics now supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows someone to upload key -> value pairs. Nycklarna är ID-namnutrymmen och värdet är den struktur som innehåller identitetsvärdet. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
+
+[](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) When you select such a dataset to be included in a CJA Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
 
 ![](assets/idmap1.png)
 
-Om du väljer Identitetskarta får du ytterligare två konfigurationsalternativ:
+If you select Identity Map, you get two additional configuration options:
 
 | Alternativ | Beskrivning |
 |---|---|
-| [!UICONTROL Use Primary ID Namespace] | Detta instruerar CJA, per rad, att hitta identiteten i identitetskartan som är markerad med ett primär=true-attribut och använda det som ID för den raden. Detta innebär att det här är den primärnyckel som ska användas i Experience Platform för partitionering. Det är också den primära kandidaten för CJA:s besökar-ID (beroende på hur datauppsättningen konfigureras i en CJA-anslutning). |
-| [!UICONTROL Namespace] | (Det här alternativet är bara tillgängligt om du inte använder namnutrymmet för primärt ID.) Identitetsnamnutrymmen är en komponent i [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) som fungerar som indikatorer för det sammanhang som en identitet hör till. Om du anger ett namnutrymme söker CJA efter den här namnutrymmesnyckeln i varje rads identitetskarta och använder identiteten under namnutrymmet som ID för den raden. Observera att eftersom CJA inte kan göra en fullständig datauppsättningssökning av alla rader för att avgöra vilka namnutrymmen som faktiskt finns, visas alla möjliga namnutrymmen i listrutan. Du måste veta vilka namnutrymmen som anges i data; detta kan inte identifieras automatiskt. |
+| [!UICONTROL Use Primary ID Namespace] | This instructs CJA, per row, to find the identity in the Identity Map that is marked with a primary=true attribute and use that as the Person ID for that row. This means that this is the primary key that will be used in Experience Platform for partitioning. It is also the prime candidate for usage as CJA&#39;s visitor ID (depending on how the dataset is configured in a CJA Connection). |
+| [!UICONTROL Namespace] | (This option is only available if you do not use the Primary ID Namespace.) [](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) If you specify a namespace, CJA will search each row&#39;s Identity Map for this namespace key and use the identity under that namespace as the person ID for that row. Note that since CJA cannot do a full dataset scan of all rows to determine which namespaces are actually present, all possible namespaces are listed in the dropdown. You need to know which namespaces are specified in the data; this cannot be auto-detected. |
 
-### Kantärenden för identitetskarta
+### Identity Map edge cases
 
-I den här tabellen visas de två konfigurationsalternativen när det finns kantfall och hur de hanteras:
+This table shows the two configuration options when edge cases are present and how they are handled:
 
-| Alternativ | Det finns inga ID:n i identitetskartan | Inga ID har markerats som primära | Flera ID:n är markerade som primära | Ett ID är markerat som primärt | Ogiltigt namnutrymme med ett ID markerat som primärt |
+| Alternativ | No IDs are present in Identity Map | No IDs are marked as primary | Multiple IDs are marked as primary | Single ID is marked as primary | Invalid namespace with an ID marked as primary |
 |---|---|---|---|---|---|
-| **[!UICONTROL Use Primary ID Namespace]checked** | Raden tas bort av CJA. | Raden tas bort av CJA eftersom inget primärt ID har angetts. | Alla ID:n som markerats som primära, under alla namnutrymmen, extraheras till en lista. De sorteras sedan alfabetiskt, med den här nya sorteringen används det första namnutrymmet med dess första ID som person-ID. | Det enda ID som är markerat som primärt används som person-ID. | Även om namnutrymmet kan vara ogiltigt (inte finns i AEP) kommer CJA att använda det primära ID:t under namnutrymmet som Person-ID. |
-| **[!UICONTROL Specific Identity Map namespace]markerad** | Raden tas bort av CJA. | Alla ID:n under det markerade namnutrymmet extraheras till en lista och det första används som person-ID. | Alla ID:n under det markerade namnutrymmet extraheras till en lista och det första används som person-ID. | Alla ID:n under det markerade namnutrymmet extraheras till en lista och det första används som person-ID. | Alla ID:n under det markerade namnutrymmet extraheras till en lista och det första används som person-ID. (Endast ett giltigt namnutrymme kan väljas när anslutningen skapas, så det är inte möjligt att använda ett ogiltigt namnutrymme/ID som person-ID) |
+| **[!UICONTROL Use Primary ID Namespace]** | The row is dropped by CJA. | The row is dropped by CJA, as no primary ID is specified. | All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with this new sorting, the first namespace with its first ID is used as the Person ID. | The single ID marked as primary is used as the Person ID. | Even though the namespace may be invalid (not present in AEP), CJA will use the primary ID under that namespace as the Person ID. |
+| **[!UICONTROL Specific Identity Map namespace]** | The row is dropped by CJA. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID) |
 
-## Aktivera anslutning
+## Enable connection
 
-![Aktivera anslutning](assets/create-connection2.png)
+![](assets/create-connection2.png)
 
-1. Om du vill aktivera en anslutning definierar du de här inställningarna för hela anslutningen, dvs. alla datauppsättningar i anslutningen:
+1. To enable a connection, define these settings for the entire connection, i.e. all the datasets in the connection:
 
    | Alternativ | Beskrivning |
    | --- | --- |
-   | [!UICONTROL Name Connection] | Ge anslutningen ett beskrivande namn. Anslutningen kan inte sparas utan ett namn. |
-   | [!UICONTROL Description] | Lägg till mer information för att skilja den här anslutningen från andra. |
-   | [!UICONTROL Datasets] | De datauppsättningar som ingår i den här anslutningen. |
-   | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar in i [!UICONTROL Workspace]. |
-   | [!UICONTROL Import all existing data] | När du väljer det här alternativet och sparar anslutningen kommer alla befintliga (historiska) data från [!DNL Experience Platform] för alla datauppsättningar i den här anslutningen kommer att importeras eller fyllas i i bakgrunden. I framtiden kommer även alla befintliga historiska data för nya datauppsättningar som läggs till i den här sparade anslutningen att importeras automatiskt. Se även [Bakgrundsfyllningshistorikdata](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) nedan.<br>**Observera att den här inställningen inte kan ändras när anslutningen har sparats.** |
-   | [!UICONTROL Average number of daily events] | Du måste ange det genomsnittliga antalet dagliga händelser som ska importeras (nya data) **och** backfill-data) för alla datauppsättningar i anslutningen. Välj ett alternativ i listrutan. Detta gör att Adobe kan tilldela tillräckligt med utrymme för dessa data.<br>Om du inte känner till det genomsnittliga antalet dagliga händelser som ditt företag kommer att importera, kan du göra en enkel SQL-fråga i [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) för att ta reda på.<br>Se &quot;Beräkna det genomsnittliga antalet dagliga händelser&quot; nedan. |
+   | [!UICONTROL Name Connection] | Give the connection a descriptive name. The connection cannot be saved without a name. |
+   | [!UICONTROL Description] | Add more detail to distinguish this connection from others. |
+   | [!UICONTROL Datasets] | The datasets that are included in this connection. |
+   | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | [!UICONTROL Workspace] |
+   | [!UICONTROL Import all existing data] | [!DNL Experience Platform] In the future, all existing historical data for any new dataset(s) added to this saved connection will also be automatically imported. [](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data)<br>**** |
+   | [!UICONTROL Average number of daily events] | **** Select one option from the drop-down menu. This is so that Adobe can allocate sufficient space for this data.<br>[](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)<br> |
 
-1. Klicka på **[!UICONTROL Save and create data view]**. Dokumentation finns på [skapa en datavy](/help/data-views/create-dataview.md).
+1. Klicka på **[!UICONTROL Save and create data view]**. [](/help/data-views/create-dataview.md)
 
-### Bakgrundsfyllningshistorikdata
+### Backfill historical data
 
-**[!UICONTROL Import all existing data]** gör att du kan fylla i historiska data baklänges. Tänk på detta:
+**[!UICONTROL Import all existing data]** Keep this in mind:
 
-* Vi har tagit bort begränsningen för bakåtfyllnad (import av historiska data). Tidigare kunde ni fylla upp maximalt 2,5 miljarder rader på egen hand och på annat sätt kräva konstruktionsarbete. Nu kan ni fylla i data på egen hand utan begränsningar.
-* Vi prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa nya data har den lägsta latensen.
-* Eventuella bakåtfyllnadsdata (historiska) importeras i en långsammare takt. Latensen påverkas av hur mycket historisk information du har, i kombination med **[!UICONTROL Average number of daily events]** inställningen du valde. Om du till exempel har mer än en miljard rader data per dag, plus tre års historiska data, kan det ta flera veckor att importera dem. Å andra sidan, om du har mindre än en miljon rader per dag och en vecka med historiska data, tar det mindre än en timme.
-* Påfyllning gäller för hela anslutningen, inte för varje enskild datauppsättning.
-* The [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importerar upp till 13 månaders data, oavsett storlek.
+* We have removed the backfill (historical data import) limitation. Previously, you could backfill a maximum of 2.5 billion rows on your own and otherwise required engineering involvement. Now, you can backfill data on your own, without any limitations.
+* We prioritize new data added to a dataset in the connection, so this new data has the lowest latency.
+* Any backfill (historical) data is imported at a slower rate. **[!UICONTROL Average number of daily events]** For example, if you have more than one billion rows of data per day, plus 3 years of historical data, that could take multiple weeks to import. On the other hand, if you have less than a million rows per day and one week of historical data, that would take less than an hour.
+* Backfilling applies to the whole connection, not to each dataset individually.
+* [](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html)
 
-### Beräkna det genomsnittliga antalet dagliga händelser
+### Calculate the average number of daily events
 
-Denna beräkning måste göras för varje datauppsättning i anslutningen.
+This calculation has to be done for every dataset in the connection.
 
-1. Gå till [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) och skapa en ny fråga.
+1. [](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
 
-   Frågan skulle se ut så här:
+   The query would look like this:
 
    ```
    Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;
    ```
 
-   I det här exemplet är &quot;analytics_demo_data&quot; namnet på datauppsättningen.
+   In this example, &quot;analytics_demo_data&quot; is the name of the dataset.
 
-1. Utför `Show Tables` -fråga för att visa alla datauppsättningar som finns i AEP.
+1. `Show Tables`
