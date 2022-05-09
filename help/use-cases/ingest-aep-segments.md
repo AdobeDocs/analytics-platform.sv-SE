@@ -4,9 +4,9 @@ description: Beskriver hur man importerar AEP-målgrupper till Customer Journey 
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
+source-git-commit: 9c4869bb632f3d69d8704009744246b975cb5c4a
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,9 @@ Du kan skapa ett exportjobb med valfritt målgrupps-ID och skicka resultatet i d
 
 ## Steg 4: Redigera exportutdata
 
-Resultaten av exportjobbet måste omvandlas till en separat profildatauppsättning för att kunna hämtas till CJA.  Omvandlingen kan göras med AEP Query Service eller något annat omformningsverktyg.  Vi behöver bara profil-ID (som matchar person-ID:t i CJA) och ett eller flera målgrupps-ID:n för att kunna rapportera i CJA. Standardexportjobbet innehåller emellertid mer data och därför måste vi redigera dessa utdata för att ta bort överflödiga data, liksom flytta runt saker.  Du måste också skapa ett schema/en datauppsättning först innan du lägger till omformade data i den.
+Resultaten av exportjobbet måste omvandlas till en separat profildatauppsättning för att kunna hämtas till CJA.  Den här omvandlingen kan göras med [AEP-frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)eller något annat omformningsverktyg. Vi behöver bara profil-ID (som matchar person-ID:t i CJA) och ett eller flera målgrupps-ID:n för att kunna rapportera i CJA.
+
+Standardexportjobbet innehåller emellertid mer data och därför måste vi redigera dessa utdata för att ta bort överflödiga data, liksom flytta runt saker.  Du måste också skapa ett schema/en datauppsättning först innan du lägger till omformade data i den.
 
 Här är ett exempel på exportutdata i profilunionens datauppsättning, **före** redigering:
 
@@ -71,9 +73,7 @@ Här är de dataelement som måste finnas:
 
 ## Steg 5: Lägg till den här profildatauppsättningen i en befintlig anslutning i CJA
 
-Du kan skapa en ny anslutning, men de flesta kunder vill lägga till den i en befintlig anslutning. Målgrupps-ID:n&quot;berikar&quot; befintliga data i CJA.
-
-[Skapa en anslutning](/help/connections/create-connection.md)
+Du kan [skapa en ny anslutning](/help/connections/create-connection.md), men de flesta kunder vill lägga till profildatauppsättningen i en befintlig anslutning. Målgrupps-ID:n&quot;berikar&quot; befintliga data i CJA.
 
 ## Steg 6: Ändra befintlig (eller skapa ny) CJA-datavy
 
