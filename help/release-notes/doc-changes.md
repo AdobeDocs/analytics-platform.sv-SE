@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b7a68f7cbcca74c1eaa5f14c4a3aa2652afb248d
+source-git-commit: 5224c83b222997413a9fb70a0d1e219f82d1af17
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '702'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | --- | --- |
 | April 2022 | Dokumentation på [dimensionsdelsträngar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | April 2022 | Nytt [CJA User Guide for Adobe Analytics users](/help/getting-started/aa-to-cja-user.md). |
+| April 2022 | [Jämför dina Adobe Analytics-data med CJA-data](/help/troubleshooting/compare.md) |
 | Mars 2022 | Nytt [API-dokumentation för CJA-anteckningar](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
 | Mars 2022 | Ny dokumentation om [Anteckningar i arbetsytan](/help/components/annotations/overview.md). |
 | Mars 2022 | Innehåll som uppdaterats avsevärt på [beräknar anslutningsstorlek](/help/getting-started/cja-faq.md). |
