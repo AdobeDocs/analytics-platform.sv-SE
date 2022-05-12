@@ -3,9 +3,10 @@ title: Inställningar för delsträngskomponent
 description: Använd en delmängd av en sträng som dimensionsobjekt.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a8bdb5b0c00a9dbca2f466452a5d18045b2e9971
+exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
+source-git-commit: e1d8cffac907e1043d18b1939585108ce95a0fda
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '839'
 ht-degree: 1%
 
 ---
@@ -112,3 +113,7 @@ Utdataplatshållare stöds också. Du kan använda dessa sekvenser i **[!UICONTR
 | ``$` `` | Texten skapas mellan slutet av den senaste matchningen (eller början av texten om ingen tidigare matchning hittades) och början av den aktuella matchningen. |
 | `$+` | Matchar det senast markerade deluttrycket i det reguljära uttrycket. |
 | `$$` | Utdata för strängtecknet `"$"`. |
+
+Här är en video om att binda Dimensioner:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
