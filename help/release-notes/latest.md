@@ -3,29 +3,35 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 70ca04d647645d6ba69f07110f0deced03bd0a77
+source-git-commit: 067d816b3e9ce6bf9cc36f270cdf050a847bbcc8
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '140'
 ht-degree: 1%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (CJA) (april 2022)
+# Versionsinformation för Customer Journey Analytics (CJA) (maj 2022)
 
 >[!NOTE]
 >
 >Den här sidan innehåller information om förhandsversioner som kan ändras.
 
-**Senaste uppdatering**: 19 april 2022
+**Senaste uppdatering**: 10 maj 2022
 
 ## Viktiga funktioner
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Dimensionens delsträngar | Innehåller flera metoder för att extrahera den önskade delen av en sträng för användning som dimensionsobjekt. Med den här funktionen kan du också behandla en strängdimension som en array om strängen innehåller avgränsade värden. [Läs mer](../data-views/component-settings/substring.md) | 20 april 2022 |
-| Dataförberedelse för Analytics-källkoppling | The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) är nu integrerat med [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktioner från Adobe Experience Platform. Adobe Real-time Customer Data Platform (RTCDP)-, CJA- och Adobe Journey Optimizer-kunder (AJO) kan nu utöka fältgruppen Analytics med ytterligare fältgrupper. De kan också utnyttja över 100 Data Prep-operatorer för att berika analysdata vid intag i Adobe Experience Platform (AEP). RTCDP-kunder kan nu aktivera flera rapportsviter som har aktiverats för dataprep för profilen.<p>CJA-kunder som importerar flera rapportsviter via Analytics Source Connector kan nu frigöra kolumnskillnader mellan olika rapportsviter. Om&quot;Sökord&quot; till exempel lagras i `eVar1` i en rapportserie och `eVar2` i en annan rapportserie kan du med Data Prep utöka fältgruppen Analytics med en ny kolumn som sammanfogar värdena från de två eVars-elementen. | 27 april 2022 |
+| Nytt gränssnitt för redigering och skapande av anslutning | Med den här smidiga upplevelsen kan du fylla i data på datauppsättningsnivå, aktivera ett rullande datalagringsfönster, lägga till och ta bort datauppsättningar från en anslutning. | 18 maj 2022 |
+| Report Builder för CJA-uppdateringar | Innehåller funktioner som schemaläggning och hantering av datablockering. | 18 maj 2022 |
+| AI-integrering för kunder | Gör att du kan importera AI-modellpoäng i CJA för ytterligare analys på arbetsytan för CJA-analys. | 25 maj 2022 |
+| Attribution AI Integration | Gör att du kan importera modellresultat i CJA för ytterligare analys på arbetsytan för CJA-Attribution AI. | 25 maj 2022 |
 
 {style=&quot;table-layout:auto&quot;}
+
+### CJA-korrigeringar
+
+AN-279234; AN-284839; AN-285417
 
 >[!MORELIKETHIS]
 >[Dokumentationsuppdateringar för Customer Journey Analytics](/help/release-notes/doc-changes.md)
