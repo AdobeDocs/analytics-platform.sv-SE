@@ -3,10 +3,10 @@ description: Ta reda på hur AEP Attribution AI kan integreras med Workspace i C
 title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: e75836841cdaf8acd2408723111f13048d31505d
+source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 4%
+source-wordcount: '411'
+ht-degree: 3%
 
 ---
 
@@ -14,21 +14,31 @@ ht-degree: 4%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, är en flerkanalig algoritmisk attribueringstjänst som beräknar påverkan och inkrementell påverkan av kundinteraktioner i förhållande till angivna resultat. Med Attribution AI kan marknadsförarna mäta och optimera marknadsförings- och annonsutgifterna genom att förstå effekten av varje enskild kundinteraktion under varje fas av kundresan.
 
-Attribution AI har stöd för två kategorier av poäng: algoritmisk och regelbaserad. Algoritmiska poäng inkluderar inkrementella och påverkade poäng. Regelbaserade resultat inkluderar First Touch, Last Touch, Linear, U-shaped och Time-Decay.
+Attribution AI har stöd för två kategorier av poäng: algoritmisk och regelbaserad. Algoritmiska poäng inkluderar inkrementella och påverkade poäng. Regelbaserade resultat inkluderar First Touch, Last Touch, Linear, U-shaped och Time-Decay. Attribution AI stöder 3 Experience Platform scheman: Experience Event, Adobe Analytics och Consumer Experience Event.
 
 Attribution AI integreras med Customer Journey Analytics (CJA) i den utsträckning som Attribution AI kör modeller mot data och sedan importerar CJA dessa modellers utdata som en datauppsättning, som sedan kan integreras med resten av CJA-datauppsättningarna. Datauppsättningar som har Attribution AI kan sedan utnyttjas i datavyer och rapporter i CJA.
-
-Attribution AI stöder 3 Experience Platform scheman: Experience Event, Adobe Analytics och Consumer Experience Event.
 
 ## Arbetsflöde
 
 Vissa av stegen utförs i Adobe Experience Platform innan du arbetar med utdata i CJA.
 
-### Hämta bakgrundsmusik för Attribution AI
+### Steg 1: Hämta bakgrundsmusik för Attribution AI
 
-1. I Experience Platform hämtar du Attribution AI enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
-1. I Experience Platform skapar du en Attribution AI-instans genom att markera och mappa data, definiera händelser och utbilda data enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
-1. I CJA
+Hämta bakgrundsmusik i Adobe Experience Platform enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
+
+### Steg 2: Skapa en Attribution AI-instans
+
+I Experience Platform skapar du en Attribution AI-instans genom att markera och mappa data, definiera händelser och utbilda data enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
+
+### Steg 3: Konfigurera en CJA-anslutning till Attribution AI-datauppsättningar
+
+I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för Attribution AI. Dessa datauppsättningar visas med prefixet &quot;Attribution AI Scores&quot;, vilket visas här:
+
+![AAI-poäng](assets/aai-scores.png)
+
+### Steg 4: Skapa datavyer baserade på dessa anslutningar
+
+I CJA
 
 ## Skillnader mellan Attribution AI och Attribution IQ
 

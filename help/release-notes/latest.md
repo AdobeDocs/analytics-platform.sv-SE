@@ -3,10 +3,10 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 72486c527fa48775395bc5a31e6dd98eb30cbdc1
+source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '152'
+ht-degree: 3%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 0%
 | ----------- | ---------- | ----- |
 | Nytt gränssnitt för redigering och skapande av anslutning | Med den här smidiga upplevelsen kan du fylla i data på datauppsättningsnivå, aktivera ett rullande datalagringsfönster, lägga till och ta bort datauppsättningar från en anslutning. [Läs mer](/help/connections/create-connection.md) | 18 maj 2022 |
 | Report Builder för CJA-uppdateringar | Innehåller funktioner som schemaläggning och hantering av datablockering. [Läs mer] | 18 maj 2022 |
-| AI-integrering för kunder | Gör att du kan importera AI-modellpoäng i CJA för ytterligare analys på arbetsytan för CJA-analys. [Läs mer] | 25 maj 2022 |
-| Attribution AI Integration | Gör att du kan importera modellresultat i CJA för ytterligare analys på arbetsytan för CJA-Attribution AI. [Läs mer] | 25 maj 2022 |
+| AI-integrering för kunder | Gör att du kan importera AI-modellpoäng i CJA för ytterligare analys på arbetsytan för CJA-analys. [Läs mer - att följa] | 25 maj 2022 |
+| Attribution AI Integration | Gör att du kan importera modellresultat i CJA för ytterligare analys på arbetsytan för CJA-Attribution AI. [Läs mer - att följa] | 25 maj 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
