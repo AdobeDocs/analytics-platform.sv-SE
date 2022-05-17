@@ -4,9 +4,9 @@ title: Ad hoc-projektfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
