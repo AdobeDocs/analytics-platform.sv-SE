@@ -3,15 +3,19 @@ description: Ta reda på hur AEP Customer AI integreras med Workspace i CJA.
 title: Integrera kundens AI med CJA
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 0b095edc3ad8f5121818feafa6edb3f826bee84c
+source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
 
 # Integrera kundens AI med CJA
+
+>[!NOTE]
+>
+>Den här sidan håller på att byggas.
 
 [Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
 

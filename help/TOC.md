@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 565a247da0e66953d84b70dfb2fa50555e36b27d
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '634'
 ht-degree: 37%
 
 ---
@@ -200,6 +200,15 @@ ht-degree: 37%
       + [Översikt över kalendern](components/date-ranges/calendar.md)
       + [Skapa anpassade datumintervall](components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](components/date-ranges/time-comparison.md)
++ Kontrollpaneler för analyser {#cja-dashboards}
+   + [Kontrollpaneler för analyser - översikt](mobile-app/home.md)
+   + [Läraruppgifter](mobile-app/curator.md)
+   + [Skapa ett styrkort](mobile-app/create-scorecard.md)
+   + [Konfigurera chefer för att använda kontrollpaneler](mobile-app/set-up-execs.md)
+   + [Snabbguide för chefsanvändare](mobile-app/executive.md)
++ Integreringar {#integrations}
+   + [Integrera Attribution AI med CJA](integrations/attribution-ai.md)
+   + [Integrera kundens AI med CJA](integrations/customer-ai.md)
 + Användningsexempel {#cja-usecases}
    + [Användningsexempel i Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Använda arrayer med objekt](use-cases/object-arrays.md)
@@ -213,12 +222,6 @@ ht-degree: 37%
    + [Använd mått för marknadsföringskanal](use-cases/marketing-channels.md)
    + [Importera data från Google Analytics till Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Rapport om Google Analytics data i CJA](use-cases/ga-to-cja-reporting.md)
-+ Kontrollpaneler för analyser {#cja-dashboards}
-   + [Kontrollpaneler för analyser - översikt](mobile-app/home.md)
-   + [Läraruppgifter](mobile-app/curator.md)
-   + [Skapa ett styrkort](mobile-app/create-scorecard.md)
-   + [Konfigurera chefer för att använda kontrollpaneler](mobile-app/set-up-execs.md)
-   + [Snabbguide för chefsanvändare](mobile-app/executive.md)
 + Felsökning {#troubleshooting}
    + [Jämför dina Adobe Analytics-data med CJA-data](troubleshooting/compare.md)
 + Sekretess {#cja-privacy}
