@@ -6,20 +6,25 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 8544de42c643c729558f27a7d64b0e4a8af608d0
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
 
 # Report Builder Hub
 
-Använd Report Builder nav för att skapa, uppdatera eller ta bort datablock.
+Använd Report Builder nav för att skapa, uppdatera, ta bort och hantera datablock.
 
-Navet Report Builder innehåller panelerna KOMMANDON och QUICK EDIT.
+Navet Report Builder innehåller knapparna Skapa och Hantera, KOMMANDON och QUICK EDIT-panelerna.
 
-![](./assets/image13.png)
+<img src="./assets/hub51.png" width="50%"/>
+
+
+## Knapparna Skapa och hantera
+
+Använd knapparna Skapa eller Hantera för att skapa nya datablock eller för att hantera befintliga datablock.
 
 ## KOMMANDON
 
