@@ -4,16 +4,16 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: beb9e94e0870f8957de59e643957f7422f902182
+source-git-commit: 36fc82cf2c075550ced98193fe50115af12974de
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2008'
 ht-degree: 2%
 
 ---
 
 # Skapa en anslutning
 
-Ett nytt anslutningsarbetsflöde startas i Customer Journey Analytics (CJA) i maj 2022. Här är en översikt över de nya funktionerna:
+Ett nytt anslutningsarbetsflöde startades nyligen i Customer Journey Analytics (CJA). Här är en översikt över de nya funktionerna:
 
 * Du kan aktivera ett rullande datalagringsfönster när du skapar anslutningen.
 * Du kan lägga till och ta bort datauppsättningar från en anslutning. (Om du tar bort en datauppsättning tas den bort från anslutningen och påverkar associerade datavyer och underliggande Analysis Workspace-projekt.)
