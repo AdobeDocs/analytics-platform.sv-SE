@@ -4,17 +4,17 @@ description: Lär dig hur CJA skapar en anslutning genom att kombinera dataupps�
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Kombinerade händelsedatamängder
 
-När du skapar en anslutning kombinerar CJA alla scheman och datauppsättningar i en enda datauppsättning. Den här kombinerade händelsedatamängden är vad CJA använder för rapportering. När du inkluderar flera scheman eller datauppsättningar i en anslutning:
+När du skapar en anslutning kombinerar Customer Journey Analytics (CJA) alla scheman och datauppsättningar till en enda datauppsättning. Den här kombinerade händelsedatamängden är vad CJA använder för rapportering. När du inkluderar flera scheman eller datauppsättningar i en anslutning:
 
 * Scheman kombineras. Duplicerade schemafält sammanfogas.
 * Kolumnen &quot;Person-ID&quot; i varje datauppsättning sammanfogas till en enda kolumn, oavsett namn. Den här kolumnen är grunden för att identifiera unika besökare i CJA.
