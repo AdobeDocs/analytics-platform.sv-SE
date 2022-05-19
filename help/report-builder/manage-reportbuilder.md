@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 01a9ff4e03e002da723c10500de6dec4444f951e
+exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
+source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
-
 
 # Hantera datablock i Report Builder
 
@@ -50,19 +50,17 @@ Du kan redigera datavyn, datumintervallet eller de filter som används i ett ell
 
 Du kan till exempel ersätta ett befintligt filter med ett nytt filter i ett eller flera datablock.
 
-1. Markera de datablock som du vill uppdatera.
+1. Markera de datablock som du vill uppdatera. Du kan markera kryssrutan på den översta nivån om du vill markera alla datablock, eller markera enskilda datablock.
 
-Du kan markera kryssrutan på den översta nivån om du vill markera alla datablock, eller markera enskilda datablock.
-
-![image](./assets/image56.png)
+   ![image](./assets/image56.png)
 
 1. Klicka på redigeringsikonen för att visa snabbredigeringsfönstret.
 
-![image](./assets/image58.png)
+   ![image](./assets/image58.png)
 
 1. Välj en filterlänk för att uppdatera datavyer, datumintervall eller filter.
 
-![image](./assets/image59.png)
+   ![image](./assets/image59.png)
 
 ## Uppdatera datablock
 
@@ -81,9 +79,9 @@ Klicka på papperskorgsikonen för att ta bort ett markerat datablock.
 
 ## Gruppera datablock
 
-Klicka på kolumnrubrikerna om du vill gruppera datablock eller välj ett kolumnnamn på menyn **Gruppera efter** *Namn* lista.
+Du kan gruppera datablock med **Gruppera efter** eller klicka på en kolumnrubrik. Om du vill sortera datablock efter kolumn klickar du på kolumnrubriken. Om du vill gruppera datablock efter grupper väljer du ett gruppnamn på menyn **Gruppera efter** nedrullningsbar meny. På skärmbilden nedan visas datablock grupperade efter ark. Här visas datablock grupperade efter Sheet1 och Sheet2.  Det här är användbart i till exempel om du vill ersätta filter. Om du har flera filter tillämpade på varje datablock är det bra att skapa en grupp som innehåller alla datablock som du vill ersätta. Sedan kan du enkelt markera och redigera alla samtidigt.
 
-![image](./assets/image514.png)
+![image](./assets/group-data-blocks.png)
 
 ## Ändra vyn för Hanteraren för datablockering
 
