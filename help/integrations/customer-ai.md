@@ -1,65 +1,72 @@
 ---
-description: Ta reda på hur AEP Customer AI integreras med Workspace i CJA.
-title: Integrera kundens AI med CJA
+description: Find out how AEP Customer AI integrates with Workspace in CJA.
+title: Integrate Customer AI with CJA
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
+exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
+source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
-
-# Integrera kundens AI med CJA
+# Integrate Customer AI with CJA
 
 >[!NOTE]
 >
->Den här sidan håller på att byggas.
+>This page is under construction.
 
-[Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)
 
-Med hjälp av inflytelserika faktorer kan kundens AI tala om för er vad en kund kan tänkas göra och varför. Dessutom kan marknadsförarna dra nytta av kundernas AI-prognoser och insikter för att personalisera kundupplevelser genom att leverera de lämpligaste erbjudandena och budskapen.
+With the help of influential factors, Customer AI can tell you what a customer is likely to do and why. Additionally, marketers can benefit from Customer AI predictions and insights to personalize customer experiences by serving the most appropriate offers and messaging.
 
-Kundens AI fungerar genom att analysera någon av följande datauppsättningar för att förutsäga bortfall eller konverteringsbenägenhetspoäng:
+Customer AI works by analyzing one of the following datasets to predict churn or conversion propensity scores:
 
-* Adobe Analytics-data med Analytics-källkopplingen
-* Adobe Audience Manager-data med hjälp av Audience Manager-källkopplingen
-* Experience Event-datauppsättning
-* CEE-datauppsättning (Consumer Experience Event)
+* Adobe Analytics data using the Analytics source connector
+* Adobe Audience Manager data using the Audience Manager source connector
+* Experience Event (EE) dataset
+* Consumer Experience Event (CEE) dataset
 
-Kundens AI integreras med Customer Journey Analytics (CJA) i den utsträckning som kundens AI-aktiverade datauppsättningar kan utnyttjas i datavyer och rapportering i CJA.
+Customer AI integrates with Customer Journey Analytics (CJA) to the extent that Customer AI-enabled datasets can be leveraged in data views and reporting in CJA.
 
-## Arbetsflöde
+## Workflow
 
-Vissa av stegen utförs i Adobe Experience Platform innan du arbetar med utdata i CJA.
+Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA.
 
-### Steg 1: Hämta AI-poäng för kunder
+### Step 1: Download Customer AI scores
 
-Hämtning av kundens AI-poäng görs via en kombination av Experience Platform API-anrop, enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/getting-started.html?lang=en#downloading-customer-ai-scores).
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/getting-started.html?lang=en#downloading-customer-ai-scores)
 
-### Steg 2: Definiera AI-indata och -utdata för kunder
+### Step 2: Define Customer AI inputs and outputs
 
-Den här processen beskrivs i [Indata och utdata i kundens AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/input-output.html?lang=en) dokumentation.
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/input-output.html?lang=en)
 
-### Steg 3: Konfigurera en AI-instans för kund
+### Step 3: Configure a Customer AI instance
 
-När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa följande [Konfigurera en AI-instans för kund](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) guide.
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en)
 
-### Steg 4: Konfigurera en CJA-anslutning till kundens AI-datauppsättningar
+### Step 4: Set up a CJA connection to Customer AI datasets
 
-I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för kundens AI. Dessa datauppsättningar visas med prefixet&quot;Customer AI Scores&quot;, vilket visas här:
+[](/help/connections/create-connection.md) These datasets appears with the &quot;Customer AI Scores&quot; prefix, as shown here:
 
-![CAI-poäng](assets/cai-scores.png)
+![](assets/cai-scores.png)
 
-Varje förutsägelse, som&quot;Sannolikhet att uppgradera konto&quot;, motsvarar en datauppsättning.
+Each prediction, such as &quot;Likelihood to upgrade account&quot; equates to one dataset.
 
-Här är ett exempel på ett XDM-schema som CJA skulle ta med som en del av en befintlig eller ny datamängd:
+Here is an example of a XDM schema that CJA would bring in as part of an existing or new dataset:
 
-![CAI-schema](assets/cai-schema.png)
+![](assets/cai-schema.png)
 
-(Observera att exemplet är en profildatamängd. Samma uppsättning schemaobjekt skulle ingå i en Experience Event-datauppsättning som CJA skulle hämta. Experience Event-datauppsättningen skulle innehålla tidsstämplar som poängdatum.) Alla kunder som får poäng i den här modellen har poäng, scoreDate osv. som är kopplade till dem.
+(Note that the example is a profile dataset; the same set of schema object would be part of an Experience Event dataset that CJA would grab. The Experience Event dataset would include timestamps as the score date.) Every customer scored in this model would have a score, a scoreDate, etc. associated with them.
 
-### Steg 5: Skapa datavyer baserade på dessa anslutningar
+### Step 5: Create data views based on these connections
 
-I CJA kan du nu fortsätta att skapa datavyer med de dimensioner som har infogats som en del av den anslutning du upprättade.
+[](/help/data-views/create-dataview.md)
+
+### Step 6: Report on CAI scores in Workspace
+
+Here is an example of a Workspace project with CAI data that shows score dates in a stacked bar chart:
+
+![](assets/workspace-scores.png)
+

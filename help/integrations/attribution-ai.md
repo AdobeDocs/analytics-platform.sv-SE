@@ -1,60 +1,65 @@
 ---
-description: Ta reda på hur AEP Attribution AI kan integreras med Workspace i CJA.
-title: Integrera Attribution AI med CJA
+description: Find out how AEP Attribution AI integrates with Workspace in CJA.
+title: Integrate Attribution AI with CJA
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
+exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
+source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '457'
 ht-degree: 3%
 
 ---
 
-# Integrera Attribution AI med CJA
+# Integrate Attribution AI with CJA
 
 >[!NOTE]
 >
->Den här sidan håller på att byggas.
+>This page is under construction.
 
-[Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, är en flerkanalig algoritmisk attribueringstjänst som beräknar påverkan och inkrementell påverkan av kundinteraktioner i förhållande till angivna resultat. Med Attribution AI kan marknadsförarna mäta och optimera marknadsförings- och annonsutgifterna genom att förstå effekten av varje enskild kundinteraktion under varje fas av kundresan.
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en) With Attribution AI, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customer journeys.
 
-Attribution AI har stöd för två kategorier av poäng: algoritmisk och regelbaserad. Algoritmiska poäng inkluderar inkrementella och påverkade poäng. Regelbaserade resultat inkluderar First Touch, Last Touch, Linear, U-shaped och Time-Decay. Attribution AI stöder 3 Experience Platform scheman: Experience Event, Adobe Analytics och Consumer Experience Event.
+Attribution AI supports two categories of scores: algorithmic and rule-based. Algorithmic scores include incremental and influenced scores. Rule-based scores include First touch, Last touch, Linear, U-shaped, and Time-Decay. Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe Analytics, and Consumer Experience Event.
 
-Attribution AI integreras med Customer Journey Analytics (CJA) i den utsträckning som Attribution AI kör modeller mot data och sedan importerar CJA dessa modellers utdata som en datauppsättning, som sedan kan integreras med resten av CJA-datauppsättningarna. Datauppsättningar som har Attribution AI kan sedan utnyttjas i datavyer och rapporter i CJA.
+Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against data and then CJA imports the output of those models as a data set, which can then be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA.
 
-## Arbetsflöde
+## Workflow
 
-Vissa av stegen utförs i Adobe Experience Platform innan du arbetar med utdata i CJA.
+Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA.
 
-### Steg 1: Hämta bakgrundsmusik för Attribution AI
+### Step 1: Download Attribution AI scores
 
-Hämta bakgrundsmusik i Adobe Experience Platform enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores)
 
-### Steg 2: Skapa en Attribution AI-instans
+### Step 2: Create an Attribution AI instance
 
-I Experience Platform skapar du en Attribution AI-instans genom att markera och mappa data, definiera händelser och utbilda data enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
+[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html)
 
-### Steg 3: Konfigurera en CJA-anslutning till Attribution AI-datauppsättningar
+### Step 3: Set up a CJA connection to Attribution AI datasets
 
-I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för Attribution AI. Dessa datauppsättningar visas med prefixet &quot;Attribution AI Scores&quot;, vilket visas här:
+[](/help/connections/create-connection.md) These datasets appears with the &quot;Attribution AI Scores&quot; prefix, as shown here:
 
-![AAI-poäng](assets/aai-scores.png)
+![](assets/aai-scores.png)
 
-### Steg 4: Skapa datavyer baserade på dessa anslutningar
+### Step 4: Create data views based on these connections
 
-I CJA
+[](/help/data-views/create-dataview.md) (Would be great to have a screenshot here.)
 
-## Skillnader mellan Attribution AI och Attribution IQ
+### Step 5: Report on AAI data in CJA Workspace
 
-Så när bör ni använda Attribution AI data jämfört med [Attribution IQ](/help/analysis-workspace/attribution/overview.md), en inbyggd CJA-funktion? I den här tabellen visas några av skillnaderna i funktionalitet:
+Here is an example of a Workspace project with AAI data that shows...
 
-| Funktionalitet | Attribution AI | Attribution IQ |
+## Differences between Attribution AI and Attribution IQ
+
+[](/help/analysis-workspace/attribution/overview.md) This table shows some of the differences in functionality:
+
+| Functionality | Attribution AI | Attribution IQ |
 | --- | --- | --- |
-| Delar attribuering | Ja | Nej |
-| Tillåter användare att justera modellen | Nej | Ja |
-| Ger attribuering över flera kanaler (Obs! AAI använder inte samma sammanslagna data som CJA gör.) | Ja | Ja |
-| Inkluderar inkrementella och påverkade poäng | Ja | Nej |
-| Gör HTML-modellering | Ja | Ja |
-| Gör HTML-modellering med prognoser | Ja | Nej |
+| Does fractional attribution | Ja | Nej |
+| Allows users to adjust model | Nej | Ja |
+| Does attribution across channels (Note: AAI does not use the same stitched data that CJA does.) | Ja | Ja |
+| Includes incremental and influenced scores | Ja | Nej |
+| Does ML modeling | Ja | Ja |
+| Does ML modeling with predictions | Ja | Nej |
 
 {style=&quot;table-layout:auto&quot;}
