@@ -4,9 +4,9 @@ title: Integrera kundens AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 5d22437ec6514196146283af311b6661c1f2e45b
+source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,15 @@ ht-degree: 0%
 
 Med hjälp av inflytelserika faktorer kan kundens AI tala om för er vad en kund kan tänkas göra och varför. Dessutom kan marknadsförarna dra nytta av kundernas AI-prognoser och insikter för att personalisera kundupplevelser genom att leverera de lämpligaste erbjudandena och budskapen.
 
-Kundens AI fungerar genom att analysera en eller flera av följande datauppsättningar för att förutsäga bortfall eller konverteringsbenägenhetspoäng:
+Kundens AI bygger på individuella beteendedata och profildata för benägenhetsbedömning. Kundens AI är flexibelt eftersom det kan användas i flera datakällor, bland annat Adobe Analytics, Adobe Audience Manager, data för kundupplevelsehändelser och händelsedata för upplevelser. Om du använder AEP-dataanslutningen för att hämta data från Adobe Audience Manager och Adobe Analytics hämtar modellen automatiskt standardhändelsetyperna för att utbilda och poängsätta modellen. Om du tar med din egen Experience Event-datauppsättning utan standardhändelsetyper måste alla relevanta fält mappas som anpassade händelser eller profilattribut om du vill använda dem i modellen. Detta kan göras i kundens AI-konfigurationssteg. &#x200B;
 
-* Adobe Analytics-data med Analytics-källkopplingen
-* Adobe Audience Manager-data med hjälp av Audience Manager-källkopplingen
-* Experience Event-datauppsättning
-* CEE-datauppsättning (Consumer Experience Event)
+Kundens AI integreras med Customer Journey Analytics (CJA) i den utsträckning som kundens AI-aktiverade datauppsättningar kan utnyttjas i datavyer och rapportering i CJA. Med den här integreringen kan du
 
-Kundens AI integreras med Customer Journey Analytics (CJA) i den utsträckning som kundens AI-aktiverade datauppsättningar kan utnyttjas i datavyer och rapportering i CJA.
+* **Spåra benägenhetspoäng för ett användarsegment över tid**. Exempel: Hur stor är sannolikheten att en hotellkund köper en showbiljett på hotellets konsertplats?
+* **Analysera vilka lyckade händelser eller attribut som är kopplade till benägenhetspoängen**. &#x200B;Exempel: Jag vill förstå attributen eller framgångshändelserna i samband med benägenhetspoängen.
+* **Följ anmälningsflödet för kundbenägenhet över olika poängsättningsrundor**. Exempel: Jag skulle vilja förstå personer som till en början var användare med låg benägenhet, och som senare blev användare med stor benägenhet. &#x200B;
+* **Titta på hur benägenheten är fördelad**. Användningsfall: Jag skulle vilja förstå hur de benägna poängen är fördelade på mig så att jag kan vara mer exakt med mina segment. &#x200B;Exempel: en återförsäljare vill göra en viss kampanj för 50 dollar i en produkt.  De kanske bara vill göra en mycket begränsad befordran på grund av budgeten, osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer &#x200B; kunderna.
+* **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**. Användningsfall: Jag skulle vilja följa upp en viss kohort över tiden. Detta liknar det första, men du kan spåra en viss kohort över tiden. &#x200B; Exempel på hotell: En marknadsförare kan spåra sin bronsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå över tiden. Då ser de varje kohorts benägenhet att boka hotellet över tiden. &#x200B;
 
 ## Arbetsflöde
 
@@ -40,11 +41,11 @@ När du har förberett dina data och har alla dina autentiseringsuppgifter och s
 
 ### Steg 2: Konfigurera en CJA-anslutning till kundens AI-datauppsättningar
 
-I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för kundens AI. Dessa datauppsättningar visas med prefixet&quot;Customer AI Scores&quot;, vilket visas här:
+I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för kundens AI. Varje förutsägelse, som&quot;Sannolikhet att uppgradera konto&quot;, motsvarar en datauppsättning. Dessa datauppsättningar visas med prefixet&quot;Customer AI Scores&quot;, vilket visas här:
 
 ![CAI-poäng](assets/cai-scores.png)
 
-Varje förutsägelse, som&quot;Sannolikhet att uppgradera konto&quot;, motsvarar en datauppsättning.
+![Skapa anslutning](assets/create-conn.png)
 
 Här är ett exempel på ett XDM-schema som CJA skulle ta med som en del av en befintlig eller ny datamängd:
 
@@ -56,9 +57,28 @@ Här är ett exempel på ett XDM-schema som CJA skulle ta med som en del av en b
 
 I CJA kan du nu fortsätta till [skapa datavyer](/help/data-views/create-dataview.md) med mått (t.ex. poäng, poängdatum, sannolikhet o.s.v.) och mätvärden som infogades som en del av den anslutning du upprättade.
 
+![Skapa datavy](assets/create-dataview.png)
+
 ### Steg 4: Rapport om CAI-poäng i Workspace
 
-Här är ett exempel på ett Workspace-projekt med CAI-data som visar poängdatum i ett staplat stapeldiagram:
+I CJA Workspace kan du nu skapa ett nytt projekt och dra in visualiseringar.
+
+Här är ett exempel på ett Workspace-projekt med CAI-data som trendar benägenhetspoängen för ett användarsegment över tiden, i &#x200B; staplade stapeldiagram:
 
 ![Poängbukar](assets/workspace-scores.png)
 
+Här är en tabell som visar orsakskoder för varför ett segment har hög eller låg &#x200B;:
+
+![Orsakskoder](assets/reason-codes.png)
+
+I det här flödesdiagrammet visas inmatningsflödet för kundens benägenhet jämfört med olika poängserier &#x200B;:
+
+![Inmatningsflöde](assets/flow.png)
+
+I det här stapeldiagrammet visas hur &#x200B; kan fördelas:
+
+![Distribution](assets/distribution.png)
+
+I det här Venedig-diagrammet visas hur benägenheten överlappar olika poäng:
+
+![Propenthypsöverlappningar](assets/venn.png)
