@@ -4,10 +4,10 @@ title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 1ace9fcb67ec6d1460b5209e2987219ecec52ee2
+source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 2%
+source-wordcount: '875'
+ht-degree: 1%
 
 ---
 
@@ -19,14 +19,28 @@ ht-degree: 2%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, är en flerkanalig algoritmisk attribueringstjänst som beräknar påverkan och inkrementell påverkan av kundinteraktioner i förhållande till angivna resultat. Med Attribution AI kan marknadsförarna mäta och optimera marknadsförings- och annonsutgifterna genom att förstå effekten av varje enskild kundinteraktion under varje fas av kundresan.
 
-Attribution AI har stöd för två kategorier av poäng: algoritmisk och regelbaserad. Algoritmiska poäng inkluderar inkrementella och påverkade poäng.
-
-* **Påverkade poäng** dividera 100 % av konverteringskrediten mellan olika marknadsföringskanaler.
-* **Inkrementella poäng** först och främst ta hänsyn till en konverteringsbaslinje som ni skulle ha uppnått även utan marknadsföring. Denna baslinje bygger på AI-observationer av mönster, säsongsvariation och så vidare på grund av den befintliga varumärkesigenkänningen, lojaliteten och munordet. Den återstående krediten delas upp i marknadsföringskanaler.
-
-Regelbaserade poäng inkluderar [!UICONTROL First touch], [!UICONTROL Last touch], [!UICONTROL Linear], [!UICONTROL U-shaped]och [!UICONTROL Time-Decay]. Attribution AI stöder 3 Experience Platform scheman: Experience Event, Adobe Analytics och Consumer Experience Event.
-
 Attribution AI integreras med Customer Journey Analytics (CJA) i den utsträckning som Attribution AI kör modeller mot data och sedan importerar CJA dessa modellers utdata som en datauppsättning, som sedan kan integreras med resten av CJA-datauppsättningarna. Datauppsättningar som har Attribution AI kan sedan utnyttjas i datavyer och rapporter i CJA.
+
+Attribution AI stöder 3 Experience Platform scheman: Experience Event, Adobe Analytics och Consumer Experience Event.
+
+Attribution AI har stöd för två kategorier av poäng: algoritmisk och regelbaserad.
+
+## Algoritmiska poäng
+
+Algoritmiska poäng inkluderar inkrementella och påverkade poäng.
+
+* **[!UICONTROL Influenced]bakgrundsmusik** dividera 100 % av konverteringskrediten mellan olika marknadsföringskanaler.
+* **[!UICONTROL Incremental]bakgrundsmusik** först och främst ta hänsyn till en konverteringsbaslinje som ni skulle ha uppnått även utan marknadsföring. Denna baslinje bygger på AI-observationer av mönster, säsongsvariation och så vidare på grund av den befintliga varumärkesigenkänningen, lojaliteten och munordet. Den återstående krediten delas upp i marknadsföringskanaler.
+
+## Regelbaserade poäng
+
+Regelbaserade poäng inkluderar
+
+* **[!UICONTROL First touch]** ger 100 % uppskattning av den kontaktyta som först visas i attribueringssökningsfönstret.
+* **[!UICONTROL Last touch]** ger 100 % uppskattning av den beröringspunkt som inträffade senast före konverteringen.
+* **[!UICONTROL Linear]** ger samma beröm till alla kontaktytor som leder till konvertering.
+* **[!UICONTROL U-shaped]** ger 40 % beröm för den första interaktionen, 40 % tack för den sista interaktionen och delar de återstående 20 % på eventuella kontaktpunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får båda 50 % rabatt.
+* **[!UICONTROL Time-Decay]** följer en exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2^(-t/halflife)`, där `t` är tiden mellan en kontaktpunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %.
 
 ## Arbetsflöde
 
@@ -60,9 +74,15 @@ Här ser vi ett Workspace-projekt med AAI-data som visar order med påverkad och
 
 ![AAI-projekt](assets/aai-project2.png)
 
+**Marknadsföringsprestanda**
+
+Jämför och kontrastera attribuering mellan olika attribueringsmodeller:
+
+![Jämför](assets/compare.png)
+
 **Kanalinteraktion**
 
-Förstå kanalinteraktion för att se vilken kanal som kan användas mest effektivt med andra kanaler:
+Förstå kanalinteraktion för att se vilken kanal som kan användas mest effektivt med andra kanaler med hjälp av ett Venndiagram:
 
 ![Marknadsföringskanalöverlappning](assets/mc-overlap.png)
 
