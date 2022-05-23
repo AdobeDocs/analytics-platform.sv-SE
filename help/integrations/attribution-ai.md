@@ -4,10 +4,10 @@ title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: acfa4086c525ed78b52e430c110ec1daca9d20a5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '697'
+ht-degree: 2%
 
 ---
 
@@ -52,12 +52,34 @@ I ett CJA Workspace-projekt kan ni hämta mätvärden som&quot;AI-order&quot; oc
 
 ![AAI-dimensioner](assets/aai-dims.png)
 
-Här ser vi ett Workspace-projekt med AAI-data som visar order med påverkad och inkrementell poängsättning.
+Här ser vi ett Workspace-projekt med AAI-data som visar order med påverkad och inkrementell poängsättning. Detaljgranska alla aspekter för att förstå attribuering genom att: kampanj, produktgrupp, användarsegment, geografi och så vidare.
 
 ![AAI-projekt](assets/aai-project.png)
 
 ![AAI-projekt](assets/aai-project2.png)
 
+Förstå kanalinteraktion för att se vilken kanal som kan användas mest effektivt med andra kanaler:
+
+![Marknadsföringskanalöverlappning](assets/mc-overlap.png)
+
+I den här tabellen visas de översta banorna för konvertering (borttagning av dubbletter) som hjälper dig att utforma och optimera kontaktytor:
+
+![De vanligaste kanalerna](assets/top-channels.png)
+
+Här ser vi ledtiden till konvertering när en kontaktyta är i mixen. Det hjälper till att optimera ledtiden:
+
+![Leadtid](assets/lead-time.png)
+
+## Nya CJA-mått
+
+| Mått | Beskrivning |
+| --- | --- |
+| [!UICONTROL Acquisition Rate] | För varje kanal, bland de konverteringsbanor som berördes, är procentandelen av kanalen Starter. |
+| [!UICONTROL Player rate] | För varje kanal, bland de konverteringsbanor den rörde, är procentandelen av kanalen en spelare. |
+| [!UICONTROL Closer rate] | För varje kanal, bland de konverteringsbanor som berördes, är procentandelen av kanalen Closer. |
+| [!UICONTROL AAI AVG Days Away from Order] | För varje kanal, det genomsnittliga antalet dagar sedan ordern. |
+| [!UICONTROL AAI AVG Total Days in Sales Process] | För varje kanal, det genomsnittliga antalet dagar för de konverteringsbanor som berördes. |
+| [!UICONTROL AVG Touches Away From Order] | För varje kanal rör sig genomsnittet från beställningen. |
 
 ## Skillnader mellan Attribution AI och Attribution IQ
 
