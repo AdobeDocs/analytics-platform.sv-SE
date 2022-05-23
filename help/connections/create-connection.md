@@ -4,7 +4,7 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 36fc82cf2c075550ced98193fe50115af12974de
+source-git-commit: ffcffa3838419d49afda7598d81c672b36415260
 workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 2%
@@ -20,6 +20,8 @@ Ett nytt anslutningsarbetsflöde startades nyligen i Customer Journey Analytics 
 * Du kan aktivera och begära data för bakåtfyllnad per datauppsättning.
 * Du kan redigera datauppsättningar, t.ex. för att begära en annan bakgrundsfyllning.
 * Du kan importera befintliga data per datauppsättning.
+
+>[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
 ## Skapa och konfigurera anslutningen {#create-connection}
 
