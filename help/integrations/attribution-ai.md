@@ -4,9 +4,9 @@ title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
+source-git-commit: c37aaa63677fbe2f7a10aaef5aad5b0ad0a607c4
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, är en flerkanalig algoritmisk attribueringstjänst som beräknar påverkan och inkrementell påverkan av kundinteraktioner i förhållande till angivna resultat. Med Attribution AI kan marknadsförarna mäta och optimera marknadsförings- och annonsutgifterna genom att förstå effekten av varje enskild kundinteraktion under varje fas av kundresan.
 
-Attribution AI integreras med Customer Journey Analytics (CJA) i den utsträckning som Attribution AI kör modeller mot data och sedan importerar CJA dessa modellers utdata som en datauppsättning, som sedan kan integreras med resten av CJA-datauppsättningarna. Datauppsättningar som har Attribution AI kan sedan utnyttjas i datavyer och rapporter i CJA.
+Attribution AI kan integreras med Customer Journey Analytics (CJA) i den utsträckning som Attribution AI kör modeller mot kundens kontaktytor för marknadsföring och konverteringsdatakällor. CJA importerar sedan utdata från dessa modeller som en datauppsättning eller kan integreras med resten av dina CJA-datauppsättningar. Datauppsättningar som har Attribution AI kan sedan utnyttjas i datavyer och rapporter i CJA.
 
 Attribution AI stöder 3 Experience Platform scheman: Experience Event, Adobe Analytics och Consumer Experience Event.
 
@@ -66,6 +66,11 @@ I ett CJA Workspace-projekt kan ni hämta mätvärden som&quot;AI-order&quot; oc
 
 ![AAI-dimensioner](assets/aai-dims.png)
 
+>[!IMPORTANT]
+>
+>De här dimensionerna och måtten namnges inte internt på det här sättet. De här är&quot;egna namn&quot;. The [namnkonvention i Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) följer schemasökvägen. Vi rekommenderar att du byter namn på den långa schemasökvägen i AI till korta, användarvänliga namn (mått/mått) i CJA. Du kan göra det i **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Klicka på ett schemafält -> **[!UICONTROL Component name]**.
+
+
 **Order med påverkad och inkrementell poängsättning**
 
 Här ser vi ett Workspace-projekt med AAI-data som visar order med påverkad och inkrementell poängsättning. Detaljgranska alla aspekter för att förstå attribuering genom att: kampanj, produktgrupp, användarsegment, geografi och så vidare.
@@ -98,30 +103,18 @@ Här ser vi ledtiden till konvertering när en kontaktyta är i mixen. Det hjäl
 
 ![Leadtid](assets/lead-time.png)
 
-## Nya CJA-mått
-
-| Mått | Beskrivning |
-| --- | --- |
-| [!UICONTROL Acquisition Rate] | För varje kanal, bland de konverteringsbanor som berördes, är procentandelen av kanalen Starter. |
-| [!UICONTROL Player rate] | För varje kanal, bland de konverteringsbanor den rörde, är procentandelen av kanalen en spelare. |
-| [!UICONTROL Closer rate] | För varje kanal, bland de konverteringsbanor som berördes, är procentandelen av kanalen Closer. |
-| [!UICONTROL AAI AVG Days Away from Order] | För varje kanal, det genomsnittliga antalet dagar sedan ordern. |
-| [!UICONTROL AAI AVG Total Days in Sales Process] | För varje kanal, det genomsnittliga antalet dagar för de konverteringsbanor som berördes. |
-| [!UICONTROL AVG Touches Away From Order] | För varje kanal rör sig genomsnittet från beställningen. |
-
-{style=&quot;table-layout:auto&quot;}
-
 ## Skillnader mellan Attribution AI och Attribution IQ
 
 Så när bör ni använda Attribution AI data jämfört med [Attribution IQ](/help/analysis-workspace/attribution/overview.md), en inbyggd CJA-funktion? I den här tabellen visas några av skillnaderna i funktionalitet:
 
 | Funktionalitet | Attribution AI | Attribution IQ |
 | --- | --- | --- |
-| Delar attribuering | Ja | Nej |
+| Stegvis attribuering | Ja | Nej |
 | Tillåter användare att justera modellen | Ja | Ja |
 | Ger attribuering över flera kanaler (Obs! AAI använder inte samma sammanslagna data som CJA gör.) | Ja | Ja |
-| Inkluderar inkrementella och påverkade poäng | Ja | Nej |
+| Inkluderar påverkade poäng | Ja | Ja |
 | Gör HTML-modellering | Ja | Ja |
-| Gör HTML-modellering med prognoser | Ja | Nej |
+| Regionsbaserade attribueringsmodeller | Ja | Ja |
+| Kan inkludera kontaktytor för marknadsföring i modellen | Ja | Nej |
 
 {style=&quot;table-layout:auto&quot;}
