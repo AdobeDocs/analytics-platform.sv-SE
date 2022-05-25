@@ -4,18 +4,14 @@ title: Integrera kundens AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
 
 # Integrera kundens AI med CJA
-
->[!NOTE]
->
->Den här funktionen kommer att släppas den 25 maj 2022.
 
 [Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
 
@@ -41,7 +37,11 @@ När du har förberett dina data och har alla dina autentiseringsuppgifter och s
 
 ### Steg 2: Konfigurera en CJA-anslutning till kundens AI-datauppsättningar
 
-I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för kundens AI. Varje förutsägelse, som&quot;Sannolikhet att uppgradera konto&quot;, motsvarar en datauppsättning. Dessa datauppsättningar visas med prefixet&quot;Customer AI Scores&quot;, vilket visas här:
+I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för kundens AI. Varje förutsägelse, som&quot;Sannolikhet att uppgradera konto&quot;, motsvarar en datauppsättning. Dessa datauppsättningar visas med prefixet&quot;Customer AI Scores in EE Format - name_of_application&quot;.
+
+>[!IMPORTANT]
+>
+>Varje kund-AI-instans har två utdatamängder om växlingsknappen är aktiverad för att aktivera poäng för CJA under konfigurationen i steg 1. En utdatamängd visas i profilens XDM-format och en i Experience Event XDM-format.
 
 ![CAI-poäng](assets/cai-scores.png)
 

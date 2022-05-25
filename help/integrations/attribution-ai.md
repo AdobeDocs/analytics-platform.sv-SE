@@ -4,18 +4,14 @@ title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: c37aaa63677fbe2f7a10aaef5aad5b0ad0a607c4
+source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '849'
 ht-degree: 1%
 
 ---
 
 # Integrera Attribution AI med CJA
-
->[!NOTE]
->
->Den här funktionen kommer att släppas den 25 maj 2022.
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, är en flerkanalig algoritmisk attribueringstjänst som beräknar påverkan och inkrementell påverkan av kundinteraktioner i förhållande till angivna resultat. Med Attribution AI kan marknadsförarna mäta och optimera marknadsförings- och annonsutgifterna genom att förstå effekten av varje enskild kundinteraktion under varje fas av kundresan.
 
@@ -115,6 +111,6 @@ Så när bör ni använda Attribution AI data jämfört med [Attribution IQ](/he
 | Inkluderar påverkade poäng | Ja | Ja |
 | Gör HTML-modellering | Ja | Ja |
 | Regionsbaserade attribueringsmodeller | Ja | Ja |
-| Kan inkludera kontaktytor för marknadsföring i modellen | Ja | Nej |
+| Kan konfigurera kontaktytor för marknadsföring i modellen | Ja | Nej |
 
 {style=&quot;table-layout:auto&quot;}
