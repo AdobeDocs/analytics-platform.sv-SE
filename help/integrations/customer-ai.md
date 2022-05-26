@@ -4,9 +4,9 @@ title: Integrera kundens AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 Med hjälp av inflytelserika faktorer kan kundens AI tala om för er vad en kund kan tänkas göra och varför. Dessutom kan marknadsförarna dra nytta av kundernas AI-prognoser och insikter för att personalisera kundupplevelser genom att leverera de lämpligaste erbjudandena och budskapen.
 
-Kundens AI bygger på individuella beteendedata och profildata för benägenhetsbedömning. Kundens AI är flexibelt eftersom det kan användas i flera datakällor, bland annat Adobe Analytics, Adobe Audience Manager, data för kundupplevelsehändelser och händelsedata för upplevelser. Om du använder AEP-dataanslutningen för att hämta data från Adobe Audience Manager och Adobe Analytics hämtar modellen automatiskt standardhändelsetyperna för att utbilda och poängsätta modellen. Om du tar med din egen Experience Event-datauppsättning utan standardhändelsetyper måste alla relevanta fält mappas som anpassade händelser eller profilattribut om du vill använda dem i modellen. Detta kan göras i kundens AI-konfigurationssteg. &#x200B;
+Kundens AI bygger på individuella beteendedata och profildata för benägenhetsbedömning. Kundens AI är flexibelt eftersom det kan användas i flera datakällor, bland annat Adobe Analytics, Adobe Audience Manager, data för kundupplevelsehändelser och händelsedata för upplevelser. Om du använder källkopplingen för Experience Platform för att hämta in Adobe Audience Manager- och Adobe Analytics-data, hämtar modellen automatiskt standardhändelsetyperna för att utbilda och poängsätta modellen. Om du tar med din egen Experience Event-datauppsättning utan standardhändelsetyper måste alla relevanta fält mappas som anpassade händelser eller profilattribut om du vill använda dem i modellen. Detta kan göras i kundens AI-konfigurationssteg i Experience Platform. &#x200B;
 
 Kundens AI integreras med Customer Journey Analytics (CJA) i den utsträckning som kundens AI-aktiverade datauppsättningar kan utnyttjas i datavyer och rapportering i CJA. Med den här integreringen kan du
 
 * **Spåra benägenhetspoäng för ett användarsegment över tid**. Exempel: Hur stor är sannolikheten att en hotellkund köper en showbiljett på hotellets konsertplats?
 * **Analysera vilka lyckade händelser eller attribut som är kopplade till benägenhetspoängen**. &#x200B;Exempel: Jag vill förstå attributen eller framgångshändelserna i samband med benägenhetspoängen.
 * **Följ anmälningsflödet för kundbenägenhet över olika poängsättningsrundor**. Exempel: Jag skulle vilja förstå personer som till en början var användare med låg benägenhet, och som senare blev användare med stor benägenhet. &#x200B;
-* **Titta på hur benägenheten är fördelad**. Användningsfall: Jag skulle vilja förstå hur de benägna poängen är fördelade på mig så att jag kan vara mer exakt med mina segment. &#x200B;Exempel: en återförsäljare vill göra en viss kampanj för 50 dollar i en produkt.  De kanske bara vill göra en mycket begränsad befordran på grund av budgeten, osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer &#x200B; kunderna.
+* **Titta på hur benägenheten är fördelad**. Användningsfall: Jag skulle vilja förstå hur de benägna poängen är fördelade på mig så att jag kan vara mer exakt med mina segment. &#x200B;Exempel: en återförsäljare vill göra en viss kampanj för 50 dollar i en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer &#x200B; kunderna.
 * **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**. Användningsfall: Jag skulle vilja följa upp en viss kohort över tiden. Detta liknar det första, men du kan spåra en viss kohort över tiden. &#x200B; Exempel på hotell: En marknadsförare kan spåra sin bronsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå över tiden. Då ser de varje kohorts benägenhet att boka hotellet över tiden. &#x200B;
 
 ## Arbetsflöde
@@ -33,7 +33,7 @@ Vissa av stegen utförs i Adobe Experience Platform innan du arbetar med utdata 
 
 ### Steg 1: Konfigurera en AI-instans för kund
 
-När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa följande [Konfigurera en AI-instans för kund](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) guide.
+När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa följande [Konfigurera en AI-instans för kund](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) i Adobe Experience Platform.
 
 ### Steg 2: Konfigurera en CJA-anslutning till kundens AI-datauppsättningar
 
