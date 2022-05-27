@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7bd111c67f49fc56f93039269d9c1714bece311b
+source-git-commit: 17e89d7cfeddff831e34fc441ee17de8b1c3fe21
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 6%
 
 ---
@@ -18,8 +18,8 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Datum | Uppdatera beskrivning |
 | --- | --- |
 | Maj 2022 | Avsevärt uppdaterad artikel om [skapa anslutningar](/help/connections/create-connection.md) i CJA. |
-| Maj 2022 | Ny artikel på [integrera CJA med Attribution AI](/help/integrations/attribution-ai.md) i Adobe Experience Platform. |
-| Maj 2022 | Ny artikel på [integrera CJA med kundens AI i Adobe Experience Platform](/help/integrations/customer-ai.md). |
+| Maj 2022 | Ny artikel om hur du integrerar CJA med Attribution AI (länk som följer) i Adobe Experience Platform. |
+| Maj 2022 | Ny artikel om att integrera CJA med kundens AI i Adobe Experience Platform (länk). |
 | Maj 2022 | Ny artikel om hur man [hantera datablock i CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
 | Maj 2022 | Ny artikel på [Inhämta Adobe Experience Platform-målgrupper till CJA](/help/use-cases/ingest-aep-segments.md) |
 | April 2022 | Dokumentation på [dimensionsdelsträngar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
