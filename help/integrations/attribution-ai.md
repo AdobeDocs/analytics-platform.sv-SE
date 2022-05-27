@@ -4,9 +4,9 @@ title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
+source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -46,15 +46,27 @@ Vissa av stegen utförs i Adobe Experience Platform innan du arbetar med utdata 
 
 I Experience Platform skapar du en Attribution AI-instans genom att markera och mappa data, definiera händelser och utbilda data enligt beskrivningen [här](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
+![AAI-instans](assets/aai-instance.png)
+
 ### Steg 2: Konfigurera en CJA-anslutning till Attribution AI-datauppsättningar
 
 I CJA kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för Attribution AI. Dessa datauppsättningar visas med prefixet &quot;Attribution AI Scores&quot;, vilket visas här:
 
 ![AAI-poäng](assets/aai-scores.png)
 
+![Skapa anslutning](assets/aai-create-connection.png)
+
 ### Steg 3: Skapa datavyer baserade på dessa anslutningar
 
 I CJA [skapa en eller flera datavyer](/help/data-views/create-dataview.md) som innehåller Attribution AI-XDM-fält.
+
+Här är XDM-schemafälten för kontaktytor:
+
+![XDM-fält för pekpunkter](assets/touchpoint-fields.png)
+
+Här är XDM-schemafälten för konvertering:
+
+![Konvertera XDM-fält](assets/conversion-fields.png)
 
 ### Steg 4: Rapport om AAI-data på CJA-arbetsytan
 
@@ -66,6 +78,7 @@ I ett CJA Workspace-projekt kan ni hämta mätvärden som&quot;AI-order&quot; oc
 >
 >De här dimensionerna och måtten namnges inte internt på det här sättet. De här är&quot;egna namn&quot;. The [namnkonvention i Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) följer schemasökvägen. Vi rekommenderar att du byter namn på den långa AI-schemasökvägen till korta, användarvänliga namn (mått/mått) i CJA. Du kan göra det i **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Klicka på ett schemafält -> **[!UICONTROL Component name]**.
 
+![Ändra dimensionsnamn](assets/change-name.png)
 
 **Order med påverkad och inkrementell poängsättning**
 
