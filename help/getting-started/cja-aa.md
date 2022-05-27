@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
+source-git-commit: 146c8b9b4918c753391484dc1267e1cb90380525
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1301'
 ht-degree: 4%
 
 ---
@@ -37,6 +37,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Marknadsförande eVars | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) (januari 2022) |
 | Mätvärden | Fullt stöd; CJA utnyttjar Experience Data Model (XDM) och stöder obegränsade mätvärden och är inte knutet till anpassade framgångshändelser i traditionell Analytics. Observera att vissa standardvärden har bytt namn från traditionell analys: Besökare = människor, besök = sessioner, träffar = händelser. |
 | Metrisk deduplicering | Fullt stöd |
+| Mobile Scorecard/Dashboards | Fullt stöd |
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. |
 | PDF Export | Fullt stöd |
 | Projekturval | Fullt stöd |
