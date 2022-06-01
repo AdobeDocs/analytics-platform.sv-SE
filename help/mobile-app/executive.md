@@ -5,16 +5,18 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
 
 # Snabbguide för chefsanvändare
 
-Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics dashboards. En video som visar den här informationen finns på [Adobe Analytics Dashboards In-App Experience](https://youtu.be/QXqQ_PkArbA).
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics dashboards. Här är en video som visar den här informationen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
 Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort på kontrollpaneler i Analytics. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
 
@@ -100,7 +102,7 @@ Så här använder du kontrollpaneler:
 
    * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
-   * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad**, eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger precis före det. Tryck på ett av dessa två alternativ för att markera det första intervallet. Under **[!UICONTROL COMPARE TO]** klickar du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervall som du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. The **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
+   * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad**, eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger precis före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under **[!UICONTROL COMPARE TO]** klickar du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervall som du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. The **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
 1. Om du vill använda ett segmentfilter på styrkortet trycker du på filterlistrutan och väljer ett segment som har konfigurerats av markören. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Analytics Workspace.
 

@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
+source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Följande information beskriver för chefer av Adobe Analytics-data hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Börja med att titta på videon Adobe Analytics dashboards Scorecard Builder:
 
->[!VIDEO](https://video.tv.adobe.com/v/34544)
+>[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
 >Styrkortsskärmbilder för den här sidan har tagits från Adobe Analytics-gränssnittet, inte från CJA. Gränssnitten är nästan identiska.
