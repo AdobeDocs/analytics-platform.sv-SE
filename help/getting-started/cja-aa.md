@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ab60cb09e4578be0fda642a3669af7e4c796fd52
+source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1418'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Datumjämförelser | Fullt stöd |
 | Datumintervall | Alla funktioner för datumintervall stöds. |
 | Besparingstid för dagsljus | Fullt stöd |
-| Enhet, webbläsare, referens, teknikdimensioner | Dessa dimensioner inkluderas automatiskt när en AEP-datauppsättning innehåller specifika XDM-schemafält och följer XDM Experience Event-klassen. Se våra [dokumentation om vilka analysvariabler som stöds via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). För CJA-kunder som inte använder ADC för att fylla i data från Adobe Analytics till CJA, men i stället använder AEP Web SDK-datainsamling, stöds för närvarande inte enhet och dimensioner baserade på enhetssökning, men kommer inom den närmaste framtiden. |
+| Enhet, webbläsare, referens, teknikdimensioner | Dessa dimensioner inkluderas automatiskt när en AEP-datauppsättning innehåller specifika XDM-schemafält och följer XDM Experience Event-klassen. Se våra [dokumentation om vilka analysvariabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>Om du inte använder Adobe Source Connector för att fylla i data från Adobe Analytics till CJA, utan i stället använder du Experience Platform Web SDK-datainsamling, stöds för närvarande inte enheter och dimensioner baserade på enhetssökningen. De kommer att stödjas inom den närmaste framtiden. |
 | Mått | Fullt stöd; CJA utnyttjar XDM och har stöd för obegränsade dimensioner. CJA är inte knutet till de anpassade eVars- eller propparna hos traditionella Adobe Analytics. |
 | Borttagning av GDPR | Fullt stöd; Observera att GDPR nu hanteras i samordning med [!UICONTROL Adobe Experience Platform]. CJA ärver alla dataändringar [!UICONTROL Experience Platform] till underliggande datamängder. |
 | Lista variabler/listutkast | Fullt stöd; CJA utnyttjar XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
@@ -52,6 +52,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Virtual Report Suites | Fullt stöd; Har anropats [Datavyer](/help/data-views/create-dataview.md). |
 | VRS-komponenturval | Fullt stöd; Nu en del av datavyer. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Stöds med caveats
 
 | Funktion | Anteckningar |
@@ -69,14 +71,18 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Projektdelning | Projektdelning stöds endast mellan CJA-användare - det finns ingen projektdelning mellan CJA och det traditionella Analysis Workspace. |
 | Visualiseringar | Alla visualiseringar stöds förutom för kartvisualisering. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Delvis stöd
 
 | Funktion | Anteckningar |
 | --- | --- |
 | Punktfiltrering | För [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
-| Medieanalys | Mediedata är tillgängliga som en del av Analytics Source Connector. |
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Panelerna Segmentjämförelse, Analytics for Target (A4T) och Media Concurrent Viewer stöds inte. |
 | Bearbetningsregler | För datauppsättningar baserade på Analytics Data Connector tillämpas fortfarande bearbetningsregler. [Prestandafunktioner för data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) kan också användas som ersättning för bearbetningsregler för data som går direkt till plattformen. |
+| Streaming Media Analytics | Mediedata är tillgängliga som en del av [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Stöds inte just nu, men är planerad
 
@@ -94,6 +100,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Segmentpublicering (skickar segment från Workspace till Experience Cloud) | Support planeras. Kallas &quot;Audience Publishing&quot; i CJA. |
 | Ny eller upprepad sessionsrapportering | Support planeras med några kavaetter. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Stöd ännu inte planerat
 
 | Funktion | Anteckningar |
@@ -104,6 +112,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Datafeeds | Support är ännu inte planerat. |
 | Sammanfattningsdatakällor | Support är ännu inte planerat. |
 | Datakällor för transaktions-ID | Support är ännu inte planerat. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Stöds aldrig
 
