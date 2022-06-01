@@ -4,16 +4,16 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 322961b416deb049010d9e4e3f2301300a116ee4
+source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 2%
+source-wordcount: '2233'
+ht-degree: 1%
 
 ---
 
 # Skapa en anslutning
 
-Ett nytt anslutningsarbetsflöde startades nyligen i Customer Journey Analytics (CJA). Här är en översikt över de nya funktionerna:
+Ett nytt anslutningsarbetsflöde startades nyligen i Customer Journey Analytics (CJA). Det nya arbetsflödet för att skapa och redigera anslutningar gör att alla konfigurationsinställningar för datauppsättningar och anslutningar hamnar mitt på skärmen med hjälp av arbetsflöden.  Vi tillhandahöll detaljerad datamängdsmarkering, konfiguration och granskningsupplevelse med viktig information som datamängdtyp, storlek, schema, dataset-ID, batchstatus, bakåtfyllnadsstatus, person-ID och mycket annat för att minska risken för fel anslutningskonfiguration. Här är en översikt över de nya funktionerna:
 
 * Du kan aktivera ett rullande datalagringsfönster när du skapar anslutningen.
 * Du kan lägga till och ta bort datauppsättningar från en anslutning. (Om du tar bort en datauppsättning tas den bort från anslutningen och påverkar associerade datavyer och underliggande Analysis Workspace-projekt.)
@@ -47,7 +47,7 @@ Ett nytt anslutningsarbetsflöde startades nyligen i Customer Journey Analytics 
    | **[!UICONTROL Key]** | Endast för uppslagsdatauppsättningar (till exempel _id). |
    | **[!UICONTROL Matching Key]** | Endast för uppslagsdatauppsättningar (till exempel _id). |
    | **[!UICONTROL Import new data]** | Ange till På eller Av. |
-   | **[!UICONTROL Backfill data]** |  |
+   | **[!UICONTROL Backfill data]** | Du kan begära att få fylla i data i en datauppsättning baklänges baserat på tidsstämplar för händelsen. Du kan till exempel begära att de senaste 7 dagarnas data ska fyllas i igen, konfigurera rätt person-ID och testa anslutningen för korrekt konfiguration. Om allt ser bra ut kan du enkelt fylla i alla återstående data.<p>Dessutom kan du aktivera import av nya data per datauppsättning. Du kan t.ex. aktivera import av nya data endast för sökdata. |
    | **[!UICONTROL Backfill status]** | Anger om några data för bakgrundsfyllning bearbetas. |
 
    {style=&quot;table-layout:auto&quot;}
@@ -77,7 +77,7 @@ Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Pl
    | **[!UICONTROL Schema]** | Detta är schemat som baserar sig på vilket datauppsättningen skapades i Adobe Experience Platform. |
    | **[!UICONTROL Dataset]** | Datauppsättningens namn. |
    | **[!UICONTROL Preview]**: `<dataset name>` | Förhandsgranskar datauppsättningen med kolumnerna date, my ID och Identifier. |
-   | **[!UICONTROL Remove]** | Ta bort den här datauppsättningen från anslutningen. |
+   | **[!UICONTROL Remove]** | Du kan ta bort eller ta bort datauppsättningen och ändra person-ID utan att ta bort hela anslutningen. Detta minskar kostnaderna för datainmatning och den krångliga processen att återskapa hela anslutningen och tillhörande datavyer. |
 
    {style=&quot;table-layout:auto&quot;}
 
