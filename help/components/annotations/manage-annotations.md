@@ -4,9 +4,9 @@ description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
+source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,8 @@ The [!UICONTROL Annotations] -hanteraren visar alla anteckningar du äger som ha
 | [!UICONTROL Applied Date Range] | Det datum eller datumintervall som den här anteckningen gäller för. |
 | [!UICONTROL Shared with] | Visar hur många personer eller grupper som du har delat anteckningen med. Klicka för mer information. |
 | [!UICONTROL Date Modified] | Visar datum och tid då anteckningen senast ändrades. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Redigera anteckningar
 
@@ -75,3 +77,5 @@ Välj bara en eller flera av anteckningarna så visas Aktivitetsfältet.
 | Kopiera | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |
 | Exportera till CSV | Exportera anteckningsdefinitionen till en CSV-fil. |
 | Filter (vänster remsa) | Filtrera efter taggar, rapportsvit, ägare och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
+
+{style=&quot;table-layout:auto&quot;}
