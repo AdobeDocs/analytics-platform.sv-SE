@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: c33176b695d5ea3417ff17fe3140589d803472ae
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -76,9 +76,9 @@ Du kan inte dela eller publicera ännu [!UICONTROL filters] ([!UICONTROL segment
 
 Förutom segmentändringen uppdateras även segmentbehållarna.
 
-* **Träffbehållare är nu Event-behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
-* **Besöksbehållare är nu &#39;Sessionsbehållare&#39;**. The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session.
-* **Besöksbehållare är nu [!UICONTROL Person] behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen.
+* **Träffbehållare är nu [!UICONTROL Event] behållare**. The [!UICONTROL Event] kan du dela upp besökarinformation baserat på enskilda sidvisningar/träffar.
+* **Besöksbehållare finns nu [!UICONTROL Session] behållare**. The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session.
+* **Besöksbehållare är nu [!UICONTROL Person] behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för en besökare inom den angivna tidsramen.
 
 ## Förändringar av begreppet beräknade mätvärden
 
