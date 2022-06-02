@@ -2,7 +2,7 @@
 title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: b907e62bfabd8cb42dc89d551d7b5285cb61298e
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
@@ -41,10 +41,10 @@ Du kan välja att göra dessa filter offentliga (globala) genom att följa dessa
 Det finns flera andra metoder för att tillämpa filter på ett projekt:
 
 | Åtgärd | Beskrivning |
-|--- |--- |
+| --- | --- |
 | Skapa filter från markering | Skapa ett textbundet filter. Det här filtret gäller bara för det öppna projektet och sparas inte som ett CJA-filter.<p> 1. Markera vilka tabellrader som du vill ska ingå i filtret.  2. Högerklicka på markeringen.  3. Klicka *Skapa filter från markering*. |
-| Komponenter > Nytt filter | Visar Filter Builder. Se [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) för mer information om filtrering. |
+| Arbetsyta [!UICONTROL Components] > [!UICONTROL New Filter] | Visar Filter Builder. Se [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) för mer information om filtrering. |
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)Läs om hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
-| Använd filter som dimensioner | Video: Använda filter som Dimensioner i Analysis Workspace |
+| Använd filter som dimensioner | Se videon nedan: Använda filter som Dimensioner i Analysis Workspace |
 
 >[!VIDEO](https://video.tv.adobe.com/v/23974)

@@ -1,9 +1,9 @@
 ---
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Att publicera målgrupper är ett tydligt sätt att vidta åtgärder för insikt
 * Skicka e-post till den här målgruppen.
 * Skicka push-meddelanden till den här målgruppen.
 * Använda publiken för en resa i Adobe Journey Optimizer.
-* Exportera målgruppen till en tredje part via ett AEP-mål
+* Exportera målgruppen till en tredje part via ett Experience Platform-mål.
 
 ## Viktiga termer
 
@@ -34,5 +34,7 @@ Administratörer får automatiskt [!UICONTROL Audience Publishing] behörighet i
 
 ## Nästa steg
 
+* [Skapa och publicera målgrupper](/help/components/audiences/publish.md)
+* [Hantera målgrupper](/help/components/audiences/manage.md)
 
 
