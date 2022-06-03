@@ -1,15 +1,19 @@
 ---
 title: Hantera målgrupper skapade i Customer Journey Analytics
 description: Lär dig hantera målgrupper i Customer Journey Analytics
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '254'
 ht-degree: 1%
 
 ---
 
 
 # Hantera målgrupper skapade i Customer Journey Analytics
+
+>[!NOTE]
+>
+>Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
 Genom att hantera tidigare skapade målgrupper kan ni
 
