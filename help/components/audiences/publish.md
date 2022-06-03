@@ -1,9 +1,9 @@
 ---
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
-I det här avsnittet beskrivs hur du publicerar målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
+I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
 
 Läs det här [översikt](/help/components/audiences/audiences-overview.md) för att bekanta dig med konceptet CJA-målgrupper.
 
@@ -47,7 +47,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max. är 90 dagar. |
    | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
    | [!UICONTROL Filter] | Filter är huvudindata för publiken. Du kan lägga till upp till 20 filter. Dessa filter kan kombineras med `And` eller `Or` operatorer. |
-   | [!UICONTROL View sample IDs] | Ett exempel på ID:n i den här målgruppen. Använd sökfältet för att söka efter exempel-ID:n.<p>!![](assets/sample-ids.png |
+   | [!UICONTROL View sample IDs] | Ett exempel på ID:n i den här målgruppen. Använd sökfältet för att söka efter exempel-ID:n. |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -72,7 +72,23 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 1. Om allt ser bra ut klickar du **[!UICONTROL Publish]**.
 
+   Om allt gick bra får du ett bekräftelsemeddelande om att publiken publicerades.
+
+1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande och du kommer till segmentgränssnittet i Adobe Experience Platform. Mer information finns nedan.
+
+## Använda CJA-målgrupper i Experience Platform
+
+Du kan visa CJA-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
+
+Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
+
+![](assets/audiences-aep.png)
+
+Om du väljer att exportera denna målgrupp till AEP Data Lake, visas den som en datauppsättning som överensstämmer med XDM Individual Profile Schema Class:
+
+![](assets/aep-datalake.png)
+
+
 ## Nästa steg
 
 * Om du vill hantera den här målgruppen går du till [Hanteringsgränssnitt](/help/components/audiences/manage.md).
-* Om du vill arbeta med den här målgruppen i Adobe Experience Platform går du hit.

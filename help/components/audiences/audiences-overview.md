@@ -1,10 +1,10 @@
 ---
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
-source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
+source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
-Nu kan du publicera målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering. Med kundprofilen i realtid kan ni se en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion.
+Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering. Med kundprofilen i realtid kan ni se en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion.
 
 Att publicera målgrupper är ett tydligt sätt att vidta åtgärder för insikter som hittas i CJA. Dessa åtgärder kan omfatta:
 
