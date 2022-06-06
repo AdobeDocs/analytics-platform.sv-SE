@@ -1,13 +1,13 @@
 ---
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
-source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
+exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
+source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
-
 
 # Skapa och publicera målgrupper
 
@@ -65,18 +65,20 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Estimated audience return] | Den här inställningen är användbar för återmarknadsföring av kunder i den här målgruppen som kommer tillbaka till er webbplats. (Med andra ord, som visas i den här datauppsättningen igen.) <p>Här kan du välja tidsram (nästa 7 dag, nästa 2 veckor, nästa månad) för det uppskattade antalet kunder som kan komma att returnera. |
    | [!UICONTROL Estimated to return] | Numret ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde i listrutan. Vi tittar på den historiska bortfallsfrekvensen för den här publiken för att förutse detta antal. |
    | [!UICONTROL Preview metrics] | Med den här inställningen kan du titta på specifika mätvärden för att se om den här målgruppen bidrar med ett oproportionerligt belopp till det här mätvärdet, till exempel &#39;[!UICONTROL Revenue]&#39; eller &#39;[!UICONTROL Average time on site]&#39;. Det ger dig det sammanlagda antalet mätvärden, liksom procentandelen av det totala antalet. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
-   | Namnutrymmen ingår | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
-   | Sandbox | Sandlådan Experience Platform som den här publiken bor i. När du publicerar den här målgruppen på Platform kan du bara arbeta med den inom gränserna för den här sandlådan. |
+   | [!UICONTROL Namespaces included] | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
+   | [!UICONTROL Sandbox] | The [Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) där den här publiken bor. När du publicerar den här målgruppen på Platform kan du bara arbeta med den inom gränserna för den här sandlådan. |
 
    {style=&quot;table-layout:auto&quot;}
 
-1. Om allt ser bra ut klickar du **[!UICONTROL Publish]**.
+1. Kontrollera målgruppskonfigurationen och klicka **[!UICONTROL Publish]**.
 
    Om allt gick bra får du ett bekräftelsemeddelande om att publiken publicerades.
 
-1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande och du kommer till segmentgränssnittet i Adobe Experience Platform. Mer information finns nedan.
+1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande kommer du till [Segmentgränssnitt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) i Adobe Experience Platform. Mer information finns nedan.
 
 ## Använda CJA-målgrupper i Experience Platform
+
+CJA använder nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid. RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. Om den hittar ett kommer namnutrymmet och ID att läggas till i de andra ID:na i den här profilen som ett segmentmedlemsattribut. Nu kan t.ex.&quot;user@adobe.com&quot; användas på alla hans enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Du kan visa CJA-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
