@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 1. Kontrollera målgruppskonfigurationen och klicka **[!UICONTROL Publish]**.
 
-   Om allt gick bra får du ett bekräftelsemeddelande om att publiken publicerades.
+   Om allt gick bra får du ett bekräftelsemeddelande om att publiken publicerades. Det tar bara några minuter för publiken att dyka upp i Experience Platform. (Även för målgrupper med miljontals medlemmar bör det ta mindre än fem minuter.)
 
 1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande kommer du till [Segmentgränssnitt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) i Adobe Experience Platform. Mer information finns nedan.
 
 ## Använda CJA-målgrupper i Experience Platform
 
-CJA använder nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid. RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. Om den hittar ett kommer namnutrymmet och ID att läggas till i de andra ID:na i den här profilen som ett segmentmedlemsattribut. Nu kan t.ex.&quot;user@adobe.com&quot; användas på alla hans enheter och kanaler. Om ingen profil hittas skapas en ny.
+CJA tar nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan t.ex.&quot;user@adobe.com&quot; användas på alla hans enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Du kan visa CJA-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 

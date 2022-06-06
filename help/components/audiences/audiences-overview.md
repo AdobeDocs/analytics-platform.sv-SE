@@ -1,13 +1,13 @@
 ---
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
-
 
 # CJA Audience publishing - översikt
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 >
 >Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
-Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering. Med kundprofilen i realtid kan ni se en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion.
+Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) i Adobe Experience Platform för kundanpassning och personalisering. Med kundprofilen i realtid kan ni se en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Med hjälp av profilen kan ni sammanställa kunddata i en enhetlig vy som ger ett användbart, tidsstämplat konto för varje kundinteraktion.
 
 Att publicera målgrupper är ett tydligt sätt att vidta åtgärder för insikter som hittas i CJA. Dessa åtgärder kan omfatta:
 
@@ -23,6 +23,7 @@ Att publicera målgrupper är ett tydligt sätt att vidta åtgärder för insikt
 * Skicka push-meddelanden till den här målgruppen.
 * Använda publiken för en resa i Adobe Journey Optimizer.
 * Exportera målgruppen till en tredje part via ett Experience Platform-mål.
+* Förbättra kundprofilen i realtid med användbara attribut som härletts från händelsebaserade data i CJA, utan att behöva lägga till alla händelsedata till RTCP.
 
 ## Viktiga termer
 
@@ -40,5 +41,3 @@ Administratörer får automatiskt [!UICONTROL Audience Publishing] behörighet i
 
 * [Skapa och publicera målgrupper](/help/components/audiences/publish.md)
 * [Hantera målgrupper](/help/components/audiences/manage.md)
-
-
