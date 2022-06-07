@@ -1,13 +1,13 @@
 ---
 title: Hantera målgrupper skapade i Customer Journey Analytics
 description: Lär dig hantera målgrupper i Customer Journey Analytics
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
+source-git-commit: 71f13c4f7d8ad5682ae0974bca9a0e8fc90acfe4
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
-
 
 # Hantera målgrupper skapade i Customer Journey Analytics
 
@@ -25,8 +25,6 @@ Genom att hantera tidigare skapade målgrupper kan ni
 
 ## Hanteringsgränssnitt
 
-skärmbild
-
 | Användargränssnittsinställning | Definition |
 | --- | --- |
 | Dölj/visa filter | Här kan du visa eller dölja följande filter i den vänstra listen: <ul><li>Datavy</li><li>Ägare</li><li>Uppdateringsfrekvens</li><li>Taggar</li></ul> |
@@ -40,4 +38,3 @@ skärmbild
 | [!UICONTROL Last Modified] | När målgruppen senast redigerades eller ändrades. |
 
 {style=&quot;table-layout:auto&quot;}
-
