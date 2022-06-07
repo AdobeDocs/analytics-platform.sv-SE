@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
+source-git-commit: abeefebafb9ac246ab6a0c18b5554370a6776b38
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
-I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
+I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
 
 Läs det här [översikt](/help/components/audiences/audiences-overview.md) för att bekanta dig med konceptet CJA-målgrupper.
 
@@ -42,9 +42,9 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Name] | Publiken. |
    | [!UICONTROL Tags] | Alla taggar som du vill ska tilldelas till målgruppen för organisatoriska ändamål. Du kan använda en befintlig tagg eller ange en ny. |
    | [!UICONTROL Description] | Lägg till en bra beskrivning av målgruppen för att skilja den från andra. |
-   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en engångskarp målgrupp (standard) som inte behöver uppdateras, vilket kan vara praktiskt för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmarsfrekvensen finns det en gräns på 150 målgrupper, eftersom den här uppdateringsfrekvensen är mycket bearbetningsintensiv. För andra intervall finns det inget högsta antal målgrupper.</li></ul> |
+   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmarsfrekvensen finns det en gräns på 150 målgrupper, eftersom den här uppdateringsfrekvensen är mycket bearbetningsintensiv. För andra intervall finns det inget högsta antal målgrupper.</li></ul> |
    | Utgångsdatum | När publiken slutar uppdatera. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan målgruppen förfaller. |
-   | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max. är 90 dagar. |
+   | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max 90 dagar. |
    | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
    | [!UICONTROL Filter] | Filter är huvudindata för publiken. Du kan lägga till upp till 20 filter. Dessa filter kan kombineras med `And` eller `Or` operatorer. |
    | [!UICONTROL View sample IDs] | Ett exempel på ID:n i den här målgruppen. Använd sökfältet för att söka efter exempel-ID:n. |
@@ -53,7 +53,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 1. Tolka förhandsgranskningen av data.
 
-   Publiken förhandsvisas i den högra listen. Det möjliggör avancerad analys av den målgrupp ni har skapat.
+   Publiken förhandsvisas i den högra listen. Här kan ni göra en sammanfattande analys av den målgrupp ni har skapat.
 
    ![](assets/data-preview.png)
 
@@ -78,7 +78,8 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 ## Använda CJA-målgrupper i Experience Platform
 
-CJA tar nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan t.ex.&quot;user@adobe.com&quot; användas på alla hans enheter och kanaler. Om ingen profil hittas skapas en ny.
+
+CJA tar nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan till exempel&quot;user@adobe.com&quot; användas på alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Du kan visa CJA-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
