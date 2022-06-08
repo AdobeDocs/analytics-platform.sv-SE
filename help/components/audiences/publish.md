@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: abeefebafb9ac246ab6a0c18b5554370a6776b38
+source-git-commit: 0108b07fd4fac33d026b8832931ffa3018b298e0
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Name] | Publiken. |
    | [!UICONTROL Tags] | Alla taggar som du vill ska tilldelas till målgruppen för organisatoriska ändamål. Du kan använda en befintlig tagg eller ange en ny. |
    | [!UICONTROL Description] | Lägg till en bra beskrivning av målgruppen för att skilja den från andra. |
-   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmarsfrekvensen finns det en gräns på 150 målgrupper, eftersom den här uppdateringsfrekvensen är mycket bearbetningsintensiv. För andra intervall finns det inget högsta antal målgrupper.</li></ul> |
+   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmarsfrekvensen finns det en gräns på 75 eller 150 målgrupper, beroende på ditt CJA-berättigande. För andra intervall finns det inget högsta antal målgrupper.</li></ul> |
    | Utgångsdatum | När publiken slutar uppdatera. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan målgruppen förfaller. |
    | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max 90 dagar. |
    | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
@@ -86,11 +86,6 @@ Du kan visa CJA-målgrupper i Platform genom att gå till **[!UICONTROL Segments
 Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
 
 ![](assets/audiences-aep.png)
-
-Om du väljer att exportera denna målgrupp till AEP Data Lake, visas den som en datauppsättning som överensstämmer med XDM Individual Profile Schema Class:
-
-![](assets/aep-datalake.png)
-
 
 ## Nästa steg
 
