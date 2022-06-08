@@ -3,13 +3,13 @@ title: Översikt över CJA-anslutningar
 description: Lär dig mer om anslutningar i Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
+source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 6%
+source-wordcount: '102'
+ht-degree: 5%
 
 ---
-
 
 # Anslutningar - översikt
 
@@ -27,6 +27,7 @@ Adobe Experience Platform:
 * Datamodellering: Visa scheman, hantera scheman
 * Datahantering: Visa datauppsättningar, hantera datauppsättningar
 * Dataintag: Hantera källor
+* Visa identitetsnamnutrymmen
 
 Customer Journey Analytics
 * Produktadministratörsåtkomst
@@ -34,4 +35,3 @@ Customer Journey Analytics
 >[!IMPORTANT]
 >
 >Du kan kombinera flera [!DNL Experience Platform] datauppsättningar till en enda anslutning.
-
