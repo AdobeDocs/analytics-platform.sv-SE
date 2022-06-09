@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '639'
+ht-degree: 37%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 0%
          + [Använda filter i bortfallsanalys](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flöde {#flow}
          + [Översikt över flöden](analysis-workspace/visualizations/c-flow/flow.md)
-         + [Konfigurera en flödesvisualisering](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+         + [Konfigurera en flödesvisualisering](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flödesinställningar](analysis-workspace/visualizations/c-flow/flow-settings.md)
          + [Intradimensionella flöden](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Histogram](analysis-workspace/visualizations/histogram.md)

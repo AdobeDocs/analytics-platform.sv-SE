@@ -3,18 +3,14 @@ description: Med ett interdimensionellt flöde kan du undersöka användarsökv�
 title: Intradimensionella flöden
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '302'
 ht-degree: 1%
 
 ---
 
 # Intradimensionella flöden
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
 
