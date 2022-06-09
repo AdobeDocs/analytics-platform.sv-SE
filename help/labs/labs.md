@@ -2,13 +2,13 @@
 title: Användarhandbok för Labs
 description: Förhandsgranska prototypprojekt för Customer Journey Analytics
 role: Admin
-source-git-commit: 2e1a97b6ed2bfd1f8c03399b635a6135c26bce55
+exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
+source-git-commit: 6a44f9fe73de2a6a9bf9397bd31a27607707061b
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
-
 
 # [!UICONTROL Labs] Användarhandbok
 
@@ -68,8 +68,12 @@ Så här startar och utvärderar du en prototyp:
 
 1. Klicka **[!UICONTROL Submit]** för att återgå till huvudportalen för förhandsvisningar.
 
+## CJA Labs-prototyper
+
+* Insiktsgenerator på naturspråk: Innehåller en sammanfattning av alla data på ett naturligt språk som du analyserar i en frihandstabell.
+* Visualiseringsrekommendation: Rekommenderar visualiseringar som fungerar bra tillsammans med dina data.
+
 ## Ytterligare information
 
 * Vissa prototyper i [!UICONTROL Labs] och blir Customer Journey Analytics-funktioner, andra kanske inte gör det. Din feedback styr beslutet, så granska prototyperna och berätta för Adobe hur värdefulla du hittar dem.
 * Labs är tillgängliga för alla SKU-berättiganden.
-
