@@ -3,31 +3,28 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 23258f85ae62375f498d7ac3a7ee24cc139a22a8
+source-git-commit: 74c93b9327b1c7081c461187d53b1b27a686cfdd
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 4%
+source-wordcount: '211'
+ht-degree: 2%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (CJA) (maj 2022)
+# Versionsinformation för Customer Journey Analytics (CJA) (juni 2022)
 
-**Senaste uppdatering**: 19 maj 2022
+**Senaste uppdatering**: 10 juni 2022
 
 ## Viktiga funktioner
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Nytt gränssnitt för redigering och skapande av anslutning | Med den här smidiga upplevelsen kan du fylla i data på datauppsättningsnivå, aktivera ett rullande datalagringsfönster, lägga till och ta bort datauppsättningar från en anslutning. [Läs mer](/help/connections/create-connection.md) | 18 maj 2022 |
-| Report Builder för CJA-uppdateringar | Innehåller funktioner som schemaläggning och hantering av datablockering. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | 18 maj 2022 |
-| AI-integrering för kunder | Gör att du kan importera AI-modellpoäng i CJA för ytterligare analys på arbetsytan för CJA-analys. Läs mer - kommer snart | TBD |
-| Attribution AI Integration | Gör att du kan importera modellresultat i CJA för ytterligare analys på arbetsytan för CJA-Attribution AI. Läs mer - kommer snart | TBD |
+| Målgruppspublicering i kundprofil i realtid | Gör att ni kan publicera målgrupper som identifierats i CJA till AEP/RTCDP för kundanpassning och personalisering. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | 15 juni 2022 |
+| Nytt gränssnitt för visualisering av flöde | Ger ytterligare funktionalitet i vår Flow-visualisering så att den blir kraftfullare och mer funktionell. Läs mer (att följa) | 15 juni 2022 |
+| Stöd för numeriska fält som söknycklar och sökvärden | Detta är användbart om du vill klassificera strängvärden med ett numeriskt fält, t.ex. en COGS eller marginal på en produkts SKU. Genom att tillåta mätvärden från sökningar kan ni få in dessa datapunkter i rapporteringen. Läs mer (att följa) | 15 juni 2022 |
+| Analytiklabb i CJA | Support Labs i CJA så att ni kan utforska prototyper med flerkanalsdata. [Läs mer](/help/labs/labs.md) | 15 juni 2022 |
+| Dela anteckningar i Mobile Scorecards | Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics. Läs mer (att följa) | 15 juni 2022 |
 
 {style=&quot;table-layout:auto&quot;}
-
-### CJA-korrigeringar
-
-AN-279234; AN-284839; AN-285417
 
 >[!MORELIKETHIS]
 >[Dokumentationsuppdateringar för Customer Journey Analytics](/help/release-notes/doc-changes.md)
