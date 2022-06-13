@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
+source-git-commit: ab44c58a4089a5a48ad845579fb536f668d9f9f6
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1426'
 ht-degree: 3%
 
 ---
@@ -21,6 +21,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Avvikelseidentifiering | Fullt stöd |
 | Attribution IQ | Fullt stöd |
+| Audience Publishing | Fullt stöd. Kallas segmentpublicering (skickar segment från Workspace till Experience Cloud) i AA. [Audience Publishing](/help/components/audiences/audiences-overview.md) skickar målgrupper till kundprofil i realtid i Experience Platform. |
 | Beräknade mätvärden | Fullt stöd; Observera att befintliga beräknade värden i den traditionella Analysis Workspace inte kommer att porteras till CJA. |
 | Kalenderhändelser | Fullt stöd. Kalenderhändelser har implementerats som [Anteckningar](/help/components/annotations/overview.md) i Workspace. |
 | Classification Rule Builder | Fullt stöd. Anropat [delsträngar](/help/data-views/component-settings/substring.md) i CJA. Använder strängändringar vid rapporttidpunkten i stället för att söka efter datauppsättningar. |
@@ -97,7 +98,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Projektmallar | Support planeras. |
 | Realtidsrapportering | Support planeras. |
 | Segment IQ | Support planeras. |
-| Segmentpublicering (skickar segment från Workspace till Experience Cloud) | Support planeras. Kallas &quot;Audience Publishing&quot; i CJA. |
 | Ny eller upprepad sessionsrapportering | Support planeras med några kavaetter. |
 
 {style=&quot;table-layout:auto&quot;}
