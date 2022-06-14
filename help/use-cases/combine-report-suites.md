@@ -1,9 +1,9 @@
 ---
 title: Kombinera rapportsviter med olika scheman
 description: Lär dig hur du använder Data Prep för att kombinera rapportsviter med olika scheman
-source-git-commit: c602ee5567e7ba90d1d302f990cc1d8fc49e5adc
+source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1308'
 ht-degree: 1%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 # Kombinera rapportsviter med olika scheman
 
-The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) ger möjlighet att överföra rapportsvitsdata från Adobe Analytics till Adobe Experience Platform för användning av AEP-program som Real-time Customer Data Platform och Customer Journey Analytics (CJA). Varje rapportsvit som hämtas till AEP konfigureras som ett enskilt källanslutningsdataflöde, och varje dataflöde markeras som en datauppsättning i AEP-datasjön. Analyskällans koppling skapar en datauppsättning per rapportserie.
+The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) lägger in data från Adobe Analytics i Adobe Experience Platform (AEP) för användning i AEP-program som Real-time Customer Data Platform och Customer Journey Analytics (CJA). Varje rapportsvit som hämtas till AEP konfigureras som ett enskilt källanslutningsdataflöde, och varje dataflöde markeras som en datauppsättning i AEP-datasjön. Analyskällans koppling skapar en datauppsättning per rapportserie.
 
-CJA-kunder använder [anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) att integrera datauppsättningar från AEP Data Lake i CJA:s Analysis Workspace. När du kombinerar rapportsviter i en anslutning måste schemaskillnaderna mellan rapportsviterna dock lösas med hjälp av AEP:s [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) för att säkerställa att Adobe Analytics-variabler som props och eVars har en konsekvent innebörd i CJA.
+CJA-kunder använder [anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) att integrera datauppsättningar från AEP Data Lake i CJA:s Analysis Workspace. När du kombinerar rapportsviter i en anslutning måste schemaskillnaderna mellan rapportsviterna dock lösas med hjälp av AEP:s [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) funktionalitet. Syftet är att säkerställa att Adobe Analytics-variabler som props och eVars har en konsekvent innebörd i CJA.
 
 ## Schemaskillnader mellan rapportsviter är problematiska
 
@@ -21,8 +21,8 @@ Anta att ditt företag vill överföra data från två olika rapportsviter till 
 
 | Report Suite A | Report Suite B |
 | --- | --- |
-| eVar1 => Sökord | eVar1 => Affärsenhet |
-| eVar2 => Kundkategori | eVar2 => Sökord |
+| eVar1 = Sökord | eVar1 = Affärsenhet |
+| eVar2 = Kundkategori | eVar2 = Sökord |
 
 För enkelhetens skull, låt oss säga att det här är de enda definierade eVars för båda rapportsviterna.
 
@@ -30,8 +30,8 @@ Anta dessutom att du utför följande åtgärder:
 
 - Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite A** till AEP-datasjön som **Datauppsättning A**.
 - Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite B** till AEP-datasjön som **Datauppsättning B**.
-- Skapa en CJA-anslutning som anropas **Alla rapportsviter** som kombinerar datauppsättning A och datauppsättning B.
-- Skapa en CJA-datavy som kallas **Global vy** som baseras på anslutningen Alla rapportsviter.
+- Skapa en [CJA-anslutning](/help/connections/create-connection.md) anropad **Alla rapportsviter** som kombinerar datauppsättning A och datauppsättning B.
+- Skapa en [CJA-datavy](/help/data-views/create-dataview.md) anropad **Global vy** som baseras på anslutningen Alla rapportsviter.
 
 Utan att använda Data Prep för att lösa schemaskillnaderna mellan datauppsättning A och datauppsättning B kommer eVarorna i datavyn i den globala vyn att innehålla en blandning av värden:
 
@@ -48,9 +48,9 @@ Detta resulterar i meningslösa rapporter för eVar1 och eVar2:
 
 ## Använd AEP Data Prep för att lösa schemaskillnader mellan rapportsviter
 
-AEP:s Data Prep-funktion är integrerad med Analytics Source Connector och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i CJA-datavyn. (Namnkonventionerna nedan kan anpassas efter dina behov.)
+Funktionen Experience Platform Data Prep är integrerad med Analytics Source Connector och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i CJA-datavyn. (Namnkonventionerna nedan kan anpassas efter dina behov.)
 
-1. Skapa en anpassad fältgrupp i AEP innan du skapar källanslutningsdataflödena för Report Suite A och Report Suite B (vi kallar den) **Enhetliga fält** i vårt exempel) som innehåller följande fält:
+1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [skapa en anpassad fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) i AEP (vi kallar det **Enhetliga fält** i vårt exempel) som innehåller följande fält:
 
    | Anpassad fältgrupp &quot;Enhetliga fält&quot;  |
    | --- |
@@ -58,7 +58,7 @@ AEP:s Data Prep-funktion är integrerad med Analytics Source Connector och kan a
    | Affärsenhet |
    | Kategori |
 
-1. Skapa ett nytt schema i AEP (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande fältgrupper i schemat:
+1. [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) i AEP (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande fältgrupper i schemat:
 
    | Fältgrupper för Unified Schema |
    | --- |
@@ -88,7 +88,7 @@ AEP:s Data Prep-funktion är integrerad med Analytics Source Connector och kan a
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Search_term |
 
-1. Skapa en **Alla rapportsviter** anslutning för CJA, som kombinerar datauppsättning A och datauppsättning B.
+1. Skapa **Alla rapportsviter** anslutning för CJA, som kombinerar datauppsättning A och datauppsättning B.
 
 1. Skapa en **Global vy** datavy i CJA.
 
@@ -106,9 +106,9 @@ AEP:s Data Prep-funktion är integrerad med Analytics Source Connector och kan a
 
    Du har nu mappat eVar1 och eVar2 från källrapportsviterna till tre nya fält. Observera att en annan fördel med att använda Data Prep-mappningar är att målfälten nu baseras på semantiskt meningsfulla namn (sökterm, affärsenhet, kundkategori) i stället för de mindre meningsfulla eVar (eVar1, eVar2).
 
->[!NOTE]
->
->Den anpassade fältgruppen Enhetliga fält och tillhörande fältmappningar kan när som helst läggas till i befintliga analysrelaterade källanslutningsdata och datauppsättningar. Detta påverkar dock endast data som skickas vidare.
+   >[!NOTE]
+   >
+   >Den anpassade fältgruppen Enhetliga fält och tillhörande fältmappningar kan när som helst läggas till i befintliga analysrelaterade källanslutningsdata och datauppsättningar. Detta påverkar dock endast data som skickas vidare.
 
 ## Mer än bara rapportsviter
 
