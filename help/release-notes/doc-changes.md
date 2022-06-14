@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 17e89d7cfeddff831e34fc441ee17de8b1c3fe21
+source-git-commit: d6b557e90c6f05efed77a77cd5d189241473c7b5
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '789'
 ht-degree: 6%
 
 ---
@@ -17,9 +17,12 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| Juni 2022 | Ny artikel på [dela anteckningar i mobilstyrkort](/help/components/annotations/mobile-annotations.md) |
+| Juni 2022 | Ny artikel på [Analytics Labs i CJA](/help/labs/labs.md) |
+| Juni 2022 | Nytt avsnitt på [stöd för numeriska fält som söknycklar och sökvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
+| Juni 2022 | Uppdateringar av [Arbetsflöde för visualisering av flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md) |
+| Juni 2022 | Ny dokumentation om [Målgruppspublicering i kundprofil i realtid](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
 | Maj 2022 | Avsevärt uppdaterad artikel om [skapa anslutningar](/help/connections/create-connection.md) i CJA. |
-| Maj 2022 | Ny artikel om hur du integrerar CJA med Attribution AI (länk som följer) i Adobe Experience Platform. |
-| Maj 2022 | Ny artikel om att integrera CJA med kundens AI i Adobe Experience Platform (länk). |
 | Maj 2022 | Ny artikel om hur man [hantera datablock i CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
 | Maj 2022 | Ny artikel på [Inhämta Adobe Experience Platform-målgrupper till CJA](/help/use-cases/ingest-aep-segments.md) |
 | April 2022 | Dokumentation på [dimensionsdelsträngar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
@@ -27,15 +30,15 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Mars 2022 | Nytt [API-dokumentation för CJA-anteckningar](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
 | Mars 2022 | Ny dokumentation om [Anteckningar i arbetsytan](/help/components/annotations/overview.md). |
 | Mars 2022 | Innehåll som uppdaterats avsevärt på [beräknar anslutningsstorlek](/help/getting-started/cja-faq.md). |
-| Februari 2022 | [Adobe Analytics till Customer Journey Analytics evolutionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html) |
+| Februari 2022 | En ny guide som riktar sig till administratörer som går från Adobe Analytics till CJA: [Adobe Analytics till Customer Journey Analytics evolutionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html) |
 | Januari 2022 | Nytt användningsexempel för [Använda bindningsdimensioner och mätvärden i CJA](/help/use-cases/binding-dimensions-metrics.md) |
 | Januari 2022 | Dokumentation om tillagda nya funktioner på [bindningsdimensioner och mätvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) och på nya [[!UICONTROL First Known] och [!UICONTROL Last Known] allokeringsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#allocation-settings) |
 | Januari 2022 | Ny artikel på [jämföra era Adobe Analytics-data med Analytics-data i CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
-| November 2021 | Uppdaterad dokumentation för [[!UICONTROL Records skipped]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-details-settings) på sidan Anslutningsinformation. |
+| November 2021 | Uppdaterad dokumentation för [[!UICONTROL Records skipped]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) på sidan Anslutningsinformation. |
 | Oktober 2021 | Dokumentation för [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) i CJA. |
 | Oktober 2021 | Customer Journey Analytics [Granskningslogg](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API-dokumentation |
 | Oktober 2021 | Dokumenterad [Visualiseringar för kontrollpaneler i Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#apply-visualizations) |
-| Oktober 2021 | Dok för rullande fönster för [!UICONTROL Connection] [datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).<p>**Obs! Kontakta kundtjänst eller din kontoansvarige på Adobe för att få den här inställningen implementerad. Den är ännu inte tillgänglig via CJA-gränssnittet.** |
+| Oktober 2021 | Dok för rullande fönster för [!UICONTROL Connection] [datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention). |
 | September 2021 | [Metrisk deduplicering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html) doc |
 | September 2021 | [Tidsstöd för sommartid vid rapportering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#calendar) |
 | September 2021 | [Kundkalendrar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#calendar) dokumentation |
