@@ -1,59 +1,57 @@
 ---
 title: 'Mobil styrkortsanteckning    '
-description: Så här använder du anteckningar i mobila styrkort.
+description: Lär dig hur du visar kommentarer i mobila styrkort.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 3387d72e68cccd4df54fbc4f29f03409db131206
+source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
+
 # Dela anteckningar i mobila styrkort
 
-Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter till er organisation och era kampanjer direkt i styrkort.
+>[!NOTE]
+>
+>Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
 
-Anteckningar i mobila styrkort fungerar på liknande sätt som anteckningar i arbetsytan med ytterligare funktioner. I Workspace kan du till exempel skapa anteckningar på tabellnivå för ett datumintervall. I Mobile Scorecards kan du visa anteckningar på kategorinivå. Detta ger ytterligare kontext för användare av Mobile Scorecard.
-_lägg till ett exempel - eller mer information som beskriver skillnaden
+Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics.
 
-? Vilka ytterligare funktioner har Mobile?
+## Ytanteckningar i mobilstyrkort
 
+Om du vill visa kommentarer i mobila styrkort skapar du först anteckningen från arbetsyteprojekt eller från komponentmenyn.
 
-## Lägg till anteckningar i mobila styrkort
-
-Anteckningar som visas i Mobile Scorecards skapas i Workspace med hjälp av metoderna för att skapa anteckningar i Workspace. Mer information om hur du skapar anteckningar finns i [Skapa anteckningar](create-annotations.md).
-
+Mer information om hur du skapar anteckningar finns i [Skapa anteckningar](create-annotations.md). Anteckningar är som standard inaktiverade i mobila styrkort och måste aktiveras för varje styrkort som du vill visa i mobila styrkort.
 
 1. Aktivera anteckningar. Information om hur du aktiverar anteckningar finns i [Aktivera eller inaktivera anteckningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
 
-1. Skapa en anteckning och tilldela den till _globala projekt. Information om hur du skapar en anteckning i arbetsytan finns i [Skapa anteckningar](create-annotations.md).
+1. Skapa en anteckning och se till att den delas med alla dina projekt. Information om hur du skapar en anteckning i arbetsytan finns i [Skapa anteckningar](create-annotations.md).
 
 1. Välj **Visa anteckningar** för att visa anteckningen i mobila styrkort.
 
-Om du vill bekräfta att Visa anteckningar är markerat går du till **Projekt** > **Projektinformation och inställningar**.
+![](assets/show-annotations.png)
+
+1. Bekräfta att visa anteckningar är markerat, gå till **Projekt** > **Projektinformation och inställningar**.
+
+![](assets/project-info-settings.png)
 
 ## Visa anteckningar i mobila styrkort
 
-I Workspace kan du verifiera anteckningar i Builder. Du kan också använda förhandsgranskningsläget för att visa det mobila styrkortet med anteckningar.
+När anteckningar är aktiverade visas anteckningsikoner i styrkortsverktyget. Anteckningar visas bara i diagram och tabeller i den detaljerade vyn. Anteckningar visas inte i styrkortets huvudsida.
 
-Om du vill visa anteckningar på en mobil enhet trycker du på en anteckningsikon i Mobile Scorecards. Svep åt vänster eller höger för att visa ytterligare anteckningar. På så sätt kan du snabbt visa alla anteckningar.
+![](assets/view-annotations.png)
 
-![](assets/mobile-annotations2.png)
+När anteckningsikoner visas kan du inte helt visa eller interagera med anteckningar på arbetsytan i verktyget. Använd förhandsgranskningsläget för att visa och interagera med anteckningar så som de visas i programmet. ![](assets/preview-icon.png)
 
-När du visar en __donut finns en sammanfattning av anteckningar som har använts på ett mätresultat i det nedre högra hörnet.
+Anteckningsfärger markeras när anteckningen skapas i arbetsytan. Grå anteckningar indikerade förekomsten av mer än en anteckning. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
 
-![](assets/ann-mobile-summary.png)
+## Visa diagramanteckningar
 
-
-## Anteckningsöverväganden för mobilstyrkort
-
-* Om en anteckning används för en kategori och en användare växlar från den kategorivyn, försvinner anteckningen. Anteckningar visas bara i en associerad kategori.
-
-* Anteckningar är inaktiverade som standard.
-
-
-## Anteckningsfärger
-
-När du skapar en anteckning tilldelar du en specifik färg till anteckningen som visas i styrkortet. Anteckningar som visas i grått anger att flera anteckningar har tilldelats samma kategori. I annat fall visas anteckningen i den färg som angavs i arbetsytan.
+| Datum | Utseende |
+| --- | --- |
+| **En dag** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **Datumintervall** | ![](assets/date-range.png) |
+| **Överlappande anteckningar** | ![](assets/overlapping-annotations.png)<br></br>Om du vill visa anteckningsinformation i kontrollpanelsappen för Analytics trycker du på en anteckningsikon. <br></br>När du visar en anteckning i ett diagram kan du svepa åt vänster och höger för att navigera bland alla anteckningar som finns i diagrammet. När du visar en anteckning i tabellen sveper du åt vänster och höger för att navigera i alla anteckningar som är kopplade till det radobjektet i tabellen. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>I diagram som inte har tidsbaserade *x-axel*, t.ex. munnen eller vågräta stapeldiagram, kan anteckningar som gäller diagrammet visas genom att man trycker på ikonen längst ned till höger.<br></br> ![](assets/charts-without-timebase.png) |
