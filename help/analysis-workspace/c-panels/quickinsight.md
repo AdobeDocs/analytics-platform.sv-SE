@@ -3,22 +3,14 @@ description: Quick Insights är ett verktyg för nya Workspace-användare som v�
 title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 2%
+source-wordcount: '987'
+ht-degree: 1%
 
 ---
 
 # Panelen Snabbinsikter
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
-
->[!IMPORTANT]
->
->**[!UICONTROL Quick Insights]** Panelen har för närvarande begränsad testning. [Läs mer](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)
 
 [!UICONTROL Quick Insights] ger vägledning till icke-analytiker och nya användare av [!UICONTROL Analysis Workspace] så att de kan lära sig att snabbt och enkelt svara på affärsfrågor. Det är också ett bra verktyg för avancerade användare som snabbt vill besvara en enkel fråga utan att själva behöva skapa en tabell.
 

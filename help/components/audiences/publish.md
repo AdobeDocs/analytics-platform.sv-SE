@@ -2,18 +2,14 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 0108b07fd4fac33d026b8832931ffa3018b298e0
+source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
 
 # Skapa och publicera målgrupper
-
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
 I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
 
@@ -60,8 +56,8 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | Förhandsvisningsinställning | Beskrivning |
    | --- | --- |
    | [!UICONTROL Data preview] window | Datumintervallet för målgruppen. |
-   | [!UICONTROL Total people] | Ett summerat antal personer i den här publiken. Den kan gå upp till 100 miljoner människor. Om er målgrupp överstiger 100 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera den. |
-   | [!UICONTROL Audience size limit] | Visar hur långt från gränsen på 100 miljoner som den här målgruppen är. |
+   | [!UICONTROL Total people] | Ett summerat antal personer i den här publiken. Den kan gå upp till 200 miljoner människor. Om er målgrupp överstiger 200 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera den. |
+   | [!UICONTROL Audience size limit] | Visar hur långt från gränsen på 200 miljoner som den här målgruppen är. |
    | [!UICONTROL Estimated audience return] | Den här inställningen är användbar för återmarknadsföring av kunder i den här målgruppen som kommer tillbaka till er webbplats. (Med andra ord, som visas i den här datauppsättningen igen.) <p>Här kan du välja tidsram (nästa 7 dag, nästa 2 veckor, nästa månad) för det uppskattade antalet kunder som kan komma att returnera. |
    | [!UICONTROL Estimated to return] | Numret ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde i listrutan. Vi tittar på den historiska bortfallsfrekvensen för den här publiken för att förutse detta antal. |
    | [!UICONTROL Preview metrics] | Med den här inställningen kan du titta på specifika mätvärden för att se om den här målgruppen bidrar med ett oproportionerligt belopp till det här mätvärdet, till exempel &#39;[!UICONTROL Revenue]&#39; eller &#39;[!UICONTROL Average time on site]&#39;. Det ger dig det sammanlagda antalet mätvärden, liksom procentandelen av det totala antalet. Du kan välja alla mätvärden som är tillgängliga i datavyn. |

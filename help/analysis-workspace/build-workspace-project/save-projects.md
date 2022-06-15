@@ -4,9 +4,9 @@ title: Spara projekt
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,6 @@ För **befintlig** projekt, när du återgår till arbetsytan visas en **Projekt
 För **new** projekt som aldrig har sparats går inte att återställa ändringar som inte har sparats.
 
 ## Öppna föregående version {#previous-version}
-
->[!NOTE]
->
->Tidigare projektversioner är för närvarande i begränsad version.
 
 Så här öppnar du en tidigare version av ett projekt:
 

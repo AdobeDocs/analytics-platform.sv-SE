@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Mer information om hur du skapar anteckningar finns i [Skapa anteckningar](creat
 
 1. Skapa en anteckning och se till att den delas med alla dina projekt. Information om hur du skapar en anteckning i arbetsytan finns i [Skapa anteckningar](create-annotations.md).
 
-1. Välj **Visa anteckningar** för att visa anteckningen i mobila styrkort.
+1. Välj **[!UICONTROL Show annotations]** för att visa anteckningen i mobila styrkort.
 
    ![](assets/show-annotations.png)
 
-1. Bekräfta att visa anteckningar är markerat, gå till **Projekt** > **Projektinformation och inställningar**.
+1. Bekräfta att visa anteckningar är markerat, gå till **[!UICONTROL Project]** > **[!UICONTROL Project info and settings]**.
 
    ![](assets/project-info-settings.png)
 
@@ -49,6 +49,6 @@ Anteckningsfärger markeras när anteckningen skapas i arbetsytan. Grå anteckni
 
 | Datum | Utseende |
 | --- | --- |
-| **En dag** | ![](assets/single-day-mobile-annotations.png)<br></br> |
-| **Datumintervall** | ![](assets/date-range.png) |
-| **Överlappande anteckningar** | ![](assets/overlapping-annotations.png)<br></br>Om du vill visa anteckningsinformation i kontrollpanelsappen för Analytics trycker du på en anteckningsikon. <br></br>När du visar en anteckning i ett diagram kan du svepa åt vänster och höger för att navigera bland alla anteckningar som finns i diagrammet. När du visar en anteckning i tabellen sveper du åt vänster och höger för att navigera i alla anteckningar som är kopplade till det radobjektet i tabellen. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>I diagram som inte har tidsbaserade *x-axel*, t.ex. munnen eller vågräta stapeldiagram, kan anteckningar som gäller diagrammet visas genom att man trycker på ikonen längst ned till höger.<br></br> ![](assets/charts-without-timebase.png) |
+| **[!UICONTROL Single da]y** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **[!UICONTROL Date range]** | ![](assets/date-range.png) |
+| **[!UICONTROL Overlapping annotations]** | ![](assets/overlapping-annotations.png)<br></br>Om du vill visa anteckningsinformation i kontrollpanelsappen för Analytics trycker du på en anteckningsikon. <br></br>När du visar en anteckning i ett diagram kan du svepa åt vänster och höger för att navigera bland alla anteckningar som finns i diagrammet. När du visar en anteckning i tabellen sveper du åt vänster och höger för att navigera i alla anteckningar som är kopplade till det radobjektet i tabellen. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>I diagram som inte har tidsbaserade *x-axel*, t.ex. munnen eller vågräta stapeldiagram, kan anteckningar som gäller diagrammet visas genom att man trycker på ikonen längst ned till höger.<br></br> ![](assets/charts-without-timebase.png) |

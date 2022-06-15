@@ -3,18 +3,14 @@ title: Användarhandbok för Labs
 description: Förhandsgranska prototypprojekt för Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
-source-git-commit: 6a44f9fe73de2a6a9bf9397bd31a27607707061b
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Labs] Användarhandbok
-
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
 [!UICONTROL Labs] gör det möjligt att skapa snabbare prototyper av idéer i ett tidigt skede. Det är en kombination av verktyg och processer som snabbar upp utvecklingen på ett öppet sätt, med kundfokus. Det gör det möjligt för användarna att interagera med ny teknik, att upptäcka värdefulla insikter och att påverka framtida funktionsutveckling och prioriteringar. Du kan använda Labs för att få tidig tillgång till innovationer i Customer Journey Analytics (CJA) och för att utvärdera kommande funktioner i samband med era egna affärsanvändningsfall och data.
 
