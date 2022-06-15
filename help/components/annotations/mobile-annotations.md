@@ -1,22 +1,19 @@
 ---
-title: 'Mobil styrkortsanteckning    '
+title: Mobil styrkortsanteckning
 description: Lär dig hur du visar kommentarer i mobila styrkort.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
+exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
+source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 
 # Dela anteckningar i mobila styrkort
-
->[!NOTE]
->
->Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
 
 Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics.
 
@@ -26,17 +23,17 @@ Om du vill visa kommentarer i mobila styrkort skapar du först anteckningen frå
 
 Mer information om hur du skapar anteckningar finns i [Skapa anteckningar](create-annotations.md). Anteckningar är som standard inaktiverade i mobila styrkort och måste aktiveras för varje styrkort som du vill visa i mobila styrkort.
 
-1. Aktivera anteckningar. Information om hur du aktiverar anteckningar finns i [Aktivera eller inaktivera anteckningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
+1. Aktivera anteckningar. Information om hur du aktiverar anteckningar finns i [Aktivera eller inaktivera anteckningar](overview.md#annotations-on-off).
 
 1. Skapa en anteckning och se till att den delas med alla dina projekt. Information om hur du skapar en anteckning i arbetsytan finns i [Skapa anteckningar](create-annotations.md).
 
 1. Välj **Visa anteckningar** för att visa anteckningen i mobila styrkort.
 
-![](assets/show-annotations.png)
+   ![](assets/show-annotations.png)
 
 1. Bekräfta att visa anteckningar är markerat, gå till **Projekt** > **Projektinformation och inställningar**.
 
-![](assets/project-info-settings.png)
+   ![](assets/project-info-settings.png)
 
 ## Visa anteckningar i mobila styrkort
 
