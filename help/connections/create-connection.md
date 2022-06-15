@@ -4,9 +4,9 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
+source-git-commit: 31d4faaf14adb7f11f975f77864074cd25a6e3bd
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profi
 
 ## Använd numeriska fält som söknycklar och sökvärden {#numeric}
 
-Den här funktionen är användbar om du vill klassificera strängvärden med ett numeriskt fält, t.ex. en COGS eller marginal, på en produkts SKU. Det tillåter att numeriska värden ingår i uppslag, antingen som nycklar eller som värden. I sökschemat kan du ha numeriska värden kopplade till exempelvis produktnamn, COGS, kampanjmarknadsföringskostnader eller marginaler. Här är ett exempel på sökschema i Adobe Experience Platform:
+Den här funktionen är användbar om du vill lägga till ett numeriskt fält, t.ex. en kostnad eller marginal, i ett strängbaserat nyckelfält. Det tillåter att numeriska värden ingår i uppslag, antingen som nycklar eller som värden. I sökschemat kan du ha numeriska värden kopplade till exempelvis produktnamn, COGS, kampanjmarknadsföringskostnader eller marginaler. Här är ett exempel på sökschema i Adobe Experience Platform:
 
 ![Sökschema](assets/schema.png)
 
