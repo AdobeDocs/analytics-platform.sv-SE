@@ -1,13 +1,13 @@
 ---
 title: Kombinera rapportsviter med olika scheman
 description: Lär dig hur du använder Data Prep för att kombinera rapportsviter med olika scheman
-source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
+exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
+source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1336'
 ht-degree: 1%
 
 ---
-
 
 # Kombinera rapportsviter med olika scheman
 
@@ -50,7 +50,14 @@ Detta resulterar i meningslösa rapporter för eVar1 och eVar2:
 
 Funktionen Experience Platform Data Prep är integrerad med Analytics Source Connector och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i CJA-datavyn. (Namnkonventionerna nedan kan anpassas efter dina behov.)
 
-1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [skapa en anpassad fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) i AEP (vi kallar det **Enhetliga fält** i vårt exempel) som innehåller följande fält:
+1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) i AEP (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande i schemat:
+
+   | &quot;Enhetligt schema&quot; |
+   | --- |
+   | **XDM ExperienceEvent** class |
+   | **Adobe Analytics ExperienceEvent-mall** fältgrupp |
+
+1. Lägg till en annan fältgrupp till schemat eller [skapa en anpassad fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) och lägg till det i schemat. Vi skapar en ny fältgrupp och kallar den **Enhetliga fält**. Sedan lägger vi till följande fält i den nya fältgruppen:
 
    | Anpassad fältgrupp &quot;Enhetliga fält&quot;  |
    | --- |
@@ -58,17 +65,7 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics Source Con
    | Affärsenhet |
    | Kategori |
 
-1. [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) i AEP (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande fältgrupper i schemat:
-
-   | Fältgrupper för Unified Schema |
-   | --- |
-   | XDM Experience Event |
-   | Adobe Analytics Experience Event Template |
-   | Enhetliga fält |
-
-   När du skapar källanslutningsdataflöde för **Report Suite A**, markera **Enhetligt schema** för användning i dataflödet.
-
-1. Lägg till anpassade mappningar enligt följande:
+1. Skapa källanslutningsdataflöde för **Report Suite A**, markera **Enhetligt schema** för användning i dataflödet. Lägg till anpassade mappningar i dataflödet enligt följande:
 
    | Report Suite A source field | Målfält från fältgruppen Enhetliga fält |
    | --- | --- |
@@ -77,11 +74,9 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics Source Con
 
    >[!NOTE]
    >
-   >XDM-sökvägen för målfälten beror på hur du konfigurerar den anpassade fältgruppen.
+   >XDM-sökvägen för målfälten beror på hur du strukturerar den anpassade fältgruppen.
 
-1. När du skapar källanslutningsdataflöde för **Report Suite B**, välj igen **Enhetligt schema** för användning i dataflödet.
-
-   Arbetsflödet visar att två fält har en konflikt med ett beskrivningsnamn. Detta beror på att beskrivningarna för eVar1 och eVar2 skiljer sig åt i Report Suite B jämfört med dem i Report Suite A. Men vi vet redan detta, så vi kan ignorera konflikten och använda anpassade mappningar enligt följande:
+1. Skapa källanslutningsdataflöde för **Report Suite B** väljer **Enhetligt schema** för användning i dataflödet. Arbetsflödet visar att två fält har en konflikt med ett beskrivningsnamn. Detta beror på att beskrivningarna för eVar1 och eVar2 skiljer sig åt i Report Suite B jämfört med dem i Report Suite A. Men vi vet redan detta, så vi kan ignorera konflikten och använda anpassade mappningar enligt följande:
 
    | Källfält för Report Suite B | Målfält från fältgruppen Enhetliga fält |
    |---|---|
@@ -90,11 +85,9 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics Source Con
 
 1. Skapa **Alla rapportsviter** anslutning för CJA, som kombinerar datauppsättning A och datauppsättning B.
 
-1. Skapa en **Global vy** datavy i CJA.
+1. Skapa en **Global vy** datavy i CJA. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Enhetliga fält.
 
-   Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Enhetliga fält.
-
-   Datavy för global vy i CJA:
+   **Global vy** datavy i CJA:
 
    | Källfält | Vill du inkludera i datavyn? |
    | --- | --- | 
@@ -104,11 +97,11 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics Source Con
    | _\&lt;path>_.Customer_category  | Ja |
    | _\&lt;path>_.Business_unit | Ja |
 
-   Du har nu mappat eVar1 och eVar2 från källrapportsviterna till tre nya fält. Observera att en annan fördel med att använda Data Prep-mappningar är att målfälten nu baseras på semantiskt meningsfulla namn (sökterm, affärsenhet, kundkategori) i stället för de mindre meningsfulla eVar (eVar1, eVar2).
+Du har nu mappat eVar1 och eVar2 från källrapportsviterna till tre nya fält. Observera att en annan fördel med att använda Data Prep-mappningar är att målfälten nu baseras på semantiskt meningsfulla namn (sökterm, affärsenhet, kundkategori) i stället för de mindre meningsfulla eVar (eVar1, eVar2).
 
-   >[!NOTE]
-   >
-   >Den anpassade fältgruppen Enhetliga fält och tillhörande fältmappningar kan när som helst läggas till i befintliga analysrelaterade källanslutningsdata och datauppsättningar. Detta påverkar dock endast data som skickas vidare.
+>[!NOTE]
+>
+>Den anpassade fältgruppen Enhetliga fält och tillhörande fältmappningar kan när som helst läggas till i befintliga analysrelaterade källanslutningsdata och datauppsättningar. Detta påverkar dock endast data som skickas vidare.
 
 ## Mer än bara rapportsviter
 
@@ -124,37 +117,34 @@ Funktionerna hos Data Prep för att kombinera datauppsättningar med olika schem
 
 Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data med kundkategorin i fältet Some_field i call center-data. Här är ett sätt du kan göra det på. Återigen kan namnkonventionen ändras efter dina behov.
 
-1. Skapa en anpassad fältgrupp:
+1. Skapa ett schema i AEP. Lägg till följande i schemat:
+
+   | &quot;Utökat schema&quot; |
+   | --- | 
+   | **XDM Experience Event** class |
+   | **Adobe Analytics Experience Event Template** fältgrupp |
+
+1. Skapa en ny fältgrupp och lägg till den i schemat. Lägg till fält i fältgruppen:
 
    | Anpassad fältgrupp &quot;Kundinformation&quot;  |
    | --- |
    | Customer_category |
 
-1. Skapa ett schema i AEP. Lägg till följande fältgrupper i schemat:
-
-   | Fältgrupper för utökat schema |
-   | --- | 
-   | XDM Experience Event |
-   | Adobe Analytics Experience Event Template |
-   | Kundinformation |
-
-1. När dataflödet skapas för **Datauppsättning A**, markera **Utökat schema** som ditt schema.
-
-1. Lägg till anpassade mappningar enligt följande:
+1. Skapa dataflöde för **Datauppsättning A**, markera **Utökat schema** som ditt schema. Lägg till anpassade mappningar i dataflödet enligt följande:
 
    | Datamängd Ett källfält | Målfält från fältgruppen Kundinformation |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Customer_category |
 
-1. När dataflödet skapas för **Datauppsättning B**, välj igen **Utökat schema** som ditt schema.
-
-1. Lägg till anpassade mappningar enligt följande:
+1. Skapa dataflöde för **Datauppsättning B** väljer **Utökat schema** som ditt schema. Lägg till anpassade mappningar i dataflödet enligt följande:
 
    | Källfält för datauppsättning B | Målfält från fältgruppen Kundinformation |
    | --- | --- |
    | _\&lt;path>_.Vissa_fält | _\&lt;path>_.Customer_category |
 
-   Skapa en CJA-anslutning som kombinerar datauppsättning A och datauppsättning B. Skapa en datavy i CJA med den CJA-anslutning du just skapade. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Kundinformation.
+1. Skapa en CJA-anslutning som kombinerar datauppsättning A och datauppsättning B.
+
+1. Skapa en datavy i CJA med den CJA-anslutning du just skapade. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Kundinformation.
 
    Datavy i CJA:
 
@@ -169,4 +159,3 @@ Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data
 Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i CJA när du vill kombinera data från flera datauppsättningar till en enda CJA-anslutning. Om du tänker behålla rapportsviterna i separata CJA-anslutningar men vill använda en uppsättning rapporter för alla dessa anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i CJA, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) för mer information.
 
 Ändring av komponent-ID:t är en CJA-funktion och påverkar inte data från Analytics Source Connector som skickas till kundprofilen i realtid och RTCDP.
-
