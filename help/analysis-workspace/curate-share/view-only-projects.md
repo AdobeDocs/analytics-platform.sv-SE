@@ -4,18 +4,14 @@ keywords: Visa endast  projekt
 title: Visa endast  projekt
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '245'
 ht-degree: 3%
 
 ---
 
 # Visa endast  projekt
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 

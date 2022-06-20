@@ -3,18 +3,14 @@ description: Sidnumrering, filtrering och sortering av tabeller i arbetsytan
 title: Sidnumrering, filtrering och sortering av tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 17%
+source-wordcount: '198'
+ht-degree: 19%
 
 ---
 
 # Sidnumrering, filtrering och sortering av tabeller
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Titta på den här videosjälvstudien för en översikt över paginering, filtrering och sortering av tabeller i Analysis Workspace:
 

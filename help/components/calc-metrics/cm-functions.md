@@ -3,18 +3,14 @@ title: Referens - grundläggande funktioner
 description: Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
 
 # Referens - grundläggande funktioner
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
 
@@ -210,7 +206,7 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-*Om *quart* = 0, QUARTILE returnerar det minsta värdet. If *quart* = 1, KVARTIL returnerar den första kvartilen (25 percentiler). If *quart* = 2, KVARTIL returnerar den första kvartilen (50 percentiler). If *quart* = 3, KVARTIL returnerar den första kvartilen (75 percentiler). If *quart* = 4, QUARTILE returnerar maxvärdet.
+&#42;If *quart* = 0, QUARTILE returnerar det minsta värdet. If *quart* = 1, KVARTIL returnerar den första kvartilen (25 percentiler). If *quart* = 2, KVARTIL returnerar den första kvartilen (50 percentiler). If *quart* = 3, KVARTIL returnerar den första kvartilen (75 percentiler). If *quart* = 4, QUARTILE returnerar maxvärdet.
 
 ## Ansökningstillfälle
 

@@ -4,7 +4,7 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Customer Journey Analytics utvidgar räckvidden för Adobe Analytics genom att e
 * **Ändra historiska data**: Med Adobe Experience Platform kan data tas bort eller korrigeras.
 * **Data för flera rapporter**: Befintliga implementeringar från flera datauppsättningar kan kombineras i Platform.
 
-Den första releasen av Customer Journey Analytics innehåller många av de funktioner som ingår i Analysis Workspace. En fullständig lista finns på [Funktioner i Customer Journey Analytics](cja-aa.md).
+Den första releasen av Customer Journey Analytics innehåller många av de funktioner som ingår i Analysis Workspace. En fullständig lista finns på [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## Jämföra CJA med enhetsövergripande analys
 

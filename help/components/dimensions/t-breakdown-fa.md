@@ -5,18 +5,14 @@ title: Dela upp dimensioner
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '345'
 ht-degree: 2%
 
 ---
 
 # Dela upp dimensioner i arbetsytan
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 
@@ -31,7 +27,7 @@ Anpassa era data på ett obegränsat sätt efter era specifika behov. skapa frå
 
    >[!NOTE]
    >
-   >Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen kommer att öka för export av uppdelningar.
+   >Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen ökar vid export av uppdelningar.
 
 **Video: Dimensioner i Analysis Workspace**
 

@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '822'
 ht-degree: 6%
 
 ---
@@ -17,6 +17,8 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| Juni 2022 | Ny artikel på [virtuella rapporteringsmiljöer och sandlådemiljöer](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
+| Juni 2022 | Ny artikel på [jämföra databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) |
 | Juni 2022 | Ny artikel på [kombinera rapportsviter med olika scheman](/help/use-cases/combine-report-suites.md) |
 | Juni 2022 | Ny artikel på [dela anteckningar i mobilstyrkort](/help/components/annotations/mobile-annotations.md) |
 | Juni 2022 | Ny artikel på [Analytics Labs i CJA](/help/labs/labs.md) |
@@ -63,7 +65,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | 13 november 2020 | Nya ämnen om [Flerkanalsanalys](/help/connections/cca/overview.md)som gör att du kan ändra inmatningen av en datauppsättnings person-ID och som möjliggör en sömlös kombination av flera datauppsättningar. |
 | 13 november 2020 | Ett nytt användningsexempel på [importera callcenter och webbdata](/help/use-cases/call-center.md) lades till. |
 | 10 november 2020 | Ett avsnitt om konsekvenserna av att ta bort datakomponenter har lagts till i [Vanliga frågor](/help/getting-started/cja-faq.md). |
-| 2 november 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/cja-aa.md) sida. |
+| 2 november 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) sida. |
 | November 2020 | Lagt till innehåll på [ta bort begränsningar för bakgrundsfyllning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) för anslutningar. |
 | 7 oktober 2020 | Lagt till ett ämne [kombinerade händelsedatamängder](/help/connections/combined-dataset.md). |
 | 15 september 2020 | Lagt till ett ämne [dataintag](/help/use-cases/data-ingestion.md). |
@@ -72,7 +74,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Juli 2020 | Lagt till information om [Identitetskarta, alternativ för person-ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html). |
 | Juli 2020 | Nytt ämne [objektarrayer](/help/use-cases/object-arrays.md) eller&quot;dataherarkier&quot; har lagts till. |
 | 14 april 2020 | Uppdateringar av det senaste användargränssnittet i [Skapa anslutningar](/help/connections/create-connection.md) ämne. |
-| 27 februari 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/cja-aa.md) sida. |
+| 27 februari 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) |
 | December 2019 | Första utkastet till CJA-dokumentation |
 
 {style=&quot;table-layout:auto&quot;}

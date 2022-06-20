@@ -3,18 +3,14 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta PDF- eller CSV-filer
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
 
 # Hämta PDF- eller CSV-filer
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Det finns flera olika sätt att exportera data från Analysis Workspace, beroende på vilken datauppsättning du vill analysera utanför verktyget och vem som behöver få informationen. Exporterade data kan vara i form av kopierade data, CSV- eller PDF-filer. Ett PDF är att föredra om du vill att visualiseringar ska inkluderas i filen, medan en CSV (eller kopierade data) föredras om du bara vill ha oformaterade textdata.
 

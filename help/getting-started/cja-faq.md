@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Frågor och svar
 
-[!UICONTROL Customer Journey Analytics] (CJA) är nästa generation av analysprodukter. Här följer svar på vanliga frågor om CJA. Mer information finns på [Funktioner i Customer Journey Analytics](/help/getting-started/cja-aa.md).
+[!UICONTROL Customer Journey Analytics] (CJA) är nästa generation av analysprodukter. Här följer svar på vanliga frågor om CJA. Mer information finns på [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## 1. Förutsättningar {#prerequisites}
 

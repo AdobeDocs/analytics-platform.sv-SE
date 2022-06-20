@@ -4,9 +4,9 @@ description: Frågor och svar om flerkanalsanalys
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: de12bb7758904fb471a2da940d5281a5937f7d21
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Vissa mått i CJA liknar mätvärden i traditionell analys, men andra är helt o
 | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i CJA-datavyn. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i CJA-datavyn. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i [CDA Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
 | **Händelser** = antal rader i sammanslagna data i CJA. I allmänhet bör detta ligga nära **Förekomster** i traditionell Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med en tom `Persistent ID`. | **Händelser** = antal rader i de osydda data i CJA. I allmänhet bör detta ligga nära **Förekomster** i traditionell Adobe Analytics. Observera dock att om några händelser har en tom `Person ID` dessa händelser kommer att utelämnas (ingår inte) i CJA i de data som inte sammanställts i AEP-sjön. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
-Andra mätvärden kan likna dem i CJA och i traditionella Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) (händelser 1-100) ska i allmänhet vara mycket nära i traditionell Adobe Analytics och CJA (oavsett om de är sammanfogade eller inte). Observera dock att detta kanske inte alltid stämmer på grund av [skillnader i funktionalitet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html)  t.ex. borttagning av dubbletter mellan CJA och traditionella Adobe Analytics.
+Andra mätvärden kan likna dem i CJA och i traditionella Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 bör i allmänhet vara mycket nära i traditionell Adobe Analytics och CJA (oavsett om de är sydda eller inte). Observera dock att detta kanske inte alltid stämmer på grund av [skillnader i funktionalitet](/help/getting-started/aa-vs-cja/cja-aa.md)), till exempel borttagning av dubbletter mellan CJA och traditionella Adobe Analytics.
 
 ## Kan CCA använda fält för identitetskarta?
 

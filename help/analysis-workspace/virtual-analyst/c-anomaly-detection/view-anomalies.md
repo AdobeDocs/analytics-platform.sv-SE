@@ -3,18 +3,14 @@ description: Du kan visa avvikelser i en tabell eller i ett linjediagram.
 title: Visa avvikelser i Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '233'
 ht-degree: 4%
 
 ---
 
 # Visa avvikelser i Analysis Workspace
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan visa avvikelser i en tabell eller i ett linjediagram.
 

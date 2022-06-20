@@ -3,18 +3,14 @@ description: Så här ändrar du färgpaletten för visualisering eller anger en
 title: Visualiseringsfärgpalett
 feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
 
 # Visualiseringsfärgpalett
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men det gör den **not** påverkar Sammanfattningsändring, villkorsstyrd formatering i frihandstabeller och Kartvyn.
 

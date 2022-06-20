@@ -3,18 +3,14 @@ description: Vanliga frågor om arbetsytan och felsökningstips.
 title: Frågor och svar
 feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 42%
+source-wordcount: '377'
+ht-degree: 45%
 
 ---
 
 # Frågor och svar
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 | Fråga | Svar |
 |--- |--- |

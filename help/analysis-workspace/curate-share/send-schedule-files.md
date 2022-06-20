@@ -3,18 +3,14 @@ description: Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mott
 title: Dela-menyn
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '147'
 ht-degree: 6%
 
 ---
 
 # Dela-menyn
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen på arbetsytan **Dela-menyn**.
 

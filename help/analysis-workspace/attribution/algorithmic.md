@@ -3,18 +3,14 @@ title: Algoritmisk attribuering
 description: Information om algoritmisk attribueringsmodell.
 feature: Attribution
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '265'
+ht-degree: 1%
 
 ---
 
 # Algoritmisk attribuering
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 Här är en videoöversikt av algoritmisk attribuering:
 

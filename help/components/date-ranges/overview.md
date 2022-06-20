@@ -3,19 +3,15 @@ title: Översikt över datumintervall
 description: Lär dig vilka datumintervall som är och hur du kan använda dem vid rapportering.
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 1%
+source-wordcount: '81'
+ht-degree: 0%
 
 ---
 
 # Översikt över datumintervall
 
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
-
-Datumintervall är en typ av komponent som du kan använda i Workspace-projekt. De gör att du kan se data som trendas över tid eller se när händelser inträffar som mest. Datumintervall är färgkodade lila.
+Datumintervall är en typ av komponent som du kan använda i Workspace-projekt. De gör att du kan se data som trendas över tid eller se när händelser inträffar som mest. Datumintervall färgkodas i lila.
 
 Med anpassade datumintervall kan du anpassa de datum som visas i arbetsyteprojekt. Använd datumintervallhanteraren för att [hantera](manage.md) eller [skapa](create.md) anpassade datumintervall.

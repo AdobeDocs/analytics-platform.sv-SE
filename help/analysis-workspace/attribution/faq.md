@@ -3,18 +3,14 @@ title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
 feature: Attribution
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '273'
 ht-degree: 6%
 
 ---
 
 # Vanliga frågor om attribuering
-
->[!NOTE]
->
->Du visar dokumentationen för Analysis Workspace i Customer Journey Analytics. Funktionsuppsättningen skiljer sig något från [Analysis Workspace i traditionell Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Läs mer …](/help/getting-started/cja-aa.md)
 
 **Vad är radobjektet &quot;Inget&quot; när du använder attribuering?**
 
