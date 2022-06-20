@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 243dc9bfcb7dde08e58fa4f8a11c8ec8c1e49de1
+source-git-commit: a92a6e5825ae01fa2eac30d778293681eab9dd3e
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '666'
 ht-degree: 35%
 
 ---
@@ -34,7 +34,10 @@ ht-degree: 35%
    + [Frågor och svar](getting-started/cja-faq.md)
    + [Adobe Analytics till Customer Journey Analytics evolutionen](getting-started/aa-to-cja.md)
    + [Användarhandbok för nya användare i Customer Journey Analytics](getting-started/aa-to-cja-user.md)
-   + [Funktioner i Customer Journey Analytics](getting-started/cja-aa.md)
+   + Jämför Adobe Analytics och Customer Journey Analytics {#compare-aa-cja}
+      + [Funktioner i Customer Journey Analytics](getting-started/aa-vs-cja/cja-aa.md)
+      + [Jämför databehandling i Adobe Analytics och CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Virtuella rapporteringsmiljöer och sandlådemiljöer](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
    + [Borttagningskonsekvenser](getting-started/cja-deletion.md)
    + [CJA-ordlista](getting-started/cja-glossary.md)
 + Anslutningar {#cja-connections}
@@ -229,6 +232,5 @@ ht-degree: 35%
    + [Användarhandbok för Labs](labs/labs.md)
 + Felsökning {#troubleshooting}
    + [Jämför dina Adobe Analytics-data med CJA-data](troubleshooting/compare.md)
-   + [Jämför databehandling i Adobe Analytics och CJA](troubleshooting/data-processing-comparisons.md)
 + Sekretess {#cja-privacy}
    + [Sekretessöversikt](privacy/privacy-overview.md)
