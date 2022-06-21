@@ -4,7 +4,7 @@ description: Använd standardsökningar för att förbättra rapporter med anvä
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 # Lägga till standardsökningar i datauppsättningar
 
 >[!IMPORTANT]
->Standardsökningar är bara tillgängliga för datakällor i Analytics Data Connector i CJA. Du kan använda dem med Adobe Analytics standardimplementeringar eller [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)eller Experience Platform datainsamlings-API:erna.
+>Standardsökningar är bara tillgängliga för datakällor i Analytics Source Connector i CJA. Du kan använda dem med Adobe Analytics standardimplementeringar eller [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)eller Experience Platform datainsamlings-API:erna.
 
 Standarduppslag (kallas även uppslag som tillhandahålls av Adobe) förbättrar möjligheten för Customer Journey Analytics att rapportera om vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En &#39;standardsökning&#39; liknar en uppsättningen sökdata. Standardsökningar kan användas i olika Experience Cloud-organisationer. De tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten). Det finns en standarddatauppsättning för sökning för varje schemaplats som Adobe klassificerar.
 
 I traditionella Adobe Analytics visas de här dimensionerna fristående, men i CJA måste du aktivt ta med de här dimensionerna när du skapar datavyer. I anslutningsarbetsflödet väljer du en datauppsättning som är flaggad som en med en nyckel för standardsökning. Användargränssnittet för datavyer kan automatiskt inkludera alla standardsökningsdimensioner som är tillgängliga för rapportering. Uppslagsfilerna uppdateras automatiskt och är tillgängliga i alla regioner och för alla konton. De lagras i regionspecifika organisationer som är kopplade till kunden.
 
-## Använd standardsökningar med datauppsättningar för Adobe Data Connector
+## Använd standardsökningar med Adobe Source Connector-datauppsättningar
 
-Datauppsättningar för standardsökning tillämpas automatiskt vid rapporttillfället. Om du använder Analytics Data Connector och har en dimension som Adobe tillhandahåller en standardsökning för, tillämpar vi automatiskt den här standardsökningen. Om en händelsedatamängd innehåller XDM-fält kan vi använda standardsökningar på den.
+Datauppsättningar för standardsökning tillämpas automatiskt vid rapporttillfället. Om du använder Analytics Source Connector och har en dimension som Adobe tillhandahåller en standardsökning för, tillämpar vi automatiskt den här standardsökningen. Om en händelsedatamängd innehåller XDM-fält kan vi använda standardsökningar på den.
 
 <!--
 ### Specific IDs that need to be populated

@@ -1,10 +1,10 @@
 ---
 title: Använd mått för marknadsföringskanaler i Adobe Experience Platform
-description: Använd Analytics Data Connector för att överföra regler för bearbetning av marknadsföringskanaler till Adobe Experience Platform.
+description: Använd Analytics Source Connector för att överföra regler för bearbetning av marknadsföringskanaler till Adobe Experience Platform.
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Använd mått för marknadsföringskanaler i Adobe Experience Platform
 
-Om din organisation använder [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) för att lägga in rapportsvitsdata i CJA kan du konfigurera en anslutning i CJA för att rapportera mått för marknadsföringskanalen.
+Om din organisation använder [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) för att lägga in rapportsvitsdata i CJA kan du konfigurera en anslutning i CJA för att rapportera mått för marknadsföringskanalen.
 
 ## Förutsättningar
 
-* Rapportsvitens data måste redan ha importerats till Adobe Experience Platform med [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Andra datakällor stöds inte, eftersom marknadsföringskanaler använder bearbetningsregler i en Analytics-rapportserie.
+* Rapportsvitens data måste redan ha importerats till Adobe Experience Platform med [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Andra datakällor stöds inte, eftersom marknadsföringskanaler använder bearbetningsregler i en Analytics-rapportserie.
 * Bearbetningsregler för marknadsföringskanaler måste redan vara konfigurerade. Se [Bearbetningsregler för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html) i den traditionella guiden för Analytics Components.
 
 ## Schemaelement för marknadsföringskanal
 
-När du har upprättat Analytics Data Connector för en önskad rapportserie skapas ett XDM-schema åt dig. Det här schemat innehåller alla analysdimensioner och mätvärden som rådata. Dessa rådata innehåller inte attribuering eller beständighet. I stället kör varje händelse igenom regler för hantering av marknadsföringskanaler och registrerar den första regeln som den matchar. Du anger attribuering och beständighet när du skapar en datavy i CJA.
+När du har etablerat Analytics Source Connector för en önskad rapportsvit skapas ett XDM-schema åt dig. Det här schemat innehåller alla analysdimensioner och mätvärden som rådata. Dessa rådata innehåller inte attribuering eller beständighet. I stället kör varje händelse igenom regler för hantering av marknadsföringskanaler och registrerar den första regeln som den matchar. Du anger attribuering och beständighet när du skapar en datavy i CJA.
 
-1. [Skapa en anslutning](/help/connections/create-connection.md) som innehåller en datauppsättning baserad på Analytics Data Connector.
+1. [Skapa en anslutning](/help/connections/create-connection.md) som innehåller en datauppsättning baserad på Analytics Source Connector.
 2. [Skapa en datavy](/help/data-views/create-dataview.md) som har följande dimensioner:
    * **`channel.typeAtSource`**: Motsvarar [Marknadsföringskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension.
    * **`channel._id`**: Motsvarar [Marknadskanalsdetaljer](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html)
