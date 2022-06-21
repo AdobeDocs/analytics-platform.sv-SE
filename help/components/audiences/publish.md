@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
+source-git-commit: 454d931b8c9f9e4e960a01401623bc9eda4e21d8
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,19 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 ## Använda CJA-målgrupper i Experience Platform
 
+CJA tar nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). CJA skickar målgruppen vidare till Experience Platform med den primära identiteten inställd på det som valdes som person-ID när anslutningen konfigurerades.
 
-CJA tar nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan till exempel&quot;user@adobe.com&quot; användas på alla enheter och kanaler. Om ingen profil hittas skapas en ny.
+RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan till exempel&quot;user@adobe.com&quot; användas på alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Du kan visa CJA-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
 Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
 
 ![](assets/audiences-aep.png)
+
+## Vad händer om en användare inte längre är medlem i en publik i CJA?
+
+I det här fallet skickas en exit-händelse till Experience Platform från CJA.
 
 ## Nästa steg
 
