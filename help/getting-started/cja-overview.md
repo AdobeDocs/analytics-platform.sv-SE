@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1149'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Här är en videoöversikt av Customer Journey Analytics:
 
 Customer Journey Analytics utvidgar räckvidden för Adobe Analytics genom att erbjuda lättanvända funktioner för flera kanaler och ta bort begränsningar i tidigare versioner av Adobe Analytics. Några viktiga förbättringar är:
 
-* **Obegränsade variabler och händelser**: Begreppen eVars, props och events finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha en obegränsad mängd unika mått och mätvärden.
+* **Obegränsade variabler och händelser**: Begreppen eVars, props och events finns inte längre. Data fokuseras främst på dimensioner och mätvärden. Datauppsättningar kan ha ett obegränsat antal unika mått och mätvärden.
 * **Obegränsade unika värden**: Adobe Experience Platform begränsas inte till några unika begränsningar.
 * **Ändra historiska data**: Med Adobe Experience Platform kan data tas bort eller korrigeras.
 * **Data för flera rapporter**: Befintliga implementeringar från flera datauppsättningar kan kombineras i Platform.
@@ -41,9 +41,9 @@ Med Customer Journey Analytics kan du:
 * **Se kunden i ett kundresandesammanhang**: Du kan visa och analysera data sekventiellt, över flera kanaler. Data från ert callcenter, era POS-system och onlineegenskaper kan kombineras till en enda rapportvy.
 * **Gör insikter tillgängliga för alla**: Demokratisera dataåtkomsten och låt fler människor fatta affärsbeslut med hjälp av datainriktade insikter. Alla i organisationen som ansvarar för någon aspekt av kundupplevelsen kan fatta riktiga beslut snabbare, baserat på mer fullständiga data.
 * **Utnyttja kraften i datavetenskap för era analytiker**: Customer Journey Analytics låter vanliga människor använda datavetenskap för att få djupgående insikter och analyser.
-* **Visualisera och interagera med era datauppsättningar med ad hoc-rapportering**: Arbetsytan kan använda alla datauppsättningar från Adobe Experience Platform som uppfyller vissa grundläggande regler.
+* **Visualisera och interagera med datauppsättningar med hjälp av on demand-rapportering**: Arbetsytan kan använda alla datauppsättningar från Adobe Experience Platform som uppfyller vissa grundläggande regler.
 * **Visa data som inte är webbdata**: Arbetsytan är inte längre begränsad till en fast definition av en träff eller händelse. Anpassade scheman ger fullständig kontroll över data och definitioner.
-* **Få bättre kontroll över datahanteringen**: Ändra data som du har överfört, skapa nya datauppsättningar och importera dem till arbetsytan. Adobe Experience Platform tillhandahåller verktyg för att fråga, extrahera, omforma och läsa in med Experience Cloud Query Service.
+* **Få bättre kontroll över datahanteringen**: Ändra data som du har överfört, skapa datauppsättningar och importera dem till arbetsytan. Adobe Experience Platform tillhandahåller verktyg för att fråga, extrahera, omforma och läsa in med Experience Cloud Query Service.
 
 ## Förutsättningar
 
@@ -54,11 +54,11 @@ Innan du kan börja använda Customer Journey Analytics måste följande krav va
 
 ## Behörigheter för administratörsåtkomst
 
-Om du vill skapa anslutningar, lägga till datauppsättningar osv. behöver du följande behörigheter i dialogrutan [Admin Console](https://adminconsole.adobe.com/enterprise/):
+Om du vill skapa anslutningar, lägga till datauppsättningar och så vidare, behöver du följande behörigheter i [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* Om du vill få åtkomst till Customer Journey Analytics eller skapa en anslutning måste du läggas till som administratör för **Customer Journey Analytics** i [Admin Console](https://adminconsole.adobe.com/enterprise/). Produktadministratörer har följande behörigheter:
+* Om du vill få åtkomst till Customer Journey Analytics eller skapa en anslutning måste du lägga till som administratör för **Customer Journey Analytics** i [Admin Console](https://adminconsole.adobe.com/enterprise/). Produktadministratörer har följande behörigheter:
    * Skapa/uppdatera/ta bort anslutningar eller datavyer
-   * Uppdatera/ta bort projekt, filter, beräkningstal eller filter som skapats av andra användare
+   * Uppdatera/ta bort projekt, filter, beräknade värden eller filter som skapats av andra användare
    * Dela ett Workspace-projekt till alla användare
 * Det räcker inte att bli produktadministratör i Customer Journey Analytics för att skapa, uppdatera eller ta bort en anslutning. Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform produktprofil** som ger dig följande behörigheter:
    * Visa scheman
@@ -70,7 +70,7 @@ Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll
 
 >[!NOTE]
 >
->Du kan inte tillåta enskilda värden eller dimensioner i Customer Journey Analytics, som i vanliga Adobe Analytics. Mätvärden och dimensioner kan ändras i [datavyer](/help/data-views/data-views.md) och kan således komma att ändras i CJA, vilket också ändrar rapporteringen retroaktivt.
+>Du kan inte bevilja eller neka tillstånd för enskilda mått eller mått i Customer Journey Analytics på samma sätt som i vanliga Adobe Analytics. Mätvärden och dimensioner kan ändras i [datavyer](/help/data-views/data-views.md) och kan således komma att ändras i CJA, vilket också ändrar rapporteringen retroaktivt.
 
 ### Användaråtkomst
 
@@ -94,9 +94,9 @@ Customer Journey Analytics är en funktion bland många som är beroende av Adob
 
 Med Adobe Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser. Kunddata på plattformen lagras som datauppsättningar, som består av ett schema och grupper med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
-Från datainmatning till direkt SQL-åtkomst - flera komponenter i Experience Platform är centrala för Customer Journey Analytics och samverkar med dem:
+Från datainmatning till direkt SQL-åtkomst - flera komponenter från Experience Platform är centrala för Customer Journey Analytics och kompletterar dem:
 
-* [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html): Använd standard-SQL för att hämta data från Adobe Experience Platform, t.ex. data från Adobe-lösningar, kunddata från första part eller andra plattformsdata. Det är ett serverlöst verktyg som gör att du kan ansluta till valfria datauppsättningar och samla in frågeresultaten som en ny datamängd som kan användas för rapportering, datavetenskapen eller för inmatning i profiltjänsten. Du kan använda frågetjänsten för att bygga dataanalysekosystem och skapa en bild av konsumenterna över deras olika interaktionskanaler. Dessa kanaler kan omfatta försäljningsställen, webb-, mobil-, CRM-system etc.
+* [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html): Använd standard-SQL för att hämta data från Adobe Experience Platform, t.ex. data från Adobe-lösningar, kunddata från första part eller andra plattformsdata. Det är ett serverlöst verktyg som gör att du kan ansluta till valfria datauppsättningar och samla in frågeresultaten som en ny datamängd som kan användas för rapportering, datavetenskapen eller för inmatning i profiltjänsten. Du kan använda frågetjänsten för att bygga dataanalysekosystem och skapa en bild av konsumenterna över deras olika interaktionskanaler. Dessa kanaler kan omfatta försäljningsställen, webb, mobiler, CRM-system osv.
 * [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html):
 * [Identitetstjänst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html):
 * [Datavetenskapens arbetsyta](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html) i&quot;developer&quot; option: kan ni använda färdiga artificiell intelligens (AI) och maskininlärningsmodeller i Adobe Experience Platform för att påverka olika delar av kundresan. Genom att lyfta fram dolda insikter kan ni göra bättre prognoser över kundresan, föreslå rekommenderade bästa nästa steg eller automatisera krångliga processer.

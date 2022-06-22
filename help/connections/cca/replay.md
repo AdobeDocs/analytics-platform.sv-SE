@@ -4,9 +4,9 @@ description: Förstå begreppet"replay" i flerkanalsanalys
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ CCA försöker sammanfoga varje händelse när den samlas till kända enheter oc
 | `3` | - | - | `Bob` | `Bob` | Bob ringer kundtjänst | `2` (246 och Bob) |
 | `4` | `3579` | - | - | `3579` | Bob kommer åt din webbplats på sin mobila enhet, oautentiserad | `3` (246, Bob och 3579) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob loggar in via mobilen | `3` (246, Bob och 3579) |
-| `6` | - | - | `Bob` | `Bob` | Bob ringer till kundtjänst igen | `3` (246, Bob och 3579) |
+| `6` | - | - | `Bob` | `Bob` | Bob ringer kundtjänst igen | `3` (246, Bob och 3579) |
 | `7` | `246` | - | - | `Bob` | Bob besöker din webbplats på sin dator igen, oautentiserad | `3` (246, Bob och 3579) |
 
 Både oautentiserade och autentiserade händelser på nya enheter räknas som separata personer (tillfälligt). Oautentiserade händelser på kända enheter sys i realtid.
@@ -55,7 +55,7 @@ Med regelbundna intervall (en gång i veckan eller en gång om dagen beroende p�
 | `3` | - | - | `Bob` | `Bob` | Bob ringer kundtjänst | `1` (Bob) |
 | `4` | `3579` | - | - | `Bob` | Bob kommer åt din webbplats på sin mobila enhet, oautentiserad | `1` (Bob) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob loggar in via mobilen | `1` (Bob) |
-| `6` | - | - | `Bob` | `Bob` | Bob ringer till kundtjänst igen | `1` (Bob) |
+| `6` | - | - | `Bob` | `Bob` | Bob ringer kundtjänst igen | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob besöker din webbplats på sin dator igen, oautentiserad | `1` (Bob) |
 
 >[!NOTE]
