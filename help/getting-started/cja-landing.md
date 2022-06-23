@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 85b804d2bb67daf1f69433524d1cd8fab0e4c5d5
+source-git-commit: 464961194405341b0bb8240a9e327d668d4cde64
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '404'
 ht-degree: 3%
 
 ---
@@ -26,19 +26,21 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
      <ul>
        <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Kombinera rapportsviter med olika scheman </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en"> CJA Audience publishing </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=en"> Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=en"> Jämför databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=en"> Virtuella rapportsviter, datavyer, AEP-sandlådor och Analytics Source Connector </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html"> Adobe Analytics till Customer Journey Analytics evolutionen </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html"> CJA User Guide for Adobe Analytics users </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Använd de utökade funktionerna för anslutningshantering </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html#cja-dataviews"> Använd de förbättrade datavyer-funktionerna </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html#cja-usecases"> Importera data från Google Analytics till Adobe Experience Platform </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html#cja-usecases"> Analysera Google Analytics-data i CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#cja-connections"> Flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics) </a> </li>
+   <td colname="col2" valign="top"><p class="head"> <b>Komma igång</b> </p> 
+      <ul> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html"> Komma igång med Customer Journey Analytics </a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html"> Vanliga frågor</a> </li> 
-   <td colname="col2" valign="top"> <p class="head"><b>Versionsinformation</b> </p> 
-    <ul> 
-     <li>Se de senaste <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html" format="https" scope="external"> Customer Journey Analytics Notes</a> för nya funktioner och korrigeringar. </li>
-    <td colname="col2" valign="top"> <p class="head"><b>CJA API</b> </p> 
+   </ul> <p class="head"><b>Versionsinformation</b> </p> 
+     <li>Se de senaste <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html" format="https" scope="external"> Versionsinformation för Customer Journey Analytics</a> för nya funktioner och korrigeringar. </li>
+    <td colname="col3" valign="top"> <p class="head"><b>CJA API</b> </p> 
     <ul> 
      <li>Se alla <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> Customer Journey Analytics API:er</a>. </li>
       <li>Se de senaste <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> Customer Journey Analytics Reporting API</a>. </li>
