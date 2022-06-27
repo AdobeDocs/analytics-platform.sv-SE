@@ -2,9 +2,9 @@
 title: Kombinera rapportsviter med olika scheman
 description: Lär dig hur du använder Data Prep för att kombinera rapportsviter med olika scheman
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1335'
 ht-degree: 1%
 
 ---
@@ -156,6 +156,6 @@ Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data
 
 ## Data Prep vs. komponent-ID
 
-Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i CJA när du vill kombinera data från flera datauppsättningar till en enda CJA-anslutning. Om du tänker behålla rapportsviterna i separata CJA-anslutningar men vill använda en uppsättning rapporter för alla dessa anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i CJA, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) för mer information.
+Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i CJA när du vill kombinera data från flera datauppsättningar till en enda CJA-anslutning. Om du tänker behålla rapportsviterna i separata CJA-anslutningar men vill använda en uppsättning rapporter för alla anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i CJA, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) för mer information.
 
 Ändring av komponent-ID:t är en CJA-funktion och påverkar inte data från Analytics Source Connector som skickas till kundprofilen i realtid och RTCDP.

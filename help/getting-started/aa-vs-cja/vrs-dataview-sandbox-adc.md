@@ -1,13 +1,13 @@
 ---
 title: Virtuella rapportsviter, datavyer, AEP-sandlådor och Analytics Source Connector
 description: Lär dig mer om virtuella rapporteringsmiljöer och sandlådemiljöer.
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
-
 
 # Virtuella rapportsviter, datavyer, AEP-sandlådor och Analytics Source Connector
 
