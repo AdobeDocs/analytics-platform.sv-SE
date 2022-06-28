@@ -2,9 +2,9 @@
 title: STÖD, ECID, AACUSTOMID och Analytics Source Connector
 description: Läs om hur Analytics Source Connector hanterar Adobe Analytics identitetsfält.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 89fb87653355ffe174d9ad7e19eb5979dd78eaaf
+source-git-commit: 4c9d87b6c6b7859ffac4cd2d26e8c89d12fe1285
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,4 +51,6 @@ Inom identityMap:
 I annat fall markeras AID som händelsens primära identitet.
 * AACUSTOMID markeras aldrig som händelsens primära ID. Om det finns ett AACUSTOMID, baseras AAID dock på AACUSTOMID enligt beskrivningen ovan.
 
-När det gäller CJA är definitionen av primärt ID bara viktig om slutanvändaren bestämmer sig för att använda primärt ID som person-ID. Det är dock inte obligatoriskt att göra detta. Användaren kan välja någon annan identitetskolumn som person-ID.
+## CJA och primärt ID
+
+När det gäller CJA är definitionen av primärt ID bara viktig om du bestämmer dig för att använda primärt ID som person-ID. Det är dock inte obligatoriskt att göra detta. Du kan välja någon annan identitetskolumn som person-ID.
