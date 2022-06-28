@@ -4,16 +4,16 @@ description: Så här använder och tolkar du panelen Medieuppspelningstid för 
 feature: Panels
 role: User, Admin
 exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
 # Medieuppspelningstid spenderad panel
 
-Media Analytics-kunder kan analysera den uppspelningstid som använts för att förstå var maximal samtidighet inträffade eller var bortfall inträffade för att ge värdefull insikt i innehållets och visningsprogrammets kvalitet och för att hjälpa till med felsökning eller planering av volym eller skala.
+Du kan analysera den uppspelningstid som använts för att förstå var maximal samtidighet inträffade eller var bortfall inträffade för att få värdefulla insikter om innehållets och visningsprogrammets kvalitet och för att hjälpa till med felsökning eller planering av volym eller skala.
 
 I Analysis Workspace är uppspelningstid den tid som du har lagt på att visa medieströmmar vid en viss tidpunkt, och omfattar paus, buffert och tid till start.
 
