@@ -3,14 +3,20 @@ title: Indata och utdata från panelen Medieuppspelningstid för spenderad tid
 description: Vilka är inställningarna för Media Playback Time Spent (Tid för uppspelning av media)?
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: 4c0380ff-f55c-48a7-a4b2-1a291511e4d9
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
 # Indata och utdata för panelen Medieuppspelningstid {#Inputs-and-outputs}
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
+
 
 Du kan anpassa Media Playback Time Spent-panelen med följande inställningar för in- och utdata.
 

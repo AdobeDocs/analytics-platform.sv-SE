@@ -3,14 +3,20 @@ title: Panelen för samtidiga medieanvändare
 description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
 
 # Panelen för samtidiga medieanvändare
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
+
 
 Ni kan analysera samtidiga visningsprogram för att förstå var maximal samtidighet inträffade eller var bortfall inträffade för att ge värdefull insikt i innehållets och visningsprogrammets kvalitet och för att hjälpa till med felsökning eller planering av volym eller skala.
 

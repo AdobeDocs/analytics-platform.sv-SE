@@ -3,14 +3,20 @@ title: Medieuppspelningstid spenderad panel
 description: Så här använder och tolkar du panelen Medieuppspelningstid för spenderad tid i Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
 # Medieuppspelningstid spenderad panel
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
+
 
 Du kan analysera den uppspelningstid som använts för att förstå var maximal samtidighet inträffade eller var bortfall inträffade för att få värdefulla insikter om innehållets och visningsprogrammets kvalitet och för att hjälpa till med felsökning eller planering av volym eller skala.
 
