@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2165'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 1%
 | Stöds sammanslagning från anonymt beteende till autentiserat beteende? | Ja. [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) läser användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. |
 | Hur fungerar&quot;replay&quot; i CCA? | CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. Replay gör att nya enheter i anslutningen sammanfogas. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
 | Hur fungerar sammanfogning av historiska data (backfill) i CCA? | När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
+| Vilket beteende förväntas för datauppsättningsposter som inte är sammanfogade? | **Exempel på scenario**: Du ansluter till två datauppsättningar i en CJA-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i datauppsättningen för webbhändelser. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i CJA. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas. |
 
 {style=&quot;table-layout:auto&quot;}
 
