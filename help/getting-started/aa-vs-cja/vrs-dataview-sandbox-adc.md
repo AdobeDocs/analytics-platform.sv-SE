@@ -2,9 +2,9 @@
 title: Virtuella rapportsviter, datavyer, AEP-sandlådor och Analytics Source Connector
 description: Lär dig mer om virtuella rapporteringsmiljöer och sandlådemiljöer.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
+source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och san
 
 Mer information finns i: [Översikt över virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
 
-Ett VRS:
+En virtuell rapportsvit:
 
 * Kan baseras på Adobe Analytics-segment.
 * Kan tillämpas på både historiska och nya data på ett icke-förstörande sätt.
