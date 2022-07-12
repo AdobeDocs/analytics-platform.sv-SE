@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 159e24bb2a0dc40463679a6a672af773e8ce101f
+source-git-commit: 70df0ae886508b703d0b87d3608b75f21d7952a6
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '843'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,6 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Juni 2022 | Ny artikel på [Analytics Labs i CJA](/help/labs/labs.md) |
 | Juni 2022 | Nytt avsnitt på [stöd för numeriska fält som söknycklar och sökvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
 | Juni 2022 | Uppdateringar av [Arbetsflöde för visualisering av flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md) |
-| Juni 2022 | Ny dokumentation om [Målgruppspublicering i kundprofil i realtid](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
 | Maj 2022 | Avsevärt uppdaterad artikel om [skapa anslutningar](/help/connections/create-connection.md) i CJA. |
 | Maj 2022 | Ny artikel om hur man [hantera datablock i CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
 | Maj 2022 | Ny artikel på [Inhämta Adobe Experience Platform-målgrupper till CJA](/help/use-cases/ingest-aep-segments.md) |
