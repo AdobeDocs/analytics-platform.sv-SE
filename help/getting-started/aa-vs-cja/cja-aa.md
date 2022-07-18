@@ -4,7 +4,7 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 434695e87a0b342da9c17c94b93e0253cf1e621e
+source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 3%
@@ -67,6 +67,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Inställningar för beständighet av eVar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Dimensioner som anges i datavyer är begränsade till högst 90 dagars beständighet och stöder inte obegränsad beständighet. |
 | GeoSegmenteringsdimensioner | All GeoSegmentation/geography som samlas in i Adobe Analytics flödar till CJA via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementeringar som inte använder Analytics Source Connector, t.ex. de som använder AEP Web SDK för digital datainsamling, kommer inte att ha det fullständiga urvalet av geografiska sökningar som utförs automatiskt: Land och delstat stöds globalt, vilket inte gäller för stad och postnummer. |
 | Marknadsföringskanaler | Marknadsföringskanalernas data flödar till CJA via Analytics Source Connector. Reglerna för marknadsföringskanaler måste fortfarande konfigureras i traditionella Adobe Analytics. Vissa regler stöds inte. Mer information finns på [Dokumentation för CJA Marketing Channels](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases). |
+| Ny eller upprepad sessionsrapportering | Stöds med ett 13-månaders uppslagsfönster. |
 | Produktvariabel | I Experience Platform kan användare använda en array med objekttypsfält i ett dataset-schema för att tillgodose detta användningsfall. Inom CJA kan kunderna använda valfritt antal produktvariabler och begränsas inte till en enda variabel som i Adobe Analytics. |
 | Projektdelning | Projektdelning stöds endast mellan CJA-användare - det finns ingen projektdelning mellan CJA och det traditionella Analysis Workspace. |
 | Visualiseringar | Alla visualiseringar stöds förutom för kartvisualisering. |
@@ -97,7 +98,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Projektmallar | Support planeras. |
 | Realtidsrapportering | Support planeras. |
 | Segment IQ | Support planeras. |
-| Ny eller upprepad sessionsrapportering | Support planeras med några kavaetter. |
 
 {style=&quot;table-layout:auto&quot;}
 

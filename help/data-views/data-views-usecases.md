@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: f698b236ec37439b1edf7c28497baa8330b05015
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De här användningsexemplen visar hur flexibla och kraftfulla datavyer är i Customer Journey Analytics.
 
-## 1. Skapa ett mått från ett strängschemafält
+## 1. Skapa ett mått från ett strängschemafält {#string}
 
 När du skapar en datavy kan du till exempel skapa en [!UICONTROL Orders] mått från en [!UICONTROL pageTitle] schemafält som är en sträng. Så här gör du:
 
@@ -32,7 +32,7 @@ Du kan också skapa en annan [!UICONTROL Orders] mätvärden från samma fält o
 
 Ett annat exempel är att använda besökar-ID, en dimension, som ett mått för att avgöra hur många besökar-ID ditt företag har.
 
-## 2. Använd heltal som dimensioner
+## 2. Använd heltal som dimensioner {#integers}
 
 Tidigare behandlades heltal automatiskt som mått i CJA. Nu kan numeriska värden (inklusive anpassade händelser från Adobe Analytics) behandlas som dimensioner. Här är ett exempel:
 
@@ -44,7 +44,7 @@ Tidigare behandlades heltal automatiskt som mått i CJA. Nu kan numeriska värde
 
    ![](assets/bucketing.png)
 
-## 3. Använd numeriska mått som&quot;mått&quot; i flödesdiagram
+## 3. Använd numeriska mått som&quot;mått&quot; i flödesdiagram {#numeric}
 
 Du kan använda en numerisk dimension för att få in &quot;mått&quot; i [!UICONTROL  Flow] visualisering.
 
@@ -53,7 +53,7 @@ Du kan använda en numerisk dimension för att få in &quot;mått&quot; i [!UICO
 
 ![](assets/flow.png)
 
-## 4. Gör underhändelsefiltrering
+## 4. Gör underhändelsefiltrering {#sub-event}
 
 Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionerna för att inkludera/exkludera kan du filtrera på underhändelsenivå, medan filter (segment) som är inbyggda i filterverktyget bara ger dig filtrering på händelsenivå. Du kan alltså filtrera efter händelser genom att använda Inkludera/Exkludera i datavyer och sedan referera till det nya måttet/måttet i ett filter på händelsenivå.
 
@@ -69,13 +69,13 @@ f. Ange&quot;50&quot; som värde.
 
 Med de här nya inställningarna kan du bara visa värdefulla intäkter och filtrera bort vad som helst under 50 dollar.
 
-## 5. Använd [!UICONTROL No Value Options] inställning
+## 5. Använd [!UICONTROL No Value Options] inställning {#no-value}
 
 Företaget kan ha ägnat tid åt att utbilda dina användare så att de förväntar sig&quot;Ospecificerat&quot; i rapporter. Standardvärdet i datavyer är &quot;Inget värde&quot;. Nu kan du [ändra namn på &quot;Inget värde&quot; till &quot;Ospecificerat&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-no-value-options-settings) i användargränssnittet för datavyer.
 
 Ett annat exempel är en dimension för registrering av medlemsprogram. I det här fallet kan du ändra namnet&quot;Inget värde&quot; till&quot;Inget medlemskap i programmet&quot;.
 
-## 6. Skapa flera mätvärden med olika [!UICONTROL Attribution] inställningar
+## 6. Skapa flera mätvärden med olika [!UICONTROL Attribution] inställningar {#attribution}
 
 Använda [!UICONTROL Duplicate] i det övre högra hörnet skapar du ett antal intäktsmått med olika attribueringsinställningar som [!UICONTROL First Touch], [!UICONTROL Last Touch]och [!UICONTROL Algorithmic].
 
@@ -85,3 +85,30 @@ Glöm inte att byta namn på varje mätvärde för att återspegla skillnaderna,
 
 Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview.md).
 En konceptuell översikt över datavyer finns på [Översikt över datavyer](/help/data-views/data-views.md).
+
+## Ny eller upprepad sessionsrapportering {#new-repeat}
+
+Du kan avgöra om en session faktiskt är den första sessionen någonsin för en användare eller inte, baserat på det rapportfönster som du har definierat för datavyn och ett 13-månaders uppslagsfönster. Med den här rapporten kan du till exempel avgöra:
+
+* Hur stor procentandel av dina beställningar kommer från nya eller återkommande sessioner?
+
+* För en viss marknadsföringskanal, eller för en viss kampanj, riktar ni er till förstagångsanvändare eller returanvändare? Hur påverkade dessa val konverteringsgraden?
+
+Tre komponenter underlättar denna rapportering:
+
+* 1 dimension: Nya kontra returnerade sessioner
+
+* 2 mätvärden: Nya sessioner, retursessioner
+
+Så här kommer du åt de här komponenterna:
+
+1. Gå till datavyredigeraren.
+1. Klicka på **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tabben i den vänstra listen.
+1. Dra dem till datavyn.
+
+95-99 % av tiden rapporteras nya sessioner korrekt. De enda undantagen är:
+
+* När en session inträffar före 13-månaders uppslagsfönster. Den här sessionen kommer att ignoreras.
+
+* När en session sträcker sig över både uppslagsfönstret och rapportfönstret. Låt oss säga att du har en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle omfatta 1 maj 2021 till 31 maj 2022. Om en session skulle påbörjas den 30 maj 2022 och avslutas den 1 juni 2022 eftersom sessionen ingår i bakåtsökningsfönstret räknas alla sessioner i rapportfönstret som återkommande sessioner.
+

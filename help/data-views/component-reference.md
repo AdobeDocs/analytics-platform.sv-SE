@@ -4,9 +4,9 @@ description: Information och information om alla standardkomponenter som du kan 
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ De flesta dimensioner och mått i CJA baseras på schemaelement från din Adobe 
 
 ![Standardkomponenter](assets/standard-components.png)
 
-## Nödvändiga standardkomponenter
+## Nödvändiga standardkomponenter {#required}
 
 Dessa nödvändiga standardkomponenter läggs som standard till i varje datavy. De är nödvändiga för de rapporteringsfunktioner som Customer Journey Analytics erbjuder.
 
@@ -36,7 +36,7 @@ Dessa nödvändiga standardkomponenter läggs som standard till i varje datavy. 
 | [!UICONTROL Quarter] | Dimension | Det kvartal som en viss händelse inträffade. Den första dimensionsuppgiften är det första kvartalet i datumintervallet och den sista dimensionsuppgiften är det sista kvartalet i datumintervallet. |
 | [!UICONTROL Year] | Dimension | Det år då en viss händelse inträffade. Den första dimensionsuppgiften är det första året i datumintervallet och den sista dimensionsuppgiften är det senaste året i datumintervallet. |
 
-## Valfria standardkomponenter
+## Valfria standardkomponenter {#optional}
 
 Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Standard Components]** -fliken.
 
@@ -48,15 +48,19 @@ Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONT
 | [!UICONTROL Day of Month] | Tidsdelningsdimension | 1-31 |
 | [!UICONTROL Day of Week] | Tidsdelningsdimension | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
 | [!UICONTROL Day of Year] | Tidsdelningsdimension | 1-366 |
+| [!UICONTROL First-time session] | Mått | En persons definierade första session i rapporteringsfönstret |
 | [!UICONTROL Hour of Day] | Tidsdelningsdimension | 0-23 |
 | [!UICONTROL  Month of Year] | Tidsdelningsdimension | Januari-december |
 | [!UICONTROL Person ID] | Dimension | Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. The [!UICONTROL Person ID] är grunden för att kombinera datauppsättningar och identifiera unika besökare i CJA.<p>Möjliga användningsområden:<ul><li>Skapa ett filter för ett specifikt person-ID-värde för att filtrera allt efter användarens beteende.</li><li>Felsökning: Kontrollera att det finns data för ett specifikt cookie-ID (eller ett specifikt kund-ID).</li><li>Identifiera de användare som ringde in till ett callcenter.</li></ul> |
 | [!UICONTROL Person ID namespace] | Dimension | Vilken typ av ID [!UICONTROL Person ID] består av. Exempel: `email address`, `cookie ID`, `Analytics ID`, osv. |
 | [!UICONTROL Quarter of Year] | Tidsdelningsdimension | Q1, Q2, Q3, Q4 |
+| [!UICONTROL Return session] | Mått | Antalet sessioner som inte var en persons första session någonsin. |
 | [!UICONTROL Session Starts] | Mått | Antalet händelser som var den första händelsen i en session. Vid användning i en filterdefinition (t.ex. &#39;[!UICONTROL Session Starts] finns&#39;), filtreras ned till den första händelsen i varje session. |
 | [!UICONTROL Session Ends] | Mått | Antalet händelser som var den sista händelsen i en session. Liknar [!UICONTROL Session Starts]kan den också användas i en filterdefinition för att filtrera fram till den sista händelsen i varje session. |
+| [!UICONTROL Session Type] | Dimension | Dimensionen har två värden: 1) [!UICONTROL First-Time] och 2) Returning. The [!UICONTROL First-time] radartikel innehåller allt beteende (dvs. mått mot denna dimension) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte ingår i något möte skulle de ingå i&quot;Ej tillämpligt&quot;-begränsningen för denna dimension. [Läs mer](/help/data-views/data-views-usecases.md) |
 | [!UICONTROL Time Spent (seconds)] | Mått | Sammanställer tiden mellan två olika värden för en dimension. |
 | [!UICONTROL Time Spent per Event] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Event] fickor. |
 | [!UICONTROL Time Spent per Session] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Session] fickor. |
 | [!UICONTROL Time Spent per Person] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Person] fickor. |
 | [!UICONTROL Weekend]/[!UICONTROL Weekday] | Tidsdelningsdimension | Veckoslut eller Veckodag |
+
