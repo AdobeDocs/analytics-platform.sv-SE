@@ -3,10 +3,10 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 0111cf5c9eaef92377a4d90b81e58c2a0432b074
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 3%
+source-wordcount: '217'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Sessionsrapportering för första kontra upprepade | Du kan nu identifiera om en viss session var användarens första session någonsin. [Läs mer - att följa] | 20 juli 2022 |
+| Sessionsrapportering för första kontra upprepade | Du kan nu identifiera om en viss session var användarens första session någonsin. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 20 juli 2022 |
 | Stöd för numeriska fält som söknycklar och sökvärden | Detta är användbart om du vill klassificera strängvärden med ett numeriskt fält, t.ex. en COGS eller marginal på en produkts SKU. Genom att tillåta mätvärden från sökningar kan ni få in dessa datapunkter i rapporteringen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 20 juli 2022 |
 
 ## Korrigeringar

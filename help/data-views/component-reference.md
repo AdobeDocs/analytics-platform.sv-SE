@@ -4,7 +4,7 @@ description: Information och information om alla standardkomponenter som du kan 
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -48,9 +48,9 @@ Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONT
 | [!UICONTROL Day of Month] | Tidsdelningsdimension | 1-31 |
 | [!UICONTROL Day of Week] | Tidsdelningsdimension | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
 | [!UICONTROL Day of Year] | Tidsdelningsdimension | 1-366 |
-| [!UICONTROL First-time session] | Mått | En persons definierade första session i rapporteringsfönstret |
 | [!UICONTROL Hour of Day] | Tidsdelningsdimension | 0-23 |
 | [!UICONTROL  Month of Year] | Tidsdelningsdimension | Januari-december |
+| [!UICONTROL New session] | Mått | En persons definierade första session i rapporteringsfönstret |
 | [!UICONTROL Person ID] | Dimension | Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code osv. The [!UICONTROL Person ID] är grunden för att kombinera datauppsättningar och identifiera unika besökare i CJA.<p>Möjliga användningsområden:<ul><li>Skapa ett filter för ett specifikt person-ID-värde för att filtrera allt efter användarens beteende.</li><li>Felsökning: Kontrollera att det finns data för ett specifikt cookie-ID (eller ett specifikt kund-ID).</li><li>Identifiera de användare som ringde in till ett callcenter.</li></ul> |
 | [!UICONTROL Person ID namespace] | Dimension | Vilken typ av ID [!UICONTROL Person ID] består av. Exempel: `email address`, `cookie ID`, `Analytics ID`, osv. |
 | [!UICONTROL Quarter of Year] | Tidsdelningsdimension | Q1, Q2, Q3, Q4 |

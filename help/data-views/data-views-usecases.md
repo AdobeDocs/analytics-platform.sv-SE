@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: f698b236ec37439b1edf7c28497baa8330b05015
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Glöm inte att byta namn på varje mätvärde för att återspegla skillnaderna,
 Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview.md).
 En konceptuell översikt över datavyer finns på [Översikt över datavyer](/help/data-views/data-views.md).
 
-## Ny eller upprepad sessionsrapportering {#new-repeat}
+## 7. Ny eller upprepad sessionsrapportering {#new-repeat}
 
 Du kan avgöra om en session faktiskt är den första sessionen någonsin för en användare eller inte, baserat på det rapportfönster som du har definierat för datavyn och ett 13-månaders uppslagsfönster. Med den här rapporten kan du till exempel avgöra:
 
@@ -96,9 +96,9 @@ Du kan avgöra om en session faktiskt är den första sessionen någonsin för e
 
 Tre komponenter underlättar denna rapportering:
 
-* 1 dimension: Nya kontra returnerade sessioner
+* 1 dimension: [Sessionstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Den här dimensionen har två värden: 1) [!UICONTROL New] och 2) [!UICONTROL Returning]. The [!UICONTROL New] radartikel innehåller allt beteende (dvs. mått mot denna dimension) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte ingår i någon session faller de inom&quot;Ej tillämpligt&quot;-begränsningen för denna dimension.
 
-* 2 mätvärden: Nya sessioner, retursessioner
+* 2 mätvärden: [Nya sessioner, retursessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). En ny session definieras som en persons definierade första session i rapportfönstret. Retursessioner är antalet sessioner som inte var en persons första session någonsin.
 
 Så här kommer du åt de här komponenterna:
 
@@ -108,7 +108,7 @@ Så här kommer du åt de här komponenterna:
 
 95-99 % av tiden rapporteras nya sessioner korrekt. De enda undantagen är:
 
-* När en session inträffar före 13-månaders uppslagsfönster. Den här sessionen kommer att ignoreras.
+* När en första session ägde rum före 13-månaders uppslagsfönster. Den här sessionen kommer att ignoreras.
 
 * När en session sträcker sig över både uppslagsfönstret och rapportfönstret. Låt oss säga att du har en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle omfatta 1 maj 2021 till 31 maj 2022. Om en session skulle påbörjas den 30 maj 2022 och avslutas den 1 juni 2022 eftersom sessionen ingår i bakåtsökningsfönstret räknas alla sessioner i rapportfönstret som återkommande sessioner.
 
