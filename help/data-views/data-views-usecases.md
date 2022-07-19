@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,10 @@ Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/dat
 En konceptuell översikt över datavyer finns på [Översikt över datavyer](/help/data-views/data-views.md).
 
 ## 7. Ny eller upprepad sessionsrapportering {#new-repeat}
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande begränsad i testningen.
 
 Du kan avgöra om en session faktiskt är den första sessionen någonsin för en användare eller inte, baserat på det rapportfönster som du har definierat för datavyn och ett 13-månaders uppslagsfönster. Med den här rapporten kan du till exempel avgöra:
 
