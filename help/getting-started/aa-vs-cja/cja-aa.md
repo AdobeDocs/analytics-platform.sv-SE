@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 0adc1c6a285bcabc1023834b39a315be1860b7d9
+source-git-commit: 9d928a68e9b2eb16ba14cd793857547432ba11b0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1397'
 ht-degree: 3%
 
 ---
@@ -80,7 +80,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Punktfiltrering | För [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
-| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Panelerna Segmentjämförelse, Analytics for Target (A4T) och Media Concurrent Viewer stöds inte. |
+| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
 | Bearbetningsregler | För Analytics Source Connector-baserade datauppsättningar tillämpas fortfarande bearbetningsregler. [Prestandafunktioner för data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) kan också användas som ersättning för bearbetningsregler för data som går direkt till plattformen. |
 
 {style=&quot;table-layout:auto&quot;}
