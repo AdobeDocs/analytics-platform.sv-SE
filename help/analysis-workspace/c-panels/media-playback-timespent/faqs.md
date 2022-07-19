@@ -4,19 +4,14 @@ description: Vilka är de vanliga frågorna för Media Playback Time?
 feature: Panels
 role: User, Admin
 exl-id: be5d5557-ef5f-4a13-8d4c-0a64a8163412
-source-git-commit: 2321e59570cec9e34fc003a4011ded7906d11475
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '245'
+ht-degree: 1%
 
 ---
 
 # Vanliga frågor om hur länge medieuppspelning används
-
->[!NOTE]
->
->Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
-
 
 | Fråga | Svar |
 |---|---|
