@@ -1,19 +1,20 @@
 ---
-description: Beskriver vilka faktorer som påverkar konsekvensen i mätvärden mellan Real-time Customer Data Platform (CDP i realtid) och CJA.
-title: Överensstämmelse mellan CDP och CJA i realtid
+description: Beskriver vilka faktorer som påverkar konsekvensen i mätvärden och antalet målgruppsmedlemskap mellan Real-time Customer Data Platform (CDP i realtid) och CJA.
+title: Överensstämmelse i mätvärden och antal målgruppsmedlemskap mellan CDP och CJA i realtid
 role: Admin
 feature: CJA Basics
-source-git-commit: 2318b303c981ad556dc61a3419af4cce9fbbf92b
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
+source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 
-# Överensstämmelse mellan CDP och CJA i realtid
+# Överensstämmelse i mätvärden och antal målgruppsmedlemskap mellan CDP och CJA i realtid
 
-I verkliga scenarier kan man inte garantera att mätvärdena är konsekventa i Real-time Customer Data Platform (CDP i realtid) och Customer Journey Analytics (CJA). Det här dokumentet förklarar varför.
+I verkliga scenarier kan man inte garantera enhetlighet i mätvärden och målgruppsmedlemskap i Real-time Customer Data Platform (CDP i realtid) och Customer Journey Analytics (CJA). Det här dokumentet förklarar varför.
 
 ## CJA använder ännu inte identitetsdiagram
 
