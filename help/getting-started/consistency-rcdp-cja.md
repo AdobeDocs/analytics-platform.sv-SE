@@ -4,9 +4,9 @@ title: Överensstämmelse i mätvärden och antal målgruppsmedlemskap mellan CD
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
+source-git-commit: 769eef205df32865874753859ce79e573db40641
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,14 @@ ht-degree: 0%
 
 I verkliga scenarier kan man inte garantera enhetlighet i mätvärden och målgruppsmedlemskap i Real-time Customer Data Platform (CDP i realtid) och Customer Journey Analytics (CJA). Det här dokumentet förklarar varför.
 
+När man jämför antalet målgruppsmedlemskap mellan CDP och CJA i realtid är det viktigt att tänka på de olika syftena med dessa två verktyg. CDP använder kundprofildata i realtid för att rikta digitala upplevelser till enskilda konsumenter, medan CJA är utformat för att hjälpa användarna att förstå mönster i viktiga affärsvärden och segment. Publiken kan publicera från CJA till CDP i realtid, men en användare av dessa verktyg kan enkelt och internt&quot;aktivera&quot; en insikt och dra nytta av CJA:s inlärningar, men dessa verktyg har ändå helt olika syften.
+
 ## Skillnader i identitetskonfigurationer
 
 CDP och CJA i realtid har inte samma definition av en person i dag. CDP i realtid är helt beroende av informationen i [Identitetsdiagram](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) för att skapa en sammanfogad profil.
 
 CJA kan konfigureras att använda [Flerkanalsanalys](/help/connections/cca/overview.md) som extraherar identifierare från datauppsättningar i datasjön och använder anpassad logik för att länka samman dem.
+
 I framtiden kommer CJA att kunna använda Identity Graph.
 
 ## Skillnader i datauppsättningskonfiguration
