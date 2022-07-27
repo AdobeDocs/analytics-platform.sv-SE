@@ -4,9 +4,9 @@ description: Lär dig hur du jämför dina Adobe Analytics-data med data i Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -67,14 +67,16 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kan släppa rader under omvandlingen till XDM-schemat. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande analysfält har dessa värden kommer hela raden att tas bort.
 
-   | Analysfält | Värden som gör att den tas bort |
+   | Analysfält | Värden som gör att en rad tas bort |
    | --- | --- |
-   | Opt_ut | `y, Y` |
+   | Opt_ut | y, Y |
    | In_data_only | Inte 0 |
    | Exkludera_träff | Inte 0 |
    | Bot_id | Inte 0 |
-   | Hit_source | 0,3,5,7,8,9,10 |
-   | Page_event | 53,63 |
+   | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
+   | Page_event | 53, 63 |
+
+   Mer information om hit\_source finns i: [Referens för datakolumn](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en). Mer information om page\_event finns i: [Sökning efter sidhändelse](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
 
 1. Om kopplingen släpper rader, subtrahera raderna från [!UICONTROL Occurrences] mätvärden. Det resulterande antalet ska matcha antalet händelser i Adobe Experience Platform datamängder.
 
