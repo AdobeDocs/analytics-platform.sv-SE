@@ -4,10 +4,10 @@ description: Information och information om alla standardkomponenter som du kan 
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8e43c65c372f57dc54d01114b9c06a59d5c0efe4
+source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,8 @@ Dessa nödvändiga standardkomponenter läggs som standard till i varje datavy. 
 | [!UICONTROL Month] | Dimension | Den månad då en viss händelse inträffade. Den första dimensionsuppgiften är den första månaden i datumintervallet och den sista dimensionsuppgiften är den sista månaden i datumintervallet. |
 | [!UICONTROL Quarter] | Dimension | Det kvartal som en viss händelse inträffade. Den första dimensionsuppgiften är det första kvartalet i datumintervallet och den sista dimensionsuppgiften är det sista kvartalet i datumintervallet. |
 | [!UICONTROL Year] | Dimension | Det år då en viss händelse inträffade. Den första dimensionsuppgiften är det första året i datumintervallet och den sista dimensionsuppgiften är det senaste året i datumintervallet. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Valfria standardkomponenter {#optional}
 
@@ -64,3 +66,4 @@ Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONT
 | [!UICONTROL Time Spent per Person] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden in [!UICONTROL Person] fickor. |
 | [!UICONTROL Weekend]/[!UICONTROL Weekday] | Tidsdelningsdimension | Veckoslut eller Veckodag |
 
+{style=&quot;table-layout:auto&quot;}
