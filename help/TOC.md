@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 8a23ed7ad39497ed3c9d86fac6cf5b38856b2088
+source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '711'
 ht-degree: 33%
 
 ---
@@ -104,18 +104,19 @@ ht-degree: 33%
          + [Översikt över flöden](analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera en flödesvisualisering](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Intradimensionella flöden](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + [Histogram](analysis-workspace/visualizations/histogram.md)
-      + [Venn](analysis-workspace/visualizations/venn.md)
       + [Områdesdiagram och staplat områdesdiagram](analysis-workspace/visualizations/area.md)
       + [Stapeldiagram och staplat stapeldiagram](analysis-workspace/visualizations/bar.md)
       + [Punktdiagram](analysis-workspace/visualizations/bullet-graph.md)
       + [Ringdiagram](analysis-workspace/visualizations/donut.md)
+      + [Histogram](analysis-workspace/visualizations/histogram.md)
       + [Liggande stapeldiagram och staplat liggande stapeldiagram](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Sammanfattning av nyckelmått](analysis-workspace/visualizations/key-metric.md)
       + [Linjediagram](analysis-workspace/visualizations/line.md)
       + [Spridningsdiagram](analysis-workspace/visualizations/scatterplot.md)
       + [Sammanfattning av antal och förändring](analysis-workspace/visualizations/summary-number-change.md)
       + [Text](analysis-workspace/visualizations/text.md)
       + [Trädkarta](analysis-workspace/visualizations/treemap.md)
+      + [Venn](analysis-workspace/visualizations/venn.md)
    + Paneler {#panels}
       + [Översikt över paneler](analysis-workspace/c-panels/panels.md)
       + [Panelen Attribution](analysis-workspace/c-panels/attribution.md)
