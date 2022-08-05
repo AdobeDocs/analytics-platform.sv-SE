@@ -2,10 +2,10 @@
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,11 @@ Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärde
 
 ## Behörigheter
 
-Administratörer får automatiskt [!UICONTROL Audience Publishing] behörighet i Adobe Admin Console. De kan ge behörighet till enskilda användare.
+* Administratörer får automatiskt **[!UICONTROL Audience Publishing]** behörighet i Adobe Admin Console.
+
+* Administratörer kan ge behörighet till enskilda användare.
+
+* Administratörer behöver också **[!UICONTROL Manage Profiles]** behörighet i Adobe Experience Platform.
 
 ## Nästa steg
 
