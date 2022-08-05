@@ -2,18 +2,14 @@
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
+source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
 
 # CJA Audience publishing - översikt
-
->[!NOTE]
->
->Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
 
 Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) i Adobe Experience Platform för kundanpassning och personalisering.
 
