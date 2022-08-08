@@ -2,7 +2,7 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 0%

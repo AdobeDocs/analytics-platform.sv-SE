@@ -4,9 +4,9 @@ description: Inkludera eller exkludera en dimensionsartikel beroende på dess v�
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,5 @@ Med Inkludera exkluderade värden kan du skapa regler som är beroende av värde
 | [!UICONTROL Criteria] | Här kan du ange den matchningslogik som ska användas för en viss filterregel.<ul><li>**Sträng**: Innehåller frasen, Innehåller valfri term, Innehåller alla termer, Innehåller ingen term, Innehåller inte frasen, Lika med, Är inte lika, Börjar med, Slutar med</li><li>**Dubbel/heltal**: är lika med, inte lika med, är större än, är mindre än, är större än eller lika med, är mindre än eller lika med</li><li>**Datum**: är lika med, inte lika med, är senare än, är före, finns i</li></ul> |
 | [!UICONTROL Match operand] | Här kan du ange den matchningsoperand som matchningsoperatorn ska användas på.<ul><li>**Sträng**: Textfält</li><li>**Dubbel/heltal**: Textfält med upp-/nedpilar för numeriska värden</li><li>**Datum**: Väljare för daggranularitet (kalender)</li><li>**Datum och tid**: Val för datum- och tidsgranularitet</li></ul> |
 | [!UICONTROL Add rule] | Här kan du ange ytterligare en matchningsoperator och -operand. |
+
+{style=&quot;table-layout:auto&quot;}

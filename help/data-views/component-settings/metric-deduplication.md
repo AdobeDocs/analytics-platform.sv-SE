@@ -4,9 +4,9 @@ description: Räkna bara den första förekomsten av ett mätvärde i rapporter.
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '108'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,8 @@ Med metrisk borttagning av dubbletter kan du konfigurera ett mätvärde så att 
 
 | Inställning | Beskrivning |
 | --- | --- |
-| Metrisk deduplicering | En kryssruta där du kan aktivera metrisk deduplicering. Inaktiverad som standard. |
-| Dedupliceringsomfång | Här kan du bestämma hur långt bakåt den unika kontrollen ska gå.<br>**Session**: Endast den första mätarförekomsten av sessionen räknas.<br>**Person**: Endast den första mätförekomsten i rapporteringsfönstret räknas. |
-| Deduplicerings-ID | I stället för att tillämpa borttagning av dubbletter på själva måttet kan du använda metrisk borttagning av dubbletter baserat på en dimension i stället. Värdefull för dimensioner som Inköp-ID för borttagning av dubbletter. |
+| [!UICONTROL Metric deduplication] | En kryssruta där du kan aktivera metrisk deduplicering. Inaktiverad som standard. |
+| [!UICONTROL Deduplication scope] | Här kan du bestämma hur långt bakåt den unika kontrollen ska gå.<br>**Session**: Endast den första mätarförekomsten av sessionen räknas.<br>**Person**: Endast den första mätförekomsten i rapporteringsfönstret räknas. |
+| [!UICONTROL Deduplication ID] | I stället för att tillämpa borttagning av dubbletter på själva måttet kan du använda metrisk borttagning av dubbletter baserat på en dimension i stället. Värdefull för dimensioner som Inköp-ID för borttagning av dubbletter. |
+
+{style=&quot;table-layout:auto&quot;}

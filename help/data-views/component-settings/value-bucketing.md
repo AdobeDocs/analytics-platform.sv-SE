@@ -4,9 +4,9 @@ description: Kombinera numeriska värden i en dimension.
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '174'
 ht-degree: 1%
 
 ---
@@ -28,3 +28,5 @@ Om du vill ha flexibiliteten att kunna rapportera om både en fast och en icke-p
 | [!UICONTROL Including] [!UICONTROL and less than] | Gränser för efterföljande bucklor. |
 | [!UICONTROL Greater than or equal to] | Den nedre gränsen för den sista dimensionskassetten. |
 | [!UICONTROL Add bucket] | Gör att du kan lägga till ytterligare en bucket i en numerisk dimensionsbucketning. Du kan lägga till upp till 20 bucklor i en enda dimension. |
+
+{style=&quot;table-layout:auto&quot;}

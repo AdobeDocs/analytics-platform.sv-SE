@@ -4,9 +4,9 @@ description: Alla inställningar som du kan justera för att skapa eller rediger
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Innehåller övergripande inställningar för datavyn.
 | [!UICONTROL Name] | Obligatoriskt. Datavyns namn. Det här värdet visas i den övre högra listrutan i Analysis Workspace. |
 | [!UICONTROL Description] | Valfritt. Adobe rekommenderar en detaljerad beskrivning så att användarna förstår varför datavyn finns och vem den är avsedd för. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### Behållare {#containers}
 
 Anger namnet på behållare för datavyn. Behållarnamn används ofta i [filter](/help/components/filters/filters-overview.md#Filter-containers).
@@ -45,6 +47,8 @@ Anger namnet på behållare för datavyn. Behållarnamn används ofta i [filter]
 | [!UICONTROL Person container name] | [!UICONTROL Person] (standard). The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för besökare inom den angivna tidsramen. Om din organisation använder en annan term (till exempel &quot;Besökare&quot; eller &quot;Användare&quot;) kan du byta namn på behållaren här. |
 | [!UICONTROL Session container name] | [!UICONTROL Session] (standard). The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
 | [!UICONTROL Event container name] | [!UICONTROL Event] (standard). The [!UICONTROL Event] container definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### Kalender {#calendar}
 
@@ -57,6 +61,8 @@ Anger det kalenderformat som du vill att datavyn ska följa. Du kan ha flera dat
 | [!UICONTROL First month of the year] och [!UICONTROL First day of week] | Synlig för den gregorianska kalendertypen. Ange vilken månad du vill att kalenderåret ska börja på och vilken dag du vill att varje vecka ska börja på. |
 | [!UICONTROL First day of current year] | Synlig för anpassade kalendertyper. Ange vilken dag på året som du vill att det aktuella året ska börja. Kalendern formaterar automatiskt den första dagen i varje vecka baserat på det här värdet. |
 | [!UICONTROL Year in which the "extra" week occurs] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de utgör en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill att den extra veckan ska läggas till i. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Ställa in komponenterna i en datavy {#set-components}
 

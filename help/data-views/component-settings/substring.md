@@ -4,9 +4,9 @@ description: Använd en delmängd av en sträng som dimensionsobjekt.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '846'
 ht-degree: 1%
 
 ---
@@ -113,6 +113,8 @@ Utdataplatshållare stöds också. Du kan använda dessa sekvenser i **[!UICONTR
 | ``$` `` | Texten skapas mellan slutet av den senaste matchningen (eller början av texten om ingen tidigare matchning hittades) och början av den aktuella matchningen. |
 | `$+` | Matchar det senast markerade deluttrycket i det reguljära uttrycket. |
 | `$$` | Utdata för strängtecknet `"$"`. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Video om bindningsdimensioner
 
