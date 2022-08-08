@@ -4,7 +4,7 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
+source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 0%
@@ -108,11 +108,10 @@ Så här kommer du åt de här komponenterna:
 
 1. Gå till datavyredigeraren.
 1. Klicka på **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tabben i den vänstra listen.
-1. Dra dem till datavyn.
+1. Dra dessa komponenter till datavyn.
 
 95-99 % av tiden rapporteras nya sessioner korrekt. De enda undantagen är:
 
 * När en första session ägde rum före 13-månaders uppslagsfönster. Den här sessionen kommer att ignoreras.
 
-* När en session sträcker sig över både uppslagsfönstret och rapportfönstret. Låt oss säga att du har en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle omfatta 1 maj 2021 till 31 maj 2022. Om en session skulle påbörjas den 30 maj 2022 och avslutas den 1 juni 2022 eftersom sessionen ingår i bakåtsökningsfönstret räknas alla sessioner i rapportfönstret som återkommande sessioner.
-
+* När en session sträcker sig över både uppslagsfönstret och rapportfönstret. Låt oss säga att du har en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle omfatta 1 maj 2021 till 31 maj 2022. Om en session skulle påbörjas den 30 maj 2022 och avslutas den 1 juni 2022 eftersom sessionen ingår i uppslagsfönstret, räknas alla sessioner i rapportfönstret som retursessioner.
