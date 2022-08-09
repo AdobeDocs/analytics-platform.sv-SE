@@ -3,9 +3,9 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta PDF- eller CSV-filer
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Du kan utföra flera uppgifter samtidigt i projektet och till och med navigera t
 
 ![](assets/download-items.png)
 
-### Nedladdad objektfil
+### Nedladdad objektfil {#items-file}
 
 Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följande:
 
@@ -71,7 +71,7 @@ I exemplet ovan hämtas sidobjekt med panelfiltret (kunder med nya besökare) oc
 
 ![](assets/downloaded-file.png)
 
-### Hämta meddelanden
+### Hämta meddelanden {#notifications}
 
 När filen hämtas visas ett informationsmeddelande med förloppet. Du kan när som helst avbryta nedladdningen genom att klicka på **[!UICONTROL Cancel download]**. Stänger popup **inte** avbryt nedladdningen.
 
@@ -80,6 +80,10 @@ När filen är klar visas ett meddelande om att den är klar och filen hämtas t
 Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning kommer att ställas i kö tills den tidigare nedladdningen är klar.
 
 ![](assets/toast.png)
+
+## Hämta känsliga data {#sensitive}
+
+Om du aktiverar Enforce Download Data Governance Policy kommer eventuell hämtning (till exempel e-post eller delning av PDF-filer) av Workspace-projekt att krascha datafälten som är märkta som känsliga. Du kan fortfarande analysera dessa fält i Workspace, men om du försöker skicka ett e-postmeddelande eller dela ett projekt på något annat sätt, kommer de blockerade fälten att visas som streckade objekt i PDF-filen.
 
 ## Vanliga frågor {#faq}
 

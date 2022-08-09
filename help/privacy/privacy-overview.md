@@ -1,18 +1,21 @@
 ---
-title: Customer Journey Analytics sekretesspolicy - översikt
-description: Beskriver hur sekretessinställningarna fungerar i Customer Journey Analytics.
-translation-type: tm+mt
-source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
+title: Customer Journey Analytics och datastyrning
+description: Beskriver hur datastyrning fungerar i Customer Journey Analytics.
+exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
+source-git-commit: 61850e8a1da80a115bf850c64358a512770f852e
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
+# Customer Journey Analytics och datastyrning
 
-# Customer Journey Analytics sekretesspolicy - översikt
+I allmänhet ärvs alla datastyrningsrelaterade inställningar i Customer Journey Analytics från Adobe Experience Platform.
 
-I allmänhet ärvs sekretessrelaterade inställningar i Customer Journey Analytics från Adobe Experience Platform.
+## Datastyrning
+
+CJA stöder etiketter och policyer för datastyrning som har konfigurerats i Adobe Experience Platform. Mer information finns i CJA-stöd för Adobe Experience Platform Data Governance.
 
 ## GDPR
 
