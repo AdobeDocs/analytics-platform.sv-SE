@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 33%
+source-wordcount: '739'
+ht-degree: 32%
 
 ---
 
@@ -71,6 +71,7 @@ ht-degree: 33%
       + [Värdebuckning](data-views/component-settings/value-bucketing.md)
    + [Standard, komponentreferens](data-views/component-reference.md)
    + [Datavyer använder exempel](data-views/data-views-usecases.md)
+   + [CJA-stöd för Adobe Experience Platform Data Governance](data-views/data-governance.md)
 + Arbetsyteprojekt {#cja-workspace}
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + [Utför grundläggande analys](analysis-workspace/perform-basic-analysis.md)

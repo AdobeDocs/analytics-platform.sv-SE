@@ -2,9 +2,9 @@
 title: CJA-stöd för Adobe Experience Platform Data Governance
 description: Lär dig hur dataetiketter och principer som definieras i AEP påverkar rapportering i CJA.
 mini-toc-levels: 3
-source-git-commit: 82060862c64aae10ea6dd375a8cd65d67ee21704
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,12 @@ Principer har två komponenter: Dataetiketten och en marknadsföringsåtgärd so
 
 * Analys - använda data för analyssyften, som att mäta, analysera och rapportera om konsumentanvändningen av organisationens webbplatser eller appar.
 
-* Exportera data till en tredje part - det vill säga från Adobe-miljön.
+* Exportera data - det vill säga från Adobe-miljön.
 
 Ni knyter etiketter och marknadsföringsåtgärder till en policy och aktiverar sedan policyn. Policyn tar etiketten och marknadsföringsåtgärderna och säger: tillämpa denna begränsning. Två Adobe-definierade policyer används i CJA och påverkar rapportering och hämtning/delning:
 
-* Använd Analytics-policy
-* Tillämpa hämtningspolicy
-
+* [!UICONTROL Enforce Analytics] policy
+* [!UICONTROL Enforce Download] policy
 
 ### Visa dataetiketter i CJA-datavyer
 
@@ -93,7 +92,7 @@ För enskilda komponenter skulle meddelandet likna detta:
 
 ### Hur [!UICONTROL Enforce Download] principen påverkar arbetsyteprojekt
 
-Om den här profilen är aktiverad kommer eventuell hämtning (till exempel e-post eller delning av PDF-filer) av Workspace-projekt att hash-koda de känsliga fälten. Du kan fortfarande analysera dessa fält i Workspace, men om du försöker skicka ett e-postmeddelande eller dela ett projekt på något annat sätt, kommer de blockerade fälten att visas som streckade objekt i PDF-filen.
+Om den här profilen är aktiverad kommer export eller nedladdning (till exempel e-post eller delning av PDF-filer) av Workspace-projekt att hash-koda de känsliga fälten. Du kan fortfarande analysera dessa fält i Workspace, men om du försöker skicka ett e-postmeddelande eller dela ett projekt på något annat sätt, kommer de blockerade fälten att visas som streckade objekt i PDF-filen.
 
 Lägg till en skärmbild här.
 
