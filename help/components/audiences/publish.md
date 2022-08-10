@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 235f08b275fd2f5706024823005e732b61af1c07
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som ident
 
 Läs det här [översikt](/help/components/audiences/audiences-overview.md) för att bekanta dig med konceptet CJA-målgrupper.
 
-## Skapa målgrupper
+## Skapa målgrupper {#create}
 
 1. Du kan skapa målgrupper på tre sätt:
 
@@ -56,8 +56,8 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | Förhandsvisningsinställning | Beskrivning |
    | --- | --- |
    | [!UICONTROL Data preview] window | Datumintervallet för målgruppen. |
-   | [!UICONTROL Total people] | Ett summerat antal personer i den här publiken. Den kan gå upp till 200 miljoner människor. Om er målgrupp överstiger 200 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera den. |
-   | [!UICONTROL Audience size limit] | Visar hur långt från gränsen på 200 miljoner som den här målgruppen är. |
+   | [!UICONTROL Total people] | Ett summerat antal personer i den här publiken. Den kan gå upp till 20 miljoner människor. Om er målgrupp överstiger 20 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera den. |
+   | [!UICONTROL Audience size limit] | Visar hur långt från gränsen på 20 miljoner som den här målgruppen är. |
    | [!UICONTROL Estimated audience return] | Den här inställningen är användbar för återmarknadsföring av kunder i den här målgruppen som kommer tillbaka till er webbplats. (Med andra ord, som visas i den här datauppsättningen igen.) <p>Här kan du välja tidsram (nästa 7 dag, nästa 2 veckor, nästa månad) för det uppskattade antalet kunder som kan komma att returnera. |
    | [!UICONTROL Estimated to return] | Numret ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde i listrutan. Vi tittar på den historiska bortfallsfrekvensen för den här publiken för att förutse detta antal. |
    | [!UICONTROL Preview metrics] | Med den här inställningen kan du titta på specifika mätvärden för att se om den här målgruppen bidrar med ett oproportionerligt belopp till det här mätvärdet, till exempel &#39;[!UICONTROL Revenue]&#39; eller &#39;[!UICONTROL Average time on site]&#39;. Det ger dig det sammanlagda antalet mätvärden, liksom procentandelen av det totala antalet. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
@@ -72,7 +72,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande kommer du till [Segmentgränssnitt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) i Adobe Experience Platform. Mer information finns nedan.
 
-## Använda CJA-målgrupper i Experience Platform
+## Använda CJA-målgrupper i Experience Platform {#audiences-aep}
 
 CJA tar nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). CJA skickar målgruppen vidare till Experience Platform med den primära identiteten inställd på det som valdes som person-ID när anslutningen konfigurerades.
 
@@ -84,9 +84,13 @@ Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
 
 ![](assets/audiences-aep.png)
 
-## Vad händer om en användare inte längre är medlem i en publik i CJA?
+## Vad händer om en användare inte längre är medlem i en publik i CJA? {#no-member}
 
 I det här fallet skickas en exit-händelse till Experience Platform från CJA.
+
+## Vad händer om du tar bort en publik i CJA? {#delete}
+
+När en CJA-publik tas bort visas den inte längre i användargränssnittet för Experience Platform. Inga profiler som är kopplade till den målgruppen tas emellertid bort i Platform.
 
 ## Nästa steg
 

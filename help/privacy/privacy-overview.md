@@ -2,9 +2,9 @@
 title: Customer Journey Analytics och datastyrning
 description: Beskriver hur datastyrning fungerar i Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
+source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,13 @@ I allmänhet ärvs alla datastyrningsrelaterade inställningar i Customer Journe
 
 ## Datastyrning
 
-CJA stöder etiketter och policyer för datastyrning som har konfigurerats i Adobe Experience Platform. Mer information finns i [CJA-stöd för Adobe Experience Platform Data Governance](/help/data-views/data-governance.md).
+Integrationen mellan CJA och [Adobe Experience Platform datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) möjliggör märkning av känsliga CJA-data och tillämpning av sekretesspolicyer.
+
+Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för CJA-datavyer. Dessa etiketter stoppar eller varnar användare som skapar mätvärden och/eller dimensioner från känsliga fält.
+
+När data exporteras från CJA (via rapportering, export, API osv.) läggs dessutom varningar eller etiketter till för att meddela användarna att en rapport innehåller känslig information som behöver behandlas på ett visst sätt.
+
+Tack vare den här integreringen kan ni hantera regelefterlevnaden enklare. Datahanteringen i organisationen kan ange regler som begränsar användningen. Detta innebär att era CJA-användare kan använda data med större tillförsikt, i vetskap om att de följer policyer som definieras av dataförvaltare.
 
 ## GDPR
 
