@@ -1,11 +1,10 @@
 ---
-title: CJA-stöd för Adobe Experience Platform Data Governance
-description: Lär dig hur dataetiketter och principer som definieras i AEP påverkar rapportering i CJA.
-mini-toc-levels: 3
+title: Etiketter och profiler
+description: Lär dig hur dataetiketter och principer som definieras i AEP påverkar datavyer och rapporter i CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: a28247e861e2f8853a6e2d2b81e7f6ed221caec0
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,8 +25,8 @@ Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. D
 
 Två Adobe-definierade policyer används i CJA och påverkar rapportering och hämtning/delning:
 
-* [!UICONTROL Enforce Analytics] policy
-* [!UICONTROL Enforce Download] policy
+* **[!UICONTROL Enforce Analytics]** policy
+* **[!UICONTROL Enforce Download]** policy
 
 ## Visa dataetiketter i CJA-datavyer
 
@@ -35,9 +34,11 @@ Dataetiketter som har skapats i Experience Platform visas på tre platser i anv�
 
 | Plats | Beskrivning |
 | --- | --- |
-| Informationsknappen i ett schemafält | Om du klickar på den här knappen visas vilka dataanvändningsetiketter som gäller för ett fält:<p>![](assets/data-label-left.png) |
-| Höger räl under [Komponentinställningar](/help/data-views/component-settings/overview.md) | Etiketter för dataanvändning visas här:<p>![](assets/data-label-right.png) |
-| Lägg till dataetiketter som en kolumn | Du kan lägga till dataetiketter som en kolumn i kolumnerna Inkluderade komponenter i datavyer. Klicka bara på ikonen för kolumnväljaren och välj Etiketter för dataanvändning:<p>![](assets/data-label-column.png) |
+| Informationsknappen i ett schemafält | Om du klickar på den här knappen visas [!UICONTROL Data Usage Labels] gäller för närvarande ett fält:<p>![](assets/data-label-left.png) |
+| Höger räl under [Komponentinställningar](/help/data-views/component-settings/overview.md) | Alla [!UICONTROL Data Usage Labels] är listade här:<p>![](assets/data-label-right.png) |
+| Lägg till dataetiketter som en kolumn | Du kan lägga till [!UICONTROL Data Labels] som en kolumn till [!UICONTROL Included Components] kolumner i datavyer. Klicka bara på ikonen för kolumnväljaren och välj **[!UICONTROL Data Usage Labels]**:<p>![](assets/data-label-column.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Filtrera på datastyrningsetiketter i datavyer
 
@@ -55,7 +56,7 @@ Klicka på ikonen Filter igen i den vänstra listen och klicka på Profiler unde
 
 ![](assets/filter-policies.png)
 
-Klicka **[!UICONTROL Apply]** för att se vilka profiler som är aktiverade _för den här datavyn?_
+Klicka **[!UICONTROL Apply]** för att se vilka profiler som är aktiverade.
 
 ## Hur [!UICONTROL Enforce Analytics] principen påverkar arbetsyteprojekt
 
