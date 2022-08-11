@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
+source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -88,10 +88,6 @@ En konceptuell översikt över datavyer finns på [Översikt över datavyer](/he
 
 ## 7. Ny eller upprepad sessionsrapportering {#new-repeat}
 
->[!NOTE]
->
->Den här funktionen är för närvarande begränsad i testningen.
-
 Du kan avgöra om en session faktiskt är den första sessionen någonsin för en användare eller inte, baserat på det rapportfönster som du har definierat för datavyn och ett 13-månaders uppslagsfönster. Med den här rapporten kan du till exempel avgöra:
 
 * Hur stor procentandel av dina beställningar kommer från nya eller återkommande sessioner?
@@ -115,3 +111,19 @@ Så här kommer du åt de här komponenterna:
 * När en första session ägde rum före 13-månaders uppslagsfönster. Den här sessionen kommer att ignoreras.
 
 * När en session sträcker sig över både uppslagsfönstret och rapportfönstret. Låt oss säga att du har en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle omfatta 1 maj 2021 till 31 maj 2022. Om en session skulle påbörjas den 30 maj 2022 och avslutas den 1 juni 2022 eftersom sessionen ingår i uppslagsfönstret, räknas alla sessioner i rapportfönstret som retursessioner.
+
+## Använda funktionerna Datum och Tid {#date}
+
+>[!NOTE]
+>
+>Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
+
+Exempel:
+
+* Datum: Ett reseföretag samlar in avgångsdatumet för resor som ett fält i sina uppgifter. De vill ha en rapport som jämför [!UICONTROL Day of Week] för alla insamlade avgångsdatum för att förstå vilka som är mest populära. De vill göra samma sak för [!UICONTROL Month of Year].
+
+* Datum-Tid: Ett detaljhandelsföretag samlar in tiden för var och en av sina inköp i butiken (POS). Under en viss månad skulle de vilja förstå de mest köpta perioderna genom att [!UICONTROL Hour of Day].
+
+>[!MORELIKETHIS]
+>[Datum och tid i inställningen för komponenten Format](/help/data-views/component-settings/format.md)
+
