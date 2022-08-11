@@ -3,9 +3,9 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta PDF- eller CSV-filer
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Om du begär mer än en nedladdning åt gången får du ett meddelande om att va
 
 ## Hämta känsliga data {#sensitive}
 
-Om du aktiverar Enforce Download Data Governance Policy kommer eventuell hämtning (till exempel e-post eller delning av PDF-filer) av Workspace-projekt att krascha datafälten som är märkta som känsliga. Du kan fortfarande analysera dessa fält i Workspace, men om du försöker skicka ett e-postmeddelande eller dela ett projekt på något annat sätt, kommer de blockerade fälten att visas som streckade objekt i PDF-filen.
+Om **[!UICONTROL Enforce Download]** [datastyrningsprincip](/help/data-views/data-governance.md) är aktiverat i den datavy som du rapporterar om, kommer eventuell hämtning (till exempel e-post eller delning av PDF-filer) av Workspace-projekt att hash-koda datafälten som är märkta som känsliga. Du kan fortfarande analysera dessa fält i Workspace, men om du försöker skicka ett e-postmeddelande eller på annat sätt dela ett projekt visas de blockerade fälten som tomma i .pdf- eller .csv-filen.
 
 ## Vanliga frågor {#faq}
 
