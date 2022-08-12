@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
+source-git-commit: b7a2921b30075b3c63136a989df3744256f810f4
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,13 @@ Så här kommer du åt de här komponenterna:
 >
 >Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
-Exempel:
+Scheman i Adobe Experience Platform innehåller fälten Datum och Tid. CJA-datavyer har nu stöd för dessa fält. När du drar dessa fält till en datavy som en dimension kan du ange deras [format](/help/data-views/component-settings/format.md). Den här formatinställningen avgör hur fälten visas i rapporter. Exempel:
+
+* Om du väljer **[!UICONTROL Day]** med formatet **[!UICONTROL Month, Day, Year]** kan ett exempel i rapporter se ut så här: 23 augusti 2022.
+
+* Om du väljer **[!UICONTROL Minute of Day]** med formatet **[!UICONTROL Hour:Minute]** kan dina utdata se ut så här: 20.20.
+
+### Exempel:
 
 * Datum: Ett reseföretag samlar in avgångsdatumet för resor som ett fält i sina uppgifter. De vill ha en rapport som jämför [!UICONTROL Day of Week] för alla insamlade avgångsdatum för att förstå vilka som är mest populära. De vill göra samma sak för [!UICONTROL Month of Year].
 
