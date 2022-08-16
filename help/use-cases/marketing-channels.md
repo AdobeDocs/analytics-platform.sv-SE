@@ -4,9 +4,9 @@ description: Använd Analytics Source Connector för att överföra regler för 
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 5819db4d7c597b5b7587c09a1433503ff7abb6a5
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ När du har etablerat Analytics Source Connector för en önskad rapportsvit ska
    * **`channel._id`**: Motsvarar [Marknadskanalsdetaljer](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html)
 3. Ge varje dimension önskad attribueringsmodell och beständighet. Om du vill ha både den första och sista beröringsdimensionen drar du varje marknadsföringskanaldimension till komponentområdet flera gånger. Ge varje dimension önskad attribueringsmodell och beständighet. Adobe rekommenderar också att du ger varje dimension ett visningsnamn som gör det enklare att använda i Workspace.
 4. Skapa datavyn.
+
+>[!NOTE]
+>
+> Analyskällans koppling kräver att båda `channel.typeAtSource` (marknadsföringskanal) och `channel._id` (Information om marknadsföringskanal) ska fyllas i, annars överförs ingetdera till XDM ExperienceEvent. Om marknadsföringskanalinformationen är tom i källrapportsviten blir detta en tom `channel._id` och Analytics Source Connector är tom `channel.typeAtSource` också. Detta kan leda till att skillnader rapporteras mellan Adobe Analytics och Customer Journey Analytics.
 
 Nu kan du använda dina mått för marknadsföringskanalen i Analysis Workspace.
 
