@@ -2,18 +2,14 @@
 title: Etiketter och profiler
 description: Lär dig hur dataetiketter och principer som definieras i AEP påverkar datavyer och rapporter i CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: b135175e0276ab26514d1c785793feb817c09898
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # Etiketter och profiler
-
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
 När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) för vissa eller alla element i datauppsättningen. Hittills har dessa etiketter inte exponerats i CJA. I den här versionen kan du visa dessa etiketter och profiler i CJA.
 

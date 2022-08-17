@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 0e626b4072c68a69ae94dbfdfb53169aa34ca8ac
+exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
-
 
 # Begränsade etiketter i Report Builder
 
@@ -27,10 +27,6 @@ Mer information finns i [Customer Journey Analytics och datastyrning](https://ex
 
 ## Visa begränsade data i Report Builder
 
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
-
 Det finns två Adobe-definierade policyer i CJA som påverkar rapportering, hämtning och delning:
 
 * Använd Analytics-policy
@@ -40,7 +36,7 @@ Komponenter som påverkas av dessa principer är nedtonade. När du hovrar över
 
 ![](assets/rb-restricted-label.png)
 
-## Uppdaterar rapporter som innehåller begränsade data
+## Uppdatera rapporter som innehåller begränsade data
 
 Om en användare har skapat en Report Builder-rapport med dataelement som senare är begränsade visas ett felmeddelande när rapporten uppdateras.
 
