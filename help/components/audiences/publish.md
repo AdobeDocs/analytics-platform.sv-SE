@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: c3e8e9260030829e38c4267659ab84dcb822e729
+source-git-commit: 49af5869f5aa3b8915b9fb36edb16abe3a3cf34b
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Name] | Publiken. |
    | [!UICONTROL Tags] | Alla taggar som du vill ska tilldelas till målgruppen för organisatoriska ändamål. Du kan använda en befintlig tagg eller ange en ny. |
    | [!UICONTROL Description] | Lägg till en bra beskrivning av målgruppen för att skilja den från andra. |
-   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För alla uppdateringsfrekvenser finns det en gräns på 75 eller 150 målgrupper, beroende på ditt CJA-berättigande. För andra intervall finns det inget högsta antal målgrupper.</li></ul> |
+   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För alla uppdateringsfrekvenser finns det en gräns på 75 eller 150 målgrupper, beroende på ditt CJA-berättigande.</li></ul> |
    | Utgångsdatum | När publiken slutar uppdatera. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan målgruppen förfaller. |
    | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max 90 dagar. |
    | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
