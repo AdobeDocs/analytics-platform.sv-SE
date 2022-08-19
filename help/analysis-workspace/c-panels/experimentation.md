@@ -3,9 +3,9 @@ description: Lär dig mer om hur du kan analysera resultaten av A/B-tester på C
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 76ebaf5ae5bd6027f83945d5750ddc13533a7b47
+source-git-commit: 57a52c21b1850574e5d85ab560fb5399f9b37631
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 >
 >Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
-The **[!UICONTROL Experimentation]** kan ni jämföra olika varianter av användarupplevelser, marknadsföring och meddelanden för att avgöra vilket som är bäst för att uppnå ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe-lösningar, Adobe Journey Optimizer och till och med från BYO (ta fram egna) data.
+The **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av användarupplevelser, marknadsföring och meddelanden för att avgöra vilket som är bäst för att uppnå ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe-lösningar, Adobe Journey Optimizer och till och med från BYO (ta fram egna) data.
 
 >[!IMPORTANT]
 >
->I det här skedet [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data kan inte utvärderas i [!UICONTROL Experimentation] -panelen.
+>I det här skedet [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data som hämtas till Adobe Experience Platform via Analytics Source Connector **inte** analyseras i [!UICONTROL Experimentation] -panelen. Vi förväntar oss en lösning på detta problem under 2023.
 
 ## Åtkomstkontroll
 
@@ -58,14 +58,20 @@ Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte kommer at
    | --- | --- |
    | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändare för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har märkts med  **[!UICONTROL Experiment]** i datavyer och de tre senaste månadernas experimentdata. |
    | **[!UICONTROL Control Variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har märkts med  **[!UICONTROL Variant]** etikett i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
-   | **[!UICONTROL Success Metrics]** | Mätvärden eller mätvärden som en användare jämför varianter med. Varianten med det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som det primära mätvärdet för ett experiment. Du kan lägga till upp till 5 mätvärden. |
+   | **[!UICONTROL Success Metrics]** | Mätvärden eller mätvärden som en användare jämför varianter med. Den variant som har det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som den&quot;bästa varianten&quot; i ett experiment. Du kan lägga till upp till 5 mätvärden. |
    | **[!UICONTROL Normalizing Metric]** | Grunden ([!UICONTROL People], [!UICONTROL Sessions], eller [!UICONTROL Events]) som testet ska köras på. Ett test kan t.ex. jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som **[!UICONTROL Conversions per session]** eller **[!UICONTROL Conversions per person]**. |
 
 1. Klicka på **[!UICONTROL Build]**.
 
 ## Steg 4: Tolka panelutdata
 
-Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att klicka på redigeringspennan längst upp till höger. Du får också en textsammanfattning som anger om experimentet är slutgiltigt eller inte och som sammanfattar resultatet. Du kan också se sammanfattningsnummer för varianten med den högsta lyften och förtroendet.
+Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att klicka på redigeringspennan längst upp till höger.
+
+Du får också en textsammanfattning som anger om experimentet är slutgiltigt eller inte och som sammanfattar resultatet. Slutsatsen baseras på statistisk signifikans. (Se Statistisk metod nedan.) Du kan se sammanfattningsnummer för den mest högpresterande varianten med högsta lyft och självförtroende.
+
+>[!NOTE]
+>
+>Lyft och förtroende är också avancerade beräknade mätfunktioner i CJA, så att ni kan bygga egna lift- och Confidence-mått.
 
 ![experimentera fram](assets/exp-output1.png)
 
@@ -73,10 +79,12 @@ För varje framgångsmått du valt visas en frihandstabell och en konverteringsg
 
 ![experimentera fram](assets/exp-output2.png)
 
+The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL Control Variant] prestanda:
+
 ![experimentera fram](assets/exp-output3.png)
 
 
-## Statistisk metod bakom panelen Experimentation
+## Statistikmetod
 
 Följ.
 
