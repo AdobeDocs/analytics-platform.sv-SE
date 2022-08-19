@@ -4,9 +4,9 @@ description: Visa huvudinställningar för en datavykomponent.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 338cb8a4409c9b03461763d97ced6b8a10de2b7b
+source-git-commit: 3d0de872f92de3586bfe5e38ac01799da20526de
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Kärninställningar som används av en datavykomponent.
 | [!UICONTROL Component Name] | Obligatoriskt. Här kan du ange ett eget namn som visas i Analysis Workspace. Du kan byta namn på en komponent för att ge den ett namn som är specifikt för datavyn. |
 | [!UICONTROL Description] | Valfritt, men rekommenderas. Ger information om komponenten till andra användare. |
 | [!UICONTROL Tags] | Valfritt. Gör att du kan tagga komponenten med egna eller färdiga taggar för enklare sökning/filtrering i Analysis Workspace-gränssnittet. |
-| [!UICONTROL Context labels] | Du kan märka specifika dimensioner och/eller mått för specifika användningsfall i rapporter. Exempel är mediapaneler för CJA, den nya expertpanelen samt rapportmallar. |
+| [!UICONTROL Context labels] | Du kan märka specifika dimensioner och/eller mått för specifika användningsfall i rapporter. Exempel är mediapaneler för CJA, den nya expertpanelen samt rapportmallar. Om du tar bort en sammanhangsetikett kan det påverka specifika paneler eller rapporter där komponenten krävs. |
 | [!UICONTROL Schema field name] | Schemafältets namn. |
 | [!UICONTROL Dataset type] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken datamängdstyp (händelse, sökning eller profil) som komponenten kommer från. |
 | [!UICONTROL Dataset] | Ett icke-redigerbart fält som visar vilken datamängd som komponenten kommer från. Det här fältet kan innehålla flera datauppsättningar. |
