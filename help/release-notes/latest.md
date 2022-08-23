@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a34ca124bac34912323e1a6c4d0b42f4b8cf2e86
+source-git-commit: e7ff0bfae0f7d041a8131cecbf362cf71aca9740
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 3%
+source-wordcount: '495'
+ht-degree: 4%
 
 ---
 
 # Versionsinformation för Customer Journey Analytics (CJA) (augusti 2022)
 
-**Senaste uppdatering**: 12 augusti 2022
+**Senaste uppdatering**: 23 augusti 2022
 
 ## Viktiga funktioner
 
@@ -23,7 +23,6 @@ ht-degree: 3%
 | **Målgruppspublicering i kundprofil i realtid** | Gör att ni kan publicera målgrupper som identifierats i CJA till Adobe Experience Platform/Kundprofil i realtid för kundanpassning och personalisering. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | 17 augusti 2022 |
 | **CJA-stöd för etiketter och policyer för datastyrning** | Automatiserar integreringen mellan CJA och Adobe Experience Platform integritetsetiketter och integritetspolicyer. Dataetiketter som skapas på datauppsättningar som används av plattformen visas i CJA-datavyer för att stoppa eller varna användare som skapar mätvärden och/eller dimensioner från känsliga fält. Dessutom, när data exporteras från CJA (via Workspace eller Report Builder-rapportering, export, API osv.) Ytterligare varningar eller etiketter läggs till för att meddela användarna att en rapport innehåller känslig information som behöver behandlas på ett specifikt sätt. [Läs mer](/help/data-views/data-governance.md) | 17 augusti 2022 |
 | **Stöd för datumfält i CJA** | Tillåter CJA att rapportera datum- och datumfält. [Läs mer](/help/data-views/data-views-usecases.md#date) | 17 augusti 2022 |
-| **Experimentpanel för CJA (allmänt lyft och förtroende)** | Med den nya Workspace-panelen kan CJA-användare utvärdera hur stort A/B-experimentet blir och hur säkert det är från alla källor - online, offline, från Adobe-lösningar, Adobe Journey Optimizer och till och med BYO-data. Mer information att följa. | 24 augusti 2022 |
 | **Regionövergripande stöd för Analytics Source Connector** | Du kan nu importera rapportsviter från valfri region (USA, Storbritannien eller Singapore). Dessa rapportsviter måste dock mappas till samma organisation som den Experience Platform sandbox-instans i vilken källanslutningen skapas. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) | 24 augusti 2022 |
 | **Sessionsrapportering för första kontra upprepade** | Du kan nu identifiera om en viss session var användarens första session någonsin. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 24 augusti 2022 |
 
