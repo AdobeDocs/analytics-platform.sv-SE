@@ -4,9 +4,9 @@ description: Lär dig mer om åtkomstkontrollkrav för att skapa anslutningar, l
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
-source-git-commit: c80c10e1e4887bfe7fdc3b59d0dfe415b1b0d5eb
+source-git-commit: e5ae592c6765638e26ee5252f458e82af9d24e44
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,10 @@ Du kan inte bevilja eller neka tillstånd för enskilda mått eller mått i Cust
 ## Användaråtkomst
 
 Icke-produktadministratörer (användare) i Customer Journey Analytics kan inte visa datavyer eller anslutningar, men kan skapa filter, projekt och beräknade värden.
+
+## Projektstrukturering för arbetsyta
+
+Mer information om hur du begränsar komponenter (mått, mått, segment, datumintervall) på projektnivå finns i [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md).
+
+
 
