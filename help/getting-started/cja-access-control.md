@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ccb13b9632433f2fcc9c765e9527f157dad632d4
+source-git-commit: 669b8d6e0c8b8741edf82a83fead6b2030a57d40
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll
 
 En produktprofil är en uppsättning behörigheter. Produktprofiladministratörer kan
 
-* Skapa och hantera enskilda produktprofiler, som att lägga till nya användare.
+* Skapa och hantera enskilda produktprofiler, som att lägga till nya användare eller hantera användargrupper och deras tillhörande produktprofiler.
 
 * I CJA redigerar du datavyer som ingår i en produktprofil som de hanterar. De kan inte skapa nya datavyer.
 
