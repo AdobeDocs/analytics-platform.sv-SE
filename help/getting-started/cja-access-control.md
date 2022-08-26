@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 669b8d6e0c8b8741edf82a83fead6b2030a57d40
+source-git-commit: 7520f068e41d8b91bf9d260b7763cf8c1b946bc4
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # CJA-åtkomstkontroll
 
 Customer Journey Analytics (CJA) styrs av tre behörighetsnivåer eller tre roller: Produktadministratörsroll, administratörsroll för produktprofil och åtkomst på användarnivå. I det här avsnittet förklaras de här rollerna mer ingående.
+
+Dessutom diskuterar vi mer detaljerade sätt att begränsa åtkomsten, t.ex. kurering av arbetsytor och radnivå samt åtkomstkontroll på värdenivå.
 
 ## Produktadministratörsroll
 
@@ -76,7 +78,7 @@ Användare som har åtkomst till en datavy kan bara arbeta med de mått och måt
 
 Här är ett vårdrelaterat exempel: Låt oss säga att du skapar ett mätvärde som kallas&quot;Hypertension&quot; i en datavy, från en datauppsättning som innehåller dessa data. Det faktum att det är ett mått skulle göra det möjligt att se det sammanlagda värdet av detta mätresultat, men inte de enskilda patienter som faller under det.
 
-## CJA-behörigheter
+## CJA-behörigheter i Admin Console
 
 The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Console](https://adminconsole.adobe.com/enterprise/). Du kan lägga till användare i specifika produktprofiler. Sedan tilldelar du rättigheter till specifika datavyer och anger vilka behörigheter användarna i en produktprofil har. Här är de CJA-specifika behörigheterna:
 
@@ -86,7 +88,7 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | --- | --- |
 | **[!UICONTROL Data Views]** | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]**, kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är inställd på **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har tillgång till. |
 | **[!UICONTROL Reporting Tools]**: |  |
-| **[!UICONTROL Audit Logs Access]** | För närvarande [granskningsloggar](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) är bara tillgängliga via API:t. Detta tillstånd gäller för ett framtida användargränssnitt som håller på att utvecklas. |
+| **[!UICONTROL Audit Logs Access]** | För närvarande [granskningsloggar](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) är bara tillgängliga via API:t. Den här behörigheten framtvingar behörighetskontrollen för API:t och ett kommande användargränssnitt för granskningsloggar. |
 | **[!UICONTROL Reporting Usage Admin]** | Låter användarna visa och ta bort alla rapporter som körs i deras företag. (Funktionen för rapportering av användning har ännu inte släppts.) |
 | **[!UICONTROL Reporting Usage View]** | Låter användarna se alla samtidiga rapporteringsbegäranden. (Funktionen för rapportering av användning har ännu inte släppts.) |
 | **[!UICONTROL Calculated Metrics Creation]** | Låter användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). |
