@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 7520f068e41d8b91bf9d260b7763cf8c1b946bc4
+source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -97,3 +97,5 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Annotation Creation]** | Låter användarna skapa [anteckningar](/help/components/annotations/overview.md). |
 | **[!UICONTROL Audience Creation]** | Låter användarna skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Audience View]** | Låter användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
+
+{style=&quot;table-layout:auto&quot;}
