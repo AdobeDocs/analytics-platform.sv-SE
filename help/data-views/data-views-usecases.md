@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
+source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -86,19 +86,19 @@ Glöm inte att byta namn på varje mätvärde för att återspegla skillnaderna,
 Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview.md).
 En konceptuell översikt över datavyer finns på [Översikt över datavyer](/help/data-views/data-views.md).
 
-## 7. Ny eller upprepad sessionsrapportering {#new-repeat}
+## 7. Ny sessionsrapportering {#new-repeat}
 
 Du kan avgöra om en session faktiskt är den första sessionen någonsin för en användare eller inte, baserat på det rapportfönster som du har definierat för datavyn och ett 13-månaders uppslagsfönster. Med den här rapporten kan du till exempel avgöra:
 
-* Hur stor procentandel av dina beställningar kommer från nya eller återkommande sessioner?
+* Hur stor procentandel av dina beställningar kommer från nya sessioner?
 
-* För en viss marknadsföringskanal, eller för en viss kampanj, riktar ni er till förstagångsanvändare eller returanvändare? Hur påverkade dessa val konverteringsgraden?
+* För en viss marknadsföringskanal, eller en viss kampanj, riktar ni er till förstagångsanvändare? Hur påverkar detta valet konverteringsgraden?
 
-Tre komponenter underlättar denna rapportering:
+Två komponenter underlättar denna rapportering:
 
-* 1 dimension: [Sessionstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Den här dimensionen har två värden: 1) [!UICONTROL New] och 2) [!UICONTROL Returning]. The [!UICONTROL New] radartikel innehåller allt beteende (dvs. mått mot denna dimension) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte ingår i någon session faller de inom&quot;Ej tillämpligt&quot;-begränsningen för denna dimension.
+* 1 dimension: [Sessionstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Den här dimensionen har två värden: 1) [!UICONTROL New] och 2) [!UICONTROL Returning]. The [!UICONTROL New] radartikel innehåller allt beteende (dvs. mått mot denna dimension) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte ingår i någon session hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen.
 
-* 2 mätvärden: [Nya sessioner, retursessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). En ny session definieras som en persons definierade första session i rapportfönstret. Retursessioner är antalet sessioner som inte var en persons första session någonsin.
+* 1 mått: [Nya sessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). En ny session definieras som en persons definierade första session i rapportfönstret.
 
 Så här kommer du åt de här komponenterna:
 
