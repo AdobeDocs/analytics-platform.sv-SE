@@ -2,9 +2,9 @@
 title: Filteroperatorer
 description: Bestäm hur en komponent interagerar med ett värde i ett filter.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-source-git-commit: 87da431752c235c442d13fd185c7ab8f6cf20eba
+source-git-commit: a8b884148a197b081e321582f70a9188a1bdc51e
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,7 @@ Med filterverktyget kan du jämföra och begränsa värden med valda operatorer.
 | --- | --- |
 | är lika med | Returnerar objekt som matchar exakt för ett numeriskt värde eller strängvärde. Om du använder jokertecken använder du operatorn &quot;match&quot;. |
 | är inte lika med | Returnerar alla objekt som inte innehåller den exakta matchningen av det angivna värdet.  Om du använder jokertecken använder du operatorn &quot;matchar inte&quot;. |
+| är lika med något av | Returnerar alla objekt som innehåller matchningen av de angivna delsträngsvärdena, avgränsade med kommatecken. |
 | innehåller | Returnerar objekt som jämför med delsträngarna för de angivna värdena. Om regeln för en strängdimension till exempel innehåller `"Search"`matchar den alla sidor som har delsträngen `"Search"` i den, inklusive `"Search Results"`, `"Search"`och `"Searching"`. Den här operatorn är skiftlägeskänslig. |
 | innehåller inte | Alla objekt som matchar det angivna värdet tas inte med i resultatet. Om regeln för en strängdimension inte innehåller `"Search"`, exkluderar den alla sidor som har delsträngen `"Search"` i den, inklusive `"Search Results"`, `"Search"`och `"Searching"`. |
 | innehåller alla | Returnerar objekt som innehåller alla delsträngar (avgränsade med blanksteg) i valfri ordning. Ange till exempel `"Search Results"` med den här operatorn skulle matcha `"Search Results"` och `"Results of Search"`, men inte `"Search"` eller `"Results"` oberoende. Den här operatorn stöder upp till 100 ord avgränsade med blanksteg. |
