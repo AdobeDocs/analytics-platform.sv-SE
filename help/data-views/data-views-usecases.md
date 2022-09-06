@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -94,11 +94,15 @@ Du kan avgöra om en session faktiskt är den första sessionen någonsin för e
 
 * För en viss marknadsföringskanal, eller en viss kampanj, riktar ni er till förstagångsanvändare? Hur påverkar detta valet konverteringsgraden?
 
-Två komponenter underlättar denna rapportering:
+Tre komponenter underlättar denna rapportering:
 
 * 1 dimension: [Sessionstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Den här dimensionen har två värden: 1) [!UICONTROL New] och 2) [!UICONTROL Returning]. The [!UICONTROL New] radartikel innehåller allt beteende (dvs. mått mot denna dimension) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte ingår i någon session hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen.
 
-* 1 mått: [Nya sessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). En ny session definieras som en persons definierade första session i rapportfönstret.
+* 2 mätvärden:
+
+   * [Nya sessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). En ny session definieras som en persons definierade första session i rapportfönstret.
+
+   * [Retursessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Retursessioner är antalet sessioner som inte var en persons första session någonsin.
 
 Så här kommer du åt de här komponenterna:
 

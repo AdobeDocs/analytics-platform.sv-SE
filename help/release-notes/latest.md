@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '519'
 ht-degree: 4%
 
 ---
 
 # Versionsinformation för Customer Journey Analytics (CJA) (augusti 2022)
 
-**Senaste uppdatering**: 25 augusti 2022
+**Senaste uppdatering**: 6 september 2022
 
 ## Viktiga funktioner
 
@@ -25,6 +25,7 @@ ht-degree: 4%
 | **Stöd för datumfält i CJA** | Tillåter CJA att rapportera datum- och datumfält. [Läs mer](/help/data-views/data-views-usecases.md#date) | 17 augusti 2022 |
 | **Regionövergripande stöd för Analytics Source Connector** | Du kan nu importera rapportsviter från valfri region (USA, Storbritannien eller Singapore). Dessa rapportsviter måste dock mappas till samma organisation som den Experience Platform sandbox-instans i vilken källanslutningen skapas. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) | 24 augusti 2022 |
 | **Första sessionsrapportering** | Du kan nu identifiera om en viss session var användarens första session någonsin. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 24 augusti 2022 |
+| **Upprepa sessionsrapportering** | Identifiera om en viss session var en användares retursession. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 8 september 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
