@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
+source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '740'
 ht-degree: 32%
 
 ---
@@ -109,6 +109,7 @@ ht-degree: 32%
       + [Områdesdiagram och staplat områdesdiagram](analysis-workspace/visualizations/area.md)
       + [Stapeldiagram och staplat stapeldiagram](analysis-workspace/visualizations/bar.md)
       + [Punktdiagram](analysis-workspace/visualizations/bullet-graph.md)
+      + [Kombinationsdiagram](analysis-workspace/visualizations/combo-charts.md)
       + [Ringdiagram](analysis-workspace/visualizations/donut.md)
       + [Histogram](analysis-workspace/visualizations/histogram.md)
       + [Liggande stapeldiagram och staplat liggande stapeldiagram](analysis-workspace/visualizations/horizontal-bar.md)
