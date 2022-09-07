@@ -3,9 +3,9 @@ description: Lär dig mer om hur du kan analysera resultaten av A/B-tester på C
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
+source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ I datavyn som innehåller experimentella data väljer du två dimensioner, en me
 
 ![kontextetikett](assets/context-label.png)
 
-Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte kommer att finnas några experiment att arbeta med.
+Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte finns några experiment att arbeta med.
 
 ## Steg 3: Konfigurera panelen Experimentera
 
@@ -70,13 +70,9 @@ Experimentationspanelen returnerar en mängd data och visualiseringar som hjälp
 
 Du får också en textsammanfattning som anger om experimentet är slutgiltigt eller inte och som sammanfattar resultatet. Slutsatsen baseras på statistisk signifikans. (Se Statistisk metod nedan.) Du kan se sammanfattningsnummer för den mest högpresterande varianten med högsta lyft och självförtroende.
 
->[!NOTE]
->
->Lyft och förtroende är också [avancerade beräknade mätfunktioner](/help/components/calc-metrics/cm-adv-functions.md) i CJA, så att ni kan bygga upp egna värden för lyft och förtroende.
+För varje framgångsmått som du har valt visas en frihandstabell och en konverteringsgrad.
 
 ![experimentera fram](assets/exp-output1.png)
-
-För varje framgångsmått som du har valt visas en frihandstabell och en konverteringsgrad.
 
 The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL Control Variant] prestanda:
 
@@ -85,6 +81,10 @@ The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL
 >[!NOTE]
 >
 >Den här panelen stöder för närvarande inte analys av A/A-tester.
+
+>[!NOTE]
+>
+>Lyft och förtroende är också [avancerade beräknade mätfunktioner](/help/components/calc-metrics/cm-adv-functions.md) i CJA, så att ni kan bygga upp egna värden för lyft och förtroende.
 
 ## Steg 5: Tolka resultaten
 
