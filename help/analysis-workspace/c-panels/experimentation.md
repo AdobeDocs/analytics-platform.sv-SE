@@ -3,9 +3,9 @@ description: Lär dig mer om hur du kan analysera resultaten av A/B-tester på C
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte kommer at
 ![experimentpanel](assets/experiment.png)
 
 >[!IMPORTANT]
->Om de nödvändiga inställningarna i CJA-datavyer inte har slutförts får du ett meddelande om detta innan du kan fortsätta.
+>Om de nödvändiga inställningarna i CJA-datavyer inte har slutförts får du det här meddelandet innan du kan fortsätta: &quot;[!UICONTROL Please configure the experiment and variant dimensions in Data Views]&quot;.
 
 1. Konfigurera panelens indatainställningar.
 
@@ -64,7 +64,7 @@ Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte kommer at
 
 1. Klicka på **[!UICONTROL Build]**.
 
-## Steg 4: Tolka panelutdata
+## Steg 4: Visa panelutdata
 
 Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att klicka på redigeringspennan längst upp till höger.
 
@@ -76,25 +76,17 @@ Du får också en textsammanfattning som anger om experimentet är slutgiltigt e
 
 ![experimentera fram](assets/exp-output1.png)
 
-För varje framgångsmått du valt visas en frihandstabell och en konverteringsgrad:
-
-![experimentera fram](assets/exp-output2.png)
+För varje framgångsmått som du har valt visas en frihandstabell och en konverteringsgrad.
 
 The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL Control Variant] prestanda:
 
-![experimentera fram](assets/exp-output3.png)
+![experimentera fram](assets/exp-output2.png)
 
 >[!NOTE]
 >
 >Den här panelen stöder för närvarande inte analys av A/A-tester.
 
-## Adobe statistisk metod
-
-Adobe har antagit en statistisk metod som bygger på [Sekvenser för alltid giltiga förtroenden](https://doi.org/10.48550/arXiv.2103.06476).
-
-En konfidenssekvens är en sekventiell analog till ett konfidensintervall. För att förstå vad en konfidenssekvens är kan du föreställa dig att du upprepar dina experiment hundra gånger och beräknar en uppskattning av medelvärdet för affärsmätningen (t.ex. öppningsfrekvensen för ett e-postmeddelande) och dess associerade 95-procentiga konfidenssekvens för *alla nya användare* som kommer in i experimentet. En 95-procentig konfidenssekvens kommer att innehålla det &quot;sanna&quot; värdet för affärsmåttet i 95 av de 100 experiment som du utförde. (Ett 95-procentigt konfidensintervall kunde endast beräknas en gång per experiment för att ge samma 95-procentiga garanti. inte med alla nya användare). Med Confidence Sequences kan du därför kontinuerligt övervaka experiment utan att öka andelen falskt positiva fel, dvs. de tillåter&quot;sökning&quot; vid resultat.
-
-### Tolka resultaten
+## Steg 5: Tolka resultaten
 
 1. **Experiment är slutprodukt**: Varje gång du tittar på experimentrapporten analyserar Adobe de data som har samlats in i experimentet fram till den här tidpunkten och deklarerar ett experiment som&quot;slutgiltigt&quot; när ett giltigt konfidensintervall överskrider ett tröskelvärde på 95 % för *minst en* av varianterna (med en Bonferonni-korrigering tillämpad när det finns mer än två armar, för att korrigera för multipla hypotesstester).
 
@@ -106,4 +98,12 @@ En konfidenssekvens är en sekventiell analog till ett konfidensintervall. För 
 
 5. **Förtroende**: Den Anytime Valid Confidence som visas är ett sannolikhetsmått på hur mycket det finns bevis för att en viss variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda. Mer exakt är den säkerhet som visas en sannolikhet (uttryckt i procent) att vi skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss variant och kontrollen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller *p*-values, the trust displayed is 1 - *p*-value.
 
-Observera dock att en fullständig beskrivning av resultaten bör beakta alla tillgängliga bevis (dvs. experimentutformning, provstorlekar, konverteringsgrader, konfidensgrad osv.), och inte bara deklarationen av huruvida det är slutgiltigt eller inte. Även om ett resultat ännu inte är &quot;entydigt&quot; kan det fortfarande finnas övertygande bevis för att en variant skiljer sig från en annan (t.ex. att konfidensintervallen nästan inte överlappar varandra). I idealfallet bör beslutsfattandet kompletteras med all statistik, tolkad på ett kontinuerligt spektrum.
+>[!NOTE]
+>
+>En fullständig beskrivning av resultaten bör beakta alla tillgängliga bevis (dvs. experimentdesign, provstorlekar, konverteringsgrader, konfidensgrad osv.), och inte bara försäkran om att resultatet är slutgiltigt eller inte. Även om ett resultat ännu inte är &quot;entydigt&quot; kan det fortfarande finnas övertygande bevis för att en variant skiljer sig från en annan (t.ex. att konfidensintervallen nästan inte överlappar varandra). I idealfallet bör beslutsfattandet kompletteras med all statistik, tolkad på ett kontinuerligt spektrum.
+
+## Adobe statistisk metod
+
+Adobe har antagit en statistisk metod som bygger på [Sekvenser för alltid giltiga förtroenden](https://doi.org/10.48550/arXiv.2103.06476).
+
+En konfidenssekvens är en sekventiell analog till ett konfidensintervall. För att förstå vad en konfidenssekvens är kan du föreställa dig att du upprepar dina experiment hundra gånger och beräknar en uppskattning av medelvärdet för affärsmätningen (t.ex. öppningsfrekvensen för ett e-postmeddelande) och dess associerade 95-procentiga konfidenssekvens för *alla nya användare* som kommer in i experimentet. En 95-procentig konfidenssekvens kommer att innehålla det &quot;sanna&quot; värdet för affärsmåttet i 95 av de 100 experiment som du utförde. (Ett 95-procentigt konfidensintervall kunde endast beräknas en gång per experiment för att ge samma 95-procentiga garanti. inte med alla nya användare). Med Confidence Sequences kan du därför kontinuerligt övervaka experiment utan att öka andelen falskt positiva fel, dvs. de tillåter&quot;sökning&quot; vid resultat.
