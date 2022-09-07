@@ -3,7 +3,7 @@ description: Lär dig mer om hur du kan analysera resultaten av A/B-tester på C
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
+source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -34,8 +34,8 @@ Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com
 
 I inställningarna för CJA-datavyer kan administratörer lägga till [kontextetiketter](/help/data-views/component-settings/overview.md) till mått eller mätvärden och CJA-tjänster som [!UICONTROL Experimentation] kan använda dessa etiketter för sina ändamål. Två fördefinierade etiketter används för panelen Experimentation:
 
-* [!UICONTROL Experiment]
-* [!UICONTROL Variant]
+* [!UICONTROL Experimentation Experiment]
+* [!UICONTROL Experimentation Variant]
 
 I datavyn som innehåller experimentella data väljer du två dimensioner, en med experimentella data och en med variantdata. Ge sedan måtten etiketten med **[!UICONTROL Experiment]** och **[!UICONTROL Variant]** etiketter.
 
