@@ -3,9 +3,9 @@ description: Lär dig mer om hur du kan analysera resultaten av A/B-tester på C
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
+source-git-commit: 31f29e9453d252f119a4fa7c26f96e9f01ed2abf
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ The **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av
 Experimentationspanelen kan användas av alla som använder Customer Journey Analytics (CJA). Inga administratörsrättigheter eller andra behörigheter krävs. Installationen (steg 1 och 2 nedan) kräver åtgärder som bara administratörer kan utföra.
 
 ## Steg 1: Skapa anslutning för att experimentera med datauppsättningar
+
+Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) som innehåller experimentella data och variantdata i två olika dimensioner. Om du har experimenterat med data i en enda dimension med experiment- och variantdata i en avgränsad sträng kan du använda [delsträng](/help/data-views/component-settings/substring.md) ange i datavyer för att dela upp dem i två för användning på panelen.
 
 Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) till Adobe Experience Platform, [skapa en anslutning i CJA](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
 
@@ -76,7 +78,7 @@ För varje framgångsmått som du har valt visas en frihandstabell och en konver
 
 The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL Control Variant] prestanda:
 
-![experimentera fram](assets/exp-output2.png)
+![linjediagramutdata](assets/exp-output2.png)
 
 >[!NOTE]
 >
