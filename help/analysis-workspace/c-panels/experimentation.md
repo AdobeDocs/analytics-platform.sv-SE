@@ -3,9 +3,9 @@ description: Lär dig hur du kan analysera resultaten av A/B-tester på CJA-pane
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 41cca39d73773af09981bde10c93c767ebdb77d4
+source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
@@ -83,10 +83,6 @@ The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL
 >[!NOTE]
 >
 >Den här panelen stöder för närvarande inte analys av A/A-tester.
-
->[!NOTE]
->
->Lyft och förtroende är också [avancerade beräknade mätfunktioner](/help/components/calc-metrics/cm-adv-functions.md) i CJA, så att ni kan bygga upp egna värden för lyft och förtroende.
 
 ## Steg 5: Tolka resultaten
 
