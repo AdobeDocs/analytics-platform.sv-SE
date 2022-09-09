@@ -3,16 +3,20 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
+source-git-commit: 41cca39d73773af09981bde10c93c767ebdb77d4
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '588'
 ht-degree: 4%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (CJA) (augusti 2022)
+# Versionsinformation för Customer Journey Analytics (CJA) (september 2022)
 
 **Senaste uppdatering**: 9 september 2022
+
+>[!NOTE]
+>
+>Den här sidan innehåller förhandsversion av innehåll och kan komma att ändras.
 
 ## Relaterade resurser
 
@@ -33,19 +37,21 @@ ht-degree: 4%
 | **Målgruppspublicering i kundprofil i realtid** | Gör att ni kan publicera målgrupper som identifierats i CJA till Adobe Experience Platform/Kundprofil i realtid för kundanpassning och personalisering. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | 17 augusti 2022 |
 | **CJA-stöd för etiketter och policyer för datastyrning** | Automatiserar integreringen mellan CJA och Adobe Experience Platform integritetsetiketter och integritetspolicyer. Dataetiketter som skapas på datauppsättningar som används av plattformen visas i CJA-datavyer för att stoppa eller varna användare som skapar mätvärden och/eller dimensioner från känsliga fält. Dessutom, när data exporteras från CJA (via Workspace eller Report Builder-rapportering, export, API osv.) Ytterligare varningar eller etiketter läggs till för att meddela användarna att en rapport innehåller känslig information som behöver behandlas på ett specifikt sätt. [Läs mer](/help/data-views/data-governance.md) | 17 augusti 2022 |
 | **Regionövergripande stöd för Analytics Source Connector** | Du kan nu importera rapportsviter från valfri region (USA, Storbritannien eller Singapore). Dessa rapportsviter måste dock mappas till samma organisation som den Experience Platform sandbox-instans i vilken källanslutningen skapas. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) | 24 augusti 2022 |
-| **Första sessionsrapportering** | Du kan nu identifiera om en viss session var användarens första session någonsin. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 24 augusti 2022 |
+| **Första sessionsrapportering** | Upptäck om en viss session var användarens första session någonsin. [Läs mer](/help/data-views/data-views-usecases.md) | 24 augusti 2022 |
+| **Panelen Experimentation för CJA** | Med den nya Workspace-panelen kan CJA-användare utvärdera hur stort A/B-experimentet blir och hur säkert det är från alla källor - online, offline, från Adobe-lösningar, Adobe Journey Optimizer och till och med BYO-data (ta dina egna). [Läs mer](/help/analysis-workspace/c-panels/experimentation.md) | [Begränsad release](/help/release-notes/releases.md) från och med 14 september 2022 |
+| **Visualisering av kombinationsdiagram i arbetsytan** | Med kombinationsdiagram kan du jämföra mätvärden enklare och intuitivare i Workspace. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/combo-charts.html?lang=en) | 14 september 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Korrigeringar
 
-AN-297141
+AN-298412
 
 ## Viktiga meddelanden för CJA-administratörer
 
 | Meddelande | Meddelande tillagt eller uppdaterat | Beskrivning |
 | --- | --- | --- |
-| **Förbättrad mappning av IP-till-geopositionering** | 11 juli 2022 | Adobe för IP-sökningar, Digital Element, uppgraderar till en ny förbättrad datamängd (NetAcuity Pulse) för mappning från IP till geopositionering. Adobe Analytics kommer att anta den nya datauppsättningen i **Oktober 2022** tidsram. Den nya databasen kommer att vara mer exakt än tidigare versioner. Vissa IP-till-geo-mappningar kommer att ändras/förbättras när den nya databasen antas.<p> CJA-data som tillhandahålls via Analytics Source Connector drar automatiskt nytta av de nya mappningarna. |
+| **Förbättrad mappning av IP-till-geopositionering** | 9 september 2022 | Adobe för IP-sökningar, Digital Element, uppgraderar till en ny förbättrad datamängd (NetAcuity Pulse) för mappning från IP till geopositionering. Adobe Analytics kommer att anta den nya datauppsättningen den **5 oktober 2022**. Den nya databasen kommer att vara mer exakt än tidigare versioner. Vissa IP-till-geo-mappningar kommer att ändras/förbättras när den nya databasen antas.<p> CJA-data som tillhandahålls via Analytics Source Connector drar automatiskt nytta av de nya mappningarna. |
 
 {style=&quot;table-layout:auto&quot;}
 
