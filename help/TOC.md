@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 32%
+source-wordcount: '757'
+ht-degree: 31%
 
 ---
 
@@ -230,6 +230,11 @@ ht-degree: 32%
    + [Konfigurera chefer för att använda kontrollpaneler](mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
 + Användningsexempel {#cja-usecases}
+   + Google Analytics data {#ga}
+      + [Migrera data från Google Analytics till CJA - översikt](use-cases/ga/overview.md)
+      + [Infoga Google Analytics historiska data i plattformen](use-cases/ga/backfill.md)
+      + [Konfigurera strömmande Google Analytics-data i plattformen](use-cases/ga/streaming.md)
+      + [Rapport om Google Analytics data i CJA](use-cases/ga/report.md)
    + [Användningsexempel i Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Kombinera rapportsviter med olika scheman](use-cases/combine-report-suites.md)
    + [Använda arrayer med objekt](use-cases/object-arrays.md)
@@ -241,8 +246,6 @@ ht-degree: 32%
    + [Importera callcenter och webbdata](use-cases/call-center.md)
    + [Användningsfall vid datainhämtning](use-cases/data-ingestion.md)
    + [Använd mått för marknadsföringskanal](use-cases/marketing-channels.md)
-   + [Importera data från Google Analytics till Adobe Experience Platform](use-cases/ga-to-cja.md)
-   + [Rapport om Google Analytics data i CJA](use-cases/ga-to-cja-reporting.md)
 + Labs {#labs}
    + [Användarhandbok för Labs](labs/labs.md)
 + Felsökning {#troubleshooting}

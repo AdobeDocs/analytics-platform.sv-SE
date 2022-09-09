@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 40256c151fbc5582a198cc17a63efad9189cb6c2
+source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1004'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| September 2022 | Nytt användningsexempel på [Migrera Google Analytics-data till CJA](/help/use-cases/ga/overview.md). |
 | September 2022 | Nytt ämne [Kombinationsdiagram](/help/analysis-workspace/visualizations/combo-charts.md) i Workspace. |
 | September 2022 | Nytt ämne [Panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md) i Workspace. |
 | Augusti 2022 | Adobe Experience Platform artikel om [Regionövergripande stöd för Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
@@ -74,7 +75,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | April 2021 | Nytt ämne [beständighet](/help/data-views/component-settings/persistence.md). |
 | April 2021 | Ny dokumentation om stöd för schemalagda projekt i Workspace. |
 | April 2021 | Nya ämnen på [förbättrad datavyer](/help/data-views/data-views.md). |
-| April 2021 | Nya ämnen om [inhämta Google Analytics-data](/help/use-cases/ga-to-cja.md) och [analysera dessa data](/help/use-cases/ga-to-cja-reporting.md). |
+| April 2021 | Nya ämnen om [inhämta Google Analytics-data](/help/use-cases/ga/overview.md) och [analysera dessa data](/help/use-cases/ga/report.md). |
 | April 2021 | Lagt till ämne om [schemalagda rapporter](/help/analysis-workspace/curate-share/t-schedule-report.md) i Workspace. |
 | April 2021 | Nytt ämne [högkardinalitetsmått i CJA](/help/components/dimensions/high-cardinality.md). |
 | Mars 2021 | Tillagt ämne om stöd för [Kontrollpaneler för analyser](/help/mobile-app/home.md) (mobilapp). |

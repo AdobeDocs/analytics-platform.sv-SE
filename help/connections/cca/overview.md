@@ -4,9 +4,9 @@ description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar fö
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Innan du använder flerkanalsanalys bör du kontrollera att din organisation har
 
 >[!IMPORTANT]
 >
->Observera att alla ändringar i det globala händelsedatamängdsschemat måste tillämpas även i det nya sammanfogade dataschemat, annars bryts den sammanfogade datauppsättningen.
+>Alla ändringar i det globala händelsedatamängdsschemat måste tillämpas även i det nya sammanfogade dataschemat, annars bryts den sammanfogade datauppsättningen.
 >
 >Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
 
@@ -51,7 +51,7 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 * Aktuella återskrivningsfunktioner är begränsade till ett steg (beständigt ID till tillfälligt ID). Återinmatning i flera steg (till exempel beständigt ID till ett tillfälligt ID och sedan till ett annat tillfälligt ID) stöds inte.
 * Endast händelsedatamängder stöds. Andra datauppsättningar, till exempel uppslagsdatauppsättningar, stöds inte.
 * Anpassade ID-mappningar som används i din organisation stöds inte.
-* Adobe Co-op-diagrammet och det privata diagrammet stöds inte.
+* Privat korsenhetsdiagram stöds inte.
 * Flerkanalsanalys omformar inte det fält som används för sammanfogning på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns i den icke-sammanfogade datauppsättningen inom datarjön. Staplingsprocessen är skiftlägeskänslig. Om ibland ordet &#39;Bob&#39; visas i fältet och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer.
 * För Analytics-datauppsättningar som genererats via Analytics Source Connector rekommenderar Adobe att man granskar VISTA-regler eller bearbetningsregler som gäller för det tillfälliga ID-fältet för att säkerställa att inga av dessa regler inför nya former av samma ID. Du bör t.ex. se till att inga VISTA-regler eller bearbetningsregler för endast en del av händelserna introducerar lägre radering till det tillfälliga ID-fältet.
 * Fältbaserad sammanfogning varken kombinerar eller sammanfogar fält.
