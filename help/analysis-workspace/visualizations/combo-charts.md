@@ -4,30 +4,24 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
 
 # Kombinationsdiagram
 
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
-
 The [!UICONTROL Combo chart] visualisering gör det enkelt att snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. Du kan enkelt visa trender i dina data i en kombination av rad och rad.
 
-Använd en [!UICONTROL Combo chart] till
+Använd en [!UICONTROL Combo chart] till:
 
 * Jämför den här veckans order med order vid samma tidpunkt förra månaden (och förra året) - allt med bara några klick.
-
 * Analysera och jämför snabbt olika mätvärden (som [!UICONTROL Unique Visitors] och [!UICONTROL Revenue]) mot varandra i samma diagram.
-
 * Analysera ett mått mot en funktion (som [!UICONTROL Cumulative Average]) över en tidsperiod.
 
-Kom ihåg att du kan
+Kom ihåg att du kan:
 
 * Lägg till flera jämförelser i en enda [!UICONTROL Combo chart].
 * Om du lägger till en eller flera jämförelser måste de vara av samma typ, till exempel [!UICONTROL Time comparison].
@@ -38,7 +32,7 @@ Kom ihåg att du kan
 
 1. Dra i listrutan Visualiseringar i den vänstra listen [!UICONTROL Combo chart] visualisering till en tom panel.
 
-   ![](assets/combo-chart-build.png)
+   ![Bygge](assets/combo-chart-build.png)
 
 1. I listrutorna väljer du en dimension för X-axeln och ett mått för Y-axeln.
 
@@ -46,9 +40,9 @@ Kom ihåg att du kan
 
    | Jämförelsetyp | Definition |
    | --- | --- |
-   | **[!UICONTROL Time comparison]** | Den vanligaste typen av jämförelse - till exempel en jämförelse mellan den här tidsperioden och för 4 veckor sedan. Om du valde [!UICONTROL Time comparison], gör ett sekundärt val av vilken tidsperiod du vill jämföra.<p>![](assets/combo-time-period.png) |
-   | **[!UICONTROL Function]** | Du kan presentera en funktion som [!UICONTROL Average] i jämförelsen. Se en lista över funktioner som stöds nedan.<p>![](assets/combo-functions.png) |
-   | **[!UICONTROL Secondary metric]** | Du kan till exempel jämföra [!UICONTROL Revenue] till ett annat mätvärde.<p>![](assets/combo-2metrics.png) |
+   | **[!UICONTROL Time comparison]** | Den vanligaste typen av jämförelse - till exempel en jämförelse mellan den här tidsperioden och för 4 veckor sedan. Om du valde [!UICONTROL Time comparison], gör ett sekundärt val av vilken tidsperiod du vill jämföra.<p>![Tidsperiod](assets/combo-time-period.png) |
+   | **[!UICONTROL Function]** | Du kan presentera en funktion som [!UICONTROL Average] i jämförelsen. Se en lista över funktioner som stöds nedan.<p>![Funktioner](assets/combo-functions.png) |
+   | **[!UICONTROL Secondary metric]** | Du kan till exempel jämföra [!UICONTROL Revenue] till ett annat mätvärde.<p>![Två mätvärden](assets/combo-2metrics.png) |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -56,7 +50,7 @@ Kom ihåg att du kan
 
    Utdata ser ut ungefär så här:
 
-   ![](assets/combo-output.png)
+   ![Utdata](assets/combo-output.png)
 
    Den aktuella perioden visas i stapeldiagrammet och jämförelseperioden representeras av linjediagrammet. Punkter i linjediagrammet kallas för&quot;streck&quot;.
 
@@ -78,17 +72,17 @@ Om du väljer **[!UICONTROL Function]** som [!UICONTROL Line comparison type], r
 
 Här är ett exempel på det ackumulerade genomsnittet för intäktsmåttet:
 
-![](assets/combo-cumul-avg.png)
+![Kumulativt genomsnitt](assets/combo-cumul-avg.png)
 
 Här följer ett exempel på ett kombinationsdiagram med funktioner för både Cumulativt medelvärde och Medel:
 
-![](assets/combo-two-functions.png)
+![Två funktioner](assets/combo-two-functions.png)
 
 ## Inställningar för kombinationsdiagram
 
 Klicka på kugghjulsikonen längst upp till höger i ett kombinationsdiagram om du vill ändra dess inställningar.
 
-![](assets/combo-settings.png)
+![Inställningar](assets/combo-settings.png)
 
 | Inställning | Definition |
 | --- | --- |
