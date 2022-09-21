@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
+source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2155'
 ht-degree: 1%
 
 ---
@@ -62,10 +62,7 @@ ht-degree: 1%
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
->[!IMPORTANT]
->Kontakta kundtjänst eller din kontoansvarige på Adobe för att få den här inställningen implementerad. Den är ännu inte tillgänglig via CJA-gränssnittet.
-
-Med den här inställningen kan du definiera CJA-datalagring som ett rullande fönster på månader (3 månader, 6 månader osv.), vid [!UICONTROL connection] nivå (inte på [!UICONTROL dataset] nivå). Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
+The [**[!UICONTROL Enable rolling data window]**inställning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) Med kan du definiera CJA-datalagring som ett rullande fönster på månader (3 månader, 6 månader osv.). Den ställs in på [!UICONTROL connection] nivå, inte på [!UICONTROL dataset] nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
 
 Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
 
