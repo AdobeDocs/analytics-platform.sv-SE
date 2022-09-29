@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Den här guiden stöder Customer Journey Analytics, nästa generation av Adobe-lösning för flerkanalsanalys, baserad på Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
+source-git-commit: 19551e8c8f3b114b1851ed80c2b13ae29696f79d
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '771'
 ht-degree: 31%
 
 ---
@@ -229,13 +229,16 @@ ht-degree: 31%
    + [Skapa ett styrkort](mobile-app/create-scorecard.md)
    + [Konfigurera chefer för att använda kontrollpaneler](mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
++ Integreringar med Adobe {#integrations}
+   + [Integrera Adobe-lösningar med CJA - översikt](/help/integrations/overview.md)
+   + [Integrera Journey Optimizer-data med CJA](/help/integrations/ajo.md)
 + Användningsexempel {#cja-usecases}
+   + [Användningsexempel i Customer Journey Analytics](use-cases/cja-usecases.md)
    + Google Analytics data {#ga}
       + [Migrera data från Google Analytics till CJA - översikt](use-cases/ga/overview.md)
       + [Infoga Google Analytics historiska data i plattformen](use-cases/ga/backfill.md)
       + [Konfigurera strömmande Google Analytics-data i plattformen](use-cases/ga/streaming.md)
       + [Rapport om Google Analytics data i CJA](use-cases/ga/report.md)
-   + [Användningsexempel i Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Kombinera rapportsviter med olika scheman](use-cases/combine-report-suites.md)
    + [Använda arrayer med objekt](use-cases/object-arrays.md)
    + [Använd bindningsdimensioner och mätvärden](use-cases/binding-dimensions-metrics.md)
