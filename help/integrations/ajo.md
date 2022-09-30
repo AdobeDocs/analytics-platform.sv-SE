@@ -1,9 +1,9 @@
 ---
 title: Integrera Adobe Journey Optimizer med Customer Journey Analytics
 description: Hämta in data som genererats av AJO och analysera dem med Analysis Workspace i CJA.
-source-git-commit: 28bc99a7f5ec7b280fd26a7a45dc076e67f652dc
+source-git-commit: b24ad572ca36bbafffcd242fe257a2113977392d
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,8 @@ Du kan skapa följande mätvärden i en datavy för att få en ungefärlig parit
 | Meddelanden har skickats | Antal meddelanden som skickats | Använda schemasträntelementet `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `sent` |
 | Synkroniseringsfel | Det totala antalet meddelanden som inte kunde synkroniseras | Använda schemasträntelementet `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `sync` |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Konfigurera beräknade värden med Journey Optimizer-statistik
 
 När du har konfigurerat önskade mått och mätvärden för Journey Optimizer datauppsättning kan du även konfigurera [Beräknade mått](/help/components/calc-metrics/calc-metr-overview.md) för ytterligare insikter om dessa data. Dessa beräknade värden baseras på ovanstående mått som skapats i Data View Manager.
@@ -48,6 +50,8 @@ När du har konfigurerat önskade mått och mätvärden för Journey Optimizer d
 | Beräknat mätvärde | Beskrivning | Formel |
 | --- | --- | --- |
 | Totalt antal skickade meddelanden | Det totala antalet meddelanden som skickats, slutförts eller misslyckats | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Skillnader i rapporteringen mellan Journey Optimizer och Customer Journey Analytics
 
