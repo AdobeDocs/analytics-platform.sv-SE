@@ -2,12 +2,13 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Översikt över filter {#overview}
 
@@ -18,6 +19,8 @@ Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön)
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
 Filtreringen innehåller [Filter Builder](/help/components/filters/create-filters.md) för att skapa filter och köra ett förtest samt [Filterhanteraren](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
+
+Det högsta antalet filter som du kan skapa per IMS-organisation är 50 000.
 
 ## Filtertyper {#types}
 
