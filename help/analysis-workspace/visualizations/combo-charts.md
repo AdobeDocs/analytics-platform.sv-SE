@@ -4,9 +4,9 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
+source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,13 @@ Använd en [!UICONTROL Combo chart] till:
 * Analysera och jämför snabbt olika mätvärden (som [!UICONTROL Unique Visitors] och [!UICONTROL Revenue]) mot varandra i samma diagram.
 * Analysera ett mått mot en funktion (som [!UICONTROL Cumulative Average]) över en tidsperiod.
 
-Kom ihåg att du kan:
+Tänk på detta:
 
-* Lägg till flera jämförelser i en enda [!UICONTROL Combo chart].
+* Du kan lägga till flera jämförelser i en enda [!UICONTROL Combo chart].
 * Om du lägger till en eller flera jämförelser måste de vara av samma typ, till exempel [!UICONTROL Time comparison].
 * Du kan lägga till upp till fem jämförelser.
 * Du kan använda upp till tre filter (segment) för ett mätresultat.
+* Beräknade mått stöds inte i kombinationsdiagram.
 
 ## Skapa ett kombinationsdiagram
 
