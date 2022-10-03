@@ -3,9 +3,9 @@ title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
 workflow-type: tm+mt
-source-wordcount: '2906'
+source-wordcount: '3107'
 ht-degree: 1%
 
 ---
@@ -161,6 +161,23 @@ CEILING(metric)
 | Argument | Beskrivning |
 |---|---|
 | *mått* | Det mätvärde som du vill runda av. |
+
+## Förtroende
+
+[!UICONTROL Confidence] är ett sannolikhetsmått på hur mycket det finns belägg för att en given variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda.
+
+```
+fx Confidence (normalizing-container, success-metric, control, significance-threshold)
+```
+
+| Argument | Beskrivning |
+| --- | --- |
+| Normaliserar behållare | Basen (Personer, sessioner eller Händelser) som testet ska köras på. |
+| Resultatmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
+| Kontroll | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
+| Tröskelvärde för signifikans | Tröskelvärdet i den här funktionen är inställt på 95 % som standard. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Cosine (rad)
 
@@ -334,6 +351,22 @@ Returnerar objekt vars numeriska antal är mindre än det angivna värdet.
 ## Mindre än eller lika med
 
 Returnerar objekt vars numeriska värde är mindre än eller lika med det angivna värdet.
+
+## Lyft
+
+Returnerar det Lyft som en viss variant hade i konverteringar över en kontrollvariant. Det är skillnaden i prestanda mellan en given variant och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
+
+```
+fx Lift (normalizing-container, success-metric, control)
+```
+
+| Argument | Beskrivning |
+| --- | --- |
+| Normaliserar behållare | Basen (Personer, sessioner eller Händelser) som testet ska köras på. |
+| Resultatmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
+| Kontroll | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Linjär regression_Korrelationskoefficient
 
