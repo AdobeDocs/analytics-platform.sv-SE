@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d2aec8976d7d81c28a6b9b76c58fec0fc2c3b360
+source-git-commit: fc1a5b1b0f01ace6207820e2421d1770f68c3583
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 4%
+source-wordcount: '454'
+ht-degree: 3%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (CJA) (september 2022)
+# Versionsinformation för Customer Journey Analytics (CJA) (oktober 2022)
 
-**Senaste uppdatering**: 14 september 2022
+**Senaste uppdatering**: 5 oktober 2022
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -30,23 +30,20 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| **Regionövergripande stöd för Analytics Source Connector** | Du kan nu importera rapportsviter från valfri region (USA, Storbritannien eller Singapore). Dessa rapportsviter måste dock mappas till samma organisation som den Experience Platform sandbox-instans i vilken källanslutningen skapas. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) | 24 augusti 2022 |
-| **Första sessionsrapportering** | Upptäck om en viss session var användarens första session någonsin. [Läs mer](/help/data-views/data-views-usecases.md) | 24 augusti 2022 |
-| **Panelen Experimentation för CJA** | Med den nya Workspace-panelen kan CJA-användare utvärdera hur stort A/B-experimentet blir och hur säkert det är från alla källor - online, offline, från Adobe-lösningar, Adobe Journey Optimizer och till och med BYO-data (ta dina egna). [Läs mer](/help/analysis-workspace/c-panels/experimentation.md) | [Begränsad release](/help/release-notes/releases.md) från och med 14 september 2022 |
-| **Visualisering av kombinationsdiagram i arbetsytan** | Med kombinationsdiagram kan du jämföra mätvärden enklare och intuitivare i Workspace. [Läs mer](/help/analysis-workspace/visualizations/combo-charts.md) | 14 september 2022 |
-| **CJA-stöd för etiketter och policyer för datastyrning** | Automatiserar integreringen mellan CJA och Adobe Experience Platform integritetsetiketter och integritetspolicyer. Dataetiketter som skapas på datauppsättningar som används av plattformen visas i CJA-datavyer för att stoppa eller varna användare som skapar mätvärden och/eller dimensioner från känsliga fält. Dessutom, när data exporteras från CJA (via Workspace eller Report Builder-rapportering, export, API osv.) Ytterligare varningar eller etiketter läggs till för att meddela användarna att en rapport innehåller känslig information som behöver behandlas på ett specifikt sätt. [Läs mer](/help/data-views/data-governance.md) | 14 september 2022 |
+| **Panelen Experimentation** | Med den nya Workspace-panelen kan CJA-användare utvärdera hur stort A/B-experimentet blir och hur säkert det är från alla källor - online, offline, från Adobe-lösningar, Adobe Journey Optimizer och till och med BYO-data. [Läs mer](/help/analysis-workspace/c-panels/experimentation.md) | 5 oktober 2022 |
+| **[!UICONTROL Key metric summary]visualisering** | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Läs mer | Avfasad utrullning från 5 oktober 2022 |
+| **Stöd för datumfält i CJA** | Tillåter CJA att rapportera datum- och datumfält. [Läs mer](/help/data-views/data-views-usecases.md#date) | 5 oktober 2022 |
+| **Mobilapp: Anpassade detaljvyer** | Med anpassade detaljvyer kan ni målinrikta er ännu mer om vilken information ni delar med er målgrupp genom att låta dem fokusera på det som är viktigast. Du kan ändra layouten för den detaljvy som är kopplad till varje styrkortsplatta och du kan lägga till text för att bättre förklara vad slutanvändaren kan se i data. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en) | 5 oktober 2022 |
 
 {style=&quot;table-layout:auto&quot;}
-
-## Korrigeringar
-
-AN-298412
 
 ## Viktiga meddelanden för CJA-administratörer
 
 | Meddelande | Meddelande tillagt eller uppdaterat | Beskrivning |
 | --- | --- | --- |
-| **Förbättrad mappning av IP-till-geopositionering** | 9 september 2022 | Adobe för IP-sökningar, Digital Element, uppgraderar till en ny förbättrad datamängd (NetAcuity Pulse) för mappning från IP till geopositionering. Adobe Analytics kommer att anta den nya datauppsättningen den **5 oktober 2022**. Den nya databasen kommer att vara mer exakt än tidigare versioner. Vissa IP-till-geo-mappningar kommer att ändras/förbättras när den nya databasen antas.<p> CJA-data som tillhandahålls via Analytics Source Connector drar automatiskt nytta av de nya mappningarna. |
+| **Standardstartsida** | 29 september 2023 | The [ny landningssida](/help/getting-started/landing.md) som introducerades tidigare i år kommer att bli standardupplevelsen för alla användare i **Januari 2023**. Den aktuella sidan kommer att bli inaktuell och alla kommer att behöva använda den nya upplevelsen. |
+| **Förbättrad mappning av IP-till-geopositionering** | 29 september 2022 | Adobe för IP-sökningar, Digital Element, uppgraderar till en ny förbättrad datamängd (NetAcuity Pulse) för mappning från IP till geopositionering. Adobe Analytics har senarelagt antagandet av den nya datauppsättningen till **Januari 2023**. Den nya databasen kommer att vara mer exakt än tidigare versioner. Vissa IP-till-geo-mappningar kommer att ändras/förbättras när den nya databasen antas.<p> CJA-data som tillhandahålls via [!UICONTROL Analytics Source Connector] utnyttjar automatiskt de nya mappningarna. |
+| **[!UICONTROL Anomaly detection]autokörningsförhållanden** | 29 september 2022 | Idag [!UICONTROL Anomaly detection] körs automatiskt på alla kolumner i friformstabeller i tidsserier. För att säkerställa att data är tillgängliga för analys och att projekt läses in snabbare kommer Adobe att ändra hur [!UICONTROL Anomaly detection] kör automatiskt. Startar **26 oktober 2022**, körs avvikelseidentifiering bara automatiskt på den första måttkolumnen i en tabell. Du kan konfigurera kolumninställningar så att de körs [!UICONTROL Anomaly detection] på andra kolumner, om det behövs. |
 
 {style=&quot;table-layout:auto&quot;}
 

@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
+source-git-commit: 8492a400d7402a95ba98dc0800970b25a1d7d473
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -86,23 +86,23 @@ Glöm inte att byta namn på varje mätvärde för att återspegla skillnaderna,
 Mer information om andra datavyinställningar finns i [Skapa datavyer](/help/data-views/create-dataview.md).
 En konceptuell översikt över datavyer finns på [Översikt över datavyer](/help/data-views/data-views.md).
 
-## 7. Ny sessionsrapportering {#new-repeat}
+## 7. Ny session- och retursessionsrapportering {#new-repeat}
 
-Du kan avgöra om en session faktiskt är den första sessionen någonsin för en användare eller inte, baserat på det rapportfönster som du har definierat för datavyn och ett 13-månaders uppslagsfönster. Med den här rapporten kan du till exempel avgöra:
+Du kan avgöra om en session faktiskt är den första sessionen någonsin för en användare eller en retursession, baserat på det rapportfönster som du definierade för datavyn och ett 13-månaders uppslagsfönster. Med den här rapporten kan du till exempel avgöra:
 
-* Hur stor procentandel av dina beställningar kommer från nya sessioner?
+* Hur stor procentandel av dina beställningar kommer från nya sessioner eller retursessioner?
 
-* För en viss marknadsföringskanal, eller en viss kampanj, riktar ni er till förstagångsanvändare? Hur påverkar detta valet konverteringsgraden?
+* För en viss marknadsföringskanal, eller för en viss kampanj, riktar ni er till förstagångsanvändare eller returanvändare? Hur påverkar detta valet konverteringsgraden?
 
-Ett mått underlättar den här rapporteringen:
+En dimension och två mätvärden underlättar den här rapporteringen:
 
-<!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
+* [Sessionstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Den här dimensionen har två värden: 1) [!UICONTROL New] och 2) [!UICONTROL Returning]. The [!UICONTROL New] radartikel innehåller allt beteende (dvs. mått mot denna dimension) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte ingår i någon session hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen.
 
-* [Nya sessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). En ny session definieras som en persons definierade första session i rapportfönstret.
+* [Nya sessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Det nya sessionsmåttet definieras som en persons definierade första session i rapportfönstret.
 
-   <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
+* [Retursessioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Måttet för retursessionerna är antalet sessioner som inte var en persons första session någonsin.—>
 
-Så här kommer du åt den här komponenten:
+Så här kommer du åt komponenten:
 
 1. Gå till datavyredigeraren.
 1. Klicka på **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tabben i den vänstra listen.
@@ -114,20 +114,24 @@ Så här kommer du åt den här komponenten:
 
 * När en session sträcker sig över både uppslagsfönstret och rapportfönstret. Låt oss säga att du har en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle omfatta 1 maj 2021 till 31 maj 2022. Om en session skulle påbörjas den 30 maj 2022 och avslutas den 1 juni 2022 eftersom sessionen ingår i uppslagsfönstret, räknas alla sessioner i rapportfönstret som retursessioner.
 
-<!--## Use the Date and Date-Time functionality {#date}
+## Använda funktionerna Datum och Tid {#date}
 
-Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. CJA data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
+>[!NOTE]
+>
+>Den här funktionen är för närvarande begränsad i testningen.
 
-* For the Date format, if you select **[!UICONTROL Day]** with the format **[!UICONTROL Month, Day, Year]**, an example output in reporting might look like: August 23, 2022.
+Scheman i Adobe Experience Platform innehåller [!UICONTROL Date] och [!UICONTROL Date-Time] fält. CJA-datavyer har nu stöd för dessa fält. När du drar dessa fält till en datavy som en dimension kan du ange deras [format](/help/data-views/component-settings/format.md). Den här formatinställningen avgör hur fälten visas i rapporter. Exempel:
 
-* For the Date-Time format, if you select **[!UICONTROL Minute of Day]** with the format **[!UICONTROL Hour:Minute]**, your output might look like: 20:20.
+* Om du väljer **[!UICONTROL Day]** med formatet **[!UICONTROL Month, Day, Year]** kan ett exempel i rapporter se ut så här: 23 augusti 2022.
 
-### Example use cases:
+* Om du väljer **[!UICONTROL Minute of Day]** med formatet **[!UICONTROL Hour:Minute]** kan dina utdata se ut så här: 20.20.
 
-* Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
+### Exempel:
 
-* Date-Time: A retail company is collecting the time for each of their in-store point-of-sale (POS) purchases. Over a given month, they would like to understand the busiest shopping periods by [!UICONTROL Hour of Day].
+* Datum: Ett reseföretag samlar in avgångsdatumet för resor som ett fält i sina uppgifter. De vill ha en rapport som jämför [!UICONTROL Day of Week] för alla insamlade avgångsdatum för att förstå vilka som är mest populära. De vill göra samma sak för [!UICONTROL Month of Year].
+
+* Datum-Tid: Ett detaljhandelsföretag samlar in tiden för var och en av sina inköp i butiken (POS). Under en viss månad skulle de vilja förstå de mest köpta perioderna genom att [!UICONTROL Hour of Day].
 
 >[!MORELIKETHIS]
->[Date and Date-Time in the Format component setting](/help/data-views/component-settings/format.md)-->
+>[Datum och tid i inställningen för komponenten Format](/help/data-views/component-settings/format.md)
 
