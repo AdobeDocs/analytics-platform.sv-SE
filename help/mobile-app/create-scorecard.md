@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1700'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Du kommer åt [!UICONTROL Blank Mobile Scorecard] mall antingen genom att skapa 
 
 Så här implementerar du styrkortsmallen:
 
-1. Under **[!UICONTROL Properties]** (i den högra listen), ange en **[!UICONTROL Project report suite]** som du vill använda data från.
+1. Under **[!UICONTROL Properties]** (i den högra listen), ange en **[!UICONTROL Project report suite]** som du vill använda data från. Rapportsviter är datavyer i CJA.
 
    ![Val av rapportsvit](assets/properties_save.png)
 
@@ -66,7 +66,7 @@ Så här implementerar du styrkortsmallen:
 
 1. Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.
 
-## Lägg till mått eller mätvärden (#dimsmetrics)
+## Lägg till mått eller mätvärden {#dimsmetrics}
 
 Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta.
 
@@ -74,13 +74,13 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 ![Lägg till dimensioner](assets/layer_dimensions.png)
 
-## Använd segment {#segments}
+## Använda filter {#filters}
 
-Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan.
+Om du vill använda filter på enskilda plattor drar du ett filter (segment är filter i CJA) från den vänstra panelen och släpper det direkt ovanpå plattan.
 
-Om du vill använda segmentet på alla plattor i styrkortet, släpper du rutan ovanpå styrkortet. Du kan också tillämpa segment genom att markera segment på filtermenyn under datumintervallen. Du [konfigurera och använda filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Adobe Analytics Workspace.
+Om du vill använda filtret på alla rutor i styrkortet släpper du rutan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurera och använda filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Adobe Analytics Workspace.
 
-![Skapa segment för filter](assets/segment_ui.png)
+![Skapa filter](assets/segment_ui.png)
 
 ## Lägg till datumintervall {#dates}
 
@@ -124,7 +124,7 @@ Använd visualisering av sammanfattningsnummer för att markera ett stort tal so
 
 ### [!UICONTROL Donut]
 
-På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd ett mundiagram när du jämför procentandelar av en summa. Låt oss till exempel säga att du vill se vilken annonsplattform som har bidragit till det totala antalet unika besökare:
+På samma sätt som ett cirkeldiagram visar den här visualiseringen data som en del av en helhet. Använd ett mundiagram när du jämför procentandelar av en summa. Låt oss till exempel säga att du vill se vilken annonsplattform som har bidragit till det totala antalet unika besökare:
 
 ![Visualisering av ring](assets/donut-viz.png)
 
@@ -153,15 +153,15 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. På den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
+När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att använda filter. Segment är filter i CJA.
 
-![Egenskapspanelen](assets/properties_tile.png)
+![Egenskapspanelen](assets/properties-tile-new.png)
 
-## Visa detaljnivåer (uppdelningar) {#breakdowns}
+## Visa detaljbilder {#view-detail-slides}
 
-När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Du kan dela upp dimensioner och dimensionsobjekt för att dela upp dina data efter dina specifika behov. Om ingen dimension har tillämpats på plattan kommer detaljdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
+När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om en dimension inte har tillämpats, kommer uppdelningsdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
 
-Uppdelningar förfinar analysen genom att bokstavligen dela upp dimensionerna efter andra mått och mått, som i det här exemplet:
+Uppdelningar förfinar analysen genom att dela upp mätvärden efter dimensionsobjekt som exempelvis följande:
 
 * Unika besökarvärden uppdelade efter annonsplattform (AMO-ID)
 * Besök uppdelade efter produktkategori (detaljhandel)
@@ -171,9 +171,33 @@ Uppdelningar förfinar analysen genom att bokstavligen dela upp dimensionerna ef
 
 Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
 
+## Anpassa detaljbilder {#customize-detail-slide}
+
+Med skräddarsydda detaljbilder kan ni målinrikta er ännu mer om vilken information ni delar med er målgrupp. Du kan ändra layouten för varje detaljbild och lägga till text som bättre förklarar vad slutanvändaren kan se i informationen. Du kan också ändra diagramtyp med hjälp av den nedrullningsbara menyn.
+
+![Anpassad detaljbild](assets/custom-detail-slide.png)
+
+### Ändra bildrutelayout
+
+Ändra bildrutelayouten så att den fokuserar på den viktigaste informationen. Du kan till exempel ändra layouten så att bara ett diagram eller en tabell visas. Om du vill ändra bildrutelayouten väljer du ett av de fördesignade formaten.
+
+![Bildlayout](assets/layout.png)
+
+Du kan också ändra bildrutelayouten genom att dra och släppa visualiseringskomponenter från den vänstra listen på arbetsytan. Varje detaljbild kan endast innehålla två visualiseringar åt gången.
+
+![Ändra bildlayout](assets/slide-layout-change.png)
+
+### Lägga till beskrivande text i en bildruta
+
+Du kan lägga till text för att ge meningsfull information om vad som finns i diagrammen eller nyanserna om data.
+
+Om du vill lägga till text i en detaljbildruta väljer du en layout som visar `T` eller dra och släpp textvisualiseringskomponenten från den vänstra listen. Textredigeraren öppnas automatiskt när du lägger till en ny textvisualisering eller väljer en bildlayout med text. I textredigeraren finns alla standardalternativ för formatering av texten. Du kan använda textformat som stycke, rubriker och underrubriker och använda fet och kursiv stil. Du kan justera text, lägga till punktlistor och numrerade listor samt lägga till länkar. När du är klar med redigeringen klickar du på minimeringsknappen i det övre högra hörnet av textredigeraren för att stänga den. Om du vill redigera text som du redan har lagt till väljer du pennikonen och öppnar textredigeraren igen.
+
+![Ändra bildlayout](assets/add-descriptive-text.png)
+
 ## Ta bort komponenter {#remove}
 
-Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **Första gången du besöker** segment:
+Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **Första gången du besöker**:
 
 ![Remove_components](assets/new_remove.png)
 
