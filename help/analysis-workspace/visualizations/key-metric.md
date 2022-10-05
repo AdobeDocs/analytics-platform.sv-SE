@@ -4,18 +4,14 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
 exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: 6238a3b2239a20aaedbec5e5603d0c72bb4ae463
+source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Sammanfattning av nyckelmått
-
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
 The [!UICONTROL Key metric summary] Med visualisering kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
 

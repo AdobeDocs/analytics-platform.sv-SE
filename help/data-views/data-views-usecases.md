@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8492a400d7402a95ba98dc0800970b25a1d7d473
+source-git-commit: 0113bd3157c147a3d39aead3fc686d114925f476
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -114,11 +114,7 @@ Så här kommer du åt komponenten:
 
 * När en session sträcker sig över både uppslagsfönstret och rapportfönstret. Låt oss säga att du har en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle omfatta 1 maj 2021 till 31 maj 2022. Om en session skulle påbörjas den 30 maj 2022 och avslutas den 1 juni 2022 eftersom sessionen ingår i uppslagsfönstret, räknas alla sessioner i rapportfönstret som retursessioner.
 
-## Använda funktionerna Datum och Tid {#date}
-
->[!NOTE]
->
->Den här funktionen är för närvarande begränsad i testningen.
+## 8. Använda funktionerna Datum och Tid {#date}
 
 Scheman i Adobe Experience Platform innehåller [!UICONTROL Date] och [!UICONTROL Date-Time] fält. CJA-datavyer har nu stöd för dessa fält. När du drar dessa fält till en datavy som en dimension kan du ange deras [format](/help/data-views/component-settings/format.md). Den här formatinställningen avgör hur fälten visas i rapporter. Exempel:
 

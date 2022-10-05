@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
+source-git-commit: 3b89c88186b27148ba7d0cdee77cd60699b7161f
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1062'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,9 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| Oktober 2022 | Nytt ämne [Sammanfattning av nyckelmått](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) visualisering. |
+| Oktober 2022 | Nytt avsnitt på [datum- och datumfunktioner i datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
+| Oktober 2022 | Mobilapp: Nytt ämne [anpassade detaljvyer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#view-detail-slides). |
 | September 2022 | Nytt användningsexempel på [Migrera Google Analytics-data till CJA](/help/use-cases/ga/overview.md). |
 | September 2022 | Nytt ämne [Kombinationsdiagram](/help/analysis-workspace/visualizations/combo-charts.md) i Workspace. |
 | September 2022 | Nytt ämne [Panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md) i Workspace. |
