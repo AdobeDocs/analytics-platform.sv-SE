@@ -4,7 +4,7 @@ title: Integrera kundens AI-data med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 81e80058ea5004d77ba1d15b9cd90a16283daa7c
+source-git-commit: 305bcd46df033f2f69a1161657d8d46793187225
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -65,31 +65,31 @@ I CJA kan du nu fortsätta till [skapa datavyer](/help/data-views/create-datavie
 
 Skapa ett nytt projekt och dra in visualiseringar i CJA Workspace.
 
-**Betyg för trendbenägenhet**
+### Betyg för trendbenägenhet
 
 Här är ett exempel på ett Workspace-projekt med CAI-data som trendar benägenhetspoängen för ett användarsegment över tiden, i &#x200B; staplade stapeldiagram:
 
 ![Poängbukar](assets/workspace-scores.png)
 
-**Tabell med orsakskoder**
+### Tabell med orsakskoder
 
 Här är en tabell som visar orsakskoder för varför ett segment har hög eller låg &#x200B;:
 
 ![Orsakskoder](assets/reason-codes.png)
 
-**Anmälningsflöde för kundbenägenhet**
+### Anmälningsflöde för kundbenägenhet
 
 I det här flödesdiagrammet visas inmatningsflödet för kundens benägenhet jämfört med olika poängserier &#x200B;:
 
 ![Inmatningsflöde](assets/flow.png)
 
-**Fördelning av benägenhetspoäng**
+### Fördelning av benägenhetspoäng
 
 I det här stapeldiagrammet visas hur &#x200B; kan fördelas:
 
 ![Distribution](assets/distribution.png)
 
-**Propenthypsöverlappningar**
+### Propenthypsöverlappningar
 
 I det här Venedig-diagrammet visas hur benägenheten överlappar olika poäng:
 
