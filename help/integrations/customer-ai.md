@@ -4,14 +4,18 @@ title: Integrera kundens AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
+source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
 
-# Integrera kundens AI med CJA
+# Integrera kundens AI-data med CJA
+
+>[!NOTE]
+>
+>Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md) och inte allmänt tillgängliga.
 
 [Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
 
@@ -23,9 +27,9 @@ Kundens AI integreras med Customer Journey Analytics (CJA) i den utsträckning s
 
 * **Spåra benägenhetspoäng för ett användarsegment över tid**. Exempel: Hur stor är sannolikheten att en hotellkund köper en showbiljett på hotellets konsertplats?
 * **Analysera vilka lyckade händelser eller attribut som är kopplade till benägenhetspoängen**. &#x200B;Exempel: Jag vill förstå attributen eller framgångshändelserna i samband med benägenhetspoängen.
-* **Följ anmälningsflödet för kundbenägenhet över olika poängsättningsrundor**. Exempel: Jag skulle vilja förstå personer som till en början var användare med låg benägenhet, och som senare blev användare med stor benägenhet. &#x200B;
-* **Titta på hur benägenheten är fördelad**. Användningsfall: Jag skulle vilja förstå hur de benägna poängen är fördelade på mig så att jag kan vara mer exakt med mina segment. &#x200B;Exempel: en återförsäljare vill göra en viss kampanj för 50 dollar i en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer &#x200B; kunderna.
-* **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**. Användningsfall: Jag skulle vilja följa upp en viss kohort över tiden. Detta liknar det första, men du kan spåra en viss kohort över tiden. &#x200B; Exempel på hotell: En marknadsförare kan spåra sin bronsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå över tiden. Då ser de varje kohorts benägenhet att boka hotellet över tiden. &#x200B;
+* **Följ anmälningsflödet för kundbenägenhet över olika poängsättningsrundor**. Exempel: Jag skulle vilja förstå människor som till en början var lågbenägna användare och som senare blev högbenägna användare. &#x200B;
+* **Titta på hur benägenheten är fördelad**. Användningsfall: Jag skulle vilja förstå fördelningen av benägenhetspoängen till jag kan vara mer exakt med mina segment. &#x200B;Exempel: en återförsäljare vill göra en viss kampanj för 50 dollar i en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer &#x200B; kunderna.
+* **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**. Användningsfall: Jag skulle vilja spåra en viss kohort över tiden. Detta liknar det första, men du kan spåra en viss kohort över tiden. &#x200B; Exempel på hotell: En marknadsförare kan spåra sin bronsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå över tiden. Då ser de varje kohorts benägenhet att boka hotellet över tiden. &#x200B;
 
 ## Arbetsflöde
 
