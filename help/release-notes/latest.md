@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: fc1a5b1b0f01ace6207820e2421d1770f68c3583
+source-git-commit: 45e4a60b6bbf38e33f307dbbbf68ab3124dd6a33
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '502'
 ht-degree: 3%
 
 ---
 
 # Versionsinformation för Customer Journey Analytics (CJA) (oktober 2022)
 
-**Senaste uppdatering**: 5 oktober 2022
+**Senaste uppdatering**: 13 oktober 2022
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -26,7 +26,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 * [Versionsinformation om Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
-## Viktiga funktioner
+## Viktiga funktioner och uppdateringar
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
@@ -34,6 +34,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **[!UICONTROL Key metric summary]visualisering** | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Läs mer | Avfasad utrullning från 5 oktober 2022 |
 | **Stöd för datumfält i CJA** | Tillåter CJA att rapportera datum- och datumfält. [Läs mer](/help/data-views/data-views-usecases.md#date) | 5 oktober 2022 |
 | **Mobilapp: Anpassade detaljvyer** | Med anpassade detaljvyer kan ni målinrikta er ännu mer om vilken information ni delar med er målgrupp genom att låta dem fokusera på det som är viktigast. Du kan ändra layouten för den detaljvy som är kopplad till varje styrkortsplatta och du kan lägga till text för att bättre förklara vad slutanvändaren kan se i data. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en) | 5 oktober 2022 |
+| **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga flervärdesvariabler sänks inte längre värdena som lagras i mvvar1 - mvvar3 automatiskt. I stället kommer data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA att återspegla det ursprungliga fallet som skickades från sidan. | 24 oktober 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
