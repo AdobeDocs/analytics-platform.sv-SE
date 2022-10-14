@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0113bd3157c147a3d39aead3fc686d114925f476
+source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Scheman i Adobe Experience Platform innehåller [!UICONTROL Date] och [!UICONTRO
 
 * Om du väljer **[!UICONTROL Minute of Day]** med formatet **[!UICONTROL Hour:Minute]** kan dina utdata se ut så här: 20.20.
 
-### Exempel:
+### Användningsexempel för datum och tid
 
 * Datum: Ett reseföretag samlar in avgångsdatumet för resor som ett fält i sina uppgifter. De vill ha en rapport som jämför [!UICONTROL Day of Week] för alla insamlade avgångsdatum för att förstå vilka som är mest populära. De vill göra samma sak för [!UICONTROL Month of Year].
 
