@@ -4,9 +4,9 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 5a6d2b14ba7ed1221921cfb253026850fc7b6d73
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '771'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Adobe Experience Platform sammanför data från olika källor för att hjälpa m
 
 ## Använd data från Google Analytics för analys i Customer Journey Analytics
 
-Granska den här självstudiekursen om hur du [Analysera Google Analytics-data med Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module16/ex5.html#objectives) för detaljerade steg.
+Granska den här självstudiekursen om hur du [Analysera Google Analytics-data med Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=en) för detaljerade steg.
 
 ## Använd API för datainmatning i grupp för att hämta data till analyser och sedan importera via Adobe Source Connector i Experience Platform
 
