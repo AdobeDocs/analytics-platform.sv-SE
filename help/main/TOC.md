@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
+source-git-commit: f70dafa93ec22a0ef876052fbef4c9a67835d292
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 31%
+source-wordcount: '794'
+ht-degree: 30%
 
 ---
 
@@ -79,6 +79,12 @@ ht-degree: 31%
    + Projekt {#build-workspace-project}
       + [Översikt över projekt](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
+      + Mappar på arbetsytan {#workspace-folders}
+         + [Om mappar i arbetsytan](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Skapa mappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Lägg till projekt](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Ta bort ett projekt](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
+         + [Spara ett nytt projekt](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [Snabbtangenter (kortkommandon)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](../analysis-workspace/build-workspace-project/view-density.md)
