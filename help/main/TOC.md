@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: f70dafa93ec22a0ef876052fbef4c9a67835d292
+source-git-commit: d11a1cf98999c5797ab456bd547c065a5103b068
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '799'
 ht-degree: 30%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 30%
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
       + Mappar på arbetsytan {#workspace-folders}
          + [Om mappar i arbetsytan](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [Skapa mappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Skapa mappar och undermappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Lägg till projekt](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Ta bort ett projekt](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Spara ett nytt projekt](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -260,6 +260,7 @@ ht-degree: 30%
    + [Användarhandbok för Labs](../labs/labs.md)
 + Felsökning {#troubleshooting}
    + [Jämför dina Adobe Analytics-data med CJA-data](../troubleshooting/compare.md)
-+ Sekretess {#cja-privacy}
++ Datastyrning {#cja-privacy}
+   + [Granskningsloggar](../privacy/audit-log.md)
    + [Datastyrning](../privacy/privacy-overview.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)

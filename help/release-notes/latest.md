@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 785ea95049135adef888c20a6d9fef9f31439a7d
+source-git-commit: a3d47318d74df161cf9054b849c9eb8ef09e60c4
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '500'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,6 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Måldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| **Mappar i arbetsyteprojekt** | Mappar i Workspace Projects hjälper användarna att ordna och kategorisera sina projekt med hjälp av mappar för bättre hämtning och åtkomst. Med en delad företagsmapp kan administratörer enkelt skapa och dela innehåll med alla Workspace-användare [Läs mer](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) | 19 oktober 2022 |
 | **Panelen Experimentation** | Med den nya Workspace-panelen kan CJA-användare utvärdera hur stort A/B-experimentet blir och hur säkert det är från alla källor - online, offline, från Adobe-lösningar, Adobe Journey Optimizer och till och med BYO-data. [Läs mer](/help/analysis-workspace/c-panels/experimentation.md) | 5 oktober 2022 |
 | **[!UICONTROL Key metric summary]visualisering** | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Läs mer | Avfasad utrullning från 5 oktober 2022 |
 | **Stöd för datumfält i CJA** | Tillåter CJA att rapportera datum- och datumfält. [Läs mer](/help/data-views/data-views-usecases.md#date) | 5 oktober 2022 |
