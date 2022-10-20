@@ -3,9 +3,9 @@ description: Läs mer om mappar i arbetsytan
 keywords: Analysis Workspace
 title: Översikt över mappar
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Mappar i Workspace Projects är ett mapphanteringssystem som finns på startsida
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Vissa skärmar kan ändras.
+>Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 Mappar i Workspace Projects hjälper användarna att ordna och kategorisera sina projekt så att de blir bättre på att hämta och komma åt dem. Med en delad företagsmapp kan administratörer dessutom enkelt skapa och dela innehåll med alla Workspace-användare. 
 

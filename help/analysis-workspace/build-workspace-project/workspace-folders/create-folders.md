@@ -3,9 +3,9 @@ description: Lär dig hur du skapar mappar och undermappar i arbetsytan
 keywords: Analysis Workspace
 title: Skapa mappar
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Du kan lägga till en ny mapp eller en undermapp i listan över projekt och mapp
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Vissa skärmar kan ändras.
+>Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 ## Skapa en ny mapp
 

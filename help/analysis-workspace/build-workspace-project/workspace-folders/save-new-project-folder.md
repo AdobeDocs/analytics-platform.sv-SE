@@ -3,9 +3,9 @@ description: Läs om hur du sparar projekt i mappar på arbetsytan
 keywords: Analysis Workspace
 title: Spara projekt i mappar
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '80'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ Om du vill spara ett nytt projekt i en viss mapp väljer du mappnamnet i dialogr
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Vissa skärmar kan ändras.
+>Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 1. Skapa ett nytt projekt i Workspace.
 
