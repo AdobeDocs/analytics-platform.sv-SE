@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
+source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | --- | --- |
 | **[!UICONTROL Data Views]** | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]**, kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är inställd på **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har tillgång till. |
 | **[!UICONTROL Reporting Tools]**: |  |
-| **[!UICONTROL Audit Logs Access]** | För närvarande [granskningsloggar](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) är bara tillgängliga via API:t. Den här behörigheten framtvingar behörighetskontrollen för API:t och ett kommande användargränssnitt för granskningsloggar. |
+| **[!UICONTROL Audit Logs Access]** | Den här behörigheten tvingar behörighetskontrollen på [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) och [gränssnitt för granskningsloggar](/help/privacy/audit-log.md). |
 | **[!UICONTROL Reporting Usage Admin]** | Låter användarna visa och ta bort alla rapporter som körs i deras företag. (Funktionen för rapportering av användning har ännu inte släppts.) |
 | **[!UICONTROL Reporting Usage View]** | Låter användarna se alla samtidiga rapporteringsbegäranden. (Funktionen för rapportering av användning har ännu inte släppts.) |
 | **[!UICONTROL Calculated Metrics Creation]** | Låter användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). |

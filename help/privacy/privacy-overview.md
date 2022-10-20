@@ -2,9 +2,9 @@
 title: Customer Journey Analytics och datastyrning
 description: Beskriver hur datastyrning fungerar i Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: 5f69840fa19fbf7ba6ecac1cd198cfa4a7dd905d
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -33,4 +33,4 @@ Customer Journey Analytics kommer inte att abonnera direkt på den centrala tjä
 
 California Consumer Privacy Act (CCPA) förbättrar sekretessen och konsumentskyddet för personer bosatta i Kalifornien. Denna lag trädde i kraft den 1 januari 2020.
 CCPA ger personer bosatta i Kalifornien nya integritetsrättigheter, t.ex. rätten att få tillgång till och radera sina personuppgifter, att få veta om deras personuppgifter har sålts eller lämnats ut (och till vem) samt att vägra att sälja deras personuppgifter.
-I väntan på CCPA kommer Privacy Servicen att stödja ansökningar om att avanmäla sig från försäljning av personuppgifter.
+I enlighet med CCPA stöder Privacy Servicen ansökningar om att avanmäla sig från försäljning av personuppgifter.
