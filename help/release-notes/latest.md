@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3028024c97355cb43fb7a844acef5771d2f5cbcf
+source-git-commit: a7636909c0570655ee6d3638e56828916044d2bd
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '492'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **[!UICONTROL Key metric summary]visualisering** | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. [Läs mer](/help/analysis-workspace/visualizations/key-metric.md) | 5 oktober 2022 | 19 oktober 2022 |
 | **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1` - `mvvar3` kommer inte längre att sänkas automatiskt. I stället kommer data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA att återspegla det ursprungliga fallet som skickades från sidan. | Ej tillämpligt | 24 oktober 2022 |
 | **CJA-granskningslogg** | Med Customer Journey Analytics (CJA) kan du granska användaraktivitet för olika tjänster och funktioner i form av granskningsloggar. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act). Dessa loggar var tidigare bara tillgängliga via API:t för granskningsloggar. [Dokumentation att följa] | Ej tillämpligt | 26 oktober 2022 |
-| **CJA HIPAA-beredskap** | Beskrivningar att följa | Ej tillämpligt | 26 oktober 2022 |
+| **HIPAA-beredskap** | Beskrivning att följa | Ej tillämpligt | 7 november 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
