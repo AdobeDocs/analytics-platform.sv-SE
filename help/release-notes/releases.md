@@ -1,9 +1,10 @@
 ---
 description: Beskriver den kontinuerliga funktionsreleasestrategin för Customer Journey Analytics
 title: Funktionsreleaser för Customer Journey Analytics
-source-git-commit: b740d3a18d1090b04cc50869d38600f016cf30d5
+exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
+source-git-commit: 44a140fdd5069cbe806f694377802215bcf50b31
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '357'
 ht-degree: 1%
 
 ---
@@ -16,9 +17,7 @@ Customer Journey Analytics-releaser fungerar enligt en kontinuerlig leveransmode
 
 [!UICONTROL Analysis Workspace] använder funktionsflaggor (kallas även&quot;växlar&quot;) för att styra synligheten för nya funktioner, vilket möjliggör kontrollerad skaltestning före den fullständiga versionen. Den här versionsstrategin innehåller följande faser:
 
-* **Frigör till produktion (RTP)**: Koden släpps i produktionen och synligheten för funktioner inaktiveras i Analysis Workspace. Funktionen är ibland tillgänglig i CJA API.
-
-* **Begränsad testning**: En stegvis release börjar med testning av användare i Adobe. Versionen skalas sedan från 0 % till 100 % av tillgängligheten under ett par månader. Utfasad utrullning sker på organisationsnivå, så att alla berättigade användare i en organisation får samma upplevelse.
+* **Början av utrullning**: Utsläppandet av en fasversion börjar med begränsad testning av användare i Adobe. Versionen skalas sedan från 0 % till 100 % för kunder under ett par månader. Utfasad utrullning sker på organisationsnivå, så att alla berättigade användare i en organisation får samma upplevelse.
 
 * **Allmän tillgänglighet (GA)**: Funktionen är tillgänglig för 100 % av berättigade Experience Cloud-organisationer och har släppts fullständigt.
 
