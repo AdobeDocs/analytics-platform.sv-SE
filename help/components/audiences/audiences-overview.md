@@ -2,7 +2,7 @@
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 18306a5a2fc8873850eb62b7407acb55db4007ea
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärde
 
 ## Datastyrning och samtycke
 
-När du publicerar en målgrupp i CJA registreras de datastyrningsetiketter och policyer som är kopplade till fälten som används i målgruppen.  När målgruppen aktiveras i någon Adobe Experience App finns alla tillhörande etiketter och policyer för datastyrning tillgängliga för den målgruppen och lämplig tillsyn kan tillämpas.  [Läs mer om samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy)
+När du publicerar en målgrupp i CJA registreras de datastyrningsetiketter och policyer som är kopplade till fälten som används i målgruppen.  När målgruppen aktiveras i någon Adobe Experience App finns alla tillhörande etiketter och policyer för datastyrning tillgängliga för den målgruppen och lämplig tillsyn kan tillämpas. [Läs mer om samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy).
 
 ## Nästa steg
 

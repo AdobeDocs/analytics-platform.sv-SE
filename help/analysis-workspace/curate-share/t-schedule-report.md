@@ -3,10 +3,11 @@ description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg 
 keywords: Analysis Workspace
 title: Schemalägg projekt
 feature: Curate and Share
+mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 Från arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
 
-## Skicka filen nu
+## Skicka filen nu {#now}
 
 Så här skickar du en fil direkt till mottagarna via e-post:
 
@@ -23,12 +24,13 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
+1. (Endast för vårdsköldens kunder) Ange ett lösenord. Se avsnittet Lösenordsskydda en schemalagd rapport.
 1. Klicka **Skicka nu**.
 1. (Valfritt) Klicka på **Visa schemaläggningsalternativ** för att ange ett leveransschema.
 
 ![Skicka filen nu](assets/send-file-no-scheduling-options.JPG)
 
-## Skicka fil enligt schema
+## Skicka fil enligt schema {#schedule}
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
@@ -36,13 +38,14 @@ Så här skickar du en fil i ett återkommande schema till mottagarna via e-post
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
+1. (Endast för vårdsköldens kunder) Ange ett lösenord. Se avsnittet Lösenordsskydda en schemalagd rapport.
 1. Ange intervallet som schemat ska levereras över genom att ändra Inledande och Avslutande på indata. Slutdatumet måste vara inom ett år från den dag då schemat skapas eller ändras.
 1. Ange leveransfrekvens. Varje frekvens tillåter olika anpassningar.
 1. Klicka **Skicka enligt schema**.
 
 ![](assets/send-file.JPG)
 
-## Schemalagd projekthanterare
+## Schemalagd projekthanterare {#manager}
 
 Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
 
@@ -60,3 +63,40 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **Visa schema-ID** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
 I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser.
+
+## Lösenordsskydda ett schemalagt projekt {#password}
+
+>[!NOTE]
+>
+>Alternativet att lösenordsskydda ett schemalagt projekt visas bara för CJA-kunder som har köpt [Hälsovårdssköld](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) tilläggsprodukt.
+
+Adobe använder lösenordet för att kryptera schemalagda projekt, oavsett om de skickas i .pdf- eller .csv-format.
+
+När ditt företag har köpt SKU:n för hälso- och sjukvårdsskölden och aktiverats för den visas uppmaningen att skapa ett lösenord för ett schemalagt projekt under två omständigheter:
+
+* När någon skapar ett nytt schemalagt projekt.
+
+* När ett befintligt schemalagt projekt ska skickas. Det aktuella schemalagda projektet kommer att inaktiveras tills lösenordsskyddet är på plats. Ägaren till det schemalagda projektet kommer att få ett e-postmeddelande om detta.
+
+![lösenordsskydd](assets/password.png)
+
+### Lösenordskrav
+
+Lösenordskraven uppfyller Adobe-standarden och kräver minst 8 tecken med minst en siffra och ett specialtecken.
+
+### Nytt schemalagt projekt
+
+1. När du har sparat projektet går du till Dela > Skicka fil nu eller Dela > Skicka fil enligt schema.
+1. Följ instruktionerna ovan, under Dela filen nu eller Dela filen enligt schema.
+
+### Befintligt schemalagt projekt
+
+Före den tidpunkt då ett projekt är schemalagt får projektägaren ett e-postmeddelande som liknar detta:
+
+![e-post](assets/email-password.png)
+
+1. Klicka på **[!UICONTROL View Scheduled Project]**.
+1. I **[!UICONTROL Edit scheduled project]** anger och anger ett lösenord igen.
+1. Låt (endast) mottagarna av det schemalagda projektet känna till det här lösenordet.
+
+

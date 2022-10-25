@@ -1,19 +1,17 @@
 ---
 title: Granskningsloggar
 description: Lär dig hur du visar och hanterar CJA-granskningsloggar.
-source-git-commit: a866dec61df93bf730529a2d7513b4d76bab6694
+hide: true
+hidefromtoc: true
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '811'
 ht-degree: 3%
 
 ---
 
 
 # Granskningsloggar
-
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
 För att öka insynen i och synligheten för aktiviteter som utförs i systemet kan du med Customer Journey Analytics (CJA) granska användaraktivitet för olika tjänster och funktioner i form av &quot;granskningsloggar&quot;. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act).
 
