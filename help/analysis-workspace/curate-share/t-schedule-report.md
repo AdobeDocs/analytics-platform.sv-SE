@@ -5,9 +5,9 @@ title: Schemalägg projekt
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
+source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -86,8 +86,8 @@ Lösenordskraven uppfyller Adobe-standarden och kräver minst 8 tecken med minst
 
 ### Nytt schemalagt projekt
 
-1. När du har sparat projektet går du till Dela > Skicka fil nu eller Dela > Skicka fil enligt schema.
-1. Följ instruktionerna ovan, under Dela filen nu eller Dela filen enligt schema.
+1. När du har sparat projektet går du till **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, eller [!UICONTROL Share] > **[!UICONTROL Send file on schedule]**.
+1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) eller [Skicka fil enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Befintligt schemalagt projekt
 
