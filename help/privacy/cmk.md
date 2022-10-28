@@ -3,7 +3,7 @@ title: Kundhanterade nycklar
 description: Lär dig hur du konfigurerar kundhanterade nycklar för CJA.
 hide: true
 hidefromtoc: true
-source-git-commit: 3aa5d9e1b426e67f27ef1909a2640f335719502a
+source-git-commit: 90521aa7326486b9016321d35191a73ef891a0bc
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -30,5 +30,5 @@ Så här konfigurerar du CMK för CJA:
 1. Se till att du i Azure är administratör med en privilegierad roll som programadministratör, molnprogramadministratör eller global administratör. [Läs mer om Microsoft](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 1. Skapa ett nytt Azure Key Vault som endast ska användas med CJA. [Läs mer om Microsoft](https://learn.microsoft.com/en-us/azure/key-vault/general/)
 1. Ge Adobe Azure App åtkomst till din nyckel i nyckelvalvet. Detta är Adobe program-ID: 251e3919-1940-4296-bb8b-6b9a5e8a4805. [Läs mer från Microsoft](https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
-1. Skapa en kundtjänstbiljett från Adobe som begär CMK-konfiguration. Inkludera Azure URI i din biljett.
+1. Skapa en kundtjänstbiljett från Adobe som begär CMK-konfiguration. Inkludera Azure URI i din biljett. URI:n finns i fältet Nyckelidentifierare i din Azure-nyckel.
 1. Adobe kundtjänst bekräftar att CMK-programmet har slutförts på dina CJA-data.
