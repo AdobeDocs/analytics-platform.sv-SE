@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 07842c9f1e2f4708d0881dec75c067d93611626c
+source-git-commit: fbfc7113aef8857e11ccfba5e5e557eed16c2465
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '581'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | Funktion | Beskrivning | [Början av utrullning](/help/release-notes/releases.md) | [Allmän tillgänglighet](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
 | **[!UICONTROL Key metric summary]visualisering** | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. [Läs mer](/help/analysis-workspace/visualizations/key-metric.md) | 5 oktober 2022 | 19 oktober 2022 |
-| **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1` - `mvvar3` kommer inte längre att sänkas automatiskt. I stället kommer data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA att återspegla det ursprungliga fallet som skickades från sidan. | Ej tillämpligt | 24 oktober 2022 |
+| **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1` - `mvvar3` kommer inte längre att sänkas automatiskt. I stället kommer data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA att återspegla det ursprungliga fallet som skickades från sidan. ASC-/CJA-kolumner `_experience.analytics.customDimensions.lists.list1.list[]` - `_experience.analytics.customDimensions.lists.list3.list[]` påverkas av den här ändringen. | Ej tillämpligt | 24 oktober 2022 |
 | **CJA-granskningslogg** | Med Customer Journey Analytics (CJA) kan du granska användaraktivitet för olika tjänster och funktioner i form av granskningsloggar. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act). Dessa loggar var tidigare bara tillgängliga via API:t för granskningsloggar. [Läs mer](/help/privacy/audit-log.md) | Ej tillämpligt | 26 oktober 2022 |
 | **HIPAA-beredskap** | Adobe stöder nu mottagning, användning, underhåll eller överföring av skyddad hälsoinformation i Customer Journey Analytics och andra Experience Platform-baserade tillämpningar enbart för vårdkunder. Sjukvården är endast avsedd för vårdkunder som är antingen en enhet som omfattas eller en Business Associate i USA. [Läs mer](https://www.adobe.com/trust/compliance/hipaa-ready.html) | Ej tillämpligt | 7 november 2022 |
 | **Lösenordsskydd för schemalagda projekt** | Den här funktionen är en del av beredskapen för HIPAA och gäller endast för vårdkunder. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | Ej tillämpligt/ | 7 november 2022. |
