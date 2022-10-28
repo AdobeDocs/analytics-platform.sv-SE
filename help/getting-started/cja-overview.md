@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f7b4dcb893586e71302cc6a20ebe931743ea8924
+source-git-commit: f70cb6a8567d1bb2f844b1694f552ec4bfe70adc
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '942'
 ht-degree: 2%
 
 ---
@@ -51,6 +51,7 @@ Innan du kan börja använda Customer Journey Analytics måste följande krav va
 
 * Din organisation har ett aktivt kontrakt med Adobe Analytics för Select, Prime eller Ultimate med tillägget Customer Journey Analytics. Om du är osäker på vilken typ av kontrakt du har, eller om du är osäker på om du har CJA-tillägget, kontaktar du din organisations Account Manager.
 * Din organisation har etablerats för Adobe Experience Platform.
+* Du kan också köpa Customer Journey Analytics som fristående produkt utan Adobe Analytics.
 
 ## Åtkomstkontroll
 
