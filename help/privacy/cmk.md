@@ -1,18 +1,15 @@
 ---
 title: Kundhanterade nycklar
 description: Lär dig hur du konfigurerar kundhanterade nycklar för CJA.
-source-git-commit: 903c1423c91b220524174fa900a9ec13cd2051c6
+exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
+source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
 # Kundhanterade nycklar
-
->[!NOTE]
->
->Den här funktionen kommer att vara tillgänglig i november 2022.
 
 Customer Journey Analytics (CJA) har alternativ för [Hälsovårdssköld](https://www.adobe.com/trust/compliance/hipaa-ready.html) och kunder med skölden för skydd och säkerhet för att använda en Azure Customer Managed Key (CMK) som kan användas på dina CJA-data.  Observera att den här processen är skild från [Adobe Experience Platform CMK-inställningar](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
 

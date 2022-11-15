@@ -5,9 +5,9 @@ title: Schemalägg projekt
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
+source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -84,12 +84,12 @@ När ditt företag har köpt SKU:n för hälso- och sjukvårdsskölden och aktiv
 
 Lösenordskraven uppfyller Adobe-standarden och kräver minst 8 tecken med minst en siffra och ett specialtecken.
 
-### Nytt schemalagt projekt
+### Lösenordsskydda ett nytt schemalagt projekt
 
 1. När du har sparat projektet går du till **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, eller [!UICONTROL Share] > **[!UICONTROL Send file on schedule]**.
 1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) eller [Skicka fil enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
-### Befintligt schemalagt projekt
+### Lösenordsskydda ett befintligt schemalagt projekt
 
 Före den tidpunkt då ett projekt är schemalagt får projektägaren ett e-postmeddelande som liknar detta:
 
