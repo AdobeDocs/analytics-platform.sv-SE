@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 6fee3b9e91aff8c49176d86ac99fd78a6d852c4c
+source-git-commit: 52593d05b10c872322236fb82c4ce5346ddcc9ac
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 30%
+source-wordcount: '817'
+ht-degree: 29%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 30%
    + [Adobe Analytics till Customer Journey Analytics evolutionen](../getting-started/aa-to-cja.md)
    + [Användarhandbok för nya användare i Customer Journey Analytics](../getting-started/aa-to-cja-user.md)
    + Jämför Adobe Analytics och Customer Journey Analytics {#compare-aa-cja}
+      + [Använd Adobe Analytics-data i Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Funktioner i Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Jämför terminologi för analysdata som skickas via Analytics Source Connector](../getting-started/aa-vs-cja/terminology.md)
       + [Jämför databehandling i Adobe Analytics och CJA](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -237,6 +238,7 @@ ht-degree: 30%
    + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
 + Integreringar med Adobe {#integrations}
    + [Integrera Adobe-lösningar med CJA - översikt](/help/integrations/overview.md)
+   + [Integrera Adobe Analytics med Customer Journey Analytics](/help/integrations/aa.md)
    + [Integrera Journey Optimizer-data med CJA](/help/integrations/ajo.md)
    + [Integrera kundens AI-data med CJA](/help/integrations/customer-ai.md)
 + Användningsexempel {#cja-usecases}

@@ -4,9 +4,9 @@ description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar fö
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
+source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 
 När organisationen uppfyller alla krav och förstår sina begränsningar kan du följa de här stegen för att börja använda den i CJA.
 
-1. Importera önskade data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Ingrediera data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
+1. Importera önskade data till Adobe Experience Platform. Information om Adobe Analytics finns på [Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). Andra typer av data finns i [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Ingrediera data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 1. Kontakta Adobe kundsupport med följande information:
    * En begäran om att aktivera flerkanalsanalys
    * Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för

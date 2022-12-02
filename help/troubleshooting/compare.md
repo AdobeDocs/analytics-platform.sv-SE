@@ -4,9 +4,9 @@ description: Lär dig hur du jämför dina Adobe Analytics-data med data i Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
+source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. I [Dataflöden för analyser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)identifierar du utifrån rådata om några rader kan ha tagits bort av Analytics-källkopplingen.
+1. I [Dataflöden för analyser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)identifierar du utifrån rådata om några rader kan ha filtrerats bort av Analytics-källkopplingen.
 
-   The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kan släppa rader under omvandlingen till XDM-schemat. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande analysfält har dessa värden kommer hela raden att tas bort.
+   The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kan filtrera vissa rader under omvandlingen till XDM-schema. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande Analytics-fält har dessa värden kommer hela raden att filtreras bort.
 
    | Analysfält | Värden som gör att en rad tas bort |
    | --- | --- |
@@ -78,9 +78,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    Mer information om hit\_source finns i: [Referens för datakolumn](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en). Mer information om page\_event finns i: [Sökning efter sidhändelse](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
 
-1. Om kopplingen släpper rader, subtrahera raderna från [!UICONTROL Occurrences] mätvärden. Det resulterande antalet ska matcha antalet händelser i Adobe Experience Platform datamängder.
+1. Om kopplingens filtrerade rader är det bara att subtrahera de raderna från [!UICONTROL Occurrences] mätvärden. Det resulterande antalet ska matcha antalet händelser i Adobe Experience Platform datamängder.
 
-## Varför poster kan utelämnas eller hoppas över vid förtäring från AEP
+## Varför poster kan filtreras eller hoppas över vid förtäring från AEP
 
 CJA [Anslutningar](/help/connections/create-connection.md) gör att du kan samla ihop och sammanfoga flera datauppsättningar baserat på ett gemensamt person-ID för alla datauppsättningar. Vi använder borttagning av dubbletter: fullständig yttre koppling eller union av händelsedatamängder baserat på tidsstämplar, och sedan inre koppling på profil- och sökdatamängd, baserat på person-ID.
 

@@ -4,9 +4,9 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 5a6d2b14ba7ed1221921cfb253026850fc7b6d73
+source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '783'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Det här arbetsflödet använder Adobe Analytics Source Connector och varierar b
 
 1. [Skapa ett datalager](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html)om du inte redan gjort det. Ett datalager är ett ramverk av JavaScript-objekt på platsen som innehåller alla variabelvärden som används i implementeringen. Det ger bättre kontroll och enklare underhåll vid implementeringen.
 1. Använd [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html) för att implementera kod på din webbplats för datainsamling, om du inte redan gjort det. Med den här tagghanteringslösningen kan ni driftsätta Analytics-kod tillsammans med andra taggningskrav. Taggar erbjuder integreringar med andra lösningar och produkter, och gör att du kan distribuera anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
-1. Skapa en [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) i Adobe Experience Platform. Den här källkopplingen kommer att importera dina Analytics-data till Experience Platform i ett standardiserat ramverk som kallas [Experience Data Model (XDM) System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+1. Skapa en [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) i Adobe Experience Platform. Den här källkopplingen kommer att importera dina Analytics-data till Experience Platform i ett standardiserat ramverk som kallas [Experience Data Model (XDM) System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv). Se även [Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
 1. Använd [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) om du vill skapa en eller flera anslutningar och datavyer som ska informera er flerkanalsrapportering.
 
 ## Importera data via Adobe Experience Platform Web SDK och Edge Network

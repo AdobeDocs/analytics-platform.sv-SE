@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 87d0dd37c9fc9e32e46b7c6a104301f23a2ff652
+source-git-commit: 7820f462617d21c9e3b23de26c9e9022d74bec0e
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ En fullständig global rapportsvit kanske inte alltid är möjlig för en implem
 
 * Planera för att få variablerna att stämma överens i alla dessa rapportsviter. eVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportserie 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När de hämtas in till CJA blandas dessa variabler in i en enda eVar1-dimension, vilket kan leda till förvirrande och felaktig rapportering.
 
-* Använd [Förbered datum](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktion för att mappa variabler. Även om det blir enklare om alla rapportsviter använder samma vanliga variabeldesign är det inte nödvändigt om du använder nya Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) -funktion. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
+* Använd [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktion för att mappa variabler. Även om det blir enklare om alla rapportsviter använder samma vanliga variabeldesign är det inte nödvändigt om du använder nya Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) -funktion. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
 
 Om du har undvikit att gå över till en global rapportserie på grund av problem med [!UICONTROL Uniques Exceeded] eller [!UICONTROL Low Traffic], vet att CJA inte har [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md). Det gör att alla unika värden kan visas och räknas.
 
@@ -58,6 +58,8 @@ Adobe har publicerat [uppdaterade metodtips för implementering av marknadsföri
 
 ### 4. Bestäm dig för att använda Analytics Source Connector jämfört med Experience Platform SDK:er {#connector-vs-sdk}
 
+Adobe Analytics-kunder kan enkelt utnyttja sina rapportsviter i Adobe Experience Platform och Customer Journey Analytics med Analytics Source Connector. Information om hur du använder Analytics Source Connector finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en).
+
 Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) datainsamlingen utvecklas, du kommer troligen att migrera till [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) med Adobe Experience Platform Edge Network. En vanlig implementering av SDK:er skickar data till Adobe Analytics, men det finns en ny möjlighet att skicka data direkt till Adobe Experience Platform. Den kan sedan importeras till Customer Journey Analytics, samtidigt som data skickas till Adobe Analytics bevaras.
 
 Med den här metoden utökas möjligheterna för datainsamling avsevärt: Det finns inte längre någon begränsning av antalet fält eller behovet av att mappa dataelement till props, eVars och händelser som i Analytics. Du kan använda ett obegränsat antal schemaelement av olika typer och representera dem på flera sätt med CJA [Datavyer](/help/data-views/data-views.md). Snabbheten för datatillgänglighet ökar när data skickas direkt till Adobe Experience Platform, när tiden för databehandling via Adobe Analytics tas bort.
@@ -67,7 +69,8 @@ Med den här metoden utökas möjligheterna för datainsamling avsevärt: Det fi
 * Flexibelt schema för att definiera de fält du behöver
 * Inte beroende av Adobe Analytics nomenklatur (prop, eVar, event osv.)
 * Inga teckenbegränsningar (100 tecken för props)
-* Snabbare datatillgänglighet i Adobe Experience Platform
+* Bättre datatillgänglighet i Adobe Experience Platform [användningsexempel för personalisering i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=en)
+* [Enhets-ID:n från första part](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en) för exaktare besöksidentifiering
 
 **Nackdelar med att använda Experience Platform SDK**
 
