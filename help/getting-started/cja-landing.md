@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d976160ae5186e9c8b9890b3835a251cac518b02
+source-git-commit: 7550249f94a2d81bcaf771a16283136d7a3543ff
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Nya eller aktuella objekt</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-data-in-cja.html?lang=en?lang=en">Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aa-data-in-cja.html?lang=en">Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Kombinera rapportsviter med olika scheman </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=en"> Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=en"> Jämför databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner </a> </li>
