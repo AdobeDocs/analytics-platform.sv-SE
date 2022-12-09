@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,8 @@ Scheman i Adobe Experience Platform innehåller [!UICONTROL Date] och [!UICONTRO
 * Om du väljer **[!UICONTROL Day]** med formatet **[!UICONTROL Month, Day, Year]** kan ett exempel i rapporter se ut så här: 23 augusti 2022.
 
 * Om du väljer **[!UICONTROL Minute of Day]** med formatet **[!UICONTROL Hour:Minute]** kan dina utdata se ut så här: 20.20.
+
+Vi stöder för närvarande datum efter 1 januari 1900 (med undantag av 1 januari 1970) och datum- och tidsvärden efter 1 januari 2000 00:00:00.
 
 ### Användningsexempel för datum och tid
 
