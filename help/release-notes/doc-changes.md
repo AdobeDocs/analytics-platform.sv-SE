@@ -4,10 +4,10 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ea2c9e59a6dbae2bb06ef8c0d012b3f3ff972445
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1149'
+ht-degree: 8%
 
 ---
 
@@ -46,7 +46,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Juni 2022 | Ny artikel på [Adobe Analytics bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep för Analytics Source Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Juni 2022 | Ny artikel på [virtuella rapporteringsmiljöer och sandlådemiljöer](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | Juni 2022 | Ny artikel på [jämföra databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
-| Juni 2022 | Ny artikel på [kombinera rapportsviter med olika scheman](/help/use-cases/combine-report-suites.md). |
+| Juni 2022 | Ny artikel på [kombinera rapportsviter med olika scheman](/help/use-cases/aa-data/combine-report-suites.md). |
 | Juni 2022 | Ny artikel på [dela anteckningar i mobilstyrkort](/help/components/annotations/mobile-annotations.md). |
 | Juni 2022 | Ny artikel på [Analytics Labs i CJA](/help/labs/labs.md). |
 | Juni 2022 | Nytt avsnitt på [stöd för numeriska fält som söknycklar och sökvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric). |
@@ -54,7 +54,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | **Maj 2022** |  |
 | Maj 2022 | Avsevärt uppdaterad artikel om [skapa anslutningar](/help/connections/create-connection.md) i CJA. |
 | Maj 2022 | Ny artikel om hur man [hantera datablock i CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html). |
-| Maj 2022 | Ny artikel på [Inhämta Adobe Experience Platform-målgrupper till CJA](/help/use-cases/ingest-aep-segments.md). |
+| Maj 2022 | Ny artikel på [Inhämta Adobe Experience Platform-målgrupper till CJA](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | **April 2022** |  |
 | April 2022 | Dokumentation på [dimensionsdelsträngar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | April 2022 | Nytt [CJA User Guide for Adobe Analytics users](/help/getting-started/aa-to-cja-user.md). |
@@ -65,7 +65,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | **Februari 2022** |  |
 | Februari 2022 | En ny guide som riktar sig till administratörer som går från Adobe Analytics till CJA: [Adobe Analytics till Customer Journey Analytics evolutionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html) |
 | **Januari 2022** |  |
-| Januari 2022 | Nytt användningsexempel för [Använda bindningsdimensioner och mätvärden i CJA](/help/use-cases/binding-dimensions-metrics.md) |
+| Januari 2022 | Nytt användningsexempel för [Använda bindningsdimensioner och mätvärden i CJA](/help/use-cases/data-views/binding-dimensions-metrics.md) |
 | Januari 2022 | Dokumentation om tillagda nya funktioner på [bindningsdimensioner och mätvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) och på nya [[!UICONTROL First Known] och [!UICONTROL Last Known] allokeringsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#allocation-settings) |
 | Januari 2022 | Ny artikel på [jämföra era Adobe Analytics-data med Analytics-data i CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
 
@@ -105,7 +105,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Mars 2021 | Tillagt ämne om stöd för [Kontrollpaneler för analyser](/help/mobile-app/home.md) (mobilapp). |
 | Mars 2021 | Nytt ämne [användarinställningar](/help/analysis-workspace/user-preferences.md) i Workspace. |
 | **Februari 2021** |  |
-| Februari 2021 | Nytt ämne om att använda [Marketing Channel-dimensioner i Adobe Experience Platform](/help/use-cases/marketing-channels.md). |
+| Februari 2021 | Nytt ämne om att använda [Marketing Channel-dimensioner i Adobe Experience Platform](/help/use-cases/aa-data/marketing-channels.md). |
 | Februari 2021 | Publicera det nya [CJA API](https://www.adobe.io/cja-apis/docs/) dokumentation. |
 | **Januari 2021** |  |
 | Januari 2021 | Nytt ämne [lägga till standardsökningar i datauppsättningen](/help/connections/standard-lookups.md). |
@@ -117,14 +117,14 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Datum | Uppdatera beskrivning |
 | --- | --- |
 | 13 november 2020 | Nya ämnen om [Flerkanalsanalys](/help/connections/cca/overview.md)som gör att du kan ändra inmatningen av en datauppsättnings person-ID och som möjliggör en sömlös kombination av flera datauppsättningar. |
-| 13 november 2020 | Ett nytt användningsexempel på [importera callcenter och webbdata](/help/use-cases/call-center.md) lades till. |
+| 13 november 2020 | Ett nytt användningsexempel på [importera callcenter och webbdata](/help/use-cases/cross-channel/call-center.md) lades till. |
 | 10 november 2020 | Ett avsnitt om konsekvenserna av att ta bort datakomponenter har lagts till i [Vanliga frågor](/help/getting-started/cja-faq.md). |
 | 2 november 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) sida. |
 | November 2020 | Lagt till innehåll på [ta bort begränsningar för bakgrundsfyllning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) för anslutningar. |
 | 7 oktober 2020 | Lagt till ett ämne [kombinerade händelsedatamängder](/help/connections/combined-dataset.md). |
-| 15 september 2020 | Lagt till ett ämne [dataintag](/help/use-cases/data-ingestion.md). |
+| 15 september 2020 | Lagt till ett ämne [dataintag](/help/use-cases/data-ingestion/data-ingestion.md). |
 | 2 september 2020 | Uppdaterat avsnitt om [användarbehörigheter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). |
-| 7 augusti 2020 | Nytt ämne [Användningsexempel B2B - sökdatauppsättning](/help/use-cases/b2b.md) tillagd. |
+| 7 augusti 2020 | Nytt ämne [Användningsexempel B2B - sökdatauppsättning](/help/use-cases/b2b/b2b.md) tillagd. |
 | Juli 2020 | Lagt till information om [Identitetskarta, alternativ för person-ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html). |
 | Juli 2020 | Nytt ämne [objektarrayer](/help/use-cases/object-arrays.md) eller&quot;dataherarkier&quot; har lagts till. |
 | 14 april 2020 | Uppdateringar av det senaste användargränssnittet i [Skapa anslutningar](/help/connections/create-connection.md) ämne. |

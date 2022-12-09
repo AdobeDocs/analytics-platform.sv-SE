@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 52593d05b10c872322236fb82c4ce5346ddcc9ac
+source-git-commit: 879350c645cf4c6e12361184dddfb065224d758c
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '826'
 ht-degree: 29%
 
 ---
@@ -71,7 +71,6 @@ ht-degree: 29%
       + [Delsträng](../data-views/component-settings/substring.md)
       + [Värdebuckning](../data-views/component-settings/value-bucketing.md)
    + [Standard, komponentreferens](../data-views/component-reference.md)
-   + [Datavyer använder exempel](../data-views/data-views-usecases.md)
    + [Etiketter och profiler](../data-views/data-governance.md)
 + Arbetsyteprojekt {#cja-workspace}
    + [Översikt över Analysis Workspace](../analysis-workspace/home.md)
@@ -248,16 +247,22 @@ ht-degree: 29%
       + [Infoga Google Analytics historiska data i plattformen](../use-cases/ga/backfill.md)
       + [Konfigurera strömmande Google Analytics-data i plattformen](../use-cases/ga/streaming.md)
       + [Rapport om Google Analytics data i CJA](../use-cases/ga/report.md)
-   + [Kombinera rapportsviter med olika scheman](../use-cases/combine-report-suites.md)
+   + Intag av data {#data-ingestion}
+      + [Användningsfall vid datainhämtning](../use-cases/data-ingestion/data-ingestion.md)
+      + [Infoga Marketo Engage data i AEP och rapportera i CJA](../use-cases/data-ingestion/marketo.md)
+      + [Ingest AEP-målgrupper into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + Datavyer {#data-views}
+      + [Datavyer använder exempel](../use-cases/data-views/data-views-usecases.md)
+      + [Använd bindningsdimensioner och mätvärden](../use-cases/data-views/binding-dimensions-metrics.md)
+   + B2B {#b2b}
+   + [Lägg till data på kontonivå som en uppslagsdatauppsättning](../use-cases/b2b/b2b.md)
+   + Flerkanalsdata {#cross-channel}
+      + [Analysera data över olika kanaler](../use-cases/cross-channel/cross-channel.md)
+      + [Importera callcenter och webbdata](../use-cases/cross-channel/call-center.md)
+   + Adobe Analytics data {#aa-data}
+      + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
+      + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
    + [Använda arrayer med objekt](../use-cases/object-arrays.md)
-   + [Använd bindningsdimensioner och mätvärden](../use-cases/binding-dimensions-metrics.md)
-   + [(B2B) Lägg till data på kontonivå som en uppslagsuppsättning](../use-cases/b2b.md)
-   + [Infoga Marketo Engage data i AEP och rapportera i CJA](../use-cases/marketo.md)
-   + [Ingest AEP-målgrupper into CJA](../use-cases/ingest-aep-segments.md)
-   + [Analysera data över olika kanaler](../use-cases/cross-channel.md)
-   + [Importera callcenter och webbdata](../use-cases/call-center.md)
-   + [Användningsfall vid datainhämtning](../use-cases/data-ingestion.md)
-   + [Använd mått för marknadsföringskanal](../use-cases/marketing-channels.md)
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
 + Felsökning {#troubleshooting}

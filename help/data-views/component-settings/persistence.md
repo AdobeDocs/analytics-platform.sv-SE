@@ -4,7 +4,7 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 7%
@@ -78,7 +78,7 @@ Information om tillgängliga förfalloinställningar.
 
 En listruta där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga listrutealternativ innehåller andra dimensioner som ingår i datavyn.
 
-Se [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
+Se [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
 
 ## [!UICONTROL Binding Metric]
 
@@ -86,4 +86,4 @@ En listruta där du kan välja ett mått som fungerar som en bindningsutlösare.
 
 Den här inställningen visas bara när Dimensionen Bindning är lägre i objektarrayen än i komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen.
 
-Se det andra exemplet nedan [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/binding-dimensions-metrics.md) om du vill ha mer information om hur du använder bindningsstatistik på ett effektivt sätt.
+Se det andra exemplet nedan [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/data-views/binding-dimensions-metrics.md) om du vill ha mer information om hur du använder bindningsstatistik på ett effektivt sätt.

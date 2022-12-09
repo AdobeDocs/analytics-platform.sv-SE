@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 7820f462617d21c9e3b23de26c9e9022d74bec0e
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 0%
@@ -44,7 +44,7 @@ En fullständig global rapportsvit kanske inte alltid är möjlig för en implem
 
 Om du har undvikit att gå över till en global rapportserie på grund av problem med [!UICONTROL Uniques Exceeded] eller [!UICONTROL Low Traffic], vet att CJA inte har [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md). Det gör att alla unika värden kan visas och räknas.
 
-Här är ett exempel [kombinera rapportsviter med olika scheman](/help/use-cases/combine-report-suites.md).
+Här är ett exempel [kombinera rapportsviter med olika scheman](/help/use-cases/aa-data/combine-report-suites.md).
 
 ### 3. (Re)Konfigurera era marknadsföringskanaler {#marketing-channels}
 
@@ -111,7 +111,7 @@ Här är några videor som vägleder dig:
 
 ### Andra överväganden
 
-* Tack vare CJA-datavyer har ni större flexibilitet när det gäller att definiera mått och mått inom Customer Journey Analytics. Du kan till exempel använda värdet för en dimension för att bli definitionen av ett mätvärde. [Läs mer](/help/data-views/data-views-usecases.md)
+* Tack vare CJA-datavyer har ni större flexibilitet när det gäller att definiera mått och mått inom Customer Journey Analytics. Du kan till exempel använda värdet för en dimension för att bli definitionen av ett mätvärde. [Läs mer](/help/use-cases/data-views/data-views-usecases.md)
 
 * Om du har definierat en anpassad kalender i Adobe Analytics har du liknande [anpassade kalenderfunktioner](/help/components/date-ranges/custom-date-ranges.md) inom CJA. Du måste se till att din kalender är korrekt definierad.
 

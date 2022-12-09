@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
+source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
 workflow-type: tm+mt
 source-wordcount: '1424'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Observera att rapportsvitens väljare i det övre hörnet nu låter dig välja b
 
 ![data-view-selector](assets/data-views.png)
 
-Se [Använda exempel på datavyer](/help/data-views/data-views-usecases.md) för mer information om detta koncept.
+Se [Använda exempel på datavyer](/help/use-cases/data-views/data-views-usecases.md) för mer information om detta koncept.
 
 ## Förändringar av begreppet eVars och Props
 
@@ -96,7 +96,7 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 ## Förändringar av begreppet klassificeringar
 
-&quot;Klassificeringar&quot; kallas nu&quot;Sök efter datauppsättningar&quot;. Uppslagsdatauppsättningar används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [Lägg till data på kontonivå som en uppslagsdatauppsättning](/help/use-cases/b2b.md) till exempel.
+&quot;Klassificeringar&quot; kallas nu&quot;Sök efter datauppsättningar&quot;. Uppslagsdatauppsättningar används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [Lägg till data på kontonivå som en uppslagsdatauppsättning](/help/use-cases/b2b/b2b.md) till exempel.
 
 ## Förändringar av begreppet kundattribut
 

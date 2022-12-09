@@ -4,7 +4,7 @@ description: En datavy anger hur du vill tolka element i data i CJA-anslutningen
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 0%
@@ -79,4 +79,4 @@ Om du tar bort en datavy i [!UICONTROL Customer Journey Analytics]visas ett felm
 ## Nästa steg
 
 * [Skapa datavyer](/help/data-views/create-dataview.md)
-* [Datavyer använder exempel](/help/data-views/data-views-usecases.md)
+* [Datavyer använder exempel](/help/use-cases/data-views/data-views-usecases.md)
