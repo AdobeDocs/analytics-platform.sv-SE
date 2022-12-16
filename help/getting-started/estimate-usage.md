@@ -3,24 +3,25 @@ title: Beräkna och hantera din CJA-användning
 description: Visar två metoder för att beräkna användningen och en metod för att hantera den.
 role: Admin
 feature: CJA Basics
-source-git-commit: 2bcf1f805a54581f13f7d08b9ef034535d7959b1
+exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
+source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
-
 # Beräkna och hantera din CJA-användning
 
-För att förstå hur CJA används kan du använda två metoder:
+För att förstå hur CJA används kan du använda tre metoder:
 
-* Lägg till händelsedataraderna för varje anslutning. (Se **Beräkna anslutningsstorlek** nedan)
-* Använd Analysis Workspace för att rapportera om förra månadens händelser. (Se **Skapa ett Workspace-projekt med alla händelsedata** nedan.)
+* Lägg till händelsedataraderna för varje anslutning. (Se **Beräkna anslutningsstorlek** nedan) Det här är ett enkelt sätt att visa data för händelserader, per anslutning, för en viss tidsstämpel.
+* Använd Analysis Workspace för att rapportera om förra månadens händelser. (Se **Skapa ett Workspace-projekt med alla händelsedata** nedan.) På så sätt kan ni göra en djupare analys av era användningsdata och av er användningshistorik.
+* Använd CJA API för att skapa en automatiserad rapport. (Se **Skapa en rapport i CJA API** nedan.)
 
 Så här hanterar du CJA-användningen:
 
-* Använd CJA API. (Se **Skapa en rapport i CJA API** nedan.)
+* Definiera ett rullande datafönster. (Se nedan.)
 
 ## Beräkna anslutningsstorlek {#estimate-size}
 
@@ -59,12 +60,33 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) som hämtar in data från ALLA dina anslutningar och inte har några filter. Med andra ord innehåller den alla era data.
 
-1. I Workspace skapar du ett nytt projekt och hämtar alla händelser (från **[!UICONTROL Metrics]** (listruta) för föregående månad.
+1. I Workspace skapar du ett nytt projekt och hämtar alla händelser (från **[!UICONTROL Metrics]** (nedrullningsbar meny) fram till första fredagen i månaden, med början den första dagen i ditt aktuella CJA-kontrakt.
 
    ![Händelser](assets/events-usage.png)
 
-1. gör detta
+   Då får du en bra uppfattning om hur din användning går från månad till månad.
 
-## Skapa en rapport i CJA API {#api-report}
+1. Beroende på dina behov kan du gå nedåt efter datauppsättning, osv.
 
-Använd [CJA-rapporterings-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) för att köra en rapport om alla dina händelsedata.
+
+## Skapa en automatiserad rapport i CJA API {#api-report}
+
+1. Använd [CJA-rapporterings-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) för att köra en rapport om alla dina händelsedata, **för alla anslutningar**. Konfigurera detta så att rapporten körs
+
+   * var tredje fredag varje månad.
+   * till första dagen i ditt CJA-kontrakt.
+
+   Då får du en bra uppfattning om hur din användning går från månad till månad. Då får du det totala antalet rader på alla dina CJA-anslutningar.
+
+1. Använd Excel för att anpassa rapporten ytterligare.
+
+## Definiera ett rullande datafönster {#rolling}
+
+Om du vill hantera din användning [anslutningsgränssnitt](/help/connections/create-connection.md) Med kan du definiera CJA-datalagring som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader osv.).
+
+Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
+
+Om du låter standardvärdet vara (omarkerat) ersätts kvarhållningsperioden av Adobe Experience Platform datalagringsinställning. Om ni har 25 månaders data i Experience Platform får CJA 25 månaders data genom att fylla på dem. Om du raderade 10 av dessa månader i Platform behåller CJA de återstående 15 månaderna.
+
+Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller en profil- eller uppslagsdatauppsättning (förutom en eller flera händelsedatamängder) kommer dessa data att lagras under samma tidsperiod.
+
