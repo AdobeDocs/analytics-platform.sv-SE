@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
+source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ För att förstå hur CJA används kan du använda tre metoder:
 
 Så här hanterar du CJA-användningen:
 
-* Definiera ett rullande datafönster. (Se nedan.)
+* Definiera ett rullande datafönster. (Se **Definiera ett rullande datafönster** nedan.)
 
 ## Beräkna anslutningsstorlek {#estimate-size}
 
@@ -58,7 +58,7 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 ## Skapa ett Workspace-projekt med alla händelsedata {#workspace-event-data}
 
-1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) som hämtar in data från ALLA dina anslutningar och inte har några filter. Med andra ord innehåller den alla era data.
+1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) för var och en av dina anslutningar och inte har några filter.
 
 1. I Workspace skapar du ett nytt projekt och hämtar alla händelser (från **[!UICONTROL Metrics]** (nedrullningsbar meny) fram till första fredagen i månaden, med början den första dagen i ditt aktuella CJA-kontrakt.
 
