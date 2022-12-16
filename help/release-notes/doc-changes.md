@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1161'
 ht-degree: 8%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
+| **December 2022** |  |
+| 16 december 2022 | Nytt ämne [mäta och hantera användningen av CJA-data](/help/getting-started/estimate-usage.md). |
 | **Oktober 2022** |  |
 | Oktober 2022 | Nytt ämne [lösenordsskydd för schemalagda projekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). Den här funktionen stöder [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Nytt ämne [Kundhanterade nycklar](/help/privacy/cmk.md). Den här funktionen stöder [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |

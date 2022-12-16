@@ -3,9 +3,9 @@ title: Beräkna och hantera din CJA-användning
 description: Visar två metoder för att beräkna användningen och en metod för att hantera den.
 role: Admin
 feature: CJA Basics
-source-git-commit: 58d582b693708f883842fb6a18cc57d481f2b2ab
+source-git-commit: 2bcf1f805a54581f13f7d08b9ef034535d7959b1
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 För att förstå hur CJA används kan du använda två metoder:
 
-* Lägg till händelsedata för varje anslutning (se **Beräkna anslutningsstorlek** nedan)
-* Använd Analysis Workspace till...
+* Lägg till händelsedataraderna för varje anslutning. (Se **Beräkna anslutningsstorlek** nedan)
+* Använd Analysis Workspace för att rapportera om förra månadens händelser. (Se **Skapa ett Workspace-projekt med alla händelsedata** nedan.)
 
 Så här hanterar du CJA-användningen:
 
-* Använda CJA API
+* Använd CJA API. (Se **Skapa en rapport i CJA API** nedan.)
 
 ## Beräkna anslutningsstorlek {#estimate-size}
 
@@ -36,9 +36,13 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 1. Klicka på varje anslutningsnamn för att komma till Anslutningshanteraren.
 
-1. Lägg till **[!UICONTROL Records of event data available]** för alla anslutningar som skapas. (Beroende på storleken på anslutningen kan det ta en stund innan numret visas.)
+1. Lägg till **[!UICONTROL Records of event data available]** för varje anslutning som din organisation har skapat. (Beroende på storleken på anslutningen kan det ta en stund innan numret visas.)
 
    ![händelsedata](assets/event-data.png)
+
+   >[!CAUTION]
+   >
+   >   Detta antal gäller endast händelsedata, inte profil- eller sökdata. Om du har profil- och sökdata kommer antalet att vara något högre. Det finns dock för närvarande inget sätt att rapportera om användningen av profil- och sökdata i användargränssnittet. Den här funktionen är särpresenterad för 2023.
 
 1. När du har angett summan av alla händelsedatarader ska du slå upp behörigheten&quot;Rader med data&quot; i det Customer Journey Analytics-kontrakt som ditt företag signerade med Adobe.
 
@@ -50,3 +54,17 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
    * [Ta bort oanvända anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
    * [Ta bort en datauppsättning i AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
    * Kontakta kontohanteraren för Adobe om du vill licensiera ytterligare kapacitet.
+
+## Skapa ett Workspace-projekt med alla händelsedata {#workspace-event-data}
+
+1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) som hämtar in data från ALLA dina anslutningar och inte har några filter. Med andra ord innehåller den alla era data.
+
+1. I Workspace skapar du ett nytt projekt och hämtar alla händelser (från **[!UICONTROL Metrics]** (listruta) för föregående månad.
+
+   ![Händelser](assets/events-usage.png)
+
+1. gör detta
+
+## Skapa en rapport i CJA API {#api-report}
+
+Använd [CJA-rapporterings-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) för att köra en rapport om alla dina händelsedata.
