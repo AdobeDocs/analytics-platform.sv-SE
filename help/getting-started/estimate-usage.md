@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
+source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 ## Skapa ett Workspace-projekt med alla händelsedata {#workspace-event-data}
 
-1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) för var och en av dina anslutningar och inte har några filter.
+1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) för var och en av anslutningarna, utan att några filter tillämpas.
 
-1. I Workspace skapar du ett nytt projekt och hämtar alla händelser (från **[!UICONTROL Metrics]** (nedrullningsbar meny) fram till första fredagen i månaden, med början den första dagen i ditt aktuella CJA-kontrakt.
+1. Skapa nya projekt baserat på varje datavy i arbetsytan och dra in alla händelser (från **[!UICONTROL Metrics]** (nedrullningsbar meny) fram till första fredagen i månaden, med början den första dagen i ditt aktuella CJA-kontrakt.
 
    ![Händelser](assets/events-usage.png)
 
