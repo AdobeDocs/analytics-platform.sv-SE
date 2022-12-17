@@ -4,24 +4,26 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
+source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
 
-# Beräkna och hantera din CJA-användning
+# Visa och hantera din CJA-användning
 
-För att förstå hur CJA används kan du använda tre metoder:
+Du kan använda flera olika metoder för att visa din CJA-användning:
 
-* Lägg till händelsedataraderna för varje anslutning. (Se **Beräkna anslutningsstorlek** nedan) Det här är ett enkelt sätt att visa data för händelserader, per anslutning, för en viss tidsstämpel.
-* Använd Analysis Workspace för att rapportera om förra månadens händelser. (Se **Skapa ett Workspace-projekt med alla händelsedata** nedan.) På så sätt kan ni göra en djupare analys av era användningsdata och av er användningshistorik.
-* Använd CJA API för att skapa en automatiserad rapport. (Se **Skapa en rapport i CJA API** nedan.)
+* Lägg till händelsedataraderna för varje anslutning. Se [Beräkna anslutningsstorlek](#estimate size) nedan. Det här är ett enkelt sätt att se data för händelseraden, per anslutning, för en viss tidsstämpel.
+* Se din användning på tre sätt, som beskrivs närmare nedan:
+   * Använd Analysis Workspace för att rapportera om förra månadens händelser.
+   * Använd Report Builder för att rapportera händelser förra månaden.
+   * Använd CJA API för att skapa en automatiserad rapport.
 
 Så här hanterar du CJA-användningen:
 
-* Definiera ett rullande datafönster. (Se **Definiera ett rullande datafönster** nedan.)
+* Definiera ett rullande datafönster.
 
 ## Beräkna anslutningsstorlek {#estimate-size}
 
@@ -58,6 +60,8 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 ## Skapa ett Workspace-projekt med alla händelsedata {#workspace-event-data}
 
+Med den här metoden kan du göra en djupare analys av dina användningsdata och historiken över din användning.
+
 1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) för var och en av anslutningarna, utan att några filter tillämpas.
 
 1. Skapa nya projekt baserat på varje datavy i arbetsytan och dra in alla händelser (från **[!UICONTROL Metrics]** (nedrullningsbar meny) fram till första fredagen i månaden, med början den första dagen i ditt aktuella CJA-kontrakt.
@@ -68,19 +72,22 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 1. Beroende på dina behov kan du gå nedåt efter datauppsättning, osv.
 
+## Skapa ett datablock i Report Builder {#arb}
+
+I Report Builder [skapa ett datablock](/help/report-builder/create-a-data-block.md) för varje datavy och sedan summera dem.
 
 ## Skapa en automatiserad rapport i CJA API {#api-report}
 
 1. Använd [CJA-rapporterings-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) för att köra en rapport om alla dina händelsedata, **för alla anslutningar**. Konfigurera detta så att rapporten körs
 
-   * var tredje fredag varje månad.
+   * varje fredag varje månad.
    * till första dagen i ditt CJA-kontrakt.
 
    Då får du en bra uppfattning om hur din användning går från månad till månad. Då får du det totala antalet rader på alla dina CJA-anslutningar.
 
 1. Använd Excel för att anpassa rapporten ytterligare.
 
-## Definiera ett rullande datafönster {#rolling}
+## Hantera din användning genom att definiera ett rullande datafönster {#rolling}
 
 Om du vill hantera din användning [anslutningsgränssnitt](/help/connections/create-connection.md) Med kan du definiera CJA-datalagring som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader osv.).
 
