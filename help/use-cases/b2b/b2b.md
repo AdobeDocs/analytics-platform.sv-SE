@@ -4,9 +4,9 @@ description: Lär dig hur du lägger till kontobaserade data som en uppslagsdata
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2b21d6e4e092c33947220b2d22a8a757407fabb
+source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Det här B2B-användningsexemplet visar hur du anger data på kontonivå i stäl
 
 Du uppnår allt detta genom att lägga in kontonivåinformationen som en [sökning](/help/getting-started/cja-glossary.md) datauppsättning.
 
-Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en uppslagstabelldatauppsättning genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (CJA0) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Därefter skapar du en datavy och kan till slut använda alla dessa data i Workspace.
+Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en uppslagstabelldatauppsättning genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (CJA) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Därefter skapar du en datavy och kan till slut använda alla dessa data i Workspace.
 
 >[!NOTE]
 >
@@ -38,12 +38,6 @@ Skapa ett eget schema för [sökning](/help/getting-started/cja-glossary.md) tab
 ## 2. Skapa datauppsättning för sökning (Experience Platform)
 
 När schemat har skapats måste du skapa en uppslagsdatauppsättning från det schemat, i Experience Platform. Den här uppsättningen med uppslagsdata innehåller marknadsföringsinformation på kontonivå, till exempel: företagsnamn, totalt antal anställda, domännamn, vilken bransch de tillhör, årsomsättning, oavsett om de är nuvarande kunder i Experience Platform eller inte, vilket försäljningsstadium de befinner sig i, vilket team på kontot som använder CJA, osv.
-
->[!IMPORTANT]
->
->CJA stöder inte heltal i uppslagsdatauppsättningar. Om du lägger till heltalsfälten i XDM-schemat för din uppslagsdatauppsättning kan du inte använda dessa heltal som mått eller beräknade värden. Om till exempel annualRevenue eller totalEmployees definieras som heltal visas de som&quot;0&quot; vid rapportering i CJA. Om du däremot tilldelar dem som strängar kan du använda dem som sökinformation.
-
-Exempelvis definieras annualRevenue eller totalEmployees som Integer i följande exempel - det är anledningen till att den visar &quot;0&quot; i CJA.
 
 1. I Adobe Experience Platform går du till **[!UICONTROL Data Management > Datasets]**.
 1. Klicka på **[!UICONTROL + Create dataset]**.
@@ -96,4 +90,4 @@ Du kan till exempel hitta svar på svaren i inledningen:
 * Hur många anställda mappas till ett specifikt konto-ID?
 * Vilken bransch tillhör ett konto-ID?
 
-![](../assets/project-lookup.png)
+![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
