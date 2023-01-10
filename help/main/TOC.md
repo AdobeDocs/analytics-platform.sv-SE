@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '835'
 ht-degree: 29%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 29%
       + Mappar på arbetsytan {#workspace-folders}
          + [Om mappar i arbetsytan](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Ta bort mappar](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Lägg till projekt](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Ta bort ett projekt](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Spara ett nytt projekt](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -177,6 +178,7 @@ ht-degree: 29%
    + [Arbeta med filter](../report-builder/work-with-filters.md)
    + [Filtrera Dimensioner](../report-builder/filter-dimensions.md)
    + [Hantera datablock](../report-builder/manage-reportbuilder.md)
+   + [Schemalägg arbetsböcker](../report-builder/schedule-reportbuilder.md)
    + [Begränsade etiketter](../report-builder/restricted-labels.md)
    + [Inställningar för Report Builder](../report-builder/report-builder-settings.md)
 + Komponenter {#cja-components}

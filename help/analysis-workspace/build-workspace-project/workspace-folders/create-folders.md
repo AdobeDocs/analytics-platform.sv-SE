@@ -3,25 +3,19 @@ description: Lär dig hur du skapar mappar och undermappar i arbetsytan
 keywords: Analysis Workspace
 title: Skapa mappar
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
+exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '146'
 ht-degree: 1%
 
 ---
-
 
 # Skapa mappar
 
 Du kan lägga till en ny mapp eller en undermapp i listan över projekt och mappar på startsidan för arbetsytan.
 
->[!NOTE]
->
->Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
-
-## Skapa en ny mapp
+## Skapa en ny mapp {#create-new-folder}
 
 Om du vill skapa en ny mapp
 
@@ -29,7 +23,7 @@ Om du vill skapa en ny mapp
 
 1. Ange ett namn för den nya mappen.
 
-1. Välj taggar i listrutan.
+1. Välj taggar i listrutan eller lägg till nya taggar.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
@@ -41,7 +35,7 @@ Om du vill skapa en ny mapp
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
-## Skapa en undermapp
+## Skapa en undermapp {#create-subfolder}
 
 Med undermappar kan du ange ytterligare nivåer för projekthantering och -organisation.
 

@@ -3,25 +3,19 @@ description: Lär dig hur du lägger till mappar i arbetsytan
 keywords: Analysis Workspace
 title: Lägg till mappar i arbetsytan
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
+exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
-
 
 # Lägg till projekt i mappar
 
 Du kan lägga till projekt i en mapp i tabellvyn eller från en mapp.
 
->[!NOTE]
->
->Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
-
-## Från tabellvyn
+## Från tabellvyn {#table-view}
 
 Lägg till projekt i en mapp från tabellvyn på startsidan.
 
@@ -47,7 +41,7 @@ Lägg till projekt i en mapp från tabellvyn på startsidan.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## Från en mapp
+## Från en mapp {#inside-folder}
 
 Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
 
@@ -72,4 +66,8 @@ Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
 1. Klicka **Lägg till** för att lägga till projekten i mappen.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-Endast administratörer kan lägga till projekt i företagsmappen eller skapa ett nytt nästa projekt och spara det i företagsmappen
+
+
+>[!NOTE]
+>
+>Endast administratörer kan lägga till projekt i företagsmappen eller skapa ett nytt projekt och spara det i företagsmappen
