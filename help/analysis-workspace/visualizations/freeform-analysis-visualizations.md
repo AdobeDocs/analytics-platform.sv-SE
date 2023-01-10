@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Översikt över visualiseringar
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
+source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1125'
 ht-degree: 4%
 
 ---
@@ -40,6 +40,24 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Text](/help/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
 | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md) | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Använder cirklar för att beskriva måttöverlappningen för upp till 3 filter. |
+
+## Anpassa visualiseringsinställningar
+
+Du kan anpassa visualiseringsinställningar för en enskild visualisering eller för alla visualiseringar som du skapar.
+
+### Anpassa visualiseringsinställningar för en enda visualisering
+
+För åtkomst [!UICONTROL Visualization Settings] för en enskild visualisering:
+
+1. I Analysis Workspace håller du muspekaren över den visualisering vars inställningar du vill anpassa.
+
+1. Klicka på kugghjulsikonen.
+
+   Varje typ av visualisering har unika inställningar som du kan anpassa. Information om tillgängliga inställningar finns i [Inställningar](#settings).
+
+### Anpassa visualiseringsinställningar för alla visualiseringar du skapar
+
+Du kan anpassa inställningarna för alla visualiseringar som du skapar. Mer information finns i [Användarinställningar](/help/analysis-workspace/user-preferences.md).
 
 ## Inställningar {#settings}
 
