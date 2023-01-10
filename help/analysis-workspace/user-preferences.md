@@ -4,9 +4,9 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 652ae043f504ff71e8ed469a33f2ef4ebf1c7d04
+source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2425'
 ht-degree: 1%
 
 ---
@@ -155,11 +155,6 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Antal fickor | Välj antalet dataintervall (bucket) i visualiseringen. Det högsta antalet bucklor är 50. <p>Mer information finns i [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
 |  | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Gå in på</li><li>Besökare</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per besökare, sidvyer för besök eller sidvyer per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
-| **Mappa** |  |  |
-|  | Ritningsdimension | <ul><li>Mobil latitud/longitud</li><li>Geografisk dimension</li></ul> |
-|  | Karttyp | <ul><li>Bubblor</li><li>Värmekarta</li></ul> |
-|  | Färgtema | Välj mellan Coral, Reds, Green, Blues, Heatmap och Positive/Negative. |
-|  | Kartstil | Välj mellan Basic, Streets, Bright, Light, Dark och Satellite. |
 | **[Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Värde | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Procentuell ändring</li><li>Rådifferens</li></ul> |
 |  | Procenttal | Visar värden i procent för visualiseringar av sammanfattningsändringar. |
