@@ -3,52 +3,78 @@ description: Lär dig mer om de olika alternativen för att spara automatiskt, s
 title: Spara projekt
 feature: CJA Workspace Basics
 role: User, Admin
-exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
+source-git-commit: b35520d22fdd6ee39972e3500b3d6968c2dfeadd
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
 
 # Spara projekt
 
-Om du vill spara ändringarna i ett projekt går du till arbetsytan **[!UICONTROL Project]** -menyn. Arbetsytan sparar även projekt automatiskt i vissa fall.
+Projekt i Analysis Workspace sparas automatiskt varannan minut.
+
+Du kan också spara projekt manuellt. Det finns andra alternativ, till exempel att lägga till taggar eller anteckningar, tillgängliga när du sparar ett projekt manuellt.
 
 ## Spara projektalternativ {#Save}
 
-Det finns olika åtgärder att spara som du kan utföra under **[!UICONTROL Project]** -menyn, beroende på hur du vill komma åt analysen i framtiden.
+Det finns olika alternativ när du sparar ett projekt manuellt i Analysis Workspace.
 
-| Åtgärd | Beskrivning |
-|---|---|
-| **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en beskrivning (valfritt) och lägga till (valfria) taggar. |
-| **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningarna lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
-| **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
-| **[!UICONTROL Save as template]** | Spara projektet som en [egen mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
+Så här sparar du ett projekt manuellt:
 
-![](assets/save-project.png)
+1. Med projektet öppet i Analysis Workspace väljer du **[!UICONTROL Project]** väljer du sedan något av följande alternativ:
+
+   | Åtgärd | Beskrivning |
+   |---|---| 
+   | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en beskrivning (valfritt) och lägga till (valfria) taggar. |
+   | **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningarna lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
+   | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
+   | **[!UICONTROL Save as template]** | Spara projektet som en [egen mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
+
+   ![](assets/save-project.png)
 
 ## Spara automatiskt {#Autosave}
 
-Befintliga projekt, dvs. projekt som har sparats minst en gång tidigare, sparas automatiskt varannan minut på den lokala datorn. Nya projekt som aldrig har sparats sparas för närvarande inte automatiskt.
+Alla projekt i Analysis Workspace sparas automatiskt varannan minut på din dator. Detta inkluderar nyskapade projekt som ännu inte sparats manuellt.
 
-Det finns några scenarier som kan leda dig bort från osparade ändringar i ett projekt, vilket resulterar i olika tillgängliga åtgärder.
+* **Nya projekt:** Även om nya projekt sparas automatiskt måste du spara varje nytt projekt manuellt första gången. Analysis Workspace uppmanar dig att spara nya projekt manuellt när du växlar till ett annat projekt, stänger webbläsarfliken och så vidare.
 
-### Öppna ett annat arbetsyteprojekt
+   Om du av någon anledning oväntat förlorar åtkomsten till ett nyskapat projekt innan du sparar det manuellt, sparas en återställningsversion av ditt projekt på Analysis Workspace startsida i en mapp som kallas `Recovered Projects (Last 7 Days)`.
 
-I Adobe kan du spara innan du lämnar sidan. När du har lämnat ett befintligt projekt tas den automatiskt sparade lokala kopian bort.
+   ![](assets/recovered-folder.png)
+
+* **Befintliga projekt:** Om du av någon anledning lämnar ett projekt med ändringar som ännu inte har sparats automatiskt uppmanas du att spara ändringarna eller ett varningsmeddelande visas.
+
+   Här följer några vanliga scenarier:
+
+### Öppna ett annat projekt
+
+Om du öppnar ytterligare ett projekt medan du arbetar med ett projekt som innehåller ändringar som ännu inte har sparats automatiskt, uppmanas du att spara det aktuella projektet innan du går.
+
+Följande alternativ är tillgängliga:
+
+* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av ditt projekt med dina senaste ändringar.
+* **Spara som:** Sparar de senaste ändringarna som ett nytt projekt. Det ursprungliga projektet sparas endast med de senaste automatiskt sparade ändringarna.
+* **Ignorera ändringar:** Ignorera de senaste ändringarna. De senaste automatiskt sparade ändringarna sparas i projektet.
 
 ![](assets/existing-save.png)
 
 ### Navigera bort eller stänga en flik
 
-Webbläsaren varnar för att ändringar som inte sparats går förlorade. Du kan välja att avbryta eller avbryta.
+Om du navigerar bort från sidan eller stänger webbläsarfliken när du visar ett projekt med ändringar som ännu inte har sparats automatiskt, visas en varning i webbläsaren om att ändringar som inte har sparats går förlorade. Du kan välja att avbryta eller avbryta.
 
 ![](assets/browser-image.png)
 
 ### Webbläsaren kraschar eller sessionstider ut
 
-För **befintlig** projekt, när du återgår till arbetsytan visas en **Projektåterställning** modal. Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
+Om webbläsaren kraschar eller om sessionen avbryts uppmanas du att återställa ändringar i projektet som ännu inte har sparats automatiskt nästa gång du öppnar Analysis Workspace.
+
+Här följer dialogrutan Projektåterställning som visas första gången du öppnar Analysis Workspace efter en krasch eller en timeout.
+
+Välj **Ja** om du vill återställa projektet från den senaste automatiskt sparade kopian.
+
+Välj **Nej** om du vill ta bort den automatiskt sparade kopian och öppna den senast sparade versionen av projektet.
 
 ![](assets/project-recovery.png)
 
