@@ -2,9 +2,9 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
+source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1111'
 ht-degree: 0%
 
 ---
@@ -70,12 +70,12 @@ Personbehållare kan innehålla värden som baseras på en besökares övergripa
 
 Med sessionsbehållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar upp beteenden för hela besökssessionen när regeln har uppfyllts och låter dig definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett filter. Den kan hjälpa dig att svara på följande frågor:
 
-* Hur många besökare tittade på News and Sports-delen i samma session?
+* Hur många sessioner har varit kopplade till datakällor för både webben och Call Center?
 * Vilka sidor bidrog till en lyckad konvertering till en försäljning?
 
 Sessionsbehållare innehåller värden som baseras på förekomst per session:
 
-* Sessionsnummer
+* Sessionstyp
 * Startsida
 * Återbesöksfrekvens
 * Deltagandemått
