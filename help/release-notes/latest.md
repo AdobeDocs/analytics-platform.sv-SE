@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: fbfc7113aef8857e11ccfba5e5e557eed16c2465
+source-git-commit: 9276b7ed4465c85703e942e02adde2d024cf43ca
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 4%
+source-wordcount: '472'
+ht-degree: 6%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (CJA) (oktober/november 2022)
+# Versionsinformation för Customer Journey Analytics (CJA) (januari 2023)
 
-**Senaste uppdatering**: 25 oktober 2022
+**Senaste uppdatering**: 5 januari 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,29 +20,23 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Början av utrullning](/help/release-notes/releases.md) | [Allmän tillgänglighet](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **[!UICONTROL Key metric summary]visualisering** | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. [Läs mer](/help/analysis-workspace/visualizations/key-metric.md) | 5 oktober 2022 | 19 oktober 2022 |
-| **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1` - `mvvar3` kommer inte längre att sänkas automatiskt. I stället kommer data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA att återspegla det ursprungliga fallet som skickades från sidan. ASC-/CJA-kolumner `_experience.analytics.customDimensions.lists.list1.list[]` - `_experience.analytics.customDimensions.lists.list3.list[]` påverkas av den här ändringen. | Ej tillämpligt | 24 oktober 2022 |
-| **CJA-granskningslogg** | Med Customer Journey Analytics (CJA) kan du granska användaraktivitet för olika tjänster och funktioner i form av granskningsloggar. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act). Dessa loggar var tidigare bara tillgängliga via API:t för granskningsloggar. [Läs mer](/help/privacy/audit-log.md) | Ej tillämpligt | 26 oktober 2022 |
-| **HIPAA-beredskap** | Adobe stöder nu mottagning, användning, underhåll eller överföring av skyddad hälsoinformation i Customer Journey Analytics och andra Experience Platform-baserade tillämpningar enbart för vårdkunder. Sjukvården är endast avsedd för vårdkunder som är antingen en enhet som omfattas eller en Business Associate i USA. [Läs mer](https://www.adobe.com/trust/compliance/hipaa-ready.html) | Ej tillämpligt | 7 november 2022 |
-| **Lösenordsskydd för schemalagda projekt** | Den här funktionen är en del av beredskapen för HIPAA och gäller endast för vårdkunder. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | Ej tillämpligt/ | 7 november 2022. |
+| **Mappar på arbetsytan** | Med mappar kan du ordna och kategorisera dina projekt så att de blir lättare att hämta och komma åt. Dessutom har en delad **[!UICONTROL Company]** kan administratörer enkelt skapa och dela innehåll med alla Workspace-användare. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | Ej tillämpligt | 11 januari 2023 |
+| **Standardstartsida** | The [ny landningssida](/help/getting-started/landing.md) som introducerades tidigare 2022 kommer att bli standardupplevelsen för alla användare på **11 januari 2023**. Den gamla landningssidan kommer att bli inaktuell och alla kommer att behöva använda den nya upplevelsen. | Ej tillämpligt | 11 januari 2023 |
+| **Schemalägg arbetsböcker i Report Builder** | I Customer Journey Analytics kan du skapa scheman för att skicka arbetsböcker med regelbundna intervall. Nu kan mottagarna regelbundet få de senaste uppdateringarna av arbetsböckerna. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | Ej tillämpligt | 11 januari 2023 |
+| **Spara nya projekt automatiskt** | Analysis Workspace sparar nu automatiskt nya projekt. Om du av någon anledning oväntat förlorar åtkomsten till ett nyligen skapat projekt innan du sparar det manuellt, är en återställningsversion av ditt projekt nu tillgänglig. Tidigare sparades projekt bara automatiskt efter att de först sparats manuellt. [Läs mer](/help/analysis-workspace/build-workspace-project/save-projects.md) | Ej tillämpligt | 11 januari 2023 |
+| **Förbättrade användarinställningar** | Nu kan du konfigurera ytterligare inställningar på användarnivå (i [!UICONTROL Components] > [!UICONTROL Preferences]). När du anger användarinställningar spänner markeringarna över flera projekt, tabeller och visualiseringar. Sidan Inställningar innehåller nu följande nya flikar som alla innehåller många nya konfigurationsalternativ:<ul><li>Frihandstabell</li><li>Visualiseringar>/li></ul>. Fler inställningar finns nu på **[!UICONTROL General]** och **[!UICONTROL Project]** -tabbar.<p>Tidigare var många av dessa inställningar endast konfigurerbara för enskilda projekt, tabeller och visualiseringar. [Läs mer](/help/analysis-workspace/user-preferences.md) | Ej tillämpligt | 11 januari 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Korrigeringar
 
-* Ett problem har korrigerats där de senaste MacOS-versionerna felaktigt namngavs som &quot;Macintosh&quot;. Med den här korrigeringen börjar OS-dimensionen använda versionsnumrering från&quot;MacOS&quot;, med början från MacOS 11. (AN-301834)
-
-### Andra korrigeringar
-
-AN-302367; AN-302562; AN-304036
+AN-287349; AN-301684; AN-305491; AN-305769; AN-307912
 
 ## Viktiga meddelanden för CJA-administratörer
 
 | Meddelande | Meddelande har lagts till eller uppdaterats | Beskrivning |
 | --- | --- | --- |
-| **Standardstartsida** | 29 september 2023 | The [ny landningssida](/help/getting-started/landing.md) som introducerades tidigare i år kommer att bli standardupplevelsen för alla användare i **Januari 2023**. Den aktuella sidan kommer att bli inaktuell och alla kommer att behöva använda den nya upplevelsen. |
-| **Förbättrad mappning av IP-till-geopositionering** | 29 september 2022 | Adobe för IP-sökningar, Digital Element, uppgraderar till en ny förbättrad datamängd (NetAcuity Pulse) för mappning från IP till geopositionering. Adobe Analytics har senarelagt antagandet av den nya datauppsättningen till **Januari 2023**. Den nya databasen kommer att vara mer exakt än tidigare versioner. Vissa IP-till-geo-mappningar kommer att ändras/förbättras när den nya databasen antas.<p> CJA-data som tillhandahålls via [!UICONTROL Analytics Source Connector] utnyttjar automatiskt de nya mappningarna. |
-| **[!UICONTROL Anomaly detection]autokörningsförhållanden** | 29 september 2022 | Idag [!UICONTROL Anomaly detection] körs automatiskt på alla kolumner i friformstabeller i tidsserier. För att säkerställa att data är tillgängliga för analys och att projekt läses in snabbare kommer Adobe att ändra hur [!UICONTROL Anomaly detection] kör automatiskt. Startar **26 oktober 2022**, körs avvikelseidentifiering bara automatiskt på den första måttkolumnen i en tabell. Du kan konfigurera kolumninställningar så att de körs [!UICONTROL Anomaly detection] på andra kolumner, om det behövs. |
+| **Förbättrad mappning av IP-till-geopositionering** | 29 september 2022 | Adobe för IP-sökningar, Digital Element, uppgraderar till en ny förbättrad datamängd (NetAcuity Pulse) för mappning från IP till geopositionering. Adobe Analytics har senarelagt antagandet av den nya datauppsättningen till **11 januari 2023**. Den nya databasen kommer att vara mer exakt än tidigare versioner. Vissa IP-till-geo-mappningar kommer att ändras/förbättras när den nya databasen antas.<p> CJA-data som tillhandahålls via [!UICONTROL Analytics Source Connector] utnyttjar automatiskt de nya mappningarna. |
 
 {style=&quot;table-layout:auto&quot;}
 
