@@ -4,9 +4,9 @@ title: Spara projekt
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: b35520d22fdd6ee39972e3500b3d6968c2dfeadd
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,22 @@ Så här sparar du ett projekt manuellt:
    | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
    | **[!UICONTROL Save as template]** | Spara projektet som en [egen mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
 
-   ![](assets/save-project.png)
-
 ## Spara automatiskt {#Autosave}
 
 Alla projekt i Analysis Workspace sparas automatiskt varannan minut på din dator. Detta inkluderar nyskapade projekt som ännu inte sparats manuellt.
 
 * **Nya projekt:** Även om nya projekt sparas automatiskt måste du spara varje nytt projekt manuellt första gången. Analysis Workspace uppmanar dig att spara nya projekt manuellt när du växlar till ett annat projekt, stänger webbläsarfliken och så vidare.
 
-   Om du av någon anledning oväntat förlorar åtkomsten till ett nyskapat projekt innan du sparar det manuellt, sparas en återställningsversion av ditt projekt på Analysis Workspace startsida i en mapp som kallas `Recovered Projects (Last 7 Days)`.
+   Om du av någon anledning oväntat förlorar åtkomsten till ett nyskapat projekt innan du sparar det manuellt, sparas en återställningsversion av ditt projekt på Analysis Workspace startsida i en mapp som kallas `Recovered Projects (Last 7 Days)`. Du måste återställa det återställda projektet och spara det manuellt på önskad plats.
 
-   ![](assets/recovered-folder.png)
+   Så här återställer du ett återskapat projekt:
+
+   1. Gå till [!UICONTROL **Återskapade projekt**] på Analysis Workspace landningssida.
+
+      ![](assets/recovered-folder.png)
+
+   1. Öppna projektet och spara det där du vill.
+
 
 * **Befintliga projekt:** Om du av någon anledning lämnar ett projekt med ändringar som ännu inte har sparats automatiskt uppmanas du att spara ändringarna eller ett varningsmeddelande visas.
 
@@ -54,7 +59,7 @@ Om du öppnar ytterligare ett projekt medan du arbetar med ett projekt som inneh
 
 Följande alternativ är tillgängliga:
 
-* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av ditt projekt med dina senaste ändringar.
+* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av projektet med dina senaste ändringar.
 * **Spara som:** Sparar de senaste ändringarna som ett nytt projekt. Det ursprungliga projektet sparas endast med de senaste automatiskt sparade ändringarna.
 * **Ignorera ändringar:** Ignorera de senaste ändringarna. De senaste automatiskt sparade ändringarna sparas i projektet.
 

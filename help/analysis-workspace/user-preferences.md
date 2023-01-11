@@ -4,7 +4,7 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
 source-wordcount: '2425'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Allmänna inställningar gäller för din CJA-upplevelse i webbläsaren.
 | --- | --- |
 | Landningssida | Välj vilken sida som ska visas som standardsida när du öppnar Adobe Analytics: <ul><li>Projektlista (standard)</li><li>Tomt projekt</li><li>Specifikt projekt valt från en lista</li></ul> |
 | Visa tips | Visar tips i en blå ruta i det nedre högra hörnet av Analysis Workspace. <p>Det här alternativet är aktiverat som standard.</p> |
-| <span class="preview">Komponenter som visas i grupper med vänster skena</span> | Välj hur många av varje komponent som ska visas på komponentmenyn i den vänstra listen. <p>Om du väljer 0 är komponenten inte längre tillgänglig från den vänstra listen på arbetsytorna.</p><p>Som standard visas fem komponenter för vart och ett av följande:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponenter - översikt](/help/components/overview.md).</p> |
+| Komponenter som visas i grupper med vänster skena | Välj hur många av varje komponent som ska visas på komponentmenyn i den vänstra listen. <p>Om du väljer 0 är komponenten inte längre tillgänglig från den vänstra listen på arbetsytorna.</p><p>Som standard visas fem komponenter för vart och ett av följande:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponenter - översikt](/help/components/overview.md).</p> |
 
 ## Projektinställningar
 
@@ -53,7 +53,7 @@ Klicka på de länkade inställningsrubrikerna för mer information och kontext 
 | --- | --- | --- |
 | **Visa** |  |  |
 |  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden av den vänstra listen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
-|  | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj den visualiseringsfärgpalett som används i Analysis Workspace. <ul><li>Paletter som tillhandahålls av Adobe (standard)</li><li><span class="preview">Paletten Villkorsstyrd formatering </span></li><li><span class="preview">Paletten Upp/ned (avvikande)</span><li>Egna paletter</li></ul> |
+|  | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj den visualiseringsfärgpalett som används i Analysis Workspace. <ul><li>Paletter som tillhandahålls av Adobe (standard)</li><li>Paletten Villkorsstyrd formatering </li><li>Paletten Upp/ned (avvikande)<li>Egna paletter</li></ul> |
 | **Data** |  |  |
 |  | [Rapportsvit](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Välj var tabeller och visualiseringar ska hämta sina data. <ul><li>Senaste (standard)</li><li>Specifik rapportsvit som valts i en lista</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Anpassade intervall</li></ul> |
