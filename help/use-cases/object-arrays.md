@@ -4,16 +4,16 @@ description: Lär dig hur CJA rapporterar om datahierarkier.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 # Använda arrayer med objekt
 
-Vissa plattformsscheman kan ha objektarrayer. Ett av de vanligaste exemplen är en varukorg som innehåller flera produkter. Varje produkt har ett namn, SKU, kategori, pris, kvantitet och andra dimensioner som du vill spåra. Alla de här ansiktena har olika krav, men måste alla få plats i samma träff.
+Vissa plattformsscheman kan ha objektarrayer. CJA stöder inmatning och rapportering av objektarrayer i händelse-, uppslags- och profildata. Ett av de vanligaste exemplen är en varukorg som innehåller flera produkter. Varje produkt har ett namn, SKU, kategori, pris, kvantitet och andra dimensioner som du vill spåra. Alla de här ansiktena har olika krav, men måste alla få plats i samma träff.
 
 I tidigare versioner av Adobe Analytics utfördes den här funktionen med `products` variabel. Det var en sammanfogad sträng avgränsad med semikolon (`;`) för att separera olika delar av en produkt, medan kommatecken (`,`) avgränsade produkter. Den var den enda variabeln med begränsat stöd för&quot;objektarrayer&quot;. Multivärdesvariabler som listvariabler kan ha stöd för motsvarande arrayer, men de kan inte ha stöd för &quot;objektarrayer&quot;. CJA bygger vidare på detta koncept genom att ha stöd för godtyckligt djupa hierarkier i en enda datarad, en funktion som inte finns i någon tidigare version av Adobe Analytics.
 
