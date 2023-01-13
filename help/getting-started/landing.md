@@ -4,9 +4,9 @@ title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
+source-git-commit: 88f38de837a23f9b0833c5c6b534b3ed567207a6
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,18 @@ Landningssidan för högdagrar i Customer Journey Analytics [!DNL Analysis Works
 | Anpassa tabellikon | Väljer vilka kolumner som ska visas i tabellen. Om du vill lägga till eller ta bort kolumner från listan med projekt klickar du på kolumnikonen (![Alla landningar](assets/select-column.png) ) i det övre högra hörnet och markera eller avmarkera sedan kolumnrubriker. |
 | VISA: Mappar och projekt eller alla projekt | Ändrar visningsinställningen för tabellen så att mappar och projekt visas enligt mappordningen **eller** visa alla dina projekt i en oordnad lista. |
 | &lt; (Bakåt-knappen) | Returnerar dig till den senaste konfigurationen av landningssidan i ett Workspace-projekt. Sidkonfigurationen som du hade när du lämnade landningssidan kommer att finnas kvar när du kommer tillbaka. |
+
+### Borttagning av Project Manager-sidan {#deprecate-pm-page}
+
+I och med lanseringen av den nya landningssidan har vi ersatt Project Manager som listats under Components Manager. Den nya landningssidan hanterar alla funktioner på den gamla Project Manager-sidan med mera.
+
+Ett vanligt användningsexempel för Project Manager-sidan var att visa alla dina projekt. Om du vill visa alla dina projekt på den nya landningssidan med filterspåret väljer du **ANDRA FILTER** och sedan markera **Visa alla**.
+
+![Andra filter](assets/other-filters.png)
+
+Om du arbetar i vyn &quot;Mappar och projekt&quot; visas ett modalt popup-fönster där du får frågan om du vill växla till vyn &quot;Alla projekt&quot;, vilket gör det enklare att visa alla dina projekt utanför de mappar där de är organiserade.   Välj **Växla till vyn&quot;Alla projekt&quot;** för att bättre visa alla projekt du har tillgång till.
+
+![Växla till alla projekt](assets/switch-all-projects-view.png)
 
 ## Navigera på fliken Utbildning {#navigate-learning}
 
