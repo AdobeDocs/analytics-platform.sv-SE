@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 49af5869f5aa3b8915b9fb36edb16abe3a3cf34b
+source-git-commit: 96e374440fda61665a45797483eadab930c48c10
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Name] | Publiken. |
    | [!UICONTROL Tags] | Alla taggar som du vill ska tilldelas till målgruppen för organisatoriska ändamål. Du kan använda en befintlig tagg eller ange en ny. |
    | [!UICONTROL Description] | Lägg till en bra beskrivning av målgruppen för att skilja den från andra. |
-   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För alla uppdateringsfrekvenser finns det en gräns på 75 eller 150 målgrupper, beroende på ditt CJA-berättigande.</li></ul> |
+   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För alla uppdateringsfrekvenser finns det en gräns på 75 till 150 målgrupper, beroende på ditt CJA-berättigande.</li></ul> |
    | Utgångsdatum | När publiken slutar uppdatera. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan målgruppen förfaller. |
    | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max 90 dagar. |
    | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
@@ -84,13 +84,37 @@ Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
 
 ![](assets/audiences-aep.png)
 
-## Vad händer om en användare inte längre är medlem i en publik i CJA? {#no-member}
+## Vanliga frågor
+
+Frågor och svar om publikens publicering.
+
+### Vad händer om en användare inte längre är medlem i en publik i CJA?
 
 I det här fallet skickas en exit-händelse till Experience Platform från CJA.
 
-## Vad händer om du tar bort en publik i CJA? {#delete}
+### Vad händer om du tar bort en publik i CJA? {#delete}
 
 När en CJA-publik tas bort visas den inte längre i användargränssnittet för Experience Platform. Inga profiler som är kopplade till den målgruppen tas emellertid bort i Platform.
+
+### Om det inte finns någon motsvarande profil i RTCDP, kommer en ny profil att skapas?
+
+Ja, det kommer det.
+
+### Skickar CJA målgruppsdata som pipeline-händelser eller en platt fil som också går till Data Lake?
+
+Data strömmas till RTCP via pipeline och dessa data samlas också in i en systemdatauppsättning i datasjön.
+
+### Vilka identiteter skickar CJA?
+
+Vilka identitets-/namnområdespar som användes i anslutningsinställningarna. Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
+
+### Vad väljs som primär identitet?
+
+Se ovan. Vi skickar bara en identitet per CJA-person.
+
+### Bearbetar RTCP även CJA-meddelanden? Kan CJA lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?
+
+Nej. Vi skickar bara en identitet per person, så det finns inga diagramkanter som RTCP kan använda.
 
 ## Nästa steg
 
