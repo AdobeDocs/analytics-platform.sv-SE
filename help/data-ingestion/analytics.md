@@ -4,7 +4,7 @@ description: Förklara hur man importerar data från traditionella Adobe Analyti
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -125,7 +125,7 @@ Så här skapar du en anslutning:
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
-      ![Konfigurera datauppsättningar](./assets/cja-connections-3.png)
+      ![Konfigurera datauppsättningar](./assets/cja-connections-3a.png)
 
    - Välj **[!UICONTROL Add datasets]**.
    Välj **[!UICONTROL Save]**.
