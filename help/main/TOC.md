@@ -9,10 +9,10 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
+source-git-commit: eb7b53816fcc325f6a72ae145c8cf8a633375578
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 29%
+source-wordcount: '858'
+ht-degree: 28%
 
 ---
 
@@ -47,6 +47,14 @@ ht-degree: 29%
       + [STÖD, ECID, AACUSTOMID och Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Borttagningskonsekvenser](../getting-started/cja-deletion.md)
    + [CJA-ordlista](../getting-started/cja-glossary.md)
++ Dataintag {#cja-data-ingestion}
+   + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
+   + Infoga och använda snabbstartguider{#ingest-use-guides}
+      + [Adobe Analytics](../data-ingestion/analytics.md)
+      + [Adobe Experience Platform Web SDK och Edge Network](../data-ingestion/aepwebsdk.md)
+      + [Batchdata](../data-ingestion/batch.md)
+      + [Strömmande data](../data-ingestion/streaming.md)
+      + [Källkopplingar](../data-ingestion/sources.md)
 + Anslutningar {#cja-connections}
    + [Anslutningar - översikt](../connections/overview.md)
    + [Skapa en anslutning](../connections/create-connection.md)
@@ -251,7 +259,6 @@ ht-degree: 29%
       + [Konfigurera strömmande Google Analytics-data i plattformen](../use-cases/ga/streaming.md)
       + [Rapport om Google Analytics data i CJA](../use-cases/ga/report.md)
    + Intag av data {#data-ingestion}
-      + [Användningsfall vid datainhämtning](../use-cases/data-ingestion/data-ingestion.md)
       + [Infoga Marketo Engage data i AEP och rapportera i CJA](../use-cases/data-ingestion/marketo.md)
       + [Ingest AEP-målgrupper into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datavyer {#data-views}

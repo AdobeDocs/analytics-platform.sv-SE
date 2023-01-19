@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 8%
@@ -124,7 +124,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | 2 november 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) sida. |
 | November 2020 | Lagt till innehåll på [ta bort begränsningar för bakgrundsfyllning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) för anslutningar. |
 | 7 oktober 2020 | Lagt till ett ämne [kombinerade händelsedatamängder](/help/connections/combined-dataset.md). |
-| 15 september 2020 | Lagt till ett ämne [dataintag](/help/use-cases/data-ingestion/data-ingestion.md). |
+| 15 september 2020 | Lagt till ett ämne [dataintag](/help/data-ingestion/data-ingestion.md). |
 | 2 september 2020 | Uppdaterat avsnitt om [användarbehörigheter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). |
 | 7 augusti 2020 | Nytt ämne [Användningsexempel B2B - sökdatauppsättning](/help/use-cases/b2b/b2b.md) tillagd. |
 | Juli 2020 | Lagt till information om [Identitetskarta, alternativ för person-ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html). |
