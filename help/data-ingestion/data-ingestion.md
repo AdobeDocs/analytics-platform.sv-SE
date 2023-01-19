@@ -3,17 +3,17 @@ title: Översikt över dataöverföring
 description: Förstå olika sätt att importera data till Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5de8c0daaa7eea0a9ab993d256e2b0a14f37301e
+exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
 
-
 # Översikt över dataöverföring
 
-Du har ett antal alternativ när det gäller att hämta in data till Customer Journey Analytics. Vissa av dem antar att du vill flytta traditionella Adobe Analytics-data över, vissa av dem antar att du använder data som är direkt inkapslade i Adobe Experience Platform.
+Det finns ett antal alternativ när du ska importera data till Customer Journey Analytics. Vissa av dem utgår ifrån att man vill flytta traditionella Adobe Analytics-data över dem, vissa av dem utgår ifrån att man använder data som är insamlade i Adobe Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -24,9 +24,21 @@ Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i
 
 ![Customer Journey Analytics](./assets/cja-architecture.png)
 
-Datauppsättningen i arkitekturen ovan kan komma från flera olika källor: batchdata, strömmande data, data från en pågående Adobe Analytics-distribution, data från spårning av din webbplats/mobilapp med Adobe Experience Platform Web/Mobile SDK eller data från en tredjepartsleverantör som Adobe tillhandahåller en källanslutning för. Och du kan ha många av dessa datauppsättningar.
+Datauppsättningen i arkitekturen ovan kan komma från olika källor:
 
-I det här avsnittet av dokumentationen finns snabbstartsguider för ett antal scenarier.
+- batchdata,
+
+- strömmande data,
+
+- data från en pågående Adobe Analytics-driftsättning,
+
+- data från spårning av din webbplats/mobilapp med Adobe Experience Platform Web/Mobile SDK, eller
+
+- data som kommer från en tredjepartsleverantör av data för vilken Adobe tillhandahåller en källanslutning.
+
+Och du kan ha många av dessa datauppsättningar.
+
+I det här avsnittet av dokumentationen finns snabbstartsguider för olika scenarier.
 
 ## Importera och använda data från traditionella Adobe Analytics
 
@@ -57,4 +69,3 @@ Se [Importera och använda strömmande data](./streaming.md) för mer informatio
 Du har data tillgängliga från en källa som stöds av en källkoppling. Källanslutningar är konfigurerbara konfigurationer som gör att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över källkopplingar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data med hjälp av källkopplingar](./sources.md) för mer information.
-

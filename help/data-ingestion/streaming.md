@@ -3,13 +3,13 @@ title: Importera och använda strömmande data
 description: Förklara hur du importerar och använder strömmande data i Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1841'
 ht-degree: 0%
 
 ---
-
 
 # Importera och använda strömmande data
 
@@ -23,14 +23,14 @@ För att uppnå detta måste du:
 
 - **Konfigurera en anslutning** i Customer Journey Analytics. Den här anslutningen bör (åtminstone) innehålla din Adobe Experience Platform-datauppsättning.
 
-- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mätvärden och dimensioner som du vill använda i Analysis Workspace.
+- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mått och dimensioner som du vill använda i Analysis Workspace.
 
 - **Konfigurera ett projekt** i Customer Journey Analytics för att skapa rapporter och visualiseringar.
 
 
 >[!NOTE]
 >
->Det här är en förenklad guide om hur man importerar strömmande data till Adobe Experience Platform och använder dem i Customer Journey Analytics.  Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Det här är en förenklad guide om hur man importerar strömmande data till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 ## Konfigurera ett schema och en datauppsättning
 
@@ -42,7 +42,7 @@ Alla data som importeras till Adobe Experience Platform måste överensstämma m
 
 ### Konfigurera ett schema
 
-För den här snabbstarten antar vi att du vill samla in vissa lojalitetsdata, t.ex. lojalitets-ID, förmånspoäng och lojalitetsstatus.
+För den här snabbstarten vill du samla in en del lojalitetsdata, till exempel lojalitets-ID, förmånspoäng och lojalitetsstatus.
 Därför måste du först definiera ett schema som modellerar dessa data.
 
 Så här konfigurerar du ditt schema:
@@ -146,7 +146,7 @@ Så här konfigurerar du datauppsättningen:
 
 7. Välj **[!UICONTROL Profile]** byt.
 
-   Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen har aktiverats berikas kundprofiler i realtid med inkapslade data.
+   Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen är aktiverad berikas kundprofiler i realtid med inkapslade data.
 
    >[!IMPORTANT]
    >
@@ -159,7 +159,7 @@ Se [Användargränssnittshandbok för datauppsättningar](https://experienceleag
 
 ## Konfigurera en HTTP API-direktuppspelningsanslutning
 
-Källprogrammet strömmar data som överensstämmer med det schema du skapade och ser ut som.
+Källprogrammet strömmar data som överensstämmer med det schema som du skapade och ser ut som.
 
 ```json
 {
@@ -183,7 +183,7 @@ Källprogrammet strömmar data som överensstämmer med det schema du skapade oc
 }
 ```
 
-Om du vill strömma dessa data till den datauppsättning som vi skapade måste du definiera en slutpunkt för direktuppspelning som data ska skickas till. Det gör du genom att definiera en HTTP API-källanslutning.
+Om du vill strömma dessa data till den datauppsättning som du skapade måste du definiera en direktuppspelningsslutpunkt för de data som ska skickas till. Det gör du genom att definiera en HTTP API-källanslutning.
 
 Så här skapar du en HTTP API-källkoppling:
 
@@ -199,7 +199,7 @@ Så här skapar du en HTTP API-källkoppling:
 
    Ange ett namn och en beskrivning för HTTP API-anslutningen.
 
-   Välj **[!UICONTROL XDM compatible]** för att ange att de data du ska strömma är kompatibla med ett befintligt XDM-schema.
+   Välj **[!UICONTROL XDM compatible]** för att ange att dataströmmen är kompatibel med ett befintligt XDM-schema.
 
    Välj **[!UICONTROL Connect to source]**. När anslutningen är klar visas [!UICONTROL Connected].
 
@@ -209,7 +209,7 @@ Så här skapar du en HTTP API-källkoppling:
 
 5. I [!UICONTROL Dataflow detail] steg i [!UICONTROL Add data] skärm:
 
-   Välj **[!UICONTROL Existing dataset]** väljer du din datauppsättning i datauppsättningslistan och ger din [!UICONTROL Dataflow name].
+   Välj **[!UICONTROL Existing dataset]**, välj datauppsättningen i datauppsättningslistan och namnge [!UICONTROL Dataflow name].
 
    ![Dataflödesdetaljer](./assets/httpapi-dataflowdetail.png)
 
@@ -221,7 +221,7 @@ Så här skapar du en HTTP API-källkoppling:
 
    Välj **[!UICONTROL Finish]**.
 
-7. Du kommer att se den slutliga definitionen av slutpunkten för HTTP API-direktuppspelning.
+7. Du ser den slutliga definitionen av slutpunkten för HTTP API-direktuppspelning.
 
    ![Slutpunkt för HTTP API-direktuppspelning](./assets/httpapi-streamingendpoint.png)
 
@@ -246,15 +246,15 @@ Så här skapar du en anslutning:
 
    Namnge och beskriva anslutningen i [!UICONTROL Connection Settings].
 
-   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Avergage number of daily events] lista.
+   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Average number of daily events] lista.
 
    ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
-   Välj **[!UICONTROL Add datsets]**.
+   Välj **[!UICONTROL Add datasets]**.
 
    I [!UICONTROL Select datasets] steg in [!UICONTROL Add datasets]:
 
-   - Markera den datauppsättning du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
+   - Välj den datauppsättning som du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
 
       ![Lägg till datauppsättningar](./assets/cja-connections-2.png)
 
@@ -265,7 +265,7 @@ Så här skapar du en anslutning:
 
       - Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägg sedan till en beskrivning av datakällan.
+      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
@@ -335,13 +335,12 @@ Så här skapar du ditt projekt:
 
    ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
 
-5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som också ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
    ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
 
-Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualisering och paneler.
+Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
 
 >[!SUCCESS]
 >
 >Du har slutfört alla steg. Börja med att definiera vilka lojalitetsdata som du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform, så konfigurerade du en HTTP API-källanslutning för att strömma lojalitetsdata direkt till datauppsättningen. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
-

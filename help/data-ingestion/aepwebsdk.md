@@ -1,15 +1,15 @@
 ---
 title: Importera data via Adobe Experience Platform Web SDK och Edge Network
-description: Förklara hur man importerar data till kundens reseanalys via Adobe Experience Platform Web SDK och Edge Network
+description: Förklara hur man importerar data till Customer Journey Analytics via Adobe Experience Platform Web SDK och Edge Network
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3273'
 ht-degree: 0%
 
 ---
-
 
 # Importera data via Adobe Experience Platform Web SDK och Edge Network
 
@@ -19,21 +19,21 @@ För att uppnå detta måste du:
 
 - **Konfigurera ett schema och en datauppsättning** i Adobe Experience Platform för att definiera modellen (schemat) för de data som du vill samla in och var data (datauppsättningen) ska samlas in.
 
-- **Konfigurera ett datastream** för att konfigurera Adobe Experience Platform Edge Network så att insamlade data dirigeras till datauppsättningen som du konfigurerade i Adobe Experience Platform.
+- **Konfigurera en datastream** för att konfigurera Adobe Experience Platform Edge Network så att insamlade data dirigeras till datauppsättningen som du konfigurerade i Adobe Experience Platform.
 
-- **Använd taggar** för att enkelt konfigurera regler och dataelement mot data i ditt datalager på din webbplats och se till att data skickas till den datastream som är konfigurerad på Adobe Experience Platform Edge Network.
+- **Använd taggar** för att enkelt konfigurera regler och dataelement mot data i ditt datalager på din webbplats. Kontrollera sedan att data skickas till den dataström som är konfigurerad på Adobe Experience Platform Edge Network.
 
 - **Distribuera och validera**. Ha en miljö där du kan iterera på taggutvecklingen och när allt har validerats publicerar du det direkt i produktionsmiljön.
 
 - **Konfigurera en anslutning** i Customer Journey Analytics. Den här anslutningen bör (åtminstone) innehålla din Adobe Experience Platform-datauppsättning.
 
-- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mätvärden och dimensioner som du vill använda i Analysis Workspace.
+- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mått och dimensioner som du vill använda i Analysis Workspace.
 
 - **Konfigurera ett projekt** i Customer Journey Analytics för att skapa rapporter och visualiseringar.
 
 >[!NOTE]
 >
->Det här är en förenklad guide om hur du importerar data som samlats in från din webbplats till Adobe Experience Platform och använder dem i Customer Journey Analytics.  Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Det här är en förenklad guide om hur du importerar data som samlats in från din webbplats till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera ett schema och en datauppsättning
@@ -46,7 +46,7 @@ Alla data som importeras till Adobe Experience Platform måste överensstämma m
 
 ### Konfigurera ett schema
 
-Du vill spåra minimala data från profiler som besöker webbplatsen, t.ex. sidnamn, identifiering osv.
+Du vill spåra minimala data från profiler som besöker webbplatsen, till exempel sidnamn och identifiering.
 Därför måste du först definiera ett schema som modellerar dessa data.
 
 Så här konfigurerar du ditt schema:
@@ -94,7 +94,7 @@ Så här konfigurerar du ditt schema:
 
    ![Identifieringsobjekt](./assets/identification-field.png)
 
-   Detta lägger till identifieringsfunktioner i schemat. I ditt fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din besökares identifiering (t.ex. kund-ID, lojalitets-ID).
+   Detta lägger till identifieringsfunktioner i schemat. I ditt fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din besökares identifiering (till exempel kund-ID, lojalitets-ID).
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
@@ -174,7 +174,7 @@ Så här konfigurerar du datauppsättningen:
 
 7. Välj **[!UICONTROL Profile]** byt.
 
-   Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen har aktiverats berikas kundprofiler i realtid med inkapslade data.
+   Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen är aktiverad berikas kundprofiler i realtid med inkapslade data.
 
    >[!IMPORTANT]
    >
@@ -184,7 +184,7 @@ Så här konfigurerar du datauppsättningen:
 
 Se [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html) om du vill ha mer information om hur du visar, förhandsgranskar, skapar, tar bort en datauppsättning. Och hur man aktiverar en datauppsättning för kundprofil i realtid.
 
-## Konfigurera ett datastream
+## Konfigurera en datastream
 
 En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När du samlar in data med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
 
@@ -245,7 +245,7 @@ Välj den nyligen skapade taggen i listan över [!UICONTROL Tag Properties] för
 
 #### **Tillägg**
 
-Du måste lägga till tillägget Adobe Platform Web SDK i taggen för att vara säker på att du kan skicka data till Adobe Experience Platform (via din datastream).
+Lägg till Adobe Platform Web SDK-tillägget i taggen så att du kan skicka data till Adobe Experience Platform (via din datastream).
 
 Så här skapar och konfigurerar du Adobe Experience Platform Web SDK-tillägget:
 
@@ -265,7 +265,7 @@ Så här skapar och konfigurerar du Adobe Experience Platform Web SDK-tillägget
 
 Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) för mer information.
 
-Du vill också konfigurera Experience Cloud ID-tjänsttillägget så att du enkelt kan använda Experience Cloud ID-tjänsten. Experience Cloud ID-tjänsten identifierar besökare i alla Adobe Experience Cloud-lösningar.
+Du vill också konfigurera Experience Cloud ID-tjänsttillägget så att du enkelt kan använda Experience Cloud-ID:t. Experience Cloud ID-tjänsten identifierar besökare i alla Adobe Experience Cloud-lösningar.
 
 Så här skapar och konfigurerar du tjänsttillägget Experience Cloud ID:
 
@@ -295,7 +295,7 @@ Så här definierar du ett dataelement för sidnamn:
 
 3. I [!UICONTROL Create Data Element] dialog:
 
-   - Ge dataelementet ett namn, t.ex. `Page Name`.
+   - Ge dataelementet ett namn, till exempel `Page Name`.
 
    - Välj **[!UICONTROL Core]** från [!UICONTROL Extension] lista.
 
@@ -305,7 +305,7 @@ Så här definierar du ett dataelement för sidnamn:
 
       ![Skapa datumelement med sidinformation](./assets/create-dataelement-1.png)
 
-      Du kan också ha använt värdet från en variabel i datalagret, t.ex. `pageName` och [!UICONTROL JavaScript Variable] dataelementtyp för att definiera dataelementet.
+      Du kan också ha använt värdet från en variabel i datalagret, till exempel `pageName` och [!UICONTROL JavaScript Variable] dataelementtyp för att definiera dataelementet.
 
       ![Skapa dataelement med JavaScript-variabel](./assets/create-dataelement-2.png)
 
@@ -321,7 +321,7 @@ Så här definierar du ett ECID-dataelement:
 
 3. I [!UICONTROL Create Data Element] dialog:
 
-   - Ge dataelementet ett namn, t.ex. `ECID`.
+   - Ge dataelementet ett namn, till exempel `ECID`.
 
    - Välj **[!UICONTROL Experience Cloud ID Service]** från [!UICONTROL Extension] lista.
 
@@ -331,7 +331,7 @@ Så här definierar du ett ECID-dataelement:
 
    - Välj **[!UICONTROL Save]**.
 
-Slutligen vill du nu mappa något av dina specifika dataelement till det schema du definierade tidigare. Du måste definiera ett annat dataelement som tillhandahåller en representation av ditt XDM-schema.
+Slutligen vill du nu mappa något av dina specifika dataelement till det schema du definierade tidigare. Du definierar ett annat dataelement som tillhandahåller en representation av XDM-schemat.
 
 Så här definierar du ett XDM-objektdataelement:
 
@@ -341,7 +341,7 @@ Så här definierar du ett XDM-objektdataelement:
 
 3. I [!UICONTROL Create Data Element] dialog:
 
-   - Ge dataelementet ett namn, t.ex. `XDM - Page View`.
+   - Ge dataelementet ett namn, till exempel `XDM - Page View`.
 
    - Välj **[!UICONTROL Adobe Experience Platform Web SDK]** från [!UICONTROL Extension] lista.
 
@@ -351,7 +351,7 @@ Så här definierar du ett XDM-objektdataelement:
 
    - Välj ditt schema från [!UICONTROL Schema] lista.
 
-   - Mappa `identification > core > ecid` -attribut, som definieras i ditt schema, till ECID-dataelementet. Välj ikonen för att enkelt välja ECID-dataelementet från din lista med dataelement.
+   - Mappa `identification > core > ecid` -attribut, som definieras i ditt schema, till ECID-dataelementet. Välj cylinderikonen för att enkelt välja ECID-dataelementet från listan med dataelement.
 
       ![Välj ECID-dataelement](./assets/pick-ecid-dataelement.png)
 
@@ -377,7 +377,7 @@ Så här definierar du en regel:
 
 3. I [!UICONTROL Create Rule] dialog:
 
-   - Namnge regeln, t.ex. `Page View`.
+   - Namnge regeln, till exempel `Page View`.
 
    - Välj **[!UICONTROL + Add]** under [!UICONTROL Events].
 
@@ -400,7 +400,7 @@ Så här definierar du en regel:
 
       - Välj **[!UICONTROL web.webpagedetails.pageViews]** från [!UICONTROL Type] lista.
 
-      - Välj ikonen för linjaler bredvid  [!UICONTROL XDM data] och välj **[!UICONTROL XDM - Page View]** från listan med dataelement.
+      - Markera cylinderikonen bredvid  [!UICONTROL XDM data] och välj **[!UICONTROL XDM - Page View]** från listan med dataelement.
 
          ![Regel - åtgärdskonfiguration](./assets/action-pageview-xdm.png)
 
@@ -417,7 +417,7 @@ Så här definierar du en regel:
 
 Detta är bara ett exempel på hur man definierar en regel som skickar XDM-data, som innehåller värden från andra dataelement, till Adobe Experience Platform.
 
-Du kan använda regler på flera olika sätt i taggen för att hantera variabler (och använda dataelementen).
+Du kan använda regler på olika sätt i taggen för att hantera variabler (med dataelementen).
 
 Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) för mer information.
 
@@ -431,7 +431,7 @@ Så här skapar och publicerar du en tagg:
 
 2. Välj **[!UICONTROL Select a working library]**, följt av **[!UICONTROL Add Library…]**.
 
-3. I [!UICONTROL Create Libray] dialog:
+3. I [!UICONTROL Create Library] dialog:
 
    - Namnge biblioteket.
 
@@ -443,13 +443,13 @@ Så här skapar och publicerar du en tagg:
 
    - Välj **[!UICONTROL Save & Build to Development]**.
 
-   Detta sparar och skapar taggen för utvecklingsmiljön. En grön punkt visar att taggen har skapats på utvecklingsmiljön.
+   Detta sparar och skapar taggen för din utvecklingsmiljö. En grön punkt visar att taggen har skapats på utvecklingsmiljön.
 
 4. Du kan välja **[!UICONTROL ...]** för att återskapa biblioteket eller flytta biblioteket till en staging- eller produktionsmiljö.
 
    ![Publicera - Bygg bibliotek](./assets/build-library.png)
 
-Adobe Experience Platform Tags hanterar enkla till komplexa publiceringsarbetsflöden som passar din användning av Adobe Experience Platform Web SDK.
+Adobe Experience Platform Tags stöder enkla till komplexa publiceringsarbetsflöden som passar din användning av Adobe Experience Platform Web SDK.
 
 Se [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) för mer information.
 
@@ -500,15 +500,15 @@ Så här skapar du en anslutning:
 
    Namnge och beskriva anslutningen i [!UICONTROL Connection Settings].
 
-   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Avergage number of daily events] lista.
+   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Average number of daily events] lista.
 
    ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
-   Välj **[!UICONTROL Add datsets]**.
+   Välj **[!UICONTROL Add datasets]**.
 
    I [!UICONTROL Select datasets] steg in [!UICONTROL Add datasets]:
 
-   - Markera den datauppsättning du skapade tidigare (`Example dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
+   - Välj den datauppsättning som du skapade tidigare (`Example dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
 
       ![Lägg till datauppsättningar](./assets/cja-connections-2b.png)
 
@@ -519,7 +519,7 @@ Så här skapar du en anslutning:
 
       - Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägg sedan till en beskrivning av datakällan.
+      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
@@ -589,12 +589,12 @@ Så här skapar du ditt projekt:
 
    ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
 
-5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som också ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
    ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
 
-Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualisering och paneler.
+Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastam i Edge Network för att säkerställa att data kan vidarebefordras till den datauppsättningen. Sedan definierade och distribuerade du taggen som innehåller tilläggen (Adobe Experience Platform Web SDK, Experience Cloud ID Service), dataelement och regler för att hämta data från din webbplats och skicka dessa data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att kunna använda dina webbplatsspårningsdata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
+>Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastam i Edge Network för att säkerställa att data kan vidarebefordras till den datauppsättningen. Sedan definierade och distribuerade du taggen som innehåller tilläggen (Adobe Experience Platform Web SDK, Experience Cloud ID Service), dataelement och regler för att hämta data från webbplatsen och skicka dessa data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda data för webbplatsspårning och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.

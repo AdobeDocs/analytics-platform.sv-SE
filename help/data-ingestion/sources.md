@@ -3,13 +3,13 @@ title: Importera och använda data med hjälp av källkopplingar
 description: Förklara hur du importerar och använder data med hjälp av källanslutningar i Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 813d3213-86b3-431a-821c-174e5e36d032
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1807'
 ht-degree: 0%
 
 ---
-
 
 # Importera och använda data med hjälp av källkopplingar.
 
@@ -23,7 +23,7 @@ För att uppnå detta måste du:
 
 - **Konfigurera en anslutning** i Customer Journey Analytics. Den här anslutningen bör (åtminstone) innehålla din Adobe Experience Platform-datauppsättning.
 
-- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mätvärden och dimensioner som du vill använda i Analysis Workspace.
+- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mått och dimensioner som du vill använda i Analysis Workspace.
 
 - **Konfigurera ett projekt** i Customer Journey Analytics för att skapa rapporter och visualiseringar.
 
@@ -31,7 +31,7 @@ För att uppnå detta måste du:
 
 >[!NOTE]
 >
->Det här är en förenklad guide om hur du importerar data med en källanslutning till Adobe Experience Platform och använder den i Customer Journey Analytics.  Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Det här är en förenklad guide om hur du importerar data med en källanslutning till Adobe Experience Platform och använder den i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera ett schema och en datauppsättning
@@ -44,7 +44,7 @@ Alla data som importeras till Adobe Experience Platform måste överensstämma m
 
 ### Konfigurera ett schema
 
-För den här snabbstarten antar vi att du vill samla in vissa lojalitetsdata, t.ex. lojalitets-ID, förmånspoäng och lojalitetsstatus.
+För den här snabbstarten vill du samla in en del lojalitetsdata, till exempel lojalitets-ID, förmånspoäng och lojalitetsstatus.
 Därför måste du först definiera ett schema som modellerar dessa data.
 
 Så här konfigurerar du ditt schema:
@@ -148,7 +148,7 @@ Så här konfigurerar du datauppsättningen:
 
 7. Välj **[!UICONTROL Profile]** byt.
 
-   Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen har aktiverats berikas kundprofiler i realtid med inkapslade data.
+   Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen är aktiverad berikas kundprofiler i realtid med inkapslade data.
 
    >[!IMPORTANT]
    >
@@ -173,13 +173,13 @@ Så här konfigurerar du en källkoppling:
 
    - **[!UICONTROL Select data]**: Du väljer de källdata som du vill importera.
 
-   - **[!UICONTROL Dataflow detai]**: Du anger ytterligare information om dataflödet, dvs. namn och vilken datauppsättning som ska användas.
+   - **[!UICONTROL Dataflow detail]**: Du anger ytterligare information om dataflödet, dvs. namn och vilken datauppsättning som ska användas.
 
-   - **[!UICONTROL Mapping]**: Du mappar inkommande källdatafält till attribut i det schema som är associerat med den datamängd du valde.
+   - **[!UICONTROL Mapping]**: Du mappar inkommande källdatafält till attribut i det schema som är associerat med den datamängd som du valde.
 
    - **[!UICONTROL Scheduling]**: Om det är tillgängligt kan du schemalägga inmatningen av data.
 
-   - **[!UICONTROL Review]**: Innan du slutför konfigurationen granskar du definitionen av källkopplingen.
+   - **[!UICONTROL Review]**: En granskning av definitionen av källkopplingen visas.
 
    Varje koppling ger detaljerad dokumentation.
 
@@ -215,15 +215,15 @@ Så här skapar du en anslutning:
 
    Namnge och beskriva anslutningen i [!UICONTROL Connection Settings].
 
-   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Avergage number of daily events] lista.
+   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Average number of daily events] lista.
 
    ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
-   Välj **[!UICONTROL Add datsets]**.
+   Välj **[!UICONTROL Add datasets]**.
 
    I [!UICONTROL Select datasets] steg in [!UICONTROL Add datasets]:
 
-   - Markera den datauppsättning du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
+   - Välj den datauppsättning som du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
 
       ![Lägg till datauppsättningar](./assets/cja-connections-2.png)
 
@@ -234,7 +234,7 @@ Så här skapar du en anslutning:
 
       - Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägg sedan till en beskrivning av datakällan.
+      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
@@ -304,12 +304,12 @@ Så här skapar du ditt projekt:
 
    ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
 
-5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som också ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
    ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
 
-Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualisering och paneler.
+Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Börja med att definiera vilka lojalitetsdata du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform, och du konfigurerade rätt källanslutning för att ge dig lojalitetsdata. Du har definierat en anslutning i Customer Journey Analytics för att använda inmatade lojalitetsdata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
+>Du har slutfört alla steg. Börja med att definiera vilka lojalitetsdata du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform, och du konfigurerade rätt källanslutning för att ge dig lojalitetsdata. Du definierade en anslutning i Customer Journey Analytics för att använda inkapslade lojalitetsdata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.

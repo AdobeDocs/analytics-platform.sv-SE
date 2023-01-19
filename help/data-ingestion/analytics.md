@@ -3,13 +3,13 @@ title: Importera och använda data från traditionella Adobe Analytics
 description: Förklara hur man importerar data från traditionella Adobe Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
-
 
 # Importera och använda data från traditionella Adobe Analytics
 
@@ -23,23 +23,23 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 >
 >- [Implementera Analytics med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en)
 >
->- [Implementera analyser med Javascript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [Implementera Analytics med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
 
 
 För att uppnå detta måste du:
 
-- **Konfigurera en Adobe Analytics-källanslutning** i Adobe Experience Platform. Det här tar hand om inmatning av aktuella Adobe Analytics-data i en datauppsättning i Adobe Experience Platform.
+- **Konfigurera en Adobe Analytics-källanslutning** i Adobe Experience Platform. Det här tar hand om inmatningen av aktuella Adobe Analytics-data i en datauppsättning i Adobe Experience Platform.
 
 - **Konfigurera en anslutning** i Customer Journey Analytics. Den här anslutningen bör (åtminstone) innehålla din Adobe Experience Platform-datauppsättning.
 
-- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mätvärden och dimensioner som du vill använda i Analysis Workspace.
+- **Konfigurera en datavy** i Customer Journey Analytics för att definiera mått och dimensioner som du vill använda i Analysis Workspace.
 
 - **Konfigurera ett projekt** i Customer Journey Analytics för att skapa rapporter och visualiseringar.
 
 
 >[!NOTE]
 >
->Det här är en förenklad guide om hur du importerar data, använder Adobe Analytics källanslutning och använder dessa data i Customer Journey Analytics.  Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Det här är en förenklad guide om hur du importerar data, använder Adobe Analytics källanslutning och använder dessa data i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera en Adobe Analytics-källanslutning
@@ -48,7 +48,7 @@ Med Adobe Analytics källanslutning kan du överföra data från Adobe Analytics
 
 Så här skapar du en Adobe Analytics-källanslutning:
 
-1. Välj **[!UICONTROL Sources]** från den vänstra listen.
+1. Välj **[!UICONTROL Sources]**, från den vänstra listen.
 
 2. Välj **[!UICONTROL Adobe applications]** i listan över [!UICONTROL CATEGORIES].
 
@@ -56,7 +56,7 @@ Så här skapar du en Adobe Analytics-källanslutning:
 
    ![Källor](./assets/sources-overview.png)
 
-4. Välj **[!UICONTROL Report suite]**. Välj den du vill använda i listan över rapportsviter.
+4. Välj **[!UICONTROL Report suite]**. Välj den som du vill använda i listan över rapportsviter.
 
    ![Rapportsviter](./assets/report-suites.png)
 
@@ -102,15 +102,15 @@ Så här skapar du en anslutning:
 
    Namnge och beskriva anslutningen i [!UICONTROL Connection Settings].
 
-   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Avergage number of daily events] lista.
+   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Average number of daily events] lista.
 
    ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
-   Välj **[!UICONTROL Add datsets]**.
+   Välj **[!UICONTROL Add datasets]**.
 
    I [!UICONTROL Select datasets] steg in [!UICONTROL Add datasets]:
 
-   - Markera datauppsättningen som skapas automatiskt av Adobe Analytics-källkopplingen och andra datauppsättningar som du vill inkludera i anslutningen.
+   - Markera datauppsättningen som skapas automatiskt av Adobe Analytics-källkopplingen och andra datauppsättningar som du vill ta med i anslutningen.
 
       ![Lägg till datauppsättningar](./assets/cja-connections-2a.png)
 
@@ -121,7 +121,7 @@ Så här skapar du en anslutning:
 
       - Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägg sedan till en beskrivning av datakällan.
+      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
@@ -191,20 +191,14 @@ Så här skapar du ditt projekt:
 
    ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
 
-5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som också ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
    ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
 
-Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualisering och paneler.
+Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
 
 
 >[!SUCCESS]
 >
 >Du har slutfört alla steg. Från och med att du konfigurerar Adobe Analytics datakällanslutning och konfigurerar den kopplingen för rapportsviten överförs dina Adobe Analytics-data automatiskt till Adobe Experience Platform. Du har definierat en anslutning i Customer Journey Analytics för att använda inmatade Adobe Analytics-data och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
-
-
-
-
-
-
 
