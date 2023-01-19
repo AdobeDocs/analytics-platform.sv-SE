@@ -3,9 +3,9 @@ title: Översikt över dataöverföring
 description: Förstå olika sätt att importera data till Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+source-git-commit: 5de8c0daaa7eea0a9ab993d256e2b0a14f37301e
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
