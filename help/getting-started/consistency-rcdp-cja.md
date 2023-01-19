@@ -4,7 +4,7 @@ title: Överensstämmelse i mätvärden och antal målgruppsmedlemskap mellan CD
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 769eef205df32865874753859ce79e573db40641
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -22,7 +22,7 @@ När man jämför antalet målgruppsmedlemskap mellan CDP och CJA i realtid är 
 
 CDP och CJA i realtid har inte samma definition av en person i dag. CDP i realtid är helt beroende av informationen i [Identitetsdiagram](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) för att skapa en sammanfogad profil.
 
-CJA kan konfigureras att använda [Flerkanalsanalys](/help/connections/cca/overview.md) som extraherar identifierare från datauppsättningar i datasjön och använder anpassad logik för att länka samman dem.
+CJA kan konfigureras att använda [Flerkanalsanalys](/help/cca/overview.md) som extraherar identifierare från datauppsättningar i datasjön och använder anpassad logik för att länka samman dem.
 
 I framtiden kommer CJA att kunna använda Identity Graph.
 

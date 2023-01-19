@@ -4,7 +4,7 @@ description: Lär dig hur du skapar en datauppsättning som länkar callcenter o
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 0%
@@ -44,7 +44,7 @@ När du importerar data till plattformen kan följande tips hjälpa dig att få 
 CJA kräver en gemensam identifierare för att generera en [kombinerad datamängd](/help/connections/combined-dataset.md).
 
 * Om dina datauppsättningar redan har en gemensam identifierare för varje händelse i båda datauppsättningarna kan du hoppa över det här steget och fortsätta skapa en anslutning.
-* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser kan du sammanfoga data med hjälp av kanalövergripande analys. Se [Översikt över flerkanalsanalys](/help/connections/cca/overview.md) för steg för att aktivera CCA för dessa två datauppsättningar.
+* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser kan du sammanfoga data med hjälp av kanalövergripande analys. Se [Översikt över flerkanalsanalys](/help/cca/overview.md) för steg för att aktivera CCA för dessa två datauppsättningar.
 
 ## Skapa en anslutning i CJA
 

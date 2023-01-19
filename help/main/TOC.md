@@ -9,9 +9,9 @@ index: true
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: eb7b53816fcc325f6a72ae145c8cf8a633375578
+source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '860'
 ht-degree: 28%
 
 ---
@@ -61,10 +61,7 @@ ht-degree: 28%
    + [Hantera anslutningar](../connections/manage-connections.md)
    + [Kombinerade händelsedatamängder](../connections/combined-dataset.md)
    + [Standardsökningar](../connections/standard-lookups.md)
-   + Flerkanalsanalys {#cca}
-      + [Översikt över flerkanalsanalys](../connections/cca/overview.md)
-      + [Så här spelar du upp](../connections/cca/replay.md)
-      + [Vanliga frågor om flerkanalsanalys](../connections/cca/faq.md)
+   + [Flerkanalsanalys](../connections/cca.md)
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](../data-views/data-views.md)
    + [Skapa eller redigera en datavy](../data-views/create-dataview.md)
@@ -177,18 +174,6 @@ ht-degree: 28%
       + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet i Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Långsvansar i Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
-+ Report Builder {#cja-reportbuilder}
-   + [Översikt över Report Builder](../report-builder/report-buider-overview.md)
-   + [Konfigurera Report Builder](../report-builder/report-builder-setup.md)
-   + [Skapa ett datablock](../report-builder/create-a-data-block.md)
-   + [Report Builder Hub](../report-builder/report-builder-hub.md)
-   + [Välj ett datumintervall](../report-builder/select-date-range.md)
-   + [Arbeta med filter](../report-builder/work-with-filters.md)
-   + [Filtrera Dimensioner](../report-builder/filter-dimensions.md)
-   + [Hantera datablock](../report-builder/manage-reportbuilder.md)
-   + [Schemalägg arbetsböcker](../report-builder/schedule-reportbuilder.md)
-   + [Begränsade etiketter](../report-builder/restricted-labels.md)
-   + [Inställningar för Report Builder](../report-builder/report-builder-settings.md)
 + Komponenter {#cja-components}
    + [Komponenter – översikt](../components/overview.md)
    + Anteckningar {#annotations}
@@ -246,11 +231,31 @@ ht-degree: 28%
    + [Skapa ett mobilstyrkort](../mobile-app/create-scorecard.md)
    + [Konfigurera chefer för att använda kontrollpaneler](../mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
++ Report Builder {#cja-reportbuilder}
+   + [Översikt över Report Builder](../report-builder/report-buider-overview.md)
+   + [Konfigurera Report Builder](../report-builder/report-builder-setup.md)
+   + [Skapa ett datablock](../report-builder/create-a-data-block.md)
+   + [Report Builder Hub](../report-builder/report-builder-hub.md)
+   + [Välj ett datumintervall](../report-builder/select-date-range.md)
+   + [Arbeta med filter](../report-builder/work-with-filters.md)
+   + [Filtrera Dimensioner](../report-builder/filter-dimensions.md)
+   + [Hantera datablock](../report-builder/manage-reportbuilder.md)
+   + [Schemalägg arbetsböcker](../report-builder/schedule-reportbuilder.md)
+   + [Begränsade etiketter](../report-builder/restricted-labels.md)
+   + [Inställningar för Report Builder](../report-builder/report-builder-settings.md)
++ Flerkanalsanalys {#cca}
+   + [Översikt över flerkanalsanalys](../cca/overview.md)
+   + [Så här spelar du upp](../cca/replay.md)
+   + [Vanliga frågor om flerkanalsanalys](../cca/faq.md)
 + Integreringar med Adobe {#integrations}
    + [Integrera Adobe-lösningar med CJA - översikt](/help/integrations/overview.md)
    + [Integrera Adobe Analytics med Customer Journey Analytics](/help/integrations/aa.md)
    + [Integrera Journey Optimizer-data med CJA](/help/integrations/ajo.md)
    + [Integrera kundens AI-data med CJA](/help/integrations/customer-ai.md)
++ Datastyrning {#cja-privacy}
+   + [Datastyrning](../privacy/privacy-overview.md)
+   + [Granskningslogg](../privacy/audit-log.md)
+   + [Kundhanterade nycklar](../privacy/cmk.md)
 + Användningsexempel {#cja-usecases}
    + [Användningsexempel i Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Google Analytics data {#ga}
@@ -277,8 +282,4 @@ ht-degree: 28%
    + [Användarhandbok för Labs](../labs/labs.md)
 + Felsökning {#troubleshooting}
    + [Jämför dina Adobe Analytics-data med CJA-data](../troubleshooting/compare.md)
-+ Datastyrning {#cja-privacy}
-   + [Datastyrning](../privacy/privacy-overview.md)
-   + [Granskningslogg](../privacy/audit-log.md)
-   + [Kundhanterade nycklar](../privacy/cmk.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)

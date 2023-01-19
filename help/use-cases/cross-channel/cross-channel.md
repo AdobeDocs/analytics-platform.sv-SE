@@ -4,7 +4,7 @@ description: Analysera och extrahera insikter från kundinteraktioner under hela
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Få en samlad bild av kundernas beteende i olika kanaler genom att samla data fr
 1. [Skapa scheman](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) för data som ska importeras.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html).
-1. Använd ett gemensamt namnområdes-ID för alla datauppsättningar eller använd [Flerkanalsanalys](/help/connections/cca/overview.md) för att länka samman människor. Observera att Customer Journey Analytics för närvarande inte använder profiltjänsten eller identitetstjänsten Experience Platform för sammanfogning.
+1. Använd ett gemensamt namnområdes-ID för alla datauppsättningar eller använd [Flerkanalsanalys](/help/cca/overview.md) för att länka samman människor. Observera att Customer Journey Analytics för närvarande inte använder profiltjänsten eller identitetstjänsten Experience Platform för sammanfogning.
 1. Utför alla anpassade dataförberedelser för att säkerställa en gemensam nyckel över tidsseriens datauppsättningar som ska importeras till Customer Journey Analytics.
 1. Ge sökdata ett primärt ID som kan kopplas till ett fält i händelsedata. Räknas som rader i licensiering.
 1. Ange samma primära ID för profildata som det primära ID:t för händelsedata.

@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 57d1f48c363bda93b4b28425794a55ef269b31c4
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1528'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Marknadsföringskanaler | Marknadsföringskanalernas data flödar till CJA via Analytics Source Connector. Reglerna för marknadsföringskanal måste fortfarande konfigureras i traditionella Adobe Analytics och vissa regler stöds inte. Mer information finns på [Dokumentation för CJA Marketing Channels](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases). För WebSDK-implementeringar finns dessutom plugin-program för att definiera marknadsföringskanaler på klientsidan. Framtida stöd för regler för bearbetning av marknadsföringskanaler i rapporttid planeras. |
-| Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (även&quot;fältbaserad&quot; sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Flerkanalsanalys](/help/connections/cca/overview.md). |
+| Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (kallas även&quot;fältbaserad&quot; sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Flerkanalsanalys](/help/cca/overview.md). |
 | Punktfiltrering | För [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller CJA. |
 | Enhet, webbläsare, referens, teknikdimensioner | Stöds för [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar. Se våra [dokumentation om vilka analysvariabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>Om du inte använder Adobe Source Connector för att fylla i data från Adobe Analytics till CJA, utan i stället använder du Experience Platform Web SDK-datainsamling, stöds för närvarande inte enheter och dimensioner baserade på enhetssökningen. Framtida stöd planeras. |
 | GeoSegmenteringsdimensioner | All GeoSegmentation/geography som samlas in i Adobe Analytics flödar till CJA via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementeringar som inte använder Analytics Source Connector, t.ex. de som använder AEP Web SDK för digital datainsamling, kommer inte att ha det fullständiga urvalet av geografiska sökningar som utförs automatiskt: Land och delstat stöds globalt, vilket inte gäller för stad och postnummer. |
@@ -93,7 +93,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Larm | Support planeras. |
 | Bidragsanalys | Support planeras. |
-| data warehouse-rapportering (100 % radexport) | Support planeras från Analysis Workspace gränssnitt. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) har också ett gränssnitt för de här användningsfallen i CJA. |
+| data warehouse-rapportering (100 % radexport) | Support planeras från Analysis Workspace gränssnitt. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) har också ett gränssnitt för de här användningsfallen i CJA. |
 | ID Stitching via Device Graph | Support planeras. |
 | Projektmallar | Support planeras. |
 | Realtidsrapportering | Support planeras. |
