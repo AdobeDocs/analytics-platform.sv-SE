@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4488c87604db363ca4ddb0954216b195990c8bb1
+source-git-commit: 7055ef91d853da02b4510ec2b9e4543f70b0bec0
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1215'
 ht-degree: 8%
 
 ---
@@ -23,6 +23,8 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Mappar | Dedikerade sidor för [Mapphantering](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Användarinställningar | Många andra användarinställningar finns nu tillgängliga i [Inställningar](/help/analysis-workspace/user-preferences.md). |
 | Spara automatiskt för projekt | Uppdaterat innehåll som inkluderar autosparfunktion i [Spara projekt](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Landningssida | Nya uppdateringar av landningssidor [landningssida](/help/getting-started/landing.md). |
+| Schemalägg arbetsböcker | Dedikerad sida som beskriver hur [Schemalägg arbetsböcker](/help/report-builder/schedule-reportbuilder.md) i Report Builder. |
 
 ## 2022
 
