@@ -1,13 +1,13 @@
 ---
 title: Granskningsloggar
 description: Lär dig hur du visar och hanterar CJA-granskningsloggar.
-source-git-commit: 37a23a4669c08c8f7d9c6595286998ebd7e60ac4
+exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
+source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '819'
 ht-degree: 3%
 
 ---
-
 
 # Granskningsloggar
 
@@ -46,7 +46,7 @@ Följande objekt visas:
 | Åtgärdsnamn | Här är en lista över möjliga åtgärder: <ul><li>API_Request</li><li>Godkänn</li><li>Skapa</li><li>Redigera</li><li>Exportera</li><li>Login_failed</li><li>Inloggning_lyckades</li><li>Utloggning</li><li>Org_change</li><li>Uppdatera</li><li>Dela</li><li>Överför</li><li>Ogodkänd</li><li>Sluta dela</li></ul> |
 | Beskrivning | En sammanfattning av åtgärden, komponenttypen (med ID) och andra värden. |
 | Användarnamn | Användaren som utför åtgärden. |
-| Komponenttyp | Möjliga komponenttyper är: <ul><li>Anteckning</li><li>Målgrupp</li><li>Beräknade mått</li><li>Anslutning</li><li>Data_grupp</li><li>Data_vy</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobil</li><li>Projekt</li><li>Rapport</li><li>Schemalagt_projekt</li><li>Användare</li><li>User_Group</li></ul> |
+| Komponenttyp | Möjliga komponenttyper är: <ul><li>Anteckning</li><li>Målgrupp</li><li>Beräknade mått</li><li>Anslutning</li><li>Data_grupp</li><li>Data_View (den här komponenttypen innehåller dimensioner och mått)</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobil</li><li>Projekt</li><li>Rapport</li><li>Schemalagt_projekt</li><li>Användare</li><li>User_Group</li></ul> |
 | IMS-organisations-ID | Ett unikt ID som ges till din instans när du loggar in på Adobe Experience Cloud första gången. Den ska ha följande format: xxx@AdobeOrg. |
 | Användar-ID | Ett unikt ID som identifierar användaren som utförde den här åtgärden. |
 | Skapad den | När den här åtgärden utfördes. |
