@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: f45485d7e26827a85abe47168b1a3dbdbe150e53
+source-git-commit: 2cc4dc1472406314e9ba3a5ab17c08bb7696f6c0
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 
 ## Använda CJA-målgrupper i Experience Platform {#audiences-aep}
 
-CJA tar nu alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). CJA skickar målgruppen vidare till Experience Platform med den primära identiteten inställd på det som valdes som person-ID när anslutningen konfigurerades.
+CJA tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). CJA skickar målgruppen vidare till Experience Platform med den primära identiteten angiven enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
 
 RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan till exempel&quot;user@adobe.com&quot; användas på alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
@@ -98,33 +98,47 @@ Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
 
 Frågor och svar om publikens publicering.
 
-### Vad händer om en användare inte längre är medlem i en publik i CJA?
++++**Vad händer om en användare inte längre är medlem i en publik i CJA?**
 
 I det här fallet skickas en exit-händelse till Experience Platform från CJA.
 
-### Vad händer om du tar bort en publik i CJA?
++++
+
++++**Vad händer om du tar bort en publik i CJA?**
 
 När en CJA-publik tas bort visas den inte längre i användargränssnittet för Experience Platform. Inga profiler som är kopplade till den målgruppen tas emellertid bort i Platform.
 
-### Om det inte finns någon motsvarande profil i RTCDP, kommer en ny profil att skapas?
++++
+
++++**Om det inte finns någon motsvarande profil i RTCDP, kommer en ny profil att skapas?**
 
 Ja, det kommer det.
 
-### Skickar CJA målgruppsdata som pipeline-händelser eller en platt fil som också går till Data Lake?
++++
 
-Data strömmas till RTCP via pipeline och dessa data samlas också in i en systemdatauppsättning i datasjön.
++++**Skickar CJA målgruppsdata som pipeline-händelser eller en platt fil som också går till Data Lake?**
 
-### Vilka identiteter skickar CJA?
+CJA strömmar data till RTCP via pipeline, och dessa data samlas också in i en systemdatauppsättning i datasjön.
 
-Vilka identitets-/namnområdespar som användes i anslutningsinställningarna. Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
++++
 
-### Vad väljs som primär identitet?
++++**Vilka identiteter skickar CJA?**
+
+Vilka identitets-/namnområdespar som används i [Anslutningsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
+
++++
+
++++**Vilket ID väljs som primär identitet?**
 
 Se ovan. Vi skickar bara en identitet per CJA-person.
 
-### Bearbetar RTCP även CJA-meddelanden? Kan CJA lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?
++++
+
++++**Bearbetar RTCP även CJA-meddelanden? Kan CJA lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?**
 
 Nej. Vi skickar bara en identitet per person, så det finns inga diagramkanter som RTCP kan använda.
+
++++
 
 ## Nästa steg
 
