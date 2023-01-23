@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7ed39a9280e1e4e517b804727e1f082dc27185af
+source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '557'
 ht-degree: 6%
 
 ---
 
 # Versionsinformation för Customer Journey Analytics (CJA) (januari 2023)
 
-**Senaste uppdatering**: 13 januari 2023
+**Senaste uppdatering**: 23 januari 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Början av utrullning](/help/release-notes/releases.md) | [Allmän tillgänglighet](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Uppdatera till CJA-målgrupper** | När du har skapat en publik [Adobe skapar ett direktuppspelningssegment för Experience Platform för varje ny CJA-publik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). | Ej tillämpligt | 23 januari 2023 |
 | **Mappar på arbetsytan** | Med mappar kan du ordna och kategorisera dina projekt så att de blir lättare att hämta och komma åt. Dessutom har en delad **[!UICONTROL Company]** kan administratörer enkelt skapa och dela innehåll med alla Workspace-användare. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | Ej tillämpligt | 11 januari 2023 |
 | **Standardstartsida** | The [ny landningssida](/help/getting-started/landing.md) som introducerades tidigare 2022 kommer att bli standardupplevelsen för alla användare på **11 januari 2023**. Den gamla landningssidan kommer att bli inaktuell och alla kommer att behöva använda den nya upplevelsen. | Ej tillämpligt | 11 januari 2023 |
 | **Project Manager-sidan är inaktuell** | I och med lanseringen av den nya landningssidan har vi ersatt **[!UICONTROL Project Manager]** enligt **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]**. Den nya landningssidan har alla funktioner som finns på den gamla Project Manager-sidan och mycket mer. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | Ej tillämpligt | 11 januari 2023 |

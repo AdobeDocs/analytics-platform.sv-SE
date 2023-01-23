@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
+source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1260'
 ht-degree: 7%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Januari 2023** |  |
+| Uppdatera till CJA Audiences doc | Ny dokumentation om [vad som händer när en ny publik har skapats](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Snabbstartsguider för dataöverföring | Nytt dokumentationsavsnitt om hur [importera och använda data](/help/data-ingestion/data-ingestion.md) i CJA. |
 | Arbetsytemappar | Dedikerade sidor för [Mapphantering](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Användarinställningar för arbetsyta | Många andra användarinställningar finns nu tillgängliga i [Inställningar](/help/analysis-workspace/user-preferences.md). |
