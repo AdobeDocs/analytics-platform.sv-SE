@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1262'
 ht-degree: 7%
 
 ---
@@ -26,6 +26,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Spara automatiskt för arbetsyteprojekt | Uppdaterat innehåll som inkluderar autosparfunktion i [Spara projekt](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Landningssida | Nya uppdateringar av landningssidor [landningssida](/help/getting-started/landing.md). |
 | Schemalägg arbetsböcker | Dedikerad sida som beskriver hur [Schemalägg arbetsböcker](/help/report-builder/schedule-reportbuilder.md) i Report Builder. |
+| Stöd för objektmatriser för profil- och uppslagsdatauppsättningar | Uppdaterat [Använda arrayer med objekt](/help/use-cases/object-arrays.md) och [Ingest AEP-målgrupper](/help/use-cases/data-ingestion/ingest-aep-segments.md) för att spegla stöd för objektmatriser för profil- och uppslagsdatauppsättningar. |
 
 ## 2022 {#22}
 

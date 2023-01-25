@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '547'
 ht-degree: 6%
 
 ---
@@ -26,6 +26,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **Schemalägg arbetsböcker i Report Builder** | I Customer Journey Analytics kan du skapa scheman för att skicka arbetsböcker med regelbundna intervall. Nu kan mottagarna regelbundet få de senaste uppdateringarna av arbetsböckerna. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | Ej tillämpligt | 11 januari 2023 |
 | **Spara nya projekt automatiskt** | Analysis Workspace sparar nu automatiskt nya projekt. Om du av någon anledning oväntat förlorar åtkomsten till ett nyligen skapat projekt innan du sparar det manuellt, är en återställningsversion av ditt projekt nu tillgänglig. Tidigare sparades projekt bara automatiskt efter att de först sparats manuellt. [Läs mer](/help/analysis-workspace/build-workspace-project/save-projects.md) | Ej tillämpligt | 11 januari 2023 |
 | **Förbättrade användarinställningar** | Nu kan du konfigurera ytterligare inställningar på användarnivå (i [!UICONTROL Components] > [!UICONTROL Preferences]). När du anger användarinställningar spänner markeringarna över flera projekt, tabeller och visualiseringar. Sidan Inställningar innehåller nu följande nya flikar som alla innehåller många nya konfigurationsalternativ:<ul><li>Frihandstabell</li><li>Visualiseringar>/li></ul>. Fler inställningar finns nu på **[!UICONTROL General]** och **[!UICONTROL Project]** -tabbar.<p>Tidigare var många av dessa inställningar endast konfigurerbara för enskilda projekt, tabeller och visualiseringar. [Läs mer](/help/analysis-workspace/user-preferences.md) | Ej tillämpligt | 11 januari 2023 |
+| **Stöd för objektmatriser för profil- och uppslagsdatauppsättningar** | Profildatamängder och uppslagsdatamängder har nu stöd för objektarrayer som kan användas i CJA. | Ej tillämpligt | 11 januari 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 
