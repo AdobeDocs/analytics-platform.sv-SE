@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
+source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1291'
 ht-degree: 7%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Januari 2023** |  |
+| Filtrera och sortera tabeller | Uppdaterat innehåll (inklusive att lägga till procedurer och förklara tillgängliga alternativ) i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artikel. Artikelns namn ändrades från&quot;Sidnumrering, filtrering och sortering&quot;. |
 | Snabbstartsguider för dataöverföring | Nytt dokumentationsavsnitt om hur [importera och använda data](/help/data-ingestion/data-ingestion.md) i CJA. |
 | Arbetsytemappar | Dedikerade sidor för [Mapphantering](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Användarinställningar för arbetsyta | Många andra användarinställningar finns nu tillgängliga i [Inställningar](/help/analysis-workspace/user-preferences.md). |
