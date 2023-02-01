@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: a69cb8a419d95e0cab666fceea9cb7ebf6daef73
+source-git-commit: d38e4c4cd589e6708b0a6b5856da341344f6440e
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -99,5 +99,5 @@ Den största fördelen är att du bara lagrar eller rapporterar data som är til
 
 Om du låter standardvärdet vara (omarkerat) ersätts kvarhållningsperioden av Adobe Experience Platform datalagringsinställning. Om ni har 25 månaders data i Experience Platform får CJA 25 månaders data genom att fylla på dem. Om du raderade 10 av dessa månader i Platform behåller CJA de återstående 15 månaderna.
 
-Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller en profil- eller uppslagsdatauppsättning (förutom en eller flera händelsedatamängder) kommer dessa data att lagras under samma tidsperiod.
+Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller någon profil- eller sökdatamängd, eftersom de har förenats med händelsedatamängder, behålls data i CJA baserat på dina datalagringsinställningar för händelsedatamängdens tidsstämplar.
 
