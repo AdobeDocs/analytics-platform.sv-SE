@@ -4,9 +4,9 @@ description: Räkna bara den första förekomsten av ett mätvärde i rapporter.
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: e2ebda486eae7740351370f48bdf104c90494ae3
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '146'
 ht-degree: 1%
 
 ---
@@ -22,3 +22,7 @@ Med metrisk borttagning av dubbletter kan du konfigurera ett mätvärde så att 
 | [!UICONTROL Deduplication ID] | I stället för att tillämpa borttagning av dubbletter på själva måttet kan du använda metrisk borttagning av dubbletter baserat på en dimension i stället. Värdefull för dimensioner som Inköp-ID för borttagning av dubbletter. |
 
 {style=&quot;table-layout:auto&quot;}
+
+>[!CAUTION]
+>
+>   Borttagning av dubbletter _person_ omfånget utvärderas av fullständiga månader i UTC-tid. Ett rapportfönster med delar av månaden kanske inte visar alla första eller sista instanser, om vissa inträffade under hela månaden men utanför rapportdatumen.
