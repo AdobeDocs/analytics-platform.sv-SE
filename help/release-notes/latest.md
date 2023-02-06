@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ddba0cdee1956048ba1875b49e8f2b77085c46da
+source-git-commit: b633e3e70c24d9b00b1ab2f80954ad698b12ce29
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 6%
+source-wordcount: '597'
+ht-degree: 7%
 
 ---
 
 # Versionsinformation för Customer Journey Analytics (CJA) (januari 2023)
 
-**Senaste uppdatering**: 24 januari 2023
+**Senaste uppdatering**: 6 februari 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Början av utrullning](/help/release-notes/releases.md) | [Allmän tillgänglighet](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Uppdatera till CJA-målgrupper** | När du har skapat en publik [Adobe skapar ett direktuppspelningssegment för Experience Platform för varje ny CJA-publik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). Ett AEP-direktuppspelningssegment skapas bara om organisationen är inställd för direktuppspelningssegmentering. | Ej tillämpligt | 3 februari 2023 |
 | **Stöd för objektmatriser för profil- och uppslagsdatauppsättningar** | Profildatamängder och uppslagsdatamängder har nu stöd för objektarrayer som kan användas i CJA. | 11 januari 2023 | 19 januari 2023 |
 | **Mappar på arbetsytan** | Med mappar kan du ordna och kategorisera dina projekt så att de blir lättare att hämta och komma åt. Dessutom har en delad **[!UICONTROL Company]** kan administratörer enkelt skapa och dela innehåll med alla Workspace-användare. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | Ej tillämpligt | 11 januari 2023 |
 | **Standardstartsida** | The [ny landningssida](/help/getting-started/landing.md) som introducerades tidigare 2022 kommer att bli standardupplevelsen för alla användare på **11 januari 2023**. Den gamla landningssidan kommer att bli inaktuell och alla kommer att behöva använda den nya upplevelsen. | Ej tillämpligt | 11 januari 2023 |
@@ -51,6 +52,6 @@ AN-287349; AN-301684; AN-305491; AN-305769; AN-307912
 
 * [Versionsinformation om Media Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
 
-* [Versionsinformation om Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
+* [Versionsinformation om Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=sv)
 
 * [Dokumentationsuppdateringar för Customer Journey Analytics](/help/release-notes/doc-changes.md)
