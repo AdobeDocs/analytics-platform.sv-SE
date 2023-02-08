@@ -2,7 +2,7 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: e14881682f79633313258382c0baae951ef7f43b
+source-git-commit: 218618fb6f5ad97da82ebb40e78f9a04f7d28343
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 0%
@@ -72,9 +72,9 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande kommer du till [Segmentgränssnitt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) i Adobe Experience Platform. Mer information finns nedan.
 
-## Vad händer efter att en målgrupp har skapats {#after-audience-created}
+## Vad händer när en målgrupp har skapats? {#after-audience-created}
 
-När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för Experience Platform för varje ny CJA-målgrupp. Ett AEP-direktuppspelningssegment skapas bara om organisationen är inställd för direktuppspelningssegmentering.
+När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för Experience Platform för varje ny CJA-målgrupp. Ett AEP-direktuppspelningssegment skapas endast om din organisation är inställd för direktuppspelningssegmentering.
 
 * AEP-segmentet delar samma namn/beskrivning som CJA-målgruppen, men namnet läggs till med CJA-målgrupps-ID:t för att se till att det är unikt.
 * Om CJA-målgruppens namn/beskrivning ändras återspeglas även den ändringen i AEP-segmentets namn/beskrivning.

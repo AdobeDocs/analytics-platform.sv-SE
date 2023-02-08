@@ -6,22 +6,23 @@ sub-product: customer journey
 solution: Customer Journey Analytics
 type: Documentation
 index: true
-user-guide-title: Customer Journey Analytics Guide
+user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
-breadcrumb-title: Customer Journey Analytics Guide
-source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
+breadcrumb-title: Användarhandbok om Customer Journey Analytics
+source-git-commit: 97e648de4363eefd4375effad66d6cb17e3f2c2c
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 28%
+source-wordcount: '861'
+ht-degree: 32%
 
 ---
 
 
-# Customer Journey Analytics Guide {#using}
+# Användarhandbok om Customer Journey Analytics {#using}
 
-+ [Customer Journey Analytics Guide](../getting-started/cja-landing.md)
++ [Användarhandbok om Customer Journey Analytics](../getting-started/cja-landing.md)
 + Versionsinformation {#releases}
    + [Senaste versionen](../release-notes/latest.md)
+   + [2023 års utgåvor](../release-notes/2023.md)
    + [2022 års utgåvor](../release-notes/2022.md)
    + [2021 års utgåvor](../release-notes/2021.md)
    + [2020-versioner](../release-notes/2020.md)
@@ -47,7 +48,7 @@ ht-degree: 28%
       + [STÖD, ECID, AACUSTOMID och Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Borttagningskonsekvenser](../getting-started/cja-deletion.md)
    + [CJA-ordlista](../getting-started/cja-glossary.md)
-+ Dataintag {#cja-data-ingestion}
++ Datainmatning {#cja-data-ingestion}
    + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
    + Infoga och använda snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)

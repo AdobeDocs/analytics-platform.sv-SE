@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: bacf1568b0d39d20f948c087d616881b66d96ca2
+source-git-commit: 72f59b140b2a907f8c0a125825cd4df6d7c38dbc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1741'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett n
 
 Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent.
 
-### Visa datumintervall för jämförelse {#show-comparison-dates}
+### Visa/dölj datumintervall för jämförelse {#showo-comparison-dates}
 
 Om du vill inkludera datumintervall för jämförelse växlar du **Inkludera jämförelsedatum** inställning.
 
 ![Inkludera jämförelsedatum](assets/include-comparison-dates.png)
 
-Inställningen är *på* som standard. Avmarkera alternativet om du inte vill visa jämförelsedatum.
+Inställningen är *på* som standard. Växla till *av* om du inte vill visa jämförelsedatum.
 
 ![Inställning för jämförelsedatum](assets/no-comparison-dates.png)
 
