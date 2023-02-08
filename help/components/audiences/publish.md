@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 218618fb6f5ad97da82ebb40e78f9a04f7d28343
+source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,19 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 * AEP-segmentet delar samma namn/beskrivning som CJA-målgruppen, men namnet läggs till med CJA-målgrupps-ID:t för att se till att det är unikt.
 * Om CJA-målgruppens namn/beskrivning ändras återspeglas även den ändringen i AEP-segmentets namn/beskrivning.
 * Om en CJA-målgrupp tas bort av en användare tas AEP-segmentet INTE bort. Orsaken är att CJA-målgruppen senare kan tas bort.
+
+## Svarstidsfrågor {#latency}
+
+Vid flera tillfällen före, under och efter publikens publicering kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
+
+![](assets/latency-diagram.png)
+
+| Svarstid | Latenslängd |
+| --- | --- |
+| Intag av data i datasjön | Upp till 30 minuter |
+| Intag av data från Experience Platform till CJA | Upp till 60 minuter |
+| Målgruppspublicering i kundprofil i realtid | Mindre än 5 minuter (beroende på målgruppens storlek) |
+| Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
 
 ## Använda CJA-målgrupper i Experience Platform {#audiences-aep}
 

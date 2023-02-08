@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
+source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1323'
 ht-degree: 7%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Februari 2023** |  |
+| Uppdatera till publikdokumentation | När du har skapat en målgrupp skapar Adobe en Experience Platform [direktuppspelningssegment för varje ny CJA-publik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | **Januari 2023** |  |
 | Filtrera och sortera tabeller | Uppdaterat innehåll (inklusive att lägga till procedurer och förklara tillgängliga alternativ) i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artikel. Artikelns namn ändrades från&quot;Sidnumrering, filtrering och sortering&quot;. |
 | Snabbstartsguider för dataöverföring | Nytt dokumentationsavsnitt om hur [importera och använda data](/help/data-ingestion/data-ingestion.md) i CJA. |
