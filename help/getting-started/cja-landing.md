@@ -4,7 +4,7 @@ description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
+source-git-commit: 6e90688d72ddf7791ad8c4c12d5293070d987e39
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 7%
@@ -31,7 +31,7 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en"> Jämför databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> Virtuella rapportsviter, datavyer, AEP-sandlådor och Analytics Source Connector </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> Adobe Analytics till Customer Journey Analytics evolutionen </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.htm"> CJA User Guide for Adobe Analytics users </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html"> CJA User Guide for Adobe Analytics users </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Använd de utökade funktionerna för anslutningshantering </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html#cja-dataviews"> Använd de förbättrade datavyer-funktionerna </a> </li>
    <td colname="col2" valign="top"><p class="head"> <b>Komma igång</b> </p> 
