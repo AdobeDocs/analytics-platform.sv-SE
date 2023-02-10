@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
+source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Adobe har publicerat [uppdaterade metodtips för implementering av marknadsföri
 
 ### 4. Bestäm dig för att använda Analytics Source Connector jämfört med Experience Platform SDK:er {#connector-vs-sdk}
 
-Adobe Analytics-kunder kan enkelt utnyttja sina rapportsviter i Adobe Experience Platform och Customer Journey Analytics med Analytics Source Connector. Information om hur du använder Analytics Source Connector finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en).
+Adobe Analytics-kunder kan enkelt utnyttja sina rapportsviter i Adobe Experience Platform och Customer Journey Analytics med Analytics Source Connector. Information om hur du använder Analytics Source Connector finns i snabbstartsguiden för hur du [importera data från Adobe Analytics och använda dem i CJA](../data-ingestion/analytics.md). Se även [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) för mer information.
 
 Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) datainsamlingen utvecklas, du kommer troligen att migrera till [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) med Adobe Experience Platform Edge Network. En vanlig implementering av SDK:er skickar data till Adobe Analytics, men det finns en ny möjlighet att skicka data direkt till Adobe Experience Platform. Den kan sedan importeras till Customer Journey Analytics, samtidigt som data skickas till Adobe Analytics bevaras.
 
@@ -76,10 +76,10 @@ Med den här metoden utökas möjligheterna för datainsamling avsevärt: Det fi
 
 Följande Adobe Analytics-funktioner eller -komponenter stöds inte:
 
-* Marknadsföringskanaler
 * Punktfiltrering
 * Geo, domän, enhetssökningar
-* Analyser för mål (A4T)
+* Direktuppspelning av media
+* Livesream eller Livesream triggers
 
 ## Förbered dig för kritiska skillnader
 
