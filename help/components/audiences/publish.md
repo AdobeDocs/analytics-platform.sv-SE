@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
+source-git-commit: d343436f5b72e30b420088f9e9a3a8fb9b97becb
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -84,14 +84,13 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 
 Vid flera tillfällen före, under och efter publikens publicering kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-![](assets/latency-diagram.png)
-
 | Svarstid | Latenslängd |
 | --- | --- |
 | Intag av data i datasjön | Upp till 30 minuter |
 | Intag av data från Experience Platform till CJA | Upp till 60 minuter |
-| Målgruppspublicering i kundprofil i realtid | Mindre än 5 minuter (beroende på målgruppens storlek) |
+| Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Cirka 60 minuter |
 | Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
+| Skapar mål i AEP: Aktivera det nya segmentet i Adobe Target | För närvarande kan detta ta upp till 24 timmar, beroende på målgruppens uppdateringsintervall och segmentutvärderingstyp |
 
 ## Använda CJA-målgrupper i Experience Platform {#audiences-aep}
 
