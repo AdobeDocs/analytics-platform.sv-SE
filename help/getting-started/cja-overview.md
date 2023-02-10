@@ -4,10 +4,10 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f70cb6a8567d1bb2f844b1694f552ec4bfe70adc
+source-git-commit: e808ac175092af659ac702bb43f94f82c0ff22f9
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -55,7 +55,7 @@ Innan du kan börja använda Customer Journey Analytics måste följande krav va
 
 ## Åtkomstkontroll
 
-Se [Åtkomstkontroll](/help/getting-started/cja-access-control.md) ämne.
+Se [Åtkomstkontroll](/help/admin/cja-access-control.md) ämne.
 
 ## Uppdateringar om terminologi
 

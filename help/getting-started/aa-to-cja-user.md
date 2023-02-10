@@ -1,18 +1,18 @@
 ---
-title: CJA User Guide for Adobe Analytics users
+title: Användarhandbok för Adobe Analytics
 description: Vad man ska tänka på när man flyttar data från Adobe Analytics till Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
 
-# CJA User Guide for Adobe Analytics users
+# Användarhandbok för Adobe Analytics
 
 Om ni börjar anställa Customer Journey Analytics (CJA) kan ni märka vissa likheter och skillnader mellan traditionell analys och CJA. På den här sidan förklaras skillnaderna så att ni kan anpassa er till det nya arbetsflödet för implementering och rapportering. Den här sidan innehåller även ytterligare resurser om nya koncept och ytterligare steg för att göra din resa som analytiker enklare och mer framgångsrik.
 

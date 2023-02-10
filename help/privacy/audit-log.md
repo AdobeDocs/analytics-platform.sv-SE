@@ -2,7 +2,7 @@
 title: Granskningsloggar
 description: Lär dig hur du visar och hanterar CJA-granskningsloggar.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Det här avsnittet handlar om granskningsloggar i CJA, inklusive hur du visar oc
 
 När funktionen är aktiverad för din organisation samlas granskningsloggarna automatiskt in när aktiviteten inträffar. Du behöver inte aktivera loggsamling manuellt.
 
-För att kunna visa och exportera granskningsloggar måste du ha fått **[!UICONTROL Audit Logs Access]** behörighet för åtkomstkontroll i Adobe Console. Läs mer om hur du hanterar individuella behörigheter för CJA-funktioner i [dokumentation om åtkomstkontroll](/help/getting-started/cja-access-control.md).
+För att kunna visa och exportera granskningsloggar måste du ha fått **[!UICONTROL Audit Logs Access]** behörighet för åtkomstkontroll i Adobe Console. Läs mer om hur du hanterar individuella behörigheter för CJA-funktioner i [dokumentation om åtkomstkontroll](../admin/cja-access-control.md).
 
 ## Visa granskningsloggen i användargränssnittet
 

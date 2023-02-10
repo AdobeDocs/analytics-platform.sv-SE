@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 7%
@@ -38,7 +38,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Datum | Uppdatera beskrivning |
 | --- | --- |
 | **December 2022** |  |
-| 16 december 2022 | Nytt ämne [mäta och hantera användningen av CJA-data](/help/getting-started/estimate-usage.md). |
+| 16 december 2022 | Nytt ämne [mäta och hantera användningen av CJA-data](/help/admin/estimate-usage.md). |
 | **Oktober 2022** |  |
 | Oktober 2022 | Nytt ämne [lösenordsskydd för schemalagda projekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). Den här funktionen stöder [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Nytt ämne [Kundhanterade nycklar](/help/privacy/cmk.md). Den här funktionen stöder [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -53,7 +53,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | September 2022 | Nytt ämne [Panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md) i Workspace. |
 | **Augusti 2022** |  |
 | Augusti 2022 | Adobe Experience Platform artikel om [Regionövergripande stöd för Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
-| Augusti 2022 | Avsevärt uppdaterad artikel om [CJA-åtkomstkontroll](/help/getting-started/cja-access-control.md). |
+| Augusti 2022 | Avsevärt uppdaterad artikel om [CJA-åtkomstkontroll](/help/admin/cja-access-control.md). |
 | Augusti 2022 | Ny artikel på [CJA-stöd för etiketter och policyer för datastyrning](/help/data-views/data-governance.md). |
 | Augusti 2022 | Ny artikel på [Jämföra terminologi för analysdata som skickas via Analytics Source Connector](/help/getting-started/aa-vs-cja/terminology.md). |
 | Augusti 2022 | Ny dokumentation om [Målgruppspublicering i kundprofil i realtid](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |

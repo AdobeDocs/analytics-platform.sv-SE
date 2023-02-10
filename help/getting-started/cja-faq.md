@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 1%
+source-wordcount: '1931'
+ht-degree: 0%
 
 ---
 
@@ -17,48 +17,124 @@ ht-degree: 1%
 
 ## 1. Förutsättningar {#prerequisites}
 
-| Fråga | Svar |
-| --- | --- |
-| Behöver jag [!UICONTROL Private Device Graph] eller [!UICONTROL Device Coop] for [!UICONTROL Customer Journey Analytics]? | Nej, [!UICONTROL Private Device Graph] eller [!UICONTROL Device Coop] krävs inte för [!UICONTROL Customer Journey Analytics]. Faktum är att de ännu inte stöds. |
-| Behöver jag [!UICONTROL Experience Cloud ID] (ECID) för [!UICONTROL Customer Journey Analytics]? | Nej, [!UICONTROL Customer Journey Analytics] stöder alla ID:n i en datauppsättning, oavsett om [!UICONTROL ECID] eller något annat ID du väljer. |
-| Vad händer om jag behöver ETL (Extract, Transform, Load) före [!UICONTROL Customer Journey Analytics]? | Customer Journey Analytics omfattar [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) funktioner för att omvandla data innan de läggs in i Adobe Experience Platform datasjön. Om du behöver ETL efter att data redan har importerats, [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) innehåller några begränsade alternativ, men det kan tillkomma extra avgifter. |
++++**Behöver jag [!UICONTROL Private Device Graph] eller [!UICONTROL Device Coop] for [!UICONTROL Customer Journey Analytics]?**
 
-{style=&quot;table-layout:auto&quot;}
+Nej, [!UICONTROL Private Device Graph] eller [!UICONTROL Device Coop] krävs inte för [!UICONTROL Customer Journey Analytics]. Faktum är att de ännu inte stöds.
+
++++
+
+
++++**Behöver jag [!UICONTROL Experience Cloud ID] (ECID) för [!UICONTROL Customer Journey Analytics]?**
+
+Nej, [!UICONTROL Customer Journey Analytics] stöder alla ID:n i en datauppsättning, oavsett om [!UICONTROL ECID] eller något annat ID du väljer.
+
++++
+
+
++++**Vad händer om jag behöver ETL (Extract, Transform, Load) före [!UICONTROL Customer Journey Analytics]?**
+
+Customer Journey Analytics omfattar [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) funktioner för att omvandla data innan de läggs in i Adobe Experience Platform datasjön. Om du behöver ETL efter att data redan har importerats, [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) innehåller några begränsade alternativ, men det kan tillkomma extra avgifter.
+
++++
+
 
 ## 2. Stitching data (Cross-Channel Analytics) {#stitching}
 
-| Fråga | Svar |
-| --- | --- |
-| Kan [!UICONTROL Customer Journey Analytics] &quot;sammanfoga&quot; på olika enheter eller i olika datauppsättningar? | Ja. [!UICONTROL Customer Journey Analytics] har en sytlösning som kallas [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). Det gör att du kan ändra datamängdens personnummer, vilket möjliggör en sömlös kombination av flera datauppsättningar. |
-| Stöds sammanslagning från anonymt beteende till autentiserat beteende? | Ja. [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) läser användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. |
-| Hur fungerar&quot;replay&quot; i CCA? | CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. Replay gör att nya enheter i anslutningen sammanfogas. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
-| Hur fungerar sammanfogning av historiska data (backfill) i CCA? | När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
-| Vilket beteende förväntas för datauppsättningsposter som inte är sammanfogade? | **Exempel på scenario**: Du ansluter till två datauppsättningar i en CJA-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i datauppsättningen för webbhändelser. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i CJA. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas. |
++++**Kan [!UICONTROL Customer Journey Analytics] &quot;sammanfoga&quot; på olika enheter eller i olika datauppsättningar?**
 
-{style=&quot;table-layout:auto&quot;}
+Ja. [!UICONTROL Customer Journey Analytics] har en sytlösning som kallas [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). Det gör att du kan ändra datamängdens personnummer, vilket möjliggör en sömlös kombination av flera datauppsättningar.
+
++++
+
+
++++**Stöds sammanslagning från anonymt beteende till autentiserat beteende?**
+
+Ja. [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) läser användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID.
+
++++
+
+
++++**Hur fungerar&quot;replay&quot; i CCA?**
+
+CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. Replay gör att nya enheter i anslutningen sammanfogas. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching)
+
++++
+
+
++++**Hur fungerar sammanfogning av historiska data (backfill) i CCA?**
+
+När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics)
+
++++
+
+
++++**Vilket beteende förväntas för datauppsättningsposter som inte är sammanfogade?**
+
+**Exempel på scenario**: Du ansluter till två datauppsättningar i en CJA-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i datauppsättningen för webbhändelser. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i CJA. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas.
+
++++
 
 ## 3. Hämta data till [!UICONTROL Customer Journey Analytics] {#ingest}
 
-| Fråga | Svar |
-| --- | --- |
-| Kan jag kombinera data från olika [!UICONTROL Adobe Experience Platform] sandlådor i en [!UICONTROL Customer Journey Analytics] anslutning? | Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera datauppsättningar som finns i samma sandlåda. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
-| Hur ansluter jag onlinedata till offlinedata i [!UICONTROL Customer Journey Analytics]? | Så länge person-ID:t matchar mellan datauppsättningar, [!UICONTROL Customer Journey Analytics] kan koppla filter, attribuering, flöde, utfall osv. över datauppsättningar. |
-| Hur överför jag offlinedata till [!UICONTROL Customer Journey Analytics]? | Din rätt till Customer Journey Analytics gör att du kan importera data till Experience Platform. Sedan kan du skapa anslutningar till dessa data- och datavyer i [!UICONTROL Customer Journey Analytics], för rapporter i Analysis Workspace. Experience Platform datagrupp kan hjälpa dig att ge rekommendationer eller konsulttjänster vid behov. |
-| Hur får jag [!UICONTROL Adobe Analytics] data till [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics] data kan anslutas till Experience Platform via [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Mest [!UICONTROL Adobe Analytics] fält hämtas till XDM-format, men andra fält är inte tillgängliga ännu. |
-| Hur lång tid tar det att sätta ihop datauppsättningselement till en datavy? | Några timmar att komma igång och några dagar att fylla i de senaste 13 månadernas data. |
-| Är det nödvändigt att hämta in PII-data för att upprätta kopplingar mellan data? | Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är PII. |
-| Vilka begränsningar gäller för inmatning av tidigare eller framtida datum/tidsstämplar i CJA-händelsedatamängder? | <ul><li>Angående tidigare datum/tidsstämplar: Händelsedata som är upp till 10 år gamla.</li><li>Om framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.</li></ul> |
++++**Kan jag kombinera data från olika [!UICONTROL Adobe Experience Platform] sandlådor i en [!UICONTROL Customer Journey Analytics] anslutning?**
 
-{style=&quot;table-layout:auto&quot;}
+Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera datauppsättningar som finns i samma sandlåda. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets)
+
++++
+
+
++++**Hur ansluter jag onlinedata till offlinedata i [!UICONTROL Customer Journey Analytics]?**
+
+Så länge person-ID:t matchar mellan datauppsättningar, [!UICONTROL Customer Journey Analytics] kan koppla filter, attribuering, flöde, utfall osv. över datauppsättningar.
+
++++
+
+
++++**Hur överför jag offlinedata till [!UICONTROL Customer Journey Analytics]?**
+
+Din rätt till Customer Journey Analytics gör att du kan importera data till Experience Platform. Sedan kan du skapa anslutningar till dessa data- och datavyer i [!UICONTROL Customer Journey Analytics], för rapporter i Analysis Workspace. Experience Platform datagrupp kan hjälpa dig att ge rekommendationer eller konsulttjänster vid behov.
+
++++
+
+
++++**Hur får jag [!UICONTROL Adobe Analytics] data till [!UICONTROL Customer Journey Analytics]?**
+
+[!UICONTROL Adobe Analytics] data kan anslutas till Experience Platform via [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Mest [!UICONTROL Adobe Analytics] fält hämtas till XDM-format, men andra fält är inte tillgängliga ännu.
+
++++
+
+
++++**Hur lång tid tar det att sätta ihop datauppsättningselement till en datavy?**
+
+Några timmar att komma igång och några dagar att fylla i de senaste 13 månadernas data.
+
++++
+
+
++++**Är det nödvändigt att hämta in PII-data för att upprätta kopplingar mellan data?**
+
+Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är PII.
+
++++
+
+
++++**Vilka begränsningar gäller för inmatning av tidigare eller framtida datum/tidsstämplar i CJA-händelsedatamängder?**
+
+<ul><li>Angående tidigare datum/tidsstämplar: Händelsedata som är upp till 10 år gamla.</li><li>Om framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.</li></ul>
+
++++
+
 
 ## 4. Svarstidsfrågor {#latency}
 
 >[!NOTE]
 >Det finns ingen fast datastorlek i CJA och Adobe kan därför inte binda sig till en standardintag. Vi arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
 
-| Fråga | Svar |
-| --- | --- |
-| Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-data eller händelser: Behandlas och importeras inom 90 minuter, när data finns tillgängliga i AEP. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul> |
++++**Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]?**
+
+<ul><li>Live-data eller händelser: Behandlas och importeras inom 90 minuter, när data finns tillgängliga i AEP. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>
+
++++
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
@@ -97,20 +173,51 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 
 ## 8. Traditionell [!UICONTROL Adobe Analytics] komponenter
 
-| Fråga | Svar |
-| --- | --- |
-| Kan jag dela/publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform Unified Profile eller andra program från Experience Cloud? | Inte ännu, men vi arbetar aktivt för att leverera den här funktionen. |
-| Vad hände med min gamla [!UICONTROL eVar] inställning? | [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden. |
-| Var finns alla inställningar för session och variabel beständighet nu? | [!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer! |
-| Vad händer med våra befintliga segment/beräknade värden? | [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller beräkningstalen är kompatibelt med [!UICONTROL Customer Journey Analytics]. |
-| Hur [!UICONTROL Customer Journey Analytics] handtag `Uniques Exceeded` begränsningar? | [!UICONTROL Customer Journey Analytics] har inga unika värdebegränsningar, så du behöver inte bekymra dig om dem! |
-| Om jag är en befintlig [!DNL Data Workbench] kund, kan jag gå över till [!UICONTROL Customer Journey Analytics] just nu? | Det beror på ditt användningssätt - samarbeta med ditt Adobe-kontoteam. Dina nuvarande användningsexempel kanske redan passar Customer Journey Analytics! |
 
-{style=&quot;table-layout:auto&quot;}
++++**Kan jag dela/publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform Unified Profile eller andra program från Experience Cloud?**
+
+Inte ännu, men vi arbetar aktivt för att leverera den här funktionen.
+
++++
+
+
++++**Vad hände med min gamla [!UICONTROL eVar] inställning?**
+
+[!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden.
+
++++
+
+
++++**Var finns alla inställningar för session och variabel beständighet nu?**
+
+[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
+
++++
+
+
++++**Vad händer med våra befintliga segment/beräknade värden?**
+
+[!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller beräkningstalen är kompatibelt med [!UICONTROL Customer Journey Analytics].
+
++++
+
+
++++**Hur [!UICONTROL Customer Journey Analytics] handtag `Uniques Exceeded` begränsningar?**
+
+[!UICONTROL Customer Journey Analytics] har inga unika värdebegränsningar, så du behöver inte bekymra dig om dem!
+
++++
+
+
++++**Om jag är en befintlig [!DNL Data Workbench] kund, kan jag gå över till [!UICONTROL Customer Journey Analytics] just nu?**
+
+Det beror på ditt användningssätt - samarbeta med ditt Adobe-kontoteam. Dina nuvarande användningsexempel kanske redan passar Customer Journey Analytics!
+
++++
 
 ## 9. Beräkna anslutningsstorlek {#estimate-size}
 
-Se [Beräkna och hantera användningen](/help/getting-started/estimate-usage.md).
+Se [Beräkna och hantera användningen](/help/admin/estimate-usage.md).
 
 ## 10. Angående användningsövertäckning {#overage}
 
@@ -126,6 +233,6 @@ I vissa fall kanske du märker att det totala antalet händelser som är inkapsl
 
    ![uppdelning](assets/data-size2.png)
 
-1. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades det till Customer Journey Analytics igen, men med ett annat [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
+2. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades det till Customer Journey Analytics igen, men med ett annat [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
 
 Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
