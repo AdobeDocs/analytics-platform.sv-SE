@@ -4,9 +4,9 @@ description: Lär dig hur du lägger till kontobaserade data som en uppslagsdata
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
+source-git-commit: 1a18ddbab09e272189a25041396570d127bb81c3
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -90,4 +90,4 @@ Du kan till exempel hitta svar på svaren i inledningen:
 * Hur många anställda mappas till ett specifikt konto-ID?
 * Vilken bransch tillhör ett konto-ID?
 
-![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
+![project-lookup2](assets/analyze.png)
