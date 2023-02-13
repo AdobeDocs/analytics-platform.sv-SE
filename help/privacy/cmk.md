@@ -2,9 +2,9 @@
 title: Kundhanterade nycklar
 description: Lär dig hur du konfigurerar kundhanterade nycklar för CJA.
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Customer Journey Analytics (CJA) har alternativ för [Hälsovårdssköld](https:
 
 >[!NOTE]
 >
->Kundhanterade nycklar är för närvarande bara tillgängliga för organisationer som har köpt [Vårdsköld eller sköld för skydd av privatlivet och säkerheten](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) tilläggserbjudande.
+>Kundhanterade nycklar är för närvarande bara tillgängliga för organisationer som har köpt [Vårdsköld eller sköld för skydd av privatlivet och säkerheten](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en) tilläggserbjudande.
 
 ## Konfigurera CMK för CJA
 

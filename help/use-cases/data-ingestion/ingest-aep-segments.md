@@ -4,9 +4,9 @@ description: Beskriver hur man importerar AEP-målgrupper till Customer Journey 
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,6 @@ Nu kan du rapportera om `audienceMembershipId`, `audienceMembershipIdName` och `
 * Du bör utföra den här processen regelbundet så att målgruppsdata uppdateras kontinuerligt i CJA.
 * Du kan importera flera målgrupper inom en enda CJA-anslutning. Detta gör processen ännu mer komplicerad, men det är möjligt. För att detta ska fungera måste du göra några ändringar i ovanstående process:
    1. Utför den här processen för varje målgrupp i målgruppssamlingen inom RTCP.
-   1. CJA har stöd för arrayer/objektarrayer i profildatamängder. Använda en [array med objekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) för publikenMembershipId eller audiensMembershipIdName är det bästa alternativet.
+   1. CJA har stöd för arrayer/objektarrayer i profildatamängder. Använda en [array med objekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) för publikenMembershipId eller audiensMembershipIdName är det bästa alternativet.
    1. I datavyn skapar du en ny dimension med hjälp av delsträngsomformningen på `audienceMembershipId` fält för att konvertera den kommaavgränsade värdesträngen till en array. OBS! det finns för närvarande en gräns på 10 värden i arrayen.
    1. Nu kan du rapportera om den nya dimensionen `audienceMembershipIds` i CJA Workspace.
