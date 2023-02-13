@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 04dd36d9157da852aea7d488cbcc2617162d9324
+source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1354'
 ht-degree: 0%
 
 ---
@@ -84,13 +84,17 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 
 Vid flera tillfällen före, under och efter publikens publicering kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-| Svarstid | Latenslängd |
-| --- | --- |
-| Intag av data i datasjön | Upp till 30 minuter |
-| Intag av data från Experience Platform till CJA | Upp till 60 minuter |
-| Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Cirka 60 minuter |
-| Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
-| Skapar mål i AEP: Aktivera det nya segmentet | 1-2 timmar |
+![](assets/latency-diagram.png)
+
+| # | Svarstid | Latenslängd |
+| --- | --- | --- |
+| 1 | Intag av data i datasjön | Upp till 30 minuter |
+| 2 | Intag av data från Experience Platform till CJA | Upp till 60 minuter |
+| 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Cirka 60 minuter |
+| 4 | Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
+| 5 | Skapar mål i AEP: Aktivera det nya segmentet | 1-2 timmar |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Använda CJA-målgrupper i Experience Platform {#audiences-aep}
 
