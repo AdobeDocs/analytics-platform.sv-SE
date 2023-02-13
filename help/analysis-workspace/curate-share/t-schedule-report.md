@@ -5,9 +5,9 @@ title: Schemalägg projekt
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 7ef67276dabca2afdc9e3e799aab5eb5d93d22fd
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ I Hanteraren för schemalagda projekt visas de objekt som en viss användare har
 
 >[!NOTE]
 >
->Alternativet att lösenordsskydda ett schemalagt projekt visas bara för CJA-kunder som har köpt [Hälsovårdssköld](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en) tilläggsprodukt.
+>Alternativet att lösenordsskydda ett schemalagt projekt visas bara för CJA-kunder som har köpt [Hälsovårdssköld](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html) tilläggsprodukt.
 
 Adobe använder lösenordet för att kryptera schemalagda projekt, oavsett om de skickas i .pdf- eller .csv-format.
 
