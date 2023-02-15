@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1518'
 ht-degree: 3%
 
 ---
@@ -83,7 +83,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | GeoSegmenteringsdimensioner | All GeoSegmentation/geography som samlas in i Adobe Analytics flödar till CJA via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementeringar som inte använder Analytics Source Connector, t.ex. de som använder AEP Web SDK för digital datainsamling, kommer inte att ha det fullständiga urvalet av geografiska sökningar som utförs automatiskt: Land och delstat stöds globalt, vilket inte gäller för stad och postnummer. |
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
 | Bearbetningsregler | För Analytics Source Connector-baserade datauppsättningar tillämpas fortfarande bearbetningsregler. [Prestandafunktioner för data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) kan också användas som ersättning för bearbetningsregler för data som går direkt till plattformen. |
-| A4T | Delvis stöd ges via fälten i [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Stöd för A4T-vänliga namn på målaktiviteter och -upplevelser planeras. |
+| A4T | Delvis stöd ges via fälten i [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Stöd för A4T-vänliga namn på målaktiviteter och upplevelser planeras. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -112,7 +112,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Activity Map | Support är ännu inte planerat. |
 | Advertising Cloud | Support är ännu inte planerat. |
-| Sammanfattningsdatakällor | Support är ännu inte planerat. |
 
 {style=&quot;table-layout:auto&quot;}
 
