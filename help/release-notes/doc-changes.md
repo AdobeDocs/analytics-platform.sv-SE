@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1410'
 ht-degree: 7%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Februari 2023** |  |
+| Jämför CJA med BI-lösningar | Nytt dokument på en [jämförelse](../getting-started/cja-vs-bi.md) från Customer Journey Analytics till vanliga BI-lösningar. |
 | Uppdatera till publikdokumentation | Nytt avsnitt på [latenshändelser](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Uppdatera till publikdokumentation | När du har skapat en målgrupp skapar Adobe en Experience Platform [direktuppspelningssegment för varje ny CJA-publik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/components/date-ranges/calendar.md#relative-panel-dates). |
