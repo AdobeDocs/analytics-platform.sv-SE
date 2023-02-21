@@ -4,10 +4,10 @@ title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
+source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -74,11 +74,7 @@ I ett CJA Workspace-projekt kan ni hämta mätvärden som&quot;AI-order&quot; oc
 
 ![AAI-dimensioner](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->De här dimensionerna och måtten namnges inte internt på det här sättet. De här är&quot;egna namn&quot;. The [namnkonvention i Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) följer schemasökvägen. Vi rekommenderar att du byter namn på den långa AI-schemasökvägen till korta, användarvänliga namn (mått/mått) i CJA. Du kan göra det i **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Klicka på ett schemafält -> **[!UICONTROL Component name]**.
 
-![Ändra dimensionsnamn](assets/change-name.png)
 
 **Order med påverkad och inkrementell poängsättning**
 
