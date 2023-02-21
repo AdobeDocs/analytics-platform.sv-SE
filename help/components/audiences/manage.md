@@ -2,9 +2,9 @@
 title: Hantera målgrupper skapade i Customer Journey Analytics
 description: Lär dig hantera målgrupper i Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 Genom att hantera tidigare skapade målgrupper kan ni
 
 * **Schemalägg eller avschemalägg** automatisk uppdatering/uppdatering. Det maximala utgångsdatumet för schemat är 1 år.
-* **Förnya ett schema för målgruppsuppdatering** när den snart går ut. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan schemat förfaller.
-* Visa **uppdateringsintervall** och **senaste gången en publik uppdaterades**
+* **Förnya ett målgruppsuppdateringsschema** när den snart går ut. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan schemat förfaller.
+* Visa **uppdateringsintervall** och **senaste gången en målgrupp uppdaterades**
 * Få insikter i **hur lång tid det tog att producera en publik** från Customer Journey Analytics (CJA), och hur lång tid det tog att få publiken att visas i kundprofilen i realtid för aktiveringsändamål.
 * Se om målgrupperna i CJA är **används aktivt av kundprofilen i realtid** eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av CJA.
 

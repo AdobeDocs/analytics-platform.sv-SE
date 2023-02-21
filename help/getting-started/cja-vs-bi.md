@@ -4,9 +4,9 @@ description: Jämför Customer Journey Analytics med BI-lösningar
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 91cfd3ccfe1864b6a2a50a8881e73bd778a7848e
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Ett vanligt hinder för traditionella strategier för att analysera kundresor ä
 
 Om du vill förstå hur en viss digital kampanj påverkar en offlineåtgärd som lagras i en annan datasilo skickar du en begäran till BI-teamets kö. BI-teamet skriver den fråga som krävs för att hämta och omvandla data. När rådata har hämtats skapar BI-teamet visualiseringen. Informationen delas med dig och du lägger tid på att kombinera insikter och extrahera data för aktivering i andra system.
 
-Vart och ett av dessa steg kan ta timmar, dagar eller till och med veckor. Om det finns uppföljningsfrågor eller problem med de data som efterfrågas kan det ta ännu mer tid innan dessa frågor besvaras och processen fortsätter. För kontinuerlig analys, utforskning och förståelse av kundresan är den här processen ineffektiv och inte skalbar. BI-team hanterar vanligtvis mer än bara kundreserelaterade frågor.
+Vart och ett av dessa steg kan ta timmar, dagar eller till och med veckor. Om det finns uppföljningsfrågor eller problem med de data som efterfrågas kan det ta ännu mer tid innan dessa frågor besvaras och cykeln fortsätter. För kontinuerlig analys, utforskning och förståelse av kundresan är den här processen ineffektiv och inte skalbar. BI-team hanterar vanligtvis mer än bara kundreserelaterade frågor.
 
 ## CJA: Demokratiserat arbetsflöde för online- och offlinedata
 
-CJA erbjuder en miljö för att koppla samman data över flera kanaler, både online och offline, på en övergripande kundnivå, enbart i syfte att förstå kundresan. Den kräver däremot en inledande konfiguration för att ansluta och definiera vyer till de data som du kvalificerar som relevanta. När uppgifterna väl är ifyllda är de dock lätt tillgängliga för pågående analyser och undersökningar, vilket ger successivt insikt i och förståelse för kundresorna. Genom att demokratisera kombinerade online- och offlinedata kan ni besvara kundreserelaterade frågor på några sekunder.
+CJA erbjuder en miljö för att koppla samman data över flera kanaler, både online och offline, på en övergripande kundnivå, enbart i syfte att förstå kundresan. Den första konfigurationen krävs för att [koppla](/help/connections/overview.md) och [definiera vyer](/help/data-views/data-views.md) till de uppgifter ni anser vara relevanta. När uppgifterna är ifyllda är de dock lätt tillgängliga för kontinuerlig analys och utforskning. Ni kan stegvis få insikter i och förstå kundresorna. Genom att demokratisera kombinerade online- och offlinedata kan ni besvara kundreserelaterade frågor på några sekunder.
 
 ![CJA-arbetsflöde](./assets/cjaworkflow.png)
 
-Du kan använda CJA för att ställa frågor med arbetsytan för visuell analys och få insikter nästan direkt. Flerkanalsdata och rapporter är omedelbart tillgängliga, utan någon SQL-kod. Ytterligare frågor och analyser kan göras med en enkel dra och släpp-funktion i användargränssnittet, med helt korrelerade data. Du kan fortsätta ställa frågor och stegvis utforska fler detaljer när du behöver dem. Sedan kan ni vidta omedelbara åtgärder för de insikter ni hittar, som att dela ut målgrupper för aktivering och samordning.
+Du kan använda CJA för att ställa frågor i den visuella Analysis Workspace-miljön och få insikter nästan direkt. Flerkanalsdata och rapporter är omedelbart tillgängliga, utan någon SQL-kod. Ytterligare frågor och analyser kan göras med en enkel dra och släpp-funktion i användargränssnittet, med helt korrelerade data. Du kan fortsätta ställa frågor och stegvis utforska fler detaljer när du behöver dem. Sedan kan ni vidta omedelbara åtgärder för de insikter ni hittar, som att dela ut målgrupper för aktivering och samordning.
 
 ## CJA:s kraftfulla rapporteringsmotor
 
@@ -48,15 +48,15 @@ CJA använder en kraftfull egen arkitektur som distribuerar analyser över hundr
 
 * **Effektiv fråga om komplexa dataströmmar**: En av de största skillnaderna i rapporteringsmotorn jämfört med traditionella SQL- och NoSQL-databaser är möjligheten att fastställa predikat baserat på sekvensorienterade relationer på en grundläggande nivå. Dessa grundläggande frågeåtgärder kan titta på postströmmen, som består av många sammanflätade (och till och med kapslade) sekvenser. De utför en fråga mot alla dessa sammanflätade dataströmmar med samma effektivitet som en enda sammanhängande sekvensåtgärd.
 
-* **Utformad för att snabbt besvara stora frågor**: Rapporteringsmotorn är inte lika generell som traditionella big data-system. Det är dock specifikt utformat för att besvara frågor som omfattar miljontals eller till och med miljarder poster (händelsedata/upplevelsehändelser), vanligtvis på mindre än en sekund. Till skillnad från andra stora datasystem gör den inte detta genom att sampla data eller genom att förberäkna svaren på alla frågor som du tror att du kan ställa. I stället kan de snabbt beräkna svaren för att ge stöd åt interaktiva frågetillfällen. Denna specifika utformning av CJA:s rapporteringsmotor gör det lättare att få tillgång till data snabbt och snabbt för pågående analyser och undersökningar, vilket gör att ni kan få insikter och förståelse för kundresor.
+* **Utformad för att snabbt besvara stora frågor**: Rapporteringsmotorn är inte lika generell som traditionella big data-system. Den är dock särskilt utformad för att svara på frågor som omfattar miljontals eller till och med miljarder poster (händelsedata/upplevelsehändelser), vanligtvis på mindre än en sekund. Till skillnad från andra stora datasystem gör den inte detta genom att sampla data eller genom att förberäkna svaren på alla frågor som du tror att du kan ställa. I stället kan de snabbt beräkna svaren för att ge stöd åt interaktiva frågetillfällen. Denna specifika utformning av CJA:s rapporteringsmotor gör det lättare att få tillgång till data snabbt och snabbt för pågående analyser och undersökningar, vilket gör att ni kan få insikter och förståelse för kundresor.
 
-* **Agera som en headless BI-lösning**: Du definierar mått, mätvärden, filter på ett ställe, och sedan kan alla CJA-klienter (inklusive vårt publika CJA API) få åtkomst till dessa komponenter. Detta gör att komplexa frågor tas bort från slutanvändarna och garanterar att resultatet blir detsamma, oavsett vilken rapporterings- eller visualiseringsklient du använder.
+* **Fungerar som en headless BI-lösning**: Du definierar mått, mätvärden, filter på ett ställe, och sedan kan alla CJA-klienter (inklusive vårt publika CJA API) få åtkomst till dessa komponenter. Detta gör att komplexa frågor tas bort från slutanvändarna och garanterar att resultatet blir detsamma, oavsett vilken rapporterings- eller visualiseringsklient du använder.
 
 ## CJA:s unika visualiseringsfunktioner
 
 Rapporteringsmotorn är avgörande för CJA så att ni kan interagera med och agera på alla kundresedata i den rapporteringsmotorn. CJA har en omfattande uppsättning komponenter som gör att du kan göra detta visuellt och genom att dra och släppa. Med BI-visualiseringsverktyg kan du utforska inom gränserna för SQL-förberedda data (som definieras av IT). CJA gör det möjligt att dela upp och dela upp och dela upp så mycket du vill, utan att behöva gå tillbaka till IT för att skapa ytterligare en SQL-vy.
 
-&quot;Progressivt&quot; är ett nyckelbegrepp här: Till skillnad från de flesta visualiseringar i BI-verktyg gör det visuella dra-och-släpp-gränssnittet i CJA att du kontinuerligt kan dela upp dina data efter dina specifika behov: interaktivt bygga frågor visuellt med relevanta mått, dimensioner, filter (segment), beräkningar, tidslinjer, anteckningar och andra analysvärden.
+&quot;Progressivt&quot; är ett nyckelbegrepp här: Till skillnad från de flesta visualiseringar i BI-verktyg gör det visuella dra-och-släpp-gränssnittet i CJA att du kontinuerligt kan dela upp dina data efter dina specifika behov: kan du interaktivt skapa visuella frågor med relevanta mått, dimensioner, filter (segment), beräkningar, tidslinjer, anteckningar och andra analysvärden.
 
 De inbyggda visualiseringskomponenterna är smarta funktioner som:
 
@@ -66,11 +66,11 @@ De inbyggda visualiseringskomponenterna är smarta funktioner som:
 
    * [Kundlojalitetsanalys via kohort-/latenstabeller](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), där du bara drar och släpper mätvärden/dimensioner i ett verktyg och du är klar på mindre än 30 sekunder,
 
-   * [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualiseringar. konfigurera på mindre än en minut
+   * [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualiseringar. Kan installeras på mindre än en minut.
 
-   * [Attributionsmodeller](/help/analysis-workspace/attribution/algorithmic.md) som första beröring, sista beröring, deltagande, tidsminskning, till och med egna, som lägger in några klick,
+   * [Attributionsmodeller](/help/analysis-workspace/attribution/algorithmic.md) som första beröring, sista beröring, deltagande, tidsminskning, till och med anpassade beröringar som tar några klick att ställa in.
 
-* **Segmenteringsfunktioner i alla steg av din progressiva prospektering**: när ni tycker att det är vettigt kan ni publicera er målgrupp i Experience Platform och därifrån till någon av de destinationer som stöds,
+* **Segmenteringsfunktioner i alla steg av din progressiva prospektering**: när du tycker att det är vettigt kan du publicera publiken i Experience Platform och därifrån till någon av de destinationer som stöds.
 
 * **Yrkesställning** som är helt [anpassningsbar](/help/data-views/component-settings/persistence.md): bestämmer ni när en session, som en del av en kanal i en kundresa, börjar och slutar.
 
@@ -85,5 +85,5 @@ Det är svårt att jämföra CJA:s visualiseringsfunktioner med vad BI-verktygen
 
 ## Sammanfattning
 
-CJA skiljer sig från BI-verktygen när det gäller hur det integrerar en optimerad rapportmotor som fokuserar på kundresan sömlöst med användarvänliga verktyg och komponenter för att utföra analyser och skapa rapporter och avancerade visualiseringar. Allt från ett enda användargränssnitt, utan att du som användare behöver växla fram och tillbaka mellan frågemotorn och visualiseringsmiljön.
+CJA skiljer sig från BI-verktygen när det gäller hur det integrerar en optimerad rapportmotor som fokuserar på kundresan sömlöst med användarvänliga verktyg och komponenter för att utföra analyser och skapa rapporter och avancerade visualiseringar. Allt från ett och samma gränssnitt, utan att du behöver växla fram och tillbaka mellan frågemotorn och visualiseringsmiljön.
 

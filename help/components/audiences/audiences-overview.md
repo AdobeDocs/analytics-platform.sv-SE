@@ -2,10 +2,10 @@
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärde
 * Använda publiken för en resa i Adobe Journey Optimizer.
 * Exportera målgruppen till en tredje part via ett Experience Platform-mål.
 * Förbättra kundprofilen i realtid med användbara attribut som bygger på händelsebaserade data i CJA.
-* Allt detta med minimal fördröjning efter att målgruppen publicerats (några minuter)
+* Allt detta med minimal fördröjning efter publikens publicering. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
 * Publicera engångspublikationer eller återkommande målgrupper
 
 ## Viktiga termer
