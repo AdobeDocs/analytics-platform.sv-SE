@@ -4,9 +4,9 @@ title: Översikt över kalender- och datumintervall
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 969040538e12ef3c3d15881ae225af02bef1cba4
+source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '811'
 ht-degree: 1%
 
 ---
@@ -70,3 +70,10 @@ När du använder en veckobaserad anpassad kalender och lägger till månader el
 ### Om segment som använder rullande datum och relativa paneldatumintervall {#segments-relative-dates}
 
 Om du skapar ett segment eller använder ett segment med ett rullande datum, t.ex. de senaste 7 dagarna eller de senaste 2 veckorna, och du klickar på segmentförhandsvisningen, startar det rullande datumet från *Idag* i stället för panelens startdatum. Det innebär att förhandsvisningen av segmentet inte matchar när du faktiskt använder segmentet i tabellen. Förhandsgranskningen påverkas, inte själva segmentet.
+
+## Riktlinjer för paneldatumintervall och förhandsvisningar {#guidelines-panel-dates}
+
+* Från och med februari-versionen baseras förhandsgranskningarna av komponenter och data på panelens datumintervall och inte på de senaste 90 dagarna.
+* Alla komponenter i den vänstra listen är tillgängliga baserat på panelens datumintervall.
+* Alla förhandsvisningar av datum i segmentet och beräknade mätvärden baseras på panelens datumintervall (såvida de inte öppnas från komponenthanterarna, som inte har någon associerad panel, kommer de fortfarande att baseras på de senaste 90 dagarna).
+* Förhandsgranskningar av data visar data eller komponenter baserat på panelens datumintervall.
