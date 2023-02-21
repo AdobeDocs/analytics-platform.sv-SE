@@ -4,10 +4,10 @@ title: Integrera Attribution AI med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '919'
+ht-degree: 1%
 
 ---
 
@@ -74,7 +74,15 @@ I ett CJA Workspace-projekt kan ni hämta mätvärden som&quot;AI-order&quot; oc
 
 ![AAI-dimensioner](assets/aai-dims.png)
 
+Utdata för bakgrundsmusik med råpoäng i AAI har ett kapslat schema, där sökvägen till fält kan vara tillräckligt lång för att ta upp de flesta utrymmen i tabeller eller visualiseringar. För enkelhet [!UICONTROL Display Name] genereras och utnyttjas automatiskt i CJA enligt reglerna nedan:
 
+* Alla fält har ett AI-prefix
+* För kontaktpunktsfält:
+   * För fält som ingår i XDM-poängen visas de i CJA som `AAI T {field name}`
+   * För fält som inkluderas som passThrough-kolumn visas de i CJA som `AAI T PT {field name}`
+* För konverteringsfält:
+   * För fält som ingår i XDM-poängen visas de i CJA som `AAI C {field name}`
+   * För fält som inkluderas som passThrough-kolumn visas de i CJA som `AAI C PT {field name}`
 
 **Order med påverkad och inkrementell poängsättning**
 
