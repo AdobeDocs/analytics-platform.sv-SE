@@ -1,13 +1,13 @@
 ---
-title: Integrera Adobe Journey Optimizer med Customer Journey Analytics
+title: Integrera Adobe Journey Optimizer (AJO) med Customer Journey Analytics (CJA)
 description: Hämta in data som genererats av AJO och analysera dem med Analysis Workspace i CJA.
-source-git-commit: b24ad572ca36bbafffcd242fe257a2113977392d
+exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
+source-git-commit: 3a4dbe9a87f8e195a4daf78423d29d73f2be0f83
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
-
 
 # Integrera Adobe Journey Optimizer med Customer Journey Analytics
 
@@ -27,35 +27,56 @@ När Journey Optimizer data finns i Adobe Experience Platform kan man [Skapa en 
 
 När en anslutning har skapats kan du skapa en eller flera [Datavyer](/help/data-views/create-dataview.md) för att konfigurera önskade mått och mätvärden som är tillgängliga i Customer Journey Analytics.
 
-Du kan skapa följande mätvärden i en datavy för att få en ungefärlig paritet med liknande mätvärden i Journey Optimizer. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Data View Manager för mer information om hur du anpassar mått och mätvärden.
+>!![NOTE]
+Datamatchningar mellan AJO och CJA är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
 
-| Mått | Beskrivning | Inställningar för datavy |
+### Konfigurera dimensioner i datavyn
+
+Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med liknande dimensioner i Journey Optimizer. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Data View Manager för mer information om dimensionsanpassningsalternativ.
+
+| Dimension | Schemaelement | Komponentinställningar |
 | --- | --- | --- |
-| Studsar | Antalet meddelanden som studsade | Använda schemasträntelementet `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Om något villkor uppfylls<br>Lika med: `bounce`<br>Lika med: `denylist` |
-| Fel | Antalet meddelanden som har felrapporterats | Använda schemasträntelementet `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `error` |
-| Exkluderar | Antalet meddelanden som utelämnats | Använda schemasträntelementet `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `exclude` |
-| Avbeställ | Antal avbrutna prenumerationer | Använda schemasträntelementet `_experience.customerJourneyManagement.messageInteraction.interactionType` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `unsubscribe` |
-| Klickningar | Antal klick i meddelanden | Använda schemasträntelementet `_experience.customerJourneyManagement.messageInteraction.interactionType` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `click` |
-| Öppnar | Antalet öppnade meddelanden | Använda schemasträntelementet `_experience.customerJourneyManagement.messageInteraction.interactionType` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `open` |
-| Skräppost | Antal skräppostklagomål | Använda schemasträntelementet `_experience.customerJourneyManagement.messageInteraction.interactionType` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `spam_complaint` |
-| Meddelanden har skickats | Antal meddelanden som skickats | Använda schemasträntelementet `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `sent` |
-| Synkroniseringsfel | Det totala antalet meddelanden som inte kunde synkroniseras | Använda schemasträntelementet `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` med följande inställningar:<br>Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `sync` |
+| Resensnamn | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponenttyp: Dimension |
+| Resenamn och version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Komponenttyp: Dimension |
+| Namn på resenod | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponenttyp: Dimension |
+| Resensnodtyp | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Komponenttyp: Dimension |
+| Kampanjnamn | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Komponenttyp: Dimension |
+| Kanal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Komponenttyp: Dimension |
+| Push-titel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Komponenttyp: Dimension |
+| E-postämne | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Komponenttyp: Dimension |
+| Länketikett | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Komponenttyp: Dimension |
+| Experimentnamn | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | Komponenttyp: Dimension<br>Kontextetiketter: Experimentationsexperiment |
+| Behandlingsnamn | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Komponenttyp: Dimension<br>Kontextetiketter: Experimentationsvariant |
+| Felorsak vid e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Komponenttyp: Dimension |
+| Orsak till undantag av e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Komponenttyp: Dimension |
 
 {style=&quot;table-layout:auto&quot;}
 
-## Konfigurera beräknade värden med Journey Optimizer-statistik
+### Konfigurera mått i datavyn
+
+Du kan skapa följande mätvärden i en datavy för att få en ungefärlig paritet med liknande mätvärden i Journey Optimizer. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Data View Manager för mer information om alternativ för anpassning av mätvärden.
+
+| Mått | Beskrivning | Schemaelement | Komponentinställningar |
+| --- | --- | --- | --- |
+| Studsar | Antalet meddelanden som studsade, inklusive både omedelbara studsar och studsar efter leveransen. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Om något villkor uppfylls<br>Lika med: `bounce`, är lika med: `denylist` |
+| studsar efter leverans | Vissa e-posttjänster rapporterar e-postmeddelanden som skickas och skickar dem sedan. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `async` |
+| E-postklick | Antalet klick i meddelanden. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `click` |
+| E-post öppnas | Antalet öppnade meddelanden. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `open` |
+| Fel | Antalet meddelanden som har felrapporterats. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `error` |
+| Exkluderar | Antalet meddelanden som utelämnats. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `exclude` |
+| Skickar | Antalet meddelanden som e-postleverantörer accepterade. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `sent` |
+| Skräppost | Antalet skräppostklagomål. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `spam_complaint` |
+| Avbeställ | Antal avbrutna prenumerationer. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `unsubscribe` |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Konfigurera beräknade värden i Analysis Workspace
 
 När du har konfigurerat önskade mått och mätvärden för Journey Optimizer datauppsättning kan du även konfigurera [Beräknade mått](/help/components/calc-metrics/calc-metr-overview.md) för ytterligare insikter om dessa data. Dessa beräknade värden baseras på ovanstående mått som skapats i Data View Manager.
 
 | Beräknat mätvärde | Beskrivning | Formel |
 | --- | --- | --- |
-| Totalt antal skickade meddelanden | Det totala antalet meddelanden som skickats, slutförts eller misslyckats | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+| Skickade meddelanden | Totalt antal skickade meddelanden. Inkluderar slutförda eller misslyckade meddelanden. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
+| Levererade meddelanden | Antalet e-postmeddelanden som levereras till kunderna. | `[Sends] - [Bounces After Delivery]` |
 
 {style=&quot;table-layout:auto&quot;}
-
-## Skillnader i rapporteringen mellan Journey Optimizer och Customer Journey Analytics
-
-Avvikelser mellan produkter ligger vanligtvis mellan 1 och 2 %. Större skillnader mellan produkterna kan eventuellt tillskrivas följande:
-
-* Bearbetningstiden för inkommande data kan skilja sig något mellan produkterna, särskilt för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
-* Det beräknade måttet&quot;Totalt antal skickade meddelanden&quot; inkluderar inte måttet&quot;Försök igen&quot;. Data för mätvärdet &quot;Retries&quot; ingår inte i datauppsättningen, vilket kan visa lägre värden i CJA-rapportering jämfört med AJO-rapportering. Återförsöksdata konverteras dock till måtten&quot;Meddelanden har skickats&quot; eller&quot;studsar&quot;. Använd datumintervall från en vecka eller tidigare för att minska avvikelser med måttet&quot;Totalt antal skickade meddelanden&quot; mellan produkter.
