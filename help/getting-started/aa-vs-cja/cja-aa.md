@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1586'
 ht-degree: 3%
 
 ---
@@ -58,6 +58,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Skräddarsydd professionalisering | Stöd för alla anpassade sessioneringsfunktioner, förutom mobilbakgrundstötar. |
 | Varaktighet för marknadsföringsvariabel | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Kundattribut | De kallas nu&quot;profildatauppsättningar&quot; och importeras inte automatiskt från Experience Cloud, utan måste överföras till AEP innan de blir tillgängliga i CJA. |
+| Datafeeds | Första generationens dataexport är tillgänglig via [API för AEP-dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) och via [AEP-destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Dessa alternativ ger export på träffnivå/radnivå av alla data som samlas in eller hämtas till AEP Data Lake. Postprocessdatakolumner är inte tillgängliga eftersom postkolumner beräknas vid frågetiden. Det går att exportera postkolumner genom rapportering. |
 | Metrisk deduplicering | Nu konfigurerat för mätvärden i datavyer. Metrisk borttagning av dubbletter sker på person- eller sessionsnivå i stället för på data-, data- eller anslutningsnivå. |
 | Poster, avslutningar och använd tid för mått och mätvärden | Stöds (Poster och avslutningar kallas nu för Sessionsstart och Sessionsslut) och beräknas på ett något annorlunda sätt. |
 | Inställningar för beständighet av eVar | Varor ingår inte längre i CJA. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Dimensioner som anges i datavyer är begränsade till högst 90 dagars beständighet och stöder inte obegränsad beständighet. |
@@ -99,7 +100,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Realtidsrapportering | Support planeras. |
 | Segment IQ | Support planeras. |
 | Valutakonvertering | Support planeras. |
-| Datafeeds | Stöd planeras via AEP-destinationer. |
 | Datakällor för transaktions-ID | Support planeras. |
 | Migrera projekt/filter/beräknade värden från AA till CJA | Support planeras. |
 | Datakällor på sammanfattningsnivå | Support planeras. |
