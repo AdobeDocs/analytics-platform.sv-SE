@@ -4,10 +4,10 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 7%
+source-wordcount: '1434'
+ht-degree: 6%
 
 ---
 
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Mars 2023** |  |
+| Funktioner | Uppdaterat [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) med en tabell över funktioner som är tillgängliga i CJA men inte tillgängliga eller stöds i AA. |
 | **Februari 2023** |  |
 | Jämför CJA med BI-lösningar | Nytt dokument på en [jämförelse](../getting-started/cja-vs-bi.md) från Customer Journey Analytics till vanliga BI-lösningar. |
 | Uppdatera till publikdokumentation | Nytt avsnitt på [latenshändelser](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
