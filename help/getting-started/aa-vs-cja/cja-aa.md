@@ -4,16 +4,16 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
+source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '2015'
 ht-degree: 3%
 
 ---
 
 # Funktioner i Customer Journey Analytics
 
-I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds delvis eller inte alls i Customer Journey Analytics (CJA). De här listorna ändras över tid när funktioner läggs till i CJA.
+I följande tabell visas vilka funktioner i Adobe Analytics (AA) som stöds, stöds delvis eller inte alls i Customer Journey Analytics (CJA) och vilka funktioner i CJA som inte stöds eller är tillgängliga i AA. De här listorna ändras över tid när funktioner läggs till i CJA.
 
 ## Funktioner/komponenter som stöds fullt ut
 
@@ -122,3 +122,20 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 * Bokmärken för rapporter och analyser
 * Rapporter och analysmål
 * Mobiltjänster
+
+## CJA-funktioner som inte finns i Adobe Analytics
+
+I följande tabell visas funktioner som är tillgängliga i Customer Journey Analytics (CJA), men som inte stöds i Adobe Analytics (AA).
+
+| Funktion | Mer information |
+| --- | --- |
+| Inkvartering av alla typer av data | CJA kombineras med Experience Platform för att innehålla alla typer av datamappningar och datatyper. Använda [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv), kan data representeras och struktureras på ett enhetligt sätt, vara klara för kombination och utforskande. Adobe Analytics fokuserar främst på webb- och mobilanalysdata med vissa funktioner för att [importdata](https://experienceleague.adobe.com/docs/analytics/import/home.html). |
+| Obegränsat antal Dimensioner | CJA-dimensionerna är obegränsade. värden kan vara numeriska värden, text, objekt, listor eller blandningar av alla. Dimensioner kan vara kapslade eller hierarkiska. Analyserna stöder upp till högst 75 props och 250 eVars. Detta tar bort de aktuella måttbegränsningarna med hjälp av dimensioner och händelser. |
+| Obegränsad kardinalitet/unika värden | CJA har stöd för ett obegränsat antal unika värden eller dimensionsposter som kan rapporteras inom en enda dimension. AA är begränsat till 500 kB unika värden. Detta eliminerar de rapporterings- och analysbegränsningar som för närvarande finns med storskalig Analytics-implementering. |
+| Rapportera tidsomvandlingar | Rapportera tidsomvandlingar (kallas datavyer) i CJA gör att du kan tolka data ytterligare från en anslutning. Du kan ändra eller ta bort data utan att implementera om dem; Använda delsträngar för att manipulera dimensioner. skapa mätvärden från vilket värde som helst, filtrera underhändelser. Allt detta kan göras på ett icke-förstörande sätt. Adobe Analytics har begränsade funktioner genom virtuella rapportsviter och sessioner. |
+| Experimentationsanalys | CJA kan utvärdera lyften och förtroendet för alla experiment från alla datakällor som definieras som en del av en anslutning. På så sätt kan ni förstå orsaks- och effektförhållandet mellan kundinteraktioner över alla kanaler. Analyserna begränsas till experimentell analys genom integreringen med Analytics for Target (A4T). |
+| Enhetsövergripande analys | CJA stöder den sömlösa kombinationen av enhetsspecifika datauppsättningar från oautentiserade och autentiserade sessioner. Du kan även fylla i historiska data baklänges till kända enheter. I Analytics är den här funktionen begränsad till en enda rapportserie och användningen av ett enhetsdiagram. |
+| SQL Access | Med hjälp av alternativet Data Distiller kan CJA ta bort begränsningarna för data som samlas in på Adobe backend-bearbetningen. Du kan ändra dina data med SQL, skapa nya värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
+| Förbättrade säkerhets- och sekretessalternativ - beredskap för HIPAA | CJA är redo för HIPAA och erbjuder ytterligare säkerhetsalternativ för regelefterlevnad. Adobe Analytics är inte HIPAA-klart. |
+
+{style=&quot;table-layout:auto&quot;}
