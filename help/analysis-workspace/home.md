@@ -5,9 +5,9 @@ description: Översikt över Analysis Workspace funktioner
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: e104a7a36df3743028fd18b47b46e936841a586a
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '402'
 ht-degree: 3%
 
 ---
@@ -20,23 +20,27 @@ Om du bara har några minuter kan du titta på den här korta översikten för a
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Logga in Customer Journey Analytics {#login}
+## Logga in i Customer Journey Analytics {#login}
 
-Om du vill börja använda Analysis Workspace loggar du in på Customer Journey Analytics genom att gå till [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
+Om du vill börja använda Analysis Workspace loggar du in på Customer Journey Analytics genom att gå till [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att landa på projektsidan om du inte tidigare har valt ett specifikt projekt.
 
-![](assets/login-analytics.png)
+![](assets/create-new-project.png)
 
-## Använda självstudiekursen Utbildning {#training-tutorial}
+## Använd mallen för självstudiekurser {#training-tutorial}
 
-När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Klicka på **[!UICONTROL Create New Project]** och sedan markera **Utbildning - självstudiekurs** inom det nya projektet modalt.
+När du har loggat in kan du använda Analysis Workspace självstudiekursmall, som vägleder dig genom vanliga termer och steg för att skapa din första analys i Workspace. Börja med självstudiekursen
+
+1. Klicka på **[!UICONTROL Learning]** till vänster.
+1. Klicka på **[!UICONTROL Open Tutorial]**.
 
 ![](assets/training-tutorial.png)
 
 ## Skapa ett nytt projekt {#new-project}
 
-När självstudiekursen är klar kan du börja skapa ditt första projekt. The **nytt projekt modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [tomt mobilstyrkort](/help/mobile-app/curator.md), beroende på om du tänker dela din analys via webbläsaren eller mobilappen Customer Journey Analytics dashboards.
+När du är klar med självstudiekursen kan du börja skapa ditt första projekt. På [!UICONTROL Projects] kan du välja att börja från
 
-![](assets/create-new-project.png)
+* [!UICONTROL Blank project] om du planerar att dela analysen från webbläsaren, eller
+* [[!UICONTROL Blank mobile scorecard]](/help/mobile-app/curator.md)om du tänker dela med dig av dina analyser från mobilappen Customer Journey Analytics dashboards.
 
 ## Bygg en analys {#analysis}
 
