@@ -2,9 +2,9 @@
 title: Integrera Adobe Journey Optimizer (AJO) med Customer Journey Analytics (CJA)
 description: Hämta in data som genererats av AJO och analysera dem med Analysis Workspace i CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 9aed4e724c564272071b96c037f4eb0e82572e6f
+source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,14 @@ Adobe Experience Platform är den centrala datakällan och länken mellan Journe
 ## Skapa en anslutning i Customer Journey Analytics
 
 När Journey Optimizer data finns i Adobe Experience Platform kan man [Skapa en anslutning](/help/connections/create-connection.md) baserat på din Journey Optimizer-datauppsättning. Markera den datauppsättning som du skickade till plattformen.
+
+| Datauppsättning | Datauppsättningstyp | Anslutningsinställningar | Beskrivning |
+| --- | --- | --- | --- |
+| AJO Message Feedback Event Dataset | Händelse | Person-ID: `IdentityMap` | Innehåller meddelandeleveranshändelser, t.ex.[!UICONTROL Sends]och[!UICONTROL Bounces]&#39;. |
+| AJO Email Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller e-postspårningshändelser som &#39;[!UICONTROL Opens]&#39;, &#39;[!UICONTROL Clicks]&#39;, och &#39;[!UICONTROL Unsubscribes]&#39;. |
+| AJO Push Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller push-spårningshändelser som &#39;[!UICONTROL App Launches]&#39;. |
+| Resestegshändelser | Händelse | Person-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Innehåller händelser som visar vilka profiler som deltog i varje nod av resan. |
+| AJO-entitetsdatauppsättning | Post | Nyckel: `_id`<br>Matchningsnyckel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Innehåller klassificeringar som kopplar metadata för resa och kampanj till alla AJO-händelsedata. |
 
 ## Konfigurera datavyn så att den passar Journey Optimizer mått och mått
 

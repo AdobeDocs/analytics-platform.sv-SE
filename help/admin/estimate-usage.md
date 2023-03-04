@@ -4,7 +4,7 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 9f2d0d00872ad18c73bf67184e44f687a0b156a3
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
    * Ändra dina [inställningar för datalagring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
    * [Ta bort oanvända anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
    * [Ta bort en datauppsättning i AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
-   * Kontakta kontohanteraren för Adobe om du vill licensiera ytterligare kapacitet.
+   * Kontakta kontoteamet på Adobe om du vill licensiera ytterligare kapacitet.
 
 ## Skapa ett Workspace-projekt med alla händelsedata {#workspace-event-data}
 
