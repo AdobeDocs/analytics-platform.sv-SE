@@ -5,9 +5,9 @@ title: Schemalägg projekt
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 5adf47139a3a083f90007dfab3bc63fd187ddcff
+source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '816'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande 
 | [!UICONTROL Owner] | Personen som skapade och äger projektet. |
 | [!UICONTROL Tags] | (valfritt) Taggning är ett bra sätt att ordna projekt. Alla användare kan skapa taggar och använda en eller flera taggar i ett projekt. Men du kan bara se taggar för de projekt som du äger eller som har delats med dig. |
 | [!UICONTROL Delivered To] | Mottagare av det här schemalagda projektet. |
-| [!UICONTROL Expiration Date] | Standardförfallodatumet beror på schemafrekvensen. Se &quot;Schemalagda förfallodatum för projekt&quot; nedan. |
+| [!UICONTROL Expiration Date] | Du kan ange ett förfallodatum till upp till ett år, oavsett hur ofta schemat används. |
 | [!UICONTROL Frequency] | Hur ofta du vill att det här schemaprojektet ska skickas till mottagarna. |
 | [!UICONTROL Execution Time] | Vid vilken tidpunkt på dagen det här schemalagda projektet skickas. |
 | [!UICONTROL Number of Queries] | Antalet frågor mot det här projektet. |
@@ -76,15 +76,6 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **[!UICONTROL View schedule ID]** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
 I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser.
-
-## Förfallodatum för schemalagda projekt {#expiration}
-
-Utgångsdatum för schemalagda projekt beror på den schemalagda leveransfrekvensen:
-
-* Leveranser per timme går ut om en vecka.
-* Dagliga leveranser går ut om en månad.
-* Leveranser per vecka går ut om 6 månader.
-* Leveranser per månad eller år går ut om ett år.
 
 ## Lösenordsskydda ett schemalagt projekt {#password}
 
