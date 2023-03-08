@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 14bcb1364e59ee02073829050daa068c6203a93c
+source-git-commit: 05cc4410d78e69919447356ea343543c3415afd7
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '2301'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,68 @@ Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar 
 
 ![Remove_components](assets/new_remove.png)
 
-## Styrkort för förhandsgranskning {#preview}
+## Skapa dataartiklar {#create-data-story}
+
+En databerättelse är en samling datapunkter, kontext och relaterade mått som bygger på ett centralt tema eller mätvärden.
+
+Om du till exempel fokuserar på webbtrafik kan det vara dina viktigaste mätvärden, men du kanske också är intresserad av nya besökare, unika besökare, och du kanske vill se data uppdelade efter webbsida eller efter vilken typ av enhet som trafiken kommer från. Med hjälp av datarubriker i mobilstyrningsprojekt kan du placera dina viktigaste mätvärden i centrum samtidigt som du berättar hela artikeln bakom mätvärdena med flera detaljbilder.
+
+Titta på videon och lär dig mer om hur du skapar databerättelser i mobilstyrkortsprojekt i Analysis Workspace.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+**Skapa en dataartikel**
+
+Bygg din databerättelse genom att lägga till flera detaljbilder i en ruta.
+
+1. Börja med ett mobilt styrkortsprojekt.
+1. Välj en platta som du vill skapa en artikel från.
+   ![Skapa en dataartikel](assets/data-story1.png)
+   ![Skapa ikoner för databerättelse](assets/create-data-story.png){width=".50%"}
+1. Lägg till bilder för att skapa din databerättelse. Den första bilden genereras som standard.
+Om du vill lägga till nya bildrutor håller du markören över eller klickar på en bildruta och väljer sedan bland de tillgängliga alternativen:
+   * Tryck på plustecknet (+) för att skapa en ny bildruta.
+   * Tryck på ikonen Duplicera om du vill duplicera den befintliga bildrutan.
+1. Om du skapar en tom bildruta drar och släpper du komponenter från den vänstra listen, eller väljer en layout som automatiskt fyller bildrutan med data från den.
+   ![Skapa en dataartikel](assets/data-story2.png)
+Tryck på papperskorgen om du vill ta bort en bildruta.
+
+### Anpassa en dataartikel {#customize-data-story}
+
+Med hjälp av dataartiklar kan du anpassa allt så att du kan dela information som du vill dela och utesluta allt som du inte behöver. Du kan anpassa plattor och enskilda bildrutor för att lägga till filter, visa uppdelningar, ändra layout och ändra visualiseringar.
+
+**Anpassa rutor**
+
+1. Tryck på en platta. Den markerade plattan visas med blå konturer och den högra panelen visar rutans egenskaper.
+1. Ändra alternativ för rubrik, diagramtyp och annan ruta.
+1. Dra en komponent till plattan.
+   ![Skapa en dataartikel](assets/data-story3.png)
+När du drar och släpper en komponent, t.ex. en visualisering, på en platta används komponenten på alla bilder i en dataartikel.
+1. Om du bara vill ändra titeln håller du ned Skift-tangenten för att tillämpa ändringen.
+   ![Skapa en dataartikel](assets/data-story4.png)
+
+>[!NOTE]
+>Bilder ärver komponenter från plattan, men rutor ärver inte komponenter från bildrutor.
+
+**Anpassa enskilda bildrutor**
+
+Du kan ändra visualiseringen för enskilda bilder i en dataartikel. Du kan till exempel ändra ett vågrätt fält till ett ringdiagram för en viss bildruta. Du kan också ändra layouten. Se [Anpassa detaljbilder](#customize-detail-slide).
+
+### Förhandsgranska en dataartikel {#preview-data-story}
+
+När du har skapat en dataartikel använder du **Förhandsgranska** för att visa och interagera med en databerättelse som om du var en appanvändare. Mer information om hur du förhandsgranskar din dataartikel finns i [Förhandsgranska ett styrkort](#preview)
+
+### Navigera mellan rutor och bilder {#navigate-tiles-slides}
+
+I navigeringsfältet visas ikoner som representerar vad som finns på varje bildruta. Navigeringsfältet gör det enkelt att navigera till en viss bildruta om du har många bildrutor.
+
+Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
+![Skapa en dataartikel](assets/data-story5.png)
+![Skapa en dataartikel](assets/data-story-nav.png){width="45%"}
+
+Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
+
+## Förhandsgranska styrkort {#preview}
 
 Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har publicerats i kontrollpanelsappen för Analytics.
 
@@ -235,13 +296,13 @@ Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har
 
    * Klicka och håll ned för att simulera att du trycker och håller fingret på telefonskärmen. Detta är användbart när du vill interagera med visualiseringarna i den detaljerade vyn.
 
-## Namnge ett styrkort {#name}
+## Namnstyrkort {#name}
 
 Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänster på skärmen och skriver det nya namnet.
 
 ![Naming_Scorecards](assets/new_name.png)
 
-## Dela ett styrkort {#share}
+## Dela styrkort {#share}
 
 Så här delar du styrkortet med en verkställande användare:
 
