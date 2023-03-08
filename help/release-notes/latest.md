@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b73404d9594b0915cea64f4016c9c7b36c3aaf01
+source-git-commit: c6714b375c8e74f12018fe54d80eb411e55e7097
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 7%
+source-wordcount: '276'
+ht-degree: 8%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (CJA) (februari 2023)
+# Versionsinformation för Customer Journey Analytics (CJA) (mars 2023)
 
-**Senaste uppdatering**: 23 februari 2023
+**Senaste uppdatering**: 8 mars 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,25 +20,23 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Början av utrullning](/help/release-notes/releases.md) | [Allmän tillgänglighet](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Uppdatera till CJA-målgrupper** | När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för Experience Platform för varje ny CJA-målgrupp. Ett direktuppspelningssegment skapas bara om din organisation är inställd för direktuppspelningssegmentering. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created) | Ej tillämpligt | 3 februari 2023 |
-| **Dölj datumintervall för jämförelse i Mobile Scorecards** | Med Mobile Scorecards kan du nu dölja datumintervall för jämförelse. | Ej tillämpligt/ | 8 februari 2023 |
-| **Kalenderuppdateringar på arbetsytan** | <ul><li>Datum för ankarpanel: Du kan göra datumintervallets komponenter relativa till panelkalendern. [Läs mer](/help/components/date-ranges/calendar.md)</li><li>Uppdateringar av kalenderformat: Kalenderformaten i hela användargränssnittet har uppgraderats för att ge ett mer konsekvent och lättanvänt arbetsflöde.</li><li>Uppdateringar av kalenderformel: Om du använder relativa datum återspeglar alla kalenderformler början av panelens datumintervall. [Läs mer](/help/components/date-ranges/calendar.md)</li></ul> | Ej tillämpligt | 8 februari 2023 |
-| **Uppdateringar för paneldatumintervall** | I Workspace har vi lagt till följande förbättringar:<ul><li>Från och med februari-versionen baseras förhandsgranskningarna av komponenter och data på panelens datumintervall och inte på de senaste 90 dagarna. </li><li>Alla dimensionsobjekt som visas är tillgängliga baserat på panelens datumintervall.</li><li>Alla förhandsvisningar av datum i segmentet och beräknade mätvärden baseras på panelens datumintervall (såvida de inte öppnas från komponenthanterarna, som inte har någon associerad panel, kommer de fortfarande att baseras på de senaste 90 dagarna).</li><li>Förhandsgranskningar av data visar data eller komponenter baserat på panelens datumintervall.</li></ul> | Ej tillämpligt | 8 februari 2023 |
-| **Rad-/kolumnfiltrering för Adobe Analytics Source Connector-direktuppspelning** | Med Analytics Source Connector i Adobe Experience Platform går det nu att filtrera analysdata som används för att fylla i profiler i [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en).<p>Filtrering på radnivå minskar antalet händelser som är associerade med profiler. Filtrering på kolumnnivå bidrar till att minska detaljrikedomen i själva händelserna och gör att du kan optimera användningen av profilberättiganden. Denna filtrering gäller endast data som skickas till kundprofilen i realtid och [Identitetstjänst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en).<p>**Filtreringen påverkar inte data som skickas till Data Lake för användning i program som Customer Journey Analytics**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#filtering-for-profile) | Ej tillämpligt | Omplanerat till 29 mars 2023 |
+| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna (dimensioner, mått) i sin CJA-miljö. Läs mer | 8 mars 2023 | 22 mars 2023 |
+| **Dataartiklar på mobilkontrollpaneler** | Med hjälp av dataartiklar kan du lägga till flera anpassningsbara detaljvyer till paneler i projekt i Mobile Scorecard. Använd databerättelser för att fördjupa dig i viktiga drivrutiner, relaterade mätvärden och olika steg längs kundresan. Du kan enkelt svepa igenom de här vyerna för att förstå hela artikeln bakom nyckelmätningarna. Läs mer | Ej tillämpligt | 8 mars 2023 |
+| **Förfallodatum för schemalagda projekt** | Du kan ange maximalt förfallodatum för schemalagda projekt till upp till ett år, oavsett schemafrekvens. | Ej tillämpligt | 8 mars 2023 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-309106
+AN-309729; AN-309975; AN-311779; AN-313095;
 
 ## Viktiga meddelanden för CJA-administratörer
 
 | Meddelande | Meddelande har lagts till eller uppdaterats | Beskrivning |
 | --- | --- | --- |
-| Inga aktuella meddelanden | Ej tillämpligt | Ej tillämpligt |
+| Tillgänglighet för Analytics Source Connector | 15 februari 2023 | Den 28 februari 2023 blev Analytics Source Connector tillgänglig i det nya datacentret för Adobe Experience Platform i Kanada. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Relaterade resurser
 
