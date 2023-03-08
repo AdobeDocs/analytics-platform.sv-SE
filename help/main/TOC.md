@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 33%
+source-wordcount: '890'
+ht-degree: 32%
 
 ---
 
@@ -199,6 +199,7 @@ ht-degree: 33%
 
 + Komponenter {#cja-components}
    + [Komponenter – översikt](../components/overview.md)
+   + [Lägga till komponentbeskrivningar](../components/add-component-descriptions.md)
    + Anteckningar {#annotations}
       + [Översikt över anteckningar](../components/annotations/overview.md)
       + [Skapa anteckningar](../components/annotations/create-annotations.md)
@@ -239,6 +240,7 @@ ht-degree: 33%
          + [Godkänna beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Dela beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Hanterare för beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-manager.md)
+      + [Standardberäknade värden](../components/calc-metrics/default-calcmetrics.md)
       + [Grundfunktioner](../components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](../components/calc-metrics/cm-adv-functions.md)
    + Datumintervall {#cja-date-ranges}
@@ -248,7 +250,11 @@ ht-degree: 33%
       + [Översikt över kalendern](../components/date-ranges/calendar.md)
       + [Skapa anpassade datumintervall](../components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
-
+   + Dataordlista {#data-dictionary}
+      + [Översikt över dataordlistan](../components/data-dictionary/data-dictionary-overview.md)
+      + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
+      + [Redigera komponentposter i Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
+      + [Övervaka dataordlistans hälsa](../components/data-dictionary/monitor-data-dictionary-health.md)
 + Kontrollpaneler för analyser {#cja-dashboards}
    + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
    + [Läraruppgifter](../mobile-app/curator.md)
