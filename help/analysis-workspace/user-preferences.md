@@ -4,9 +4,9 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
+source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2914'
 ht-degree: 1%
 
 ---
@@ -175,13 +175,29 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 |  | Begränsa högsta antal objekt | Minskar antalet objekt på X-axeln i Spridningsvisualiseringen. Detta kan vara användbart om du har en stor datauppsättning. |
 |  | Fästpunkt y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
 
+## Företagsinställningar
+
+>[!AVAILABILITY]
+>
+>Funktionen Public Access Links som beskrivs i det här avsnittet är i den begränsade testfasen av versionen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
+
+Du kan uppdatera företagsinställningarna som gäller för alla användare och projekt i organisationen. Mer information om hur du kommer åt dessa inställningar finns i [Uppdatera inställningar](#update-preferences).
+
+| Avsnitt | Inställningar | Alternativ |
+| --- | --- | --- |
+| **Länkar för offentlig åtkomst** <!-- Double check the names of all these settings for what they are actually called --> |  |  |
+|  | Inaktivera alla offentliga åtkomstlänkar | <p>Inaktiverar alla befintliga offentliga åtkomstlänkar och förhindrar att användare i organisationen skapar nya länkar. Det innebär att användare inte kan dela Analysis Workspace-projekt med personer som inte har något Adobe Customer Journey Analytics-konto. Användare kan bara dela projekt med andra Customer Journey Analytics-användare i din organisation.</p> <p>När offentliga länkar är inaktiverade:</p> <ul><li><p>Användarna kan inte skapa offentliga åtkomstlänkar</p><p>Alternativet Dela offentlig länk har tagits bort från Dela-menyn. Det innebär att användare inte längre kan dela projekt med personer som inte har ett Analysis Workspace-konto i organisationen enligt beskrivningen i [Dela en offentlig länk med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>Alla befintliga offentliga länkar är inaktiverade</p></li><p>Om offentliga länkar är inaktiverade och sedan återaktiverade, återaktiveras inte alla tidigare inaktiverade länkar automatiskt. I så fall måste användarna manuellt återaktivera dem för varje projekt från dialogrutan Dela projekt.</p> |
+|  | Kräv autentisering av Experience Cloud | <p>När det här alternativet är aktiverat kan endast mottagare som har ett federerat ID och kan logga in på Adobe Experience Cloud få åtkomst till delade offentliga länkar.</p> <p>När det här alternativet är aktiverat aktiveras alternativet&quot;Kräv autentisering av Experience Cloud&quot; i delningsdialogrutan när en användare skapar en länk till ett Analysis Workspace-projekt och det kan inte inaktiveras av den användare som delar länken. (Information om hur användare kan dela projekt med användare utanför organisationen finns i [Dela en offentlig länk med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>Tänk på följande när du aktiverar det här alternativet:</p><ul><li><p>När du aktiverar det här alternativet inaktiveras alla aktiva offentliga länkar som inte har Experience Cloud aktiverat.</p></li> <li><p>Om det här alternativet är aktiverat och sedan inaktiverat, återaktiveras inte alla tidigare inaktiverade länkar automatiskt. I det här fallet måste användarna manuellt återaktivera dem från dialogrutan Dela projekt.</p></li> <li><p>Det här alternativet är bara tillgängligt om enkel inloggning har implementerats i din organisation. Mer information om hur systemadministratörer kan aktivera enkel inloggning för din organisation finns i [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Om enkel inloggning har konfigurerats för din organisation kontrollerar du om någon typ av autokontoskapande har implementerats i konsolen. Vanligtvis konfigurerar en systemadministratör detta enligt beskrivningen i [Aktivera automatisk kontogenerering](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>Om organisationen befinner sig i en bransch där det krävs HIPAA-kompatibilitet aktiveras det här alternativet automatiskt och kan inte inaktiveras.</p></li></ul> |
+
+{style="table-layout:auto"}
+
 ## Återställ standardinställningar
 
 Du kan återställa alla dina användarinställningar till standardinställningarna. Detta påverkar inte administratörsinställningarna på fliken Företag.
 
 Det går inte att ångra den här åtgärden.
 
-1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] **>** [!UICONTROL **Inställningar**].
+1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] **>** [!UICONTROL **Inställningar**].
 
    ![Användarinställningar](assets/user-preferences.png)
 

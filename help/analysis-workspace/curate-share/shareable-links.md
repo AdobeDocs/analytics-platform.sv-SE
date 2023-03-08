@@ -3,22 +3,30 @@ description: Lär dig hur du skapar delningsbara länkar till projekt eller visu
 keywords: Analysis Workspace-delning
 title: Skapa delningsbara länkar
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
 
 # Skapa delningsbara länkar
 
-Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Användare som får en länk måste logga in på Customer Journey Analytics innan de kan komma åt projektet.
+Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Vissa länktyper kräver att mottagaren loggar in på Adobe Analytics innan han eller hon kommer åt projektet, medan andra inte gör det.
 
 ## Hämta projektlänk {#project-link}
 
 Om du vill dela en länk till hela projektet går du till **[!UICONTROL Share > Get project link]**. Om länkens mottagare inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html), administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]** upplevelser.
 
 ![](assets/get-project-link.png)
+
+## Hämta offentlig länk
+
+{{release-limited-testing-section}}
+
+Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics.
+
+Mer information finns i&quot;Dela en offentlig länk med vem som helst (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Hämta panel- eller visualiseringslänk {#panel-link}
 
