@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
+source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1518'
 ht-degree: 6%
 
 ---
@@ -21,6 +21,9 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | --- | --- |
 | **Mars 2023** |  |
 | Funktioner | Uppdaterat [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) med en tabell över funktioner som är tillgängliga i CJA men inte tillgängliga eller stöds i AA. |
+| Standardberäknade värden | Innehåll som förklarar [standardberäknade värden från Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
+| Dataordlista | <p>Lagt till ny dokumentation för Data Dictionary, inklusive en [Översikt](/help/components/data-dictionary/data-dictionary-overview.md), [Visning](/help/components/data-dictionary/view-data-dictionary.md), [Redigering](/help/components/data-dictionary/edit-entries-data-dictionary.md)och [Övervakning](/help/components/data-dictionary/monitor-data-dictionary-health.md) Data Dictionary.</p><p>Information i [Lägga till komponentbeskrivningar](/help/components/add-component-descriptions.md) har uppdaterats för att ta hänsyn till funktionen för datamordlista.</p> |
+| Länkdelning för projekt (ingen inloggning krävs) | <p>Befintlig dokumentation som förklarar hur man delar en skrivskyddad länk till ett projekt med personer som inte har tillgång till Analysis Workspace har uppdaterats.</p> <p>Uppdaterad användardokumentation innehåller [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) och [Skapa delningsbara länkar](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Alternativ för administratörer lades till i [Inställningar](/help/analysis-workspace/user-preferences.md).</p> |
 | **Februari 2023** |  |
 | Jämför CJA med BI-lösningar | Nytt dokument på en [jämförelse](../getting-started/cja-vs-bi.md) från Customer Journey Analytics till vanliga BI-lösningar. |
 | Uppdatera till publikdokumentation | Nytt avsnitt på [latenshändelser](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
@@ -93,7 +96,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Januari 2022 | Dokumentation om tillagda nya funktioner på [bindningsdimensioner och mätvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) och på nya [[!UICONTROL First Known] och [!UICONTROL Last Known] allokeringsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#allocation-settings) |
 | Januari 2022 | Ny artikel på [jämföra era Adobe Analytics-data med Analytics-data i CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2021 {#21}
 
@@ -134,7 +137,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | **Januari 2021** |  |
 | Januari 2021 | Nytt ämne [lägga till standardsökningar i datauppsättningen](/help/connections/standard-lookups.md). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2020 {#20}
 
@@ -155,4 +158,4 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | 27 februari 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) |
 | December 2019 | Första utkastet till CJA-dokumentation |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
