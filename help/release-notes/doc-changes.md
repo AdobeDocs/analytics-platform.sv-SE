@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
+source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1546'
 ht-degree: 6%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Mars 2023** |  |
+| Skapa dataartiklar i mobilstyrkort | A [dataartikel](/help/mobile-app/create-scorecard.md#create-data-stories) är en samling datapunkter, företagskontext och relaterade mätvärden som bygger på ett centralt tema eller mätvärden. |
 | Funktioner | Uppdaterat [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) med en tabell över funktioner som är tillgängliga i CJA men inte tillgängliga eller stöds i AA. |
 | Standardberäknade värden | Innehåll som förklarar [standardberäknade värden från Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
 | Dataordlista | <p>Lagt till ny dokumentation för Data Dictionary, inklusive en [Översikt](/help/components/data-dictionary/data-dictionary-overview.md), [Visning](/help/components/data-dictionary/view-data-dictionary.md), [Redigering](/help/components/data-dictionary/edit-entries-data-dictionary.md)och [Övervakning](/help/components/data-dictionary/monitor-data-dictionary-health.md) Data Dictionary.</p><p>Information i [Lägga till komponentbeskrivningar](/help/components/add-component-descriptions.md) har uppdaterats för att ta hänsyn till funktionen för datamordlista.</p> |
