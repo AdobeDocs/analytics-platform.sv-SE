@@ -4,9 +4,9 @@ description: Vad händer när du tar bort anslutningar, datauppsättningar eller
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f56d56d65491ab14c5d0e6d3005c0e5e13127c9b
+source-git-commit: 64c165e30926f2571bce5ea2f31560daf50acc46
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Tänk på detta innan du tar bort anslutningar, datauppsättningar eller grupper
 
 | När du ... | Det här händer.. |
 | --- | --- |
-| Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
+| Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul>Observera att du inte kan ta bort CJA-anslutningar som är kopplade till AEP-sandlådor som du inte har behörighet för. Även om du har behörighet till datavyer som bygger på dessa anslutningar, kan du inte ta bort anslutningarna förrän du har beviljats behörigheter till de underliggande AEP-sandlådorna. |
 | Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform] (AEP) | Om du tar bort en datauppsättning i AEP avbryts dataflödet från den datauppsättningen till alla anslutningar som innehåller den datauppsättningen. Data från den datauppsättningen tas inte automatiskt bort från associerade CJA-anslutningar. |
 | Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | När du tar bort en datauppsättning från en anslutning i CJA fungerar inte längre datavyer och projekt som var beroende av den datauppsättningen. |
 | Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform]) | Om en batch tas bort från en [!UICONTROL Adobe Experience Platform] datauppsättning, samma batch tas bort från alla [!UICONTROL Customer Journey Analytics] anslutningar som innehåller den specifika gruppen. [!UICONTROL Customer Journey Analytics] meddelas om batchar som har tagits bort i [!UICONTROL Adobe Experience Platform]. |
