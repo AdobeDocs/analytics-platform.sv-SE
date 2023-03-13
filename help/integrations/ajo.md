@@ -2,9 +2,9 @@
 title: Integrera Adobe Journey Optimizer (AJO) med Customer Journey Analytics (CJA)
 description: Hämta in data som genererats av AJO och analysera dem med Analysis Workspace i CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
+source-git-commit: 750e96bdf6f020e0f5c0fbaf95cdd10c42b95e55
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,10 @@ När Journey Optimizer data finns i Adobe Experience Platform kan man [Skapa en 
 
 När en anslutning har skapats kan du skapa en eller flera [Datavyer](/help/data-views/create-dataview.md) för att konfigurera önskade mått och mätvärden som är tillgängliga i Customer Journey Analytics.
 
->!![NOTE]
-Datamatchningar mellan AJO och CJA är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
+>[!NOTE]
+>
+>Datamatchningar mellan AJO och CJA är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
+
 
 ### Konfigurera dimensioner i datavyn
 
@@ -58,7 +60,7 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | Felorsak vid e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Komponenttyp: Dimension |
 | Orsak till undantag av e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Komponenttyp: Dimension |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Konfigurera mått i datavyn
 
@@ -76,7 +78,7 @@ Du kan skapa följande mätvärden i en datavy för att få en ungefärlig parit
 | Skräppost | Antalet skräppostklagomål. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `spam_complaint` |
 | Avbeställ | Antal avbrutna prenumerationer. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `unsubscribe` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Konfigurera beräknade värden i Analysis Workspace
 
@@ -87,4 +89,4 @@ När du har konfigurerat önskade mått och mätvärden för Journey Optimizer d
 | Skickade meddelanden | Totalt antal skickade meddelanden. Inkluderar slutförda eller misslyckade meddelanden. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
 | Levererade meddelanden | Antalet e-postmeddelanden som levereras till kunderna. | `[Sends] - [Bounces After Delivery]` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
