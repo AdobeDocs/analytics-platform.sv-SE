@@ -2,18 +2,18 @@
 title: Etiketter och profiler
 description: Lär dig hur dataetiketter och principer som definieras i AEP påverkar datavyer och rapporter i CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 50cc73f8935bf9a692f52b7bee500da63b31cffe
+source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # Etiketter och profiler
 
-När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) för vissa eller alla element i datauppsättningen. Hittills har dessa etiketter inte exponerats i CJA. I den här versionen kan du visa dessa etiketter och profiler i CJA.
+När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i CJA.
 
-Dessa etiketter är av särskilt intresse för CJA:
+Följande etiketter är av särskilt intresse för CJA:
 
 * The `C8` etikett - **[!UICONTROL No measurement]**. Den här etiketten anger att data inte kan användas för analys på organisationens webbplatser eller i appar.
 
@@ -44,7 +44,7 @@ Dataetiketter som har skapats i Experience Platform visas på tre platser i anv�
 
 ## Filtrera på datastyrningsetiketter i datavyer
 
-Klicka på filterikonen i det vänstra spåret i redigeraren för datavyer och filtrera datavykomponenter efter **[!UICONTROL Data Governance]** och typ av **[!UICONTROL Label]**:
+Klicka på knappen [!UICONTROL filter] ikonen i det vänstra spåret och filtrera datavykomponenterna efter **[!UICONTROL Data Governance]** och typ av **[!UICONTROL Label]**:
 
 ![](assets/filter-labels.png)
 
@@ -54,7 +54,7 @@ Klicka **[!UICONTROL Apply]** för att se vilka komponenter som har etiketter ko
 
 Du kan kontrollera om en profil är aktiverad som blockerar användningen av vissa CJA-datavytelement för analys eller export.
 
-Klicka igen på filterikonen i den vänstra listen och under **[!UICONTROL Data Governance]**, klicka **[!UICONTROL Policies]**:
+Klicka på [!UICONTROL filter] ikonen i den vänstra listen och under **[!UICONTROL Data Governance]**, klicka **[!UICONTROL Policies]**:
 
 ![](assets/filter-policies.png)
 
