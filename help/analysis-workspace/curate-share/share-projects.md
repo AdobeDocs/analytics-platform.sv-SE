@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1479'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
 
 * Användare och grupper i organisationen som inte har tillgång till Customer Journey Analytics
 
-   Mottagarna har åtkomst endast till vyn
+   Mottagarna har skrivskyddad åtkomst
 
 * Personer utanför din organisation
 
-   Mottagarna har åtkomst endast till vyn
+   Mottagarna har skrivskyddad åtkomst
 
 Alla [kuration](curate.md) används innan delningen visas när mottagarna öppnar projektet.
 
@@ -58,7 +58,7 @@ När du delar en specifik projektroll med användare och grupper i organisatione
 
 Så här delar du en specifik projektroll med användare eller grupper i organisationen:
 
-1. Gå till projektet som du vill dela och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Share project]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. Gå till projektet som du vill dela och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
 
    ![](assets/share-proj-modal.png)
@@ -95,7 +95,7 @@ Tänk på följande när du delar en länk enligt beskrivningen i det här avsni
 
 Så här delar du projektlänken med användare i din organisation:
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share project]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
 
    ![](assets/share-proj-modal.png)
@@ -104,11 +104,11 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
 1. Dela länken med användare i organisationen. Du kan till exempel klistra in den i ett e-postmeddelande, på en intern webbplats och så vidare.
 
-## Dela en offentlig länk med vem som helst (ingen inloggning krävs) {#share-public-link}
+## Dela ett projekt med vem som helst (ingen inloggning krävs) {#share-public-link}
 
 {{release-limited-testing-section}}
 
-Du kan bevilja [Åtkomst endast för visning](/help/analysis-workspace/curate-share/view-only-projects.md) till Analysis Workspace-projekt för dem som inte har tillgång till Customer Journey Analytics. Detta kan omfatta:
+Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-only-projects.md) till Analysis Workspace-projekt för dem som inte har tillgång till Customer Journey Analytics. Detta kan omfatta:
 
 * Personer utanför din organisation
 
@@ -116,44 +116,44 @@ Du kan bevilja [Åtkomst endast för visning](/help/analysis-workspace/curate-sh
 
 >[!NOTE]
 >
->Tänk på följande när du delar en offentlig länk:
+>Tänk på följande när du delar ett Analysis Workspace-projekt med personer som inte har tillgång till CJA:
 >
->* CJA-administratören kan inaktivera möjligheten att dela en offentlig åtkomstlänk enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Om du inte kan dela en offentlig länk enligt beskrivningen i det här avsnittet har CJA-administratören inaktiverat den här funktionen.
+>* CJA-administratören kan inaktivera möjligheten att dela ett projekt på det här sättet, vilket beskrivs i [Inställningar](/help/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har CJA-administratören inaktiverat den här möjligheten.
 >
->* Projekt med fler än 14 utökade visualiseringar kan inte delas via en offentlig åtkomstlänk.
+>* Projekt med fler än 14 utökade visualiseringar kan inte delas med personer som inte har tillgång till CJA.
 
 
 Så här delar du en offentlig länk till ett Analysis Workspace-projekt:
 
 1. Öppna det Analysis Workspace-projekt som du vill dela.
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share public link]**.
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
 
    Om det finns ändringar som inte har sparats uppmanas du att spara projektet.
 
    <!-- Add screen shot of new modal -->
 
-1. Aktivera **[!UICONTROL Link active]** om det inte redan är aktiverat.
+1. Aktivera **[!UICONTROL Link is active]** om det inte redan är aktiverat.
 
 1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av CJA-administratören):
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
-      Kräv att personer med länken autentiserar via enkel inloggning innan de får åtkomst till det delade projektet. Välj det här alternativet om du vill att projektet bara ska vara tillgängligt för användare i din organisation.
+      När det här alternativet är aktiverat kan endast användare som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades få åtkomst till projektet.
 
-      CJA-administratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
+      CJA-administratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
       * Om det här alternativet inte visas har CJA-administratören inte aktiverat den här funktionen.
 
-      * Om det här alternativet är aktiverat och nedtonat kräver CJA-administratören autentisering i Experience Cloud för att få tillgång till alla offentliga länkar.
+      * Om det här alternativet är aktiverat och nedtonat kräver CJA-administratören Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt.
 
-1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** om du vill kopiera länken till systemets Urklipp.
+1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** icon ![Ikon för att kopiera länk](assets/copy-link-icon.png) om du vill kopiera länken till systemets Urklipp.
 
 1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
 
-   Alla som du delar länken med kan visa Analysis Workspace-projektet. Om du väljer att kräva ett lösenord måste du också dela det med alla som du vill komma åt länken.
+   Alla som du delar länken med kan visa Analysis Workspace-projektet.
 
-1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt. <!-- True? -->
+1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt.
 
 ## Dela projekt i projektledaren {#Manager}
 

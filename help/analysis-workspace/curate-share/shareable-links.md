@@ -3,9 +3,9 @@ description: Lär dig hur du skapar delningsbara länkar till projekt eller visu
 keywords: Analysis Workspace-delning
 title: Skapa delningsbara länkar
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ Om du vill dela en länk till hela projektet går du till **[!UICONTROL Share > 
 
 ![](assets/get-project-link.png)
 
-## Hämta offentlig länk
+## Få en skrivskyddad länk att dela med vem som helst
 
 {{release-limited-testing-section}}
 
-Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics.
+Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Customer Journey Analytics.
 
-Mer information finns i&quot;Dela en offentlig länk med vem som helst (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
+Mer information finns i&quot;Dela ett projekt med vem som helst (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Hämta panel- eller visualiseringslänk {#panel-link}
 
