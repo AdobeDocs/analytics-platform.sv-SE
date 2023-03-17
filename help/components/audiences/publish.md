@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | Från en friformstabell | Högerklicka på ett objekt i en frihandstabell och välj **[!UICONTROL Create an audience from selection]**. Om du använder den här metoden fylls filtret i automatiskt med den dimension eller dimensionspost som du valde i tabellen. |
    | Från gränssnittet för att skapa/redigera filter | Markera rutan som innehåller **[!UICONTROL Create an audience from this filter]**. Om du använder den här metoden fylls filtret i automatiskt. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Bygg publiken.
 
@@ -45,7 +45,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Filter] | Filter är huvudindata för publiken. Du kan lägga till upp till 20 filter. Dessa filter kan kombineras med `And` eller `Or` operatorer. |
    | [!UICONTROL View sample IDs] | Ett exempel på ID:n i den här målgruppen. Använd sökfältet för att söka efter exempel-ID:n. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Tolka förhandsgranskningen av data.
 
@@ -64,7 +64,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Namespaces included] | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
    | [!UICONTROL Sandbox] | The [Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) där den här publiken bor. När du publicerar den här målgruppen på Platform kan du bara arbeta med den inom gränserna för den här sandlådan. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Kontrollera målgruppskonfigurationen och klicka **[!UICONTROL Publish]**.
 
@@ -82,19 +82,20 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 
 ## Svarstidsfrågor {#latency}
 
-Vid flera tillfällen före, under och efter publikens publicering kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
+Vid flera tillfällen före, under och efter publikationen kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-![](assets/latency-diagram.png)
+![latens från AEP till CJA](assets/latency-diagram.png)
 
 | # | Svarstid | Latenslängd |
 | --- | --- | --- |
-| 1 | Intag av data i datasjön | Upp till 30 minuter |
-| 2 | Intag av data från Experience Platform till CJA | Upp till 60 minuter |
+| Visas inte | Adobe Analytics to Analytics Source Connector (A4T) | Upp till 30 minuter |
+| 1 | Intag av data i datasjön (från Analytics Source Connector eller andra källor) | Upp till 90 minuter |
+| 2 | Intag av data från Experience Platform Data Lake till CJA | Upp till 90 minuter |
 | 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Cirka 60 minuter |
 | 4 | Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
 | 5 | Skapar mål i AEP: Aktivera det nya segmentet | 1-2 timmar |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Använda CJA-målgrupper i Experience Platform {#audiences-aep}
 
@@ -130,7 +131,7 @@ Ja, det kommer det.
 
 +++
 
-+++**Skickar CJA målgruppsdata som pipeline-händelser eller en platt fil som också går till Data Lake?**
++++**Skickar CJA målgruppsdata som pipeline-händelser eller som en platt fil som också går till Data Lake?**
 
 CJA strömmar data till RTCP via pipeline, och dessa data samlas också in i en systemdatauppsättning i datasjön.
 
@@ -138,7 +139,7 @@ CJA strömmar data till RTCP via pipeline, och dessa data samlas också in i en 
 
 +++**Vilka identiteter skickar CJA?**
 
-Vilka identitets-/namnområdespar som används i [Anslutningsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
+Vilka identitets-/namnområdespar som anges i [Anslutningsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
 
 +++
 

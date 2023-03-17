@@ -4,9 +4,9 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 1490efac916594b7d7eb146f1cfa6a1835878199
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2371'
 ht-degree: 1%
 
 ---
@@ -68,8 +68,8 @@ Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Pl
    | --- | --- |
    | **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Nedan finns information om hur du använder identitetskartan som ett person-ID.<p>Om det inte finns några person-ID:n att välja mellan, innebär det att ett eller flera person-ID:n inte har definierats i schemat. Se den här videon om hur du definierar en identitet i Experience Platform. |
    | **[!UICONTROL Timestamp]** | Endast för händelsedatamängder anges den här inställningen automatiskt till standardfältet för tidsstämpling från händelsebaserade scheman i Experience Platform. |
-   | **[!UICONTROL Data source type]** | Typer av datakällor är bland annat: Webbdata, mobilappsdata, POS-data, CRM-data, undersökningsdata, Call Center-data, produktdata, kontodata, transaktionsdata, kundfeedbackdata och annat. |
-   | **[!UICONTROL Import new data]** | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar till arbetsytan. Kan anges till På eller Av. |
+   | **[!UICONTROL Data source type]** | Typer av datakällor är bland annat: [!UICONTROL Web data], [!UICONTROL Mobile App data], [!UICONTROL POS data], [!UICONTROL CRM data], [!UICONTROL Survey data], [!UICONTROL Call Center data], [!UICONTROL Product data], [!UICONTROL Accounts data], [!UICONTROL Transaction data], [!UICONTROL Customer Feedback data]och [!UICONTROL Other]. |
+   | **[!UICONTROL Import new data]** | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar till arbetsytan. Kan anges till [!UICONTROL On] eller [!UICONTROL Off]. |
    | **[!UICONTROL Dataset backfill]** | Klicka **[!UICONTROL Request backfill]** för att fylla historikdata baklänges.<ul><li>Du kan fylla i varje datauppsättning separat.</li><li>Vi prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa nya data har den lägsta latensen.</li><li>Eventuella bakåtfyllnadsdata (historiska) importeras i en långsammare takt. Latensen påverkas av hur mycket historisk information du har.</li><li>Adobe Analytics Source Connector importerar upp till 13 månaders data, oavsett storlek.</li></ul> |
    | **[!UICONTROL Backfill status]** | Möjliga statusindikatorer är:<ul><li>Lyckades</li><li>X-bearbetning av bakgrundsfyllning(ar)</li><li>Av</li></ul> |
    | **[!UICONTROL Dataset ID]** | Detta ID genereras automatiskt. |
