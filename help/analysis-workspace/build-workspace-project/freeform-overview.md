@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Översikt över projekt
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 2%
+source-wordcount: '1326'
+ht-degree: 3%
 
 ---
 
@@ -33,8 +33,6 @@ Sidan Projekt innehåller följande information:
 | [Redigera inställningar](/help/analysis-workspace/user-preferences.md) | Hantera inställningar för Analysis Workspace och dess tillhörande komponenter för alla nya projekt eller paneler som du skapar. |
 | [Skapa mapp](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Lägg till en ny mapp eller undermapp i listan över projekt och mappar. |
 | [Skapa projekt](/help/analysis-workspace/home.md) | Starta ett nytt projekt från grunden eller från en [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace). |
-| Hantera projekt <!--I don't see this option--> | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt i en lista och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
-| Ange som landningssida <!--I don't see this option--> | Omvandlar den här sidan till startsidan för arbetsytan. |
 | Visa mer | Visar alternativ för att skapa ett tomt projekt eller ett mobilstyrkort, [visa självstudiekurser](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html), eller [visa versionsinformation](/help/release-notes/latest.md). |
 | Visa mappar och projekt | Välj om du vill visa mappstrukturen för projekt. Mer information finns i [Om mappar i Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Anpassa tabell (ikon) | Här kan du anpassa informationen som visas för varje projekt på sidan Projekt. |
@@ -53,8 +51,6 @@ Sidan Projekt innehåller följande information:
 | Senaste datumintervall | Det längsta datumintervallet för projektet. |
 | Antal frågor | Det totala antalet frågor i projektet. |
 | Plats | Mappen där projektet finns. |
-| Mina favoritprojekt <!--I don't see this option--> | Om du vill markera ett projekt som favorit öppnar du projektet och klickar på stjärnan bredvid namnet. Den visas i den här listan nästa gång du öppnar Arbetsyta. |
-| Projekt som visas ofta <!--I don't see this option--> | Listar alla projekt som du öppnar ofta, så att de blir lätta att komma åt. |
 
 ## Menyrad {#menu-bar}
 
