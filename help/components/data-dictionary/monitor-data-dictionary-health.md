@@ -3,7 +3,7 @@ description: Administratörer ansvarar för att övervaka hälsotillståndet fö
 title: Övervaka dataordlistans hälsa
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -11,8 +11,6 @@ ht-degree: 0%
 ---
 
 # Övervaka dataordlistans hälsa
-
-{{release-limited-testing}}
 
 Customer Journey Analytics-administratörer ansvarar för att upprätthålla en felfri datamordlista.
 

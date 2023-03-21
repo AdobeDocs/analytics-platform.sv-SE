@@ -3,16 +3,14 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Visa dataordlistan
 feature: Components
 role: User, Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
 
 # Visa komponentinformation i Data Dictionary
-
-{{release-limited-testing}}
 
 Med Data Dictionary kan du visa information om en komponent, inklusive komponentbeskrivningen, liknande komponenter, andra komponenter som en komponent ofta används med, med mera.
 
@@ -31,6 +29,8 @@ Så här visar du information om en komponent i Data Dictionary:
 1. Kontrollera att den rapportsvit som innehåller den komponent som du vill visa är markerad i listrutan. Som standard visas den rapportsvit som du redan ingår i.
 
 1. (Valfritt) I sökfältet börjar du med att skriva namnet på komponenten som du vill visa.
+
+   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](assets/dimension-icon.png) är orange, **Segment** ![Segmentikon](assets/segment-icon.png) är blå, **Datumintervall** ![Ikon för datumintervall](assets/date-range-icon.png) är lila, och **Mått** ![Mätningsikon](assets/default-metric-icon.png) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en segmentmall och räknikonen ![Beräkningsikon](assets/calculated-metric-icon-created.png) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
 
 {{dd-filter-criteria}}
 

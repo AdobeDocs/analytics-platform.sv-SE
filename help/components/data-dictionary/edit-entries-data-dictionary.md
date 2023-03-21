@@ -3,16 +3,14 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Redigera poster i Data Dictionary
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
 
 # Redigera komponentposter i Data Dictionary
-
-{{release-limited-testing}}
 
 Customer Journey Analytics-administratörer kan redigera komponentposter i Data Dictionary för en given Report Suite. Alla ändringar som görs är synliga för alla användare av Report Suite.
 
@@ -29,6 +27,8 @@ Så här redigerar du en komponent i Data Dictionary:
 1. Kontrollera att rätt Report Suite är markerat i listrutan. Som standard visas den rapportsvit som du redan ingår i.
 
 1. (Valfritt) I sökfältet börjar du skriva namnet på komponenten som du vill redigera.
+
+   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](assets/dimension-icon.png) är orange, **Segment** ![Segmentikon](assets/segment-icon.png) är blå, **Datumintervall** ![Ikon för datumintervall](assets/date-range-icon.png) är lila, och **Mått** ![Mätningsikon](assets/default-metric-icon.png) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en segmentmall och räknikonen ![Beräkningsikon](assets/calculated-metric-icon-created.png) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
 
 {{dd-filter-criteria}}
 

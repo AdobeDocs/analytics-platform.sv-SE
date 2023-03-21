@@ -3,7 +3,7 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
-source-git-commit: 5d6942af4ac3f999c5e7fd7d6ba74a5fe7a26a9d
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -11,8 +11,6 @@ ht-degree: 0%
 ---
 
 # Översikt över dataordlistan
-
-{{release-limited-testing}}
 
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö.
 
