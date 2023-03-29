@@ -2,9 +2,9 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -154,6 +154,19 @@ Se ovan. Vi skickar bara en identitet per CJA-person.
 Nej. Vi skickar bara en identitet per person, så det finns inga diagramkanter som RTCP kan använda.
 
 +++
+
++++**Vilken tid på dygnet, varje vecka och varje månad uppdateras? Vilken veckodag uppdateras varje vecka?**
+
+Tidpunkten för uppdateringen baseras på när den ursprungliga målgruppen publicerades och fäster vid den tidpunkten på dagen (och dagen i veckan eller månaden).
+
++++
+
++++**Kan uppdateringstiden varje dag, vecka och månad konfigureras av användarna?**
+
+Nej, de kan inte konfigureras av användare.
+
++++
+
 
 ## Nästa steg
 
