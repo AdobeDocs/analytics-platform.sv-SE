@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: bf067ca57564bad72640c6bb5eb1c376ad818d3e
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1558'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,10 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 >* CJA-administratören kan inaktivera möjligheten att dela ett projekt på det här sättet, vilket beskrivs i [Inställningar](/help/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har CJA-administratören inaktiverat den här möjligheten.
 >
 >* Projekt med fler än 14 utökade visualiseringar kan inte delas med personer som inte har tillgång till CJA.
+>
+>* Användare som du delar med kan visa alla filter som använts på projektet under [kuration](curate.md).
+> 
+>* Användare som du delar med kan ändra projektets datumintervall. Datumintervallet som du anger för projektet visas som standard.
 
 
 Så här delar du ett Analysis Workspace-projekt med vem som helst:
@@ -152,6 +156,8 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
 
    Alla som du delar länken med kan visa Analysis Workspace-projektet.
+
+1. (Valfritt) Du kan klicka på **Generera ny länk** icon ![Skapa länkikon](assets/regenerate-link.png) för att ta bort åtkomst från användare som tidigare har fått en länk till projektet. En ny länk skapas som du kan dela med användare som du vill ska få åtkomst till projektet.
 
 1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt.
 
