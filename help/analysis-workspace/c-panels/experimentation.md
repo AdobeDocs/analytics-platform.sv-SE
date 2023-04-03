@@ -3,9 +3,9 @@ description: Lär dig hur du kan analysera resultaten av A/B-tester på CJA-pane
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
+source-git-commit: 54d8cf211a5a4bc3ffde5e24c29089125fc35362
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1785'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,21 @@ The **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av
 >
 >I det här skedet [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data som hämtas till Adobe Experience Platform via Analytics Source Connector **inte** analyseras i [!UICONTROL Experimentation] -panelen. Vi förväntar oss en lösning på detta problem under 2023.
 
-## Åtkomstkontroll
+## Åtkomstkontroll {#access}
 
 Experimentationspanelen kan användas av alla som använder Customer Journey Analytics (CJA). Inga administratörsrättigheter eller andra behörigheter krävs. Installationen (steg 1 och 2 nedan) kräver åtgärder som bara administratörer kan utföra.
 
-## Steg 1: Skapa anslutning för att experimentera med datauppsättningar
+## Nya funktioner i Beräknade värden {#functions}
+
+Två nya avancerade funktioner har lagts till: [!UICONTROL Lift] och [!UICONTROL Confidence]. Mer information finns i [Referens - avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md).
+
+## Steg 1: Skapa anslutning för att experimentera med datauppsättningar {#connection}
 
 Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) som innehåller experimentella data och variantdata i två olika dimensioner. Om du har experimenterat med data i en enda dimension med experiment- och variantdata i en avgränsad sträng kan du använda [delsträng](/help/data-views/component-settings/substring.md) ange i datavyer för att dela upp dem i två för användning på panelen.
 
 Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) till Adobe Experience Platform, [skapa en anslutning i CJA](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
 
-## Steg 2: Lägga till kontextetiketter i datavyer
+## Steg 2: Lägga till kontextetiketter i datavyer {#contect-labels}
 
 I inställningarna för CJA-datavyer kan administratörer lägga till [kontextetiketter](/help/data-views/component-settings/overview.md) till mått eller mätvärden och CJA-tjänster som [!UICONTROL Experimentation] kan använda dessa etiketter för sina ändamål. Två fördefinierade etiketter används för panelen Experimentation:
 
@@ -41,7 +45,7 @@ I datavyn som innehåller experimentella data väljer du två dimensioner, en me
 
 Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte finns några experiment att arbeta med.
 
-## Steg 3: Konfigurera panelen Experimentera
+## Steg 3: Konfigurera panelen Experimentera {#configure}
 
 1. I CJA Workspace drar du panelen Experimentation till ett projekt.
 
@@ -62,7 +66,7 @@ Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte finns nå
 
 1. Klicka på **[!UICONTROL Build]**.
 
-## Steg 4: Visa panelutdata
+## Steg 4: Visa panelutdata {#view}
 
 Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att klicka på redigeringspennan längst upp till höger.
 
@@ -80,7 +84,7 @@ The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL
 >
 >Den här panelen stöder för närvarande inte analys av A/A-tester.
 
-## Steg 5: Tolka resultaten
+## Steg 5: Tolka resultaten {#interpret}
 
 1. **Experiment är slutprodukt**: Varje gång du tittar på experimentrapporten analyserar Adobe de data som har samlats in i experimentet fram till den här tidpunkten och deklarerar ett experiment som&quot;slutgiltigt&quot; när ett giltigt konfidensintervall överskrider ett tröskelvärde på 95 % för *minst en* av varianterna (med en Bonferonni-korrigering tillämpad när det finns mer än två armar, för att korrigera för multipla hypotesstester).
 
@@ -96,7 +100,7 @@ The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL
 >
 >En fullständig beskrivning av resultaten bör beakta alla tillgängliga bevis (dvs. experimentdesign, provstorlekar, konverteringsgrader, konfidensgrad osv.), och inte bara försäkran om att resultatet är slutgiltigt eller inte. Även om ett resultat ännu inte är &quot;entydigt&quot; kan det fortfarande finnas övertygande bevis för att en variant skiljer sig från en annan (t.ex. att konfidensintervallen nästan inte överlappar varandra). I idealfallet bör beslutsfattandet kompletteras med all statistik, tolkad på ett kontinuerligt spektrum.
 
-## Adobe statistisk metod
+## Adobe statistisk metod {#statistics}
 
 Adobe har antagit en statistisk metod som bygger på [Sekvenser för alltid giltiga förtroenden](https://doi.org/10.48550/arXiv.2103.06476).
 
@@ -104,6 +108,20 @@ En konfidenssekvens är en sekventiell analog till ett konfidensintervall. För 
 
 En 95-procentig konfidenssekvens kommer att innehålla det &quot;sanna&quot; värdet för affärsmåttet i 95 av de 100 experiment som du utförde. (Ett 95-procentigt konfidensintervall kunde endast beräknas en gång per experiment för att ge samma 95-procentiga garanti. inte med alla nya användare). Med Confidence Sequences kan du därför kontinuerligt övervaka experiment utan att öka andelen falskt positiva fel, dvs. de tillåter&quot;sökning&quot; vid resultat.
 
-## Nya funktioner i Beräknade värden
+## Tolka icke-slumpmässiga dimensioner {#non-randomized}
 
-Två nya avancerade funktioner har lagts till: [!UICONTROL Lift] och [!UICONTROL Confidence]. Mer information finns i [Referens - avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md).
+Med CJA kan analytiker välja vilken dimension som helst som&quot;experiment&quot;. Men hur tolkar man en analys där den dimension som väljs som försöksprodukt inte är en som besökarna är slumpmässiga för?
+
+Ta till exempel en annons som en besökare ser. Du kan vara intresserad av att mäta förändringen i vissa mätvärden (t.ex. genomsnittliga intäkter) om du bestämmer dig för att visa besökare&quot;och B&quot; i stället för&quot;och A&quot;. Orsakseffekten av att visa annonser B i stället för annons A är av central betydelse för att fatta ett beslut om marknadsföring. Denna orsakseffekt kan mätas som de genomsnittliga intäkterna för hela befolkningen om vi ersatte status quo för att visa och A med den alternativa strategin att visa och B.
+
+A/B-tester är den guldbaserade standarden inom branschen för att objektivt mäta effekterna av sådana ingrepp. Den kritiska orsaken till varför ett A/B-test ger upphov till en orsaksuppskattning är att besökarna slumpmässigt får en av de möjliga varianterna.
+
+Tänk nu på en dimension som inte uppnås genom slumpgenerering, till exempel besökarens amerikanska status. Låt oss säga att våra besökare främst kommer från två delstater, New York och Kalifornien. De genomsnittliga intäkterna från försäljningen av ett vinterklädmärke kan vara olika i de två delstaterna på grund av skillnaderna i det regionala vädret. I en sådan situation kan vädret vara den verkliga orsaken till försäljningen av kläder på vintern, och inte det faktum att besökarnas geografiska läge är annorlunda.
+
+Experimenteringspanelen i Customer Journey Analytics gör att du kan analysera data som genomsnittliga intäktsskillnader för besökarlägena. I en sådan situation har produktionen ingen orsaksmässig tolkning. En sådan analys kan dock fortfarande vara av intresse. Den ger en uppskattning (tillsammans med mått på osäkerhet) av skillnaden i genomsnittliga intäkter för besöksstaterna. Detta kallas även för &quot;Statistisk hypotestestning&quot;. Resultatet av den här analysen kan vara intressant, men inte nödvändigtvis åtgärdbart, eftersom vi inte har gjort det och ibland inte kan göra besökarna slumpmässiga till ett av dimensionens möjliga värden.
+
+Följande bild kontrasterar dessa situationer:
+
+![slumpmässigt experiment](assets/randomize.png)
+
+När du vill mäta effekten av ingripande X på resultatet Y är det möjligt att den verkliga orsaken till båda är den förvirrande faktorn C. Om data inte uppnås genom slumpgenerering av besökare på X är effekten svårare att mäta, och analysen kommer uttryckligen att ta hänsyn till C. Slumpgenereringen bryter beroendet av X på C, vilket gör att vi kan mäta effekten av X på Y utan att behöva oroa oss för andra variabler.
