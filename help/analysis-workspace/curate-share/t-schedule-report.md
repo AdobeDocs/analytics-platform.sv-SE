@@ -5,7 +5,7 @@ title: Schemalägg projekt
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Från arbetsytan **[!UICONTROL Share]** kan du skicka Analysis Workspace-projekt
 
 Så här skickar du en fil direkt till mottagarna via e-post:
 
-1. Klicka på **[!UICONTROL Share]>[!UICONTROL Send File Now]**.
+1. Klicka på **[!UICONTROL Share]>[!UICONTROL Export file]**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
@@ -34,7 +34,7 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
-1. Klicka på **[!UICONTROL Share]>[!UICONTROL Send File on Schedule]**.
+1. Klicka på **[!UICONTROL Share]>[!UICONTROL Schedule file export]**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
