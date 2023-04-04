@@ -3,10 +3,10 @@ description: Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mott
 title: Dela-menyn
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: d09094798d22f32d3467527e0c3e1817ff76b5a2
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +20,9 @@ Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i organ
 
 | Menyalternativ | Beskrivning |
 |---|---|
-| Dela med Workspace-användare | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. Dela med specifika användare eller skapa en delbar länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md) |
-| Dela med vem du vill | Ge skrivskyddad åtkomst till Analysis Workspace-projekt till personer som inte har tillgång till Adobe Analytics. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md) |
+| Dela projekt<!--remove this when Share with anyone goes to GA--> | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. Dela med specifika användare eller skapa en delbar länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md) |
+| Dela med Workspace-användare (tillgängligt i Begränsad testning) | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. Dela med specifika användare eller skapa en delbar länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md) |
+| Dela med vem du vill (Finns i Begränsad testning) | Ge skrivskyddad åtkomst till Analysis Workspace-projekt till personer som inte har tillgång till Adobe Analytics. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md) |
 | Exportera fil | Skicka ett projekt som CSV eller PDF direkt till angivna mottagare. [Läs mer](/help/analysis-workspace/curate-share/t-schedule-report.md) |
 | Schemalägg filexport | Skicka ett projekt som CSV eller PDF enligt ett schema till angivna mottagare. [Läs mer](/help/analysis-workspace/curate-share/t-schedule-report.md) |
 | Kuratera projektdata | Begränsa de komponenter (mått, mått, segment, datumintervall) som finns i ett projekt. [Läs mer](/help/analysis-workspace/curate-share/curate.md) |
