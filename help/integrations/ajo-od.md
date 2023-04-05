@@ -1,7 +1,7 @@
 ---
 title: Integrera Adobe Journey Optimizer:s beslutshantering med Customer Journey Analytics (CJA)
 description: Hämta in data som genererats av Adobe Journey Optimizer Decision Management och analysera dem med Analysis Workspace i Customer Journey Analytics.
-source-git-commit: f9ee0db464c49339bc36b144e18ef4aea4f4f033
+source-git-commit: 00a87f5f370310672ca37ab9df08350d14fc6a91
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -78,4 +78,5 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | Avbeställ | Antalet erbjudanden som efterfrågats av profilen visas inte i framtiden. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
 
 {style="table-layout:auto"}
+
 [1] Du kan definiera flera mått för de olika händelsetyperna som är tillgängliga. Se [Inkludera inställningar för komponenten Uteslut värden](/help/data-views/component-settings/include-exclude-values.md) för mer information.
