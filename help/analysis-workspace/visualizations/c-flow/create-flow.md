@@ -3,23 +3,17 @@ description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
-exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
 
 # Konfigurera en flödesvisualisering
 
-Med den uppdaterade Flow-visualiseringen kan ni förstå den resa som härrör från eller leder fram till en specifik konverteringshändelse på er webbplats eller i er app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden. Med Flow kan du konfigurera början eller slutet av sökvägen som du är intresserad av, eller analysera alla sökvägar som flödar genom en dimension eller dimensionspost.
-
-Den nya [!UICONTROL flow] arbetsflödet har förbättrats på flera sätt:
-
-* Nu kan du välja att starta eller avsluta din bana med en kombination av mått och en målningsdimension.
-* Innehåller [!UICONTROL Advanced Settings] så att du kan anpassa [!UICONTROL flow].
-* Den nya knappen &quot;Bygg&quot; sparar tid genom att du kan konfigurera hela resan samtidigt, ställa frågor och sedan automatiskt bygga ut flera kolumner och noder samtidigt &#x200B;.
+Flödesvisualiseringar gör att du kan förstå den resa som härrör från eller leder fram till en specifik konverteringshändelse på din webbplats eller i din app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden. Med Flow kan du konfigurera början eller slutet av sökvägen som du är intresserad av, eller analysera alla sökvägar som flödar genom en dimension eller dimensionspost.
 
 ![nytt flödesgränssnitt](assets/new-flow.png)
 

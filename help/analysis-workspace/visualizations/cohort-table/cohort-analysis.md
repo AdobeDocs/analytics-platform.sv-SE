@@ -3,9 +3,9 @@ title: Vad är kohortanalys?
 description: Läs om kohortanalys i Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,7 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL Cohort Analysis]
->
->stöder inte icke-filterbara mått (inklusive beräknade värden), icke-heltalsmått (som Intäkter) eller förekomster. Endast mätvärden som kan användas i filter kan användas i
->[!UICONTROL Cohort Analysis]och de kan bara ökas med 1 i taget.
+>[!UICONTROL Cohort Analysis] stöder inte icke-filterbara mått (inklusive beräknade värden), icke-heltalsmått (som Intäkter) eller förekomster. Endast mätvärden som kan användas i filter kan användas i [!UICONTROL Cohort Analysis]och de kan bara ökas med 1 åt gången.
 
 ## Funktioner för kohortanalyser
 

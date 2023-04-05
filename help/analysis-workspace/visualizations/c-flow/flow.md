@@ -3,10 +3,10 @@ description: Flödesfunktionen visar kundvägar via era webbplatser och appar.
 title: Översikt över flöden
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +27,10 @@ Här kan du:
 Du kan visa [flöde mellan dimensioner](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
 
 Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en släppzon för att lägga till den dimensionen i diagrammet.
+
+## Konfigurera en flödesvisualisering
+
+Mer information om hur du konfigurerar en flödesvisualisering finns i [Konfigurera en flödesvisualisering](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## Exportera flödesdiagram som en del av Project .CSV-filer {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
