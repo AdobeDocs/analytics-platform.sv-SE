@@ -4,23 +4,90 @@ description: Gör att du kan ange standardattribuering för ett mätresultat.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: f49529768d84699b17d2f690daad6dd463166e30
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Inställningar för attribueringskomponent
 
-Med Attribution kan du ange en standardattribueringsmodell för ett mätresultat. Du kan åsidosätta en given metrisk attribueringsmodell när du arbetar i Analysis Workspace.
+Attribution ger er möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
+
+1. En besökare på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. De lägger produkten i varukorgen, men köper den inte.
+2. Nästa dag ser de ett inlägg i sociala medier från en av deras vänner. De klickar på länken och slutför sedan köpet.
+
+I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering.
+
+Med den här inställningen för datavykomponenten kan du ange en standardattribueringsmodell för ett mätresultat. Du kan åsidosätta en given metrisk attribueringsmodell när du arbetar i Analysis Workspace.
 
 ![Attribuering](../assets/attribution-settings.png)
 
-| Inställning | Beskrivning/Använd skiftläge |
-| --- | --- |
-| [!UICONTROL Set attribution] | Aktiverar en standardattribueringsmodell när det här måttet används. Den här standardinställningen kan åsidosättas i en [!UICONTROL Freeform Table] eller i ett beräknat mått. |
-| [!UICONTROL Attribution model] | Här kan du ange vilket standardvärde du vill använda [attribueringsmodell](/help/analysis-workspace/attribution/models.md) att använda. Standardvärdet är [!UICONTROL Last Touch]. Alternativen är: Senaste beröring, första beröring, linjär, deltagande, samma beröring, U-Shaped, J-kurva, omvänd J, tidsfördröjning, anpassad, algoritmisk. Vissa av dessa alternativ skapar ytterligare fält som måste fyllas i, till exempel Anpassad eller Tidsåtgång. Du kan skapa flera mätvärden med samma fält - det betyder att du kan ha ett [!UICONTROL Last touch] intäktsmått och ett [!UICONTROL First Touch] intäktsmått, men baserat på samma intäktsfält i schemat. |
-| [!UICONTROL Lookback window] | Gör att du kan ange ett standardfönster för uppslag till ett mätvärde. Alternativen är: [!UICONTROL Person] (Rapporteringsfönster), [!UICONTROL Session], [!UICONTROL Custom]. När [!UICONTROL Custom] har valts, ger vi dig också möjlighet att välja valfritt antal dagar/veckor/månader/osv. (upp till 90 dagar), precis som [!UICONTROL Attribution IQ]. Du kan ha flera mätvärden med samma schemafält, men var och en med ett separat uppslagsfönster. |
+Om din organisation kräver att ett mätresultat har flera attribueringsinställningar kan du göra något av följande:
 
-{style=&quot;table-layout:auto&quot;}
+* Kopiera måtten i datavyn med varje önskad attribueringsinställning. Du kan inkludera samma mätvärde flera gånger i en datavy och ge varje mätvärde en egen inställning. Se till att du märker varje mätvärde på rätt sätt så att analytikerna förstår skillnaden mellan dessa mätvärden när de skapar rapporter.
+* Åsidosätt måttet i Analysis Workspace. I en metrisk [Kolumninställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), markera **[!UICONTROL Use non-default attribution model]** om du vill ändra måttets attribueringsmodell och sökfönster för den specifika rapporten.
+
+## Attributionsmodeller
+
+En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett mätresultat när flera värden visas i en metrisk sökningsfönster. Attributionsmodeller används bara när det finns flera dimensionsobjekt angivna i uppslagsfönstret. Om bara en enda dimensionsobjekt anges får den dimensionsobjektet 100 % kredit oavsett vilken attribueringsmodell som används.
+
+| Ikon | Attributionsmodell | Definition |
+| :---: | :--- | --- |
+| ![Sista beröring](../assets/attribution-models/last_touch1.png) | Sista beröring | Ger 100 % uppskattning av den beröringspunkt som inträffade senast före konverteringen. Den här attribueringsmodellen är vanligtvis standardvärdet för alla mätvärden där ingen attributmodell har angetts på annat sätt. Organisationer använder vanligtvis den här modellen där tiden för konvertering är ganska kort, till exempel när interna söknyckelord analyseras. |
+| ![Första beröring](../assets/attribution-models/first_touch.png) | Första beröring | Ger 100 % kredit till den beröringspunkt som först ses i attribueringssökningsfönstret. Organisationer använder vanligtvis den här modellen för att förstå varumärkesmedvetenhet och kundvärvning. |
+| ![Linjär](../assets/attribution-models/linear.png) | Linjär | Ger samma beröm till alla kontaktytor som leder till konvertering. Det är användbart när konverteringscyklerna är längre eller kräver mer frekvent kundengagemang. Organisationer använder vanligtvis den här attribueringsmodellen för att mäta hur effektiva mobilappsaviseringar är eller med prenumerationsbaserade produkter. |
+| ![Deltagande](../assets/attribution-models/participation.png) | Deltagande | Alla unika kontaktpunkter får 100 % beröm. Eftersom varje beröringspunkt får 100 % rabatt läggs måttdata vanligtvis till mer än 100 %. Om en dimensionspost visas flera gånger som leder till en konvertering, dupliceras värdena till 100 %. Den här attribueringsmodellen är perfekt i situationer där du vill förstå vilka kontaktpunkter kunderna exponeras mest för. Medieorganisationer använder vanligtvis den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder vanligtvis den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
+| ![Samma beröring](../assets/attribution-models/same_touch.png) | Samma beröring | Ger 100 % kredit till samma träff som konverteringen. Om en beröringspunkt inte inträffar vid samma träff som en konvertering, klickas den under&quot;Ingen&quot;. Den här attribueringsmodellen är ibland lika med att inte ha någon attribueringsmodell alls. Det är värdefullt i scenarier där du inte vill ha värden från andra träffar som påverkar hur ett mätvärde ger kredit till dimensionsobjekt. Produkt- eller designteam kan använda den här modellen för att utvärdera hur effektiv en sida är där konverteringen sker. |
+| ![U Shaped](../assets/attribution-models/u_shaped.png) | U Shaped | Ger 40 % uppskattning av den första interaktionen, 40 % tack vare den sista interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får båda 50 % rabatt. Den här attribueringsmodellen används bäst i scenarier där du värdesätter den första och den sista interaktionen mest, men inte helt vill avvisa ytterligare interaktioner däremellan. |
+| ![J-kurva](../assets/attribution-models/j_shaped.png) | J-kurva | Ger 60 % kreativitet till den senaste interaktionen, 20 % tack till den första interaktionen och delar de återstående 20 % på alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % poäng för den senaste interaktionen och 25 % kredit ges till den första. I likhet med U-Shaped är den här attribueringsmodellen att föredra den första och sista interaktionen, men den är mer prioriterad än den sista interaktionen. |
+| ![Inverterad J](../assets/attribution-models/inverse_j.png) | Inverterad J | Ger 60 % kredit till den första beröringspunkten, 20 % kredit till den sista beröringspunkten och delar de återstående 20 % till alla beröringspunkter däremellan. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För konverteringar med två kontaktpunkter får 75 % kredit för den första interaktionen och 25 % kredit för den sista. I likhet med J-Shaped prioriterar den här attribueringsmodellen den första och sista interaktionen, men prioriterar den första interaktionen mer. |
+| ![Tidsminskning](../assets/attribution-models/time_decay.png) | Tidsminskning | Följer en exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2^(-t/halflife)`, där `t` är tiden mellan en kontaktpunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %. Perfekt för scenarier där du vill mäta attribuering mot en specifik och viktig händelse. Ju längre en konvertering sker efter den här händelsen, desto mindre kredit ges. |
+| ![Anpassat](../assets/attribution-models/custom.png) | Anpassad | Gör att du kan ange de vikter du vill ge den första beröringspunkten, den sista beröringspunkten och eventuella mellanliggande beröringspunkter. De angivna värdena normaliseras till 100 % även om de anpassade siffrorna inte läggs till i 100. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För interaktioner med två beröringspunkter ignoreras parametern middle. Den första och sista beröringspunkten normaliseras sedan till 100 % och krediteringen tilldelas därefter. Den här modellen är idealisk för analytiker som vill ha fullständig kontroll över sin attribueringsmodell och har särskilda behov som andra attribueringsmodeller inte uppfyller. |
+| ![Algoritmisk](../assets/attribution-models/algorithmic.png) | Algoritmisk | Använder statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. Den algoritm som används för attribuering bygger på Harsanyi Dividend från kooperativ spelteori. Harsanyi-utdelningen är en generalisering av Shapley-värdelösningen (som uppges efter Lloyd Shapley, en Nobel Laureate-ekonom) för att distribuera krediter bland spelarna i ett spel med olika bidrag till resultatet.<br>På en hög nivå beräknas attribueringen som en koalition av aktörer till vilka ett överskott måste fördelas jämnt. Varje koalitions överskottsfördelning bestäms utifrån det överskott som tidigare skapades genom varje delkoalition (eller tidigare deltagande dimensionsposter) rekursivt. Mer information finns i John Harsanyis och Lloyd Shapley&#39;s original papers:<br>Shapley, Lloyd S. (1953). Ett värde för personliga spel. *Bidrag till spelteori, 2(28)*, 307-317.<br>Harsanyi, John C. (1963). En förenklad förhandlingsmodell för det personliga kooperativa spelet. *Internationell ekonomisk granskning 4.2*, 194-220. |
+
+{style="table-layout:auto"}
+
+## Fönstret Lookback
+
+Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för att inkludera kontaktpunkter. Om ett dimensionsobjekt anges utanför uppslagsfönstret inkluderas inte värdet i någon attribueringsberäkning.
+
+* **14 dagar**: Kan säkerhetskopieras upp till 14 dagar efter konverteringen.
+* **30 dagar**: Säkerhetskopierar upp till 30 dagar från när konverteringen gjordes.
+* **60 dagar**: Säkerhetskopierar upp till 60 dagar från när konverteringen gjordes.
+* **90 dagar**: Säkerhetskopierar upp till 90 dagar från när konverteringen gjordes.
+* **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar ändrade [Tidsgräns för session](../create-dataview.md#session-settings).
+* **Person (rapporteringsfönster)**: Alla besök utförs fram till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
+* **Anpassad tid:** Gör att du kan ange ett anpassat uppslagsfönster från när en konvertering inträffade. Du kan ange antalet minuter, timmar, dagar, veckor, månader eller kvartal. Om en konvertering till exempel skedde den 20 februari skulle ett uppslagsfönster på fem dagar utvärdera alla dimensionskontaktytor från den 15 februari till den 20 februari i attribueringsmodellen.
+
+## Exempel
+
+Titta på följande exempel:
+
+1. Den 15 september kommer en besökare till er webbplats via en betald sökannons, sedan går han.
+2. Den 18 september kommer besökaren till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
+3. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
+
+Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
+
+* Använda **första beröringen** och **sessionsfönster**, attribuering tittar bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
+* Använda **första beröringen** och **fönster för personsökning**, attribueringen tittar på alla tre besöken. Betalsökning var först, så den får 100 % rabatt på 50 USD.
+* Använda **linjär** och **sessionsfönster**&#x200B;är krediten fördelad mellan e-post och visning. Båda dessa kanaler får 25 krediter.
+* Använda **linjär** och **fönster för personsökning**&#x200B;är krediten fördelad mellan betalsökningar, sociala medier, e-post och displayannonser. Varje kanal får 12,50 dollar i rabatt för detta inköp.
+* Använda **J-formad** och **fönster för personsökning**&#x200B;är krediten fördelad mellan betalsökningar, sociala medier, e-post och displayannonser.
+   * 60 % kredit ges för 30 dollar.
+   * 20 % kredit ges till betald sökning för 10 dollar.
+   * De återstående 20 % är uppdelade i sociala medier och e-post, vilket ger 5 USD till var och en.
+* Använda **Tidsminskning** och **fönster för personsökning**&#x200B;är krediten fördelad mellan betalsökningar, sociala medier, e-post och displayannonser. Använd standardhalveringstiden på 7 dagar:
+   * Mellanrum på noll dagar mellan visning och konvertering. `2^(-0/7) = 1`
+   * Mellanrum på noll dagar mellan e-postens kontaktpunkt och konvertering. `2^(-0/7) = 1`
+   * Ett mellanrum på sex dagar mellan social kontaktyta och konvertering. `2^(-6/7) = 0.552`
+   * Mellanrum på nio dagar mellan betald sökningspunkt och konvertering. `2^(-9/7) = 0.41`
+   * Normalisering av dessa värden ger följande resultat:
+      * Visa: 33,8 %, får 16,88 USD
+      * E-post: 33,8 % får 16,88 USD
+      * Socialt: 18,6 %, får 9,32 USD
+      * Betalsökning: 13,8 %, får 6,92 USD
+
+Konverteringshändelser som vanligtvis har ett heltal delas om kredit tillhör fler än en kanal. Om till exempel två kanaler bidrar till en order med en linjär attribueringsmodell får båda kanalerna 0,5 av den ordningen. Dessa partiella mätvärden summeras för alla personer och avrundas sedan till närmaste heltal för rapportering.

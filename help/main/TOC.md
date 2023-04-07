@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 32%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -163,12 +163,6 @@ ht-degree: 32%
       + [Visa endast  projekt](../analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](../analysis-workspace/curate-share/download-send.md)
       + [Schemalägg projekt](../analysis-workspace/curate-share/t-schedule-report.md)
-   + Attribution IQ {#attribution}
-      + [Översikt över attribuering](../analysis-workspace/attribution/overview.md)
-      + [Attributmodeller och uppslagsfönster](../analysis-workspace/attribution/models.md)
-      + [Algoritmisk attribuering](../analysis-workspace/attribution/algorithmic.md)
-      + [Bästa praxis för attribuering](../analysis-workspace/attribution/best-practices.md)
-      + [Vanliga frågor](../analysis-workspace/attribution/faq.md)
    + Virtual Analyst {#virtual-analyst}
       + [Översikt över Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
       + Avvikelseidentifiering {#anomaly-detection}
@@ -185,7 +179,6 @@ ht-degree: 32%
       + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet i Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Långsvansar i Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
-
 
 
 

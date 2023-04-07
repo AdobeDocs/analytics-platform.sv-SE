@@ -3,16 +3,27 @@ title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Panelen Attribution
 
-The [!UICONTROL Attribution] är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Det är en funktion i [Attribution IQ](../attribution/overview.md) som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
+The [!UICONTROL Attribution] är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Det är en funktion som ger dig en dedikerad arbetsyta att använda och jämföra attribueringsmodeller.
+
+Customer Journey Analytics förbättrar attribueringen genom att låta dig:
+
+* Definiera attribuering för mer än betalda medier: alla mått, mätvärden, kanaler och händelser kan användas i modellerna (till exempel intern sökning), inte bara marknadsföringskampanjer.
+* Jämföra attribueringsmodeller utan begränsningar: jämför dynamiskt hur många modeller ni vill.
+* Undvika implementeringsändringar: med hjälp av rapporttidshantering och sammanhangsberoende sessioner kan kundresan byggas in och användas vid körning.
+* Skapa den session som bäst matchar attribueringsscenariot.
+* Dela upp attribuering med filter: Jämför enkelt resultatet i era marknadsföringskanaler i alla viktiga filter (t.ex. nya jämfört med upprepade kunder, produkt X jämfört med produkt Y, lojalitetsnivå eller CLV).
+* Granska analyser av kontaktytor och kanalbyten: använd venndiagram och histogram samt trendattribuering.
+* Analysera viktiga marknadsföringssekvenser visuellt: utforska vägar som leder till konvertering visuellt med flernodsflöde och bortfallsvisualisering.
+* Skapa beräknade värden: använd valfria metoder för attribueringstilldelning.
 
 ## Skapa en attribueringspanel
 
@@ -25,7 +36,7 @@ The [!UICONTROL Attribution] är ett enkelt sätt att skapa en analys som jämf�
 
    ![Välj dimension och mått](assets/attribution_panel2.png)
 
-1. Välj [attribueringsmodeller och uppslagsfönster](../attribution/models.md) som du vill jämföra.
+1. Välj de attribueringsmodeller och det uppslagsfönster som du vill jämföra.
 
 1. Attributpanelen returnerar en mängd data och visualiseringar som jämför attribuering för den valda dimensionen och måttet.
 

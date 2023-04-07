@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -117,11 +117,11 @@ Här ser vi ledtiden till konvertering när en kontaktyta är i mixen. Det hjäl
 
 ![Leadtid](assets/lead-time.png)
 
-## Skillnader mellan Attribution AI och Attribution IQ
+## Skillnader mellan Attribution AI och CJA:s attribueringsfunktioner
 
-Så när bör ni använda Attribution AI data jämfört med [Attribution IQ](/help/analysis-workspace/attribution/overview.md), en inbyggd CJA-funktion? I den här tabellen visas några av skillnaderna i funktionalitet:
+I följande tabell visas några av skillnaderna i funktionalitet:
 
-| Funktionalitet | Attribution AI | Attribution IQ |
+| Funktionalitet | Attribution AI | CJA-attribuering |
 | --- | --- | --- |
 | Stegvis attribuering | Ja | Nej |
 | Tillåter användare att justera modellen | Ja | Ja |
@@ -131,4 +131,4 @@ Så när bör ni använda Attribution AI data jämfört med [Attribution IQ](/he
 | Regionsbaserade attribueringsmodeller | Ja | Ja |
 | Kan konfigurera kontaktytor för marknadsföring i modellen | Ja | Nej |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

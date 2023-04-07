@@ -1,12 +1,12 @@
 ---
 title: Skapa eller redigera en datavy
 description: Alla inställningar som du kan justera för att skapa eller redigera en datavy.
-exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Här är en video om ämnet:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## Konfigurera en datavy {#configure}
+## Konfigurera en datavy
 
 1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och går till **[!UICONTROL Data Views]** -fliken.
 2. Klicka **[!UICONTROL Add]** om du vill skapa en datavy eller klicka på en befintlig datavy för att redigera den.
 
 ![Ny datavy](assets/new-data-view.png)
 
-### Inställningar för datavy {#settings}
+### Inställningar för datavy
 
 Innehåller övergripande inställningar för datavyn.
 
@@ -36,9 +36,9 @@ Innehåller övergripande inställningar för datavyn.
 | [!UICONTROL Name] | Obligatoriskt. Datavyns namn. Det här värdet visas i den övre högra listrutan i Analysis Workspace. |
 | [!UICONTROL Description] | Valfritt. Adobe rekommenderar en detaljerad beskrivning så att användarna förstår varför datavyn finns och vem den är avsedd för. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Behållare {#containers}
+### Behållare
 
 Anger namnet på behållare för datavyn. Behållarnamn används ofta i [filter](/help/components/filters/filters-overview.md#Filter-containers).
 
@@ -48,9 +48,9 @@ Anger namnet på behållare för datavyn. Behållarnamn används ofta i [filter]
 | [!UICONTROL Session container name] | [!UICONTROL Session] (standard). The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
 | [!UICONTROL Event container name] | [!UICONTROL Event] (standard). The [!UICONTROL Event] container definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Kalender {#calendar}
+### Kalender
 
 Anger det kalenderformat som du vill att datavyn ska följa. Du kan ha flera datavyer baserade på samma [Anslutning](/help/connections/create-connection.md) och ge dem olika kalendertyper eller tidszoner. Dessa datavyer kan göra det möjligt för team som använder olika kalendertyper att tillgodose sina respektive behov med samma underliggande data.
 
@@ -62,9 +62,9 @@ Anger det kalenderformat som du vill att datavyn ska följa. Du kan ha flera dat
 | [!UICONTROL First day of current year] | Synlig för anpassade kalendertyper. Ange vilken dag på året som du vill att det aktuella året ska börja. Kalendern formaterar automatiskt den första dagen i varje vecka baserat på det här värdet. |
 | [!UICONTROL Year in which the "extra" week occurs] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de utgör en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill att den extra veckan ska läggas till i. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Ställa in komponenterna i en datavy {#set-components}
+## Ställa in komponenterna i en datavy
 
 Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använda standardkomponenter.
 
@@ -95,13 +95,13 @@ Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använd
    * [[!UICONTROL Persistence]](component-settings/persistence.md)
    * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
 
-## Duplicera mått eller dimensioner {#duplicate}
+## Duplicera mått eller dimensioner
 
 Att duplicera mått och dimensioner och sedan ändra specifika inställningar är ett enkelt sätt att skapa flera mått eller dimensioner från ett enda schemafält. Välj [!UICONTROL Duplicate] inställningen under måttets eller dimensionernas namn högst upp till höger. Ändra den nya dimensionen eller måttet och spara det under ett mer beskrivande namn.
 
 ![Duplicera](assets/duplicate.png)
 
-## Filtrera schemafält eller datauppsättningar {#filter}
+## Filtrera schemafält eller datauppsättningar
 
 Du kan filtrera schemafält i den vänstra listen med följande datatyper:
 
@@ -111,19 +111,18 @@ Du kan också filtrera efter datauppsättningar och efter om ett schemafält inn
 
 ![Filtrera andra](assets/filter-other.png)
 
-## Fliken Inställningar {#settings-tab}
+## Fliken Inställningar
 
 1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och går till **[!UICONTROL Data Views]** -fliken.
 1. Klicka **[!UICONTROL Add]** om du vill skapa en datavy eller klicka på en befintlig datavy för att redigera den.
 1. Klicka på **[!UICONTROL Settings]** -fliken.
 
-### Globalt filter {#global-filter}
+### Globalt filter
 
 Du kan lägga till filter som gäller för en hel datavy. Det här filtret tillämpas på alla rapporter som du kör i Workspace. Dra ett filter från listan i den vänstra listen till vänster [!UICONTROL Add filters] fält.
 
-### Sessionsinställningar {#sessions}
+### Sessionsinställningar
 
 Fastställ inaktivitetstiden mellan händelser innan en session förfaller och en ny påbörjas. En tidsperiod krävs. Du kan också tvinga en ny session att starta när en händelse innehåller ett visst mått.
 
 När du har angett alla inställningar klickar du på **[!UICONTROL Save and finish]**.
-

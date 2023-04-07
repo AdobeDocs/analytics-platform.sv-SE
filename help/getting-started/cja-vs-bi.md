@@ -4,13 +4,13 @@ description: Jämför Customer Journey Analytics med BI-lösningar
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
+exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Jämför CJA med BI-lösningar
 
@@ -62,13 +62,11 @@ De inbyggda visualiseringskomponenterna är smarta funktioner som:
 
 * **Virtuella analysfunktioner** som [Analysidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) som använder prediktiva algoritmer och maskininlärning för att ge insikter i vad som driver ovanliga beteenden i era data.
 
-* **Avancerade analysfunktioner** som fokuserar specifikt på kundreseinsikter, som [flödesdiagram](/help/analysis-workspace/visualizations/c-flow/flow.md), [attribuerings-IQ](/help/analysis-workspace/attribution/overview.md), [utfallsdiagram](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)och [dimensionsindelning](/help/components/dimensions/t-breakdown-fa.md). Exempel på användningsklara visualiseringar är:
+* **Avancerade analysfunktioner** som fokuserar specifikt på kundreseinsikter, som [flödesdiagram](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attributionspanelen](/help/analysis-workspace/c-panels/attribution.md), [utfallsdiagram](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)och [dimensionsindelning](/help/components/dimensions/t-breakdown-fa.md). Exempel på användningsklara visualiseringar är:
 
    * [Kundlojalitetsanalys via kohort-/latenstabeller](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), där du bara drar och släpper mätvärden/dimensioner i ett verktyg och du är klar på mindre än 30 sekunder,
 
    * [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualiseringar. Kan installeras på mindre än en minut.
-
-   * [Attributionsmodeller](/help/analysis-workspace/attribution/algorithmic.md) som första beröring, sista beröring, deltagande, tidsminskning, till och med anpassade beröringar som tar några klick att ställa in.
 
 * **Segmenteringsfunktioner i alla steg av din progressiva prospektering**: när du tycker att det är vettigt kan du publicera publiken i Experience Platform och därifrån till någon av de destinationer som stöds.
 
@@ -86,4 +84,3 @@ Det är svårt att jämföra CJA:s visualiseringsfunktioner med vad BI-verktygen
 ## Sammanfattning
 
 CJA skiljer sig från BI-verktygen när det gäller hur det integrerar en optimerad rapportmotor som fokuserar på kundresan sömlöst med användarvänliga verktyg och komponenter för att utföra analyser och skapa rapporter och avancerade visualiseringar. Allt från ett och samma gränssnitt, utan att du behöver växla fram och tillbaka mellan frågemotorn och visualiseringsmiljön.
-

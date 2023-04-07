@@ -4,9 +4,9 @@ description: Lär dig hur du skapar en datauppsättning som länkar callcenter o
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ I den här frihandstabellen kan du se de översta sidorna som bidrar till att ri
 1. Dra den dimension som innehåller webbsidans namn till en frihandsritabellvisualisering.
 1. Ersätt mätvärdet med det anropscentrerade mått som du vill mäta.
 1. Klicka på kugghjulsikonen nära måtthuvudet. Klicka på **[!UICONTROL Use non-default attribution model]**.
-1. Ange önskat [Attributionsmodell](/help/analysis-workspace/attribution/models.md). Exempel: en Time Decay-modell med en halveringstid på 15 minuter och ett Lookback-fönster för session. Den här attribueringsmodellen ger meriter till sidorna som leder fram till samtalet till ert callcenter.
+1. Ange önskat [Attributionsmodell](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Exempel: en Time Decay-modell med en halveringstid på 15 minuter och ett Lookback-fönster för session. Den här attribueringsmodellen ger meriter till sidorna som leder fram till samtalet till ert callcenter.
 
 Den resulterande rapporten visar de översta sidorna som driver samtal till ert callcenter. <!-- use case behind what we use these pages for -->
 

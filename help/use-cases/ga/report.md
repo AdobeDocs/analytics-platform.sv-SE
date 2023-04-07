@@ -4,9 +4,9 @@ description: Visar användbara rapporter om Google Analytics data i Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Du kan se vilka produkter som orsakar de flesta samtalen till ditt callcenter oc
 
 Om du använder en dimensionsuppdelning av &#39;Anropsorsak&#39; visas dimensionsobjektet &quot;Skadad produkt&quot; i exemplet. Nästa steg är att kontakta avdelningen för kvalitetskontroll och se varför kunderna har fått skadade T-shirts.
 
-Du kan se vilka webbsidor som ledde samtal till callcentret. I den här rapporten får ni veta var det finns mindre optimala upplevelser på webbplatsen och hjälpa era produktchefer att lösa dessa utmaningar. I följande exempel används ett beräknat mått för att filtrera data ner till endast sessioner som avslutades med ett call center-anrop. Den använder också&quot;deltagarmodellen&quot; i CJA:s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace).
+Du kan se vilka webbsidor som ledde samtal till callcentret. I den här rapporten får ni veta var det finns mindre optimala upplevelser på webbplatsen och hjälpa era produktchefer att lösa dessa utmaningar. I följande exempel används ett beräknat mått med en deltagarattribueringsmodell för att filtrera data ner till endast sessioner som avslutades med ett anrop till en callcenter.
 
 I följande exempel visas att sidorna&quot;Kundvagn&quot; och&quot;Kassainformation&quot; styr de flesta samtal.
 
