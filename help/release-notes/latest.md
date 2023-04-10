@@ -3,10 +3,10 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ffb98086d38c2e1d880f0b3c584fdbb33d75966e
+source-git-commit: 46a0d5128dfb1023a1cb1c0627c48192d18c3a66
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Början av utrullning](/help/release-notes/releases.md) | [Allmän tillgänglighet](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna (dimensioner, mått) i sin CJA-miljö. [Läs mer](/help/components/data-dictionary/data-dictionary-overview.md) | 8 mars 2023 | **Tillfälligt otillgänglig** |
+| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna (dimensioner, mått) i sin CJA-miljö. [Läs mer](/help/components/data-dictionary/data-dictionary-overview.md) | 8 mars 2023 | 29 mars 2023 |
 | **Dataartiklar på mobilkontrollpaneler** | Med hjälp av dataartiklar kan du lägga till flera anpassningsbara detaljvyer till paneler i projekt i Mobile Scorecard. Använd databerättelser för att fördjupa dig i viktiga drivrutiner, relaterade mätvärden och olika steg längs kundresan. Du kan enkelt svepa igenom de här vyerna för att förstå hela artikeln bakom nyckelmätningarna. [Läs mer](/help/mobile-app/create-scorecard.md#create-data-story) | Ej tillämpligt | 8 mars 2023 |
 | **Förfallodatum för schemalagda projekt** | Du kan ange maximalt förfallodatum för schemalagda projekt till upp till ett år, oavsett schemafrekvens. [Läs mer](/help/analysis-workspace/curate-share/t-schedule-report.md) | Ej tillämpligt | 8 mars 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs) - endast privat betaåtkomst** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till CJA. Du kan dela projektlänkar med personer utanför organisationen eller personer inom organisationen som inte har etablerats för CJA. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md)<p>Om du vill gå med i den privata betaversionen kontaktar du Adobe Account Team. | 26 april 2023 | Juni 2023 |
