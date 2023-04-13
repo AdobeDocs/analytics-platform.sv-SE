@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 8360a7d98510973061e76748ec520711eb3ebaf6
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1589'
 ht-degree: 6%
 
 ---
@@ -19,10 +19,12 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **April 2023** |  |
+| Uppdatera till dokumentationen på panelen Experimentation | Ett avsnitt har lagts till [tolka icke-slumpmässiga dimensioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | **Mars 2023** |  |
 | Integrera beslutsstyrningsdata | Lagt till innehåll som förklarar hur [integrera Adobe Journey Optimizer beslutsdata i CJA](/help/integrations/ajo-od.md). |
 | Skapa dataartiklar i mobilstyrkort | A [dataartikel](/help/mobile-app/create-scorecard.md#create-data-stories) är en samling datapunkter, företagskontext och relaterade mätvärden som bygger på ett centralt tema eller mätvärden. |
-| Funktioner | Uppdaterat [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) med en tabell över funktioner som är tillgängliga i CJA men inte tillgängliga eller stöds i AA. |
+| Uppdaterat funktionsstöd | Uppdaterat [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) med en tabell över funktioner som är tillgängliga i CJA men inte tillgängliga eller stöds i AA. |
 | Standardberäknade värden | Innehåll som förklarar [standardberäknade värden från Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
 | Dataordlista | <p>Lagt till ny dokumentation för Data Dictionary, inklusive en [Översikt](/help/components/data-dictionary/data-dictionary-overview.md), [Visning](/help/components/data-dictionary/view-data-dictionary.md), [Redigering](/help/components/data-dictionary/edit-entries-data-dictionary.md)och [Övervakning](/help/components/data-dictionary/monitor-data-dictionary-health.md) Data Dictionary.</p><p>Information i [Lägga till komponentbeskrivningar](/help/components/add-component-descriptions.md) har uppdaterats för att ta hänsyn till funktionen för datamordlista.</p> |
 | Länkdelning för projekt (ingen inloggning krävs) | <p>Befintlig dokumentation som förklarar hur man delar en skrivskyddad länk till ett projekt med personer som inte har tillgång till Analysis Workspace har uppdaterats.</p> <p>Uppdaterad användardokumentation innehåller [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) och [Skapa delningsbara länkar](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Alternativ för administratörer lades till i [Inställningar](/help/analysis-workspace/user-preferences.md).</p> |
