@@ -3,9 +3,9 @@ description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,9 @@ Dra och släpp eventuella filter från den vänstra listen i panelens släppzon 
 
 Komponenter som inte är filterkomponenter kan också dras direkt till dropzone för att skapa ad hoc-filter, vilket sparar tid och arbete med att gå till Filter Builder. Filter som skapas på det här sättet definieras automatiskt som träffnivåfilter. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid filtret, sedan den pennformade redigeringsikonen och redigera den i Filterverktyget.
 
-Ad hoc-filter är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
+Ad hoc-filter är en typ av snabbfilter och är lokala för projektet. De visas inte i den vänstra listen om du inte gör dem offentliga.
+
+Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
 ![](assets/adhoc-segment-filter.png)
 

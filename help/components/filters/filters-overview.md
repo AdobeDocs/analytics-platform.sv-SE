@@ -2,10 +2,10 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 0%
+source-wordcount: '1096'
+ht-degree: 1%
 
 ---
 
@@ -29,8 +29,7 @@ Du kan skapa olika typer av filter i Workspace och Filter Builder, beroende på 
 | Filtertyp | Skapad var? | Tillämpligt var? | När ska användas |
 | --- | --- | --- | --- |
 | Komponentlistefilter | Klicka på +, vilket tar dig till [Filter Builder](/help/components/filters/create-filters.md) | Alla arbetsyteprojekt | För mer komplexa filter, sekventiella filter |
-| Snabbfilter | [Snabbfilterverktyg](/help/components/filters/quick-filters.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
-| Ad hoc-projektfilter | [Dra och släpp i segmentsläppzonen i ett projekt](/help/components/filters/ad-hoc-filters.md) | Endast projekt, men du kan spara och lägga till i filterlistan. | För enkelradsfilter |
+| Snabbfilter | [Snabbfilterverktyg](/help/components/filters/quick-filters.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för filter med en regel (dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på filterikonen) |
 | Filter i bortfallsanalys | [Utfallsvisualisering](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) i Analysis Workspace | Till individuella utfallsvisualiseringar | Skapa filter från en kontaktyta, lägg till filter som kontaktyta och jämför viktiga arbetsflöden mellan olika filter |
 | Beräknat mätningsbaserat filter | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd filter i måttdefinitionen |
 

@@ -3,10 +3,10 @@ description: Förteckning över kända begränsningar i Adobe Analysis Workspace
 title: Kända begränsningar i Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '297'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 ## Komponenter > Filter
 
 * Vissa mått kan inte filtreras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], osv.
-* Ad hoc-filter skapade i [panelens dropzon](/help/analysis-workspace/c-panels/panels.md) visas inte i den vänstra listen i Workspace eller i Filter-komponenthanteraren, såvida de inte är offentliga. Detta kan du göra genom att redigera filtret och markera **[!UICONTROL Make this filter public]**.
+* Ad hoc-filter skapade i [panelens dropzon](/help/analysis-workspace/c-panels/panels.md) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller i Filter-komponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
 ## Komponenter > Beräknade mått
 
