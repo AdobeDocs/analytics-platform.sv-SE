@@ -3,15 +3,19 @@ title: Skapa anteckningar
 description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
 feature: Components
-exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
+source-git-commit: 2569ee4e958f2d647b62cbce72ebb2b7b98096ab
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Skapa anteckningar
+
+Som standard kan bara administratörer skapa anteckningar. Användare har rätt att visa anteckningar på samma sätt som andra Analytics-komponenter (som segment, beräknade värden osv.).
+
+Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analysverktyg) till användare via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
 
 1. Du kan komma igång på flera sätt för att skapa anteckningar:
 
@@ -39,6 +43,6 @@ ht-degree: 0%
    | [!UICONTROL Apply to all report suites] | Som standard gäller anteckningen för den ursprungliga rapportsviten. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla rapportsviter i företaget. |
    | [!UICONTROL Apply to all projects] | Som standard gäller anteckningen det aktuella projektet. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla projekt som du äger. Observera att den här kryssrutan bara visas när du startar Anteckningsverktyget från Anteckningsverktyget? |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Klicka på **[!UICONTROL Save]**.
