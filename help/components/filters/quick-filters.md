@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: cb1654cef651c5143667302c3fc592ba503dfe0a
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -119,13 +119,17 @@ När du har tillämpat filtret kan du välja att lägga till det i filterkompone
 
 1. Håll pekaren över det sparade filtret och välj pennikonen.
 
+1. Välj [!UICONTROL **Open Builder**].
+
 1. Lägg märke till den här dialogrutan längst upp i Filter Builder:
 
-   ![Dialogrutan Filter](assets/project-only.png)
+   ![Dialogrutan Filter](assets/project-only-filter-dialog.png)
 
-1. Markera kryssrutan bredvid **[!UICONTROL Make available to all your projects and add to your component list.]**
+1. Markera kryssrutan bredvid **[!UICONTROL Make this filtr available to all your projects and add it to your component list.]**
+
 1. Välj **[!UICONTROL Save]**.
-Filtret visas nu i filterkomponentlistan för alla dina projekt.
+
+   Filtret visas nu i filterkomponentlistan för alla dina projekt.
 Du kan också [dela filtret](/help/components/filters/manage-filters.md) med andra i organisationen.
 
 ## Exempel på snabbfilter
