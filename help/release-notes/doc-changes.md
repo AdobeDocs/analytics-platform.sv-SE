@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1639'
 ht-degree: 6%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Funktion | Beskrivning |
 | --- | --- |
 | **April 2023** |  |
+| Filterdokumentation | Lagt till artikel om hur du använder [Filter Builder](/help/components/filters/filter-builder.md). <p>Effektivare dokumentation i [Skapa filter](/help/components/filters/create-filters.md) och [Översikt över filter](/help/components/filters/filters-overview.md).</p> |
 | Uppdatera till dokumentationen på panelen Experimentation | Ett avsnitt har lagts till [tolka icke-slumpmässiga dimensioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | Projektfilter (ad hoc- och snabbfilter) | Effektiv dokumentation om projektfilter och borttagen dubblettinformation. Stegen för att skapa ad hoc-filter kombineras nu med stegen för [skapa snabbfilter](/help/components/filters/quick-filters.md). |
 | **Mars 2023** |  |

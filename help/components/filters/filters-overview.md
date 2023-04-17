@@ -2,9 +2,9 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '956'
 ht-degree: 1%
 
 ---
@@ -18,20 +18,13 @@ Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön)
 
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
-Filtreringen innehåller [Filter Builder](/help/components/filters/create-filters.md) för att skapa filter och köra ett förtest samt [Filterhanteraren](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
+Filtreringen innehåller [Filter Builder](/help/components/filters/filter-builder.md) för att skapa filter och köra ett förtest samt [Filterhanteraren](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
 
 Det högsta antalet filter som du kan skapa per IMS-organisation är 50 000.
 
 ## Filtertyper {#types}
 
-Du kan skapa olika typer av filter i Workspace och Filter Builder, beroende på hur komplexa de behöver vara, om de bara ska gälla för det här projektet osv. Här följer en sammanfattning av filtertyper:
-
-| Filtertyp | Skapad var? | Tillämpligt var? | När ska användas |
-| --- | --- | --- | --- |
-| Komponentlistefilter | Klicka på +, vilket tar dig till [Filter Builder](/help/components/filters/create-filters.md) | Alla arbetsyteprojekt | För mer komplexa filter, sekventiella filter |
-| Snabbfilter | [Snabbfilterverktyg](/help/components/filters/quick-filters.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för filter med en regel (dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på filterikonen) |
-| Filter i bortfallsanalys | [Utfallsvisualisering](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) i Analysis Workspace | Till individuella utfallsvisualiseringar | Skapa filter från en kontaktyta, lägg till filter som kontaktyta och jämför viktiga arbetsflöden mellan olika filter |
-| Beräknat mätningsbaserat filter | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd filter i måttdefinitionen |
+Mer information om tillgängliga typer av filter och hur du skapar dem finns i [Skapa filter](/help/components/filters/create-filters.md).
 
 ## Sekventiella filter {#sequential}
 

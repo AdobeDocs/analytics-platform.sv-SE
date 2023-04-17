@@ -2,49 +2,31 @@
 title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
 
 # Skapa filter
 
-I Filter Builder finns en arbetsyta som du kan använda för att dra och släppa mätvärden, dimensioner, filter och händelser för att filtrera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa filter som identifierar besökares attribut och åtgärder i olika besök och sidträffar.
+Du kan skapa olika typer av filter i Workspace, beroende på hur komplexa de behöver vara, om de ska gälla enbart för det aktuella projektet eller för alla projekt osv.
 
-Du kan skapa direktfilter genom att släppa valfri komponenttyp (dimension, dimensionsobjekt, händelse, mått, filter, filtermall, datumintervall) i filtersläppzonen högst upp på en panel.
+Här följer en sammanfattning av de filtertyper som är tillgängliga, med länkar till information om hur du skapar dem:
 
-Komponenttyper konverteras automatiskt till filter. Du kan också klicka på plustecknet (+) i dialogrutan **[!UICONTROL Add Filter]** drop box.
+| Filtertyp | Skapad var? | Tillämpligt var? | När ska användas |
+| --- | --- | --- | --- |
+| Komponentlistefilter | Klicka på +, vilket tar dig till [Filter Builder](/help/components/filters/filter-builder.md) | Alla arbetsyteprojekt | För mer komplexa filter, sekventiella filter |
+| Snabbfilter | [Snabbfilterverktyg](/help/components/filters/quick-filters.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för filter med en regel (dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på filterikonen) |
+| Filter i bortfallsanalys | [Utfallsvisualisering](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) i Analysis Workspace | Till individuella utfallsvisualiseringar | Skapa filter från en kontaktyta, lägg till filter som kontaktyta och jämför viktiga arbetsflöden mellan olika filter |
+| Beräknat mätningsbaserat filter | [Bygg beräknade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | Till individuellt beräknat mått | Använd filter i måttdefinitionen |
 
-Kom ihåg:
-
-* Du **inte** släpp följande komponenttyper i filterzonen: beräknade mått och mått/mätvärden som du inte kan bygga filter på.
-* För alla dimensioner och händelser skapar Analysis Workspace&quot;exists&quot;-träfffilter. Exempel: &quot;Träffas där eVar1 finns&quot; eller &quot;hit där event1 finns&quot;.
-* Om &quot;unspecified&quot; eller &quot;none&quot; släpps i filtersläppzonen konverteras den automatiskt till filtret &quot;does not exist&quot; så att det behandlas korrekt.
-
-![](assets/segment-dropzone.png)
-
->[!NOTE]
->
->Filter som skapas på det här sättet är interna för projektet.
-
-Du kan välja att göra dessa filter offentliga (globala) genom att följa dessa steg:
-
-1. Håll pekaren över filtret i släppzonen och klicka på ikonen i.
-1. Klicka på **[!UICONTROL Make public]**.
-
-   ![](assets/segment-info.png)
-
-## Andra metoder för att tillämpa filter
-
-Det finns flera andra metoder för att tillämpa filter på ett projekt:
+När du använder filter i ett frihandsprojekt finns det även flera andra metoder:
 
 | Åtgärd | Beskrivning |
 | --- | --- |
 | Skapa filter från markering | Skapa ett textbundet filter. Det här filtret gäller bara för det öppna projektet och sparas inte som ett CJA-filter.<p> 1. Markera vilka tabellrader som du vill ska ingå i filtret.  2. Högerklicka på markeringen.  3. Klicka *Skapa filter från markering*. |
-| Arbetsyta [!UICONTROL Components] > [!UICONTROL New Filter] | Visar Filter Builder. Se [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) för mer information om filtrering. |
-| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)Läs om hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
-| Använd filter som dimensioner | Se videon nedan: Använda filter som Dimensioner i Analysis Workspace |
-
->[!VIDEO](https://video.tv.adobe.com/v/23974)
+| Arbetsyta [!UICONTROL Components] > [!UICONTROL New Filter] | Visar Filter Builder. Se [Filter Builder](/help/components/filters/filter-builder.md) för mer information om filtrering. |
+| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) eller [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md)Läs om hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
+| Använd filter som dimensioner | I följande video visas hur du använder filter som dimensioner: (**Obs!** I den här videon används termen&quot;segment&quot; i stället för&quot;filter&quot;. Funktionen är dock densamma.) <p>[Använda segment som Dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=en)</p> |

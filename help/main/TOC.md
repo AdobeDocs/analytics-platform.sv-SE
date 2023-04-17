@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 32%
+source-wordcount: '879'
+ht-degree: 31%
 
 ---
 
@@ -211,9 +211,10 @@ ht-degree: 32%
    + [Mätvärden](../components/apply-create-metrics.md)
    + Filter {#cja-filters}
       + [Översikt över filter](../components/filters/filters-overview.md)
-      + [Skapa ett filter](../components/filters/create-filters.md)
-      + [Hantera filter](../components/filters/manage-filters.md)
+      + [Skapa filter](../components/filters/create-filters.md)
       + [Snabbfilter](../components/filters/quick-filters.md)
+      + [Filter Builder](../components/filters/filter-builder.md)
+      + [Hantera filter](../components/filters/manage-filters.md)
       + [Operatorer](../components/filters/operators.md)
    + Beräknade mätvärden {#cja-calcmetrics}
       + [Översikt över beräknade mätvärden](../components/calc-metrics/calc-metr-overview.md)
