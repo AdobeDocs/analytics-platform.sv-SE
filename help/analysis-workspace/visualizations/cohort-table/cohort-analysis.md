@@ -3,9 +3,9 @@ title: Vad är kohortanalys?
 description: Läs om kohortanalys i Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 76840d025d1ace28abce5557d66d104795818167
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,6 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 * Byt marknadsföringsbudget vid exakt rätt tidpunkt i kundlivscykeln.
 * Identifiera när en testversion eller ett erbjudande ska avslutas för att maximera värdet.
 * Få idéer för A/B-testning inom områden som priser, uppgraderingsalternativ osv.
-* Visa en [!UICONTROL Cohort Analysis] i en rapport för guidad analys.
 
 [!UICONTROL Cohort Analysis] är tillgängligt för alla Customer Journey Analytics-kunder med åtkomsträttigheter till [!UICONTROL Analysis Workspace].
 
