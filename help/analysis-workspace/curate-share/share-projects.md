@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -137,6 +137,10 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
    <!-- Add screen shot of new modal -->
 
 1. Aktivera **[!UICONTROL Link is active]** om det inte redan är aktiverat.
+
+   Om du väljer det här alternativet skapas en länk till projektet som kan delas med alla. Du kan när som helst inaktivera åtkomsten till projektet genom att inaktivera det här alternativet.
+
+   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange förfallodatum för konton](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) i Analytics Admin Guide.
 
 1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av CJA-administratören):
 
