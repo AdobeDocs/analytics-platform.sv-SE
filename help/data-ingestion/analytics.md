@@ -4,9 +4,9 @@ description: Förklara hur man importerar data från traditionella Adobe Analyti
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
+source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Så här skapar du en Adobe Analytics-källanslutning:
    ![Granska](./assets/review.png)
 
 
-När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten, inklusive inmatning av upp till 13 månaders historiska data.
+När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten, inklusive inmatning av upp till 13 månaders historiska data för produktionssandlådor. (Observera att från och med den 26 april 2023 är bakåtfyllnaden i icke-produktionssandlådor begränsad till tre månader.)
 
 När det första intaget är slutfört kan Adobe Analytics-rapportsvitens data användas av Customer Journey Analytics.
 
