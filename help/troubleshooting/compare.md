@@ -4,9 +4,9 @@ description: Lär dig hur du jämför dina Adobe Analytics-data med data i Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: 95f92d742dcc59098f51978a02c2989c42594807
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -51,18 +51,19 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
 
 1. I Adobe Experience Platform [Frågetjänster](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), kör följande [!UICONTROL Total Records by timestamps] fråga:
 
-```
-SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
-        Count(_id) AS Records 
-        FROM  {dataset} \ 
-        WHERE timestamp>=from_utc_timestamp('{fromDate}','UTC') \ 
-        AND timestamp<from_utc_timestamp('{toDate}','UTC') \ 
-        AND timestamp IS NOT NULL \ 
-        AND enduserids._experience.aaid.id IS NOT NULL  \ 
-        GROUP BY Day \ 
-        ORDER BY Day; 
-```
-
+       &quot;
+       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) as Day, \
+       Count(_id) AS-poster
+       FROM {dataset} \
+       WHERE-tidsstämpel>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
+       OCH tidsstämpel&lt;from_utc_timestamp todate=&quot;&quot; utc=&quot;&quot; span=&quot;&quot; id=&quot;11&quot; translate=&quot;no&quot; />       AND-tidsstämpeln ÄR INTE NULL \
+       OCH enduserider.
+_experience.aaid.id ÄR INTE NULL \
+       GRUPPERA EFTER Dag \
+       BESTÄLL PER DAG;
+       
+       &quot;
+   
 1. I [Dataflöden för analyser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)identifierar du utifrån rådata om några rader kan ha filtrerats bort av Analytics-källkopplingen.
 
    The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kan filtrera vissa rader under omvandlingen till XDM-schema. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande Analytics-fält har dessa värden kommer hela raden att filtreras bort.
