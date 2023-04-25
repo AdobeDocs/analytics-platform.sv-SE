@@ -4,9 +4,9 @@ description: Lär dig hur du lägger till kontobaserade data som en uppslagsdata
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 1a18ddbab09e272189a25041396570d127bb81c3
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Det här B2B-användningsexemplet visar hur du anger data på kontonivå i stäl
 
 Du uppnår allt detta genom att lägga in kontonivåinformationen som en [sökning](/help/getting-started/cja-glossary.md) datauppsättning.
 
-Du skapar först ett sökschema i Adobe Experience Platform och skapar sedan en uppslagstabelldatauppsättning genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (CJA) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Därefter skapar du en datavy och kan till slut använda alla dessa data i Workspace.
+Du skapar först ett uppslagsschema i Adobe Experience Platform och skapar sedan en uppslagstabelldataset genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (CJA) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Därefter skapar du en datavy och kan till slut använda alla dessa data i Workspace.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Skapa ett eget schema för [sökning](/help/getting-started/cja-glossary.md) tab
 
 ![](../assets/create-new-class.png)
 
-## 2. Skapa datauppsättning för sökning (Experience Platform)
+## 2. Skapa uppslagsdatauppsättning (Experience Platform)
 
 När schemat har skapats måste du skapa en uppslagsdatauppsättning från det schemat, i Experience Platform. Den här uppsättningen med uppslagsdata innehåller marknadsföringsinformation på kontonivå, till exempel: företagsnamn, totalt antal anställda, domännamn, vilken bransch de tillhör, årsomsättning, oavsett om de är nuvarande kunder i Experience Platform eller inte, vilket försäljningsstadium de befinner sig i, vilket team på kontot som använder CJA, osv.
 
@@ -63,7 +63,7 @@ I det här exemplet kombinerar vi tre datauppsättningar i en CJA-anslutning:
 | --- | --- | --- | --- |
 | B2B-komprimering | Innehåller klickströmsdata på händelsenivå på kontonivån. Den innehåller till exempel e-post-ID och motsvarande konto-ID samt marknadsföringsnamn för att köra marknadsföringsannonser. Det innehåller även visningar för dessa annonser per användare. | Baserat på schemaklassen XDM ExperienceEvent | The `emailID` används som primär identitet och tilldelas en `Customer ID` namnutrymme. Därför visas den som standard **[!UICONTROL Person ID]** i Customer Journey Analytics. ![Impressions](../assets/impressions-mixins.png) |
 | B2B-profil | Den här profildatauppsättningen ger dig mer information om användarna på ett konto, t.ex. deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM Individual Profile | Du behöver inte välja `emailID` som primärt ID i det här schemat. Se till att aktivera **[!UICONTROL Profile]**; Om du inte gör det kan CJA inte ansluta `emailID` i B2B-profil med `emailID` i B2B-komprimeringsdata. ![Profil](../assets/profile-mixins.png) |
-| B2B-information | Se&quot;Skapa datauppsättning för sökning&quot; ovan. | B2BAccount (anpassad sökschemaklass) | Relationen mellan `accountID` och datauppsättningen B2B Impressions har automatiskt skapats genom att datauppsättningen B2B-information kopplas till datauppsättningen B2B Impression i CJA, vilket beskrivs i stegen nedan. ![Sök](../assets/lookup-mixins.png) |
+| B2B-information | Se&quot;Skapa uppslagsdatauppsättning&quot; ovan. | B2BAccount (anpassad sökschemaklass) | Relationen mellan `accountID` och datauppsättningen B2B Impressions har automatiskt skapats genom att datauppsättningen B2B-information kopplas till datauppsättningen B2B Impression i CJA, vilket beskrivs i stegen nedan. ![Sök](../assets/lookup-mixins.png) |
 
 Så här kombinerar du datauppsättningarna:
 

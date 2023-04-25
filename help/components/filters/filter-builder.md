@@ -3,9 +3,9 @@ description: I filterverktyget finns en arbetsyta där du kan dra och släppa me
 title: Skapa filter
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e918b93a7d5aa98fe0ac1532fa76a2994f6a0c07
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---

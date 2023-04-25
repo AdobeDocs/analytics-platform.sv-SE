@@ -3,9 +3,9 @@ description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
@@ -53,34 +53,34 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar top > down, and left > rig
 #### Navigering
 
 | Genväg | Åtgärd |
-|---|---|
-| Alt + Skift + 1 / 2 / 3 | Hoppa till olika skenor: [!UICONTROL Panels], [!UICONTROL Visualizations], eller [!UICONTROL Components] |
-| Alt + Vänsterpil/Högerpil | Navigera mellan paneler |
-| Alt + M | Komprimera/expandera alla paneler |
-| Alt+Ctrl+M | Komprimera/expandera aktiv panel |
-| Ctrl + / | Sök i vänster list |
+| --- | --- |
+| `[Alt + Shift + 1 / 2 / 3]` | Hoppa till olika skenor: [!UICONTROL Panels], [!UICONTROL Visualizations], eller [!UICONTROL Components] |
+| `[Alt + Left / Right]` | Navigera mellan paneler |
+| `[Alt + M]` | Komprimera/expandera alla paneler |
+| `[Alt + Ctrl + M]` | Komprimera/expandera aktiv panel |
+| `[Ctrl + /]` | Sök i vänster list |
 
 #### Analysgenerering
 
 | Genväg | Åtgärd |
-|---|---|
-| Alt+1 | Ny frihandstabell |
-| Ctrl + Skift + C | Nytt beräknat mått |
-| Ctrl + Skift + D | Nytt datumintervall |
-| Ctrl + Skift + E | Nytt filter |
-| Ctrl + Z | Ångra |
-| Håll ned skift (i panelfilterdropzone) | Skapa en [listrutefilter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| --- | --- |
+| `[Alt + 1]` | Ny frihandstabell |
+| `[Ctrl + Shift + C]` | Nytt beräknat mått |
+| `[Ctrl + Shift + D]` | Nytt datumintervall |
+| `[Ctrl + Shift + E]` | Nytt segment |
+| `[Ctrl + Z]` | Ångra |
+| `[Component drag + Shift]` | Skapa ett nedrullningsbart filter |
 
 #### Demokratisering
 
 | Genväg | Åtgärd |
-|---|---|
-| Ctrl + S | Spara |
-| Ctrl + Skift + G | Kurva |
-| Ctrl + G | Dela |
-| Alt + Skift + S | Schema |
-| Alt+L | Hämta länk till projekt |
-| Ctrl + Skift + B | Ladda ned PDF |
+| --- | --- |
+| `[Ctrl + S]` | Spara |
+| `[Ctrl + Shift + G]` | Kurva |
+| `[Ctrl + G]` | Dela |
+| `[Alt + Shift + S]` | Schema |
+| `[Alt + L]` | Hämta länk till projekt |
+| `[Ctrl + Shift + B]` | Ladda ned PDF |
 
 ## Stöd för skärmläsare och skärmförstorare
 

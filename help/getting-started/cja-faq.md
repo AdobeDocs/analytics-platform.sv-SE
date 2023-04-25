@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1926'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,9 @@ När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som
 +++
 
 
-+++**Vilket beteende förväntas för datauppsättningsposter som inte är sammanfogade?**
++++**Vad är förväntat beteende för icke-sammanfogade profildatauppsättningsposter?**
 
-**Exempel på scenario**: Du ansluter till två datauppsättningar i en CJA-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i datauppsättningen för webbhändelser. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i CJA. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas.
+**Exempel på scenario**: Du ansluter till två datauppsättningar i en CJA-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i webbhändelsedatamängden. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i CJA. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas.
 
 +++
 
@@ -168,7 +168,7 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 | Metrisk deduplicering | Tar bort förekomster av ett mått (till exempel [!UICONTROL Orders]) om flera rader har samma transaktions-ID (till exempel [!UICONTROL Purchase ID]). Detta förhindrar att nyckeltal räknas för mycket. Resultatet blir att mätvärden som [!UICONTROL Orders] kan inte sammanfatta i alla rapportsviter. |
 | Valuta | Valutakonvertering stöds ännu inte i CJA. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
 | [!UICONTROL Persistence] | [Persistence](../data-views/component-settings/persistence.md) omfattar flera rapportsviter, vilket påverkar [!UICONTROL filters], [!UICONTROL attribution]och så vidare. Siffrorna kanske inte läggs ihop korrekt. |
-| [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När flera klassificeringsfiler kombineras till en enda [!UICONTROL lookup] datauppsättningen kan du stöta på problem. |
+| [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När flera klassificeringsfiler kombineras till en enda [!UICONTROL lookup] datauppsättningen, kan du stöta på problem. |
 
 
 ## 8. Traditionell [!UICONTROL Adobe Analytics] komponenter

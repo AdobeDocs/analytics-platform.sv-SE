@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Media Average Minute Audie
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1315'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Du kan konfigurera panelen Media Average Minute Audience med följande indatains
 |---------|------------|
 | Rapporteringsdimensioner | När du väljer specifikt innehåll kan du välja rapportutdata och använda antingen video- eller innehålls-ID-fälten för att visa innehållet och dess associerade genomsnittliga minutmålgrupp under den valda tidsperioden. |
 | Filtrera innehåll efter (valfritt) | Du kan filtrera innehållet beroende på vilken vy du vill ha eller hur data är strukturerade. |
-| Visa, säsong, avsnitt | Om du väljer &quot;Visa, säsong, avsnitt&quot; visas dina tillgängliga program i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa visningsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
+| Visa, säsong, avsnitt | Om du väljer &quot;Visa, årstid, avsnitt&quot; visas dina tillgängliga program i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa namnet på bildspelet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
 | Anpassad dimension | Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i den nedrullningsbara menyn för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt. |
 | Ingen | Du kan välja *Ingen* om du vill visa alla videonamn som har genomsnittliga minutdata för det valda urvalet. |
 
@@ -61,7 +61,7 @@ Du kan konfigurera panelen Media Average Minute Audience med följande indatains
 |---------|------------|
 | Kornighet | Standardgranulariteten är 5 minuter, men du kan välja någon av de granulariteter som används som nämnare för tidsserien inom den övergripande tidsperiodmarkeringen som görs i kalendervalet. Om du till exempel väljer 12:00 till 12:30 med 5 minuters granularitet returneras den genomsnittliga minuten-publiken över hela halvtimmen samt sex rader med den genomsnittliga minuten-publiken för varje femminutersperiod. Dessa rader används som datapunkter för tidsseriediagrammet. |
 | Filtrera innehåll efter (valfritt) | Du kan filtrera innehållet beroende på vilken vy du vill ha eller hur data är strukturerade. |
-| Visa, säsong, avsnitt | Markera *Visa, säsong, avsnitt* visar dina tillgängliga bildspel i listrutan, som du kan filtrera med hjälp av sökning (eller genom att dra och släppa bildspelsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
+| Visa, säsong, avsnitt | Markera *Visa, säsong, avsnitt* visar de tillgängliga programmen i listrutan, som du kan filtrera med hjälp av sökning (eller genom att dra och släppa visningsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
 | Anpassad dimension | Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i den nedrullningsbara menyn för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt. |
 | Ingen | Du kan välja *Ingen* om du vill visa alla videonamn under den tidsperiod som du har valt. |
 

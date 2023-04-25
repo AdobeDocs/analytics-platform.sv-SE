@@ -1,11 +1,11 @@
 ---
-description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade)
+description: Använd radvisualisering för att avbilda trendbaserade (tidsbaserade) datauppsättningar
 title: Linjediagram
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---

@@ -3,10 +3,10 @@ description: Gör att du enkelt kan visualisera jämförelsedata i Analysis Work
 title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
-exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
+exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Tänk på detta:
    | **[!UICONTROL Function]** | Du kan presentera en funktion som [!UICONTROL Average] i jämförelsen. Se en lista över funktioner som stöds nedan.<p>![Funktioner](assets/combo-functions.png) |
    | **[!UICONTROL Secondary metric]** | Du kan till exempel jämföra [!UICONTROL Revenue] till ett annat mätvärde.<p>![Två mätvärden](assets/combo-2metrics.png) |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Klicka på **[!UICONTROL Build]**.
 
@@ -69,7 +69,7 @@ Om du väljer **[!UICONTROL Function]** som [!UICONTROL Line comparison type], r
 | **[!UICONTROL Mean]** | Returnerar det aritmetiska medelvärdet, eller medelvärdet, för ett mått. |
 | **[!UICONTROL Column Minimum]** | Returnerar det minsta värdet i en uppsättning dimensionselement för en måttkolumn. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Här är ett exempel på det ackumulerade genomsnittet för intäktsmåttet:
 
@@ -101,4 +101,4 @@ Klicka på kugghjulsikonen längst upp till höger i ett kombinationsdiagram om 
 | **[!UICONTROL Show y-axis]** | Visa y-axeln eller dölj den. |
 | **[!UICONTROL Anchor y-axis at zero]** | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

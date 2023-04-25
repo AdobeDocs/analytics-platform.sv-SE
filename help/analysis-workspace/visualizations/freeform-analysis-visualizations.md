@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Översikt över visualiseringar
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 4%
+source-wordcount: '1126'
+ht-degree: 3%
 
 ---
 

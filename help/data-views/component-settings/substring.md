@@ -4,7 +4,7 @@ description: Använd en delmängd av en sträng som dimensionsobjekt.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 1%
@@ -26,11 +26,11 @@ Ta en del av en sträng baserat på dess position till början eller slutet av e
 * **[!UICONTROL String Start]**: Strängens början.
 * **[!UICONTROL String End]**: Strängens slut.
 * **[!UICONTROL Position]**: Ett statiskt antal tecken från vänster eller höger, beroende på metoden.
-* **[!UICONTROL String]**: Matcha ett tecken eller en teckensekvens för att ange början eller slutet av en sträng. I den här listrutan visas även ytterligare alternativ:
+* **[!UICONTROL String]**: Matcha ett tecken eller en teckensekvens för att ange början eller slutet av en sträng. Den här listrutan visar även ytterligare alternativ:
    * **[!UICONTROL Match]**: Strängen som ska matchas. Om indata inte matchar det här fältet [Inga värdealternativ](no-value-options.md) gäller.
    * **[!UICONTROL Index]**: The **[!UICONTROL Match]** -villkor kan finnas flera gånger i en sträng. Det här heltalet avgör vilken matchning som ska användas för att starta eller avsluta utdata, beroende på metoden. Ett index på `1` representerar den första matchningen. Om indexvärdet är högre än antalet matchningar som är tillgängliga, [Inga värdealternativ](no-value-options.md) gäller.
    * **[!UICONTROL Include String]**: En kryssruta som innehåller **[!UICONTROL Match]** i utdata om det är aktiverat.
-* **[!UICONTROL Length]**: Ett heltal som anger det teckenantal som ska inkluderas efter startpositionen för utdata. Endast tillgängligt under **[!UICONTROL To]** listruta.
+* **[!UICONTROL Length]**: Ett heltal som anger det teckenantal som ska inkluderas efter startpositionen för utdata. Endast tillgängligt under **[!UICONTROL To]** nedrullningsbar lista.
 
 ## Avgränsare
 
@@ -114,7 +114,7 @@ Utdataplatshållare stöds också. Du kan använda dessa sekvenser i **[!UICONTR
 | `$+` | Matchar det senast markerade deluttrycket i det reguljära uttrycket. |
 | `$$` | Utdata för strängtecknet `"$"`. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Video om bindningsdimensioner
 

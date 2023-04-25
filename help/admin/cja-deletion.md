@@ -4,9 +4,9 @@ description: Vad händer när du tar bort anslutningar, datauppsättningar eller
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5a93abdfa7f630175e950f385629bef81e5fe8ec
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ Tänk på detta innan du tar bort anslutningar, datauppsättningar eller grupper
 | Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | När du tar bort en datauppsättning från en anslutning i CJA fungerar inte längre datavyer och projekt som var beroende av den datauppsättningen. |
 | Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform]) | Om en batch tas bort från en [!UICONTROL Adobe Experience Platform] datauppsättning, samma batch tas bort från alla [!UICONTROL Customer Journey Analytics] anslutningar som innehåller den specifika gruppen. [!UICONTROL Customer Journey Analytics] meddelas om batchar som har tagits bort i [!UICONTROL Adobe Experience Platform]. |
 | Ta bort en grupp **medan den importeras** till [!UICONTROL Customer Journey Analytics] | Om det bara finns en batch i datauppsättningen kommer inga data eller delar av data från den gruppen att visas i [!UICONTROL Customer Journey Analytics]. Intag kommer att återställas. Om det till exempel finns 5 batchar i datauppsättningen och 3 av dem redan har importerats när datauppsättningen togs bort, kommer data från dessa tre batchar att visas i [!UICONTROL Customer Journey Analytics]. |
-| Ta bort datauppsättningar för sökning i [!UICONTROL Adobe Experience Platform] | Även om det är möjligt att ta bort datauppsättningar för andra källanslutningar stöds det för närvarande inte för [Källkoppling för analysklassificeringar](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications.html). Om du tar bort en datauppsättning av misstag, kontakta Adobe kundtjänst. |
+| Ta bort uppslagsdatauppsättningar i [!UICONTROL Adobe Experience Platform] | Även om det är möjligt att ta bort datauppsättningar för andra källanslutningar stöds det för närvarande inte för [Källkoppling för analysklassificeringar](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications.html). Om du tar bort en datauppsättning av misstag, kontakta Adobe kundtjänst. |

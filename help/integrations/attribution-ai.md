@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '900'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, är en flerkanalig algoritmisk attribueringstjänst som beräknar påverkan och inkrementell påverkan av kundinteraktioner i förhållande till angivna resultat. Med Attribution AI kan marknadsförarna mäta och optimera marknadsförings- och annonsutgifterna genom att förstå effekten av varje enskild kundinteraktion under varje fas av kundresan.
 
-Attribution AI kan integreras med Customer Journey Analytics (CJA) i den utsträckning som Attribution AI kör modeller mot kundens kontaktytor för marknadsföring och konverteringsdatakällor. CJA importerar sedan utdata från dessa modeller som en datauppsättning eller kan integreras med resten av dina CJA-datauppsättningar. Datauppsättningar som har Attribution AI kan sedan utnyttjas i datavyer och rapporter i CJA.
+Attribution AI kan integreras med Customer Journey Analytics (CJA) i den utsträckning som Attribution AI kör modeller mot kundens kontaktytor för marknadsföring och konverteringsdatakällor. CJA importerar sedan utdata från dessa modeller som en datauppsättning, eller så kan de integreras med resten av dina CJA-datauppsättningar. Datauppsättningar som har Attribution AI kan sedan utnyttjas i datavyer och rapporter i CJA.
 
 Attribution AI stöder 3 Experience Platform scheman: Experience Event, Adobe Analytics och Consumer Experience Event.
 

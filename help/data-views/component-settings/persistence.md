@@ -4,9 +4,9 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '763'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 7%
 | [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Från och med den 28 oktober 2021 kommer ett uppslagsfönster på upp till 90 dagar att läggas till i [!UICONTROL Allocation] inställning. |
 | [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). Den maximala förfallotiden som du kan ange är 90 dagar. Om du väljer en tilldelning av [!UICONTROL All], endast [!UICONTROL Session] eller [!UICONTROL Person] kan förfalla. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## [!UICONTROL Allocation] inställningar
 
@@ -76,13 +76,13 @@ Information om tillgängliga förfalloinställningar.
 
 ## [!UICONTROL Binding Dimension]
 
-En listruta där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga listrutealternativ innehåller andra dimensioner som ingår i datavyn.
+En nedrullningsbar lista där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga alternativ är andra dimensioner som ingår i datavyn.
 
 Se [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
 
 ## [!UICONTROL Binding Metric]
 
-En listruta där du kan välja ett mått som fungerar som en bindningsutlösare. Giltiga listrutealternativ är mått som ingår i datavyn.
+En nedrullningsbar lista där du kan välja ett mått som fungerar som en bindningsutlösare. Giltiga alternativ är mätvärden som ingår i datavyn.
 
 Den här inställningen visas bara när Dimensionen Bindning är lägre i objektarrayen än i komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen.
 

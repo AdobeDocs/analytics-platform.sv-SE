@@ -5,10 +5,10 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 0%
+source-wordcount: '1686'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Med Anslutningshanteraren kan du:
 | Ta bort en anslutning | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Delete]. Mer information under rubriken &quot;Ta bort anslutningar&quot; nedan. |
 | Skapa datavy | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Create data view]. Den här åtgärden skapar en ny datavy baserad på den här anslutningen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) |
 | [!UICONTROL Datasets] | De datauppsättningar som ingår i anslutningen. Du kan klicka på hyperlänken om du vill visa alla datauppsättningar i anslutningen. När du klickar på en datauppsättning öppnas datauppsättningen i Adobe Experience Platform på en ny flik. |
-| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) från vilken den här anslutningen ritar sina datauppsättningar. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
+| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) från vilken den här anslutningen ritar sina datauppsättningar. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
 | [!UICONTROL Owner] | Den person som skapade anslutningen. |
 | [!UICONTROL Import Data Sets] | Gör att du kan aktivera eller inaktivera det som tidigare kallades&quot;dataströmning&quot;. |
 | [!UICONTROL Date Created] | Det datum då anslutningen skapades för första gången. |
@@ -120,7 +120,7 @@ Här beskrivs widgetar och inställningar:
 | [!UICONTROL Create data view] | Skapa en ny datavy baserad på den här anslutningen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) |
 | [!UICONTROL Connection name] | Visar det egna namnet för anslutningen. |
 | [!UICONTROL Connection description] | Visar en mer detaljerad beskrivning som idealiskt beskriver syftet med den här anslutningen. |
-| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) som den här anslutningen hämtar sina datauppsättningar från. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
+| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) som den här anslutningen hämtar sina datauppsättningar från. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
 | [!UICONTROL Connection ID] | Detta ID genereras i Adobe Experience Platform. |
 | [!UICONTROL Data views using connection] | Visar alla datavyer som använder den här anslutningen. |
 | [!UICONTROL Import new data] | (På/av) Anger om nya datagrupper ska läggas till i historiska data (backfill) eller inte. |

@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Med den här metoden kan du göra en djupare analys av dina användningsdata och
 >
 >    Skapa inte en ny anslutning som omfattar alla data bara för att mäta användningen, eftersom det effektivt skulle fördubbla användningen.
 
-1. Skapa nya projekt baserat på varje datavy i arbetsytan och dra in alla händelser (från **[!UICONTROL Metrics]** (nedrullningsbar meny) fram till första fredagen i månaden, med början den första dagen i ditt aktuella CJA-kontrakt.
+1. Skapa nya projekt baserat på varje datavy i arbetsytan och dra in alla händelser (från **[!UICONTROL Metrics]** nedrullningsbar lista) fram till den första fredagen i månaden, med början den första dagen i ditt CJA-kontrakt.
 
    ![Händelser](./assets/events-usage.png)
 

@@ -4,9 +4,9 @@ description: Visa huvudinställningar för en datavykomponent.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: baee2ccf6eec040972726b9651ffe565d50307a9
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,11 @@ Kärninställningar som används av en datavykomponent.
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |
-| [!UICONTROL Component type] | Obligatoriskt. Gör att du kan ändra en komponent från Mått till Dimension eller tvärtom. Om du ändrar den här listrutan flyttas komponenten till dess respektive inkluderade komponentområde. |
+| [!UICONTROL Component type] | Obligatoriskt. Gör att du kan ändra en komponent från Mått till Dimension eller tvärtom. Om du ändrar den här listrutan flyttas komponenten till respektive komponentområde. |
 | [!UICONTROL Component Name] | Obligatoriskt. Här kan du ange ett eget namn som visas i Analysis Workspace. Du kan byta namn på en komponent för att ge den ett namn som är specifikt för datavyn. |
 | [!UICONTROL Description] | Valfritt, men rekommenderas. Ger information om komponenten till andra användare. |
 | [!UICONTROL Tags] | Valfritt. Gör att du kan tagga komponenten med egna eller färdiga taggar för enklare sökning/filtrering i Analysis Workspace-gränssnittet. |
-| [!UICONTROL Context labels] | Valfritt. En listruta med tillgängliga systemdefinierade etiketter som kan tillämpas på en komponent. Dessa etiketter kan behövas för att definiera en uppsättning komponenter som används för rapportering i Analysis Workspace-projekt eller paneler. |
+| [!UICONTROL Context labels] | Valfritt. En nedrullningsbar lista med tillgängliga systemdefinierade etiketter som kan användas på en komponent. Dessa etiketter kan behövas för att definiera en uppsättning komponenter som används för rapportering i Analysis Workspace-projekt eller paneler. |
 | [!UICONTROL Schema field name] | Schemafältets namn. |
 | [!UICONTROL Dataset type] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken datamängdstyp (händelse, sökning eller profil) som komponenten kommer från. |
 | [!UICONTROL Dataset] | Ett icke-redigerbart fält som visar vilken datamängd som komponenten kommer från. Det här fältet kan innehålla flera datauppsättningar. |
@@ -33,7 +33,7 @@ Kärninställningar som används av en datavykomponent.
 | [!UICONTROL Data Usage Labels] | Alla dataanvändningsetiketter som har tilldelats den här komponenten i Adobe Experience Platform. [Läs mer](/help/data-views/data-governance.md) |
 | [!UICONTROL Hide component in reporting] | Gör att du kan strukturera komponenten utanför datavyn för icke-administratörer. Administratörer kan fortfarande komma åt den genom att klicka på [!UICONTROL Show All Components] i ett Analysis Workspace-projekt. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Här är en video om komponentinställningar i datavyer:
 
