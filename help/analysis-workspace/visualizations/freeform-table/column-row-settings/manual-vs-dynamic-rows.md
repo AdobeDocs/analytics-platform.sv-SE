@@ -3,9 +3,9 @@ title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 description: Så här interagerar du med dynamiska och statiska dimensionsobjekt i tabeller
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: 67435cdfcb23e3c6e9a04ecb4a0b0e854473387c
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,8 @@ När du släpper en dimension i en frihandstabell returneras dynamiska rader. De
 
 När du t.ex. drar dimensionen Webbläsartyp till tabellen, visas dimensionsobjekten för webbläsartypen överst (t.ex. Microsoft, Apple, Google) Återgå dynamiskt till tabellraderna. Om de utelämnas i en kolumn returneras dimensionsobjekten för de fem vanligaste webbläsartyperna dynamiskt.
 
-Dynamiska dimensionsobjekt har alternativet radfilter, och gör det **not** har lås- och X-ikoner.
+Dynamiska dimensionsobjekt har alternativet radfilter, och gör det **not** har lås- och X-ikoner. Mer information om hur du använder filter på tabeller finns i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+
 
 ![](assets/dynamic-items.png)
 

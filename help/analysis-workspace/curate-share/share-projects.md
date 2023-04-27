@@ -4,7 +4,7 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
+source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 >
 >* CJA-administratören kan inaktivera möjligheten att dela ett projekt på det här sättet, vilket beskrivs i [Inställningar](/help/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har CJA-administratören inaktiverat den här möjligheten.
 >
->* Projekt med fler än 14 utökade visualiseringar kan inte delas med personer som inte har tillgång till CJA.
+>* Projekt med mer än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till CJA.
 >
 >* Användare som du delar med kan visa alla filter som använts på projektet under [kuration](curate.md).
 > 
