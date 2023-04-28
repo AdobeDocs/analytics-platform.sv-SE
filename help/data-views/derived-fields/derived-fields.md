@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: ee95dd14dce1186bbccabd359e6bc857d8e7036a
+source-git-commit: 3fb99165104ad4045aed0b9f6867b21acf2a11f8
 workflow-type: tm+mt
 source-wordcount: '2998'
 ht-degree: 3%
@@ -615,11 +615,11 @@ Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den
 |---|
 | Hemsida |
 | Flygsökning |
-| `http://www.expedia.ca/Hotel-Search` |
-| `https://www.expedia.com/Package-Search` |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
 | Erbjudanden |
-| `http://www.expedia.ca/user/reviews` |
-| `https://www.expedia.com.br/Generate-Quote/preview` |
+| `http://www.adobetravel.ca/user/reviews` |
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
 
 {style="table-layout:auto"}
 
