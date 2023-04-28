@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 3fb99165104ad4045aed0b9f6867b21acf2a11f8
+source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '3015'
 ht-degree: 3%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 # Härledda fält
 
-Härledda fält är viktiga aspekter av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett (anpassat) fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i arbetsytan eller ytterligare definiera det som en komponent i datavyn.
+Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett (anpassat) fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera som en komponent i [Datavy](../data-views.md).
 
-Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än CJA. som Data Prep, Data Distiller eller i ETL-processer (Extract Transform Load)/ELT-processer (Extract Load Transform).
+Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än CJA. Som [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)eller i dina egna ETL-/ELT-processer.
 
-Härledda fält definieras som anpassade fält i [Datavyer](../data-views.md), och baseras på en uppsättning funktioner och tillämpas på tillgängliga standard- och/eller schemafält.
+Härledda fält definieras som anpassade fält i [Datavyer](../data-views.md), baseras på en uppsättning funktioner och tillämpas på tillgängliga standard- och/eller schemafält.
 
 Exempel:
 
