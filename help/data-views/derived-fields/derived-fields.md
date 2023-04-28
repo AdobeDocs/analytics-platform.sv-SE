@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
+source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3020'
 ht-degree: 3%
 
 ---
@@ -15,18 +15,19 @@ ht-degree: 3%
 
 # Härledda fält
 
+{{release-limited-testing}}
+
 Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett (anpassat) fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera som en komponent i [Datavy](../data-views.md).
 
 Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än CJA. Som [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)eller i dina egna ETL-/ELT-processer.
 
-Härledda fält definieras som anpassade fält i [Datavyer](../data-views.md), baseras på en uppsättning funktioner och tillämpas på tillgängliga standard- och/eller schemafält.
+Härledda fält definieras som anpassade fält i [Datavyer](../data-views.md), baseras på en uppsättning funktioner som definieras som regler och tillämpas på tillgängliga standard- och/eller schemafält.
 
 Exempel:
 
 - Definiera ett anpassat sidnamnsfält som korrigerar felaktiga insamlade sidnamnsvärden för att korrigera sidnamnsvärden.
 
 - Definiera ett anpassat fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (t.ex. URL-parameter, sidadress, sidnamn).
-
 
 ## Anpassat fältgränssnitt
 
@@ -37,7 +38,7 @@ När du skapar eller redigerar ett anpassat fält använder du det anpassade fä
 
 |  | Namn | Beskrivning |
 |---------|----------|--------|
-| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa ![Funktion](assets/Smock_Function_18_N.svg) funktion,![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) funktionsmall,![Ikon för schemafält](assets/Smock_Folder_18_N.svg) schemafält, eller![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg)standardfält vidare till regelbyggaren. <br/>Använd listrutan för att välja mellan [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields]och [!UICONTROL Standard fields].<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med sökrutan. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
+| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa ![Funktion](assets/Smock_Function_18_N.svg) funktion,![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) funktionsmall,![Ikon för schemafält](assets/Smock_Folder_18_N.svg) schemafält, eller![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg)standardfält vidare till regelbyggaren. <br/>Använd listrutan för att välja mellan [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields]och [!UICONTROL Standard fields].<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med ![Ikonen Sök](assets/Smock_Search_18_N.svg) Sökruta. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
 | 2 | **Regelverktyget** | Du skapar det anpassade fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelbyggaren. Funktionstypen bestämmer regelns gränssnitt.<br/>Se [Regelgränssnitt](#rule-interface) för mer information. <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan finns i regelbyggaren. Den sista regeln i regelbyggaren avgör det anpassade fältets slutliga utdata. |
 | 3 | **[!UICONTROL ** Fältinställningar **]** | Du kan namnge och beskriva ditt anpassade fält och kontrollera dess fälttyp. |
 | 4 | **[!UICONTROL ** Slutlig utmatning **]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du har gjort i det anpassade fältet i regelbyggaren. |
