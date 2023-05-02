@@ -5,13 +5,13 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
+exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
+source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3175'
 ht-degree: 3%
 
 ---
-
 
 # Härledda fält
 
@@ -153,14 +153,21 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 ## Funktionsreferens
 
-För varje funktion som stöds, se informationen nedan:
+För varje funktion som stöds finns information nedan:
 
-- indata, operatorer och utdata
+- specifikationer:
+   - datatyp: typ av data som stöds,
+   - indata: möjliga värden för indata,
+   - inkluderade operatorer: operatorer som stöds för den här funktionen (om sådana finns),
+   - gräns: maximalt antal regler med den här funktionen som du kan använda i ett härlett fält,
+   - utdata.
 
 - Användningsfall, inklusive
    - data innan du definierar det anpassade fältet
    - definiera det anpassade fältet
    - data efter att ha definierat det anpassade fältet
+
+- beroenden (valfritt)
 
 
 <!-- Concatenate -->
@@ -171,11 +178,11 @@ Kombinerar två eller flera fält, anpassade fält eller användarinmatade värd
 
 +++ Detaljer
 
-## Indata/operatorer/utdata {#concatenate-io}
+## Specifikationer {#concatenate-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Utdata |
-|---|---|---|---|
-| <p>Sträng</p> | <ul><li>Två eller flera värden som ska kombineras<ul><li>Fält</li><li>Härlett värde från en tidigare regel</li><li>Användardefinierat värde</li></ul></li><li>Avgränsare<ul><li>Inmatning eller markering av en avgränsare för varje värde</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>Nytt anpassat fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|:--:|---|
+| <p>Sträng</p> | <ul><li>Två eller flera värden som ska kombineras<ul><li>Fält</li><li>Härlett värde från en tidigare regel</li><li>Användardefinierat värde</li></ul></li><li>Avgränsare<ul><li>Inmatning eller markering av en avgränsare för varje värde</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>2</p> | <p>Nytt anpassat fält</p> |
 
 {style="table-layout:auto"}
 
@@ -200,7 +207,7 @@ Tänk dig följande bokningar:
 Rapporten ska se ut så här:
 
 | Ursprung / Mål | Bokningar |
-|---|---|
+|----|---:|
 | SLC-MCO | 2 |
 | SLC-LAX | 1 |
 | SLC-SEA | 1 |
@@ -212,7 +219,7 @@ Rapporten ska se ut så här:
 ### Data före {#concatenate-uc-databefore}
 
 | Ursprung | Mål |
-|----|----|
+|----|---:|
 | SLC | MCO |
 | SLC | LAX |
 | SLC | SEA |
@@ -249,11 +256,11 @@ Använder villkorliga värden som baseras på definierade villkor från ett elle
 
 +++ Detaljer
 
-## Indata/operatorer/utdata {#casewhen-io}
+## Specifikationer {#casewhen-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Utdata |
-|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum/datum/tid</li></ul> | <ul><li>Indatafält</li><li>Kriterier</li></ul> | <p><u>Strängar</u></p><ul><li>Är lika med</li><li>Liknar alla termer</li><li>Innehåller frasen</li><li>Innehåller valfri term</li><li>Innehåller alla termer</li><li>Börjar med</li><li>Börjar med valfri term</li><li>Slutar med</li><li>Slutar med valfri term</li><li>Är inte lika med</li><li>Motsvarar inte någon term</li><li>Innehåller inte frasen</li><li>Innehåller inga termer</li><li>Innehåller inte alla termer</li><li>Börjar inte med</li><li>Börjar inte med någon term</li><li>Slutar inte med</li><li>Slutar inte med någon term</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Numeriskt</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är större än</li><li>Är större än eller lika med</li><li>Är mindre än</li><li>Är mindre än eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Datum</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är senare än</li><li>Är senare än eller lika med</li><li>Är före</li><li>Är före eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul> | <p>Nytt anpassat fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|:---:|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum/datum/tid</li></ul> | <ul><li>Indatafält</li><li>Kriterier</li></ul> | <p><u>Strängar</u></p><ul><li>Är lika med</li><li>Liknar alla termer</li><li>Innehåller frasen</li><li>Innehåller valfri term</li><li>Innehåller alla termer</li><li>Börjar med</li><li>Börjar med valfri term</li><li>Slutar med</li><li>Slutar med valfri term</li><li>Är inte lika med</li><li>Motsvarar inte någon term</li><li>Innehåller inte frasen</li><li>Innehåller inga termer</li><li>Innehåller inte alla termer</li><li>Börjar inte med</li><li>Börjar inte med någon term</li><li>Slutar inte med</li><li>Slutar inte med någon term</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Numeriskt</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är större än</li><li>Är större än eller lika med</li><li>Är mindre än</li><li>Är mindre än eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Datum</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är senare än</li><li>Är senare än eller lika med</li><li>Är före</li><li>Är före eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul> | <p>5</p> | <p>Nytt anpassat fält</p> |
 
 {style="table-layout:auto"}
 
@@ -273,7 +280,7 @@ Du vill definiera regler för att identifiera olika marknadsföringskanaler geno
 Om din webbplats får följande exempelhändelser, som innehåller referens- och sidadresser, ska dessa händelser identifieras enligt följande:
 
 | Händelse | Referent | Sidans URL | Marknadsföringskanal |
-|:----:|----|----|----|
+|:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | Naturlig social |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Visa |
 | 3 |  | `https://site.com/?cid=em_12345678` | E-post |
@@ -425,8 +432,6 @@ Din rapport ska se ut så här:
 | 21 |
 | 8 |
 
-{style="table-layout:auto"}
-
 ### Anpassat fält {#casewhen-uc3-customfield}
 
 Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regel i Rule Builder. Den här regeln använder logik för att bucket den gamla **[!UICONTROL ** Resetid **]** fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
@@ -451,6 +456,32 @@ Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande 
 | lång resa |
 | lång resa |
 
+
+## Beroenden
+
+Följande beroenden gäller när du väljer och anger värden.
+
+
+|  | Datauppsättningsberoenden |
+|:---:|----|
+| <span style='color: red'>A</span> | Värden du _välj_ inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma datauppsättning. |
+| <span style='color: red'>B</span> | Alla värden du anger _set_ inom konstruktioner och i hela regeln måste komma från samma datauppsättning. |
+| <span style='color: blue'>C</span> | Värdena du _välj_ tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do _not_ måste komma från samma datauppsättning. |
+
+{style="table-layout:auto"}
+
+![Fall när datauppsättningar är beroende](assets/case-when-datasets.png)
+
+
+|  | Typberoenden |
+|:---:|----|
+| <span style='color: red'>D</span> | De typer av värden du _set_ i alla regler måste vara desamma. |
+| <span style='color: blue'>E</span> | De typer av värden du _välj_ inom en konstruktion eller mellan konstruktioner i en regel kan vara av vilken typ som helst (sträng, numeriskt värde, datum). |
+
+{style="table-layout:auto"}
+
+![Skiftläge vid textberoenden](assets/case-when-types.png)
+
 +++
 
 
@@ -462,11 +493,11 @@ Söker efter alla värden i ett markerat fält och ersätter dessa värden med e
 
 +++ Detaljer
 
-## Indata/operatorer/utdata {#findreplace-io}
+## Specifikationer {#findreplace-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Utdata |
-|---|---|---|---|
-| <p>Sträng</p> | <ul><li><span>Fältvillkor för När ska ersättas</span></li><li><span>Fältvärdet Ersätt med</span><ul><li><span>Anges av användaren</span></li><li><span>Separat fält</span></li></ul></li></ul> | <p><u>Strängar</u></p><ul><li>Sök alla och ersätt alla</li></ul> | <p>Nytt anpassat fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|:---:|---|
+| <p>Sträng</p> | <ul><li><span>Fältvillkor för När ska ersättas</span></li><li><span>Fältvärdet Ersätt med</span><ul><li><span>Anges av användaren</span></li><li><span>Separat fält</span></li></ul></li></ul> | <p><u>Strängar</u></p><ul><li>Sök alla och ersätt alla</li></ul> | <p>1</p> | <p>Nytt anpassat fält</p> |
 
 {style="table-layout:auto"}
 
@@ -478,16 +509,16 @@ Du har fått felaktiga värden för din rapport om externa marknadsföringskanal
 **Ursprunglig rapport**
 
 | Kanaler för extern marknadsföring | Sessioner |
-|---|---|
+|---|--:|
 | e-postmarknadsföring | 500 |
-| e-post%20marknadsföring | 24 |
+| e-post %20 marknadsföring | 24 |
 
 {style="table-layout:auto"}
 
 **Önskad rapport**
 
 | Kanaler för extern marknadsföring | Sessioner |
-|---|---|
+|---|--:|
 | e-postmarknadsföring | 524 |
 
 
@@ -533,11 +564,11 @@ Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden.
 +++ Detaljer
 
 
-## Indata/operatorer/utdata {#lookup-io}
+## Specifikationer {#lookup-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Utdata |
-|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Sing-fält</li><li>Sökfil<ul><li>Nyckelkolumn</li><li>Ny fältkolumn</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>Nytt anpassat fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|:---:|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Sing-fält</li><li>Sökfil<ul><li>Nyckelkolumn</li><li>Ny fältkolumn</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
 
 {style="table-layout:auto"}
 
@@ -652,11 +683,11 @@ Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågep
 
 +++ Detaljer
 
-## Indata/operatorer/utdata {#urlparse-io}
+## Specifikationer {#urlparse-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Utdata |
-|---|---|---|---|
-| <ul><li>Sträng</li></ul> | <ul><li>Sing-fält</li><li>Analysalternativ<ul><li>Hämta protokoll</li><li>Hämta värd</li><li>Hämta sökväg</li><li>Hämta frågevärde<ul><li>Frågeparam</li></ul></li><li>Hämta hash-värde</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>Nytt anpassat fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|:---:|---|
+| <ul><li>Sträng</li></ul> | <ul><li>Sing-fält</li><li>Analysalternativ<ul><li>Hämta protokoll</li><li>Hämta värd</li><li>Hämta sökväg</li><li>Hämta frågevärde<ul><li>Frågeparam</li></ul></li><li>Hämta hash-värde</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
 
 {style="table-layout:auto"}
 
