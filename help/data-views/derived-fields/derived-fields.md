@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
+source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
 workflow-type: tm+mt
-source-wordcount: '3175'
+source-wordcount: '3171'
 ht-degree: 3%
 
 ---
@@ -461,11 +461,10 @@ Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande 
 
 Följande beroenden gäller när du väljer och anger värden.
 
-
 |  | Datauppsättningsberoenden |
 |:---:|----|
 | <span style='color: red'>A</span> | Värden du _välj_ inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma datauppsättning. |
-| <span style='color: red'>B</span> | Alla värden du anger _set_ inom konstruktioner och i hela regeln måste komma från samma datauppsättning. |
+| <span style='color: red'>B</span> | Alla värden du anger _set_ i en regel måste komma från samma datauppsättning. |
 | <span style='color: blue'>C</span> | Värdena du _välj_ tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do _not_ måste komma från samma datauppsättning. |
 
 {style="table-layout:auto"}
@@ -475,8 +474,8 @@ Följande beroenden gäller när du väljer och anger värden.
 
 |  | Typberoenden |
 |:---:|----|
-| <span style='color: red'>D</span> | De typer av värden du _set_ i alla regler måste vara desamma. |
-| <span style='color: blue'>E</span> | De typer av värden du _välj_ inom en konstruktion eller mellan konstruktioner i en regel kan vara av vilken typ som helst (sträng, numeriskt värde, datum). |
+| <span style='color: red'>D</span> | Värdetyperna som du _set_ i en regel måste vara densamma. |
+| <span style='color: blue'>E</span> | Värdetyperna som du _välj_ inom en konstruktion eller mellan konstruktioner i en regel kan vara av vilken typ som helst (sträng, numeriskt värde, datum). |
 
 {style="table-layout:auto"}
 
