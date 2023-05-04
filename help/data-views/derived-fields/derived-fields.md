@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
+source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
 workflow-type: tm+mt
-source-wordcount: '3171'
+source-wordcount: '3210'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ När du skapar eller redigerar ett anpassat fält använder du det anpassade fä
 |  | Namn | Beskrivning |
 |---------|----------|--------|
 | 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa ![Funktion](assets/Smock_Function_18_N.svg) funktion,![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) funktionsmall,![Ikon för schemafält](assets/Smock_Folder_18_N.svg) schemafält, eller![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg)standardfält vidare till regelbyggaren. <br/>Använd listrutan för att välja mellan [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields]och [!UICONTROL Standard fields].<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med ![Ikonen Sök](assets/Smock_Search_18_N.svg) Sökruta. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
-| 2 | **Regelverktyget** | Du skapar det anpassade fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelbyggaren. Funktionstypen bestämmer regelns gränssnitt.<br/>Se [Regelgränssnitt](#rule-interface) för mer information. <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan finns i regelbyggaren. Den sista regeln i regelbyggaren avgör det anpassade fältets slutliga utdata. |
+| 2 | **Regelverktyget** | Du skapar det anpassade fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelverktyget. Funktionstypen bestämmer regelns gränssnitt.<br/>Se [Regelgränssnitt](#rule-interface) för mer information. <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan finns i regelbyggaren. Den sista regeln i regelverktyget avgör det anpassade fältets slutliga utdata. |
 | 3 | **[!UICONTROL ** Fältinställningar **]** | Du kan namnge och beskriva ditt anpassade fält och kontrollera dess fälttyp. |
 | 4 | **[!UICONTROL ** Slutlig utmatning **]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du har gjort i det anpassade fältet i regelbyggaren. |
 
@@ -167,7 +167,7 @@ För varje funktion som stöds finns information nedan:
    - definiera det anpassade fältet
    - data efter att ha definierat det anpassade fältet
 
-- beroenden (valfritt)
+- begränsningar (valfritt)
 
 
 <!-- Concatenate -->
@@ -361,7 +361,7 @@ Din webbplats samlar in följande värden för dimensionen för produktsöknings
 
 ### Anpassat fält {#casewhen-uc2-customfield}
 
-Du definierar en `Product Finding Methods (new)` anpassat fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regler i Rule Builder. Dessa regler tillämpar logik för alla möjliga varianter av det gamla **[!UICONTROL ** Metoder för produktsökning **]** fältvärden för `search` och `browse` med **[!UICONTROL Contains the phrase]** kriterium.
+Du definierar en `Product Finding Methods (new)` anpassat fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regler i Regelverktyget. Dessa regler tillämpar logik för alla möjliga varianter av det gamla **[!UICONTROL ** Metoder för produktsökning **]** fältvärden för `search` och `browse` med **[!UICONTROL Contains the phrase]** kriterium.
 
 ![[!DNL Case When] regel 2](assets/case-when-2.png)
 
@@ -434,7 +434,7 @@ Din rapport ska se ut så här:
 
 ### Anpassat fält {#casewhen-uc3-customfield}
 
-Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regel i Rule Builder. Den här regeln använder logik för att bucket den gamla **[!UICONTROL ** Resetid **]** fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
+Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regel i regelverktyget. Den här regeln använder logik för att bucket den gamla **[!UICONTROL ** Resetid **]** fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
 
 ![[!DNL Case When] regel 3](assets/case-when-3.png)
 
@@ -457,29 +457,25 @@ Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande 
 | lång resa |
 
 
-## Beroenden
+## Begränsningar
 
-Följande beroenden gäller när du väljer och anger värden.
+CJA använder en kapslad behållarmodell för sin funktion. Den här kapslade behållarmodellen avgör begränsningarna när regelbyggaren används. CJA-standardmodellen för kapslade behållare är strukturerad enligt nedan:
 
-|  | Datauppsättningsberoenden |
+<p align="center">
+<img src="./assets/containers.png" width="70%" valign="middle">
+</p>
+
+Se [Behållare](../create-dataview.md#containers) och [Filterbehållare](../../components/filters/filters-overview.md#filter-containers) för mer bakgrundsinformation.
+
+Följande behållarbegränsningar gäller och används när _markera_ och _inställning_ värden.
+
+|  | Begränsningar |
 |:---:|----|
-| <span style='color: red'>A</span> | Värden du _välj_ inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma datauppsättning. |
-| <span style='color: red'>B</span> | Alla värden du anger _set_ i en regel måste komma från samma datauppsättning. |
-| <span style='color: blue'>C</span> | Värdena du _välj_ tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do _not_ måste komma från samma datauppsättning. |
+| **<span style='color: red'>A</span>** | Värden du _välj_ inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma behållare och kan vara av valfri typ (sträng) ![Sträng](assets/Smock_ABC_18_N.svg), numerisk ![Numeriskt](assets/Smock_123_18_N.svg)och så vidare). <br/>![Beroende A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Alla värden du anger _set_ över en regel måste komma från samma behållare och ha samma typ eller ett anpassat värde av samma typ. <br/> ![Beroende B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Värdena du _välj_ tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do _not_ måste komma från samma behållare och gör _not_ måste vara av samma typ. <br/> ![Beroende C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
-
-![Fall när datauppsättningar är beroende](assets/case-when-datasets.png)
-
-
-|  | Typberoenden |
-|:---:|----|
-| <span style='color: red'>D</span> | Värdetyperna som du _set_ i en regel måste vara densamma. |
-| <span style='color: blue'>E</span> | Värdetyperna som du _välj_ inom en konstruktion eller mellan konstruktioner i en regel kan vara av vilken typ som helst (sträng, numeriskt värde, datum). |
-
-{style="table-layout:auto"}
-
-![Skiftläge vid textberoenden](assets/case-when-types.png)
 
 +++
 
@@ -567,7 +563,7 @@ Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden.
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|:---:|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Sing-fält</li><li>Sökfil<ul><li>Nyckelkolumn</li><li>Ny fältkolumn</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Ett fält</li><li>Sökfil<ul><li>Nyckelkolumn</li><li>Ny fältkolumn</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
 
 {style="table-layout:auto"}
 
@@ -686,7 +682,7 @@ Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågep
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|:---:|---|
-| <ul><li>Sträng</li></ul> | <ul><li>Sing-fält</li><li>Analysalternativ<ul><li>Hämta protokoll</li><li>Hämta värd</li><li>Hämta sökväg</li><li>Hämta frågevärde<ul><li>Frågeparam</li></ul></li><li>Hämta hash-värde</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
+| <ul><li>Sträng</li></ul> | <ul><li>Ett fält</li><li>Analysalternativ<ul><li>Hämta protokoll</li><li>Hämta värd</li><li>Hämta sökväg</li><li>Hämta frågevärde<ul><li>Frågeparam</li></ul></li><li>Hämta hash-värde</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
 
 {style="table-layout:auto"}
 

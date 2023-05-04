@@ -2,32 +2,27 @@
 title: Jämför databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner
 description: Förstå skillnaderna i databehandling för de olika rapportfunktionerna
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 80d0b95f3bc3d785d9ca7e4b50aa1bd8440373c2
+source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 5%
+source-wordcount: '1202'
+ht-degree: 4%
 
 ---
 
 # Jämför databehandling i Adobe Analytics och Customer Journey Analytics.
 
-<!--
+Du behöver ofta kunna bearbeta data innan de kan användas för rapportering. Ni kan bearbeta dessa data i flera steg under resan, från datainsamling till generering av rapporten eller visualiseringen.
 
-You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
+I Adobe Analytics sker den mesta databearbetningen direkt efter datainsamlingen. Funktioner som VISTA Rules, Processing Rules, Marketing Channels Processing Rules finns tillgängliga som stöd för detta **insamlingstid**.
+Informationen lagras sedan och vid rapporttillfället kan du använda ytterligare bearbetning. Du kan till exempel dela upp dimensioner, använda segmentering eller välja en annan attribueringsmodell. Detta **rapporttidsbearbetning** händer i farten.
 
-In Adobe Analytics most of that processing of data occurs immediately after collecting the data. Functionalties like VISTA Rules, Processing Rules, Marketing Channels Processing Rules are available to support this **collection-time processing**. 
-The data is then stored and at report time you can apply additional processing. For example, break down dimensions, apply segmentation, or  select a different attribution model. This **report-time processing** happens on the fly. 
+I Adobe Analytics är det oftast en mindre mängd bearbetning som sker vid insamlingen.
 
-In Adobe Analytics, report-time processing commonly represents a smaller amount of processing  than what happens at collection-time.
+![Adobe Analytics bearbetning vid insamlingstid](../assets/aa-processing.png)
 
-![Adobe Analytics collection-time processing](../assets/aa-processing.png)
+Customer Journey Analytics (CJA) är däremot utformat för att kräva minimal bearbetning på den initiala insamlingstiden innan data organiseras och lagras. Den underliggande arkitekturen i CJA är mer utformad för att fungera med lagrade data vid rapporttillfället och erbjuder den kraftfulla bearbetningsfunktionen för rapporttid inte bara i Workspace, utan även, ännu viktigare, genom definitionen av [komponenter](/help/data-views/component-settings/overview.md) och [härledda fält](/help/data-views/derived-fields/derived-fields.md) i datavyer.
 
-In contrast, Customer Journey Analytics (CJA) is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of CJA is more designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of components in your Data Views. 
-
-![CJA report-time processing](../assets/cja-processing.png)
-
--->
-
+![Bearbetning av CJA-rapporttid](../assets/cja-processing.png)
 
 Att förstå skillnaderna i databehandling för de olika rapportfunktionerna kan vara till hjälp när det gäller att förstå vilka mätvärden som är tillgängliga var och varför de kan skilja sig.
 
@@ -69,6 +64,6 @@ De databearbetningssteg som utförs för Adobe Analytics och CJA och tidpunkten 
 | Core AA [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en) | <ul><li>Behandlingsregler</li><li>VISTA-regler</li><li>Besöksdefinition (se anmärkning)</li><li>Enhetsövergripande analys (se anmärkning)</li></ul> | <ul><li>Regler för marknadsföringskanaler på toppnivå (se notering)</li><li>Marknadsföringskanalregler på besöksnivå (se anmärkning) Attribution logic</li><li>Segmentlogik</li><li>Beräknade värden</li></ul> |  | <ul><li>CDA kräver att virtuella rapportsviter används med bearbetning av rapporttid.</li><li>Attribution IQ i Core Analytics använder marknadsföringskanaler som är helt härledda vid rapporttidpunkten (dvs. härledda mellanvärden).</li><li>Attribution IQ använder en besöksdefinition vid bearbetningstid utom när den används i en rapporttidsbearbetning av VRS.</li></ul> |
 | Core AA virtuella rapportsviter med [bearbeta rapporttid](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) (VRS RTP) | <ul><li>Behandlingsregler</li><li>VISTA-regler</li><li>[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en)</li></ul> | <ul><li>Besök definitionen</li><li>Attributionslogik</li><li>Segmentlogik</li><li>Beräknade värden</li><li>Andra VRS RTP-inställningar</li></ul> | <ul><li>Marknadsföringskanalregler på toppnivå</li><li>Marknadsföringskanalregler på besöksnivå</li></ul> | <ul><li>Se VRS RTP [dokumentation](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en).</li></ul> |
 | [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)-baserad datauppsättning i AEP-datasjön | <ul><li>Behandlingsregler</li><li>VISTA-regler</li><li>Marknadsföringskanalregler på toppnivå</li><li>Fältbaserad stygn (se anmärkning)</li></ul> |  | <ul><li>[Marknadsföringskanalregler på besöksnivå](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en)</li><li>Besökslogik</li><li>Attributionslogik</li><li>Filterlogik</li></ul> | <ul><li>Måste använda din egen filterlogik och beräknade värden</li><li>Fältbaserad sammanfogning skapar en separat sammanfogad datauppsättning utöver den som skapas av Analytics Source Connector.</li></ul> |
-| [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) rapportering | <ul><li>Implementeras som en del av Adobe Experience Platform Data Collection</li></ul> | <ul><li>Sessionsdefinition</li><li>[Datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) inställningar<li>Attributionslogik</li><li>Beräknade värden</li><li>Filterlogik</li></ul> | <ul><li>Marknadsföringskanalregler på besöksnivå</li></ul> | <ul><li>Måste använda en sammanfogad datauppsättning för att kunna utnyttja fältbaserad sammanfogning.</li></ul> |
+| [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) rapportering | <ul><li>Implementeras som en del av Adobe Experience Platform Data Collection</li></ul> | <ul><li>Sessionsdefinition</li><li>[Datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) inställningar<li>Attributionslogik</li><li>Beräknade värden</li><li>Filterlogik</li></ul> | <ul><li>Marknadsföringskanalregler på besöksnivå</li></ul> | <ul><li>Måste använda sammanslagna datauppsättningar för att kunna utnyttja flerkanalsanalyser.</li></ul> |
 
 {style="table-layout:auto"}
