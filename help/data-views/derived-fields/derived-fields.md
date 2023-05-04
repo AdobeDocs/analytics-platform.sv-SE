@@ -6,10 +6,10 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
+source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
 workflow-type: tm+mt
-source-wordcount: '3210'
-ht-degree: 3%
+source-wordcount: '3231'
+ht-degree: 4%
 
 ---
 
@@ -459,7 +459,7 @@ Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande 
 
 ## Begränsningar
 
-CJA använder en kapslad behållarmodell för sin funktion. Den här kapslade behållarmodellen avgör begränsningarna när regelbyggaren används. CJA-standardmodellen för kapslade behållare är strukturerad enligt nedan:
+CJA använder en flexibel kapslad behållarstruktur som är baserad på Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model) för dess funktionalitet. Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används. CJA-standardmodellen för kapslade behållare är strukturerad enligt nedan:
 
 <p align="center">
 <img src="./assets/containers.png" width="70%" valign="middle">
