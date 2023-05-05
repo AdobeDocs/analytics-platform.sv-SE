@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
+source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
 workflow-type: tm+mt
-source-wordcount: '3231'
+source-wordcount: '3215'
 ht-degree: 4%
 
 ---
@@ -17,46 +17,46 @@ ht-degree: 4%
 
 {{release-limited-testing}}
 
-Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett (anpassat) fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera som en komponent i [Datavy](../data-views.md).
+Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera som en komponent i [Datavy](../data-views.md).
 
 Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än CJA. Som [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)eller i dina egna ETL-/ELT-processer.
 
-Härledda fält definieras som anpassade fält i [Datavyer](../data-views.md), baseras på en uppsättning funktioner som definieras som regler och tillämpas på tillgängliga standard- och/eller schemafält.
+Härledda fält definieras i [Datavyer](../data-views.md), baseras på en uppsättning funktioner som definieras som regler och tillämpas på tillgängliga standard- och/eller schemafält.
 
 Exempel:
 
-- Definiera ett anpassat sidnamnsfält som korrigerar felaktiga insamlade sidnamnsvärden för att korrigera sidnamnsvärden.
+- Definiera ett härlett sidnamnsfält som korrigerar felaktiga insamlade sidnamnsvärden för att korrigera sidnamnsvärden.
 
-- Definiera ett anpassat fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (t.ex. URL-parameter, sidadress, sidnamn).
+- Definiera ett härlett fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (t.ex. URL-parameter, sidadress, sidnamn).
 
-## Anpassat fältgränssnitt
+## Härlett fältgränssnitt
 
-När du skapar eller redigerar ett anpassat fält använder du det anpassade fältgränssnittet.
+När du skapar eller redigerar ett härlett fält använder du det härledda fältgränssnittet.
 
-![Dialogruta för anpassat fält](assets/custom-field-dialog.png)
+![Dialogrutan Härlett fält](assets/derived-field-dialog.png)
 
 
 |  | Namn | Beskrivning |
 |---------|----------|--------|
 | 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa ![Funktion](assets/Smock_Function_18_N.svg) funktion,![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) funktionsmall,![Ikon för schemafält](assets/Smock_Folder_18_N.svg) schemafält, eller![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg)standardfält vidare till regelbyggaren. <br/>Använd listrutan för att välja mellan [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields]och [!UICONTROL Standard fields].<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med ![Ikonen Sök](assets/Smock_Search_18_N.svg) Sökruta. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
-| 2 | **Regelverktyget** | Du skapar det anpassade fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelverktyget. Funktionstypen bestämmer regelns gränssnitt.<br/>Se [Regelgränssnitt](#rule-interface) för mer information. <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan finns i regelbyggaren. Den sista regeln i regelverktyget avgör det anpassade fältets slutliga utdata. |
-| 3 | **[!UICONTROL ** Fältinställningar **]** | Du kan namnge och beskriva ditt anpassade fält och kontrollera dess fälttyp. |
-| 4 | **[!UICONTROL ** Slutlig utmatning **]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du har gjort i det anpassade fältet i regelbyggaren. |
+| 2 | **Regelverktyget** | Du skapar det härledda fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelbyggaren. Funktionstypen bestämmer regelns gränssnitt.<br/>Se [Regelgränssnitt](#rule-interface) för mer information. <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan finns i regelbyggaren. Den sista regeln i regelbyggaren avgör det härledda fältets slutliga utdata. |
+| 3 | **[!UICONTROL ** Fältinställningar **]** | Du kan namnge och beskriva det härledda fältet och kontrollera dess fälttyp. |
+| 4 | **[!UICONTROL ** Slutlig utmatning **]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du gör i det härledda fältet i regelbyggaren. |
 
 {style="table-layout:auto"}
 
-När du använder gränssnittet för det anpassade fältet för första gången [!UICONTROL Start with a field template] guiden visas.
+## Guiden Fältmall
 
-![Dialogruta för guide till anpassad fältmall](assets/field-template-dialog.png)
+När du använder gränssnittet Härledda fält för första gången [!UICONTROL Start with a field template] guiden visas.
 
 1. Välj den mall som bäst beskriver den typ av fält som du försöker skapa.
 2. Välj **[!UICONTROL ** Välj **]** för att fortsätta
 
-Dialogrutan Anpassat fält innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Se [Funktionsmallar](#function-templates) om du vill ha mer information om de tillgängliga mallarna.
+Dialogrutan Härlett fält innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Se [Funktionsmallar](#function-templates) om du vill ha mer information om de tillgängliga mallarna.
 
 ## Regelgränssnitt
 
-När du definierar en regel i regelverktyget använder du regelgränssnittet.
+När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 ![Regelgränssnitt](assets/rule-interface.png)
 
@@ -69,22 +69,22 @@ När du definierar en regel i regelverktyget använder du regelgränssnittet.
 
 {style="table-layout:auto"}
 
-## Skapa ett anpassat fält
+## Skapa ett härlett fält
 
 1. Välj en befintlig datavy eller skapa en datavy. Se [Datavyer](../data-views.md) för mer information.
 
 2. Välj **[!UICONTROL ** Komponenter **]** i datavyn.
 
-3. Välj **[!UICONTROL ** Skapa anpassat fält **]** från den vänstra listen.
+3. Välj **[!UICONTROL ** Skapa härlett fält **]** från den vänstra listen.
 
-4. Använd [!UICONTROL Create custom field] gränssnitt. Se [Anpassat fältgränssnitt](#custom-field-interface).
+4. Använd [!UICONTROL Create derived field] gränssnitt. Se [Härlett fältgränssnitt](#derived-field-interface).
 
-   Om du vill spara ditt nya anpassade fält väljer du **[!UICONTROL ** Spara **]**.
+   Om du vill spara ditt nya härledda fält väljer du **[!UICONTROL ** Spara **]**.
 
-5. Ditt nya anpassade fält läggs till i **[!UICONTROL ** Anpassade fält >**]** behållare, som en del av **[!UICONTROL ** Schemafält **]** till vänster i datavyn.
+5. Ditt nya härledda fält läggs till i **[!UICONTROL ** Härledda fält >**]** behållare, som en del av **[!UICONTROL ** Schemafält **]** till vänster i datavyn.
 
 
-## Redigera ett anpassat fält
+## Redigera ett härlett fält
 
 1. Välj en befintlig datavy. Se [Datavyer](../data-views.md) för mer information.
 
@@ -92,19 +92,19 @@ När du definierar en regel i regelverktyget använder du regelgränssnittet.
 
 3. Välj **[!UICONTROL ** Schemafält **]** i [!UICONTROL Connection] till vänster.
 
-4. Välj **[!UICONTROL ** Anpassade fält >**]** behållare.
+4. Välj **[!UICONTROL ** Härledda fält >**]** behållare.
 
-5. Håll pekaren över det anpassade fält som du vill redigera och markera ![Ikonen Redigera](assets/Smock_Edit_18_N.svg).
+5. Håll pekaren över det härledda fält som du vill redigera och markera ![Ikonen Redigera](assets/Smock_Edit_18_N.svg).
 
-6. Om du vill redigera ditt anpassade fält använder du [!UICONTROL Edit custom field] gränssnitt. Se [Anpassat fältgränssnitt](#custom-field-interface).
+6. Om du vill redigera det härledda fältet använder du [!UICONTROL Edit derived field] gränssnitt. Se [Härlett fältgränssnitt](#derived-field-interface).
 
-   - Välj **[!UICONTROL ** Spara **]** för att spara det uppdaterade anpassade fältet.
+   - Välj **[!UICONTROL ** Spara **]** för att spara det uppdaterade härledda fältet.
 
-   - Välj **[!UICONTROL ** Avbryt **]** om du vill avbryta ändringar som du har gjort i det anpassade fältet.
+   - Välj **[!UICONTROL ** Avbryt **]** om du vill avbryta alla ändringar du har gjort i det härledda fältet.
 
-   - Välj **[!UICONTROL ** Spara som **]** om du vill spara det anpassade fältet som ett nytt anpassat fält. Det nya anpassade fältet har samma namn som det ursprungliga redigerade anpassade fältet med `(copy)` läggs till i den.
+   - Välj **[!UICONTROL ** Spara som **]** för att spara det härledda fältet som ett nytt härlett fält. Det nya härledda fältet har samma namn som det ursprungliga redigerade härledda fältet med `(copy)` läggs till i den.
 
-## Ta bort ett anpassat fält
+## Ta bort ett härlett fält
 
 1. Välj en befintlig datavy. Se [Datavyer](../data-views.md) för mer information.
 
@@ -112,20 +112,20 @@ När du definierar en regel i regelverktyget använder du regelgränssnittet.
 
 3. Välj **[!UICONTROL ** Schemafält **]** tabba in [!UICONTROL Connection] fönster.
 
-4. Välj **[!UICONTROL ** Anpassade fält >**]** behållare.
+4. Välj **[!UICONTROL ** Härledda fält >**]** behållare.
 
-5. Håll pekaren över det anpassade fält som du vill ta bort och markera ![Ikonen Redigera](assets/Smock_Edit_18_N.svg).
+5. Håll pekaren över det härledda fält som du vill ta bort och markera ![Ikonen Redigera](assets/Smock_Edit_18_N.svg).
 
-6. Används **[!UICONTROL ** Redigera anpassat fält **]** väljer du Ta bort.
+6. Används **[!UICONTROL ** Redigera härlett fält **]** väljer du Ta bort.
 
-   A [!UICONTROL Delete component] uppmanas du att bekräfta borttagningen. Ta hänsyn till eventuella externa referenser som finns till det anpassade fältet utanför datavyn.
+   A [!UICONTROL Delete component] uppmanas du att bekräfta borttagningen. Ta hänsyn till eventuella externa referenser som finns till det härledda fältet utanför datavyn.
 
-   - Välj **[!UICONTROL ** Fortsätt **]** för att ta bort det anpassade fältet.
+   - Välj **[!UICONTROL ** Fortsätt **]** för att ta bort det härledda fältet.
 
 
 ## Funktionsmallar
 
-Funktionsmallar är tillgängliga för att snabbt skapa ett anpassat fält för specifika användningsområden. Dessa funktionsmallar kan nås från området Väljare i gränssnittet för det anpassade fältet eller presenteras vid första användningen i [!UICONTROL Start with a field template] guide.
+Funktionsmallar är tillgängliga för att snabbt skapa ett härlett fält för specifika användningsområden. Dessa funktionsmallar kan nås från området Väljare i fältgränssnittet Härledd eller presenteras vid första användningen i [!UICONTROL Start with a field template] guide.
 
 
 ### Marknadsföringskanaler
@@ -163,9 +163,9 @@ För varje funktion som stöds finns information nedan:
    - utdata.
 
 - Användningsfall, inklusive
-   - data innan du definierar det anpassade fältet
-   - definiera det anpassade fältet
-   - data efter att ha definierat det anpassade fältet
+   - data innan det härledda fältet definieras
+   - definiera det härledda fältet
+   - data efter att ha definierat härlett fält
 
 - begränsningar (valfritt)
 
@@ -174,7 +174,7 @@ För varje funktion som stöds finns information nedan:
 
 ### [!DNL Concatenate]
 
-Kombinerar två eller flera fält, anpassade fält eller användarinmatade värden till ett enda fält med definierade avgränsare.
+Kombinerar två eller flera fält, härledda fält eller användarinmatade värden till ett enda fält med definierade avgränsare.
 
 +++ Detaljer
 
@@ -182,7 +182,7 @@ Kombinerar två eller flera fält, anpassade fält eller användarinmatade värd
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|:--:|---|
-| <p>Sträng</p> | <ul><li>Två eller flera värden som ska kombineras<ul><li>Fält</li><li>Härlett värde från en tidigare regel</li><li>Användardefinierat värde</li></ul></li><li>Avgränsare<ul><li>Inmatning eller markering av en avgränsare för varje värde</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>2</p> | <p>Nytt anpassat fält</p> |
+| <p>Sträng</p> | <ul><li>Två eller flera värden som ska kombineras<ul><li>Fält</li><li>Härlett värde från en tidigare regel</li><li>Användardefinierat värde</li></ul></li><li>Avgränsare<ul><li>Inmatning eller markering av en avgränsare för varje värde</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>2</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -228,15 +228,15 @@ Rapporten ska se ut så här:
 
 {style="table-layout:auto"}
 
-### Anpassat fält {#concatenate-customfield}
+### Härlett fält {#concatenate-derivedfield}
 
-Du definierar ett nytt **[!UICONTROL ** Ursprung - destination **]** anpassat fält. Du använder **[!UICONTROL CONCATENATE]** funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
+Du definierar ett nytt **[!UICONTROL ** Ursprung - destination **]** härlett fält. Du använder **[!UICONTROL CONCATENATE]** funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
 
 ![[!DNL Concatenate] regel](assets/concatenate.png)
 
 ### Data efter {#concatenate-dataafter}
 
-| Ursprung - destination<br/>(anpassat fält) |
+| Ursprung - destination<br/>(härlett fält) |
 |---|
 | SLC-MCO |
 | SLC-LAX |
@@ -252,7 +252,7 @@ Du definierar ett nytt **[!UICONTROL ** Ursprung - destination **]** anpassat f�
 
 ### [!DNL Case When]
 
-Använder villkorliga värden som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i ett nytt anpassat fält, baserat på villkorens sekvens.
+Använder villkorliga värden som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i ett nytt härlett fält, baserat på villkorens sekvens.
 
 +++ Detaljer
 
@@ -260,7 +260,7 @@ Använder villkorliga värden som baseras på definierade villkor från ett elle
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|:---:|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum/datum/tid</li></ul> | <ul><li>Indatafält</li><li>Kriterier</li></ul> | <p><u>Strängar</u></p><ul><li>Är lika med</li><li>Liknar alla termer</li><li>Innehåller frasen</li><li>Innehåller valfri term</li><li>Innehåller alla termer</li><li>Börjar med</li><li>Börjar med valfri term</li><li>Slutar med</li><li>Slutar med valfri term</li><li>Är inte lika med</li><li>Motsvarar inte någon term</li><li>Innehåller inte frasen</li><li>Innehåller inga termer</li><li>Innehåller inte alla termer</li><li>Börjar inte med</li><li>Börjar inte med någon term</li><li>Slutar inte med</li><li>Slutar inte med någon term</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Numeriskt</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är större än</li><li>Är större än eller lika med</li><li>Är mindre än</li><li>Är mindre än eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Datum</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är senare än</li><li>Är senare än eller lika med</li><li>Är före</li><li>Är före eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul> | <p>5</p> | <p>Nytt anpassat fält</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum/datum/tid</li></ul> | <ul><li>Indatafält</li><li>Kriterier</li></ul> | <p><u>Strängar</u></p><ul><li>Är lika med</li><li>Liknar alla termer</li><li>Innehåller frasen</li><li>Innehåller valfri term</li><li>Innehåller alla termer</li><li>Börjar med</li><li>Börjar med valfri term</li><li>Slutar med</li><li>Slutar med valfri term</li><li>Är inte lika med</li><li>Motsvarar inte någon term</li><li>Innehåller inte frasen</li><li>Innehåller inga termer</li><li>Innehåller inte alla termer</li><li>Börjar inte med</li><li>Börjar inte med någon term</li><li>Slutar inte med</li><li>Slutar inte med någon term</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Numeriskt</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är större än</li><li>Är större än eller lika med</li><li>Är mindre än</li><li>Är mindre än eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Datum</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är senare än</li><li>Är senare än eller lika med</li><li>Är före</li><li>Är före eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul> | <p>5</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -303,9 +303,9 @@ Om din webbplats får följande exempelhändelser, som innehåller referens- och
 
 {style="table-layout:auto"}
 
-### Anpassat fält {#casewhen-uc1-customfield}
+### Härlett fält {#casewhen-uc1-derivedfield}
 
-Du definierar ett nytt `Marketing Channel` anpassat fält. Du använder **[!UICONTROL CASE WHEN]** funktioner för att definiera regler som skapar värden för den baserat på befintliga värden för båda `Page URL` och `Referring URL` fält.
+Du definierar ett nytt `Marketing Channel` härlett fält. Du använder **[!UICONTROL CASE WHEN]** funktioner för att definiera regler som skapar värden för den baserat på befintliga värden för båda `Page URL` och `Referring URL` fält.
 
 Observera hur funktionen används **[!UICONTROL ** URL-PARSE **]** för att definiera regler för hämtning av värden för `Page Url` och `Referring Url` före **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regler tillämpas.
 
@@ -359,9 +359,9 @@ Din webbplats samlar in följande värden för dimensionen för produktsöknings
 
 {style="table-layout:auto"}
 
-### Anpassat fält {#casewhen-uc2-customfield}
+### Härlett fält {#casewhen-uc2-derivedfield}
 
-Du definierar en `Product Finding Methods (new)` anpassat fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regler i Regelverktyget. Dessa regler tillämpar logik för alla möjliga varianter av det gamla **[!UICONTROL ** Metoder för produktsökning **]** fältvärden för `search` och `browse` med **[!UICONTROL Contains the phrase]** kriterium.
+Du definierar en `Product Finding Methods (new)` härlett fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regler i regelbyggaren. Dessa regler tillämpar logik för alla möjliga varianter av det gamla **[!UICONTROL ** Metoder för produktsökning **]** fältvärden för `search` och `browse` med **[!UICONTROL Contains the phrase]** kriterium.
 
 ![[!DNL Case When] regel 2](assets/case-when-2.png)
 
@@ -432,9 +432,9 @@ Din rapport ska se ut så här:
 | 21 |
 | 8 |
 
-### Anpassat fält {#casewhen-uc3-customfield}
+### Härlett fält {#casewhen-uc3-derivedfield}
 
-Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regel i regelverktyget. Den här regeln använder logik för att bucket den gamla **[!UICONTROL ** Resetid **]** fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
+Du definierar en `Trip Duration (bucketed)` härlett fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regel i regelbyggaren. Den här regeln använder logik för att bucket den gamla **[!UICONTROL ** Resetid **]** fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
 
 ![[!DNL Case When] regel 3](assets/case-when-3.png)
 
@@ -459,20 +459,22 @@ Du definierar en `Trip Duration (bucketed)` anpassat fält. Du skapar följande 
 
 ## Begränsningar
 
-CJA använder en flexibel kapslad behållarstruktur som är baserad på Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model) för dess funktionalitet. Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används. CJA-standardmodellen för kapslade behållare är strukturerad enligt nedan:
+CJA använder en kapslad behållarstruktur, som bygger på Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). Se [Behållare](../create-dataview.md#containers) och [Filterbehållare](../../components/filters/filters-overview.md#filter-containers) för mer bakgrundsinformation. Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
+
+CJA använder följande standardbehållarmodell:
 
 <p align="center">
-<img src="./assets/containers.png" width="70%" valign="middle">
+<img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-Se [Behållare](../create-dataview.md#containers) och [Filterbehållare](../../components/filters/filters-overview.md#filter-containers) för mer bakgrundsinformation.
 
-Följande behållarbegränsningar gäller och används när _markera_ och _inställning_ värden.
+
+Följande begränsningar gäller och används när _markera_ och _inställning_ värden.
 
 |  | Begränsningar |
 |:---:|----|
 | **<span style='color: red'>A</span>** | Värden du _välj_ inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma behållare och kan vara av valfri typ (sträng) ![Sträng](assets/Smock_ABC_18_N.svg), numerisk ![Numeriskt](assets/Smock_123_18_N.svg)och så vidare). <br/>![Beroende A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Alla värden du anger _set_ över en regel måste komma från samma behållare och ha samma typ eller ett anpassat värde av samma typ. <br/> ![Beroende B](assets/dependency-b.png) |
+| **<span style='color: red'>B</span>** | Alla värden du anger _set_ över en regel måste komma från samma behållare och ha samma typ eller ett härlett värde av samma typ. <br/> ![Beroende B](assets/dependency-b.png) |
 | **<span style='color: blue'>C</span>** | Värdena du _välj_ tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do _not_ måste komma från samma behållare och gör _not_ måste vara av samma typ. <br/> ![Beroende C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
@@ -484,7 +486,7 @@ Följande behållarbegränsningar gäller och används när _markera_ och _inst�
 
 ### [!DNL Find and Replace]
 
-Söker efter alla värden i ett markerat fält och ersätter dessa värden med ett annat värde i ett nytt anpassat fält.
+Söker efter alla värden i ett markerat fält och ersätter dessa värden med ett annat värde i ett nytt härlett fält.
 
 +++ Detaljer
 
@@ -492,7 +494,7 @@ Söker efter alla värden i ett markerat fält och ersätter dessa värden med e
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|:---:|---|
-| <p>Sträng</p> | <ul><li><span>Fältvillkor för När ska ersättas</span></li><li><span>Fältvärdet Ersätt med</span><ul><li><span>Anges av användaren</span></li><li><span>Separat fält</span></li></ul></li></ul> | <p><u>Strängar</u></p><ul><li>Sök alla och ersätt alla</li></ul> | <p>1</p> | <p>Nytt anpassat fält</p> |
+| <p>Sträng</p> | <ul><li><span>Fältvillkor för När ska ersättas</span></li><li><span>Fältvärdet Ersätt med</span><ul><li><span>Anges av användaren</span></li><li><span>Separat fält</span></li></ul></li></ul> | <p><u>Strängar</u></p><ul><li>Sök alla och ersätt alla</li></ul> | <p>1</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -529,15 +531,15 @@ Du har fått felaktiga värden för din rapport om externa marknadsföringskanal
 
 {style="table-layout:auto"}
 
-### Anpassat fält {#findreplace-uc-customfield}
+### Härlett fält {#findreplace-uc-derivedfield}
 
-Du definierar en `Email Marketing (updated)` anpassat fält. Du använder **[!UICONTROL FIND AND REPLACE]** funktion för att definiera en regel för att söka efter och ersätta alla förekomster av `email%20marketing` med `email marketing`.
+Du definierar en `Email Marketing (updated)` härlett fält. Du använder **[!UICONTROL FIND AND REPLACE]** funktion för att definiera en regel för att söka efter och ersätta alla förekomster av `email%20marketing` med `email marketing`.
 
 ![[!DNL Find and Replace] regel](assets/find-and-replace.png)
 
 ### Data efter {#findreplace-uc-dataafter}
 
-| Extern marknadsföring<br/>(anpassat fält) |
+| Extern marknadsföring<br/>(härlett fält) |
 |----|
 | e-postmarknadsföring |
 | e-postmarknadsföring |
@@ -563,7 +565,7 @@ Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden.
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|:---:|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Ett fält</li><li>Sökfil<ul><li>Nyckelkolumn</li><li>Ny fältkolumn</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Ett fält</li><li>Sökfil<ul><li>Nyckelkolumn</li><li>Ny fältkolumn</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -615,9 +617,9 @@ Du samlar in ett Hotel-ID i en dimension men vill skapa en Hotel Name-dimension 
 {style="table-layout:auto"}
 
 
-### Anpassat fält {#lookup-uc1-customfield}
+### Härlett fält {#lookup-uc1-derivedfield}
 
-Du definierar en `Hotel Name` anpassat fält. Du använder **[!UICONTROL ** LETA UPP **]** funktion för att definiera en regel där du kan slå upp värden för **[!UICONTROL ** Hotel-ID **]** och ersätt med nya värden.
+Du definierar en `Hotel Name` härlett fält. Du använder **[!UICONTROL ** LETA UPP **]** funktion för att definiera en regel där du kan slå upp värden för **[!UICONTROL ** Hotel-ID **]** och ersätt med nya värden.
 
 ![[!DNL Lookup] regel 1](assets/lookup-1.png)
 
@@ -650,9 +652,9 @@ Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den
 
 {style="table-layout:auto"}
 
-### Anpassat fält {#lookup-uc2-customfield}
+### Härlett fält {#lookup-uc2-derivedfield}
 
-Du definierar en `Page Name (updated)` anpassat fält. Du använder **[!UICONTROL ** LETA UPP **]** funktion för att definiera en regel där du kan slå upp värden för dina befintliga **[!UICONTROL ** Sidnamn **]** och ersätt med uppdaterade korrekta värden.
+Du definierar en `Page Name (updated)` härlett fält. Du använder **[!UICONTROL ** LETA UPP **]** funktion för att definiera en regel där du kan slå upp värden för dina befintliga **[!UICONTROL ** Sidnamn **]** och ersätt med uppdaterade korrekta värden.
 
 ![[!DNL Lookup] regel 2](assets/lookup-2.png)
 
@@ -682,7 +684,7 @@ Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågep
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|:---:|---|
-| <ul><li>Sträng</li></ul> | <ul><li>Ett fält</li><li>Analysalternativ<ul><li>Hämta protokoll</li><li>Hämta värd</li><li>Hämta sökväg</li><li>Hämta frågevärde<ul><li>Frågeparam</li></ul></li><li>Hämta hash-värde</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt anpassat fält</p> |
+| <ul><li>Sträng</li></ul> | <ul><li>Ett fält</li><li>Analysalternativ<ul><li>Hämta protokoll</li><li>Hämta värd</li><li>Hämta sökväg</li><li>Hämta frågevärde<ul><li>Frågeparam</li></ul></li><li>Hämta hash-värde</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -702,9 +704,9 @@ Du vill bara använda den refererande domänen från den refererande URL:en som 
 
 {style="table-layout:auto"}
 
-### Anpassat fält {#urlparse-uc1-customfield}
+### Härlett fält {#urlparse-uc1-derivedfield}
 
-Du definierar en  `Referring Domain` anpassat fält. Du använder **[!UICONTROL ** URL-PARSE **]** funktion som definierar en regel som hämtar värden från **Refererande URL** och lagra det i det nya anpassade fältet.
+Du definierar en  `Referring Domain` härlett fält. Du använder **[!UICONTROL ** URL-PARSE **]** funktion som definierar en regel som hämtar värden från **Refererande URL** och lagra det i det nya härledda fältet.
 
 ![[!DNL Url Parse] regel 1](assets/url-parse-1.png)
 
@@ -734,9 +736,9 @@ Du vill använda värdet för `cid` parameter för en frågesträng i en sidadre
 
 {style="table-layout:auto"}
 
-### Anpassat fält {#urlparse-uc2-customfield}
+### Härlett fält {#urlparse-uc2-derivedfield}
 
-Du definierar en `Query String CID` anpassat fält. Du använder **[!UICONTROL ** URL-PARSE **]** funktion för att definiera en regel för att hämta värdet för frågesträngsparametern i sidans URL, ange `cid` som frågeparametern. Utdatavärdet lagras i det nya anpassade fältet.
+Du definierar en `Query String CID` härlett fält. Du använder **[!UICONTROL ** URL-PARSE **]** funktion för att definiera en regel för att hämta värdet för frågesträngsparametern i sidans URL, ange `cid` som frågeparametern. Utdatavärdet lagras i det nya härledda fältet.
 
 ![[!DNL Url Parse] regel 2](assets/url-parse-2.png)
 
