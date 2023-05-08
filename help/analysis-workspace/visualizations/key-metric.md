@@ -3,10 +3,10 @@ description: Använd den centrala metriska sammanfattningen för att jämföra m
 title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
-exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
+exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
+source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsområden, blan
 
 1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett segment (om det behövs):
 
-   ![](assets/key-metric-config.png)
+   ![konfiguration för nyckelmått](assets/key-metric-config.png)
 
    | Konfigurationsinställning | Definition |
    | --- | --- |
@@ -46,7 +46,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsområden, blan
    | **[!UICONTROL Comparison date range]** | Datumintervallet som du vill jämföra det primära datumintervallet med. |
    | **[!UICONTROL Segment (optional)]** | Alla segment som du är intresserad av för den här sammanfattningen. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Klicka på **[!UICONTROL Build]**.
 
@@ -62,7 +62,7 @@ Observera:
 
 * Härifrån kan du hovra över linjediagrammen för att se statistik för enskilda dagar:
 
-![](assets/key-metric-output2.png)
+![statistik](assets/key-metric-output2.png)
 
 ## Visualiseringsinställningar
 
@@ -89,7 +89,7 @@ När du har skapat visualiseringen kan du fortfarande redigera den ursprungliga 
 
 1. Klicka på pennikonen i det övre högra hörnet av visualiseringen (bredvid inställningsikonen).
 
-   ![](assets/edit-icon.png)
+   ![redigera](assets/edit-icon.png)
 
    Du återgår nu till den ursprungliga konfigurationsvyn.
 

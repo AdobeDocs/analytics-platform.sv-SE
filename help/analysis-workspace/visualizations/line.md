@@ -3,14 +3,18 @@ description: Använd radvisualisering för att avbilda trendbaserade (tidsbasera
 title: Linjediagram
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 # Linjediagram
+
+>[!NOTE]
+>
+>Radvisualiseringen kommer snart att fungera [intelligenta bildtexter](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension.
 
