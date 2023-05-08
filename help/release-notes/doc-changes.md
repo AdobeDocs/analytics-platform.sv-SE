@@ -4,10 +4,10 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
+source-git-commit: e0417d94c0d371aca3d10af7a25b0e346f8b2a8e
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 5%
+source-wordcount: '1721'
+ht-degree: 6%
 
 ---
 
@@ -19,6 +19,9 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Maj 2023** |  |
+| Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
+| Skapa projekt | Skapade en ny artikel som förklarar i detalj hur du [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) i Analysis Workspace. |
 | **April 2023** |  |
 | Video om hur du använder filter som dimensioner | <p>Videon om att använda filter som dimension har uppdaterats. Den här videon är länkad från [Skapa filter](/help/components/filters/create-filters.md) sida.</p> <p>Här följer en direktlänk till videon: [Använd filter som dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Filterdokumentation | Lagt till artikel om hur du använder [Filter Builder](/help/components/filters/filter-builder.md). <p>Effektivare dokumentation i [Skapa filter](/help/components/filters/create-filters.md) och [Översikt över filter](/help/components/filters/filters-overview.md).</p> |
