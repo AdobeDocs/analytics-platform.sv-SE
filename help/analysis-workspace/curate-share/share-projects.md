@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
+source-git-commit: cc475afebba5bd1cfcaf3b1471ce6d1316126a9d
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,8 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 >* Användare som du delar med kan visa alla filter som använts på projektet under [kuration](curate.md).
 > 
 >* Användare som du delar med kan ändra projektets datumintervall. Datumintervallet som du anger för projektet visas som standard.
+>
+>* Ett projekt kan bli oåtkomligt om för många användare försöker få åtkomst till det samtidigt.
 
 
 Så här delar du ett Analysis Workspace-projekt med vem som helst:
