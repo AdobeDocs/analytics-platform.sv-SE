@@ -5,7 +5,7 @@ description: Översikt över Analysis Workspace funktioner
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: d2828173e802baf5dc598cef0383075e1203442a
+source-git-commit: e3c9db595b26b96c2079a770ede1bdd609f6de14
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 3%
@@ -31,7 +31,7 @@ I följande bild och tabell förklaras några av huvudområdena i Analysis Works
 | A | **Längst till vänster:** Innehåller flikar för att lägga till paneler, visualiseringar och komponenter i Analysis Workspace. Innehåller även ikonen för datamordlista som används för att öppna datamappningslistan. |
 | B | **Vänster räl:** Beroende på vilken flik som är markerad längst till vänster, innehåller det här området individuella paneler, visualiseringar eller komponenter. |
 | C | **Arbetsyta:** Det här är huvudområdet där du drar innehåll från vänster spår för att bygga ditt projekt. Projektet uppdateras dynamiskt när du lägger till paneler, visualiseringar och komponenter på arbetsytan. |
-| D | **Listruta för rapportsvit:** För varje panel i Analysis Workspace kan du med rapportsvitens nedrullningsbara meny välja den rapportserie som du vill använda som datakälla. |
+| D | **Listruta för datavy:** För varje panel i Analysis Workspace kan du med den nedrullningsbara menyn för datavy välja vilken datavy som du vill använda som datakälla. |
 
 ## Funktioner i Analysis Workspace {#analysis}
 
