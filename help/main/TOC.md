@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 4b28a3288f1659ca88353540ff8ce7cd7cd50aea
+source-git-commit: 4d21baa88c90ec24d04b802fdce1baf956eddfe3
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '883'
 ht-degree: 31%
 
 ---
@@ -257,12 +257,12 @@ ht-degree: 31%
    + [Skapa ett mobilstyrkort](../mobile-app/create-scorecard.md)
    + [Konfigurera chefer för att använda kontrollpaneler](../mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
-
 + Report Builder {#cja-reportbuilder}
    + [Översikt över Report Builder](../report-builder/report-buider-overview.md)
    + [Konfigurera Report Builder](../report-builder/report-builder-setup.md)
    + [Skapa ett datablock](../report-builder/create-a-data-block.md)
    + [Report Builder Hub](../report-builder/report-builder-hub.md)
+   + [Välj en datavy](../report-builder/select-data-view.md)
    + [Välj ett datumintervall](../report-builder/select-date-range.md)
    + [Arbeta med filter](../report-builder/work-with-filters.md)
    + [Filtrera Dimensioner](../report-builder/filter-dimensions.md)

@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,17 @@ Så här använder du kontrollpaneler:
 
    ![Logga in sekvens](assets/signseq.png)
 
-1. Välj ett företag. När du har loggat in på instrumentpanelerna visas **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
+1. Välj ett företag. När du har loggat in på instrumentpanelerna visas **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med styrkortet som delas med dig.
 
-1. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort som du vill visa.
+   I styrkortslistan visas alla styrkort som delas med dig.
 
-   ![Välj ett företag](assets/nextseq.png)
+1. Tryck på styrkortet som du vill visa.
+
+   Om du har tillgång till mer än en organisation under en inloggning är alla styrkort från din organisation tillgängliga i styrkortslistan.
+
+   Du kan sortera styrkortslistan efter styrkortets titel, organisationsnamn eller senast visade. Du kan till och med söka efter ett visst styrkort.
+
+   ![Välj ett företag](assets/mobile-home-screen.png)
 
    Om du loggar in och ser ett meddelande som säger att inget har delats kontrollerar du följande med markören:
 
