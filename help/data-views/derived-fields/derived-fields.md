@@ -6,18 +6,25 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
+badgeDerivedFields: label="New Feature" type="Positive"
+source-git-commit: 1aece0ac0873e2cf68bfe8b24725072ddf18ad30
 workflow-type: tm+mt
-source-wordcount: '3215'
-ht-degree: 4%
+source-wordcount: '2914'
+ht-degree: 3%
 
 ---
+
 
 # Härledda fält
 
 {{release-limited-testing}}
 
-Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera som en komponent i [Datavy](../data-views.md).
+>[!WARNING]
+>
+>Väntar på slutgiltiga uppdateringar kan du se [!UICONTROL Custom field] i stället för [!UICONTROL Derived field] över hela användargränssnittet.
+
+
+Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera det härledda fältet som en komponent i [Datavy](../data-views.md).
 
 Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än CJA. Som [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)eller i dina egna ETL-/ELT-processer.
 
@@ -47,12 +54,12 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 
 ## Guiden Fältmall
 
-När du använder gränssnittet Härledda fält för första gången [!UICONTROL Start with a field template] guiden visas.
+När du använder det härledda fältgränssnittet för första gången [!UICONTROL Start with a field template] guiden visas.
 
 1. Välj den mall som bäst beskriver den typ av fält som du försöker skapa.
 2. Välj **[!UICONTROL ** Välj **]** för att fortsätta
 
-Dialogrutan Härlett fält innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Se [Funktionsmallar](#function-templates) om du vill ha mer information om de tillgängliga mallarna.
+Dialogrutan för det härledda fältet innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Se [Funktionsmallar](#function-templates) om du vill ha mer information om de tillgängliga mallarna.
 
 ## Regelgränssnitt
 
@@ -63,7 +70,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 |  | Namn | Beskrivning |
 |---------|----------|--------|
 | A | **Regelnamn** | Regelnamnet är som standard **Regel X** (X refererar till ett sekvensnummer). Om du vill redigera namnet på en regel markerar du dess namn och skriver in det nya namnet, till exempel `Query Parameter`. |
-| B | **Funktionsnamn** | Det valda funktionsnamnet för regeln, till exempel [!DNL URL PARSE]. När funktionen är den sista i funktionssekvensen och fastställer de slutliga utdatavärdena följs funktionsnamnet av [!DNL FINAL OUTPUT], till exempel [!DNL URL PARSE - FINAL OUTPUT]. <br/>Om du vill visa ett popup-fönster med mer information om funktionen väljer du ![Hjälpikon](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Funktionsnamn** | Det valda funktionsnamnet för regeln, till exempel [!DNL URL PARSE]. När funktionen är den sista i funktionssekvensen och fastställer de slutliga utdatavärdena följs funktionsnamnet av [!DNL - FINAL OUTPUT], till exempel [!DNL URL PARSE - FINAL OUTPUT]. <br/>Om du vill visa ett popup-fönster med mer information om funktionen väljer du ![Hjälpikon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Regelbeskrivning** | Du kan också lägga till en beskrivning till en regel.<br/>Välj ![Mer-ikon](assets/More.svg)väljer **[!UICONTROL ** Lägg till beskrivning **]** för att lägga till en beskrivning eller **[!UICONTROL ** Redigera beskrivning **]** om du vill redigera en befintlig beskrivning.<br/>Använd redigeraren för att ange en beskrivning. Du kan använda verktygsfältet för att formatera texten (med formatväljare, fet, kursiv, understrykning, höger, vänster, centrerad, färg, nummerlista, punktlista) och lägga till länkar till extern information. <br/>Klicka utanför redigeraren för att slutföra redigeringen av beskrivningen. |
 | D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Se [Funktionsreferens](#function-reference) Detaljerad information om varje funktion som stöds. |
 
@@ -81,7 +88,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
    Om du vill spara ditt nya härledda fält väljer du **[!UICONTROL ** Spara **]**.
 
-5. Ditt nya härledda fält läggs till i **[!UICONTROL ** Härledda fält >**]** behållare, som en del av **[!UICONTROL ** Schemafält **]** till vänster i datavyn.
+5. Ditt nya härledda fält läggs till i [!UICONTROL Derived fields >] behållare, som en del av **[!UICONTROL ** Schemafält **]** till vänster i datavyn.
 
 
 ## Redigera ett härlett fält
@@ -125,7 +132,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 ## Funktionsmallar
 
-Funktionsmallar är tillgängliga för att snabbt skapa ett härlett fält för specifika användningsområden. Dessa funktionsmallar kan nås från området Väljare i fältgränssnittet Härledd eller presenteras vid första användningen i [!UICONTROL Start with a field template] guide.
+Funktionsmallar är tillgängliga för att snabbt skapa ett härlett fält för specifika användningsområden. Dessa funktionsmallar kan nås från väljarområdet i det härledda fältgränssnittet eller presenteras vid första användningen i [!UICONTROL Start with a field template] guide.
 
 
 ### Marknadsföringskanaler
@@ -158,16 +165,16 @@ För varje funktion som stöds finns information nedan:
 - specifikationer:
    - datatyp: typ av data som stöds,
    - indata: möjliga värden för indata,
-   - inkluderade operatorer: operatorer som stöds för den här funktionen (om sådana finns),
-   - gräns: maximalt antal regler med den här funktionen som du kan använda i ett härlett fält,
+   - inkluderade operatorer: operatorer som stöds för denna funktion (om sådana finns),
+   - gräns: maximalt antal regler (med den här funktionen) som du kan använda i ett härlett fält,
    - utdata.
 
 - Användningsfall, inklusive
-   - data innan det härledda fältet definieras
-   - definiera det härledda fältet
-   - data efter att ha definierat härlett fält
+   - data innan det härledda fältet definieras,
+   - hur det härledda fältet definieras,
+   - efter att ha definierat det härledda fältet.
 
-- begränsningar (valfritt)
+- begränsningar (om tillämpligt).
 
 
 <!-- Concatenate -->
@@ -230,7 +237,7 @@ Rapporten ska se ut så här:
 
 ### Härlett fält {#concatenate-derivedfield}
 
-Du definierar ett nytt **[!UICONTROL ** Ursprung - destination **]** härlett fält. Du använder **[!UICONTROL CONCATENATE]** funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
+Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du använder [!UICONTROL CONCATENATE] funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
 
 ![[!DNL Concatenate] regel](assets/concatenate.png)
 
@@ -269,30 +276,30 @@ Använder villkorliga värden som baseras på definierade villkor från ett elle
 
 Du vill definiera regler för att identifiera olika marknadsföringskanaler genom att tillämpa överlappande logik för att ange ett marknadsföringskanalfält till rätt värde:
 
-- Om referenten kommer från en sökmotor och sidan har ett frågesträngsvärde där `cid` innehåller `ps_`bör marknadsföringskanalen identifieras som en **Betalsökning**.
-- Om referenten kommer från en sökmotor och sidan inte har frågesträngen `cid`bör marknadsföringskanalen identifieras som en **Naturlig sökning**.
-- Om en sida har ett frågesträngsvärde där `cid` innehåller `em_`bör marknadsföringskanalen identifieras som en **E-post**.
-- Om en sida har ett frågesträngsvärde där `cid` innehåller `ds_`bör marknadsföringskanalen identifieras som en **Visa annons**.
-- Om en sida har ett frågesträngsvärde där `cid` innehåller `so_`bör marknadsföringskanalen identifieras som en **Betald social**.
-- Om referenten kommer från en hänvisande domän på twitter.com, facebook.com, Linkedin.com eller tiktok.com bör marknadsföringskanalen identifieras som en **Naturlig social**.
-- Om ingen av ovanstående regler överensstämmer bör marknadsföringskanalen identifieras som **Annan referent**.
+- Om referenten kommer från en sökmotor och sidan har ett frågesträngsvärde där `cid` innehåller `ps_`bör marknadsföringskanalen identifieras som en [!DNL *Betalsökning*].
+- Om referenten kommer från en sökmotor och sidan inte har frågesträngen `cid`bör marknadsföringskanalen identifieras som en [!DNL *Naturlig sökning*].
+- Om en sida har ett frågesträngsvärde där `cid` innehåller `em_`bör marknadsföringskanalen identifieras som en [!DNL *E-post*].
+- Om en sida har ett frågesträngsvärde där `cid` innehåller `ds_`bör marknadsföringskanalen identifieras som en [!DNL *Visa annons*].
+- Om en sida har ett frågesträngsvärde där `cid` innehåller `so_`bör marknadsföringskanalen identifieras som en [!DNL *Betald social*].
+- Om referenten kommer från en hänvisande domän till [!DNL twitter.com], [!DNL facebook.com], [!DNL linkedin.com], eller [!DNL tiktok.com]bör marknadsföringskanalen identifieras som en [!DNL *Naturlig social*].
+- Om ingen av ovanstående regler överensstämmer bör marknadsföringskanalen identifieras som [!DNL *Annan referent*].
 
-Om din webbplats får följande exempelhändelser, som innehåller referens- och sidadresser, ska dessa händelser identifieras enligt följande:
+Om din plats får följande exempelhändelser, som innehåller [!UICONTROL Referrer] och [!UICONTROL Page URL]bör dessa händelser identifieras enligt följande:
 
-| Händelse | Referent | Sidans URL | Marknadsföringskanal |
+| [!DNL Event] | [!DNL Referrer] | [!DNL Page URL] | [!DNL Marketing Channel] |
 |:--:|----|----|----|
-| 1 | `https://facebook.com` | `https://site.com/home` | Naturlig social |
-| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Visa |
-| 3 |  | `https://site.com/?cid=em_12345678` | E-post |
-| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | Betalsökning |
-| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | E-post |
-| 6 | `https://google.com` |  | Naturlig sökning |
+| 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
+| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
+| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
+| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
+| 6 | `https://google.com` |  | [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 ### Data före {#casewhen-uc1-databefore}
 
-| Referent | Sidans URL |
+| [!UICONTROL Referrer] | [!DNL Page URL] |
 |----|----|
 | `https://facebook.com` | `https://site.com/home` |
 | `https://abc.com` | `https://site.com/?cid=ds_12345678` |
@@ -305,79 +312,79 @@ Om din webbplats får följande exempelhändelser, som innehåller referens- och
 
 ### Härlett fält {#casewhen-uc1-derivedfield}
 
-Du definierar ett nytt `Marketing Channel` härlett fält. Du använder **[!UICONTROL CASE WHEN]** funktioner för att definiera regler som skapar värden för den baserat på befintliga värden för båda `Page URL` och `Referring URL` fält.
+Du definierar ett nytt `Marketing Channel` härlett fält. Du använder [!UICONTROL CASE WHEN] funktioner för att definiera regler som skapar värden för den baserat på befintliga värden för båda `Page URL` och `Referring URL` fält.
 
-Observera hur funktionen används **[!UICONTROL ** URL-PARSE **]** för att definiera regler för hämtning av värden för `Page Url` och `Referring Url` före **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regler tillämpas.
+Observera hur funktionen används [!UICONTROL URL PARSE] för att definiera regler för hämtning av värden för `Page Url` och `Referring Url` före [!UICONTROL CASE WHEN] regler tillämpas.
 
 ![[!DNL Case when] regel 1](assets/case-when-1.png)
 
 ### Data efter {#casewhen-uc1-dataafter}
 
-| Marknadsföringskanal |
+| [!DNL Marketing Channel] |
 |----|
-| Naturlig social |
-| Visa |
-| E-post |
-| Betalsökning |
-| E-post |
-| Naturlig sökning |
+| [!DNL Natural Social] |
+| [!DNL Display] |
+| [!DNL Email] |
+| [!DNL Paid Search] |
+| [!DNL Email] |
+| [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 
 ## Användningsfall 2 {#casewhen-uc2}
 
-Du har samlat in flera olika varianter av sökningar i dimensionen för produktsökningsmetoder. Om du vill förstå det övergripande resultatet för sökning och bläddring måste du lägga mycket tid på att kombinera resultaten manuellt.
+Du har samlat in flera olika varianter av sökningar i [!DNL Product Finding Methods] dimension. Om du vill förstå det övergripande resultatet för sökning och bläddring måste du lägga mycket tid på att kombinera resultaten manuellt.
 
-Din webbplats samlar in följande värden för dimensionen för produktsökningsmetoder. Alla dessa värden anger slutligen en sökning.
+Din webbplats samlar in följande värden för din [!DNL Product Finding Methods] dimension. Alla dessa värden anger slutligen en sökning.
 
 | Insamlat värde | Faktiskt värde |
 |---|---|
-| sök p13n_no | sök |
-| sök p13n_yes | sök |
-| sök förfina p13n_no | sök |
-| sök förfina p13n_yes | sök |
-| omdirigering av sökning p13n_yes | sök |
-| sökomdirigering | sök |
+| [!DNL search p13n_no] | [!DNL search] |
+| [!DNL search p13n_yes] | [!DNL search] |
+| [!DNL search refine p13n_no] | [!DNL search] |
+| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search redirect p13n_yes] | [!DNL search] |
+| [!DNL search-redirect] | [!DNL search] |
 
 {style="table-layout:auto"}
 
 
 ### Data före {#casewhen-uc2-databefore}
 
-| Metoder för produktsökning |
+| [!DNL Product Finding Methods] |
 |----|
-| sök p13_no |
-| sök p13_yes |
-| bläddra |
-| sök förfina p13_no |
-| sökförfina p13_yes |
-| bläddra |
-| omdirigering av sökning p13_yes |
-| sökomdirigering |
-| bläddra |
+| [!DNL search p13_no] |
+| [!DNL search p13_yes] |
+| [!DNL browse] |
+| [!DNL search refine p13_no] |
+| [!DNL search refine p13_yes] |
+| [!DNL browse] |
+| [!DNL search redirect p13_yes] |
+| [!DNL search-redirect] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
 ### Härlett fält {#casewhen-uc2-derivedfield}
 
-Du definierar en `Product Finding Methods (new)` härlett fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regler i regelbyggaren. Dessa regler tillämpar logik för alla möjliga varianter av det gamla **[!UICONTROL ** Metoder för produktsökning **]** fältvärden för `search` och `browse` med **[!UICONTROL Contains the phrase]** kriterium.
+Du definierar en `Product Finding Methods (new)` härlett fält. Du skapar följande [!UICONTROL CASE WHEN] regler i regelbyggaren. Dessa regler tillämpar logik för alla möjliga varianter av det gamla [!UICONTROL Product Finding Methods] fältvärden för `search` och `browse` med [!UICONTROL Contains the phrase] kriterium.
 
 ![[!DNL Case When] regel 2](assets/case-when-2.png)
 
 ### Data efter {#casewhen-uc2-dataafter}
 
-| Produktsökningsmetoder (nya) |
+| [!DNL Product Finding Methods (new)] |
 |----|
-| sök |
-| sök |
-| bläddra |
-| sök |
-| sök |
-| bläddra |
-| sök |
-| sök |
-| bläddra |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
@@ -389,9 +396,9 @@ Som reseföretag vill du korta resetiden för bokade resor så att du kan rappor
 Antaganden:
 
 - Organisationen samlar ihop resans varaktighet till ett numeriskt fält.
-- De skulle vilja krympa 1-3 dagars varaktighet till en bucket som kallas för&quot;kort resa&quot;
-- De skulle vilja lägga in 4-7 dagars varaktighet i en hink som kallas &quot;medelresa&quot;
-- De vill krympa över åtta dagars varaktighet till en hink som kallas&quot;lång resa&quot;
+- De skulle vilja lägga in 1-3 dagars varaktighet i en hink som kallas[!DNL short trip]&#39;
+- De skulle vilja lägga in 4-7 dagars varaktighet i en hink som kallas[!DNL medium trip]&#39;
+- De vill lägga in mer än 8 dagars varaktighet i en hink som kallas[!DNL long trip]&#39;
 - 132 resor bokades för en dag
 - 110 resor bokades för en tvådagarsperiod
 - 105 resor bokades för en 3-dagarsperiod
@@ -407,17 +414,17 @@ Antaganden:
 
 Din rapport ska se ut så här:
 
-| Typ av resans varaktighet | Bokningar |
+| [!DNL Trip Duration Type] | [!DNL Bookings] |
 |----|---:|
-| medelresa | 358 |
-| kort resa | 347 |
-| lång resa | 241 |
+| [!DNL medium trip] | 358 |
+| [!DNL short trip] | 347 |
+| [!DNL long trip] | 241 |
 
 {style="table-layout:auto"}
 
 ### Data före {#casewhen-uc3-databefore}
 
-| Resetid |
+| [!DNL Trip Duration] |
 |---:|
 | 1 |
 | 12 |
@@ -434,27 +441,27 @@ Din rapport ska se ut så här:
 
 ### Härlett fält {#casewhen-uc3-derivedfield}
 
-Du definierar en `Trip Duration (bucketed)` härlett fält. Du skapar följande **[!UICONTROL **&#x200B;ÄRENDE NÄR **]** regel i regelbyggaren. Den här regeln använder logik för att bucket den gamla **[!UICONTROL ** Resetid **]** fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
+Du definierar en `Trip Duration (bucketed)` härlett fält. Du skapar följande [!UICONTROL CASE WHEN] regel i regelbyggaren. Den här regeln använder logik för att bucket den gamla [!UICONTROL Trip Duration] fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
 
 ![[!DNL Case When] regel 3](assets/case-when-3.png)
 
 
 ### Data efter {#casewhen-uc3-dataafter}
 
-| Resans längd (inkl.) |
+| [!DNL Trip Duration (bucketed)] |
 |---|
-| kort resa |
-| lång resa |
-| kort resa |
-| medelresa |
-| medelresa |
-| lång resa |
-| medelresa |
-| kort resa |
-| kort resa |
-| kort resa |
-| lång resa |
-| lång resa |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL short trip] |
+| [!DNL medium trip] |
+| [!DNL medium trip] |
+| [!DNL long trip] |
+| [!DNL medium trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL long trip] |
 
 
 ## Begränsningar
@@ -469,13 +476,13 @@ CJA använder följande standardbehållarmodell:
 
 
 
-Följande begränsningar gäller och används när _markera_ och _inställning_ värden.
+Följande begränsningar gäller och används när *markera* och *inställning* värden.
 
 |  | Begränsningar |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Värden du _välj_ inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma behållare och kan vara av valfri typ (sträng) ![Sträng](assets/Smock_ABC_18_N.svg), numerisk ![Numeriskt](assets/Smock_123_18_N.svg)och så vidare). <br/>![Beroende A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Alla värden du anger _set_ över en regel måste komma från samma behållare och ha samma typ eller ett härlett värde av samma typ. <br/> ![Beroende B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Värdena du _välj_ tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do _not_ måste komma från samma behållare och gör _not_ måste vara av samma typ. <br/> ![Beroende C](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | Värden du *välj* inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma behållare och kan vara av valfri typ (sträng) ![Sträng](assets/Smock_ABC_18_N.svg), numerisk ![Numeriskt](assets/Smock_123_18_N.svg)och så vidare). <br/>![Beroende A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Alla värden du anger *set* över en regel måste komma från samma behållare och ha samma typ eller ett härlett värde av samma typ. <br/> ![Beroende B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Värdena du *välj* tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do *not* måste komma från samma behållare och gör *not* måste vara av samma typ. <br/> ![Beroende C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -505,47 +512,47 @@ Du har fått felaktiga värden för din rapport om externa marknadsföringskanal
 
 **Ursprunglig rapport**
 
-| Kanaler för extern marknadsföring | Sessioner |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| e-postmarknadsföring | 500 |
-| e-post %20 marknadsföring | 24 |
+| [!DNL email marketing] | 500 |
+| [!DNL email %20marketing] | 24 |
 
 {style="table-layout:auto"}
 
 **Önskad rapport**
 
-| Kanaler för extern marknadsföring | Sessioner |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| e-postmarknadsföring | 524 |
+| [!DNL email marketing] | 524 |
 
 
 ### Data före {#findreplace-uc-databefore}
 
-| Extern marknadsföring |
+| [!DNL External Marketing] |
 |----|
-| e-postmarknadsföring |
-| e-post%20marknadsföring |
-| e-postmarknadsföring |
-| e-postmarknadsföring |
-| e-post%20marknadsföring |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
 
 {style="table-layout:auto"}
 
 ### Härlett fält {#findreplace-uc-derivedfield}
 
-Du definierar en `Email Marketing (updated)` härlett fält. Du använder **[!UICONTROL FIND AND REPLACE]** funktion för att definiera en regel för att söka efter och ersätta alla förekomster av `email%20marketing` med `email marketing`.
+Du definierar en `Email Marketing (updated)` härlett fält. Du använder [!UICONTROL FIND AND REPLACE] funktion för att definiera en regel för att söka efter och ersätta alla förekomster av `email%20marketing` med `email marketing`.
 
 ![[!DNL Find and Replace] regel](assets/find-and-replace.png)
 
 ### Data efter {#findreplace-uc-dataafter}
 
-| Extern marknadsföring<br/>(härlett fält) |
+| [!DNL External Marketing (updated)] |
 |----|
-| e-postmarknadsföring |
-| e-postmarknadsföring |
-| e-postmarknadsföring |
-| e-postmarknadsföring |
-| e-postmarknadsföring |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
 
 {style="table-layout:auto"}
 
@@ -573,63 +580,63 @@ Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden.
 ## Användningsfall 1 {#lookup-uc1}
 
 Du har en CSV-fil som innehåller en nyckelkolumn för `hotelID` och en eller flera kolumner som är associerade med `hotelID`: `city`, `rooms`, `hotel name`.
-Du samlar in ett Hotel-ID i en dimension men vill skapa en Hotel Name-dimension som härleds från `hotelID` i CSV-filen.
+Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] dimension härledd från `hotelID` i CSV-filen.
 
 **CSV-filstruktur och innehåll**
 
-| hotelID | stad | rum | hotellnamn |
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
 |---|---|---:|---|
-| SLC123 | Salt Lake City | 40 | SLC på stan |
-| LAX342 | Los Angels | 60 | LA Airport |
-| SFO456 | San Francisco | 75 | Market Street |
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
 **Aktuell rapport**
 
-| Hotel-ID | Produktvisningar |
+| [!DNL Hotel ID] | Produktvisningar |
 |---|---:|
-| SLC123 | 200 |
-| LX342 | 198 |
-| SFO456 | 190 |
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
 
 {style="table-layout:auto"}
 
 
 **Önskad rapport**
 
-| Hotellnamn | Produktvisningar |
+| [!DNL Hotel Name] | Produktvisningar |
 |----|----:|
-| SLC på stan | 200 |
-| LA Airport | 198 |
-| Market Street | 190 |
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
 
 {style="table-layout:auto"}
 
 ### Data före {#lookup-uc1-databefore}
 
-| Hotel-ID |
+| [!DNL Hotel ID] |
 |----|
-| SLC123 |
-| LAX342 |
-| SFO456 |
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
 
 {style="table-layout:auto"}
 
 
 ### Härlett fält {#lookup-uc1-derivedfield}
 
-Du definierar en `Hotel Name` härlett fält. Du använder **[!UICONTROL ** LETA UPP **]** funktion för att definiera en regel där du kan slå upp värden för **[!UICONTROL ** Hotel-ID **]** och ersätt med nya värden.
+Du definierar en `Hotel Name` härlett fält. Du använder [!UICONTROL LOOKUP] funktion för att definiera en regel där du kan slå upp värden för [!UICONTROL Hotel ID] och ersätt med nya värden.
 
 ![[!DNL Lookup] regel 1](assets/lookup-1.png)
 
 ### Data efter {#lookup-uc1-dataafter}
 
-| Hotellnamn |
+| [!DNL Hotel Name] |
 |----|
-| SLC på stan |
-| LA Airport |
-| Market Street |
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
@@ -640,13 +647,13 @@ Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den
 
 ### Data före {#lookup-uc2-databefore}
 
-| Sidnamn |
+| [!DNL Page Name] |
 |---|
-| Hemsida |
-| Flygsökning |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
 | `http://www.adobetravel.ca/Hotel-Search` |
 | `https://www.adobetravel.com/Package-Search` |
-| Erbjudanden |
+| [!DNL Deals & Offers] |
 | `http://www.adobetravel.ca/user/reviews` |
 | `https://www.adobetravel.com.br/Generate-Quote/preview` |
 
@@ -654,21 +661,21 @@ Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den
 
 ### Härlett fält {#lookup-uc2-derivedfield}
 
-Du definierar en `Page Name (updated)` härlett fält. Du använder **[!UICONTROL ** LETA UPP **]** funktion för att definiera en regel där du kan slå upp värden för dina befintliga **[!UICONTROL ** Sidnamn **]** och ersätt med uppdaterade korrekta värden.
+Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL LOOKUP] funktion för att definiera en regel där du kan slå upp värden för dina befintliga [!UICONTROL Page Name] och ersätt med uppdaterade korrekta värden.
 
 ![[!DNL Lookup] regel 2](assets/lookup-2.png)
 
 ### Data efter {#lookup-uc2-dataafter}
 
-| Sidnamn (uppdaterat) |
+| [!DNL Page Name (updated)] |
 |---|
-| Hemsida |
-| Flygsökning |
-| Hotellsökning |
-| Paketsökning |
-| Erbjudanden |
-| Recensioner |
-| Generera offert |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
 
 +++
 
@@ -695,7 +702,7 @@ Du vill bara använda den refererande domänen från den refererande URL:en som 
 
 ### Data före {#urlparse-uc1-databefore}
 
-| Refererande URL |
+| [!DNL Referring URL] |
 |----|
 | `https://www.google.com/` |
 | `https://duckduckgo.com/` |
@@ -706,29 +713,29 @@ Du vill bara använda den refererande domänen från den refererande URL:en som 
 
 ### Härlett fält {#urlparse-uc1-derivedfield}
 
-Du definierar en  `Referring Domain` härlett fält. Du använder **[!UICONTROL ** URL-PARSE **]** funktion som definierar en regel som hämtar värden från **Refererande URL** och lagra det i det nya härledda fältet.
+Du definierar en  `Referring Domain` härlett fält. Du använder [!UICONTROL URL PARSE] funktion som definierar en regel som hämtar värden från [!UICONTROL Referring URL] och lagra det i det nya härledda fältet.
 
 ![[!DNL Url Parse] regel 1](assets/url-parse-1.png)
 
 ### Data efter {#urlparse-uc1-dataafter}
 
-| Referensdomän |
+| [!DNL Referrer Domain] |
 |----|
-| www.google.com |
-| duckduckgo.com |
-| t.co |
-| l.facebook.com |
+| [!DNL www.google.com] |
+| [!DNL duckduckgo.com] |
+| [!DNL t.co] |
+| [!DNL l.facebook.com] |
 
 {style="table-layout:auto"}
 
 
 ## Användningsfall 2 {#urlparse-uc2}
 
-Du vill använda värdet för `cid` parameter för en frågesträng i en sidadress som en del av utdata från en härledd spårningskodrapport.
+Du vill använda värdet för `cid` parameter för en frågesträng i en [!DNL Page URL] som en del av utdata från en härledd spårningskodrapport.
 
 ### Data före {#urlparse-uc2-databefore}
 
-| Sidans URL |
+| [!DNL Page URL] |
 |----|
 | `https://www.adobe.com/?cid=abc123` |
 | `https://www.adobe.com/?em=email1234&cid=def123` |
@@ -738,17 +745,17 @@ Du vill använda värdet för `cid` parameter för en frågesträng i en sidadre
 
 ### Härlett fält {#urlparse-uc2-derivedfield}
 
-Du definierar en `Query String CID` härlett fält. Du använder **[!UICONTROL ** URL-PARSE **]** funktion för att definiera en regel för att hämta värdet för frågesträngsparametern i sidans URL, ange `cid` som frågeparametern. Utdatavärdet lagras i det nya härledda fältet.
+Du definierar en `Query String CID` härlett fält. Du använder [!UICONTROL URL PARSE] funktion för att definiera en regel som hämtar värdet för frågesträngsparametern i [!UICONTROL Page URL] fält, ange `cid` som frågeparametern. Utdatavärdet lagras i det nya härledda fältet.
 
 ![[!DNL Url Parse] regel 2](assets/url-parse-2.png)
 
 ### Data efter {#urlparse-uc2-dataafter}
 
-| Frågesträng-CID |
+| [!DNL Query String CID] |
 |----|
-| abc123 |
-| def123 |
-| xyz123 |
+| [!DNL abc123] |
+| [!DNL def123] |
+| [!DNL xyz123] |
 
 {style="table-layout:auto"}
 

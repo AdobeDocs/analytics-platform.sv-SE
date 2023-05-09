@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e0417d94c0d371aca3d10af7a25b0e346f8b2a8e
+source-git-commit: d738b63b9d5fdc6ed01d6c9711953ea3af76f7cc
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1728'
 ht-degree: 6%
 
 ---
@@ -22,8 +22,9 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | **Maj 2023** |  |
 | Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
 | Skapa projekt | Skapade en ny artikel som förklarar i detalj hur du [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) i Analysis Workspace. |
+| Härledda fält | Dokumentation på [härledda fält](../data-views/derived-fields/derived-fields.md) funktionalitet. |
 | **April 2023** |  |
-| Video om hur du använder filter som dimensioner | <p>Videon om att använda filter som dimension har uppdaterats. Den här videon är länkad från [Skapa filter](/help/components/filters/create-filters.md) sida.</p> <p>Här följer en direktlänk till videon: [Använd filter som dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
+| Video om hur du använder filter som dimensioner | Videon om att använda filter som dimension har uppdaterats. <p>Den här videon är länkad från [Skapa filter](/help/components/filters/create-filters.md) sida.</p> <p>Här följer en direktlänk till videon: [Använd filter som dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Filterdokumentation | Lagt till artikel om hur du använder [Filter Builder](/help/components/filters/filter-builder.md). <p>Effektivare dokumentation i [Skapa filter](/help/components/filters/create-filters.md) och [Översikt över filter](/help/components/filters/filters-overview.md).</p> |
 | Uppdatera till dokumentationen på panelen Experimentation | Ett avsnitt har lagts till [tolka icke-slumpmässiga dimensioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | Projektfilter (ad hoc- och snabbfilter) | Effektiv dokumentation om projektfilter och borttagen dubblettinformation. Stegen för att skapa ad hoc-filter kombineras nu med stegen för [skapa snabbfilter](/help/components/filters/quick-filters.md). |
