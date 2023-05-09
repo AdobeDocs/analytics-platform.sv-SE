@@ -3,33 +3,39 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7737a285c701946dcf92c2610c1918022e05de36
+source-git-commit: 1c00f3974293c9022365e69d6c1b38d79f52d872
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '758'
+ht-degree: 6%
 
 ---
 
-# Versionsinformation för Customer Journey Analytics (CJA) (april 2023)
+# Versionsinformation för Customer Journey Analytics (CJA) (maj 2023)
 
-**Senaste uppdatering**: 12 april 2023
+**Senaste uppdatering**: 8 maj 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Viktiga funktioner och uppdateringar
 
-| Funktion | Beskrivning | [Början av utrullning](/help/release-notes/releases.md) | [Allmän tillgänglighet](/help/release-notes/releases.md) |
-| ----------- | ---------- | ----- | --- |
-| **Rad-/kolumnfiltrering för Analytics Source Connector-direktuppspelning** | Med Analytics Source Connector i Adobe Experience Platform går det nu att filtrera analysdata som används för att fylla i profiler i [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en). Filtrering på radnivå minskar antalet händelser som är associerade med profiler. Filtrering på kolumnnivå bidrar till att minska detaljrikedomen i själva händelserna och gör att du kan optimera användningen av profilberättiganden. Denna filtrering gäller endast data som skickas till kundprofilen i realtid och [Identitetstjänst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en). **Filtreringen påverkar inte data som skickas till Data Lake för användning i program som Customer Journey Analytics**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#filtering-for-profile) | Ej tillämpligt | 29 mars 2023 |
-| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna (dimensioner, mått) i sin CJA-miljö. [Läs mer](/help/components/data-dictionary/data-dictionary-overview.md) | 8 mars 2023 | 29 mars 2023 |
-| **Länkdelning för projekt (ingen inloggning krävs)** | <p>Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför organisationen eller personer inom organisationen som inte är tilldelade CJA. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link)</p> <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=en#company-preferences)</p> | 3 maj 2023 | Juni 2023 |
-| **Adobe Product Analytics - endast privat betaåtkomst** | Den 21 mars 2023 presenterade Adobe Adobe Product Analytics, ett nytt sätt att interagera med data och insikter från olika kanaler i Customer Journey Analytics. Dessa nya funktioner gör det möjligt för produktteamen att självbetjäna data och insikter om sina produktupplevelser via guidade analysarbetsflöden &#x200B;. Team kan:<ul><li>Förstå mönster i användarengagemanget över tid &#x200B;</li><li>Analysera tillväxten av &#x200B;</li><li>Identifiera friktionsområden i en serie steg &#x200B;</li><li>Mät effekten av &#x200B;</li><li>Identifiera meningsfulla segment för att engagera och vårda under hela deras livslånga resa med &#x200B;</li><li>Öppna i Analysis Workspace för djupare analyser och samarbete med analytiker och mycket mer! &#x200B;</li></ul>Om du är CJA-kund och är intresserad av att gå med i den privata betaversionen kontaktar du ditt Adobe-kontoteam. [Läs mer](https://business.adobe.com/products/product-analytics/adobe-product-analytics.html) | Ej tillämpligt | 17 juli 2023 |
+| Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
+| ----------- | ---------- | ------- | ---- |
+| **Bakgrundsfyllning för icke-produktionssandlådor** | När du skapar ett dataflöde för Analytics Source Connector i en icke-produktionssandlåda, begränsas bakgrundsfyllningen i icke-produktionssandlådor till tre månader. Den kommer att finnas kvar på 13 månader för produktionssandlådor. | Ej tillämpligt | 26 april 2023 |
+| **Länkdelning för projekt (ingen inloggning krävs)** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=en#company-preferences)</p> | 3 maj 2023 | Juni 2023 |
+| **Uppdaterad startskärm för kontrollpanelsappen Analytics (mobilapp)** | På den nya uppdaterade startskärmen kan du visa alla dina styrkort i en konsoliderad styrkortslista.  Om du har tillgång till mer än en organisation under en inloggning är alla styrkort från din organisation tillgängliga i en enda lista. | Ej tillämpligt | 10 maj 2023 |
+| **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html)</p> | 10 maj 2023 | TBD |
+| **Report Builder för CJA - Välj datavy från cell** | Med den här funktionen kan användare välja datavyn för ett datablock från en cell. Detta är praktiskt om du skapar en arbetsbok och har flera datavyer som har liknande datauppbyggnad och du vill kunna återanvända en arbetsbok flera gånger, med olika datavyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | Ej tillämpligt | 24 maj 2023 |
+| **Sortera komponenter i Analysis Workspace** | <p>Ett nytt sorteringsalternativ är nu tillgängligt när du visar komponenter i den vänstra listen eller i datamappningslistan i Analysis Workspace. Du kan sortera komponenter efter Rekommenderat (de som används oftast), Alfabetiskt eller Kategoriserat (text).</p><p>Tidigare kunde du bara söka efter eller filtrera komponenter. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=en)</p> | Ej tillämpligt | 10 maj 2023 |
+| **Ta bort rader som innehåller dynamiska dimensioner från en frihandstabell** | I en friformstabell i Analysis Workspace kan du nu snabbt ta bort specifika rader som innehåller dynamiska dimensioner med hjälp av x-ikonen. När du gör det tillämpas automatiskt filterregeln &quot;Är inte lika med&quot;.<p>Tidigare var det enda sättet att ta bort rader som innehöll dynamiska dimensioner att manuellt skapa en regel i filterdialogrutan. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html?lang=en)</p> | Ej tillämpligt | 10 maj 2023 |
+| **Ny knapp för att lägga till en visualisering i en panel** | En ny knapp finns nu längst ned på varje panel i Analysis Workspace, så att du snabbt kan lägga till en visualisering. <p>Tidigare var de enda sätten att lägga till en visualisering på en panel att dra en visualisering från den vänstra listen, duplicera eller kopiera en befintlig visualisering eller skapa en tom panel. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#quick-viz)</p> | Ej tillämpligt | 10 maj 2023 |
+| **Djuplänkning (mobilapp)** | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. | Ej tillämpligt | 17 maj 2023 |
+| **Intelligenta bildtexter** | Förstärk berättandet för användare med naturtrogna språksammanfattningar av en radvisualisering. | 17 maj 2023 | 1 juni 2023 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-313118; AN-313390; AN-314135; AN-316381; AN-316811
+AN-316412; AN-317105; AN-318122; AN-317353
 
 ## Viktiga meddelanden för CJA-administratörer
 
