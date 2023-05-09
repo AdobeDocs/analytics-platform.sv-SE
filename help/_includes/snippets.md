@@ -1,7 +1,7 @@
 ---
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
@@ -56,3 +56,14 @@ ht-degree: 1%
 | [!UICONTROL **Senast ändrad**] | Visar den dag som komponenten senast ändrades. Det här avsnittet visas när du visar filter, mått, beräknade värden och datumintervall. |
 
 {style="table-layout:auto"}
+
+## Alternativ för komponentsortering {#components-sort-options}
+
+| Alternativ |  -funktion |
+|---------|----------|
+| [!UICONTROL **Rekommenderas**] | Sorterar komponenter med de som rekommenderas högst upp i listan. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i listan. |
+| [!UICONTROL **Alfabetiskt**] | Sorterar komponenterna i bokstavsordning. |
+| [!UICONTROL **Kategorisisk**] | Sorterar komponenter efter komponenttyp (dimension, mått, segment, datumintervall). |
+
+{style="table-layout:auto"}
+

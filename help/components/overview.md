@@ -4,10 +4,10 @@ description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 434695e87a0b342da9c17c94b93e0253cf1e621e
+source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 10%
+source-wordcount: '933'
+ht-degree: 6%
 
 ---
 
@@ -55,6 +55,82 @@ Du kan hantera komponenter (individuellt eller genom att markera flera) på fler
 Se videon Creating Metrics, Filters, and Dates:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
+
+## Hantera komponenter {#actions}
+
+Du kan hantera komponenter direkt i den vänstra listen.
+
+1. Högerklicka på en komponent.
+
+   eller
+
+   Markera en komponent och markera sedan **Åtgärd** (3 punkter) längst upp i komponentlistan.
+
+   >[!TIP]
+   >
+   >   Du kan markera flera komponenter genom att hålla ned Skift, eller genom att hålla ned Kommando (Mac) eller Ctrl (Windows).
+
+
+   ![](assets/component-actions.png)
+
+   | Komponentåtgärd | Beskrivning |
+   |--- |--- |
+   | [!UICONTROL **Tagg**] | Ordna eller hantera komponenter genom att lägga till taggar i dem. Du kan sedan söka efter tagg i den vänstra listen genom att klicka på filtret eller skriva #. Taggar fungerar också som filter i komponenthanterarna. |
+   | [!UICONTROL **Favorit**] | Lägg till komponenten i listan med favoriter. Precis som med taggar kan du söka efter Favoriter i den vänstra listen och filtrera efter dem i komponenthanterarna. |
+   | [!UICONTROL **Godkänn**] | Markera komponenter som godkända för att signalera till användarna att komponenten är godkänd för organisationen. Precis som med taggar kan du söka efter Godkänd i den vänstra listen och filtrera efter dem i komponenthanterarna. |
+   | [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
+   | [!UICONTROL **Ta bort**] | Ta bort komponenter som du inte längre behöver. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
+
+Anpassade komponenter kan också hanteras med respektive komponenthanterare. Till exempel [Hantera filter](/help/components/filters/manage-filters.md).
+
+## Söka, filtrera och sortera komponentlistan
+
+Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i Analysis Workspace för att snabbt hitta en viss komponent.
+
+### Sök i komponentlistan
+
+1. Välj **Komponenter** icon ![Ikon för komponenter](assets/components-icon.png) till vänster.
+
+1. I sökfältet börjar du skriva namnet på komponenten som du vill använda i ditt projekt.
+
+   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](assets/dimension-icon.png) är orange, **Filter** ![Filterikon](assets/segment-icon.png) är blå, **Datumintervall** ![Ikon för datumintervall](assets/date-range-icon.png) är lila, och **Mått** ![Mätningsikon](assets/default-metric-icon.png) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en filtermall och räkningsikonen ![Beräkningsikon](assets/calculated-metric-icon-created.png) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
+
+1. Markera komponenten när den visas i listrutan.
+
+### Filtrera komponentlistan
+
+1. Välj **Komponenter** icon ![Ikon för komponenter](assets/components-icon.png) till vänster.
+
+1. Välj **Filter** icon ![Ikon för dataordlistefilter](assets/components-filter-icon.png).
+
+   eller
+
+   Skriv nummertecknet (#) i sökfältet.
+
+1. Välj något av följande filteralternativ för att filtrera komponentlistan:
+
+   | Alternativ |  -funktion |
+   |---------|----------|
+   | [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
+   | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Hantera komponenter](#manage-components). |
+   | [!UICONTROL **Dimensioner**] | Visa endast komponenter som är Dimensioner. |
+   | [!UICONTROL **Mätvärden**] | Visa endast komponenter som är mätvärden. |
+   | [!UICONTROL **Filter**] | Visa endast komponenter som är filter. |
+   | [!UICONTROL **Datumintervall**] | Visa endast komponenter som är datumintervall. |
+   | [!UICONTROL **Visa alla**] | Visa alla komponenter. Det här alternativet är endast tillgängligt för administratörer. |
+   | [!UICONTROL **Ej godkänt**] | Visa endast komponenter som ännu inte har markerats som Godkända av en administratör. Som administratör är detta användbart när du identifierar komponenter som kräver granskning och godkännande. Det här alternativet är endast tillgängligt för administratörer. |
+
+1. (Valfritt) Om du vill finjustera listan ytterligare kan du sortera komponentlistan enligt beskrivningen i [Sortera komponentlistan](#sort-the-component-list).
+
+### Sortera komponentlistan
+
+1. (Valfritt) Tillämpa eventuella filter på komponentlistan enligt beskrivningen i [Filtrera komponentlistan](#filter-the-component-list).
+
+1. Välj **Komponenter** icon ![Ikon för komponenter](assets/components-icon.png) till vänster.
+
+1. Välj **Sortera** icon ![Ikon för att sortera komponenter](assets/component-sort-icon.png)väljer du sedan något av följande filteralternativ för att sortera komponentlistan:
+
+   {{components-sort-options}}
 
 ## Behörigheter för komponentåtkomst
 
