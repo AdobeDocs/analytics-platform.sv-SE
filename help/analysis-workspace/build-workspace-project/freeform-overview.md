@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Översikt över projekt
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 3%
@@ -41,7 +41,7 @@ Sidan Projekt innehåller följande information:
 | Taggar | Taggar som tillämpades på projektet. |
 | Schemalagd | Anger om projekt har schemalagts att skickas med e-post till mottagare enligt ett schema. Se [Schemalägg projekt](/help/analysis-workspace/curate-share/t-schedule-report.md). |
 | Delad länk (alla) | Projekt kan delas med vem som helst - även med personer som inte har tillgång till Analysis Workspace. I den här kolumnen visas om projekt har delats på det här sättet. Se [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) för mer information. |
-| Rapportsvit | Rapportsviten som projektet är kopplat till. |
+| Datavy | Datavyn som projektet är kopplat till. |
 | [Projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Anger din roll för projektet - ägare, redigera, duplicera, visa. |
 | Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
 | Delas med | Användare som projektet har delats med. |

@@ -3,7 +3,7 @@ description: I filterverktyget finns en arbetsyta där du kan dra och släppa me
 title: Skapa filter
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera filter. (
 1. **[!UICONTROL Dimensions]**: (Lista) Klicka på rubriken för att expandera.
 1. **[!UICONTROL Metrics]**: Klicka på rubriken för att expandera.
 1. **[!UICONTROL Filters]**: Klicka på rubriken för att expandera.
-1. **[!UICONTROL Report suite selector]**: Gör att du kan välja den rapportserie som det här filtret ska sparas under. Du kan fortfarande använda filtret i alla rapportsviter.
+1. **[!UICONTROL Data View selector]**: Gör att du kan välja den rapportserie som det här filtret ska sparas under. Du kan fortfarande använda filtret i alla datavyer.
 1. **[!UICONTROL Filter Preview]**: Här kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt filter och hur brett filtret är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här filtret. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL Event], [!UICONTROL Person]och [!UICONTROL Session] för ett filter som körs mot en datauppsättning. Diagrammet uppdateras omedelbart när du har skapat eller ändrat filterdefinitionen.
 1. **[!UICONTROL Product Compatibility]**: En lista över vilka Adobe Analytics-produkter (Analysis Workspace, [!UICONTROL Reports & Analytics], Data warehouse) som det skapade filtret är kompatibelt med. De flesta filter är kompatibla med alla produkter. Alla operatorer och dimensioner är dock inte kompatibla med alla Analytics-produkter, särskilt [data warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). Diagrammet uppdateras omedelbart efter att du har ändrat filterdefinitionen.
 1. **[!UICONTROL Save]** eller **[!UICONTROL Cancel]**: Sparar eller avbryter filtret. Efter klickning **[!UICONTROL Save]** kommer du till Filterhanteraren där du kan hantera filtret.

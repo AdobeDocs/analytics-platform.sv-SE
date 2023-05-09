@@ -3,10 +3,10 @@ title: Hantera anteckningar
 description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Components
-exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '658'
 ht-degree: 1%
 
 ---
@@ -28,17 +28,17 @@ The [!UICONTROL Annotations] -hanteraren visar alla anteckningar du äger som ha
 | Gränssnittselement | Beskrivning |
 | --- | --- | 
 | [!UICONTROL Title and Description] | Finns i Annotations Builder. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till Anteckningsverktyget. |
-| [!UICONTROL Report Suite] | Rapportsviten/rapporterna som den här anteckningen gäller för. |
+| [!UICONTROL Data view] | Datavyn/datavyerna som den här anteckningen gäller för. |
 | [!UICONTROL Owner] | Anger vem som äger anteckningen. Som icke-administratör kan du bara se anteckningar som du äger eller de som delats med dig. |
 | [!UICONTROL Applied Date Range] | Det datum eller datumintervall som den här anteckningen gäller för. |
 | [!UICONTROL Shared with] | Visar hur många personer eller grupper som du har delat anteckningen med. Klicka för mer information. |
 | [!UICONTROL Date Modified] | Visar datum och tid då anteckningen senast ändrades. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Redigera anteckningar
 
-Att redigera en anteckning innebär att du kan justera datumintervall, färger, omfång eller om det gäller för alla rapportsviter eller projekt. Du kan redigera anteckningar på två sätt:
+Att redigera en anteckning innebär att du kan justera datumintervall, färger, omfång eller om det gäller för alla datavyer eller projekt. Du kan redigera anteckningar på två sätt:
 
 * Håll pekaren över anteckningen i ett linjediagram och klicka på pennikonen i pekaren.
 
@@ -58,7 +58,7 @@ När du delar anteckningar eller arbetar med anteckningar som delats med dig bö
 
 ## Anteckningar och tidszoner
 
-Alla anteckningar skapas med en tidsstämpel, men ingen &quot;timme&quot;- eller &quot;tidszon&quot;-information. Vid rapporttillfället används alltid tidszonen för panelens datavy. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du har för rapportsviten.
+Alla anteckningar skapas med en tidsstämpel, men ingen &quot;timme&quot;- eller &quot;tidszon&quot;-information. Vid rapporttillfället används alltid tidszonen för panelens datavy. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du befinner dig i i datavyn.
 
 Ett annat exempel är nyårsdagen. Varje timme sätter olika tidszoner igång för fyrverkerier när det nya året börjar. På 10.00 amerikanska Mountain Time startar USA:s östkust brandarbeten eftersom det redan är 12.00 Eastern Time.
 
@@ -76,6 +76,6 @@ Välj bara en eller flera av anteckningarna så visas Aktivitetsfältet.
 | Byt namn | Om du ändrar namn på en anteckning ändras namnet i alla projekt som den används i. |
 | Kopiera | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |
 | Exportera till CSV | Exportera anteckningsdefinitionen till en CSV-fil. |
-| Filter (vänster remsa) | Filtrera efter taggar, rapportsvit, ägare och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
+| Filter (vänster remsa) | Filtrera efter taggar, datavy, owners och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

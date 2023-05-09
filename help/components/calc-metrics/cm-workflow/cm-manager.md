@@ -3,7 +3,7 @@ description: I Beräknad måtthanterare kan du strukturera mätvärden på mång
 title: Hanterare för beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 2%
@@ -23,7 +23,7 @@ I Beräknad metrisk hanterare visas alla segment som du äger och som har delats
 | Gränssnittsfunktion | Beskrivning |
 | --- | --- |
 | Verktygsfältet för hantering av beräknade värden | När du har markerat ett mätvärde visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
-| Visa/dölj filter | Om du klickar på Visa filter visas filtermenyn. Du kan filtrera efter taggar, rapportsviter, ägare, Visa alla (endast administratör), Delat med mig, Min, Favoriter och Godkänd. |
+| Visa/dölj filter | Om du klickar på Visa filter visas filtermenyn. Du kan filtrera efter taggar, datavyer, ägare, Visa alla (endast administratör), Delade med mig, Min, Favoriter och Godkänd. |
 | Kryssrutor | Kontrollera ett anpassat mått för att hantera det. |
 | Favoriter | Om du klickar på stjärnan bredvid ett mätresultat blir stjärnan gul och måttet markeras som en favorit. |
 | Filtrera titlar och beskrivningar | Finns i beräkningsverktyget. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till verktyget Beräknade mätvärden. |

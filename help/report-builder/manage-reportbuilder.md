@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Dataslockhanteraren visar alla datablock som finns i en arbetsbok. 
 
 ## Sortera listan över datablock
 
-Du kan sortera data blockeringslista efter en kolumn som visas. Du kan till exempel sortera data blockeringslista efter rapportsviter, filter, datumintervall och andra variabler.
+Du kan sortera data blockeringslista efter en kolumn som visas. Du kan till exempel sortera data blockeringslista efter datavyer, filter, datumintervall och andra variabler.
 
 Om du vill sortera data blockeringslista klickar du på en kolumnrubrik.
 
@@ -40,7 +40,7 @@ Om du vill sortera data blockeringslista klickar du på en kolumnrubrik.
 
 ## Sök i Data Blockeringslista
 
-Använd sökfältet för att hitta något i datablockstabellen. Du kan till exempel söka efter mätvärden i datablocken eller rapportsviten. Du kan också söka efter datum i datumintervallet, ändringsdatumet eller sista körningsdatumkolumnen.
+Använd sökfältet för att hitta något i datablockstabellen. Du kan till exempel söka efter mått i datablocken eller datavyn. Du kan också söka efter datum i datumintervallet, ändringsdatumet eller sista körningsdatumkolumnen.
 
 ![image](./assets/image55.png)
 

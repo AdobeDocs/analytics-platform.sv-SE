@@ -3,7 +3,8 @@ description: Administratörer ansvarar för att övervaka hälsotillståndet fö
 title: Övervaka dataordlistans hälsa
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -38,7 +39,7 @@ Så här identifierar du hälsoproblem i din Data Dictionary:
 
    ![Administratörsvy för datamordlista](assets/data-dictionary-admin.png)
 
-1. Kontrollera att rätt Report Suite är markerat i listrutan.
+1. Kontrollera att rätt datavy är markerad i listrutan.
 
 1. På [!UICONTROL **Ordlistehälsa**] flik, välja [!UICONTROL **Visa**] bredvid något av följande alternativ:
 

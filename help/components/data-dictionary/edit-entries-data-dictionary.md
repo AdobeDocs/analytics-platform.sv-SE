@@ -3,7 +3,8 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Redigera poster i Data Dictionary
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Redigera komponentposter i Data Dictionary
 
-Customer Journey Analytics-administratörer kan redigera komponentposter i Data Dictionary för en given Report Suite. Alla ändringar som görs är synliga för alla användare av Report Suite.
+Customer Journey Analytics-administratörer kan redigera komponentposter i datamappningen för en viss datavy. Alla ändringar som görs är synliga för alla som använder datavyn.
 
 Så här redigerar du en komponent i Data Dictionary:
 
@@ -24,7 +25,7 @@ Så här redigerar du en komponent i Data Dictionary:
 
    ![Administratörsvy för datamordlista](assets/data-dictionary-admin.png)
 
-1. Kontrollera att rätt Report Suite är markerat i listrutan. Som standard visas den rapportsvit som du redan ingår i.
+1. Kontrollera att rätt datavy är markerad i listrutan. Som standard visas datavyn som du redan befinner dig i.
 
 1. (Valfritt) I sökfältet börjar du skriva namnet på komponenten som du vill redigera.
 

@@ -3,7 +3,8 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Visa dataordlistan
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Så här visar du information om en komponent i Data Dictionary:
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. Kontrollera att den rapportsvit som innehåller den komponent som du vill visa är markerad i listrutan. Som standard visas den rapportsvit som du redan ingår i.
+1. Kontrollera att datavyn som innehåller komponenten som du vill visa är markerad i listrutan. Som standard visas datavyn som du redan befinner dig i.
 
 1. (Valfritt) I sökfältet börjar du med att skriva namnet på komponenten som du vill visa.
 

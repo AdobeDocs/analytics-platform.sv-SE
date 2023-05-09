@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 7065215f89f964e7504f3e95996b352410b89779
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2294'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Du kommer åt [!UICONTROL Blank Mobile Scorecard] mall antingen genom att skapa 
 
 Så här implementerar du styrkortsmallen:
 
-1. Under **[!UICONTROL Properties]** (i den högra listen), ange en **[!UICONTROL Project report suite]** som du vill använda data från. Rapportsviter är datavyer i CJA.
+1. Under **[!UICONTROL Properties]** (i den högra listen), ange en **[!UICONTROL Project data view]** som du vill använda data från.
 
-   ![Val av rapportsvit](assets/properties_save.png)
+   ![datavy selection](assets/properties_save.png)
 
 1. Om du vill lägga till en ny platta i styrkortet drar du ett mått från den vänstra panelen och släpper det i **[!UICONTROL Drag and Drop Metrics Here]** zon. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
 

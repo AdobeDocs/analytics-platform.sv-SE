@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Medieuppspelningstid för 
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -17,8 +17,8 @@ Du kan analysera den uppspelningstid som använts för att förstå var maximal 
 
 I Analysis Workspace är uppspelningstid den tid som du har lagt på att visa medieströmmar vid en viss tidpunkt, och omfattar paus, buffert och tid till start.
 
-Med panelen Medieuppspelningstid för spenderad kan du analysera uppspelningen över tid, med detaljer om maximal samtidighet och möjlighet att bryta ned och jämföra. Om du vill komma åt panelen Medieuppspelningstid för spenderad navigerar du till en rapportsvit med Media Analytics-komponenter aktiverade. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
+Med panelen Medieuppspelningstid för spenderad kan du analysera uppspelningen över tid, med detaljer om maximal samtidighet och möjlighet att bryta ned och jämföra. Om du vill komma åt panelen Medieuppspelningstid för spenderad navigerar du till en datavy med Media Analytics-komponenter aktiverade. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
 
-Panelen innehåller även nya funktioner i kalendern som gör att du kan markera och visa mindre än 24 timmar. Du kan göra det för hela panelen, eller så kan du skapa segment med hjälp av sammanhängande tidsperioder så att du kan spåra inledande/utledande visning för olika program eller avsnitt i program. När du har placerat minst två av datumsegmenten visas en alternativknapp för Datumsekvensvisning som antingen täcker raderna med en gemensam start på x-axeln eller visar dem i ordning med den specifika starten på x-axeln.
+Panelen innehåller även nya funktioner i kalendern som gör att du kan markera och visa mindre än 24 timmar. Du kan göra det för hela panelen, eller så kan du skapa segment med hjälp av sammanhängande tidsperioder så att du kan spåra inledande/utledande visning för olika program eller avsnitt i program. När du har placerat minst två av datumsegmenten visas en alternativknapp för Datumsekvensvisning som antingen täcker raderna med en gemensam x-axelstart eller visar dem i ordning med den specifika x-axelstarten.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338699)
