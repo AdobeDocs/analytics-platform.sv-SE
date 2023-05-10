@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Översikt över visualiseringar
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1234'
 ht-degree: 3%
 
 ---
@@ -15,9 +15,7 @@ ht-degree: 3%
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Customer Journey Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
-Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md)eller genom att högerklicka i arbetsflödet.
-
-![Visualiseringsspår](assets/viz-rail.png)
+## Visualiseringstyper
 
 Följande visualiseringstyper finns i Analysis Workspace:
 
@@ -40,6 +38,26 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Text](/help/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
 | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md) | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Använder cirklar för att beskriva måttöverlappningen för upp till 3 filter. |
+
+## Lägga till visualiseringar i en panel
+
+1. Öppna det Analysis Workspace-projekt där du vill lägga till en visualisering.
+
+1. Använd någon av följande metoder för att lägga till visualiseringen:
+
+   * I den vänstra listen väljer du **Visualiseringar** icon <!-- add icon -->och sedan dra en visualisering till panelen där du vill lägga till den.
+
+      ![](assets/viz-rail.png)
+
+   * På panelen där du vill lägga till visualiseringen väljer du **Plus** väljer du sedan den ikon som representerar den visualisering som du vill lägga till. Håll pekaren över ikonen för varje visualisering för att se dess namn.
+
+      ![Knapp för att lägga till en visualisering](assets/visualization-add-to-panel.png)
+
+   * Lägg till en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html)väljer du sedan den visualisering som du vill lägga till.
+
+      ![Tom panel](assets/blank_panel.png)
+
+   * Högerklicka på en befintlig panel i ditt Analysis Workspace-projekt och välj sedan [!UICONTROL **Duplicera visualisering**] eller [!UICONTROL **Kopiera visualisering**].
 
 ## Anpassa visualiseringsinställningar
 
