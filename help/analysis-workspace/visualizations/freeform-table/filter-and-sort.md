@@ -3,9 +3,9 @@ description: Dokumentation som beskriver hur du filtrerar och sorterar tabeller 
 title: Filtrera och sortera tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 4dd5e5248026c39489f3ac4598ea91ff15d95aa4
+source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -26,17 +26,38 @@ Med filter i Analysis Workspace hittar du den viktigaste informationen.
 >
 > Endast dynamiska dimensionsobjekt kan filtreras enligt beskrivningen i det här avsnittet. Statiska dimensionsobjekt kan inte filtreras. Mer information finns i [Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
+### Exkludera snabbt specifika rader från en tabell
+
+Du kan snabbt utesluta vissa rader från tabellen utan att behöva öppna filterdialogrutan.
+
+>[!NOTE]
+>
+>När du utelämnar rader enligt beskrivningen i det här avsnittet, visas en [!UICONTROL **Är inte lika med**] regeln används automatiskt i [**[!UICONTROL Advanced filtering]**](#apply-a-simple-or-advanced-filter) -dialogrutan.
+
+Så här exkluderar du snabbt vissa rader från en friformstabell:
+
+1. Håll pekaren över raden som du vill utesluta och välj sedan x-ikonen.
+
+   Håll ned Skift-tangenten om du vill markera flera rader, eller håll ned Kommando-tangenten (Mac) eller Ctrl-tangenten (Windows) om du vill markera flera rader.
+
+### Använda ett enkelt eller avancerat filter på en tabell
+
 Så här filtrerar du data i frihandstabeller:
 
-1. Håll markören över den kolumn som innehåller de data som du vill filtrera i en friformstabell. <!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. Håll markören över kolumnen som innehåller de data som du vill filtrera. <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. Välj **Filter** -ikonen när den visas.
 
    ![Filterikon i en tabell](assets/table-filter-icon.png)
 
-1. I [!UICONTROL **Sök efter ord eller fras**] anger du ett ord eller en fras som du vill filtrera efter. Endast rader som innehåller det angivna ordet eller den exakta frasen visas.
+   Följande alternativ är tillgängliga:
 
-1. (Valfritt) Om du vill filtrera efter olika villkor eller efter flera villkor väljer du [!UICONTROL **Visa avancerat**].
+   | Alternativ |  -funktion |
+   |---------|----------|
+   | [!UICONTROL **Sök efter ord eller fras**] | Ange ett ord eller en fras som du vill filtrera efter. Endast rader som innehåller det angivna ordet eller den exakta frasen visas. |
+   | [!UICONTROL **Inkludera ospecificerad (ingen)**] | Välj det här alternativet om du vill visa data i tabellen som inte faller inom någon av tabellens dimensioner. <!--what is this?--> |
+
+1. (Valfritt) Om du vill filtrera efter olika villkor eller efter flera villkor väljer du [!UICONTROL **Avancerad filtrering**].
 
    Följande alternativ är tillgängliga
 
