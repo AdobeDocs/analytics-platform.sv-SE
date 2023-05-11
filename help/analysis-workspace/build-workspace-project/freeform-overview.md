@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Översikt över projekt
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1310'
 ht-degree: 3%
 
 ---
@@ -27,12 +27,11 @@ Sidan Projekt innehåller följande information:
 >
 >Vissa kolumner visas inte som standard. Om du vill anpassa kolumnerna som visas klickar du på **Anpassa tabell** icon ![Anpassa tabell](assets/projects-page-customize-columns-icon.png).
 
-
 | Element | Beskrivning |
 |---|---|
 | [Redigera inställningar](/help/analysis-workspace/user-preferences.md) | Hantera inställningar för Analysis Workspace och dess tillhörande komponenter för alla nya projekt eller paneler som du skapar. |
 | [Skapa mapp](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Lägg till en ny mapp eller undermapp i listan över projekt och mappar. |
-| [Skapa projekt](/help/analysis-workspace/home.md) | Starta ett nytt projekt från grunden eller från en [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace). |
+| [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) | Starta ett nytt projekt från grunden. |
 | Visa mer | Visar alternativ för att skapa ett tomt projekt eller ett mobilstyrkort, [visa självstudiekurser](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html), eller [visa versionsinformation](/help/release-notes/latest.md). |
 | Visa mappar och projekt | Välj om du vill visa mappstrukturen för projekt. Mer information finns i [Om mappar i Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Anpassa tabell (ikon) | Här kan du anpassa informationen som visas för varje projekt på sidan Projekt. |
@@ -60,7 +59,7 @@ I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga
 
 | Menyalternativ | Beskrivning |
 |---|---|
-| Projekt | Innehåller vanliga åtgärder för projekthantering, bland annat Ny, Öppna, Spara, Spara som och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Hämta CSV och PDF](/help/analysis-workspace/curate-share/download-send.md) kan du exportera data från arbetsytan. **Projektinformation och inställningar** (se nedan) erbjuder många alternativ för att hantera ditt projekt. |
+| Projekt | Innehåller vanliga åtgärder för projekthantering, inklusive Nytt, Öppna, Spara och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Hämta CSV och PDF](/help/analysis-workspace/curate-share/download-send.md) kan du exportera data från arbetsytan. **Projektinformation och inställningar** (se nedan) erbjuder många alternativ för att hantera ditt projekt. |
 | Redigera | Ångra eller gör om den senaste åtgärden. Rensa alla återställer projektet till en tom startpunkt. |
 | Infoga | Infoga nya paneler eller visualiseringar från den här menyn. Du kan även infoga nya paneler och visualiseringar från den vänstra listen. |
 | [Komponenter](/help/components/overview.md) | Skapa nya filter, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |

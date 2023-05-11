@@ -3,9 +3,9 @@ description: Lär dig hur du skapar ett projekt i Analysis Workspace
 title: Skapa projekt
 feature: CJA Workspace Basics
 role: User, Admin
-source-git-commit: 1c5f0a618e2e95df68ba5598948488b16c9532e6
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,30 +22,14 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
 1. I Adobe Analytics väljer du [!UICONTROL **Arbetsyta**].
 
-1. Välj om du vill skapa ett tomt projekt eller om du vill skapa ett projekt från en mall:
+1. På [!UICONTROL **Arbetsyta**] väljer du [!UICONTROL **Projekt**] på sidans vänstra sida och sedan väljer [!UICONTROL **Skapa projekt**].
 
-   +++Skapa ett tomt projekt
+1. Välj om du vill skapa ett tomt projekt eller ett tomt mobilstyrkort
 
-   1. På [!UICONTROL **Arbetsyta**] väljer du [!UICONTROL **Projekt**] på sidans vänstra sida och sedan väljer [!UICONTROL **Skapa projekt**].
+   * **Tomt projekt** om du planerar att dela analysen från webbläsaren
+   * [**Tomt mobilstyrkort**](/help/mobile-app/curator.md) om du tänker dela med dig av dina analyser från mobilappen Adobe Analytics dashboards.
 
-   1. Välj om du vill skapa ett tomt projekt eller ett tomt mobilstyrkort
-
-      * **Tomt projekt** om du planerar att dela analysen från webbläsaren
-      * [**Tomt mobilstyrkort**](/help/mobile-app/curator.md) om du tänker dela med dig av dina analyser från mobilappen Adobe Analytics dashboards.
-   1. Välj [!UICONTROL **Skapa**].
-
-+++
-
-   +++Skapa ett projekt från en mall
-
-   1. På [!UICONTROL **Arbetsyta**] väljer du [!UICONTROL **Rapporter**] till vänster på sidan.
-
-   1. Sök efter eller navigera till mallen som du vill använda och markera den när den visas.
-
-      En uppsättning standardmallar är tillgängliga som standard. Dessutom kan din organisation ha skapat egna mallar som du kan välja bland.
-
-      <!-- (I don't know if you can create a project from a template in CJA... Might need to delete this section. Also update table in "Projects overview") For more information, see [Get started with Reports & Analytics](/help/analyze/reports-analytics/getting-started.md). -->
-+++
+1. Välj [!UICONTROL **Skapa**].
 
 1. Därefter måste du lägga till paneler, visualiseringar och komponenter i projektet. Lägg först till paneler i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägga till paneler i projektet](#add-panels-to-the-project). Du kan sedan lägga till visualiseringar i alla paneler. Slutligen kan du lägga till komponenter till valfria paneler eller visualiseringar.
 
