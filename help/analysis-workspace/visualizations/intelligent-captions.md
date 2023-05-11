@@ -3,9 +3,9 @@ description: Använd intelligenta bildtexter för att generera insikter på natu
 title: Intelligenta bildtexter
 feature: Visualizations
 role: User, Admin
-source-git-commit: 1474d438e9deafc9d303bff3560ef3ff3aff0ec0
+source-git-commit: c613c313ae2c9c6786370c46fa0a86134014e754
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,10 @@ ht-degree: 0%
 
 Intelligenta bildtexter använder datavetenskap för att ge värdefulla insikter på naturspråket för visualiseringar av arbetsytor. Den första versionen innehåller automatiskt genererade insikter om [Linje](line.md) visualisering. (Övriga visualiseringar följer.)
 
-Analytikerna behöver dessa insikter för att kunna ge kontext till användare som de kanske delar sina projekt med.
-
 Intelligenta bildtexter inriktas på följande:
 
+* Analytiker som behöver berättelser att dela med andra användare. Analytikerna behöver dessa insikter för att kunna ge sina användare kontext.
 * Affärsanvändare som snabbt vill upptäcka högnivåaktiviteter.
-* Analytiker som behöver berättelser att dela med andra användare.
 
 Bildtexter är tillgängliga för alla CJA-användare och kräver ingen särskild behörighet.
 
@@ -34,12 +32,13 @@ Om du vill starta automatiskt genererade bildtexter för en radvisualisering kli
 
 Naturliga språkkunskaper genereras nu.
 
+Om du sparar projektet nu och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från det här projektet.
+
 ## Visa och tolka bildtexter {#view}
 
 Här följer ett exempel på hur bildtexterna kan se ut:
 
 ![Bildtexter](assets/captions.png)
-
 
 ## Kopiera till Urklipp {#copy}
 
@@ -55,7 +54,18 @@ Du kan redigera beskrivningarna, till exempel dölja eller visa en viss kategori
 
 1. Klicka på **[!UICONTROL Apply]**.
 
+Använd samma process för att visa bildtexter.
+
 ## Exportera bildtexter {#export}
 
 Du kan **exportera bildtexter via PDF**, så länge projektet sparas med de bildtexter som skapas.
 
+## Växla av bildtexter {#toggle}
+
+Om du inte vill att intelligenta bildtexter ska genereras kan du inaktivera den här funktionen genom att gå till Visualiseringsinställningarna och avmarkera kryssrutan **[!UICONTROL Show intelligent captions]**.
+
+![bildtextinställningar](assets/toggle-captions.png)
+
+## Ändra ordning på bildtexter {#reorder}
+
+Du kan ändra ordningen på hur bildtexterna visas genom att dra en bildtext till en ny plats.
