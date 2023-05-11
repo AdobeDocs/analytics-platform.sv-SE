@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: 76130aeaee4447a83c2f8feea95371dc2e38bd67
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '849'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **Ta bort rader som innehåller dynamiska dimensioner från en frihandstabell** | I en friformstabell i Analysis Workspace kan du nu snabbt ta bort specifika rader som innehåller dynamiska dimensioner med hjälp av x-ikonen. När du gör det tillämpas automatiskt filterregeln &quot;Är inte lika med&quot;.<p>Tidigare var det enda sättet att ta bort rader som innehöll dynamiska dimensioner att manuellt skapa en regel i filterdialogrutan. [Läs mer](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | Ej tillämpligt | 10 maj 2023 |
 | **Ny knapp för att lägga till en visualisering i en panel** | En ny knapp finns nu längst ned på varje panel i Analysis Workspace, så att du snabbt kan lägga till en visualisering. <p>Tidigare var de enda sätten att lägga till en visualisering på en panel att dra en visualisering från den vänstra listen, duplicera eller kopiera en befintlig visualisering eller skapa en tom panel. [Läs mer](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | Ej tillämpligt | 17 maj 2023 |
 | **Djuplänkning (mobilapp)** | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. | Ej tillämpligt | 17 maj 2023 |
-| **Intelligenta bildtexter** | Förstärk berättandet för användare med naturtrogna språksammanfattningar av en radvisualisering. | 17 maj 2023 | 1 juni 2023 |
+| **Intelligenta bildtexter** | Bättre berättande för användare med naturtrogna sammanfattningar av [!UICONTROL Line] visualisering. | 17 maj 2023 | 1 juni 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,12 @@ AN-316412; AN-317105; AN-318122; AN-317353
 | Meddelande | Meddelande har lagts till eller uppdaterats | Beskrivning |
 | --- | --- | --- |
 | Ej tillämpligt | Ej tillämpligt | Ej tillämpligt |
+
+## EOL-meddelanden (End-of-life) {#eol}
+
+| EOL-produkt eller -funktion | Datum tillagt eller uppdaterat | Beskrivning |
+| --- | --- | --- |
+| **Migrering till autentiseringsuppgifter för AdobeIO OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API-, CJA API- och LiveStream-kunder som använder inloggningsuppgifter för AdobeIO JWT måste migrera till autentiseringsuppgifter för AdobeIO OAuth Server-till-Server med **1 januari 2025**. AdobeIO tillåter inte att nya JWT-autentiseringsuppgifter skapas från och med 1 maj 2024. Kunder som använder JWT måste skapa en ny OAuth Server-till-Server-autentiseringsuppgift eller migrera sina befintliga JWT-autentiseringsuppgifter till en OAuth Server-till-Server-autentiseringsuppgift. Kunderna måste även uppdatera sina klientprogram för att kunna använda de nya autentiseringsuppgifterna för OAuth Server-till-Server. <ul><li>[Migrerar från JWT-autentiseringsuppgifter (Service Account)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Använda de nya autentiseringsuppgifterna för OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Vanliga frågor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul>![](assets/jwt.png) |
 
 {style="table-layout:auto"}
 
