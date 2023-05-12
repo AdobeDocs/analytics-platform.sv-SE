@@ -4,11 +4,9 @@ title: Integrera kundens AI-data med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-hide: true
-hide-from-toc: true
-source-git-commit: adfc2500cfc3811e7ef2798c3a0ee3e9b3425208
+source-git-commit: b56dd36d85cd34179166ad9a6bc45f3f641e9697
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -26,19 +24,19 @@ Kundens AI bygger på individuella beteendedata och profildata för benägenhets
 Kundens AI kan integreras med Customer Journey Analytics (CJA) i den utsträckning som kundens AI-aktiverade datauppsättningar kan utnyttjas i datavyer och rapportering i CJA. Ni kan:
 
 * **Spåra benägenhetspoäng för ett användarsegment över tid**.
-   * Användningsfall: förstå sannolikheten för att kunder i ett visst segment ska konvertera.
+   * Användningsfall: Förstå sannolikheten för att kunder i ett visst segment ska konvertera.
    * Exempel: En marknadsförare i en hotellkedja vill förstå vad sannolikheten är för att en hotellkund ska köpa en showbiljett på hotellets konsertplats.
 * **Analysera vilka lyckade händelser eller attribut som är kopplade till benägenhetspoängen**.
-   * Användningsfall: förstå attributen eller framgångshändelserna i samband med benägenhetspoängen.
+   * Användningsfall: Förstå attribut och framgångshändelser som är kopplade till benägenhetspoängen.
    * Exempel: En marknadsförare i en hotellkedja vill förstå hur inköp av showbiljetter på en konsertplats på ett hotell kopplas till benägenhetspoäng.
 * **Följ anmälningsflödet för kundbenägenhet över olika poängsättningsrundor**.
-   * Användningsfall: förstå människor som ursprungligen var lågbenägna användare och som sedan länge blev högbenägna användare.
+   * Användningsfall: Förstå personer som till en början var lågbenägna användare och som senare blev högbenägna användare.
    * Exempel: En marknadsförare i en hotellkedja vill förstå vilka hotellkunder som inledningsvis identifierades som kunder med låg benägenhet att köpa en showbiljett, men under tiden blev kunderna med stor benägenhet att köpa en showbiljett.
 * **Titta på hur benägenheten är fördelad**.
-   * Användningsfall: förstå fördelningen av benägenhetspoäng för att vara mer exakt när du definierar segment.
+   * Användningsfall: Förstå fördelningen av benägenhetspoäng för att vara mer exakt när du definierar segment.
    * Exempel: En återförsäljare vill göra en viss kampanj för 50 dollar i en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer av sina kunder.
 * **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**.
-   * Användningsfall: spåra en viss kohort över tid.
+   * Användningsfall: Spåra en viss kohort över tid.
    * Exempel: En marknadsförare i en hotellkedja vill följa sin broniseringsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå, över tiden. De ser varje kohorts benägenhet att boka hotellet över tiden.
 
 Så här integrerar du kundens AI-data med CJA:
