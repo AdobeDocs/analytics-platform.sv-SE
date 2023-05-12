@@ -5,7 +5,7 @@ feature: CJA Workspace Basics
 role: User, Admin
 source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
