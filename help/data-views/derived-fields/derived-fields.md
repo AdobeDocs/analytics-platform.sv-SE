@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: cb63cd52a1618f2e1048f2779c4e6c0317e94f64
+source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
 workflow-type: tm+mt
-source-wordcount: '2914'
+source-wordcount: '2902'
 ht-degree: 3%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 3%
 # Härledda fält
 
 {{release-limited-testing}}
-
->[!NOTE]
->
->Väntar på slutgiltiga uppdateringar kan du se [!UICONTROL Custom field] i stället för [!UICONTROL Derived field] över hela användargränssnittet.
-
 
 Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera det härledda fältet som en komponent i [Datavy](../data-views.md).
 
