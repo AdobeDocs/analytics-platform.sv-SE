@@ -3,9 +3,9 @@ description: Använd intelligenta bildtexter för att generera insikter på natu
 title: Intelligenta bildtexter
 feature: Visualizations
 role: User, Admin
-source-git-commit: c613c313ae2c9c6786370c46fa0a86134014e754
+source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-Intelligenta bildtexter använder datavetenskap för att ge värdefulla insikter på naturspråket för visualiseringar av arbetsytor. Den första versionen innehåller automatiskt genererade insikter om [Linje](line.md) visualisering. (Övriga visualiseringar följer.)
+Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för arbetsytevisualiseringar. Den första versionen innehåller automatiskt genererade insikter om [Linje](line.md) visualisering. (Övriga visualiseringar följer.)
 
 Intelligenta bildtexter inriktas på följande:
 
@@ -30,7 +30,7 @@ Om du vill starta automatiskt genererade bildtexter för en radvisualisering kli
 
 ![starta intelligenta bildtexter](assets/intell-caps-1.png)
 
-Naturliga språkkunskaper genereras nu.
+Naturliga språkkunskaper genereras nu. Bildtexter genereras varje gång de underliggande markerade data ändras i tabellen som styr visualiseringen. Om det finns flera mätvärden i tabellen genereras bildtexter bara för det första mätvärdet eller det mätvärde som användaren har valt.
 
 Om du sparar projektet nu och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från det här projektet.
 
@@ -65,7 +65,3 @@ Du kan **exportera bildtexter via PDF**, så länge projektet sparas med de bild
 Om du inte vill att intelligenta bildtexter ska genereras kan du inaktivera den här funktionen genom att gå till Visualiseringsinställningarna och avmarkera kryssrutan **[!UICONTROL Show intelligent captions]**.
 
 ![bildtextinställningar](assets/toggle-captions.png)
-
-## Ändra ordning på bildtexter {#reorder}
-
-Du kan ändra ordningen på hur bildtexterna visas genom att dra en bildtext till en ny plats.

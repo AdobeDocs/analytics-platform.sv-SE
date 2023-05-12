@@ -4,9 +4,9 @@ title: Integrera kundens AI-data med CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b56dd36d85cd34179166ad9a6bc45f3f641e9697
+source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Kundens AI kan integreras med Customer Journey Analytics (CJA) i den utsträckni
 
 * **Spåra benägenhetspoäng för ett användarsegment över tid**.
    * Användningsfall: Förstå sannolikheten för att kunder i ett visst segment ska konvertera.
-   * Exempel: En marknadsförare i en hotellkedja vill förstå vad sannolikheten är för att en hotellkund ska köpa en showbiljett på hotellets konsertplats.
+   * Exempel: En marknadsförare i en hotellkedja vill förstå sannolikheten för att en hotellkund ska köpa en showbiljett på hotellets konsertplats.
 * **Analysera vilka lyckade händelser eller attribut som är kopplade till benägenhetspoängen**.
    * Användningsfall: Förstå attribut och framgångshändelser som är kopplade till benägenhetspoängen.
    * Exempel: En marknadsförare i en hotellkedja vill förstå hur inköp av showbiljetter på en konsertplats på ett hotell kopplas till benägenhetspoäng.
@@ -37,7 +37,7 @@ Kundens AI kan integreras med Customer Journey Analytics (CJA) i den utsträckni
    * Exempel: En återförsäljare vill göra en viss kampanj för 50 dollar i en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer av sina kunder.
 * **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**.
    * Användningsfall: Spåra en viss kohort över tid.
-   * Exempel: En marknadsförare i en hotellkedja vill följa sin broniseringsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå, över tiden. De ser varje kohorts benägenhet att boka hotellet över tiden.
+   * Exempel: En marknadsförare i en hotellkedja vill följa sin broniseringsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå, över tiden. De ser varje kohorts benägenhet att boka hotellet över tid.
 
 Så här integrerar du kundens AI-data med CJA:
 
