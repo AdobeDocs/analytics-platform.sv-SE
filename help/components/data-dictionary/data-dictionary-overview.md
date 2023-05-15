@@ -4,7 +4,7 @@ title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 9f1a96308fce7fb827cba43833df96098f05ef93
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -16,6 +16,8 @@ ht-degree: 0%
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö.
 
 Analysadministratörer ansvarar för att strukturera information om varje komponent i Data Dictionary så att den blir tillgänglig för användarna.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
 
 ## Fördelar för användare
 
