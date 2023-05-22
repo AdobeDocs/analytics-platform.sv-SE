@@ -1,9 +1,9 @@
 ---
-description: Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel"Dagens timme" eller"Veckodag".
+description: Tidsdelning innebär att tidsstämpeln för insamlade händelser delas i mer meningsfulla dimensioner, till exempel"Dagens timme" eller"Veckodag".
 title: Tidsdelning av dimensioner
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Tidsdelningsdimensioner i Analysis Workspace
 
-Tidsdelning innebär att tidsstämpeln för insamlade träffar delas i mer meningsfulla dimensioner, till exempel&quot;Dagens timme&quot; eller&quot;Veckodag&quot;.
+Tidsdelning innebär att tidsstämpeln för insamlade händelser delas i mer meningsfulla dimensioner, till exempel&quot;Dagens timme&quot; eller&quot;Veckodag&quot;.
 
 Tidsdelningsdimensionerna baseras på datavyns tidszon. Dessa dimensioner finns i Analysis Workspace och kan ge svar på följande frågor:
 

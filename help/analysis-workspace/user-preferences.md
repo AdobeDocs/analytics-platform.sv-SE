@@ -4,7 +4,7 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '3132'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | **[Kolumn](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** |  |  |
 |  | Radbryt rubriktext | Gör att du kan radbryta rubriktexten i frihandstabeller så att rubrikerna blir mer läsbara och tabellerna mer delbara. Detta är användbart för .pdf-återgivning och för mått med långa namn. Aktiverat som standard. |
 |  | Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive [!UICONTROL Include None] alternativ. |
-|  | Visa totalsummor | Denna summa representerar alla träffar som har samlats in, ibland kallade&quot;datavysumma&quot;. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar filtervillkoren visas. Summan stöds inte för tabeller eller uppdelningar med [statiska rader](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
+|  | Visa totalsummor | Denna summa representerar alla händelser som har samlats in, ibland kallat&quot;total datavy&quot;. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas. Summan stöds inte för tabeller eller uppdelningar med [statiska rader](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
 |  | Visa miniatyrdiagram | Visa eller dölj linjediagram längst ned i diagrammet. När teckenförklaringen är dold ändras den inte längre till att referera till raderna visuellt. |
 |  | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
 |  | Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Vi kan visa procenttal större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna kan växa i för stora bredder. |
@@ -154,7 +154,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 |  | 100 % staplad | Den här inställningen för staplade ytor, staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. <p>Mer information finns i [Stolpstreck och stapel](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Antal fickor | Välj antalet dataintervall (bucket) i visualiseringen. Det högsta antalet bucklor är 50. <p>Mer information finns i [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
-|  | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Gå in på</li><li>Besökare</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per besökare, sidvyer för besök eller sidvyer per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
+|  | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Gå in på</li><li>Besökare</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per besökare, sidvyer för besök eller sidvyer per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
 | **[Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Värde | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Procentuell ändring</li><li>Rådifferens</li></ul> |
 |  | Procenttal | Visar värden i procent för visualiseringar av sammanfattningsändringar. |

@@ -2,9 +2,9 @@
 title: STÖD, ECID, AACUSTOMID och Analytics Source Connector
 description: Läs om hur Analytics Source Connector hanterar Adobe Analytics identitetsfält.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: a8f8d14eb854029d6245932a321cf08dfb3cd7e3
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe Analytics data innehåller flera identitetsfält. Tre viktiga identitetsf�
 
 Adobe Analytics ID (AAID) är den primära enhetsidentifieraren i Adobe Analytics och finns garanterat för varje händelse som skickas via Analytics Source Connector. AAID kallas ibland för &quot;Legacy Analytics ID&quot; eller `s_vi` cookie-id. Ett AID skapas dock även om `s_vi` cookie finns inte. AAID representeras av `post_visid_high/post_visid_low` kolumner i [Adobe Analytics dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en#columns%2C-descriptions%2C-and-data-types).
 
-I Analytics Source Connector omvandlas AID till `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. AAID-fältet för en viss händelse innehåller en enda identitet som kan vara en av flera olika typer enligt beskrivningen i [Åtgärdsordning för analys-ID:n](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (Inom en hel rapportserie kan AAID innehålla en blandning av typer för olika händelser. Typen för varje träff visas i `post_visid_type` i Analytics-dataflöden.) Se även: [Referens för datakolumn](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en).
+I Analytics Source Connector omvandlas AID till `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. AAID-fältet för en viss händelse innehåller en enda identitet som kan vara en av flera olika typer enligt beskrivningen i [Åtgärdsordning för analys-ID:n](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (Inom en hel rapportserie kan AAID innehålla en blandning av typer för olika händelser. Typen för varje händelse anges i `post_visid_type` i Analytics-dataflöden.) Se även: [Referens för datakolumn](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en).
 
 ## ECID
 

@@ -4,7 +4,7 @@ keywords: bortfall och filter;filter i bortfallsanalys;jämför filter i bortfal
 title: Använda filter i bortfallsanalys
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 >[!IMPORTANT]
 >
->Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontext-utrullning måste filter som används som kontrollpunkter vara besök eller träffbaserade filter. Med en kontextutfällning måste filter som används som kontrollpunkt vara träffbaserade. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
+>Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontext-utrullning måste filter som används som kontrollpunkter vara besök eller händelsebaserade filter. Med en kontextutfällning för besök måste filter som används som kontrollpunkt vara händelsebaserade filter. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
 
 * Använda ett besöksbaserat filter som kontaktyta inuti en besökarsammanhangsbaserad utfallsvisualisering
 * Använda ett besöksbaserat filter som kontaktyta i en snabbutfallsvisualisering

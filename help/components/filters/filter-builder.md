@@ -1,18 +1,18 @@
 ---
-description: I filterverktyget finns en arbetsyta där du kan dra och släppa metriska Dimensioner, filter och händelser för att filtrera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa filter som identifierar besökares attribut och åtgärder i olika besök och sidträffar.
+description: I filterverktyget finns en arbetsyta där du kan dra och släppa metriska Dimensioner, filter och händelser för att filtrera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa filter som identifierar besökares attribut och åtgärder vid besök och händelser.
 title: Skapa filter
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1948'
 ht-degree: 1%
 
 ---
 
 # Filter Builder
 
-The [!UICONTROL Filter builder] Med kan du skapa enkla eller komplexa filter som identifierar besökarattribut och -åtgärder över besök och sidträffar. Det ger en arbetsyta där du kan dra och släppa mått, händelser eller andra filter för att filtrera besökare baserat på hierarkilogik, regler och operatorer.
+The [!UICONTROL Filter builder] Med kan du skapa enkla eller komplexa filter som identifierar besökarattribut och åtgärder för besök och händelser. Det ger en arbetsyta där du kan dra och släppa mått, händelser eller andra filter för att filtrera besökare baserat på hierarkilogik, regler och operatorer.
 
 Mer information om hur du skapar snabbfilter som bara gäller för det projekt där de skapas finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 

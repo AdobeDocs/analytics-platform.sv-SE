@@ -4,7 +4,7 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -112,10 +112,10 @@ Tänk på följande när du använder det här alternativet:
 * **[!UICONTROL Limit to first/last occurrence]** räknar endast den första/sista förekomsten i serien. Alla andra förekomster av **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** villkor ignoreras.
 * Om den används med en **[!UICONTROL Starts with]** Flöde, inkluderas bara den första förekomsten som matchar startvillkoret.
 * Om den används med en **[!UICONTROL Ends with]** Flöde, inkluderas endast den sista förekomsten som matchar slutvillkoret.
-* Serien som används skiljer sig åt beroende på behållaren. Om du använder **[!UICONTROL Visit]** -behållaren, serien träffar blir sessionen. Om du använder **[!UICONTROL Visitor]** -behållaren kommer alla träffar för en viss användare i det angivna datumintervallet.
+* Serien som används skiljer sig åt beroende på behållaren. Om du använder **[!UICONTROL Visit]** -behållaren kommer händelserierna att vara sessionen. Om du använder **[!UICONTROL Visitor]** container, kommer alla händelser att vara händelser för en viss användare i det angivna datumintervallet.
 * The **[!UICONTROL Limit to first/last occurrence]** kan konfigureras i de avancerade inställningarna när du använder ett måttobjekt eller ett Dimension-objekt i fälten &quot;Börjar med&quot; eller &quot;Slutar med&quot;.
 
-Exempelserie med träffar:
+Exempelserie med händelser:
 
 Hem > Produkter > Lägg till i kundvagn > Produkter > Lägg till i kundvagn > Fakturering > Orderbekräftelse
 
@@ -125,19 +125,19 @@ Hem > Produkter > Lägg till i kundvagn > Produkter > Lägg till i kundvagn > Fa
 * [!UICONTROL Page] målningsdimension
 * [!UICONTROL Visit] container
 
-Om Begränsa till första/sista förekomsten är inaktiverat räknas den här enskilda serien träffar som 2 förekomster av Lägg till i kundvagnen.
+Om Begränsa till första/sista förekomsten är inaktiverat räknas den här enskilda serien med händelser som 2 förekomster av Lägg till i kundvagnen.
 Förväntat flöde: &quot;Lägg i kundvagnen&quot; (2) —> &quot;Produkter&quot; (1) -> &quot;Fakturering&quot; (1)
 
 Om alternativet Begränsa till första/sista förekomsten är aktiverat inkluderas endast den första förekomsten av Lägg till i kundvagnen i analysen.
 Förväntat flöde: &quot;Lägg i kundvagnen&quot; (1) —> &quot;Produkter&quot; (1)
 
-### Tänk på samma serie träffar men med följande inställningar:
+### Tänk på samma händelsesekvens men använd följande inställningar:
 
 * Slutar med [!UICONTROL Add to cart] (Dimension)
 * [!UICONTROL Page] målningsdimension
 * [!UICONTROL Visit] container
 
-If **[!UICONTROL Limit to first/last occurrence]** är *inaktiverad*, kommer den här serien träffar att räkna till två förekomster av&quot;Lägg i kundvagnen&quot;.
+If **[!UICONTROL Limit to first/last occurrence]** är *inaktiverad*, kommer den här enstaka serien händelser att räkna till 2 förekomster av&quot;Lägg i kundvagnen&quot;.
 Förväntat flöde: &quot;Produkter&quot; (2) &lt;— &quot;Lägg i kundvagn&quot; (2)
 
 Om **[!UICONTROL Limit to first/last occurrence]** är *aktiverad*, bara den sista förekomsten av [!UICONTROL Add to cart] skulle ingå i analysen.

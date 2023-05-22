@@ -2,7 +2,7 @@
 title: Jämför databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner
 description: Förstå skillnaderna i databehandling för de olika rapportfunktionerna
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 4%
@@ -41,7 +41,7 @@ I tabellen nedan definieras terminologi för de olika typer av bearbetningslogik
 | Logik på träffnivå | Logik som tillämpas rad för rad. | Exempel: Bearbetningsregler, VISTA, vissa regler för marknadsföringskanaler. |
 | Logik på besöksnivå | Logik som tillämpas på besöksnivån. | Exempel: Besök och sessionsdefinition. |
 | Logik på besökarnivå | Logik som används på besökarnivå. | Exempel: Sammanfogning av besökare över olika enheter och kanaler. |
-| Segmentlogik (filter) | Utvärdering av regler för träffs-/besökssegment (händelse/session/person) (filter). | Exempel: Folk som köpte röda skor. |
+| Segmentlogik (filter) | Utvärdering av regler för event/besök/besökare (händelse/session/person). | Exempel: Folk som köpte röda skor. |
 | Beräknade värden | Utvärdering av kundskapade anpassade mätvärden som kan baseras på komplexa formler, inklusive segment och filter. | Exempel: Antal personer som köpt röda skor. |
 | Attributionslogik | Logik för att beräkna attribuering. | Exempel: eVar beständighet. |
 | Komponentinställningar | Använda anpassningar av mätvärden eller dimensioner, som attribuering, beteende, format med mera | Exempel: värdepaketering för att kombinera numeriska värden baserade på ett intervall |

@@ -4,7 +4,7 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 7%
@@ -72,7 +72,7 @@ Information om tillgängliga förfalloinställningar.
 * **Session**: Upphör att gälla efter en viss session. Standardförfallotid.
 * **Person**: Upphör att gälla i slutet av rapporteringsfönstret.
 * **Anpassad tid**: Upphör att gälla efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. När du använder tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
-* **Mått**: När det här måttet visas i en träff upphör det beständiga värdet i dimensionen omedelbart att gälla. Du kan använda valfritt mätvärde som förfallodatum för den här dimensionen. Det här förfalloalternativet är bara tillgängligt för allokeringsinställningarna Original och Senaste.
+* **Mått**: När det här måttet visas i en händelse upphör det beständiga värdet i dimensionen omedelbart att gälla. Du kan använda valfritt mätvärde som förfallodatum för den här dimensionen. Det här förfalloalternativet är bara tillgängligt för allokeringsinställningarna Original och Senaste.
 
 ## [!UICONTROL Binding Dimension]
 

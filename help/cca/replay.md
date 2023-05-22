@@ -4,7 +4,7 @@ description: Förstå begreppet"replay" i flerkanalsanalys
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Flerkanalsanalys gör att data kan skickas på en viss anslutning:
 
-* **Live-syn**: CCA försöker sy ihop varje träff när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
+* **Live-syn**: CCA försöker sammanfoga varje händelse när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
 * **Spela upp**: CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. I det här steget sammanfogas nya enheter till anslutningen. Adobe har två repriser:
    * Dagligen: Data spelas upp varje dag med ett 24-timmarsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
    * Vecka: Data spelas upp en gång i veckan med ett 7-dagars uppslagsfönster. Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Data som är yngre än en vecka sammanfogas dock inte.
@@ -28,7 +28,7 @@ CCA försöker sammanfoga varje händelse när den samlas till kända enheter oc
 
 *Data så som de visas den dag de samlas in:*
 
-| Tidsstämpel | Beständigt ID för webbdatauppsättning | Övergångs-ID för webbdatauppsättning | ID för kundtjänstperson | Använt person-ID | Förklaring av träffen | Personmått (kumulativt) |
+| Tidsstämpel | Beständigt ID för webbdatauppsättning | Övergångs-ID för webbdatauppsättning | ID för kundtjänstperson | Använt person-ID | Förklaring av händelsen | Personmått (kumulativt) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `246` | Bob besöker din webbplats på sin dator, oautentiserad | `1` (246) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob loggar in på skrivbordet | `2` (246 och Bob) |
@@ -48,7 +48,7 @@ Med regelbundna intervall (en gång i veckan eller en gång om dagen beroende p�
 
 *Samma data efter replay:*
 
-| Tidsstämpel | Beständigt ID för webbdatauppsättning | Övergångs-ID för webbdatauppsättning | ID för kundtjänstperson | Använt person-ID | Förklaring av träffen | Personmått (kumulativt) |
+| Tidsstämpel | Beständigt ID för webbdatauppsättning | Övergångs-ID för webbdatauppsättning | ID för kundtjänstperson | Använt person-ID | Förklaring av händelsen | Personmått (kumulativt) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `Bob` | Bob besöker din webbplats på sin dator, oautentiserad | `1` (Bob) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob loggar in på skrivbordet | `1` (Bob) |

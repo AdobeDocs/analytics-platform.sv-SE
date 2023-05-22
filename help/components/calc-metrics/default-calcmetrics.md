@@ -3,7 +3,7 @@ description: Adobe tillhandahåller olika beräknade värden som du kan använda
 title: Standardberäknade värden
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 
 | Namn på beräknat mätvärde |  -funktion | Formel |
 |---------|----------|---------|
-| Studsfrekvens | Andelen besök som innehöll exakt en träff jämfört med antalet besök på den sidan. Detta kan hjälpa dig att förstå vilka dimensionsobjekt som har den högsta studsfrekvensen eller att se en sammanlagd totalstuds för din webbplats över tiden. | `[Bounces] / [Entries]` |
+| Studsfrekvens | Andelen besök som innehöll exakt en händelse jämfört med antalet besök på den sidan. Detta kan hjälpa dig att förstå vilka dimensionsobjekt som har den högsta studsfrekvensen eller att se en sammanlagd totalstuds för din webbplats över tiden. | `[Bounces] / [Entries]` |
 | Intäkter/besökare | Det genomsnittliga intäktsbelopp som genereras av varje enskild besökare på webbplatsen. | `[Revenue] / [Unique Visitors]` |
 | Beställningar/besökare | Genomsnittligt antal order eller transaktioner som genererats av varje enskild besökare på platsen | `[Orders] / [Unique Visitors]` |
 | Intäkter/besök | Den genomsnittliga intäkten från ett enda besök på webbplatsen. | `[Revenue] / [Visits]` |

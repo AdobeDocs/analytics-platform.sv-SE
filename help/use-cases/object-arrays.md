@@ -4,7 +4,7 @@ description: Lär dig hur CJA rapporterar om datahierarkier.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: afc4dfd808b12be869edbd5e93a4069b93488739
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -17,9 +17,9 @@ Vissa plattformsscheman kan ha objektarrayer. CJA stöder inmatning och rapporte
 
 I tidigare versioner av Adobe Analytics utfördes den här funktionen med `products` variabel. Det var en sammanfogad sträng avgränsad med semikolon (`;`) för att separera olika delar av en produkt, medan kommatecken (`,`) avgränsade produkter. Den var den enda variabeln med begränsat stöd för&quot;objektarrayer&quot;. Multivärdesvariabler som listvariabler kan ha stöd för motsvarande arrayer, men de kan inte ha stöd för &quot;objektarrayer&quot;. CJA bygger vidare på detta koncept genom att ha stöd för godtyckligt djupa hierarkier i en enda datarad, en funktion som inte finns i någon tidigare version av Adobe Analytics.
 
-## Samma träffexempel
+## Exempel på samma händelse
 
-Följande träff är ett JSON-objekt som representerar ett köp av en kund gjord av en tvättmaskin och torktumlare.
+Följande händelse är ett JSON-objekt som representerar ett köp som kunden gjort av en tvättmaskin och torktumlare.
 
 ```json
 {
@@ -81,9 +81,9 @@ När du skapar en datavy är följande mått och mått tillgängliga (baserat p�
    * product: garanti
    * product: garanti: omsättning
 
-### Samma träffexempel (rapporteringsbeteende)
+### Exempel på samma händelse (rapporteringsbeteende)
 
-Med hjälp av bara träffen ovan visas Workspace-rapporter med mått och måttkombinationer i följande tabeller.
+I följande tabeller visas Workspace-rapporter med vissa mått- och måttkombinationer med hjälp av händelsen ovan.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ Om du bara vill rapportera garantiintäkter ser ditt projekt ut ungefär så hä
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA tittar på de här delarna av träffen för att generera rapporten:
+CJA tittar på de här delarna av händelsen för att generera rapporten:
 
 ```diff
 {

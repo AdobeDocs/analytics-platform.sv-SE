@@ -3,7 +3,7 @@ description: Hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan visa två summor:
 
-* **[!UICONTROL Grand Total]** (antal grå &#39;utanför&#39;) - det här totala antalet representerar alla träffar som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar filtervillkoren visas.
+* **[!UICONTROL Grand Total]** (grå &#39;out of&#39;-tal) - den här summan representerar alla händelser som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas.
 * **[!UICONTROL Table Total]** (svart tal) - den här summan är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive [!UICONTROL Include None] alternativ.
 
 ![](assets/total-row.png)

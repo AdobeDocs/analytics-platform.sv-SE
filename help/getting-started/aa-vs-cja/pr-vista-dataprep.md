@@ -1,13 +1,13 @@
 ---
 title: Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep för Analytics Source Connector
 description: Läs mer om dataomvandling med bearbetningsregler och VISTA jämfört med Data Prep
-source-git-commit: f6b8c5f1e8e82d0eb856b5cfed63b72c7ecfe3db
+exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 
 ---
-
 
 # Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep
 
@@ -27,7 +27,6 @@ Data som samlas in av och lagras i Adobe Analytics kan omformas antingen med bea
 
 Data Prep har korsning med [klassificeringar](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=en) i vissa situationer.
 
-I ett avgränsat fält kan du till exempel använda Data Prep för att dela upp fältet i flera enskilda fält utan att använda klassificeringar. I allmänhet är klassificeringar ett sätt att lägga till metadata i ett fält genom att överföra en uppslagsfil som tillhandahålls utanför strömmen med inkommande Analytics-träffar.
+I ett avgränsat fält kan du till exempel använda Data Prep för att dela upp fältet i flera enskilda fält utan att använda klassificeringar. I allmänhet är klassificeringar ett sätt att lägga till metadata i ett fält genom att överföra en uppslagsfil som tillhandahålls utanför strömmen med inkommande Analytics-händelser.
 
 Du kan till exempel överföra en klassificeringsfil som grupperar SKU:er i&quot;storlek&quot;,&quot;märke&quot;,&quot;färg&quot; osv. En annan skillnad mellan klassificeringar och Data Prep är att klassificeringar tillämpas på data _både historiskt och framåt_. Datapruppmappningar tillämpas å andra sidan _vidarebefordra_ till data från den tidpunkt då mappningen skapades.
-

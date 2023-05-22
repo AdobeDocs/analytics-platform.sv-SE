@@ -3,7 +3,7 @@ description: Lär dig hur du anger kontaktytorna för att skapa en flerdimension
 title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Du kan till och med lägga till filter i en kontaktyta. Du kanske vill jämföra
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
-Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per händelse, till exempel products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
 1. Dra en [!UICONTROL Fallout] visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
 
@@ -42,7 +42,7 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
 
    ![](assets/multiple_obj_touchpoint.png)
 
-1. Du kan också **begränsa enskilda kontaktytor till nästa träff** (till skillnad från&quot;finally&quot;) i banan. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
+1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från&quot;finally&quot;) i banan. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
 
    ![](assets/next-hit-eventually.png)
 
@@ -50,11 +50,11 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Evental sökväg </p> <p>(Standard) </p> </td> 
-   <td colname="col2"> <p>Besökare räknas som"så småningom" landar på nästa sida i banan, men inte nödvändigtvis på nästa träff. </p> </td> 
+   <td colname="col2"> <p>Besökare räknas som"så småningom" landar på nästa sida i banan, men inte nödvändigtvis på nästa händelse. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Nästa träff </p> </td> 
-   <td colname="col2"> <p>Besökare räknas som kommer att landa på nästa sida i banan vid nästa träff. </p> </td> 
+   <td colname="col2"> <p>Besökare räknas som kommer att landa på nästa sida i banan vid nästa händelse. </p> </td> 
   </tr> 
  </tbody> 
 </table>

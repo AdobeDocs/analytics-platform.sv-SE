@@ -4,7 +4,7 @@ title: Snabbfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Så här skapar du ett snabbfilter:
       >
       > Tänk på följande när du skapar ett snabbfilter med ad hoc-funktioner (dra och släpp):
       > * Följande komponenttyper stöds inte: beräknade värden och dimensioner samt mätvärden som du inte kan skapa filter utifrån.
-      > * För alla dimensioner och händelser skapar Analysis Workspace&quot;exists&quot;-träfffilter. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
+      > * För fullständiga dimensioner och händelser skapar Analysis Workspace händelsefilter för &quot;finns&quot;. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
       > * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i filtersläppzonen konverteras den automatiskt till filtret &quot;does not exist&quot; så att det behandlas korrekt vid filtrering.
 
 
