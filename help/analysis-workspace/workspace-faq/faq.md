@@ -3,7 +3,7 @@ description: Vanliga frågor om arbetsytan och felsökningstips.
 title: Frågor och svar
 feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
-source-git-commit: e5ae592c6765638e26ee5252f458e82af9d24e44
+source-git-commit: 7086224bdbdfe3ae05fce95a13491f430e79b8c6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 45%
@@ -18,7 +18,7 @@ ht-degree: 45%
 | **Vilka är kraven för administration och åtkomst för Analysis Workspace?** | Se [Administrationskrav](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
 | **Kommer Analysis Workspace att påverka datainsamlingen?** | Eftersom Analysis Workspace är ett rapportverktyg påverkar det inte datainsamlingen. Du kan dra komponenter till ett projekt för att se vad som fungerar utan att oroa dig för följderna. Dra olika kombinationer av mått och mätvärden till Workspace-projektet för att se vad som är tillgängligt för dig. Om du av misstag drar en ogiltig komponent till Workspace-projektet eller vill gå bakåt ett steg trycker du på Ctrl+Z (Windows) eller Kommando+Z (Mac) för att ångra den senaste åtgärden. Du kan också börja från början genom att klicka på *[!UICONTROL Project] > [!UICONTROL New]* i den övre vänstra menyn. |
 | **Hur implementerar jag Analysis Workspace?** | Ingen särskild implementering krävs. Analysis Workspace är tillgängligt för alla företag i Customer Journey Analytics. Standardbehörigheter för innehåll (t.ex. projektkomponenter) gäller, och för att strukturera och dela projekt. Se [Krav för administration och åtkomst](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| **Hur kan jag optimera Analysis Workspace prestanda?** | Se [Optimera prestanda](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
+| **Hur kan jag optimera Analysis Workspace prestanda?** | Se [Optimera prestanda](/help/admin/optimizing-performance.md). |
 
 ## Felsökning
 

@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Översikt över projekt
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
+source-git-commit: 7086224bdbdfe3ae05fce95a13491f430e79b8c6
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 3%
@@ -64,7 +64,7 @@ I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga
 | Infoga | Infoga nya paneler eller visualiseringar från den här menyn. Du kan även infoga nya paneler och visualiseringar från den vänstra listen. |
 | [Komponenter](/help/components/overview.md) | Skapa nya filter, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |
 | [Dela](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratera, dela och schemalägg PDF/CSV-projekt till mottagare i organisationen. |
-| Hjälp om  | Få tillgång till hjälpdokumentation, videor och analyser [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för arbetsytetips och [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om arbetsytan och faktorer som påverkar projektet [prestanda](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
+| Hjälp om  | Få tillgång till hjälpdokumentation, videor och analyser [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för arbetsytetips och [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om arbetsytan och faktorer som påverkar projektet [prestanda](/help/admin/optimizing-performance.md). |
 | Dela-knapp eller ägare | Om du är i en egen eller Redigera för projektet ger knappen Dela i det övre högra hörnet tillgång till ett klick för att hantera projektmottagarna. Om du har en dubblett- eller vyroll för projektet visas projektägarens namn. |
 
 ### Projektinformation och inställningar {#info-settings}

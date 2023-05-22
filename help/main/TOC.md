@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
+source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '888'
 ht-degree: 30%
 
 ---
@@ -177,7 +177,6 @@ ht-degree: 30%
 
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)
-      + [Optimera prestanda för Analysis Workspace](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Felmeddelanden](../analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar i Analysis Workspace](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
@@ -197,6 +196,7 @@ ht-degree: 30%
 + Komponenter {#cja-components}
    + [Komponenter – översikt](../components/overview.md)
    + [Lägga till komponentbeskrivningar](../components/add-component-descriptions.md)
+
    + Anteckningar {#annotations}
       + [Översikt över anteckningar](../components/annotations/overview.md)
       + [Skapa anteckningar](../components/annotations/create-annotations.md)
@@ -213,6 +213,7 @@ ht-degree: 30%
       + [Tidsdelning av dimensioner](../components/dimensions/time-parting-dimensions.md)
       + [Dimensioner med mycket hög kardinalitet](../components/dimensions/high-cardinality.md)
    + [Mätvärden](../components/apply-create-metrics.md)
+
    + Filter {#cja-filters}
       + [Översikt över filter](../components/filters/filters-overview.md)
       + [Skapa filter](../components/filters/create-filters.md)
@@ -252,12 +253,20 @@ ht-degree: 30%
       + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
       + [Redigera komponentposter i Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Övervaka dataordlistans hälsa](../components/data-dictionary/monitor-data-dictionary-health.md)
+
+
+
+
+
+
+
 + Kontrollpaneler för analyser {#cja-dashboards}
    + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
    + [Läraruppgifter](../mobile-app/curator.md)
    + [Skapa ett mobilstyrkort](../mobile-app/create-scorecard.md)
    + [Konfigurera chefer för att använda kontrollpaneler](../mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
+
 + Report Builder {#cja-reportbuilder}
    + [Översikt över Report Builder](../report-builder/report-buider-overview.md)
    + [Konfigurera Report Builder](../report-builder/report-builder-setup.md)
@@ -291,6 +300,7 @@ ht-degree: 30%
 
 + Användningsexempel {#cja-usecases}
    + [Användningsexempel i Customer Journey Analytics](../use-cases/cja-usecases.md)
+
    + Google Analytics data {#ga}
       + [Migrera data från Google Analytics till CJA - översikt](../use-cases/ga/overview.md)
       + [Infoga Google Analytics historiska data i plattformen](../use-cases/ga/backfill.md)
@@ -313,11 +323,16 @@ ht-degree: 30%
    + Komplexa data {#complex-data}
       + [Använda arrayer med objekt](../use-cases/object-arrays.md)
 
+
+
+
+
+
 + Administrering {#cja-admin}
    + [Åtkomstkontroll](../admin/cja-access-control.md)
    + [Visa och hantera användning](../admin/estimate-usage.md)
    + [Borttagningskonsekvenser](../admin/cja-deletion.md)
-   + [Optimera CJA-prestanda](../admin/cja-performance.md)
+   + [Optimera CJA-prestanda](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
