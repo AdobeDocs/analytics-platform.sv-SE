@@ -4,7 +4,7 @@ description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
+source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 6%
@@ -123,6 +123,8 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 1. (Valfritt) Om du vill finjustera listan ytterligare kan du sortera komponentlistan enligt beskrivningen i [Sortera komponentlistan](#sort-the-component-list).
 
 ### Sortera komponentlistan
+
+{{release-limited-testing-section}}
 
 1. (Valfritt) Tillämpa eventuella filter på komponentlistan enligt beskrivningen i [Filtrera komponentlistan](#filter-the-component-list).
 
