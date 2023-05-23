@@ -2,9 +2,9 @@
 title: Hantera filter
 description: Lär dig hantera filter i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ Så här delar du ett filter:
 
 1. Klicka på **[!UICONTROL Share]**.
 
-1. Om du är administratör kan du välja Alla eller välja Grupper och Användare i organisationen. Som icke-administratör kan du bara se enskilda användare. Använd sökfältet för att söka efter grupper eller användare. Klicka på **[!UICONTROL Share]**. Ikonen Delad visas bredvid filtret: ![](assets/share_icon.png)
+1. Om du är administratör kan du välja Alla eller välja Grupper och Användare i organisationen. Som icke-administratör kan du bara se enskilda användare. Använd sökfältet för att söka efter grupper eller användare. Klicka på **[!UICONTROL Share]**. Ikonen Delad visas bredvid filtret: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. Du kan filtrera efter filter som delas med dig genom att gå till Filter > Andra filter > Delade med mig.
 

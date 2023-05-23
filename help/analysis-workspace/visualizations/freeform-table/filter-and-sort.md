@@ -3,9 +3,9 @@ description: Dokumentation som beskriver hur du filtrerar och sorterar tabeller 
 title: Filtrera och sortera tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -70,13 +70,13 @@ Så här filtrerar du data i frihandstabeller:
 
 1. Välj [!UICONTROL **Använd**] för att filtrera data.
 
-   The **Filter** icon ![Filtrerad tabell med blå filterikon](assets/table-filter-blue-icon.png) blir blå när ett filter används i tabellen.
+   The **Filter** icon ![Filtrerad tabell med blå filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) blir blå när ett filter används i tabellen.
 
 ## Sortera tabeller
 
 Du kan sortera data i en frihandstabell efter en valfri kolumn i Analysis Workspace som är en Dimension eller ett mått.
 
-En nedåtpil ![Ikonen nedpil, sorterad tabellkolumn](assets/table-sort-arrow-icon.png) är synlig i kolumnrubriken som data sorteras efter.
+En nedåtpil ![Ikonen nedpil, sorterad tabellkolumn](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) är synlig i kolumnrubriken som data sorteras efter.
 
 1. Klicka på pilen bredvid namnet på Dimensionen eller måttet i en friformstabell i Analysis Workspace.
 

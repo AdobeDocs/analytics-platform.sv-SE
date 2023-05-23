@@ -4,9 +4,9 @@ title: Visa dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
+source-git-commit: b38b5b54ebbf301a3e59156d484bf5d69974b4a4
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Så här visar du information om en komponent i Data Dictionary:
 
 1. (Valfritt) I sökfältet börjar du med att skriva namnet på komponenten som du vill visa.
 
-   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](assets/dimension-icon.png) är orange, **Segment** ![Segmentikon](assets/segment-icon.png) är blå, **Datumintervall** ![Ikon för datumintervall](assets/date-range-icon.png) är lila, och **Mått** ![Mätningsikon](assets/default-metric-icon.png) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en segmentmall och räknikonen ![Beräkningsikon](assets/calculated-metric-icon-created.png) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
+   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Segment** ![Segmentikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Ikon för datumintervall](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila, och **Mått** ![Mätningsikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en segmentmall och räknikonen ![Beräkningsikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
 
 {{dd-filter-criteria}}
 
-1. (Valfritt) Välj **Sortera** icon ![Ikon för att sortera komponenter](assets/component-sort-icon.png)väljer du sedan något av följande filteralternativ för att sortera komponentlistan:
+1. (Valfritt) Välj **Sortera** icon ![Ikon för att sortera komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)väljer du sedan något av följande filteralternativ för att sortera komponentlistan:
 
    {{components-sort-options}}
 

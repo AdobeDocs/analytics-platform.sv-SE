@@ -3,9 +3,9 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Skapa mätvärden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
 
 * Klicka **[!UICONTROL + Add]** högst upp på [Beräknad måtthanterare](/help/components/calc-metrics/cm-workflow/cm-manager.md), eller
 
-* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en rapport och klicka på Metrics-ikonen  ![](assets/metrics_icon.png) för att visa måttspåret och sedan klicka **[!UICONTROL Add]**.
+* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en rapport och klicka på Metrics-ikonen  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) för att visa måttspåret och sedan klicka **[!UICONTROL Add]**.
 
 ![](assets/cm_builder_ui.png)
 

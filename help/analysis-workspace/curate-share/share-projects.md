@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: dab154ce10b0b4f7fb2873d92a1ce9ceb7478b26
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -156,13 +156,13 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
       * Om det här alternativet är aktiverat och nedtonat kräver CJA-administratören Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt.
 
-1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** icon ![Ikon för att kopiera länk](assets/copy-link-icon.png) om du vill kopiera länken till systemets Urklipp.
+1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** icon ![Ikon för att kopiera länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) för att kopiera länken till systemets Urklipp.
 
 1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
 
    Alla som du delar länken med kan visa Analysis Workspace-projektet.
 
-1. (Valfritt) Du kan klicka på **Generera ny länk** icon ![Skapa länkikon](assets/regenerate-link.png) för att ta bort åtkomst från användare som tidigare har fått en länk till projektet. En ny länk skapas som du kan dela med användare som du vill ska få åtkomst till projektet.
+1. (Valfritt) Du kan klicka på **Generera ny länk** icon ![Skapa länkikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) för att ta bort åtkomst från användare som tidigare har fått en länk till projektet. En ny länk skapas som du kan dela med användare som du vill ska få åtkomst till projektet.
 
 1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt.
 
