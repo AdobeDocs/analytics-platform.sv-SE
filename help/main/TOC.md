@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
+source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '899'
 ht-degree: 30%
 
 ---
@@ -192,6 +192,21 @@ ht-degree: 30%
 
 
 
++ Kontrollpaneler för analyser {#cja-dashboards}
+   + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
+   + [Läraruppgifter](../mobile-app/curator.md)
+   + [Skapa ett mobilstyrkort](../mobile-app/create-scorecard.md)
+   + [Konfigurera chefer för att använda kontrollpaneler](../mobile-app/set-up-execs.md)
+   + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
+
++ Guidad analys {#guided-analysis}
+   + [Översikt](../guided-analysis/overview.md)
+   + [Gränssnitt](../guided-analysis/interface.md)
+   + Analystyper {#analysis-types}
+      + [Översikt](../guided-analysis/analysis-types/overview.md)
+      + [Tratt](../guided-analysis/analysis-types/funnel.md)
+      + [Trender](../guided-analysis/analysis-types/trends.md)
+      + [Användartillväxt](../guided-analysis/analysis-types/user-growth.md)
 
 + Komponenter {#cja-components}
    + [Komponenter – översikt](../components/overview.md)
@@ -259,13 +274,6 @@ ht-degree: 30%
 
 
 
-
-+ Kontrollpaneler för analyser {#cja-dashboards}
-   + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
-   + [Läraruppgifter](../mobile-app/curator.md)
-   + [Skapa ett mobilstyrkort](../mobile-app/create-scorecard.md)
-   + [Konfigurera chefer för att använda kontrollpaneler](../mobile-app/set-up-execs.md)
-   + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
 
 + Report Builder {#cja-reportbuilder}
    + [Översikt över Report Builder](../report-builder/report-buider-overview.md)
