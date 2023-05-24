@@ -1,9 +1,9 @@
 ---
-description: 'Genom att segmentera enskilda mätvärden kan ni göra mätjämförelser inom samma rapport. '
+description: Genom att segmentera enskilda mätvärden kan ni göra mätjämförelser inom samma rapport.
 title: Segmenterade mätvärden
 feature: Calculated Metrics
-exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -21,7 +21,7 @@ I verktyget Beräknade mätvärden kan du använda filter i måttdefinitionen. D
 Låt oss säga att du vill jämföra olika aspekter av ett&quot;tyska besökare&quot;-filter med ett&quot;Internationella besökare&quot;-filter. Du kan skapa mätvärden som ger dig insikter som:
 
 * Hur fungerar innehållssökning jämfört med de två grupperna? (Ett annat exempel är: Hur är konverteringsgraden jämfört mellan de två filtren?)
-* Hur många tyska besökare surfar på vissa sidor jämfört med internationella besökare som en procentandel av det totala antalet besökare?
+* Hur många tyska personer surfar på vissa sidor jämfört med internationella personer som en procentandel av det totala antalet personer?
 * Var är de största skillnaderna när det gäller vilket innehåll som nås av de olika filtren?
 
 1. Om du inte har något liknande filter kan du skapa ett ad hoc-segment i Calculated Metric Builder som heter&quot;Tyska besökare&quot;, där&quot;Länder&quot; är lika med&quot;Tyskland&quot;. Dra bara dimensionen Länder till arbetsytan Definition och välj Tyskland som värde:

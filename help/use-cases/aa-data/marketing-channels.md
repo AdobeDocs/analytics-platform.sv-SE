@@ -4,7 +4,7 @@ description: Använd Analytics Source Connector för att överföra regler för 
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Inställningarna för marknadsföringskanaler fungerar annorlunda mellan plattfo
 
    ![Åsidosätt den senaste pekkanalen](../assets/override-last-touch-channel.png)
 
-* **Utgångsdatum för marknadsföringskanal**: Inställningen för den här interaktionsperioden avgör inaktivitetsperioden innan en besökare kan få en ny första beröringskanal i rapportsvitens data. Plattformen använder sina egna attribueringsinställningar, så den här inställningen ignoreras helt i CJA.
+* **Utgångsdatum för marknadsföringskanal**: Inställningen för den här interaktionsperioden avgör inaktivitetsperioden innan en person kan få en ny första beröringskanal i rapportsvitens data. Plattformen använder sina egna attribueringsinställningar, så den här inställningen ignoreras helt i CJA.
 
    ![Utgångsdatum för marknadsföringskanal](../assets/marketing-channel-expiration.png)
 
@@ -71,4 +71,4 @@ Eftersom Adobe Experience Platform arkitektur skiljer sig från en traditionell 
 * Kontrollera att din anslutning använder samma rapportserie som traditionell Analytics. Om din CJA-anslutning innehåller flera rapportsviter med sina egna regler för bearbetning av marknadsföringskanaler, finns det inget enkelt sätt att jämföra den med traditionell Analytics. Du vill skapa en separat anslutning för varje rapportsserie för att jämföra data.
 * Se till att du jämför samma datumintervall och att tidszonsinställningen i datavyn är densamma som rapportsvitens tidszon.
 * Använd en anpassad attribueringsmodell när du visar rapportsvitens data. Använd till exempel [Marknadsföringskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension med mätvärden som använder en icke-standardattribueringsmodell. Adobe rekommenderar att du inte jämför standardmåtten [Första beröringskanalen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html) eller [Senaste pekkanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html), eftersom de förlitar sig på attribuering som samlas in i rapportsviten. CJA förlitar sig inte på en rapportsvits attribueringsdata. i stället beräknas det när en CJA-rapport körs.
-* Vissa mätvärden har ingen rimlig jämförelse på grund av skillnader i arkitektur mellan rapportsvitdata och plattformsdata. Exempel är besök/sessioner, besökare/människor och förekomster/händelser.
+* Vissa mätvärden har ingen rimlig jämförelse på grund av skillnader i arkitektur mellan rapportsvitdata och plattformsdata. Exempel är besök/sessioner, personer/människor och förekomster/evenemang.

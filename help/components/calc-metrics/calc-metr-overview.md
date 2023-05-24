@@ -3,7 +3,7 @@ title: Översikt över beräknade mätvärden
 description: Lär dig mer om filtrerade mätvärden som genereras vid rapportkörning.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: e98b21824789600c7729cce99d7592011ad18577
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 4%
@@ -17,7 +17,7 @@ Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått
 Ni kan
 
 * Skapa filtrerade mätvärden som genereras vid rapportkörning, utan att behöva ändra implementeringen. Dessa kan visas historiskt eftersom de baseras på filter.
-* (Endast avancerade beräknade värden) Filtrera på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot;, med antalet personer som detta är den första sessionen för.
+* (Endast avancerade beräknade värden) Filtrera på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya personer&quot; med antalet personer som detta är den första sessionen för.
 * (Endast avancerade beräknade värden) Inkludera statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
 
 ## Beräknade mått jämfört med avancerade beräknade värden
@@ -34,11 +34,11 @@ Här följer en jämförelse av funktionerna för beräknade värden och avancer
 | [Grundfunktioner (antal, abs-värde, medelvärde osv.)](/help/components/calc-metrics/cm-functions.md) | Nej | Ja |
 | [Avancerade funktioner (regression, if/then, t-score etc.)](/help/components/calc-metrics/cm-adv-functions.md) | Nej | Ja |
 
-## verktyg
+## Verktyg
 
 | Verktyg | Funktioner |
 |--- |--- |
-| Beräknad metrisk Builder | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till inline-filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala besökare med internationella besökare.</li><li>Använd statistiska funktioner.</li><li> Ange detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
+| Beräknad metrisk Builder | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till inline-filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala personer med internationella.</li><li>Använd statistiska funktioner.</li><li> Ange detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
 | Hanterare för beräknade mätvärden | <ul><li>Dela mätvärden med andra.</li><li>Godkänn och strukturera mätvärden.</li><li>Ordna (tagga) mätvärden så att andra kan hitta dem.</li><li>Ta bort mätvärden.</li><li>Byt namn på mätvärden.</li></ul> |
 | API för beräknade värden | En del av CJA API-uppsättningen. |
 

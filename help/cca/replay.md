@@ -4,7 +4,7 @@ description: Förstå begreppet"replay" i flerkanalsanalys
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -17,10 +17,10 @@ Flerkanalsanalys gör att data kan skickas på en viss anslutning:
 
 * **Live-syn**: CCA försöker sammanfoga varje händelse när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
 * **Spela upp**: CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. I det här steget sammanfogas nya enheter till anslutningen. Adobe har två repriser:
-   * Dagligen: Data spelas upp varje dag med ett 24-timmarsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
+   * Dagligen: Data spelas upp varje dag med ett 24-timmarsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade personer måste autentisera samma dag som de besöker er webbplats.
    * Vecka: Data spelas upp en gång i veckan med ett 7-dagars uppslagsfönster. Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Data som är yngre än en vecka sammanfogas dock inte.
 
-Data utanför uppslagsfönstret spelas inte upp igen. En besökare måste autentisera sig inom ett visst fönster för att kunna identifiera ett oautentiserat besök och ett autentiserat besök tillsammans. När en enhet känns igen sammanfogas den från den punkten och framåt.
+Data utanför uppslagsfönstret spelas inte upp igen. En person måste autentisera sig inom ett visst fönster för att kunna identifiera ett oautentiserat besök och ett autentiserat besök tillsammans. När en enhet känns igen sammanfogas den från den punkten och framåt.
 
 ## Steg 1: Live-syn
 

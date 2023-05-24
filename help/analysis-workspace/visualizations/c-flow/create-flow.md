@@ -4,7 +4,7 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Flödesvisualiseringar gör att du kan förstå den resa som härrör från elle
    | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till dem som börjar/slutar med den första/sista förekomsten av en dimension/artikel/mått. En mer detaljerad förklaring finns i avsnittet&quot;Exempelscenario för &#39;begränsning till första/sista förekomsten&#39;&quot; nedan. |
    | **[!UICONTROL Number of Columns]** | Anger hur många kolumner du vill ha i flödesdiagrammet. |
    | **[!UICONTROL Items expanded per Column]** | Hur många objekt du vill ha i varje kolumn. |
-   | **[!UICONTROL Flow Container]** | <ul><li>Gå in på</li><li>Besökare</li></ul> Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
+   | **[!UICONTROL Flow Container]** | <ul><li>Gå in på</li><li>Besökare</li></ul> Gör att du kan växla mellan Besök och Besök för att analysera personsökningar. Dessa inställningar hjälper er att förstå personernas engagemang på personnivå (olika besök) eller begränsa analysen till ett enda besök. |
 
 1. Klicka på **[!UICONTROL Build]**.
 

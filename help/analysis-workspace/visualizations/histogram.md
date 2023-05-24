@@ -3,7 +3,7 @@ description: Ett histogram liknar ett stapeldiagram, men det grupperar nummer i 
 title: Histogram
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Så här skapar du ett histogram:
 >
 >Histogram stöder endast standardvärden, inte beräknade värden.
 
-Här har vi använt måtten för sidvisningar per unika besökare. Den första (vänster) markeringen motsvarar en sidvy per unik besökare, den andra markeringen motsvarar två sidvisningar osv.
+Här har vi använt måtten för sidvisningar per unika besökare. Den första (vänster) markeringen motsvarar en sidvy per unik person, den andra markeringen motsvarar två sidvisningar osv.
 
 ![](assets/histogram2.png)
 
@@ -41,7 +41,7 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 | Startar Bucket | Anger vilken bucket histogrammet börjar med. &quot;1&quot; är standardvärdet. Du kan ange startnummer från 0 till oändlighet (inga negativa tal). |
 | Mätbuffertar | Gör att du kan öka/minska antalet dataintervall (bucket). Det högsta antalet bucklor är 50. |
 | Storlek på mätpyts | Gör att du kan ange storleken för varje bucket. Du kan till exempel ändra bucketstorleken från en sidvy till två sidvyer. |
-| Inventeringsmetod | Här kan du välja bland [Besökare](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html), eller Träff. Till exempel sidvisningar per besök eller sidvisningar per besökare eller sidvy per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
+| Inventeringsmetod | Här kan du välja bland [Besökare](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html), eller Träff. Exempel: sidvisningar per besök eller sidvisningar per person eller sidvisningar per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 

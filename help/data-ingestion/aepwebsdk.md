@@ -4,7 +4,7 @@ description: Förklara hur man importerar data till Customer Journey Analytics v
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3273'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Så här konfigurerar du ditt schema:
 
    ![Identifieringsobjekt](./assets/identification-field.png)
 
-   Detta lägger till identifieringsfunktioner i schemat. I ditt fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din besökares identifiering (till exempel kund-ID, lojalitets-ID).
+   Detta lägger till identifieringsfunktioner i schemat. I ditt fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
@@ -265,7 +265,7 @@ Så här skapar och konfigurerar du Adobe Experience Platform Web SDK-tillägget
 
 Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) för mer information.
 
-Du vill också konfigurera Experience Cloud ID-tjänsttillägget så att du enkelt kan använda Experience Cloud-ID:t. Experience Cloud ID-tjänsten identifierar besökare i alla Adobe Experience Cloud-lösningar.
+Du vill också konfigurera Experience Cloud ID-tjänsttillägget så att du enkelt kan använda Experience Cloud-ID:t. Experience Cloud ID-tjänsten identifierar personer i alla Adobe Experience Cloud-lösningar.
 
 Så här skapar och konfigurerar du tjänsttillägget Experience Cloud ID:
 
@@ -285,7 +285,7 @@ Så här skapar och konfigurerar du tjänsttillägget Experience Cloud ID:
 
 Dataelement är byggstenarna för dataordlistan (eller datamappningen). Använd dataelement för att samla in, ordna och leverera data över marknadsförings- och annonseringsteknologier. Du ställer in dataelement i taggen som läser från datalagret och kan användas för att leverera data till Adobe Experience Platform.
 
-Det finns olika typer av dataelement. Du ställer först in ett dataelement för att fånga det sidnamn som besökarna visar på din webbplats.
+Det finns olika typer av dataelement. Du ställer först in ett dataelement för att fånga det sidnamn som personer tittar på på din webbplats.
 
 Så här definierar du ett dataelement för sidnamn:
 

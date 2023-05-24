@@ -3,7 +3,7 @@ description: Lär dig hur du anger kontaktytorna för att skapa en flerdimension
 title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Konfigurera en utfallsvisualisering
 
-Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan till exempel lägga till händelser, som enheter, samt unika besökare och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
+Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan t.ex. lägga till händelser, t.ex. enheter, samt unika personer och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
 Du kan till och med lägga till filter i en kontaktyta. Du kanske vill jämföra filter som iOS- och Android-användare. Dra de önskade filtren högst upp i utfallet och information om dessa filter läggs till i utfallsrapporten. Om du bara vill visa dessa filter, kan du ta bort baslinjen Alla besök.
 
@@ -26,7 +26,7 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
 
    ![](assets/fallout1.png)
 
-   Håll muspekaren över en kontaktyta för att se utfallet och annan information om den nivån, som namnet på kontaktytan, besökarantal vid den punkten, och se hur framgångsrik kontaktytan är (samt jämför framgångssiffran med andra kontaktytor).
+   Håll muspekaren över en kontaktyta för att se bortfallet och annan information om den nivån, t.ex. namnet på kontaktytan, antalet personer vid den punkten och se hur framgångsrik kontaktytan är (samt jämför framgångssiffran med andra kontaktytor).
 
    De cirklade siffrorna i den grå delen av fältet visar utfallet mellan kontaktytor (inte det övergripande utfallet till den punkten). Touchpoint % visar det lyckade genombrottet från föregående steg till det aktuella steget i utfallsrapporten.
 
@@ -63,7 +63,7 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
 
 | Inställning | Beskrivning |
 |--- |--- |
-| Utfallsbehållare <ul><li>Gå in på</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
+| Utfallsbehållare <ul><li>Gå in på</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera personsökningar. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå personernas engagemang på personnivå (olika besök) eller begränsa analysen till ett enda besök. |
 
 När du **högerklicka på en kontaktyta** visas följande alternativ:
 
@@ -72,6 +72,6 @@ När du **högerklicka på en kontaktyta** visas följande alternativ:
 | Trendkontaktyta | Se trenddata för en kontaktyta i ett linjediagram med vissa fördefinierade avvikelseidentifieringsdata. |
 | Trend Touchpoint (%) | Trends the total fallout percentage. |
 | Trend all touchpoints (%) | Trends all the touchpoint percentage in the fallout (except &quot;All Visits&quot;, if it is included), on the same chart. |
-| Bryt ner fallthrough vid den här kontaktytan | Se vad besökarna gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
+| Bryt ner fallthrough vid den här kontaktytan | Se vad personer gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
 | Bryt ned bortfallet vid den här kontaktytan | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. |
 | Skapa filter från kontaktyta | Skapa ett nytt filter från den valda kontaktytan. |

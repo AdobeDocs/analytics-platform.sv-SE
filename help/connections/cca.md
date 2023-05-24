@@ -1,15 +1,15 @@
 ---
 title: Flerkanalsanalys
-description: Lär dig hur du ändrar nyckelord för besökar-ID:n från flera datauppsättningar för att sätta ihop besökare.
+description: Lär dig hur du ändrar nyckelord för person-ID:n från flera datauppsättningar för att sätta ihop personer.
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
+exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 1%
 
 ---
-
 
 # Flerkanalsanalys
 

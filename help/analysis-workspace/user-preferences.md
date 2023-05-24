@@ -4,7 +4,7 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3136'
 ht-degree: 1%
@@ -160,7 +160,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 |  | Visa jämförelse | Visa jämförelsedata. När det är dolt döljs både jämförelsetabellen och de sammanfattande ändringsobjekten. |
 |  | Alternativ för talvärde | I [!UICONTROL **Sammanfattning av nyckelmått**] section <ul><li>Visa procentuell ändring</li><li>Visa rådifferens</li>Rådifferens mellan det totala värdet för måttet i det primära datumintervallet och det sekundära datumintervallet</ul> |
 | **[Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** |  |  |
-|  | Behållare | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor. Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. <p>Följande alternativ är tillgängliga:</p> <ul><li>Gå in på</li><li>Besökare</li></ul> |
+|  | Behållare | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor. Dessa inställningar hjälper er att förstå personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Gå in på</li><li>Besökare</li></ul> |
 | **[Flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** |  |  |
 |  | Behållare | I [!UICONTROL **Flöde**] section <ul><li>Gå in på</li><li>Besökare</li></ul> |
 |  | Radbryt etiketter | Etiketterna på Flow-elementen trunkeras normalt för att spara skärmutrymme, men du kan göra hela etiketten synlig genom att markera den här rutan. Standard = avmarkerat. |
@@ -172,7 +172,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 |  | 100 % staplad | Den här inställningen för staplade ytor, staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. <p>Mer information finns i [Stolpstreck och stapel](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Antal fickor | Välj antalet dataintervall (bucket) i visualiseringen. Det högsta antalet bucklor är 50. <p>Mer information finns i [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
-|  | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Gå in på</li><li>Besökare</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per besökare, sidvyer för besök eller sidvyer per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
+|  | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Gå in på</li><li>Besökare</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per person, sidvyer för besök eller sidvyer per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
 | **[Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Värde | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Procentuell ändring</li><li>Rådifferens</li></ul> |
 |  | Procenttal | Visar värden i procent för visualiseringar av sammanfattningsändringar. |

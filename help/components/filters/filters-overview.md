@@ -2,7 +2,7 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 1%
@@ -12,9 +12,9 @@ ht-degree: 1%
 
 # Översikt över filter {#overview}
 
-Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
+Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
 
-Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön), interaktioner (kampanjer, nyckelordssökning, sökmotor), utträden och poster (besökare från Facebook, en definierad landningssida, referensdomän), anpassade variabler (formulärfält, definierade kategorier, kund-ID) och andra kriterier.
+Filter kan baseras på attribut (webbläsartyp, enhet, antal besök, land, kön), interaktioner (kampanjer, nyckelordssökning, sökmotor), utträden och poster (personer från Facebook, en definierad landningssida, referensdomän), anpassade variabler (formulärfält, definierade kategorier, kund-ID) och andra kriterier.
 
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
@@ -28,7 +28,7 @@ Mer information om tillgängliga typer av filter och hur du skapar dem finns i [
 
 ## Sekventiella filter {#sequential}
 
-Med sekventiella filter kan du identifiera besökare baserat på navigering och sidvisning på webbplatsen, vilket ger ett filter med definierade åtgärder och interaktioner. Med sekventiella filter kan du identifiera vad en besökare gillar och vad en besökare undviker. När sekventiella filter skapas används operatorn THEN för att definiera och ordna besökarnavigering.
+Med hjälp av sekventiella filter kan du identifiera personer baserat på navigering och sidvisning på webbplatsen, vilket ger ett filter med definierade åtgärder och interaktioner. Med hjälp av sekventiella filter kan du identifiera vad en person gillar och vad en person undviker. När du skapar sekventiella filter används operatorn THEN för att definiera och ordna personnavigering.
 
 Här är ett exempel:
 
@@ -36,7 +36,7 @@ Här är ett exempel:
 
 | Besök en | Besök två | Besök tre |
 | --- | --- | --- |
-| Besökaren gick till huvudlandningssidan (A), uteslöt kampanjsidan (B) och visade sedan produktsidan (C). | Besökaren gick åter till huvudlandningssidan (A), exkluderade kampanjsidan (B), gick tillbaka till produktsidan (C) och sedan till en ny sida (D). | Besökaren gick in på och följde samma väg som i det första och andra besöket och uteslöt sedan sidan F för att gå direkt till en målproduktsida (G). |
+| Personen gick till huvudlandningssidan (A), uteslöt kampanjsidan (B) och visade sedan produktsidan (C). | Personen gick åter till huvudlandningssidan (A), uteslöt kampanjsidan (B), gick till produktsidan (C) och sedan till en ny sida (D). | Personen angav och följde samma väg som i det första och andra besöket och uteslöt sedan sidan F för att gå direkt till en målproduktsida (G). |
 
 ## Filterbehållare {#containers}
 
@@ -45,14 +45,14 @@ Filter baseras på en hierarki på person-, sessions- och händelsenivå med hj�
 >[!NOTE]
 >Personbehållaren kallades tidigare besökarbehållare. Sessionsbehållaren kallades besöksbehållaren och händelsebehållaren var tidigare Träff-behållaren.
 
-Ett filter anger villkor för att filtrera en besökare baserat på hans eller hennes attribut eller interaktioner med din webbplats. Om du vill ange villkor i ett filter anger du regler för att filtrera besökare baserat på besökarens egenskaper och/eller navigeringsegenskaper. Om du vill dela upp besöksdata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje besökare. I Filter Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska person-, session- eller händelsebehållare.
+Ett filter anger villkor för att filtrera en person baserat på hans eller hennes attribut eller interaktioner med din plats. Om du vill ange villkor i ett filter anger du regler för att filtrera personer baserat på personegenskaper och/eller navigeringsegenskaper. Om du vill dela upp persondata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje person. I Filter Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska person-, session- eller händelsebehållare.
 
-Behållararkitekturen som används i Filter Builder definierar Person som den yttersta behållaren och innehåller övergripande data som är specifika för besökaren vid besök och sidvyer. Med en kapslad sessionsbehållare kan du ange regler för att dela upp besökarens data baserat på sessioner, och med en kapslad händelsebehållare kan du dela upp besökarinformation baserat på enskilda sidvyer. Med varje behållare kan du rapportera över en besökares historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
+Behållararkitekturen som används i Filter Builder definierar Person som den yttersta behållaren, med överliggande data som är specifika för personen vid besök och sidvyer. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner, och med en kapslad händelsebehållare kan du dela upp personinformation baserat på enskilda sidvyer. Med varje behållare kan du rapportera över en persons historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
 
 ### Personbehållare {#person}
 
-Personbehållaren innehåller alla besök och sidvisningar för besökare inom en viss tidsperiod. Ett filter på personnivå returnerar den sida som uppfyller villkoret plus alla andra sidor som visas av besökaren (och som bara begränsas av definierade datumintervall). Som den mest omfattande behållaren kommer rapporter som genereras på personbehållarnivå att returnera sidvisningar för alla besök och göra att du kan generera en flerbesöksanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
-Personbehållare kan innehålla värden som baseras på en besökares övergripande historik:
+Personbehållaren innehåller alla besök och sidvisningar för personer inom en viss tidsperiod. Ett filter på personnivå returnerar den sida som uppfyller villkoret plus alla andra sidor som visas av personen (och som bara begränsas av definierade datumintervall). Som den mest omfattande behållaren kommer rapporter som genereras på personbehållarnivå att returnera sidvisningar för alla besök och göra att du kan generera en flerbesöksanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
+Personbehållare kan innehålla värden som baseras på en persons övergripande historik:
 
 * Dagar före första köp
 * Ursprunglig startsida

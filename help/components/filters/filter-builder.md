@@ -1,9 +1,9 @@
 ---
-description: I filterverktyget finns en arbetsyta där du kan dra och släppa metriska Dimensioner, filter och händelser för att filtrera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa filter som identifierar besökares attribut och åtgärder vid besök och händelser.
+description: I filterverktyget finns en arbetsyta där du kan dra och släppa metriska Dimensioner, filter och händelser för att filtrera personer baserat på behållarhierarkiens logik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa filter som identifierar personattribut och åtgärder för besök och händelser.
 title: Skapa filter
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Filter Builder
 
-The [!UICONTROL Filter builder] Med kan du skapa enkla eller komplexa filter som identifierar besökarattribut och åtgärder för besök och händelser. Det ger en arbetsyta där du kan dra och släppa mått, händelser eller andra filter för att filtrera besökare baserat på hierarkilogik, regler och operatorer.
+The [!UICONTROL Filter builder] Med kan du skapa enkla eller komplexa filter som identifierar personattribut och åtgärder för besök och händelser. Den innehåller en arbetsyta för att dra och släppa mått, händelser eller andra filter för att filtrera personer baserat på hierarkilogik, regler och operatorer.
 
 Mer information om hur du skapar snabbfilter som bara gäller för det projekt där de skapas finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
@@ -65,7 +65,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera filter. (
 1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, filtret eller mätvärdet.
 1. **[!UICONTROL X]**: (Ta bort) Du kan ta bort den här delen av filterdefinitionen.
 1. **[!UICONTROL Experience Cloud publishing]**: Genom att publicera ett Adobe Analytics-filter på Experience Cloud kan du använda filtret för marknadsföringsaktiviteter i [!DNL Audience Manager] och i andra aktiveringskanaler. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
-1. **[!UICONTROL Audience library]**: Adobe hanterar översättningen av besöksdata till målgruppsfilter. Att skapa och hantera målgrupper liknar alltså att skapa och använda filter, med möjlighet att dela målgruppsfiltret med Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
+1. **[!UICONTROL Audience library]**: Adobe hanterar översättning av persondata till målgruppsfilter. Att skapa och hantera målgrupper liknar alltså att skapa och använda filter, med möjlighet att dela målgruppsfiltret med Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Söker igenom listan med dimensioner, filter eller mätvärden.
 1. **[!UICONTROL Dimensions]**: (Lista) Klicka på rubriken för att expandera.
 1. **[!UICONTROL Metrics]**: Klicka på rubriken för att expandera.
@@ -86,7 +86,7 @@ Filter med inbäddade datumintervall fungerar fortfarande annorlunda i Analysis 
 1. Ange [operator](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html) i listrutan.
 1. Ange eller välj ett värde för det markerade objektet.
 1. Lägg till ytterligare behållare om det behövs, med **[!UICONTROL And]**, **[!UICONTROL Or]**, eller **[!UICONTROL Then]** regler.
-1. När du har placerat behållarna och angett reglerna ser du resultatet av filtret i valideringsdiagrammet längst upp till höger. Valideraren anger det procentuella och absoluta antalet sidvisningar, besök och unika besökare som matchar filtret som du skapade.
+1. När du har placerat behållarna och angett reglerna ser du resultatet av filtret i valideringsdiagrammet längst upp till höger. Valideraren anger det procentuella och absoluta antalet sidvisningar, besök och unika personer som matchar filtret som du skapade.
 1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/manage-filters.md) behållaren genom att markera en befintlig tagg eller skapa en ny.
 1. Klicka **[!UICONTROL Save]** för att spara filtret.
 
@@ -169,31 +169,31 @@ Mallar betecknas med Adobe&quot;A&quot;-logotypen. Ett exempel på mallarna visa
  <tbody> 
   <tr> 
    <td colname="col1"> Abandon Cart </td> 
-   <td colname="col2">Visa data för besökare som har lagt till artiklar i sina kundvagnar men inte beställt något. I filterdefinitionen finns behållaren på plats. Regeln för det här sekventiella filtret är <p> Cart Additions är inte null </p> <p>Sedan </p> <p>Order är lika med 0. </p> </td> 
+   <td colname="col2">Visa data för personer som har lagt till artiklar i sina varukorgar men inte beställt något. I filterdefinitionen finns behållaren på plats. Regeln för det här sekventiella filtret är <p> Cart Additions är inte null </p> <p>Sedan </p> <p>Order är lika med 0. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Första gången du besöker </td> 
-   <td colname="col2">Visa data för besökare som har besökt högst en [1] gång. I filterdefinitionen finns behållaren på plats. Regeln är <p>Besök Nummer är lika med 1. </p> </td> 
+   <td colname="col2">Visa data för personer som har besökt högst en [1] gång. I filterdefinitionen finns behållaren på plats. Regeln är <p>Besök Nummer är lika med 1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Icke-köpare </td> 
-   <td colname="col2">Visa data för besökare som inte har deltagit i en orderhändelse. I filterdefinitionen är behållaren Visitor. Filtret använder exkluderingslogiken. Regeln är <p>Beställningar är inte null. </p> </td> 
+   <td colname="col2">Visa data för personer som inte har deltagit i en orderhändelse. I filterdefinitionen är behållaren Visitor. Filtret använder exkluderingslogiken. Regeln är <p>Beställningar är inte null. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök ej enstaka sida (ej studsar) </td> 
-   <td colname="col2">Visa data för besökare som har besökt mer än en gång. I filterdefinitionen är behållaren Visitor. Filtret använder exkluderingslogiken. Regeln är <p>Enkel åtkomst är inte null. </p> </td> 
+   <td colname="col2">Visa data för personer som besökt mer än en gång. I filterdefinitionen är behållaren Visitor. Filtret använder exkluderingslogiken. Regeln är <p>Enkel åtkomst är inte null. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Betalsökning </td> 
-   <td colname="col2">Visa data från besökare som kommer från en betald sökning. I filterdefinitionen finns behållaren på plats. Regeln är <p>Betalsökning är lika med 1. </p> </td> 
+   <td colname="col2">Visa data från personer som härrör från en betald sökning. I filterdefinitionen finns behållaren på plats. Regeln är <p>Betalsökning är lika med 1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inköpare </td> 
-   <td colname="col2">Visa data för besökare som har deltagit i en orderhändelse. I filterdefinitionen är behållaren Visitor. Regeln är <p>Beställningar är inte null. </p> </td> 
+   <td colname="col2">Visa data för personer som har deltagit i en orderhändelse. I filterdefinitionen är behållaren Visitor. Regeln är <p>Beställningar är inte null. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Återbesök </td> 
-   <td colname="col2">Visa data från besökare som har besökt minst en gång. I filterdefinitionen finns behållaren på plats. Regeln är <p>Besöksnumret är större än 1. </p> </td> 
+   <td colname="col2">Visa data från personer som har besökt minst en gång. I filterdefinitionen finns behållaren på plats. Regeln är <p>Besöksnumret är större än 1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök på en sida </td> 
@@ -201,43 +201,43 @@ Mallar betecknas med Adobe&quot;A&quot;-logotypen. Ett exempel på mallarna visa
   </tr> 
   <tr> 
    <td colname="col1"> Den visade produkten lades inte till i kundvagnen </td> 
-   <td colname="col2">Visa data för besökare som visade produkter men inte hade några kundvagnstillägg. I filterdefinitionen finns behållaren på plats. Regeln för det här sekventiella filtret är <p>Produktvyer är inte null </p> <p>Sedan </p> <p> Cart Additions är lika med 0. </p> </td> 
+   <td colname="col2">Visa data för personer som visade produkter men inte hade några kundvagnstillägg. I filterdefinitionen finns behållaren på plats. Regeln för det här sekventiella filtret är <p>Produktvyer är inte null </p> <p>Sedan </p> <p> Cart Additions är lika med 0. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från Campaign </td> 
-   <td colname="col2">Visa data från besökare som refereras av kampanjer. I filterdefinitionen finns behållaren på plats. Regeln är <p>Spårningskod är inte null. </p> </td> 
+   <td colname="col2">Visa data från personer som refereras av kampanjer. I filterdefinitionen finns behållaren på plats. Regeln är <p>Spårningskod är inte null. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från mobila enheter </td> 
-   <td colname="col2">Visa data från besökare som använder mobila enheter. I filterdefinitionen finns behållaren på plats. Regeln är <p>Mobilenheten är inte null. </p> </td> 
+   <td colname="col2">Visa data från personer som använder mobila enheter. I filterdefinitionen finns behållaren på plats. Regeln är <p>Mobilenheten är inte null. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från naturlig sökning </td> 
-   <td colname="col2">Visa data från besökare som inte kommer från en betald sökning. I filterdefinitionen finns behållaren på plats. Regeln är <p>Betalsökning är lika med 0. </p> </td> 
+   <td colname="col2">Visa data från personer som inte kommer från en betald sökning. I filterdefinitionen finns behållaren på plats. Regeln är <p>Betalsökning är lika med 0. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från icke-mobil enhet </td> 
-   <td colname="col2">Visa data från besökare som inte använder mobila enheter. I filterdefinitionen finns behållaren på plats. Filtret använder exkluderingslogiken. Regeln är <p>Mobilenhetstyp är lika med mobiltelefon </p> <p>eller </p> <p>Mobilenhetstyp är lika med surfplatta. </p> </td> 
+   <td colname="col2">Visa data från personer som inte använder mobila enheter. I filterdefinitionen finns behållaren på plats. Filtret använder exkluderingslogiken. Regeln är <p>Mobilenhetstyp är lika med mobiltelefon </p> <p>eller </p> <p>Mobilenhetstyp är lika med surfplatta. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från telefoner </td> 
-   <td colname="col2">Visa data från besökare som använder telefoner. I filterdefinitionen finns behållaren på plats. Regeln är <p>Enhetstypen är lika med mobiltelefonen. </p> </td> 
+   <td colname="col2">Visa data från personer som använder telefoner. I filterdefinitionen finns behållaren på plats. Regeln är <p>Enhetstypen är lika med mobiltelefonen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från sökmotorer </td> 
-   <td colname="col2">Visa data från besökare som sökmotorer refererar till. I filterdefinitionen finns behållaren på plats. Regeln är <p>Refererartyp är lika med sökmotorer. </p> </td> 
+   <td colname="col2">Visa data från personer som sökmotorer refererar till. I filterdefinitionen finns behållaren på plats. Regeln är <p>Refererartyp är lika med sökmotorer. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från sociala webbplatser </td> 
-   <td colname="col2">Visa data från besökare som hänvisas till av sociala webbplatser. I filterdefinitionen finns behållaren på plats. Regeln är <p>Refererartypen är lika med sociala nätverk. </p> </td> 
+   <td colname="col2">Visa data från personer som sociala webbplatser refererar till. I filterdefinitionen finns behållaren på plats. Regeln är <p>Refererartypen är lika med sociala nätverk. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från surfplattor </td> 
-   <td colname="col2">Visa data från besökare med surfplattor. I filterdefinitionen finns behållaren på plats. Regeln är <p>Enhetstyp är lika med surfplatta. </p> </td> 
+   <td colname="col2">Visa data från personer som använder surfplattor. I filterdefinitionen finns behållaren på plats. Regeln är <p>Enhetstyp är lika med surfplatta. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök med Visitor ID Cookie </td> 
-   <td colname="col2">Visa data från besökare till er webbplats, där en beständig cookie krävs. I filterdefinitionen finns behållaren på plats. Regeln är <p>Beständig cookie är lika med 1. </p> </td> 
+   <td colname="col2">Visa data från personer till er webbplats där en beständig cookie krävs. I filterdefinitionen finns behållaren på plats. Regeln är <p>Beständig cookie är lika med 1. </p> </td> 
   </tr> 
  </tbody> 
 </table>

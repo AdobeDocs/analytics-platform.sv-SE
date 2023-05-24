@@ -3,7 +3,7 @@ description: Lär dig hur du kan analysera resultaten av A/B-tester på CJA-pane
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1785'
 ht-degree: 0%
@@ -110,18 +110,18 @@ En 95-procentig konfidenssekvens kommer att innehålla det &quot;sanna&quot; vä
 
 ## Tolka icke-slumpmässiga dimensioner {#non-randomized}
 
-Med CJA kan analytiker välja vilken dimension som helst som&quot;experiment&quot;. Men hur tolkar man en analys där den dimension som väljs som försöksprodukt inte är en som besökarna är slumpmässiga för?
+Med CJA kan analytiker välja vilken dimension som helst som&quot;experiment&quot;. Men hur tolkar man en analys där den dimension som väljs som försöksprodukt inte är en som är slumpmässig?
 
-Ta till exempel en annons som en besökare ser. Du kan vara intresserad av att mäta förändringen i vissa mätvärden (t.ex. genomsnittliga intäkter) om du bestämmer dig för att visa besökare&quot;och B&quot; i stället för&quot;och A&quot;. Orsakseffekten av att visa annonser B i stället för annons A är av central betydelse för att fatta ett beslut om marknadsföring. Denna orsakseffekt kan mätas som de genomsnittliga intäkterna för hela befolkningen om vi ersatte status quo för att visa och A med den alternativa strategin att visa och B.
+Ta till exempel en annons som en person ser. Du kan vara intresserad av att mäta förändringen i vissa mätvärden (t.ex. genomsnittliga intäkter) om du bestämmer dig för att visa personer&quot;och B&quot; i stället för&quot;och A&quot;. Orsakseffekten av att visa annonser B i stället för annons A är av central betydelse för att fatta ett beslut om marknadsföring. Denna orsakseffekt kan mätas som de genomsnittliga intäkterna för hela befolkningen om vi ersatte status quo för att visa och A med den alternativa strategin att visa och B.
 
-A/B-tester är den guldbaserade standarden inom branschen för att objektivt mäta effekterna av sådana ingrepp. Den kritiska orsaken till varför ett A/B-test ger upphov till en orsaksuppskattning är att besökarna slumpmässigt får en av de möjliga varianterna.
+A/B-tester är den guldbaserade standarden inom branschen för att objektivt mäta effekterna av sådana ingrepp. Den kritiska orsaken till varför ett A/B-test ger upphov till en uppskattning av orsakssamband beror på slumpgenereringen av personer för att få en av de möjliga varianterna.
 
-Tänk nu på en dimension som inte uppnås genom slumpgenerering, till exempel besökarens amerikanska status. Låt oss säga att våra besökare främst kommer från två delstater, New York och Kalifornien. De genomsnittliga intäkterna från försäljningen av ett vinterklädmärke kan vara olika i de två delstaterna på grund av skillnaderna i det regionala vädret. I en sådan situation kan vädret vara den verkliga orsaken till försäljningen av kläder på vintern, och inte det faktum att besökarnas geografiska läge är annorlunda.
+Tänk nu på en dimension som inte uppnås genom slumpgenerering, till exempel USA:s tillstånd för personen. Låt oss säga att våra personer främst kommer från två delstater, New York och Kalifornien. De genomsnittliga intäkterna från försäljningen av ett vinterklädmärke kan vara olika i de två delstaterna på grund av skillnaderna i det regionala vädret. I en sådan situation kan vädret vara den verkliga orsaken till försäljningen av kläder på vintern, och inte det faktum att personernas geografiska läge är olika.
 
-Experimenteringspanelen i Customer Journey Analytics gör att du kan analysera data som genomsnittliga intäktsskillnader för besökarlägena. I en sådan situation har produktionen ingen orsaksmässig tolkning. En sådan analys kan dock fortfarande vara av intresse. Den ger en uppskattning (tillsammans med mått på osäkerhet) av skillnaden i genomsnittliga intäkter för besöksstaterna. Detta kallas även för &quot;Statistisk hypotestestning&quot;. Resultatet av den här analysen kan vara intressant, men inte nödvändigtvis åtgärdbart, eftersom vi inte har gjort det och ibland inte kan göra besökarna slumpmässiga till ett av dimensionens möjliga värden.
+Experimenteringspanelen i Customer Journey Analytics gör att du kan analysera data som genomsnittliga intäktsskillnader mellan personlägena. I en sådan situation har produktionen ingen orsaksmässig tolkning. En sådan analys kan dock fortfarande vara av intresse. Den ger en uppskattning (tillsammans med mått på osäkerhet) av skillnaden i de genomsnittliga intäkterna för delstaterna. Detta kallas även för &quot;Statistisk hypotestestning&quot;. Resultatet av denna analys kan vara intressant, men inte nödvändigtvis åtgärdbart, eftersom vi inte har gjort det och ibland inte kan göra någon slumpgenerering av personer till ett av de möjliga värdena i dimensionen.
 
 Följande bild kontrasterar dessa situationer:
 
 ![slumpmässigt experiment](assets/randomize.png)
 
-När du vill mäta effekten av ingripande X på resultatet Y är det möjligt att den verkliga orsaken till båda är den förvirrande faktorn C. Om data inte uppnås genom slumpgenerering av besökare på X är effekten svårare att mäta, och analysen kommer uttryckligen att ta hänsyn till C. Slumpgenereringen bryter beroendet av X på C, vilket gör att vi kan mäta effekten av X på Y utan att behöva oroa oss för andra variabler.
+När man vill mäta effekten av intervention X på resultatet Y, är det möjligt att den verkliga orsaken till båda är den förvirrande faktorn C. Om data inte uppnås genom slumpgenerering av personer på X, är det svårare att mäta effekten, och analysen kommer uttryckligen att ta hänsyn till C. Slumpmässigt bryter beroendet av X på C, vilket gör att vi kan mäta effekten av X på Y utan att behöva bekymra oss om andra variabler.

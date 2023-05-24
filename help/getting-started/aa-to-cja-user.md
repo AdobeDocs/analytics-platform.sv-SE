@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 0%
@@ -76,9 +76,9 @@ Du kan inte dela eller publicera ännu [!UICONTROL filters] ([!UICONTROL segment
 
 Förutom segmentändringen uppdateras även segmentbehållarna.
 
-* **Träffbehållare är nu [!UICONTROL Event] behållare**. The [!UICONTROL Event] kan du dela upp besökarinformation baserat på enskilda händelser.
+* **Träffbehållare är nu [!UICONTROL Event] behållare**. The [!UICONTROL Event] Med -behållare kan du dela upp personinformation baserat på enskilda händelser.
 * **Besöksbehållare finns nu [!UICONTROL Session] behållare**. The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session.
-* **Besöksbehållare är nu [!UICONTROL Person] behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för en besökare inom den angivna tidsramen.
+* **Besöksbehållare är nu [!UICONTROL Person] behållare**. The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för en person inom den angivna tidsramen.
 
 ## Förändringar av begreppet beräknade mätvärden
 
@@ -100,7 +100,7 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 ## Förändringar av begreppet kundattribut
 
-&quot;Kundattribut&quot; kallas nu &quot;profildatamängder&quot;. Profildatauppsättningar innehåller data som tillämpas på besökare, användare eller kunder i [!UICONTROL Event] data. Du kan till exempel överföra CRM-data om dina kunder. Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning som definieras i [!DNL Experience Platform] har en egen uppsättning med ett eller flera person-ID definierade.
+&quot;Kundattribut&quot; kallas nu &quot;profildatamängder&quot;. Profildatauppsättningar innehåller data som tillämpas på dina personer, användare eller kunder i [!UICONTROL Event] data. Du kan till exempel överföra CRM-data om dina kunder. Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning som definieras i [!DNL Experience Platform] har en egen uppsättning med ett eller flera person-ID definierade.
 
 ## Ändringar i hur Adobe identifierar besökare
 

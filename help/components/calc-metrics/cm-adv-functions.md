@@ -3,9 +3,9 @@ title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3101'
 ht-degree: 1%
 
 ---
@@ -177,7 +177,7 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 | Kontroll | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
 | Tröskelvärde för signifikans | Tröskelvärdet i den här funktionen är inställt på 95 % som standard. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Cosine (rad)
 
@@ -225,10 +225,10 @@ Om N &lt;= 0 används alla föregående rader. Eftersom den ordnas efter dimensi
 
 >[!NOTE]
 >
->Detta fungerar inte som du kan förvänta dig med tariffvärden som intäkter/besökare: i stället för att summera intäkterna under det senaste N:et och summera besökarna under det senaste N:et och sedan dela upp dem. Använd i stället
+>Detta fungerar inte som du kan förvänta dig med tariffvärden som intäkt/person: De beräknar genomsnittsnivån i stället för att summera intäkterna för de senaste N:en och summerar personerna under de senaste N:en och delar sedan upp dem. Använd i stället
 
 ```
-cumul(revenue)/cumul(visitor)
+cumul(revenue)/cumul(person)
 ```
 
 ## Jämn
@@ -366,7 +366,7 @@ fx Lift (normalizing-container, success-metric, control)
 | Resultatmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
 | Kontroll | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Linjär regression_Korrelationskoefficient
 

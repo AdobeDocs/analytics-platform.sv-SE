@@ -3,7 +3,7 @@ description: Hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -29,8 +29,8 @@ Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL S
 
 [Statisk rad](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) summan beter sig på olika sätt och styrs under **[!UICONTROL Row Settings]**.
 
-* **[!UICONTROL Show sum of current rows as the total]** - här visas en summa av raderna på klientsidan, vilket innebär att summan **not** avduplicera mätvärden som besök eller besökare.
-* **[!UICONTROL Show Grand Total]** - detta visar en summa på serversidan, vilket innebär att summan kommer att ta bort dubbletter av statistik som besök eller besökare.
+* **[!UICONTROL Show sum of current rows as the total]** - här visas en summa av raderna på klientsidan, vilket innebär att summan **not** avduplicera mätvärden som besök eller personer.
+* **[!UICONTROL Show Grand Total]** - detta visar en summa på serversidan, vilket innebär att summan kommer att deduplicera mått som besök eller personer.
 
 ![](assets/static-rows.png)
 

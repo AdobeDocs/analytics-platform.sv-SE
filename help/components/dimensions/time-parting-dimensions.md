@@ -3,7 +3,7 @@ description: Tidsdelning innebär att tidsstämpeln för insamlade händelser de
 title: Tidsdelning av dimensioner
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 2%
@@ -16,7 +16,7 @@ Tidsdelning innebär att tidsstämpeln för insamlade händelser delas i mer men
 
 Tidsdelningsdimensionerna baseras på datavyns tidszon. Dessa dimensioner finns i Analysis Workspace och kan ge svar på följande frågor:
 
-* Vilken är den populäraste tiden på dagen för besökare som har tillgång till min webbplats eller app över ett stort datumintervall?
+* Vilken är den populäraste tiden på dagen för att personer ska få tillgång till min webbplats eller app över ett stort datumintervall?
 * Finns det några dagar i veckan, eller timmar på dagen, där konverteringen är högre på min webbplats eller app?
 * Hur skiljer sig min helgsförsäljning från min veckodagsförsäljning?
 * Genererar en viss marknadsföringskampanj högre konverteringar på morgonen eller på eftermiddagen?

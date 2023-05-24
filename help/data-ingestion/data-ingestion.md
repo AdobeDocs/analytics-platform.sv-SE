@@ -4,7 +4,7 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Se [Importera och använda data från traditionella Adobe Analytics](./analytics
 
 ## Importera och använda data via Adobe Experience Platform Web SDK och Edge Network
 
-Ni vill analysera er webbplats med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra besökarens beteende. Du vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
+Ni vill analysera er webbplats med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra er persons beteende. Du vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data via Adobe Experience Platform Web SDK och Edge Network](./aepwebsdk.md) för mer information.
 

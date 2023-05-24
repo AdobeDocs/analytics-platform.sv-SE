@@ -4,9 +4,9 @@ description: Visar användbara rapporter om Google Analytics data i Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du kan trender för hur mycket samtalscenter-tid som har tillbringats de senaste
 
 ![Samtalsvolym](../assets/call-volume.png)
 
-Genom att använda dimensionen&quot;Anledning till samtal&quot; kan du tipsa om hur du kan förbättra webbupplevelsen och hindra besökare från att ringa från början. Ovanstående exempel visar att&quot;Skadan&quot; har en genomsnittlig samtalstid på nästan 3 minuter per samtal, vilket ger organisationen ett exakt sätt att förbättra kundupplevelsen och sänka kostnaderna för callcenter.
+Genom att använda dimensionen&quot;Anledning till anrop&quot; kan du få tips på hur du kan förbättra webbupplevelsen och förhindra att personer ringer från början. Ovanstående exempel visar att&quot;Skadan&quot; har en genomsnittlig samtalstid på nästan 3 minuter per samtal, vilket ger organisationen ett exakt sätt att förbättra kundupplevelsen och sänka kostnaderna för callcenter.
 
 Du kan se vilka produkter som orsakar de flesta samtalen till ditt callcenter och hur många kunder som har gjort dessa samtal. Bubbeldiagrammet visar att 20 000 personer ringde, spenderade mer än 4 timmar och 30 minuter och returnerade 33 enheter av produkten &quot;Men&#39;s short Sleeve Tee&quot;.
 

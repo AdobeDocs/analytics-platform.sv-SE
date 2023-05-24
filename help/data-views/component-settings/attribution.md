@@ -4,7 +4,7 @@ description: Gör att du kan ange standardattribuering för ett mätresultat.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Attribution ger er möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
 
-1. En besökare på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. De lägger produkten i varukorgen, men köper den inte.
+1. En person på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. De lägger produkten i varukorgen, men köper den inte.
 2. Nästa dag ser de ett inlägg i sociala medier från en av deras vänner. De klickar på länken och slutför sedan köpet.
 
 I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering.
@@ -58,15 +58,15 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 * **60 dagar**: Säkerhetskopierar upp till 60 dagar från när konverteringen gjordes.
 * **90 dagar**: Säkerhetskopierar upp till 90 dagar från när konverteringen gjordes.
 * **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar ändrade [Tidsgräns för session](../create-dataview.md#session-settings).
-* **Person (rapporteringsfönster)**: Alla besök utförs fram till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
+* **Person (rapporteringsfönster)**: Alla besök utförs fram till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för personsökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
 * **Anpassad tid:** Gör att du kan ange ett anpassat uppslagsfönster från när en konvertering inträffade. Du kan ange antalet minuter, timmar, dagar, veckor, månader eller kvartal. Om en konvertering till exempel skedde den 20 februari skulle ett uppslagsfönster på fem dagar utvärdera alla dimensionskontaktytor från den 15 februari till den 20 februari i attribueringsmodellen.
 
 ## Exempel
 
 Titta på följande exempel:
 
-1. Den 15 september kommer en besökare till er webbplats via en betald sökannons, sedan går han.
-2. Den 18 september kommer besökaren till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
+1. Den 15 september kommer en person till er webbplats via en betald sökannons, sedan går han/hon iväg.
+2. Den 18 september kommer personen till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
 3. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
 
 Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:

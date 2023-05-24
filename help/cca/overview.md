@@ -1,10 +1,10 @@
 ---
 title: Översikt över flerkanalsanalys
-description: Nyckelanpassa besökar-ID:n igen från flera datauppsättningar för att knyta ihop besökare.
+description: Nyckelanpassa person-ID:n från flera datauppsättningar till att sammanfoga personer.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 0%
@@ -32,9 +32,9 @@ När du kombinerar datauppsättningar med liknande person-ID:n överförs attrib
 
 Innan du använder flerkanalsanalys bör du kontrollera att din organisation har förberetts med följande:
 
-* En datauppsättning i Adobe Experience Platform måste ha två kolumner som hjälper till att identifiera besökare:
-   * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett besökar-ID som genereras av ett Adobe Analytics AppMeasurement-bibliotek.
-   * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget alla identifierare som du vill, förutsatt att de finns minst en gång för samma händelse som ett visst beständigt ID.
+* En datauppsättning i Adobe Experience Platform måste ha två kolumner som hjälper till att identifiera personer:
+   * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett person-ID som genereras av ett Adobe Analytics AppMeasurement-bibliotek.
+   * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas-användarnamn eller en e-postadress när en person autentiseras. Du kan använda praktiskt taget alla identifierare som du vill, förutsatt att de finns minst en gång för samma händelse som ett visst beständigt ID.
 * En annan datauppsättning, till exempel callcenter-data, som innehåller ett tillfälligt ID på varje rad. Detta person-ID måste formateras på samma sätt som det tillfälliga ID:t i den andra datauppsättningen.
 * Med den här funktionen kan du sammanfoga datauppsättningar som kan omfatta sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du sammanfogar datauppsättningar.
 

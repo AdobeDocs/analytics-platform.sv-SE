@@ -4,7 +4,7 @@ description: Frågor och svar om flerkanalsanalys
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Du kan använda en Flow-visualisering med datauppsättnings-ID-dimensionen.
 
 Om du vill byta namn på dimensionsobjekt för datauppsättnings-ID kan du använda en uppslagsdatauppsättning.
 
-## Hur långt tillbaka kan CCA skicka besökare?
+## Hur långt bakåt återskriver CCA personer?
 
 Uppslagsfönstret för inmatning beror på hur ofta du vill ha data [spela upp](replay.md). Om du till exempel konfigurerar CCA att spela upp data en gång i veckan, är uppslagsfönstret för inmatning sju dagar. Om du konfigurerar CCA att spela upp data varje dag är uppslagsfönstret för manuell inmatning en dag.
 
@@ -61,13 +61,13 @@ Om `Persistent ID` fältet är tomt för en händelse i en datauppsättning som 
 * Om `Transient ID` fältet är inte tomt, CCA använder värdet i `Transient ID` som `Stitched ID`.
 * Om `Transient ID` fältet är tomt, CCA lämnar även `Stitched ID` tom. I detta fall `Persistent ID`, `Transient ID`och `Stitched ID` är alla tomma för händelsen. Dessa typer av händelser tas bort från alla CJA-anslutningar med datauppsättningen som sammanfogas där `Stitched ID` valdes som `Person ID`.
 
-## Hur jämförs data i CJA-sammanslagna datauppsättningar med liknande värden i CJA-sammanslagna datauppsättningar och med traditionella Adobe Analytics?
+## Hur jämförs data i CJA med liknande värden i CJA-dataset och med traditionella Adobe Analytics?
 
 Vissa mått i CJA liknar mätvärden i traditionell analys, men andra är helt olika beroende på vad du jämför. I tabellen nedan jämförs flera vanliga mätvärden:
 
 | **CJA-sammanfogade data** | **CJA frigjorda data** | **Traditionell Adobe Analytics** | **Analytics Ultimate med CDA** |
 | ----- | ----- | ----- | ----- |
-| **Folk** = Antal distinkta `Person ID`s var `Stitched ID` väljs som `Person ID`. **Folk** kan vara högre eller lägre än **Unika besökare** i traditionell Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Folk** = Antal distinkta `Person ID`baseras på den kolumn som markerats som `Person ID`. **Folk** i Adobe Source Connector-datamängder liknar **Unika besökare** i traditionell Adobe Analytics om `endUserIDs._experience.aaid.id` väljs som `Person ID` i CJA. | **Unika besökare** = Antal distinkta besökar-ID:n. **Unika besökare** får inte vara samma som antalet distinkta **ECID** s. | Se [Folk](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
+| **Folk** = Antal distinkta `Person ID`s var `Stitched ID` väljs som `Person ID`. **Folk** kan vara högre eller lägre än **Unika besökare** i traditionell Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Folk** = Antal distinkta `Person ID`baseras på den kolumn som markerats som `Person ID`. **Folk** i Adobe Source Connector-datamängder liknar **Unika besökare** i traditionell Adobe Analytics om `endUserIDs._experience.aaid.id` väljs som `Person ID` i CJA. | **Unika besökare** = Antal distinkta person-ID:n. **Unika besökare** får inte vara samma som antalet distinkta **ECID** s. | Se [Folk](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
 | **Sessioner**: Definieras baserat på sessionsinställningarna i CJA-datavyn. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i CJA-datavyn. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i [CDA Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
 | **Händelser** = antal rader i sammanslagna data i CJA. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med en tom `Persistent ID`. | **Händelser** = antal rader i de osydda data i CJA. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock att om några händelser har en tom `Person ID` Dessa händelser ingår inte i CJA i de data som inte sammanställts i Experience Platform datasjön. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 

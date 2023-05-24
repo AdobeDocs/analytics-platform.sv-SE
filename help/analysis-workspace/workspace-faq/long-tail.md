@@ -3,9 +3,9 @@ title: Lång detaljdimensionsartikel
 description: Beskriver dimensionsposten "Long Tail" och varför den visas i rapporter.
 feature: FAQ
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-source-git-commit: 8618690187a0cc35fd59cc8bef9ad1147cadf8b0
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ CJA bearbetar rapporter när de körs och distribuerar den kombinerade dataupps�
 
 Om någon enskild server samlar in en resultatmängd som överskrider ett tröskelvärde för storlek, kommer resultatet att trunkeras innan de skickas tillbaka. Detta håller nätverkstrafiken och aggregeringen inom gränserna för att möjliggöra snabb rapportering.  Eftersom resultaten trunkeras med enbart visning av egna data är det möjligt (även om det är osannolikt) att de objekt som visas i Analysis Workspace har felaktiga mätvärden.
 
-Servern väljer vilka objekt som ska tas bort baserat på de mått som används för sorteringen.  Om det här är ett beräknat mått kanske det inte är uppenbart hur det ska sorteras, så resultatet blir kanske mindre exakt.  Vid beräkningen av&quot;Intäkter per besökare&quot; returneras och sammanställs t.ex. den totala intäkten och det totala antalet besökare innan delningen görs. Därför väljer varje nod ofta vilka objekt som ska tas bort, utan att veta hur resultatet påverkar den övergripande sorteringen.
+Servern väljer vilka objekt som ska tas bort baserat på de mått som används för sorteringen.  Om det här är ett beräknat mått kanske det inte är uppenbart hur det ska sorteras, så resultatet blir kanske mindre exakt.  Vid beräkningen av&quot;Intäkt per person&quot; returneras till exempel det totala inkomstbeloppet och det totala antalet personer och aggregeras innan indelningen görs. Därför väljer varje nod ofta vilka objekt som ska tas bort, utan att veta hur resultatet påverkar den övergripande sorteringen.
 
 ## Skillnader mellan&quot;långrev&quot; och&quot;lågtrafik&quot;
 

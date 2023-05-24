@@ -4,7 +4,7 @@ keywords: bortfall och filter;filter i bortfallsanalys;jämför filter i bortfal
 title: Använda filter i bortfallsanalys
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -17,10 +17,10 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 >[!IMPORTANT]
 >
->Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontext-utrullning måste filter som används som kontrollpunkter vara besök eller händelsebaserade filter. Med en kontextutfällning för besök måste filter som används som kontrollpunkt vara händelsebaserade filter. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
+>Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en person-context Fallout måste filter som används som kontrollpunkter vara besök eller händelsebaserade filter. Med en kontextutfällning för besök måste filter som används som kontrollpunkt vara händelsebaserade filter. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
 
-* Använda ett besöksbaserat filter som kontaktyta inuti en besökarsammanhangsbaserad utfallsvisualisering
-* Använda ett besöksbaserat filter som kontaktyta i en snabbutfallsvisualisering
+* Använda ett personbaserat filter som kontaktyta inuti en personsammanhangsbaserad utfallsvisualisering
+* Använda ett personbaserat filter som kontaktyta i en sammanhangsbaserad Fallout-visualisering
 * Använda ett besöksbaserat filter som kontaktyta i en snabbutfallsvisualisering
 
 ## Skapa ett filter från en kontaktyta {#section_915E8FBF35CD4F34828F860C1CCC2272}

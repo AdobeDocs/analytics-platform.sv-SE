@@ -3,9 +3,9 @@ title: Vad är kohortanalys?
 description: Läs om kohortanalys i Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 76840d025d1ace28abce5557d66d104795818167
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Följande funktioner gör att du kan finjustera kontrollen över de kohorter du 
 
 ### [!UICONTROL Retention] Tabell
 
-A [!UICONTROL Retention] kohortrapport returnerar besökare: varje datacell visar det obearbetade antalet och den procentuella andelen besökare i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
+A [!UICONTROL Retention] kohortrapport returnerar personer: varje datacell visar det obehandlade antalet och den procentuella andelen personer i kohorten som vidtog åtgärden under den perioden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Churn] Tabell
 
-A [!UICONTROL Churn] kohort är inversen till ett kvarhållanderegister och visar de besökare som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
+A [!UICONTROL Churn] kohort är omvänd till en kvarhållandetabell och visar vilka som inte uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
 
 ![](assets/churn-report.png)
 
