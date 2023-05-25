@@ -9,7 +9,7 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
+source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 30%
@@ -201,12 +201,12 @@ ht-degree: 30%
 
 + Guidad analys {#guided-analysis}
    + [Översikt](../guided-analysis/overview.md)
-   + [Gränssnitt](../guided-analysis/interface.md)
    + Analystyper {#analysis-types}
       + [Översikt](../guided-analysis/analysis-types/overview.md)
       + [Tratt](../guided-analysis/analysis-types/funnel.md)
       + [Trender](../guided-analysis/analysis-types/trends.md)
       + [Användartillväxt](../guided-analysis/analysis-types/user-growth.md)
+   + [Vanliga frågor och svar](../guided-analysis/faq.md)
 
 + Komponenter {#cja-components}
    + [Komponenter – översikt](../components/overview.md)
