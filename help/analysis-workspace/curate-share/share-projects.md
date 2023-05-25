@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+source-git-commit: 29ceba37422ab2cb432bbe000dee6379a63d5a8f
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 
 * Personer utanför din organisation
 
-* Personer i din organisation som inte har etablerats med Customer Journey Analytics
+* Personer i din organisation som inte har tillgång till Customer Journey Analytics
 
 >[!NOTE]
 >
@@ -126,6 +126,8 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 >* Användare som du delar med kan ändra projektets datumintervall. Datumintervallet som du anger för projektet visas som standard.
 >
 >* Ett projekt kan bli oåtkomligt om många användare försöker få åtkomst till en viss länk samtidigt. Som standard har fler än 190 personer tillgång till en enda länk var femte minut. Om din organisation når den gränsen väntar du i fem minuter och försöker sedan att få åtkomst till länken igen.
+>
+>* Om din organisation licensierar hälsovård kan du bara dela projekt med användare som har autentiserats antingen med enkel inloggning (SSO) eller Adobe ID; du kan inte dela projekt med oautentiserade användare. Det är ditt ansvar att använda den här funktionen i enlighet med ditt företags interna datastyrningspolicyer och endast dela projektlänkar som innehåller personlig hälsoinformation (PHI) med användare som har rätt behörigheter.
 
 
 Så här delar du ett Analysis Workspace-projekt med vem som helst:
@@ -154,7 +156,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
       * Om det här alternativet inte visas har CJA-administratören inte aktiverat den här funktionen.
 
-      * Om det här alternativet är aktiverat och nedtonat kräver CJA-administratören Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt.
+      * Om det här alternativet är aktiverat och du inte kan inaktivera det, innebär det att CJA-administratören kräver Experience Cloud-autentisering för alla som har åtkomst till Analysis Workspace-projekt. Detta gäller alltid för organisationer som skaffat ett vårdcertifikat.
 
 1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** icon ![Ikon för att kopiera länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) för att kopiera länken till systemets Urklipp.
 
