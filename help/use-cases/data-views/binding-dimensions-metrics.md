@@ -3,9 +3,9 @@ title: Använd bindningsdimensioner och mätvärden i CJA
 description: Attributdimensioner till objektarrayer för komplex beständighetsanalys.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
 workflow-type: tm+mt
-source-wordcount: '1330'
+source-wordcount: '1328'
 ht-degree: 1%
 
 ---
@@ -78,11 +78,11 @@ Om du vill se intäkt per färg utan en bindande dimension, dimensionen `product
 | --- | --- |
 | neon orange | 2099 |
 
-Du kan gå till Data View Manager och binda produktfärg till produktnamn:
+Du kan gå till datavyhanteraren och binda produktfärg till produktnamn:
 
 ![Bindningsdimension](../assets/binding-dimension.png)
 
-När du anger den här beständighetsmodellen tar CJA hänsyn till produktnamnet när produktfärgen anges. När den känner igen samma produktnamn i en efterföljande händelse för den här besökaren, hämtas även produktfärgen. Samma data skulle se ut ungefär så här när du binder produktfärg till produktnamn:
+När du anger den här beständighetsmodellen tar CJA hänsyn till produktnamnet när produktfärgen anges. När den känner igen samma produktnamn i en efterföljande händelse för den här personen, hämtas även produktfärgen. Samma data skulle se ut ungefär så här när du binder produktfärg till produktnamn:
 
 | product.color | intäkt |
 | --- | --- |
@@ -237,19 +237,19 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
    }
    ```
 
-Om du använder en allokeringsmodell som inte innehåller någon bindningsdimension med söktermen, tilldelar alla tre produkterna intäkter endast till en enda sökterm. Om du till exempel använde Ursprunglig allokering med söktermsdimensionen:
+Om du använder en allokeringsmodell som inte innehåller någon bindningsdimension med söktermen, tilldelar alla tre produkterna intäkter endast till en enda sökterm. Om du till exempel använde [!UICONTROL Original] allokering med söktermdimensionen:
 
 | search_term | intäkt |
 | --- | --- |
 | boxingshandskar | $204.97 |
 
-Om du använde Senaste allokering med söktermdimensionen tilldelar alla tre produkterna fortfarande intäkter till en enda sökterm:
+Om du använt [!UICONTROL Most Recent] allokering med söktermsdimensionen tilldelar alla tre produkterna fortfarande intäkter till en enda sökterm:
 
 | search_term | intäkt |
 | --- | --- |
 | skor | $204.97 |
 
-Det här exemplet innehåller bara en besökare, men många besökare som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
+Det här exemplet innehåller bara en person, men många som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
 
 Du kan binda söktermer till produktnamn när sökningsmåttet finns för att korrekt tilldela söktermer intäkter.
 
@@ -259,9 +259,9 @@ I Analysis Workspace ser resultatet ut ungefär så här:
 
 | search_term | intäkt |
 | --- | --- |
-| boxingshandskar | 89,99 USD |
-| tennisracket | 34,99 USD |
-| skor | 79,99 USD |
+| boxingshandskar | $89.99 |
+| tennisracket | $34.99 |
+| skor | $79.99 |
 
 CJA identifierar automatiskt relationen mellan den valda dimensionen och bindningsdimensionen. Om bindningsdimensionen finns i en objektmatris när den valda dimensionen är på en högre nivå, krävs ett bindningsmått. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I ovanstående exempel innehåller sökresultatsidan alltid en sökterm och ett sökmått.
 
@@ -421,17 +421,17 @@ Om beständighet anges till den senaste allokeringen utan någon bindande dimens
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
-| bläddra | 419,98 |
+| bläddra | 419.98 |
 
 Om beständighet anges med ursprunglig allokering utan en bindande dimension, fördelas alla 419,98 USD av intäkten på `search` sökmetod.
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
-| sök | 419,98 |
+| sök | 419.98 |
 
 Men om du binder `product_finding_method` I Cart Adds-måttet kopplas varje produkt till rätt sökmetod.
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
-| sök | 399,99 |
-| bläddra | 19,99 |
+| sök | 399.99 |
+| bläddra | 19.99 |
