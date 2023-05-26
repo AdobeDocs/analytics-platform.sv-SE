@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
+source-git-commit: f9aafab436fa1f26be9ed2e433ded046bbb1135a
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '3067'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 
 |  | Namn | Beskrivning |
 |---------|----------|--------|
-| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa ![Funktion](assets/Smock_Function_18_N.svg) funktion,![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) funktionsmall,![Ikon för schemafält](assets/Smock_Folder_18_N.svg) schemafält, eller![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg)standardfält vidare till regelbyggaren. <br/>Använd listrutan för att välja mellan [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields]och [!UICONTROL Standard fields].<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med ![Ikonen Sök](assets/Smock_Search_18_N.svg) Sökruta. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
+| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa funktionen, funktionsmallen, schemafältet eller standardfältet till regelbyggaren. <br/>Använd listrutan för att välja mellan: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - listor tillgängliga [funktioner](#function-reference), </br>![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - listor tillgängliga [funktionsmallar](#function-templates), <br/>![Ikon för schemafält](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schema fields] - listar fält som är tillgängliga från datauppsättningskategorier (händelse, profil, sökning) och tidigare definierade härledda fält, och <br/>![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - standardfält (t.ex. ID för plattformsdatauppsättning). Endast strängfält och numeriska standardfält visas i väljaren. Om funktionen stöder andra datatyper kan standardfält med dessa andra datatyper väljas för värden eller fält i regelgränssnittet.<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med ![Ikonen Sök](assets/Smock_Search_18_N.svg) Sökruta. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
 | 2 | **Regelverktyget** | Du skapar det härledda fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelbyggaren. Funktionstypen bestämmer regelns gränssnitt.<br/>Se [Regelgränssnitt](#rule-interface) för mer information. <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan finns i regelbyggaren. Den sista regeln i regelbyggaren avgör det härledda fältets slutliga utdata. |
 | 3 | **[!UICONTROL ** Fältinställningar **]** | Du kan namnge och beskriva det härledda fältet och kontrollera dess fälttyp. |
 | 4 | **[!UICONTROL ** Slutlig utmatning **]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du gör i det härledda fältet i regelbyggaren. |
@@ -65,9 +65,9 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 |  | Namn | Beskrivning |
 |---------|----------|--------|
 | A | **Regelnamn** | Regelnamnet är som standard **Regel X** (X refererar till ett sekvensnummer). Om du vill redigera namnet på en regel markerar du dess namn och skriver in det nya namnet, till exempel `Query Parameter`. |
-| B | **Funktionsnamn** | Det valda funktionsnamnet för regeln, till exempel [!DNL URL PARSE]. När funktionen är den sista i funktionssekvensen och fastställer de slutliga utdatavärdena följs funktionsnamnet av [!DNL - FINAL OUTPUT], till exempel [!DNL URL PARSE - FINAL OUTPUT]. <br/>Om du vill visa ett popup-fönster med mer information om funktionen väljer du ![Hjälpikon](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Funktionsnamn** | Det valda funktionsnamnet för regeln, till exempel [!UICONTROL URL PARSE]. När funktionen är den sista i funktionssekvensen och fastställer de slutliga utdatavärdena följs funktionsnamnet av [!UICONTROL - FINAL OUTPUT], till exempel [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>Om du vill visa ett popup-fönster med mer information om funktionen väljer du ![Hjälpikon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Regelbeskrivning** | Du kan också lägga till en beskrivning till en regel.<br/>Välj ![Mer-ikon](assets/More.svg)väljer **[!UICONTROL ** Lägg till beskrivning **]** för att lägga till en beskrivning eller **[!UICONTROL ** Redigera beskrivning **]** om du vill redigera en befintlig beskrivning.<br/>Använd redigeraren för att ange en beskrivning. Du kan använda verktygsfältet för att formatera texten (med formatväljare, fet, kursiv, understrykning, höger, vänster, centrerad, färg, nummerlista, punktlista) och lägga till länkar till extern information. <br/>Klicka utanför redigeraren för att slutföra redigeringen av beskrivningen. |
-| D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Se [Funktionsreferens](#function-reference) Detaljerad information om varje funktion som stöds. |
+| D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Listrutan för [!UICONTROL Field] eller [!UICONTROL Value] visar alla kategorier av fält (regler, standardfält, fält) som är tillgängliga, baserat på den typ av indata som funktionen förväntar sig. Se [Funktionsreferens](#function-reference) Detaljerad information om varje funktion som stöds. |
 
 {style="table-layout:auto"}
 
@@ -161,7 +161,7 @@ För varje funktion som stöds finns information nedan:
    - datatyp: typ av data som stöds,
    - indata: möjliga värden för indata,
    - inkluderade operatorer: operatorer som stöds för denna funktion (om sådana finns),
-   - gräns: maximalt antal regler (med den här funktionen) som du kan använda i ett härlett fält,
+   - begränsningar: begränsningar som gäller för denna specifika funktion,
    - utdata.
 
 - Användningsfall, inklusive
@@ -174,7 +174,7 @@ För varje funktion som stöds finns information nedan:
 
 <!-- Concatenate -->
 
-### [!DNL Concatenate]
+### Sammanfoga
 
 Kombinerar två eller flera fält, härledda fält eller användarinmatade värden till ett enda fält med definierade avgränsare.
 
@@ -182,9 +182,9 @@ Kombinerar två eller flera fält, härledda fält eller användarinmatade värd
 
 ## Specifikationer {#concatenate-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
-|---|---|---|:--:|---|
-| <p>Sträng</p> | <ul><li>Två eller flera värden som ska kombineras<ul><li>Fält</li><li>Härlett värde från en tidigare regel</li><li>Användardefinierat värde</li></ul></li><li>Avgränsare<ul><li>Inmatning eller markering av en avgränsare för varje värde</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>2</p> | <p>Nytt härlett fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+|---|---|---|---|---|
+| <p>Sträng</p> | <ul><li>För varje [!UICONTROL Value]:<ul><li>Regel</li><li>Standardfält</li><li>Fält</li><li>Användarinmatade indata</li></ul></li><li>För varje [!UICONTROL Delimiter]:<ul><li>Användarinmatade indata</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>2 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -234,7 +234,7 @@ Rapporten ska se ut så här:
 
 Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du använder [!UICONTROL CONCATENATE] funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
 
-![[!DNL Concatenate] regel](assets/concatenate.png)
+![Sammanfogningsregel](assets/concatenate.png)
 
 ### Data efter {#concatenate-dataafter}
 
@@ -252,7 +252,7 @@ Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du anv�
 
 <!-- CASE WHEN -->
 
-### [!DNL Case When]
+### Skiftläge
 
 Använder villkorliga värden som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i ett nytt härlett fält, baserat på villkorens sekvens.
 
@@ -260,12 +260,11 @@ Använder villkorliga värden som baseras på definierade villkor från ett elle
 
 ## Specifikationer {#casewhen-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
-|---|---|---|:---:|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum/datum/tid</li></ul> | <ul><li>Indatafält</li><li>Kriterier</li></ul> | <p><u>Strängar</u></p><ul><li>Är lika med</li><li>Liknar alla termer</li><li>Innehåller frasen</li><li>Innehåller valfri term</li><li>Innehåller alla termer</li><li>Börjar med</li><li>Börjar med valfri term</li><li>Slutar med</li><li>Slutar med valfri term</li><li>Är inte lika med</li><li>Motsvarar inte någon term</li><li>Innehåller inte frasen</li><li>Innehåller inga termer</li><li>Innehåller inte alla termer</li><li>Börjar inte med</li><li>Börjar inte med någon term</li><li>Slutar inte med</li><li>Slutar inte med någon term</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Numeriskt</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är större än</li><li>Är större än eller lika med</li><li>Är mindre än</li><li>Är mindre än eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul><p><u>Datum</u></p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är senare än</li><li>Är senare än eller lika med</li><li>Är före</li><li>Är före eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul> | <p>5</p> | <p>Nytt härlett fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>För varje [!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Regel</li><li>Standardfält</li><li>Fält</li></ul><li>[!UICONTROL Criterion] (se inkluderade operatorer, baserat på vald värdetyp)</li></ul></li><li>För varje [!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Regel</li><li>Standardfält</li><li>Fält</li></ul></ul></li></ul> | <p>Strängar</p><ul><li>Är lika med</li><li>Liknar alla termer</li><li>Innehåller frasen</li><li>Innehåller valfri term</li><li>Innehåller alla termer</li><li>Börjar med</li><li>Börjar med valfri term</li><li>Slutar med</li><li>Slutar med valfri term</li><li>Är inte lika med</li><li>Motsvarar inte någon term</li><li>Innehåller inte frasen</li><li>Innehåller inga termer</li><li>Innehåller inte alla termer</li><li>Börjar inte med</li><li>Börjar inte med någon term</li><li>Slutar inte med</li><li>Slutar inte med någon term</li><li>Är inställd</li><li>Har inte angetts</li></ul><p>Numeriskt</p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är större än</li><li>Är större än eller lika med</li><li>Är mindre än</li><li>Är mindre än eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul><p>Datum</p><ul><li>Är lika med</li><li>Är inte lika med</li><li>Är senare än</li><li>Är senare än eller lika med</li><li>Är före</li><li>Är före eller lika med</li><li>Är inställd</li><li>Har inte angetts</li></ul> | <ul><li>5 funktioner per härlett fält</li><li>200 operatorer per härlett fält. Ett exempel på en enskild operator är &#39;Referensdomän innehåller google&#39;. </li></ul> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
-
 
 ## Användningsfall 1 {#casewhen-uc1}
 
@@ -294,7 +293,7 @@ Om din plats får följande exempelhändelser, som innehåller [!UICONTROL Refer
 
 ### Data före {#casewhen-uc1-databefore}
 
-| [!UICONTROL Referrer] | [!DNL Page URL] |
+| [!DNL Referrer] | [!DNL Page URL] |
 |----|----|
 | `https://facebook.com` | `https://site.com/home` |
 | `https://abc.com` | `https://site.com/?cid=ds_12345678` |
@@ -311,7 +310,7 @@ Du definierar ett nytt `Marketing Channel` härlett fält. Du använder [!UICONT
 
 Observera hur funktionen används [!UICONTROL URL PARSE] för att definiera regler för hämtning av värden för `Page Url` och `Referring Url` före [!UICONTROL CASE WHEN] regler tillämpas.
 
-![[!DNL Case when] regel 1](assets/case-when-1.png)
+![Fall när regel 1](assets/case-when-1.png)
 
 ### Data efter {#casewhen-uc1-dataafter}
 
@@ -365,7 +364,7 @@ Din webbplats samlar in följande värden för din [!DNL Product Finding Methods
 
 Du definierar en `Product Finding Methods (new)` härlett fält. Du skapar följande [!UICONTROL CASE WHEN] regler i regelbyggaren. Dessa regler tillämpar logik för alla möjliga varianter av det gamla [!UICONTROL Product Finding Methods] fältvärden för `search` och `browse` med [!UICONTROL Contains the phrase] kriterium.
 
-![[!DNL Case When] regel 2](assets/case-when-2.png)
+![Fall när regel 2](assets/case-when-2.png)
 
 ### Data efter {#casewhen-uc2-dataafter}
 
@@ -438,7 +437,7 @@ Din rapport ska se ut så här:
 
 Du definierar en `Trip Duration (bucketed)` härlett fält. Du skapar följande [!UICONTROL CASE WHEN] regel i regelbyggaren. Den här regeln använder logik för att bucket den gamla [!UICONTROL Trip Duration] fältvärden i tre värden: `short trip`, `medium  trip`och `long trip`.
 
-![[!DNL Case When] regel 3](assets/case-when-3.png)
+![Fall när regel 3](assets/case-when-3.png)
 
 
 ### Data efter {#casewhen-uc3-dataafter}
@@ -486,7 +485,7 @@ Följande begränsningar gäller och används när *markera* och *inställning* 
 
 <!-- FIND AND REPLACE -->
 
-### [!DNL Find and Replace]
+### Sök och ersätt
 
 Söker efter alla värden i ett markerat fält och ersätter dessa värden med ett annat värde i ett nytt härlett fält.
 
@@ -494,9 +493,9 @@ Söker efter alla värden i ett markerat fält och ersätter dessa värden med e
 
 ## Specifikationer {#findreplace-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
-|---|---|---|:---:|---|
-| <p>Sträng</p> | <ul><li><span>Fältvillkor för När ska ersättas</span></li><li><span>Fältvärdet Ersätt med</span><ul><li><span>Anges av användaren</span></li><li><span>Separat fält</span></li></ul></li></ul> | <p><u>Strängar</u></p><ul><li>Sök alla och ersätt alla</li></ul> | <p>1</p> | <p>Nytt härlett fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+|---|---|---|---|---|
+| <p>Sträng</p> | <ul><li>För kriterier:<ul><li>[!UICONTROL Value]<ul><li>Regel</li><li>Standardfält</li><li>Fält</li></ul></li></ul></li><li>För varje [!UICONTROL Find all], [!UICONTROL and replace all with]:<ul><li>[!UICONTROL Value]</li><ul><li>Användarinmatade indata</li></ul></li></ul></ul> | <p>Strängar</p><ul><li>[!UICONTROL Find all], [!UICONTROL and replace all with]</li></ul> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -537,7 +536,7 @@ Du har fått felaktiga värden för din rapport om externa marknadsföringskanal
 
 Du definierar en `Email Marketing (updated)` härlett fält. Du använder [!UICONTROL FIND AND REPLACE] funktion för att definiera en regel för att söka efter och ersätta alla förekomster av `email%20marketing` med `email marketing`.
 
-![[!DNL Find and Replace] regel](assets/find-and-replace.png)
+![Sök och ersätt-regel](assets/find-and-replace.png)
 
 ### Data efter {#findreplace-uc-dataafter}
 
@@ -556,7 +555,7 @@ Du definierar en `Email Marketing (updated)` härlett fält. Du använder [!UICO
 
 <!-- LOOKUP -->
 
-### [!DNL Lookup]
+### Sök
 
 Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden.
 
@@ -565,9 +564,9 @@ Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden.
 
 ## Specifikationer {#lookup-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
-|---|---|---|:---:|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Ett fält</li><li>Sökfil<ul><li>Nyckelkolumn</li><li>Ny fältkolumn</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt härlett fält</p> |
+| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>För [!UICONTROL Field to apply lookup]:<ul><li>Regel</li><li>Standardfält</li><li>Fält</li></ul></li><li>För [!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Användarinmatade indata</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -623,7 +622,7 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 
 Du definierar en `Hotel Name` härlett fält. Du använder [!UICONTROL LOOKUP] funktion för att definiera en regel där du kan slå upp värden för [!UICONTROL Hotel ID] och ersätt med nya värden.
 
-![[!DNL Lookup] regel 1](assets/lookup-1.png)
+![Sökregel 1](assets/lookup-1.png)
 
 ### Data efter {#lookup-uc1-dataafter}
 
@@ -658,7 +657,7 @@ Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den
 
 Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL LOOKUP] funktion för att definiera en regel där du kan slå upp värden för dina befintliga [!UICONTROL Page Name] och ersätt med uppdaterade korrekta värden.
 
-![[!DNL Lookup] regel 2](assets/lookup-2.png)
+![Sökregel 2](assets/lookup-2.png)
 
 ### Data efter {#lookup-uc2-dataafter}
 
@@ -676,7 +675,7 @@ Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL 
 
 <!-- URL PARSE -->
 
-### [!DNL URL Parse]
+### URL-parsning
 
 Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågeparametrar.
 
@@ -685,8 +684,8 @@ Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågep
 ## Specifikationer {#urlparse-io}
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
-|---|---|---|:---:|---|
-| <ul><li>Sträng</li></ul> | <ul><li>Ett fält</li><li>Analysalternativ<ul><li>Hämta protokoll</li><li>Hämta värd</li><li>Hämta sökväg</li><li>Hämta frågevärde<ul><li>Frågeparam</li></ul></li><li>Hämta hash-värde</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5</p> | <p>Nytt härlett fält</p> |
+|---|---|---|---|---|
+| <ul><li>Sträng</li></ul> | <ul><li>För [!UICONTROL Field]:</li><ul><li>Regel</li><li>Standardfält</li><li>Fält</li></ul><li>För [!UICONTROL Option]:<ul><li>[!UICONTROL Get protocol]</li><li>[!UICONTROL Get host]</li><li>[!UICONTROL Get path]</li><li>[!UICONTROL Get query string value]<ul><li>[!UICONTROL Query parameter]:<ul><li>Användarinmatade indata</li></ul></li></ul></li><li>[!UICONTROL Get hash value]</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -710,7 +709,7 @@ Du vill bara använda den refererande domänen från den refererande URL:en som 
 
 Du definierar en  `Referring Domain` härlett fält. Du använder [!UICONTROL URL PARSE] funktion som definierar en regel som hämtar värden från [!UICONTROL Referring URL] och lagra det i det nya härledda fältet.
 
-![[!DNL Url Parse] regel 1](assets/url-parse-1.png)
+![ URL-tolkningsregel 1](assets/url-parse-1.png)
 
 ### Data efter {#urlparse-uc1-dataafter}
 
@@ -742,7 +741,7 @@ Du vill använda värdet för `cid` parameter för en frågesträng i en [!DNL P
 
 Du definierar en `Query String CID` härlett fält. Du använder [!UICONTROL URL PARSE] funktion för att definiera en regel som hämtar värdet för frågesträngsparametern i [!UICONTROL Page URL] fält, ange `cid` som frågeparametern. Utdatavärdet lagras i det nya härledda fältet.
 
-![[!DNL Url Parse] regel 2](assets/url-parse-2.png)
+![URL-tolkningsregel 2](assets/url-parse-2.png)
 
 ### Data efter {#urlparse-uc2-dataafter}
 
@@ -755,3 +754,10 @@ Du definierar en `Query String CID` härlett fält. Du använder [!UICONTROL URL
 {style="table-layout:auto"}
 
 +++
+
+## Begränsningar
+
+Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
+
+- Du kan använda högst 100 olika schemafält (exklusive standardfält) när du definierar regler för ett härlett fält.
+- Du kan ha högst 100 härledda fält per CJA-anslutning.
