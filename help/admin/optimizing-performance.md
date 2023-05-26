@@ -3,7 +3,7 @@ description: Faktorer som påverkar CJA- och Workspace-prestanda och optimeringa
 title: Optimera prestanda för CJA och Analysis Workspace
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
-source-git-commit: b6e8dff7fc2ec16200cba5ac8ef029880bd830ff
+source-git-commit: 935839190d86dd907a45c311c9b53236edaaaa2e
 workflow-type: tm+mt
 source-wordcount: '1911'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Detta är de vanligaste frågefaktorerna som påverkar CJA-prestanda generellt:
 | **Visualiseringskomplexitet** (filter, mätvärden, filter) | Den typ av visualisering (t.ex. bortfall jämfört med frihandstabell) som läggs till i ett projekt påverkar inte projektets prestanda särskilt mycket. Det är den komplexitet i visualiseringen som ökar bearbetningstiden. | Faktorer som gör en visualisering mer komplicerad:<ul><li>Intervall med begärda data</li><li>Antal filter som använts. till exempel filter som används som rader i en frihandstabell</li><li>Användning av komplexa filter</li><li>[Statiskt objekt](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) rader eller kolumner i frihandstabeller</li><li>Filter som används på rader i frihandstabeller</li><li>Antal mätvärden som ingår, särskilt beräknade mätvärden som använder filter</li></ul> |
 | **Datacenterkapacitet** | Den rapporteringskapacitet som ni och andra kunder delar inom ett datacenter i Adobe. | Detta påverkas av antalet samtidiga frågor som har ställts av din organisation och andra organisationer i ditt datacenter. | Din organisation har rätt till en fast kapacitet, och om systemet är belastat med ljus kommer Adobe att lägga mer kapacitet till dig, över och efter din rätt till ersättning. |
 | **Antal samtidiga frågor** | Antalet frågor som din organisation begär samtidigt. Har alla företag rätt till minst fem samtidiga frågor??? Om en rapport tar lång tid beror det oftast på att den är i kö tillsammans med andra rapporter. Det innebär att din organisation försöker köra många samtidiga begäranden mot en viss datavy. Frågor kan komma från API-begäranden, rapportgränssnitt (Analysis Workspace, Report Builder, osv.), schemalagda projekt, schemalagda aviseringar och samtidiga användare som gör rapporteringsförfrågningar. Sprid era förfrågningar och scheman för datavyn jämnare under dagen. Du kan även ändra dina förfrågningar till lågbelastningstider när det är möjligt. Månadsmorgar, tisdagsmorgon och den första varje månad är de bästa rapporteringstiderna. |
-| **Visningsstorlek för data???** | Mängden data som samlas in i datavyn. |  | Kontakta implementeringsteamet eller CJA-experten för att ta reda på om det finns implementeringsförbättringar som kan göras för att förbättra den övergripande upplevelsen av CJA. |
-| **Komplexitet för dimensionsinställningar** | Mycket komplexa dimensioner kan ha en betydande inverkan på projektets prestanda. | Anpassade fält ökar komplexiteten. | Minska antalet anpassade fält eller skapa separata dimensioner. |
-| **Dimensioner med många unika värden** | Dessa mått kallas även kardinalitetsmått och kan påverka vad som kan rapporteras. | Se [högkardinalitetsmått](/help/components/dimensions/high-cardinality.md) | Se [högkardinalitetsmått](/help/components/dimensions/high-cardinality.md) |
+| **Anslutningsstorlek** | Mängden data som samlas in i din anslutning. |  | Kontakta implementeringsteamet eller CJA-experten för att ta reda på om det finns implementeringsförbättringar som kan göras för att förbättra den övergripande upplevelsen av CJA. |
+| **Komplexitet för dimensionsinställningar** | Mycket komplexa dimensioner kan ha en betydande inverkan på projektets prestanda, särskilt dimensioner eller mätvärden som baseras på komplexa anpassade fält. |  | Minska antalet anpassade fält eller skapa separata dimensioner. |
+| **Dimensioner med många unika värden** | Dessa mått kallas även för högkardinalitetsmått och kan påverka rapportens prestanda. | Se [högkardinalitetsmått](/help/components/dimensions/high-cardinality.md) | Se [högkardinalitetsmått](/help/components/dimensions/high-cardinality.md) |
 
 ## [!UICONTROL Help] > [!UICONTROL Performance] i Analysis Workspace
 
