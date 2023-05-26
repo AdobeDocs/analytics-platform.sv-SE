@@ -3,40 +3,15 @@ description: Beskriver de två viktigaste sätten att hitta metrisk sortering oc
 title: Hitta mätvärden
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 2%
+source-wordcount: '65'
+ht-degree: 6%
 
 ---
 
 # Hitta mätvärden
 
-Beskriver de två viktigaste sätten att hitta mätvärden: sortering och filtrering.
+Du kan hitta mätvärden i Analysis Workspace på samma sätt som du hittar andra typer av komponenter.
 
-## Sortering {#sorting}
-
-När du öppnar en rapport och klickar på Metrisk-ikonen  ![](assets/metrics_icon.png) till vänster om en rapport för att ta upp Metrics-järnvägen, **[!UICONTROL Sort By]** i den nedrullningsbara listan i Metrics Selector visas fyra sorteringsalternativ:
-
-![](assets/cm_sort.png)
-
-| Alternativ | När ska den användas |
-|---|---|
-| Alfabetiskt | Användbart om du vet namnet. |
-| Rekommenderas | Vanliga mätvärden som används i rapporten - de samlas in av de som använder statistik i bakgrunden i den här rapporten. |
-| Används ofta | Användbar om du är nybörjare och behöver se vad som ofta används i rapporten. |
-| Senast använda | Användbart om du arbetar med ett projekt och använder samma uppsättning mätvärden om och om igen. |
-
-## Filtrera - Avancerad markering {#filtering-advanced}
-
-När du öppnar en rapport och klickar på Metrisk-ikonen klickar du sedan på **[!UICONTROL Manage]**. Klicka på filterikonen. Du kan filtrera på flera olika sätt.
-
-![](assets/cm_advanced_sel.png)
-
-| Om du vill | Sortera sedan efter |
-| --- | --- |
-| Visa alla mätvärden i den här datavyn. | Andra filter > Visa alla |
-| Visa bara de mått du har | Andra filter > Mitt |
-| Visa mått som delas med mig från någon annan | Ägare eller andra filter > Delat med mig |
-| Visa endast mätvärden som godkänts av företaget. | Godkänd |
-| Filtrera mätvärden för ett projekt som du arbetar med. | En av taggarna. |
+Mer information om hur du snabbt hittar komponenter finns i [Söka, filtrera och sortera komponentlistan](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-components/overview.html?lang=en#search%2C-filter%2C-and-sort-the-component-list) in [Komponenter - översikt](/help/components/overview.md).
