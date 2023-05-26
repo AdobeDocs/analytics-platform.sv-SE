@@ -1,9 +1,9 @@
 ---
 title: Tratt
 description: Identifiera friktionsområden i en serie steg.
-source-git-commit: c47c4364cbf027c24a355bb306ee786c3e2446a9
+source-git-commit: 9c4ee66d35182cb89678ae868ff35e364df361a9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-The **Tratt** [Analystyp](overview.md) ger en visuell representation av en användarresa eller konverteringsprocess i produkten. Den vågräta axeln representerar varje händelse som en användare måste peka i ordning. Den lodräta axeln representerar den procentandel användare som berörde varje händelse. Alla kontaktytor måste göras i ordning, men kan inträffa när som helst i rapportfönstret. Användningsexempel för den här analystypen är:
+The **Tratt** [Analystyp](overview.md) ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje händelse som en användare måste peka i ordning. Den lodräta axeln representerar den procentandel användare eller sessioner som berörde varje händelse. Alla kontaktytor måste göras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret. Användningsexempel för den här analystypen är:
 
 * **Konverteringsanalys**: Med Trnel kan du analysera konverteringar i varje steg i tratten. Genom att spåra antalet användare som går från ett steg till nästa kan ni identifiera flaskhalsar som har ovanliga eller oönskade konverteringsgrader. Denna information är värdefull för att förstå var du kan förbättra produkten och få omedelbara resultat.
 * **Optimering av introduktion**: Funnel är till hjälp för att optimera er produkts introduktionsprocess. Genom att undersöka användarbeteenden kring viktiga händelser kan du identifiera vilka steg som användare kämpar med eller misslyckas med.
@@ -25,8 +25,8 @@ The **Tratt** [Analystyp](overview.md) ger en visuell representation av en anvä
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **Steg**: De beröringspunkter för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg i en rapport.
-* **Folk**: Anger de segment som du vill mäta i rapporten. Varje segment som är markerat här delar upp varje steg i flera fält. Varje färg representerar ett eget segment. Stöd för upp till tre segment.
+* **Steg**: De beröringspunkter för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
+* **Folk**: De segment som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ## Vytyper
 
@@ -38,10 +38,10 @@ Trnel erbjuder följande vytyper. Du kan ändra vytyp med hjälp av listrutan h�
 
 Trnel har följande diagraminställningar. Du kan justera diagraminställningarna på menyn mellan vytypen och kalenderväljaren.
 
-* **Mått**: Anger måttet som du vill mäta. Du kan välja sessioner och användare.
-* **Diagramtyp**: Anger vilken typ av visualisering du vill använda. Det enda alternativet är Steg.
-* **Konvertering från**: Anger procentberäkningen från steg till steg. Alternativen är Första steget och Föregående steg.
+* **Mått**: Det mått som du vill mäta. Du kan välja sessioner och användare.
+* **Diagramtyp**: Den typ av visualisering som du vill använda. Det enda alternativet är Steg.
+* **Konvertering från**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från första steget eller föregående steg.
 
 ## Datumintervall
 
-Start- och slutdatumet för projektet. Det finns förinställningar för datumintervall tillgängliga, eller så kan du använda kalenderväljaren för att ange exakt önskat datum. Datumintervall är inte tillgängliga för den här analystypen.
+Start- och slutdatumet. Det finns förinställningar för datumintervall tillgängliga, eller så kan du använda kalenderväljaren för att ange exakt önskat datum.

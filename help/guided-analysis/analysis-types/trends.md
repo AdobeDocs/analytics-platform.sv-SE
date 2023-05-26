@@ -1,9 +1,9 @@
 ---
 title: Trender
 description: Hitta mönster och förändringar i användarengagemanget över tid.
-source-git-commit: c47c4364cbf027c24a355bb306ee786c3e2446a9
+source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ The **Trender** [Analystyp](overview.md) ger värdefull information om hur produ
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **Händelser**: Anger händelser som du vill mäta i rapporten. Varje händelse som markeras här representeras som en färgad linje eller en uppsättning staplar, beroende på diagramtyp. En rad som representerar händelsen trended läggs till i tabellen. Upp till fem händelser stöds.
-* **Folk**: Anger de segment som du vill mäta i rapporten. Varje segment som är markerat här dubblerar antalet rader i diagrammet och raderna i tabellen. Varje uppsättning med händelser representeras för varje segment. Stöd för upp till fem segment.
+* **Händelser**: De händelser som du vill mäta i din rapport. Varje händelse som markeras här representeras som en färgad linje eller en uppsättning staplar, beroende på diagramtyp. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
+* **Folk**: De segment som du vill mäta i rapporten. Varje segment som är markerat här dubblerar antalet rader i diagrammet och raderna i tabellen. Varje uppsättning med händelser representeras för varje segment. Du kan inkludera upp till fem segment.
 
 ## Vytyper
 
@@ -38,8 +38,8 @@ Trender erbjuder följande vytyper. Du kan ändra vytyp med hjälp av listrutan 
 
 Trender har följande diagraminställningar. Du kan justera diagraminställningarna på menyn mellan vytypen och kalenderväljaren.
 
-* **Mått**: Anger måttet som du vill mäta. Alternativen är Händelser, Sessioner, Användare, Händelser per session och Händelser per användare.
-* **Diagramtyp**: Anger vilken typ av visualisering du vill använda. Du kan välja mellan Linje, Stapel, Staplad liggande och Staplad yta.
+* **Mått**: Det mått som du vill mäta. Alternativen är Händelser, Sessioner, Användare, Händelser per session och Händelser per användare.
+* **Diagramtyp**: Den typ av visualisering som du vill använda. Du kan välja mellan Linje, Stapel, Staplad liggande och Staplad yta.
 
 ## Använd tidsjämförelse
 
@@ -51,5 +51,5 @@ Tillgängliga tidsjämförelsealternativ omfattar föregående period, 13 veckor
 
 Anger önskat datumintervall. Den här inställningen har två viktiga komponenter:
 
-* **Intervall**: Datumgranulariteten som du vill visa data i. Giltiga alternativ är Timly, Daily, Weekly, Monthly och Quarterly. Samma datumintervall kan ha olika intervall som påverkar antalet datapunkter i diagrammet och antalet kolumner i tabellen. Om du till exempel visar en rapport som sträcker sig över tre dagar med daglig granularitet visas bara tre datapunkter, medan en rapport som sträcker sig över tre dagar med timgranularitet visar 72 datapunkter.
-* **Datum**: Start- och slutdatumet för projektet. Det finns förinställningar för datumintervall tillgängliga, eller så kan du använda kalenderväljaren för att ange exakt önskat datum.
+* **Intervall**: Datumgranulariteten som du vill visa data i. Giltiga alternativ är Timly, Daily, Weekly, Monthly och Quarterly. Samma datumintervall kan ha olika intervall som påverkar antalet datapunkter i diagrammet och antalet kolumner i tabellen. Om du till exempel visar en analys som sträcker sig över tre dagar med daglig granularitet visas bara tre datapunkter, medan en analys som sträcker sig över tre dagar med timgranularitet visar 72 datapunkter.
+* **Datum**: Start- och slutdatumet. Det finns förinställningar för datumintervall tillgängliga, eller så kan du använda kalenderväljaren för att ange exakt önskat datum.
