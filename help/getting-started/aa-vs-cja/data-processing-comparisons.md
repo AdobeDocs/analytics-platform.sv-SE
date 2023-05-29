@@ -2,7 +2,7 @@
 title: Jämför databearbetning i Adobe Analytics- och CJA-rapporteringsfunktioner
 description: Förstå skillnaderna i databehandling för de olika rapportfunktionerna
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a38e2afac7645e9249e42e0b4830f5249a69b522
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 4%
@@ -45,7 +45,7 @@ I tabellen nedan definieras terminologi för de olika typer av bearbetningslogik
 | Beräknade värden | Utvärdering av kundskapade anpassade mätvärden som kan baseras på komplexa formler, inklusive segment och filter. | Exempel: Antal personer som köpt röda skor. |
 | Attributionslogik | Logik för att beräkna attribuering. | Exempel: eVar beständighet. |
 | Komponentinställningar | Använda anpassningar av mätvärden eller dimensioner, som attribuering, beteende, format med mera | Exempel: värdepaketering för att kombinera numeriska värden baserade på ett intervall |
-| Anpassade fält | Logiken tillämpas på schema- eller standardfält som en del av definitionen av komponenter i en datavy. | Exempel: skapa en ny marknadsföringskanaldimension |
+| Härledda fält | Logiken tillämpas på schema- eller standardfält som en del av definitionen av komponenter i en datavy. | Exempel: skapa en ny marknadsföringskanaldimension |
 
 {style="table-layout:auto"}
 
