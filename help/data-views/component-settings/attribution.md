@@ -4,16 +4,20 @@ description: Gör att du kan ange standardattribuering för ett mätresultat.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1777'
 ht-degree: 0%
 
 ---
 
 # Inställningar för attribueringskomponent
 
-Attribution ger er möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
+Attribution ger er möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser.
+
+![](../assets/attribution-settings.png)
+
+Exempel:
 
 1. En person på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. De lägger produkten i varukorgen, men köper den inte.
 2. Nästa dag ser de ett inlägg i sociala medier från en av deras vänner. De klickar på länken och slutför sedan köpet.
@@ -22,7 +26,7 @@ I vissa rapporter kanske du vill ha den beställning som är kopplad till betald
 
 Med den här inställningen för datavykomponenten kan du ange en standardattribueringsmodell för ett mätresultat. Du kan åsidosätta en given metrisk attribueringsmodell när du arbetar i Analysis Workspace.
 
-![Attribuering](../assets/attribution-settings.png)
+
 
 Om din organisation kräver att ett mätresultat har flera attribueringsinställningar kan du göra något av följande:
 

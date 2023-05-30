@@ -4,7 +4,7 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 7%
@@ -16,12 +16,12 @@ ht-degree: 7%
 
 [!UICONTROL Persistence] är möjligheten för ett givet dimensionsvärde att relatera till ett mätvärde efter händelsen det är inställt på. Den använder en kombination av allokering och förfallodatum.
 
+![Persistence](../assets/persistence.png)
+
 * **Allokering** I kan du bestämma vilket värde som ska behållas när mer än en dimensionspost kan finnas i taget i en enda kolumn.
 * **Förfaller** I kan du bestämma hur länge ett dimensionsobjekt kvarstår efter den händelse det är inställt på.
 
 [!UICONTROL Persistence] är bara tillgängligt för dimensioner och är retroaktivt för de data som det tillämpas på. Det är en omedelbar dataomvandling som sker innan filtrering eller andra analysåtgärder tillämpas.
-
-![Persistence](../assets/persistence.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
