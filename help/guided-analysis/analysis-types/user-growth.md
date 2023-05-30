@@ -1,9 +1,10 @@
 ---
 title: Användartillväxt
 description: Håll koll på hur produktens användarbas växer.
-source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
+exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
+source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Användningsexempel för den här analystypen är:
 
 * **Resultatutvärdering**: Med användartillväxten kan du bedöma den övergripande prestandan för din produkt när det gäller att skaffa nya användare. Genom att följa tillväxttrender kan du bättre förstå om produkten lockar och behåller användare i önskad takt.
 * **Bevarande och bortfall av användare:** Användartillväxten ger en tydlig visualisering runt perioder med hög eller låg användarlojalitet. Genom att känna igen dessa perioder av hög eller låg lojalitet kan du fatta produktbeslut för att öka kundlojaliteten eller hjälpa till att minimera bortfallet.
-* **Kampanjbedömning**: Genom att se på användartillväxten för en viss kampanj kan ni förstå inte bara hur mycket trafik den genererade, utan även hur väl kampanjen hjälpte användarna att hålla sig engagerade.
+* **Kampanjbedömning**: Genom att se på användartillväxten kring en viss kampanj kan ni förstå inte bara hur mycket trafik den genererade, utan även hur väl kampanjen hjälpte användarna att förbli engagerade.
 
 [Skärmbild av användartillväxt]
 
@@ -33,8 +34,8 @@ Användningsexempel för den här analystypen är:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **Händelser**: Händelsen som du vill mäta. Eftersom den här analystypen är användarbaserad kan en användare peka på händelsen en gång inom den angivna datumgranulariteten för att räknas som en aktiv användare. Du kan bara inkludera en händelse.
-* **Folk**: Det segment som du vill mäta. Du kan bara inkludera ett segment.
+* **Händelser**: Händelsen som du vill mäta. Eftersom den här analystypen är användarbaserad kan en användare peka på händelsen en gång inom den angivna datumgranulariteten för att räknas som en aktiv användare. Du kan bara inkludera en händelse i en fråga.
+* **Folk**: Det segment som du vill mäta. Du kan bara inkludera ett segment i en fråga.
 
 ## Vytyper
 

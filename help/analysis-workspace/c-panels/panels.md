@@ -3,7 +3,7 @@ description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
@@ -95,7 +95,7 @@ Med dynamiska nedrullningsbara filter kan du bestämma tillgängliga värden bas
 
 Samma koncept gäller för alla dimensioner. endast dimensionsobjekt som visas inom panelens datumintervall och markerade filter visas. De Dimensioner som markeras i statiska nedrullningsbara filter påverkar tillgängliga värden i dynamiska nedrullningsbara filter. Inversen är dock inte sann; De Dimensioner som markeras i dynamiska nedrullningsbara filter påverkar inte tillgängliga värden i statiska nedrullningsbara filter.
 
-Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart filter så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara filter kan innehålla fler värden. Välj **[!UICONTROL Clear All]** för att ta bort markeringen från alla nedrullningsbara filter för den panelen.
+Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart filter så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara filter kan innehålla fler värden. Välj **[!UICONTROL Reset all]** för att ta bort markeringen från alla nedrullningsbara filter för den panelen.
 
 Så här skapar du ett dynamiskt nedrullningsbart filter:
 
