@@ -4,7 +4,7 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Ovanför varje kolumn visas ett filter när du håller pekaren över den. Genom 
 |--- |--- |
 | [!UICONTROL Focus on this node] | Ändra fokus till den valda noden. Flödesdiagrammets fokusnod visas i mitten. |
 | [!UICONTROL Start Over] | Returnerar dig till Frihand-diagramverktyget, där du kan skapa ett nytt flödesdiagram. |
-| [!UICONTROL Create Segment from this point in flow] | Skapa ett segment. Då kommer du till segmentbyggaren där du kan konfigurera det nya segmentet. |
+| [!UICONTROL Create Filter from this point in flow] | Skapa ett filter. Det här tar dig in i Filter Builder, där du kan konfigurera det nya filtret. |
 | [!UICONTROL Breakdown] | Dela upp noden efter tillgängliga Dimensioner, mått eller tid. |
 | [!UICONTROL Trend] | Skapa ett trenddiagram för noden. |
 | [!UICONTROL Expand entire column] | Expandera en kolumn om du vill visa alla noder. Som standard visas bara de fem översta noderna. |

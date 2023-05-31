@@ -4,7 +4,7 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsområden, blan
 
 1. Dra **[!UICONTROL Key metric summary]** visualisering från **[!UICONTROL Visualizations]** menyn i den vänstra listen i en panel.
 
-1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett segment (om det behövs):
+1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett filter (om du vill):
 
    ![konfiguration för nyckelmått](assets/key-metric-config.png)
 
@@ -44,7 +44,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsområden, blan
    | **[!UICONTROL Metric]** | Välj det mätvärde som du vill undersöka. Alla mätvärden stöds. |
    | **[!UICONTROL Primary date range]** | Det aktuella datumintervallet för frihandstabellen. |
    | **[!UICONTROL Comparison date range]** | Datumintervallet som du vill jämföra det primära datumintervallet med. |
-   | **[!UICONTROL Segment (optional)]** | Alla segment som du är intresserad av för den här sammanfattningen. |
+   | **[!UICONTROL Filter (optional)]** | Alla filter som du är intresserad av för denna sammanfattning. |
 
    {style="table-layout:auto"}
 
@@ -93,4 +93,4 @@ När du har skapat visualiseringen kan du fortfarande redigera den ursprungliga 
 
    Du återgår nu till den ursprungliga konfigurationsvyn.
 
-1. Ändra måttet, det primära datumintervallet, jämförelsedatumintervallet eller segmentet.
+1. Ändra måttet, det primära datumintervallet, jämförelsedatumintervallet eller filtret.

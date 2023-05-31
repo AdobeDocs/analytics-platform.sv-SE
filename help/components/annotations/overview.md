@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Tänk på detta:
 
 * Anteckningar kan knytas till ett enstaka datum eller till ett datumintervall.
 
-* De kan gälla för hela datauppsättningen eller för angivna mått, dimensioner eller segment.
+* De kan användas på hela datauppsättningen eller på angivna mått, dimensioner eller filter.
 
 * De kan gälla för det projekt i vilket de skapades (standard) eller för alla projekt.
 
@@ -32,7 +32,7 @@ Tänk på detta:
 
 ## Behörigheter
 
-Som standard kan bara administratörer skapa anteckningar. Användare har rätt att visa anteckningar på samma sätt som andra Analytics-komponenter (som segment, beräknade värden osv.).
+Som standard kan bara administratörer skapa anteckningar. Användare har rätt att visa anteckningar på samma sätt som andra Analytics-komponenter (t.ex. filter, beräknade värden).
 
 Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analysverktyg) till användare via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
 

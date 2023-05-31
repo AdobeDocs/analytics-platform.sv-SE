@@ -3,7 +3,7 @@ description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar top > down, and left > rig
 | `[Alt + 1]` | Ny frihandstabell |
 | `[Ctrl + Shift + C]` | Nytt beräknat mått |
 | `[Ctrl + Shift + D]` | Nytt datumintervall |
-| `[Ctrl + Shift + E]` | Nytt segment |
+| `[Ctrl + Shift + E]` | Nytt filter |
 | `[Ctrl + Z]` | Ångra |
 | `[Component drag + Shift]` | Skapa ett nedrullningsbart filter |
 

@@ -3,9 +3,9 @@ description: Visar hur du skapar ett enkelt mått för"Sidvyer per besök".
 title: Skapa ett enkelt mätvärde för sidvisningar per besök
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '208'
 ht-degree: 3%
 
 ---
@@ -32,4 +32,4 @@ Så här skapar du ett enkelt mått för&quot;Sidvyer per besök&quot;.
 
    Observera att **[!UICONTROL Summary]** formeln uppdateras varje gång du ändrar måttdefinitionen.
 
-1. (Valfritt) Du kan gå till [Sidan Beräknade mått](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+1. (Valfritt) Dela mätvärdena med andra användare i organisationen enligt beskrivningen i [Dela beräknade värden](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

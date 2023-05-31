@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Media Average Minute Audie
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Du kan konfigurera panelen Media Average Minute Audience med följande indatains
 | Inställning | Beskrivning |
 |---------|------------|
 | Panelens datumintervall | Panelens datumintervall är som standard Idag. Du kan redigera den för att visa en enstaka dag eller flera månader i taget. <br></br> Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå). Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
-| Dra ett segment här (eller andra komponenter) | Precis som andra paneler filtrerar den här inställningen dina markeringar baserat på segment som du har skapat. Detta är ett bra sätt att se på specifika plattformar, liveströmmar eller andra vanliga mediesegment. |
+| Dra ett filter hit (eller någon annan komponent) | Precis som andra paneler filtrerar den här inställningen dina markeringar baserat på de filter du har skapat. Detta är ett bra sätt att se på specifika plattformar, liveströmmar eller andra vanliga mediesegment. |
 | Beräkna mått för | Med den här inställningen kan du välja om du vill se den genomsnittliga minuten-publiken för en viss del av innehållet genom att välja *specifikt innehåll* eller om du vill se den genomsnittliga minuten-publiken för en viss tidsperiod genom att välja *anpassad tidsperiod*. <br></br>Specifikt innehåll fungerar bara om längden har uppdaterats med hjälp av klassificeringar. Om längden inte är tillgänglig, eller om du vill visa den genomsnittliga minuten-publiken för en tidsserie med flera innehållsdelar eller innehåll utan en viss tilldelad varaktighet (som under en liveström eller händelse), bör du välja en anpassad tidsperiod. Den här inställningen ändrar arbetsflödet och rapportutdata. |
 
 ### Speciellt innehåll

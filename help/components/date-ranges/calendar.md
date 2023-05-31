@@ -4,7 +4,7 @@ title: Översikt över kalender- och datumintervall
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Använda relativa paneldatumintervall
 
 1. Välj **Arbetsyta** -fliken.
 1. Välj **Tomt projekt**.
-1. Lägg till mått, mätvärden och segment från den vänstra listen.
+1. Lägg till mått, mätvärden och filter från den vänstra listen.
 1. Klicka på panelens datumintervallfält för att växla den relativa panelens datumintervallinställning.
 1. Välj **Gör datumintervallskomponenter relativa till panelkalendern**.
    * Välj alternativet om du vill att datumintervallets komponenter ska vara relativa till panelkalendern.
@@ -67,13 +67,13 @@ Om du har markerat relativa datum används panelens startdatum som startpunkt i 
 
 När du använder en veckobaserad anpassad kalender och lägger till månader eller år, beräknas förskjutningen för dagen i den angivna perioden enligt formeln. Det faktiska datumet kan vara ett annat på grund av förskjutningen. Formeln väljer landningsdagen på samma plats i den anpassade kalendern. Den tredje fredagen i den tredje veckan i en anpassad kalender.
 
-### Om segment som använder rullande datum och relativa paneldatumintervall {#segments-relative-dates}
+### Om filter som använder rullande datum och relativa paneldatumintervall {#segments-relative-dates}
 
-Om du skapar ett segment eller använder ett segment med ett rullande datum, t.ex. de senaste 7 dagarna eller de senaste 2 veckorna, och du klickar på segmentförhandsvisningen, startar det rullande datumet från *Idag* i stället för panelens startdatum. Det innebär att förhandsvisningen av segmentet inte matchar när du faktiskt använder segmentet i tabellen. Förhandsgranskningen påverkas, inte själva segmentet.
+Om du skapar ett filter eller använder ett filter med ett rullande datum, till exempel de senaste 7 dagarna eller de senaste 2 veckorna, och du klickar på filterförhandsvisningen, startar det rullande datumet från *Idag* i stället för panelens startdatum. Det innebär att förhandsvisningen av filtret inte matchar när du faktiskt använder filtret i tabellen. Förhandsgranskningen påverkas, inte själva filtret.
 
 ## Riktlinjer för paneldatumintervall och förhandsvisningar {#guidelines-panel-dates}
 
 * Från och med februari-versionen baseras förhandsgranskningarna av komponenter och data på panelens datumintervall och inte på de senaste 90 dagarna.
 * Alla komponenter i den vänstra listen är tillgängliga baserat på panelens datumintervall.
-* Alla förhandsvisningar av datum i segmentet och beräknade mätvärden baseras på panelens datumintervall (såvida de inte öppnas från komponenthanterarna, som inte har någon associerad panel, kommer de fortfarande att baseras på de senaste 90 dagarna).
+* Alla förhandsvisningar av datum i filtret och beräknade mätvärden baseras på panelens datumintervall (såvida de inte öppnas från komponenthanterarna, som inte har någon associerad panel, kommer de fortfarande att baseras på de senaste 90 dagarna).
 * Förhandsgranskningar av data visar data eller komponenter baserat på panelens datumintervall.

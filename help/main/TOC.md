@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -246,13 +246,13 @@ ht-degree: 29%
          + [Bygg en sidvy per besök-mätare](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [Bygg ett delgivningsmått](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Filtrerade mätvärden](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [Stapla och ersätta segment](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Stapla och ersätta filter](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Filtrerade och viktade mätvärden](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Använda funktioner](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Tagga beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Godkänna beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Dela beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [Hanterare för beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [Beräknad måtthanterare](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [Standardberäknade värden](../components/calc-metrics/default-calcmetrics.md)
       + [Grundfunktioner](../components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](../components/calc-metrics/cm-adv-functions.md)

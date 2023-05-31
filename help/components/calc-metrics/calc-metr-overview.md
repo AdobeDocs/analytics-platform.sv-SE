@@ -3,7 +3,7 @@ title: Översikt över beräknade mätvärden
 description: Lär dig mer om filtrerade mätvärden som genereras vid rapportkörning.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 4%
@@ -38,8 +38,8 @@ Här följer en jämförelse av funktionerna för beräknade värden och avancer
 
 | Verktyg | Funktioner |
 |--- |--- |
-| Beräknad metrisk Builder | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till inline-filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala personer med internationella.</li><li>Använd statistiska funktioner.</li><li> Ange detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
-| Hanterare för beräknade mätvärden | <ul><li>Dela mätvärden med andra.</li><li>Godkänn och strukturera mätvärden.</li><li>Ordna (tagga) mätvärden så att andra kan hitta dem.</li><li>Ta bort mätvärden.</li><li>Byt namn på mätvärden.</li></ul> |
+| Bygg beräknade mätvärden | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till inline-filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala personer med internationella.</li><li>Använd statistiska funktioner.</li><li> Ange detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
+| Beräknad måtthanterare | <ul><li>Dela mätvärden med andra.</li><li>Godkänn och strukturera mätvärden.</li><li>Ordna (tagga) mätvärden så att andra kan hitta dem.</li><li>Ta bort mätvärden.</li><li>Byt namn på mätvärden.</li></ul> |
 | API för beräknade värden | En del av CJA API-uppsättningen. |
 
 ## Mallar för beräknade värden i CJA

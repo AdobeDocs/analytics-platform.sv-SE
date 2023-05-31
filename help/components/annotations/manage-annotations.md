@@ -4,7 +4,7 @@ description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Välj bara en eller flera av anteckningarna så visas Aktivitetsfältet.
 | Uppgift | Beskrivning |
 | --- | --- |
 | Lägg till | Gå till Anteckningsverktyget där du kan skapa nya anteckningar. |
-| Tagg | Alla användare kan skapa taggar för anteckningar och använda en eller flera taggar för en anteckning. Men du kan bara se taggar för de segment som du äger. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>Taggar baserade på teamnamn, som social marknadsföring, mobilmarknadsföring</li><li>Projekttaggar (analystaggar), t.ex. analys på ingångssidan</li><li>Kategoritaggar: Män geografi</li><li>Arbetsflödestaggar: Kuraterad för (en specifik affärsenhet). Godkänd</li></ul> |
+| Tagg | Alla användare kan skapa taggar för anteckningar och använda en eller flera taggar för en anteckning. Men du kan bara se taggar för de filter som du äger. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>Taggar baserade på teamnamn, som social marknadsföring, mobilmarknadsföring</li><li>Projekttaggar (analystaggar), t.ex. analys på ingångssidan</li><li>Kategoritaggar: Män geografi</li><li>Arbetsflödestaggar: Kuraterad för (en specifik affärsenhet). Godkänd</li></ul> |
 | Ta bort | Om du tar bort en anteckning tas den bort från alla projekt i organisationen. |
 | Byt namn | Om du ändrar namn på en anteckning ändras namnet i alla projekt som den används i. |
 | Kopiera | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |

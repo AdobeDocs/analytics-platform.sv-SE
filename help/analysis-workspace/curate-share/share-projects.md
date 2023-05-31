@@ -4,7 +4,7 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 29ceba37422ab2cb432bbe000dee6379a63d5a8f
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
 1. Välj om du vill aktivera följande alternativ när du delar projektet:
 
-   * **Dela inbäddade projektkomponenter:** Delar segment, beräknade värden och datumintervall med alla mottagare. När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
+   * **Dela inbäddade projektkomponenter:** Delar filter, beräknade värden och datumintervall med alla mottagare. När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
    * **Ange som landningssida för mottagare:** Anger den här sidan som startsida för mottagare. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 

@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Medieuppspelningstid för 
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -19,6 +19,6 @@ I Analysis Workspace är uppspelningstid den tid som du har lagt på att visa me
 
 Med panelen Medieuppspelningstid för spenderad kan du analysera uppspelningen över tid, med detaljer om maximal samtidighet och möjlighet att bryta ned och jämföra. Om du vill komma åt panelen Medieuppspelningstid för spenderad navigerar du till en datavy med Media Analytics-komponenter aktiverade. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
 
-Panelen innehåller även nya funktioner i kalendern som gör att du kan markera och visa mindre än 24 timmar. Du kan göra det för hela panelen, eller så kan du skapa segment med hjälp av sammanhängande tidsperioder så att du kan spåra inledande/utledande visning för olika program eller avsnitt i program. När du har placerat minst två av datumsegmenten visas en alternativknapp för Datumsekvensvisning som antingen täcker raderna med en gemensam x-axelstart eller visar dem i ordning med den specifika x-axelstarten.
+Panelen innehåller även nya funktioner i kalendern som gör att du kan markera och visa mindre än 24 timmar. Du kan göra det för hela panelen, eller så kan du skapa filter med hjälp av flera tidsperioder i följd så att du kan spåra inledande/utledande visning i olika program eller avsnitt i program. När du har placerat minst två av datumfiltren visas en alternativknapp för Datumsekvensvisning som antingen täcker raderna med en gemensam start på x-axeln eller visar dem i ordning med den specifika starten på x-axeln.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338699)

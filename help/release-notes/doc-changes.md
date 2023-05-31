@@ -4,10 +4,10 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: a7a03fa6e0f71d473b4713bd9817e1b97dab383e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2074'
+ht-degree: 5%
 
 ---
 
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Juni 2023** |  |
+| Uppdateringar av beräknade mätvärden | Uppdateringar gjordes för olika artiklar om beräknade mätvärden, inklusive uppdatering av skärmdumpar och steg i procedurer. Dessa ändringar gjordes för att få dokumentationen att överensstämma med den aktuella CJA-funktionen. |
 | **Maj 2023** |  |
 | Deep Linking-dokumentation (mobilapp) | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Dok på &quot;Välj datavy från cell&quot; i Report Builder | Med den här funktionen kan användare välja datavyn för ett datablock från en cell. Detta är praktiskt om du skapar en arbetsbok och har flera datavyer som har liknande datauppbyggnad och du vill kunna återanvända en arbetsbok flera gånger, med olika datavyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |

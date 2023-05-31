@@ -4,10 +4,10 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 0%
+source-wordcount: '700'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Tänk på detta:
 * Du kan lägga till flera jämförelser i en enda [!UICONTROL Combo chart].
 * Om du lägger till en eller flera jämförelser måste de vara av samma typ, till exempel [!UICONTROL Time comparison].
 * Du kan lägga till upp till fem jämförelser.
-* Du kan använda upp till tre filter (segment) för ett mätresultat.
+* Du kan använda upp till tre filter på ett mätresultat.
 * Beräknade mått stöds inte i kombinationsdiagram.
 
 ## Skapa ett kombinationsdiagram

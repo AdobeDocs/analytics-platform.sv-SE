@@ -3,10 +3,10 @@ description: Beroende på dina behörigheter kan du dela mätvärden med hela or
 title: Dela beräknade mätvärden
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '303'
+ht-degree: 2%
 
 ---
 
@@ -19,24 +19,38 @@ Beroende på dina behörigheter kan du dela mätvärden med hela organisationen,
 | Administratör | Kan dela mätvärden med Alla, med Grupper och med Användare. Grupper konfigureras som behörighetsgrupper i Admin Console. |
 | Icke-administratör | Kan endast dela mätvärden med enskilda användare. |
 
-När ska ni dela mätvärden med hela företaget jämfört med bara en grupp användare eller enskilda? Här är några tips du kan följa:
+Så här delar du ett beräknat mått:
 
-* Som administratör kan du dela ett mått med **[!UICONTROL All]** om det är användbart för hela företaget och alla känner sig bekväma med att använda det. I det här fallet bör du också överväga att göra det till ett godkänt mätvärde.
-* Som administratör kan du dela ett mått med en specifik **[!UICONTROL Group]** om mätvärdena ger ett bra affärsvärde för teamet.
-* Som administratör eller enskild användare kan du dela ett mätvärde med andra personer för att kontrollera och validera det. Om det inte visar sig användbart kan det kasseras. Godkänn inte den här typen av mätvärden officiellt.
-
-1. Markera kryssrutan bredvid det mätvärde du vill dela i Beräknade mätvärden. Åtgärdsfältet visas:
+1. Markera kryssrutan bredvid det mätresultat du vill dela i hanteraren för beräknade värden.
 
    ![](assets/cm_task_bar.png)
 
-1. Klicka på **[!UICONTROL Share]** ikon.
+1. Välj **[!UICONTROL Share]** ikon. ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+
+   Dialogrutan Dela beräknade mått visas.
 
    ![](assets/cm_share.png)
 
-   Om du är administratör kan du välja **[!UICONTROL All]** eller välj **[!UICONTROL Groups]** och (rulla nedåt till) **[!UICONTROL Users]** i er organisation. Som icke-administratör kan du bara se enskilda användare. Använd **[!UICONTROL Search]** fält att söka efter grupper eller användare
+1. Välj **[!UICONTROL Share]**.
 
-1. Klicka på **[!UICONTROL Share]**.
+1. Välj vem du vill dela med:
 
-   Ikonen Delad visas bredvid måttet:  ![](assets/share_icon.png)
+   * **[!UICONTROL All]** (Endast administratörer): Delas med alla användare i organisationen.
+
+      Överväg att dela med alla bara om det är användbart för hela företaget och alla känner sig bekväma med att använda det. I det här fallet bör du också överväga att göra det till en [godkänt mätvärde](/help/components/calc-metrics/cm-workflow/cm-approving.md).
+
+   * **[!UICONTROL Groups]** (Endast administratörer): Markera de grupper du vill dela med.
+
+      Överväg att dela med en grupp om mätvärdena ger ett bra affärsvärde för teamet.
+
+   * **[!UICONTROL Individual users]**: Sök efter och välj de användare du vill dela med.
+
+      Det här är det enda delningsalternativet som är tillgängligt för alla användare. Administratörer kan använda det här alternativet för att kontrollera och validera ett mätvärde innan det görs tillgängligt för en grupp eller för alla. Om måttet inte är användbart kan det tas bort. Administratörer bör inte godkänna den här typen av mätvärden officiellt.
+
+1. Välj **[!UICONTROL Share]**.
+
+   Ikonen Delad visas bredvid måttet: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg).
 
 1. Du kan filtrera mätvärden som delas med dig genom att gå till **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Shared with Me]**.
+
+1. (Valfritt) Om du vill filtrera listan med beräknade värden i hanteraren för beräknade mått så att endast mått som delas med dig visas, väljer du **Filter** ikon, expandera **[!UICONTROL Other filters]** väljer **[!UICONTROL Shared with me]**.

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Användare i Customer Journey Analytics kan inte skapa, redigera eller visa data
 
 ## Projektstrukturering för arbetsyta
 
-En annan åtkomstkontrollnivå kan användas på rapportnivån för arbetsytan. Du kan begränsa åtkomsten till specifika komponenter för vissa användare. Mer information om hur du begränsar komponenter (dimensioner, mått, segment, datumintervall) på projektnivån för arbetsytan och hur kursen är kopplad till datavyer finns i [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md).
+En annan åtkomstkontrollnivå kan användas på rapportnivån för arbetsytan. Du kan begränsa åtkomsten till specifika komponenter för vissa användare. Mer information om hur du begränsar komponenter (dimensioner, mått, filter, datumintervall) på projektnivån för arbetsytan och hur kurvan är kopplad till datavyer finns i [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md).
 
 ## Ge åtkomst till enskilda mått eller mått
 
@@ -98,4 +98,4 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Audience Creation]** | Låter användarna skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Audience View]** | Låter användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

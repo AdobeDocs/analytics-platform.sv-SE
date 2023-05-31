@@ -1,5 +1,5 @@
 ---
-source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 1%
@@ -63,7 +63,7 @@ ht-degree: 1%
 |---------|----------|
 | [!UICONTROL **Rekommenderas**] | Sorterar komponenter med de som rekommenderas högst upp i listan. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i listan. |
 | [!UICONTROL **Alfabetiskt**] | Sorterar komponenterna i bokstavsordning. |
-| [!UICONTROL **Kategorisisk**] | Sorterar komponenter efter komponenttyp (dimension, mått, segment, datumintervall). |
+| [!UICONTROL **Kategorisisk**] | Sorterar komponenter efter komponenttyp (dimension, mått, filter, datumintervall). |
 
 {style="table-layout:auto"}
 

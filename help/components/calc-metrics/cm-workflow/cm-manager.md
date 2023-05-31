@@ -3,34 +3,41 @@ description: I Beräknad måtthanterare kan du strukturera mätvärden på mång
 title: Hanterare för beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 2%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
-# Hanterare för beräknade mätvärden
+# Beräknad måtthanterare
 
-I Beräknad måtthanterare kan du strukturera mätvärden på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
+På sidan Beräknade mätvärden kan du strukturera mätvärden på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
-I Beräknad metrisk hanterare visas alla segment som du äger och som har delats med dig. Användare på administratörsnivå kan se alla anpassade värden i organisationen. I den här översikten visas användargränssnittet och funktionerna i hanteraren för beräknade mått. Öppna den via
+Den beräknade metriska hanteraren visar alla filter som du äger och som har delats med dig. Användare på administratörsnivå kan se alla anpassade värden i organisationen. I den här översikten visas användargränssnittet och funktionerna i hanteraren för beräknade mätvärden. Öppna den via
 
-* Går till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Calculated Metrics]**.
+## Få åtkomst till hanteraren för beräknade värden
+
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**].
+
+## Områden som tillhör hanteraren för beräknade värden
+
+I följande bild och medföljande tabell beskrivs några av huvudområdena och funktionerna i Calculated Metrics Manager.
 
 ![](assets/calcmet_mgr_ui.png)
 
-| Gränssnittsfunktion | Beskrivning |
-| --- | --- |
-| Verktygsfältet för hantering av beräknade värden | När du har markerat ett mätvärde visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
-| Visa/dölj filter | Om du klickar på Visa filter visas filtermenyn. Du kan filtrera efter taggar, datavyer, ägare, Visa alla (endast administratör), Delade med mig, Min, Favoriter och Godkänd. |
-| Kryssrutor | Kontrollera ett anpassat mått för att hantera det. |
-| Favoriter | Om du klickar på stjärnan bredvid ett mätresultat blir stjärnan gul och måttet markeras som en favorit. |
-| Filtrera titlar och beskrivningar | Finns i beräkningsverktyget. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till verktyget Beräknade mätvärden. |
-| Datavy | Den här kolumnen anger i vilken datavy måttet senast sparades. |
-| Ägare | Anger vem som äger det anpassade måttet. Om du inte är administratör kan du bara se mätvärden som du äger eller de som delats med dig. |
-| Taggar | Visar taggar som har tillämpats på måttet, antingen av dig eller av personer som delat segmentet med dig. |
-| Delas med | Visar enskilda personer eller grupper (endast Admin) eller Alla (endast Admin) som du har delat segmentet med. |
-| Kolumnväljare | Gör att du kan markera eller avmarkera kolumner i Beräknad metrisk hanterare så att du kan anpassa vyn. |
-| Delad ikon (visas inte) | Anger att det här anpassade måttet delas av dig eller med dig. |
-| Ikonen Godkänd (visas inte) | Anger att det anpassade måttet har godkänts av en administratör. |
+| Plats i bild | Namn och funktion |
+|---|---|
+| 1 | **Verktygsfältet för beräkning av mått:** När du har valt ett mätvärde visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
+| 2 | **Filter:** Du kan filtrera efter taggar, rapportsviter, ägare, alla (endast admin), dela med mig, mina, favoriter och godkända (endast admin). |
+| 3 | **Markera rutor:** Välj ett anpassat mått för att hantera det. |
+| 4 | **Favoriter:** Om du väljer stjärnan bredvid ett mått markeras måttet som en favorit. |
+| 5 | **Segmentrubriker och beskrivningar:** Dessa värden finns i verktyget Beräknade mått. Om du vill redigera titeln och beskrivningen markerar du titellänken för att öppna verktyget Beräknade mätvärden. |
+| 6 | **Rapportsvit:** Anger i vilken rapportsvit mätvärdena senast sparades. |
+| 7 | **Ägare:** Anger vem som äger det anpassade måttet. Som icke-administratör kan du bara se mätvärden som du äger eller de som delats med dig. |
+| 8 | **Taggar:** Visar taggar som har tillämpats på måttet, antingen av dig eller av personer som delat segmentet med dig. |
+| 9 | **Delas med:** Visar enskilda personer eller grupper (endast admin) eller Alla (endast admin) som du har delat segmentet med. |
+| 10 | **Kolumnväljare:** Gör att du kan markera eller avmarkera kolumner på sidan Beräknade mått så att du kan anpassa vyn. |
+| Visas inte i bilden | **Ändrad:** Anger det datum då det anpassade måttet senast ändrades. |
+
+{style="table-layout:auto"}

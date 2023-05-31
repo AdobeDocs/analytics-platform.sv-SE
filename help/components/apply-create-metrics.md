@@ -3,7 +3,7 @@ description: Det finns två sätt att använda mätvärden i Analysis Workspace.
 title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Du kan antingen dra en standardmall för mått, beräknade värden eller beräkn
 >
 >Även om detta ser enkelt ut är användningen av mätvärden ganska kraftfull. Du kan lägga till mätvärden i en rapport genom att dra lämpliga mätvärden till måttavsnittet i en tabell. Du kan också dela upp mått efter mått och på så sätt få detaljkontroll över tabellvyn. Dessutom kan du infoga ett mått som en dimension och en dimension som ett mått för att skapa en övertidsrapport. Lek med de olika komponenterna och se vad du kan göra. Möjligheterna är oändliga.
 
-Du kan också klicka **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Det här tar dig till [Beräknad metrisk Builder](/help/components/calc-metrics/calc-metr-overview.md), där ni kan bygga anpassade mätvärden utifrån befintliga mätvärden.
+Du kan också klicka **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Det här tar dig till [Bygg beräknade mätvärden](/help/components/calc-metrics/calc-metr-overview.md), där ni kan bygga anpassade mätvärden utifrån befintliga mätvärden.
 
 För att göra det enklare att snabbt skapa beräknade mätvärden **[!UICONTROL Create metric from selection]** har lagts till på högerklicksmenyn i frihandstabeller i kolumnen. Det här alternativet visas när en eller flera rubrikkolumnceller är markerade.
 
