@@ -3,17 +3,15 @@ description: Använd intelligenta bildtexter för att generera insikter på natu
 title: Intelligenta bildtexter
 feature: Visualizations
 role: User, Admin
-source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
+exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
+source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
-
 # Intelligenta bildtexter
-
-{{release-limited-testing}}
 
 Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för arbetsytevisualiseringar. Den första versionen innehåller automatiskt genererade insikter om [Linje](line.md) visualisering. (Övriga visualiseringar följer.)
 
@@ -30,9 +28,13 @@ Om du vill starta automatiskt genererade bildtexter för en radvisualisering kli
 
 ![starta intelligenta bildtexter](assets/intell-caps-1.png)
 
-Naturliga språkkunskaper genereras nu. Bildtexter genereras varje gång de underliggande markerade data ändras i tabellen som styr visualiseringen. Om det finns flera mätvärden i tabellen genereras bildtexter bara för det första mätvärdet eller det mätvärde som användaren har valt.
+Naturliga språkkunskaper genereras nu.
 
-Om du sparar projektet nu och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från det här projektet.
+* Bildtexter genereras varje gång de underliggande markerade data ändras i tabellen som styr visualiseringen.
+
+* Om det finns flera mätvärden i tabellen genereras bildtexter endast för det första mätvärdet eller det mätvärde som användaren har valt.
+
+* Om du sparar projektet nu och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från det här projektet.
 
 ## Visa och tolka bildtexter {#view}
 
