@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: 2ff3fae7e285998d787a259d9d18c6d5e7fa961e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '931'
+ht-degree: 6%
 
 ---
 
 # Versionsinformation för Customer Journey Analytics (CJA) (maj 2023)
 
-**Senaste uppdatering**: 30 maj 2023
+**Senaste uppdatering**: 31 maj 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Adobe Journey Optimizer datavyer** | CJA-administratörer har tillgång till vissa extra datavyer i CJA med namnet&quot;AJO-datavyn (Sandbox-name)&quot;. Dessa datavyer används för att driva rapporterna i Adobe Journey Optimizer (AJO). De kan också användas för att göra en djupare analys av AJO-aktiviteter i CJA. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). |  | 25 maj 2023 |
 | **Bakgrundsfyllning för icke-produktionssandlådor** | När du skapar ett dataflöde för Analytics Source Connector i en icke-produktionssandlåda, begränsas bakgrundsfyllningen i icke-produktionssandlådor till tre månader. Den kommer att finnas kvar på 13 månader för produktionssandlådor. | Ej tillämpligt | 26 april 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs)** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=en#company-preferences)</p> | 3 maj 2023 | 5 juni 2023 |
 | **Uppdaterad startskärm för kontrollpanelsappen Analytics (mobilapp)** | På den nya uppdaterade startskärmen kan du visa alla dina styrkort i en konsoliderad styrkortslista.  Om du har tillgång till mer än en organisation under en inloggning är alla styrkort från din organisation tillgängliga i en enda lista. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) | Ej tillämpligt | 10 maj 2023 |
