@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 28%
+source-wordcount: '902'
+ht-degree: 29%
 
 ---
 
@@ -256,11 +256,10 @@ ht-degree: 28%
       + [Standardberäknade värden](../components/calc-metrics/default-calcmetrics.md)
       + [Grundfunktioner](../components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](../components/calc-metrics/cm-adv-functions.md)
-   + Datumintervall {#cja-date-ranges}
-      + [Översikt över datumintervall](../components/date-ranges/overview.md)
+   + Kalender och datumintervall {#cja-date-ranges}
+      + [Översikt över kalender- och datumintervall](../components/date-ranges/calendar.md)
       + [Skapa ett datumintervall](../components/date-ranges/create.md)
       + [Hantera datumintervall](../components/date-ranges/manage.md)
-      + [Översikt över kalendern](../components/date-ranges/calendar.md)
       + [Skapa anpassade datumintervall](../components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
    + Dataordlista {#data-dictionary}

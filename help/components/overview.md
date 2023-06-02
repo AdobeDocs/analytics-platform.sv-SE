@@ -4,7 +4,7 @@ description: Lär dig vilka komponenter CJA erbjuder och hur du kan använda dem
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 3b98047d7ac04b370dc9c03300f75b7313e79e5a
+source-git-commit: e8778520581ea6d1cf59285bc8a6c178904d44e2
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 6%
@@ -23,7 +23,7 @@ Du kan hantera följande komponenter:
 * [**Anteckningar**](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till organisationen.
 * [**Filter**](filters/filters-overview.md): Uteslut delar av dina data för att fokusera på gemensamma dimensionsobjekt
 * [**Beräknade mått**](calc-metrics/calc-metr-overview.md): Använd mätvärden och formler som nya komponenter för rapportering
-* [**Datumintervall**](date-ranges/overview.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder
+* [**Datumintervall**](date-ranges/create.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder
 * [**Projekt**](/help/analysis-workspace/home.md): Ordna och underhålla projekt i Analysis Workspace
 
 ## Analysis Workspace-komponenter

@@ -1,19 +1,19 @@
 ---
-description: I kalendern kan du ange datum och datumintervall eller välja en förinställning.
+description: Ange datum och datumintervall eller välj en förinställning.
 title: Översikt över kalender- och datumintervall
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
 
 # Översikt över kalender- och datumintervall
 
-I kalendern kan du ange datum och datumintervall eller välja en förinställning.
+Med kalendern kan du ange datum och datumintervall eller välja en förinställning. Datumintervall är en typ av komponent som du kan använda i Workspace-projekt. De gör att du kan se data som trendas över tid eller se när händelser inträffar som mest. Datumintervall färgkodas i lila. Med anpassade datumintervall kan du anpassa de datum som visas i arbetsyteprojekt.
 
 Kalenderval gäller på panelnivå, men du kan välja att använda dem på alla paneler. När du klickar på ett datumintervall i Arbetsyta visas den aktuella kalendermånaden och den föregående kalendermånaden i gränssnittet. Du kan justera dessa två kalendrar genom att klicka på höger- och vänsterpilarna i respektive övre hörn.
 
