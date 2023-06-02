@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
@@ -130,6 +130,10 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 >* Om din organisation licensierar hälsovård kan du bara dela projekt med användare som har autentiserats antingen med enkel inloggning (SSO) eller Adobe ID; du kan inte dela projekt med oautentiserade användare. Det är ditt ansvar att använda den här funktionen i enlighet med ditt företags interna datastyrningspolicyer och endast dela projektlänkar som innehåller personlig hälsoinformation (PHI) med användare som har rätt behörigheter.
 
 
+I följande videodemonstration och medföljande dokumentation beskrivs alternativen för att dela en länk med vem som helst:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
 1. Öppna det Analysis Workspace-projekt som du vill dela.
@@ -150,7 +154,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
-      När det här alternativet är aktiverat kan endast användare som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades få åtkomst till projektet.
+      När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
 
       CJA-administratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
