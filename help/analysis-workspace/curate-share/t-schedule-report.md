@@ -5,9 +5,9 @@ title: Schemalägg projekt
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,10 @@ Från arbetsytan **[!UICONTROL Share]** kan du skicka Analysis Workspace-projekt
 Så här skickar du en fil direkt till mottagarna via e-post:
 
 1. Klicka på **[!UICONTROL Share]>[!UICONTROL Export file]**.
-1. Ange filtypen (CSV eller PDF).
-1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
+1. Ange filtyp:
+   * [!UICONTROL **CSV**]: Välj det här alternativet om du vill ha oformaterade textdata.
+   * [!UICONTROL **PDF**]: Välj det här alternativet om du vill att den hämtade filen ska innehålla alla tabeller och visualiseringar som visas i projektet.
+1. (Valfritt) Lägg till en beskrivning som ska ingå i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
 1. (Endast för vårdsköldens kunder) Ange ett lösenord. Se avsnittet Lösenordsskydda en schemalagd rapport.
 1. Klicka på **[!UICONTROL Send Now]**.
