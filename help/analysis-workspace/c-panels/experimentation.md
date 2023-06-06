@@ -3,9 +3,9 @@ description: Lär dig hur du kan analysera resultaten av A/B-tester på CJA-pane
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1813'
 ht-degree: 0%
 
 ---
@@ -125,3 +125,7 @@ Följande bild kontrasterar dessa situationer:
 ![slumpmässigt experiment](assets/randomize.png)
 
 När man vill mäta effekten av intervention X på resultatet Y, är det möjligt att den verkliga orsaken till båda är den förvirrande faktorn C. Om data inte uppnås genom slumpgenerering av personer på X, är det svårare att mäta effekten, och analysen kommer uttryckligen att ta hänsyn till C. Slumpmässigt bryter beroendet av X på C, vilket gör att vi kan mäta effekten av X på Y utan att behöva bekymra oss om andra variabler.
+
+## Använda beräknade värden på panelen Experimentera
+
+Mer information om [använda härledda värden i panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
