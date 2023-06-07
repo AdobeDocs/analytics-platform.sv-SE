@@ -4,7 +4,7 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 0%
@@ -104,8 +104,6 @@ Så här delar du projektlänken med användare i din organisation:
 1. Dela länken med användare i organisationen. Du kan till exempel klistra in den i ett e-postmeddelande, på en intern webbplats och så vidare.
 
 ## Dela ett projekt med vem som helst (ingen inloggning krävs) {#share-public-link}
-
-{{release-limited-testing-section}}
 
 Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-only-projects.md) till Analysis Workspace-projekt för dem som inte har tillgång till Customer Journey Analytics. Detta kan omfatta:
 
