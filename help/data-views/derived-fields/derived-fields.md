@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: f9aafab436fa1f26be9ed2e433ded046bbb1135a
+source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
 workflow-type: tm+mt
-source-wordcount: '3067'
+source-wordcount: '3101'
 ht-degree: 3%
 
 ---
@@ -123,6 +123,11 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
    A [!UICONTROL Delete component] uppmanas du att bekräfta borttagningen. Ta hänsyn till eventuella externa referenser som finns till det härledda fältet utanför datavyn.
 
    - Välj **[!UICONTROL ** Fortsätt **]** för att ta bort det härledda fältet.
+
+>[!NOTE]
+>
+>Härledda fält hanteras på anslutningsnivå i CJA. Alla ändringar som görs i ett härlett fält i någon av de datavyer som är kopplade till anslutningen gäller för alla dessa associerade datavyer.
+
 
 
 ## Funktionsmallar
