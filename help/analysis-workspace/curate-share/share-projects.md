@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
+source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1845'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
 
 * Användare och grupper i organisationen som har tillgång till Adobe Customer Journey Analytics
 
-   Du kan dela behörigheten Redigera, Duplicera eller Visa
+  Du kan dela behörigheten Redigera, Duplicera eller Visa
 
 * Användare och grupper i organisationen som inte har tillgång till Customer Journey Analytics
 
-   Mottagarna har skrivskyddad åtkomst
+  Mottagarna har skrivskyddad åtkomst
 
 * Personer utanför din organisation
 
-   Mottagarna har skrivskyddad åtkomst
+  Mottagarna har skrivskyddad åtkomst
 
 Alla [kuration](curate.md) används innan delningen visas när mottagarna öppnar projektet.
 
@@ -54,7 +54,7 @@ När du delar en specifik projektroll med användare och grupper i organisatione
 
 * En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får **[!UICONTROL Can edit]** som individ och **[!UICONTROL Can view]** som medlem i en grupp får de **[!UICONTROL Can edit]** projekterfarenhet.
 
-* Administratörer i **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan vid behov utöka sin roll till **[!UICONTROL Can edit]** när som helst till **[!UICONTROL Components]>[!UICONTROL Projects]**.
+* Administratörer i **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan ändra sin roll till **[!UICONTROL Can edit]** genom att dela projektet med sig själva och bevilja redigeringsrollen enligt beskrivningen i följande procedur.
 
 Så här delar du en specifik projektroll med användare eller grupper i organisationen:
 
@@ -127,7 +127,6 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 >
 >* Om din organisation licensierar hälsovård kan du bara dela projekt med användare som har autentiserats antingen med enkel inloggning (SSO) eller Adobe ID; du kan inte dela projekt med oautentiserade användare. Det är ditt ansvar att använda den här funktionen i enlighet med ditt företags interna datastyrningspolicyer och endast dela projektlänkar som innehåller personlig hälsoinformation (PHI) med användare som har rätt behörigheter.
 
-
 I följande videodemonstration och medföljande dokumentation beskrivs alternativen för att dela en länk med vem som helst:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
@@ -152,9 +151,9 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
-      När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
+     När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
 
-      CJA-administratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
+     CJA-administratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
       * Om det här alternativet inte visas har CJA-administratören inte aktiverat den här funktionen.
 
