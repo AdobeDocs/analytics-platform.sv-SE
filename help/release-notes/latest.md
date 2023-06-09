@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f02cda499b2050cd238ca2352237ae2cc9a502d6
+source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Versionsinformation för Customer Journey Analytics (CJA) (juni 2023)
 
-**Senaste uppdatering**: 6 juni 2023
+**Senaste uppdatering**: 9 juni 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -26,7 +26,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **PowerBI- och Tableau-åtkomst till CJA-datavyer** | SQL Connector för Customer Journey Analytics (CJA) ger SQL-åtkomst till datavyer som du har definierat i CJA. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som CJA-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) |  | 30 juni 2023 |
 | **Upplev Edge-geosökningar** | Du kan skapa rapporter med hjälp av geolokaliseringsdata i CJA när Experience Edge Geo Lookups har aktiverats för din datastream. |  | 30 juni 2023 |
 | **Utökat sökningsstöd för profil- och sökdata** | Du kan lägga till uppslagsdatauppsättningar i händelsedatamängder, men även i profil- och uppslagsdatamängder. | 21 juni 2023 | 12 juli 2023 |
-| **Stöd för valutakonvertering** | CJA stöder valutakonvertering som en del av formateringen av en måttkomponent i en datavy. | 21 juni 2023 | 19 juli 2023 |
+| **Stöd för valutakonvertering** | CJA stöder valutakonvertering som en del av formateringen av en måttkomponent i en datavy. | 7 juni 2023 | 21 juni 2023 |
 
 {style="table-layout:auto"}
 
