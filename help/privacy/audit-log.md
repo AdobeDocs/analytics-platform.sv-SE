@@ -2,10 +2,10 @@
 title: Granskningsloggar
 description: Lär dig hur du visar och hanterar CJA-granskningsloggar.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 3%
+source-wordcount: '736'
+ht-degree: 1%
 
 ---
 
@@ -41,19 +41,49 @@ Dubbelklicka på knappen info (i) bredvid en beskrivning.
 
 Följande objekt visas:
 
-| Objekt | Beskrivning |
-| --- | --- |
-| Åtgärdsnamn | Här är en lista över möjliga åtgärder: <ul><li>API_Request</li><li>Godkänn</li><li>Skapa</li><li>Redigera</li><li>Exportera</li><li>Login_failed</li><li>Inloggning_lyckades</li><li>Utloggning</li><li>Org_change</li><li>Uppdatera</li><li>Dela</li><li>Överför</li><li>Ogodkänd</li><li>Sluta dela</li></ul> |
-| Beskrivning | En sammanfattning av åtgärden, komponenttypen (med ID) och andra värden. |
-| Användarnamn | Användaren som utför åtgärden. |
-| Komponenttyp | Möjliga komponenttyper är: <ul><li>Anteckning</li><li>Målgrupp</li><li>Beräknade mått</li><li>Anslutning</li><li>Data_grupp</li><li>Data_View (den här komponenttypen innehåller dimensioner och mått)</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobil</li><li>Projekt</li><li>Rapport</li><li>Schemalagt_projekt</li><li>Användare</li><li>User_Group</li></ul> |
-| IMS-organisations-ID | Ett unikt ID som ges till din instans när du loggar in på Adobe Experience Cloud första gången. Den ska ha följande format: xxx@AdobeOrg. |
-| Användar-ID | Ett unikt ID som identifierar användaren som utförde den här åtgärden. |
-| Skapad den | När den här åtgärden utfördes. |
-| E-post | E-postadressen till användaren som utför åtgärden. |
-| Komponent-ID | Ett unikt ID som identifierar komponenten som ska hanteras. |
-| Logg-ID | Ett unikt ID som identifierar den här loggposten. |
-| Användartyp | Möjliga typer är: IMS, OKTA |
+* **[!UICONTROL Action Name]**: Den åtgärd som vidtagits. Möjliga värden är:
+   * API_REQUEST
+   * GODKÄNN
+   * SKAPA
+   * DELETE
+   * REDIGERA
+   * EXPORTERA
+   * ORG_CHANGE
+   * UPPDATERA
+   * DELA
+   * ÖVERFÖRING
+   * OGODKÄND
+   * AVDELA
+* **[!UICONTROL Date Created]**: Datum och tid då åtgärden utfördes.
+* **[!UICONTROL Description]**: En sammanfattning av åtgärden.
+* **[!UICONTROL User Name]**: Användaren som utförde åtgärden.
+* **[!UICONTROL Email]**: E-postadressen till användaren som utförde åtgärden.
+* **[!UICONTROL Component Name]**: Komponenten som användaren vidtagit åtgärder på.
+* **[!UICONTROL Component Type]**: Komponenttypen. Möjliga värden är:
+   * ANTECKNING
+   * MÅLGRUPP
+   * CALCULATED_METRIC
+   * ANSLUTNING
+   * DATA_GROUP
+   * DATA_VIEW
+   * DATASET_STITCHING
+   * DATE_RANGE
+   * FEATURE_ACCESS
+   * FILTER
+   * IMS_ORG
+   * MOBILE
+   * PROJEKT
+   * RAPPORT
+   * SCHEDULED_PROJECT
+   * ANVÄNDARE
+   * USER_GROUP
+* **[!UICONTROL Component ID]**: ID:t för komponenten som användaren vidtagit åtgärder för.
+* **[!UICONTROL IMS Org ID]**: Organisationens IMS-ID i formatet `ABC123@AdobeOrg`.
+* **[!UICONTROL Log ID]**: Ett unikt ID som identifierar den här loggposten.
+* **[!UICONTROL User ID]**: Det unika ID som identifierar användaren som utförde åtgärden.
+* **[!UICONTROL User Type]**: Autentiseringstypen som används. Giltiga värden är:
+   * IMS
+   * OKTA
 
 ### Filtrera granskningsloggar
 
@@ -66,13 +96,13 @@ Följande filter är tillgängliga för granskningshändelser i användargränss
 | Filter | Beskrivning |
 | --- | --- |
 | [!UICONTROL Date Range] | Filtrera på ett annat datumintervall genom att välja ett annat datum eller markera ett datumintervall genom att dra markören över flera datum. Som standard väljs dagens och gårdagens datum. |
-| [!UICONTROL Action] | Filtrera på en eller flera av följande åtgärder: <ul><li>API_Request</li><li>Godkänn</li><li>Skapa</li><li>Redigera</li><li>Exportera</li><li>Login_failed</li><li>Inloggning_lyckades</li><li>Utloggning</li><li>Org_change</li><li>Uppdatera</li><li>Dela</li><li>Överför</li><li>Ogodkänd</li><li>Sluta dela</li></ul> |
+| [!UICONTROL Action] | Filtrera på ett åtgärdsnamn som listas ovan. |
 | [!UICONTROL User ID] | Filtrera efter en viss användare med användar-ID:t. Du hittar användar-ID:t genom att välja knappen info (i) bredvid ett användarnamn. |
 | [!UICONTROL Email] | Filtrera efter en viss användares e-postadress. Du hittar e-postmeddelandet genom att välja knappen info (i) bredvid ett användarnamn. |
 | [!UICONTROL Component ID] | Filtrera på ett specifikt komponent-ID. Du hittar användar-ID:t genom att välja knappen info (i) för en önskad komponent. |
-| [!UICONTROL Component Type] | Filtrera på en eller flera komponenttyper: <ul><li>Anteckning</li><li>Målgrupp</li><li>Beräknade mått</li><li>Anslutning</li><li>Data_grupp</li><li>Data_vy</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobil</li><li>Projekt</li><li>Rapport</li><li>Schemalagt_projekt</li><li>Användare</li><li>User_Group</li></ul> |
+| [!UICONTROL Component Type] | Filtrera på någon av komponenttyperna ovan. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Händelsetyper som hämtats av granskningsloggar
 
@@ -94,7 +124,7 @@ I följande tabell visas vilka åtgärder för vilka komponenttyper som registre
 | [!UICONTROL User] | <ul><li>API_Request</li><li>Skapa</li><li>Ta bort</li><li>Redigera</li></ul> |
 | [!UICONTROL User Group] | <ul><li>API_Request</li><li>Skapa</li><li>Ta bort</li><li>Redigera</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Hämta granskningsloggar
 
