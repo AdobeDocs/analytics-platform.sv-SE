@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3426392854d60269f370228cbe7542e9789dae99
+source-git-commit: 62c2c74d1a5d0f92cbe8a641f392ccaba3b105ff
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2066'
 ht-degree: 5%
 
 ---
@@ -20,12 +20,14 @@ Följande uppdateringar har gjorts i CJA-dokumentationen sedan den startades.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juni 2023** | |
+| PowerBI- och Tableau-åtkomst till CJA-datavyer | SQL Connector för Customer Journey Analytics (CJA) ger SQL-åtkomst till datavyer som du har definierat i CJA. [Läs mer](/help/data-views/sql-connector.md) |
+| Adobe Journey Optimizer datavyer | CJA-administratörer har tillgång till vissa extra datavyer i CJA med namnet&quot;AJO-datavyn (Sandbox-name)&quot;. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). |
 | Valutakonvertering | Uppdaterad dokumentation för [valutakonvertering](../data-views/component-settings/format.md#currency) support. |
 | Uppdateringar av beräknade mätvärden | Följande uppdateringar gjordes av dokumentationen för beräknade värden för att den skulle kunna anpassas till den aktuella CJA-funktionen: <ul><li>Listan med [standardberäknade värden](/help/components/calc-metrics/default-calcmetrics.md) finns i CJA</li><li>Uppdaterade skärmdumpar och -procedurer i olika beräknade mätningsartiklar </li></ul> |
 | **Maj 2023** | |
-| Deep Linking-dokumentation (mobilapp) | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
-| Dok på &quot;Välj datavy från cell&quot; i Report Builder | Med den här funktionen kan användare välja datavyn för ett datablock från en cell. Detta är praktiskt om du skapar en arbetsbok och har flera datavyer som har liknande datauppbyggnad och du vill kunna återanvända en arbetsbok flera gånger, med olika datavyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
-| Dokumentation för den uppdaterade startskärmen för kontrollpanelsappen för Analytics (mobilapp) | På den nya uppdaterade startskärmen kan du visa alla dina styrkort i en konsoliderad styrkortslista.  Om du har tillgång till mer än en organisation under en inloggning är alla styrkort från din organisation tillgängliga i en enda lista. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
+| Deep Linking-dokumentation (mobilapp) | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
+| Dok på &quot;Välj datavy från cell&quot; i Report Builder | Med den här funktionen kan användare välja datavyn för ett datablock från en cell. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
+| Dokumentation för den uppdaterade startskärmen för kontrollpanelsappen för Analytics (mobilapp) | På den nya uppdaterade startskärmen kan du visa alla dina styrkort i en konsoliderad styrkortslista. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
 | Optimeringsuppdatering | Uppdaterad artikel om [Optimera CJA-prestanda](/help/admin/optimizing-performance.md) |
 | Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
 | Skapa projekt | Skapade en ny artikel som förklarar i detalj hur du [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) i Analysis Workspace. |
