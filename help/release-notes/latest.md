@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
+source-git-commit: c3bea466c4960893ebe746046250608bacc9e340
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1367'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **PowerBI- och Tableau-åtkomst till CJA-datavyer** | SQL Connector för Customer Journey Analytics (CJA) ger SQL-åtkomst till datavyer som du har definierat i CJA. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som CJA-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) |  | 30 juni 2023 |
 | **Upplev Edge-geosökningar** | Du kan skapa rapporter med hjälp av geolokaliseringsdata i CJA när Experience Edge Geo Lookups har aktiverats för din datastream. |  | 30 juni 2023 |
 | **Utökat sökningsstöd för profil- och sökdata** | Du kan lägga till uppslagsdatauppsättningar i händelsedatamängder, men även i profil- och uppslagsdatamängder. | 21 juni 2023 | 12 juli 2023 |
-| **Stöd för valutakonvertering** | CJA stöder valutakonvertering som en del av formateringen av en måttkomponent i en datavy. | 7 juni 2023 | 21 juni 2023 |
+| **Stöd för valutakonvertering** | Valutakonvertering stöds som en del av formateringen av en måttkomponent i en datavy. [Läs mer](../data-views/component-settings/format.md#currency) | 7 juni 2023 | 21 juni 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,10 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **Report Builder för CJA - Välj datavy från cell** | Med den här funktionen kan användare välja datavyn för ett datablock från en cell. Detta är praktiskt om du skapar en arbetsbok och har flera datavyer som har liknande datauppbyggnad och du vill kunna återanvända en arbetsbok flera gånger, med olika datavyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | Ej tillämpligt | 24 maj 2023 |
 | **Uppdaterad utbildningssida för CJA** | Fliken&quot;learning&quot; på landningssidan för Customer Journey Analytics innehåller nu innehåll som är specifikt för CJA, inklusive innehåll som är inriktat på att gå över till CJA från Adobe Analytics.<p>Följande ytterligare förbättringar finns också på fliken Utbildning:</p><ul><li>Förbättrad design som visar mer utbildningsmaterial på en enda sida med förbättrad navigering</li><li>Möjlighet att personalisera utbildningsmaterial efter erfarenhetsnivå (nybörjare, mellanhand och avancerat)</li></ul><p>Tidigare innehöll utbildningsfliken i CJA samma information som utbildningsfliken i Adobe Analytics.</p> [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | Ej tillämpligt | 30 juni 2023 |
 | **Sortera komponenter i Analysis Workspace** | <p>Ett nytt sorteringsalternativ är nu tillgängligt när du visar komponenter i den vänstra listen eller i datamappningslistan i Analysis Workspace. Du kan sortera komponenter efter Rekommenderat (de som används oftast), Alfabetiskt eller Kategoriserat (text).</p><p>Tidigare kunde du bara söka efter eller filtrera komponenter. [Läs mer](/help/components/overview.md)</p> | Ej tillämpligt | TBD |
+| **Ta bort rader som innehåller dynamiska dimensioner från en frihandstabell** | I en friformstabell i Analysis Workspace kan du nu snabbt ta bort specifika rader som innehåller dynamiska dimensioner med hjälp av x-ikonen. När du gör det används automatiskt en filterregel för att alltid utesluta objekt.<p>Tidigare var det enda sättet att ta bort rader som innehöll dynamiska dimensioner att manuellt skapa en regel i filterdialogrutan. [Läs mer](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | Ej tillämpligt | 17 maj 2023 |
+| **Ny knapp för att lägga till en visualisering i en panel** | En ny knapp finns nu längst ned på varje panel i Analysis Workspace, så att du snabbt kan lägga till en visualisering. <p>Tidigare var de enda sätten att lägga till en visualisering på en panel att dra en visualisering från den vänstra listen, duplicera eller kopiera en befintlig visualisering eller skapa en tom panel. [Läs mer](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | Ej tillämpligt | 17 maj 2023 |
+| **Djuplänkning (mobilapp)** | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | Ej tillämpligt | 17 maj 2023 |
+| **Intelligenta bildtexter** | Bättre berättande för användare med naturtrogna sammanfattningar av [!UICONTROL Line] visualisering. [Läs mer](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 maj 2023 | 1 juni 2023 |
 
 {style="table-layout:auto"}
 
