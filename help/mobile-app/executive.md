@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -51,7 +51,7 @@ När programmet har laddats ned och installerats kan företagsanvändare logga i
 
 ![App - välkomstskärm](assets/welcome.png)
 
-## Använda instrumentpaneler
+## Använda instrumentpaneler {#use-dashboards}
 
 Så här använder du kontrollpaneler:
 
@@ -89,6 +89,7 @@ Så här använder du kontrollpaneler:
       * En dag visar en timtrend
       * Mer än en dag och mindre än ett år visar en daglig trend
       * Ett år eller mer visar en vecktrend
+
    * Formeln för ändring av procentvärde är metrisk summa (aktuellt datumintervall) - metrisk summa (jämförelsedatumintervall) / metrisk summa (jämförelsedatumintervall).
 
    * Du kan dra ned skärmen för att uppdatera styrkortet.
