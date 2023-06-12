@@ -2,16 +2,16 @@
 title: CJA Auditions publishing overview
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
+source-git-commit: 7b86650cd3475a203d597baeec2ec2152e082b10
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '488'
+ht-degree: 1%
 
 ---
 
 # CJA Audience publishing - översikt
 
-Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) i Adobe Experience Platform för kundanpassning och personalisering.
+Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP) i Adobe Experience Platform för kundanpassning och personalisering.
 
 Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärder för insikter som hittas i CJA. Dessa åtgärder kan omfatta:
 
@@ -19,7 +19,9 @@ Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärde
 * Exportera målgruppen till en tredje part via ett Experience Platform-mål.
 * Förbättra kundprofilen i realtid med användbara attribut som bygger på händelsebaserade data i CJA.
 * Allt detta med minimal fördröjning efter publikens publicering. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
-* Publicera engångspublikationer eller återkommande målgrupper
+* Publicera engångspublikationer eller återkommande målgrupper.
+
+De målgrupper du skapar i CJA behöver inte baseras på datauppsättningar som har aktiverats för profilen. Du kan importera historiska data till Experience Platform utan att aktivera associerade datauppsättningar och scheman för profilen. Använd sedan dessa datauppsättningar för att identifiera relevanta målgrupper i CJA och publicera dessa målgrupper till RTCDP i Experience Platform för aktiveringsändamål.
 
 ## Viktiga termer
 
