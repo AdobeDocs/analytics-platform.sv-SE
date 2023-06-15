@@ -3,11 +3,9 @@ title: Härledda fält
 description: Ett härlett fält anger ändringar av schemafält och/eller standardkomponenter för rapporttid genom en uppsättning tillgängliga funktioner och funktionsmallar.
 solution: Customer Journey Analytics
 feature: Data Views
-hide: true
-hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
+source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
 workflow-type: tm+mt
 source-wordcount: '3101'
 ht-degree: 3%
@@ -16,8 +14,6 @@ ht-degree: 3%
 
 
 # Härledda fält
-
-{{release-limited-testing}}
 
 Härledda fält är en viktig del av realtidsrapportfunktionen i Customer Journey Analytics (CJA). Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera det härledda fältet som en komponent i [Datavy](../data-views.md).
 
@@ -289,7 +285,7 @@ Om din plats får följande exempelhändelser, som innehåller [!UICONTROL Refer
 |:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
-| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 3 | | `https://site.com/?cid=em_12345678` | [!DNL Email] |
 | 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
 | 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
 | 6 | `https://google.com` |  | [!DNL Natural Search] |
@@ -342,7 +338,7 @@ Din webbplats samlar in följande värden för din [!DNL Product Finding Methods
 | [!DNL search p13n_no] | [!DNL search] |
 | [!DNL search p13n_yes] | [!DNL search] |
 | [!DNL search refine p13n_no] | [!DNL search] |
-| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search refine p13n_yes] | [!DNL search] |
 | [!DNL search redirect p13n_yes] | [!DNL search] |
 | [!DNL search-redirect] | [!DNL search] |
 
@@ -764,5 +760,5 @@ Du definierar en `Query String CID` härlett fält. Du använder [!UICONTROL URL
 
 Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 
-- Du kan använda högst 100 olika schemafält (exklusive standardfält) när du definierar regler för ett härlett fält.
+- Du kan använda högst 10 olika schemafält (exklusive standardfält) när du definierar regler för ett härlett fält.
 - Du kan ha högst 100 härledda fält per CJA-anslutning.
