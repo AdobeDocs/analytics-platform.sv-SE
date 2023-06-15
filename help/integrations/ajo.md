@@ -2,9 +2,9 @@
 title: Integrera Adobe Journey Optimizer (AJO) med Customer Journey Analytics (CJA)
 description: Hämta in data som genererats av AJO och analysera dem med Analysis Workspace i CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | Behandlingsnamn | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Komponenttyp: Dimension<br>Kontextetiketter: Experimentationsvariant |
 | Felorsak vid e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Komponenttyp: Dimension |
 | Orsak till undantag av e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Komponenttyp: Dimension |
+| Elementetikett | `_experience.decisioning.propositionAction.label` | Komponenttyp: Dimension |
 
 {style="table-layout:auto"}
 
@@ -82,6 +83,11 @@ Du kan skapa följande mätvärden i en datavy för att få en ungefärlig parit
 | Skickar | Antalet meddelanden som e-postleverantörer accepterade. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `sent` |
 | Skräppost | Antalet skräppostklagomål. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `spam_complaint` |
 | Avbeställ | Antal avbrutna prenumerationer. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: Lika med `unsubscribe` |
+| Edge Sends | Antalet gånger som gränsnätverket skickar ett meddelande till antingen webben eller mobil SDK | Använda schemasträntelementet `_experience.decisioning.propositionEventType.send` |
+| Inkommande skärmar | Antalet gånger som ett webb- eller InApp-meddelande visas för användaren | Använda schemasträntelementet `_experience.decisioning.propositionEventType.display` |
+| Inkommande klick | Antal webbklick eller InApp-meddelandeklick | Använda schemasträntelementet `_experience.decisioning.propositionEventType.interact` |
+| InApp-utlösare | Det antal gånger som beslutsmotorn föreslog att meddelandet ska visas. Mobile SDK kunde åsidosätta beslutet om att minska antalet faktiska skärmar. | Använda schemasträntelementet `_experience.decisioning.propositionEventType.trigger` |
+| InApp-avvisningar | Antalet gånger som ett InApp-meddelande tas bort från användargränssnittet av SDK:n | Använda schemasträntelementet `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
