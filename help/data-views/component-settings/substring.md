@@ -4,9 +4,9 @@ description: Använd en delmängd av en sträng som dimensionsobjekt.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
@@ -115,9 +115,3 @@ Utdataplatshållare stöds också. Du kan använda dessa sekvenser i **[!UICONTR
 | `$$` | Utdata för strängtecknet `"$"`. |
 
 {style="table-layout:auto"}
-
-## Video om bindningsdimensioner
-
-Här är en video om bindningsdimensioner:
-
->[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)

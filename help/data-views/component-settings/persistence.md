@@ -4,7 +4,7 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 7%
@@ -37,33 +37,33 @@ Information om tillgängliga allokeringsinställningar.
 
 * **[!UICONTROL Most Recent]**: Bevarar det senaste (med tidsstämpel) värdet i dimensionen. Eventuella efterföljande värden som inträffar inom dimensionens förfalloperiod ersätter det tidigare beständiga värdet. Om Behandla &#39;Inget värde&#39; som ett värde&#39; är aktiverat för den här dimensionen under [Inga värdealternativ](no-value-options.md), tomma värden skriver över tidigare beständiga värden. Ta till exempel följande tabell med [!UICONTROL Most recent] tilldelning och [!UICONTROL Session] förfallodatum:
 
-   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Datamängdsvärden |  | C | B |  | A |
-   | Senaste allokering |  | C | B | B | A |
+  | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Datamängdsvärden |  | C | B |  | A |
+  | Senaste allokering |  | C | B | B | A |
 
 * **[!UICONTROL Original]**: Bevarar det ursprungliga värdet med en tidsstämpel som finns i dimensionen under förfalloperioden. Om den här dimensionen har ett värde skrivs den inte över när ett annat värde visas för en efterföljande händelse. Ta till exempel följande tabell med [!UICONTROL Original] tilldelning och [!UICONTROL Session] förfallodatum:
 
-   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Datamängdsvärden |  | C | B |  | A |
-   | Ursprunglig allokering |  | C | C | C | C |
+  | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Datamängdsvärden |  | C | B |  | A |
+  | Ursprunglig allokering |  | C | C | C | C |
 
 * **[!UICONTROL All]**: Fungerar på liknande sätt som [!UICONTROL Participation] attribueringsmodell för mätvärden. Bevarar alla värden lika så att alla får full uppskattning för måttet i rapporteringen. Ta till exempel följande tabell med [!UICONTROL All] tilldelning och [!UICONTROL Session] förfallodatum:
 
-   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Datamängdsvärden | A | B | C |  | A |
-   | Alla allokeringar | A | A,B | A, B, C | A, B, C | A, B, C |
+  | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Datamängdsvärden | A | B | C |  | A |
+  | Alla allokeringar | A | A,B | A, B, C | A, B, C | A, B, C |
 
 * **[!UICONTROL First Known]** och **[!UICONTROL Last Known]**: (19 januari 2022) Dessa två allokeringsmodeller uppfyller användningsvillkoren för &quot;inträde&quot; och &quot;avslutning&quot;. De tar det första eller sista observerade värdet för en dimension inom ett angivet beständigt omfång (session, person eller anpassad tidsperiod med uppslag) och tillämpar det på alla händelser inom det angivna omfånget. Exempel:
 
-   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Tidsstämpel (min) | 1 | 2 | 3 | 6 | 7 |
-   | Ursprungliga värden |  | C | B |  | A |
-   | Första kända | C | C | C | C | C |
-   | Senast känd | A | A | A | A | A |
+  | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Tidsstämpel (min) | 1 | 2 | 3 | 6 | 7 |
+  | Ursprungliga värden |  | C | B |  | A |
+  | Första kända | C | C | C | C | C |
+  | Senast känd | A | A | A | A | A |
 
 ## [!UICONTROL Expiration] inställningar
 
@@ -79,6 +79,8 @@ Information om tillgängliga förfalloinställningar.
 En nedrullningsbar lista där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga alternativ är andra dimensioner som ingår i datavyn.
 
 Se [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
 ## [!UICONTROL Binding Metric]
 
