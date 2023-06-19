@@ -3,9 +3,9 @@ description: Lär dig hur du kan analysera resultaten av A/B-tester på CJA-pane
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1808'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ The **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av
 
 >[!IMPORTANT]
 >
->I det här skedet [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data som hämtas till Adobe Experience Platform via Analytics Source Connector **inte** analyseras i [!UICONTROL Experimentation] -panelen. Vi förväntar oss en lösning på detta problem under 2023.
+>I det här skedet [Adobe Analytics for Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T) data *inte* analyseras på panelen Experimentation.
 
 ## Åtkomstkontroll {#access}
 
@@ -28,7 +28,7 @@ Två nya avancerade funktioner har lagts till: [!UICONTROL Lift] och [!UICONTROL
 
 ## Steg 1: Skapa anslutning för att experimentera med datauppsättningar {#connection}
 
-Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) som innehåller experimentella data och variantdata i två olika dimensioner. Om du har experimenterat med data i en enda dimension med experiment- och variantdata i en avgränsad sträng kan du använda [delsträng](/help/data-views/component-settings/substring.md) ange i datavyer för att dela upp dem i två för användning på panelen.
+Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste vara i ett **enkel** objektarray. Om du har experimenterat med data i en enda dimension med experiment- och variantdata i en avgränsad sträng kan du använda [delsträng](/help/data-views/component-settings/substring.md) ange i datavyer för att dela upp dem i två för användning på panelen.
 
 Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) till Adobe Experience Platform, [skapa en anslutning i CJA](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
 
@@ -86,9 +86,9 @@ The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL
 
 ## Steg 5: Tolka resultaten {#interpret}
 
-1. **Experiment är slutprodukt**: Varje gång du tittar på experimentrapporten analyserar Adobe de data som har samlats in i experimentet fram till den här tidpunkten och deklarerar ett experiment som&quot;slutgiltigt&quot; när ett giltigt konfidensintervall överskrider ett tröskelvärde på 95 % för *minst en* av varianterna (med en Bonferonni-korrigering tillämpad när det finns mer än två armar, för att korrigera för multipla hypotesstester).
+1. **Experiment är slutprodukt**: Varje gång du tittar på experimentrapporten analyserar Adobe de data som har samlats in i experimentet fram till den här tidpunkten och deklarerar ett experiment som&quot;slutgiltigt&quot; när ett giltigt konfidensintervall överskrider ett tröskelvärde på 95 % för *minst en* av varianterna (med en Benjamini-Hochberg-korrigering tillämpad när det finns mer än två armar, för att korrigera för multipla hypotestester).
 
-2. **Best Performance Variant**: När ett försök har förklarats vara avgörande betecknas varianten med den högsta konverteringsgraden som&quot;varianten med bästa resultat&quot;. Observera att denna variant antingen måste vara kontrollvarianten eller baslinjevarianten, eller en av varianterna som korsar det 95% som gäller vid varje tidpunkt (när Bonferonni korrigerar).
+2. **Best Performance Variant**: När ett försök har förklarats vara avgörande betecknas varianten med den högsta konverteringsgraden som&quot;varianten med bästa resultat&quot;. Observera att denna variant antingen måste vara kontroll- eller baslinjevarianten, eller en av varianterna som korsar det 95% som gäller vid varje tidpunkt (med korrigeringar av Benjamini-Hochberg tillämpade).
 
 3. **Konverteringsgrad**: Den konverteringsgrad som visas är ett förhållande mellan framgångsmåttet och det normaliserande måttvärdet. Observera att detta ibland kan vara större än 1 om mätvärdet inte är binärt (1 eller 0 för varje enhet i experimentet)
 
