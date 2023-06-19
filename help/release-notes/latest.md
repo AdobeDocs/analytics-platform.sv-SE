@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Senaste versionsinformation för CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 13ea4060bd5ca0a4b5b749b6e104edea26248a02
+source-git-commit: 7fdef4a33154f443722ad4625c83f91bea7e047d
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Versionsinformation för Customer Journey Analytics (CJA) (juni 2023)
 
-**Senaste uppdatering**: 15 juni 2023
+**Senaste uppdatering**: 19 juni 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -25,7 +25,7 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 14 juni 2023 |
 | **PowerBI- och Tableau-åtkomst till CJA-datavyer** | SQL Connector för Customer Journey Analytics (CJA) ger SQL-åtkomst till datavyer som du har definierat i CJA. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som CJA-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) |  | 30 juni 2023 |
 | **Upplev Edge-geosökningar** | Du kan skapa rapporter med hjälp av geolokaliseringsdata i CJA när Experience Edge Geo Lookups har aktiverats för din datastream. |  | 30 juni 2023 |
-| **Utökat sökningsstöd för profil- och sökdata** | Du kan lägga till uppslagsdatauppsättningar i händelsedatamängder, men även i profil- och uppslagsdatamängder. | 21 juni 2023 | 12 juli 2023 |
+| **Utökat sökningsstöd för profil- och sökdata** | Du kan lägga till uppslagsdatauppsättningar i händelsedatamängder, men även i profil- och uppslagsdatamängder. | 28 juni 2023 | 12 juli 2023 |
 | **Stöd för valutakonvertering** | Valutakonvertering stöds som en del av formateringen av en måttkomponent i en datavy. [Läs mer](../data-views/component-settings/format.md#currency) | 7 juni 2023 | 21 juni 2023 |
 
 {style="table-layout:auto"}
