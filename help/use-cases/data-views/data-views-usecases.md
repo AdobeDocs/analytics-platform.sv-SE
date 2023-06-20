@@ -4,9 +4,9 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Ett annat exempel är att använda besökar-ID, en dimension, som ett mått för
 
 ## 2. Använd heltal som dimensioner {#integers}
 
-Tidigare behandlades heltal automatiskt som mått i CJA. Nu kan numeriska värden (inklusive anpassade händelser från Adobe Analytics) behandlas som dimensioner. Här är ett exempel:
+Tidigare behandlades heltal automatiskt som mätvärden i Customer Journey Analytics. Nu kan numeriska värden (inklusive anpassade händelser från Adobe Analytics) behandlas som dimensioner. Här är ett exempel:
 
 1. Dra [!UICONTROL call_length_min] heltal i [!UICONTROL Dimensions] avsnitt under [!UICONTROL Included Components]:
 
@@ -116,7 +116,7 @@ Så här kommer du åt komponenten:
 
 ## 8. Använda funktionerna Datum och Tid {#date}
 
-Scheman i Adobe Experience Platform innehåller [!UICONTROL Date] och [!UICONTROL Date-Time] fält. CJA-datavyer har nu stöd för dessa fält. När du drar dessa fält till en datavy som en dimension kan du ange deras [format](/help/data-views/component-settings/format.md). Den här formatinställningen avgör hur fälten visas i rapporter. Exempel:
+Scheman i Adobe Experience Platform innehåller [!UICONTROL Date] och [!UICONTROL Date-Time] fält. Datavyer i Customer Journey Analytics har nu stöd för dessa fält. När du drar dessa fält till en datavy som en dimension kan du ange deras [format](/help/data-views/component-settings/format.md). Den här formatinställningen avgör hur fälten visas i rapporter. Exempel:
 
 * Om du väljer **[!UICONTROL Day]** med formatet **[!UICONTROL Month, Day, Year]** kan ett exempel i rapporter se ut så här: 23 augusti 2022.
 

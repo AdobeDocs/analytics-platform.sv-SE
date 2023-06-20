@@ -3,9 +3,9 @@ description: Läs mer om
 title: Mätvärdestyp och attribuering
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '216'
 ht-degree: 4%
 
 ---
@@ -31,4 +31,4 @@ Så här anger du måtttypen när du skapar ett beräknat mått:
 
 ## Attribuering
 
-Mer information om attribuering i CJA finns i [Inställningar för attribueringskomponent](/help/data-views/component-settings/attribution.md).
+Mer information om attribuering i Customer Journey Analytics finns i [Inställningar för attribueringskomponent](/help/data-views/component-settings/attribution.md).

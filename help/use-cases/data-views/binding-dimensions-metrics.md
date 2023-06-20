@@ -1,17 +1,17 @@
 ---
-title: Använd bindningsdimensioner och mätvärden i CJA
+title: Använd bindningsdimensioner och mätvärden i Customer Journey Analytics
 description: Attributdimensioner till objektarrayer för komplex beständighetsanalys.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 
-# Använd bindningsdimensioner och mätvärden i CJA
+# Använd bindningsdimensioner och mätvärden i Customer Journey Analytics
 
 Customer Journey Analytics erbjuder flera sätt att behålla dimensionsvärden efter den träff som de är inställda på. En av de beständighetsmetoder som Adobe erbjuder kallas bindning. I tidigare versioner av Adobe Analytics kallades detta koncept försäljning.
 
@@ -19,7 +19,7 @@ Customer Journey Analytics erbjuder flera sätt att behålla dimensionsvärden e
 
 ## Exempel 1: Använd bindningsdimensioner för att tilldela ytterligare produktattribut till ett inköp
 
-Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När den bundna dimensionsobjektet visas, kommer CJA tillbaka den bundna dimensionen och inkluderar den i händelsen för dig. Tänk på följande kundresa:
+Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När den bundna dimensionsposten visas återkallar Customer Journey Analytics den bundna dimensionen och tar med den i händelsen åt dig. Tänk på följande kundresa:
 
 1. En besökare ser en produktsida på en tvättmaskin.
 
@@ -82,7 +82,7 @@ Du kan gå till datavyhanteraren och binda produktfärg till produktnamn:
 
 ![Bindningsdimension](../assets/binding-dimension.png)
 
-När du anger den här beständighetsmodellen tar CJA hänsyn till produktnamnet när produktfärgen anges. När den känner igen samma produktnamn i en efterföljande händelse för den här personen, hämtas även produktfärgen. Samma data skulle se ut ungefär så här när du binder produktfärg till produktnamn:
+När du anger den här beständighetsmodellen tar Customer Journey Analytics hänsyn till produktnamnet när produktfärgen anges. När den känner igen samma produktnamn i en efterföljande händelse för den här personen, hämtas även produktfärgen. Samma data skulle se ut ungefär så här när du binder produktfärg till produktnamn:
 
 | product.color | intäkt |
 | --- | --- |
@@ -263,7 +263,7 @@ I Analysis Workspace ser resultatet ut ungefär så här:
 | tennisracket | $34.99 |
 | skor | $79.99 |
 
-CJA identifierar automatiskt relationen mellan den valda dimensionen och bindningsdimensionen. Om bindningsdimensionen finns i en objektmatris när den valda dimensionen är på en högre nivå, krävs ett bindningsmått. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I ovanstående exempel innehåller sökresultatsidan alltid en sökterm och ett sökmått.
+Customer Journey Analytics identifierar automatiskt relationen mellan den valda dimensionen och bindningsdimensionen. Om bindningsdimensionen finns i en objektmatris när den valda dimensionen är på en högre nivå, krävs ett bindningsmått. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I ovanstående exempel innehåller sökresultatsidan alltid en sökterm och ett sökmått.
 
 Om du ställer in söktermsdimensionen på den här beständiga modellen körs följande logik:
 
@@ -353,7 +353,7 @@ Analysis Workspace attribuerar det andra avsnittet av Orangey korrekt till sökt
 
 ## Exempel 4: Utvärdera webbläsarbeteende jämfört med sökbeteenden i en detaljhandelsinställning
 
-Du kan binda värden till dimensioner som angetts för tidigare händelser. När du anger en variabel med en bindningsdimension, tar CJA hänsyn till det beständiga värdet. Om du inte vill använda det här beteendet kan du justera bindningsdimensionens beständighetsinställningar. Titta på följande exempel där `product_finding_method` anges för en händelse och binds sedan till Cart Adds-måttet för följande händelse.
+Du kan binda värden till dimensioner som angetts för tidigare händelser. När du anger en variabel med en bindningsdimension, tar Customer Journey Analytics hänsyn till det beständiga värdet. Om du inte vill använda det här beteendet kan du justera bindningsdimensionens beständighetsinställningar. Titta på följande exempel där `product_finding_method` anges för en händelse och binds sedan till Cart Adds-måttet för följande händelse.
 
 1. En besökare söker efter `"camera"`. Observera att inga produkter har angetts på den här sidan.
 

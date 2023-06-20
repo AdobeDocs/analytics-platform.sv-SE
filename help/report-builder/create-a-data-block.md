@@ -1,14 +1,14 @@
 ---
-title: Skapa ett datablock med Report Builder i CJA
+title: Skapa ett datablock med Report Builder i Customer Journey Analytics
 description: Beskriver hur du skapar ett datablock.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---

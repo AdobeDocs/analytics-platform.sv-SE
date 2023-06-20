@@ -1,21 +1,22 @@
 ---
-title: Integrera Adobe Journey Optimizer:s beslutshantering med Customer Journey Analytics (CJA)
+title: Integrera Adobe Journey Optimizer Beslutshantering med Adobe Customer Journey Analytics
 description: Hämta in data som genererats av Adobe Journey Optimizer Decision Management och analysera dem med Analysis Workspace i Customer Journey Analytics.
-source-git-commit: 00a87f5f370310672ca37ab9df08350d14fc6a91
+exl-id: fde45264-46cf-4c68-9872-7fb739748f21
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
 
-# Integrera beslutsförvaltning med Customer Journey Analytics
+# Integrera beslutshantering med Adobe Customer Journey Analytics
 
 
 Adobe Journey Optimizer [Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) förenklar personaliseringen med ett centralt bibliotek med marknadsföringserbjudanden och en beslutsmotor som tillämpar regler och begränsningar på komplexa realtidsprofiler som skapats av Adobe Experience Platform för att hjälpa er att skicka rätt erbjudande till era kunder vid rätt tidpunkt.
 
-Beslutshantering ingår i och är integrerad med Adobe Journey Optimizer (AJO). Det kan också användas oberoende av resor och kampanjer som definieras i AJO, med hjälp av dess omfattande [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) support.
+Beslutshantering är en del av och integrerad med Adobe Journey Optimizer. Det kan också användas oberoende av resor och kampanjer som definieras i Adobe Journey Optimizer, med hjälp av de omfattande [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) support.
 
-Du kan importera data som genererats av Beslutshantering för att utföra avancerad analys i Customer Journey Analytics (CJA) genom att utföra följande steg:
+Du kan importera data som har genererats av Beslutshantering för att utföra avancerad analys i Customer Journey Analytics genom att utföra följande steg:
 
 ## Skicka data från beslutshantering till Adobe Experience Platform
 
@@ -30,20 +31,20 @@ Välj och konfigurera följande datauppsättningar:
 | Datauppsättning | Datauppsättningstyp | Anslutningsinställningar | Beskrivning |
 | --- | --- | --- | --- |
 | ODE DecisonEvents - _sandlåda_ beslut | Händelse | Person-ID: `IdentityMap` | Innehåller automatiskt genererade data för beslutshändelsehantering. _Sandbox_ refererar till namnet på den specifika sandlådan. |
-| AJO Message Feedback Event Dataset | Händelse | Person-ID: `IdentityMap` | Innehåller meddelandeleveranshändelser. |
-| AJO Email Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller e-postspårningshändelser. |
-| AJO Push Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller push-spårningshändelser. |
-| AJO-entitetsdatauppsättning | Sök | Nyckel: `_id`<br>Matchningsnyckel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Innehåller klassificeringar som kopplar metadata för resa och kampanj till alla AJO-händelsedata. |
+| Adobe Journey Optimizer Message Feedback Event Dataset | Händelse | Person-ID: `IdentityMap` | Innehåller meddelandeleveranshändelser. |
+| Adobe Journey Optimizer Experience Event-datauppsättning för e-postspårning | Händelse | Person-ID: `IdentityMap` | Innehåller e-postspårningshändelser. |
+| Adobe Journey Optimizer Push Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller push-spårningshändelser. |
+| Adobe Journey Optimizer Entity Dataset | Sök | Nyckel: `_id`<br>Matchningsnyckel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Innehåller klassificeringar som kopplar metadata för resa och kampanj till alla händelsedata för Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
 
 ## Skapa en datavy
 
-När en anslutning har skapats kan du skapa en eller flera [Datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en) för att konfigurera önskade mått och mätvärden som är tillgängliga i CJA.
+När en anslutning har skapats kan du skapa en eller flera [Datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en) för att konfigurera önskade mått och mätvärden som är tillgängliga i Customer Journey Analytics.
 
 >[!NOTE]
 >
->Datamatchningar mellan AJO och CJA är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
+>Datamatchningar mellan Adobe Journey Optimizer och Customer Journey Analytics är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
 
 ### Konfigurera dimensioner
 

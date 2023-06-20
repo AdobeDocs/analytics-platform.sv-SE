@@ -4,9 +4,9 @@ description: Konfigurera hur ett mått formateras.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a3fea05ac95407c7f3bee723a267ae0bc03d334a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ Så här visar du en valuta för ett mått:
 
 Så här aktiverar du konvertering av en valuta för ett mätresultat:
 
-- Konfigurera din CJA-anslutning så att den innehåller minst en händelsedatamängd som innehåller en valutakoddimension för varje händelse som innehåller ett valutamått. Denna valutakoddimension använder en alfabetisk valutakod som överensstämmer med [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard för att representera valutor. Till exempel USD för $, EUR för €, GBP för £.
+- Konfigurera din Customer Journey Analytics-anslutning så att den innehåller minst en händelsedatamängd som innehåller en valutakoddimension för varje händelse som innehåller ett valutamått. Denna valutakoddimension använder en alfabetisk valutakod som överensstämmer med [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard för att representera valutor. Till exempel USD för $, EUR för €, GBP för £.
 
 - Du har (valfritt) använt [!UICONTROL Currency Code] sammanhangsetikett till en eller flera dimensioner som definierar valutakoder som är tillgängliga i datauppsättningen.
 

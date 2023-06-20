@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 role: User, Admin
 exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Intelligenta bildtexter inriktas på följande:
 * Analytiker som behöver berättelser att dela med andra användare. Analytikerna behöver dessa insikter för att kunna ge sina användare kontext.
 * Affärsanvändare som snabbt vill upptäcka högnivåaktiviteter.
 
-Bildtexter är tillgängliga för alla CJA-användare och kräver ingen särskild behörighet.
+Bildtexter är tillgängliga för alla Customer Journey Analytics-användare och kräver ingen särskild behörighet.
 
 ## Starta intelligenta bildtexter {#launch}
 

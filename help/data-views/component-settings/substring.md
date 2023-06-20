@@ -4,9 +4,9 @@ description: Använd en delmängd av en sträng som dimensionsobjekt.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '837'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Använd reguljära uttryck på en dimension för att hämta det önskade värdet
 * **[!UICONTROL Output format]**: Ett valfritt fält där du kan lägga till text eller ordna om regex-utdata för undergrupper. Om det här fältet är tomt är strängutdata det utvärderade regex-uttrycket.
 * **[!UICONTROL Case sensitive]**: En kryssruta som tvingar det reguljära uttrycket att vara skiftlägeskänsligt om det är aktiverat.
 
-CJA använder en delmängd av Perl-regex-syntaxen. Om indata inte matchar det reguljära uttrycket och **[!UICONTROL Output format]** är tom, [Inga värdealternativ](no-value-options.md) gäller. Följande uttryck stöds:
+Customer Journey Analytics använder en delmängd av Perl-regex-syntaxen. Om indata inte matchar det reguljära uttrycket och **[!UICONTROL Output format]** är tom, [Inga värdealternativ](no-value-options.md) gäller. Följande uttryck stöds:
 
 | Uttryck | Beskrivning |
 | --- | --- |

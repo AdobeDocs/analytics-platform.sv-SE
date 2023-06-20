@@ -1,14 +1,14 @@
 ---
 title: Så här använder du filter i Report Builder i Customer Journey Analytics
-description: Beskriver hur du använder filter i Report Builder för CJA
+description: Beskriver hur du använder filter i Report Builder för Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---

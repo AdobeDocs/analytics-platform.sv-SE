@@ -1,11 +1,11 @@
 ---
-description: Lär dig hur du kan analysera resultaten av A/B-tester på CJA-panelen Experimentation.
+description: Lär dig hur du kan analysera resultaten av A/B-tester på panelen Experimentation i Customer Journey Analytics.
 title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ The **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av
 
 ## Åtkomstkontroll {#access}
 
-Experimentationspanelen kan användas av alla som använder Customer Journey Analytics (CJA). Inga administratörsrättigheter eller andra behörigheter krävs. Installationen (steg 1 och 2 nedan) kräver åtgärder som bara administratörer kan utföra.
+Experimentationspanelen kan användas av alla Customer Journey Analytics-användare. Inga administratörsrättigheter eller andra behörigheter krävs. Installationen (steg 1 och 2 nedan) kräver åtgärder som bara administratörer kan utföra.
 
 ## Nya funktioner i Beräknade värden {#functions}
 
@@ -30,11 +30,11 @@ Två nya avancerade funktioner har lagts till: [!UICONTROL Lift] och [!UICONTROL
 
 Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste vara i ett **enkel** objektarray. Om du har experimenterat med data i en enda dimension med experiment- och variantdata i en avgränsad sträng kan du använda [delsträng](/help/data-views/component-settings/substring.md) ange i datavyer för att dela upp dem i två för användning på panelen.
 
-Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) till Adobe Experience Platform, [skapa en anslutning i CJA](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
+Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) till Adobe Experience Platform, [skapa en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
 
 ## Steg 2: Lägga till kontextetiketter i datavyer {#contect-labels}
 
-I inställningarna för CJA-datavyer kan administratörer lägga till [kontextetiketter](/help/data-views/component-settings/overview.md) till mått eller mätvärden och CJA-tjänster som [!UICONTROL Experimentation] kan använda dessa etiketter för sina ändamål. Två fördefinierade etiketter används för panelen Experimentation:
+I datavysinställningarna för Customer Journey Analytics kan administratörer lägga till [kontextetiketter](/help/data-views/component-settings/overview.md) till mått eller mätvärden och Customer Journey Analytics [!UICONTROL Experimentation] kan använda dessa etiketter för sina ändamål. Två fördefinierade etiketter används för panelen Experimentation:
 
 * [!UICONTROL Experimentation Experiment]
 * [!UICONTROL Experimentation Variant]
@@ -47,12 +47,12 @@ Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte finns nå
 
 ## Steg 3: Konfigurera panelen Experimentera {#configure}
 
-1. I CJA Workspace drar du panelen Experimentation till ett projekt.
+1. Dra panelen Experimentation till ett projekt i arbetsytan Customer Journey Analytics.
 
 ![experimentpanel](assets/experiment.png)
 
 >[!IMPORTANT]
->Om de nödvändiga inställningarna i CJA-datavyer inte har slutförts får du det här meddelandet innan du kan fortsätta: &quot;[!UICONTROL Please configure the experiment and variant dimensions in Data Views]&quot;.
+>Om de nödvändiga inställningarna i datavyer i Customer Journey Analytics inte har slutförts får du det här meddelandet innan du kan fortsätta: &quot;[!UICONTROL Please configure the experiment and variant dimensions in Data Views]&quot;.
 
 1. Konfigurera panelens indatainställningar.
 
@@ -62,7 +62,7 @@ Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte finns nå
    | **[!UICONTROL Control Variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har märkts med  **[!UICONTROL Variant]** etikett i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
    | **[!UICONTROL Success Metrics]** | Mätvärden eller mätvärden som en användare jämför varianter med. Den variant som har det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som den&quot;bästa varianten&quot; i ett experiment. Du kan lägga till upp till 5 mätvärden. |
    | **[!UICONTROL Normalizing Metric]** | Grunden ([!UICONTROL People], [!UICONTROL Sessions], eller [!UICONTROL Events]) som testet ska köras på. Ett test kan t.ex. jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som **[!UICONTROL Conversions per session]** eller **[!UICONTROL Conversions per person]**. |
-   | **[!UICONTROL Date Range]** | Datumintervallet anges automatiskt baserat på den första händelsen som togs emot i CJA för det valda experimentet. Du kan begränsa eller utöka datumintervallet till en mer specifik tidsram om det behövs. |
+   | **[!UICONTROL Date Range]** | Datumintervallet anges automatiskt baserat på den första händelsen som togs emot i Customer Journey Analytics för det valda experimentet. Du kan begränsa eller utöka datumintervallet till en mer specifik tidsram om det behövs. |
 
 1. Klicka på **[!UICONTROL Build]**.
 
@@ -110,7 +110,7 @@ En 95-procentig konfidenssekvens kommer att innehålla det &quot;sanna&quot; vä
 
 ## Tolka icke-slumpmässiga dimensioner {#non-randomized}
 
-Med CJA kan analytiker välja vilken dimension som helst som&quot;experiment&quot;. Men hur tolkar man en analys där den dimension som väljs som försöksprodukt inte är en som är slumpmässig?
+Med Customer Journey Analytics kan analytiker välja vilken dimension som helst som&quot;experiment&quot;. Men hur tolkar man en analys där den dimension som väljs som försöksprodukt inte är en som är slumpmässig?
 
 Ta till exempel en annons som en person ser. Du kan vara intresserad av att mäta förändringen i vissa mätvärden (t.ex. genomsnittliga intäkter) om du bestämmer dig för att visa personer&quot;och B&quot; i stället för&quot;och A&quot;. Orsakseffekten av att visa annonser B i stället för annons A är av central betydelse för att fatta ett beslut om marknadsföring. Denna orsakseffekt kan mätas som de genomsnittliga intäkterna för hela befolkningen om vi ersatte status quo för att visa och A med den alternativa strategin att visa och B.
 

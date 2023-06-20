@@ -2,22 +2,22 @@
 title: Kombinera rapportsviter med olika scheman
 description: Lär dig hur du använder Data Prep för att kombinera rapportsviter med olika scheman
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1398'
 ht-degree: 1%
 
 ---
 
 # Kombinera rapportsviter med olika scheman
 
-The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) lägger in data från Adobe Analytics i Adobe Experience Platform (AEP) för användning i AEP-program som Real-time Customer Data Platform och Customer Journey Analytics (CJA). Varje rapportsvit som hämtas till AEP konfigureras som ett enskilt källanslutningsdataflöde, och varje dataflöde markeras som en datauppsättning i AEP-datasjön. Analyskällans koppling skapar en datauppsättning per rapportserie.
+The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) lägger in data från Adobe Analytics i Adobe Experience Platform för användning i Adobe Experience Platform-program som Real-time Customer Data Platform och Customer Journey Analytics (Customer Journey Analytics). Varje rapportsvit som hämtas in till Adobe Experience Platform konfigureras som ett enskilt källanslutningsdataflöde, och varje dataflöde markeras som en datauppsättning i Adobe Experience Platform datasjön. Analyskällans koppling skapar en datauppsättning per rapportserie.
 
-CJA-kunder använder [anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) att integrera datauppsättningar från AEP Data Lake i CJA:s Analysis Workspace. När du kombinerar rapportsviter i en anslutning måste schemaskillnaderna mellan rapportsviterna dock lösas med hjälp av AEP:s [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) funktionalitet. Syftet är att säkerställa att Adobe Analytics-variabler som props och eVars har en konsekvent innebörd i CJA.
+Customer Journey Analytics-kunder använder [anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) att integrera datauppsättningar från Adobe Experience Platform datasjön i Customer Journey Analytics Analysis Workspace. När du kombinerar rapportsviter i en anslutning måste schemaskillnaderna mellan rapportsviterna dock lösas med Adobe Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) funktionalitet. Syftet är att säkerställa att Adobe Analytics-variabler som props och eVars har en konsekvent betydelse i Customer Journey Analytics.
 
 ## Schemaskillnader mellan rapportsviter är problematiska
 
-Anta att ditt företag vill överföra data från två olika rapportsviter till AEP för CJA, och anta att scheman för de två rapportsviterna är olika:
+Anta att ert företag vill överföra data från två olika rapportsviter till Adobe Experience Platform för användning av Customer Journey Analytics, och anta att scheman för de två rapportsviterna skiljer sig åt:
 
 | Report Suite A | Report Suite B |
 | --- | --- |
@@ -28,14 +28,14 @@ För enkelhetens skull, låt oss säga att det här är de enda definierade eVar
 
 Anta dessutom att du utför följande åtgärder:
 
-- Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite A** till AEP-datasjön som **Datauppsättning A**.
-- Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite B** till AEP-datasjön som **Datauppsättning B**.
-- Skapa en [CJA-anslutning](/help/connections/create-connection.md) anropad **Alla rapportsviter** som kombinerar datauppsättning A och datauppsättning B.
-- Skapa en [CJA-datavy](/help/data-views/create-dataview.md) anropad **Global vy** som baseras på anslutningen Alla rapportsviter.
+- Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite A** till Adobe Experience Platform datasjön som **Datauppsättning A**.
+- Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite B** till Adobe Experience Platform datasjön som **Datauppsättning B**.
+- Skapa en [Customer Journey Analytics](/help/connections/create-connection.md) anropad **Alla rapportsviter** som kombinerar datauppsättning A och datauppsättning B.
+- Skapa en [Datavy för Customer Journey Analytics](/help/data-views/create-dataview.md) anropad **Global vy** som baseras på anslutningen Alla rapportsviter.
 
 Utan att använda Data Prep för att lösa schemaskillnaderna mellan datauppsättning A och datauppsättning B kommer eVarorna i datavyn i den globala vyn att innehålla en blandning av värden:
 
-| Datavyn Global vy i CJA |
+| Datavy för global vy i Customer Journey Analytics |
 | --- |
 | eVar1 => en blandning av söktermer och affärsenheter |
 | eVar2 => en blandning av kundkategorier och söktermer |
@@ -46,11 +46,11 @@ Detta resulterar i meningslösa rapporter för eVar1 och eVar2:
 - Sökvillkoren fördelas mellan eVar1 och eVar2.
 - Det går inte att använda olika attribueringsmodeller för varje sökterm, affärsenhet eller kundkategori.
 
-## Använd AEP Data Prep för att lösa schemaskillnader mellan rapportsviter
+## Använd Adobe Experience Platform Data Prep för att lösa schemaskillnader mellan olika rapportsviter
 
-Funktionen Experience Platform Data Prep är integrerad med Analytics Source Connector och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i CJA-datavyn. (Namnkonventionerna nedan kan anpassas efter dina behov.)
+Funktionen Experience Platform Data Prep är integrerad med Analytics Source Connector och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i datavyn i Customer Journey Analytics. (Namnkonventionerna nedan kan anpassas efter dina behov.)
 
-1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) i AEP (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande i schemat:
+1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) i Adobe Experience Platform (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande i schemat:
 
    | &quot;Enhetligt schema&quot; |
    | --- |
@@ -83,11 +83,11 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics Source Con
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Search_term |
 
-1. Skapa **Alla rapportsviter** anslutning för CJA, som kombinerar datauppsättning A och datauppsättning B.
+1. Skapa **Alla rapportsviter** anslutning för Customer Journey Analytics, där datauppsättning A och datauppsättning B kombineras.
 
-1. Skapa en **Global vy** datavy i CJA. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Enhetliga fält.
+1. Skapa en **Global vy** datavy i Customer Journey Analytics. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Enhetliga fält.
 
-   **Global vy** datavy i CJA:
+   **Global vy** datavy i Customer Journey Analytics:
 
    | Källfält | Vill du inkludera i datavyn? |
    | --- | --- | 
@@ -117,7 +117,7 @@ Funktionerna hos Data Prep för att kombinera datauppsättningar med olika schem
 
 Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data med kundkategorin i fältet Some_field i call center-data. Här är ett sätt du kan göra det på. Återigen kan namnkonventionen ändras efter dina behov.
 
-1. Skapa ett schema i AEP. Lägg till följande i schemat:
+1. Skapa ett schema i Adobe Experience Platform. Lägg till följande i schemat:
 
    | &quot;Utökat schema&quot; |
    | --- | 
@@ -142,11 +142,11 @@ Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data
    | --- | --- |
    | _\&lt;path>_.Vissa_fält | _\&lt;path>_.Customer_category |
 
-1. Skapa en CJA-anslutning som kombinerar datauppsättning A och datauppsättning B.
+1. Skapa en Customer Journey Analytics-anslutning som kombinerar datauppsättning A och datauppsättning B.
 
-1. Skapa en datavy i CJA med den CJA-anslutning du just skapade. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Kundinformation.
+1. Skapa en datavy i Customer Journey Analytics med hjälp av den Customer Journey Analytics-anslutning du just skapade. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Kundinformation.
 
-   Datavy i CJA:
+   Datavy i Customer Journey Analytics:
 
    | Källfält | Vill du inkludera i datavyn? |
    |---|---|
@@ -156,6 +156,6 @@ Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data
 
 ## Data Prep vs. komponent-ID
 
-Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i CJA när du vill kombinera data från flera datauppsättningar till en enda CJA-anslutning. Om du tänker behålla rapportsviterna i separata CJA-anslutningar men vill använda en uppsättning rapporter för alla anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i CJA, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) för mer information.
+Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i Customer Journey Analytics när du vill kombinera data från flera datauppsättningar till en enda Customer Journey Analytics-anslutning. Om du tänker behålla rapportsviterna i olika Customer Journey Analytics-anslutningar men vill använda en uppsättning rapporter för alla anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i Customer Journey Analytics, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) för mer information.
 
-Ändring av komponent-ID:t är en CJA-funktion och påverkar inte data från Analytics Source Connector som skickas till kundprofilen i realtid och RTCDP.
+Att ändra komponent-ID:t är en funktion som bara är för Customer Journey Analytics och påverkar inte data från Analytics Source Connector som skickas till kundprofilen i realtid och RTCDP.

@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2451'
+source-wordcount: '2457'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Följande information beskriver för chefer av Adobe Analytics-data hur man konf
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->Styrkortsskärmbilder för den här sidan har tagits från Adobe Analytics-gränssnittet, inte från CJA. Gränssnitten är nästan identiska.
+>Styrkortsskärmbilder för den här sidan har tagits från Adobe Analytics-gränssnittet, inte från Customer Journey Analytics. Gränssnitten är nästan identiska.
 
 Ett Adobe Analytics-styrkort visar viktiga datavisualiseringar för chefsanvändare i en sidindelad layout, vilket visas nedan:
 
@@ -76,7 +76,7 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 ## Använda filter {#filters}
 
-Om du vill använda filter på enskilda plattor drar du ett filter (segment är filter i CJA) från den vänstra panelen och släpper det direkt ovanpå plattan.
+Om du vill använda filter på enskilda plattor drar du ett filter (segment är filter i Customer Journey Analytics) från den vänstra panelen och släpper det direkt ovanpå plattan.
 
 Om du vill använda filtret på alla plattor i styrkortet släpper du plattan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurera och använda filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Adobe Analytics Workspace.
 
@@ -163,7 +163,7 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att använda filter. Segment är filter i CJA.
+När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att använda filter. Segment är filter i Customer Journey Analytics.
 
 ![Egenskapspanelen](assets/properties-tile-new.png)
 

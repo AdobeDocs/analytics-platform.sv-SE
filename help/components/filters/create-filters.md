@@ -2,9 +2,9 @@
 title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ När du använder filter i ett frihandsprojekt finns det även flera andra metod
 
 | Åtgärd | Beskrivning |
 | --- | --- |
-| Skapa filter från markering | Skapa ett textbundet filter. Det här filtret gäller bara för det öppna projektet och sparas inte som ett CJA-filter.<p> 1. Markera vilka tabellrader som du vill ska ingå i filtret.  2. Högerklicka på markeringen.  3. Klicka *Skapa filter från markering*. |
+| Skapa filter från markering | Skapa ett textbundet filter. Det här filtret gäller bara för det öppna projektet och sparas inte som ett Customer Journey Analytics-filter.<p> 1. Markera vilka tabellrader som du vill ska ingå i filtret.  2. Högerklicka på markeringen.  3. Klicka *Skapa filter från markering*. |
 | Arbetsyta [!UICONTROL Components] > [!UICONTROL New Filter] | Visar Filter Builder. Se [Filter Builder](/help/components/filters/filter-builder.md) för mer information om filtrering. |
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) eller [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md)Läs om hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
 | Använd filter som dimensioner | I följande video visas hur du använder filter som dimensioner:  <p>[Använd filter som dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |

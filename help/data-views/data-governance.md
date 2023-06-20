@@ -1,23 +1,23 @@
 ---
 title: Etiketter och profiler
-description: Lär dig hur dataetiketter och principer som definieras i AEP påverkar datavyer och rapporter i CJA.
+description: Lär dig hur dataetiketter och principer som definieras i Adobe Experience Platform påverkar datavyer och rapporter i Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # Etiketter och profiler
 
-När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i CJA.
+När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i Customer Journey Analytics.
 
-Följande etiketter är av särskilt intresse för CJA:
+Följande etiketter är av särskilt intresse för Customer Journey Analytics:
 
 * The `C8` etikett - **[!UICONTROL No measurement]**. Den här etiketten anger att data inte kan användas för analys på organisationens webbplatser eller i appar.
 
-* The `C12` etikett - **[!UICONTROL No General Data Export]**. Schemafält med den här etiketten kan inte exporteras eller hämtas från CJA (via rapportering, export, API, osv.)
+* The `C12` etikett - **[!UICONTROL No General Data Export]**. Schemafält med den här etiketten kan inte exporteras eller hämtas från Customer Journey Analytics (via rapportering, export, API, osv.)
 
 >[!NOTE]
 >
@@ -25,12 +25,12 @@ Följande etiketter är av särskilt intresse för CJA:
 
 Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du skapar dina profiler via [API för principtjänst](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) i Experience Platform.
 
-Två Adobe-definierade policyer används i CJA och påverkar rapportering och hämtning/delning:
+Två Adobe-definierade policyer används i Customer Journey Analytics och påverkar rapportering och nedladdning/delning:
 
 * **[!UICONTROL Enforce Analytics]** policy
 * **[!UICONTROL Enforce Download]** policy
 
-## Visa dataetiketter i CJA-datavyer
+## Visa dataetiketter i datavyer i Customer Journey Analytics
 
 Dataetiketter som har skapats i Experience Platform visas på tre platser i användargränssnittet för datavyer:
 
@@ -52,7 +52,7 @@ Klicka **[!UICONTROL Apply]** för att se vilka komponenter som har etiketter ko
 
 ## Filtrera på datastyrningsprinciper i datavyer
 
-Du kan kontrollera om en profil är aktiverad som blockerar användningen av vissa CJA-datavytelement för analys eller export.
+Du kan kontrollera om en profil är aktiverad som blockerar användningen av vissa datavytelement i Customer Journey Analytics för analys eller export.
 
 Klicka på [!UICONTROL filter] ikonen i den vänstra listen och under **[!UICONTROL Data Governance]**, klicka **[!UICONTROL Policies]**:
 

@@ -4,9 +4,9 @@ description: Customer Journey Analytics ordlista.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Vissa Customer Journey Analytics-termer skiljer sig från hur de traditionellt h
 | Experience Cloud organisation | Inloggningsföretag | Se [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | Ej tillämpligt | Report Suite | Rapporteringssviter i traditionell Adobe Analytics-mening finns inte längre. I stället skapar du (virtuell) [datavyer](/help/data-views/create-dataview.md) från de plattformsdatauppsättningar som du har upprättat anslutningar till. |
 | Filter | Segment | Segment är nu filter. Filter i Customer Journey Analytics fungerar på samma sätt som segment. Bara terminologin har ändrats. |
-| Datavy | Virtuell rapportsvit | I Adobe Analytics är ett virtuellt rapportpaket en filtrerad vy av ett överordnat rapportpaket. Den största skillnaden mellan ett virtuellt rapportpaket och en datavy i CJA är att det virtuella rapportpaketet är en delmängd av ett rapportpaket av typen&quot;bas&quot; eller&quot;överordnad&quot; och därför ärver några av dess inställningar. Eftersom det inte längre finns några överordnade rapportsviter/basrapportsviter definierar du datavyer med egna inställningar. |
+| Datavy | Virtuell rapportsvit | I Adobe Analytics är ett virtuellt rapportpaket en filtrerad vy av ett överordnat rapportpaket. Den största skillnaden mellan ett virtuellt rapportpaket och en datavy i Customer Journey Analytics är att det virtuella rapportpaketet är en delmängd av ett rapportpaket av typen&quot;bas&quot; eller&quot;överordnad&quot; och därför ärver några av dess inställningar. Eftersom det inte längre finns några överordnade rapportsviter/basrapportsviter definierar du datavyer med egna inställningar. |
 
 ## Adobe Experience Platform ordlista
 

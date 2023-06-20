@@ -2,18 +2,18 @@
 title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
 
 # Skapa och publicera målgrupper
 
-I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics (CJA) till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
+I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
 
-Läs det här [översikt](/help/components/audiences/audiences-overview.md) för att bekanta dig med konceptet CJA-målgrupper.
+Läs det här [översikt](/help/components/audiences/audiences-overview.md) för att bekanta dig med konceptet Customer Journey Analytics målgrupper.
 
 ## Skapa målgrupper {#create}
 
@@ -38,7 +38,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Name] | Publiken. |
    | [!UICONTROL Tags] | Alla taggar som du vill ska tilldelas till målgruppen för organisatoriska ändamål. Du kan använda en befintlig tagg eller ange en ny. |
    | [!UICONTROL Description] | Lägg till en bra beskrivning av målgruppen för att skilja den från andra. |
-   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmars uppdateringsfrekvens finns det en gräns på 75 till 150 målgruppsuppdateringar, beroende på ditt CJA-berättigande.</li></ul> |
+   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmars uppdateringsfrekvensen finns det en gräns på 75 till 150 målgrupper som uppdateras beroende på ditt Customer Journey Analytics-berättigande.</li></ul> |
    | Utgångsdatum | När publiken slutar uppdatera. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan målgruppen förfaller. |
    | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max 90 dagar. |
    | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
@@ -74,38 +74,38 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 ## Vad händer när en målgrupp har skapats? {#after-audience-created}
 
-När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för Experience Platform för varje ny CJA-målgrupp. Ett AEP-direktuppspelningssegment skapas endast om din organisation är inställd för direktuppspelningssegmentering.
+När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för Experience Platform för varje ny Customer Journey Analytics-målgrupp. Ett Adobe Experience Platform-direktuppspelningssegment skapas endast om din organisation är inställd för direktuppspelningssegmentering.
 
-* AEP-segmentet delar samma namn/beskrivning som CJA-målgruppen, men namnet läggs till med CJA-målgrupps-ID:t för att se till att det är unikt.
-* Om CJA-målgruppens namn/beskrivning ändras återspeglas även den ändringen i AEP-segmentets namn/beskrivning.
-* Om en CJA-målgrupp tas bort av en användare tas AEP-segmentet INTE bort. Orsaken är att CJA-målgruppen senare kan tas bort.
+* Adobe Experience Platform-segmentet har samma namn/beskrivning som Customer Journey Analytics-målgruppen, men namnet läggs till med målgrupps-ID:t för Customer Journey Analytics för att säkerställa att det är unikt.
+* Om målgruppsnamnet/beskrivningen för Customer Journey Analytics ändras återspeglas även ändringen i Adobe Experience Platform segmentnamn/beskrivning.
+* Om en Customer Journey Analytics-målgrupp tas bort av en användare tas Adobe Experience Platform-segmentet INTE bort. Orsaken är att Customer Journey Analytics-publiken senare kan tas bort.
 
 ## Svarstidsfrågor {#latency}
 
 Vid flera tillfällen före, under och efter publikationen kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-![Latens från AEP till CJA](assets/latency-diagram.png)
+![Svarstid från Adobe Experience Platform till Customer Journey Analytics](assets/latency-diagram.png)
 
 | # | Svarstid | Latenslängd |
 | --- | --- | --- |
 | Visas inte | Adobe Analytics to Analytics Source Connector (A4T) | Upp till 30 minuter |
 | 1 | Intag av data i datasjön (från Analytics Source Connector eller andra källor) | Upp till 90 minuter |
-| 2 | Intag av data från Experience Platform Data Lake till CJA | Upp till 90 minuter |
+| 2 | Intag av data från Experience Platform Data Lake till Customer Journey Analytics | Upp till 90 minuter |
 | 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Cirka 60 minuter |
 | 4 | Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
-| 5 | Skapar mål i AEP: Aktivera det nya segmentet | 1-2 timmar |
+| 5 | Skapar mål i Adobe Experience Platform: Aktivera det nya segmentet | 1-2 timmar |
 
 {style="table-layout:auto"}
 
-## Använda CJA-målgrupper i Experience Platform {#audiences-aep}
+## Använda Customer Journey Analytics-målgrupper i Experience Platform {#audiences-aep}
 
-CJA tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). CJA skickar målgruppen vidare till Experience Platform med den primära identiteten angiven enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
+Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). Customer Journey Analytics skickar målgruppen vidare till Experience Platform med den primära identiteten angiven enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
 
 RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan till exempel&quot;user@adobe.com&quot; användas på alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
-Du kan visa CJA-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
+Du kan visa Customer Journey Analytics-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
-Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
+Du kan dra Customer Journey Analytics målgrupper till segmentdefinitionen för Adobe Experience Platform-segment.
 
 ![](assets/audiences-aep.png)
 
@@ -113,15 +113,15 @@ Du kan dra CJA-målgrupper till segmentdefinitionen för AEP-segment.
 
 Frågor och svar om publikens publicering.
 
-+++**Vad händer om en användare inte längre är medlem i en publik i CJA?**
++++**Vad händer om en användare inte längre är medlem i en målgrupp i Customer Journey Analytics?**
 
-I det här fallet skickas en exit-händelse till Experience Platform från CJA.
+I det här fallet skickas en exit-händelse till Experience Platform från Customer Journey Analytics.
 
 +++
 
-+++**Vad händer om du tar bort en publik i CJA?**
++++**Vad händer om du tar bort en publik i Customer Journey Analytics?**
 
-När en CJA-publik tas bort visas den inte längre i användargränssnittet för Experience Platform. Inga profiler som är kopplade till den målgruppen tas emellertid bort i Platform.
+När en Customer Journey Analytics-publik tas bort visas den inte längre i användargränssnittet för Experience Platform. Inga profiler som är kopplade till den målgruppen tas emellertid bort i Platform.
 
 +++
 
@@ -131,13 +131,13 @@ Ja, det kommer det.
 
 +++
 
-+++**Skickar CJA målgruppsdata som pipeline-händelser eller som en platt fil som också går till Data Lake?**
++++**Skickar Customer Journey Analytics målgruppsdata som rörliga händelser eller som en platt fil som också går till sjön?**
 
-CJA strömmar data till RTCP via pipeline, och dessa data samlas också in i en systemdatauppsättning i datasjön.
+Customer Journey Analytics strömmar data till RTCP via rörledning, och dessa data samlas också in i en systemdatauppsättning i datasjön.
 
 +++
 
-+++**Vilka identiteter skickar CJA?**
++++**Vilka identiteter skickar Customer Journey Analytics över?**
 
 Vilka identitets-/namnområdespar som anges i [Anslutningsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
 
@@ -145,11 +145,11 @@ Vilka identitets-/namnområdespar som anges i [Anslutningsinställningar](https:
 
 +++**Vilket ID väljs som primär identitet?**
 
-Se ovan. Vi skickar bara en identitet per CJA-person.
+Se ovan. Vi skickar bara en identitet per Customer Journey Analytics&quot;person&quot;.
 
 +++
 
-+++**Bearbetar RTCP även CJA-meddelanden? Kan CJA lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?**
++++**Bearbetar RTCP även Customer Journey Analytics-meddelandena? Kan Customer Journey Analytics lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?**
 
 Nej. Vi skickar bara en identitet per person, så det finns inga diagramkanter som RTCP kan använda.
 

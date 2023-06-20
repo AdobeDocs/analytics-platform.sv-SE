@@ -4,9 +4,9 @@ description: Bestäm hur en dimension ska hanteras om den är tom.
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0bd632d9e748b567c7b946f4c7d1437f0a776ca2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -30,4 +30,4 @@ Med inga värdealternativ kan du bestämma hur Analysis Workspace ska hantera si
 
 ## Blogginlägg
 
-Här är ett relaterat blogginlägg om [hantering av&quot;inget värde&quot; i CJA](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+Här är ett relaterat blogginlägg om [hantering av&quot;inget värde&quot; i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

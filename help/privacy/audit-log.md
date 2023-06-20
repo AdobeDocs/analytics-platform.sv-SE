@@ -1,31 +1,31 @@
 ---
 title: Granskningsloggar
-description: Lär dig hur du visar och hanterar CJA-granskningsloggar.
+description: Lär dig hur du visar och hanterar Customer Journey Analytics granskningsloggar.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
 
 # Granskningsloggar
 
-För att öka insynen i och synligheten för aktiviteter som utförs i systemet kan du med Customer Journey Analytics (CJA) granska användaraktivitet för olika tjänster och funktioner i form av &quot;granskningsloggar&quot;. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act).
+För att öka insynen i och synligheten för aktiviteter som utförs i systemet kan du med Adobe Customer Journey Analytics granska användaraktiviteter för olika tjänster och funktioner i form av &quot;granskningsloggar&quot;. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act).
 
 I grundläggande bemärkelse anger en granskningslogg **som** utförd **vad** och **när**. Varje åtgärd som registreras i en logg innehåller metadata som anger åtgärdstyp, datum och tid, e-post-ID för användaren som utförde åtgärden samt ytterligare attribut som är relevanta för åtgärdstypen.
 
-Det här avsnittet handlar om granskningsloggar i CJA, inklusive hur du visar och hanterar dem i användargränssnittet.
+Det här avsnittet handlar om granskningsloggar i Customer Journey Analytics, inklusive hur du visar och hanterar dem i användargränssnittet.
 
 ## Åtkomst till granskningsloggar
 
 När funktionen är aktiverad för din organisation samlas granskningsloggarna automatiskt in när aktiviteten inträffar. Du behöver inte aktivera loggsamling manuellt.
 
-För att kunna visa och exportera granskningsloggar måste du ha fått **[!UICONTROL Audit Logs Access]** behörighet för åtkomstkontroll i Adobe Console. Läs mer om hur du hanterar individuella behörigheter för CJA-funktioner i [dokumentation om åtkomstkontroll](../admin/cja-access-control.md).
+För att kunna visa och exportera granskningsloggar måste du ha fått **[!UICONTROL Audit Logs Access]** behörighet för åtkomstkontroll i Adobe Console. Läs mer om hur du hanterar enskilda behörigheter för Customer Journey Analytics-funktioner i [dokumentation om åtkomstkontroll](../admin/cja-access-control.md).
 
 ## Visa granskningsloggen i användargränssnittet
 
-I CJA navigerar du till **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
+I Customer Journey Analytics går du till **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
 
 Granskningsloggen för i dag och i går visas som standard.
 
@@ -136,4 +136,4 @@ Du kan hämta granskningsloggar i CSV- eller JSON-format. Alla filter som använ
 
 ## Hantera granskningsloggar i API
 
-Alla åtgärder som du kan utföra i användargränssnittet kan också utföras med API-anrop. Se [CJA API-referensdokument](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) för mer information.
+Alla åtgärder som du kan utföra i användargränssnittet kan också utföras med API-anrop. Se [Customer Journey Analytics API-referensdokument](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) för mer information.

@@ -1,31 +1,31 @@
 ---
-title: Infoga Marketo Engage data i AEP och rapportera i CJA
-description: Lär dig hur du hämtar data från Marketo Engage till CJA
+title: Infoga Marketo Engage i Adobe Experience Platform och rapportera i Customer Journey Analytics
+description: Lär dig hur du hämtar data från Marketo Engage till Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
-# Infoga Marketo Engage data i AEP och rapportera i CJA
+# Infoga Marketo Engage i Adobe Experience Platform och rapportera i Customer Journey Analytics
 
-Ni kan utnyttja de nya Marketo Engage-datauppsättningarna i Adobe Experience Platform (AEP) för att tillhandahålla värdefulla analyser och rapporteringslösningar till B2B-marknadsförare. Rapportera sedan om dessa datauppsättningar i Customer Journey Analytics (CJA.)
+Ni kan utnyttja de nya Marketo Engage-datauppsättningarna i Adobe Experience Platform (Adobe Experience Platform) för att ge B2B-marknadsförarna värdefulla analys- och rapporteringslösningar. Rapportera sedan om dessa datauppsättningar i Adobe Customer Journey Analytics.
 
 ## Steg 1: Koppla Marketo källdatafält till deras XDM-mål
 
 Mappa [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) och [Verksamhet](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) objekt till respektive målfält för XDM-schema.
 
-## Steg 2: Infoga Marketo-data i AEP
+## Steg 2: Infoga Marketo-data i Adobe Experience Platform
 
 Använd [Marketo Engage-kontakt](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
 
-## Steg 3: Konfigurera en anslutning till den här datauppsättningen i CJA
+## Steg 3: Konfigurera en anslutning till den här datauppsättningen i Customer Journey Analytics
 
-För att kunna rapportera om datauppsättningar från Experience Platform måste du först upprätta en anslutning mellan datauppsättningar i Experience Platform och CJA. Mer information finns under [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
+För att kunna rapportera om datauppsättningar från Experience Platform måste du först upprätta en anslutning mellan datauppsättningarna i Experience Platform och Customer Journey Analytics. Mer information finns under [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
 ## Steg 4: Skapa en eller flera datavyer
 
@@ -36,7 +36,7 @@ A [datavy](/help/data-views/data-views.md) är en behållare som är specifik f�
 Ett exempel du kan utforska är: Hur många webbsidesbesök av leads hade vi i april-juni 2020?
 
 1. Öppna [Arbetsytan Analytics](/help/analysis-workspace/home.md) och skapa ett nytt projekt.
-Kunder med B2B/B2P CDP kan utföra analyser i B2C-stil i CJA. B2B-objekt är ännu inte tillgängliga.
+Kunder med B2B/B2P CDP kan göra analyser i B2C-stil i Customer Journey Analytics. B2B-objekt är ännu inte tillgängliga.
 
 1. Skapa en [filter](/help/components/filters/create-filters.md) för webbsidesvyer enligt följande - Händelsetyp = web.webpagedetails.pageViews :
 

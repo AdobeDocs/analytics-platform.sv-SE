@@ -1,15 +1,15 @@
 ---
-title: Integrera Adobe Journey Optimizer (AJO) med Customer Journey Analytics (CJA)
-description: Hämta in data som genererats av AJO och analysera dem med Analysis Workspace i CJA.
+title: Integrera Adobe Journey Optimizer med Customer Journey Analytics
+description: Hämta in data som genererats av Adobe Journey Optimizer och analysera dem med Analysis Workspace i Customer Journey Analytics.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
 
-# Integrera Adobe Journey Optimizer med Customer Journey Analytics
+# Integrera Adobe Journey Optimizer med Adobe Customer Journey Analytics
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) hjälper er att leverera sammankopplade, kontextuella och personaliserade upplevelser. Det gör att era kunder får ta nästa steg i kundresan.
 
@@ -31,7 +31,7 @@ Välj och konfigurera följande datauppsättningar:
 | AJO Email Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller e-postspårningshändelser som &#39;[!UICONTROL Opens]&#39;, &#39;[!UICONTROL Clicks]&#39;, och &#39;[!UICONTROL Unsubscribes]&#39;. |
 | AJO Push Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller push-spårningshändelser som &#39;[!UICONTROL App Launches]&#39;. |
 | Resestegshändelser | Händelse | Person-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Innehåller händelser som visar vilka profiler som deltog i varje nod av resan. |
-| AJO-entitetsdatauppsättning | Sök | Nyckel: `_id`<br>Matchningsnyckel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Innehåller klassificeringar som kopplar metadata för resa och kampanj till alla AJO-händelsedata. |
+| AJO-entitetsdatauppsättning | Sök | Nyckel: `_id`<br>Matchningsnyckel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Innehåller klassificeringar som kopplar metadata för resa och kampanj till alla händelsedata för Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
 
@@ -42,7 +42,7 @@ När en anslutning har skapats kan du skapa en eller flera [Datavyer](/help/data
 
 >[!NOTE]
 >
->Datamatchningar mellan AJO och CJA är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
+>Datamatchningar mellan Adobe Journey Optimizer och Customer Journey Analytics är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
 
 
 ### Konfigurera dimensioner i datavyn

@@ -1,12 +1,12 @@
 ---
 description: Visar de 5 högsta värdena för icke-tidsdimensioner (och 15 för tidsdimensioner).
-title: Förhandsgranska dimensioner i CJA Workspace
+title: Förhandsgranska dimensioner i arbetsytan i Customer Journey Analytics
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 26%
+source-wordcount: '194'
+ht-degree: 25%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Markera ett dataområde i Report Builder i CJA
-description: Beskriver hur du använder kalender, rullande datum och anpassade uttryck i Report Builder för CJA
+title: Markera ett dataområde i Report Builder i Customer Journey Analytics
+description: Beskriver hur du använder kalender, rullande datum och anpassade uttryck i Report Builder för Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ I följande tabell visas exempel på datumuttryck.
 | tm-1d | Sista dagen i föregående månad |
 | td-52w | Samma dag, för 52 veckor sedan |
 | tm-11m-1d | Sista dagen i samma månad förra året |
-| &quot;2020-09-06&quot; | 9 sept 2020 |
+| “2020-09-06” | 9 sept 2020 |
 
 ## Datumintervall från cell
 

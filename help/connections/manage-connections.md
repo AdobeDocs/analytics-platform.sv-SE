@@ -1,13 +1,13 @@
 ---
 title: Hantera anslutningar i Customer Journey Analytics
-description: Beskriver hur du hanterar anslutningar till datauppsättningar från Experience Platform i Customer Journey Analytics (CJA).
+description: Beskriver hur du hanterar anslutningar till datauppsättningar i Experience Platform i Customer Journey Analytics (Customer Journey Analytics).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1690'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ När administratörsanvändare har [skapade en eller flera anslutningar](/help/c
 
 * Här kan du kontrollera **status för anslutningsens datauppsättningar och för överföringsprocessen**. Med den här statuskontrollen får du veta när dina data är tillgängliga så att du kan gå till Analysis Workspace och börja analysera.
 
-* Med den kan du **identifiera eventuella dataavvikelser** på grund av felkonfigurering. Saknar du några rader? Om ja, vilka rader saknas och varför? Har du felkonfigurerat anslutningar och orsakat saknade data i CJA?
+* Med den kan du **identifiera eventuella dataavvikelser** på grund av felkonfigurering. Saknar du några rader? Om ja, vilka rader saknas och varför? Har du felkonfigurerat anslutningar och orsakat saknade data i Customer Journey Analytics?
 
 Här är ett videoklipp om den nya anslutningshanteraren:
 

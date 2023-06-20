@@ -2,9 +2,9 @@
 title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4e2d4d8c4f8145ae691114d57d663af96240b5f5
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '967'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Händelsebehållare innehåller värdebaserade ensidesindelningar:
 
 ## Inkörbar filtermall {#template}
 
-Traditionell analys innehåller flera färdiga mallfilter (filter) och beräknade mätvärden. Många av dem gäller inte i CJA, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i CJA.
+Traditionell analys innehåller flera färdiga mallfilter (filter) och beräknade mätvärden. Många av dem gäller inte i Customer Journey Analytics, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i Customer Journey Analytics.
 
 | Filternamn | Beskrivning |
 | --- | --- |

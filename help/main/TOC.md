@@ -7,19 +7,19 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
-user-guide-description: Lär dig mer om Customer Journey Analytics (CJA) och hur du använder Analysis Workspace med data från Experience Platform.
+user-guide-description: Lär dig mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 29%
+source-wordcount: '942'
+ht-degree: 25%
 
 ---
 
 
-# Användarhandbok om Customer Journey Analytics {#using}
+# Adobe Customer Journey Analytics Guide {#using}
 
-+ [Användarhandbok om Customer Journey Analytics](../getting-started/cja-landing.md)
++ [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 
 + Versionsinformation {#releases}
    + [Senaste versionen](../release-notes/latest.md)
@@ -27,24 +27,24 @@ ht-degree: 29%
    + [2022 års utgåvor](../release-notes/2022.md)
    + [2021 års utgåvor](../release-notes/2021.md)
    + [2020-versioner](../release-notes/2020.md)
-   + [CJA-releaser](../release-notes/releases.md)
-   + [CJA - dokumentationsuppdateringar](../release-notes/doc-changes.md)
+   + [Customer Journey Analytics](../release-notes/releases.md)
+   + [Dokumentationsuppdateringar för Customer Journey Analytics](../release-notes/doc-changes.md)
 
 + Komma igång {#cja-overview}
    + [Customer Journey Analytics - översikt](../getting-started/cja-overview.md)
    + [Snabbstartsguide](../getting-started/cja-getting-started.md)
    + [Landningssida](../getting-started/landing.md)
    + [Frågor och svar](../getting-started/cja-faq.md)
-   + [Jämför CJA med BI-lösningar](../getting-started/cja-vs-bi.md)
+   + [Jämför Customer Journey Analytics med BI-lösningar](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics och Adobe Analytics {#compare-aa-cja}
-   + [Utveckling från Adobe Analytics ](../getting-started/aa-to-cja.md)
+   + [Utveckling från Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Användarhandbok för Adobe Analytics](../getting-started/aa-to-cja-user.md)
    + Jämförelse med Adobe Analytics {#cja-aa-comparison}
       + [Använd Adobe Analytics-data i Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Funktioner i Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Jämför terminologi för analysdata som skickas via Analytics Source Connector](../getting-started/aa-vs-cja/terminology.md)
-      + [Jämför databehandling i Adobe Analytics och CJA](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Jämför databehandling i Adobe Analytics och Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Virtuella rapporteringsmiljöer och sandlådemiljöer](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [STÖD, ECID, AACUSTOMID och Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -105,6 +105,7 @@ ht-degree: 29%
       + [Snabbtangenter (kortkommandon)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](../analysis-workspace/build-workspace-project/view-density.md)
+
    + Visualiseringar {#visualizations}
       + [Översikt över visualiseringar](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](../analysis-workspace/visualizations/t-sync-visualization.md)
@@ -115,18 +116,23 @@ ht-degree: 29%
             + [Kolumninställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska jämfört med statiska artiklar](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+
          + [Filtrera och sortera tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
 
          + [Summor för Workspace](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+
       + Kohorttabell {#cohort-table}
          + [Vad är kohortanalys?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera en kohortanalysrapport](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Användningsexempel på kohortanalyser](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+
       + Utfall {#fallout}
          + [Översikt över utfall](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurera en utfallsvisualisering](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Intradimensionella utfall](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Använda filter i bortfallsanalys](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+
+
       + Flöde {#flow}
          + [Översikt över flöden](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera en flödesvisualisering](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -147,6 +153,7 @@ ht-degree: 29%
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Trädkarta](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
+
    + Paneler {#panels}
       + [Översikt över paneler](../analysis-workspace/c-panels/panels.md)
       + [Panelen Attribution](../analysis-workspace/c-panels/attribution.md)
@@ -159,6 +166,7 @@ ht-degree: 29%
          + [Översikt](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [Indata- och utdatainställningar](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
          + [Vanliga frågor](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
+
    + Kuratera, dela och schemalägg projekt {#curate-share}
       + [Dela-menyn](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](../analysis-workspace/curate-share/curate.md)
@@ -167,6 +175,7 @@ ht-degree: 29%
       + [Visa endast  projekt](../analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](../analysis-workspace/curate-share/download-send.md)
       + [Schemalägg projekt](../analysis-workspace/curate-share/t-schedule-report.md)
+
    + Virtual Analyst {#virtual-analyst}
       + [Översikt över Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
       + Avvikelseidentifiering {#anomaly-detection}
@@ -182,15 +191,6 @@ ht-degree: 29%
       + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet i Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Långsvansar i Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
-
-
-
-
-
-
-
-
-
 
 + Kontrollpaneler för analyser {#cja-dashboards}
    + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
@@ -218,15 +218,18 @@ ht-degree: 29%
       + [Hantera anteckningar](../components/annotations/manage-annotations.md)
       + [Visa anteckningar](../components/annotations/view-annotations.md)
       + [Mobilanteckningar](../components/annotations/mobile-annotations.md)
+
    + Målgrupper {#audiences}
       + [Översikt över målgrupper](../components/audiences/audiences-overview.md)
       + [Skapa och publicera målgrupper](../components/audiences/publish.md)
       + [Hantera målgrupper](../components/audiences/manage.md)
+
    + Dimensioner {#dimensions}
       + [Förhandsvisa dimensioner](../components/dimensions/view-dimensions.md)
       + [Dela upp dimensioner](../components/dimensions/t-breakdown-fa.md)
       + [Tidsdelning av dimensioner](../components/dimensions/time-parting-dimensions.md)
       + [Dimensioner med mycket hög kardinalitet](../components/dimensions/high-cardinality.md)
+
    + [Mätvärden](../components/apply-create-metrics.md)
 
    + Filter {#cja-filters}
@@ -236,6 +239,7 @@ ht-degree: 29%
       + [Filter Builder](../components/filters/filter-builder.md)
       + [Hantera filter](../components/filters/manage-filters.md)
       + [Operatorer](../components/filters/operators.md)
+
    + Beräknade värden {#cja-calcmetrics}
       + [Översikt över beräknade mätvärden](../components/calc-metrics/calc-metr-overview.md)
       + Arbetsflöde för beräknade mätvärden {#cm-workflow}
@@ -256,23 +260,19 @@ ht-degree: 29%
       + [Standardberäknade värden](../components/calc-metrics/default-calcmetrics.md)
       + [Grundfunktioner](../components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](../components/calc-metrics/cm-adv-functions.md)
+
    + Kalender och datumintervall {#cja-date-ranges}
       + [Översikt över kalender- och datumintervall](../components/date-ranges/calendar.md)
       + [Skapa ett datumintervall](../components/date-ranges/create.md)
       + [Hantera datumintervall](../components/date-ranges/manage.md)
       + [Skapa anpassade datumintervall](../components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
+
    + Dataordlista {#data-dictionary}
       + [Översikt över dataordlistan](../components/data-dictionary/data-dictionary-overview.md)
       + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
       + [Redigera komponentposter i Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Övervaka dataordlistans hälsa](../components/data-dictionary/monitor-data-dictionary-health.md)
-
-
-
-
-
-
 
 + Report Builder {#cja-reportbuilder}
    + [Översikt över Report Builder](../report-builder/report-buider-overview.md)
@@ -294,11 +294,11 @@ ht-degree: 29%
    + [Vanliga frågor om flerkanalsanalys](../cca/faq.md)
 
 + Integreringar med Adobe {#integrations}
-   + [Integrera Adobe-lösningar med CJA - översikt](/help/integrations/overview.md)
+   + [Integrera Adobe-lösningar med Customer Journey Analytics i korthet](/help/integrations/overview.md)
    + [Integrera Adobe Analytics med Customer Journey Analytics](/help/integrations/aa.md)
-   + [Integrera Journey Optimizer-data med CJA](/help/integrations/ajo.md)
-   + [Integrera beslutsledningens data med CJA](/help/integrations/ajo-od.md)
-   + [Integrera kundens AI med CJA](/help/integrations/customer-ai.md)
+   + [Integrera Journey Optimizer-data med Customer Journey Analytics](/help/integrations/ajo.md)
+   + [Integrera beslutsledningens data med Customer Journey Analytics](/help/integrations/ajo-od.md)
+   + [Integrera kundens AI med Customer Journey Analytics](/help/integrations/customer-ai.md)
 
 + Datastyrning {#cja-privacy}
    + [Datastyrning](../privacy/privacy-overview.md)
@@ -309,45 +309,45 @@ ht-degree: 29%
    + [Användningsexempel i Customer Journey Analytics](../use-cases/cja-usecases.md)
 
    + Google Analytics data {#ga}
-      + [Migrera data från Google Analytics till CJA - översikt](../use-cases/ga/overview.md)
+      + [Migrera data från Google Analytics till Customer Journey Analytics - översikt](../use-cases/ga/overview.md)
       + [Infoga Google Analytics historiska data i plattformen](../use-cases/ga/backfill.md)
       + [Konfigurera strömmande Google Analytics-data i plattformen](../use-cases/ga/streaming.md)
-      + [Rapport om Google Analytics data i CJA](../use-cases/ga/report.md)
+      + [Rapport om Google Analytics data i Customer Journey Analytics](../use-cases/ga/report.md)
+
    + Intag av data {#data-ingestion}
-      + [Infoga Marketo Engage data i AEP och rapportera i CJA](../use-cases/data-ingestion/marketo.md)
-      + [Ingest AEP-målgrupper into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Infoga Marketo Engage i Adobe Experience Platform och rapportera i Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
+      + [Engagera Adobe Experience Platform-målgrupper i Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datavyer {#data-views}
       + [Datavyer använder exempel](../use-cases/data-views/data-views-usecases.md)
       + [Använd bindningsdimensioner och mätvärden](../use-cases/data-views/binding-dimensions-metrics.md)
+
    + B2B {#b2b}
       + [Lägg till data på kontonivå som en uppslagsdatauppsättning](../use-cases/b2b/b2b.md)
+
    + Flerkanalsdata {#cross-channel}
       + [Analysera data över olika kanaler](../use-cases/cross-channel/cross-channel.md)
       + [Importera callcenter och webbdata](../use-cases/cross-channel/call-center.md)
+
    + Adobe Analytics data {#aa-data}
       + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
       + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
+
    + Komplexa data {#complex-data}
       + [Använda arrayer med objekt](../use-cases/object-arrays.md)
-
-
-
-
-
 
 + Administrering {#cja-admin}
    + [Åtkomstkontroll](../admin/cja-access-control.md)
    + [Visa och hantera användning](../admin/estimate-usage.md)
    + [Borttagningskonsekvenser](../admin/cja-deletion.md)
-   + [Optimera CJA-prestanda](../admin/optimizing-performance.md)
+   + [Optimera Customer Journey Analytics prestanda](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
 
 + Felsökning {#troubleshooting}
-   + [Jämför dina Adobe Analytics-data med CJA-data](../troubleshooting/compare.md)
-   + [Överensstämmelse i mätvärden och antal målgruppsmedlemskap mellan CDP och CJA i realtid](../troubleshooting/consistency-rcdp-cja.md)
+   + [Jämför dina Adobe Analytics-data med Customer Journey Analytics-data](../troubleshooting/compare.md)
+   + [Överensstämmelse i mätvärden och antalet målgruppsmedlemskap mellan CDP och Customer Journey Analytics i realtid](../troubleshooting/consistency-rcdp-cja.md)
 
-+ [CJA-ordlista](../getting-started/cja-glossary.md)
++ [Customer Journey Analytics ordlista](../getting-started/cja-glossary.md)
 
-+ [CJA API](https://developer.adobe.com/cja-apis/docs/)
++ [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

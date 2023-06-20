@@ -5,42 +5,42 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
 
 # Användarhandbok för Adobe Analytics
 
-Om ni börjar anställa Customer Journey Analytics (CJA) kan ni märka vissa likheter och skillnader mellan traditionell analys och CJA. På den här sidan förklaras skillnaderna så att ni kan anpassa er till det nya arbetsflödet för implementering och rapportering. Den här sidan innehåller även ytterligare resurser om nya koncept och ytterligare steg för att göra din resa som analytiker enklare och mer framgångsrik.
+Om ni börjar anställa Adobe Customer Journey Analytics kan ni märka vissa likheter och skillnader mellan Adobe Analytics och Customer Journey Analytics. På den här sidan förklaras skillnaderna så att ni kan anpassa er till det nya arbetsflödet för implementering och rapportering. Den här sidan innehåller även ytterligare resurser om nya koncept och ytterligare steg för att göra din resa som analytiker enklare och mer framgångsrik.
 
-Flera funktioner i CJA har bytt namn och fått en ny utformning för att passa branschstandarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Begränsningarna för eVars och props finns inte längre, vilket gynnar flexibla anpassade mått och mätvärden.
+Flera av funktionerna i Customer Journey Analytics har bytt namn och fått en ny utformning för att passa branschens standarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Begränsningarna för eVars och props finns inte längre, vilket gynnar flexibla anpassade mått och mätvärden.
 
 ## Vad som inte har ändrats
 
 Mycket av det ni känner till på rapporteringssidan har inte förändrats.
 
 * Du kan fortfarande använda [Analysis Workspace](/help/analysis-workspace/home.md) för att analysera era data. Arbetsytan fungerar på samma sätt som i traditionella Adobe Analytics.
-* Samma version av [Adobe Analytics dashboards](/help/mobile-app/home.md) finns och fungerar på liknande sätt mellan CJA och traditionell Analytics.
+* Samma version av [Adobe Analytics dashboards](/help/mobile-app/home.md) finns och fungerar på liknande sätt mellan Customer Journey Analytics och Adobe Analytics.
 * [Report Builder](/help/report-builder/report-buider-overview.md) har ett nytt gränssnitt och kan köras i MS Windows, MacOS och webbversionen av Excel. (Före den här versionen av Report Builder kunde du inte använda den i Mac om du inte körde den på VMware.) Den här versionen stöder inte traditionell databegäran från AA ännu.
 
 ## Ändringar i rapportering
 
-Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan till exempel skapa ett arbetsyteprojekt som analyserar prestanda för flera kanaler, förutsatt att dessa datauppsättningar har importerats av organisationen och ingår i datavyer som används av CJA (se&quot;Ändringar i dataarkitekturen&quot; nedan).
+Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan till exempel skapa ett arbetsyteprojekt som analyserar prestanda för flera kanaler, förutsatt att dessa datauppsättningar har importerats av din organisation och ingår i datavyer som används av Customer Journey Analytics (se&quot;Ändringar i dataarkitekturen&quot; nedan).
 
 ![visualiseringar med flera kanaler](assets/cross-channel.png)
 
 ## Ändringar i dataarkitekturen {#architecture}
 
-CJA hämtar data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
+Customer Journey Analytics får sina data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
 
 Kunddata i Experience Platform lagras som datauppsättningar, som består av en [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) och batchar med data. Mer information om plattformen finns på [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
-Din CJA-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. Sedan bygger de [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar begreppsmässigt virtuella rapportsviter och är grunden för rapportering i CJA. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
+Din Customer Journey Analytics-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. Sedan bygger de [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar begreppsmässigt virtuella rapportsviter och är grunden för rapportering i Customer Journey Analytics. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
 
-Med en anslutning kan Analytics Admin integrera datauppsättningar från Adobe Experience Platform i CJA, som ingår i följande video:
+Med en anslutning kan Analytics Admin integrera datauppsättningar från Adobe Experience Platform i Customer Journey Analytics, som ingår i följande video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
@@ -60,7 +60,7 @@ Se [Använda exempel på datavyer](/help/use-cases/data-views/data-views-usecase
 
 Begreppen [!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics finns inte längre i [!UICONTROL Customer Journey Analytics]. I Adobe Analytics kan eVars och props lagra beskrivningar av innehåll, kunder, kampanjer osv. och händelser räknas saker som intäkter, prenumerationer eller genererade leads. Customer Journey Analytics bevarar båda datatyperna och du kan få tillgång till dem på samma sätt - från den vänstra listen i Analysis Workspace, under Dimensioner respektive Metrisk.
 
-I CJA finns det ett obegränsat antal schemaelement, inklusive mått, mått och listfält. Dessa mappas till ett obegränsat antal schemaelement, inklusive mått, mått och listfält i Experience Platform. Alla inställningar för besök och attribuering som används efter bearbetning av regler i Adobe Analytics gäller nu vid frågetiden i Customer Journey Analytics.
+I Customer Journey Analytics finns det ett obegränsat antal schemaelement, inklusive mått, mått och listfält. Dessa mappas till ett obegränsat antal schemaelement, inklusive mått, mått och listfält i Experience Platform. Alla inställningar för besök och attribuering som används efter bearbetning av regler i Adobe Analytics gäller nu vid frågetiden i Customer Journey Analytics.
 
 Med den här flexibiliteten kan du råka ut för situationer där ett enda schemafält kan användas både som en dimension och ett mått för olika spårningsbehov.
 
@@ -82,7 +82,7 @@ Förutom segmentändringen uppdateras även segmentbehållarna.
 
 ## Förändringar av begreppet beräknade mätvärden
 
-Beräknade mätvärden namnges på liknande sätt mellan traditionell analys och CJA. Men [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett Experience Platform-schemaelement. Denna grundläggande ändring innebär att inga av de befintliga beräknade mätvärdena är kompatibla med [!UICONTROL Customer Journey Analytics]. Om du vill flytta Adobe Analytics beräknade värden till Customer Journey Analytics ska du titta i följande video:
+Beräknade mätvärden namnges på liknande sätt mellan Adobe Analytics och Customer Journey Analytics. Men [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett Experience Platform-schemaelement. Denna grundläggande ändring innebär att inga av de befintliga beräknade mätvärdena är kompatibla med [!UICONTROL Customer Journey Analytics]. Om du vill flytta Adobe Analytics beräknade värden till Customer Journey Analytics ska du titta i följande video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
@@ -104,10 +104,10 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 ## Ändringar i hur Adobe identifierar besökare
 
-CJA utvidgar begreppet identiteter utöver ECID:n till att omfatta alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Använda ett gemensamt namnområdes-ID för datauppsättningar, eller använda [Flerkanalsanalys](/help/cca/overview.md) hjälper till att länka samman personer över olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i CJA måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i CJA:
+Customer Journey Analytics utökar koncepten för identiteter utöver ECID:n så att de omfattar alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Tracking Code o.s.v. Använda ett gemensamt namnområdes-ID för datauppsättningar, eller använda [Flerkanalsanalys](/help/cca/overview.md) hjälper till att länka samman personer över olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i Customer Journey Analytics måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Förändringar av begreppet lågtrafikdimensionsobjekt
 
-I traditionell Adobe Analytics börjar en variabel som får för många unika värden att buffra dimensionsobjekt under [!UICONTROL Low-Traffic]. CJA har färre begränsningar för högkardinalfält. Tack vare förändringar i rapporteringsarkitekturen kan Analysis Workspace rapportera om många fler unika dimensionsobjekt. Se [Lång stjärna](../analysis-workspace/workspace-faq/long-tail.md) för mer information om hur CJA optimerar rapporteringen för dimensioner med många unika värden.
+I traditionell Adobe Analytics börjar en variabel som får för många unika värden att buffra dimensionsobjekt under [!UICONTROL Low-Traffic]. Customer Journey Analytics har färre begränsningar för högkardinalfält. Tack vare förändringar i rapporteringsarkitekturen kan Analysis Workspace rapportera om många fler unika dimensionsobjekt. Se [Lång stjärna](../analysis-workspace/workspace-faq/long-tail.md) om du vill ha mer information om hur Customer Journey Analytics optimerar rapporteringen för dimensioner med många unika värden.

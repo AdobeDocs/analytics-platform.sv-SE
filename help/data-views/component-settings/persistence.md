@@ -4,9 +4,9 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 7%
 
 ---
@@ -78,7 +78,7 @@ Information om tillgängliga förfalloinställningar.
 
 En nedrullningsbar lista där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga alternativ är andra dimensioner som ingår i datavyn.
 
-Se [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
+Se [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -88,4 +88,4 @@ En nedrullningsbar lista där du kan välja ett mått som fungerar som en bindni
 
 Den här inställningen visas bara när Dimensionen Bindning är lägre i objektarrayen än i komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen.
 
-Se det andra exemplet nedan [Använda bindningsdimensioner och mätvärden i CJA](../../use-cases/data-views/binding-dimensions-metrics.md) om du vill ha mer information om hur du använder bindningsstatistik på ett effektivt sätt.
+Se det andra exemplet nedan [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) om du vill ha mer information om hur du använder bindningsstatistik på ett effektivt sätt.

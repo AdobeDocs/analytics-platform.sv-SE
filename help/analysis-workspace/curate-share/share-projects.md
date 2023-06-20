@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1845'
+source-wordcount: '1861'
 ht-degree: 0%
 
 ---
@@ -113,11 +113,11 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/vie
 
 >[!NOTE]
 >
->Tänk på följande när du delar ett Analysis Workspace-projekt med personer som inte har tillgång till CJA:
+>Tänk på följande när du delar ett Analysis Workspace-projekt med personer som inte har tillgång till Customer Journey Analytics:
 >
->* CJA-administratören kan inaktivera möjligheten att dela ett projekt på det här sättet, vilket beskrivs i [Inställningar](/help/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har CJA-administratören inaktiverat den här möjligheten.
+>* Customer Journey Analytics-administratören kan inaktivera möjligheten att dela ett projekt på det här sättet enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har Customer Journey Analytics-administratören inaktiverat den här möjligheten.
 >
->* Projekt med mer än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till CJA.
+>* Projekt med mer än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till Customer Journey Analytics.
 >
 >* Användare som du delar med kan visa alla filter som använts på projektet under [kuration](curate.md).
 > 
@@ -147,17 +147,17 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
    Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange förfallodatum för konton](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) i Analytics Admin Guide.
 
-1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av CJA-administratören):
+1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av Customer Journey Analytics-administratören):
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
      När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
 
-     CJA-administratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
+     Customer Journey Analytics-administratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
-      * Om det här alternativet inte visas har CJA-administratören inte aktiverat den här funktionen.
+      * Om det här alternativet inte visas har Customer Journey Analytics-administratören inte aktiverat den här funktionen.
 
-      * Om det här alternativet är aktiverat och du inte kan inaktivera det, innebär det att CJA-administratören kräver Experience Cloud-autentisering för alla som har åtkomst till Analysis Workspace-projekt. Detta gäller alltid för organisationer som skaffat ett vårdcertifikat.
+      * Om det här alternativet är aktiverat och du inte kan inaktivera det, innebär det att Customer Journey Analytics-administratören kräver Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt. Detta gäller alltid för organisationer som skaffat ett vårdcertifikat.
 
 1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** icon ![Ikon för att kopiera länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) för att kopiera länken till systemets Urklipp.
 

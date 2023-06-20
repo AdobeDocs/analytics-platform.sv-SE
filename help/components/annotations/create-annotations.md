@@ -4,9 +4,9 @@ description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analy
 | **Högerklicka på en punkt i en [!UICONTROL Line] diagram.** | The [!UICONTROL Annotation builder] öppnas. Observera att som standard visas anteckningar som skapats på det här sättet bara i det projekt där de skapades. Men du kan göra dem tillgängliga för alla projekt. Lägg även märke till att datum och mätvärden redan har fyllts i.<p>![](assets/annotate-line.png) |
 | **Gå till [!UICONTROL Components] > [!UICONTROL Create annotation].** | The [!UICONTROL Annotation builder] öppnas. |
 | **Använd den här snabbtangenten** för att öppna Annotation Builder: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Observera, att när du använder snabbtangenten för att skapa en anteckning, skapar du en endagarsanteckning för det aktuella datumet, utan något förvalt omfång (mått eller mått). |
-| **Använd [CJA Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Med CJA Annotations API:er kan du skapa, uppdatera eller hämta anteckningar programmatiskt via Adobe Developer. Dessa API:er använder samma data och metoder som Adobe använder i produktgränssnittet. |
+| **Använd [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Med API:erna för Customer Journey Analytics-anteckningar kan du skapa, uppdatera eller hämta anteckningar via Adobe Developer. Dessa API:er använder samma data och metoder som Adobe använder i produktgränssnittet. |
 
 1. Fyll i [!UICONTROL Annotation builder] -element.
 

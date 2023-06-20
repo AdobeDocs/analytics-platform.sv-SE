@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 20ea211fff816b8b5e99d3d6ef3cb4ba4d0fd6a9
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '986'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Customer Journey Analytics är en analysfunktion som gör att ni kan använda kraften i Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamodeller och datatyper. Använda **Experience Data Model (XDM)**, kan data representeras och struktureras på ett enhetligt sätt, vara klara för kombination och utforskande. **Experience Query Services** gör att du kan använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla data.
 
-CJA-arkitekturen på hög nivå visas här:
+Customer Journey Analytics-arkitekturen på hög nivå visas här:
 
 ![arkitektur](assets/cja-architecture.png)
 
@@ -23,7 +23,7 @@ Här är en videoöversikt av Customer Journey Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
-## Jämföra CJA med traditionell Adobe Analytics
+## Jämföra Customer Journey Analytics med traditionell Adobe Analytics
 
 Customer Journey Analytics utvidgar räckvidden för Adobe Analytics genom att erbjuda lättanvända funktioner för flera kanaler och ta bort begränsningar i tidigare versioner av Adobe Analytics. Några viktiga förbättringar är:
 
@@ -53,7 +53,7 @@ Med Customer Journey Analytics kan du:
 
 Innan du kan börja använda Customer Journey Analytics måste följande krav vara uppfyllda:
 
-* Din organisation har ett aktivt kontrakt med Adobe Analytics för Select, Prime eller Ultimate med tillägget Customer Journey Analytics. Om du är osäker på vilken typ av kontrakt du har, eller om du är osäker på om du har CJA-tillägget, kontaktar du ditt Adobe-kontoteam.
+* Din organisation har ett aktivt kontrakt med Adobe Analytics för Select, Prime eller Ultimate med tillägget Customer Journey Analytics. Om du är osäker på vilken typ av kontrakt du har, eller om du är osäker på om du har tillägget Customer Journey Analytics, kontaktar du ditt kontoteam på Adobe.
 * Din organisation har etablerats för Adobe Experience Platform.
 * Du kan också köpa Customer Journey Analytics som fristående produkt utan Adobe Analytics.
 
@@ -63,7 +63,7 @@ Se [Åtkomstkontroll](/help/admin/cja-access-control.md) ämne.
 
 ## Uppdateringar om terminologi
 
-Flera funktioner i CJA har bytt namn, jämfört med traditionella Adobe Analytics, för att passa in i branschstandarder. Några av de uppdaterade terminologin:
+Flera funktioner i Customer Journey Analytics har bytt namn, jämfört med traditionella Adobe Analytics, för att passa in i branschstandarder. Några av de uppdaterade terminologin:
 
 * Segment kallas nu för filter.
 * Virtuella rapportsviter kallas nu datavyer.
@@ -90,9 +90,9 @@ Från datainmatning till direkt SQL-åtkomst - flera komponenter från Experienc
 
 * Arbeta med data i Customer Journey Analytics:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
 
 * Arkitektur och integrering av Customer Journey Analytics:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
 

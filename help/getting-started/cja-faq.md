@@ -4,16 +4,16 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---
 
 # Frågor och svar
 
-[!UICONTROL Customer Journey Analytics] (CJA) är nästa generation av analysprodukter. Här följer svar på vanliga frågor om CJA. Mer information finns på [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
+Adobe Customer Journey Analytics är nästa generation av analysprodukter. Här följer svar på vanliga frågor om Customer Journey Analytics. Mer information finns på [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## 1. Förutsättningar {#prerequisites}
 
@@ -70,7 +70,7 @@ När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som
 
 +++**Vad är förväntat beteende för icke-sammanfogade profildatauppsättningsposter?**
 
-**Exempel på scenario**: Du ansluter till två datauppsättningar i en CJA-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i webbhändelsedatamängden. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i CJA. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas.
+**Exempel på scenario**: Du ansluter till två datauppsättningar i en Customer Journey Analytics-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i webbhändelsedatamängden. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i Customer Journey Analytics. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas.
 
 +++
 
@@ -118,7 +118,7 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 +++
 
 
-+++**Vilka begränsningar gäller för inmatning av tidigare eller framtida datum/tidsstämplar i CJA-händelsedatamängder?**
++++**Vilka är gränserna för inmatning av tidigare eller framtida datum/tidsstämplar i datauppsättningar för händelsen Customer Journey Analytics?**
 
 <ul><li>Angående tidigare datum/tidsstämplar: Händelsedata som är upp till 10 år gamla.</li><li>Om framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.</li></ul>
 
@@ -128,17 +128,17 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 ## 4. Svarstidsfrågor {#latency}
 
 >[!NOTE]
->Det finns ingen fast datastorlek i CJA och Adobe kan därför inte binda sig till en standardintag. Vi arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
+>Det finns ingen fast datastorlek i Customer Journey Analytics och därför kan Adobe inte binda sig till en standardintag. Vi arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
 
 +++**Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]?**
 
-<ul><li>Live-data eller händelser: Behandlas och importeras inom 90 minuter, när data finns tillgängliga i AEP. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>
+<ul><li>Live-data eller händelser: Bearbetas och importeras inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>
 
 +++
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
-The [**[!UICONTROL Enable rolling data window]**inställning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) Med kan du definiera CJA-datalagring som ett rullande fönster på månader (3 månader, 6 månader osv.). Den ställs in på [!UICONTROL connection] nivå, inte på [!UICONTROL dataset] nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
+The [**[!UICONTROL Enable rolling data window]**inställning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) Med kan du definiera datalagring i Customer Journey Analytics som ett rullande fönster på månader (3 månader, 6 månader osv.). Den ställs in på [!UICONTROL connection] nivå, inte på [!UICONTROL dataset] nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
 
 Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
 
@@ -148,16 +148,16 @@ När det gäller borttagning av data är vi oroade för sex typer av komponenter
 
 | Om du.. | Det här händer.. |
 | --- | --- |
-| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics] anslutningar till datauppsättningar i den sandlådan. För närvarande [!UICONTROL Connections] i CJA som är knuten till den borttagna sandlådan tas inte bort automatiskt. |
+| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics] anslutningar till datauppsättningar i den sandlådan. För närvarande [!UICONTROL Connections] i Customer Journey Analytics som är knuten till den borttagna sandlådan tas inte bort automatiskt. |
 | Ta bort ett schema i [!UICONTROL Adobe Experience Platform], men inte den eller de datauppsättningar som är associerade med det här schemat | [!UICONTROL Adobe Experience Platform] tillåter inte att [!UICONTROL schemas] som har en eller flera [!UICONTROL datasets] som är kopplade till dem. En administratör med rätt behörighetsuppsättning kan dock ta bort datauppsättningarna först och sedan ta bort schemat. |
-| Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform] Data Lake | Om du tar bort en datauppsättning i AEP-datasjön avbryts dataflödet från den datauppsättningen till alla CJA-anslutningar som innehåller den datauppsättningen. Alla data från den datauppsättningen tas automatiskt bort från associerade CJA-anslutningar. |
+| Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform] Data Lake | Om du tar bort en datauppsättning i Adobe Experience Platform datasjön stoppas dataflödet från datauppsättningen till alla Customer Journey Analytics-anslutningar som innehåller den datauppsättningen. Alla data från den datauppsättningen tas automatiskt bort från associerade Customer Journey Analytics-anslutningar. |
 | Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | Kontakta kontoteamet på Adobe för att sätta igång processen för att ta bort en datauppsättning i en sparad anslutning. |
-| Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform]) | Om en batch tas bort från en [!UICONTROL Adobe Experience Platform] datauppsättning, kommer samma batch att tas bort från alla CJA-anslutningar som innehåller den specifika gruppen.  CJA meddelas om batchborttagningar i [!UICONTROL Adobe Experience Platform]. |
+| Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform]) | Om en batch tas bort från en [!UICONTROL Adobe Experience Platform] datauppsättning, kommer samma batch att tas bort från alla Customer Journey Analytics-anslutningar som innehåller den specifika gruppen.  Customer Journey Analytics meddelas om batchborttagningar i [!UICONTROL Adobe Experience Platform]. |
 | Ta bort en grupp **medan den importeras** till [!UICONTROL Customer Journey Analytics] | Om det bara finns en batch i datauppsättningen kommer inga data eller delar av data från den gruppen att visas i [!UICONTROL Customer Journey Analytics]. Intag kommer att återställas. Om det till exempel finns 5 batchar i datauppsättningen och 3 av dem redan har importerats när datauppsättningen togs bort, kommer data från dessa tre batchar att visas i [!UICONTROL Customer Journey Analytics]. |
 | Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
 | Ta bort en datavy i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att alla arbetsyteprojekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
 
-## 7. Att tänka på när du sammanfogar rapportsviter i CJA {#merge-reportsuite}
+## 7. Att tänka på när du sammanfogar rapportsviter i Customer Journey Analytics {#merge-reportsuite}
 
 Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)bör du ta hänsyn till dessa förändringar när du sammanfogar två eller fler rapportsviter från Adobe Analytics.
 
@@ -166,7 +166,7 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 | Variabler | Variabler som [!UICONTROL eVars] kan inte matcha flera rapportsviter. eVar1 i rapportsviten 1 kan till exempel peka på **[!UICONTROL Page]**. I rapportserie 2 kan eVar1 peka på **[!UICONTROL Internal Campaign]**, vilket leder till blandad och felaktig rapportering. |
 | [!UICONTROL Sessions] och [!UICONTROL People] antal | De dedupliceras över flera rapportsviter. Därför kanske antalet inte matchar. |
 | Metrisk deduplicering | Tar bort förekomster av ett mått (till exempel [!UICONTROL Orders]) om flera rader har samma transaktions-ID (till exempel [!UICONTROL Purchase ID]). Detta förhindrar att nyckeltal räknas för mycket. Resultatet blir att mätvärden som [!UICONTROL Orders] kan inte sammanfatta i alla rapportsviter. |
-| Valuta | Valutakonvertering stöds ännu inte i CJA. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
+| Valuta | Valutakonvertering stöds ännu inte i Customer Journey Analytics. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
 | [!UICONTROL Persistence] | [Persistence](../data-views/component-settings/persistence.md) omfattar flera rapportsviter, vilket påverkar [!UICONTROL filters], [!UICONTROL attribution]och så vidare. Siffrorna kanske inte läggs ihop korrekt. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När flera klassificeringsfiler kombineras till en enda [!UICONTROL lookup] datauppsättningen, kan du stöta på problem. |
 
@@ -197,7 +197,7 @@ Inte ännu, men vi arbetar aktivt för att leverera den här funktionen.
 
 +++**Vad händer med våra befintliga segment/beräknade värden?**
 
-[!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett AEP-schema. Detta innebär att inget av de befintliga segmenten eller beräkningstalen är kompatibelt med [!UICONTROL Customer Journey Analytics].
+[!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett Adobe Experience Platform-schema. Detta innebär att inget av de befintliga segmenten eller beräkningstalen är kompatibelt med [!UICONTROL Customer Journey Analytics].
 
 +++
 

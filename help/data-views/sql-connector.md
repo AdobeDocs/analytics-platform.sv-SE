@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2918'
 ht-degree: 0%
 
 ---
@@ -18,38 +18,38 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-The [!DNL Customer Journey Analytics (CJA) SQL Connector] aktiverar SQL-åtkomst till [datavyer](./data-views.md) som du har definierat i CJA. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableu eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som CJA-användare använder när de skapar sina Analysis Workspace-projekt.
+The [!DNL Customer Journey Analytics SQL Connector] aktiverar SQL-åtkomst till [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableu eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
 
-Adobe Experience Platform [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. Med [!DNL CJA SQL Connector] aktiverad, funktionaliteten hos [!DNL Query Service] byggs ut för att visa dina CJA-datavyer som tabeller eller vyer i en [!DNL Query Service] session. Detta resulterar i att verktyg för affärsinformation som använder [!DNL Query Service] som PostgresSQL-gränssnittet har en smidig fördel av den utökade funktionaliteten.
+Adobe Experience Platform [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. Med [!DNL Customer Journey Analytics SQL Connector] aktiverad, funktionaliteten hos [!DNL Query Service] utökas så att du kan se datavyer i Customer Journey Analytics som tabeller eller vyer i en [!DNL Query Service] session. Detta resulterar i att verktyg för affärsinformation som använder [!DNL Query Service] som PostgresSQL-gränssnittet har en smidig fördel av den utökade funktionaliteten.
 
 De viktigaste fördelarna är:
 
-- Du behöver inte återskapa en motsvarande representation av CJA-datavyer i BI-verktyget. <br/>Se [Datavy](data-views.md) om du vill ha mer information om funktionerna i datavyer för att förstå vad som måste återskapas.<br/>
+- Du behöver inte återskapa en motsvarande representation av datavyer från Customer Journey Analytics i BI-verktyget. <br/>Se [Datavy](data-views.md) om du vill ha mer information om funktionerna i datavyer för att förstå vad som måste återskapas.<br/>
 
-- Större konsekvens i rapportering och analys mellan BI-verktyg och CJA.
+- Större konsekvens i rapportering och analys mellan BI-verktyg och Customer Journey Analytics.
 
-- Kombinera CJA-data med andra datakällor som redan finns i BI-verktyg.
+- Kombinera data från Customer Journey Analytics med andra datakällor som redan finns i BI-verktyg.
 
 ## Förutsättningar
 
 Om du vill använda den här funktionen måste du
 
-<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
+<!---   Enable the [!UICONTROL Customer Journey Analytics SQL Connector] in your Experience Platform organization. -->
 
 - Konfigurera funktionerna för relevanta produktprofiler, användargrupper och/eller enskilda användare.<br/>
 Användarna måste ha tillgång till:
    - Experience Platform Query Service,
-   - CJA Workspace-projekt och
-   - CJA-datavyer som de vill använda.
+   - Customer Journey Analytics Workspace-projekt och
+   - Datavyer i Customer Journey Analytics som de vill använda.
 
-- Använd förfallodatum för ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till CJA SQL Connector. Thr [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) innehåller mer information om hur du anger förfallodatum för inloggningsuppgifter eller ej utgångsdatum.
+- Använd förfallodatum för ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till Customer Journey Analytics SQL Connector. Thr [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) innehåller mer information om hur du anger förfallodatum för inloggningsuppgifter eller ej utgångsdatum.
 
-Se [Åtkomstkontroll](../admin/cja-access-control.md) i CJA-administrationsavsnittet om du vill ha mer information.
+Se [Åtkomstkontroll](../admin/cja-access-control.md) i administrationsdelen för Customer Journey Analytics för ytterligare information.
 
 
 ## Användning
 
-Så här använder du [!DNL CJA SQL Connector] kan du antingen använda SQL direkt eller använda dra och släpp-funktionen som finns i det specifika BI-verktyget.
+Så här använder du [!DNL Customer Journey Analytics SQL Connector] kan du antingen använda SQL direkt eller använda dra och släpp-funktionen som finns i det specifika BI-verktyget.
 
 ### SQL
 
@@ -89,7 +89,7 @@ Se [Användargränssnittshandbok för frågeredigeraren](https://experienceleagu
 
 ### BI-verktyg
 
-För närvarande stöds och testas CJA SQL Connector endast för Power BI och Tableau. Andra BI-verktyg som använder PSQL-gränssnittet kan också fungera, men stöds ännu inte officiellt.
+För närvarande stöds och testas Customer Journey Analytics SQL Connector endast för Power BI och Tableau. Andra BI-verktyg som använder PSQL-gränssnittet kan också fungera, men stöds ännu inte officiellt.
 
 +++ Power BI
 
@@ -120,7 +120,9 @@ För närvarande stöds och testas CJA SQL Connector endast för Power BI och Ta
       3. När du uppmanas till detta **[!UICONTROL ** Dataanslutning **]** läge, välja **[!UICONTROL ** DirectQuery **]** för att säkerställa att datastrukturerna förenklas på rätt sätt.
 
       4. Du uppmanas att **[!UICONTROL ** Användarnamn **]** och **[!UICONTROL ** Lösenord **]**. Använd likvärdiga parametrar från Experience Platform-frågor [!UICONTROL Credentials].
-   5. När inloggningen är klar visas CJA-datavytabellerna i Power BIETS **[!UICONTROL **&#x200B;Överblick **]**. Datavy-tabeller identifieras med `dv_` i deras namn.
+
+
+   5. När inloggningen är klar visas datavytabellerna i Customer Journey Analytics i Power BIETS **[!UICONTROL **&#x200B;Överblick **]**. Datavy-tabeller identifieras med `dv_` i deras namn.
 
 
    6. Markera de datavytabeller som du vill använda och markera **[!UICONTROL ** Läs in **]**.
@@ -164,7 +166,8 @@ För närvarande stöds och testas CJA SQL Connector endast för Power BI och Ta
       6. Klistra in **[!UICONTROL ** Lösenord **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Lösenord **]** textfält.
 
       7. Välj **[!UICONTROL ** Logga in **]**.
-   4. CJA-datavyer visas som tabeller i **[!UICONTROL ** Tabell **]** lista. Datavy tables with `dv_`.
+
+   4. datavyer i Customer Journey Analytics visas som tabeller i **[!UICONTROL ** Tabell **]** lista. Datavy tables with `dv_`.
 
    5. Dra de tabeller som du vill använda på arbetsytan.
 
@@ -184,9 +187,9 @@ Om du vill använda ID:n för datavyn som tabellnamn kan du lägga till de valfr
 
 ### Datastyrning
 
-De datastyrningsrelaterade inställningarna i Customer Journey Analytics ärvs från Adobe Experience Platform. Integrationen mellan CJA och Adobe Experience Platform Data Governance möjliggör märkning av känsliga CJA-data och tillämpning av sekretesspolicyer.
+De datastyrningsrelaterade inställningarna i Customer Journey Analytics ärvs från Adobe Experience Platform. Integrationen mellan Customer Journey Analytics och Adobe Experience Platform datastyrning möjliggör märkning av känsliga uppgifter från Customer Journey Analytics och tillämpning av integritetspolicyer.
 
-Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för CJA-datavyer. Data som efterfrågas med CJA SQL Connector visar därför lämpliga varningar eller fel när de inte följer de definierade sekretessetiketterna och principerna.
+Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Data som efterfrågas med Customer Journey Analytics SQL Connector visar därför lämpliga varningar eller fel när de inte följer de definierade sekretessetiketterna och principerna.
 
 ### Listdatavyer
 
@@ -229,11 +232,11 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Schemaidentifiering | <pre>VÄLJ * FRÅN DV1 DÄR 1=0</pre> |
 | Rankad/uppdelning | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  filterId = &#39;12345&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
 | HAVING-satsen | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>MED m1 > 100</pre> |
-| Distinkt, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
+| Distinkt, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\&#39; &lt; &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Måttsummor | <pre>VÄLJ SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</pre> |
 | Flera dimensioner<br/>uppdelningar<br/>och förstklassiga | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 1, 2<br/>BESTÄLL AV 1, 2</pre><pre>VÄLJ DISTINCT dim1, dim2<br/>FRÅN DV1</pre> |
 | Markera en del:<br/>Ytterligare resultat<br/>filtrering | <pre>SELECT dim1, m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</br>  GRUPPERA EFTER NEDRE1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Markera en del:<br/>Förena med<br/>datamängden är inte i<br/>CJA | <pre>SELECT b.key, a.dim1, a.m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/>) a<br/>LEFT JOIN-sökningar b ON a.dim1 = b.key</pre> |
+| Markera en del:<br/>Förena med<br/>datamängden är inte i<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/>) a<br/>LEFT JOIN-sökningar b ON a.dim1 = b.key</pre> |
 | Markera en del:<br/>Fråga tvärs över<br/>datavyer | <pre>SELECT key, SUM(m1) AS total<br/>FRÅN (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FRÅN DV2<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE2<br/>GROUP BY-tangenten<br/>BESTÄLL EFTER Summa</pre> |
 | Markera en del: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED rader AS (<br/>  MED \_ AS (<br/>    SELECT * FROM data_ares<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39;<br/>  )<br/>  VÄLJ _.item, _.units FROM _<br/>  DÄR _.item INTE ÄR NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FRÅN rader DÄR rader.objekt i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
 | Markerar var<br/>mätvärden kommer före<br/> eller är blandade med<br/>dimensionerna | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 2</pre> |
@@ -268,7 +271,7 @@ Du kan använda:
 
 #### Räkningsdistinktioner
 
-På grund av den underliggande karaktären hos hur CJA fungerar är den enda dimension som du kan få ett exakt distinkt antal för `adobe_personid` dimension. Följande SQL-satser `SELECT COUNT(DISTINCT adobe_personid)` eller `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` returnerar värdet för standardpersonmåttet, vilket är antalet distinkta personer. För andra dimensioner returneras ett ungefärligt distinkt antal.
+På grund av det underliggande sättet som Customer Journey Analytics fungerar på är den enda dimension som du kan få ett exakt distinkt antal för `adobe_personid` dimension. Följande SQL-satser `SELECT COUNT(DISTINCT adobe_personid)` eller `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` returnerar värdet för standardpersonmåttet, vilket är antalet distinkta personer. För andra dimensioner returneras ett ungefärligt distinkt antal.
 
 #### Villkorliga mått
 

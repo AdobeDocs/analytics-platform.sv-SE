@@ -3,16 +3,16 @@ title: Användarhandbok för Labs
 description: Förhandsgranska prototypprojekt för Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Labs] Användarhandbok
 
-[!UICONTROL Labs] gör det möjligt att skapa snabbare prototyper av idéer i ett tidigt skede. Det är en kombination av verktyg och processer som snabbar upp utvecklingen på ett öppet sätt, med kundfokus. Det gör det möjligt för användarna att interagera med ny teknik, att upptäcka värdefulla insikter och att påverka framtida funktionsutveckling och prioriteringar. Du kan använda Labs för att få tidig tillgång till innovationer i Customer Journey Analytics (CJA) och för att utvärdera kommande funktioner i samband med era egna affärsanvändningsfall och data.
+[!UICONTROL Labs] gör det möjligt att skapa snabbare prototyper av idéer i ett tidigt skede. Det är en kombination av verktyg och processer som snabbar upp utvecklingen på ett öppet sätt, med kundfokus. Det gör det möjligt för användarna att interagera med ny teknik, att upptäcka värdefulla insikter och att påverka framtida funktionsutveckling och prioriteringar. Ni kan använda Labs för att få tidig tillgång till Adobe Customer Journey Analytics innovationer och utvärdera kommande funktioner i samband med era egna användningsfall och data.
 
 ## Krav
 
@@ -26,7 +26,7 @@ För åtkomst [!UICONTROL Labs]:
 
 1. Om du inte redan har åtkomst till [!UICONTROL Workspace] och [!UICONTROL Labs]ber du administratören om behörighet.
 
-1. I CJA klickar du på **[!UICONTROL Labs]** -fliken.
+1. I Customer Journey Analytics klickar du på **[!UICONTROL Labs]** -fliken.
 
 ## Utvärdera en prototyp
 
@@ -64,7 +64,7 @@ Så här startar och utvärderar du en prototyp:
 
 1. Klicka **[!UICONTROL Submit]** för att återgå till huvudportalen för förhandsvisningar.
 
-## CJA Labs-prototyper
+## Customer Journey Analytics Labs-prototyper
 
 * Insiktsgenerator på naturspråk: Innehåller en sammanfattning av alla data på ett naturligt språk som du analyserar i en frihandstabell.
 * Visualiseringsrekommendation: Rekommenderar visualiseringar som fungerar bra tillsammans med dina data.

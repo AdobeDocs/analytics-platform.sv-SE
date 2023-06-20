@@ -4,9 +4,9 @@ description: Visar användbara rapporter om Google Analytics data i Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Med kohorttabellen kan du se hur lång tid det normalt tar för användare att r
 
 ## Använd avancerad marknadsattribuering
 
-Med CJA kan ni använda sofistikerade attribueringsmodeller på flerkanalsdata. I följande exempel kan du se en jämförelse mellan hur man använder sista handen, första beröringen, u-formad och algoritmisk attribuering av intäkterna för grupperingsdimensionen för Google Analytics-kanalen.
+Med Customer Journey Analytics kan ni använda sofistikerade attribueringsmodeller på flerkanalsdata. I följande exempel kan du se en jämförelse mellan hur man använder sista handen, första beröringen, u-formad och algoritmisk attribuering av intäkterna för grupperingsdimensionen för Google Analytics-kanalen.
 
 ![Marknadsattribuering](../assets/mktg-attribution.png)
 
@@ -63,6 +63,6 @@ Du kan också tilldela webb- och appintäkter till ditt Google Ad Content. Datau
 
 ![Google och](../assets/google-ad.png)
 
-Genom att kombinera datauppsättningar i CJA kan du i det här exemplet se att onlineannonser har någon effekt på produkter som köpts i din mobilapp. I följande visualisering visas att intäkterna från Google Ads för mobilappar utgör en extra kostnad på 14 000 - 15 000 dollar jämfört med bara webben.
+Genom att kombinera datauppsättningar i Customer Journey Analytics kan du i det här exemplet se att onlineannonser har någon effekt på produkter som köpts i din mobilapp. I följande visualisering visas att intäkterna från Google Ads för mobilappar utgör en extra kostnad på 14 000 - 15 000 dollar jämfört med bara webben.
 
 ![Google och 2](../assets/google-ad2.png)

@@ -4,9 +4,9 @@ description: Nyckelanpassa person-ID:n från flera datauppsättningar till att s
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ När du kombinerar datauppsättningar med liknande person-ID:n överförs attrib
 Innan du använder flerkanalsanalys bör du kontrollera att din organisation har förberetts med följande:
 
 * En datauppsättning i Adobe Experience Platform måste ha två kolumner som hjälper till att identifiera personer:
-   * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett person-ID som genereras av ett Adobe Analytics AppMeasurement-bibliotek.
+   * A **beständigt ID**, en identifierare som finns på varje rad. Exempel: ett person-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek.
    * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas-användarnamn eller en e-postadress när en person autentiseras. Du kan använda praktiskt taget alla identifierare som du vill, förutsatt att de finns minst en gång för samma händelse som ett visst beständigt ID.
 * En annan datauppsättning, till exempel callcenter-data, som innehåller ett tillfälligt ID på varje rad. Detta person-ID måste formateras på samma sätt som det tillfälliga ID:t i den andra datauppsättningen.
 * Med den här funktionen kan du sammanfoga datauppsättningar som kan omfatta sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du sammanfogar datauppsättningar.
@@ -62,7 +62,7 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 
 ## Aktivera flerkanalsanalys
 
-När organisationen uppfyller alla krav och förstår sina begränsningar kan du följa de här stegen för att börja använda den i CJA.
+När organisationen uppfyller alla krav och förstår sina begränsningar kan du följa dessa steg för att börja använda programmet i Customer Journey Analytics.
 
 1. Importera önskade data till Adobe Experience Platform. Information om Adobe Analytics finns på [Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). Andra typer av data finns i [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Ingrediera data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 1. Kontakta Adobe kundsupport med följande information:
@@ -74,9 +74,9 @@ När organisationen uppfyller alla krav och förstår sina begränsningar kan du
    * Namn på sandlåda.
 1. Adobe kundsupport kommer att arbeta tillsammans med Adobe-teknik för att möjliggöra flerkanalsanalys när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Adobe kundsupport kan ange det nya datauppsättnings-ID:t och namn på kolumn för person-ID.
 1. När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som i början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data så långt tillbaka i tiden.
-1. [Skapa en anslutning](/help/connections/create-connection.md) i CJA med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
+1. [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
 1. [Skapa en datavy](/help/data-views/create-dataview.md) baserat på anslutningen.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-När datavyn har konfigurerats är Analysis in CJA precis som alla andra analyser i CJA, förutom att data nu fungerar över alla kanaler och enheter.
+När datavyn har konfigurerats är analysen i Customer Journey Analytics precis som alla andra analyser i Customer Journey Analytics, förutom att data nu fungerar över alla kanaler och enheter.

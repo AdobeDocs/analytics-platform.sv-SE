@@ -4,9 +4,9 @@ description: Frågor och svar om flerkanalsanalys
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -44,11 +44,11 @@ Antalet beständiga ID:n är irrelevant för det tillfälliga ID:t. En enskild a
 
 Liveutjämning är tillgänglig cirka en vecka efter att Adobe har aktiverat flerkanalsanalys. Tillgängligheten för förifyllning beror på mängden befintliga data. Små datauppsättningar (mindre än 1 miljon händelser per dag) tar normalt några dagar, medan stora datauppsättningar (1 miljard händelser per dag) kan ta en vecka eller mer.
 
-## Vad är skillnaden mellan Enhetsanalys (en funktion i traditionell analys) och kanalövergripande analys?
+## Vad är skillnaden mellan Enhetsövergripande analys (en funktion i Adobe Analytics) och kanalövergripande analys?
 
 [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) är en funktion som är specifik för traditionella Adobe Analytics och som gör att du kan förstå hur människor arbetar på olika enheter. Det finns två arbetsflöden för att länka samman enhetsdata: fältbaserad sammanfogning och enhetsgrafen.
 
-[Flerkanalsanalys](/help/cca/overview.md) är en funktion som är specifik för CJA och som gör det möjligt att förstå hur människor arbetar på olika enheter och i olika kanaler. Det är ett nytt ID för en datauppsättning, vilket gör att datauppsättningen kan kombineras med andra datauppsättningar. Den här funktionen fungerar i design på liknande sätt som CDA:s fältbaserade sammanfogning, men implementeringen skiljer sig åt när det gäller att skilja på dataarkitekturen mellan traditionell Analytics och CJA.
+[Flerkanalsanalys](/help/cca/overview.md) är en funktion som är specifik för Customer Journey Analytics och som gör att du kan förstå hur människor arbetar på olika enheter och i olika kanaler. Det är ett nytt ID för en datauppsättning, vilket gör att datauppsättningen kan kombineras med andra datauppsättningar. Den här funktionen fungerar på liknande sätt som i CDA:s fältbaserade sammanfogning, men implementeringen skiljer sig åt när det gäller dataarkitekturen mellan Adobe Analytics och Customer Journey Analytics.
 
 ## Hur hanterar flerkanalsanalys GDPR- och CCPA-begäranden?
 
@@ -59,19 +59,19 @@ Adobe hanterar förfrågningar om GDPR och CCPA i enlighet med lokal och interna
 Om `Persistent ID` fältet är tomt för en händelse i en datauppsättning som sammanfogas med fältbaserad sammanfogning, CCA-fyllning i `Stitched ID` för den händelsen på ett av två sätt:
 
 * Om `Transient ID` fältet är inte tomt, CCA använder värdet i `Transient ID` som `Stitched ID`.
-* Om `Transient ID` fältet är tomt, CCA lämnar även `Stitched ID` tom. I detta fall `Persistent ID`, `Transient ID`och `Stitched ID` är alla tomma för händelsen. Dessa typer av händelser tas bort från alla CJA-anslutningar med datauppsättningen som sammanfogas där `Stitched ID` valdes som `Person ID`.
+* Om `Transient ID` fältet är tomt, CCA lämnar även `Stitched ID` tom. I detta fall `Persistent ID`, `Transient ID`och `Stitched ID` är alla tomma för händelsen. Dessa typer av händelser tas bort från alla Customer Journey Analytics-anslutningar som använder datauppsättningen som sammanfogas där `Stitched ID` valdes som `Person ID`.
 
-## Hur jämförs data i CJA med liknande värden i CJA-dataset och med traditionella Adobe Analytics?
+## Hur fungerar mätvärden i datauppsättningar som sammanfogats med Customer Journey Analytics jämfört med liknande värden i datauppsättningar som inte sammanställts med Customer Journey Analytics och med traditionella Adobe Analytics?
 
-Vissa mått i CJA liknar mätvärden i traditionell analys, men andra är helt olika beroende på vad du jämför. I tabellen nedan jämförs flera vanliga mätvärden:
+Vissa mätvärden i Customer Journey Analytics liknar mätvärden i Adobe Analytics, men andra är helt olika beroende på vad du jämför. I tabellen nedan jämförs flera vanliga mätvärden:
 
-| **CJA-sammanfogade data** | **CJA frigjorda data** | **Traditionell Adobe Analytics** | **Analytics Ultimate med CDA** |
+| **data sammanfogade med Customer Journey Analytics** | **data som inte sammanfogats med Customer Journey Analytics** | **Traditionell Adobe Analytics** | **Analytics Ultimate med CDA** |
 | ----- | ----- | ----- | ----- |
-| **Folk** = Antal distinkta `Person ID`s var `Stitched ID` väljs som `Person ID`. **Folk** kan vara högre eller lägre än **Unika besökare** i traditionell Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Folk** = Antal distinkta `Person ID`baseras på den kolumn som markerats som `Person ID`. **Folk** i Adobe Source Connector-datamängder liknar **Unika besökare** i traditionell Adobe Analytics om `endUserIDs._experience.aaid.id` väljs som `Person ID` i CJA. | **Unika besökare** = Antal distinkta person-ID:n. **Unika besökare** får inte vara samma som antalet distinkta **ECID** s. | Se [Folk](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
-| **Sessioner**: Definieras baserat på sessionsinställningarna i CJA-datavyn. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i CJA-datavyn. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i [CDA Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
-| **Händelser** = antal rader i sammanslagna data i CJA. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med en tom `Persistent ID`. | **Händelser** = antal rader i de osydda data i CJA. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock att om några händelser har en tom `Person ID` Dessa händelser ingår inte i CJA i de data som inte sammanställts i Experience Platform datasjön. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
+| **Folk** = Antal distinkta `Person ID`s var `Stitched ID` väljs som `Person ID`. **Folk** kan vara högre eller lägre än **Unika besökare** i traditionell Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Folk** = Antal distinkta `Person ID`baseras på den kolumn som markerats som `Person ID`. **Folk** i Adobe Source Connector-datamängder liknar **Unika besökare** i traditionell Adobe Analytics om `endUserIDs._experience.aaid.id` väljs som `Person ID` i Customer Journey Analytics. | **Unika besökare** = Antal distinkta person-ID:n. **Unika besökare** får inte vara samma som antalet distinkta **ECID** s. | Se [Folk](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
+| **Sessioner**: Definieras baserat på sessionsinställningarna i datavyn i Customer Journey Analytics. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i datavyn i Customer Journey Analytics. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i [CDA Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
+| **Händelser** = antal rader i sammanslagna data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med en tom `Persistent ID`. | **Händelser** = antal rader i osydda data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock att om några händelser har en tom `Person ID` Dessa händelser ingår inte i Customer Journey Analytics i Experience Platform data-sjön. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
-Andra mätvärden kan likna i CJA och i traditionella Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är i allmänhet jämförbart mellan traditionell Adobe Analytics och CJA (oavsett om de är sydda eller inte). [Skillnader i funktionalitet](/help/getting-started/aa-vs-cja/cja-aa.md)) som avduplicering av händelser mellan CJA och traditionella Adobe Analytics kan orsaka skillnader mellan de två produkterna.
+Andra mätvärden kan likna dem i Customer Journey Analytics och i Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är i allmänhet jämförbar mellan traditionella Adobe Analytics och Customer Journey Analytics (oavsett om de är sydda eller inte). [Skillnader i funktionalitet](/help/getting-started/aa-vs-cja/cja-aa.md)), till exempel vid borttagning av dubbletter mellan Customer Journey Analytics och traditionella Adobe Analytics, kan orsaka skillnader mellan de två produkterna.
 
 ## Kan CCA använda fält för identitetskarta?
 

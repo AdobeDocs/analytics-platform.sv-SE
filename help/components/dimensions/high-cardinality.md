@@ -4,20 +4,20 @@ description: Beskriver de bästa sätten att hantera högkardinalitetsmått i Cu
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 0e9d612e1c0f6d64cd6f1e045c1049a1f8202b72
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Dimensioner med mycket hög kardinalitet
 
-Customer Journey Analytics (CJA) sätter inga gränser för antalet unika värden eller dimensionsposter som kan rapporteras inom en enda dimension. I vissa fall kan dock dimensioner med ett mycket stort antal unika poster - även kallade högkardinalitetsmått - påverka vad som kan rapporteras.
+Customer Journey Analytics (Customer Journey Analytics) sätter inte gränser för antalet unika värden eller dimensionsposter som kan rapporteras inom en enda dimension. I vissa fall kan dock dimensioner med ett mycket stort antal unika poster - även kallade högkardinalitetsmått - påverka vad som kan rapporteras.
 
 ## Begränsningar
 
-Beroende på antalet händelser i en viss CJA-anslutning kan följande två begränsningar förekomma i kombination med dimensioner med hög kardinalitet:
+Beroende på antalet händelser i en viss Customer Journey Analytics Connection kan följande två begränsningar förekomma i samband med högkardinalitetsmått:
 
 ### 1. Radantalet kanske inte är exakt rapporteringsbart
 

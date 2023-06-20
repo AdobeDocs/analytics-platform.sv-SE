@@ -3,10 +3,10 @@ description: Flödesfunktionen visar kundvägar via era webbplatser och appar.
 title: Översikt över flöden
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '200'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ Här kan du:
 
 [Videosjälvstudiekurs om flödesvisualisering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
-## Mellandimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Mellandimensionella flöden {#in}
 
 Du kan visa [flöde mellan dimensioner](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
 

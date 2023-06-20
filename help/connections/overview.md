@@ -1,12 +1,12 @@
 ---
-title: Översikt över CJA-anslutningar
+title: Customer Journey Analytics Connections overview
 description: Lär dig mer om anslutningar i Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
-source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '106'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ Här är en videoöversikt:
 
 ## Nödvändiga behörigheter
 
-Om du vill skapa en CJA-anslutning behöver du följande behörigheter i [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Om du vill skapa en anslutning till Customer Journey Analytics behöver du följande behörigheter i [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Datamodellering: Visa scheman, hantera scheman

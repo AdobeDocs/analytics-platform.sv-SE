@@ -1,12 +1,12 @@
 ---
 title: Ingest Google Analytics history data into Adobe Experience Platform
-description: Beskriver hur du använder Customer Journey Analytics (CJA) för att importera Google Analytics-data till Adobe Experience Platform.
+description: Beskriver hur du använder Adobe Customer Journey Analytics för att importera Google Analytics-data till Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ I Google Cloud Platform går du till **Exportera > Exportera till GCS**. När da
 
 >[!TIP]
 >
->Om du tänker importera både tidigare och liveströmmande Google Analytics-data måste du använda samma schema för båda datauppsättningarna. Du kan sammanfoga datauppsättningarna i en CJA med en [Kombinerad datamängd](/help/connections/combined-dataset.md).
+>Om du tänker importera både tidigare och liveströmmande Google Analytics-data måste du använda samma schema för båda datauppsättningarna. Du kan sammanfoga datauppsättningarna i en Customer Journey Analytics med en [Kombinerad datamängd](/help/connections/combined-dataset.md).
 
 Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en datauppsättning med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till dina [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui).
 
@@ -91,15 +91,15 @@ Vissa XDM-fält i Platform kräver rätt format för att data ska kunna behandla
 
 * **`timestamp`**: Skapa ett särskilt beräkningsfält i användargränssnittet för Experience Platform-schemat. Klicka **[!UICONTROL Add calculated field]** och radbryta `timestamp` sträng i en `date` funktion:
 
-   `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+  `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
-   Spara det beräknade fältet i tidsstämpeldatastrukturen i schemat:
+  Spara det beräknade fältet i tidsstämpeldatastrukturen i schemat:
 
-   ![Tidsstämpel](../assets/timestamp.png)
+  ![Tidsstämpel](../assets/timestamp.png)
 
-* **`_id`**: Det här fältet måste ha ett värde i sig - CJA bryr sig inte om vad värdet är. Du kan lägga till&quot;1&quot; i fältet:
+* **`_id`**: Det här fältet måste ha ett värde i det - Customer Journey Analytics bryr sig inte om vad värdet är. Du kan lägga till&quot;1&quot; i fältet:
 
-   ![ID](../assets/_id.png)
+  ![ID](../assets/_id.png)
 
 ## Nästa steg
 
