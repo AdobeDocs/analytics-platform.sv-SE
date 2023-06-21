@@ -4,10 +4,10 @@ description: Konfigurera hur ett mått formateras.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '447'
+ht-degree: 2%
 
 ---
 
@@ -44,10 +44,6 @@ Så här visar du en valuta för ett mått:
 
 
 ### Konvertera och visa valuta
-
-[!BADGE Ny funktion]{type=Positive}
-
-{{release-limited-testing-section}}
 
 Så här aktiverar du konvertering av en valuta för ett mätresultat:
 

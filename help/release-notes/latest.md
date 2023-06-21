@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f224a37190d60e7f055fdeb39c42dd77d8764259
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (juni 2023)
 
-**Senaste uppdatering**: 19 juni 2023
+**Senaste uppdatering**: 21 juni 2023
 
 Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -23,10 +23,10 @@ Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell
 | **Intelligenta bildtexter** | Bättre berättande för användare med naturtrogna sammanfattningar av [!UICONTROL Line] visualisering. [Läs mer](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 maj 2023 | 1 juni 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs)** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=en#company-preferences)</p> | 3 maj 2023 | 6 juni 2023 |
 | **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 14 juni 2023 |
-| **PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics** | Adobe Customer Journey Analytics SQL Connector ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) |  | 30 juni 2023 |
-| **Upplev Edge-geosökningar** | Du kan skapa rapporter med hjälp av geopositioneringsdata i Customer Journey Analytics när Experience Edge Geo Lookups har aktiverats för din datastream. |  | 30 juni 2023 |
-| **Utökat sökningsstöd för profil- och sökdata** | Du kan lägga till uppslagsdatauppsättningar i händelsedatamängder, men även i profil- och uppslagsdatamängder. | 28 juni 2023 | 12 juli 2023 |
 | **Stöd för valutakonvertering** | Valutakonvertering stöds som en del av formateringen av en måttkomponent i en datavy. [Läs mer](../data-views/component-settings/format.md#currency) | 7 juni 2023 | 21 juni 2023 |
+| **PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics** | Adobe Customer Journey Analytics SQL Connector ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) |  | 30 juni 2023 |
+| **Utökat sökningsstöd för profil- och sökdata** | Du kan lägga till uppslagsdatauppsättningar i händelsedatamängder, men även i profil- och uppslagsdatamängder. | 28 juni 2023 | 12 juli 2023 |
+| **Upplev Edge-geosökningar** | Du kan skapa rapporter med hjälp av geopositioneringsdata i Customer Journey Analytics när Experience Edge Geo Lookups har aktiverats för din datastream. |  | 26 juli 2023 |
 
 {style="table-layout:auto"}
 
