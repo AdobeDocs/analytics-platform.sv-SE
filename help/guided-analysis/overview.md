@@ -1,9 +1,10 @@
 ---
 title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteamen enkelt kan generera rapporter och insikter.
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
+source-git-commit: e2020d9194f7885f80671214829f06245bbab328
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -17,10 +18,6 @@ Guidad analys är ett rapportformat som gör att produktteamen snabbt kan ta han
 I en rapport om guidad analys, som liknar Analysis Workspace- och Mobile-styrkort, används data från en [Datavy](../data-views/data-views.md), som refererar till data i Adobe Experience Platform via en [Anslutning](../connections/overview.md). Alla rapporter som skapas i den guidade analysen kan smidigt överföras till Analysis Workspace för ytterligare forskning.
 
 För närvarande finns det tre typer av guidade analysrapporter: [Tratt](analysis-types/funnel.md), [Trender](analysis-types/trends.md)och [Användartillväxt](analysis-types/user-growth.md). Var och en av dessa analystyper har flera vytyper som ger ytterligare insikter till var och en av dessa rapporter.
-
-## Provisionering
-
-Guidad analys är ett betalt tillägg till Customer Journey Analytics. Om din organisation vill börja använda den här funktionen kontaktar du kontoteamet på Adobe.
 
 ## Gränssnitt
 
@@ -45,7 +42,9 @@ Guidad analys innehåller följande gränssnittsdelar:
 
 {style="table-layout:auto"}
 
-## Behörigheter
+## Provisionering
+
+Guidad analys ingår i Adobe Product Analytics, som är ett betalt tillägg till Customer Journey Analytics. Om din organisation vill börja använda den här funktionen kontaktar du kontoteamet på Adobe.
 
 Adobe planerar att i framtiden ge behörigheter som är specifika för den guidade analysen.
 
