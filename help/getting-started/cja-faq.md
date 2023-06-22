@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 >[!NOTE]
 >Det finns ingen fast datastorlek i Customer Journey Analytics och därför kan Adobe inte binda sig till en standardintag. Vi arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
 
-+++**Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] på [!UICONTROL Adobe Experience Platform]?**
++++**Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] data på [!UICONTROL Adobe Experience Platform]?**
 
 <ul><li>Live-data eller händelser: Bearbetas och importeras inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>
 
@@ -171,7 +171,7 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När flera klassificeringsfiler kombineras till en enda [!UICONTROL lookup] datauppsättningen, kan du stöta på problem. |
 
 
-## 8. Traditionell [!UICONTROL Adobe Analytics] komponenter
+## 8. [!UICONTROL Adobe Analytics] komponenter
 
 
 +++**Kan jag dela/publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform Unified Profile eller andra program från Experience Cloud?**
@@ -183,7 +183,7 @@ Inte ännu, men vi arbetar aktivt för att leverera den här funktionen.
 
 +++**Vad hände med min gamla [!UICONTROL eVar] inställning?**
 
-[!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i traditionell Adobe Analytics-mening finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden.
+[!UICONTROL eVars], [!UICONTROL props]och [!UICONTROL events] i Adobe Analytics: finns inte längre i [!UICONTROL Customer Journey Analytics]. Du har ett obegränsat antal schemaelement (mått, mått, listfält). Alla attribueringsinställningar som du använde under datainsamlingsprocessen tillämpas nu vid frågetiden.
 
 +++
 
