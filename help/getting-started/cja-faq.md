@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,13 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 
 +++**Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] data på [!UICONTROL Adobe Experience Platform]?**
 
+Vi ändrade nyligen hur vi behandlar data i Customer Journey Analytics.
+
+**Gammal väg:**
 <ul><li>Live-data eller händelser: Bearbetas och importeras inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>
+
+**Nytt sätt (från juni 2023)**
+<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
 
 +++
 
@@ -150,12 +156,12 @@ När det gäller borttagning av data är vi oroade för sex typer av komponenter
 | --- | --- |
 | Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics] anslutningar till datauppsättningar i den sandlådan. För närvarande [!UICONTROL Connections] i Customer Journey Analytics som är knuten till den borttagna sandlådan tas inte bort automatiskt. |
 | Ta bort ett schema i [!UICONTROL Adobe Experience Platform], men inte den eller de datauppsättningar som är associerade med det här schemat | [!UICONTROL Adobe Experience Platform] tillåter inte att [!UICONTROL schemas] som har en eller flera [!UICONTROL datasets] som är kopplade till dem. En administratör med rätt behörighetsuppsättning kan dock ta bort datauppsättningarna först och sedan ta bort schemat. |
-| Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform] Data Lake | Om du tar bort en datauppsättning i Adobe Experience Platform datasjön stoppas dataflödet från datauppsättningen till alla Customer Journey Analytics-anslutningar som innehåller den datauppsättningen. Alla data från den datauppsättningen tas automatiskt bort från associerade Customer Journey Analytics-anslutningar. |
+| Ta bort en datauppsättning i [!UICONTROL Adobe Experience Platform] Data Lake | Om du tar bort en datauppsättning i Adobe Experience Platform datasjön avbryts dataflödet från datauppsättningen till alla Customer Journey Analytics-anslutningar som innehåller den datauppsättningen. Alla data från den datauppsättningen tas automatiskt bort från associerade Customer Journey Analytics-anslutningar. |
 | Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | Kontakta kontoteamet på Adobe för att sätta igång processen för att ta bort en datauppsättning i en sparad anslutning. |
 | Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform]) | Om en batch tas bort från en [!UICONTROL Adobe Experience Platform] datauppsättning, kommer samma batch att tas bort från alla Customer Journey Analytics-anslutningar som innehåller den specifika gruppen.  Customer Journey Analytics meddelas om batchborttagningar i [!UICONTROL Adobe Experience Platform]. |
-| Ta bort en grupp **medan den importeras** till [!UICONTROL Customer Journey Analytics] | Om det bara finns en batch i datauppsättningen kommer inga data eller delar av data från den gruppen att visas i [!UICONTROL Customer Journey Analytics]. Intag kommer att återställas. Om det till exempel finns 5 batchar i datauppsättningen och 3 av dem redan har importerats när datauppsättningen togs bort, kommer data från dessa tre batchar att visas i [!UICONTROL Customer Journey Analytics]. |
-| Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
-| Ta bort en datavy i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande visar att alla arbetsyteprojekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
+| Ta bort en grupp **medan den importeras** till [!UICONTROL Customer Journey Analytics] | Om det bara finns en batch i datauppsättningen kommer inga data eller delar av data från den gruppen att visas i [!UICONTROL Customer Journey Analytics]. Intag kommer att återställas. Om det till exempel finns 5 batchar i datauppsättningen och 3 av dem redan har importerats när datauppsättningen togs bort, visas data från dessa tre batchar i [!UICONTROL Customer Journey Analytics]. |
+| Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande anger att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla arbetsyteprojekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
+| Ta bort en datavy i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande indikerar att alla arbetsyteprojekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
 
 ## 7. Att tänka på när du sammanfogar rapportsviter i Customer Journey Analytics {#merge-reportsuite}
 
@@ -170,16 +176,13 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 | [!UICONTROL Persistence] | [Persistence](../data-views/component-settings/persistence.md) omfattar flera rapportsviter, vilket påverkar [!UICONTROL filters], [!UICONTROL attribution]och så vidare. Siffrorna kanske inte läggs ihop korrekt. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när du sammanfogar rapportsviter. När flera klassificeringsfiler kombineras till en enda [!UICONTROL lookup] datauppsättningen, kan du stöta på problem. |
 
-
 ## 8. [!UICONTROL Adobe Analytics] komponenter
 
-
-+++**Kan jag dela/publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform Unified Profile eller andra program från Experience Cloud?**
++++**Kan jag dela/publicera [!UICONTROL filters] från [!DNL Customer Journey Analytics] till Experience Platform Real-Time CDP eller andra program från Experience Cloud?**
 
 Inte ännu, men vi arbetar aktivt för att leverera den här funktionen.
 
 +++
-
 
 +++**Vad hände med min gamla [!UICONTROL eVar] inställning?**
 
@@ -187,13 +190,11 @@ Inte ännu, men vi arbetar aktivt för att leverera den här funktionen.
 
 +++
 
-
 +++**Var finns alla inställningar för session och variabel beständighet nu?**
 
-[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället och dessa inställningar finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
+[!UICONTROL Customer Journey Analytics] använder alla dessa inställningar vid rapporttillfället, och dessa inställningar finns nu i datavyer. Ändringarna av de här inställningarna är nu retroaktiva och du kan ha flera versioner genom att använda flera datavyer!
 
 +++
-
 
 +++**Vad händer med våra befintliga segment/beräknade värden?**
 
@@ -201,13 +202,11 @@ Inte ännu, men vi arbetar aktivt för att leverera den här funktionen.
 
 +++
 
-
 +++**Hur [!UICONTROL Customer Journey Analytics] handtag `Uniques Exceeded` begränsningar?**
 
 [!UICONTROL Customer Journey Analytics] har inga unika värdebegränsningar, så du behöver inte bekymra dig om dem!
 
 +++
-
 
 +++**Om jag är en befintlig [!DNL Data Workbench] kund, kan jag gå över till [!UICONTROL Customer Journey Analytics] just nu?**
 
@@ -233,6 +232,6 @@ I vissa fall kanske du märker att det totala antalet händelser som är inkapsl
 
    ![uppdelning](assets/data-size2.png)
 
-2. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades det till Customer Journey Analytics igen, men med ett annat [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
+2. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades den till Customer Journey Analytics igen, men en annan [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
 
 Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].

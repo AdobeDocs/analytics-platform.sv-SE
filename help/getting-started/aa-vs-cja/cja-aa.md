@@ -4,16 +4,16 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2047'
 ht-degree: 3%
 
 ---
 
-# Funktioner i Customer Journey Analytics
+# Funktioner i Adobe Customer Journey Analytics
 
-I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds delvis eller inte alls i Customer Journey Analytics (Customer Journey Analytics) och vilka funktioner i Customer Journey Analytics som inte stöds eller är tillgängliga i Adobe Analytics. De här listorna ändras med tiden när funktioner läggs till i Customer Journey Analytics.
+I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds delvis eller inte alls i Customer Journey Analytics och vilka funktioner i Customer Journey Analytics som inte stöds eller är tillgängliga i Adobe Analytics. De här listorna ändras med tiden när funktioner läggs till i Customer Journey Analytics.
 
 ## Funktioner/komponenter som stöds fullt ut {#full-support}
 
@@ -56,6 +56,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Klassificeringar | Kallas nu&quot;Sök efter datauppsättningar&quot;. Klassifikationer som används i Analytics kan importeras till Experience Platform och Customer Journey Analytics med hjälp av källkopplingen för analysklassificeringar. Uppslagsdatauppsättningar kan också överföras direkt till Experience Platform och göras tillgängliga i Customer Journey Analytics. |
 | Classification Rule Builder | Stöds med [delsträngar](/help/data-views/component-settings/substring.md) i Customer Journey Analytics. Använder strängändringar vid rapporttidpunkten i stället för att söka efter datauppsättningar. |
 | Skräddarsydd professionalisering | Stöd för alla anpassade sessionsfunktioner utom mobila bakgrundshändelser. |
+| Valutakonvertering | Stöds som en del av [formatera en måttkomponent](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=en#currency) i en datavy. |
 | Varaktighet för marknadsföringsvariabel | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Kundattribut | Profildatauppsättningar importeras inte automatiskt från Experience Cloud, utan måste överföras till Experience Platform innan de kan användas i Customer Journey Analytics. |
 | Datafeeds | Första generationens dataexport av datauppsättningar är tillgänglig via [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) och via [Experience Platform Destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Dessa alternativ ger händelse-/radnivåexport av alla data som samlats in eller importerats till Experience Platform Data Lake. Postprocessdatakolumner är inte tillgängliga eftersom postkolumner beräknas vid frågetiden. Det går att exportera postkolumner genom rapportering. |
@@ -99,7 +100,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Projektmallar | Support planeras. |
 | Realtidsrapportering | Support planeras. |
 | Segment IQ | Support planeras. |
-| Valutakonvertering | Support planeras. |
 | Datakällor för transaktions-ID | Support planeras. |
 | Migrera projekt/filter/beräknade värden från Adobe Analytics till Customer Journey Analytics | Support planeras. |
 | Datakällor på sammanfattningsnivå | Support planeras. |
@@ -115,7 +115,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 {style="table-layout:auto"}
 
-## Aldrig support {#never}
+## Stöds aldrig {#never}
 
 * Personmätvärden med Coop för olika enheter
 * Rapporter och analyser på kontrollpaneler

@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 5%
+source-wordcount: '1424'
+ht-degree: 4%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (juni 2023)
 
-**Senaste uppdatering**: 21 juni 2023
+**Senaste uppdatering**: 22 juni 2023
 
 Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -56,7 +56,7 @@ AN-318343; AN-319453
 
 | Meddelande | Meddelande har lagts till eller uppdaterats | Beskrivning |
 | --- | --- | --- |
-| Ej tillämpligt | Ej tillämpligt | Ej tillämpligt |
+| Förändringar i hur Customer Journey Analytics bearbetar data | 22 juni 2023 | Vi ändrade nyligen hur vi behandlar data i Customer Journey Analytics.<p>**Gammal väg:**<ul><li>Live-data eller händelser: Bearbetas och importeras inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>**Nytt sätt (från juni 2023)**<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul> |
 
 ## EOL-meddelanden (End-of-life) {#eol}
 
