@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
+source-git-commit: eb05f22fdef55147da3bb84ba038f52ee7769167
 workflow-type: tm+mt
 source-wordcount: '2010'
 ht-degree: 0%
@@ -132,12 +132,11 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 
 +++**Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] data på [!UICONTROL Adobe Experience Platform]?**
 
+<ul><li>Live-data eller händelser: Bearbetas och importeras inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>
+
 Vi har nyligen ändrat hur vi behandlar data i Customer Journey Analytics:
 
 <ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
-
-<ul><li>Live-data eller händelser: Bearbetas och importeras inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små efterfyllningar - t.ex. en uppslagsdatauppsättning på 10 miljoner rader: inom 7 dagar<li>Stora backfills - till exempel 500 miljarder rader: 30 dagar</li></ul>
-
 
 +++
 
