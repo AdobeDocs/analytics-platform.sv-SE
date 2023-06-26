@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cc33257a04214ba786d7e5510a1b6bc618a84883
 workflow-type: tm+mt
-source-wordcount: '3111'
+source-wordcount: '3130'
 ht-degree: 3%
 
 ---
@@ -761,4 +761,5 @@ Du definierar en `Query String CID` härlett fält. Du använder [!UICONTROL URL
 Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 
 - Du kan använda högst 10 olika schemafält (exklusive standardfält) när du definierar regler för ett härlett fält.
+   - Från det här maxantalet på 10 olika schemafält tillåts bara maximalt 3 sökschemafält eller profilschemafält.
 - Du kan ha högst 100 härledda fält per Customer Journey Analytics-anslutning.
