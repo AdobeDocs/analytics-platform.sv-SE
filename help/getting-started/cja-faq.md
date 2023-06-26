@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: b66aed675153af3a2a0fbb77569d5c4c90d48022
+source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -130,15 +130,11 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 >[!NOTE]
 >Det finns ingen fast datastorlek i Customer Journey Analytics och därför kan Adobe inte binda sig till en standardintag. Vi arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
 
-+++**Vad är förväntad fördröjning för [!UICONTROL Customer Journey Analytics] data på [!UICONTROL Adobe Experience Platform]?**
-
 <ul><li>Live-data eller händelser: Bearbetas och importeras inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.)</li><li>Små backfillar: inom 7 dagar<li>Stora backfillar: inom 30 dagar</li></ul>
 
 Vi har nyligen ändrat hur vi behandlar data i Customer Journey Analytics:
 
 <ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
-
-+++
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
