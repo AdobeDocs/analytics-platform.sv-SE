@@ -4,9 +4,9 @@ title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 04da0dd42e4ab44dbacdc7a3bf840b7c7dcf24ee
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
@@ -80,13 +80,27 @@ Om du arbetar i vyn &quot;Mappar och projekt&quot; visas ett modalt popup-fönst
 
 ![Växla till alla projekt](assets/switch-all-projects-view.png)
 
-## Navigera på fliken Utbildning {#navigate-learning}
+## Använda fliken Utbildning {#navigate-learning}
 
-Utbildningssidan innehåller praktiska videoutgångar och självstudiekurser samt länkar till dokumentation.
+Utbildningssidan innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation.
 
-* The [!UICONTROL Workspace Fundamentals] Demo tar dig direkt till arbetsytan och leder dig igenom arbetsytelayouten och var du kan hitta/utföra de vanligaste åtgärderna. Du kan när som helst starta om den här demon direkt i Workspace via verktygstipset i panelhuvudet.
-* När du klickar på en video/demo läggs en **[!UICONTROL Viewed]** -tagg. Den här taggen hjälper dig att spåra dina framsteg med utbildningsinnehållet. Du kan klicka på taggen så försvinner den om du inte har slutfört innehållet än.
-* The **[!UICONTROL Learn more]** på den spärrade videon tar dig till en Adobe Experience League-dokumentationssida med mer hjälpinnehåll om den video du just tittade på.  **[!UICONTROL View more videos]** tar dig till hela spelningslistan för Analysis Workspace YouTube.
+Lär dig mer med utbildningssidan i Customer Journey Analytics:
+
+* Nybörjare, mellanliggande eller avancerade funktioner och användningsområden i CJA
+* Gå smidigare från Adobe Analytics till CJA
+
+### Gå till sidan Utbildning
+
+1. I Customer Journey Analytics väljer du [!UICONTROL **Arbetsyta**] > [!UICONTROL **Utbildning**].
+
+### Funktioner för utbildningssidor
+
+* **Filterinnehåll:** Med ikonen Filter i den vänstra listen kan du filtrera utbildningsinnehåll efter erfarenhetsnivå (Nybörjare, Mellan eller Avancerat) och efter innehållstyp (Dokument, Video eller Tours och självstudiekurser).
+* **Spåra förlopp:** När du har markerat en del av innehållet **[!UICONTROL Viewed]** -taggen visas. Den här taggen hjälper dig att spåra dina framsteg med utbildningsinnehållet. Du kan välja **[!UICONTROL Viewed]** för att ta bort den från ett visst innehåll.
+* **Visa ytterligare innehåll:** När du visar en video väljer du **[!UICONTROL Learn more]** för att visa relaterat dokumentationsinnehåll på Experience League. Du kan också välja något av följande alternativ på sidan Lär dig mer om du vill visa ytterligare innehåll:
+   * **[!UICONTROL Visit YouTube]:** Se hela spellistan för Analysis Workspace YouTube.
+   * [!UICONTROL **Besök Experience League**]: Se hela sviten med CJA-dokumentation på Experience League.
+* **Grundläggande för nya användare:** The [!UICONTROL Workspace Fundamentals] vi rekommenderar för nya användare. Den här demon tar dig direkt till Workspace och leder dig igenom de vanligaste åtgärderna. Den här demon kan också öppnas igen när som helst i Workspace via verktygstipset i panelhuvudet.
 
 ## Ange landningssida {#set-landing}
 
