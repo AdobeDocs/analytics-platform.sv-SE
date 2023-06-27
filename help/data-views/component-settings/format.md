@@ -4,9 +4,9 @@ description: Konfigurera hur ett mått formateras.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
+source-git-commit: 66e7adfbca3f20d21b4331033f70ac7d0933cd12
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '496'
 ht-degree: 2%
 
 ---
@@ -47,17 +47,11 @@ Så här visar du en valuta för ett mått:
 
 Så här aktiverar du konvertering av en valuta för ett mätresultat:
 
-- Konfigurera din Customer Journey Analytics-anslutning så att den innehåller minst en händelsedatamängd som innehåller en valutakoddimension för varje händelse som innehåller ett valutamått. Denna valutakoddimension använder en alfabetisk valutakod som överensstämmer med [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard för att representera valutor. Till exempel USD för $, EUR för €, GBP för £.
-
-- Du har (valfritt) använt [!UICONTROL Currency Code] sammanhangsetikett till en eller flera dimensioner som definierar valutakoder som är tillgängliga i datauppsättningen.
-
-  Använda [!UICONTROL Currency Code] kontextetikett, i [!UICONTROL Components] -fliken i din datavy:
-
-  <!--![Currency Context Label](../assets/currency-context-label.png)-->
+- Konfigurera din Customer Journey Analytics-anslutning så att den innehåller minst en händelsedatamängd som innehåller en valutakoddimension för varje händelse som innehåller ett valutamått. Denna valutakoddimension använder en alfabetisk valutakod som överensstämmer med [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard för att representera valutor. Dessa värden ska vara i versalformat, t.ex. USD för $, EUR för €, GBP för £.
 
    1. Välj dimensionen från en av dina datauppsättningar som innehåller valutakoderna. Exempel, [!UICONTROL Currency code].
 
-   2. Välj **[!UICONTROL Currency Code]** från [!UICONTROL Context labels] lista.
+   2. Välj **[!UICONTROL Currency Code]** från listan med dimensioner.
 
   Upprepa de här stegen om du har fler dimensioner som innehåller valutakoder som du vill använda för valutakonvertering.
 
@@ -72,7 +66,7 @@ Så här definierar du hur du konverterar och visar en valuta för ett mätresul
 
 2. Välj **[!UICONTROL Convert Concurrency]**.
 
-3. Baserat på den tillämpade kontextetiketten är det lämpligt från **[!UICONTROL Currency code dimension]** listan väljs automatiskt. Du kan välja vilken annan dimension som helst, inklusive de dimensioner som du dessutom tillämpade kontextetiketten Valutakod på.
+3. Välj lämplig dimension i listan med dimensioner som innehåller valutakodfältet.
 
 4. Välj en valuta från **[!UICONTROL Convert and display currency in]** lista.
 
@@ -81,6 +75,14 @@ Så här definierar du hur du konverterar och visar en valuta för ett mätresul
 +++ Hur genomförs valutakonvertering?
 
 Vid rapporttiden konverteras värdet för måttet och den ursprungliga valutakoden till USD och konverteras sedan till den valuta som konfigurerats för visning. För denna konvertering används de dagliga valutakurserna som gäller vid tidpunkten för händelsen.
+
++++ Hur långt tillbaka bibehålls dagliga konverteringsgrader?
+
+De dagliga omräkningskurserna bibehålls under de senaste fyra åren?
+
++++ Vad händer om jag inte har ett valutakodfält som en del av mitt aktuella dataschema?
+
+Det finns flera alternativ för att skapa ett nytt valutakodfält, bland annat Datapreposition, Data Distiller och Härledda fält. Data Prep skulle vara idealiskt för nya implementeringar eftersom det bara skulle vara på frammarsch-basis. Beroende på en organisations inställningar kan Data Distiller och härledda fält användas för att få åtkomst till valutakodvärden historiskt.
 
 +++
 
