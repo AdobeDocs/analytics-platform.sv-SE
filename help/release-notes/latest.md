@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d48ff9810ac7f2c194e959ab5deb492238362650
+source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1433'
 ht-degree: 4%
 
 ---
@@ -20,6 +20,7 @@ Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leverans
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Uppdateringar av flerkanalsanalys och dokumentation** | I väntan på kommande ändringar för att möjliggöra sammanfogning och för att ytterligare klargöra hur flerkanalsanalys kan höjas med sammanfogning redigeras dokumentation om funktionen för flerkanalsanalys för att hänvisa till [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) som Customer Journey Analytics-kapacitet och -användningsfall, och [Stitlar](../stitching/overview.md) som en viktig funktion för att uppnå detta. | 28 juni 2023 | 28 juni 2023 |
 | **Intelligenta bildtexter** | Bättre berättande för användare med naturtrogna sammanfattningar av [!UICONTROL Line] visualisering. [Läs mer](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 maj 2023 | 1 juni 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs)** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=en#company-preferences)</p> | 3 maj 2023 | 6 juni 2023 |
 | **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 14 juni 2023 |
