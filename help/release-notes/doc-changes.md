@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: ffa57379c868322290fbe23ba43659620c01f068
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2193'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juni 2023** | |
+| Flerkanalsanalys och stygn | I väntan på de kommande förändringarna för att möjliggöra sammanfogning och för att ytterligare klargöra hur flerkanalsanalys kan höjas med sammanfogning, redigeras allt innehåll som rör funktionen för flerkanalsanalys för att hänvisa till flerkanalsanalys som Customer Journey Analytics-kapacitet och Stitching som en viktig funktion för att uppnå detta. |
 | PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics | Customer Journey Analytics SQL Connector ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. [Läs mer](/help/data-views/sql-connector.md) |
 | Adobe Journey Optimizer datavyer | Customer Journey Analytics-administratörer har tillgång till vissa extra datavyer i Customer Journey Analytics med namnet&quot;AJO-datavyn (Sandbox-name)&quot;. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). |
 | Valutakonvertering | Uppdaterad dokumentation för [valutakonvertering](../data-views/component-settings/format.md#currency) support. |
