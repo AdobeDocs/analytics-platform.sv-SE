@@ -4,9 +4,9 @@ description: Lär dig hur du jämför dina Adobe Analytics-data med data i Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
 
 >[!NOTE]
 >
->Detta fungerar endast för vanliga datamängder med mellanvärden, inte sammanfogade datamängder (via [Flerkanalsanalys](/help/cca/overview.md)). Observera att redovisning av det person-ID som används i Customer Journey Analytics är avgörande för att jämförelsen ska fungera. Det är kanske inte alltid lätt att replikera i Adobe Analytics, särskilt om kanalövergripande analys har aktiverats.
+>Detta fungerar endast för vanliga datamängder med mellanvärden, inte sammanfogade datamängder (via [Flerkanalsanalys](/help/cca/overview.md)). Observera att redovisning av det person-ID som används i Customer Journey Analytics är avgörande för att jämförelsen ska fungera. Det är kanske inte alltid lätt att återskapa i Adobe Analytics, särskilt om du har aktiverat funktionen för att markera alternativet.
 
 1. I Adobe Experience Platform [Frågetjänster](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), kör följande [!UICONTROL Total Records by timestamps] fråga:
 

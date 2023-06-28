@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2046'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Funktion | Anteckningar |
 | --- | --- |
-| Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (kallas även&quot;fältbaserad&quot; sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Flerkanalsanalys](/help/cca/overview.md). |
+| Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (kallas även&quot;fältbaserad&quot; sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Stitlar](../../stitching/overview.md). |
 | Punktfiltrering | För [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller Customer Journey Analytics. |
 | Enhet, webbläsare, referens, teknikdimensioner | Stöds för [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar. Se [dokumentation om vilka analysvariabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>Om du använder Experience Platform Web SDK-datainsamling stöds för närvarande inte enheter och dimensioner baserade på enhetssökningen. Framtida stöd planeras. |
 | GeoSegmenteringsdimensioner | All GeoSegmentation/geography som samlas in i Adobe Analytics flödar in i Customer Journey Analytics via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementeringar som inte använder Analytics Source Connector, men som förlitar sig på Experience Platform Web SDK för digital datainsamling, kan använda [Upplev tjänsten Edge Geo Lookup](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en). |

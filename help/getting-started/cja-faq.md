@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2003'
 ht-degree: 0%
 
 ---
@@ -38,39 +38,40 @@ Customer Journey Analytics omfattar [Dataprep](https://experienceleague.adobe.co
 +++
 
 
-## 2. Stitching data (Cross-Channel Analytics) {#stitching}
+## 2. Sätta data {#stitching}
 
 +++**Kan [!UICONTROL Customer Journey Analytics] &quot;sammanfoga&quot; på olika enheter eller i olika datauppsättningar?**
 
-Ja. [!UICONTROL Customer Journey Analytics] har en sytlösning som kallas [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). Det gör att du kan ändra datamängdens personnummer, vilket möjliggör en sömlös kombination av flera datauppsättningar.
+Ja. [!UICONTROL Customer Journey Analytics] har [Stitlar](../stitching/overview.md) funktionalitet som fungerar över autentiserade och oautentiserade händelser i en datauppsättning. På så sätt kan olika poster matchas till ett sammanfogat ID, för analys på personnivå mellan olika enheter.
+När ett gemensamt namnområdes-ID (Person-ID) används för datauppsättningar i en [Anslutning](/help/connections/overview.md)kan du köra analyser på en sömlös kombination av flera datauppsättningar, sammanfogade på personnivå.
 
 +++
 
 
 +++**Stöds sammanslagning från anonymt beteende till autentiserat beteende?**
 
-Ja. [Flerkanalsanalys](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) läser användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID.
+Ja. [Stitlar](../stitching/overview.md) läser användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID.
 
 +++
 
 
-+++**Hur fungerar&quot;replay&quot; i CCA?**
++++**Hur fungerar &#39;replay&#39; när man sy ihop?**
 
-CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. Replay gör att nya enheter i anslutningen sammanfogas. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching)
-
-+++
-
-
-+++**Hur fungerar sammanfogning av historiska data (backfill) i CCA?**
-
-När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics)
+Stitching &quot;replaying&quot; data based on unique identifier it has learn. Replay syftar till att sammanfoga till en början oautentiserade händelser från enheter som har identifierats under tiden. [Läs mer](../stitching/explained.md)
 
 +++
 
 
-+++**Vad är förväntat beteende för icke-sammanfogade profildatauppsättningsposter?**
++++**Hur fungerar sammanfogning av historiska data (bakgrundsfyllning)?**
 
-**Exempel på scenario**: Du ansluter till två datauppsättningar i en Customer Journey Analytics-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i webbhändelsedatamängden. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i Customer Journey Analytics. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas.
+När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](../stitching/explained.md)
+
++++
+
+
++++**Vilket beteende förväntas för datauppsättningsposter som inte är sammanfogade?**
+
+**Exempel på scenario**: Du ansluter till två datauppsättningar i en Customer Journey Analytics-anslutning genom att använda `CRMid` som person-ID. Ett är en webbhändelsedatamängd med `CRMid` i alla poster. Den andra datauppsättningen är en CRM-profildatauppsättning. 40 % av CRM-datauppsättningen har `CRMid` finns i datauppsättningen för webbhändelser. De andra 60 % finns inte i webbhändelsedatamängden. Visas de här posterna i rapporter i Analysis Workspace?<p> **Svar**: Profilrader som inte har några kopplade händelser lagras i Customer Journey Analytics. Du kan dock inte visa dem i Analysis Workspace förrän en händelse som är kopplad till detta ID visas.
 
 +++
 
@@ -226,6 +227,6 @@ I vissa fall kanske du märker att det totala antalet händelser som är inkapsl
 
    ![uppdelning](assets/data-size2.png)
 
-2. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades den till Customer Journey Analytics igen, men en annan [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
+1. Dessutom, om vi checkar in [!UICONTROL Adobe Experience Platform], det finns ingen datauppsättning med ID:t &quot;5f21c12b732044194bffc1d0&quot;, vilket innebär att någon har tagit bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades den till Customer Journey Analytics igen, men en annan [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
 
 Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].

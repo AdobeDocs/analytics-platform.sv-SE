@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 ## Ändringar i hur Adobe identifierar besökare
 
-Customer Journey Analytics utökar koncepten för identiteter utöver ECID:n så att de omfattar alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Tracking Code o.s.v. Använda ett gemensamt namnområdes-ID för datauppsättningar, eller använda [Flerkanalsanalys](/help/cca/overview.md) hjälper till att länka samman personer över olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i Customer Journey Analytics måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics:
+Customer Journey Analytics utökar koncepten för identiteter utöver ECID:n så att de omfattar alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Tracking Code o.s.v. Använda ett gemensamt namnområdes-ID för datauppsättningar, eller använda [Stitlar](../stitching/overview.md) hjälper till att länka samman personer över olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i Customer Journey Analytics måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 

@@ -4,9 +4,9 @@ title: Överensstämmelse i mätvärden och antalet målgruppsmedlemskap mellan 
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ När man jämför antalet målgruppsmedlemskap mellan CDP i realtid och Customer
 
 CDP och Customer Journey Analytics i realtid har inte samma definition av en person i dag. CDP i realtid är helt beroende av informationen i [Identitetsdiagram](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) för att skapa en sammanfogad profil.
 
-Customer Journey Analytics kan konfigureras att använda [Flerkanalsanalys](/help/cca/overview.md) som extraherar identifierare från datauppsättningar i datasjön och använder anpassad logik för att länka samman dem.
+Customer Journey Analytics kan konfigureras att använda [Stitlar](../stitching/overview.md) som extraherar identifierare från datauppsättningar i datasjön och använder anpassad logik för att länka samman dem.
 
 I framtiden kommer Customer Journey Analytics att kunna använda Identity Graph.
 
