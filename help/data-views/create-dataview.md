@@ -4,9 +4,9 @@ description: Alla inställningar som du kan justera för att skapa eller rediger
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 77647ddbd2deee402629104312db1620de4449e9
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,24 @@ Här är en video om ämnet:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## Konfigurera en datavy
+Så här skapar eller redigerar du en datavy:
 
-1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och går till **[!UICONTROL Data Views]** -fliken.
-2. Klicka **[!UICONTROL Add]** om du vill skapa en datavy eller klicka på en befintlig datavy för att redigera den.
+1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och går till **[!UICONTROL Data views]** -fliken.
+1. Om du vill skapa en datavy väljer du **[!UICONTROL Create new data view]**. Du kan också välja en befintlig datavy i listan över datavyer för att redigera den.
 
-![Ny datavy](assets/new-data-view.png)
 
-### Inställningar för datavy
+## Konfigurera
+
+Så här konfigurerar du en ny eller befintlig datavy:
+
+1. Välj **[!UICONTROL Configure]** -flik (om den inte redan är aktiv).
+
+   ![Konfigurera datavy](assets/dataview-configure.png)
+1. Ange [!UICONTROL Settings], [!UICONTROL Container]och [!UICONTROL Calendar] information (se nedan).
+1. Välj **[!UICONTROL Save and continue]** för att fortsätta konfigurera din nya eller befintliga datavy. Välj **[!UICONTROL Save]** för att spara konfigurationen för den befintliga datavyn.
+
+
+### Inställningar
 
 Innehåller övergripande inställningar för datavyn.
 
@@ -57,34 +67,34 @@ Anger det kalenderformat som du vill att datavyn ska följa. Du kan ha flera dat
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Time zone] | Välj vilken tidszon du vill att dina data ska visas i. Om du väljer en tidszon som fungerar med sommartid justeras data automatiskt för att återspegla det. På våren, när klockorna justerar en timme framåt, finns det en lucka på en timme. I fall där klockorna justeras en timme bakåt upprepas en timme under DST-skiftet. |
-| [!UICONTROL Calendar Type] | Bestäm hur veckor i månaden ska grupperas.<br>**Gregorianska:** Standardkalenderformat. Kvartal grupperas efter månad.<br>**4-5-4 Detaljhandel:** En standardiserad 4-5-4-kalender. Den första och sista månaden i kvartalet innehåller 4 veckor, medan den andra månaden i kvartalet består av 5 veckor.<br>**Anpassad (4-5-4):** Liknar kalendern 4-5-4 förutom att du kan välja den första dagen på året och vilket år som den extra veckan inträffar.<br>**Anpassad (4-4-5):** Den första och andra månaden i varje kvartal innehåller 4 veckor, medan den sista veckan i varje kvartal består av 5 veckor.<br>**Anpassad (5-4-4):** Den första månaden i varje kvartal består av 5 veckor, medan den andra och tredje månaden i varje kvartal består av 4 veckor. |
+| [!UICONTROL Calendar Type] | Bestäm hur veckor i månaden ska grupperas.<br>**Gregorianska:** Standardkalenderformat. Kvartal grupperas efter månad.<br>**4-5-4 Detaljhandel:** En standardiserad 4-5-4-kalender. Den första och sista månaden i kvartalet innehåller 4 veckor, medan den andra månaden i kvartalet består av 5 veckor.<br>**Anpassad (4-5-4):** Liknar kalendern 4-5-4 förutom att du kan välja den första dagen på året och vilket år som den extra veckan inträffar.<br>**Anpassad (4-4-5):** Den första och den andra månaden i varje kvartal innehåller 4 veckor, medan den sista veckan i varje kvartal består av 5 veckor.<br>**Anpassad (5-4-4):** Den första månaden i varje kvartal består av 5 veckor, medan den andra och tredje månaden i varje kvartal består av 4 veckor. |
 | [!UICONTROL First month of the year] och [!UICONTROL First day of week] | Synlig för den gregorianska kalendertypen. Ange vilken månad du vill att kalenderåret ska börja på och vilken dag du vill att varje vecka ska börja på. |
 | [!UICONTROL First day of current year] | Synlig för anpassade kalendertyper. Ange vilken dag på året som du vill att det aktuella året ska börja. Kalendern formaterar automatiskt den första dagen i varje vecka baserat på det här värdet. |
-| [!UICONTROL Year in which the "extra" week occurs] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de utgör en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill att den extra veckan ska läggas till i. |
+| [!UICONTROL Year in which the "extra" week occurs] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de blir upp till en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill att den extra veckan ska läggas till i. |
 
 {style="table-layout:auto"}
 
-## Ställa in komponenterna i en datavy
+## Komponenter
 
-Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använda standardkomponenter.
+Sedan kan du ange komponenterna i en datavy, vilket betyder att du kan skapa mått och mått utifrån schemaelement. Du kan också använda standardkomponenter.
 
-1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och går till **[!UICONTROL Data Views]** -fliken.
-1. Klicka **[!UICONTROL Add]** om du vill skapa en datavy eller klicka på en befintlig datavy för att redigera den.
-1. Klicka på **[!UICONTROL Components]** -fliken.
+1. Välj **[!UICONTROL Components]** -fliken.
 
-   ![Fliken Komponenter](assets/components-tab.png)
+   ![Fliken Komponenter](assets/dataview-components.png)
 
-   Du kan se [!UICONTROL Connection] överst till vänster, som innehåller datauppsättningarna, och [!UICONTROL Schema fields] nedan. Observera att de komponenter som redan ingår är nödvändiga standardkomponenter (systemgenererade) för alla datavyer. Adobe använder också filtret **[!UICONTROL Contains data]** som standard så att endast schemafält som innehåller data visas. Om du vill ha ett fält som inte innehåller data tar du bort det här filtret.
+   Du kan se [!UICONTROL Connection] överst till vänster, som innehåller datauppsättningarna, och [!UICONTROL Schema fields] nedan.  Komponenterna som redan ingår är standardkomponenter (systemgenererade) som krävs för alla datavyer (som händelser, personer, sessionsmätningar och måtten Minute, Quarter, Week). Adobe använder också filtret **[!UICONTROL Contains data]** och **[!UICONTROL is not deprecated]** som standard visas endast schemafält som innehåller data och som inte är inaktuella.
 
-1. Dra ett schemafält, till exempel `pageTitle`från den vänstra listen till avsnittet Metrisk eller Dimension.
+1. Sök efter ett schemafält med ![Ikonen Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** eller hitta ett fält genom att flytta till någon av datauppsättningssamlingarna, som ![Mappikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]**.<br/>Du kan också skapa ett härlett fält med ![Dataikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Skapa härlett fält** . Se [Härledda fält](./derived-fields/derived-fields.md) för mer information.
 
-   Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt. Från `pageTitle` kan du skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot; genom att använda olika [Komponentinställningar](component-settings/overview.md) till höger.
+1. När du har hittat ett specifikt schemafält eller definierat det härledda fältet drar du det fältet, till exempel ![Hantera, ikon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]**från den vänstra listen till avsnittet Metrisk eller Dimension.
+Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt. I fältet pageName kan du till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot; genom att använda en annan [Komponentinställningar](component-settings/overview.md) till höger.
+Om du drar en mapp för schemafält från den vänstra listen sorteras de automatiskt i vanliga avsnitt. Strängfält hamnar i [!UICONTROL Dimensions] -avsnitt och numeriska schematyper hamnar i [!UICONTROL Metrics] -avsnitt. Du kan också klicka **[!UICONTROL Add all]** och alla schemafält läggs till på respektive plats.
 
-   ![Flik 3](assets/components-tab-3.png)
+1. När du har valt en komponent visas inställningarna till höger.
 
-   Om du drar en mapp för schemafält från den vänstra listen sorteras de automatiskt i vanliga avsnitt. Strängfält hamnar i [!UICONTROL Dimensions] -avsnitt och numeriska schematyper hamnar i [!UICONTROL Metrics] -avsnitt. Du kan också klicka **[!UICONTROL Add all]** och alla schemafält läggs till på respektive plats.
+   ![Datavy-komponent vald](assets/dataview-component-pagename.png)
 
-1. När du har valt komponenten visas ett antal inställningar till höger. Konfigurera komponenten med [Komponentinställningar](component-settings/overview.md). Vilka komponentinställningar som är tillgängliga beror på om komponenten är en dimension/mätare och schemadatatypen. Inställningarna inkluderar:
+   Konfigurera komponenten med [Komponentinställningar](component-settings/overview.md). Vilka komponentinställningar som är tillgängliga beror på om komponenten är en dimension/mätare och schemadatatypen. Inställningarna inkluderar:
 
    * [[!UICONTROL Attribution]](component-settings/attribution.md)
    * [[!UICONTROL Behavior]](component-settings/behavior.md)
@@ -95,29 +105,27 @@ Sedan kan du skapa mått och mått utifrån schemaelement. Du kan också använd
    * [[!UICONTROL Persistence]](component-settings/persistence.md)
    * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
 
-## Duplicera mått eller dimensioner
+1. Välj **[!UICONTROL Save and continue]** för att fortsätta konfigurera din nya eller befintliga datavy. Välj **[!UICONTROL Save]** för att spara konfigurationen för den befintliga datavyn.
+
+**Duplicera mått eller dimensioner**
 
 Att duplicera mått och dimensioner och sedan ändra specifika inställningar är ett enkelt sätt att skapa flera mått eller dimensioner från ett enda schemafält. Välj [!UICONTROL Duplicate] inställningen under måttets eller dimensionernas namn högst upp till höger. Ändra den nya dimensionen eller måttet och spara det under ett mer beskrivande namn.
 
-![Duplicera](assets/duplicate.png)
+**Filtrera schemafält eller datauppsättningar**
 
-## Filtrera schemafält eller datauppsättningar
+Du kan filtrera ![Filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) schemafält i den vänstra listen med [!UICONTROL data type], [!UICONTROL datasets], [!UICONTROL data governance]och [!UICONTROL other] kriterier ([!UICONTROL contains data], [!UICONTROL is identity]och [!UICONTROL is not deprecated]):
 
-Du kan filtrera schemafält i den vänstra listen med följande datatyper:
+![Filtrera fält](assets/dataview-components-filter.png)
 
-![Filtrera fält](assets/filter-fields.png)
 
-Du kan också filtrera efter datauppsättningar och efter om ett schemafält innehåller data eller om det är en identitet. Som standard använder Adobe från början **[!UICONTROL Contains data]** filtrera till alla datavyer.
+## Inställningar
 
-![Filtrera andra](assets/filter-other.png)
+1. Välj **[!UICONTROL Settings]** -fliken.
+1. Konfigurera filter som ska användas i hela datavyn. Se [Inställningar (filter)](#settings-filters) nedan.
+1. Konfigurera timeout och mått för sessioner. Se [Sessionsinställningar](#session-settings) nedan.
+1. Välj **[!UICONTROL Save and continue]** för att fortsätta konfigurera din nya eller befintliga datavy. Välj **[!UICONTROL Save]** för att spara konfigurationen för den befintliga datavyn.
 
-## Fliken Inställningar
-
-1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och går till **[!UICONTROL Data Views]** -fliken.
-1. Klicka **[!UICONTROL Add]** om du vill skapa en datavy eller klicka på en befintlig datavy för att redigera den.
-1. Klicka på **[!UICONTROL Settings]** -fliken.
-
-### Globalt filter
+### Inställningar (filter)
 
 Du kan lägga till filter som gäller för en hel datavy. Det här filtret tillämpas på alla rapporter som du kör i Workspace. Dra ett filter från listan i den vänstra listen till vänster [!UICONTROL Add filters] fält.
 
