@@ -3,77 +3,95 @@ title: Vanliga frågor om titlar
 description: Vanliga frågor och svar
 solution: Customer Journey Analytics
 feature: Stitching
-source-git-commit: ec316d36c1e2ec6eb6e75e980ad3fed4ededfb94
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
 
 # Frågor och svar
 
-Nedan finns några vanliga frågor om hur du syr ihop:
+Här är några vanliga frågor om stygn:
 
-## Hur kan jag använda stygn för att se hur människor flyttar från en kanal till en annan?
++++**Hur kan jag använda stygn för att se hur människor flyttar från en kanal till en annan?**
 
 Du kan använda en Flow-visualisering med datauppsättnings-ID-dimensionen.
 
 1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och skapa ett tomt Workspace-projekt.
 2. Välj **[!UICONTROL ** Visualiseringar **]** till vänster och dra en **[!UICONTROL ** Flöde **]** visualisering till arbetsytan till höger.
 3. Välj **[!UICONTROL ** Komponenter **]** till vänster och dra dimensionen **[!UICONTROL ** Datauppsättnings-ID **]** till mittplatsen med etiketten **[!UICONTROL ** Dimension eller objekt **]**.
-4. Denna flödesrapport är interaktiv. Om du vill expandera flödena till efterföljande eller föregående sidor väljer du något av värdena . Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
+4. Denna flödesrapport är interaktiv. Om du vill expandera flödena till efterföljande eller föregående sidor markerar du något av värdena. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
 
 Om du vill byta namn på dimensionsobjekt för datauppsättnings-ID kan du använda en uppslagsdatauppsättning.
 
-## Hur långt bak spelar syfilis upp besökare?
++++
+
++++**Hur långt bak spelar syfilis upp besökare?**
 
 Uppslagsfönstret för inmatning beror på hur ofta du vill ha data [spela upp](explained.md). Om du t.ex. ställer in sammanfogning för att spela upp data en gång i veckan, är uppslagsfönstret för inmatning sju dagar. Om du konfigurerar att fästa ihop för att spela upp data varje dag är uppslagsfönstret för att skriva in igen en dag.
 
-## Hur hanteras delade enheter?
++++
+
++++**Hur hanteras delade enheter?**
 
 I vissa situationer är det möjligt att flera personer loggar in från samma enhet. Exempel är en delad enhet hemma, delade datorer i ett bibliotek eller en kioskdator i ett butiksuttag.
 
 Det tillfälliga ID:t åsidosätter det beständiga ID:t, så delade enheter betraktas som separata personer (även om de kommer från samma enhet).
 
-## Hur hanteras situationer där en person har många beständiga ID:n när sammanfogning används?
++++
+
++++**Hur hanteras situationer där en person har många beständiga ID:n när sammanfogning används?**
 
 I vissa fall kan en enskild användare associera med många beständiga ID:n. Ett exempel är en person som ofta tar bort webbläsarens cookies eller använder webbläsarens privata läge/inkognito-läge.
 
 Antalet beständiga ID:n är irrelevant för det tillfälliga ID:t. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar kundens Journey Analytics förmåga att fästa ihop olika enheter.
 
-## När jag har kontaktat mitt Adobe-kontoteam med den önskade informationen, hur lång tid tar det innan den inmatade datauppsättningen blir tillgänglig?
++++
+
++++**När jag har kontaktat mitt Adobe-kontoteam med den önskade informationen, hur lång tid tar det innan den inmatade datauppsättningen blir tillgänglig?**
 
 Det finns direktutjämning ungefär en vecka efter det att Adobe har synat sig. Tillgängligheten för förifyllning beror på mängden befintliga data. Små datauppsättningar (mindre än 1 miljon händelser per dag) tar normalt några dagar, medan stora datauppsättningar (1 miljard händelser per dag) kan ta en vecka eller mer.
 
-## Vad är skillnaden mellan enhetsövergripande analys (en funktion i traditionell analys) och flerkanalsanalys?
++++
+
++++**Vad är skillnaden mellan enhetsövergripande analys (en funktion i traditionell analys) och flerkanalsanalys?**
 
 [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) är en funktion som är specifik för traditionella Adobe Analytics och som gör att du kan förstå hur människor arbetar på olika enheter. Det finns två arbetsflöden för att länka samman enhetsdata: fältbaserad sammanfogning och enhetsgrafen.
 
 Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journey Analytics och som gör det möjligt att förstå hur människor arbetar på olika enheter och i olika kanaler. Den sammanfogar en datauppsättnings person-ID så att den datauppsättningen kan kombineras med andra datauppsättningar. Den här funktionen fungerar i design på ungefär samma sätt som fältbaserad stygning mellan olika enheter, men implementeringen är annorlunda på grund av att dataarkitekturen skiljer sig mellan traditionell Analytics och Customer Journey Analytics. Se [Stitlar](overview.md) och [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) finns mer information.
 
-## Hur hanterar Stitching GDPR- och CCPA-begäranden?
++++**Hur hanterar Stitching GDPR- och CCPA-begäranden?**
 
 Adobe hanterar förfrågningar om GDPR och CCPA i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka in förfrågningar om dataåtkomst och borttagning. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
 
-## Vad händer om fältet för beständigt ID i en eller flera händelser är tomt?
++++
+
++++**Vad händer om fältet för beständigt ID i en eller flera händelser är tomt?**
 
 Om fältet för beständigt ID är tomt för en händelse i en datauppsättning som sammanfogas, bestäms ID:t för den händelsen på ett av två sätt:
 
 * Om fältet Transient ID inte är tomt använder Customer Journey Analytics värdet i Transient ID som Stitched ID.
 * Om fältet Övergående ID är tomt lämnar Customer Journey Analytics också fältet Stitched ID tomt. I det här fallet är Persistent ID, Transient ID och Stitched ID tomma för händelsen. Dessa typer av händelser tas bort från alla Customer Journey Analytics-anslutningar med datauppsättningen som sammanfogas där Stitched ID valdes som person-ID.
 
-## Hur fungerar mätvärden i datauppsättningar som sammanfogats med Customer Journey Analytics jämfört med liknande värden i datauppsättningar som inte sammanställts med Customer Journey Analytics och med traditionella Adobe Analytics?
++++
+
++++**Hur fungerar mätvärden i datauppsättningar som sammanfogats med Customer Journey Analytics jämfört med liknande värden i datauppsättningar som inte sammanställts med Customer Journey Analytics och med Adobe Analytics?**
 
 Vissa mätvärden i Customer Journey Analytics liknar mätvärden i traditionell analys, men andra är olika beroende på vad du jämför. I tabellen nedan jämförs flera vanliga mätvärden:
 
-| **data sammanfogade med Customer Journey Analytics** | **data som inte sammanfogats med Customer Journey Analytics** | **Traditionell Adobe Analytics** | **Analytics Ultimate med CDA** |
+| **data sammanfogade med Customer Journey Analytics** | **data som inte sammanfogats med Customer Journey Analytics** | **Adobe Analytics** | **Analytics Ultimate med CDA** |
 | ----- | ----- | ----- | ----- |
 | **Folk** = Antal distinkta person-ID:n där Stitched ID väljs som person-ID. **Folk** kan vara högre eller lägre än **Unika besökare** i traditionell Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Folk** = Antal distinkta person-ID:n baserat på den kolumn som valts som person-ID. **Folk** i Adobe Source Connector-datamängder liknar **Unika besökare** i traditionell Adobe Analytics om `endUserIDs._experience.aaid.id` används som person-ID i Customer Journey Analytics. | **Unika besökare** = Antal distinkta besökar-ID:n. **Unika besökare** får inte vara samma som antalet distinkta **ECID** s. | Se [Folk](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
 | **Sessioner**: Definieras baserat på sessionsinställningarna i datavyn i Customer Journey Analytics. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i datavyn i Customer Journey Analytics. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i [CDA Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
 | **Händelser** = antal rader i sammanslagna data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med ett tomt Persistent ID. | **Händelser** = antal rader i osydda data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock att om några händelser har ett tomt person-ID i de data som inte sammanställts i datavjön i Experience Platform, ingår inte dessa händelser i Customer Journey Analytics. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
-Andra mätvärden kan likna dem i Customer Journey Analytics och i Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är jämförbar mellan Adobe Analytics och Customer Journey Analytics (oavsett om de är sydda eller inte). [Skillnader i funktionalitet](/help/getting-started/aa-vs-cja/cja-aa.md)), till exempel vid borttagning av dubbletter mellan Customer Journey Analytics och traditionella Adobe Analytics, kan orsaka skillnader mellan de två produkterna.
+Andra mätvärden kan vara liknande i Customer Journey Analytics och Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är jämförbar mellan Adobe Analytics och Customer Journey Analytics (oavsett om de är sydda eller inte). [Skillnader i funktionalitet](/help/getting-started/aa-vs-cja/cja-aa.md)), till exempel vid borttagning av dubbletter mellan Customer Journey Analytics och Adobe Analytics, kan orsaka skillnader mellan de två produkterna.
 
-## Kan Customer Journey Analytics använda fält för identitetskarta?
++++
+
++++**Kan Customer Journey Analytics använda fält för identitetskarta?**
 
 Nej, Customer Journey Analytics kan för närvarande inte använda Identitetskarta-fält för sammanfogning.
+
++++

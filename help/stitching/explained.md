@@ -3,7 +3,7 @@ title: Hur stygn fungerar
 description: Förstå begreppet stygn
 solution: Customer Journey Analytics
 feature: Stitching
-source-git-commit: cfe369ca1d0b18e32f1d88b543e549d01ddc0d64
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 10%

@@ -3,9 +3,9 @@ description: Du kan visa avvikelser i en tabell eller i ett linjediagram.
 title: Visa avvikelser i Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: e62261d1d440c0a85e4cab95611c6e6272de6724
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Du kan visa avvikelser i en tabell eller i ett linjediagram.
 
-## Visa avvikelser i en tabell {#section_869A87B92B574A38B017A980ED8A29C5}
+## Visa avvikelser i en tabell {#table}
 
 Du kan visa avvikelser i en friformstabell i en tidsserie.
 
@@ -32,9 +32,9 @@ Du kan visa avvikelser i en friformstabell i en tidsserie.
 
 1. Markera den grå triangeln i det övre högra hörnet av en rad för att visa detaljer om avvikelsen. Detta visar i vilken utsträckning (i procent) det faktiska värdet avviker antingen över eller under det förväntade värdet.
 
-## Visa avvikelser i ett linjediagram {#section_7C1192AFDB4345A8A2CCFB3AE0C47D82}
+## Visa avvikelser i ett linjediagram {#line-chart}
 
-Linjediagram är den enda visualisering som gör att du kan se avvikelser.
+Ett linjediagram är den enda visualisering som gör att du kan visa avvikelser.
 
 Så här visar du avvikelser i ett linjediagram:
 

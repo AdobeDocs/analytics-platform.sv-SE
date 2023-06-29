@@ -4,16 +4,16 @@ description: Lär dig hur du jämför dina Adobe Analytics-data med data i Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
 
 # Jämför dina Adobe Analytics-data med Customer Journey Analytics-data
 
-I takt med att ni antar Customer Journey Analytics kan det finnas vissa skillnader i data mellan Adobe Analytics och Customer Journey Analytics. Detta är normalt och kan inträffa av flera orsaker. Customer Journey Analytics är utformat för att du ska kunna förbättra vissa begränsningar av dina data i AA. Oväntade/oavsiktliga avvikelser kan dock förekomma. Den här artikeln är utformad för att hjälpa dig att diagnostisera och lösa de skillnaderna så att du och ditt team kan använda Customer Journey Analytics utan hinder av dataintegritetsfrågor.
+I takt med att ni antar Customer Journey Analytics kan det finnas vissa skillnader i data mellan Adobe Analytics och Customer Journey Analytics. Detta är normalt och kan inträffa av flera orsaker. Customer Journey Analytics är utformat för att du ska kunna förbättra vissa begränsningar av dina data i AA. Oväntade och oavsiktliga avvikelser kan dock förekomma. Den här artikeln är utformad för att hjälpa dig att diagnostisera och lösa de skillnaderna så att du och ditt team kan använda Customer Journey Analytics utan hinder av dataintegritetsfrågor.
 
 Låt oss anta att du har inhämtat Adobe Analytics-data till Adobe Experience Platform via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)och skapade sedan en Customer Journey Analytics-anslutning med den här datauppsättningen.
 
