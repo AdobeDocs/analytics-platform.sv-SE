@@ -4,9 +4,9 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
+source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2487'
 ht-degree: 1%
 
 ---
@@ -98,8 +98,6 @@ För varje datauppsättning som du lägger till i anslutningen [!UICONTROL Custo
 >
 >Du måste lägga till minst en händelsedatamängd som en del av en anslutning.
 
-![Dialogrutan Lägg till datauppsättning](assets/add-dataset.png)
-
 Det finns tre olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] data, och [!UICONTROL Lookup] data.
 
 | Typ av datauppsättning | Beskrivning | Tidsstämpel | Schema | Person-ID |
@@ -150,7 +148,7 @@ I den här tabellen visas de två konfigurationsalternativen när det finns kant
 
 {style="table-layout:auto"}
 
-## Beräkna det genomsnittliga antalet dagliga händelser
+## Beräkna det genomsnittliga antalet dagliga händelser {#average-number}
 
 Beräkningen görs för varje datauppsättning i anslutningen.
 
