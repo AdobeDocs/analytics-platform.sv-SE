@@ -2,7 +2,8 @@
 title: Jämför databehandling i Adobe Analytics och Customer Journey Analytics
 description: Förstå skillnaderna i databehandling för de olika rapportfunktionerna
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: CJA Basics
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 4%

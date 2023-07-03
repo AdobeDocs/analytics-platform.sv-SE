@@ -2,7 +2,8 @@
 title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteamen enkelt kan generera rapporter och insikter.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
-source-git-commit: e2020d9194f7885f80671214829f06245bbab328
+feature: Guided Analysis
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 0%

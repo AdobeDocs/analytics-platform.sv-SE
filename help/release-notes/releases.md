@@ -2,7 +2,8 @@
 description: Beskriver den kontinuerliga funktionsreleasestrategin för Customer Journey Analytics
 title: Funktionsreleaser för Customer Journey Analytics
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
-source-git-commit: 40f145d20125c41f3399ab0690a673f01c1817e3
+feature: Release Notes
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%

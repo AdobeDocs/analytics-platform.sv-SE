@@ -2,7 +2,8 @@
 title: Filteroperatorer
 description: Bestäm hur en komponent interagerar med ett värde i ett filter.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+feature: Filters
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
