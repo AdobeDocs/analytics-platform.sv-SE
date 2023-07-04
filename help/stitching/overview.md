@@ -3,9 +3,9 @@ title: Översikt över titlar
 description: Översikt över häftning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 3fd4038c44b50490618f838d281684742920d152
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -56,22 +56,22 @@ När organisationen uppfyller alla krav och förstår [begränsningar](#limitati
    * En begäran om att aktivera sammanfogning.
    * Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för.
    * Kolumnnamnet för det beständiga ID:t för den önskade datauppsättningen (identifierare som visas på varje rad).
-   * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (länken för personidentifierare mellan datauppsättningar).
+   * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (personidentifieraren, som också fungerar som länk mellan datauppsättningar i samband med en anslutning).
    * Din inställning [spela upp](explained.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
    * Namn på sandlåda.
 
 
-2. Adobe kundsupport samarbetar med Adobe och gör det möjligt att sy ihop bilder när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Adobe kundsupport kan ange det nya datauppsättnings-ID:t och namn på kolumn för person-ID.
+2. Adobe kundsupport samarbetar med Adobe och gör det möjligt att sy ihop bilder när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny kolumn för Stitched ID i Adobe Experience Platform. Adobe kundsupport kan ange den nya datauppsättningens ID.
 
-3. När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). Om du vill göra den här bakåtfyllnaden måste det tillfälliga ID:t finnas i de icke sammanfogade data så långt tillbaka i tiden.
+3. När Adobe aktiveras första gången fylls sydda data i bakgrunden 30 dagar.
 
-4. [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
+4. Om du vill använda den nya sammanslagna datauppsättningen i en flerkanalsanalys måste du lägga till den i en [anslutning](../connections/overview.md) i Customer Journey Analytics tillsammans med andra datauppsättningar som behövs. Välj rätt person-ID för varje datauppsättning.
 
 5. [Skapa en datavy](/help/data-views/create-dataview.md) baserat på anslutningen.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-När datavyn har konfigurerats är flerkanalsanalysen i Customer Journey Analytics precis som alla andra analyser i Customer Journey Analytics, förutom att data nu fungerar över alla kanaler och enheter.
+När datavyn har konfigurerats kan du köra din Customer Journey Analytics-rapportanalys över olika kanaler och enheter.
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
