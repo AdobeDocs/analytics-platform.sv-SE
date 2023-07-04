@@ -2,9 +2,9 @@
 description: Beskriver vilka faktorer som påverkar konsekvensen i mätvärden och antalet målgruppsmedlemskap mellan Real-time Customer Data Platform (CDP i realtid) och Customer Journey Analytics.
 title: Överensstämmelse i mätvärden och antalet målgruppsmedlemskap mellan CDP och Customer Journey Analytics i realtid
 role: Admin
-feature: CJA Basics
+feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%

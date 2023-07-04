@@ -2,9 +2,9 @@
 description: Lär dig hur du skapar mappar och undermappar i arbetsytan
 keywords: Analysis Workspace
 title: Skapa mappar
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
-source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 1%

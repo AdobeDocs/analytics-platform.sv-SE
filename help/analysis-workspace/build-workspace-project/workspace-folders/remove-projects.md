@@ -2,9 +2,9 @@
 description: Lär dig hur du tar bort projekt från mappar
 keywords: Analysis Workspace
 title: Ta bort projekt från mappar
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: b251cc2f918b54e52ad70def28187473255efbfa
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 1%

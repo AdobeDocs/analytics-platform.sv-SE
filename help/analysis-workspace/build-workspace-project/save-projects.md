@@ -1,10 +1,10 @@
 ---
 description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som, spara som mall och öppna tidigare versioner.
 title: Spara projekt
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -38,9 +38,9 @@ Alla projekt i Analysis Workspace sparas automatiskt varannan minut på din dato
 
 * **Nya projekt:** Även om nya projekt sparas automatiskt måste du spara varje nytt projekt manuellt första gången. Analysis Workspace uppmanar dig att spara nya projekt manuellt när du växlar till ett annat projekt, stänger webbläsarfliken och så vidare.
 
-   Om du av någon anledning oväntat förlorar åtkomsten till ett nyskapat projekt innan du sparar det manuellt, sparas en återställningsversion av ditt projekt på Analysis Workspace startsida i en mapp som kallas `Recovered Projects (Last 7 Days)`. Du måste återställa det återställda projektet och spara det manuellt på önskad plats.
+  Om du av någon anledning oväntat förlorar åtkomsten till ett nyskapat projekt innan du sparar det manuellt, sparas en återställningsversion av ditt projekt på Analysis Workspace startsida i en mapp som kallas `Recovered Projects (Last 7 Days)`. Du måste återställa det återställda projektet och spara det manuellt på önskad plats.
 
-   Så här återställer du ett återskapat projekt:
+  Så här återställer du ett återskapat projekt:
 
    1. Gå till [!UICONTROL **Återskapade projekt**] på Analysis Workspace landningssida.
 
@@ -51,7 +51,7 @@ Alla projekt i Analysis Workspace sparas automatiskt varannan minut på din dato
 
 * **Befintliga projekt:** Om du av någon anledning lämnar ett projekt med ändringar som ännu inte har sparats automatiskt uppmanas du att spara ändringarna eller ett varningsmeddelande visas.
 
-   Här följer några vanliga scenarier:
+  Här följer några vanliga scenarier:
 
 ### Öppna ett annat projekt
 

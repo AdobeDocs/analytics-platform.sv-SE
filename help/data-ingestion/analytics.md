@@ -2,9 +2,9 @@
 title: Importera och använda data från traditionella Adobe Analytics
 description: Förklara hur man importerar data från traditionella Adobe Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 0%
@@ -24,7 +24,6 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 >- [Implementera Analytics med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en)
 >
 >- [Implementera Analytics med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
-
 
 För att uppnå detta måste du:
 
@@ -112,9 +111,10 @@ Så här skapar du en anslutning:
 
    - Markera datauppsättningen som skapas automatiskt av Adobe Analytics-källkopplingen och andra datauppsättningar som du vill ta med i anslutningen.
 
-      ![Lägg till datauppsättningar](./assets/cja-connections-2a.png)
+     ![Lägg till datauppsättningar](./assets/cja-connections-2a.png)
 
    - Välj **[!UICONTROL Next]**.
+
    I [!UICONTROL Datasets settings] steg in [!UICONTROL Add datasets]:
 
    - För varje datauppsättning:
@@ -125,9 +125,10 @@ Så här skapar du en anslutning:
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
-      ![Konfigurera datauppsättningar](./assets/cja-connections-3a.png)
+     ![Konfigurera datauppsättningar](./assets/cja-connections-3a.png)
 
    - Välj **[!UICONTROL Add datasets]**.
+
    Välj **[!UICONTROL Save]**.
 
 Se [Anslutningar - översikt](../connections/overview.md) om du vill ha mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.

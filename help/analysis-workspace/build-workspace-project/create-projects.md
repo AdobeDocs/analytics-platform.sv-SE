@@ -1,9 +1,10 @@
 ---
 description: Lär dig hur du skapar ett projekt i Analysis Workspace
 title: Skapa projekt
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
-source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
+exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -92,4 +93,3 @@ Så här lägger du till en komponent:
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
 När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
-

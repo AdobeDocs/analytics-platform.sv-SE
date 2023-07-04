@@ -1,13 +1,13 @@
 ---
-description: 'Vad är instrumentpaneler och styrkort? '
-title: Markörguide för Adobe Analytics-kontrollpaneler
+description: Vad är instrumentpaneler och styrkort?
+title: Markörguide för kontrollpaneler i Analytics
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: 3538361d-68bf-4d67-ae14-55691909db6f
+exl-id: 892e5789-8eec-43d9-99fe-8448aa8600b2
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---

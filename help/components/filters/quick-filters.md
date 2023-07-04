@@ -1,10 +1,10 @@
 ---
 description: Använd snabbfilter i Analysis Workspace för Customer Journey Analytics
 title: Snabbfilter
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -35,20 +35,19 @@ Så här skapar du ett snabbfilter:
 
    * **Ad hoc (dra och släpp):** Dra en komponent från den vänstra listen till släppzonen intill **Filter** -ikonen i panelhuvudet och välj sedan **Redigera** för att justera filtret.
 
-      ![Redigera ad hoc-filter](assets/filter-adhoc-edit.png)
+     ![Redigera ad hoc-filter](assets/filter-adhoc-edit.png)
 
-      >[!NOTE]
-      >
-      > Tänk på följande när du skapar ett snabbfilter med ad hoc-funktioner (dra och släpp):
-      > * Följande komponenttyper stöds inte: beräknade värden och dimensioner samt mätvärden som du inte kan skapa filter utifrån.
-      > * För fullständiga dimensioner och händelser skapar Analysis Workspace händelsefilter för &quot;finns&quot;. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
-      > * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i filtersläppzonen konverteras den automatiskt till filtret &quot;does not exist&quot; så att det behandlas korrekt vid filtrering.
-
+     >[!NOTE]
+     >
+     > Tänk på följande när du skapar ett snabbfilter med ad hoc-funktioner (dra och släpp):
+     > * Följande komponenttyper stöds inte: beräknade värden och dimensioner samt mätvärden som du inte kan skapa filter utifrån.
+     > * För fullständiga dimensioner och händelser skapar Analysis Workspace händelsefilter för &quot;finns&quot;. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
+     > * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i filtersläppzonen konverteras den automatiskt till filtret &quot;does not exist&quot; så att det behandlas korrekt vid filtrering.
 
 
    * **Använda filterikonen:** I en Freeform-tabell väljer du **Filter** -ikonen i panelhuvudet.
 
-      ![Segmentfilter](assets/quick-seg1.png)
+     ![Segmentfilter](assets/quick-seg1.png)
 
 1. Justera någon av följande inställningar:
 
@@ -87,7 +86,6 @@ Så här skapar du ett snabbfilter:
 > * Om du vill spara ett snabbfilter måste du ha behörigheten Skapa filter i dialogrutan [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools).
 > 
 > * När du har sparat eller använt filtret kan det inte längre redigeras i snabbfilterverktyget. I stället måste du använda den vanliga filterverktyget.
-
 
 Du kan välja att spara snabbfilter som komponentlistfilter. Fördelar med komponentlistfilter:
 

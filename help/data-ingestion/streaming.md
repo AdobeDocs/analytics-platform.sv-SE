@@ -2,9 +2,9 @@
 title: Importera och använda strömmande data
 description: Förklara hur du importerar och använder strömmande data i Customer Journey Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1841'
 ht-degree: 0%
@@ -256,9 +256,10 @@ Så här skapar du en anslutning:
 
    - Välj den datauppsättning som du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
 
-      ![Lägg till datauppsättningar](./assets/cja-connections-2.png)
+     ![Lägg till datauppsättningar](./assets/cja-connections-2.png)
 
    - Välj **[!UICONTROL Next]**.
+
    I [!UICONTROL Datasets settings] steg in [!UICONTROL Add datasets]:
 
    - För varje datauppsättning:
@@ -269,9 +270,10 @@ Så här skapar du en anslutning:
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
-      ![Konfigurera datauppsättningar](./assets/cja-connections-3.png)
+     ![Konfigurera datauppsättningar](./assets/cja-connections-3.png)
 
    - Välj **[!UICONTROL Add datasets]**.
+
    Välj **[!UICONTROL Save]**.
 
 Se [Anslutningar - översikt](../connections/overview.md) om du vill ha mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.

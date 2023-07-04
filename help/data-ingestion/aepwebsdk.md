@@ -2,9 +2,9 @@
 title: Importera data via Adobe Experience Platform Web SDK och Edge Network
 description: Förklara hur man importerar data till Customer Journey Analytics via Adobe Experience Platform Web SDK och Edge Network
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '3273'
 ht-degree: 0%
@@ -216,7 +216,7 @@ Så här konfigurerar du datastream:
 
    4. Lämna de andra inställningarna och välj **[!UICONTROL Save]** för att spara datastream.
 
-Din datastream är nu konfigurerad för att vidarebefordra data som samlats in från din webbplats till din datauppsättning i Adobe Experience Platform.
+Din datastream är nu konfigurerad att vidarebefordra data som samlats in från din webbplats till din datauppsättning i Adobe Experience Platform.
 
 Se [Översikt över datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) om du vill ha mer information om hur du konfigurerar ett datastam och hur du hanterar känsliga data.
 
@@ -303,11 +303,11 @@ Så här definierar du ett dataelement för sidnamn:
 
    - Välj **[!UICONTROL Title]** från [!UICONTROL Attribute] lista.
 
-      ![Skapa datumelement med sidinformation](./assets/create-dataelement-1.png)
+     ![Skapa datumelement med sidinformation](./assets/create-dataelement-1.png)
 
-      Du kan också ha använt värdet från en variabel i datalagret, till exempel `pageName` och [!UICONTROL JavaScript Variable] dataelementtyp för att definiera dataelementet.
+     Du kan också ha använt värdet från en variabel i datalagret, till exempel `pageName` och [!UICONTROL JavaScript Variable] dataelementtyp för att definiera dataelementet.
 
-      ![Skapa dataelement med JavaScript-variabel](./assets/create-dataelement-2.png)
+     ![Skapa dataelement med JavaScript-variabel](./assets/create-dataelement-2.png)
 
    - Välj **[!UICONTROL Save]**.
 
@@ -327,7 +327,7 @@ Så här definierar du ett ECID-dataelement:
 
    - Välj **[!UICONTROL ECID]** från [!UICONTROL Data Element Type] lista.
 
-      ![ECID-dataelement](./assets/ecid-dataelement.png)
+     ![ECID-dataelement](./assets/ecid-dataelement.png)
 
    - Välj **[!UICONTROL Save]**.
 
@@ -353,14 +353,14 @@ Så här definierar du ett XDM-objektdataelement:
 
    - Mappa `identification > core > ecid` -attribut, som definieras i ditt schema, till ECID-dataelementet. Välj cylinderikonen för att enkelt välja ECID-dataelementet från listan med dataelement.
 
-      ![Välj ECID-dataelement](./assets/pick-ecid-dataelement.png)
+     ![Välj ECID-dataelement](./assets/pick-ecid-dataelement.png)
 
-      ![Mappa ECID-dataelement](./assets/map-ecid.png)
+     ![Mappa ECID-dataelement](./assets/map-ecid.png)
 
 
    - Mappa `web > webPageDetails > name` -attribut, som definieras i ditt schema, till dataelementet Sidnamn.
 
-      ![Mappa dataelement för sidnamn](./assets/map-pagename.png)
+     ![Mappa dataelement för sidnamn](./assets/map-pagename.png)
 
    - Välj **[!UICONTROL Save]**.
 
@@ -387,9 +387,12 @@ Så här definierar du en regel:
 
       - Välj **[!UICONTROL Window Loaded]** från [!UICONTROL Event Type] lista.
 
-         ![Regel - händelsekonfiguration](./assets/event-windowloaded-pageview.png)
+        ![Regel - händelsekonfiguration](./assets/event-windowloaded-pageview.png)
 
       - Välj **[!UICONTROL Keep Changes]**.
+
+
+
    - Välj **[!UICONTROL + Add]** under [!UICONTROL Actions].
 
    - I [!UICONTROL Action Configuration] dialog:
@@ -402,18 +405,15 @@ Så här definierar du en regel:
 
       - Markera cylinderikonen bredvid  [!UICONTROL XDM data] och välj **[!UICONTROL XDM - Page View]** från listan med dataelement.
 
-         ![Regel - åtgärdskonfiguration](./assets/action-pageview-xdm.png)
+        ![Regel - åtgärdskonfiguration](./assets/action-pageview-xdm.png)
 
       - Välj **[!UICONTROL Keep Changes]**.
+
    - Regeln ska se ut så här:
 
-      ![Skapa regel](assets/rule-pageview.png)
+     ![Skapa regel](assets/rule-pageview.png)
 
    - Välj **[!UICONTROL Save]**.
-
-
-
-
 
 Detta är bara ett exempel på hur man definierar en regel som skickar XDM-data, som innehåller värden från andra dataelement, till Adobe Experience Platform.
 
@@ -439,7 +439,7 @@ Så här skapar och publicerar du en tagg:
 
    - Välj **[!UICONTROL + Add All Changed Resources]**.
 
-      ![Publicera - Skapa bibliotek](./assets/create-library-aep.png)
+     ![Publicera - Skapa bibliotek](./assets/create-library-aep.png)
 
    - Välj **[!UICONTROL Save & Build to Development]**.
 
@@ -510,9 +510,10 @@ Så här skapar du en anslutning:
 
    - Välj den datauppsättning som du skapade tidigare (`Example dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
 
-      ![Lägg till datauppsättningar](./assets/cja-connections-2b.png)
+     ![Lägg till datauppsättningar](./assets/cja-connections-2b.png)
 
    - Välj **[!UICONTROL Next]**.
+
    I [!UICONTROL Datasets settings] steg in [!UICONTROL Add datasets]:
 
    - För varje datauppsättning:
@@ -523,9 +524,10 @@ Så här skapar du en anslutning:
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
-      ![Konfigurera datauppsättningar](./assets/cja-connections-3b.png)
+     ![Konfigurera datauppsättningar](./assets/cja-connections-3b.png)
 
    - Välj **[!UICONTROL Add datasets]**.
+
    Välj **[!UICONTROL Save]**.
 
 Se [Anslutningar - översikt](../connections/overview.md) om du vill ha mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.

@@ -1,9 +1,9 @@
 ---
 description: Lär dig justera visningsdensiteten i Analysis Workspace.
 title: Visa densitet
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 4%
