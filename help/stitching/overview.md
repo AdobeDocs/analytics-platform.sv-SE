@@ -3,9 +3,9 @@ title: Översikt över titlar
 description: Översikt över häftning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ När du kombinerar datauppsättningar med liknande person-ID:n överförs attrib
 
 Tyvärr är inte alla händelsebaserade datauppsättningar som är en del av din anslutning i Customer Journey Analytics tillräckligt kompletta med data för att stödja denna attribuering. I synnerhet har webbaserade eller mobilbaserade upplevelsedatamängder ofta ingen faktisk person-ID-information tillgänglig för alla händelser.
 
-Med hjälp av häftning kan du skriva in identiteter på nytt i en datauppsättnings rader för att se till att önskat person-ID (sammanfogat ID) är tillgängligt för varje händelse. Stitching undersöker användardata från både autentiserade och oautentiserade sessioner för att generera ett sammanfogat ID. Med hjälp av häftning kan du matcha olika poster till ett sammanfogat ID för analys på personnivå, i stället för på enhets- eller cookienivå.
+Med hjälp av häftning kan du skriva in identiteter på nytt i en datamängds rader, så att person-ID (sammanfogat ID) är tillgängligt för varje händelse. Stitching tittar på användardata från både autentiserade och oautentiserade sessioner för att avgöra vilket tillfälligt ID-värde som kan användas som sammanfogat ID. På så sätt kan du lösa olika poster till ett sammanfogat ID för analys på personnivå, i stället för på enhets- eller cookienivå.
 
 Du kan dra nytta av flerkanalsanalys om du kombinerar en eller flera av dina sammanfogade datauppsättningar med andra datauppsättningar, till exempel callcenter-data, som en del av arbetet med att definiera din Customer Journey Analytics-anslutning. Detta förutsätter att dessa andra datauppsättningar redan innehåller ett person-ID på varje rad, som liknar det sammanfogade ID:t.
 
@@ -36,12 +36,13 @@ Innan du använder stygn bör du kontrollera att din organisation har förberett
    * Information om Adobe Analytics finns på [Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    * Andra typer av data finns i [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Ingrediera data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 
-* Den datauppsättning i Adobe Experience Platform som du vill använda sammanfogning på måste ha två kolumner som hjälper till att identifiera besökare:
+* Händelsedatauppsättningen i Adobe Experience Platform som du vill använda sammanfogning på måste ha två kolumner som hjälper till att identifiera besökare:
 
    * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Cloud Identity Service.
-   * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget vilken identifierare som helst, så länge som den finns minst en gång för samma händelse som ett visst beständigt ID.
+   * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget vilken identifierare som helst. Vid textning tas det här fältet i beaktande för att innehålla den faktiska informationen om person-ID. För bästa resultat av sammanfogning bör ett tillfälligt ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID.
+Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning är det bättre att de andra datauppsättningarna också har en liknande gemensam identifierare.
 
-* Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du sammanfogar datauppsättningar.
+* Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du aktiverar sammanfogning av en händelsedatamängd.
 
 
 ## Använd stygn

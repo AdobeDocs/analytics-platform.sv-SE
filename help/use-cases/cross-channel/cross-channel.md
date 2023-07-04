@@ -4,9 +4,9 @@ description: Analysera och extrahera insikter från kundinteraktioner under hela
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,6 @@ När du skapar det här arbetsflödet bör du tänka på följande.
 * För att kunna analysera data över flera kanaler krävs samma ID-namnutrymme för alla poster.
 * Unionsprocessen för att sammanfoga olika datauppsättningar kräver en gemensam primärnyckel för personen/enheten i alla datauppsättningar.
 * Sekundära nyckelbaserade föreningar stöds för närvarande inte.
-* Häftningsprocessen gör det möjligt att skriva in identiteter på nytt i rader baserat på efterföljande tillfälliga ID-poster, till exempel ett autentiserings-ID. Detta gör det möjligt att lösa olika poster till ett enda ID för analys på personnivå i stället för på enhets- eller cookienivå.
+* Häftningsprocessen gör det möjligt att skriva in identiteter på nytt i rader baserat på kortvarig ID-information (t.ex. ett autentiserings-ID) från poster som delar samma beständiga ID. Detta gör att olika poster kan matchas till ett sammanfogat ID för analys på personnivå, i stället för på enhets- eller cookienivå.
 * Objekt och attribut i samma XDM-fält sammanfogas till en dimension i Customer Journey Analytics. Om du vill sammanfoga flera attribut från olika datauppsättningar till samma Customer Journey Analytics-dimension, ska datauppsättningarna referera till samma XDM-fält eller -schema.
 

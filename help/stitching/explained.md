@@ -3,9 +3,9 @@ title: Hur stygn fungerar
 description: Förstå begreppet stygn
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1246'
 ht-degree: 10%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 10%
 
 Stitching gör att minst två omgångar av data i en given datauppsättning används:
 
-* **Livestning**: försöker sy ihop varje träff när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
+* **Livestning**: försöker sammanfoga varje träff (händelse) när den kommer in. Träffar från enheter som är&quot;nya&quot; i datauppsättningen (som aldrig har autentiserats) sammanfogas vanligtvis inte på den här nivån. Träffar från enheter som redan känns igen sammanfogas omedelbart.
 
-* **Spela upp sammanfogning**: &quot;spelar upp&quot; data baserat på unika identifierare som de lärt sig. I det här steget sammanfogas nya enheter till anslutningen. Adobe har två repriser:
+* **Spela upp sammanfogning**: &quot;spelar upp&quot; data baserat på unika identifierare (tillfälliga ID:n) som den har lärt sig. På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) (till tillfälliga ID:n). Adobe har två repriser:
    * **Dagligen**: Data spelas upp varje dag med ett 24-timmarsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
-   * **Vecka**: Data spelas upp en gång i veckan med ett 7-dagars uppslagsfönster. Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Data som är yngre än en vecka sammanfogas dock inte.
+   * **Vecka**: Data spelas upp en gång i veckan med ett 7-dagars uppslagsfönster. Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en vecka gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
 
 * **Integritet (valfritt)**: När sekretessrelaterade förfrågningar tas emot måste du, förutom att ta bort den begärda identiteten, även ångra varje sammanfogning av den identiteten över oautentiserade händelser.
 
-Data utanför uppslagsfönstret spelas inte upp igen. En besökare måste autentisera sig inom ett visst fönster för att kunna identifiera ett oautentiserat besök och ett autentiserat besök tillsammans. När en enhet känns igen är den sydd från den punkten framåt. Sekretessförfrågningar behandlas över sammanfogade data oavsett tid.
+Data utanför uppslagsfönstret spelas inte upp igen. En besökare måste autentisera sig inom ett visst fönster för att kunna identifiera ett oautentiserat besök och ett autentiserat besök tillsammans. När en enhet känns igen är den sydd från den punkten framåt.
 
 ## Steg 1: Livestning
 
@@ -127,7 +127,7 @@ När du tar emot en sekretessförfrågan tas raden med den ursprungliga använda
 
 ## Sammanfattning
 
-* Stitching sammanfogar omedelbart kända enheter, men sammanfogar inte omedelbart nya eller okända enheter.
+* Med Stitching sammanfogas händelser omedelbart från kända enheter, men du kan inte omedelbart sammanfoga händelser från nya eller okända enheter.
 * Data spelas upp med jämna mellanrum och ändrar historiska data i anslutningen baserat på enheter som den har lärt sig identifiera.
 * Liveutläggning och repriser utförs på en datauppsättning. Resultatet är en ny utökad datauppsättning som är bättre lämpad att användas när den kombineras med andra datauppsättningar (till exempel callcenter-data) för att utföra flerkanalsanalys.
 * Sekretessförfrågningar tar bort identiteter som har spridit sig till oautentiserade rader.
