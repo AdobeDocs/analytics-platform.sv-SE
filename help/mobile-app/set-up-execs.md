@@ -1,13 +1,13 @@
 ---
-description: Så här konfigurerar du användare att använda mobilappen Analytics
+description: Så här konfigurerar du användare att använda mobilappen Adobe Analytics Dashboard
 title: Konfigurera chefer för att använda kontrollpaneler
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -27,25 +27,29 @@ I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt oc
 För att se till att företagsinterna användare har tillgång till dina styrkort i appen ska du se till att:
 
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
-* De har en giltig inloggning på Adobe Analytics.
+* De har en giltig inloggning i Customer Journey Analytics.
 * Du har skapat mobila styrkort för dem och delat dem med dem.
 * De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort till **[!UICONTROL Share embedded components]**.
 
 ## Hjälp chefer att hämta och installera program
 
+>[!NOTE]
+>
+>Även om mobilappen heter Adobe Analytics dashboard i appbutiken kan appen användas på samma sätt med Customer Journey Analytics mobilstyrkort.
+
 **För chefsanvändare på iOS:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är också tillgänglig i Customer Journey Analytics under) **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile opp)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **För chefsanvändare på Android:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är också tillgänglig i Customer Journey Analytics under) **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile app)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-inloggningsuppgifter. har stöd för både Adobe och Enterprise/Federated ID.
+När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga inloggningsuppgifter för Customer Journey Analytics. har stöd för både Adobe och Enterprise/Federated ID.
 
 ![App - välkomstskärm](assets/welcome.png)
 
@@ -108,7 +112,7 @@ Om den verkställande användaren loggar in och ser ett meddelande om att inget 
 
 ![Inget delat](assets/nothing.png)
 
-* Den verkställande användaren kan ha valt fel Analytics-instans, eller
+* Den verkställande användaren kan ha valt fel Customer Journey Analytics-sandlåda, eller
 * Styrkortet kanske inte har delats med den verkställande användaren.
 
-Kontrollera att chefsanvändaren kan logga in på rätt Adobe Analytics-instans och att styrkortet har delats.
+Kontrollera att chefsanvändaren kan logga in på rätt Customer Journey Analytics-sandlåda och att styrkortet har delats.

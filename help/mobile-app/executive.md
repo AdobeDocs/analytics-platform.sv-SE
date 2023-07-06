@@ -1,20 +1,20 @@
 ---
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
-title: Chefshandbok för Adobe Analytics Dashboards
+title: Chefshandbok för kontrollpaneler för analyser
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
 
 # Snabbguide för chefsanvändare
 
-Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics dashboards. Här är en video som visar den här informationen:
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa kontrollpaneler i Analytics. Här är en video som visar den här informationen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
@@ -28,26 +28,30 @@ Om du vill använda kontrollpanelerna effektivt måste du ha styrkortets kurator
 
 Om du vill få åtkomst till styrkort på instrumentpaneler ser du till att:
 
-* Du har en giltig inloggning på Adobe Analytics
+* Du har en giltig inloggning i Customer Journey Analytics
 * Markören har skapat mobila styrkort korrekt och delat dem med dig
 
 ### Hämta och installera kontrollpaneler
 
 Följ stegen i operativsystemet på enheten för att hämta och installera programmet.
 
+>[!NOTE]
+>
+>Även om mobilappen heter Adobe Analytics dashboard i appbutiken kan appen användas på samma sätt med Customer Journey Analytics mobilstyrkort.
+
 **För chefsanvändare på iOS:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är också tillgänglig i Customer Journey Analytics under) **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile app)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 [Länk till iOS](https://apple.co/2zXq0aN)
 
 **För chefsanvändare på Android:**
 
-Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
+Klicka på följande länk (den är också tillgänglig i Customer Journey Analytics under) **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile app)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 [Android-länk](https://bit.ly/2LM38Oo)
 
-När programmet har laddats ned och installerats kan företagsanvändare logga in i det med sina befintliga Adobe Analytics-inloggningsuppgifter.
+När programmet har laddats ned och installerats kan företagsanvändare logga in i det med sina befintliga inloggningsuppgifter för Customer Journey Analytics.
 
 ![App - välkomstskärm](assets/welcome.png)
 
@@ -55,7 +59,7 @@ När programmet har laddats ned och installerats kan företagsanvändare logga i
 
 Så här använder du kontrollpaneler:
 
-1. Logga in på appen. Inloggningsskärmen visas när du startar instrumentpaneler. Följ instruktionerna med dina befintliga Adobe Analytics-inloggningsuppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
+1. Logga in på appen. Inloggningsskärmen visas när du startar instrumentpaneler. Följ instruktionerna med dina befintliga inloggningsuppgifter för Customer Journey Analytics. Vi stöder både Adobe och Enterprise/Federated ID.
 
    ![Logga in sekvens](assets/signseq.png)
 
@@ -73,8 +77,8 @@ Så här använder du kontrollpaneler:
 
    Om du loggar in och ser ett meddelande som säger att inget har delats kontrollerar du följande med markören:
 
-   * Du kan logga in på rätt Analytics-instans
-   * Styrkortet har delats med dig
+   * Du kan logga in i den högra Customer Journey Analytics-sandlådan.
+   * Styrkortet har delats med dig.
 
    ![Inget delat](assets/nothing.png)
 
@@ -111,11 +115,11 @@ Så här använder du kontrollpaneler:
 
    * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad**, eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger precis före det. Tryck på ett av dessa två alternativ för att markera det första intervallet. Under **[!UICONTROL COMPARE TO]** klickar du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervall som du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. The **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
-1. Om du vill använda ett segmentfilter på styrkortet trycker du på listrutan för filter och väljer ett segment som har konfigurerats av markören. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Analytics Workspace.
+1. Om du vill använda ett segmentfilter på styrkortet trycker du på listrutan för filter och väljer ett segment som har konfigurerats av markören. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i programmet fungerar på samma sätt som i Workspace.
 
    ![Segmentfilter](assets/segment_filter.png)
 
-1. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller indelningar som du kan vara intresserad av kontaktar du analysteamet så att styrkortet uppdateras. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
+1. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller uppdelningar som du kan vara intresserad av kontaktar du ditt Customer Journey Analytics-team för att få styrkortet uppdaterat. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
 
 1. Lämna feedback om den här appen:
 
@@ -148,8 +152,8 @@ Tryck på alternativet och ange din e-postadress i det övre fältet och din fr�
 
 | Term | Definition |
 |--- |--- |
-| Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från Analytics på en mobil enhet |
-| Kurator | Datalitterera persona som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
+| Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från Customer Journey Analytics på en mobil enhet |
+| Kurator | Personen som hittar och distribuerar insikter från Customer Journey Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
 | Insamling | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
 | Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
 | Platta | En återgivning för ett mätresultat i en styrkortsvy |

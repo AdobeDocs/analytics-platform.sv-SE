@@ -1,27 +1,28 @@
 ---
-description: Skapa och dela Adobe Analytics instrumentpaneler med styrkort
+description: Skapa och dela styrkort för kontrollpaneler i Analytics
 title: Skapa och dela styrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
 
 # Skapa ett mobilstyrkort
 
-Följande information beskriver för chefer av Adobe Analytics-data hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Börja med att titta på videon Adobe Analytics dashboards scorecard builder:
+Följande information instruerar chefer för Customer Journey Analytics om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Till att börja med kan du visa videon om att bygga styrkort för kontrollpaneler i Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->Styrkortsskärmbilder för den här sidan har tagits från Adobe Analytics-gränssnittet, inte från Customer Journey Analytics. Gränssnitten är nästan identiska.
+>
+>Skärmbilder från analysstyrkort för den här sidan har tagits från Adobe Analytics-gränssnittet, inte från Customer Journey Analytics. Gränssnitten är nästan identiska.
 
-Ett Adobe Analytics-styrkort visar viktiga datavisualiseringar för chefsanvändare i en sidindelad layout, vilket visas nedan:
+Ett analysstyrkort visar viktiga datavisualiseringar för chefsanvändare i en sida vid sida-layout, vilket visas nedan:
 
 ![Exempelstyrkort](assets/intro_scorecard.png)
 
@@ -40,7 +41,7 @@ Du kommer åt [!UICONTROL Blank Mobile Scorecard] mall antingen genom att skapa 
 
 ### Skapa ett nytt projekt {#create}
 
-1. Öppna Adobe Analytics och klicka på **[!UICONTROL Workspace]** -fliken.
+1. Öppna Customer Journey Analytics och klicka på **[!UICONTROL Workspace]** -fliken.
 1. Klicka **[!UICONTROL Create project]** och väljer **[!UICONTROL Blank mobile scorecard]** projektmall.
 1. Klicka på **[!UICONTROL Create]**.
 
@@ -78,7 +79,7 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 Om du vill använda filter på enskilda plattor drar du ett filter (segment är filter i Customer Journey Analytics) från den vänstra panelen och släpper det direkt ovanpå plattan.
 
-Om du vill använda filtret på alla plattor i styrkortet släpper du plattan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurera och använda filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Adobe Analytics Workspace.
+Om du vill använda filtret på alla plattor i styrkortet släpper du plattan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurera och använda filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
 
 ![Skapa filter](assets/segment_ui.png)
 
@@ -278,7 +279,7 @@ Du kan också navigera fram och tillbaka genom att använda pilarna på tangentb
 
 ## Förhandsgranska styrkort {#preview}
 
-Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har publicerats i kontrollpanelsappen för Analytics.
+Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har publicerats i appen Adobe Analytics dashboards.
 
 1. Klicka **[!UICONTROL Preview]** i skärmens övre högra hörn.
 
@@ -337,7 +338,7 @@ Dela ett styrkort med hjälp av en delbar länk
 
    När en mottagare använder ett datorprogram eller en webbläsare för att öppna länken öppnas projektet i Workspace.
 
-   När en mottagare öppnar länken på en mobil enhet öppnas styrkortet direkt i kontrollpanelsappen för Analytics.
+   När en mottagare öppnar länken på en mobil enhet öppnas styrkortet direkt i Adobe Analytics-appen för instrumentpaneler.
 
    Om en mottagare inte har laddat ned mobilappen dirigeras han/hon till applistan i App Store eller Google Play Store där han/hon kan ladda ned den.
 

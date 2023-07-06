@@ -1,22 +1,27 @@
 ---
-title: Adobe Analytics Dashboards - Översikt
-description: Produktdokumentation och självhjälp för Adobe Analytics dashboards
+title: Kontrollpaneler i Customer Journey Analytics - översikt
+description: Produktdokumentation och självhjälp för kontrollpaneler i Analytics
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: 7c5fa374-fa39-4bbc-9bd7-0ef17914d593
+exl-id: 40e52441-e772-41a3-b2e3-51a3d00580d0
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# Adobe Analytics [!UICONTROL dashboards] - Översikt
+# Analyser [!UICONTROL dashboards] - Översikt
 
-**Adobe Analytics[!UICONTROL dashboards]** kan du alltid få insikter från Adobe Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS och Android.
+**Analyser[!UICONTROL dashboards]** när som helst och var som helst få insikter från Customer Journey Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS och Android.
 
-Läs mer om Adobe Analytics [!UICONTROL dashboards], se följande resurser:
+>[!NOTE]
+>
+>De mobilstyrkortsfunktioner som finns i Customer Journey Analytics är nästan identiska med de funktioner som finns i Adobe Analytics. Av den anledningen visar styrkortsvideofilmerna på den här sidan Adobe Analytics-gränssnittet, inte Customer Journey Analytics. <br/><br/>Även om mobilappen heter Adobe Analytics i appbutiken kan appen även användas med Customer Journey Analytics-styrkort för mobiltelefoner.
+
+
+Mer information om Customer Journey Analytics [!UICONTROL dashboards], se följande resurser:
 
 * [Resurser för lärare](/help/mobile-app/curator.md): Avsikten är att hjälpa dataskåparna att konfigurera styrkort för sina chefsanvändare på [!UICONTROL dashboards]. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att inrätta styrkort:
 
