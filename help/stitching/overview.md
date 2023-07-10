@@ -3,7 +3,7 @@ title: Översikt över titlar
 description: Översikt över häftning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 3fd4038c44b50490618f838d281684742920d152
+source-git-commit: 41dc46ed5e30d08708ebb97fa29312aafd99ff9d
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 0%
@@ -63,7 +63,7 @@ När organisationen uppfyller alla krav och förstår [begränsningar](#limitati
 
 2. Adobe kundsupport samarbetar med Adobe och gör det möjligt att sy ihop bilder när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny kolumn för Stitched ID i Adobe Experience Platform. Adobe kundsupport kan ange den nya datauppsättningens ID.
 
-3. När Adobe aktiveras första gången fylls sydda data i bakgrunden 30 dagar.
+3. När Adobe aktiveras första gången fylls sydda data i bakgrunden som går tillbaka 60 dagar.
 
 4. Om du vill använda den nya sammanslagna datauppsättningen i en flerkanalsanalys måste du lägga till den i en [anslutning](../connections/overview.md) i Customer Journey Analytics tillsammans med andra datauppsättningar som behövs. Välj rätt person-ID för varje datauppsättning.
 
