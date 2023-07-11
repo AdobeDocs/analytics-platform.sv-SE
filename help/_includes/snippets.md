@@ -1,7 +1,7 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 89665490fb3b03a9d9578d22e0e9ed62415c66be
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -67,3 +67,8 @@ ht-degree: 1%
 
 {style="table-layout:auto"}
 
+## Använd tidsjämförelse {#apply-time-comparison}
+
+Du kan jämföra den aktuella tidsperioden med en tidigare tidsperiod. Om du väljer ett alternativ på den här menyn får alla datapunkter en motsvarande streckad motsvarighet i färg. Den här motsvarigheten representerar samma mått i det valda föregående datumintervallet. Om du anger det här alternativet dubbleras antalet objekt i diagrammet och raderna i tabellen.
+
+Tillgängliga tidsjämförelsealternativ omfattar föregående period, 13 veckor före, 52 veckor före och ett anpassat datumintervall. Om du väljer Anpassat datumintervall visas ytterligare alternativ så att du kan välja antal och detaljrikedom. Om du väljer Ingen tas datumjämförelsen bort.

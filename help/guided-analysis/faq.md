@@ -3,9 +3,9 @@ title: Vanliga frågor om guidad analys
 description: Vanliga frågor och svar om den guidade analysen.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
@@ -40,5 +40,31 @@ I den guidade analysen används termer som används oftare i produktanalysbransc
 | Segment | Filter |
 
 {style="table-layout:auto"}
+
++++
+
++++**Vad är det för skillnader i hur Analysis Workspace och Guidad analys rapporterar om detta?**
+
+Även om samma underliggande data används i Analysis Workspace- och Guidad-analyser är det sätt på vilket varje verktyg hämtar data som skiljer sig åt.
+
+**Analysis Workspace är en upplevelse som bygger på flera dimensioner.** Tabeller består vanligtvis av dimensionsobjektrader, medan kolumner vanligtvis är mått. Du kan använda filter på båda för att få fram önskade data.
+
+![Struktur för arbetsyta](assets/workspace-structure.png)
+
+**Guidad analys är en händelsestyrd upplevelse.** Visualiseringar fokuserar på händelser och använder dimensioner och filter för att komplettera dessa data.
+
+![Guidad analysstruktur](assets/guided-analysis-structure.png)
+
+Titta på följande exempel där du fokuserar på data runt hemsidan på din webbplats. Teamen ställer liknande frågor, men analysmetoden kan vara annorlunda.
+
+* En typisk dimensionsinriktad Analysis Workspace-strategi skulle vara:&quot;Hur många sidvisningar har hemsidan fått?&quot;
+
+  ![Dimension centrerad](assets/dimension-centered.png)
+
+* En typisk händelsestyrd strategi för guidad analys skulle vara&quot;Hur många användare har sett hemsidan?&quot;
+
+  ![Händelsecentrerad](assets/event-centered.png)
+
+Dessa påståenden illustrerar två olika metoder för att uppnå samma rapport, beroende på din händelsehanteringsstrategi.
 
 +++
