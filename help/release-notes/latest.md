@@ -3,69 +3,51 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
+source-git-commit: e9d2bfb4f4c4aa3ac96d0300e537376a1ef7821a
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '670'
 ht-degree: 4%
 
 ---
 
-# Aktuell versionsinformation för Adobe Customer Journey Analytics (juni 2023)
+# Aktuell versionsinformation för Adobe Customer Journey Analytics (juli 2023)
 
-**Senaste uppdatering**: 22 juni 2023
+**Senaste uppdatering**: 10 juli 2023
 
 Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
-## Frigör högdagrar {#highlights}
+## Nya eller uppdaterade funktioner
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Uppdateringar av flerkanalsanalys och dokumentation** | I väntan på kommande ändringar för att möjliggöra sammanfogning och för att ytterligare klargöra hur flerkanalsanalys kan höjas med sammanfogning redigeras dokumentation om funktionen för flerkanalsanalys för att hänvisa till [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) som Customer Journey Analytics-kapacitet och -användningsfall, och [Stitlar](../stitching/overview.md) som en viktig funktion för att uppnå detta. | 28 juni 2023 | 28 juni 2023 |
-| **Intelligenta bildtexter** | Bättre berättande för användare med naturtrogna sammanfattningar av [!UICONTROL Line] visualisering. [Läs mer](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 maj 2023 | 1 juni 2023 |
-| **Länkdelning för projekt (ingen inloggning krävs)** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=en#company-preferences)</p> | 3 maj 2023 | 6 juni 2023 |
-| **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 14 juni 2023 |
-| **Stöd för valutakonvertering** | Valutakonvertering stöds som en del av formateringen av en måttkomponent i en datavy. [Läs mer](../data-views/component-settings/format.md#currency) | 7 juni 2023 | 21 juni 2023 |
-| **PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics** | Adobe Customer Journey Analytics SQL Connector ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) |  | 30 juni 2023 |
-| **Utökat sökningsstöd för profil- och sökdata** | Du kan lägga till uppslagsdatauppsättningar i händelsedatamängder, men även i profil- och uppslagsdatamängder. | 28 juni 2023 | 12 juli 2023 |
-| **Upplev Edge-geosökningar** | Du kan skapa rapporter med hjälp av geolokaliseringsdata i Customer Journey Analytics när Adobe Experience Edge-geosökningar har aktiverats för din datastam. |  | 26 juli 2023 |
-
-{style="table-layout:auto"}
-
-## Andra nya funktioner eller uppdateringar {#other-new}
-
-| Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
-| ----------- | ---------- | ------- | ---- |
-| **Adobe Journey Optimizer datavyer** | Customer Journey Analytics-administratörer har tillgång till vissa extra datavyer i Customer Journey Analytics med namnet&quot;AJO-datavyn (Sandbox-name)&quot;. Dessa datavyer används för att driva rapporterna i Adobe Journey Optimizer. De kan också användas för att göra en djupare analys av Adobe Journey Optimizer aktiviteter i Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). | | 25 maj 2023 |
-| **Bakgrundsfyllning för icke-produktionssandlådor** | När du skapar ett dataflöde för Analytics Source Connector i en icke-produktionssandlåda, begränsas bakgrundsfyllningen i icke-produktionssandlådor till tre månader. Den kommer att finnas kvar på 13 månader för produktionssandlådor. | Ej tillämpligt | 26 april 2023 |
-| **Länkdelning för projekt (ingen inloggning krävs)** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=en#ims-organization-preferences)</p> | 3 maj 2023 | 6 juni 2023 |
-| **Uppdaterad startskärm för kontrollpanelsappen Analytics (mobilapp)** | På den nya uppdaterade startskärmen kan du visa alla dina styrkort i en konsoliderad styrkortslista.  Om du har tillgång till mer än en organisation under en inloggning är alla styrkort från din organisation tillgängliga i en enda lista. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) | Ej tillämpligt | 10 maj 2023 |
-| **Report Builder för Customer Journey Analytics - Välj datavy från cell** | Med den här funktionen kan användare välja datavyn för ett datablock från en cell. Detta är praktiskt om du skapar en arbetsbok och har flera datavyer som har liknande datauppbyggnad och du vill kunna återanvända en arbetsbok flera gånger, med olika datavyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | Ej tillämpligt | 24 maj 2023 |
-| **Updated Learning page for Customer Journey Analytics** | Fliken&quot;learning&quot; på landningssidan för Customer Journey Analytics innehåller nu innehåll som är specifikt för Customer Journey Analytics, inklusive innehåll som är inriktat på att gå över till Customer Journey Analytics från Adobe Analytics.<p>Följande ytterligare förbättringar finns också på fliken Utbildning:</p><ul><li>Förbättrad design som visar mer utbildningsmaterial på en enda sida med förbättrad navigering</li><li>Möjlighet att personalisera utbildningsmaterial efter erfarenhetsnivå (nybörjare, mellanhand och avancerat)</li></ul><p>Tidigare innehöll fliken Learning i Customer Journey Analytics samma information som i fliken Learning i Adobe Analytics.</p> [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | 27 juni 2023 | 30 juni 2023 |
-| **Sortera komponenter i Analysis Workspace** | <p>Ett nytt sorteringsalternativ är nu tillgängligt när du visar komponenter i den vänstra listen eller i datamappningslistan i Analysis Workspace. Du kan sortera komponenter efter Rekommenderat (de som används oftast), Alfabetiskt eller Kategoriserat (text).</p><p>Tidigare kunde du bara söka efter eller filtrera komponenter. [Läs mer](/help/components/overview.md)</p> | Ej tillämpligt | 7 juni 2023 |
-| **Ta bort rader som innehåller dynamiska dimensioner från en frihandstabell** | I en friformstabell i Analysis Workspace kan du nu snabbt ta bort specifika rader som innehåller dynamiska dimensioner med hjälp av x-ikonen. När du gör det används automatiskt en filterregel för att alltid utesluta objekt.<p>Tidigare var det enda sättet att ta bort rader som innehöll dynamiska dimensioner att manuellt skapa en regel i filterdialogrutan. [Läs mer](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | Ej tillämpligt | 17 maj 2023 |
-| **Ny knapp för att lägga till en visualisering i en panel** | En ny knapp finns nu längst ned på varje panel i Analysis Workspace, så att du snabbt kan lägga till en visualisering. <p>Tidigare var de enda sätten att lägga till en visualisering på en panel att dra en visualisering från den vänstra listen, duplicera eller kopiera en befintlig visualisering eller skapa en tom panel. [Läs mer](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | Ej tillämpligt | 17 maj 2023 |
-| **Djuplänkning (mobilapp)** | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | Ej tillämpligt | 17 maj 2023 |
-| **Intelligenta bildtexter** | Bättre berättande för användare med naturtrogna sammanfattningar av [!UICONTROL Line] visualisering. [Läs mer](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 maj 2023 | 1 juni 2023 |
+| **Adobe Product Analytics** | En ny projekttyp som gör det möjligt för produktteamen att snabbt självbetjäna sina databehov så att de kan fatta mer datadrivna produktbeslut. Den är byggd ovanpå de befintliga arbetsflödena för anslutning och datavy i Customer Journey Analytics. Inga implementerings- eller konfigurationsändringar behövs. [Läs mer](/help/guided-analysis/overview.md)<p>Product Analytics är ett betalt tillägg till Customer Journey Analytics. Om din organisation vill bli etablerad för att använda den här funktionen kontaktar du kontoteamet på Adobe. | Ej tillämpligt | 17 juli 2023 |
+| **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 2 augusti 2023 |
+| **Utökat sökningsstöd för profil- och sökdata** | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer] | 21 juni 2023 | 12 juli 2023 |
+| **Förbättringar i Report Builder** | <ul><li>Filtrera från cell för flera datablock. Du kan ändra filtren för flera datablock från en cell. Använd en fördefinierad cell, tilldela den till flera datablock och uppdatera data baserat på de filter som definieras i cellen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Visa och dölj rad- och kolumnrubriker. Du kan visa eller dölja tabellrubriker för datablock, eller rad- och kolumnrubriker för att formatera om tabellen och justera datablock i en rapport. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> | Ej tillämpligt | 19 juli 2023 |
+| **Upplev Edge-geosökningar** | Adobe Experience Edge lägger till en geosökningstjänst som ger enhetliga geografiska data till alla Experience Edge-användare (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Media Analytics, Adobe Experience Platform osv.). | Ej tillämpligt | 26 juli 2023 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-318343; AN-319453
+AN-317971; AN-319234; AN-320439; AN-320519; AN-321740; AN-322444; AN-323116
 
 ## Viktiga meddelanden för Customer Journey Analytics-administratörer
 
 | Meddelande | Meddelande har lagts till eller uppdaterats | Beskrivning |
 | --- | --- | --- |
-| Förändringar i hur Customer Journey Analytics bearbetar data | 22 juni 2023 | Vi ändrade nyligen hur vi behandlar data i Customer Journey Analytics.<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul> |
+| **Förändringar i hur Customer Journey Analytics bearbetar data** | 22 juni 2023 | Vi ändrade nyligen hur vi behandlar data i Customer Journey Analytics.<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul> |
 
-## EOL-meddelanden (End-of-life) {#eol}
+{style="table-layout:auto"}
+
+## EOL-meddelanden (End-of-life)
 
 | EOL-produkt eller -funktion | Datum tillagt eller uppdaterat | Beskrivning |
 | --- | --- | --- |
 | **Migrering till autentiseringsuppgifter för AdobeIO OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API-, Customer Journey Analytics API- och LiveStream-kunder som använder inloggningsuppgifter för AdobeIO JWT måste migrera till inloggningsuppgifter för AdobeIO OAuth Server-till-Server med **1 januari 2025**. AdobeIO tillåter inte att nya JWT-autentiseringsuppgifter skapas från och med 1 maj 2024. Kunder som använder JWT måste skapa en ny OAuth Server-till-Server-autentiseringsuppgift eller migrera sina befintliga JWT-autentiseringsuppgifter till en OAuth Server-till-Server-autentiseringsuppgift. Kunderna måste även uppdatera sina klientprogram för att kunna använda de nya autentiseringsuppgifterna för OAuth Server-till-Server. <ul><li>[Migrerar från JWT-autentiseringsuppgifter (Service Account)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Använda de nya autentiseringsuppgifterna för OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Vanliga frågor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
 
 {style="table-layout:auto"}
+
 
 ## Relaterade resurser
 
