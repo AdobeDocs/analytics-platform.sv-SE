@@ -3,7 +3,7 @@ title: Bildvy
 description: Jämför konverteringsgrader mellan steg.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -14,11 +14,13 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-The **Funktion** ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje steg som en användare måste gå igenom. Den lodräta axeln representerar procentandelen användare eller sessioner i varje steg. Alla steg måste utföras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret. Exempel:
+The **Funktion** ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje steg som en användare måste gå igenom. Den lodräta axeln representerar procentandelen användare eller sessioner i varje steg. Alla steg måste utföras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret.
 
 ![Funktion](../assets/friction.png)
 
 ## Användningsexempel
+
+Exempel:
 
 * **Konverteringsanalys**: Du kan analysera konverteringar i varje steg i tratten. Genom att spåra antalet användare som går från ett steg till nästa kan ni identifiera flaskhalsar som har ovanliga eller oönskade konverteringsgrader. Denna information är värdefull för att förstå var du kan förbättra produkten och få omedelbara resultat.
 * **Optimering av introduktion**: Optimera produktens introduktionsprocess genom att undersöka användarbeteenden kring viktiga händelser. Du kan identifiera vilka steg användare kämpar med eller misslyckas med.
