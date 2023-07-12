@@ -2,9 +2,9 @@
 title: Konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ The **Konverteringstrender** visningstypen ger en visualisering runt konverterin
 * **Utvärdering av A/B-tester**: Utvärdera effektiviteten i A/B-tester eller -experiment som utförs i samband med en tratt. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
 * **Kampanjutvärdering över tid**: Mät effektiviteten i marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
 
-[Skärmdump av tratt]
+![Konverteringstrender](../assets/conversion-trends.png)
 
 ## Frågerår
 
@@ -39,6 +39,8 @@ Trnel har följande diagraminställningar. Du kan justera diagraminställningarn
 ## Använd tidsjämförelse
 
 {{apply-time-comparison}}
+
+![Tidskonverteringstrender - jämför](../assets/conversion-trends-compare.png)
 
 ## Datumintervall
 

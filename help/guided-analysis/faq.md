@@ -3,9 +3,9 @@ title: Vanliga frågor om guidad analys
 description: Vanliga frågor och svar om den guidade analysen.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,11 @@ I den guidade analysen används termer som används oftare i produktanalysbransc
 
 Även om samma underliggande data används i Analysis Workspace- och Guidad-analyser är det sätt på vilket varje verktyg hämtar data som skiljer sig åt.
 
-**Analysis Workspace är en upplevelse som bygger på flera dimensioner.** Tabeller består vanligtvis av dimensionsobjektrader, medan kolumner vanligtvis är mått. Du kan använda filter på båda för att få fram önskade data.
+* **Analysis Workspace är en upplevelse som bygger på flera dimensioner.** Tabeller består vanligtvis av dimensionsobjektrader, medan kolumner vanligtvis är mått. Du kan använda filter på båda för att få fram önskade data.
 
-![Struktur för arbetsyta](assets/workspace-structure.png)
+* **Guidad analys är en händelsestyrd upplevelse.** Visualiseringar fokuserar på händelser och använder dimensioner och filter för att komplettera dessa data.
 
-**Guidad analys är en händelsestyrd upplevelse.** Visualiseringar fokuserar på händelser och använder dimensioner och filter för att komplettera dessa data.
-
-![Guidad analysstruktur](assets/guided-analysis-structure.png)
+![Struktur](assets/structure.png)
 
 Titta på följande exempel där du fokuserar på data runt hemsidan på din webbplats. Teamen ställer liknande frågor, men analysmetoden kan vara annorlunda.
 

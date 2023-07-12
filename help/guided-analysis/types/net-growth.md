@@ -2,9 +2,9 @@
 title: Nettotillväxt
 description: Balansera användarvinster och -förluster.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Exempel:
 * **Resultatutvärdering**: Gör att du kan bedöma den övergripande prestandan för din produkt när det gäller att köpa nya användare. Genom att följa tillväxttrender kan du bättre förstå om produkten lockar och behåller användare i önskad takt.
 * **Kurnanalys**: Nettotillväxten innefattar attrition i sin formel (vilande användare). Du kan utvärdera den övergripande statusen för din användarbas över tiden. Om nettotillväxten är konsekvent nedan `1`, indikerar det en hög grad av attribuering, vilket uppmanar er att undersöka orsakerna bakom detta och implementera strategier för bibehållande.
 
-[Skärmbild av användartillväxt]
+![Nettotillväxt](../assets/net-growth.png)
 
 ## Frågerår
 

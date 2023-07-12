@@ -3,9 +3,9 @@ title: Användning
 description: Mät användarengagemanget över tid.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ The **Användning** visningstypen ger värdefull information om hur produkten el
 * **Användarbeteende**: Trender ger insikt i användarbeteendet över tid. Genom att undersöka specifika åtgärder som användare utför kan du identifiera mönster där användare kan släppa av. Du kan kombinera insikter från den här vytypen med [Funktion](friction.md) för ännu mer insikter om beteenden.
 * **A/B-testning och -experimenterande**: Om du kör A/B-tester i produkten kan du använda Trends för att mäta vilka tester som är mest framgångsrika över tid.
 
-[Skärmbild av trender]
+![Användning](../assets/usage.png)
 
 ## Frågerår
 
@@ -40,6 +40,8 @@ Trender har följande diagraminställningar. Du kan justera diagraminställninga
 ## Använd tidsjämförelse
 
 {{apply-time-comparison}}
+
+![Jämför användningstid](../assets/usage-compare.png)
 
 ## Datumintervall
 

@@ -3,7 +3,7 @@ title: Aktiv
 description: Mät tillväxten hos era användare.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Exempel:
 * **Kampanjbedömning**: Att visa en viss kampanj kan hjälpa er att förstå inte bara hur mycket trafik den genererade, utan även hur väl kampanjen hjälpte användarna att hålla sig engagerade.
 * **Livscykelanalys för användare**: Genom att analysera aktiv användartillväxt under hela användarlivscykeln kan man identifiera specifika faser där användarengagemanget minskar. Om det till exempel finns ett stort antal vilande användare för dem som befinner sig på introduktionsstadiet, kan det tyda på användbarhetsproblem eller ett behov av bättre produktvägledning.
 
-[Skärmbild av användartillväxt]
+![Aktiv](../assets/active.png)
 
 ## Frågerår
 
@@ -48,6 +48,8 @@ Den här vytypen har följande diagraminställningar. Du kan justera diagraminst
 ## Använd tidsjämförelse
 
 {{apply-time-comparison}}
+
+![Jämför aktiv tid](../assets/active-compare.png)
 
 ## Datumintervall
 
