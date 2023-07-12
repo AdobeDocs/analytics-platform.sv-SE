@@ -1,15 +1,15 @@
 ---
-title: Nettotillväxt
+title: Vyn Nettotillväxt
 description: Kommer du att få eller förlora användare?
 feature: Guided Analysis
-source-git-commit: ab734506a023eacdeeb7c26f31a4361a6b804795
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
 
-# Nettotillväxt
+# Vyn Nettotillväxt
 
 {{release-limited-testing}}
 
@@ -28,13 +28,15 @@ Liknar [Aktiv](active.md) -vy definieras användare som följande:
 * **Vilande**: Användaren var aktiv i den omedelbart föregående perioden, men är inte aktiv i den aktuella perioden. Vilande användare räknas inte med i det totala antalet aktiva användare.
 * Obs! Upprepade användare tas inte med i beräkningen eftersom de inte representerar någon ökning eller förlust av användare.
 
+![Nettotillväxt](../assets/net-growth.png)
+
+## Användningsexempel
+
 Exempel:
 
 * **Resultatutvärdering**: Gör att du kan bedöma den övergripande prestandan för din produkt när det gäller att köpa nya användare. Genom att följa tillväxttrender kan du bättre förstå om produkten lockar och behåller användare i önskad takt.
 * **Analys av kundvärvning**: Gör att ni kan bedöma hur effektiva era strategier för kundförvärv är. Genom att analysera källor till användartillväxt, t.ex. sökmotorer, kampanjer eller andra marknadsföringskanaler, kan ni identifiera de viktigaste tillväxtkällorna så att ni kan tilldela resurser i enlighet med detta.
 * **Kurnanalys**: Nettotillväxt inkluderar attrition i sin formel (vilande användare). Du kan utvärdera den övergripande statusen för din användarbas över tiden. Om nettotillväxten är konsekvent nedan `1`innebär det en hög grad av attribuering som kan leda till implementering av strategier för kvarhållande.
-
-![Nettotillväxt](../assets/net-growth.png)
 
 ## Frågerår
 

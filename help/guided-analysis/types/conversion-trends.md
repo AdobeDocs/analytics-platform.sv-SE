@@ -1,25 +1,29 @@
 ---
-title: Konverteringstrender
+title: Vyn Konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
 feature: Guided Analysis
-source-git-commit: 84ac8008e4c90250e9f626b8c4d72f20297c14ad
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-# Konverteringstrender
+# Vyn Konverteringstrender
 
 {{release-limited-testing}}
 
-The **Konverteringstrender** en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden. Exempel:
+The **Konverteringstrender** en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
+
+![Konverteringstrender](../assets/conversion-trends.png)
+
+## Användningsexempel
+
+Exempel:
 
 * **Spåra optimering**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funktion](friction.md)kan du använda den här vyn för att spåra hur optimeringarna påverkar konverteringsgraden över tid.
 * **Utvärdering av A/B-tester**: Utvärdera effektiviteten i A/B-tester eller -experiment som utförs i samband med en tratt. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
 * **Kampanjutvärdering över tid**: Mät effektiviteten i marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
-
-![Konverteringstrender](../assets/conversion-trends.png)
 
 ## Frågerår
 

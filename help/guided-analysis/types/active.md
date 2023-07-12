@@ -1,16 +1,16 @@
 ---
-title: Aktiv
+title: Aktiv vy
 description: Identifiera vem som är ny, bevarad, återvändande eller vilande.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: c96f30979cc8bf519a8e96a1fafa5aba2ebc4c01
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-# Aktiv
+# Aktiv vy
 
 {{release-limited-testing}}
 
@@ -23,13 +23,15 @@ The **Aktiv** ger insikter om användarnas tillväxt och förvärv under en viss
 
 Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför den vågräta axeln, medan alla vilande användare visas orangefärgade under den vågräta axeln.
 
+![Aktiv](../assets/active.png)
+
+## Användningsexempel
+
 Exempel:
 
 * **Bevarande och bortfall av användare:** Ger en tydlig visualisering runt perioder med hög eller låg användarlojalitet. Genom att känna igen dessa perioder av hög eller låg lojalitet kan du fatta produktbeslut för att öka kundlojaliteten eller hjälpa till att minimera bortfallet.
 * **Kampanjbedömning**: Att visa en viss kampanj kan hjälpa er att förstå inte bara hur mycket trafik den genererade, utan även hur väl kampanjen hjälpte användarna att hålla sig engagerade.
 * **Livscykelanalys för användare**: Genom att analysera aktiv användartillväxt under hela användarlivscykeln kan man identifiera specifika faser där användarengagemanget minskar. Om det till exempel finns ett stort antal vilande användare för enskilda personer i ett introduktionsstadium kan det tyda på användarvänlighetsproblem eller ett behov av bättre produktvägledning.
-
-![Aktiv](../assets/active.png)
 
 ## Frågerår
 
