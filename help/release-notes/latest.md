@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2b0d091484c3c80d97de2952f4200d166ab5cd8a
+source-git-commit: 9e6231e4dc9770fbb7c859b397ea8c57e7dff478
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (juli 2023)
 
-**Senaste uppdatering**: 10 juli 2023
+**Senaste uppdatering**: 13 juli 2023
 
 Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -22,7 +22,7 @@ Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leverans
 | ----------- | ---------- | ------- | ---- |
 | **Adobe Product Analytics** | Adobe Product Analytics är ett nytt sätt att interagera med data och insikter över flera kanaler i Customer Journey Analytics. Dessa nya funktioner gör det möjligt för produktteamen att självbetjäna data och insikter om sina produktupplevelser via guidade analysarbetsflöden &#x200B;. Team kan:<ul><li>Förstå mönster i användarengagemanget över tid &#x200B;</li><li>Spåra tillväxten och lojaliteten hos &#x200B;</li><li>Identifiera friktionsområden i produkten</li><li>Mät effekten av &#x200B; och första användningen av nya funktioner</li><li>Identifiera meningsfulla användarsegment för att engagera och vårda användare under hela deras livslånga resa med &#x200B;</li><li>Anslut till Analysis Workspace för djupare analyser och samarbete med analytiker</li></ul>Adobe Product Analytics är ett betalt tillägg till Customer Journey Analytics. Om din organisation vill bli etablerad för att använda den här funktionen kontaktar du kontoteamet på Adobe. [Läs mer](/help/guided-analysis/overview.md) | Ej tillämpligt | 17 juli 2023 |
 | **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 2 augusti 2023 |
-| **Utökat sökningsstöd för profil- och sökdata** | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer] | 21 juni 2023 | 12 juli 2023 |
+| **Utökat sökningsstöd för profil- och sökdata** | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer](/help/connections/create-connection.md) | 21 juni 2023 | 12 juli 2023 |
 | **Förbättringar i Report Builder** | <ul><li>Filtrera från cell för flera datablock. Du kan ändra filtren för flera datablock från en cell. Använd en fördefinierad cell, tilldela den till flera datablock och uppdatera data baserat på de filter som definieras i cellen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Visa och dölj rad- och kolumnrubriker. Du kan visa eller dölja tabellrubriker för datablock, eller rad- och kolumnrubriker för att formatera om tabellen och justera datablock i en rapport. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> | Ej tillämpligt | 19 juli 2023 |
 | **Upplev Edge-geosökningar** | Adobe Experience Edge lägger till en geosökningstjänst som ger enhetliga geografiska data till alla Experience Edge-användare (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Media Analytics, Adobe Experience Platform osv.). | Ej tillämpligt | 26 juli 2023 |
 
