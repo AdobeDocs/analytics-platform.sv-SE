@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -110,4 +110,4 @@ Customer Journey Analytics utökar koncepten för identiteter utöver ECID:n så
 
 ## Förändringar av begreppet lågtrafikdimensionsobjekt
 
-I traditionell Adobe Analytics börjar en variabel som får för många unika värden att buffra dimensionsobjekt under [!UICONTROL Low-Traffic]. Customer Journey Analytics har färre begränsningar för högkardinalfält. Tack vare förändringar i rapporteringsarkitekturen kan Analysis Workspace rapportera om många fler unika dimensionsobjekt. Se [Lång stjärna](../analysis-workspace/workspace-faq/long-tail.md) om du vill ha mer information om hur Customer Journey Analytics optimerar rapporteringen för dimensioner med många unika värden.
+I traditionell Adobe Analytics börjar en variabel som får för många unika värden att buffra dimensionsobjekt under [!UICONTROL Low-Traffic]. Customer Journey Analytics har färre begränsningar för högkardinalfält. Tack vare förändringar i rapporteringsarkitekturen kan Analysis Workspace rapportera om många fler unika dimensionsobjekt. Se [Resultat av trunkerad dimensionspost](../analysis-workspace/workspace-faq/results-truncated.md) om du vill ha mer information om hur Customer Journey Analytics optimerar rapporteringen för dimensioner med många unika värden.
