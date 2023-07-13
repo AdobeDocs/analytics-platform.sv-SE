@@ -2,9 +2,9 @@
 title: Vyn Första användningen
 description: Mät effekten av förstagångsanvändning på nyckelindikatorer.
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: 9fa4b894e69a25b26632a93f00a655eec8e8aa86
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -24,25 +24,26 @@ Exempel:
 * **Ny funktionsanalys**: Om du startar en ny funktion i produkten kan du jämföra hur viktiga indikatorer har utförts före och efter det att användarna exponerats för den nya funktionen för första gången.
 * **Kampanjeffektivitet**: När en användare tittar på en viss kampanj kan ni jämföra hur nyckelindikatorer utfördes före och efter det att användaren såg eller interagerade med kampanjen.
 
-<!--
-## Query rail
+## Frågerår
 
-The query rail allows you to configure the following components:
+Med frågerefältet kan du konfigurera följande komponenter:
 
-* **Key indicators**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
-* **Factors**: The date that you want to compare before and after.
-* **People**: The segment that you want to measure. The selected segment filters your data to focus only on the individuals who match your segment criteria.
+* **Viktiga indikatorer**: De händelser som du vill mäta per användare. Varje markerad tangentindikator representeras som en färgad linje. En rad som representerar händelsen läggs till i tabellen. Du kan inkludera upp till tre händelser.
+* **Faktorer**: Det finns två faktorer för den här vyn:
+   * **Datum**: Hur långt tillbaka du vill leta efter en händelse första gången.
+   * **Händelse**: Händelsen som du vill jämföra före och efter det att den berördes.
+* **Folk**: Det segment som du vill mäta. Det valda segmentet filtrerar data så att de bara fokuserar på de personer som matchar dina segmentkriterier.
 
-## Chart settings
+## Diagraminställningar
 
-The Release view offers the following chart settings, which can be adjusted in the menu above the chart:
+I vyn Första användning finns följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
-* **Metric**: The metric that you want to measure. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
-* **Chart type**: The type of visualization that you want to use. Options include Line.
+* **Mått**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Events per user], [!UICONTROL Events], [!UICONTROL Sessions]och [!UICONTROL Users].
+* **Diagramtyp**: Den typ av visualisering som du vill använda. Alternativen är Line.
 
-## Date range
+## Datumintervall
 
-Date selection in impact reports operate differently than other analysis types, since the report revolves around the date specified in the query rail. The following options are available:
+Datumval i effektrapporter fungerar annorlunda än andra analystyper, eftersom rapporten kretsar kring en viss händelse som rör sig för första gången (anges i frågespelaren). Följande alternativ är tillgängliga:
 
-* **Interval**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
-* **Before and after period**: The amount of time to analyze before and after the date specified in the query rail. Available options depend on the [!UICONTROL Interval] selection. -->
+* **Intervall**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly]och [!UICONTROL Quarterly]. Om du ändrar intervallet påverkas alternativen för perioden Före och efter.
+* **Före och efter punkt**: Hur lång tid det tar att analysera före och efter den berörda händelsen som anges i frågerinjen. Vilka alternativ som är tillgängliga beror på [!UICONTROL Interval] markering.
