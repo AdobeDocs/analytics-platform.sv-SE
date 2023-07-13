@@ -4,9 +4,9 @@ description: Analysera och extrahera insikter från kundinteraktioner under hela
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 75f27ef2f5fcd0d2a2038dbe7bcf812e865a14fc
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 Flerkanalsanalys ger en samlad bild av kundernas beteende i olika kanaler genom att sammanföra data från olika webb-, mobil- och offlineegenskaper. Du kan till exempel använda den här konsoliderade vyn för att analysera kundinteraktioner på både dator och mobil för att förstå kundbeteendet och få insikter för att optimera digitala kundupplevelser. Ni kan också analysera kundinteraktioner över alla kanaler, inklusive digitala och offlinekanaler som supportinteraktioner och köp i butiken, för att bättre förstå och optimera kundresan.
 
-## Arbetsflöde
-
-![Flerkanalsarkitektur](../assets/cca-architecture.png)
-
 ## Implementeringssteg
+
+![Illustration av flödet av implementeringssteg enligt beskrivningen i [Implementeringssteg](#implementation-steps)](../assets/cca-architecture.png)
 
 1. [Skapa scheman](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) för data som ska importeras.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
