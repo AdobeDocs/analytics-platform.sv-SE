@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ I det här avsnittet av dokumentationen förklaras de grundläggande skillnadern
 
 Ett vanligt hinder för traditionella strategier för att analysera kundresor är att det inte är kundfokuserat. Varje team samlar in data i olika storlekar, analyserar och optimerar upplevelser baserat på de data de har tillgång till.
 
-![Vanligt BI-arbetsflöde](./assets/biworkflow.png)
+![Traditionellt BI-arbetsflöde enligt beskrivningen i det här avsnittet](./assets/biworkflow.png)
 
 Om du vill förstå hur en viss digital kampanj påverkar en offlineåtgärd som lagras i en annan datasilo skickar du en begäran till BI-teamets kö. BI-teamet skriver den fråga som krävs för att hämta och omvandla data. När rådata har hämtats skapar BI-teamet visualiseringen. Informationen delas med dig och du lägger tid på att kombinera insikter och extrahera data för aktivering i andra system.
 
@@ -34,7 +34,7 @@ Vart och ett av dessa steg kan ta timmar, dagar eller till och med veckor. Om de
 
 Customer Journey Analytics erbjuder en miljö där man kan koppla samman data över flera kanaler, både online och offline, på en övergripande kundnivå, enbart i syfte att förstå kundresan. Den första konfigurationen krävs för att [koppla](/help/connections/overview.md) och [definiera vyer](/help/data-views/data-views.md) till de uppgifter ni anser vara relevanta. När uppgifterna är ifyllda är de dock lätt tillgängliga för kontinuerlig analys och utforskning. Ni kan stegvis få insikter i och förstå kundresorna. Genom att demokratisera kombinerade online- och offlinedata kan ni besvara kundreserelaterade frågor på några sekunder.
 
-![Customer Journey Analytics arbetsflöde](./assets/cjaworkflow.png)
+![Customer Journey Analytics arbetsflöde enligt beskrivningen i detta avsnitt](./assets/cjaworkflow.png)
 
 Du kan använda Customer Journey Analytics för att ställa frågor i den visuella Analysis Workspace-miljön och få insikter nästan direkt. Flerkanalsdata och rapporter är omedelbart tillgängliga, utan någon SQL-kod. Ytterligare frågor och analyser kan göras med en enkel dra och släpp-funktion i användargränssnittet, med helt korrelerade data. Du kan fortsätta ställa frågor och stegvis utforska fler detaljer när du behöver dem. Sedan kan ni vidta omedelbara åtgärder för de insikter ni hittar, som att dela ut målgrupper för aktivering och samordning.
 

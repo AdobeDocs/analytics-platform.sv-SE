@@ -3,9 +3,9 @@ title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
    Konfigurera de här inställningarna innan du kan publicera målgruppen.
 
-   ![](assets/create-audience.png)
+   ![Skärmbild på hur man skapar en publik](assets/create-audience.png)
 
    | Inställning | Beskrivning |
    | --- | --- |
@@ -52,7 +52,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
    Publiken förhandsvisas i den högra listen. Här kan ni göra en sammanfattande analys av den målgrupp ni har skapat.
 
-   ![](assets/data-preview.png)
+   ![Skärmbild av förhandsgranskning av data](assets/data-preview.png)
 
    | Förhandsvisningsinställning | Beskrivning |
    | --- | --- |
@@ -85,7 +85,7 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 
 Vid flera tillfällen före, under och efter publikationen kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-![Svarstid från Adobe Experience Platform till Customer Journey Analytics](assets/latency-diagram.png)
+![Latenser i publikation enligt beskrivningen i [Svarstidsfrågor](#latency-considerations)](assets/latency-diagram.png)
 
 | # | Svarstid | Latenslängd |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). Customer Journey Analytics skickar målgruppen vidare till Experience Platform med den primära identiteten angiven enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
 
-RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan till exempel&quot;user@adobe.com&quot; användas på alla enheter och kanaler. Om ingen profil hittas skapas en ny.
+RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu, till exempel <user@adobe.com> kan riktas mot alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Du kan visa Customer Journey Analytics-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
