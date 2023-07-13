@@ -4,9 +4,9 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: c52dd6d8a22d2092f5f70aeb79d24ecf897e012e
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Allmän information om hur du kommer igång med Analysis Workspace finns i [Anal
 
 I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till de viktigaste byggstenarna för ett Analysis Workspace-projekt: paneler, visualiseringar och komponenter.
 
-## Skapa ett projekt från ett tomt projekt eller en mall
+## Börja skapa ett projekt
 
 1. I Adobe Analytics väljer du [!UICONTROL **Arbetsyta**].
 
