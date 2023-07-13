@@ -1,9 +1,9 @@
 ---
 title: Användningsexempel
 description: Branschexempel för guidad analys
-source-git-commit: 9311157c8aa8bab8627e3fdf3e989a0302d29f32
+source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,16 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 | Använd skiftläge | Exempel | Effekt | Analys |
 | --- | --- | --- | --- |
-| **Optimera mobilshoppingappen** | Många kunder laddade ned vår mobilapp men kom aldrig tillbaka. Vi fann att de använde det bara för det första erbjudandet och återtog de vilande kunderna. | **Öka tv-frekvensen för mobilanvändare.** Mät och öka appanvändningen för att utveckla en mer användarvänlig upplevelse. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Vyn Nettotillväxt](types/net-growth.md) |
+| **Optimera mobilshoppingappen** | Många kunder laddade ned vår mobilapp men kom aldrig tillbaka. Vi fann att de använde det bara för det första erbjudandet och återtog de vilande kunderna. | **Öka tv-frekvensen för mobilanvändare.** Mät och öka appanvändningen för att utveckla en mer användarupplevelse med en&quot;glad kundresa&quot;. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Vyn Nettotillväxt](types/net-growth.md) |
 | **Kvantifiera effekten av nya utcheckningsfunktioner** | Vi kan testa vår väg in i webbutik genom att snabbt mäta effekten av nya utcheckningsfunktioner som&quot;Har du glömt smör?&quot; produktrekommendationer eller nya metoder för utcheckning, till exempel Blockering. | **Öka konverteringsgraden.** Mät effekten av verksamheten i stället för att bara använda funktioner. | [Visa diseffekt](types/release.md) <p/><p/> [Vyn Första användningen](types/first-use.md) |
 | **Minska antalet medlemmar** | Vi upptäckte friktionspunkter i kundresorna som får kunderna att tappa sina kunder. Detta gav oss möjlighet att granska medlemsprogram och analysera beteenden och signaler från riskmedlemmar. | **Minska bortfallet.** Identifiera sätt att främja och vårda kundrelationer för att förhindra attribuering och minska bortfall. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Bildvy](types/friction.md) |
 | **Hitta ineffektiva säljresor** | Vi har upptäckt ineffektivitet i kundresan för våra säljare i butiken, där de har hämtats från kunderna. Vi justerade deras process, vilket gav kunderna en roligare shoppingupplevelse i butiken. | **Förbättra säljsvaren.** Förbättra de interna resorna för att minska ineffektiva processer, vilket ger positiva kundupplevelser. | [Bildvy](types/friction.md) |
 
 {style="table-layout:auto"}
+
+![Språkvy för butik](assets/retail-funnel-friction.png)
+
+![Användningsvy för återförsäljning](assets/retail-trends-usage.png)
 
 +++
 
@@ -36,6 +40,14 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 {style="table-layout:auto"}
 
+![Vyn Friktion för finansiella tjänster](assets/fsi-funnel-friction.png)
+
+![Användningsvy för finansiella tjänster](assets/fsi-trends-usage.png)
+
+![Aktiv vy för finansiella tjänster](assets/fsi-user-growth-active.png)
+
+![Alternativ aktiv vy för finansiella tjänster](assets/fsi-user-growth-active-2.png)
+
 +++
 
 +++**Resor och turism**
@@ -45,9 +57,13 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 | **Kvantifiera påverkan av nya bokningsflödesfunktioner** | Vi analyserade snabbt effekten av en ny bokningsstegsfunktion på konverteringsgraden och identifierade den del av upplevelsen som gav störst vinst. | **Öka bokningsfrekvensen.** Mät effekten av verksamheten i stället för att bara använda funktioner. | [Visa diseffekt](types/release.md) <p/><p/> [Bildvy](types/friction.md) |
 | **Optimera upplevelsen av mobilappar** | Vi kunde snabbt och enkelt förstå våra månatliga användare av aktiva appar (MAU:er) över tid och identifiera positiva effekter per version. | **Öka MAU:er.** Mät och öka appanvändningen, vilket står i relation till kundernas lycka. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Vyn Nettotillväxt](types/net-growth.md) |
 | **Hitta friktionen i incheckningsflödet för mobiler** | Genom att se var människor lyckas eller faller bort från den förväntade incheckningsprocessen för mobila enheter kan vi enkelt identifiera områden för upplevelseoptimering. | **Öka CSAT och minska antalet IROP.** Om du tar bort friktionen blir upplevelsen mer sömlös. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
-| **Defekt samtal till kundtjänst** | När jag såg min användarupplevelse i en trattvy visade jag var våra användare slog till friktionen, vilket ledde till kostsam telefonvolym. Vi visste var vi skulle fokusera härnäst. | **Minska användningen av callcenter.** Få mer användarvänliga upplevelser och minska antalet kostsamma samtal. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
+| **Defekt samtal till kundtjänst** | När jag såg min användarupplevelse i en trattvy visade jag var våra användare slog till friktionen, vilket ledde till kostsam telefonvolym. Vi visste var vi skulle fokusera härnäst. | **Minska användningen av callcenter.** Få mer användarupplevelser med en&quot;lycklig väg&quot; och minska antalet kostsamma samtal. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
+
+![Friktionsvy för resor och turism](assets/th-funnel-friction.png)
+
+![Användningsvy för resor och turism](assets/th-trends-usage.png)
 
 +++
 
@@ -62,6 +78,10 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 {style="table-layout:auto"}
 
+![Bildvisning för media och underhållning](assets/me-funnel-friction.png)
+
+![Aktiv vy för media och underhållning](assets/me-user-growth-active.png)
+
 +++
 
 +++**Sjukvård**
@@ -75,6 +95,8 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 {style="table-layout:auto"}
 
+![Friktionsvy för hälso- och sjukvård](assets/healthcare-funnel-friction.png)
+
 +++
 
 +++**Högteknologi och B2B**
@@ -87,5 +109,7 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 | **Lås upp självbetjäningsanalys** | Att försöka få tillgång till insikter är en utmaning och våra användare är inte utbildade för analys. De måste kunna få svar och utnyttja samma data som hela organisationen använder, vilket leder till starkare partnerskap och möjliggör sanna datadrivna beslut. | **Närmare samarbeten i hela organisationen.** Ge produktansvariga åtkomst till data som tidigare var isolerade. | [Guidad analys](overview.md) |
 
 {style="table-layout:auto"}
+
+![Användningsvy för B2B](assets/b2b-trends-usage.png)
 
 +++
