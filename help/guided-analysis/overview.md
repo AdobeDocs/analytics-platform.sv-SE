@@ -3,7 +3,7 @@ title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteamen snabbt kan få högkvalitativa insikter.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
+source-git-commit: 75f946e65bfc0ccee4f173b699b14caced21bbaf
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 0%
@@ -40,11 +40,11 @@ Om din organisation är etablerad för guidad analys kan du komma åt den från 
 
 1. Klicka **[!UICONTROL Guided analysis]** från hemsidan för att gå direkt till [Vyn Användningstrender](types/usage.md).
 
-   ![Skapa en ny modal](assets/create-new-modal.png)
+   ![Landing page tile](assets/landing-page-tile.png)
 
 1. Klicka **[!UICONTROL Create new]** om du vill se de olika visningsalternativen och välja en annan startpunkt för analysen.
 
-   ![Landing page tile](assets/landing-page-tile.png)
+   ![Skapa en ny modal](assets/create-new-modal.png)
 
 ## Gränssnitt
 
