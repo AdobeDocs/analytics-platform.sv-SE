@@ -3,9 +3,9 @@ title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteamen snabbt kan få högkvalitativa insikter.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
+source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -24,23 +24,27 @@ Med guidad analys kategoriseras vytyperna i **Analystyper**. Följande analys- o
 
 | Analystyp | Vytyp | Beskrivning |
 | --- | --- | --- |
-| Effekt | [Frigör](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
-| Effekt | [Första användningen](types/first-use.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
-| Tratt | [Funktion](types/friction.md) | Jämför konverteringsgrader mellan steg. |
-| Tratt | [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
-| Användartillväxt | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
-| Användartillväxt | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
-| Trender | [Användning](types/usage.md) | Mät användarengagemanget över tid. |
+| [!UICONTROL Impact] | [Frigör](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
+| [!UICONTROL Impact] | [Första användningen](types/first-use.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
+| [!UICONTROL Funnel] | [Funktion](types/friction.md) | Jämför konverteringsgrader mellan steg. |
+| [!UICONTROL Funnel] | [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
+| [!UICONTROL User growth] | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
+| [!UICONTROL Net growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
+| [!UICONTROL Trends] | [Användning](types/usage.md) | Mät användarengagemanget över tid. |
 
 {style="table-layout:auto"}
 
 ## Åtkomst
 
-Om din organisation har etablerats för guidad analys kan du komma åt den från Customer Journey Analytics hemsida.
+Om din organisation är etablerad för guidad analys kan du komma åt den från Customer Journey Analytics hemsida.
 
-Klicka **Guidad analys** från hemsidan för att gå direkt till [Vyn Användningstrender](types/usage.md).
+1. Klicka **[!UICONTROL Guided analysis]** från hemsidan för att gå direkt till [Vyn Användningstrender](types/usage.md).
 
-Klicka **Skapa nytt** om du vill se de olika visningsalternativen och välja en annan startpunkt för analysen.
+   ![Skapa en ny modal](assets/create-new-modal.png)
+
+1. Klicka **[!UICONTROL Create new]** om du vill se de olika visningsalternativen och välja en annan startpunkt för analysen.
+
+   ![Landing page tile](assets/landing-page-tile.png)
 
 ## Gränssnitt
 
