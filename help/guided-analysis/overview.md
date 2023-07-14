@@ -3,9 +3,9 @@ title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteamen snabbt kan få högkvalitativa insikter.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 41fbbf588c74d653b48f5b0c58ea99f1e8a7e6a9
+source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,14 @@ Med guidad analys kategoriseras vytyperna i **Analystyper**. Följande analys- o
 | Trender | [Användning](types/usage.md) | Mät användarengagemanget över tid. |
 
 {style="table-layout:auto"}
+
+## Åtkomst
+
+Om din organisation har etablerats för guidad analys kan du komma åt den från Customer Journey Analytics hemsida.
+
+Klicka **Guidad analys** från hemsidan för att gå direkt till [Vyn Användningstrender](types/usage.md).
+
+Klicka **Skapa nytt** om du vill se de olika visningsalternativen och välja en annan startpunkt för analysen.
 
 ## Gränssnitt
 
