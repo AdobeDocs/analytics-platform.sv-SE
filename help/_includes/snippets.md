@@ -1,7 +1,7 @@
 ---
-source-git-commit: 89665490fb3b03a9d9578d22e0e9ed62415c66be
+source-git-commit: 497334bdd0324e5b3955be79029079af88ca56e2
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,13 @@ ht-degree: 1%
 >[!AVAILABILITY]
 >
 >Funktionerna som beskrivs i det här avsnittet är i den begränsade testfasen av releasen och är kanske inte tillgängliga än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
+
+## Välj paket {#select-package}
+
+>[!NOTE]
+>
+>Du måste ha **Välj** för att använda de funktioner som beskrivs i den här artikeln. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
+
 
 ## Filtervillkor för dataordlista {#dd-filter-criteria}
 
