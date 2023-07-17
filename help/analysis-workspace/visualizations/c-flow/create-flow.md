@@ -4,59 +4,75 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 4e5a186aa39ae7c56ff29e1523a4092546092789
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1371'
 ht-degree: 1%
 
 ---
 
 # Konfigurera en flödesvisualisering
 
-Flödesvisualiseringar gör att du kan förstå den resa som härrör från eller leder fram till en specifik konverteringshändelse på din webbplats eller i din app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden. Med Flow kan du konfigurera början eller slutet av sökvägen som du är intresserad av, eller analysera alla sökvägar som flödar genom en dimension eller dimensionspost.
+Flödesvisualiseringar hjälper er att förstå den resa som härrör från eller leder fram till en specifik konverteringshändelse på er webbplats eller i er app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden.
+
+Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökväg du är intresserad av, eller analysera alla banor som flödar genom en dimension eller dimensionspost.
 
 ![nytt flödesgränssnitt](assets/new-flow.png)
 
-## Konfigurationssteg {#configure}
+## Skapa en flödesvisualisering {#configure}
 
-1. Om du vill börja skapa ett flödesdiagram lägger du till en tom panel i projektet och klickar på ikonen för visualiseringar i den vänstra listen. Dra sedan Flödesvisualiseringen till panelen. Eller dra [!UICONTROL Flow] visualisering i ett befintligt projekt.
+1. Lägg till en tom panel i projektet och klicka på visualiseringsikonen i den vänstra listen.
 
-1. Förankra Flödesvisualiseringen med ett av tre alternativ:
+1. Dra [!UICONTROL **Flöde**] visualisering i panelen.
 
-   * [!UICONTROL Starts with] (mått, dimensioner eller objekt), eller
-   * [!UICONTROL Contains] (mått, eller objekt), eller
-   * [!UICONTROL Ends with] (mått, dimensioner eller objekt)
+   eller
+
+   Dra [!UICONTROL **Flöde**] visualisering i ett befintligt projekt.
+
+1. Förankra Flödesvisualiseringen med något av följande alternativ:
+
+   * [!UICONTROL **Börjar med**] (mått, dimensioner eller objekt), eller
+   * [!UICONTROL **Innehåller**] (mått, eller objekt), eller
+   * [!UICONTROL **Slutar med**] (mått, dimensioner eller objekt)
 
    Var och en av dessa kategorier visas på skärmen som en&quot;släppzon&quot;. Du kan fylla i släppzonen på tre sätt:
 
    * Använd listrutan för att välja mått eller mått.
-   * Dra objekt från måttlistan eller mätningslistan.
-   * Använd sökfunktionen för att hitta de mätvärden eller dimensioner du letar efter.
-
-   Låt oss anta att du vill spåra allt som leder till en utcheckningshändelse. Du drar en utcheckningsrelaterad dimension eller mätvärden (som [!UICONTROL Order exists]) till **[!UICONTROL Ends with]** släppzon.
-
-1. Om du väljer ett mätvärde måste du även ange [!UICONTROL Pathing Dimension], som visas här, som du använder för att skapa sökvägen. Standardvärdet är [!UICONTROL Page].
-
-   ![målningsdimension](assets/pathing-dim.png)
+   * Dra mått eller mätvärden från den vänstra listen.
+   * Börja skriva namnet på en dimension eller ett mått och markera det sedan när det visas i listrutan.
 
    >[!IMPORTANT]
    >
-   >Beräknade mått kan inte tas med i  **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** släppzoner.
+   >Beräknade mått kan inte användas i  **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** fält.
 
-1. (Valfritt) Klicka på **[!UICONTROL Show Advanced Settings]** för att konfigurera avancerade inställningar:
+1. Om du väljer ett mätvärde måste du även ange [!UICONTROL Pathing Dimension] som du kan använda som bana som leder till eller går från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
+
+   ![målningsdimension](assets/pathing-dim.png)
+
+1. (Valfritt) Välj **[!UICONTROL Show advanced settings]** om du vill konfigurera något av följande alternativ:
 
    ![avancerade inställningar](assets/adv-settings.png)
 
    | Inställning | Beskrivning |
    | --- | --- |
    | **[!UICONTROL Wrap labels]** | Etiketterna på Flow-elementen trunkeras normalt för att spara skärmutrymme, men du kan göra hela etiketten synlig genom att markera den här rutan.  Standard = avmarkerat. |
-   | **[!UICONTROL Include repeat instances]** | Flödesvisualiseringar baseras på instanser av en dimension. Den här inställningen ger dig möjlighet att inkludera eller exkludera upprepade instanser, t.ex. sidomladdning. Det går dock inte att ta bort upprepningar från Flow-visualiseringar som innehåller flervärdesdimensioner, som listVars, listProps, s.product, merchandising eVars osv. Standard = avmarkerat. |
-   | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till dem som börjar/slutar med den första/sista förekomsten av en dimension/artikel/mått. En mer detaljerad förklaring finns i avsnittet&quot;Exempelscenario för &#39;begränsning till första/sista förekomsten&#39;&quot; nedan. |
-   | **[!UICONTROL Number of Columns]** | Anger hur många kolumner du vill ha i flödesdiagrammet. |
-   | **[!UICONTROL Items expanded per Column]** | Hur många objekt du vill ha i varje kolumn. |
-   | **[!UICONTROL Flow Container]** | <ul><li>Gå in på</li><li>Besökare</li></ul> Gör att du kan växla mellan Besök och Besök för att analysera personsökningar. Dessa inställningar hjälper er att förstå personernas engagemang på personnivå (olika besök) eller begränsa analysen till ett enda besök. |
+   | **[!UICONTROL Include repeat instances]** | Flödesvisualiseringar baseras på instanser av en dimension. Den här inställningen ger dig möjlighet att inkludera eller exkludera upprepade instanser, t.ex. sidomladdning. Det går dock inte att ta bort upprepningar från Flow-visualiseringar som innehåller flervärdesdimensioner, som listVars, listProps, s.product, merchandising eVars osv. <p>Det här alternativet är inaktiverat som standard.</p> |
+   | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till dem som börjar/slutar med den första/sista förekomsten av en dimension/artikel/mått. Se avsnittet nedan [Exempelscenario för &#39;begränsa till första/sista förekomsten&#39;](#example-scenario-for-limit-to-firstlast-occurrence), för en mer detaljerad förklaring. |
+   | **[!UICONTROL Number of columns]** | Antalet kolumner som du vill ha i flödesdiagrammet. |
+   | **[!UICONTROL Items expanded per column]** | Antalet objekt som du vill ha i varje kolumn. |
+   | **[!UICONTROL Flow container]** | <ul><li>Gå in på</li><li>Besökare</li></ul> Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
 
-1. Klicka på **[!UICONTROL Build]**.
+1. Välj **[!UICONTROL Build]**.
+
+>[!INFO]
+>
+>**Exempel:** Anta att du vill spåra sökvägen som användare tog både till och från de mest populära sidorna på din webbplats.
+>
+>För att göra detta skulle du
+>1. Börja skapa en flödesvisualisering enligt beskrivningen ovan.
+>1. Dra [!UICONTROL **Sida**] dimensionen i **[!UICONTROL Contains]** fält och sedan markera [!UICONTROL **Bygge**].
+>1. Flödesvisualiseringen byggs med den mest visade sidan synlig i fokusnoden mitt i visualiseringen. Du kan även se de översta sidorna som leder till den sidan (till vänster om fokusnoden) samt de översta sidorna som leder ut från fokussidan (till höger om fokusnoden).
+>1. Analysera data i flödet enligt beskrivningen i [Visa och ändra flödesutdata](#view-and-change-the-flow-output).
 
 ## Visa och ändra flödesutdata {#output}
 
@@ -70,7 +86,7 @@ Om du vill gå längre ned i informationen har du flera alternativ:
 
 * När du klickar på en nod i diagrammet visas information om den noden. Klicka på noden igen för att komprimera den.
 
-   ![nodinformation](assets/node-details.png)
+  ![nodinformation](assets/node-details.png)
 
 * Du kan filtrera en kolumn så att endast vissa resultat visas, t.ex. inkludera och exkludera, ange villkor osv.
 
@@ -97,13 +113,17 @@ Ovanför varje kolumn visas ett filter när du håller pekaren över den. Genom 
 | Alternativ | Beskrivning |
 |--- |--- |
 | [!UICONTROL Focus on this node] | Ändra fokus till den valda noden. Flödesdiagrammets fokusnod visas i mitten. |
-| [!UICONTROL Start Over] | Returnerar dig till Frihand-diagramverktyget, där du kan skapa ett nytt flödesdiagram. |
-| [!UICONTROL Create Filter from this point in flow] | Skapa ett filter. Det här tar dig in i Filter Builder, där du kan konfigurera det nya filtret. |
+| [!UICONTROL Start over] | Returnerar dig till Frihand-diagramverktyget, där du kan skapa ett nytt flödesdiagram. |
+| [!UICONTROL Create filter for this path] | Skapa ett filter. Detta tar dig in i Filter Builder där du kan konfigurera det nya filtret. |
 | [!UICONTROL Breakdown] | Dela upp noden efter tillgängliga Dimensioner, mått eller tid. |
+| [!UICONTROL Filter column] | Samma filteralternativ visas som de är tillgängliga i frihandstabellen. Mer information om de tillgängliga alternativen finns i avsnittet Använda ett enkelt eller avancerat filter i en tabell i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| [!UICONTROL Exclude item]/[!UICONTROL Restore excluded items] | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet högerklickar du igen och väljer **[!UICONTROL Restore Excluded Item]**. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 | [!UICONTROL Trend] | Skapa ett trenddiagram för noden. |
+| Visa nästa kolumn/Visa föregående kolumn | Visar nästa (höger) eller föregående (vänster) kolumn i visualiseringen. |
+| Dölj kolumn | Döljer den markerade kolumnen från visualiseringen. |
 | [!UICONTROL Expand entire column] | Expandera en kolumn om du vill visa alla noder. Som standard visas bara de fem översta noderna. |
+| Skapa målgrupp från urval | Skapar en målgrupp baserat på den markerade kolumnen. |
 | [!UICONTROL Collapse entire column] | Dölj alla noder i en kolumn. |
-| [!UICONTROL Exclude Item]/[!UICONTROL Restore Excluded Items] | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet högerklickar du igen och väljer **[!UICONTROL Restore Excluded Item]**. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 
 ## Exempelscenario för &#39;begränsa till första/sista förekomsten&#39;
 
