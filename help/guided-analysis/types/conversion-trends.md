@@ -2,7 +2,7 @@
 title: Vyn Konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # Vyn Konverteringstrender
-
-{{release-limited-testing}}
 
 The **Konverteringstrender** en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 

@@ -2,7 +2,7 @@
 title: Versionsvy
 description: Jämför prestanda i lika stora perioder före och efter lanseringen.
 feature: Guided Analysis
-source-git-commit: a635c43c129ea45b270e304f4310b95124709b2a
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # Versionsvy
-
-{{release-limited-testing}}
 
 The **Frigör** visar en jämförelse av hur nyckelindikatorer utfördes före och efter ett visst datum. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck mitt i diagrammet representerar det datum som du vill jämföra före och efter. Detta datum är vanligtvis en betydande ändring av den produkt som du vill mäta mot, till exempel en uppdatering av produkten eller en kampanjstart.
 
