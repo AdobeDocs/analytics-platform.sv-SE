@@ -1,9 +1,9 @@
 ---
 title: Användningsexempel
 description: Branschexempel för guidad analys
-source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -46,8 +46,6 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 ![Aktiv vy för finansiella tjänster](assets/fsi-user-growth-active.png)
 
-![Alternativ aktiv vy för finansiella tjänster](assets/fsi-user-growth-active-2.png)
-
 +++
 
 +++**Resor och turism**
@@ -65,7 +63,7 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 ![Användningsvy för resor och turism](assets/th-trends-usage.png)
 
-![Konverteringstrender för resor och turism](assets/th-funnel-conversio-trends.png)
+![Konverteringstrender för resor och turism](assets/th-funnel-conversion-trends.png)
 
 +++
 

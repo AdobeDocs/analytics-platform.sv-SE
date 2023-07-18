@@ -2,18 +2,22 @@
 title: Vyn Första användningen
 description: Mät effekten av förstagångsanvändning på nyckelindikatorer.
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
-# Vyn Första användningen
+# [!UICONTROL First use] visa
 
-The **Första användningen** visar en jämförelse av hur nyckelindikatorer har utförts före och efter det att en användare använder en produktfunktion för första gången. Den vågräta axeln i den här rapporten är ett relativt tidsintervall före och efter händelsen, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck i mitten av diagrammet representerar dag 0 när en funktion först används av en viss användare. Eftersom användare inte alltid använder funktioner på samma dag och dina rollouter kan inträffa under flera dagar, innebär dag 0 något som skiljer sig åt för varje enskild användare.
+The **[!UICONTROL First use]** visar en jämförelse av hur nyckelindikatorer har utförts före och efter det att en användare använder en produktfunktion för första gången. Den vågräta axeln i den här rapporten är ett relativt tidsintervall före och efter händelsen, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck i mitten av diagrammet representerar dag 0 när en funktion först används av en viss användare. Eftersom användare inte alltid använder funktioner på samma dag och dina rollouter kan inträffa under flera dagar, innebär dag 0 något som skiljer sig åt för varje enskild användare.
 
 ![Frigör](../assets/first-use.png)
+
+## Se en demo
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
 ## Användningsexempel
 
@@ -29,22 +33,22 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **Viktiga indikatorer**: De händelser som du vill mäta per användare. Varje markerad tangentindikator representeras som en färgad linje. En rad som representerar händelsen läggs till i tabellen. Du kan inkludera upp till tre händelser.
-* **Faktorer**: Det finns två faktorer för den här vyn:
-   * **Datum**: Hur långt tillbaka du vill börja leta efter den första användningshändelsen som har inträffat.
-   * **Händelse**: Den händelse som du vill leta efter för första användning av, för att centrera analysen på.
-* **Folk**: Det segment som du vill mäta. Det valda segmentet filtrerar data så att de bara fokuserar på de personer som matchar dina segmentkriterier.
+* **[!UICONTROL Key indicators]**: De händelser som du vill mäta per användare. Varje markerad tangentindikator representeras som en färgad linje. En rad som representerar händelsen läggs till i tabellen. Du kan inkludera upp till tre händelser.
+* **[!UICONTROL Factors]**: Det finns två faktorer för den här vyn:
+   * **[!UICONTROL Date]**: Hur långt tillbaka du vill börja leta efter den första användningshändelsen som har inträffat.
+   * **[!UICONTROL Event]**: Den händelse som du vill leta efter för första användning av, för att centrera analysen på.
+* **[!UICONTROL People]**: Det segment som du vill mäta. Det valda segmentet filtrerar data så att de bara fokuserar på de personer som matchar dina segmentkriterier.
 
 ## Diagraminställningar
 
 I vyn Första användning finns följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
-* **Mått**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Events per user], [!UICONTROL Events], [!UICONTROL Sessions]och [!UICONTROL Users].
-* **Diagramtyp**: Den typ av visualisering som du vill använda. Alternativen är Line.
+* **[!UICONTROL Metric]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Events per user], [!UICONTROL Events], [!UICONTROL Sessions]och [!UICONTROL Users].
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Line.
 
 ## Datumintervall
 
 Datumval i effektanalys fungerar annorlunda än andra analystyper, eftersom analysen kretsar kring det datum som anges i frågespelaren. Följande alternativ är tillgängliga:
 
-* **Intervall**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly]och [!UICONTROL Quarterly]. Om du ändrar intervallet påverkas alternativen för perioden Före och efter.
-* **Före och efter punkt**: Den tid som ska analyseras före och efter den första use-händelsen som anges i frågerinjen. Vilka alternativ som är tillgängliga beror på [!UICONTROL Interval] markering.
+* **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly]och [!UICONTROL Quarterly]. Om du ändrar intervallet påverkas alternativen för perioden Före och efter.
+* **[!UICONTROL Before and after period]**: Den tid som ska analyseras före och efter den första use-händelsen som anges i frågerinjen. Vilka alternativ som är tillgängliga beror på [!UICONTROL Interval] markering.

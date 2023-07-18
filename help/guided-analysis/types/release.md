@@ -2,18 +2,22 @@
 title: Versionsvy
 description: Jämför prestanda i lika stora perioder före och efter lanseringen.
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# Versionsvy
+# [!UICONTROL Release] visa
 
-The **Frigör** visar en jämförelse av hur nyckelindikatorer utfördes före och efter ett visst datum. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck mitt i diagrammet representerar det datum som du vill jämföra före och efter. Detta datum är vanligtvis en betydande ändring av den produkt som du vill mäta mot, till exempel en uppdatering av produkten eller en kampanjstart.
+The **[!UICONTROL Release]** visar en jämförelse av hur nyckelindikatorer utfördes före och efter ett visst datum. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck mitt i diagrammet representerar det datum som du vill jämföra före och efter. Detta datum är vanligtvis en betydande ändring av den produkt som du vill mäta mot, till exempel en uppdatering av produkten eller en kampanjstart.
 
 ![Frigör](../assets/release.png)
+
+## Se hur versionsvyn fungerar i praktiken
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 
 ## Användningsexempel
 
@@ -28,20 +32,20 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **Viktiga indikatorer**: De händelser som du vill mäta per användare. Varje markerad tangentindikator representeras som en färgad linje. En rad som representerar händelsen läggs till i tabellen. Du kan inkludera upp till tre händelser.
-* **Faktorer**: Det datum som du vill jämföra före och efter.
-* **Folk**: Det segment som du vill mäta. Det valda segmentet filtrerar data så att de bara fokuserar på de personer som matchar dina segmentkriterier.
+* **[!UICONTROL Key indicators]**: De händelser som du vill mäta per användare. Varje markerad tangentindikator representeras som en färgad linje. En rad som representerar händelsen läggs till i tabellen. Du kan inkludera upp till tre händelser.
+* **[!UICONTROL Factors]**: Det datum som du vill jämföra före och efter.
+* **[!UICONTROL People]**: Det segment som du vill mäta. Det valda segmentet filtrerar data så att de bara fokuserar på de personer som matchar dina segmentkriterier.
 
 ## Diagraminställningar
 
 I vyn Releaser finns följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
-* **Mått**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions]och [!UICONTROL Users].
-* **Diagramtyp**: Den typ av visualisering som du vill använda. Alternativen är Line.
+* **[!UICONTROL Metric]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions]och [!UICONTROL Users].
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Line.
 
 ## Datumintervall
 
 Datumvalet i effektanalysen fungerar annorlunda än andra analystyper, eftersom rapporten kretsar kring det datum som anges i frågerefältet. Följande alternativ är tillgängliga:
 
-* **Intervall**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly]och [!UICONTROL Quarterly]. Om du ändrar intervallet påverkas alternativen för perioden Före och efter.
-* **Före och efter punkt**: Den tid som ska analyseras före och efter det datum som anges i frågerefältet. Vilka alternativ som är tillgängliga beror på [!UICONTROL Interval] markering.
+* **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly]och [!UICONTROL Quarterly]. Om du ändrar intervallet påverkas alternativen för perioden Före och efter.
+* **[!UICONTROL Before and after period]**: Den tid som ska analyseras före och efter det datum som anges i frågerefältet. Vilka alternativ som är tillgängliga beror på [!UICONTROL Interval] markering.

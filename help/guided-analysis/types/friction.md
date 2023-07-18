@@ -3,9 +3,9 @@ title: Bildvy
 description: Jämför konverteringsgrader mellan steg.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 The **Funktion** ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje steg som en användare måste gå igenom. Den lodräta axeln representerar procentandelen användare eller sessioner i varje steg. Alla steg måste utföras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret.
 
 ![Funktion](../assets/friction.png)
+
+## Se hur vyn Funktionsmakron fungerar
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
 ## Användningsexempel
 
@@ -29,16 +33,16 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **Steg**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-* **Folk**: De segment som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
+* **[!UICONTROL Steps]**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
+* **[!UICONTROL People]**: De segment som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
 
 I vyn Friktion finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
 
-* **Mått**: Omfånget som du vill ska tillämpas på tratten. Du kan välja sessioner och användare. Om du väljer sessioner måste alla steg inträffa inom samma session för att räknas. Om du väljer användare måste alla steg inträffa i det rapportfönster som valts för att räknas.
-* **Diagramtyp**: Den typ av visualisering som du vill använda. Alternativen är Steg.
-* **Konvertering från**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från det första steget eller föregående steg.
+* **[!UICONTROL Metric]**: Omfånget som du vill ska tillämpas på tratten. Du kan välja sessioner och användare. Om du väljer sessioner måste alla steg inträffa inom samma session för att räknas. Om du väljer användare måste alla steg inträffa i det rapportfönster som valts för att räknas.
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Steg.
+* **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från det första steget eller föregående steg.
 
 ## Använd tidsjämförelse
 
@@ -50,5 +54,5 @@ I vyn Friktion finns följande diagraminställningar som du kan justera på meny
 
 Det önskade datumintervallet för analysen. Den här inställningen har två komponenter:
 
-* **Intervall**: Datumgranulariteten som du vill visa data efter. Den här inställningen påverkar inte vyer som inte är trendade, till exempel Bild.
-* **Datum**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
+* **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Den här inställningen påverkar inte vyer som inte är trendade, till exempel Bild.
+* **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
