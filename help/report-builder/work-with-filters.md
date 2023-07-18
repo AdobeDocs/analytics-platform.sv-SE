@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
@@ -90,3 +90,47 @@ Du kan ersätta ett befintligt filter med ett annat om du vill ändra hur data f
 1. Klicka **Använd**.
 
    Report Builder uppdaterar filterlistan så att den återspeglar ersättningen.
+
+### Definiera datablocksfilter från cell
+
+Datablocken kan referera till filter från en cell. Flera datablock kan referera till samma cell för filter, vilket gör att du enkelt kan växla filter för flera datablock samtidigt.
+
+Använda filter från en cell
+
+1. Navigera till Steg 2 när du skapar eller redigerar datablock. Se [Skapa ett datablock](./create-a-data-block.md).
+1. Klicka på **Filter** för att definiera filter.
+1. Klicka **Skapa filter från cell**.
+
+   ![](./assets/create-filter-from-cell.png)
+
+1. Markera cellen som du vill att datablocken ska referera till ett filter från.
+
+1. Lägg till det filteralternativ som du vill lägga till i cellen genom att antingen dubbelklicka på filtret eller genom att dra och släppa det i avsnittet Filter som ingår.
+
+   Obs! Du kan bara välja ett alternativ åt gången för den aktuella cellen.
+
+   ![](./assets/select-filters.png)
+
+1. Klicka **Använd** för att skapa referenscellen.
+
+1. Från **Filter** lägger du till det nyligen skapade referenscellsfiltret i ditt datablock.
+
+   ![](./assets/reference-cell-filter.png)
+
+1. Klicka **Slutför**.
+
+   Nu kan andra datablock referera till den här cellen i sina filter. Om du vill använda referenscellen som ett filter för andra datablock lägger du bara till cellreferensen i filtren på fliken Filter.
+
+#### Använd referenscellen för att ändra filter för datablock
+
+1. Markera referenscellen i kalkylbladet.
+
+1. Klicka på länken under **Filter från cell** på menyn Snabbredigering.
+
+   ![](./assets/filters-from-cell-link.png)
+
+1. Välj filtret i listrutan.
+
+   ![](./assets/filter-drop-down.png)
+
+1. Klicka **Använd**.

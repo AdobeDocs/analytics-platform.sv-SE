@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -70,6 +70,24 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
    När du lägger till komponenter i tabellen visas en förhandsvisning av datablocket på datablockets plats i kalkylbladet. Layouten för förhandsgranskningen av datablocket uppdateras automatiskt när du lägger till, flyttar eller tar bort objekt i tabellen.
 
    ![](./assets/image10.png)
+
+   **Visa eller dölj rad- och kolumnrubriker**
+
+1. Klicka på kommandot Redigera datablock i navet Report Builder.
+
+1. Klicka på **Tabell** inställningsikon.
+
+   ![platshållarbild](./assets/table-settings.png){width="35%"}
+
+1. Markera eller avmarkera alternativet Visa rad- och kolumnrubriker. Rubrikerna visas som standard.
+
+   **Dölja eller visa dimensionsetiketter och måttrubriker**
+
+1. Klicka på ellipsikonen på dimensionerna eller kolumnrubrikerna för att visa inställningarna.
+
+   ![platshållarbild](./assets/row-heading.png){width="35%"}
+
+1. Klicka på Dölj eller Visa för att växla dimensionsetiketter eller kolumnrubriker. Alla etiketter visas som standard.
 
 1. Klicka **Slutför**.
 
