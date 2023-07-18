@@ -2,9 +2,9 @@
 title: Vyn Nettotillväxt
 description: Kommer du att få eller förlora användare?
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ Liknar [Aktiv](active.md) -vy definieras användare som följande:
 >[!NOTE]
 >
 >Upprepade användare tas inte med i beräkningen eftersom de inte representerar någon ökning eller förlust av användare.
-
-Se [!UICONTROL Net growth] vy in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
