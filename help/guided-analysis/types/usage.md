@@ -3,7 +3,7 @@ title: Användningsvy
 description: Mät användarengagemanget över tid.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -14,9 +14,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Usage]** ger värdefull information om hur produkten eller användarens beteende fungerar över tid. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter dina önskade händelser.
 
-![Användning](../assets/usage.png)
-
-## Se [!UICONTROL Usage] visa i praktiken
+Se [!UICONTROL Usage] vy in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 

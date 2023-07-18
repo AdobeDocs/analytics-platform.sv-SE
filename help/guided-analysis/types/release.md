@@ -2,9 +2,9 @@
 title: Versionsvy
 description: Jämför prestanda i lika stora perioder före och efter lanseringen.
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Release]** visar en jämförelse av hur nyckelindikatorer utfördes före och efter ett visst datum. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck mitt i diagrammet representerar det datum som du vill jämföra före och efter. Detta datum är vanligtvis en betydande ändring av den produkt som du vill mäta mot, till exempel en uppdatering av produkten eller en kampanjstart.
 
-![Frigör](../assets/release.png)
-
-## Se hur versionsvyn fungerar i praktiken
+Se [!UICONTROL Release] vy in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 

@@ -2,16 +2,16 @@
 title: Vyn Nettotillväxt
 description: Kommer du att få eller förlora användare?
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
-# Vyn Nettotillväxt
+# [!UICONTROL Net growth] visa
 
-The **Nettotillväxt** vytypen ger insikter om i vilken takt du vinner eller förlorar användare under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är tillväxtmåttet.
+The **[!UICONTROL Net growth]** vytypen ger insikter om i vilken takt du vinner eller förlorar användare under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är tillväxtmåttet.
 
 Varje datapunkt representerar nettotillväxt, som beräknas med följande formel:
 
@@ -29,9 +29,7 @@ Liknar [Aktiv](active.md) -vy definieras användare som följande:
 >
 >Upprepade användare tas inte med i beräkningen eftersom de inte representerar någon ökning eller förlust av användare.
 
-![Nettotillväxt](../assets/net-growth.png)
-
-## Se hur vyn för nettotillväxt fungerar i praktiken
+Se [!UICONTROL Net growth] vy in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 

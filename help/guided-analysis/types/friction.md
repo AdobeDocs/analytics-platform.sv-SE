@@ -3,20 +3,18 @@ title: Bildvy
 description: Jämför konverteringsgrader mellan steg.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
 
-# Bildvy
+# [!UICONTROL Friction] visa
 
-The **Funktion** ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje steg som en användare måste gå igenom. Den lodräta axeln representerar procentandelen användare eller sessioner i varje steg. Alla steg måste utföras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret.
+The **[!UICONTROL Friction]** ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje steg som en användare måste gå igenom. Den lodräta axeln representerar procentandelen användare eller sessioner i varje steg. Alla steg måste utföras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret.
 
-![Funktion](../assets/friction.png)
-
-## Se hur vyn Funktionsmakron fungerar
+Se [!UICONTROL Friction] vy in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 

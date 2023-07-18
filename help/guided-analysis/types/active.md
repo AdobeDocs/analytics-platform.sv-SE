@@ -3,9 +3,9 @@ title: Aktiv vy
 description: Identifiera vem som är ny, bevarad, återvändande eller vilande.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,7 @@ The **Aktiv** ger insikter om användarnas tillväxt och förvärv under en viss
 
 Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför den vågräta axeln, medan alla vilande användare visas orangefärgade under den vågräta axeln.
 
-![Aktiv](../assets/active.png)
-
-## Se hur aktiv vy fungerar i praktiken
+Se [!UICONTROL Active] vy in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 
