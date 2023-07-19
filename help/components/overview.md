@@ -4,10 +4,10 @@ description: Lär dig vilka komponenter Customer Journey Analytics erbjuder och 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 6%
+source-wordcount: '1105'
+ht-degree: 5%
 
 ---
 
@@ -21,10 +21,14 @@ Komponenter är funktioner i Customer Journey Analytics som kan användas i rapp
 Du kan hantera följande komponenter:
 
 * [**Anteckningar**](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till organisationen.
-* [**Filter**](filters/filters-overview.md): Uteslut delar av dina data för att fokusera på gemensamma dimensionsobjekt
+* [**Målgrupper**](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper som upptäcks i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP) i Adobe Experience Platform för kundanpassning och personalisering.
+* [**Filter**](filters/filters-overview.md): Skapa, hantera, dela och lägg på kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
 * [**Beräknade mått**](calc-metrics/calc-metr-overview.md): Använd mätvärden och formler som nya komponenter för rapportering
-* [**Datumintervall**](date-ranges/create.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder
-* [**Projekt**](/help/analysis-workspace/home.md): Ordna och underhålla projekt i Analysis Workspace
+* [**Dataordlista**](/help/components/data-dictionary/data-dictionary-overview.md): Hjälper både användare och administratörer att hålla reda på och förstå komponenterna i sin Analytics-miljö bättre.
+* [**Datumintervall**](date-ranges/create.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder.
+* [**Dimensioner**](/help/components/dimensions/view-dimensions.md): Dimensioner är variabler som vanligtvis innehåller strängvärden. Vanliga dimensioner är Page och Reference domain.
+* [**Mått**](/help/components/apply-create-metrics.md): Gör att du kan kvantifiera datapunkter i Analysis Workspace.
+* [**Projekt**](/help/analysis-workspace/home.md): Ordna och underhåll dina projekt i Analysis Workspace.
 
 ## Analysis Workspace-komponenter
 

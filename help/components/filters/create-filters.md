@@ -3,9 +3,9 @@ title: Skapa filter
 description: Förstå användargränssnittet för att skapa filter.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---

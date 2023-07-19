@@ -4,16 +4,16 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
 # Skapa en anslutning
 
-Ett nytt anslutningsarbetsflöde startades nyligen i Customer Journey Analytics. Det nya arbetsflödet för att skapa och redigera anslutningar gör att alla konfigurationsinställningar för datauppsättningar och anslutningar hamnar mitt på skärmen med hjälp av arbetsflöden. Du tillhandahöll detaljerad information om val, konfiguration och granskning av datauppsättningar med viktig information som datamängdtyp, storlek, schema, dataset-ID, batchstatus, bakåtfyllnadsstatus, person-ID och mycket annat för att minska risken för fel anslutningskonfiguration. Här är en översikt över de nya funktionerna:
+Arbetsflödet för att skapa och redigera anslutningar gör att alla konfigurationsinställningar för datauppsättningar och anslutningar hamnar mitt på skärmen med hjälp av arbetsflöden. Den ger detaljerad information om val, konfiguration och granskning av datauppsättningar med viktig information som datamängdtyp, storlek, schema, dataset-ID, batchstatus, bakåtfyllnadsstatus, person-ID och mycket annat för att minska risken för fel anslutningskonfiguration. Här är en översikt över funktionerna:
 
 * Du kan aktivera ett rullande datalagringsfönster när du skapar anslutningen.
 * Du kan lägga till och ta bort datauppsättningar från en anslutning. (Om du tar bort en datauppsättning tas den bort från anslutningen och påverkar associerade datavyer och underliggande Analysis Workspace-projekt.)
@@ -22,6 +22,10 @@ Ett nytt anslutningsarbetsflöde startades nyligen i Customer Journey Analytics.
 * Du kan importera befintliga data per datauppsättning.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
+>[!IMPORTANT]
+>
+>Du måste ha **Välj** för att lägga till ett obegränsat antal datauppsättningar i en anslutning. The **Foundation** paketet är begränsat till en datauppsättning. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har. &#x200B;
 
 ## Skapa och konfigurera anslutningen {#create-connection}
 

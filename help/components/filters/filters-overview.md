@@ -3,9 +3,9 @@ title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Översikt över filter {#overview}
 
-Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
+Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
 
 Filter kan baseras på
 
@@ -37,6 +37,10 @@ Mer information om tillgängliga typer av filter och hur du skapar dem finns i [
 ## Sekventiella filter {#sequential}
 
 Med hjälp av sekventiella filter kan du identifiera personer baserat på navigering och sidvisning på webbplatsen, vilket ger ett filter med definierade åtgärder och interaktioner. Med hjälp av sekventiella filter kan du identifiera vad en person gillar och vad en person undviker. När du skapar sekventiella filter används operatorn THEN för att definiera och ordna personnavigering.
+
+>[!IMPORTANT]
+>
+>Du måste ha **Välj** för att skapa sekventiella flerkanalsfilter. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har. &#x200B;
 
 Här är ett exempel:
 
