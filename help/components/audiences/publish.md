@@ -3,7 +3,7 @@ title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
+source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 0%
@@ -85,7 +85,7 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 
 Vid flera tillfällen före, under och efter publikationen kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-![Latenser i publikation enligt beskrivningen i [Svarstidsfrågor](#latency-considerations)](assets/latency-diagram.png)
+![Latenser i publikation enligt beskrivningen i det här avsnittet.](assets/latency-diagram.png)
 
 | # | Svarstid | Latenslängd |
 | --- | --- | --- |

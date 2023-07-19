@@ -4,10 +4,9 @@ description: Ett härlett fält anger ändringar av schemafält och/eller standa
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-badgeDerivedFields: label="Ny funktion" type="Positive"
-source-git-commit: 33ed28de1c410bcba04ab405ce8d779a501f4b3f
+source-git-commit: b8d6b8b0f2740e118bd744bcb7b7ee46aefc75ed
 workflow-type: tm+mt
-source-wordcount: '4167'
+source-wordcount: '4165'
 ht-degree: 4%
 
 ---
