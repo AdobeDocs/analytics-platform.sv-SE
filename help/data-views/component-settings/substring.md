@@ -4,7 +4,7 @@ description: Använd en delmängd av en sträng som dimensionsobjekt.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 708dc7c69480534b118c8454d65a907946cfcce7
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 1%
@@ -75,7 +75,7 @@ Customer Journey Analytics använder en delmängd av Perl-regex-syntaxen. Om ind
 | Uttryck | Beskrivning |
 | --- | --- |
 | `a` | Ett enda tecken `a`. |
-| `a|b` | Ett enda tecken `a` eller `b`. |
+| `a\|b` | Ett enda tecken `a` eller `b`. |
 | `[abc]` | Ett enda tecken `a`, `b`, eller `c`. |
 | `[^abc]` | Ett enda tecken förutom `a`, `b`, eller `c`. |
 | `[a-z]` | Ett enstaka tecken i intervallet `a`-`z`. |
