@@ -3,9 +3,9 @@ title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
@@ -43,8 +43,6 @@ Med hjälp av sekventiella filter kan du identifiera personer baserat på navige
 >Du måste ha **Välj** för att skapa sekventiella flerkanalsfilter. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har. &#x200B;
 
 Här är ett exempel:
-
-<!--![](assets/sequential_fil.png)-->
 
 | Session ett | Session två | Session tre |
 | --- | --- | --- |
@@ -117,7 +115,7 @@ Händelsebehållare innehåller värdebaserade ensidesindelningar:
 
 ## Inkörbar filtermall {#template}
 
-Traditionell analys innehåller flera färdiga mallfilter (filter) och beräknade mätvärden. Många av dem gäller inte i Customer Journey Analytics, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i Customer Journey Analytics.
+Traditionell analys innehåller en mängd färdiga mallar och beräknade mätvärden. Många av dem gäller inte i Customer Journey Analytics, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i Customer Journey Analytics.
 
 | Filternamn | Beskrivning |
 | --- | --- |
