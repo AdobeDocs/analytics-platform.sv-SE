@@ -4,9 +4,9 @@ description: Förhandsgranska prototypprojekt för Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,6 @@ Så här startar och utvärderar du en prototyp:
    ![ny feedbackruta](assets/short-survey.png)
 
 1. Klicka **[!UICONTROL Submit]** för att återgå till huvudportalen för förhandsvisningar.
-
-## Customer Journey Analytics Labs-prototyper
-
-* Insiktsgenerator på naturspråk: Innehåller en sammanfattning av alla data på ett naturligt språk som du analyserar i en frihandstabell.
-* Visualiseringsrekommendation: Rekommenderar visualiseringar som fungerar bra tillsammans med dina data.
 
 ## Ytterligare information
 
