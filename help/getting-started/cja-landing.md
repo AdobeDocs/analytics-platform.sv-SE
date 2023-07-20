@@ -4,7 +4,7 @@ description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 7%
@@ -29,7 +29,7 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Kombinera rapportsviter med olika scheman </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=en"> Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en"> Jämför databehandling i Adobe Analytics och Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och Analytics Source Connector </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> Adobe Analytics till Customer Journey Analytics evolutionen </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html"> Customer Journey Analytics användarhandbok för Adobe Analytics </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Använd de utökade funktionerna för anslutningshantering </a> </li>

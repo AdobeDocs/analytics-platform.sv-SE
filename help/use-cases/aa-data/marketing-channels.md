@@ -1,10 +1,10 @@
 ---
 title: Använd mått för marknadsföringskanaler i Adobe Experience Platform
-description: Använd Analytics Source Connector för att överföra regler för bearbetning av marknadsföringskanaler till Adobe Experience Platform.
+description: Använd Analytics-källkopplingen för att överföra regler för bearbetning av marknadsföringskanaler till Adobe Experience Platform.
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Om din organisation använder [Källanslutning för analyser](https://experience
 
 ## Schemaelement för marknadsföringskanal
 
-När du har etablerat Analytics Source Connector för en önskad rapportsvit skapas ett XDM-schema åt dig. Det här schemat innehåller alla analysdimensioner och mätvärden som rådata. Dessa rådata innehåller inte attribuering eller beständighet. I stället kör varje händelse igenom regler för hantering av marknadsföringskanaler och registrerar den första regeln som den matchar. Du anger attribuering och beständighet när du skapar en datavy i Customer Journey Analytics.
+När du har upprättat Analytics-källkopplingen för en önskad rapportsvit skapas ett XDM-schema åt dig. Det här schemat innehåller alla analysdimensioner och mätvärden som rådata. Dessa rådata innehåller inte attribuering eller beständighet. I stället kör varje händelse igenom regler för hantering av marknadsföringskanaler och registrerar den första regeln som den matchar. Du anger attribuering och beständighet när du skapar en datavy i Customer Journey Analytics.
 
-1. [Skapa en anslutning](/help/connections/create-connection.md) som innehåller en datauppsättning baserad på Analytics Source Connector.
+1. [Skapa en anslutning](/help/connections/create-connection.md) som innehåller en datauppsättning baserad på Analytics-källkopplingen.
 2. [Skapa en datavy](/help/data-views/create-dataview.md) som har följande dimensioner:
    * **`channel.typeAtSource`**: Motsvarar [Marknadsföringskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension.
    * **`channel._id`**: Motsvarar [Marknadskanalsdetaljer](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html)
@@ -35,7 +35,7 @@ Nu kan du använda dina mått för marknadsföringskanalen i Analysis Workspace.
 
 >[!NOTE]
 >
-> Analyskällans koppling kräver att båda `channel.typeAtSource` (marknadsföringskanal) och `channel._id` (Information om marknadsföringskanal) ska fyllas i, annars överförs ingetdera till XDM ExperienceEvent. Om marknadsföringskanalinformationen är tom i källrapportsviten blir detta en tom `channel._id` och Analytics Source Connector är tom `channel.typeAtSource` också. Detta kan leda till att skillnader rapporteras mellan Adobe Analytics och Customer Journey Analytics.
+> Analyskällans koppling kräver att båda `channel.typeAtSource` (marknadsföringskanal) och `channel._id` (Information om marknadsföringskanal) ska fyllas i, annars överförs ingetdera till XDM ExperienceEvent. Om marknadsföringskanalinformationen är tom i källrapportsviten blir detta en tom `channel._id` och Analytics-källkopplingen är tom `channel.typeAtSource` också. Detta kan leda till att skillnader rapporteras mellan Adobe Analytics och Customer Journey Analytics.
 
 ## Bearbetnings- och arkitekturskillnader
 

@@ -1,11 +1,11 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%
 
 ---
-# Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes och Analytics Source Connector
+# Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och Analytics-källkopplingen
 
 Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är användbart att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
@@ -33,7 +33,7 @@ En virtuell rapportsvit är (gör inte):
 
 * Gör det möjligt att kombinera rapportsviter.
 * Finns i Adobe Analytics Data warehouse.
-* Finns som källa för dataflöden till Adobe Experience Platform via Analytics Source Connector. Endast fullständiga (icke-virtuella) rapportsviter är tillgängliga för användning med Analytics Source Connector.
+* Tillgängligt som källa för dataflöden till Adobe Experience Platform via Analytics-källkopplingen. Endast fullständiga (icke-virtuella) rapportsviter är tillgängliga för användning med Analytics-källkopplingen.
 
 
 ## datavyer i Customer Journey Analytics
@@ -75,4 +75,4 @@ En Adobe Experience Platform-sandlåda gör inte följande:
 Ytterligare:
 
 * Data från olika sandlådor kan inte kombineras i Customer Journey Analytics.
-* Analyskällans koppling skickar rapportsvitsdata _till_ en specifik sandlåda. Varje rapportsvit kan konfigureras som en källa för en enskild sandlåda. Se [Dokumentation för Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) för mer information.
+* Analyskällans koppling skickar rapportsvitsdata _till_ en specifik sandlåda. Varje rapportsvit kan konfigureras som en källa för en enskild sandlåda. Se [Dokumentation för Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) för mer information.

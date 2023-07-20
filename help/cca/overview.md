@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 * Anpassade ID-mappningar som används i din organisation stöds inte.
 * Privat korsenhetsdiagram stöds inte.
 * Flerkanalsanalys omformar inte det fält som används för sammanfogning på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns i den icke-sammanfogade datauppsättningen inom datarjön. Staplingsprocessen är skiftlägeskänslig. Om ibland ordet &#39;Bob&#39; visas i fältet och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer.
-* För Analytics-datauppsättningar som genererats via Analytics Source Connector rekommenderar Adobe att man granskar VISTA-regler eller bearbetningsregler som gäller för det tillfälliga ID-fältet för att säkerställa att inga av dessa regler inför nya former av samma ID. Du bör t.ex. se till att inga VISTA-regler eller bearbetningsregler för endast en del av händelserna introducerar lägre radering till det tillfälliga ID-fältet.
+* För Analytics-datauppsättningar som genererats via Analytics-källkopplingen rekommenderar Adobe att man granskar VISTA-regler eller bearbetningsregler som gäller för det tillfälliga ID-fältet för att säkerställa att inga av dessa regler inför nya former av samma ID. Du bör t.ex. se till att inga VISTA-regler eller bearbetningsregler för endast en del av händelserna introducerar lägre radering till det tillfälliga ID-fältet.
 * Fältbaserad sammanfogning varken kombinerar eller sammanfogar fält.
 * Det tillfälliga ID-fältet ska innehålla en enda typ av ID (t.ex. ID:n från ett enda namnutrymme). Det tillfälliga ID-fältet ska till exempel inte innehålla en kombination av inloggnings-ID och e-post-ID.
 * Om flera händelser inträffar med samma tidsstämpel för samma beständiga ID, men med olika värden i fältet för transient ID, väljer fältbaserad sammanslagning baserat på alfabetisk ordning. Om beständigt ID A har två händelser med samma tidsstämpel och en av händelserna anger Bob och den andra anger Ann, väljer fältbaserad stitling Ann.

@@ -3,7 +3,7 @@ title: Kombinera rapportsviter med olika scheman
 description: Lär dig hur du använder Data Prep för att kombinera rapportsviter med olika scheman
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Detta resulterar i meningslösa rapporter för eVar1 och eVar2:
 
 ## Använd Adobe Experience Platform Data Prep för att lösa schemaskillnader mellan olika rapportsviter
 
-Funktionen Experience Platform Data Prep är integrerad med Analytics Source Connector och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i datavyn i Customer Journey Analytics. (Namnkonventionerna nedan kan anpassas efter dina behov.)
+Funktionen Experience Platform Data Prep är integrerad med Analytics-källkopplingen och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i datavyn i Customer Journey Analytics. (Namnkonventionerna nedan kan anpassas efter dina behov.)
 
 1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) i Adobe Experience Platform (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande i schemat:
 
@@ -102,13 +102,13 @@ Du har nu mappat eVar1 och eVar2 från källrapportsviterna till tre nya fält. 
 
 >[!NOTE]
 >
->Den anpassade fältgruppen Enhetliga fält och tillhörande fältmappningar kan när som helst läggas till i befintliga analysrelaterade källanslutningsdata och datauppsättningar. Detta påverkar dock endast data som skickas vidare.
+>Den anpassade fältgruppen Enhetliga fält och tillhörande fältmappningar kan när som helst läggas till i befintliga anslutningsdataflöden och datauppsättningar för Analytics-källan. Detta påverkar dock endast data som skickas vidare.
 
 ## Mer än bara rapportsviter
 
 Funktionerna hos Data Prep för att kombinera datauppsättningar med olika scheman går utöver rapportsviterna i Analytics. Anta att du har två datauppsättningar som innehåller följande data:
 
-| Datauppsättning A = Rapporteringsserie för analyser via Analytics Source Connector |
+| Datauppsättning A = Rapporteringsserie för analyser via Analytics-källkopplingen |
 | --- |
 | `eVar1` => Kundkategori |
 
@@ -159,4 +159,4 @@ Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data
 
 Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i Customer Journey Analytics när du vill kombinera data från flera datauppsättningar till en enda Customer Journey Analytics-anslutning. Om du tänker behålla rapportsviterna i olika Customer Journey Analytics-anslutningar men vill använda en uppsättning rapporter för alla anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i Customer Journey Analytics, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) för mer information.
 
-Att ändra komponent-ID:t är en funktion som bara är för Customer Journey Analytics och påverkar inte data från Analytics Source Connector som skickas till kundprofilen i realtid och RTCDP.
+Att ändra komponent-ID:t är en funktion som bara är för Customer Journey Analytics och påverkar inte data från Analytics-källkopplingen som skickas till kundprofilen i realtid och RTCDP.

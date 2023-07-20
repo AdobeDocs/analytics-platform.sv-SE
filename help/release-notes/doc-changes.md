@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 5%
@@ -84,18 +84,18 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | September 2022 | Nytt ämne [Kombinationsdiagram](/help/analysis-workspace/visualizations/combo-charts.md) i Workspace. |
 | September 2022 | Nytt ämne [Panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md) i Workspace. |
 | **Augusti 2022** | |
-| Augusti 2022 | Adobe Experience Platform artikel om [Regionövergripande stöd för Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
+| Augusti 2022 | Adobe Experience Platform artikel om [Stöd för olika regioner för Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
 | Augusti 2022 | Avsevärt uppdaterad artikel om [Åtkomstkontroll för Customer Journey Analytics](/help/admin/cja-access-control.md). |
 | Augusti 2022 | Ny artikel på [Customer Journey Analytics stöd för dataförvaltningsrubriker och datapolicyer](/help/data-views/data-governance.md). |
-| Augusti 2022 | Ny artikel på [Jämföra terminologi för analysdata som skickas via Analytics Source Connector](/help/getting-started/aa-vs-cja/terminology.md). |
+| Augusti 2022 | Ny artikel på [Jämföra terminologi för analysdata som skickas via Analytics-källkopplingen](/help/getting-started/aa-vs-cja/terminology.md). |
 | Augusti 2022 | Ny dokumentation om [Målgruppspublicering i kundprofil i realtid](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
 | **Juli 2022** | |
 | Juli 2022 | [Medieuppspelningstid spenderad panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) dokumentation. |
 | Juli 2022 | [Media Concurrent Viewer-panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) dokumentation. |
 | Juli 2022 | [Första sessionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) rapporteringsdokumentation. |
 | **Juni 2022** | |
-| Juni 2022 | Ny artikel på [STÖD, ECID, AACUSTOMID och Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
-| Juni 2022 | Ny artikel på [Adobe Analytics bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep för Analytics Source Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
+| Juni 2022 | Ny artikel på [AAID, ECID, AACUSTOMID och Analytics-källkopplingen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
+| Juni 2022 | Ny artikel på [Adobe Analytics bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep för källkopplingen för Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Juni 2022 | Ny artikel på [virtuella rapporteringsmiljöer och sandlådemiljöer](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | Juni 2022 | Ny artikel på [jämföra databehandling i Adobe Analytics och Customer Journey Analytics](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
 | Juni 2022 | Ny artikel på [kombinera rapportsviter med olika scheman](/help/use-cases/aa-data/combine-report-suites.md). |

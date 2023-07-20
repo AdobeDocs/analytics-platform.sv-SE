@@ -4,9 +4,9 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '784'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ Du har ett antal alternativ när det gäller att hämta in data till Customer Jo
 
 ## Ingrediera data från traditionella Adobe Analytics
 
-Det här arbetsflödet använder Adobe Analytics Source Connector och varierar beroende på om du använder DTM eller Launch som tagghanterare.
+Det här arbetsflödet använder Analytics-källkopplingen och varierar beroende på om du använder DTM eller Launch som tagghanterare.
 
 ### Via-taggar i Adobe Experience Platform (kallades tidigare [!UICONTROL Launch])
 

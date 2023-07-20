@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2002'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Din rätt till Customer Journey Analytics gör att du kan importera data till Ex
 
 +++**Hur får jag [!UICONTROL Adobe Analytics] data till [!UICONTROL Customer Journey Analytics]?**
 
-[!UICONTROL Adobe Analytics] data kan anslutas till Experience Platform via [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Mest [!UICONTROL Adobe Analytics] fält hämtas till XDM-format, men andra fält är inte tillgängliga ännu.
+[!UICONTROL Adobe Analytics] data kan anslutas till Experience Platform via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Mest [!UICONTROL Adobe Analytics] fält hämtas till XDM-format, men andra fält är inte tillgängliga ännu.
 
 +++
 

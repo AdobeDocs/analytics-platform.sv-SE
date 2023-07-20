@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Med en anslutning kan Analytics Admin integrera datauppsättningar från Adobe E
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe erbjuder flera sätt att överföra data till Adobe Experience Platform, inklusive att rapportera Suite-data via Adobe Analytics Source Connector eller Web SDK. Befintliga implementeringar från flera rapportsviter kan kombineras i Experience Platform. De anslutningar och datavyer som baseras på dessa datauppsättningar kan kombinera data som tidigare fanns i separata rapportsviter.
+Adobe erbjuder flera sätt att överföra data till Adobe Experience Platform, inklusive rapportsvitsdata via Analytics-källkopplingen eller Web SDK. Befintliga implementeringar från flera rapportsviter kan kombineras i Experience Platform. De anslutningar och datavyer som baseras på dessa datauppsättningar kan kombinera data som tidigare fanns i separata rapportsviter.
 
 ## Förändringar i begreppet virtuella rapportsviter {#data-views}
 

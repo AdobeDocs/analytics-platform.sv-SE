@@ -3,7 +3,7 @@ title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 0%
@@ -89,8 +89,8 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 | # | Svarstid | Latenslängd |
 | --- | --- | --- |
-| Visas inte | Adobe Analytics to Analytics Source Connector (A4T) | Upp till 30 minuter |
-| 1 | Intag av data i datasjön (från Analytics Source Connector eller andra källor) | Upp till 90 minuter |
+| Visas inte | Källanslutning för Adobe Analytics till Analytics (A4T) | Upp till 30 minuter |
+| 1 | Intag av data i datasjön (från Analytics-källkopplingen eller andra källor) | Upp till 90 minuter |
 | 2 | Intag av data från Experience Platform Data Lake till Customer Journey Analytics | Upp till 90 minuter |
 | 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Cirka 60 minuter |
 | 4 | Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |

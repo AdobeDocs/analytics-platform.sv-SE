@@ -1,9 +1,9 @@
 ---
-title: Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep för Analytics Source Connector
+title: Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep för Analytics-källkopplingen
 description: Läs mer om dataomvandling med bearbetningsregler och VISTA jämfört med Data Prep
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Adobe Analytics [bearbetningsregler och VISTA-regler](https://experienceleague.a
 
 ## Ytterligare omformning med Data Prep {#data-prep}
 
-Data som samlas in av och lagras i Adobe Analytics kan omformas antingen med bearbetningsregler eller VISTA-regler eller både och. Men rapportsviter som sedan vidarebefordras till plattformen via Analytics Source Connector kan omvandlas ytterligare en gång med Data Prep. Detta kan vara önskvärt av flera skäl:
+Data som samlas in av och lagras i Adobe Analytics kan omformas antingen med bearbetningsregler eller VISTA-regler eller både och. Men rapportsviter som sedan vidarebefordras till plattformen via Analytics-källkopplingen kan omvandlas ytterligare en gång med Data Prep. Detta kan vara önskvärt av flera skäl:
 
 * **Lösa schemaskillnader mellan rapportsviter för användning i Customer Journey Analytics och/eller RTCDP**. Låt oss till exempel säga att rapportsviten A definierar `eVar1` som&quot;Sökord&quot; och rapportsvit B definierar `eVar2` som sökterm. Du kan använda dataprep för att mappa de två olika eVars-elementen till ett gemensamt fält som innehåller data från båda eVars-elementen. Detta gör det möjligt att [kombinera rapportsviter med olika scheman](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en) i en [Customer Journey Analytics](/help/connections/overview.md) eller för användning i [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=en).
-* **Mappning `eVars` fält till semantiskt meningsfulla namn**. `eVars` och `props` som kommer via Analytics Source Connector mappas till fält som _\_experience.analytics.customDimensions.eVars.eVar1_. Dataförinställningen kan användas för att mappa `eVar` och `prop` fält till nya fält som har mer meningsfulla namn för användarna eller som matchar namn från andra datakällor. (Detta kan även göras på andra sätt, t.ex. genom att byta namn på fälten i en [Datavy för Customer Journey Analytics](/help/data-views/create-dataview.md).)
-* **Generellt omformande data**. Datapersonen har hundratals mappningsfunktioner som kan användas för att beräkna och beräkna nya fält baserat på data som kommer via Analytics Source Connector. Du kan dela upp avgränsade fält i separata fält. Du kan kombinera fält. Du kan ändra strängar. Du kan extrahera information från ett fält baserat på reguljära uttryck och mycket annat.
+* **Mappning `eVars` fält till semantiskt meningsfulla namn**. `eVars` och `props` som kommer via Analytics-källkopplingen mappas till fält som _\_experience.analytics.customDimensions.eVars.eVar1_. Dataförinställningen kan användas för att mappa `eVar` och `prop` fält till nya fält som har mer meningsfulla namn för användarna eller som matchar namn från andra datakällor. (Detta kan även göras på andra sätt, t.ex. genom att byta namn på fälten i en [Datavy för Customer Journey Analytics](/help/data-views/create-dataview.md).)
+* **Generellt omformande data**. Datapersonen har hundratals mappningsfunktioner som kan användas för att beräkna och beräkna nya fält baserat på data som kommer via Analytics-källkopplingen. Du kan dela upp avgränsade fält i separata fält. Du kan kombinera fält. Du kan ändra strängar. Du kan extrahera information från ett fält baserat på reguljära uttryck och mycket annat.
 
 ## Förberedelse och klassificering av data {#classifications}
 

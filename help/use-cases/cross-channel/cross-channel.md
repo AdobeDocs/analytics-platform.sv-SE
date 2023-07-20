@@ -4,7 +4,7 @@ description: Analysera och extrahera insikter från kundinteraktioner under hela
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Flerkanalsanalys ger en samlad bild av kundernas beteende i olika kanaler genom 
 1. [Skapa scheman](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) för data som ska importeras.
 1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html):
-   1. Händelsebaserade data ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) från webbplats eller mobilapp via Edge Network eller Analytics Data Connector.
+   1. Händelsebaserade data ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) från webbplats eller mobilapp via Edge Network- eller Analytics-källkontakten.
    2. Profildata ![profil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (t.ex. från ett CRM-system, callcenter-program, lojalitetsprogram).
    3. Sökdata ![sökning](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (t.ex. produktnamn, kategori från ett produktinformationssystem).
 
