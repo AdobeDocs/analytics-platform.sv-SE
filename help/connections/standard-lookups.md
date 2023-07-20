@@ -4,7 +4,7 @@ description: Använd standardsökningar för att förbättra rapporter med anvä
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Standarduppslag (kallas även uppslag som tillhandahålls av Adobe) förbättrar
 
 I traditionella Adobe Analytics visas de här dimensionerna fristående, medan du i Customer Journey Analytics måste ta med de här dimensionerna när du skapar datavyer. I anslutningsarbetsflödet väljer du en datauppsättning som är flaggad som en med en nyckel för standardsökning. Användargränssnittet för datavyer kan automatiskt inkludera alla standardsökningsdimensioner som är tillgängliga för rapportering. Uppslagsfilerna uppdateras automatiskt och är tillgängliga i alla regioner och för alla konton. De lagras i regionspecifika organisationer som är kopplade till kunden.
 
-## Använd standardsökningar med Adobe Source Connector-datauppsättningar
+## Använd standardsökningar med Analytics-källanslutningsdatauppsättningar
 
 Datauppsättningar för standardsökning tillämpas automatiskt vid rapporttidpunkten. Om du använder Analytics-källkopplingen och har en dimension som Adobe tillhandahåller en standardsökning för, tillämpar vi automatiskt den här standardsökningen. Om en händelsedatamängd innehåller XDM-fält kan vi använda standardsökningar på den.
 

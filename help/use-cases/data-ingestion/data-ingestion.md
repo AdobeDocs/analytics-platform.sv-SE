@@ -4,7 +4,7 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 2%
@@ -51,7 +51,7 @@ Adobe Experience Platform sammanför data från olika källor för att hjälpa m
 
 Granska den här självstudiekursen om hur du [Analysera Google Analytics-data med Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=en) för detaljerade steg.
 
-## Använd API för datainmatning i grupp för att hämta data till analyser och sedan importera via Adobe Source Connector i Experience Platform
+## Använd API:t för datainmatning i grupp för att hämta data till Analytics och sedan importera via Analytics-källkopplingen i Experience Platform
 
 1. [Använd API för massdatainmatning](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) för att skicka data från serversidessamlingar till Adobe Analytics. Du kan skicka CSV-formaterade filer som innehåller händelsedata.
 1. [Skapa en Adobe Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) för att överföra dessa konsumentdata till Adobe Experience Platform.
