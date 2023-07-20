@@ -5,9 +5,9 @@ description: Översikt över Analysis Workspace funktioner
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 2647acd9dbf0732b02d69528fe1d07e381123aef
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '711'
 ht-degree: 3%
 
 ---
@@ -78,6 +78,10 @@ När du har förstått komponentterminologin kan du dra komponenter till visuali
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö.
 
 Mer information om Data Dictionary finns i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).
+
+## Datakällor
+
+Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering. Här finns mer information om hur du kan [hantera datakällor](/help/analysis-workspace/visualizations/t-sync-visualization.md).
 
 ## Börja använda Analysis Workspace
 
