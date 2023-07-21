@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9e6231e4dc9770fbb7c859b397ea8c57e7dff478
+source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '740'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leverans
 | **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 2 augusti 2023 |
 | **Utökat sökningsstöd för profil- och sökdata** | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer](/help/connections/create-connection.md) | 21 juni 2023 | 12 juli 2023 |
 | **Förbättringar i Report Builder** | <ul><li>Filtrera från cell för flera datablock. Du kan ändra filtren för flera datablock från en cell. Använd en fördefinierad cell, tilldela den till flera datablock och uppdatera data baserat på de filter som definieras i cellen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Visa och dölj rad- och kolumnrubriker. Du kan visa eller dölja tabellrubriker för datablock, eller rad- och kolumnrubriker för att formatera om tabellen och justera datablock i en rapport. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> | Ej tillämpligt | 19 juli 2023 |
-| **Upplev Edge-geosökningar** | Adobe Experience Edge lägger till en geosökningstjänst som ger enhetliga geografiska data till alla Experience Edge-användare (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Media Analytics, Adobe Experience Platform osv.). | Ej tillämpligt | 26 juli 2023 |
+| **Upplev Edge-geosökningar** | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en) lägger till en geosökningstjänst som ger enhetliga geografiska data till alla Experience Edge-användare (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Media Analytics, Adobe Experience Platform osv.). | Ej tillämpligt | 26 juli 2023 |
 
 {style="table-layout:auto"}
 
