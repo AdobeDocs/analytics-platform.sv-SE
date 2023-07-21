@@ -3,7 +3,7 @@ title: Vanliga frågor om titlar
 description: Vanliga frågor och svar
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: c87aaefdd15e02b7fe2cf8e638830aa278d46b92
+source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 0%
@@ -60,6 +60,8 @@ Det finns direktutjämning ungefär en vecka efter det att Adobe har synat sig. 
 [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) är en funktion som är specifik för traditionella Adobe Analytics och som gör att du kan förstå hur människor arbetar på olika enheter. Det finns två arbetsflöden för att länka samman enhetsdata: fältbaserad sammanfogning och enhetsgrafen.
 
 Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journey Analytics och som gör det möjligt att förstå hur människor arbetar på olika enheter och i olika kanaler. Den sammanfogar en datauppsättnings person-ID så att den datauppsättningen kan kombineras med andra datauppsättningar. Den här funktionen fungerar i design på ungefär samma sätt som fältbaserad stygning mellan olika enheter, men implementeringen är annorlunda på grund av att dataarkitekturen skiljer sig mellan traditionell Analytics och Customer Journey Analytics. Se [Stitlar](overview.md) och [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) finns mer information.
+
++++
 
 +++**Hur hanterar Stitching GDPR- och CCPA-begäranden?**
 
