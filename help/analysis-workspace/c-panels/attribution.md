@@ -3,10 +3,10 @@ title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 22%
+source-wordcount: '513'
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics förbättrar attribueringen genom att låta dig:
 
 * Definiera attribuering för mer än betalda medier: alla mått, mätvärden, kanaler och händelser kan användas i modellerna (till exempel intern sökning), inte bara marknadsföringskampanjer.
 * Jämföra attribueringsmodeller utan begränsningar: jämför dynamiskt hur många modeller ni vill.
-* Undvika implementeringsändringar: med hjälp av rapporttidshantering och sammanhangsberoende sessioner kan kundresan byggas in och användas vid körning.
+* Undvik implementeringsändringar: Med rapporttidsbearbetning och sammanhangsberoende sessioner kan kundens kundresekontext byggas in och tillämpas vid körning.
 * Skapa den session som bäst matchar attribueringsscenariot.
 * Dela upp attribuering med filter: Jämför enkelt resultatet i era marknadsföringskanaler i alla viktiga filter (t.ex. nya jämfört med upprepade kunder, produkt X jämfört med produkt Y, lojalitetsnivå eller CLV).
 * Granska analyser av kontaktytor och kanalbyten: använd venndiagram och histogram samt trendattribuering.
