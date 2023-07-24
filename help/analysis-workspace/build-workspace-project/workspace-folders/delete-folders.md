@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Ta bort mappar i arbetsytan
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 981dd31ef669251fd00b834afeafb5e396aa32da
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 2%
+source-wordcount: '111'
+ht-degree: 1%
 
 ---
 
@@ -16,15 +16,18 @@ ht-degree: 2%
 
 Du kan ta bort mappar som du skapar.
 
->[!NOTE]
->
->Innehållet i mappen tas inte bort när du tar bort en mapp. Innehållet i en borttagen mapp (projekt eller undermappar) flyttas till den omedelbara mappen ovanför i mapphierarkin.
+**Riktlinjer**
+
+* Innehållet i mappen tas inte bort när du tar bort en mapp. Innehållet i en borttagen mapp (projekt eller undermappar) flyttas till den omedelbara mappen ovanför i mapphierarkin.
+* Administratörer kan ta bort en mapp i företagsmappen som en annan administratör har skapat. Administratörer kan behöva samordna med andra administratörer för att se till att mapp- och projektåtkomsten är konsekvent. Se [Om mappar i Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+
+Så här tar du bort mappar i arbetsytan
 
 1. Klicka på **...** ellipsikonen i det övre högra hörnet.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
 
-1. Välj **Ta bort mapp**.
+2. Välj **Ta bort mapp**.
 
    Ett bekräftelsemeddelande anger att mappen har tagits bort.
 
