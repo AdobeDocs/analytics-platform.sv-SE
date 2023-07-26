@@ -3,9 +3,9 @@ title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteam snabbt kan få högkvalitativa insikter. Kallas även Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bbf69470727dae531065972511bcc29eb3f47679
+source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,9 @@ Om din organisation är etablerad för guidad analys kan du komma åt den från 
 
 ## Gränssnitt
 
-Gränssnittet för guidad analys, oavsett analystyp, innehåller följande huvudgränssnittselement:
+Gränssnittet för guidad analys följer ett fråge- och svarsformat. Du formulerar din fråga i frågefältet och får sedan ett svar i form av en skriftlig insikt, diagram och tabell. Du kan sedan ställa nästa fråga med visualiseringsinställningarna och visningstyperna.
+
+Oavsett analystyp består den guidade analysen av följande gränssnittselement:
 
 | Förhandsgranska gränssnitt | Gränssnittselement | Beskrivning |
 | --- | --- | --- |
