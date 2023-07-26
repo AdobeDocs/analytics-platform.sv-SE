@@ -3,7 +3,7 @@ title: Sammanhangsmedvetna sessioner
 description: Inställningar i en datavy som du kan använda för att definiera sammanhangsberoende sessioner.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 6235fbb128098e2a624d5fd4fd72c2c583cfd277
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Sammanhangsberoende sessioner i datavyer ändrar hur Customer Journey Analytics beräknar sessioner från data i anslutningen.
 
-I [!UICONTROL Settings] Med datavyer kan ni definiera en session på vilket sätt som helst för att matcha hur personer interagerar med era digitala upplevelser. Kontextmedvetna sessionsdefinitioner är icke-förstörande och ändrar inte underliggande data. Du kan ställa in flera datavyer där var och en har en specifik sammanhangsberoende sessionsdefinition som grund för dina arbetsyteprojekt.
+I [!UICONTROL Settings] Med datavyer kan ni definiera en session på vilket sätt som helst för att matcha hur personer interagerar med era digitala upplevelser. Kontextmedvetna sessionsdefinitioner är icke-förstörande och ändrar inte underliggande data. Du kan skapa flera datavyer, där var och en har en specifik sammanhangsberoende sessionsdefinition som grund för dina Workspace-projekt.
 
 Så här definierar du kontexten för en session för en datavy:
 
