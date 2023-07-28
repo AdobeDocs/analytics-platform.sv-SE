@@ -3,16 +3,18 @@ title: Resultat av trunkerad dimensionspost
 description: Beskriver dimensionsposten "Trunkerade resultat" och varför den visas i rapporter.
 feature: FAQ
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-source-git-commit: cf3c451cbefa7d6f9d5ea326c69fc2e5944881ff
+source-git-commit: f0fa126a23e6c99f89db82c91c98b6628d43a983
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
 
 # Resultat av trunkerad dimensionspost
 
-När du använder en dimension som innehåller många unika värden, kan en rapport returnera en dimensionsartikel med etiketten **[!UICONTROL Results Truncated]**. Dimensionsobjektet innebär att den begärda rapporten innehåller för många unika värden för att den ska kunna bearbetas effektivt. Det innebär att objekt som anses vara minst viktiga tas bort.
+Om du använder en dimension som innehåller många unika värden kan rapportresultaten vara för stora för bearbetning.  För att förhindra flaskhalsar i hela systemet trunkeras resultaten genom att objekt som anses vara minst viktiga tas bort.  Detta anges på en friformspanel genom att orden &quot;mer än&quot; läggs till i sidnumreringsindikatorn, t.ex. &quot;Rader: 1-400 av mer än 9 819 653&quot;.
+
+I vissa fall, t.ex. vid sortering med beräknade värden, är det omöjligt att avgöra vilka dimensionsobjekt som är minst viktiga.  När detta inträffar placeras en varningsikon på det beräknade måttet som förklarar problemet och länkar till [viss dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/dimensions/high-cardinality.html?lang=en).
 
 ## Bearbetningsarkitektur och unika värden för Customer Journey Analytics
 
@@ -22,9 +24,9 @@ Om någon enskild server samlar in en resultatmängd som är över en storlekstr
 
 Servern väljer vilka dimensionsobjekt som ska tas bort baserat på det mått som används för sorteringen. Om sorteringsmåttet är ett beräknat mått, använder servern mått inom det beräknade måttet för att avgöra vilka dimensionsobjekt som ska trunkeras. Eftersom beräknade mätvärden kan innehålla flera mätvärden av varierande betydelse kan resultaten bli mindre exakta. Vid beräkningen av&quot;Intäkt per person&quot; returneras till exempel det totala inkomstbeloppet och det totala antalet personer och aggregeras innan indelningen görs. Därför väljer varje nod vilka objekt som ska tas bort utan att veta hur resultatet påverkar den övergripande sorteringen.
 
-## Skillnader mellan Trunkerat resultat och lågtrafik
+## Skillnader jämfört med lågtrafik
 
-I tidigare versioner av Adobe Analytics användes en annan bearbetningsarkitektur. Data bearbetades när de samlades in. Dimensioner placerades under Låg trafik efter att en dimension uppnådde 500 000 unika värden och tillämpade mer aggressiv filtrering vid en miljon unika värden. Antalet unika värden återställdes i början av varje kalendermånad. Bearbetade uppgifter var permanenta. det fanns inget sätt att få bort befintliga data från lågtrafik.
+I tidigare versioner av Adobe Analytics användes en annan bearbetningsarkitektur. Data bearbetades när de samlades in. Dimensioner placerades under Låg trafik efter att en dimension uppnådde 500 000 unika värden och tillämpade mer aggressiv filtrering vid en miljon unika värden. Antalet unika värden återställdes i början av varje kalendermånad. Bearbetade data var permanenta. Det fanns inget sätt att få ut befintliga data från lågtrafik.
 
 I Customer Journey Analytics trunkeras dimensionsobjekt bara om resultatet av en rapport är för stort. Bearbetade data är inte permanenta, vilket innebär att du kan minska eller eliminera trunkeringen genom att ändra rapporten.
 
