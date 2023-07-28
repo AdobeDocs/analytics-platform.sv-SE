@@ -2,9 +2,9 @@
 title: Användningsexempel
 description: Branschexempel för guidad analys
 feature: Guided Analysis
-source-git-commit: 99cd8847ec7e35e71e17ae9f69605bfcb00f2882
+source-git-commit: 81ac3476be983ac5d2c7b19abeb618266f3148da
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 | Använd skiftläge | Exempel | Effekt | Analys |
 | --- | --- | --- | --- |
 | **Mät genomslagskraften av nya funktioner** | Vi införde nyligen banköverföringar med Zelle, och vi behövde förstå hur den nya funktionen påverkar slutförandet av överföringar. Nu när vi kan se hur kunderna reagerar kan marknadsföringsteamet dra igång det. | **Öka konverteringsgraden.** Mät effekten av nya funktioner på överföringskonverteringar. | [Visa diseffekt](types/release.md) <p/><p/> [Vyn Första användningen](types/first-use.md) |
-| **Defekt samtal till kundtjänst** | Vår 5-stegsprocess för mobilanspråk ledde samtal till callcentret. Vi analyserade snabbt detta, skapade en målgrupp och skickade ett e-postmeddelande till dessa kunder för att förstå deras upplevelse.&quot; | **Isolera friktionen i upplevelsen.** Förbättra&quot;lyckliga kundresor&quot; och minska antalet samtal. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
+| **Defekt samtal till kundtjänst** | Vår 5-stegsprocess för mobilanspråk ledde samtal till callcentret. Vi analyserade snabbt detta, skapade en målgrupp och skickade ett e-postmeddelande till dessa kunder för att förstå deras upplevelse.&quot; | **Isolera friktionen i upplevelsen.** Förbättra&quot;lyckliga kundresor&quot; och minska antalet samtal. | [Bildvy](types/friction.md) <p/><p/> [Vy över konverteringstrender](types/conversion-trends.md) |
 | **Minska kundbortfallet** | Vi vet att kunder som loggar in på bankappen med månadsintervall blir längre kunder. När vi ser på vår tillväxt av appanvändare kan vi identifiera vem som löper risk att försvinna och skapa en strategi för att vinna tillbaka. | **Minska bortfallet.** Bevara kundnivån samtidigt som ni spenderar pengar på att skaffa nya kunder. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Vyn Nettotillväxt](types/net-growth.md) |
-| **Rekommendera nya funktioner** | Digitala uttag har minskat med tiden i stället för att kontakta en finansiell rådgivare. Vi vill optimera den digitala processen och datatrender hjälper oss att prioritera optimeringarna med en styrkommitté. | **Skapa en datadriven färdplan.** Använd data för att planera och implementera optimeringar. | [Vyn Användningstrender](types/usage.md) |
+| **Rekommendera nya funktioner** | Digitala uttag har minskat med tiden i stället för att kontakta en finansiell rådgivare. Vi vill optimera den digitala processen och datatrender hjälper oss att prioritera optimeringarna med en styrkommitté. | **Skapa en databaserad färdplan.** Använd data för att planera och implementera optimeringar. | [Vyn Användningstrender](types/usage.md) |
 
 {style="table-layout:auto"}
 
@@ -55,8 +55,8 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 | --- | --- | --- | --- |
 | **Kvantifiera påverkan av nya bokningsflödesfunktioner** | Vi analyserade snabbt effekten av en ny bokningsstegsfunktion på konverteringsgraden och identifierade den del av upplevelsen som gav störst vinst. | **Öka bokningsfrekvensen.** Mät effekten av verksamheten i stället för att bara använda funktioner. | [Visa diseffekt](types/release.md) <p/><p/> [Bildvy](types/friction.md) |
 | **Optimera upplevelsen av mobilappar** | Vi kunde snabbt och enkelt förstå våra månatliga användare av aktiva appar (MAU:er) över tid och identifiera positiva effekter per version. | **Öka MAU:er.** Mät och öka appanvändningen, vilket står i relation till kundernas lycka. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Vyn Nettotillväxt](types/net-growth.md) |
-| **Hitta friktionen i incheckningsflödet för mobiler** | Genom att se var människor lyckas eller faller bort från den förväntade incheckningsprocessen för mobila enheter kan vi enkelt identifiera områden för upplevelseoptimering. | **Öka CSAT och minska antalet IROP.** Om du tar bort friktionen blir upplevelsen mer sömlös. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
-| **Defekt samtal till kundtjänst** | När jag såg min användarupplevelse i en trattvy visade jag var våra användare slog till friktionen, vilket ledde till kostsam telefonvolym. Vi visste var vi skulle fokusera härnäst. | **Minska användningen av callcenter.** Få mer användarupplevelser med en&quot;lycklig väg&quot; och minska antalet kostsamma samtal. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
+| **Hitta friktionen i incheckningsflödet för mobiler** | Genom att se var människor lyckas eller faller bort från den förväntade incheckningsprocessen för mobila enheter kan vi enkelt identifiera områden för upplevelseoptimering. | **Öka CSAT och minska antalet IROP.** Om du tar bort friktionen blir upplevelsen mer sömlös. | [Bildvy](types/friction.md) <p/><p/> [Vy över konverteringstrender](types/conversion-trends.md) |
+| **Defekt samtal till kundtjänst** | När jag såg min användarupplevelse i en trattvy visade jag var våra användare slog till friktionen, vilket ledde till kostsam telefonvolym. Vi visste var vi skulle fokusera härnäst. | **Minska användningen av callcenter.** Få mer användarupplevelser med en&quot;lycklig väg&quot; och minska antalet kostsamma samtal. | [Bildvy](types/friction.md) <p/><p/> [Vy över konverteringstrender](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
@@ -72,10 +72,11 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 | Använd skiftläge | Exempel | Effekt | Analys |
 | --- | --- | --- | --- |
+| **Kvantifiera påverkan av nya program eller serier** | Vi kan analysera effekten på tittandet efter att användarna har tittat på en ny show eller serie och bättre förstå vilket innehåll som får genklang. | **Öka tittarupplevelsen.** Hitta innehåll som har störst påverkan på tittandet. | [Vyn Första användningen](types/first-use.md) |
 | **Identifiera risk för bortfall** | Vi såg en hög omsättningsfrekvens för kunder som anmälde sig till vår plattform att se på en säsongsevent och sedan avbryta när evenemanget är över. Genom att snabbt identifiera de här användarna kan vi visa rekommendationer som uppmuntrar dem att hålla kontakten med plattformen. | **Behåll nöjda prenumeranter.** Hitta innehåll som engagerar ett tillväxtsegment att reagera med rekommendationer. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Vyn Nettotillväxt](types/net-growth.md) |
 | **Hitta möjligheter till merförsäljning** | Bara för att öka intäkterna kan vi förstå vad erbjudanden i appen som är mest lockande för våra fans medan de är på stadion. | **Öka extraintäkterna.** Förstå effekten av erbjudanden i appen på köpbeteenden. | [Vyn Första användningen](types/first-use.md) <p/><p/> [Bildvy](types/friction.md) |
 | **Optimera upplevelsen på olika enheter** | Jag vill kunna analysera hur mina prenumeranter interagerar med flera enheter/appar så att jag kan förstå mönstren för innehållskonsumtion och avgöra var det bästa är att rikta om till dem. | **Personalisera upplevelsen.** Förstå vilket innehåll som fungerar bäst för prenumeranter på varje enhet. | [Vyn Användningstrender](types/usage.md) |
-| **Defekt samtal till kundtjänst** | Jag kunde identifiera ett problem med vår autopay-funktion som inte fungerade, vilket gjorde att frustrerade kunder ringde vårt supportcenter för att avbryta sin plan. | **Minska antalet supportsamtal.** Skapa en bättre kundupplevelse och minska samtalen till kundtjänst. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
+| **Defekt samtal till kundtjänst** | Jag kunde identifiera ett problem med vår autopay-funktion som inte fungerade, vilket gjorde att frustrerade kunder ringde vårt supportcenter för att avbryta sin plan. | **Minska antalet supportsamtal.** Skapa en bättre kundupplevelse och minska samtalen till kundtjänst. | [Bildvy](types/friction.md) <p/><p/> [Vy över konverteringstrender](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
@@ -108,7 +109,7 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 | --- | --- | --- | --- |
 | **Mät genomslagskraften av nya funktioner** | Vi kunde analysera hur mycket en ny produktfunktion som använts och avgöra vilka segment som fungerade bäst. Detta hjälpte oss att prioritera var vi spenderar resurser för att maximera användarengagemanget och stärka vårt partnerskap med marknadsföring. | **Datadriven prioritering.** Fatta välgrundade beslut om resursfördelningen. | [Visa diseffekt](types/release.md) <p/><p/> [Vyn Första användningen](types/first-use.md) |
 | **Identifiera roller som inte använder produkten** | Vår produkt är avsedd att användas av ingenjörer, produktchefer och marknadsföring. Analysen visade att medan PM:er och marknadsförare använde den nästan dagligen hade ingenjörspersonalen i stort sett inte använt den. | **Öka produktanvändningen.** Identifiera snabbt användarbeteenden på flera olika sätt. | [Vyn Aktiv användartillväxt](types/active.md) <p/><p/> [Vyn Nettotillväxt](types/net-growth.md) |
-| **Ta bort friktionspunkter i konverteringsprocessen** | Användardata visade att om vi kräver ett inköpsordernummer i vårt inköpsflöde hindrade användare som föredrar att köpa med kreditkort från att slutföra sina beställningar. Genom att göra det fältet valfritt ökade konverteringsgraden. | **Förbättra kundupplevelsen.** Minska potentiella bortfall. | [Bildvy](types/friction.md) <p/><p/> [Vyn Konverteringstrender](types/conversion-trends.md) |
+| **Ta bort friktionspunkter i konverteringsprocessen** | Användardata visade att om vi kräver ett inköpsordernummer i vårt inköpsflöde hindrade användare som föredrar att köpa med kreditkort från att slutföra sina beställningar. Genom att göra det fältet valfritt ökade konverteringsgraden. | **Förbättra kundupplevelsen.** Minska potentiella bortfall. | [Bildvy](types/friction.md) <p/><p/> [Vy över konverteringstrender](types/conversion-trends.md) |
 | **Lås upp självbetjäningsanalys** | Att försöka få tillgång till insikter är en utmaning och våra användare är inte utbildade för analys. De måste kunna få svar och utnyttja samma data som hela organisationen använder, vilket leder till starkare partnerskap och möjliggör sanna datadrivna beslut. | **Närmare samarbeten i hela organisationen.** Ge produktansvariga åtkomst till data som tidigare var isolerade. | [Guidad analys](overview.md) |
 
 {style="table-layout:auto"}
