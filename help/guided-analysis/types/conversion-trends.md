@@ -1,15 +1,15 @@
 ---
-title: Vyn Konverteringstrender
+title: Vy över konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+source-git-commit: 9c46c945bf98cff807773e1f1f795e30a28f203b
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
-# Vyn Konverteringstrender
+# Vy över konverteringstrender
 
 The **Konverteringstrender** en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 
@@ -21,14 +21,14 @@ Exempel:
 
 * **Spåra optimering**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funktion](friction.md)kan du använda den här vyn för att spåra hur optimeringarna påverkar konverteringsgraden över tid.
 * **Utvärdering av A/B-tester**: Utvärdera effektiviteten i A/B-tester eller -experiment som utförs i samband med en tratt. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
-* **Kampanjutvärdering över tid**: Mät effektiviteten i marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
+* **Kampanjutvärdering över tid**: Mät effekten av marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
 
 ## Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL Steps]**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-* **People**: De segment som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
+* **[!UICONTROL Steps]**: De händelsetyper som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
+* **People**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
 
@@ -37,6 +37,10 @@ I vyn Konverteringstrender finns följande diagraminställningar som kan justera
 * **[!UICONTROL Metric]**: Det mått som du vill mäta. Du kan välja sessioner och användare.
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Line.
 * **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från det första steget eller föregående steg.
+
+>[!NOTE]
+>
+>The **Genomsnittlig** i vyn Conversion trends skiljer sig från **Totalt** kolumn i [Bildvy](friction.md) tabell. Den första är ett medelvärde av intervallkolumnerna (t.ex. medelvärdet av daglig konverteringsgrad), medan den andra är en aggregerad beräkning över hela datumintervallet.
 
 ## Använd tidsjämförelse
 
