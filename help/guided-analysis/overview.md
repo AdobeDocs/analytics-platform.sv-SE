@@ -3,7 +3,7 @@ title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteam snabbt kan få högkvalitativa insikter. Kallas även Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
+source-git-commit: bf34b4e1a7c1e28cbaae98e61492901b1d143e3e
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Med guidad analys kategoriseras vytyperna i **Analystyper**. Följande analys- o
 | [!UICONTROL Funnel] | [Funktion](types/friction.md) | Jämför konverteringsgrader mellan steg. |
 | [!UICONTROL Funnel] | [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
 | [!UICONTROL User growth] | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
-| [!UICONTROL Net growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
+| [!UICONTROL User growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
 | [!UICONTROL Trends] | [Användning](types/usage.md) | Mät användarengagemanget över tid. |
 
 {style="table-layout:auto"}
