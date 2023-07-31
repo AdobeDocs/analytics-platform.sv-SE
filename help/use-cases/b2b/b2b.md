@@ -4,9 +4,9 @@ description: Lär dig hur du lägger till kontobaserade data som en uppslagsdata
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Du skapar först ett uppslagsschema i Adobe Experience Platform och skapar sedan
 >
 >Uppslagstabeller kan vara upp till 1 GB stora.
 
-## 1. Skapa uppslagsschema (Experience Platform)
+## 1. Skapa sökschema (Experience Platform)
 
 Skapa ett eget schema för [sökning](/help/getting-started/cja-glossary.md) tabellen ser till att den datauppsättning som används är tillgänglig i Customer Journey Analytics med rätt inställningar (posttyp). Bästa praxis är att [skapa en anpassad schemaklass](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) anropas för&quot;Sök efter&quot;, tom för alla element, som kan återanvändas för alla uppslagstabeller.
 
@@ -37,7 +37,7 @@ Skapa ett eget schema för [sökning](/help/getting-started/cja-glossary.md) tab
 
 ## 2. Skapa uppslagsdatauppsättning (Experience Platform)
 
-När schemat har skapats måste du skapa en uppslagsdatauppsättning från det schemat, i Experience Platform. Den här uppsättningen med uppslagsdata innehåller marknadsföringsinformation på kontonivå, till exempel: företagsnamn, totalt antal anställda, domännamn, vilken bransch de tillhör, årsomsättning, oavsett om de är nuvarande kunder i Experience Platform eller inte, vilket försäljningsstadium de befinner sig i, vilket team på kontot som använder Customer Journey Analytics, osv.
+När schemat har skapats måste du skapa en uppslagsdatauppsättning från det schemat, i Experience Platform. Den här sökdatauppsättningen innehåller marknadsföringsinformation på kontonivå, t.ex. företagsnamn, totalt antal anställda, domännamn, vilken bransch de tillhör, årsomsättning, oavsett om de är nuvarande kunder i Experience Platform eller inte, vilket försäljningsstadium de befinner sig i, vilket team på kontot som använder Customer Journey Analytics, osv.
 
 1. I Adobe Experience Platform går du till **[!UICONTROL Data Management > Datasets]**.
 1. Klicka på **[!UICONTROL + Create dataset]**.
@@ -53,7 +53,7 @@ Instruktioner om hur du [Mappa en CSV-fil till ett XDM-schema](https://experienc
 
 [Andra metoder](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) finns också tillgängliga.
 
-Det tar cirka 2 till 4 timmar att introducera data och upprätta sökningen, beroende på storleken på uppslagstabellen.
+Det tar cirka 2 till 4 timmar att introducera data och upprätta sökningen, beroende på storleken på söktabellen.
 
 ## 4. Kombinera datauppsättningar i en anslutning (Customer Journey Analytics)
 
@@ -62,7 +62,7 @@ I det här exemplet kombinerar vi tre datauppsättningar i en anslutning mellan 
 | Namn på datauppsättning | Beskrivning | Klassen Adobe Experience Platform Schema | Information om datauppsättning |
 | --- | --- | --- | --- |
 | B2B-komprimering | Innehåller klickströmsdata på händelsenivå på kontonivån. Den innehåller till exempel e-post-ID och motsvarande konto-ID samt marknadsföringsnamn för att köra marknadsföringsannonser. Det innehåller även visningar för dessa annonser per användare. | Baserat på schemaklassen XDM ExperienceEvent | The `emailID` används som primär identitet och tilldelas en `Customer ID` namnutrymme. Därför visas den som standard **[!UICONTROL Person ID]** i Customer Journey Analytics. ![Impressions](../assets/impressions-mixins.png) |
-| B2B-profil | Den här profildatauppsättningen ger dig mer information om användarna på ett konto, t.ex. deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM Individual Profile | Du behöver inte välja `emailID` som primärt ID i det här schemat. Se till att aktivera **[!UICONTROL Profile]**; Om du inte gör det kan Customer Journey Analytics inte ansluta `emailID` i B2B-profil med `emailID` i B2B-komprimeringsdata. ![Profil](../assets/profile-mixins.png) |
+| B2B-profil | Den här profildatauppsättningen ger dig mer information om användarna på ett konto, t.ex. deras jobbtitel, vilket konto de tillhör, deras LinkedIn-profil osv. | Baserat på schemaklassen XDM Individual Profile | Välj `emailID` som primärt ID i det här schemat. |
 | B2B-information | Se&quot;Skapa uppslagsdatauppsättning&quot; ovan. | B2BAccount (anpassad sökschemaklass) | Relationen mellan `accountID` och datauppsättningen B2B-Impressions har automatiskt skapats genom att datauppsättningen B2B-information kopplas till datauppsättningen B2B-Impression i Customer Journey Analytics, vilket beskrivs i stegen nedan. ![Sök](../assets/lookup-mixins.png) |
 
 Så här kombinerar du datauppsättningarna:
@@ -74,13 +74,13 @@ Så här kombinerar du datauppsättningarna:
 1. Namnge och beskriv anslutningen och konfigurera den enligt [dessa instruktioner](/help/connections/create-connection.md).
 1. Klicka på **[!UICONTROL Save]**.
 
-## 5. Skapa en datavy från den här anslutningen
+## 5. Skapa en datavy från den här anslutningen.
 
 Följ instruktionerna på [skapa datavyer](/help/data-views/create-dataview.md).
 
 * Lägg till alla komponenter (mått och mått) som du behöver från datauppsättningarna.
 
-## 6. Analysera data i arbetsytan
+## 6. Analysera data i Workspace
 
 Nu kan du skapa Workspace-projekt baserat på data från alla tre datauppsättningarna.
 
