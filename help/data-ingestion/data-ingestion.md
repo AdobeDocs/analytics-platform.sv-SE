@@ -4,9 +4,9 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,9 @@ Datauppsättningen i arkitekturen ovan kan komma från olika källor:
 
 - data från en pågående Adobe Analytics-driftsättning,
 
-- data från spårning av din webbplats/mobilapp med Adobe Experience Platform Web/Mobile SDK, eller
+- data från spårning av din webbplats/mobilapp med Adobe Experience Platform Web/Mobile SDK,
+
+- data från spårning av skrivbordsprogram, konsolspel, digitalbox eller IoT-enheter med Adobe Experience Platform Edge Network Server API, eller
 
 - data som kommer från en tredjepartsleverantör av data för vilken Adobe tillhandahåller en källanslutning.
 
@@ -46,11 +48,26 @@ Ni har redan driftsatt Adobe Analytics och vill importera dessa data i Adobe Exp
 
 Se [Importera och använda data från traditionella Adobe Analytics](./analytics.md) för mer information.
 
-## Importera och använda data via Adobe Experience Platform Web SDK
+
+## Importera och använda data via Edge Network
+
+### Använda Adobe Experience Platform Web SDK
 
 Ni vill analysera er webbplats med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra er persons beteende. Du vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data via Adobe Experience Platform Web SDK](./aepwebsdk.md) för mer information.
+
+### Använda Adobe Experience Platform Mobile SDK
+
+Du vill analysera mobilappen med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra en persons beteende i appen från grunden. Du vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
+
+Se [Importera och använda data via Adobe Experience Platform Mobile SDK](./aepmobilesdk.md) för mer information.
+
+### Använda API:t för Adobe Experience Platform Edge Network Server
+
+Du vill analysera datorprogrammet, spelet som det spelas på en spelkonsol, användningen av ett program för direktuppspelad video i en digitalbox eller IoT-enheten med Adobe-teknik. Kan migrera från en annan lösning eller börja spåra en persons beteende på dessa enheter från grunden. Du vill följa Adobe bästa praxis för implementering, som använder API:erna för Adobe Experience Platform Edge Network Server och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
+
+Se [Importera och använda data via Adobe Experience Platform Edge Network Server API](./serverapi.md) för mer information.
 
 ## Importera och använda batchdata
 

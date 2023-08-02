@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2410'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,9 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
-| **Juli 2023** |
+| **Augusti 2023** | |
+| Snabbstartsguider för dataöverföring för mobilprogram och andra plattformar | Ytterligare startguider för dataöverföring med information om hur man importerar och använder data från mobilapplikationer eller andra plattformar (som datorapplikationer, spel på konsoler, applikationer på digitalboxar och IoT-enheter) i Customer Journey Analytics. [Läs mer](../data-ingestion/data-ingestion.md) |
+| **Juli 2023** | |
 | Sammanhangsmedvetna sessioner | Ett ämne har lagts till för den här datavyinställningen. [Läs mer](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics är ett nytt sätt att interagera med data och insikter över flera kanaler i Customer Journey Analytics. Dessa nya funktioner gör det möjligt för produktteamen att självbetjäna data och insikter om sina produktupplevelser via [guidad analys](/help/guided-analysis/overview.md) &#x200B;. |
 | Härledda fält | A [härlett fält](/help/data-views/derived-fields/derived-fields.md) gör att du kan definiera (ofta komplexa) dataändringar direkt med hjälp av ett anpassningsbart regelverktyg. |
