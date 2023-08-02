@@ -1,19 +1,18 @@
 ---
-title: Importera data via Adobe Experience Platform Web SDK
-description: Förklara hur man importerar data till Customer Journey Analytics via Adobe Experience Platform Web SDK och Edge Network
+title: Importera data via Adobe Experience Platform Mobile SDK
+description: Förklara hur man importerar data till Customer Journey Analytics via Adobe Experience Platform Mobile SDK och Edge Network
 solution: Customer Journey Analytics
 feature: Basics
-exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 source-git-commit: 662e9645cdb4b67f364525167e5191a52c474864
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3124'
 ht-degree: 0%
 
 ---
 
-# Importera data via Adobe Experience Platform Web SDK
+# Importera data via Adobe Experience Platform Mobile SDK
 
-Den här snabbstartsguiden förklarar hur du kan importera data för webbplatsspårning direkt till Adobe Experience Platform med Adobe Experience Platform Web SDK och Edge Network och sedan använda dessa data i Customer Journey Analytics.
+Den här snabbstartsguiden förklarar hur du kan importera spårningsdata för mobilappar direkt till Adobe Experience Platform med Adobe Experience Platform Mobile SDK och Edge Network. Använd sedan dessa data i Customer Journey Analytics.
 
 För att uppnå detta måste du:
 
@@ -21,7 +20,7 @@ För att uppnå detta måste du:
 
 - **Konfigurera en datastream** för att konfigurera Adobe Experience Platform Edge Network så att insamlade data dirigeras till datauppsättningen som du konfigurerade i Adobe Experience Platform.
 
-- **Använd taggar** för att enkelt konfigurera regler och dataelement mot data i ditt datalager på din webbplats. Kontrollera sedan att data skickas till den dataström som är konfigurerad på Adobe Experience Platform Edge Network.
+- **Använd taggar** för att enkelt konfigurera regler och dataelement mot data i ditt mobilprogram. Kontrollera sedan att data skickas till den dataström som är konfigurerad på Adobe Experience Platform Edge Network.
 
 - **Distribuera och validera**. Ha en miljö där du kan iterera på taggutvecklingen och när allt har validerats publicerar du det direkt i produktionsmiljön.
 
@@ -33,12 +32,12 @@ För att uppnå detta måste du:
 
 >[!NOTE]
 >
-> Den här snabbstartsguiden är en förenklad guide om hur du importerar data som samlats in från din webbplats till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Den här snabbstartsguiden är en förenklad guide om hur du importerar data som samlats in från programmet till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera ett schema och en datauppsättning
 
-Om du vill importera data till Adobe Experience Platform måste du först definiera vilka data du vill samla in. Alla data som hämtas in till Adobe Experience Platform måste överensstämma med en standardiserad, normaliserad struktur för att de ska kunna identifieras och hanteras av funktioner och funktioner längre fram i kedjan. Experience Data Model (XDM) är standardramverket som tillhandahåller den här strukturen i form av scheman.
+Om du vill importera data till Adobe Experience Platform måste du först definiera vilka data du vill samla in. Alla data som hämtas in till Adobe Experience Platform måste överensstämma med en standardiserad, normaliserad struktur för att de ska kunna identifieras och hanteras av funktioner och funktioner längre fram i kedjan. Experience Data Model (XDM) är standardramverket som tillhandahåller en struktur i form av scheman.
 
 När du har definierat ett schema använder du en eller flera datauppsättningar för att lagra och hantera datainsamlingen. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd (vanligtvis en tabell) som innehåller ett schema (kolumner) och fält (rader).
 
@@ -46,8 +45,8 @@ Alla data som importeras till Adobe Experience Platform måste överensstämma m
 
 ### Konfigurera ett schema
 
-Du vill spåra minimala data från profiler som besöker webbplatsen, till exempel sidnamn och identifiering.
-Du måste först definiera ett schema som modellerar dessa data.
+Du vill spåra minimala data från profiler som använder din mobilapp, till exempel scennamn och identifiering.
+Först måste du definiera ett schema som modellerar dessa data.
 
 Så här konfigurerar du ditt schema:
 
@@ -59,7 +58,7 @@ Så här konfigurerar du ditt schema:
 
    >[!INFO]
    >
-   >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som sidvy, lägg till i kundvagn). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+   >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
 
 
 3. I [!UICONTROL Untitled schema] skärm:
@@ -74,13 +73,13 @@ Så här konfigurerar du ditt schema:
 
       Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
-   3. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL AEP Web SDK ExperienceEvent]** fältgrupp från listan.
+   3. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL AEP Mobile SDK ExperienceEvent]** fältgrupp från listan.
 
-      ![AEP Web SDK ExperienceEvent, fältgrupp](./assets/select-aepwebsdk-experienceevent.png)
+      ![AEP Mobile Lifecycle Details, fältgrupp](./assets/select-aepmobilesdk-experienceevent.png)
 
-      Du kan välja knappen Förhandsgranska om du vill se en förhandsgranskning av fälten som är en del av den här fältgruppen, som `web > webPageDetails > name`.
+      Du kan välja knappen Förhandsgranska om du vill se en förhandsgranskning av fälten som är en del av den här fältgruppen, som `application > name`.
 
-      ![AEP Web SDK ExperienceEvent, fältgruppförhandsgranskning](./assets/aepwebsdk-experiencevent-preview.png)
+      ![AEP Mobile Lifecycle Details (fältgruppsförhandsgranskning)](./assets/aepmobilesdk-experienceevent-preview.png)
 
       Välj **[!UICONTROL Back]** för att stänga förhandsgranskningen.
 
@@ -88,19 +87,19 @@ Så här konfigurerar du ditt schema:
 
 4. Välj **[!UICONTROL +]** bredvid schemanamnet i [!UICONTROL Structure] -panelen.
 
-   ![Knappen Lägg till fält i exempelschema](./assets/example-schema-plus.png)
+   ![Knappen Lägg till fält i exempelschema](./assets/example-mobileschema-plus.png)
 
-5. I [!UICONTROL Field Properties] panel, ange `Identification` som namn, **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
+5. I [!UICONTROL Field Properties] panel, ange `identification` som [!UICONTROL Field name], **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
 
-   ![Identifieringsobjekt](./assets/identification-field.png)
+   ![Identifieringsobjekt](./assets/identification-field-mobile.png)
 
-   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I ditt fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
+   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I så fall vill du identifiera profiler med din mobilapp med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
 6. Välj **[!UICONTROL ecid]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och **[!UICONTROL ECID]** från [!UICONTROL Identity namespace] i den högra panelen.
 
-   ![Ange ECID som identitet](./assets/specify-identity.png)
+   ![Ange ECID som identitet](./assets/specify-identity-mobile.png)
 
    Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sy ihop) beteendet hos profiler med samma ECID.
 
@@ -108,7 +107,7 @@ Så här konfigurerar du ditt schema:
 
 7. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] listan i [!UICONTROL Field Properties] -panelen.
 
-   ![Ange e-postadress som identitet](./assets/specify-email-identity.png)
+   ![Ange e-postadress som identitet](./assets/specify-email-identity-mobile.png)
 
    Du anger e-postadressen som en annan identitet som kan användas av tjänsten Adobe Experience Platform Identity för att kombinera (sammanfoga) beteendet för profiler.
 
@@ -130,9 +129,9 @@ Så här konfigurerar du ditt schema:
 
 9. Välj **[!UICONTROL Save]** för att spara ditt schema.
 
-Du har skapat ett minimalt schema som modellerar de data som du kan hämta från webbplatsen. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profil ser du till att data som hämtas från din webbplats läggs till i kundprofilen i realtid.
+Du har skapat ett minimalt schema som modellerar de data du kan hämta från ditt mobilprogram. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profilen ser du till att data som hämtas från mobilappen läggs till i kundprofilen i realtid.
 
-Bredvid beteendedata kan du även hämta profilattributdata från din webbplats (till exempel information om profiler som prenumererar på ett nyhetsbrev).
+Bredvid beteendedata kan du även hämta profilattributdata från ditt mobilprogram (till exempel information om profiler som prenumererar på ett nyhetsbrev).
 
 Så här hämtar du profildata:
 
@@ -150,7 +149,7 @@ Se [Skapa och redigera scheman i användargränssnittet](https://experienceleagu
 
 ### Konfigurera en datauppsättning
 
-Med ditt schema har du definierat din datamodell. Nu måste du definiera konstruktionen för att lagra och hantera data, vilket sker via datauppsättningar.
+Med ditt schema har du definierat din datamodell. Nu måste du definiera konstruktionen för att lagra och hantera data med hjälp av datauppsättningar.
 
 Så här konfigurerar du datauppsättningen:
 
@@ -188,7 +187,7 @@ Se [Användargränssnittshandbok för datauppsättningar](https://experienceleag
 
 En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När du samlar in data med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
 
-I din konfiguration vill du att de data du samlar in från webbplatsen ska skickas till din datauppsättning i Adobe Experience Platform.
+I din konfiguration vill du att de data du samlar in från mobilappen ska skickas till din datauppsättning i Adobe Experience Platform.
 
 Så här konfigurerar du datastream:
 
@@ -216,15 +215,15 @@ Så här konfigurerar du datastream:
 
    4. Lämna de andra inställningarna och välj **[!UICONTROL Save]** för att spara datastream.
 
-Din datastream är nu konfigurerad för att vidarebefordra data som samlats in från din webbplats till din datauppsättning i Adobe Experience Platform.
+Din datastream är nu konfigurerad för att vidarebefordra data som samlats in från din mobilapp till datauppsättningen i Adobe Experience Platform.
 
-Se [Översikt över datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) om du vill ha mer information om hur du konfigurerar ett datastam och hur du hanterar känsliga data.
+Se [Översikt över datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) om du vill ha mer information om hur du konfigurerar ett datastam och hur du hanterar känsliga data.
 
 
 
 ## Använd taggar
 
-Om du vill implementera kod på din webbplats för att samla in data använder du taggfunktionen i Adobe Experience Platform . Med tagghanteringslösningen kan ni driftsätta kod tillsammans med andra taggningskrav. Taggar är sömlösa och integrerade med Adobe Experience Platform med tillägget Adobe Experience Platform Web SDK.
+Om du vill implementera kod på din webbplats för att samla in data använder du taggfunktionen i Adobe Experience Platform. Med tagghanteringslösningen kan ni driftsätta kod tillsammans med andra taggningskrav. Taggar erbjuder sömlös integrering med Adobe Experience Platform via tillägget Adobe Experience Platform Mobile SDK.
 
 ### Skapa en tagg
 
@@ -232,88 +231,54 @@ Om du vill implementera kod på din webbplats för att samla in data använder d
 
 2. Välj **[!UICONTROL New Property]**.
 
-   Namnge taggen och markera **[!UICONTROL Web]** och ange ett domännamn. Välj **[!UICONTROL Save]** för att fortsätta.
+   Namnge taggen och markera **[!UICONTROL Mobile]**. Välj **[!UICONTROL Save]** för att fortsätta.
 
-   ![Skapa en egenskap](./assets/create-property.png)
+   ![Skapa en egenskap](./assets/create-mobile-property.png)
 
 ### Konfigurera taggen
 
 När du har skapat taggen måste du konfigurera den med rätt tillägg och konfigurera dataelement och regler efter hur du vill spåra webbplatsen och skicka data till Adobe Experience Platform.
 
-Välj den nyligen skapade taggen i listan över [!UICONTROL Tag Properties] för att öppna den.
+Om du vill konfigurera väljer du den nyligen skapade taggen i listan över [!UICONTROL Tag Properties].
 
 
 #### **Tillägg**
 
-För att vara säker på att du kan skicka data till Adobe Experience Platform (via din datastream) lägger du till Adobe Platform Web SDK-tillägget i taggen.
+Lägg till tillägget Adobe Platform Edge Network i taggen så att du kan skicka data till Adobe Experience Platform (via din datastream).
 
-Så här skapar och konfigurerar du Adobe Experience Platform Web SDK-tillägget:
+Så här skapar och konfigurerar du Adobe Experience Platform Mobile SDK-tillägget:
 
-1. Välj **[!UICONTROL Extensions]** till vänster.
+1. Välj **[!UICONTROL Extensions]** till vänster. Du ser att tilläggen Mobile Core och Profile redan är tillgängliga.
 
-2. Välj **[!UICONTROL Catalog]** i det övre fältet.
+1. Välj **[!UICONTROL Catalog]** i det övre fältet.
 
-3. Sök efter eller bläddra till Adobe Experience Platform Web SDK-tillägget och välj **[!UICONTROL Install]** för att installera den.
+1. Sök efter eller bläddra till **[!UICONTROL Adobe Experience Platform Edge Network]** och välj **[!UICONTROL Install]** i den högra rutan för att installera den.
 
-   <img src="./assets/aepwebsdk-extension.png" width="35%"/>
+1. Välj din sandlåda och din tidigare skapade datastream för din [!UICONTROL Production Environment] och (valfritt) [!UICONTROL Staging Environment] och [!UICONTROL Development Environment].
 
-4. Välj din sandlåda och din tidigare skapade datastream för din [!UICONTROL Production Environment] och (valfritt) [!UICONTROL Staging Environment] och [!UICONTROL Development Environment].
+   ![Konfiguration av AEP Mobile SDK-tillägg](./assets/aepmobilesdk-extension-datastream.png)
 
-   ![Konfiguration av AEP Web SDK-tillägg](./assets/aepwebsk-extension-datastreams.png)
+1. Ange **[!UICONTROL Edge Network domain]** under [!UICONTROL Domain configuration]. Används vanligtvis `<organizationName>.data.adobedc.net`.
 
-   Välj **[!UICONTROL Save]**.
+1. Välj **[!UICONTROL Save]**.
 
-Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) för mer information.
+Se [Konfigurera Adobe Experience Platform Edge Network-tillägget](https://developer.adobe.com/client-sdks/documentation/edge-network) för mer information.
 
-Du vill också konfigurera Experience Cloud ID-tjänsttillägget så att du enkelt kan använda Experience Cloud ID. Experience Cloud ID-tjänsten identifierar personer i alla Adobe Experience Cloud-lösningar.
+Du vill också konfigurera följande tillägg från katalogen:
 
-Så här skapar och konfigurerar du tjänsttillägget Experience Cloud ID:
+- Identitet.
+- AEP Assurance.
+- Godkännande.
 
-1. Välj **[!UICONTROL Extensions]** till vänster.
-
-2. Välj **[!UICONTROL Catalog]** i det övre fältet.
-
-3. Sök efter eller bläddra till Experience Cloud ID-tjänsttillägget och välj **[!UICONTROL Install]** för att installera den.
-
-   <img src="./assets/ecid-extension.png" width="35%"/>
-
-4. Använd standardinställningarna för alla konfigurationer.
-
-5. Välj **[!UICONTROL Save]**.
+Se [Konfigurera en taggegenskap](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=en) i självstudiekursen för mobilappar för Experience-plattformen för mer information om tillägg och deras konfiguration.
 
 #### **Dataelement**
 
-Dataelement är byggstenarna för dataordlistan (eller datamappningen). Använd dataelement för att samla in, ordna och leverera data över marknadsförings- och annonseringsteknologier. Du ställer in dataelement i taggen som läser från datalagret och kan användas för att leverera data till Adobe Experience Platform.
+Dataelement är byggstenarna för dataordlistan (eller datamappningen). Använd dataelement för att samla in, ordna och leverera data över marknadsförings- och annonseringsteknologier. Du ställer in dataelement i taggen som läser från mobilappsdata eller händelser och kan användas för att leverera data till Adobe Experience Platform.
 
-Det finns olika typer av dataelement. Du ställer först in ett dataelement för att fånga det sidnamn som personer tittar på på din webbplats.
+Du vill till exempel samla in transportföretagsnamnet från mobilappen.
 
-Så här definierar du ett dataelement för sidnamn:
-
-1. Välj **[!UICONTROL Data Elements]** till vänster.
-
-2. Välj **[!UICONTROL Add Data Element]**.
-
-3. I [!UICONTROL Create Data Element] dialog:
-
-   - Ge dataelementet ett namn, till exempel `Page Name`.
-
-   - Välj **[!UICONTROL Core]** från [!UICONTROL Extension] lista.
-
-   - Välj **[!UICONTROL Page Info]** från [!UICONTROL Data Element Type] lista.
-
-   - Välj **[!UICONTROL Title]** från [!UICONTROL Attribute] lista.
-
-     ![Skapa datumelement med sidinformation](./assets/create-dataelement-1.png)
-
-     Du kan till exempel ha använt värdet från en variabel i datalagret `pageName` och [!UICONTROL JavaScript Variable] dataelementtyp för att definiera dataelementet.
-
-     ![Skapa dataelement med JavaScript-variabel](./assets/create-dataelement-2.png)
-
-   - Välj **[!UICONTROL Save]**.
-
-Nu vill du ställa in ett dataelement som refererar till det Experience Cloud-ID som automatiskt tillhandahålls av Adobe Experience Platform Web SDK och som är tillgängligt via tillägget Experience Cloud ID-tjänst.
-
-Så här definierar du ett ECID-dataelement:
+Så här definierar du ett dataelement för transportföretagsnamn:
 
 1. Välj **[!UICONTROL Data Elements]** till vänster.
 
@@ -321,53 +286,25 @@ Så här definierar du ett ECID-dataelement:
 
 3. I [!UICONTROL Create Data Element] dialog:
 
-   - Ge dataelementet ett namn, till exempel `ECID`.
+   - Ge dataelementet ett namn, till exempel `Carrier Name`.
 
-   - Välj **[!UICONTROL Experience Cloud ID Service]** från [!UICONTROL Extension] lista.
+   - Välj **[!UICONTROL Mobile Core]** från [!UICONTROL Extension] lista.
 
-   - Välj **[!UICONTROL ECID]** från [!UICONTROL Data Element Type] lista.
-
-     ![ECID-dataelement](./assets/ecid-dataelement.png)
-
-   - Välj **[!UICONTROL Save]**.
-
-Slutligen vill du nu mappa något av dina specifika dataelement till det schema du definierade tidigare. Du definierar ett annat dataelement som tillhandahåller en representation av XDM-schemat.
-
-Så här definierar du ett XDM-objektdataelement:
-
-1. Välj **[!UICONTROL Data Elements]** till vänster.
-
-2. Välj **[!UICONTROL Add Data Element]**.
-
-3. I [!UICONTROL Create Data Element] dialog:
-
-   - Ge dataelementet ett namn, till exempel `XDM - Page View`.
-
-   - Välj **[!UICONTROL Adobe Experience Platform Web SDK]** från [!UICONTROL Extension] lista.
-
-   - Välj **[!UICONTROL XDM Object]** från [!UICONTROL Data Element Type] lista.
-
-   - Välj din sandlåda i [!UICONTROL Sandbox] lista.
-
-   - Välj ditt schema från [!UICONTROL Schema] lista.
-
-   - Mappa `identification > core > ecid` -attribut, som definieras i ditt schema, till ECID-dataelementet. Välj cylinderikonen för att enkelt välja ECID-dataelementet från listan med dataelement.
-
-     ![Välj ECID-dataelement](./assets/pick-ecid-dataelement.png)
-
-     ![Mappa ECID-dataelement](./assets/map-ecid.png)
+   - Välj **[!UICONTROL Carrier Name]** från [!UICONTROL Data Element Type] lista.
 
 
-   - Mappa `web > webPageDetails > name` -attribut, som definieras i ditt schema, till dataelementet Sidnamn.
-
-     ![Mappa dataelement för sidnamn](./assets/map-pagename.png)
+     ![Skapa datumelement med sidinformation](./assets/create-dataelement-mobile.png)
 
    - Välj **[!UICONTROL Save]**.
+
+Du kan skapa så många dataelement du vill och använda dem i regler.
 
 
 #### **Regler**
 
-Taggar i Adobe Experience Platform följer ett regelbaserat system. De letar efter användarinteraktion och tillhörande data. När villkoren som beskrivs i reglerna är uppfyllda utlöser regeln det tillägg, skript eller den klientkod som du identifierade. Du kan använda regler för att skicka data (som ett XDM-objekt) till Adobe Experience Platform med tillägget Adobe Experience Platform Web SDK.
+Taggar i Adobe Experience Platform följer ett regelbaserat system. De letar efter användarinteraktion och tillhörande data. När villkoren som beskrivs i reglerna är uppfyllda utlöser regeln det tillägg, skript eller den klientkod som du identifierade. Du kan använda regler för att skicka data (som ett XDM-objekt) till Adobe Experience Platform med tillägget Adobe Experience Platform Edge Network.
+
+Du vill till exempel skicka händelsedata när mobilappen används (i förgrunden) och när mobilappen inte används (överförs tillbaka till bakgrunden).
 
 Så här definierar du en regel:
 
@@ -377,49 +314,45 @@ Så här definierar du en regel:
 
 3. I [!UICONTROL Create Rule] dialog:
 
-   - Namnge regeln, till exempel `Page View`.
+   - Namnge regeln, till exempel `Application Status`.
 
    - Välj **[!UICONTROL + Add]** under [!UICONTROL Events].
 
    - I [!UICONTROL Event Configuration] dialog:
 
-      - Välj **[!UICONTROL Core]** från [!UICONTROL Extension] lista.
+      - Välj **[!UICONTROL Mobile Core]** från [!UICONTROL Extension] lista.
 
-      - Välj **[!UICONTROL Window Loaded]** från [!UICONTROL Event Type] lista.
-
-        ![Regel - händelsekonfiguration](./assets/event-windowloaded-pageview.png)
+      - Välj **[!UICONTROL Foreground]** från [!UICONTROL Event Type] lista.
 
       - Välj **[!UICONTROL Keep Changes]**.
 
+   - Klicka ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) nästa [!UICONTROL Mobile Core - Foreground].
 
+      - Välj **[!UICONTROL Mobile Core]** från [!UICONTROL Extension] lista.
 
-   - Välj **[!UICONTROL + Add]** under [!UICONTROL Actions].
+      - Välj **[!UICONTROL Background]** från [!UICONTROL Event Type] lista.
 
-   - I [!UICONTROL Action Configuration] dialog:
+      - Välj **[!UICONTROL Keep Changes]**.
 
-      - Välj **[!UICONTROL Adobe Experience Platform Web SDK]** från [!UICONTROL Extension] lista.
+   - Klicka ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Lägg till under [!UICONTROL ACTIONS]. I [!UICONTROL Action Configuration] dialog:
 
-      - Välj **[!UICONTROL Send Event]** från [!UICONTROL Action Type] lista.
+      - Välj **[!UICONTROL Adobe Experience Platform Edge Network]** från [!UICONTROL Extension] lista.
 
-      - Välj **[!UICONTROL web.webpagedetails.pageViews]** från [!UICONTROL Type] lista.
-
-      - Markera cylinderikonen bredvid  [!UICONTROL XDM data] och välj **[!UICONTROL XDM - Page View]** från listan med dataelement.
-
-     ![Regel - åtgärdskonfiguration](./assets/action-pageview-xdm.png)
+      - Välj **[!UICONTROL Forward event to Edge Network]** från [!UICONTROL Action Type] lista.
 
       - Välj **[!UICONTROL Keep Changes]**.
 
    - Regeln ska se ut så här:
 
-     ![Skapa regel](assets/rule-pageview.png)
+     ![Skapa regel](assets/rule-appstatus.png)
 
    - Välj **[!UICONTROL Save]**.
 
-Ovanstående är bara ett exempel på en regel som skickar XDM-data, som innehåller värden från andra dataelement, till Adobe Experience Platform.
+Ovanstående är bara ett exempel på en regel som skickar XDM-data med programstatus till Adobe Edge-nätverket och till Adobe Experience Platform.
 
 Du kan använda regler på olika sätt i taggen för att hantera variabler (med dataelementen).
 
-Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) för mer information.
+Se [Regler](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform) för mer information.
 
 ### Skapa och publicera taggen
 
@@ -439,7 +372,7 @@ Så här skapar och publicerar du en tagg:
 
    - Välj **[!UICONTROL + Add All Changed Resources]**.
 
-     ![Publicera - Skapa bibliotek](./assets/create-library-aep.png)
+     ![Publicera - Skapa bibliotek](./assets/build-library-mobile.png)
 
    - Välj **[!UICONTROL Save & Build to Development]**.
 
@@ -447,42 +380,38 @@ Så här skapar och publicerar du en tagg:
 
 4. Du kan välja **[!UICONTROL ...]** för att återskapa biblioteket eller flytta biblioteket till en staging- eller produktionsmiljö.
 
-   ![Publicera - Bygg bibliotek](./assets/build-library.png)
+Adobe Experience Platform Tags har stöd för enkla till komplexa publiceringsarbetsflöden som passar din driftsättning av Adobe Experience Platform Edge Network.
 
-Adobe Experience Platform Tags stöder enkla till komplexa publiceringsarbetsflöden som passar din användning av Adobe Experience Platform Web SDK.
-
-Se [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) för mer information.
+Se [Översikt över publicering](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration) för mer information.
 
 
 ### Hämta din taggkod
 
-Slutligen måste du installera taggen på den webbplats som du vill spåra, vilket innebär att du måste placera koden i rubriktaggen för webbplatsens mall.
+Slutligen måste du använda taggen i den mobilapp du vill spåra.
 
-Så här hämtar du koden som refererar till din tagg:
+Så här får du kodanvisningar som förklarar hur du konfigurerar din mobilapp och använder taggen i appen:
 
 1. Välj **[!UICONTROL Environments]** till vänster.
 
-2. Välj rätt installationsknapp i listan över miljöer.
+2. Välj rätt installation i listan över miljöer ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) -knappen.
 
-   I [!UICONTROL Web Install Instructions] markerar du kopieringsknappen bredvid skriptkoden som ska se ut så här:
+   I [!UICONTROL Mobile Install Instructions] väljer du lämplig plattform ([!UICONTROL iOS], [!UICONTROL Android]). Använd sedan kopian ![Kopiera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) -knapp bredvid varje relevant kodfragment som du vill använda för att konfigurera och initiera din mobilapp:
 
-   ```
-   <script src="https://assets.adobedtm.com/2a518741ab24/.../launch-...-development.min.js" async></script>>
-   ```
-
-   ![Miljö](./assets/environment.png)
+   ![Miljö](./assets/environment-mobile.png)
 
 3. Välj **[!UICONTROL Close]**.
 
-I stället för koden för utvecklingsmiljön kan du ha valt en annan miljö (staging, production) baserat på var du håller på att distribuera Adobe Experience Platform Web SDK.
+I stället för koden för utvecklingsmiljön kan du ha valt en annan miljö (testmiljö, produktion) baserat på var du håller på att distribuera Adobe Experience Platform Mobile SDK.
 
 Se [Miljö](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?) för mer information.
 
 ## Distribuera och validera
 
-Nu kan du distribuera koden till utvecklingsversionen av webbplatsen inifrån `<head>` -tagg. När webbplatsen distribueras börjar den samla in data till Adobe Experience Platform.
+Nu kan du distribuera koden i din mobilapp. När appen distribueras börjar den samla in data till Adobe Experience Platform.
 
 Validera implementeringen, korrigera den där det behövs och installera den sedan korrekt i din staging- och produktionsmiljö med publiceringsarbetsflödesfunktionen i Tags.
+
+Se [Implementera Adobe Experience Cloud i mobilappar, genomgång](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html) för mycket mer detaljerad information.
 
 ## Konfigurera en anslutning
 
@@ -508,9 +437,9 @@ Så här skapar du en anslutning:
 
    I [!UICONTROL Select datasets] stega in [!UICONTROL Add datasets]:
 
-   - Välj den datauppsättning som du skapade tidigare (`Example dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
+   - Välj datauppsättningar som du har skapat tidigare och/eller andra relevanta datauppsättningar som du vill inkludera i din anslutning (till exempel data för Push Tracking Experience Events och Push Profile från Adobe Journey Optimizer)
 
-     ![Lägg till datauppsättningar](./assets/cja-connections-2b.png)
+     ![Lägg till datauppsättningar](./assets/cja-connections-ajopush.png)
 
    - Välj **[!UICONTROL Next]**.
 
@@ -524,7 +453,7 @@ Så här skapar du en anslutning:
 
       - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
-     ![Konfigurera datauppsättningar](./assets/cja-connections-3b.png)
+     ![Konfigurera datauppsättningar](./assets/cja-connections-ajopushid.png)
 
    - Välj **[!UICONTROL Add datasets]**.
 
@@ -556,7 +485,7 @@ Så här skapar du en datavy:
 
    Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i [!UICONTROL METRICS] eller [!UICONTROL DIMENSIONS] komponentrutor.
 
-   ![Datavy-komponenter](./assets/cja-dataview-2.png)
+   ![Datavy-komponenter](./assets/cja-dataview-2-mobile.png)
 
    Välj **[!UICONTROL Save and continue]**.
 
@@ -591,12 +520,12 @@ Så här skapar du ditt projekt:
 
    ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
 
-5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel]. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] . Dra som ett exempel `Events` som mått och `Push Title` som dimension, uppdelad efter `Event Type` för att få en översikt över dina push-meddelanden för din mobilapp och vad som hände med dem.
 
-   ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
+   ![Arbetsyta - första rapporten](./assets/cja-projects-5-mobile.png)
 
 Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Sedan konfigurerade du en datastream på Edge Network för att säkerställa att data kan vidarebefordras till den datauppsättningen. Sedan definierade och distribuerade du taggen som innehåller tilläggen (Adobe Experience Platform Web SDK, Experience Cloud ID Service), dataelement och regler för att hämta data från webbplatsen och skicka dessa data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda data för webbplatsspårning och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
+>Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastam i Edge Network för att säkerställa att data kan vidarebefordras till den datauppsättningen. Sedan definierade och distribuerade du taggen som innehåller tilläggen (Adobe Experience Platform Edge Network med flera), dataelementen och reglerna för att hämta data från mobilappen och skicka dessa data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda push-meddelandespårningsdata för mobilappar och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era mobilappsdata.

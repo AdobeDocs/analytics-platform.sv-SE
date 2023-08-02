@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 26%
+source-wordcount: '971'
+ht-degree: 27%
 
 ---
 
@@ -53,7 +53,10 @@ ht-degree: 26%
    + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
    + Infoga och använda snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [Adobe Experience Platform Web SDK och Edge Network](../data-ingestion/aepwebsdk.md)
+      + Adobe Experience Platform Edge Network {#edge-network}
+         + [Webb-SDK](../data-ingestion/aepwebsdk.md)
+         + [Mobil-SDK](../data-ingestion/aepmobilesdk.md)
+         + [Server-API](../data-ingestion/serverapi.md)
       + [Batchdata](../data-ingestion/batch.md)
       + [Strömmande data](../data-ingestion/streaming.md)
       + [Källkopplingar](../data-ingestion/sources.md)

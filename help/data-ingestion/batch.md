@@ -4,9 +4,9 @@ description: Förklara hur du importerar och använder batchdata i Customer Jour
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1792'
 ht-degree: 0%
 
 ---
@@ -29,20 +29,20 @@ För att uppnå detta måste du:
 
 >[!NOTE]
 >
->Det här är en förenklad guide om hur man importerar batchdata till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Den här snabbstartsguiden är en förenklad guide om hur man importerar batchdata till Adobe Experience Platform och använder i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 ## Konfigurera ett schema och en datauppsättning
 
 Om du vill importera data till Adobe Experience Platform måste du först definiera vilka data du vill samla in. Alla data som hämtas in till Adobe Experience Platform måste överensstämma med en standardiserad, normaliserad struktur för att de ska kunna identifieras och hanteras av funktioner och funktioner längre fram i kedjan. Experience Data Model (XDM) är standardramverket som tillhandahåller den här strukturen i form av scheman.
 
-När du har definierat ett schema använder du en eller flera datauppsättningar för att lagra och hantera datainsamlingen. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader).
+När du har definierat ett schema använder du en eller flera datauppsättningar för att lagra och hantera datainsamlingen. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd (vanligtvis en tabell) som innehåller ett schema (kolumner) och fält (rader).
 
 Alla data som importeras till Adobe Experience Platform måste överensstämma med ett fördefinierat schema innan de kan sparas som en datauppsättning.
 
 ### Konfigurera ett schema
 
 För den här snabbstarten vill du samla in vissa lojalitetsdata, till exempel lojalitets-ID, förmånspoäng och lojalitetsstatus.
-Därför måste du först definiera ett schema som modellerar dessa data.
+Du måste först definiera ett schema som modellerar dessa data.
 
 Så här konfigurerar du ditt schema:
 
@@ -89,7 +89,7 @@ Så här konfigurerar du ditt schema:
 
    ![Identifieringsobjekt](./assets/identifcation-loyalty-field.png)
 
-   Detta lägger till identifieringsfunktioner i schemat. I ditt fall vill du identifiera lojalitetsinformation med e-postadressen från era batchdata.
+   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I ditt fall vill du identifiera lojalitetsinformation med e-postadressen från era batchdata.
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
@@ -105,7 +105,7 @@ Så här konfigurerar du ditt schema:
 
 7. Välj rotnivån för schemat (med schemanamnet) och välj sedan **[!UICONTROL Profile]** byt.
 
-   Du uppmanas att aktivera profilschemat. När data har aktiverats, när data har importerats till datauppsättningar som baseras på det här schemat, sammanfogas dessa data i kundprofilen i realtid.
+   Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
    Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) för mer information.
 
@@ -117,13 +117,13 @@ Så här konfigurerar du ditt schema:
 
 8. Välj **[!UICONTROL Save]** för att spara ditt schema.
 
-Du har skapat ett minimalt schema som modellerar de lojalitetsdata som du kan importera till Adobe Experience Platform. Schemat gör det möjligt att identifiera profiler med hjälp av e-postadressen. Genom att aktivera schemat för profilen ser du till att data från din gruppfil läggs till i kundprofilen i realtid.
+Du har skapat ett minimalt schema som modellerar de lojalitetsdata som du kan importera till Adobe Experience Platform. Schemat gör att profiler kan identifieras med e-postadressen. Genom att aktivera schemat för profilen ser du till att data från din gruppfil läggs till i kundprofilen i realtid.
 
 Se [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) om du vill ha mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema.
 
 ### Konfigurera en datauppsättning
 
-Med ditt schema har du definierat din datamodell. Nu måste du definiera konstruktionen för att lagra och hantera data. Detta görs via datauppsättningar.
+Med ditt schema har du definierat din datamodell. Nu måste du definiera konstruktionen för att lagra och hantera data, vilket sker via datauppsättningar.
 
 Så här konfigurerar du datauppsättningen:
 
@@ -151,7 +151,7 @@ Så här konfigurerar du datauppsättningen:
 
    >[!IMPORTANT]
    >
-   >    Du kan bara aktivera en datauppsättning för profilen när schemat, som datauppsättningen följer, också är aktiverat för profilen.
+   >Du kan bara aktivera en datauppsättning för profilen när schemat, som datauppsättningen följer, också är aktiverat för profilen.
 
    ![Aktivera schema för profil](./assets/loyalty-dataset-profile.png)
 
@@ -180,7 +180,7 @@ Så här använder du arbetsflöden:
 
    ![Mappa CSV till XDN](./assets/workflow-mapcsvtoxdm.png)
 
-3. I [!UICONTROL Map CSV to XDM schema] på [!UICONTROL Dataflow detail] steg:
+3. I [!UICONTROL Map CSV to XDM schema] på skärmen [!UICONTROL Dataflow detail] steg:
 
    Välj **[!UICONTROL Existing dataset]**, välj datauppsättningen i datauppsättningslistan och namnge [!UICONTROL Dataflow name].
 
@@ -208,7 +208,12 @@ Så här använder du arbetsflöden:
 
 6. Välj **[!UICONTROL Finish]** för att börja inhämta batchdata till Adobe Experience Platform.
 
-Se [Mappa en CSV-fil till ett befintligt XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) Om du vill ha mer information om hur du mappar data när inkommande data inte är kompatibla med ditt XDM-schema använder du mappningsmallar, använd beräkningsfält för att kontrollera att batchdata överensstämmer med vad schemat förväntar sig, med mera.
+Se [Mappa en CSV-fil till ett befintligt XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) för mer information om:
+
+- hur du mappar data när inkommande data inte är kompatibla med ditt XDM-schema.
+- använda mappningsmallar,
+- använda beräkningsfält för att säkerställa att batchdata överensstämmer med vad schemat förväntar sig,
+- med mera.
 
 
 ## Konfigurera en anslutning
@@ -233,7 +238,7 @@ Så här skapar du en anslutning:
 
    Välj **[!UICONTROL Add datasets]**.
 
-   I [!UICONTROL Select datasets] steg in [!UICONTROL Add datasets]:
+   I [!UICONTROL Select datasets] stega in [!UICONTROL Add datasets]:
 
    - Välj den datauppsättning som du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
 
@@ -241,7 +246,7 @@ Så här skapar du en anslutning:
 
    - Välj **[!UICONTROL Next]**.
 
-   I [!UICONTROL Datasets settings] steg in [!UICONTROL Add datasets]:
+   I [!UICONTROL Datasets settings] stega in [!UICONTROL Add datasets]:
 
    - För varje datauppsättning:
 
@@ -257,7 +262,7 @@ Så här skapar du en anslutning:
 
    Välj **[!UICONTROL Save]**.
 
-Se [Anslutningar - översikt](../connections/overview.md) om du vill ha mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.
+Se [Anslutningar - översikt](../connections/overview.md) för mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.
 
 ## Konfigurera en datavy
 
@@ -318,7 +323,7 @@ Så här skapar du ditt projekt:
 
    ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
 
-5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel]. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
    ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
 

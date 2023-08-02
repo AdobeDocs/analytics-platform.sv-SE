@@ -4,23 +4,23 @@ description: Förstå olika sätt att importera data till Customer Journey Analy
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
 
 # Översikt över dataöverföring
 
-Det finns ett antal alternativ när du ska importera data till Customer Journey Analytics. Vissa av dem utgår ifrån att man vill flytta traditionella Adobe Analytics-data över dem, vissa av dem utgår ifrån att man använder data som är insamlade i Adobe Experience Platform.
+Det finns flera sätt att importera data till Customer Journey Analytics. Vissa av dem utgår ifrån att man vill flytta traditionella Adobe Analytics-data över dem, vissa av dem utgår ifrån att man använder data som är insamlade i Adobe Experience Platform.
 
 >[!IMPORTANT]
 >
 >I alla scenarier är de data du vill ha _use_ i Customer Journey Analytics är _inkapslad_ i Adobe Experience Platform.
 
 
-Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en):
+Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Ökning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en):
 
 ![Customer Journey Analytics](./assets/cja-architecture.png)
 

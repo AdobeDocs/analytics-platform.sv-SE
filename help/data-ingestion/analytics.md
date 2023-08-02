@@ -4,9 +4,9 @@ description: Förklara hur man importerar data från traditionella Adobe Analyti
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 
 För att uppnå detta måste du:
 
-- **Konfigurera en Adobe Analytics-källanslutning** i Adobe Experience Platform. Det här tar hand om inmatningen av aktuella Adobe Analytics-data i en datauppsättning i Adobe Experience Platform.
+- **Konfigurera en Adobe Analytics-källanslutning** i Adobe Experience Platform. Källkopplingen hanterar inmatning av aktuella Adobe Analytics-data i en datauppsättning i Adobe Experience Platform.
 
-- **Konfigurera en anslutning** i Customer Journey Analytics. Den här anslutningen bör (åtminstone) innehålla din Adobe Experience Platform-datauppsättning.
+- **Konfigurera en anslutning** i Customer Journey Analytics. Anslutningen bör (åtminstone) innehålla din Adobe Experience Platform-datauppsättning.
 
 - **Konfigurera en datavy** i Customer Journey Analytics för att definiera mått och dimensioner som du vill använda i Analysis Workspace.
 
@@ -38,7 +38,7 @@ För att uppnå detta måste du:
 
 >[!NOTE]
 >
->Det här är en förenklad guide om hur du importerar data, använder Adobe Analytics källanslutning och använder dessa data i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Den här snabbstartsguiden är en förenklad guide om hur du importerar data med hjälp av Adobe Analytics källanslutning och använder dessa data i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera en Adobe Analytics-källanslutning
@@ -78,7 +78,7 @@ Så här skapar du en Adobe Analytics-källanslutning:
    ![Granska](./assets/review.png)
 
 
-När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten, inklusive inmatning av upp till 13 månaders historiska data för produktionssandlådor. (Observera att från och med den 26 april 2023 är bakåtfyllnaden i icke-produktionssandlådor begränsad till tre månader.)
+När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten. Dataflödet importerar upp till 13 månaders historiska data för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.
 
 När det första intaget är slutfört kan Adobe Analytics-rapportsvitens data användas av Customer Journey Analytics.
 
@@ -107,7 +107,7 @@ Så här skapar du en anslutning:
 
    Välj **[!UICONTROL Add datasets]**.
 
-   I [!UICONTROL Select datasets] steg in [!UICONTROL Add datasets]:
+   I [!UICONTROL Select datasets] stega in [!UICONTROL Add datasets]:
 
    - Markera datauppsättningen som skapas automatiskt av Adobe Analytics-källkopplingen och andra datauppsättningar som du vill ta med i anslutningen.
 
@@ -115,7 +115,7 @@ Så här skapar du en anslutning:
 
    - Välj **[!UICONTROL Next]**.
 
-   I [!UICONTROL Datasets settings] steg in [!UICONTROL Add datasets]:
+   I [!UICONTROL Datasets settings] stega in [!UICONTROL Add datasets]:
 
    - För varje datauppsättning:
 
@@ -131,7 +131,7 @@ Så här skapar du en anslutning:
 
    Välj **[!UICONTROL Save]**.
 
-Se [Anslutningar - översikt](../connections/overview.md) om du vill ha mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.
+Se [Anslutningar - översikt](../connections/overview.md) för mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.
 
 ## Konfigurera en datavy
 
@@ -192,7 +192,7 @@ Så här skapar du ditt projekt:
 
    ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
 
-5. Börja dra och släppa mått och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] för att skapa din första rapport. Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] . Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
    ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
 
@@ -201,5 +201,5 @@ Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Från och med att du konfigurerar Adobe Analytics datakällanslutning och konfigurerar den kopplingen för rapportsviten överförs dina Adobe Analytics-data automatiskt till Adobe Experience Platform. Du har definierat en anslutning i Customer Journey Analytics för att använda inmatade Adobe Analytics-data och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
+>Du har slutfört alla steg. Från och med att du konfigurerar Adobe Analytics datakällanslutning och konfigurerar den kopplingen för rapportsviten överförs dina Adobe Analytics-data automatiskt till Adobe Experience Platform. Du har definierat en anslutning i Customer Journey Analytics för att använda inkapslade Adobe Analytics-data och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
 
