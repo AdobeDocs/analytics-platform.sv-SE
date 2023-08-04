@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c1b92c9f30dc96a6058a320df9fd66cd316b212f
+source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2465'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Augusti 2023** | |
+| Funktioner i Adobe Customer Journey Analytics | Mer information finns i *Stöds på ett nytt sätt* tabellen över sessionerna i Customer Journey Analytics jämfört med Adobe Analytics. [Läs mer](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
+| Utveckling från Adobe Analytics | Uppdaterade *(Gör om)Konfigurera marknadsföringskanaler* -avsnitt med en referens till funktionsmallen för härledda fält Marknadskanaler. [Läs mer](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Snabbstartsguider för dataöverföring för mobilprogram och andra plattformar | Ytterligare startguider för dataöverföring med information om hur man importerar och använder data från mobilapplikationer eller andra plattformar (som datorapplikationer, spel på konsoler, applikationer på digitalboxar och IoT-enheter) i Customer Journey Analytics. [Läs mer](../data-ingestion/data-ingestion.md) |
 | **Juli 2023** | |
 | Sammanhangsmedvetna sessioner | Ett ämne har lagts till för den här datavyinställningen. [Läs mer](/help/data-views/context-aware-sessions.md) |
