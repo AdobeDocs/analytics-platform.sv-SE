@@ -4,9 +4,9 @@ description: Alla inställningar som du kan justera för att skapa eller rediger
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,11 @@ Att duplicera mått och dimensioner och sedan ändra specifika inställningar ä
 Du kan filtrera ![Filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) schemafält i den vänstra listen med [!UICONTROL data type], [!UICONTROL datasets], [!UICONTROL data governance]och [!UICONTROL other] kriterier ([!UICONTROL contains data], [!UICONTROL is identity]och [!UICONTROL is not deprecated]):
 
 ![Filtrera fält](assets/dataview-components-filter.png)
+
+>[!TIP]
+>
+>Om komponenterna inte läses in korrekt i datavyn och du får ett felmeddelande istället, se [Brist på behörigheter](../troubleshooting/lack-of-permissions.md) för en lösning.
+
 
 
 ## Inställningar
