@@ -1,56 +1,40 @@
 ---
-title: Dimensioner med mycket hög kardinalitet i Customer Journey Analytics
-description: Beskriver de bästa sätten att hantera högkardinalitetsmått i Customer Journey Analytics
+title: Höga kardinaldimensioner
+description: Beskriver hur Customer Journey Analytics hanterar dimensioner med många unika värden
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
-# Dimensioner med mycket hög kardinalitet
+# Höga kardinaldimensioner
 
-Customer Journey Analytics (Customer Journey Analytics) sätter inte gränser för antalet unika värden eller dimensionsposter som kan rapporteras inom en enda dimension. I vissa fall kan dock dimensioner med ett mycket stort antal unika poster - även kallade högkardinalitetsmått - påverka vad som kan rapporteras.
+När du använder en dimension som innehåller många unika värden kan den resulterande rapporten innehålla för många unika dimensionsobjekt för att visas eller beräknas. Resultaten trunkeras genom att dimensionsartiklar som anses vara minst viktiga tas bort. Dessa optimeringar görs för att bibehålla projekt- och produktprestanda.
 
-## Begränsningar
+När du begär en rapport med för många unika värden visar Analysis Workspace en indikator i dimensionshuvudet som anger att inte alla dimensionsobjekt inkluderas. Exempel: &quot;Rader: 1-50 av mer än 22 343 156&quot;. Nyckelordet &quot;mer än&quot; indikerar att viss optimering har tillämpats på rapporten för att returnera de viktigaste dimensionsobjekten.
 
-Beroende på antalet händelser i en viss Customer Journey Analytics Connection kan följande två begränsningar förekomma i samband med högkardinalitetsmått:
+![Förhandsgranska arbetsyta](assets/high-cardinality.png)
 
-### 1. Radantalet kanske inte är exakt rapporteringsbart
+## Bestämma vilka dimensionsobjekt som ska visas
 
-Radantalet i högkardinalitetsmått kanske inte är exakt rapporteringsbart. När detta inträffar kommer friformstabeller att ge en indikation, vilket visas nedan:
+Customer Journey Analytics bearbetar rapporter när de körs och distribuerar den kombinerade datauppsättningen till flera servrar. Data per bearbetningsserver grupperas efter person-ID, vilket innebär att en enda bearbetningsserver innehåller alla data för en viss person. När en server har bearbetat klart överför den sin deluppsättning av bearbetade data till en aggregeringsserver. Alla deluppsättningar av bearbetade data kombineras och returneras i form av en Workspace-rapport.
 
-![](assets/high-cardinality.png)
+Om någon enskild server bearbetar data som överskrider ett unikt tröskelvärde trunkeras resultaten innan den bearbetade datadeluppsättningen returneras. Trunkerade dimensionsobjekt bestäms utifrån det mätvärde som används för sortering.
 
-### 2. Beräknade mått kan använda uppskattningar för vissa funktioner och för sorteringsordning
+Om sorteringsmåttet är ett beräknat mått, använder servern måtten i det beräknade måttet för att avgöra vilka dimensionsobjekt som ska trunkeras. Eftersom beräknade mätvärden kan innehålla flera mätvärden av varierande betydelse kan resultaten bli mindre exakta. Vid beräkningen av&quot;Intäkt per person&quot; returneras till exempel det totala inkomstbeloppet och det totala antalet personer och aggregeras innan indelningen görs. Därför väljer varje enskild bearbetningsserver vilka objekt som ska tas bort utan att veta hur resultatet påverkar den övergripande sorteringen.
 
-Vid användning med stora kardinaldimensioner kan vissa beräkningsmått returnera uppskattningar, inklusive: Kolumnmaximum, Kolumngräns, Radantal, Medel, Medel, Percentile, Kvartpunkt, Standardavvikelse, Varians, Regressionsfunktioner samt T- och Z-funktioner.
+Även om vissa enskilda dimensionsobjekt saknas i kardinalrapporterna är kolumnsummorna korrekta och inte baserade på trunkerade data. Funktionen Antal distinkt i beräknade mått påverkas inte heller av trunkerade dimensionsobjekt.
 
-Dessutom kan sortering av en tabellkolumn med ett beräknat mått baseras på en uppskattning och kanske inte alltid återspeglar den exakta sorteringsordningen. Ett varningsmeddelande visas som varnar dig om att uppskattningar kan ha använts.
+## Bästa tillvägagångssätt för höga kardinalitetsmått
 
-Observera att även om beräknade värden ibland kan returnera uppskattningar är kolumnsummorna alltid korrekta och baseras aldrig på uppskattningar. När du använder standardvärden används heller aldrig uppskattningar och återspeglar alltid exakt sorteringsordning.
+Det bästa sättet att hantera stora kardinalitetsmått är att begränsa antalet dimensionsobjekt som en rapport behandlar. Eftersom alla rapporter bearbetas när de begärs kan du justera rapportparametrarna för att få omedelbara resultat. Adobe rekommenderar någon av följande optimeringar av högkardinalitetsmått:
 
-### Om alla dimensionsvärden beaktas
-
-Även om det finns begränsningar för vissa beräknade mått och antal dimensionsrader, ska du vara medveten om att följande funktioner alltid tar hänsyn till alla unika värden i alla dimensioner, oavsett om en dimension är mycket kardinal eller inte:
-
-* Måttattribuering och dimensionsallokering
-* Sökningar efter radobjekt som har tillämpats på en frihandsritabell
-* Filter som använder dimensioner eller dimensionsobjekt
-* Den ungefärliga distinkta funktionen för antal i beräknade värden
-* Inkludera/exkludera logik som tillämpas på alla mått och dimensioner i en datavy
-* Sök efter datauppsättningar som har lagts till i en anslutning
-
-## Bästa tillvägagångssätt för arbete med stora kardinaldimensioner
-
-För att eliminera varningar och uppskattningar som kan förekomma när du använder dimensioner med hög kardinalitet, rekommenderar vi att du minskar antalet rader som tas upp i rapporten med någon av följande metoder:
-
-* Lägg till ett filter i kolumnen eller panelen som påverkas.
-* Använd en sökning i din frihandstabell.
-* Använd en uppdelning på intressanta rader eller använd den högkardinala dimensionen som en detaljdimension.
-* Lägg till inkluderings-/exkluderingskriterier i dimensionens datavykonfiguration för att begränsa antalet unika värden som finns i dimensionen.
-
-Om du använder dessa tekniker kan du ofta eliminera oönskade uppskattningar eller varningar när du använder höga kardinaldimensioner.
+* Använd en [Filter](/help/components/filters/create-filters.md). Filter tillämpas när varje server bearbetar en delmängd av data.
+* Använd en sökning. Dimensioner som utesluts från söktermen tas bort från rapportresultaten, vilket gör det lättare att se de önskade dimensionsobjekten.
+* Använd en dimension för uppslagsdatauppsättning. Dimensionerna för uppslagsdatauppsättningen kombinerar dimensionsobjekt för händelsedatamängd, som begränsar antalet unika värden som returneras.
+* Använd [Inkludera/exkludera](/help/data-views/component-settings/include-exclude-values.md) -komponentinställning i datavyhanteraren.
+* Förkorta datumintervallet för begäran. Om många unika värden ackumuleras över tid kan ett kortare datumintervall i Workspace-rapporten begränsa antalet unika värden som servrar kan bearbeta.
