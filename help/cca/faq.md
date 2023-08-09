@@ -3,10 +3,9 @@ title: Vanliga frågor om flerkanalsanalys
 description: Frågor och svar om flerkanalsanalys
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
-feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 0%
@@ -22,7 +21,7 @@ Du kan använda en Flow-visualisering med datauppsättnings-ID-dimensionen.
 1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) och skapa ett tomt Workspace-projekt.
 2. Klicka på fliken Visualiseringar till vänster och dra en flödesvisualisering till arbetsytan till höger.
 3. Klicka på fliken Komponenter till vänster och dra dimensionen &quot;Datauppsättning-ID&quot; till mittplatsen med namnet &quot;Dimension eller Artikel&quot;.
-4. Denna flödesrapport är interaktiv. Klicka på något av värdena för att utöka flödena till efterföljande eller föregående sidor. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
+4. Den här flödesrapporten är interaktiv. Klicka på något av värdena för att utöka flödena till efterföljande eller föregående sidor. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
 
 Om du vill byta namn på dimensionsobjekt för datauppsättnings-ID kan du använda en uppslagsdatauppsättning.
 
@@ -69,11 +68,11 @@ Vissa mätvärden i Customer Journey Analytics liknar mätvärden i Adobe Analyt
 
 | **data sammanfogade med Customer Journey Analytics** | **data som inte sammanfogats med Customer Journey Analytics** | **Traditionell Adobe Analytics** | **Analytics Ultimate med CDA** |
 | ----- | ----- | ----- | ----- |
-| **Folk** = Antal distinkta `Person ID`s var `Stitched ID` väljs som `Person ID`. **Folk** kan vara högre eller lägre än **Unika besökare** i traditionell Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Folk** = Antal distinkta `Person ID`baseras på den kolumn som markerats som `Person ID`. **Folk** i Analytics-källanslutningsdatauppsättningar liknar **Unika besökare** i traditionell Adobe Analytics om `endUserIDs._experience.aaid.id` väljs som `Person ID` i Customer Journey Analytics. | **Unika besökare** = Antal distinkta person-ID:n. **Unika besökare** får inte vara samma som antalet distinkta **ECID** s. | Se [Folk](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
+| **Folk** = Antal distinkta `Person ID`s var `Stitched ID` väljs som `Person ID`. **Folk** kan vara högre eller lägre än **Unika besökare** i traditionell Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Folk** = Antal distinkta `Person ID`baseras på den kolumn som markerats som `Person ID`. **Folk** i Analytics-källanslutningsdatauppsättningar liknar **Unika besökare** i traditionell Adobe Analytics om `endUserIDs._experience.aaid.id` väljs som `Person ID` i Customer Journey Analytics. | **Unika besökare** = Antal distinkta person-ID. **Unika besökare** får inte vara samma som antalet distinkta **ECID** s. | Se [Folk](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
 | **Sessioner**: Definieras baserat på sessionsinställningarna i datavyn i Customer Journey Analytics. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i datavyn i Customer Journey Analytics. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i [CDA Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
 | **Händelser** = antal rader i sammanslagna data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med en tom `Persistent ID`. | **Händelser** = antal rader i osydda data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **Förekomster** i traditionell Adobe Analytics. Observera dock att om några händelser har en tom `Person ID` Dessa händelser ingår inte i Customer Journey Analytics i Experience Platform data-sjön. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
-Andra mätvärden kan likna dem i Customer Journey Analytics och i Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är i allmänhet jämförbar mellan traditionella Adobe Analytics och Customer Journey Analytics (oavsett om de är sydda eller inte). [Skillnader i funktionalitet](/help/getting-started/aa-vs-cja/cja-aa.md)), till exempel vid borttagning av dubbletter mellan Customer Journey Analytics och traditionella Adobe Analytics, kan orsaka skillnader mellan de två produkterna.
+Andra mätvärden kan likna dem i Customer Journey Analytics och i traditionell Adobe Analytics. Det totala antalet för Adobe Analytics [anpassade händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är i allmänhet jämförbar mellan traditionella Adobe Analytics och Customer Journey Analytics (oavsett om de är sydda eller inte). [Skillnader i funktionalitet](/help/getting-started/aa-vs-cja/cja-aa.md)) som avduplicering av händelser mellan Customer Journey Analytics och traditionella Adobe Analytics kan orsaka skillnader mellan de två produkterna.
 
 ## Kan CCA använda fält för identitetskarta?
 

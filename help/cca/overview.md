@@ -3,15 +3,15 @@ title: Översikt över flerkanalsanalys
 description: Nyckelanpassa person-ID:n från flera datauppsättningar till att sammanfoga personer.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
 
 ---
+
 
 # Översikt över flerkanalsanalys
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 * Hur många börjar sin upplevelse i en kanal och avslutar den i en annan?
 * Hur många interagerar med mitt varumärke? Hur många och vilka typer av enheter använder de? Hur överlappar de?
 * Hur ofta startar man en uppgift på en mobil enhet och sedan övergår till en stationär dator för att slutföra uppgiften? Kommer kampanjklickningar att leda till konvertering någon annanstans på en enhet?
-* Hur förändras min förståelse för kampanjens effektivitet om jag tar hänsyn till resor mellan olika enheter? Hur förändras min kanalanalys?
+* Hur förändras min förståelse för kampanjens effektivitet om jag tar hänsyn till resor mellan olika enheter? Hur förändras min trattanalys?
 * Vilka är de vanligaste sökvägarna som användare tar från en enhet till en annan? Var faller de? Var lyckas de?
 * Hur skiljer sig beteendet hos användare med flera enheter från dem som har en enda enhet?
 
@@ -50,7 +50,7 @@ Innan du använder flerkanalsanalys bör du kontrollera att din organisation har
 
 Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar för hur den kan användas.
 
-* Aktuella återskrivningsfunktioner är begränsade till ett steg (beständigt ID till tillfälligt ID). Återinmatning i flera steg (till exempel beständigt ID till ett tillfälligt ID och sedan till ett annat tillfälligt ID) stöds inte.
+* De nuvarande funktionerna för manuell inmatning är begränsade till ett steg (beständigt ID till tillfälligt ID). Återinmatning i flera steg (till exempel beständigt ID till ett tillfälligt ID och sedan till ett annat tillfälligt ID) stöds inte.
 * Endast händelsedatamängder stöds. Andra datauppsättningar, till exempel uppslagsdatauppsättningar, stöds inte.
 * Anpassade ID-mappningar som används i din organisation stöds inte.
 * Privat korsenhetsdiagram stöds inte.
@@ -72,7 +72,7 @@ När organisationen uppfyller alla krav och förstår sina begränsningar kan du
    * Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för
    * Kolumnnamnet för det beständiga ID:t för den önskade datauppsättningen (identifierare som visas på varje rad)
    * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (länken för personidentifierare mellan datauppsättningar)
-   * Din inställning [spela upp](replay.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster
+   * Din inställning [spela upp](replay.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslag eller att spela upp varje dag med ett 1-dagars uppslag
    * Namn på sandlåda.
 1. Adobe kundsupport kommer att arbeta tillsammans med Adobe-teknik för att möjliggöra flerkanalsanalys när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Adobe kundsupport kan ange det nya datauppsättnings-ID:t och namn på kolumn för person-ID.
 1. När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som i början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data så långt tillbaka i tiden.

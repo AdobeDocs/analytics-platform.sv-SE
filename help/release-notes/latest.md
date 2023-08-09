@@ -3,39 +3,40 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6b2df9ae90ef5663206e768b985749de38e263c
+source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 4%
+source-wordcount: '571'
+ht-degree: 5%
 
 ---
 
-# Aktuell versionsinformation för Adobe Customer Journey Analytics (juli 2023)
+# Aktuell versionsinformation för Adobe Customer Journey Analytics (augusti 2023)
 
-**Senaste uppdatering**: 25 juli 2023
+**Senaste uppdatering**: 9 augusti 2023
 
-Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsanteckningarna gäller den 9 augusti-13 september 2023. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya eller uppdaterade funktioner
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics** | Adobe Product Analytics är ett nytt sätt att interagera med data och insikter över flera kanaler i Customer Journey Analytics. Dessa nya funktioner gör det möjligt för produktteamen att självbetjäna data och insikter om sina produktupplevelser via guidade analysarbetsflöden &#x200B;. Team kan:<ul><li>Förstå mönster i användarengagemanget över tid &#x200B;</li><li>Spåra tillväxten och lojaliteten hos &#x200B;</li><li>Identifiera friktionsområden i produkten</li><li>Mät effekten av &#x200B; och första användningen av nya funktioner</li><li>Identifiera meningsfulla användarsegment för att engagera och vårda användare under hela deras livslånga resa med &#x200B;</li><li>Anslut till Analysis Workspace för djupare analyser och samarbete med analytiker</li></ul>Adobe Product Analytics är ett betalt tillägg till Customer Journey Analytics. Om din organisation vill bli etablerad för att använda den här funktionen kontaktar du kontoteamet på Adobe. [Läs mer](/help/guided-analysis/overview.md) | Ej tillämpligt | 17 juli 2023 |
-| **Härledda fält** | Detta representerar den första versionen av härledda fält. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan definiera det härledda fältet ytterligare som en komponent (mått eller dimension) i datavyer och sedan använda det härledda fältet som en komponent i Workspace.<p>Den här versionen har stöd för en marknadsföringskanalmall och följande funktioner:</p><ul><li>Sammanfoga</li><li>Skiftläge</li><li>Sök och ersätt</li><li>Sök</li><li>URL-parsning</li></ul> <p>[Läs mer](/help/data-views/derived-fields/derived-fields.md)</p> | 10 maj 2023 | 2 augusti 2023 |
-| **Utökat sökningsstöd för profil- och sökdata** | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer](/help/connections/create-connection.md) | 21 juni 2023 | 12 juli 2023 |
-| **Förbättringar i Report Builder** | <ul><li>Filtrera från cell för flera datablock. Du kan ändra filtren för flera datablock från en cell. Använd en fördefinierad cell, tilldela den till flera datablock och uppdatera data baserat på de filter som definieras i cellen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Visa och dölj rad- och kolumnrubriker. Du kan visa eller dölja tabellrubriker för datablock, eller rad- och kolumnrubriker för att formatera om tabellen och justera datablock i en rapport. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> | Ej tillämpligt | 19 juli 2023 |
+| **Förbättringar i Report Builder** | <ul><li>Hämta schemalagda aktiviteter från fliken Historik där du kan visa historiken för schemalagda aktiviteter. Hämta arbetsboken från den uppgiften. </li><li>Startdatum som dimension: gör att användare kan visa startdatumet för datablocket som en dimension i datablockets utdata. </li></ul> | Ej tillämpligt | 17 augusti 2023 |
+| **Valutakonvertering** | Kundresan ger möjlighet att stödja flera valutor. Du kan konvertera en valuta till en annan valuta i datavyinställningarna. [Läs mer](/help/data-views/component-settings/format.md) | Ej tillämpligt | 31 augusti 2023 |
+| **Stöd för A4T-klassificeringar i Analytics Source Connector** | Vi lägger till ett korrelations-ID för enkel koppling av klassificeringsdata för Adobe Target-aktiviteter och upplevelsehändelser. | Ej tillämpligt | 31 augusti 2023 |
+| **Rapporteringsaktivitetshanteraren** | Ger administratörer detaljerad insyn i hur de rapporterar förbrukning för varje anslutning, vilket gör det möjligt för administratörer att enkelt diagnostisera och sedan åtgärda kapacitetsproblem under högbelastade rapporteringstider. | Ej tillämpligt | 6 september 2023 |
+| **PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics** | Adobe Customer Journey Analytics SQL Connector ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) | Ej tillämpligt | 13 september 2023 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-317971; AN-319234; AN-320439; AN-320519; AN-321740; AN-322444; AN-323116
+AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
 
 ## Viktiga meddelanden för Customer Journey Analytics-administratörer
 
 | Meddelande | Meddelande har lagts till eller uppdaterats | Beskrivning |
 | --- | --- | --- |
-| **Förändringar i hur Customer Journey Analytics bearbetar data** | 22 juni 2023 | Vi ändrade nyligen hur vi behandlar data i Customer Journey Analytics.<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul> |
+| **Förändringar i hur Customer Journey Analytics bearbetar data** | 22 juni 2023 | Vi har nyligen ändrat hur vi behandlar data i Customer Journey Analytics.<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul> |
 
 {style="table-layout:auto"}
 

@@ -3,28 +3,28 @@ title: Så här spelar du upp
 description: Förstå begreppet"replay" i flerkanalsanalys
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
-feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
+
 # Så här spelar du upp
 
 Flerkanalsanalys gör att data kan skickas på en viss anslutning:
 
 * **Live-syn**: CCA försöker sammanfoga varje händelse när den kommer in. Nya Net-enheter till datauppsättningen som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
-* **Spela upp**: CCA&quot;repriser&quot; data baserat på unika identifierare som den har lärt sig. I det här steget sammanfogas nya enheter till anslutningen. Adobe har två repriser:
-   * Dagligen: Data spelas upp varje dag med ett 24-timmarsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade personer måste autentisera samma dag som de besöker er webbplats.
-   * Vecka: Data spelas upp en gång i veckan med ett 7-dagars uppslagsfönster. Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Data som är yngre än en vecka sammanfogas dock inte.
+* **Spela upp**: CCA&quot;repriser&quot; data baserat på unika identifierare som man har lärt sig. I det här steget sammanfogas nya enheter till anslutningen. Adobe har två repriser:
+   * Dagligen: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade personer måste autentisera samma dag som de besöker er webbplats.
+   * Varje vecka: Data spelas upp en gång i veckan med ett 7-dagars uppslagsfönster. Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Data som är yngre än en vecka sammanfogas dock inte.
 
 Data utanför uppslagsfönstret spelas inte upp igen. En person måste autentisera sig inom ett visst fönster för att kunna identifiera ett oautentiserat besök och ett autentiserat besök tillsammans. När en enhet känns igen sammanfogas den från den punkten och framåt.
 
-## Steg 1: Live-syn
+## Steg 1: Liveutjämning
 
 CCA försöker sammanfoga varje händelse när den samlas till kända enheter och kanaler. Titta på följande exempel där Bob använder två olika kanaler.
 
@@ -44,7 +44,7 @@ Både oautentiserade och autentiserade händelser på nya enheter räknas som se
 
 Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla händelser utom händelserna 1 och 4 sammansydda (de använder alla `Bob` identifierare). Attribution works on events 1 and 4 after replay stitching.
 
-## Steg 2: Spela upp sammanfogning
+## Steg 2: Spela upp sammanfogning igen
 
 Med regelbundna intervall (en gång i veckan eller en gång om dagen beroende på vilket fönster som valts) beräknar CCA om historiska data baserat på enheter som den nu känner igen. Om en enhet först skickar data utan att vara autentiserad och sedan loggar in, binder CCA dessa oautentiserade händelser till rätt person. Följande tabell representerar samma data som ovan, men visar olika tal baserat på hur data spelas upp.
 
