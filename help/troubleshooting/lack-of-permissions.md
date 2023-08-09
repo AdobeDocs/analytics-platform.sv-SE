@@ -4,7 +4,7 @@ description: Lär dig hur du felsöker problem som beror på bristande behörigh
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
-source-git-commit: 84a1cd485110be23b1977d916fc39e058b370066
+source-git-commit: 1905e37b76843a7622af4e874a2d74aceff55384
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Efter att du skapat en [Anslutning](../connections/overview.md) och [Datavy](../
 >[!ENDSHADEBOX]
 
 
-För att rätta detta fel måste du ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Se [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) för mer information.
+För att åtgärda det här felet måste du ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Se [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) för mer information.
 
 1. Navigera till användargränssnittet för Adobe Experience Platform.
 
