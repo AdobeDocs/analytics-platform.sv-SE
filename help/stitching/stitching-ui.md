@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Skapa och hantera sammanslagna datauppsättningar
 
+{{select-package}}
+
 Med hjälp av häftning kan administratörer sätta ihop identiteter på datauppsättningar som finns i Customer Journey Analytics. Med hjälp av datauppsättningar ökar exaktheten i en profils representation, vilket i slutänden ger bättre analys och rapportering.
 
-Med sammanfogningsprocessen kan du definiera en befintlig **beständigt ID** i en datauppsättning. Häfta sedan ihop den beständiga identifieraren för ett angivet uppspelningsfönster (varje dag, varje vecka) med den mest korrekta **tillfälligt ID** (person eller autentiserad identifierare) tillgänglig för den datauppsättningen. Exempel på transienta identifierare är e-post, telefonnummer, CRM-id eller andra identiteter som lagras i diagrammet. Se [Översikt](overview.md) för mer information om häftning.
+Med sammanfogningsprocessen kan du definiera en befintlig **beständigt ID** i en datauppsättning. Häfta sedan ihop den beständiga identifieraren för ett angivet uppspelningsfönster (varje dag, varje vecka) med den mest korrekta **tillfälligt ID** (person eller autentiserad identifierare) tillgänglig för den datauppsättningen. Exempel på transienta identifierare är e-post, telefonnummer, CRM-id eller andra identiteter som lagras i diagrammet. Se [Ökning](overview.md) för mer information om häftning.
 
 ## Skapa
 
@@ -50,17 +52,17 @@ Om du vill börja sammanfoga fogar skapar du en eller flera sammanfogade dataupp
 
       - Välj en datauppsättning och välj **[!UICONTROL ** Välj **]** för att fortsätta.
 
-   4. Välj en beständig identifierare i listrutan **[!UICONTROL ** Beständigt ID **]** lista.
+   4. Välj en beständig identifierare på menyn **[!UICONTROL ** Beständigt ID **]** lista.
 
    5. Välj en transient identifierare i **[!UICONTROL **&#x200B;Övergående ID **]** lista.
 
       Du ser att en förhandsvisningspanel visas för att beräkna mättnadsgraden (antal gånger det finns ett värde för var och en av de angivna identifierarna över antalet händelser) under de senaste sju dagarna. När beräkningen är klar visas färgerna på panelen om de minimala villkoren för att fästa bilden uppfylls (grönt) eller inte uppfylls (rött).
 
-      ![Skapa sammanfogad datamängd med mättnadsgrader](./assets/create-before-experimenting.png)
+      ![Skapa sammanfogad datamängd med statureringshastigheter](./assets/create-before-experimenting.png)
 
       Minimivillkoren är:
 
-      - beständig identifierarmättnad: ränta >= 95 %
+      - beständig identifierarmättnad: frekvens >= 95 %
 
       - transient identifier saturation: rate >= 5%
 
@@ -97,7 +99,7 @@ Du kan visa status för häftning i dialogrutan [!UICONTROL Stitched datasets] l
 
 - Välj **[!UICONTROL ** Stitlar **]** från **[!UICONTROL ** Datahantering **]** i det övre fältet.
 
-  Du ser en lista med sammanfogade datauppsättningar, som alla identifieras med [!UICONTROL Sandbox], [!UICONTROL Source dataset], [!UICONTROL Status], [!UICONTROL Backfill status], [!UICONTROL Owner]och [!UICONTROL Date created].
+  Du ser en lista över sammanfogade datauppsättningar, som alla identifieras med [!UICONTROL Sandbox], [!UICONTROL Source dataset], [!UICONTROL Status], [!UICONTROL Backfill status], [!UICONTROL Owner]och [!UICONTROL Date created].
 
   ![Översikt över sammanslagna datauppsättningar](./assets/overview-stitched-datasetts.png)
 
@@ -108,7 +110,7 @@ Du kan visa status för häftning i dialogrutan [!UICONTROL Stitched datasets] l
   | **[!UICONTROL ** Köad **]** | Begäran tas emot och behandlas snart. |
   | **[!UICONTROL ** Skapande **]** pågår | Resurser och nyligen sammansatta datauppsättningar håller på att skapas. |
   | **[!UICONTROL ** Teckning pågår **]** | Det finns resurser och sammanfogade datauppsättningar och sammanfogning pågår |
-  | **[!UICONTROL ** Fel **]** | Det är problem med att sy ihop. Ett schema kanske har ändrats mellan källdatauppsättningen och sammanfogade datauppsättningar, den dagliga volymen är för stor eller... (_**behöver mer information här...**_) |
+  | **[!UICONTROL ** Fel **]** | Det är problem med att sy ihop. Ett schema kanske har ändrats mellan källdatauppsättningen och sammanfogade datauppsättningar, den dagliga volymen är för stor eller.. (_**behöver mer information här...**_) |
 
   >[!INFO]
   >

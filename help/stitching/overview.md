@@ -3,7 +3,7 @@ title: Översikt över titlar
 description: Översikt över häftning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Översikt över titlar
 
-Identitetssammanfogning (eller helt enkelt sammanfogning) är en kraftfull funktion som ökar en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör det möjligt att smidigt kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID).
+Identitetssammanfogning (eller helt enkelt sammanfogning) är en kraftfull funktion som ökar en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID).
 
 När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att hjälpa till att lösa det. Med flerkanalsanalys kan ni attribuera callcenter-händelser till den annons som de ursprungligen klickade på.
 
@@ -24,6 +24,8 @@ Du kan dra nytta av flerkanalsanalys om du kombinerar en eller flera av dina sam
 
 
 ## Förutsättningar
+
+{{select-package}}
 
 >[!IMPORTANT]
 >
@@ -39,7 +41,7 @@ Innan du använder stygn bör du kontrollera att din organisation har förberett
 * Händelsedatauppsättningen i Adobe Experience Platform som du vill använda sammanfogning på måste ha två kolumner som hjälper till att identifiera besökare:
 
    * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Cloud Identity Service.
-   * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget vilken identifierare som helst. Vid textning tas det här fältet i beaktande för att innehålla den faktiska informationen om person-ID. För bästa resultat av sammanfogning bör ett tillfälligt ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID.
+   * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget vilken identifierare som helst. Vid textning tas det här fältet i beaktande för att innehålla den faktiska informationen om person-ID:t. För bästa resultat av sammanfogning bör ett tillfälligt ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID.
 Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning är det bättre att de andra datauppsättningarna också har en liknande gemensam identifierare.
 
 * Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du aktiverar sammanfogning av en händelsedatamängd.
@@ -53,11 +55,11 @@ När organisationen uppfyller alla krav och förstår [begränsningar](#limitati
 
 1. Kontakta Adobe kundsupport med följande information:
 
-   * En begäran om att aktivera sammanfogning.
+   * En begäran om aktivering av sammanfogning.
    * Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för.
    * Kolumnnamnet för det beständiga ID:t för den önskade datauppsättningen (identifierare som visas på varje rad).
    * Kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (personidentifieraren, som också fungerar som länk mellan datauppsättningar i samband med en anslutning).
-   * Din inställning [spela upp](explained.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
+   * Din inställning [spela upp](explained.md) frekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslag eller att spela upp varje dag med ett 1-dagars uppslag.
    * Namn på sandlåda.
 
 
@@ -65,7 +67,7 @@ När organisationen uppfyller alla krav och förstår [begränsningar](#limitati
 
 3. När Adobe aktiveras första gången fylls sydda data i bakgrunden som går tillbaka 60 dagar.
 
-4. Om du vill använda den nya sammanslagna datauppsättningen i en flerkanalsanalys måste du lägga till den i en [anslutning](../connections/overview.md) i Customer Journey Analytics tillsammans med andra datauppsättningar som behövs. Välj rätt person-ID för varje datauppsättning.
+4. Om du vill använda den nya sammanfogade datauppsättningen i en flerkanalsanalys måste du lägga till den i en [anslutning](../connections/overview.md) i Customer Journey Analytics tillsammans med andra datauppsättningar som behövs. Välj rätt person-ID för varje datauppsättning.
 
 5. [Skapa en datavy](/help/data-views/create-dataview.md) baserat på anslutningen.
 
@@ -106,7 +108,7 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 Stitching är en banbrytande och robust funktion, men har begränsningar för hur den kan användas.
 
-* Aktuella återskrivningsfunktioner är begränsade till ett steg (beständigt ID till tillfälligt ID). Återinmatning i flera steg (till exempel beständigt ID till ett tillfälligt ID och sedan till ett annat tillfälligt ID) stöds inte.
+* De nuvarande funktionerna för manuell inmatning är begränsade till ett steg (beständigt ID till tillfälligt ID). Återinmatning i flera steg (till exempel beständigt ID till ett tillfälligt ID och sedan till ett annat tillfälligt ID) stöds inte.
 * Endast händelsedatamängder stöds. Andra datauppsättningar, till exempel uppslagsdatauppsättningar, stöds inte.
 * Anpassade ID-mappningar som används i din organisation stöds inte.
 * Med hjälp av fästfunktionen omvandlas inte det fält som används för sammanfogning på något sätt. Vid Stitching används värdet i det angivna fältet som det finns i den osydda datauppsättningen inom datavjön. Smältningsprocessen är skiftlägeskänslig. Om ibland ordet &#39;Bob&#39; visas i fältet, och ibland ordet &#39;BOB&#39; visas, behandlas dessa id:n som två separata personer.

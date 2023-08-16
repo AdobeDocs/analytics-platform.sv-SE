@@ -4,7 +4,7 @@ description: Ett härlett fält anger ändringar av schemafält och/eller standa
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: bd017810cb0f7813bdada5e3e951b0f6d5b768e4
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '4165'
 ht-degree: 4%
@@ -24,7 +24,7 @@ Exempel:
 
 - Definiera ett härlett sidnamnsfält som korrigerar felaktiga insamlade sidnamnsvärden för att korrigera sidnamnsvärden.
 
-- Definiera ett härlett fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (t.ex. URL-parameter, sidadress, sidnamn).
+- Definiera ett härlett fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (till exempel URL-parameter, sidadress, sidnamn).
 
 ## Härlett fältgränssnitt
 
@@ -35,7 +35,7 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 
 |  | Namn | Beskrivning |
 |---------|----------|--------|
-| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa funktionen, funktionsmallen, schemafältet eller standardfältet till regelbyggaren. <br/>Använd listrutan för att välja mellan: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - listor tillgängliga [funktioner](#function-reference), </br>![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - listor tillgängliga [funktionsmallar](#function-templates), <br/>![Ikon för schemafält](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schema fields] - listar fält som är tillgängliga från datauppsättningskategorier (händelse, profil, sökning) och tidigare definierade härledda fält, och <br/>![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - standardfält (t.ex. ID för plattformsdatauppsättning). Endast strängfält och numeriska standardfält visas i väljaren. Om funktionen stöder andra datatyper kan standardfält med dessa andra datatyper väljas för värden eller fält i regelgränssnittet.<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med ![Ikonen Sök](assets/Smock_Search_18_N.svg) Sökruta. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
+| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa funktionen, funktionsmallen, schemafältet eller standardfältet till regelbyggaren. <br/>Använd listrutan och välj mellan: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - listor tillgängliga [funktioner](#function-reference), </br>![Ikon för funktionsmall](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - listor tillgängliga [funktionsmallar](#function-templates), <br/>![Ikon för schemafält](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schema fields] - listar fält som är tillgängliga från datauppsättningskategorier (händelse, profil, sökning) och tidigare definierade härledda fält, och <br/>![Ikon för standardfält](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - standardfält (t.ex. ID för plattformsdatauppsättning). Endast strängfält och numeriska standardfält visas i väljaren. Om funktionen stöder andra datatyper kan standardfält med dessa andra datatyper väljas för värden eller fält i regelgränssnittet.<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med ![Ikonen Sök](assets/Smock_Search_18_N.svg) Sökruta. <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) Filtrera och ange filter i [!UICONTROL Filter fields by] -dialogrutan. Du kan enkelt ta bort filter med ![Stäng ikon](assets/CrossSize75.svg) för varje filter. |
 | 2 | **Regelverktyget** | Du skapar det härledda fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelbyggaren. Funktionstypen bestämmer regelns gränssnitt.<br/>Se [Regelgränssnitt](#rule-interface) för mer information. <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan finns i regelbyggaren. Den sista regeln i regelbyggaren avgör det härledda fältets slutliga utdata. |
 | 3 | **[!UICONTROL ** Fältinställningar **]** | Du kan namnge och beskriva det härledda fältet och kontrollera dess fälttyp. |
 | 4 | **[!UICONTROL ** Slutlig utmatning **]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du gör i det härledda fältet i regelbyggaren. |
@@ -49,7 +49,7 @@ När du använder det härledda fältgränssnittet för första gången [!UICONT
 1. Välj den mall som bäst beskriver den typ av fält som du försöker skapa.
 2. Välj **[!UICONTROL ** Välj **]** för att fortsätta
 
-Dialogrutan för det härledda fältet innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Se [Funktionsmallar](#function-templates) om du vill ha mer information om de tillgängliga mallarna.
+Dialogrutan för det härledda fältet innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Se [Funktionsmallar](#function-templates) för mer information om de tillgängliga mallarna.
 
 ## Regelgränssnitt
 
@@ -70,7 +70,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 1. Välj en befintlig datavy eller skapa en datavy. Se [Datavyer](../data-views.md) för mer information.
 
-2. Välj **[!UICONTROL ** Komponenter **]** i datavyn.
+2. Välj **[!UICONTROL ** Komponenter **]** -fliken i datavyn.
 
 3. Välj **[!UICONTROL ** Skapa härlett fält **]** från den vänstra listen.
 
@@ -85,7 +85,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 1. Välj en befintlig datavy. Se [Datavyer](../data-views.md) för mer information.
 
-2. Välj **[!UICONTROL ** Komponenter **]** i datavyn.
+2. Välj **[!UICONTROL ** Komponenter **]** -fliken i datavyn.
 
 3. Välj **[!UICONTROL ** Schemafält **]** i [!UICONTROL Connection] till vänster.
 
@@ -93,7 +93,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 5. Håll pekaren över det härledda fält som du vill redigera och markera ![Ikonen Redigera](assets/Smock_Edit_18_N.svg).
 
-6. Om du vill redigera det härledda fältet använder du [!UICONTROL Edit derived field] gränssnitt. Se [Härlett fältgränssnitt](#derived-field-interface).
+6. Använd knappen [!UICONTROL Edit derived field] gränssnitt. Se [Härlett fältgränssnitt](#derived-field-interface).
 
    - Välj **[!UICONTROL ** Spara **]** för att spara det uppdaterade härledda fältet.
 
@@ -105,7 +105,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 1. Välj en befintlig datavy. Se [Datavyer](../data-views.md) för mer information.
 
-2. Välj **[!UICONTROL ** Komponenter **]** i datavyn.
+2. Välj **[!UICONTROL ** Komponenter **]** -fliken i datavyn.
 
 3. Välj **[!UICONTROL ** Schemafält **]** tabba in [!UICONTROL Connection] fönster.
 
@@ -134,7 +134,7 @@ Funktionsmallar är tillgängliga för att snabbt skapa ett härlett fält för 
 
 Den här mallen är konfigurerad att använda [URL-parsning](#dnl-url-parse) och [Skiftläge](#dnl-case-when) används flera gånger för att hämta lämpliga värden från en URL. Logiken tillämpas sedan på dessa värden för att koppla URL:en till en viss marknadsföringskanal.
 
-+++ Detaljer
++++ Information
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
 
@@ -155,17 +155,19 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 ## Funktionsreferens
 
+{{select-package}}
+
 För varje funktion som stöds finns information nedan:
 
 - specifikationer:
-   - datatyp: typ av data som stöds,
-   - indata: möjliga värden för indata,
+   - Indatatyp: typ av data som stöds.
+   - Indata: möjliga värden för indata.
    - inkluderade operatorer: operatorer som stöds för denna funktion (om sådana finns),
    - begränsningar: begränsningar som gäller för denna specifika funktion,
    - utdata.
 
 - Användningsfall, inklusive
-   - data innan det härledda fältet definieras,
+   - data innan härlett fält definieras,
    - hur det härledda fältet definieras,
    - efter att ha definierat det härledda fältet.
 
@@ -178,7 +180,7 @@ För varje funktion som stöds finns information nedan:
 
 Kombinerar fältvärden till ett nytt härlett fält med definierade avgränsare.
 
-+++ Detaljer
++++ Information
 
 ## Specifikationer {#concatenate-io}
 
@@ -256,7 +258,7 @@ Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du anv�
 
 Använder villkorliga värden som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i ett nytt härlett fält, baserat på villkorens sekvens.
 
-+++ Detaljer
++++ Information
 
 ## Specifikationer {#casewhen-io}
 
@@ -460,7 +462,7 @@ Du definierar en `Trip Duration (bucketed)` härlett fält. Du skapar följande 
 
 ## Mer information
 
-Customer Journey Analytics använder en kapslad behållarstruktur, som utformats efter Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). Se [Behållare](../create-dataview.md#containers) och [Filterbehållare](../../components/filters/filters-overview.md#filter-containers) för mer bakgrundsinformation. Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
+Customer Journey Analytics använder en kapslad behållarstruktur, som utformats efter Adobe Experience Platform [XML](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). Se [Behållare](../create-dataview.md#containers) och [Filterbehållare](../../components/filters/filters-overview.md#filter-containers) för mer bakgrundsinformation. Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
 
 Customer Journey Analytics använder följande standardbehållarmodell:
 
@@ -474,7 +476,7 @@ Följande begränsningar gäller och används när *markera* och *inställning* 
 |:---:|----|
 | **<span style='color: red'>A</span>** | Värden du *välj* inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma behållare och kan vara av valfri typ (sträng) ![Sträng](assets/Smock_ABC_18_N.svg), numerisk ![Numeriskt](assets/Smock_123_18_N.svg)och så vidare). <br/>![Skärmbild av beroende A](assets/dependency-a.png) |
 | **<span style='color: red'>B</span>** | Alla värden du anger *set* över en regel måste komma från samma behållare och ha samma typ eller ett härlett värde av samma typ. <br/> ![Skärmbild av beroende B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Värdena du *välj* tvärs över [!UICONTROL If], [!UICONTROL Else If] i regeln do *not* måste komma från samma behållare och gör *not* måste vara av samma typ. <br/> ![Skärmbild av beroende C](assets/dependency-c.png) |
+| **<span style='color: blue'>C</span>** | Värdena du anger *välj* över [!UICONTROL If], [!UICONTROL Else If] konstruerar i regeln do *not* måste komma från samma behållare och gör *not* måste vara av samma typ. <br/> ![Skärmbild av beroende C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -487,7 +489,7 @@ Följande begränsningar gäller och används när *markera* och *inställning* 
 
 Söker efter alla värden i ett markerat fält och ersätter dessa värden med ett annat värde i ett nytt härlett fält.
 
-+++ Detaljer
++++ Information
 
 ## Specifikationer {#findreplace-io}
 
@@ -500,7 +502,7 @@ Söker efter alla värden i ett markerat fält och ersätter dessa värden med e
 
 ## Använd skiftläge {#findreplace-uc}
 
-Du har fått felaktiga värden för din rapport om externa marknadsföringskanaler, till exempel `email%20 marketing` i stället för `email marketing`. Dessa felformaterade värden utgör en del av rapporteringen och gör det svårare att se hur e-postmeddelanden fungerar. Du vill ersätta `email%20marketing` med `email marketing`.
+Du har fått vissa felformaterade värden för din rapport om externa marknadsföringskanaler, till exempel `email%20 marketing` i stället för `email marketing`. Dessa felformaterade värden utgör en del av rapporteringen och gör det svårare att se hur e-postmeddelanden fungerar. Du vill ersätta `email%20marketing` med `email marketing`.
 
 **Ursprunglig rapport**
 
@@ -557,7 +559,7 @@ Du definierar en `Email Marketing (updated)` härlett fält. Du använder [!UICO
 
 Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden i ett nytt härlett fält.
 
-+++ Detaljer
++++ Information
 
 
 ## Specifikationer {#lookup-io}
@@ -635,7 +637,7 @@ Du definierar en `Hotel Name` härlett fält. Du använder [!UICONTROL LOOKUP] f
 
 ## Användningsfall 2 {#lookup-uc2}
 
-Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den här blandade uppsättningen värden bryter rapporteringen.
+Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den här blandade mängden värden bryter rapporteringen.
 
 ### Data före {#lookup-uc2-databefore}
 
@@ -677,7 +679,7 @@ Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL 
 
 Sammanfogar värden från två olika fält till ett nytt härlett fält.
 
-+++ Detaljer
++++ Information
 
 ## Specifikation {#merge-fields-io}
 
@@ -743,7 +745,7 @@ Du måste välja samma typ av fält i en regel för att slå samman fält. Om du
 
 Ersätter ett värde från ett fält med ett reguljärt uttryck i ett nytt härlett fält.
 
-+++ Detaljer
++++ Information
 
 ## Specifikation {#regex-replace-io}
 
@@ -755,7 +757,7 @@ Ersätter ett värde från ett fält med ett reguljärt uttryck i ett nytt härl
 
 ## Använd skiftläge {#regex-replace-uc}
 
-Du vill hämta ett alternativ för en URL och använda det som en unik sididentifierare för att analysera trafik. Du kommer att använda `[^/]+(?=/$|$)` för det reguljära uttrycket att hämta slutet på URL:en och `$1` som utdatamönster.
+Du vill hämta ett alternativ för en URL och använda det som en unik sididentifierare för att analysera trafik. Du använder `[^/]+(?=/$|$)` för det reguljära uttrycket att hämta slutet på URL:en och `$1` som utdatamönster.
 
 ### Data före {#regex-replace-uc-databefore}
 
@@ -815,7 +817,7 @@ Customer Journey Analytics använder en delmängd av Perl-regex-syntaxen. Följa
 | `(?:...)` | Ej markerad hämtning. Förhindrar att matchningen refereras i utdatasträngen. |
 | `a?` | Noll eller något av `a`. |
 | `a*` | Noll eller mer av `a`. |
-| `a+` | En eller flera av `a`. |
+| `a+` | En till `a`. |
 | `a{3}` | Exakt 3 av `a`. |
 | `a{3,}` | 3 eller fler av `a`. |
 | `a{3,6}` | Mellan 3 och 6 av `a`. |
@@ -828,7 +830,7 @@ Du kan använda dessa sekvenser i [!UICONTROL Output format] hur många gånger 
 | `$n` | Matchar det n:te underuttrycket. Till exempel: `$1` returnerar det första underuttrycket. |
 | ``$` `` | Texten skapas mellan slutet av den senaste matchningen (eller början av texten om ingen tidigare matchning hittades) och början av den aktuella matchningen. |
 | `$+` | Matchar det senast markerade deluttrycket i det reguljära uttrycket. |
-| `$$` | Utdata för strängtecknet `"$"`. |
+| `$$` | Visar strängtecknet `"$"`. |
 
 {style="table-layout:auto"}
 
@@ -840,7 +842,7 @@ Du kan använda dessa sekvenser i [!UICONTROL Output format] hur många gånger 
 
 Delar ett värde från ett fält i ett nytt härlett fält.
 
-+++ Detaljer
++++ Information
 
 ## Specifikation {#split-io}
 
@@ -875,7 +877,7 @@ Du skapar en `Responses` härlett fält. Du använder [!UICONTROL SPLIT] för at
 | Svar | Händelser |
 |---|--:|
 | det var fantastiskt | 2 |
-| rekommenderar andra | 2 |
+| kommer att rekommendera andra | 2 |
 | det var inte fantastiskt | 1 |
 | perfekt känsla | 1 |
 | lite förvirrande | 1 |
@@ -919,7 +921,7 @@ Du skapar en `Second Response` härlett fält som tar det senaste värdet från 
 
 | Andra svaret | Händelser |
 |---|--:|
-| rekommenderar andra | 2 |
+| kommer att rekommendera andra | 2 |
 | rekommenderar inte andra | 1 |
 
 {style="table-layout:auto"}
@@ -933,7 +935,7 @@ Du skapar en `Second Response` härlett fält som tar det senaste värdet från 
 
 Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågeparametrar.
 
-+++ Detaljer
++++ Information
 
 ## Specifikationer {#urlparse-io}
 
@@ -1019,7 +1021,7 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 
 ## Mer information
 
-- [Få ut mesta möjliga av dina data: Ett ramverk för användning av härledda fält i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+- [Making the Most Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
 - [Exempel för härledda fält för Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
 
