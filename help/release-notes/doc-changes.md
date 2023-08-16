@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
+source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 5%
@@ -24,7 +24,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Utveckling från Adobe Analytics | Uppdaterade *(Gör om)Konfigurera marknadsföringskanaler* -avsnitt med en referens till funktionsmallen för härledda fält Marknadskanaler. [Läs mer](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Snabbstartsguider för dataöverföring för mobilprogram och andra plattformar | Ytterligare startguider för dataöverföring med information om hur man importerar och använder data från mobilapplikationer eller andra plattformar (som datorapplikationer, spel på konsoler, applikationer på digitalboxar och IoT-enheter) i Customer Journey Analytics. [Läs mer](../data-ingestion/data-ingestion.md) |
 | **Juli 2023** | |
-| Sammanhangsmedvetna sessioner | Ett ämne har lagts till för den här datavyinställningen. [Läs mer](/help/data-views/context-aware-sessions.md) |
+| Sessionsinställningar | Ett ämne har lagts till för den här datavyinställningen. [Läs mer](/help/data-views/session-settings.md) |
 | Adobe Product Analytics | Adobe Product Analytics är ett nytt sätt att interagera med data och insikter över flera kanaler i Customer Journey Analytics. Dessa nya funktioner gör det möjligt för produktteamen att självbetjäna data och insikter om sina produktupplevelser via [guidad analys](/help/guided-analysis/overview.md) &#x200B;. |
 | Härledda fält | A [härlett fält](/help/data-views/derived-fields/derived-fields.md) gör att du kan definiera (ofta komplexa) dataändringar direkt med hjälp av ett anpassningsbart regelverktyg. |
 | Utökat sökningsstöd för profil- och sökdata | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer](/help/connections/create-connection.md) |

@@ -4,7 +4,7 @@ description: Alla inställningar som du kan justera för att skapa eller rediger
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
+source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 0%
@@ -136,6 +136,6 @@ Du kan lägga till filter som gäller för en hel datavy. Det här filtret till�
 
 ### Sessionsinställningar
 
-Fastställ inaktivitetstiden mellan händelser innan en session förfaller och en ny påbörjas. En tidsperiod krävs. Du kan också tvinga en ny session att starta när en händelse innehåller ett visst mått. Se [Sammanhangsberoende sessioner](context-aware-sessions.md) för mer information.
+Fastställ inaktivitetstiden mellan händelser innan en session förfaller och en ny påbörjas. En tidsperiod krävs. Du kan också tvinga en ny session att starta när en händelse innehåller ett visst mått. Se [Sessionsinställningar](session-settings.md) för mer information.
 
 När du har angett alla inställningar klickar du på **[!UICONTROL Save and finish]**.
