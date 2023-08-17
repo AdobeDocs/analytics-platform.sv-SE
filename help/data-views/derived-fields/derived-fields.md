@@ -4,9 +4,9 @@ description: Ett härlett fält anger ändringar av schemafält och/eller standa
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
+source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
 workflow-type: tm+mt
-source-wordcount: '4196'
+source-wordcount: '4248'
 ht-degree: 4%
 
 ---
@@ -426,7 +426,7 @@ Definierar en uppsättning värden som ersätts av motsvarande värden i ett nyt
 
 | Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
 |---|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul><li>Visa originalvärden<ul><li>Boolean</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -443,6 +443,7 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 | [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
 | [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
 | [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+| [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
 
 {style="table-layout:auto"}
 
@@ -453,6 +454,7 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 | [!DNL SLC123] | 200 |
 | [!DNL LX342] | 198 |
 | [!DNL SFO456] | 190 |
+| [!DNL AMS789] | 150 |
 
 {style="table-layout:auto"}
 
@@ -474,6 +476,7 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 | [!DNL SLC123] |
 | [!DNL LAX342] |
 | [!DNL SFO456] |
+| [!DNL AMS789] |
 
 {style="table-layout:auto"}
 
@@ -482,7 +485,9 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 
 Du definierar en `Hotel Name` härlett fält. Du använder [!UICONTROL CLASSIFY] funktion som definierar en regel där du kan klassificera värden för [!UICONTROL Hotel ID] och ersätt med nya värden.
 
-![Skärmbild av klassificeringsregel 1](assets/lookup-1.png)
+Om du vill inkludera originalvärden som du inte har definierat som en del av värdena som ska klassificeras (till exempel Hotel-ID AMS789) måste du markera **[!UICONTROL Show original values]**. Detta garanterar att AMS789 blir en del av utdata för det härledda fältet, trots att det värdet inte klassificeras.
+
+![Skärmbild av klassificeringsregel 1](assets/classify-1.png)
 
 ### Data efter {#classify-uc1-dataafter}
 
@@ -517,7 +522,7 @@ Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den
 
 Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL CLASSIFY] funktion som definierar en regel där du kan klassificera värden för dina befintliga [!UICONTROL Page Name] och ersätt med uppdaterade korrekta värden.
 
-![Skärmbild av klassificeringsregel 2](assets/lookup-2.png)
+![Skärmbild av klassificeringsregel 2](assets/classify-2.png)
 
 ### Data efter {#classify-uc2-dataafter}
 
