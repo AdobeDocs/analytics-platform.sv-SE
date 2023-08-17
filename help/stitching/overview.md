@@ -3,9 +3,9 @@ title: Översikt över titlar
 description: Översikt över häftning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---
@@ -117,10 +117,14 @@ Stitching är en banbrytande och robust funktion, men har begränsningar för hu
 * Det tillfälliga ID-fältet ska innehålla en enda typ av ID (ID:n från ett enda namnutrymme). Det tillfälliga ID-fältet ska till exempel inte innehålla en kombination av inloggnings-ID och e-post-ID.
 * Om flera händelser inträffar med samma tidsstämpel för samma beständiga ID, men med olika värden i fältet för transient ID, väljs ID baserat på alfabetisk ordning. Om beständigt ID A har två händelser med samma tidsstämpel och en av händelserna anger Bob och den andra anger Ann, väljer Ann när de sammanfogar.
 * Om en enhet delas av flera personer och det totala antalet övergångar mellan användare överstiger 50 000, slutar Customer Journey Analytics att fästa data för den enheten.
+* Var försiktig med scenarier där transient-ID:n innehåller platshållarvärden, till exempel &#39;Odefinierad&#39;. Se [Vanliga frågor](faq.md) för mer information.
 
 Blanda inte ihop stygn med:
 
 * Sammanfogningen av två eller flera datauppsättningar. Gäller endast en datauppsättning. Sammanfogning av datauppsättningar sker som ett resultat av att du konfigurerar en Customer Journey Analytics-anslutning och väljer samma person-ID för de markerade datauppsättningarna i anslutningen.
 
 * Sammanfogning av två datauppsättningar. I Customer Journey Analytics används ofta en join för uppslag eller klassificeringar i Analysis Workspace. Även om sammanfogning använder sammanfogningsfunktioner innebär själva processen mycket mer än sammanfogningar.
+
+
+
 
