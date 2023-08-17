@@ -4,9 +4,9 @@ description: Ett härlett fält anger ändringar av schemafält och/eller standa
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
 workflow-type: tm+mt
-source-wordcount: '4165'
+source-wordcount: '4196'
 ht-degree: 4%
 
 ---
@@ -173,84 +173,9 @@ För varje funktion som stöds finns information nedan:
 
 - begränsningar (om tillämpligt).
 
-
-<!-- Concatenate -->
-
-### Sammanfoga
-
-Kombinerar fältvärden till ett nytt härlett fält med definierade avgränsare.
-
-+++ Information
-
-## Specifikationer {#concatenate-io}
-
-| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
-|---|---|---|---|---|
-| <ul><li>Sträng</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li><li>Sträng</li></ul></li><li>[!UICONTROL Delimiter]:<ul><li>Sträng</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>2 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
-
-{style="table-layout:auto"}
-
-
-## Använd skiftläge {#concatenate-uc}
-
-Du samlar för närvarande in kod för ursprung och destinationsflygplats som separata fält. Du vill använda de två fälten och kombinera dem till ett enda mått, avgränsade med ett bindestreck (-). Så att du kan analysera kombinationen av ursprung och mål för att identifiera de vanligaste rutterna som bokats.
-
-Antaganden:
-
-- Origo- och målvärden samlas i separata fält i samma tabell.
-- Användaren bestämmer sig för att använda avgränsaren &#39;-&#39; mellan värdena.
-
-Tänk dig följande bokningar:
-
-- Kund ABC123 bokar en flygning mellan Salt Lake City (SLC) och Orlando (MCO)
-- Kund ABC456 bokar ett flyg mellan Salt Lake City (SLC) och Los Angeles (LAX)
-- Kund ABC789 bokar ett flyg mellan Salt Lake City (SLC) och Seattle (SEA)
-- Kund ABC987 bokar ett flyg mellan Salt Lake City (SLC) och San Jose (SJO)
-- Kund ABC654 bokar en flygning mellan Salt Lake City (SLC) och Orlando (MCO)
-
-Rapporten ska se ut så här:
-
-| Ursprung / Mål | Bokningar |
-|----|---:|
-| SLC-MCO | 2 |
-| SLC-LAX | 1 |
-| SLC-SEA | 1 |
-| SLC-SJO | 1 |
-
-{style="table-layout:auto"}
-
-
-### Data före {#concatenate-uc-databefore}
-
-| Ursprung | Mål |
-|----|---:|
-| SLC | MCO |
-| SLC | LAX |
-| SLC | SEA |
-| SLC | SJO |
-| SLC | MCO |
-
-{style="table-layout:auto"}
-
-### Härlett fält {#concatenate-derivedfield}
-
-Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du använder [!UICONTROL CONCATENATE] funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
-
-![Skärmbild av sammanfogningsregeln](assets/concatenate.png)
-
-### Data efter {#concatenate-dataafter}
-
-| Ursprung - destination<br/>(härlett fält) |
-|---|
-| SLC-MCO |
-| SLC-LAX |
-| SLC-SEA |
-| SLC-SJO |
-| SLC-MCO |
-
-{style="table-layout:auto"}
-
-+++
+>[!NOTE]
+>
+>Uppslagsfunktionen har bytt namn till [Klassificera](#classify). Se [Klassificera](#classify) om du vill ha mer information.
 
 <!-- CASE WHEN -->
 
@@ -482,6 +407,209 @@ Följande begränsningar gäller och används när *markera* och *inställning* 
 
 +++
 
+<!-- CLASSIFY -->
+
+### Klassificera
+
+Definierar en uppsättning värden som ersätts av motsvarande värden i ett nytt härlett fält.
+
+
+
+
++++ Information
+
+>[!NOTE]
+>
+>Funktionen hette ursprungligen Sök efter men har bytt namn till Klassificera för att passa en kommande Lookup-funktion med olika funktioner.
+
+## Specifikationer {#classify-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+
+{style="table-layout:auto"}
+
+
+## Användningsfall 1 {#classify-uc1}
+
+Du har en CSV-fil som innehåller en nyckelkolumn för `hotelID` och en eller flera kolumner som är associerade med `hotelID`: `city`, `rooms`, `hotel name`.
+Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] dimension härledd från `hotelID` i CSV-filen.
+
+**CSV-filstruktur och innehåll**
+
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
+|---|---|---:|---|
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+**Aktuell rapport**
+
+| [!DNL Hotel ID] | Produktvisningar |
+|---|---:|
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
+
+{style="table-layout:auto"}
+
+
+**Önskad rapport**
+
+| [!DNL Hotel Name] | Produktvisningar |
+|----|----:|
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
+
+{style="table-layout:auto"}
+
+### Data före {#classify-uc1-databefore}
+
+| [!DNL Hotel ID] |
+|----|
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
+
+{style="table-layout:auto"}
+
+
+### Härlett fält {#classify-uc1-derivedfield}
+
+Du definierar en `Hotel Name` härlett fält. Du använder [!UICONTROL CLASSIFY] funktion som definierar en regel där du kan klassificera värden för [!UICONTROL Hotel ID] och ersätt med nya värden.
+
+![Skärmbild av klassificeringsregel 1](assets/lookup-1.png)
+
+### Data efter {#classify-uc1-dataafter}
+
+| [!DNL Hotel Name] |
+|----|
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+
+## Användningsfall 2 {#classify-uc2}
+
+Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den här blandade mängden värden bryter rapporteringen.
+
+### Data före {#classify-uc2-databefore}
+
+| [!DNL Page Name] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
+| [!DNL Deals & Offers] |
+| `http://www.adobetravel.ca/user/reviews` |
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#classify-uc2-derivedfield}
+
+Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL CLASSIFY] funktion som definierar en regel där du kan klassificera värden för dina befintliga [!UICONTROL Page Name] och ersätt med uppdaterade korrekta värden.
+
+![Skärmbild av klassificeringsregel 2](assets/lookup-2.png)
+
+### Data efter {#classify-uc2-dataafter}
+
+| [!DNL Page Name (updated)] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
+
++++
+
+<!-- CONCATENATE -->
+
+### Sammanfoga
+
+Kombinerar fältvärden till ett nytt härlett fält med definierade avgränsare.
+
++++ Information
+
+## Specifikationer {#concatenate-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li><li>Sträng</li></ul></li><li>[!UICONTROL Delimiter]:<ul><li>Sträng</li></ul></li> </ul> | <p>Ej tillämpligt</p> | <p>2 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+
+{style="table-layout:auto"}
+
+
+## Använd skiftläge {#concatenate-uc}
+
+Du samlar för närvarande in kod för ursprung och destinationsflygplats som separata fält. Du vill använda de två fälten och kombinera dem till ett enda mått, avgränsade med ett bindestreck (-). Så att du kan analysera kombinationen av ursprung och mål för att identifiera de vanligaste rutterna som bokats.
+
+Antaganden:
+
+- Origo- och målvärden samlas i separata fält i samma tabell.
+- Användaren bestämmer sig för att använda avgränsaren &#39;-&#39; mellan värdena.
+
+Tänk dig följande bokningar:
+
+- Kund ABC123 bokar en flygning mellan Salt Lake City (SLC) och Orlando (MCO)
+- Kund ABC456 bokar ett flyg mellan Salt Lake City (SLC) och Los Angeles (LAX)
+- Kund ABC789 bokar ett flyg mellan Salt Lake City (SLC) och Seattle (SEA)
+- Kund ABC987 bokar ett flyg mellan Salt Lake City (SLC) och San Jose (SJO)
+- Kund ABC654 bokar en flygning mellan Salt Lake City (SLC) och Orlando (MCO)
+
+Rapporten ska se ut så här:
+
+| Ursprung / Mål | Bokningar |
+|----|---:|
+| SLC-MCO | 2 |
+| SLC-LAX | 1 |
+| SLC-SEA | 1 |
+| SLC-SJO | 1 |
+
+{style="table-layout:auto"}
+
+
+### Data före {#concatenate-uc-databefore}
+
+| Ursprung | Mål |
+|----|---:|
+| SLC | MCO |
+| SLC | LAX |
+| SLC | SEA |
+| SLC | SJO |
+| SLC | MCO |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#concatenate-derivedfield}
+
+Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du använder [!UICONTROL CONCATENATE] funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
+
+![Skärmbild av sammanfogningsregeln](assets/concatenate.png)
+
+### Data efter {#concatenate-dataafter}
+
+| Ursprung - destination<br/>(härlett fält) |
+|---|
+| SLC-MCO |
+| SLC-LAX |
+| SLC-SEA |
+| SLC-SJO |
+| SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- FIND AND REPLACE -->
 
@@ -552,127 +680,6 @@ Du definierar en `Email Marketing (updated)` härlett fält. Du använder [!UICO
 
 +++
 
-
-<!-- LOOKUP -->
-
-### Sök
-
-Definierar en uppsättning uppslagsvärden som ersätts av motsvarande värden i ett nytt härlett fält.
-
-+++ Information
-
-
-## Specifikationer {#lookup-io}
-
-| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
-|---|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
-
-{style="table-layout:auto"}
-
-
-## Användningsfall 1 {#lookup-uc1}
-
-Du har en CSV-fil som innehåller en nyckelkolumn för `hotelID` och en eller flera kolumner som är associerade med `hotelID`: `city`, `rooms`, `hotel name`.
-Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] dimension härledd från `hotelID` i CSV-filen.
-
-**CSV-filstruktur och innehåll**
-
-| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
-|---|---|---:|---|
-| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
-| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
-| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-**Aktuell rapport**
-
-| [!DNL Hotel ID] | Produktvisningar |
-|---|---:|
-| [!DNL SLC123] | 200 |
-| [!DNL LX342] | 198 |
-| [!DNL SFO456] | 190 |
-
-{style="table-layout:auto"}
-
-
-**Önskad rapport**
-
-| [!DNL Hotel Name] | Produktvisningar |
-|----|----:|
-| [!DNL SLC Downtown] | 200 |
-| [!DNL LA Airport] | 198 |
-| [!DNL Market Street] | 190 |
-
-{style="table-layout:auto"}
-
-### Data före {#lookup-uc1-databefore}
-
-| [!DNL Hotel ID] |
-|----|
-| [!DNL SLC123] |
-| [!DNL LAX342] |
-| [!DNL SFO456] |
-
-{style="table-layout:auto"}
-
-
-### Härlett fält {#lookup-uc1-derivedfield}
-
-Du definierar en `Hotel Name` härlett fält. Du använder [!UICONTROL LOOKUP] funktion för att definiera en regel där du kan slå upp värden för [!UICONTROL Hotel ID] och ersätt med nya värden.
-
-![Skärmbild av uppslagsregel 1](assets/lookup-1.png)
-
-### Data efter {#lookup-uc1-dataafter}
-
-| [!DNL Hotel Name] |
-|----|
-| [!DNL SLC Downtown] |
-| [!DNL LA Airport] |
-| [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-
-## Användningsfall 2 {#lookup-uc2}
-
-Du har samlat in URL:er i stället för det egna sidnamnet för flera sidor. Den här blandade mängden värden bryter rapporteringen.
-
-### Data före {#lookup-uc2-databefore}
-
-| [!DNL Page Name] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| `http://www.adobetravel.ca/Hotel-Search` |
-| `https://www.adobetravel.com/Package-Search` |
-| [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` |
-| `https://www.adobetravel.com.br/Generate-Quote/preview` |
-
-{style="table-layout:auto"}
-
-### Härlett fält {#lookup-uc2-derivedfield}
-
-Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL LOOKUP] funktion för att definiera en regel där du kan slå upp värden för dina befintliga [!UICONTROL Page Name] och ersätt med uppdaterade korrekta värden.
-
-![Skärmbild av uppslagsregel 2](assets/lookup-2.png)
-
-### Data efter {#lookup-uc2-dataafter}
-
-| [!DNL Page Name (updated)] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| [!DNL Hotel Search] |
-| [!DNL Package Search] |
-| [!DNL Deals & Offers] |
-| [!DNL Reviews] |
-| [!DNL Generate Quote] |
-
-+++
-
 <!-- MERGE FIELDS -->
 
 ### Sammanfoga fält
@@ -691,7 +698,7 @@ Sammanfogar värden från två olika fält till ett nytt härlett fält.
 
 ## Använd skiftläge {#merge-fields-uc}
 
-Du vill skapa en ny dimension från sidnamnsfältet och anropsorsaksfältet med avsikten att analysera resan över olika kanaler.
+Du vill skapa en dimension från sidnamnsfältet och anropsorsaksfältet med syftet att analysera resan över flera kanaler.
 
 ### Data före {#merge-fields-uc-databefore}
 
