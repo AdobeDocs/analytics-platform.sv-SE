@@ -1,17 +1,17 @@
 ---
-title: Schemalägg arbetsböcker med Report Builder i Customer Journey Analytics
-description: Beskriver hur du använder schemafunktionen i Report Builder
+title: Så här schemalägger du arbetsböcker med Report Builder i Customer Journey Analytics
+description: Lär dig hur du använder schemafunktionen i Report Builder
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 4c48aa3413ff3c2d3b29e7fc1ca4c73a80c0972d
+exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
+source-git-commit: d40638272263a389421adfe224649e2b905c652b
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
-
 
 # Schemalägg arbetsböcker
 
@@ -91,21 +91,25 @@ Du kan visa och hantera alla schemalagda arbetsböcker på ett ställe under fli
 
 1. Klicka på fliken Arbetsböcker i avsnittet Schema på Report Builder-hubben. Använd den här vyn om du vill visa en lista över alla schemalagda arbetsböcker.
 
-1. Välj en arbetsbok. Flera verktyg visas som gör att du kan redigera arbetsboken, ändra schemat, pausa och starta om schemat eller ta bort schemat.
+1. Välj en arbetsbok. Flera verktyg visas som gör att du kan redigera arbetsboken, redigera schemaaktiviteten, pausa och starta om schemaaktiviteten, hämta en schemalagd aktivitetsrapport eller ta bort schemaaktiviteten.
 
-   ![alt-beskrivning](./assets/edit-icons.png){width="55%"}
+   ![Skärmbild med arbetsbokens schemaikoner.](./assets/schedule-icons.png){width="15%"}
 
-* (Valfritt) Klicka på pennikonen för att redigera arbetsbokens schema.
+* (Valfritt) Klicka på pennikonen för att redigera arbetsbokens schemauppgift.
 
 * (Valfritt) Klicka på klockikonen om du vill visa en historik för varje schemalagd aktivitet.
 
-* (Valfritt) Klicka på pausikonen för att pausa och starta om distributionsschemat. Detta är praktiskt om du behöver ändra arbetsboken innan arbetsboken skickas. Klicka på pausikonen igen när du vill starta om distributionen.
+* (Valfritt) Klicka på pausikonen för att pausa och starta om distributionsschemaaktiviteten. Detta är praktiskt om du behöver ändra arbetsboken innan arbetsboken skickas. Klicka på pausikonen igen när du vill starta om distributionen.
 
-* (Valfritt) Klicka på papperskorgen för att ta bort schemat.
+* (Valfritt) Klicka på nedladdningsikonen för att hämta en kopia av arbetsbokens schemauppgift.
+
+* (Valfritt) Klicka på papperskorgen för att ta bort schemaaktiviteten.
+
+  ![Skärmbild med en lista över schemalagda aktiviteter.](./assets/selected-workbook.png){width="20%"}
 
 ## Granska status för schemalagda aktiviteter
 
-I historikvyn kan du granska statusen för varje schemalagd aktivitet. Det finns en separat rad som dokumenterar statusändringen för varje schemalagd aktivitet. I exemplet nedan visas *Nytt timschema* startades den 5 januari kl. 17.04. Senast 17:05 uppdaterades programmet och skickades till mottagarna. Nästa arbetsbok, *Felaktig arbetsbok*, påträffade ett fel under uppdateringsprocessen. Om det inte går att skicka en arbetsbok kan du felsöka på historikfliken genom att visa var i processen felet uppstod. I det här fallet beror det troligtvis på ett fel i datablocket, kanske en komponent som saknas, som hindrade arbetsboken från att uppdateras korrekt.
+I historikvyn kan du granska statusen för varje schemalagd aktivitet. Det finns en separat rad som dokumenterar statusändringen för varje schemalagd aktivitet. I exemplet nedan visas *Nytt timschema* startades den 5 januari kl. 17.04. Senast 17:05 uppdaterades programmet och skickades till mottagarna. Nästa arbetsbok, *Felaktig arbetsbok*, påträffade ett fel under uppdateringsprocessen. Om det inte går att skicka en arbetsbok kan du felsöka på historikfliken genom att visa var i processen felet uppstod. I det här fallet beror det troligtvis på ett fel i datablocket, kanske en komponent som saknas, som hindrade arbetsboken från att uppdateras.
 
 En grön bock anger att arbetsboken har skickats. Ett utropstecken i en röd triangel anger att ett fel har inträffat.
 
@@ -122,6 +126,3 @@ Du kan även visa historiken för en viss arbetsbok på fliken Arbetsböcker. Ma
 Arbetsboksfiltret visas sedan högst upp i historiken. Om du vill visa historiken för alla schemalagda aktiviteter igen klickar du på x bredvid filtret.
 
 ![alt-beskrivning](./assets/history3.png){width="55%"}
-
-
-
