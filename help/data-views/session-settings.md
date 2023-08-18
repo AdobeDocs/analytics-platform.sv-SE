@@ -3,7 +3,7 @@ title: Sessionsinställningar
 description: Inställningar i en datavy som du kan använda för att definiera längden på en session och utlösaren för att initiera en ny session
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 25ff6feda28f0447927a52f44aed800cdd89e0cb
+source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
