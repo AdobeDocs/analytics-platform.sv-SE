@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: bc82cd376a082b55f915c1e27f6fcec861989b00
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    Ange startdatumet som en dimension för att tydligt identifiera startdatumet för ditt datablock. Detta är praktiskt om du har en schemalagd rapport med ett löpande datumintervall eller om du har ett okonventionellt datumintervall och du behöver inte ta hänsyn till startdatumet.
 
-   ![Skärmbild som visar startdatumet i listan över dimensioner.](./assets/start-date-dimension.png){width="15%"}
+   ![Skärmbild som visar startdatumet i listan över dimensioner.](./assets/start-date-dimension.png){width="30%"}
 
 1. Ordna objekten i tabellrutan för att anpassa layouten för ditt datablock.
 

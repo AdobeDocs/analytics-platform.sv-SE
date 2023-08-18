@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: d40638272263a389421adfe224649e2b905c652b
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Du kan visa och hantera alla schemalagda arbetsböcker på ett ställe under fli
 
 1. Välj en arbetsbok. Flera verktyg visas som gör att du kan redigera arbetsboken, redigera schemaaktiviteten, pausa och starta om schemaaktiviteten, hämta en schemalagd aktivitetsrapport eller ta bort schemaaktiviteten.
 
-   ![Skärmbild med arbetsbokens schemaikoner.](./assets/schedule-icons.png){width="15%"}
+   ![Skärmbild med arbetsbokens schemaikoner.](./assets/schedule-icons.png){width="20%"}
 
 * (Valfritt) Klicka på pennikonen för att redigera arbetsbokens schemauppgift.
 
@@ -105,7 +105,7 @@ Du kan visa och hantera alla schemalagda arbetsböcker på ett ställe under fli
 
 * (Valfritt) Klicka på papperskorgen för att ta bort schemaaktiviteten.
 
-  ![Skärmbild med en lista över schemalagda aktiviteter.](./assets/selected-workbook.png){width="20%"}
+  ![Skärmbild med en lista över schemalagda aktiviteter.](./assets/selected-workbook.png){width="40%"}
 
 ## Granska status för schemalagda aktiviteter
 

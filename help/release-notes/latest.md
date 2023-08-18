@@ -3,10 +3,10 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '571'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller den 9 augusti-13 september 2023. Adobe Customer J
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Förbättringar i Report Builder** | <ul><li>Hämta schemalagda aktiviteter från fliken Historik där du kan visa historiken för schemalagda aktiviteter. Hämta arbetsboken från den uppgiften. </li><li>Startdatum som dimension: gör att användare kan visa startdatumet för datablocket som en dimension i datablockets utdata. </li></ul> | Ej tillämpligt | 17 augusti 2023 |
+| **Förbättringar i Report Builder** | <ul><li>Du kan hämta en schemalagd uppgift från fliken Arbetsböcker och sedan ge den en rubrik, spara den och dela den. [Läs mer](/help/report-builder/schedule-reportbuilder.md)</li><li>Startdatum som dimension gör att du kan visa startdatumet för datablocket som en dimension i datablockets utdata. [Läs mer](/help/report-builder/create-a-data-block.md) </li></ul> | Ej tillämpligt | 17 augusti 2023 |
 | **Valutakonvertering** | Kundresan ger möjlighet att stödja flera valutor. Du kan konvertera en valuta till en annan valuta i datavyinställningarna. [Läs mer](/help/data-views/component-settings/format.md) | Ej tillämpligt | 31 augusti 2023 |
 | **Stöd för A4T-klassificeringar i Analytics Source Connector** | Vi lägger till ett korrelations-ID för enkel koppling av klassificeringsdata för Adobe Target-aktiviteter och upplevelsehändelser. | Ej tillämpligt | 31 augusti 2023 |
 | **Rapporteringsaktivitetshanteraren** | Ger administratörer detaljerad insyn i hur de rapporterar förbrukning för varje anslutning, vilket gör det möjligt för administratörer att enkelt diagnostisera och sedan åtgärda kapacitetsproblem under högbelastade rapporteringstider. | Ej tillämpligt | 6 september 2023 |
