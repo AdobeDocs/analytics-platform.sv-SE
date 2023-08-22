@@ -3,9 +3,9 @@ title: Översikt över titlar
 description: Översikt över häftning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ När du kombinerar datauppsättningar med liknande person-ID:n överförs attrib
 
 Tyvärr är inte alla händelsebaserade datauppsättningar som är en del av din anslutning i Customer Journey Analytics tillräckligt kompletta med data för att stödja denna attribuering. I synnerhet har webbaserade eller mobilbaserade upplevelsedatamängder ofta ingen faktisk person-ID-information tillgänglig för alla händelser.
 
-Med hjälp av häftning kan du skriva in identiteter på nytt i en datamängds rader, så att person-ID (sammanfogat ID) är tillgängligt för varje händelse. Stitching tittar på användardata från både autentiserade och oautentiserade sessioner för att avgöra vilket tillfälligt ID-värde som kan användas som sammanfogat ID. På så sätt kan du lösa olika poster till ett sammanfogat ID för analys på personnivå, i stället för på enhets- eller cookienivå.
+Med hjälp av häftning kan du skriva in identiteter på nytt i en datamängds rader, så att person-ID (sammanfogat ID) är tillgängligt för varje händelse. Stitching tittar på användardata från både autentiserade och oautentiserade sessioner för att avgöra vilket tillfälligt ID-värde som kan användas som sammanfogat ID. Denna inmatning gör det möjligt att lösa olika poster till ett enda sammanfogat ID för analys på personnivå, i stället för på enhets- eller cookienivå.
 
 Du kan dra nytta av flerkanalsanalys om du kombinerar en eller flera av dina sammanfogade datauppsättningar med andra datauppsättningar, till exempel callcenter-data, som en del av arbetet med att definiera din Customer Journey Analytics-anslutning. Detta förutsätter att dessa andra datauppsättningar redan innehåller ett person-ID på varje rad, som liknar det sammanfogade ID:t.
 
@@ -102,9 +102,11 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 >[!IMPORTANT]
 >
->Tillämpa eventuella ändringar som du gör i det globala händelsedatamängdsschemat även på det nya sammanfogade datamängdsschemat, annars bryts den sammanfogade datauppsättningen.
+>* Tillämpa eventuella ändringar som du gör i det globala händelsedatamängdsschemat även på det nya sammanfogade datamängdsschemat, annars bryts den sammanfogade datauppsättningen.
 >
->Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
+>* Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
+>
+>* Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du använder dataanvändningsetiketter på källdataschemat måste du manuellt tillämpa dessa dataanvändningsetiketter på det sammanslagna dataset-schemat. Se [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=en) för mer information.
 
 Stitching är en banbrytande och robust funktion, men har begränsningar för hur den kan användas.
 
@@ -123,7 +125,7 @@ Blanda inte ihop stygn med:
 
 * Sammanfogningen av två eller flera datauppsättningar. Gäller endast en datauppsättning. Sammanfogning av datauppsättningar sker som ett resultat av att du konfigurerar en Customer Journey Analytics-anslutning och väljer samma person-ID för de markerade datauppsättningarna i anslutningen.
 
-* Sammanfogning av två datauppsättningar. I Customer Journey Analytics används ofta en join för uppslag eller klassificeringar i Analysis Workspace. Även om sammanfogning använder sammanfogningsfunktioner innebär själva processen mycket mer än sammanfogningar.
+* Sammanfogning av två datauppsättningar. I Customer Journey Analytics används ofta en join för uppslag eller klassificeringar i Analysis Workspace. Även om sammanfogning använder sammanfogningsfunktioner innebär själva processen mer än sammanfogningar.
 
 
 
