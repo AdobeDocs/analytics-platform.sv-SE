@@ -1,18 +1,19 @@
 ---
 title: Vanliga frågor om guidad analys
-description: Vanliga frågor och svar om den guidade analysen.
+description: Vanliga frågor om den guidade analysen.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+keywords: produktanalys
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
 # Vanliga frågor om guidad analys
 
-Vanliga frågor och svar om den guidade analysen.
+Vanliga frågor om den guidade analysen.
 
 +++**Hur kan vår organisation etableras för guidad analys?**
 
@@ -40,7 +41,7 @@ För att dina slutanvändare ska kunna bli mest framgångsrika med guidad analys
 
 I den guidade analysen används termer som används oftare bland produktteamen. Du kan referera till den här tabellen när du växlar mellan guidad analys och [Analysis Workspace](../analysis-workspace/home.md).
 
-| Guidad analysterm | Analysis Workspace |
+| Guidad analysterm | Analysis Workspace term |
 | --- | --- |
 | Händelse | Mått |
 | Användare | Personer |
@@ -56,7 +57,7 @@ I den guidade analysen används termer som används oftare bland produktteamen. 
 
 while [Analysis Workspace](../analysis-workspace/home.md) och för guidad analys används samma underliggande data, vilket innebär att varje verktyg gör att du kan skapa frågor av dessa data på ett helt annat sätt.
 
-* **Analysis Workspace är en upplevelse som bygger på flera dimensioner.** Tabeller består vanligtvis av dimensionella rader, medan kolumner vanligtvis är mått. Du kan använda filter på både rader och kolumner för att få fram önskade data.
+* **Analysis Workspace är en upplevelse som bygger på flera dimensioner.** Tabeller består vanligtvis av dimensionella rader, medan kolumner vanligtvis är mätvärden. Du kan använda filter på både rader och kolumner för att få fram önskade data.
 
 * **Guidad analys är en händelsestyrd upplevelse.** Varje analys börjar med att välja händelser, sedan kan mått och filter läggas till för att förfina händelsedata.
 

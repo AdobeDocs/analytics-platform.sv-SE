@@ -2,9 +2,10 @@
 title: Versionsvy
 description: Jämför prestanda i lika stora perioder före och efter lanseringen.
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+keywords: produktanalys
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ The **[!UICONTROL Release]** visar en jämförelse av hur nyckelindikatorer utf�
 Exempel:
 
 * **Övergripande resultatutvärdering:** Genom att jämföra övergripande nyckelindikatorer, t.ex. engagemangsåtgärder, kan du avgöra om en given release var framgångsrik i stort.
-* **Övervakning**: Om det finns vissa mått som du förväntar dig ska vara platta när ändringar görs, till exempel webbinarier som laddningstid eller inloggningar, bör du jämföra dem före och efter för att vara säker på att releasen inte får några oönskade konsekvenser.
+* **Övervakning**: Om det finns vissa mått som du förväntar dig ska vara enhetliga när ändringar görs, till exempel webbinarier som laddningstid eller inloggningar, bör du jämföra dem före och efter för att vara säker på att releasen inte får några oönskade konsekvenser.
 * **Antagande av nya funktioner**: Om en produktuppdatering är inriktad på att förbättra en viss funktion kan du använda den här vyn för att direkt jämföra den funktionens användning före och efter produktuppdateringen.
 * **Felsökning**: Att spåra antalet fel före och efter en release kan ge en tidig indikation på kundproblem. Om antalet fel ökar direkt efter en release kan ni tillsammans med konstruktions- eller utvecklingsteamen identifiera och korrigera problemet och på så sätt förhindra att kunderna påverkas ytterligare.
 

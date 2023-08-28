@@ -2,9 +2,10 @@
 title: Vyn Första användningen
 description: Mät effekten av förstagångsanvändning på nyckelindikatorer.
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+keywords: produktanalys
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -19,11 +20,11 @@ The **[!UICONTROL First use]** visar en jämförelse av hur nyckelindikatorer ha
 
 Exempel:
 
-* **Ny funktionsanalys**: Om du startar en ny funktion i produkten kan du jämföra hur viktiga indikatorer har utförts före och efter det att användarna exponerats för den nya funktionen för första gången.
+* **Ny funktionsanalys**: Om du startar en ny funktion i produkten kan du jämföra hur viktiga indikatorer utfördes före och efter det att användarna exponerades för den nya funktionen för första gången.
 * **Avfasade utrullningar**: Eftersom analysen söker efter första användningstillfället i stället för ett fast datum, är den här vyn särskilt användbar om du fasar ut funktionen under en tidsperiod.
-* **Ny produktversionsanalys**: Om du startar en ny version av produkten kan du jämföra hur viktiga indikatorer har utförts före och efter det att användarna exponerats för den nya versionen för första gången. Välj&quot;any event&quot; som första användningshändelse och filtrera den till egenskapen för versionsnummer.
-* **Befintliga funktionsförbättringar**: Om du gör förbättringar i en befintlig funktion i produkten kan du jämföra hur nyckelindikatorer som utförts före och efter det att användarna exponerats för dessa nya förbättringar för första gången. Du kan utföra den här analysen på några sätt beroende på vilken funktion du har. 1) Välj en händelse som representerar förbättringen som den första användningshändelsen och/eller 2) Välj det datum då ändringarna började utrullas och/eller 3) Segmentera analysen till den grupp personer som exponeras för förbättringarna.
-* **Kampanjeffektivitet**: När en användare klickat igenom från en viss kampanj kan ni jämföra hur nyckelindikatorer utfördes före och efter att användaren interagerade med kampanjen.
+* **Ny produktversionsanalys**: Om du startar en ny version av produkten kan du jämföra hur viktiga indikatorer utfördes före och efter det att användarna exponerades för den nya versionen för första gången. Välj&quot;any event&quot; som första användningshändelse och filtrera den till egenskapen för versionsnummer.
+* **Befintliga funktionsförbättringar**: Om du gör förbättringar i en befintlig funktion i produkten kan du jämföra hur nyckelindikatorer som utfördes före och efter det att användarna exponerades för dessa nya förbättringar för första gången. Du kan utföra den här analysen på några sätt beroende på vilken funktion du har. 1) Välj en händelse som representerar förbättringen som den första användningshändelsen och/eller 2) Välj det datum då ändringarna började utrullas och/eller 3) Segmentera analysen till den grupp personer som exponeras för förbättringarna.
+* **Kampanjeffektivitet**: När en användare klickar igenom en viss kampanj kan ni jämföra hur nyckelindikatorer utfördes före och efter det att användaren interagerade med kampanjen.
 
 ## Frågerår
 
@@ -32,7 +33,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 * **[!UICONTROL Key indicators]**: De händelser som du vill mäta per användare. Varje markerad tangentindikator representeras som en färgad linje. En rad som representerar händelsen läggs till i tabellen. Du kan inkludera upp till tre händelser.
 * **[!UICONTROL Factors]**: Det finns två faktorer för den här vyn:
    * **[!UICONTROL Date]**: Hur långt tillbaka du vill börja leta efter den första användningshändelsen som har inträffat.
-   * **[!UICONTROL Event]**: Den händelse som du vill leta efter för första användning av, för att centrera analysen på.
+   * **[!UICONTROL Event]**: Den händelse som du vill söka efter för första gången, för att centrera analysen på.
 * **[!UICONTROL People]**: Det segment som du vill mäta. Det valda segmentet filtrerar data så att de bara fokuserar på de personer som matchar dina segmentkriterier.
 
 ## Diagraminställningar
@@ -47,4 +48,4 @@ I vyn Första användning finns följande diagraminställningar som kan justeras
 Datumval i effektanalys fungerar annorlunda än andra analystyper, eftersom analysen kretsar kring det datum som anges i frågespelaren. Följande alternativ är tillgängliga:
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly]och [!UICONTROL Quarterly]. Om du ändrar intervallet påverkas alternativen för perioden Före och efter.
-* **[!UICONTROL Before and after period]**: Den tid som ska analyseras före och efter den första use-händelsen som anges i frågerinjen. Vilka alternativ som är tillgängliga beror på [!UICONTROL Interval] markering.
+* **[!UICONTROL Before and after period]**: Hur lång tid det tar att analysera före och efter den första use-händelsen som anges i frågerinjen. Vilka alternativ som är tillgängliga beror på [!UICONTROL Interval] markering.

@@ -2,9 +2,10 @@
 title: Vyn Nettotillväxt
 description: Kommer du att få eller förlora användare?
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+keywords: produktanalys
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Varje datapunkt representerar nettotillväxt, som beräknas med följande formel
 
 `([New users] + [Return users]) / [Dormant users]`
 
-Resultatet av den här formeln är ett förhållande. En nettoökning av `1` motsvarar en jämvikt, produkten fick samma antal användare som den förlorade. Nettotillväxt större än `1` representerar positiv tillväxt, fler nya +-användare än vilande användare. En nettotillväxt som är mindre än `1` motsvarar en förlust, fler vilande användare än nya +-användare.
+Resultatet av den här formeln är ett förhållande. En nettoökning av `1` representerar en jämvikt, produkten har fått samma antal användare som den förlorade. En nettotillväxt som är större än `1` representerar positiv tillväxt; det fanns fler nya +-användare än vilande användare. En nettotillväxt som är mindre än `1` representerar en förlust. Det fanns fler vilande användare än nya +-användare.
 
 Liknar [Aktiv](active.md) -vy definieras användare som följande:
 
@@ -36,14 +37,14 @@ Liknar [Aktiv](active.md) -vy definieras användare som följande:
 Exempel:
 
 * **Resultatutvärdering**: Gör att du kan bedöma den övergripande prestandan för din produkt när det gäller att köpa nya användare. Genom att följa tillväxttrender kan du bättre förstå om produkten lockar och behåller användare i önskad takt.
-* **Analys av kundvärvning**: Gör att ni kan bedöma hur effektiva era strategier för kundförvärv är. Genom att analysera källor till användartillväxt, t.ex. sökmotorer, kampanjer eller andra marknadsföringskanaler, kan ni identifiera de viktigaste tillväxtkällorna så att ni kan tilldela resurser i enlighet med detta.
+* **Analys av kundvärvning**: Gör att ni kan bedöma hur effektiva era strategier för kundvärvning är. Genom att analysera källor till användartillväxt, t.ex. sökmotorer, kampanjer eller andra marknadsföringskanaler, kan ni identifiera de viktigaste tillväxtkällorna så att ni kan tilldela resurser i enlighet med detta.
 * **Kurnanalys**: Nettotillväxt inkluderar attrition i sin formel (vilande användare). Du kan utvärdera den övergripande statusen för din användarbas över tiden. Om nettotillväxten är konsekvent nedan `1`innebär det en hög grad av attribuering som kan leda till implementering av strategier för kvarhållande.
 
 ## Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL Events]**: Händelsen som du vill mäta. Eftersom den här vytypen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
+* **[!UICONTROL Events]**: Den händelse som du vill mäta. Eftersom den här vytypen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
 * **[!UICONTROL People]**: Det segment som du vill mäta. Du kan inkludera ett segment i en fråga.
 
 ## Datumintervall
