@@ -4,9 +4,9 @@ description: Identifiera vem som är ny, bevarad, återvändande eller vilande.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: 35e009ca6c21754fe7127fe63eea41f8ed00943d
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför 
 
 Exempel:
 
-* **[!UICONTROL User retention and chur]n:** Ger en tydlig visualisering runt perioder med hög eller låg användarlojalitet. Genom att känna igen dessa perioder av hög eller låg lojalitet kan du fatta produktbeslut för att öka kundlojaliteten eller hjälpa till att minimera bortfallet.
-* **[!UICONTROL Campaign assessment]**: Att visa en viss kampanj kan hjälpa er att förstå inte bara hur mycket trafik den genererade, utan även hur väl kampanjen hjälpte användarna att hålla sig engagerade.
-* **[!UICONTROL User lifecycle analysis]**: Analysering av aktiv användartillväxt under hela användarlivscykeln kan hjälpa till att identifiera specifika faser där användarengagemanget minskar. Om det till exempel finns ett stort antal vilande användare för enskilda personer i ett introduktionsstadium kan det tyda på användarvänlighetsproblem eller ett behov av bättre produktvägledning.
+* **Bevarande och bortfall av användare:** Ger en tydlig visualisering runt perioder med hög eller låg användarlojalitet. Genom att känna igen dessa perioder av hög eller låg lojalitet kan du fatta produktbeslut för att öka kundlojaliteten eller hjälpa till att minimera bortfallet.
+* **Kampanjbedömning**: Att visa en viss kampanj kan hjälpa er att förstå inte bara hur mycket trafik den genererade, utan även hur väl kampanjen hjälpte användarna att hålla sig engagerade.
+* **Användarlivscykelanalys**: Analysering av aktiv användartillväxt under hela användarlivscykeln kan hjälpa till att identifiera specifika faser där användarengagemanget minskar. Om det till exempel finns ett stort antal vilande användare för enskilda personer i ett introduktionsstadium kan det tyda på användarvänlighetsproblem eller ett behov av bättre produktvägledning.
 
 ## Frågerår
 

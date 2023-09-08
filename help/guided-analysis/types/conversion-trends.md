@@ -3,9 +3,9 @@ title: Vy över konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: a40cfa2498bed03c169eed10cea091574bf90730
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Exempel:
 Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL Steps]**: De händelsetyper som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-* **People**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
+* **[!UICONTROL People]**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
 
@@ -41,7 +41,7 @@ I vyn Konverteringstrender finns följande diagraminställningar som kan justera
 
 >[!NOTE]
 >
->The **Genomsnittlig** i vyn Conversion trends skiljer sig från **Totalt** kolumn i [Bildvy](friction.md) tabell. Den första är ett medelvärde av intervallkolumnerna (t.ex. medelvärdet av daglig konverteringsgrad), medan den andra är en aggregerad beräkning över hela datumintervallet.
+>The **Genomsnittlig** i vyn Conversion trends skiljer sig från **Totalt** kolumn i [Bildvy](friction.md) tabell. Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
 
 ## Använd tidsjämförelse
 
