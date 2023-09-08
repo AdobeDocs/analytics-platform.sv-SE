@@ -6,7 +6,7 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 1b03689820c91a823cd7cf8ff42e3f5ee46083e5
 workflow-type: tm+mt
 source-wordcount: '2918'
 ht-degree: 0%
@@ -116,7 +116,7 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
       2. Klistra in **[!UICONTROL ** Databas **]** parameter från Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL ** Databas **]** textfält.
 
-         Lägg till `?FLATTEN` till **[!UICONTROL ** Databas **]** parameter, så den ser ut som `prod:all?FLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) för mer information.
+         Lägg till `?FLATTEN` till **[!UICONTROL ** Databas **]** parameter, så den ser ut som `prod:cja?FLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) för mer information.
 
       3. När du uppmanas till detta **[!UICONTROL ** Dataanslutning **]** läge, välja **[!UICONTROL ** DirectQuery **]** för att säkerställa att datastrukturerna förenklas korrekt.
 
@@ -158,7 +158,7 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
       3. Klistra in **[!UICONTROL ** databasparametern **]** från Experience Platform Queries [!UICONTROL Credentials] i **[!UICONTROL ** textfältet Databas **]** .
 
-         Lägg till `%3FFLATTEN` i **[!UICONTROL ** parametern Database **]** så att den lyder som `prod:all%3FFLATTEN` till exempel. Mer [information finns i Förenkla kapslade datastrukturer för användning med BI-verktyg](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) från tredje part.
+         Lägg till `%3FFLATTEN` i **[!UICONTROL ** parametern Database **]** så att den lyder som `prod:cja%3FFLATTEN` till exempel. Mer [information finns i Förenkla kapslade datastrukturer för användning med BI-verktyg](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) från tredje part.
 
       4. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i **[!UICONTROL ****]** autentiseringslistan.
 

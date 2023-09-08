@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
+source-git-commit: e4aa9a525fb2ae291cc0c753524d09a81b88c4c3
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2563'
 ht-degree: 4%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **September 2023** | |
+| Regional datainsamling | Uppdaterat [Vanliga frågor](../getting-started/cja-faq.md#12-regional-data-collection) med information om regional datainsamling när Customer Journey Analytics används. |
 | **Augusti 2023** | |
 | Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) för att förbättra läsbarheten. |
 | Förbättringar i Report Builder | Uppdaterat innehåll för [Schemalägg arbetsböcker](/help/report-builder/schedule-reportbuilder.md) för att tillhandahålla information för hämtning av schemalagda aktiviteter. Uppdaterat innehåll för  [Skapa ett datablock](/help/report-builder/create-a-data-block.md) om du vill ange information om hur du använder startdatum som dimension. |
