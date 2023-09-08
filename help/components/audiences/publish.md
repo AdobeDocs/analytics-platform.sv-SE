@@ -3,9 +3,9 @@ title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 15853fe7f37b1f0a3088f8dc108d7c65f1ef470a
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
 ## Skapa målgrupper {#create}
 
-1. Du kan skapa målgrupper på tre sätt:
+1. Om du vill skapa målgrupper har du tre sätt att komma igång:
 
-   | Skapandemetod | Detaljer |
+   | Skapandemetod | Information |
    | --- | --- |
    | Från huvudsidan **[!UICONTROL Components]>[!UICONTROL Audiences]** meny | Sidan Audiences Manager öppnas. Klicka **[!UICONTROL Create audience]** och [!UICONTROL Audience builder] öppnas. |
    | Från en friformstabell | Högerklicka på ett objekt i en frihandstabell och välj **[!UICONTROL Create an audience from selection]**. Om du använder den här metoden fylls filtret i automatiskt med den dimension eller dimensionspost som du valde i tabellen. |
@@ -36,7 +36,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
    | Inställning | Beskrivning |
    | --- | --- |
-   | [!UICONTROL Name] | Publiken. |
+   | [!UICONTROL Name] | Namnet på publiken. |
    | [!UICONTROL Tags] | Alla taggar som du vill ska tilldelas till målgruppen för organisatoriska ändamål. Du kan använda en befintlig tagg eller ange en ny. |
    | [!UICONTROL Description] | Lägg till en bra beskrivning av målgruppen för att skilja den från andra. |
    | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmars uppdateringsfrekvensen finns det en gräns på 75 till 150 målgrupper som uppdateras beroende på ditt Customer Journey Analytics-berättigande.</li></ul> |
@@ -57,11 +57,11 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | Förhandsvisningsinställning | Beskrivning |
    | --- | --- |
    | [!UICONTROL Data preview] window | Datumintervallet för målgruppen. |
-   | [!UICONTROL Total people] | Ett summerat antal personer i den här publiken. Den kan gå upp till 20 miljoner människor. Om er målgrupp överstiger 20 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera den. |
+   | [!UICONTROL Total people] | Ett summerat antal av det totala antalet personer i den här publiken. Den kan gå så högt som 20 miljoner människor. Om er målgrupp överstiger 20 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera den. |
    | [!UICONTROL Audience size limit] | Visar hur långt från gränsen på 20 miljoner som den här målgruppen är. |
    | [!UICONTROL Estimated audience return] | Den här inställningen är användbar för återmarknadsföring av kunder i den här målgruppen som kommer tillbaka till er webbplats. (Med andra ord, som visas i den här datauppsättningen igen.) <p>Här kan du välja tidsram (nästa 7 dag, nästa 2 veckor, nästa månad) för det uppskattade antalet kunder som kan komma att returnera. |
    | [!UICONTROL Estimated to return] | Numret ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde i listrutan. Vi tittar på den historiska bortfallsfrekvensen för den här publiken för att förutse detta antal. |
-   | [!UICONTROL Preview metrics] | Med den här inställningen kan du titta på specifika mätvärden för att se om den här målgruppen bidrar med ett oproportionerligt belopp till det här mätvärdet, till exempel &#39;[!UICONTROL Revenue]&#39; eller &#39;[!UICONTROL Average time on site]&#39;. Det ger dig det sammanlagda antalet mätvärden, liksom procentandelen av det totala antalet. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
+   | [!UICONTROL Preview metrics] | Med den här inställningen kan du titta på specifika mätvärden för att se om den här målgruppen bidrar med ett oproportionerligt belopp till det här mätvärdet, till exempel &#39;[!UICONTROL Revenue]eller[!UICONTROL Average time on site]&#39;. Det ger dig det sammanlagda antalet mätvärden, liksom procentandelen av det totala antalet. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
    | [!UICONTROL Namespaces included] | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
    | [!UICONTROL Sandbox] | The [Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) där den här publiken bor. När du publicerar den här målgruppen på Platform kan du bara arbeta med den inom gränserna för den här sandlådan. |
 
@@ -87,14 +87,14 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 ![Latenser i publikation enligt beskrivningen i det här avsnittet.](assets/latency-diagram.png)
 
-| # | Svarstid | Latenslängd |
+| # | Svarstid | Varaktighet för fördröjning |
 | --- | --- | --- |
 | Visas inte | Källanslutning för Adobe Analytics till Analytics (A4T) | Upp till 30 minuter |
 | 1 | Intag av data i datasjön (från Analytics-källkopplingen eller andra källor) | Upp till 90 minuter |
 | 2 | Intag av data från Experience Platform Data Lake till Customer Journey Analytics | Upp till 90 minuter |
-| 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Cirka 60 minuter |
+| 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data.<p>**Anteckning**: målgruppen skapas/definieras i Experience Platform inom 1-2 minuter. Det tar dock cirka 60 minuter innan målgruppen börjar få ID:n baserat på matchande kriterier och är klar för aktivering. | Cirka 60 minuter |
 | 4 | Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
-| 5 | Skapar mål i Adobe Experience Platform: Aktivera det nya segmentet | 1-2 timmar |
+| 5 | Skapa mål i Adobe Experience Platform: Aktivera det nya segmentet | 1-2 timmar |
 
 {style="table-layout:auto"}
 
@@ -102,7 +102,7 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). Customer Journey Analytics skickar målgruppen vidare till Experience Platform med den primära identiteten angiven enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
 
-RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu, till exempel <user@adobe.com> kan riktas mot alla enheter och kanaler. Om ingen profil hittas skapas en ny.
+RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu, till exempel <user@adobe.com> kan riktas mot alla deras enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Du kan visa Customer Journey Analytics-målgrupper i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
