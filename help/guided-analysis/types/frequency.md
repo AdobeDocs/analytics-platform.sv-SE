@@ -3,9 +3,9 @@ title: Frekvensvy
 description: Mät engagemang efter användningsfrekvens.
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 1e095720301f3e59e88674d086f5e0de9df88872
+source-git-commit: 77192426a58e1560abe91b904452b9cd46c862e9
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 0%
 # [!UICONTROL Frequency] visa
 
 The **[!UICONTROL Frequency]** visa grupphändelsedata efter hur ofta en händelse visas. Den lodräta axeln i den här rapporten innehåller grupper som representerar frekvensen för händelser som visas. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
+
+![Skärmbild med frekvens](../assets/frequency-stacked.png)
 
 ## Användningsexempel
 
