@@ -4,9 +4,9 @@ description: Ett härlett fält anger ändringar av schemafält och/eller standa
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
+source-git-commit: 9dbda5000c1d0930fac782b5e3cf382ed6b99a85
 workflow-type: tm+mt
-source-wordcount: '4248'
+source-wordcount: '4836'
 ht-degree: 4%
 
 ---
@@ -62,7 +62,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 | A | **Regelnamn** | Regelnamnet är som standard **Regel X** (X refererar till ett sekvensnummer). Om du vill redigera namnet på en regel markerar du dess namn och skriver in det nya namnet, till exempel `Query Parameter`. |
 | B | **Funktionsnamn** | Det valda funktionsnamnet för regeln, till exempel [!UICONTROL URL PARSE]. När funktionen är den sista i funktionssekvensen och fastställer de slutliga utdatavärdena följs funktionsnamnet av [!UICONTROL - FINAL OUTPUT], till exempel [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>Om du vill visa ett popup-fönster med mer information om funktionen väljer du ![Hjälpikon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Regelbeskrivning** | Du kan också lägga till en beskrivning till en regel.<br/>Välj ![Mer-ikon](assets/More.svg)väljer **[!UICONTROL ** Lägg till beskrivning **]** för att lägga till en beskrivning eller **[!UICONTROL ** Redigera beskrivning **]** om du vill redigera en befintlig beskrivning.<br/>Använd redigeraren för att ange en beskrivning. Du kan använda verktygsfältet för att formatera texten (med formatväljare, fet, kursiv, understrykning, höger, vänster, centrerad, färg, nummerlista, punktlista) och lägga till länkar till extern information. <br/>Klicka utanför redigeraren för att slutföra redigeringen av beskrivningen. |
-| D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Listrutan för [!UICONTROL Field] eller [!UICONTROL Value] visar alla kategorier av fält (regler, standardfält, fält) som är tillgängliga, baserat på den typ av indata som funktionen förväntar sig. Se [Funktionsreferens](#function-reference) Detaljerad information om varje funktion som stöds. |
+| D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Listrutan för [!UICONTROL Field] eller [!UICONTROL Value] visar alla kategorier av fält (regler, standardfält, fält) som är tillgängliga, baserat på den typ av indata som funktionen förväntar sig. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
 
 {style="table-layout:auto"}
 
@@ -413,9 +413,6 @@ Följande begränsningar gäller och används när *markera* och *inställning* 
 
 Definierar en uppsättning värden som ersätts av motsvarande värden i ett nytt härlett fält.
 
-
-
-
 +++ Information
 
 >[!NOTE]
@@ -426,7 +423,7 @@ Definierar en uppsättning värden som ersätts av motsvarande värden i ett nyt
 
 | Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
 |---|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul><li>Visa originalvärden<ul><li>Boolean</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul><li>Visa originalvärden<ul><li>Boolean</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält<br/>100 rader per funktion</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -535,6 +532,17 @@ Du definierar en `Page Name (updated)` härlett fält. Du använder [!UICONTROL 
 | [!DNL Deals & Offers] |
 | [!DNL Reviews] |
 | [!DNL Generate Quote] |
+
+
+## Mer information {#classify-moreinfo}
+
+Följande ytterligare funktioner är tillgängliga i gränssnittet Klassifiera regel:
+
+- Om du snabbt vill ta bort alla tabellvärden väljer du ![Radera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Clear all table values]**.
+- Om du vill överföra en CSV-fil som innehåller originalvärden för När värden är lika och nya värden för Ersätt värden med väljer du ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Upload CSV]**.
+- Om du vill hämta en mall för att skapa en CSV-fil med ursprungliga och nya värden att överföra väljer du ![Ladda ned](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV template]**.
+- Om du vill hämta en CSV-fil med alla ursprungliga och nya värden ifyllda i regelgränssnittet väljer du ![Ladda ned](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV values]**.
+
 
 +++
 
@@ -680,6 +688,108 @@ Du definierar en `Email Marketing (updated)` härlett fält. Du använder [!UICO
 | [!DNL email marketing] |
 | [!DNL email marketing] |
 | [!DNL email marketing] |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- LOOKUP
+
+### Lookup
+
+Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+
++++ Details
+
+## Specification {#lookup-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#lookup-uc}
+
+You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+
+### A4T lookup dataset {#lookup-uc-lookup}
+
+| Activity Id | Activity Name |
+|---|---|
+| 415851 | MVT Test Category Pages |
+| 415852 | Luma - Campaign Max 2022 |
+| 402922 | Home Page Banners |
+
+{style="table-layout:auto"}
+
+### Derived field {#lookup-uc-derivedfield}
+
+You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+
+![Screenshot of the Lowercase rule](assets/lookup.png)
+
+## More info
+
+You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+
+  1. Select **[!UICONTROL Schema fields]** from selector.
+  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
+  1. Select your lookup dataset and find the field you want to use for lookup.
+  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
+     ![Lookup drag](assets/lookup-drag.png) 
+
++++
+
+-->
+
+<!-- LOWERCASE -->
+
+### Gemener
+
+Konverterar värden från ett fält till gemener och lagrar dem i ett nytt härlett fält.
+
++++ Information
+
+## Specifikation {#lowercase-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul> | <p>Ej tillämpligt</p> | <p>2 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+
+{style="table-layout:auto"}
+
+## Använd skiftläge {#lowercase-uc}
+
+Du vill konvertera alla insamlade produktnamn till gemener för korrekt rapportering.
+
+### Data före {#lowercase-uc-databefore}
+
+| Samlade produktnamn | Produktvisningar |
+|---|---:|
+| Tennisracket | 35 |
+| Tennis Racket | 33 |
+| tennisracket | 21 |
+| Baseboll | 15 |
+| Baseball Bat | 12 |
+| baseboll | 10 |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#lowercase-uc-derivedfield}
+
+Du definierar en `Product Names` härlett fält. Du använder [!UICONTROL LOWERCASE] för att definiera en regel som konverterar värdet från [!UICONTROL Collected Product Names] fält till gemener och lagra det i det nya härledda fältet.
+
+![Skärmbild av regeln Gemener](assets/lowercase.png)
+
+
+### Data efter {#lowercase-uc-dataafter}
+
+| Produktnamn | Produktvisningar |
+|---|---|
+| tennisracket | 89 |
+| baseboll | 37 |
 
 {style="table-layout:auto"}
 
@@ -938,6 +1048,119 @@ Du skapar en `Second Response` härlett fält som tar det senaste värdet från 
 
 {style="table-layout:auto"}
 
++++
+
+
+<!-- TRIM -->
+
+### Rensa
+
+Beskär tomt utrymme, specialtecken eller antal tecken från början eller slutet av fältvärden till ett nytt härlett fält.
+
++++ Information
+
+## Specifikation {#trim-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li></ul> | <ul><li>[!UICONTROL Field]<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>Beskär tomt utrymme</li><li>Trimma specialtecken<ul><li>Indata för specialtecken</li></ul></li><li>Trimma från vänster<ul><li>Från <ul><li>Strängstart</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li></ul></li><li>Till<ul><li>Strängslut</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li><li>Längd</li></ul></li></ul></li><li>Trimma från höger<ul><li>Från <ul><li>Strängslut</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li></ul></li><li>Till<ul><li>Strängstart</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li><li>Längd</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>1 funktion per härlett fält</p> | <p>Nytt härlett fält</p> |
+
+{style="table-layout:auto"}
+
+## Användningsfall 1 {#trim-uc1}
+
+Du samlar in produktdata, men data innehåller dolda blankstegstecken som fragmentrapporterar. Du vill enkelt trimma bort överflödigt tomt utrymme
+
+### Data före {#trim-uc1-databefore}
+
+| Produkt-ID | Händelser |
+|---|--:|
+| `"prod12356 "` | 1 |
+| `"prod12356"` | 1 |
+| `" prod12356"` | 1 |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#trim-u1-derivedfield}
+
+Du skapar en `Product Identifier` härlett fält. Du använder [!UICONTROL TRIM] funktion som definierar en regel till **[!UICONTROL Trim whitespace]** från **[!UICONTROL Product ID]** fält.
+
+![Skärmbild av den delade regeln 1](assets/trim-1.png)
+
+### Data efter {#trim-uc1-dataafter}
+
+| Produktidentifierare | Händelser |
+|---|--:|
+| `"prod12356 "` | 3 |
+
+{style="table-layout:auto"}
+
+## Användningsfall 2 {#trim-uc2}
+
+De data på sidnamn som samlas in innehåller några felaktiga specialtecken i slutet av sidnamnet som måste tas bort.
+
+### Data före {#trim-uc2-databefore}
+
+| Namn | Händelser |
+|---|--:|
+| startsida# | 1 |
+| hemsida? | 1 |
+| startsida% | 1 |
+| startsida | 1 |
+| startsida/ | 1 |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#trim-u2-derivedfield}
+
+Du skapar en  `Page Name` härlett fält. Du använder [!UICONTROL TRIM] funktion som definierar en regel till [!UICONTROL Trim special characters] från [!UICONTROL Name] fält med [!UICONTROL Special characters] `#?%&/`.
+
+![Skärmbild av den delade regeln - första värdet](assets/trim-2.png)
+
+### Data efter {#trim-uc2-dataafter}
+
+| Sidnamn | Händelser |
+|---|--:|
+| hemsida | 5 |
+
+{style="table-layout:auto"}
+
+
+## Användningsfall 3 {#trim-uc3}
+
+Du samlar in data inklusive ett storeID. storeID innehåller den förkortade amerikanska statuskoden som de två första tecknen. Du vill bara använda den statuskoden i din rapportering.
+
+### Data före {#trim-uc3-databefore}
+
+| storeID | Händelser |
+|---|--:|
+| CA293842 | 1 |
+| CA423402 | 1 |
+| UT123418 | 1 |
+| UT189021 | 1 |
+| ID028930 | 1 |
+| OR234223 | 1 |
+| NV22342 | 1 |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#trim-u3-derivedfield}
+
+Du skapar en  `Store Identifier` härlett fält. Du använder [!UICONTROL TRIM] funktion som definierar en regel till [!UICONTROL Truncate from right] den [!UICONTROL storeID] fält från strängslut till position `3`.
+
+![Skärmbild av den delade regeln - första värdet](assets/trim-3.png)
+
+### Data efter {#trim-uc3-dataafter}
+
+| Butiksidentifierare | Händelser |
+|---|--:|
+| CA | 2 |
+| UT | 2 |
+| ID | 1 |
+| ELLER | 1 |
+| NV | 1 |
+
+{style="table-layout:auto"}
 +++
 
 
