@@ -4,9 +4,9 @@ description: En metod för att analysera data i Customer Journey Analytics som g
 keywords: produktanalys
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: 341ad5105be009bd6dd450f255a195961e5652a8
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ Med guidad analys kategoriseras vytyperna i **Analystyper**. Följande analys- o
 | [!UICONTROL User growth] | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
 | [!UICONTROL User growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
 | [!UICONTROL Trends] | [Användning](types/usage.md) | Mät användarengagemanget över tid. |
+| [!UICONTROL Trends] | [Frekvens](types/frequency.md) | Mät engagemang efter användningsfrekvens. |
 
 {style="table-layout:auto"}
 
