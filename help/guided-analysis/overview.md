@@ -4,9 +4,9 @@ description: En metod för att analysera data i Customer Journey Analytics som g
 keywords: produktanalys
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 341ad5105be009bd6dd450f255a195961e5652a8
+source-git-commit: 55310a844f5928f0e97e7ea7f44ae146e103dafa
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Oavsett analystyp består den guidade analysen av följande gränssnittselement:
 
 | Förhandsgranska gränssnitt | Gränssnittselement | Beskrivning |
 | --- | --- | --- |
-| ![Frågerår](assets/query-rail.png) | Frågerår | Konfigurera önskade komponenter (händelser, egenskaper och segment) som utgör en analys. Varje analystyp tillämpar olika gränser för antalet händelser och segment som du kan konfigurera. Om du byter till en ny analystyp, behålls dina frågeval inom de tillåtna gränserna för den analystypen. |
+| ![Frågerår](assets/query-rail.png) | Frågerår | Konfigurera önskade komponenter (händelser, egenskaper och segment) som utgör en analys. Varje analystyp tillämpar olika gränser för antalet händelser och segment som du kan konfigurera.<p>Använd filterikonen om du vill begränsa med hjälp av specifika händelseegenskaper eller skapa nya segment direkt. När en egenskap har valts, förutom standardfiltervillkor som lika, innehåller och avslutas med, en lista över de 1 000 främsta egenskapsvärdena, som blir tillgängliga för snabb filtrering.<p>Om du byter till en ny analystyp, behålls dina frågeval inom de tillåtna gränserna för den analystypen. |
 | ![Diagram](assets/chart.png) | Diagram | En visualisering av de data som returneras baserat på dina indata från frågespelaren och inställningarna. Vilken visualisering du ser beror på vyn och inställningarna ovanför diagrammet. Vilka vyer som är tillgängliga beror på analystypen ovanför frågespelaren. Diagrammet innehåller även: <ul><li>**Verktygstips**: Håll pekaren över en diagramdatapunkt för att visa ett verktygstips med mer information.</li><li>**Förklaring**: Håll pekaren över teckenförklaringen för att visa seriedefinitioner, om sådana finns.</li><li>**Klicka på funktionsmakron**: Visa tillgängliga nästa åtgärd genom att vänsterklicka på en datapunkt. Alternativen inkluderar **Spara segment**.</li></ul> |
 | ![Tabell](assets/table.png) | Tabell | En tabellrepresentation av de data som returneras baserat på dina indata från frågespelaren och inställningarna. Kolumnerna i tabellen beror på vilken vytyp som finns ovanför diagrammet. Vilka vyer som är tillgängliga beror på analystypen ovanför frågespelaren. Tabellen innehåller även följande: <ul><li>**Klicka på funktionsmakron**: Visa tillgängliga nästa åtgärder genom att klicka på **[!UICONTROL More]** -menyn. Alternativen inkluderar **Spara segment**.</li></ul> |
 | ![Visualiseringsinställningar](assets/visualization-settings.png) | Visualiseringsinställningar | Flera alternativ ovanför diagrammet som gör att du kan anpassa hur diagrammet och tabellen returnerar data.<ul><li>**Vytyp**: En nedrullningsbar väljare som gör att du kan presentera data för en viss analystyp på ett annat sätt.</li><li>**Diagraminställningar**: Finjustera hur diagram och tabeller visas. Vilka alternativ som är tillgängliga beror på vilken vy du har valt.</li><li>**Datumintervall**: En kalenderväljare som gör att du kan bestämma datumintervallet för analysen. Du kan också välja ett intervall för trendvyer, till exempel dagliga, veckovisa eller månadsvisa.</li><li>**Insikter**: Sammanhangsberoende insikter beroende på vilken analys du visar. Du kan använda piltangenterna för att gå till ytterligare insikter eller visa eller dölja dessa insikter med hjälp av glödlampsikonen i det övre högra hörnet.</li></ul> |
