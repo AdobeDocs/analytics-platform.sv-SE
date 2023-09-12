@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 4754be1df196836bd44feb963c22749a3124c377
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '431'
 ht-degree: 7%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 7%
 Den här tekniska handboken ger självhjälp för Customer Journey Analytics. Med Customer Journey Analytics kan ni hämta kunddata från valfri kanal - både online och offline - till Adobe Experience Platform och sedan analysera dessa data på samma sätt som ni gör med era befintliga digitala data via Analysis Workspace idag.
 
 Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och offlinedata i Analysis Workspace med vilket kundID som helst, så att ni till sist kan utföra attribuering, filter, flöde, bortfall osv. i hela kunddatauppsättningen i Customer Journey Analytics.
-
-Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna tilläggsprodukt. Kontakta ditt Adobe-kontoteam för mer information.
 
 <table frame="none"> 
  <tbody> 
@@ -40,7 +38,7 @@ Analytics Select-, Prime- och Ultimate-kunder är berättigade att köpa denna t
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html"> Vanliga frågor</a> </li> 
    </ul> <p class="head"><b>Versionsinformation</b> </p> 
      <li>Se de senaste <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html" format="https" scope="external"> Versionsinformation för Customer Journey Analytics</a> för nya funktioner och korrigeringar. </li>
-    <td colname="col3" valign="top"> <p class="head"><b>Customer Journey Analytics API</b> </p> 
+    <td colname="col3" valign="top"> <p class="head"><b>CUSTOMER JOURNEY ANALYTICS API</b> </p> 
     <ul> 
      <li>Se alla <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> Customer Journey Analytics API:er</a>. </li>
       <li>Se de senaste <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> Customer Journey Analytics Reporting API</a>. </li>
