@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e4aa9a525fb2ae291cc0c753524d09a81b88c4c3
+source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2584'
 ht-degree: 4%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **September 2023** | |
+| Funktioner för ytterligare härledda fält | Uppdaterad dokumentation för den nya [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) och [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) funktioner och ytterligare CSV-funktioner som lagts till i [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) funktion. |
 | Regional datainsamling | Uppdaterat [Vanliga frågor](../getting-started/cja-faq.md#12-regional-data-collection) med information om regional datainsamling när Customer Journey Analytics används. |
 | **Augusti 2023** | |
 | Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) för att förbättra läsbarheten. |
