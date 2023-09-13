@@ -3,40 +3,40 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 8f299dad39678047d362291cfe8a2a3c116071dd
+source-git-commit: 98bba7c7bc56cfc2a2436f13d833dbf6504d7d6e
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 6%
+source-wordcount: '521'
+ht-degree: 7%
 
 ---
 
-# Aktuell versionsinformation för Adobe Customer Journey Analytics (augusti 2023)
+# Aktuell versionsinformation för Adobe Customer Journey Analytics (september 2023)
 
-**Senaste uppdatering**: 24 augusti 2023
+**Senaste uppdatering**: 7 september 2023
 
-Versionsanteckningarna gäller den 9 augusti-13 september 2023. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsinformationen gäller den 13 september till 3 oktober 2023. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya eller uppdaterade funktioner
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Förbättringar i Report Builder** | <ul><li>Du kan hämta en schemalagd uppgift från fliken Arbetsböcker och sedan ge den en rubrik, spara den och dela den. [Läs mer](/help/report-builder/schedule-reportbuilder.md)</li><li>Startdatum som dimension gör att du kan visa startdatumet för datablocket som en dimension i datablockets utdata. [Läs mer](/help/report-builder/create-a-data-block.md) </li></ul> | Ej tillämpligt | 17 augusti 2023 |
-| **Valutakonvertering** | Kundresan ger möjlighet att stödja flera valutor. Du kan konvertera en valuta till en annan valuta i datavyinställningarna. [Läs mer](/help/data-views/component-settings/format.md) | Ej tillämpligt | 30 augusti 2023 |
-| **Stöd för A4T-klassificeringar i Analytics Source Connector** | Vi lägger till ett korrelations-ID för enkel koppling av klassificeringsdata för Adobe Target-aktiviteter och upplevelsehändelser. | Ej tillämpligt | 11 september 2023 |
-| **Rapporteringsaktivitetshanteraren** | Ger administratörer detaljerad insyn i hur de rapporterar förbrukning för varje anslutning, vilket gör det möjligt för administratörer att enkelt diagnostisera och sedan åtgärda kapacitetsproblem under högbelastade rapporteringstider. | Ej tillämpligt | 12 september 2023 |
-| **PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics** | Adobe Customer Journey Analytics SQL Connector ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Datatekniker och analytiker som är mer bekanta med Power BI, Tableau eller andra verktyg för affärsintelligens och visualisering kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt. [Läs mer](/help/data-views/sql-connector.md) | Ej tillämpligt | 12 september 2023 |
+| **Stöd för A4T-klassificeringar i Analytics Source Connector** | Stöd för nya `correlationID` fält för Adobe Analytics | The `_experience.decisioning.propositions.scopeDetails.correlationID` -fältet är nu tillgängligt i Adobe Analytics källanslutningsschema. Det här fältet används som stöd för A4T-klassificeringar och kommer att fyllas i från och med september 2023. | | Ej tillämpligt | 12 september 2023 |
+| **Uppdateringar av härledda fält** | Följande uppdateringar gjordes för funktionen för härledda fält:<ul><li>The [!UICONTROL Lookup] funktionen har bytt namn till [!UICONTROL Classify], med ytterligare alternativ för att läsa in CSV-data. **(Utgåvor 27 september 2023)**</li><li>Ytterligare funktioner är tillgängliga när du definierar ett härlett fält: [!UICONTROL Trim], [!UICONTROL Lowercase] och [!UICONTROL Lookup].</li><li>Härledda fältdefinitioner har nu även stöd för fält från [!UICONTROL Lookup] och [!UICONTROL Profile] datauppsättningar.</li></ul>[Läs mer](/help/data-views/derived-fields/derived-fields.md) | Ej tillämpligt | 13 september 2023 |
+| **Nya funktioner i Adobe Product Analytics** | <ul><li>**Analysidentifiering**: Jämför händelser med förväntade värden som härleds från historiska trender. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html)</li><li>**Trends Frequency of use view**: Mät användningen av funktionerna efter användningsfrekvens. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**Användarinställningar**: Konfigurera ett antal användarinställningar, t.ex. färgpaletter, datavyer, kalendrar, instansräkning, talformat och kommaavgränsare. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html)</li></ul> | Ej tillämpligt | 18 september 2023 |
+| **Upplev Edge-enhetssökningar** | Aktivera automatisk datainsamling av enhetstyp via Experience Platform Edge-nätverket. Den här Experience Edge-tjänsten är till stor nytta för Customer Journey Analytics och andra Experience Platform-appar. (Dokumentationslänk följer) | Ej tillämpligt | 27 september 2023 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
+AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-AN 326888
+
 
 ## Viktiga meddelanden för Customer Journey Analytics-administratörer
 
 | Meddelande | Meddelande har lagts till eller uppdaterats | Beskrivning |
 | --- | --- | --- |
-| **Förändringar i hur Customer Journey Analytics bearbetar data** | 22 juni 2023 | Vi har nyligen ändrat hur vi behandlar data i Customer Journey Analytics.<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul> |
+| Ej tillämpligt | Ej tillämpligt | Ej tillämpligt |
 
 {style="table-layout:auto"}
 
