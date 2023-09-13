@@ -3,10 +3,10 @@ title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 53a1a6995caad960d8daba4e0d1f4394aa184206
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 1%
+source-wordcount: '1131'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,8 @@ Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfu
 Filter kan baseras på
 
 - attribut (webbläsartyp, enhet, antal besök, land, kön),
-- interaktioner (kampanjer, nyckelordssökning, sökmotor),
-- utträde och tävlingsbidrag (personer från Facebook,
-- en definierad landningssida (hänvisande domän),
+- interaktioner (kampanjer, sökningar, sökmotor),
+- utgångar och inmatningar (personer från Facebook, en definierad landningssida, hänvisande domän, geofence-händelse),
 - anpassade variabler (formulärfält, definierade kategorier, kund-ID),
 - och andra kriterier.
 
@@ -36,17 +35,17 @@ Mer information om tillgängliga typer av filter och hur du skapar dem finns i [
 
 ## Sekventiella filter {#sequential}
 
-Med hjälp av sekventiella filter kan du identifiera personer baserat på navigering och sidvisning på webbplatsen, vilket ger ett filter med definierade åtgärder och interaktioner. Med hjälp av sekventiella filter kan du identifiera vad en person gillar och vad en person undviker. När du skapar sekventiella filter används operatorn THEN för att definiera och ordna personnavigering.
+Med sekventiella filter kan du identifiera personer baserat på navigering (sidvisningar på hela webbplatsen, interaktioner med scener i mobilappen eller med en meny i en digitalbox). Sekventiella filter ger ett filter med definierade åtgärder och interaktioner och hjälper dig att identifiera vad en person gillar och vad en person undviker. När du skapar sekventiella filter används operatorn THEN för att definiera och ordna personnavigering.
 
 >[!IMPORTANT]
 >
->Du måste ha **Välj** för att skapa sekventiella flerkanalsfilter. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har. &#x200B;
+>Du måste ha **Välj** för att skapa sekventiella flerkanalsfilter. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
 
 Här är ett exempel:
 
 | Session ett | Session två | Session tre |
 | --- | --- | --- |
-| Personen gick till huvudlandningssidan A, exkluderade kampanjsidan B och visade sedan produktsidan C. | Personen gick åter till huvudlandningssidan A, exkluderade kampanjsidan B, och gick tillbaka till produktsidan C och sedan till en ny sida D. | Personen angav och följde samma väg som i det första och andra besöket och uteslöt sedan sidan F för att gå direkt till produktsidan G. |
+| Personen gick till huvudlandningssidan A, exkluderade kampanjsidan B och visade sedan produktsidan C. | Personen gick åter till huvudlandningssidan A, exkluderade kampanjsidan B, gick tillbaka till produktsidan C och sedan till en ny sida D. | Personen angav och följde samma väg som i det första och andra besöket och uteslöt sedan sidan F för att gå direkt till produktsidan G. |
 
 ## Filterbehållare {#containers}
 
@@ -74,22 +73,22 @@ Filter baseras på en hierarki på person-, session- och händelsenivå med hjä
 >[!NOTE]
 >Personbehållaren kallades tidigare besökarbehållare. Sessionsbehållaren kallades besöksbehållaren och händelsebehållaren var tidigare Träff-behållaren.
 
-Ett filter anger villkor för att filtrera en person baserat på personens attribut eller interaktioner med din plats. Om du vill ange villkor i ett filter anger du regler för att filtrera personer baserat på personegenskaper och/eller navigeringsegenskaper. Om du vill dela upp persondata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje person. I Filter Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska person-, session- eller händelsebehållare.
+Ett filter anger villkor för att filtrera en person baserat på personens attribut eller interaktioner med din webbplats, mobilapp eller annan enhetstyp som du har samlat in data från. Om du vill ange villkor i ett filter anger du regler för att filtrera personer baserat på personegenskaper och/eller navigeringsegenskaper. Om du vill dela upp persondata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningstips, skärmtryck och menyval för varje person. I Filter Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska person-, session- eller händelsebehållare.
 
-Behållararkitekturen som används i Filter Builder definierar Person som den yttersta behållaren, med överliggande data som är specifika för personen vid besök och sidvyer. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner, och med en kapslad händelsebehållare kan du dela upp personinformation baserat på enskilda sidvyer. Med varje behållare kan du rapportera över en persons historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
+Behållararkitekturen som används i Filter Builder definierar Person som den yttersta behållaren. Behållaren innehåller data som är specifika för personen vid besök och sidvisningar, mobilskärmar eller menyskärmar i en digitalbox. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner, och med en kapslad händelsebehållare kan du dela upp personinformation baserat på enskilda sidvyer. Med varje behållare kan du rapportera över en persons historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
 
 ### Personbehållare {#person}
 
-Personbehållaren innehåller alla besök och sidvisningar för personer inom en viss tidsperiod. Ett filter på personnivå returnerar den sida som uppfyller villkoret plus alla andra sidor som visas av personen (och som bara begränsas av definierade datumintervall). Rapporterna som genereras på personbehållarnivå är den vanligaste behållaren och returnerar sidvisningar för alla besök. Du kan generera en flerbesöksanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
+Personbehållaren innehåller alla besök och sidvisningar, mobilappsskärmar, digitalboxar eller konsolspel för personer inom en viss tidsperiod. Ett filter på personnivå returnerar de sidvyer, mobilappar eller digitalboxskärmar som uppfyller villkoret. Dessutom visas alla andra sidor och skärmar av samma person i alla kanaler (och endast begränsat av definierade datumintervall). Som den mest väldefinierade behållaren returnerar rapporter som genereras på personbehållarnivå sidvisningar, mobilappskärmar och mycket mer för alla besök och gör att du kan generera en flerkanalsanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
 Personbehållare kan innehålla värden som baseras på en persons övergripande historik:
 
 - Dagar före första köp
-- Ursprunglig startsida
+- Ursprunglig startsida eller startskärm för mobilapp
 - Ursprungliga referensdomäner
 
 ### Sessionsbehållare {#session}
 
-Med sessionsbehållaren kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar beteenden för hela besökssessionen när regeln har uppfyllts. Med sessionsbehållaren kan du också definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett filter. Den kan hjälpa dig att svara på följande frågor:
+Med sessionsbehållaren kan du identifiera sidinteraktioner eller mobilappsinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar beteenden för hela besökssessionen när regeln har uppfyllts. Med sessionsbehållaren kan du också definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett filter. Den kan hjälpa dig att svara på följande frågor:
 
 - Hur många sessioner har varit kopplade till datakällor för både webben och Call Center?
 - Vilka sidor bidrog till en lyckad konvertering till en försäljning?
@@ -97,16 +96,18 @@ Med sessionsbehållaren kan du identifiera sidinteraktioner, kampanjer eller kon
 Sessionsbehållare innehåller värden som baseras på förekomst per session:
 
 - Sessionstyp
-- Startsida
+- Inmatningssida
 - Återbesöksfrekvens
 - Deltagandemått
 - Linjärt allokerade mätvärden
 
+Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session varar men också när en ny session ska skapas. Du kan till exempel definiera en ny mobilappssession baserat på när en användare startar din nya app. Se [Sessionsinställningar](/help/data-views/session-settings.md) för mer information.
+
 ### Händelsebehållare {#event}
 
-Händelsebehållaren definierar vilka sidhändelser som du vill inkludera eller exkludera från ett filter. Det är den mest smala av de tillgängliga behållarna så att du kan identifiera specifika klick och sidvy där ett villkor är uppfyllt. Med händelsebehållaren kan du visa en enskild spårningskod eller isolera beteenden i ett visst avsnitt på platsen. Du kanske också vill hitta ett specifikt värde när en åtgärd inträffar, till exempel marknadsföringskanalen när en beställning har gjorts.
+Händelsebehållaren definierar vilken sida, vilket mobilprogram eller annan typ av händelser som du vill inkludera eller exkludera från ett filter. Det är det smalaste av de tillgängliga behållarna så att du kan identifiera specifika klick, sidvy och knapp i en mobilapp där ett villkor är uppfyllt. Med händelsebehållaren kan du visa en enskild spårningskod eller isolera beteenden inom ett visst område i din mobilapp. Du kanske också vill hitta ett specifikt värde när en åtgärd inträffar, till exempel marknadsföringskanalen när en beställning har gjorts.
 
-Händelsebehållare innehåller värdebaserade ensidesindelningar:
+Händelsebehållare innehåller värdebaserade, ensidiga uppdelningar för:
 
 - Produkter
 - Visa utkast
@@ -115,7 +116,7 @@ Händelsebehållare innehåller värdebaserade ensidesindelningar:
 
 ## Inkörbar filtermall {#template}
 
-Traditionell analys innehåller en mängd färdiga mallar och beräknade mätvärden. Många av dem gäller inte i Customer Journey Analytics, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i Customer Journey Analytics.
+Traditionell analys innehåller ett flertal färdiga mallar och beräknade mätvärden. Många av dem gäller inte i Customer Journey Analytics, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i Customer Journey Analytics.
 
 | Filternamn | Beskrivning |
 | --- | --- |
