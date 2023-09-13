@@ -3,9 +3,9 @@ title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 53a1a6995caad960d8daba4e0d1f4394aa184206
+source-git-commit: 8d681a956cc826642e8fc22081acd2c579543b2e
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,13 @@ Filter baseras på en hierarki på person-, session- och händelsenivå med hjä
 >[!NOTE]
 >Personbehållaren kallades tidigare besökarbehållare. Sessionsbehållaren kallades besöksbehållaren och händelsebehållaren var tidigare Träff-behållaren.
 
-Ett filter anger villkor för att filtrera en person baserat på personens attribut eller interaktioner med din webbplats, mobilapp eller annan enhetstyp som du har samlat in data från. Om du vill ange villkor i ett filter anger du regler för att filtrera personer baserat på personegenskaper och/eller navigeringsegenskaper. Om du vill dela upp persondata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningstips, skärmtryck och menyval för varje person. I Filter Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska person-, session- eller händelsebehållare.
+Ett filter anger villkor för att filtrera en person baserat på personens attribut eller interaktioner med din webbplats, mobilapp eller annan enhetstyp som du har samlat in data från. Om du vill ange villkor i ett filter anger du regler för att filtrera personer baserat på personegenskaper och/eller navigeringsegenskaper. Om du vill dela upp personuppgifter ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningstips, skärmklickningar och menyval i en digitalbox för varje person. Men filtrera också på attribut som du har inhämtat från ett CRM- eller lojalitetssystem. I Filter Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska person-, session- eller händelsebehållare.
 
-Behållararkitekturen som används i Filter Builder definierar Person som den yttersta behållaren. Behållaren innehåller data som är specifika för personen vid besök och sidvisningar, mobilskärmar eller menyskärmar i en digitalbox. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner, och med en kapslad händelsebehållare kan du dela upp personinformation baserat på enskilda sidvyer. Med varje behållare kan du rapportera över en persons historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
+Behållararkitekturen som används i Filter Builder definierar Person som den yttersta behållaren. Behållaren innehåller data som är specifika för personen vid besök och sidvisningar, mobilskärmar eller menyskärmar i en digitalbox. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner, och med en kapslad händelsebehållare kan du dela upp personinformation baserat på individuella interaktioner. Med varje behållare kan du rapportera en persons historik, interaktioner som delats upp av sessioner eller dela upp enskilda upplevelsehändelser.
 
 ### Personbehållare {#person}
 
-Personbehållaren innehåller alla besök och sidvisningar, mobilappsskärmar, digitalboxar eller konsolspel för personer inom en viss tidsperiod. Ett filter på personnivå returnerar de sidvyer, mobilappar eller digitalboxskärmar som uppfyller villkoret. Dessutom visas alla andra sidor och skärmar av samma person i alla kanaler (och endast begränsat av definierade datumintervall). Som den mest väldefinierade behållaren returnerar rapporter som genereras på personbehållarnivå sidvisningar, mobilappskärmar och mycket mer för alla besök och gör att du kan generera en flerkanalsanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
+Personbehållaren innehåller alla besök och sidvisningar, mobilappsskärmar, digitalboxar eller konsolspel för personer inom en viss tidsperiod. I stort sett alla upplevelsehändelser som ingår i de datauppsättningar som du har definierat i din Customer Journey Analytics-anslutning. Ett filter på personnivå returnerar de sidvyer, mobilappar eller digitalboxskärmar som uppfyller villkoret. Dessutom kan samma person interagera med andra kanaler, både online och offline (och endast begränsat av definierade datumintervall). Som den mest väldefinierade behållaren returnerar rapporter som genereras på personbehållarnivå sidvisningar, mobilappskärmar med mera, för alla besök och gör att du kan generera en flerkanalsanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
 Personbehållare kan innehålla värden som baseras på en persons övergripande historik:
 
 - Dagar före första köp
@@ -101,7 +101,7 @@ Sessionsbehållare innehåller värden som baseras på förekomst per session:
 - Deltagandemått
 - Linjärt allokerade mätvärden
 
-Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session varar men också när en ny session ska skapas. Du kan till exempel definiera en ny mobilappssession baserat på när en användare startar din nya app. Se [Sessionsinställningar](/help/data-views/session-settings.md) för mer information.
+Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session varar men också när en ny session ska skapas. Du kan till exempel definiera en ny mobilappssession baserat på varje gång en användare startar din mobilapp. Se [Sessionsinställningar](/help/data-views/session-settings.md) för mer information.
 
 ### Händelsebehållare {#event}
 
