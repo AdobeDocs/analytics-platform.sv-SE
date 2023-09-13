@@ -4,16 +4,16 @@ description: Mät användarengagemanget över tid.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Usage] visa
 
-The **[!UICONTROL Usage]** ger värdefull information om hur produkten eller användarens beteende fungerar över tid. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter dina önskade händelser.
+The **[!UICONTROL Usage]** ger värdefull information om produktens prestanda eller hur användarna beter sig över tid. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter dina önskade händelser.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
@@ -39,6 +39,12 @@ The [!UICONTROL Usage] I vyn finns följande diagraminställningar som du kan ju
 
 * **[!UICONTROL Metric]**: Det mått som du vill mäta. Alternativen är Händelser, Sessioner, Användare, Händelser per session och Händelser per användare.
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Du kan välja mellan Linje, Stapel, Staplad liggande och Staplad yta.
+
+## Övertäckningar
+
+Lägg till ytterligare data i diagrammet.
+
+* **[!UICONTROL Show anomalies]**: Kör avvikelseidentifiering i analysen. Exponenter visas som punkter som du kan hovra över för mer information.
 
 ## Använd tidsjämförelse
 
