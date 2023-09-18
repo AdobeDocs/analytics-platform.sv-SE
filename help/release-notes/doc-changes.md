@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
+source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2631'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,11 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **September 2023** | |
+| Uppdaterad struktur för artiklar för panelen Medieuppspelningstid för spenderad tid | Mappen Media Playback Time Spent har tagits bort och innehållet i mappen har kombinerats till en enda artikel: [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Den här ändringen är mer i linje med dokumentationen för andra paneler.</p> |
 | Funktioner för ytterligare härledda fält | Uppdaterad dokumentation för den nya [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) och [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) funktioner och ytterligare CSV-funktioner som lagts till i [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) funktion. |
 | Regional datainsamling | Uppdaterat [Vanliga frågor](../getting-started/cja-faq.md#12-regional-data-collection) med information om regional datainsamling när Customer Journey Analytics används. |
 | **Augusti 2023** | |
-| Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) för att förbättra läsbarheten. |
+| Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md) för att förbättra läsbarheten. |
 | Förbättringar i Report Builder | Uppdaterat innehåll för [Schemalägg arbetsböcker](/help/report-builder/schedule-reportbuilder.md) för att tillhandahålla information för hämtning av schemalagda aktiviteter. Uppdaterat innehåll för  [Skapa ett datablock](/help/report-builder/create-a-data-block.md) om du vill ange information om hur du använder startdatum som dimension. |
 | Flyttat innehåll om hantering av schemalagda projekt | Skapade en ny artikel i Analytics Components Guide med namnet [Schemalagda projekt](/help/components/scheduled-projects-manager.md). Innehållet fanns tidigare i [Schemalägg projekt](/help/analysis-workspace/curate-share/t-schedule-report.md) artikel i Analytics Tools Guide. |
 | Funktioner i Adobe Customer Journey Analytics | Mer information finns i *Stöds på ett nytt sätt* tabellen över sessionerna i Customer Journey Analytics jämfört med Adobe Analytics. [Läs mer](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
