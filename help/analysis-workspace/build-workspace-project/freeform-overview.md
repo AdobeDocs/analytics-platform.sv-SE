@@ -1,17 +1,17 @@
 ---
 description: Översikt över arbetsyteprojekt med menyrad och inställningar
 keywords: Analysis Workspace
-title: Översikt över projekt
+title: Projektöversikt
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1312'
 ht-degree: 3%
 
 ---
 
-# Översikt över projekt
+# Projektöversikt
 
 Med arbetsyteprojekt kan du kombinera datakomponenter, tabeller och visualiseringar för att skapa analyser och dela dem med vem som helst i organisationen. Innan du startar ditt första projekt bör du lära dig hur du får tillgång till, navigerar och hanterar dina projekt.
 
@@ -38,9 +38,9 @@ Sidan Projekt innehåller följande information:
 | Namn | Namn på Workspace-projektet. |
 | Typ | Anger om det här är ett arbetsyteprojekt, en mapp eller en [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
 | Taggar | Taggar som tillämpades på projektet. |
-| Schemalagd | Anger om projekt har schemalagts att skickas med e-post till mottagare enligt ett schema. Se [Schemalägg projekt](/help/analysis-workspace/curate-share/t-schedule-report.md). |
-| Delad länk (alla) | Projekt kan delas med vem som helst - även med personer som inte har tillgång till Analysis Workspace. I den här kolumnen visas om projekt har delats på det här sättet. Se [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) för mer information. |
-| Datavy | Datavyn som projektet är kopplat till. |
+| Schemalagd | Anger om projekt har schemalagts att skickas med e-post till mottagare enligt ett schema. Se [Skicka projektdata till andra](/help/analysis-workspace/export/t-schedule-report.md). |
+| Delad länk (alla) | Projekt kan delas med alla - även med personer som inte har tillgång till Analysis Workspace. I den här kolumnen visas om projekt har delats på det här sättet. Se [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) för mer information. |
+| Datavy | Datavyn som projektet är associerat med. |
 | [Projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Anger din roll för projektet - ägare, redigera, duplicera, visa. |
 | Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
 | Delas med | Användare som projektet har delats med. |
@@ -59,13 +59,13 @@ I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga
 
 | Menyalternativ | Beskrivning |
 |---|---|
-| Projekt | Innehåller vanliga åtgärder för projekthantering, inklusive Nytt, Öppna, Spara och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Hämta CSV och PDF](/help/analysis-workspace/curate-share/download-send.md) kan du exportera data från arbetsytan. **Projektinformation och inställningar** (se nedan) erbjuder många alternativ för att hantera ditt projekt. |
+| Projekt | Innehåller vanliga åtgärder för projekthantering, inklusive Nytt, Öppna, Spara och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Hämta projektdata](/help/analysis-workspace/export/download-send.md) kan du exportera data från arbetsytan. **Projektinformation och inställningar** (se nedan) erbjuder många alternativ för att hantera ditt projekt. |
 | Redigera | Ångra eller gör om den senaste åtgärden. Rensa alla återställer projektet till en tom startpunkt. |
 | Infoga | Infoga nya paneler eller visualiseringar från den här menyn. Du kan även infoga nya paneler och visualiseringar från den vänstra listen. |
 | [Komponenter](/help/components/overview.md) | Skapa nya filter, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |
 | [Dela](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratera, dela och schemalägg PDF/CSV-projekt till mottagare i organisationen. |
 | Hjälp om  | Få tillgång till hjälpdokumentation, videor och analyser [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för arbetsytetips och [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om arbetsytan och faktorer som påverkar projektet [prestanda](/help/admin/optimizing-performance.md). |
-| Dela-knapp eller ägare | Om du är i en egen eller Redigera för projektet ger knappen Dela i det övre högra hörnet tillgång till ett klick för att hantera projektmottagarna. Om du har en dubblett- eller vyroll för projektet visas projektägarens namn. |
+| Dela-knapp eller ägare | Om du arbetar i en egen eller Redigera för projektet ger knappen Dela i det övre högra hörnet tillgång till ett klick för att hantera projektmottagarna. Om du har en dubblett- eller vyroll för projektet visas projektägarens namn. |
 
 ### Projektinformation och inställningar {#info-settings}
 
@@ -82,8 +82,8 @@ Inställningarna inkluderar:
 | Senast ändrad | Datum för senaste ändring av projektet. |
 | Taggar | Visar alla taggar som har använts i ett projekt för enklare kategorisering. |
 | Beskrivning | En beskrivning är användbar för att förtydliga syftet med ett projekt. Du kan dubbelklicka på beskrivningen för att redigera den. |
-| Räkna upprepade instanser i projekt | Anger om upprepade instanser räknas i rapporter. Obs! den här inställningen gäller inte för visualiseringar av flöde och utfall. |
-| [Projektets färgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Du kan ändra den kategoriserade färgpaletten som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
+| Räkna upprepande instanser i projekt | Anger om upprepade instanser räknas i rapporter. Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall. |
+| [Projektets färgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Du kan ändra den kategoriserade färgpaletten som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i arbetsytan, bland annat de flesta visualiseringar. |
 | [Visa densitet](/help/analysis-workspace/build-workspace-project/view-density.md) | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden av den vänstra listen, frihandstabeller och kohorttabeller. |
 
 ## Vänster räl {#left-rail}

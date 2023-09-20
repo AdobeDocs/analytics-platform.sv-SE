@@ -4,7 +4,7 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 7%
@@ -19,15 +19,26 @@ ht-degree: 7%
 ![Persistence](../assets/persistence.png)
 
 * **Allokering** I kan du bestämma vilket värde som ska behållas när mer än en dimensionspost kan finnas i taget i en enda kolumn.
-* **Förfaller** I kan du bestämma hur länge ett dimensionsobjekt kvarstår efter den händelse det är inställt på.
+
+<!--
+
+  >[!NOTE]
+  >
+  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >
+  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
+
+-->
+
+* **Förfallotid** I kan du bestämma hur länge ett dimensionsobjekt kvarstår efter den händelse det är inställt på.
 
 [!UICONTROL Persistence] är bara tillgängligt för dimensioner och är retroaktivt för de data som det tillämpas på. Det är en omedelbar dataomvandling som sker innan filtrering eller andra analysåtgärder tillämpas.
 
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Set persistence] | Aktivera beständighet för dimensionen. Om persistence inte är aktiverat, relaterar dimensionen endast till mått som finns i samma händelse. Den här inställningen är inaktiverad som standard. |
-| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Från och med den 28 oktober 2021 kommer ett uppslagsfönster på upp till 90 dagar att läggas till i [!UICONTROL Allocation] inställning. |
-| [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativen är: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). Den maximala förfallotiden som du kan ange är 90 dagar. Om du väljer en tilldelning av [!UICONTROL All], endast [!UICONTROL Session] eller [!UICONTROL Person] kan förfalla. |
+| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativ: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Från och med den 28 oktober 2021 läggs ett uppslagsfönster på upp till 90 dagar till i [!UICONTROL Allocation] inställning. |
+| [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativ: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). Den maximala förfallotiden som du kan ange är 90 dagar. Om du väljer en tilldelning av [!UICONTROL All], endast [!UICONTROL Session] eller [!UICONTROL Person] kan förfalla. |
 
 {style="table-layout:auto"}
 
@@ -42,14 +53,14 @@ Information om tillgängliga allokeringsinställningar.
   | Datamängdsvärden |  | C | B |  | A |
   | Senaste allokering |  | C | B | B | A |
 
-* **[!UICONTROL Original]**: Bevarar det ursprungliga värdet med en tidsstämpel som finns i dimensionen under förfalloperioden. Om den här dimensionen har ett värde skrivs den inte över när ett annat värde visas för en efterföljande händelse. Ta till exempel följande tabell med [!UICONTROL Original] tilldelning och [!UICONTROL Session] förfallodatum:
+* **[!UICONTROL Original]**: Behåller det ursprungliga värdet med en tidsstämpel som finns i dimensionen under förfalloperioden. Om den här dimensionen har ett värde skrivs den inte över när ett annat värde visas för en efterföljande händelse. Ta till exempel följande tabell med [!UICONTROL Original] tilldelning och [!UICONTROL Session] förfallodatum:
 
   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
   | --- | --- | --- | --- | --- | --- |
   | Datamängdsvärden |  | C | B |  | A |
   | Ursprunglig allokering |  | C | C | C | C |
 
-* **[!UICONTROL All]**: Fungerar på liknande sätt som [!UICONTROL Participation] attribueringsmodell för mätvärden. Bevarar alla värden lika så att alla får full uppskattning för måttet i rapporteringen. Ta till exempel följande tabell med [!UICONTROL All] tilldelning och [!UICONTROL Session] förfallodatum:
+* **[!UICONTROL All]**: fungerar på liknande sätt som [!UICONTROL Participation] attribueringsmodell för mätvärden. Bevarar alla värden lika så att alla får full uppskattning för måttet i rapporteringen. Ta till exempel följande tabell med [!UICONTROL All] tilldelning och [!UICONTROL Session] förfallodatum:
 
   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
   | --- | --- | --- | --- | --- | --- |
@@ -69,9 +80,9 @@ Information om tillgängliga allokeringsinställningar.
 
 Information om tillgängliga förfalloinställningar.
 
-* **Session**: Upphör att gälla efter en viss session. Standardförfallotid.
-* **Person**: Upphör att gälla i slutet av rapporteringsfönstret.
-* **Anpassad tid**: Upphör att gälla efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. När du använder tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
+* **Session**: Upphör att gälla efter en viss session. Förfallotid som standard.
+* **Person**: Förfaller i slutet av rapportfönstret.
+* **Anpassad tid**: Förfaller efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. När du använder tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
 * **Mått**: När det här måttet visas i en händelse upphör det beständiga värdet i dimensionen omedelbart att gälla. Du kan använda valfritt mätvärde som förfallodatum för den här dimensionen. Det här förfalloalternativet är bara tillgängligt för allokeringsinställningarna Original och Senaste.
 
 ## [!UICONTROL Binding Dimension]

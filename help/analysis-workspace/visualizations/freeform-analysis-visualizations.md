@@ -1,12 +1,12 @@
 ---
-description: Visuellt presentera data i Analysis Workspace.
+description: Visa dina data i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1232'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
 | Visualiseringsnamn | Beskrivning |
 | --- | --- |
-| [Yta](/help/analysis-workspace/visualizations/area.md) | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
+| [Område](/help/analysis-workspace/visualizations/area.md) | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
 | [Liggande](/help/analysis-workspace/visualizations/bar.md) | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
 | [Punktdiagram](/help/analysis-workspace/visualizations/bullet-graph.md) | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
 | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
@@ -47,15 +47,15 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
    * I den vänstra listen väljer du **Visualiseringar** icon <!-- add icon -->och sedan dra en visualisering till panelen där du vill lägga till den.
 
-      ![](assets/viz-rail.png)
+     ![](assets/viz-rail.png)
 
    * På panelen där du vill lägga till visualiseringen väljer du **Plus** väljer du sedan den ikon som representerar den visualisering som du vill lägga till. Håll pekaren över ikonen för varje visualisering för att se dess namn.
 
-      ![Knapp för att lägga till en visualisering](assets/visualization-add-to-panel.png)
+     ![Knapp för att lägga till en visualisering](assets/visualization-add-to-panel.png)
 
    * Lägg till en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html)väljer du sedan den visualisering som du vill lägga till.
 
-      ![Tom panel](assets/blank_panel.png)
+     ![Tom panel](assets/blank_panel.png)
 
    * Högerklicka på en befintlig panel i ditt Analysis Workspace-projekt och välj sedan [!UICONTROL **Duplicera visualisering**] eller [!UICONTROL **Kopiera visualisering**].
 
@@ -69,9 +69,9 @@ För åtkomst [!UICONTROL Visualization Settings] för en enskild visualisering:
 
 1. I Analysis Workspace håller du muspekaren över den visualisering vars inställningar du vill anpassa.
 
-1. Klicka på kugghjulsikonen.
+1. Klicka på kugghjulet.
 
-   Varje typ av visualisering har unika inställningar som du kan anpassa. Information om tillgängliga inställningar finns i [Inställningar](#settings).
+   Varje typ av visualisering har unika inställningar som du kan anpassa. Mer information om tillgängliga inställningar finns i [Inställningar](#settings).
 
 ### Anpassa visualiseringsinställningar för alla visualiseringar du skapar
 
@@ -88,19 +88,19 @@ Varje visualisering har sina egna inställningar som du kan hantera. För åtkom
 | Visualiseringstyp | Ändra den typ av visuell information som används för att avbilda data. |
 | Kornighet | För trendvisualiseringar kan du ändra tidshalten (dag, vecka, månad osv.) från den här listrutan. Den här ändringen gäller även för datakälltabellen. |
 | Procenttal | Visar värden i procent. |
-| 100 % staplad | Den här inställningen för staplade ytor, staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Staplad 100 %](assets/stacked_100_percent.png) |
+| 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Staplad 100 %](assets/stacked_100_percent.png) |
 | Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
 | Begränsa maximalt antal objekt | Gör att du kan begränsa antalet objekt som visas i en visualisering. |
 | Ankra Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
 | Normalisering | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
-| Visa avvikelser | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
+| Visa kantlinjer | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
 
 ## Förklaring {#legend}
 
 En visualiseringsförklaring hjälper dig att relatera datum i en källtabell till plottade serier i visualiseringen. Förklaringen är interaktiv - du kan klicka på ett förklaringsobjekt om du vill visa/dölja en serie i visualiseringen. Detta är praktiskt om du vill förenkla de data som visualiseras.
 
-Dessutom kan du byta namn på förklaringsetiketter så att det blir lättare att använda bilderna. Obs! förklaringsredigering **not** gäller för: Treemap, Bullet, Summary Change/Number, Text, Freeform, Histogram, Kohort eller Flow-visualiseringar.
+Dessutom kan du byta namn på förklaringsetiketter så att det blir lättare att använda bilderna. Obs! Förklaringsredigering gör det **not** gäller för: Treemap, Bullet, Summary Change/Number, Text, Frihand, Histogram, Kohort eller Flödesvisualiseringar.
 
 Så här redigerar du en förklaringsetikett:
 
@@ -122,8 +122,8 @@ Ytterligare funktioner för en visualisering är tillgängliga genom att högerk
 | --- | --- |
 | Infoga kopierad panel/visualisering | Gör att du kan klistra in (&quot;infoga&quot;) en kopierad panel eller visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
 | Kopiera visualisering | Högerklicka och kopiera en visualisering så att du kan infoga den på en annan plats i projektet eller i ett helt annat projekt. |
-| [Hämta objekt som CSV](/help/analysis-workspace/curate-share/download-send.md) | Hämta upp till 50 000 dimensionsobjekt för den valda dimensionen som en CSV-fil. |
-| [Hämta data som CSV](/help/analysis-workspace/curate-share/download-send.md) | Hämta en datakälla för visualisering som en CSV-fil. |
+| [Hämta projektdata](/help/analysis-workspace/export/download-send.md) | Hämta upp till 50 000 dimensionsobjekt för den valda dimensionen som en CSV-fil. |
+| [Hämta projektdata](/help/analysis-workspace/export/download-send.md) | Hämta en datakälla för visualisering som en CSV-fil. |
 | Duplicera visualisering | Skapar en exakt kopia av den aktuella visualiseringen, som du sedan kan ändra. |
 | Redigera beskrivning | Lägg till (eller redigera) en textbeskrivning för visualiseringen. |
 | Hämta visualiseringslänk | Gör att du kan dirigera någon till en viss visualisering i ett projekt. När användaren klickar på länken måste mottagaren logga in innan den dirigeras till den exakta visualisering som är länkad till den. |

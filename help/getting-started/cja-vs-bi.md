@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
+source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 I och med det fokus som nu ligger på kundupplevelsen behöver varumärken avancerade lösningar för att bättre förstå den holistiska kundresan. Genom att förstå den här fullständiga kundresan kan ni analysera och få värdefulla insikter om hur online- och offlinekanaler engagerar kunder och leder till ökad konvertering, lojalitet och lojalitet. En kundresa i det här sammanhanget kan vara en enkel onlineordning för en måltid i en sushi-näringskedja. Eller köp av en ny bil, där kunden kombinerar onlineforskning med besök i butiken och ett slutligt personligt köp.
 
-Många organisationer har konsoliderat sina flerkanalsdata till en datasjö eller data warehouse. Business Intelligence-verktyg (BI) används ovanpå dessa datalager för att tillhandahålla rapporter, visualiseringar och insikter som företaget behöver för att förstå kundresan. Den här kombinationen av lösningar och verktyg är ofta av allmän natur och design och inte uttryckligen inriktad på kunden. Customer Journey Analytics fokuserar på att ge de som ansvarar för kundupplevelsen möjlighet, som marknadsförare, dataanalytiker och datavetare. Verktyget gör att de kan visualisera kundresan i fullständigt sammanhang över alla kanaler i realtid utan begränsningar som många andra BI-verktyg har.
+Många organisationer har konsoliderat sina flerkanalsdata till en datalinje eller ett datalager. Business Intelligence-verktyg (BI) används ovanpå dessa datalager för att tillhandahålla rapporter, visualiseringar och insikter som företaget behöver för att förstå kundresan. Den här kombinationen av lösningar och verktyg är ofta av allmän natur och design och inte uttryckligen inriktad på kunden. Customer Journey Analytics fokuserar på att ge de som ansvarar för kundupplevelsen möjlighet, som marknadsförare, dataanalytiker och datavetare. Verktyget gör att de kan visualisera kundresan i fullständigt sammanhang över alla kanaler i realtid utan begränsningar som många andra BI-verktyg har.
 
-I det här avsnittet av dokumentationen förklaras de grundläggande skillnaderna mellan Customer Journey Analytics och vanliga BI-verktyg, först genom att titta på det allmänna arbetsflöde som används för att uppnå det mål som nämns ovan: förstå kundresan. Sedan innehåller det mer information om hur data lagras, samlas in och frågas på olika sätt mellan Customer Journey Analytics och BI-verktyg. Slutligen förklaras skillnaderna i visualiseringsfunktioner.
+I det här avsnittet av dokumentationen förklaras de grundläggande skillnaderna mellan Customer Journey Analytics och vanliga BI-verktyg, först genom att titta på det allmänna arbetsflöde som används för att uppnå det mål som nämns ovan: att förstå kundresan. Sedan innehåller det mer information om hur data lagras, samlas in och frågas på olika sätt mellan Customer Journey Analytics och BI-verktyg. Slutligen förklaras skillnaderna i visualiseringsfunktioner.
 
 ## Traditionellt BI-arbetsflöde
 
@@ -38,7 +38,7 @@ Customer Journey Analytics erbjuder en miljö där man kan koppla samman data ö
 
 Du kan använda Customer Journey Analytics för att ställa frågor i den visuella Analysis Workspace-miljön och få insikter nästan direkt. Flerkanalsdata och rapporter är omedelbart tillgängliga, utan någon SQL-kod. Ytterligare frågor och analyser kan göras med en enkel dra och släpp-funktion i användargränssnittet, med helt korrelerade data. Du kan fortsätta ställa frågor och stegvis utforska fler detaljer när du behöver dem. Sedan kan ni vidta omedelbara åtgärder för de insikter ni hittar, som att dela ut målgrupper för aktivering och samordning.
 
-## Customer Journey Analytics är en kraftfull rapportmotor
+## Customer Journey Analytics kraftfulla rapporteringsmotor
 
 Customer Journey Analytics använder en kraftfull egen arkitektur som distribuerar analyser över hundratals eller till och med tusentals servrar för att visa data i Analysis Workspace på bara några sekunder. Några av de märkbara egenskaperna i den här bearbetningsarkitekturen är:
 
@@ -48,35 +48,35 @@ Customer Journey Analytics använder en kraftfull egen arkitektur som distribuer
 
 * **Effektiv fråga om komplexa dataströmmar**: En av de största skillnaderna i rapporteringsmotorn jämfört med traditionella SQL- och NoSQL-databaser är möjligheten att fastställa predikat baserat på sekvensorienterade relationer på en grundläggande nivå. Dessa grundläggande frågeåtgärder kan titta på postströmmen, som består av många sammanflätade (och till och med kapslade) sekvenser. De utför en fråga mot alla dessa sammanflätade dataströmmar med samma effektivitet som en enda sammanhängande sekvensåtgärd.
 
-* **Utformad för att snabbt besvara stora frågor**: Rapporteringsmotorn är inte lika generell som traditionella big data-system. Den är dock särskilt utformad för att svara på frågor som omfattar miljontals eller till och med miljarder poster (händelsedata/upplevelsehändelser), vanligtvis på mindre än en sekund. Till skillnad från andra stora datasystem gör den inte detta genom att sampla data eller genom att förberäkna svaren på alla frågor som du tror att du kan ställa. I stället kan de snabbt beräkna svaren för att ge stöd åt interaktiva frågetillfällen. Denna specifika utformning av rapporteringsmotorn för Customer Journey Analytics underlättar för informationen att vara lätt tillgänglig och snabbt för pågående analyser och undersökningar, vilket gör att ni kan få insikter och förståelse för kundresor.
+* **Utformad för att snabbt svara på stora frågor**: Rapporteringsmotorn har inte samma allmänna syfte som traditionella big data-system. Den är dock särskilt utformad för att svara på frågor som omfattar miljontals eller till och med miljarder poster (händelsedata/upplevelsehändelser), vanligtvis på mindre än en sekund. Till skillnad från andra stora datasystem gör den inte detta genom att sampla data eller genom att förberäkna svaren på alla frågor som du tror att du kan ställa. I stället kan de snabbt beräkna svaren för att ge stöd åt interaktiva frågetillfällen. Denna specifika utformning av rapportmotorn för Customer Journey Analytics underlättar för informationen att vara lätt tillgänglig och snabbt för pågående analyser och undersökningar, vilket gör att ni kan få insikter och förståelse för kundresor.
 
-* **Fungerar som en headless BI-lösning**: Du kan definiera mått, mätvärden, filter på ett ställe, och sedan kan alla Customer Journey Analytics-klienter (inklusive vårt publika Customer Journey Analytics-API) få åtkomst till dessa komponenter. Detta gör att komplexa frågor tas bort från slutanvändarna och garanterar att resultatet blir detsamma, oavsett vilken rapporterings- eller visualiseringsklient du använder.
+* **Fungerar som en headless BI-lösning**: Du definierar mått, mätvärden, filter på ett ställe, och sedan kan alla Customer Journey Analytics-klienter (inklusive vårt publika Customer Journey Analytics-API) få åtkomst till dessa komponenter. Detta gör att komplexa frågor tas bort från slutanvändarna och garanterar att resultatet blir detsamma, oavsett vilken rapporterings- eller visualiseringsklient du använder.
 
 ## Customer Journey Analytics unika visualiseringsfunktioner
 
 Rapporteringsmotorn är avgörande för att Customer Journey Analytics ska kunna interagera progressivt med och agera på alla kundresedata i den rapporteringsmotorn. Customer Journey Analytics har en omfattande uppsättning komponenter som gör att du kan göra detta visuellt och genom att dra och släppa. Med BI-visualiseringsverktyg kan du utforska inom gränserna för SQL-förberedda data (som definieras av IT). Med Customer Journey Analytics kan du dela upp och dela upp och dela upp i segment och segment så mycket du vill, utan att behöva gå tillbaka till IT för att skapa ytterligare en SQL-vy.
 
-&quot;Progressivt&quot; är ett nyckelbegrepp här: Till skillnad från de flesta visualiseringar i BI-verktyg gör det visuella dra-och-släpp-gränssnittet i Customer Journey Analytics att du kontinuerligt kan dela upp dina data efter dina specifika behov: kan du interaktivt skapa visuella frågor med relevanta mått, dimensioner, filter (segment), beräkningar, tidslinjer, anteckningar och andra analysvärden.
+&quot;Progressivt&quot; är ett nyckelbegrepp här: i motsats till de flesta visualiseringar i BI-verktyg kan du med det visuella dra-och-släpp-gränssnittet i Customer Journey Analytics kontinuerligt dela upp data efter dina specifika behov: du kan interaktivt skapa visuella frågor med relevanta mått, dimensioner, filter (segment), beräkningar, tidslinjer, anteckningar och andra analysvärden.
 
 De inbyggda visualiseringskomponenterna är smarta funktioner som:
 
 * **Virtuella analysfunktioner** som [Analysidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) som använder prediktiva algoritmer och maskininlärning för att ge insikter i vad som driver ovanliga beteenden i era data.
 
-* **Avancerade analysfunktioner** som fokuserar specifikt på kundreseinsikter, som [flödesdiagram](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attributionspanelen](/help/analysis-workspace/c-panels/attribution.md), [utfallsdiagram](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)och [dimensionsindelning](/help/components/dimensions/t-breakdown-fa.md). Exempel på användningsklara visualiseringar är:
+* **Avancerade analysfunktioner** som fokuserar specifikt på kundreseinsikter, som [flödesdiagram](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attributionspanelen](/help/analysis-workspace/c-panels/attribution.md), [utfallsdiagram](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)och [dimensionsindelning](/help/components/dimensions/t-breakdown-fa.md). Exempel på färdiga visualiseringar är:
 
    * [Kundlojalitetsanalys via kohort-/latenstabeller](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), där du bara drar och släpper mätvärden/dimensioner i ett verktyg och du är klar på mindre än 30 sekunder,
 
    * [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualiseringar. Kan installeras på mindre än en minut.
 
-* **Segmenteringsfunktioner i alla steg av din progressiva prospektering**: när du tycker att det är vettigt kan du publicera publiken i Experience Platform och därifrån till någon av de destinationer som stöds.
+* **Segmenteringsfunktioner i alla steg av din progressiva prospektering**: när du tycker att det är vettigt kan du publicera målgruppen tillbaka till Experience Platform och därifrån till någon av de destinationer som stöds.
 
-* **Yrkesställning** som är helt [anpassningsbar](/help/data-views/component-settings/persistence.md): bestämmer ni när en session, som en del av en kanal i en kundresa, börjar och slutar.
+* **Yrkesställning** som är helt [anpassningsbar](/help/data-views/component-settings/persistence.md): ni bestämmer när en session, som en del av en kanal i en kundresa, börjar och slutar.
 
 * **Curation and Democratization**: Kontrollpanelerna som skapas i Customer Journey Analytics kan vara:
 
-   * [Kuraterad](/help/analysis-workspace/curate-share/curate.md) till andra individer i organisationen för kontinuerlig prospektering,
-   * Exporterad till Excel med [Report Builder](/help/report-builder/report-buider-overview.md) (ett särskilt plugin-program),
-   * [Delad](/help/analysis-workspace/curate-share/share-projects.md) i olika format, inklusive [PDF](/help/analysis-workspace/curate-share/download-send.md), [CSV](/help/analysis-workspace/curate-share/download-send.md) och via [dedikerad mobilapp](/help/mobile-app/home.md), till dem som är intresserade av slutrapporterna och/eller visualiseringarna.
+   * [Kuraterad](/help/analysis-workspace/curate-share/curate.md) till andra individer i organisationen för kontinuerlig undersökning,
+   * Exporterad till Excel med [Report Builder](/help/report-builder/report-buider-overview.md) (en särskild plugin),
+   * [Delad](/help/analysis-workspace/curate-share/share-projects.md) i olika format, inklusive [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) och via [dedikerad mobilapp](/help/mobile-app/home.md), till dem som är intresserade av slutrapporterna och/eller visualiseringarna.
 
 Det är svårt att jämföra visualiseringsfunktionerna i Customer Journey Analytics med vad BI-verktygen erbjuder på grund av de många olika visualiseringar som finns. Vissa BI-verktyg har mer avancerade visualiseringar, men Customer Journey Analytics fokuserar på interaktiva och kompatibla visualiseringar av kundresan som gör att du kan dela upp data på bara några sekunder utan att&quot;debitera&quot; dig för varje ytterligare fråga.
 

@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
 workflow-type: tm+mt
 source-wordcount: '2631'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | **Augusti 2023** | |
 | Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md) för att förbättra läsbarheten. |
 | Förbättringar i Report Builder | Uppdaterat innehåll för [Schemalägg arbetsböcker](/help/report-builder/schedule-reportbuilder.md) för att tillhandahålla information för hämtning av schemalagda aktiviteter. Uppdaterat innehåll för  [Skapa ett datablock](/help/report-builder/create-a-data-block.md) om du vill ange information om hur du använder startdatum som dimension. |
-| Flyttat innehåll om hantering av schemalagda projekt | Skapade en ny artikel i Analytics Components Guide med namnet [Schemalagda projekt](/help/components/scheduled-projects-manager.md). Innehållet fanns tidigare i [Schemalägg projekt](/help/analysis-workspace/curate-share/t-schedule-report.md) artikel i Analytics Tools Guide. |
+| Flyttat innehåll om hantering av schemalagda projekt | Skapade en ny artikel i Analytics Components Guide med namnet [Schemalagda projekt](/help/components/scheduled-projects-manager.md). Innehållet fanns tidigare i [Schemalägg projekt](/help/analysis-workspace/export/t-schedule-report.md) artikel i Analytics Tools Guide. |
 | Funktioner i Adobe Customer Journey Analytics | Mer information finns i *Stöds på ett nytt sätt* tabellen över sessionerna i Customer Journey Analytics jämfört med Adobe Analytics. [Läs mer](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Utveckling från Adobe Analytics | Uppdaterade *(Gör om)Konfigurera marknadsföringskanaler* -avsnitt med en referens till funktionsmallen för härledda fält Marknadskanaler. [Läs mer](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Snabbstartsguider för dataöverföring för mobilprogram och andra plattformar | Ytterligare startguider för dataöverföring med information om hur man importerar och använder data från mobilapplikationer eller andra plattformar (som datorapplikationer, spel på konsoler, applikationer på digitalboxar och IoT-enheter) i Customer Journey Analytics. [Läs mer](../data-ingestion/data-ingestion.md) |
@@ -169,7 +169,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | April 2021 | Ny dokumentation om stöd för schemalagda projekt i Workspace. |
 | April 2021 | Nya ämnen på [förbättrad datavyer](/help/data-views/data-views.md). |
 | April 2021 | Nya ämnen om [inhämta Google Analytics-data](/help/use-cases/ga/overview.md) och [analysera dessa data](/help/use-cases/ga/report.md). |
-| April 2021 | Lagt till ämne om [schemalagda rapporter](/help/analysis-workspace/curate-share/t-schedule-report.md) i Workspace. |
+| April 2021 | Lagt till ämne om [schemalagda rapporter](/help/analysis-workspace/export/t-schedule-report.md) i Workspace. |
 | April 2021 | Nytt ämne [högkardinalitetsmått i Customer Journey Analytics](/help/components/dimensions/high-cardinality.md). |
 | **Mars 2021** | |
 | Mars 2021 | Tillagt ämne om stöd för [Kontrollpaneler för analyser](/help/mobile-app/home.md) (mobilapp). |

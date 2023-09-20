@@ -3,7 +3,7 @@ title: Etiketter och profiler
 description: Lär dig hur dataetiketter och principer som definieras i Adobe Experience Platform påverkar datavyer och rapporter i Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
+source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Dataetiketter som har skapats i Experience Platform visas på tre platser i anv�
 
 | Plats | Beskrivning |
 | --- | --- |
-| Informationsknappen i ett schemafält | Om du klickar på den här knappen visas [!UICONTROL Data Usage Labels] gäller för närvarande ett fält:<p>![](assets/data-label-left.png) |
+| Info-knappen i ett schemafält | Om du klickar på den här knappen visas [!UICONTROL Data Usage Labels] gäller för närvarande ett fält:<p>![](assets/data-label-left.png) |
 | Höger räl under [Komponentinställningar](/help/data-views/component-settings/overview.md) | Alla [!UICONTROL Data Usage Labels] är listade här:<p>![](assets/data-label-right.png) |
 | Lägg till dataetiketter som en kolumn | Du kan lägga till [!UICONTROL Data Usage Labels] som en kolumn till [!UICONTROL Included Components] kolumner i datavyer. Klicka bara på ikonen för kolumnväljaren och välj **[!UICONTROL Data Usage Labels]**:<p>![](assets/data-label-column.png) |
 
@@ -45,7 +45,7 @@ Dataetiketter som har skapats i Experience Platform visas på tre platser i anv�
 
 ## Filtrera på datastyrningsetiketter i datavyer
 
-Klicka på knappen [!UICONTROL filter] ikonen i det vänstra spåret och filtrera datavykomponenterna efter **[!UICONTROL Data Governance]** och typ av **[!UICONTROL Label]**:
+Klicka på knappen [!UICONTROL filter] ikonen i det vänstra spåret och filtrera datavykomponenterna efter **[!UICONTROL Data Governance]** och typ **[!UICONTROL Label]**:
 
 ![](assets/filter-labels.png)
 
@@ -55,7 +55,7 @@ Klicka **[!UICONTROL Apply]** för att se vilka komponenter som har etiketter ko
 
 Du kan kontrollera om en profil är aktiverad som blockerar användningen av vissa datavytelement i Customer Journey Analytics för analys eller export.
 
-Klicka på [!UICONTROL filter] ikonen i den vänstra listen och under **[!UICONTROL Data Governance]**, klicka **[!UICONTROL Policies]**:
+Klicka igen på [!UICONTROL filter] ikonen i den vänstra listen och under **[!UICONTROL Data Governance]**, klicka **[!UICONTROL Policies]**:
 
 ![](assets/filter-policies.png)
 
@@ -65,14 +65,14 @@ Klicka **[!UICONTROL Apply]** för att se vilka profiler som är aktiverade.
 
 Om **[!UICONTROL Enforce Analytics]** eller **[!UICONTROL Enforce Download]** profiler är aktiverade. De schemakomponenter som har vissa dataetiketter (till exempel C8 eller C12) kopplade till sig kan inte läggas till i datavyer.
 
-Dessa komponenter är nedtonade i den vänstra listen [!UICONTROL Schema fields] lista:
+De här komponenterna är nedtonade i den vänstra listen [!UICONTROL Schema fields] lista:
 
 ![](assets/component-greyed.png)
 
 Du kan inte heller spara en datavy som innehåller blockerade fält.
 
 >[!MORELIKETHIS]
->[Hämta känsliga data](/help/analysis-workspace/curate-share/download-send.md)
+>[Hämta känsliga data](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
 >[Vad är begränsade etiketter i Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)

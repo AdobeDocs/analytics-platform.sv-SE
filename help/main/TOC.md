@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 92580534f2a09bfd7e9cc2d4993cc05374922ca7
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 26%
+source-wordcount: '995'
+ht-degree: 25%
 
 ---
 
@@ -161,8 +161,11 @@ ht-degree: 26%
       + [Dela projekt](../analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](../analysis-workspace/curate-share/shareable-links.md)
       + [Visa endast  projekt](../analysis-workspace/curate-share/view-only-projects.md)
-      + [Hämta PDF- eller CSV-filer](../analysis-workspace/curate-share/download-send.md)
-      + [Schemalägg projekt](../analysis-workspace/curate-share/t-schedule-report.md)
+   + Exportera {#export}
+      + [Exportera översikt](../analysis-workspace/export/export-project-overview.md)
+      + [Hämta](../analysis-workspace/export/download-send.md)
+      + [Skicka till andra](../analysis-workspace/export/t-schedule-report.md)
+      + [Exportera till molnet](../analysis-workspace/export/export-cloud.md)
    + Virtual Analyst {#virtual-analyst}
       + [Översikt över Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
       + Avvikelseidentifiering {#anomaly-detection}
@@ -253,6 +256,13 @@ ht-degree: 26%
       + [Hantera datumintervall](../components/date-ranges/manage.md)
       + [Skapa anpassade datumintervall](../components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
+   + Export {#exports}
+      + [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md)
+      + [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md)
+      + [Hantera platser för molnexport](/help/components/exports/manage-export-locations.md)
+      + [Hantera exporter](/help/components/exports/manage-exports.md)
+      + [Hantera exportloggar](/help/components/exports/manage-export-logs.md)
+      + [Felsöka exporter](/help/components/exports/troubleshoot-exports.md)
    + Dataordlista {#data-dictionary}
       + [Översikt över dataordlistan](../components/data-dictionary/data-dictionary-overview.md)
       + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -325,6 +335,7 @@ ht-degree: 26%
    + [Visa och hantera användning](../admin/estimate-usage.md)
    + [Borttagningskonsekvenser](../admin/cja-deletion.md)
    + [Optimera Customer Journey Analytics prestanda](../admin/optimizing-performance.md)
+   + [IP-adresser](../admin/ip-addresses.md)
 
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
