@@ -3,7 +3,7 @@ description: I filterverktyget finns en arbetsyta där du kan dra och släppa me
 title: Skapa filter
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e97f206e2c2f00d32e7e06d56fcc84819fe329c6
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 1%
@@ -64,10 +64,10 @@ Du kan lägga till regeldefinitioner och behållare för att definiera filter. (
 1. Ange eller välj ett värde för det markerade objektet.
 1. Lägg till ytterligare behållare om det behövs, med **[!UICONTROL And]**, **[!UICONTROL Or]**, eller **[!UICONTROL Then]** regler.
 1. När du har placerat behållarna och angett reglerna ser du resultatet av filtret i valideringsdiagrammet längst upp till höger. Valideraren anger det procentuella och absoluta antalet sidvisningar, besök och unika personer som matchar filtret som du skapade.
-1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/manage-filters.md) behållaren genom att markera en befintlig tagg eller skapa en ny.
+1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/filters-tag.md) behållaren genom att markera en befintlig tagg eller skapa en ny.
 1. Klicka **[!UICONTROL Save]** för att spara filtret.
 
-   Du kommer till [Filterhanteraren](/help/components/filters/manage-filters.md), där du kan tagga, dela och hantera filtret på flera sätt.
+   Du kommer till [Filterhantering](/help/components/filters/manage-filters.md), där du kan tagga, dela och hantera filtret på flera sätt.
 
 ## Lägg till behållare {#containers}
 

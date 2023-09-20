@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 92580534f2a09bfd7e9cc2d4993cc05374922ca7
+source-git-commit: dab672e07ddf834701279e108ad2daab1ad94efa
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1023'
 ht-degree: 25%
 
 ---
@@ -227,6 +227,12 @@ ht-degree: 25%
    + Filter {#cja-filters}
       + [Översikt över filter](../components/filters/filters-overview.md)
       + [Skapa filter](../components/filters/create-filters.md)
+      + [Dela filter](../components/filters/filters-share.md)
+      + [Taggfilter](../components/filters/filters-tag.md)
+      + [Filtrera filterlistan](../components/filters/filters-filter.md)
+      + [Markera filter som favoriter](../components/filters/filters-favorite.md)
+      + [Godkänn filter](../components/filters/filters-approve.md)
+      + [Kopiera filter](../components/filters/filters-copy.md)
       + [Snabbfilter](../components/filters/quick-filters.md)
       + [Filter Builder](../components/filters/filter-builder.md)
       + [Hantera filter](../components/filters/manage-filters.md)
@@ -242,6 +248,9 @@ ht-degree: 25%
          + [Filtrerade mätvärden](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Stapla och ersätta filter](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Filtrerade och viktade mätvärden](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+         + [Filtrera beräknade värden](../components/calc-metrics/cm-workflow/cm-filter.md)
+         + [Markera beräknade värden som favoriter](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [Kopiera beräknade värden](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [Använda funktioner](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Tagga beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Godkänna beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-approving.md)

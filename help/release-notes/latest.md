@@ -3,10 +3,10 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 795a30719c29e6352133987d5d0aaefcf9184a52
+source-git-commit: aa7f4361b1353a86b87c36c3d08e99ddb8ffd049
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 7%
+source-wordcount: '595'
+ht-degree: 6%
 
 ---
 
@@ -24,6 +24,7 @@ Versionsinformationen gäller den 13 september till 3 oktober 2023. Adobe Custom
 | **Uppdateringar av härledda fält** | Följande uppdateringar gjordes för funktionen för härledda fält:<ul><li>The [!UICONTROL Lookup] funktionen har bytt namn till [!UICONTROL Classify], med ytterligare alternativ för att läsa in CSV-data. **(Utgåvor 27 september 2023)**</li><li>Ytterligare funktioner är tillgängliga när du definierar ett härlett fält: [!UICONTROL Trim], [!UICONTROL Lowercase] och [!UICONTROL Lookup].</li><li>Härledda fältdefinitioner har nu även stöd för fält från [!UICONTROL Lookup] och [!UICONTROL Profile] datauppsättningar.</li></ul>[Läs mer](/help/data-views/derived-fields/derived-fields.md) | Ej tillämpligt | 13 september 2023 |
 | **Nya funktioner i Adobe Product Analytics** | <ul><li>**Analysidentifiering**: Jämför händelser med förväntade värden som härleds från historiska trender. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Trends Frequency of use view**: Mät användningen av funktionerna efter användningsfrekvens. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**Användarinställningar**: Konfigurera ett antal användarinställningar, t.ex. färgpaletter och sifferformat. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html)</li></ul> | Ej tillämpligt | 18 september 2023 |
 | **Upplev Edge-enhetssökningar** | Aktivera automatisk datainsamling av enhetstyp via Experience Platform Edge-nätverket. Den här Experience Edge-tjänsten är till stor nytta för Customer Journey Analytics och andra Experience Platform-appar. (Dokumentationslänk följer) | Ej tillämpligt | 27 september 2023 |
+| **Nya kolumner är tillgängliga när komponenter hanteras** | Följande nya kolumner är nu tillgängliga i [Beräknat måttansvarig](/help/components/calc-metrics/cm-workflow/cm-manager.md) och [Filterhantering](/help/components/filters/manage-filters.md) vid hantering av komponenter:<ul><li>Används i</li><li>Senast använd</li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras. Du kan använda ordlistan tillsammans med den här informationen för att hålla reda på och förstå hur komponenter används i organisationen bättre.</p> | 20 september 2023 | 4 oktober 2023 |
 
 {style="table-layout:auto"}
 

@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Konfigurera en kohortanalysrapport
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Skapa en kohort och kör en [!UICONTROL Cohort Analysis] rapportera i Analysis W
 
    Markera celler (angränsande eller icke-angränsande) och högerklicka sedan > **[!UICONTROL Create Filter From Selection]**.
 
-1. I [Filter Builder](/help/components/filters/manage-filters.md)redigerar du filtret ytterligare och klickar sedan på **[!UICONTROL Save]**.
+1. I [Filter Builder](/help/components/filters/filter-builder.md)redigerar du filtret ytterligare och klickar sedan på **[!UICONTROL Save]**.
 
    Det sparade filtret kan användas i [!UICONTROL Filter] panel i [!UICONTROL Analysis Workspace].
 1. Namnge och spara ditt kohortprojekt.

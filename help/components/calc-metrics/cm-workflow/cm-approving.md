@@ -3,10 +3,10 @@ description: I hanteraren för beräknade mätvärden kan du skapa ett arbetsfl�
 title: Godkänna beräknade mätvärden
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 2%
+source-wordcount: '232'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ I hanteraren för beräknade mätvärden kan administratörer skapa ett arbetsfl
 
 Så här markerar du beräknade värden som godkända:
 
-1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**] för att gå till Calculated Metrics Manager.
+1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**].
 
 1. Markera kryssrutan till vänster om de mätvärden som du vill markera som godkända i Beräknad måtthanterare.
 
@@ -36,4 +36,4 @@ Så här markerar du beräknade värden som godkända:
 
    Lägg märke till godkännandeikonen bredvid det beräknade måttet i listan:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
-1. (Valfritt) Välj alternativet **Filter** ikon, expandera **[!UICONTROL Other filters]** väljer **[!UICONTROL Approved]**.
+1. (Valfritt) Om du vill filtrera listan med beräknade värden i hanteraren för beräknade värden så att endast godkända värden visas, väljer du **Filter** ikon, expandera **[!UICONTROL Other filters]** väljer **[!UICONTROL Approved]**.

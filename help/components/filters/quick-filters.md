@@ -4,7 +4,7 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Så här skapar du ett snabbfilter:
      >[!NOTE]
      >
      > Tänk på följande när du skapar ett snabbfilter med ad hoc-funktioner (dra och släpp):
-     > * Följande komponenttyper stöds inte: beräknade värden och dimensioner samt mätvärden som du inte kan skapa filter utifrån.
+     > * Följande komponenttyper stöds inte: beräknade värden och dimensioner samt mätvärden som du inte kan skapa filter från.
      > * För fullständiga dimensioner och händelser skapar Analysis Workspace händelsefilter för &quot;finns&quot;. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
      > * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i filtersläppzonen konverteras den automatiskt till filtret &quot;does not exist&quot; så att det behandlas korrekt vid filtrering.
 
@@ -55,12 +55,12 @@ Så här skapar du ett snabbfilter:
    | --- | --- |
    | [!UICONTROL Name] | Standardnamnet för ett filter är en kombination av regelnamnen i filtret. Du kan byta namn på filtret till ett mer eget namn. |
    | [!UICONTROL Include/exclude] | Du kan antingen inkludera eller exkludera komponenter i filterdefinitionen, men inte båda. |
-   | [!UICONTROL Hit/Visit/Visitor] container | Snabbfilter innehåller ett [filterbehållare](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) bara det som gör att du kan inkludera ett mått/mått/datumintervall i (eller exkludera det från) filtret. [!UICONTROL Visitor] innehåller övergripande data som är specifika för personen vid besök och sidvisningar. A [!UICONTROL Visit] kan du ange regler för att dela upp persondata baserat på besök och en [!UICONTROL Hit] Med behållare kan du dela upp personinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
+   | [!UICONTROL Hit/Visit/Visitor] container | Snabbfilter innehåller ett [filterbehållare](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) bara det som gör att du kan inkludera ett mått/mått/datumintervall i (eller exkludera det från) filtret. [!UICONTROL Visitor] innehåller övergripande data som är specifika för personen vid besök och sidvisningar. A [!UICONTROL Visit] kan du ange regler för att dela upp persondata baserat på besök och en [!UICONTROL Hit] kan du dela upp personinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
    | [!UICONTROL Components] (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (dimensioner, mått, datumintervall eller dimensionsvärden). Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva så hittar snabbfilterverktyget automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
    | [!UICONTROL Operator] | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count] operatorer. Se [Filteroperatorer](operators.md). |
    | Plustecken (+) | Lägg till en annan regel |
    | OCH/ELLER-kvalificerare | Du kan lägga till&quot;AND&quot;- eller&quot;OR&quot;-kvalificerare i reglerna, men du kan inte blanda&quot;AND&quot; och&quot;OR&quot; i en enda filterdefinition. |
-   | [!UICONTROL Apply] | Använd det här filtret på panelen. Om filtret inte innehåller några data tillfrågas du om du vill fortsätta. |
+   | [!UICONTROL Apply] | Använd filtret på panelen. Om filtret inte innehåller några data tillfrågas du om du vill fortsätta. |
    | [!UICONTROL Open builder] | Öppnar Filter Builder. När du har sparat eller använt filtret i Filter Builder betraktas det inte längre som ett snabbfilter. Den blir en del av komponentlistens filterbibliotek. <p>Markera alternativet om du vill att komponenten ska vara tillgänglig i alla dina projekt och i den vänstra listen [!UICONTROL **Gör det här filtret tillgängligt för alla projekt och lägg till det i komponentlistan**].</p><p>Mer information finns i avsnittet [Spara ett snabbfilter som ett komponentlistfilter](#save-a-quick-filter-as-a-component-list-filter) i den här artikeln.</p><p>**Obs!** Endast användare med behörigheten Skapa filter i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) I kan du öppna Filter Builder.</p> |
    | [!UICONTROL Cancel] | Avbryt det här snabbfiltret (använd det inte). |
    | [!UICONTROL Date range] | Valideraren använder panelens datumintervall för sin datasökning. Alla datumintervall som används i ett snabbfilter åsidosätter panelens datumintervall högst upp på panelen. |
@@ -70,7 +70,7 @@ Så här skapar du ett snabbfilter:
 
 ## Redigera ett snabbfilter {#edit}
 
-1. Håll muspekaren över det snabbfilter som du vill redigera och välj sedan **Redigera** ikon.
+1. Håll muspekaren över det snabbfilter som du vill redigera och välj sedan **Redigera** -ikon.
 
    ![Redigera ad hoc-filter](assets/filter-adhoc-edit.png)
 
@@ -123,12 +123,12 @@ När du har tillämpat filtret kan du välja att lägga till det i filterkompone
 
    ![Dialogrutan Filter](assets/project-only-filter-dialog.png)
 
-1. Markera kryssrutan bredvid **[!UICONTROL Make this filtr available to all your projects and add it to your component list.]**
+1. Markera kryssrutan intill **[!UICONTROL Make this filtr available to all your projects and add it to your component list.]**
 
 1. Välj **[!UICONTROL Save]**.
 
    Filtret visas nu i filterkomponentlistan för alla dina projekt.
-Du kan också [dela filtret](/help/components/filters/manage-filters.md) med andra i organisationen.
+Du kan också [dela filtret](/help/components/filters/filters-share.md) med andra i organisationen.
 
 ## Exempel på snabbfilter
 
