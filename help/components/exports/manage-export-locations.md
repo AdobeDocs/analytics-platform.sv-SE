@@ -5,16 +5,14 @@ title: Konfigurera platser för molnexport
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # Hantera platser och konton för molnexport
-
-{{select-package}}
 
 Du kan visa, redigera och ta bort platser för molnexport.
 
@@ -38,7 +36,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
    | Filter | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Platstyp**]<!--should this be changed to Account type?--> | Kontotypen som platsen är associerad med. Följande kontotyper kan vara tillgängliga: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul> |
+   | [!UICONTROL **Platstyp**]<!--should this be changed to Account type?--> | Kontotypen som platsen är associerad med. Följande kontotyper kan vara tillgängliga: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Konto**] | Namnet på kontot som platsen är associerad med. |
    | [!UICONTROL **Skapad av**] | E-postadressen till användaren som skapade platsen. |
 

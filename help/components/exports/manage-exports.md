@@ -5,18 +5,16 @@ title: Hantera exporter
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
 
 # Hantera exporter
 
-{{select-package}}
-
-När du har exporterat en fullständig tabell enligt beskrivningen i [Exportera data från Customer Journey Analytics till molnet](/help/analysis-workspace/export/export-cloud.md)är exporten tillgänglig på [!UICONTROL Exports] på [!UICONTROL Exports] sida.
+När du har exporterat en fullständig tabell enligt beskrivningen i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md)är exporten tillgänglig på [!UICONTROL Exports] på [!UICONTROL Exports] sida.
 
 Du kan bara se de exporter som du skapar.
 
@@ -38,7 +36,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera exportlist
 
    | Filter | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Kontotypen som exporten är kopplad till. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. |
+   | [!UICONTROL **Kontotyp**] | Kontotypen som exporten är kopplad till. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager landningszon**]</li></ul>. |
    | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Aktiv**]: Anger att en schemalagd export ännu inte har gått ut. </li><li>[!UICONTROL **Slutförd**]: Anger att en export har exporterats. För schemalagd export innebär detta att tidsplanen har gått ut.</li><li>[!UICONTROL **Misslyckades**]<p>Följande situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet. <ul><li>Schemalagd exportförfallotid</li><li>Radgränsen för schemalagd export har uppnåtts </li></ul> </p></li></ul> |
    | [!UICONTROL **Frekvens**] | Hur ofta exporten sker. Följande frekvenser är tillgängliga: <ul><li>[!UICONTROL **En gång**]</li><li>[!UICONTROL **Dagligen**]</li><li>[!UICONTROL **Veckovis**]</li><li>[!UICONTROL **Månadsvis**]</li><li>[!UICONTROL **Årlig**]</li></ul> |
 
@@ -128,10 +126,10 @@ Du kan lägga till eller ta bort kolumner på [!UICONTROL Exports] för att konf
 
    | Tillgänglig kolumn | Beskrivning |
    |---------|----------|
-   | Namn | Namnet på exporten. Användare ger exporterar ett namn när de skapar dem, vilket beskrivs i [Exportera data från Customer Journey Analytics till molnet](/help/analysis-workspace/export/export-cloud.md). |
+   | Namn | Namnet på exporten. Användare ger exporterar ett namn när de skapar dem, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
    | ID | Det ID som automatiskt tilldelas till exporten när den skapas. <!-- True? --> |
    | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Active], [!UICONTROL Paused], [!UICONTROL Completed]och [!UICONTROL Failed].<p> **Obs!** Mer information om felsökning av misslyckade exporter finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p> |
-   | Datavy name | Namnet på datavyn som är associerad med exporten. Användarna kan välja datavyn när de skapar exporten, vilket beskrivs i [Exportera data från Customer Journey Analytics till molnet](/help/analysis-workspace/export/export-cloud.md). |
+   | Datavy name | Namnet på datavyn som är associerad med exporten. Användarna kan välja datavyn när de skapar exporten, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
    | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Pending], [!UICONTROL Delivered]och [!UICONTROL Failed]. |
    | Tabellstorlek (senaste sändning) | Storleken på exporten när den senast skickades. |
    | Skapad av | Användaren som skapade exporten. |

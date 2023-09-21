@@ -1,24 +1,22 @@
 ---
 description: Exportera ett Analysis Workspace-projekt till en molnplats.
 keywords: Analysis Workspace
-title: Exportera data från Customer Journey Analytics till molnet
+title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 92d240581282684fd3e71dd2135d188b9239512b
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1609'
 ht-degree: 2%
 
 ---
 
-# Exportera data från Customer Journey Analytics till molnet
+# Exportera Customer Journey Analytics-rapporter till molnet
 
-{{select-package}}
+Du kan exportera tabeller för arbetsytan från Customer Journey Analytics och skicka exporter till angivna molnmål.
 
-Du kan exportera fullständiga tabeller från Customer Journey Analytics och skicka data till angivna molnmål.
-
-Det finns även andra metoder för att exportera data från Customer Journey Analytics, vilket beskrivs i [Exportera översikt](/help/analysis-workspace/export/export-project-overview.md).
+Det finns även andra metoder att exportera rapporter från Customer Journey Analytics, vilket beskrivs i [Exportera översikt](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Exportera hela tabeller från Analysis Workspace
 
@@ -44,15 +42,14 @@ Så här exporterar du fullständiga tabeller från Analysis Workspace:
    | Taggar | Du kan lägga till en befintlig tagg i exporten eller skapa en ny tagg och använda den. <p>Om du vill använda en befintlig tagg på exporten markerar du eventuella taggar i listrutan. Alla taggar i företaget kan användas<!-- double-check this -->.</p> <p>Om du vill skapa en ny tagg skriver du namnet på den nya taggen och trycker sedan på Retur.</p><p>Tänk på följande när du lägger till märkord i en export: <ul><li>Taggar som du använder kan filtreras eller sökas efter i exporttabellen.</li> <li>Taggar som används i ett projekt används inte automatiskt vid export av en fullständig tabell, vilket beskrivs i Konfigurera kolumner på exportsidan i [Hantera exporter](/help/components/exports/manage-exports.md). (Alternativt när [schemalägga ett fullständigt projekt för export](/help/analysis-workspace/export/t-schedule-report.md)används automatiskt alla taggar som används i projektet vid exporten.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | Beskrivning | Lägg till en beskrivning till exporten. Du kan välja att visa beskrivningar som en kolumn i [Export page](/help/components/exports/manage-exports.md) när du visar export. |
    | Datavy | Markera datavyn som innehåller de komponenter som du vill inkludera i exporten. Listrutan Datavy finns i dialogrutans övre vänstra hörn och kan identifieras med datavysikonen![datavy, ikon](assets/data-view-icon.png).  <p>**Obs!** Om du väljer en datavy som saknar komponenter som redan ingår i datatabellen, uppmanas du att rensa datatabellen och återskapa den med komponenter som ingår i den valda datavyn. </p> |
-   | Fönstret Lookback | Markera den tidsram som ska inkluderas i datatabellen. Alternativen inkluderar [!UICONTROL **Idag**], [!UICONTROL **Igår**], [!UICONTROL **De senaste 7 dagarna**], [!UICONTROL **De senaste 30 dagarna**], [!UICONTROL **Den här veckan**] och [!UICONTROL **Den här månaden**]. |
+   | Fönstret Lookback | Välj den tidsram för rapportering som ska inkluderas i varje exportfil. Alternativen inkluderar [!UICONTROL **Idag**], [!UICONTROL **Igår**], [!UICONTROL **De senaste 7 dagarna**], [!UICONTROL **De senaste 30 dagarna**], [!UICONTROL **Den här veckan**] och [!UICONTROL **Den här månaden**]. |
    | Rensa | Raderar innehållet i datatabellen. På så sätt kan du börja skapa en ny tabell direkt i dialogrutan Ny fullständig tabellexport. |
-   | Exportfrekvens | Välj hur ofta exporten ska ske. <p>Du kan [!UICONTROL **Skicka nu (en gång)**] om du bara vill skicka exporten en gång. När du väljer det här alternativet skickas exporten omedelbart.<p>Du kan också välja att skicka exporten enligt ett angivet schema. När du skickar ett schema innehåller alternativen [!UICONTROL **Dagligen**], [!UICONTROL **Vecka**], [!UICONTROL **Varje månad och dag**], [!UICONTROL **Månadsvis per dag i månaden**], [!UICONTROL **Årligen per dag i månaden**] och [!UICONTROL **Årsvis per specifikt datum**]. </p><p>Tänk på följande när du väljer en exportfrekvens:</p><ul><li>Alternativen i [!UICONTROL **Fönstret Lookback**] fältändringen beroende på vad du väljer här.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Ytterligare konfigurationsfält visas beroende på vilket alternativ du väljer.</li></ul> |
+   | Exportfrekvens | Ange schemat för hur ofta exporten ska ske. <p>Du kan [!UICONTROL **Skicka nu (en gång)**] om du bara vill skicka exporten en gång. När du väljer det här alternativet påbörjas exporten omedelbart.<p>Du kan också välja att skicka exporten enligt ett angivet schema. När du skickar ett schema innehåller alternativen [!UICONTROL **Dagligen**], [!UICONTROL **Vecka**], [!UICONTROL **Varje månad och dag**], [!UICONTROL **Månadsvis per dag i månaden**], [!UICONTROL **Årligen per dag i månaden**] och [!UICONTROL **Årsvis per specifikt datum**]. </p><p>Tänk på följande när du väljer en exportfrekvens:</p><ul><li>Alternativen i [!UICONTROL **Fönstret Lookback**] fältändringen beroende på vad du väljer här.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Ytterligare konfigurationsfält visas beroende på vilket alternativ du väljer.</li></ul> |
    | Startar | Den dag och tid då den schemalagda exporten ska börja. <p>Det här alternativet är bara tillgängligt när du väljer en schemalagd exportfrekvens.</p> |
    | Slutar på | Den dag och tid då den schemalagda exporten upphör. Den schemalagda exporten körs inte längre efter det datum och den tidpunkt som du angav. <p>Det här alternativet är bara tillgängligt när du väljer en schemalagd exportfrekvens.</p> |
    | Filformat | Välj om exporterade data ska vara i CSV- eller JSON-format. |
    | Konto | Välj det exportkonto i molnet där du vill att data ska skickas. <p>Mer information finns i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md).</p> |
    | Platsnamn | Välj den plats på kontot där du vill att exportdata ska skickas. <p>Mer information finns i [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).</p><p>Du kan välja [!UICONTROL **Lägg till ny plats**] om du vill skapa en ny plats för ett befintligt exportkonto. |
-   | Förhandsgranska data | Visar den uppskattade storleken, det uppskattade antalet rader och antalet uppdelningar. |
 
    {style="table-layout:auto"}
 
@@ -76,11 +73,11 @@ Genom att exportera Customer Journey Analytics data till molnet kan du:
 
 * Inkludera beräknade värden i exporterade Customer Journey Analytics-data.
 
-* Strukturera utdata som sammanfogade värden (som Data Warehouse för Adobe Analytics).
+* Strukturera utdata som sammanfogade värden.
 
 * Exportera ad hoc eller enligt ett schema. (även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
 
-* Exportera filer i CSV- eller PDF-format. (även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
+* Exportera filer i CSV- eller JSON-format. (även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Exportera tabeller som innehåller flera dimensioner.
 
@@ -145,8 +142,6 @@ Om en attribueringsmodell som inte är standard används i en rapport ignoreras 
 
 När du har exporterat data från Analysis Workspace kan du redigera, exportera om, duplicera, tagga eller ta bort befintliga exporter enligt beskrivningen i [Hantera exporter](/help/components/exports/manage-exports.md).
 
-Du kan också försöka att logga supportärenden för misslyckade exporter på nytt, vilket beskrivs i [Hantera exportloggar](/help/components/exports/manage-export-logs.md).
-
 ## Visa exporterade data och manifestfil
 
 ### Exporterade data
@@ -184,10 +179,10 @@ Om du tidigare använt Data Warehouse för att exportera Adobe Analytics-data ka
 |---------|----------|---------|
 | Skapa en anpassad rapport | Ja | Ja |
 | Beräknade värden | Ja | Nej |
-| Segment | Ja | Ja |
+| Segment | Ja | Begränsad |
 | Mått | Gräns på 5 | Obegränsad |
 | Mätvärden | Gräns på 5 | Obegränsad |
-| Rapporteringsrader | Gräns 3, 30, 150 eller 300, beroende på nivå | Obegränsad |
+| Rapporteringsrader | Gräns på 3 miljoner, 30 miljoner, 150 miljoner eller 300 miljoner, beroende på skikt | Obegränsad |
 | Antal rapporter | Obegränsad | Obegränsad |
 | Ad hoc-leverans | Ja | Ja |
 | Schemalägg återkommande leverans | Ja | Ja |

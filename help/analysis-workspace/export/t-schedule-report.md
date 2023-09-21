@@ -5,7 +5,7 @@ title: Skicka data från Customer Journey Analytics till andra via e-post
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 8eda6e9ed27ab458951cd4bd08f511987bc61eb0
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Skicka data från Customer Journey Analytics till andra via e-post
 
-Du kan exportera data från Customer Journey Analytics genom att skicka dem till utvalda mottagare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema. Filer kan skickas i CSV- eller PDF-format.
+Du kan exportera Customer Journey Analytics-rapporter genom att skicka dem till utvalda mottagare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema. Filer kan skickas i CSV- eller PDF-format.
 
 Alla märkord som används i projektet används automatiskt vid exporten.
 

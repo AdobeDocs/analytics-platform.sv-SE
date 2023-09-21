@@ -5,18 +5,16 @@ title: Konfigurera platser för molnexport
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: c8f855ad5b586ed9ac3cde6889b6e73ecb216efa
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '972'
 ht-degree: 1%
 
 ---
 
 # Konfigurera platser för molnexport
 
-{{select-package}}
-
-Innan du kan exportera Customer Journey Analytics-data till ett molnmål enligt beskrivningen i [Exportera data från Customer Journey Analytics till molnet](/help/analysis-workspace/export/export-cloud.md)måste du lägga till och konfigurera platsen dit du vill att data ska skickas.
+Innan du kan exportera Customer Journey Analytics-rapporter till ett molnmål enligt beskrivningen i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md)måste du lägga till och konfigurera platsen dit du vill att data ska skickas.
 
 Den här processen består av att lägga till och konfigurera kontot (som Amazon S3, Google Cloud Platform o.s.v.) enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md)och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i den här artikeln.
 
@@ -26,18 +24,36 @@ Så här konfigurerar du en plats för molnexport:
 
 1. Du måste lägga till ett konto innan du kan lägga till en plats. Om du inte redan har det lägger du till ett konto enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md).
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
-1. På [!UICONTROL Exports] väljer du [!UICONTROL **Platser**] -fliken.
-1. Välj [!UICONTROL **Lägg till plats**].
+1. Välj [!UICONTROL **Platser**] tabbtangenten och sedan välja [!UICONTROL **Lägg till plats**].
 
    ![lägg till platsknapp](assets/location-add.png)
 
+   eller
+
+   Välj [!UICONTROL **Platskonton**] markerar du ikonen med tre punkter på ett befintligt konto där du vill lägga till en plats och väljer [!UICONTROL **Lägg till plats**].
+
+   ![Lägg till plats till befintligt konto](assets/add-location-existing-account.png)
+
    Dialogrutan Plats visas.
 
-1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Namn**] | Namnet på platsen.  | | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot så att det kan särskiljas från andra konton av samma kontotyp. | | [!UICONTROL **Platskonto**] | Välj det platskonto som du skapade i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md). |
+1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Namn**] | Namnet på platsen.  | | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot så att det kan särskiljas från andra konton av samma kontotyp. | | [!UICONTROL **Platskonto**] | Välj det konto där du vill skapa platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md). |
 
 1. I [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 
    För konfigurationsinstruktioner expanderar du det avsnitt nedan som motsvarar kontotypen som du valde i dialogrutan [!UICONTROL **Platskonton**] fält.
+
+   +++Adobe Experience Platform Data Landing Zone
+
+   Ange följande information för att konfigurera en Adobe Experience Platform Data Landing Zone-plats:
+
+   <!-- still need to update; can't create AEP account -->
+
+   | Fält |  -funktion |
+   |---------|----------|
+   | [!UICONTROL **IMS-organisations-ID**] | IMS-organisationsnumret tillhandahålls av Adobe. Klicka på ikonen Kopiera bredvid [!UICONTROL **IMS-organisations-ID**] om du vill kopiera innehållet i fältet och sedan använda ID:t i Adobe Experience Platform-kontot. |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+
++++
 
    +++Amazon S3 Roll ARN
 
@@ -108,19 +124,6 @@ Så här konfigurerar du en plats för molnexport:
    | [!UICONTROL **Scenbana**] | Sökvägen till den plats där datafiler lagras i Snowflake. <p>Mer information finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
-
-+++
-
-   +++Adobe Experience Platform
-
-   Ange följande information för att konfigurera en Adobe Experience Platform-plats:
-
-   <!-- still need to update; can't create AEP account -->
-
-   | Fält |  -funktion |
-   |---------|----------|
-   | [!UICONTROL **IMS-organisations-ID**] | IMS-organisationsnumret tillhandahålls av Adobe. Klicka på ikonen Kopiera bredvid [!UICONTROL **IMS-organisations-ID**] om du vill kopiera innehållet i fältet och sedan använda ID:t i Adobe Experience Platform-kontot. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
 
 +++
 
