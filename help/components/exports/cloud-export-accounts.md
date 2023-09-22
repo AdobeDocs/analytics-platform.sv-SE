@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -189,8 +189,8 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Kontoidentifierare**] | Identifierar unikt ett Snowflake-konto inom er organisation, liksom i hela det globala nätverket av molnplattformar och molnregioner som stöds av Snowflake. <p>Du måste hämta kontoidentifieraren från ditt Snowflake-konto och sedan klistra in informationen här.</p><p>Om du vill veta var du kan få den här informationen kan du läsa [Sidan Kontoidentifierare i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **Användare**] | Inloggningsnamnet för den användare som ska användas för anslutningen. Detta är en användare som kommer att användas särskilt för Adobe. Ange namnet här och skapa sedan en användare i Snowflake med samma namn. <p>Mer information finns i [Referenssida för JDBC-drivrutinens anslutningsparameter i Snowflake-dokumentationen](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Roll**] | Den standardroll för åtkomstkontroll som ska användas i den Snowflake-session som initieras av drivrutinen. Detta är en roll som kommer att användas särskilt för Adobe. Ange rollen här, skapa sedan en roll i Snowflake med samma namn och ge den läs- och skrivbehörighet.<p>Mer information finns i [Referenssida för JDBC-drivrutinens anslutningsparameter i Snowflake-dokumentationen](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
+   | [!UICONTROL **Användare**] | Inloggningsnamnet för den användare som ska användas för anslutningen. Detta är en användare som kommer att användas särskilt för Adobe. Ange namnet här och skapa sedan en användare i Snowflake med samma namn. <p>Mer information finns i [Kommandon för användare, roll och behörighet](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Roll**] | Detta är en roll som kommer att användas särskilt för Adobe. Ange rollen här, skapa sedan en roll i Snowflake med samma namn och tilldela rollen till användaren. <p>Mer information finns i [Kommandon för användare, roll och behörighet](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 

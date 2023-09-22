@@ -5,9 +5,9 @@ title: Konfigurera platser för molnexport
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: c8f855ad5b586ed9ac3cde6889b6e73ecb216efa
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -118,9 +118,9 @@ Så här konfigurerar du en plats för molnexport:
 
    | Fält |  -funktion |
    |---------|----------|
-   | [!UICONTROL **DB**] | Standarddatabasen som ska användas när den är ansluten, eller anger en tom sträng. Den angivna databasen ska vara en befintlig databas som den angivna standardrollen har behörighet för. <p>Mer information finns i [Referenssida för JDBC-drivrutinens anslutningsparameter i Snowflake-dokumentationen](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Schema**] | Standardschemat som ska användas för den angivna databasen när den har anslutits, eller anger en tom sträng. Det angivna schemat ska vara ett befintligt schema som den angivna standardrollen har privilegier för. <p>Mer information finns i [Referenssida för JDBC-drivrutinens anslutningsparameter i Snowflake-dokumentationen](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Scennamn**] | Namnet på den plats där datafiler lagras i Snowflake. <p>Mer information finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | Den angivna databasen ska vara en befintlig databas som den angivna standardrollen har behörighet för.<p>Det här är databasen som är associerad med scennamnet.</p> <p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Schema**] | Det angivna schemat ska vara ett befintligt schema som den angivna standardrollen har privilegier för.<p>Detta är schemat som är associerat med scennamnet.</p><p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Scennamn**] | Namnet på den scen där datafiler lagras i Snowflake. <p>Kontrollera att rollen som du angav på kontot har läs- och skrivbehörighet till det här scennamnet. (Eftersom du beviljar läs- och skrivåtkomst rekommenderar vi att du använder en scen som bara används av Adobe.) <p>Mer information om hur du tilldelar behörigheter till en roll finns i [Bevilja behörigheter i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Mer information om scenens namn finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Scenbana**] | Sökvägen till den plats där datafiler lagras i Snowflake. <p>Mer information finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
