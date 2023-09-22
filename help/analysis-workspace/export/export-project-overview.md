@@ -5,7 +5,7 @@ title: Översikt över projektdata
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Det finns olika metoder för export från Analysis Workspace. När du väljer en
 |---------|----------|
 | [Hämta till din arbetsstation](/help/analysis-workspace/export/download-send.md) | Använd den här metoden om du vill: <ul><li>Ladda ned projekt till din personliga arbetsstation.</li><li>Hämtningar är endast för särskilda ändamål (kan inte schemaläggas).</li> <li>Ladda ned totalt 50 000 rader.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
 | [Skicka till andra användare](/help/analysis-workspace/export/t-schedule-report.md) | Använd den här metoden om du vill: <ul><li>E-posta exporterade Customer Journey Analytics-data till andra användare i organisationen.</li><li>Kan vara ad hoc eller enligt ett schema.</li> <li>Inkludera totalt 50 000 rader.</li> <!--true?--> |
-| [Skicka till ett molnprogram](/help/analysis-workspace/export/export-cloud.md) | Använd den här metoden om du vill: <ul><li>Exportera till en delad plats, som Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake eller Adobe Experience Platform Data Landing Zone.</li><li>Kan vara ad hoc eller enligt ett schema.</li><li>Lagra större mängder data från Customer Journey Analytics.</li><li>Exportera fullständiga tabeller som innehåller tusentals eller miljontals rader.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [Skicka till ett molnprogram](/help/analysis-workspace/export/export-cloud.md) | Använd den här metoden om du vill: <ul><li>Exportera till en delad plats, som Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3 eller Snowflake.</li><li>Kan vara ad hoc eller enligt ett schema.</li><li>Lagra större mängder data från Customer Journey Analytics.</li><li>Exportera fullständiga tabeller som innehåller tusentals eller miljontals rader.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
 

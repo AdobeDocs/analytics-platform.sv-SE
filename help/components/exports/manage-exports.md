@@ -5,7 +5,7 @@ title: Hantera exporter
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera exportlist
 
    | Filter | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Kontotypen som exporten är kopplad till. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager landningszon**]</li></ul>. |
+   | [!UICONTROL **Kontotyp**] | Kontotypen som exporten är kopplad till. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **Adobe Experience Manager landningszon**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Aktiv**]: Anger att en schemalagd export ännu inte har gått ut. </li><li>[!UICONTROL **Slutförd**]: Anger att en export har exporterats. För schemalagd export innebär detta att tidsplanen har gått ut.</li><li>[!UICONTROL **Misslyckades**]<p>Följande situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet. <ul><li>Schemalagd exportförfallotid</li><li>Radgränsen för schemalagd export har uppnåtts </li></ul> </p></li></ul> |
    | [!UICONTROL **Frekvens**] | Hur ofta exporten sker. Följande frekvenser är tillgängliga: <ul><li>[!UICONTROL **En gång**]</li><li>[!UICONTROL **Dagligen**]</li><li>[!UICONTROL **Veckovis**]</li><li>[!UICONTROL **Månadsvis**]</li><li>[!UICONTROL **Årlig**]</li></ul> |
 
