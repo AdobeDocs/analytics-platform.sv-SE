@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 3149c50c14430c1960a9311b0464547b6e61bec7
+source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2131'
 ht-degree: 2%
 
 ---
@@ -136,5 +136,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | Enhetsövergripande analys | Customer Journey Analytics stöder den sömlösa kombinationen av enhetsspecifika datauppsättningar från oautentiserade och autentiserade sessioner. Customer Journey Analytics erbjuder att fylla i historiska data baklänges till kända enheter. I Analytics är den här funktionen begränsad till en enda rapportserie och användningen av ett enhetsdiagram. |
 | SQL-åtkomst | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
 | Förbättrade säkerhets- och sekretessalternativ - beredskap för HIPAA | Customer Journey Analytics är redo för HIPAA och erbjuder ytterligare säkerhetsalternativ för regelefterlevnad. Adobe Analytics är inte HIPAA-klart. |
+| Möjlighet att kombinera datauppsättningar (t.ex. Adobe Analytics rapportsviter) | Med Customer Journey Analytics kan ni kombinera data från flera rapportsviter som om de vore ett enda rapportpaket i Adobe Analytics. |
+| Härledda fält | Härledda fält gör det möjligt att göra omformningar av data vid rapporttillfället. Data kan kombineras, korrigeras eller skapas direkt och tillämpas retroaktivt på alla rapporter. |
 
 {style="table-layout:auto"}
