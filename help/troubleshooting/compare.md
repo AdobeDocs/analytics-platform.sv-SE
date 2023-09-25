@@ -1,22 +1,23 @@
 ---
-title: Jämför dina Adobe Analytics-data med Customer Journey Analytics-data
+title: Jämför dina Adobe Analytics-data med Customer Journey Analytics
 description: Lär dig hur du jämför dina Adobe Analytics-data med data i Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+keywords: frågetjänst;frågetjänst;sql-syntax
+source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
-# Jämför dina Adobe Analytics-data med Customer Journey Analytics-data
+# Jämför dina Adobe Analytics-data med Customer Journey Analytics
 
-I takt med att ni antar Customer Journey Analytics kan det finnas vissa skillnader i data mellan Adobe Analytics och Customer Journey Analytics. Detta är normalt och kan inträffa av flera orsaker. Customer Journey Analytics är utformat för att du ska kunna förbättra vissa begränsningar av dina data i AA. Oväntade och oavsiktliga avvikelser kan dock förekomma. Den här artikeln är utformad för att hjälpa dig att diagnostisera och lösa de skillnaderna så att du och ditt team kan använda Customer Journey Analytics utan hinder av dataintegritetsfrågor.
+När ni antar Customer Journey Analytics kan det finnas vissa skillnader i data mellan Adobe Analytics och Customer Journey Analytics. Detta är normalt och kan inträffa av flera orsaker. Customer Journey Analytics är utformat för att du ska kunna förbättra vissa begränsningar av dina data i AA. Oväntade och oavsiktliga avvikelser kan dock förekomma. Den här artikeln är utformad för att hjälpa dig att diagnostisera och lösa de skillnaderna så att du och ditt team kan använda Customer Journey Analytics utan hinder av dataintegritetsfrågor.
 
-Låt oss anta att du har inhämtat Adobe Analytics-data till Adobe Experience Platform via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)och skapade sedan en Customer Journey Analytics-anslutning med den här datauppsättningen.
+Låt oss anta att du har inhämtat Adobe Analytics-data till Adobe Experience Platform via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)och skapade sedan en Customer Journey Analytics-anslutning med denna datauppsättning.
 
 ![dataflöde](assets/compare.png)
 
@@ -40,7 +41,7 @@ The [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/
 
 1. Spara projektet så att du kan använda det i jämförelsen.
 
-## Steg 2: Jämför resultaten med [!UICONTROL Total records by timestamps] i Customer Journey Analytics
+## Steg 2: Jämför resultaten med [!UICONTROL Total records by timestamps] i CUSTOMER JOURNEY ANALYTICS
 
 Jämför nu [!UICONTROL Occurrences] i Analytics till totalt antal poster per tidsstämpel i Customer Journey Analytics.
 
@@ -50,21 +51,21 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
 >
 >Detta fungerar endast för vanliga datamängder med mellanvärden, inte sammanfogade datamängder (via [Flerkanalsanalys](/help/cca/overview.md)). Observera att redovisning av det person-ID som används i Customer Journey Analytics är avgörande för att jämförelsen ska fungera. Det är kanske inte alltid lätt att återskapa i Adobe Analytics, särskilt om du har aktiverat funktionen för att markera alternativet.
 
-1. I Adobe Experience Platform [Frågetjänster](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), kör följande [!UICONTROL Total Records by timestamps] fråga:
+1. I ADOBE EXPERIENCE PLATFORM [Frågetjänster](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), kör följande [!UICONTROL Total Records by timestamps] fråga:
 
-       &quot;
-       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) as Day, \
-       Count(_id) AS-poster
-       FRÅN  {dataset} \
-       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
-       OCH tidsstämpel&lt;from_utc_timestamp span=&quot;&quot; id=&quot;14&quot; translate=&quot;no&quot; />&#39;,&#39;UTC&#39;) \
-       AND-tidsstämpeln ÄR INTE NULL \
-       OCH enduserider.{toDate}_experience.aaid.id ÄR INTE NULL \
-       GRUPPERA EFTER Dag \
-       BESTÄLL PER DAG;
-       
-       &quot;
-   
+   ```sql
+   SELECT
+       Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
+       Count(_id) AS Records 
+   FROM  {dataset}
+   WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
+       AND timestamp < from_utc_timestamp('{toDate}','UTC')
+       AND timestamp IS NOT NULL
+       AND enduserids._experience.aaid.id IS NOT NULL
+   GROUP BY Day
+   ORDER BY Day; 
+   ```
+
 1. I [Dataflöden för analyser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)identifierar du utifrån rådata om några rader kan ha filtrerats bort av Analytics-källkopplingen.
 
    The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kan filtrera vissa rader under omvandlingen till XDM-schema. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande Analytics-fält har dessa värden kommer hela raden att filtreras bort.
@@ -80,16 +81,16 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
 
    Mer information om hit\_source finns i: [Referens för datakolumn](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en). Mer information om page\_event finns i: [Sökning efter sidhändelse](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
 
-1. Om kopplingens filtrerade rader är det bara att subtrahera de raderna från [!UICONTROL Occurrences] mätvärden. Det resulterande antalet ska matcha antalet händelser i Adobe Experience Platform datamängder.
+1. Om kopplingens filtrerade rader är det bara att subtrahera de raderna från [!UICONTROL Occurrences] mätvärden. Resultatet ska matcha antalet händelser i Adobe Experience Platform datamängder.
 
 ## Varför poster kan filtreras eller hoppas över vid förtäring från Adobe Experience Platform
 
-Customer Journey Analytics [Anslutningar](/help/connections/create-connection.md) gör att du kan samla ihop och sammanfoga flera datauppsättningar baserat på ett gemensamt person-ID för alla datauppsättningar. Vi använder borttagning av dubbletter: fullständig yttre koppling eller union av händelsedatamängder baserat på tidsstämplar, och sedan inre koppling på profil- och sökdatamängd, baserat på person-ID.
+Customer Journey Analytics [Anslutningar](/help/connections/create-connection.md) gör att du kan samla ihop och sammanfoga flera datauppsättningar baserat på ett gemensamt person-ID för alla datauppsättningar. På backend använder vi borttagning av dubbletter: fullständig yttre koppling eller union av händelsedatamängder baserat på tidsstämplar, och sedan inre koppling på profil- och sökdatamängd, baserat på person-ID.
 
 Här är några anledningar till varför poster kan hoppas över när data hämtas från Adobe Experience Platform.
 
-* **Tidsstämplar saknas** - Om tidsstämplar saknas i händelsedatamängder kommer dessa poster att ignoreras helt eller hoppas över under importen.
+* **Tidsstämplar saknas** - Om tidsstämplar saknas i händelsedatamängder kommer dessa poster att ignoreras helt eller hoppas över vid förtäring.
 
 * **Person-ID saknas** - Saknade person-ID:n (från händelsedatamängden och/eller från profil-/sökdatamängden) gör att dessa poster ignoreras eller hoppas över. Orsaken är att det inte finns några vanliga ID:n eller matchande nycklar att koppla posterna till.
 
-* **Ogiltigt eller stort person-ID** - Med ogiltiga ID:n kan systemet inte hitta ett giltigt gemensamt ID bland de datauppsättningar som ska kopplas. I vissa fall har kolumnen med person-ID ogiltiga person-ID:n, till exempel &quot;undefined&quot; eller &quot;000000&quot;. Ett person-ID (med valfri kombination av siffror och bokstäver) som förekommer i en händelse som är mer än 1 miljon gånger i månaden kan inte tilldelas en viss användare eller person. Den kategoriseras som ogiltig. Dessa poster kan inte importeras till systemet och resulterar i felbenägen inmatning och rapportering.
+* **Ogiltigt eller stort person-ID** - Med ogiltiga ID:n kan systemet inte hitta ett giltigt gemensamt ID bland de datauppsättningar som ska kopplas. I vissa fall innehåller kolumnen med person-ID ogiltiga person-ID:n, till exempel &quot;undefined&quot; eller &quot;0000000&quot;. Ett person-ID (med valfri kombination av siffror och bokstäver) som förekommer i en händelse som är mer än 1 miljon gånger i månaden kan inte tilldelas en viss användare eller person. Den kategoriseras som ogiltig. Dessa poster kan inte importeras till systemet och resulterar i felbenägen inmatning och rapportering.
