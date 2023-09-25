@@ -4,9 +4,9 @@ description: Mät användarengagemanget över tid.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
+source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ The [!UICONTROL Usage] I vyn finns följande diagraminställningar som du kan ju
 
 Lägg till ytterligare data i diagrammet.
 
-* **[!UICONTROL Show anomalies]**: Kör avvikelseidentifiering i analysen. Exponenter visas som punkter som du kan hovra över för mer information.
+* **[!UICONTROL Show anomalies]**: Körningar [avvikelseidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) på trendanalysen. Exponenter visas som punkter som du kan hovra över för mer information.
 
 ## Använd tidsjämförelse
 
