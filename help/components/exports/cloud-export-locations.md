@@ -5,9 +5,9 @@ title: Konfigurera platser för molnexport
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1082'
 ht-degree: 1%
 
 ---
@@ -118,9 +118,9 @@ Så här konfigurerar du en plats för molnexport:
 
    | Fält |  -funktion |
    |---------|----------|
-   | [!UICONTROL **DB**] | Den angivna databasen ska vara en befintlig databas som den angivna standardrollen har behörighet för.<p>Det här är databasen som är associerad med scennamnet.</p> <p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Schema**] | Det angivna schemat ska vara ett befintligt schema som den angivna standardrollen har privilegier för.<p>Detta är schemat som är associerat med scennamnet.</p><p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Scennamn**] | Namnet på den scen där datafiler lagras i Snowflake. <p>Kontrollera att rollen som du angav på kontot har läs- och skrivbehörighet till det här scennamnet. (Eftersom du beviljar läs- och skrivåtkomst rekommenderar vi att du använder en scen som bara används av Adobe.) <p>Mer information om hur du tilldelar behörigheter till en roll finns i [Bevilja behörigheter i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Mer information om scenens namn finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | Den angivna databasen bör vara en befintlig databas. Rollen du skapade måste ha behörighet att komma åt den här databasen.<p>Det här är databasen som är associerad med scennamnet.</p><p>Du kan ge den här rollbehörigheten till databasen i Snowflake med följande kommando: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Schema**] | Det angivna schemat ska vara ett befintligt schema. Rollen du skapade måste ha behörighet att komma åt schemat.<p>Detta är schemat som är associerat med scennamnet.<p>Du kan tilldela rollen som du skapade behörigheter till schemat i Snowflake med följande kommando: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Scennamn**] | Namnet på den interna scenen där datafiler lagras i Snowflake.<p>Kontrollera att rollen som du angav på kontot har läs- och skrivbehörighet till det här scennamnet. (Eftersom du beviljar läs- och skrivåtkomst rekommenderar vi att du använder en scen som bara används av Adobe.)<p>Du kan ge läs- och skrivåtkomst till scennamnet i Snowflake med följande kommando: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Mer information om hur du tilldelar behörigheter till en roll finns i [Bevilja behörigheter i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Mer information om scenens namn finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Scenbana**] | Sökvägen till den plats där datafiler lagras i Snowflake. <p>Mer information finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

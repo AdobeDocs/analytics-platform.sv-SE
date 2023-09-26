@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -189,8 +189,8 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Kontoidentifierare**] | Identifierar unikt ett Snowflake-konto inom er organisation, liksom i hela det globala nätverket av molnplattformar och molnregioner som stöds av Snowflake. <p>Du måste hämta kontoidentifieraren från ditt Snowflake-konto och sedan klistra in informationen här.</p><p>Om du vill veta var du kan få den här informationen kan du läsa [Sidan Kontoidentifierare i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **Användare**] | Inloggningsnamnet för den användare som ska användas för anslutningen. Detta är en användare som kommer att användas särskilt för Adobe. Ange namnet här och skapa sedan en användare i Snowflake med samma namn. <p>Mer information finns i [Kommandon för användare, roll och behörighet](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
-   | [!UICONTROL **Roll**] | Detta är en roll som kommer att användas särskilt för Adobe. Ange rollen här, skapa sedan en roll i Snowflake med samma namn och tilldela rollen till användaren. <p>Mer information finns i [Kommandon för användare, roll och behörighet](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Användare**] | Inloggningsnamnet för den användare som ska användas för anslutningen. Vi rekommenderar att du skapar en ny användare som ska användas specifikt för Adobe. Ange namnet här och skapa sedan en användare i Snowflake med samma namn. Du kan skapa en användare i Snowflake med `CREATE USER` -kommando.  <p>Mer information finns i [Kommandon för användare, roll och behörighet](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Roll**] | Den roll som ska tilldelas användaren. Vi rekommenderar att du skapar en ny roll som ska användas särskilt för Adobe. Ange rollen här, skapa sedan en roll i Snowflake med samma namn och tilldela rollen till användaren. Du kan skapa en roll i Snowflake med `CREATE ROLE` -kommando. <p>Mer information finns i [Kommandon för användare, roll och behörighet](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
@@ -200,7 +200,17 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    <!-- add screen shot -->
 
-1. Kopiera innehållet i [!UICONTROL **Offentlig nyckel**] till Urklipp. Den offentliga nyckeln tillhandahålls av Adobe. Använd den offentliga nyckeln i Snowflake för att ansluta till ditt Snowflake-konto. Mer information finns i [Key Pair Authentication &amp; Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
+1. Kopiera innehållet i [!UICONTROL **Offentlig nyckel**] till Urklipp. Den offentliga nyckeln tillhandahålls av Adobe.
+
+   Använd den offentliga nyckeln i Snowflake för att ansluta till ditt Snowflake-konto. Du måste associera användaren som du skapade med den här offentliga nyckeln.
+
+   I Snowflake anger du till exempel följande kommando:
+
+   ```
+   CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
+   ```
+
+   Mer information finns i [Key Pair Authentication &amp; Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth).
 
 1. Välj [!UICONTROL **OK**].
 

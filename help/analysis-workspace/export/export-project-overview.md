@@ -5,7 +5,7 @@ title: Översikt över projektdata
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -39,4 +39,5 @@ Det finns olika metoder för export från Analysis Workspace. När du väljer en
 | [Skicka till ett molnprogram](/help/analysis-workspace/export/export-cloud.md) | Använd den här metoden om du vill: <ul><li>Exportera till en delad plats, som Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3 eller Snowflake.</li><li>Kan vara ad hoc eller enligt ett schema.</li><li>Lagra större mängder data från Customer Journey Analytics.</li><li>Exportera fullständiga tabeller som innehåller tusentals eller miljontals rader.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
+
 

@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1716'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Det finns även andra metoder att exportera rapporter från Customer Journey Ana
 
 >[!NOTE]
 >
->Innan du exporterar data enligt beskrivningen i det här avsnittet bör du kontrollera att tabellen uppfyller [Exportkrav](#export-requirements).
+>Innan du exporterar data enligt beskrivningen i det här avsnittet bör du kontrollera att [Exportkrav](#export-requirements) är uppfyllda.
 
 Så här exporterar du fullständiga tabeller från Analysis Workspace:
 
@@ -85,9 +85,13 @@ Genom att exportera Customer Journey Analytics data till molnet kan du:
 
 ### Minimikrav
 
-Tabeller måste innehålla minst en dimension i raden och ett mått i varje kolumn för att kunna hanteras med en fullständig tabellexport.
+Se till att tabellerna, miljön och behörigheterna uppfyller följande krav:
 
-Administratörer bör se till att IP-adresserna som anges i [IP-adresser som används av Customer Journey Analytics](/help/admin/ip-addresses.md) ingår i brandväggens tillåtelselista.
+* **Tabeller:** Alla tabeller måste innehålla minst en dimension i raden och ett mått i varje kolumn för att kunna hanteras med en fullständig tabellexport.
+
+* **Environment:** Administratörer bör se till att IP-adresserna som anges i [IP-adresser som används av Customer Journey Analytics](/help/admin/ip-addresses.md) ingår i brandväggens tillåtelselista.
+
+* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har [!UICONTROL **Fullständig tabellexport**] behörighet som tilldelats för att exportera fullständiga tabeller. Mer information om hur du tilldelar en behörighet till en produktprofil i Admin Console finns i [Customer Journey Analytics tillstånd i Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Åtkomstkontroll för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
 ### Funktioner som inte stöds
 

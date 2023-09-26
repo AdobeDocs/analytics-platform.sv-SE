@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Åtkomstkontroll för Customer Journey Analytics
 
-Customer Journey Analytics styrs av tre behörighetsnivåer eller tre roller: Produktadministratörsroll, administratörsroll för produktprofil och åtkomst på användarnivå. I det här avsnittet förklaras de här rollerna mer ingående.
+Customer Journey Analytics styrs av tre behörighetsnivåer eller tre roller: produktadministratörsroll, administratörsroll för produktprofil och åtkomst på användarnivå. I det här avsnittet förklaras de här rollerna mer ingående.
 
 Dessutom diskuterar vi mer detaljerade sätt att begränsa åtkomsten, t.ex. kurering av arbetsytor och radnivå samt åtkomstkontroll på värdenivå.
 
@@ -28,9 +28,9 @@ Produktadministratörer har behörighet att utföra alla uppgifter som krävs i 
 
 Att bli produktadministratör i Customer Journey Analytics räcker inte för att skapa, uppdatera eller ta bort en [anslutning](/help/connections/overview.md). Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform produktprofil** som ger dig följande behörigheter:
 
-* Datamodellering: Visa scheman, hantera scheman
-* Datahantering: Visa datauppsättningar, hantera datauppsättningar
-* Dataintag: Hantera källor
+* Datamodellering: Visa scheman, Hantera scheman
+* Datahantering: Visa datauppsättningar, Hantera datauppsättningar
+* Inmatning av data: Hantera källor
 * Visa identitetsnamnutrymmen
 
 Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
@@ -49,7 +49,7 @@ Användare i Customer Journey Analytics kan inte skapa, redigera eller visa data
 
 ## Projektstrukturering för arbetsyta
 
-En annan åtkomstkontrollnivå kan användas på rapportnivån för arbetsytan. Du kan begränsa åtkomsten till specifika komponenter för vissa användare. Mer information om hur du begränsar komponenter (dimensioner, mått, filter, datumintervall) på projektnivån för arbetsytan och hur kurvan är kopplad till datavyer finns i [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md).
+En annan åtkomstnivå kan användas på rapportnivån i arbetsytan. Du kan begränsa åtkomsten till specifika komponenter för vissa användare. Mer information om hur du begränsar komponenter (dimensioner, mått, filter, datumintervall) på projektnivån för arbetsytan och hur kurvan är kopplad till datavyer finns i [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md).
 
 ## Ge åtkomst till enskilda mått eller mått
 
@@ -61,13 +61,13 @@ Här följer några exempel som visar hur åtkomstkontroll kan användas i realt
 
 ### Åtkomst från tredje part
 
-En tredje part som ditt företag arbetar med har en teamledare som kan bli produktprofiladministratör. Den här administratören kan sedan lägga till användare i teamet till den här produktprofilen. Den här administratören kan ge åtkomst till specifika datavyer och lägga till andra användare i produktprofilen. De kan också ändra de datavyer som de har kontroll över så att de passar teamets behov.
+En tredje part som ditt företag arbetar med har en teamlead som kan göras till produktprofiladministratör. Den här administratören kan sedan lägga till användare i teamet till den här produktprofilen. Den här administratören kan ge åtkomst till specifika datavyer och lägga till andra användare i den här produktprofilen. De kan också ändra de datavyer som de har kontroll över så att de passar teamets behov.
 
 ### Åtkomstkontroll på radnivå
 
 Säg att du bara vill ge användarna tillgång till data från en dag. Så här begränsar du åtkomsten till de raderna:
 
-1. Skapa ett filter i Customer Journey Analytics där **[!UICONTROL Day]** är lika med det datum som du vill att de ska ha dataåtkomst till.
+1. Skapa ett filter i Customer Journey Analytics där **[!UICONTROL Day]** är det datum som du vill att de ska ha dataåtkomst till.
 1. I [!UICONTROL Data views] > [!UICONTROL Settings]lägger du till det filtret i datavyn.
 1. Spara datavyn så tillämpas filtret automatiskt på datauppsättningen. Alla rader som inte passar filterdefinitionen exkluderas nu automatiskt från den redigerade datavyn.
 1. Skapa en ny produktprofil i Admin Console, lägg till användare i den och begränsa deras åtkomst till den här datavyn.
@@ -86,7 +86,7 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 
 | Behörighet | Definition |
 | --- | --- |
-| **[!UICONTROL Data Views]** | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]**, kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är inställd på **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har tillgång till. |
+| **[!UICONTROL Data Views]** | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]**, kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har tillgång till. |
 | **[!UICONTROL Reporting Tools]**: |   |
 | **[!UICONTROL Audit Logs Access]** | Den här behörigheten tvingar behörighetskontrollen på [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) och användargränssnittet för granskningsloggar. |
 | **[!UICONTROL Reporting Usage Admin]** | Låter användarna visa och ta bort alla rapporter som körs i deras företag. |
@@ -99,3 +99,5 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Audience View]** | Låter användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
 
 {style="table-layout:auto"}
+
+<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->
