@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1626'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ Genom att exportera Customer Journey Analytics data till molnet kan du:
 
   Denna typ av data kan användas för att upptäcka långsiktiga trender för att få affärsinformation och i slutändan leda till bättre beslutsunderlag.
 
-* Exportera fullständiga tabeller som innehåller tusentals eller miljontals rader. Andra exportmetoder tillåter högst 50 000 rader.
+* Exportera hela tabeller som innehåller tusentals eller miljontals rader (3 miljoner, 30 miljoner eller 150 miljoner rader, beroende på licenstyp). Andra exportmetoder tillåter högst 50 000 rader.
 
 * Inkludera beräknade värden i exporterade Customer Journey Analytics-data.
 
@@ -108,7 +108,7 @@ Följande funktioner stöds inte och tas automatiskt bort från export i fulltab
 
 Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bort dem från tabellen när du exporterar hela tabeller:
 
-* Beräknade mått som använder avancerade funktioner i metrisk definition (se [Avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md) för mer information)
+* Beräknade mått som använder grundläggande eller avancerade funktioner i metrisk definition (se [Grundfunktioner](/help/components/calc-metrics/cm-functions.md) och [Avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md) för mer information)
 * Komponenter som har begränsats av en administratör från att exporteras (se *Filtrera på datastyrningsprinciper i datavyer* avsnitt i [Etiketter och profiler](/help/data-views/data-governance.md) för mer information)
 * Mer än 5 dimensioner och 5 mätvärden per rapport (upp till 5 dimensioner och 5 mätvärden stöds)
 * I tabellkolumner:

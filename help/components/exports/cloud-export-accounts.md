@@ -5,7 +5,7 @@ title: Konfigurera molnexportkonton
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
 workflow-type: tm+mt
 source-wordcount: '1550'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. Kopiera innehållet i [!UICONTROL **SAS**] till Urklipp. Använd denna SAS-token för att komma åt data som exporteras från Analysis Workspace från AEP Landing Zone. Läs mer om hur du får åtkomst till dina data&quot; |
 
-1. Välj [!UICONTROL **Stäng**].
+1. Välj [!UICONTROL **OK**].
 
 1. Fortsätt med [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
@@ -98,7 +98,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. Kopiera innehållet i [!UICONTROL **Användar-ARN**] till Urklipp. Användar-ARN (Amazon Resource Name) tillhandahålls av Adobe. Du måste koppla den här användaren till den princip du skapade i Amazon S3 Role ARN.
 
-1. Välj [!UICONTROL **Stäng**].
+1. Välj [!UICONTROL **OK**].
 
 1. Fortsätt med [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
@@ -122,7 +122,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. Kopiera innehållet i [!UICONTROL **kapitalbelopp**] till Urklipp och kontrollera sedan att du ger huvudpersonen behörighet att överföra filer till den här bucket i Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Välj [!UICONTROL **Stäng**].
+1. Välj [!UICONTROL **OK**].
 
 1. Fortsätt med [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
@@ -150,7 +150,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. Om du inte redan gjort det kontrollerar du att du beviljar behörigheter till bucket i Azure SAS. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Välj [!UICONTROL **Stäng**].
+1. Välj [!UICONTROL **OK**].
 
 1. Fortsätt med [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
@@ -176,7 +176,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. Om du inte redan gjort det kontrollerar du att du har gett behörighet till bucket i Azure RBAC. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Välj [!UICONTROL **Stäng**].
+1. Välj [!UICONTROL **OK**].
 
 1. Fortsätt med [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
@@ -202,7 +202,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. Kopiera innehållet i [!UICONTROL **Offentlig nyckel**] till Urklipp. Den offentliga nyckeln tillhandahålls av Adobe. Använd den offentliga nyckeln i Snowflake för att ansluta till ditt Snowflake-konto. Mer information finns i [Key Pair Authentication &amp; Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
 
-1. Välj [!UICONTROL **Stäng**].
+1. Välj [!UICONTROL **OK**].
 
 1. Fortsätt med [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
