@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,7 @@ Om du vill använda ett filter på hela datablocket dubbelklickar du på ett fil
 
 Om du vill använda filter på enskilda mätvärden drar och släpper du ett filter på ett mätvärde i tabellen. Du kan också klicka på **...** till höger om ett mätresultat i tabellrutan och välj **Filtermått**. Om du vill visa använda filter håller du pekaren över eller väljer ett mått i tabellrutan. Mätvärden med tillämpade filter visar en filterikon.
 
-<!-- ![](./assets/image24.png) -->
-
-![](./assets/filter_by.png)
+![Fliken Filter som visar mätvärden.](./assets/filter_by.png)
 
 ## Snabbredigeringsfilter
 
@@ -39,11 +37,11 @@ Redigera filter med hjälp av snabbredigeringspanelen
 
 1. Markera ett cellintervall från ett eller flera datablock.
 
-   ![](./assets/select_multiple_dbs.png)
+   ![Snabbredigeringsfilterpanelen med filteralternativ för datavyer, datumintervall och filter.](./assets/select_multiple_dbs.png)
 
 1. Klicka på länken Filter för att öppna panelen Snabbredigering - filter.
 
-   ![](./assets/quick_edit_filters.png)
+   ![På panelen Filter visas fältet Lägg till filter och listorna Använda filter.](./assets/quick_edit_filters.png)
 
 ### Lägga till eller ta bort ett filter
 
@@ -55,9 +53,9 @@ Du kan lägga till eller ta bort filter med alternativen Lägg till/ta bort.
 
    När det finns flera filter i de markerade datablocken kan du söka efter specifika filter med **Lägg till filter** sökfält.
 
-   ![](./assets/add_filter.png)
+   ![Fältet Lägg till filter.](./assets/add_filter.png)
 
-1. Lägg till filter genom att välja filter på menyn **Lägg till filter** nedrullningsbar meny.
+1. Lägg till filter genom att välja filter på menyn **Lägg till filter** listrutemeny.
 
    Listan med sökbara filter innehåller alla filter som är tillgängliga för datavyer som finns i ett eller flera av de markerade datablocken samt alla filter som är tillgängliga globalt i organisationen.
 
@@ -75,7 +73,7 @@ Du kan ersätta ett befintligt filter med ett annat om du vill ändra hur data f
 
 1. Välj **Ersätt** på panelen Snabbredigeringsfilter.
 
-   ![](./assets/replace_filter.png)
+   ![Välj fliken Ersätt.](./assets/replace_filter.png)
 
 1. Använd **Söklista** sökfält för att hitta specifika filter.
 
@@ -85,7 +83,7 @@ Du kan ersätta ett befintligt filter med ett annat om du vill ändra hur data f
 
    Om du väljer ett filter läggs det till i **Ersätt med**... lista.
 
-   ![](./assets/replace_screen_new.png)
+   ![Fliken Ersätt med datablocket Personer i appen markerat och listan Ersätt med uppdaterad med som visar Personer i appen ändrad.](./assets/replace_screen_new.png)
 
 1. Klicka **Använd**.
 
@@ -93,7 +91,7 @@ Du kan ersätta ett befintligt filter med ett annat om du vill ändra hur data f
 
 ### Definiera datablocksfilter från cell
 
-Datablocken kan referera till filter från en cell. Flera datablock kan referera till samma cell för filter, vilket gör att du enkelt kan växla filter för flera datablock samtidigt.
+Datablock kan referera till filter från en cell. Flera datablock kan referera till samma cell för filter, vilket gör att du enkelt kan växla filter för flera datablock samtidigt.
 
 Använda filter från en cell
 
@@ -101,21 +99,21 @@ Använda filter från en cell
 1. Klicka på **Filter** för att definiera filter.
 1. Klicka **Skapa filter från cell**.
 
-   ![](./assets/create-filter-from-cell.png)
+   ![Skapa filter från cellikon.](./assets/create-filter-from-cell.png)
 
 1. Markera cellen som du vill att datablocken ska referera till ett filter från.
 
 1. Lägg till det filteralternativ som du vill lägga till i cellen genom att antingen dubbelklicka på filtret eller genom att dra och släppa det i avsnittet Filter som ingår.
 
-   Obs! Du kan bara välja ett alternativ åt gången för den aktuella cellen.
+   Obs! Endast ett alternativ kan markeras för den aktuella cellen åt gången.
 
-   ![](./assets/select-filters.png)
+   ![Filtret Lägg till från cellfönstret visar de filter som ingår.](./assets/select-filters.png)
 
 1. Klicka **Använd** för att skapa referenscellen.
 
 1. Från **Filter** lägger du till det nyligen skapade referenscellsfiltret i ditt datablock.
 
-   ![](./assets/reference-cell-filter.png)
+   ![Fliken Filter som visar filtret Sheet1!J1(Alla data) som har lagts till i tabellen.](./assets/reference-cell-filter.png)
 
 1. Klicka **Slutför**.
 
@@ -125,12 +123,12 @@ Använda filter från en cell
 
 1. Markera referenscellen i kalkylbladet.
 
-1. Klicka på länken under **Filter från cell** på menyn Snabbredigering.
+1. Klicka på länken under **Filter från cell** på snabbredigeringsmenyn.
 
-   ![](./assets/filters-from-cell-link.png)
+   ![Filter från cellänk som visar Sheet1!J1 (alla data)](./assets/filters-from-cell-link.png)
 
 1. Välj filtret i listrutan.
 
-   ![](./assets/filter-drop-down.png)
+   ![Listruta för filter](./assets/filter-drop-down.png)
 
 1. Klicka **Använd**.

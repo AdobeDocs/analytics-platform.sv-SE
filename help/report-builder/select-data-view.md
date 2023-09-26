@@ -1,14 +1,14 @@
 ---
-title: Välja en datavy i Report Builder
+title: Så här väljer du en datavy i Report Builder
 description: Beskriver hur du väljer datavyer i Adobe Report Builder
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
-source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/he
 
 1. Klicka på *cellikon* i *Datavyer* -avsnitt.
 
-   ![Cellikon](/help/report-builder/assets/cell-icon.png)
+   ![Klicka på cellikonen.](/help/report-builder/assets/cell-icon.png)
 
 1. Välj en cellplats där datavyer ska läggas till i den markerade cellen.
 
@@ -38,7 +38,7 @@ Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/he
 
 1. Markera de datavyer som du vill tilldela cellen.
 
-   ![Cellikon](/help/report-builder/assets/select-data-view.png)
+   ![Välj datavyer.](/help/report-builder/assets/select-data-view.png)
 
 1. Klicka **Använd**.
 

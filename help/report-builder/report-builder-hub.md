@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Använd Report Builder nav för att skapa, uppdatera, ta bort och hantera databl
 
 Navet Report Builder innehåller knapparna Skapa och Hantera, KOMMANDON och QUICK EDIT-panelerna.
 
-<img src="./assets/hub51.png" width="50%"/>
+<img src="./assets/hub51.png" width="50%" alt="Report Builder Hub"/>
 
 
 ## Knapparna Skapa och hantera
@@ -30,7 +30,7 @@ Använd knapparna Skapa eller Hantera för att skapa nya datablock eller för at
 
 Använd KOMMANDON-panelen för att komma åt kommandon som är kompatibla med de markerade cellerna eller en tidigare åtgärd.
 
-![](./assets/hub1.png)
+![Panelen Kommandon i Report Builder-hubben](./assets/hub1.png)
 
 ### Kommandon
 
@@ -47,7 +47,7 @@ Använd KOMMANDON-panelen för att komma åt kommandon som är kompatibla med de
 
 När du markerar ett eller flera datablock i ett kalkylblad visas panelen QUICK EDIT i Report Builder. Du kan använda panelen QUICK EDIT för att ändra parametrar i ett enda datablock eller för att ändra parametrar i flera datablock samtidigt.
 
-![](./assets/hub2.png)
+![Snabbredigeringspanelen i Report Builder](./assets/hub2.png)
 
 De ändringar du gör i snabbredigeringsavsnitten gäller för alla markerade datablock.
 
@@ -59,12 +59,12 @@ När du ändrar datavyn används den nya datavyn för alla datablock i markering
 
 Om du vill ändra datavyn väljer du en ny datavy i listrutan.
 
-![](./assets/image16.png)
+![På Report Builder-navet visas listrutan för datavy.](./assets/image16.png)
 
 ### Datumintervall
 
-**Datumintervall** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall **Datumintervall** länk *Flera*.
+**Datumintervall** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall visas **Datumintervall** länk *Flera*.
 
 ### Filter
 
-The **Filter** I visas en lista med de filter som används av de markerade datablocken. Om flera datablock är markerade med flera filter **Filter** länk *Flera*.
+The **Filter** I visas en sammanfattningslista över de filter som används av de markerade datablocken. Om flera datablock är markerade med flera filter **Filter** länk *Flera*.

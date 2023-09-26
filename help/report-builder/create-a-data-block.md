@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Konfigurera de inledande datablocksparametrarna för datablockets plats, datavye
 
 1. Klicka **Skapa datablock**.
 
-   ![](./assets/create_db.png)
+   ![Skärmbild som visar alternativet Skapa datablock.](./assets/create_db.png)
 
 1. Ange **Plats för datablock**.
 
@@ -41,13 +41,9 @@ Konfigurera de inledande datablocksparametrarna för datablockets plats, datavye
 
 1. Klicka **Nästa**.
 
-   ![](./assets/choose_date_data_view3.png)
+   ![Skärmbild som visar datumintervallalternativet och den aktiva knappen Nästa.](./assets/choose_date_data_view3.png)
 
    När du har konfigurerat datablocket kan du välja mått, mätvärden och filter för att skapa datablocket. Flikarna Dimensioner, Metrisk och Filter visas ovanför rutan Tabellverktyg.
-<!--
-    ![](./assets/image9.png)
-  -->
-
 
 ## Bygg datablocket
 
@@ -75,13 +71,13 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    När du lägger till komponenter i tabellen visas en förhandsvisning av datablocket på datablockets plats i kalkylbladet. Layouten för förhandsgranskningen av datablocket uppdateras automatiskt när du lägger till, flyttar eller tar bort objekt i tabellen.
 
-   ![](./assets/image10.png)
+   ![Skärmbild med tillagda komponenter och uppdaterade kalkylblad.](./assets/image10.png)
 
    **Visa eller dölj rad- och kolumnrubriker**
 
 1. Klicka på **Tabell** inställningsikon.
 
-   ![platshållarbild](./assets/table-settings.png){width="35%"}
+   ![Skärmbild med alternativet Tabellinställningar.](./assets/table-settings.png){width="35%"}
 
 1. Markera eller avmarkera alternativet Visa rad- och kolumnrubriker. Rubrikerna visas som standard.
 
@@ -89,7 +85,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
 1. Klicka på ellipsikonen på dimensionerna eller kolumnrubrikerna för att visa inställningarna.
 
-   ![platshållarbild](./assets/row-heading.png){width="35%"}
+   ![Ellipsikonen i avsnittet Rad.](./assets/row-heading.png){width="35%"}
 
 1. Klicka på Dölj eller Visa för att växla dimensionsetiketter eller kolumnrubriker. Alla etiketter visas som standard.
 
@@ -97,8 +93,8 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    Ett bearbetningsmeddelande visas när analysdata hämtas.
 
-   ![](./assets/image11.png)
+   ![Bearbetningsmeddelandet.](./assets/image11.png)
 
    Report Builder hämtar data och visar det ifyllda datablocket i kalkylbladet.
 
-   ![](./assets/image12.png)
+   ![Det slutförda datablocket.](./assets/image12.png)

@@ -1,14 +1,14 @@
 ---
-title: Filtrera Dimensioner i Report Builder
+title: Filtrera dimensioner i Report Builder
 description: Beskriver hur du använder filterdimensioner i Report Builder för Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
@@ -25,13 +25,13 @@ Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artikl
 
 1. Klicka på **...** -ikonen bredvid ett komponentnamn i tabellen.
 
-   ![](./assets/image27.png)
+   ![Alternativen för ellipsikonen.](./assets/image27.png)
 
 1. Välj **Filterdimension** på snabbmenyn för att visa **Filterdimension** fönster.
 
 1. Välj **Mest populära** eller **Specifik**.
 
-   ![](./assets/image28.png)
+   ![Det specifika alternativ som är markerat i rutan Filterdimension.](./assets/image28.png)
 
 1. Välj lämpliga alternativ baserat på vald filtertyp.
 
@@ -43,13 +43,13 @@ Håll pekaren över en dimension om du vill visa använda filter. För Dimension
 
 ## Filtertyp
 
-Det finns två sätt att filtrera dimensionsobjekt: Mest populära och specifika.
+Det finns två sätt att filtrera dimensionsobjekt: De vanligaste och specifika.
 
 ## Mest populära
 
 Det vanligaste alternativet gör att du dynamiskt kan filtrera dimensionsobjekt baserat på mätvärden. Den vanligaste filtreringen returnerar de högst rankade dimensionsobjekten baserat på måttvärden. Som standard listas de första 10 dimensionsobjekten, sorterade efter det första mätvärdet som lagts till i datablocket.
 
-![bildfiler](./assets/image29.png)
+![Det populäraste alternativet.](./assets/image29.png)
 
 
 ### Alternativ för sidor och rader
@@ -71,7 +71,7 @@ Tabellen nedan innehåller exempel på sid- och radvärden och resultatet.
 | 2 | 10 | Objekt 11-20 |
 | 1 | 100 | Top 100 items |
 | 2 | 100 | Posterna 101-200 |
-| 2 | 50,000 | Objekt 50 001-100 000 |
+| 2 | 50,000 | 50 001-100 000 |
 
 #### Minimum- och maximum-värden
 
@@ -92,7 +92,7 @@ Ange filtervillkor
 
 1. Välj en operator i listrutan.
 
-   ![](./assets/image31.png)
+   ![Operatorlistan.](./assets/image31.png)
 
 1. Ange ett värde i sökfältet.
 
@@ -114,14 +114,14 @@ Om du vill ändra måtten som används för att filtrera och sortera datablocket
 
 2. Klicka på pilen på det önskade måttet. 
 
-   ![](./assets/image30.png)
+   ![Tabellbyggaren och mätvärden.](./assets/image30.png)
 
 
 ## Specifik filtrering
 
 Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd **Specifik** filtreringstyp för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
 
-![](./assets/image32.png)
+![Specifika alternativ och markerade objekt.](./assets/image32.png)
 
 ### Från lista
 
@@ -129,7 +129,7 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
    När du väljer **Från lista** om du väljer det här alternativet fylls listan med dimensionsobjekt med de flesta händelser först.
 
-   ![](./assets/image33.png)
+   ![Alternativet Från lista och tillgängliga objekt.](./assets/image33.png)
 
    The **Tillgängliga objekt** listan ordnas från dimensionsobjekt med de flesta händelser till de med minst.
 
@@ -137,9 +137,9 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
 1. Om du vill söka efter ett objekt som inte ingår i de senaste 90 dagarna klickar du på **Visa objekt för de senaste sex månaderna** för att utöka sökningen.
 
-   ![](./assets/image34.png)
+   ![The Show items from the last 6 month list.](./assets/image34.png)
 
-   Efter inläsning av data från de senaste sex månaderna uppdaterar Report Builder länken till **Visa objekt för de senaste 18 månaderna**.
+   Efter att data från de senaste 6 månaderna har lästs in uppdaterar Report Builder länken till **Visa objekt för de senaste 18 månaderna**.
 
 1. Välj en dimensionsartikel.
 
@@ -151,7 +151,7 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
    Om du vill flytta ett objekt i listan drar och släpper du objektet eller klickar på ... för att visa flyttmenyn.
 
-   ![](./assets/image36.png)
+   ![Dimensionsobjektlistan.](./assets/image36.png)
 
 1. Klicka **Använd**
 
@@ -161,7 +161,7 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
 Välj **Från cellintervall** om du vill välja ett cellintervall som innehåller listan med dimensionsobjekt som ska matchas.
 
-![](./assets/image37.png)
+![Alternativet Från cellintervall och fältet för att markera ett cellintervall.](./assets/image37.png)
 
 När du markerar ett cellintervall bör du tänka på följande begränsningar:
 
@@ -175,6 +175,6 @@ Markeringen kan innehålla tomma celler eller celler med värden som inte matcha
 
 Från **Dimensioner** klickar du på ikonen för avfasning bredvid ett dimensionsnamn för att visa en lista med dimensionsobjekt.
 
-![](./assets/dimensions_chevron.png)
+![Fliken Dimensioner och listan över dimensioner.](./assets/dimensions_chevron.png)
 
 Du kan dra och släppa objekt på **Tabell** eller dubbelklicka på ett objektnamn för att lägga till det i **Tabell** builder.

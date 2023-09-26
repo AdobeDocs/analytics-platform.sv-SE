@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Med alternativet Från cell kan du referera till datum som anges i kalkylbladsce
 
 Du kan välja att exkludera idag för valfritt datumintervall.
 
-![](./assets/image17.png)
+![Välj Uteslut idag.](./assets/image17.png)
 
 ## Använda kalendern
 
@@ -62,7 +62,7 @@ Välja datum med hjälp av kalendern
 
 Om du vill ange ett omvänt datumintervall klickar du först på slutdatumet och sedan på startdatumet.
 
-![](./assets/image18.png)
+![Klicka på slutdatumet och sedan på startdatumet.](./assets/image18.png)
 
 ### Listrutan Förinställning
 
@@ -76,21 +76,21 @@ Med alternativet för rullande datum kan du välja ett datumintervall med rullan
 
 1. Välj ett rullande uttryck för start- och slutdatumet.
 
-   ![](./assets/image19.png)
+   ![Välj Använd rullande datum och sedan rullande uttryck.](./assets/image19.png)
 
    **Början av** - Välj början på en dag, vecka, månad, kvartal eller år.
 
-   **Slutet av** - Välj slutet av dag, vecka, månad, kvartal eller år.
+   **Slutet av** - Välj slutet på en dag, vecka, månad, kvartal eller år.
 
    **Fast dag** — Används för att korrigera ett start- eller slutdatum medan det andra datumet rullar.
 
 1. Välj dag, vecka, månad, kvartal eller år som rullande period.
 
-   ![](./assets/image20.png)
+   ![Välj aktuell dag.](./assets/image20.png)
 
 1. Lägg till eller subtrahera dagar, veckor, månader, kvartal eller år från ditt rullande datum.
 
-   ![](./assets/image21.png)
+   ![Välj aktuell dag plus 14 dagar.](./assets/image21.png)
 
 1. Klicka på Nästa för att definiera dataområdet.
 
@@ -106,7 +106,7 @@ Med alternativet för anpassade uttryck kan du ändra datumintervallet genom att
 
    När du väljer **Använd anpassat uttryck** är standardkontrollerna för rullande datumintervall inaktiverade.
 
-   ![](./assets/custom_expression.png)
+   ![Välj Använd anpassat uttryck som visar tm-1m till td-1d.](./assets/custom_expression.png)
 
 1. Ange ett anpassat uttryck.
 
@@ -116,7 +116,7 @@ Med alternativet för anpassade uttryck kan du ändra datumintervallet genom att
 
 #### Skapa ett anpassat uttryck
 
-1. Ange **Datumreferens**.
+1. Ange en **Datumreferens**.
 
 1. Lägg till **Datumoperatorer** om du vill flytta datumet till föregående eller kommande datum.
 
@@ -163,11 +163,11 @@ I följande tabell visas exempel på datumuttryck.
 
 Datumintervallet kan anges i kalkylbladsceller. Använd **Datumintervall från cell** om du vill välja datablockets start- och slutdatum från markerade celler. När du väljer **Från cell** alternativ, visas panelen **Från** och **Till** fält där du kan ange en cellplats.
 
-![](./assets/image23.png)
+![Markera Från cellark1!H4 till Blad1!I4](./assets/image23.png)
 
 ## Exkludera idag
 
-Välj **Exkludera idag** möjlighet att exkludera idag från ett valt datumintervall. Om du väljer att inkludera idag kan ofullständiga data hämtas för idag.
+Välj **Exkludera idag** om du vill exkludera idag från ett valt datumintervall. Om du väljer att inkludera idag kan ofullständiga data hämtas för idag.
 
 När du väljer det här alternativet visas **Exkludera idag** inkluderar inte den aktuella dagen från alla lägen för datumintervall, inklusive kalender, rullande datum eller anpassade uttryck.
 
@@ -175,7 +175,7 @@ När du väljer det här alternativet visas **Exkludera idag** inkluderar inte d
 
 I följande lista beskrivs giltiga datumintervallformat.
 
-- Start- och slutdatum måste ha följande format: YYY-MM-DD
+- Start- och slutdatum måste ha följande format: ÅÅÅ-MM-DD
 
 - Startdatumet måste vara tidigare än eller lika med slutdatumet. Båda datumen kan anges till framtiden.
 

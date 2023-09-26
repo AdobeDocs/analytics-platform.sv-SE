@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Du måste installera Report Builder Excel-tillägget för att kunna använda Rep
 
 ### Hämta och installera tillägget Report Builder
 
-Så här hämtar och installerar du tillägget Report Builder
+Hämta och installera tillägget Report Builder
 
 1. Starta Excel och öppna en ny arbetsbok.
 
@@ -60,7 +60,7 @@ Så här hämtar och installerar du tillägget Report Builder
 
 1. Klicka på Fortsätt i dialogrutan Licensvillkor och Integritetspolicy.
 
-**Om fliken Butik inte visas**
+**Om fliken Store inte visas**
 
 1. I Excel väljer du Arkiv > Konto > Hantera inställningar.
 
@@ -72,11 +72,11 @@ Så här hämtar och installerar du tillägget Report Builder
 
 Kontakta IT-avdelningen eller säkerhetsteamet och be om godkännande av tillägget Report Builder. När godkännande har beviljats väljer du fliken Administratörshanterad i dialogrutan för Office-tillägg.
 
-![](./assets/image1.png)
+![Fliken Administratörshanterad i dialogrutan för Office-tillägg.](./assets/image1.png)
 
 När du har installerat tillägget Report Builder visas ikonen Report Builder i Excel-menyfliksområdet på fliken Hem.
 
-![](./assets/rb_app_icon.png)
+![Ikonen Report Builder i Excel](./assets/rb_app_icon.png)
 
 ## Logga in i Report Builder
 
@@ -88,11 +88,11 @@ När du har installerat tillägget Report Builder for Excel för din operativpla
 
 1. I verktygsfältet i Adobe Report Builder klickar du på **Inloggning**.
 
-   ![](./assets/rb_login.png)
+   ![Klicka på inloggningsknappen för Report Builder.](./assets/rb_login.png)
 
 1. Ange din kontoinformation för Adobe Experience ID. Kontoinformationen bör överensstämma med dina Customer Journey Analytics-uppgifter.
 
-   ![](./assets/image4.png)
+   ![Din inloggningsikon och organisation.](./assets/image4.png)
 
 När du har loggat in visas din inloggningsikon och organisation högst upp på panelen
 
@@ -104,7 +104,7 @@ När du loggar in första gången loggas du in på den standardorganisation som 
 
 1. Välj en organisation i listan över tillgängliga organisationer. Endast organisationer som du har åtkomst till listas.
 
-   ![](./assets/image5.png)
+   ![Listan över organisationer som du har åtkomst till.](./assets/image5.png)
 
 ## Logga ut
 
@@ -114,6 +114,6 @@ Du kan logga ut från Report Builder från användarprofilen.
 
 1. Klicka på avatarikonen för att visa din användarprofil.
 
-   ![](./assets/image6.png)
+   ![Din användarprofilavatar och knappen Logga ut.](./assets/image6.png)
 
 1. Klicka **Logga ut**.

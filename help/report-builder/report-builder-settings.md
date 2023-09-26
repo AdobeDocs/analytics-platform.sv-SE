@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -19,23 +19,23 @@ Använd **Inställningar** om du vill konfigurera inställningar på programniv�
 
 Så här ändrar du inställningarna för Report Builder
 
-1. Klicka på **Inställningar** ikon.
+1. Klicka på **Inställningar** -ikon.
 
 1. Gör ändringar i Aktivera offlineläge, välj ett språk eller aktivera inställningarna för felsökningsloggen.
 
 1. Klicka **Använd**.
 
-   ![](./assets/image38.png)
+   ![Klicka på Använd.](./assets/image38.png)
 
 ## Offline-läge
 
-Data hämtas inte när du skapar och redigerar ett datablock i offlineläge. I stället används simuleringsdata så att du snabbt kan skapa och redigera ett datablock utan att vänta på att begäran ska köras. När du är online igen *Uppdatera datablock* kommando eller *Uppdatera alla datablock* kommandot uppdaterar de datablock som du har skapat med verkliga data.
+Data hämtas inte när du skapar och redigerar ett datablock i offlineläge. I stället används simuleringsdata så att du snabbt kan skapa och redigera ett datablock utan att vänta på att begäran ska köras. När du är online igen *Uppdatera datablock* kommando *Uppdatera alla datablock* kommandot uppdaterar de datablock som du har skapat med verkliga data.
 
-Aktivera offlineläge
+Aktivera offline-läge
 
-1. Klicka på **Inställningar** ikon.
+1. Klicka på **Inställningar** -ikon.
 
-1. Välj **Aktivera offlineläge**.
+1. Välj **Aktivera offline-läge**.
 
 1. Ange ett positivt heltal i **Visa måttdata som** fält.
 
@@ -49,9 +49,9 @@ Välj det språk som ska användas i användargränssnittet i Report Builder
 
 1. Klicka på Inställningar.
 
-1. Välj ett språk på menyn **Språk** nedrullningsbar meny.
+1. Välj ett språk på menyn **Språk** listrutemeny.
 
-   ![](./assets/image39.png)
+   ![Välj språklistan.](./assets/image39.png)
 
 1. Klicka **Använd.**
 

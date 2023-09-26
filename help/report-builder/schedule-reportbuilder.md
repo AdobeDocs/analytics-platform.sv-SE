@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 063fc71a9c0bbcadb1348aa4c41c64bed08a51f6
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ Använd uppgiftsknappen Schemalägg i Report Builder-hubben för att snabbt skap
 
 1. Klicka på knappen Schema i navet Report Builder.
 
-   ![](./assets/schedule-button.png){width="55%"}
+   ![Klicka på knappen Schema för att skapa ett schema.](./assets/schedule-button.png){width="55%"}
 
 1. Klicka på Schemalägg arbetsbok eller plusknappen i det övre vänstra hörnet för att skapa en ny schemalagd arbetsbok.
 
-   ![alt-beskrivning](./assets/schedule-workbook.png){width="55%"}
+   ![The Schedule workbooks window.](./assets/schedule-workbook.png){width="55%"}
 
    I schemaläggningsrutan visas viss fördefinierad information om arbetsboken, t.ex. arbetsbokens namn och det senaste datumet som arbetsboken ändrades.
 
-   ![alt-beskrivning](./assets/schedule-pane.png){width="55%"}
+   ![Schemaläggningsfönstret.](./assets/schedule-pane.png){width="55%"}
 
 1. (Valfritt) Ange ett filnamn.
 
@@ -51,13 +51,13 @@ Använd uppgiftsknappen Schemalägg i Report Builder-hubben för att snabbt skap
 
    När du väljer det här alternativet uppmanas du att ange ett lösenord för att öppna filen. Detta är praktiskt om du är orolig för datasäkerheten och vill lösenordsskydda arbetsboken. Skydda filen med ett lösenord kräver att du väljer **ZIP-komprimering**. Lösenordet måste innehålla minst 8 tecken och innehålla en siffra och ett specialtecken.
 
-   ![alt-beskrivning](./assets/zip-compression.png){width="55%"}
+   ![Ange ett lösenord i fältet Lösenordsskydda arbetsboken.](./assets/zip-compression.png){width="55%"}
 
 1. Retur **Mottagare**. Du kan ange namnet på en person som är erkänd i organisationen eller ange en e-postadress för en person inom eller utanför organisationen.
 
 1. Ange **Ämne** av e-postmeddelandet och en beskrivning av mottagarna. Ämnet får som standard arbetsbokens filnamn, men du kan ändra ämnet om det behövs. Du kan lägga till information i beskrivningsavsnittet.
 
-   ![alt-beskrivning](./assets/recipients-subject.png){width="55%"}
+   ![Ange ett ämne i ämnesfältet.](./assets/recipients-subject.png){width="55%"}
 
 1. Ställ in schemaläggningsalternativen för att ange det datum och den tidpunkt då du vill att arbetsboken ska skickas med e-post till mottagarna.
 
@@ -65,15 +65,15 @@ Använd uppgiftsknappen Schemalägg i Report Builder-hubben för att snabbt skap
 
    Välj **Frekvens** i listrutan. Du kan ange att frekvensen ska vara timme, dag, vecka, månad eller år för en viss dag. Du kan till exempel ställa in ett schema för att skicka arbetsboken den första söndagsklickningen i månaden så att dina mottagare får e-postmeddelandet i sin inkorg första gången på måndagsmorgonen.
 
-   ![alt-beskrivning](./assets/frequency.png){width="55%"}
+   ![Välj frekvens för att schemalägga rapporten.](./assets/frequency.png){width="55%"}
 
 1. När du angett schemat klickar du på **Skicka enligt schema**.
 
-   ![alt-beskrivning](./assets/send-on-schedule.png){width="55%"}
+   ![Klicka på Skicka enligt schema.](./assets/send-on-schedule.png){width="55%"}
 
    En bekräftelsetabell visas längst ned i Report Builder och den schemalagda arbetsboken visas på fliken Arbetsböcker.
 
-   ![alt-beskrivning](./assets/confirmation-toast.png){width="55%"}
+   ![Bekräftelsetabell](./assets/confirmation-toast.png){width="55%"}
 
 ## Skicka arbetsboken endast en gång
 
@@ -81,7 +81,7 @@ Du kan också skicka ut arbetsboken endast en gång.
 
 1. Avmarkera **Visa schemaläggningsalternativ**
 
-   ![alt-beskrivning](./assets/send-now.png){width="40%"}
+   ![Klicka på Avmarkera Visa schemaläggningsalternativ för att skicka ut en arbetsbok en gång.](./assets/send-now.png){width="40%"}
 
 1. Klicka **Skicka nu**.
 
@@ -115,14 +115,14 @@ En grön bock anger att arbetsboken har skickats. Ett utropstecken i en röd tri
 
 Du kan välja vilka kolumner som ska visas på fliken Historik genom att klicka på kolumninställningsikonen till höger om sökfältet.
 
-![alt-beskrivning](./assets/history.png){width="55%"}
+![Klicka på kolumnikonen om du vill visa eller dölja specifika kolumner.](./assets/history.png){width="55%"}
 
 Du kan filtrera ned historiken så att endast en schemalagd arbetsbok visas genom att gå till fliken Arbetsböcker, välja arbetsboken och klicka på ikonen Historik.
 
 Du kan även visa historiken för en viss arbetsbok på fliken Arbetsböcker. Markera arbetsboken på fliken Arbetsböcker och klicka sedan på ikonen Historik.
 
-![alt-beskrivning](./assets/history2.png){width="55%"}
+![Ikonen för arbetsbokshistorik](./assets/history2.png){width="55%"}
 
 Arbetsboksfiltret visas sedan högst upp i historiken. Om du vill visa historiken för alla schemalagda aktiviteter igen klickar du på x bredvid filtret.
 
-![alt-beskrivning](./assets/history3.png){width="55%"}
+![Arbetsboksfilter.](./assets/history3.png){width="55%"}
