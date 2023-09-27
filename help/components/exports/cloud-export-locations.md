@@ -5,10 +5,10 @@ title: Konfigurera platser för molnexport
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
+source-git-commit: 2da2b4b2931f28dc373a2c634c38e9dfcbdd2788
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 1%
+source-wordcount: '1417'
+ht-degree: 0%
 
 ---
 
@@ -20,10 +20,12 @@ Den här processen består av att lägga till och konfigurera kontot (som Amazon
 
 Mer information om hur du hanterar befintliga platser, inklusive visning, redigering och borttagning av platser, finns i [Hantera platser och konton för molnexport](/help/components/exports/manage-export-locations.md).
 
-Så här konfigurerar du en plats för molnexport:
+## Börja skapa en molnexportplats
 
 1. Du måste lägga till ett konto innan du kan lägga till en plats. Om du inte redan har det lägger du till ett konto enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md).
+
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
+
 1. Välj [!UICONTROL **Platser**] tabbtangenten och sedan välja [!UICONTROL **Lägg till plats**].
 
    ![lägg till platsknapp](assets/location-add.png)
@@ -40,11 +42,17 @@ Så här konfigurerar du en plats för molnexport:
 
 1. I [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 
-   För konfigurationsinstruktioner expanderar du det avsnitt nedan som motsvarar kontotypen som du valde i dialogrutan [!UICONTROL **Platskonton**] fält.
+   Fortsätt med det avsnitt nedan som motsvarar kontotypen som du valde i dialogrutan [!UICONTROL **Platskonto**] fält.
 
-   +++Adobe Experience Platform Data Landing Zone
+### Adobe Experience Platform Data Landing Zone
 
-   Ange följande information för att konfigurera en Adobe Experience Platform Data Landing Zone-plats:
+>[!IMPORTANT]
+>
+>När du exporterar rapporter från Customer Journey Analytics till Adobe Experience Platform Data Landing Zone ska du se till att du hämtar data inom 7 dagar och sedan ta bort dem från AEP Data Landing Zone. Efter 7 dagar tas data automatiskt bort från AEP Data Landing Zone.
+
+1. [Börja skapa en molnexportplats](#begin-creating-a-cloud-export-location), enligt beskrivningen ovan.
+
+1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en plats för Adobe Experience Platform Data Landing Zone:
 
    <!-- still need to update; can't create AEP account -->
 
@@ -53,11 +61,17 @@ Så här konfigurerar du en plats för molnexport:
    | [!UICONTROL **IMS-organisations-ID**] | IMS-organisationsnumret tillhandahålls av Adobe. Klicka på ikonen Kopiera bredvid [!UICONTROL **IMS-organisations-ID**] om du vill kopiera innehållet i fältet och sedan använda ID:t i Adobe Experience Platform-kontot. |
    | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
 
-+++
+   {style="table-layout:auto"}
 
-   +++Amazon S3 Roll ARN
+1. Välj [!UICONTROL **Spara**].
 
-   Ange följande information för att konfigurera en ARN-plats för en Amazon S3-roll:
+1. Nu kan du exportera data från Analysis Workspace till det konto och den plats som du konfigurerade. Mer information om hur du exporterar data till molnet finns i [Exportera projektdata till molnet](/help/analysis-workspace/export/export-cloud.md).
+
+### Amazon S3 Role ARN
+
+1. [Börja skapa en molnexportplats](#begin-creating-a-cloud-export-location), enligt beskrivningen ovan.
+
+1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en plats för Amazon S3 Role ARN:
 
    <!-- still need to update; can't create S3 role ARN account -->
 
@@ -68,11 +82,15 @@ Så här konfigurerar du en plats för molnexport:
 
    {style="table-layout:auto"}
 
-+++
+1. Välj [!UICONTROL **Spara**].
 
-   +++Google Cloud Platform
+1. Nu kan du exportera data från Analysis Workspace till det konto och den plats som du konfigurerade. Mer information om hur du exporterar data till molnet finns i [Exportera projektdata till molnet](/help/analysis-workspace/export/export-cloud.md).
 
-   Ange följande information för att konfigurera en plats för Google Cloud-plattformen:
+### Google Cloud Platform
+
+1. [Börja skapa en molnexportplats](#begin-creating-a-cloud-export-location), enligt beskrivningen ovan.
+
+1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en plats för Google Cloud-plattformen:
 
    <!-- still need to update; can't create GCP account -->
 
@@ -83,11 +101,15 @@ Så här konfigurerar du en plats för molnexport:
 
    {style="table-layout:auto"}
 
-+++
+1. Välj [!UICONTROL **Spara**].
 
-   +++Azure SAS
+1. Nu kan du exportera data från Analysis Workspace till det konto och den plats som du konfigurerade. Mer information om hur du exporterar data till molnet finns i [Exportera projektdata till molnet](/help/analysis-workspace/export/export-cloud.md).
 
-   Ange följande information för att konfigurera en Azure SAS-plats:
+### Azure SAS
+
+1. [Börja skapa en molnexportplats](#begin-creating-a-cloud-export-location), enligt beskrivningen ovan.
+
+1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en Azure SAS-plats:
 
    | Fält |  -funktion |
    |---------|----------|
@@ -96,11 +118,15 @@ Så här konfigurerar du en plats för molnexport:
 
    {style="table-layout:auto"}
 
-+++
+1. Välj [!UICONTROL **Spara**].
 
-   +++Azure RBAC
+1. Nu kan du exportera data från Analysis Workspace till det konto och den plats som du konfigurerade. Mer information om hur du exporterar data till molnet finns i [Exportera projektdata till molnet](/help/analysis-workspace/export/export-cloud.md).
 
-   Ange följande information för att konfigurera en Azure RBAC-plats:
+### Azure RBAC
+
+1. [Börja skapa en molnexportplats](#begin-creating-a-cloud-export-location), enligt beskrivningen ovan.
+
+1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en Azure RBAC-plats:
 
    | Fält |  -funktion |
    |---------|----------|
@@ -110,11 +136,15 @@ Så här konfigurerar du en plats för molnexport:
 
    {style="table-layout:auto"}
 
-+++
+1. Välj [!UICONTROL **Spara**].
 
-   +++Snowflake
+1. Nu kan du exportera data från Analysis Workspace till det konto och den plats som du konfigurerade. Mer information om hur du exporterar data till molnet finns i [Exportera projektdata till molnet](/help/analysis-workspace/export/export-cloud.md).
 
-   Ange följande information för att konfigurera en Snowflake-plats:
+### Snowflake
+
+1. [Börja skapa en molnexportplats](#begin-creating-a-cloud-export-location), enligt beskrivningen ovan.
+
+1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en plats i Snowflake:
 
    | Fält |  -funktion |
    |---------|----------|
@@ -124,8 +154,6 @@ Så här konfigurerar du en plats för molnexport:
    | [!UICONTROL **Scenbana**] | Sökvägen till den plats där datafiler lagras i Snowflake. <p>Mer information finns i [Välja en intern scen för sidan Lokala filer i Snowflake-dokumentationen](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
-
-+++
 
 1. Välj [!UICONTROL **Spara**].
 
