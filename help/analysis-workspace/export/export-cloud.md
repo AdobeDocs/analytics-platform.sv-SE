@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: b984241de42b2db2992e18c17cd60ca14cc725c7
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1853'
 ht-degree: 2%
 
 ---
@@ -18,11 +18,35 @@ Du kan exportera tabeller för arbetsytan från Customer Journey Analytics och s
 
 Det finns även andra metoder att exportera rapporter från Customer Journey Analytics, vilket beskrivs i [Exportera översikt](/help/analysis-workspace/export/export-project-overview.md).
 
+## Förstå fullständig tabellexport
+
+Du kan exportera fullständiga tabeller från Analysis Workspace till molnleverantörer som Google, Azure, Amazon och Adobe.
+
+[Fördelar med att exportera hela tabeller till molnet](#advantages-of-exporting-to-the-cloud) inkluderar möjlighet att exportera miljontals rader, inkludera beräknade värden, strukturera data i sammanfogade värden, med mera.
+
+Tänk på följande när du exporterar fullständiga tabeller:
+
+* Innan du exporterar till molnet bör du kontrollera att tabellerna, miljön och behörigheterna uppfyller kraven i [exportkrav](#export-requirements).
+
+* Några [funktioner](#unsupported-features) och [komponenter](#unsupported-components) stöds inte vid export av fullständiga tabeller till molnet.
+
+Använd följande process när du exporterar fullständiga tabeller till molnet:
+
+1. [Konfigurera ett molnkonto](/help/components/exports/cloud-export-accounts.md)
+
+1. [Konfigurera en plats på kontot](/help/components/exports/cloud-export-locations.md)
+
+1. [Exportera en fullständig tabell från arbetsytan](#export-full-tables-from-analysis-workspace)
+
+1. [Få åtkomst till data i molnet](#view-exported-data-and-manifest-file) och [Hantera export i Adobe](/help/components/exports/manage-exports.md)
+
+![Fullständig tabellexportprocess](assets/export-full-table-process.png)
+
 ## Exportera hela tabeller från Analysis Workspace
 
 >[!NOTE]
 >
->Innan du exporterar data enligt beskrivningen i det här avsnittet bör du kontrollera att [Exportkrav](#export-requirements) är uppfyllda.
+>Läs mer om fullständig tabellexport i [Förstå fullständig tabellexport](#understand-full-table-export) ovan.
 
 Så här exporterar du fullständiga tabeller från Analysis Workspace:
 
@@ -58,6 +82,38 @@ Så här exporterar du fullständiga tabeller från Analysis Workspace:
    Data skickas till molnkontot som du angav med den frekvens som du angav.
 
 1. (Valfritt) När du har skapat exporten kan du visa och hantera den på [Export page](/help/components/exports/manage-exports.md) och visa den i [Exportera loggar](/help/components/exports/manage-export-logs.md).</p>
+
+## Hantera exporter
+
+När du har exporterat data från Analysis Workspace kan du redigera, exportera om, duplicera, tagga eller ta bort befintliga exporter enligt beskrivningen i [Hantera exporter](/help/components/exports/manage-exports.md).
+
+## Visa exporterade data och manifestfil
+
+### Exporterade data
+
+Exporterade data är tillgängliga som en komprimerad fil i molndestinationen som du konfigurerade, enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
+
+Filnamnet för den komprimerade filen är följande, beroende på om du väljer CSV eller JSON som filformat:
+
+* `cja-export-{reportInstanceId}-{idx}.csv.gz`
+
+* `cja-export-{reportInstanceId}-{idx}.json.gz`
+
+>[!NOTE]
+>
+>Du väljer filformatet i [!UICONTROL **Filformat**] fält vid export av tabellen, enligt beskrivningen i [Exportera hela tabeller från Analysis Workspace](#export-full-tables-from-analysis-workspace).
+
+### Manifest-fil
+
+En manifestfil med filnamnet `cja-export-{reportInstanceId}-{idx}.json.gz` ingår i alla slutförda exportleveranser som innehåller minst en fil. Manifestfilen gör att du kan bekräfta att alla filer har levererats. Den innehåller följande information:
+
+* En lista över alla filer som levererats
+
+* Storleken på varje fil
+
+* Tidsstämpeln för varje fil
+
+<!-- add in  what the file name, structure, and file format will be -->
 
 ## Fördelar med att exportera till molnet
 
@@ -141,38 +197,6 @@ Om en attribueringsmodell som inte är standard används i en rapport ignoreras 
   >[!NOTE]
   >
   >Flerdimensionella rapporter stöds bara när data exporteras till molnet, vilket beskrivs i den här artikeln.
-
-## Hantera exporter
-
-När du har exporterat data från Analysis Workspace kan du redigera, exportera om, duplicera, tagga eller ta bort befintliga exporter enligt beskrivningen i [Hantera exporter](/help/components/exports/manage-exports.md).
-
-## Visa exporterade data och manifestfil
-
-### Exporterade data
-
-Exporterade data är tillgängliga som en komprimerad fil i molndestinationen som du konfigurerade, enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
-
-Filnamnet för den komprimerade filen är följande, beroende på om du väljer CSV eller JSON som filformat:
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->Du väljer filformatet i [!UICONTROL **Filformat**] fält vid export av tabellen, enligt beskrivningen i [Exportera hela tabeller från Analysis Workspace](#export-full-tables-from-analysis-workspace).
-
-### Manifest-fil
-
-En manifestfil med filnamnet `cja-export-{reportInstanceId}-{idx}.json.gz` ingår i alla slutförda exportleveranser som innehåller minst en fil. Manifestfilen gör att du kan bekräfta att alla filer har levererats. Den innehåller följande information:
-
-* En lista över alla filer som levererats
-
-* Storleken på varje fil
-
-* Tidsstämpeln för varje fil
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## Jämförelse mellan fullständig tabellexport (i Customer Journey Analytics) och Data Warehouse (i Adobe Analytics)
 
