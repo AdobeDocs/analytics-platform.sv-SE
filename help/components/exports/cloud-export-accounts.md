@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1599'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. I [!UICONTROL **Beskrivning av platskonto**] ska du ange en kort beskrivning av kontot så att det kan särskiljas från andra konton av samma kontotyp.
 
-1. I [!UICONTROL **Kontotyp**] väljer du vilken typ av molnkonto du exporterar till. De tillgängliga kontotyperna är Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake och Adobe Experience Platform Data Landing Zone.
+1. I [!UICONTROL **Kontotyp**] väljer du vilken typ av molnkonto du exporterar till. De tillgängliga kontotyperna är Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake och AEP Data Landing Zone.
 
 1. Fortsätt med det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] du markerade.
 
@@ -50,7 +50,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    * [Snowflake](#snowflake)
 
-### Adobe Experience Platform Data Landing Zone
+### AEP Data Landing Zone
 
 >[!IMPORTANT]
 >

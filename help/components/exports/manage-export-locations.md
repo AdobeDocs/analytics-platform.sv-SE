@@ -5,9 +5,9 @@ title: Hantera platser och konton för molnexport
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Plats**] -fliken.
+1. Välj [!UICONTROL **Platser**] -fliken.
 
 1. Välj **Filter** -ikon.
 
@@ -36,7 +36,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
    | Filter | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Platstyp**]<!--should this be changed to Account type?--> | Kontotypen som platsen är associerad med. Följande kontotyper kan vara tillgängliga: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Platstyp**]<!--should this be changed to Account type?--> | Kontotypen som platsen är associerad med. Följande kontotyper kan vara tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Konto**] | Namnet på kontot som platsen är associerad med. |
    | [!UICONTROL **Skapad av**] | E-postadressen till användaren som skapade platsen. |
 
@@ -46,7 +46,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Plats**] -fliken.
+1. Välj [!UICONTROL **Platser**] -fliken.
 
 1. På sökfliken börjar du skriva in information som är kopplad till den plats du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
 
@@ -54,7 +54,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Plats**] väljer du sedan den plats som du vill redigera.
+1. Välj [!UICONTROL **Platser**] väljer du sedan den plats som du vill redigera.
 
    <!-- add screenshot? -->
 
@@ -74,7 +74,7 @@ Så här tar du bort en plats:
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Plats**] väljer du en eller flera platser som du vill ta bort.
+1. Välj [!UICONTROL **Platser**] väljer du en eller flera platser som du vill ta bort.
 
    <!-- add screenshot? -->
 

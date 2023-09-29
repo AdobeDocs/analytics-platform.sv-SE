@@ -5,9 +5,9 @@ title: Hantera exportloggar
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Logg**] -fliken.
+1. Välj [!UICONTROL **Loggar**] -fliken.
 
 1. Välj **Filter** -ikon.
 
@@ -45,7 +45,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Logg**] -fliken.
+1. Välj [!UICONTROL **Loggar**] -fliken.
 
 1. På sökfliken börjar du med att skriva information som är kopplad till loggen som du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
 
@@ -69,25 +69,29 @@ Det här alternativet är inte tillgängligt när du markerar flera loggar.
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Loggar**] och välj sedan en logg.
+1. Välj [!UICONTROL **Loggar**] -fliken.
 
-   <!-- add screenshot? -->
+1. Leta reda på loggen som är associerad med den export som du vill redigera.
 
-1. Välj [!UICONTROL **Redigera**].
+1. Välj **Redigera export** icon ![ikon för exportlogg](assets/export-icon.png) bredvid loggen.
+
+   eller
+
+   Markera loggen och välj sedan [!UICONTROL **Redigera export**].
 
 ## Konfigurera kolumner
 
-Du kan lägga till eller ta bort kolumner på [!UICONTROL Log] för att konfigurera vilken information som visas.
+Du kan lägga till eller ta bort kolumner på [!UICONTROL Logs] för att konfigurera vilken information som visas.
 
 Välj en kolumnrubrik för att sortera loggarna efter den kolumnen. Som standard sorteras loggarna efter det datum och den tidpunkt då exporten påbörjades.
 
-Konfigurera kolumner på [!UICONTROL Log] tab:
+Konfigurera kolumner på [!UICONTROL Logs] tab:
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Logg**] -fliken.
+1. Välj [!UICONTROL **Loggar**] -fliken.
 
-1. Välj **Anpassa tabell** icon ![anpassa tabell](assets/customize-table-icon.png) i det övre högra hörnet av [!UICONTROL Log] sida.
+1. Välj **Anpassa tabell** icon ![anpassa tabell](assets/customize-table-icon.png) i det övre högra hörnet av [!UICONTROL Logs] sida.
 
    Följande kolumner är tillgängliga:
 
@@ -108,7 +112,7 @@ Konfigurera kolumner på [!UICONTROL Log] tab:
 
    {style="table-layout:auto"}
 
-1. Kontrollera att alla kolumner som du vill visa är markerade. Markerade kolumner visas på [!UICONTROL Log] och visa relevant information.
+1. Kontrollera att alla kolumner som du vill visa är markerade. Markerade kolumner visas på [!UICONTROL Logs] och visa relevant information.
 
 ## Visa granskningsloggar
 
