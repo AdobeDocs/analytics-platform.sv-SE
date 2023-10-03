@@ -5,9 +5,10 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1924'
 ht-degree: 2%
 
 ---
@@ -110,9 +111,7 @@ En manifestfil med filnamnet `cja-export-{reportInstanceId}-{idx}.json.gz` ingå
 
 * En lista över alla filer som levererats
 
-* Storleken på varje fil
-
-* Tidsstämpeln för varje fil
+* MD5-kontrollsumman för varje fil
 
 <!-- add in  what the file name, structure, and file format will be -->
 
@@ -126,7 +125,7 @@ Genom att exportera Customer Journey Analytics data till molnet kan du:
 
   Denna typ av data kan användas för att upptäcka långsiktiga trender för att få affärsinformation och i slutändan leda till bättre beslutsunderlag.
 
-* Exportera hela tabeller som innehåller tusentals eller miljontals rader (3 miljoner, 30 miljoner eller 150 miljoner rader, beroende på licenstyp). Andra exportmetoder tillåter högst 50 000 rader.
+* Exportera hela tabeller som innehåller tusentals eller miljontals rader (3 miljoner, 30 miljoner, 150 miljoner eller 300 miljoner rader, beroende på licenstyp). Andra exportmetoder tillåter högst 50 000 rader.
 
 * Inkludera beräknade värden i exporterade Customer Journey Analytics-data.
 

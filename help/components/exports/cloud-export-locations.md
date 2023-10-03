@@ -5,10 +5,11 @@ title: Konfigurera platser för molnexport
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 0%
+source-wordcount: '1376'
+ht-degree: 1%
 
 ---
 
@@ -58,8 +59,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    | Fält |  -funktion |
    |---------|----------|
-   | [!UICONTROL **IMS-organisations-ID**] | IMS-organisationsnumret tillhandahålls av Adobe. Klicka på ikonen Kopiera bredvid [!UICONTROL **IMS-organisations-ID**] om du vill kopiera innehållet i fältet och sedan använda ID:t i Adobe Experience Platform-kontot. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -78,7 +78,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. Se till att användar-ARN som tillhandahålls av Adobe har åtkomst till att överföra filer till den här bucket. |
-   | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
+   | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -97,7 +97,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Customer Journey Analytics data ska skickas. Se till att du har gett Adobe tillåtelse att överföra filer till denna bucket till säkerhetsobjektet. (Huvudkontot tillhandahålls när [konfigurera Google Cloud Platform-kontot](/help/components/exports/cloud-export-accounts.md).) Mer information om att bevilja behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen. |
-   | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
+   | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -114,7 +114,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Behållarnamn**] | Behållaren i det konto du angav där du vill att Customer Journey Analytics data ska skickas. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -131,7 +131,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
    | [!UICONTROL **Konto**] | Azure-lagringskontot. |
 
    {style="table-layout:auto"}

@@ -5,9 +5,10 @@ title: Konfigurera molnexportkonton
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -58,21 +59,13 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account), enligt beskrivningen ovan.
 
-1. I [!UICONTROL **Kontoegenskaper**] i [!UICONTROL **Lägg till konto**] visas följande information:
-
-   | Fält |  -funktion |
-   |---------|----------|
-   | [!UICONTROL **IMS-organisations-ID**] | IMS-organisationsnumret tillhandahålls av Adobe. Denna information behövs vanligtvis inte. Det kan vara användbart om du har problem med ditt konto och behöver kontakta kundtjänst. |
-
-   {style="table-layout:auto"}
-
 1. Välj [!UICONTROL **Spara**].
 
    The [!UICONTROL **Exportera konto har skapats**] visas.
 
    <!-- add screen shot -->
 
-1. Kopiera innehållet i [!UICONTROL **SAS**] till Urklipp. Använd denna SAS-token för att komma åt data som exporteras från Analysis Workspace från AEP Landing Zone. Läs mer om hur du får åtkomst till dina data&quot; |
+1. Kopiera innehållet i [!UICONTROL **SAS**] till Urklipp. Använd denna SAS-token för att komma åt data som exporteras från Analysis Workspace från AEP Landing Zone.
 
 1. Välj [!UICONTROL **OK**].
 
@@ -215,6 +208,3 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 1. Välj [!UICONTROL **OK**].
 
 1. Fortsätt med [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
-
-
-
