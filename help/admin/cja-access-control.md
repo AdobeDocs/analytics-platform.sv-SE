@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: d5a46c4ffbacb0e05a637ee9e19875572a2aebf4
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,7 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Audit Logs Access]** | Den här behörigheten tvingar behörighetskontrollen på [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) och användargränssnittet för granskningsloggar. |
 | **[!UICONTROL Reporting Usage Admin]** | Låter användarna visa och ta bort alla rapporter som körs i deras företag. |
 | **[!UICONTROL Reporting Usage View]** | Låter användarna se alla samtidiga rapporteringsbegäranden. |
+| [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL Calculated Metrics Creation]** | Låter användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter Creation]** | Låter användarna skapa [filter](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs Access]** | Ger användarna åtkomst till [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
@@ -99,5 +100,3 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Audience View]** | Låter användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
 
 {style="table-layout:auto"}
-
-<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->
