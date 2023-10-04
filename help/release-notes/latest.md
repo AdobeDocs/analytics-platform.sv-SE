@@ -3,35 +3,35 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: aa7f4361b1353a86b87c36c3d08e99ddb8ffd049
+source-git-commit: 2b8712506d68d89d41668fac32bb669055d94e91
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 6%
+source-wordcount: '773'
+ht-degree: 3%
 
 ---
 
-# Aktuell versionsinformation för Adobe Customer Journey Analytics (september 2023)
+# Aktuell versionsinformation för Adobe Customer Journey Analytics (oktober 2023)
 
-**Senaste uppdatering**: 13 september 2023
+**Senaste uppdatering**: 4 oktober 2023
 
-Versionsinformationen gäller den 13 september till 3 oktober 2023. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsinformationen gäller den 4 oktober till 24 oktober 2023. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya eller uppdaterade funktioner
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Stöd för A4T-klassificeringar i Analytics Source Connector** | The `_experience.decisioning.propositions.scopeDetails.correlationID` -fältet är nu tillgängligt i Adobe Analytics källanslutningsschema. Det här fältet används som stöd för A4T-klassificeringar och kommer att fyllas i från och med september 2023. | | Ej tillämpligt | 12 september 2023 |
-| **Uppdateringar av härledda fält** | Följande uppdateringar gjordes för funktionen för härledda fält:<ul><li>The [!UICONTROL Lookup] funktionen har bytt namn till [!UICONTROL Classify], med ytterligare alternativ för att läsa in CSV-data. **(Utgåvor 27 september 2023)**</li><li>Ytterligare funktioner är tillgängliga när du definierar ett härlett fält: [!UICONTROL Trim], [!UICONTROL Lowercase] och [!UICONTROL Lookup].</li><li>Härledda fältdefinitioner har nu även stöd för fält från [!UICONTROL Lookup] och [!UICONTROL Profile] datauppsättningar.</li></ul>[Läs mer](/help/data-views/derived-fields/derived-fields.md) | Ej tillämpligt | 13 september 2023 |
-| **Nya funktioner i Adobe Product Analytics** | <ul><li>**Analysidentifiering**: Jämför händelser med förväntade värden som härleds från historiska trender. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Trends Frequency of use view**: Mät användningen av funktionerna efter användningsfrekvens. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**Användarinställningar**: Konfigurera ett antal användarinställningar, t.ex. färgpaletter och sifferformat. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html)</li></ul> | Ej tillämpligt | 18 september 2023 |
-| **Upplev Edge-enhetssökningar** | Aktivera automatisk datainsamling av enhetstyp via Experience Platform Edge-nätverket. Den här Experience Edge-tjänsten är till stor nytta för Customer Journey Analytics och andra Experience Platform-appar. (Dokumentationslänk följer) | Ej tillämpligt | 27 september 2023 |
-| **Nya kolumner är tillgängliga när komponenter hanteras** | Följande nya kolumner är nu tillgängliga i [Beräknat måttansvarig](/help/components/calc-metrics/cm-workflow/cm-manager.md) och [Filterhantering](/help/components/filters/manage-filters.md) vid hantering av komponenter:<ul><li>Används i</li><li>Senast använd</li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras. Du kan använda ordlistan tillsammans med den här informationen för att hålla reda på och förstå hur komponenter används i organisationen bättre.</p> | 20 september 2023 | 4 oktober 2023 |
+| **Exportera fullständiga tabeller till molnet** | Med Customer Journey Analytics Full Table Export kan du exportera miljontals Workspace-rader till molnmål. Vid export av fullständiga tabeller kan du leverera datatabeller som utformats i Workspace en gång eller enligt schema, med stöd för upp till fem uppdelningar, fem mätvärden, filter och beräknade mätvärden, allt i en sammansatt tabell. Det är utvecklingen av rapporter om Data Warehouse i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag. Exportalternativen för molnet omfattar:<ul><li>Adobe Experience Platform Data Landing Zone</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>Mer information finns i [Exportera Customer Journey Analytics-rapporter till molnet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). | 4 oktober 2023 | 19 oktober 2023 |
+| **Nya kolumner är tillgängliga när komponenter hanteras** | Följande nya kolumner är nu tillgängliga i [Beräknat måttansvarig](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) och [Filterhantering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html) vid hantering av komponenter:<ul><li>Används i</li><li>Senast använd</li></ul>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras. Du kan använda ordlistan tillsammans med den här informationen för att hålla reda på och förstå hur komponenter används i organisationen bättre. | 23 september 2023 | 4 oktober 2023 |
+| **Migrera Adobe Analytics-projekt och alla komponenter som ingår till Customer Journey Analytics** | Nu kan du migrera dina Adobe Analytics-projekt till Customer Journey Analytics. Den här processen förenklar övergången från Adobe Analytics till Customer Journey Analytics. När du migrerar projekt till Customer Journey Analytics mappas resurserna från en Adobe Analytics-rapportsvit till en datavy i Customer Journey Analytics. **Du migrerar projekt till Customer Journey Analytics från Adobe Analytics gränssnitt.** [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | Ej tillämpligt | 4 oktober 2023 |
+| **Adobe Product Analytics: Visa/dölj serie** | Klicka på teckenförklaringen eller tabellraderna för att styra hur serierna ska visas i dina visualiseringar.  Läs mer (kommer snart) | Ej tillämpligt | 4 oktober 2023 |
+| **Anteckningar i Adobe Product Analytics** | Guidade analysprojekt har nu stöd för möjligheten att visa anteckningar. Se varje vytyp i [Guidad analys](/help/guided-analysis/overview.md) för mer information om hur det interagerar med anteckningar. Läs mer (kommer snart) | Ej tillämpligt | 4 oktober 2023 |
+| **Rapporteringsaktivitetshanteraren** | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje anslutning i organisationen. Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. Viktiga funktioner i Rapporteringsaktivitetshanteraren är bland annat:<ul><li>Avbryt aktuella rapportbegäranden (inklusive begäranden från guidade analyser och fullständig registerexport)</li><li>Begränsa efterföljande begäranden för en angiven tidsperiod</li></ul>Förutom att avbryta aktuella begäranden kan administratörer nu begränsa begäranden för en definierad tidsperiod. Administratörer kan begränsa begäranden efter begäran, projekt eller användare.  Läs mer (kommer snart) | 17 oktober 2023 | 23 oktober 2023 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-AN 326888
-
+AN-325940; AN-326468; AN-328301; AN-328640; AN-329370
 
 ## Viktiga meddelanden för Customer Journey Analytics-administratörer
 
