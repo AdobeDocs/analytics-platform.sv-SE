@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2b8712506d68d89d41668fac32bb669055d94e91
+source-git-commit: e1254a5ecff0f638cbef1051564c1ce856f715bd
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Versionsinformationen gäller den 4 oktober till 24 oktober 2023. Adobe Customer
 | **Nya kolumner är tillgängliga när komponenter hanteras** | Följande nya kolumner är nu tillgängliga i [Beräknat måttansvarig](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) och [Filterhantering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html) vid hantering av komponenter:<ul><li>Används i</li><li>Senast använd</li></ul>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras. Du kan använda ordlistan tillsammans med den här informationen för att hålla reda på och förstå hur komponenter används i organisationen bättre. | 23 september 2023 | 4 oktober 2023 |
 | **Migrera Adobe Analytics-projekt och alla komponenter som ingår till Customer Journey Analytics** | Nu kan du migrera dina Adobe Analytics-projekt till Customer Journey Analytics. Den här processen förenklar övergången från Adobe Analytics till Customer Journey Analytics. När du migrerar projekt till Customer Journey Analytics mappas resurserna från en Adobe Analytics-rapportsvit till en datavy i Customer Journey Analytics. **Du migrerar projekt till Customer Journey Analytics från Adobe Analytics gränssnitt.** [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | Ej tillämpligt | 4 oktober 2023 |
 | **Adobe Product Analytics: Visa/dölj serie** | Klicka på teckenförklaringen eller tabellraderna för att styra hur serierna ska visas i dina visualiseringar.  Läs mer (kommer snart) | Ej tillämpligt | 4 oktober 2023 |
-| **Anteckningar i Adobe Product Analytics** | Guidade analysprojekt har nu stöd för möjligheten att visa anteckningar. Se varje vytyp i [Guidad analys](/help/guided-analysis/overview.md) för mer information om hur det interagerar med anteckningar. Läs mer (kommer snart) | Ej tillämpligt | 4 oktober 2023 |
+| **Anteckningar i Adobe Product Analytics** | Guidade analysprojekt har nu stöd för möjligheten att visa anteckningar. Se varje vytyp i [Guidad analys](/help/guided-analysis/overview.md) för mer information om hur det interagerar med anteckningar. | Ej tillämpligt | 4 oktober 2023 |
 | **Rapporteringsaktivitetshanteraren** | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje anslutning i organisationen. Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. Viktiga funktioner i Rapporteringsaktivitetshanteraren är bland annat:<ul><li>Avbryt aktuella rapportbegäranden (inklusive begäranden från guidade analyser och fullständig registerexport)</li><li>Begränsa efterföljande begäranden för en angiven tidsperiod</li></ul>Förutom att avbryta aktuella begäranden kan administratörer nu begränsa begäranden för en definierad tidsperiod. Administratörer kan begränsa begäranden efter begäran, projekt eller användare.  Läs mer (kommer snart) | 17 oktober 2023 | 23 oktober 2023 |
 
 {style="table-layout:auto"}
