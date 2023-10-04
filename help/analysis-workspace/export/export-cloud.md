@@ -3,10 +3,8 @@ description: Exportera ett Analysis Workspace-projekt till en molnplats.
 keywords: Analysis Workspace
 title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
-hide: true
-hidefromtoc: true
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 2%
@@ -14,6 +12,8 @@ ht-degree: 2%
 ---
 
 # Exportera Customer Journey Analytics-rapporter till molnet
+
+{{release-limited-testing}}
 
 Du kan exportera tabeller för arbetsytan från Customer Journey Analytics och skicka exporter till angivna molnmål.
 

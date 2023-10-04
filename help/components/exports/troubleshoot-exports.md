@@ -3,9 +3,8 @@ description: Hantera loggar för befintlig export
 keywords: Analysis Workspace
 title: Felsökning av misslyckade exporter
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -13,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Felsökning av misslyckade exporter
+
+{{release-limited-testing}}
 
 När du [exportera hela tabeller från Analysis Workspace till molnmål](/help/analysis-workspace/export/export-cloud.md)kan du visa status för dessa exporter från båda [Fliken Exportera](/help/components/exports/manage-exports.md) och från [Fliken Loggar](/help/components/exports/manage-export-logs.md). Misslyckade exporter visar status för [!UICONTROL **Misslyckades**].
 

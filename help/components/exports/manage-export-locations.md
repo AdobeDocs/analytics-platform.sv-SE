@@ -3,9 +3,8 @@ description: Hantera den molnexportplats där Customer Journey Analytics data ka
 keywords: Analysis Workspace
 title: Hantera platser och konton för molnexport
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -13,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Hantera platser och konton för molnexport
+
+{{release-limited-testing}}
 
 Du kan visa, redigera och ta bort platser för molnexport.
 

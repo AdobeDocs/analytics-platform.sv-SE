@@ -3,9 +3,8 @@ description: Hantera loggar för befintlig export
 keywords: Analysis Workspace
 title: Hantera exportloggar
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -13,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Hantera exportloggar
+
+{{release-limited-testing}}
 
 Exportloggar innehåller information om varje export och genereras när Analysis Workspace-data exporteras till molnet. (Mer information om hur data kan exporteras till molnet finns i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md).)
 

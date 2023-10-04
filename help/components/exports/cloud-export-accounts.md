@@ -3,10 +3,8 @@ description: Konfigurera molnexportkontot där Customer Journey Analytics data k
 keywords: Analysis Workspace
 title: Konfigurera molnexportkonton
 feature: Components
-hide: true
-hidefromtoc: true
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 0%
@@ -14,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera molnexportkonton
+
+{{release-limited-testing}}
 
 Innan du kan exportera Customer Journey Analytics-rapporter till ett molnmål enligt beskrivningen i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md)måste du lägga till och konfigurera målet dit du vill att data ska skickas.
 
@@ -65,7 +65,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    <!-- add screen shot -->
 
-1. Kopiera innehållet i [!UICONTROL **SAS**] till Urklipp. Använd denna SAS-token för att komma åt data som exporteras från Analysis Workspace från AEP Landing Zone.
+1. Kopiera innehållet i [!UICONTROL **SAS**] till Urklipp. Använd den här SAS-URI:n för att komma åt data som exporteras från Analysis Workspace från AEP Landing Zone.
 
 1. Välj [!UICONTROL **OK**].
 
