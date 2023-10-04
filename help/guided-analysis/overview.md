@@ -2,11 +2,11 @@
 title: Översikt över guidad analys
 description: En metod för att analysera data i Customer Journey Analytics som gör att produktteam snabbt kan få högkvalitativa insikter. Kallas även Product Analytics.
 keywords: produktanalys
-exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
+exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
-source-git-commit: 55310a844f5928f0e97e7ea7f44ae146e103dafa
+source-git-commit: ebb7dd7e510693ca7c44c3f3245fc47dc52c5942
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Med guidad analys kategoriseras vytyperna i **Analystyper**. Följande analys- o
 
 Om din organisation är etablerad för guidad analys kan du komma åt den från Customer Journey Analytics hemsida.
 
-1. Klicka **[!UICONTROL Guided analysis]** från hemsidan för att gå direkt till [Vyn Användningstrender](types/usage.md).
+1. Klicka **[!UICONTROL Guided analysis]** från hemsidan, som tar dig direkt till [Vyn Användningstrender](types/usage.md).
 
    ![Landing page tile](assets/landing-page-tile.png)
 
@@ -48,14 +48,14 @@ Om din organisation är etablerad för guidad analys kan du komma åt den från 
 
 ## Gränssnitt
 
-Gränssnittet för guidad analys följer ett fråge- och svarsformat. Du formulerar din fråga i frågefältet och får sedan ett svar i form av en skriftlig insikt, diagram och tabell. Du kan sedan ställa nästa fråga med visualiseringsinställningarna och visningstyperna.
+Gränssnittet för guidad analys följer ett fråge- och svarsformat. Formulera frågan i frågefältet och få sedan ett svar med en skriftlig insikt, diagram och tabell. Du kan sedan ställa nästa fråga med visualiseringsinställningarna och visningstyperna.
 
-Oavsett analystyp består den guidade analysen av följande gränssnittselement:
+Oavsett analystyp använder guidad analys följande gränssnittselement:
 
 | Förhandsgranska gränssnitt | Gränssnittselement | Beskrivning |
 | --- | --- | --- |
-| ![Frågerår](assets/query-rail.png) | Frågerår | Konfigurera önskade komponenter (händelser, egenskaper och segment) som utgör en analys. Varje analystyp tillämpar olika gränser för antalet händelser och segment som du kan konfigurera.<p>Använd filterikonen om du vill begränsa med hjälp av specifika händelseegenskaper eller skapa nya segment direkt. När en egenskap har valts, förutom standardfiltervillkor som lika, innehåller och avslutas med, en lista över de 1 000 främsta egenskapsvärdena, som blir tillgängliga för snabb filtrering.<p>Om du byter till en ny analystyp, behålls dina frågeval inom de tillåtna gränserna för den analystypen. |
-| ![Diagram](assets/chart.png) | Diagram | En visualisering av de data som returneras baserat på dina indata från frågespelaren och inställningarna. Vilken visualisering du ser beror på vyn och inställningarna ovanför diagrammet. Vilka vyer som är tillgängliga beror på analystypen ovanför frågespelaren. Diagrammet innehåller även: <ul><li>**Verktygstips**: Håll pekaren över en diagramdatapunkt för att visa ett verktygstips med mer information.</li><li>**Förklaring**: Håll pekaren över teckenförklaringen för att visa seriedefinitioner, om sådana finns.</li><li>**Klicka på funktionsmakron**: Visa tillgängliga nästa åtgärd genom att vänsterklicka på en datapunkt. Alternativen inkluderar **Spara segment**.</li></ul> |
+| ![Frågerår](assets/query-rail.png) | Frågerår | Konfigurera önskade komponenter (händelser, egenskaper och segment) som utgör en analys. Varje analystyp tillämpar olika gränser för antalet händelser och segment som du kan konfigurera.<p>Använd filterikonen om du vill begränsa med hjälp av specifika händelseegenskaper eller skapa segment direkt. När en egenskap har markerats finns det, förutom standardfiltervillkor som lika med, även en lista med de 1 000 vanligaste egenskapsvärdena som du kan filtrera snabbt.<p>Om du byter till en ny analystyp, behålls dina frågeval inom de tillåtna gränserna för den analystypen. |
+| ![Diagram](assets/chart.png) | Diagram | En visualisering av de data som returneras baserat på dina indata från frågespelaren och inställningarna. Vilken visualisering du ser beror på vyn och inställningarna ovanför diagrammet. Vilka vyer som är tillgängliga beror på analystypen ovanför frågespelaren. Diagrammet innehåller även: <ul><li>**Verktygstips**: Håll pekaren över en diagramdatapunkt för att visa ett verktygstips med mer information.</li><li>**Förklaring**: Håll pekaren över teckenförklaringen för att visa seriedefinitioner, om sådana finns.</li><li>**Anteckningar**: Matchning [Anteckningar](../components/annotations/overview.md) är synliga mellan visualiseringen och teckenförklaringen. Det visas som en ![Anteckningsikon](assets/annotation.png) -ikonen i anteckningens konfigurerade färg. Visa typer som visar data över tiden genom att placera ![Anteckningsikon](assets/annotation.png) -ikonen under det konfigurerade datumet eller datumintervallet. Visa typer som inte visar data över tid ![Anteckningsikon](assets/annotation.png) i diagrammets nedre högra hörn.</li><li>**Klicka på funktionsmakron**: Visa tillgängliga nästa åtgärd genom att vänsterklicka på en datapunkt. Alternativen inkluderar **Spara segment**.</li></ul> |
 | ![Tabell](assets/table.png) | Tabell | En tabellrepresentation av de data som returneras baserat på dina indata från frågespelaren och inställningarna. Kolumnerna i tabellen beror på vilken vytyp som finns ovanför diagrammet. Vilka vyer som är tillgängliga beror på analystypen ovanför frågespelaren. Tabellen innehåller även följande: <ul><li>**Klicka på funktionsmakron**: Visa tillgängliga nästa åtgärder genom att klicka på **[!UICONTROL More]** -menyn. Alternativen inkluderar **Spara segment**.</li></ul> |
 | ![Visualiseringsinställningar](assets/visualization-settings.png) | Visualiseringsinställningar | Flera alternativ ovanför diagrammet som gör att du kan anpassa hur diagrammet och tabellen returnerar data.<ul><li>**Vytyp**: En nedrullningsbar väljare som gör att du kan presentera data för en viss analystyp på ett annat sätt.</li><li>**Diagraminställningar**: Finjustera hur diagram och tabeller visas. Vilka alternativ som är tillgängliga beror på vilken vy du har valt.</li><li>**Datumintervall**: En kalenderväljare som gör att du kan bestämma datumintervallet för analysen. Du kan också välja ett intervall för trendvyer, till exempel dagliga, veckovisa eller månadsvisa.</li><li>**Insikter**: Sammanhangsberoende insikter beroende på vilken analys du visar. Du kan använda piltangenterna för att gå till ytterligare insikter eller visa eller dölja dessa insikter med hjälp av glödlampsikonen i det övre högra hörnet.</li></ul> |
 | ![Meny](assets/menu.png) | Meny | Kommandon i det övre högra hörnet av den guidade analysen som ger övergripande åtgärder för din analys.<ul><li>**Datavyväljare**: Ändra datavyn som analysen använder. När du ändrar datavyn ändras även de tillgängliga komponenterna i frågerinjen.</li><li>**Spara**: Sparar analysen. Om du sparar en ny analys visas ett modalt fönster som begär ett namn och en beskrivning.</li><li>**Spara som**: Sparar analysen separat från den aktuella analysen och skapar en kopia. Ett modalt fönster visas där ett nytt namn och en beskrivning efterfrågas.</li><li>**Öppna i arbetsytan**: Återskapar den aktuella guidade analysen i Analysis Workspace. Arbetsyteprojektet skapas på en ny flik, vilket förhindrar avbrott när du arbetar i den guidade analysen. Det är en kopia av analysen och är inte synkroniserat med den ursprungliga guidade analysen när den väl har öppnats. Använd det här kommandot när du vill skicka vidare till analytikerteamet, eller fördjupa dig i data än vad som tillåts med guidad analys.</li><li>**Kopiera till Urklipp**: Kopierar diagramgrafiken till Urklipp och klistras in i andra program. Frågefältet och tabellen tas inte med i bilden.</li><li>**Hämta PNG**: Hämtar diagramgrafiken som en `.png`. Frågefältet och tabellen tas inte med i bilden.</li><li>**Hämta CSV**: Hämtar tabelldata som `.csv`. Frågefältet och -diagrammet inkluderas inte i filen.</li></ul> |

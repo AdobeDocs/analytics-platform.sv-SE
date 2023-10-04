@@ -4,10 +4,10 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 322f5a10b928a9bf679954aa1fe6415340ec675b
+source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
 workflow-type: tm+mt
-source-wordcount: '3178'
-ht-degree: 1%
+source-wordcount: '3204'
+ht-degree: 0%
 
 ---
 
@@ -111,6 +111,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | **[Rad](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Uppdelning efter position | Välj det här alternativet om du vill att detaljerna ska ligga kvar vid objektets position i stället för själva objektet. Mer information om uppdelningar finns i [Dela upp dimensioner](/help/components/dimensions/t-breakdown-fa.md). |
 | | Procentberäkning | <ul><li>Kolumn</li><li>Rad</li></ul> |
+| | Kolumnsummor (endast statiska rader) | <ul><li>Visa summan av rader: Visar summan av enskilda radobjekt </li><li>Visa totalsumma: visar den borttagna dubblettsumman av rader.</li></ul> |
 
 ## Visualiseringsinställningar
 
