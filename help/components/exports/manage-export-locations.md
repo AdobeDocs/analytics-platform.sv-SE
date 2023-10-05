@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
    | Filter | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Platstyp**]<!--should this be changed to Account type?--> | Kontotypen som platsen är associerad med. Följande kontotyper kan vara tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Platstyp**]<!--should this be changed to Account type?--> | Kontotypen som platsen är associerad med. Följande kontotyper kan vara tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Konto**] | Namnet på kontot som platsen är associerad med. |
    | [!UICONTROL **Skapad av**] | E-postadressen till användaren som skapade platsen. |
 
@@ -49,7 +49,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 1. Välj [!UICONTROL **Platser**] -fliken.
 
-1. På sökfliken börjar du skriva in information som är kopplad till den plats du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
+1. I sökfältet börjar du skriva in information som är associerad med den plats du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
 
 ## Redigera platser
 
@@ -57,7 +57,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 1. Välj [!UICONTROL **Platser**] väljer du sedan den plats som du vill redigera.
 
-   <!-- add screenshot? -->
+   ![Redigera platser](assets/locations-edit.png)
 
 1. Välj [!UICONTROL **Redigera**].
 
@@ -77,7 +77,7 @@ Så här tar du bort en plats:
 
 1. Välj [!UICONTROL **Platser**] väljer du en eller flera platser som du vill ta bort.
 
-   <!-- add screenshot? -->
+   ![Redigera platser](assets/locations-edit.png)
 
 1. Välj [!UICONTROL **Ta bort**] väljer [!UICONTROL **Ta bort**] igen i bekräftelsedialogrutan.
 
@@ -92,6 +92,20 @@ Så här tar du bort en plats:
 1. Välj [!UICONTROL **Visa detaljer**] på kontot som du vill redigera.
 
 1. Gör önskade ändringar och välj sedan [!UICONTROL **Spara**].
+
+## Visa kontonycklar
+
+När du har skapat ett konto kan du visa alla associerade kontonycklar för det kontot. Du kan behöva visa den här informationen om du inte har slutfört konfigurationen av kontot med din molnleverantör [när du ursprungligen konfigurerade kontot](/help/components/exports/cloud-export-accounts.md).
+
+Så här visar du nycklar som är kopplade till ett exportkonto:
+
+1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
+
+1. Välj [!UICONTROL **Platskonton**] -fliken.
+
+   ![Kontosida](assets/account-page.png)
+
+1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Kontonycklar**].
 
 ## Ta bort konton
 

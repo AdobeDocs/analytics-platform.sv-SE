@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera exportloggar
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,9 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
 
    | Filter | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Kontotypen som loggen är associerad med. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Väntande**]: En specifik instans av en export har startats men är inte slutförd ännu.<p>Om du kör om en export som har statusen Väntande fördröjs exportprocessen.</p></li><li>[!UICONTROL **Slutförd**]: En specifik instans av en export har bearbetats och är tillgänglig på exportkontot.</li><li>[!UICONTROL **Misslyckades**]<p>Följande situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet. <ul><li>Schemalagd exportförfallotid</li><li>Radgränsen för schemalagd export har uppnåtts </li></ul> </p></li></ul> |
+   | [!UICONTROL **Export-ID**] | Ange export-ID för den exportlogg som du vill visa. |
+   | [!UICONTROL **Kontotyp**] | Kontotypen som loggen är associerad med. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Väntande**]: En specifik instans av en export har startats men är inte slutförd ännu.<p>Om du kör om en export som har statusen Väntande fördröjs exportprocessen.</p></li><li>[!UICONTROL **Complete**]: En specifik instans av en export har bearbetats och är tillgänglig på exportkontot.</li><li>[!UICONTROL **Misslyckades**]<p>Följande situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet. <ul><li>Schemalagd exportförfallotid</li><li>Radgränsen för schemalagd export har uppnåtts </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -48,7 +49,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
 
 1. Välj [!UICONTROL **Loggar**] -fliken.
 
-1. På sökfliken börjar du med att skriva information som är kopplad till loggen som du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
+1. I sökfältet börjar du skriva in information som är kopplad till loggen som du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -74,11 +75,11 @@ Det här alternativet är inte tillgängligt när du markerar flera loggar.
 
 1. Leta reda på loggen som är associerad med den export som du vill redigera.
 
-1. Välj **Redigera export** icon ![ikon för exportlogg](assets/export-icon.png) bredvid loggen.
+1. Välj **Redigera export** icon ![ikon för exportlogg](assets/export-icon.png) bredvid loggnamnet.
 
    eller
 
-   Markera loggen och välj sedan [!UICONTROL **Redigera export**].
+   Markera kryssrutan intill loggen och välj sedan [!UICONTROL **Redigera export**].
 
 ## Konfigurera kolumner
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera exporter
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '944'
 ht-degree: 1%
 
 ---
@@ -37,8 +37,8 @@ Om du vill hitta den information du behöver kan du antingen filtrera exportlist
 
    | Filter | Beskrivning |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Kontotypen som exporten är kopplad till. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Aktiv**]: Anger att en schemalagd export ännu inte har gått ut. </li><li>[!UICONTROL **Slutförd**]: Anger att en export har exporterats. För schemalagd export innebär detta att tidsplanen har gått ut.</li><li>[!UICONTROL **Misslyckades**]<p>Följande situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet. <ul><li>Schemalagd exportförfallotid</li><li>Radgränsen för schemalagd export har uppnåtts </li></ul> </p></li></ul> |
+   | [!UICONTROL **Kontotyp**] | Kontotypen som exporten är kopplad till. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Aktiv**]: Anger att en schemalagd export ännu inte har gått ut eller att en engångsexport ännu inte har slutförts. </li><li>[!UICONTROL **Complete**]: Anger att en export har exporterats. För schemalagd export innebär detta att tidsplanen har gått ut.</li><li>[!UICONTROL **Misslyckades**]<p>Följande situationer kan leda till en misslyckad export. Hovra över [!UICONTROL **Misslyckades**] status för att se information om felet. <ul><li>Schemalagd exportförfallotid</li><li>Radgränsen för schemalagd export har uppnåtts </li></ul> </p></li></ul> |
    | [!UICONTROL **Frekvens**] | Hur ofta exporten sker. Följande frekvenser är tillgängliga: <ul><li>[!UICONTROL **En gång**]</li><li>[!UICONTROL **Dagligen**]</li><li>[!UICONTROL **Veckovis**]</li><li>[!UICONTROL **Månadsvis**]</li><li>[!UICONTROL **Årlig**]</li></ul> |
 
    {style="table-layout:auto"}
@@ -57,7 +57,7 @@ Du kan redigera egenskaper, format, schemaläggning och platsinformation för en
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. På [!UICONTROL **Export**] markerar du den export du vill redigera.
+1. På [!UICONTROL **Export**] markerar du kryssrutan bredvid den export som du vill redigera.
 
    Det här alternativet är inte tillgängligt när du väljer flera exporter.
 
@@ -69,7 +69,7 @@ Du kan duplicera en befintlig export.
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. På [!UICONTROL **Export**] markerar du den export du vill duplicera.
+1. På [!UICONTROL **Export**] markerar du kryssrutan bredvid den export du vill duplicera.
 
    Det här alternativet är inte tillgängligt när du väljer flera exporter.
 
@@ -85,7 +85,7 @@ Du kan initiera en export manuellt, antingen för en schemalagd export eller en 
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. På [!UICONTROL **Export**] markerar du den export som du vill köra.
+1. På [!UICONTROL **Export**] markerar du kryssrutan bredvid den export som du vill köra.
 
    Det här alternativet är inte tillgängligt när du väljer flera exporter.
 
@@ -97,11 +97,11 @@ När du lägger till märkord i en export kan du visa dessa märkord i dialogrut
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. På [!UICONTROL **Export**] markerar du en eller flera exporter som du vill tagga.
+1. På [!UICONTROL **Export**] markerar du kryssrutan bredvid en eller flera exporter som du vill tagga.
 
-1. Välj [!UICONTROL **Tagg**].
+1. Välj [!UICONTROL **Redigera taggar**].
 
-1. I dialogrutan för taggexport skriver du namnet på en tagg för att skapa en ny tagg, eller väljer en befintlig tagg i listrutan.
+1. I [!UICONTROL **Märkesexport**] skriver du namnet på en tagg för att skapa en ny tagg eller väljer en befintlig tagg i listrutan.
 
    Alla vanliga taggar mellan de markerade exporter visas i taggdialogrutan. <!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
 
@@ -113,7 +113,7 @@ Du kan ta bort exporter från exportsidan. Schemalagda exporter som tas bort ski
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. På [!UICONTROL **Export**] väljer du en eller flera exporter som du vill ta bort.
+1. På [!UICONTROL **Export**] markerar du kryssrutan bredvid en eller flera exporter som du vill ta bort.
 
 1. Välj [!UICONTROL **Ta bort**] väljer [!UICONTROL **Ta bort**] när bekräftelsemeddelandet visas.
 
@@ -123,7 +123,9 @@ Du kan lägga till eller ta bort kolumner på [!UICONTROL Exports] för att konf
 
 Välj en kolumnrubrik om du vill sortera exporten efter den kolumnen. Som standard sorteras exporten efter det datum och den tidpunkt då exporten senast ändrades.
 
-1. Välj **Anpassa tabell** icon ![anpassa tabell](assets/customize-table-icon.png) i det övre högra hörnet av [!UICONTROL Exports] sida.
+1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
+
+1. På [!UICONTROL **Export**] väljer du **Anpassa tabell** icon ![anpassa tabell](assets/customize-table-icon.png) i det övre högra hörnet av [!UICONTROL Exports] sida.
 
    Följande kolumner är tillgängliga:
 
@@ -131,9 +133,9 @@ Välj en kolumnrubrik om du vill sortera exporten efter den kolumnen. Som standa
    |---------|----------|
    | Namn | Namnet på exporten. Användare ger exporterar ett namn när de skapar dem, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
    | ID | Det ID som automatiskt tilldelas till exporten när den skapas. <!-- True? --> |
-   | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Active], [!UICONTROL Paused], [!UICONTROL Completed]och [!UICONTROL Failed].<p> **Obs!** Mer information om felsökning av misslyckade exporter finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p> |
    | Datavy name | Namnet på datavyn som är associerad med exporten. Användarna kan välja datavyn när de skapar exporten, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
-   | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Pending], [!UICONTROL Delivered]och [!UICONTROL Failed]. |
+   | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Active], [!UICONTROL Complete]och [!UICONTROL Failed].<p> **Obs!** Mer information om felsökning av misslyckade exporter finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p> |
+   | Taggar | Visar eventuella märkord som används i exporten. Mer information om hur du använder märkord i en export finns i [Tagga en export](#tag-an-export). |
    | Tabellstorlek (senaste sändning) | Storleken på exporten när den senast skickades. |
    | Skapad av | Användaren som skapade exporten. |
    | Skapad | Datum och tid då exporten skapades. <!-- true? --> |
@@ -144,7 +146,6 @@ Välj en kolumnrubrik om du vill sortera exporten efter den kolumnen. Som standa
    | Senast skickad | Senaste gången som exporten skickades. |
    | Senast ändrad | Den senaste gången som exporten ändrades. Objekt på exportsidan sorteras som standard efter den här kolumnen. |
    | Kontotyp | Typen av molnkonto där data exporterades. Tillgängliga kontotyper är [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake]och [!UICONTROL Adobe Experience Platform]. |
-   | Taggar | Visar eventuella märkord som används i exporten. Mer information om hur du använder märkord i en export finns i [Tagga en export](#tag-an-export). |
 
    {style="table-layout:auto"}
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1572'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. Fortsätt med det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] du markerade.
 
-   * [Adobe Experience Platform Data Landing Zone](#adobe-experience-platform)
+   * [AEP Data Landing Zone](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -63,9 +63,9 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    The [!UICONTROL **Exportera konto har skapats**] visas.
 
-   <!-- add screen shot -->
+   ![Exportera kontodialogruta AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Kopiera innehållet i [!UICONTROL **SAS**] till Urklipp. Använd den här SAS-URI:n för att komma åt data som exporteras från Analysis Workspace från AEP Landing Zone.
+1. Kopiera innehållet i [!UICONTROL **SAS-URI**] till Urklipp. Använd den här SAS-URI:n för att komma åt data som exporteras från Analysis Workspace från AEP Landing Zone.
 
 1. Välj [!UICONTROL **OK**].
 
@@ -87,7 +87,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    The [!UICONTROL **Exportera konto har skapats**] visas.
 
-   <!-- add screen shot -->
+   ![Dialogrutan Amazon S3 Roll ARN för exportkonto har skapats](assets/export-account-amazons3.png)
 
 1. Kopiera innehållet i [!UICONTROL **Användar-ARN**] till Urklipp. Användar-ARN (Amazon Resource Name) tillhandahålls av Adobe. Du måste koppla den här användaren till den princip du skapade i Amazon S3 Role ARN.
 
@@ -111,7 +111,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    The [!UICONTROL **Exportera konto har skapats**] visas.
 
-   <!-- add screen shot -->
+   ![Dialogrutan Exportera konto har skapats](assets/export-account-gcp.png)
 
 1. Kopiera innehållet i [!UICONTROL **kapitalbelopp**] till Urklipp och kontrollera sedan att du ger huvudpersonen behörighet att överföra filer till den här bucket i Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -139,7 +139,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    The [!UICONTROL **Exportera konto har skapats**] visas.
 
-   <!-- add screen shot -->
+   ![Dialogrutan Exportera konto har skapats](assets/export-account-azure.png)
 
 1. Om du inte redan gjort det kontrollerar du att du beviljar behörigheter till bucket i Azure SAS. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -165,7 +165,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    The [!UICONTROL **Exportera konto har skapats**] visas.
 
-   <!-- add screen shot -->
+   ![Dialogrutan Exportera konto har skapats](assets/export-account-azure.png)
 
 1. Om du inte redan gjort det kontrollerar du att du har gett behörighet till bucket i Azure RBAC. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -191,7 +191,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    The [!UICONTROL **Exportera konto har skapats**] visas.
 
-   <!-- add screen shot -->
+   ![Dialogrutan Exportera konto har skapats](assets/export-account-snowflake.png)
 
 1. Kopiera innehållet i [!UICONTROL **Offentlig nyckel**] till Urklipp. Den offentliga nyckeln tillhandahålls av Adobe.
 
