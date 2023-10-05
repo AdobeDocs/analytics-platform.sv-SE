@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera exportloggar
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 708367159d00935bb77043e551dc915f79dd2584
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
    |---------|----------|
    | [!UICONTROL **Export-ID**] | Ange export-ID för den exportlogg som du vill visa. |
    | [!UICONTROL **Kontotyp**] | Kontotypen som loggen är associerad med. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Väntande**]: En specifik instans av en export har startats men är inte slutförd ännu.<p>Om du kör om en export som har statusen Väntande fördröjs exportprocessen.</p></li><li>[!UICONTROL **Complete**]: En specifik instans av en export har bearbetats och är tillgänglig på exportkontot.</li><li>[!UICONTROL **Misslyckades**]<p>Följande situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet. <ul><li>Schemalagd exportförfallotid</li><li>Radgränsen för schemalagd export har uppnåtts </li></ul> </p></li></ul> |
+   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Väntande**]: En specifik instans av en export har startats men är inte slutförd ännu.<p>Om du kör om en export som har statusen Väntande fördröjs exportprocessen.</p></li><li>[!UICONTROL **Complete**]: En specifik instans av en export har bearbetats och är tillgänglig på exportkontot.</li><li>[!UICONTROL **Misslyckades**]<p>Olika situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet.<p>Mer information om möjliga orsaker till ett fel finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}
 

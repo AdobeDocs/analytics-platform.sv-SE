@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera exporter
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '977'
 ht-degree: 1%
 
 ---
@@ -62,6 +62,10 @@ Du kan redigera egenskaper, format, schemaläggning och platsinformation för en
    Det här alternativet är inte tillgängligt när du väljer flera exporter.
 
 1. Välj [!UICONTROL **Redigera**].
+
+   The [!UICONTROL **Exportera fullständig tabell**] visas.
+
+1. Uppdatera alla tillgängliga alternativ. Information om de olika alternativen finns i [Exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md).
 
 ## Duplicera en export
 
