@@ -3,9 +3,9 @@ description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Följande paneltyper är tillgängliga i Analysis Workspace för [!UICONTROL Cus
 | [Panelen för samtidiga medieanvändare](media-concurrent-viewers.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
 | [Panelen Medieuppspelning - tidsfördröjning](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysera den uppspelningstid som använts för att förstå var maximal samtidighet inträffade eller var bortfall inträffade. |
 
-![](assets/panel-overview.png)
+![Panelen Customer Journey Analytics med en lista över tillgängliga paneltyper.](assets/panel-overview.png)
 
 [!UICONTROL Quick Insights], [!UICONTROL Blank] och [!UICONTROL Freeform] paneler är bra att använda för att starta analysen, medan [!UICONTROL Attribution IQ] ger sig själv till mer avancerade analyser. A `"+"` -knappen är tillgänglig i projekt så att du kan lägga till tomma paneler när som helst.
 
@@ -39,7 +39,7 @@ Panelkalendern styr rapporteringsintervallet för tabeller och visualiseringar i
 
 Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering eller paneldropzon åsidosätts panelkalendern.
 
-![](assets/panel-calendar.png)
+![Kalenderfönstret som visar det valda datumintervallet.](assets/panel-calendar.png)
 
 Du kan använda ett datumintervall på minutnivå under de avancerade inställningarna i panelkalendern. Om du rapporterar i ett datumintervall som sträcker sig över många dagar, gäller starttiden den första dagen och sluttiden den sista dagen i intervallet.
 
@@ -51,7 +51,7 @@ Med panelens dropzone kan du använda filter och nedrullningsbara filter på all
 
 Dra och släpp eventuella filter från den vänstra listen i panelens släppzon för att börja filtrera panelen.
 
-![](assets/segment-filter.png)
+![Den vänstra listen visar tillgängliga mått och det mobila kundmåttet som dras till panelens släppzon.](assets/segment-filter.png)
 
 ### Ad hoc-filter
 
@@ -61,7 +61,7 @@ Ad hoc-filter är en typ av snabbfilter och är lokala för projektet. De visas 
 
 Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
-![](assets/adhoc-segment-filter.png)
+![Ad hoc-filter som publiceras och släpps in i släppzonen.](assets/adhoc-segment-filter.png)
 
 ### Statiska nedrullningsbara filter
 
@@ -69,7 +69,7 @@ Med nedrullningsbara filter kan du interagera med data på ett kontrollerat sät
 
 Nedrullningsbara filter kan även användas för att konsolidera flera projekt till ett. Om du t.ex. har många versioner av samma projekt med olika landsfilter kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landsfilter.
 
-![](assets/dropdown-filter-intro.png)
+![Statiska nedrullningsbara filter visar filtret &quot;Direkt&quot; för marknadskanalen markerat. ](assets/dropdown-filter-intro.png)
 
 Så här skapar du ett statiskt nedrullningsbart filter:
 
@@ -79,7 +79,7 @@ Så här skapar du ett statiskt nedrullningsbart filter:
 
 Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
 
-![](assets/create-dropdown.png)
+![Panelfönstret med segmentfältet Mobile Customer tillgängligt för att släppa ett statiskt nedrullningsfilter. ](assets/create-dropdown.png)
 
 Om du högerklickar på ett nedrullningsbart filter finns följande alternativ:
 
@@ -109,7 +109,7 @@ Om du högerklickar på ett dynamiskt nedrullningsbart filter finns samma altern
 
 Ytterligare funktioner för en panel är tillgängliga genom att högerklicka på panelhuvudet.
 
-![](assets/right-click-menu.png)
+![Högerklicka på alternativen för en panelrubrik.](assets/right-click-menu.png)
 
 Följande inställningar är tillgängliga:
 

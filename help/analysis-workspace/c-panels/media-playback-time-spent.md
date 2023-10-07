@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Medieuppspelningstid för 
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Du kan konfigurera panelen Tid för uppspelning av media med följande indatains
 
 ## Standardvy
 
-![Standardvy](assets/mpts_default_view.png)
+![Den tid som mediespelboken har använt för standardvyn.](assets/mpts_default_view.png)
 
 ## Panelutdata {#Output}
 
@@ -65,7 +65,7 @@ Du kan när som helst redigera och återskapa panelen genom att klicka på redig
 
 Om du har valt seriebrytning visas en rad i linjediagrammet och ett sammanfattningsnummer för varje rad:
 
-![mediespelningstid för utdata](assets/mpts_outputs1.png)
+![Medieuppspelningstiden för utdata som visar ett linjediagram och en sammanfattning.](assets/mpts_outputs1.png)
 
 ### Datakälla
 

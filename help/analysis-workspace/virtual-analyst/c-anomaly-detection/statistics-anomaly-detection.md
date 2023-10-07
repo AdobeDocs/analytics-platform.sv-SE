@@ -1,26 +1,26 @@
 ---
-description: Analysupptäckt i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
+description: Anomaldetektering i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 title: Statistiska tekniker som används för avvikelseidentifiering
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 2%
+source-wordcount: '805'
+ht-degree: 1%
 
 ---
 
 # Statistiska tekniker som används för avvikelseidentifiering
 
-Analysupptäckt i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
+Anomaldetektering i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 
-Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för avvikelseidentifiering varje timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
+Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för att upptäcka avvikelser per timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
 
 ## Analysidentifiering för daglig granularitet
 
 För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
 
-Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Algoritmen försöker i synnerhet med följande kombinationer:
+Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
 
 1. ANA (additivt fel, ingen trend, additiv säsongsvariation)
 1. AAA (additivt fel, additiv trend, additiv säsongsvariation)
@@ -55,7 +55,7 @@ När modellen har valts och helger har identifierats i rapportdatumintervallet u
 
 Lägg märke till den dramatiska förbättringen av juldagen och nyårsdagen i följande exempel:
 
-![](assets/anomaly_statistics.png)
+![Två linjediagram som visar prestandaförändringar med och utan semesterprestanda.](assets/anomaly_statistics.png)
 
 ## Analysidentifiering för timgranularitet
 
@@ -67,7 +67,7 @@ Utbildningsfönstren för timtrender är beroende av ett 336-timmars uppslagsfö
 
 Trender för varje vecka och månad visar inte samma trender för varje vecka eller varje dag som finns på en daglig eller timbaserad noggrannhet, vilket innebär att en sådan separat algoritm används. För varje vecka och varje månad används en metod med tvåstegsidentifiering som kallas GESD-test (Generalized Extreme Studentized Deviate). I detta test beaktas det maximala antalet förväntade avvikelser i kombination med den justerade boxrumsmetoden (en icke-parametrisk metod för oulier-upptäckt) för att fastställa det maximala antalet avvikande värden. De två stegen är:
 
-1. Justerad box-plot-funktion: Den här funktionen avgör det maximala antalet avvikelser som anges av indata.
-1. GESD-funktion: Tillämpas på indata med utdata från steg 1.
+1. Justerad box-plot-funktion: Den här funktionen bestämmer det maximala antalet avvikelser som anges med indata.
+1. GESD-funktion: Används på indata med utdata från steg 1.
 
 Avvikelseprocessen för semester och YY-årstidsavvikelsen tar sedan bort förra årets data från årets data och itererar sedan på uppgifterna igen med tvåstegsprocessen ovan för att kontrollera att avvikelserna är säsongsrelaterade. Var och en av dessa datumgranulariteter använder en 15-periodsökning inklusive det valda datumintervallet för rapportering (antingen 15 månader eller 15 veckor) och ett motsvarande datumintervall för 1 år sedan för utbildning.

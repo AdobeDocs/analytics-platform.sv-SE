@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Media Average Minute Audie
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1331'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Du kan konfigurera panelen Media Average Minute Audience med följande indatains
 | Dra ett filter hit (eller någon annan komponent) | Precis som andra paneler filtrerar den här inställningen dina markeringar baserat på de filter du har skapat. Detta är ett bra sätt att se på specifika plattformar, liveströmmar eller andra vanliga mediesegment. |
 | Beräkna mått för | Med den här inställningen kan du välja om du vill se den genomsnittliga minuten-publiken för en viss del av innehållet genom att välja *specifikt innehåll* eller om du vill se den genomsnittliga minuten-publiken för en viss tidsperiod genom att välja *anpassad tidsperiod*. <br></br>Specifikt innehåll fungerar bara om längden har uppdaterats med hjälp av klassificeringar. Om längden inte är tillgänglig, eller om du vill visa den genomsnittliga minuten-publiken för en tidsserie med flera innehållsdelar eller innehåll utan en viss tilldelad varaktighet (som under en liveström eller händelse), bör du välja en anpassad tidsperiod. Den här inställningen ändrar arbetsflödet och rapportutdata. |
 
-### Speciellt innehåll
+### Specifikt innehåll
 
 | Inställning | Beskrivning |
 |---------|------------|
@@ -46,7 +46,7 @@ Du kan konfigurera panelen Media Average Minute Audience med följande indatains
 | Filtrera innehåll efter (valfritt) | Du kan filtrera innehållet beroende på vilken vy du vill ha eller hur data är strukturerade. |
 | Visa, säsong, avsnitt | Om du väljer &quot;Visa, årstid, avsnitt&quot; visas dina tillgängliga program i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa namnet på bildspelet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
 | Anpassad dimension | Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i den nedrullningsbara menyn för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt. |
-| Ingen | Du kan välja *Ingen* om du vill visa alla videonamn som har genomsnittliga minutdata för det valda urvalet. |
+| Ingen | Du kan *Ingen* om du vill visa alla videonamn som har genomsnittliga minutdata för det valda urvalet. |
 
 ### Avancerade inställningar för specifikt innehåll
 
@@ -63,7 +63,7 @@ Du kan konfigurera panelen Media Average Minute Audience med följande indatains
 | Filtrera innehåll efter (valfritt) | Du kan filtrera innehållet beroende på vilken vy du vill ha eller hur data är strukturerade. |
 | Visa, säsong, avsnitt | Markera *Visa, säsong, avsnitt* visar de tillgängliga programmen i listrutan, som du kan filtrera med hjälp av sökning (eller genom att dra och släppa visningsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
 | Anpassad dimension | Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i den nedrullningsbara menyn för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt. |
-| Ingen | Du kan välja *Ingen* om du vill visa alla videonamn under den tidsperiod som du har valt. |
+| Ingen | Du kan *Ingen* om du vill visa alla videonamn under den tidsperiod som du har valt. |
 
 ### Avancerade inställningar för anpassad tidsperiod
 
@@ -82,7 +82,7 @@ Panelen Mediets genomsnittliga minutvolym för målgrupp returnerar följande:
 
 Om du vill redigera och återskapa panelen klickar du på redigeringspennan längst upp till höger.
 
-![Standardvy](assets/specific-content-panel-output.png)
+![Standardvyn på panelen Minsta genomsnittliga målgrupp.](assets/specific-content-panel-output.png)
 
 
 ### Datakälla för specifikt innehåll
@@ -99,7 +99,7 @@ Panelen Mediets genomsnittliga minutmålgrupp returnerar den totala genomsnittli
 
 Om du vill redigera och återskapa panelen klickar du på redigeringspennan längst upp till höger.
 
-![samtidiga visningsprogram](assets/custom-time-period-panel-output.png)
+![Panelen Minut i genomsnitt för målgrupp som visar data för hela markeringen.](assets/custom-time-period-panel-output.png)
 
 ### Datakälla för anpassad tidsperiod
 

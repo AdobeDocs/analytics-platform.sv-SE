@@ -1,12 +1,12 @@
 ---
-description: Exportera ett Analysis Workspace-projekt till en molnplats.
+description: Lär dig hur du exporterar ett Analysis Workspace-projekt till en molnplats.
 keywords: Analysis Workspace
 title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1970'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 
 1. [Få åtkomst till data i molnet](#view-exported-data-and-manifest-file) och [Hantera export i Adobe](/help/components/exports/manage-exports.md)
 
-![Fullständig tabellexportprocess](assets/export-full-table-process.png)
+![Den fullständiga tabellexportprocessen som beskrivs i steg 1 till 4.](assets/export-full-table-process.png)
 
 ## Exportera hela tabeller från Analysis Workspace
 
@@ -57,7 +57,7 @@ Så här exporterar du fullständiga tabeller från Analysis Workspace:
 
 1. Välj [!UICONTROL **Exportera fullständig tabell**].
 
-   ![exportera fullständig tabell](assets/export-full-table.png)
+   ![Listrutan Frihandstabell med Exportera fullständig tabell markerad.](assets/export-full-table.png)
 
 1. I [!UICONTROL **Ny fullständig tabellexport**] anger du följande information:
 

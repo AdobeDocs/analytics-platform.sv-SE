@@ -1,12 +1,12 @@
 ---
-description: Du kan visa avvikelser i en tabell eller i ett linjediagram.
-title: Visa avvikelser i Analysis Workspace
+description: Lär dig hur du visar avvikelser i en tabell eller i ett linjediagram.
+title: Så här visar du avvikelser i Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 2%
+source-wordcount: '477'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Du kan visa avvikelser i en friformstabell i en tidsserie.
 
 1. Klicka utanför inställningsmenyn för att visa den uppdaterade tabellen.
 
-   ![](assets/anomaly_detected.png)
+   ![Ett avvikelsedetekteringsmeddelande som anger 15 % lägre än förväntat.](assets/anomaly_detected.png)
 
 1. Anomalier visas i tabellen enligt följande:
 
@@ -46,7 +46,7 @@ Så här visar du avvikelser i ett linjediagram:
 
 1. Klicka utanför inställningsmenyn för att visa det uppdaterade linjediagrammet.
 
-   ![](assets/anomaly_linechart.png)
+   ![Ett linjediagram med ett felaktigt meddelande som anger 15 % högre än förväntat.](assets/anomaly_linechart.png)
 
    Anomalier visas i linjediagrammet enligt följande:
 

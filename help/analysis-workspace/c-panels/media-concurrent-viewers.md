@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Media Concurrent Viewer i 
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1035'
 ht-degree: 1%
 
 ---
@@ -36,12 +36,12 @@ Du kan konfigurera panelen Medievisningsprogram för samtidig användning med de
 
 ### Standardvy
 
-![Standardvy](assets/concurrent-viewers-default.png)
+![Standardvyn för Media Concurrent Viewer.](assets/concurrent-viewers-default.png)
 
 
 ### Serieuppdelad vy
 
-![serieuppdelad vy](assets/concurrent-viewers-series-breakdown.png)
+![Uppdelningsvyn i Media Concurrent Viewer Series med 7 av 10 dimensioner, segment eller datumintervall.](assets/concurrent-viewers-series-breakdown.png)
 
 ## Panelutdata {#Output}
 
@@ -51,7 +51,7 @@ Du kan när som helst redigera och återskapa panelen genom att klicka på redig
 
 Om du har valt seriebrytning visas en rad i linjediagrammet och ett sammanfattningsnummer för varje rad:
 
-![samtidiga visningsprogram](assets/concurrent-viewers-output.png)
+![Media Concurrent Viewer.](assets/concurrent-viewers-output.png)
 
 ### Datakälla
 
@@ -64,7 +64,7 @@ Det enda mätvärdet som kan användas i den här panelen är samtidiga visnings
 Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan du högerklicka på linjediagrammet och hämta som en CSV-fil.  Serieuppdelningar inkluderas.
 
 
-![samtidiga visningsprogram](assets/concurrent-viewers-download-csv.png)
+![Alternativen för Concurrent viewers output med&quot;Download data as CSV&quot; markerat.](assets/concurrent-viewers-download-csv.png)
 
 ## Vanliga frågor {#FAQ}
 

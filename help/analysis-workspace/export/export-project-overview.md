@@ -1,10 +1,10 @@
 ---
-description: Förstå de olika metoder som är tillgängliga för export från Analysis Workspace.
+description: Förstå vilka metoder som är tillgängliga för export från Analysis Workspace.
 keywords: Analysis Workspace
-title: Översikt över projektdata
+title: Så här exporterar du projektdata
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%

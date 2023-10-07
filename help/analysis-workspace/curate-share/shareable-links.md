@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Skapa delningsbara länkar
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
-source-git-commit: 7889c9e7c55dadfe0966f03365eabc4929a32d7a
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer s
 
 Mer information finns i&quot;Dela ett projekt med någon (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
 
-## Hämta panel- eller visualiseringslänk {#panel-link}
+## Hämta en panel eller visualiseringslänk {#panel-link}
 
 Du kan också dela en länk till en viss del av ett projekt, till exempel en panel eller en enskild visualisering. Detta kallas ibland för koncernintern länkning. Detta kan vara användbart för att dra användarnas uppmärksamhet till viktiga insikter i projektet.
 
@@ -36,7 +36,7 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 
 [Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att locka mottagare till specifika delar av projektet.
 
-![](assets/get-viz-link.png)
+![Listrutan när du högerklickar på rubriken med länken Hämta visualisering markerad.](assets/get-viz-link.png)
 
 ## Använda länkar i en innehållsförteckning {#TOC}
 
@@ -44,4 +44,4 @@ Ett tips för att utnyttja de olika länkalternativen är att alltid ta med en i
 
 [Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) om hur du skapar en innehållsförteckning med hjälp av länkar och arbetsytans redigerare för formaterad text.
 
-![](assets/toc.png)
+![En projektinnehållsförteckning.](assets/toc.png)

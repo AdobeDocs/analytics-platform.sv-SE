@@ -1,12 +1,12 @@
 ---
-description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
-title: Översikt över avvikelseidentifiering
+description: Läs mer om att upptäcka dataavvikelser i Analysis Workspace.
+title: Hur avvikelseidentifiering fungerar
 feature: Anomaly Detection
 exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Exempel på avvikelser du kan undersöka är:
 * Inslag i videobufferthändelser
 * Taggar i låga videobithastigheter
 
-Analysis Workspace avvikelseidentifieringsalgoritm innehåller
+Analysis Workspace avvikelseavkänningsalgoritm innehåller
 
-* Stöd för kornighet varje timme, vecka och månad utöver den befintliga kornigheten.
+* Stöd för kornighet varje timme, vecka och månad, utöver den befintliga kornigheten.
 * Kännedom om säsongsvaraktighet (t.ex. &quot;Black Friday&quot;) och semester.

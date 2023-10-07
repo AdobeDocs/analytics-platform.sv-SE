@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Om du vill visa hur Customer Journey Analytics används kan du använda flera ol
 * Se din användning på tre sätt, som beskrivs närmare nedan:
    * Använd Analysis Workspace för att rapportera om förra månadens händelser.
    * Använd Report Builder för att rapportera händelser förra månaden.
-   * Använd Customer Journey Analytics API för att skapa en automatiserad rapport.
+   * Använd Customer Journey Analytics-API:t för att skapa en automatiserad rapport.
 
 Så här hanterar du användningen av Customer Journey Analytics:
 
@@ -41,7 +41,7 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 1. Lägg till **[!UICONTROL Records of event data available]** för varje anslutning som din organisation har skapat. (Beroende på storleken på anslutningen kan det ta en stund innan numret visas.)
 
-   ![händelsedata](./assets/event-data.png)
+   ![Tillgängliga poster med händelsedata.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -70,7 +70,7 @@ Med den här metoden kan du göra en djupare analys av dina användningsdata och
 
 1. Skapa nya projekt baserat på varje datavy i arbetsytan och dra in alla händelser (från **[!UICONTROL Metrics]** nedrullningsbar lista) fram till den första fredagen i månaden, med början den första dagen i ditt nuvarande Customer Journey Analytics-kontrakt.
 
-   ![Händelser](./assets/events-usage.png)
+   ![Frihandsregister med händelser.](./assets/events-usage.png)
 
    Då får du en bra uppfattning om hur din användning går från månad till månad.
 
@@ -78,7 +78,7 @@ Med den här metoden kan du göra en djupare analys av dina användningsdata och
 
 ## Skapa ett datablock i Report Builder {#arb}
 
-I Report Builder [skapa ett datablock](/help/report-builder/create-a-data-block.md) för varje datavy och sedan summera dem.
+I REPORT BUILDER [skapa ett datablock](/help/report-builder/create-a-data-block.md) för varje datavy och sedan summera dem.
 
 ## Skapa en automatiserad rapport i Customer Journey Analytics API {#api-report}
 

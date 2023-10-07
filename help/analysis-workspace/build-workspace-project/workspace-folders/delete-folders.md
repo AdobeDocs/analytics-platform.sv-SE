@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Ta bort mappar i arbetsytan
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
-source-git-commit: 981dd31ef669251fd00b834afeafb5e396aa32da
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '122'
 ht-degree: 1%
 
 ---
@@ -23,13 +23,13 @@ Du kan ta bort mappar som du skapar.
 
 Så här tar du bort mappar i arbetsytan
 
-1. Klicka på **...** ellipsikonen i det övre högra hörnet.
+1. Klicka på **...** ellipsikonen längst upp till höger.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
+   ![Alternativen för ellipsikonen i listrutan.](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
 
 2. Välj **Ta bort mapp**.
 
    Ett bekräftelsemeddelande anger att mappen har tagits bort.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
+   ![Bekräftelsepopup för borttagningsmappen.](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
 

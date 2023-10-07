@@ -3,9 +3,9 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta Customer Journey Analytics-data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Det finns även andra metoder för att exportera data från Customer Journey Ana
 
      Välj det här alternativet om du vill att den hämtade filen ska vara oformaterad.
 
-   ![](assets/download-project.png)
+   ![Listrutan Projekt där alternativen Hämta CSV och Hämta PDF är markerade.](assets/download-project.png)
 
 1. (Villkorligt) Om du väljer att hämta ett PDF visas ett meddelande när projektet är klart att hämtas. Välj [!UICONTROL **Ladda ned**].
 
@@ -51,7 +51,7 @@ Högerklicksalternativet **[!UICONTROL Copy to clipboard]** Med kan du snabbt ko
 >Du kan använda snabbtangenten `Ctrl+C` för att kopiera markeringen till Urklipp och sedan använda `Ctrl+V` för att klistra in den i ett verktyg från tredje part.
 
 
-![](assets/copy-selection.png)
+![Alternativet Kopiera markering till Urklipp. ](assets/copy-selection.png)
 
 ## Hämta som CSV {#download-data}
 
@@ -66,7 +66,7 @@ Högerklicksalternativet **[!UICONTROL Download data as CSV]** Med kan du hämta
 
 * Högerklicka i en tabell och välj **[!UICONTROL Download selection as CSV]**. Endast markeringen laddas ned med det här alternativet, i motsats till den fullständiga tabellen som visas.
 
-![](assets/download-data-viz.png)
+![Alternativet Hämta data som CSV.](assets/download-data-viz.png)
 
 ## Hämta objekt som CSV {#download-items}
 
@@ -78,7 +78,7 @@ Om du vill analysera mer än de 400 synliga dataraderna i en tabell högerklicka
 
 Du kan utföra flera uppgifter samtidigt i projektet och till och med navigera till ett nytt Workspace-projekt på samma flik medan hämtningen pågår. Hämtningen pausas om du öppnar en ny flik i webbläsaren. Hämtningen avbryts om du lämnar arbetsytan helt eller stänger webbläsarfliken.
 
-![](assets/download-items.png)
+![Alternativet Hämta objekt som CSV (sida).](assets/download-items.png)
 
 ### Nedladdad objektfil {#items-file}
 
@@ -90,7 +90,7 @@ Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följan
 
 I exemplet ovan hämtas sidobjekt med panelfiltret (kunder med nya besökare) och komponenterna ovan (marknadsföringskanal = e-post) tillämpade som filter, och komponenterna nedan (mobilenhetstyp) tas bort från den hämtade CSV-filen.
 
-![](assets/downloaded-file.png)
+![Den hämtade CSV-filen som öppnas i Excel.](assets/downloaded-file.png)
 
 ### Hämta meddelanden {#notifications}
 
@@ -100,7 +100,7 @@ När filen är klar visas ett meddelande om att den är klar och filen hämtas t
 
 Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning kommer att ställas i kö tills den tidigare nedladdningen är klar.
 
-![](assets/toast.png)
+![Statusmeddelandet för nedladdningen visar hur många procent som har slutförts och en länk för att avbryta nedladdningen.](assets/toast.png)
 
 ## Hämta känsliga data {#sensitive}
 

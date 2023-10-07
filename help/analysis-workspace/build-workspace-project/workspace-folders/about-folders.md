@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Översikt över mappar
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Med hjälp av mappar i arbetsytan kan du ordna och kategorisera dina projekt så
 
 När du har en lång lista med projekt kan det vara svårt att navigera till ett visst projekt. Med mappfunktionen kan du skapa mappar och undermappar för att hantera dina projekt, vilket gör det enklare att hitta projekt när du behöver dem.
 
-Det finns två typer av mappar i Workspace: företagsmappen och personliga mappar.
+Det finns två typer av mappar i Workspace: mappen Company och personliga mappar.
 
 När du loggar in på arbetsytan visas en lista över dina projekt tillsammans med företagsmappen och eventuella personliga mappar som du har skapat på startsidan för projekt.
 
-![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Projektstartsida med en lista över dina projekt och företagsmappen.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
-## Om företagsmappen {#company-folder}
+## Om mappen Company {#company-folder}
 
 Företagsmappen är en delad åtkomstmapp för projekt som administratörer kan dela med alla användare.
 
@@ -36,17 +36,17 @@ När en användare loggar in på Workspace läggs företagsmappen automatiskt ti
 
 ### Administratörsalternativ {#admin-options}
 
-Administratörer har särskilda behörigheter tilldelade till mappen Company. Endast administratörer kan till exempel lägga till eller ta bort mappar eller projekt i företagsmappen. Användare utan administratörsåtkomst kan visa innehållet i företagsmappen.
+Administratörer har särskilda behörigheter tilldelade till mappen Company. Endast administratörer kan till exempel lägga till eller ta bort mappar eller projekt i företagsmappen. Användare utan administratörsåtkomst kan visa innehållet i mappen Company.
 
-![](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![Sidan Projekt som visar administratörsalternativen.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 Icke-administratörer har begränsade alternativ.
 
-![](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![På sidan Projekt visas alternativ som inte är administratörer för mappar.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### Riktlinjer för företagsmapp {#company-folder-guidelines}
 
-- Administratörer kan lägga till projekt i företagsmappen eller skapa ett nytt projekt och spara det i företagsmappen. Icke-administratörer kan visa innehållet i mappen Company.
+- Administratörer kan lägga till projekt i mappen Company eller skapa ett nytt projekt och spara det i mappen Company. Icke-administratörer kan visa innehållet i mappen Company.
 
 - Administratörer kan skapa undermappar i mappen Company.
 

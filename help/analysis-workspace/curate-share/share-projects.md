@@ -4,9 +4,9 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: bf700355597760b36441864de36f460b5996a1fe
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1881'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Så här delar du en specifik projektroll med användare eller grupper i organis
 1. Gå till projektet som du vill dela och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
 
-   ![](assets/share-proj-modal.png)
+   ![Dela projektfönstret.](assets/share-proj-modal.png)
 
    Mer information om hur du delar flera projekt samtidigt finns i [Dela projekt i projektledaren](#share-projects-in-the-project-manager).
 
@@ -69,7 +69,7 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    **Redigera original:** Mottagarna kan **[!UICONTROL Save]** ändringar i ett projekt och fungerar som medägare. Den här rollen är användbar om du vill samhantera ett projekt med andra kollegor. Detta inkluderar redigering, borttagning och ändring av mottagarlistor för ett delat projekt. <br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen.
 
-   **Redigera kopia:** Mottagarna kan **[!UICONTROL Save as]** och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt projekt ska ändras.
+   **Redigera kopia:** Mottagarna kan **[!UICONTROL Save as]** och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men du inte vill att ditt projekt ska ändras.
 
    **Skrivskyddad:** Mottagarna kan inte **[!UICONTROL Save]** eller **[!UICONTROL Save as]** och inte har tillgång till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö. Läs mer om [Skrivskyddad projekterfarenhet](/help/analysis-workspace/curate-share/view-only-projects.md).
 
@@ -99,7 +99,7 @@ Så här delar du projektlänken med användare i din organisation:
 
 1. Välj **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]** väljer **[!UICONTROL Copy]** bredvid **[!UICONTROL Share by link]** fält.
 
-   ![](assets/share-proj-modal.png)
+   ![Dela-projektet markerar fältet Dela efter länk.](assets/share-proj-modal.png)
 
 1. Dela länken med användare i organisationen. Du kan till exempel klistra in den i ett e-postmeddelande, på en intern webbplats och så vidare.
 
@@ -183,7 +183,7 @@ När du har valt Projekt A och B läggs mottagarna 4 och 7 till i resurslistorna
 * Projekt A: 1, 2, 3, 4, 7
 * Projekt B: 4, 5, 6, 7
 
-![](assets/mult-proj-sharing.png)
+![Fönstret Lägg till mottagare i flera projekt.](assets/mult-proj-sharing.png)
 
 ## Dela inbäddade komponenter
 

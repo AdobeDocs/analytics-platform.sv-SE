@@ -4,9 +4,9 @@ title: Spara projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Så här sparar du ett projekt manuellt:
 
    | Åtgärd | Beskrivning |
    |---|---| 
-   | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en beskrivning (valfritt) och lägga till (valfria) taggar. |
+   | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en (valfri) beskrivning och lägga till (valfria) taggar. |
    | **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningarna lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
    | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
    | **[!UICONTROL Save as template]** | Spara projektet som en [egen mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
@@ -44,12 +44,12 @@ Alla projekt i Analysis Workspace sparas automatiskt varannan minut på din dato
 
    1. Gå till [!UICONTROL **Återskapade projekt**] på Analysis Workspace landningssida.
 
-      ![](assets/recovered-folder.png)
+      ![En lista med mappar där mappen Återskapat projekt markeras.](assets/recovered-folder.png)
 
    1. Öppna projektet och spara det där du vill.
 
 
-* **Befintliga projekt:** Om du av någon anledning lämnar ett projekt med ändringar som ännu inte har sparats automatiskt uppmanas du att spara ändringarna eller ett varningsmeddelande visas.
+* **Befintliga projekt** Om du av någon anledning lämnar ett projekt med ändringar som ännu inte har sparats automatiskt uppmanas du att spara ändringarna eller ett varningsmeddelande visas.
 
   Här följer några vanliga scenarier:
 
@@ -59,17 +59,17 @@ Om du öppnar ytterligare ett projekt medan du arbetar med ett projekt som inneh
 
 Följande alternativ är tillgängliga:
 
-* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av projektet med dina senaste ändringar.
+* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av ditt projekt med dina senaste ändringar.
 * **Spara som:** Sparar de senaste ändringarna som ett nytt projekt. Det ursprungliga projektet sparas endast med de senaste automatiskt sparade ändringarna.
 * **Ignorera ändringar:** Ignorera de senaste ändringarna. De senaste automatiskt sparade ändringarna sparas i projektet.
 
-![](assets/existing-save.png)
+![Klicka på Spara för att spara ändringar i ett projekt.](assets/existing-save.png)
 
 ### Navigera bort eller stänga en flik
 
 Om du navigerar bort från sidan eller stänger webbläsarfliken när du visar ett projekt med ändringar som ännu inte har sparats automatiskt, visas en varning i webbläsaren om att ändringar som inte har sparats går förlorade. Du kan välja att avbryta eller avbryta.
 
-![](assets/browser-image.png)
+![Klicka på Lämna om du vill lämna webbplatsen eller på Avbryt om du vill navigera utan att spara ändringarna. ](assets/browser-image.png)
 
 ### Webbläsaren kraschar eller sessionstider ut
 
@@ -81,19 +81,19 @@ Välj **Ja** om du vill återställa projektet från den senaste automatiskt spa
 
 Välj **Nej** om du vill ta bort den automatiskt sparade kopian och öppna den senast sparade versionen av projektet.
 
-![](assets/project-recovery.png)
+![Dialogrutan Projektåterställning.](assets/project-recovery.png)
 
 För **new** projekt som aldrig har sparats går inte att återställa ändringar som inte har sparats.
 
 ## Öppna föregående version {#previous-version}
 
-Så här öppnar du en tidigare version av ett projekt:
+Öppna en tidigare version av ett projekt:
 
 1. Gå till **[!UICONTROL Project]** > **[!UICONTROL Open previous version]**
 
-   ![](assets/previous-versions.png)
+   ![Listan med tidigare sparade projektversioner och alternativen för att visa alla versioner eller Endast versioner med anteckningar.](assets/previous-versions.png)
 
 1. Granska listan över tidigare versioner.
-   [!UICONTROL Timestamp] och [!UICONTROL Editor] visas utöver [!UICONTROL Notes] om de lades till när [!UICONTROL Editor] sparad. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
+   [!UICONTROL Timestamp] och [!UICONTROL Editor] visas utöver [!UICONTROL Notes] om de lades till när [!UICONTROL Editor] sparad. Versioner utan anteckningar lagras i 90 dagar. Versioner med anteckningar sparas i 1 år.
 1. Välj en tidigare version och klicka på **[!UICONTROL Load]**.
 Den föregående versionen läses sedan in med ett meddelande. Den tidigare versionen blir inte den aktuella sparade versionen av projektet förrän du klickar på **[!UICONTROL Save]**. Om du navigerar bort från den inlästa versionen visas den senast sparade versionen av projektet när du kommer tillbaka.

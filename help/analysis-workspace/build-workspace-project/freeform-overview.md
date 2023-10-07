@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Projektöversikt
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 3%
+source-wordcount: '1364'
+ht-degree: 2%
 
 ---
 
@@ -17,9 +17,9 @@ Med arbetsyteprojekt kan du kombinera datakomponenter, tabeller och visualiserin
 
 ## Projektlista {#project-list}
 
-När du först besöker **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** visas alla projekt som du äger eller har delat med dig. Detta är också landningssidan för Adobe Analytics, såvida du inte tidigare har angett en anpassad landningssida.
+När du först besöker **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** visas alla projekt du äger eller projekt som delas med dig. Detta är också landningssidan för Adobe Analytics, såvida du inte tidigare har angett en anpassad landningssida.
 
-![](assets/sample-project.png)
+![Projektets landningssida med projektlistan.](assets/sample-project.png)
 
 Sidan Projekt innehåller följande information:
 
@@ -55,7 +55,7 @@ Sidan Projekt innehåller följande information:
 
 I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga till komponenter, söka efter hjälp och mycket mer. Alla menyalternativ kan också nås via tangentbordet [genvägar](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![](assets/menu.png)
+![Nya projektalternativ, bland annat alternativen Projekt, Redigera, Infoga, Komponenter, Dela och Hjälp.](assets/menu.png)
 
 | Menyalternativ | Beskrivning |
 |---|---|
@@ -71,7 +71,7 @@ I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga
 
 **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** innehåller information på projektnivå om det aktiva projektet.
 
-![](assets/projectinfo.png)
+![Fönstret Projektinformation och inställningar.](assets/projectinfo.png)
 
 Inställningarna inkluderar:
 
@@ -94,7 +94,7 @@ Du kan även komma åt visualiseringar och paneler via [Tom panel](/help/analysi
 
 Komponenter (Dimensioner, Metrisk, Filter, Datumintervall) i den vänstra listen relaterar till den aktiva panelens datavy. Den aktiva panelen kommer att ha en blå ram runt sig och den aktiva datavyn kommer att visas högst upp i komponentspåret.
 
-![](assets/left-rail.png)
+![Komponenter som relaterar till den aktiva paneldatavyn för datavyn för branschövergripande demodata.](assets/left-rail.png)
 
 ## Projektarbetsyta {#canvas}
 
@@ -104,15 +104,15 @@ Paneler är användbara när du vill ordna dina projekt efter tidsperioder, data
 
 Beroende på vilken startpunkt du väljer för dina projekt har du antingen en [frihandsritbord](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) på arbetsytan till att börja med. Det snabbaste sättet att börja analysera är att markera en eller flera komponenter och helt enkelt dra och släppa dem på arbetsytan i projektet. En datatabell återges automatiskt åt dig. [Läs mer](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) om de olika alternativen för att skapa en tabell eller utnyttja [självstudiekurs](/help/analysis-workspace/home.md) för mer vägledning om hur du skapar ditt första projekt.
 
-![](assets/canvas.png)
+![En friformstabell för projektet.](assets/canvas.png)
 
 ## Projektledare {#manager}
 
-Analysis Workspace-projekt kan hanteras under **Analytics > Components > Projects**. Projekthanteraren visar de objekt som en viss användare har skapat. Projektägarskap kan överföras till en ny användare under Admin > Analytics Users &amp; Assets > Transfer Assets.
+Analysis Workspace-projekt kan hanteras under **Analytics > Components > Projects**. Projekthanteraren visar de objekt som en viss användare har skapat. Du kan överföra projektägarskap till en ny användare under Admin > Analytics Users &amp; Assets > Transfer Assets.
 
 I Projects Manager kan du lägga till, tagga, dela, duplicera/kopiera och mycket mer. Sök efter ett projekt i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, ägare, projekttyp med mera.
 
-![](assets/project-manager.png)
+![Sökfält för Project Manager-taggar och rubrikfält.](assets/project-manager.png)
 
 Följande är vanliga åtgärder i Projects Manager och kan utföras på ett eller flera projekt samtidigt:
 

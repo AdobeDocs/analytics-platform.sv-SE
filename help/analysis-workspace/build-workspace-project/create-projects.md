@@ -1,19 +1,19 @@
 ---
-description: Lär dig hur du skapar ett projekt i Analysis Workspace
+description: Lär dig skapa ett projekt i Analysis Workspace
 title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
-exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
-source-git-commit: c52dd6d8a22d2092f5f70aeb79d24ecf897e012e
+exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
 # Skapa projekt
 
-[Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan ni visa affärskritiska analyser som kan delas med intressenter inom eller utanför organisationen.
+[Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan ni visa affärskritiska analyser som kan delas med intressenter både inom och utanför organisationen.
 
 Allmän information om hur du kommer igång med Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).
 
@@ -21,7 +21,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
 ## Börja skapa ett projekt
 
-1. I Adobe Analytics väljer du [!UICONTROL **Arbetsyta**].
+1. I Adobe Analytics: [!UICONTROL **Arbetsyta**].
 
 1. På [!UICONTROL **Arbetsyta**] väljer du [!UICONTROL **Projekt**] på sidans vänstra sida och sedan väljer [!UICONTROL **Skapa projekt**].
 
@@ -36,15 +36,15 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
 ## Lägga till paneler i projektet {#panels}
 
-[Paneler](/help/analysis-workspace/c-panels/panels.md) är grunden till alla projekt i Analysis Workspace. Paneler används för att ordna innehållet (visualiseringar och komponenter) i ett projekt.
+[Panel](/help/analysis-workspace/c-panels/panels.md) är grunden till alla projekt i Analysis Workspace. Paneler används för att ordna innehållet (visualiseringar och komponenter) i ett projekt.
 
 Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna.
 
 Så här lägger du till en panel:
 
-1. Välj [!UICONTROL **Paneler**] ikonen i den vänstra listen.
+1. Välj [!UICONTROL **Panel**] ikonen i den vänstra listen.
 
-   ![](assets/build-panels.png)
+   ![Ikonen Välj paneler och listan över tillgängliga paneler.](assets/build-panels.png)
 
 1. Sök efter panelen som du vill lägga till. När den visas i den vänstra listen drar du den till ditt projekt.
 
@@ -60,11 +60,11 @@ Så här lägger du till en panel:
 >
 >Frihandstabeller är den vanligaste typen av visualisering och är grunden för interaktiv dataanalys. Mer information om hur du arbetar med frihandstabeller i Analysis Workspace finns i [Frihandsregister](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 
-Så här lägger du till en visualisering:
+Lägga till en visualisering:
 
 1. Välj **[!UICONTROL Visualizations]** ikonen i den vänstra listen.
 
-   ![](assets/build-visualizations.png)
+   ![Den valda visualiseringsikonen och listan över tillgängliga visualiseringar.](assets/build-visualizations.png)
 
 1. Sök efter den visualisering som du vill lägga till. När den visas i den vänstra listen drar du den till en panel i projektet.
 
@@ -82,7 +82,7 @@ Så här lägger du till en komponent:
 
 1. Välj **[!UICONTROL Components]** ikonen i den vänstra listen.
 
-   ![](assets/build-components.png)
+   ![Ikonen för valda komponenter och listan med tillgängliga dimensioner.](assets/build-components.png)
 
 1. Sök efter komponenten som du vill lägga till. När den visas i den vänstra listen drar du den till en panel eller visualisering i projektet.
 
@@ -92,4 +92,4 @@ Så här lägger du till en komponent:
 
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
-När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
+När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Mer information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).

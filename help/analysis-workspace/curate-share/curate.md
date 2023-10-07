@@ -4,16 +4,16 @@ keywords: Analysis Workspace kurser
 title: Kuratprojekt
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
 
 # Kuratprojekt
 
-Med kurering kan du begränsa komponenterna (mått, mått, filter, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderas innan du delar ett projekt.
+Med kurering kan du begränsa komponenterna (mått, mått, filter, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderat steg innan du delar ett projekt.
 
 >[!NOTE]
 > Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Curation är ett sekundärt filter.
@@ -27,15 +27,15 @@ De komponenter som används i projektet läggs automatiskt till.
 
 Du kan också använda Kurva från [!UICONTROL Share] genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
-![](assets/curation-field.png)
+![Fönstret Kuratkomponenter visar de komponenter som används i projektet.](assets/curation-field.png)
 
 ## Kuraterad projektvy
 
 När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av komponenter som du har definierat:
 
-![](assets/curate-project.png)
+![Ett delat kuraterat projekt med komponenter som du har definierat.](assets/curate-project.png)
 
-## Ta bort projekturval
+## Ta bort projektstrukturering
 
 Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra listen:
 

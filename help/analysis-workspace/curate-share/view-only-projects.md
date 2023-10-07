@@ -4,9 +4,9 @@ keywords: Visa endast  projekt
 title: Visa endast  projekt
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '249'
 ht-degree: 3%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 3%
 
 Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
-![](assets/view-only-project.png)
+![Ett projekt som bara är tillgängligt för visning.](assets/view-only-project.png)
 
 ## Inaktiverade interaktioner
 
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dolt vänster spår
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till en [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i en [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
-* Frihand # av synliga rader
+* Frihandsnr för synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering
 * Panelfilter
 * Redigera, Infoga och Komponentmenyer
@@ -34,7 +34,7 @@ Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 Några av de mer välkända interaktionerna i ett projekt med endast visning är:
 
-| Yta | Aktiverade interaktioner |
+| Område | Aktiverade interaktioner |
 | --- | --- |
 | Frihandsregister | <ul><li>Sidindelning och sortering</li><li>Hovring</li><li>Cellmarkeringar som uppdaterar länkade visualiseringar</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Högerklicka > Kopiera till Urklipp</li></ul> |
 | Visualiseringar | <ul><li>Klicka för att aktivera/inaktivera förklaring</li><li>Hovring</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Komprimera/expandera</li><li>Flöde - expandera flödesnoder</li><li>Karta - zoom</li></ul> |
