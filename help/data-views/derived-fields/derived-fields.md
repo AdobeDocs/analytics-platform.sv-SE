@@ -3,14 +3,13 @@ title: Härledda fält
 description: Ett härlett fält anger ändringar av schemafält och/eller standardkomponenter för rapporttid genom en uppsättning tillgängliga funktioner och funktionsmallar.
 solution: Customer Journey Analytics
 feature: Derived Fields
-exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f1935947fe0273e5cdd5752ab7a9c871b02c990d
+exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
 workflow-type: tm+mt
-source-wordcount: '4836'
+source-wordcount: '5185'
 ht-degree: 4%
 
 ---
-
 
 # Härledda fält
 
@@ -62,7 +61,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 | A | **Regelnamn** | Regelnamnet är som standard **Regel X** (X refererar till ett sekvensnummer). Om du vill redigera namnet på en regel markerar du dess namn och skriver in det nya namnet, till exempel `Query Parameter`. |
 | B | **Funktionsnamn** | Det valda funktionsnamnet för regeln, till exempel [!UICONTROL URL PARSE]. När funktionen är den sista i funktionssekvensen och fastställer de slutliga utdatavärdena följs funktionsnamnet av [!UICONTROL - FINAL OUTPUT], till exempel [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>Om du vill visa ett popup-fönster med mer information om funktionen väljer du ![Hjälpikon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Regelbeskrivning** | Du kan också lägga till en beskrivning till en regel.<br/>Välj ![Mer-ikon](assets/More.svg)väljer **[!UICONTROL ** Lägg till beskrivning **]** för att lägga till en beskrivning eller **[!UICONTROL ** Redigera beskrivning **]** om du vill redigera en befintlig beskrivning.<br/>Använd redigeraren för att ange en beskrivning. Du kan använda verktygsfältet för att formatera texten (med formatväljare, fet, kursiv, understrykning, höger, vänster, centrerad, färg, nummerlista, punktlista) och lägga till länkar till extern information. <br/>Klicka utanför redigeraren för att slutföra redigeringen av beskrivningen. |
-| D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Listrutan för [!UICONTROL Field] eller [!UICONTROL Value] visar alla kategorier av fält (regler, standardfält, fält) som är tillgängliga, baserat på den typ av indata som funktionen förväntar sig. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
+| D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Listrutan för [!UICONTROL Field] eller [!UICONTROL Value] visar alla kategorier av fält (regler, standardfält, fält) som är tillgängliga, baserat på den typ av indata som funktionen förväntar sig. Du kan också dra och släppa ett fält från väljaren för schema- och standardfält till ett fält eller ett värde. När det dragna fältet kommer från en uppslagsuppsättning infogas en uppslagsfunktion automatiskt före den funktion som du definierar. <br/>Se [Funktionsreferens](#function-reference) Detaljerad information om varje funktion som stöds. |
 
 {style="table-layout:auto"}
 
@@ -482,7 +481,7 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 
 Du definierar en `Hotel Name` härlett fält. Du använder [!UICONTROL CLASSIFY] funktion som definierar en regel där du kan klassificera värden för [!UICONTROL Hotel ID] och ersätt med nya värden.
 
-Om du vill inkludera originalvärden som du inte har definierat som en del av värdena som ska klassificeras (till exempel Hotel-ID AMS789) måste du markera **[!UICONTROL Show original values]**. Detta garanterar att AMS789 blir en del av utdata för det härledda fältet, trots att det värdet inte klassificeras.
+Om du vill inkludera originalvärden som du inte har definierat som en del av värdena som ska klassificeras (till exempel Hotel-ID AMS789) måste du markera **[!UICONTROL Show original values]**. Detta garanterar att AMS789 är en del av utdata för det härledda fältet, trots att det värdet inte klassificeras.
 
 ![Skärmbild av klassificeringsregel 1](assets/classify-1.png)
 
@@ -694,55 +693,54 @@ Du definierar en `Email Marketing (updated)` härlett fält. Du använder [!UICO
 +++
 
 
-<!-- LOOKUP
+<!-- LOOKUP -->
 
-### Lookup
+### Sök
 
-Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+Sök efter värden med hjälp av ett fält från en uppslagsdatauppsättning och returnerar ett värde i ett nytt härlett fält eller för vidare regelbearbetning.
 
-+++ Details
++++ Information
 
-## Specification {#lookup-io}
+## Specifikation {#lookup-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Datauppsättning</li></ul><li>[!UICONTROL Matching key]<ul><li>Regler</li><li>Fält</li></ul></li><li>Värden som ska returneras<ul><li>Regler</li><li>Fält</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>3 funktioner per härlett fält</p> | <p>Nytt härlett fält eller värde för vidare bearbetning i nästa regel</p> |
 
 {style="table-layout:auto"}
 
-## Use case {#lookup-uc}
+## Använd skiftläge {#lookup-uc}
 
-You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+Du vill söka efter aktivitetsnamnet med aktivitets-ID som samlats in när kunderna klickade på en anpassad banderoll som visas via Adobe Target. Du vill använda en uppslagsdatauppsättning med A4T-aktiviteter (Analytics for Target) som innehåller aktivitets-ID och aktivitetsnamn.
 
-### A4T lookup dataset {#lookup-uc-lookup}
+### A4T-datauppsättning för sökning {#lookup-uc-lookup}
 
-| Activity Id | Activity Name |
+| Aktivitets-ID | Aktivitetsnamn |
 |---|---|
-| 415851 | MVT Test Category Pages |
-| 415852 | Luma - Campaign Max 2022 |
-| 402922 | Home Page Banners |
+| 415851 | Kategorisidor för MVT-provning |
+| 415852 | Luma - kampanj max 2022 |
+| 402922 | Banderoller på startsidan |
 
 {style="table-layout:auto"}
 
-### Derived field {#lookup-uc-derivedfield}
+### Härlett fält {#lookup-uc-derivedfield}
 
-You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+Du definierar en `Activity Name` härlett fält. Du använder [!UICONTROL LOOKUP] -funktion för att definiera en regel för att söka efter värdet från dina insamlade data, som anges i [!UICONTROL Field to apply lookup] fält (till exempel **[!DNL ActivityIdentifier]**). Du väljer uppslagsdatauppsättning på menyn [!UICONTROL Lookup dataset] list (till exempel **[!DNL New CJA4T Activities]**). Sedan markerar du identifierarfältet (till exempel **[!DNL ActivityIdentifier]**) från [!UICONTROL Matching key] listan och fältet som ska returneras från [!UICONTROL Values to return] list (till exempel **[!DNL ActivityName]**).
 
-![Screenshot of the Lowercase rule](assets/lookup.png)
+![Skärmbild av regeln Gemener](assets/lookup.png)
 
-## More info
+## Mer info
 
-You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+Du kan snabbt infoga en [!UICONTROL Lookup] funktionen i regelbyggaren som redan innehåller en eller flera andra funktioner.
 
-  1. Select **[!UICONTROL Schema fields]** from selector.
-  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
-  1. Select your lookup dataset and find the field you want to use for lookup.
-  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
-     ![Lookup drag](assets/lookup-drag.png) 
+1. Välj **[!UICONTROL Schema fields]** från väljare.
+1. Välj ![Ikon för schemafält](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
+1. Välj din uppslagsdatauppsättning och sök efter det fält som du vill använda för sökning.
+1. Dra och släpp sökfältet på något av de tillgängliga inmatningsfälten för en funktion (till exempel Skiftläge). Om det är giltigt, en blå ruta med etiketten **[!UICONTROL + Add]**kan du släppa fältet och automatiskt infoga en sökfunktion innan funktionen som du släppte sökfältet på. Den infogade uppslagsfunktionen fylls automatiskt i med relevanta värden för alla fält.
+   ![Söka efter dragning](assets/lookup-drag.png)
 
 +++
 
--->
 
 <!-- LOWERCASE -->
 
@@ -951,7 +949,7 @@ Du kan använda dessa sekvenser i [!UICONTROL Output format] hur många gånger 
 | `$&` | Visar det som matchade hela uttrycket. |
 | `$n` | Matchar det n:te underuttrycket. Till exempel: `$1` returnerar det första underuttrycket. |
 | ``$` `` | Texten skapas mellan slutet av den senaste matchningen (eller början av texten om ingen tidigare matchning hittades) och början av den aktuella matchningen. |
-| `$+` | Matchar det senast markerade deluttrycket i det reguljära uttrycket. |
+| `$+` | Matchar det senast markerade underuttrycket i det reguljära uttrycket. |
 | `$$` | Visar strängtecknet `"$"`. |
 
 {style="table-layout:auto"}
@@ -1069,7 +1067,7 @@ Beskär tomt utrymme, specialtecken eller antal tecken från början eller slute
 
 ## Användningsfall 1 {#trim-uc1}
 
-Du samlar in produktdata, men data innehåller dolda blankstegstecken som fragmentrapporterar. Du vill enkelt trimma bort överflödigt tomt utrymme
+Du samlar in produktdata, men data innehåller dolda blankstegstecken som fragmentrapportering. Du vill enkelt trimma bort överflödiga blanksteg
 
 ### Data före {#trim-uc1-databefore}
 
@@ -1097,7 +1095,7 @@ Du skapar en `Product Identifier` härlett fält. Du använder [!UICONTROL TRIM]
 
 ## Användningsfall 2 {#trim-uc2}
 
-De data på sidnamn som samlas in innehåller några felaktiga specialtecken i slutet av sidnamnet som måste tas bort.
+De data på sidnamn som samlas in innehåller vissa felaktiga specialtecken i slutet av sidnamnet som måste tas bort.
 
 ### Data före {#trim-uc2-databefore}
 
@@ -1259,4 +1257,3 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 - [Making the Most Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
 - [Exempel för härledda fält för Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
-

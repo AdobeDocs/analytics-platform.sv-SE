@@ -4,13 +4,13 @@ description: Lär dig hur du felsöker problem som beror på bristande behörigh
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
-source-git-commit: 1905e37b76843a7622af4e874a2d74aceff55384
+exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
+source-git-commit: 72d42123a3c9463514ada584530ad959e99d5c94
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
-
 
 # Brist på behörigheter
 
@@ -21,7 +21,7 @@ Efter att du skapat en [Anslutning](../connections/overview.md) och [Datavy](../
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL Something went wrong and we couldn't load schema fields. Please try again.]*
+*[!UICONTROL Something went wrong retrieving DULE policies. Please verify account permissions, policies, or labels. Message: Forbidden.]*
 
 >[!ENDSHADEBOX]
 
@@ -41,5 +41,3 @@ För att åtgärda det här felet måste du ha system- eller produktadministrat�
 1. Säkerställ **[!UICONTROL Manage Data Usage Policies]** och **[!UICONTROL View Data Usage Policies]** läggs till i **[!UICONTROL Data Governance]** behållare.
 
 1. Välj **[!UICONTROL Save]** för att spara ändringarna.
-
-

@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2642'
 ht-degree: 4%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Oktober 2023** | |
+| Funktioner för ytterligare härledda fält | Uppdaterad dokumentation för den nya [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) funktion. |
 | **September 2023** | |
 | Uppdaterad struktur för artiklar för panelen Medieuppspelningstid för spenderad tid | Mappen Media Playback Time Spent har tagits bort och innehållet i mappen har kombinerats till en enda artikel: [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Den här ändringen är mer i linje med dokumentationen för andra paneler.</p> |
 | Funktioner för ytterligare härledda fält | Uppdaterad dokumentation för den nya [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) och [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) funktioner och ytterligare CSV-funktioner som lagts till i [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) funktion. |
