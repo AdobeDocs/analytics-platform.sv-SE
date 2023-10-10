@@ -3,9 +3,9 @@ description: Med verktyget Beräknade mätvärden kan vem som helst skapa ett de
 title: Deltagandemått
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: d55df4ea2086278a243af51b698a9822a9a04e04
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Den här typen av information kan vara användbar för alla innehållsägare.
 
 >[!NOTE]
 >
->Du kan aktivera deltagandemått i Admin Tools, men bara för anpassade händelser 1-100.
+>Mätvärden med andra attribueringsmodeller, som Deltagande, kan också skapas av administratörer som en del av en [datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html). I exemplet nedan visas hur de kan skapas av alla användare som har tillgång till verktyget för beräknade mätvärden i Workspace.
 
 1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mätvärden](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 1. Ange måttet &quot;Deltagande&quot; eller något liknande i verktyget Beräknade mått
@@ -28,7 +28,7 @@ Den här typen av information kan vara användbar för alla innehållsägare.
    ![](assets/participation.png)
 
 1. Välj [!UICONTROL **Spara**] för att spara måtten.
-1. Använd det beräknade måttet i en **[!UICONTROL Pages]** rapport.
+1. Använd det beräknade måttet i **[!UICONTROL Pages]** rapport.
 
    ![](assets/participation-pages.png)
 
