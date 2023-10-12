@@ -3,7 +3,7 @@ title: Jämförelse med Adobe Analytics
 description: Översikt över hur Customer Journey Analytics står sig jämfört med Adobe Analytics.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Se [Jämför terminologi för analysdata som skickas via Analytics-källkoppling
 
 ## Virtuella rapporteringsmiljöer och sandlådor
 
-Adobe Analytics har begreppet Virtual Report Suites, som gör det möjligt att segmentera insamlade data och styra åtkomsten till segmenterade data.
+Adobe Analytics har begreppet Virtual Report Suites, som gör att ni kan segmentera insamlade data och styra åtkomsten till segmenterade data.
 
 Customer Journey Analytics har ett liknande koncept som kallas datavyer. Datavyer är behållare som gör att du kan avgöra hur data från en anslutning ska tolkas. Det ger den ultimata flexibiliteten att specificera och konfigurera mått och mätvärden som förberedelse för rapporter och analyser.
 

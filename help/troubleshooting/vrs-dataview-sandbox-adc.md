@@ -1,11 +1,11 @@
 ---
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: f2f85db4b670f1c4b1f6bc0954a5549c793edf5a
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
-# Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och Analytics-källkopplingen
+# Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics
 
 Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är användbart att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
@@ -13,26 +13,26 @@ Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och san
 * datavyer i Customer Journey Analytics
 * Adobe Experience Platform sandlådor
 
-## Adobe Analytics Virtual Report Suites (VRS)
+## Adobe Analytics Virtual Report Suites
 
 Mer information finns i: [Översikt över virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
 
-Ett VRS:
+En virtuell rapportsvit:
 
 * Kan baseras på Adobe Analytics-segment.
 * Kan tillämpas på både historiska och nya data på ett icke-förstörande sätt.
 * Med det här alternativet kan du skapa en eller flera virtuella vyer ovanpå en Adobe Analytics-rapportserie som kan användas av olika affärsteam.
 * Kan användas för att styra åtkomst till och strukturera olika typer av data för olika användare i Adobe Analytics.
-* Tillval [rapporttidsbearbetning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) för Adobe Analytics. I så fall kan ett VRS användas för att skapa en anpassad definition för&quot;besök&quot;.
+* Tillval [rapporttidsbearbetning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) för Adobe Analytics. I det här fallet kan en virtuell rapportserie användas för att skapa en anpassad definition för&quot;besök&quot;.
 * Används vid rapportkörning, ungefär som vid segmentutvärdering. Det här är _efter_ uppgifterna har samlats in och lagrats inom Adobe Analytics.
 * Krävs för [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) i Adobe Analytics.
-* Har tillgång till samma antal variabler som ska användas som en vanlig Analytics Report Suite (250 eVars, 250 props, 1 000 händelser), även om VRS-kuration kan begränsa vilka variabler som exponeras för användarna.
+* Har tillgång till samma antal variabler som kan användas som en vanlig Analytics Report Suite (250 eVars, 250 props, 1 000 händelser), även om kurationen i den virtuella rapportsviten kan begränsa vilka variabler som exponeras för användarna.
 * Stöder anpassade kalenderalternativ.
 
 En virtuell rapportsvit är (gör inte):
 
 * Gör det möjligt att kombinera rapportsviter.
-* Finns i Adobe Analytics Data warehouse.
+* Finns i Adobe Analytics Data Warehouse.
 * Tillgängligt som källa för dataflöden till Adobe Experience Platform via Analytics-källkopplingen. Endast fullständiga (icke-virtuella) rapportsviter är tillgängliga för användning med Analytics-källkopplingen.
 
 
