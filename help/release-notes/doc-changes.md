@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+source-git-commit: bf1e14fc0ecfdab3ff7032133d05ab0f40f123d6
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2666'
 ht-degree: 4%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Oktober 2023** | |
+| Jämförelse med Adobe Analytics | En översiktssida har lagts till som en introduktion om att jämföra och förstå skillnaderna mellan Customer Journey Analytics och Adobe Analytics. |
 | Funktioner för ytterligare härledda fält | Uppdaterad dokumentation för den nya [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) funktion. |
 | **September 2023** | |
 | Uppdaterad struktur för artiklar för panelen Medieuppspelningstid för spenderad tid | Mappen Media Playback Time Spent har tagits bort och innehållet i mappen har kombinerats till en enda artikel: [Medieuppspelningstid spenderad panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Den här ändringen är mer i linje med dokumentationen för andra paneler.</p> |

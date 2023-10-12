@@ -4,7 +4,7 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+source-git-commit: 82e0fbb714852750963e08597b6b1606127e0ac6
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 2%

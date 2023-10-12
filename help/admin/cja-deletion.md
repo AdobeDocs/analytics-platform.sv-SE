@@ -4,7 +4,7 @@ description: Vad händer när du tar bort anslutningar, datauppsättningar eller
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 34b19024769f94c01c8655d80445fac836ec20f9
+source-git-commit: 49fa31b3dd23718f35a050d5548dce1b30e8ab9c
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
