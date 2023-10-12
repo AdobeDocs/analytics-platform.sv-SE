@@ -4,7 +4,7 @@ description: Förklara hur du importerar och använder batchdata i Customer Jour
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
+source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
 workflow-type: tm+mt
 source-wordcount: '1807'
 ht-degree: 0%
@@ -49,15 +49,17 @@ Så här konfigurerar du ditt schema:
 1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** inom [!UICONTROL DATA MANAGEMENT].
 
 1. Välj **[!UICONTROL Create schema]**. .
-1. I steget Välj en klass i guiden Skapa schema väljer du **[!UICONTROL Individual Profile]**.
+1. I steget Välj en klass i guiden Skapa schema:
 
-   ![Skapa ett schema](./assets/create-pr-schema-wizard-step-1.png)
+   1. Välj **[!UICONTROL Individual Profile]**.
 
-   >[!INFO]
-   >
-   >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+      ![Skapa ett schema](./assets/create-pr-schema-wizard-step-1.png)
 
-   Välj **[!UICONTROL Next]**.
+      >[!INFO]
+      >
+      >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+
+   1. Välj **[!UICONTROL Next]**.
 
 
 1. I [!UICONTROL Name and review step] i [!UICONTROL Create schema] guide:
