@@ -3,9 +3,10 @@ title: Importera data via Adobe Experience Platform Edge Network Server API
 description: Förklara hur data importeras till Customer Journey Analytics via Adobe Experience Platform Edge Network Server API och Edge Network
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2181'
 ht-degree: 0%
 
 ---
@@ -52,28 +53,35 @@ Så här konfigurerar du ditt schema:
 
 1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** inom [!UICONTROL DATA MANAGEMENT].
 
-2. Välj **[!UICONTROL Create schema]**. Välj **[!UICONTROL XDM ExperienceEvent]** i listan med alternativ.
+1. Välj **[!UICONTROL Create schema]**. .
+1. I steget Välj en klass i guiden Skapa schema väljer du **[!UICONTROL Experience Event]**.
 
-   ![Skapa ett schema](./assets/create-ee-schema.png)
+   ![Skapa ett schema](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Ett Experience Event-schema används för att modellera _beteende_ av en profil (som att nå en nivå i spelet till exempel). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+   >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+
+   Välj **[!UICONTROL Next]**.
 
 
-3. I [!UICONTROL Untitled schema] skärm:
+1. I [!UICONTROL Name and review step] i [!UICONTROL Create schema] guide:
 
-   1. Ange ett visningsnamn för ditt schema och (valfritt) en beskrivning.
+   1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
-      ![Namnge ditt schema](./assets/name-schema.png)
+      ![Namnge ditt schema](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
+   1. Välj **[!UICONTROL Finish]**.
+
+1. På fliken Struktur i exempelschemat:
+
+   1. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
 
       ![Lägg till fältgrupp](./assets/add-field-group-button.png)
 
       Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
-   3. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL Blinding Light]** fältgrupp från listan. Den här fältgruppen skapas för att spåra användarförloppet i ett fiktivt spel med namnet Blinding Light på en konsol.
+   1. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL Blinding Light]** fältgrupp från listan. Den här fältgruppen skapas för att spåra användarförloppet i ett fiktivt spel med namnet Blinding Light på en konsol.
 
       ![Fältgruppen Ljus](assets/schema-fieldgroup-blindinglight.png)
 
@@ -83,13 +91,13 @@ Så här konfigurerar du ditt schema:
 
       Välj **[!UICONTROL Back]** för att stänga förhandsgranskningen.
 
-   4. Välj **[!UICONTROL Add field groups]**.
+   1. Välj **[!UICONTROL Add field groups]**.
 
-4. Välj **[!UICONTROL +]** bredvid schemanamnet.
+1. Välj **[!UICONTROL +]** bredvid schemanamnet.
 
    ![Knappen Lägg till fält i exempelschema](./assets/example-gamingschema-plus.png)
 
-5. I [!UICONTROL Field Properties] panel, ange `identification` som [!UICONTROL Field name], **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
+1. I [!UICONTROL Field Properties] panel, ange `identification` som [!UICONTROL Field name], **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
 
    ![Identifieringsobjekt](./assets/identification-field-gaming.png)
 
@@ -97,7 +105,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
-6. Välj **[!UICONTROL ecid]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och **[!UICONTROL ECID]** från [!UICONTROL Identity namespace] i den högra panelen.
+1. Välj **[!UICONTROL ecid]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och **[!UICONTROL ECID]** från [!UICONTROL Identity namespace] i den högra panelen.
 
    ![Ange ECID som identitet](./assets/specify-identity-gaming.png)
 
@@ -105,7 +113,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i attributet ecid.
 
-7. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] listan i [!UICONTROL Field Properties] -panelen.
+1. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] listan i [!UICONTROL Field Properties] -panelen.
 
    ![Ange e-postadress som identitet](./assets/specify-email-identity-gaming.png)
 
@@ -115,7 +123,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Save]**.
 
-8. Markera rotelementet i schemat som visar schemats namn och välj sedan **[!UICONTROL Profile]** byt.
+1. Markera rotelementet i schemat som visar schemats namn och välj sedan **[!UICONTROL Profile]** byt.
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
@@ -127,7 +135,7 @@ Så här konfigurerar du ditt schema:
 
    ![Aktivera schema för profil](./assets/enable-for-profile.png)
 
-9. Välj **[!UICONTROL Save]** för att spara ditt schema.
+1. Välj **[!UICONTROL Save]** för att spara ditt schema.
 
 Du har skapat ett minimalt schema som modellerar de data du kan hämta från ditt spel. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profilen ser du till att data som hämtats från ditt konsolspel läggs till i kundprofilen i realtid.
 

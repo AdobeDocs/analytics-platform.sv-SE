@@ -4,9 +4,9 @@ description: Förklara hur du importerar och använder batchdata i Customer Jour
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1807'
 ht-degree: 0%
 
 ---
@@ -48,28 +48,35 @@ Så här konfigurerar du ditt schema:
 
 1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** inom [!UICONTROL DATA MANAGEMENT].
 
-2. Välj **[!UICONTROL Create schema]**. Välj **[!UICONTROL XDM Individual Profile]** i listan med alternativ.
+1. Välj **[!UICONTROL Create schema]**. .
+1. I steget Välj en klass i guiden Skapa schema väljer du **[!UICONTROL Individual Profile]**.
 
-   ![Skapa ett schema](./assets/create-schema.png)
+   ![Skapa ett schema](./assets/create-pr-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Ett enskilt profilschema används för att modellera profilen _attributes_ (som e-post, lojalitetsstatus, förmånspoäng). Ett Experience Event-schema används för att modellera _beteende_ för en profil (som sidvy, lägg till i kundvagn).
+   >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+
+   Välj **[!UICONTROL Next]**.
 
 
-3. I [!UICONTROL Untitled schema] skärm:
+1. I [!UICONTROL Name and review step] i [!UICONTROL Create schema] guide:
 
-   1. Ange ett visningsnamn för ditt schema och (valfritt) en beskrivning.
+   1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
-      ![Namnge ditt schema](./assets/name-loyalty-schema.png)
+      ![Namnge ditt schema](./assets/create-pr-schema-wizard-step-2.png)
 
-   2. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
+   1. Välj **[!UICONTROL Finish]**.
+
+1. På fliken Struktur i exempelschemat:
+
+   1. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
 
       ![Lägg till fältgrupp](./assets/add-field-group-button.png)
 
       Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
-   3. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL Loyalty Details]** fältgrupp från listan.
+   1. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL Loyalty Details]** fältgrupp från listan.
 
       ![AEP Web SDK ExperienceEvent, fältgrupp](./assets/loyalty-fieldgroup.png)
 
@@ -79,13 +86,13 @@ Så här konfigurerar du ditt schema:
 
       Välj **[!UICONTROL Back]** för att stänga förhandsgranskningen.
 
-   4. Välj **[!UICONTROL Add field groups]**.
+   1. Välj **[!UICONTROL Add field groups]**.
 
-4. Välj **[!UICONTROL +]** bredvid schemanamnet i [!UICONTROL Structure] -panelen.
+1. Välj **[!UICONTROL +]** bredvid schemanamnet i [!UICONTROL Structure] -panelen.
 
    ![Knappen Lägg till fält i exempelschema](./assets/example-loalty-schema-plus.png)
 
-5. I [!UICONTROL Field Properties] panel, ange `Identification` som namn, **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL Profile Core v2]** som [!UICONTROL Field Group].
+1. I [!UICONTROL Field Properties] panel, ange `Identification` som namn, **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL Profile Core v2]** som [!UICONTROL Field Group].
 
    ![Identifieringsobjekt](./assets/identifcation-loyalty-field.png)
 
@@ -93,7 +100,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
-6. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] i [!UICONTROL Field Properties] -panelen.
+1. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] i [!UICONTROL Field Properties] -panelen.
 
    ![Ange e-postadress som identitet](./assets/specify-email-loyalty-id.png)
 
@@ -103,7 +110,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Save]**.
 
-7. Välj rotnivån för schemat (med schemanamnet) och välj sedan **[!UICONTROL Profile]** byt.
+1. Välj rotnivån för schemat (med schemanamnet) och välj sedan **[!UICONTROL Profile]** byt.
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
@@ -115,7 +122,7 @@ Så här konfigurerar du ditt schema:
 
    ![Aktivera schema för profil](./assets/enable-for-profile.png)
 
-8. Välj **[!UICONTROL Save]** för att spara ditt schema.
+1. Välj **[!UICONTROL Save]** för att spara ditt schema.
 
 Du har skapat ett minimalt schema som modellerar de lojalitetsdata som du kan importera till Adobe Experience Platform. Schemat gör att profiler kan identifieras med e-postadressen. Genom att aktivera schemat för profilen ser du till att data från din gruppfil läggs till i kundprofilen i realtid.
 

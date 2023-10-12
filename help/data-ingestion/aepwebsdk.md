@@ -4,9 +4,9 @@ description: Förklara hur man importerar data till Customer Journey Analytics v
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 662e9645cdb4b67f364525167e5191a52c474864
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3283'
 ht-degree: 0%
 
 ---
@@ -53,28 +53,35 @@ Så här konfigurerar du ditt schema:
 
 1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** inom [!UICONTROL DATA MANAGEMENT].
 
-2. Välj **[!UICONTROL Create schema]**. Välj **[!UICONTROL XDM ExperienceEvent]** i listan med alternativ.
+1. Välj **[!UICONTROL Create schema]**. .
+1. I steget Välj en klass i guiden Skapa schema väljer du **[!UICONTROL Experience Event]**.
 
-   ![Skapa ett schema](./assets/create-ee-schema.png)
+   ![Skapa ett schema](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som sidvy, lägg till i kundvagn). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+   >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+
+   Välj **[!UICONTROL Next]**.
 
 
-3. I [!UICONTROL Untitled schema] skärm:
+1. I [!UICONTROL Name and review step] i [!UICONTROL Create schema] guide:
 
-   1. Ange ett visningsnamn för ditt schema och (valfritt) en beskrivning.
+   1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
-      ![Namnge ditt schema](./assets/name-schema.png)
+      ![Namnge ditt schema](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
+   1. Välj **[!UICONTROL Finish]**.
+
+1. På fliken Struktur i exempelschemat:
+
+   1. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
 
       ![Lägg till fältgrupp](./assets/add-field-group-button.png)
 
       Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
-   3. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL AEP Web SDK ExperienceEvent]** fältgrupp från listan.
+   1. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL AEP Web SDK ExperienceEvent]** fältgrupp från listan.
 
       ![AEP Web SDK ExperienceEvent, fältgrupp](./assets/select-aepwebsdk-experienceevent.png)
 
@@ -84,13 +91,13 @@ Så här konfigurerar du ditt schema:
 
       Välj **[!UICONTROL Back]** för att stänga förhandsgranskningen.
 
-   4. Välj **[!UICONTROL Add field groups]**.
+   1. Välj **[!UICONTROL Add field groups]**.
 
-4. Välj **[!UICONTROL +]** bredvid schemanamnet i [!UICONTROL Structure] -panelen.
+1. Välj **[!UICONTROL +]** bredvid schemanamnet i [!UICONTROL Structure] -panelen.
 
    ![Knappen Lägg till fält i exempelschema](./assets/example-schema-plus.png)
 
-5. I [!UICONTROL Field Properties] panel, ange `Identification` som namn, **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
+1. I [!UICONTROL Field Properties] panel, ange `Identification` som namn, **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
 
    ![Identifieringsobjekt](./assets/identification-field.png)
 
@@ -98,7 +105,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
-6. Välj **[!UICONTROL ecid]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och **[!UICONTROL ECID]** från [!UICONTROL Identity namespace] i den högra panelen.
+1. Välj **[!UICONTROL ecid]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och **[!UICONTROL ECID]** från [!UICONTROL Identity namespace] i den högra panelen.
 
    ![Ange ECID som identitet](./assets/specify-identity.png)
 
@@ -106,7 +113,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i attributet ecid.
 
-7. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] listan i [!UICONTROL Field Properties] -panelen.
+1. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] listan i [!UICONTROL Field Properties] -panelen.
 
    ![Ange e-postadress som identitet](./assets/specify-email-identity.png)
 
@@ -116,7 +123,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Save]**.
 
-8. Markera rotelementet i schemat som visar schemats namn och välj sedan **[!UICONTROL Profile]** byt.
+1. Markera rotelementet i schemat som visar schemats namn och välj sedan **[!UICONTROL Profile]** byt.
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
@@ -128,7 +135,7 @@ Så här konfigurerar du ditt schema:
 
    ![Aktivera schema för profil](./assets/enable-for-profile.png)
 
-9. Välj **[!UICONTROL Save]** för att spara ditt schema.
+1. Välj **[!UICONTROL Save]** för att spara ditt schema.
 
 Du har skapat ett minimalt schema som modellerar de data som du kan hämta från webbplatsen. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profil ser du till att data som hämtas från din webbplats läggs till i kundprofilen i realtid.
 
