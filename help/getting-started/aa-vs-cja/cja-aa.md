@@ -4,14 +4,14 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2130'
 ht-degree: 2%
 
 ---
 
-# Funktioner i Adobe Customer Journey Analytics
+# Funktioner i Customer Journey Analytics
 
 I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds delvis eller inte alls i Customer Journey Analytics och vilka funktioner i Customer Journey Analytics som inte stöds eller är tillgängliga i Adobe Analytics. De här listorna ändras med tiden när funktioner läggs till i Customer Journey Analytics.
 
