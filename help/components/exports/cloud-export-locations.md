@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3c1e256bb2197ed844d699e4a28076b014566b99
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 1%
+source-wordcount: '1494'
+ht-degree: 0%
 
 ---
 
@@ -66,6 +66,21 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 1. Välj [!UICONTROL **Spara**].
 
 1. Nu kan du exportera data från Analysis Workspace till det konto och den plats som du konfigurerade. Mer information om hur du exporterar data till molnet finns i [Exportera projektdata till molnet](/help/analysis-workspace/export/export-cloud.md).
+
+1. Det enklaste sättet att komma åt dina data i AEP Data Landing Zone är att använda Microsoft Azure Storage Explorer. Det här är samma verktyg som används i instruktionerna för att konfigurera [AEP Data Landing Zone-konto](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+
+   1. Öppna [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Gå till [!UICONTROL **Lagringskonton**] > [!UICONTROL **(Bifogade behållare)**] > [!UICONTROL **Blobbehållare**] > **[!UICONTROL cjaexport-_tal_]** > ***your_container_name***.
+
+      >[!NOTE]
+      >
+      >Mappnamnet **[!UICONTROL cjaexport-_tal_]** är standardnamnet som tillhandahålls av Azure Storage Explorer. Om du bara har en enda anslutning som är kopplad till din SAS URI (som är normal) blir namnet på den här mappen **[!UICONTROL cjaexport-1]**.
+
+
+      ![Åtkomst till filer i Azure Storage Explorer](assets/azure-storage-explorer-access.png)
+
+   1. Markera den export som du vill hämta och välj sedan [!UICONTROL **Ladda ned**] för nedladdning.
 
 ### Amazon S3 Role ARN
 
