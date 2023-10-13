@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -65,9 +65,9 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    ![Exportera kontodialogruta AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Kopiera innehållet i [!UICONTROL **SAS-URI**] till Urklipp.
+1. Kopiera innehållet i [!UICONTROL **SAS-URI**] till Urklipp. Du använder den här SAS-URI:n för att komma åt data som exporteras från Analysis Workspace från AEP Data Landing Zone.
 
-   Du använder den här SAS-URI:n för att komma åt data som exporteras från Analysis Workspace från AEP Data Landing Zone.
+   Om det här fältet är tomt måste du ha behörighet att komma åt Adobe Experience Platform.
 
 1. Konfigurera din Data Landing Zone-behållare i Adobe Experience Platform så att den använder den SAS URI som du kopierade.
 
@@ -82,6 +82,11 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
       Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
 
    1. När du följer Adobe Experience Platform dokumentation kommer du till [!UICONTROL **SAS-URL för blobbbehållare**] klistra in den SAS-URI som du kopierade i steg 3.
+
+      >[!NOTE]
+      >
+      >Du måste utföra den här åtgärden var 7:e dag eftersom SAS-URI:n går ut 7 dagar efter att den har skapats. Du kan skapa ett skript för att automatisera den här processen.
+
 
       ![SAS-URL-fält](assets/blob-container-sas-uri.png)
 

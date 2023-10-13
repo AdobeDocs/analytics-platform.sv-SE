@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 49d91b513abd545ea73c7867817cd8724b460be4
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '775'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Versionsinformationen gäller den 4 oktober till 24 oktober 2023. Adobe Customer
 | **Migrera Adobe Analytics-projekt och alla komponenter som ingår till Customer Journey Analytics** | Nu kan du migrera dina Adobe Analytics-projekt till Customer Journey Analytics. Den här processen förenklar övergången från Adobe Analytics till Customer Journey Analytics. <p>När du migrerar projekt till Customer Journey Analytics mappas resurserna från en Adobe Analytics-rapportsvit till en datavy i Customer Journey Analytics.</p> <p>Du migrerar projekt till Customer Journey Analytics från Adobe Analytics gränssnitt. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)</p> | Ej tillämpligt | 9 oktober 2023 |
 | **Adobe Product Analytics: Visa/dölj serie** | Klicka på teckenförklaringen eller tabellraderna för att styra hur serierna ska visas i dina visualiseringar.  [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=en) | Ej tillämpligt | 4 oktober 2023 |
 | **Anteckningar i Adobe Product Analytics** | Guidad analys har nu stöd för att visa anteckningar som skapats i Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en) | Ej tillämpligt | 4 oktober 2023 |
-| **Rapporteringsaktivitetshanteraren** | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje anslutning i organisationen. Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. Viktiga funktioner i Rapporteringsaktivitetshanteraren är bland annat:<ul><li>Avbryt aktuella rapportbegäranden (inklusive begäranden från guidade analyser och fullständig registerexport)</li><li>Begränsa efterföljande begäranden för en angiven tidsperiod</li></ul>Förutom att avbryta aktuella begäranden kan administratörer nu begränsa begäranden för en definierad tidsperiod. Administratörer kan begränsa begäranden efter begäran, projekt eller användare.  Läs mer (kommer snart) | 17 oktober 2023 | 23 oktober 2023 |
+| **Rapporteringsaktivitetshanteraren** | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje anslutning i organisationen. Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. Viktiga funktioner i Rapporteringsaktivitetshanteraren är bland annat:<ul><li>Avbryt aktuella rapportbegäranden (inklusive begäranden från guidade analyser och fullständig registerexport)</li><li>Begränsa efterföljande begäranden för en angiven tidsperiod</li></ul>Förutom att avbryta aktuella begäranden kan administratörer nu begränsa begäranden för en definierad tidsperiod. Administratörer kan begränsa begäranden efter begäran, projekt eller användare.  [Läs mer](/help/reporting-activity-manager/reporting-activity-overview.md) | 17 oktober 2023 | 23 oktober 2023 |
 
 {style="table-layout:auto"}
 
