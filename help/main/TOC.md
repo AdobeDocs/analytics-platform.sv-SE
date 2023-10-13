@@ -9,7 +9,7 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 82e0fbb714852750963e08597b6b1606127e0ac6
+source-git-commit: 6a9cae93011447fff0f74ca4ae15178e0a1f36aa
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 25%
@@ -245,7 +245,7 @@ ht-degree: 25%
          + [Hitta mätvärden](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Bygg mätvärden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Mättyp och attribuering](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Bygg ett delgivningsmått](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Bygg ett deltagandemått](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Filtrerade mätvärden](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Stapla och ersätta filter](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Filtrerade och viktade mätvärden](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
