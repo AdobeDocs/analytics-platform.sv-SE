@@ -4,9 +4,9 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
+source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2666'
 ht-degree: 1%
 
 ---
@@ -60,9 +60,15 @@ Du måste ha **Välj** för att lägga till ett obegränsat antal datauppsättni
 
 Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Platform när du skapar en anslutning.
 
-1. I dialogrutan Anslutningsinställningar klickar du på **[!UICONTROL Add datasets]**.
+1. Välj i dialogrutan Anslutningsinställningar **[!UICONTROL Add datasets]**.
 
-2. Markera en eller flera datauppsättningar och klicka på **[!UICONTROL Next]**. Minst en händelsedatamängd måste ingå i anslutningen.
+2. I [!UICONTROL Select datasets] väljer du en eller flera datauppsättningar och väljer **[!UICONTROL Next]**. Minst en händelsedatamängd måste ingå i anslutningen.
+   * Om du vill ändra kolumnerna som visas för listan med datauppsättningar väljer du ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) och markera de kolumner som ska visas i [!UICONTROL Customize table] -dialogrutan.
+   * Använd kommandot ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) sökfält.
+   * Om du vill växla mellan att visa eller dölja de markerade datauppsättningarna väljer du ![Välj](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** eller **[!UICONTROL Show selected]**.
+   * Om du vill ta bort en datauppsättning från listan med valda datauppsättningar använder du ![Stäng](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Om du vill ta bort alla markerade datauppsättningar väljer du **[!UICONTROL Clear all]**.
+
+   ![Välj datauppsättningar](assets/select-datasets.png)
 
 3. Konfigurera datauppsättningarna en i taget.
 
@@ -70,8 +76,10 @@ Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Pl
 
    | Inställning | Beskrivning |
    | --- | --- |
-   | **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Nedan finns information om hur du använder identitetskartan som ett person-ID.<p>Om det inte finns några person-ID:n att välja mellan, innebär det att ett eller flera person-ID:n inte har definierats i schemat. Se den här videon om hur du definierar en identitet i Experience Platform. |
+   | **[!UICONTROL Person ID]** | Endast tillgängligt för händelse- och profildatauppsättningar. Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Nedan finns information om hur du använder identitetskartan som ett person-ID.<p>Om det inte finns några person-ID:n att välja mellan, innebär det att ett eller flera person-ID:n inte har definierats i schemat. Se den här videon om hur du definierar en identitet i Experience Platform. |
    | **[!UICONTROL Timestamp]** | Endast för händelsedatamängder anges den här inställningen automatiskt till standardfältet för tidsstämpling från händelsebaserade scheman i Experience Platform. |
+   | **[!UICONTROL Key]** | Endast tillgängligt för uppslagsdatauppsättningar. Nyckeln som ska användas för en uppslagsdatauppsättning. |
+   | **[!UICONTROL Matching key]** | Endast tillgängligt för uppslagsdatauppsättningar. Den matchande nyckeln som ska användas i en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd. |
    | **[!UICONTROL Data source type]** | Välj en typ av datakälla. <br/>Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
    | **[!UICONTROL Import new data]** | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar till arbetsytan. Kan anges till [!UICONTROL On] eller [!UICONTROL Off]. |
    | **[!UICONTROL Dataset backfill]** | Välj **[!UICONTROL Request backfill]** för att fylla historikdata baklänges.<ul><li>Du kan fylla i varje datauppsättning separat.</li><li>Du prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa nya data har den lägsta fördröjningen.</li><li>Eventuella bakåtfyllnadsdata (historiska) importeras i en långsammare takt. Latensen påverkas av hur mycket historisk information du har.</li><li>Analysens källanslutning importerar upp till 13 månaders data (oavsett storlek) för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.</li></ul> |
@@ -81,7 +89,7 @@ Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Pl
    | **[!UICONTROL Dataset size]** | Datauppsättningens storlek. |
    | **[!UICONTROL Schema]** | Det schema som datamängden skapades utifrån i Adobe Experience Platform. |
    | **[!UICONTROL Dataset]** | Datauppsättningens namn. |
-   | **[!UICONTROL Preview]**: `<dataset name>` | Förhandsgranskar datauppsättningen med kolumnerna date, my ID och Identifier. |
+   | **[!UICONTROL Preview: *datauppsättningsnamn *]** | Förhandsgranskar datauppsättningen med kolumnerna date, my ID och Identifier. |
    | **[!UICONTROL Remove]** | Du kan ta bort eller ta bort datauppsättningen och ändra person-ID utan att ta bort hela anslutningen. Att ta bort eller ta bort minskar kostnaderna för datainmatning och den krångliga processen att återskapa hela anslutningen och tillhörande datavyer. |
 
    {style="table-layout:auto"}

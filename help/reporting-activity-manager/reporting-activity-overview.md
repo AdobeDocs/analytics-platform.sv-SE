@@ -3,7 +3,7 @@ title: Översikt över Reporting Activity Manager
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 2%
@@ -29,6 +29,8 @@ Reporting Activity Manager ger följande fördelar:
 * Gör att du kan begränsa framtida begäranden för en angiven tidsperiod. Du kan begränsa specifika begäranden eller du kan begränsa alla begäranden från en viss användare eller begäranden som är kopplade till ett visst projekt.
 
 ## Behörigheter
+
+<!-- update for CJA -->
 
 Om du vill hantera rapporteringsaktiviteten måste du ha behörigheten Analytics Product Administrator i Adobe Admin Console.
 

@@ -3,7 +3,7 @@ title: Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
@@ -132,6 +132,8 @@ Du kan avbryta alla begäranden som är kopplade till ett eller flera projekt.
    Ett meddelande visas i Analysis Workspace som informerar användare om att begäran har avbrutits. Mer information om hur detta visas i Analysis Workspace finns i [Upplevelse när användare öppnar en avbruten rapport](#experience-when-users-access-a-cancelled-report).
 
 ## Upplevelse när användare öppnar en avbruten rapport
+
+<!-- Update for CJA and AA -->
 
 I Analysis Workspace visas följande meddelande när användare försöker få åtkomst till en rapport som har avbrutits av en administratör:
 

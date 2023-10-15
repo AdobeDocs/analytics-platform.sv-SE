@@ -3,9 +3,9 @@ title: Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: dba42bedd14c4c6d958feab9a1ebdc137d489f32
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1704'
 ht-degree: 1%
 
 ---
@@ -42,26 +42,26 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
    | Gränssnittselement | Beskrivning |
    | --- | --- |
-   | **[!UICONTROL connection]** | Anslutningen vars rapporteringsaktivitet du övervakar. |
-   | **[!UICONTROL Virtual report suites]** | Visar alla virtuella rapportsviter som matas in i denna basrapportsserie. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla begäranden som kommer från de virtuella rapportsviterna kombineras i basrapportsviten.<p>Om du till exempel har 10 förfrågningar från 5 virtuella rapportsviter är det 50 förfrågningar på basnivån. På så sätt kan du snabbt nå ut till din kapacitet. |
-   | **[!UICONTROL Capacity utilization]** | Procentandelen av rapportsvitens rapporteringskapacitet som används i realtid. <p>**Anteckning** En användningskapacitet som är 100 % innebär inte nödvändigtvis att du omedelbart bör avbryta rapporteringsbegäranden. 100 % användningskapacitet kan vara hälsosam om den genomsnittliga väntetiden är rimlig. Å andra sidan kan 100 % av användningskapaciteten tyda på ett problem om antalet begäranden som står i kö också ökar.</p> |
+   | **[!UICONTROL Connection]** | Anslutningen vars rapporteringsaktivitet du övervakar. |
+   | **[!UICONTROL Data Views]** | Visar alla datavyer som matas in i anslutningen. Datavyer gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av filtrering och segmentering. Alla begäranden som kommer från datavyn kombineras med anslutningen.<p>Om du till exempel har 10 förfrågningar från 5 datavyer är det 50 förfrågningar vid anslutningen. På så sätt kan du snabbt nå ut till din kapacitet. |
+   | **[!UICONTROL Capacity utilization]** | Procentandel av anslutningens rapporteringskapacitet som används i realtid. <p>**Anteckning** En användningskapacitet som är 100 % innebär inte nödvändigtvis att du omedelbart bör avbryta rapporteringsbegäranden. 100 % användningskapacitet kan vara hälsosam om den genomsnittliga väntetiden är rimlig. Å andra sidan kan 100 % av användningskapaciteten tyda på ett problem om antalet begäranden som står i kö också ökar.</p> |
    | **[!UICONTROL Queued requests]** | Antalet begäranden som väntar på att behandlas. <!-- ??? --> |
    | **[!UICONTROL Queue wait time]** | Genomsnittlig väntetid innan begäranden börjar bearbetas. <!-- ???? --> |
-   | **[!UICONTROL Status]** | Möjliga statusvärden är: <ul><li>[!UICONTROL **Aktiv**] (blått): Rapporter har körts på rapportsviten och den övervakas för aktivitet.</li><li>[!UICONTROL **Inaktiv**] (grå): Inga rapporter har någonsin körts för rapportsviten. Den här statusen visas endast när rapportsviter skapas.</li></ul> |
+   | **[!UICONTROL Status]** | Möjliga statusvärden är: <ul><li>[!UICONTROL **Aktiv**] (blått): Rapporter har körts på anslutningen och den övervakas för aktivitet.</li><li>[!UICONTROL **Inaktiv**] (grå): Inga rapporter har körts på anslutningen. Den här statusen visas endast när anslutningar skapas för första gången.</li></ul> |
 
    {style="table-layout:auto"}
 
-## Visa rapporteringsaktivitet för en enskild rapportserie
+## Visa rapporteringsaktivitet för en enda anslutning
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **verktyg**] > [!UICONTROL **Rapporteringsaktivitetshanteraren**].
 
-1. Markera den länkade titeln för den rapportsserie som du vill visa information om.
+1. Markera den länkade titeln för anslutningen som du vill visa information om.
 
-   Rapporteringsaktivitetsdata visas för den rapportserie som du har valt.
+   Rapporteringsaktivitetsdata visas för anslutningen som du har valt.
 
-   <!-- Need to update this screenshot: ![report suite](assets/indiv-report-ste.png) -->
+   <!-- Need to update this screenshot: ![connection](assets/indiv-report-ste.png) -->
 
-1. Använd tillgängliga diagram och tabeller för att förstå rapporteringsaktiviteten i rapportsviten.
+1. Använd tillgängliga diagram och tabeller för att förstå rapporteringsaktiviteten i anslutningen.
 
    * [Visa diagram](#view-graphs)
 
@@ -69,13 +69,13 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
 ### Visa diagram
 
-Följande diagram är tillgängliga för att hjälpa dig att bättre förstå vad som händer i rapportsviten.
+Följande diagram är tillgängliga så att du bättre kan förstå vad som händer i anslutningen.
 
 Om diagrammen inte visas markerar du [!UICONTROL **Visa diagram**] -knappen.
 
 #### Användningsdiagram {#utilization}
 
-I användningsdiagrammet visas rapporteringsanvändning för den valda rapportsviten under de senaste två timmarna.
+I användningsdiagrammet visas rapporteringsanvändning för den valda anslutningen under de senaste två timmarna.
 
 Håll pekaren över diagrammet om du vill visa tidpunkter där procentandelen av användningskapaciteten var högst för den minuten.
 
@@ -86,7 +86,7 @@ Håll pekaren över diagrammet om du vill visa tidpunkter där procentandelen av
 
 #### Diagram över distinkta användare
 
-Diagrammet Distinkta användare visar rapporteringsaktiviteten för den valda rapportsviten under de senaste två timmarna.
+Diagrammet Distinkta användare visar rapporteringsaktiviteten för den valda anslutningen under de senaste två timmarna.
 
 Håll pekaren över diagrammet om du vill visa tidpunkter där det högsta antalet användare var under den minuten.
 
@@ -97,7 +97,7 @@ Håll pekaren över diagrammet om du vill visa tidpunkter där det högsta antal
 
 #### Begärandiagram
 
-I diagrammet Begäranden visas antalet bearbetade och slutförda begäranden för den valda rapportsviten under de senaste två timmarna.
+I diagrammet Begäranden visas antalet bearbetade och slutförda begäranden för den valda anslutningen under de senaste två timmarna.
 
 Håll pekaren över diagrammet om du vill visa tidpunkter där det högsta antalet förfrågningar för den minuten var högst.
 
@@ -108,7 +108,7 @@ Håll pekaren över diagrammet om du vill visa tidpunkter där det högsta antal
 
 #### Köar diagram
 
-I ködiagrammet visas den genomsnittliga väntetiden i kön (i sekunder) för rapportbegäranden för den valda rapportsviten under de senaste två timmarna.
+I ködiagrammet visas den genomsnittliga väntetiden (i sekunder) i kön för att rapportera begäranden för den valda anslutningen under de senaste två timmarna.
 
 Håll pekaren över diagrammet om du vill visa tidpunkter där den maximala genomsnittliga väntetiden var högst för den minuten.
 
@@ -215,11 +215,11 @@ The Summary Numbers show the following information:
 
 | Summary Number | Description |
 | --- | --- |
-| [!UICONTROL **Users**] | The number of users that are currently sending reporting requests to this report suite. |
+| [!UICONTROL **Users**] | The number of users that are currently sending reporting requests to this connection. |
 | [!UICONTROL **Projects**] | Workspace projects, Report Builder workbooks, etc.  | 
 | [!UICONTROL **Queries**] | The number of queries currently running. |
 | [!UICONTROL **Average Wait Time**] | The average wait time for all running queries.  |
-| [!UICONTROL **Usage Capacity**] | The current usage capacity for this report suite. |
+| [!UICONTROL **Usage Capacity**] | The current usage capacity for this connection. |
 
 {style="table-layout:auto"}
 
