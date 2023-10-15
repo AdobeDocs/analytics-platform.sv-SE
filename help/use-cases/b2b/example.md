@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1492'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Se [Lägga till och konfigurera datauppsättningar](../../connections/create-con
 
 För att få tillgång till relevanta B2B-dimensioner och mätvärden när du skapar ett Workspace-projekt måste du definiera datavyn därefter.
 
-Det här avsnittet innehåller rekommendationer och förslag om vilka dimensioner och mått som ska inkluderas när du definierar [komponenter](../../data-views/create-dataview.md#components) av datavyn.
+Det här avsnittet innehåller rekommendationer och förslag om vilka dimensioner och mått som ska inkluderas när du definierar [komponenter](../../data-views/create-dataview.md#components) för B2B-datauppsättningar i datavyn.
 
 För varje komponent anges namn, schematyp, schemasökväg och (om tillämpligt) information om konfigurationen.
 
