@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 7b90ce212b6964fde6bdf2d47b2c751330e4f399
+source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%
@@ -64,7 +64,7 @@ I tabellen *_organizationID*`.interaction.*`, refererar till den anpassade fält
 Se [Lägga till och konfigurera datauppsättningar](../../connections/create-connection.md) om du vill ha mer information om hur du konfigurerar inställningar för en datauppsättning.
 
 
-## Datavyer
+## Datavy
 
 För att få tillgång till relevanta B2B-dimensioner och mätvärden när du skapar ett Workspace-projekt måste du definiera datavyn därefter.
 
@@ -300,9 +300,9 @@ The B2B Marketing List Member dataset contains member of marketing lists.
 
 Med komponenterna korrekt definierade kan du nu skapa specifika B2B-visualiseringar i Workspace-projektet.
 
-Nedan visas ett exempel på ett Workspace-projekt som är beroende av anslutningen och datavyn som beskrivs ovan. Mer information finns i beskrivningarna för varje visualisering.
+Nedan visas ett exempelprojekt som är beroende av anslutningen och datavyn som beskrivs ovan. Mer information finns i beskrivningarna för varje visualisering.
 
-+++ Projekt
++++ Exempel på projekt
 
 ![Visualiseringar](assets/visualizations.png)
 
