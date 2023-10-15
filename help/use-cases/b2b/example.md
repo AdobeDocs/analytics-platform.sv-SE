@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1488'
 ht-degree: 2%
 
 ---
@@ -70,16 +70,11 @@ För att få tillgång till relevanta B2B-dimensioner och mätvärden när du sk
 
 Det här avsnittet innehåller rekommendationer och förslag om vilka dimensioner och mått som ska inkluderas när du definierar [komponenter](../../data-views/create-dataview.md#components) av datavyn.
 
-För varje komponent anges namn, schemasökväg och (om tillämpligt) information om konfigurationen.
+För varje komponent anges namn, schematyp, schemasökväg och (om tillämpligt) information om konfigurationen.
 
++++ B2B-aktivitetsdatauppsättning
 
-### B2B-aktivitetsdatauppsättning
-
-Datamängden för B2B-aktivitet innehåller relevanta upplevelsehändelser och krävs som en del av en anslutning.
-
-+++ Information
-
-#### Mätvärden
+### Mätvärden
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -111,7 +106,7 @@ Datamängden för B2B-aktivitet innehåller relevanta upplevelsehändelser och k
 {style="table-layout:auto"}
 
 
-#### Mått
+### Mått
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -139,19 +134,15 @@ Datamängden för B2B-aktivitet innehåller relevanta upplevelsehändelser och k
 +++
 
 
-### Persondatauppsättning för B2B
-
-Datamängden för B2B-personen innehåller de relevanta profilerna.
-
-+++ Information
++++ Persondatauppsättning för B2B
 
 
-#### Mätvärden
+### Mätvärden
 
 Inga måttkomponenter har definierats som en del av den här datauppsättningen.
 
 
-#### Mått
+### Mått
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -160,15 +151,12 @@ Inga måttkomponenter har definierats som en del av den här datauppsättningen.
 
 {style="table-layout:auto"}
 
-+++ Information
++++
 
-### Datauppsättning för B2B-säljprojekt
 
-Datauppsättningen för B2B-säljprojekt innehåller de relevanta affärsmöjligheterna.
++++  Datauppsättning för B2B-säljprojekt
 
-+++ Information
-
-#### Mätvärden
+### Mätvärden
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -182,7 +170,7 @@ Datauppsättningen för B2B-säljprojekt innehåller de relevanta affärsmöjlig
 {style="table-layout:auto"}
 
 
-#### Mått
+### Mått
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -199,13 +187,10 @@ Datauppsättningen för B2B-säljprojekt innehåller de relevanta affärsmöjlig
 
 +++
 
-### Datamängd för B2B-kampanj
 
-Datamängden för B2B-kampanjen innehåller kampanjdata.
++++ Datamängd för B2B-kampanj
 
-+++ Information
-
-#### Mätvärden
+### Mätvärden
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -214,7 +199,7 @@ Datamängden för B2B-kampanjen innehåller kampanjdata.
 {style="table-layout:auto"}
 
 
-#### Mått
+### Mått
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -229,13 +214,10 @@ Datamängden för B2B-kampanjen innehåller kampanjdata.
 +++
 
 
-### Datamängd för B2B-konto
 
-Datamängden för B2B-kontot innehåller kontodata.
++++ Datamängd för B2B-konto
 
-+++ Information
-
-#### Mätvärden
+### Mätvärden
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -245,7 +227,7 @@ Datamängden för B2B-kontot innehåller kontodata.
 {style="table-layout:auto"}
 
 
-#### Mått
+### Mått
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -265,13 +247,9 @@ Datamängden för B2B-kontot innehåller kontodata.
 +++
 
 
-### Datauppsättning för B2B-kampanjmedlem
++++ Datauppsättning för B2B-kampanjmedlem
 
-Datauppsättningen för B2B-kampanjmedlemmar innehåller interaktionen mellan kampanjmedlemmar.
-
-+++ Information
-
-#### Mätvärden
+### Mätvärden
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|
@@ -284,7 +262,7 @@ Datauppsättningen för B2B-kampanjmedlemmar innehåller interaktionen mellan ka
 
 {style="table-layout:auto"}
 
-#### Mått
+### Mått
 
 | Komponentnamn | Datatypen Schema | Schemasökväg | Konfiguration |
 |---|---|---|---|

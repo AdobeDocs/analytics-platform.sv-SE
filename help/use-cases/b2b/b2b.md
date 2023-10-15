@@ -1,17 +1,17 @@
 ---
-title: (B2B) Lägg till data på kontonivå som en uppslagsuppsättning
+title: Lägg till data på kontonivå som en uppslagsdatauppsättning
 description: Lär dig hur du lägger till kontobaserade data som en uppslagsdatauppsättning i Customer Journey Analytics
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
 
-# (B2B) Lägg till data på kontonivå som en uppslagsuppsättning
+# Lägg till data på kontonivå som en uppslagsdatauppsättning
 
 Det här B2B-användningsexemplet visar hur du anger data på kontonivå i stället för på personnivå för analys. Kontonivåanalys kan ge svar på frågor som
 
