@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
+source-git-commit: 7b90ce212b6964fde6bdf2d47b2c751330e4f399
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%
@@ -302,7 +302,7 @@ Med komponenterna korrekt definierade kan du nu skapa specifika B2B-visualiserin
 
 Nedan visas ett exempel på ett Workspace-projekt som är beroende av anslutningen och datavyn som beskrivs ovan. Mer information finns i beskrivningarna för varje visualisering.
 
-+++ Information
++++ Projekt
 
 ![Visualiseringar](assets/visualizations.png)
 
