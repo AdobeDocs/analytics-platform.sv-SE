@@ -1,9 +1,9 @@
 ---
 title: Integrera Adobe-lösningar med Customer Journey Analytics
-description: Lär dig hur du integrerar data från andra Adobe-lösningar och -tjänster.
+description: Lär dig integrera data från andra Adobe-lösningar och -tjänster.
 exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
@@ -17,6 +17,6 @@ Adobe erbjuder många produkter och lösningar som utnyttjar data från Adobe Ex
 De flesta arbetsflöden omfattar följande steg:
 
 1. Använd den önskade lösningen eller tjänsten för att skicka data till plattformen som en datauppsättning.
-2. [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med den önskade datauppsättningen.
+2. [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med datauppsättningen.
 3. [Skapa en datavy](/help/data-views/create-dataview.md) som innehåller de önskade måtten och mätvärdena för rapportering.
 4. Kör rapporter i Analysis Workspace baserat på de dimensioner och mått som har konfigurerats i datavyn.

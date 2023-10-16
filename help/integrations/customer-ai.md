@@ -4,8 +4,8 @@ title: Integrera kundens AI-data med Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -20,25 +20,25 @@ ht-degree: 0%
 
 Med hjälp av inflytelserika faktorer kan kundens AI tala om för er vad en kund kan tänkas göra och varför. Dessutom kan marknadsförarna dra nytta av kundernas AI-prognoser och insikter för att personalisera kundupplevelser genom att leverera de lämpligaste erbjudandena och budskapen.
 
-Kundens AI bygger på individuella beteendedata och profildata för benägenhetsbedömning. Kundens AI är flexibelt eftersom det kan användas i flera datakällor, bland annat Adobe Analytics, Adobe Audience Manager, data för kundupplevelsehändelser och händelsedata för upplevelser. Om du använder källkopplingen för Experience Platform för att hämta in Adobe Audience Manager- och Adobe Analytics-data, hämtar modellen automatiskt standardhändelsetyperna för att utbilda och poängsätta modellen. Om du tar med din egen Experience Event-datauppsättning utan standardhändelsetyper måste alla relevanta fält mappas som anpassade händelser eller profilattribut om du vill använda dem i modellen. Detta kan göras i kundens AI-konfigurationssteg i Experience Platform.
+Kundens AI bygger på individuella beteendedata och profildata för benägenhetsbedömning. Kundens AI är flexibelt eftersom det kan användas i flera datakällor, bland annat Adobe Analytics, Adobe Audience Manager, data för kundupplevelsehändelser och händelsedata för upplevelsehändelser. Om du använder källkopplingen för Experience Platform för att hämta in Adobe Audience Manager- och Adobe Analytics-data, hämtar modellen automatiskt standardhändelsetyperna för att utbilda och poängsätta modellen. Om du tar med din egen Experience Event-datauppsättning utan standardhändelsetyper måste alla relevanta fält mappas som anpassade händelser eller profilattribut om du vill använda dem i modellen. Detta kan göras i kundens AI-konfigurationssteg i Experience Platform.
 
 Kundens AI kan integreras med Customer Journey Analytics i den utsträckning som kundens AI-aktiverade datauppsättningar kan utnyttjas i datavyer och rapporter i Customer Journey Analytics. Ni kan:
 
 * **Spåra benägenhetspoäng för ett användarsegment över tid**.
-   * Användningsfall: Förstå sannolikheten för att kunder i ett visst segment ska konvertera.
+   * Användningsexempel: Förstå sannolikheten för att kunder i ett visst segment ska konvertera.
    * Exempel: En marknadsförare i en hotellkedja vill förstå sannolikheten för att en hotellkund ska köpa en showbiljett på hotellets konsertplats.
 * **Analysera vilka lyckade händelser eller attribut som är kopplade till benägenhetspoängen**.
-   * Användningsfall: Förstå attribut och framgångshändelser som är kopplade till benägenhetspoängen.
+   * Använd skiftläge: Förstå attribut eller framgångshändelser som är kopplade till benägenhetspoängen.
    * Exempel: En marknadsförare i en hotellkedja vill förstå hur inköp av showbiljetter på en konsertplats på ett hotell kopplas till benägenhetspoäng.
 * **Följ anmälningsflödet för kundbenägenhet över olika poängsättningsrundor**.
-   * Användningsfall: Förstå personer som till en början var lågbenägna användare och som senare blev högbenägna användare.
-   * Exempel: En marknadsförare i en hotellkedja vill förstå vilka hotellkunder som inledningsvis identifierades som kunder med låg benägenhet att köpa en showbiljett, men under tiden blev kunderna med stor benägenhet att köpa en showbiljett.
+   * Användningsexempel: Förstå personer som till en början var lågbenägna användare och som senare blev högbenägna användare.
+   * Exempel: En marknadsförare i en hotellkedja vill förstå vilka hotellkunder som ursprungligen identifierades som kunder med låg benägenhet att köpa en showbiljett, men som med tiden blivit kunder med stor benägenhet att köpa en showbiljett.
 * **Titta på hur benägenheten är fördelad**.
    * Användningsfall: Förstå fördelningen av benägenhetspoäng för att vara mer exakt när du definierar segment.
-   * Exempel: En återförsäljare vill göra en viss kampanj för 50 dollar i en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer av sina kunder.
+   * Exempel: En återförsäljare vill göra en viss kampanj för 50 USD av en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer av sina kunder.
 * **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**.
    * Användningsfall: Spåra en viss kohort över tid.
-   * Exempel: En marknadsförare i en hotellkedja vill följa sin broniseringsnivå jämfört med sin silvernivå, eller silvernivå jämfört med sin guldnivå, över tiden. De ser varje kohorts benägenhet att boka hotellet över tid.
+   * Exempel: En marknadsförare i en hotellkedja vill spåra sin bronsitet mot sin silvernivå, eller silverskikt mot sin guldskikt, över tiden. De ser varje kohorts benägenhet att boka hotellet över tid.
 
 Så här integrerar du kundens AI-data med Customer Journey Analytics:
 
@@ -67,7 +67,7 @@ Här är ett exempel på ett XDM-schema som Customer Journey Analytics tar med s
 
 ![CAI-schema](assets/cai-schema.png)
 
-(Observera att exemplet är en profildatamängd. Samma uppsättning schemaobjekt skulle ingå i en Experience Event-datauppsättning som Customer Journey Analytics skulle hämta. Experience Event-datauppsättningen skulle innehålla tidsstämplar som poängdatum.) Alla kunder som får poäng i den här modellen har poäng, scoreDate osv. som är kopplade till dem.
+(Observera att exemplet är en profildatauppsättning. Samma uppsättning schemaobjekt skulle ingå i en Experience Event-datauppsättning som Customer Journey Analytics skulle hämta. Experience Event-datauppsättningen skulle innehålla tidsstämplar som poängdatum.) Alla kunder som får poäng i den här modellen har poäng, scoreDate osv. som är kopplade till dem.
 
 ## Steg 3: Skapa datavyer baserade på dessa anslutningar
 
@@ -75,7 +75,7 @@ I Customer Journey Analytics kan du nu fortsätta till [skapa datavyer](/help/da
 
 ![Skapa datavy](assets/create-dataview.png)
 
-## Steg 4: Rapport om CAI-poäng i Workspace
+## Steg 4: Rapport om CAI-poäng i arbetsytan
 
 Skapa ett nytt projekt i Customer Journey Analytics Workspace och dra in visualiseringar.
 

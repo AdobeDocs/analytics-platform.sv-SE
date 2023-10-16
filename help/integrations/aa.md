@@ -2,8 +2,8 @@
 title: Integrera Adobe Analytics med Customer Journey Analytics
 description: Integrera Adobe Analytics med Customer Journey Analytics
 exl-id: 0a9998df-a538-4a84-95a9-98706bd99ac1
-feature: Platform Integration
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%

@@ -2,8 +2,8 @@
 title: Integrera Adobe Journey Optimizer Beslutshantering med Adobe Customer Journey Analytics
 description: Hämta in data som genererats av Adobe Journey Optimizer Decision Management och analysera dem med Analysis Workspace i Customer Journey Analytics.
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Du kan skapa följande dimensioner i en datavy för att uppnå en ungefärlig pa
 | --- | --- | --- |
 | Aktivitetsnamn | `_experience.decisioning.`<br/>`propositionDetails.activity.name` | Komponenttyp: Dimension |
 | Behållaridentifierare | `_experience.decisioning.containerID` | Komponenttyp: Dimension |
-| Korrelationsidentifierare | `_experience.decisioning.`<br/>`propositions.scopeDetails.correlationID` | Komponenttyp: Dimension |
+| Korrelations-ID | `_experience.decisioning.`<br/>`propositions.scopeDetails.correlationID` | Komponenttyp: Dimension |
 | Namn på beslutsalternativ | `_experience.decisioning.`<br/>`propositionDetails.selections.name` | Komponenttyp: Dimension |
 | Alternativ för reservbeslut | `_experience.decisioning.`<br/>`propositionDetails.fallback.name` | Komponenttyp: Dimension |
 | Placeringsnamn | `_experience.decisioning.`<br/>`propositionDetails.placement.name` | Komponenttyp: Dimension |
@@ -77,7 +77,7 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | Erbjudandeinteraktion | Antalet erbjudanden som visas för profilen. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponenttyp: Mått |
 | Skicka erbjudanden | Antalet erbjudanden som skickas till profilen. | `_experience.decisioning.`<br/>`propositionEventType.send` | Komponenttyp: Mått |
 | Erbjudandeutlösare | Antalet erbjudanden som ska visas av klient-SDK. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
-| Avbeställ | Antalet erbjudanden som efterfrågats av profilen visas inte i framtiden. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
+| Avbeställ | Antalet erbjudanden som efterfrågats av profilen som inte ska visas i framtiden. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
 
 {style="table-layout:auto"}
 
