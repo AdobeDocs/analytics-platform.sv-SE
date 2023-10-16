@@ -3,9 +3,9 @@ title: Översikt över Reporting Activity Manager
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Reporting Activity Manager ger följande fördelar:
 
 * Gör att du kan övervaka och hantera rapporteringskapaciteten för varje anslutning i organisationen.
 * Informerar dig i realtid om din nuvarande rapporteringskapacitet över alla dina anslutningar.
-* Innehåller detaljerad rapportfrågeinformation om aktuella rapporteringsbegäranden, oavsett om de står i kö eller pågår.
+* Innehåller detaljerad rapportinformation om aktuella rapporteringsbegäranden, oavsett om de står i kö eller pågår.
 * Gör att du kan optimera rapporteringskön genom att prioritera vissa och avbryta andra rapporteringsbegäranden för att frigöra kapacitet. Den besvarar frågor som: Är den här rapporten nödvändig just nu eller kan jag avbeställa den till förmån för mer brådskande rapporter?
 * Gör att du kan begränsa framtida begäranden för en angiven tidsperiod. Du kan begränsa specifika begäranden eller du kan begränsa alla begäranden från en viss användare eller begäranden som är kopplade till ett visst projekt.
 

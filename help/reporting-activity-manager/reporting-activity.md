@@ -3,7 +3,7 @@ title: Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -171,7 +171,7 @@ När du väljer [!UICONTROL **Projekt**] är följande kolumner tillgängliga i 
 
 | Kolumn | Beskrivning |
 | --- | --- |
-| [!UICONTROL **Projekt**] | Det projekt där frågorna initierades. |
+| [!UICONTROL **Projekt**] | Det projekt där förfrågningarna initierades. |
 | [!UICONTROL **Antal begäranden**] | Antalet begäranden som är associerade med projektet. |
 | [!UICONTROL **Antal användare**] | Antalet användare som är associerade med projektet. <!-- ??? --> |
 | [!UICONTROL **Program**] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för byggare: segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 1.4 eller 2.0 API</li><li>Intelligenta aviseringar</li></ul> |
@@ -188,7 +188,7 @@ När du väljer [!UICONTROL **Program**] är följande kolumner tillgängliga i 
 
 | Kolumn | Beskrivning |
 | --- | --- |
-| [!UICONTROL **Program**] | Det program där frågorna initierades. |
+| [!UICONTROL **Program**] | Programmet där förfrågningarna initierades. |
 | [!UICONTROL **Antal begäranden**] | Antalet begäranden som är associerade med programmet. |
 | [!UICONTROL **Antal användare**] | Antalet användare som är associerade med programmet. <!--???--> |
 | [!UICONTROL **Antal projekt**] | Antalet projekt som är associerade med programmet. <!--???--> |
@@ -198,29 +198,3 @@ När du väljer [!UICONTROL **Program**] är följande kolumner tillgängliga i 
 | [!UICONTROL **Genomsnittliga segment**] | Genomsnittligt antal segment som tillämpas på de inkluderade förfrågningarna. Fler segment ökar komplexiteten i begäran. |
 
 {style="table-layout:auto"}
-
-<!--
-
-### Filter
-
-You can filter the table by Application (see list in the table below), by User, and by Project.
-
-![filter](/help/admin/admin/assets/filter.png)
-
-### Summary Numbers {#summary}
-
-![filter](/help/admin/admin/assets/summary_numbers.png)
-
-The Summary Numbers show the following information:
-
-| Summary Number | Description |
-| --- | --- |
-| [!UICONTROL **Users**] | The number of users that are currently sending reporting requests to this connection. |
-| [!UICONTROL **Projects**] | Workspace projects, Report Builder workbooks, etc.  | 
-| [!UICONTROL **Queries**] | The number of queries currently running. |
-| [!UICONTROL **Average Wait Time**] | The average wait time for all running queries.  |
-| [!UICONTROL **Usage Capacity**] | The current usage capacity for this connection. |
-
-{style="table-layout:auto"}
-
--->
