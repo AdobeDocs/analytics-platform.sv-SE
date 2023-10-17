@@ -4,10 +4,10 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 7%
+source-wordcount: '816'
+ht-degree: 6%
 
 ---
 
@@ -20,15 +20,11 @@ ht-degree: 7%
 
 * **Allokering** I kan du bestämma vilket värde som ska behållas när mer än en dimensionspost kan finnas i taget i en enda kolumn.
 
-<!--
-
   >[!NOTE]
   >
-  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >Om du har en [icke-standardattribueringsmodell](/help/data-views/component-settings/attribution.md) Om du anger ett mått i en rapport ignorerar attribueringsmodellen den allokering du anger för dimensionen för samma rapport.
   >
-  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
-
--->
+  >När du gör en [fullständig tabellexport](/help/analysis-workspace/export/export-cloud.md) som innehåller flera dimensioner, behåller attribueringen de allokeringsmodeller som används för varje dimension.
 
 * **Förfallotid** I kan du bestämma hur länge ett dimensionsobjekt kvarstår efter den händelse det är inställt på.
 

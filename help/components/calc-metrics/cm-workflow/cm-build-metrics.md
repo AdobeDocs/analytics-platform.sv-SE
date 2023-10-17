@@ -3,9 +3,9 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Skapa mätvärden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ I följande bild och medföljande tabell förklaras några av huvudområdena och
 | Förhandsgranska | Ger en snabb läsning av eventuella fel. Förhandsvisningen täcker de senaste 90 dagarna. Det här är ett sätt att först mäta om du har valt rätt komponenter för måttet. Ett oväntat resultat skulle innebära att du måste ta en andra titt på måttdefinitionen. |
 | Produktkompatibilitet | För beräknade värden som du skapar i Customer Journey Analytics anges det här värdet alltid som [!UICONTROL **Fullt bearbetade data**]. Beräknade mått kan bara innehålla data från händelsedatamängder. |
 | Lägg till | För alla typer av beräknade värden kan du lägga till behållare och statiska tal i definitionen. För avancerade beräknade mätvärden kan du även lägga till filter och funktioner.<ul><li>Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas alltså före nästa åtgärd.</li><li>När du drar ett filter till en behållare filtreras allt i behållaren. (Endast avancerade beräknade mätvärden)</li><li>Du kan stapla flera filter i en behållare.</li></ul> |
-| Kugghjulsikon (Mättyp, Attribution) | Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mät- och attribueringsmodeller. <!-- <p>**Note:** Consider the following when updating a component's attribution to a non-default attribution model:</p><ul><li>**When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.</li><li>**When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.</li><li>Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).</li></ul> --> <p>Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).</p> |
+| Kugghjulsikon (Mättyp, Attribution) | Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mät- och attribueringsmodeller. <p>**Obs!** Tänk på följande när du uppdaterar en komponents attribuering till en icke-standardattribueringsmodell:</p><ul><li>**När komponenten används i en rapport med *en dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>**När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering bevarar allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>Flera dimensioner är bara tillgängliga när [exportera data till molnet](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).</p> |
 | Plustecken (+), ikon | Gör att du kan skapa en ny komponent, till exempel ett nytt filter (som tar dig till filterverktyget .) |
 | Sökkomponenter | Med det här sökfältet kan du söka efter dimensioner, mått, filter (endast avancerade beräknade värden) och funktioner (endast avancerade beräknade värden). |
 | Lista över Dimensioner | I stället för att lämna beräkningsverktyget för att skapa ett enkelt filter (i filterverktyget), t.ex. &quot;Page = Homepage&quot;, kan du dra sidan och välja Hemsida direkt från verktyget Beräknade mått. Detta resulterar i ett mycket effektivare arbetsflöde för att skapa filtrerade beräknade mätvärden. |

@@ -4,7 +4,7 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 82e0fbb714852750963e08597b6b1606127e0ac6
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 2%
@@ -60,6 +60,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Varaktighet för marknadsföringsvariabel | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Kundattribut | Profildatauppsättningar importeras inte automatiskt från Experience Cloud, utan måste överföras till Experience Platform innan de kan användas i Customer Journey Analytics. |
 | Dataflöden | Första generationens dataexport av datauppsättningar är tillgänglig via [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) och via [Experience Platform Destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Dessa alternativ ger händelse-/radnivåexport av alla data som samlats in eller importerats till Experience Platform Data Lake. Postprocessdatakolumner är inte tillgängliga eftersom postkolumner beräknas vid frågetiden. Det går att exportera postkolumner genom rapportering. |
+| Data Warehouse | [Customer Journey Analytics Full Table Export](/help/analysis-workspace/export/export-cloud.md) är utvecklingen av rapporter om Data Warehouse i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag. |
 | Poster, avslutningar och använd tid för mått och mätvärden | Stöds (Poster och avslutningar kallas nu för Sessionsstart och Sessionsslut) och beräknas på ett något annorlunda sätt. |
 | Beständiga inställningar för eVar | Varor är inte längre en del av Customer Journey Analytics. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Dimensioner som anges i datavyer är begränsade till högst 90 dagars beständighet och stöder inte obegränsad beständighet. |
 | Geosegmenteringsdimensioner | All GeoSegmentation/geography som samlas in i Adobe Analytics flödar in i Customer Journey Analytics via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementeringar som inte använder Analytics-källkopplingen, men som använder Experience Platform Web SDK för digital datainsamling, kan använda [Upplev tjänsten Edge Geo Lookup](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html). |
@@ -95,7 +96,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Larm | Support planeras. |
 | Bidragsanalys | Support planeras. |
-| Data Warehouse | Support planeras från Analysis Workspace gränssnitt. Adobe Experience Platform [[!UICONTROL Query Service]](<https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv>) har också ett gränssnitt för dessa användningsområden i Customer Journey Analytics. |
 | Häftning av ID med enhetsdiagram | Support planeras. |
 | Projektmallar | Support planeras. |
 | Rapporter i realtid | Support planeras. |
