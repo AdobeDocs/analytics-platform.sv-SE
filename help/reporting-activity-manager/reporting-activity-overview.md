@@ -3,10 +3,10 @@ title: Översikt över Reporting Activity Manager
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 2%
+source-wordcount: '273'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +32,7 @@ Reporting Activity Manager ger följande fördelar:
 
 <!-- update for CJA -->
 
-Om du vill hantera rapporteringsaktiviteten måste du ha behörigheten Analytics Product Administrator i Adobe Admin Console.
-
-![behörighet](assets/rep-mgr-permission.png)
+Om du vill hantera rapporteringsaktivitet måste du ha rollen Produktadministratör. Mer information finns i [Produktadministratörsroll](/help/admin/cja-access-control.md#product-admin-role) in [Åtkomstkontroll för Customer Journey Analytics](/help/admin/cja-access-control.md).
 
 ## Visa rapporteringsaktivitet
 
@@ -43,11 +41,3 @@ Mer information om hur du visar rapporteringsaktivitet i Rapporteringsaktivitets
 ## Avbryt rapporteringsbegäranden
 
 Mer information om hur du avbryter rapportbegäranden i Rapporteringsaktivitetshanteraren finns i [Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
-
-## Frågor och svar {#faq}
-
-| Fråga | Svar |
-| --- | --- |
-| Kan jag köpa ytterligare rapporteringskapacitet? | Den här funktionen kommer att vara tillgänglig inom den närmaste framtiden. |
-
-{style="table-layout:auto"}

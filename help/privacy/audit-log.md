@@ -3,9 +3,9 @@ title: Granskningsloggar
 description: Lär dig hur du visar och hanterar Customer Journey Analytics granskningsloggar.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -42,12 +42,13 @@ Dubbelklicka på knappen info (i) bredvid en beskrivning.
 
 Följande objekt visas:
 
-* **[!UICONTROL Action Name]**: Den åtgärd som vidtagits. Möjliga värden är:
+* **[!UICONTROL Action Name]**: Den åtgärd som har vidtagits. Möjliga värden är:
    * API_REQUEST
    * GODKÄNN
    * SKAPA
    * DELETE
    * REDIGERA
+   * EMBARGO
    * EXPORTERA
    * ORG_CHANGE
    * UPPDATERA
@@ -57,9 +58,9 @@ Följande objekt visas:
    * AVDELA
 * **[!UICONTROL Date Created]**: Datum och tid då åtgärden utfördes.
 * **[!UICONTROL Description]**: En sammanfattning av åtgärden.
-* **[!UICONTROL User Name]**: Användaren som utförde åtgärden.
+* **[!UICONTROL User Name]**: Den användare som utförde åtgärden.
 * **[!UICONTROL Email]**: E-postadressen till användaren som utförde åtgärden.
-* **[!UICONTROL Component Name]**: Komponenten som användaren vidtagit åtgärder på.
+* **[!UICONTROL Component Name]**: Komponenten som användaren utförde en åtgärd på.
 * **[!UICONTROL Component Type]**: Komponenttypen. Möjliga värden är:
    * ANTECKNING
    * MÅLGRUPP
@@ -78,11 +79,11 @@ Följande objekt visas:
    * SCHEDULED_PROJECT
    * ANVÄNDARE
    * USER_GROUP
-* **[!UICONTROL Component ID]**: ID:t för komponenten som användaren vidtagit åtgärder för.
+* **[!UICONTROL Component ID]**: ID:t för komponenten som användaren utförde åtgärden på.
 * **[!UICONTROL IMS Org ID]**: Organisationens IMS-ID i formatet `ABC123@AdobeOrg`.
-* **[!UICONTROL Log ID]**: Ett unikt ID som identifierar den här loggposten.
-* **[!UICONTROL User ID]**: Det unika ID som identifierar användaren som utförde åtgärden.
-* **[!UICONTROL User Type]**: Autentiseringstypen som används. Giltiga värden är:
+* **[!UICONTROL Log ID]**: Ett unikt ID som identifierar loggposten.
+* **[!UICONTROL User ID]**: Det unika ID:t som identifierar användaren som utförde åtgärden.
+* **[!UICONTROL User Type]**: Den autentiseringstyp som används. Giltiga värden är:
    * IMS
    * OKTA
 

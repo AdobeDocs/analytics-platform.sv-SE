@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: d5a46c4ffbacb0e05a637ee9e19875572a2aebf4
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ Produktadministratörer har behörighet att utföra alla uppgifter som krävs i 
 * Skapa/uppdatera/ta bort anslutningar eller datavyer
 * Uppdatera/ta bort projekt, filter, beräknade värden, målgrupper, anteckningar eller filter som skapats av andra användare
 * Dela arbetsyteprojekt till alla användare
+* Hantera rapporteringsaktivitet i [Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity-overview.md)
 
 Att bli produktadministratör i Customer Journey Analytics räcker inte för att skapa, uppdatera eller ta bort en [anslutning](/help/connections/overview.md). Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform produktprofil** som ger dig följande behörigheter:
 
