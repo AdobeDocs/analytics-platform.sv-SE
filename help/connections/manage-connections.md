@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1600'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Med Anslutningshanteraren kan du:
 
 * Visa alla dina anslutningar i en överblick, inklusive ägaren, sandlådan och när de skapades och ändrades.
 * Visa alla datauppsättningar i en anslutning.
-* Kontrollera status för en anslutning.
+* Kontrollera anslutningsstatus.
 * Ta bort en anslutning.
 * Byt namn på en anslutning.
 * Skapa en datavy från en anslutning.
@@ -41,7 +41,7 @@ Med Anslutningshanteraren kan du:
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL Name] | Anslutningens egna namn. När du klickar på namnet på den hyperlänkade länken visas sidan med anslutningsinformation som beskrivs nedan. |
+| [!UICONTROL Name] | Anslutningens egna namn. När du klickar på namnet på den hyperlänkade länken kommer du till sidan med anslutningsinformation som beskrivs nedan. |
 | Anslutningsinformation | Klicka på informationsikonen bredvid anslutningsnamnet för att visa följande information:![Visa anslutningsinformation](assets/conn-info.png) |
 | Redigera en anslutning | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Edit].![Redigera anslutning](assets/conn-edit-delete.png) Mer information finns i Redigera anslutning nedan. |
 | Ta bort en anslutning | Klicka på ellipsen (..) bredvid anslutningsnamnet och klicka sedan på [!UICONTROL Delete]. Mer information under rubriken &quot;Ta bort anslutningar&quot; nedan. |
@@ -100,9 +100,9 @@ Här beskrivs widgetar och inställningar:
 | Kalender-/datumintervall | Datumintervallet anger när du lade till data i anslutningen. Alla standardförinställningar för kalendrar ingår. Du kan anpassa datumintervallet, men inga anpassade datumintervall visas i listrutan. |
 | [!UICONTROL Records of event data available] widget | Representerar det totala antalet händelsedatarader som är tillgängliga för rapportering, **för hela anslutningen**. Antalet är oberoende av eventuella kalenderinställningar. Den ändras om du väljer en datauppsättning från datauppsättningsväljaren eller genom att markera en datauppsättning i tabellen. (Observera att det finns en fördröjning på 1-2 timmar för att visa data i rapporter, när de har lagts till.) |
 | [!UICONTROL Metrics] widget | Sammanfattar de händelseposter som lagts till/hoppats över/tagits bort och antalet batchar som lagts till, **för den datauppsättning och det datumintervall som du har valt**. |
-| [!UICONTROL Records added] widget | Anger hur många rader som har lagts till under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Uppdaterades var 10:e minut. **Anteckning**: Data för **[!UICONTROL Records added]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
-| [!UICONTROL Records skipped] widget | Anger hur många rader som hoppades över under den valda tidsperioden. **för den datauppsättning och det datumintervall som du har valt**. Orsaker till att hoppa över poster är: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel &quot;undefined&quot; eller &quot;000000&quot;) eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) inte kan tillskrivas någon specifik användare eller person. De kan inte importeras till systemet och leder till felbenägen intag och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Flerkanalsanalys](/help/cca/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som också kommer att hoppas över vid förtäring (helst inte med ogiltiga eller helt nolla användar-ID:n).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul><p>**Anteckning**: Data för **[!UICONTROL Records skipped]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
-| [!UICONTROL Records deleted] widget | Anger hur många rader som har tagits bort under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Någon kan till exempel ha tagit bort en datauppsättning i Experience Platform. Uppdaterades var 10:e minut. **Anteckning**: Data för **[!UICONTROL Records deleted]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
+| [!UICONTROL Records added] widget | Anger hur många rader som har lagts till under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Uppdaterades var 10:e minut. |
+| [!UICONTROL Records skipped] widget | Anger hur många rader som hoppades över under den valda tidsperioden. **för den datauppsättning och det datumintervall som du har valt**. Orsaker till att poster hoppas över är bland annat: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel &quot;undefined&quot; eller &quot;000000&quot;) eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) inte kan tillskrivas någon specifik användare eller person. De kan inte importeras till systemet och leder till felbenägen intag och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Flerkanalsanalys](/help/cca/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som också kommer att hoppas över vid förtäring (helst inte med ett ogiltigt eller helt nollbaserat användar-ID).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
+| [!UICONTROL Records deleted] widget | Anger hur många rader som har tagits bort under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Någon kan till exempel ha tagit bort en datauppsättning i Experience Platform. Uppdaterades var 10:e minut. |
 | Sökruta för datauppsättning | Du kan söka efter datauppsättningsnamn eller [!UICONTROL Dataset ID]. |
 | [!UICONTROL Datasets] | Visar de datauppsättningar som ingår i anslutningen. Du kan klicka på hyperlänken om du vill visa alla datauppsättningar i anslutningen. |
 | [!UICONTROL Dataset ID] | Detta ID genereras automatiskt av Adobe Experience Platform. |
@@ -134,11 +134,11 @@ Här beskrivs widgetar och inställningar:
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Person ID] | Visar en identitet som definierades i datauppsättningsschemat i Experience Platform. Detta är det person-ID som du valde när anslutningen skapades. Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du verkligen vill sammanfoga datauppsättningar måste du använda samma person-ID för alla datauppsättningar. |
-| [!UICONTROL Records available] | Representerar det totala antalet rader som kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. (Undantaget är att när du skapar en helt ny anslutning kommer det att finnas [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#3.-getting-data-into-customer-travel-analytics). |
-| [!UICONTROL Records added] | Anger hur många rader som har lagts till under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records added]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
-| [!UICONTROL Records deleted] | Anger hur många poster som togs bort under den valda tidsperioden. **Anteckning**: Data för **[!UICONTROL Records deleted]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
+| [!UICONTROL Records available] | Representerar det totala antalet rader som kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. (Undantaget är att när du skapar en helt ny anslutning kommer det [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#3.-getting-data-into-customer-travel-analytics). |
+| [!UICONTROL Records added] | Anger hur många rader som har lagts till under den valda tidsperioden. |
+| [!UICONTROL Records deleted] | Anger hur många poster som togs bort under den valda tidsperioden. |
 | [!UICONTROL Batches added] | Anger hur många datagrupper som har lagts till i den här datauppsättningen. |
-| [!UICONTROL Records skipped] | Anger hur många rader som hoppats över under intag under den valda tidsperioden.<p>Orsaker till att hoppa över poster är: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel &quot;undefined&quot; eller &quot;000000&quot;) eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) inte kan tillskrivas någon specifik användare eller person. De kan inte importeras till systemet och leder till felbenägen intag och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Flerkanalsanalys](/help/cca/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som också kommer att hoppas över vid förtäring (helst inte med ogiltiga eller helt nolla användar-ID:n).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul><p>**Anteckning**: Data för **[!UICONTROL Records skipped]** inkluderar endast händelsedata för tillfället, inte profil- eller sökdata. |
+| [!UICONTROL Records skipped] | Anger hur många rader som hoppats över under intag under den valda tidsperioden.<p>Orsaker till att poster hoppas över är bland annat: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel &quot;undefined&quot; eller &quot;000000&quot;) eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) inte kan tillskrivas någon specifik användare eller person. De kan inte importeras till systemet och leder till felbenägen intag och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Flerkanalsanalys](/help/cca/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som också kommer att hoppas över vid förtäring (helst inte med ett ogiltigt eller helt nollbaserat användar-ID).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
 | [!UICONTROL Last added] | Anger när den senaste batchen lades till. |
 | [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | [!UICONTROL Schema] | Visar det Adobe Experience Platform-schema som den här datauppsättningen baseras på. |

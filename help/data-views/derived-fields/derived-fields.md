@@ -4,9 +4,9 @@ description: Ett härlett fält anger ändringar av schemafält och/eller standa
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
 workflow-type: tm+mt
-source-wordcount: '5185'
+source-wordcount: '5382'
 ht-degree: 4%
 
 ---
@@ -100,6 +100,22 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
    - Välj **[!UICONTROL ** Spara som **]** för att spara det härledda fältet som ett nytt härlett fält. Det nya härledda fältet har samma namn som det ursprungliga redigerade härledda fältet med `(copy)` läggs till i den.
 
+Om du har använt ett härlett fält som en komponent för mått eller mätvärden i datavyn kan du även:
+
+1. Markera komponenten. Observera att komponenten kan ha ett annat namn än det härledda fältet.
+
+1. I panelen Komponenter väljer du ![Ikonen Redigera](assets/Smock_Edit_18_N.svg) bredvid det härledda fältet, under schemafältnamnet.
+
+1. Använd knappen [!UICONTROL Edit derived field] gränssnitt. Se [Härlett fältgränssnitt](#derived-field-interface).
+
+   - Välj **[!UICONTROL ** Spara **]** för att spara det uppdaterade härledda fältet.
+
+   - Välj **[!UICONTROL ** Avbryt **]** om du vill avbryta alla ändringar du har gjort i det härledda fältet.
+
+   - Välj **[!UICONTROL ** Spara som **]** för att spara det härledda fältet som ett nytt härlett fält. Det nya härledda fältet har samma namn som det ursprungliga redigerade härledda fältet med `(copy)` läggs till i den.
+
+
+
 ## Ta bort ett härlett fält
 
 1. Välj en befintlig datavy. Se [Datavyer](../data-views.md) för mer information.
@@ -112,7 +128,19 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 5. Håll pekaren över det härledda fält som du vill ta bort och markera ![Ikonen Redigera](assets/Smock_Edit_18_N.svg).
 
-6. Används **[!UICONTROL ** Redigera härlett fält **]** väljer du Ta bort.
+6. I [!UICONTROL Edit derived field] gränssnitt, välja **[!UICONTROL Delete]**.
+
+   A [!UICONTROL Delete component] uppmanas du att bekräfta borttagningen. Ta hänsyn till eventuella externa referenser som finns till det härledda fältet utanför datavyn.
+
+   - Välj **[!UICONTROL ** Fortsätt **]** för att ta bort det härledda fältet.
+
+Om du har använt ett härlett fält som en komponent för mått eller mätvärden i datavyn kan du även:
+
+1. Markera komponenten. Observera att komponenten kan ha ett annat namn än det härledda fältet.
+
+1. I panelen Komponenter väljer du ![Ikonen Redigera](assets/Smock_Edit_18_N.svg) bredvid det härledda fältet, under schemafältnamnet.
+
+1. I [!UICONTROL Edit derived field] gränssnitt, välja **[!UICONTROL Delete]**.
 
    A [!UICONTROL Delete component] uppmanas du att bekräfta borttagningen. Ta hänsyn till eventuella externa referenser som finns till det härledda fältet utanför datavyn.
 
