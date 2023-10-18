@@ -3,7 +3,7 @@ title: Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 3c4f7bc66c21987cbbf0c00a5aec6c9df97b165a
+source-git-commit: 7760f2d5af131549b1ff2a6ad13b01bae81636f7
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 1%

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Översikt över visualiseringar
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1274'
 ht-degree: 3%
 
 ---
@@ -20,24 +20,24 @@ Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuel
 Följande visualiseringstyper finns i Analysis Workspace:
 
 | Visualiseringsnamn | Beskrivning |
-| --- | --- |
-| [Område](/help/analysis-workspace/visualizations/area.md) | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
-| [Liggande](/help/analysis-workspace/visualizations/bar.md) | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
-| [Punktdiagram](/help/analysis-workspace/visualizations/bullet-graph.md) | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
-| [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
-| [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller filter av en helhet. |
-| [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Utfallsrapporter visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Kan anges till sekvenser av typen slutlig eller exakt |
-| [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | Visar exakta kundvägar via era webbplatser och appar. |
-| [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. Det är grunden för dataanalys i Workspace. |
-| [Histogram](/help/analysis-workspace/visualizations/histogram.md) | Ett histogram spänner över personer, besök eller händelser i grupper baserat på en mätvolym. |
-| [Vågrätt fält](/help/analysis-workspace/visualizations/horizontal-bar.md) | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
-| [Linjediagram](/help/analysis-workspace/visualizations/line.md) | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram använder tid längs x-axeln. |
-| [Spridningsdiagram](/help/analysis-workspace/visualizations/scatterplot.md) | Visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
-| [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md) | Visar den markerade cellen som ett stort tal. |
-| [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) | Visar ändringen mellan de markerade cellerna som ett stort tal/procent. |
-| [Text](/help/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
-| [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md) | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Använder cirklar för att beskriva måttöverlappningen för upp till 3 filter. |
+| --- | --- | 
+| [Område](/help/analysis-workspace/visualizations/area.md)<p>![Ikon för område](assets/Smock_GraphArea_18_N.svg)</p> | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. | Svar: <ul><li> |
+| [Liggande](/help/analysis-workspace/visualizations/bar.md) <p>![Ikon för stapel](assets/Smock_GraphBarVertical_18_N.svg)</p> | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
+| [Punktdiagram](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Punktlikon](assets/Smock_GraphBullet_18_N.svg)</p> | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
+| [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Kohortabellikon](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
+| [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) <p>![Ringformsikon](assets/Smock_GraphDonut_18_N.svg)</p> | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller filter av en helhet. |
+| [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Utfallsikon](assets/Smock_ConversionFunnel_18_N.svg)</p> | Utfallsrapporter visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Kan anges till sekvenser av typen slutlig eller exakt |
+| [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Flödesikon](assets/flow-icon.png)</p> | Visar exakta kundvägar via era webbplatser och appar. |
+| [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Ikon för frihandstabell](assets/Smock_ViewTable_18_N.svg)</p> | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. Det är grunden för dataanalys i Workspace. |
+| [Histogram](/help/analysis-workspace/visualizations/histogram.md)<p>![Histogram, ikon](assets/Smock_GraphHistogram_18_N.svg)</p> | Ett histogram spänner över personer, besök eller händelser i grupper baserat på en mätvolym. |
+| [Vågrätt fält](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![Ikon för vågrätt fält](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
+| [Linjediagram](/help/analysis-workspace/visualizations/line.md)<p>![Linjeikon](assets/Smock_GraphTrend_18_N.svg)</p> | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram använder tid längs x-axeln. |
+| [Spridningsdiagram](/help/analysis-workspace/visualizations/scatterplot.md) <p>![Scatplot, ikon](assets/Smock_GraphScatter_18_N.svg)</p> | Visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
+| [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ikon för summeringsnummer](assets/summary-number-icon.png)</p> | Visar den markerade cellen som ett stort tal. |
+| [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ikon för ändring av sammanfattning](assets/summary-change-icon.png)</p> | Visar ändringen mellan de markerade cellerna som ett stort tal/procent. |
+| [Text](/help/analysis-workspace/visualizations/text.md)<p>![Scatplot, ikon](assets/Smock_Text_18_N.svg)</p> | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
+| [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap, ikon](assets/Smock_GraphTree_18_N.svg)</p> | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Vennikon](assets/venn-icon.png)</p> | Använder cirklar för att beskriva måttöverlappningen för upp till 3 filter. |
 
 ## Lägga till visualiseringar i en panel
 
