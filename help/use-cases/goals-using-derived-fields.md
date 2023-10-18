@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 53cf026531ac5690a3e5a31acaa5654a52747b69
+source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '428'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Ni vill ange ett månatligt intäktsmål för varje marknadsföringskanal. Så h
 
 ## Använd mål
 
-Om du vill använda mål i ditt Workspace-projekt använder du funktionen för beräknade mått för att&quot;normalisera&quot; det härledda fältet tillbaka till det ursprungliga statiska värdet.
+Om du vill använda mål i ditt Workspace-projekt använder du funktionen för beräknade mått för att&quot;normalisera&quot; det härledda fältet tillbaka till det ursprungliga statiska värdet. Denna normalisering krävs eftersom de statiska värden som du anger för de härledda fälten som definierar mål ökas med varje händelse.
 
 ### Mål för månatliga gipscertifikatorder
 
