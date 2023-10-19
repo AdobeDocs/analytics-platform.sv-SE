@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera exportloggar
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,26 @@ ht-degree: 0%
 Exportloggar innehåller information om varje export och genereras när Analysis Workspace-data exporteras till molnet. (Mer information om hur data kan exporteras till molnet finns i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md).)
 
 Vid schemalagd export återspeglar loggarna exportinställningarna som de var när loggen skickades. Det går inte att ta bort loggar.
+
+## Visa exportloggar
+
+1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
+
+1. Välj [!UICONTROL **Loggar**] -fliken.
+
+   ![Fliken Exportera loggar](assets/export-logs-tab.png)
+
+   Information om loggarna visas i de tillgängliga kolumnerna.
+
+1. Gör något av följande:
+
+   * [Anpassa kolumnerna](#configure-columns) som visas.
+
+   * Välj **Informationsikon** ![Informationsikon](assets/information-icon.png) bredvid loggnamnet för att visa exporten som är kopplad till loggen.
+
+   * Välj **Ikonen Redigera export** ![Informationsikon](assets/edit-export-icon.png) bredvid loggnamnet för att redigera exporten som är kopplad till loggen.
+
+     Mer information om hur du redigerar och exporterar finns i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md).
 
 ## Filtrera och söka efter loggar
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -63,11 +63,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 ## Ta bort platser
 
-Om du tar bort en plats tas även alla exporter som använder platsen bort.
-
-Innan du tar bort en plats kontrollerar du först om den används av någon export genom att markera informationsikonen bredvid platsnamnet.
-
-![ansluten export](assets/location-connected-exports.png)
+Om du tar bort en plats tas även alla exporter som använder platsen bort. Kontrollera bekräftelsedialogrutan när du tar bort för att se om inga exporter är associerade med platsen.
 
 Så här tar du bort en plats:
 
@@ -77,7 +73,15 @@ Så här tar du bort en plats:
 
    ![Redigera platser](assets/locations-edit.png)
 
-1. Välj [!UICONTROL **Ta bort**] väljer [!UICONTROL **Ta bort**] igen i bekräftelsedialogrutan.
+1. Välj [!UICONTROL **Ta bort**].
+
+   Dialogrutan Ta bort plats visas.
+
+1. Kontrollera att platsen inte är kopplad till någon export innan du bekräftar borttagningen i dialogrutan Ta bort plats.
+
+   ![Ta bort bekräftelsedialogruta för plats](assets/delete-location-confirmation-dialog.png)
+
+1. Välj [!UICONTROL **Ta bort**] igen för att bekräfta.
 
 ## Redigera konton
 
@@ -85,7 +89,7 @@ Så här tar du bort en plats:
 
 1. Välj [!UICONTROL **Platskonton**] -fliken.
 
-   ![Kontosida](assets/account-page.png)
+   ![Kontosida](assets/account-add.png)
 
 1. Välj [!UICONTROL **Visa detaljer**] på kontot som du vill redigera.
 
@@ -101,7 +105,7 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
 1. Välj [!UICONTROL **Platskonton**] -fliken.
 
-   ![Kontosida](assets/account-page.png)
+   ![Kontosida](assets/account-add.png)
 
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Kontonycklar**].
 
@@ -111,7 +115,7 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
 1. Välj [!UICONTROL **Platskonton**] -fliken.
 
-   ![Kontosida](assets/account-page.png)
+   ![Kontosida](assets/account-add.png)
 
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Ta bort konto**].
 
