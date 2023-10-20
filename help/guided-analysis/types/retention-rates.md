@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: produktanalys
 hide: true
 hidefromtoc: true
-source-git-commit: ec0d57d0573b21767ed1703c9ddb1172e442e10a
+source-git-commit: 1cadf9d863c18f590a99e22d7b0e79b1074bf29f
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Efterföljande varaktighetsintervall anger antalet användare som har returnerat
 * Om en användare endast engagerar sig i händelsen en gång under det önskade datumintervallet (det inledande engagemanget) visas de bara i&quot;dag 0&quot;-varaktighetsknappen.
 * Om en användare engagerar sig i händelsen flera dagar efter att först ha kvalificerat sig för att ingå i analysen, visas de i den senaste kvalificerande varaktighetsgruppen och alla varaktighetsintervall som leder fram till den. Den här typen av beräkning kallas ibland för&quot;obegränsad kvarhållning&quot;.
 * Om en användare engagerar sig i händelsen många gånger under det konfigurerade datumintervallet inkluderas endast den första och den sista händelsen i analysen.
+
+![Bevarandefrekvens, bild](../assets/retention-rates.png)
 
 ## Användningsexempel
 
