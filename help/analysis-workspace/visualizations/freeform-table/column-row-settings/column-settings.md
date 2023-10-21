@@ -1,12 +1,12 @@
 ---
-description: Med kolumninställningar kan du konfigurera kolumnformatering, som vissa kan vara villkorliga.
+description: Lär dig hur du redigerar kolumninställningar för att konfigurera kolumnformatering, som vissa kan vara villkorliga.
 title: Kolumninställningar
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 16%
+source-wordcount: '792'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ Visa en video om rad- och kolumninställningar här:
 
 För åtkomst [!UICONTROL Column Settings]drar du en friformstabell till projektet och klickar sedan på kugghjulsikonen i kolumnrubriken.
 
-![](assets/column_settings.png)
+![Kolumninställningarna som visar cellerna Totalt, Tabellceller och Förhandsvisning av tabellceller.](assets/column_settings.png)
 
 Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara flera kolumner och klicka på inställningsikonen för någon av dessa kolumner. Alla ändringar du gör gäller för alla kolumner där celler är markerade.
 
@@ -42,7 +42,7 @@ Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara f
 
 Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre gränser som du kan definiera. Om du använder villkorsstyrd formatering (färger o.s.v.) i frihandstabeller aktiveras även automatiskt vid uppdelning, såvida inte &quot;Anpassade&quot; gränser har valts.
 
-![](assets/conditional-formatting.png)
+![Alternativen för villkorsstyrd formatering med Anpassa har valts.](assets/conditional-formatting.png)
 
 | Element | Beskrivning |
 | --- | --- |
@@ -72,11 +72,11 @@ Så här använder du en icke-standardattribueringsmodell för ett mätresultat 
 
 1. Klicka på inställningsikonen (kugghjulsikonen) på ett mätvärde i kolumnen Frihandstabell.
 
-   ![Kryssrutan Attribut](assets/attribution-checkbox.png)
+   ![Alternativen för kolumninställningar markerar datainställningar: Använd ett icke-standardattribueringsläge.](assets/attribution-checkbox.png)
 
 2. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributionsmodeller](/help/data-views/component-settings/attribution.md).
 
-   ![Välj attribueringsmodell](assets/attribution-select.png)
+   ![Alternativen för Kolumnattributmodell visar Linjär markerad.](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

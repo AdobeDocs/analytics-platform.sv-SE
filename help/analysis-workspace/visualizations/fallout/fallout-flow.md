@@ -1,20 +1,20 @@
 ---
-description: Bortfallsvisualiseringar visar var personer slutade (faller bort) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
-title: Översikt över utfall
+description: Läs mer om bortfallsrapporter och visualiseringar.
+title: Om utfallsrapporter och visualiseringar
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 4%
+source-wordcount: '234'
+ht-degree: 3%
 
 ---
 
 # Översikt över utfall
 
-Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Utfallsrapporter visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
+Utfallsrapporter visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
 
-Med hjälp av bortfallsvisualiseringar kan du
+Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Med hjälp av bortfallsvisualiseringar kan du:
 
 * Jämför två olika filter sida vid sida i samma rapport.
 * Dra, släpp och ordna om steg i tratten (kontaktytor)
@@ -29,8 +29,8 @@ Du kan till exempel spåra en persons bortfallspunkter under en inköpsprocess. 
 En bortfallsvisualisering är användbar vid analys av:
 
 * Konverteringsgrader genom specifika processer på er webbplats (t.ex. ett inköp eller en registreringsprocess).
-* Allmänna, bredare trafikflöden: Av de personer som såg hemsidan visar det här flödet hur många som har gjort en sökning och sedan hur många som till slut gick vidare för att titta på ett visst objekt.
-* Korrelationer mellan händelser på din webbplats. Korrelationer visar hur många procent av dem som tittade på din integritetspolicy fortsatte att köpa en produkt.
+* Allmänna, bredare trafikflöden: Av de personer som såg hemsidan visar det här flödet hur många som har gjort en sökning och hur många som till slut gick vidare för att titta på ett visst objekt.
+* Korrelationer mellan händelser på din webbplats. Korrelationer visar hur många procent av dem som tittade på din integritetspolicy gick vidare för att köpa en produkt.
 
-[Videosjälvstudievideo om bortfallsvisualisering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
+[Videosjälvstudievideo om bortfall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 

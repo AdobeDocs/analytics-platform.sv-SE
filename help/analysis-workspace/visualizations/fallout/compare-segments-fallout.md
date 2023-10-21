@@ -4,9 +4,9 @@ keywords: bortfall och filter;filter i bortfallsanalys;jämför filter i bortfal
 title: Använda filter i bortfallsanalys
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 >[!IMPORTANT]
 >
->Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en person-context Fallout måste filter som används som kontrollpunkter vara besök eller händelsebaserade filter. Med en kontextutfällning för besök måste filter som används som kontrollpunkt vara händelsebaserade filter. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, t.ex.:
+>Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en person-context Fallout måste filter som används som kontrollpunkter vara besök eller händelsebaserade filter. Med en kontextutfällning måste filter som används som kontrollpunkt vara händelsebaserade filter. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, som:
 
 * Använda ett personbaserat filter som kontaktyta inuti en personsammanhangsbaserad utfallsvisualisering
 * Använda ett personbaserat filter som kontaktyta i en sammanhangsbaserad Fallout-visualisering
@@ -27,11 +27,11 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 1. Skapa ett filter från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbart för andra rapporter. Du gör detta genom att högerklicka på kontaktytan och välja **[!UICONTROL Create filter from touchpoint]**.
 
-   ![](assets/segment-from-touchpoint.png)
+   ![Touchpoint-menyn med Skapa segment från kontaktyta markerad.](assets/segment-from-touchpoint.png)
 
    Filterverktyget öppnas och är ifyllt med det fördefinierade sekventiella filtret som matchar den kontaktyta du valde:
 
-   ![](assets/segment-builder.png)
+   ![I Filter Builder visas det förfyllda och fördefinierade sekventiella filtret.](assets/segment-builder.png)
 
 1. Ge filtret en titel och en beskrivning och spara den.
 
@@ -41,7 +41,7 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 Om du till exempel vill se hur användarna i USA trendar och påverkar utfallet drar du bara filtret för användare i USA till utfallet:
 
-![](assets/segment-touchpoint.png)
+![Filtret Användare i USA är markerat och markerat för att dras till utfallet.](assets/segment-touchpoint.png)
 
 Du kan också skapa en OCH-kontaktyta genom att dra filtret för amerikanska användare till en annan kontrollpunkt.
 
@@ -49,13 +49,13 @@ Du kan också skapa en OCH-kontaktyta genom att dra filtret för amerikanska anv
 
 Du kan jämföra ett obegränsat antal filter i Utfallsvisualiseringen.
 
-1. Välj de filter som du vill jämföra i dialogrutan [!UICONTROL Filter] till vänster. I vårt exempel har vi valt två filter: Användare i USA och användare utanför USA.
+1. Välj de filter som du vill jämföra i dialogrutan [!UICONTROL Filter] till vänster. I vårt exempel har vi valt två filter: Användare i USA och Användare utanför USA.
 1. Dra dem till filtersläppzonen längst upp.
 
-   ![](assets/segment-drop.png)
+   ![Utfallsvisualisering med valda filter och röd pil som pekar på filtersläppszonen.](assets/segment-drop.png)
 
-1. Valfritt: Du kan behålla&quot;Alla besök&quot; som standardbehållare eller ta bort den.
+1. Valfritt: Du kan behålla &quot;Alla besök&quot; som standardbehållare eller ta bort den.
 
-   ![](assets/seg-compare.png)
+   ![Utfallsbilden visar alla besök tillsammans med de två filter som har dragits i föregående steg.](assets/seg-compare.png)
 
 1. Du kan nu jämföra utfallet för de två filtren, till exempel var ett filter ligger efter ett annat eller andra insikter.

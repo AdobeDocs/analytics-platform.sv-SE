@@ -1,11 +1,11 @@
 ---
-description: Lär dig hur du anger kontaktytorna för att skapa en flerdimensionell utfallssekvens.
+description: Lär dig hur du anger kontaktytorna för att skapa en flerdimensionell fallsekvens.
 title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '713'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan t.ex. lägga till händelser, t.ex. enheter, samt unika personer och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
-Du kan till och med lägga till filter i en kontaktyta. Du kanske vill jämföra filter som iOS- och Android-användare. Dra de önskade filtren högst upp i utfallet och information om dessa filter läggs till i utfallsrapporten. Om du bara vill visa dessa filter, kan du ta bort baslinjen Alla besök.
+Du kan också lägga till filter i en kontaktyta. Du kanske vill jämföra filter som iOS- och Android-användare. Dra de önskade filtren högst upp i utfallet och information om dessa filter läggs till i utfallsrapporten. Om du bara vill visa dessa filter, kan du ta bort baslinjen Alla besök.
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
@@ -24,7 +24,7 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
 
 1. Dra siddimensionen till frihandstabellen och sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]** som första kontaktyta.
 
-   ![](assets/fallout1.png)
+   ![Listrutan Alla besök visar JEsquire som dras till fältet Lägg till kontaktpunkt.](assets/fallout1.png)
 
    Håll muspekaren över en kontaktyta för att se bortfallet och annan information om den nivån, t.ex. namnet på kontaktytan, antalet personer vid den punkten och se hur framgångsrik kontaktytan är (samt jämför framgångssiffran med andra kontaktytor).
 
@@ -40,11 +40,11 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
    >
    >Flera filter förenas med AND, men flera objekt som dimensionsobjekt och mått förenas med OR.
 
-   ![](assets/multiple_obj_touchpoint.png)
+   ![Page:CamerRoll eller Page: Kamerans kontaktytor är markerade.](assets/multiple_obj_touchpoint.png)
 
 1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från&quot;finally&quot;) i banan. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
 
-   ![](assets/next-hit-eventually.png)
+   ![Vyn Alla besök visar alternativet för eventuell sökväg markerat. ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 
@@ -53,7 +53,7 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
    <td colname="col2"> <p>Besökare räknas som"så småningom" landar på nästa sida i banan, men inte nödvändigtvis på nästa händelse. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Nästa träff </p> </td> 
+   <td colname="col1"> <p>Nästa </p> </td> 
    <td colname="col2"> <p>Besökare räknas som kommer att landa på nästa sida i banan vid nästa händelse. </p> </td> 
   </tr> 
  </tbody> 

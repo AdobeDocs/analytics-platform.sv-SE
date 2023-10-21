@@ -1,12 +1,12 @@
 ---
-description: Använd flödesvisualisering i ett Workspace-projekt.
+description: Lär dig hur du använder flödesvisualisering i ett Workspace-projekt.
 title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Flödesvisualiseringar hjälper er att förstå den resa som härrör från elle
 
 Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökväg du är intresserad av, eller analysera alla banor som flödar genom en dimension eller dimensionspost.
 
-![nytt flödesgränssnitt](assets/new-flow.png)
+![Skärmen Flödeskonfiguration visar fälten Börjar med, Innehåller och Slutar med.](assets/new-flow.png)
 
 ## Skapa en flödesvisualisering {#configure}
 
@@ -45,11 +45,11 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
 
 1. Om du väljer ett mätvärde måste du även ange [!UICONTROL **Dimensionen Banor**] som du använder som banleder till eller går från den markerade komponenten, enligt nedan. Standardvärdet är [!UICONTROL **Sida**].
 
-   ![målningsdimension](assets/pathing-dim.png)
+   ![Dimensionen Pathing.](assets/pathing-dim.png)
 
 1. (Valfritt) Välj **[!UICONTROL Show advanced settings]** om du vill konfigurera något av följande alternativ:
 
-   ![avancerade inställningar](assets/adv-settings.png)
+   ![Avancerade inställningar med visningsalternativ, Antal kolumner och Flödesbehållare.](assets/adv-settings.png)
 
    | Inställning | Beskrivning |
    | --- | --- |
@@ -80,7 +80,7 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
 
 ## Visa och ändra flödesutdata {#output}
 
-![flödesutdata](assets/flow-output.png)
+![Exempel på flödesutdata som visar Slut med besök, Sökningsdimension: Sida och Flödesbehållare: Stycken.](assets/flow-output.png)
 
 En sammanfattning av flödeskonfigurationen visas högst upp i diagrammet. Banorna i diagrammet är proportionella. Banor med mer aktivitet ser tjockare ut.
 
@@ -90,7 +90,7 @@ Om du vill gå längre ned i informationen har du flera alternativ:
 
 * När du klickar på en nod i diagrammet visas information om den noden. Klicka på noden igen för att komprimera den.
 
-  ![nodinformation](assets/node-details.png)
+  ![Exempel på interaktivt flödesdiagram som visar nodinformation.](assets/node-details.png)
 
 * Du kan filtrera en kolumn så att endast vissa resultat visas, t.ex. inkludera och exkludera, ange villkor osv.
 

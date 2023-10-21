@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera en kohortanalysrapport
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Skapa en kohort och kör en [!UICONTROL Cohort Analysis] rapportera i Analysis W
 
 1. Klicka på **[!UICONTROL Visualizations]** ikonen i den vänstra listen och dra en **[!UICONTROL Cohort Table]** till arbetsytan.
 
-   ![](assets/cohort-table.png)
+   ![Ett exempel på en kohorttabell som visar inkluderingsvillkor och returvillkor.](assets/cohort-table.png)
 
 1. Definiera **[!UICONTROL Inclusion Criteria]**, **[!UICONTROL Return Criteria]**, **[!UICONTROL Cohort Type]** och **[!UICONTROL Settings]** enligt definitionen i tabellen nedan.
 
@@ -37,7 +37,7 @@ Skapa en kohort och kör en [!UICONTROL Cohort Analysis] rapportera i Analysis W
 
 1. Klicka på **[!UICONTROL Build]**.
 
-   ![Stegresultat](assets/cohort-report.png)
+   ![Vyn Kohorttabell visar de valda inkluderingsvillkoren och returkriterierna. Klicka på Skapa.](assets/cohort-report.png)
 
    Rapporten visar vilka som gjort en beställning ( *`Included`* ) och som återvände till din webbplats vid efterföljande besök. Genom att antalet besök minskar över tid kan du upptäcka problem och vidta åtgärder.
 1. (Valfritt) Skapa ett filter från en markering.
