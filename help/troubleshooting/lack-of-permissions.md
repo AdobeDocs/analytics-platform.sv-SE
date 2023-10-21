@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-source-git-commit: 72d42123a3c9463514ada584530ad959e99d5c94
+source-git-commit: 788d1d32548ef510cf12376b244fcc0e090e189d
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,12 @@ Efter att du skapat en [Anslutning](../connections/overview.md) och [Datavy](../
 >[!ENDSHADEBOX]
 
 
-För att åtgärda det här felet måste du ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Se [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) för mer information.
+1. Kontrollera att du har rätt åtkomstkontroll:
+
+   * Du måste ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Se [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) för mer information.
+
+   * Du måste vara användare i produktprofilen AEP-Default-All-Users. Fråga administratören om du inte har behörighet att lägga till dig själv i den här profilen. Se [Åtkomststyrningshierarki och arbetsflöde](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#access-control-hierarchy-and-workflow) för mer information.
+
 
 1. Navigera till användargränssnittet för Adobe Experience Platform.
 
