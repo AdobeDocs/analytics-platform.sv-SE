@@ -3,9 +3,10 @@ title: Versionsvy
 description: Jämför prestanda i lika stora perioder före och efter lanseringen.
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
+source-git-commit: 02044961612a3d0f4f40bdc71c3f00585d702c92
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ The **[!UICONTROL Release]** visar en jämförelse av hur nyckelindikatorer utf�
 Exempel:
 
 * **Övergripande resultatutvärdering:** Genom att jämföra övergripande nyckelindikatorer, t.ex. engagemangsåtgärder, kan du avgöra om en given release var framgångsrik i stort.
-* **Övervakning**: Om det finns vissa mått som du förväntar dig ska vara enhetliga när ändringar görs, till exempel webbinarier som laddningstid eller inloggningar, bör du jämföra dem före och efter för att vara säker på att releasen inte får några oönskade konsekvenser.
+* **Övervakning**: Spåra viktiga mätvärden som du kan förvänta dig ska vara enhetliga när ändringar görs, som inläsningstid eller antal inloggningar. Använd den här analystypen för att jämföra dem före och efter en release för att säkerställa att den inte fick några oönskade konsekvenser.
 * **Antagande av nya funktioner**: Om en produktuppdatering är inriktad på att förbättra en viss funktion kan du använda den här vyn för att direkt jämföra den funktionens användning före och efter produktuppdateringen.
 * **Felsökning**: Att spåra antalet fel före och efter en release kan ge en tidig indikation på kundproblem. Om antalet fel ökar direkt efter en release kan ni tillsammans med konstruktions- eller utvecklingsteamen identifiera och korrigera problemet och på så sätt förhindra att kunderna påverkas ytterligare.
 
@@ -38,7 +39,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 I vyn Releaser finns följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
 * **[!UICONTROL Metric]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions]och [!UICONTROL Users].
-* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Line.
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Line] och [!UICONTROL Bar].
 
 ## Datumintervall
 

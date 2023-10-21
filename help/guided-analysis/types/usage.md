@@ -1,12 +1,12 @@
 ---
 title: Användningsvy
 description: Mät användarengagemanget över tid.
-exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
+source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som en färgad linje eller en uppsättning staplar, beroende på diagramtyp. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
 * **[!UICONTROL People]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet rader i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
+* **[!UICONTROL Breakdown]**: Skapa en separat trendlinje per dimensionsobjekt. En enda uppdelningsdimension stöds.
 
 ## Diagraminställningar
 
