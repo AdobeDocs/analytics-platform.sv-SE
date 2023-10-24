@@ -3,7 +3,7 @@ title: Översikt över Reporting Activity Manager
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
@@ -11,8 +11,6 @@ ht-degree: 0%
 ---
 
 # Översikt över Reporting Activity Manager
-
-{{release-limited-testing}}
 
 The [!UICONTROL Reporting Activity Manager] är tillgängligt för administratörer.
 

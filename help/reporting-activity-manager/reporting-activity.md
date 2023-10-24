@@ -3,7 +3,7 @@ title: Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 7760f2d5af131549b1ff2a6ad13b01bae81636f7
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 1%
@@ -11,8 +11,6 @@ ht-degree: 1%
 ---
 
 # Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren
-
-{{release-limited-testing}}
 
 The [!UICONTROL Reporting Activity Manager] gör det möjligt för administratörer att snabbt diagnostisera och åtgärda problem med rapporttapaciteten under perioder med hög rapporteringsnivå.
 

@@ -3,7 +3,7 @@ title: Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 1680e6115a75a0dd78f07aa0bb409b19b3585a78
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -11,8 +11,6 @@ ht-degree: 0%
 ---
 
 # Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren
-
-{{release-limited-testing}}
 
 The [!UICONTROL Reporting Activity Manager] gör det möjligt för administratörer att snabbt diagnostisera och avbryta rapporteringsbegäranden för att åtgärda problem med rapporteringskapaciteten under perioder med hög rapporteringsnivå.
 
