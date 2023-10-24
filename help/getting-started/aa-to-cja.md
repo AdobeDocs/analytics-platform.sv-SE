@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
+source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Den enklaste metoden att omvandla Adobe Analytics-data till data från Customer 
 
 En fullständig global rapportsvit kanske inte alltid är möjlig för en implementering. Om du planerar att ta in flera rapportsviter i Customer Journey Analytics har du två alternativ:
 
-* Planera för att få variablerna att stämma överens i alla dessa rapportsviter. EVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportserie 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När variablerna hämtas in i Customer Journey Analytics blandas de i en enda eVar1-dimension, vilket kan leda till förvirrande och oriktiga rapporter.
+* Planera för att få variablerna att stämma överens i alla dessa rapportsviter. EVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportsviten 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När variablerna hämtas in i Customer Journey Analytics blandas de i en enda eVar1-dimension, vilket kan leda till förvirrande och oriktiga rapporter.
 
 * Använd [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktion för att mappa variabler. Även om det blir enklare om alla rapportsviter använder samma vanliga variabeldesign är det inte nödvändigt om du använder nya Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) -funktion. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
 
@@ -79,7 +79,6 @@ Den här metoden utökar möjligheterna för datainsamling avsevärt: Det finns 
 Följande Adobe Analytics-funktioner eller -komponenter stöds inte:
 
 * Punktfiltrering
-* Geo, domän, enhetssökningar
 * Direktuppspelad mediemätning
 * Livesream eller Livesream triggers
 
