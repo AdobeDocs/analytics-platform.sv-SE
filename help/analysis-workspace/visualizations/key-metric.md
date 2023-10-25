@@ -4,7 +4,7 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 22cb88aa98576b70b8b089eda4a46f1e8963767a
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -23,13 +23,13 @@ The [!UICONTROL Key metric summary] Med visualisering kan du se hur ett viktigt 
 
 ## Användningsexempel
 
-Den här visualiseringen åtgärdar ett antal vanliga användningsområden, bland annat:
+Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland annat:
 
 * En analytiker som försöker förstå hur skapandet av nya affärsmöjligheter såg ut den här månaden jämfört med samma tidsram förra året.
 
 * En marknadsförare som visar hur leadgenerering för en viss lead-typ har ändrats från den här månaden till den förra månaden.
 
-* En chef vill förstå hur nya bokningar ändrades från detta kvartal till förra kvartalet.
+* En chefer vill förstå hur nya bokningar ändrades från detta kvartal till förra kvartalet.
 
 ## Konfigurera sammanfattningen av nyckelmått
 
@@ -50,13 +50,40 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsområden, blan
 
 1. Klicka på **[!UICONTROL Build]**.
 
+<!--## How the Key Metric Summary visualization handles the comparison date range
+
+(This will probably release in January. Per Jaden Howell)
+
+* If the primary date range is set to the panel date range, there are 2-6 options that are considered 'relative' to the primary date range. These usually include the previous period (same amount of time immediately proceeding the primary date range), and 52 weeks prior to that date range.
+
+* If the comparison date range is set to one of the 'relative' options, upon updating the primary date range, the comparison date range updates to the period immediate preceding the panel date range.
+
+* If your comparison date range is *not* set to a 'relative' option, then updating the panel date range changes your primary date range, but has no effect on the comparison date range.
+
+**Example 1**
+
+Primary date range is set to the panel's date range: 'Yesterday'
+Comparison date range is set to a relative date range, one of: 'Previous day', 'Same day last week', 'Same day 4 weeks prior', 'Same day last month', 'Same day last year', or 'Same day 52 weeks prior'.
+When I change the panel's date range to 'This month', the comparison date range will update to 'Previous month'.
+
+**Example 2**
+ 
+Primary date range is set to the panel's date range: 'Yesterday'
+Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 2022', 'Highest sales day', 'Last week', etc. 
+
+>[!NOTE]
+>
+>Last week is relative to the day the project is opened on, but it is not based on the panel's date range of 'Yesterday'. In other cases, such as if the panel's date range was 'This week', it may be relative.
+
+When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
+
 ## Visa utdata
 
 ![](assets/key-metric-output.png)
 
 Observera:
 
-* The **[!UICONTROL Previous period]** linjediagram (alltid grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
+* The **[!UICONTROL Previous period]** linjediagram (alltid i grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
 
 * Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen döljs.
 

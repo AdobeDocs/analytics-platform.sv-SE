@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cd3747e0c9e041394db79d70fcd63294d0da9867
+source-git-commit: 9aa40a708adecdce76b623aa1d5647bd60286ef8
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '934'
 ht-degree: 4%
 
 ---
@@ -81,7 +81,7 @@ Med Adobe Experience Platform kan ni centralisera och standardisera kunddata och
 
 Från datainmatning till direkt SQL-åtkomst - flera komponenter från Experience Platform är centrala för Customer Journey Analytics och kompletterar dem:
 
-* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv): Använd standard-SQL för att hämta data från Adobe Experience Platform, t.ex. data från Adobe-lösningar, kunddata från första part eller andra plattformsdata. Det är ett serverlöst verktyg som gör att du kan ansluta till valfria datauppsättningar och samla in frågeresultaten som en ny datamängd som kan användas för rapportering, datavetenskapen eller för inmatning i profiltjänsten. Du kan använda Experience Platform Query Service för att bygga dataanalysekosystem och skapa en bild av konsumenterna över deras olika interaktionskanaler. Dessa kanaler kan omfatta försäljningsställen, webb, mobiler, CRM-system osv.
+* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv): Använd standard-SQL för att hämta data från Adobe Experience Platform, t.ex. data från Adobe-lösningar, kunddata från första part eller andra plattformsdata. Det är ett serverfritt verktyg som gör att du kan koppla till alla datauppsättningar och samla in frågeresultaten som en ny datauppsättning för användning vid rapportering eller för att lägga in dem i profiltjänsten. Du kan använda Experience Platform Query Service för att bygga dataanalysekosystem och skapa en bild av konsumenterna över deras olika interaktionskanaler. Dessa kanaler kan omfatta försäljningsställen, webb, mobiler, CRM-system osv.
 * [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv):
 * [Identitetstjänst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv)
 
