@@ -3,7 +3,7 @@ title: Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+source-git-commit: 9c76b7c9f5f99da70b5c097a11cfb4cfd1370e9f
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 1%
@@ -139,7 +139,7 @@ När du väljer [!UICONTROL **Begäran**] är följande kolumner tillgängliga i
 
 | Kolumn | Beskrivning |
 | --- | --- |
-| [!UICONTROL **ID för begäran**] | Ett unikt ID som kan användas för felsökning. Om du vill kopiera ID:t markerar du begäran och väljer sedan alternativet [!UICONTROL **Kopiera begäran-ID**]. |
+| [!UICONTROL **ID för begäran**] | Ett unikt ID som kan användas för felsökning. Om du vill kopiera ID:t markerar du begäran och väljer sedan alternativet [!UICONTROL **Kopiera begärande-ID**]. |
 | [!UICONTROL **Körning av tid**] | Hur länge begäran har körts. |
 | [!UICONTROL **Starttid**] | När begäran började bearbetas (baserat på administratörens lokala tid). |
 | [!UICONTROL **Väntetid**] | Hur länge begäran har väntat innan den bearbetas. Detta värde är vanligtvis&quot;0&quot; när det finns tillräckligt med kapacitet. |
