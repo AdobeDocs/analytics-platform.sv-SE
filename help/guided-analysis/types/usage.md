@@ -4,9 +4,9 @@ description: Mät användarengagemanget över tid.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
+source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ The [!UICONTROL Usage] I vyn finns följande diagraminställningar som du kan ju
 Lägg till ytterligare data i diagrammet.
 
 * **[!UICONTROL Show anomalies]**: Körningar [avvikelseidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) på trendanalysen. Exponenter visas som punkter som du kan hovra över för mer information.
+* **[!UICONTROL Trendline overlay]**: Lägger till en trendlinje i diagrammet, så att du kan se den övergripande riktning dina data tar inom den angivna tidsperioden.
+   * [!UICONTROL Linear]: En linjär regressionsmodell. Rekommenderas för data som ökar eller minskar i en konstant hastighet.
+   * [!UICONTROL Logarithmic]: En böjd linjeregressionsmodell. Rekommenderas för data som är utjämnade över tid.
+   * [!UICONTROL Moving average]: En utjämnad linje som beräknar medelvärdet för föregående punkt från varje punkt. Rekommenderas för data som har regelbundna cykler. Vilka perioder som är tillgängliga beror på det valda datumintervallet.
 
 ## Använd tidsjämförelse
 
