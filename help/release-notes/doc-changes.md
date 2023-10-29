@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2899'
 ht-degree: 4%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Oktober 2023** | |
+| Använda härlett fält för att ställa in mål | Tillagd [användningsfall](../use-cases/goals-using-derived-fields.md) artikel som illustrerar hur du använder härledda fält för att ställa in mål och rapportera om dessa. |
 | Exportera fullständiga tabeller till molnet | Lagt till dokumentation om export av fullständiga tabeller med miljontals Workspace-rader till molnmål. <p>Vid export av fullständiga tabeller kan du leverera datatabeller som utformats i Workspace en gång eller enligt schema, med stöd för upp till fem uppdelningar, fem mätvärden, filter och beräknade mätvärden, allt i en sammansatt tabell. Det är utvecklingen av rapporter om Data Warehouse i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag.</p><p>Mer information finns i [Exportera Customer Journey Analytics-rapporter till molnet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). | 4 oktober 2023 |
 | Rapporteringsaktivitetshanteraren | Lagt till dokumentation för Reporting Activity Manager. <p>Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje anslutning i organisationen. Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.</p> <p>Följande nya artiklar har lagts till:<ul><li>[Översikt över Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity.md)</li><li>[Avbryt begäranden i Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | Nya kolumner på hanteringssidor | Dokumenterade nya kolumner som nu är tillgängliga i [Beräknat måttansvarig](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) och [Filterhantering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html). |
