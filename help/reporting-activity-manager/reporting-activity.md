@@ -3,10 +3,11 @@ title: Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 9c76b7c9f5f99da70b5c097a11cfb4cfd1370e9f
+exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
+source-git-commit: 8e2605a18d7c8201122603c9f8ee381a2e97fb9f
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 1%
+source-wordcount: '1913'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
      <!-- (does this option still exist?) 1. (Optional) Select **[!UICONTROL Refresh]** at the top-right to refresh the data. -->
 
-1. Visa användningsinformation om varje anslutning. Du kan välja en kolumnrubrik för att sortera tabellen efter den kolumnen.
+1. Visa användningsinformation om varje anslutning. De data som visas i tabellen representerar rapporteringsaktiviteten för anslutningen när sidan senast lästes in.
 
    Följande kolumner är tillgängliga:
 
@@ -45,7 +46,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
    | **[!UICONTROL Capacity utilization]** | Procentandel av anslutningens rapporteringskapacitet som används i realtid. <p>**Anteckning** En användningskapacitet som är 100 % innebär inte nödvändigtvis att du omedelbart bör avbryta rapporteringsbegäranden. 100 % användningskapacitet kan vara hälsosam om den genomsnittliga väntetiden är rimlig. Å andra sidan kan 100 % av användningskapaciteten tyda på ett problem om antalet begäranden som står i kö också ökar.</p> |
    | **[!UICONTROL Queued requests]** | Antalet begäranden som väntar på att behandlas. <!-- ??? --> |
    | **[!UICONTROL Queue wait time]** | Genomsnittlig väntetid innan begäranden börjar bearbetas. <!-- ???? --> |
-   | **[!UICONTROL Status]** | Möjliga statusvärden är: <ul><li>[!UICONTROL **Aktiv**] (blått): Rapporter har körts på anslutningen och den övervakas för aktivitet.</li><li>[!UICONTROL **Inaktiv**] (grå): Inga rapporter har körts på anslutningen. Den här statusen visas endast när anslutningar skapas för första gången.</li></ul> |
+   | **[!UICONTROL Status]** | Möjliga statusvärden är: <ul><li>[!UICONTROL **Aktiv**] (blått): Rapporter har körts på anslutningen under de senaste två timmarna. De data som visas i tabellen representerar rapporteringskapaciteten för anslutningen när sidan senast lästes in.</li><li>[!UICONTROL **Inaktiv**] (grå): Inga rapporter har körts på anslutningen under de senaste två timmarna, så inga data visas för anslutningen.</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -143,9 +144,9 @@ När du väljer [!UICONTROL **Begäran**] är följande kolumner tillgängliga i
 | [!UICONTROL **Körning av tid**] | Hur länge begäran har körts. |
 | [!UICONTROL **Starttid**] | När begäran började bearbetas (baserat på administratörens lokala tid). |
 | [!UICONTROL **Väntetid**] | Hur länge begäran har väntat innan den bearbetas. Detta värde är vanligtvis&quot;0&quot; när det finns tillräckligt med kapacitet. |
-| [!UICONTROL **Program**] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för byggare: segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 2.0-API:t</li><li>Intelligenta aviseringar<li>Fullständig tabellexport</li><li>Dela med alla länkar</li><li>Guidad analys</li><li>Alla andra program som frågar efter analysrapportmotorn</li></li></ul><p>**Obs!** Om värdet för den här kolumnen är [!UICONTROL **Okänd**] innebär det att metadata för begäran inte är tillgängliga för användaren.</p> |
+| [!UICONTROL **Program**] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Skapa användargränssnitt: segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 2.0-API:t</li><li>Intelligenta aviseringar<li>Fullständig tabellexport</li><li>Dela med alla länkar</li><li>Guidad analys</li><li>Alla andra program som frågar efter analysrapportmotorn</li></li></ul><p>**Obs!** Om värdet för den här kolumnen är [!UICONTROL **Okänd**] innebär det att metadata för begäran inte är tillgängliga för användaren.</p> |
 | [!UICONTROL **Användare**] | Användaren som initierade begäran. <p>**Obs!** Om värdet för den här kolumnen är [!UICONTROL **Okänd**] innebär det att metadata för begäran inte är tillgängliga för användaren.</p> |
-| [!UICONTROL **Projekt**] | Sparade projektnamn för arbetsytan, API-rapport-ID:n osv. (Metadata kan variera mellan olika program.)<p>**Obs!** Om värdet för den här kolumnen är [!UICONTROL **Okänd**] innebär det att projektet inte har sparats eller att metadata för begäran inte är tillgängliga för användaren.</p> |
+| [!UICONTROL **Projekt**] | Sparade namn på Workspace-projekt, API-rapport-ID:n och så vidare. (Metadata kan variera mellan olika program.)<p>**Obs!** Om värdet för den här kolumnen är [!UICONTROL **Okänd**] innebär det att projektet inte har sparats eller att metadata för begäran inte är tillgängliga för användaren.</p> |
 | [!UICONTROL **Status**] | Statusindikatorer: <ul><li>**Körs**: Begäran bearbetas för närvarande.</li><li>**Väntande**: Begäran väntar på att bearbetas.</li></ul> |
 | [!UICONTROL **Komplex**] | Alla begäranden kräver inte samma tid för att behandlas. Komplexa begäranden kan ge en allmän uppfattning om hur lång tid som krävs för att behandla begäran. <p>Möjliga värden är:</p> <ul><li>[!UICONTROL **Låg**]</li><li>[!UICONTROL **Medel**]</li><li>[!UICONTROL **Hög**]</li></ul>Värdet påverkas av värdena i följande kolumner:<ul><li>[!UICONTROL **Månadsgränser**]</li><li>[!UICONTROL **Kolumner**]</li><li>[!UICONTROL **Segment**]</li></ul> |
 | [!UICONTROL **Månadsgränser**] | Antalet månader som ingår i en begäran. Fler månadsgränser gör begäran ännu mer komplex. |
@@ -163,7 +164,7 @@ När du väljer [!UICONTROL **Användare**] är följande kolumner tillgängliga
 | [!UICONTROL **Användare**] | Användaren som initierade begäran. Om värdet för den här kolumnen är [!UICONTROL **Okänd**] innebär det att användaren är på ett inloggningsföretag där du inte har administratörsbehörighet. |
 | [!UICONTROL **Antal begäranden**] | Antalet begäranden som initierats av användaren. |
 | [!UICONTROL **Antal projekt**] | Antalet projekt som är associerade med användaren. <!-- ??? --> |
-| [!UICONTROL **Program**] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för byggare: segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 2.0-API:t</li><li>Intelligenta aviseringar<li>Fullständig tabellexport</li><li>Dela med alla länkar</li><li>Guidad analys</li><li>Alla andra program som frågar efter analysrapportmotorn</li></li></ul> |
+| [!UICONTROL **Program**] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Skapa användargränssnitt: segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 2.0-API:t</li><li>Intelligenta aviseringar<li>Fullständig tabellexport</li><li>Dela med alla länkar</li><li>Guidad analys</li><li>Alla andra program som frågar efter analysrapportmotorn</li></li></ul> |
 | [!UICONTROL **Genomsnittlig komplexitet**] | Den genomsnittliga komplexiteten för begäranden som initierats av användaren. <p>Alla begäranden kräver inte samma tid för att behandlas. Komplexa begäranden kan ge en allmän uppfattning om hur lång tid som krävs för att behandla begäran.</p><p>Värdet i den här kolumnen baseras på en poäng som bestäms av värdena i följande kolumner:</p><ul><li>[!UICONTROL **Genomsnittliga månadsgränser**]</li><li>[!UICONTROL **Genomsnittliga kolumner**]</li><li>[!UICONTROL **Genomsnittliga segment**]</li></ul> |
 | [!UICONTROL **Genomsnittliga månadsgränser**] | Genomsnittligt antal månader som ingår i begäranden. Fler månadsgränser gör begäran ännu mer komplex. |
 | [!UICONTROL **Genomsnittliga kolumner**] | Genomsnittligt antal mått och uppdelningar i inkluderade begäranden. Fler kolumner ökar komplexiteten i begäran. |
@@ -180,7 +181,7 @@ När du väljer [!UICONTROL **Projekt**] är följande kolumner tillgängliga i 
 | [!UICONTROL **Projekt**] | Det projekt där förfrågningarna initierades. |
 | [!UICONTROL **Antal begäranden**] | Antalet begäranden som är associerade med projektet. |
 | [!UICONTROL **Antal användare**] | Antalet användare som är associerade med projektet. <!-- ??? --> |
-| [!UICONTROL **Program**] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för byggare: segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 2.0-API:t</li><li>Intelligenta aviseringar<li>Fullständig tabellexport</li><li>Dela med alla länkar</li><li>Guidad analys</li><li>Alla andra program som frågar efter analysrapportmotorn</li></li></ul> |
+| [!UICONTROL **Program**] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Skapa användargränssnitt: segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 2.0-API:t</li><li>Intelligenta aviseringar<li>Fullständig tabellexport</li><li>Dela med alla länkar</li><li>Guidad analys</li><li>Alla andra program som frågar efter analysrapportmotorn</li></li></ul> |
 | [!UICONTROL **Genomsnittlig komplexitet**] | Den genomsnittliga komplexiteten hos begäranden som ingår i projektet. <p>Alla begäranden kräver inte samma tid för att behandlas. Komplexa begäranden kan ge en allmän uppfattning om hur lång tid som krävs för att behandla begäran.</p><p>Värdet i den här kolumnen baseras på en poäng som bestäms av värdena i följande kolumner:</p><ul><li>[!UICONTROL **Genomsnittliga månadsgränser**]</li><li>[!UICONTROL **Genomsnittliga kolumner**]</li><li>[!UICONTROL **Genomsnittliga segment**]</li></ul> |
 | [!UICONTROL **Genomsnittliga månadsgränser**] | Genomsnittligt antal månader som ingår i begäranden. Fler månadsgränser gör begäran ännu mer komplex. |
 | [!UICONTROL **Genomsnittliga kolumner**] | Genomsnittligt antal mått och uppdelningar i inkluderade begäranden. Fler kolumner ökar komplexiteten i begäran. |
