@@ -4,7 +4,7 @@ description: Konfigurera hur ett mått formateras.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6945026bd452e1dabe90812f8d056f19aac71490
+source-git-commit: 387c787dba4caa9db82d46071e23a2131043c8c6
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 2%
@@ -80,7 +80,7 @@ Vid rapporttiden konverteras värdet för måttet och den ursprungliga valutakod
 
 +++ Hur långt tillbaka bibehålls dagliga konverteringsgrader?
 
-De dagliga omräkningskurserna bibehålls under de senaste fyra åren?
+De dagliga omräkningskurserna bibehålls under de senaste fyra åren.
 
 +++
 
