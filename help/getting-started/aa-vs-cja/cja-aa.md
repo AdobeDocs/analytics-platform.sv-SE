@@ -4,9 +4,9 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: 15fbbf26b58b474f65e6585ac72bdf247fb1678d
 workflow-type: tm+mt
-source-wordcount: '2130'
+source-wordcount: '2128'
 ht-degree: 2%
 
 ---
@@ -44,6 +44,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Segment | Fullt stöd. Nu kallat &quot;Filter&quot; - observera att inga befintliga segment i Analysis Workspace importeras till Customer Journey Analytics. |
 | Virtuella rapportsviter | Fullt stöd. Har anropats [Datavyer](/help/data-views/create-dataview.md). |
 | Komponentstrukturering för virtuell rapportserie | Fullt stöd. Nu en del av datavyer. |
+| Enhet, webbläsare, referens, teknikdimensioner | Stöds för båda [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar och datauppsättningar som genererats av WebSDK. Se [dokumentation om vilka analysvariabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).Om du använder Experience Platform Web SDK-datainsamling stöds för närvarande inte enheter och dimensioner baserade på enhetssökning. Framtida stöd planeras. Information om hur du lägger till enhets- och webbläsarsökningar i Web SDK-dataströmmen finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 | Streaming Media Analytics | Mediedata är tillgängliga med Analytics-källkopplingen som en del av panelen Medievisningsprogram och panelen Medieuppspelningstid för spenderad tid i Workspace. |
 
 {style="table-layout:auto"}
@@ -68,12 +69,13 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Marknadsföringskanaler | När du använder Analytics-källkopplingen flödar Marketing Channels-data in i Customer Journey Analytics via den kopplingen. Reglerna för marknadsföringskanaler har konfigurerats i traditionella Adobe Analytics och vissa regler stöds inte. Se [Customer Journey Analytics Marketing Channels](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html) för mer information. <br/>För WebSDK-implementeringar stöds regler för kanalbearbetning i rapporttid via [Härledda fält](../../data-views/derived-fields/derived-fields.md). |
 | Metrisk deduplicering | Nu konfigurerat för mätvärden i datavyer. Metrisk borttagning av dubbletter sker på person- eller sessionsnivå i stället för på data-, data- eller anslutningsnivå. |
 | Ny eller upprepad sessionsrapportering | Tidigare genomförd med dimensionen Besök nummer. Det finns stöd för både nya och upprepade sessioner [med ett 13-månaders uppslagsfönster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html?lang=en). |
-| Bearbetningsregler, VISTA-regler, regler för bearbetning av marknadsföringskanaler | Stöds med Adobe Experience Platform Data Prep-funktioner för både WebSDK-baserade datauppsättningar och data från Analytics-källkopplingen. |
+| Bearbetningsregler, VISTA-regler, regler för bearbetning av marknadsföringskanaler | Stöds både med Adobe Experience Platform Data Prep-funktioner och [härledda fält](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html) för både WebSDK-baserade datauppsättningar och data från Analytics-källkopplingen. |
 | Variabeln Produkter | Inom Experience Platform kan användare använda en array med objekt i ett dataset-schema för att tillgodose detta användningsfall. Inom Customer Journey Analytics kan man använda valfritt antal produktvariabler och de är inte begränsade till en enda variabel som i Adobe Analytics. |
 | Projektdelning | Projektdelning stöds endast mellan användare av Customer Journey Analytics - det finns ingen projektdelning mellan Customer Journey Analytics och Analysis Workspace. |
 | Report Builder | Stöds med en ny Office 365-plugin för Excel. |
 | Användarbehörigheter/Dataåtkomstkontroller | Customer Journey Analytics skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) produktadministratörer, produktprofiladministratörer och användare. Endast produktadministratörer kan skapa/uppdatera/ta bort anslutningar, projekt, filter eller beräknade värden som skapats av andra användare, medan produktadministratörer och produktprofiladministratörer kan redigera datavyer. Ytterligare användarbehörigheter är tillgängliga för exempelvis att skapa beräknade värden, filter eller anteckningar. |
 | Visualiseringar | Alla visualiseringar stöds förutom för kartvisualisering. |
+| Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (kallas även fältbaserad sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Stitlar](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
 
@@ -81,11 +83,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Funktion | Anteckningar |
 | --- | --- |
-| Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (kallas även fältbaserad sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Stitlar](../../stitching/overview.md). |
 | Punktfiltrering | För [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller Customer Journey Analytics. |
-| Enhet, webbläsare, referens, teknikdimensioner | Stöds för [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar. Se [dokumentation om vilka analysvariabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>Om du använder Experience Platform Web SDK-datainsamling stöds för närvarande inte enheter och dimensioner baserade på enhetssökningen. Framtida stöd planeras. |
 | Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
-| Behandlingsregler | För Analytics-källanslutningsbaserade datauppsättningar tillämpas fortfarande bearbetningsregler. [Prestandafunktioner för data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) kan också användas som ersättning för bearbetningsregler för data som går direkt till plattformen. |
 | Analyser för mål (A4T) | Delvis stöd ges via fälten i [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Stöd för A4T-vänliga namn på målaktiviteter och -upplevelser planeras. |
 
 {style="table-layout:auto"}
@@ -137,6 +136,6 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | SQL-åtkomst | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
 | Förbättrade säkerhets- och sekretessalternativ - beredskap för HIPAA | Customer Journey Analytics är redo för HIPAA och erbjuder ytterligare säkerhetsalternativ för regelefterlevnad. Adobe Analytics är inte HIPAA-klart. |
 | Möjlighet att kombinera datauppsättningar (t.ex. Adobe Analytics rapportsviter) | Med Customer Journey Analytics kan ni kombinera data från flera rapportsviter som om de vore ett enda rapportpaket i Adobe Analytics. |
-| Härledda fält | Härledda fält gör det möjligt att göra omformningar av data vid rapporttillfället. Data kan kombineras, korrigeras eller skapas direkt och tillämpas retroaktivt på alla rapporter. |
+| Härledda fält | Härledda fält gör det möjligt att göra omformningar av data vid rapporttillfället. Data kan kombineras, korrigeras eller skapas direkt och gäller retroaktivt för alla rapporter. |
 
 {style="table-layout:auto"}
