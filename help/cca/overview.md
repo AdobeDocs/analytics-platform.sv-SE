@@ -5,7 +5,7 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
+source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
@@ -60,7 +60,6 @@ Flerkanalsanalys är en banbrytande och robust funktion, men har begränsningar 
 * Det tillfälliga ID-fältet ska innehålla en enda typ av ID (t.ex. ID:n från ett enda namnutrymme). Det tillfälliga ID-fältet ska till exempel inte innehålla en kombination av inloggnings-ID och e-post-ID.
 * Om flera händelser inträffar med samma tidsstämpel för samma beständiga ID, men med olika värden i fältet för transient ID, väljer fältbaserad sammanslagning baserat på alfabetisk ordning. Om beständigt ID A har två händelser med samma tidsstämpel och en av händelserna anger Bob och den andra anger Ann, väljer fältbaserad stitling Ann.
 * Om en enhet delas av flera personer och det totala antalet övergångar mellan användare överstiger 50 000, upphör CCA att sammanfoga data för den enheten.
-
 
 ## Aktivera flerkanalsanalys
 
