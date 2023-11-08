@@ -4,9 +4,9 @@ description: Mät användarengagemanget över tid.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
+source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som en färgad linje eller en uppsättning staplar, beroende på diagramtyp. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
-* **[!UICONTROL People]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet rader i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
-* **[!UICONTROL Breakdown]**: Skapa en separat trendlinje per dimensionsobjekt. En enda uppdelningsdimension stöds.
+* **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som en diagramserie och tabellrad. Du kan inkludera upp till fem händelser.
+* **[!UICONTROL People]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet diagramserier och tabellrader. Du kan inkludera upp till fem segment.
+* **[!UICONTROL Breakdown property]**: Delar upp diagramserien och tabellraderna med värdena för den valda egenskapen. En enda uppdelningsegenskap stöds. De översta 20 värdena visas i tabellen och upp till tio värden kan visas i diagrammet. Du kan dölja eller visa en rad i diagrammet genom att växla ![Visa ikon för Dölj](../assets/hide-in-chart.png) -ikon.
 
 ## Diagraminställningar
 
@@ -43,13 +43,13 @@ The [!UICONTROL Usage] I vyn finns följande diagraminställningar som du kan ju
 
 ## Övertäckningar
 
-Lägg till ytterligare data i diagrammet.
+Lägg till ytterligare data i diagrammet. När fler än en serie visas i diagrammet visas övertäckningarna endast vid hovring.
 
-* **[!UICONTROL Show anomalies]**: Körningar [avvikelseidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) på trendanalysen. Exponenter visas som punkter som du kan hovra över för mer information.
-* **[!UICONTROL Trendline overlay]**: Lägger till en trendlinje i diagrammet, så att du kan se den övergripande riktning dina data tar inom den angivna tidsperioden.
-   * [!UICONTROL Linear]: En linjär regressionsmodell. Rekommenderas för data som ökar eller minskar i en konstant hastighet.
-   * [!UICONTROL Logarithmic]: En böjd linjeregressionsmodell. Rekommenderas för data som är utjämnade över tid.
-   * [!UICONTROL Moving average]: En utjämnad linje som beräknar medelvärdet för föregående punkt från varje punkt. Rekommenderas för data som har regelbundna cykler. Vilka perioder som är tillgängliga beror på det valda datumintervallet.
+* **[!UICONTROL Anomaly detection]**: Körningar [avvikelseidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) på trendanalysen. Exponenter visas som punkter som du kan hovra över för mer information.
+* **[!UICONTROL Trendline overlay]**: Lägger till en trendlinje i diagrammet, som hjälper till att beskriva ett tydligare mönster i data.
+   * [!UICONTROL Linear]: Skapar en rak regressionslinje. Bäst för enkla linjära data som ökar eller minskar med en konstant hastighet. Ekvation: `y = a + b * x`
+   * [!UICONTROL Logarithmic]: Skapar en böjd regressionslinje. Bäst för data som snabbt ökar eller minskar, och sedan blir mer jämna. Ekvation: `y = a + b * log(x)`
+   * [!UICONTROL Moving average]: Skapar en jämn trendlinje baserad på en uppsättning medelvärden. Ett glidande medelvärde kallas även för ett glidande medelvärde och använder ett visst antal tidigare datapunkter (som bestäms av ditt val), jämför dem och använder medelvärdet som punkten på raden. Exempel är sju dagars glidande medelvärde eller fyra veckors glidande medelvärde. Vilka alternativ som är tillgängliga för glidande medelvärde beror på vilket intervall och datumintervall du har valt.
 
 ## Använd tidsjämförelse
 
