@@ -3,9 +3,9 @@ description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att
 title: Sammanfattning av antal och förändring
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '395'
 ht-degree: 3%
 
 ---
@@ -30,20 +30,11 @@ Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet
 | Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
 | Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
 
-
-Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
-
-| Inställning | Definition |
-|--- |--- |
-| Procenttal | Visa procenttal i stället för råa tal. |
-| Förklaring synlig | Visa information om måttet som visas. |
-| Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
-| Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
-
+{style="table-layout:auto"}
 
 ## Visualisering av sammanfattningsändring {#summary-change}
 
-Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) eller ett beräknat mått [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) alternativ.
+Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) eller ett beräknat mätvärde [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) alternativ.
 
 Den här visualiseringen fungerar på följande sätt:
 
@@ -64,5 +55,5 @@ Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet
 |--- |--- |
 | Procenttal | Visa procenttal i stället för råa tal. |
 | Förklaring synlig | Visa information om måttet som visas. |
-| Visa procentuell ändring | Visar procentändringen mellan de två talen. |
+| Visa procentuell ändring | Visar procentuell ändring mellan de två talen. |
 | Visa råskillnad | Visar den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |
