@@ -4,9 +4,9 @@ description: Översikt över häftning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
-source-git-commit: 058b8d997c7cb2e4e73d3c2026a4b9bf29db26bd
+source-git-commit: d0f7d5f2fe3cce869d413ca014d086e1a64665be
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Innan du använder stygn bör du kontrollera att din organisation har förberett
    * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Cloud Identity Service.
    * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget vilken identifierare som helst. Vid textning tas det här fältet i beaktande för att innehålla den faktiska informationen om person-ID:t. För bästa resultat av sammanfogning bör ett tillfälligt ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID. Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning är det bättre att de andra datauppsättningarna också har en liknande gemensam identifierare.
 
-  Båda kolumnerna (beständigt ID och tillfälligt ID) måste definieras som ett identitetsfält med ett identitetsnamnutrymme i schemat som ligger bakom den datauppsättning som du vill sammanfoga. När du använder identitetssammanfogning i Real-time Customer Data Platform med [identityMap-fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity)måste du fortfarande lägga till identitetsfält med ett identitetsnamnutrymme, eftersom replay stitching som beskrivs i det här avsnittet inte stöder identityMap-fältgruppen. När du lägger till ett identitetsfält när du använder identitetssammanfogning i Real-time Customer Data Platform baserat på fältgruppen identityMap gör du *not* ange det extra identitetsfältet som en primär identitet, eftersom detta kommer att störa identitetsschemafältgruppens baserade identitetssammanfogning i Real-time Customer Data Platform.
+  Båda kolumnerna (beständigt ID och tillfälligt ID) måste definieras som ett identitetsfält med ett identitetsnamnutrymme i schemat som ligger bakom den datauppsättning som du vill sammanfoga. När du använder identitetssammanfogning i Real-time Customer Data Platform med [identityMap-fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity)måste du fortfarande lägga till identitetsfält med ett identitetsnamnutrymme, eftersom Customer Journey Analytics-sammanfogning som beskrivs i det här avsnittet inte stöder fältgruppen identityMap. När du lägger till ett identitetsfält i schemat och även använder fältgruppen identityMap, ska du inte ange det extra identitetsfältet som en primär identitet, eftersom detta påverkar identitetsmappningens fältgrupp som används för Real-time Customer Data Platform.
 
 * Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du aktiverar sammanfogning av en händelsedatamängd. Se [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) för mer information.
 
