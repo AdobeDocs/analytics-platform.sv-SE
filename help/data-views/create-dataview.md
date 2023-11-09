@@ -4,9 +4,9 @@ description: Alla inställningar som du kan justera för att skapa eller rediger
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
+source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,10 @@ Anger det kalenderformat som du vill att datavyn ska följa. Du kan ha flera dat
 ## Komponenter
 
 Sedan kan du ange komponenterna i en datavy, vilket betyder att du kan skapa mått och mått utifrån schemaelement. Du kan också använda standardkomponenter.
+
+>[!IMPORTANT]
+>
+>Upp till 5 000 mätvärden och 5 000 dimensioner kan läggas till i en enda datavy.
 
 1. Välj **[!UICONTROL Components]** -fliken.
 

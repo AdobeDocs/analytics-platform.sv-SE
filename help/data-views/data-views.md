@@ -4,9 +4,9 @@ description: En datavy anger hur du vill tolka element i data i anslutningen Cus
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,18 @@ Du kan skapa olika datavyer för samma anslutning, med mycket olika uppsättning
 
 Arbetsyteprojekt i Customer Journey Analytics baseras på datavyer.
 
+>[!IMPORTANT]
+>
+>Upp till 5 000 mätvärden och 5 000 dimensioner kan läggas till i en enda datavy.
+
 ## Funktioner för datavyer {#capabilities}
 
 Med datavyer kan du ändra inställningar för schemaelement spontant utan att behöva ändra schemat i Adobe Experience Platform eller implementera om Customer Journey Analytics-miljön.
 
-* **Du kan ändra en komponent från ett mått till en Dimension och tvärtom**. Du kan skapa mått från strängfält eller skapa dimensioner från numeriska fält. Det gör livet enklare eftersom du inte behöver skapa ett numeriskt fält i XDM-schemat för varje mätvärde du vill ha. I stället kan du skapa det spontant i dialogrutan för datavyer. Här är några exempel:
+* **Du kan ändra en komponent från ett mått till en dimension och vice versa**. Du kan skapa mätvärden från strängfält eller skapa dimensioner från numeriska fält. Det gör livet enklare eftersom du inte behöver skapa ett numeriskt fält i XDM-schemat för varje mätvärde du vill ha. I stället kan du skapa det spontant i dialogrutan för datavyer. Här är några exempel:
    * **Skapa en eller flera och/eller en dimension från ett enda schemafält**. Det är en en-till-många-relation. Du kan till exempel skapa en eller flera intäktsmått och/eller en eller flera intäktsdimensioner från ett enda schemafält.
    * **Använd ett strängfält som mått**: När du fyller i ett schema i Experience Platform med en datauppsättning kanske du inte vet i förväg vilka schemaelement du behöver. Du kanske inte har insett att du behöver ett mått för&quot;Fel på en sida&quot;. Därför skapade du inte ett numeriskt schemaelement med den här effekten. Genom att använda ett strängelement som mätvärden kan du nu använda datavysinställningarna för att ange att en sträng som innehåller ordet error kan användas som mätvärden.
-   * **Använd ett numeriskt fält som dimension**: Om du till exempel vill hämta intäktsmåtten från dimensionen Intäkter, visar dimensionen Intäkter varje värde som en dimensionspost ($100, $175, $1,000, osv.) och antalet instanser för varje dimensionsartikel. Intäkter som mått skulle uppträda som de alltid har gjort.
+   * **Använd ett numeriskt fält som dimension**: Om du till exempel vill hämta intäktsmåtten från intäktsdimensionen visar intäktsdimensionen varje värde som en dimensionspost ($100, $175, $1,000, osv.) och antalet instanser för varje dimensionsartikel. Intäkter som mått skulle uppträda som de alltid har gjort.
 
 * **Du kan skapa flera mätvärden med olika attributmodeller eller med olika uppslagsfönster** från samma schemafält.
 
@@ -38,13 +42,13 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 
 * **Du kan ange ett eget komponentnamn som ska visas i Analysis Workspace**. Som standard ärvs det här namnet från schemats visningsnamn, men du kan nu skriva över det för den här specifika datavyn.
 
-* **Du kan visa mer schemarelaterad information om komponenter** , till exempel: vilken datamängdstyp (händelse, profil, sökning) som den kommer från, vilken schematyp (sträng, heltal osv.) Den kom från. och dess schemasökväg (det XDM-fält som det baseras på).
+* **Du kan visa mer schemarelaterad information om komponenter** , t.ex. vilken datamängdstyp (händelse, profil, sökning) som den kom från, vilken schematyp (sträng, heltal osv.) det kom från och dess schemasökväg (XDM-fältet som det baseras på).
 
 * **Du kan lägga till märkord i en komponent** för att göra det enklare att söka i Workspace.
 
-* **Du kan dölja en komponent i rapporter**. Vissa mått- och dimensionsinställningar kräver ett andra mått eller en andra dimension för konfiguration (som till exempel metrisk borttagning av dubbletter eller borttagning av dubbletter). På så sätt kan du definiera ett mått eller en dimension som kan användas i inställningarna för ett annat mått eller en annan dimension utan att exponeras direkt i rapporter (till exempel köp-ID).
+* **Du kan dölja en komponent i rapporteringen**. Vissa mått- och dimensionsinställningar kräver ett andra mått eller en andra dimension för konfiguration (som till exempel metrisk borttagning av dubbletter eller borttagning av dubbletter). På så sätt kan du definiera ett mått eller en dimension som kan användas i inställningarna för ett annat mått eller en annan dimension utan att exponeras direkt i rapporter (till exempel köp-ID).
 
-* **Du kan använda formatering för ett mätresultat**, t.ex. visa decimal, tid, procent eller valuta, specificera decimaler, uppåtgående trend som grönt eller rött, och ange valutaalternativ.
+* **Du kan använda formatering för ett mätresultat**, t.ex. visa decimal, tid, procent eller valuta, ange decimaler, visa upp trenden som grön eller röd samt ange valutaalternativ.
 
 * Du kan **skapa ett mått eller en dimension baserat på endast några av värdena i schemafältet**. Om du till exempel vill ha ett felmått kan du skapa ett mätvärde från sidnamnsfältet, men bara inkludera sidor som innehåller ordet &quot;error&quot;. Felmåttet som skapas från detta stöds av filter, kan infogas i beräknade värden och fungerar med attribuering, flöde, utfall osv.
 
@@ -70,7 +74,7 @@ Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektniv
 * [!UICONTROL Component type]
 * Metrisk formatering
 * Datavy name
-* Dimension
+* Dimension allokering
 
 ## Ta bort datavyer {#delete}
 
