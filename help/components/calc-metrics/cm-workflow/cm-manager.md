@@ -3,9 +3,9 @@ description: I Beräknad måtthanterare kan du strukturera mätvärden på mång
 title: Hanterare för beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '702'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ På sidan Beräknade mätvärden kan du strukturera mätvärden på många olika
 
 Den beräknade metriska hanteraren visar alla filter som du äger och som har delats med dig. Användare på administratörsnivå kan se alla anpassade värden i organisationen. I den här översikten visas användargränssnittet och funktionerna i hanteraren för beräknade mätvärden.
 
-![](assets/calc-metric-manager.png)
+![Fönstret Beräknade mätvärden visar tillgängliga filter.](assets/calc-metric-manager.png)
 
 ## Få åtkomst till hanteraren för beräknade värden
 

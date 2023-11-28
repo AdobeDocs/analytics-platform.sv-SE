@@ -4,9 +4,9 @@ description: Förklara hur man importerar data från traditionella Adobe Analyti
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -53,29 +53,29 @@ Så här skapar du en Adobe Analytics-källanslutning:
 
 3. Välj **[!UICONTROL Set up]** eller **[!UICONTROL Add data]** i Adobe Analytics.
 
-   ![Källor](./assets/sources-overview.png)
+   ![Adobe Experience Platform-fönster med Källor markerat tillsammans med Adobe-program och Lägg till data markerat.](./assets/sources-overview.png)
 
 4. Välj **[!UICONTROL Report suite]**. Välj den som du vill använda i listan över rapportsviter.
 
-   ![Rapportsviter](./assets/report-suites.png)
+   ![Adobe Experience Platform-fönstret med en lista över rapportsviter](./assets/report-suites.png)
 
    Välj **[!UICONTROL Next]**.
 
 5. Välj **[!UICONTROL Default schema]** som [!UICONTROL Target schema]. Adobe Experience Platform skapar automatiskt schemat och motsvarande datauppsättning för att mappa alla standardfält från den valda Adobe Analytics-rapportsviten.
 
-   ![Standardschema](./assets/default-schema.png)
+   ![Adobe Experience Platform-fönster med standardschemat markerat](./assets/default-schema.png)
 
    Välj **[!UICONTROL Next]**.
 
 6. Namnge dataflödet och (eventuellt) ge en beskrivning.
 
-   ![Information om dataflöde](./assets/dataflow-detail.png)
+   ![Adobe Experience Platform-fönstret markerar avsnittet Dataflödesdetaljer](./assets/dataflow-detail.png)
 
    Välj **[!UICONTROL Next]**.
 
 7. Granska anslutningen och välj **[!UICONTROL Finish]**.
 
-   ![Granska](./assets/review.png)
+   ![Fönstret Adobe Experience Platform som markerar avsnitten Connect och Data för granskning](./assets/review.png)
 
 
 När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten. Dataflödet importerar upp till 13 månaders historiska data för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.
@@ -111,7 +111,7 @@ Så här skapar du en anslutning:
 
    - Markera datauppsättningen som skapas automatiskt av Adobe Analytics-källkopplingen och andra datauppsättningar som du vill ta med i anslutningen.
 
-     ![Lägg till datauppsättningar](./assets/cja-connections-2a.png)
+     ![Fönstret Lägg till datauppsättningar](./assets/cja-connections-2a.png)
 
    - Välj **[!UICONTROL Next]**.
 

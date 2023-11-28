@@ -1,9 +1,9 @@
 ---
-description: Förteckning över kända begränsningar i Adobe Analysis Workspace och dess tillhörande komponenter
+description: Läs om kända begränsningar i Adobe Analysis Workspace och dess tillhörande komponenter
 title: Kända begränsningar i Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 1%

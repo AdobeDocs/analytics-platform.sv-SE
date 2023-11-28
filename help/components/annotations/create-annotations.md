@@ -4,9 +4,9 @@ description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
-source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analy
 
 1. Fyll i [!UICONTROL Annotation builder] -element.
 
-   ![](assets/ann-builder.png)
+   ![Fönstret Anteckningsinformation med fält och alternativ som beskrivs i nästa avsnitt.](assets/ann-builder.png)
 
    | Element | Beskrivning |
    | --- | --- |

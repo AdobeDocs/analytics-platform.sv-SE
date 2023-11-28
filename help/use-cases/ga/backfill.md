@@ -4,9 +4,9 @@ description: Beskriver hur du använder Adobe Customer Journey Analytics för at
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Datastrukturen i Universal Analytics-egenskaperna skiljer sig från datastruktur
 >
 >Det här avsnittet gäller endast för Universal Analytics-egenskaper. Om du exporterar från en GA4-egenskap kan du fortsätta till [Exportera data till Google Cloud Platform](#export-gcp).
 
-Universal Analytics-egenskaper lagrar varje post i sina data som en användarsession i stället för som enskilda händelser. Det krävs en SQL-fråga för att omvandla data från Universal Analytics till ett format som är kompatibelt med Adobe Experience Platform. Använd `UNNEST` till `hits` i GA-schemat och spara det som en BigQuery-tabell.
+Universal Analytics-egenskaper lagrar varje post i sina data som en användarsession i stället för som enskilda händelser. Det krävs en SQL-fråga för att omvandla data från Universal Analytics till ett format som är kompatibelt med Adobe Experience Platform. Använd `UNNEST` funktionen till `hits` i GA-schemat och spara det som en BigQuery-tabell.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
@@ -70,7 +70,7 @@ I Google Cloud Platform går du till **Exportera > Exportera till GCS**. När da
 
 ## Importera data från Google Cloud Storage till Experience Platform
 
-1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** till vänster.
+1. I Adobe Experience Platform: **[!UICONTROL Sources]** till vänster.
 1. Gå till katalogen **[!UICONTROL Google Cloud Storage]** alternativ. Klicka på **[!UICONTROL Add data]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
@@ -81,7 +81,7 @@ I Google Cloud Platform går du till **Exportera > Exportera till GCS**. När da
 
 Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en datauppsättning med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics till dina [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui).
 
-![Schemamappning](../assets/schema-map.png)
+![Schemamappning som framhäver GA-datafälten och målschemamappningar](../assets/schema-map.png)
 
 När du är klar med mappningen av fälten till XDM-schemat kan du schemalägga den här importen regelbundet och tillämpa felvalidering under importen. Valideringen säkerställer att det inte uppstår några problem med de data som du har importerat.
 
@@ -89,7 +89,7 @@ När du är klar med mappningen av fälten till XDM-schemat kan du schemalägga 
 
 Vissa XDM-fält i Platform kräver rätt format för att data ska kunna behandlas korrekt.
 
-* **`timestamp`**: Skapa ett särskilt beräkningsfält i användargränssnittet för Experience Platform-schemat. Klicka **[!UICONTROL Add calculated field]** och radbryta `timestamp` sträng i en `date` funktion:
+* **`timestamp`**: Skapa ett särskilt beräkningsfält i användargränssnittet för Experience Platform-schemat. Klicka **[!UICONTROL Add calculated field]** och kapsla in `timestamp` sträng i en `date` funktion:
 
   `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
@@ -97,7 +97,7 @@ Vissa XDM-fält i Platform kräver rätt format för att data ska kunna behandla
 
   ![Tidsstämpel](../assets/timestamp.png)
 
-* **`_id`**: Det här fältet måste ha ett värde i det - Customer Journey Analytics bryr sig inte om vad värdet är. Du kan lägga till&quot;1&quot; i fältet:
+* **`_id`**: Det här fältet måste ha ett värde - Customer Journey Analytics bryr sig inte om vad värdet är. Du kan lägga till&quot;1&quot; i fältet:
 
   ![ID](../assets/_id.png)
 

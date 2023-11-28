@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera exportloggar
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Vid schemalagd export återspeglar loggarna exportinställningarna som de var n�
 
 1. Välj [!UICONTROL **Loggar**] -fliken.
 
-   ![Fliken Exportera loggar](assets/export-logs-tab.png)
+   ![Exportfönstret med fliken Loggar](assets/export-logs-tab.png)
 
    Information om loggarna visas i de tillgängliga kolumnerna.
 
@@ -49,7 +49,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
 
 1. Välj **Filter** -ikon.
 
-   ![Filterinformation](assets/export-log-filters.png)
+   ![Fönstret Exportera med filterlistan per kontotyp](assets/export-log-filters.png)
 
    Du kan filtrera efter följande kriterier:
 

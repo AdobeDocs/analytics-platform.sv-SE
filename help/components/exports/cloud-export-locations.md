@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1499'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    Välj [!UICONTROL **Platskonton**] markerar du ikonen med tre punkter på ett befintligt konto där du vill lägga till en plats och väljer [!UICONTROL **Lägg till plats**].
 
-   ![Lägg till plats till befintligt konto](assets/add-location-existing-account.png)
+   ![GCP-konto och listruta för ellips som visar Lägg till vald plats](assets/add-location-existing-account.png)
 
    Dialogrutan Plats visas.
 

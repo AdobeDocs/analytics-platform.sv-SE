@@ -5,10 +5,10 @@ title: Dela upp dimensioner
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 2%
 
 Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 
-Anpassa era data på ett obegränsat sätt efter era specifika behov. skapa frågor med hjälp av relevanta mått, dimensioner, filter, tidslinjer och andra analysvärden.
+Dela upp era data på obegränsade sätt för just era behov; bygg frågor med relevanta mått, dimensioner, filter, tidslinjer och andra analysvärden.
 
 1. [Skapa ett projekt](/help/analysis-workspace/home.md) med en datatabell.
 1. Högerklicka på ett radobjekt i datatabellen och välj **[!UICONTROL Breakdown]** > *`<item>`*.
 
-   ![Stegresultat](assets/fa_data_table_actions.png)
+   ![Stegresultat som visar Skapa varning från markering.](assets/fa_data_table_actions.png)
 
    Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppsfilter över valda tidsperioder. Du kan även gå ned mer i detalj.
 
@@ -41,7 +41,7 @@ Anpassa era data på ett obegränsat sätt efter era specifika behov. skapa frå
 
 Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar **[!UICONTROL Edit]**:
 
-![Brytningsinställningar](assets/breakdown_settings.png)
+![Jämförelse av orderattribut som visar uppdelningsinställningarna](assets/breakdown_settings.png)
 
 Detta är det förväntade beteendet när du tillämpar attribueringsmodeller på uppdelningar eller redigerar dem:
 

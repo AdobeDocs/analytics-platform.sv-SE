@@ -4,9 +4,9 @@ description: Förhandsgranska prototypprojekt för Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ För åtkomst [!UICONTROL Labs]:
 
 Så här startar och utvärderar du en prototyp:
 
-1. På [!UICONTROL Labs] skärm, klicka **[!UICONTROL Launch]** för den prototyp du vill se. När prototypen startas visas dess namn i det övre vänstra hörnet i prototypmiljön.
+1. På [!UICONTROL Labs] skärm, klicka **[!UICONTROL Launch]** för den prototyp som du vill se. När prototypen startas visas dess namn i det övre vänstra hörnet i prototypmiljön.
 
    lägg till skärmbild här
 
@@ -55,17 +55,17 @@ Så här startar och utvärderar du en prototyp:
 
 1. Klicka **[!UICONTROL Give Feedback]** för att kunna ge feedback i meddelanderutan när som helst när du arbetar med prototypen.
 
-   ![feedback_box](assets/give_feedback.png)
+   ![Fönstret för feedback](assets/give_feedback.png)
 
 1. Klicka **[!UICONTROL Submit]** för att skicka feedback.
 
 1. Om du vill prova en annan prototyp eller avsluta prototypmiljön klickar du på **[!UICONTROL Leave Prototype]** i skärmens övre högra hörn och fyll i den korta enkäten för prototypen. Alla ändringar som görs i ett prototypprojekt går förlorade när prototypmiljön avslutas.
 
-   ![ny feedbackruta](assets/short-survey.png)
+   ![Fönstret Intelligent Pathing Feedback](assets/short-survey.png)
 
 1. Klicka **[!UICONTROL Submit]** för att återgå till huvudportalen för förhandsvisningar.
 
 ## Ytterligare information
 
-* Vissa prototyper i [!UICONTROL Labs] och blir Customer Journey Analytics-funktioner, andra kanske inte gör det. Din feedback styr beslutet, så granska prototyperna och berätta för Adobe hur värdefulla du hittar dem.
+* Vissa prototyper i [!UICONTROL Labs] och blir Customer Journey Analytics-funktioner, andra kanske inte. Din feedback styr beslutet, så granska prototyperna och berätta för Adobe hur värdefulla du hittar dem.
 * Labs är tillgängliga för alla SKU-berättiganden.

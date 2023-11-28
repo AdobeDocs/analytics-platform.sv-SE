@@ -3,16 +3,16 @@ description: Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn 
 title: Datumjämförelse
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 6%
+source-wordcount: '651'
+ht-degree: 5%
 
 ---
 
 # Datumjämförelse
 
-Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
+Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
 ## Jämför tidsperioder
 
@@ -21,7 +21,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 1. Skapa en frihandstabell med alla mått och mätvärden som du vill jämföra under en tidsperiod.
 1. Högerklicka på en tabellrad och välj **[!UICONTROL Compare Time Periods]**.
 
-   ![](assets/compare-time.png)
+   ![Tabellrad med Jämför tidsperioder markerat](assets/compare-time.png)
 
    >[!IMPORTANT]
    >
@@ -41,13 +41,13 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
 1. Jämförelsen ser ut så här:
 
-   ![](assets/compare-time-result.png)
+   ![Frihandstabell som visar en jämförelse av datumintervall och procentuell ändring.](assets/compare-time-result.png)
 
    Rader i kolumnen Procent ändring visas som röda för negativa värden och gröna för positiva värden.
 
 1. (Valfritt) Som i andra Workspace-projekt kan du skapa visualiseringar baserat på dessa tidsjämförelser. Här är ett stolpdiagram:
 
-   ![](assets/compare-time-barchart.png)
+   ![Projektfältdiagram för arbetsyta.](assets/compare-time-barchart.png)
 
    Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages] inställningen är markerad i [!UICONTROL Visualization Settings].
 
@@ -55,7 +55,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
 Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan lägga till en annan tidsperiod än den som du har angett för kalendern. Detta är ett annat sätt att jämföra datum.
 
-1. Högerklicka på en kolumn i tabellen och välj **[!UICONTROL Add Time Period Column]** ![](assets/add-time-period-column.png)
+1. Högerklicka på en kolumn i tabellen och välj **[!UICONTROL Add Time Period Column]** ![Tabellkolumnlista med kolumnen Lägg till tidsperiod markerad ](assets/add-time-period-column.png)
 
 1. Beroende på hur du har angett tabellens datumintervall kan du göra följande jämförelser:
 
@@ -71,11 +71,11 @@ Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan l
 
 1. Tidsperioden infogas ovanpå den markerade kolumnen:
 
-   ![](assets/add-time-period-column2.png)
+   ![Frihandstabell med förekomster för den aktuella kalenderperioden och föregående kalendermånad.](assets/add-time-period-column2.png)
 
 1. Du kan lägga till så många tidskolumner du vill och blanda och matcha olika datumintervall:
 
-   ![](assets/add-time-period-column4.png)
+   ![Frihandsregister som visar förekomster för den här månaden, föregående månad, föregående månad för ett år sedan och en vecka föregående månad för ett år sedan.](assets/add-time-period-column4.png)
 
 1. Du kan dessutom sortera efter varje kolumn, vilket ändrar ordningen på dagar beroende på vilken kolumn du sorterar efter.
 
@@ -83,7 +83,7 @@ Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan l
 
 Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from each column to all start on the same row (applies to entire table)]**. &quot;Gäller hela tabellen&quot; betyder att om du t.ex. gör en uppdelning i tabellen, och om du ändrar den här inställningen för uppdelningen, så ändras inställningen för hela tabellen.
 
-![](assets/date-comparison-setting.png)
+![Frihandstabell med tabellinställningspopup som visar Justera datum från varje kolumn så att alla startar på samma markerade rad.](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from 
 
 Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse mellan oktober och september 2016 börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september:
 
-![](assets/add-time-period-column3.png)
+![Jämförelse som visar procentandelar per månad.](assets/add-time-period-column3.png)
 
 <!-- 
 

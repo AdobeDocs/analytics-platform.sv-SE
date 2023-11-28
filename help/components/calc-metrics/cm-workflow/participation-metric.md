@@ -3,9 +3,9 @@ description: Med verktyget Beräknade mätvärden kan vem som helst skapa ett de
 title: Deltagandemått
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ Den här typen av information kan vara användbar för alla innehållsägare.
 
    I rutan Definition uppdateras det valda måttet genom att lägga till  **(Partition|Session)** till namnet.
 
-   ![](assets/participation-setup.png)
+   ![Popup-meny för kolumnattribueringsmodell som visar Deltagande som vald modell och session vald för fönstret Lookback.](assets/participation-setup.png)
 
 
 
 1. Välj [!UICONTROL **Spara**] för att spara måtten.
 1. Använd det beräknade måttet i rapporten. Använd till exempel den beräknade [!DNL Orders (Session Participation)] mätvärden (enligt definition i steg 5) i en rapport för att visa vilken kundnivå som bidragit till (eller deltagit i) sessioner som innehöll en order.
 
-   ![](assets/participation-pages-customer-tier.png)
+   ![Frihandsregister som visar kundnivå och beställningar.](assets/participation-pages-customer-tier.png)
 
 1. (Valfritt) Dela mätvärdena med andra användare i organisationen enligt beskrivningen i [Dela beräknade värden](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

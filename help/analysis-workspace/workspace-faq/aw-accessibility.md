@@ -3,9 +3,9 @@ description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Läs mer om tillgänglighetsstöd i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Customer Journey Analytics.
 
-Med hjälpmedel avses att göra produkter användbara för personer med funktionshinder som syn-, hörsel-, kognitiv-, motor- eller andra funktionshinder. Exempel på hjälpmedelsfunktioner för programprodukter är skärmläsarstöd, textmotsvarigheter för grafik, kortkommandon, ändring av visningsfärger till hög kontrast osv.
+Med hjälpmedel avses att göra produkter användbara för personer med funktionshinder som syn-, hörsel-, kognitiv-, motor- eller andra funktionshinder. Exempel på hjälpmedelsfunktioner för programprodukter är skärmläsarstöd, textmotsvarigheter för grafik, kortkommandon, ändringar av visningsfärger till hög kontrast osv.
 
 [!UICONTROL Analysis Workspace] innehåller verktyg som gör dem tillgängliga att använda, bland annat:
 
@@ -25,9 +25,9 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar top > down, and left > rig
 * The `Tab` Med tangenten kan du skapa genvägar mellan större avsnitt i arbetsytan. I den vänstra listen `Tab` Med kan du också gå från ett dragbart alternativ till nästa.
 * The `left/right arrows` flytta mellan enskilda element efter `Tab` har markerat det.
 * The `F6` navigerar till den första panelen i projektet och förflyttar sig mellan visualiseringarna på den panelen. Sedan flyttas den till nästa panel i projektet och upprepas.
-* Vi använder fokusindikatorer så att synkade tangentbordsanvändare får en tydlig indikation på vilket gränssnittselement som för närvarande är i fokus. Indikatorn är en blå ram runt det markerade elementet.
+* Vi använder fokusindikatorer så att synkade tangentbordsanvändare får en tydlig indikation på vilket gränssnittselement som är i fokus. Indikatorn är en blå ram runt det markerade elementet.
 
-   ![Fokusindikator](assets/focus-indicator.png)
+  ![Friformstabell med en fokusindikator för en blå ram runt friformstabellen.](assets/focus-indicator.png)
 
 ### Tangentbordsnavigering för menyraden
 
@@ -98,7 +98,7 @@ När du skapar en komponent valideras de obligatoriska fälten när du sparar. O
 
 När en komponent har validerats trycker du `Save` stänger verktyget.
 
-![Felvalidering](assets/error-validation.png)
+![Segment Builder och felvalideringsindikator.](assets/error-validation.png)
 
 ## Stöd för hjälpmedelsfunktioner för operativsystem
 

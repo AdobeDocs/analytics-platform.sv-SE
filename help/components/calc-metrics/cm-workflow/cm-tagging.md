@@ -3,9 +3,9 @@ description: I hanteraren för beräknade mått kan du ordna segment med hjälp 
 title: Tagga beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '283'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Alla användare kan skapa taggar för beräknade värden och använda en eller f
 
 1. Markera kryssrutan bredvid de mätvärden du vill tagga i Calculated Metrics Manager.
 
-   ![](assets/cm_add_tags.png)
+   ![Tagga listan Beräknade mätvärden med Mobilmarknadsföring vald.](assets/cm_add_tags.png)
 
 1. I [!UICONTROL **Märk beräknat värde**] dialogruta:
 

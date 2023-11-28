@@ -4,9 +4,9 @@ description: Beskriver hur du använder grundläggande visualiseringar för att 
 feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ Här är ett exempel på grundläggande visualiseringar i Workspace. Du kan till
 
 * Avbilda målgruppsstorleken efter datakällor, t.ex. annonsvisningsdata, Customer Journey Analytics-data, e-postdata, POS-data, callcenterdata och undersökningsdata.
 
-![](assets/cja-basic-analysis.png)
+![Exempelvisualiseringar av grundläggande analysdiagram. ](assets/cja-basic-analysis.png)
 
-![](assets/cja-basic-analysis2.png)
+![Fler exempel på visualiseringar av grundläggande analysdiagram](assets/cja-basic-analysis2.png)

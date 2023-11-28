@@ -4,9 +4,9 @@ description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ The [!UICONTROL Annotations] -hanteraren visar alla anteckningar du äger som ha
 
 ## Annotations Manager-användargränssnitt
 
-![](assets/annotation-mgr.png)
+![Anteckningsalternativ som delning, taggning eller kopiering som beskrivs i nästa avsnitt.](assets/annotation-mgr.png)
 
 | Gränssnittselement | Beskrivning |
 | --- | --- | 
@@ -58,7 +58,7 @@ När du delar anteckningar eller arbetar med anteckningar som delats med dig bö
 
 ## Anteckningar och tidszoner
 
-Alla anteckningar skapas med en tidsstämpel, men ingen &quot;timme&quot;- eller &quot;tidszon&quot;-information. Vid rapporttillfället används alltid tidszonen för panelens datavy. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du befinner dig i i datavyn.
+Alla anteckningar skapas med en tidsstämpel, men ingen timinformation eller tidszonsinformation. Vid rapporttillfället används alltid tidszonen för panelens datavy. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du befinner dig i i datavyn.
 
 Ett annat exempel är nyårsdagen. Varje timme sätter olika tidszoner igång för fyrverkerier när det nya året börjar. På 10.00 amerikanska Mountain Time startar USA:s östkust brandarbeten eftersom det redan är 12.00 Eastern Time.
 
@@ -71,7 +71,7 @@ Välj bara en eller flera av anteckningarna så visas Aktivitetsfältet.
 | Uppgift | Beskrivning |
 | --- | --- |
 | Lägg till | Gå till Anteckningsverktyget där du kan skapa nya anteckningar. |
-| Tagg | Alla användare kan skapa taggar för anteckningar och använda en eller flera taggar för en anteckning. Men du kan bara se taggar för de filter som du äger. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>Taggar baserade på teamnamn, som social marknadsföring, mobilmarknadsföring</li><li>Projekttaggar (analystaggar), t.ex. analys på ingångssidan</li><li>Kategoritaggar: Män geografi</li><li>Arbetsflödestaggar: Kuraterad för (en specifik affärsenhet). Godkänd</li></ul> |
+| Tagg | Alla användare kan skapa taggar för anteckningar och använda en eller flera taggar för en anteckning. Men du kan bara se taggar för de filter som du äger. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>Taggar baserade på teamnamn, som social marknadsföring, mobilmarknadsföring</li><li>Projekttaggar (analystaggar), t.ex. analys på ingångssidan</li><li>Kategoritaggar: Män; geografi</li><li>Arbetsflödestaggar: Kuraterad för (en specifik affärsenhet); Godkänd</li></ul> |
 | Ta bort | Om du tar bort en anteckning tas den bort från alla projekt i organisationen. |
 | Byt namn | Om du ändrar namn på en anteckning ändras namnet i alla projekt som den används i. |
 | Kopiera | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |

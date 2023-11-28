@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Med alternativet Från cell kan du referera till datum som anges i kalkylbladsce
 
 Du kan välja att exkludera idag för valfritt datumintervall.
 
-![Välj Uteslut idag.](./assets/image17.png)
+![Snabbredigeringsfönster i Report Builder med kalendern markerad och Uteslut i dag markerad.](./assets/image17.png)
 
 ## Använda kalendern
 
@@ -62,7 +62,7 @@ Välja datum med hjälp av kalendern
 
 Om du vill ange ett omvänt datumintervall klickar du först på slutdatumet och sedan på startdatumet.
 
-![Klicka på slutdatumet och sedan på startdatumet.](./assets/image18.png)
+![Fönstret för datumintervall i Report Builder med kalendern, slutdatumet och det valda startdatumet.](./assets/image18.png)
 
 ### Listrutan Förinställning
 
@@ -76,7 +76,7 @@ Med alternativet för rullande datum kan du välja ett datumintervall med rullan
 
 1. Välj ett rullande uttryck för start- och slutdatumet.
 
-   ![Välj Använd rullande datum och sedan rullande uttryck.](./assets/image19.png)
+   ![Report Builder datumintervallfönster som visar Använd rullande datum och rullande uttryck.](./assets/image19.png)
 
    **Början av** - Välj början på en dag, vecka, månad, kvartal eller år.
 
@@ -86,11 +86,11 @@ Med alternativet för rullande datum kan du välja ett datumintervall med rullan
 
 1. Välj dag, vecka, månad, kvartal eller år som rullande period.
 
-   ![Välj aktuell dag.](./assets/image20.png)
+   ![Datumintervallfönster i Report Builder med den aktuella dagen som valts.](./assets/image20.png)
 
 1. Lägg till eller subtrahera dagar, veckor, månader, kvartal eller år från ditt rullande datum.
 
-   ![Välj aktuell dag plus 14 dagar.](./assets/image21.png)
+   ![Datumintervallfönstret i Report Builder visar den aktuella dagen plus 14 dagar.](./assets/image21.png)
 
 1. Klicka på Nästa för att definiera dataområdet.
 

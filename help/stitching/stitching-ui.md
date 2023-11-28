@@ -1,11 +1,12 @@
 ---
 title: Stitlar
-description: Förstå hur man skapar och hanterar sammanfogade datauppsättningar
+description: Lär dig hur du skapar och hanterar sammanfogade datauppsättningar
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%

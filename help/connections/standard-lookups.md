@@ -4,9 +4,9 @@ description: Använd standardsökningar för att förbättra rapporter med anvä
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 För att kunna rapportera standarddimensioner för sökning måste du lägga till dem när du skapar en datavy i Customer Journey Analytics:
 
-![](assets/global-lookup.png)
+![Skapa en datavy som visar listan Lägg till komponenter](assets/global-lookup.png)
 
 Du kan sedan se sökdata i arbetsytan:
 
-![](assets/gl-reporting.png)
+![Frihandstabell med data](assets/gl-reporting.png)

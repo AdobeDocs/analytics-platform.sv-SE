@@ -3,16 +3,16 @@ title: Referens - avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3101'
+source-wordcount: '3119'
 ht-degree: 1%
 
 ---
 
 # Referens - avancerade funktioner
 
-Få åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i **[!UICONTROL Functions]** nedrullningsbar lista.
+Få åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i **[!UICONTROL Functions]** listruta.
 
 ## Tabellfunktioner kontra radfunktioner
 
@@ -61,11 +61,11 @@ Approximate Count Distinct (kundens ID-eVar) är ett vanligt användningsfall f�
 
 Definition för ett nytt beräknat mått för&quot;Approximate Customers&quot;:
 
-![](assets/approx-count-distinct.png)
+![Ungefärlig regionspecifik ny dimensionsdefinition med Kund-ID (eVar1)](assets/approx-count-distinct.png)
 
 Så här kan måttet&quot;Approximate Customers&quot; användas vid rapportering:
 
-![](assets/approx-customers.png)
+![Frihandstabell med unika besökare och ungefärliga kunder ](assets/approx-customers.png)
 
 ## Uniques överskreds
 
@@ -113,7 +113,7 @@ ATAN(metric)
 |---|---|
 | *mått* | cosinus för vinkeln som du vill ha från -1 till 1. |
 
-## Exponentiell regression: Förutsedd Y (rad)
+## Exponentiell regression: Förväntat Y (rad)
 
 Beräknar de förväntade y-värdena (metric_Y), med tanke på de kända x-värdena (metric_X), med hjälp av metoden &quot;minst fyrkanter&quot; för att beräkna raden för bästa passform baserat på .
 
@@ -172,7 +172,7 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 
 | Argument | Beskrivning |
 | --- | --- |
-| Normaliserar behållare | Basen (Personer, sessioner eller Händelser) som testet ska köras på. |
+| Normaliserar behållare | Grundläggande (Personer, sessioner eller Händelser) som ett test ska köras på. |
 | Resultatmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
 | Kontroll | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
 | Tröskelvärde för signifikans | Tröskelvärdet i den här funktionen är inställt på 95 % som standard. |
@@ -225,7 +225,7 @@ Om N &lt;= 0 används alla föregående rader. Eftersom den ordnas efter dimensi
 
 >[!NOTE]
 >
->Detta fungerar inte som du kan förvänta dig med tariffvärden som intäkt/person: De beräknar genomsnittsnivån i stället för att summera intäkterna för de senaste N:en och summerar personerna under de senaste N:en och delar sedan upp dem. Använd i stället
+>Detta fungerar inte som ni kan förvänta er med taxeringsvärden som intäkter/person: i stället för att summera intäkterna för de senaste N-siffrorna och summera personer över de senaste N-siffrorna och sedan dela upp dem. Använd i stället
 
 ```
 cumul(revenue)/cumul(person)
@@ -341,8 +341,8 @@ IF(logical_test, [value_if_true], [value_if_false])
 | Argument | Beskrivning |
 |---|---|
 | *logical_test* | Obligatoriskt. Alla värden eller uttryck som kan utvärderas till TRUE eller FALSE. |
-| *[value_if_true]* | Värdet som du vill returnera om *logical_test* argument utvärderas till TRUE. (Detta argument är som standard 0 om det inte inkluderas.) |
-| *[value_if_false]* | Värdet som du vill returnera om *logical_test* argument utvärderas till FALSE. (Detta argument är som standard 0 om det inte inkluderas.) |
+| *[value_if_true]* | Värdet som du vill returnera om *logical_test* argument utvärderas till TRUE. (Det här argumentet är som standard 0 om det inte inkluderas.) |
+| *[value_if_false]* | Värdet som du vill returnera om *logical_test* argument utvärderas till FALSE. (Det här argumentet är som standard 0 om det inte inkluderas.) |
 
 ## Mindre än
 
@@ -362,7 +362,7 @@ fx Lift (normalizing-container, success-metric, control)
 
 | Argument | Beskrivning |
 | --- | --- |
-| Normaliserar behållare | Basen (Personer, sessioner eller Händelser) som testet ska köras på. |
+| Normaliserar behållare | Grundläggande (Personer, sessioner eller Händelser) som ett test ska köras på. |
 | Resultatmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
 | Kontroll | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
 
@@ -422,7 +422,7 @@ INTERCEPT.LOG(metric_X, metric_Y)
 | *metric_X* | Ett mätvärde som du vill ange som beroende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
 
-## Loggregression: Förutsedd Y (rad)
+## Loggregression: Förväntat Y (rad)
 
 Beräknar den förväntade [!DNL y] värden (metric_Y), med de kända [!DNL x] värden (metric_X) som använder metoden&quot;minst fyrkanter&quot; för att beräkna raden för bästa passning baserat på [!DNL Y = a ln(X) + b]. Den beräknas med hjälp av ESTIMATE-ekvationen.
 
@@ -437,7 +437,7 @@ ESTIMATE.LOG(metric_X, metric_Y)
 | *metric_X* | Ett mätvärde som du vill ange som beroende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
 
-## Loggregression: Lutning (tabell)
+## Loggregression: Långsam (tabell)
 
 Returnerar lutningen, *a*, mellan två måttkolumner (*metric_X* och *metric_Y*) för regressionsekvationen [!DNL Y = a ln(X) + b]. Den beräknas med hjälp av SLOPE-ekvationen.
 
@@ -474,7 +474,7 @@ NOT(logical)
 |---|---|
 | *logisk* | Obligatoriskt. Ett värde eller uttryck som kan utvärderas till TRUE eller FALSE. |
 
-Om du använder NOT måste du känna till om uttrycken (&lt;, >, =, &lt;> osv.) returnera 0- eller 1-värden.
+Om du använder NOT måste du känna till om uttrycken (&lt;, >, =, &lt;> osv.) returnerar 0- eller 1-värden.
 
 ## Inte lika med
 
@@ -507,7 +507,7 @@ PI()
 
 The [!DNL PI]funktionen har inga argument.
 
-## Strömregression: Korrelationskoefficient (tabell)
+## Effektregression: Korrelationskoefficient (tabell)
 
 Returnerar korrelationskoefficienten, *r*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
 
@@ -520,7 +520,7 @@ CORREL.POWER(metric_X, metric_Y)
 | *metric_X* | Ett mätvärde som du vill korrelera med *metric_Y*. |
 | *metric_Y* | Ett mätvärde som du vill korrelera med *metric_X*. |
 
-## Strömregression: Intercept (tabell)
+## Strömregression: Skärpning (tabell)
 
 Returnerar spärren, *b*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
 
@@ -533,9 +533,9 @@ Returnerar spärren, *b*, mellan två måttkolumner (*metric_X* och *metric_Y*) 
 | *metric_X* | Ett mätvärde som du vill ange som beroende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
 
-## Strömregression: Förutsedd Y (rad)
+## Strömregression: Förväntat Y (rad)
 
-Beräknar den förväntade [!DNL y] värden ( [!DNL metric_Y]), eftersom [!DNL x] värden ( [!DNL metric_X]) med hjälp av metoden &quot;minst fyrkanter&quot; för att beräkna raden som bäst passar för [!DNL Y = b*X].
+Beräknar den förväntade [!DNL y] värden ( [!DNL metric_Y]), eftersom [!DNL x] värden ( [!DNL metric_X]) med hjälp av metoden&quot;minst fyrkanter&quot; för att beräkna raden som bäst passar för [!DNL Y = b*X].
 
 ```
  ESTIMATE.POWER(metric_X, metric_Y)
@@ -546,7 +546,7 @@ Beräknar den förväntade [!DNL y] värden ( [!DNL metric_Y]), eftersom [!DNL x
 | *metric_X* | Ett mätvärde som du vill ange som beroende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
 
-## Strömregression: Lutning (tabell)
+## Strömregression: Långsam (tabell)
 
 Returnerar lutningen, *a*, mellan två måttkolumner (*metric_X* och *metric_Y*) för [!DNL Y = b*X].
 
@@ -585,7 +585,7 @@ INTERCEPT.POWER(metric_X, metric_Y)
 | *metric_X* | Ett mätvärde som du vill ange som beroende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
 
-## Kvadratisk regression: Förutsedd Y (rad)
+## Kvadratisk regression: Förväntat Y (rad)
 
 Beräknar den förväntade [!DNL y] värden (metric_Y), med de kända [!DNL x] värden (metric_X) som använder metoden med minst fyrkanter för att beräkna raden för bästa passning med [!DNL Y=(a*X+b)]**** .
 
@@ -598,7 +598,7 @@ ESTIMATE.QUADRATIC(metric_A, metric_B)
 | *metric_A* | Ett mätvärde som du vill ange som beroende data. |
 | *metrisk_B* | Ett mätvärde som du vill ange som beroende data. |
 
-## Kvadratisk regression: Lutning (tabell)
+## Kvadratisk regression: Långsam (tabell)
 
 Returnerar lutningen, *a*, mellan två måttkolumner (*metric_X* och metric_Y) för [!DNL Y=(a*X+b)]****.
 
@@ -637,7 +637,7 @@ INTERCEPT.RECIPROCAL(metric_A, metric_B)
 | *metric_X* | Ett mätvärde som du vill ange som beroende data. |
 | *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
 
-## Ömsesidig regression: Förutsedd Y (rad)
+## Ömsesidig regression: Förväntat Y (rad)
 
 Beräknar den förväntade [!DNL y] värden (metric_Y), med de kända [!DNL x] värden (metric_X) som använder metoden med minst fyrkanter för att beräkna raden för bästa passning med [!DNL Y = a/X+b].
 
@@ -665,7 +665,7 @@ SLOPE.RECIPROCAL(metric_X, metric_Y)
 
 ## Sinus (rad)
 
-Returnerar sinus för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI( )/180.
+Returnerar sinus för angiven vinkel. Om vinkeln är i grader multiplicerar du vinkeln med PI( )/180.
 
 ```
 SIN(metric)
@@ -683,11 +683,11 @@ Alias för Z-poäng, dvs. avvikelsen från medelvärdet dividerat med standardav
 
 Utför ett m-tailed t-test med t-score på kol och n frihetsgrader.
 
-Signaturen är `t_test( x, n, m )`. Under... `m*cdf_t(-abs(x),n)`. (Detta liknar funktionen z-test som körs `m*cdf_z(-abs(x))`.
+Signaturen är `t_test( x, n, m )`. Under, anropar den bara `m*cdf_t(-abs(x),n)`. (Detta liknar funktionen z-test som körs `m*cdf_z(-abs(x))`.
 
 Här, `m` är antalet svansen, och `n` är frihetsgrader. Dessa ska vara tal (konstanta för hela rapporten, dvs. inte ändras rad för rad).
 
-`X` är t-test-värdet och skulle ofta vara en formel (t.ex. zscore) baserad på ett mätresultat och kommer att utvärderas på varje rad.
+`X` är t-test-värdet och skulle ofta vara en formel (t.ex. zscore) som baseras på ett mätresultat och utvärderas på varje rad.
 
 Returvärdet är sannolikheten att se provningsvärdet x med hänsyn till antalet frihetsgrader och antalet svansar.
 

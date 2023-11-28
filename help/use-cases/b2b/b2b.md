@@ -4,9 +4,9 @@ description: Lär dig hur du lägger till kontobaserade data som en uppslagsdata
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Du skapar först ett uppslagsschema i Adobe Experience Platform och skapar sedan
 
 Skapa ett eget schema för [sökning](/help/getting-started/cja-glossary.md) tabellen ser till att den datauppsättning som används är tillgänglig i Customer Journey Analytics med rätt inställningar (posttyp). Bästa praxis är att [skapa en anpassad schemaklass](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) anropas för&quot;Sök efter&quot;, tom för alla element, som kan återanvändas för alla uppslagstabeller.
 
-![](../assets/create-new-class.png)
+![Dialogrutan Skapa ny klass.](../assets/create-new-class.png)
 
 ## 2. Skapa uppslagsdatauppsättning (Experience Platform)
 

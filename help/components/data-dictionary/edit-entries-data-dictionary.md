@@ -4,9 +4,9 @@ title: Redigera poster i Data Dictionary
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Så här redigerar du en komponent i Data Dictionary:
 
 Fönstret Data Dictionary visas.
 
-![Administratörsvy för datamordlista](assets/data-dictionary-admin.png)
+![Administratörsvy för dataordlista med ordlistehälsa](assets/data-dictionary-admin.png)
 
 1. Kontrollera att rätt datavy är markerad i listrutan. Som standard visas datavyn som du redan befinner dig i.
 

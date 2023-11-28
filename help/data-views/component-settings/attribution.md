@@ -4,9 +4,9 @@ description: Gör att du kan ange standardattribuering för ett mätresultat.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Attribution ger er möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser.
 
-![](../assets/attribution-settings.png)
+![Fönstret Datavy där du markerar alternativet Ange attribuering](../assets/attribution-settings.png)
 
 Exempel:
 
@@ -46,7 +46,7 @@ Så här uppdaterar du en komponents standardattribueringsmodell:
 
 1. Markera komponenten och expandera sedan avsnittet Attribution till höger på skärmen.
 
-   ![](../assets/attribution-settings.png)
+   ![Fönstret Datavy där du markerar alternativet Ange attribuering](../assets/attribution-settings.png)
 
 1. Välj [!UICONTROL **Ange attribut**] väljer du sedan attribueringsmodellen i [!UICONTROL **Attributionsmodell**] listruta.
 

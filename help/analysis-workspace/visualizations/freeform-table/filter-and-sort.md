@@ -3,9 +3,9 @@ description: Dokumentation som beskriver hur du filtrerar och sorterar tabeller 
 title: Filtrera och ordna tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Så här filtrerar du data i frihandstabeller:
 
 1. Välj **Filter** -ikonen när den visas.
 
-   ![Filterikon i en tabell](assets/table-filter-icon.png)
+   ![Frihandstabell som markerar ikonen Filter.](assets/table-filter-icon.png)
 
    Följande alternativ är tillgängliga:
 
@@ -108,6 +108,6 @@ En nedåtpil ![Ikonen nedpil, sorterad tabellkolumn](https://spectrum.adobe.com/
    - Nedpilen sorterar i fallande ordning och uppilen (standard) i stigande ordning.
    - Du kan sortera Dimensioner alfabetiskt eller numeriskt. Du kan till exempel ha numrerade steg i ett arbetsflöde och vill kanske sortera efter stegnumret. Du kan sortera en datumrelaterad dimension efter datum. Du kan också sortera datakällor i bokstavsordning, som i följande bild.
 
-   ![](assets/sort-dimensions.png)
+   ![Vyn Datakällor som markerar sorteringsikonen.](assets/sort-dimensions.png)
 
 

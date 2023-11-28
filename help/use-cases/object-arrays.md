@@ -1,10 +1,10 @@
 ---
 title: Använda arrayer med objekt
-description: Förstå hur Customer Journey Analytics rapporterar om datahierarkier.
+description: Lär dig hur Customer Journey Analytics rapporterar om datahierarkier.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Vissa plattformsscheman kan ha objektarrayer. Adobe Customer Journey Analytics stöder inmatning och rapportering av objektarrayer i händelse-, uppslags- och profildata. Ett av de vanligaste exemplen är en varukorg som innehåller flera produkter. Varje produkt har ett namn, SKU, kategori, pris, kvantitet och andra dimensioner som du vill spåra. Alla de här ansiktena har olika krav, men måste alla få plats i samma träff.
 
-I tidigare versioner av Adobe Analytics utfördes den här funktionen med `products` variabel. Det var en sammanfogad sträng avgränsad med semikolon (`;`) för att separera olika delar av en produkt, medan kommatecken (`,`) avgränsade produkter. Den var den enda variabeln med begränsat stöd för&quot;objektarrayer&quot;. Multivärdesvariabler som listvariabler kan ha stöd för motsvarande arrayer, men de kan inte ha stöd för &quot;objektarrayer&quot;. Customer Journey Analytics utnyttjar detta koncept ytterligare genom att stödja godtyckligt djupa hierarkier i en enda datarad, en funktion som inte finns i någon tidigare version av Adobe Analytics.
+I tidigare versioner av Adobe Analytics utfördes den här funktionen med `products` variabel. Det var en sammanfogad sträng avgränsad med semikolon (`;`) för att separera olika delar av en produkt, medan kommatecken (`,`). Den var den enda variabeln med begränsat stöd för&quot;objektarrayer&quot;. Multivärdesvariabler som listvariabler kan ha stöd för motsvarande arrayer, men de kan inte ha stöd för &quot;objektarrayer&quot;. Customer Journey Analytics utnyttjar detta koncept ytterligare genom att stödja godtyckligt djupa hierarkier i en enda datarad, en funktion som inte finns i någon tidigare version av Adobe Analytics.
 
 ## Exempel på samma händelse
 
@@ -67,19 +67,19 @@ När du skapar en datavy är följande mått och mått tillgängliga (baserat p�
 
 * **Dimensioner:**
    * ID
-   * product: SKU
-   * product: name
-   * product: order_id
-   * product: garanti: täckning
-   * product: garanti: length
-   * product: garanti: name
-   * product: garanti: type
+   * product : SKU
+   * product : name
+   * product : order_id
+   * product : warranty : cover
+   * product : warranty : length
+   * product : warranty : name
+   * product : warranty : type
 * **Mätvärden:**
-   * product: order
-   * product: enheter
-   * product: omsättning
-   * product: garanti
-   * product: garanti: omsättning
+   * product:order
+   * product:units
+   * product : omsättning
+   * product : warranty
+   * product : warranty : revenue
 
 ### Exempel på samma händelse (rapporteringsbeteende)
 

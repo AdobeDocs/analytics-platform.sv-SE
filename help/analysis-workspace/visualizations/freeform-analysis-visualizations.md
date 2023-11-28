@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Översikt över visualiseringar
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1312'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
    * I den vänstra listen väljer du **Visualiseringar** icon <!-- add icon -->och sedan dra en visualisering till panelen där du vill lägga till den.
 
-     ![](assets/viz-rail.png)
+     ![Panelen Visualiseringar](assets/viz-rail.png)
 
    * På panelen där du vill lägga till visualiseringen väljer du **Plus** väljer du sedan den ikon som representerar den visualisering som du vill lägga till. Håll pekaren över ikonen för varje visualisering för att se dess namn.
 
@@ -81,14 +81,14 @@ Du kan anpassa inställningarna för alla visualiseringar som du skapar. Mer inf
 
 Varje visualisering har sina egna inställningar som du kan hantera. För åtkomst [!UICONTROL Visualization Settings]klickar du på [!UICONTROL Visualization Settings] kugghjulsikon.
 
-![Inställningar](assets/settings.png)
+![Visualiseringsinställningar som visar de inställningsalternativ som beskrivs i nästa avsnitt.](assets/settings.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
 | Visualiseringstyp | Ändra den typ av visuell information som används för att avbilda data. |
 | Kornighet | För trendvisualiseringar kan du ändra tidshalten (dag, vecka, månad osv.) från den här listrutan. Den här ändringen gäller även för datakälltabellen. |
 | Procenttal | Visar värden i procent. |
-| 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Staplad 100 %](assets/stacked_100_percent.png) |
+| 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Ett stapeldiagram som visar vyn Staplad 100 %.](assets/stacked_100_percent.png) |
 | Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
 | Begränsa maximalt antal objekt | Gör att du kan begränsa antalet objekt som visas i en visualisering. |
 | Ankra Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
@@ -107,7 +107,7 @@ Så här redigerar du en förklaringsetikett:
 1. Högerklicka på någon av förklaringsetiketterna.
 1. Klicka på **[!UICONTROL Edit Label]**.
 
-   ![Redigera etikett](assets/edit-label.png)
+   ![En förklaringsetikett och alternativet Redigera etikett.](assets/edit-label.png)
 
 1. Ange den nya etikettexten.
 1. Tryck **[!UICONTROL Enter]** att spara.
@@ -116,7 +116,7 @@ Så här redigerar du en förklaringsetikett:
 
 Ytterligare funktioner för en visualisering är tillgängliga genom att högerklicka på rubriken för visualisering. Inställningarna varierar beroende på visualisering. Några av de tillgängliga inställningarna är:
 
-![Högerklicka](assets/right-click.png)
+![Ytterligare visualiseringsinställningar med alternativen för högerklick. Alternativen beskrivs i nästa avsnitt.](assets/right-click.png)
 
 | Inställning | Beskrivning |
 | --- | --- |

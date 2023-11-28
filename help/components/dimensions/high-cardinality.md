@@ -4,9 +4,9 @@ description: Beskriver hur Customer Journey Analytics hanterar dimensioner med m
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ När du använder en dimension som innehåller många unika värden kan den resu
 
 När du begär en rapport med för många unika värden visar Analysis Workspace en indikator i dimensionshuvudet som anger att inte alla dimensionsobjekt inkluderas. Exempel: &quot;Rader: 1-50 av mer än 22 343 156&quot;. Nyckelordet &quot;mer än&quot; indikerar att viss optimering har tillämpats på rapporten för att returnera de viktigaste dimensionsobjekten.
 
-![Förhandsgranska arbetsyta](assets/high-cardinality.png)
+![Frihandstabell i Workspace med nyckelordet &quot;mer än&quot; som visar 1-50 av mer än 22 343 156](assets/high-cardinality.png)
 
 ## Bestämma vilka dimensionsobjekt som ska visas
 

@@ -1,12 +1,12 @@
 ---
 title: Vanliga frågor om guidad analys
 description: Vanliga frågor om den guidade analysen.
-exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ while [Analysis Workspace](../analysis-workspace/home.md) och för guidad analys
 
 * **Guidad analys är en händelsestyrd upplevelse.** Varje analys börjar med att välja händelser, sedan kan mått och filter läggas till för att förfina händelsedata.
 
-![Struktur](assets/structure.png)
+![Analysis Workspace och guidade analysvyer](assets/structure.png)
 
 Titta på följande exempel där du fokuserar på data runt hemsidan på din webbplats. Teamen ställer liknande frågor, men analysmetoden kan vara annorlunda.
 

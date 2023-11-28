@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Så här ändrar du inställningarna för Report Builder
 
 1. Klicka **Använd**.
 
-   ![Klicka på Använd.](./assets/image38.png)
+   ![Fönstret för datumintervall i Report Builder visar knappen Avbryt och Använd.](./assets/image38.png)
 
 ## Offline-läge
 
@@ -51,7 +51,7 @@ Välj det språk som ska användas i användargränssnittet i Report Builder
 
 1. Välj ett språk på menyn **Språk** listrutemeny.
 
-   ![Välj språklistan.](./assets/image39.png)
+   ![Datumintervallfönstret i Report Builder visar språklistan med engelska valt.](./assets/image39.png)
 
 1. Klicka **Använd.**
 

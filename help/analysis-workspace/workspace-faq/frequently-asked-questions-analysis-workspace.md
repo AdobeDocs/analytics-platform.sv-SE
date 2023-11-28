@@ -1,12 +1,12 @@
 ---
-description: Systemkrav för Analysis Workspace.
+description: Läs om systemkraven för Analysis Workspace.
 keywords: Analysis Workspace
 title: Administrationskrav
 feature: FAQ
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '154'
 ht-degree: 5%
 
 ---

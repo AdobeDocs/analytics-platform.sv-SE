@@ -3,9 +3,10 @@ title: Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Du kan avbryta enskilda begäranden som förbrukar en stor del av rapporteringsk
 
    1. Aktivera alternativet att [!UICONTROL **Begränsa efterföljande begäranden**].
 
-      ![Begränsa efterföljande begäranden](assets/restrict-subsequent-requests.png)
+      ![Avbryt 1 begäran med Begränsa efterföljande begäranden markerat och meddelandet Avbryt.](assets/restrict-subsequent-requests.png)
 
    1. Välj bland följande alternativ:
 
@@ -91,7 +92,7 @@ Du kan avbryta alla begäranden som är kopplade till en eller flera användare.
 
    1. Aktivera alternativet att [!UICONTROL **Begränsa efterföljande begäranden**]
 
-      ![Begränsa efterföljande begäranden per användare](assets/restrict-subsequent-requests-user.png)
+      ![Avbryt 1 begäran med alternativet Begränsa efterföljande begäranden per vald användare.](assets/restrict-subsequent-requests-user.png)
 
    1. Välj bland följande alternativ:
 
@@ -132,7 +133,7 @@ Du kan avbryta alla begäranden som är kopplade till ett eller flera projekt. N
 
    1. Aktivera alternativet att [!UICONTROL **Begränsa efterföljande begäranden**].
 
-      ![Begränsa efterföljande begäranden per projekt](assets/restrict-subsequent-requests-project.png)
+      ![Avbryt 1 begäran med alternativet Begränsa efterföljande begäranden per projekt](assets/restrict-subsequent-requests-project.png)
 
    1. Välj bland följande alternativ:
 
@@ -188,7 +189,7 @@ Så här avbryter du begäranden per program:
 
    1. Aktivera alternativet att [!UICONTROL **Begränsa efterföljande begäranden**]
 
-      ![Begränsa efterföljande begäranden efter program](assets/restrict-subsequent-requests-application.png)
+      ![Avbryt 1 begäran med alternativet Begränsa efterföljande begäranden efter valt program.](assets/restrict-subsequent-requests-application.png)
 
    1. Välj bland följande alternativ:
 

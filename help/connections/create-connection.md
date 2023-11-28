@@ -4,9 +4,9 @@ description: Beskriver hur du skapar en anslutning till en plattformsdatauppsät
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2667'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Du måste ha **Välj** för att lägga till ett obegränsat antal datauppsättni
 1. I Customer Journey Analytics klickar du på **[!UICONTROL Connections]** -fliken.
 1. Klicka på **[!UICONTROL Create new connection]**.
 
-   ![Anslutningsinställningar](assets/create-conn1.png)
+   ![Namnlösa anslutningsinställningar](assets/create-conn1.png)
 
 1. Konfigurera anslutningsinställningarna.
 

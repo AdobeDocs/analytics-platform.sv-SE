@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3105699d6436d10859837c276fda92277f84bd52
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Här kan du:
 
 Här beskrivs widgetar och inställningar:
 
-![](assets/conn-details.png)
+![Alla datauppsättningsfönster som visar widgetar och inställningar](assets/conn-details.png)
 
 ### Inställningar för anslutningsinformation
 

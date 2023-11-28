@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och 
 
 Anta att du delar projekt med din organisation. Om trafiken har ökat mycket på grund av en marknadsföringskampanj kan du skapa en kommentar om startdatum för kampanjen och ange den som omfattning för hela datavyn. När användarna visar datauppsättningar som innehåller det datumet, ser de anteckningen i sina projekt, tillsammans med deras data.
 
-![](assets/multi-day.png)
+![Linjediagram med anteckning markerad.](assets/multi-day.png)
 
 Tänk på detta:
 
@@ -46,6 +46,6 @@ Anteckningar kan aktiveras och avaktiveras på flera nivåer:
 
 * På användarnivå: [!UICONTROL Components] > [!UICONTROL User preferences] > [!UICONTROL Data] > [!UICONTROL Show annotations]
 
-![](assets/show-ann.png)
+![Dialogrutan Visualiseringsinställningar med Visa anteckningar markerat](assets/show-ann.png)
 
-![](assets/show-ann2.png)
+![Användarinställningar markerar Visa anteckningar.](assets/show-ann2.png)

@@ -4,41 +4,41 @@ description: Lär dig vilka komponenter Customer Journey Analytics erbjuder och 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1110'
 ht-degree: 5%
 
 ---
 
 # Komponenter – översikt
 
-Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller som komplement till rapporteringsfunktioner. Du kan hantera de här komponenterna på följande sätt:
+Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller som komplement till rapporteringsfunktioner. Du kan hantera de här komponenterna med följande steg:
 
-1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) med dina Adobe ID-inloggningsuppgifter.
+1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) med dina Adobe ID-uppgifter.
 2. Navigera till [!UICONTROL Components] > [!UICONTROL Components] i rubrikmenyn.
 
 Du kan hantera följande komponenter:
 
-* [**Anteckningar**](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till organisationen.
+* [**Anteckningar**](/help/components/annotations/overview.md): förmedla kontextuella datanunkter och insikter till organisationen.
 * [**Målgrupper**](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper som upptäcks i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP) i Adobe Experience Platform för kundanpassning och personalisering.
 * [**Filter**](filters/filters-overview.md): Skapa, hantera, dela och lägg på kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
 * [**Beräknade mått**](calc-metrics/calc-metr-overview.md): Använd mätvärden och formler som nya komponenter för rapportering
 * [**Dataordlista**](/help/components/data-dictionary/data-dictionary-overview.md): Hjälper både användare och administratörer att hålla reda på och förstå komponenterna i sin Analytics-miljö bättre.
 * [**Datumintervall**](date-ranges/create.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder.
 * [**Dimensioner**](/help/components/dimensions/view-dimensions.md): Dimensioner är variabler som vanligtvis innehåller strängvärden. Vanliga dimensioner är Page och Reference domain.
-* [**Mått**](/help/components/apply-create-metrics.md): Gör att du kan kvantifiera datapunkter i Analysis Workspace.
+* [**Mått**](/help/components/apply-create-metrics.md): Du kan kvantifiera datapunkter i Analysis Workspace.
 * [**Projekt**](/help/analysis-workspace/home.md): Ordna och underhåll dina projekt i Analysis Workspace.
 
 ## Analysis Workspace-komponenter
 
 Komponenterna i Analysis Workspace består av mätvärden, dimensioner, filter och tidsdetaljer som du kan dra och släppa i ett projekt. Anpassade komponenter som du skapar läggs till i dessa paneler, till exempel anpassade datumintervall.
 
-Du öppnar panelen Komponenter genom att klicka på **[!UICONTROL Components]** ikonen i den vänstra listen. Du kan växla mellan paneler (panelen Tom, [Frihandspanelen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md), eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och komponenter som använder ikonerna för den vänstra listen eller med [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Du öppnar panelen Komponenter genom att klicka på **[!UICONTROL Components]** ikonen i den vänstra listen. Du kan växla mellan paneler (panelen Tom, [Frihandspanelen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md), eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och komponenter som använder ikonerna för den vänstra listen eller genom att använda [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![](assets/components.png)
+![Ikon för komponenter](assets/components.png)
 
-Se [Skapa ett projekt](/help/analysis-workspace/home.md) om du vill ha information om hur du använder komponenter i ett projekt.
+Se [Skapa ett projekt](/help/analysis-workspace/home.md) för information om hur du använder komponenter i ett projekt.
 
 ## Komponentåtgärder
 
@@ -68,14 +68,14 @@ Du kan hantera komponenter direkt i den vänstra listen.
 
    eller
 
-   Markera en komponent och markera sedan **Åtgärd** (3 punkter) längst upp i komponentlistan.
+   Markera en komponent och markera sedan **Åtgärd** (3-punkt), ikon längst upp i komponentlistan.
 
    >[!TIP]
    >
    >   Du kan markera flera komponenter genom att hålla ned Skift, eller genom att hålla ned Kommando (Mac) eller Ctrl (Windows).
 
 
-   ![](assets/component-actions.png)
+   ![Komponentåtgärdslista](assets/component-actions.png)
 
    | Komponentåtgärd | Beskrivning |
    |--- |--- |

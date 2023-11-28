@@ -4,9 +4,9 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3204'
+source-wordcount: '3214'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Du kan hantera inställningar för Analysis Workspace och dess relaterade kompon
 
 1. Gå till Customer Journey Analytics [!UICONTROL **Projekt**] landningssida, välj sedan [!UICONTROL **Redigera inställningar**].
 
-   ![Användarinställningar](assets/user-preferences.png)
+   ![Arbetsytans projektvy där alternativen för att redigera inställningar som beskrivs på den här sidan markeras.](assets/user-preferences.png)
 
    eller
 

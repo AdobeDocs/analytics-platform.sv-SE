@@ -2,9 +2,10 @@
 description: Att markera beräknade värden som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
 title: Markera beräknade värden som favoriter
 feature: Calculated Metrics
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '91'
 ht-degree: 0%
 
 ---
@@ -17,6 +18,6 @@ Att markera beräknade värden som favoriter är ett annat sätt att ordna dem s
 
 1. Markera stjärnan bredvid de beräknade mätvärden som du vill markera som favoriter i hanteraren för beräknade värden. Den ska nu visas som en gul stjärna:
 
-   ![](assets/favorites.png)
+   ![Gul stjärna som visar besökare från Bing.](assets/favorites.png)
 
 1. Du kan även filtrera på favoriter under **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Favorites]**.

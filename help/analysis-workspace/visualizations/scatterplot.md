@@ -3,10 +3,10 @@ title: Spridningsdiagram
 description: En visualisering som visar relationen mellan upp till tre mätvärden.
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 2%
+source-wordcount: '116'
+ht-degree: 1%
 
 ---
 
@@ -20,4 +20,4 @@ Spridningsvisningen visar förhållandet mellan dimensionsobjekt och upp till tr
 * Den tredje kolumnen bestämmer punktens radie.
 * Alla efterföljande kolumner i en friformstabell ignoreras av visualisering av punktdiagram.
 
-![Spridningsdiagram](assets/scatter.png)
+![Exempel på Scatplot som visar flera dimensionsobjekt ](assets/scatter.png)

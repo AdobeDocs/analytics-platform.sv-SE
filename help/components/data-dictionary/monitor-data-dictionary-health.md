@@ -4,9 +4,9 @@ title: Övervaka dataordlistans hälsa
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Så här identifierar du hälsoproblem i din Data Dictionary:
 
    Fönstret Data Dictionary visas.
 
-   ![Administratörsvy för datamordlista](assets/data-dictionary-admin.png)
+   ![Visning av ordlisteadministratörens hälsovy](assets/data-dictionary-admin.png)
 
 1. Kontrollera att rätt datavy är markerad i listrutan.
 

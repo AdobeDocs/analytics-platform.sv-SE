@@ -5,10 +5,10 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/he
 
 1. Klicka på *cellikon* i *Datavyer* -avsnitt.
 
-   ![Klicka på cellikonen.](/help/report-builder/assets/cell-icon.png)
+   ![Skapa ett nytt datablocksfönster med cellikonen markerad.](/help/report-builder/assets/cell-icon.png)
 
 1. Välj en cellplats där datavyer ska läggas till i den markerade cellen.
 
@@ -38,7 +38,7 @@ Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/he
 
 1. Markera de datavyer som du vill tilldela cellen.
 
-   ![Välj datavyer.](/help/report-builder/assets/select-data-view.png)
+   ![Snabbredigeringsrutan i Report Builder visar vyn Välj data.](/help/report-builder/assets/select-data-view.png)
 
 1. Klicka **Använd**.
 

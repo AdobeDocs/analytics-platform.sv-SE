@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: frågetjänst;frågetjänst;sql-syntax
-source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ När ni antar Customer Journey Analytics kan det finnas vissa skillnader i data 
 
 Låt oss anta att du har inhämtat Adobe Analytics-data till Adobe Experience Platform via [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)och skapade sedan en Customer Journey Analytics-anslutning med denna datauppsättning.
 
-![dataflöde](assets/compare.png)
+![Dataflödet från Adobe Analytics via dataanslutningen till Adobe Experience Platform och till kundreseanalys med hjälp av CJA-anslutningar.](assets/compare.png)
 
 Därefter skapade du en datavy och när du senare rapporterade data för Customer Journey Analytics upptäckte du att det fanns skillnader i rapportresultaten i Adobe Analytics.
 

@@ -3,9 +3,9 @@ title: Granskningsloggar
 description: Lär dig hur du visar och hanterar Customer Journey Analytics granskningsloggar.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ I Customer Journey Analytics går du till **[!UICONTROL Tools]** > **[!UICONTROL
 
 Granskningsloggen för i dag och i går visas som standard.
 
-![granskningslogg](assets/audit_ui.png)
+![Granskningsloggmarkeringar idag (14 oktober 2022) och i går (13 oktober 2022). ](assets/audit_ui.png)
 
 Du kan välja vilka kolumner som ska visas genom att gå till kolumnväljaren längst upp till höger.
 
@@ -38,7 +38,7 @@ Du kan välja vilka kolumner som ska visas genom att gå till kolumnväljaren l�
 
 Dubbelklicka på knappen info (i) bredvid en beskrivning.
 
-![granskningslogg](assets/info-button-audit.png)
+![Granskningslogg som markerar infoknappen. ](assets/info-button-audit.png)
 
 Följande objekt visas:
 
@@ -91,7 +91,7 @@ Följande objekt visas:
 
 Markera trattecknet (![filter](assets/filter-icon.png)) för att visa en lista med filterkontroller för att begränsa resultatet. Endast de sista 1 000 posterna visas, oavsett vilka filter som har valts.
 
-![filter](assets/filters.png)
+![Granskningslogg som visar de filter som visas för dataområde.](assets/filters.png)
 
 Följande filter är tillgängliga för granskningshändelser i användargränssnittet:
 

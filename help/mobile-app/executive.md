@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Klicka på följande länk (den är också tillgänglig i Customer Journey Analy
 
 När programmet har laddats ned och installerats kan företagsanvändare logga in i det med sina befintliga inloggningsuppgifter för Customer Journey Analytics.
 
-![App - välkomstskärm](assets/welcome.png)
+![Customer Journey Analytics app - välkomstskärm](assets/welcome.png)
 
 ## Använda instrumentpaneler {#use-dashboards}
 
@@ -82,7 +82,7 @@ Så här använder du kontrollpaneler:
 
    ![Inget delat](assets/nothing.png)
 
-1. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). se **[!UICONTROL Preferences]** nedan om du vill ha mer information).
+1. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). Se **[!UICONTROL Preferences]** nedan för mer information).
 
    ![Förklarade plattor](assets/newexplain.png)
 
@@ -113,9 +113,9 @@ Så här använder du kontrollpaneler:
 
    * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
-   * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad**, eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger precis före det. Tryck på ett av dessa två alternativ för att markera det första intervallet. Under **[!UICONTROL COMPARE TO]** klickar du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervall som du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. The **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
+   * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad**, eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger precis före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under **[!UICONTROL COMPARE TO]** klickar du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervall som du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. The **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
-1. Om du vill använda ett segmentfilter på styrkortet trycker du på listrutan för filter och väljer ett segment som har konfigurerats av markören. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i programmet fungerar på samma sätt som i Workspace.
+1. Om du vill använda ett segmentfilter på styrkortet trycker du på listrutan för filter och väljer ett segment som har konfigurerats av markören. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Workspace.
 
    ![Segmentfilter](assets/segment_filter.png)
 
@@ -129,7 +129,7 @@ Så här använder du kontrollpaneler:
 
       ![Inställningsskärm](assets/settings.png)
 
-1. Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]** som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+1. Tryck på **[!UICONTROL Preferences]** som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
    ![Mörkt läge](assets/darkmode.png)
 
@@ -156,7 +156,7 @@ Tryck på alternativet och ange din e-postadress i det övre fältet och din fr�
 | Kurator | Personen som hittar och distribuerar insikter från Customer Journey Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
 | Insamling | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
 | Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
-| Platta | En återgivning för ett mätresultat i en styrkortsvy |
+| Sida vid sida | En återgivning för ett mätresultat i en styrkortsvy |
 | Uppdelningar | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
 | Datumintervall | Det primära datumintervallet för instrumentpanelsrapporter |
 | Jämförelsedatumintervall | Datumintervallet som jämförs med det primära datumintervallet |

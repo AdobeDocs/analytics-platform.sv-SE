@@ -3,9 +3,9 @@ description: Läs mer om
 title: Mätvärdestyp och attribuering
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Så här anger du måtttypen när du skapar ett beräknat mått:
 
 1. Markera kugghjulsikonen bredvid mätvärdet vars typ du vill markera.
 
-   ![](assets/cm_type_alloc.png)
+   ![Kugghjulsikonen med popup-meny som visar måtttyp lika med Standard.](assets/cm_type_alloc.png)
 
 1. Välj bland följande alternativ:
 

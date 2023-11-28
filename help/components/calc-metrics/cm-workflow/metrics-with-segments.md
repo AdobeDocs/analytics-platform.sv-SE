@@ -3,9 +3,9 @@ description: Genom att filtrera enskilda mätvärden kan ni göra mätbara jämf
 title: Filtrerade mätvärden
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 I verktyget Beräknade mätvärden kan du använda filter i måttdefinitionen. Detta är praktiskt om du vill ta fram nya mätvärden som ska användas i din analys. Tänk på att filterdefinitioner kan uppdateras med hjälp av filterverktyget. Om ändringar görs uppdateras filtret automatiskt varhelst det används, inklusive om det ingår i en beräknad metrisk definition.
 
-![](assets/german-visitors.png)
+![Sammanfattning och definition av filter för länder = Tyskland och unika besökare](assets/german-visitors.png)
 
 ## Skapa ett filtrerat mått {#create}
 
@@ -28,7 +28,7 @@ Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; och ett mät
 
 1. Skapa ett adhoc-filter i verktyget Beräknade mätvärden som kallas &quot;tyska besökare&quot;, där &quot;länder&quot; är lika med &quot;Tyskland&quot;. Dra dimensionen Länder till arbetsytan Definition och markera [!UICONTROL **Tyskland**] som värdet:
 
-   ![](assets/segment-from-dimension.png)
+   ![Ad hoc-filter som visar länder är lika med Tyskland](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
@@ -36,7 +36,7 @@ Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; och ett mät
 
 1. Dra filtret Tyskland till arbetsytan Definition och dra det unika besökarmåttet i den:
 
-   ![](assets/german-visitors.png)
+   ![Sammanfattning och definition av länder som är jämlika Tyskland och unika besökare](assets/german-visitors.png)
 
 1. Välj [!UICONTROL **Spara**] för att spara det beräknade måttet.
 
@@ -50,7 +50,7 @@ Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; och ett mät
 
 1. I Analysis Workspace drar du **[!UICONTROL Page]** Dimension till en frihandstabell och dra de två nya beräknade måtten intill varandra högst upp:
 
-   ![](assets/workspace-pages.png)
+   ![Freeform Table med siddimension för tyska besökare och internationella besökare](assets/workspace-pages.png)
 
 Här är en videoöversikt:
 
@@ -63,8 +63,8 @@ Du kan ta exemplet ovan ett steg längre genom att jämföra filtret med en tota
 1. Släpp filtret för tyska (eller internationella) besökare på arbetsytan.
 1. Släpp ett annat filter för tyska (eller internationella) besökare nedan. Men den här gången klickar du på konfigurationsikonen (kugghjulsikonen) för att välja måtttypen &quot;Totalt&quot;. Formatet ska vara &quot;Procent&quot;. Operatorn ska delas med. Resultatet blir den här måttdefinitionen:
 
-   ![](assets/cm_metric_total.png)
+   ![Länderna är lika med Tyskland och totalt unika besökare](assets/cm_metric_total.png)
 
 1. Använd följande mått i ditt projekt:
 
-   ![](assets/cm_percent_total.png)
+   ![Frihandstabell med sida och % av totalt tyskt antal besökare](assets/cm_percent_total.png)

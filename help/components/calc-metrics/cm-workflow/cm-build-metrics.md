@@ -3,9 +3,9 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Skapa mätvärden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Du kan börja skapa ett beräknat mått på något av följande sätt:
 
 I följande bild och medföljande tabell förklaras några av huvudområdena och funktionerna i verktyget för beräkning av mätvärden.
 
-![](assets/cm_builder_ui.png)
+![Nytt fönster med beräknade mätvärden som visar de huvudområden och funktioner som beskrivs i det här avsnittet.](assets/cm_builder_ui.png)
 
 | Fält | Beskrivning |
 | --- | --- |

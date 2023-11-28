@@ -5,16 +5,16 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
-# Ställ in chefsanvändare för att använda kontrollpaneler
+# Konfigurera företagsanvändare för att använda kontrollpaneler
 
-I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt och använda appen. I det här avsnittet finns information som kan hjälpa lärarna att få hjälp med det.
+I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt och använda appen. I det här avsnittet finns information som kan hjälpa lärarna att få hjälp med detta.
 
 ## Se till att appanvändare har tillgång till Adobe Analytics
 
@@ -49,9 +49,9 @@ Klicka på följande länk (den är också tillgänglig i Customer Journey Analy
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga inloggningsuppgifter för Customer Journey Analytics. har stöd för både Adobe och Enterprise/Federated ID.
+När de har hämtats och installerats kan företagsanvändare logga in i programmet med sina befintliga inloggningsuppgifter för Customer Journey Analytics. Vi stöder både Adobe och Enterprise/Federated ID.
 
-![App - välkomstskärm](assets/welcome.png)
+![Adobe Analytics Dashboards - välkomstskärm](assets/welcome.png)
 
 ## Hjälp cheferna att komma åt styrkortet
 
@@ -74,7 +74,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
 
 Förklara för den verkställande användaren hur rutor visas i de styrkort som du delar.
 
-![Förklaringar](assets/newexplain.png)
+![Förklara rutor med datumintervall, segmentfilter, mätvärden och dimensioner](assets/newexplain.png)
 
 ![Exempelstyrkort](assets/intro_scorecard.png)
 
@@ -94,7 +94,7 @@ Ytterligare information om plattor:
 
    * Tryck på en punkt i ett miniatyrdiagram för att se data som hör till den punkten på raden.
 
-   * En tabell inkluderas för att visa data med dimensioner som lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
+   * En tabell inkluderas för att visa data med dimensioner som har lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
 
 1. Om du vill ändra datumintervall för styrkortet trycker du på datumhuvudet och väljer den primära kombination och den kombination av datumintervall som du vill visa.
 
@@ -102,7 +102,7 @@ Ytterligare information om plattor:
 
 ## Ändra appinställningar
 
-Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]** som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+Tryck på **[!UICONTROL Preferences]** som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
 ![Mörkt läge](assets/darkmode.png)
 

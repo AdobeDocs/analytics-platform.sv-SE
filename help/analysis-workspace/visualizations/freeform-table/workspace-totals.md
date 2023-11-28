@@ -1,11 +1,11 @@
 ---
-description: Hur summor för arbetsytan beräknas.
+description: Lär dig hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 * **[!UICONTROL Grand Total]** (grå &#39;out of&#39;-tal) - den här summan representerar alla händelser som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas.
 * **[!UICONTROL Table Total]** (svart tal) - den här summan är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive [!UICONTROL Include None] alternativ.
 
-![](assets/total-row.png)
+![Frihandsregister som framhäver totalsumman och tabellsumman.](assets/total-row.png)
 
 ## Visa total inställning
 
-Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte stämmer, t.ex. i vissa [Beräknade måttscenarier](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
+Under **[!UICONTROL Column Settings]** finns det alternativ för att **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte stämmer, t.ex. i vissa [Beräknade måttscenarier](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
 
-![](assets/column-settings-total.png)
+![Alternativen för kolumninställningar visar bockmarkeringar för Visa summor och Visa totalsumma för bidrag.](assets/column-settings-total.png)
 
 ## Inställningar för totalt antal statiska rader
 
@@ -32,7 +32,7 @@ Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL S
 * **[!UICONTROL Show sum of current rows as the total]** - här visas en summa av raderna på klientsidan, vilket innebär att summan **not** avduplicera mätvärden som besök eller personer.
 * **[!UICONTROL Show Grand Total]** - detta visar en summa på serversidan, vilket innebär att summan kommer att deduplicera mått som besök eller personer.
 
-![](assets/static-rows.png)
+![Radinställningar som visar Visa totalsumma markerat.](assets/static-rows.png)
 
 ## Frågor och svar
 

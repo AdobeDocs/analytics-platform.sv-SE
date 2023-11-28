@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Mycket av det du är bekant med på rapporteringssidan har inte ändrats.
 
 Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan till exempel skapa ett arbetsyteprojekt som analyserar prestanda för flera kanaler, förutsatt att dessa datauppsättningar har importerats av din organisation och ingår i datavyer som används av Customer Journey Analytics (se&quot;Ändringar i dataarkitekturen&quot; nedan).
 
-![visualiseringar med flera kanaler](assets/cross-channel.png)
+![Vyn Datakällor som visar visualiseringar med flera kanaler](assets/cross-channel.png)
 
 ## Ändringar i dataarkitekturen {#architecture}
 

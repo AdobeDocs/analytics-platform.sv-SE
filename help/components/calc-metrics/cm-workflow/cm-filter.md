@@ -2,10 +2,11 @@
 description: Filtrera efter taggar, datavy, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd).
 title: Filtrera beräknade värden
 feature: Calculated Metrics
-source-git-commit: 59b120022fcb149e6bfcab0039efc5a802995b92
+exl-id: 902da464-14de-45b9-bd92-d2db064cb095
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 1%
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +20,7 @@ Filtrering gör det enklare att söka efter beräknade värden i segmentets bana
 
 1. Klicka på knappen **[!UICONTROL Filters]** ikon:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Beräknat måtthanterare som visar filterikonen och tillgängliga filter som taggar, rapportsviten och ägare.](assets/filtering.png)
 
 1. Följande filter är tillgängliga:
 

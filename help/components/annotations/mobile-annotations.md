@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics.
 
-## Ytanteckningar i mobilstyrkort
+## Ytanteckningar i Mobile Scorecards
 
 Om du vill visa kommentarer i mobila styrkort skapar du först anteckningen från arbetsyteprojekt eller från komponentmenyn.
 
@@ -29,21 +29,21 @@ Mer information om hur du skapar anteckningar finns i [Skapa anteckningar](creat
 
 1. Välj **[!UICONTROL Show annotations]** för att visa anteckningen i mobila styrkort.
 
-   ![](assets/show-annotations.png)
+   ![Mobila anteckningsalternativ för styrkort.](assets/show-annotations.png)
 
 1. Bekräfta att visa anteckningar är markerat, gå till **[!UICONTROL Project]** > **[!UICONTROL Project info and settings]**.
 
-   ![](assets/project-info-settings.png)
+   ![Alternativ för mobila anteckningar för projektinformation och inställningar som markerar alternativet Visa anteckningar.](assets/project-info-settings.png)
 
 ## Visa anteckningar i mobila styrkort
 
 När anteckningar är aktiverade visas anteckningsikoner i styrkortsverktyget. Anteckningar visas bara i diagram och tabeller i den detaljerade vyn. Anteckningar visas inte i styrkortets huvudsida.
 
-![](assets/view-annotations.png)
+![Styrkortverktyget markerar anteckningsikonerna.](assets/view-annotations.png)
 
-När anteckningsikoner visas kan du inte helt visa eller interagera med anteckningar på arbetsytan i verktyget. Använd förhandsgranskningsläget för att visa och interagera med anteckningar så som de visas i programmet. ![](assets/preview-icon.png)
+När anteckningsikoner visas kan du inte helt visa eller interagera med anteckningar på arbetsytan i verktyget. Använd förhandsgranskningsläget för att visa och interagera med anteckningar så som de visas i programmet. ![Ikonen Förhandsgranska](assets/preview-icon.png)
 
-Anteckningsfärger markeras när anteckningen skapas i arbetsytan. Grå anteckningar indikerade förekomsten av mer än en anteckning. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
+Anteckningsfärger markeras när anteckningen skapas i arbetsytan. Grå anteckningar indikerade förekomsten av mer än en anteckning. ![Anteckningsikoner](assets/gray-annotations1.png) ![Mobil styrkort med anteckningsikonen markerad.](assets/gray-annotations2.png)
 
 ## Visa diagramanteckningar
 

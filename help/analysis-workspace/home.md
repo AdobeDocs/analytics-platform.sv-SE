@@ -1,13 +1,13 @@
 ---
 keywords: Analysis Workspace
 title: Översikt över Analysis Workspace
-description: Översikt över Analysis Workspace funktioner
+description: Översikt över Analysis Workspace
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: 2647acd9dbf0732b02d69528fe1d07e381123aef
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '725'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ I följande video visas en kort översikt med exempel på vad som är möjligt.
 
 I följande bild och tabell förklaras några av huvudområdena i Analysis Workspace:
 
-![Översikt över Analysis Workspace](assets/analysis-workspace-overvew.png)
+![Analysis Workspace-fönstret som markerar den vänstra och den vänstra listen, arbetsytan och listrutan för datavy.](assets/analysis-workspace-overvew.png)
 
 | Plats i bild | Namn och funktion |
 |---------|----------|
@@ -39,7 +39,7 @@ Nedan följer några av de viktigaste funktionerna i Analysis Workspace:
 
 ### Paneler
 
-**Paneler** används för att organisera analysen i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. Markera den översta **[!UICONTROL Panels]** om du vill se en fullständig lista över tillgängliga paneler.
+**Panel** används för att organisera analysen i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. Markera den övre kanten längst till vänster **[!UICONTROL Panels]** om du vill se en fullständig lista över tillgängliga paneler.
 
 Mer information om paneler finns i [Paneler - översikt](/help/analysis-workspace/c-panels/panels.md).
 
@@ -47,9 +47,9 @@ Mer information om paneler finns i [Paneler - översikt](/help/analysis-workspac
 
 ### Visualiseringar
 
-**Visualiseringar**, t.ex. en stapel eller ett linjediagram, kan användas för att visuellt ge liv åt data. Markera mitten längst till vänster **[!UICONTROL Visualizations]** om du vill se en fullständig lista över tillgängliga visualiseringar.
+**Visualiseringar**, t.ex. en stapel eller ett linjediagram, kan användas för att ge data liv. Markera mitten längst till vänster **[!UICONTROL Visualizations]** om du vill se en fullständig lista över tillgängliga visualiseringar.
 
-Mer information om visualiseringar finns i [Översikt över visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+Mer information om visualiseringar finns i [Visualiseringar - översikt](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 ![](assets/build-visualizations.png)
 
@@ -87,7 +87,7 @@ Med synkronisering av visualiseringar kan du styra vilken datatabell eller datak
 
 ### Logga in på Adobe Analytics {#login}
 
-Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics genom att gå till [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Sidan Projekt i Analysis Workspace visas som standard. Om du har valt ett specifikt projekt visas det projektet som standard.
+Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics på [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Analysis Workspace projektsida visas som standard. Om du har valt ett specifikt projekt visas det projektet som standard.
 
 ### Skapa ett projekt {#new-project}
 
@@ -101,7 +101,7 @@ Projekt kan ordnas i mappar och undermappar enligt beskrivningen i [Mappar i Ana
 
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
-När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
+När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Mer information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Ytterligare resurser {#resources}
 

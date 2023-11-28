@@ -1,11 +1,11 @@
 ---
-title: Customer Journey Analytics Publikationer - översikt
+title: Läs mer om publiceringsöversikten för Customer Journey Analytics Publikationer
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: 3a3122934e0fb3d89ac94cc8be8799d43dd1c987
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '515'
 ht-degree: 1%
 
 ---

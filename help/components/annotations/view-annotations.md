@@ -3,10 +3,10 @@ title: Visa anteckningar
 description: Så här visar du anteckningar i Workspace.
 role: User, Admin
 feature: Components
-exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -19,19 +19,19 @@ Anteckningarna visas något annorlunda beroende på om de sträcker sig över en
 
 | Datum | Utseende |
 | --- | --- |
-| **En dag** | ![](assets/single-day.png)<p>När du hovrar över anteckningen kan du se dess detaljer, redigera den genom att markera pennikonen eller ta bort den:<p> ![](assets/hover.png) |
-| **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![](assets/multi-day.png)<p>När du markerar den i linjediagrammet visas anteckningens metadata och du kan redigera eller ta bort den:![](assets/multi-hover.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png) |
-| **Överlappande anteckningar** | På dagar som har fler än en anteckning kopplad till sig visas ikonen i grå färg.<p>![](assets/grey.png)<p>När du hovrar över den grå ikonen visas alla överlappande anteckningar:<p>![](assets/overlap.png) |
+| **En dag** | ![Visualisering av raddiagram med markerad anteckning](assets/single-day.png)<p>När du hovrar över anteckningen kan du se dess detaljer, redigera den genom att markera pennikonen eller ta bort den:<p> ![Anteckningsinformation med möjlighet att redigera eller ta bort anteckningen.](assets/hover.png) |
+| **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![Anteckningsikon för datumintervall](assets/multi-day.png)<p>När du markerar den i linjediagrammet visas anteckningens metadata och du kan redigera eller ta bort den:![](assets/multi-hover.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png) |
+| **Överlappande anteckningar** | På dagar som har fler än en anteckning kopplad till sig visas ikonen i grå färg.<p>![Information om överlappande anteckningar  ](assets/grey.png)<p>När du hovrar över den grå ikonen visas alla överlappande anteckningar:<p>![](assets/overlap.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Visa anteckningar i en PDF-fil
 
 Eftersom du inte kan hovra över ikoner i en PDF-fil innehåller den här filen (efter exporten) förklaringar längst ned på panelen. Här är ett exempel:
 
-![](assets/ann-pdf.png)
+![Markerad vy av en pdf-fil med förklaringar till anteckningar.](assets/ann-pdf.png)
 
-## Visa anteckningar med icke-trenddata
+## Visa anteckningar med data som inte är trenddata
 
 Ibland visas anteckningar med data som inte är trenddata, men som är knutna till en viss dimension. I så fall visas de bara i en sammanfattningsanteckning i det nedre högra hörnet. Här är ett exempel:
 
@@ -39,4 +39,4 @@ Ibland visas anteckningar med data som inte är trenddata, men som är knutna ti
 
 Sammanfattningsdiagrammet visas i alla visualiseringstyper i hörnet, inte bara i frihandstabeller och sammanfattningsnummer. Det visas också i visualiseringar som [!UICONTROL Donut], [!UICONTROL Flow],[!UICONTROL Fallout],[!UICONTROL Cohort]och så vidare.
 
-![](assets/ann-summary.png)
+![Sammanfattningsdiagram i visualiseringar](assets/ann-summary.png)

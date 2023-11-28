@@ -1,21 +1,21 @@
 ---
-title: Infoga Marketo Engage i Adobe Experience Platform och rapportera i Customer Journey Analytics
+title: Infoga Marketo Engage data i Adobe Experience Platform och rapportera i Customer Journey Analytics
 description: Lär dig hur du hämtar data från Marketo Engage till Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
-# Infoga Marketo Engage i Adobe Experience Platform och rapportera i Customer Journey Analytics
+# Infoga Marketo Engage data i Adobe Experience Platform och rapportera i Customer Journey Analytics
 
 Ni kan utnyttja de nya Marketo Engage-datauppsättningarna i Adobe Experience Platform (Adobe Experience Platform) för att ge B2B-marknadsförarna värdefulla analys- och rapporteringslösningar. Rapportera sedan om dessa datauppsättningar i Adobe Customer Journey Analytics.
 
-## Steg 1: Koppla Marketo källdatafält till deras XDM-mål
+## Steg 1: Mappa Marketo-källdatafält till deras XDM-mål
 
 Mappa [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) och [Verksamhet](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) objekt till respektive målfält för XDM-schema.
 
@@ -40,12 +40,12 @@ Kunder med B2B/B2P CDP kan göra analyser i B2C-stil i Customer Journey Analytic
 
 1. Skapa en [filter](/help/components/filters/create-filters.md) för webbsidesvyer enligt följande - Händelsetyp = web.webpagedetails.pageViews :
 
-   ![](../assets/marketo-filter.png)
+   ![Definitionsfönster med händelsetyp och händelsetyp](../assets/marketo-filter.png)
 
 1. Dra in filtret som du skapade - webbsidesvyer i friformstabellen och dra sedan in datumintervallet för månad. Detta ger dig möjlighet att besöka webbsidor med hjälp av leads varje månad:
 
-   ![](../assets/marketo-freeform.png)
+   ![Frihandstabell med händelser per månad.](../assets/marketo-freeform.png)
 
-1. Eller dra i följande dimensioner: Personnyckel eller e-postadress till arbetet. På så sätt kan du se vilka webbsidor varje lead besöker:
+1. Eller dra in följande dimensioner: personnyckel eller e-postadress till arbetet. På så sätt kan du se vilka webbsidor varje lead besöker:
 
-   ![](../assets/marketo-freeform2.png)
+   ![Frihandstabell med händelser och workEmail.Address och Web Page Views.](../assets/marketo-freeform2.png)

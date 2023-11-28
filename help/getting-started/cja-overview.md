@@ -4,9 +4,9 @@ description: Lär dig hur du kan använda Analysis Workspace med data från Expe
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 9aa40a708adecdce76b623aa1d5647bd60286ef8
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '941'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ Customer Journey Analytics är Adobe nästa generation av Analytics-lösning som
 
 Customer Journey Analytics-arkitekturen på hög nivå visas här:
 
-![arkitektur](assets/cja-architecture.png)
+![Customer Journey Analytics-arkitekturen förklaras i detta avsnitt](assets/cja-architecture.png)
 
 Här är en videoöversikt av Customer Journey Analytics:
 

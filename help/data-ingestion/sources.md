@@ -4,9 +4,9 @@ description: Förklara hur du importerar och använder data med hjälp av källa
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1840'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Så här konfigurerar du ditt schema:
 
    1. Välj **[!UICONTROL Individual Profile]**.
 
-      ![Skapa ett schema](./assets/create-pr-schema-wizard-step-1.png)
+      ![Skapa ett schemafönster med Enskild profil markerad](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -69,7 +69,7 @@ Så här konfigurerar du ditt schema:
 
    1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
-      ![Namnge ditt schema](./assets/create-pr-schema-wizard-step-2.png)
+      ![Skapa schemafönster med fälten för att namnge schemat ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Välj **[!UICONTROL Finish]**.
 
@@ -77,7 +77,7 @@ Så här konfigurerar du ditt schema:
 
    1. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
 
-      ![Lägg till fältgrupp](./assets/add-field-group-button.png)
+      ![Skapa schemafönster med fältgruppen Lägg till](./assets/add-field-group-button.png)
 
       Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka dina scheman.
 

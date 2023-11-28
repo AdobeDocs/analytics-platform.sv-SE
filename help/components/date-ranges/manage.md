@@ -3,9 +3,9 @@ title: Hantera datumintervall
 description: Dela, byta namn på eller ta bort datumintervall i Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Använd datumintervallhanteraren för att dela, byta namn på eller ta bort datu
 
 ## Gränssnitt
 
-![UI](../assets/date-range-ui.png)
+![Datumintervall med Exempelintervall markerat.](../assets/date-range-ui.png)
 
 Datumintervallhanteraren innehåller följande alternativ:
 
@@ -34,7 +34,7 @@ Klicka i kryssrutan bredvid ett eller flera datumintervall om du vill se fler al
 * **Tagg**: Använd en tagg för alla markerade datumintervall. Med taggar kan du ordna datumintervall och filtrera dem med den vänstra kolumnen.
 * **Dela**: Dela ett datumintervall med andra Experience Cloud-användare. Om du är produktadministratör kan du även dela filer till hela organisationen eller grupper. Datumintervall som delas med andra användare i organisationen inkluderar en ![delad](../assets/shared.png) -ikonen bredvid titeln.
 * **Ta bort**: Ta bort markerade datumintervall permanent.
-* **Byt namn**: Om ett datumintervall är markerat kan du ändra dess titel.
+* **Byt namn**: Om ett enda datumintervall är markerat kan du ändra titeln.
 * **Godkänn**: Om du är produktadministratör kan du lägga till en godkännandestämpel i ett datumintervall. Godkända datumintervall talar om för användarna i organisationen att de är&quot;officiella&quot; och skiljer dem från datumintervall som andra användare i organisationen har skapat. Godkända datumintervall innehåller en ![godkänd](../assets/approved.png) -ikonen bredvid titeln.
 * **Ogodkänd**: Om du är produktadministratör och väljer ett datumintervall som redan har godkänts kan du avgodkänna det.
 * **Kopiera**: Skapa en kopia av de markerade datumintervallen. Datumintervall för kopiering har lagts till `(Copy)` till slutet av titeln för det eller de nyligen kopierade datumintervallen.

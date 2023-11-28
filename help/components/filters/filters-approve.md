@@ -2,9 +2,10 @@
 description: Du kan skapa ett arbetsflöde som innefattar att godkänna filter för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciperna.
 title: Godkänn filter
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -25,6 +26,6 @@ Så här flaggar du ett filter som godkänt:
 
    Lägg märke till godkännandeikonen bredvid filtret i listan:
 
-   ![](assets/seg_approved.png)
+   ![Filterhanteraren visar att beställningar som är större än 100 har godkänts för delning.](assets/seg_approved.png)
 
 1. Du kan också avgodkänna ett godkänt filter genom att klicka på **[!UICONTROL Unapprove]**.

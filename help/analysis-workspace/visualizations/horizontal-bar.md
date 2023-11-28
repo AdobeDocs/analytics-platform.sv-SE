@@ -3,10 +3,10 @@ description: Den här visualiseringen visar vågräta staplar som representerar 
 title: Liggande stapeldiagram och staplat liggande stapeldiagram
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 17%
+source-wordcount: '102'
+ht-degree: 11%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 17%
 
 Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
 
-![](assets/horizontal_bar.png)
+![Vågrätt fält med mätvärden som sidvyer, sidhastighet, besök, poster och avslutningar.](assets/horizontal_bar.png)
 
-## Staplad vågrät stapel {#section_50C08E9E20A94024A6553BC352ADB597}
+## Staplad vågrät linje {#section_50C08E9E20A94024A6553BC352ADB597}
 
 Den här visualiseringen ser ut som [!UICONTROL Horizontal Bar Chart], men seriestaplarna visas staplade.
 
-![](assets/horizontal-bar-stacked.png)
+![Ett staplat vågrätt fält som visar sidvyer, besök, poster och avslutningar.](assets/horizontal-bar-stacked.png)
 
 The [!UICONTROL Horizontal Bar Stacked] Visualiseringsinställning för staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering:
 
-![](assets/horizstacked100.png)
+![Vågrätt fält staplat till 100 % med besök, sidvyer och unika besökare.](assets/horizstacked100.png)

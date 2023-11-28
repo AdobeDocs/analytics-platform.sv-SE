@@ -1,11 +1,11 @@
 ---
-description: Lista över felmeddelanden i Adobe Analysis Workspace och dess tillhörande komponenter
+description: Läs om felmeddelandena i Adobe Analysis Workspace och dess tillhörande komponenter
 title: Vanliga felmeddelanden i Analysis Workspace
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---

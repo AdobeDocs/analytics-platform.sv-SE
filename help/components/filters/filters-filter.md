@@ -2,9 +2,10 @@
 description: Filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd).
 title: Filtrera filterlistan
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ Filtrering gör det enklare att söka efter filter.
 
 1. Klicka på knappen **[!UICONTROL Filters]** ikon:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Filterhanteraren visar filterikonen och tillgängliga filter.](assets/filtering.png)
 
 2. Följande filter är tillgängliga:
 

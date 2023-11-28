@@ -3,9 +3,9 @@ title: Skapa och publicera målgrupper i kundprofilen i realtid
 description: Lär dig hur du publicerar målgrupper från Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
    Konfigurera de här inställningarna innan du kan publicera målgruppen.
 
-   ![Skärmbild på hur man skapar en publik](assets/create-audience.png)
+   ![Skärmbild av hur du skapar en målgruppsinställning som beskrivs i nästa avsnitt.](assets/create-audience.png)
 
    | Inställning | Beskrivning |
    | --- | --- |
@@ -52,7 +52,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
    Publiken förhandsvisas i den högra listen. Här kan ni göra en sammanfattande analys av den målgrupp ni har skapat.
 
-   ![Skärmbild av förhandsgranskning av data](assets/data-preview.png)
+   ![Skärmbild av förhandsgranskningen av data som visar en sammanfattande analys av målgruppen.](assets/data-preview.png)
 
    | Förhandsvisningsinställning | Beskrivning |
    | --- | --- |
@@ -108,7 +108,7 @@ Du kan visa Customer Journey Analytics-målgrupper i Platform genom att gå till
 
 Du kan dra Customer Journey Analytics målgrupper till segmentdefinitionen för Adobe Experience Platform-segment.
 
-![](assets/audiences-aep.png)
+![Användargränssnittet för Adobe Experience Platform markerar segment i den vänstra rutan och CJA-målgrupper i huvudpanelen.](assets/audiences-aep.png)
 
 ## Vanliga frågor {#faq}
 

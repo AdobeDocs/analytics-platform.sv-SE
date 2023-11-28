@@ -3,9 +3,9 @@ description: Använd radvisualisering för att avbilda trendbaserade (tidsbasera
 title: Linjediagram
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -24,19 +24,19 @@ Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen f�
 
 * **Allmänt**: Inställningar som är gemensamma för olika visualiseringstyper
 * **Axel**: Inställningar som påverkar x- eller y-axeln i linjens visualisering
-* **Övertäckningar**: Alternativ för att lägga till ytterligare kontext till de serier som visas i din radvisualisering.
+* **Övertäckningar**: Alternativ för att lägga till ytterligare kontext till de serier som visas i radvisualiseringen.
 
 ![Visualiseringsinställningar](assets/viz-settings-modal.png)
 
 ## Ändra granularitet
 
-En granularitetslistruta i [visualiseringsinställningar](freeform-analysis-visualizations.md) gör att du kan ändra en anpassad visualisering (t.ex. linje, stapel) från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen.
+En granularitetslistruta i [visningsinställningar](freeform-analysis-visualizations.md) gör att du kan ändra en anpassad visualisering (t.ex. linje, stapel) från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen.
 
 ## Visa min eller max
 
 Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show min/max]** kan du täcka över en etikett för minsta och högsta värde för att snabbt markera toppar och dalar i ett mätresultat. Obs! min/max-värdena härleds från de synliga datapunkterna i visualiseringen, inte från hela uppsättningen värden inom en dimension.
 
-![Visa min/max](assets/min-max-labels.png)
+![En övertäckning med etiketten för minsta och högsta värde.](assets/min-max-labels.png)
 
 ## Visa trendlinjeövertäckning
 
@@ -56,5 +56,5 @@ Alla trendlinjer för regressionsmodellen passas in med vanliga minsta fyrkanter
 | Logaritmisk | Skapar en kurvformad linje som passar bäst och är användbar när ändringshastigheten i data snabbt ökar eller minskar och sedan Nivåer ut. En logaritmisk trendlinje kan använda negativa och positiva värden. Ekvation: `y = a + b * log(x)` |
 | Exponentiell | Skapar en böjd linje och är användbar när data ökar eller minskar med konstant ökande hastighet. Det här alternativet ska inte användas om dina data innehåller noll eller negativa värden. Ekvation: `y = a + e^(b * x)` |
 | Strömförsörjning | Skapar en böjd linje och är användbar för datauppsättningar som jämför mått som ökar med en viss hastighet. Det här alternativet ska inte användas om dina data innehåller noll eller negativa värden. Ekvation: `y = a * x^b` |
-| Kvadratisk | Söker efter den bästa passningen för en datauppsättning som är formad som en parabola (konkav uppåt eller nedåt). Ekvation: `y = a + b * x + c * x^2` |
+| Kvadratisk | Söker efter den bästa passningen för en datauppsättning som är formad som en parabola (konkav upp eller ned). Ekvation: `y = a + b * x + c * x^2` |
 | Glidande medelvärde | Skapar en jämn trendlinje baserad på en uppsättning medelvärden. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av ditt urval av &#39;Perioder&#39;), jämför dem och använder medelvärdet som en punkt på raden. Exempel är 7 dagars glidande medelvärde eller 4 veckors glidande medelvärde. |

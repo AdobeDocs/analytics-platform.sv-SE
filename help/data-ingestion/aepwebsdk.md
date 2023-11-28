@@ -4,9 +4,9 @@ description: Förklara hur man importerar data till Customer Journey Analytics v
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3283'
+source-wordcount: '3292'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Så här konfigurerar du ditt schema:
 
    1. Välj **[!UICONTROL Experience Event]**.
 
-      ![Skapa ett schema](./assets/create-ee-schema-wizard-step-1.png)
+      ![Skapa en schemarubriking för Experience Event](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -71,7 +71,7 @@ Så här konfigurerar du ditt schema:
 
    1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
-      ![Namnge ditt schema](./assets/create-ee-schema-wizard-step-2.png)
+      ![Skapa schemafönster med namnet på schemafälten](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Välj **[!UICONTROL Finish]**.
 

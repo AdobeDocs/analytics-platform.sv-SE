@@ -3,9 +3,9 @@ description: Gör att du kan lägga till användardefinierad text på arbetsytan
 title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
@@ -18,16 +18,16 @@ Du kan lägga till användardefinierad text i ett Workspace-projekt med hjälp a
 
 När du redigerar en textruta eller beskrivning kan du justera den markerade textens teckensnittsstorlek (rubriknivåer), färg, format (fet, kursiv) och justering. Du kan också lägga till punktlistor och numrerade listor.
 
-![](assets/format.png)
+![Textalternativ för ett Workspace-projekt som markerar textfärgspaletten.](assets/format.png)
 
 ## Lägg till hyperlänkar {#hyperlinks}
 
 Om du vill lägga till en hyperlänk markerar du texten och klickar på hyperlänksikonen på menyn. Hyperlänkar kan länka till externa webbplatser, dokumentationssidor, [Projekt/paneler/visualiseringar för arbetsytan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html)och mycket annat för att ytterligare hjälpa projektmottagarna.
 
-![](assets/hyperlink.png)
+![Textalternativ med länkikonen markerad.](assets/hyperlink.png)
 
 ## Lägg till bilder {#images}
 
 Om du vill lägga till en bild i projektet klickar du på bildikonen på menyn och infogar en URL för en offentlig bild. Bildens URL måste vara tillgänglig för alla, börja med `https`och vara i ett format `.png`, `.jpeg`, `.jpg`, eller `.gif`. Statiska och animerade bilder stöds.
 
-![](assets/image.png)
+![Textalternativ med bildikonen markerad.](assets/image.png)

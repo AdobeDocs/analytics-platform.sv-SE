@@ -1,28 +1,28 @@
 ---
-title: Hantera målgrupper skapade i Customer Journey Analytics
+title: Lär dig hantera målgrupper som skapats i Customer Journey Analytics
 description: Lär dig hantera målgrupper i Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
 # Hantera målgrupper skapade i Customer Journey Analytics
 
-Genom att hantera tidigare skapade målgrupper kan ni
+Genom att hantera tidigare skapade målgrupper kan ni:
 
 * **Schemalägg eller avschemalägg** automatisk uppdatering/uppdatering. Det maximala utgångsdatumet för schemat är 1 år.
-* **Förnya ett målgruppsuppdateringsschema** när den snart går ut. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan schemat förfaller.
+* **Förnya ett målgruppsuppdateringsschema** när den snart upphör att gälla. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan schemat förfaller.
 * Visa **uppdateringsintervall** och **senaste gången en målgrupp uppdaterades**
 * Få insikter i **hur lång tid det tog att producera en publik** från Customer Journey Analytics, och hur lång tid det tog att få målgruppen att visas i kundprofilen i realtid för aktiveringsändamål.
 * Se om målgrupperna i Customer Journey Analytics är **används aktivt av kundprofilen i realtid** eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
 
 ## Hanteringsgränssnitt
 
-![](assets/manage.png)
+![Publikfönstret med flera filter.](assets/manage.png)
 
 | Användargränssnittsinställning | Definition |
 | --- | --- |

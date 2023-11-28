@@ -3,9 +3,9 @@ title: Etiketter och profiler
 description: Lär dig hur dataetiketter och principer som definieras i Adobe Experience Platform påverkar datavyer och rapporter i Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Du kan kontrollera om en profil är aktiverad som blockerar användningen av vis
 
 Klicka igen på [!UICONTROL filter] ikonen i den vänstra listen och under **[!UICONTROL Data Governance]**, klicka **[!UICONTROL Policies]**:
 
-![](assets/filter-policies.png)
+![Filtrera inkluderade komponenter efter lista som visar Enforce Analytics valt](assets/filter-policies.png)
 
 Klicka **[!UICONTROL Apply]** för att se vilka profiler som är aktiverade.
 
@@ -67,7 +67,7 @@ Om **[!UICONTROL Enforce Analytics]** eller **[!UICONTROL Enforce Download]** pr
 
 De här komponenterna är nedtonade i den vänstra listen [!UICONTROL Schema fields] lista:
 
-![](assets/component-greyed.png)
+![Greyed components and the Policies message indicating policies has applied to this field restrict use of the data](assets/component-greyed.png)
 
 Du kan inte heller spara en datavy som innehåller blockerade fält.
 

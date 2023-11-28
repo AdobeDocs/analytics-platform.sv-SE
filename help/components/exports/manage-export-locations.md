@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 1. Välj [!UICONTROL **Platser**] väljer du sedan den plats som du vill redigera.
 
-   ![Redigera platser](assets/locations-edit.png)
+   ![Fönstret Exporterar med fliken Platser och en lista med platser.](assets/locations-edit.png)
 
 1. Välj [!UICONTROL **Redigera**].
 
@@ -71,7 +71,7 @@ Så här tar du bort en plats:
 
 1. Välj [!UICONTROL **Platser**] väljer du en eller flera platser som du vill ta bort.
 
-   ![Redigera platser](assets/locations-edit.png)
+   ![Fönstret Exporterar med fliken Platser och en lista över platser](assets/locations-edit.png)
 
 1. Välj [!UICONTROL **Ta bort**].
 
@@ -89,7 +89,7 @@ Så här tar du bort en plats:
 
 1. Välj [!UICONTROL **Platskonton**] -fliken.
 
-   ![Kontosida](assets/account-add.png)
+   ![Fönstret Exportera med fliken Platskonton](assets/account-add.png)
 
 1. Välj [!UICONTROL **Visa detaljer**] på kontot som du vill redigera.
 
@@ -105,7 +105,7 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
 1. Välj [!UICONTROL **Platskonton**] -fliken.
 
-   ![Kontosida](assets/account-add.png)
+   ![Fönstret Exportera med fliken Platskonton](assets/account-add.png)
 
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Kontonycklar**].
 
@@ -115,7 +115,7 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
 1. Välj [!UICONTROL **Platskonton**] -fliken.
 
-   ![Kontosida](assets/account-add.png)
+   ![Fönstret Exportera med fliken Platskonton](assets/account-add.png)
 
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Ta bort konto**].
 

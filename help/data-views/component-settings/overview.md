@@ -4,9 +4,9 @@ description: Visa huvudinställningar för en datavykomponent.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '461'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Kärninställningar som används av en datavykomponent.
 
-![Komponentinställningar](../assets/component-settings.png)
+![Komponentinställningar som beskrivs i det här avsnittet](../assets/component-settings.png)
 
 | Inställning | Beskrivning/Använd skiftläge |
 | --- | --- |

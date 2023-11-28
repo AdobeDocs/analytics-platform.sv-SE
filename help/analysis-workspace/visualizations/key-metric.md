@@ -4,9 +4,9 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: 22cb88aa98576b70b8b089eda4a46f1e8963767a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland an
 
 1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett filter (om du vill):
 
-   ![konfiguration för nyckelmått](assets/key-metric-config.png)
+   ![Nyckelmätningskonfiguration som visar alternativen för måttenhet, primärt datumintervall, jämförelsedatumintervall och segment.](assets/key-metric-config.png)
 
    | Konfigurationsinställning | Definition |
    | --- | --- |
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## Visa utdata
 
-![](assets/key-metric-output.png)
+![Viktiga mätresultat som visar metik-, sammanfattningsändring-, sammanfattningsnummer- och linjediagram.](assets/key-metric-output.png)
 
 Observera:
 
@@ -89,13 +89,13 @@ Observera:
 
 * Härifrån kan du hovra över linjediagrammen för att se statistik för enskilda dagar:
 
-![statistik](assets/key-metric-output2.png)
+![Besök statistik](assets/key-metric-output2.png)
 
 ## Visualiseringsinställningar
 
 Sammanfattningen av nyckeltal erbjuder flera flexibla inställningar för bättre rapportering och kommunikation av viktiga mätvärden. Du kommer åt inställningarna via kugghjulsikonen i det övre högra hörnet av visualiseringen.
 
-![](assets/key-metric-settings.png)
+![Sammanfattningsinställningar för nyckeltal med visningstypen Sammanfattning, Allmänt och Visningsalternativ.](assets/key-metric-settings.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -116,7 +116,7 @@ När du har skapat visualiseringen kan du fortfarande redigera den ursprungliga 
 
 1. Klicka på pennikonen i det övre högra hörnet av visualiseringen (bredvid inställningsikonen).
 
-   ![redigera](assets/edit-icon.png)
+   ![Redigeringsikoner för visualisering](assets/edit-icon.png)
 
    Du återgår nu till den ursprungliga konfigurationsvyn.
 

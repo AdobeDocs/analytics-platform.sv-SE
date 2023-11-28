@@ -4,9 +4,9 @@ title: Översikt över kalender- och datumintervall
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '881'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Med kalendern kan du ange datum och datumintervall eller välja en förinställn
 
 Kalenderval gäller på panelnivå, men du kan välja att använda dem på alla paneler. När du klickar på ett datumintervall i Arbetsyta visas den aktuella kalendermånaden och den föregående kalendermånaden i gränssnittet. Du kan justera dessa två kalendrar genom att klicka på höger- och vänsterpilarna i respektive övre hörn.
 
-![Kalender](assets/aw_calendar2.png){width="60%"}
+![Kalender som visar oktober 2022 och november 2022 med 1 till 30 november vald.](assets/aw_calendar2.png){width="60%"}
 
 Första klicket i en kalender startar ett datumintervallval. Den andra klickningen slutför ett datumintervallval som markeras. Om `Shift` om du håller ned tangenten (eller högerklickar om används) läggs den till i det markerade området.
 
@@ -48,12 +48,12 @@ Använda relativa paneldatumintervall
 Om du väljer relativa datum baseras rullande datum på startdatumet för panelkalendern och inte på dagens datum.
    * Om det här alternativet inte är markerat baseras rullande datum på dagens datum.
 
-   ![relativa paneldatum](assets/relative-date-selected.png){width="60%"}
+   ![Kalender med Gör datumintervallkomponenter relativa till den valda panelkalendern](assets/relative-date-selected.png){width="60%"}
 
 1. Klicka **Använd**.
 De relativa datumen visas i det övre högra hörnet.
 
-   ![relativa datum i frihandsformat ](assets/relative-date-range1.png)
+   ![Frihandstabell med relativa datum markerade och senaste månaden markerade. ](assets/relative-date-range1.png)
 
 ## Riktlinjer för relativa paneldatumintervall {#guidelines}
 

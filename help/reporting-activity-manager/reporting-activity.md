@@ -4,9 +4,9 @@ description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
-source-git-commit: 8e2605a18d7c8201122603c9f8ee381a2e97fb9f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1917'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
    En lista över dina aktiverade basanslutningar visas.
 
-   ![rapportkö](assets/reporting-activity1.png)
+   ![Rapporteringsaktivitet som visar rapportkön](assets/reporting-activity1.png)
 
 1. (Valfritt) Du kan söka efter eller filtrera listan över anslutningar:
 

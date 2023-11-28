@@ -4,9 +4,9 @@ title: Visa dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Så här visar du information om en komponent i Data Dictionary:
 
    Fönstret Data Dictionary visas.
 
-   ![data-dictionary.png](assets/data-dictionary.png)
+   ![Fönstret Data Dictionary med snabbfilter för Dimensioner, mått, segment och datumintervall](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 

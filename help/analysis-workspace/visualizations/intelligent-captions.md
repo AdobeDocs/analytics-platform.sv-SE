@@ -3,10 +3,10 @@ description: Använd intelligenta bildtexter för att generera insikter på natu
 title: Intelligenta bildtexter
 feature: Visualizations
 role: User, Admin
-exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Bildtexter är tillgängliga för alla Customer Journey Analytics-användare och
 
 Om du vill starta automatiskt genererade bildtexter för en radvisualisering klickar du på **[!UICONTROL Intelligent captions]** ikonen längst upp till höger i visualiseringen.
 
-![starta intelligenta bildtexter](assets/intell-caps-1.png)
+![Öppna analysfönstret som visar trenden för intelligenta bildtexter för produktvyer. ](assets/intell-caps-1.png)
 
 Naturliga språkkunskaper genereras nu.
 
 * Bildtexter genereras varje gång de underliggande markerade data ändras i tabellen som styr visualiseringen.
 
-* Om det finns flera mätvärden i tabellen genereras bildtexter endast för det första mätvärdet eller det mätvärde som användaren har valt.
+* Om det finns flera mätvärden i tabellen, genereras bildtexter endast för det första mätvärdet eller det mätvärde som användaren har valt.
 
 * Om du sparar projektet nu och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från det här projektet.
 
@@ -40,7 +40,7 @@ Naturliga språkkunskaper genereras nu.
 
 Här följer ett exempel på hur bildtexterna kan se ut:
 
-![Bildtexter](assets/captions.png)
+![Intelligenta bildtexter för linjevisualisering inklusive Seasonality, Min, Max, Spike och Decline.](assets/captions.png)
 
 ## Kopiera till Urklipp {#copy}
 
@@ -66,4 +66,4 @@ Du kan **exportera bildtexter via PDF**, så länge projektet sparas med de bild
 
 Om du inte vill att intelligenta bildtexter ska genereras kan du inaktivera den här funktionen genom att gå till Visualiseringsinställningarna och avmarkera kryssrutan **[!UICONTROL Show intelligent captions]**.
 
-![bildtextinställningar](assets/toggle-captions.png)
+![Alternativ för linjevisualisering som visar alternativet att avmarkera Visa intelligenta bildtexter.](assets/toggle-captions.png)

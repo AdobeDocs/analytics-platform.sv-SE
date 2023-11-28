@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Skapa anpassade datumintervall
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 4%
+source-wordcount: '283'
+ht-degree: 3%
 
 ---
 
@@ -17,21 +17,21 @@ Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskompon
 
 **[!UICONTROL Components]** > **[!UICONTROL New Date Range]**
 
-Ett datumintervall används på panelnivå. Om du vill lägga till ett datumintervall i projektet klickar du på **Paneler** > *`<select panel>`* och ange ett nytt datumintervall.
+Ett datumintervall används på panelnivå. Om du vill lägga till ett datumintervall i projektet klickar du på **Panel** > *`<select panel>`* och ange ett nytt datumintervall.
 
 ## Datumintervall för&quot;två månader sedan&quot;
 
 I följande anpassade datumintervall visas ett datumintervall för&quot;två månader sedan&quot;, med en visualisering av Sammanfattningsändring som visar en riktningsändring.
 
-![](assets/date-range-two-months-ago.png)
+![Date Range Builder som visar Använd rullande datum för två månader sedan](assets/date-range-two-months-ago.png)
 
 Det anpassade datumintervallet visas högst upp i [!UICONTROL Date Range] komponentpanelen i ditt projekt:
 
-![](assets/date-range-panel-two-months-ago.png)
+![Panelen Datumintervallkomponent med pilen pekar på För två månader sedan.](assets/date-range-panel-two-months-ago.png)
 
-Du kan dra det här anpassade datumintervallet till en kolumn tillsammans med ett anpassat, månatligt löpande datumintervall med hjälp av förinställningen Sista månaden för en jämförelse. Lägg till en visualisering av sammanfattningsändring och välj summorna från varje kolumn för att visa riktningsändring:
+Du kan dra det här anpassade datumintervallet till en kolumn tillsammans med ett anpassat, månatligt löpande datumintervall med hjälp av förinställningen Senaste månaden för en jämförelse. Lägg till en visualisering av sammanfattningsändring och välj summorna från varje kolumn för att visa riktningsändring:
 
-![](assets/date-range-two-months-table.png)
+![Ökning med 14,45%.](assets/date-range-two-months-table.png)
 
 ## Använd ett 7-dagars rullande datumintervall
 
@@ -41,7 +41,7 @@ I Date Range Builder kan du skapa ett anpassat datumintervall som visas med andr
 
 Du kan till exempel skapa ett datumintervall som anger ett 7-dagars rullande fönster som slutar för en vecka sedan:
 
-![](assets/create_date_range.png)
+![Date Range Builder med ett datumintervall som anger ett 7-dagars rullningsfönster.](assets/create_date_range.png)
 
 Använd *`rolling daily`*.
 
@@ -49,4 +49,4 @@ Använd *`rolling daily`*.
 
 * Slutinställningarna blir *`current day minus 7 days`*.
 
-Datumintervallet kan vara en komponent som du drar till en frihandstabell.
+Det här datumintervallet kan vara en komponent som du drar till en frihandstabell.
