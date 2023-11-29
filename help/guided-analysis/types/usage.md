@@ -4,7 +4,7 @@ description: Mät användarengagemanget över tid.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -45,7 +45,7 @@ The [!UICONTROL Usage] I vyn finns följande diagraminställningar som du kan ju
 
 Lägg till ytterligare data i diagrammet. När fler än en serie visas i diagrammet visas övertäckningarna endast vid hovring.
 
-* **[!UICONTROL Anomaly detection]**: Körningar [avvikelseidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) på trendanalysen. Exponenter visas som punkter som du kan hovra över för mer information.
+* **[!UICONTROL Anomaly detection]**: Körningar [avvikelseidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) på trendanalysen. Exponenter visas som punkter som du kan hovra över för mer information.
 * **[!UICONTROL Trendline overlay]**: Lägger till en trendlinje i diagrammet, som hjälper till att beskriva ett tydligare mönster i data.
    * [!UICONTROL Linear]: Skapar en rak regressionslinje. Bäst för enkla linjära data som ökar eller minskar med en konstant hastighet. Ekvation: `y = a + b * x`
    * [!UICONTROL Logarithmic]: Skapar en böjd regressionslinje. Bäst för data som snabbt ökar eller minskar, och sedan blir mer jämna. Ekvation: `y = a + b * log(x)`

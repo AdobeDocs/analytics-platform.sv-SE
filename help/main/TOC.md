@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 648acd49d6cc38531f50df0a7d78ec6dce533d01
+source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1046'
 ht-degree: 24%
 
 ---
@@ -167,12 +167,10 @@ ht-degree: 24%
       + [Hämta](../analysis-workspace/export/download-send.md)
       + [Skicka till andra](../analysis-workspace/export/t-schedule-report.md)
       + [Exportera till molnet](../analysis-workspace/export/export-cloud.md)
-   + Virtual Analyst {#virtual-analyst}
-      + [Översikt över Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
-      + Avvikelseidentifiering {#anomaly-detection}
-         + [Översikt över avvikelseidentifiering](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Visa avvikelser i Analysis Workspace](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-         + [Statistiska tekniker som används för avvikelseidentifiering](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + Avvikelseidentifiering {#anomaly-detection}
+      + [Översikt över avvikelseidentifiering](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Visa avvikelser i Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Statistiska tekniker som används för avvikelseidentifiering](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)

@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Rapporteringsmotorn är avgörande för att Customer Journey Analytics ska kunna
 
 De inbyggda visualiseringskomponenterna är smarta funktioner som:
 
-* **Virtuella analysfunktioner** som [Analysidentifiering](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) som använder prediktiva algoritmer och maskininlärning för att ge insikter i vad som driver ovanliga beteenden i era data.
+* **Virtuella analysfunktioner** som [Analysidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) som använder prediktiva algoritmer och maskininlärning för att ge insikter i vad som driver ovanliga beteenden i era data.
 
 * **Avancerade analysfunktioner** som fokuserar specifikt på kundreseinsikter, som [flödesdiagram](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attributionspanelen](/help/analysis-workspace/c-panels/attribution.md), [utfallsdiagram](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)och [dimensionsindelning](/help/components/dimensions/t-breakdown-fa.md). Exempel på färdiga visualiseringar är:
 
