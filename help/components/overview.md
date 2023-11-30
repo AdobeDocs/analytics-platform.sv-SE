@@ -4,9 +4,9 @@ description: Lär dig vilka komponenter Customer Journey Analytics erbjuder och 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1124'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ Komponenterna i Analysis Workspace består av mätvärden, dimensioner, filter o
 
 Du öppnar panelen Komponenter genom att klicka på **[!UICONTROL Components]** ikonen i den vänstra listen. Du kan växla mellan paneler (panelen Tom, [Frihandspanelen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md), eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och komponenter som använder ikonerna för den vänstra listen eller genom att använda [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![Ikon för komponenter](assets/components.png)
+![Panelen Arbetsyta som markerar ikonen Komponenter i den vänstra listen](assets/components.png)
 
 Se [Skapa ett projekt](/help/analysis-workspace/home.md) för information om hur du använder komponenter i ett projekt.
 
@@ -75,7 +75,7 @@ Du kan hantera komponenter direkt i den vänstra listen.
    >   Du kan markera flera komponenter genom att hålla ned Skift, eller genom att hålla ned Kommando (Mac) eller Ctrl (Windows).
 
 
-   ![Komponentåtgärdslista](assets/component-actions.png)
+   ![Komponentåtgärdslista med tagg, favorit, godkänn, Dela och Ta bort.](assets/component-actions.png)
 
    | Komponentåtgärd | Beskrivning |
    |--- |--- |
