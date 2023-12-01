@@ -3,9 +3,9 @@ description: Läs om kända begränsningar i Adobe Analysis Workspace och dess t
 title: Kända begränsningar i Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '283'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,6 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 * Skapa mätvärden från markering är inaktiverat när filter används som rader i en tabell. Dessutom ska Skapa mätvärden från markering inte tillämpas på datumjusterade kolumner.
 * Villkorsstyrd formatering för uppdelningsrader kan inte använda anpassade intervall.
 * Tabellsummeringsrader kan inte trendas när inställningen för att beräkna summor har tillämpats (används vanligtvis för statiska radobjekt).
-* [!UICONTROL Contribution Analysis] kan köras på [!UICONTROL daily] granularitet _endast_. Den kan inte köras mot [!UICONTROL hourly], [!UICONTROL weekly], etc., data.
 
 ## Visualiseringar
 

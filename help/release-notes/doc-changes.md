@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '2899'
+source-wordcount: '2946'
 ht-degree: 4%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **December 2023** | |
+| Uppdateringar av dokumentationen för avvikelseidentifiering | Dokumentationen för avvikelseidentifiering fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [Analysidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) har flyttats direkt under Analysis Workspace.</li></ul> |
 | **Oktober 2023** | |
 | Använda härlett fält för att ställa in mål | Tillagd [användningsfall](../use-cases/goals-using-derived-fields.md) artikel som illustrerar hur du använder härledda fält för att ställa in mål och rapportera om dessa. |
 | Exportera fullständiga tabeller till molnet | Lagt till dokumentation om export av fullständiga tabeller med miljontals Workspace-rader till molnmål. <p>Vid export av fullständiga tabeller kan du leverera datatabeller som utformats i Workspace en gång eller enligt schema, med stöd för upp till fem uppdelningar, fem mätvärden, filter och beräknade mätvärden, allt i en sammansatt tabell. Det är utvecklingen av rapporter om Data Warehouse i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag.</p><p>Mer information finns i [Exportera Customer Journey Analytics-rapporter till molnet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). | 4 oktober 2023 |
