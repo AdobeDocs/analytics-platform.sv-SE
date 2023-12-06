@@ -4,10 +4,10 @@ description: Customer Journey Analytics-funktioner jämfört med Adobe Analytics
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 15fbbf26b58b474f65e6585ac72bdf247fb1678d
+source-git-commit: 3482083fd5f99f133db79f682d3231cc75c969ff
 workflow-type: tm+mt
-source-wordcount: '2128'
-ht-degree: 2%
+source-wordcount: '2037'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Analysidentifiering | Fullt stöd |
 | Attribution IQ | Fullt stöd |
-| Beräknade värden | Fullt stöd. Befintliga beräknade mätvärden i traditionella Analysis Workspace porteras inte till Customer Journey Analytics. |
+| Beräknade mått | Fullt stöd. Befintliga beräknade mätvärden i traditionella Analysis Workspace porteras inte till Customer Journey Analytics. |
 | Kalenderhändelser | Fullt stöd. Kalenderhändelser har implementerats som [Anteckningar](/help/components/annotations/overview.md) i Workspace. |
 | CSV-nedladdning | Fullt stöd |
 | Anpassade kalendrar | Fullt stöd |
@@ -34,7 +34,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Marknadsförande eVars | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Mätvärden | Fullt stöd; Customer Journey Analytics använder Experience Data Model (XDM) och har stöd för ett obegränsat antal mätvärden och är inte knutet till Adobe Analytics anpassade framgångshändelser. Vissa standardmått har bytt namn från Adobe Analytics: Besökare = Folk, Besök = Sessioner, Hits = Händelser. |
 | Mobil styrkort/instrumentpaneler | Fullt stöd |
-| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. |
+| Panel | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. |
 | Export från PDF | Fullt stöd |
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
@@ -84,7 +84,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Punktfiltrering | För [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller Customer Journey Analytics. |
-| Paneler | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
+| Panel | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
 | Analyser för mål (A4T) | Delvis stöd ges via fälten i [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Stöd för A4T-vänliga namn på målaktiviteter och -upplevelser planeras. |
 
 {style="table-layout:auto"}
@@ -97,8 +97,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Bidragsanalys | Support planeras. |
 | Häftning av ID med enhetsdiagram | Support planeras. |
 | Projektmallar | Support planeras. |
-| Rapporter i realtid | Support planeras. |
-| Segment IQ | Support planeras. |
+| Realtidsrapportering | Support planeras. |
+| Segmentanalys | Support planeras. |
 | Datakällor för transaktions-ID | Support planeras. |
 | Migrera projekt, filter och beräknade värden från Adobe Analytics till Customer Journey Analytics | Support planeras. |
 | Datakällor på sammanfattningsnivå | Support planeras. |
@@ -137,5 +137,6 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | Förbättrade säkerhets- och sekretessalternativ - beredskap för HIPAA | Customer Journey Analytics är redo för HIPAA och erbjuder ytterligare säkerhetsalternativ för regelefterlevnad. Adobe Analytics är inte HIPAA-klart. |
 | Möjlighet att kombinera datauppsättningar (t.ex. Adobe Analytics rapportsviter) | Med Customer Journey Analytics kan ni kombinera data från flera rapportsviter som om de vore ett enda rapportpaket i Adobe Analytics. |
 | Härledda fält | Härledda fält gör det möjligt att göra omformningar av data vid rapporttillfället. Data kan kombineras, korrigeras eller skapas direkt och gäller retroaktivt för alla rapporter. |
+| Guidad analys | Guidad analys är ett rapportformat som gör att användarna snabbt kan ta hand om sina databehov så att de snabbt kan få högkvalitativa insikter och fatta mer databaserade beslut. Guidad analys ingår i Adobe Product Analytics, ett tillägg till Customer Journey Analytics. |
 
 {style="table-layout:auto"}
