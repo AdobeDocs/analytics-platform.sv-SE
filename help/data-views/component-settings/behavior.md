@@ -4,9 +4,9 @@ description: Ange hur en dimension eller ett mått fungerar vid rapportering.
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -25,15 +25,15 @@ Beteendeinställningar är tillgängliga för både mått och mått. Vilka inst�
 
 {style="table-layout:auto"}
 
-![Skiftlägeskänslig dimension](../assets/case-sens-workspace.png)
-
 >[!NOTE]
 >
 >Om du aktiverar [!UICONTROL Lower case] på en sökdatauppsättningsdimension kan det finnas flera uppslagsvärden för samma identifierare. Om den här konflikten inträffar använder Customer Journey Analytics det första ASCII-sorterade värdet (versalvärden före gemener). Adobe avråder från att använda uppslagsdatauppsättningar som innehåller samma värde när [!UICONTROL Lower case] är aktiverat.
 
+![Skiftlägeskänslig dimension](../assets/case-sens-workspace.png)
+
 ## Inställningar för mätbeteende
 
-| Inställning | Beskrivning/Använd skiftläge |
+| Inställning | Beskrivning/användningsfall |
 | --- | --- |
 | [!UICONTROL Count values] | Synlig för datatyperna Integer och Double schema. Öka måttet med den angivna mängden. Ökar till exempel måttet med 50 om värdet för kolumnen är `50`. |
 | [!UICONTROL Count instances] | Synlig för datatyperna Integer och Double schema. Öka måttet med ett, oavsett värde. Förekomsten av ett värde ökar mätvärdet. Ökar till exempel måttet med 1 om värdet för kolumnen är `50`. |

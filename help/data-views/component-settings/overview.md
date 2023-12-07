@@ -4,20 +4,20 @@ description: Visa huvudinställningar för en datavykomponent.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
 # Komponentinställningar
 
-Kärninställningar som används av en datavykomponent.
+Följande information beskriver c-inställningar som används av en datavykomponent.
 
 ![Komponentinställningar som beskrivs i det här avsnittet](../assets/component-settings.png)
 
-| Inställning | Beskrivning/Använd skiftläge |
+| Inställning | Beskrivning/användningsfall |
 | --- | --- |
 | [!UICONTROL Component type] | Obligatoriskt. Gör att du kan ändra en komponent från Mått till Dimension eller tvärtom. Om du ändrar den här listrutan flyttas komponenten till respektive komponentområde. |
 | [!UICONTROL Component Name] | Obligatoriskt. Här kan du ange ett eget namn som visas i Analysis Workspace. Du kan byta namn på en komponent för att ge den ett namn som är specifikt för datavyn. |

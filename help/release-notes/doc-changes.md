@@ -4,10 +4,10 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
+source-git-commit: 9b51a28ca2d387aabd3ffde651eed6c37d28baa0
 workflow-type: tm+mt
-source-wordcount: '2946'
-ht-degree: 4%
+source-wordcount: '2717'
+ht-degree: 7%
 
 ---
 
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **December 2023** | |
+| Uppdateringar av valutakonvertering | Tydlig dokumentation om hur man [konfigurera valutakonvertering](/help/data-views/component-settings/format.md). |
 | Uppdateringar av dokumentationen för avvikelseidentifiering | Dokumentationen för avvikelseidentifiering fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [Analysidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) har flyttats direkt under Analysis Workspace.</li></ul> |
 | **Oktober 2023** | |
 | Använda härlett fält för att ställa in mål | Tillagd [användningsfall](../use-cases/goals-using-derived-fields.md) artikel som illustrerar hur du använder härledda fält för att ställa in mål och rapportera om dessa. |

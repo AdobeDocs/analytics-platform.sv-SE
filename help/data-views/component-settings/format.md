@@ -4,90 +4,89 @@ description: Konfigurera hur ett mått formateras.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 387c787dba4caa9db82d46071e23a2131043c8c6
+source-git-commit: 045037867063f6bb5a6be60132f8d7b1bb54917e
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 2%
+source-wordcount: '698'
+ht-degree: 1%
 
 ---
 
 # Formatera komponentinställningar
 
-Med Format kan du bestämma hur ett givet mätvärde ska visas.
+Med Format kan du bestämma hur ett givet mätvärde ska visas när det används i rapporter.
 
-![Formatinställningar](../assets/format-settings.png)
+## Konfigurera formatinställningar för ett mätvärde
 
-| Inställning | Beskrivning |
-| --- | --- |
-| **[!UICONTROL Format]** | Här kan du ange formatering för ett mätresultat som Decimal, Time, Percent eller Currency. |
-| **[!UICONTROL Decimal Places]** | Visas inte i datatyperna för heltalsschemat. Här kan du ange hur många decimaler ett mätresultat ska visa. |
-| **[!UICONTROL Date]** | Här kan du bestämma hur du vill att datum- och tidsfältet ska visas när det används som en dimension i rapporter. [Läs mer](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL Date-Time]** | Här kan du bestämma hur du vill att datum- och tidsfältet ska visas när det används som en dimension i rapporter. [Läs mer](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL Currency]** | Här kan du bestämma vilken valuta som måttet ska visas i. Se [Valuta](#currency) för mer information. |
-| **[!UICONTROL Show upward trend as]** | Här kan du ange om en uppåtgående trend för det här måttet är god (grön) eller dålig (röd). |
-| **[!UICONTROL True value]** och **[!UICONTROL False value]** | Endast synlig för datatyperna Boolean-schema. Här kan du anpassa dimensionsobjektetiketten för `true` och `false` värden. |
+Du kan bestämma hur ett givet mätresultat ska visas genom att justera dess formatinställningar.
 
-{style="table-layout:auto"}
+1. I Customer Journey Analytics väljer du [!UICONTROL **Datavyer**] -fliken.
 
-## Valuta
+1. Markera datavyn som innehåller komponenten vars formatinställning du vill konfigurera.
 
-När du väljer **[!UICONTROL Currency]** som [!UICONTROL Format] för ett mätvärde kan du bestämma hur valutor ska visas och konverteras.
+1. Välj [!UICONTROL **Komponenter**] -fliken.
 
-### Visa valuta
+   ![Fliken Komponenter](../assets/format-settings-component-tab.png)
 
-Så här visar du en valuta för ett mått:
+1. Markera komponenten som du vill konfigurera och expandera sedan [!UICONTROL **Format**] till höger på sidan.
 
-1. Ange antalet **[!UICONTROL Decimal places]**.
+   ![Formatinställningar](../assets/format-settings.png)
 
-1. Välj en valuta från **[!UICONTROL Display currency in]** lista.
+1. Ange följande information:
 
+   | Inställning | Beskrivning |
+   | --- | --- |
+   | **[!UICONTROL Format]** | Här kan du ange formatering för ett mätresultat som Decimal, Time, Percent eller Currency. |
+   | **[!UICONTROL Decimal]** | Visas inte i datatyperna för heltalsschemat. Här kan du ange hur många decimaler ett mätresultat ska visa. |
+   | **[!UICONTROL Date]** | Här kan du bestämma hur du vill att datum- och tidsfältet ska visas när det används som en dimension i rapporter. [Läs mer](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
+   | **[!UICONTROL Date-Time]** | Här kan du bestämma hur du vill att datum- och tidsfältet ska visas när det används som en dimension i rapporter. [Läs mer](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
+   | **[!UICONTROL Currency]** | Här kan du bestämma vilken valuta som måttet ska visas i. <p>Om du analyserar globala data där transaktioner förekommer i olika valutor, se  [Använd valutakonvertering](#use-currency-conversion).</p> |
+   | **[!UICONTROL Show upward trend as]** | Här kan du ange om en uppåtgående trend för det här måttet är god (grön) eller dålig (röd). |
+   | **[!UICONTROL True value]** och **[!UICONTROL False value]** | Endast synlig för datatyperna Boolean-schema. Här kan du anpassa dimensionsobjektetiketten för `true` och `false` värden. |
 
-### Konvertera och visa valuta
+   {style="table-layout:auto"}
 
-Så här aktiverar du konvertering av en valuta för ett eller flera mått:
+## Använd valutakonvertering
 
-- Konfigurera din Customer Journey Analytics-anslutning så att den innehåller minst en händelsedatamängd som innehåller en valutakoddimension för varje händelse som innehåller ett valutamått. Denna valutakoddimension använder en alfabetisk valutakod som överensstämmer med [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard för att representera valutor. Dessa värden ska vara i versalformat, t.ex. USD för $, EUR för €, GBP för £.
+Valutakonverteringen i Customer Journey Analytics kan vara mycket värdefull för företag som är verksamma internationellt. Genom att eliminera komplexiteten i den manuella valutaomvandlingen kan valutaomräkningen i Customer Journey Analytics skapa enhetlighet och tydlighet i finansiella data. Valutakonverteringen håller reda på de dagliga historiska växelkurserna och bibehåller dessa dagskurser under en period på fyra år.
 
-   1. Välj dimensionen från en av dina datauppsättningar som innehåller valutakoderna. Exempel, [!UICONTROL Currency code].
-
-   1. Välj **[!UICONTROL Currency Code]** från listan med dimensioner.
-
-- Upprepa de här stegen om du har fler dimensioner som innehåller valutakoder som du vill använda för valutakonvertering.
+Om till exempel ett e-handelsföretag är verksamt i USA, Storbritannien och EU kan försäljningsdata automatiskt konverteras till USD, vilket gör det enkelt att jämföra och få en helhetsbild av resultatet.
 
 >[!NOTE]
 >
->Det mätvärde som du väljer för valutakonvertering måste ha en numerisk typ (Double, Long, Integer, Short, Byte).
+>Innan du börjar konfigurera ett mätvärde för valutakonvertering bör du tänka på följande:
+>
+>* Det mätvärde som du väljer för valutakonvertering måste ha en numerisk typ (Double, Long, Integer, Short, Byte).
+>* Konfigurera din Customer Journey Analytics-anslutning så att den innehåller minst en händelsedatamängd som innehåller en valutakoddimension för varje händelse som innehåller ett valutamått. Denna valutakoddimension använder en alfabetisk valutakod som överensstämmer med [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard för att representera valutor. Dessa värden ska vara i versalformat, t.ex. USD för $, EUR för €, GBP för £.
+
+Så här avgör du hur valutor visas och konverteras för ett givet mätvärde:
+
+1. Börja konfigurera måttet som du vill använda valuta för som format, enligt beskrivningen ovan, i [Konfigurera formatinställningar för ett mätvärde](#configure-format-settings-for-a-metric).
+
+1. Markera måttet och gör följande val i dialogrutan [!UICONTROL **Format**] till höger på sidan:
+
+   * I [!UICONTROL **Format**] fält, markera [!UICONTROL **Valuta**].
+
+   * I [!UICONTROL **Decimaler**] väljer du antalet decimaler som måttet ska visa.
+
+     Det här alternativet är bara tillgängligt om måttet har en numerisk typ av Double.
+
+   * Välj [!UICONTROL **Konvertera valuta**] alternativ.
+
+   * I [!UICONTROL **Välj valutakoddimension**] väljer du den dimension som representerar den valuta som du konverterar från (den valuta som dina data baseras på). Välj till exempel en dimension som kallas [!UICONTROL **Valutakod**].
+
+     Om du inte har någon dimension i ditt aktuella dataschema som innehåller ett valutakodfält kan du skapa ett nytt valutakodfält med [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html), eller [Härledda fält](/help/data-views/derived-fields/derived-fields.md). Data Prep är endast lämpligt för nya implementeringar eftersom det bara är på framåtgående basis. Beroende på en organisations inställningar kan Data Distiller och härledda fält användas för att komma åt valutakodvärden historiskt.
+
+   * I [!UICONTROL **Konvertera och visa valuta i**] väljer du i vilken valuta du vill att data ska konverteras.
+
+1. Upprepa de här stegen om du vill tillämpa valutakonvertering på ytterligare mått.
 
 
-Så här definierar du hur du konverterar och visar en valuta för ett mätresultat:
-
-1. Ange antalet **[!UICONTROL Decimal places]**.
-
-1. Välj **[!UICONTROL Convert Concurrency]**.
-
-1. Välj lämplig dimension i listan med dimensioner som innehåller valutakodfältet.
-
-1. Välj en valuta från **[!UICONTROL Convert and display currency in]** lista.
 
 ### Vanliga frågor
 
 +++ Hur genomförs valutakonvertering?
 
 Vid rapporttiden konverteras värdet för måttet och den ursprungliga valutakoden till USD och konverteras sedan till den valuta som konfigurerats för visning. För denna konvertering används de dagliga valutakurserna som gäller vid tidpunkten för händelsen.
-
-+++
-
-
-+++ Hur långt tillbaka bibehålls dagliga konverteringsgrader?
-
-De dagliga omräkningskurserna bibehålls under de senaste fyra åren.
-
-+++
-
-
-+++ Vad händer om jag inte har ett valutakodfält som en del av mitt aktuella dataschema?
-
-Det finns flera alternativ för att skapa ett nytt valutakodfält, bland annat Datapreposition, Data Distiller och Härledda fält. Data Prep skulle vara idealiskt för nya implementeringar eftersom det bara skulle vara på frammarsch-basis. Beroende på en organisations inställningar kan Data Distiller och härledda fält användas för att få åtkomst till valutakodvärden historiskt.
 
 +++
 
