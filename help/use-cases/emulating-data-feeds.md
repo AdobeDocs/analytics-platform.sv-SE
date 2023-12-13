@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
+source-git-commit: b41adb3f3fa4abbfa7be491e5a1fbf81e1623598
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2552'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Baserat på implementeringen lagras data på träffnivå som traditionellt samla
 | cust_visid | identityMap | object | Kundbesökaren I.D |
 | cust_visid | endUserID:n._experience.acustomid.id | object | Kundens besökar-ID. |
 | cust_visid | endUserID:n._experience.acustomid.primär | boolesk | Kundbesökarens ID-namnområdeskod. |
-| cust_visid | endUserID:n._experience.acustomid.namespace.code | Används tillsammans med visid_low för att unikt identifiera kundbesöks-ID. |
+| cust_visid | endUserID:n._experience.acustomid.namespace.code | string | Används tillsammans med visid_low för att unikt identifiera kundbesöks-ID. |
 | geo\_* | placeContext.geo.* | sträng, tal | Geolokaliseringsdata, som land, region, stad och andra |
 | besök_sidnummer | _experience.analytics.session.depth | tal | En variabel som används i dimensionen Träff. Värdet ökar med 1 för varje träff som användaren skapar och återställs efter varje besök. |
 | event_list | commerce.purchasing, commerce.productViews, commerce.productListOpen, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Standardhandel och anpassade händelser som utlöses vid träffen. |
