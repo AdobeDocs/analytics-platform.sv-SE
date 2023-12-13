@@ -5,258 +5,127 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
+source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2551'
 ht-degree: 0%
 
 ---
 
 # Emulera funktioner för datafeed
 
-Adobe Analytics dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. I det här användningsexemplet beskrivs hur du hämtar liknande typer av rådata från Experience Platform, för användning på andra plattformar utanför Adobe och efter din organisations gottfinnande.
-
-## Förutsättningar
-
-Kontrollera att du uppfyller alla följande krav innan du använder de funktioner som beskrivs i det här fallet:
-
-* En fungerande implementering som skickar online- och offlinedata till Experience Platform Data Lake.
-* Tillgång till Query Service, som paketeras som en del av plattformsbaserade program eller Data Distiller-tillägget. Se [Paket för frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) för mer information.
-* Tillgång till funktionen Exportera datauppsättningar, som är tillgänglig för kunder som har köpt Real-Time CDP Prime- eller Ultimate-paketet, Adobe Journey Optimizer eller Customer Journey Analytics. Se [Exportera datauppsättningar till molnlagringsmål](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en) för mer information.
-* En eller flera destinationer (till exempel Amazon S3, Google Cloud-lagring) som konfigurerats för att exportera rådata från din datafeed.
+Adobe Analytics dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. I det här användningsexemplet beskrivs hur du hämtar liknande typer av rådata från Experience Platform, så att du kan använda data på andra plattformar, verktyg utanför Adobe och efter din organisations gottfinnande.
 
 ## Introduktion
 
 Emulering av en datafeed från Adobe Analytics innefattar:
 
-* definiera en **schemalagd fråga** som genererar data för din datafeed som en utdatauppsättning, med **Frågetjänst**.
+* definiera en **schemalagd fråga** som genererar data för din datafeed som en utdatauppsättning ![utdatamängd](assets/output-dataset.svg), använda **Frågetjänst**.
 * definiera en **schemalagd datauppsättningsexport** som exporterar utdata till ett molnlagringsmål, med **Datauppsättningsexport**.
 
-
 ![Datafeed](assets/data-feed.svg)
+
+
+## Förutsättningar
+
+Kontrollera att du uppfyller alla följande krav innan du använder de funktioner som beskrivs i det här fallet:
+
+* En fungerande implementering som samlar in data i Experience Platform datarö.
+* Tillgång till tillägget Data Distiller för att säkerställa att du har rätt att köra gruppfrågor. Se [Paket för frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) för mer information.
+* Tillgång till funktionen Exportera datauppsättningar, som är tillgänglig när du har köpt Real-Time CDP Prime- eller Ultimate-paketet, Adobe Journey Optimizer eller Customer Journey Analytics. Se [Exportera datauppsättningar till molnlagringsmål](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en) för mer information.
+* En eller flera destinationer (till exempel Amazon S3, Google Cloud-lagring) som konfigurerats för att exportera rådata från din datafeed.
 
 
 ## Frågetjänst
 
 Med Experience Platform Query Service kan du söka efter och ansluta till alla datauppsättningar i Experience Platform Data Lake som om det vore en databastabell. Sedan kan du samla in resultaten som en ny datauppsättning och använda den för vidare rapportering eller för export.
 
-Du använder tjänsten Query Service [användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), a [klient ansluten via protokollet PostgresSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en), eller [RESTful API:er](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) för att skapa och schemalägga frågor som samlar in data för din datafeed.
+Du använder tjänsten Query Service [användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), a [klienten ansluten via protokollet PostgresQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en), eller [RESTful API:er](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) för att skapa och schemalägga frågor som samlar in data för din datafeed.
 
 ### Skapa fråga
 
-Du kan använda alla funktioner i ANSI SQL-standard för SELECT-satser och andra begränsade kommandon för att skapa och köra frågor som genererar data för din datafeed. Se [SQL-syntax](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) för mer information. Utöver denna SQL-syntax stöder Adobe:
+Du kan använda all funktionalitet som finns i ANSI SQL för SELECT-satser och andra begränsade kommandon för att skapa och köra frågor som genererar data för din datafeed. Se [SQL-syntax](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) för mer information. Utöver denna SQL-syntax stöder Adobe:
 
-* fördefinierad [Adobe-definierade funktioner (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) som kan utföra vanliga affärsrelaterade uppgifter på händelsedata som lagras i Experience Platform Data Lake, inklusive funktioner för [Yrkesställning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=en) och [Attribut](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en),
+* fördefinierad [Adobe-definierade funktioner (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) som kan utföra vanliga affärsrelaterade uppgifter på händelsedata som lagras i Experience Platform, inklusive funktioner för [Yrkesställning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=en) och [Attribut](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en),
 * inbyggda [Spark SQL-funktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en),
 * [metadata PostgreSQL-kommandon](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [förberedda programsatser](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
 
-#### Exempel
-
-Några exempel på frågor som samlar in data för dina dataflöden visas nedan. De här exemplen använder `demo_system_event_dataset_for_website_global_v1_1` som exempelupplevelsehändelsedatamängd som innehåller data som samlats in från kunder som interagerar med webbplatsen.
-
-+++De fem viktigaste produkterna
-
-*Vilka är de fem främsta produkterna på webbplatsen?*
-
-```sql
-select productListItems.name, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-group  by productListItems.name
-order  by 2 desc
-limit 5;
-```
-
-+++
-
-+++Produktinteraktionstru
-
-*Vilka är de olika produktinteraktionerna på webbplatsen?*
-
-```sql
-select eventType, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType is not null
-and    eventType <> ''
-group  by eventType;
-```
-
-+++
-
-+++Vad gör människor?
-
-*Vad gör folk på webbplatsen innan de kommer till sidan&quot;Avbryt tjänst&quot; som den tredje sidan i en session?*
-
-Den här frågan använder de Adobe-definierade funktionerna `SESS_TIMEOUT` och `NEXT`.
-
-* The `SESS_TIMEOUT()` återger de besöksgrupperingar som hittats med Adobe Analytics. Den utför en liknande tidsbaserad gruppering, men med anpassningsbara parametrar.
-* `NEXT()` och `PREVIOUS()` hjälper er att förstå hur kunderna navigerar på er webbplats.
-
-```sql
-SELECT
-  webPage,
-  webPage_2,
-  webPage_3,
-  webPage_4,
-  count(*) journeys
-FROM
-  (
-      SELECT
-        webPage,
-        NEXT(webPage, 1, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_2,
-        NEXT(webPage, 2, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_3,
-        NEXT(webPage, 3, true)
-           OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_4,
-        session.depth AS SessionPageDepth
-      FROM (
-            select a._sampleorg.identification.core.ecid as ecid,
-                   a.timestamp,
-                   web.webPageDetails.name as webPage,
-                    SESS_TIMEOUT(timestamp, 60 * 30)
-                       OVER (PARTITION BY a._sampleorg.identification.core.ecid
-                             ORDER BY timestamp
-                             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-                  AS session
-            from   demo_system_event_dataset_for_website_global_v1_1 a
-            where  a._sampleorg.identification.core.ecid in (
-                select b._sampleorg.identification.core.ecid
-                from   demo_system_event_dataset_for_website_global_v1_1 b
-                where  b.web.webPageDetails.name = 'Cancel Service'
-            )
-        )
-)
-WHERE SessionPageDepth=1
-and   webpage_3 = 'Cancel Service'
-GROUP BY webPage, webPage_2, webPage_3, webPage_4
-ORDER BY journeys DESC
-LIMIT 10;
-```
-
-+++
-
-+++Hur mycket tid
-
-*Hur lång tid har du innan en besökare ringer callcentret efter att ha besökt sidan Avbryt tjänst?*
-
-Om du vill svara på den här typen av frågor använder du `TIME_BETWEEN_NEXT_MATCH()` Funktion som definieras av Adobe. Tiden mellan föregående och nästa matchningsfunktioner ger en ny dimension som mäter den tid som har gått sedan en viss incident.
-
-```sql
-select * from (
-       select _sampleorg.identification.core.ecid as ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-where r.webPage = 'Cancel Service'
-limit 15;
-```
-
-+++
-
-+++Vad är resultatet?
-
-*Vad händer om kunderna ringer callcentret?*
-
-För den här frågan `demo_system_event_dataset_for_website_global_v1_1` datauppsättningen med ett exempel `demo_system_event_dataset_for_call_center_global_v1_1` datauppsättning som innehåller kundtjänstinteraktioner.
-
-```sql
-select distinct r.*,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callFeeling,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callTopic,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled
-from (
-       select _sampleorg.identification.core.ecid ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-, demo_system_event_dataset_for_call_center_global_v1_1 c
-where r.ecid = c._sampleorg.identification.core.ecid
-and r.webPage = 'Cancel Service'
-and c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled IN (true,false)
-and c._sampleorg.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi')
-limit 15;
-```
-
-+++
-
-+++Marketing Channel Engagement (Adobe Analytics-data)
-
-*Vad är engagemanget i alla marknadsföringskanaler för italiensk webbtrafik?*
-
-I det här exemplet används den datauppsättning som skapas automatiskt av Adobe Analytics-källkopplingen, till exempel `demo_data_sample_org_midvalues`.
-
-```sql
-select 
-    channel.typeAtSource, count(*) 
-from 
-    demo_data_sample_org_midvalues 
-where 
-    (channel.typeAtSource IS NOT NULL
-and
-    web.webPageDetails.URL LIKE '%/it/it/%')
-group by 
-    channel.typeAtSource
-order by 2 desc;
-```
-
-+++
-
-Fler (avancerade) exempelfrågor finns på [övergiven surfning](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en), [attribueringsanalys](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en), [startsfiltrering](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)och andra exempel i Query Service Guide.
-
-
 #### Identiteter
 
-I Experience Platform finns olika identiteter. Kontrollera att du frågar identiteter korrekt. I exemplen ovan definieras ECID som en del av ett huvudobjekt, som i sin tur är en del av ett identifieringsobjekt, som båda läggs till i schemat med hjälp av en Experience Event Core-fältgrupp (till exempel: `_sampleorg.identification.core.ecid`). ECID:n kan ordnas på olika sätt i dina scheman.
+I Experience Platform finns olika identiteter. När du skapar dina frågor måste du kontrollera att du frågar identiteter korrekt.
+
+Du hittar ofta identiteter i en separat fältgrupp. I en implementering av ECID (`ecid`) kan definieras som en del av en fältgrupp med en `core` -objekt, som i sin tur är en del av ett `identification` -objekt. (till exempel: `_sampleorg.identification.core.ecid`). ECID:n kan ordnas på olika sätt i dina scheman.
 
 Du kan också använda `identityMap` för att fråga efter identiteter. Det här objektet är av typen `Map` och använder [kapslad datastruktur](#nested-data-structure).
 
-För data som har importerats med Adobe Analytics källanslutning kan det finnas flera tillgängliga identiteter. Den primära identifieraren beror på om det finns ett ECID eller AAID. Se [Primära identifierare i Adobe Analytics-data](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#how-the-analytics-source-treats-identities) och [AAID, ECID, AACUSTOMID och Analytics-källkopplingen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=en) för mer information
 
 #### Datautmatningskolumner
 
-Vilka fält (kolumner) du kan använda i frågan beror på schemadefinitionen som datamängderna baseras på. Se till att du förstår schemat som ligger till grund för datauppsättningen.
+Vilka XDM-fält du kan använda i frågan beror på schemadefinitionen som datamängderna baseras på. Se till att du förstår schemat som ligger till grund för datauppsättningen.
 
-I en del av [exempelfrågor](#examples) du frågade efter *sidnamn*.
+För att underlätta mappningen mellan kolumnerna för dataflöde och XDM-fälten bör du överväga att ta med [Adobe Analytics ExperienceEvent-mall](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) fältgrupp i ditt händelseschema för upplevelser. Se [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) och mer specifikt [Schemafältgrupper för Adobe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+
+Om du till exempel vill använda *sidnamn* som en del av ditt dataflöde:
 
 * I Adobe Analytics Data Feed&#39;s UI väljer du **[!UICONTROL pagename]** som den kolumn som ska läggas till i dataflödesdefinitionen.
-* I frågetjänsten inkluderar du `web.webPageDetails.name` från `demo_system_event_dataset_for_website_global_v1_1` datauppsättning (baserat på **Demo System - händelseschema för webbplats (Gobal v1.1)** händelseschema) i din fråga. Se [Schemafältgrupp för webbinformation](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) för mer information.
+* I frågetjänsten inkluderar du `web.webPageDetails.name` från `sample_event_dataset_for_website_global_v1_1` datauppsättning (baserat på **Exempel på händelseschema för webbplats (Global v1.1)** händelseschema) i din fråga. Se [Schemafältgrupp för webbinformation](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) för mer information.
 
-Mer information om mappningen mellan tidigare Adobe Analytics-datakolumner och XDM-fält i händelsedatamängden och det underliggande schemat finns i [Mappning av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) och [Schemafältgruppen Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) för mer information.
+Mer information om mappningen mellan tidigare Adobe Analytics-dataflödeskolumner och XDM-fält i händelsedatamängden och det underliggande schemat finns i [Mappning av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) och [Schemafältgruppen Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) för mer information.
 
-Dessutom kan den information som automatiskt samlas in av Experience Platform Web SDK (utanför rutan) också vara relevant för att identifiera kolumner för din fråga. Se [Automatiskt insamlad information](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) för mer information.
+Dessutom har [automatiskt insamlade uppgifter från Experience Platform Web SDK (utanför paketet)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) kan vara relevant för att identifiera kolumner för din fråga.
 
+#### Data och identifiering på träffnivå
+
+Baserat på implementeringen lagras data på träffnivå som traditionellt samlats in i Adobe Analytics som tidsstämplade händelsedata i Experience Platform. Följande tabell extraheras från [Mappning av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) och visar exempel på hur du mappar träffnivåspecifika Adobe Analytics Data Feed-kolumner med motsvarande XDM-fält i dina frågor. Tabellen visar också exempel på hur träffar, besök och besökare identifieras med hjälp av XDM-fält.
+
+| Datafeedkolumn | XDM-fält | Typ | Beskrivning |
+|---|---|---|---|
+| hitid_high + hitid_low | _id | string | En unik identifierare som identifierar en träff. |
+| hitid_low | _id | string | Används tillsammans med hitid_high för att unikt identifiera en träff. |
+| hitid_high | _id | string | Används tillsammans med hitid_high för att unikt identifiera en träff. |
+| hit_time_gmt | receiveTimestamp | string | Tidsstämpeln för träffen, baserad på Unix-tid. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Tidsstämpel för besökarens första träff i Unix-tid. |
+| cust_hit_time_gmt | tidsstämpel | string | Detta används endast i tidsstämpelaktiverade datauppsättningar. Det här är den tidsstämpel som skickas med den, baserat på Unix-tid. |
+| visid_high + visid_low | identityMap | object | En unik identifierare för ett besök. |
+| visid_high + visid_low | endUserID:n._experience.aaid.id | string | En unik identifierare för ett besök. |
+| visid_high | endUserID:n._experience.aaid.primär | boolesk | Används tillsammans med visid_low för att unikt identifiera ett besök. |
+| visid_high | endUserID:n._experience.aaid.namespace.code | string | Används tillsammans med visid_low för att unikt identifiera ett besök. |
+| visid_low | identityMap | object | Används tillsammans med visid_high för att unikt identifiera ett besök. |
+| cust_visid | identityMap | object | Kundbesökaren I.D |
+| cust_visid | endUserID:n._experience.acustomid.id | object | Kundens besökar-ID. |
+| cust_visid | endUserID:n._experience.acustomid.primär | boolesk | Kundbesökarens ID-namnområdeskod. |
+| cust_visid | endUserID:n._experience.acustomid.namespace.code | Används tillsammans med visid_low för att unikt identifiera kundbesöks-ID. |
+| geo\_* | placeContext.geo.* | sträng, tal | Geolokaliseringsdata, som land, region, stad och andra |
+| besök_sidnummer | _experience.analytics.session.depth | tal | En variabel som används i dimensionen Träff. Värdet ökar med 1 för varje träff som användaren skapar och återställs efter varje besök. |
+| event_list | commerce.purchasing, commerce.productViews, commerce.productListOpen, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Standardhandel och anpassade händelser som utlöses vid träffen. |
+| page_event | web.webInteraction.type | string | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, slutlänk eller anpassad länk som klickats). |
+| page_event | web.webInteraction.linkClicks.value | tal | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, slutlänk eller anpassad länk som klickats). |
+| page_event_var_1 | web.webInteraction.URL | string | En variabel som bara används för bildbegäran för länkspårning. Den här variabeln innehåller URL:en för den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickat på. |
+| page_event_var_2 | web.webInteraction.name | string | En variabel som bara används för bildbegäran för länkspårning. Här visas länkens egna namn, om det har angetts. |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Det numeriska ID:t som representerar referenstypen för besökarens allra första referent. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | heltal | Tidsstämpel för besökarens första träff i Unix-tid. |
+| paid_search | search.isPaid | boolesk | En flagga som anges om träffen matchar betalsökningsidentifiering. |
+| ref_type | web.webReferrertype | string | Ett numeriskt ID som representerar typen av referens för träffen. |
+
+#### Bokför kolumner
+
+Adobe Analytics Data Feeds använder begreppet kolumner med en `post_` -prefix, som är kolumner som innehåller data efter bearbetning. Se [Vanliga frågor om dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post) för mer information.
+
+Data som samlas in i datauppsättningar via Experience Platform Edge Network (Web SDK, Mobile SDK, Server API) har inget koncept `post_` fält, vilket förklarar varför `post_` prefix och *ej* `post_` Kolumner för prefix-datafeed i analysfältet mappas till samma XDM-fält. Till exempel båda `page_url` och `post_page_url` dataflödeskolumner mappas till samma `web.webPageDetails.URL` XDM-fält.
+
+Se [Jämför databehandling i Adobe Analytics och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en) för en översikt över skillnaden i databehandling.
+
+The `post_` när data samlas in i dataljön med prefix kräver det dock avancerade omformningar innan de kan användas i ett dataflöde. När du utför dessa avancerade omformningar i dina frågor måste du använda [Funktioner som definieras av Adobe](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) för sessioner, attribuering och deduplicering. Se [Exempel](#examples) om hur du använder dessa funktioner.
 
 #### Uppslag
 
-Om du vill söka efter data från andra datauppsättningar använder du SQL-standardfunktioner (WHERE-satsen, INNER JOIN, OUTER JOIN med flera). Se [Vad är resultatet?](#examples) -frågan i exemplen.
+Om du vill söka efter data från andra datauppsättningar använder du standardfunktionen för SQL (`WHERE` -sats, `INNER JOIN`, `OUTER JOIN`, med flera).
 
 #### Beräkningar
 
-Om du vill utföra beräkningar i fält (kolumner) använder du bara SQL-standardfunktionerna (till exempel `COUNT(*)` i [Produktinteraktionstru](#examples) i exemplen) eller [matematiska och statistiska operatorer och funktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) ingår i Spark SQL.
+Om du vill utföra beräkningar i fält (kolumner) använder du SQL-standardfunktionerna (till exempel `COUNT(*)` eller [matematiska och statistiska operatorer och funktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) ingår i Spark SQL. Dessutom [fönsterfunktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) har stöd för att uppdatera aggregeringar och returnera enstaka objekt för varje rad i en ordnad delmängd. Se [Exempel](#examples) om hur du använder dessa funktioner.
 
 #### Kapslad datastruktur
 
@@ -281,9 +150,7 @@ Scheman som datauppsättningarna baseras på innehåller ofta komplexa datatyper
 }
 ```
 
-Du kan använda [`explode()` eller andra arrayfunktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) från Spark SQL för att komma till data i en kapslad datastruktur.
-
-Exempel:
+Du kan använda [`explode()` eller andra arrayfunktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) från Spark SQL för att komma till data i en kapslad datastruktur, till exempel:
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -297,18 +164,29 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 Se [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en) för mer information.
 
+
+#### Exempel
+
+Exempelfrågor som använder data från datauppsättningar i datavjön på Experience Platform, utnyttjar de extra funktionerna i Adobe Defined Function och/eller Spark SQL, och som skulle ge liknande resultat som en likvärdig Adobe Analytics datafeed, finns i
+
+* [övergiven surfning](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
+* [attribueringsanalys](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
+* [startsfiltrering](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* och andra exempel på hur du kan använda dem i guiden för frågetjänsten.
+
+
 ### Schemaläggningsfråga
 
-Du schemalägger frågan för att se till att den körs och att resultaten genereras enligt det önskade intervallet. När du schemalägger frågan definierar du en utdatamängd.
+Du schemalägger frågan för att se till att den körs och att resultaten genereras enligt det önskade intervallet.
 
 #### Använda Frågeredigeraren
 
-Du kan schemalägga en fråga med Frågeredigeraren. När du definierar ett schema för en fråga kan du definiera utdatamängden. Se [Frågescheman](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) för mer information.
+Du kan schemalägga en fråga med Frågeredigeraren. När du schemalägger frågan definierar du en utdatamängd. Se [Frågescheman](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) för mer information.
 
 
 #### Använda API för frågetjänst
 
-Du kan också använda RESTful API:er för att definiera en fråga och ett schema för frågan. Se [API-guide för frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en_) för mer information.
+Du kan också använda RESTful API:er för att definiera en fråga och ett schema för frågan. Se [API-guide för frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) för mer information.
 Se till att du definierar utdata som en del av det valfria `ctasParameters` egenskap när frågan skapas ([Skapa en fråga](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) eller när schemat skapas för en fråga ([Skapa en schemalagd fråga](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
 
 
