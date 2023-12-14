@@ -4,10 +4,10 @@ description: Ett härlett fält anger ändringar av schemafält och/eller standa
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
+source-git-commit: db61abfda71a26e4fae7134dfbb2f637b77e1e8c
 workflow-type: tm+mt
-source-wordcount: '5382'
-ht-degree: 4%
+source-wordcount: '5524'
+ht-degree: 3%
 
 ---
 
@@ -473,7 +473,7 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 
 **Aktuell rapport**
 
-| [!DNL Hotel ID] | Produktvisningar |
+| [!DNL Hotel ID] | Produktvyer |
 |---|---:|
 | [!DNL SLC123] | 200 |
 | [!DNL LX342] | 198 |
@@ -485,7 +485,7 @@ Du samlar in [!DNL Hotel ID] i en dimension men vill skapa en [!DNL Hotel Name] 
 
 **Önskad rapport**
 
-| [!DNL Hotel Name] | Produktvisningar |
+| [!DNL Hotel Name] | Produktvyer |
 |----|----:|
 | [!DNL SLC Downtown] | 200 |
 | [!DNL LA Airport] | 198 |
@@ -792,7 +792,7 @@ Du vill konvertera alla insamlade produktnamn till gemener för korrekt rapporte
 
 ### Data före {#lowercase-uc-databefore}
 
-| Samlade produktnamn | Produktvisningar |
+| Samlade produktnamn | Produktvyer |
 |---|---:|
 | Tennisracket | 35 |
 | Tennis Racket | 33 |
@@ -812,7 +812,7 @@ Du definierar en `Product Names` härlett fält. Du använder [!UICONTROL LOWERC
 
 ### Data efter {#lowercase-uc-dataafter}
 
-| Produktnamn | Produktvisningar |
+| Produktnamn | Produktvyer |
 |---|---|
 | tennisracket | 89 |
 | baseboll | 37 |
@@ -1281,6 +1281,12 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 - Du kan ha högst 100 härledda fält per Customer Journey Analytics-anslutning.
 
 ## Mer information
+
+[`Trim`](#trim) och [`Lowercase`](#lowercase) är funktioner som redan finns i komponentinställningarna i [Datavyer](../component-settings/overview.md). Med hjälp av härledda fält kan du kombinera dessa funktioner för att göra mer komplex dataomvandling direkt i Customer Journey Analytics. Du kan till exempel använda `Lowercase` för att ta bort skiftlägeskänslighet i ett händelsefält och sedan använda [`Lookup`](#lookup) för att matcha det nya gemena fältet med en uppslagsdatauppsättning som bara har uppslagsnycklar i gemener. Eller så kan du använda `Trim` för att ta bort tecken innan du ställer in `Lookup` på det nya fältet.
+
+Stöd för sök- och profilfält i härledda fält gör att du kan omforma data baserat på händelseuppslag och profilattribut. Detta kan vara praktiskt i B2B-scenarier med kontonivådata i uppslags- eller profildatauppsättningar. Dessutom är det här stödet användbart för att hantera data i vanliga fält från sökdata (som kampanjinformation och erbjudandetyp) eller från profildata (som medlemsnivå och kontotyp).
+
+Mer bakgrundsinformation om härledda fält finns i:
 
 - [Making the Most Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 

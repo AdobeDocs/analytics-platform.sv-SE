@@ -3,10 +3,11 @@ title: Vanliga frågor om titlar
 description: Vanliga frågor och svar
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
+source-git-commit: 53d394feb7d1132ad6339bae0e980f32bfe2ee6f
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 2%
+source-wordcount: '1269'
+ht-degree: 1%
 
 ---
 
@@ -63,9 +64,9 @@ Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journe
 
 +++
 
-+++**Hur hanterar Stitching GDPR- och CCPA-begäranden?**
++++**Hur hanterar Stitching sekretessförfrågningar?**
 
-Adobe hanterar förfrågningar om GDPR och CCPA i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka in förfrågningar om dataåtkomst och borttagning. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
+Adobe hanterar förfrågningar om sekretess i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka in förfrågningar om dataåtkomst och borttagning. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
 
 +++
 
@@ -87,13 +88,13 @@ Var försiktig med &quot;personkomprimering&quot;, som inträffar när sammanfog
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Kategori** |
 | 2 | 2023-05-12 12:02 | 123 | Kategori | **Kategori** |
-| 3 | 2023-05-12 12:03 | 456 | Odefinierad | **Odefinierad** |
+| 3 | 2023-05-12 | 456 | Odefinierad | **Odefinierad** |
 | 4 | 2023-05-12 12:04 | 456 | - | **Odefinierad** |
-| 5 | 2023-05-12 12:05 | 789 | Odefinierad | **Odefinierad** |
-| 6 | 2023-05-12 12:06 | 012 | Odefinierad | **Odefinierad** |
-| 7 | 2023-05-12 12:07 | 012 | - | **Odefinierad** |
-| 8 | 2023-05-12 12:03 | 789 | Odefinierad | **Odefinierad** |
-| 9 | 2023-05-12 12:09 | 456 | - | **Odefinierad** |
+| 5 | 2023-05-12 | 789 | Odefinierad | **Odefinierad** |
+| 6 | 2023-05-12 | 012 | Odefinierad | **Odefinierad** |
+| 7 | 2023-05-12 | 012 | - | **Odefinierad** |
+| 8 | 2023-05-12 | 789 | Odefinierad | **Odefinierad** |
+| 9 | 2023-05-12 | 456 | - | **Odefinierad** |
 | 10 | 2023-05-12 12:02 | 123 | - | **Kategori** |
 | | | **4 enheter** | **2 personer**:<br/>Händelser 1, 4, 7, 9, 10 utelämnade | **2 personer**:<br/>Torsk, oautentiserad (komprimerad till en person) |
 
