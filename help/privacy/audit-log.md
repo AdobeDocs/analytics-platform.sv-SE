@@ -3,9 +3,9 @@ title: Granskningsloggar
 description: Lär dig hur du visar och hanterar Customer Journey Analytics granskningsloggar.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '735'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ I Customer Journey Analytics går du till **[!UICONTROL Tools]** > **[!UICONTROL
 
 Granskningsloggen för i dag och i går visas som standard.
 
-![Granskningsloggmarkeringar idag (14 oktober 2022) och i går (13 oktober 2022). ](assets/audit_ui.png)
+![Granskningsloggmarkeringar idag och i går. ](assets/audit_ui.png)
 
 Du kan välja vilka kolumner som ska visas genom att gå till kolumnväljaren längst upp till höger.
 
