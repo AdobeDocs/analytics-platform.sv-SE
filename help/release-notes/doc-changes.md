@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9b51a28ca2d387aabd3ffde651eed6c37d28baa0
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2725'
 ht-degree: 7%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **December 2023** | |
+| Guardrails | Lagt till artikellista Customer Journey Analytics [skyddsräcken](../admin/guardrails.md). |
 | Uppdateringar av valutakonvertering | Tydlig dokumentation om hur man [konfigurera valutakonvertering](/help/data-views/component-settings/format.md). |
 | Uppdateringar av dokumentationen för avvikelseidentifiering | Dokumentationen för avvikelseidentifiering fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [Analysidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) har flyttats direkt under Analysis Workspace.</li></ul> |
 | **Oktober 2023** | |

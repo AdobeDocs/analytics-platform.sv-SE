@@ -4,9 +4,9 @@ description: Konfigurera hur ett mått formateras.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 045037867063f6bb5a6be60132f8d7b1bb54917e
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
@@ -24,8 +24,6 @@ Du kan bestämma hur ett givet mätresultat ska visas genom att justera dess for
 1. Markera datavyn som innehåller komponenten vars formatinställning du vill konfigurera.
 
 1. Välj [!UICONTROL **Komponenter**] -fliken.
-
-   ![Fliken Komponenter](../assets/format-settings-component-tab.png)
 
 1. Markera komponenten som du vill konfigurera och expandera sedan [!UICONTROL **Format**] till höger på sidan.
 
