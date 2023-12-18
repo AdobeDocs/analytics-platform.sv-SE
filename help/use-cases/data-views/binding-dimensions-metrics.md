@@ -3,9 +3,9 @@ title: Använd bindningsdimensioner och mätvärden i Customer Journey Analytics
 description: Attributdimensioner till objektarrayer för komplex beständighetsanalys.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 15660e1560ef8b1be510c0103e0f4818f1019c3e
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Om du vill se intäkt per färg utan en bindande dimension, dimensionen `product
 | --- | --- |
 | neon orange | 2099 |
 
-Du kan gå till datavyhanteraren och binda produktfärg till produktnamn:
+Gå in på **[!UICONTROL Data views]** och binda [!DNL Product Color] dimension till [!DNL Product Name]:
 
 ![Bindningsdimension](../assets/binding-dimension.png)
 
@@ -251,7 +251,7 @@ Om du använt [!UICONTROL Most Recent] allokering med söktermsdimensionen tilld
 
 Det här exemplet innehåller bara en person, men många som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
 
-Du kan binda söktermer till produktnamn när sökningsmåttet finns för att korrekt tilldela söktermer intäkter.
+Du kan nu binda [!DNL Search Term] till [!DNL Product Name] när [!DNL Searches] Det finns ett mått som korrekt tilldelar söktermen intäkter.
 
 ![Bindningsmått](../assets/binding-metric.png)
 
@@ -259,9 +259,9 @@ I Analysis Workspace ser resultatet ut ungefär så här:
 
 | search_term | intäkt |
 | --- | --- |
-| boxingshandskar | $89.99 |
-| tennisracket | $34.99 |
-| skor | $79.99 |
+| boxingshandskar | 89,99 USD |
+| tennisracket | 34,99 USD |
+| skor | 79,99 USD |
 
 Customer Journey Analytics identifierar automatiskt relationen mellan den valda dimensionen och bindningsdimensionen. Om bindningsdimensionen finns i en objektmatris när den valda dimensionen är på en högre nivå, krävs ett bindningsmått. Ett bindningsmått fungerar som en utlösare för en bindningsdimension, så det binder sig bara till händelser där det finns ett bindningsmått. I ovanstående exempel innehåller sökresultatsidan alltid en sökterm och ett sökmått.
 
@@ -270,11 +270,11 @@ Om du ställer in söktermsdimensionen på den här beständiga modellen körs f
 * När söktermdimensionen är inställd kontrollerar du om det finns något produktnamn.
 * Om produktnamnet inte finns där, gör ingenting.
 * Om det finns ett produktnamn kontrollerar du om det finns något sökmått.
-* Om sökstatistiken inte finns där, gör ingenting.
-* Om sökstatistiken finns där binder du söktermen till alla produktnamn i den händelsen. Den kopierar sig själv till samma nivå som produktnamnet för händelsen. I det här exemplet behandlas det som product.search_term.
+* Om sökningsmåttet inte finns där, gör ingenting.
+* Om sökningsmåttet finns där binder du söktermen till alla produktnamn i den händelsen. Den kopierar sig själv till samma nivå som produktnamnet för händelsen. I det här exemplet behandlas det som product.search_term.
 * Om samma produktnamn visas i en efterföljande händelse överförs den bundna söktermen även till den händelsen.
 
-## Exempel 3: Bind söktermen för video till användarprofilen
+## Exempel 3: Bind söktermen video till användarprofilen
 
 Du kan binda en sökterm till en användarprofil så att persistensen mellan profiler förblir helt åtskild. Din organisation kör till exempel en direktuppspelningstjänst där ett övergripande konto kan ha flera profiler. Besökaren har en underordnad profil och en vuxenprofil.
 
@@ -337,19 +337,19 @@ Om du använder den senaste allokeringen med förfallodatum för person visas `"
 
 | Sökterm | Videon startar |
 | --- | --- |
-| gruppfilm | 2 |
+| grownup movie | 2 |
 | barnshow | 1 |
 
 Om du binder `search_term` till `ProfileID`, skulle varje profils sökningar isoleras till sin egen profil, vilket tillskrivs de rätta visar att de söker efter.
 
-![Besökarbindning](../assets/binding-visitor.png)
+![Besökarbindning](../assets/binding-profileid.png)
 
-Analysis Workspace attribuerar det andra avsnittet av Orangey korrekt till söktermen `"kids show"` utan att ta hänsyn till sökningar från andra profiler.
+Analysis Workspace skulle korrekt tilldela det andra avsnittet av Orangey söktermen `"kids show"` utan att beakta sökningar från andra profiler.
 
 | Sökterm | Videon startar |
 | --- | --- |
 | barnshow | 2 |
-| gruppfilm | 1 |
+| grownup movie | 1 |
 
 ## Exempel 4: Utvärdera webbläsarbeteende jämfört med sökbeteenden i en detaljhandelsinställning
 
@@ -421,17 +421,22 @@ Om beständighet anges till den senaste allokeringen utan någon bindande dimens
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
-| bläddra | 419.98 |
+| bläddra | 419,98 |
 
 Om beständighet anges med ursprunglig allokering utan en bindande dimension, fördelas alla 419,98 USD av intäkten på `search` sökmetod.
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
-| sök | 419.98 |
+| sök | 419,98 |
 
 Men om du binder `product_finding_method` I Cart Adds-måttet kopplas varje produkt till rätt sökmetod.
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
-| sök | 399.99 |
-| bläddra | 19.99 |
+| sök | 399,99 |
+| bläddra | 19,99 |
+
+
+>[!MORELIKETHIS]
+>
+>[Binda Dimensioner i datavyer](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=en) självstudie.
