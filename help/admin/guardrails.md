@@ -4,7 +4,7 @@ description: Läs om skyddsräckena för Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
+source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 5%
@@ -191,7 +191,7 @@ Se även Experience Platform [Guardsedningar för datainmatning](https://experie
 
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
-| Rader per rapport | 3 miljoner - 150 miljoner | Systemstyrt skyddsräcke | Maximalt antal rapporteringsrader per rapport. Värdet baseras på det licensierade paketet. |
+| Rader per rapport | 3 miljoner - 300 miljoner | Systemstyrt skyddsräcke | Maximalt antal rapporteringsrader per rapport. Värdet baseras på det licensierade paketet. |
 | Uppdelningar per tabell | 5 | Systemstyrt skyddsräcke | Maximalt antal uppdelningar per tabell. |
 | Mätvärden per tabell | 5 | Systemstyrt skyddsräcke | Maximalt antal mätvärden per tabell. |
 | Schemafrekvens | 1 | Systemstyrt skyddsräcke | Exporten kan schemaläggas en gång (1) om dagen eller längre (t.ex. en gång varannan dag eller en gång i veckan). |
