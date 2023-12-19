@@ -4,9 +4,9 @@ description: Vanliga frågor om den guidade analysen.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 2fe26bb906600a1987d9f4a07c5863030d52173a
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Vanliga frågor om den guidade analysen.
 
 +++**Hur kan vår organisation etableras för guidad analys?**
 
-Guidad analys är ett betalt tillägg till Customer Journey Analytics. Om du vill börja använda det här tillägget kontaktar du kontoteamet på Adobe.
+Guidad analys är en del av Adobe Product Analytics, ett betalt tillägg till Customer Journey Analytics. Om du vill börja använda det här tillägget kontaktar du kontoteamet på Adobe.
 
 +++
 
@@ -44,7 +44,7 @@ I den guidade analysen används termer som används oftare bland produktteamen. 
 | Guidad analysterm | Analysis Workspace term |
 | --- | --- |
 | Händelse | Mått |
-| Användare | Personer |
+| Användare | Folk |
 | Egenskap | Dimension |
 | Värde | Dimension |
 | Segment | Filter |
@@ -59,7 +59,7 @@ while [Analysis Workspace](../analysis-workspace/home.md) och för guidad analys
 
 * **Analysis Workspace är en upplevelse som bygger på flera dimensioner.** Tabeller består vanligtvis av dimensionella rader, medan kolumner vanligtvis är mätvärden. Du kan använda filter på både rader och kolumner för att få fram önskade data.
 
-* **Guidad analys är en händelsestyrd upplevelse.** Varje analys börjar med att välja händelser, sedan kan mått och filter läggas till för att förfina händelsedata.
+* **Guidad analys är en händelsestyrd och användarcentrerad upplevelse.** Varje analys börjar med att välja händelser, sedan kan mått och filter läggas till för att förfina händelsedata.
 
 ![Analysis Workspace och guidade analysvyer](assets/structure.png)
 
@@ -69,7 +69,7 @@ Titta på följande exempel där du fokuserar på data runt hemsidan på din web
 
   ![Dimension centrerad](assets/dimension-centered.png)
 
-* En typisk händelsestyrd strategi för guidad analys skulle vara&quot;Hur många användare har sett hemsidan?&quot;
+* En typisk händelse och användarcentrerad metod för guidad analys är&quot;Hur många användare har besökt vår hemsida?&quot;
 
   ![Händelsecentrerad](assets/event-centered.png)
 
