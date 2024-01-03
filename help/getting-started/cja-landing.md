@@ -4,10 +4,11 @@ description: Customer Journey Analytics landningssida.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 4754be1df196836bd44feb963c22749a3124c377
+role: User, Admin, Developer
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 7%
+source-wordcount: '299'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +46,7 @@ Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och of
     </ul> <p class="head"> <b>Adobe Experience Platform Resources</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
-     <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html" format="https" scope="external"> Självstudiekurser om Adobe Experience Platform</a> </li> 
+     <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html" format="https" scope="external"> Adobe Experience Platform Tutorials</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API-referens</a> </li> 
      <li><a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Dokumentation och utvecklarresurser</a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/analytics.html" format="https" scope="external"> Lathund om hur man importerar och använder data från traditionella Adobe Analytics

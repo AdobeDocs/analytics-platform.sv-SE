@@ -4,7 +4,8 @@ description: Ange hur en dimension eller ett mått fungerar vid rapportering.
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 1%

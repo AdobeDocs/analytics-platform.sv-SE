@@ -1,16 +1,17 @@
 ---
 description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att visa viktiga datapunkter i ett projekt.
-title: Sammanfattning av antal och förändring
+title: Sammanfattningsnummer och sammanfattning
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 3%
+source-wordcount: '396'
+ht-degree: 1%
 
 ---
 
-# Sammanfattning av antal och förändring
+# Sammanfattningsnummer och sammanfattning
 
 ## Visualisering av sammanfattningsnummer {#summary-number}
 

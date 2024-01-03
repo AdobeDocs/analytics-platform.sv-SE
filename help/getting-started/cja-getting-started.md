@@ -4,10 +4,11 @@ description: Förstå de förutsättningar och det arbetsflöde som krävs för 
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 8d3517c86743434aed345bf06b3bd3345490b0ee
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 3%
+source-wordcount: '457'
+ht-degree: 2%
 
 ---
 

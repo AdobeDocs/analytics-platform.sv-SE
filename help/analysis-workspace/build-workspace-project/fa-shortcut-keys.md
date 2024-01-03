@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Så här använder du arbetsytans snabbtangenter
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-source-git-commit: 378098861bde949a2224a9b8c6376aa7b5e8ec27
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 5%
+source-wordcount: '299'
+ht-degree: 0%
 
 ---
 
@@ -28,14 +29,14 @@ Obs! `CTRL` = Windows och `command` = MAC
 | Gå till rutan Komponenter | Alt + Skift + 3 |
 | Komprimera/expandera alla paneler | alt + m |
 | Visa/dölj aktiv panel | alt + Ctrl + m |
-| Gå till nästa panel | Alt + Högertangent |
-| Gå till föregående panel | Alt + Vänsterpil |
+| Flytta till nästa panel | Alt + Högertangent |
+| Flytta till föregående panel | Alt + Vänsterpil |
 
 ## Analysåtgärder
 
 | Åtgärd | Genväg |
 |---|---|
-| Sök i vänster list | ctrl + / |
+| Söka i vänster ratt | ctrl + / |
 | Skapa en avisering | Ctrl (eller cmd) + Skift + a |
 | Skapa beräknat mått | Ctrl (eller cmd) + Skift + c |
 | Skapa ett datumintervall | Ctrl (eller cmd) + Skift + d |

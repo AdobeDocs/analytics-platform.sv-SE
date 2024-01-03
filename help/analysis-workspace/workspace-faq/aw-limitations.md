@@ -3,10 +3,11 @@ description: Läs om kända begränsningar i Adobe Analysis Workspace och dess t
 title: Kända begränsningar i Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -36,7 +37,7 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 
 * Beräknade mått kan inte användas i vissa visualiseringar. Se Visualiseringar ovan.
 * Beräknade mått kan inte användas i [!UICONTROL Attribution] eftersom beräknade värden i sig kan innehålla separata attribueringsmodeller.
-* Vissa komponenter och operatorer är inte tillgängliga om ett beräknat mått skapas från arbetsytan (till skillnad från om de skapas från [!UICONTROL Components > filters]). Exempel, [!UICONTROL IP Address].
+* Vissa komponenter och operatorer är inte tillgängliga om ett beräknat mått skapas från arbetsytan (till skillnad från om de skapas från [!UICONTROL Components > filters]). Till exempel: [!UICONTROL IP Address].
 
 ## Komponenter > Datumintervall
 

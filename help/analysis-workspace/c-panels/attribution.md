@@ -1,16 +1,17 @@
 ---
-title: Panelen Attribution
+title: Attributionspanelen
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 17%
+ht-degree: 16%
 
 ---
 
-# Panelen Attribution
+# Attributionspanelen
 
 The [!UICONTROL Attribution] är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Det är en funktion som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
 

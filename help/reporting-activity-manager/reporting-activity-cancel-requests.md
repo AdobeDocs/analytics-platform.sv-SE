@@ -4,9 +4,10 @@ description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1479'
 ht-degree: 0%
 
 ---
@@ -55,7 +56,7 @@ Du kan avbryta enskilda begäranden som förbrukar en stor del av rapporteringsk
 
    1. Välj bland följande alternativ:
 
-      | Alternativ |  -funktion |
+      | Alternativ | Funktion |
       |---------|----------|
       | [!UICONTROL **Användare &amp; projekt**] | Användare som är associerade med de valda förfrågningarna kommer tillfälligt att begränsas från att köra rapportförfrågningar för associerade projekt. |
       | [!UICONTROL **Användare**] | Användare som är associerade med de valda förfrågningarna hindras tillfälligt från att göra några rapportförfrågningar. |
@@ -96,7 +97,7 @@ Du kan avbryta alla begäranden som är kopplade till en eller flera användare.
 
    1. Välj bland följande alternativ:
 
-      | Alternativ |  -funktion |
+      | Alternativ | Funktion |
       |---------|----------|
       | [!UICONTROL **Användare &amp; projekt**] | De valda användarna kommer tillfälligt att hindras från att göra några rapportförfrågningar för de associerade projekten. <p>Det här är det minst restriktiva alternativet.</p> |
       | [!UICONTROL **Användare**] | De valda användarna kommer tillfälligt att hindras från att göra några rapportförfrågningar. |
@@ -137,7 +138,7 @@ Du kan avbryta alla begäranden som är kopplade till ett eller flera projekt. N
 
    1. Välj bland följande alternativ:
 
-      | Alternativ |  -funktion |
+      | Alternativ | Funktion |
       |---------|----------|
       | [!UICONTROL **Användare &amp; projekt**] | De valda projekten kommer tillfälligt att begränsas från alla rapportförfrågningar som görs av associerade användare.<p>Det här är det minst restriktiva alternativet.</p> |
       | [!UICONTROL **Användare**] | Användare som är associerade med de valda projekten kommer inte att kunna göra några rapportförfrågningar. |
@@ -193,7 +194,7 @@ Så här avbryter du begäranden per program:
 
    1. Välj bland följande alternativ:
 
-      | Alternativ |  -funktion |
+      | Alternativ | Funktion |
       |---------|----------|
       | [!UICONTROL **Användare &amp; projekt**] | De valda programmen kommer tillfälligt att begränsas från alla rapportförfrågningar som görs av associerade användare och projekt.<p>Det här är det minst restriktiva alternativet.</p> |
       | [!UICONTROL **Användare**] | Användare som är associerade med de valda programmen kommer inte att kunna göra några rapportförfrågningar. |

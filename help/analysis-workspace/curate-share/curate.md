@@ -4,10 +4,11 @@ keywords: Analysis Workspace kurser
 title: Kuratprojekt
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: f2f85db4b670f1c4b1f6bc0954a5549c793edf5a
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 1%
+source-wordcount: '487'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +21,7 @@ Med kurering kan du begränsa komponenterna (mått, mått, filter, datuminterval
 
 ## Använd projektstrukturering
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
+1. Klicka **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 De komponenter som används i projektet läggs automatiskt till.
 1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till [!UICONTROL Curate Components] fält.
 1. Klicka på **[!UICONTROL Done]**.
@@ -39,7 +40,7 @@ När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av
 
 Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra listen:
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
+1. Klicka **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 1. Klicka på **[!UICONTROL Remove Curation]**.
 1. Klicka på **[!UICONTROL Done]**.
 

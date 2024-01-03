@@ -4,9 +4,10 @@ description: Förklara hur du importerar och använder batchdata i Customer Jour
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---

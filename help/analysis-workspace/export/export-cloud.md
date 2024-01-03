@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 2%
+source-wordcount: '1974'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +60,7 @@ Så här exporterar du fullständiga tabeller från Analysis Workspace:
 
 1. I [!UICONTROL **Ny fullständig tabellexport**] anger du följande information:
 
-   | Fältnamn |  -funktion |
+   | Fältnamn | Funktion |
    |---------|----------|
    | Namn | Ange ett namn för exporten. Det här namnet visas i listan över exporter. |
    | Taggar | Du kan lägga till en befintlig tagg i exporten eller skapa en ny tagg och använda den. <p>Om du vill använda en befintlig tagg på exporten markerar du eventuella taggar i listrutan. Alla taggar i företaget kan användas<!-- double-check this -->.</p> <p>Om du vill skapa en ny tagg skriver du namnet på den nya taggen och trycker sedan på Retur.</p><p>Tänk på följande när du lägger till märkord i en export: <ul><li>Taggar som du använder kan filtreras eller sökas efter i exporttabellen.</li> <li>Taggar som används i ett projekt används inte automatiskt vid export av en fullständig tabell, vilket beskrivs i Konfigurera kolumner på exportsidan i [Hantera exporter](/help/components/exports/manage-exports.md). (Alternativt när [schemalägga ett fullständigt projekt för export](/help/analysis-workspace/export/t-schedule-report.md)används automatiskt alla taggar som används i projektet vid exporten.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
@@ -152,7 +153,7 @@ Se till att tabellerna, miljön och behörigheterna uppfyller följande krav:
 Följande funktioner stöds inte och tas automatiskt bort från export i fulltabell:
 
 * Procenttal
-* Totalt
+* Summor
 * Sökfiltrering
 * Statiska rader
 * Datumjustering
@@ -177,7 +178,7 @@ Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bor
    * Datumintervall
    * Mått
 * I tabellrader:
-   * Beräknade värden
+   * Beräknade mått
    * Mätvärden
    * Datumintervall
    * Filter
@@ -208,7 +209,7 @@ Om du tidigare använt Data Warehouse för att exportera Adobe Analytics-data ka
 | Funktion | Fullständig tabellexport i Customer Journey Analytics | DATA WAREHOUSE i ADOBE ANALYTICS |
 |---------|----------|---------|
 | Skapa en anpassad rapport | Ja | Ja |
-| Beräknade värden | Ja | Nej |
+| Beräknade mått | Ja | Nej |
 | Segment | Ja | Begränsad |
 | Mått | Gräns på 5 | Obegränsad |
 | Mätvärden | Gräns på 5 | Obegränsad |

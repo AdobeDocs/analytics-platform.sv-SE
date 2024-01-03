@@ -4,9 +4,10 @@ description: En datavy anger hur du vill tolka element i data i anslutningen Cus
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---

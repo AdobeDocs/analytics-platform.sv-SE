@@ -1,9 +1,10 @@
 ---
 title: Migrera data från Google Analytics till Customer Journey Analytics
-description: Lär dig det övergripande arbetsflödet om hur du flyttar data från Google Analytics till Adobe Experience Platform och visar rapporter i Customer Journey Analytics.
+description: Lär dig det övergripande arbetsflödet om hur du flyttar data från Google Analytics till Adobe Experience Platform och hur du visar rapporter i Customer Journey Analytics.
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Migrera data från Google Analytics till Customer Journey Analytics
 
-Om du inte är i Customer Journey Analytics tidigare är det möjligt att din organisation har befintliga data på en annan analysplattform, som Google Analytics. Du kan följa de här övergripande stegen för att flytta data till Adobe Experience Platform så att du kan visa rapporter i Customer Journey Analytics.
+Om du inte är i Customer Journey Analytics tidigare är det möjligt att din organisation har befintliga data på en annan Analytics-plattform, till exempel Google Analytics. Du kan följa de här övergripande stegen för att flytta data till Adobe Experience Platform så att du kan visa rapporter i Customer Journey Analytics.
 
 Arbetsflöden tillhandahålls för både historiska data och aktuell datainsamling. Du kan följa ett eller båda av dessa arbetsflöden, beroende på organisationens databehov.
 
@@ -30,7 +31,7 @@ Inmatning av aktuella (strömmande) data innebär att data skickas till Adobe Ex
 
 När du har importerat historiska data och/eller konfigurerat datainsamling till Adobe Experience Platform kan du [Skapa en anslutning](/help/connections/create-connection.md) så att Customer Journey Analytics kan referera till dessa data.
 
-Använd anslutningen för att skapa en eller flera [Datavyer](/help/data-views/create-dataview.md) för användning i Analysis Workspace.
+Använd anslutningen för att skapa en eller flera [Datavyer](/help/data-views/create-dataview.md) för Analysis Workspace.
 
 ## Skapa rapporter
 

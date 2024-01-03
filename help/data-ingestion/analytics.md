@@ -4,9 +4,10 @@ description: Förklara hur man importerar data från traditionella Adobe Analyti
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 >
 >- [Implementera Analytics med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en)
 >
->- [Implementera Analytics med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
 
 För att uppnå detta måste du:
 

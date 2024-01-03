@@ -4,9 +4,10 @@ description: Förklara hur du importerar och använder strömmande data i Custom
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1824'
 ht-degree: 0%
 
 ---

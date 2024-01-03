@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,8 @@ ht-degree: 0%
 
 Om du vill visa hur Customer Journey Analytics används kan du använda flera olika metoder:
 
-* Lägg till händelsedataraderna för varje anslutning. Se [Beräkna anslutningsstorlek](#estimate size) nedan. Det här är ett enkelt sätt att se data för händelseraden, per anslutning, för en viss tidsstämpel.
+* Lägg till händelsedataraderna för varje anslutning. Se [Beräkna anslutningsstorlek](#estimate-connection-size) nedan. Det här är ett enkelt sätt att se data för händelseraden, per anslutning, för en viss tidsstämpel.
+
 * Se din användning på tre sätt, som beskrivs närmare nedan:
    * Använd Analysis Workspace för att rapportera om förra månadens händelser.
    * Använd Report Builder för att rapportera händelser förra månaden.

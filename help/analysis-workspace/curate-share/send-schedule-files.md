@@ -3,7 +3,8 @@ description: Läs mer om menyalternativen för Dela i arbetsyta.
 title: Dela-menyn
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 7%

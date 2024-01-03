@@ -1,16 +1,17 @@
 ---
 description: Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
-title: Liggande stapeldiagram och staplat liggande stapeldiagram
+title: Vågrätt streck och vågrätt streck staplade
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 11%
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
 
-# Liggande stapeldiagram och staplat liggande stapeldiagram
+# Vågrätt streck och vågrätt streck staplade
 
 ## Vågrätt streck {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
 

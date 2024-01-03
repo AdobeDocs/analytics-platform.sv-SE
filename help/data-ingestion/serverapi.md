@@ -4,9 +4,10 @@ description: Förklara hur data importeras till Customer Journey Analytics via A
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2136'
 ht-degree: 0%
 
 ---

@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 1%
+source-wordcount: '1091'
+ht-degree: 0%
 
 ---
 
@@ -157,7 +157,7 @@ I följande tabell visas exempel på datumuttryck.
 | tm-1d | Sista dagen i föregående månad |
 | td-52w | Samma dag, för 52 veckor sedan |
 | tm-11m-1d | Sista dagen i samma månad förra året |
-| “2020-09-06” | 9 sept 2020 |
+| &quot;2020-09-06&quot; | 9 sept 2020 |
 
 ## Datumintervall från cell
 

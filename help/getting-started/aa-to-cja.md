@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Exempel på identiteter kan vara ett kund-ID, konto-ID eller e-post-ID. Oavsett 
 * ID:t innehåller inte PII. Hash-koda allt som kan vara känsligt.
 * ID använder samma format för alla källor (samma längd, samma hash-metod osv.)
 
-I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje datarad, men det gör en sekundär identitet. I det här fallet kan flerkanalsanalys (som tidigare kallades&quot;fältbaserad namngivning&quot;) användas för att överbrygga klyftan mellan rader när en kund bara identifieras med sitt ECID och när en identitet samlas in (till exempel när en kund autentiseras). [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)
+I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje datarad, men det gör en sekundär identitet. I det här fallet kan flerkanalsanalys (kallas även&quot;Stitching&quot;) användas för att överbrygga klyftan mellan rader när en kund endast identifieras med sitt ECID och när en identitet samlas in (till exempel när en kund autentiseras). [Läs mer](../stitching/overview.md).
 
 ### 2. Justera variablerna {#variables}
 

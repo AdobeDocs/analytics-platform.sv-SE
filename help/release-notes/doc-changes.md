@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9f48c2870cff0aac392de9b50c6acea9763553d7
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '2736'
 ht-degree: 7%
@@ -198,7 +198,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
-| 13 november 2020 | Nya ämnen om [Flerkanalsanalys](/help/cca/overview.md)som gör att du kan ändra inmatningen av en datauppsättnings person-ID och som möjliggör en sömlös kombination av flera datauppsättningar. |
+| 13 november 2020 | Nya ämnen om [Flerkanalsanalys](/help/stitching/overview.md)som gör att du kan ändra inmatningen av en datauppsättnings person-ID och som möjliggör en sömlös kombination av flera datauppsättningar. |
 | 13 november 2020 | Ett nytt användningsexempel på [importera callcenter och webbdata](/help/use-cases/cross-channel/call-center.md) lades till. |
 | 10 november 2020 | Ett avsnitt om konsekvenserna av att ta bort datakomponenter har lagts till i [Vanliga frågor](/help/getting-started/cja-faq.md). |
 | 2 november 2020 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) sida. |

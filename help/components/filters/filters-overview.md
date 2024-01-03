@@ -3,9 +3,10 @@ title: Översikt över filter
 description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 0%
 
 ---
@@ -82,7 +83,7 @@ Behållararkitekturen som används i Filter Builder definierar Person som den yt
 Personbehållaren innehåller alla besök och sidvisningar, mobilappsskärmar, digitalboxar eller konsolspel för personer inom en viss tidsperiod. I stort sett alla upplevelsehändelser som ingår i de datauppsättningar som du har definierat i din Customer Journey Analytics-anslutning. Ett filter på personnivå returnerar de sidvyer, mobilappar eller digitalboxskärmar som uppfyller villkoret. Dessutom kan samma person interagera med andra kanaler, både online och offline (och endast begränsat av definierade datumintervall). Som den mest väldefinierade behållaren returnerar rapporter som genereras på personbehållarnivå sidvisningar, mobilappskärmar med mera, för alla besök och gör att du kan generera en flerkanalsanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
 Personbehållare kan innehålla värden som baseras på en persons övergripande historik:
 
-- Dagar före första köp
+- Dagar före första köpet
 - Ursprunglig startsida eller startskärm för mobilapp
 - Ursprungliga referensdomäner
 
@@ -97,7 +98,7 @@ Sessionsbehållare innehåller värden som baseras på förekomst per session:
 
 - Sessionstyp
 - Inmatningssida
-- Återbesöksfrekvens
+- Returfrekvens
 - Deltagandemått
 - Linjärt allokerade mätvärden
 

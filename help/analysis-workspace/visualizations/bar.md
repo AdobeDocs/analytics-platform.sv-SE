@@ -1,16 +1,17 @@
 ---
 description: Streckvisualiseringen visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
-title: Stapeldiagram och staplat stapeldiagram
+title: Stolpstreck och stapel
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 6%
+source-wordcount: '119'
+ht-degree: 0%
 
 ---
 
-# Stapeldiagram och staplat stapeldiagram
+# Stolpstreck och stapel
 
 ## Liggande {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
 

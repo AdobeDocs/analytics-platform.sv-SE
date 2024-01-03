@@ -1,12 +1,13 @@
 ---
 description: Lär dig mer om exempel på hur du använder en kohortanalys.
 keywords: Analysis Workspace
-title: Användningsexempel på kohortanalyser
+title: Användningsexempel för kohortanalyser
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---

@@ -1,16 +1,17 @@
 ---
-title: Spridningsdiagram
+title: Scatterplot
 description: En visualisering som visar relationen mellan upp till tre mätvärden.
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Spridningsdiagram
+# Scatterplot
 
 Spridningsvisningen visar förhållandet mellan dimensionsobjekt och upp till tre mätvärden. Den kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
 

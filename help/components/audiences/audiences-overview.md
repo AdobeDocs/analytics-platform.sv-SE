@@ -3,10 +3,11 @@ title: Läs mer om publiceringsöversikten för Customer Journey Analytics Publi
 description: Läs mer om begreppet målgruppspublicering i Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 1%
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +25,7 @@ Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärde
 
 De målgrupper du skapar i Customer Journey Analytics behöver inte baseras på datauppsättningar som är aktiverade för profilen. Du kan importera historiska data till Experience Platform utan att aktivera associerade datauppsättningar och scheman för profilen. Använd sedan dessa datauppsättningar för att identifiera relevanta målgrupper i Customer Journey Analytics och publicera dessa målgrupper i kundprofilen i realtid i Experience Platform för aktiveringsändamål.
 
-## Viktiga termer
+## Nyckelterminologi
 
 **Målgrupp**: En uppsättning eller en lista med identiteter som har både ett namnutrymme och ett specifikt ID relaterat till det namnutrymmet. Publiken är flyttbar från Adobe Experience Platform och program som finns ovanpå det (till exempel Customer Journey Analytics). Publiker kan innehålla blandade namnutrymmen.
 

@@ -4,10 +4,11 @@ description: Bestäm hur eller om dimensionsvärdena ska behållas från en hän
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 6%
+source-wordcount: '841'
+ht-degree: 5%
 
 ---
 
@@ -61,7 +62,7 @@ Information om tillgängliga allokeringsinställningar.
   | Dimension | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 |
   | --- | --- | --- | --- | --- | --- |
   | Datamängdsvärden | A | B | C |  | A |
-  | Alla allokeringar | A | A,B | A, B, C | A, B, C | A, B, C |
+  | Alla allokeringar | A | A,B | A,B,C | A,B,C | A,B,C |
 
 * **[!UICONTROL First Known]** och **[!UICONTROL Last Known]**: (19 januari 2022) Dessa två allokeringsmodeller uppfyller användningsvillkoren för &quot;inträde&quot; och &quot;avslutning&quot;. De tar det första eller sista observerade värdet för en dimension inom ett angivet beständigt omfång (session, person eller anpassad tidsperiod med uppslag) och tillämpar det på alla händelser inom det angivna omfånget. Exempel:
 

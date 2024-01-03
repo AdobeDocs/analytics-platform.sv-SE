@@ -4,9 +4,10 @@ keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1867'
 ht-degree: 0%
 
 ---
@@ -135,7 +136,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
 1. Öppna det Analysis Workspace-projekt som du vill dela.
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
+1. Klicka **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
 
    Om det finns ändringar som inte har sparats uppmanas du att spara projektet.
 

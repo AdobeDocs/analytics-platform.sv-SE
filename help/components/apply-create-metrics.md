@@ -3,10 +3,11 @@ description: Det finns två sätt att använda mätvärden i Analysis Workspace.
 title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 4%
+source-wordcount: '361'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +33,7 @@ Du kan se om ett mätresultat är godkänt ![Ikonen Godkänd](https://spectrum.a
 
 Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod. Du kan också dra ett mått när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt. Om du drar ett mätresultat över ett befintligt måtthuvud ersätts det och om du drar ett mätvärde bredvid ett huvud kan du se båda mätvärdena sida vid sida.
 
-## Beräknade värden
+## Beräknade mått
 
 Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner. Det finns flera sätt att skapa beräknade mått:
 

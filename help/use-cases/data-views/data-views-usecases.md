@@ -4,9 +4,10 @@ description: Flera användningsfall som visar flexibiliteten och kraften i datav
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1258'
 ht-degree: 0%
 
 ---
@@ -60,7 +61,7 @@ Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionern
 Använd till exempel funktionerna Inkludera/exkludera i datavyer om du bara vill fokusera på produkter som genererade mer än 50 dollar för försäljning. Om du har en beställning som innehåller ett produktköp på 50 dollar och ett inköp på 25 dollar tar vi bara bort 25 dollar, inte hela beställningen.
 
 1. På datavyer [Komponenter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) -fliken, dra [!UICONTROL Revenue] schemafält till [!UICONTROL Metrics] areal under [!UICONTROL Included components].
-1. Markera måttet och konfigurera följande till höger: a. Under [!UICONTROL Format], markera [!UICONTROL Currency].
+1. Välj måttet och konfigurera följande på höger sida: a. Under [!UICONTROL Format], markera [!UICONTROL Currency].
 b. Under [!UICONTROL Currency]väljer du USD.
 c. Under [!UICONTROL Include/Exclude Values]markerar du kryssrutan bredvid [!UICONTROL Set include/exclude values].
 d. Under [!UICONTROL Match], markera [!UICONTROL If all criteria are met].

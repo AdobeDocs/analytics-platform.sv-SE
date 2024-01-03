@@ -4,16 +4,17 @@ description: Analysera och extrahera insikter från kundinteraktioner under hela
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # Flerkanalsanalys
 
-Flerkanalsanalys ger en samlad bild av kundernas beteende i olika kanaler genom att sammanföra data från olika webb-, mobil- och offlineegenskaper. Du kan till exempel använda den här konsoliderade vyn för att analysera kundinteraktioner på både dator och mobil för att förstå kundbeteendet och få insikter för att optimera digitala kundupplevelser. Ni kan också analysera kundinteraktioner över alla kanaler, inklusive digitala och offlinekanaler som supportinteraktioner och köp i butiken, för att bättre förstå och optimera kundresan.
+Flerkanalsanalys ger en samlad bild av kundernas beteende i olika kanaler genom att sammanföra data från olika webb-, mobil- och offlineegenskaper. Ni kan till exempel använda den här konsoliderade vyn för att analysera kundinteraktioner på både dator och mobil för att förstå kundbeteenden och få insikter för att optimera digitala kundupplevelser. Ni kan också analysera kundinteraktioner över alla kanaler, inklusive digitala och offlinekanaler som supportinteraktioner och köp i butiken, för att bättre förstå och optimera kundresan.
 
 ## Implementeringssteg
 
@@ -24,7 +25,7 @@ Flerkanalsanalys ger en samlad bild av kundernas beteende i olika kanaler genom 
 1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html):
    1. Händelsebaserade data ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) från webbplats eller mobilapp via Edge Network- eller Analytics-källkontakten.
    2. Profildata ![profil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (t.ex. från ett CRM-system, callcenter-program, lojalitetsprogram).
-   3. Sökdata ![sökning](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (t.ex. produktnamn, kategori från ett produktinformationssystem).
+   3. Sökdata ![sökning](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (till exempel produktnamn, kategori från ett produktinformationssystem).
 
 1. Använd ett gemensamt namnområdes-ID för alla datauppsättningar. Använd [Stitlar](../../stitching/overview.md) för att lyfta fram händelsebaserade datauppsättningar ![datauppdatering](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) när det gäller att tillhandahålla ett gemensamt ID på varje rad. Observera att Customer Journey Analytics för närvarande inte använder profiltjänsten eller identitetstjänsten Experience Platform för sammanfogning.
 1. Utför alla anpassade dataförberedelser för att säkerställa en gemensam nyckel över tidsseriens datauppsättningar som ska importeras till Customer Journey Analytics.

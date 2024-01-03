@@ -3,7 +3,8 @@ description: Adobe tillhandahåller olika beräknade värden som du kan använda
 title: Standardberäknade värden
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
-source-git-commit: 5e69b1aceb767343882b9cc85c0011bb1593f4af
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Standardberäknade värden
 
-Customer Journey Analytics tillhandahåller följande beräknade värden för de vanligaste användningsfallen:
+Customer Journey Analytics tillhandahåller följande beräknade mått för att täcka de vanligaste användningsfallen:
 
 | Namn på beräknat mätvärde | Beskrivning | Formel |
 |---------|----------|---------|

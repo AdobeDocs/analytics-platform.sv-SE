@@ -3,10 +3,11 @@ title: Customer Journey Analytics och datastyrning
 description: Beskriver hur datastyrning fungerar i Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '377'
+ht-degree: 0%
 
 ---
 

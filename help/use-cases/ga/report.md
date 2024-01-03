@@ -4,9 +4,10 @@ description: Visar användbara rapporter om Google Analytics data i Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 När du har data tillgängliga i Customer Journey Analytics ger följande exempel användbara scenarier för rapportering av dessa data.
 
-## Visualisera webbdata och appdata som kombinerade datauppsättningar
+## Visa webbdata och appdata som kombinerade datauppsättningar
 
 I det här Venndiagrammet visas hur många användare som finns på din webbplats (från dina Google Analytics-data) och i din mobilapp (från dina Firebase-data) och från ditt callcenter. Du kan också se de bästa produkterna - inte bara på webben, utan även i mobilappen. Du kan till och med få de totala intäkterna från båda genom att använda ett beräknat mått. Lägg märke till hur de bästa produkterna berättar en annan historia när du tittar på de kombinerade intäkterna. Utan de kombinerade datauppsättningarna skulle du aldrig ha vetat att &quot;Twill cap&quot; var en sådan stark utförare.
 
@@ -23,7 +24,7 @@ I det här Venndiagrammet visas hur många användare som finns på din webbplat
 
 ## Identifiera samtalsorsaker och minska samtalsvolymen
 
-Du kan trender för hur mycket samtalscenter-tid som har tillbringats de senaste två månaderna för att fastställa samtalsvolymen. I följande exempel visas de data som trender de senaste två månaderna. I följande exempel visas en ökande trend som kan påverka organisationskostnaderna.
+Du kan trender för hur mycket samtalscenter-tid som har tillbringats de senaste två månaderna för att fastställa samtalsvolymen. I följande exempel visas de data som trendats under de senaste två månaderna. I följande exempel visas en ökande trend som kan påverka organisationskostnaderna.
 
 ![Samtalsvolym](../assets/call-volume.png)
 
@@ -31,7 +32,7 @@ Genom att använda dimensionen&quot;Anledning till anrop&quot; kan du få tips p
 
 Du kan se vilka produkter som orsakar de flesta samtalen till ditt callcenter och hur många kunder som har gjort dessa samtal. Bubbeldiagrammet visar att 20 000 personer ringde, spenderade mer än 4 timmar och 30 minuter och returnerade 33 enheter av produkten &quot;Men&#39;s short Sleeve Tee&quot;.
 
-![Anledning till samtalet](../assets/call-reason.png)
+![Samtalsorsak](../assets/call-reason.png)
 
 Om du använder en dimensionsuppdelning av &#39;Anropsorsak&#39; visas dimensionsobjektet &quot;Skadad produkt&quot; i exemplet. Nästa steg är att kontakta avdelningen för kvalitetskontroll och se varför kunderna har fått skadade T-shirts.
 
@@ -53,9 +54,9 @@ Med Customer Journey Analytics kan ni använda sofistikerade attribueringsmodell
 
 Med hjälp av beräknade mätvärden kan du använda attribueringen på dina webbintäkter, intäkter från mobilappar och till och med ta bort produktreturer. Resultatet blir en verklig nettointäkt för varje marknadsföringskanal.
 
-![Beräknat mätvärde](../assets/calc-metric.png)
+![Beräknat mått](../assets/calc-metric.png)
 
-Med Attribution IQ kan du också filtrera data. Du kan bara se attribuering mot vissa användaruppsättningar, till exempel de som använder mer än en enhet.
+Med Attribution IQ kan du också filtrera dina data. Du kan bara se attribuering mot vissa användaruppsättningar, till exempel de som använder mer än en enhet.
 
 ![Filter](../assets/filter.png)
 

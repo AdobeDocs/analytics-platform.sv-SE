@@ -3,13 +3,14 @@ title: Sessionsinställningar
 description: Inställningar i en datavy som du kan använda för att definiera längden på en session och utlösaren för att initiera en ny session
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
+exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
-
 
 # Sessionsinställningar
 
@@ -45,4 +46,3 @@ Så här definierar du kontexten för en session för en datavy:
 
 
 4. Välj **[!UICONTROL Save]** eller **[!UICONTROL Save and finish]** för att spara definitionen av sessionsinställningarna.
-

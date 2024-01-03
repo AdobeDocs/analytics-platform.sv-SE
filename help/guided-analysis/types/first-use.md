@@ -3,9 +3,11 @@ title: Vyn Första användningen
 description: Mät effekten av förstagångsanvändning på nyckelindikatorer.
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---

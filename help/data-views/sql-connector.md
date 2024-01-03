@@ -5,10 +5,11 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 hide: true
 hidefromtoc: true
-exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: 1b03689820c91a823cd7cf8ff42e3f5ee46083e5
+exl-id: 1827a637-6c0f-43f2-862a-928089340d30
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2769'
 ht-degree: 0%
 
 ---
@@ -106,7 +107,7 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
    1. I huvudfönstret väljer du **[!UICONTROL ** Hämta data **]** i det övre verktygsfältet.
 
-   2. Välj **[!UICONTROL ** Mer ...**]** till vänster.
+   2. Välj **[!UICONTROL ** Mer...**]** i den vänstra listen.
 
    3. I **Hämta data** skärm, sök efter `PostgresSQL` och väljer **[!UICONTROL ** PostgresSQL-databas **]** från listan.
 
@@ -156,23 +157,23 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
       2. Klistra in **[!UICONTROL ** Port **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Port **]** textfält.
 
-      3. Klistra in **[!UICONTROL ** databasparametern **]** från Experience Platform Queries [!UICONTROL Credentials] i **[!UICONTROL ** textfältet Databas **]** .
+      3. Klistra in **[!UICONTROL ** databasparametern **]** från Experience Platform-frågor [!UICONTROL Credentials] i **[!UICONTROL ** databastextfältet **]** .
 
-         Lägg till `%3FFLATTEN` i **[!UICONTROL ** parametern Database **]** så att den lyder som `prod:cja%3FFLATTEN` till exempel. Mer [information finns i Förenkla kapslade datastrukturer för användning med BI-verktyg](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) från tredje part.
+         Lägg `%3FFLATTEN` till i **[!UICONTROL ** parametern Databas **]** , så att den lyder som `prod:cja%3FFLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) för mer information.
 
-      4. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i **[!UICONTROL ****]** autentiseringslistan.
+      4. Välj **[!UICONTROL ** Användarnamn och lösenord **]** från **[!UICONTROL ** Autentisering **]** lista.
 
       5. Klistra in **[!UICONTROL ** Användarnamn **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Användarnamn **]** textfält.
 
-      6. Klistra in **[!UICONTROL ** Lösenord **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Lösenord **]** textfält.
+      6. Klistra in **[!UICONTROL ** lösenordsparametern **]** från Experience Platform-frågor [!UICONTROL Credentials] i **[!UICONTROL ** textfältet Lösenord **]** .
 
       7. Välj **[!UICONTROL ** Logga in **]**.
 
-   4. Datavyer för Customer Journey Analytics visas som tabeller i listan Tabell **[!UICONTROL ****]**. Datavytabeller föregås av `dv_`.
+   4. Datavyer i Customer Journey Analytics visas som tabeller i **[!UICONTROL ** tabelllistan **]** . Datavytabeller föregås av `dv_`.
 
    5. Dra de tabeller som du vill använda på arbetsytan.
 
-   Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
+   Nu kan du arbeta med data från datavytabellerna för att skapa dina rapporter och visualiseringar.
 
    Se [Koppla tabell till frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) för mer information.
 
@@ -231,7 +232,7 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Mönster | Exempel |
 |---|---|
 | Schemaidentifiering | <pre>VÄLJ * FRÅN DV1 DÄR 1=0</pre> |
-| Rankad/uppdelning | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  filterId = &#39;12345&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
+| Rankad/uppdelning | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1, SUM(metric1) AS m1 FRÅN dv1 WHERE \&#39;timestamp\&#39; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/> filterId = &#39;12345&#39;GROUP<br/> BY dim1<br/><br/></pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
 | HAVING-satsen | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>MED m1 > 100</pre> |
 | Distinkt, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\&#39; &lt; &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Måttsummor | <pre>VÄLJ SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</pre> |
@@ -239,8 +240,8 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Markera en del:<br/>Ytterligare resultat<br/>filtrering | <pre>SELECT dim1, m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</br>  GRUPPERA EFTER NEDRE1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | Markera en del:<br/>Förena med<br/>datamängden är inte i<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/>) a<br/>LEFT JOIN-sökningar b ON a.dim1 = b.key</pre> |
 | Markera en del:<br/>Fråga tvärs över<br/>datavyer | <pre>SELECT key, SUM(m1) AS total<br/>FRÅN (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FRÅN DV2<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE2<br/>GROUP BY-tangenten<br/>BESTÄLL EFTER Summa</pre> |
-| Markera en del: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED RADER SOM ( MED \_ SOM ( välj * från<br/> data_ares DÄR \&#39;tidsstämpel\&#39; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39; ) VÄLJ _.objekt, _.enheter FRÅN _ DÄR _<br/>.objekt INTE ÄR NULL<br/>)VÄLJ rader.objekt, SUMMA(rader.enheter) SOM ENHETER<br/>FRÅN rader DÄR rader.objekt i (<br/><br/>&#39;A&#39;, &#39;B&#39;, &#39;C&#39;<br/>)<br/><br/>GRUPPERA<br/> EFTER RADER.OBJEKT</pre> |
-| Väljer var<br/>mätvärdena kommer före<br/> eller blandas med<br/>dimensionerna | <pre>VÄLJ SUM(METRIC1) SOM M1, DIM1 FRÅN DV1 DÄR \&#39;timestamp\&#39; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;GROUP<br/><br/><br/> BY 2</pre> |
+| Markera en del: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED rader SOM ( MED \_ SOM ( VÄLJ * FRÅN data_ares DÄR \&#39;tidsstämpel\&#39; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39; ) VÄLJ _.item, _.units FRÅN _ DÄR _<br/>.item INTE ÄR NULL)VÄLJ rows.item, SUM(rows.units) SOM enheter<br/>FRÅN rader WHERE rows.item i (<br/><br/>&#39;A&#39;, &#39;B&#39;, &#39;C&#39;<br/><br/>)<br/><br/><br/>gruppera EFTER rader.item<br/></pre> |
+| Markerar var<br/>mätvärden kommer före<br/> eller är blandade med<br/>dimensionerna | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 2</pre> |
 
 {style="table-layout:auto"}
 
@@ -248,17 +249,17 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 
 ### Mått
 
-Du kan välja någon av de tillgängliga dimensionerna som standard eller definierad i datavyn. Du väljer en dimension med dess ID.
+Du kan välja någon av de tillgängliga dimensionerna som standard eller definierad i datavyn. Du väljer en dimension efter dess ID.
 
 ### Mätvärden
 
-De mätvärden som är tillgängliga att välja är:
+De mått som är tillgängliga att välja är:
 
 - något av de mätvärden som är tillgängliga som standard,
 
 - definieras i datavyn,
 
-- beräknade mätvärden som är kompatibla med den datavy som användaren har åtkomst till.
+- beräknade värden som är kompatibla med den datavy som användaren har åtkomst till.
 
 Du väljer ett mått med dess ID som omsluts av en `SUM(metric)` -uttryck på samma sätt som du gör med andra SQL-källor.
 
@@ -343,7 +344,7 @@ Hanteringen görs genom att den första nivån i `AND`s i `WHERE` -sats. Varje �
 
 Som standard sorteras resultatet i frågan efter det första valda måttet i fallande ordning. Du kan skriva över standardsorteringsordningen genom att ange `ORDER BY ... ASC` eller `ORDER BY ... DESC`. Om du använder `ORDER BY`måste du ange `ORDER BY` för den första valda måttenheten.
 
-Du kan också vända ordningen genom att använda `-` (minus) framför måttenheten. Båda påståendena nedan resulterar i samma ordning:
+Du kan också vända ordningen genom att använda `-` (minus) framför måttet. Båda instruktionerna nedan resulterar i samma ordning:
 
 ```sql
 ORDER BY metric1 ASC
@@ -355,10 +356,10 @@ ORDER BY -metric1 DESC
 
 ### Allmänt funktionsstöd
 
-|  -funktion | Exempel | Information |
+| Funktion | Exempel | Detaljer |
 |---|---|---|
-| [CAST(kolumn SOM typ)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` eller <br/> `` `timestamp`::string `` | Typgjutning stöds inte för närvarande, men inget fel uppstår. Funktionen `CAST` ignoreras. |
-| [TIDSSTÄMPEL(tidssträng)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Tolka en tidssträng som en tidsstämpel för användning i en `WHERE` -sats. |
+| [CAST(kolumn AS-typ)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` eller <br/> `` `timestamp`::string `` | Typkonvertering stöds inte för närvarande, men inget fel utlöses. Funktionen `CAST` ignoreras. |
+| [TIDSSTÄMPEL(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Tolka en tidssträng som en tidsstämpel för användning i en `WHERE` -sats. |
 | [TO_TIMESTAMP(timeString, formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Tolka en tidssträng som en tidsstämpel för användning i en `WHERE` -sats, om du vill ange ett format för den tidssträngen. |
 | [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Tolka en datumsträng som en tidsstämpel som ska användas i en `WHERE` -sats. |
 | [TO_DATE(dateString, formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | Tolka en datumsträng som en tidsstämpel som ska användas i en `WHERE` -sats, om du vill ange ett format för den datumsträngen. |
@@ -371,7 +372,7 @@ De här funktionerna kan användas på dimensioner i `SELECT`, `WHERE` eller i v
 
 **Strängfunktioner**
 
-|  -funktion | Exempel | Information |
+| Funktion | Exempel | Information |
 |---|---|---|
 | [LOWER(stringDimension)](https://spark.apache.org/docs/latest/api/sql/index.html#lower) | ``SELECT LOWER(name) AS lower_name`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. |
 
@@ -379,7 +380,7 @@ De här funktionerna kan användas på dimensioner i `SELECT`, `WHERE` eller i v
 
 **Funktioner för datum och tid**
 
-|  -funktion | Exempel | Information |
+| Funktion | Exempel | Information |
 |---|---|---|
 | [ÅR (datum eller tid)](https://spark.apache.org/docs/latest/api/sql/index.html#year) | ``SELECT YEAR(`timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. |
 | [MÅNAD(datum eller tid)](https://spark.apache.org/docs/latest/api/sql/index.html#month) | ``SELECT MONTH(`timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. |

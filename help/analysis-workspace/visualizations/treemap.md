@@ -1,18 +1,19 @@
 ---
-description: Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar.
-title: Treemap-diagram
+description: Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar.
+title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 91%
+ht-degree: 69%
 
 ---
 
-# Treemap-diagram
+# Treemap
 
-Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar.
+Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar.
 
 Varje förgrening i trädet tilldelas en rektangel, som sedan visas med mindre rektanglar som representerar undergrenar.
 

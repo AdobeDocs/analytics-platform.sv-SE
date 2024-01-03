@@ -4,9 +4,10 @@ description: Lär dig hur du skapar en datauppsättning som länkar callcenter o
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Customer Journey Analytics har den värdefulla och robusta möjligheten att komb
 * Om datauppsättningen innehåller loggar från ett interaktivt röstsvarssystem rekommenderar Adobe att data endast behandlas med uppmaningsinteraktioner innan de importeras till Platform.
 * Om datauppsättningen innehåller samtalsloggar rekommenderar Adobe att du inkluderar följande kolumner:
    * Datum/tid då samtalet inleddes
-   * Anledning till samtalet
+   * Samtalsorsak
    * ID för kundtjänst
    * ID för kundtjänstagent
    * Samtalets längd
@@ -37,25 +38,25 @@ Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://exp
 När du importerar data till plattformen kan följande tips hjälpa dig att få bättre insikter i de resulterande rapporterna:
 
 * Kontrollera att den identifierare som används för att länka samman anropscenter- och webbdata är i liknande format.
-* Inkludera datakällan i varje datauppsättning. Ta till exempel med en `data_source` -kolumnen i varje schema och ange värdet för varje händelse till `"Web"` eller `"Call center"`, respektive. <!--mapper-->
+* Inkludera datakällan i varje datauppsättning. Ta till exempel med en `data_source` -kolumnen i varje schema och ange värdet för varje händelse till `"Web"` eller `"Call center"`, respektive <!--mapper-->
 
 ## Koppla samman person-ID:n
 
 Customer Journey Analytics kräver en gemensam identifierare för att skapa en [kombinerad datamängd](/help/connections/combined-dataset.md).
 
 * Om dina datauppsättningar redan har en gemensam identifierare för varje händelse i båda datauppsättningarna kan du hoppa över det här steget och fortsätta skapa en anslutning.
-* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser kan du sammanfoga data med hjälp av kanalövergripande analys. Se [Översikt över flerkanalsanalys](/help/cca/overview.md) för steg för att aktivera CCA för dessa två datauppsättningar.
+* Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser, kan du sammanfoga data med hjälp av [Stitlar](/help/stitching/overview.md) för steg för att aktivera flerkanalsanalys för dessa två datauppsättningar.
 
 ## Skapa en anslutning i Customer Journey Analytics
 
 [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics.
 
-* Om CCA används finns det en ny sammansatt datauppsättning att använda. Använd det nya sammanslagna ID-fältet som person-ID.
+* Om CCA används finns det en ny sammansatt datauppsättning som du kan använda. Använd det nya sammanslagna ID-fältet som person-ID.
 * I annat fall kan du välja både ursprungliga webb- och callcenter-datauppsättningar som ska användas i anslutningen.
 
 ## Skapa en datavy
 
-När du har skapat en anslutning kan du [Skapa en datavy](/help/data-views/create-dataview.md) för användning i Analysis Workspace. Några praktiska komponenter:
+När du har skapat en anslutning kan du [Skapa en datavy](/help/data-views/create-dataview.md) för Analysis Workspace. Exempel på användbara komponenter:
 
 * En siddimension med senaste berörings- och sessionsbeständighet. Ni kan koppla kundens statistik till den sista sidan som kunden visade innan de ringde in.
 * A call metric that uses a Call center reason&#39; schema field to increase instances. Använd [Metrisk deduplicering](/help/data-views/component-settings/metric-deduplication.md) så det bara ökas en gång per session.
@@ -64,14 +65,14 @@ När du har skapat en anslutning kan du [Skapa en datavy](/help/data-views/creat
 
 Följande visualiseringar kan användas för att få insikter från din sammanslagna datauppsättning.
 
-### Datauppsättningsöverlappning
+### Överlappning av datauppsättning
 
 Denna visualisering hjälper er att förstå hur väl CCA sammanfogar data.
 
 1. Skapa två filter. Variabeln som används i dessa två filter är samma variabel som nämns ovan som återspeglar datakällan för varje händelse. Se [Skapa ett filter](/help/components/filters/create-filters.md) för mer information.
    * Personbehållare där datauppsättnings-ID är lika med dina webbdata
    * Personbehållare där datauppsättnings-ID är lika med dina kundtjänstdata
-2. I Analysis Workspace drar du en [Venn](/help/analysis-workspace/visualizations/venn.md) visualisering på arbetsytan.
+2. I Analysis Workspace drar du [Venn](/help/analysis-workspace/visualizations/venn.md) visualisering på arbetsytan.
 3. Dra de två nyskapade filtren till **[!UICONTROL Add Filter]** och personmåttet på **[!UICONTROL Add Metric]** område.
 
 I den resulterande Venndatavisualiseringen visas antalet personer i datauppsättningen som innehåller både webb- och callcenterdata. Ju större överlappning, desto fler personer sys ihop. De områden som inte överlappar representerar personer som endast finns i den ena datauppsättningen eller den andra.

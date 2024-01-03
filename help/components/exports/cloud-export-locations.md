@@ -4,9 +4,10 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User, Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
@@ -37,7 +38,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    Dialogrutan Plats visas.
 
-1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Namn**] | Namnet på platsen.  | | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot så att det kan särskiljas från andra konton av samma kontotyp. | | [!UICONTROL **Platskonto**] | Välj det konto där du vill skapa platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md). |
+1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Namn**] | Namnet på platsen.  | | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Platskonto**] | Välj det konto där du vill skapa platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md). |
 
 1. I [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 
@@ -55,9 +56,9 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    <!-- still need to update; can't create AEP account -->
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -88,7 +89,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    <!-- still need to update; can't create S3 role ARN account -->
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. Se till att användar-ARN som tillhandahålls av Adobe har åtkomst till att överföra filer till den här bucket. |
    | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
@@ -107,7 +108,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    <!-- still need to update; can't create GCP account -->
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Customer Journey Analytics data ska skickas. Se till att du har gett Adobe tillåtelse att överföra filer till denna bucket till säkerhetsobjektet. (Huvudkontot tillhandahålls när [konfigurera Google Cloud Platform-kontot](/help/components/exports/cloud-export-accounts.md).) Mer information om att bevilja behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen. |
    | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
@@ -124,10 +125,10 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
 1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en Azure SAS-plats:
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Behållarnamn**] | Behållaren i det konto du angav där du vill att Customer Journey Analytics data ska skickas. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -141,10 +142,10 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
 1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en Azure RBAC-plats:
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
    | [!UICONTROL **Konto**] | Azure-lagringskontot. |
 
    {style="table-layout:auto"}
@@ -159,7 +160,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
 1. I [!UICONTROL **Platsegenskaper**] i [!UICONTROL **Lägg till plats**] anger du följande information för att konfigurera en plats i Snowflake:
 
-   | Fält |  -funktion |
+   | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **DB**] | Den angivna databasen bör vara en befintlig databas. Rollen du skapade måste ha behörighet att komma åt den här databasen.<p>Det här är databasen som är associerad med scennamnet.</p><p>Du kan ge den här rollbehörigheten till databasen i Snowflake med följande kommando: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
    | [!UICONTROL **Schema**] | Det angivna schemat ska vara ett befintligt schema. Rollen du skapade måste ha behörighet att komma åt schemat.<p>Detta är schemat som är associerat med scennamnet.<p>Du kan tilldela rollen som du skapade behörigheter till schemat i Snowflake med följande kommando: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Mer information finns i [Kommandosidan Databas, Schema och Dela i Snowflake-dokumentationen](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |

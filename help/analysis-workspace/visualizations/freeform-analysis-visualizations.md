@@ -1,17 +1,18 @@
 ---
 description: Visa dina data i Analysis Workspace.
 keywords: Analysis Workspace
-title: Översikt över visualiseringar
+title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 3%
+source-wordcount: '1314'
+ht-degree: 1%
 
 ---
 
-# Översikt över visualiseringar
+# Visualiseringar - översikt
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Customer Journey Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
@@ -36,7 +37,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ikon för summeringsnummer](assets/summary-number-icon.png)</p> | Visar den markerade cellen som ett stort tal. |
 | [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ikon för ändring av sammanfattning](assets/summary-change-icon.png)</p> | Visar ändringen mellan de markerade cellerna som ett stort tal/procent. |
 | [Text](/help/analysis-workspace/visualizations/text.md)<p>![Scatplot, ikon](assets/Smock_Text_18_N.svg)</p> | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
-| [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap, ikon](assets/Smock_GraphTree_18_N.svg)</p> | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
+| [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap, ikon](assets/Smock_GraphTree_18_N.svg)</p> | Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Vennikon](assets/venn-icon.png)</p> | Använder cirklar för att beskriva måttöverlappningen för upp till 3 filter. |
 
 ## Lägga till visualiseringar i en panel
@@ -91,7 +92,7 @@ Varje visualisering har sina egna inställningar som du kan hantera. För åtkom
 | 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Ett stapeldiagram som visar vyn Staplad 100 %.](assets/stacked_100_percent.png) |
 | Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
 | Begränsa maximalt antal objekt | Gör att du kan begränsa antalet objekt som visas i en visualisering. |
-| Ankra Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
+| Fästpunkt Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
 | Normalisering | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | Visa kantlinjer | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |

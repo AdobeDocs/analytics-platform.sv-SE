@@ -4,9 +4,10 @@ description: Lär dig hur Customer Journey Analytics skapar en anslutning genom 
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -58,9 +59,9 @@ När du skapar en anslutning med dessa två händelsedatamängder används följ
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session.
+Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de finns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session.
 
-Detta koncept gäller också attribuering. Det spelar ingen roll vilken datauppsättning en rad kommer från. attribuering fungerar precis som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
+Detta koncept gäller också attribuering. Det spelar ingen roll vilken datamängd en rad kommer från. Attribution fungerar exakt som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
 
 Om anslutningen bara innehöll den första tabellen och inte den andra, drar du en rapport med hjälp av `string_color` dimension och `metric_a` mätvärden som använder den senaste beröringsattribueringen skulle visa:
 
@@ -87,7 +88,7 @@ Med flerkanalsanalys kan ni besvara frågor som:
 * Hur många börjar sin upplevelse i en kanal och avslutar den i en annan?
 * Hur många interagerar med mitt varumärke? Hur många och vilka typer av enheter använder de? Hur överlappar de?
 * Hur ofta startar man en uppgift på en mobil enhet och sedan övergår till en stationär dator för att slutföra uppgiften? Kommer kampanjklickningar som landar på en enhet att leda till konvertering någon annanstans?
-* Hur påverkar min förståelse för kampanjens effektivitet om jag tänker på resor mellan olika enheter? Hur förändras min kanalanalys?
+* Hur påverkar min förståelse för kampanjens effektivitet om jag tänker på resor mellan olika enheter? Hur förändras min trattanalys?
 * Vilka är de vanligaste sökvägarna som användare tar från en enhet till en annan? Var faller de? Var lyckas de?
 * Hur skiljer sig beteendet hos användare med flera enheter från dem som har en enda enhet?
 

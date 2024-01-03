@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: frågetjänst;frågetjänst;sql-syntax
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
 
 >[!NOTE]
 >
->Detta fungerar endast för vanliga datamängder med mellanvärden, inte sammanfogade datamängder (via [Flerkanalsanalys](/help/cca/overview.md)). Observera att redovisning av det person-ID som används i Customer Journey Analytics är avgörande för att jämförelsen ska fungera. Det är kanske inte alltid lätt att återskapa i Adobe Analytics, särskilt om du har aktiverat funktionen för att markera alternativet.
+>Detta fungerar endast för vanliga datamängder med mellanvärden, inte sammanfogade datamängder (via [Stitlar](/help/stitching/overview.md)). Observera att redovisning av det person-ID som används i Customer Journey Analytics är avgörande för att jämförelsen ska fungera. Det är kanske inte alltid lätt att återskapa i Adobe Analytics, särskilt om du har aktiverat funktionen för att markera alternativet.
 
 1. I ADOBE EXPERIENCE PLATFORM [Frågetjänster](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), kör följande [!UICONTROL Total Records by timestamps] fråga:
 

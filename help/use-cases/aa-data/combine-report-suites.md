@@ -1,12 +1,13 @@
 ---
 title: Kombinera rapportsviter med olika scheman
-description: Lär dig hur du använder Data Prep för att kombinera rapportsviter med olika scheman
+description: Lär dig använda Data Prep för att kombinera rapportsviter med olika scheman
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 1%
+source-wordcount: '1322'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +32,7 @@ Anta dessutom att du utför följande åtgärder:
 
 - Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite A** till Adobe Experience Platform datasjön som **Datauppsättning A**.
 - Skapa en anslutning till en Analytics-källa (utan att använda dataförberedelse) som importerar **Report Suite B** till Adobe Experience Platform datasjön som **Datauppsättning B**.
-- Skapa en [Customer Journey Analytics](/help/connections/create-connection.md) anropad **Alla rapportsviter** som kombinerar datauppsättning A och datauppsättning B.
+- Skapa en [Customer Journey Analytics-anslutning](/help/connections/create-connection.md) anropad **Alla rapportsviter** som kombinerar datauppsättning A och datauppsättning B.
 - Skapa en [Datavy för Customer Journey Analytics](/help/data-views/create-dataview.md) anropad **Global vy** som baseras på anslutningen Alla rapportsviter.
 
 Utan att använda Data Prep för att lösa schemaskillnaderna mellan datauppsättning A och datauppsättning B kommer eVarorna i datavyn i den globala vyn att innehålla en blandning av värden:
@@ -41,9 +42,9 @@ Utan att använda Data Prep för att lösa schemaskillnaderna mellan datauppsät
 | eVar1 => en blandning av söktermer och affärsenheter |
 | eVar2 => en blandning av kundkategorier och söktermer |
 
-Detta resulterar i meningslösa rapporter för eVar1 och eVar2:
+Detta leder till meningslösa rapporter för eVar1 och eVar2:
 
-- eVar innehåller en blandning av värden med olika semantiska betydelser.
+- Fälten eVar innehåller en blandning av värden med olika semantiska innebörder.
 - Sökvillkoren fördelas mellan eVar1 och eVar2.
 - Det går inte att använda olika attribueringsmodeller för varje sökterm, affärsenhet eller kundkategori.
 
@@ -60,7 +61,7 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics-källkoppl
 
 1. Lägg till en annan fältgrupp till schemat eller [skapa en anpassad fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) och lägg till det i schemat. Vi skapar en ny fältgrupp och kallar den **Enhetliga fält**. Sedan lägger vi till följande fält i den nya fältgruppen:
 
-   | Anpassad fältgrupp &quot;Enhetliga fält&quot;  |
+   | Anpassad fältgrupp för enhetliga fält  |
    | --- |
    | Sökterm |
    | Affärsenhet |
@@ -77,16 +78,16 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics-källkoppl
    >
    >XDM-sökvägen för målfälten beror på hur du strukturerar den anpassade fältgruppen.
 
-1. Skapa källanslutningsdataflöde för **Report Suite B** väljer **Enhetligt schema** för användning i dataflödet. Arbetsflödet visar att två fält har en konflikt med ett beskrivningsnamn. Detta beror på att beskrivningarna för eVar1 och eVar2 skiljer sig åt i Report Suite B jämfört med dem i Report Suite A. Men vi vet redan detta, så vi kan ignorera konflikten och använda anpassade mappningar enligt följande:
+1. Skapa källanslutningsdataflöde för **Report Suite B** väljer igen **Enhetligt schema** för användning i dataflödet. Arbetsflödet visar att två fält har en konflikt med ett beskrivningsnamn. Detta beror på att beskrivningarna för eVar1 och eVar2 skiljer sig åt i Report Suite B jämfört med i Report Suite A. Men vi vet redan detta, så vi kan ignorera konflikten och använda anpassade mappningar enligt följande:
 
    | Källfält för Report Suite B | Målfält från fältgruppen Enhetliga fält |
    |---|---|
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Search_term |
 
-1. Skapa **Alla rapportsviter** anslutning för Customer Journey Analytics, där datauppsättning A och datauppsättning B kombineras.
+1. Skapa en **Alla rapportsviter** anslutning för Customer Journey Analytics, där datauppsättning A och datauppsättning B kombineras.
 
-1. Skapa en **Global vy** datavy i Customer Journey Analytics. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Enhetliga fält.
+1. Skapa en **Global vy** datavyn i Customer Journey Analytics. Ignorera de ursprungliga fälten för eVar och ta endast med fält från fältgruppen Enhetliga fält.
 
    **Global vy** datavy i Customer Journey Analytics:
 
@@ -98,7 +99,7 @@ Funktionen Experience Platform Data Prep är integrerad med Analytics-källkoppl
    | _\&lt;path>_.Customer_category  | Ja |
    | _\&lt;path>_.Business_unit | Ja |
 
-Du har nu mappat eVar1 och eVar2 från källrapportsviterna till tre nya fält. Observera att en annan fördel med att använda Data Prep-mappningar är att målfälten nu baseras på semantiskt meningsfulla namn (sökterm, affärsenhet, kundkategori) i stället för de mindre meningsfulla eVar (eVar1, eVar2).
+Du har nu mappat eVar1 och eVar2 från källrapportsviterna till tre nya fält. Observera att en annan fördel med att använda Data Prep-mappningar är att målfälten nu baseras på semantiskt meningsfulla namn (sökterm, affärsenhet, kundkategori) i stället för mindre meningsfulla eVar-namn (eVar1, eVar2).
 
 >[!NOTE]
 >
@@ -116,7 +117,7 @@ Funktionerna hos Data Prep för att kombinera datauppsättningar med olika schem
 | --- |
 | Some_field => Kundkategori |
 
-Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data med kundkategorin i fältet Some_field i call center-data. Här är ett sätt du kan göra det på. Återigen kan namnkonventionen ändras efter dina behov.
+Med Data Prep kan du kombinera kundkategorin i eVar 1 i analysdata med kundkategorin i fältet Some_field i kundcentrets data. Här är ett sätt du kan göra det på. Återigen kan namnkonventionen ändras efter dina behov.
 
 1. Skapa ett schema i Adobe Experience Platform. Lägg till följande i schemat:
 
@@ -137,7 +138,7 @@ Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Customer_category |
 
-1. Skapa dataflöde för **Datauppsättning B** väljer **Utökat schema** som ditt schema. Lägg till anpassade mappningar i dataflödet enligt följande:
+1. Skapa dataflöde för **Datauppsättning B** väljer igen **Utökat schema** som ditt schema. Lägg till anpassade mappningar i dataflödet enligt följande:
 
    | Källfält för datauppsättning B | Målfält från fältgruppen Kundinformation |
    | --- | --- |
@@ -145,7 +146,7 @@ Med hjälp av Data Prep kan du kombinera kundkategorin i eVar 1 i Analytics-data
 
 1. Skapa en Customer Journey Analytics-anslutning som kombinerar datauppsättning A och datauppsättning B.
 
-1. Skapa en datavy i Customer Journey Analytics med hjälp av den Customer Journey Analytics-anslutning du just skapade. Ignorera de ursprungliga fälten och ta endast med eVar från fältgruppen Kundinformation.
+1. Skapa en datavy i Customer Journey Analytics med hjälp av den Customer Journey Analytics-anslutning du just skapade. Ignorera de ursprungliga fälten för eVar och ta endast med fält från fältgruppen Kundinformation.
 
    Datavy i Customer Journey Analytics:
 

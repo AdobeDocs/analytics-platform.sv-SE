@@ -3,9 +3,10 @@ title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 description: Så här interagerar du med dynamiska och statiska dimensionsobjekt i tabeller
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---

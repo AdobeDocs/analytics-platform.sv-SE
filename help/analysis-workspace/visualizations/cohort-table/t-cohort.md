@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Konfigurera en kohortanalysrapport
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 1%
+source-wordcount: '939'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +32,7 @@ Skapa en kohort och kör en [!UICONTROL Cohort Analysis] rapportera i Analysis W
 
 1. Justera **[!UICONTROL Cohort Table Settings]** genom att klicka på kugghjulet.
 
-   | Inställning | Beskrivning | | Visa endast procent | Tar bort talvärdet och visar bara procentvärdet. | | Avrundar procent till närmaste heltal | Avrundar procentvärdet till närmaste heltal i stället för att visa decimalvärdet. | | Visa genomsnittlig procentrad | Infogar en ny rad högst upp i tabellen och lägger sedan till medelvärdet för värdena i varje kolumn. |
+   | Inställning | Beskrivning | | Visa endast procent | Tar bort talvärdet och visar bara procentvärdet. | | Avrunda procent till närmaste heltal | Avrundar procentvärdet till närmaste heltal i stället för att visa decimalvärdet. | | Visa genomsnittlig procentrad | Infogar en ny rad högst upp i tabellen och lägger sedan till medelvärdet för värdena i varje kolumn. |
 
 ## Bygg [!UICONTROL Cohort Analysis] rapport
 

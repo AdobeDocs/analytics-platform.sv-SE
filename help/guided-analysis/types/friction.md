@@ -1,10 +1,11 @@
 ---
 title: Bildvy
 description: Jämför konverteringsgrader mellan steg.
-exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
+exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

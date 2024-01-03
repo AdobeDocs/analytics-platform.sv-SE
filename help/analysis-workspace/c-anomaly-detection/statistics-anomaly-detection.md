@@ -3,10 +3,11 @@ description: Anomaldetektering i Analysis Workspace använder en rad avancerade 
 title: Statistiska tekniker som används för avvikelseidentifiering
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 1%
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +21,7 @@ Beroende på vilket datum som använts i rapporten används tre olika statistisk
 
 För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
 
-Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
+Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman et al. 2008](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
 
 1. ANA (additivt fel, ingen trend, additiv säsongsvariation)
 1. AAA (additivt fel, additiv trend, additiv säsongsvariation)

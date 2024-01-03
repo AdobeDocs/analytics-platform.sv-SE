@@ -5,9 +5,10 @@ description: Översikt över Analysis Workspace
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '712'
 ht-degree: 3%
 
 ---
@@ -37,7 +38,7 @@ I följande bild och tabell förklaras några av huvudområdena i Analysis Works
 
 Nedan följer några av de viktigaste funktionerna i Analysis Workspace:
 
-### Paneler
+### Panel
 
 **Panel** används för att organisera analysen i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. Markera den övre kanten längst till vänster **[!UICONTROL Panels]** om du vill se en fullständig lista över tillgängliga paneler.
 

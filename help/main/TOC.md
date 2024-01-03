@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
+source-git-commit: fbd801dbbdd8240eef4c60d0877bbb01f06dd768
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1040'
 ht-degree: 7%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 7%
    + [Hantera anslutningar](../connections/manage-connections.md)
    + [Kombinerade händelsedatamängder](../connections/combined-dataset.md)
    + [Standardsökningar](../connections/standard-lookups.md)
-   + [Flerkanalsanalys](../connections/cca.md)
 
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](../data-views/data-views.md)
@@ -303,11 +302,6 @@ ht-degree: 7%
    + [Hur stygn fungerar](../stitching/explained.md)
    + [Skapa och hantera sammanslagna datauppsättningar](../stitching/stitching-ui.md)
    + [Vanliga frågor](../stitching/faq.md)
-
-+ Flerkanalsanalys {#cca}
-   + [Översikt över flerkanalsanalys](../cca/overview.md)
-   + [Så här spelar du upp](../cca/replay.md)
-   + [Vanliga frågor om flerkanalsanalys](../cca/faq.md)
 
 + Integreringar med Adobe {#integrations}
    + [Integrera Adobe-lösningar med Customer Journey Analytics i korthet](/help/integrations/overview.md)

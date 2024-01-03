@@ -4,9 +4,10 @@ description: Använd Analytics-källkopplingen för att överföra regler för b
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -53,8 +54,8 @@ Inställningarna för marknadsföringskanaler fungerar annorlunda mellan plattfo
 
   ![Första sidan av besöket](../assets/first-page-of-visit.png)
 
-* **Åsidosätt sista tryckkanalen**: Den här inställningen i Marketing Channel Manager förhindrar normalt att vissa kanaler får sista beröringskanalkredit. Plattformen ignorerar den här inställningen, vilket gör att breda kanaler som &quot;Direkt&quot; eller &quot;Intern&quot; kan attributera mot mätvärden på potentiellt oönskade sätt. Adobe rekommenderar att du tar bort kanaler där alternativet Åsidosätt sista tryckkanalen inte är markerat.
-   * Du kan ta bort marknadsföringskanalen&quot;Direkt&quot; i Marketing Channel Manager och sedan förlita dig på kundreseanalytikernas dimensionsobjekt&quot;Inget värde&quot; för den kanalen. Du kan också byta namn på dimensionsobjektet till &quot;Direkt&quot; eller exkludera dimensionsobjektet helt när du konfigurerar en datavy.
+* **Åsidosätt sista tryckkanalen**: Den här inställningen i Marketing Channel Manager förhindrar normalt att vissa kanaler får senaste beröringskanalkredit. Plattformen ignorerar den här inställningen, vilket gör att breda kanaler som &quot;Direkt&quot; eller &quot;Intern&quot; kan attributera mot mätvärden på potentiellt oönskade sätt. Adobe rekommenderar att du tar bort kanaler där alternativet Åsidosätt sista tryckkanalen inte är markerat.
+   * Du kan ta bort marknadsföringskanalen &quot;Direkt&quot; i Marketing Channel Manager och sedan förlita dig på Customer Journey Analytics&#39;s No value&#39;-dimensionsobjekt för den kanalen. Du kan också byta namn på dimensionsobjektet till &quot;Direkt&quot; eller exkludera dimensionsobjektet helt när du konfigurerar en datavy.
    * Du kan också skapa en klassificering av marknadsföringskanaler, som klassificerar varje värde efter sig själv, förutom de kanaler som du vill utesluta i Customer Journey Analytics. Du kan sedan använda den här klassificeringsdimensionen när du skapar en datavy i stället för `channel.typeAtSource`.
 
   ![Åsidosätt den senaste pekkanalen](../assets/override-last-touch-channel.png)
@@ -68,7 +69,7 @@ Inställningarna för marknadsföringskanaler fungerar annorlunda mellan plattfo
 Eftersom Adobe Experience Platform arkitektur skiljer sig från Adobe Analytics kan man inte vara säker på att resultatet matchar. Du kan dock använda följande tips för att göra jämförelsen enklare:
 
 * Kontrollera att de arkitektoniska skillnader som anges ovan inte påverkar jämförelsen. Detta inkluderar borttagning av kanaler som inte åsidosätter den senaste beröringskanalen och borttagning av regelvillkor som är den första träffen av ett besök (session).
-* Kontrollera att din anslutning använder samma rapportserie som Adobe Analytics. Om din anslutning till Customer Journey Analytics innehåller flera rapporteringsprogram med egna regler för bearbetning av marknadsföringskanaler är det inte enkelt att jämföra den med Adobe Analytics. Du vill skapa en separat anslutning för varje rapportsserie för att jämföra data.
+* Kontrollera att din anslutning använder samma rapportserie som Adobe Analytics. Om din anslutning till Customer Journey Analytics innehåller flera rapportsviter med egna regler för bearbetning av marknadsföringskanaler är det inte enkelt att jämföra den med Adobe Analytics. Du vill skapa en separat anslutning för varje rapportsserie för att jämföra data.
 * Se till att du jämför samma datumintervall och att tidszonsinställningen i datavyn är densamma som rapportsvitens tidszon.
-* Använd en anpassad attribueringsmodell när du visar rapportsvitens data. Använd till exempel [Marknadsföringskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension med mätvärden som använder en icke-standardattribueringsmodell. Adobe rekommenderar att du inte jämför standardmåtten [Första beröringskanalen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html) eller [Senaste pekkanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html), eftersom de förlitar sig på attribuering som samlas in i rapportsviten. Customer Journey Analytics förlitar sig inte på rapportsvitens attribueringsuppgifter. i stället beräknas det när en Customer Journey Analytics-rapport körs.
+* Använd en anpassad attribueringsmodell när du visar rapportsvitens data. Använd till exempel [Marknadsföringskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension med mätvärden som använder en icke-standardattribueringsmodell. Adobe rekommenderar att du inte jämför standardmåtten [Första beröringskanalen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html) eller [Senaste beröringskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html), eftersom de förlitar sig på attribuering som samlas in i rapportsviten. Customer Journey Analytics förlitar sig inte på rapportsvitens attribueringsdata, utan beräknas när en Customer Journey Analytics-rapport körs.
 * Vissa mätvärden har ingen rimlig jämförelse på grund av skillnader i arkitektur mellan rapportsvitdata och plattformsdata. Exempel är besök/sessioner, personer/människor och förekomster/evenemang.

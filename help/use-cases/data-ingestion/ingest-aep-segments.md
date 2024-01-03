@@ -4,9 +4,10 @@ description: Beskriver hur man importerar Adobe Experience Platform-målgrupper 
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -41,9 +42,9 @@ Innan du kan ta in en målgrupp i Customer Journey Analytics måste du exportera
 
 Du kan skapa ett exportjobb med det målgrupps-ID du väljer och skicka resultatet i den Adobe Experience Platform-datauppsättning för profilunionen som du skapade i steg 2. Även om du kan exportera olika attribut/händelser för målgruppen behöver du bara exportera det specifika profil-ID-fält som matchar det person-ID-fält som används i den Customer Journey Analytics-anslutning som du ska använda (se steg 5 nedan).
 
-## Steg 4: Redigera exportutdata
+## Steg 4: Redigera exporten
 
-Resultaten av exportjobbet måste omvandlas till en separat profildatauppsättning för att kunna hämtas till Customer Journey Analytics.  Den här omvandlingen kan göras med [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)eller något annat omformningsverktyg. Vi behöver bara profil-ID (som matchar person-ID:t i Customer Journey Analytics) och ett eller flera målgrupps-ID:n för att kunna rapportera i Customer Journey Analytics.
+Resultaten av exportjobbet måste omvandlas till en separat profildatauppsättning för att kunna hämtas till Customer Journey Analytics.  Den här omvandlingen kan göras med [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)eller något annat omformningsverktyg du väljer. Vi behöver bara profil-ID (som matchar person-ID:t i Customer Journey Analytics) och ett eller flera målgrupps-ID:n för att kunna rapportera i Customer Journey Analytics.
 
 Standardexportjobbet innehåller emellertid mer data och därför måste vi redigera dessa utdata för att ta bort överflödiga data, liksom flytta runt saker.  Du måste också skapa ett schema/en datauppsättning först innan du lägger till omformade data i den.
 
@@ -62,9 +63,9 @@ Det här är formatet på profildatauppsättningen som du kan skicka till Custom
 
 Här är de dataelement som måste finnas:
 
-* `_aresprodvalidation` strängfält: Hänvisar till ditt organisations-ID. Din blir annorlunda.
-* `personID` strängfält: Det här är det vanliga XDM-schemafältet för profildatauppsättningar som identifierar personen. Använd profil-ID:t från exporten.
-* `audienceMembershipId` strängfält: Målgrupps-ID från exporten.  OBS! Det här fältet kan namnges vad du vill (från ditt eget schema).
+* `_aresprodvalidation` strängfält: Avser ditt organisations-ID. Din blir annorlunda.
+* `personID` strängfält: Detta är standardfältet för XDM-schema i profildatamängder för att identifiera personen. Använd profil-ID:t från exporten.
+* `audienceMembershipId` strängfält: målar-ID:t från exporten.  Obs! Det här fältet kan namnges vad du vill (från ditt eget schema).
 * Lägg till ett eget namn för målgruppen (`audienceMembershipIdName`), till exempel
 
   ![Eget målgruppsnamn](../assets/audience-name.png)
@@ -75,11 +76,11 @@ Här är de dataelement som måste finnas:
 
 Du kan [skapa en ny anslutning](/help/connections/create-connection.md), men de flesta kunder vill lägga till profildatauppsättningen i en befintlig anslutning. Målgrupps-ID:n&quot;berikar&quot; befintliga data i Customer Journey Analytics.
 
-## Steg 6: Ändra befintlig (eller skapa ny) datavy i Customer Journey Analytics
+## Steg 6: Ändra befintlig (eller skapa ny) datavy för Customer Journey Analytics
 
 Lägg till `audienceMembershipId`, `audienceMembershipIdName` och `personID` till datavyn.
 
-## Steg 7: Rapport på arbetsytan
+## Steg 7: Rapport i arbetsytan
 
 Nu kan du rapportera om `audienceMembershipId`, `audienceMembershipIdName` och `personID` i Workspace.
 
@@ -88,6 +89,6 @@ Nu kan du rapportera om `audienceMembershipId`, `audienceMembershipIdName` och `
 * Du bör utföra den här processen regelbundet så att målgruppsdata uppdateras kontinuerligt i Customer Journey Analytics.
 * Du kan importera flera målgrupper inom en enda Customer Journey Analytics-anslutning. Detta gör processen ännu mer komplicerad, men det är möjligt. För att detta ska fungera måste du göra några ändringar i ovanstående process:
    1. Utför den här processen för varje målgrupp i målgruppssamlingen inom RTCP.
-   1. Customer Journey Analytics har stöd för arrayer/objektarrayer i profildatamängder. Använda en [array med objekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) för publikenMembershipId eller audiensMembershipIdName är det bästa alternativet.
-   1. I datavyn skapar du en ny dimension med hjälp av delsträngsomformningen på `audienceMembershipId` fält för att konvertera den kommaavgränsade värdesträngen till en array. OBS! det finns för närvarande en gräns på 10 värden i arrayen.
-   1. Nu kan du rapportera om den nya dimensionen `audienceMembershipIds` på arbetsytan i Customer Journey Analytics.
+   1. Customer Journey Analytics har stöd för arrayer/objektarrayer i profildatamängder. Använda [array med objekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) för publikenMembershipId eller audiensMembershipIdName är det bästa alternativet.
+   1. I datavyn skapar du en ny dimension med hjälp av delsträngsomformningen på `audienceMembershipId` fält för att konvertera den kommaavgränsade värdesträngen till en array. Obs! Det finns för närvarande en gräns på 10 värden i arrayen.
+   1. Nu kan du rapportera om den här nya dimensionen `audienceMembershipIds` på arbetsytan i Customer Journey Analytics.

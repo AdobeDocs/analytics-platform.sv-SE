@@ -3,9 +3,11 @@ title: Vy över konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: a40cfa2498bed03c169eed10cea091574bf90730
+exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---

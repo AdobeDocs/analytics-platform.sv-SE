@@ -4,7 +4,8 @@ description: Inkludera eller exkludera en dimensionsartikel beroende på dess v�
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -17,7 +18,7 @@ Med Inkludera exkluderade värden kan du skapa regler som är beroende av värde
 
 ![Datavyfönster där Inkludera exkluderade värden markeras](../assets/include-exclude.png)
 
-| Inställning | Beskrivning/Använd skiftläge |
+| Inställning | Beskrivning/användningsfall |
 | --- | --- |
 | [!UICONTROL Set include/exclude values] | En kryssruta som gör att du kan aktivera villkor där data inkluderas i en datavy. |
 | [!UICONTROL Case sensitive] | Synlig för datatyperna String-schema. Standardvärdet är på. Den här inställningen gäller endast för [!UICONTROL Include/Exclude Values] logik, inte resultatvärdet. Du kan ange om regeln är skiftlägeskänslig. |

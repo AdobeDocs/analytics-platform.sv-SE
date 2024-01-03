@@ -3,9 +3,10 @@ title: AAID, ECID, AACUSTOMID och Analytics-källkopplingen
 description: Lär dig hur Analytics-källkopplingen hanterar Adobe Analytics identitetsfält.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Adobe Analytics data innehåller flera identitetsfält. Tre viktiga identitetsfält ges särskild behandling av [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en): STÖD, ECID, AACUSTOMID.
 
-## AAID
+## STÖD
 
 Adobe Analytics ID (AAID) är den primära enhetsidentifieraren i Adobe Analytics och finns garanterat för varje händelse som skickas via Analytics-källkopplingen. AAID kallas ibland för &quot;Legacy Analytics ID&quot; eller `s_vi` cookie-id. Ett AID skapas dock även om `s_vi` cookie finns inte. AAID representeras av `post_visid_high/post_visid_low` kolumner i [Adobe Analytics dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en#columns%2C-descriptions%2C-and-data-types).
 

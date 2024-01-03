@@ -4,7 +4,8 @@ description: Jämför prestanda i lika stora perioder före och efter lanseringe
 feature: Guided Analysis
 keywords: produktanalys
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
-source-git-commit: 02044961612a3d0f4f40bdc71c3f00585d702c92
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%

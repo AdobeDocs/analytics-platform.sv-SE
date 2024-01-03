@@ -2,7 +2,9 @@
 description: Att markera filter som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
 title: Markera filter som favoriter
 feature: Filters
-source-git-commit: f1b2b453bc64b54d8c8c01cc562270879b20470f
+exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%

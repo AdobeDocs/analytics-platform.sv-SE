@@ -3,9 +3,10 @@ title: Skapa ett datumintervall
 description: Skapa ett datumintervall för rapportering.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -27,9 +28,9 @@ Så här skapar du ett datumintervall i datumintervallhanteraren:
 
 Det modala fönstret har fyra fält som du kan redigera:
 
-* **Datumintervall**: Datumintervallet som du vill använda för den här komponenten.
+* **Datumintervall**: Det datumintervall som du vill använda för den här komponenten.
 * **Titel**: Namnet som du vill använda för den här komponenten. Titeln används i arbetsyteprojekt.
-* **Beskrivning**: Den beskrivning som du vill använda för den här komponenten. Beskrivningen visas när du klickar på ![i](../assets/i.png) ikon.
+* **Beskrivning**: Den beskrivning du vill använda för den här komponenten. Beskrivningen visas när du klickar på ![i](../assets/i.png) -ikon.
 * **Taggar**: Använd taggar för att ordna datumintervallen. Ett datumintervall kan tillhöra flera taggar.
 
 ## Markera ett datumintervall

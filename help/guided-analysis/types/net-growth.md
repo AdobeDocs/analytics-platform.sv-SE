@@ -3,9 +3,11 @@ title: Vyn Nettotillväxt
 description: Kommer du att få eller förlora användare?
 feature: Guided Analysis
 keywords: produktanalys
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---

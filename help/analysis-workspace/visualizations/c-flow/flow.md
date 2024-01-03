@@ -1,16 +1,17 @@
 ---
 description: Läs mer om funktionen Flöde som visar kundvägar via era webbplatser och appar.
-title: Översikt över flöden
+title: Flödesöversikt
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 3%
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
-# Översikt över flöden
+# Flödesöversikt
 
 Flödesfunktionen visar kundvägar via era webbplatser och appar.
 

@@ -5,9 +5,10 @@ title: Skicka data från Customer Journey Analytics till andra via e-post
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Det finns även andra metoder för att exportera data från Customer Journey Ana
 
 Så här skickar du en fil direkt till mottagarna via e-post:
 
-1. Klicka på **[!UICONTROL Share]>[!UICONTROL Export file]**.
+1. Klicka **[!UICONTROL Share]>[!UICONTROL Export file]**.
 1. Ange filtyp:
    * [!UICONTROL **CSV**]: Välj det här alternativet om du vill ha oformaterade textdata.
    * [!UICONTROL **PDF**]: Välj det här alternativet om du vill att den hämtade filen ska innehålla alla tabeller och visualiseringar som visas i projektet.
@@ -40,7 +41,7 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
-1. Klicka på **[!UICONTROL Share]>[!UICONTROL Schedule file export]**.
+1. Klicka **[!UICONTROL Share]>[!UICONTROL Schedule file export]**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.

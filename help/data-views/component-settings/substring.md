@@ -4,10 +4,11 @@ description: Använd en delmängd av en sträng som dimensionsobjekt.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 708dc7c69480534b118c8454d65a907946cfcce7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
+source-wordcount: '842'
+ht-degree: 0%
 
 ---
 
@@ -25,12 +26,12 @@ Ta en del av en sträng baserat på dess position till början eller slutet av e
 
 * **[!UICONTROL String Start]**: Strängens början.
 * **[!UICONTROL String End]**: Strängens slut.
-* **[!UICONTROL Position]**: Ett statiskt antal tecken från vänster eller höger, beroende på metoden.
+* **[!UICONTROL Position]**: Ett statiskt antal tecken från vänster eller höger, beroende på metod.
 * **[!UICONTROL String]**: Matcha ett tecken eller en teckensekvens för att ange början eller slutet av en sträng. Den här listrutan visar även ytterligare alternativ:
-   * **[!UICONTROL Match]**: Strängen som ska matchas. Om indata inte matchar det här fältet [Inga värdealternativ](no-value-options.md) gäller.
-   * **[!UICONTROL Index]**: The **[!UICONTROL Match]** -villkor kan finnas flera gånger i en sträng. Det här heltalet avgör vilken matchning som ska användas för att starta eller avsluta utdata, beroende på metoden. Ett index på `1` representerar den första matchningen. Om indexvärdet är högre än antalet matchningar som är tillgängliga, [Inga värdealternativ](no-value-options.md) gäller.
+   * **[!UICONTROL Match]**: Den sträng som ska matchas. Om indata inte matchar det här fältet [Inga värdealternativ](no-value-options.md) gäller.
+   * **[!UICONTROL Index]**: **[!UICONTROL Match]** -villkor kan finnas flera gånger i en sträng. Det här heltalet avgör vilken matchning som ska användas för att starta eller avsluta utdata, beroende på metoden. Ett index på `1` representerar den första matchningen. Om indexvärdet är högre än antalet matchningar som är tillgängliga, [Inga värdealternativ](no-value-options.md) gäller.
    * **[!UICONTROL Include String]**: En kryssruta som innehåller **[!UICONTROL Match]** i utdata om det är aktiverat.
-* **[!UICONTROL Length]**: Ett heltal som anger det teckenantal som ska inkluderas efter startpositionen för utdata. Endast tillgängligt under **[!UICONTROL To]** nedrullningsbar lista.
+* **[!UICONTROL Length]**: Ett heltal som anger antalet tecken som ska inkluderas efter utdatafilens startposition. Endast tillgängligt under **[!UICONTROL To]** listruta.
 
 ## Avgränsare
 
@@ -41,17 +42,17 @@ Använd den här metoden för fält där en avgränsare används för att avgrä
    * **[!UICONTROL From the Right]**: Börja i slutet av den avgränsade listan och räkna bakåt.
    * **[!UICONTROL Convert to array]**: Behandla den här dimensionen som om den är ett objektmatrisschemaelement.
 * **[!UICONTROL Delimiter]**: Den avgränsare som fältet använder.
-* **[!UICONTROL Index]**: Endast tillgängligt om villkoret är Från vänster/höger. Elementnumret som om det fanns i en array. Om strängindata till exempel är `"Fox,Turtle,Rabbit,Wolf"` med indexvärdet 3 är utdata `"Rabbit"`. Om indexvärdet är högre än antalet avgränsade element, [Inga värdealternativ](no-value-options.md) gäller.
+* **[!UICONTROL Index]**: Finns endast om villkoret är Från vänster/höger. Elementnumret som om det fanns i en array. Om strängindata till exempel är `"Fox,Turtle,Rabbit,Wolf"` med indexvärdet 3 är utdata `"Rabbit"`. Om indexvärdet är högre än antalet avgränsade element, [Inga värdealternativ](no-value-options.md) gäller.
 
 ## URL-analys
 
 För användning med fält som innehåller URL-adresser. Använda exempel-URL `https://example.com/store/index.html?cid=campaign#cart`, finns följande alternativ:
 
-* **[!UICONTROL Get protocol]**: Hämta URL:ens protokoll. Exempel, `"https://"`.
-* **[!UICONTROL Get host]**: Hämta URL:ens värd. Exempel, `"example.com"`.
-* **[!UICONTROL Get path]**: Hämta URL:ens sökväg. Exempel, `"store/index.html"`.
+* **[!UICONTROL Get protocol]**: Hämta URL:ens protokoll. Till exempel: `"https://"`.
+* **[!UICONTROL Get host]**: Hämta URL:ens värd. Till exempel: `"example.com"`.
+* **[!UICONTROL Get path]**: Hämta URL:ens sökväg. Till exempel: `"store/index.html"`.
 * **[!UICONTROL Get query string value]**: Hämta värdet från en enskild frågesträng. Placera den önskade frågesträngsparametern i **[!UICONTROL Query key]** fält. Om ovanstående URL används med `"cid"` frågenyckel, utdata är `"campaign"`.
-* **[!UICONTROL Get hash value]**: Hämta URL:ens hash-värde. Exempel, `"cart"`.
+* **[!UICONTROL Get hash value]**: Hämta URL:ens hash-värde. Till exempel: `"cart"`.
 
 Om indata inte är en giltig URL eller om den önskade URL-komponenten saknas, [Inga värdealternativ](no-value-options.md) gäller.
 
@@ -99,7 +100,7 @@ Customer Journey Analytics använder en delmängd av Perl-regex-syntaxen. Om ind
 | `(?:...)` | Ej markerad hämtning. Förhindrar att matchningen refereras i utdatasträngen. |
 | `a?` | Noll eller något av `a`. |
 | `a*` | Noll eller mer av `a`. |
-| `a+` | En eller flera av `a`. |
+| `a+` | En till `a`. |
 | `a{3}` | Exakt 3 av `a`. |
 | `a{3,}` | 3 eller fler av `a`. |
 | `a{3,6}` | Mellan 3 och 6 av `a`. |
@@ -112,6 +113,6 @@ Utdataplatshållare stöds också. Du kan använda dessa sekvenser i **[!UICONTR
 | `$n` | Matchar det n:te underuttrycket. Till exempel: `$1` returnerar det första underuttrycket. |
 | ``$` `` | Texten skapas mellan slutet av den senaste matchningen (eller början av texten om ingen tidigare matchning hittades) och början av den aktuella matchningen. |
 | `$+` | Matchar det senast markerade deluttrycket i det reguljära uttrycket. |
-| `$$` | Utdata för strängtecknet `"$"`. |
+| `$$` | Visar strängtecknet `"$"`. |
 
 {style="table-layout:auto"}

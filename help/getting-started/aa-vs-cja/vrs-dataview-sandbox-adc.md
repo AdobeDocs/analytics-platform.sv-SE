@@ -3,9 +3,10 @@ title: Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor o
 description: Läs mer om virtuella rapportmiljöer och sandlådemiljöer.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---

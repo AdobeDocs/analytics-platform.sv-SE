@@ -4,14 +4,15 @@ description: Lär dig vilka komponenter Customer Journey Analytics erbjuder och 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1046'
 ht-degree: 5%
 
 ---
 
-# Komponenter – översikt
+# Komponenter - översikt
 
 Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller som komplement till rapporteringsfunktioner. Du kan hantera de här komponenterna med följande steg:
 
@@ -113,7 +114,7 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 
 3. Välj något av följande filteralternativ för att filtrera komponentlistan:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
    | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Hantera komponenter](#manage-components). |
