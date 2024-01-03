@@ -1,14 +1,14 @@
 ---
 title: Filtrera dimensioner i Report Builder
 description: Beskriver hur du använder filterdimensioner i Report Builder för Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Tabellen nedan innehåller exempel på sid- och radvärden och resultatet.
 | 2 | 10 | Objekt 11-20 |
 | 1 | 100 | Top 100 items |
 | 2 | 100 | Posterna 101-200 |
-| 2 | 50,000 | 50 001-100 000 |
+| 2 | 50 000 | 50 001-100 000 |
 
 #### Minimum- och maximum-värden
 

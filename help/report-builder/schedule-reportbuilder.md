@@ -1,14 +1,14 @@
 ---
 title: Så här schemalägger du arbetsböcker med Report Builder i Customer Journey Analytics
 description: Lär dig hur du använder schemafunktionen i Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 063fc71a9c0bbcadb1348aa4c41c64bed08a51f6
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1170'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Med funktionen Schemalägg kan du även konfigurera lösenordsskydd för en arbe
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on)
 
-## Schemalägga en arbetsbok
+## Schemalägg en arbetsbok
 
 Använd uppgiftsknappen Schemalägg i Report Builder-hubben för att snabbt skapa ett schema så att du automatiskt kan distribuera en Excel-arbetsboksfil (.xlsx) till en individ eller en grupp.
 

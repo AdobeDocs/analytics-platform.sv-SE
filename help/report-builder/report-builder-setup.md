@@ -1,12 +1,12 @@
 ---
 title: Konfigurera Report Builder i Customer Journey Analytics
 description: Beskriver hur du konfigurerar Report Builder i Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%

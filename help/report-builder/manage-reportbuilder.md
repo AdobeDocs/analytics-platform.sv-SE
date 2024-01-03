@@ -1,12 +1,12 @@
 ---
 title: Hantera datablock med Report Builder i Customer Journey Analytics
 description: Beskriver hur du använder hanteringsfunktionen i Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%

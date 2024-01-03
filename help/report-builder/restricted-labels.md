@@ -1,14 +1,14 @@
 ---
 title: Vad är begränsade etiketter i Report Builder?
 description: Beskriver begränsade etiketter i Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
