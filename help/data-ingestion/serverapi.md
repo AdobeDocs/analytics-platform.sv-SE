@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,10 @@ Så här konfigurerar du ditt schema:
    ![Knappen Lägg till fält i exempelschema](./assets/example-gamingschema-plus.png)
 
 1. I [!UICONTROL Field Properties] panel, ange `identification` som [!UICONTROL Field name], **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
+
+   >[!NOTE]
+   >
+   >Om fältgruppen inte är tillgänglig söker du efter en annan fältgrupp som innehåller identitetsfält. eller [skapa en ny fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) och [lägg till nya identitetsfält](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (som `ecid`, `crmId`och andra som du behöver) till fältgruppen och markera den nya fältgruppen.
 
    ![Identifieringsobjekt](./assets/identification-field-gaming.png)
 
