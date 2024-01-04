@@ -4,9 +4,9 @@ description: Läs om skyddsräckena för Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
+source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1478'
 ht-degree: 5%
 
 ---
@@ -210,8 +210,9 @@ Se även Experience Platform [Guardsedningar för datainmatning](https://experie
 | Adobe Analytics källanslutning till kundprofil i realtid (A4T är inte aktiverat) | &lt; 2 minuter |
 | Adobe Analytics källanslutning till kundprofil i realtid (A4T aktiverat) | &lt; 30 minuter |
 | Intag av data i datasjön från Edge Network eller direktuppspelning | &lt; 60 minuter |
-| Inmatning av data i Data Lake från Adobe Analytics-källanslutning | &lt; 90 minuter |
+| Inmatning av data i Data Lake från Adobe Analytics-källanslutning | &lt; 2,25 timmar |
 | Intag av data i Customer Journey Analytics från datasjön | &lt; 90 minuter |
+| Stitching (valfri funktion; se [Översikt över titlar](../stitching/overview.md) för mer information) | &lt; 3,25 timmar |
 | Bakåtfyllnad av Adobe Analytics källanslutning på mindre än 10 miljarder händelser (maximalt 13 månaders historiska data) | &lt; 4 veckor |
 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | cirka 60 minuter |
 | Uppdateringsfrekvens för målgrupper | Engångsuppdatering: fördröjning på mindre än 5 minuter.<br/>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen). |
