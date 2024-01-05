@@ -5,7 +5,7 @@ title: Hantera exporter
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
+source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -137,7 +137,7 @@ Välj en kolumnrubrik om du vill sortera exporten efter den kolumnen. Som standa
    | Namn | Namnet på exporten. Användare ger exporterar ett namn när de skapar dem, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
    | ID | Det ID som automatiskt tilldelas till exporten när den skapas. <!-- True? --> |
    | Datavy name | Namnet på datavyn som är associerad med exporten. Användarna kan välja datavyn när de skapar exporten, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
-   | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Active], [!UICONTROL Complete]och [!UICONTROL Failed].<p> **Obs!** Mer information om felsökning av misslyckade exporter finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p> |
+   | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Active], [!UICONTROL Completed]och [!UICONTROL Failed].<p> **Obs!** Mer information om felsökning av misslyckade exporter finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p> |
    | Taggar | Visar eventuella märkord som används i exporten. Mer information om hur du använder märkord i en export finns i [Tagga en export](#tag-an-export). |
    | Tabellstorlek (senaste sändning) | Storleken på exporten när den senast skickades. |
    | Skapad av | Användaren som skapade exporten. |
