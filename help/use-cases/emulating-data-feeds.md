@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Du kan också använda `identityMap` för att fråga efter identiteter. Det här
 
 Vilka XDM-fält du kan använda i frågan beror på schemadefinitionen som datamängderna baseras på. Se till att du förstår schemat som ligger till grund för datauppsättningen.
 
-För att underlätta mappningen mellan kolumnerna för dataflöde och XDM-fälten bör du överväga att ta med [Adobe Analytics ExperienceEvent-mall](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) fältgrupp i ditt händelseschema för upplevelser. Se [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) och mer specifikt [Schemafältgrupper för Adobe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+Om du vill definiera mappningen mellan kolumnerna för datafeed och XDM-fälten bör du överväga att inspektera och eventuellt (återanvända) använda vissa aspekter av [Adobe Analytics ExperienceEvent-mall](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) fältgrupp. Se [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) och mer specifikt [Schemafältgrupper för Adobe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
 
 Om du till exempel vill använda *sidnamn* som en del av ditt dataflöde:
 
