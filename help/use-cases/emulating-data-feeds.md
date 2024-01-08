@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
+source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2533'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Du kan använda all funktionalitet som finns i ANSI SQL för SELECT-satser och a
 
 I Experience Platform finns olika identiteter. När du skapar dina frågor måste du kontrollera att du frågar identiteter korrekt.
 
-Du hittar ofta identiteter i en separat fältgrupp. I en implementering av ECID (`ecid`) kan definieras som en del av en fältgrupp med en `core` -objekt, som i sin tur är en del av ett `identification` -objekt. (till exempel: `_sampleorg.identification.core.ecid`). ECID:n kan ordnas på olika sätt i dina scheman.
+Du hittar ofta identiteter i en separat fältgrupp. I en implementering av ECID (`ecid`) kan definieras som en del av en fältgrupp med en `core` -objekt, som i sin tur är en del av ett `identification` -objekt (till exempel: `_sampleorg.identification.core.ecid`). ECID:n kan ordnas på olika sätt i dina scheman.
 
 Du kan också använda `identityMap` för att fråga efter identiteter. Det här objektet är av typen `Map` och använder [kapslad datastruktur](#nested-data-structure).
 
@@ -73,7 +73,7 @@ Om du till exempel vill använda *sidnamn* som en del av ditt dataflöde:
 * I Adobe Analytics Data Feed&#39;s UI väljer du **[!UICONTROL pagename]** som den kolumn som ska läggas till i dataflödesdefinitionen.
 * I frågetjänsten inkluderar du `web.webPageDetails.name` från `sample_event_dataset_for_website_global_v1_1` datauppsättning (baserat på **Exempel på händelseschema för webbplats (Global v1.1)** händelseschema) i din fråga. Se [Schemafältgrupp för webbinformation](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) för mer information.
 
-Mer information om mappningen mellan tidigare Adobe Analytics-dataflödeskolumner och XDM-fält i händelsedatamängden och det underliggande schemat finns i [Mappning av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) och [Schemafältgruppen Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) för mer information.
+Mer information om mappningen mellan Adobe Analytics-dataflödeskolumner och XDM-fält i händelsedatamängden och det underliggande schemat finns i [Mappning av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) och [Schemafältgruppen Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) för mer information.
 
 Dessutom har [automatiskt insamlade uppgifter från Experience Platform Web SDK (utanför paketet)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) kan vara relevant för att identifiera kolumner för din fråga.
 
@@ -84,20 +84,20 @@ Baserat på implementeringen lagras data på träffnivå som traditionellt samla
 | Datafeedkolumn | XDM-fält | Typ | Beskrivning |
 |---|---|---|---|
 | hitid_high + hitid_low | _id | string | En unik identifierare som identifierar en träff. |
-| hitid_low | _id | string | Används tillsammans med hitid_high för att unikt identifiera en träff. |
-| hitid_high | _id | string | Används tillsammans med hitid_high för att unikt identifiera en träff. |
-| hit_time_gmt | receiveTimestamp | string | Tidsstämpeln för träffen, baserad på Unix-tid. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Tidsstämpel för besökarens första träff i Unix-tid. |
-| cust_hit_time_gmt | tidsstämpel | string | Detta används endast i tidsstämpelaktiverade datauppsättningar. Det här är den tidsstämpel som skickas med den, baserat på Unix-tid. |
+| hitid_low | _id | string | Används med hitid_high för att unikt identifiera en träff. |
+| hitid_high | _id | string | Används med hitid_high för att unikt identifiera en träff. |
+| hit_time_gmt | receiveTimestamp | string | Tidsstämpeln för träffen, baserad på UNIX®-tid. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Tidsstämpel för besökarens första träff i UNIX®-tid. |
+| cust_hit_time_gmt | tidsstämpel | string | Detta används endast i tidsstämpelaktiverade datauppsättningar. Det här är den tidsstämpel som skickas med träffen, baserat på UNIX®-tid. |
 | visid_high + visid_low | identityMap | object | En unik identifierare för ett besök. |
 | visid_high + visid_low | endUserID:n._experience.aaid.id | string | En unik identifierare för ett besök. |
-| visid_high | endUserID:n._experience.aaid.primär | boolesk | Används tillsammans med visid_low för att unikt identifiera ett besök. |
-| visid_high | endUserID:n._experience.aaid.namespace.code | string | Används tillsammans med visid_low för att unikt identifiera ett besök. |
-| visid_low | identityMap | object | Används tillsammans med visid_high för att unikt identifiera ett besök. |
+| visid_high | endUserID:n._experience.aaid.primär | boolesk | Används med visid_low för att unikt identifiera ett besök. |
+| visid_high | endUserID:n._experience.aaid.namespace.code | string | Används med visid_low för att unikt identifiera ett besök. |
+| visid_low | identityMap | object | Används med visid_high för att unikt identifiera ett besök. |
 | cust_visid | identityMap | object | Kundbesökaren I.D |
 | cust_visid | endUserID:n._experience.acustomid.id | object | Kundens besökar-ID. |
 | cust_visid | endUserID:n._experience.acustomid.primär | boolesk | Kundbesökarens ID-namnområdeskod. |
-| cust_visid | endUserID:n._experience.acustomid.namespace.code | string | Används tillsammans med visid_low för att unikt identifiera kundbesöks-ID. |
+| cust_visid | endUserID:n._experience.acustomid.namespace.code | string | Används med visid_low för att unikt identifiera kundbesöks-ID. |
 | geo\_* | placeContext.geo.* | sträng, tal | Geolokaliseringsdata, som land, region, stad och andra |
 | besök_sidnummer | _experience.analytics.session.depth | tal | En variabel som används i dimensionen Träff. Värdet ökar med 1 för varje träff som användaren skapar och återställs efter varje besök. |
 | event_list | commerce.purchasing, commerce.productViews, commerce.productListOpen, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Standardhandel och anpassade händelser som utlöses vid träffen. |
@@ -105,8 +105,8 @@ Baserat på implementeringen lagras data på träffnivå som traditionellt samla
 | page_event | web.webInteraction.linkClicks.value | tal | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, slutlänk eller anpassad länk som klickats). |
 | page_event_var_1 | web.webInteraction.URL | string | En variabel som bara används för bildbegäran för länkspårning. Den här variabeln innehåller URL:en för den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickat på. |
 | page_event_var_2 | web.webInteraction.name | string | En variabel som bara används för bildbegäran för länkspårning. Här visas länkens egna namn, om det har angetts. |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Det numeriska ID:t som representerar referenstypen för besökarens allra första referent. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | heltal | Tidsstämpel för besökarens första träff i Unix-tid. |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Det numeriska ID:t som representerar referenstypen för besökarens första referent. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | heltal | Tidsstämpel för besökarens första träff i UNIX®-tid. |
 | paid_search | search.isPaid | boolesk | En flagga som anges om träffen matchar betalsökningsidentifiering. |
 | ref_type | web.webReferrertype | string | Ett numeriskt ID som representerar typen av referens för träffen. |
 
@@ -114,7 +114,7 @@ Baserat på implementeringen lagras data på träffnivå som traditionellt samla
 
 Adobe Analytics Data Feeds använder begreppet kolumner med en `post_` -prefix, som är kolumner som innehåller data efter bearbetning. Se [Vanliga frågor om dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post) för mer information.
 
-Data som samlas in i datauppsättningar via Experience Platform Edge Network (Web SDK, Mobile SDK, Server API) har inget koncept `post_` fält, vilket förklarar varför `post_` prefix och *ej* `post_` Kolumner för prefix-datafeed i analysfältet mappas till samma XDM-fält. Till exempel båda `page_url` och `post_page_url` dataflödeskolumner mappas till samma `web.webPageDetails.URL` XDM-fält.
+Data som samlas in i datauppsättningar via Experience Platform Edge Network (Web SDK, Mobile SDK, Server API) har inget koncept `post_` fält. Detta resulterar i `post_` prefix och *ej*-`post_` kolumner för prefix-datafeed mappas till samma XDM-fält. Till exempel båda `page_url` och `post_page_url` dataflödeskolumner mappas till samma `web.webPageDetails.URL` XDM-fält.
 
 Se [Jämför databehandling i Adobe Analytics och Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en) för en översikt över skillnaden i databehandling.
 
@@ -168,11 +168,11 @@ Se [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleag
 
 #### Exempel
 
-Exempelfrågor som använder data från datauppsättningar i datavjön på Experience Platform, utnyttjar de extra funktionerna i Adobe Defined Function och/eller Spark SQL, och som skulle ge liknande resultat som en likvärdig Adobe Analytics datafeed, finns i
+För frågor som använder data från datauppsättningar i datarjön på Experience Platform, som utnyttjar de extra funktionerna i Adobe Defined Function och/eller Spark SQL, och som skulle ge liknande resultat som en likvärdig Adobe Analytics datafeed, finns mer information i
 
-* [övergiven surfning](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
-* [attribueringsanalys](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
-* [startsfiltrering](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* [övergiven surfning](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en)
+* [attribueringsanalys](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en)
+* [startsfiltrering](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)
 * och andra exempel på hur du kan använda dem i guiden för frågetjänsten.
 
 
@@ -238,7 +238,7 @@ Du kan också exportera och schemalägga export av utdatamängder med API:er. St
 
 #### Kom igång
 
-Se till att du har [nödvändiga behörigheter](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions) för att exportera datauppsättningar och att målet dit du vill skicka din utdatauppsättning har stöd för export av datauppsättningar. Då måste du [samla in värden för obligatoriska och valfria rubriker](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) du använder i API-anropen, samt [identifiera anslutningsspecifikation och flödesspec-ID för destinationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) du tänker exportera datauppsättningar till.
+Om du vill exportera datauppsättningar måste du ha [nödvändiga behörigheter](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions). Verifiera också att målet dit du vill skicka din utdatauppsättning har stöd för export av datauppsättningar. Då måste du [samla in värden för obligatoriska och valfria rubriker](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) som du använder i API-anropen. Du måste också [identifiera anslutningsspecifikation och flödesspec-ID för destinationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) du tänker exportera datauppsättningar till.
 
 #### Hämta giltiga datauppsättningar
 
