@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
+source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
@@ -52,30 +52,36 @@ Du kan använda all funktionalitet som finns i ANSI SQL för SELECT-satser och a
 * [metadata PostgreSQL-kommandon](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [förberedda programsatser](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
-
-#### Identiteter
-
-I Experience Platform finns olika identiteter. När du skapar dina frågor måste du kontrollera att du frågar identiteter korrekt.
-
-Du hittar ofta identiteter i en separat fältgrupp. I en implementering av ECID (`ecid`) kan definieras som en del av en fältgrupp med en `core` -objekt, som i sin tur är en del av ett `identification` -objekt (till exempel: `_sampleorg.identification.core.ecid`). ECID:n kan ordnas på olika sätt i dina scheman.
-
-Du kan också använda `identityMap` för att fråga efter identiteter. Det här objektet är av typen `Map` och använder [kapslad datastruktur](#nested-data-structure).
-
-
 #### Datautmatningskolumner
 
-Vilka XDM-fält du kan använda i frågan beror på schemadefinitionen som datamängderna baseras på. Se till att du förstår schemat som ligger till grund för datauppsättningen.
+Vilka XDM-fält du kan använda i frågan beror på schemadefinitionen som datamängderna baseras på. Se till att du förstår schemat som ligger till grund för datauppsättningen. Se [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en) för mer information.
 
-Om du vill definiera mappningen mellan kolumnerna för datafeed och XDM-fälten bör du överväga att inspektera och eventuellt (återanvända) använda vissa aspekter av [Adobe Analytics ExperienceEvent-mall](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) fältgrupp. Se [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) och mer specifikt [Schemafältgrupper för Adobe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+Information om hur du definierar mappningen mellan kolumnerna för dataflöde och XDM-fälten finns i [Mappning av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en). Se även [Översikt över schemaanvändargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en#defining-xdm-fields) för mer information om hur du hanterar XDM-resurser, inklusive scheman, klasser, fältgrupper och datatyper.
 
 Om du till exempel vill använda *sidnamn* som en del av ditt dataflöde:
 
 * I Adobe Analytics Data Feed&#39;s UI väljer du **[!UICONTROL pagename]** som den kolumn som ska läggas till i dataflödesdefinitionen.
 * I frågetjänsten inkluderar du `web.webPageDetails.name` från `sample_event_dataset_for_website_global_v1_1` datauppsättning (baserat på **Exempel på händelseschema för webbplats (Global v1.1)** händelseschema) i din fråga. Se [Schemafältgrupp för webbinformation](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) för mer information.
 
-Mer information om mappningen mellan Adobe Analytics-dataflödeskolumner och XDM-fält i händelsedatamängden och det underliggande schemat finns i [Mappning av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) och [Schemafältgruppen Adobe Analytics ExperienceEvent Full Extension](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) för mer information.
+<!--
+To understand the mapping between Adobe Analytics data feed columns and XDM fields in your experience event dataset and underlying schema, see [Analytics fields mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) and [Adobe Analytics ExperienceEvent Full Extension schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) for more information.
 
-Dessutom har [automatiskt insamlade uppgifter från Experience Platform Web SDK (utanför paketet)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) kan vara relevant för att identifiera kolumner för din fråga.
+Furthermore, the [automatically collected information by the Experience Platform Web SDK (out of the box)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) might be relevant to identify columns for your query.
+-->
+
+#### Identiteter
+
+I Experience Platform finns olika identiteter. När du skapar dina frågor måste du kontrollera att du frågar identiteter korrekt.
+
+
+Du hittar ofta identiteter i en separat fältgrupp. I en implementering av ECID (`ecid`) kan definieras som en del av en fältgrupp med en `core` -objekt, som i sin tur är en del av ett `identification` -objekt (till exempel: `_sampleorg.identification.core.ecid`). ECID:n kan ordnas på olika sätt i dina scheman.
+
+Du kan också använda `identityMap` för att fråga efter identiteter. Det här objektet är av typen `Map` och använder [kapslad datastruktur](#nested-data-structure).
+
+Se [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en) om du vill ha mer information om hur du definierar identitetsfält i Experience Platform.
+
+Se [Primära identifierare i analysdata](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#primary-identifiers-in-analytics-data) för att förstå hur Adobe Analytics-identiteter mappas till Experience Platform-identiteter när du använder Analytics-källkopplingen. Detta kan fungera som vägledning när du skapar dina identiteter, även när du inte använder Analytics-källkopplingen.
+
 
 #### Data och identifiering på träffnivå
 
@@ -83,32 +89,28 @@ Baserat på implementeringen lagras data på träffnivå som traditionellt samla
 
 | Datafeedkolumn | XDM-fält | Typ | Beskrivning |
 |---|---|---|---|
-| hitid_high + hitid_low | _id | string | En unik identifierare som identifierar en träff. |
-| hitid_low | _id | string | Används med hitid_high för att unikt identifiera en träff. |
-| hitid_high | _id | string | Används med hitid_high för att unikt identifiera en träff. |
-| hit_time_gmt | receiveTimestamp | string | Tidsstämpeln för träffen, baserad på UNIX®-tid. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Tidsstämpel för besökarens första träff i UNIX®-tid. |
-| cust_hit_time_gmt | tidsstämpel | string | Detta används endast i tidsstämpelaktiverade datauppsättningar. Det här är den tidsstämpel som skickas med träffen, baserat på UNIX®-tid. |
-| visid_high + visid_low | identityMap | object | En unik identifierare för ett besök. |
-| visid_high + visid_low | endUserID:n._experience.aaid.id | string | En unik identifierare för ett besök. |
-| visid_high | endUserID:n._experience.aaid.primär | boolesk | Används med visid_low för att unikt identifiera ett besök. |
-| visid_high | endUserID:n._experience.aaid.namespace.code | string | Används med visid_low för att unikt identifiera ett besök. |
-| visid_low | identityMap | object | Används med visid_high för att unikt identifiera ett besök. |
-| cust_visid | identityMap | object | Kundbesökaren I.D |
-| cust_visid | endUserID:n._experience.acustomid.id | object | Kundens besökar-ID. |
-| cust_visid | endUserID:n._experience.acustomid.primär | boolesk | Kundbesökarens ID-namnområdeskod. |
-| cust_visid | endUserID:n._experience.acustomid.namespace.code | string | Används med visid_low för att unikt identifiera kundbesöks-ID. |
-| geo\_* | placeContext.geo.* | sträng, tal | Geolokaliseringsdata, som land, region, stad och andra |
-| besök_sidnummer | _experience.analytics.session.depth | tal | En variabel som används i dimensionen Träff. Värdet ökar med 1 för varje träff som användaren skapar och återställs efter varje besök. |
-| event_list | commerce.purchasing, commerce.productViews, commerce.productListOpen, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Standardhandel och anpassade händelser som utlöses vid träffen. |
-| page_event | web.webInteraction.type | string | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, slutlänk eller anpassad länk som klickats). |
-| page_event | web.webInteraction.linkClicks.value | tal | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, slutlänk eller anpassad länk som klickats). |
-| page_event_var_1 | web.webInteraction.URL | string | En variabel som bara används för bildbegäran för länkspårning. Den här variabeln innehåller URL:en för den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickat på. |
-| page_event_var_2 | web.webInteraction.name | string | En variabel som bara används för bildbegäran för länkspårning. Här visas länkens egna namn, om det har angetts. |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Det numeriska ID:t som representerar referenstypen för besökarens första referent. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | heltal | Tidsstämpel för besökarens första träff i UNIX®-tid. |
-| paid_search | search.isPaid | boolesk | En flagga som anges om träffen matchar betalsökningsidentifiering. |
-| ref_type | web.webReferrertype | string | Ett numeriskt ID som representerar typen av referens för träffen. |
+| `hitid_high` + `hitid_low` | `_id` | string | En unik identifierare som identifierar en träff. |
+| `hitid_low` | `_id` | string | Används med `hitid_high` för att unikt identifiera en träff. |
+| `hitid_high` | `_id` | string | Används med `hitid_high` för att unikt identifiera en träff. |
+| `hit_time_gmt` | `receivedTimestamp` | string | Tidsstämpeln för träffen, baserad på UNIX®-tid. |
+| `cust_hit_time_gmt` | `timestamp` | string | Detta används endast i tidsstämpelaktiverade datauppsättningar. Det här är den tidsstämpel som skickas med träffen, baserat på UNIX®-tid. |
+| `visid_high` + `visid_low` | `identityMap` | object | En unik identifierare för ett besök. |
+| `visid_high` + `visid_low` | `endUserIDs._experience.aaid.id` | string | En unik identifierare för ett besök. |
+| `visid_high` | `endUserIDs._experience.aaid.primary` | boolesk | Används med `visid_low` för att unikt identifiera ett besök. |
+| `visid_high` | `endUserIDs._experience.aaid.namespace.code` | string | Används med `visid_low` för att unikt identifiera ett besök. |
+| `visid_low` | `identityMap` | object | Används med `visid_high` för att unikt identifiera ett besök. |
+| `cust_visid` | `identityMap` | object | Kundens besökar-ID. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.id` | object | Kundens besökar-ID. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.primary` | boolesk | Kundbesökarens ID-namnområdeskod. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Används med `visid_low` för att unikt identifiera kundbesöks-ID:t. |
+| `geo\_*` | `placeContext.geo.* ` | sträng, tal | Geolokaliseringsdata, som land, region, stad och andra |
+| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Standardhandel och anpassade händelser som utlöses vid träffen. |
+| `page_event` | `web.webInteraction.type` | string | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, slutlänk eller anpassad länk som klickats). |
+| `page_event` | `web.webInteraction.linkClicks.value` | tal | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, slutlänk eller anpassad länk som klickats). |
+| `page_event_var_1` | `web.webInteraction.URL` | string | En variabel som bara används för bildbegäran för länkspårning. Den här variabeln innehåller URL:en för den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickat på. |
+| `page_event_var_2` | `web.webInteraction.name` | string | En variabel som bara används för bildbegäran för länkspårning. Här visas länkens egna namn, om det har angetts. |
+| `paid_search` | `search.isPaid` | boolesk | En flagga som anges om träffen matchar betalsökningsidentifiering. |
+| `ref_type` | `web.webReferrertype` | string | Ett numeriskt ID som representerar typen av referens för träffen. |
 
 #### Bokför kolumner
 
