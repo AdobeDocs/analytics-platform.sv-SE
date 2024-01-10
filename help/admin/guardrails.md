@@ -4,9 +4,9 @@ description: Läs om skyddsräckena för Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
+source-git-commit: 85aea47146d4079606ccdeb1bcc29d41bbf49837
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 5%
 
 ---
@@ -76,7 +76,7 @@ Vissa funktioner och deras associerade värde för gränsen beror på vilket Cus
 | Frekvens för målgruppsuppdatering | 4 | Systemstyrt skyddsräcke | Maximal frekvens i timmar [publik](../components/audiences/audiences-overview.md) kan uppdateras. | |
 | Uppslagsfönster för uppdatering av målgrupp | 90 | Systemstyrt skyddsräcke | Maximalt antal dagar för uppdateringsfönster. |
 | Uppdaterar målgruppens förfallodatum | 13 | Systemstyrt skyddsräcke | Det maximala antalet månader som publiken inte längre kan uppdatera från det datum då den skapades. Kunderna kan förlänga denna period i ytterligare 13 månader. |
-| Antal uppdaterade målgrupper | 75, 100, 150 | Systemstyrt skyddsräcke | Maximalt antal uppdaterade målgrupper, värdet varierar beroende på paketet. |
+| Antal uppdaterade målgrupper | 75, 100 | Systemstyrt skyddsräcke | Maximalt antal uppdaterade målgrupper, värdet varierar beroende på paketet (se produktbeskrivning). |
 
 {style="table-layout:auto"}
 
