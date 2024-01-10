@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1d248ebfef9c5f31662f74535a005b6cd7ccea15
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5674'
 ht-degree: 3%
 
 ---
@@ -1280,6 +1280,34 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 - Du kan använda högst tio olika schemafält (exklusive standardfält) när du definierar regler för ett härlett fält.
    - Från det här maxantalet på tio olika schemafält tillåts bara maximalt tre sökschemafält eller profilschemafält.
 - Du kan ha högst 100 härledda fält per Customer Journey Analytics-anslutning.
+
+
+### Sammanfattning av funktionsbegränsningar
+
+| Funktion | Gränser |
+|---|---|
+| <p>Skiftläge</p> | <ul><li>5 Skiftläge När funktioner per härlett fält</li><li>200 operatorer per härlett fält</li></ul> |
+| <p>Klassificera</p> | <ul><li>5 Klassificera funktioner per härlett fält</li><li>100 rader per funktion</li></ul> |
+| <p>Sammanfoga</p> | <ul><li>2 Sammanfogningsfunktioner per härlett fält</li></ul> |
+| <p>Sök och ersätt</p> | <ul><li>2 Sök och ersätt-funktioner per härlett fält</li></ul> |
+| <p>Sök</p> | <ul><li>5 Sökfunktioner per härlett fält</li></ul> |
+| <p>Gemener</p> | <ul><li>2 Gemener per härlett fält</li></ul> |
+| <p>Sammanfoga fält</p> | <ul><li>2 Funktioner för att slå samman fält per härlett fält</li></ul> |
+| <p>Regex Replace</p> | <ul><li>1 Regex Replace-funktion per härlett fält</li></ul> |
+| <p>Dela</p> | <ul><li>5 Delningsfunktioner per härlett fält</li></ul> |
+| <p>Rensa</p> | <ul><li>1 Trimningsfunktion per härlett fält</li></ul> |
+| <p>URL-parsning</p> | <ul><li>5 URL-tolkningsfunktioner per härlett fält</li></ul> |
+
+{style="table-layout:auto"}
+
+### Operatorer
+
+En operator i en If- eller Else If-konstruktion i en Case When-funktion är kombinationen av ett kriterium med **en** värde. Varje ytterligare värde för kriteriet ökar antalet operatorer.
+
+I följande villkor används till exempel 13 operatorer.
+
+![Exempeloperatorer](assets/operators-sample.png)
+
 
 ## Mer information
 
