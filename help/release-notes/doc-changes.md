@@ -4,16 +4,26 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
 workflow-type: tm+mt
-source-wordcount: '2736'
-ht-degree: 7%
+source-wordcount: '2761'
+ht-degree: 8%
 
 ---
 
 # Customer Journey Analytics - dokumentationsuppdateringar
 
 Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analytics sedan den startades.
+
+## 2024
+
+| Funktion | Beskrivning |
+| --- | --- |
+| **Januari 2024** | |
+| Härledda fält | Tillagd sammanfattning av funktionen [begränsningar](/help/data-views/derived-fields/derived-fields.md#limitations) och förklaringar av hur man avgör antalet [operatorer](/help/data-views/derived-fields/derived-fields.md#operators) används i en funktion. |
+
+{style="table-layout:auto"}
+
 
 ## 2023
 
@@ -94,6 +104,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Landningssida | Nya uppdateringar av landningssidor [landningssida](/help/getting-started/landing.md). |
 | Schemalägg arbetsböcker | Dedikerad sida som beskriver hur [Schemalägg arbetsböcker](/help/report-builder/schedule-reportbuilder.md) i Report Builder. |
 | Stöd för objektmatriser för profil- och uppslagsdatauppsättningar | Uppdaterat [Använda arrayer med objekt](/help/use-cases/object-arrays.md) och [Intressanta Adobe Experience Platform-målgrupper](/help/use-cases/data-ingestion/ingest-aep-segments.md) för att spegla stöd för objektmatriser för profil- och uppslagsdatauppsättningar. |
+
+{style="table-layout:auto"}
 
 ## 2022
 
