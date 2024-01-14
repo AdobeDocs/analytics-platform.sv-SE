@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 05bd88ea215d0b41c58221b42581a8fd09a019b3
+source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Audit Logs Access]** | Den här behörigheten tvingar behörighetskontrollen på [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) och användargränssnittet för granskningsloggar. |
 | **[!UICONTROL Reporting Usage Admin]** | Låter användarna visa och ta bort alla rapporter som körs i deras företag. |
 | **[!UICONTROL Reporting Usage View]** | Låter användarna se alla samtidiga rapporteringsbegäranden. |
-| [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). <p>Mer information om hur du lägger till destinationsåtkomst för Customer Journey Analytics-användare i Adobe Experience Platform finns i [Destinationer och åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) in [Översikt över destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)</p> |
+| [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL Calculated Metrics Creation]** | Låter användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter Creation]** | Låter användarna skapa [filter](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs Access]** | Ger användarna åtkomst till [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
