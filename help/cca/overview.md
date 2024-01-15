@@ -5,9 +5,9 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ När organisationen uppfyller alla krav och förstår sina begränsningar kan du
    * Namn på sandlåda.
 1. Adobe kundsupport kommer att arbeta tillsammans med Adobe-teknik för att möjliggöra flerkanalsanalys när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny person-ID-kolumn i Adobe Experience Platform. Adobe kundsupport kan ange det nya datauppsättnings-ID:t och namn på kolumn för person-ID.
 1. När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som i början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data så långt tillbaka i tiden.
-1. [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
+1. [Skapa eller redigera en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med den nya datauppsättningen och andra datauppsättningar som du vill inkludera. Välj rätt person-ID för varje datauppsättning.
 1. [Skapa en datavy](/help/data-views/create-dataview.md) baserat på anslutningen.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->

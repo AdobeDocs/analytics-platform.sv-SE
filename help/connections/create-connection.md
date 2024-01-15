@@ -1,18 +1,18 @@
 ---
-title: Skapa en anslutning
-description: Beskriver hur du skapar en anslutning till en plattformsdatauppsättning i Customer Journey Analytics.
+title: Skapa eller redigera en anslutning
+description: Beskriver hur du skapar eller redigerar en anslutning till en datauppsättning för Experience Platform i Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2617'
 ht-degree: 1%
 
 ---
 
-# Skapa en anslutning
+# Skapa eller redigera en anslutning
 
 Arbetsflödet för att skapa och redigera anslutningar gör att alla konfigurationsinställningar för datauppsättningar och anslutningar hamnar mitt på skärmen med hjälp av arbetsflöden. Den ger detaljerad information om val, konfiguration och granskning av datauppsättningar med viktig information som datamängdtyp, storlek, schema, dataset-ID, batchstatus, bakåtfyllnadsstatus, person-ID och mycket annat för att minska risken för fel anslutningskonfiguration. Här är en översikt över funktionerna:
 
