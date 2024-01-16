@@ -4,9 +4,9 @@ description: Lär dig hur dataetiketter och principer som definieras i Adobe Exp
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Klicka **[!UICONTROL Apply]** för att se vilka profiler som är aktiverade.
 
 ## Hur aktiverade profiler påverkar datavyer
 
-Om **[!UICONTROL Enforce Analytics]** eller **[!UICONTROL Enforce Download]** profiler är aktiverade. De schemakomponenter som har vissa dataetiketter (till exempel C8 eller C12) kopplade till sig kan inte läggas till i datavyer.
+Om **[!UICONTROL Enforce Analytics]** principen är aktiverad. De schemakomponenter som har vissa dataetiketter (till exempel C8) kopplade till sig kan inte läggas till i datavyer.
 
 De här komponenterna är nedtonade i den vänstra listen [!UICONTROL Schema fields] lista:
 
