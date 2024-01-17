@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 214616922aa157c390265f76138f8836c80b72d5
+source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
@@ -23,13 +23,13 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics och do
 
 >[!TAB Arbetsyta: Tidsserieprognos]
 
-Prognosticering är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (varje timme, dag, vecka, månad och år).
+Prognosticering är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (varje timme, dag, vecka, månad och år). Prognoser är endast tillgängliga för tidsserierelaterade data.
 
 [![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
 >[!TAB Anslutningar: Överhoppade poster]
 
-Du kan nu kontrollera varför poster hoppas över när du definierar en anslutning. Mer information finns i Hantera anslutningar.
+Du kan nu kontrollera varför poster från händelsedatamängder hoppas över när du definierar en anslutning. Du kan få information om varför poster hoppas över, som tomma besökar-ID:n, datalagring och andra.
 
 [![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
 
