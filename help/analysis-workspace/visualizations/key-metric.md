@@ -4,7 +4,7 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 24c2ab4a49b87b11046317a40882dde72a2a49c1
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland an
 
 1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett filter (om du vill):
 
-   ![Nyckelmätningskonfiguration som visar alternativen för måttenhet, primärt datumintervall, jämförelsedatumintervall och segment.](assets/key-metric-config.png)
+   ![Nyckelmätningskonfiguration som visar alternativen för mått, primärt datumintervall, jämförelsedatumintervall och segment.](assets/key-metric-config.png)
 
    | Konfigurationsinställning | Definition |
    | --- | --- |
