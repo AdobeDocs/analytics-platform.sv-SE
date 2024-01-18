@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b76f534a01326b911ffbf93f089d46c6fc860979
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1973'
 ht-degree: 1%
 
 ---
@@ -130,7 +130,7 @@ Genom att exportera Customer Journey Analytics data till molnet kan du:
 
 * Strukturera utdata som sammanfogade värden.
 
-* Exportera ad hoc eller enligt ett schema. (även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
+* Exportera en gång eller enligt ett schema. (även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Exportera filer i CSV- eller JSON-format. (även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
 
@@ -215,7 +215,7 @@ Om du tidigare använt Data Warehouse för att exportera Adobe Analytics-data ka
 | Mätvärden | Gräns på 5 | Obegränsad |
 | Rapporteringsrader | Gräns på 3 miljoner, 30 miljoner, 150 miljoner eller 300 miljoner, beroende på skikt | Obegränsad |
 | Antal rapporter | Obegränsad | Obegränsad |
-| Ad hoc-leverans | Ja | Ja |
+| Ad hoc-leverans (en gång) | Ja | Ja |
 | Schemalägg återkommande leverans | Ja | Ja |
 | E-postleverans | Nej | Ja |
 | FTP/SFTP | Nej | Stöd för äldre versioner |

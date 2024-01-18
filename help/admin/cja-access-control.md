@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
+source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -21,21 +21,48 @@ Dessutom diskuterar vi mer detaljerade sätt att begränsa åtkomsten, t.ex. kur
 
 ## Produktadministratörsroll
 
-Produktadministratörer har behörighet att utföra alla uppgifter som krävs i Customer Journey Analytics. Du måste läggas till som produktadministratör för **Customer Journey Analytics produktprofil** i [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Admins] tab > [!UICONTROL Add Admin]. Produktadministratörer har följande behörigheter:
+Användare som har tilldelats rollen Produktadministratör får som standard de behörigheter som krävs för att utföra de flesta åtgärder inom Customer Journey Analytics. För vissa uppgifter krävs dock ytterligare behörigheter.
 
-* Skapa/uppdatera/ta bort anslutningar eller datavyer
-* Uppdatera/ta bort projekt, filter, beräknade värden, målgrupper, anteckningar eller filter som skapats av andra användare
+Så här lägger du till en användare som produktadministratör:
+
+1. Gå till [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+1. Välj [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **Administratörer**] tab > [!UICONTROL **Lägg till administratör**].
+
+   De användare du har lagt till får [Standardbehörigheter för produktadministratör](#product-admin-default-permissions). Du kan också ge dem [ytterligare behörigheter](#product-admin-additional-permissions) vid behov.
+
+### Standardbehörigheter för produktadministratör
+
+Produktadministratörer har behörighet att utföra de flesta åtgärder inom Customer Journey Analytics.
+
+Produktadministratörer har som standard behörighet att utföra följande uppgifter:
+
+* Skapa, uppdatera och ta bort datavyer
+* Uppdatera och ta bort projekt, filter, beräknade värden, målgrupper, anteckningar eller filter som skapats av andra användare
 * Dela arbetsyteprojekt till alla användare
 * Hantera rapporteringsaktivitet i [Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity-overview.md)
 
-Att bli produktadministratör i Customer Journey Analytics räcker inte för att skapa, uppdatera eller ta bort en [anslutning](/help/connections/overview.md). Om du vill skapa en anslutning till en datauppsättning från Experience Platform måste du även ha Experience Platform-behörighet. Du måste vara en del av en **Experience Platform produktprofil** som ger dig följande behörigheter:
+### Ytterligare behörigheter för produktadministratör
 
-* Datamodellering: Visa scheman, Hantera scheman
-* Datahantering: Visa datauppsättningar, Hantera datauppsättningar
-* Inmatning av data: Hantera källor
-* Visa identitetsnamnutrymmen
+Förutom att läggas till som produktadministratör i **Customer Journey Analytics produktprofil** i [Admin Console](https://adminconsole.adobe.com/enterprise/)krävs ytterligare tillstånd för att kunna utföra följande uppgifter i Customer Journey Analytics:
 
-Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+* Skapa, uppdatera och ta bort data [Anslutningar](/help/connections/overview.md)
+
+  Användarna måste vara en del av en **Experience Platform produktprofil** som ger följande behörigheter:
+   * Datamodellering: Visa scheman, Hantera scheman
+   * Datahantering: Visa datauppsättningar, Hantera datauppsättningar
+   * Inmatning av data: Hantera källor
+   * Visa identitetsnamnutrymmen
+
+     Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+
+* Exportera datauppsättningar från AEP-destinationer
+
+  För att kunna utföra den här uppgiften behöver användare även följande behörigheter i Experience Platform:
+   * Hantera mål
+   * Aktivera destinationer
+
+     Mer information om målbehörigheter i Experience Platform finns i [Översikt över destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html).
 
 ## Administratörsroll för produktprofil
 
