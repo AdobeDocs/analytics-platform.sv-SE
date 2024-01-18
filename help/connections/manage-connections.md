@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b41cc80310c49bd1b0c73f1323f86c8b280e15f
+source-git-commit: 852dbce716e151d5feee52e813c9db9d76d9ccea
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2322'
 ht-degree: 0%
 
 ---
@@ -118,17 +118,11 @@ Om du vill gå till informationen för en anslutning väljer du ett anslutningsn
 
 ![Alla datauppsättningsfönster som visar widgetar och inställningar](assets/conn-details.png)
 
-Skärmen Anslutningsinformation innehåller en detaljerad vy över anslutningsstatus. Ni kan:
+Gränssnittet Anslutningsinformation ger en detaljerad vy över anslutningsstatus. Ni kan:
 
 * Kontrollera status för anslutningsens datauppsättningar och för överföringsprocessen.
 * Identifiera konfigurationsproblem som kan orsaka överhoppade eller borttagna poster.
 * Se när data är tillgängliga för rapportering.
-
->[!IMPORTANT]
->
->Eventuella uppgifter som lämnats in före den 13 augusti 2021 återspeglas inte i detta [!UICONTROL Connections] -dialogrutan.
-
-### Anslutningsinformation
 
 | Användargränssnitt | Beskrivning |
 | --- | --- |
@@ -154,6 +148,10 @@ Skärmen Anslutningsinformation innehåller en detaljerad vy över anslutningsst
 | Schema | Det Experience Platform-schema som datauppsättningen baseras på. |
 | [!UICONTROL Import new data] | Visar status för import av nya data för datauppsättningen: <p><span style="color:green">●</span>   **[!UICONTROL _x _På]**om datauppsättningen har konfigurerats för import av nya data, och<p><span style="color:gray">●</span>   **[!UICONTROL _x av_]** om datauppsättningen är konfigurerad att inte importera ny dataimport. |
 | [!UICONTROL Backfill data] | Visar status för data för bakgrundsfyllning för datauppsättningen.<p><span style="color:red">●</span>   **[!UICONTROL _x _backfills failed]**för antalet misslyckade backfiller,<p><span style="color:orange">●</span>   **[!UICONTROL _x _bearbetning av bakåtfyllnad]**för antalet efterfyllningar,<p><span style="color:green">●</span>   **[!UICONTROL _x _bakåtfyllningar har slutförts]**för antalet slutförda efterfyllningar, och<p><span style="color:grey">●</span>   **[!UICONTROL _Av_]** om inga bakåtfyllningar har konfigurerats. |
+
+>[!IMPORTANT]
+>
+>Eventuella uppgifter som lämnats in före den 13 augusti 2021 återspeglas inte i [!UICONTROL Connections] gränssnitt.
 
 ### Anslutningspanelen
 
