@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: ae968e46c5822c9209ecf78735df0914f33cb0d2
+source-git-commit: 5e4367c1e5dd8654ae888cf9b4258f9c06fe2961
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,9 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Data Views]** | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]**, kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har tillgång till. |
 | **[!UICONTROL Reporting Tools]**: |   |
 | **[!UICONTROL Audit Logs Access]** | Den här behörigheten tvingar behörighetskontrollen på [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) och användargränssnittet för granskningsloggar. |
+| **[!UICONTROL Analysis Workspace Access]** | Tillåter användare åtkomst till Analysis Workspace i Customer Journey Analytics. |
+| [!UICONTROL **Guided Analysis Access**] | Låter användarna skapa [Guidade analysprojekt](/help/guided-analysis/overview.md). |
+| [!UICONTROL **Prognos**] | Tillåter användare att få åtkomst till funktionen Prognosticering i Analysis Workspace |
 | **[!UICONTROL Reporting Usage Admin]** | Låter användarna visa och ta bort alla rapporter som körs i deras företag. |
 | **[!UICONTROL Reporting Usage View]** | Låter användarna se alla samtidiga rapporteringsbegäranden. |
 | [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
@@ -131,5 +134,9 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Annotation Creation]** | Låter användarna skapa [anteckningar](/help/components/annotations/overview.md). |
 | **[!UICONTROL Audience Creation]** | Låter användarna skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Audience View]** | Låter användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
+| [!UICONTROL **Dela projektlänkar med vem som helst**] | Tillåter användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link) |
+| **[!UICONTROL Data View Tools]**: |   |
+| [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **Åtkomst till SQL Query Service**] | Ger användarna åtkomst [Frågetjänst i AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv). |
 
 {style="table-layout:auto"}
