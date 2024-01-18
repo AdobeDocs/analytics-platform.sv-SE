@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7021e4cfc9275402ce175bf8dfa8a3993ac438dd
+source-git-commit: ae968e46c5822c9209ecf78735df0914f33cb0d2
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Förutom att läggas till som produktadministratör i **Customer Journey Analyti
 
   >[!AVAILABILITY]
   >
-  >Funktionerna som beskrivs i den här artikeln är i den begränsade testfasen av releasen och är kanske inte tillgängliga än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
+  >Möjligheten att exportera datauppsättningar till molnet är i den begränsade testfasen av releasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
 
   För att kunna utföra den här uppgiften behöver användare även följande behörigheter i Experience Platform:
    * Hantera mål
