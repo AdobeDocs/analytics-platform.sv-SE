@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1732'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 ## Börja skapa ett molnexportkonto
 
+1. Se till att du uppfyller [minimikrav](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) för att exportera rapporter till molnet.
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 1. På [!UICONTROL Exports] väljer du [!UICONTROL **Platskonton**] -fliken.
 1. Välj [!UICONTROL **Lägg till konto**].
