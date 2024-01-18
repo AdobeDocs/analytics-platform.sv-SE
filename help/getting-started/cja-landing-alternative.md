@@ -5,15 +5,18 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
+source-git-commit: ef46598db68372b8b3b58dc06aa7d5faacca6cc2
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
 
 # Användarhandbok om Customer Journey Analytics
 
+Den här tekniska handboken ger självhjälp för Customer Journey Analytics. Med Customer Journey Analytics kan ni hämta kunddata från valfri kanal (både online och offline) till Adobe Experience Platform och sedan analysera dessa data på samma sätt som ni gör med era befintliga digitala data via Analysis Workspace idag.
+
+Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och offlinedata i Analysis Workspace med vilket kundID som helst, så att ni till sist kan utföra attribuering, filter, flöde, bortfall osv. i alla era kunddata.
 
 ## Vad är nytt?
 
@@ -21,23 +24,23 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics och do
 
 >[!BEGINTABS]
 
->[!TAB Arbetsyta: Tidsserieprognos]
+>[!TAB Guidad analys - kvarhållningsfrekvenser]
 
-Prognosticering är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (varje timme, dag, vecka, månad och år). Prognoser är endast tillgängliga för tidsserierelaterade data.
+En ny visningstyp som visar hur många procent användare som returnerar efter sitt ursprungliga engagemang inom det önskade datumintervallet
 
-[![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
+[![image](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
 
->[!TAB Anslutningar: Överhoppade poster]
+>[!TAB Guidad analys - trendlinjer]
 
-Du kan nu kontrollera varför poster från händelsedatamängder hoppas över när du definierar en anslutning. Du kan få information om varför poster hoppas över, som tomma besökar-ID:n, datalagring och andra.
-
-[![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
-
->[!TAB Product Analytics: Trendlinjer]
-
-Trendlinjeövertäckningar är nu tillgängliga i vyn för guidad analysanvändning, som hjälper till att beskriva ett tydligare datamönster.
+Trendlinjeövertäckningar är nu tillgängliga i användningsvyn, som visar ett tydligare datamönster.
 
 [![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+>[!TAB Viktiga mätvärden - översikt]
+
+När du använder visualisering av nyckelmätningssammanfattning kan datumintervallet för jämförelsen nu uppdateras automatiskt, beroende på om det alternativ för jämförelsedatumintervall du väljer är relativt till det primära datumintervallet eller fasta.
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
