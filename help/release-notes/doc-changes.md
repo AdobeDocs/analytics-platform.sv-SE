@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9beeb2013eb3b94dc55fb721233096f1813e2bf3
+source-git-commit: 227e1ca7f9652730c849a03fcf4e87f1c9ba98d7
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2789'
 ht-degree: 7%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Januari 2024** | |
+| Behörigheter som krävs för att exportera datauppsättningar | Ytterligare information som förklarar [behörigheter krävs](/help/admin/cja-access-control.md) för att exportera datauppsättningar till molnmål. |
 | Hantera anslutningar | Uppdaterade [Hantera anslutningar](../connections/manage-connections.md) artikel, baserat på kundernas feedback. |
 | Härledda fält | Tillagd sammanfattning av funktionen [begränsningar](/help/data-views/derived-fields/derived-fields.md#limitations) och förklaringar av hur man avgör antalet [operatorer](/help/data-views/derived-fields/derived-fields.md#operators) används i en funktion. |
 

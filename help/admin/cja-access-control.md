@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
+source-git-commit: 7021e4cfc9275402ce175bf8dfa8a3993ac438dd
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -56,13 +56,17 @@ Förutom att läggas till som produktadministratör i **Customer Journey Analyti
 
      Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
-* Exportera datauppsättningar från AEP-destinationer
+* Exportera datauppsättningar till molnet [Destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en)
+
+  >[!AVAILABILITY]
+  >
+  >Funktionerna som beskrivs i den här artikeln är i den begränsade testfasen av releasen och är kanske inte tillgängliga än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
 
   För att kunna utföra den här uppgiften behöver användare även följande behörigheter i Experience Platform:
    * Hantera mål
    * Aktivera destinationer
 
-     Mer information om målbehörigheter i Experience Platform finns i [Översikt över destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html).
+     Mer information om målbehörigheter i Experience Platform finns i [Översikt över destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
 
 ## Administratörsroll för produktprofil
 
