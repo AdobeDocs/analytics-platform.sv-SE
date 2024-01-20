@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -30,22 +30,23 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
+* **[!UICONTROL View]**: Växla mellan den här vytypen och [Funktion](friction.md).
 * **[!UICONTROL Steps]**: De händelsetyper som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-* **[!UICONTROL People]**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
+* **[!UICONTROL Counted as]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Users] och [!UICONTROL Sessions].
+* **[!UICONTROL Segments]**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
 
-I vyn Konverteringstrender finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
+The [!UICONTROL Conversion trends] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
 
-* **[!UICONTROL Metric]**: Det mått som du vill mäta. Du kan välja sessioner och användare.
-* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Line.
-* **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från det första steget eller föregående steg.
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Line].
+* **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Alternativ för beräkning av konvertering från [!UICONTROL First step] eller [!UICONTROL Previous step].
 
 >[!NOTE]
 >
 >The **Genomsnittlig** i vyn Conversion trends skiljer sig från **Totalt** kolumn i [Bildvy](friction.md) tabell. Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
 
-## Använd tidsjämförelse
+## Tidsjämförelse
 
 {{apply-time-comparison}}
 

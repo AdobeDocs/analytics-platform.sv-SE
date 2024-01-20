@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,15 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
+* **[!UICONTROL View]**: Växla mellan den här vytypen och [Användning](usage.md).
 * **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som ett separat diagram. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
-* **[!UICONTROL People]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet staplar i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
+* **[!UICONTROL Counted as]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] och  [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
+* **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet staplar i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
 
 ## Diagraminställningar
 
 The [!UICONTROL Frequency] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
 
-* **[!UICONTROL Metric]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] och  [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Horizontal bar] och [!UICONTROL Stacked bar].
 
 ## Inställningar för Bucket
@@ -51,7 +52,7 @@ Anger hur händelsen kategoriseras i grupper.
    * [!UICONTROL To]: Frekvensen större än det här värdet grupperas i den sista bucket.
    * [!UICONTROL Size]: Bucketintervallet.
 
-## Använd tidsjämförelse
+## Tidsjämförelse
 
 {{apply-time-comparison}}
 

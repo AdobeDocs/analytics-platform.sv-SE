@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 # Fragment
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 1. (Valfritt) Välj **Filter** icon ![Ikon för dataordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)väljer du sedan något av följande filteralternativ för att filtrera komponentlistan:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
    | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Komponenter - översikt](/help/components/overview.md). |
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ## Komponentinformation för dataordlista {#dd-component-information}
 
-| Alternativ |  -funktion |
+| Alternativ | Funktion |
 |---------|----------|
 | [!UICONTROL **Godkänd**] | <p>Anger att komponenten har granskats och godkänts av administratören.</p><p>Administratörer kan välja att [!UICONTROL **Ogodkänd**]. Om du väljer det här alternativet markeras komponenten som&quot;Inte godkänd&quot; för användarna.</p> |
 | [!UICONTROL **Ej godkänt**] | <p>Anger att komponenten ännu inte har granskats och godkänts av administratören.</p><p>Administratörer kan välja att [!UICONTROL **Godkänn**]. Om du väljer det här alternativet markeras komponenten som&quot;Godkänd&quot; för användare.</p> |
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ## Alternativ för komponentsortering {#components-sort-options}
 
-| Alternativ |  -funktion |
+| Alternativ | Funktion |
 |---------|----------|
 | [!UICONTROL **Rekommenderas**] | Sorterar komponenter med de som rekommenderas högst upp i listan. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i listan. |
 | [!UICONTROL **Alfabetiskt**] | Sorterar komponenterna i bokstavsordning. |
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 {style="table-layout:auto"}
 
-## Använd tidsjämförelse {#apply-time-comparison}
+## Tidsjämförelse {#apply-time-comparison}
 
 Du kan jämföra den aktuella tidsperioden med en tidigare tidsperiod. Om du väljer ett alternativ på den här menyn får alla datapunkter en motsvarande streckad motsvarighet i färg. Den här motsvarigheten representerar samma mått i det valda föregående datumintervallet. Om du anger det här alternativet dubbleras antalet objekt i diagrammet och raderna i tabellen.
 

@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,21 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
+* **[!UICONTROL View]**: Växla mellan den här vytypen och [Konverteringstrender](conversion-trends.md).
 * **[!UICONTROL Steps]**: De händelsetyper som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-* **[!UICONTROL People]**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
+* **[!UICONTROL Counted as]**: Det omfång som du vill ska tillämpas på tratten. Alternativen inkluderar [!UICONTROL Sessions] och [!UICONTROL Users].
+   * [!UICONTROL Sessions]: Alla steg måste inträffa i samma session för att räknas.
+   * [!UICONTROL Users]: Alla steg måste inträffa i det valda rapportfönstret för att räknas.
+* **[!UICONTROL Segments]**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
 
 I vyn Friktion finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
 
-* **[!UICONTROL Metric]**: Det omfång som du vill ska tillämpas på tratten. Du kan välja sessioner och användare. Om du väljer sessioner måste alla steg inträffa inom samma session för att räknas. Om du väljer användare måste alla steg inträffa i det rapportfönster som valts för att räknas.
-* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Steg.
-* **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från det första steget eller föregående steg.
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Steps].
+* **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Alternativ för beräkning av konvertering från [!UICONTROL First step] eller [!UICONTROL Previous step].
 
-## Använd tidsjämförelse
+## Tidsjämförelse
 
 {{apply-time-comparison}}
 

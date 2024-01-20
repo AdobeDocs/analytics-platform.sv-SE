@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -30,24 +30,25 @@ Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför 
 Exempel:
 
 * **Bevarande och bortfall av användare:** Ger en tydlig visualisering runt perioder med hög eller låg användarlojalitet. Genom att känna igen dessa perioder av hög eller låg lojalitet kan du fatta produktbeslut för att öka kundlojaliteten eller hjälpa till att minimera bortfallet.
-* **Kampanjbedömning**: Att visa en viss kampanj kan hjälpa er att förstå inte bara hur mycket trafik den genererade, utan även hur väl kampanjen hjälpte användarna att hålla sig engagerade.
+* **Kampanjbedömning**: Att visa en viss kampanj kan hjälpa er att förstå hur mycket trafik den genererade och hur väl den hjälpte användarna att vara engagerade.
 * **Användarlivscykelanalys**: Analysering av aktiv användartillväxt under hela användarlivscykeln kan hjälpa till att identifiera specifika faser där användarengagemanget minskar. Om det till exempel finns ett stort antal vilande användare för enskilda personer i ett introduktionsstadium kan det tyda på användarvänlighetsproblem eller ett behov av bättre produktvägledning.
 
 ## Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
+* **[!UICONTROL View]**: Växla mellan den här vytypen och [Nettotillväxt](net-growth.md).
 * **[!UICONTROL Events]**: Den händelse som du vill mäta. Eftersom den här vytypen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
-* **[!UICONTROL People]**: Det segment som du vill mäta. Du kan inkludera ett segment i en fråga.
+* **[!UICONTROL Counted as]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
+* **[!UICONTROL Segments]**: Det segment som du vill filtrera data efter. Du kan inkludera ett segment i en fråga.
 
 ## Diagraminställningar
 
 The [!UICONTROL Active] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
 
-* **[!UICONTROL Metric]**: Det mått som du vill mäta. Alternativen är Antal användare och Procent av användare.
-* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är Staplad liggande och Staplad yta.
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Stacked bar] och [!UICONTROL Stacked area].
 
-## Använd tidsjämförelse
+## Tidsjämförelse
 
 {{apply-time-comparison}}
 

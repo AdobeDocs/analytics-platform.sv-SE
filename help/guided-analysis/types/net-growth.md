@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -46,8 +46,14 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
+* **[!UICONTROL View]**: Växla mellan den här vytypen och [Aktiv](active.md).
 * **[!UICONTROL Events]**: Den händelse som du vill mäta. Eftersom den här vytypen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
-* **[!UICONTROL People]**: Det segment som du vill mäta. Du kan inkludera ett segment i en fråga.
+* **[!UICONTROL Counted as]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
+* **[!UICONTROL Segments]**: Det segment som du vill mäta. Du kan inkludera ett segment i en fråga.
+
+## Tidsjämförelse
+
+{{apply-time-comparison}}
 
 ## Datumintervall
 

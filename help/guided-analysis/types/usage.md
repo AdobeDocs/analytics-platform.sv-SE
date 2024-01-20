@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Lägg till ytterligare data i diagrammet. När fler än en serie visas i diagram
    * [!UICONTROL Logarithmic]: Skapar en böjd regressionslinje. Bäst för data som snabbt ökar eller minskar, och sedan blir mer jämna. Ekvation: `y = a + b * log(x)`
    * [!UICONTROL Moving average]: Skapar en jämn trendlinje baserad på en uppsättning medelvärden. Ett glidande medelvärde kallas även för ett glidande medelvärde och använder ett visst antal tidigare datapunkter (som bestäms av ditt val), jämför dem och använder medelvärdet som punkten på raden. Exempel är sju dagars glidande medelvärde eller fyra veckors glidande medelvärde. Vilka alternativ som är tillgängliga för glidande medelvärde beror på vilket intervall och datumintervall du har valt.
 
-## Använd tidsjämförelse
+## Tidsjämförelse
 
 {{apply-time-comparison}}
 
