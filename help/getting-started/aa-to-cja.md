@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,12 @@ Följande Adobe Analytics-funktioner eller -komponenter stöds inte:
 * Punktfiltrering
 * Direktuppspelad mediemätning
 * Livesream eller Livesream triggers
+
+### 5. Kartlägg projekt och komponenter från Adobe Analytics till Customer Journey Analytics
+
+Migrera projekt och tillhörande komponenter från Adobe Analytics till Customer Journey Analytics.
+
+Innan någon i organisationen börjar migrera projekt börjar migreringen enligt beskrivningen i [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html), först [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)
 
 ## Förbered dig för kritiska skillnader
 

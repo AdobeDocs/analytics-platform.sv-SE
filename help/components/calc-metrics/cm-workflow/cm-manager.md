@@ -1,12 +1,12 @@
 ---
 description: I Beräknad måtthanterare kan du strukturera mätvärden på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
-title: Hanterare för beräknade mätvärden
+title: Beräknad måtthanterare
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 2%
+source-wordcount: '724'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +30,11 @@ I Calculated Metrics Manager kan du:
 
 * [Markera beräknade värden som favoriter](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
 
-* [Godkänna beräknade mätvärden](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+* [Godkänn beräknade värden](/help/components/calc-metrics/cm-workflow/cm-approving.md)
 
-* [Tagga beräknade mätvärden](/help/components/calc-metrics/cm-workflow/cm-tagging.md)
+* [Tagga beräknade värden](/help/components/calc-metrics/cm-workflow/cm-tagging.md)
 
-* [Dela beräknade mätvärden](/help/components/calc-metrics/cm-workflow/cm-sharing.md)
+* [Dela beräknade värden](/help/components/calc-metrics/cm-workflow/cm-sharing.md)
 
 * Exportera ett beräknat mått till en CSV-fil.
 
@@ -63,7 +63,7 @@ Så här konfigurerar du synliga kolumner i hanteraren för beräknade mått:
    | Taggar | Visar taggar som har tillämpats på måttet, antingen av dig eller av personer som har delat det beräknade måttet med dig. |
    | Delas med | Visar enskilda personer eller grupper (endast admin) eller Alla (endast admin) som du har delat det beräknade måttet med. <p>När ett beräknat mått delas visas en delningsikon bredvid det beräknade måttnamnet.</p> |
    | Ändrat den | Anger det datum då det anpassade måttet senast ändrades. |
-   | Används i | Visar hur många komponenter det beräknade måttet används i. <p>Om det beräknade måttet till exempel används i 40 projekt och 2 varningar visas värdet för den här kolumnen som [!UICONTROL **42 komponenter**].</p> <p>Välj värdet i den här kolumnen för att se hur det beräknade mätvärdet används (till exempel [!UICONTROL **Projekt (40)**], [!UICONTROL **Varningar (2)**]).</p><p>Beräknade mätvärden kan användas i följande komponenttyper:</p> <ul><li>Projekt</li><li>Schemalagda projekt</li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>The [!UICONTROL **Används i**] -kolumnen visas inte som standard. [Konfigurera kolumner](#configure-columns) för att visa den.</li><li>Om det inte finns några data i den här kolumnen för en viss komponent, men den har en [!UICONTROL **Senast använd**] datum kan komponenten ha använts i en analys utan att sparas.</li></ul><p>Du kan använda [Dataordlista](/help/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen.</p> |
-   | Senast använd | Visar datumet då det beräknade måttet senast användes i någon av följande komponenttyper: <ul><li>Beräknade värden</li><li>Projekt</li><li>Schemalagda projekt</li></ul> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen eller om den ska tas bort.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>För vissa komponenter kanske den här kolumnen inte innehåller data om komponenten senast användes före september 2023.</li></ul><p>Du kan använda [Dataordlista](/help/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen. |
+   | Används i | Visar hur många komponenter det beräknade måttet används i. <p>Om det beräknade måttet till exempel används i 40 projekt och 2 varningar visas värdet för den här kolumnen som [!UICONTROL **42 komponenter**].</p> <p>Välj värdet i den här kolumnen för att se hur det beräknade mätvärdet används (till exempel [!UICONTROL **Projekt (40)**], [!UICONTROL **Varningar (2)**]).</p><p>Beräknade mätvärden kan användas i följande komponenttyper:</p> <ul><li>Projekt</li><li>Schemalagda projekt</li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>The [!UICONTROL **Används i**] -kolumnen visas inte som standard. [Konfigurera kolumner](#configure-columns) för att visa den.</li><li>Om det inte finns några data i den här kolumnen för en viss komponent, men den har en [!UICONTROL **Senast använd**] datum kan komponenten ha använts i en analys utan att sparas.</li><li>Den här informationen är endast tillgänglig för systemadministratörer.</li></ul><p>Du kan använda [Dataordlista](/help/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen.</p> |
+   | Senast använd | Visar datumet då det beräknade måttet senast användes i någon av följande komponenttyper: <ul><li>Beräknade mått</li><li>Projekt</li><li>Schemalagda projekt</li></ul> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen eller om den ska tas bort.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>För vissa komponenter kanske den här kolumnen inte innehåller data om komponenten senast användes före september 2023.</li><li>Den här informationen är endast tillgänglig för systemadministratörer.</li></ul><p>Du kan använda [Dataordlista](/help/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen. |
 
    {style="table-layout:auto"}
