@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e84010b9ea9e6385574e8b1a04f7eccbba3ebc90
+source-git-commit: 37d9e8e84e1982d63f2173601d75f0b7fa552b73
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1483'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,17 @@ Följande Adobe Analytics-funktioner eller -komponenter stöds inte:
 
 ### 5. Kartlägg projekt och komponenter från Adobe Analytics till Customer Journey Analytics
 
-Migrera projekt och tillhörande komponenter från Adobe Analytics till Customer Journey Analytics.
+Adobe Analytics-administratörer kan migrera Adobe Analytics-projekt och tillhörande komponenter till Customer Journey Analytics.
 
-Innan någon i organisationen börjar migrera projekt börjar migreringen enligt beskrivningen i [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html), först [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)
+Migreringsprocessen omfattar:
+
+* Återskapande av Adobe Analytics-projekt i Customer Journey Analytics.
+
+* Mappa mått och mätvärden från Adobe Analytics rapporteringsprogram till mått och mätvärden i datavyer i Customer Journey Analytics.
+
+Innan du påbörjar migreringen måste du [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
+
+När du har gjort alla förberedelser du behöver kan du [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
 
 ## Förbered dig för kritiska skillnader
 
