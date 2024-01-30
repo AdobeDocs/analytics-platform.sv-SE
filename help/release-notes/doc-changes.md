@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
+source-git-commit: 1587f98d0650d07a2f496c239d7b6bf69611535e
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2931'
 ht-degree: 7%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Januari 2024** | |
+| Dokumentationen för att lägga till konton och platser vid export av fullständiga register har uppdaterats | Dokumentationen har uppdaterats för att återspegla mindre gränssnittsuppdateringar när ett nytt konto eller en ny plats konfigureras när [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>En ny [!UICONTROL **Lägg till konto**] finns nu i [!UICONTROL **Konto**] listruta. The [!UICONTROL **Lägg till plats**] som tidigare var tillgängligt som en knapp bredvid [!UICONTROL **Platsnamn**] rullgardinsmenyn finns nu tillgänglig på själva menyn. |
 | Ny information om komponentmigrering vid migrering från Adobe Analytics | Lagt till information i [Utveckling från Adobe Analytics](/help/getting-started/aa-to-cja.md) som refererar till det nya [komponentmigrering](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) funktioner som beskrivs i Adobe Analytics Admin Guide. |
 | Klarade att viss information endast är tillgänglig för administratörer | Tillagd information om att kolumnerna &quot;Senast använd&quot; och &quot;Används i&quot; beskrivs i [Beräknat måttansvarig](/help/components/calc-metrics/cm-workflow/cm-manager.md) och [Filterhantering](/help/components/filters/manage-filters.md) är bara tillgängliga för systemadministratörer. |
 | Behörigheter som krävs för att exportera datauppsättningar | Ytterligare information som förklarar [behörigheter krävs](/help/admin/cja-access-control.md) för att exportera datauppsättningar till molnmål. |

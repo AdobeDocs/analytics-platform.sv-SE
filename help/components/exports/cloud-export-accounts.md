@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,11 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 >
 >När du exporterar rapporter från Customer Journey Analytics till Adobe Experience Platform Data Landing Zone ska du se till att du hämtar data inom 7 dagar och sedan ta bort dem från AEP Data Landing Zone. Efter 7 dagar tas data automatiskt bort från AEP Data Landing Zone.
 
-1. [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account), enligt beskrivningen ovan.
+1. Börja skapa ett molnexportkonto på något av följande sätt:
+
+   * På exportsidan som beskrivs ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
+
+   * När [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Välj [!UICONTROL **Spara**].
 
@@ -100,7 +104,11 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 ### Amazon S3 Role ARN
 
-1. [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account), enligt beskrivningen ovan.
+1. Börja skapa ett molnexportkonto på något av följande sätt:
+
+   * På exportsidan som beskrivs ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
+
+   * När [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. I [!UICONTROL **Kontoegenskaper**] i [!UICONTROL **Lägg till konto**] anger du följande information:
 
@@ -124,7 +132,11 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 ### Google Cloud Platform
 
-1. [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account), enligt beskrivningen ovan.
+1. Börja skapa ett molnexportkonto på något av följande sätt:
+
+   * På exportsidan som beskrivs ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
+
+   * När [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. I [!UICONTROL **Kontoegenskaper**] i [!UICONTROL **Lägg till konto**] anger du följande information:
 
@@ -148,7 +160,11 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 ### Azure SAS
 
-1. [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account), enligt beskrivningen ovan.
+1. Börja skapa ett molnexportkonto på något av följande sätt:
+
+   * På exportsidan som beskrivs ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
+
+   * När [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. I [!UICONTROL **Kontoegenskaper**] i [!UICONTROL **Lägg till konto**] anger du följande information:
 
@@ -176,7 +192,11 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 ### Azure RBAC
 
-1. [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account), enligt beskrivningen ovan.
+1. Börja skapa ett molnexportkonto på något av följande sätt:
+
+   * På exportsidan som beskrivs ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
+
+   * När [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. I [!UICONTROL **Kontoegenskaper**] i [!UICONTROL **Lägg till konto**] anger du följande information:
 
@@ -202,7 +222,11 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 ### Snowflake
 
-1. [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account), enligt beskrivningen ovan.
+1. Börja skapa ett molnexportkonto på något av följande sätt:
+
+   * På exportsidan som beskrivs ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
+
+   * När [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. I [!UICONTROL **Kontoegenskaper**] i [!UICONTROL **Lägg till konto**] anger du följande information:
 
