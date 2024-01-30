@@ -5,9 +5,9 @@ keywords: produktanalys
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6f80a1aa4ec9142d75fe1abb2f268dc60c7dd245
+source-git-commit: a5c2003a593917bce67346279a033a6041aff959
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -24,14 +24,15 @@ Med guidad analys kategoriseras vytyperna i **Analystyper**. Följande analys- o
 
 | Analystyp | Vytyp | Beskrivning |
 | --- | --- | --- |
-| [!UICONTROL Impact] | [Frigör](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
-| [!UICONTROL Impact] | [Första användningen](types/first-use.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
 | [!UICONTROL Funnel] | [Funktion](types/friction.md) | Jämför konverteringsgrader mellan steg. |
 | [!UICONTROL Funnel] | [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
-| [!UICONTROL User growth] | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
-| [!UICONTROL User growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
+| [!UICONTROL Impact] | [Frigör](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
+| [!UICONTROL Impact] | [Första användningen](types/first-use.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
+| [!UICONTROL Retention] | [Bevarandegrad](types/retention-rates.md) | Mät användarnas återkommande returvanor. |
 | [!UICONTROL Trends] | [Användning](types/usage.md) | Mät användarengagemanget över tid. |
 | [!UICONTROL Trends] | [Frekvens](types/frequency.md) | Mät engagemang efter användningsfrekvens. |
+| [!UICONTROL User growth] | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
+| [!UICONTROL User growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
 
 {style="table-layout:auto"}
 
