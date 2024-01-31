@@ -5,9 +5,9 @@ title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1319'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
 | Visualiseringsnamn | Beskrivning |
 | --- | --- | 
-| [Område](/help/analysis-workspace/visualizations/area.md)<p>![Ikon för område](assets/Smock_GraphArea_18_N.svg)</p> | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. | Svar: <ul><li> |
+| [Område](/help/analysis-workspace/visualizations/area.md)<p>![Ikon för område](assets/Smock_GraphArea_18_N.svg)</p> | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
 | [Liggande](/help/analysis-workspace/visualizations/bar.md) <p>![Ikon för stapel](assets/Smock_GraphBarVertical_18_N.svg)</p> | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
 | [Punktdiagram](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Punktlikon](assets/Smock_GraphBullet_18_N.svg)</p> | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
 | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Kohortabellikon](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
@@ -80,9 +80,9 @@ Du kan anpassa inställningarna för alla visualiseringar som du skapar. Mer inf
 
 ## Inställningar {#settings}
 
-Varje visualisering har sina egna inställningar som du kan hantera. För åtkomst [!UICONTROL Visualization Settings]klickar du på [!UICONTROL Visualization Settings] kugghjulsikon.
+Varje visualisering har sina egna inställningar som du kan hantera. Välj inställningsikonen om du vill få åtkomst till visualiseringsinställningarna ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
 
-![Visualiseringsinställningar som visar de inställningsalternativ som beskrivs i nästa avsnitt.](assets/settings.png)
+<img src="./assets/viz-settings-line.png" alt="Visualiseringsinställningar" width="50%" />
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -95,7 +95,8 @@ Varje visualisering har sina egna inställningar som du kan hantera. För åtkom
 | Fästpunkt Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
 | Normalisering | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
-| Visa kantlinjer | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
+| Visa avvikelser | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
+| Visa prognos | Förbättrar linjediagram och frihandstabeller genom att visa prognosvärden. |
 
 ## Förklaring {#legend}
 

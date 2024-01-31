@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b091606cefa79d5c6d46e2a4a70a77a4cb015c6e
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3245'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
 | | Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Vi kan visa procenttal som är större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna blir för stora. |
 | | Visa avvikelser <!-- This setting was moved from the "Project" tab. this is already in the tool/docs under "Freeform table, But the doc doesn't give a definition. --> | Avgör om avvikelseidentifiering körs på värdena i den här kolumnen. |
+| | Visa prognos | Avgör om prognosvärden visas automatiskt för den första måttkolumnen i en friformstabell för tidsserier som du skapar. |
 | | Tolka noll som inget värde | För celler med värdet 0 anger om en 0-cell eller en tom cell ska visas. Det här är användbart när du tittar på data för varje dag i en månad, och vissa dagar har inte inträffat än.  I stället för att visa 0 för framtida datum kan tomma celler visas i stället. Diagram följer även den här inställningen (d.v.s. de visar inte en linje eller en stapel med 0 värden när den här inställningen är markerad). |
 | | Bakgrund | Anger om en cell visar/döljer all cellformatering, inklusive stapeldiagrammet och villkorsstyrd formatering <ul><li>Stolpdiagram</li> Visar ett vågrätt stolpdiagram som representerar cellens värde i förhållande till totalvärdet för kolumnen. <li>Villkorsstyrd formatering</li>Mer information om villkorsstyrd formatering finns i&quot;Villkorsstyrd formatering&quot; i [Kolumninställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)</ul> |
 | | Cellförhandsgranskning | Visar en förhandsvisning av hur varje cell visas med de valda formateringsalternativen. |
@@ -131,7 +132,6 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | Visa dubbelaxel (om tillämpligt) | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | | Normalisering (om tillämpligt) | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | | Fästpunkt Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
-| | Tillåt avvikelser att skala Y-axeln | Om du har flera mätvärden i ett diagram måste du hovra över varje avvikelse för att se konfidensintervallet för det måttet. För att göra visualiseringen mer läsbar skalas inte y-axeln automatiskt i konfidensintervallet för avvikelseidentifiering. Med det här alternativet kan konfidensintervallet skalförändra visualiseringen. <p>Mer information finns i [Visa avvikelser i Analysis Workspace](/help/analysis-workspace/c-anomaly-detection/view-anomalies.md).</p> |
 | **[Linjediagram](/help/analysis-workspace/visualizations/line.md)** | | |
 | | Procenttal | Visar värden i procent för linjevisualiseringar. |
 | | Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för linjevisualiseringen. |
@@ -141,6 +141,8 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | Visa x-axel | Visar x-axeln i linjediagrammet. |
 | | Visa y-axel | Visar y-axeln i linjediagrammet. |
 | | Fästpunkt Y-axel | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
+| | Tillåt avvikelser att skala Y-axeln | Om du har flera mätvärden i ett diagram måste du hovra över varje avvikelse för att se konfidensintervallet för det måttet. För att göra visualiseringen mer läsbar skalas inte y-axeln automatiskt i konfidensintervallet för avvikelseidentifiering. Med det här alternativet kan konfidensintervallet skalförändra visualiseringen. <p>Mer information finns i [Visa avvikelser i Analysis Workspace](/help/analysis-workspace/c-anomaly-detection/view-anomalies.md).</p> |
+| | Tillåt prognos att skala Y-axeln | Om du har prognosvärden som ligger utanför de övre och nedre gränserna för de historiska värdena, skalas inte y-axeln automatiskt för de här prognosticerade värdena. När alternativet är aktiverat skalförändras y-axeln korrekt för de prognostiserade värdena. |
 | | Visa min | Täck över en minimivärdetikett för att snabbt markera värdena i ett mätresultat. Obs! Minsta värden härleds från synliga datapunkter i visualiseringen, inte från hela uppsättningen värden inom en dimension. |
 | | Visa max | lägg över en maxvärdetikett för att snabbt markera topparna i ett mätresultat. Obs! De högsta värdena härleds från de synliga datapunkterna i visualiseringen, inte från hela uppsättningen värden inom en dimension. |
 | | Visa trendlinje | Visa en regression eller en glidande medeltrendlinje i linjeserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data. |

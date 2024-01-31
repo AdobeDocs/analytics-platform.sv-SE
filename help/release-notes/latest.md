@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1e024f7f84f96be446a2a922bd026bc70a6edf7e
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller frisläppningsperioden 8 januari 2024 till 13 feb
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Tidsserieprognoser** | Prognosticering är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (varje timme, dag, vecka, månad och år). | 31 januari 2024 | 21 februari 2024 |
+| **Tidsserieprognoser** | [Prognos](../analysis-workspace/c-forecast/forecasting.md) är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknade mätvärden med en tidshalaritet som stöds (varje timme, dag, vecka, månad och år). | 31 januari 2024 | 21 februari 2024 |
 | **Uppdateringar av visualisering av sammanfattning av nyckelmått** | När du använder visualisering av nyckelmätningssammanfattning kan datumintervallet för jämförelsen nu uppdateras automatiskt, beroende på om det alternativ för jämförelsedatumintervall du väljer är relativt till det primära datumintervallet eller fasta. [Läs mer](/help/analysis-workspace/visualizations/key-metric.md). | Ej tillämpligt | 17 januari 2024 |
 | **Adobe Product Analytics - Analys av kvarhållningsfrekvenser** | Kvarhållningsfrekvenser är en ny guidad analys som gör att du kan mäta användarnas pågående returvanor. [Läs mer](../guided-analysis/types/retention-rates.md) | Ej tillämpligt | 8 januari 2024 |
 | **Adobe Product Analytics - Trendlinjeövertäckning** | Trendlinjer är en ny övertäckningsinställning som är tillgänglig i [Användningstrender](/help/guided-analysis/types/usage.md) visa och hjälpa till att skildra ett tydligare datamönster. | Ej tillämpligt | 17 januari 2024 |

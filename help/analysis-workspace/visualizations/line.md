@@ -4,9 +4,9 @@ title: Linje
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 30f3e24533ab0e03ee7f819c7f94592776603764
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,14 @@ Radvisualiseringen representerar mätvärden som använder en rad för att visa 
 
 ![Radvisualisering](assets/line-viz.png)
 
-Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen för att komma åt [**Visualiseringsinställningar**](freeform-analysis-visualizations.md) tillgängliga. Inställningarna är indelade i:
+Välj inställningsikonen ![Inställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i det övre fältet i linjevisualiseringen för att komma åt [Visualiseringsinställningar](freeform-analysis-visualizations.md) tillgängliga. Inställningarna är indelade i:
+
+<img src="./assets/viz-settings-line.png" alt="Visualiseringsinställningar" width="50%" />
 
 * **Allmänt**: Inställningar som är gemensamma för olika visualiseringstyper
 * **Axel**: Inställningar som påverkar x- eller y-axeln i linjens visualisering
 * **Övertäckningar**: Alternativ för att lägga till ytterligare kontext till de serier som visas i radvisualiseringen.
 
-![Visualiseringsinställningar](assets/viz-settings-modal.png)
 
 ## Ändra granularitet
 
