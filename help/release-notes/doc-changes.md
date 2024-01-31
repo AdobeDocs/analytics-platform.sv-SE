@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: 7fdaf5868fd1aacbfec526749729be1fb5486cf7
 workflow-type: tm+mt
 source-wordcount: '2964'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Januari 2024** | |
-| Prognos | Lagt till dokumentation om [prognos](../analysis-workspace/c-forecast/forecasting.md), den nya Analysis Workspace-funktionen för att prognostisera ett standardmått eller beräknade mätvärden med valfri tidshalaritet (timma, dag, vecka, månad och år) för frihandsritningar och linjediagram. |
+| Prognos | Lagt till dokumentation om [prognos](../analysis-workspace/c-forecast/forecasting.md), den nya Analysis Workspace-funktionen för att prognostisera ett standardmått eller beräknade mätvärden med valfri tidshalaritet (timma, dag, vecka, månad och år) för frihandstabeller och linjediagram. |
 | Dokumentationen för att lägga till konton och platser vid export av fullständiga register har uppdaterats | Dokumentationen har uppdaterats för att återspegla mindre gränssnittsuppdateringar när ett nytt konto eller en ny plats konfigureras när [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>En ny [!UICONTROL **Lägg till konto**] finns nu i [!UICONTROL **Konto**] listruta. The [!UICONTROL **Lägg till plats**] som tidigare var tillgängligt som en knapp bredvid [!UICONTROL **Platsnamn**] rullgardinsmenyn finns nu tillgänglig på själva menyn. |
 | Ny information om komponentmigrering vid migrering från Adobe Analytics | Lagt till information i [Utveckling från Adobe Analytics](/help/getting-started/aa-to-cja.md) som refererar till det nya [komponentmigrering](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) funktioner som beskrivs i Adobe Analytics Admin Guide. |
 | Klarade att viss information endast är tillgänglig för administratörer | Tillagd information om att kolumnerna &quot;Senast använd&quot; och &quot;Används i&quot; beskrivs i [Beräknat måttansvarig](/help/components/calc-metrics/cm-workflow/cm-manager.md) och [Filterhantering](/help/components/filters/manage-filters.md) är bara tillgängliga för systemadministratörer. |
