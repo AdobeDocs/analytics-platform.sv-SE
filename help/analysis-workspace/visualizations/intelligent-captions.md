@@ -4,10 +4,10 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 0%
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -29,6 +29,10 @@ Om du vill starta automatiskt genererade bildtexter för en radvisualisering kli
 ![Öppna analysfönstret som visar trenden för intelligenta bildtexter för produktvyer. ](assets/intell-caps-1.png)
 
 Naturliga språkkunskaper genereras nu.
+
+Kom ihåg
+
+* Du behöver minst 3 datapunkter för att bildtexterna ska kunna genereras. Annars kan du få ett felmeddelande som läser &quot;Inte tillräckligt med data för att analysera&quot;.
 
 * Bildtexter genereras varje gång de underliggande markerade data ändras i tabellen som styr visualiseringen.
 
