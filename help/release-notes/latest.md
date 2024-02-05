@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 9f60d83673591aebeffeb6442bf9f8b897ab2f20
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '470'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,7 @@ Versionsanteckningarna gäller frisläppningsperioden 8 januari 2024 till 13 feb
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Information om överhoppade poster** | Du kan hämta information om varför poster hoppas över när du konfigurerar en anslutning. Se [Anslutningsinformation](../connections/manage-connections.md#connection-details) för mer information. | 5 februari 2024 | 5 februari 2024 |
 | **Tidsserieprognoser** | [Prognos](../analysis-workspace/c-forecast/forecasting.md) är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknade mätvärden med valfri tidshalaritet (timma, dag, vecka, månad och år) för frihandstabeller och linjediagram. | 31 januari 2024 | 21 februari 2024 |
 | **Uppdateringar av visualisering av sammanfattning av nyckelmått** | När du använder visualisering av nyckelmätningssammanfattning kan datumintervallet för jämförelsen nu uppdateras automatiskt, beroende på om det alternativ för jämförelsedatumintervall du väljer är relativt till det primära datumintervallet eller fasta. [Läs mer](/help/analysis-workspace/visualizations/key-metric.md). | Ej tillämpligt | 17 januari 2024 |
 | **Adobe Product Analytics - Analys av kvarhållningsfrekvenser** | Kvarhållningsfrekvenser är en ny guidad analys som gör att du kan mäta användarnas pågående returvanor. [Läs mer](../guided-analysis/types/retention-rates.md) | Ej tillämpligt | 8 januari 2024 |
