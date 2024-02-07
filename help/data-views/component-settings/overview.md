@@ -5,7 +5,7 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Komponentinställningar
 
-Följande information beskriver c-inställningar som används av en datavykomponent.
+Följande information beskriver de inställningar som används av en datavykomponent.
 
 ![Komponentinställningar som beskrivs i det här avsnittet](../assets/component-settings.png)
 

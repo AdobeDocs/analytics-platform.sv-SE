@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1056'
 ht-degree: 7%
 
 ---
@@ -191,12 +191,6 @@ ht-degree: 7%
 
 + Guidad analys {#guided-analysis}
    + [Översikt](../guided-analysis/overview.md)
-   + Användartillväxt {#user-growth}
-      + [Aktiv vy](../guided-analysis/types/active.md)
-      + [Vyn Nettotillväxt](../guided-analysis/types/net-growth.md)
-   + Trender {#trends}
-      + [Användningsvy](../guided-analysis/types/usage.md)
-      + [Frekvensvy](../guided-analysis/types/frequency.md)
    + Tratt {#funnel}
       + [Bildvy](../guided-analysis/types/friction.md)
       + [Vy över konverteringstrender](../guided-analysis/types/conversion-trends.md)
@@ -205,6 +199,14 @@ ht-degree: 7%
       + [Vyn Första användningen](../guided-analysis/types/first-use.md)
    + Kvarhållning {#retention}
       + [Bevarandegrad](../guided-analysis/types/retention-rates.md)
+   + Trender {#trends}
+      + [Användningsvy](../guided-analysis/types/usage.md)
+      + [Frekvensvy](../guided-analysis/types/frequency.md)
+   + Användartillväxt {#user-growth}
+      + [Aktiv vy](../guided-analysis/types/active.md)
+      + [Vyn Nettotillväxt](../guided-analysis/types/net-growth.md)
+   + Användarström {#streams}
+      + [Tidslinje](../guided-analysis/types/timeline.md)
    + [Användningsexempel](../guided-analysis/industry-use-cases.md)
    + [Vanliga frågor och svar](../guided-analysis/faq.md)
 

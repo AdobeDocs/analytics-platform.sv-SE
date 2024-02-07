@@ -5,9 +5,9 @@ keywords: produktanalys
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: a5c2003a593917bce67346279a033a6041aff959
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Med guidad analys kategoriseras vytyperna i **Analystyper**. Följande analys- o
 | [!UICONTROL Trends] | [Frekvens](types/frequency.md) | Mät engagemang efter användningsfrekvens. |
 | [!UICONTROL User growth] | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
 | [!UICONTROL User growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
+| [!UICONTROL User stream] | [Tidslinje](types/timeline.md) | Utforska mönster i sessionsaktivitet. |
 
 {style="table-layout:auto"}
 
