@@ -4,9 +4,9 @@ description: Upptäck upplevelsemönster och berätta bättre för användarna.
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
+source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,11 @@ The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på använda
 
 >[!NOTE]
 >
->Tidslinjevyn kräver att **[!UICONTROL Person ID]** standardkomponent är tillgänglig i [datavy](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av Adobe Analytics-dataadministratören, vilket ger fullständig sekretesskontroll över vem som har åtkomst till dessa data. Om en datavy inte har [!UICONTROL Person ID] som lagts till visas följande meddelande:
+>Tidslinjevyn kräver att **[!UICONTROL Person ID]** standardkomponent är tillgänglig i [datavy](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av Adobe Analytics-dataadministratören, vilket ger fullständig sekretesskontroll över vem som har åtkomst till dessa data.
 
+Om en datavy inte har [!UICONTROL Person ID] som lagts till visas följande meddelande:
 * **Administratörer**: Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.
-* **Icke-administratörer**: Egenskapen PersonID krävs för den här analysen. Kontakta Adobe Analytics-administratören.
+* **Icke-administratörer**: Egenskapen PersonID krävs för den här analysen. Kontakta Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.
 
 ## Användningsexempel
 
