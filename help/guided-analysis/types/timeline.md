@@ -4,24 +4,27 @@ description: Upptäck upplevelsemönster och berätta bättre för användarna.
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
+source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Timeline] visa
 
-The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och förmedla bättre användarberättelser. Med den vänstra listen kan du filtrera efter egenskapsvärden som du vill direktuppspela och med den högra listen kan du välja det person-ID som du vill analysera. I mittområdet visas dataströmmen efter session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Observera att varaktighet inte är tillgänglig för den senaste händelsen i en given session.
+The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och förmedla bättre användarberättelser. Med den vänstra listen kan du filtrera efter egenskapsvärden som du vill direktuppspela. Med rätt spår kan du välja det person-ID som du vill analysera. I mittområdet visas dataströmmen efter session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
 
 >[!NOTE]
 >
 >Tidslinjevyn kräver att **[!UICONTROL Person ID]** standardkomponent är tillgänglig i [datavy](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av Adobe Analytics-dataadministratören, vilket ger fullständig sekretesskontroll över vem som har åtkomst till dessa data.
 
 Om en datavy inte har [!UICONTROL Person ID] som lagts till visas följande meddelande:
-* **Administratörer**: Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.
-* **Icke-administratörer**: Egenskapen PersonID krävs för den här analysen. Kontakta Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.
+
+* **Administratörer**: *Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.*
+* **Icke-administratörer**: *Egenskapen PersonID krävs för den här analysen. Kontakta Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.*
+
+![Tidslinje, bild](../assets/timeline.png)
 
 ## Användningsexempel
 
@@ -29,7 +32,7 @@ Exempel:
 
 * **Friktionsprospektering**: Om du hittar ett brant fall i dialogrutan [Funktion](friction.md) kan du skapa ett segment av dessa användare och använda segmentet i den här vyn för att undersöka möjliga orsaker.
 * **Felbeteende**: Om en användare råkar ut för ett produktfel kan du utforska vad användaren gjorde före eller efter det att felet visades.
-* **Validering av datainsamling**: Dataadministratörer kan filtrera den här vyn till sitt eget person-ID och använda den för att validera att implementeringen i organisationen fungerar som förväntat.
+* **Validering av datainsamling**: Dataadministratörer kan filtrera den här vyn till sitt eget person-ID för att verifiera att organisationens implementering fungerar som förväntat.
 
 ## Frågerår
 
@@ -44,8 +47,8 @@ The [!UICONTROL Timeline] I vyn finns följande diagraminställningar som du kan
 
 * **[!UICONTROL Show as]**: Visar önskade egenskapsvärden.
    * [!UICONTROL Show all]: Visa alla egenskapsvärden i en session.
-   * [!UICONTROL Highlight]: Visa egenskapsvärden i en session som matchar frågefiltren.
-   * [!UICONTROL View only]: Visa bara egenskapsvärden i en session som matchar frågefiltren.
+   * [!UICONTROL Highlight]: Markerar egenskapsvärden visuellt i en session som matchar frågefiltren.
+   * [!UICONTROL View only]: Visa endast egenskapsvärden i en session som matchar frågefiltren.
 
 ## Datumintervall
 
