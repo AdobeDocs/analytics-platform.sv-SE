@@ -4,7 +4,7 @@ description: Observera sessionshändelser på användarnivå över tid för att 
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
+source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -15,6 +15,8 @@ ht-degree: 0%
 
 The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och förmedla bättre användarberättelser. Med den vänstra listen kan du filtrera flödet efter egenskapsvärden och segment. Med den högra listen kan du välja i en slumpmässig lista över användare som matchar filtervillkoren. I mittområdet visas strömmen för den valda användaren per session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
 
+![Tidslinje, bild](../assets/timeline.png)
+
 >[!NOTE]
 >
 >Tidslinjevyn kräver att **[!UICONTROL Person ID]** standardkomponent är tillgänglig i [datavy](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av din Customer Journey Analytics-administratör, vilket ger din organisation fullständig sekretesskontroll över vem som har åtkomst till dessa data.
@@ -23,8 +25,6 @@ Om en datavy inte har [!UICONTROL Person ID] som lagts till visas följande medd
 
 * **Administratörer**: *Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.*
 * **Icke-administratörer**: *Egenskapen PersonID krävs för den här analysen. Kontakta Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.*
-
-![Tidslinje, bild](../assets/timeline.png)
 
 ## Användningsexempel
 
