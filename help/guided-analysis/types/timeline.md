@@ -1,23 +1,23 @@
 ---
 title: Tidslinjevy
-description: Upptäck upplevelsemönster och berätta bättre för användarna.
+description: Observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster.
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
+source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Timeline] visa
 
-The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och förmedla bättre användarberättelser. Med den vänstra listen kan du filtrera efter egenskapsvärden som du vill direktuppspela. Med rätt spår kan du välja det person-ID som du vill analysera. I mittområdet visas dataströmmen efter session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
+The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och förmedla bättre användarberättelser. Med den vänstra listen kan du filtrera flödet efter egenskapsvärden och segment. Med den högra listen kan du välja i en slumpmässig lista över användare som matchar filtervillkoren. I mittområdet visas strömmen för den valda användaren per session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
 
 >[!NOTE]
 >
->Tidslinjevyn kräver att **[!UICONTROL Person ID]** standardkomponent är tillgänglig i [datavy](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av Adobe Analytics-dataadministratören, vilket ger fullständig sekretesskontroll över vem som har åtkomst till dessa data.
+>Tidslinjevyn kräver att **[!UICONTROL Person ID]** standardkomponent är tillgänglig i [datavy](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av din Customer Journey Analytics-administratör, vilket ger din organisation fullständig sekretesskontroll över vem som har åtkomst till dessa data.
 
 Om en datavy inte har [!UICONTROL Person ID] som lagts till visas följande meddelande:
 
