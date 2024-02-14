@@ -3,36 +3,36 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9f60d83673591aebeffeb6442bf9f8b897ab2f20
+source-git-commit: 29c124da55842bcb9085059a9008f7a7d6baf44e
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 3%
+source-wordcount: '525'
+ht-degree: 0%
 
 ---
 
-# Aktuell versionsinformation för Adobe Customer Journey Analytics (januari 2024)
+# Aktuell versionsinformation för Adobe Customer Journey Analytics (februari 2024)
 
-**Senaste uppdatering**: 30 januari 2024
+**Senaste uppdatering**: 14 februari 2024
 
-Versionsanteckningarna gäller frisläppningsperioden 8 januari 2024 till 13 februari 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsanteckningarna gäller frisläppningsperioden från 14 februari 2024 till 11 mars 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya eller uppdaterade funktioner
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Information om överhoppade poster** | Du kan hämta information om varför poster hoppas över när du konfigurerar en anslutning. Se [Anslutningsinformation](../connections/manage-connections.md#connection-details) för mer information. | 5 februari 2024 | 5 februari 2024 |
-| **Tidsserieprognoser** | [Prognos](../analysis-workspace/c-forecast/forecasting.md) är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknade mätvärden med valfri tidshalaritet (timma, dag, vecka, månad och år) för frihandstabeller och linjediagram. | 31 januari 2024 | 21 februari 2024 |
-| **Uppdateringar av visualisering av sammanfattning av nyckelmått** | När du använder visualisering av nyckelmätningssammanfattning kan datumintervallet för jämförelsen nu uppdateras automatiskt, beroende på om det alternativ för jämförelsedatumintervall du väljer är relativt till det primära datumintervallet eller fasta. [Läs mer](/help/analysis-workspace/visualizations/key-metric.md). | Ej tillämpligt | 17 januari 2024 |
-| **Adobe Product Analytics - Analys av kvarhållningsfrekvenser** | Kvarhållningsfrekvenser är en ny guidad analys som gör att du kan mäta användarnas pågående returvanor. [Läs mer](../guided-analysis/types/retention-rates.md) | Ej tillämpligt | 8 januari 2024 |
-| **Adobe Product Analytics - Trendlinjeövertäckning** | Trendlinjer är en ny övertäckningsinställning som är tillgänglig i [Användningstrender](/help/guided-analysis/types/usage.md) visa och hjälpa till att skildra ett tydligare datamönster. | Ej tillämpligt | 17 januari 2024 |
-| **Adobe Product Analytics - Förbättringar av frågerubriker** | I en guidad analys innehåller den vänstra frågerastern nu vytypen och Räknas som inställningar, som tidigare fanns i Visualiseringsinställningarna. | Ej tillämpligt | 31 januari 2024 |
-| **Adobe Product Analytics - analys av användarströmmar** | Användarströmmar är en ny guidad analys som gör att du kan utforska enskilda användarhändelseströmmar som hjälper dig att hitta upplevelsemönster och berätta bättre användarberättelser. | Ej tillämpligt | 7 februari 2024 |
+| **Tidsserieprognoser** | [Prognos](../analysis-workspace/c-forecast/forecasting.md) är en ny Analysis Workspace-funktion som används för att förutsäga ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis) för frihandstabeller och linjediagram. | 31 januari 2024 | 21 februari 2024 |
+| **Media Analytics-rapportering - genomsnittlig miniatyrpublik (AMA)** | Panelen för genomsnittlig minutpublik är nu tillgänglig i CJA. Media Analytics-kunder kan använda panelen för normal målgrupp för att bättre förstå den genomsnittliga användningen av deras innehåll. Den genomsnittliga minuten-målgruppen möjliggör jämförelser av programmering oavsett längd eller genre. Dessutom kan kunderna jämföra eller lägga till den digitala genomsnittliga minuten-publiken med den linjära minuten-mätningen för tv. Panelen ger större flexibilitet för att mäta den genomsnittliga publiken för anpassade tidsperioder samt när tidsklassificeringen har uppdaterats efter detta. |  | 16 februari 2024 |
+| **Radräkningsmått för sök- och profildata** | Radräkningsmått för datauppsättningar, konfigurerade som en del av en anslutning, inkluderar nu poster som lagts till, hoppats över eller tagits bort från profil- och uppslagsdatauppsättningar. |  | 14 februari 2024 |
+| **Upplev Edge Bot Detection** | [Punktavkänning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) gör att du kan identifiera händelser som genererats av Web SDK, Mobile SDK och Server API som om de genererats av kända spindlar och bottar. | | 21 februari 2024 |
+| **Användningsstatistik** | Gränssnittet för användningsstatistik visar användningen av inkapslade och rapporteringsbara rader i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. | 20 februari 2024 | Tidig mars 2024 |
+| **Adobe Product Analytics: Dela med vem som helst** | Här kan du dela en skrivskyddad länk till Adobe Product Analytics-projekt med personer som inte har tillgång till Product Analytics. |  | 21 februari 2024 |
+| **Adobe Product Analytics: Använd beräknade värden** | Nu kan du få tillgång till beräknade värden som skapats i Analysis Workspace eller verktyget Beräknade mätvärden i vyn Trends: Usage, vilket gör att du kan trender och jämföra mätvärden över tid. |  | 16 februari 2024 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-310972; AN-332774; AN-332793; AN-332796; AN-333157; AN-334067; AN-334134; AN 334968; AN-335315; AN-335518; AN-335533; AN-335736;
+AN-333172; AN-336887; AN-337402; AN-337593; AN-338482; AN-338684; AN-33983; AN-3 340200
 
 ## Viktiga meddelanden för Customer Journey Analytics-administratörer
 
