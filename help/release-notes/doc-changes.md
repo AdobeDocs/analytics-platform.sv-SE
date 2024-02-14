@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 85a921cf97efd33cc6264ce97c871f965f376a5a
+source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
 workflow-type: tm+mt
-source-wordcount: '2985'
+source-wordcount: '3045'
 ht-degree: 7%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Februari 2024** | |
+| Klarade att produktadministratörer alltid har tillgång till fullständiga tabeller för export | Gör följande ändringar för att förtydliga att användare som har tilldelats rollen Produktadministratör har åtkomst till att exportera fullständiga tabeller från Analysis Workspace som standard: <ul><li>En ny punkt har lagts till i [Standardbehörigheter för produktadministratör](/help/admin/cja-access-control.md#product-admin-default-permissions). <p>Lade till en anteckning under [minimikrav för export av fullständiga tabeller till molnet](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</p> |
 | Information om överhoppad post | Lagt till dokumentation om funktionen för överhoppad postinformation i Anslutningar. Se [Anslutningsinformation](../connections/manage-connections.md#connection-details) för mer information. |
 | **Januari 2024** | |
 | Prognos | Lagt till dokumentation om [prognos](../analysis-workspace/c-forecast/forecasting.md), den nya Analysis Workspace-funktionen för att prognostisera ett standardmått eller beräknade mätvärden med valfri tidshalaritet (timma, dag, vecka, månad och år) för frihandstabeller och linjediagram. |

@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ Produktadministratörer har som standard behörighet att utföra följande uppgi
 * Uppdatera och ta bort projekt, filter, beräknade värden, målgrupper, anteckningar eller filter som skapats av andra användare
 * Dela arbetsyteprojekt till alla användare
 * Hantera rapporteringsaktivitet i [Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity-overview.md)
+* [Exportera fullständiga tabeller](/help/analysis-workspace/export/export-cloud.md) från Analysis Workspace
 
 ### Ytterligare behörigheter för produktadministratör
 
