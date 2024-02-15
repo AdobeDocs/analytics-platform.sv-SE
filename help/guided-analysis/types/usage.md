@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: 1d6a241766455a5da978b7e8401f1d7c0ba688d6
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,15 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som en diagramserie och tabellrad. Du kan inkludera upp till fem händelser.
-* **[!UICONTROL People]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet diagramserier och tabellrader. Du kan inkludera upp till fem segment.
+* **[!UICONTROL Events & Metrics]**: De händelser eller mätvärden som du vill mäta. Varje markering representeras som en diagramserie och tabellrad. Det går inte att kombinera händelser och mätvärden i frågan. När du har gjort ditt första val måste de återstående frågevalen vara av samma typ. Du kan ta med upp till fem markeringar.
+* **[!UICONTROL Counted as]**: Det mått som du vill mäta. Alternativen är Händelser, Sessioner, Användare, Procent användare, Händelser per session och Händelser per användare. Räknat som alternativ kan endast användas för händelsefrågor och tas bort för metriska frågor.
+* **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet diagramserier och tabellrader. Du kan inkludera upp till fem segment.
 * **[!UICONTROL Breakdown property]**: Delar upp diagramserien och tabellraderna med värdena för den valda egenskapen. En enda uppdelningsegenskap stöds. De översta 20 värdena visas i tabellen och upp till tio värden kan visas i diagrammet. Du kan dölja eller visa en rad i diagrammet genom att växla ![Visa ikon för Dölj](../assets/hide-in-chart.png) -ikon.
 
 ## Diagraminställningar
 
 The [!UICONTROL Usage] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
 
-* **[!UICONTROL Metric]**: Det mått som du vill mäta. Alternativen är Händelser, Sessioner, Användare, Händelser per session och Händelser per användare.
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Du kan välja mellan Linje, Stapel, Staplad liggande och Staplad yta.
 
 ## Övertäckningar
