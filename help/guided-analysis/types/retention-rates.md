@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
+source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
@@ -44,13 +44,13 @@ Exempel:
 Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL Start & return event]**: De händelsekriterier som en användare måste uppfylla för att kunna inkluderas i din analys. En händelse stöds, men du kan inkludera egenskapsfilter.
-* **[!UICONTROL People]**: De segment som du vill mäta. Varje markerat segment lägger till en rad i kohortabellen. Du kan inkludera upp till tre segment.
+* **[!UICONTROL Counted as]**: Hur du vill mäta användarnas behållning. Alternativen inkluderar [!UICONTROL Users retained] och [!UICONTROL Percentage of users retained].
+* **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment lägger till en rad i kohortabellen. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
 
 The [!UICONTROL Retention rates] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
 
-* **[!UICONTROL Metric]**: Hur du vill mäta användarnas behållning. Alternativen inkluderar [!UICONTROL Users retained] och [!UICONTROL Percentage of users retained].
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Bar] och [!UICONTROL Line].
 
 ## Varaktighetsinställningar
