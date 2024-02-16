@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 1d6a241766455a5da978b7e8401f1d7c0ba688d6
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Exempel:
 Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL Events & Metrics]**: De händelser eller mätvärden som du vill mäta. Varje markering representeras som en diagramserie och tabellrad. Det går inte att kombinera händelser och mätvärden i frågan. När du har gjort ditt första val måste de återstående frågevalen vara av samma typ. Du kan ta med upp till fem markeringar.
-* **[!UICONTROL Counted as]**: Det mått som du vill mäta. Alternativen är Händelser, Sessioner, Användare, Procent användare, Händelser per session och Händelser per användare. Räknat som alternativ kan endast användas för händelsefrågor och tas bort för metriska frågor.
+* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen är Händelser, Sessioner, Användare, Procent användare, Händelser per session och Händelser per användare. Räknat som alternativ kan endast användas för händelsefrågor och tas bort för metriska frågor.
 * **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet diagramserier och tabellrader. Du kan inkludera upp till fem segment.
 * **[!UICONTROL Breakdown property]**: Delar upp diagramserien och tabellraderna med värdena för den valda egenskapen. En enda uppdelningsegenskap stöds. De översta 20 värdena visas i tabellen och upp till tio värden kan visas i diagrammet. Du kan dölja eller visa en rad i diagrammet genom att växla ![Visa ikon för Dölj](../assets/hide-in-chart.png) -ikon.
 

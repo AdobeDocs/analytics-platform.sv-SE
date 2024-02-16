@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Användning](usage.md).
 * **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som ett separat diagram. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
-* **[!UICONTROL Counted as]**: Det mått som du vill mäta. Alternativen inkluderar [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] och  [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
+* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen inkluderar [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] och  [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
 * **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet staplar i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
 
 ## Diagraminställningar

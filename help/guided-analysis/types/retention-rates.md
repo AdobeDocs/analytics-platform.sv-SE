@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Exempel:
 Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL Start & return event]**: De händelsekriterier som en användare måste uppfylla för att kunna inkluderas i din analys. En händelse stöds, men du kan inkludera egenskapsfilter.
-* **[!UICONTROL Counted as]**: Hur du vill mäta användarnas behållning. Alternativen inkluderar [!UICONTROL Users retained] och [!UICONTROL Percentage of users retained].
+* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för användare som behålls. Alternativen inkluderar [!UICONTROL Users retained] och [!UICONTROL Percentage of users retained].
 * **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment lägger till en rad i kohortabellen. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
