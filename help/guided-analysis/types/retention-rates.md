@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Efterföljande varaktighetsintervall anger antalet användare som har returnerat
 * Om en användare engagerar sig i händelsen flera dagar efter att först ha kvalificerat sig för att ingå i analysen, visas de i den senaste kvalificerande varaktighetsgruppen och alla varaktighetsintervall som leder fram till den. Den här typen av beräkning kallas ibland för&quot;obegränsad kvarhållning&quot;.
 * Om en användare engagerar sig i händelsen många gånger under det konfigurerade datumintervallet inkluderas endast den första och den sista händelsen i analysen.
 
-![Bevarandefrekvens, bild](../assets/retention-rates.png)
+![Bevarandefrekvens, bild](../assets/retention-rates.png){style="border:1px solid gray"}
 
 ## Användningsexempel
 

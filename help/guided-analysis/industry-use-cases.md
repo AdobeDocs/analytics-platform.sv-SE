@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 {style="table-layout:auto"}
 
-![Språkvy för butik](assets/retail-funnel-friction.png)
+![Språkvy för butik](assets/retail-funnel-friction.png){style="border:1px solid gray"}
 
-![Användningsvy för återförsäljning](assets/retail-trends-usage.png)
+![Användningsvy för återförsäljning](assets/retail-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -44,11 +44,11 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 {style="table-layout:auto"}
 
-![Vyn Friktion för finansiella tjänster](assets/fsi-funnel-friction.png)
+![Vyn Friktion för finansiella tjänster](assets/fsi-funnel-friction.png){style="border:1px solid gray"}
 
-![Användningsvy för finansiella tjänster](assets/fsi-trends-usage.png)
+![Användningsvy för finansiella tjänster](assets/fsi-trends-usage.png){style="border:1px solid gray"}
 
-![Aktiv vy för finansiella tjänster](assets/fsi-user-growth-active.png)
+![Aktiv vy för finansiella tjänster](assets/fsi-user-growth-active.png){style="border:1px solid gray"}
 
 +++
 
@@ -56,18 +56,18 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 | Använd skiftläge | Exempel | Effekt | Analys |
 | --- | --- | --- | --- |
-| **Kvantifiera påverkan av nya bokningsflödesfunktioner** | En organisation använder guidad analys för att snabbt se hur en ny bokningsstegsfunktion påverkar konverteringsgraden. De identifierar den del av upplevelsen som har de största vinsterna. | **Öka bokningsfrekvensen.** Mät effekten av verksamheten i stället för att bara använda funktioner. | [Visa diseffekt](types/release.md)<br>[Bildvy](types/friction.md) |
+| **Kvantifiera påverkan av nya bokningsflödesfunktioner** | En organisation använder guidad analys för att snabbt se effekten av en ny bokningsstegsfunktion på konverteringsgraden. De identifierar den del av upplevelsen som har de största vinsterna. | **Öka bokningsfrekvensen.** Mät effekten av verksamheten i stället för att bara använda funktioner. | [Visa diseffekt](types/release.md)<br>[Bildvy](types/friction.md) |
 | **Optimera upplevelsen av mobilappar** | En organisation kan snabbt och enkelt förstå månadsanvändare av aktiva appar över tid och identifierar positiva effekter per version. | **Öka MAU:er.** Mät och öka appanvändningen, vilket står i relation till kundernas lycka. | [Vyn Aktiv användartillväxt](types/active.md)<br>[Vyn Nettotillväxt](types/net-growth.md) |
 | **Hitta friktionen i incheckningsflödet för mobiler** | Genom att se var människor lyckas eller faller bort från den förväntade incheckningsprocessen för mobila enheter kan en organisation enkelt identifiera områden för upplevelseoptimering. | **Öka CSAT och minska antalet IROP.** Om du tar bort friktionen blir upplevelsen mer sömlös. | [Bildvy](types/friction.md)<br>[Vy över konverteringstrender](types/conversion-trends.md) |
 | **Defekt samtal till kundtjänst** | När du ser en användarupplevelse i en trattvy ser du en användare där besökarna råkar ut för friktionen, vilket leder till kostsam telefonvolym. Nästa steg du ska fokusera på är tydliga. | **Minska användningen av callcenter.** Få mer användarupplevelser med en&quot;lycklig väg&quot; och minska antalet kostsamma samtal. | [Bildvy](types/friction.md)<br>[Vy över konverteringstrender](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![Friktionsvy för resor och turism](assets/th-funnel-friction.png)
+![Friktionsvy för resor och turism](assets/th-funnel-friction.png){style="border:1px solid gray"}
 
-![Användningsvy för resor och turism](assets/th-trends-usage.png)
+![Användningsvy för resor och turism](assets/th-trends-usage.png){style="border:1px solid gray"}
 
-![Konverteringstrender för resor och turism](assets/th-funnel-conversion-trends.png)
+![Konverteringstrender för resor och turism](assets/th-funnel-conversion-trends.png){style="border:1px solid gray"}
 
 +++
 
@@ -83,11 +83,11 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 {style="table-layout:auto"}
 
-![Bildvisning för media och underhållning](assets/me-funnel-friction.png)
+![Bildvisning för media och underhållning](assets/me-funnel-friction.png){style="border:1px solid gray"}
 
-![Aktiv vy för media och underhållning](assets/me-user-growth-active.png)
+![Aktiv vy för media och underhållning](assets/me-user-growth-active.png){style="border:1px solid gray"}
 
-![](assets/me-trends-usage.png)
+![Användningsvy för media och underhållning](assets/me-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -95,14 +95,14 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 | Använd skiftläge | Exempel | Effekt | Analys |
 | --- | --- | --- | --- |
-| **Förbättra patienternas hälsa** | En organisation har data som kan fokusera på tillväxt. Innan de använde den guidade analysen hade de inte en tydlig förståelse för hur många medlemmar i hälsovårdsplanen per vecka som helt enkelt slutade använda den. | **Minska antalet läkarbesök.** Hitta snabbt vilande användare för återengagemang. | [Vyer för aktiv användartillväxt](types/active.md) |
+| **Förbättra patienternas hälsa** | En organisation har data som kan fokusera på tillväxt. Innan de använde sig av en guidad analys hade de ingen tydlig förståelse för hur många medlemmar i en hälsovårdsplan per vecka som helt enkelt slutade använda den. | **Minska antalet läkarbesök.** Hitta snabbt vilande användare för återengagemang. | [Vyer för aktiv användartillväxt](types/active.md) |
 | **Förbättra patientupplevelsen** | Synligheten i hur många patienter som kontaktade samtalscentra för en enkel lösenordsåterställning förnyade en analytikers passion till laserfokus för att stärka deras patientupplevelse. | **Minska den totala kostnaden.** Skapa en bättre patientupplevelse och minska antalet samtal till patientservice. | [Vyn Användningstrender](types/usage.md)<br>[Bildvy](types/friction.md) |
 | **Identifiera upprepade flerkanalsåtgärder efter segment** | En organisation vill förstå hur aktiva medlemmar i Medicare är med sin plananvändning för att kunna ge dem specifika budskap i sina digitala produkter. Insikter från guidad analys hjälper er att effektivisera marknadsföringen. | **Anpassa registreringsalternativen för Medicare.** Jämför vanliga sekventiella åtgärder med mina mest aktiva planmedlemmar. | [Bildvy](types/friction.md)<br>[Vyn Aktiv användartillväxt](types/active.md) |
 | **Bevara branschens främsta talanger** | Analysresurser för en organisation stoppas för tid. Med hjälp av guidad analys kan organisationen snabbt få de produktanvändningsdata som behövs för att ringa ledande samtal om uppdatering. | **Minska analytikernas arbetsbörda.** Få svar snabbare. Lättillgänglig rapportering för när det är viktigast. | [Guidad analys](overview.md) |
 
 {style="table-layout:auto"}
 
-![Friktionsvy för hälso- och sjukvård](assets/healthcare-funnel-friction.png)
+![Friktionsvy för hälso- och sjukvård](assets/healthcare-funnel-friction.png){style="border:1px solid gray"}
 
 +++
 
@@ -117,6 +117,6 @@ Användningsexempel för guidad analys varierar beroende på bransch. Den här s
 
 {style="table-layout:auto"}
 
-![Användningsvy för B2B](assets/b2b-trends-usage.png)
+![Användningsvy för B2B](assets/b2b-trends-usage.png){style="border:1px solid gray"}
 
 +++

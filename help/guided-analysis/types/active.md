@@ -5,7 +5,7 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 0%
@@ -52,7 +52,7 @@ The [!UICONTROL Active] I vyn finns följande diagraminställningar som du kan j
 
 {{apply-time-comparison}}
 
-![Jämför aktiv tid](../assets/active-compare.png)
+![Jämför aktiv tid](../assets/active-compare.png){style="border:1px solid gray"}
 
 ## Datumintervall
 

@@ -4,7 +4,7 @@ description: Observera sessionshändelser på användarnivå över tid för att 
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och förmedla bättre användarberättelser. Med den vänstra listen kan du filtrera flödet efter egenskapsvärden och segment. Med den högra listen kan du välja i en slumpmässig lista över användare som matchar filtervillkoren. I mittområdet visas strömmen för den valda användaren per session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
 
-![Tidslinje, bild](../assets/timeline.png)
+![Tidslinje, bild](../assets/timeline.png){style="border:1px solid gray"}
 
 >[!NOTE]
 >

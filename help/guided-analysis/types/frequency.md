@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Frequency]** visa grupperade händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här vyn innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
 
-![Skärmbild med frekvens](../assets/frequency-stacked.png)
+![Skärmbild med frekvens](../assets/frequency-stacked.png){style="border:1px solid gray"}
 
 ## Användningsexempel
 

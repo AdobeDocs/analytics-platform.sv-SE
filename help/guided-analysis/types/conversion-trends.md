@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -50,7 +50,7 @@ The [!UICONTROL Conversion trends] I vyn finns följande diagraminställningar s
 
 {{apply-time-comparison}}
 
-![Tidskonverteringstrender - jämför](../assets/conversion-trends-compare.png)
+![Tidskonverteringstrender - jämför](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
 
 ## Datumintervall
 
