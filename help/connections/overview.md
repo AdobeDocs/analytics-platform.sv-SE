@@ -5,16 +5,17 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 3%
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
 # Anslutningar - översikt
 
-Med en anslutning kan du integrera datauppsättningar från [!DNL Adobe Experience Platform] till [!UICONTROL Workspace]. För att rapportera [!DNL Experience Platform] datauppsättningar måste du först skapa en anslutning mellan datauppsättningar i [!DNL Experience Platform] och [!UICONTROL Workspace].
+Med anslutningar kan Customer Journey Analytics-produktadministratörer upprätta anslutningar med olika AEP-datakällor, till exempel händelseuppsättningar, uppslagsdata och profildatamängder. Dessa anslutningar möjliggör integrering av data från en anslutning till en datavy som är en härledd datavy. Vi rekommenderade att åtkomsten till anslutningshantering begränsas till en kärnhanteringsgrupp. Konfigurationer på anslutningsnivå har avtalsmässiga konsekvenser för volymtilldelningar för data som hämtas till Customer Journey Analytics.
+Anslutningar är grunden för CJA och skapas från AEP-källdatauppsättningar. Åtkomst till anslutningar ger även möjlighet att visa anslutningshanteraren, som gör att du kan visa de underliggande datauppsättningarna som anslutningen består av, samt göra viktiga redigerings- och konfigurationsval.
 
 Här är en videoöversikt:
 

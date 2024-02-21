@@ -5,9 +5,9 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 20f48259881bade1978909610055d6b20b894092
+source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Dessa nödvändiga standardkomponenter läggs som standard till i varje datavy. 
 | [!UICONTROL People] | Mått | Baserat på det person-ID som anges i en [!UICONTROL Connection]. |
 | [!UICONTROL Sessions] | Mått | Baserat på sessionsinställningarna i datavyn. |
 | [!UICONTROL Events] | Mått | Antalet rader från alla händelsedatamängder i en [!UICONTROL Connection]. |
+| [!UICONTROL Seconds] | Dimension | Den andra händelsen inträffade (avrundad nedåt). Den första dimensionsuppgiften är den första sekunden i datumintervallet och den sista dimensionsuppgiften är den sista sekunden i datumintervallet. |
 | [!UICONTROL Minute] | Dimension | Den minut som en viss händelse inträffade (avrundad nedåt). Den första dimensionsposten är den första minuten i datumintervallet och den sista dimensionsposten är den sista minuten i datumintervallet. |
 | [!UICONTROL Hour] | Dimension | Den timme då en viss händelse inträffade (avrundad nedåt). Den första dimensionsartikeln är den första timmen i datumintervallet, och den sista dimensionsartikeln är den sista timmen i datumintervallet. |
 | [!UICONTROL Day] | Dimension | Dagen då en viss händelse inträffade. Den första dimensionsartikeln är den första dagen i datumintervallet och den sista dimensionsuppgiften är den sista dagen i datumintervallet. |

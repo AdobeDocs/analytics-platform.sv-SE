@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,18 @@ En produktprofil är en uppsättning behörigheter. Produktprofiladministratöre
 
 ## Åtkomst på användarnivå
 
-Användare i Customer Journey Analytics kan inte skapa, redigera eller visa datavyer eller anslutningar. Användare kan skapa filter, projekt, målgrupper och beräknade värden med specialbehörigheter i Admin Console.
+Tabellen nedan visar de viktigaste åtkomstbehörigheterna för olika Customer Journey Analytics-funktioner för icke-produktadministratörer och CJA-produktadministratörer. Genom att förstå dessa behörigheter kan användarna effektivt navigera och utnyttja CJA utifrån sin roll och sitt ansvar inom organisationen.
+
+| CJA-produktfunktioner | Icke-produktadministratörer (användare) | Produktadministratörer |
+| --- | --- | --- |
+| **Datavyer** | Kan inte visa/uppdatera/skapa/ta bort | Kan skapa/uppdatera/ta bort |
+| **Anslutningar** | Kan inte visa/uppdatera/skapa/ta bort | Kan skapa/uppdatera/ta bort |
+| **Filter** | Kan skapa | Kan skapa |
+| **Projekt** | Kan skapa | Kan skapa/uppdatera/ta bort |
+| **Målgrupper** | Kan skapas med specialbehörigheter i Admin Console | Kan skapa |
+| **Beräknade värden** | Kan skapas med specialbehörigheter i Admin Console | Kan skapa |
+
+{style="table-layout:auto"}
 
 ## Projektstrukturering för arbetsyta
 
