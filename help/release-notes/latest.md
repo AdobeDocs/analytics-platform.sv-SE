@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 22b87a6f64c296e3eb05ec3b7076bf6dfa2935f9
+source-git-commit: b8f70f38471e216c52a6c19b05fa259b9d2426ef
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '625'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (februari 2024)
 
-**Senaste uppdatering**: 14 februari 2024
+**Senaste uppdatering**: 20 februari 2024
 
 Versionsanteckningarna gäller frisläppningsperioden från 14 februari 2024 till 11 mars 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -23,10 +23,11 @@ Versionsanteckningarna gäller frisläppningsperioden från 14 februari 2024 til
 | **Tidsserieprognoser** | [Prognos](../analysis-workspace/c-forecast/forecasting.md) är en ny Analysis Workspace-funktion som används för att förutsäga ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis) för frihandstabeller och linjediagram. | 31 januari 2024 | 21 februari 2024 |
 | **Media Analytics-rapportering - genomsnittlig miniatyrpublik (AMA)** | Panelen för genomsnittlig minutpublik är nu tillgänglig i CJA. Media Analytics-kunder kan använda panelen för normal målgrupp för att bättre förstå den genomsnittliga användningen av deras innehåll. Den genomsnittliga minuten-målgruppen möjliggör jämförelser av programmering oavsett längd eller genre. Dessutom kan kunderna jämföra eller lägga till den digitala genomsnittliga minuten-publiken med den linjära minuten-mätningen för tv. Panelen ger större flexibilitet för att mäta den genomsnittliga publiken för anpassade tidsperioder samt när tidsklassificeringen har uppdaterats efter detta. |  | Februari 2024 |
 | **Radräkningsmått för sök- och profildata** | Radräkningsmått för datauppsättningar, konfigurerade som en del av en anslutning, inkluderar nu poster som lagts till, hoppats över eller tagits bort från profil- och uppslagsdatauppsättningar. |  | 14 februari 2024 |
-| **Upplev Edge Bot Detection** | [Punktavkänning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) gör att du kan identifiera händelser som genererats av Web SDK, Mobile SDK och Server API som om de genererats av kända spindlar och bottar. | | 21 februari 2024 |
+| **Upptäck Edge-robotidentifiering** | [Punktavkänning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) gör att du kan identifiera händelser som genererats av Web SDK, Mobile SDK och Server API som om de genererats av kända spindlar och bottar. | | 29 april 2024 |
 | **Användningsstatistik** | Gränssnittet för användningsstatistik visar användningen av inkapslade och rapporteringsbara rader i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. | 20 februari 2024 | Tidig mars 2024 |
 | **Adobe Product Analytics: Dela med vem som helst** | Här kan du dela en skrivskyddad länk till Adobe Product Analytics-projekt med personer som inte har tillgång till Product Analytics. |  | 21 februari 2024 |
 | **Adobe Product Analytics: Använd beräknade värden** | Nu kan du få tillgång till beräknade värden som skapats i Analysis Workspace eller verktyget Beräknade mätvärden i vyn Trends: Usage, vilket gör att du kan trender och jämföra mätvärden över tid. |  | 16 februari 2024 |
+| **Uppdaterade länkar i användargränssnitt för datavyer och anslutningar** | I början av mars planerar Adobe att uppdatera följande länkar i användargränssnittet för Customer Journey Analytics. Uppdatera bokmärkena därefter.<ul><li>**Datavyvningssida, datavyhanterare**: [Befintlig länk](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/manager) > [Ny länk](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/data-views)</li><li>**Skapa ny datavy**: [Befintlig länk](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/new) > [Ny länk](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/data-views/new)</li><li>**Redigera datavy**: [Befintlig länk](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/dataViewsCJA/edit/dv_65b9f6eba2c6554743236e88) > [Ny länk](https://experience.adobe.com/#/@aresemeavalidationco/platform/analytics/#/apps/data-management/data-views/dv_62fde2e158324f2803c9e5d6/edit)</li><li>**Anslutningshanteraren**: [Befintlig länk](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/manager) > [Ny länk](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections)</li><li>**Information om anslutningar**: [Befintlig länk](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/view/dg_66749c92-784b-45bb-b114-e9e8377a2fc1) > [Ny länk](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/dg_a2b297a6-9220-440d-a403-ee8fbf627cd8)</li><li>**Redigera anslutning**: [Befintlig länk](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/edit/dg_66749c92-784b-45bb-b114-e9e8377a2fc1) > [Ny länk](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/dg_a2b297a6-9220-440d-a403-ee8fbf627cd8/edit)</li><li>**Skapa ny anslutning**: [Befintlig länk](https://experience.adobe.com/#/@aresstagevalidationco/platform/analytics/#/connections2/new) > [Ny länk](https://experience.adobe.com/#/@org/platform/analytics/#/apps/data-management/connections/new/edit)</li></ul> |  | Mars 2024 |
 
 {style="table-layout:auto"}
 

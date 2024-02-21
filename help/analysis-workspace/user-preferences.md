@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: b091606cefa79d5c6d46e2a4a70a77a4cb015c6e
+source-git-commit: 39486d83a446c8bcfe93824c06bee3c681922ff4
 workflow-type: tm+mt
 source-wordcount: '3245'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Klicka på de länkade inställningsrubrikerna för mer information och kontext 
 | --- | --- | --- |
 | **Visa** | | |
 |  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden för den vänstra listen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
-| | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj de visualiseringsfärgpaletter som används i Analysis Workspace och Guidad analys. <ul><li> Kategoripalett: Används för många visualiseringar i Analysis Workspace och för guidad analys. Varje färg representerar ett tydligt kategoriserat värde. Välj mellan alternativ som tillhandahålls av Adobe eller ange en anpassad palett som definieras av kommaavgränsade hexvärden.</li><li> Olika paletter: Används för tabellen Kohort i Analysis Workspace och vägledd analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten.<li> Sekventiell palett: Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt.</li></ul> |
+| | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj de visualiseringsfärgpaletter som används i Analysis Workspace och guidad analys. <ul><li> Kategoripalett: Används för många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde. Välj mellan alternativ som tillhandahålls av Adobe eller ange en anpassad palett som definieras av kommaavgränsade hexvärden.</li><li> Olika paletter: Används för tabellen Kohort i Analysis Workspace och vägledd analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten.<li> Sekventiell palett: Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt.</li></ul> |
 | **Data** | | |
 |  | [Datavy](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Välj var tabeller och visualiseringar ska hämta sina data. <ul><li>Senaste (standard)</li><li>Specifik datavy vald från en lista</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Anpassade intervall</li></ul> |
