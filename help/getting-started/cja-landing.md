@@ -4,10 +4,10 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
+source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 1%
 
 ---
 
@@ -23,15 +23,20 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics och do
 
 >[!BEGINTABS]
 
+>[!TAB Prognos]
+
+Prognosticering är en Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis). Prognoser är endast tillgängliga för tidsserierelaterade data.
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
+
+
 >[!TAB Guidad analys* - kvarhållningsfrekvens]
 
 En ny visningstyp som visar hur många procent användare som returnerar efter det ursprungliga engagemanget inom det önskade datumintervallet. Den vågräta axeln representerar antalet dagar sedan en användares ursprungliga engagemang. Den lodräta axeln representerar procentandelen användare som interagerar igen.
 
-[![image](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
 
 <span style="color:gray">*_Guidad analys ingår i Adobe Product Analytics, som är ett betalt tillägg till Customer Journey Analytics._</span>
-
-
 
 
 >[!TAB Guidad analys* - Trendlinjer]

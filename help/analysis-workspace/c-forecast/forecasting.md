@@ -3,20 +3,20 @@ description: Läs mer om prognoser i Analysis Workspace.
 title: Prognosöversikt
 feature: Visualizations
 role: User
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
 
 # Prognosöversikt
 
-{{release-limited-testing}}
+
 
 {{select-package}}
 
-Prognosticering är en ny Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (varje timme, dag, vecka, månad och år). Prognoser är endast tillgängliga för tidsserierelaterade data.
+Prognosticering är en Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis). Prognoser är endast tillgängliga för tidsserierelaterade data.
 
 Du kan använda prognoser för:
 
