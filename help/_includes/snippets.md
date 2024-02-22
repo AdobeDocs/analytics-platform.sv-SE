@@ -1,7 +1,7 @@
 ---
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: 2f7e11106334560d3c4b54e6c5eaf84d5e1d4fb6
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1158'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Du måste ha **Välj** för att använda de funktioner som beskrivs i detta avsnitt. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
+>Du måste ha **Välj** paket eller högre för att använda de funktioner som beskrivs i detta avsnitt. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
+
+## Prime-paket {#prime-package}
+
+>[!NOTE]
+>
+>Du måste ha **Prime** paket eller högre för att använda de funktioner som beskrivs i detta avsnitt. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
+
+## Ultimat paket {#ultimate-package}
+
+>[!NOTE]
+>
+>Du måste ha **Ultimate** för att använda de funktioner som beskrivs i detta avsnitt. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
 
 
 ## Filtervillkor för dataordlista {#dd-filter-criteria}
