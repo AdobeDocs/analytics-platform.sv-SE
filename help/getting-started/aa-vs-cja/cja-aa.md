@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 2ed8f4c3768312bb8f6c108ef8b8b052acbfa574
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2027'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Analysidentifiering | Fullt stöd |
 | Attribution IQ | Fullt stöd |
+| Punktavkänning | *Kommer snart!* För [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startidentifieringslogik för andra datauppsättningar utförs av [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=en). |
 | Beräknade mått | Fullt stöd. Befintliga beräknade mätvärden i traditionella Analysis Workspace porteras inte till Customer Journey Analytics. |
 | Kalenderhändelser | Fullt stöd. Kalenderhändelser har implementerats som [Anteckningar](/help/components/annotations/overview.md) i Workspace. |
 | CSV-nedladdning | Fullt stöd |
@@ -33,7 +34,8 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Lyft- och förtroenderapportering | Fullt stöd via [Panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md) |
 | List variables/List props | Fullt stöd. Customer Journey Analytics använder XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
 | Marknadsförande eVars | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
-| Mätvärden | Fullt stöd; Customer Journey Analytics använder Experience Data Model (XDM) och har stöd för ett obegränsat antal mätvärden och är inte knutet till Adobe Analytics anpassade framgångshändelser. Vissa standardmått har bytt namn från Adobe Analytics: Besökare = Folk, Besök = Sessioner, Hits = Händelser. |
+| Mätvärden | Fullt stöd; Customer Journey Analytics använder Experience Data Model (XDM) och har stöd för obegränsade mätvärden och är inte knutet till Adobe Analytics anpassade framgångshändelser. Vissa standardmått har bytt namn från Adobe Analytics: Besökare = Folk, Besök = Sessioner, Hits = Händelser. |
+| Migrera projekt, filter och beräknade värden från Adobe Analytics till Customer Journey Analytics | Fullt stöd. |
 | Mobil styrkort/instrumentpaneler | Fullt stöd |
 | Panel | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. |
 | Export från PDF | Fullt stöd |
@@ -75,7 +77,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Projektdelning | Projektdelning stöds endast mellan användare av Customer Journey Analytics - det finns ingen projektdelning mellan Customer Journey Analytics och Analysis Workspace. |
 | Report Builder | Stöds med en ny Office 365-plugin för Excel. |
 | Användarbehörigheter/Dataåtkomstkontroller | Customer Journey Analytics skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) produktadministratörer, produktprofiladministratörer och användare. Endast produktadministratörer kan skapa/uppdatera/ta bort anslutningar, projekt, filter eller beräknade värden som skapats av andra användare, medan produktadministratörer och produktprofiladministratörer kan redigera datavyer. Ytterligare användarbehörigheter är tillgängliga för exempelvis att skapa beräknade värden, filter eller anteckningar. |
-| Visualiseringar | Alla visualiseringar stöds förutom för kartvisualisering. |
+| Visualiseringar | Alla arbetsytevisualiseringar stöds förutom för kartvisualisering. |
 | Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (kallas även fältbaserad sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Stitlar](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
@@ -84,7 +86,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Funktion | Anteckningar |
 | --- | --- |
-| Punktfiltrering | För [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar, robotfiltrering tillämpas. Allmän startfiltreringslogik för andra datauppsättningar utförs inte av [!UICONTROL Experience Platform] eller Customer Journey Analytics. |
 | Panel | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
 | Analyser för mål (A4T) | Delvis stöd ges via fälten i [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Stöd för A4T-vänliga namn på målaktiviteter och -upplevelser planeras. |
 
@@ -101,7 +102,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Realtidsrapportering | Support planeras. |
 | Segmentanalys | Support planeras. |
 | Datakällor för transaktions-ID | Support planeras. |
-| Migrera projekt, filter och beräknade värden från Adobe Analytics till Customer Journey Analytics | Support planeras. |
 | Datakällor på sammanfattningsnivå | Support planeras. |
 
 {style="table-layout:auto"}
@@ -118,9 +118,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 ## Stöds aldrig {#never}
 
 * Personmätvärden med Coop för olika enheter
-* Rapporter och analyspaneler
-* Bokmärken för rapporter och analyser
-* Rapporter och analysmål
 
 ## Adobe Customer Journey Analytics-funktioner som inte finns i Adobe Analytics {#cja-not-aa}
 
