@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -57,14 +57,26 @@ När du delar en specifik projektroll med användare och grupper i organisatione
 
 * Administratörer i **[!UICONTROL Edit copy]** eller **[!UICONTROL Read only]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan ändra sin roll till **[!UICONTROL Edit original]** genom att dela projektet med sig själva och bevilja redigeringsrollen enligt beskrivningen i följande procedur.
 
+* Om du väljer att dela flera projekt läggs mottagarna till i den befintliga listan med mottagare för varje projekt.
+
+  Projekt A delas till exempel redan med mottagare 1, 2 och 3, medan projekt B redan delas med mottagare 4, 5 och 6.
+
+  Projekten A och B delas sedan med mottagarna 4 och 7. Den nya resurslistan för projekt A är nu 1, 2, 3, 4 och 7, medan den nya resurslistan för projekt B är 4, 5, 6 och 7.
+
 Så här delar du en specifik projektroll med användare eller grupper i organisationen:
 
-1. Gå till projektet som du vill dela och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
+1. I Customer Journey Analytics väljer du [!UICONTROL **Arbetsyta**] tabbtangenten och sedan välja [!UICONTROL **Projekt**] till vänster.
+
+1. Markera kryssrutan bredvid ett eller flera projekt som du vill dela och markera sedan [!UICONTROL **Dela**].
+
+   eller
+
+   Om du bara vill dela ett enskilt projekt kan du öppna det projekt som du vill dela och sedan välja **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
 
-   ![Dela projektfönstret.](assets/share-proj-modal.png)
+   Dialogrutan Dela projekt visas. The [!UICONTROL **Dela via länk**] och [!UICONTROL **Inställningar**] -avsnitt i dialogrutan visas bara när du delar ett projekt.
 
-   Mer information om hur du delar flera projekt samtidigt finns i [Dela projekt i projektledaren](#share-projects-in-the-project-manager).
+   ![Dela projektfönstret.](assets/share-proj-modal.png)
 
 1. Lägg till mottagare eller grupper av mottagare i något av de tillhandahållna rollfälten:
 
@@ -74,17 +86,17 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    **Skrivskyddad:** Mottagarna kan inte **[!UICONTROL Save]** eller **[!UICONTROL Save as]** och inte har tillgång till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö. Läs mer om [Skrivskyddad projekterfarenhet](/help/analysis-workspace/curate-share/view-only-projects.md).
 
-1. Välj om du vill aktivera följande alternativ när du delar projektet:
+1. (Villkorligt) Om du delar ett projekt ska du välja om du vill aktivera följande alternativ när du delar projektet:
 
    * **Dela inbäddade projektkomponenter:** Delar filter, beräknade värden och datumintervall med alla mottagare. När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
    * **Ange som landningssida för mottagare:** Anger den här sidan som landningssida för mottagare. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
-1. Klicka på **[!UICONTROL Share]**. (Om projektet redan har delats klickar du på [!UICONTROL **Uppdatera**].)
+1. Välj **[!UICONTROL Share]**. (Om projektet redan har delats väljer du [!UICONTROL **Uppdatera**].)
 
    eller
 
-   Klicka **[!UICONTROL Curate and Share]** för att automatiskt lägga in projekturval. (Om projektet redan har delats klickar du på **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](curate.md).
+   Välj **[!UICONTROL Curate and Share]** för att automatiskt lägga in projekturval. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](curate.md).
 
 ## Dela en länk till ett projekt
 
@@ -170,21 +182,11 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
 1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt.
 
-## Dela projekt i projektledaren {#Manager}
+## Visa projekt som delas med dig
 
-Du kan även dela projekt från **[!UICONTROL Components]>[!UICONTROL Projects]**. Ett enskilt projekt kan delas enligt samma steg ovan.  Om du väljer att dela flera projekt läggs mottagarna till i den befintliga listan med mottagare för varje projekt.
+När någon delar ett projekt med dig av [dela en specifik projektroll](#share-a-specific-project-role)kan du komma åt de delade projekten från [Fliken Projekt på landningssidan för Analytics](/help/getting-started/landing.md#navigate-the-projects-tab).
 
-Exempel:
-
-* Projekt A delas med mottagare 1, 2, 3
-* Projekt B delas med mottagare 4, 5, 6
-
-När du har valt Projekt A och B läggs mottagarna 4 och 7 till i resurslistorna. Den nya resurslistan för varje projekt är nu:
-
-* Projekt A: 1, 2, 3, 4, 7
-* Projekt B: 4, 5, 6, 7
-
-![Fönstret Lägg till mottagare i flera projekt.](assets/mult-proj-sharing.png)
+När någon delar ett projekt med dig genom att dela en länk (antingen från [Dela projektflik](#share-a-link-to-a-project) eller använda en [dela med alla länkar](#share-a-project-with-anyone-no-login-required)) måste du använda länken som delades med dig för att få åtkomst till projektet. Länken kan till exempel ha delats i ett e-postmeddelande, på en intern webbplats och så vidare.
 
 ## Dela inbäddade komponenter
 
