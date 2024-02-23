@@ -6,7 +6,8 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
+exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
+source-git-commit: 744c8cfc903ed841dd39b29fd3fef68ef2e7b7cb
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 0%
@@ -128,7 +129,7 @@ Om du vill söka efter data från andra datauppsättningar använder du standard
 
 #### Beräkningar
 
-Om du vill utföra beräkningar i fält (kolumner) använder du SQL-standardfunktionerna (till exempel `COUNT(*)` eller [matematiska och statistiska operatorer och funktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) ingår i Spark SQL. Dessutom [fönsterfunktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) har stöd för att uppdatera aggregeringar och returnera enstaka objekt för varje rad i en ordnad delmängd. Se [Exempel](#examples) om hur du använder dessa funktioner.
+Om du vill utföra beräkningar i fält (kolumner) använder du SQL-standardfunktionerna (till exempel `COUNT(*)`) eller [matematiska och statistiska operatorer och funktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) ingår i Spark SQL. Dessutom [fönsterfunktioner](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) har stöd för att uppdatera aggregeringar och returnera enstaka objekt för varje rad i en ordnad delmängd. Se [Exempel](#examples) om hur du använder dessa funktioner.
 
 #### Kapslad datastruktur
 
@@ -277,4 +278,3 @@ För att emulera Adobe Analytics Data Feed-funktionaliteten innebär det kort oc
 >[!IMPORTANT]
 >
 >Två schemaläggare är inblandade i det här användningsfallet. För att garantera att de emulerade dataflödesuppgifterna fungerar korrekt ska du se till att de scheman som konfigureras i frågetjänsten och dataexporter inte stör.
-
