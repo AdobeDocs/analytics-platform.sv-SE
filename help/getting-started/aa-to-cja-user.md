@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,7 @@ Med den här flexibiliteten kan du råka ut för situationer där ett enda schem
 
 ## Förändringar av segmentkonceptet
 
-Adobe har bytt namn på&quot;segment&quot;-komponenten till&quot;filter&quot; för att bättre anpassa sig till branschstandarder och ge bättre distinktion till segment i Adobe Experience Platform.
-
-[!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser, utan använder i stället Experience Platform-schemafältnamnet som de har mappats till. Ändringen innebär att inget av de befintliga segmenten i Adobe Analytics är kompatibelt med [!UICONTROL Customer Journey Analytics]. Om du vill flytta befintliga Adobe Analytics-segment till Customer Journey Analytics ska du titta i följande video:
-
->[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
+Även om segment inte är tekniskt migrerade från Adobe Analytics till Customer Journey Analytics kan du använda komponentmigreringsverktyget för att återskapa Adobe Analytics-segment i Customer Journey Analytics. Segmenten återskapas i Customer Journey Analytics baserat på de dimensioner och mätvärden som mappas. Mer information finns i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
 
 Även om du inte kan dela eller publicera ännu [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] för Experience Platform Unified Profile håller den här funktionen på att utvecklas.
 

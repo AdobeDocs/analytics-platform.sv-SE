@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: d9a54eca27b41a7d52e61a75e18850608fc97e5e
 workflow-type: tm+mt
-source-wordcount: '3086'
+source-wordcount: '3168'
 ht-degree: 7%
 
 ---
@@ -20,8 +20,10 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Februari 2024** | |
+| Lagt till behörighetskrav för överföring av filer till Azure SAS och Azure RBAC när molnexportplatser konfigureras | Exakta behörighetskrav för överföring av filer till Azure SAS och Azure RBAC har lagts till när [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). |
 | Lagt till behörighetskrav för att överföra filer till Amazon S3 Role ARN- och GCP-bucket när du konfigurerar molnexportplatser | Exakta behörighetskrav för överföring av filer till Amazon S3 Role ARN och Google Cloud Platform har lagts till när [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). |
 | Klarade att produktadministratörer alltid har tillgång till fullständiga tabeller för export | Gör följande ändringar för att förtydliga att användare som har tilldelats rollen Produktadministratör har åtkomst till att exportera fullständiga tabeller från Analysis Workspace som standard: <ul><li>En ny punkt har lagts till i [Standardbehörigheter för produktadministratör](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Lade till en anteckning under [minimikrav för export av fullständiga tabeller till molnet](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
+| Det klargörs att segment återskapas vid komponentmigrering från Adobe Analytics | I [Användarhandbok för Adobe Analytics](/help/getting-started/aa-to-cja-user.md), klargjorde att segment automatiskt återskapas i Adobe Analytics som en del av komponentmigreringsprocessen och inte behöver återskapas manuellt. |
 | Information om överhoppad post | Lagt till dokumentation om funktionen för överhoppad postinformation i Anslutningar. Se [Anslutningsinformation](../connections/manage-connections.md#connection-details) för mer information. |
 | **Januari 2024** | |
 | Prognos | Lagt till dokumentation om [prognos](../analysis-workspace/c-forecast/forecasting.md), den nya Analysis Workspace-funktionen för att prognostisera ett standardmått eller beräknade mätvärden med valfri tidshalaritet (timma, dag, vecka, månad och år) för frihandstabeller och linjediagram. |

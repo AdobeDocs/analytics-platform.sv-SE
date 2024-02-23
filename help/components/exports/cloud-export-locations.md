@@ -5,9 +5,9 @@ title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
    | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Behållarnamn**] | Behållaren i det konto du angav där du vill att Customer Journey Analytics data ska skickas. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/`<p>Kontrollera att det SAS-tokenarkiv som du angav i fältet Nyckelvalvets hemliga namn när du konfigurerar Azure SAS-kontot har `Write` behörighet. Detta gör att SAS-token kan skapa filer i din Azure-behållare. <p>Om du vill att SAS-token även ska skriva över filer måste du se till att SAS-tokenarkivet har `Delete` behörighet.</p><p>Mer information finns i [Lagringsresurser för blob](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) i dokumentationen för Azure Blob Storage.</p> |
 
    {style="table-layout:auto"}
 
@@ -172,7 +172,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
    | Fält | Funktion |
    |---------|----------|
    | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
-   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
+   | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/`<p>Kontrollera att det program-ID som du angav när du konfigurerade Azure RBAC-kontot har tilldelats `Storage Blob Data Contributor` roll för att komma åt behållaren (mappen).</p> <p>Mer information finns i [Inbyggda Azure-roller](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Konto**] | Azure-lagringskontot. |
 
    {style="table-layout:auto"}
