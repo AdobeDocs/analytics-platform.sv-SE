@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 70705430e578ad49a919bc8ad172adf7d28c4887
+source-git-commit: fd12f9b90c3240d10bf2fd5e22a2983b844051b5
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Versionsanteckningarna gäller frisläppningsperioden från 14 februari 2024 til
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Tidsserieprognoser** | [Prognos](../analysis-workspace/c-forecast/forecasting.md) är en ny Analysis Workspace-funktion som används för att förutsäga ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis) för frihandstabeller och linjediagram. | 31 januari 2024 | 21 februari 2024 |
-| **Media Analytics-rapportering - genomsnittlig miniatyrpublik (AMA)** | Panelen för genomsnittlig minutpublik är nu tillgänglig i CJA. Media Analytics-kunder kan använda panelen för normal målgrupp för att bättre förstå den genomsnittliga användningen av deras innehåll. Den genomsnittliga minuten-målgruppen möjliggör jämförelser av programmering oavsett längd eller genre. Dessutom kan kunderna jämföra eller lägga till den digitala genomsnittliga minuten-publiken med den linjära minuten-mätningen för tv. Panelen ger större flexibilitet för att mäta den genomsnittliga publiken för anpassade tidsperioder samt när tidsklassificeringen har uppdaterats efter detta. |  | Februari 2024 |
+| **Media Analytics-rapportering - genomsnittlig miniatyrpublik (AMA)** | Panelen för genomsnittlig minutpublik är nu tillgänglig i CJA. Media Analytics-kunder kan använda panelen för normal målgrupp för att bättre förstå den genomsnittliga användningen av deras innehåll. Den genomsnittliga minuten-målgruppen möjliggör jämförelser av programmering oavsett längd eller genre. Dessutom kan kunderna jämföra eller lägga till den digitala genomsnittliga minuten-publiken med den linjära minuten-mätningen för tv. Panelen ger större flexibilitet för att mäta den genomsnittliga publiken för anpassade tidsperioder samt när tidsklassificeringen har uppdaterats efter detta. |  | Mars 2024 |
 | **Radräkningsmått för sök- och profildata** | Radräkningsmått för datauppsättningar, konfigurerade som en del av en anslutning, inkluderar nu poster som lagts till, hoppats över eller tagits bort från profil- och uppslagsdatauppsättningar. |  | 14 februari 2024 |
 | **Upptäck Edge-robotidentifiering** | [Punktavkänning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) gör att du kan identifiera händelser som genererats av Web SDK, Mobile SDK och Server API som om de genererats av kända spindlar och bottar. | | 29 april 2024 |
 | **Användningsstatistik** | Gränssnittet för användningsstatistik visar användningen av inkapslade och rapporteringsbara rader i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. | 20 februari 2024 | Tidig mars 2024 |
