@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 8303043d46365195d9ffde6eaa06f49c9d22101d
+source-git-commit: 449aa54d1a1dd1ff2ce9e7408926f61533fc3c02
 workflow-type: tm+mt
-source-wordcount: '2618'
+source-wordcount: '2634'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,16 @@ Arbetsflödet för att skapa och redigera anslutningar gör att alla konfigurati
 
 ## Förutsättningar
 
-Du måste ha **Välj** för att lägga till ett obegränsat antal händelsedatamängder i en anslutning. The **Foundation** paketet är begränsat till en händelsedatamängd. Du kan lägga till ett obegränsat antal profil- eller uppslagsdatauppsättningar i en anslutning. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har. &#x200B;
+Antalet datauppsättningar som du kan lägga till i en anslutning är 100. Blandningen beror på vilket Customer Journey Analytics-paket ditt företag har köpt.
+
+| **Välj** package | **Foundation** package |
+| --- | --- |
+| Valfri kombination av händelse-/profil-/uppslagsdatauppsättningar, vilket ger upp till 100 | En händelsedatamängd per anslutning |
+|  | Upp till 99 profil- eller uppslagsdatauppsättningar per anslutning |
+
+{style="table-layout:auto"}
+
+Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har. &#x200B;
 
 ## Skapa och konfigurera anslutningen {#create-connection}
 
