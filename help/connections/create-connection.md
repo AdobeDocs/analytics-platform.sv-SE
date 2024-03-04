@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 2be283e0abd32229be1921b106d166f47fb410a8
+source-git-commit: 8303043d46365195d9ffde6eaa06f49c9d22101d
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2618'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Du måste ha **Välj** för att lägga till ett obegränsat antal händelsedatam
    | **[!UICONTROL Key]** | Endast för uppslagsdatauppsättningar (till exempel _id). |
    | **[!UICONTROL Matching Key]** | Endast för uppslagsdatauppsättningar (till exempel _id). |
    | **[!UICONTROL Import new data]** | Inställd på På eller Av. |
-   | **[!UICONTROL Backfill data]** | Du kan begära att få fylla i data i en datauppsättning baklänges baserat på tidsstämplar för händelsen. Du kan till exempel begära att de senaste 7 dagarnas data ska fyllas i igen, konfigurera rätt person-ID och testa anslutningen för att få rätt konfiguration. Om allt ser bra ut kan du enkelt fylla i alla återstående data.<p>Dessutom kan du aktivera import av nya data per datauppsättning. Du kan t.ex. aktivera import av nya data endast för sökdata. |
+   | **[!UICONTROL Backfill data]** | Du kan begära att få fylla i data i en datauppsättning baklänges baserat på tidsstämplar för händelsen. Du kan till exempel begära att de senaste 7 dagarnas data ska fyllas i igen, konfigurera rätt person-ID och testa anslutningen för att få rätt konfiguration. Om allt ser bra ut kan du enkelt fylla i alla återstående data.<p>Dessutom kan du aktivera import av nya data per datauppsättning. |
    | **[!UICONTROL Backfill status]** | Anger om några data för bakgrundsfyllning bearbetas. |
 
    {style="table-layout:auto"}
