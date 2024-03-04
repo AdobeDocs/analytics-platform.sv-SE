@@ -2,9 +2,8 @@
 description: I filterverktyget finns en arbetsyta där du kan dra och släppa metriska Dimensioner, filter och händelser för att filtrera personer baserat på behållarhierarkiens logik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa filter som identifierar personattribut och åtgärder för besök och händelser.
 title: Skapa filter
 feature: Filters
-exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c19309488e0a541b522ca6925c7ca2bdb90f2390
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
