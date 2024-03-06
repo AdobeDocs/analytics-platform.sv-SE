@@ -1,11 +1,11 @@
 ---
 title: Vy över konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%

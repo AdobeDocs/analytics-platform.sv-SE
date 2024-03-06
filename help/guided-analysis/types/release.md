@@ -1,11 +1,11 @@
 ---
 title: Versionsvy
 description: Jämför prestanda i lika stora perioder före och efter lanseringen.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

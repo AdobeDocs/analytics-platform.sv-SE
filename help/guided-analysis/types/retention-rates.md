@@ -1,11 +1,11 @@
 ---
 title: Bevarandegrad
 description: Mät hur många användare som fortsätter att använda produkten.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 0%
