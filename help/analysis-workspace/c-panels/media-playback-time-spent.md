@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Medieuppspelningstid för 
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1c9f3d1de499eda5aeeb4e6763871c8a2e7d075d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Du kan konfigurera panelen Tid för uppspelning av media med följande indatains
 | Kornighet | Granularitetsstandardvärdet är Minut.<br>Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå). Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
 | Sammanfattningsnummer för panel | Om du vill visa datum- eller tidsinformation för uppspelningstid finns ett sammanfattningsnummer. Maximal visar detaljer för maximal samtidighet. Minimivärdet visar information om dalvärdet. Summan lägger ihop den totala uppspelningstiden för markeringen. Panelens standardinställning visar bara Maximum, men du kan ändra den till Minimal, Summa eller valfri kombination av de tre.<br>Om du använder uppdelningar visas ett summeringsnummer för varje. |
 | Uppdelning efter serie | Du kan även dela upp visualiseringen med filter, dimensioner, dimensionsobjekt eller datumintervall.<p>- Du kan visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå.</p><p>- När du drar en dimension markeras de översta dimensionsobjekten automatiskt baserat på det valda panelens datumintervall.</p>- Om du vill jämföra datumintervall drar du 2 eller fler datumintervall till serieuppdelningsfiltret. |
-| Tidsformat | Du kan visa uppspelningstiden i båda timmarna:Minutes:Sekunder (standard) eller i minuter (som visas i heltal, avrundat uppåt till 0,5). |
+| Tidsformat | Du kan visa uppspelningstiden som använts i `Hours:Minutes:Seconds` (standard) eller i `Minutes` (som visas i heltal, avrundat uppåt till 0,5). |
 | Visning av datumsekvens | Om du har placerat minst två datumintervallfilter som serieuppdelningar visas alternativet att välja antingen övertäckning (standard) eller sekventiell. Med Övertäckning visas raderna med en gemensam x-axelstart så att de körs parallellt, medan linjer visas sekventiellt med den specifika x-axelstarten. Om dataraderna är i ordning (till exempel filtret 1 slutar vid 20:44 och filtret 2 börjar vid 20:45) visas raderna i tur och ordning. |
 
 ## Standardvy
@@ -73,7 +73,7 @@ Det enda mätvärdet som kan användas i den här panelen är Använd uppspelnin
 
 | Mått | Beskrivning |
 |---|---|
-| Antal uppspelningstider | Totalt antal timmar:minutes:sekunder (eller minuter) av innehåll som visas under den valda granulariteten, inklusive paus, buffert och tid till start. |
+| Antal uppspelningstider | Totalt `hours:minutes:seconds` (eller `minutes`) av innehåll som visas under den valda granulariteten, inklusive paus, buffert och tid till start. |
 
 ## Vanliga frågor
 
