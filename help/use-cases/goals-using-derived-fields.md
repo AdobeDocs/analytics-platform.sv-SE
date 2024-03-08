@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 I det här användningsexemplet beskrivs hur du använder styrkan i härledda fält för att ange mål för en viss dimension och sedan använda dessa mål i Workspace-projektet.
 
-Om du inte känner till härledda fält kan du läsa [självstudiekurs](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=en) och [dokumentation](../data-views/derived-fields/derived-fields.md) för en introduktion.
+Om du inte känner till härledda fält kan du läsa [självstudiekurs](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) och [dokumentation](../data-views/derived-fields/derived-fields.md) för en introduktion.
 
 
 ## Definiera mål

@@ -4,7 +4,7 @@ description: Lär dig använda Data Prep för att kombinera rapportsviter med ol
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Kombinera rapportsviter med olika scheman
 
-The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) lägger in data från Adobe Analytics i Adobe Experience Platform för användning i Adobe Experience Platform-program som Real-time Customer Data Platform och Customer Journey Analytics (Customer Journey Analytics). Varje rapportsvit som hämtas in till Adobe Experience Platform konfigureras som ett enskilt källanslutningsdataflöde, och varje dataflöde markeras som en datauppsättning i Adobe Experience Platform datasjön. Analyskällans koppling skapar en datauppsättning per rapportserie.
+The [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) lägger in data från Adobe Analytics i Adobe Experience Platform för användning i Adobe Experience Platform-program som Real-time Customer Data Platform och Customer Journey Analytics (Customer Journey Analytics). Varje rapportsvit som hämtas in till Adobe Experience Platform konfigureras som ett enskilt källanslutningsdataflöde, och varje dataflöde markeras som en datauppsättning i Adobe Experience Platform datasjön. Analyskällans koppling skapar en datauppsättning per rapportserie.
 
-Customer Journey Analytics-kunder använder [anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) att integrera datauppsättningar från Adobe Experience Platform datasjön i Customer Journey Analytics Analysis Workspace. När du kombinerar rapportsviter i en anslutning måste schemaskillnaderna mellan rapportsviterna dock lösas med Adobe Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) funktionalitet. Syftet är att säkerställa att Adobe Analytics-variabler som props och eVars har en konsekvent betydelse i Customer Journey Analytics.
+Customer Journey Analytics-kunder använder [anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) att integrera datauppsättningar från Adobe Experience Platform datasjön i Customer Journey Analytics Analysis Workspace. När du kombinerar rapportsviter i en anslutning måste schemaskillnaderna mellan rapportsviterna dock lösas med Adobe Experience Platform [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) funktionalitet. Syftet är att säkerställa att Adobe Analytics-variabler som props och eVars har en konsekvent betydelse i Customer Journey Analytics.
 
 ## Schemaskillnader mellan rapportsviter är problematiska
 
@@ -52,14 +52,14 @@ Detta leder till meningslösa rapporter för eVar1 och eVar2:
 
 Funktionen Experience Platform Data Prep är integrerad med Analytics-källkopplingen och kan användas för att lösa de schemaskillnader som beskrivs i scenariot ovan. Detta resulterar i eVars med enhetlig betydelse i datavyn i Customer Journey Analytics. (Namnkonventionerna nedan kan anpassas efter dina behov.)
 
-1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) i Adobe Experience Platform (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande i schemat:
+1. Innan du skapar källanslutningsdataflöden för Report Suite A och Report Suite B, [Skapa ett nytt schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html) i Adobe Experience Platform (vi kallar det **Enhetligt schema** i vårt exempel.) Lägg till följande i schemat:
 
    | &quot;Enhetligt schema&quot; |
    | --- |
    | **XDM ExperienceEvent** class |
    | **Adobe Analytics ExperienceEvent-mall** fältgrupp |
 
-1. Lägg till en annan fältgrupp till schemat eller [skapa en anpassad fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) och lägg till det i schemat. Vi skapar en ny fältgrupp och kallar den **Enhetliga fält**. Sedan lägger vi till följande fält i den nya fältgruppen:
+1. Lägg till en annan fältgrupp till schemat eller [skapa en anpassad fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) och lägg till det i schemat. Vi skapar en ny fältgrupp och kallar den **Enhetliga fält**. Sedan lägger vi till följande fält i den nya fältgruppen:
 
    | Anpassad fältgrupp för enhetliga fält  |
    | --- |
@@ -158,6 +158,6 @@ Med Data Prep kan du kombinera kundkategorin i eVar 1 i analysdata med kundkateg
 
 ## Data Prep vs. komponent-ID
 
-Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i Customer Journey Analytics när du vill kombinera data från flera datauppsättningar till en enda Customer Journey Analytics-anslutning. Om du tänker behålla rapportsviterna i olika Customer Journey Analytics-anslutningar men vill använda en uppsättning rapporter för alla anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i Customer Journey Analytics, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) för mer information.
+Som beskrivits ovan kan du med Data Prep mappa olika fält till flera Adobe Analytics-rapportsviter. Detta är användbart i Customer Journey Analytics när du vill kombinera data från flera datauppsättningar till en enda Customer Journey Analytics-anslutning. Om du tänker behålla rapportsviterna i olika Customer Journey Analytics-anslutningar men vill använda en uppsättning rapporter för alla anslutningar och datavyer, kan du göra rapporter kompatibla genom att ändra det underliggande komponent-ID:t i Customer Journey Analytics, även om scheman är olika. Se [Komponentinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html) för mer information.
 
 Att ändra komponent-ID:t är en funktion som bara är för Customer Journey Analytics och påverkar inte data från Analytics-källkopplingen som skickas till kundprofilen i realtid och RTCDP.

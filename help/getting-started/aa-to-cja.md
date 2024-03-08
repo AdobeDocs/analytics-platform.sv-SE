@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 37d9e8e84e1982d63f2173601d75f0b7fa552b73
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1431'
 ht-degree: 0%
 
 ---
@@ -60,19 +60,17 @@ Med introduktionen av [Härledda fält](../data-views/derived-fields/derived-fie
 
 ### 4. Bestäm dig för att använda Analytics-källkopplingen jämfört med Experience Platform SDK:er {#connector-vs-sdk}
 
-Adobe Analytics-kunder kan enkelt utnyttja sina rapportsviter i Adobe Experience Platform och Customer Journey Analytics med Analytics-källkopplingen. Information om hur du använder Analytics-källkopplingen finns i snabbstartsguiden för hur du [importera data från Adobe Analytics och använda dem i Customer Journey Analytics](../data-ingestion/analytics.md). Se även [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) för mer information.
+Adobe Analytics-kunder kan enkelt utnyttja sina rapportsviter i Adobe Experience Platform och Customer Journey Analytics med Analytics-källkopplingen. Information om hur du använder Analytics-källkopplingen finns i snabbstartsguiden för hur du [importera data från Adobe Analytics och använda dem i Customer Journey Analytics](../data-ingestion/analytics.md). Se även [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) för mer information.
 
-Som [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) datainsamlingen utvecklas, du kommer troligen att migrera till [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) med Adobe Experience Platform Edge Network. En vanlig implementering av SDK:er skickar data till Adobe Analytics, men det finns en ny möjlighet att skicka data direkt till Adobe Experience Platform. Den kan sedan importeras till Customer Journey Analytics, samtidigt som data skickas till Adobe Analytics bevaras.
-
-Den här metoden utökar möjligheterna för datainsamling avsevärt: Det finns inte längre någon begränsning för antalet fält eller behovet av att mappa dataelement till props, eVars och händelser som i Analytics. Du kan använda ett obegränsat antal schemaelement av olika typer och representera dem på flera olika sätt med Customer Journey Analytics [Datavyer](/help/data-views/data-views.md). Snabbheten för datatillgänglighet ökar när data skickas direkt till Adobe Experience Platform, när tiden för databehandling via Adobe Analytics tas bort.
+Adobe erbjuder också möjligheten att implementera datainsamling med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html). Dessa metoder ger stora möjligheter att samla in data. Det finns inte längre någon begränsning av antalet fält eller behovet av att mappa dataelement till props, eVars och händelser som i Analytics. Du kan använda ett obegränsat antal schemaelement av olika typer och representera dem på flera olika sätt med Customer Journey Analytics [Datavyer](/help/data-views/data-views.md). Snabbheten för datatillgänglighet ökar när data skickas direkt till Adobe Experience Platform, när tiden för databehandling via Adobe Analytics tas bort.
 
 **Fördelar med att använda Experience Platform SDK:**
 
 * Flexibelt schema för att definiera de fält du behöver
 * Inte beroende av Adobe Analytics nomenklatur (prop, eVar, event osv.)
 * Inga teckenbegränsningar (100 tecken för props)
-* Bättre datatillgänglighet i Adobe Experience Platform [användningsexempel för personalisering i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=en)
-* [Enhets-ID:n från första part](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en) för exaktare besöksidentifiering
+* Bättre datatillgänglighet i Adobe Experience Platform [användningsexempel för personalisering i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
+* [Enhets-ID:n från första part](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) för exaktare besöksidentifiering
 
 **Nackdelar med att använda Experience Platform SDK**
 
@@ -122,7 +120,7 @@ Här är några videor som vägleder dig:
 
 * [Flytta Adobe Analytics-segment till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 
-* [Flytta dina beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+* [Flytta dina beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html)
 
 ### Andra överväganden
 

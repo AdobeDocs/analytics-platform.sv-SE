@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-[Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
+[Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
 
 Med hjälp av inflytelserika faktorer kan kundens AI tala om för er vad en kund kan tänkas göra och varför. Dessutom kan marknadsförarna dra nytta av kundernas AI-prognoser och insikter för att personalisera kundupplevelser genom att leverera de lämpligaste erbjudandena och budskapen.
 
@@ -49,7 +49,7 @@ Så här integrerar du kundens AI-data med Customer Journey Analytics:
 
 ## Steg 1: Konfigurera en AI-instans för kund
 
-När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa följande [Konfigurera en AI-instans för kund](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) i Adobe Experience Platform.
+När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa följande [Konfigurera en AI-instans för kund](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html) i Adobe Experience Platform.
 
 ## Steg 2: Konfigurera en Customer Journey Analytics-anslutning till kundens AI-datauppsättningar
 

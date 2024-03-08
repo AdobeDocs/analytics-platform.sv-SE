@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Så här konfigurerar du ditt schema:
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) för mer information.
+   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) för mer information.
 
    >[!IMPORTANT]
    >
@@ -237,7 +237,7 @@ Så här skapar du en HTTP API-källkoppling:
 
 Du kan kopiera URL:en för direktuppspelningsslutpunkten och använda den för att konfigurera ditt lojalitetsprogram så att data direktuppspelas i Adobe Experience Platform lojalitetsdatauppsättning.
 
-Se [Skapa en HTTP API-direktuppspelningsanslutning med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en) för en mer omfattande självstudiekurs som förklarar:
+Se [Skapa en HTTP API-direktuppspelningsanslutning med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) för en mer omfattande självstudiekurs som förklarar:
 
 - hur autentisering används,
 - hur du mappar data när dina inkommande data inte är kompatibla med ditt XDM-schema, och

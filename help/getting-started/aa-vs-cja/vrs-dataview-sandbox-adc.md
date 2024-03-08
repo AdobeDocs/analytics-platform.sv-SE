@@ -4,7 +4,7 @@ description: Läs mer om virtuella rapportmiljöer och sandlådemiljöer.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics
 
-Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är användbart att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
+Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är användbart att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html):
 
 * Adobe Analytics virtuella rapportsviter
 * datavyer i Customer Journey Analytics
@@ -21,7 +21,7 @@ Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och san
 
 ## Adobe Analytics virtuella rapportsviter
 
-Mer information finns i: [Översikt över virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
+Mer information finns i: [Översikt över virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
 
 En virtuell rapportsvit:
 
@@ -29,9 +29,9 @@ En virtuell rapportsvit:
 * Kan tillämpas på både historiska och nya data på ett icke-förstörande sätt.
 * Med det här alternativet kan du skapa en eller flera virtuella vyer ovanpå en Adobe Analytics-rapportserie som kan användas av olika affärsteam.
 * Kan användas för att styra åtkomst till och strukturera olika typer av data för olika användare i Adobe Analytics.
-* Tillval [rapporttidsbearbetning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) för Adobe Analytics. I det här fallet kan en virtuell rapportserie användas för att skapa en anpassad definition för&quot;besök&quot;.
+* Tillval [rapporttidsbearbetning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html) för Adobe Analytics. I det här fallet kan en virtuell rapportserie användas för att skapa en anpassad definition för&quot;besök&quot;.
 * Används vid rapportkörning, ungefär som vid segmentutvärdering. Det här är _efter_ uppgifterna har samlats in och lagrats inom Adobe Analytics.
-* Krävs för [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) i Adobe Analytics.
+* Krävs för [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) i Adobe Analytics.
 * Har tillgång till samma antal variabler som kan användas som en vanlig Analytics Report Suite (250 eVars, 250 props, 1 000 händelser), även om kurationen i den virtuella rapportsviten kan begränsa vilka variabler som exponeras för användarna.
 * Stöder anpassade kalenderalternativ.
 
@@ -44,7 +44,7 @@ En virtuell rapportsvit är inte:
 
 ## datavyer i Customer Journey Analytics
 
-Mer information finns i: [Översikt över datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en).
+Mer information finns i: [Översikt över datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html).
 
 En datavy:
 
@@ -66,7 +66,7 @@ Datavyn innehåller inte följande:
 
 ## Adobe Experience Platform sandlådor
 
-Mer information finns i: [Översikt över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en).
+Mer information finns i: [Översikt över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv).
 
 En Adobe Experience Platform-sandlåda:
 
@@ -81,4 +81,4 @@ En Adobe Experience Platform-sandlåda gör inte följande:
 Observera att:
 
 * Data från olika sandlådor kan inte kombineras i Customer Journey Analytics.
-* Analyskällans koppling skickar rapportsvitsdata _till_ en specifik sandlåda. Varje rapportsvit kan konfigureras som en källa för en enskild sandlåda. Se [Dokumentation för Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) för mer information.
+* Analyskällans koppling skickar rapportsvitsdata _till_ en specifik sandlåda. Varje rapportsvit kan konfigureras som en källa för en enskild sandlåda. Se [Dokumentation för Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) för mer information.

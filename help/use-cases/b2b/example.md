@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 2%
@@ -37,7 +37,7 @@ Datauppsättningar som du kan överväga att lägga till i anslutningen:
 | Datamängd för B2B-marknadsföringslista | Schema för B2B-marknadsföringslista | Sök | XDM-marknadsföringslista | XDM Business Marketing List är en XDM-standardklass (Experience Data Model) som fångar upp de minsta nödvändiga egenskaperna för en marknadsföringslista. Med marknadsföringslistor kan ni prioritera kunder som är mest benägna att köpa er produkt. |
 | Datauppsättning för medlemmar i B2B-marknadsföringslista | Schema för medlemmar i B2B-marknadsföringslista | Sök | XDM Marketing List-medlemmar | XDM Business Marketing List-medlemmar är en XDM-klass (Experience Data Model) som beskriver medlemmar, personer eller kontakter som är kopplade till en marknadsföringslista. |
 
-Förhållandet mellan uppslagsscheman, profilschemat och händelseschemat definieras i B2B-inställningarna i Experience Platform. Se scheman i [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) och [Definiera en många-till-ett-relation mellan två scheman i Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) för mer information.
+Förhållandet mellan uppslagsscheman, profilschemat och händelseschemat definieras i B2B-inställningarna i Experience Platform. Se scheman i [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) och [Definiera en många-till-ett-relation mellan två scheman i Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) för mer information.
 
 ![Relation mellan B2B-scheman](assets/classes.png)
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Så här konfigurerar du ditt schema:
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) för mer information.
+   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) för mer information.
 
    >[!IMPORTANT]
    >

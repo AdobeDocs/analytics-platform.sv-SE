@@ -5,7 +5,7 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Om din organisation använder [Källanslutning för analyser](https://experience
 ## Förutsättningar
 
 * Rapportsvitens data måste redan ha importerats till Adobe Experience Platform med [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Andra datakällor stöds inte, eftersom marknadsföringskanaler använder bearbetningsregler i en Analytics-rapportserie.
-* Bearbetningsregler för marknadsföringskanaler måste redan vara konfigurerade. Se [Bearbetningsregler för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=en) i Adobe Analytics Components Guide.
+* Bearbetningsregler för marknadsföringskanaler måste redan vara konfigurerade. Se [Bearbetningsregler för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) i Adobe Analytics Components Guide.
 
 ## Schemaelement för marknadsföringskanal
 

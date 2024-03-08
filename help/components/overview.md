@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Komponenter är funktioner i Customer Journey Analytics som kan användas i rapp
 Du kan hantera följande komponenter:
 
 * [**Anteckningar**](/help/components/annotations/overview.md): förmedla kontextuella datanunkter och insikter till organisationen.
-* [**Målgrupper**](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper som upptäcks i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP) i Adobe Experience Platform för kundanpassning och personalisering.
+* [**Målgrupper**](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper som upptäcks i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) (RTCDP) i Adobe Experience Platform för kundanpassning och personalisering.
 * [**Filter**](filters/filters-overview.md): Skapa, hantera, dela och lägg på kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
 * [**Beräknade mått**](calc-metrics/calc-metr-overview.md): Använd mätvärden och formler som nya komponenter för rapportering
 * [**Dataordlista**](/help/components/data-dictionary/data-dictionary-overview.md): Hjälper både användare och administratörer att hålla reda på och förstå komponenterna i sin Analytics-miljö bättre.

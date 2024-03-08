@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
@@ -26,25 +26,25 @@ I det här användningsexemplet utforskas ett tillfälligt, manuellt sätt att f
 
 ## Steg 1: Välj målgrupp(er) i kundprofilen i realtid {#audience}
 
-Adobe Experience Platform [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part.
+Adobe Experience Platform [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) (RTCP) ger en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part.
 
 Du har förmodligen redan målgrupper i RTCP som kan ha kommit från olika källor. Välj en eller flera målgrupper att importera till Customer Journey Analytics.
 
 ## Steg 2: Skapa en profilunionsdatauppsättning för exporten
 
-För att kunna exportera målgruppen till en datauppsättning som så småningom kan läggas till i en anslutning i Customer Journey Analytics måste du skapa en datauppsättning vars schema är en profil [Unionsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
+För att kunna exportera målgruppen till en datauppsättning som så småningom kan läggas till i en anslutning i Customer Journey Analytics måste du skapa en datauppsättning vars schema är en profil [Unionsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
 
 Unionsscheman består av flera scheman som delar samma klass och har aktiverats för profilen. Med unionsschemat kan du se en sammanslagning av alla fält i scheman som delar samma klass. Kundprofilen i realtid använder unionsschemat för att skapa en helhetsbild av varje enskild kund.
 
 ## Steg 3: Exportera en målgrupp till profilunionens datauppsättning via API-anrop {#export}
 
-Innan du kan ta in en målgrupp i Customer Journey Analytics måste du exportera den till en Adobe Experience Platform-datauppsättning. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkt för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en).
+Innan du kan ta in en målgrupp i Customer Journey Analytics måste du exportera den till en Adobe Experience Platform-datauppsättning. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkt för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html).
 
 Du kan skapa ett exportjobb med det målgrupps-ID du väljer och skicka resultatet i den Adobe Experience Platform-datauppsättning för profilunionen som du skapade i steg 2. Även om du kan exportera olika attribut/händelser för målgruppen behöver du bara exportera det specifika profil-ID-fält som matchar det person-ID-fält som används i den Customer Journey Analytics-anslutning som du ska använda (se steg 5 nedan).
 
 ## Steg 4: Redigera exporten
 
-Resultaten av exportjobbet måste omvandlas till en separat profildatauppsättning för att kunna hämtas till Customer Journey Analytics.  Den här omvandlingen kan göras med [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)eller något annat omformningsverktyg du väljer. Vi behöver bara profil-ID (som matchar person-ID:t i Customer Journey Analytics) och ett eller flera målgrupps-ID:n för att kunna rapportera i Customer Journey Analytics.
+Resultaten av exportjobbet måste omvandlas till en separat profildatauppsättning för att kunna hämtas till Customer Journey Analytics.  Den här omvandlingen kan göras med [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv)eller något annat omformningsverktyg du väljer. Vi behöver bara profil-ID (som matchar person-ID:t i Customer Journey Analytics) och ett eller flera målgrupps-ID:n för att kunna rapportera i Customer Journey Analytics.
 
 Standardexportjobbet innehåller emellertid mer data och därför måste vi redigera dessa utdata för att ta bort överflödiga data, liksom flytta runt saker.  Du måste också skapa ett schema/en datauppsättning först innan du lägger till omformade data i den.
 

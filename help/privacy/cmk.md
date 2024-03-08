@@ -4,7 +4,7 @@ description: Lär dig hur du konfigurerar kundhanterade nycklar för Customer Jo
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 feature: Privacy
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Adobe Customer Journey Analytics har möjlighet att [Hälsovårdssköld](https:/
 
 >[!NOTE]
 >
->Kundhanterade nycklar är för närvarande bara tillgängliga för organisationer som har köpt [Vårdsköld eller sköld för skydd av privatlivet och säkerheten](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en) tilläggserbjudande.
+>Kundhanterade nycklar är för närvarande bara tillgängliga för organisationer som har köpt [Vårdsköld eller sköld för skydd av privatlivet och säkerheten](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html) tilläggserbjudande.
 
 ## Konfigurera CMK för Customer Journey Analytics
 
@@ -33,4 +33,4 @@ Så här konfigurerar du CMK för Customer Journey Analytics:
 
 1. Adobe kundtjänst bekräftar att CMK-programmet har slutförts på dina Customer Journey Analytics-data.
 
-Alla data som används av Platform krypteras under överföring och i vila för att skydda data, med eller utan CMK. Information om Adobe Experience Platform-kryptering finns här: [läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html?lang=en).
+Alla data som används av Platform krypteras under överföring och i vila för att skydda data, med eller utan CMK. Information om Adobe Experience Platform-kryptering finns här: [läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html).

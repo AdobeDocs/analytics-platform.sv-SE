@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: bde36283-86af-4b1a-9cbe-e251676b2951
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -22,29 +22,29 @@ I CUSTOMER JOURNEY ANALYTICS *alla* kan vara en del av de data som du använder 
 
 ## Datainsamling
 
-Customer Journey Analytics förlitar sig på data som lagras i Adobe Experience Platform datamängder. Du kan samla in och importera data från dessa datauppsättningar i Experience Platform på flera olika sätt. Dessa alternativ beskrivs mer ingående i [Översikt över datainmatning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=en).
+Customer Journey Analytics förlitar sig på data som lagras i Adobe Experience Platform datamängder. Du kan samla in och importera data från dessa datauppsättningar i Experience Platform på flera olika sätt. Dessa alternativ beskrivs mer ingående i [Översikt över datainmatning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html).
 
-Adobe Analytics samlar slutligen in data i själva lösningen. Återigen har du flera alternativ för att samla in dessa data, som beskrivs mer ingående i [Adobe Analytics Implementeringshandbok](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=en).
+Adobe Analytics samlar slutligen in data i själva lösningen. Återigen har du flera alternativ för att samla in dessa data, som beskrivs mer ingående i [Adobe Analytics Implementeringshandbok](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
 
-Du kan använda dina Adobe Analytics rapportsvitsdata i Customer Journey Analytics med [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). Den här kopplingen importerar data som samlats in i Adobe Analytics till Experience Platform. Du kan sedan skapa en anslutning till den här datauppsättningen i Customer Journey Analytics. Se [Använd Adobe Analytics rapportsvitsdata i Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=en) för mer information.
+Du kan använda dina Adobe Analytics rapportsvitsdata i Customer Journey Analytics med [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). Den här kopplingen importerar data som samlats in i Adobe Analytics till Experience Platform. Du kan sedan skapa en anslutning till den här datauppsättningen i Customer Journey Analytics. Se [Använd Adobe Analytics rapportsvitsdata i Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html) för mer information.
 
 
 ## Databehandling
 
 Innan du kan rapportera data måste du ofta bearbeta dessa data för att säkerställa att de kan användas på rätt sätt för rapportering. Databearbetning kan ske vid insamlingstid och vid rapporteringstid.
 
-Customer Journey Analytics är generellt utformat för att fungera med insamlade och lagrade data i datauppsättningen Experience Platform vid rapporttillfället. Customer Journey Analytics har kraftfulla funktioner för bearbetning av rapporttid för att säkerställa att data är klara för rapportering och analys. Om du måste mappa, omforma och validera data innan de importeras i Experience Platform kan du använda [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Experience Platform.
+Customer Journey Analytics är generellt utformat för att fungera med insamlade och lagrade data i datauppsättningen Experience Platform vid rapporttillfället. Customer Journey Analytics har kraftfulla funktioner för bearbetning av rapporttid för att säkerställa att data är klara för rapportering och analys. Om du måste mappa, omforma och validera data innan de importeras i Experience Platform kan du använda [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) Experience Platform.
 
 I Adobe Analytics sker merparten av databehandlingen direkt efter datainsamlingen.
 
-Se [Jämför databehandling i Adobe Analytics och Customer Journey Analytics](data-processing-comparisons.md) och [Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=en) för mer information.
+Se [Jämför databehandling i Adobe Analytics och Customer Journey Analytics](data-processing-comparisons.md) och [Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html) för mer information.
 
 
 ## Terminologi
 
 Customer Journey Analytics erbjuder flexibilitet i hur ni definierar mått och mätvärden, vilket möjliggörs av den flexibilitet som de underliggande XDM-baserade schemana (Experience Data Model) ger. Om Adobe Analytics t.ex. använder besökare, besök och träffar använder Customer Journey Analytics personer, sessioner och händelser som likvärdiga begrepp (du kan ändra namnet som du vill).
 
-Se [Jämför terminologi för analysdata som skickas via Analytics-källkopplingen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=en) för mer information om skillnaderna i terminologi.
+Se [Jämför terminologi för analysdata som skickas via Analytics-källkopplingen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html) för mer information om skillnaderna i terminologi.
 
 
 ## Virtuella rapporteringsmiljöer och sandlådor
@@ -55,16 +55,16 @@ Customer Journey Analytics har ett liknande koncept, som kallas datavyer. Datavy
 
 Experience Platform erbjuder sandlådor som kan tolkas som en behållare som innehåller data och program för en viss miljö. Funktionerna i en sandlåda är inte kopplade till en virtuell rapportserie från Adobe Analytics eller datavyn Customer Journey Analytics. Adobe Analytics självt har inget samband eller någon relation med sandlådor i Experience Platform alls. Customer Journey Analytics har stöd för Experience Platform sandlådor, men det finns några viktiga saker att tänka på.
 
-Se [Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en) för mer information.
+Se [Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html) för mer information.
 
 
 ## Identiteter
 
 Customer Journey Analytics stöder de identiteter som du definierar som en del av de scheman som datauppsättningarna som innehåller dina data följer. Därför är identiteter ett grundläggande begrepp för Experience Platform, som Customer Journey Analytics använder när de skapar en [anslutning](../../connections/overview.md) (genom att definiera person-ID för varje datauppsättning) och när [sammanfogning](../../stitching/overview.md) för flerkanalsanalys. En viktig identitet som används av Experience Platform SDK:er och API är Experience Cloud ID (ECID).
 
-Adobe Analytics använder en mer definitiv uppsättning identitetsfält, som Adobe Analytics ID (AAID). När du använder Analytics-källkopplingen får dessa Adobe Analytics-identifieringsfält särskild behandling. Se [AAID, ECID, AACUSTOMID och Analytics-källkopplingen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=en) för mer information.
+Adobe Analytics använder en mer definitiv uppsättning identitetsfält, som Adobe Analytics ID (AAID). När du använder Analytics-källkopplingen får dessa Adobe Analytics-identifieringsfält särskild behandling. Se [AAID, ECID, AACUSTOMID och Analytics-källkopplingen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) för mer information.
 
 
 ## Funktioner som stöds
 
-En översikt över Adobe Analytics funktioner och hur de stöds av Customer Journey Analytics finns på [Funktioner i Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html?lang=en).
+En översikt över Adobe Analytics funktioner och hur de stöds av Customer Journey Analytics finns på [Funktioner i Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html).

@@ -7,7 +7,7 @@ feature: Basics
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 4%
@@ -26,11 +26,11 @@ Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och of
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Nya eller aktuella objekt</b> </p> <p> 
      <ul>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html"> Flerkanalsanalys (sammanfogande ID:n i Customer Journey Analytics) </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=en">Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Kombinera rapportsviter med olika scheman </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=en"> Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en"> Jämför databehandling i Adobe Analytics och Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html">Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html"> Kombinera rapportsviter med olika scheman </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html"> Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html"> Jämför databehandling i Adobe Analytics och Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html"> Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> Adobe Analytics till Customer Journey Analytics evolutionen </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html"> Customer Journey Analytics användarhandbok för Adobe Analytics </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Använd de utökade funktionerna för anslutningshantering </a> </li>

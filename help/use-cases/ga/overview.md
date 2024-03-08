@@ -4,9 +4,9 @@ description: Lär dig det övergripande arbetsflödet om hur du flyttar data fr�
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ När du väl har samlat in historiska data i Platform kan du antingen [Konfigure
 
 ## Konfigurera en befintlig Google Analytics-implementering för Adobe Experience Platform {#configure}
 
-Inmatning av aktuella (strömmande) data innebär att data skickas till Adobe Experience Edge, som sedan vidarebefordrar dessa data till Adobe Experience Platform. Se [Ställ in data för direktuppspelad Google Analytics i Adobe Experience Platform](streaming.md).
+Inmatning av aktuella (strömmande) data innebär att data skickas till Adobe Experience Platform Edge Network, som sedan vidarebefordrar dessa data till Adobe Experience Platform. Se [Ställ in data för direktuppspelad Google Analytics i Adobe Experience Platform](streaming.md).
 
 ## Konfigurera en anslutning och datavy i Customer Journey Analytics
 

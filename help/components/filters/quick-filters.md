@@ -4,7 +4,7 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Så här skapar du ett snabbfilter:
    | Plustecken (+) | Lägg till en annan regel |
    | OCH/ELLER-kvalificerare | Du kan lägga till&quot;AND&quot;- eller&quot;OR&quot;-kvalificerare i reglerna, men du kan inte blanda&quot;AND&quot; och&quot;OR&quot; i en enda filterdefinition. |
    | [!UICONTROL Apply] | Använd filtret på panelen. Om filtret inte innehåller några data tillfrågas du om du vill fortsätta. |
-   | [!UICONTROL Open builder] | Öppnar Filter Builder. När du har sparat eller använt filtret i Filter Builder betraktas det inte längre som ett snabbfilter. Den blir en del av komponentlistens filterbibliotek. <p>Markera alternativet om du vill att komponenten ska vara tillgänglig i alla dina projekt och i den vänstra listen [!UICONTROL **Gör det här filtret tillgängligt för alla projekt och lägg till det i komponentlistan**].</p><p>Mer information finns i avsnittet [Spara ett snabbfilter som ett komponentlistfilter](#save-a-quick-filter-as-a-component-list-filter) i den här artikeln.</p><p>**Obs!** Endast användare med behörigheten Skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=en) I kan du öppna Filter Builder.</p> |
+   | [!UICONTROL Open builder] | Öppnar Filter Builder. När du har sparat eller använt filtret i Filter Builder betraktas det inte längre som ett snabbfilter. Den blir en del av komponentlistens filterbibliotek. <p>Markera alternativet om du vill att komponenten ska vara tillgänglig i alla dina projekt och i den vänstra listen [!UICONTROL **Gör det här filtret tillgängligt för alla projekt och lägg till det i komponentlistan**].</p><p>Mer information finns i avsnittet [Spara ett snabbfilter som ett komponentlistfilter](#save-a-quick-filter-as-a-component-list-filter) i den här artikeln.</p><p>**Obs!** Endast användare med behörigheten Skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) I kan du öppna Filter Builder.</p> |
    | [!UICONTROL Cancel] | Avbryt det här snabbfiltret (använd det inte). |
    | [!UICONTROL Date range] | Valideraren använder panelens datumintervall för sin datasökning. Alla datumintervall som används i ett snabbfilter åsidosätter panelens datumintervall högst upp på panelen. |
    | Förhandsgranska (överst till höger) | Här kan du se om du har ett giltigt filter och hur brett filtret är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se när du använder det här filtret. Du kan få ett meddelande som anger att det här filtret saknar data. I så fall kan du fortsätta eller ändra filterdefinitionen. |
@@ -83,7 +83,7 @@ Så här skapar du ett snabbfilter:
 >
 > Tänk på följande när du sparar ett snabbfilter:
 > 
-> * Om du vill spara ett snabbfilter måste du ha behörigheten Skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=en).
+> * Om du vill spara ett snabbfilter måste du ha behörigheten Skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
 > 
 > * När du har sparat eller använt filtret kan det inte längre redigeras i snabbfilterverktyget. I stället måste du använda den vanliga filterverktyget.
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Så här konfigurerar du ditt schema:
 
    >[!NOTE]
    >
-   >Om fältgruppen inte är tillgänglig söker du efter en annan fältgrupp som innehåller identitetsfält. eller [skapa en ny fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) och [lägg till nya identitetsfält](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (som `ecid`, `crmId`och andra som du behöver) till fältgruppen och markera den nya fältgruppen.
+   >Om fältgruppen inte är tillgänglig söker du efter en annan fältgrupp som innehåller identitetsfält. eller [skapa en ny fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) och [lägg till nya identitetsfält](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (som `ecid`, `crmId`och andra som du behöver) till fältgruppen och markera den nya fältgruppen.
 
    ![Identifieringsobjekt](./assets/identification-field-mobile.png)
 
@@ -134,7 +134,7 @@ Så här konfigurerar du ditt schema:
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) för mer information.
+   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) för mer information.
 
    >[!IMPORTANT]
    >
@@ -232,7 +232,7 @@ Så här konfigurerar du datastream:
 
 Din datastream är nu konfigurerad för att vidarebefordra data som samlats in från din mobilapp till datauppsättningen i Adobe Experience Platform.
 
-Se [Översikt över datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) om du vill ha mer information om hur du konfigurerar ett datastam och hur du hanterar känsliga data.
+Se [Översikt över datastreams](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) om du vill ha mer information om hur du konfigurerar ett datastam och hur du hanterar känsliga data.
 
 
 
@@ -285,7 +285,7 @@ Du vill också konfigurera följande tillägg från katalogen:
 - AEP Assurance.
 - Godkännande.
 
-Se [Konfigurera en taggegenskap](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=en) i självstudiekursen för mobilappar för Experience-plattformen för mer information om tillägg och deras konfiguration.
+Se [Konfigurera en taggegenskap](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html) i självstudiekursen för mobilappar för Experience-plattformen för mer information om tillägg och deras konfiguration.
 
 #### **Dataelement**
 

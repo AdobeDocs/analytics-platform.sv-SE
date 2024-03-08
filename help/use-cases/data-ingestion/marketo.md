@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -18,15 +18,15 @@ Ni kan utnyttja de nya Marketo Engage-datauppsättningarna i Adobe Experience Pl
 
 ## Steg 1: Mappa Marketo-källdatafält till deras XDM-mål
 
-Mappa [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) och [Verksamhet](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) objekt till respektive målfält för XDM-schema.
+Mappa [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) och [Verksamhet](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) objekt till respektive målfält för XDM-schema.
 
 ## Steg 2: Infoga Marketo-data i Adobe Experience Platform
 
-Använd [Marketo Engage-kontakt](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
+Använd [Marketo Engage-kontakt](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
 
 ## Steg 3: Konfigurera en anslutning till den här datauppsättningen i Customer Journey Analytics
 
-För att kunna rapportera om datauppsättningar från Experience Platform måste du först upprätta en anslutning mellan datauppsättningarna i Experience Platform och Customer Journey Analytics. Mer information finns i [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
+För att kunna rapportera om datauppsättningar från Experience Platform måste du först upprätta en anslutning mellan datauppsättningarna i Experience Platform och Customer Journey Analytics. Mer information finns i [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html).
 
 ## Steg 4: Skapa en eller flera datavyer
 

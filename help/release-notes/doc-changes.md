@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '3194'
+source-wordcount: '3188'
 ht-degree: 6%
 
 ---
@@ -70,8 +70,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Adobe Product Analytics | Adobe Product Analytics är ett nytt sätt att interagera med data och insikter över flera kanaler i Customer Journey Analytics. Dessa nya funktioner gör det möjligt för produktteamen att självbetjäna data och insikter om sina produktupplevelser via [guidad analys](/help/guided-analysis/overview.md) &#x200B;. |
 | Härledda fält | A [härlett fält](/help/data-views/derived-fields/derived-fields.md) gör att du kan definiera (ofta komplexa) dataändringar direkt med hjälp av ett anpassningsbart regelverktyg. |
 | Utökat sökningsstöd för profil- och sökdata | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer](/help/connections/create-connection.md) |
-| Förbättringar i Report Builder | <ul><li>[Filtrera från cell för flera datablock](/help/report-builder/select-data-view.md)</li><li>[Visa och dölja rad- och kolumnrubriker](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> |
-| Upplev Edge-geosökningar | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en) lägger till en geosökningstjänst som ger enhetliga geografiska data till alla Experience Edge-användare. |
+| Förbättringar i Report Builder | <ul><li>[Filtrera från cell för flera datablock](/help/report-builder/select-data-view.md)</li><li>[Visa och dölja rad- och kolumnrubriker](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html#build-the-data-block)</li></ul> |
+| Geografiska sökningar i Edge Network | [Datastream-inställningar](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html) hur har en geosökningstjänst som tillhandahåller enhetliga geografiska data. |
 | **Juni 2023** | |
 | Flerkanalsanalys och stygn | I väntan på kommande ändringar för att möjliggöra sammanfogning och för att ytterligare klargöra hur flerkanalsanalys kan höjas med sammanfogning redigeras dokumentation om funktionen för flerkanalsanalys för att hänvisa till [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) som Customer Journey Analytics och användningsfall, och [Stitlar](../stitching/overview.md) som en viktig funktion för att uppnå detta. |
 | PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics | Customer Journey Analytics SQL Connector ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. [Läs mer](/help/data-views/sql-connector.md) |
@@ -93,7 +93,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | **April 2023** |  |
 | Video om hur du använder filter som dimensioner | Videon om att använda filter som dimension har uppdaterats. <p>Den här videon är länkad från [Skapa filter](/help/components/filters/create-filters.md) sida.</p> <p>Här följer en direktlänk till videon: [Använd filter som dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Filterdokumentation | Lagt till artikel om hur du använder [Filter Builder](/help/components/filters/filter-builder.md). <p>Effektivare dokumentation i [Skapa filter](/help/components/filters/create-filters.md) och [Översikt över filter](/help/components/filters/filters-overview.md).</p> |
-| Uppdatera till dokumentationen på panelen Experimentation | Ett avsnitt har lagts till [tolka icke-slumpmässiga dimensioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| Uppdatera till dokumentationen på panelen Experimentation | Ett avsnitt har lagts till [tolka icke-slumpmässiga dimensioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized). |
 | Projektfilter (ad hoc- och snabbfilter) | Effektiv dokumentation om projektfilter och borttagen dubblettinformation. Stegen för att skapa ad hoc-filter kombineras nu med stegen för [skapa snabbfilter](/help/components/filters/quick-filters.md). |
 | **Mars 2023** | |
 | Integrera beslutsstyrningsdata | Lagt till innehåll som förklarar hur [integrera data från Adobe Journey Optimizer:s beslutshantering i Customer Journey Analytics](/help/integrations/ajo-od.md). |
@@ -104,7 +104,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Länkdelning för projekt (ingen inloggning krävs) | <p>Befintlig dokumentation som förklarar hur man delar en skrivskyddad länk till ett projekt med personer som inte har tillgång till Analysis Workspace har uppdaterats.</p> <p>Uppdaterad användardokumentation innehåller [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) och [Skapa delningsbara länkar](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Alternativ för administratörer lades till i [Inställningar](/help/analysis-workspace/user-preferences.md).</p> |
 | **Februari 2023** | |
 | Jämför Customer Journey Analytics med BI-lösningar | Nytt dokument på en [jämförelse](../getting-started/cja-vs-bi.md) från Customer Journey Analytics till vanliga BI-lösningar. |
-| Uppdatera till publikdokumentation | Nytt avsnitt på [latenshändelser](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Uppdatera till publikdokumentation | Nytt avsnitt på [latenshändelser](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency). |
 | Uppdatera till publikdokumentation | När du har skapat en målgrupp skapar Adobe en Experience Platform [direktuppspelningssegment för varje ny Customer Journey Analytics-publik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Mobil styrkort | Nytt dokumentationsavsnitt som beskriver hur du visar och döljer datumintervall för jämförelse. Se [Visa datumintervall för jämförelse](/help/mobile-app/create-scorecard.md#show-comparison-dates) i Customer Journey Analytics. |
@@ -130,9 +130,9 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Oktober 2022 | Nytt ämne [lösenordsskydd för schemalagda projekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). Den här funktionen har stöd för [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Nytt ämne [Kundhanterade nycklar](/help/privacy/cmk.md). Den här funktionen har stöd för [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Nytt ämne [Customer Journey Analytics granskningslogg](/help/privacy/audit-log.md). |
-| Oktober 2022 | Nytt ämne [Sammanfattning av nyckelmått](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) visualisering. |
-| Oktober 2022 | Nytt avsnitt på [datum- och datumfunktioner i datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
-| Oktober 2022 | Mobilapp: Nytt avsnitt om [anpassade detaljvyer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#view-detail-slides). |
+| Oktober 2022 | Nytt ämne [Sammanfattning av nyckelmått](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html) visualisering. |
+| Oktober 2022 | Nytt avsnitt på [datum- och datumfunktioner i datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#date) |
+| Oktober 2022 | Mobilapp: Nytt avsnitt om [anpassade detaljvyer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides). |
 | Oktober 2022 | Uppdateringar av [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) ämne. |
 | **September 2022** | |
 | September 2022 | Nytt användningsexempel på [Migrera Google Analytics-data till Customer Journey Analytics](/help/use-cases/ga/overview.md). |
@@ -147,7 +147,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | **Juli 2022** | |
 | Juli 2022 | [Medieuppspelningstid spenderad panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) dokumentation. |
 | Juli 2022 | [Media Concurrent Viewer-panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) dokumentation. |
-| Juli 2022 | [Första sessionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) rapporteringsdokumentation. |
+| Juli 2022 | [Första sessionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) rapporteringsdokumentation. |
 | **Juni 2022** | |
 | Juni 2022 | Ny artikel på [AAID, ECID, AACUSTOMID och Analytics-källkopplingen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
 | Juni 2022 | Ny artikel på [Adobe Analytics bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep för källkopplingen för Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
@@ -170,7 +170,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Mars 2022 | Ny dokumentation om [Anteckningar i arbetsytan](/help/components/annotations/overview.md). |
 | Mars 2022 | Innehåll som uppdaterats avsevärt på [beräknar anslutningsstorlek](/help/getting-started/cja-faq.md). |
 | **Februari 2022** | |
-| Februari 2022 | En ny guide som riktar sig till administratörer som flyttar från Adobe Analytics till Customer Journey Analytics: [Adobe Analytics till Customer Journey Analytics evolutionen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
+| Februari 2022 | En ny guide som riktar sig till administratörer som flyttar från Adobe Analytics till Customer Journey Analytics: [Adobe Analytics till Customer Journey Analytics evolutionen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) |
 | **Januari 2022** | |
 | Januari 2022 | Nytt användningsexempel för [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md) |
 | Januari 2022 | Dokumentation om tillagda nya funktioner på [bindningsdimensioner och mätvärden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) och på nya [[!UICONTROL First Known] och [!UICONTROL Last Known] allokeringsinställningar](/help/data-views/component-settings/persistence.md#allocation-settings) |

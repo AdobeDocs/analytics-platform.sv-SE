@@ -4,7 +4,7 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1845'
 ht-degree: 0%
@@ -17,7 +17,7 @@ The **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av
 
 >[!IMPORTANT]
 >
->I det här skedet [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en) (A4T) data *inte* analyseras på panelen Experimentation.
+>I det här skedet [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data *inte* analyseras på panelen Experimentation.
 
 ## Åtkomstkontroll {#access}
 
@@ -29,7 +29,7 @@ Två nya avancerade funktioner har lagts till: [!UICONTROL Lift] och [!UICONTROL
 
 ## Steg 1: Skapa en anslutning för att experimentera med datauppsättningar {#connection}
 
-Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste vara i ett **enkel** objektarray. Om du har experimenterat med data i en enda dimension med experiment- och variantdata i en avgränsad sträng kan du använda [delsträng](/help/data-views/component-settings/substring.md) ange i datavyer för att dela upp dem i två för användning på panelen.
+Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste vara i ett **enkel** objektarray. Om du har experimenterat med data i en enda dimension med experiment- och variantdata i en avgränsad sträng kan du använda [delsträng](/help/data-views/component-settings/substring.md) ange i datavyer för att dela upp dem i två för användning på panelen.
 
 Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) till Adobe Experience Platform, [skapa en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdata.
 

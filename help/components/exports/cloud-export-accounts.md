@@ -5,7 +5,7 @@ title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 0%
@@ -81,9 +81,9 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    1. Om du inte redan har det hämtar du [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Följ stegen i Adobe Experience Platform-dokumentationen [Anslut Data Landing Zone-behållaren till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+   1. Följ stegen i Adobe Experience Platform-dokumentationen [Anslut Data Landing Zone-behållaren till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer).
 
-      Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
+      Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials), eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
 
    1. När du följer Adobe Experience Platform dokumentation kommer du till [!UICONTROL **SAS-URL för blobbbehållare**] klistra in den SAS-URI som du kopierade i steg 3.
 

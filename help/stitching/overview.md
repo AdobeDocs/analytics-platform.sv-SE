@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 0%
@@ -45,9 +45,9 @@ Innan du använder stygn bör du kontrollera att din organisation har förberett
    * A **beständigt ID**, en identifierare som finns på varje rad. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Cloud Identity Service.
    * A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget vilken identifierare som helst. Vid textning tas det här fältet i beaktande för att innehålla den faktiska informationen om person-ID:t. För bästa resultat av sammanfogning bör ett tillfälligt ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID. Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning är det bättre att de andra datauppsättningarna också har en liknande gemensam identifierare.
 
-  Båda kolumnerna (beständigt ID och tillfälligt ID) måste definieras som ett identitetsfält med ett identitetsnamnutrymme i schemat som ligger bakom den datauppsättning som du vill sammanfoga. När du använder identitetssammanfogning i Real-time Customer Data Platform med [identityMap-fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity)måste du fortfarande lägga till identitetsfält med ett identitetsnamnutrymme, eftersom Customer Journey Analytics-sammanfogning som beskrivs i det här avsnittet inte stöder fältgruppen identityMap. När du lägger till ett identitetsfält i schemat och även använder fältgruppen identityMap, ska du inte ange det extra identitetsfältet som en primär identitet, eftersom detta påverkar identitetsmappningens fältgrupp som används för Real-time Customer Data Platform.
+  Båda kolumnerna (beständigt ID och tillfälligt ID) måste definieras som ett identitetsfält med ett identitetsnamnutrymme i schemat som ligger bakom den datauppsättning som du vill sammanfoga. När du använder identitetssammanfogning i Real-time Customer Data Platform med [identityMap-fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#identity)måste du fortfarande lägga till identitetsfält med ett identitetsnamnutrymme, eftersom Customer Journey Analytics-sammanfogning som beskrivs i det här avsnittet inte stöder fältgruppen identityMap. När du lägger till ett identitetsfält i schemat och även använder fältgruppen identityMap, ska du inte ange det extra identitetsfältet som en primär identitet, eftersom detta påverkar identitetsmappningens fältgrupp som används för Real-time Customer Data Platform.
 
-* Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du aktiverar sammanfogning av en händelsedatamängd. Se [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) för mer information.
+* Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du aktiverar sammanfogning av en händelsedatamängd. Se [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#) för mer information.
 
 
 ## Använd stygn
@@ -109,7 +109,7 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 >
 >* Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
 >
->* Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du använder dataanvändningsetiketter på källdataschemat måste du manuellt tillämpa dessa dataanvändningsetiketter på det sammanslagna dataset-schemat. Se [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=en) för mer information.
+>* Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du använder dataanvändningsetiketter på källdataschemat måste du manuellt tillämpa dessa dataanvändningsetiketter på det sammanslagna dataset-schemat. Se [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html) för mer information.
 
 Stitching är en banbrytande och robust funktion, men har begränsningar för hur den kan användas.
 

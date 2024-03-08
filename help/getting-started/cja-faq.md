@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2329'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Adobe har nyligen ändrat hur data behandlas i Customer Journey Analytics:
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
-The [**[!UICONTROL Enable rolling data window]**inställning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) Med kan du definiera datalagring i Customer Journey Analytics som ett rullande fönster på månader (tre månader, sex månader o.s.v.). Den ställs in på [!UICONTROL connection] nivå, inte på [!UICONTROL dataset] nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
+The [**[!UICONTROL Enable rolling data window]**inställning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) Med kan du definiera datalagring i Customer Journey Analytics som ett rullande fönster på månader (tre månader, sex månader o.s.v.). Den ställs in på [!UICONTROL connection] nivå, inte på [!UICONTROL dataset] nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
 
 Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
 
@@ -237,7 +237,7 @@ Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](htt
 
 Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe och andra lösningar sker så nära besökarna som möjligt. När data har samlats in regionalt på ett datainsamlingscenter (DCC, även kallat Edge-plats, en del av Platform Edge-nätverket) vidarebefordras de via en säker anslutning till relevanta lösningar baserat på konfigurationen av ditt datastam och/eller din händelsevidarebefordran.
 
-![Dataflöde med Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=en)
+![Dataflöde med Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 I den regionala datainsamlingsprocessen används följande steg:
 
@@ -267,5 +267,4 @@ När data når det regionala datacentret avgör datastreamkonfigurationen hur da
 Customer Journey Analytics kräver datauppsättningar från Adobe Experience Platform, så din konfiguration för dataström/händelsevidarebefordran kräver att Adobe Experience Platform-tjänsten dirigerar data från det regionala datacentret till datacentret där din Adobe Experience Platform-instans finns. Customer Journey Analytics och tillhörande stödtjänster och infrastruktur driftsätts i samma Adobe Experience Platform-instans.
 
 
-Se [Översikt över datainsamling](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=en) för mer information om processen för datainsamling utanför Experience Edge-nätverket och dess regionala datacenter.
-
+Se [Översikt över datainsamling](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) för mer information om datainsamlingsprocessen utanför Adobe Experience Platform Edge Network och dess regionala datacenter.

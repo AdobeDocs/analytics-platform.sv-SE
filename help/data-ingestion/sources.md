@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Så här konfigurerar du ditt schema:
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) för mer information.
+   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) för mer information.
 
    >[!IMPORTANT]
    >
@@ -205,7 +205,7 @@ Se [Importera och använda data från traditionella Adobe Analytics](./analytics
 
 Se [Importera och använda strömmande data](./streaming.md) hur du använder HTTP API-källkopplingen.
 
-Se [Översikt över Source Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#terms-and-conditions) för en översikt över källanslutningar, inklusive länkar till mer information för varje koppling.
+Se [Översikt över Source Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) för en översikt över källanslutningar, inklusive länkar till mer information för varje koppling.
 
 
 ## Konfigurera en anslutning

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 >
 >Du har Adobe Analytics licensierat och driftsatt på en eller flera av dina webbplatser med någon av de dokumenterade implementeringsmetoderna:
 >
->- [Implementera analyser med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=en)
+>- [Implementera analyser med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
->- [Implementera Analytics med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en)
+>- [Implementera Analytics med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
 >
->- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 För att uppnå detta måste du:
 
@@ -83,7 +83,7 @@ När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en
 
 När det första intaget är slutfört kan Adobe Analytics-rapportsvitens data användas av Customer Journey Analytics.
 
-Se [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) för en mycket mer omfattande självstudiekurs.
+Se [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) för en mycket mer omfattande självstudiekurs.
 
 
 ## Konfigurera en anslutning

@@ -5,7 +5,7 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 1%
@@ -146,7 +146,7 @@ Se till att tabellerna, miljön och behörigheterna uppfyller följande krav:
 
 * **Environment:** Administratörer bör se till att IP-adresserna som anges i [IP-adresser som används av Customer Journey Analytics](/help/admin/ip-addresses.md) ingår i brandväggens tillåtelselista.
 
-* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har [!UICONTROL **Fullständig tabellexport**] behörighet som tilldelats för att exportera fullständiga tabeller. Mer information om hur du tilldelar en behörighet till en produktprofil i Admin Console finns i [Customer Journey Analytics tillstånd i Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Åtkomstkontroll för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har [!UICONTROL **Fullständig tabellexport**] behörighet som tilldelats för att exportera fullständiga tabeller. Mer information om hur du tilldelar en behörighet till en produktprofil i Admin Console finns i [Customer Journey Analytics tillstånd i Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Åtkomstkontroll för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
   >[!NOTE]
   >

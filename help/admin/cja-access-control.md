@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Förutom att läggas till som produktadministratör i **Customer Journey Analyti
 
      Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
-* Exportera datauppsättningar till molnet [Destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en)
+* Exportera datauppsättningar till molnet [Destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)
 
   >[!AVAILABILITY]
   >
@@ -67,7 +67,7 @@ Förutom att läggas till som produktadministratör i **Customer Journey Analyti
    * Hantera mål
    * Aktivera destinationer
 
-     Mer information om målbehörigheter i Experience Platform finns i [Översikt över destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
+     Mer information om målbehörigheter i Experience Platform finns i [Översikt över destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
 
 ## Administratörsroll för produktprofil
 
@@ -146,7 +146,7 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | **[!UICONTROL Annotation Creation]** | Låter användarna skapa [anteckningar](/help/components/annotations/overview.md). |
 | **[!UICONTROL Audience Creation]** | Låter användarna skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Audience View]** | Låter användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL **Dela projektlänkar med vem som helst**] | Tillåter användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link) |
+| [!UICONTROL **Dela projektlänkar med vem som helst**] | Tillåter användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
 | **[!UICONTROL Data View Tools]**: |   |
 | [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL **Åtkomst till SQL Query Service**] | Ger användarna åtkomst [Frågetjänst i AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv). |

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: frågetjänst;frågetjänst;sql-syntax
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
-   Mer information om hit\_source finns i: [Referens för datakolumn](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en). Mer information om page\_event finns i: [Sökning efter sidhändelse](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
+   Mer information om hit\_source finns i: [Referens för datakolumn](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html). Mer information om page\_event finns i: [Sökning efter sidhändelse](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
 
 1. Om kopplingens filtrerade rader är det bara att subtrahera de raderna från [!UICONTROL Occurrences] mätvärden. Resultatet ska matcha antalet händelser i Adobe Experience Platform datamängder.
 

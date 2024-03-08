@@ -5,7 +5,7 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -57,13 +57,13 @@ Valfria standardkomponenter är tillgängliga under **[!UICONTROL Data views]** 
 | [!UICONTROL Day of Year] | Tidsdelningsdimension | 1-366 |
 | [!UICONTROL Hour of Day] | Tidsdelningsdimension | 0-23 |
 | [!UICONTROL  Month of Year] | Tidsdelningsdimension | Januari-december |
-| [!UICONTROL First-time Sessions] | Mått | En persons definierade första session i rapportfönstret. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
-| [!UICONTROL Return Sessions] | Mått | Antalet sessioner som inte var en persons första session. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
+| [!UICONTROL First-time Sessions] | Mått | En persons definierade första session i rapportfönstret. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
+| [!UICONTROL Return Sessions] | Mått | Antalet sessioner som inte var en persons första session. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL Person ID] | Dimension | Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa identiteter kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code och så vidare. The [!UICONTROL Person ID] är grunden för att kombinera datauppsättningar och identifiera unika personer i Customer Journey Analytics.<p>Möjliga användningsområden:<ul><li>Skapa ett filter för ett specifikt person-ID-värde för att filtrera allt efter användarens beteende.</li><li>Felsökning: Kontrollera att det finns data för ett specifikt cookie-ID (eller ett specifikt kund-ID).</li><li>Identifiera de användare som ringde in till ett callcenter.</li></ul> |
 | [!UICONTROL Person ID namespace] | Dimension | Vilken typ av ID [!UICONTROL Person ID] består av. Exempel: `email address`, `cookie ID`, `Analytics ID` |
 | [!UICONTROL Quarter of Year] | Tidsdelningsdimension | Q1, Q2, Q3, Q4 |
-| [!UICONTROL Repeat session] | Mått | Antalet sessioner som inte var en persons första session någonsin. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
-| [!UICONTROL Session Type] | Dimension | Dimensionen har två värden: 1) [!UICONTROL First-Time] och 2) Returning. The [!UICONTROL First-time] radartikel innehåller allt beteende (mått mot den här dimensionen) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte är en del av en session, hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
+| [!UICONTROL Repeat session] | Mått | Antalet sessioner som inte var en persons första session någonsin. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
+| [!UICONTROL Session Type] | Dimension | Dimensionen har två värden: 1) [!UICONTROL First-Time] och 2) Returning. The [!UICONTROL First-time] radartikel innehåller allt beteende (mått mot den här dimensionen) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i [!UICONTROL Returning] radartikel (om allt tillhör en session). Om mätvärden inte är en del av en session, hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL Time Spent per Event] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden till [!UICONTROL Event] fickor. |
 | [!UICONTROL Time Spent per Session] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden till [!UICONTROL Session] fickor. |
 | [!UICONTROL Time Spent per Person] | Dimension | Bucklar [!UICONTROL Time Spent] mätvärden till [!UICONTROL Person] fickor. |

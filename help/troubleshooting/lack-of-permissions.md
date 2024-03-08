@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Efter att du skapat en [Anslutning](../connections/overview.md) och [Datavy](../
 
 1. Kontrollera att du har rätt åtkomstkontroll:
 
-   * Du måste ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Se [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) för mer information.
+   * Du måste ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Se [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions) för mer information.
 
-   * Du måste vara användare i produktprofilen AEP-Default-All-Users. Fråga administratören om du inte har behörighet att lägga till dig själv i den här profilen. Se [Åtkomststyrningshierarki och arbetsflöde](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#access-control-hierarchy-and-workflow) för mer information.
+   * Du måste vara användare i produktprofilen AEP-Default-All-Users. Fråga administratören om du inte har behörighet att lägga till dig själv i den här profilen. Se [Åtkomststyrningshierarki och arbetsflöde](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#access-control-hierarchy-and-workflow) för mer information.
 
 
 1. Navigera till användargränssnittet för Adobe Experience Platform.

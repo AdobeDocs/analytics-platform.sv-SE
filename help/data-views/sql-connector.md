@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2769'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 The [!DNL Customer Journey Analytics SQL Connector] aktiverar SQL-åtkomst till [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableu eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
 
-Adobe Experience Platform [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. Med [!DNL Customer Journey Analytics SQL Connector] aktiverad, funktionaliteten hos [!DNL Query Service] utökas så att du kan se datavyer i Customer Journey Analytics som tabeller eller vyer i en [!DNL Query Service] session. Detta resulterar i att verktyg för affärsinformation som använder [!DNL Query Service] som PostgresSQL-gränssnittet har en smidig fördel av den utökade funktionaliteten.
+Adobe Experience Platform [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. Med [!DNL Customer Journey Analytics SQL Connector] aktiverad, funktionaliteten hos [!DNL Query Service] utökas så att du kan se datavyer i Customer Journey Analytics som tabeller eller vyer i en [!DNL Query Service] session. Detta resulterar i att verktyg för affärsinformation som använder [!DNL Query Service] som PostgresSQL-gränssnittet har en smidig fördel av den utökade funktionaliteten.
 
 De viktigaste fördelarna är:
 
@@ -44,7 +44,7 @@ Användarna måste ha tillgång till:
    - Customer Journey Analytics Workspace-projekt, och
    - Datavyer i Customer Journey Analytics som de vill använda.
 
-- Använd förfallodatum för ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till Customer Journey Analytics SQL Connector. Thr [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) innehåller mer information om hur du anger förfallodatum för inloggningsuppgifter eller ej utgångsdatum.
+- Använd förfallodatum för ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till Customer Journey Analytics SQL Connector. Thr [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html) innehåller mer information om hur du anger förfallodatum för inloggningsuppgifter eller ej utgångsdatum.
 
 Se [Åtkomstkontroll](../admin/cja-access-control.md) i administrationsdelen för Customer Journey Analytics för ytterligare information.
 
@@ -86,7 +86,7 @@ I användargränssnittet i Experience Platform:
 
 +++
 
-Se [Användargränssnittshandbok för frågeredigeraren](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=en) för mer information.
+Se [Användargränssnittshandbok för frågeredigeraren](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html) för mer information.
 
 
 ### BI-verktyg
@@ -117,7 +117,7 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
       2. Klistra in **[!UICONTROL ** Databas **]** parameter från Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL ** Databas **]** textfält.
 
-         Lägg till `?FLATTEN` till **[!UICONTROL ** Databas **]** parameter, så den ser ut som `prod:cja?FLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) för mer information.
+         Lägg till `?FLATTEN` till **[!UICONTROL ** Databas **]** parameter, så den ser ut som `prod:cja?FLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) för mer information.
 
       3. När du uppmanas till detta **[!UICONTROL ** Dataanslutning **]** läge, välja **[!UICONTROL ** DirectQuery **]** för att säkerställa att datastrukturerna förenklas korrekt.
 
@@ -131,7 +131,7 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
    Alla dimensioner och mätvärden som är kopplade till en eller flera markerade tabeller visas i den högra rutan, redo att användas i dina visualiseringar.
 
-   Se [Anslut Power BI till frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=en) för mer information.
+   Se [Anslut Power BI till frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html) för mer information.
 
 +++
 
@@ -159,7 +159,7 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
       3. Klistra in **[!UICONTROL ** databasparametern **]** från Experience Platform-frågor [!UICONTROL Credentials] i **[!UICONTROL ** databastextfältet **]** .
 
-         Lägg `%3FFLATTEN` till i **[!UICONTROL ** parametern Databas **]** , så att den lyder som `prod:cja%3FFLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) för mer information.
+         Lägg `%3FFLATTEN` till i **[!UICONTROL ** parametern Databas **]** , så att den lyder som `prod:cja%3FFLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) för mer information.
 
       4. Välj **[!UICONTROL ** Användarnamn och lösenord **]** från **[!UICONTROL ** Autentisering **]** lista.
 
@@ -175,11 +175,11 @@ För närvarande stöds och testas Customer Journey Analytics SQL Connector enda
 
    Nu kan du arbeta med data från datavytabellerna för att skapa dina rapporter och visualiseringar.
 
-   Se [Koppla tabell till frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) för mer information.
+   Se [Koppla tabell till frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html) för mer information.
 
 +++
 
-Se [Anslut klienter till frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) om du vill ha en översikt över och mer information om de olika verktygen.
+Se [Anslut klienter till frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html) om du vill ha en översikt över och mer information om de olika verktygen.
 
 ## Funktionalitet
 
@@ -219,11 +219,11 @@ prod:all=> \dv
 
 ### Kapslade kontra separerade
 
-Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integreringen har även stöd för `FLATTEN` alternativ. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Se [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) för mer information.
+Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integreringen har även stöd för `FLATTEN` alternativ. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Se [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) för mer information.
 
 ### SQL som stöds
 
-Se [SQL-referens för frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) för fullständig referens om vilken typ av SQL som stöds.
+Se [SQL-referens för frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html) för fullständig referens om vilken typ av SQL som stöds.
 
 Se tabellen nedan för exempel på den SQL du kan använda.
 
@@ -232,7 +232,7 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Mönster | Exempel |
 |---|---|
 | Schemaidentifiering | <pre>VÄLJ * FRÅN DV1 DÄR 1=0</pre> |
-| Rankad/uppdelning | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1, SUM(metric1) AS m1 FRÅN dv1 WHERE \&#39;timestamp\&#39; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/> filterId = &#39;12345&#39;GROUP<br/> BY dim1<br/><br/></pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
+| Rankad/uppdelning | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FRÅN dv1<br/>DÄR \&#39;timestamp\&#39; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  filterId = &#39;12345&#39;GROUP<br/> BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
 | HAVING-satsen | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>MED m1 > 100</pre> |
 | Distinkt, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\&#39; &lt; &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Måttsummor | <pre>VÄLJ SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</pre> |
@@ -240,7 +240,7 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Markera en del:<br/>Ytterligare resultat<br/>filtrering | <pre>SELECT dim1, m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</br>  GRUPPERA EFTER NEDRE1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | Markera en del:<br/>Förena med<br/>datamängden är inte i<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/>) a<br/>LEFT JOIN-sökningar b ON a.dim1 = b.key</pre> |
 | Markera en del:<br/>Fråga tvärs över<br/>datavyer | <pre>SELECT key, SUM(m1) AS total<br/>FRÅN (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FRÅN DV2<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE2<br/>GROUP BY-tangenten<br/>BESTÄLL EFTER Summa</pre> |
-| Markera en del: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED rader SOM ( MED \_ SOM ( VÄLJ * FRÅN data_ares DÄR \&#39;tidsstämpel\&#39; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39; ) VÄLJ _.item, _.units FRÅN _ DÄR _<br/>.item INTE ÄR NULL)VÄLJ rows.item, SUM(rows.units) SOM enheter<br/>FRÅN rader WHERE rows.item i (<br/><br/>&#39;A&#39;, &#39;B&#39;, &#39;C&#39;<br/><br/>)<br/><br/><br/>gruppera EFTER rader.item<br/></pre> |
+| Markera en del: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED rader SOM (<br/> MED \_ SOM (<br/> VÄLJ * FRÅN<br/> data_ares DÄR \&#39;tidsstämpel\&#39; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39;<br/><br/> ) VÄLJ _.item, _.units FRÅN _<br/> DÄR _.item INTE ÄR NULL)<br/><br/>VÄLJ rows.item, SUM(rows.units) SOM enheter<br/>FRÅN rader WHERE rows.item i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>gruppera EFTER rader.item</pre> |
 | Markerar var<br/>mätvärden kommer före<br/> eller är blandade med<br/>dimensionerna | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 2</pre> |
 
 {style="table-layout:auto"}

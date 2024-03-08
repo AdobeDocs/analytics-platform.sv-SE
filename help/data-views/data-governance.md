@@ -4,7 +4,7 @@ description: Lär dig hur dataetiketter och principer som definieras i Adobe Exp
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Etiketter och profiler
 
-När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i Customer Journey Analytics.
+När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i Customer Journey Analytics.
 
 Följande etiketter är av särskilt intresse för Customer Journey Analytics:
 
@@ -25,7 +25,7 @@ Följande etiketter är av särskilt intresse för Customer Journey Analytics:
 >
 >Dataanvändningsetiketter sprids inte automatiskt till sammanslagna datauppsättningar. De kan dock läggas till manuellt.
 
-Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du skapar dina profiler med [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en) eller via [API för principtjänst](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) i Experience Platform.
+Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du skapar dina profiler med [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html) eller via [API för principtjänst](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html) i Experience Platform.
 
 Två Adobe-definierade policyer används i Customer Journey Analytics och påverkar rapportering och nedladdning/delning:
 
@@ -76,6 +76,6 @@ Du kan inte heller spara en datavy som innehåller blockerade fält.
 >[Hämta känsliga data](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Vad är begränsade etiketter i Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)
+>[Vad är begränsade etiketter i Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html)
 
 

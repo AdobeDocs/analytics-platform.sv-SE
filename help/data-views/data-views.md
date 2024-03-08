@@ -5,7 +5,7 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c1e6279d8e2f0b31a82c2588fce8b3c2e614e440
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till datauppsättningar i Experience Platform](/help/connections/create-connection.md).
 * Om du vill skapa eller hantera en datavy behöver du en [behörighetsuppsättning i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions).
-* Om du använder [Adobe Analytics källanslutning](/help/data-ingestion/analytics.md) eller om du har Adobe Analytics bakgrundskunskap vill du kanske förstå hur fält i dina scheman och datauppsättningar, som ingår i anslutningen, relaterar till deras Adobe Analytics-motsvarigheter. Se [Mappningar av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) för mer information.
+* Om du använder [Adobe Analytics källanslutning](/help/data-ingestion/analytics.md) eller om du har Adobe Analytics bakgrundskunskap vill du kanske förstå hur fält i dina scheman och datauppsättningar, som ingår i anslutningen, relaterar till deras Adobe Analytics-motsvarigheter. Se [Mappningar av analysfält](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html) för mer information.
 
 ## Datavy settings you can override in Workspace {#settings-override}
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: cdc82ee0b6562879afa2b955aa05f330e5cd225c
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '5673'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Härledda fält är en viktig aspekt av rapportfunktionen i realtid i Adobe Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera det härledda fältet som en komponent i [Datavy](../data-views.md).
 
-Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser utanför Customer Journey Analytics. Som [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)eller i dina egna ETL-/ELT-processer.
+Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser utanför Customer Journey Analytics. Som [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)eller i dina egna ETL-/ELT-processer.
 
 Härledda fält definieras i [Datavyer](../data-views.md), baseras på en uppsättning funktioner som definieras som regler och tillämpas på tillgängliga standard- och/eller schemafält.
 

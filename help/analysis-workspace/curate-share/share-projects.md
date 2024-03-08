@@ -5,7 +5,7 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 0%
@@ -158,7 +158,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
    Om du väljer det här alternativet skapas en länk till projektet som kan delas med alla. Du kan när som helst inaktivera åtkomsten till projektet genom att inaktivera det här alternativet.
 
-   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange förfallodatum för konton](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) i Analytics Admin Guide.
+   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange förfallodatum för konton](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html) i Analytics Admin Guide.
 
 1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av Customer Journey Analytics-administratören):
 

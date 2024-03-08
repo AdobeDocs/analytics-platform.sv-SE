@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Det finns flera sätt att importera data till Customer Journey Analytics. Vissa 
 >I alla scenarier är de data du vill ha _use_ i Customer Journey Analytics är _inkapslad_ i Adobe Experience Platform.
 
 
-Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Ökning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en):
+Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Ökning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
 
 ![Customer Journey Analytics-arkitekturen som beskrivs i detta avsnitt](./assets/cja-architecture.png)
 
@@ -84,6 +84,6 @@ Se [Importera och använda strömmande data](./streaming.md) för mer informatio
 
 ## Importera och använda data med hjälp av källkopplingar
 
-Du har data tillgängliga från en källa som stöds av en källkoppling. Källanslutningar är konfigurerbara konfigurationer som gör att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över källkopplingar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
+Du har data tillgängliga från en källa som stöds av en källkoppling. Källanslutningar är konfigurerbara konfigurationer som gör att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över källkopplingar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data med hjälp av källkopplingar](./sources.md) för mer information.

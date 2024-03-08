@@ -4,7 +4,7 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Skapa och publicera målgrupper
 
-I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) i Adobe Experience Platform för kundanpassning och personalisering.
+I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) i Adobe Experience Platform för kundanpassning och personalisering.
 
 Läs det här [översikt](/help/components/audiences/audiences-overview.md) för att bekanta dig med konceptet Customer Journey Analytics målgrupper.
 
@@ -64,7 +64,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
    | [!UICONTROL Estimated to return] | Numret ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde i listrutan. Vi tittar på den historiska bortfallsfrekvensen för den här publiken för att förutse detta antal. |
    | [!UICONTROL Preview metrics] | Med den här inställningen kan du titta på specifika mätvärden för att se om den här målgruppen bidrar med ett oproportionerligt belopp till det här mätvärdet, till exempel &#39;[!UICONTROL Revenue]eller[!UICONTROL Average time on site]&#39;. Det ger dig det sammanlagda antalet mätvärden, liksom procentandelen av det totala antalet. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
    | [!UICONTROL Namespaces included] | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
-   | [!UICONTROL Sandbox] | The [Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) där den här publiken bor. När du publicerar den här målgruppen på Platform kan du bara arbeta med den inom gränserna för den här sandlådan. |
+   | [!UICONTROL Sandbox] | The [Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) där den här publiken bor. När du publicerar den här målgruppen på Platform kan du bara arbeta med den inom gränserna för den här sandlådan. |
 
    {style="table-layout:auto"}
 
@@ -72,7 +72,7 @@ Läs det här [översikt](/help/components/audiences/audiences-overview.md) för
 
    Om allt gick bra får du ett bekräftelsemeddelande om att publiken publicerades. Det tar bara några minuter för publiken att dyka upp i Experience Platform. (Även för målgrupper med miljontals medlemmar bör det ta mindre än fem minuter.)
 
-1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande kommer du till [Segmentgränssnitt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) i Adobe Experience Platform. Mer information finns nedan.
+1. Klicka **[!UICONTROL View audience in AEP]** inom samma meddelande kommer du till [Segmentgränssnitt](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) i Adobe Experience Platform. Mer information finns nedan.
 
 ## Vad händer när en målgrupp har skapats? {#after-audience-created}
 
@@ -141,7 +141,7 @@ Customer Journey Analytics strömmar data till RTCP via rörledning, och dessa d
 
 +++**Vilka identiteter skickar Customer Journey Analytics över?**
 
-Vilka identitets-/namnområdespar som anges i [Anslutningsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
+Vilka identitets-/namnområdespar som anges i [Anslutningsinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
 
 +++
 

@@ -4,7 +4,7 @@ description: Beskriver hur datastyrning fungerar i Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -17,7 +17,7 @@ I allmänhet ärvs alla datastyrningsrelaterade inställningar i Customer Journe
 
 ## Datastyrning
 
-Integrationen mellan Adobe Customer Journey Analytics och [Adobe Experience Platform datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) möjliggör märkning av känsliga uppgifter från Customer Journey Analytics och tillämpning av integritetspolicyer.
+Integrationen mellan Adobe Customer Journey Analytics och [Adobe Experience Platform datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) möjliggör märkning av känsliga uppgifter från Customer Journey Analytics och tillämpning av integritetspolicyer.
 
 Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Dessa etiketter stoppar eller varnar användare som skapar mätvärden och/eller dimensioner från känsliga fält.
 

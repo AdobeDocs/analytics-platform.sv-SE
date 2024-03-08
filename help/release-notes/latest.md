@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Versionsanteckningarna gäller den 14 februari till mars 2024. Adobe Customer Jo
 | ----------- | ---------- | ------- | ---- |
 | **Tidsserieprognoser** | [Prognos](../analysis-workspace/c-forecast/forecasting.md) är en ny Analysis Workspace-funktion som används för att förutsäga ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis) för frihandstabeller och linjediagram. | 31 januari 2024 | 21 februari 2024 |
 | **Radräkningsmått för sök- och profildata** | Radräkningsmått för datauppsättningar, konfigurerade som en del av en anslutning, inkluderar nu poster som lagts till, hoppats över eller tagits bort från profil- och uppslagsdatauppsättningar. |  | 14 februari 2024 |
-| **Upptäck Edge-robotidentifiering** | [Punktavkänning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) gör att du kan identifiera händelser som genererats av Web SDK, Mobile SDK och Server API som om de genererats av kända spindlar och bottar. | | 29 april 2024 |
+| **Identifiering av nätverksrobotar** | [Punktavkänning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) gör att du kan identifiera händelser som genererats av Web SDK, Mobile SDK och Server-API:n som genererade av kända spindlar och bottar. | | 29 april 2024 |
 | **Användningsstatistik** | Gränssnittet för användningsstatistik visar användningen av inkapslade och rapporteringsbara rader i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. | 20 februari 2024 | 13 mars 2024 |
 | **Adobe Product Analytics: Dela med vem som helst** | Här kan du dela en skrivskyddad länk till Adobe Product Analytics-projekt med personer som inte har tillgång till Product Analytics. |  | I slutet av mars 2024 |
 | **Adobe Product Analytics: Använd beräknade värden** | Nu kan du få tillgång till beräknade värden som skapats i Analysis Workspace eller verktyget Beräknade mätvärden i vyn Trends: Usage, vilket gör att du kan trender och jämföra mätvärden över tid. |  | 16 februari 2024 |
@@ -46,7 +46,7 @@ AN-333172; AN-336887; AN-337402; AN-337593; AN-338482; AN-338684; AN-33983; AN-3
 ## Relaterade resurser
 
 * [Versionsinformation om tidigare Customer Journey Analytics för 2023](/help/release-notes/2023.md)
-* [Versionsinformation för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=en)
+* [Versionsinformation för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 * [Versionsinformation om Media Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
 * [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 * [Dokumentationsuppdateringar för Customer Journey Analytics](/help/release-notes/doc-changes.md)
