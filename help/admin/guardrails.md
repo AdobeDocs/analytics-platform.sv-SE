@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 5%
@@ -98,7 +98,7 @@ Se även Experience Platform [Real-time Customer Data Platform Guardrails](https
 
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
-| Projekt | 2 000 | Systemstyrd Guardrail | Maximalt antal projekt för en organisation. |
+| Projekt | 50 000 | Systemstyrd Guardrail | Maximalt antal projekt för en organisation. |
 | Datavyer | 2 000 | Systemstyrd Guardrail | Maximalt antal [datavyer](../data-views/data-views.md) för en organisation. |
 | Datavyer | 50 | Systemstyrd Guardrail | Maximalt antal datavyer för en anslutning |
 | Datauppsättningar | 100 | Systemstyrd Guardrail | Maximalt antal [datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) per anslutning. |
