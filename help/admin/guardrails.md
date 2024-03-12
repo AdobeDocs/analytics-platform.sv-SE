@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
+source-git-commit: 56b909a542915cd64251fb8849e55df920668025
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 5%
@@ -204,7 +204,7 @@ Se även Experience Platform [Guardsedningar för datainmatning](https://experie
 
 >[!NOTE]
 >
->Bearbetningstiderna nedan är Guardrails, inte avtalade servicenivåavtal (SLA). Latensen varierar beroende på kundens konfiguration, datavolymer och konsumentprogram. Reella bearbetningstider är ofta snabbare. Se ert Customer Journey Analytics-avtal för era specifika avtalsvillkor och SLA. Se Experience Platform [Guardsedningar för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) för mer information.
+>Bearbetningstiderna nedan är Guardrails, inte avtalade servicenivåavtal (SLA). Latensen varierar beroende på kundens konfiguration, datavolymer och konsumentprogram. Reella bearbetningstider är ofta snabbare. Se ert Customer Journey Analytics-avtal för era specifika avtalsvillkor och SLA. Se Experience Platform [Guardsedningar för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) för mer information.
 
 | Dataflöde | Förväntad fördröjning |
 |---|---|
