@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17956f66d0bed46b876ba83aba8782c664fe2530
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2564'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,16 @@ När du har [har skapat eller redigerat en eller flera anslutningar](/help/conne
 * Visa alla datauppsättningar i en anslutning.
 * Kontrollera status för anslutningsens datauppsättningar och status för överföringsprocessen. Till exempel när är dina data tillgängliga så att du kan börja med rapporter och analyser i Analysis Workspace.
 * Identifiera eventuella dataavvikelser på grund av felaktig konfiguration. Saknar du några rader? Om så är fallet, vilka rader saknas och varför? Har du felkonfigurerat anslutningar och orsakat saknade data i Customer Journey Analytics?
+* Få insikter om hur inkapslade och rapporteringsbara rader används i alla era anslutningar.
+
+[!UICONTROL Connections] har två gränssnitt: [[!UICONTROL List]](#list) och [[!UICONTROL Usage]](#usage).
 
 
-En tabell visar alla tillgängliga anslutningar. Du kan snabbt söka efter en anslutning med sökfunktionen ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+## Lista
+
+The [!UICONTROL List] -gränssnittet är standardgränssnittet för anslutningar. Om det inte är markerat väljer du **[!UICONTROL List]** -fliken för att komma åt gränssnittet.
+
+The [!UICONTROL List] -gränssnittet visar en tabell med alla tillgängliga anslutningar. Du kan snabbt söka efter en anslutning med sökfunktionen ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
 Följande kolumner / ikoner är tillgängliga i tabellen.
 
@@ -46,7 +53,7 @@ Följande kolumner / ikoner är tillgängliga i tabellen.
 
 Du kan konfigurera vilka kolumner som ska visas med ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Det här visar **Anpassa tabell** som gör att du kan aktivera/inaktivera kolumner i tabellen.
 
-## Redigera en anslutning
+### Redigera en anslutning
 
 Tillåter administratörer att redigera anslutningen.
 
@@ -69,7 +76,7 @@ När du redigerar en anslutning kan du:
 Se [Skapa eller redigera en anslutning](create-connection.md) för mer information.
 
 
-## Ta bort en anslutning {#connections-delete}
+### Ta bort en anslutning {#connections-delete}
 
 Tillåter administratörer att ta bort anslutningen.
 
@@ -91,7 +98,7 @@ Välj **[!UICONTROL Continue]** för att ta bort anslutningen.
 Se [Ta bort konsekvenser](/help/admin/cja-deletion.md) för mer information om konsekvenserna av att ta bort en anslutning.
 
 
-## Skapa en datavy
+### Skapa en datavy
 
 Tillåter administratörer att skapa en datavy för anslutningen.
 
@@ -112,7 +119,7 @@ Du kan också:
 
 Se [Skapa eller redigera en datavy](/help/data-views/create-dataview.md) för mer information.
 
-## Anslutningsinformation {#connection-detail}
+### Anslutningsinformation {#connection-detail}
 
 Om du vill gå till informationen för en anslutning väljer du ett anslutningsnamn i anslutningstabellen.
 
@@ -153,7 +160,7 @@ Gränssnittet Anslutningsinformation ger en detaljerad vy över anslutningsstatu
 >
 >Eventuella uppgifter som lämnats in före den 13 augusti 2021 återspeglas inte i [!UICONTROL Connections] gränssnitt.
 
-### Anslutningspanelen
+#### Anslutningspanelen
 
 När ingen datauppsättning har valts i datamängdstabellen visas anslutningsalternativ och detaljer på en panel till höger i anslutningsgränssnittet.
 
@@ -173,7 +180,7 @@ När ingen datauppsättning har valts i datamängdstabellen visas anslutningsalt
 | [!UICONTROL Last modified] | Visar tidsstämpeln för den senaste ändringen av anslutningen. |
 | [!UICONTROL Last modified by] | Visar den person som senast ändrade anslutningen. |
 
-### Panelen Datauppsättning
+#### Panelen Datauppsättning
 
 När en datauppsättning väljs i datamängdstabellen visas information om den valda datauppsättningen på en panel till höger om anslutningsgränssnittet.
 
@@ -195,6 +202,31 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 | [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | [!UICONTROL Schema] | Visar det Experience Platform-schema som den här datauppsättningen baseras på. |
 | [!UICONTROL Dataset ID] | Detta datauppsättnings-ID genereras i Experience Platform. |
+
+
+## Användning
+
+The [!UICONTROL Usage] -gränssnittet visar användningen av kapslade och rapportbara rader över alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med vad som avtalats.
+
+Välj **[!UICONTROL Usage]** -fliken för att komma åt gränssnittet.
+
+Så här rapporterar du om användningen:
+
+1. Välj en **[!UICONTROL Time range]**. Du kan välja mellan **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, eller **[!UICONTROL Last 2 Years]**.
+1. Välj en **[!UICONTROL Interval]**. Du kan välja mellan **[!UICONTROL Monthly]** eller **[!UICONTROL Quarterly]**.
+
+För [!UICONTROL Ingested rows]:
+
+* en ruta visar [!UICONTROL Total] antal kapslade rader.
+* en ruta visar antalet inkapslade rader för [!UICONTROL Last month] och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
+* ett linjediagram visar  <span style="color:53b2ad">◼︎</span> Ackumulerade importerade rader och <span style="color:4046c3">◼︎</span> Månatliga kapslade rader.<br/>Du kan hålla markören över en datapunkt för varje rad i linjediagrammet för att se ett popup-fönster med datum och antal rader för den markerade datapunkten.
+
+
+För [!UICONTROL Reportable rows]:
+
+* en ruta visas [!UICONTROL Total] antal rader som ska rapporteras.
+* en ruta visar antalet rader som kan rapporteras för [!UICONTROL Last month] och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
+* ett linjediagram visar  <span style="color:53b2ad">◼︎</span> Ackumulerade rapporteringsbara rader och <span style="color:4046c3">◼︎</span> Månatliga rader som ska rapporteras.<br/>Du kan hålla markören över en datapunkt för varje rad i linjediagrammet för att se ett popup-fönster med datum och antal rader för den markerade datapunkten.
 
 
 >[!MORELIKETHIS]
