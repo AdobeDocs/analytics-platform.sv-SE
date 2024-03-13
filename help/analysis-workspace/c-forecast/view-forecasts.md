@@ -3,9 +3,10 @@ description: Lär dig hur du visar prognoser i en tabell eller i ett linjediagra
 title: Så här visar du prognoser i Analysis Workspace
 feature: Visualizations
 role: User
-source-git-commit: e52cee369be75785a99798d5acfa9cfc5aba2986
+exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
+source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Du kan visa prognoser i en frihandstabell eller i ett linjediagram.
 
 ## Visa prognoser i en tabell
 
-Du kan visa prognoser i en friformstabell i tidsserier. När Visa prognos är aktiverat för frihandsregister i [användarinställningar](../user-preferences.md), visas prognoser automatiskt för den första måttkolumnen som läggs till i tabellen. För ytterligare kolumner:
+Du kan visa prognoser i en friformstabell i tidsserier. När [!UICONTROL Show forecast] är aktiverat för Frihand-tabellen i [användarinställningar](../user-preferences.md), visas prognoser automatiskt för den första måttkolumnen som läggs till i tabellen. För ytterligare kolumner:
 
 1. Markera ikonen för kolumninställningar ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i kolumnrubriken kontrollerar du att **[!UICONTROL Show forecast]** är markerat i listan med alternativ. Mer information finns i [Kolumninställningar](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
@@ -50,5 +51,4 @@ Prognoser visas i linjediagrammet enligt följande:
    * prognostiserat värde för måttet
    * övre gräns för prognostiserat värde för mätvärdet
    * nedre gräns för prognostiserat värde för mätvärdet
-* det skuggade området visar prognosens konfidensintervall.
-
+* I det skuggade området visas prognosens konfidensintervall.

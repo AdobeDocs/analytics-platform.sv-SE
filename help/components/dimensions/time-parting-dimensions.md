@@ -4,7 +4,7 @@ title: Tidsdelningsdimensioner
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Tidsdelningsdimensionerna baseras på datavyns tidszon. Dessa dimensioner finns 
 | Timme på dagen | 0-23 |
 | AM/PM | AM, PM |
 | Veckodag | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
-| Helg/veckodag | Weekend, Veckodag |
+| Veckodag/vecka | Weekday, Weekend |
 | Dag i månaden | 1-31 |
 | Månad på året | Januari-december |
 | Dag på året | 1-366 |
