@@ -4,9 +4,9 @@ title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 6bd4a0462547966342a52115eb9d45e7c1e1ad25
+source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1346'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ De tillgängliga kolumnerna är:
 | [!UICONTROL **Delas med**] | Visar vem projektet delas med. |
 | [!UICONTROL **Senast ändrad**] | Datum och tid då projektet senast ändrades. |
 | [!UICONTROL **Senast öppnad**] | Identifierar det datum då ett projekt senast öppnades av den användare som för närvarande visar projektsidan. |
-| [!UICONTROL **Senast använd**] | Hjälper till att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades av någon användare i organisationen.<p>Den här kolumnen är bara tillgänglig för systemadministratörer.</p> |
+| [!UICONTROL **Senast använd**] | Hjälper till att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades av någon användare i organisationen.<p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Användningsinformation finns tillgänglig från och med september 2023.</li><li>Den här kolumnen är bara tillgänglig för systemadministratörer.</li></ul> |
 | [!UICONTROL **Projekt-ID**] | Kan användas för felsökning. |
 | [!UICONTROL **Senaste datumintervall**] | Längre datumintervall ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiderna. |
 | [!UICONTROL **Antal frågor**] | Det totala antalet begäranden som gjorts till Analytics när projektet läses in. Ett högre antal projektfrågor ökar projektets komplexitet och kan öka bearbetnings- och inläsningstiden. Dessa data är bara tillgängliga när ett projekt har lästs in eller när ett schemalagt projekt har skickats. |

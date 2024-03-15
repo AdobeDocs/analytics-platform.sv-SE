@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3226'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Mars 2024** | |
+| Användningsinformation om kolumnen Används i är tillgänglig först från och med september 2023. | Tydligare användningsinformation om **Används i** kolumn på [landningssida för projekt](/help/getting-started/landing.md) går tillbaka endast till september 2023. |
 | **Februari 2024** | |
 | Uppdateringar av projektdelningsdokumentation | Lagt till information om hur [visa projekt som delas med dig](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Effektivare information om [dela enskilda eller flera projekt](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Lagt till behörighetskrav för överföring av filer till Azure SAS och Azure RBAC när molnexportplatser konfigureras | Exakta behörighetskrav för överföring av filer till Azure SAS och Azure RBAC har lagts till när [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). |
