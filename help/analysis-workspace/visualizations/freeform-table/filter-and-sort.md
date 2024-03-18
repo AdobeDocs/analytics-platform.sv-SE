@@ -4,9 +4,9 @@ title: Filtrera och ordna tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -53,12 +53,15 @@ Så här exkluderar du snabbt vissa rader från en friformstabell:
 
    Håll ned Skift-tangenten om du vill markera flera rader eller håll ned Kommando-tangenten (Mac) eller Ctrl-tangenten (Windows) om du vill markera flera rader.
 
-### Högerklicka > Ta bort markerade rader
+<!--### Right-click > Delete selected rows
 
-1. Markera en eller flera rader.
-1. Högerklicka och välj **[!UICONTROL Delete Selected Rows]**.
+Note: this option does not seem to work. AN-338422
 
-   Den här åtgärden tar bort raderna från tabellen och tillämpar ett tabellfilter.
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.-->
+
 
 ### Använda ett enkelt eller avancerat filter på en tabell
 
