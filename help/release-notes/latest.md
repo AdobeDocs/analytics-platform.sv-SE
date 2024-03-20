@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: adb62f1a4c48955f890909d4f4b090786c3968d3
+source-git-commit: 20e99275a42312ed974ac4c1af28ede73180e748
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '953'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (mars 2024)
 
-**Senaste uppdatering**: 13 mars 2024
+**Senaste uppdatering**: 20 mars 2024
 
 Versionskommentarerna gäller den 13 mars till och med april 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -26,7 +26,7 @@ Versionskommentarerna gäller den 13 mars till och med april 2024. Adobe Custome
 | **B2B-schemaomvandling för person till konto** | Gör att du kan omvandla datauppsättningar för att bättre stödja personbaserade uppslag i Customer Journey Analytics B2B-rapportscenarier. Den här funktionen är tillgänglig för datauppsättningar för B2B-scheman baserat på följande klasser:<ul><li>XDM Business Account Person Relation</li><li>XDM - affärsmöjlighet, personrelation</li><li>XDM Business Marketing List-medlemmar</li><li>XDM Business Campaign-medlemmar</li></ul> | | 26 mars 2024 |
 | **Användning av Report Builder ingår i kolumnen Används i i Beräknat mått-hanteraren och Filterhanteraren** | När du visar **Används i** i Beräknade mätvärden-hanteraren eller filterhanteraren är användningsdata nu tillgängliga för Report Builder.<p>Tidigare var användningsdata i filterhanteraren bara tillgängliga för aviseringar, projekt, schemalagda projekt och beräknade mätvärden. Användningsdata i hanteraren för beräknade mätvärden var endast tillgängliga för aviseringar, projekt och schemalagda projekt.</p> |  | Sent mars eller tidig april |
 | **Adobe Product Analytics: Jämför händelser i ett enda trattsteg** | I vyn Funnel: Friction kan du nu jämföra händelser i ett enda tratt-steg. Detta är särskilt användbart när resan innehåller stegalternativ eller ett steg där ett A/B-experiment utförs. | 29 mars 2024 | 12 april 2024 |
-| **Administratörer kan hantera alla platser i sin organisation** | Med ett nytt alternativ på sidan Platser kan administratörer visa och hantera alla platser i organisationen. Tidigare kunde administratörer bara visa och hantera de platser som de skapade. | | April 2024 |
+| **Administratörer kan hantera alla platser och konton i sin organisation** | Ett nytt alternativ på fliken Platser (på sidan Komponenter > Exportera) gör att administratörer kan visa och hantera alla platser i organisationen. <p>Ett nytt alternativ på fliken Platskonton (på sidan Komponenter > Exportera) gör att administratörer kan visa och hantera alla konton i organisationen.</p><p>Tidigare kunde administratörer bara visa och hantera de platser och konton som de skapade.</p> | | April 2024 |
 | **Publiken publiceras i ett nytt&quot;Publiker&quot;-avsnitt i Experience Platform** | Publikationer som publiceras från Customer Journey Analytics finns nu tillgängliga i det nya avsnittet Publiker i Experience Platform. Tidigare fanns målgrupper som publicerades från Customer Journey Analytics tillgängliga i Platform under segmentavsnittet. Den här förbättringen ger följande fördelar:<ul><li>Publiken har inte längre en timmes fördröjning innan de visas i Platform; de är tillgängliga sekunder efter att de publicerats.</li><li>Publiken kan sorteras i Platform med kolumnen &quot;Ursprung&quot; som visar det program som målgruppen ursprungligen publicerades från.</li><li>Filtrerings- och sorteringsalternativen i Platform gör att du snabbare kan hitta relevanta målgrupper.</li></ul>Mer information finns i avsnittet [Använda Customer Journey Analytics-målgrupper i Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#audiences-aep). |  | April 2024 |
 | **Upptäck Edge-robotidentifiering** | [Punktavkänning](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) gör att du kan identifiera händelser som genererats av Web SDK, Mobile SDK och Server API som om de genererats av kända spindlar och bottar. | | 29 april 2024 |
 
