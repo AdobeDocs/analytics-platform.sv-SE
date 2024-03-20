@@ -4,9 +4,10 @@ description: Observera sessionshändelser på användarnivå över tid för att 
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
+source-git-commit: e9721eaf993175dd46e9d8edf9176d7c00308e8c
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Timeline]** I kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och förmedla bättre användarberättelser. Med den vänstra listen kan du filtrera flödet efter egenskapsvärden och segment. Med den högra listen kan du välja i en slumpmässig lista över användare som matchar filtervillkoren. I mittområdet visas strömmen för den valda användaren per session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
 
-![Tidslinje, bild](../assets/timeline.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
 >[!NOTE]
 >
