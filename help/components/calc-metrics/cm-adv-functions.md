@@ -4,9 +4,9 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cfaf29b8dd92325a4e5fdd2a960de798178db933
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3020'
 ht-degree: 1%
 
 ---
@@ -67,10 +67,6 @@ Definition för ett nytt beräknat mått för&quot;Approximate Customers&quot;:
 Så här kan måttet&quot;Approximate Customers&quot; användas vid rapportering:
 
 ![Frihandstabell med unika besökare och ungefärliga kunder ](assets/approx-customers.png)
-
-## Uniques överskreds
-
-Precis som Count() och RowCount(), tillämpas Distinct() för ungefärligt antal [Gränsvärden för ’uniques överstigit’](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
 
 ## Jämföra räkningsfunktioner
 
