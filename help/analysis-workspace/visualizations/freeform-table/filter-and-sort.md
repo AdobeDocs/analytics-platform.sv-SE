@@ -4,9 +4,9 @@ title: Filtrera och ordna tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
+source-git-commit: 4c96089088560da635e2499e7ec770c19c3de0ab
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ Med filter i Analysis Workspace hittar du den viktigaste informationen.
 Du kan använda flera metoder för att filtrera rader från en frihandstabell. 
 
 - Klicka på X i raden
-- Högerklicka > Borttagna markerade rader
 - Tabellfilter
 - Segmentering
 
