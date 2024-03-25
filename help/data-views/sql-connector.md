@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 9489868fdf8de416c061239de1c0719f263288d1
+source-git-commit: a932d0d364761d949831ee261907b923a79a1f56
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2703'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ I Adobe Experience Platform:
 
 1. Välj ![Skapa fråga](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Skapa fråga **]**.
 
-1. Välj `"cja"` **[!UICONTROL ** Databas **]**.
+1. Välj `cja` **[!UICONTROL ** Databas **]**.
 
 1. Om du vill köra frågan skriver du SQL-satsen och väljer ![Spela upp](assets/Smock_Play_18_N.svg) eller tryck på `[SHIFT]` + `[ENTER]`).
 
@@ -78,7 +78,7 @@ I Adobe Experience Platform:
 
    1. Välj **[!UICONTROL ** Referenser **]** i det övre fältet.
 
-   1. Välj `"cja"` **[!UICONTROL ** Databas **]**.
+   1. Välj `cja` **[!UICONTROL ** Databas **]**.
 
    1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i **[!UICONTROL ** PSQL, kommando **]** -avsnitt.
 
@@ -103,7 +103,7 @@ För närvarande är [!DNL Customer Journey Analytics BI extension] stöds och t
 
    1. Välj **[!UICONTROL ** Referenser **]** i det övre fältet.
 
-   1. Välj `"cja"` **[!UICONTROL ** Databas **]**.
+   1. Välj `cja` **[!UICONTROL ** Databas **]**.
 
    1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) för att kopiera alla Postgres-autentiseringsparametrar ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username]och andra) vid behov inom Power BI.
 
@@ -146,7 +146,7 @@ För närvarande är [!DNL Customer Journey Analytics BI extension] stöds och t
 
    1. Välj **[!UICONTROL ** Referenser **]** i det övre fältet.
 
-   1. Välj &quot;cja&quot; **[!UICONTROL ** Databas **]**.
+   1. Välj ` cja` **[!UICONTROL ** Databas **]**.
 
    1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) för att kopiera alla Postgres-autentiseringsparametrar ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], och andra) när det behövs i Tablet.
 
@@ -233,7 +233,7 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Flera dimensioner<br/>uppdelning<br/>och förstklassiga | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 1, 2<br/>BESTÄLL AV 1, 2</pre><pre>VÄLJ DISTINCT dim1, dim2<br/>FRÅN DV1</pre> |
 | Delmarkera:<br/>Filtrera ytterligare<br/>resultat | <pre>SELECT dim1, m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</br>  GRUPPERA EFTER NEDRE1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
 | Delmarkera:<br/>Fråga tvärs över<br/>datavyer | <pre>SELECT key, SUM(m1) AS total<br/>FRÅN (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FRÅN DV2<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE2<br/>GROUP BY-tangenten<br/>BESTÄLL EFTER Summa</pre> |
-| Delmarkera: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED rader AS (<br/>  MED \_ AS (<br/>    SELECT * FROM data_ares<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39;<br/>  )<br/>  VÄLJ _.item, _.units FROM _<br/>  DÄR _.item INTE ÄR NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FRÅN rader DÄR rader.objekt i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| Delmarkera: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED rader AS (<br/>  MED \_ AS (<br/>    SELECT * FROM data_ares<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39;<br/>  )<br/>  VÄLJ \_.item, \_.units FROM \_<br/>  DÄR \_.item INTE ÄR NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FRÅN rader DÄR rader.objekt i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
 | Markerar var<br/>mätvärden kommer före<br/> eller är blandade med<br/>dimensionerna | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 2</pre> |
 
 {style="table-layout:auto"}
