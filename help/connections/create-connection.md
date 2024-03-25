@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
+source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2779'
 ht-degree: 1%
 
 ---
@@ -191,6 +191,6 @@ Beräkningen görs för varje datauppsättning i anslutningen.
 
 När du skapar en anslutning kan du lägga till stora datauppsättningar för uppslagsändamål. En datauppsättning som representerar en produktkatalog så att beskrivande produktinformation kan slås upp när rapporter och visualiseringar skapas. En sådan stor uppslagsdatauppsättning kan överskrida det maximala antalet 10 miljoner unika uppslag som för närvarande implementeras som skyddsutslag, vilket resulterar i att ytterligare data hoppas över.
 
-Du kan begära algoritmisk rensning av en sådan stor uppslagsdatauppsättning. Den här rensningen läser bara in data i uppslagsdatauppsättningen för vilka nycklar är tillgängliga i händelsedatauppsättningsdelen av anslutningen. Referensantalet som används i algoritmen går tillbaka till 90 dagar och uppdateras en gång i veckan.
+Du kan begära en algoritmisk rensning av en stor uppslagsdatauppsättning. Den här algoritmiska rensningen sparar bara data i uppslagsdatauppsättningen som matchar nycklarna i händelsedatauppsättningen. På så sätt behöver du inte läsa in hela datauppsättningen för orensad sökning. Gamla eller mindre ofta använda objekt tas bort, vilket kan påverka rapporter något men ger avsevärda fördelar. Algoritmen tittar tillbaka 90 dagar och uppdateras varje vecka.
 
-Kontakta Adobe för mer information.
+Kontakta supportteamet på Adobe för mer information och för att aktivera den här funktionen.
