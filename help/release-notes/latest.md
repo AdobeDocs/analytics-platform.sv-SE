@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6696dc9639e3309695a7a20427753fa629d1816
+source-git-commit: 880bec05dbc14093f711ef54ee06ad2c8b178a7d
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 1%
+source-wordcount: '1001'
+ht-degree: 0%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (mars 2024)
 
-**Senaste uppdatering**: 20 mars 2024
+**Senaste uppdatering**: 3 april 2024
 
 Versionskommentarerna gäller den 13 mars till och med april 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Versionskommentarerna gäller den 13 mars till och med april 2024. Adobe Custome
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Ändra till borttagningsprotokoll för arbetsyteprojekt** | Tidigare rensades aldrig borttagna projekt från systemet. Vi börjar nu rensa borttagna projekt efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett projekt via webbgränssnittet om de har en URL till det direkta projektet. | | 14 mars 2024 |
 | **Ny kolumn som är tillgänglig på startsidan för projekt** | The **[!UICONTROL Last used]** -kolumnen är nu tillgänglig när du visar fliken Projekt på fliken [Customer Journey Analytics landningssida](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Den här informationen kan hjälpa dig att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades. Tidigare **[!UICONTROL Last used]** kolumnen var bara tillgänglig i Beräknat mått-hanteraren, Segment-hanteraren och Alerts-hanteraren.</p> |  | 13 mars 2024 |
 | **Användningsstatistik** | The [gränssnitt för användningsstatistik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) visar hur inkapslade och rapportbara rader används i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. |  | 13 mars 2024 |
 | **Media Analytics-rapportering - genomsnittlig miniatyrpublik (AMA)** | Panelen för genomsnittlig minutpublik är nu tillgänglig i CJA. Media Analytics-kunder kan använda panelen för normal målgrupp för att bättre förstå den genomsnittliga användningen av deras innehåll. <p>Den genomsnittliga minuten-målgruppen möjliggör jämförelser av programmering oavsett längd eller genre. Dessutom kan kunderna jämföra eller lägga till den digitala genomsnittliga minuten-publiken med den linjära minuten-mätningen för tv.</p><p> Panelen ger större flexibilitet för att mäta den genomsnittliga publiken för anpassade tidsperioder samt när tidsklassificeringen har uppdaterats efter detta.</p><p>Mer information finns i [Panelen Mediegenomsnitt för miniatyrmålgrupp](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 12 mars 2024 |
