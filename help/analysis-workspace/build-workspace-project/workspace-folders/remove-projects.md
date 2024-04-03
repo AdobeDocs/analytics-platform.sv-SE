@@ -5,9 +5,9 @@ title: Ta bort projekt från mappar
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: caf16a6971c4474516e116f8cb62e37f0bf6a06b
+source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Du kan flytta projekt från en mapp till en annan mapp som du har skapat.
 
 ## Ta bort ett projekt från en projektmapp {#delete-project-in-folder}
 
-När du tar bort ett projekt från en mapp tas det bort från systemet efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett projekt via webbgränssnittet om de har en direkt URL till projektet.
+När du tar bort ett projekt från en mapp tas det bort från systemet efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett borttaget projekt via webbgränssnittet om de har en direkt URL till projektet.
 
 1. I en projektmapp väljer du **...** ellips bredvid projektnamnet.
 
