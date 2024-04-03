@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 56b909a542915cd64251fb8849e55df920668025
+source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1523'
 ht-degree: 5%
 
 ---
@@ -121,7 +121,7 @@ Se även Experience Platform [Real-time Customer Data Platform Guardrails](https
 |---|--:|---|---|
 | Fält | 10 000 | Systemstyrd Guardrail | Maximalt antal egenskaper eller fält per rad i en datauppsättning. |
 | Unika strängar | 10 miljoner | Systemstyrd Guardrail | Maximalt antal unika nycklar per sökdatamängd. |
-| Rader | 1 miljon | Systemstyrd Guardrail | Maximalt antal rader per unikt person-ID inom en anslutning. |
+| Rader | 1 miljon | Systemstyrd Guardrail | Maximalt antal rader per unikt person-ID under en viss månad i en anslutning. |
 | Radstorlek | 2 | Performance Guardrail/Systemstyrd Guardrail | Genomsnittlig storlek i kilobyte per rad med data som importerats till Customer Journey Analytics (mjuk gräns). En statisk gräns för radstorlek bestäms av Guardrails för datainmatning i Experience Platform. |
 
 {style="table-layout:auto"}
