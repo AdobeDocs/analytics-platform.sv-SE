@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -71,3 +71,7 @@ Du kan **exportera bildtexter via PDF**, så länge projektet sparas med de bild
 Om du inte vill att intelligenta bildtexter ska genereras kan du inaktivera den här funktionen genom att gå till Visualiseringsinställningarna och avmarkera kryssrutan **[!UICONTROL Show intelligent captions]**.
 
 ![Alternativ för linjevisualisering som visar alternativet att avmarkera Visa intelligenta bildtexter.](assets/toggle-captions.png)
+
+## Intelligenta bildtexter i Mobile Scorecards
+
+Mer information finns i [Hantera styrkort](/help/mobile-app/manage-scorecard.md)

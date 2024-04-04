@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: e8d55cfbb0bb50269e436bc3c38a88bc4830bed0
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1067'
 ht-degree: 7%
 
 ---
@@ -188,6 +188,7 @@ ht-degree: 7%
    + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
    + [Läraruppgifter](../mobile-app/curator.md)
    + [Skapa ett mobilstyrkort](../mobile-app/create-scorecard.md)
+   + [Hantera styrkort för mobila enheter](../mobile-app/manage-scorecard.md)
    + [Konfigurera chefer för att använda kontrollpaneler](../mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
 
