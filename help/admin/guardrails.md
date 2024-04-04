@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
+source-git-commit: 8af2c48c4895e6015c16e3973b6cd213aff38441
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1606'
 ht-degree: 5%
 
 ---
@@ -127,6 +127,18 @@ Se även Experience Platform [Real-time Customer Data Platform Guardrails](https
 {style="table-layout:auto"}
 
 Se även Experience Platform [Guardsedningar för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+
+
+## Export av måldata
+
+| Namn | Värde | Begränsa typ | Beskrivning |
+|---|--:|---|---|
+| Dataexport | Total godkänd datasjölagring | Prestandagardri | Kunden kan använda export av måldatauppsättning för att exportera kunddata i datasjön upp till Total Authorized Data Lake Storage. |
+| Tillgängliga datauppsättningar | Profil och händelse | Systemtvångstskydd | Data för profil- och upplevelsehändelser som har skapats i användargränssnittet i Experience Platform efter att ha inhämtat eller samlat in data via Sources, Web SDK, Mobile SDK, Analytics Data Connector och Audience Manager. |
+
+{style="table-layout:auto"}
+
+Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Datallandningszon
