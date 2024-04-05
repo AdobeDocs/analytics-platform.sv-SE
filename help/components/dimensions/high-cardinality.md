@@ -5,9 +5,9 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -39,3 +39,4 @@ Det bästa sättet att hantera stora kardinalitetsmått är att begränsa antale
 * Använd en dimension för uppslagsdatauppsättning. Dimensionerna för uppslagsdatauppsättningen kombinerar dimensionsobjekt för händelsedatamängd, som begränsar antalet unika värden som returneras.
 * Använd [Inkludera/exkludera](/help/data-views/component-settings/include-exclude-values.md) -komponentinställning i datavyhanteraren.
 * Förkorta datumintervallet för begäran. Om många unika värden ackumuleras över tid kan ett kortare datumintervall i Workspace-rapporten begränsa antalet unika värden som servrar kan bearbeta.
+* Överväg att använda [Fullständig tabellexport](/help/analysis-workspace/export/export-cloud.md) om du vill returnera alla rader i tabellen.

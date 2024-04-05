@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 12007130027d152038b1210070f6ebd5de15c762
+source-git-commit: dd4a2e4770e0ead4c7b4c578acd2ceacdfaa856c
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3257'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **April 2024** | |
+| Tillagd information som rekommenderar fullständig tabellexport för höga kardinalitetsmått | Punkter som lagts till i [Bästa tillvägagångssätt för höga kardinalitetsmått](/help/components/dimensions/high-cardinality.md) att rekommendera att använda fullständig tabellexport för att få stora kardinalitetsmått. |
 | **Mars 2024** | |
 | Användningsinformation om kolumnen Används i är tillgänglig först från och med september 2023. | Tydligare användningsinformation om **Används i** kolumn på [landningssida för projekt](/help/getting-started/landing.md) går tillbaka endast till september 2023. |
 | **Februari 2024** | |
