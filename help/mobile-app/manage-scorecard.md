@@ -4,13 +4,13 @@ title: Hantera styrkort
 feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
+source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1768'
 ht-degree: 0%
 
 ---
-
 
 # Hantera styrkort
 
@@ -202,12 +202,30 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 1. Klicka på ikonen bredvid **[!UICONTROL Unspecified]** för att ta bort ospecificerade data från din rapportering. (Du kan även ta bort andra dimensionsobjekt.)
 
-## Visa intelligenta bildtexter i styrkort
+## Visa intelligenta bildtexter i styrkort {#captions}
 
 Intelligenta bildtexter kan hjälpa icke-analytiker att förstå sina data bättre utan hjälp av analytiker. Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för visualiseringar.
 
-Så här visar du intelligenta bildtexter:
+Dessa bildtexter bygger på viktiga statistiska insikter i data och formulerar dem på naturligt språk, vilket hjälper icke-analytikerna att utveckla sin datakunskap.
 
-1. Klicka i en ruta.
+Intelligent bildtext finns för alla visualiseringar i mobilappen, inklusive Line, Donut, Bar Chart och Summary Number.
 
-1. mer
+Så här visar du intelligenta bildtexter i ett mobilstyrkort:
+
+1. Klicka i ett styrkort i en ruta. I det här styrkortet klickar du till exempel i linjediagrammet längst ned.
+
+   ![Styrkort med linjevisualisering](assets/caption1.png)
+
+1. Tryck på den blå ikonen längst upp till höger för att generera bildtexterna. Bildtexterna visas under linjediagrammet.
+
+   ![Intelligent bildtext i linjvisualisering](assets/caption2.png)
+
+1. Svep åt höger för att visa alla intelligenta bildtexter.
+
+   Intelligenta bildtexter kan peka på datatoppar, avvikelser, trender, minskningar, korrelationer och andra fenomen.
+
+1. Tryck på den svarta flaggan i en bildtext för att rapportera ett problem, till exempel skadligt eller olagligt innehåll.
+
+   ![Rapportera problem med bildtext](assets/caption-report.png)
+
+1. Klicka på X för att avsluta **[!UICONTROL Report results]** -dialogrutan.
