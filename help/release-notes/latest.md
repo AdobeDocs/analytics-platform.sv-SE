@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
+source-git-commit: dea4a862f2e40e31bf96d0898418adfd7ca3a2f7
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Versionsinformationen gäller den 13 mars 2024 till april 2024. Adobe Customer J
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Intelligenta bildtexter i mobilstyrkort** | [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) kan hjälpa icke-analytiker att förstå sina data bättre utan hjälp av analytiker. De finns nu i Customer Journey Analytics styrkort. |  | 10 april 2024 |
+| **Intelligenta bildtexter i mobilstyrkort** | [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) kan hjälpa icke-analytiker att förstå sina data bättre utan hjälp av analytiker. De finns nu i Customer Journey Analytics styrkort. |  | 17 april 2024 |
 | **Ändra till borttagningsprotokoll för arbetsyteprojekt** | Tidigare rensades aldrig borttagna Workspace-projekt från systemet. Vi börjar nu rensa borttagna projekt efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett borttaget projekt via webbgränssnittet om de har en URL till det direkta projektet. | | 14 mars 2024 |
 | **Ny kolumn som är tillgänglig på startsidan för projekt** | The **[!UICONTROL Last used]** -kolumnen är nu tillgänglig när du visar fliken Projekt på fliken [Customer Journey Analytics landningssida](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Den här informationen kan hjälpa dig att avgöra om ett projekt är värdefullt för användare i organisationen genom att visa datum och tid när projektet senast öppnades. Tidigare **[!UICONTROL Last used]** kolumnen var bara tillgänglig i Beräknat mått-hanteraren, Segment-hanteraren och Alerts-hanteraren.</p> |  | 13 mars 2024 |
 | **Användningsstatistik** | The [gränssnitt för användningsstatistik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) visar hur inkapslade och rapportbara rader används i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. |  | 13 mars 2024 |
