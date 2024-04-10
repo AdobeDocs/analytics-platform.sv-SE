@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
@@ -74,4 +74,4 @@ Om du inte vill att intelligenta bildtexter ska genereras kan du inaktivera den 
 
 ## Intelligenta bildtexter i Mobile Scorecards
 
-Mer information finns i [Hantera styrkort](/help/mobile-app/manage-scorecard.md)
+Intelligenta bildtexter finns också i Customer Journey Analytics [mobilstyrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
