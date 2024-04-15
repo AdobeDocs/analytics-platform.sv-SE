@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: d6f2d7129b472b32edc30dadfeb2303a92d790de
+source-git-commit: 4cb3c61a518b93119d8ffd503fc8653076ad56a1
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1980'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,8 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 1. Expandera om du vill visa det totala antalet rapportbegäranden för alla anslutningar i organisationen [!UICONTROL **Visa mer**] för att visa [!UICONTROL **Månatliga rapportbegäranden**] diagram.
 
    Du kan visa antalet rapportförfrågningar i din organisation för den aktuella månaden och föregående månad.
+
+   ![Rapporteringsaktivitet som visar rapportkön](assets/reporting-activity-monthly.png)
 
 1. (Valfritt) Du kan söka efter eller filtrera listan över anslutningar:
 
