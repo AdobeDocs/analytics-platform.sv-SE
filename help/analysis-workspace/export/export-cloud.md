@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: cf9920eb45803ff105e0d411475ee3df2a676cd1
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2217'
 ht-degree: 1%
 
 ---
@@ -175,7 +175,7 @@ Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bor
 * Beräknade mått som använder grundläggande eller avancerade funktioner i metrisk definition (se [Grundfunktioner](/help/components/calc-metrics/cm-functions.md) och [Avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md) för mer information)
 * Komponenter som har begränsats av en administratör från att exporteras (se *Filtrera på datastyrningsprinciper i datavyer* avsnitt i [Etiketter och profiler](/help/data-views/data-governance.md) för mer information)
 * Alla dimensioner som uppfyller alla följande kriterier:
-   * Skapades från ett fält som är en del av en [array med objekt](/help/use-cases/object-arrays.md)
+   * Skapades från ett fält som är en del av en [array med objekt](/help/use-cases/object-arrays.md) (liknande multivärdevariabler i Adobe Analytics)
    * Har [beständighet aktiverad](/help/data-views/component-settings/persistence.md)
    * Använder inte en [bindningsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Mer än 5 dimensioner och 5 mätvärden per rapport (upp till 5 dimensioner och 5 mätvärden stöds)

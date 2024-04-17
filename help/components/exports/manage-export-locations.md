@@ -5,9 +5,9 @@ title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cdf99e31790f089950de8063445b6264158131dd
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,19 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 1. Välj [!UICONTROL **Platser**] -fliken.
 
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+
 1. I sökfältet börjar du skriva in information som är associerad med den plats du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
 
 ## Redigera platser
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Platser**] väljer du sedan den plats som du vill redigera.
+1. Välj [!UICONTROL **Platser**] -fliken.
+
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+
+1. Välj den plats som du vill redigera.
 
    ![Fönstret Exporterar med fliken Platser och en lista med platser.](assets/locations-edit.png)
 
@@ -70,7 +76,11 @@ Så här tar du bort en plats:
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
-1. Välj [!UICONTROL **Platser**] väljer du en eller flera platser som du vill ta bort.
+1. Välj [!UICONTROL **Platser**] -fliken.
+
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+
+1. Markera en eller flera platser som du vill ta bort.
 
    ![Fönstret Exporterar med fliken Platser och en lista över platser](assets/locations-edit.png)
 
@@ -92,6 +102,8 @@ Så här tar du bort en plats:
 
    ![Fönstret Exportera med fliken Platskonton](assets/account-add.png)
 
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+
 1. Välj [!UICONTROL **Visa detaljer**] på kontot som du vill redigera.
 
 1. Gör önskade ändringar och välj sedan [!UICONTROL **Spara**].
@@ -108,6 +120,8 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
    ![Fönstret Exportera med fliken Platskonton](assets/account-add.png)
 
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Kontonycklar**].
 
 ## Ta bort konton
@@ -117,6 +131,8 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 1. Välj [!UICONTROL **Platskonton**] -fliken.
 
    ![Fönstret Exportera med fliken Platskonton](assets/account-add.png)
+
+1. (Villkorligt) Om du är systemadministratör kan du aktivera [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
 
 1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Ta bort konto**].
 
