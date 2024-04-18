@@ -5,9 +5,9 @@ title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 067a9e3d5319a33bb5ae894d76f3445e2d968d0e
+source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1788'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att användar-ARN som tillhandahålls av Adobe har `S3:PutObject` behörighet för att överföra filer till denna bucket. </p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Bucket**] | Den bucket på ditt Amazon S3-konto där du vill att Customer Journey Analytics data ska skickas. <p>Se till att användar-ARN som tillhandahålls av Adobe har `S3:PutObject` behörighet för att överföra filer till denna bucket. </p><p>Bucket-namn måste uppfylla specifika namnregler. De måste till exempel innehålla mellan 3 och 63 tecken, får endast bestå av gemener, siffror, punkter (.) och bindestreck (-) och måste börja och sluta med en bokstav eller en siffra. [En fullständig lista över namnregler finns i AWS-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
@@ -129,7 +129,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. <p>Se till att du har beviljat `roles/storage.objectCreator` tillstånd till huvudmannen från Adobe. (Huvudkontot tillhandahålls när [konfigurera Google Cloud Platform-kontot](/help/components/exports/cloud-export-accounts.md).) <p>Mer information om att bevilja behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen.</p> |
+   | [!UICONTROL **Bucket**] | Den bucket på ditt GCP-konto där du vill att Customer Journey Analytics data ska skickas. <p>Se till att du har beviljat `roles/storage.objectCreator` tillstånd till huvudmannen från Adobe. (Huvudkontot tillhandahålls när [konfigurera Google Cloud Platform-kontot](/help/components/exports/cloud-export-accounts.md).) <p>Mer information om att bevilja behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen.</p> |
    | [!UICONTROL **Prefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
@@ -171,7 +171,7 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
 
    | Fält | Funktion |
    |---------|----------|
-   | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
+   | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Customer Journey Analytics data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
    | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/`<p>Kontrollera att det program-ID som du angav när du konfigurerade Azure RBAC-kontot har tilldelats `Storage Blob Data Contributor` roll för att komma åt behållaren (mappen).</p> <p>Mer information finns i [Inbyggda Azure-roller](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Konto**] | Azure-lagringskontot. |
 
