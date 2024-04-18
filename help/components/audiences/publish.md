@@ -4,7 +4,7 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 91ab1d3160db83979e1550f8f1b5135065cc6707
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 0%
@@ -86,7 +86,7 @@ När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för 
 
 Vid flera tillfällen före, under och efter publikationen kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-![Latenser i publikation enligt beskrivningen i det här avsnittet.](assets/latency-diagram.png)
+![Latenser i publikation enligt beskrivningen i det här avsnittet.](/help/components/audiences/assets/latency-diagram.png)
 
 | # | Svarstid | Varaktighet för fördröjning |
 | --- | --- | --- |
