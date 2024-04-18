@@ -4,9 +4,9 @@ title: Prognosöversikt
 feature: Visualizations
 role: User
 exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
-source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
+source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 {{select-package}}
 
-Prognosticering är en Analysis Workspace-funktion som gör det enklare att förutsäga ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis). Prognoser är endast tillgängliga för tidsserierelaterade data.
+Prognosticeringen innehåller en statistisk prognos för tidsserierelaterade data som baseras på historiska data som redan finns i Customer Journey Analytics. Prognoser kan visas i frihandstabeller och i linjediagramvisualiseringar. Användare kan styra om prognoser automatiskt inkluderas via användarinställningarna i användargränssnittet för Customer Journey Analytics. De kan också aktivera och inaktivera dem per kolumn i kolumninställningarna. Endast den första kolumnen som läggs till i en tabell har redan prognostisering aktiverat.
+
+Prognoser finns i licensskikten Select och senare Customer Journey Analytics.
 
 Du kan använda prognoser för:
 
