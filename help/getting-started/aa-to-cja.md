@@ -5,22 +5,20 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 01188253d4a8d794e9cd9bbea9c0fef02180c940
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
 
 # Utveckling från Adobe Analytics
 
-I takt med att er organisation utvecklas till att använda Customer Journey Analytics kan ni ta hjälp av dessa steg för att förbereda era data och bli medvetna om de kritiska skillnaderna mellan de båda teknikerna. Den här artikeln riktar sig till en administratörspass.
-
-## Förbered data
+## Steg 3: Förbered dina befintliga data
 
 Att förbereda dina Adobe Analytics-data för en smidig övergång till Customer Journey Analytics är avgörande för dataintegriteten och för att skapa en enhetlig rapportering.
 
-### 1. Samla in identiteter {#identities}
+### Samla in identiteter
 
 Den kanske viktigaste faktorn när det gäller att förstå en kundresa är att veta vem kunden är i varje steg. Om du till exempel har en identifierare som finns i alla dina kanaler och motsvarande data för Customer Journey Analytics kan du sammanfoga flera källor i Customer Journey Analytics.
 Exempel på identiteter kan vara ett kund-ID, konto-ID eller e-post-ID. Oavsett vilken identitet (och det kan finnas flera) måste du tänka på följande för varje ID:
@@ -30,9 +28,9 @@ Exempel på identiteter kan vara ett kund-ID, konto-ID eller e-post-ID. Oavsett 
 * ID:t innehåller inte PII. Hash-koda allt som kan vara känsligt.
 * ID använder samma format för alla källor (samma längd, samma hash-metod osv.)
 
-I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje datarad, men det gör en sekundär identitet. I det här fallet kan flerkanalsanalys (kallas även&quot;Stitching&quot;) användas för att överbrygga klyftan mellan rader när en kund endast identifieras med sitt ECID och när en identitet samlas in (till exempel när en kund autentiseras). [Läs mer](../stitching/overview.md).
+I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje datarad, men det gör en sekundär identitet. I detta fall [Flerkanalsanalys (kallas även&quot;Stitching&quot;)](/help/stitching/overview.md) kan användas för att överbrygga gapet mellan rader när en kund endast identifieras med sitt ECID och när en identitet samlas in (t.ex. när en kund autentiseras).
 
-### 2. Justera variablerna {#variables}
+### Justera variablerna
 
 Den enklaste metoden att omvandla Adobe Analytics-data till data från Customer Journey Analytics är att importera en [global rapportsvit](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) till Experience Platform med [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i Experience Platform, som i sin tur enkelt kan anslutas till Customer Journey Analytics.
 
@@ -46,7 +44,7 @@ Om du har undvikit att gå över till en global rapportserie på grund av proble
 
 Här är ett exempel på [kombinera rapportsviter med olika scheman](/help/use-cases/aa-data/combine-report-suites.md).
 
-### 3. (Re)Konfigurera era marknadsföringskanaler {#marketing-channels}
+### (Re)Konfigurera era marknadsföringskanaler
 
 De traditionella inställningarna för Adobe Analytics Marketing Channel fungerar inte på samma sätt i Customer Journey Analytics. Det finns två orsaker:
 
@@ -58,43 +56,9 @@ Adobe har publicerat [uppdaterade metodtips för implementering av marknadsföri
 
 Med introduktionen av [Härledda fält](../data-views/derived-fields/derived-fields.md) som en del av datavyer i Customer Journey Analytics stöds även marknadsföringskanaler på ett icke-förstörande och retroaktivt sätt med [Funktionsmall för marknadsföringskanal](../data-views/derived-fields/derived-fields.md#function-templates).
 
-### 4. Bestäm dig för att använda Analytics-källkopplingen jämfört med Experience Platform SDK:er {#connector-vs-sdk}
+## Förbered dig för kritiska skillnader när du migrerar till Customer Journey Analytics
 
-Adobe Analytics-kunder kan enkelt utnyttja sina rapportsviter i Adobe Experience Platform och Customer Journey Analytics med Analytics-källkopplingen. Information om hur du använder Analytics-källkopplingen finns i snabbstartsguiden för hur du [importera data från Adobe Analytics och använda dem i Customer Journey Analytics](../data-ingestion/analytics.md). Se även [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) för mer information.
-
-Adobe erbjuder också möjligheten att implementera datainsamling med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html). Dessa metoder ger stora möjligheter att samla in data. Det finns inte längre någon begränsning av antalet fält eller behovet av att mappa dataelement till props, eVars och händelser som i Analytics. Du kan använda ett obegränsat antal schemaelement av olika typer och representera dem på flera olika sätt med Customer Journey Analytics [Datavyer](/help/data-views/data-views.md). Snabbheten för datatillgänglighet ökar när data skickas direkt till Adobe Experience Platform, när tiden för databehandling via Adobe Analytics tas bort.
-
-**Fördelar med att använda Experience Platform SDK:**
-
-* Flexibelt schema för att definiera de fält du behöver
-* Inte beroende av Adobe Analytics nomenklatur (prop, eVar, event osv.)
-* Inga teckenbegränsningar (100 tecken för props)
-* Bättre datatillgänglighet i Adobe Experience Platform [användningsexempel för personalisering i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
-* [Enhets-ID:n från första part](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) för exaktare besöksidentifiering
-
-**Nackdelar med att använda Experience Platform SDK**
-
-Följande Adobe Analytics-funktioner eller -komponenter stöds inte:
-
-* Punktfiltrering
-* Direktuppspelad mediemätning
-* Livesream eller Livesream triggers
-
-### 5. Kartlägg projekt och komponenter från Adobe Analytics till Customer Journey Analytics
-
-Adobe Analytics-administratörer kan migrera Adobe Analytics-projekt och tillhörande komponenter till Customer Journey Analytics.
-
-Migreringsprocessen omfattar:
-
-* Återskapande av Adobe Analytics-projekt i Customer Journey Analytics.
-
-* Mappa mått och mätvärden från Adobe Analytics rapporteringsprogram till mått och mätvärden i datavyer i Customer Journey Analytics.
-
-Innan du påbörjar migreringen måste du [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
-
-När du har gjort alla förberedelser du behöver kan du [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
-
-## Förbered dig för kritiska skillnader
+I takt med att er organisation utvecklas till att använda Customer Journey Analytics kan ni ta hjälp av dessa steg för att förbereda era data och bli medvetna om de kritiska skillnaderna mellan de båda teknikerna. Den här artikeln riktar sig till en administratörspass.
 
 ### Arbeta bekvämt med rapporttidsbearbetning {#report-time}
 
@@ -132,6 +96,6 @@ Här är några videor som vägleder dig:
 
 * Överväg att tillhandahålla en dataordlista för dina användare - eller utöka SDR-filen så att den innehåller Experience Platform-fältnamnet för schemaelement.
 
-## Nästa steg
+### Nästa steg
 
 När du har flyttat till Customer Journey Analytics och observerat eventuella datamaterial kan du jämföra dina ursprungliga Adobe Analytics-data med Adobe Analytics-data som nu finns i Customer Journey Analytics. [Läs mer](/help/troubleshooting/compare.md)

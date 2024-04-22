@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 135d1832a1c22248e3c52e3f7cb9f05293626522
+source-git-commit: 9450ecdce53088b008f3a5a5413d3e824fbd9b13
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1111'
 ht-degree: 7%
 
 ---
@@ -42,6 +42,16 @@ ht-degree: 7%
 + Customer Journey Analytics och Adobe Analytics {#compare-aa-cja}
    + [Utveckling från Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Användarhandbok för Adobe Analytics](../getting-started/aa-to-cja-user.md)
+   + Migrera till Customer Journey Analytics {#migrate-to-cja}
+      + [Kom igång](/help/getting-started/cja-migration/cja-migration-getstarted.md)
+      + [Välj en migreringsmetod](/help/getting-started/cja-migration/cja-migration-method.md)
+      + [Skicka data till plattformen](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
+      + [Mappa data till XDM](/help/getting-started/cja-migration/cja-migration-xdm.md)
+      + [Behåll historiska data](/help/getting-started/cja-migration/cja-migration-historical-data.md)
+      + [Planera användarintroduktion](/help/getting-started/cja-migration/cja-migration-onboarding.md)
+      + [API-användning för port](/help/getting-started/cja-migration/cja-migration-api.md)
+      + [Ersätt datafeeds och Data Warehouse](/help/getting-started/cja-migration/cja-migration-export-options.md)
+      + [Migrera projekt och komponenter](/help/getting-started/cja-migration/cja-migration-projects.md)
    + Jämförelse med Adobe Analytics {#cja-aa-comparison}
       + [Översikt](../getting-started/aa-vs-cja/overview.md)
       + [Utnyttja Adobe Analytics-data i Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
