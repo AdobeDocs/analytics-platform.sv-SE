@@ -4,9 +4,9 @@ title: Hämta Customer Journey Analytics-data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,8 @@ Om du begär mer än en nedladdning åt gången får du ett meddelande om att va
 ## Hämta känsliga data {#sensitive}
 
 Om **[!UICONTROL Enforce Download]** [datastyrningsprincip](/help/data-views/data-governance.md) är aktiverat i den datavy som du rapporterar om, kommer eventuell nedladdning (till exempel e-post eller delning av PDF-filer) av Workspace-projekt att hash-koda datafälten som är märkta som känsliga. Du kan fortfarande analysera dessa fält i Workspace, men om du försöker skicka ett e-postmeddelande eller på annat sätt dela ett projekt visas de blockerade fälten som tomma i PDF- eller CSV-filen.
+
+Om det finns datafält som är märkta som känsliga i [!UICONTROL Data View], är alternativet att markera och kopiera data från skärmen begränsat för alla data i [!UICONTROL Data View].
 
 ## Vanliga frågor och svar {#faq}
 
