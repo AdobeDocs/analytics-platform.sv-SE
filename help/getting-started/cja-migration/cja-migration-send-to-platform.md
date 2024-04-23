@@ -6,9 +6,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 21d77f06595993172460b724dc7991cb9a5a02a8
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Processen för att skicka data till Experience Platform för varje migreringsmet
 
 | Migreringsmetod | Process för att skicka data till plattformen |
 |---------|----------|
-| Ny implementering av Web SDK | [Importera data via Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) |
-| Migrera din Adobe Analytics-implementering till Web SDK | Om du använder taggtillägget Analytics: [Migrera från Adobe Analytics-taggtillägget till Web SDK-taggtillägget](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)<p>eller</p><p>Om du använder AppMeasurement: [Migrera från AppMeasurement till Web SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) |
-| Konfigurera din befintliga Adobe Analytics Web SDK-implementering för att skicka data till Customer Journey Analytics | [Konfigurera en datastream](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) in [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk) |
+| Ny implementering av Web SDK | Eftersom det här är en ny implementering av Web SDK måste du följa alla steg som beskrivs i [Importera data via Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md). |
+| Migrera din Adobe Analytics-implementering till Web SDK | Stegen för migrering till Adobe Analytics Web SDK skiljer sig åt beroende på om din nuvarande implementering är Analytics-tillägget eller AppMeasurementet. <p>Om du använder taggtillägget Analytics: [Migrera från Adobe Analytics-taggtillägget till Web SDK-taggtillägget](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)</p><p>eller</p><p>Om du använder AppMeasurement: [Migrera från AppMeasurement till Web SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) |
+| Konfigurera din befintliga Adobe Analytics Web SDK-implementering för att skicka data till Customer Journey Analytics | Eftersom Adobe Analytics-implementeringen redan använder Web SDK behöver du bara [konfigurera ett datastream](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream). Du kan ignorera det andra avsnittet i [Importera data via Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk). |
 | Källanslutning för analyser | [Importera och använda data från traditionella Adobe Analytics](/help/data-ingestion/analytics.md) |
 
 ## Mappa sedan data till XDM-schemat
