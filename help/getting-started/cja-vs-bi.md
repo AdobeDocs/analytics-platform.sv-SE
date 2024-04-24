@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Customer Journey Analytics använder en kraftfull egen arkitektur som distribuer
 
 * **Snabb användning av komplex målning och komplexa filter**: Rapporteringsmotorn arbetar med delvis ordnade hierarkiska datauppsättningar (till exempel person -> sessioner -> händelser). Alla data för ett objekt på den översta nivån (enskilda profiler) finns på en enda bearbetningsnod för korrekta resultat. Den här partitioneringen gör att du snabbt kan använda komplexa målningar och filter. Komplexa åtgärder som sessionisering, attribuering, tillståndskänslig beständighet för dataattribut och komplexa datamanipuleringsalternativ utförs i stor skala med snabb rapporteringstid. I BI-världen kräver dessa typer av åtgärder vanligtvis att nya OLAP-kuber skapas för varje användningsfall. Rapporteringsmotorn i Customer Journey Analytics ger ohanterlig åtkomst till hela datauppsättningen för varje fråga, vilket resulterar i fullständigt korrelerade data utan att det krävs någon kuggning i förväg.
 
-* **Effektiv fråga om komplexa dataströmmar**: En av de största skillnaderna i rapporteringsmotorn jämfört med traditionella SQL- och NoSQL-databaser är möjligheten att fastställa predikat baserat på sekvensorienterade relationer på en grundläggande nivå. Dessa grundläggande frågeåtgärder kan titta på postströmmen, som består av många sammanflätade (och till och med kapslade) sekvenser. De utför en fråga mot alla dessa sammanflätade dataströmmar med samma effektivitet som en enda sammanhängande sekvensåtgärd.
+* **Effektiv fråga om komplexa datastreams**: En av de största skillnaderna i rapporteringsmotorn jämfört med traditionella SQL- och NoSQL-databaser är möjligheten att fastställa predikat baserat på sekvensorienterade relationer på en grundläggande nivå. Dessa grundläggande frågeåtgärder kan titta på postströmmen, som består av många sammanflätade (och till och med kapslade) sekvenser. De utför en fråga mot alla dessa sammanflätade dataströmmar med samma effektivitet som en enda sammanhängande sekvensåtgärd.
 
 * **Utformad för att snabbt svara på stora frågor**: Rapporteringsmotorn har inte samma allmänna syfte som traditionella big data-system. Den är dock särskilt utformad för att svara på frågor som omfattar miljontals eller till och med miljarder poster (händelsedata/upplevelsehändelser), vanligtvis på mindre än en sekund. Till skillnad från andra stora datasystem gör den inte detta genom att sampla data eller genom att förberäkna svaren på alla frågor som du tror att du kan ställa. I stället kan de snabbt beräkna svaren för att ge stöd åt interaktiva frågetillfällen. Denna specifika utformning av rapportmotorn för Customer Journey Analytics underlättar för informationen att vara lätt tillgänglig och snabbt för pågående analyser och undersökningar, vilket gör att ni kan få insikter och förståelse för kundresor.
 
