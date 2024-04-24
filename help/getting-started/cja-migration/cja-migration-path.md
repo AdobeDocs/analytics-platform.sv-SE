@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 6d4fdb464775967074547f8401de679f181d29d7
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '1965'
 ht-degree: 0%
 
 ---
@@ -137,16 +137,6 @@ Följande migreringsväg är tillgänglig för organisationer som har implemente
 
 +++
 
-## Mappa sedan data till XDM-schemat
+## Skicka sedan data till Adobe Experience Platform
 
-När du har skickat data till Experience Platform genom att följa länkarna i tabellen ovan kan du behöva [mappa data till XDM-schemat](/help/getting-started/cja-migration/cja-migration-xdm.md), beroende på vilken implementeringsmetod du väljer.
-
-Följande implementeringsmetoder kräver att du mappar data till XDM-schemat:
-
-* Migrera från Adobe Analytics-taggtillägget till Web SDK-taggtillägget
-
-* Konfigurera din befintliga Adobe Analytics Web SDK-implementering för att skicka data till Customer Journey Analytics
-
-Om du väljer att göra en ny implementering av Experience Platform Web SDK krävs ingen mappning eftersom du redan [konfigurera ett nytt XDM-schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) som en del av den nya implementeringen.
-
-Om du väljer att använda Analytics Source Connector för din migrering behövs ingen mappning eftersom Analytics Source Connector använder ditt befintliga Adobe Analytics-schema i stället för XDM-schemat.
+Lär dig hur du använder informationen ovan för att välja en migreringsväg [skicka data till Adobe Experience Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md) beroende på vilken migreringsväg du väljer.

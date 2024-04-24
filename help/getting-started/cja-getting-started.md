@@ -5,9 +5,9 @@ exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 366fc232fad278f6a6448d68cda6d0e1f05718f3
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '742'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Customer Journey Analytics är tillgängligt för kunder som
 | **Steg 4: Skapa datavyer** | En datavy är en&quot;filtrerad&quot; vy av data. Du kan skapa olika datavyer för samma anslutning, med olika inställningar för tidsgräns för besök, attribuering osv. Du kan skapa flera datavyer för en enskild datauppsättning.<br>Se [Skapa en datavy](/help/data-views/create-dataview.md). |
 | **Steg 5: Porten för API-användningen för rapportering**</br> Gäller endast vid migrering från Adobe Analytics | Rapporterings-API:t för Customer Journey Analytics har samma format, men använder en annan slutpunkt. Skicka API-användningen för rapportering från Adobe Analytics API till Customer Journey Analytics. |
 | **Steg 6: Konto för datafeeds och användningsfall för Data Warehouse**</br> Gäller endast vid migrering från Adobe Analytics | Bestäm hur du ska använda de exportalternativ som är tillgängliga i Customer Journey Analytics för att på bästa sätt återge de dataflöden och Data Warehouse som du använde i Adobe Analytics. <!-- link to docs Rob is creating --> |
-| **Steg 7: Migrera projekt och komponenter**</br> Gäller endast vid migrering från Adobe Analytics | Med komponentmigreringsområdet i Adobe Analytics kan du migrera projekt och tillhörande komponenter från Adobe Analytics till Customer Journey Analytics.<p>Mer information om hur du replikerar dina Adobe Analytics-projekt i Customer Journey Analytics, samt hur du mappar projektkomponenter från en Adobe Analytics-rapportsvit till datavyn för Customer Journey Analytics, finns i [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html).</p> |
+| **Steg 7: Migrera projekt och komponenter**</br> Gäller endast vid migrering från Adobe Analytics | Med komponentmigreringsområdet i Adobe Analytics kan du migrera projekt och tillhörande komponenter från Adobe Analytics till Customer Journey Analytics.<p>Migreringsprocessen omfattar:</p><ul><li>Återskapande av Adobe Analytics-projekt i Customer Journey Analytics.</li><li>Mappa mått och mätvärden från Adobe Analytics rapporteringsprogram till mått och mätvärden i datavyer i Customer Journey Analytics.</li></ul><p>Innan du påbörjar migreringen måste du [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).</p><p>När du har gjort alla förberedelser du behöver kan du [Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).</p> |
 | **Steg 8: Planera användarintroduktion** | Precis som i Adobe Analytics är Analysis Workspace det viktigaste användarvänliga verktyget i Customer Journey Analytics. Men det finns vissa viktiga skillnader mellan Analysis Workspace i Customer Journey Analytics som användare måste vara medvetna om.<p>Du bör ge dina användare god tid (3-6 månader) att bekanta sig med Analysis Workspace viktigaste skillnader i Customer Journey Analytics.</p><p>Mer information om några av de viktigaste skillnaderna mellan Adobe Analytics och Customer Journey Analytics finns i [Användarhandbok för Adobe Analytics](/help/getting-started/aa-to-cja-user.md).</p> |
 | **Steg 9: Rapportera om dina flerkanalsdata i arbetsytan** | När du har skapat anslutningar och datavyer kan du analysera de data du har tagit med hjälp av kraften och flexibiliteten i Analysis Workspace.<br>Se [Utför grundläggande analys](/help/analysis-workspace/perform-basic-analysis.md) och [Avancerad analys](/help/analysis-workspace/perform-adv-analysis.md). |
 
