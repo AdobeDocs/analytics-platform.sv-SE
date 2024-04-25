@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 2d35e49ca9afe37ed53d7c5da5aafd31dd2da632
+source-git-commit: 7d17ef31053bbf0d480bfa923fc961aeba4fc15e
 workflow-type: tm+mt
 source-wordcount: '1965'
 ht-degree: 0%
@@ -109,13 +109,21 @@ Följande migreringsvägar är tillgängliga för organisationer som har impleme
 
 +++
 
-+++Migrera Adobe Analytics till Web SDK | Fördelar | Nackdelar | |—|—| | <ul><li>Gör att du kan gå över till Web SDK utan att påverka dina befintliga Adobe Analytics-rapporter.</li><li>Bevarar regler och dataelement som redan konfigurerats i din Adobe Analytics-implementering (för organisationer som använder Analytics-tillägget).</li><li>Ger flexibilitet att skapa ett XDM-schema för din organisation vid ett senare tillfälle: ett flexibelt schema för att definiera de fält du behöver och endast de fält som är relevanta.</br>Adobe Analytics Experience Event Field-gruppen i Adobe Experience Platform krävs inte. <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>Inte beroende av Adobe Analytics nomenklatur (prop, eVar, event osv.)</li><li>Inga teckenbegränsningar (100 tecken för props)</li><li>Högpresterande rapportering och datatillgänglighet eftersom Adobe Experience Platform är byggt för [användningsexempel för personalisering i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Framtidssäkra (får alla de senaste funktionerna)</li><li>Konsolidera taggar för Adobe Experience Cloud datainsamling mellan andra Experience Cloud-produkter (AJO, RTCDP och så vidare)</li><li>[Enhets-ID:n från första part](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) för exaktare besöksidentifiering</li></ul> | <ul><li>Måste överensstämma med ett XDM-schema vid någon tidpunkt i framtiden med hjälp av datastream-mappning.</li><li>Indrar en del tekniska skulder. Till exempel kan äldre AppMeasurement- eller Analytics-tilläggskod finnas kvar. </li></ul> |
++++Migrera Adobe Analytics till Web SDK
+
+| Fördelar | Nackdelar |
+|----------|---------|
+| <ul><li>Gör att du kan gå över till Web SDK utan att påverka dina befintliga Adobe Analytics-rapporter.</li><li>Bevarar regler och dataelement som redan konfigurerats i din Adobe Analytics-implementering (för organisationer som använder Analytics-tillägget).</li><li>Ger flexibilitet att skapa ett XDM-schema för din organisation vid ett senare tillfälle: ett flexibelt schema för att definiera de fält du behöver och endast de fält som är relevanta.</br>Adobe Analytics Experience Event Field-gruppen i Adobe Experience Platform krävs inte. <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>Inte beroende av Adobe Analytics nomenklatur (prop, eVar, event osv.)</li><li>Inga teckenbegränsningar (100 tecken för props)</li><li>Högpresterande rapportering och datatillgänglighet eftersom Adobe Experience Platform är byggt för [användningsexempel för personalisering i realtid](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Framtidssäkra (får alla de senaste funktionerna)</li><li>Konsolidera taggar för Adobe Experience Cloud datainsamling mellan andra Experience Cloud-produkter (AJO, RTCDP och så vidare)</li><li>[Enhets-ID:n från första part](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) för exaktare besöksidentifiering</li></ul> | <ul><li>Måste överensstämma med ett XDM-schema vid någon tidpunkt i framtiden med hjälp av datastream-mappning.</li><li>Indrar en del tekniska skulder. Till exempel kan äldre AppMeasurement- eller Analytics-tilläggskod finnas kvar. </li></ul> |
 
 {style="table-layout:auto"}
 
 +++
 
-+++Använd Analytics Source Connector | Fördelar | Nackdelar | |—|—| | <ul><li>Minst tidskrävande och krävande migreringsväg. <p>Data migreras snabbt till Customer Journey Analytics med minimal investering</p></li></ul> | <ul><li>Data skickas inte till Edge Network och kan inte delas med andra Adobe Experience Platform-program. De begränsas endast till Customer Journey Analytics<li>Svårt att gå över till Web SDK i framtiden</li><li>Använder fältgruppen Analytics Experience Event i ditt schema.</br>Den här fältgruppen lägger till många Adobe Analytics-händelser som inte behövs i ditt Customer Journey Analytics-schema.  Detta kan leda till ett mer rörigt, komplext schema än vad som annars behövs för Customer Journey Analytics.</li><li>Högsta nivån av [latens](/help/admin/guardrails.md#latencies) alla implementeringsmetoder</li></ul> |
++++Använd Analytics Source Connector
+
+| Fördelar | Nackdelar |
+|----------|---------|
+| <ul><li>Minst tidskrävande och krävande migreringsväg. <p>Data migreras snabbt till Customer Journey Analytics med minimal investering</p></li></ul> | <ul><li>Data skickas inte till Edge Network och kan inte delas med andra Adobe Experience Platform-program. De begränsas endast till Customer Journey Analytics<li>Svårt att gå över till Web SDK i framtiden</li><li>Använder fältgruppen Analytics Experience Event i ditt schema.</br>Den här fältgruppen lägger till många Adobe Analytics-händelser som inte behövs i ditt Customer Journey Analytics-schema.  Detta kan leda till ett mer rörigt, komplext schema än vad som annars behövs för Customer Journey Analytics.</li><li>Högsta nivån av [latens](/help/admin/guardrails.md#latencies) alla implementeringsmetoder</li></ul> |
 
 {style="table-layout:auto"}
 
