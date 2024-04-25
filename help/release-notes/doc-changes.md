@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3ca28d9c9f1c6a9e14ce4c9080bd180a5699ad5b
+source-git-commit: c55daff7e2d96c96b985b0ec9609eb4db0370a45
 workflow-type: tm+mt
-source-wordcount: '3270'
+source-wordcount: '3355'
 ht-degree: 6%
 
 ---
@@ -22,8 +22,11 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | **April 2024** | |
 | Prognostiserade statistiska tekniker | Lagt till artikel som beskriver [statistiska metoder som används i prognostjänsten](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Tillagd information som rekommenderar fullständig tabellexport för höga kardinalitetsmått | Punkter som lagts till i [Bästa tillvägagångssätt för höga kardinalitetsmått](/help/components/dimensions/high-cardinality.md) att rekommendera att använda fullständig tabellexport för att få stora kardinalitetsmått. |
+| Lagt till dokumentation om intelligenta bildtexter i mobilstyrkort | [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) kan hjälpa icke-analytiker att förstå sina data bättre utan hjälp av analytiker. |
+| Dokumentation för nya funktioner i Adobe Product Analytics | <ul><li>[Funktionsmatris](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Förbättrat [kvarhållningsfrekvenser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Förbättrade insikter i tratt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Jämför händelser i ett enda tratt-steg</li></ul> |
 | **Mars 2024** | |
 | Användningsinformation om kolumnen Används i är tillgänglig först från och med september 2023. | Tydligare användningsinformation om **Används i** kolumn på [landningssida för projekt](/help/getting-started/landing.md) går tillbaka endast till september 2023. |
+| Lagt till dokumentation om behörighetsförbättringar för komponenter i arbetsytan som bara är till för projekt | Om du delar ett projekt med andra användare kan dessa användare redigera [snabbfilter](/help/components/filters/quick-filters.md) och andra komponenter som bara är för projekt och som är inbäddade i det delade projektet. |
 | **Februari 2024** | |
 | Uppdateringar av projektdelningsdokumentation | Lagt till information om hur [visa projekt som delas med dig](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Effektivare information om [dela enskilda eller flera projekt](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Lagt till behörighetskrav för överföring av filer till Azure SAS och Azure RBAC när molnexportplatser konfigureras | Exakta behörighetskrav för överföring av filer till Azure SAS och Azure RBAC har lagts till när [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). |

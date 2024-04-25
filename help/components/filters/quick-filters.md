@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,7 @@ Tänk på följande när du skapar snabbfilter:
 * Snabbfilter gäller bara för det projekt där de skapades. De är inte tillgängliga i andra projekt och kan inte delas med andra användare.
 * Högst tre regler tillåts.
 * Kapslade behållare eller sekventiella regler stöds inte.
+* Om du delar ett projekt med andra användare kan dessa användare redigera snabbfilter och andra komponenter som bara är till för projektet och som är inbäddade i det delade projektet.
 
 I följande video visas hur du använder snabbfilter. (Obs! I den här videon används termen&quot;snabbsegment&quot; i stället för&quot;snabbfilter&quot;. Funktionen är dock densamma.)
 
