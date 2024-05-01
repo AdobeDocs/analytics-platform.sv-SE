@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 4ab43b345adabb1add21294f5bf1f7858d08a11a
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 7%
+source-wordcount: '1081'
+ht-degree: 8%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 7%
    + [2022 års utgåvor](../release-notes/2022.md)
    + [2021 års utgåvor](../release-notes/2021.md)
    + [2020-versioner](../release-notes/2020.md)
-   + [Customer Journey Analytics](../release-notes/releases.md)
-   + [Dokumentationsuppdateringar för Customer Journey Analytics](../release-notes/doc-changes.md)
+   + [Strategi för funktionsreleaser](../release-notes/releases.md)
+   + [Dokumentationsuppdateringar](../release-notes/doc-changes.md)
 
 + Komma igång {#cja-overview}
    + [Customer Journey Analytics - översikt](../getting-started/cja-overview.md)
@@ -358,15 +358,6 @@ ht-degree: 7%
    + Härledda fält {#derived-fields}
       + [Använd härledda fält för att rapportera mål](../use-cases/goals-using-derived-fields.md)
 
-
-+ Administration {#cja-admin}
-   + [Guardrails](../admin/guardrails.md)
-   + [Åtkomstkontroll](../admin/cja-access-control.md)
-   + [Visa och hantera användning](../admin/estimate-usage.md)
-   + [Borttagningskonsekvenser](../admin/cja-deletion.md)
-   + [Optimera Customer Journey Analytics prestanda](../admin/optimizing-performance.md)
-   + [IP-adresser](../admin/ip-addresses.md)
-
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
 
@@ -376,8 +367,14 @@ ht-degree: 7%
    + [Brist på behörigheter](../troubleshooting/lack-of-permissions.md)
 
 + Tekniska anteckningar {#technotes}
-   + [datacenter i Customer Journey Analytics](../technotes/cja-datacenters.md)
-
-+ [Customer Journey Analytics ordlista](../getting-started/cja-glossary.md)
+   + [Åtkomstkontroll](../technotes/access-control.md)
+   + [Datacenter](../technotes/data-centers.md)
+   + [Borttagningskonsekvenser](../technotes/deletion.md)
+   + [Domäner](../technotes/domains.md)
+   + [Ordlista](../technotes/glossary.md)
+   + [Guardrails](../technotes/guardrails.md)
+   + [IP-adresser](../technotes/ip-addresses.md)
+   + [Optimera Customer Journey Analytics prestanda](../technotes/optimizing-performance.md)
+   + [Visa och hantera användning](../technotes/estimate-usage.md)
 
 + [CUSTOMER JOURNEY ANALYTICS API](https://developer.adobe.com/cja-apis/docs/)

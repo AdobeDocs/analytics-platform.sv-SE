@@ -6,7 +6,8 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 98d99dd3a25b8e6f9d9366dd2f4ff44ca132ee9e
+exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 0%
@@ -43,7 +44,7 @@ Om du vill använda den här funktionen måste du:
 
 * Använd förfallodatum för ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. The [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för inloggningsuppgifter eller ej utgångsdatum.
 
-Se [Åtkomstkontroll](../admin/cja-access-control.md) i administrationsdelen för Customer Journey Analytics för ytterligare information.
+Se [Åtkomstkontroll](../technotes/access-control.md) i administrationsdelen för Customer Journey Analytics för ytterligare information.
 
 
 ## Användning

@@ -4,7 +4,7 @@ description: Lär dig hur du visar och hanterar Customer Journey Analytics grans
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Det här avsnittet handlar om granskningsloggar i Customer Journey Analytics, in
 
 När funktionen är aktiverad för din organisation samlas granskningsloggarna automatiskt in när aktiviteten inträffar. Du behöver inte aktivera loggsamling manuellt.
 
-För att kunna visa och exportera granskningsloggar måste du ha fått **[!UICONTROL Audit Logs Access]** behörighet för åtkomstkontroll i Adobe Console. Läs mer om hur du hanterar enskilda behörigheter för Customer Journey Analytics-funktioner i [dokumentation om åtkomstkontroll](../admin/cja-access-control.md).
+För att kunna visa och exportera granskningsloggar måste du ha fått **[!UICONTROL Audit Logs Access]** behörighet för åtkomstkontroll i Adobe Console. Läs mer om hur du hanterar enskilda behörigheter för Customer Journey Analytics-funktioner i [dokumentation om åtkomstkontroll](../technotes/access-control.md).
 
 ## Visa granskningsloggen i användargränssnittet
 

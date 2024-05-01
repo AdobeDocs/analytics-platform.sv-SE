@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2328'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Det beror på ditt användningssätt, så samarbeta med ditt Adobe-kontoteam. De
 
 ## 9. Beräkna anslutningsstorlek {#estimate-size}
 
-Se [Beräkna och hantera användningen](/help/admin/estimate-usage.md).
+Se [Beräkna och hantera användningen](/help/technotes/estimate-usage.md).
 
 ## 10. Om användningsövertäckning {#overage}
 
@@ -235,9 +235,9 @@ Läs mer om [konsekvenser av datauppsättning och borttagning av anslutning](htt
 
 ## 12. Regional datainsamling
 
-Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe och andra lösningar sker så nära besökarna som möjligt. När data har samlats in regionalt på ett datainsamlingscenter (DCC, även kallat Edge-plats, en del av Platform Edge-nätverket) vidarebefordras de via en säker anslutning till relevanta lösningar baserat på konfigurationen av ditt datastam och/eller din händelsevidarebefordran.
+Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe och andra lösningar sker så nära besökarna som möjligt. När data har samlats in regionalt på ett datainsamlingscenter (DCC, även kallat Edge-plats, en del av Platform Edge Network) vidarebefordras de via en säker anslutning till de relevanta lösningarna baserat på konfigurationen av din datastam och/eller händelsevidarebefordran.
 
-![Dataflöde med Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
+![Dataflöde med Edge Network](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 I den regionala datainsamlingsprocessen används följande steg:
 

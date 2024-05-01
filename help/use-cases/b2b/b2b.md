@@ -5,7 +5,7 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b4c77c3ef4d57aac6e914a2373b6a9169f4872df
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Det här B2B-användningsexemplet visar hur du anger data på kontonivå i stäl
 * Hur fungerar det här kontot tillsammans med en viss marknadsföringskampanj jämfört med ett annat konto?
 * Beter sig vissa roller (t.ex. IT-chef) på ett konto annorlunda än samma roll på ett annat konto?
 
-Du uppnår allt detta genom att lägga in kontonivåinformationen som en [sökning](/help/getting-started/cja-glossary.md) datauppsättning.
+Du uppnår allt detta genom att lägga in kontonivåinformationen som en [sökning](/help/technotes/glossary.md) datauppsättning.
 
 Du skapar först ett uppslagsschema i Adobe Experience Platform och skapar sedan en uppslagstabelldataset genom att importera CSV-baserade kontonivådata. Sedan fortsätter du att skapa en anslutning i Customer Journey Analytics (Customer Journey Analytics) som kombinerar olika datauppsättningar, inklusive den sökning som du har skapat. Därefter skapar du en datavy och kan till slut använda alla dessa data i Workspace.
 
@@ -32,7 +32,7 @@ Du skapar först ett uppslagsschema i Adobe Experience Platform och skapar sedan
 
 ## 1. Skapa sökschema (Experience Platform)
 
-Skapa ett eget schema för [sökning](/help/getting-started/cja-glossary.md) tabellen ser till att den datauppsättning som används är tillgänglig i Customer Journey Analytics med rätt inställningar (posttyp). Bästa praxis är att [skapa en anpassad schemaklass](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) anropas för&quot;Sök efter&quot;, tom för alla element, som kan återanvändas för alla uppslagstabeller.
+Skapa ett eget schema för [sökning](/help/technotes/glossary.md) tabellen ser till att den datauppsättning som används är tillgänglig i Customer Journey Analytics med rätt inställningar (posttyp). Bästa praxis är att [skapa en anpassad schemaklass](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) anropas för&quot;Sök efter&quot;, tom för alla element, som kan återanvändas för alla uppslagstabeller.
 
 ![Dialogrutan Skapa ny klass.](../assets/create-new-class.png)
 

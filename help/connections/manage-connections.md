@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2740'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ När du tar bort en anslutning visas en **[!UICONTROL Delete connection]** visas
 
 Välj **[!UICONTROL Continue]** för att ta bort anslutningen.
 
-Se [Ta bort konsekvenser](/help/admin/cja-deletion.md) för mer information om konsekvenserna av att ta bort en anslutning.
+Se [Borttagningskonsekvenser](/help/technotes/deletion.md) för mer information om hur du tar bort en anslutning.
 
 
 ### Skapa en datavy

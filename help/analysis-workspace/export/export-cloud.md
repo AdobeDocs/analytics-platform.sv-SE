@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: cf9920eb45803ff105e0d411475ee3df2a676cd1
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2205'
 ht-degree: 1%
 
 ---
@@ -144,13 +144,13 @@ Se till att tabellerna, miljön och behörigheterna uppfyller följande krav:
 
 * **Tabeller:** Alla tabeller måste innehålla minst en dimension i raden och ett mått i varje kolumn för att kunna hanteras med en fullständig tabellexport.
 
-* **Environment:** Administratörer bör se till att IP-adresserna som anges i [IP-adresser som används av Customer Journey Analytics](/help/admin/ip-addresses.md) ingår i brandväggens tillåtelselista.
+* **Environment:** Se till att [IP-adresser](/help/technotes/ip-addresses.md) och [Domäner](/help/technotes/domains.md) som används av Customer Journey Analytics är tillåtna genom organisationens brandvägg.
 
-* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har [!UICONTROL **Fullständig tabellexport**] behörighet som tilldelats för att exportera fullständiga tabeller. Mer information om hur du tilldelar en behörighet till en produktprofil i Admin Console finns i [Customer Journey Analytics tillstånd i Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Åtkomstkontroll för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har [!UICONTROL **Fullständig tabellexport**] behörighet som tilldelats för att exportera fullständiga tabeller. Mer information om hur du tilldelar en behörighet till en produktprofil i Admin Console finns i [Customer Journey Analytics tillstånd i Admin Console](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
-  >  Användare som har tilldelats [Produktadministratörsroll](/help/admin/cja-access-control.md#product-admin-role) har alltid åtkomst till att exportera fullständiga tabeller. Dessa användare behöver inte tilldelas [!UICONTROL **Fullständig tabellexport**] behörighet.
+  >  Användare som har tilldelats [Produktadministratörsroll](/help/technotes/access-control.md#product-admin-role) har alltid åtkomst till att exportera fullständiga tabeller. Dessa användare behöver inte tilldelas [!UICONTROL **Fullständig tabellexport**] behörighet.
 
 
 ### Funktioner som inte stöds

@@ -1,16 +1,16 @@
 ---
 description: Beskriver den kontinuerliga funktionsreleasestrategin för Customer Journey Analytics
-title: Funktionsreleaser för Customer Journey Analytics
+title: Customer Journey Analytics strategi för funktionsreleaser
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
 
-# Funktionsreleaser för Customer Journey Analytics
+# Customer Journey Analytics strategi för funktionsreleaser
 
 Customer Journey Analytics-releaser fungerar enligt en kontinuerlig leveransmodell som möjliggör en skalbar, stegvis driftsättning av funktioner.
 
@@ -20,17 +20,17 @@ Customer Journey Analytics-releaser fungerar enligt en kontinuerlig leveransmode
 
 * **Begränsad testning**: En stegvis release börjar med testning av användare i Adobe. Den görs sedan tillgänglig för en liten grupp kundkonton för att säkerställa att funktionen uppfyller kundernas behov och förväntningar.
 
-* **Början av utrullning**: Utrullning av en fasversion börjar med den begränsade testfasen. Versionen skalas sedan från 0 % till 100 % för kunder under ett par månader. Utfasad utrullning sker på organisationsnivå, så att alla berättigade användare i en organisation får samma upplevelse.
+* **Början av utrullning**: Utrullning av en fasversion börjar med den begränsade testfasen. Versionen skalas sedan från 0 % till 100 % för kunder under ett par månader. Utfasad utrullning sker på Experience Cloud-organisationsnivå, så att alla berättigade användare i en organisation får samma upplevelse.
 
-* **Allmän tillgänglighet (GA)**: Funktionen är tillgänglig för 100 % av berättigade Experience Cloud-organisationer och har släppts fullständigt.
+* **Allmän tillgänglighet (GA)**: Funktionen är tillgänglig för 100 % av berättigade organisationer i Experience Cloud och funktionen är klar.
 
 För varje funktionsversion kan tidslinjen från RTP till GA variera. Målet är att hålla releaserna korta, så att en funktion blir GA inom två månader från lanseringsstarten (RTP).
 
 ## Funktionsflaggor
 
-Funktionsflaggor används för att styra synligheten för nya funktioner under lanseringen. Adobe rekommenderar att du lägger till `app.launchdarkly.com` till er brandvägg [tillåtelselista](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html) för en optimal upplevelse under lanseringen. Kort efter att GA har nåtts tas flaggan bort.
+Funktionsflaggor används för att styra synligheten för nya funktioner under lanseringen. Adobe rekommenderar att man tillåter `app.launchdarkly.com` genom er brandvägg för att få en optimal upplevelse under releaserna. Dessa flaggor tas bort när en funktion har släppts till alla. Se [Domäner som används av Customer Journey Analytics](../technotes/domains.md) för mer information.
 
-Du kan när som helst visa flaggor för den aktiva funktionen under **Hjälp > Om arbetsyta > Aktiva funktionsflaggor**.
+Du kan när som helst visa flaggor för den aktiva funktionen under **Hjälp > Om arbetsyta > Flaggor för aktiva funktioner**.
 
 ## Fördelar
 

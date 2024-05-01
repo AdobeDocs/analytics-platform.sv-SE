@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c55daff7e2d96c96b985b0ec9609eb4db0370a45
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '3355'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Uppdateringar av projektdelningsdokumentation | Lagt till information om hur [visa projekt som delas med dig](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Effektivare information om [dela enskilda eller flera projekt](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Lagt till behörighetskrav för överföring av filer till Azure SAS och Azure RBAC när molnexportplatser konfigureras | Exakta behörighetskrav för överföring av filer till Azure SAS och Azure RBAC har lagts till när [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). |
 | Lagt till behörighetskrav för att överföra filer till Amazon S3 Role ARN- och GCP-bucket när du konfigurerar molnexportplatser | Exakta behörighetskrav för överföring av filer till Amazon S3 Role ARN och Google Cloud Platform har lagts till när [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). |
-| Klarade att produktadministratörer alltid har tillgång till fullständiga tabeller för export | Gör följande ändringar för att förtydliga att användare som har tilldelats rollen Produktadministratör har åtkomst till att exportera fullständiga tabeller från Analysis Workspace som standard: <ul><li>En ny punkt har lagts till i [Standardbehörigheter för produktadministratör](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Lade till en anteckning under [minimikrav för export av fullständiga tabeller till molnet](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
+| Klarade att produktadministratörer alltid har tillgång till fullständiga tabeller för export | Gör följande ändringar för att förtydliga att användare som har tilldelats rollen Produktadministratör har åtkomst till att exportera fullständiga tabeller från Analysis Workspace som standard: <ul><li>En ny punkt har lagts till i [Standardbehörigheter för produktadministratör](/help/technotes/access-control.md#product-admin-default-permissions).</li><li>Lade till en anteckning under [minimikrav för export av fullständiga tabeller till molnet](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | Det klargörs att segment återskapas vid komponentmigrering från Adobe Analytics | I [Användarhandbok för Adobe Analytics](/help/getting-started/aa-to-cja-user.md), klargjorde att segment automatiskt återskapas i Adobe Analytics som en del av komponentmigreringsprocessen och inte behöver återskapas manuellt. |
 | Information om överhoppad post | Lagt till dokumentation om funktionen för överhoppad postinformation i Anslutningar. Se [Anslutningsinformation](../connections/manage-connections.md#connection-details) för mer information. |
 | **Januari 2024** | |
@@ -39,7 +39,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Dokumentationen för att lägga till konton och platser vid export av fullständiga register har uppdaterats | Dokumentationen har uppdaterats för att återspegla mindre gränssnittsuppdateringar när ett nytt konto eller en ny plats konfigureras när [exportera hela tabeller från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>En ny [!UICONTROL **Lägg till konto**] finns nu i [!UICONTROL **Konto**] listruta. The [!UICONTROL **Lägg till plats**] som tidigare var tillgängligt som en knapp bredvid [!UICONTROL **Platsnamn**] rullgardinsmenyn finns nu tillgänglig på själva menyn. |
 | Ny information om komponentmigrering vid migrering från Adobe Analytics | Lagt till information i [Utveckling från Adobe Analytics](/help/getting-started/aa-to-cja.md) som refererar till det nya [komponentmigrering](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) funktioner som beskrivs i Adobe Analytics Admin Guide. |
 | Klarade att viss information endast är tillgänglig för administratörer | Tillagd information om att kolumnerna &quot;Senast använd&quot; och &quot;Används i&quot; beskrivs i [Beräknat måttansvarig](/help/components/calc-metrics/cm-workflow/cm-manager.md) och [Filterhantering](/help/components/filters/manage-filters.md) är bara tillgängliga för systemadministratörer. |
-| Behörigheter som krävs för att exportera datauppsättningar | Ytterligare information som förklarar [behörigheter krävs](/help/admin/cja-access-control.md) för att exportera datauppsättningar till molnmål. |
+| Behörigheter som krävs för att exportera datauppsättningar | Ytterligare information som förklarar [behörigheter krävs](/help/technotes/access-control.md) för att exportera datauppsättningar till molnmål. |
 | Hantera anslutningar | Uppdaterade [Hantera anslutningar](../connections/manage-connections.md) artikel, baserat på kundernas feedback. |
 | Härledda fält | Tillagd sammanfattning av funktionen [begränsningar](/help/data-views/derived-fields/derived-fields.md#limitations) och förklaringar av hur man avgör antalet [operatorer](/help/data-views/derived-fields/derived-fields.md#operators) används i en funktion. |
 
@@ -51,8 +51,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **December 2023** | |
-| Datacenter | En artikel på Customer Journey Analytics har lagts till [värdplatser](../technotes/cja-datacenters.md). |
-| Guardrails | Lagt till artikellista Customer Journey Analytics [skyddsräcken](../admin/guardrails.md). |
+| Datacenter | En artikel på Customer Journey Analytics har lagts till [värdplatser](../technotes/data-centers.md). |
+| Guardrails | Lagt till artikellista Customer Journey Analytics [skyddsräcken](../technotes/guardrails.md). |
 | Uppdateringar av valutakonvertering | Tydlig dokumentation om hur man [konfigurera valutakonvertering](/help/data-views/component-settings/format.md). |
 | Uppdateringar av dokumentationen för avvikelseidentifiering | Dokumentationen för avvikelseidentifiering fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [Analysidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) har flyttats direkt under Analysis Workspace.</li></ul> |
 | **Oktober 2023** | |
@@ -90,7 +90,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Deep Linking-dokumentation (mobilapp) | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Dok på &quot;Välj datavy från cell&quot; i Report Builder | Med den här funktionen kan användare välja datavyn för ett datablock från en cell. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
 | Dokumentation för den uppdaterade startskärmen för kontrollpanelsappen för Analytics (mobilapp) | På den nya uppdaterade startskärmen kan du visa alla dina styrkort i en konsoliderad styrkortslista. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
-| Optimeringsuppdatering | Uppdaterad artikel om [Optimera prestanda för Customer Journey Analytics](/help/admin/optimizing-performance.md) |
+| Optimeringsuppdatering | Uppdaterad artikel om [Optimera prestanda för Customer Journey Analytics](/help/technotes/optimizing-performance.md) |
 | Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
 | Skapa projekt | Skapade en ny artikel som förklarar i detalj hur du [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) i Analysis Workspace. |
 | Sortera komponenter i den vänstra listen | Lagt till information om hur du sorterar komponentlistan i den vänstra listen.Se avsnittet Sök, filtrera och sortera komponentlistan i [Komponenter - översikt](/help/components/overview.md). |
@@ -133,7 +133,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Datum | Uppdatera beskrivning |
 | --- | --- |
 | **December 2022** |  |
-| 16 december 2022 | Nytt ämne [mäta och hantera dataanvändningen i Customer Journey Analytics](/help/admin/estimate-usage.md). |
+| 16 december 2022 | Nytt ämne [mäta och hantera dataanvändningen i Customer Journey Analytics](/help/technotes/estimate-usage.md). |
 | **Oktober 2022** | |
 | Oktober 2022 | Nytt ämne [lösenordsskydd för schemalagda projekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). Den här funktionen har stöd för [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Nytt ämne [Kundhanterade nycklar](/help/privacy/cmk.md). Den här funktionen har stöd för [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -148,7 +148,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | September 2022 | Nytt ämne [Panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md) i Workspace. |
 | **Augusti 2022** | |
 | Augusti 2022 | Adobe Experience Platform artikel om [Stöd för olika regioner för Analytics-källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
-| Augusti 2022 | Avsevärt uppdaterad artikel om [Åtkomstkontroll för Customer Journey Analytics](/help/admin/cja-access-control.md). |
+| Augusti 2022 | Avsevärt uppdaterad artikel om [Åtkomstkontroll för Customer Journey Analytics](/help/technotes/access-control.md). |
 | Augusti 2022 | Ny artikel på [Customer Journey Analytics stöd för dataförvaltningsrubriker och datapolicyer](/help/data-views/data-governance.md). |
 | Augusti 2022 | Ny artikel på [Jämföra terminologi för analysdata som skickas via Analytics-källkopplingen](/help/getting-started/aa-vs-cja/terminology.md). |
 | Augusti 2022 | Ny dokumentation om [Målgruppspublicering i kundprofil i realtid](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |

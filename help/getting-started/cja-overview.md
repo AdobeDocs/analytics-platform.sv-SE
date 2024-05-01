@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '916'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Innan du kan börja använda Customer Journey Analytics måste följande krav va
 
 ## Åtkomstkontroll
 
-Se [Åtkomstkontroll](/help/admin/cja-access-control.md) ämne.
+Se [Åtkomstkontroll](/help/technotes/access-control.md).
 
 ## Uppdateringar om terminologi
 

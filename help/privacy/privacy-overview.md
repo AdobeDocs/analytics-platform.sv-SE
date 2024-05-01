@@ -4,9 +4,9 @@ description: Beskriver hur datastyrning fungerar i Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Tack vare den här integreringen kan ni hantera regelefterlevnaden enklare. Data
 
 ## GDPR
 
-Customer Journey Analytics kommer inte att abonnera direkt på den centrala tjänsten enligt den allmänna dataskyddsförordningen (GDPR), utan i stället ärva alla datauppsättningsändringar som gjorts i Experience Platform. Vi förlitar oss på Platform Data Lake för att driva igenom förfrågningar om GDPR-borttagning och meddela oss när de har slutförts i pipeline. Vi lyssnar på Pipeline och synkroniserar alla ändringar i berörda grupper i Customer Journey Analytics för händelsedatamängder. Datauppsättningar för profiler och sökningar som påverkas av GDPR-borttagningsbegäranden importeras helt och hållet igen efter varje borttagningsbegäran. Vi kan garantera att begäranden om borttagning verkställs inom 7 dagar efter en raderingshändelse i Data Lake.
+Customer Journey Analytics kommer inte att abonnera direkt på den centrala tjänsten enligt den allmänna dataskyddsförordningen (GDPR), utan i stället ärva alla datauppsättningsändringar som gjorts i Experience Platform. Customer Journey Analytics är beroende av Platform Data Lake för att driva igenom GDPR-raderingsbegäranden och meddela Customer Journey Analytics när förfrågningarna är slutförda. Alla ändringar av berörda batchar i Customer Journey Analytics för händelsedatamängder synkroniseras med plattformsdata. Datauppsättningar för profiler och sökningar som påverkas av GDPR-borttagningsbegäranden återimporteras helt efter varje borttagningsbegäran. Borttagningsbegäranden slutförs vanligtvis inom 7 dagar efter en raderingshändelse i Data Lake.
 
 ## CCPA
 
