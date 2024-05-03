@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2342'
 ht-degree: 0%
 
 ---
@@ -174,9 +174,9 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics källanslutnin
 
 ## 8. [!UICONTROL Adobe Analytics] komponenter
 
-+++**Kan jag dela/publicera [!UICONTROL filters] från [!DNL Customer Journey Analytics] till Experience Platform Real-Time CDP eller andra program från Experience Cloud?**
++++**Kan jag dela/publicera [!UICONTROL audiences] från [!DNL Customer Journey Analytics] till Experience Platform Real-Time CDP eller andra program från Experience Cloud?**
 
-Inte ännu, men Adobe arbetar aktivt för att leverera den här funktionen.
+Du kan [skapa och publicera målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identifieras i Customer Journey Analytics till kundprofil i realtid i Adobe Experience Platform för kundanpassning och personalisering.
 
 +++
 
