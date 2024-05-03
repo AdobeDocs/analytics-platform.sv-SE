@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
+source-git-commit: c8796834de6b566783d53ba1602e44a8c91127bf
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2129'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Mätvärden | Fullt stöd; Customer Journey Analytics använder Experience Data Model (XDM) och har stöd för obegränsade mätvärden och är inte knutet till Adobe Analytics anpassade framgångshändelser. Vissa standardmått har bytt namn från Adobe Analytics: Besökare = Folk, Besök = Sessioner, Hits = Händelser. |
 | Migrera projekt, filter och beräknade värden från Adobe Analytics till Customer Journey Analytics | Fullt stöd. |
 | Mobil styrkort/instrumentpaneler | Fullt stöd |
-| Panel | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. |
+| Panel | Fullt stöd för följande paneler: Tom panel, Attribution, Freeform, Quick insights och Next eller previous item. |
 | Export från PDF | Fullt stöd |
 | Projekturval | Fullt stöd |
 | Projektlänkning | Fullt stöd |
@@ -128,6 +128,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | Möjlighet att kombinera datauppsättningar (t.ex. Adobe Analytics rapportsviter) | Med Customer Journey Analytics kan ni kombinera data från flera rapportsviter som om de vore ett enda rapportpaket i Adobe Analytics. |
 | Inkvartering av alla typer av data | Customer Journey Analytics kombineras med Experience Platform för att kunna lagra alla typer av datarotor och datatyper. Använda [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv), kan data representeras och struktureras på ett enhetligt sätt, vara klara för kombination och utforskande. Adobe Analytics fokuserar främst på webb- och mobilanalysdata med vissa funktioner för att [importdata](https://experienceleague.adobe.com/docs/analytics/import/home.html). |
 | Enhetsövergripande analys | Customer Journey Analytics stöder den sömlösa kombinationen av enhetsspecifika datauppsättningar från oautentiserade och autentiserade sessioner. Customer Journey Analytics erbjuder att fylla i historiska data baklänges till kända enheter. I Analytics är den här funktionen begränsad till en enda rapportserie och användningen av ett enhetsdiagram. |
+| Förbättrad Dimension | Customer Journey Analytics ger större flexibilitet vid användning av dimensioner: <ul><li>**Anpassade numeriska dimensioner**: [Skapa egna numeriska mått i en datavy](/help/data-views/create-dataview.md#components).</li><li>**Sortera strängbaserade dimensioner**: [Sortera strängbaserade dimensioner i bokstavsordning i en friformstabell.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>I Adobe Analytics fanns bara en handfull inbyggda numeriska mått tillgängliga, och det gick inte att sortera efter strängbaserade dimensioner.</p> |
 | Härledda fält | Härledda fält gör det möjligt att göra omformningar av data vid rapporttillfället. Data kan kombineras, korrigeras eller skapas direkt och gäller retroaktivt för alla rapporter. |
 | Förbättrade säkerhets- och sekretessalternativ - beredskap för HIPAA | Customer Journey Analytics är redo för HIPAA och erbjuder ytterligare säkerhetsalternativ för regelefterlevnad. Adobe Analytics är inte HIPAA-klart. |
 | Experimentationsanalys | Customer Journey Analytics kan utvärdera lyften och förtroendet för alla experiment från datakällor som definieras som en del av en anslutning. Med den här utvärderingen kan ni förstå orsaks- och effektförhållandet mellan kundinteraktioner i alla kanaler. Analyserna begränsas till experimenterande analyser via A4T. |
@@ -137,6 +138,6 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | Omformningar i rapporttid | Med datavyer i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde eller filtrera delmängder. Alla dessa omformningar görs på ett icke-förstörande sätt. Adobe Analytics har begränsade möjligheter genom virtuella rapportsviter och anpassad sessionslängd. |
 | SQL-åtkomst | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
 | Obegränsade kunddimensioner och mätvärden | Customer Journey Analytics är obegränsade. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla. Dimensioner kan vara kapslade eller hierarkiska. Analyserna stöder upp till högst 75 props och 250 eVars. |
-| Obegränsade unika värden | Customer Journey Analytics stöder obegränsat antal unika värden eller dimensionsposter som kan rapporteras inom en dimension. Adobe Analytics är begränsat till 500 000 unika värden. De obegränsade unika värdena och dimensionerna eliminerar de rapporterings- och analysbegränsningar som för närvarande finns med storskalig Analytics-implementering. |
+| Obegränsade unika värden | Customer Journey Analytics stöder obegränsat antal unika värden eller dimensionsposter som kan rapporteras inom en dimension.<p>Det finns inga [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md), vilket gör att unika värden kan visas och räknas.</p><p>Detta tillvägagångssätt tar bort rapporterings- och analysbegränsningar som kan förekomma med storskaliga Adobe Analytics-implementeringar, vilket resulterar i [!UICONTROL Low Traffic] etiketter.</p><p>I Customer Journey Analytics kan du se [!UICONTROL Uniques Exceeded] -etiketten, men dessa förekommer betydligt mindre ofta och kan minskas genom att ett filter eller segment tillämpas på data.</p> |
 
 {style="table-layout:auto"}
