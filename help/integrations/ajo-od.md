@@ -4,7 +4,7 @@ description: Hämta in data som genererats av Adobe Journey Optimizer Decision M
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -73,12 +73,12 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | Händelsetyp (byta namn för att referera till en viss händelse, till exempel `Feedback` for `message.feedback`) [1] | Mängd för en viss typ av händelse | `eventType` | Komponenttyp: Mått <br/>**[!UICONTROL Set Include Exclude Values]**: På<br/>**[!UICONTROL Match]**: [!UICONTROL If all criteria are met]<br/>**[!UICONTROL Criteria]**:**[!UICONTROL Equals]**`message.feedback` |
 | Poäng för beslutsalternativ | Beräknat värde för ett beslutsalternativ i samband med ett enda omfång. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Komponenttyp: Mått |
 | Poäng för reservbeslut | Beräknat värde för ett alternativ för reservalternativ i ett enda omfång. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Komponenttyp: Mått |
-| Avvisa erbjudanden | Antalet erbjudanden som avvisats eller avvisats utan någon annan direkt interaktion. | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponenttyp: Mått |
+| Avvisa erbjudanden | Antalet erbjudanden som avvisats eller avvisats utan någon annan direkt interaktion. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponenttyp: Mått |
 | Visa erbjudanden | Antalet erbjudanden som visas för profilen. | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponenttyp: Mått |
 | Erbjudandeinteraktion | Antalet erbjudanden som visas för profilen. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponenttyp: Mått |
 | Skicka erbjudanden | Antalet erbjudanden som skickas till profilen. | `_experience.decisioning.`<br/>`propositionEventType.send` | Komponenttyp: Mått |
 | Erbjudandeutlösare | Antalet erbjudanden som ska visas av klient-SDK. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
-| Avbeställ | Antalet erbjudanden som efterfrågats av profilen som inte ska visas i framtiden. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
+| Avbeställ | Antalet erbjudanden som efterfrågats av profilen som inte ska visas i framtiden. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Komponenttyp: Mått |
 
 {style="table-layout:auto"}
 
