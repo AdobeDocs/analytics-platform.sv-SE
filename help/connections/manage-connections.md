@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 73b9aa3bc7568c90c3e92b6fa8197577a904a6a2
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2790'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ När du har [har skapat eller redigerat en eller flera anslutningar](/help/conne
 * Visa alla datauppsättningar i en anslutning.
 * Kontrollera status för anslutningsens datauppsättningar och status för överföringsprocessen. Till exempel när är dina data tillgängliga så att du kan börja med rapporter och analyser i Analysis Workspace.
 * Identifiera eventuella dataavvikelser på grund av felaktig konfiguration. Saknar du några rader? Om så är fallet, vilka rader saknas och varför? Har du felkonfigurerat anslutningar och orsakat saknade data i Customer Journey Analytics?
-* Få insikter om hur inkapslade och rapporteringsbara rader används i alla era anslutningar.
+* Få insikter om hur inkapslade och rapportbara rader används i alla era anslutningar.
 
 [!UICONTROL Connections] har två gränssnitt: [[!UICONTROL List]](#list) och [[!UICONTROL Usage]](#usage).
 
@@ -35,14 +35,14 @@ The [!UICONTROL List] -gränssnittet är standardgränssnittet för anslutningar
 
 The [!UICONTROL List] -gränssnittet visar en tabell med alla tillgängliga anslutningar. Du kan snabbt söka efter en anslutning med sökfunktionen ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
-Följande kolumner / ikoner är tillgängliga i tabellen.
+Följande kolumner eller ikoner är tillgängliga i tabellen.
 
-| Kolumn/ikon | Beskrivning |
+| Kolumn eller ikon | Beskrivning |
 | --- | --- |
 | [!UICONTROL Name] | Anslutningens egna namn. Om du vill visa information om anslutningen markerar du namnet på den hyperlänkade anslutningen. Se [Anslutningsinformation](#connection-details). |
 | ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Om du vill visa information om [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner]och mer, markera ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) bredvid anslutningsnamnet.<p>Ett popup-fönster visar information. <p><img src="./assets/conn-info.png" alt="Visa anslutningsinformation" width="400"/> |
-| ![Datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | Till [skapa en datavy](#create-a-data-view) för anslutningen väljer ![Datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) . Den här ikonen visas bara när ingen datavy redan är kopplad till anslutningen. |
-| ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Välj ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) till: <p>![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Redigera](#edit-a-connection) en anslutning.<p>![Ta bort](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Ta bort](#delete-a-connection) en anslutning.<p>![Datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [Skapa ny datavy](#create-a-data-view). Använd det här alternativet om du vill skapa ytterligare datavyer för anslutningen. |
+| ![Datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | Till [skapa en datavy](#create-a-data-view) för anslutningen väljer ![Datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg). Den här ikonen visas bara när ingen datavy redan är kopplad till anslutningen. |
+| ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Välj ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) till: <p>![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Redigera](#edit-a-connection) en anslutning.<p>![Ta bort](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Ta bort](#delete-a-connection) en anslutning.<p>![Datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [Skapa ny datavy](#create-a-data-view). Om du vill skapa ytterligare datavyer för anslutningen. |
 | [!UICONTROL Datasets] | Visar en eller flera länkar till de datauppsättningar som är en del av anslutningen. Du kan välja datauppsättningens hyperlänk för att visa datauppsättningen i anslutningen. Om fler datauppsättningar ingår i den valda anslutningen väljer du **[!UICONTROL +*x *mer]**för att visa **[!UICONTROL Datasets included]**-panelen. I den här panelen visas länkar till alla datauppsättningar och ett alternativ för att söka efter en specifik datauppsättning som är en del av anslutningen.<p><img src="./assets/datasets-included.png" alt="Inkluderade datatillgångar" width="400"/><p>Om du väljer ett datauppsättningsnamn öppnas datauppsättningen i användargränssnittet för Experience Platform på en ny flik. |
 | [!UICONTROL Sandbox] | Visar [Experience Platform sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) från vilken den här anslutningen ritar sina datauppsättningar. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
 | [!UICONTROL Owner] | Den person som skapade anslutningen. |
@@ -51,11 +51,9 @@ Följande kolumner / ikoner är tillgängliga i tabellen.
 | [!UICONTROL Last modified] | Tidsstämpeln när anslutningen senast uppdaterades. |
 | [!UICONTROL Backfill data] | Visar status för data för bakgrundsfyllning över datauppsättningar.<p><span style="color:red">●</span>   **[!UICONTROL _x _backfills failed]**för antalet misslyckade efterfyllningar i datauppsättningar,<p><span style="color:orange">●</span>   **[!UICONTROL _x _bearbetning av bakåtfyllnad]**för antalet efterfyllningar som bearbetas över datauppsättningar,<p><span style="color:green">●</span>   **[!UICONTROL _x _bakåtfyllningar har slutförts]**för antalet slutförda efterfyllningar för datauppsättningar, och<p><span style="color:grey">●</span>   **[!UICONTROL _Av_]** om det inte finns några bakåtfyllningar definierade för datauppsättningarna i anslutningen. |
 
-Du kan konfigurera vilka kolumner som ska visas med ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Det här visar **Anpassa tabell** som gör att du kan aktivera/inaktivera kolumner i tabellen.
+Konfigurera vilka kolumner som ska visas ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), som visar **Anpassa tabell** som gör att du kan aktivera och inaktivera kolumner i tabellen.
 
 ### Redigera en anslutning
-
-Tillåter administratörer att redigera anslutningen.
 
 1. Välj ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bredvid anslutningsnamnet
 1. Välj ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** på snabbmenyn.
@@ -78,8 +76,6 @@ Se [Skapa eller redigera en anslutning](create-connection.md) för mer informati
 
 ### Ta bort en anslutning {#connections-delete}
 
-Tillåter administratörer att ta bort anslutningen.
-
 1. Välj ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bredvid anslutningsnamnet.
 1. Välj ![Ta bort](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]**.
 
@@ -98,9 +94,7 @@ Välj **[!UICONTROL Continue]** för att ta bort anslutningen.
 Se [Borttagningskonsekvenser](/help/technotes/deletion.md) för mer information om hur du tar bort en anslutning.
 
 
-### Skapa en datavy
-
-Tillåter administratörer att skapa en datavy för anslutningen.
+### Skapa en datavy för en anslutning
 
 * Om ingen datavy är associerad med anslutningen:
 
@@ -133,27 +127,27 @@ Gränssnittet Anslutningsinformation ger en detaljerad vy över anslutningsstatu
 
 | Användargränssnitt | Beskrivning |
 | --- | --- |
-| ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [!UICONTROL Edit Connection] | Om du vill redigera information om en anslutning väljer du ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]** . Se [Skapa eller redigera en anslutning](create-connection.md) för mer information. |
+| ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [!UICONTROL Edit Connection] | Om du vill redigera information om en anslutning väljer du ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]**. Se [Skapa eller redigera en anslutning](create-connection.md) för mer information. |
 | Datauppsättningsväljare | Gör att du kan välja en eller alla datauppsättningar i anslutningen. Du kan inte markera datauppsättningar i flera steg. Standardvärdet är [!UICONTROL All datasets]. |
-| Datumintervallväljare | Redigera start- och/eller slutdatum eller välj ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) för att öppna dataområdesväljaren. I datumintervallväljaren väljer du ett datumintervall genom att använda någon av de fördefinierade perioderna (till exempel **[!UICONTROL Last 6 months]**) eller använd kalendern för att välja start- och slutdatum. Välj **[!UICONTROL Apply]** för att använda det nya dataområdet. |
-| [!UICONTROL Records of event data available] | Representerar det totala antalet händelsedatarader som är tillgängliga för rapportering, **för hela anslutningen**. Antalet är oberoende av eventuella kalenderinställningar. Antalet ändras om du väljer en datauppsättning från datauppsättningsväljaren eller genom att markera en datauppsättning i tabellen. När data har lagts till finns det en fördröjning på 1-2 timmar för att få data att visas vid rapportering. |
-| [!UICONTROL Metrics] | Sammanfattar datauppsättningsposterna för händelse/sökning/profil som lagts till/hoppats över/tagits bort, och antalet grupper som lagts till, **för den datauppsättning och det datumintervall som du har valt**.<p>Välj **[!UICONTROL Check detail]** för att visa **[!UICONTROL Check skipped detail]** popup, lista för alla händelsedatamängder eller valda datauppsättningar antalet poster som hoppats över och orsaken.<p><img src="./assets/skipped-records.png" width="500"/><p>Välj ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) popup med mer information. Av vissa orsaker som hoppats över, som [!UICONTROL Empty visitor ID]visas exempel på PSQL för EQS (Experience Platform för frågetjänst) som du kan använda i [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) för att fråga efter de överhoppade posterna i datauppsättningen. Välj ![Kopiera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** för att kopiera SQL:en. |
+| Datumintervallväljare | Redigera startdatum, slutdatum eller välj ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) för att öppna dataområdesväljaren. I datumintervallväljaren väljer du ett datumintervall genom att använda någon av de fördefinierade perioderna (till exempel **[!UICONTROL Last 6 months]**) eller använd kalendern för att välja start- och slutdatum. Välj **[!UICONTROL Apply]** för att använda det nya dataområdet. |
+| [!UICONTROL Records of event data available] | Det totala antalet händelsedatamängdsrader som är tillgängliga för rapportering. **för hela anslutningen**. Antalet är oberoende av eventuella kalenderinställningar. Antalet ändras om du väljer en datauppsättning från datauppsättningsväljaren eller genom att markera en datauppsättning i tabellen. När data har lagts till finns det en fördröjning på 1-2 timmar för att få data att visas vid rapportering. |
+| [!UICONTROL Metrics] | Sammanfattar poster för händelser, sökning och profildatauppsättning som har lagts till, hoppats över och tagits bort samt antalet batchar som har lagts till, **för den datauppsättning och det datumintervall som du har valt**.<p>Välj **[!UICONTROL Check detail]** för att visa **[!UICONTROL Check skipped detail]** popup. I popup-fönstret visas antalet poster som hoppats över och orsaken till alla händelsedatamängder eller valda datauppsättningar.<p><img src="./assets/skipped-records.png" width="500"/><p>Välj ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) popup med mer information. Av vissa orsaker som hoppats över, som [!UICONTROL Empty visitor ID]visas exempel på PSQL för EQS (Experience Platform för frågetjänst) som du kan använda i [Frågetjänst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv) för att fråga efter de överhoppade posterna i datauppsättningen. Välj ![Kopiera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** för att kopiera SQL:en. |
 | [!UICONTROL Records added] | Anger hur många rader som har lagts till under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Uppdaterades var 10:e minut. |
-| [!UICONTROL Records skipped] | Anger hur många rader som hoppades över under den valda tidsperioden. **för den datauppsättning och det datumintervall som du har valt**. Orsaker till att hoppa över poster är: saknade tidsstämplar, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut. <p>Ogiltiga person-ID:n (till exempel &quot;undefined&quot; eller &quot;000000&quot;) eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) inte kan tillskrivas någon specifik användare eller person. De kan inte importeras till systemet och leder till felbenägen intag och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Stitlar](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som sedan kommer att hoppas över vid förtäring (helst istället för ogiltiga eller helt nolla användar-ID:n).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
-| [!UICONTROL Records] borttagen | Anger hur många rader som har tagits bort under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Någon kan ha tagit bort en datauppsättning i [!DNL Experience Platform], till exempel. Uppdaterades var 10:e minut.<p>I vissa scenarier kan det här värdet även innehålla ersatta poster, som sammanfogning eller vissa uppdateringar av uppslagsdatauppsättningar. Titta på det här exemplet:</p><ul><li>Du överför en post till en enskild XDM-profildatauppsättning, som CJA har konfigurerats att importera som profilsökningsdata. I anslutningsinformationen skulle den här datauppsättningen visa 1 post som lagts till.</li><li>Du överför en kopia av den ursprungliga posten till samma AEP-datauppsättning, som nu kommer att innehålla två poster. CJA importerar den extra posten från profilsökningsdatauppsättningen. Eftersom CJA redan har infogat en profilpost i anslutningen för det person-ID:t, tas den tidigare versionen bort och nya profildata läggs till. I anslutningsinformationen representerar detta 1 post som har lagts till och 1 post har tagits bort, eftersom CJA bara behåller den senaste profilsökningsinformationen för alla inkapslade person-ID:n.</li><li>Sammanlagt kommer AEP-datauppsättningen att innehålla två poster som råkar vara identiska. Separat visar CJA-anslutningsinformationen status för dess inkapslade data: 2 poster har lagts till och 1 post har tagits bort för den här profildatauppsättningen. </li></ul> |
+| [!UICONTROL Records skipped] | Anger hur många rader som hoppades över under den valda tidsperioden. **för den datauppsättning och det datumintervall som du har valt**. Orsaker till att hoppa över poster är: saknade tidsstämplar, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut. <p>Ogiltiga person-ID:n (till exempel `undefined`, eller `00000000`eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) är ID:n som inte kan tilldelas någon specifik användare eller person. Dessa rader kan inte infogas i systemet och resulterar i felbenägen inmatning och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Stitlar](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Töm användar-ID:t som sedan tas bort vid förtäring (helst med ett ogiltigt eller helt nollfritt användar-ID).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
+| [!UICONTROL Records] borttagen | Anger hur många rader som har tagits bort under den valda tidsperioden, **för den datauppsättning och det datumintervall som du har valt**. Någon kan ha tagit bort en datauppsättning i [!DNL Experience Platform], till exempel. Uppdaterades var 10:e minut.<p>I vissa scenarier kan det här värdet även innehålla ersatta poster, som sammanfogning eller vissa uppdateringar av uppslagsdatauppsättningar. Titta på det här exemplet:</p><ul><li>Du överför en post till en enskild XDM-profildatauppsättning, som CJA har konfigurerats att importera som profilsökningsdata. I anslutningsinformationen skulle den här datauppsättningen visa 1 post som lagts till.</li><li>Du överför en kopia av den ursprungliga posten till samma AEP-datauppsättning, som nu innehåller två poster. CJA importerar den extra posten från profilsökningsdatauppsättningen. Eftersom CJA redan har infogat en profilpost i anslutningen för det person-ID:t, tas den tidigare versionen bort och nya profildata läggs till. I anslutningsinformationen representerar den här åtgärden 1 post som lagts till och 1 post som tagits bort, eftersom CJA bara behåller den senaste profilsökningsinformationen för alla inkapslade person-ID:n.</li><li>Totalt innehåller AEP-datauppsättningen två poster som råkar vara identiska. Separat visar CJA-anslutningsinformationen status för dess inkapslade data: 2 poster har lagts till och 1 post har tagits bort för den här profildatauppsättningen. </li></ul> |
 | ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) _Sök efter datauppsättningsnamn eller ID_ | Sökfält för datauppsättning. Du kan söka i datamängdstabellen efter datauppsättningsnamn eller [!UICONTROL Dataset ID]. |
 | [!UICONTROL Datasets table] | Visar de datauppsättningar som ingår i anslutningen. |
 | [!UICONTROL Datasets] | Visar namnet på datauppsättningen som är en del av anslutningen. Du kan markera hyperlänken för att öppna datauppsättningen i användargränssnittet för Experience Platform på en ny flik. Du kan markera raden eller kryssrutan om du bara vill visa information för den markerade datauppsättningen. |
 | [!UICONTROL Dataset ID] | Automatiskt genererad av Experience Platform. |
-| [!UICONTROL Records added] | Antalet datauppsättningsposter/rader som lagts till i en anslutning under det valda tidsintervallet. |
-| [!UICONTROL Records skipped] | Antalet datauppsättningsposter/rader som hoppats över under dataöverföring för en anslutning under det valda tidsintervallet. |
-| [!UICONTROL Records deleted] | Antalet datauppsättningsposter/rader som tagits bort från en anslutning under det valda tidsintervallet. |
-| [!UICONTROL Batches added] | Antal datauppsättningsbatchar har lagts till i en anslutning. |
-| [!UICONTROL Last added] | Tidsstämpeln för den senaste batchen från datauppsättningen som lagts till i en anslutning. |
+| [!UICONTROL Records added] | Antalet datauppsättningsposter (rader) som lagts till i en anslutning under det valda tidsintervallet. |
+| [!UICONTROL Records skipped] | Antalet datauppsättningsposter (rader) som hoppats över under dataöverföring för en anslutning under det valda tidsintervallet. |
+| [!UICONTROL Records deleted] | Antalet datauppsättningsposter (rader) som tagits bort från en anslutning under det valda tidsintervallet. |
+| [!UICONTROL Batches added] | Antalet datauppsättningsbatchar har lagts till i en anslutning. |
+| [!UICONTROL Last added] | Tidsstämpeln för den senaste batchen från datauppsättningen som har lagts till i en anslutning. |
 | [!UICONTROL Data source type] | Datamängdens källtyp. Du definierar källtypen när du skapar en anslutning. |
 | [!UICONTROL Dataset type] | Datamängdstypen för den här datauppsättningen. Typ kan [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | Schema | Det Experience Platform-schema som datauppsättningen baseras på. |
-| [!UICONTROL Import new data] | Visar status för import av nya data för datauppsättningen: <p><span style="color:green">●</span>   **[!UICONTROL _x _På]**om datauppsättningen har konfigurerats för import av nya data, och<p><span style="color:gray">●</span>   **[!UICONTROL _x av_]** om datauppsättningen är konfigurerad att inte importera ny dataimport. |
+| [!UICONTROL Import new data] | Visar status för import av nya data för datauppsättningen: <p><span style="color:green">●</span>   **[!UICONTROL _x _På]**om datauppsättningen är konfigurerad att importera nya data, och<p><span style="color:gray">●</span>   **[!UICONTROL _x av_]** om datauppsättningen är konfigurerad att inte importera nya data. |
 | [!UICONTROL Backfill data] | Visar status för data för bakgrundsfyllning för datauppsättningen.<p><span style="color:red">●</span>   **[!UICONTROL _x _backfills failed]**för antalet misslyckade backfiller,<p><span style="color:orange">●</span>   **[!UICONTROL _x _bearbetning av bakåtfyllnad]**för antalet efterfyllningar,<p><span style="color:green">●</span>   **[!UICONTROL _x _bakåtfyllningar har slutförts]**för antalet slutförda efterfyllningar, och<p><span style="color:grey">●</span>   **[!UICONTROL _Av_]** om inga bakåtfyllningar har konfigurerats. |
 
 >[!IMPORTANT]
@@ -186,17 +180,17 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 
 | Information | Beskrivning |
 | --- | --- |
-| [!UICONTROL Person ID] | Visar en identitet som definierades i datauppsättningsschemat i Experience Platform. Detta är det person-ID som du valde när anslutningen skapades. Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du vill sammanfoga datauppsättningar måste du använda samma person-ID för alla datauppsättningar. |
+| [!UICONTROL Person ID] | Visar en identitet som definierades i datauppsättningsschemat i Experience Platform. Den här identiteten är det person-ID som du valde när anslutningen skapades. Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du vill sammanfoga datauppsättningar måste du använda samma person-ID för alla datauppsättningar. |
 | [!UICONTROL Key] | Visar den nyckel som du har angett för en uppslagsdatauppsättning. |
 | [!UICONTROL Matching Key] | Visar den matchande nyckel som du har angett för en uppslagsdatauppsättning. |
-| [!UICONTROL Timestamp] | Visa den tidsstämpel som har definierats för en händelsedatamängd. |
-| [!UICONTROL Records available] | Representerar det totala antalet rader som kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. När du skapar en helt ny anslutning kommer det dock att finnas [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#3.-getting-data-into-customer-travel-analytics). |
-| [!UICONTROL Records added] | Anger hur många rader som har lagts till under den valda tidsperioden. |
-| [!UICONTROL Records deleted] | Anger hur många poster som togs bort under den valda tidsperioden. |
-| [!UICONTROL Batches added] | Anger hur många datagrupper som har lagts till i den här datauppsättningen. |
-| [!UICONTROL Records skipped] | Anger hur många rader som hoppats över under intag under den valda tidsperioden.<p>Orsaker till att hoppa över poster är bland annat: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel &quot;undefined&quot; eller &quot;000000&quot;) eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) inte kan tillskrivas någon specifik användare eller person. De kan inte importeras till systemet och leder till felbenägen intag och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Stitlar](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som sedan hoppas över vid förtäring (helst inte med ett ogiltigt eller helt nollfritt användar-ID).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
-| [!UICONTROL Last added] | Anger när den senaste batchen lades till. |
-| [!UICONTROL Import new data] | Visar status för import av nya data för datauppsättningen: <p><span style="color:green">●</span>   **[!UICONTROL _x _På]**om datauppsättningen har konfigurerats för import av nya data, och<p><span style="color:gray">●</span>   **[!UICONTROL _x av_]** om datauppsättningen är konfigurerad att inte importera ny dataimport. |
+| [!UICONTROL Timestamp] | Visar den tidsstämpel som har definierats för en händelsedatamängd. |
+| [!UICONTROL Records available] | Visar det totala antalet rader som har kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. När du skapar en helt ny anslutning finns det dock [latens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#3.-getting-data-into-customer-travel-analytics). |
+| [!UICONTROL Records added] | Visar hur många rader som har lagts till under den valda tidsperioden. |
+| [!UICONTROL Records deleted] | Visar hur många poster som har tagits bort under den valda tidsperioden. |
+| [!UICONTROL Batches added] | Visar hur många databatchar som har lagts till i den här datauppsättningen. |
+| [!UICONTROL Records skipped] | Visar hur många rader som hoppats över under förtäring under den valda tidsperioden.<p>Orsaker till att hoppa över poster är bland annat: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel `undefined`, eller `00000000`eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse (fler än 1 miljon gånger under en viss månad) är ID:n som inte kan tilldelas någon specifik användare eller person. Dessa rader kan inte infogas i systemet och resulterar i felbenägen inmatning och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Stitlar](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som sedan hoppas över vid förtäring (helst inte med ett ogiltigt eller helt nollfritt användar-ID).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
+| [!UICONTROL Last added] | Visar när den senaste batchen lades till. |
+| [!UICONTROL Import new data] | Visar status för import av nya data för datauppsättningen: <p><span style="color:green">●</span>   **[!UICONTROL _x _På]**om datauppsättningen är konfigurerad att importera nya data, och<p><span style="color:gray">●</span>   **[!UICONTROL _x av_]** om datauppsättningen är konfigurerad att inte importera nya data. |
 | [!UICONTROL Backfill data] | Visar status för data för bakgrundsfyllning för datauppsättningen.<p><span style="color:red">●</span>   **[!UICONTROL _x _backfills failed]**för antalet misslyckade backfiller,<p><span style="color:orange">●</span>   **[!UICONTROL _x _bearbetning av bakåtfyllnad]**för antalet efterfyllningar,<p><span style="color:green">●</span>   **[!UICONTROL _x _bakåtfyllningar har slutförts]**för antalet slutförda efterfyllningar, och<p><span style="color:grey">●</span>   **[!UICONTROL _Av_]** om inga bakåtfyllningar har konfigurerats.<p>Om du vill visa en dialogruta med en översikt över de tidigare efterfyllningarna för datauppsättningen väljer du <img src="./assets/pastbackfill.svg" alt="Tidigare bakåtfyllningar" width="15"/> **[!UICONTROL Past backfills]**. |
 | [!UICONTROL Data source type] | Datakälltyp som definieras när datauppsättningen läggs till i anslutningen. |
 | [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Lookup], eller [!UICONTROL Profile]. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
@@ -206,7 +200,7 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 
 ## Användning
 
-The [!UICONTROL Usage] -gränssnittet visar användningen av kapslade och rapportbara rader över alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med vad som avtalats.
+The [!UICONTROL Usage] -gränssnittet visar användningen av kapslade och rapportbara rader över alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats.
 
 Välj **[!UICONTROL Usage]** -fliken för att komma åt gränssnittet.
 
@@ -217,16 +211,18 @@ Så här rapporterar du om användningen:
 
 För [!UICONTROL Ingested rows]:
 
-* en ruta visar [!UICONTROL Total] antal kapslade rader.
-* en ruta visar antalet inkapslade rader för [!UICONTROL Last month] och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
-* ett linjediagram visar  <span style="color:53b2ad">◼︎</span> Ackumulerade importerade rader och <span style="color:4046c3">◼︎</span> Månatliga kapslade rader.<br/>Du kan hålla markören över en datapunkt för varje rad i linjediagrammet för att se ett popup-fönster med datum och antal rader för den markerade datapunkten.
+* en panel visar det totala antalet inkapslade rader som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
+   * en ruta visar antalet inkapslade rader för den senaste månaden och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
+   * ett linjediagram visar <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly ingested rows].<br/>Om du vill visa en popup-meny som visar antalet månadsinkapslade rader för en månad håller du pekaren över en datapunkt i linjediagrammet.
 
 
 För [!UICONTROL Reportable rows]:
 
-* en ruta visas [!UICONTROL Total] antal rader som ska rapporteras.
-* en ruta visar antalet rader som kan rapporteras för [!UICONTROL Last month] och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
-* ett linjediagram visar  <span style="color:53b2ad">◼︎</span> Ackumulerade rapporteringsbara rader och <span style="color:4046c3">◼︎</span> Månatliga rader som ska rapporteras.<br/>Du kan hålla markören över en datapunkt för varje rad i linjediagrammet för att se ett popup-fönster med datum och antal rader för den markerade datapunkten.
+* en panel visar totalt antal rader som kan rapporteras och som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
+   * en ruta visar det sammanlagda antalet rader som kan rapporteras.
+   * en ruta visar det totala antalet rapporteringsbara rader för den senaste månaden och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
+   * ett linjediagram visar <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly reportable rows].<br/>Om du vill visa ett popup-fönster som visar antalet kumulativa rapportbara rader för en viss månad håller du pekaren över en datapunkt i linjediagrammet.
+   * ett linjediagram visar <span style="color:53b2ad">◼︎</span> [!UICONTROL Cumulative reportable rows].<br/>Om du vill visa ett popup-fönster som visar antalet månadsvisa rader som ska rapporteras för en månad håller du pekaren över en datapunkt i linjediagrammet.
 
 
 >[!MORELIKETHIS]
