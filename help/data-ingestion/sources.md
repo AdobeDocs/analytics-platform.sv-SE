@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
 
-# Importera och använda data med hjälp av källkopplingar.
+# Importera och använda data med hjälp av källkopplingar
 
 Den här snabbstartsguiden förklarar hur du kan importera data till Adobe Experience Platform med hjälp av en källanslutning till en DataProvider och sedan använda dessa data i Customer Journey Analytics.
 
@@ -218,43 +218,43 @@ Så här skapar du en anslutning:
 
 1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Connections]** i den övre navigeringen.
 
-2. Välj **[!UICONTROL Create new connection]**.
+1. Välj **[!UICONTROL Create new connection]**.
 
-3. I [!UICONTROL Untitled connection] skärm:
+1. I **[!UICONTROL Untitled connection]** skärm:
 
-   Namnge och beskriva anslutningen i [!UICONTROL Connection Settings].
+   1. Namnge och beskriva anslutningen i **[!UICONTROL Connection Settings]**.
 
-   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Average number of daily events] lista.
+   1. Välj rätt sandlåda i dialogrutan **[!UICONTROL Sandbox]** lista i **[!UICONTROL Data settings]** och välj antalet dagliga händelser i dialogrutan **[!UICONTROL Average number of daily events]** lista.
 
-   ![Anslutningsinställningar](./assets/cja-connections-1.png)
+      ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
-   Välj **[!UICONTROL Add datasets]**.
+   1. Välj **[!UICONTROL Add datasets]**.
 
-   I [!UICONTROL Select datasets] stega in [!UICONTROL Add datasets]:
+1. I **[!UICONTROL Select datasets]** stega in **[!UICONTROL Add datasets]**:
 
-   - Välj den datauppsättning som du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
+   1. Välj den datauppsättning som du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
 
-     ![Lägg till datauppsättningar](./assets/cja-connections-2.png)
+      ![Lägg till datauppsättningar](./assets/cja-connections-2.png)
 
-   - Välj **[!UICONTROL Next]**.
+   1. Välj **[!UICONTROL Next]**.
 
-   I [!UICONTROL Datasets settings] stega in [!UICONTROL Add datasets]:
+1. I **[!UICONTROL Datasets settings]** stega in **[!UICONTROL Add datasets]**:
 
-   - För varje datauppsättning:
+   För varje datauppsättning:
 
-      - Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
+   1. Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
+   1. Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
 
-      - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
+   1. Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
 
-     ![Konfigurera datauppsättningar](./assets/cja-connections-3.png)
+      ![Konfigurera datauppsättningar](./assets/cja-connections-3.png)
 
-   - Välj **[!UICONTROL Add datasets]**.
+   1. Välj **[!UICONTROL Add datasets]**.
 
-   Välj **[!UICONTROL Save]**.
+   1. Välj **[!UICONTROL Save]**.
 
-Se [Anslutningar - översikt](../connections/overview.md) för mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.
+När du har skapat en [anslutning](/help/connections/overview.md)kan du utföra olika hanteringsåtgärder, till exempel [välja och kombinera datauppsättningar](/help/connections/combined-dataset.md), [kontrollera status för en anslutnings datauppsättningar och status för datainmatning](/help/connections/manage-connections.md), med mera.
 
 ## Konfigurera en datavy
 

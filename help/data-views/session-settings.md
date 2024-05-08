@@ -5,20 +5,20 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # Sessionsinställningar
 
-Sessionsinställningarna i datavyer ändrar hur Customer Journey Analytics beräknar sessioner från data i anslutningen.
+I Customer Journey Analytics kan ni definiera en session på vilket sätt som helst för att matcha hur människor interagerar med era digitala upplevelser. Du konfigurerar sessionsinställningar i en datavy.
 
-I **[!UICONTROL Settings]** Med datavyer kan ni definiera en session på vilket sätt som helst för att matcha hur personer interagerar med era digitala upplevelser. Definitioner av sessionsinställningar är icke-förstörande och ändrar inte underliggande data. Du kan skapa flera datavyer (där var och en har en egen specifik sessionsinställningsdefinition) som grund för dina Workspace-projekt.
+Definitioner av sessionsinställningar är icke-förstörande och ändrar inte underliggande data. Du kan skapa flera datavyer (där var och en har en egen specifik sessionsinställningsdefinition) som grund för dina Workspace-projekt.
 
-Så här definierar du kontexten för en session för en datavy:
+Så här definierar du kontexten för en session i en datavy:
 
 1. Välj **[!UICONTROL Data views]** i användargränssnittet i Customer Journey Analytics.
 

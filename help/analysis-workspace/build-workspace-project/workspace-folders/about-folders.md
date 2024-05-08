@@ -5,9 +5,9 @@ title: Översikt över mappar
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Det finns två typer av mappar i Workspace: mappen Company och personliga mappar
 
 När du loggar in på arbetsytan visas en lista över dina projekt tillsammans med företagsmappen och eventuella personliga mappar som du har skapat på startsidan för projekt.
 
-![Projektstartsida med en lista över dina projekt och företagsmappen.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Projekt, startsida](../assets/landing-page2.png)
 
 ## Om mappen Company {#company-folder}
 
@@ -34,7 +34,6 @@ Som administratör kan du snabbt dela projekt med alla användare och gruppera p
 
 När en användare loggar in på Workspace läggs företagsmappen automatiskt till i projekt- och mapplistan. Det finns inga specifika behörigheter för projekt i företagsmappen.
 
-
 ### Administratörsalternativ {#admin-options}
 
 Administratörer har särskilda behörigheter tilldelade till mappen Company. Endast administratörer kan till exempel lägga till eller ta bort mappar eller projekt i företagsmappen. Användare utan administratörsåtkomst kan visa innehållet i mappen Company.
@@ -43,7 +42,7 @@ Administratörer har särskilda behörigheter tilldelade till mappen Company. En
 
 Icke-administratörer har begränsade alternativ.
 
-![På sidan Projekt visas alternativ som inte är administratörer för mappar.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![På sidan Projekt visas alternativ som inte är administratörer för mappar.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
 ### Riktlinjer för företagsmapp {#company-folder-guidelines}
 
@@ -53,6 +52,6 @@ Icke-administratörer har begränsade alternativ.
 
 - Administratörer kan ta bort en mapp i företagsmappen som en annan administratör har skapat. Administratörer kan behöva samordna med andra administratörer för att se till att mapp- och projektåtkomsten är konsekvent.
 
-- När en administratör flyttar ett projekt till företagsmappen delas projektet med alla, även om de ursprungliga delade behörigheterna var begränsade.
+- När en administratör flyttar ett projekt till företagsmappen delas projektet med alla i **Redigera kopia** roll, även om de ursprungliga delade behörigheterna var begränsade.
 
 - När en administratör flyttar ett projekt från företagsmappen gäller de ursprungliga eller tidigare delningsbehörigheterna.
