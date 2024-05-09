@@ -5,48 +5,65 @@ title: Skapa anpassade datumintervall
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
 # Skapa anpassade datumintervall
 
-Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
+Du kan skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
 
-**[!UICONTROL Components]** > **[!UICONTROL New Date Range]**
+Mer information om hur du lägger till befintliga datumintervall i ett projekt finns i [Översikt över kalender- och datumintervall](/help/components/date-ranges/calendar.md).
 
-Ett datumintervall används på panelnivå. Om du vill lägga till ett datumintervall i projektet klickar du på **Panel** > *`<select panel>`* och ange ett nytt datumintervall.
+Så här skapar du ett anpassat datumintervall:
 
-## Datumintervall för&quot;två månader sedan&quot;
+1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Date ranges]**.
+
+   ![datumintervallsida](assets/date-ranges.png)
+
+1. Välj [!UICONTROL **Skapa nytt datumintervall**].
+
+1. Ange följande information i datumintervallverktyget:
+
+   | Alternativ | Beskrivning |
+   |---------|----------|
+   | [!UICONTROL **Titel**] | Titeln på datumintervallet som det kommer att visas när användare markerar det i Analysis Workspace. |
+   | [!UICONTROL **Beskrivning**] | En beskrivning av datumintervallet. |
+   | [!UICONTROL **Taggar**] | Eventuella taggar som du vill använda för datumintervallet. |
+   | [!UICONTROL **Datumintervall**] | Välj ett anpassat datumintervall. Som standard är de senaste 30 dagarna markerade. |
+   | [!UICONTROL **Förinställning**] | Välj från en lista med förinställda datumintervall, till exempel [!UICONTROL **Igår**], [!UICONTROL **De senaste 7 dagarna**], [!UICONTROL **De senaste 30 dagarna**] och så vidare. |
+   | [!UICONTROL **Starttid**] | Den tid på dagen som datumintervallet börjar. |
+   | [!UICONTROL **Sluttid**] | Tiden på dagen som datumintervallet slutar. |
+   | [!UICONTROL **Använd rullande datum**] | Med rullande datum kan du generera en dynamisk rapport som ser framåt eller bakåt under en angiven tidsperiod baserat på när du körde rapporten. Om du t.ex. vill rapportera alla beställningar som placerats i&quot;Senaste månaden&quot; (baserat på fältet Skapad den) och köra rapporten i december, ser du beställningar som gjorts i november. Om du körde samma rapport i januari skulle du se beställningar i december.<ul><li>**[!UICONTROL Date Preview]**: Anger vilken tidsperiod som den rullande kalendern omfattar.</li><li>**[!UICONTROL Start]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li><li>**[!UICONTROL End]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li></ul><br>Markerad som standard. |
+
+1. Välj [!UICONTROL **Spara**].
+
+## Exempel: Datumintervall för&quot;två månader sedan&quot; {#section_C4109C57CB444BB2A79CC8082BD67294}
 
 I följande anpassade datumintervall visas ett datumintervall för&quot;två månader sedan&quot;, med en visualisering av Sammanfattningsändring som visar en riktningsändring.
 
-![Date Range Builder som visar Använd rullande datum för två månader sedan](assets/date-range-two-months-ago.png)
+![](assets/date-range-two-months-ago.png)
 
 Det anpassade datumintervallet visas högst upp i [!UICONTROL Date Range] komponentpanelen i ditt projekt:
 
-![Panelen Datumintervallkomponent med pilen pekar på För två månader sedan.](assets/date-range-panel-two-months-ago.png)
+![](assets/date-range-panel-two-months-ago.png)
 
 Du kan dra det här anpassade datumintervallet till en kolumn tillsammans med ett anpassat, månatligt löpande datumintervall med hjälp av förinställningen Senaste månaden för en jämförelse. Lägg till en visualisering av sammanfattningsändring och välj summorna från varje kolumn för att visa riktningsändring:
 
-![Ökning med 14,45%.](assets/date-range-two-months-table.png)
+![](assets/date-range-two-months-table.png)
 
-## Använd ett 7-dagars rullande datumintervall
+## Exempel: Använd ett 7-dagars rullande datumintervall {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
 
-Ett datumintervall gäller för panelnivån. Om du vill lägga till ett datumintervall i projektet klickar du på **Åtgärder** > **Lägg till panel** och ange ett nytt datumintervall.
+Du kan skapa ett datumintervall som anger ett 7-dagars rullande fönster som slutar för en vecka sedan:
 
-I Date Range Builder kan du skapa ett anpassat datumintervall som visas med andra datumintervall på panelen Komponenter.
-
-Du kan till exempel skapa ett datumintervall som anger ett 7-dagars rullande fönster som slutar för en vecka sedan:
-
-![Date Range Builder med ett datumintervall som anger ett 7-dagars rullningsfönster.](assets/create_date_range.png)
+![](assets/create_date_range.png)
 
 Använd *`rolling daily`*.
 
-* Startinställningarna blir *`current day minus 14 days`*.
+* Startinställningarna blir *`current day minus 6 days`*.
 
 * Slutinställningarna blir *`current day minus 7 days`*.
 
