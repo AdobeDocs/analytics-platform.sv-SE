@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Exempel:
 
 * **Konverteringsanalys**: Du kan analysera konverteringar i varje steg i tratten. Genom att spåra antalet användare som går från ett steg till nästa kan ni identifiera flaskhalsar som har ovanliga eller oönskade konverteringsgrader. Den här informationen är värdefull för att förstå var du kan förbättra produkten och få omedelbara resultat.
 * **Optimering av introduktion**: Optimera produktens introduktionsprocess genom att undersöka användarbeteenden kring viktiga händelser. Du kan identifiera vilka steg som användare kämpar med eller misslyckas med.
-* **Engagemang och engagemang**: Förstå hur användarna interagerar med specifika funktioner i produkten. Genom att analysera användarnas utveckling genom funktionsrelaterade steg kan du utvärdera hur många funktioner som används och identifiera områden där användarna kan överge eller underanvända vissa funktioner. Du kan sedan använda den här informationen för att fokusera på funktionsförbättringar för att öka användningen.
+* **Engagemang och engagemang**: Förstå hur användarna interagerar med specifika funktioner i produkten. Genom att analysera användarnas utveckling genom funktionsrelaterade steg kan ni se hur många användare som har kommit igång och identifiera områden där användarna kan komma att underanvända vissa funktioner. Du kan sedan använda den här informationen för att fokusera på funktionsförbättringar för att öka användningen.
 * **Kampanjutvärdering**: Mät effektiviteten i marknadsföringskampanjer. Ni kan skapa ett segment som fokuserar på användare som berörde en viss kampanj och jämföra deras konverteringsprocess med andra kampanjer eller inom den övergripande produkten.
 
 ## Frågerår
@@ -33,6 +33,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Konverteringstrender](conversion-trends.md).
 * **[!UICONTROL Steps]**: De händelsetyper som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
+   * [!UICONTROL Compare]: I varje steg finns ett alternativ för att jämföra flera händelser i ett enda tratt, vilket skapar en&quot;forked trnel&quot;. Med den här funktionen kan du jämföra friktionen för två resor sida vid sida utan att skapa två separata analyser.
 * **[!UICONTROL Counted as]**: Det omfång som du vill ska tillämpas på tratten. Alternativen inkluderar [!UICONTROL Sessions] och [!UICONTROL Users].
    * [!UICONTROL Sessions]: Alla steg måste inträffa i samma session för att räknas.
    * [!UICONTROL Users]: Alla steg måste inträffa i det valda rapportfönstret för att räknas.

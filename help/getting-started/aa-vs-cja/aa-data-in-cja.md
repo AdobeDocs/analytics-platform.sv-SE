@@ -1,18 +1,18 @@
 ---
-title: Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics
+title: Använd Adobe Analytics rapportsvitsdata i Customer Journey Analytics
 description: Konfigurera Adobe Analytics rapporteringsprogram för konsumtion i Adobe Experience Platform och Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
 
 ---
 
-# Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics
+# Använd Adobe Analytics rapportsvitsdata i Customer Journey Analytics
 
 Adobe Analytics-kunder kan enkelt utnyttja sina rapportsviter i Adobe Experience Platform och Customer Journey Analytics med [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). I följande diskussion beskrivs hur du gör det.
 
