@@ -1,16 +1,16 @@
 ---
-title: Användningsexempel för datafeed
+title: Användningsexempel vid dataexport
 description: Förstå olika dataexportanvändningsområden för Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
+source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
 
 ---
-
 
 # Användningsexempel vid dataexport
 
@@ -77,4 +77,3 @@ Vanligtvis stöder dataexport ett antal användningsfall. Varje användningsfall
 | **Dataverifiering**<br/> Utvärdera klickströmsdata för att se om datainsamlingen är korrekt. | **Experience Platform**: [**Query Service (Data Distiller) och Export datasets**](queryservice-export-datasets.md)<br/> Interaktivt PostgreSQL-gränssnitt för att köra ad hoc-SQL-frågor med ditt favoritverktyg för att validera data i datauppsättningarna.<br/><br/>**Customer Journey Analytics**: [**Exportera fullständig tabell**](export-full-table.md)<br/> Validera bearbetade data från CJA med attribut och sessioner. |
 | **Data Lake-, Data Warehouse- eller BI-verktyg**<br/> Lägg in digitala data i era egna BI-verktyg eller Data Lake för användning med ytterligare datauppsättningar. | **Customer Journey Analytics**: [**BI-tillägg**](bi-extension.md)<br/> Lägg till Customer Journey Analytics-bearbetade mätvärden i datavisualiseringsverktyg som Power BI och kombinera med ytterligare data för anpassade rapporter <br/><br/>**Experience Platform**: [**Query Service (Data Distiller) och Export datasets**](queryservice-export-datasets.md)<br> Generera anpassade klickströmsdata med SQL som ska levereras till molnmål. |
 | **Beredskap för AI/ML**<br/> Förbättra artificiell intelligens/maskininlärningsmodeller och uppgifter med data från Customer Journey Analytics. | **Customer Journey Analytics**: [**Exportera fullständig tabell**](export-full-table.md)<br/> Exportera Customer Journey Analytics bearbetade mått och mätvärden till molndestinationer en gång eller återkommande, inklusive beräknade värden och segmentering.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) och Export datasets**](queryservice-export-datasets.md)<br/> Generera anpassade klickströmsdata med SQL för att berika AI-/ML-modeller. |
-
