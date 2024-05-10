@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: ad7f748fb7aa684d134cf110460a84d1b9ec3895
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2721'
 ht-degree: 0%
 
 ---
@@ -312,6 +312,11 @@ The `daterange` specialspalt fungerar ungefär som  `timestamp`filtreringen är 
 The `daterange` -fältet kan också användas i datum/tid-funktioner för att analysera eller korta av händelsedatumet.
 
 The `daterangeName` specialkolumner kan användas för att filtrera frågan med ett namngivet datumintervall som `Last Quarter`.
+
+>[!NOTE]
+>
+>PowerBI stöder inte `daterange` mätvärden som är mindre än en dag (timme, 30 minuter, 5 minuter osv.).
+
 
 #### Filter-ID
 
