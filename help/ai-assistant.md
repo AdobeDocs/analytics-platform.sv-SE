@@ -3,13 +3,13 @@ description: ställa frågor om Customer Journey Analytics dokumentation
 title: AI Assistant för Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: 4ffdb6f963386079ce2f09a8538d2bdf5c394588
+exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
+source-git-commit: 02a0ad53d8c3ef0c10e2b9c2b11bb75a6a962cf0
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # AI Assistant för Adobe Customer Journey Analytics
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >AI Assistant för Customer Journey Analytics är för närvarande i Beta. Funktionen och dess dokumentation kan komma att ändras.
 
-AI Assistant är en gränssnittsfunktion som du kan använda för att navigera bland och förstå Adobe Customer Journey Analytics koncept och terminologi. AI Assistant besvarar dina inskickade frågor genom att fråga en databas och sedan omvandla data från databasen till ett läsbart svar.
+AI Assistant är en gränssnittsfunktion som du kan använda för att navigera bland och förstå Adobe Customer Journey Analytics koncept och terminologi. AI Assistant i Customer Journey Analytics är utbildad i sin Adobe Experience League-dokumentation. När AI Assistant tillfrågas om det finns ett användbart svar som gör att du snabbt kan lära dig mer.
 
 Som nybörjare kan du använda AI Assistant för att lära dig Customer Journey Analytics koncept och själv ta till vara produkter och funktioner som du inte är bekant med. Som erfaren användare kan du använda AI Assistant för att visa mer avancerade användningsexempel eller tips och tricks.
 
@@ -27,15 +27,13 @@ Några exempel på konceptfrågor är:
 * Vad är Customer Journey Analytics bäst för?
 * Hur konfigurerar jag en datavy?
 
-Dokumentationsindexet innehåller för närvarande Adobe Experience League-dokumentation för Customer Journey Analytics. Indexet uppdateras regelbundet.
-
 Modellen för dokumentationsåterhämtning har utbildats på Customer Journey Analytics. Frågor utanför Customer Journey Analytics, t.ex. frågor om andra Adobe-produkter som Adobe Target och Adobe Creative Cloud Suite, kan inte besvaras.
 
 AI Assistant för Customer Journey Analytics är tillgängligt på alla produktnivåer.
 
 >[!IMPORTANT]
 >
->I nuläget besvarar inte AI Assistant i Customer Journey Analytics användningsfrågor om dataobjekt i organisationen.
+>I nuläget besvarar inte AI Assistant för Customer Journey Analytics användningsfrågor om dataobjekt i organisationen.
 
 ## Åtkomst till AI-assistenten i användargränssnittet i Customer Journey Analytics
 
