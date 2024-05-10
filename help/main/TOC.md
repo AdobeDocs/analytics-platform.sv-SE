@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: d1497c20c0e986ae27fd7c64a14fd92630081650
+source-git-commit: a968ab150ed5fe3df9c0759c186b01444583cedf
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1102'
 ht-degree: 7%
 
 ---
@@ -344,6 +344,12 @@ ht-degree: 7%
    + Datavyer {#data-views}
       + [Datavyer använder exempel](../use-cases/data-views/data-views-usecases.md)
       + [Använd bindningsdimensioner och mätvärden](../use-cases/data-views/binding-dimensions-metrics.md)
+   + Dataexport {#data-export}
+      + [Översikt](../use-cases/data-export/overview.md)
+      + [BI-tillägg](../use-cases/data-export/bi-extension.md)
+      + [Exportera datauppsättningar](../use-cases/data-export/export-datasets.md)
+      + [Exportera fullständig tabell](../use-cases/data-export/export-full-table.md)
+      + [Frågetjänst och exportera datauppsättningar](../use-cases/data-export/queryservice-export-datasets.md)
    + B2B {#b2b}
       + [Ett exempel på ett B2B-projekt](../use-cases/b2b/example.md)
       + [Lägg till data på kontonivå som en uppslagsdatauppsättning](../use-cases/b2b/b2b.md)
@@ -353,7 +359,6 @@ ht-degree: 7%
    + Adobe Analytics data {#aa-data}
       + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
       + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
-      + [Emulera dataflöden](../use-cases/emulating-data-feeds.md)
    + Komplexa data {#complex-data}
       + [Använda arrayer med objekt](../use-cases/object-arrays.md)
    + Härledda fält {#derived-fields}
