@@ -5,16 +5,22 @@ feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
 # Utför grundläggande analys
 
-När du har skapat anslutningar och datavyer kan du analysera de data du har tagit med hjälp av kraften och flexibiliteten i Analysis Workspace. Experimentera och dra i mått och mätvärden, ändra dimensionerna och måttattribueringsinställningar, egna namn, tidszon, sessionsinställningar osv.
+Med Customer Journey Analytics kan ni analysera data med hjälp av kraften och flexibiliteten i Analysis Workspace.
+
+>[!TIP]
+>
+>Om det inte finns några data i Analysis Workspace bör du kontrollera att du har följt [dataöverföringsprocess](/help/data-ingestion/data-ingestion.md), som innehåller följande:<ul><li>[Skapa en anslutning](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Kontrollera att anslutningen är konfigurerad för att importera nya data, data för bakåtfyllnad eller båda.</li><li>[Lägg till datauppsättningar](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Skapa datavyer](/help/data-views/create-dataview.md)</li></ul>
+
+Experimentera och dra i mått och mätvärden, ändra dimensionerna och måttattribueringsinställningar, egna namn, tidszon, sessionsinställningar osv.
 
 Här är ett exempel på grundläggande visualiseringar i Workspace. Du kan till exempel
 

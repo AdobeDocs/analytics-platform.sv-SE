@@ -2,9 +2,10 @@
 title: Översikt över Dimensioner
 description: Lär dig vilka dimensioner som är och hur de används i Customer Journey Analytics
 feature: Dimensions
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Varje dimension representerar en annan del eller del av din webbplats. Du kan ko
 
 ## Skapa dimensioner
 
-Customer Journey Analytics-administratörer kan [skapa numeriska mått i en datavy](/help/data-views/create-dataview.md#components).
+Customer Journey Analytics-administratörer kan [skapa dimensioner i en datavy](/help/data-views/create-dataview.md#components).
 
 ## Lägg till dimensionsbeskrivningar
 

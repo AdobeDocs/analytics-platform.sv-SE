@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
@@ -173,37 +173,45 @@ Se [Användargränssnittshandbok för datauppsättningar](https://experienceleag
 
 Beroende på varifrån du får lojalitetsdata väljer du den relevanta källkopplingen som är tillgänglig i Adobe Experience Platform.
 
+Ni kan importera data från en mängd olika källor. Nedan följer bara några av alla tillgängliga källor:
+
+- Adobe (källanslutningarna inkluderar [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), med mera)
+
+- Molnlagring (källanslutningarna inkluderar [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), med mera)
+
+- Databaser (källkopplingar inkluderar) [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), med mera)
+
 Så här konfigurerar du en källkoppling:
 
-1. I Adobe Experience Platform UI väljer du **[!UICONTROL Sources]** från [!UICONTROL CONNECTIONS] till vänster.
+1. I Adobe Experience Platform: **[!UICONTROL Sources]** från [!UICONTROL CONNECTIONS] till vänster.
 
-2. Välj din källanslutning i listan över tillgängliga källanslutningar. Varje koppling följer ett liknande arbetsflöde:
+1. Välj din källanslutning i listan över tillgängliga källanslutningar.
 
-   - **[!UICONTROL Authentication]**. Du anger autentiseringsinformation för att komma åt datakällan.
+   Varje koppling följer ett liknande arbetsflöde:
 
-   - **[!UICONTROL Select data]**: Du väljer de källdata som du vill importera.
+   1. **[!UICONTROL Authentication]**. Du anger autentiseringsinformation för att komma åt datakällan.
 
-   - **[!UICONTROL Dataflow detail]**: Du anger mer information om dataflödet, till exempel namn och vilken datauppsättning som ska användas.
+   1. **[!UICONTROL Select data]**: Du väljer de källdata som du vill importera.
 
-   - **[!UICONTROL Mapping]**: Du mappar inkommande källdatafält till attribut i det schema som är associerat med den datamängd som du har valt.
+   1. **[!UICONTROL Dataflow detail]**: Du anger mer information om dataflödet, till exempel namn och vilken datauppsättning som ska användas.
 
-   - **[!UICONTROL Scheduling]**: Om det är tillgängligt kan du schemalägga inmatningen av data.
+   1. **[!UICONTROL Mapping]**: Du mappar inkommande källdatafält till attribut i det schema som är associerat med den datamängd som du har valt.
 
-   - **[!UICONTROL Review]**: En granskning av definitionen av källkopplingen visas.
+   1. **[!UICONTROL Scheduling]**: Om det är tillgängligt kan du schemalägga inmatningen av data.
 
-   Varje koppling ger detaljerad dokumentation.
+   1. **[!UICONTROL Review]**: En granskning av definitionen av källkopplingen visas.
 
-   Så här öppnar du den här dokumentationen:
+1. Varje koppling ger detaljerad dokumentation. Så här öppnar du den här dokumentationen:
 
-   - På kopplingsplattan väljer du **[!UICONTROL ...]** nästa [!UICONTROL Set up] eller [!UICONTROL Add data].
+   1. På kopplingsplattan väljer du **[!UICONTROL ...]** nästa [!UICONTROL Set up] eller [!UICONTROL Add data].
 
-     ![Visa dokumentation](./assets/sourceconnector-documentation.png)
+      ![Visa dokumentation](./assets/sourceconnector-documentation.png)
 
-   - Välj **[!UICONTROL View documentation]**.
+   1. Välj **[!UICONTROL View documentation]**.
 
-Se [Importera och använda data från traditionella Adobe Analytics](./analytics.md) hur du använder Adobe Analytics källanslutning.
+Se [Importera och använda data från traditionella Adobe Analytics](./analytics.md) om du vill ha information om hur du använder Adobe Analytics källanslutning.
 
-Se [Importera och använda strömmande data](./streaming.md) hur du använder HTTP API-källkopplingen.
+Se [Importera och använda strömmande data](./streaming.md) om du vill ha information om hur du använder HTTP API-källkopplingen.
 
 Se [Översikt över Source Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) för en översikt över källanslutningar, inklusive länkar till mer information för varje koppling.
 

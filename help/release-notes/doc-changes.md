@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ea3ea6ad387300e2efcafb8e49efcafdfc011ba9
+source-git-commit: 0014515b29885bf3eb44e8e49fc605fc76e4b439
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3547'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål.<p>Nu finns det nya dokumentationsresurser som hjälper dig att förstå:</p><ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li><li>Och mycket mer!</li></ul><p>[Kom igång med uppgraderingen till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | Uppdaterad dokumentation om anpassade datumintervall | Uppdaterade skärmdumpar och procedurer för [skapa anpassade datumintervall](/help/components/date-ranges/custom-date-ranges.md) för att matcha de nuvarande produktfunktionerna och designen. |
 | Översiktsinformation om Dimensioner | Ytterligare information om [dimensioner](/help/components/dimensions/overview.md). |
+| Exempel på källkopplingar | Exempel på källanslutningar som är tillgängliga när du beskriver hur [använda en källkoppling](/help/data-ingestion/sources.md#use-a-source-connector) för datainhämtning. |
 | **April 2024** | |
 | Prognostiserade statistiska tekniker | Lagt till artikel som beskriver [statistiska metoder som används i prognostjänsten](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Tillagd information som rekommenderar fullständig tabellexport för höga kardinalitetsmått | Punkter som lagts till i [Bästa tillvägagångssätt för höga kardinalitetsmått](/help/components/dimensions/high-cardinality.md) att rekommendera att använda fullständig tabellexport för att få stora kardinalitetsmått. |
