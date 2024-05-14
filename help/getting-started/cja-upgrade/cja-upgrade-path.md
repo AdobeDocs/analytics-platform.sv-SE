@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 6cceeaa3b57808a82012b124435aa1b7dbf1b3f2
+source-git-commit: f1e1fdd5ca8aa51a28de13cdb028bf585a0324e7
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Kontakta din Adobe-representant om du behöver mer specifik rådgivning, vägled
 |---------|----------|
 | AppMeasurement | <ul><li>Ny implementering av Experience Platform Web SDK</li><li>Migrera Adobe Analytics till Web SDK</li><li>Källanslutning för analyser</li></ul> |
 | Adobe Analytics-tillägg | <ul><li>Ny implementering av Experience Platform Web SDK</li><li>Migrera Adobe Analytics till Web SDK</li><li>Källanslutning för analyser</li></ul> |
-| Webb-SDK | <ul><li>Konfigurera Adobe Analytics Web SDK-implementeringen för att skicka data till Customer Journey Analytics</li></ul> |
+| Webb-SDK | <ul><li>Konfigurera Adobe Analytics Web SDK-implementeringen för att skicka data till plattformen</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ När du väljer den här uppgraderingssökvägen måste du också välja ditt sc
 
 #### Uppgraderingssökväg
 
-+++Konfigurera Adobe Analytics Web SDK-implementeringen för att skicka data till Customer Journey Analytics
++++Konfigurera Adobe Analytics Web SDK-implementeringen för att skicka data till plattformen
 
 | Fördelar | Nackdelar |
 |----------|---------|
@@ -149,7 +149,7 @@ När du väljer den här uppgraderingssökvägen måste du också välja ditt sc
 
 #### Välj ditt schema
 
-Om du väljer den uppgraderingssökväg som gör att du kan konfigurera Adobe Analytics Web SDK-implementeringen för att skicka data till Customer Journey Analytics kan du välja det schema som du vill använda.
+Om du väljer den uppgraderingssökväg som gör att du kan konfigurera Adobe Analytics Web SDK-implementeringen för att skicka data till plattformen, kan du välja det schema som du vill använda.
 
 Du kan välja om du vill använda ditt befintliga Adobe Analytics-schema eller uppdatera till ditt eget XDM-schema så att det bättre passar organisationens behov när du börjar använda andra plattformstjänster.
 
@@ -165,7 +165,7 @@ Du kan välja om du vill använda ditt befintliga Adobe Analytics-schema eller u
 
 | Fördelar | Nackdelar |
 |----------|---------|
-| <ul><p>Fördelarna med att uppdatera till ditt eget XDM-schema är bland annat:</p><ul><li>Ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder.</li><p>När du behöver ändra schemat behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></ul> | <p>Nackdelar med att uppdatera till ditt eget XDM-schema:</p><ul><li>Att uppdatera schemat är en tidsödande process som krävs innan du börjar skicka data till Customer Journey Analytics.</li></ul> |
+| <ul><p>Fördelarna med att uppdatera till ditt eget XDM-schema är bland annat:</p><ul><li>Ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder.</li><p>När du behöver ändra schemat behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></ul> | <p>Nackdelar med att uppdatera till ditt eget XDM-schema:</p><ul><li>Att uppdatera schemat är en tidsödande process som krävs innan du börjar skicka data till plattformen.</li></ul> |
 
 +++
 
