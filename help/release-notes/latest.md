@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4ad92a72f0ced81f84198da744fef9fe4c0a6b0b
+source-git-commit: cc74a8fdb3e44c5fa46e82a5111619970f090870
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ Versionsanteckningarna gäller releasetiden 15 maj 2024 till juni 2024. Adobe Cu
 | **AI Assistant för Customer Journey Analytics** | Gör att du kan ställa naturspråkliga frågor i användargränssnittet för Customer Journey Analytics och få svar baserat på dokumentationen för Customer Journey Analytics. (Dokumentationslänk följer) | | 30 maj 2024 |
 | **Direktuppspelningsmedia: Skicka webbdata till Adobe Experience Platform Edge Network med Web SDK** | Nu kan du använda Adobe Experience Platform Web SDK för att skicka Streaming Media-webbdata till Adobe Experience Platform Edge Network, vilket gör att du kan skapa mer personaliserade kampanjer och leverera mer personaliserat innehåll, vilket resulterar i mer spårningsdata att rapportera om.<p>Den här förbättringen erbjuder en enhetlig insamlingsmetod för webblösningar i alla plattformslösningar, till exempel Customer Journey Analytics, RT-CDP, AJO och händelsevidarebefordran. Tidigare var det enda sättet att skicka Streaming Media-webbdata till Edge Network att använda Media Edge API. [Läs mer](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge) | | 31 maj 2024 |
 | **Härledda fält - matematisk funktion** | Gör att du kan göra enkla matematiska operatorer i datavyer för att besvara frågor om dina användare. Du kan t.ex. kombinera intäkter från produkt, garanti och frakt. (Dokumentationslänk följer) | | 5 juni 2024 |
-| **Härledda fält - nästa eller föregående funktion** | Här kan du se vad nästa eller föregående värde är. Vilka tidigare marknadsföringskanaler interagerade någon med före den valda marknadsföringskanalen? Eller hur interagerade sidanvändarna med före eller efter den valda sidan? Vad interagerar de populäraste kanalanvändarna med innan de går till butiken?  (Dokumentationslänk följer) | | 12 juni 2024 |
 | **Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics** | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål. Nu finns det nya dokumentationsresurser som hjälper dig att förstå:<ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li></ul>[Kom igång med uppgraderingen till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted) | | Ute nu |
 | **Ny dokumentation om [Användningsexempel vid dataexport](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/overview)** | I det nya avsnittet beskrivs hur dataexport kan användas till exempel<ul><li>Säkerhetskopiering av data</li><li>Dataverifiering</li><li>Data Lake, Data Warehouse eller BI Tools</li><li>Beredskap för AI/ML</li></ul> och implementera dem med Experience Platform och Customer Journey Analytics. | | Ute nu |
 
