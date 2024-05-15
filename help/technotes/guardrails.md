@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: c3293e2ce93113dd22157bb6470a780b20813d80
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1632'
 ht-degree: 5%
 
 ---
@@ -75,9 +75,9 @@ Vissa funktioner och deras associerade värde för gränsen beror på vilket Cus
 | Målgruppsfilter | 20 | Systemstyrd Guardrail | Maximalt antal [filter](../components/filters/filters-overview.md) per publik. |
 | Antal målgruppsidentiteter | 20 miljoner | Systemstyrd Guardrail | Maximalt antal identiteter per publik. |
 | Målgruppsuppdateringsfrekvens | 4 | Systemstyrd Guardrail | Maximal frekvens i timmar [publik](../components/audiences/audiences-overview.md) kan uppdateras. |
-| Uppslagsfönster för uppdatering av målgrupp | 90 | Systemstyrd Guardrail | Maximalt antal dagar för uppdateringsfönster. |
+| Fönstret Uppslagning av målgruppsuppdatering | 90 | Systemstyrd Guardrail | Maximalt antal dagar för uppdateringsfönster. |
 | Uppdaterar förfallodatum för målgrupp | 13 | Systemstyrd Guardrail | Det maximala antalet månader som publiken inte längre kan uppdatera från det datum då den skapades. Kunderna kan förlänga denna period i ytterligare 13 månader. |
-| Antal uppdaterade målgrupper | 75, 100 | Systemstyrd Guardrail | Maximalt antal uppdaterade målgrupper, värdet varierar beroende på paketet (se produktbeskrivning). |
+| Antal uppdaterade målgrupper | 75, 150 | Systemstyrd Guardrail | Maximalt antal uppdaterade målgrupper, värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 {style="table-layout:auto"}
 
@@ -110,7 +110,7 @@ Se även Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Anteckningsbeskrivning | 250 | Systemstyrd Guardrail | Maximalt antal tecken för en anteckningsbeskrivning. |
 | Schemafält | 10 | Systemstyrd Guardrail | Maximalt antal schemafält (exklusive standardfält) när regler definieras för en [härlett fält](../data-views/derived-fields/derived-fields.md). |
 | Uppslags-/profilfält | 3 | Systemstyrd Guardrail | Maximalt antal söknings- eller profilschemafält inom maximalt antal schemafält (exklusive standardfält) när regler definieras för ett härlett fält. |
-| Härledda fält | 100 | Systemstyrd Guardrail | Maximalt antal härledda fält per anslutning. |
+| Härledda fält | 100-500 | Systemstyrd Guardrail | Maximalt antal härledda fält per anslutning. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 {style="table-layout:auto"}
 
@@ -134,7 +134,7 @@ Se även Experience Platform [Guardsedningar för datainmatning](https://experie
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
 | Dataexport | Total godkänd datasjölagring | Prestandagardri | Kunden kan använda export av måldatauppsättning för att exportera kunddata i datasjön upp till Total Authorized Data Lake Storage. |
-| Tillgängliga datauppsättningar | Profil och händelse | Systemtvångstskydd | Data för profil- och upplevelsehändelser som har skapats i användargränssnittet i Experience Platform efter att ha inhämtat eller samlat in data via Sources, Web SDK, Mobile SDK, Analytics Data Connector och Audience Manager. |
+| Tillgängliga datauppsättningar | Profil och händelse | Systemtvångstskydd | Händelse-, profil- eller uppslagsdatauppsättningar som har skapats i användargränssnittet i Experience Platform efter att data har importerats eller samlats in via Sources, Web SDK, Mobile SDK, Analytics Data Connector och Audience Manager. |
 
 {style="table-layout:auto"}
 
@@ -155,8 +155,8 @@ Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://
 
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
-| Namngivna datauppsättningar | 10 | Systemstyrd Guardrail | Maximalt antal sydda datauppsättningar per kund varierar värdet beroende på vilket Customer Journey Analytics-paket som används (se produktbeskrivning). |
-| Backfill-data | 60 | Systemstyrd Guardrail | Maximalt antal dagar med data för bakåtfyllnad. |
+| Namngivna datauppsättningar | 5-50 | Systemstyrd Guardrail | Maximalt antal sammanslagna datauppsättningar per kund. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Backfill-data | 60-395 | Systemstyrd Guardrail | Maximalt antal dagar med data för bakgrundsfyllning. Värdet varierar beroende på paketet Customer Journey Analytics (se produktbeskrivning). |
 
 {style="table-layout:auto"}
 
@@ -205,7 +205,7 @@ Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://
 
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
-| Rader per rapport | 3 miljoner - 300 miljoner | Systemstyrd Guardrail | Maximalt antal rapporteringsrader per rapport. Värdet varierar beroende på vilket Customer Journey Analytics-paket som används (se produktbeskrivning). |
+| Rader per rapport | 3 miljoner - 300 miljoner | Systemstyrd Guardrail | Maximalt antal rapporteringsrader per rapport. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 | Uppdelningar per tabell | 5 | Systemstyrd Guardrail | Maximalt antal uppdelningar per tabell. |
 | Mätvärden per tabell | 5 | Systemstyrd Guardrail | Maximalt antal mätvärden per tabell. |
 | Schemaläggningsfrekvens | 1 | Systemstyrd Guardrail | Exporten kan schemaläggas en gång (1) om dagen eller längre (t.ex. en gång varannan dag eller en gång i veckan). |
