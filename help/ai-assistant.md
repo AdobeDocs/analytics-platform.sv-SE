@@ -4,12 +4,15 @@ title: AI Assistant för Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 49f2c393bbd0bff28dd8bc166b3c60bc49d4df37
+hide: true
+hidefromtoc: true
+source-git-commit: d993f46821e6236f4536fea953585219ec8096b5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
+
 
 # AI Assistant för Adobe Customer Journey Analytics
 
@@ -41,7 +44,7 @@ I den här första versionen styrs åtkomsten till AI-assistentfunktionen av fö
 
 * **Åtkomst till lösningar**: AI-assistenten finns i Customer Journey Analytics, men inte i Adobe Analytics. Det finns också i Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP och andra appar för Experience Platform.
 
-* **Kontraktsåtkomst**: Ditt säljkontrakt för Adobe måste innehålla en klausul som gör att Adobe kan använda dina data i AI/ML-modellutveckling (klausul 6.2).
+* **Kontraktsåtkomst**: Ditt säljkontrakt för Adobe måste innehålla klausul 6.2 som gör att Adobe kan använda dina data vid utveckling av AI/ML-modeller.
 
 * **Behörigheter**: [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting Tools] Behörigheten&quot;AI Assistant Documentation&quot; bestämmer åtkomsten till det här verktyget. Detta tillstånd läggs till i avsnittet Rapporteringsverktyg i mitten av maj. Du måste se till att du skapar en [produktprofil](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i Admin Console med detta tillstånd och lägg till användare manuellt i profilen.
 
