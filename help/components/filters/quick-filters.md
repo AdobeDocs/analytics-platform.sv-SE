@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,11 @@ Så här skapar du ett snabbfilter:
 
 1. Välj en av följande metoder för att börja skapa snabbfiltret:
 
-   * **Ad hoc (dra och släpp):** Dra en komponent från den vänstra listen till släppzonen intill **Filter** -ikonen i panelhuvudet och välj sedan **Redigera** för att justera filtret.
+   * **Ad hoc (dra och släpp):** Dra en komponent från den vänstra listen till filtersläppzonen i panelhuvudet.
 
-     ![Redigera ad hoc-filter](assets/filter-adhoc-edit.png)
+     ![släppa ett segment i släppzonen](assets/filter-dropzone.png)
+
+     Du kan redigera snabbfiltret enligt beskrivningen i [Redigera ett snabbfilter](#edit-a-quick-filter).
 
      >[!NOTE]
      >

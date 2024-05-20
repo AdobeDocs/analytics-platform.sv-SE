@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0014515b29885bf3eb44e8e49fc605fc76e4b439
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '3547'
+source-wordcount: '3570'
 ht-degree: 6%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Maj 2024** | |
+| Dokumentation om hur du lägger till komponenter i projekt | Lagt till allmän information om hur du [lägga till olika typer av komponenter i projekt i Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Användningsexempel vid dataexport | Uppsättning nya artiklar som beskriver [användningsfall vid dataexport](/help/use-cases/data-export/overview.md) och hur du använder Experience Platform och Customer Journey Analytics för att implementera dessa användningsfall |
 | Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål.<p>Nu finns det nya dokumentationsresurser som hjälper dig att förstå:</p><ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li><li>Och mycket mer!</li></ul><p>[Kom igång med uppgraderingen till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | Uppdaterad dokumentation om anpassade datumintervall | Uppdaterade skärmdumpar och procedurer för [skapa anpassade datumintervall](/help/components/date-ranges/custom-date-ranges.md) för att matcha de nuvarande produktfunktionerna och designen. |

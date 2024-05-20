@@ -4,9 +4,9 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,21 @@ Lägga till en visualisering:
 >
 >Om du vill ha information om de olika komponenterna väljer du ikonen Info bredvid en komponents namn i den vänstra listen. Du kan också se ikonen [Komponenter - översikt](/help/components/overview.md).
 
-Så här lägger du till en komponent:
+Här följer grundläggande information om hur du lägger till en komponent i ett projekt i Analysis Workspace. Mer information om hur du lägger till olika typer av komponenter (mått, mått, filter och datumintervall) finns i [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md).
+
+Så här lägger du till en komponent i ett projekt i Analysis Workspace:
 
 1. Välj **[!UICONTROL Components]** ikonen i den vänstra listen.
 
    ![Ikonen för valda komponenter och listan med tillgängliga dimensioner.](assets/build-components.png)
 
-1. Sök efter komponenten som du vill lägga till. När den visas i den vänstra listen drar du den till en panel eller visualisering i projektet.
+1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
+
+   Du kan till exempel dra ett filter till filtersläppzonen i en panelrubrik.
+
+   ![släppa ett filter i släppzonen](assets/filter-dropzone.png)
+
+   Mer information om hur du lägger till komponenter i projekt finns i [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 1. (Valfritt) Dela projektet enligt beskrivningen i [Spara och dela projektet](#save-and-share-the-project).
 
