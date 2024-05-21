@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
 workflow-type: tm+mt
-source-wordcount: '5673'
+source-wordcount: '5707'
 ht-degree: 3%
 
 ---
@@ -255,7 +255,7 @@ Om din plats får följande exempelhändelser, som innehåller [!UICONTROL Refer
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -445,13 +445,13 @@ Definierar en uppsättning värden som ersätts av motsvarande värden i ett nyt
 
 >[!NOTE]
 >
->Funktionen hette ursprungligen Sök efter men har bytt namn till Klassificera för att passa en kommande Lookup-funktion med olika funktioner.
+>Den här funktionen hette ursprungligen Sök efter, men har bytt namn till Klassificera för att få plats med sökfunktionen med olika funktioner.
 
 ## Specifikationer {#classify-io}
 
 | Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
 |---|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul><li>Visa originalvärden<ul><li>Boolean</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält<br/>100 rader per funktion</p> | <p>Nytt härlett fält</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>[!UICONTROL When value equals] och [!UICONTROL Replace values with]:</p><ul><li>Sträng</li></ul><li>Visa originalvärden<ul><li>Boolean</li></ul></li></ul> | <p>Ej tillämpligt</p> | <ul><li>5 funktioner per härlett fält</li><li>200 [operatorer](#operators) per härlett fält. Varje post för [!UICONTROL When value equals original value] [!UICONTROL Replace value with New value] betraktas som en åtgärd.</li></ul> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -1307,6 +1307,12 @@ En operator i en If- eller Else If-konstruktion i en Case When-funktion är komb
 I följande villkor används till exempel 13 operatorer.
 
 ![Exempeloperatorer](assets/operators-sample.png)
+
+En operator i funktionen Klassificera är en enda post för [!UICONTROL When value equal Original value] [!UICONTROL Replace value with New value].
+
+I regeln Klassificera nedan används till exempel tre operatorer.
+
+![Skärmbild av klassificeringsregel 1](assets/classify-1.png)
 
 
 ## Mer information
