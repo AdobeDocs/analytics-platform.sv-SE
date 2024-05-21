@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b78e3812f716d4c0d8807fa82892a6e4d918f7bd
+source-git-commit: 7619818cafec3891379099c31fe46dd803b378c7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (maj 2024)
 
-**Senaste uppdatering**: 15 maj 2024
+**Senaste uppdatering**: 21 maj 2024
 
 Versionsanteckningarna gäller releasetiden 15 maj 2024 till juni 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -25,6 +25,7 @@ Versionsanteckningarna gäller releasetiden 15 maj 2024 till juni 2024. Adobe Cu
 | **AI Assistant för Customer Journey Analytics** | Gör att du kan ställa naturspråkliga frågor i användargränssnittet för Customer Journey Analytics och få svar baserat på dokumentationen för Customer Journey Analytics. (Dokumentationslänk följer) | | 30 maj 2024 |
 | **Direktuppspelningsmedia: Skicka webbdata till Adobe Experience Platform Edge Network med Web SDK** | Nu kan du använda Adobe Experience Platform Web SDK för att skicka Streaming Media-webbdata till Adobe Experience Platform Edge Network, vilket gör att du kan skapa mer personaliserade kampanjer och leverera mer personaliserat innehåll, vilket resulterar i mer spårningsdata att rapportera om.<p>Den här förbättringen erbjuder en enhetlig insamlingsmetod för webblösningar i alla plattformslösningar, till exempel Customer Journey Analytics, RT-CDP, AJO och händelsevidarebefordran. Tidigare var det enda sättet att skicka Streaming Media-webbdata till Edge Network att använda Media Edge API. [Läs mer här] | | 31 maj 2024 |
 | **Härledda fält - matematisk funktion** | Gör att du kan göra enkla matematiska operatorer i datavyer för att besvara frågor om dina användare. Du kan t.ex. kombinera intäkter från produkt, garanti och frakt. (Dokumentationslänk följer) | | 5 juni 2024 |
+| **Dela konton och platser som används för export och import** | Användarna kan nu göra de konton och platser de skapar tillgängliga för alla användare i organisationen. Endast konto- och platsägare och systemadministratörer kan redigera och ta bort konton och platser.<p>Tidigare kunde konton och platser bara användas av den användare som skapade dem.</p><p>Dessa inställningar är tillgängliga när användare [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). </p> | Juni 2024 | Juni 2024 |
 | **Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics** | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål. Nu finns det nya dokumentationsresurser som hjälper dig att förstå:<ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li></ul>[Kom igång med uppgraderingen till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted) | | Ute nu |
 | **Ny dokumentation om [Användningsexempel vid dataexport](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/overview)** | I det nya avsnittet beskrivs hur dataexport kan användas till exempel<ul><li>Säkerhetskopiering av data</li><li>Dataverifiering</li><li>Data Lake, Data Warehouse eller BI Tools</li><li>Beredskap för AI/ML</li></ul> och implementera dem med Experience Platform och Customer Journey Analytics. | | Ute nu |
 
