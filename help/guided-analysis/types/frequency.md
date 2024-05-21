@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 481e52bbfe06268642522b908f9b7ac66c882433
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 The **[!UICONTROL Frequency]** visa grupperade händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här vyn innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
 
-![Skärmbild med frekvens](../assets/frequency-stacked.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
 ## Användningsexempel
 
@@ -33,7 +33,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Användning](usage.md).
 * **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som ett separat diagram. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
-* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen inkluderar [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] och  [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
+* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen inkluderar [!UICONTROL Users], [!UICONTROL Sessions], [!UICONTROL Percentage of users] och [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
 * **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet staplar i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
 
 ## Diagraminställningar
