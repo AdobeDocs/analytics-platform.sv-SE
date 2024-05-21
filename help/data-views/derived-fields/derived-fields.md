@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
+source-git-commit: 09da072a3863a2d0a0ed7d90802f65b64f6f753c
 workflow-type: tm+mt
-source-wordcount: '5707'
+source-wordcount: '5708'
 ht-degree: 3%
 
 ---
@@ -1287,7 +1287,7 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 | Funktion | Begränsningar |
 |---|---|
 | <p>Skiftläge</p> | <ul><li>5 Skiftläge När funktioner per härlett fält</li><li>200 [operatorer](#operators) per härlett fält</li></ul> |
-| <p>Klassificera</p> | <ul><li>5 Klassificera funktioner per härlett fält</li><li>100 rader per funktion</li></ul> |
+| <p>Klassificera</p> | <ul><li>5 Klassificera funktioner per härlett fält</li><li>200 [operatorer](#operators) per härlett fält</li></ul> |
 | <p>Sammanfoga</p> | <ul><li>2 Sammanfogningsfunktioner per härlett fält</li></ul> |
 | <p>Sök och ersätt</p> | <ul><li>2 Sök och ersätt-funktioner per härlett fält</li></ul> |
 | <p>Sök</p> | <ul><li>5 Sökfunktioner per härlett fält</li></ul> |
