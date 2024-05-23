@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 87661e0000d050652d9510bb4830ca6f30bfeae9
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Se [Anslut klienter till frågetjänsten](https://experienceleague.adobe.com/en/
 
 ## Funktionalitet
 
-Som standard har datavyerna ett tabellsäkert namn som genereras utifrån det egna namnet. Datavy med namnet [!UICONTROL My Web Data View] har vynamnet `my_web_data_view`.
+Som standard har datavyerna ett tabellsäkert namn som genereras utifrån det egna namnet. Datavy med namnet [!UICONTROL My Web Data View] har vynamnet `my_web_data_view`. Du kan definiera ett föredraget namn som ska användas i BI-verktyget för datavyn. Se [Inställningar för datavy](create-dataview.md#settings) för mer information.
 
 Om du vill använda ID:n för datavyn som tabellnamn kan du lägga till de valfria `CJA_USE_IDS` ange till ditt databasnamn vid anslutning. Till exempel: `prod:cja?CJA_USE_IDS` visar datavyer med namn som `dv_ABC123`.
 
