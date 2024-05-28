@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
+source-git-commit: bba51d1354d14d6e7eb236b787b419571fea6423
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2792'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,7 @@ The [!UICONTROL Usage] -gränssnittet visar användningen av kapslade och rappor
 
 Välj **[!UICONTROL Usage]** -fliken för att komma åt gränssnittet.
 
-Så här rapporterar du om användningen:
+### Rapport om användning
 
 1. Välj en **[!UICONTROL Time range]**. Du kan välja mellan **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, eller **[!UICONTROL Last 2 Years]**.
 1. Välj en **[!UICONTROL Interval]**. Du kan välja mellan **[!UICONTROL Monthly]** eller **[!UICONTROL Quarterly]**.
