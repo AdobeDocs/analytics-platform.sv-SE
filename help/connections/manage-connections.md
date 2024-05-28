@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 73b9aa3bc7568c90c3e92b6fa8197577a904a6a2
+source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
 workflow-type: tm+mt
-source-wordcount: '2790'
+source-wordcount: '2793'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ När du har [har skapat eller redigerat en eller flera anslutningar](/help/conne
 ## Lista
 
 The [!UICONTROL List] -gränssnittet är standardgränssnittet för anslutningar. Om det inte är markerat väljer du **[!UICONTROL List]** -fliken för att komma åt gränssnittet.
+
+![listvy](assets/list-view.png)
 
 The [!UICONTROL List] -gränssnittet visar en tabell med alla tillgängliga anslutningar. Du kan snabbt söka efter en anslutning med sökfunktionen ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
@@ -202,6 +204,8 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 
 The [!UICONTROL Usage] -gränssnittet visar användningen av kapslade och rapportbara rader över alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats.
 
+![användningsvy](assets/usage-view.png)
+
 Välj **[!UICONTROL Usage]** -fliken för att komma åt gränssnittet.
 
 Så här rapporterar du om användningen:
@@ -211,14 +215,14 @@ Så här rapporterar du om användningen:
 
 För [!UICONTROL Ingested rows]:
 
-* en panel visar det totala antalet inkapslade rader som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
+* På en panel visas det totala antalet inkapslade rader som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
    * en ruta visar antalet inkapslade rader för den senaste månaden och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
    * ett linjediagram visar <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly ingested rows].<br/>Om du vill visa en popup-meny som visar antalet månadsinkapslade rader för en månad håller du pekaren över en datapunkt i linjediagrammet.
 
 
 För [!UICONTROL Reportable rows]:
 
-* en panel visar totalt antal rader som kan rapporteras och som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
+* På en panel visas totalt antal rader som kan rapporteras och som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
    * en ruta visar det sammanlagda antalet rader som kan rapporteras.
    * en ruta visar det totala antalet rapporteringsbara rader för den senaste månaden och ändringen i % (anges av <span style="color:green">tunn</span> eller <span style="color:c64545">▼</span>) från föregående månad.
    * ett linjediagram visar <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly reportable rows].<br/>Om du vill visa ett popup-fönster som visar antalet kumulativa rapportbara rader för en viss månad håller du pekaren över en datapunkt i linjediagrammet.
