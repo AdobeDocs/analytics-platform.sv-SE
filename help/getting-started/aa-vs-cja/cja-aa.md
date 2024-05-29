@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2126'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 
 | Funktion | Anteckningar |
 | --- | --- |
+| Analyser för mål (A4T) | The [integrering mellan Adobe Customer Journey Analytics och Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) innehåller kraftfulla analys- och tidsbesparande verktyg för optimeringsprogrammet. |
 | Målgruppspublicering | Stöds om licensen har erhållits med Adobe Customer Data Platform eller Journey Optimizer-produkter. [Audience Publishing](/help/components/audiences/audiences-overview.md) skickar målgrupper till kundprofil i realtid i Experience Platform. |
 | Klassificeringar | Kallas nu&quot;Sök efter datauppsättningar&quot;. Klassifikationer som används i Analytics kan importeras till Experience Platform och Customer Journey Analytics med hjälp av källkopplingen för analysklassificeringar. Uppslagsdatauppsättningar kan också överföras direkt till Experience Platform och göras tillgängliga i Customer Journey Analytics. |
 | Skapa klassificeringsregel | Stöds med [delsträngar](/help/data-views/component-settings/substring.md) i Customer Journey Analytics. Använder strängändringar vid rapporttidpunkten i stället för att söka efter datauppsättningar. |
@@ -87,7 +88,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Funktion | Anteckningar |
 | --- | --- |
 | Panel | Panelen Tom, panelen Attribution, panelen Frihand och Insights stöds till fullo. Segmentjämförelse och analys för målpaneler (A4T) stöds inte. |
-| Analyser för mål (A4T) | I betaversion. Delvis stöd ges via fälten i [Källanslutning för analyser](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Stöd för A4T-vänliga namn på målaktiviteter och -upplevelser planeras. |
 
 {style="table-layout:auto"}
 
