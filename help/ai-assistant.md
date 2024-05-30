@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: 9659ebfc267be769c7a87c01b129245c97b82a95
+source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,11 @@ Några exempel på konceptfrågor är:
 * Vad är Customer Journey Analytics bäst för?
 * Hur konfigurerar jag en datavy?
 
-Modellen för dokumentationsåterhämtning har utbildats på Customer Journey Analytics. Frågor utanför Customer Journey Analytics, t.ex. frågor om andra Adobe-produkter som Adobe Target och Adobe Creative Cloud Suite, kan inte besvaras.
+Modellen för hämtning av produktkunskap är utbildad i Customer Journey Analytics. Andra funktioner, som dataanalys, kommer att introduceras vid en senare tidpunkt.
+
+Frågor utanför Customer Journey Analytics, t.ex. frågor om andra Adobe-produkter som Adobe Target och Adobe Creative Cloud Suite, kan inte besvaras.
 
 AI Assistant för Customer Journey Analytics är tillgängligt på alla produktnivåer.
-
->[!IMPORTANT]
->
->I nuläget besvarar inte AI Assistant för Customer Journey Analytics användningsfrågor om dataobjekt i organisationen.
 
 ## Funktionsåtkomst
 
@@ -46,7 +44,7 @@ I den här första versionen styrs åtkomsten till AI-assistentfunktionen av fö
 
 * **Kontraktsåtkomst**: Om du inte kan använda AI Assistant kontaktar du organisationens administratör eller Adobe Account Representant. Innan AI Assistant kan användas av din organisation måste ditt företag godkänna vissa GenAI-relaterade juridiska villkor.
 
-* **Behörigheter**: [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting Tools] Behörigheten&quot;AI Assistant Documentation&quot; bestämmer åtkomsten till det här verktyget. Detta tillstånd läggs till i avsnittet Rapporteringsverktyg i mitten av maj. Du måste se till att du skapar en [produktprofil](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i Admin Console med detta tillstånd och lägg till användare manuellt i profilen.
+* **Behörigheter**: [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting Tools] &quot;AI Assistant: Product Knowledge&quot; avgör åtkomsten till det här verktyget. Detta tillstånd läggs till i avsnittet Rapporteringsverktyg i mitten av maj. En produktprofiladministratör måste skapa en [produktprofil](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i Admin Console med detta tillstånd och lägg till användare manuellt i profilen.
 
 ## Åtkomst till AI-assistenten i användargränssnittet i Customer Journey Analytics
 
