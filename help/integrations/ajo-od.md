@@ -4,9 +4,9 @@ description: Hämta in data som genererats av Adobe Journey Optimizer Decision M
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
+source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | Poäng för reservbeslut | Beräknat värde för ett alternativ för reservalternativ i ett enda omfång. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Komponenttyp: Mått |
 | Avvisa erbjudanden | Antalet erbjudanden som avvisats eller avvisats utan någon annan direkt interaktion. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponenttyp: Mått |
 | Visa erbjudanden | Antalet erbjudanden som visas för profilen. | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponenttyp: Mått |
-| Erbjudandeinteraktion | Antalet erbjudanden som visas för profilen. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponenttyp: Mått |
+| Erbjudandeinteraktion | Antalet erbjudanden som profilen interagerade med. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponenttyp: Mått |
 | Skicka erbjudanden | Antalet erbjudanden som skickas till profilen. | `_experience.decisioning.`<br/>`propositionEventType.send` | Komponenttyp: Mått |
 | Erbjudandeutlösare | Antalet erbjudanden som ska visas av klient-SDK. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
 | Avbeställ | Antalet erbjudanden som efterfrågats av profilen som inte ska visas i framtiden. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Komponenttyp: Mått |

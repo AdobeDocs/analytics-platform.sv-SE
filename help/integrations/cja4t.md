@@ -3,9 +3,9 @@ title: Integrera Target med Customer Journey Analytics
 description: Integrera Target med Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-source-git-commit: 6b1761baec8cb1b102943ef7145403ccd2dbf840
+source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -20,4 +20,6 @@ De främsta fördelarna är:
 * Marknadsförarna kan utnyttja Customer Journey Analytics funktioner, som Experimentation Panel, för att analysera webbplatspersonaliseringen ytterligare.
 * Marknadsförarna kan ha en enda rapportkälla för Adobe Journey Optimizer och Target. Båda personaliseringsprodukterna kan kopplas till Customer Journey Analytics för att ge en mer helhetsbild av din webbpersonalisering.
 
-Se [Målrapportering i Adobe Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) i Adobe Target-dokumentationen.
+Se [Målrapportering i Adobe Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) i Target-dokumentationen om du vill ha mer information.
+
+Se [Panelen Experimentation](../analysis-workspace/c-panels/experimentation.md) om du vill ha mer information om hur analytiker kan jämföra olika användarupplevelser, marknadsförings- eller meddelandevarianter för att avgöra vilket som är bäst för att uppnå ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe-lösningar som Target eller Journey Optimizer, och till och med från BYO (hämta in dina egna) data.
