@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
+source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 0%
 >
 >AI Assistant för Customer Journey Analytics är för närvarande i Beta. Funktionen och dess dokumentation kan komma att ändras.
 
-AI Assistant är en gränssnittsfunktion som du kan använda för att navigera bland och förstå Adobe Customer Journey Analytics koncept och terminologi. AI Assistant i Customer Journey Analytics är utbildad i sin Adobe Experience League-dokumentation. När AI Assistant tillfrågas om det finns ett användbart svar som gör att du snabbt kan lära dig mer.
+AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverksamma att utföra uppgifter snabbt - oavsett om de förstår koncept, felsöker problem eller söker igenom information. Det gör det även möjligt för icke-experter att utföra expertuppgifter och ökar den övergripande kvaliteten på arbetet.
+
+AI Assistant i Customer Journey Analytics är utbildad i sin Adobe Experience League-dokumentation. När AI Assistant tillfrågas om det finns ett användbart svar som gör att du snabbt kan lära dig mer.
 
 Som nybörjare kan du använda AI Assistant för att lära dig Customer Journey Analytics koncept och själv ta till vara produkter och funktioner som du inte är bekant med. Som erfaren användare kan du använda AI Assistant för att visa mer avancerade användningsexempel eller tips och tricks.
 
@@ -58,6 +60,6 @@ I den här första versionen styrs åtkomsten till AI-assistentfunktionen av fö
 
    ![Frågeruta](assets/ai-asst2.png)
 
-1. (Valfritt) Om du vill visa källor klickar du på **[!UICONTROL Show Sources]** och dokumentationskällan/dokumentationskällorna som informerade svaret visas.
+1. (Valfritt) Om du vill visa källor klickar du på **[!UICONTROL Show Sources]** och dokumentationskällan eller -källorna som informerade svaret visas.
 
 1. (Valfritt) Du kan även ge en röstning med upp- eller nedstaplar om hur användbart ett visst svar är.
