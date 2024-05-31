@@ -5,7 +5,7 @@ keywords: produktanalys
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
+source-git-commit: a55224d91dbcf7323ccd481b4a7469d5b80f12c4
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Följande guidade analysvyer är tillgängliga:
 
 | Analystyp | Vytyp | Beskrivning |
 | --- | --- | --- |
-| [!UICONTROL Feature matrix] | [Engagemang](types/engagement.md) | Förstå bredden och bredden av funktionsengagemang. |
+| [!UICONTROL Feature matrix] | [Engagemang](types/engagement.md) | Förstå bredden och djupet av engagemanget. |
 | [!UICONTROL Funnel] | [Funktion](types/friction.md) | Jämför konverteringsgrader mellan steg. |
 | [!UICONTROL Funnel] | [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
 | [!UICONTROL Impact] | [Frigör](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
