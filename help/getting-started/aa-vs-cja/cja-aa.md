@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
+source-git-commit: 8e6f16acc475fb89c9b9ba50ccef174d3c7b10ea
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2189'
 ht-degree: 1%
 
 ---
@@ -136,6 +136,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | Guidad analys | Guidad analys är ett rapportformat som gör att användarna snabbt kan ta hand om sina databehov så att de snabbt kan få högkvalitativa insikter och fatta mer databaserade beslut. Guidad analys ingår i Adobe Product Analytics, ett tillägg till Customer Journey Analytics. |
 | Intelligenta bildtexter | Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för arbetsytevisualiseringar. Den första versionen innehåller automatiskt genererade insikter om [Linje](/help/analysis-workspace/visualizations/line.md) visualisering. |
 | Omformningar i rapporttid | Med datavyer i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde eller filtrera delmängder. Alla dessa omformningar görs på ett icke-förstörande sätt. Adobe Analytics har begränsade möjligheter genom virtuella rapportsviter och anpassad sessionslängd. |
+| BI-tillägg | Med BI Extension kan du ansluta CJA direkt till vanliga BI-visualiseringsverktyg som PowerBI eller Tableau, så att du kan ha dina BI-rapporter som exakt matchar det du ser i Analysis Workspace och andra CJA-rapporteringsgränssnitt. Detta är ett mycket enklare sätt att få BI-rapportering för CJA utan att behöva återskapa rapporter/mätvärden från rådata. |
 | SQL-åtkomst | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
 | Obegränsade kunddimensioner och mätvärden | Customer Journey Analytics är obegränsade. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla. Dimensioner kan vara kapslade eller hierarkiska. <p>Adobe Analytics stöder däremot upp till högst 75 props och 250 eVars.</p> |
 | Obegränsade unika värden | Customer Journey Analytics stöder obegränsat antal unika värden eller dimensionsposter som kan rapporteras inom en dimension.<p>Det finns inga [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md), vilket gör att unika värden kan visas och räknas.</p><p>Detta tillvägagångssätt tar bort rapporterings- och analysbegränsningar som kan förekomma med storskaliga Adobe Analytics-implementeringar, vilket resulterar i [!UICONTROL Low Traffic] etiketter.</p><p>I Customer Journey Analytics kan du se [!UICONTROL Uniques Exceeded] -etiketten, men dessa förekommer betydligt mindre ofta och kan minskas genom att ett filter eller segment tillämpas på data.</p> |
