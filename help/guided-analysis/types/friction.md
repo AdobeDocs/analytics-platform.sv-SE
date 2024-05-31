@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
+source-git-commit: 63dd68d31a9f2b907419fa660904f1dfdacaa0b8
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,11 @@ The **[!UICONTROL Friction]** ger en visuell representation av en viktig använd
 
 Exempel:
 
-* **Konverteringsanalys**: Du kan analysera konverteringar i varje steg i tratten. Genom att spåra antalet användare som går från ett steg till nästa kan ni identifiera flaskhalsar som har ovanliga eller oönskade konverteringsgrader. Den här informationen är värdefull för att förstå var du kan förbättra produkten och få omedelbara resultat.
+* **Konverteringsanalys**: Du kan analysera konverteringar i varje skede av processen, t.ex. en utcheckning i detaljhandeln, kontoregistrering, prenumerationsflöde eller någon annan viktig resa i produktupplevelsen. Genom att spåra antalet användare som går från ett steg till nästa kan ni identifiera flaskhalsar som har ovanliga eller oönskade konverteringsgrader. Denna information är värdefull för att förstå var ni kan förbättra er produktresa och få omedelbara resultat.
+* **Experimentationsanalys**: Du kan jämföra konverteringsgrader i en tratt som innehåller valfria steg eller steg där ett A/B-experiment körs. Den här informationen kan hjälpa dig att avgöra vilken variation av tratten som leder till den högsta konverteringsgraden så att du kan uppmuntra fler användare på den vägen.
 * **Optimering av introduktion**: Optimera produktens introduktionsprocess genom att undersöka användarbeteenden kring viktiga händelser. Du kan identifiera vilka steg som användare kämpar med eller misslyckas med.
 * **Engagemang och engagemang**: Förstå hur användarna interagerar med specifika funktioner i produkten. Genom att analysera användarnas utveckling genom funktionsrelaterade steg kan ni se hur många användare som har kommit igång och identifiera områden där användarna kan komma att underanvända vissa funktioner. Du kan sedan använda den här informationen för att fokusera på funktionsförbättringar för att öka användningen.
-* **Kampanjutvärdering**: Mät effektiviteten i marknadsföringskampanjer. Ni kan skapa ett segment som fokuserar på användare som berörde en viss kampanj och jämföra deras konverteringsprocess med andra kampanjer eller inom den övergripande produkten.
+* **Effektiv marknadsföring**: Mät marknadsföringskanalernas effektivitet. Du kan skapa ett segment som fokuserar på användare som interagerade med olika marknadsföringskanaler (t.ex. betalsökningar, displayannonsering, naturlig sökning eller direktförsäljning) och sedan jämföra deras resor för att se vilken kanal som leder till de bästa produktresultaten.
 
 ## Frågerår
 
@@ -33,7 +34,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Konverteringstrender](conversion-trends.md).
 * **[!UICONTROL Steps]**: De händelsetyper som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-   * [!UICONTROL Compare]: I varje steg finns ett alternativ för att jämföra flera händelser i ett enda tratt, vilket skapar en&quot;forked trnel&quot;. Med den här funktionen kan du jämföra friktionen för två resor sida vid sida utan att skapa två separata analyser.
+   * [!UICONTROL Compare]: I varje steg finns ett alternativ för att jämföra flera händelser i ett enda tratt, vilket skapar en&quot;forked trnel&quot;. Med den här funktionen kan du jämföra friktionen för två resor sida vid sida utan att skapa två separata analyser. Det är användbart när det finns stegalternativ eller när ett A/B-experiment körs i tratten.
 * **[!UICONTROL Counted as]**: Det omfång som du vill ska tillämpas på tratten. Alternativen inkluderar [!UICONTROL Sessions] och [!UICONTROL Users].
    * [!UICONTROL Sessions]: Alla steg måste inträffa i samma session för att räknas.
    * [!UICONTROL Users]: Alla steg måste inträffa i det valda rapportfönstret för att räknas.
