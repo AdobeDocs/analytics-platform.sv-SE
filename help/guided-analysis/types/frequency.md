@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 481e52bbfe06268642522b908f9b7ac66c882433
+source-git-commit: 70c274819eaef46627bf66d05ef8f790f61906a4
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ The [!UICONTROL Frequency] I vyn finns följande diagraminställningar som du ka
 
 ## Inställningar för Bucket
 
-Anger hur händelsen kategoriseras i grupper.
+Avgör hur händelsen kategoriseras i grupper (grupper). I den trendade tabellvyn är användarna paketerade baserat på användningsfrekvens i totalt och i varje intervall, vilket innebär att 1 användare kan räkna till olika bucklar i olika intervall.
 
 * **[!UICONTROL Auto buckets]**: Identifiera automatiskt den optimala bucketstorleken baserat på datafördelningen.
 * **[!UICONTROL Customized buckets]**: Anpassa hur data grupperas i grupper.
@@ -60,5 +60,5 @@ Anger hur händelsen kategoriseras i grupper.
 
 Det önskade datumintervallet för analysen. Den här inställningen har två komponenter:
 
-* **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa trenddata efter. Den här inställningen påverkar inte icke-trendvyer som Frekvens.
+* **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Diagrammet och tabellen visar aggregerade data som standard, med möjlighet att expandera tabellen till en trendvy. I trendvyn är användarna paketerade baserat på användningsfrekvens i totalt och i varje intervall, vilket innebär att 1 användare kan räkna till olika bucklar i olika intervall.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
