@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
+source-git-commit: fb9b0d2c8d2333aba83598ab1e1aea2370636002
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -32,6 +32,10 @@ Några exempel på konceptfrågor är:
 * Vad är Customer Journey Analytics bäst för?
 * Hur konfigurerar jag en datavy?
 
+Frågor utanför Customer Journey Analytics, t.ex. frågor om andra Adobe-produkter som Adobe Target och Adobe Creative Cloud Suite, kan inte besvaras.
+
+AI Assistant för Customer Journey Analytics är tillgängligt på alla produktnivåer.
+
 ## Produktkunskap {#knowledge}
 
 Modellen för hämtning av produktkunskap är utbildad i Customer Journey Analytics. Andra funktioner, som dataanalys, kommer att introduceras vid en senare tidpunkt.
@@ -41,10 +45,6 @@ Modellen för hämtning av produktkunskap är utbildad i Customer Journey Analyt
 | Undervisning | <ul><li>Vad är skillnaden mellan Adobe Analytics och Customer Journey Analytics?</li><li>Hur bygger jag upp ett beräknat mätvärde?</li></ul> |
 | Öppna identifiering | <ul><li>Hur exporterar jag ett Workspace-projekt?</li><li>Hur hittar jag duplicerade arbetsytekomponenter?</li></ul> |
 | Felsökning | <ul><li>Hur lång tid tar det innan data kommer in i CJA?</li><li>Hur många härledda fält kan jag ha i en Customer Journey Analytics-anslutning?</li></ul> |
-
-Frågor utanför Customer Journey Analytics, t.ex. frågor om andra Adobe-produkter som Adobe Target och Adobe Creative Cloud Suite, kan inte besvaras.
-
-AI Assistant för Customer Journey Analytics är tillgängligt på alla produktnivåer.
 
 ## Funktionsåtkomst
 
