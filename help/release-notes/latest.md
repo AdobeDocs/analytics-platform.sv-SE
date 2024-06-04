@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: dcd7484a98363a6a818b59e9e183f699eecc1ed4
+source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (maj 2024)
 
-**Senaste uppdatering**: 21 maj 2024
+**Senaste uppdatering**: 4 juni 2024
 
 Versionsanteckningarna gäller releasetiden 15 maj 2024 till juni 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -22,7 +22,7 @@ Versionsanteckningarna gäller releasetiden 15 maj 2024 till juni 2024. Adobe Cu
 | ----------- | ---------- | ------- | ---- |
 | **BI-tillägg** | BI-tillägget ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension) | | 15 maj 2024 |
 | **Publiken publiceras i ett nytt&quot;Publiker&quot;-avsnitt i Experience Platform** | Publikationer som publiceras från Customer Journey Analytics är nu tillgängliga i det nya avsnittet&quot;Publiker&quot; i Adobe Experience Platform.<p>Tidigare fanns målgrupper som publicerades från Customer Journey Analytics tillgängliga i Experience Platform under segmentavsnittet.</p><p>Den här förbättringen ger följande fördelar:</p><ul><li>Publiken har inte längre en timmes fördröjning innan de visas i Experience Platform; de är tillgängliga sekunder efter att de har publicerats.</li><li>Publiker kan sorteras i Experience Platform med hjälp av kolumnen &quot;Ursprung&quot;, som visar det program som målgruppen ursprungligen publicerades från.</li><li>Med filtrerings- och sorteringsalternativen i Experience Platform kan du snabbare hitta rätt målgrupper.</li></ul> <p>(Länk till uppdaterad dokumentation följer)</p> |  | Från maj till början av juni 2024 |
-| **AI Assistant för Customer Journey Analytics** | Gör att du kan ställa naturspråkliga frågor i användargränssnittet för Customer Journey Analytics och få svar baserat på dokumentationen för Customer Journey Analytics. <p>(Länk till uppdaterad dokumentation följer)</p> | | 30 maj 2024 |
+| **AI Assistant för Customer Journey Analytics** | Gör att du kan ställa naturspråkliga frågor i användargränssnittet för Customer Journey Analytics och få svar baserat på dokumentationen för Customer Journey Analytics. <p>(Länk till uppdaterad dokumentation följer)</p> | | 6 juni 2024 |
 | **Direktuppspelningsmedia: Skicka webbdata till Adobe Experience Platform Edge Network med Web SDK** | Nu kan du använda Adobe Experience Platform Web SDK för att skicka Streaming Media-webbdata till Adobe Experience Platform Edge Network, vilket gör att du kan skapa mer personaliserade kampanjer och leverera mer personaliserat innehåll, vilket resulterar i mer spårningsdata att rapportera om.<p>Den här förbättringen erbjuder en enhetlig insamlingsmetod för webblösningar i alla plattformslösningar, till exempel Customer Journey Analytics, RT-CDP, AJO och händelsevidarebefordran. Tidigare var det enda sättet att skicka Streaming Media-webbdata till Edge Network att använda Media Edge API. <p>[Läs mer](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/edge-web-sdk)</p> | | 29 maj 2024 |
 | **Härledda fält - matematisk funktion** | Gör att du kan göra enkla matematiska operatorer i datavyer för att besvara frågor om dina användare. Du kan t.ex. kombinera intäkter från produkt, garanti och frakt. <p>(Länk till uppdaterad dokumentation följer)</p> | | 5 juni 2024 |
 | **Dela konton och platser som används för export och import** | Användarna kan nu göra de konton och platser de skapar tillgängliga för alla användare i organisationen. Endast konto- och platsägare och systemadministratörer kan redigera och ta bort konton och platser.<p>Tidigare kunde konton och platser bara användas av den användare som skapade dem.</p><p>De här inställningarna är tillgängliga när användare konfigurerar molnexportkonton och konfigurerar molnexportplatser.</p> <p>(Länk till uppdaterad dokumentation följer)</p> | 12 juni 2024 | 30 juni 2024 |
