@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
+source-git-commit: cf399df3a8043f5ec9fe723a531bf2f8af68799a
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1093'
 ht-degree: 8%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 8%
    + [Hantera anslutningar](../connections/manage-connections.md)
    + [Kombinerade händelsedatamängder](../connections/combined-dataset.md)
    + [Standardsökningar](../connections/standard-lookups.md)
-   + [Omforma datauppsättningar för B2B-sökningar](../connections/transform-datasets-b2b-lookups.md)
+   + [B2B-sökningar](../connections/transform-datasets-b2b-lookups.md)
 
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](../data-views/data-views.md)
