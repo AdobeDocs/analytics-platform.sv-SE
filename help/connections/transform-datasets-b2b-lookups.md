@@ -4,9 +4,10 @@ description: Beskriver hur du omformar data i datauppsättningar för specifika 
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ffa57c19174bf1618957efe7191c8486c8e3a900
+exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
+source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -17,10 +18,10 @@ För att stödja personbaserade sökningar på B2B-data (inklusive konton, affä
 
 Den här omvandlingen är bara tillgänglig för datauppsättningar med data för B2B-sökningsscheman, baserat på följande klasser:
 
-* XDM Business Account Person Relation
-* XDM - affärsmöjlighet, personrelation
-* XDM Business Marketing List-medlemmar
-* XDM Business Campaign-medlemmar
+* [XDM Business Account Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM - affärsmöjlighet, personrelation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List-medlemmar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign-medlemmar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 Så här aktiverar du omformning för en sådan datauppsättning:
 
