@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
+source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
 workflow-type: tm+mt
-source-wordcount: '3647'
+source-wordcount: '3691'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,9 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Juni 2024** | |
+| Omforma datauppsättningar för B2B-sökningar | Dokumentation om hur ni kan stödja [personbaserade sökningar på B2B-data](/help/connections//transform-datasets-b2b-lookups.md) (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) krävs en omvandling av datauppsättningar för B2B-sökning. |
+| Härledda fältfunktionsmallar | Dokumentation om [ytterligare funktionsmallar för härledda fält](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Maj 2024** | |
 | Målintegration | Tillagd [integreringsavsnitt för artiklar till Adobe](/help/integrations/cja4t.md) om hur Target kan integreras med Customer Journey Analytics. |
 | Nödvändig information när du exporterar Customer Journey Analytics-rapporter till Google Cloud-plattformen med begränsningar för organisationsprinciper | Lagt till Google Cloud-plattformens organisations-ID som ägs av Adobe i [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md) dokumentation för export av Customer Journey Analytics-rapporter till Google Cloud Platform. <p>Den här informationen krävs endast för organisationer som använder [Begränsningar för organisationsprinciper](https://cloud.google.com/storage/docs/org-policy-constraints) i Google Cloud Platform.</p> |

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d9ec1dfe99ad77f7b995ef97b71eb31f28eafd35
+source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
 workflow-type: tm+mt
-source-wordcount: '5708'
+source-wordcount: '6438'
 ht-degree: 3%
 
 ---
@@ -160,13 +160,193 @@ Funktionsmallar är tillgängliga för att snabbt skapa ett härlett fält för 
 
 ### Marknadsföringskanaler
 
-Den här mallen är konfigurerad att använda [URL-parsning](#dnl-url-parse) och [Skiftläge](#dnl-case-when) används flera gånger för att hämta lämpliga värden från en URL. Logiken tillämpas sedan på dessa värden för att koppla URL:en till en viss marknadsföringskanal.
+Den här funktionsmallen använder en samling regler för att skapa marknadsföringskanaler.
 
 +++ Information
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
 
-![Skärmbild av regelverktyget för marknadsföringskanalmall](assets/marketing-channel-template.png)
+![Skärmbild av regelverktyget för marknadsföringskanalmall](assets/function-template-marketing-channel-template.png)
+
++++
+
+### Studsar
+
+Den här funktionsmallen använder en samling regler för att identifiera webbplatsens gränser.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av Bounces rule builder](assets/function-template-bounces.png)
+
++++
+
+### Kombinera flera Dimensioner
+
+Den här funktionsmallen kombinerar två värden till ett.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelverktyget för kombinering av flera Dimensioner](assets/function-template-multi-dimension-combine.png)
+
++++
+
+### Eget namn på datauppsättning
+
+Den här funktionsmallen ger ett läsbart datauppsättningsnamn.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelbyggaren för vänligt datauppsättningsnamn](assets/function-template-friendly-dataset-name.png)
+
++++
+
+### Sidnamn från URL
+
+Den här funktionsmallen skapar ett enkelt sidnamn.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av sidnamnet från URL-regelverktyget](assets/function-template-page-name-from-url.png)
+
++++
+
+### Semestersäsong
+
+Den här funktionsmallen klassificerar nyckeltider för året.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av verktyget för regel för semestersäsong](assets/function-template-holiday-season.png)
+
++++
+
+### Månadsmål
+
+Den här funktionsmallen ställer in anpassade månatliga mål.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelbyggaren för månatliga mål](assets/function-template-monthly-goals.png)
+
++++
+
+### Hämta alla värden i avgränsad lista
+
+Den här funktionsmallen konverterar en begränsad lista till en array.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelverktyget Hämta alla värden i avgränsad lista](assets/function-template-get-all-values-in-delimited-list.png)
+
++++
+
+### Hämta första värdet i avgränsad lista
+
+Den här funktionsmallen hämtar det första värdet i en avgränsad lista.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelbyggaren Get First Value i Delimited List](assets/function-template-get-first-value-in-delimited-list.png)
+
++++
+
+### Hämta sista värdet i avgränsad lista
+
+Den här funktionsmallen hämtar det sista värdet i en avgränsad lista.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelverktyget Hämta sista värdet i avgränsad lista](assets/function-template-get-last-value-in-delimited-list.png)
+
++++
+
+### Domännamn
+
+Den här funktionsmallen extraherar domännamnet med ett reguljärt uttryck.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelbyggaren för domännamn](assets/function-template-domain-name.png)
+
++++
+
+### Hämta frågesträngsparameter
+
+Den här funktionsmallen extraherar frågesträngsvärden.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av Get Query String Parameter rule builder](assets/function-template-get-query-string-parameter.png)
+
++++
+
+### Övergångsfält
+
+Den här funktionsmallen övergår från ett fält till ett annat.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelverktyget för övergångsfält](assets/function-template-transition-field.png)
+
++++
+
+### Enkel punktidentifiering
+
+Den här funktionsmallen implementerar identifiering av ljusrobotar.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelbyggaren för enkel punktidentifiering](assets/function-template-simple-bot-detection.png)
+
++++
+
+### Avsluta länk
+
+Den här funktionsmallen identifierar den senaste länken som klickats i en session.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelbyggaren för att avsluta länk](assets/function-template-exit-link.png)
+
++++
+
+### Hämta länk
+
+Den här funktionsmallen flaggar vanliga nedladdningslänkar.
+
++++ Information
+
+Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Se [Funktionsreferens](#function-reference) för mer information.
+
+![Skärmbild av regelverktyget för hämtning av länk](assets/function-template-download-link.png)
 
 +++
 
