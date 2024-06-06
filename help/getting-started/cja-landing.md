@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6b5a9050d6c13e3c9d637a3ed992840a46058cee
+source-git-commit: 344dfb2e4e5191fb30ff4dd4ed35e45fb7b6cfd1
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
@@ -22,6 +22,24 @@ Med Customer Journey Analytics kan du styra hur du kopplar samman online- och of
 Få en glimt av de senaste förbättringarna i Customer Journey Analytics och dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [Versionsinformation](../release-notes/latest.md). Besök [dokumentuppdateringssida](../release-notes/doc-changes.md) för att hålla dig uppdaterad med de senaste ändringarna.
 
 >[!BEGINTABS]
+
+>[!TAB AI Assistant]
+
+AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverksamma att utföra uppgifter snabbt - oavsett om de förstår koncept, felsöker problem eller söker igenom information. Det gör det även möjligt för icke-experter att utföra expertuppgifter och ökar den övergripande kvaliteten på arbetet.
+
+[![bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB B2B-sökningar]
+
+Som en del av konfigurationen av en anslutning kan du omvandla datauppsättningar för specifika B2B-sökscheman för att bättre stödja personbaserade sökningar på B2B-data.
+
+[![bild](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
+
+>[!TAB Härledda fält]
+
+Det finns nya härledda fältfunktioner (Math, Next eller Previous) och ytterligare funktionsmallar (t.ex. Bounces, Monthly Goals, Simple Bot Detection).
+
+[![bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI-tillägg*]
 
@@ -41,35 +59,17 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 -->
 
-
->[!TAB Ny dokumentation]
-
-Nu finns ny dokumentation på:<ul><li>Så här uppgraderar du från Adobe Analytics till Customer Journey Analytics.</li><li>Användningsexempel vid dataexport och de funktioner som krävs för Experience Platform och kundresor. </li></ul>Välj **[!UICONTROL Learn more]** för den här och andra dokumentationsuppdateringar.
-
-[![bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
-
 >[!TAB Prognos]
 
 Prognosticering är en Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis). Prognoser är endast tillgängliga för tidsserierelaterade data.
 
 [![bild](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
->[!TAB Guidad analys* - kvarhållningsfrekvens]
+>[!TAB Ny dokumentation]
 
-En ny visningstyp som visar hur många procent användare som returnerar efter det ursprungliga engagemanget inom det önskade datumintervallet. Den vågräta axeln representerar antalet dagar sedan en användares ursprungliga engagemang. Den lodräta axeln representerar procentandelen användare som interagerar igen.
+Nu finns ny dokumentation på:<ul><li>Så här uppgraderar du från Adobe Analytics till Customer Journey Analytics.</li><li>Användningsexempel vid dataexport och de funktioner som krävs för Experience Platform och kundresor. </li></ul>Välj **[!UICONTROL Learn more]** för den här och andra dokumentationsuppdateringar.
 
-[![bild](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
-
-<span style="color:gray">*_Guidad analys ingår i Adobe Product Analytics, som är ett betalt tillägg till Customer Journey Analytics._</span>
-
-
->[!TAB Guidad analys* - Trendlinjer]
-
-Trendlinjeövertäckningar är nu tillgängliga i användningsvyn, som visar ett tydligare datamönster. De tillgängliga trendlinjetyperna är linjära, logaritmiska och rörliga medelvärden.
-
-[![bild](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
-
-<span style="color:gray">*_Guidad analys ingår i Adobe Product Analytics, som är ett betalt tillägg till Customer Journey Analytics._</span>
+[![bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
