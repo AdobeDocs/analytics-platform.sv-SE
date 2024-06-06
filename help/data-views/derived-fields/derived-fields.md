@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
+source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
 workflow-type: tm+mt
-source-wordcount: '6837'
+source-wordcount: '7224'
 ht-degree: 2%
 
 ---
@@ -435,7 +435,7 @@ Om din plats får följande exempelhändelser, som innehåller [!UICONTROL Refer
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |  |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -1002,6 +1002,85 @@ Du definierar en `Product Names` härlett fält. Du använder [!UICONTROL LOWERC
 
 +++
 
+<!-- MATH -->
+
+### Matematik
+
+Använd enkla matematiska operatorer (lägg till, subtrahera, multiplicera, dela och höj till en potens) i numeriska fält.
+
++++ Information
+
+## Specifikation {#math-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|---|---|
+| <ul><li>Numeriskt</li></ul> | <ul><li>Ett eller flera numeriska fält</li><li>En eller flera operatorer (lägg till, subtrahera, multiplicera, dividera, öka till en effekt)</li><li>Indatavärde från användare</li></ul> | <ul><li>`+` (lägg till)</li><li>`-` (subtrahera)</li><li>`*` (multiplicera)</li><li>`/` (dividera)</li><li>`^` (kraftökning)</li></ul> | <ul><li>25 operationer per härlett fält</li><li>5 Matematiska funktioner per härlett fält</li></ul> | <p>Nytt härlett fält</p> |
+
+{style="table-layout:auto"}
+
+## Använd skiftläge {#math-uc}
+
+På grund av inflationen vill du korrigera intäktssiffrorna för inmatade CRM-data med 5 % uppblåsning.
+
+### Data före {#math-uc-databefore}
+
+| CRM-ID | Årsintäkt |
+|---|---:|
+| 1234 | 35 070 000 |
+| 4133 | 7 500 000 |
+| 8110 | 10 980 |
+| 2201 | 42 620 |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#math-uc-derivedfield}
+
+Du definierar en `Corrected Annual Revenue` härlett fält. Du använder [!UICONTROL MATH] för att definiera en regel som multiplicerar det ursprungliga årsomsättningsnumret med 1,05.
+
+![Skärmbild av matematisk regel](assets/math.png)
+
+
+### Data efter {#math-uc-dataafter}
+
+| CRM-ID | Korrigerad årsomsättning |
+|---|---:|
+| 1234 | 36 823 500 |
+| 4133 | 7 875 000 |
+| 8110 | 11 529,00 |
+| 2201 | 44 751 |
+
+{style="table-layout:auto"}
+
+## Mer info {#math-more-info}
+
+Så här skapar du en formel:
+
+1. Börja skriva i formelfältet och i numeriska fält som matchar det du skriver. Du kan också dra och släppa ett numeriskt fält från de tillgängliga fälten i den vänstra rutan.
+   ![Mer information om matematisk text 1](assets/math-more-info-1.png)
+
+1. Lägg till operanden (till exempel `*` att multiplicera) följt av ett annat fält eller ett statiskt värde. Du kan använda parenteser för att definiera mer komplexa formler.
+
+1. Infoga ett statiskt värde (till exempel `1.05`) skriver du värdet och väljer **[!UICONTROL Add *x *som ett statiskt värde]**eller **[!UICONTROL Add -*x* som ett negativt statiskt värde]** på snabbmenyn.
+   ![Mer information om matematisk text 2](assets/math-more-info-2.png)
+
+1. En grön bock ![Markering](./assets/checkmark.svg)</span> anger om matematiska formler är giltiga, annars visas en varning <span style="color:red">![Varning](./assets/alert.svg)</span> och meddelandet <span style="color:#ea3829">[!UICONTROL Invalid formula expression].</span>
+   ![Math More Info 3](assets/math-more-info-3.png)
+
+Det finns viktiga saker att tänka på när du arbetar med statiska siffror i [!UICONTROL MATH] funktion:
+
+- Statiska värden måste associeras med ett fält. Använd till exempel [!UICONTROL MATH] Funktionen med bara statiska fält stöds inte.
+- Du kan inte använda kraftvärmeoperatorn (`ˆ`) på ett statiskt värde.
+- Om du använder flera statiska värden i en formel bör dessa statiska värden grupperas med parentes för att formeln ska vara giltig. Exempel:
+
+   - Den här formeln returnerar ett fel.
+     ![Math More Info 4](assets/math-more-info-4.png)
+
+   - Den här formeln är giltig.
+     ![Math More Info 5](assets/math-more-info-5.png)
+
++++
+
+
 <!-- MERGE FIELDS -->
 
 ### Sammanfoga fält
@@ -1544,7 +1623,9 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 | <p>Sök och ersätt</p> | <ul><li>2 Sök och ersätt-funktioner per härlett fält</li></ul> |
 | <p>Sök</p> | <ul><li>5 Sökfunktioner per härlett fält</li></ul> |
 | <p>Gemener</p> | <ul><li>2 Gemener per härlett fält</li></ul> |
+| <p>Matematik</p> | <ul><li>25 operationer per härlett fält</li><li>5 Matematiska funktioner per härlett fält</li></ul> |
 | <p>Sammanfoga fält</p> | <ul><li>2 Funktioner för att slå samman fält per härlett fält</li></ul> |
+| <p>Nästa eller Föregående</p> | <ul><li>3 Nästa eller Föregående funktion per härlett fält</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace-funktion per härlett fält</li></ul> |
 | <p>Dela</p> | <ul><li>5 Delningsfunktioner per härlett fält</li></ul> |
 | <p>Rensa</p> | <ul><li>1 Trimningsfunktion per härlett fält</li></ul> |
