@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
+source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
 workflow-type: tm+mt
-source-wordcount: '6438'
-ht-degree: 3%
+source-wordcount: '6837'
+ht-degree: 2%
 
 ---
 
@@ -435,7 +435,7 @@ Om din plats får följande exempelhändelser, som innehåller [!UICONTROL Refer
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | |
+| `https://google.com` |  |
 
 {style="table-layout:auto"}
 
@@ -1067,6 +1067,78 @@ Du måste välja samma typ av fält i en regel för att slå samman fält. Om du
 
 +++
 
+
+<!-- NEXT OR PREVIOUS -->
+
+### Nästa eller Föregående
+
+Tar ett fält som indata och löser nästa eller föregående värde för det fältet inom sessionens eller användningens omfattning. Detta gäller endast fälten i tabellerna Besök och Händelse.
+
++++ Information
+
+## Specifikation {#prevornext-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul><li>[!UICONTROL Method]:<ul><li>Föregående värde</li><li>Nästa värde</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numeriskt</li></ul><li>[!UICONTROL Include repeats]:<ul><li>Boolean</li></ul></li><li>[!UICONTROL Include 'No Values']:<ul><li>Boolean</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>3 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+
+{style="table-layout:auto"}
+
+## Använd skiftläge {#prevornext-uc1}
+
+Du skulle vilja förstå vad **nästa** eller **föregående** är värdet för de data som du tar emot, med hänsyn tagen till upprepningsvärden.
+
+### Data {#prevornext-uc1-databefore}
+
+**Exempel 1 - Hantera inklusive upprepningar**
+
+| Mottagna data | Nästa värde<br/>Session<br/>Index = 1<br/>Inkludera upprepningar | Nästa värde<br/>Session<br/>Index = 1<br/>Inkludera inte upprepningar | Föregående värde<br/>Session<br/>Index = 1<br/>Inkludera upprepningar | Föregående värde<br/>Session<br/>Index = 1<br/>Inkludera inte upprepningar |
+|---|---|---|---|---|
+| home | home | sök | *Inget värde* | *Inget värde* |
+| home | sök | sök | home | *Inget värde* |
+| sök | sök | produktinformation | home | home |
+| sök | produktinformation | produktinformation | sök | home |
+| produktinformation | sök | sök | sök | sök |
+| sök | produktinformation | produktinformation | produktinformation | produktinformation |
+| produktinformation | sök | sök | sök | sök |
+| sök | sök | *Inget värde* | produktinformation | produktinformation |
+| sök | *Inget värde* | *Inget värde* | sök | produktinformation |
+
+{style="table-layout:auto"}
+
+**Exempel 2 - Hanteringen inkluderar upprepningar med tomma värden i mottagna data**
+
+| Mottagna data | Nästa värde<br/>Session<br/>Index = 1<br/>Inkludera upprepningar | Nästa värde<br/>Session<br/>Index = 1<br/>Inkludera inte upprepningar | Föregående värde<br/>Session<br/>Index = 1<br/>Inkludera upprepningar | Föregående värde<br/>Session<br/>Index = 1<br/>Inkludera inte upprepningar |
+|---|---|---|---|---|
+| home | home | sök | *Inget värde* | *Inget värde* |
+| home | home | sök | home | *Inget värde* |
+| home | sök | sök | home | *Inget värde* |
+| sök | sök | produktinformation | home | home |
+|   |   |   |   |   |
+| sök | sök | produktinformation | sök | home |
+| sök | produktinformation | produktinformation | sök | home |
+| produktinformation | *Inget värde* | *Inget värde* | sök | sök |
+|   |   |   |   |   |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#prevnext-uc1-derivedfield}
+
+Du definierar en `Next Value` eller `Previous value` härlett fält. Du använder [!UICONTROL NEXT OR PREVIOUS] -funktion för att definiera en regel som markerar [!UICONTROL Data received] fält, markera [!UICONTROL Next value] eller [!UICONTROL Previous value] as [!UICONTROL Method], [!UICONTROL Session] som omfång och ange värdet för [!UICONTROL Index] till `1`.
+
+![Skärmbild av regeln Sammanfoga fält](assets/prevnext-next.png)
+
+## Mer information {#prevnext-moreinfo}
+
+Du kan bara markera fält som tillhör tabellen Besök eller Händelse.
+
+[!UICONTROL Include repeats] avgör hur upprepade värden för [!UICONTROL NEXT OR PREVIOUS] funktion.
+
+- Inkludera upprepande utseenden och nästa eller föregående värden. If [!UICONTROL Include Repeats] om du väljer det här alternativet ignoreras alla sekventiella upprepningar av nästa eller föregående värden från den aktuella träffen.
+
+- Rader utan (tomma) värden för ett markerat fält returneras inte med nästa eller föregående värden som en del av [!UICONTROL NEXT OR PREVIOUS] funktionsutdata.
+
++++
 
 <!-- REGEX REPLACE -->
 
