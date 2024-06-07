@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
 source-wordcount: '7224'
 ht-degree: 2%
@@ -1035,7 +1035,7 @@ På grund av inflationen vill du korrigera intäktssiffrorna för inmatade CRM-d
 
 ### Härlett fält {#math-uc-derivedfield}
 
-Du definierar en `Corrected Annual Revenue` härlett fält. Du använder [!UICONTROL MATH] för att definiera en regel som multiplicerar det ursprungliga årsomsättningsnumret med 1,05.
+Du definierar en `Corrected Annual Revenue` härlett fält. Du använder [!UICONTROL MATH] funktion för att definiera en regel som multiplicerar det ursprungliga årsomkområdet med 1,05.
 
 ![Skärmbild av matematisk regel](assets/math.png)
 

@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 344dfb2e4e5191fb30ff4dd4ed35e45fb7b6cfd1
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '675'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Som en del av konfigurationen av en anslutning kan du omvandla datauppsättninga
 
 >[!TAB Härledda fält]
 
-Det finns nya härledda fältfunktioner (Math, Next eller Previous) och ytterligare funktionsmallar (t.ex. Bounces, Monthly Goals, Simple Bot Detection).
+Nu finns nya härledda fältfunktioner (Math, Next eller Previous) och ytterligare funktionsmallar (som Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, med flera).
 
 [![bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -67,7 +67,7 @@ Prognosticering är en Analysis Workspace-funktion som prognostiserar ett standa
 
 >[!TAB Ny dokumentation]
 
-Nu finns ny dokumentation på:<ul><li>Så här uppgraderar du från Adobe Analytics till Customer Journey Analytics.</li><li>Användningsexempel vid dataexport och de funktioner som krävs för Experience Platform och kundresor. </li></ul>Välj **[!UICONTROL Learn more]** för den här och andra dokumentationsuppdateringar.
+Nu finns det nya dokumentationsavsnitt på:<ul><li>Så här uppgraderar du från Adobe Analytics till Customer Journey Analytics.</li><li>Användningsexempel vid dataexport och de funktioner som krävs för Experience Platform och kundresor. </li></ul>Välj **[!UICONTROL Learn more]** för den här och andra dokumentationsuppdateringar.
 
 [![bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -105,11 +105,12 @@ Börja med att läsa materialet i länkarna nedan för att bekanta dig med Custo
     </tr>
 </table>
 
+
 ## Utforska dokumentationen
 
 Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics. Och hur ni får in era data i lösningen och sedan kan ta fram, visa, analysera och demokratisera dessa data och de analyser och rapporter som blir resultatet.
 
-<table style="table-layout:auto">
+<table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
@@ -145,11 +146,12 @@ Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics produktbeskrivning</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics produktbeskrivning (tillägg Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API:er</a>
+<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics produktbeskrivning</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics produktbeskrivning (tillägg Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API:er</a> - <a href="/help/ai-assistant.md">AI Assistant</a>
 </td>
 <td><strong>Inmatning av data</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Ökning</a> - <a href="/help/data-ingestion/analytics.md">Analyser</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Grupp</a> - <a href="/help/data-ingestion/streaming.md">Direktuppspelning</a> - <a href="/help/data-ingestion/sources.md">Källor</a> - <a href="/help/data-ingestion/serverapi.md">Server-API</a>
 </td>
-</tr></table>
+</tr>
+</table>
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
