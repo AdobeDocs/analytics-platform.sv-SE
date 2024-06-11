@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 9a0e6ed66a20eac1fa5f94efd378842a579826c0
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,28 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 1. Se till att du uppfyller [minimikrav](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) för att exportera rapporter till molnet.
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 1. På [!UICONTROL Exports] väljer du [!UICONTROL **Platskonton**] -fliken.
-1. Välj [!UICONTROL **Lägg till konto**].
 
    ![Exporterar sidalternativ som visar Lägg till ett annat konto](assets/account-add.png)
+
+1. Välj [!UICONTROL **Lägg till konto**].
 
    Dialogrutan Lägg till konto visas.
 
 1. I [!UICONTROL **Platskontonamn**] anger du ett namn för platskontot. Det här namnet visas när du skapar en plats.
 
 1. I [!UICONTROL **Beskrivning av platskonto**] ska du ange en kort beskrivning av kontot så att det kan särskiljas från andra konton av samma kontotyp.
+
+1. Aktivera alternativet att [!UICONTROL **Gör kontot tillgängligt för alla användare i organisationen**] om du vill tillåta andra användare i organisationen att använda kontot.
+
+   Tänk på följande när du delar konton:
+
+   * Konton som du delar kan inte tas bort.
+
+   * Delade konton kan bara redigeras av kontoägaren.
+
+   * Vem som helst kan skapa en plats för det delade kontot.
+
+   **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
 
 1. I [!UICONTROL **Kontotyp**] väljer du vilken typ av molnkonto du exporterar till. De tillgängliga kontotyperna är Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake och AEP Data Landing Zone.
 

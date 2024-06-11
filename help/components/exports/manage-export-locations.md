@@ -5,9 +5,9 @@ title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: cdf99e31790f089950de8063445b6264158131dd
+source-git-commit: 6e36885cfba60c808b9f069159670db6834fe41f
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ Om du vill hitta den information du behöver kan du antingen filtrera platslista
 
 ## Redigera platser
 
+En plats kan bara redigeras av den användare som skapade den eller av en systemadministratör.
+
+Så här redigerar du en plats:
+
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
 1. Välj [!UICONTROL **Platser**] -fliken.
@@ -95,6 +99,10 @@ Så här tar du bort en plats:
 1. Välj [!UICONTROL **Ta bort**] igen för att bekräfta.
 
 ## Redigera konton
+
+Ett konto kan bara redigeras av den användare som skapade det eller av en systemadministratör.
+
+Redigera ett konto:
 
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Export**].
 
