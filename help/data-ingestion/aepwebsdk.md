@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 1ded359997c4915f1b5ea6237aceb4d3d922b3a9
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3221'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ För att uppnå detta måste du:
 
 - **Konfigurera ett schema och en datauppsättning** i Adobe Experience Platform för att definiera modellen (schemat) för de data som du vill samla in och var data (datauppsättningen) ska samlas in.
 
-- **Konfigurera en datastream** för att konfigurera Adobe Experience Platform Edge Network så att insamlade data dirigeras till datauppsättningen som du konfigurerade i Adobe Experience Platform.
+- **Konfigurera en datastream** för att konfigurera Adobe Experience Platform Edge Network att dirigera insamlade data till den datauppsättning som du konfigurerade i Adobe Experience Platform.
 
 - **Använd taggar** för att enkelt konfigurera regler och dataelement mot data i ditt datalager på din webbplats. Kontrollera sedan att data skickas till den dataström som är konfigurerad på Adobe Experience Platform Edge Network.
 
@@ -200,7 +200,7 @@ Se [Användargränssnittshandbok för datauppsättningar](https://experienceleag
 
 ## Konfigurera en datastream
 
-En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När du samlar in data med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
+En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När data samlas in med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
 
 I din konfiguration vill du att de data du samlar in från webbplatsen ska skickas till din datauppsättning i Adobe Experience Platform.
 
@@ -279,21 +279,7 @@ Så här skapar och konfigurerar du Adobe Experience Platform Web SDK-tillägget
 
 Se [Konfigurera Adobe Experience Platform Web SDK-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) för mer information.
 
-Du vill också konfigurera Experience Cloud ID-tjänsttillägget så att du enkelt kan använda Experience Cloud ID. Experience Cloud ID-tjänsten identifierar personer i alla Adobe Experience Cloud-lösningar.
-
-Så här skapar och konfigurerar du tjänsttillägget Experience Cloud ID:
-
-1. Välj **[!UICONTROL Extensions]** till vänster.
-
-2. Välj **[!UICONTROL Catalog]** i det övre fältet.
-
-3. Sök efter eller bläddra till Experience Cloud ID-tjänsttillägget och välj **[!UICONTROL Install]** för att installera den.
-
-   <img src="./assets/ecid-extension.png" width="35%"/>
-
-4. Använd standardinställningarna för alla konfigurationer.
-
-5. Välj **[!UICONTROL Save]**.
+Web SDK innehåller [!UICONTROL Adobe Experience Cloud ID Service] Du behöver alltså inte lägga till ID-tjänsttillägget i taggen.
 
 #### **Dataelement**
 
