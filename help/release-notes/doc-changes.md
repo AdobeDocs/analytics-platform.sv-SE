@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: cfdbbacc1c6f280e8959513d8073cd17c8699962
 workflow-type: tm+mt
-source-wordcount: '3712'
+source-wordcount: '3711'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | --- | --- |
 | **Juni 2024** | |
 | AI Assistant | Tillagd [dokumentation](../ai-assistant.md) på AI Assistant för Customer Journey Analytics. |
-| Omforma datauppsättningar för B2B-sökningar | Lagt till dokumentation om support [personbaserade sökningar på B2B-data](/help/connections//transform-datasets-b2b-lookups.md) (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) krävs en omvandling av datauppsättningar för B2B-sökning. |
+| Omforma datauppsättningar för B2B-sökningar | Lagt till dokumentation om support [personbaserade sökningar på B2B-data](/help/connections//transform-datasets-b2b-lookups.md) (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) med hjälp av omvandling av datauppsättningar för B2B-sökning. |
 | Härledda fältfunktioner och funktionsmallar | Lagt till dokumentation om ytterligare härledda fältfunktioner ([Matematik](/help/data-views/derived-fields/derived-fields.md#math), [Nästa eller Föregående](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) och [funktionsmallar](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Maj 2024** | |
 | Målintegration | Tillagd [integreringsavsnitt för artiklar till Adobe](/help/integrations/cja4t.md) om hur Target kan integreras med Customer Journey Analytics. |
