@@ -4,28 +4,28 @@ description: Lär dig hur dataetiketter och principer som definieras i Adobe Exp
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 950c121e6c889e202f048d4a33e8fecde3cd9efe
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
 
 # Etiketter och profiler
 
-När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i Customer Journey Analytics.
+När du skapar en datauppsättning i Experience Platform kan du skapa [etiketter för dataanvändning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i Customer Journey Analytics.
 
 Följande etiketter är av särskilt intresse för Customer Journey Analytics:
 
 * The `C8` etikett - **[!UICONTROL No measurement]**. Den här etiketten anger att data inte kan användas för analys på organisationens webbplatser eller i appar.
 
-* The `C12` etikett - **[!UICONTROL No General Data Export]**. Schemafält med den här etiketten kan inte exporteras eller hämtas från Customer Journey Analytics (via rapportering, export, API, osv.)
+* The `C12` etikett - **[!UICONTROL No general data export]**. Schemafält med den här etiketten kan inte exporteras eller hämtas från Customer Journey Analytics (via rapportering, export, API, osv.)
 
 >[!NOTE]
 >
 >Dataanvändningsetiketter sprids inte automatiskt till sammanslagna datauppsättningar. De kan dock läggas till manuellt.
 
-Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du skapar dina profiler med [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html) eller via [API för principtjänst](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html) i Experience Platform.
+Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du kan skapa profiler med [Experience Platform UI](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) eller via [API för principtjänst](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) i Experience Platform.
 
 Två Adobe-definierade policyer används i Customer Journey Analytics och påverkar rapportering och nedladdning/delning:
 
@@ -34,7 +34,7 @@ Två Adobe-definierade policyer används i Customer Journey Analytics och påver
 
 ## Visa dataetiketter i datavyer i Customer Journey Analytics
 
-Dataetiketter som har skapats i Experience Platform visas på tre platser i användargränssnittet för datavyer:
+Dataetiketter som du eller andra har skapat i Experience Platform visas på tre platser i användargränssnittet för datavyer:
 
 | Plats | Beskrivning |
 | --- | --- |
@@ -54,7 +54,7 @@ Klicka **[!UICONTROL Apply]** för att se vilka komponenter som har etiketter ko
 
 ## Filtrera på datastyrningsprinciper i datavyer
 
-Du kan kontrollera om en profil är aktiverad som blockerar användningen av vissa datavytelement i Customer Journey Analytics för analys eller export.
+Du kan kontrollera om en princip (till exempel en som heter Enforce Analytics) är aktiverad och om den principen blockerar användningen av vissa datavytelement i Customer Journey Analytics för analys.
 
 Klicka igen på [!UICONTROL filter] ikonen i den vänstra listen och under **[!UICONTROL Data Governance]**, klicka **[!UICONTROL Policies]**:
 
@@ -72,10 +72,19 @@ De här komponenterna är nedtonade i den vänstra listen [!UICONTROL Schema fie
 
 Du kan inte heller spara en datavy som innehåller blockerade fält.
 
+Var försiktig och försök att använda etiketter för åtkomst och datastyrning på fält eller fältgrupper i Experience Platform, som du redan har komponenter definierade för i datavyn. Den här dialogrutan kanske visas.
+
+![Överträdelse](assets/violation.png)
+
+Du måste först lösa konflikten (t.ex. ta bort komponenterna från datavyn).
+
+
 >[!MORELIKETHIS]
+>
 >[Hämta känsliga data](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Vad är begränsade etiketter i Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html)
+>
+>[Vad är begränsade etiketter i Report Builder?](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-reportbuilder/restricted-labels)
 
 
