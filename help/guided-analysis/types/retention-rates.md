@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: f4a235d90ad44dbb192b74a03accc7ad4a39e986
+source-git-commit: 6b8d9abf7d807a1e19aa86386eb2dae9bb18f472
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 The **[!UICONTROL Retention rates]** visar hur användarna fortsätter att använda produkten med tiden, vilket kan hjälpa er att förstå hur produktmarknaden passar in. Analysen räknar användare baserat på två viktiga händelser:
 
-* Starthändelse: Första gången en användare interagerar med starthändelsen inom datumintervallet
-* Returhändelse: Den senaste gången en användare interagerade med returhändelsen inom det analyserade datumintervallet
+* Starthändelse: Den händelse som används för att kvalificera användare för att ingå i din analys.
+* Returhändelse: De händelser som en användare måste interagera med för att räknas som en återkommande användare i din analys.
 
 I den här vyn representerar diagrammets x-axel tiden sedan en användares första starthändelse och y-axeln den procentandel användare som interagerar med returhändelserna. Du kan visa både kvarhållning och kurvor över varaktigheter, och varaktigheterna som visas kan anpassas med frågeinställningarna. Under diagrammet innehåller en tabell aggregerade data med alternativet att visa enskilda kohorter, som är en grupp personer som utförde starthändelsen på samma datum.
 
