@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
+source-git-commit: 6f99a732688f59e3950fc9b4336ad5b0434f24a7
 workflow-type: tm+mt
-source-wordcount: '7494'
+source-wordcount: '8019'
 ht-degree: 3%
 
 ---
@@ -593,7 +593,7 @@ Du definierar en `Trip Duration (bucketed)` härlett fält. Du skapar följande 
 | [!DNL long trip] |
 
 
-## Mer information
+## Mer information {#casewhen-more-info}
 
 Customer Journey Analytics använder en kapslad behållarstruktur, som utformats efter Adobe Experience Platform [XML](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). Se [Behållare](../create-dataview.md#containers) och [Filterbehållare](../../components/filters/filters-overview.md#filter-containers) för mer bakgrundsinformation. Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
 
@@ -841,6 +841,8 @@ Förhindrar att ett värde räknas flera gånger.
 
 +++ Information
 
+{{release-limited-testing}}
+
 ## Specifikationer {#deduplicate-io}
 
 | Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
@@ -1022,7 +1024,7 @@ Du definierar en `Activity Name` härlett fält. Du använder [!UICONTROL LOOKUP
 
 ![Skärmbild av regeln Gemener](assets/lookup.png)
 
-## Mer info
+## Mer information {#lookup-more-info}
 
 Du kan snabbt infoga en [!UICONTROL Lookup] funktionen i regelbyggaren som redan innehåller en eller flera andra funktioner.
 
@@ -1135,7 +1137,7 @@ Du definierar en `Corrected Annual Revenue` härlett fält. Du använder [!UICON
 
 {style="table-layout:auto"}
 
-## Mer info {#math-more-info}
+## Mer information {#math-more-info}
 
 Så här skapar du en formel:
 
@@ -1161,6 +1163,8 @@ Det finns viktiga saker att tänka på när du arbetar med statiska siffror i [!
 
    - Den här formeln är giltig.
      ![Math More Info 5](assets/math-more-info-5.png)
+
+Använd Math-funktionen för träffnivåbaserade beräkningar. Använd [Sammanfatta](#summarize) funktion för händelse-, sessions- eller personomfångsbaserade beräkningar.
 
 +++
 
@@ -1350,7 +1354,7 @@ Du skapar en `Page Identifier` härlett fält. Du använder [!UICONTROL REGEX RE
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## Mer information
+## Mer information {#regex-replace-more-info}
 
 Customer Journey Analytics använder en delmängd av Perl-regex-syntaxen. Följande uttryck stöds:
 
@@ -1492,6 +1496,75 @@ Du skapar en `Second Response` härlett fält som tar det senaste värdet från 
 
 +++
 
+<!-- SUMMARIZE -->
+
+### Sammanfatta
+
+Tillämpar aggregeringsfunktioner på mått och mått på händelse-, sessions- och användarnivå.
+
++++ Information
+
+{{release-limited-testing}}
+
+## Specifikation {#summarize-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li><li>Numeriskt</li><li>Datum</li></ul> | <ul><li>Värde<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>Sammanfattningsmetoder</li><li>Omfång<ul><li>Händelse</li><li>Session</li><li>Person</li></ul></li></ul> | <ul><li>Numeriskt<ul><li>MAX - returnera det största värdet från en uppsättning värden</li><li>MIN - returnerar det minsta värdet från en uppsättning värden</li><li>MEDIAN - returnerar median för en uppsättning värden</li><li>MEAN - returnerar medelvärde för en uppsättning värden</li><li>SUM - returnerar summan för en uppsättning värden</li><li>COUNT - returnerar antalet mottagna värden</li><li>DISTINCT - returnerar en uppsättning distinkta värden</li></ul></li><li>Strängar<ul><li>DISTINCT - returnerar en uppsättning distinkta värden</li><li>COUNT DISTINCT - returnerar antalet distinkta värden</li><li>MEST COMMON - returnerar det strängvärde som oftast tas emot</li><li>LEAST COMMON - returnerar det strängvärde som oftast tas emot</li><li>FÖRSTA - Det första mottagna värdet; endast tillämpligt för sessions- och händelsetabellerna</li><li>SIST - Det senaste mottagna värdet; gäller endast för sessions- och händelsetabellerna</li></ul></li><li>Datum<ul><li>DISTINCT - returnerar en uppsättning distinkta värden</li><li>COUNT DISTINCT - returnerar antalet distinkta värden</li><li>MEST COMMON - returnerar det strängvärde som oftast tas emot</li><li>LEAST COMMON - returnerar det strängvärde som oftast tas emot</li><li>FÖRSTA - Det första mottagna värdet; endast tillämpligt för sessions- och händelsetabellerna</li><li>SIST - Det senaste mottagna värdet; gäller endast för sessions- och händelsetabellerna</li><li>EARLIEST - Det tidigaste mottagna värdet (fastställt i tid); gäller endast för sessions- och händelsetabellerna</li><li>SENASTE - Det senaste mottagna värdet (fastställt i tid); gäller endast för sessions- och händelsetabellerna</li></ul></li></ul> | 3 funktion per härlett fält | Nytt härlett fält |
+
+{style="table-layout:auto"}
+
+## Använd skiftläge {#summarize-uc}
+
+Du vill kategorisera Lägg till i kundvagnsintäkt i tre olika kategorier: Liten, Medel och Stor. På så sätt kan ni analysera och identifiera egenskaper hos värdefulla kunder.
+
+### Data före {#summarize-uc-databefore}
+
+Antaganden:
+
+- Lägg till i Kundomsättning samlas in som ett numeriskt fält.
+
+Scenarier:
+
+- CustomerABC123 lägger till 35 USD i kundvagnen för ProductABC och lägger sedan separat ProductDEF i kundvagnen för 75 USD.
+- CustomerDEF456 lägger till 50 USD i kundvagnen för ProductGHI och lägger sedan ProductJKL separat i kundvagnen för 275 USD.
+- CustomerGHI789 lägger 500 USD i kundvagnen för ProductMNO.
+
+Logic:
+
+- Om Total Add to Cart Revenue (Lägg till i kundvagnsintäkt) för en besökare är mindre än $150 anges till Small (liten).
+- Om Total Add to Cart Revenue (Lägg till i kundvagnsintäkt) för en besökare är större än $150, men mindre än $500, anges till Medium.
+- Om Total Add to Cart Revenue (Lägg till i kundvagnsintäkt) för en besökare är större än eller lika med $500, anges som Large.
+
+Resultat:
+
+- Totalt för 110 USD för CustomerABC123.
+- Total Add to Cart Revenue (Lägg till i kundvagnsintäkt) för $325 för CustomerDEF456.
+- Total Add to Cart Revenue (Lägg till i kundvagnsintäkt för 500 USD för CustomerGHI789.
+
+### Härlett fält {#summarize-uc-derivedfield}
+
+Du skapar en `Add To Cart Revenue Size` härlett fält. Du använder [!UICONTROL SUMMARIZE] -funktionen och [!UICONTROL Sum] [!UICONTROL Summarize method] med [!UICONTROL Scope] ange till [!UICONTROL Person] för att summera värdena för [!UICONTROL cart_add] fält. Sedan använder du en sekund [!UICONTROL CASE WHEN] om du vill dela resultatet i trädets kategoristorlekar.
+
+![Skärmbild av summeringsregel 1](assets/summarize.png)
+
+
+
+### Data efter {#summarize-uc-dataafter}
+
+| Lägg till i kundvagnsintäktsstorlek | Besökare |
+|---|--:|
+| Liten | 1 |
+| Medel | 1 |
+| Stor | 1 |
+
+{style="table-layout:auto"}
+
+## Mer information {#summarize-more-info}
+
+Använd funktionen Summera för händelse-, sessions- eller personomfattningsbaserade beräkningar. Använd [Matematik](#math) funktion för träffnivåbaserade beräkningar.
+
++++
 
 <!-- TRIM -->
 
@@ -1507,7 +1580,6 @@ Beskär tomt utrymme, specialtecken eller antal tecken från början eller slute
 |---|---|---|---|---|
 | <ul><li>Sträng</li></ul> | <ul><li>[!UICONTROL Field]<ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></li><li>Beskär tomt utrymme</li><li>Trimma specialtecken<ul><li>Indata för specialtecken</li></ul></li><li>Trimma från vänster<ul><li>Från <ul><li>Strängstart</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li></ul></li><li>Till<ul><li>Strängslut</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li><li>Längd</li></ul></li></ul></li><li>Trimma från höger<ul><li>Från <ul><li>Strängslut</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li></ul></li><li>Till<ul><li>Strängstart</li><li>Position<ul><li>Positionsnummer</li></ul></li><li>Sträng<ul><li>Strängvärde</li><li>Index</li><li>Flagga som ska innehålla sträng</li></ul></li><li>Längd</li></ul></li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>1 funktion per härlett fält</p> | <p>Nytt härlett fält</p> |
 
-{style="table-layout:auto"}
 
 ## Användningsfall 1 {#trim-uc1}
 
@@ -1713,6 +1785,7 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 | <p>Nästa eller Föregående</p> | <ul><li>3 Nästa eller Föregående funktion per härlett fält</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace-funktion per härlett fält</li></ul> |
 | <p>Dela</p> | <ul><li>5 Delningsfunktioner per härlett fält</li></ul> |
+| <p>Sammanfatta</p> | <ul><li>3 Sammanfatta funktioner per härlett fält</li></ul> |
 | <p>Rensa</p> | <ul><li>1 Trimningsfunktion per härlett fält</li></ul> |
 | <p>URL-parsning</p> | <ul><li>5 URL-tolkningsfunktioner per härlett fält</li></ul> |
 
@@ -1733,7 +1806,7 @@ I regeln Klassificera nedan används till exempel tre operatorer.
 ![Skärmbild av klassificeringsregel 1](assets/classify-1.png)
 
 
-## Mer information
+## Mer information {#trim-more-info}
 
 [`Trim`](#trim) och [`Lowercase`](#lowercase) är funktioner som redan finns i komponentinställningarna i [Datavyer](../component-settings/overview.md). Med hjälp av härledda fält kan du kombinera dessa funktioner för att göra mer komplex dataomvandling direkt i Customer Journey Analytics. Du kan till exempel använda `Lowercase` för att ta bort skiftlägeskänslighet i ett händelsefält och sedan använda [`Lookup`](#lookup) för att matcha det nya gemena fältet med en uppslagsdatauppsättning som bara har uppslagsnycklar i gemener. Eller så kan du använda `Trim` för att ta bort tecken innan du ställer in `Lookup` på det nya fältet.
 
