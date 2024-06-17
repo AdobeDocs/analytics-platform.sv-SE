@@ -4,7 +4,7 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | --- | --- | --- |
 | Resensnamn | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponenttyp: Dimension |
 | Resenamn och version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Komponenttyp: Dimension |
-| Namn på resenod | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponenttyp: Dimension |
+| Namn på resenod | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | Komponenttyp: Dimension |
 | Resensnodtyp | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Komponenttyp: Dimension |
 | Kampanjnamn | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Komponenttyp: Dimension |
 | Kanal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Komponenttyp: Dimension |
@@ -85,11 +85,11 @@ Du kan skapa följande mätvärden i en datavy för att få en ungefärlig parit
 | Skickar | Antalet meddelanden som e-postleverantörer accepterade. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: lika med `sent` |
 | Skräppost | Antalet skräppostklagomål. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: lika med `spam_complaint` |
 | Avbeställ | Antal avbrutna prenumerationer. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått<br>Inkludera exkluderingsvärden: lika med `unsubscribe` |
-| Edge Sends | Antalet gånger som gränsnätverket skickar ett meddelande till antingen webben eller mobil SDK | Använda schemasträntelementet `_experience.decisioning.propositionEventType.send` |
-| Inkommande skärmar | Antalet gånger som ett webb- eller InApp-meddelande visas för användaren | Använda schemasträntelementet `_experience.decisioning.propositionEventType.display` |
-| Inkommande klick | Antal webbklick eller InApp-meddelandeklick | Använda schemasträntelementet `_experience.decisioning.propositionEventType.interact` |
-| InApp-utlösare | Det antal gånger som beslutsmotorn föreslog att meddelandet ska visas. Mobile SDK kunde åsidosätta beslutet om att minska antalet faktiska skärmar. | Använda schemasträntelementet `_experience.decisioning.propositionEventType.trigger` |
-| InApp-avvisningar | Antalet gånger som ett InApp-meddelande tas bort från användargränssnittet av SDK | Använda schemasträntelementet `_experience.decisioning.propositionEventType.dismiss` |
+| Edge Sends | Antalet gånger som gränsnätverket skickar ett meddelande till antingen webben eller mobil SDK | Använda schemasträntelementet `_experience.decisioning.propositionEventType.send` | |
+| Inkommande skärmar | Antalet gånger som ett webb- eller InApp-meddelande visas för användaren | Använda schemasträntelementet `_experience.decisioning.propositionEventType.display` | |
+| Inkommande klick | Antal webbklick eller InApp-meddelandeklick | Använda schemasträntelementet `_experience.decisioning.propositionEventType.interact` | |
+| InApp-utlösare | Det antal gånger som beslutsmotorn föreslog att meddelandet ska visas. Mobile SDK kunde åsidosätta beslutet om att minska antalet faktiska skärmar. | Använda schemasträntelementet `_experience.decisioning.propositionEventType.trigger` | |
+| InApp-avvisningar | Antalet gånger som ett InApp-meddelande tas bort från användargränssnittet av SDK | Använda schemasträntelementet `_experience.decisioning.propositionEventType.dismiss` | |
 
 {style="table-layout:auto"}
 
