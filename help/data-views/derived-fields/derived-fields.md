@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
 workflow-type: tm+mt
-source-wordcount: '7224'
-ht-degree: 2%
+source-wordcount: '7494'
+ht-degree: 3%
 
 ---
 
@@ -441,7 +441,7 @@ Om din plats får följande exempelhändelser, som innehåller [!UICONTROL Refer
 
 ### Härlett fält {#casewhen-uc1-derivedfield}
 
-Du definierar ett nytt `Marketing Channel` härlett fält. Du använder [!UICONTROL CASE WHEN] funktioner för att definiera regler som skapar värden för den baserat på befintliga värden för båda `Page URL` och `Referring URL` fält.
+Du definierar en `Marketing Channel` härlett fält. Du använder [!UICONTROL CASE WHEN] funktioner för att definiera regler som skapar värden för den baserat på befintliga värden för båda `Page URL` och `Referring URL` fält.
 
 Observera hur funktionen används [!UICONTROL URL PARSE] för att definiera regler för hämtning av värden för `Page Url` och `Referring Url` före [!UICONTROL CASE WHEN] regler tillämpas.
 
@@ -814,7 +814,7 @@ Rapporten ska se ut så här:
 
 ### Härlett fält {#concatenate-derivedfield}
 
-Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du använder [!UICONTROL CONCATENATE] funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
+Du definierar en `Origin - Destination` härlett fält. Du använder [!UICONTROL CONCATENATE] funktion som definierar en regel som sammanfogar [!UICONTROL Original] och [!UICONTROL Destination] fält med `-` [!UICONTROL Delimiter].
 
 ![Skärmbild av sammanfogningsregeln](assets/concatenate.png)
 
@@ -827,6 +827,90 @@ Du definierar ett nytt [!UICONTROL Origin - Destination] härlett fält. Du anv�
 | SLC-SEA |
 | SLC-SJO |
 | SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- DEDUPLICATE -->
+
+### Deduplicera
+
+Förhindrar att ett värde räknas flera gånger.
+
++++ Information
+
+## Specifikationer {#deduplicate-io}
+
+| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+|---|---|---|---|---|
+| <ul><li>Sträng</li><li>Numeriskt</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li><li>Sträng</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li><li>Sträng</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Behåll första instansen</li><li>Behåll sista instansen</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+
+{style="table-layout:auto"}
+
+
+## Användningsfall 1 {#deduplicate-uc1}
+
+Du vill förhindra att dubblettintäkter räknas när en användare läser in bekräftelsesidan för bokningen igen. Du använder bokningsbekräftelsens ID vid identifieraren för att inte räkna intäkten igen när den tas emot vid samma händelse.
+
+### Data före {#deduplicate-uc1-databefore}
+
+| Bokningsbekräftelse-ID | Intäkter |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#deduplicate-uc1-derivedfield}
+
+Du definierar en `Booking Confirmation` härlett fält. Du använder [!UICONTROL DEDUPLICATE] funktion för att definiera en regel som ska deduplicera [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] använda [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. Du väljer [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
+
+![Skärmbild av sammanfogningsregeln](assets/deduplicate-1.png)
+
+### Data efter {#deduplicate-uc1-dataafter}
+
+| Bokningsbekräftelse-ID | Intäkter |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 0 |
+| ABC123456789 | 0 |
+
+{style="table-layout:auto"}
+
+## Användningsfall 2 {#deduplicate-uc2}
+
+Ni använder händelser som en proxy för kampanjklickningar med externa marknadsföringskampanjer. Läser in igen och omdirigeringar gör att händelsemätningen blir hög. Du vill deduplicera spårningskoddimensionen så att bara den första samlas in och minimera händelseöverräkningen.
+
+### Data före {#deduplicate-uc2-databefore}
+
+| Besökar-ID | Marknadsföringskanal | Händelser |
+|----|---|---:|
+| ABC123 | betalsökningar | 1 |
+| ABC123 | betalsökningar | 1 |
+| ABC123 | betalsökningar | 1 |
+| DEF123 | e-post | 1 |
+| DEF123 | e-post | 1 |
+| JKL123 | naturlig sökning | 1 |
+| JKL123 | naturlig sökning | 1 |
+
+{style="table-layout:auto"}
+
+### Härlett fält {#deduplicate-uc2-derivedfield}
+
+Du definierar ett nytt `Tracking Code (deduplicated)` härlett fält. Du använder [!UICONTROL DEDUPLICATE] funktion för att definiera en regel som ska deduplicera [!UICONTROL Tracking Code] med [!UICONTROL Deduplication scope] av [!UICONTROL Session] och [!UICONTROL Keep first instance] som [!UICONTROL Value to keep].
+
+![Skärmbild av sammanfogningsregeln](assets/deduplicate-2.png)
+
+### Data efter {#deduplicate-uc2-dataafter}
+
+| Besökar-ID | Marknadsföringskanal | Händelser |
+|----|---|---:|
+| ABC123 | betalsökningar | 1 |
+| DEF123 | e-post | 1 |
+| JKL123 | naturlig sökning | 1 |
 
 {style="table-layout:auto"}
 
@@ -1620,6 +1704,7 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 | <p>Skiftläge</p> | <ul><li>5 Skiftläge När funktioner per härlett fält</li><li>200 [operatorer](#operators) per härlett fält</li></ul> |
 | <p>Klassificera</p> | <ul><li>5 Klassificera funktioner per härlett fält</li><li>200 [operatorer](#operators) per härlett fält</li></ul> |
 | <p>Sammanfoga</p> | <ul><li>2 Sammanfogningsfunktioner per härlett fält</li></ul> |
+| <p>Deduplicera</p> | <ul><li>5 Deduplicera funktioner per härlett fält</li></ul> |
 | <p>Sök och ersätt</p> | <ul><li>2 Sök och ersätt-funktioner per härlett fält</li></ul> |
 | <p>Sök</p> | <ul><li>5 Sökfunktioner per härlett fält</li></ul> |
 | <p>Gemener</p> | <ul><li>2 Gemener per härlett fält</li></ul> |
