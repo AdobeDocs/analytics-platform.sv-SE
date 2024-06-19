@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 162d1c6878a906d831a4f27f0b2c5105171e16e8
+source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1632'
 ht-degree: 0%
 
 ---
@@ -43,10 +43,20 @@ Innehåller övergripande inställningar för datavyn.
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL Connection] | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller en eller flera Adobe Experience Platform-datauppsättningar. |
-| [!UICONTROL Name] | Obligatoriskt. Datavyns namn. Värdet visas i den övre högra listrutan i Analysis Workspace. |
-| [!UICONTROL External ID] | Obligatoriskt. Namnet på datavyn som du kan använda i externa källor, t.ex. affärsinformationsverktyg. Standard är `unspecified`. Om du inte anger ett externt ID genereras namnet från datavyns namn och blanksteg ersätts med understreck. |
-| [!UICONTROL Description] | Valfritt. Adobe rekommenderar en detaljerad beskrivning så att användarna förstår varför datavyn finns och vem den är avsedd för. |
+| [!UICONTROL **Anslutning**] | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller en eller flera Adobe Experience Platform-datauppsättningar. |
+| [!UICONTROL **Namn**] | Obligatoriskt. Datavyns namn. Värdet visas i den övre högra listrutan i Analysis Workspace. |
+| [!UICONTROL **Externt ID**] | Obligatoriskt. Namnet på datavyn som du kan använda i externa källor, t.ex. affärsinformationsverktyg. Standard är `unspecified`. Om du inte anger ett externt ID genereras namnet från datavyns namn och blanksteg ersätts med understreck. |
+| [!UICONTROL **Beskrivning**] | Valfritt. Adobe rekommenderar en detaljerad beskrivning så att användarna förstår varför datavyn finns och vem den är avsedd för. |
+
+{style="table-layout:auto"}
+
+### Kompatibilitet
+
+Innehåller inställningar som är tillämpliga när du använder Adobe Journey Optimizer förutom Customer Journey Analytics.
+
+| Inställning | Beskrivning |
+| --- | --- |
+| [!UICONTROL **Ange som standarddatavy i Adobe Journey Optimizer**] | Det här konfigurationsalternativet standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan också utföra avancerade analyser av dina Adobe Journey Optimizer-data i Customer Journey Analytics (genom att välja [!UICONTROL **Analysera i CJA**] i Journey Optimizer).<p>För att kunna utföra den här typen av analyser måste Journey Optimizer ha tillgång till datavyn Customer Journey Analytics.<p>Aktivera det här alternativet om du vill göra det här till standarddatavyn som används i Journey Optimizer-rapporter.</p><p>Det här konfigurationsalternativet automatiskt:</p><ul><li>Konfigurerar alla nödvändiga Journey Optimizer-datauppsättningar i den associerade anslutningen i Customer Journey Analytics för användning med Journey Optimizer.</li><li>Skapar en uppsättning Journey Optimizer-mått och -dimensioner i datavyn (inklusive härledda fält och beräknade värden). Kontextetiketter anges automatiskt för alla dessa mått och mått.<p>**Obs!** Vid behov kan du göra ytterligare, manuella anpassningar av datauppsättningar, dimensioner eller mätvärden som är tillgängliga i datavyer som du använder för både Journey Optimizer och Customer Journey Analytics, enligt vad som beskrivs i [Integrera Adobe Journey Optimizer med Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></li></ul><p>Du kan ändra standarddatavyn vid ett senare tillfälle, men om du gör det kan Journey Optimizer rapporteringsdata ändras. Om du väljer att inaktivera det här alternativet när det har aktiverats uppmanas du att välja en ny standarddatavy.</p> |
 
 {style="table-layout:auto"}
 
@@ -56,9 +66,9 @@ Anger namnet på behållare för datavyn. Behållarnamn används ofta i [filter]
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL Person container name] | [!UICONTROL Person] (standard). The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för personer inom den angivna tidsramen. Om din organisation använder en annan term (till exempel &quot;Besökare&quot; eller &quot;Användare&quot;) kan du byta namn på behållaren här. |
-| [!UICONTROL Session container name] | [!UICONTROL Session] (standard). The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
-| [!UICONTROL Event container name] | [!UICONTROL Event] (standard). The [!UICONTROL Event] container definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
+| [!UICONTROL **Namn på personbehållare**] | [!UICONTROL Person] (standard). The [!UICONTROL Person] behållare innehåller alla sessioner och händelser för personer inom den angivna tidsramen. Om din organisation använder en annan term (till exempel &quot;Besökare&quot; eller &quot;Användare&quot;) kan du byta namn på behållaren här. |
+| [!UICONTROL **Sessionsbehållarnamn**] | [!UICONTROL Session] (standard). The [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
+| [!UICONTROL **Namn på händelsebehållare**] | [!UICONTROL Event] (standard). The [!UICONTROL Event] container definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
 
 {style="table-layout:auto"}
 
@@ -68,11 +78,11 @@ Anger det kalenderformat som du vill att datavyn ska följa. Du kan ha flera dat
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL Time zone] | Välj vilken tidszon du vill att dina data ska visas i. Om du väljer en tidszon som fungerar med sommartid justeras data automatiskt för att återspegla det. På våren, när klockorna justerar en timme framåt, finns det en lucka på en timme. I fallet, när klockorna justeras en timme bakåt, upprepas en timme under DST-skiftet. |
-| [!UICONTROL Calendar Type] | Bestäm hur veckors i månaden ska grupperas.<br>**Gregorianska:** Standardkalenderformat. Kvartal grupperas efter månad.<br>**4-5-4 Detaljhandel:** En standardiserad 4-5-4-kalender för detaljhandeln. Den första och sista månaden i kvartalet innehåller 4 veckor, medan den andra månaden i kvartalet består av 5 veckor.<br>**Anpassad (4-5-4):** Liknar kalendern 4-5-4 förutom att du kan välja den första dagen på året och vilket år som den extra veckan inträffar.<br>**Anpassad (4-4-5):** Den första och den andra månaden i varje kvartal innehåller 4 veckor, medan den sista veckan i varje kvartal består av 5 veckor.<br>**Anpassad (5-4-4):** Den första månaden i varje kvartal består av 5 veckor, medan den andra och tredje månaden i varje kvartal består av 4 veckor. |
-| [!UICONTROL First month of the year] och [!UICONTROL First day of week] | Synlig för den gregorianska kalendertypen. Ange vilken månad du vill att kalenderåret ska börja på och vilken dag du vill att varje vecka ska börja på. |
-| [!UICONTROL First day of current year] | Synlig för anpassade kalendertyper. Ange vilken dag på året som du vill att det aktuella året ska börja. Kalendern formaterar automatiskt den första dagen i varje vecka baserat på det här värdet. |
-| [!UICONTROL Year in which the "extra" week occurs] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de blir upp till en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill lägga till den extra veckan i. |
+| [!UICONTROL **Tidszon**] | Välj vilken tidszon du vill att dina data ska visas i. Om du väljer en tidszon som fungerar med sommartid justeras data automatiskt för att återspegla det. På våren, när klockorna justerar en timme framåt, finns det en lucka på en timme. I fallet, när klockorna justeras en timme bakåt, upprepas en timme under DST-skiftet. |
+| [!UICONTROL **Kalendertyp**] | Bestäm hur veckors i månaden ska grupperas.<br>**Gregorianska:** Standardkalenderformat. Kvartal grupperas efter månad.<br>**4-5-4 Detaljhandel:** En standardiserad 4-5-4-kalender för detaljhandeln. Den första och sista månaden i kvartalet innehåller 4 veckor, medan den andra månaden i kvartalet består av 5 veckor.<br>**Anpassad (4-5-4):** Liknar kalendern 4-5-4 förutom att du kan välja den första dagen på året och vilket år som den extra veckan inträffar.<br>**Anpassad (4-4-5):** Den första och den andra månaden i varje kvartal innehåller 4 veckor, medan den sista veckan i varje kvartal består av 5 veckor.<br>**Anpassad (5-4-4):** Den första månaden i varje kvartal består av 5 veckor, medan den andra och tredje månaden i varje kvartal består av 4 veckor. |
+| [!UICONTROL **Årets första månad**] och [!UICONTROL **Första dagen i veckan**] | Synlig för den gregorianska kalendertypen. Ange vilken månad du vill att kalenderåret ska börja på och vilken dag du vill att varje vecka ska börja på. |
+| [!UICONTROL **Första dagen i aktuellt år**] | Synlig för anpassade kalendertyper. Ange vilken dag på året som du vill att det aktuella året ska börja. Kalendern formaterar automatiskt den första dagen i varje vecka baserat på det här värdet. |
+| [!UICONTROL **År då den&quot;extra&quot; veckan inträffar**] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de blir upp till en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill lägga till den extra veckan i. |
 
 {style="table-layout:auto"}
 
