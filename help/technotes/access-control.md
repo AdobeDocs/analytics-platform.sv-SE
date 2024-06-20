@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,7 @@ Förutom att läggas till som produktadministratör i **Customer Journey Analyti
 
 * Exportera datauppsättningar till molnet [Destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)
 
-  >[!AVAILABILITY]
-  >
-  >Möjligheten att exportera datauppsättningar till molnet är i den begränsade testfasen av releasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
-
-  För att kunna utföra den här uppgiften behöver användare även följande behörigheter i Experience Platform:
+  För att kunna utföra den här åtgärden behöver användare följande behörigheter i Experience Platform:
    * Hantera mål
    * Aktivera destinationer
 

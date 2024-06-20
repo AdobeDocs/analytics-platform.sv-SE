@@ -4,9 +4,9 @@ title: Hämta Customer Journey Analytics-data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
+source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,18 @@ Du kan hämta Customer Journey Analytics-data till din personliga arbetsstation.
 Det finns även andra metoder för att exportera data från Customer Journey Analytics, vilket beskrivs i [Exportera översikt](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Hämta som CSV eller PDF {#download-project}
+
+Tänk på följande när du hämtar projekt:
+
+* När du hämtar projekt som en CSV-fil eller PDF kan projektet sparas eller sparas utan att sparas när du begär en projekthämtning. Endast sparade projekt kan dock [schemalagd](/help/analysis-workspace/export/t-schedule-report.md).
+
+* Vid hämtning av projekt som PDF:
+   * Det kan ta flera minuter att exportera nedladdningar eftersom projektet körs på nytt på Adobe-servrar innan det återges i PDF-format. Vi rekommenderar att du inte lämnar projektet förrän PDF har hämtats i webbläsaren. Du kan dock fortsätta att göra ändringar i projektet medan du väntar. Om det tar längre tid än fem minuter att återge ett PDF uppmanas du att skicka det via e-post i stället.
+   * Hämtningar återges som en sida utan sidnumrering.
+   * PDF-återgivningar innehåller det som finns på sidan i Workspace. Om ett projekt har visualiseringar och paneler i anpassad storlek måste du ändra dem så att de storleksändras automatiskt (knappen i det övre högra hörnet) så att det inte finns något trunkerat innehåll.
+   * Alla [hyperlänkar](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) som finns i frihandstabeller inte fungerar i det hämtade PDF.
+
+Så här hämtar du ett projekt som en CSV- eller PDF-fil:
 
 1. Gör något av följande, beroende på vilket format du vill att hämtningen ska vara i:
 
@@ -32,13 +44,6 @@ Det finns även andra metoder för att exportera data från Customer Journey Ana
    ![Listrutan Projekt där alternativen Hämta CSV och Hämta PDF är markerade.](assets/download-project.png)
 
 1. (Villkorligt) Om du väljer att hämta ett PDF visas ett meddelande när projektet är klart att hämtas. Välj [!UICONTROL **Ladda ned**].
-
-När det gäller projektnedladdningar bör du tänka på följande:
-
-* Projektet kan sparas eller inte sparas när du begär en projekthämtning. Endast sparade projekt kan dock [schemalagd](/help/analysis-workspace/export/t-schedule-report.md).
-* Det kan ta flera minuter att exportera PDF som hämtats i webbläsaren eftersom projektet körs på Adobe-servrar igen innan det återges i PDF-format. Vi rekommenderar att du inte lämnar projektet förrän PDF har hämtats i webbläsaren. Du kan dock fortsätta att göra ändringar i projektet medan du väntar. Om det tar längre tid än fem minuter att återge ett PDF uppmanas du att skicka det via e-post i stället.
-* Nedladdningar från PDF återges som en sida utan sidnumrering.
-* När ett projekt återges för PDF återger vi det som finns på sidan. Om ett projekt har visualiseringar och paneler i anpassad storlek måste du ändra dem så att de storleksändras automatiskt (knappen i det övre högra hörnet) så att det inte finns något trunkerat innehåll.
 
 ## Kopiera till Urklipp (snabbtangent: Ctrl+C) {#copy-data}
 
