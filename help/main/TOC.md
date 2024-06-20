@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: cf399df3a8043f5ec9fe723a531bf2f8af68799a
+source-git-commit: cef43e45a647674c6f2472e9402224b5cbc617da
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1105'
 ht-degree: 8%
 
 ---
@@ -105,6 +105,7 @@ ht-degree: 8%
       + [Projektöversikt](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Innehållsförteckning för projekt](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Mappar på arbetsytan {#workspace-folders}
          + [Om mappar i arbetsytan](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -120,6 +121,7 @@ ht-degree: 8%
       + [Hantera datakällor](../analysis-workspace/visualizations/t-sync-visualization.md)
       + Frihandsregister {#freeform-table}
          + [Frihandsregister](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Skapa hyperlänkar för dimensioner i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)

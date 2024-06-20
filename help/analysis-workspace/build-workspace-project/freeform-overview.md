@@ -5,9 +5,9 @@ title: Projektöversikt
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 10751991e3c40cfefac7d32cea0b5cc557133232
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1335'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga
 
 ### Projektinformation och inställningar {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** innehåller information på projektnivå om det aktiva projektet.
+**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** innehåller information på projektnivå om det aktiva projektet.
 
 ![Fönstret Projektinformation och inställningar.](assets/projectinfo.png)
 
@@ -89,11 +89,19 @@ Inställningarna inkluderar:
 
 ## Vänster räl {#left-rail}
 
-Inom ett projekt [paneler](/help/analysis-workspace/c-panels/panels.md), tabeller, [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och [komponenter] är åtkomliga från den vänstra listen. Detta är era projektbyggstenar.
+I ett projekt finns det olika ikoner i den vänstra listen som representerar viktiga delar av ett projekt:
 
-Du kan även komma åt visualiseringar och paneler via [Tom panel](/help/analysis-workspace/c-panels/blank-panel.md) också.
+* [Panel](/help/analysis-workspace/c-panels/panels.md) ![ikonen för paneler](assets/panels-icon.png)
 
-Komponenter (Dimensioner, Metrisk, Filter, Datumintervall) i den vänstra listen relaterar till den aktiva panelens datavy. Den aktiva panelen kommer att ha en blå ram runt sig och den aktiva datavyn kommer att visas högst upp i komponentspåret.
+* [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![visualiseringsikon](assets/visualizations-icon.png)
+
+* [Komponenter](/help/components/overview.md)![komponentikon](assets/components-icon.png)
+
+* [Dataordlista](/help/components/data-dictionary/data-dictionary-overview.md)![ikon för dataordlista](assets/data-dictionary-icon.png)
+
+* [Innehållsförteckning](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![ikonen toc](assets/toc-icon.png)
+
+Komponenter (Dimensioner, Metrisk, Filter, Datumintervall) i den vänstra listen relaterar till den aktiva panelens datavy. Den aktiva panelen identifieras av den blå kant som omger den och den aktiva datavyn visas högst upp i komponentspåret.
 
 ![Komponenter som relaterar till den aktiva paneldatavyn för datavyn för branschövergripande demodata.](assets/left-rail.png)
 

@@ -4,9 +4,9 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+source-git-commit: 6e1db2351aa9fcc4682b892334430c1896cee914
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,21 @@ ht-degree: 0%
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) hjälper er att leverera sammankopplade, kontextuella och personaliserade upplevelser. Det gör att era kunder får ta nästa steg i kundresan.
 
-Du kan importera data som genererats av Journey Optimizer för att utföra avancerad analys i Customer Journey Analytics genom att utföra följande steg:
+Du kan importera data som genererats av Journey Optimizer för att utföra avancerad analys i Customer Journey Analytics. Du kan göra detta automatiskt. Vid behov kan du göra ytterligare manuella anpassningar av datauppsättningar, dimensioner eller mätvärden som är tillgängliga i datavyer som du använder för både Adobe Journey Optimizer och Customer Journey Analytics.
 
-## Skicka data från Journey Optimizer till Adobe Experience Platform
+## Konfigurera automatiskt en datavy för Customer Journey Analytics som ska användas med Journey Optimizer
+
+Med ett konfigurationsalternativ i Customer Journey Analytics kan du ange en datavy för Customer Journey Analytics som ska användas med Journey Optimizer, utan att behöva göra en manuell konfiguration. <p>Mer information om hur du aktiverar det här konfigurationsalternativet finns i [Kompatibilitet](/help/data-views/create-dataview.md#compatibility) avsnitt i [Skapa eller redigera en datavy](/help/data-views/create-dataview.md).
+
+## Konfigurera en datavy för Customer Journey Analytics som ska användas med Journey Optimizer manuellt
+
+I följande avsnitt beskrivs hur du importerar data som genererats av Journey Optimizer manuellt för att utföra avancerade analyser i Customer Journey Analytics. Detta är nödvändigt endast om [alternativ för automatisk konfiguration](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) är inte tillräckligt för dina behov.
+
+### Skicka data från Journey Optimizer till Adobe Experience Platform
 
 Adobe Experience Platform är den centrala datakällan och länken mellan Journey Optimizer och Customer Journey Analytics. Se [Kom igång med datauppsättningar](https://experienceleague.adobe.com/docs/journey-optimizer/using/data-management/datasets/get-started-datasets.html) i användarhandboken för Journey Optimizer om hur du skickar Journey Optimizer-data till Platform som en datauppsättning.
 
-## Skapa en anslutning i Customer Journey Analytics
+### Skapa en anslutning i Customer Journey Analytics
 
 När Journey Optimizer data finns i Adobe Experience Platform kan man [Skapa en anslutning](/help/connections/create-connection.md) baserat på era Journey Optimizer-datauppsättningar. Du kan också lägga till Journey Optimizer-datauppsättningar i en befintlig anslutning.
 
@@ -38,7 +46,7 @@ Välj och konfigurera följande datauppsättningar:
 {style="table-layout:auto"}
 
 
-## Konfigurera datavyn så att den passar Journey Optimizer mått och mått
+### Konfigurera datavyn så att den passar Journey Optimizer mått och mått
 
 När en anslutning har skapats kan du skapa en eller flera [Datavyer](/help/data-views/create-dataview.md) för att konfigurera önskade mått och mätvärden som är tillgängliga i Customer Journey Analytics.
 
@@ -47,7 +55,7 @@ När en anslutning har skapats kan du skapa en eller flera [Datavyer](/help/data
 >Datamatchningar mellan Adobe Journey Optimizer och Customer Journey Analytics är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
 
 
-### Konfigurera dimensioner i datavyn
+#### Konfigurera dimensioner i datavyn
 
 Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med liknande dimensioner i Journey Optimizer. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Data View Manager för mer information om dimensionsanpassningsalternativ.
 
@@ -70,7 +78,7 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 
 {style="table-layout:auto"}
 
-### Konfigurera mått i datavyn
+#### Konfigurera mått i datavyn
 
 Du kan skapa följande mätvärden i en datavy för att få en ungefärlig paritet med liknande mätvärden i Journey Optimizer. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Data View Manager för mer information om alternativ för anpassning av mätvärden.
 
@@ -93,7 +101,7 @@ Du kan skapa följande mätvärden i en datavy för att få en ungefärlig parit
 
 {style="table-layout:auto"}
 
-### Konfigurera beräknade värden i Analysis Workspace
+#### Konfigurera beräknade värden i Analysis Workspace
 
 När du har konfigurerat önskade mått och mätvärden för Journey Optimizer datauppsättning kan du även konfigurera [Beräknade mått](/help/components/calc-metrics/calc-metr-overview.md) för ytterligare insikter om dessa data. Dessa beräknade värden baseras på ovanstående mått som skapats i Data View Manager.
 

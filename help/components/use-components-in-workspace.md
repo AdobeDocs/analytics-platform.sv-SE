@@ -3,9 +3,10 @@ description: Lär dig lägga till komponenter i ett projekt i Analysis Workspace
 title: Använda komponenter i Analysis Workspace
 feature: Components
 role: User
-source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
+exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
+source-git-commit: 697503bba56f44159df7a2f6a0e60a0a4178266d
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,11 @@ Mer information om de typer av komponenter du kan lägga till finns i [Komponent
 
 1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
 
-   Du kan till exempel dra ett filter till filtersläppzonen i en panelrubrik.
+1. (Valfritt) Dra en komponent till filtersläppzonen i en panelrubrik.
+
+   Filter gäller för allt innehåll på panelen.
+
+   Mer information om hur du kan använda filtersläppzonen på en panel för att filtrera panelen finns i [Släppzon](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Paneler - översikt](/help/analysis-workspace/c-panels/panels.md).
 
    ![släppa ett filter i släppzonen](assets/filter-dropzone.png)
 
@@ -61,6 +66,10 @@ Mer information om de typer av komponenter du kan lägga till finns i [Komponent
      ![Lägga till dimensioner i ett projekt](assets/add-dimensions.png)
 
    * Dra en eller flera dimensioner från den vänstra listen till filterdroppzonen för att skapa ett ad hoc-filter enligt beskrivningen i [Lägga till filter i ett projekt](#add-filters-to-a-project).
+
+1. (Valfritt) Du kan dela upp dimensioner och dimensionsobjekt i Analysis Workspace med andra komponenter.
+
+   Mer information finns i [Dela upp dimensioner i arbetsytan](/help/components/dimensions/t-breakdown-fa.md).
 
 Mer information om hur du använder dimensioner i Analysis Workspace finns i [Förhandsvisa dimensioner](/help/components/dimensions/view-dimensions.md), [Dela upp dimensioner](/help/components/dimensions/t-breakdown-fa.md)och [Tidsdelningsdimensioner](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -90,31 +99,23 @@ Mer information om mätvärden finns i [Översikt över beräknade mätvärden](
 
 [Filter](/help/components/filters/filters-overview.md) gör att du kan identifiera undergrupper av besökare baserat på egenskaper eller specifika interaktioner.
 
-Så här lägger du till ett filter i ett projekt i Analysis Workspace:
+Du kan använda filter i Analysis Workspace på något av följande sätt:
 
-1. Börja lägga till ett filter i ditt projekt i Analysis Workspace, enligt beskrivningen i [Börja lägga till komponenter i ett projekt](#begin-adding-components-to-a-project).
+### Lägga till filter på en panel
 
-1. Välj en av följande metoder för att börja filtrera panelen:
-
-   * Dra ett enskilt filter från den vänstra listen till filterdroppområdet.
-
-     ![släppa ett filter i släppzonen](assets/filter-dropzone.png)
-
-   * Håll ned Skift eller Ctrl om du vill markera flera filter i den vänstra listen och håll sedan ned Skift när du släpper dem i filtersläppningsområdet.
-
-     ![släppa flera filter i släppzonen](assets/filter-dropzone-multiple.png)
-
-     Då skapas en nedrullningsbar meny där användarna på panelen kan välja vilket filter de vill använda. Den nedrullningsbara menyn innehåller en [!UICONTROL **Inget filter**] som användare kan markera, vilket lämnar panelen ofiltrerad.
-
-     Du kan välja (x) för att ta bort ett alternativ från listrutan. Om du tar bort [!UICONTROL **Inget filter**] måste du ange ett filter.
-
-   * Skapa ad hoc-filter genom att dra icke-filterkomponenter till släppzonen. Detta kan spara tid och arbete när du går till filterverktyget. Filter som skapas på det här sättet definieras automatiskt som träffnivåfilter. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid filtret, sedan den pennformade redigeringsikonen och redigera den i Filterverktyget.
-
-     Ad hoc-filter är en typ av snabbfilter och är lokala för projektet. De visas inte i den vänstra listen om du inte gör dem offentliga.
-
-     Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
+När du lägger till filter på en panel tillämpas filtren på allt innehåll på panelen.
 
 Mer information om hur du kan använda filtersläppzonen på en panel för att filtrera panelen finns i [Släppzon](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Paneler - översikt](/help/analysis-workspace/c-panels/panels.md).
+
+### Lägga till filter i en kolumn i en frihandstabell
+
+När du lägger till filter i en kolumn i en frihandstabell tillämpas filtren på allt innehåll i tabellkolumnen.
+
+### Använd filter när du skapar beräknade värden
+
+I verktyget Beräknade mätvärden kan du använda filter i måttdefinitionen.
+
+Mer information finns i [Filtrerade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## Lägga till datumintervall i ett projekt
 
