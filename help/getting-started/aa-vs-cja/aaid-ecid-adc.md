@@ -4,9 +4,9 @@ description: Lär dig hur Analytics-källkopplingen hanterar Adobe Analytics ide
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 0dc99750126ed5b88b1d1f2d4afc28acad0fe84e
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,12 @@ Inom identityMap:
 * Om det finns ett ECID markeras det som händelsens primära identitet. Observera att i detta fall kan stöd baseras på ECID enligt diskussionen ovan.
 I annat fall markeras AID som händelsens primära identitet.
 * AACUSTOMID markeras aldrig som händelsens primära ID. Om det finns ett AACUSTOMID, baseras AAID dock på AACUSTOMID enligt beskrivningen ovan.
+
+När identiteten eller identiteterna kopieras till `identityMap`, `endUserIDs._experience.mcid.namespace.code` anges också för samma händelse:
+
+* Om det finns stöd för detta, `endUserIDs._experience.aaid.namespace.code` är inställd på&quot;AAID&quot;.
+* Om det finns ECID, `endUserIDs._experience.mcid.namespace.code` är inställd på &quot;ECID&quot;.
+* Om AACUSTOMID finns, `endUserIDs._experience.aacustomid.namespace.code` är inställt på &quot;AACUSTOMID&quot;.
 
 ## Customer Journey Analytics och primärt ID
 
