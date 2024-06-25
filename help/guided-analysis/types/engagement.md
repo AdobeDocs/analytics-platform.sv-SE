@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a4c35466b225d44130bb55204e2fdb155fa7dee6
+source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta an
 * Funktionerna längst ned till vänster i matrisen är **låg effekt** funktioner; de används inte i någon större utsträckning eller ofta.
 * Funktionerna längst ned till höger i matrisen är **en gång** funktioner; de är vida spridda, men används inte ofta.
 
-![Engagement, bild](../assets/feature-matrix.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
 ## Användningsexempel
 

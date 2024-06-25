@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 6b8d9abf7d807a1e19aa86386eb2dae9bb18f472
+source-git-commit: b0fd55a289145aa7946ec6c4f60da5921125319c
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 The **[!UICONTROL Retention rates]** visar hur användarna fortsätter att använda produkten med tiden, vilket kan hjälpa er att förstå hur produktmarknaden passar in. Analysen räknar användare baserat på två viktiga händelser:
 
 * Starthändelse: Den händelse som används för att kvalificera användare för att ingå i din analys.
-* Returhändelse: De händelser som en användare måste interagera med för att räknas som en återkommande användare i din analys.
+* Returhändelse: En eller flera händelser som en användare måste interagera med för att räknas som en återkommande användare i din analys.
 
-I den här vyn representerar diagrammets x-axel tiden sedan en användares första starthändelse och y-axeln den procentandel användare som interagerar med returhändelserna. Du kan visa både kvarhållning och kurvor över varaktigheter, och varaktigheterna som visas kan anpassas med frågeinställningarna. Under diagrammet innehåller en tabell aggregerade data med alternativet att visa enskilda kohorter, som är en grupp personer som utförde starthändelsen på samma datum.
+I den här vyn representerar diagrammets x-axel tiden sedan en användares första starthändelse och y-axeln den procentandel användare som interagerar med en eller flera returhändelser. Du kan visa både kvarhållning och kurvor över varaktigheter, och varaktigheterna som visas kan anpassas med frågeinställningarna. Under diagrammet innehåller en tabell aggregerade data med alternativet att visa enskilda kohorter, som är en grupp personer som utförde starthändelsen på samma datum.
 
-![Bevarandefrekvens, bild](../assets/retention-rates.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
 ## Användningsexempel
 
@@ -36,13 +36,13 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL Start event]**: De händelsekriterier som en användare måste uppfylla för att kunna inkluderas i din analys. Användare som använder starthändelsen räknas i kolumnen Användare i tabellen. Detta fungerar som nämnare för de kvarhållningsräntor som visas. En händelse stöds och egenskapsfilter kan tillämpas efter behov. Som standard är start- och returhändelsen länkad, vilket innebär att en användare måste göra den valda händelsen en gång för att kunna inkluderas i kohorten och sedan en gång till för att räknas som en returnerande användare. På menyn Mer kan du bryta länken mellan start- och returhändelserna om du vill att den returnerade åtgärden ska vara en annan än inkluderingsåtgärden.
+* **[!UICONTROL Start event]**: De händelsekriterier som en användare måste uppfylla för att kunna inkluderas i din analys. Användare som använder starthändelsen räknas i kolumnen Användare i tabellen. Den här händelsen fungerar som nämnare för de kvarhållningsräntor som visas. En händelse stöds och egenskapsfilter kan tillämpas efter behov. Som standard är start- och returhändelsen länkad, vilket innebär att en användare måste göra den valda händelsen en gång för att kunna inkluderas i kohorten och sedan en gång till för att räknas som en returnerande användare. På menyn Mer kan du bryta länken mellan start- och returhändelserna om du vill att den returnerade åtgärden ska vara en annan än inkluderingsåtgärden.
 * **[!UICONTROL Return events]**: De händelsevillkor som en användare måste interagera med för att räknas som en återkommande användare i tidsintervallen. Du kan välja upp till tre returhändelser som ska jämföras med kvarhållandet.
 * **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för användare som behålls. Alternativen är:
-   * **[!UICONTROL Metric]**: Visa antalet [!UICONTROL Users] eller [!UICONTROL Percentage of users] behålls. Nämnaren för procentuella användare som behålls är de inkluderade användarna för kohorten och är densamma för alla varaktighetsintervall.
+   * **[!UICONTROL Metric]**: Visa antalet [!UICONTROL Users] eller [!UICONTROL Percentage of users] behålls. Nämnaren för procentuella användare som behålls är de inkluderade användarna i kohorten och är densamma för alla varaktighetsintervall.
    * **[!UICONTROL Returning]**: Används för att styra hur returnerade användare räknas. Alternativen är:
       * **[!UICONTROL On or after]**: Kallas ofta&quot;obegränsad&quot; kvarhållning. Det här alternativet räknar en användare om de återgår till eller efter den angivna varaktigheten. Till exempel dag 7 eller när som helst efter dag 7. Det här alternativet är användbart när du vill visa hur användarna fortsätter att engagera och skapar en jämnare kvarhållningskurva som ett resultat.
-      * **[!UICONTROL On exactly]**: Det här alternativet kallas ofta för &quot;begränsad&quot; kvarhållning och räknar en användare om de återgår exakt till den angivna varaktigheten. Till exempel på dag 7 exakt. Det här alternativet är användbart när du vill visa hur användare returnerar inom specifika tidsramar och generera en kvarhållningskurva med mer undulation som ett resultat. Obs! I kohortanalysen i Analysis Workspace används&quot;exakt&quot; beräkning som bas för analysen.
+      * **[!UICONTROL On exactly]**: Det här alternativet kallas ofta för &quot;begränsad&quot; kvarhållning och räknar en användare om de återgår exakt till den angivna varaktigheten. Till exempel på dag 7 exakt. Det här alternativet är användbart när du vill visa hur användare returnerar inom specifika tidsramar och genererar en kvarhållningskurva med mer undulation som ett resultat. Obs! I kohortanalysen i Analysis Workspace används&quot;exakt&quot; beräkning som bas för analysen.
    * **[!UICONTROL Each]**: Den tidsperiod som du vill att varje längdbucket ska vara. Alternativen är:
       * **[!UICONTROL Day/Week/Month]**: Vilka alternativ som är tillgängliga beror på vilket datumintervall som har valts. Dessa alternativ är identiska med **[!UICONTROL Interval]** när du väljer datumintervall och uppdaterar inställningen automatiskt.
       * **[!UICONTROL Custom brackets]**: Det här alternativet är endast tillgängligt för inställningen &quot;På varje&quot;. Med den kan du räkna användare över en större tidsram, till exempel Dag 7-10 i stället för Dag 7.
