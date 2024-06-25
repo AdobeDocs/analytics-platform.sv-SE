@@ -3,9 +3,9 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4c6578d500ccd86c9e64256aebb65e27de7896be
+source-git-commit: bad5e71a51d9bf5f2155ea5c711763fafebc1bcf
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Versionsanteckningarna gäller den 6 juni till juli 2024. Adobe Customer Journey
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **AI Assistant för Customer Journey Analytics** | Gör att du kan ställa naturspråkliga frågor i användargränssnittet för Customer Journey Analytics och få svar baserat på dokumentationen för Customer Journey Analytics. [Läs mer](/help/ai-assistant.md) | | 6 juni 2024 |
-| **Diagrambaserad sammanfogning: Stitching Using UIS Graph Export** | Med hjälp av diagrambaserad sammanfogning kan du använda identitetsdiagrammet för att få en bättre bild av kundresan genom att:<ul><li>Sammanfoga datauppsättningar med olika identifierare utan att behöva extrahera, omvandla och läsa in ytterligare data för att spegla en enda identifierare.</li><li>Förbättra täckningen av preferens- eller gyllene identitet för en enskild datauppsättning genom att dela identiteter mellan datauppsättningar.</li><li>Justera profiler som skapats i Real-time Customer Data Platform och Journey Optimizer med personer i Customer Journey Analytics.</li></ul>(Dokumentationslänk följer) |  | 28 juni 2024 |
+| **Diagrambaserad utjämning** | Med hjälp av diagrambaserad sammanfogning kan du använda identitetsdiagrammet från Experience Platform Identity Service för att få en bättre bild av kundresan genom att:<ul><li>Sammanfoga datauppsättningar med olika identifierare utan att behöva extrahera, omvandla och läsa in ytterligare data för att spegla en enda identifierare.</li><li>Förbättra täckningen av preferens- eller gyllene identitet för en enskild datauppsättning genom att dela identiteter mellan datauppsättningar.</li><li>Justera profiler som skapats i Real-time Customer Data Platform och Journey Optimizer med personer i Customer Journey Analytics.</li></ul>[Läs mer](/help/stitching/overview.md) |  | 28 juni 2024 |
 | **B2B-schemaomvandling för person till konto** | För att ge stöd åt personbaserade sökningar på B2B-data (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) kan ni omvandla datauppsättningar för B2B-sökning. Den här omvandlingen är bara tillgänglig för datauppsättningar med data för B2B-sökningsscheman, baserat på följande klasser:<ul><li>XDM Business Account Person Relation</li><li>XDM - affärsmöjlighet, personrelation</li><li>XDM Business Marketing List-medlemmar</li><li>XDM Business Campaign-medlemmar</li></ul>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/transform-datasets-b2b-lookups) |  | 5 juni 2024 |
 | **Härledda fält - matematisk funktion** | Gör att du kan göra enkla matematiska operatorer i datavyer för att besvara frågor om dina användare. Du kan t.ex. kombinera intäkter från produkt, garanti och frakt. <p>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields#math)</p> | | 5 juni 2024 |
 | **Härledda fält - nästa eller föregående funktion** | Här kan du se vad nästa eller föregående värde är. Vilka tidigare marknadsföringskanaler interagerade någon med före den valda marknadsföringskanalen? Eller hur interagerade sidanvändarna med före eller efter den valda sidan? Vad interagerar de populäraste kanalanvändarna med innan de går till butiken? <p>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields#next-or-previous)</p> | | 12 juni 2024 |

@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -58,14 +58,14 @@ Ja. [Stitlar](../stitching/overview.md) läser användardata från både autenti
 
 +++**Hur fungerar &#39;replay&#39; när man syr ihop?**
 
-Stitching &quot;replaying&quot; data based on unique identifier it has learn. Replay syftar till att sammanfoga till en början oautentiserade händelser från enheter som har identifierats under tiden. [Läs mer](../stitching/explained.md)
+Stitching &quot;replaying&quot; data based on unique identifier it has learn. Replay syftar till att sammanfoga till en början oautentiserade händelser från enheter som har identifierats under tiden. [Läs mer](../stitching/overview.md)
 
 +++
 
 
 +++**Hur fungerar sammanfogning av historiska data (bakgrundsfyllning)?**
 
-När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](../stitching/explained.md)
+När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](../stitching/overview.md)
 
 +++
 

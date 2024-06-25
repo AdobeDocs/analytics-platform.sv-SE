@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1428'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Om du vill byta namn på dimensionsobjekt för datauppsättnings-ID kan du anvä
 
 +++**Hur långt bak spelar syfilis upp besökare?**
 
-Uppslagsfönstret för inmatning beror på hur ofta du vill ha data [spela upp](explained.md). Om du t.ex. ställer in sammanfogning för att spela upp data en gång i veckan, är uppslagsfönstret för inmatning sju dagar. Om du konfigurerar att fästa ihop för att spela upp data varje dag är uppslagsfönstret för att skriva in igen en dag.
+Uppslagsfönstret för att skriva in data igen beror på hur ofta du vill att data ska spelas upp. Om du t.ex. ställer in sammanfogning för att spela upp data en gång i veckan, är uppslagsfönstret för inmatning sju dagar. Om du konfigurerar att fästa ihop för att spela upp data varje dag är uppslagsfönstret för att skriva in igen en dag.
 
 +++
 
@@ -47,7 +47,9 @@ Det tillfälliga ID:t åsidosätter det beständiga ID:t, så delade enheter bet
 
 I vissa fall kan en enskild användare associera med många beständiga ID:n. Ett exempel är en person som ofta tar bort webbläsarens cookies eller använder webbläsarens privata läge/inkognito-läge.
 
-Antalet beständiga ID:n är irrelevant för det tillfälliga ID:t. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar Customer Journey Analytics förmåga att sy ihop sig mellan olika enheter.
+För fältbaserad stygn är antalet beständiga ID:n irrelevant till förmån för det tillfälliga ID:t. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar Customer Journey Analytics förmåga att sy ihop sig mellan olika enheter.
+
+För diagrambaserade sammanfogningar kan en person ha många beständiga ID:n i identitetsdiagrammet. Diagrambaserad sammanfogning använder det beständiga ID:t baserat på det angivna namnutrymmet. Om det finns ett mer beständigt ID för samma namnutrymme används det lexicografiska först beständiga ID:t.
 
 +++
 
@@ -120,3 +122,21 @@ Andra mätvärden kan vara liknande i Customer Journey Analytics och Adobe Analy
 Nej, Customer Journey Analytics kan för närvarande inte använda Identitetskarta-fält för sammanfogning.
 
 +++
+
++++**Kommer data att behöva kapslas om för att växla från fältbaserad sammanfogning till diagrambaserad sammanfogning?**
+Data behöver inte kapslas in i Experience Platform, men måste konfigureras om i Customer Journey Analytics. Följ dessa steg:
+
+1. Konfigurera den nya diagrambaserade sammanslagna datauppsättningen.
+1. Konfigurera den nya datauppsättningen som en del av en ny anslutning i Customer Journey Analytics.
+1. Växla din befintliga datavy till den nya anslutningen (och som sådan den nya grafbaserade, stilade datauppsättningen)
+1. Ta bort den gamla anslutningen som använder den fältbaserade sammanslagna datauppsättningen.
+
++++
+
++++**Skulle det bli några avbrott i befintliga rapporter?**
+
+Inte om du följer instruktionerna ovan. Annars ber vi Adobe Consulting om ytterligare support.
+
++++
+
+

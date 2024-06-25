@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 81ad9a41f1fa323f2e0149ce634904ceb1bc3198
+source-git-commit: bad5e71a51d9bf5f2155ea5c711763fafebc1bcf
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3722'
 ht-degree: 6%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juni 2024** | |
+| Diagrambaserad utjämning | Uppdaterad dokumentation om stygn med introduktionen av grafbaserad stygn. |
 | AI-assistenten | Tillagd [dokumentation](../ai-assistant.md) på AI Assistant för Customer Journey Analytics. |
 | Omforma datauppsättningar för B2B-sökningar | Lagt till dokumentation om support [personbaserade sökningar på B2B-data](/help/connections//transform-datasets-b2b-lookups.md) (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) med hjälp av omvandling av datauppsättningar för B2B-sökning. |
 | Härledda fältfunktioner och funktionsmallar | Lagt till dokumentation om ytterligare härledda fältfunktioner ([Matematik](/help/data-views/derived-fields/derived-fields.md#math), [Nästa eller Föregående](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) och [funktionsmallar](/help/data-views/derived-fields/derived-fields.md#function-templates). |
