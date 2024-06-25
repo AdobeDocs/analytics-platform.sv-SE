@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analytics BI-tillägg
-description: Lär dig hur du kan använda frågetjänsten, Power BIET, Tableau eller andra BI- och SQL-verktyg för att få åtkomst till datavyer med tillägget Customer Journey Analytics BI.
+description: Lär dig hur du kan använda Power BI eller Tableau för att komma åt datavyer med tillägget Customer Journey Analytics BI.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 963b8788f9657844d56449bf315abc5018deb5d8
+source-git-commit: 483f74408cfb81f2cbbbb25df9402aa829be09b1
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,17 @@ De viktigaste fördelarna är:
 
 ## Förutsättningar
 
-Om du vill använda den här funktionen måste du:
+Om du vill använda den här funktionen måste du ha:
 
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
-* Konfigurera funktionaliteten för relevanta produktprofiler, användargrupper och/eller enskilda användare. Åtkomstkraven är:
-   * Adobe Experience Platform Query Service
-   * Arbetsyteprojekt i Customer Journey Analytics
-   * Önskade CJA-datavyer som kan användas
-   * Åtkomst till BI-tillägget i datavyverktygen
-
+* Tillgång till Experience Platform och Customer Journey Analytics.
+* Beviljad produktadministratörsåtkomst till Customer Journey Analytics så att du kan visa, redigera, uppdatera eller ta bort anslutningar och datavyer.
+* Beviljad åtkomst till de datavyer som du vill komma åt.
+* Beviljade åtkomst till CJA BI-tillägget.
 * Använd förfallodatum för ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. The [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för inloggningsuppgifter eller ej utgångsdatum.
 
-Se [Åtkomstkontroll](../technotes/access-control.md) i administrationsdelen för Customer Journey Analytics för ytterligare information.
+Se [Åtkomstkontroll för kundresa](../technotes/access-control.md) för mer information, särskilt [Ytterligare behörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics behörigheter i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Användning
@@ -113,9 +111,9 @@ För närvarande är [!DNL Customer Journey Analytics BI extension] stöds och t
 
    1. I **[!UICONTROL ** PostSQL-databas **]** dialog:
 
-      1. Klistra in **[!UICONTROL ** Värd **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Server **]** textfält.
+      1. Klistra in **[!UICONTROL ** Värd **]** parameter från Experience Platform Queries [!UICONTROL Credentials] i  **[!UICONTROL ** Server **]** textfält.
 
-      1. Klistra in **[!UICONTROL ** Databas **]** parameter från Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL ** Databas **]** textfält.
+      1. Klistra in **[!UICONTROL ** Databas **]** parameter från Experience Platform Queries [!UICONTROL Credentials] i **[!UICONTROL ** Databas **]** textfält.
 
          Lägg till `?FLATTEN` till **[!UICONTROL ** Databas **]** parameter, så den ser ut som `prod:cja?FLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) för mer information.
 
@@ -124,7 +122,7 @@ För närvarande är [!DNL Customer Journey Analytics BI extension] stöds och t
       1. Du uppmanas att ange **[!UICONTROL Username]** och **[!UICONTROL Password]**. Använd likvärdiga parametrar från Experience Platform-frågor [!UICONTROL Credentials].
 
 
-   1. När inloggningen är klar visas datavytabellerna i Customer Journey Analytics i Power BIETS **[!UICONTROL **&#x200B;Överblick **]**.
+   1. När inloggningen är klar visas datavytabellerna i Customer Journey Analytics i Power BI:er **[!UICONTROL **&#x200B;Överblick **]**.
 
    1. Markera de datavytabeller som du vill använda och markera **[!UICONTROL ** Läs in **]**.
 
@@ -222,7 +220,7 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Mönster | Exempel |
 |---|---|
 | Schemaidentifiering | <pre>VÄLJ * FRÅN DV1 DÄR 1=0</pre> |
-| Rankad/uppdelning | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  filterId = &#39;12345&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
+| Rankad eller uppdelad | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  filterId = &#39;12345&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
 | `HAVING` sats | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>MED m1 > 100</pre> |
 | Distinkt, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\&#39; &lt; &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Måttsummor | <pre>VÄLJ SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</pre> |
@@ -276,7 +274,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### Infogade beräkningar
 
-Du kan använda ytterligare matematik för metriska uttryck i `SELECT` i stället för att matematiken ska definieras i ett beräknat mått. I följande tabell visas vilka typer av uttryck som stöds.
+Du kan använda ytterligare matematik för metriska uttryck i `SELECT`. Denna matematik kan användas i stället för att definiera matematiken i ett beräknat mått. I följande tabell visas vilka typer av uttryck som stöds.
 
 | Operatör eller funktion | Information |
 |---|---|
@@ -304,19 +302,19 @@ Tidsstämpelfältet kan också användas i datum/tid-funktioner för att analyse
 
 #### Datumintervall
 
-The `daterange` specialspalt fungerar ungefär som  `timestamp`filtreringen är dock begränsad till hela dagar. The `daterange` är också valfritt och har samma intervallstandard som `timestamp`.
+The `daterange` specialspalt fungerar ungefär som `timestamp`; filtreringen är dock begränsad till hela dagar. The `daterange` är också valfritt och har samma intervallstandard som `timestamp`.
 The `daterange` -fältet kan också användas i datum/tid-funktioner för att analysera eller korta av händelsedatumet.
 
 The `daterangeName` specialkolumner kan användas för att filtrera frågan med ett namngivet datumintervall som `Last Quarter`.
 
 >[!NOTE]
 >
->PowerBI stöder inte `daterange` mätvärden som är mindre än en dag (timme, 30 minuter, 5 minuter osv.).
+>Power BI stöds inte `daterange` mätvärden som är mindre än en dag (timme, 30 minuter, 5 minuter osv.).
 
 
 #### Filter-ID
 
-The `filterId` specialkolumnen är valfri och används för att tillämpa ett externt definierat filter på frågan. Att använda ett externt definierat filter på en fråga liknar att dra ett filter på en panel i Arbetsytan. Flera filter-ID:n kan anges av `AND`-Jag tar dem.
+The `filterId` specialkolumnen är valfri och används för att tillämpa ett externt definierat filter på frågan. Att använda ett externt definierat filter på en fråga liknar att dra ett filter på en panel i Arbetsytan. Flera filter-ID kan användas av `AND`-Jag tar dem.
 
 Tillsammans med `filterId`kan du använda `filterName` om du vill använda ett filtrets namn i stället för ID.
 

@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
+source-git-commit: 1a470345a6a2748b992263c3ad25e4cd7d3daa9e
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Customer Journey Analytics styrs av tre behörighetsnivåer eller tre roller: produktadministratörsroll, administratörsroll för produktprofil och åtkomst på användarnivå. I det här avsnittet förklaras de här rollerna mer ingående.
 
-Dessutom diskuterar vi mer detaljerade sätt att begränsa åtkomsten, t.ex. kurering av arbetsytor och radnivå samt åtkomstkontroll på värdenivå.
+I den här artikeln beskrivs dessutom mer detaljerade sätt att begränsa åtkomst, t.ex. kurering av arbetsyta och åtkomstkontroll på radnivå samt på värdenivå.
 
 ## Produktadministratörsroll
 
@@ -45,7 +45,7 @@ Produktadministratörer har som standard behörighet att utföra följande uppgi
 
 ### Ytterligare behörigheter för produktadministratör
 
-Förutom att läggas till som produktadministratör i **Customer Journey Analytics produktprofil** i [Admin Console](https://adminconsole.adobe.com/enterprise/)krävs ytterligare tillstånd för att kunna utföra följande uppgifter i Customer Journey Analytics:
+Förutom att läggas till som produktadministratör i **Customer Journey Analytics produktprofil** i [Admin Console](https://adminconsole.adobe.com/enterprise/)krävs ytterligare behörigheter för att kunna utföra följande uppgifter i Customer Journey Analytics:
 
 * Skapa, uppdatera och ta bort data [Anslutningar](/help/connections/overview.md)
 
@@ -55,29 +55,39 @@ Förutom att läggas till som produktadministratör i **Customer Journey Analyti
    * Inmatning av data: Hantera källor
    * Visa identitetsnamnutrymmen
 
-     Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+     Mer information om behörigheter i Experience Platform finns i [Åtkomstkontroll i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 * Exportera datauppsättningar till molnet [Destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)
 
   För att kunna utföra den här åtgärden behöver användare följande behörigheter i Experience Platform:
+
    * Hantera mål
    * Aktivera destinationer
 
-     Mer information om målbehörigheter i Experience Platform finns i [Översikt över destinationer](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
+     Mer information om målbehörigheter i Experience Platform finns i [Översikt över destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home).
+
+* Använd [BI-tillägg](../data-views/bi-extension.md)
+
+  För användare att använda BI-tillägget, en produktadministratör
+
+   * måste se till att användarbehörigheterna för Experience Platform omfattar en roll som har frågetjänstresursen med alternativen Hantera frågor och Hantera frågetjänstintegrering. Se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+   * måste se till att användaren har rätt Customer Journey Analytics-behörigheter:
+      * behörighet att få tillgång till relevanta datavyer. Se datavyer i [Customer Journey Analytics behörigheter i Admin Console](#customer-journey-analytics-permissions-in-admin-console).
+      * behörighet att komma åt CJA BI-tillägget. Se datavy tools i [Customer Journey Analytics behörigheter i Admin Console](#customer-journey-analytics-permissions-in-admin-console).
 
 ## Administratörsroll för produktprofil
 
 En produktprofil är en uppsättning behörigheter. Produktprofiladministratörer kan
 
-* Skapa och hantera enskilda produktprofiler, som att lägga till nya användare eller hantera användargrupper och deras tillhörande produktprofiler.
+* Skapa och hantera enskilda produktprofiler. som att lägga till nya användare eller hantera användargrupper och deras tillhörande produktprofiler.
 
 * I Customer Journey Analytics kan du redigera datavyer som ingår i en produktprofil som de hanterar. De kan inte skapa nya datavyer.
 
 ## Åtkomst på användarnivå
 
-Tabellen nedan visar de viktigaste åtkomstbehörigheterna för olika Customer Journey Analytics-funktioner för icke-produktadministratörer och CJA-produktadministratörer. Genom att förstå dessa behörigheter kan användarna effektivt navigera och utnyttja CJA utifrån sin roll och sitt ansvar inom organisationen.
+Tabellen nedan visar de viktigaste åtkomstbehörigheterna för olika Customer Journey Analytics-funktioner för icke-produktadministratörer och produktadministratörer i Customer Journey Analytics. Genom att förstå dessa behörigheter kan användarna effektivt navigera och använda Customer Journey Analytics utifrån sin roll och sitt ansvar inom organisationen.
 
-| CJA-produktfunktioner | Icke-produktadministratörer (användare) | Produktadministratörer |
+| Funktioner | Icke-produktadministratörer (användare) | Produktadministratörer |
 | --- | --- | --- |
 | **Datavyer** | Kan inte visa/uppdatera/skapa/ta bort | Kan skapa/uppdatera/ta bort |
 | **Anslutningar** | Kan inte visa/uppdatera/skapa/ta bort | Kan skapa/uppdatera/ta bort |
@@ -102,7 +112,7 @@ Här följer några exempel som visar hur åtkomstkontroll kan användas i realt
 
 ### Åtkomst från tredje part
 
-En tredje part som ditt företag arbetar med har en teamlead som kan göras till produktprofiladministratör. Den här administratören kan sedan lägga till användare i teamet till den här produktprofilen. Den här administratören kan ge åtkomst till specifika datavyer och lägga till andra användare i den här produktprofilen. De kan också ändra de datavyer som de har kontroll över så att de passar teamets behov.
+En tredje part som ditt företag arbetar med har en teamlead som kan göras till produktprofiladministratör. Den här administratören kan lägga till användare i företagets team i den här produktprofilen. Den här administratören kan ge åtkomst till specifika datavyer och lägga till andra användare i den här produktprofilen. De kan också ändra de datavyer som de har kontroll över så att de passar teamets behov.
 
 ### Åtkomstkontroll på radnivå
 
@@ -129,22 +139,22 @@ The **[!UICONTROL Permissions]** är en del av varje produktprofil i [Admin Cons
 | --- | --- |
 | **[!UICONTROL Data Views]** | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]**, kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har tillgång till. |
 | **[!UICONTROL Reporting Tools]**: |   |
-| **[!UICONTROL Audit Logs Access]** | Den här behörigheten tvingar behörighetskontrollen på [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) och användargränssnittet för granskningsloggar. |
-| **[!UICONTROL Analysis Workspace Access]** | Tillåter användare åtkomst till Analysis Workspace i Customer Journey Analytics. |
-| [!UICONTROL **Guided Analysis Access**] | Låter användarna skapa [Guidade analysprojekt](/help/guided-analysis/overview.md). |
-| [!UICONTROL **Prognos**] | Tillåter användare att få åtkomst till funktionen Prognosticering i Analysis Workspace |
-| **[!UICONTROL Reporting Usage Admin]** | Låter användarna visa och ta bort alla rapporter som körs i deras företag. |
-| **[!UICONTROL Reporting Usage View]** | Låter användarna se alla samtidiga rapporteringsbegäranden. |
-| [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
-| **[!UICONTROL Calculated Metrics Creation]** | Låter användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). |
-| **[!UICONTROL Filter Creation]** | Låter användarna skapa [filter](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Labs Access]** | Ger användarna åtkomst till [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
-| **[!UICONTROL Annotation Creation]** | Låter användarna skapa [anteckningar](/help/components/annotations/overview.md). |
-| **[!UICONTROL Audience Creation]** | Låter användarna skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
-| **[!UICONTROL Audience View]** | Låter användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL **Dela projektlänkar med vem som helst**] | Tillåter användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
+| **[!UICONTROL Audit Logs Access]** | Den här behörigheten tvingar behörighetskontrollen på [API](https://www.adobe.io/cja-apis/docs/endpoints/auditlogs/) och användargränssnittet för granskningsloggar. |
+| **[!UICONTROL Analysis Workspace Access]** | Ge användare tillgång till Analysis Workspace i Customer Journey Analytics. |
+| [!UICONTROL **Guided Analysis Access**] | Låt användarna skapa [Guidade analysprojekt](/help/guided-analysis/overview.md). |
+| [!UICONTROL **Prognos**] | Ge användarna tillgång till funktionen Prognos i Analysis Workspace |
+| **[!UICONTROL Reporting Usage Admin]** | Låt användarna visa och ta bort alla rapporter som körs i deras företag. |
+| **[!UICONTROL Reporting Usage View]** | Låt användarna se alla begäranden om samtidig rapportering. |
+| [!UICONTROL **Fullständig tabellexport**] | Låt användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL Calculated Metrics Creation]** | Låt användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). |
+| **[!UICONTROL Filter Creation]** | Låt användarna skapa [filter](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Labs Access]** | Ge användarna åtkomst till [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
+| **[!UICONTROL Annotation Creation]** | Låt användarna skapa [anteckningar](/help/components/annotations/overview.md). |
+| **[!UICONTROL Audience Creation]** | Låt användarna skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL Audience View]** | Låt användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
+| [!UICONTROL **Dela projektlänkar med vem som helst**] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | **[!UICONTROL Data View Tools]**: |   |
-| [!UICONTROL **Fullständig tabellexport**] | Tillåter användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
-| [!UICONTROL **Åtkomst till SQL Query Service**] | Ger användarna åtkomst [Frågetjänst i AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv). |
+| [!UICONTROL **Fullständig tabellexport**] | Låt användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL [!UICONTROL CJA BI Extension]]** | Låt användarna använda [BI-tillägg](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}
