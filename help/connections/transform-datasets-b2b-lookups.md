@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
+source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,11 @@ Den här omvandlingen är bara tillgänglig för datauppsättningar med data fö
 * [XDM - affärsmöjlighet, personrelation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
 * [XDM Business Marketing List-medlemmar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
 * [XDM Business Campaign-medlemmar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+
+>[!NOTE]
+>
+>Det finns en gräns på högst 10 000 objekt för varje id. Den här begränsningen innebär att för varje person-ID kan du bara ha 10 000 konton, 10 000 möjligheter, 10 000 marknadsföringslistor eller 10 000 kampanjer.
+
 
 Så här aktiverar du omformning för en sådan datauppsättning:
 
@@ -44,7 +49,7 @@ Så här aktiverar du omformning för en eller flera datauppsättningar som reda
 
 1. Ta bort datauppsättningarna från anslutningen.
 1. Spara anslutningen.
-1. Lägg till datauppsättningar i anslutningen när du aktiverar omformning för datauppsättningarna
+1. Lägg till datauppsättningarna i anslutningen när du aktiverar omformning för datauppsättningarna.
 
 ## Bakgrundinformation
 
