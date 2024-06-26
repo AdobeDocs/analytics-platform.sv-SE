@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Media Concurrent Viewer i 
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: d5d81caff62d4fb56a57739ddffb81787f684e23
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Ni kan analysera samtidiga visningsprogram för att förstå var maximal samtidi
 
 I Analysis Workspace är Concurrent Viewer antalet unika personer som visar medieströmmarna vid en viss tidpunkt, oavsett antalet sessioner.
 
-Med Media Concurrent Viewers-panelen kan man analysera samtidiga visningsprogram över tiden, med detaljer om maximal samtidighet och möjlighet att dela upp och jämföra.  Navigera till en datavy med Media Analytics-komponenter aktiverade för att få åtkomst till panelen Medievisningsprogram för samtidiga. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
+Med Media Concurrent Viewers-panelen kan man analysera samtidiga visningsprogram över tiden, med detaljer om maximal samtidighet och möjlighet att dela upp och jämföra.  Om du vill få åtkomst till panelen Medievisningsprogram för samtidig användning går du till en datavy med komponenter aktiverade från tillägget Direktuppspelad mediasamling. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
 
 Här är en videoöversikt av den här panelen:
 
@@ -53,7 +53,7 @@ Om du har valt seriebrytning visas en rad i linjediagrammet och ett sammanfattni
 
 ![Media Concurrent Viewer.](assets/concurrent-viewers-output.png)
 
-### Datakälla
+### Data Source
 
 Det enda mätvärdet som kan användas i den här panelen är samtidiga visningsprogram:
 

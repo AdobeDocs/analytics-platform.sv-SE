@@ -3,9 +3,10 @@ title: Panelen Mediegenomsnitt för miniatyrmålgrupp
 description: Så här använder och tolkar du panelen Media Average Minute Audience i Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 907a627720910794d77f016d797f1b95d2d3ce13
+exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den minimala målgruppspanelen för media är endast tillgänglig för kunder som har köpt tillägget Media Analytics för Customer Journey Analytics.
+>Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Customer Journey Analytics.
 >
->Kontakta din säljare på Adobe eller Adobe Account Team för att köpa Media Analytics.
+>Kontakta din säljare på Adobe eller Adobe Account Team för att köpa tillägget Streaming Media Collection.
 
 I Analysis Workspace är den genomsnittliga minuten den tid som går åt till att visa medieströmmen dividerat med längden på innehållet eller det totala urvalet av period och vald granularitet.
 
@@ -34,7 +35,7 @@ Målgruppspanelen för media i genomsnitt ger följande fördelar jämfört med 
 
 ## Få åtkomst till den genomsnittliga publiken för media - minut
 
-1. I Analysis Workspace går du till en rapportserie där Media Analytics-komponenter är aktiverade.
+1. I Analysis Workspace går du till en rapportserie som har komponenter aktiverade från tillägget Direktuppspelning Media Collection.
 
 1. I den vänstra navigeringen väljer du **Panel** -ikon.
 

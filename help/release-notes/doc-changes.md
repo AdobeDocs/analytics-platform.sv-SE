@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3790'
 ht-degree: 6%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juni 2024** | |
+| Uppdaterat produktnamn som hänvisar till funktioner för direktuppspelande media | Ersatte instanser av&quot;Media Analytics&quot; och&quot;Streaming Media&quot; med namnet&quot;Streaming Media Collection Add-on&quot; när de refererar till en uppsättning funktioner för direktuppspelande media som samlar in strömmande mediedata och visar dem i Analysis Workspace. <p>Dessa uppdateringar finns tillgängliga i hela dokumentationen för Customer Journey Analytics samt i [Dokumentation för tilläggsprogrammet för direktuppspelad media Collection](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Diagrambaserad utjämning | Uppdaterat och omstrukturerat [fästa dokumentation](/help/stitching/overview.md) med infogning av grafbaserad stygn. |
 | AI-assistenten | Tillagd [dokumentation](../ai-assistant.md) på AI Assistant för Customer Journey Analytics. |
 | Omforma datauppsättningar för B2B-sökningar | Lagt till dokumentation om support [personbaserade sökningar på B2B-data](/help/connections//transform-datasets-b2b-lookups.md) (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) med hjälp av omvandling av datauppsättningar för B2B-sökning. |
@@ -40,7 +41,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Ny dokumentation om Adobe Product Analytics-funktioner | <ul><li>[Funktionsmatris](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Förbättrat [kvarhållningsfrekvenser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Förbättrade insikter i tratt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Jämför händelser i ett enda tratt-steg</li></ul> |
 | **Mars 2024** | |
 | Användningsinformation om kolumnen Används i är tillgänglig först från och med september 2023. | Tydligare användningsinformation om **Används i** kolumn på [landningssida för projekt](/help/getting-started/landing.md) går tillbaka endast till september 2023. |
-| Lagt till dokumentation om behörighetsförbättringar för komponenter i arbetsytan som bara är till för projekt | Om du delar ett projekt med andra användare kan dessa användare redigera [snabbfilter](/help/components/filters/quick-filters.md) och andra komponenter som bara är för projekt och som är inbäddade i det delade projektet. |
+| Lagt till dokumentation om behörighetsförbättringar för Workspace-komponenter som bara är till för projekt | Om du delar ett projekt med andra användare kan dessa användare redigera [snabbfilter](/help/components/filters/quick-filters.md) och andra komponenter som bara är för projekt och som är inbäddade i det delade projektet. |
 | **Februari 2024** | |
 | Uppdateringar av projektdelningsdokumentation | Lagt till information om hur [visa projekt som delas med dig](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Effektivare information om [dela enskilda eller flera projekt](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Lagt till behörighetskrav för överföring av filer till Azure SAS och Azure RBAC när molnexportplatser konfigureras | Exakta behörighetskrav för överföring av filer till Azure SAS och Azure RBAC har lagts till när [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md). |
@@ -71,7 +72,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Uppdateringar av dokumentationen för avvikelseidentifiering | Dokumentationen för avvikelseidentifiering fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [Analysidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) har flyttats direkt under Analysis Workspace.</li></ul> |
 | **Oktober 2023** | |
 | Använda härlett fält för att ställa in mål | Tillagd [användningsfall](../use-cases/goals-using-derived-fields.md) artikel som illustrerar hur du använder härledda fält för att ställa in mål och rapportera om dessa. |
-| Exportera fullständiga tabeller till molnet | Lagt till dokumentation om export av fullständiga tabeller med miljontals Workspace-rader till molnmål. <p>Vid export av fullständiga tabeller kan du leverera datatabeller som utformats i Workspace en gång eller enligt schema, med stöd för upp till fem uppdelningar, fem mätvärden, filter och beräknade mätvärden, allt i en sammansatt tabell. Det är utvecklingen av rapporter om Data Warehouse i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag.</p><p>Mer information finns i [Exportera Customer Journey Analytics-rapporter till molnet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). |
+| Exportera fullständiga tabeller till molnet | Lagt till dokumentation om export av fullständiga tabeller med miljontals Workspace-rader till molnmål. <p>Att exportera hela tabeller innebär att man får en enda eller schemalagd leverans av datatabeller som utformats i Workspace med stöd för upp till fem uppdelningar, fem mätvärden, filter och beräknade mätvärden, allt i en sammanslagen tabell. Det är utvecklingen av rapporter om Data Warehouse i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag.</p><p>Mer information finns i [Exportera Customer Journey Analytics-rapporter till molnet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). |
 | Rapporteringsaktivitetshanteraren | Lagt till dokumentation för Reporting Activity Manager. <p>Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje anslutning i organisationen. Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.</p> <p>Följande nya artiklar har lagts till:<ul><li>[Översikt över Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[Visa rapporteringsaktivitet i Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity.md)</li><li>[Avbryt begäranden i Rapporteringsaktivitetshanteraren](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | Nya kolumner på hanteringssidor | Dokumenterade nya kolumner som nu är tillgängliga i [Beräknat måttansvarig](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) och [Filterhantering](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html). |
 | Jämförelse med Adobe Analytics | Tillagda [översiktssida](../getting-started/aa-vs-cja/overview.md) som en introduktion till att jämföra och förstå skillnaderna mellan Customer Journey Analytics och Adobe Analytics. |
@@ -93,11 +94,11 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Härledda fält | A [härlett fält](/help/data-views/derived-fields/derived-fields.md) gör att du kan definiera (ofta komplexa) dataändringar direkt med hjälp av ett anpassningsbart regelverktyg. |
 | Utökat sökningsstöd för profil- och sökdata | Ger möjlighet att lägga till datauppsättningar som uppslag till fält i datauppsättningar för profiler eller uppslag. Tidigare stöddes endast händelsedatamängder. [Läs mer](/help/connections/create-connection.md) |
 | Förbättringar i Report Builder | <ul><li>[Filtrera från cell för flera datablock](/help/report-builder/select-data-view.md)</li><li>[Visa och dölja rad- och kolumnrubriker](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html#build-the-data-block)</li></ul> |
-| Geografiska sökningar i Edge Network | [Datastream-inställningar](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html) hur har en geosökningstjänst som tillhandahåller enhetliga geografiska data. |
+| Edge Network geo-sökningar | [Datastream-inställningar](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html) hur har en geosökningstjänst som tillhandahåller enhetliga geografiska data. |
 | **Juni 2023** | |
 | Flerkanalsanalys och stygn | I väntan på kommande ändringar för att möjliggöra sammanfogning och för att ytterligare klargöra hur flerkanalsanalys kan höjas med sammanfogning redigeras dokumentation om funktionen för flerkanalsanalys för att hänvisa till [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) som Customer Journey Analytics och användningsfall, och [Stitlar](../stitching/overview.md) som en viktig funktion för att uppnå detta. |
 | PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics | Tillägget Customer Journey Analytics BI ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. [Läs mer](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer datavyer | Customer Journey Analytics-administratörer har tillgång till vissa extra datavyer i Customer Journey Analytics med namnet&quot;AJO-datavyn (Sandbox-name)&quot;. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). |
+| Adobe Journey Optimizer datavyer | Customer Journey Analytics-administratörer har tillgång till vissa extra datavyer i Customer Journey Analytics som heter&quot;AJO Data view (Sandbox-name)&quot;. [Läs mer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). |
 | Valutakonvertering | Uppdaterad dokumentation för [valutakonvertering](../data-views/component-settings/format.md#currency) support. |
 | Uppdateringar av beräknade mätvärden | Följande uppdateringar gjordes av dokumentationen för beräknade värden för att den skulle överensstämma med den nuvarande funktionaliteten i Customer Journey Analytics: <ul><li>Listan med [standardberäknade värden](/help/components/calc-metrics/default-calcmetrics.md) finns i Customer Journey Analytics</li><li>Uppdaterade skärmdumpar och -procedurer i olika beräknade mätningsartiklar </li></ul> |
 | **Maj 2023** | |
@@ -128,14 +129,14 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Jämför Customer Journey Analytics med BI-lösningar | Nytt dokument på en [jämförelse](../getting-started/cja-vs-bi.md) från Customer Journey Analytics till vanliga BI-lösningar. |
 | Uppdatera till publikdokumentation | Nytt avsnitt på [latenshändelser](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency). |
 | Uppdatera till publikdokumentation | När du har skapat en målgrupp skapar Adobe en Experience Platform [direktuppspelningssegment för varje ny Customer Journey Analytics-publik](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
-| Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Workspace-kalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Mobil styrkort | Nytt dokumentationsavsnitt som beskriver hur du visar och döljer datumintervall för jämförelse. Se [Visa datumintervall för jämförelse](/help/mobile-app/create-scorecard.md#show-comparison-dates) i Customer Journey Analytics. |
 | **Januari 2023** | |
 | Filtrera och ordna tabeller | Uppdaterat innehåll (inklusive att lägga till procedurer och förklara tillgängliga alternativ) i [Filtrera och ordna tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artikel. Artikelns namn ändrades från&quot;Sidnumrering, filtrering och sortering&quot;. |
 | Snabbstartsguider för dataöverföring | Nytt dokumentationsavsnitt om hur [importera och använda data](/help/data-ingestion/data-ingestion.md) i Customer Journey Analytics. |
-| Arbetsytemappar | Särskilda sidor för [Mapphantering](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Användarinställningar för arbetsyta | Många andra användarinställningar finns nu tillgängliga i [Inställningar](/help/analysis-workspace/user-preferences.md). |
-| Spara automatiskt för arbetsyteprojekt | Uppdaterat innehåll som inkluderar autosparfunktion i [Spara projekt](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Workspace-mappar | Särskilda sidor för [Mapphantering](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Användarinställningar för Workspace | Många andra användarinställningar finns nu tillgängliga i [Inställningar](/help/analysis-workspace/user-preferences.md). |
+| Spara automatiskt för Workspace-projekt | Uppdaterat innehåll som inkluderar autosparfunktion i [Spara projekt](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Landningssida | Nya uppdateringar av landningssidor [landningssida](/help/getting-started/landing.md). |
 | Schemalägg arbetsböcker | Dedikerad sida som beskriver hur [Schemalägg arbetsböcker](/help/report-builder/schedule-reportbuilder.md) i Report Builder. |
 | Stöd för objektmatriser för profil- och uppslagsdatauppsättningar | Uppdaterat [Använda arrayer med objekt](/help/use-cases/object-arrays.md) och [Intressanta Adobe Experience Platform-målgrupper](/help/use-cases/data-ingestion/ingest-aep-segments.md) för att spegla stöd för objektmatriser för profil- och uppslagsdatauppsättningar. |
@@ -189,7 +190,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | April 2022 | Nytt [Customer Journey Analytics användarhandbok för Adobe Analytics](/help/getting-started/aa-to-cja-user.md). |
 | **Mars 2022** | |
 | Mars 2022 | Nytt [API-dokumentation för Customer Journey Analytics Annotations](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
-| Mars 2022 | Ny dokumentation om [Anteckningar i arbetsytan](/help/components/annotations/overview.md). |
+| Mars 2022 | Ny dokumentation om [Anteckningar i Workspace](/help/components/annotations/overview.md). |
 | Mars 2022 | Innehåll som uppdaterats avsevärt på [beräknar anslutningsstorlek](/help/getting-started/cja-faq.md). |
 | **Februari 2022** | |
 | Februari 2022 | En ny guide som riktar sig till administratörer som flyttar från Adobe Analytics till Customer Journey Analytics: [Adobe Analytics till Customer Journey Analytics evolutionen](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) |
@@ -225,7 +226,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Juni 2021 | Ny dokumentation om [tidigare projektversioner](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html#previous-version) i Workspace. |
 | **April 2021** | |
 | April 2021 | Nytt ämne [beständighet](/help/data-views/component-settings/persistence.md). |
-| April 2021 | Ny dokumentation om stöd för schemalagda projekt i Workspace. |
+| April 2021 | Ny dokumentation om stöd för schemalagda projekt i Workspace |
 | April 2021 | Nya ämnen på [förbättrad datavyer](/help/data-views/data-views.md). |
 | April 2021 | Nya ämnen om [inhämta Google Analytics-data](/help/use-cases/ga/overview.md) och [analysera dessa data](/help/use-cases/ga/report.md). |
 | April 2021 | Lagt till ämne om [schemalagda rapporter](/help/analysis-workspace/export/t-schedule-report.md) i Workspace. |

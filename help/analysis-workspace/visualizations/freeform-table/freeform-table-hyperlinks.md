@@ -4,9 +4,9 @@ description: Lär dig skapa hyperlänkar för dimensionsobjekt i en frihandstabe
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 0c83d64a2ab3d23f92bc804092fc507479418052
+source-git-commit: 1534b628841a5b4588379b944822073f3288d710
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1738'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Den här funktionen är särskilt användbar när du skapar hyperlänkar för f�
 * Dimensioner som innehåller uppdelningar som har URL-värden som du vill länka till (t.ex. en sidnamnsdimension som har en nedbrytning av sidans URL-dimension)
 
 * Dimension av objekt eller uppdelningar som har värden som är en del av en URL som du vill länka till (t.ex. en sidnamnsdimension som är en del av en URL)
+
+Här följer en videodemonstration av den här funktionen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430412/?learn=on)
 
 ## Skapa hyperlänkar för ett eller flera dimensionsobjekt
 
