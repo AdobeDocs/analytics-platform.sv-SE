@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: dca1cc33058ba57815c3534ab21da86d5247531a
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,6 @@ Det finns flera sätt att importera data till Customer Journey Analytics. Vissa 
 >[!IMPORTANT]
 >
 >I alla scenarier är de data du vill ha _use_ i Customer Journey Analytics är _inkapslad_ i Adobe Experience Platform.
-
 
 Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Ökning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
 
@@ -35,13 +34,25 @@ Datauppsättningen i arkitekturen ovan kan komma från olika källor:
 
 - data från spårning av din webbplats/mobilapp med Adobe Experience Platform Web/Mobile SDK,
 
-- data från spårning av skrivbordsprogram, konsolspel, digitalbox eller IoT-enheter med Adobe Experience Platform Edge Network Server API, eller
+- data från spårning av skrivbordsprogram, konsolspel, digitalbox eller IoT-enheter med Adobe Experience Platform Edge Network Server-API:t, eller
 
 - data som kommer från en tredjepartsleverantör av data för vilken Adobe tillhandahåller en källanslutning.
 
 Och du kan ha många av dessa datauppsättningar.
 
 I det här avsnittet av dokumentationen finns snabbstartsguider för olika scenarier.
+
+## Inmatningsprioritering och fördröjning
+
+Du kan importera dina händelsedata i Customer Journey Analytics inom 90 minuter (SLT), oavsett om dessa data är 24 timmar, 48 timmar eller 7 dagar gamla.
+
+Observera att den här funktionen skiljer sig åt beroende på vilket SKU-paket ditt företag har köpt:
+
+- Prioritet Grundläggande om intag: 24 timmars gamla data inom 90 minuters SLT-bearbetning (tillgängligt för **CJA Foundation** och **CJA Select**)
+
+- Prioriterat intag - mellanliggande: 72 timmars gamla data inom 90 minuters SLT- behandling (tillgängligt för **CJA Prime**)
+
+- Prioriterat intag Avancerat: 1-veckors data inom 90 minuters SLT-bearbetning (tillgängligt för **CJA Ultimate**)
 
 ## Importera och använda data från traditionella Adobe Analytics
 
@@ -54,19 +65,19 @@ Se [Importera och använda data från traditionella Adobe Analytics](./analytics
 
 ### Använda Adobe Experience Platform Web SDK
 
-Ni vill analysera er webbplats med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra er persons beteende. Du vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
+Ni vill analysera er webbplats med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra er persons beteende. Ni vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data via Adobe Experience Platform Web SDK](./aepwebsdk.md) för mer information.
 
 ### Använda Adobe Experience Platform Mobile SDK
 
-Du vill analysera mobilappen med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra en persons beteende i appen från grunden. Du vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
+Du vill analysera mobilappen med Adobe-teknik och kanske migrera från en annan lösning eller börja spåra en persons beteende i appen från grunden. Ni vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform SDK:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data via Adobe Experience Platform Mobile SDK](./aepmobilesdk.md) för mer information.
 
 ### Använda API:t för Adobe Experience Platform Edge Network Server
 
-Du vill analysera datorprogrammet, spelet som det spelas på en spelkonsol, användningen av ett program för direktuppspelad video i en digitalbox eller IoT-enheten med Adobe-teknik. Kan migrera från en annan lösning eller börja spåra en persons beteende på dessa enheter från grunden. Du vill följa Adobe bästa praxis för implementering, som använder API:erna för Adobe Experience Platform Edge Network Server och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
+Du vill analysera datorprogrammet, spelet som det spelas på en spelkonsol, användningen av ett program för direktuppspelad video i en digitalbox eller IoT-enheten med Adobe-teknik. Kan migrera från en annan lösning eller börja spåra en persons beteende på dessa enheter från grunden. Du vill följa Adobe bästa praxis för implementering, som använder Adobe Experience Platform Edge Network Server-API:er och Edge Network, för att importera data. Sedan kan ni använda, kombinera och analysera inkapslade data med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data via Adobe Experience Platform Edge Network Server API](./serverapi.md) för mer information.
 
@@ -84,6 +95,6 @@ Se [Importera och använda strömmande data](./streaming.md) för mer informatio
 
 ## Importera och använda data med hjälp av källkopplingar
 
-Du har data tillgängliga från en källa som stöds av en källkoppling. Källanslutningar är konfigurerbara konfigurationer som gör att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över källkopplingar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
+Du har data tillgängliga från en källa som stöds av en källkoppling. Source-anslutningar är konfigureringsbara konfigurationer som gör att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Source Connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Se [Importera och använda data med hjälp av källkopplingar](./sources.md) för mer information.
