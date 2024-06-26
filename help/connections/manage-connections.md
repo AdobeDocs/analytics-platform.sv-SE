@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
 workflow-type: tm+mt
 source-wordcount: '2976'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Följande kolumner eller ikoner är tillgängliga i tabellen.
 | [!UICONTROL Import new data] | Visar status för import av nya data för datauppsättningar: <p>![Status grön](assets/status-green.svg))    **[!UICONTROL _x _På]**för datauppsättningar som konfigurerats för import av nya data, och<p>![Statusgrått](assets/status-gray.svg)   **[!UICONTROL _x av_]** för datauppsättningar som inte har konfigurerats för import av nya data. |
 | [!UICONTROL Date created] | Tidsstämpeln när anslutningen skapades. |
 | [!UICONTROL Last modified] | Tidsstämpeln när anslutningen senast uppdaterades. |
-| [!UICONTROL Backfill data] | Visar status för data för bakgrundsfyllning över datauppsättningar.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**för antalet misslyckade efterfyllningar i datauppsättningar,<p>![Statusorange](assets/status-orange.svg)   **[!UICONTROL _x _bearbetning av bakåtfyllnad]**för antalet efterfyllningar som bearbetas över datauppsättningar,<p>![Status grön](assets/status-green.svg))   **[!UICONTROL _x _bakåtfyllningar har slutförts]**för antalet slutförda efterfyllningar för datauppsättningar, och<p>![Statusgrått](assets/status-gray.svg)   **[!UICONTROL _Av_]** om det inte finns några bakåtfyllningar definierade för datauppsättningarna i anslutningen. |
+| [!UICONTROL Backfill data] | Visar status för data för bakgrundsfyllning över datauppsättningar.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**för antalet misslyckade efterfyllningar i datauppsättningar,<p>![Statusorange](assets/status-orange.svg)   **[!UICONTROL _x _bearbetning av bakåtfyllnad]**för antalet efterfyllningar som bearbetas över datauppsättningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _bakåtfyllningar har slutförts]**för antalet slutförda efterfyllningar för datauppsättningar, och<p>![Statusgrått](assets/status-gray.svg)   **[!UICONTROL _Av_]** om det inte finns några bakåtfyllningar definierade för datauppsättningarna i anslutningen. |
 
 Konfigurera vilka kolumner som ska visas ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), som visar **Anpassa tabell** som gör att du kan aktivera och inaktivera kolumner i tabellen.
 
@@ -89,7 +89,7 @@ Du kan också:
 
 När du tar bort en anslutning visas en **[!UICONTROL Delete connection]** visas vilka datavyer som tas bort och vilka arbetsyteprojekt som påverkas.
 
-<img src="./assets/delete-connection.png" alt="Ta bort anslutning" width="400"/>
+![Ta bort anslutning](assets/delete-connection.png)
 
 Välj **[!UICONTROL Continue]** för att ta bort anslutningen.
 
