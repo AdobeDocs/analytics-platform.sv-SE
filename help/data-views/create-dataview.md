@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
+source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1679'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,15 @@ Innehåller övergripande inställningar för datavyn.
 
 ### Kompatibilitet
 
+{{release-limited-testing-section}}
+
 Innehåller inställningar som är tillämpliga när du använder Adobe Journey Optimizer förutom Customer Journey Analytics.
+
+Det här avsnittet visas bara för administratörer som har etablerats med Journey Optimizer.
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL **Ange som standarddatavy i Adobe Journey Optimizer**] | Det här konfigurationsalternativet standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan också utföra avancerade analyser av dina Adobe Journey Optimizer-data i Customer Journey Analytics (genom att välja [!UICONTROL **Analysera i CJA**] i Journey Optimizer).<p>För att kunna utföra den här typen av analyser måste Journey Optimizer ha tillgång till datavyn Customer Journey Analytics.<p>Aktivera det här alternativet om du vill göra det här till standarddatavyn som används i Journey Optimizer-rapporter.</p><p>Det här konfigurationsalternativet automatiskt:</p><ul><li>Konfigurerar alla nödvändiga Journey Optimizer-datauppsättningar i den associerade anslutningen i Customer Journey Analytics för användning med Journey Optimizer.</li><li>Skapar en uppsättning Journey Optimizer-mått och -dimensioner i datavyn (inklusive härledda fält och beräknade värden). Kontextetiketter anges automatiskt för alla dessa mått och mått.<p>**Obs!** Vid behov kan du göra ytterligare, manuella anpassningar av datauppsättningar, dimensioner eller mätvärden som är tillgängliga i datavyer som du använder för både Journey Optimizer och Customer Journey Analytics, enligt vad som beskrivs i [Integrera Adobe Journey Optimizer med Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></li></ul><p>Du kan ändra standarddatavyn vid ett senare tillfälle, men om du gör det kan Journey Optimizer rapporteringsdata ändras. Om du väljer att inaktivera det här alternativet när det har aktiverats uppmanas du att välja en ny standarddatavy.</p> |
+| [!UICONTROL **Ange som standarddatavy i Adobe Journey Optimizer**] | Det här konfigurationsalternativet standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan också utföra avancerade analyser av dina Adobe Journey Optimizer-data i Customer Journey Analytics (genom att välja ![Öppna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analysera i CJA**] i Journey Optimizer).<p>För att kunna utföra den här typen av analyser måste Journey Optimizer ha tillgång till datavyn Customer Journey Analytics.<p>Aktivera det här alternativet om du vill göra det här till standarddatavyn som används i Journey Optimizer-rapporter för din sandlåda.</p><p>Det här konfigurationsalternativet automatiskt:</p><ul><li>Konfigurerar alla nödvändiga Journey Optimizer-datauppsättningar i den associerade anslutningen i Customer Journey Analytics för användning med Journey Optimizer.</li><li>Skapar en uppsättning Journey Optimizer-mått och -dimensioner i datavyn (inklusive härledda fält och beräknade värden). Kontextetiketter anges automatiskt för alla dessa mått och mått.</li></ul><p><p>Tänk på följande när du aktiverar det här alternativet: <ul><li>Du kan ändra standarddatavyn vid ett senare tillfälle, men om du gör det kan Journey Optimizer rapporteringsdata ändras. Om du väljer att inaktivera det här alternativet när det har aktiverats uppmanas du att välja en ny standarddatavy.</li><li>Om du redan har gjort manuella anpassningar av datauppsättningarna, dimensionerna eller måtten i datavyn i Customer Journey Analytics, förblir dina manuella anpassningar intakta när du aktiverar det här konfigurationsalternativet. Det här alternativet gör ytterligare anpassningar som ytterligare standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan också göra manuella anpassningar när du har aktiverat det här alternativet.</li></ul>Se [Integrera Adobe Journey Optimizer med Adobe Customer Journey Analytics](/help/integrations/ajo.md) för mer information. |
 
 {style="table-layout:auto"}
 
