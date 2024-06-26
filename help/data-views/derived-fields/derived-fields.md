@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '7753'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Härledda fält
 
-Härledda fält är en viktig aspekt av rapportfunktionen i realtid i Adobe Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Arbetsyta](../../analysis-workspace/home.md) eller ännu mer definiera det härledda fältet som en komponent i [Datavy](../data-views.md).
+Härledda fält är en viktig aspekt av rapportfunktionen i realtid i Adobe Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Workspace](../../analysis-workspace/home.md) eller ännu mer definiera det härledda fältet som en komponent i [Datavy](../data-views.md).
 
 Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser utanför Customer Journey Analytics. Som [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)eller i dina egna ETL-/ELT-processer.
 
@@ -607,9 +607,9 @@ Följande begränsningar gäller och används när *markera* och *inställning* 
 
 |  | Begränsningar |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Värden du *välj* inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma behållare och kan vara av valfri typ (sträng) ![Sträng](assets/Smock_ABC_18_N.svg), numerisk ![Numeriskt](assets/Smock_123_18_N.svg)och så vidare). <br/>![Skärmbild av beroende A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Alla värden du anger *set* över en regel måste komma från samma behållare och ha samma typ eller ett härlett värde av samma typ. <br/> ![Skärmbild av beroende B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Värdena du anger *välj* över [!UICONTROL If], [!UICONTROL Else If] konstruerar i regeln do *not* måste komma från samma behållare och gör *not* måste vara av samma typ. <br/> ![Skärmbild av beroende C](assets/dependency-c.png) |
+| **A** | Värden du *välj* inom samma [!UICONTROL If], [!UICONTROL Else If] construct (med [!UICONTROL And] eller [!UICONTROL Or]) i en regel måste komma från samma behållare och kan vara av valfri typ (sträng) ![Sträng](assets/Smock_ABC_18_N.svg), numerisk ![Numeriskt](assets/Smock_123_18_N.svg)och så vidare). <br/>![Skärmbild av beroende A](assets/dependency-a.png) |
+| **B** | Alla värden du anger *set* över en regel måste komma från samma behållare och ha samma typ eller ett härlett värde av samma typ. <br/> ![Skärmbild av beroende B](assets/dependency-b.png) |
+| **C** | Värdena du anger *välj* över [!UICONTROL If], [!UICONTROL Else If] konstruerar i regeln do *not* måste komma från samma behållare och gör *not* måste vara av samma typ. <br/> ![Skärmbild av beroende C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -1151,7 +1151,7 @@ Så här skapar du en formel:
 1. Infoga ett statiskt värde (till exempel `1.05`) skriver du värdet och väljer **[!UICONTROL Add *x *som ett statiskt värde]**eller **[!UICONTROL Add -*x* som ett negativt statiskt värde]** på snabbmenyn.
    ![Mer information om matematisk text 2](assets/math-more-info-2.png)
 
-1. En grön bock ![Markering](./assets/checkmark.svg)</span> anger om matematiska formler är giltiga, annars visas en varning <span style="color:red">![Varning](./assets/alert.svg)</span> och meddelandet <span style="color:#ea3829">[!UICONTROL Invalid formula expression].</span>
+1. En grön bock ![Markering](./assets/checkmark.svg)</span> anger om matematiska formler är giltiga, annars visas en varning ![Varning](./assets/alert.svg) och meddelandet [!UICONTROL Invalid formula expression].
    ![Math More Info 3](assets/math-more-info-3.png)
 
 Det finns viktiga saker att tänka på när du arbetar med statiska siffror i [!UICONTROL MATH] funktion:
@@ -1516,7 +1516,7 @@ Tillämpar aggregeringsfunktioner på mått och mått på händelse-, sessions- 
 
 ## Använd skiftläge {#summarize-uc}
 
-Du vill kategorisera Lägg till i kundvagnsintäkt i tre olika kategorier: Liten, Medel och Stor. På så sätt kan ni analysera och identifiera egenskaper hos värdefulla kunder.
+Du vill kategorisera Lägg till i kundvagnsintäkt i tre olika kategorier: Liten, Medium och Stor. På så sätt kan ni analysera och identifiera egenskaper hos värdefulla kunder.
 
 ### Data före {#summarize-uc-databefore}
 
@@ -1555,7 +1555,7 @@ Du skapar en `Add To Cart Revenue Size` härlett fält. Du använder [!UICONTROL
 | Lägg till i kundvagnsintäktsstorlek | Besökare |
 |---|--:|
 | Liten | 1 |
-| Medel | 1 |
+| Medium | 1 |
 | Stor | 1 |
 
 {style="table-layout:auto"}
