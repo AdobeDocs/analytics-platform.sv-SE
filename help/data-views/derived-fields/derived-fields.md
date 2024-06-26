@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: a0515c68407b01dd39bed9f0bf9121b575d02dea
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '8018'
-ht-degree: 3%
+source-wordcount: '7753'
+ht-degree: 2%
 
 ---
 
@@ -833,32 +833,32 @@ Du definierar en `Origin - Destination` härlett fält. Du använder [!UICONTROL
 +++
 
 
-<!-- DEDUPLICATE -->
+<!-- DEDUPLICATE
 
-### Deduplicera
+### Deduplicate
 
-Förhindrar att ett värde räknas flera gånger.
+Prevents counting a value multiple times.
 
-+++ Information
++++ Details
 
 {{release-limited-testing-section}}
 
-## Specifikationer {#deduplicate-io}
+## Specifications {#deduplicate-io}
 
-| Typ av indatadata | Indata | Operatorer som ingår | Begränsningar | Utdata |
+| Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li><li>Sträng</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Regler</li><li>Standardfält</li><li>Fält</li><li>Sträng</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Behåll första instansen</li><li>Behåll sista instansen</li></ul></li></ul> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Keep first instance</li><li>Keep last instance</li></ul></li></ul> | <p>N/A</p>| <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
 
-## Användningsfall 1 {#deduplicate-uc1}
+## Use case 1 {#deduplicate-uc1}
 
-Du vill förhindra att dubblettintäkter räknas när en användare läser in bekräftelsesidan för bokningen igen. Du använder bokningsbekräftelsens ID vid identifieraren för att inte räkna intäkten igen när den tas emot vid samma händelse.
+You want to prevent counting duplicate revenue when a user reloads the booking confirmation page. You use the booking confirmation ID at the identifier to not count the revenue again, when received on the same event.
 
-### Data före {#deduplicate-uc1-databefore}
+### Data before {#deduplicate-uc1-databefore}
 
-| Bokningsbekräftelse-ID | Intäkter |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 359 |
@@ -866,15 +866,15 @@ Du vill förhindra att dubblettintäkter räknas när en användare läser in be
 
 {style="table-layout:auto"}
 
-### Härlett fält {#deduplicate-uc1-derivedfield}
+### Derived field {#deduplicate-uc1-derivedfield}
 
-Du definierar en `Booking Confirmation` härlett fält. Du använder [!UICONTROL DEDUPLICATE] funktion för att definiera en regel som ska deduplicera [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] använda [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. Du väljer [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
+You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
 
-![Skärmbild av sammanfogningsregeln](assets/deduplicate-1.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
 
-### Data efter {#deduplicate-uc1-dataafter}
+### Data after {#deduplicate-uc1-dataafter}
 
-| Bokningsbekräftelse-ID | Intäkter |
+| Booking Confirmation ID | Revenue |
 |----|---:|
 | ABC123456789 | 359 |
 | ABC123456789 | 0 |
@@ -882,41 +882,43 @@ Du definierar en `Booking Confirmation` härlett fält. Du använder [!UICONTROL
 
 {style="table-layout:auto"}
 
-## Användningsfall 2 {#deduplicate-uc2}
+## Use case 2 {#deduplicate-uc2}
 
-Ni använder händelser som en proxy för kampanjklickningar med externa marknadsföringskampanjer. Läser in igen och omdirigeringar gör att händelsemätningen blir hög. Du vill deduplicera spårningskoddimensionen så att bara den första samlas in och minimera händelseöverräkningen.
+You use events as a proxy for campaign click-throughs with external marketing campaigns. Reloads & redirects are causing the event metric to be inflated. You would like to deduplicate the tracking code dimension so only the first is collected and minimize the event overcounting.
 
-### Data före {#deduplicate-uc2-databefore}
+### Data before {#deduplicate-uc2-databefore}
 
-| Besökar-ID | Marknadsföringskanal | Händelser |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | betalsökningar | 1 |
-| ABC123 | betalsökningar | 1 |
-| ABC123 | betalsökningar | 1 |
-| DEF123 | e-post | 1 |
-| DEF123 | e-post | 1 |
-| JKL123 | naturlig sökning | 1 |
-| JKL123 | naturlig sökning | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
-### Härlett fält {#deduplicate-uc2-derivedfield}
+### Derived field {#deduplicate-uc2-derivedfield}
 
-Du definierar ett nytt `Tracking Code (deduplicated)` härlett fält. Du använder [!UICONTROL DEDUPLICATE] funktion för att definiera en regel som ska deduplicera [!UICONTROL Tracking Code] med [!UICONTROL Deduplication scope] av [!UICONTROL Session] och [!UICONTROL Keep first instance] som [!UICONTROL Value to keep].
+You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
 
-![Skärmbild av sammanfogningsregeln](assets/deduplicate-2.png)
+![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
 
-### Data efter {#deduplicate-uc2-dataafter}
+### Data after {#deduplicate-uc2-dataafter}
 
-| Besökar-ID | Marknadsföringskanal | Händelser |
+| Visitor ID | Marketing Channel | Events |
 |----|---|---:|
-| ABC123 | betalsökningar | 1 |
-| DEF123 | e-post | 1 |
-| JKL123 | naturlig sökning | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
 +++
+
+-->
 
 <!-- FIND AND REPLACE -->
 
@@ -1503,8 +1505,6 @@ Du skapar en `Second Response` härlett fält som tar det senaste värdet från 
 Tillämpar aggregeringsfunktioner på mått och mått på händelse-, sessions- och användarnivå.
 
 +++ Information
-
-{{release-limited-testing-section}}
 
 ## Specifikation {#summarize-io}
 

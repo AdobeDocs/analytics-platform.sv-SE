@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,12 @@ AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverk
 
 [![bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB Diagrambaserad utjämning]
+
+Med hjälp av diagrambaserad sammanfogning kan du använda identitetsdiagrammet från Experience Platform Identity Service för att få en bättre bild av kundresan genom att: <ul><li>Sammanfoga datauppsättningar med olika identifierare utan att behöva extrahera, omvandla och läsa in ytterligare data för att spegla en enda identifierare.</li> <li>Förbättra täckningen av preferens- eller gyllene identitet för en enskild datauppsättning genom att dela identiteter mellan datauppsättningar.</li><li>Justera profiler som skapats i Real-time Customer Data Platform och Journey Optimizer med personer i Customer Journey Analytics.</li></ul>
+
+[![bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
 >[!TAB B2B-sökningar]
 
 Som en del av konfigurationen av en anslutning kan du omvandla datauppsättningar för specifika B2B-sökscheman för att bättre stödja personbaserade sökningar på B2B-data.
@@ -37,7 +43,7 @@ Som en del av konfigurationen av en anslutning kan du omvandla datauppsättninga
 
 >[!TAB Härledda fält]
 
-Nu finns nya härledda fältfunktioner (Math, Next eller Previous) och ytterligare funktionsmallar (som Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, med flera).
+Nu finns nya härledda fältfunktioner (Math, Next eller Previous, Summarize) och ytterligare funktionsmallar (som Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection med flera).
 
 [![bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 

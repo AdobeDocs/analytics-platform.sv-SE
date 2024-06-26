@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bad5e71a51d9bf5f2155ea5c711763fafebc1bcf
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3726'
 ht-degree: 6%
 
 ---
@@ -20,10 +20,10 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juni 2024** | |
-| Diagrambaserad utjämning | Uppdaterad dokumentation om stygn med introduktionen av grafbaserad stygn. |
+| Diagrambaserad utjämning | Uppdaterat och omstrukturerat [fästa dokumentation](/help/stitching/overview.md) med infogning av grafbaserad stygn. |
 | AI-assistenten | Tillagd [dokumentation](../ai-assistant.md) på AI Assistant för Customer Journey Analytics. |
 | Omforma datauppsättningar för B2B-sökningar | Lagt till dokumentation om support [personbaserade sökningar på B2B-data](/help/connections//transform-datasets-b2b-lookups.md) (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) med hjälp av omvandling av datauppsättningar för B2B-sökning. |
-| Härledda fältfunktioner och funktionsmallar | Lagt till dokumentation om ytterligare härledda fältfunktioner ([Matematik](/help/data-views/derived-fields/derived-fields.md#math), [Nästa eller Föregående](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) och [funktionsmallar](/help/data-views/derived-fields/derived-fields.md#function-templates). |
+| Härledda fältfunktioner och funktionsmallar | Lagt till dokumentation om ytterligare härledda fältfunktioner ([Matematik](/help/data-views/derived-fields/derived-fields.md#math), [Nästa eller Föregående](/help/data-views/derived-fields/derived-fields.md#next-or-previous)och [Sammanfatta](/help/data-views/derived-fields/derived-fields.md#summarize)) och [funktionsmallar](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Maj 2024** | |
 | Målintegration | Tillagd [integreringsavsnitt för artiklar till Adobe](/help/integrations/at.md) om hur Target kan integreras med Customer Journey Analytics. |
 | Nödvändig information när du exporterar Customer Journey Analytics-rapporter till Google Cloud-plattformen med begränsningar för organisationsprinciper | Lagt till Google Cloud-plattformens organisations-ID som ägs av Adobe i [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md) dokumentation för export av Customer Journey Analytics-rapporter till Google Cloud Platform. <p>Den här informationen krävs endast för organisationer som använder [Begränsningar för organisationsprinciper](https://cloud.google.com/storage/docs/org-policy-constraints) i Google Cloud Platform.</p> |
