@@ -4,9 +4,9 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 529dd2ed2af60f8b417a5bf7d728a201dad70218
+source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1366'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Anslutningen har namnet **[!UICONTROL AJO Enabled Connection (*sandlådenamn *)]
 
 | Namn på datauppsättning | Schema | Datauppsättningstyp | Datakälltyp | Person-ID | Nyckel | Matchningsnyckel | Importera nya data | Backfill-data |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - | ` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![Status grön](assets/../../connections/assets/status-green.svg) På | ![Status grå](assets/../../connections/assets/status-gray.svg) Av |
+| [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status grön](assets/../../connections/assets/status-green.svg) På | ![Status grå](assets/../../connections/assets/status-gray.svg) Av |
 | [!UICONTROL Journey Step Events] | [!UICONTROL Journey Step Event schema for Journey Orchestration] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL  IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) På | ![Status grå](assets/../../connections/assets/status-gray.svg) Av |
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) På | ![Status grå](assets/../../connections/assets/status-gray.svg) Av |
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) På | ![Status grå](assets/../../connections/assets/status-gray.svg) Av |
@@ -87,10 +87,10 @@ Datavyn har namnet **AJO Enable Data View (*sandlådenamn*)**.
 
 
 - I **Komponenter** tab:
-   - Alla mått och dimensioner som har **[!UICONTROL (AJO)]** läggs till i namnet automatiskt som en del av den här automatiska konfigurationen.
-   - Vissa mått som har lagts till automatiskt baseras på härledda fält. De här härledda fälten skapas specifikt för den här integreringen. Exempelvis baseras landningssidklickningarna (AJO) på det härledda fältet Landing Page Clicks.
-   - Vissa mått eller dimensioner har ytterligare konfiguration. Exempelvis har Spam Complaint (AJO) inställningar för Format och Inkludera exkluderade värden.
-   - Alla automatiskt tillagda mått och mått har en sammanhangsetikett med namnet **[!UICONTROL :*namn_på_mått_eller_dimension *]**. Till exempel[!UICONTROL Landing Page Clicks (AJO)] metriska värden har kontextetiketten [!UICONTROL :Landing page clicks (AJO)].
+   - Alla mått och dimensioner som har [!UICONTROL (AJO)] läggs till i namnet automatiskt som en del av den här automatiska konfigurationen.
+   - Vissa mått eller mått, som har lagts till automatiskt, baseras på härledda fält. De här härledda fälten skapas specifikt för den här integreringen. Exempelvis måttet [!UICONTROL Landing Page Clicks (AJO)] baseras på [!UICONTROL Landing Page Clicks] härlett fält.
+   - Vissa mått eller dimensioner har ytterligare konfiguration. Till exempel: [!UICONTROL Spam Complaint (AJO)] har [!UICONTROL Format] och [!UICONTROL Include Exclude Values] inställningar som används.
+   - Alla automatiskt tillagda mått och mått har en sammanhangsetikett med namnet `:`*`name_of_metric_or_dimension`*. Till exempel [!UICONTROL Landing Page Clicks (AJO)] metriska värden har kontextetiketten `: Landing page clicks (AJO)`.
 
 - I **[!UICONTROL Settings]** -fliken används inga specifika konfigurationsvärden
 
