@@ -4,7 +4,7 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
+source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Datavyn har namnet **AJO Enable Data View (*sandlådenamn*)**.
    - Alla mått och dimensioner som har [!UICONTROL (AJO)] läggs till i namnet automatiskt som en del av den här automatiska konfigurationen.
    - Vissa mått eller mått, som har lagts till automatiskt, baseras på härledda fält. De här härledda fälten skapas specifikt för den här integreringen. Exempelvis måttet [!UICONTROL Landing Page Clicks (AJO)] baseras på [!UICONTROL Landing Page Clicks] härlett fält.
    - Vissa mått eller dimensioner har ytterligare konfiguration. Till exempel: [!UICONTROL Spam Complaint (AJO)] har [!UICONTROL Format] och [!UICONTROL Include Exclude Values] inställningar som används.
-   - Alla automatiskt tillagda mått och mått har en sammanhangsetikett med namnet `:`*`name_of_metric_or_dimension`*. Till exempel [!UICONTROL Landing Page Clicks (AJO)] metriska värden har kontextetiketten `: Landing page clicks (AJO)`.
+   - Alla automatiskt tillagda mått och mått har en sammanhangsetikett med namnet `:`*`name_of_metric_or_dimension`*. Till exempel [!UICONTROL Landing Page Clicks (AJO)] metriska värden har kontextetiketten `:Landing page clicks (AJO)`.
 
 - I **[!UICONTROL Settings]** -fliken används inga specifika konfigurationsvärden
 
