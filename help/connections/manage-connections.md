@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
+source-git-commit: c0599526e6a6a9ac9788a4ce29bcf44256b6c4df
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '3065'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,12 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 
 ## Användning
 
-The [!UICONTROL Usage] -gränssnittet visar användningen av kapslade och rapportbara rader över alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats.
+The [!UICONTROL Usage] -gränssnittet visar användningen av kapslade och rapportbara rader över alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. Förutom övervakningsfunktioner kan du använda användargränssnittet för att planera förnyelsen av din Customer Journey Analytics-licens bättre.
+
+Du kan välja ett tidsintervall (mellan de senaste sex månaderna, året till datum eller de senaste två åren) och ett intervall (mellan månads- eller kvartalsvis) för att övervaka Customer Journey Analytics användning. Gränssnittet är uppdelat i två delar:
+
+* Inmatade rader: totalt antal rader som har importerats/skickats från händelsedatamängder i alla CJA-anslutningar, inklusive poster som har hoppats över vid förtäring
+* Rapporteringsbara rader: totalt antal rader som kan rapporteras, inklusive alla händelsedata över alla CJA-anslutningar
 
 ![användningsvy](assets/usage-view.png)
 
