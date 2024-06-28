@@ -5,9 +5,9 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 2f2e4ac68f7a410b8046daae2f90af75ffdedab5
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '676'
 ht-degree: 1%
 
 ---
@@ -15,10 +15,10 @@ ht-degree: 1%
 
 # Kombinerade händelsedatamängder
 
-När du skapar en anslutning kombinerar Customer Journey Analytics alla scheman och datauppsättningar i en enda datauppsättning. Detta &#39;kombinerade händelsedatamängd&#39; är vad Customer Journey Analytics använder för rapportering. När du inkluderar flera scheman eller datauppsättningar i en anslutning:
+När du skapar en anslutning kombinerar Customer Journey Analytics alla händelsedatamängder till en enda datauppsättning. Den här kombinerade händelsedatamängden är vad Customer Journey Analytics använder för rapportering (tillsammans med profil- och uppslagsdatauppsättningar). När du inkluderar flera händelsedatamängder i en anslutning:
 
-* Scheman kombineras. Duplicerade schemafält sammanfogas.
-* Kolumnen &quot;Person-ID&quot; i varje datauppsättning sammanfogas till en enda kolumn, oavsett namn. Denna kolumn är grunden för att identifiera unika personer i Customer Journey Analytics.
+* Data för fält i datauppsättningar baserade på **samma schemasökväg** sammanfogas till en enda kolumn i den kombinerade datauppsättningen.
+* Personens ID-kolumn, som anges för varje datauppsättning, sammanfogas till en enda kolumn i den kombinerade datauppsättningen. **oavsett namn**. Denna kolumn är grunden för att identifiera unika personer i Customer Journey Analytics.
 * Rader bearbetas baserat på tidsstämpel.
 * Händelser löses ned till millisekundnivån.
 
@@ -28,7 +28,7 @@ Titta på följande exempel. Du har två händelsedatamängder, där vart och et
 
 >[!NOTE]
 >
->Adobe Experience Platform lagrar vanligtvis tidsstämplar i Unix millisekunder. I det här exemplet används datum och tid för läsbarhet.
+>Adobe Experience Platform lagrar vanligtvis en tidsstämpel i UNIX® millisekunder. I det här exemplet används datum och tid för läsbarhet.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,12 @@ Titta på följande exempel. Du har två händelsedatamängder, där vart och et
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
 
-När du skapar en anslutning med dessa två händelsedatamängder används följande tabell för rapportering.
+När du skapar en anslutning med dessa två händelsedatamängder och har identifierat
+
+* `example_id` som person-ID för den första datauppsättningen, och
+* `different_id` som person-ID för den andra datauppsättningen,
+
+följande kombinerade datauppsättning används för rapportering.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -59,7 +64,9 @@ När du skapar en anslutning med dessa två händelsedatamängder används följ
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de finns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session.
+Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen `string_color` baseras på schemasökväg `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen  `_experience.somethingelse.string_color`. I det här scenariot är data **not** sammanfogas till en kolumn i den kombinerade datauppsättningen som skapas. I stället är resultatet två `string_color` kolumner i den kombinerade datauppsättningen.
+
+Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session.
 
 Detta koncept gäller också attribuering. Det spelar ingen roll vilken datamängd en rad kommer från. Attribution fungerar exakt som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
 
@@ -93,11 +100,11 @@ Med flerkanalsanalys kan ni besvara frågor som:
 * Hur skiljer sig beteendet hos användare med flera enheter från dem som har en enda enhet?
 
 
-Mer information om flerkanalsanalys finns i det specifika användningsfallet:
+Mer information om flerkanalsanalys finns i det specifika användningsexemplet:
 
 * [Flerkanalsanalys](../use-cases/cross-channel/cross-channel.md)
 
-Mer information om hur du sammanställer diskussioner finns på:
+Mer information om hur du syser ut finns på:
 
 * [Översikt över titlar](/help/stitching/overview.md)
 * [Vanliga frågor](/help/stitching/faq.md)
