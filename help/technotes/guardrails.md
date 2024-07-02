@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: ffa7899b8ece8c39079ed64401ec6cad111e9a84
+source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1747'
 ht-degree: 5%
 
 ---
@@ -58,8 +58,6 @@ Vissa funktioner och deras associerade värde för gränsen beror på vilket Cus
 
 <!--
 ## Attribution AI
-
-
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
@@ -158,9 +156,19 @@ Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
 | Namngivna datauppsättningar | 5-50 | Systemstyrd Guardrail | Maximalt antal sammanslagna datauppsättningar per kund. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
-| Backfill-data | 60-395 | Systemstyrd Guardrail | Maximalt antal dagar med data för bakgrundsfyllning. Värdet varierar beroende på paketet Customer Journey Analytics (se produktbeskrivning). |
+| Längd för bakgrundsfyllning | 6-25 | Systemstyrd Guardrail | Maximalt antal månader med data för bakgrundsfyllning. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Uppspelningsfönster/Uppspelningsfrekvens | 1/1 - 30/7 | Systemstyrd Guardrail | Maximalt uppslagsfönster i dagar / Uppspelningsfrekvens; värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 {style="table-layout:auto"}
+
+
+## Diagrambaserad utjämning
+
+| Namn | Värde | Begränsa typ | Beskrivning |
+|---|--:|---|---|
+| Namngivna datauppsättningar | 10-50 | Systemstyrd Guardrail | Maximalt antal sammanslagna datauppsättningar per kund. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Längd för bakgrundsfyllning | 13-25 | Systemstyrd Guardrail | Maximalt antal månader med data för bakgrundsfyllning. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Uppspelningsfönster/Uppspelningsfrekvens | 1/1 - 30/7 | Systemstyrd Guardrail | Maximalt uppslagsfönster i dagar / Uppspelningsfrekvens; värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 
 ## Filter och beräknade värden
@@ -223,13 +231,13 @@ Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://
 | Dataflöde | Förväntad fördröjning |
 |---|---|
 | Adobe Analytics till Adobe Analytics Source Connector (A4T aktiverat) | &lt; 30 minuter |
-| Adobe Analytics Source Connector to Real-time Customer Profile (A4T inte aktiverat) | &lt; 2 minuter |
+| Adobe Analytics Source Connector to Real-time Customer Profile (A4T är inte aktiverat) | &lt; 2 minuter |
 | Adobe Analytics Source Connector to Real-time Customer Profile (A4T enabled) | &lt; 30 minuter |
 | Inmatning av data i datasjön från Edge Network eller inmatning av strömning | &lt; 60 minuter |
 | Datainmatning i datasjön från Adobe Analytics Source Connector | &lt; 2,25 timmar |
 | Dataintag i Customer Journey Analytics från datasjön | &lt; 90 minuter |
 | Stitching (valfri funktion; se [Översikt över titlar](../stitching/overview.md) för mer information) | &lt; 3,25 timmar |
-| Adobe Analytics Source Connector Backfill på mindre än 10 miljarder händelser (max 13 månaders historiska data) | &lt; 4 veckor |
+| Adobe Analytics Source Connector Backfill på mindre än 10 miljarder händelser (maximalt 13 månaders historiska data) | &lt; 4 veckor |
 | Audience Publishing till kundprofil i realtid, inklusive automatisk generering av direktuppspelningssegmentet, så att segmentet kan vara klart att ta emot data. | cirka 60 minuter |
 | Uppdatera frekvens för målgrupper | Engångsuppdatering: fördröjning på mindre än 5 minuter.<br/>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen). |
 

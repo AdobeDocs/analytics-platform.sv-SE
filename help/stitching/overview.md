@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 328939daf3e4dfe7f586d6c3822ce331cf24b97d
+source-git-commit: 32f0da9ea54952dbe3a765661b800e061ac5f039
 workflow-type: tm+mt
-source-wordcount: '3712'
+source-wordcount: '3723'
 ht-degree: 1%
 
 ---
@@ -345,13 +345,13 @@ När organisationen uppfyller alla [krav](#prerequisites) och förstår vanliga 
 
 ### Alternativ
 
-Välj alternativ för sammanfogning. Paketet Customer Journey Analytics avgör vilka alternativ som är tillgängliga för inledande varaktighet för bakåtfyllnad, uppslagsfönster, uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning.
+Välj alternativ för sammanfogning. Paketet Customer Journey Analytics avgör vilka alternativ som är tillgängliga för inledande varaktighet för bakåtfyllnad, uppslagsfönster, uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Se [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) för mer information.
 
 | | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | Varaktighet för engångssammanfogning av bakfyllning | 13 månader | 13 månader | 25 månader |
 | Fönster för uppspelning och uppspelningsfrekvens | <li>1 dag, varje dag</li><li>upp till 7 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 14 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 30 dagar, varje vecka</li> |
-| Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 10 | 15 |
+| Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 10 | 50 |
 
 ### Begär support
 
