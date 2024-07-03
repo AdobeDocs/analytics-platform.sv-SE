@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 805eb9dc9ab287934dd15eb56d3ac35187c979d7
+source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
 workflow-type: tm+mt
 source-wordcount: '3752'
 ht-degree: 1%
@@ -322,11 +322,11 @@ Följande tabell representerar samma data som ovan, men visar vilken effekt en s
 Följande krav gäller specifikt för diagrambaserad sammanfogning:
 
 - Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en besökare på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Cloud Identity Service.
-- identitetsdiagrammet från Experience Cloud Identity Service måste ha ett namnutrymme (till exempel `Email`, eller `Phone`) som du vill använda vid sammanfogning för att lösa problemet **tillfälligt ID**. Se [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) för mer information.
+- Identitetsdiagrammet från Experience Cloud Identity Service måste ha ett namnutrymme (till exempel `Email`, eller `Phone`) som du vill använda vid sammanfogning för att lösa problemet **tillfälligt ID**. Se [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) för mer information.
 
 >[!NOTE]
 >
->Det gör du **not** kräver en Real-time Customer Data Platform-licens för diagrambaserad sammanfogning. The **Välj** eller ett högre paket med Customer Journey Analytics innehåller de behörigheter som krävs för användaridentitetstjänsten.
+>Det gör du **not** kräver en Real-time Customer Data Platform-licens för diagrambaserad sammanfogning. The **Välj** eller högre paket med Customer Journey Analytics innehåller de behörigheter som krävs för användaridentitetstjänsten.
 
 
 
