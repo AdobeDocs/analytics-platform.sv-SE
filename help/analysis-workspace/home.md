@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ea5209d8729a024126e9b9de32e737e87b08a0ef
+source-git-commit: 24ae90545664c318c6d86a3553fd1077993af4b0
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 2%
+source-wordcount: '745'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 >id="cja_workspace_fundamentals"
 >title="Analysis Workspace Fundamentals"
 >abstract="Följ demon nedan för att lära dig några av grunderna i Analysis Workspace: skapa en tabell, lägga till en visualisering, ändra datumintervall med mera."
->additional-url="https://experience.adobe.com/#/@demosystem4/platform/analytics/?AnalyticsUI-core_version=prod20240625165945" text="Demo Guide"
+>additional-url="https://images-tv.adobe.com/mpcv3/7381/7a0633f8-972f-4367-a2ed-b169981efa7b_1681135724.854x480at800_h264.mp4" text="Översikt över Analysis Workspace"
 
 Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter och sedan dela dessa insikter med andra. Med dra-och-släpp-gränssnittet i webbläsaren kan du utforma analyser, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning samt dela och schemalägga projekt med vem du vill.
 
