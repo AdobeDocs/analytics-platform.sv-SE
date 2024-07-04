@@ -5,16 +5,19 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
+source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3793'
 ht-degree: 1%
 
 ---
 
 # Stitlar
 
-{{select-package}}
+>[!NOTE]
+>
+>Du måste ha **Välj** paket eller högre (för fältbaserad sammanfogning) eller **Prime** paket eller högre (för diagrambaserad sammanfogning) om du vill använda de funktioner som beskrivs i det här avsnittet. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
+
 
 Identitetssammanfogning (eller helt enkelt sammanfogning) är en kraftfull funktion som ökar en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter sömlöst på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID).
 
@@ -189,7 +192,7 @@ Följande krav gäller specifikt för fältbaserad sammanfogning:
 
 - Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha två kolumner som hjälper till att identifiera besökare:
 
-   - A **beständigt ID**, en identifierare som är tillgänglig på varje rad. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Cloud Identity Service.
+   - A **beständigt ID**, en identifierare som är tillgänglig på varje rad. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Platform Identity Service.
    - A **tillfälligt ID**, en identifierare som bara finns på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en besökare autentiserar. Du kan använda praktiskt taget vilken identifierare som helst. Stitching ser till att det här fältet innehåller den faktiska person-ID-informationen. För bästa resultat av sammanfogning bör ett tillfälligt ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID. Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning är det bättre att de andra datauppsättningarna också har en liknande gemensam identifierare.
 
 - Båda kolumnerna (beständigt ID och tillfälligt ID) måste definieras som ett identitetsfält med ett identitetsnamnutrymme i schemat för den datauppsättning som du vill sammanfoga. När du använder identitetssammanfogning i Real-time Customer Data Platform använder du [`identityMap` fältgrupp](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)måste du fortfarande lägga till identitetsfält med ett identitetsnamnutrymme. Identifiering av identitetsfält krävs eftersom sammanfogning av Customer Journey Analytics inte stöder `identityMap` fältgrupp. När du lägger till ett identitetsfält i schemat, samtidigt som du använder `identityMap` fältgrupp, ange inte det extra identitetsfältet som en primär identitet. Om du anger ytterligare ett identitetsfält som primär identitet påverkas inte `identityMap` fältgrupp för Real-time Customer Data Platform.
@@ -321,13 +324,12 @@ Följande tabell representerar samma data som ovan, men visar vilken effekt en s
 
 Följande krav gäller specifikt för diagrambaserad sammanfogning:
 
-- Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en besökare på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Cloud Identity Service.
-- Identitetsdiagrammet från Experience Cloud Identity Service måste ha ett namnutrymme (till exempel `Email`, eller `Phone`) som du vill använda vid sammanfogning för att lösa problemet **tillfälligt ID**. Se [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) för mer information.
+- Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en besökare på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Adobe Experience Platform Identity Service.
+- Identitetsdiagrammet från Experience Platform Identity Service måste ha ett namnutrymme (till exempel `Email`, eller `Phone`) som du vill använda vid sammanfogning för att lösa problemet **tillfälligt ID**. Se [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) för mer information.
 
 >[!NOTE]
 >
->Det gör du **not** kräver en Real-time Customer Data Platform-licens för diagrambaserad sammanfogning. The **Välj** eller högre paket med Customer Journey Analytics innehåller de behörigheter som krävs för användaridentitetstjänsten.
-
+>Det gör du **not** kräver en Real-time Customer Data Platform-licens för diagrambaserad sammanfogning. The **Prime** paket eller högre av Customer Journey Analytics innehåller de Experience Platform Identity Service-rättigheter som krävs.
 
 
 ### Begränsningar
