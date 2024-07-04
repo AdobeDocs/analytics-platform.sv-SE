@@ -6,14 +6,20 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: ea5209d8729a024126e9b9de32e737e87b08a0ef
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 3%
+source-wordcount: '744'
+ht-degree: 2%
 
 ---
 
-# Översikt över Analysis Workspace
+# Översikt över Analysis Workspace {#analysis-workspace-overview}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fundamentals"
+>title="Analysis Workspace Fundamentals"
+>abstract="Följ demon nedan för att lära dig några av grunderna i Analysis Workspace: skapa en tabell, lägga till en visualisering, ändra datumintervall med mera."
+>additional-url="https://experience.adobe.com/#/@demosystem4/platform/analytics/?AnalyticsUI-core_version=prod20240625165945" text="Demo Guide"
 
 Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter och sedan dela dessa insikter med andra. Med dra-och-släpp-gränssnittet i webbläsaren kan du utforma analyser, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning samt dela och schemalägga projekt med vem du vill.
 
@@ -108,7 +114,7 @@ När du är klar med projektet och samlar in åtgärdbara insikter är projektet
 
 * Adobe erbjuder hundratals [Videokurser om analys](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
 * Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#analytics) för uppdateringar om nya funktioner.
-* Ett bra sätt att bekanta sig med Analysis Workspace är att använda mallen Analysis Workspace självstudiekurs. I den här mallen beskrivs vanliga termer och steg för hur du skapar din första analys i Workspace. Så här startar du självstudiekursen:
-   1. På [!UICONTROL **Arbetsyta**] i Adobe Analytics väljer du **[!UICONTROL Learning]** till vänster.
+* Ett bra sätt att bekanta sig med Analysis Workspace är att använda mallen Analysis Workspace självstudiekurs. I den här mallen beskrivs vanliga termer och steg för hur du bygger din första analys i Workspace. Så här startar du självstudiekursen:
+   1. På [!UICONTROL **Workspace**] i Adobe Analytics väljer du **[!UICONTROL Learning]** till vänster.
    1. Välj **[!UICONTROL Open Tutorial]**.
       ![](assets/training-tutorial.png)
