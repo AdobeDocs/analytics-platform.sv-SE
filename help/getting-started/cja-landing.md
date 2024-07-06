@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '765'
 ht-degree: 2%
 
 ---
@@ -29,11 +29,13 @@ AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverk
 
 [![bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB Diagrambaserad utjämning]
+>[!TAB Diagrambaserad utjämning*]
 
 Med hjälp av diagrambaserad sammanfogning kan du använda identitetsdiagrammet från Experience Platform Identity Service för att få en bättre bild av kundresan genom att: <ul><li>Sammanfoga datauppsättningar med olika identifierare utan att behöva extrahera, omvandla och läsa in ytterligare data för att spegla en enda identifierare.</li> <li>Förbättra täckningen av preferens- eller gyllene identitet för en enskild datauppsättning genom att dela identiteter mellan datauppsättningar.</li><li>Justera profiler som skapats i Real-time Customer Data Platform och Journey Optimizer med personer i Customer Journey Analytics.</li></ul>
 
 [![bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
+*_Du måste ha Prime-paketet för diagrambaserad stygn._*
 
 >[!TAB B2B-sökningar]
 
