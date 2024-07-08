@@ -5,9 +5,9 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 2f2e4ac68f7a410b8046daae2f90af75ffdedab5
+source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ följande kombinerade datauppsättning används för rapportering.
 
 Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen `string_color` baseras på schemasökväg `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen  `_experience.somethingelse.string_color`. I det här scenariot är data **not** sammanfogas till en kolumn i den kombinerade datauppsättningen som skapas. I stället är resultatet två `string_color` kolumner i den kombinerade datauppsättningen.
 
-Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session.
+Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session. Fält med identiska schemasökvägar sammanfogas.
 
 Detta koncept gäller också attribuering. Det spelar ingen roll vilken datamängd en rad kommer från. Attribution fungerar exakt som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
 
@@ -85,6 +85,10 @@ Om du däremot inkluderar båda tabellerna i anslutningen ändras attribueringen
 | Gul | 6 |
 | Blå | 3 |
 | Röd | 2 |
+
+>[!NOTE]
+>
+>Om ett sammanfogat fält är en söknyckel för en händelsedatamängd i anslutningen, kommer den associerade uppsättningen att berika *alla* värden för det fältet. Det spelar ingen roll vilken händelsedatamängd en rad kommer från, eftersom sökrelationen är associerad med den delade schemasökvägen.
 
 ## Flerkanalsanalys
 
