@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
+source-git-commit: 3176be3fe1a117718cd675a4ed79df978d1f33f6
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '3031'
 ht-degree: 1%
 
 ---
@@ -72,15 +72,33 @@ Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Pl
 
 1. Välj i dialogrutan Anslutningsinställningar **[!UICONTROL Add datasets]**.
 
-2. I [!UICONTROL Select datasets] väljer du en eller flera datauppsättningar och väljer **[!UICONTROL Next]**. Minst en händelsedatamängd måste ingå i anslutningen.
+1. I [!UICONTROL Select datasets] visas en lista med datauppsättningarna i Experience Platform.
+
+   ![Välj datauppsättningar](assets/select-datasets.png)
+
+   För varje datauppsättning visas följande i listan:
+
+   | Kolumn | Beskrivning |
+   |---|---|
+   | Datauppsättning | Datauppsättningens namn. Markera namnet som du vill dirigera till datauppsättningen i Experience Platform. Välj ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) om du vill visa ett popup-fönster med mer information om datauppsättningen. I popup-fönstret kan du välja **[!UICONTROL Edit in Platform]** för att redigera datauppsättningen direkt i Experience Platform. |
+   | Datauppsättningstyp | Datatypen: Händelse, profil eller Sök. |
+   | Antal poster | Antalet poster som är tillgängliga i den senaste gruppen av datauppsättningar i Experience Platform. |
+   | Schema | Det schema som datauppsättningen baseras på. Markera namnet som du vill dirigera till schemat i Experience Platform. |
+   | Senaste batch | Status för den senaste batchen som importerats i Experience Platform. Se [Gruppstatus](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) mer information. |
+   | Datauppsättnings-ID | Datauppsättningens ID. |
+   | Senast uppdaterad | Den senaste uppdaterade tidsstämpeln för datauppsättningen. |
+
+
+1. Markera en eller flera datauppsättningar och välj **[!UICONTROL Next]**. Minst en händelsedatamängd måste ingå i anslutningen.
    * Om du vill ändra kolumnerna som visas för listan med datauppsättningar väljer du ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) och markera de kolumner som ska visas i [!UICONTROL Customize table] -dialogrutan.
    * Använd kommandot ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) sökfält.
    * Om du vill växla mellan att visa eller dölja de markerade datauppsättningarna väljer du ![Välj](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** eller **[!UICONTROL Show selected]**.
    * Om du vill ta bort en datauppsättning från listan med valda datauppsättningar använder du ![Stäng](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Om du vill ta bort alla markerade datauppsättningar väljer du **[!UICONTROL Clear all]**.
 
-   ![Välj datauppsättningar](assets/select-datasets.png)
 
-3. Konfigurera datauppsättningarna en i taget.
+
+
+1. Konfigurera datauppsättningarna en i taget.
 
    ![Konfigurera datauppsättningar](assets/add-dataset.png)
 
@@ -91,7 +109,7 @@ Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Pl
    | **[!UICONTROL Key]** | Endast tillgängligt för uppslagsdatauppsättningar. Nyckeln som ska användas för en uppslagsdatauppsättning. |
    | **[!UICONTROL Matching key]** | Endast tillgängligt för uppslagsdatauppsättningar. Den matchande nyckeln som ska användas i en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd. |
    | **[!UICONTROL Data source type]** | Välj en typ av datakälla. <br/>Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
-   | **[!UICONTROL Import new data]** | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar till arbetsytan. Kan anges till [!UICONTROL On] eller [!UICONTROL Off]. |
+   | **[!UICONTROL Import new data]** | Välj det här alternativet om du vill upprätta en pågående anslutning så att alla nya databatchar som läggs till i datauppsättningarna i den här anslutningen automatiskt flödar till Workspace. Kan anges till [!UICONTROL On] eller [!UICONTROL Off]. |
    | **[!UICONTROL Dataset backfill]** | Aktivera **[!UICONTROL Backfill all existing data]** för att säkerställa att alla befintliga data är efterfyllda.<br/><br/>Välj **[!UICONTROL Request backfill]** för att fylla i historiska data för en viss period. Du kan definiera upp till 10 backfill-perioder för datauppsättningar.<ol><li>Definiera perioden genom att ange start- och slutdata eller välja datum med ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Välj **[!UICONTROL Queue backfill]** för att lägga till bakåtfyllnad i listan, eller **[!UICONTROL Cancel]** för att avbryta.</li></ol>För varje post väljer du ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) om du vill redigera punkten, eller markera ![Ta bort](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) om du vill ta bort posten.<br/><br/>På bakåtfyllningar:<ul><li>Du kan fylla i varje datauppsättning separat.</li><li>Du prioriterar nya data som läggs till i en datauppsättning i anslutningen, så att dessa nya data har den lägsta fördröjningen.</li><li>Eventuella bakåtfyllnadsdata (historiska) importeras i en långsammare takt. Latensen påverkas av hur mycket historisk information du har.</li><li>Analysens källanslutning importerar upp till 13 månaders data (oavsett storlek) för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.</li></ul> |
    | **[!UICONTROL Transform dataset]** | För specifika B2B-sökdatauppsättningar kan du aktivera omvandling av en datauppsättning för korrekta B2B-personbaserade rapportscenarier. Se [Omforma datauppsättningar för B2B-sökningar](transform-datasets-b2b-lookups.md) för mer information. |
    | **[!UICONTROL Backfill status]** | Möjliga statusindikatorer är:<ul><li>Lyckades</li><li>X-bearbetning av bakgrundsfyllning(ar)</li><li>Av</li></ul> |
