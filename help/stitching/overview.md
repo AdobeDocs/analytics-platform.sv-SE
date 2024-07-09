@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
+source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3809'
 ht-degree: 1%
 
 ---
@@ -352,10 +352,11 @@ När organisationen uppfyller alla [krav](#prerequisites) och förstår vanliga 
 
 ### Alternativ
 
-Välj alternativ för sammanfogning. Paketet Customer Journey Analytics avgör vilka alternativ som är tillgängliga för inledande varaktighet för bakåtfyllnad, uppslagsfönster, uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Se [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) för mer information.
+Välj alternativ för sammanfogning. Paketet Customer Journey Analytics avgör vilka metoder som är tillgängliga för att fästa objekt, alternativ för inledande varaktighet för bakåtfyllnad, fönster för uppspelning, återgivningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Se [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) för mer information.
 
 | | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
+| Tillgängliga sammanfogningsmetoder | <li>Fältbaserad stygn</li> | <li>Fältbaserad stygn</li><li>Diagrambaserad utjämning</li> | <li>Fältbaserad stygn</li><li>Diagrambaserad utjämning</li> |
 | Varaktighet för engångssammanfogning av bakfyllning | 13 månader | 13 månader | 25 månader |
 | Fönster för uppspelning och uppspelningsfrekvens | <li>1 dag, varje dag</li><li>upp till 7 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 14 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 30 dagar, varje vecka</li> |
 | Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 10 | 50 |
