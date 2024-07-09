@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
+source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
 workflow-type: tm+mt
-source-wordcount: '3809'
+source-wordcount: '3817'
 ht-degree: 1%
 
 ---
@@ -350,9 +350,9 @@ Följande begränsningar gäller specifikt för diagrambaserad sammanfogning:
 
 När organisationen uppfyller alla [krav](#prerequisites) och förstår vanliga [begränsningar](#limitations) och specifik metod för stygn ([fältbaserad](#limitations-1) och [diagrambaserad](#limitations-2)) kan du följa de här stegen när du vill börja använda häftning i Customer Journey Analytics.
 
-### Alternativ
+### Välj alternativ
 
-Välj alternativ för sammanfogning. Paketet Customer Journey Analytics avgör vilka metoder som är tillgängliga för att fästa objekt, alternativ för inledande varaktighet för bakåtfyllnad, fönster för uppspelning, återgivningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Se [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) för mer information.
+Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Se [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) för mer information. Bestäm vilka alternativ som är tillgängliga innan du begär support.
 
 | | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
