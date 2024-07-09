@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
+source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 1%
@@ -88,7 +88,7 @@ Om du däremot inkluderar båda tabellerna i anslutningen ändras attribueringen
 
 >[!NOTE]
 >
->Om ett sammanfogat fält är en söknyckel för en händelsedatamängd i anslutningen, kommer den associerade uppsättningen att berika *alla* värden för det fältet. Det spelar ingen roll vilken händelsedatamängd en rad kommer från, eftersom sökrelationen är associerad med den delade schemasökvägen.
+>Om ett sammanfogat fält är en söknyckel för en händelsedatamängd i anslutningen, kommer den associerade uppsättningen att berika **alla** värden för det fältet. Det spelar ingen roll vilken händelsedatamängd en rad kommer från, eftersom sökrelationen är associerad med den delade schemasökvägen.
 
 ## Flerkanalsanalys
 
