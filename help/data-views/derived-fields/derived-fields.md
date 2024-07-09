@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 543443fa6483034f5604fca082fcb75f409006a1
 workflow-type: tm+mt
-source-wordcount: '7753'
+source-wordcount: '7746'
 ht-degree: 2%
 
 ---
@@ -381,9 +381,6 @@ För varje funktion som stöds finns information nedan:
 
 - begränsningar (om tillämpligt).
 
->[!NOTE]
->
->Uppslagsfunktionen har bytt namn till [Klassificera](#classify). Se [Klassificera](#classify) om du vill ha mer information.
 
 <!-- CASE WHEN -->
 
@@ -622,10 +619,6 @@ Följande begränsningar gäller och används när *markera* och *inställning* 
 Definierar en uppsättning värden som ersätts av motsvarande värden i ett nytt härlett fält.
 
 +++ Information
-
->[!NOTE]
->
->Den här funktionen hette ursprungligen Sök efter, men har bytt namn till Klassificera för att få plats med sökfunktionen med olika funktioner.
 
 ## Specifikationer {#classify-io}
 
@@ -1027,6 +1020,8 @@ Du definierar en `Activity Name` härlett fält. Du använder [!UICONTROL LOOKUP
 ![Skärmbild av regeln Gemener](assets/lookup.png)
 
 ## Mer information {#lookup-more-info}
+
+Uppslagsfunktionen tillämpas vid rapporttillfället på data som hämtas av Customer Journey Analytics från den uppslagsuppsättning som du har konfigurerat som en del av anslutningen.
 
 Du kan snabbt infoga en [!UICONTROL Lookup] funktionen i regelbyggaren som redan innehåller en eller flera andra funktioner.
 
