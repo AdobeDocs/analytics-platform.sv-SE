@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 466bcd2d790dae9eccb5d9114a375c5b9666c435
+source-git-commit: f0ff4abcfdb7361aed62bd35b50c4b014b223ec9
 workflow-type: tm+mt
-source-wordcount: '3790'
+source-wordcount: '3804'
 ht-degree: 6%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Juli 2024** | |
+| Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av [vanliga felmeddelanden](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Juni 2024** | |
 | Uppdaterat produktnamn som hänvisar till funktioner för direktuppspelande media | Ersatte instanser av&quot;Media Analytics&quot; och&quot;Streaming Media&quot; med namnet&quot;Streaming Media Collection Add-on&quot; när de refererar till en uppsättning funktioner för direktuppspelande media som samlar in strömmande mediedata och visar dem i Analysis Workspace. <p>Dessa uppdateringar finns tillgängliga i hela dokumentationen för Customer Journey Analytics samt i [Dokumentation för tilläggsprogrammet för direktuppspelad media Collection](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Diagrambaserad utjämning | Uppdaterat och omstrukturerat [fästa dokumentation](/help/stitching/overview.md) med infogning av grafbaserad stygn. |
