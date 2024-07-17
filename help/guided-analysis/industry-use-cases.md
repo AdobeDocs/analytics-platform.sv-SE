@@ -5,16 +5,16 @@ feature: Guided Analysis
 keywords: produktanalys
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 2b503ba784762d60efe8581c9ee06587aed416eb
+source-git-commit: 5752d3952987f8447cd12f953a57921044fa3c65
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1483'
 ht-degree: 0%
 
 ---
 
 # Användningsexempel
 
-Den här sidan innehåller illustrativa exempel på vad produktteam i olika branscher kan åstadkomma med hjälp av guidad analys.
+Den här sidan innehåller illustrativa branschexempel på vad kundupplevelseteam, från analytiker till produktteam och marknadsförare, kan uppnå med hjälp av guidad analys.
 
 +++**Detaljhandel**
 
