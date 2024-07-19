@@ -1,7 +1,7 @@
 ---
-description: Lär dig hur du lägger till mappar i arbetsytan
+description: Lär dig hur du lägger till mappar i Workspace
 keywords: Analysis Workspace
-title: Lägg till mappar i arbetsytan
+title: Lägg till mappar i Workspace
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
@@ -30,17 +30,17 @@ Lägg till projekt i en mapp från tabellvyn på startsidan.
 
    ![Vyn Välj mapp som visar listrutan och tillgängliga undermappar.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
 
-1. Klicka **Lägg till**.
+1. Klicka på **Lägg till**.
 
    ![Klicka på Lägg till.](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
    De markerade projekten läggs till i mappen.
 
-   ![Den markerade undermappen med de tre projekt som flyttats.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
+   ![Den markerade undermappen visar de tre projekt som har flyttats.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   På startsidan för arbetsytan visas nu mappen innehåller (3) projekt.
+   På Workspace landningssida visas nu mappen innehåller (3) projekt.
 
-   ![I den uppdaterade listan med projektstartsidor visas undermappen med tre projekt.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+   ![Den uppdaterade listan med startsidor för projekt visar undermappen med tre projekt.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
 ## Från en mapp {#inside-folder}
 
@@ -50,13 +50,13 @@ Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
 
    ![Undermappen som inte innehåller några projekt](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1. Klicka på **...** ellipsikonen längst upp till höger.
+1. Klicka på ikonen **..** ellips i det övre högra hörnet.
 
-   ![Alternativen i listrutan Ellips.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
+   ![Alternativen i den nedrullningsbara ellipsen.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
    I en nedrullningsbar meny visas alternativet att lägga till projekt i mappen. Med ytterligare alternativ kan du byta namn på, flytta eller ta bort mappen och hantera mappbehörigheter.
 
-1. Välj **Lägg till projekt** och välj det projekt som du vill lägga till i listrutan.
+1. Välj **Lägg till projekt** och välj det projekt som du vill lägga till     i listrutan.
 
    ![Listan Lägg till projekt.](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
@@ -64,7 +64,7 @@ Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
 
    ![Fönstret Lägg till projekt med tre projekt läggs till](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
-1. Klicka **Lägg till** om du vill lägga till projekten i mappen.
+1. Klicka på **Lägg till** för att lägga till projekten i mappen.
 
    ![Klicka på Lägg till.](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
 

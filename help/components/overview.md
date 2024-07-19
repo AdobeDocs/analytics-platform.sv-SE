@@ -16,34 +16,34 @@ ht-degree: 5%
 
 Komponenter är funktioner i Customer Journey Analytics som kan användas i rapporter eller som komplement till rapporteringsfunktioner. Du kan hantera de här komponenterna med följande steg:
 
-1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) med dina Adobe ID-uppgifter.
+1. Logga in på [analytics.adobe.com](https://analytics.adobe.com) med dina Adobe ID-inloggningsuppgifter.
 2. Navigera till [!UICONTROL Components] > [!UICONTROL Components] i rubrikmenyn.
 
 Du kan hantera följande komponenter:
 
-* [**Anteckningar**](/help/components/annotations/overview.md): förmedla kontextuella datanunkter och insikter till organisationen.
-* [**Målgrupper**](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper som upptäcks i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) (RTCDP) i Adobe Experience Platform för kundanpassning och personalisering.
-* [**Filter**](filters/filters-overview.md): Skapa, hantera, dela och lägg på kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
-* [**Beräknade mått**](calc-metrics/calc-metr-overview.md): Använd mätvärden och formler som nya komponenter för rapportering
-* [**Dataordlista**](/help/components/data-dictionary/data-dictionary-overview.md): Hjälper både användare och administratörer att hålla reda på och förstå komponenterna i sin Analytics-miljö bättre.
-* [**Datumintervall**](date-ranges/create.md): Anpassa och förfina datumintervallen som Analysis Workspace erbjuder.
+* [**Anteckningar**](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till din organisation.
+* [**Publiker**](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper som identifierats i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) (RTCDP) i Adobe Experience Platform för kundanpassning och personalisering.
+* [**Filter**](filters/filters-overview.md): Bygg, hantera, dela och tillämpa kraftfulla målgruppsfilter på dina rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
+* [**Beräknade mått**](calc-metrics/calc-metr-overview.md): Använd mått och formler som nya komponenter för rapportering
+* [**Dataordlista**](/help/components/data-dictionary/data-dictionary-overview.md): Hjälper både användare och administratörer att hålla reda på och förstå komponenterna bättre i sin Analytics-miljö.
+* [**Datumintervall**](date-ranges/create.md): Anpassa och förfina datumintervall som Analysis Workspace erbjuder.
 * [**Dimensioner**](/help/components/dimensions/view-dimensions.md): Dimensioner är variabler som vanligtvis innehåller strängvärden. Vanliga dimensioner är Page och Reference domain.
-* [**Mått**](/help/components/apply-create-metrics.md): Du kan kvantifiera datapunkter i Analysis Workspace.
+* [**Mätvärden**](/help/components/apply-create-metrics.md): Gör att du kan kvantifiera datapunkter i Analysis Workspace.
 * [**Projekt**](/help/analysis-workspace/home.md): Ordna och underhåll dina projekt i Analysis Workspace.
 
 ## Analysis Workspace-komponenter
 
 Komponenterna i Analysis Workspace består av mätvärden, dimensioner, filter och tidsdetaljer som du kan dra och släppa i ett projekt. Anpassade komponenter som du skapar läggs till i dessa paneler, till exempel anpassade datumintervall.
 
-Du öppnar panelen Komponenter genom att klicka på **[!UICONTROL Components]** ikonen i den vänstra listen. Du kan växla mellan paneler (panelen Tom, [Frihandspanelen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md), eller [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och komponenter som använder ikonerna för den vänstra listen eller genom att använda [snabbtangenter](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Du öppnar komponentpanelen genom att klicka på ikonen **[!UICONTROL Components]** i den vänstra listen. Du kan växla mellan paneler (panelen Tom, [panelen Frihand](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Snabbinsikter](/help/analysis-workspace/c-panels/quickinsight.md) eller panelen [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) och komponenter med hjälp av ikonerna för den vänstra listen eller med [snabbtangenterna](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![Panelen Arbetsyta som markerar ikonen Komponenter i den vänstra listen](assets/components.png)
+![Panelen Workspace markerar komponentikonen i den vänstra listen](assets/components.png)
 
-Se [Skapa ett projekt](/help/analysis-workspace/home.md) för information om hur du använder komponenter i ett projekt.
+Mer information om hur du använder komponenter i ett projekt finns i [Skapa ett projekt](/help/analysis-workspace/home.md).
 
 ## Komponentåtgärder
 
-Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka **[!UICONTROL Actions]** längst upp i komponentlistan.
+Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka på **[!UICONTROL Actions]** högst upp i komponentlistan.
 
 >[!NOTE]
 >
@@ -51,9 +51,9 @@ Du kan hantera komponenter (individuellt eller genom att markera flera) på fler
 
 | Komponentåtgärd | Beskrivning |
 | --- | --- |
-| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Sedan visas den i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters], eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
-| Favorit | Lägg till komponenten i listan med favoriter. Sedan visas den i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL filters], eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
-| Godkänn | Godkänn komponenten för att göra den kanonisk. Sedan visas den i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters], eller  [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Tagg | Ordna eller hantera komponenter genom att lägga till taggar i dem. Sedan visas det i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Favorit | Lägg till komponenten i listan med favoriter. Sedan visas det i respektive komponenthanterare, till exempel [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
+| Godkänn | Godkänn komponenten för att göra den kanonisk. Sedan visas det i respektive komponenthanterare, som [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters] eller [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
 | Dela | Gäller endast filter. |
 | Ta bort | Gäller endast filter. |
 
@@ -69,14 +69,14 @@ Du kan hantera komponenter direkt i den vänstra listen.
 
    eller
 
-   Markera en komponent och markera sedan **Åtgärd** (3-punkt), ikon längst upp i komponentlistan.
+   Markera en komponent och välj sedan ikonen **Åtgärd** (3 punkter) längst upp i komponentlistan.
 
    >[!TIP]
    >
    >   Du kan markera flera komponenter genom att hålla ned Skift, eller genom att hålla ned Kommando (Mac) eller Ctrl (Windows).
 
 
-   ![Komponentåtgärdslista med tagg, favorit, godkänn, Dela och Ta bort.](assets/component-actions.png)
+   ![Komponentåtgärdslista med tagg, favorit, godkänn, dela och ta bort.](assets/component-actions.png)
 
    | Komponentåtgärd | Beskrivning |
    |--- |--- |
@@ -86,7 +86,7 @@ Du kan hantera komponenter direkt i den vänstra listen.
    | [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
    | [!UICONTROL **Ta bort**] | Ta bort komponenter som du inte längre behöver. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
 
-Anpassade komponenter kan också hanteras med respektive komponenthanterare. Till exempel [Hantera filter](/help/components/filters/manage-filters.md).
+Anpassade komponenter kan också hanteras med respektive komponenthanterare. Exempel: [Hantera filter](/help/components/filters/manage-filters.md).
 
 ## Söka, filtrera och sortera komponentlistan
 
@@ -94,19 +94,19 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 
 ### Sök i komponentlistan
 
-1. Välj **Komponenter** icon ![Ikon för komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) till vänster.
+1. Välj ikonen **Komponenter** ![Komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) i den vänstra listen.
 
 2. I sökfältet börjar du skriva namnet på komponenten som du vill använda i ditt projekt.
 
-   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Filter** ![Filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Ikon för datumintervall](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila, och **Mått** ![Mätningsikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en filtermall och räkningsikonen ![Beräkningsikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
+   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Ikonen för Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Filter** ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Ikonen för datumintervall](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Adobe-ikonen ![Adobe ](assets/default-calc-metric-icon.png) indikerar antingen en mall för beräknade mätvärden eller en filtermall, och räkningsikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indikerar ett beräknat mätresultat som har skapats av en Analytics-administratör i din organisation.
 
 3. Markera komponenten när den visas i listrutan.
 
 ### Filtrera komponentlistan
 
-1. Välj **Komponenter** icon ![Ikon för komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) till vänster.
+1. Välj ikonen **Komponenter** ![Komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) i den vänstra listen.
 
-2. Välj **Filter** icon ![Ikon för dataordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
+2. Välj ikonen **Filter** ![Dataglexikonfilter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
    eller
 
@@ -117,7 +117,7 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
    | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
-   | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Hantera komponenter](#manage-components). |
+   | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i favoritlistan finns i [Hantera komponenter](#manage-components). |
    | [!UICONTROL **Dimensioner**] | Visa endast komponenter som är Dimensioner. |
    | [!UICONTROL **Mätvärden**] | Visa endast komponenter som är mätvärden. |
    | [!UICONTROL **Filter**] | Visa endast komponenter som är filter. |
@@ -133,12 +133,12 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 
 1. (Valfritt) Tillämpa eventuella filter på komponentlistan enligt beskrivningen i [Filtrera komponentlistan](#filter-the-component-list).
 
-2. Välj **Komponenter** icon ![Ikon för komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) till vänster.
+2. Välj ikonen **Komponenter** ![Komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) i den vänstra listen.
 
-3. Välj **Sortera** icon ![Ikon för att sortera komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)väljer du sedan något av följande filteralternativ för att sortera komponentlistan:
+3. Välj ikonen **Sortera** ![Sortera komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) och välj sedan något av följande filteralternativ för att sortera komponentlistan:
 
    {{components-sort-options}}
 
 ## Behörigheter för komponentåtkomst
 
-I Analysis Workspace kan administratörer [kuratera](/help/analysis-workspace/curate-share/curate.md) vilka komponenter som exponeras för användare vid rapportering.
+I Analysis Workspace kan administratörer [kontrollera](/help/analysis-workspace/curate-share/curate.md) vilka komponenter som visas för användare i rapporter.

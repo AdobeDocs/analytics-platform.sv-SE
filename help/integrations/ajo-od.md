@@ -14,35 +14,35 @@ ht-degree: 0%
 # Integrera beslutshantering med Adobe Customer Journey Analytics
 
 
-Adobe Journey Optimizer [Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html) förenklar personaliseringen med ett centralt bibliotek med marknadsföringserbjudanden och en beslutsmotor som tillämpar regler och begränsningar på komplexa realtidsprofiler som skapats av Adobe Experience Platform för att hjälpa er att skicka rätt erbjudande till era kunder vid rätt tidpunkt.
+Adobe Journey Optimizer [Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html) förenklar personaliseringen med ett centralt bibliotek med marknadsföringserbjudanden och en beslutsmotor som tillämpar regler och begränsningar på komplexa realtidsprofiler som skapats av Adobe Experience Platform för att hjälpa dig att skicka rätt erbjudande till dina kunder vid rätt tidpunkt.
 
-Beslutshantering är en del av och integrerad med Adobe Journey Optimizer. Det kan också användas oberoende av resor och kampanjer som definieras i Adobe Journey Optimizer, med hjälp av de omfattande [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) support.
+Beslutshantering är en del av och integrerad med Adobe Journey Optimizer. Den kan också användas oberoende av resor och kampanjer som definierats i Adobe Journey Optimizer, med det omfattande stödet för [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) .
 
 Du kan importera data som har genererats av Beslutshantering för att utföra avancerad analys i Customer Journey Analytics genom att utföra följande steg:
 
 ## Skicka data från beslutshantering till Adobe Experience Platform
 
-Adobe Experience Platform fungerar som den centrala datakällan och länken mellan beslutsfattandet och Customer Journey Analytics. Data från beslutshanteringen samlas in i Experience Platform **automatiskt** eller som en del av **explicit skickade upplevelsehändelser** (till exempel visningar eller klickningar). Se [Komma igång med datainsamling](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html) för mer information.
+Adobe Experience Platform fungerar som den centrala datakällan och länken mellan beslutsfattandet och Customer Journey Analytics. Data från beslutshantering samlas in i **automatiskt** i Experience Platform eller som en del av **explicit skickade upplevelsehändelser** (till exempel visningar eller klickningar). Mer information finns i [Komma igång med datainsamling](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html).
 
 ## Skapa en anslutning
 
-När data för beslutshantering finns i Adobe Experience Platform kan du skapa en [Anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) baserat på data från din beslutshantering. Du kan också lägga till data för beslutshantering i en befintlig anslutning.
+När data för beslutshantering finns i Adobe Experience Platform kan du skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) baserat på dina data för beslutshantering. Du kan också lägga till data för beslutshantering i en befintlig anslutning.
 
 Välj och konfigurera följande datauppsättningar:
 
 | Datauppsättning | Datauppsättningstyp | Anslutningsinställningar | Beskrivning |
 | --- | --- | --- | --- |
-| ODE DecisonEvents - _sandlåda_ beslut | Händelse | Person-ID: `IdentityMap` | Innehåller automatiskt genererade data för beslutshändelsehantering. _Sandbox_ refererar till namnet på den specifika sandlådan. |
+| ODE DecisonEvents - _sandlåda_ beslut | Händelse | Person-ID: `IdentityMap` | Innehåller automatiskt genererade data för beslutshändelsehantering. _Sandbox_ refererar till det specifika sandlådans namn. |
 | Adobe Journey Optimizer Message Feedback Event Dataset | Händelse | Person-ID: `IdentityMap` | Innehåller meddelandeleveranshändelser. |
 | Adobe Journey Optimizer Experience Event-datauppsättning för e-postspårning | Händelse | Person-ID: `IdentityMap` | Innehåller e-postspårningshändelser. |
 | Adobe Journey Optimizer Push Tracking Experience, händelsedatauppsättning | Händelse | Person-ID: `IdentityMap` | Innehåller push-spårningshändelser. |
-| Adobe Journey Optimizer Entity Dataset | Sök | Nyckel: `_id`<br>Matchningsnyckel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Innehåller klassificeringar som kopplar metadata för resa och kampanj till alla händelsedata för Adobe Journey Optimizer. |
+| Adobe Journey Optimizer Entity Dataset | Sök | Nyckel: `_id`<br>Matchande nyckel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Innehåller klassificeringar som kopplar metadata för resa och kampanj till alla händelsedata för Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
 
 ## Skapa en datavy
 
-När en anslutning har skapats kan du skapa en eller flera [Datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) för att konfigurera önskade mått och mätvärden som är tillgängliga i Customer Journey Analytics.
+När en anslutning har skapats kan du skapa en eller flera [datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) för att konfigurera önskade mått och mått som är tillgängliga i Customer Journey Analytics.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ När en anslutning har skapats kan du skapa en eller flera [Datavyer](https://ex
 
 ### Konfigurera dimensioner
 
-Du kan skapa följande dimensioner i en datavy för att uppnå en ungefärlig paritet med liknande dimensioner i Beslutshantering. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Data View Manager för mer information om dimensionsanpassningsalternativ.
+Du kan skapa följande dimensioner i en datavy för att uppnå en ungefärlig paritet med liknande dimensioner i Beslutshantering. Mer information om alternativ för dimensionsanpassning finns i [Komponentinställningar](/help/data-views/component-settings/overview.md) i Datavy Manager.
 
 | Dimension | Schemaelement | Komponentinställningar |
 | --- | --- | --- |
@@ -66,11 +66,11 @@ Du kan skapa följande dimensioner i en datavy för att uppnå en ungefärlig pa
 
 ### Konfigurera mått
 
-Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med liknande mått i Beslutshantering. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Data View Manager för mer information om alternativ för anpassning av mätvärden.
+Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med liknande mått i Beslutshantering. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Datavy Manager för mer information om alternativ för måttanpassning.
 
 | Mått | Beskrivning | Schemaelement | Komponentinställningar |
 | --- | --- | --- | --- |
-| Händelsetyp (byta namn för att referera till en viss händelse, till exempel `Feedback` for `message.feedback`) [1] | Mängd för en viss typ av händelse | `eventType` | Komponenttyp: Mått <br/>**[!UICONTROL Set Include Exclude Values]**: På<br/>**[!UICONTROL Match]**: [!UICONTROL If all criteria are met]<br/>**[!UICONTROL Criteria]**:**[!UICONTROL Equals]**`message.feedback` |
+| Händelsetyp (ändra namn så att det refererar till en viss händelse, till exempel `Feedback` för `message.feedback`) [1] | Mängd för en viss typ av händelse | `eventType` | Komponenttyp: Mått <br/>**[!UICONTROL Set Include Exclude Values]**: På<br/>**[!UICONTROL Match]**: [!UICONTROL If all criteria are met]<br/>**[!UICONTROL Criteria]**:**[!UICONTROL Equals]**`message.feedback` |
 | Poäng för beslutsalternativ | Beräknat värde för ett beslutsalternativ i samband med ett enda omfång. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Komponenttyp: Mått |
 | Poäng för reservbeslut | Beräknat värde för ett alternativ för reservalternativ i ett enda omfång. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Komponenttyp: Mått |
 | Avvisa erbjudanden | Antalet erbjudanden som avvisats eller avvisats utan någon annan direkt interaktion. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponenttyp: Mått |
@@ -82,4 +82,4 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 
 {style="table-layout:auto"}
 
-[1] Du kan definiera flera mått för de olika händelsetyperna som är tillgängliga. Se [Inkludera inställningar för komponenten Uteslut värden](/help/data-views/component-settings/include-exclude-values.md) för mer information.
+[1] Du kan definiera flera mått för de olika händelsetyperna som är tillgängliga. Mer information finns i [Inkludera komponentinställningar för utelämna värden](/help/data-views/component-settings/include-exclude-values.md).

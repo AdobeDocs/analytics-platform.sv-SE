@@ -33,13 +33,13 @@ Report Builder för Customer Journey Analytics är tillgängligt för Excel på 
 
 - **Dataextrahering**: Med Adobe Report Builder kan du extrahera data från Customer Journey Analytics till Excel. Du kan skapa anpassade rapporter och frågor för att hämta specifika datapunkter som är relevanta för din analys.
 
-- **Anpassad rapportering**: Du kan utforma och formatera anpassade rapporter i Excel så att de passar just dina rapporteringsbehov. Detta är särskilt användbart för att skräddarsy rapporter för olika intressenter.
+- **Anpassad rapportering**: Du kan utforma och formatera anpassade rapporter i Excel efter dina specifika rapporteringsbehov. Detta är särskilt användbart för att skräddarsy rapporter för olika intressenter.
 
-- **Ad hoc-analys**: Användarna kan snabbt generera ad hoc-rapporter för att besvara specifika frågor eller utforska datatrender utan att behöva gå igenom en lång process för att skapa rapporter.
+- **Ad-hoc-analys**: Användare kan snabbt generera ad-hoc-rapporter för att besvara specifika frågor eller utforska datatrender utan att behöva gå igenom en lång process för att skapa rapporter.
 
-- **Dashboarding**: Data som extraheras från CJA kan användas för att skapa Excel-baserade kontrollpaneler och visualiseringar för en översikt på hög nivå över nyckeltal (KPI).
+- **Kontrollpaneler**: Data som extraheras från CJA kan användas för att skapa Excel-baserade instrumentpaneler och visualiseringar för en översikt på hög nivå över nyckelutförandeindikatorer (KPI).
 
-- **Dela insikter**: Du kan dela Excel-rapporter och -insikter med teammedlemmar eller intressenter som kanske inte har direktåtkomst till CJA.
+- **Dela insikter**: Du kan dela Excel-rapporter och insikter med teammedlemmar eller intressenter som kanske inte har direkt åtkomst till CJA.
 
 ## Översiktsvideo
 
@@ -47,7 +47,7 @@ Report Builder för Customer Journey Analytics är tillgängligt för Excel på 
 
 >[!NOTE]
 >
->Den här dokumentationen gäller Report Builder för Customer Journey Analytics. Mer information om Report Builder for Analytics för Windows finns i [Report Builder för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html).
+>Den här dokumentationen gäller Report Builder för Customer Journey Analytics. Mer information om Report Builder for Analytics för Windows finns i [Report Builder för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html).
 
 Du kan ladda ned Report Builder för Customer Journey Analytics via
 [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows).

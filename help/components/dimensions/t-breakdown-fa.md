@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# Dela upp dimensioner i arbetsytan
+# Dela upp dimensioner i Workspace
 
 Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 
@@ -22,7 +22,7 @@ Dela upp era data på obegränsade sätt för just era behov; bygg frågor med r
 1. [Skapa ett projekt](/help/analysis-workspace/home.md) med en datatabell.
 1. Högerklicka på ett radobjekt i datatabellen och välj **[!UICONTROL Breakdown]** > *`<item>`*.
 
-   ![Stegresultat som visar Skapa varning från markering.](assets/fa_data_table_actions.png)
+   ![Stegresultat som visar Skapa avisering från markering.](assets/fa_data_table_actions.png)
 
    Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppsfilter över valda tidsperioder. Du kan även gå ned mer i detalj.
 
@@ -40,9 +40,9 @@ Dela upp era data på obegränsade sätt för just era behov; bygg frågor med r
 
 ## Tillämpa attribueringsmodeller på uppdelningar
 
-Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar **[!UICONTROL Edit]**:
+Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar på **[!UICONTROL Edit]**:
 
-![Jämförelse av orderattribut som visar uppdelningsinställningarna](assets/breakdown_settings.png)
+![Jämförelse av orderattribut som visar brytningsinställningarna](assets/breakdown_settings.png)
 
 Detta är det förväntade beteendet när du tillämpar attribueringsmodeller på uppdelningar eller redigerar dem:
 

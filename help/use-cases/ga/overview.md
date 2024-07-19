@@ -19,20 +19,20 @@ Arbetsflöden tillhandahålls för både historiska data och aktuell datainsamli
 
 ## Hämta historiska data från Google Analytics till Adobe Experience Platform
 
-Inmatning av historiska data (bakåtfyllnad) innebär att data exporteras från Google och importeras till Adobe Experience Platform. Se [Ingest Google Analytics data in Adobe Experience Platform](backfill.md).
+Inmatning av historiska data (bakåtfyllnad) innebär att data exporteras från Google och importeras till Adobe Experience Platform. Se [Importera Google Analytics-data i Adobe Experience Platform](backfill.md).
 
-När du väl har samlat in historiska data i Platform kan du antingen [Konfigurera strömmande aktuella data](streaming.md)eller omedelbart börja rapportera data i Customer Journey Analytics med [Skapa en anslutning](/help/connections/create-connection.md).
+När du har överfört historiska data till plattformen kan du antingen [konfigurera strömmande aktuella data](streaming.md) eller omedelbart börja rapportera om data som har fyllts i i Customer Journey Analytics genom att [skapa en anslutning](/help/connections/create-connection.md).
 
 ## Konfigurera en befintlig Google Analytics-implementering för Adobe Experience Platform {#configure}
 
-Inmatning av aktuella (strömmande) data innebär att data skickas till Adobe Experience Platform Edge Network, som sedan vidarebefordrar dessa data till Adobe Experience Platform. Se [Ställ in data för direktuppspelad Google Analytics i Adobe Experience Platform](streaming.md).
+Inmatning av aktuella (strömmande) data innebär att data skickas till Adobe Experience Platform Edge Network, som sedan vidarebefordrar dessa data till Adobe Experience Platform. Se [Konfigurera Google Analytics-data för direktuppspelning i Adobe Experience Platform](streaming.md).
 
 ## Konfigurera en anslutning och datavy i Customer Journey Analytics
 
-När du har importerat historiska data och/eller konfigurerat datainsamling till Adobe Experience Platform kan du [Skapa en anslutning](/help/connections/create-connection.md) så att Customer Journey Analytics kan referera till dessa data.
+När du har importerat historiska data och/eller konfigurerat datainsamling till Adobe Experience Platform kan du [skapa en anslutning](/help/connections/create-connection.md) så att Customer Journey Analytics kan referera till dessa data.
 
-Använd anslutningen för att skapa en eller flera [Datavyer](/help/data-views/create-dataview.md) för Analysis Workspace.
+Använd anslutningen för att skapa en eller flera [datavyer](/help/data-views/create-dataview.md) som kan användas i Analysis Workspace.
 
 ## Skapa rapporter
 
-När du har konfigurerat mått och mätvärden i en datavy kan du börja använda Analysis Workspace för att generera de önskade rapporterna. Se [Rapport om Google Analytics data i Customer Journey Analytics](report.md).
+När du har konfigurerat mått och mätvärden i en datavy kan du börja använda Analysis Workspace för att generera de önskade rapporterna. Se [Rapport om Google Analytics-data i Customer Journey Analytics](report.md).

@@ -22,7 +22,7 @@ Använd visualisering av sammanfattningsnummer för att markera ett stort tal so
 * Om flera celler är markerade visas den första cellen som är markerad.
 * Om kolumnen är markerad väljs det första cellvärdet i kolumnen.
 
-Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
 
 | Inställning | Definition |
 |--- |--- |
@@ -35,7 +35,7 @@ Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet
 
 ## Visualisering av sammanfattningsändring {#summary-change}
 
-Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) eller ett beräknat mätvärde [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) alternativ.
+Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i sammanfattningsändringen kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) eller ett beräknat metrisk värde [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) alternativ.
 
 Den här visualiseringen fungerar på följande sätt:
 
@@ -47,10 +47,10 @@ Den här visualiseringen fungerar på följande sätt:
 * Om kolumnen är markerad jämförs det första värdet med sig självt, vilket innebär en ändring på 0.
 
 
-![Visualisering av sammanfattningsändring som visar delta mellan två tal.](assets/summary-change.png)
+![Visualisering av sammanfattningsändring som visar delta mellan två tal.s](assets/summary-change.png)
 
 
-Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
 
 | Inställning | Definition |
 |--- |--- |

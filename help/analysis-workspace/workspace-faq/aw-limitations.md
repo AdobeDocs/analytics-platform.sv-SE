@@ -24,27 +24,27 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 
 ## Visualiseringar
 
-* Visualiseringar som utnyttjar filter, som [!UICONTROL Fallout], [!UICONTROL Flow], [!UICONTROL Cohort]och [!UICONTROL Histogram], kan inte acceptera beräknade värden som indata.
-* [!UICONTROL Flow]: Ingångs-/avslutningsdimensioner, t.ex. [!UICONTROL Entry page], kan inte användas i Flow.
+* Visualiseringar som utnyttjar filter, som [!UICONTROL Fallout], [!UICONTROL Flow], [!UICONTROL Cohort] och [!UICONTROL Histogram], kan inte acceptera beräknade värden som indata.
+* [!UICONTROL Flow]: Det går inte att använda in-/avslutningsdimensioner, t.ex. [!UICONTROL Entry page], i Flow.
 * [!UICONTROL Cohort]: Icke-heltal kan inte användas som kohortvillkor.
 
 ## Komponenter > Filter
 
-* Vissa mått kan inte filtreras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], osv.
-* Ad hoc-filter skapade i [panelens dropzon](/help/analysis-workspace/c-panels/panels.md) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller i Filter-komponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
+* Vissa mått och mått kan inte filtreras, som [!UICONTROL Occurrences], [!UICONTROL Unique Visitors] osv.
+* Ad hoc-filter som skapas i [panelens dropzone](/help/analysis-workspace/c-panels/panels.md) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller Filterkomponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
 ## Komponenter > Beräknade mått
 
 * Beräknade mått kan inte användas i vissa visualiseringar. Se Visualiseringar ovan.
-* Beräknade mått kan inte användas i [!UICONTROL Attribution] eftersom beräknade värden i sig kan innehålla separata attribueringsmodeller.
-* Vissa komponenter och operatorer är inte tillgängliga om ett beräknat mått skapas från arbetsytan (till skillnad från om de skapas från [!UICONTROL Components > filters]). Till exempel: [!UICONTROL IP Address].
+* Beräknade mått kan inte användas på panelen [!UICONTROL Attribution] eftersom beräknade mått i sig kan innehålla separata attribueringsmodeller.
+* Vissa komponenter och operatorer är inte tillgängliga om ett beräknat mått skapas från Workspace (till skillnad från när det skapas från [!UICONTROL Components > filters]). Exempel: [!UICONTROL IP Address].
 
 ## Komponenter > Datumintervall
 
-* Anpassade datumintervall stöds inte [!UICONTROL This day last year], [!UICONTROL This day last month], osv.
+* Anpassade datumintervall stöder inte [!UICONTROL This day last year], [!UICONTROL This day last month] osv.
 
 
 ## Komponenter > Rapportinställningar
 
-* Vissa av inställningarna på [!UICONTROL Report Settings] sidan gäller inte. Analysis Workspace använder bara [!UICONTROL Language/Currency/Encoding] inställningarna längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding]och [!UICONTROL CSV Separator Character].
+* Vissa av inställningarna på sidan [!UICONTROL Report Settings] gäller inte. Analysis Workspace använder bara inställningarna [!UICONTROL Language/Currency/Encoding] längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding] och [!UICONTROL CSV Separator Character].
 

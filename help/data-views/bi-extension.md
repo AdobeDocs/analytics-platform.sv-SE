@@ -16,9 +16,9 @@ ht-degree: 0%
 
 {{select-package}}
 
-The [!DNL Customer Journey Analytics BI extension] aktiverar SQL-åtkomst till [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableu eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
+[!DNL Customer Journey Analytics BI extension] aktiverar SQL-åtkomst till de [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableu eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
 
-Adobe Experience Platform [Frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. Med [!DNL Customer Journey Analytics BI extension] aktiverad, funktionaliteten hos [!DNL Query Service] utökas så att du kan se datavyer i Customer Journey Analytics som tabeller eller vyer i en [!DNL Query Service] session. Detta resulterar i att verktyg för affärsinformation som använder [!DNL Query Service] som PostgresSQL-gränssnittet har en smidig fördel av den utökade funktionaliteten.
+Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina datavyer i Customer Journey Analytics som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
 
 De viktigaste fördelarna är:
 
@@ -36,14 +36,14 @@ Om du vill använda den här funktionen måste du ha:
 * Beviljad produktadministratörsåtkomst till Customer Journey Analytics så att du kan visa, redigera, uppdatera eller ta bort anslutningar och datavyer.
 * Beviljad åtkomst till de datavyer som du vill komma åt.
 * Beviljade åtkomst till CJA BI-tillägget.
-* Använd förfallodatum för ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. The [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för inloggningsuppgifter eller ej utgångsdatum.
+* Använd förfallodatum för autentiseringsuppgifter som inte förfaller för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. Guiden [Autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för autentiseringsuppgifter eller ej förfallande autentiseringsuppgifter.
 
-Se [Åtkomstkontroll för kundresa](../technotes/access-control.md) för mer information, särskilt [Ytterligare behörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics behörigheter i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
+Mer information finns i [Åtkomstkontroll för kundresa](../technotes/access-control.md), särskilt [Tilläggsbehörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Användning
 
-Använd [!DNL Customer Journey Analytics BI extension] kan du antingen använda SQL direkt eller använda dra och släpp-funktionen som finns i det specifika BI-verktyget.
+Om du vill använda funktionen [!DNL Customer Journey Analytics BI extension] kan du antingen använda SQL direkt eller använda dra och släpp-funktionen som är tillgänglig i det specifika BI-verktyget.
 
 ### SQL
 
@@ -53,13 +53,13 @@ Du kan använda funktionerna direkt i SQL-satser med antingen Frågeredigeraren 
 
 I Adobe Experience Platform:
 
-1. Välj **[!UICONTROL ** Frågor **]** från **[!UICONTROL ** DATAHANTERING **]** till vänster.
+1. Välj **[!UICONTROL ** Frågor **]** från **[!UICONTROL ** DATAHANTERING **]** i den vänstra listen.
 
 1. Välj ![Skapa fråga](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Skapa fråga **]**.
 
 1. Välj `cja` **[!UICONTROL ** Databas **]**.
 
-1. Om du vill köra frågan skriver du SQL-satsen och väljer ![Spela upp](assets/Smock_Play_18_N.svg) eller tryck på `[SHIFT]` + `[ENTER]`).
+1. Om du vill köra frågan skriver du SQL-satsen och väljer knappen ![Spela upp](assets/Smock_Play_18_N.svg) (eller trycker på `[SHIFT]` + `[ENTER]`).
 
 +++
 
@@ -68,13 +68,13 @@ I Adobe Experience Platform:
 
 1. Söka efter och kopiera dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** från vänster räl (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL ** Referenser **]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja` **[!UICONTROL ** Databas **]**.
 
-   1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i **[!UICONTROL ** PSQL, kommando **]** -avsnitt.
+   1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i avsnittet **[!UICONTROL ** PSQL-kommando **]**.
 
 1. Öppna ett kommando eller ett terminalfönster.
 
@@ -82,53 +82,53 @@ I Adobe Experience Platform:
 
 +++
 
-Se [Användargränssnittshandbok för frågeredigeraren](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) för mer information.
+Mer information finns i [Användargränssnittsguiden för frågeredigeraren](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide).
 
 
 ### BI-verktyg
 
-För närvarande är [!DNL Customer Journey Analytics BI extension] stöds och testas endast för Power BI och Tableau. Andra BI-verktyg som använder PSQL-gränssnittet kan också fungera, men stöds ännu inte officiellt.
+För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension] endast för Power BI och Tableau. Andra BI-verktyg som använder PSQL-gränssnittet kan också fungera, men stöds ännu inte officiellt.
 
 +++ Power BI
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** från vänster räl (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL ** Referenser **]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja` **[!UICONTROL ** Databas **]**.
 
-   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) för att kopiera alla Postgres-autentiseringsparametrar ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username]och andra) vid behov inom Power BI.
+   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) vid behov i Power BI.
 
 1. I Power BI:
 
    1. I huvudfönstret väljer du **[!UICONTROL ** Hämta data **]** i det övre verktygsfältet.
 
-   1. Välj **[!UICONTROL More...]** till vänster.
+   1. Välj **[!UICONTROL More...]** i den vänstra listen.
 
-   1. I **Hämta data** skärm, sök efter `PostgresSQL` och väljer **[!UICONTROL ** PostgresSQL-databas **]** från listan.
+   1. På skärmen **Hämta data** söker du efter `PostgresSQL` och väljer **[!UICONTROL ** PostgresSQL-databasen **]** i listan.
 
-   1. I **[!UICONTROL ** PostSQL-databas **]** dialog:
+   1. I dialogrutan **[!UICONTROL ** PostProgressSQL-databas **]**:
 
-      1. Klistra in **[!UICONTROL ** Värd **]** parameter från Experience Platform Queries [!UICONTROL Credentials] i  **[!UICONTROL ** Server **]** textfält.
+      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Server **]**.
 
-      1. Klistra in **[!UICONTROL ** Databas **]** parameter från Experience Platform Queries [!UICONTROL Credentials] i **[!UICONTROL ** Databas **]** textfält.
+      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Database **]** .
 
-         Lägg till `?FLATTEN` till **[!UICONTROL ** Databas **]** parameter, så den ser ut som `prod:cja?FLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) för mer information.
+         Lägg till `?FLATTEN` i parametern **[!UICONTROL ** Database **]**, så den blir som `prod:cja?FLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
-      1. När du uppmanas till detta **[!UICONTROL Data Connectivity]** läge, välja **[!UICONTROL DirectQuery]**.
+      1. Välj **[!UICONTROL DirectQuery]** när du uppmanas till **[!UICONTROL Data Connectivity]**-läge.
 
-      1. Du uppmanas att ange **[!UICONTROL Username]** och **[!UICONTROL Password]**. Använd likvärdiga parametrar från Experience Platform-frågor [!UICONTROL Credentials].
+      1. Du uppmanas att ange **[!UICONTROL Username]** och **[!UICONTROL Password]**. Använd motsvarande parametrar från Experience Platform Queries [!UICONTROL Credentials].
 
 
-   1. När inloggningen är klar visas datavytabellerna i Customer Journey Analytics i Power BI:er **[!UICONTROL **&#x200B;Överblick **]**.
+   1. När inloggningen är klar visas datavytabellerna i Customer Journey Analytics i Power BI:er **[!UICONTROL ** Navigator **]**.
 
-   1. Markera de datavytabeller som du vill använda och markera **[!UICONTROL ** Läs in **]**.
+   1. Markera de datavytabeller som du vill använda och välj **[!UICONTROL ** Läs in **]**.
 
    Alla dimensioner och mätvärden som är kopplade till en eller flera markerade tabeller visas i den högra rutan, redo att användas i dina visualiseringar.
 
-   Se [Anslut Power BI till frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) för mer information.
+   Mer information finns i [Ansluta Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
 
 +++
 
@@ -136,61 +136,61 @@ För närvarande är [!DNL Customer Journey Analytics BI extension] stöds och t
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** från vänster räl (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL ** Referenser **]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj ` cja` **[!UICONTROL ** Databas **]**.
 
-   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) för att kopiera alla Postgres-autentiseringsparametrar ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], och andra) när det behövs i Tablet.
+   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) vid behov i Tablet.
 
 1. I tabell:
 
-   1. Välj **[!UICONTROL ** Mer **]** från **[!UICONTROL ** Till en server **]** till vänster.
+   1. Välj **[!UICONTROL ** Mer **]** från **[!UICONTROL ** Till en server **]** i den vänstra listen.
 
-   1. Välj **[!UICONTROL ** PostgresSQL **]** från listan.
+   1. Välj **[!UICONTROL ** PostgresSQL **]** i listan.
 
-   1. I [!UICONTROL PostgresSQL] dialog:
+   1. I dialogrutan [!UICONTROL PostgresSQL]:
 
-      1. Klistra in **[!UICONTROL ** Värd **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Server **]** textfält.
+      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Server **]**.
 
-      1. Klistra in **[!UICONTROL ** Port **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Port **]** textfält.
+      1. Klistra in parametern **[!UICONTROL ** Port **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Port **]**.
 
-      1. Klistra in **[!UICONTROL ** Databas **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Databas **]** textfält.
+      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Database **]** .
 
-         Lägg till `%3FFLATTEN` till **[!UICONTROL ** Databas **]** parameter, så den ser ut som `prod:cja%3FFLATTEN` till exempel. Se [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) för mer information.
+         Lägg till `%3FFLATTEN` i parametern **[!UICONTROL ** Database **]**, så den blir som `prod:cja%3FFLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
-      1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** från **[!UICONTROL ** Autentisering **]** lista.
+      1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i listan **[!UICONTROL ** Autentisering **]**.
 
-      1. Klistra in **[!UICONTROL ** Användarnamn **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Användarnamn **]** textfält.
+      1. Klistra in parametern **[!UICONTROL ** Användarnamn **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Användarnamn **]**.
 
-      1. Klistra in **[!UICONTROL ** Lösenord **]** parameter från Experience Platform Queries [!UICONTROL Credentials] till **[!UICONTROL ** Lösenord **]** textfält.
+      1. Klistra in parametern **[!UICONTROL ** Password **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Password **]** .
 
       1. Välj **[!UICONTROL ** Logga in **]**.
 
-   1. datavyer i Customer Journey Analytics visas som tabeller i **[!UICONTROL ** Tabell **]** lista.
+   1. Datavyer i Customer Journey Analytics visas som tabeller i listan **[!UICONTROL ** Tabell **]**.
 
    1. Dra de tabeller som du vill använda på arbetsytan.
 
    Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
 
-   Se [Koppla tabell till frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) för mer information.
+   Mer information finns i [Ansluta tabell till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
 +++
 
-Se [Anslut klienter till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) om du vill ha en översikt över och mer information om de olika verktygen.
+Se [Ansluta klienter till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) för en översikt och mer information om de olika verktygen som finns.
 
 ## Funktionalitet
 
-Som standard har datavyerna ett tabellsäkert namn som genereras utifrån det egna namnet. Datavy med namnet [!UICONTROL My Web Data View] har vynamnet `my_web_data_view`. Du kan definiera ett föredraget namn som ska användas i BI-verktyget för datavyn. Se [Inställningar för datavy](create-dataview.md#settings) för mer information.
+Som standard har datavyerna ett tabellsäkert namn som genereras utifrån det egna namnet. Datavyn [!UICONTROL My Web Data View] har till exempel vynamnet `my_web_data_view`. Du kan definiera ett föredraget namn som ska användas i BI-verktyget för datavyn. Mer information finns i [Datavy settings](create-dataview.md#settings).
 
-Om du vill använda ID:n för datavyn som tabellnamn kan du lägga till de valfria `CJA_USE_IDS` ange till ditt databasnamn vid anslutning. Till exempel: `prod:cja?CJA_USE_IDS` visar datavyer med namn som `dv_ABC123`.
+Om du vill använda ID:n för datavyn som tabellnamn kan du lägga till den valfria inställningen `CJA_USE_IDS` i databasnamnet när du ansluter. `prod:cja?CJA_USE_IDS` visar till exempel dina datavyer med namn som `dv_ABC123`.
 
 ### Datastyrning
 
 De datastyrningsrelaterade inställningarna i Customer Journey Analytics ärvs från Adobe Experience Platform. Integrationen mellan Customer Journey Analytics och Adobe Experience Platform datastyrning möjliggör märkning av känsliga uppgifter från Customer Journey Analytics och tillämpning av integritetspolicyer.
 
-Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Det innebär att data efterfrågas med [!DNL Customer Journey Analytics BI extension] visa lämpliga varningar eller fel när de inte följer de definierade sekretessetiketterna och principerna.
+Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Data som efterfrågas med [!DNL Customer Journey Analytics BI extension] visar därför lämpliga varningar eller fel när de inte följer definierade sekretessetiketter och principer.
 
 ### Visa datavyer
 
@@ -207,11 +207,11 @@ prod:all=> \dv
 
 ### Kapslade kontra separerade
 
-Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integreringen har även stöd för `FLATTEN` alternativ. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Se [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) för mer information.
+Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integrationen stöder även alternativet `FLATTEN`. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Mer information finns i [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 ### SQL som stöds
 
-Se [SQL-referens för frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/overview) för fullständig referens om vilken typ av SQL som stöds.
+Mer information om vilken typ av SQL som stöds finns i [SQL-referens för frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/overview).
 
 Se tabellen nedan för exempel på den SQL du kan använda.
 
@@ -220,15 +220,15 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 | Mönster | Exempel |
 |---|---|
 | Schemaidentifiering | <pre>VÄLJ * FRÅN DV1 DÄR 1=0</pre> |
-| Rankad eller uppdelad | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  filterId = &#39;12345&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; OCH<br/>  AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GRUPPERA EFTER NEDRE1</pre> |
-| `HAVING` sats | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>MED m1 > 100</pre> |
-| Distinkt, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1</pre><pre>VÄLJ dim1 AS dv1<br/>FRÅN DV1<br/>DÄR \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\&#39; &lt; &#39;2022-01-02&#39;<br/>GRUPPERA EFTER NEDRE1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
-| Måttsummor | <pre>VÄLJ SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</pre> |
-| Flera dimensioner<br/>uppdelning<br/>och förstklassiga | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 1, 2<br/>BESTÄLL AV 1, 2</pre><pre>VÄLJ DISTINCT dim1, dim2<br/>FRÅN DV1</pre> |
-| Delmarkera:<br/>Filtrera ytterligare<br/>resultat | <pre>SELECT dim1, m1<br/>FRÅN (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</br>  GRUPPERA EFTER NEDRE1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Delmarkera:<br/>Fråga tvärs över<br/>datavyer | <pre>SELECT key, SUM(m1) AS total<br/>FRÅN (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FRÅN DV1<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FRÅN DV2<br/>  DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  GRUPPERA EFTER NEDRE2<br/>GROUP BY-tangenten<br/>BESTÄLL EFTER Summa</pre> |
-| Delmarkera: <br/>Källa i lager, <br/>filtrering, <br/>och aggregering | Lager med delmarkeringar:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FRÅN (<br/>  SELECT \_.dim1,\_.m1<br/>  FRÅN (<br/>    VÄLJ \* FRÅN DV1<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>  ) \_<br/>  WHERE \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPPERA MED 1<br/>BESTÄLL EFTER Summa</pre><br/>Lager med CTE WITH:<br/><pre>MED rader AS (<br/>  MED \_ AS (<br/>    SELECT * FROM data_ares<br/>    DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39;<br/>  )<br/>  VÄLJ \_.item, \_.units FROM \_<br/>  DÄR \_.item INTE ÄR NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FRÅN rader DÄR rader.objekt i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
-| Markerar var<br/>mätvärden kommer före<br/> eller är blandade med<br/>dimensionerna | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FRÅN DV1<br/>DÄR \&quot;tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GRUPPERA MED 2</pre> |
+| Rankad eller uppdelad | <pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/> filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; AND<br/> AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;&#39;, &#39;Z&#39;)<br/>GRUPP BY dim1</pre> |
+| `HAVING`-sats | <pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;202-01-02&#39;<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
+| Distinkta, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 SOM dv1<br/>FRÅN dv1<br/>WHERE \`timestamp\` MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>VÄLJ dim1 SOM dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMLIMIN IT 15</pre> |
+| Måttsummor | <pre>VÄLJ SUM(metric1) SOM m1<br/>FRÅN dv1<br/>WHERE \`timestamp\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</pre> |
+| Flerdimensions<br/>uppdelningar<br/>och toppdistinktioner | <pre>VÄLJ dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>VÄLJ dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>VÄLJ DISTINCT dim1, dim2<br/>FROM dv1</pre> |
+| Delmarkera:<br/>Filtrera ytterligare<br/>resultat | <pre>VÄLJ dim1, m1<br/>FROM (<br/> SELECT dim1, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br> GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
+| Delmarkera:<br/>Frågar över<br/>datavyer | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/> SELECT dim1 AS key, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;{3 <br/> GROUP BY dim1<br/><br/> UNION<br/><br/> SELECT dim2 AS key, SUM(m1) AS m1<br/> FROM dv2<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/> GROUP BY dim2 <br/>GRUPPERA EFTER nyckel<br/>BESTÄLL EFTER summa</pre> |
+| Delmarkera: <br/>Källa i lager, <br/>filtrering, <br/> och aggregering | Lager med delmarkeringar:<br><pre>MARKERA rows.dim1, SUM(rows.m1) SOM total<br/>FROM (<br/> SELECT \_.dim1,\_.m1<br/> FROM (<br/>)    VÄLJ \* FRÅN DV1<br/>    DÄR \`tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/> ) \_<br/> DÄR \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPP BY 1<br/>BESTÄLL EFTER</pre><br/>Lager med CTE WITH:<br/><pre>MED rader SOM (<br/>) MED \_ AS (<br/>)    SELECT * FROM data_ares <br/>    DÄR \`tidsstämpel\` MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39;<br/> )<br/> MARKERA \_.item, \_.units FROM \_<br/> DÄR \_.item INTE ÄR NULL<br/>)<br/>MARKERA rader.item, SUTENT M(rows.units) AS units<br/>FROM rows WHERE rows.item in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| Väljer var <br/>måtten kommer före<br/> eller blandas med <br/>måtten | <pre>VÄLJ SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;202-01-02&#39;<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
 
@@ -246,21 +246,21 @@ De mätvärden som är tillgängliga är:
 * Definieras i datavyn.
 * Beräknade mått som är kompatibla med datavyn som användaren har åtkomst till.
 
-Du väljer ett mått med dess ID som omsluts av en `SUM(metric)` -uttryck på samma sätt som du gör med andra SQL-källor.
+Du väljer ett mått med dess ID som omsluts av ett `SUM(metric)`-uttryck på samma sätt som du gör med andra SQL-källor.
 
 Du kan använda
 
-* `SELECT COUNT(*)` eller `COUNT(1)` för att få förekomstmåtten.
-* `SELECT COUNT(DISTINCT dimension)` eller `SELECT APPROX_COUNT_DISTINCT(dimension)` för att räkna de ungefärliga distinkta värdena för en dimension. Mer information finns i [Räkna distinkta värden](#counting-distinct-values).
-* [Infogade beräkningar](#inline-calculations) för att kombinera mätvärden i farten och/eller göra matematik på dem.
+* `SELECT COUNT(*)` eller `COUNT(1)` om du vill hämta förekomstmått.
+* `SELECT COUNT(DISTINCT dimension)` eller `SELECT APPROX_COUNT_DISTINCT(dimension)` om du vill räkna de ungefärliga distinkta värdena för en dimension. Se information i [Räkna distinkta värden](#counting-distinct-values).
+* [Infogade beräkningar](#inline-calculations) om du vill kombinera mätvärden i farten och/eller göra matematik på dem.
 
 #### Räkna distinkta värden
 
-På grund av det underliggande sättet som Customer Journey Analytics fungerar på är den enda dimension som du kan få ett exakt distinkt antal för `adobe_personid` dimension. Följande SQL-satser `SELECT COUNT(DISTINCT adobe_personid)` eller `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` returnerar värdet för standardpersonmåttet, vilket är antalet distinkta personer. För andra dimensioner returneras ett ungefärligt distinkt antal.
+På grund av den underliggande karaktären hos hur Customer Journey Analytics fungerar är den enda dimensionen du kan få ett exakt distinkt antal för dimensionen `adobe_personid`. Följande SQL-satser `SELECT COUNT(DISTINCT adobe_personid)` eller `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` returnerar värdet för standardpersonmåttet, vilket är antalet distinkta personer. För andra dimensioner returneras ett ungefärligt distinkt antal.
 
 #### Villkorliga mått
 
-Du kan bädda in en `IF` eller `CASE` -satsen i `SUM` eller `COUNT` funktioner för att lägga till ytterligare filtrering som är specifik för ett markerat mätvärde. Att lägga till dessa satser påminner om att tillämpa ett filter på en måttkolumn i en arbetsyterapporttabell.
+Du kan bädda in en `IF`- eller `CASE`-sats i funktionerna `SUM` eller `COUNT` för att lägga till ytterligare filtrering som är specifik för ett markerat mätresultat. Att lägga till dessa satser liknar att tillämpa ett filter på en måttkolumn i en Workspace-rapporttabell.
 
 Exempel:
 
@@ -274,14 +274,14 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### Infogade beräkningar
 
-Du kan använda ytterligare matematik för metriska uttryck i `SELECT`. Denna matematik kan användas i stället för att definiera matematiken i ett beräknat mått. I följande tabell visas vilka typer av uttryck som stöds.
+Du kan använda ytterligare matematik för måttuttryck i `SELECT`. Denna matematik kan användas i stället för att definiera matematiken i ett beräknat mått. I följande tabell visas vilka typer av uttryck som stöds.
 
 | Operatör eller funktion | Information |
 |---|---|
-| `+`, `-`, `*`, `/`och `%` | Lägg till, subtrahera, multiplicera, dela och modulera/rest |
+| `+`, `-`, `*`, `/` och `%` | Lägg till, subtrahera, multiplicera, dela och modulera/rest |
 | `-X` eller `+X` | Ändra tecknet eller ett mått där X är måttuttrycket |
 | `PI()` | π konstant |
-| `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP`, `LN`, `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES`, `RADIANS`, `SIN`, `COS`, `TAN`, `ACOS`, `ASIN`, `ATAN`, `COSH`, `SINH`och `TANH` | Unära matematiska funktioner |
+| `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP`, `LN`, `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES`, `RADIANS`, `SIN`, `COS`, `TAN`, `ACOS`, `ASIN`, `ATAN`, `COSH`, `SINH` och `TANH` | Unära matematiska funktioner |
 | `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Binära matematiska funktioner |
 
 {style="table-layout:auto"}
@@ -290,11 +290,11 @@ Du kan använda ytterligare matematik för metriska uttryck i `SELECT`. Denna ma
 
 #### Tidsstämpel
 
-The `timestamp` specialkolumn används för att ange datumintervall för frågan. Ett datumintervall kan definieras med en `BETWEEN` uttryck eller par med `timestamp` `>`, `>=`, `<`, `<=` kontroller `AND`tillsammans.
-The `timestamp` är valfritt och om inget fullständigt intervall anges används standardvärdena:
+Specialkolumnen `timestamp` används för att ange datumintervall för frågan. Ett datumintervall kan definieras med ett `BETWEEN`-uttryck eller ett par av `timestamp` `>`, `>=`, `<`, `<=` kontroller `AND` tillsammans.
+`timestamp` är valfritt och om inget fullständigt intervall anges används standardvärden:
 
 * Om bara ett minimum anges (`timestamp > X` eller ` timestamp >= X`) är intervallet från X till nu.
-* Om bara ett maxvärde anges (`timestamp < X` eller `timestamp <= X`) är intervallet från X minus 30 dagar till X.
+* Om bara ett max anges (`timestamp < X` eller `timestamp <= X`) är intervallet från X minus 30 dagar till X.
 * Om inget anges är intervallet från och med nu minus 30 dagar.
 
 Tidsstämpelintervallet konverteras till ett globalt datumintervallfilter i RankedRequest.
@@ -302,39 +302,39 @@ Tidsstämpelfältet kan också användas i datum/tid-funktioner för att analyse
 
 #### Datumintervall
 
-The `daterange` specialspalt fungerar ungefär som `timestamp`; filtreringen är dock begränsad till hela dagar. The `daterange` är också valfritt och har samma intervallstandard som `timestamp`.
-The `daterange` -fältet kan också användas i datum/tid-funktioner för att analysera eller korta av händelsedatumet.
+Specialkolumnen `daterange` fungerar på ungefär samma sätt som `timestamp`, men filtreringen är begränsad till fullständiga dagar. `daterange` är också valfritt och har samma standardvärden som `timestamp`.
+Fältet `daterange` kan också användas i datum/tid-funktioner för att analysera eller korta av händelsedatumet.
 
-The `daterangeName` specialkolumner kan användas för att filtrera frågan med ett namngivet datumintervall som `Last Quarter`.
+Specialkolumnen `daterangeName` kan användas för att filtrera frågan med ett namngivet datumintervall som `Last Quarter`.
 
 >[!NOTE]
 >
->Power BI stöds inte `daterange` mätvärden som är mindre än en dag (timme, 30 minuter, 5 minuter osv.).
+>Power BI stöder inte `daterange`-mått som är mindre än en dag (timme, 30 minuter, 5 minuter osv.).
 
 
 #### Filter-ID
 
-The `filterId` specialkolumnen är valfri och används för att tillämpa ett externt definierat filter på frågan. Att använda ett externt definierat filter på en fråga liknar att dra ett filter på en panel i Arbetsytan. Flera filter-ID kan användas av `AND`-Jag tar dem.
+Specialkolumnen `filterId` är valfri och används för att tillämpa ett externt definierat filter på frågan. Att använda ett externt definierat filter på en fråga liknar att dra ett filter på en panel i Workspace. Flera filter-ID:n kan användas av `AND`.
 
-Tillsammans med `filterId`kan du använda `filterName` om du vill använda ett filtrets namn i stället för ID.
+Tillsammans med `filterId` kan du använda `filterName` för att använda ett filternamn i stället för ID.
 
 ### Where-sats
 
-The `WHERE` -satsen hanteras i tre steg:
+Satsen `WHERE` hanteras i tre steg:
 
-1. Sök efter datumintervallet på menyn `timestamp`, `daterange`, eller `daterangeName` specialfält.
+1. Hitta datumintervallet från specialfälten `timestamp`, `daterange` eller `daterangeName`.
 
-1. Sök efter externt definierade `filterId`s eller `filterName`s som ska tas med i filtreringen.
+1. Sök efter externt definierade `filterId` eller `filterName` som ska inkluderas i filtreringen.
 
 1. Omvandla de återstående uttrycken till ad hoc-filter.
 
-Hanteringen görs genom att den första nivån i `AND`s i `WHERE` -sats. Varje översta nivå `AND`-ed-uttrycket måste matcha något av ovanstående. Allt som är djupare än den första nivån `AND`s, eller, om `WHERE` -sats använder `OR`s på den översta nivån hanteras som ett ad hoc-filter.
+Hanteringen görs genom att tolka den första nivån på `AND` i `WHERE` -satsen. Varje `AND`-ed-uttryck på den översta nivån måste matcha något av ovanstående. Allt som är större än den första nivån i `AND` eller, om `WHERE`-satsen använder `OR` på den översta nivån, hanteras som ett ad hoc-filter.
 
 ### Sorteringsordning
 
-Som standard sorteras resultatet i frågan efter det första valda måttet i fallande ordning. Du kan skriva över standardsorteringsordningen genom att ange `ORDER BY ... ASC` eller `ORDER BY ... DESC`. Om du `ORDER BY`måste du ange `ORDER BY` på det första valda måttet.
+Som standard sorteras resultatet i frågan efter det första valda måttet i fallande ordning. Du kan skriva över standardsorteringsordningen genom att ange `ORDER BY ... ASC` eller `ORDER BY ... DESC`. Om du använder `ORDER BY` måste du ange `ORDER BY` för det första valda måttet.
 
-Du kan också vända ordningen med `-` (minus) framför måttet. Båda programsatserna nedan resulterar i samma ordning:
+Du kan också vända ordningen genom att använda `-` (minus) framför måttet. Båda programsatserna nedan resulterar i samma ordning:
 
 ```sql
 ORDER BY metric1 ASC
@@ -348,23 +348,23 @@ ORDER BY -metric1 DESC
 
 | Funktion | Exempel | Information |
 |---|---|---|
-| [Kast](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` eller <br/> `` `timestamp`::string `` | Typdatatypsbyte stöds inte för närvarande, men inget fel genereras. The `CAST` funktionen ignoreras. |
-| [Tidsstämpel](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Tolka en tidssträng som en tidsstämpel för användning i en `WHERE` -sats. |
-| [Till tidsstämpel](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Tolka en tidssträng som en tidsstämpel för användning i en `WHERE` -sats, om du vill ange ett format för den tidssträngen. |
-| [Datum](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Tolka en datumsträng som en tidsstämpel som ska användas i en `WHERE` -sats. |
-| [Till-datum](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | Tolka en datumsträng som en tidsstämpel som ska användas i en `WHERE` -sats, om du vill ange ett format för den datumsträngen. |
+| [Avgjutning](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` eller <br/> `` `timestamp`::string `` | Typdatatypsbyte stöds inte för närvarande, men inget fel genereras. Funktionen `CAST` ignoreras. |
+| [Tidsstämpel](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Tolka en tidssträng som en tidsstämpel som ska användas i en `WHERE`-sats. |
+| [Till tidsstämpel](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Tolka en tidssträng som en tidsstämpel som ska användas i en `WHERE`-sats och ange eventuellt ett format för den tidssträngen. |
+| [Datum](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Tolka en datumsträng som en tidsstämpel som ska användas i en `WHERE`-sats. |
+| [Till datum](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | Tolka en datumsträng som en tidsstämpel som ska användas i en `WHERE`-sats och ange eventuellt ett format för den datumsträngen. |
 
 {style="table-layout:auto"}
 
 ### Funktionsstöd för Dimension
 
-De här funktionerna kan användas på dimensioner i `SELECT`, `WHERE` eller i villkorsstyrda värden.
+Dessa funktioner kan användas för dimensioner i `SELECT`, `WHERE` eller i villkorsstyrda mått.
 
 **Strängfunktioner**
 
 | Funktion | Exempel | Information |
 |---|---|---|
-| [Lägre](https://spark.apache.org/docs/latest/api/sql/index.html#lower) | ``SELECT LOWER(name) AS lower_name`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. |
+| [Nedre](https://spark.apache.org/docs/latest/api/sql/index.html#lower) | ``SELECT LOWER(name) AS lower_name`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. |
 
 {style="table-layout:auto"}
 
@@ -381,8 +381,8 @@ De här funktionerna kan användas på dimensioner i `SELECT`, `WHERE` eller i v
 | [Kvartal](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. |
 | [Timme](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. Använd artikel-ID i stället för värdet eftersom du behöver talet, inte det egna namnet. |
 | [Minut](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. |
-| [Extract](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. Använd artikel-ID i stället för värdet för vissa delar av den här funktionen eftersom du behöver talet och inte det egna namnet.<br/>Följande delar stöds:<br>- Nyckelord: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Strängar:  `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, eller `'MINUTE'`. |
-| [Datum (del)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. Använd artikel-ID i stället för värdet för vissa delar av den här funktionen eftersom du behöver talet och inte det egna namnet.<br/>Följande strängdelar stöds: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, eller `'MINUTE'`. |
-| [Datum (trunkerat)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet.<br/>Stränggranulariteter som stöds är: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, eller `'MINUTE'`. |
+| [Extrahera](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. Använd artikel-ID i stället för värdet för vissa delar av den här funktionen eftersom du behöver talet och inte det egna namnet.<br/>Delar som stöds är:<br>- Nyckelord: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Strängar: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` eller  `'MINUTE'`. |
+| [Datum (del)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. Använd artikel-ID i stället för värdet för vissa delar av den här funktionen eftersom du behöver talet och inte det egna namnet.<br/>Följande strängdelar stöds: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, eller `'MINUTE'`. |
+| [Datum (trunkerat)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet.<br/>Stränggranulariteter som stöds är: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` eller `'MINUTE'`. |
 
 {style="table-layout:auto"}

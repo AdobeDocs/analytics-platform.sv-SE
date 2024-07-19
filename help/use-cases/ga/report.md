@@ -32,7 +32,7 @@ Genom att använda dimensionen&quot;Anledning till anrop&quot; kan du få tips p
 
 Du kan se vilka produkter som orsakar de flesta samtalen till ditt callcenter och hur många kunder som har gjort dessa samtal. Bubbeldiagrammet visar att 20 000 personer ringde, spenderade mer än 4 timmar och 30 minuter och returnerade 33 enheter av produkten &quot;Men&#39;s short Sleeve Tee&quot;.
 
-![Samtalsorsak](../assets/call-reason.png)
+![Anropsorsak](../assets/call-reason.png)
 
 Om du använder en dimensionsuppdelning av &#39;Anropsorsak&#39; visas dimensionsobjektet &quot;Skadad produkt&quot; i exemplet. Nästa steg är att kontakta avdelningen för kvalitetskontroll och se varför kunderna har fått skadade T-shirts.
 
@@ -40,7 +40,7 @@ Du kan se vilka webbsidor som ledde samtal till callcentret. I den här rapporte
 
 I följande exempel visas att sidorna&quot;Kundvagn&quot; och&quot;Kassainformation&quot; styr de flesta samtal.
 
-![Dela sidor](../assets/contributing-pages.png)
+![Deltar sidor](../assets/contributing-pages.png)
 
 Med kohorttabellen kan du se hur lång tid det normalt tar för användare att ringa callcentret efter att de har besökt webbplatsen. I följande exempel visas att den genomsnittliga tiden för exempeldatauppsättningen är mellan tre och fyra veckor.
 
@@ -50,7 +50,7 @@ Med kohorttabellen kan du se hur lång tid det normalt tar för användare att r
 
 Med Customer Journey Analytics kan ni använda sofistikerade attribueringsmodeller på flerkanalsdata. I följande exempel kan du se en jämförelse mellan hur man använder sista handen, första beröringen, u-formad och algoritmisk attribuering av intäkterna för grupperingsdimensionen för Google Analytics-kanalen.
 
-![Marknadsattribuering](../assets/mktg-attribution.png)
+![Marknadsföringsattribuering](../assets/mktg-attribution.png)
 
 Med hjälp av beräknade mätvärden kan du använda attribueringen på dina webbintäkter, intäkter från mobilappar och till och med ta bort produktreturer. Resultatet blir en verklig nettointäkt för varje marknadsföringskanal.
 
@@ -62,7 +62,7 @@ Med Attribution IQ kan du också filtrera dina data. Du kan bara se attribuering
 
 Du kan också tilldela webb- och appintäkter till ditt Google Ad Content. Datauppsättningens exempel genererade mer intäkter från att mobilappen drivs av Google Ads online än från webben. Genom att sortera annonser efter webb- och appintäkter får ni en annan bild av vad era främsta Google-annonser var.
 
-![Google och](../assets/google-ad.png)
+![Google annons](../assets/google-ad.png)
 
 Genom att kombinera datauppsättningar i Customer Journey Analytics kan du i det här exemplet se att onlineannonser har någon effekt på produkter som köpts i din mobilapp. I följande visualisering visas att intäkterna från Google Ads för mobilappar utgör en extra kostnad på 14 000 - 15 000 dollar jämfört med bara webben.
 

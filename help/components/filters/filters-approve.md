@@ -19,7 +19,7 @@ Så här flaggar du ett filter som godkänt:
 
 1. Markera kryssrutan till vänster om filtertiteln i Filterhanteraren.
 
-1. Klicka **[!UICONTROL Approve]** i aktivitetsfältet för filterhantering.
+1. Klicka på **[!UICONTROL Approve]** i aktivitetsfältet för filterhantering.
 
 1. Överväg att dela godkända filter med din organisation.
 

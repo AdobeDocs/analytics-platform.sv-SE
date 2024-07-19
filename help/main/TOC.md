@@ -57,9 +57,9 @@ ht-degree: 8%
    + [Utveckling från Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Användarhandbok för Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
-+ Inmatning av data {#cja-data-ingestion}
++ Datainmatning {#cja-data-ingestion}
    + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
-   + Infoga och använda snabbstartguider{#ingest-use-guides}
+   + Infoga och använd snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Adobe Experience Platform Edge Network {#edge-network}
          + [Webb-SDK](../data-ingestion/aepwebsdk.md)
@@ -67,7 +67,7 @@ ht-degree: 8%
          + [Server-API](../data-ingestion/serverapi.md)
       + [Batchdata](../data-ingestion/batch.md)
       + [Strömmande data](../data-ingestion/streaming.md)
-      + [Källkopplingar](../data-ingestion/sources.md)
+      + [Source-anslutningar](../data-ingestion/sources.md)
 
 + Anslutningar {#cja-connections}
    + [Anslutningar - översikt](../connections/overview.md)
@@ -97,7 +97,7 @@ ht-degree: 8%
    + [Härledda fält](../data-views/derived-fields/derived-fields.md)
    + [Etiketter och profiler](../data-views/data-governance.md)
 
-+ Arbetsyteprojekt {#cja-workspace}
++ Workspace-projekt {#cja-workspace}
    + [Översikt över Analysis Workspace](../analysis-workspace/home.md)
    + [Utför grundläggande analys](../analysis-workspace/perform-basic-analysis.md)
    + [Avancerad analys](../analysis-workspace/perform-adv-analysis.md)
@@ -106,8 +106,8 @@ ht-degree: 8%
       + [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
       + [Innehållsförteckning för projekt](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
-      + Mappar på arbetsytan {#workspace-folders}
-         + [Om mappar i arbetsytan](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+      + Mappar i Workspace {#workspace-folders}
+         + [Om mappar i Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Ta bort mappar](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Lägg till projekt](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -119,7 +119,7 @@ ht-degree: 8%
    + Visualiseringar {#visualizations}
       + [Visualiseringar - översikt](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](../analysis-workspace/visualizations/t-sync-visualization.md)
-      + Frihandsregister {#freeform-table}
+      + Frihandstabell {#freeform-table}
          + [Frihandsregister](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Skapa hyperlänkar för dimensioner i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
@@ -127,7 +127,7 @@ ht-degree: 8%
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska jämfört med statiska artiklar](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrera och ordna tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Summor för arbetsyta](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
          + [Vad är kohortanalys?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera en kohortanalysrapport](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -208,7 +208,7 @@ ht-degree: 8%
    + Tratt {#funnel}
       + [Bildvy](../guided-analysis/types/friction.md)
       + [Vy över konverteringstrender](../guided-analysis/types/conversion-trends.md)
-   + Effekt {#impact}
+   + Påverkan {#impact}
       + [Versionsvy](../guided-analysis/types/release.md)
       + [Vyn Första användningen](../guided-analysis/types/first-use.md)
    + Kvarhållning {#retention}
@@ -262,7 +262,7 @@ ht-degree: 8%
       + [Operatorer](../components/filters/operators.md)
    + Beräknade mått {#cja-calcmetrics}
       + [Översikt över beräknade mätvärden](../components/calc-metrics/calc-metr-overview.md)
-      + Arbetsflöde för beräknade mätvärden {#cm-workflow}
+      + Arbetsflödet för beräknade mått {#cm-workflow}
          + [Arbetsflöde för beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Hitta mätvärden](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Bygg mätvärden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
@@ -288,7 +288,7 @@ ht-degree: 8%
       + [Hantera datumintervall](../components/date-ranges/manage.md)
       + [Skapa anpassade datumintervall](../components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
-   + Export {#exports}
+   + Exporterar {#exports}
       + [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md)
       + [Hantera platser för molnexport](/help/components/exports/manage-export-locations.md)
@@ -320,12 +320,12 @@ ht-degree: 8%
    + [Visa rapporteringsaktivitet](../reporting-activity-manager/reporting-activity.md)
    + [Avbryt rapporteringsbegäranden](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
-+ Stitlar {#stitching}
++ Stitching {#stitching}
    + [Översikt](../stitching/overview.md)
    + [Skapa och hantera sammanslagna datauppsättningar](../stitching/stitching-ui.md)
    + [Vanliga frågor](../stitching/faq.md)
 
-+ Integreringar med Adobe {#integrations}
++ Adobe-integreringar {#integrations}
    + [Översikt](/help/integrations/overview.md)
    + [Integrera Adobe Analytics](/help/integrations/aa.md)
    + [Integrera mål](/help/integrations/at.md)
@@ -345,7 +345,7 @@ ht-degree: 8%
       + [Infoga Google Analytics historiska data i plattformen](../use-cases/ga/backfill.md)
       + [Konfigurera strömmande Google Analytics-data i plattformen](../use-cases/ga/streaming.md)
       + [Rapport om Google Analytics data i Customer Journey Analytics](../use-cases/ga/report.md)
-   + Intag av data {#data-ingestion}
+   + Inläsning av data {#data-ingestion}
       + [Infoga Marketo Engage data i Adobe Experience Platform och rapportera i Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
       + [Engagera Adobe Experience Platform-målgrupper i Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datavyer {#data-views}
@@ -363,7 +363,7 @@ ht-degree: 8%
    + Flerkanalsdata {#cross-channel}
       + [Analysera data över olika kanaler](../use-cases/cross-channel/cross-channel.md)
       + [Importera callcenter och webbdata](../use-cases/cross-channel/call-center.md)
-   + Adobe Analytics data {#aa-data}
+   + Adobe Analytics-data {#aa-data}
       + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
       + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
    + Komplexa data {#complex-data}
@@ -374,12 +374,12 @@ ht-degree: 8%
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
 
-+ Felsökning {#troubleshooting}
++ Felsökning av {#troubleshooting}
    + [Jämför dina Adobe Analytics-data med Customer Journey Analytics](../troubleshooting/compare.md)
    + [Överensstämmelse i mätvärden och antalet målgruppsmedlemskap mellan CDP och Customer Journey Analytics i realtid](../troubleshooting/consistency-rcdp-cja.md)
    + [Brist på behörigheter](../troubleshooting/lack-of-permissions.md)
 
-+ Tekniska anteckningar {#technotes}
++ Tech notes {#technotes}
    + [Åtkomstkontroll](../technotes/access-control.md)
    + [Datacenter](../technotes/data-centers.md)
    + [Borttagningskonsekvenser](../technotes/deletion.md)
@@ -390,4 +390,4 @@ ht-degree: 8%
    + [Optimera Customer Journey Analytics prestanda](../technotes/optimizing-performance.md)
    + [Visa och hantera användning](../technotes/estimate-usage.md)
 
-+ [CUSTOMER JOURNEY ANALYTICS API](https://developer.adobe.com/cja-apis/docs/)
++ [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

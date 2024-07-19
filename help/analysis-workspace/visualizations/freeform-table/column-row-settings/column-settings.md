@@ -13,7 +13,7 @@ ht-degree: 13%
 
 # [!UICONTROL Column Settings]
 
-[!UICONTROL Column Settings] gör att du kan konfigurera kolumnformatering, som vissa kan vara villkorliga.
+I [!UICONTROL Column Settings] kan du konfigurera kolumnformatering, varav vissa kan vara villkorliga.
 
 Visa en video om rad- och kolumninställningar här:
 
@@ -21,11 +21,11 @@ Visa en video om rad- och kolumninställningar här:
 
 ## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
 
-För åtkomst [!UICONTROL Column Settings], dra en friformstabell till projektet och klicka sedan på inställningsikonen ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i kolumnrubriken.
+Om du vill komma åt [!UICONTROL Column Settings] drar du en frihandstabell till projektet och klickar sedan på inställningsikonen ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i kolumnrubriken.
 
 <img src="./assets/column-settings.png" alt="Kolumninställningarna som visar cellerna Totalt, Tabellceller och Förhandsvisning av tabellceller." width="50%" />
 
-Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara flera kolumner och klicka på inställningsikonen för någon av dessa kolumner. Alla ändringar du gör gäller för alla kolumner där celler är markerade.
+Du kan redigera inställningarna **för flera kolumner samtidigt**. Markera bara flera kolumner och klicka på inställningsikonen för någon av dessa kolumner. Alla ändringar du gör gäller för alla kolumner där celler är markerade.
 
 | Element | Beskrivning |
 | --- | --- |
@@ -56,17 +56,17 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 
 ## Använd en attribueringsmodell som inte är standard {#attribution}
 
-Gör att du kan åsidosätta standardattributmodellen som angetts i [Datavyer](/help/data-views/component-settings/attribution.md).
+Gör att du kan åsidosätta standardattributmodellen som angetts i [datavyer](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
 >Tänk på följande när du uppdaterar en komponents attribuering till en icke-standardattribueringsmodell:
 >
->* **När komponenten används i en rapport med *en dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.
+>* **När komponenten används i en rapport med *en enda dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.
 >
->* **När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering bevarar allokeringsmodellen när en icke-standardattribueringsmodell används.
+>* **När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering behåller allokeringsmodellen när en icke-standardattribueringsmodell används.
 >
->   Flera dimensioner är bara tillgängliga när [exportera data till molnet](/help/analysis-workspace/export/export-cloud.md).
+>   Flera dimensioner är bara tillgängliga när [exporterar data till molnet](/help/analysis-workspace/export/export-cloud.md).
 >
 > Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).
 
@@ -76,9 +76,9 @@ Så här använder du en icke-standardattribueringsmodell för ett mätresultat 
 
    ![Alternativen för kolumninställningar markerar datainställningar: Använd ett icke-standardattribueringsläge.](assets/attribution-checkbox.png)
 
-2. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributionsmodeller](/help/data-views/component-settings/attribution.md).
+2. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attribution models](/help/data-views/component-settings/attribution.md).
 
-   ![Alternativen för Kolumnattributmodell visar Linjär markerad.](assets/attribution-select.png)
+   ![Alternativen för kolumnattribueringsmodell visar Linjär markerad.](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

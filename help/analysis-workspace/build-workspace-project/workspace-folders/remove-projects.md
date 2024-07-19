@@ -24,7 +24,7 @@ Om du vill ta bort ett projekt från en mapp kan du flytta projektet till en ann
 
 Du kan flytta projekt från en mapp till en annan mapp som du har skapat.
 
-1. I en projektmapp väljer du **...** ellips bredvid projektnamnet.
+1. I en projektmapp väljer du ellipsen **..** bredvid projektnamnet.
 
    ![Ellipsalternativen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
@@ -32,7 +32,7 @@ Du kan flytta projekt från en mapp till en annan mapp som du har skapat.
 
    ![Fönstret Välj plats.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-1. Klicka **Flytta**.
+1. Klicka på **Flytta**.
 
    ![Klicka på Flytta.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
@@ -44,7 +44,7 @@ Du kan flytta projekt från en mapp till en annan mapp som du har skapat.
 
 När du tar bort ett projekt från en mapp tas det bort från systemet efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett borttaget projekt via webbgränssnittet om de har en direkt URL till projektet.
 
-1. I en projektmapp väljer du **...** ellips bredvid projektnamnet.
+1. I en projektmapp väljer du ellipsen **..** bredvid projektnamnet.
 
    ![Ellipsalternativen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 

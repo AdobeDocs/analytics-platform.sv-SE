@@ -3,13 +3,13 @@ description: Prognoser i Analysis Workspace använder en serie avancerade statis
 title: Statistiska tekniker som används i prognoser
 feature: Visualizations
 role: User
-source-git-commit: 1bd24ee1163e4615bf5626c51aec9f167352f2f6
+exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
+source-git-commit: accd7300c2dd6224e4d154cb6e3889f564e07a1a
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
 
 ---
-
 
 # Statistiska tekniker som används i prognostjänsten
 
@@ -54,7 +54,6 @@ Tjänsten gör inga antaganden om användardata. Tjänsten antar till exempel in
 
 ## Referenser
 
-1. Taylor, Sean J. och Benjamin Letham: *Prognoser i stor skala.* American Statistician 72.1 (2018): 37-45.
+1. Taylor, Sean J. och Benjamin Letham: *Prognoser i skala.* Amerikansk statistiker 72.1 (2018): 37-45.
 1. Triebe, Oskar, et al.: *Neuralprofet: Förklara prognoser i stor skala.* arXiv preprint arXiv:2111.15397(2021).
-1. Zhang och Arbor: *Avvikelseidentifiering i tidsserier.* US patentansökan nr 18/057883.
-
+1. Zhang och Arbor: *Avvikelseidentifiering för tidsserie.* US-patentprogram nr 18/057883.

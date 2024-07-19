@@ -36,11 +36,11 @@ Med alternativet Från cell kan du referera till datum som anges i kalkylbladsce
 
 Du kan välja att exkludera idag för valfritt datumintervall.
 
-![Snabbredigeringsfönster i Report Builder med kalendern markerad och Uteslut i dag markerad.](./assets/image17.png)
+![Snabbredigeringsrutan Report Builder med kalendern markerad och Uteslut i dag markerad.](./assets/image17.png)
 
 ## Använda kalendern
 
-När du använder **Kalender** visar datumintervallfältet det aktuella datumintervallet för begäran om datablock. Du kan ange datum direkt i datumintervallfältet eller använda ett dataområdesalternativ.
+När du använder **kalendern** visar datumintervallfältet det aktuella datumintervallet för begäran om datablocket. Du kan ange datum direkt i datumintervallfältet eller använda ett dataområdesalternativ.
 
 ### Datumintervallfält
 
@@ -62,7 +62,7 @@ Välja datum med hjälp av kalendern
 
 Om du vill ange ett omvänt datumintervall klickar du först på slutdatumet och sedan på startdatumet.
 
-![Fönstret för datumintervall i Report Builder med kalendern, slutdatumet och det valda startdatumet.](./assets/image18.png)
+![Report Builder datumintervallfönster med kalendern, slutdatumet och valt startdatum.](./assets/image18.png)
 
 ### Listrutan Förinställning
 
@@ -76,21 +76,21 @@ Med alternativet för rullande datum kan du välja ett datumintervall med rullan
 
 1. Välj ett rullande uttryck för start- och slutdatumet.
 
-   ![Report Builder datumintervallfönster som visar Använd rullande datum och rullande uttryck.](./assets/image19.png)
+   ![Datumintervallfönstret i Report Builder visar Använd markerade rullande datum och det rullande uttrycket.](./assets/image19.png)
 
-   **Början av** - Välj början på en dag, vecka, månad, kvartal eller år.
+   **Början av** - Gör att du kan välja början av en dag, vecka, månad, kvartal eller år.
 
-   **Slutet av** - Välj slutet på en dag, vecka, månad, kvartal eller år.
+   **Slut på** - Gör att du kan välja slutet på en dag, vecka, månad, kvartal eller år.
 
-   **Fast dag** — Används för att korrigera ett start- eller slutdatum medan det andra datumet rullar.
+   **Fast dag** - Gör att du kan korrigera ett start- eller slutdatum medan det andra datumet rullar.
 
 1. Välj dag, vecka, månad, kvartal eller år som rullande period.
 
-   ![Datumintervallfönster i Report Builder med den aktuella dagen som valts.](./assets/image20.png)
+   ![Report Builder datumintervall med den aktuella dagen markerad.](./assets/image20.png)
 
 1. Lägg till eller subtrahera dagar, veckor, månader, kvartal eller år från ditt rullande datum.
 
-   ![Datumintervallfönstret i Report Builder visar den aktuella dagen plus 14 dagar.](./assets/image21.png)
+   ![Report Builder datumintervall med den aktuella dagen plus 14 dagar.](./assets/image21.png)
 
 1. Klicka på Nästa för att definiera dataområdet.
 
@@ -104,7 +104,7 @@ Med alternativet för anpassade uttryck kan du ändra datumintervallet genom att
 
 1. Välj **Använd anpassat uttryck**.
 
-   När du väljer **Använd anpassat uttryck** är standardkontrollerna för rullande datumintervall inaktiverade.
+   När du väljer alternativet **Använd anpassat uttryck** inaktiveras kontrollerna för rullande standarddatumintervall.
 
    ![Välj Använd anpassat uttryck som visar tm-1m till td-1d.](./assets/custom_expression.png)
 
@@ -116,11 +116,11 @@ Med alternativet för anpassade uttryck kan du ändra datumintervallet genom att
 
 #### Skapa ett anpassat uttryck
 
-1. Ange en **Datumreferens**.
+1. Ange en **datumreferens**.
 
-1. Lägg till **Datumoperatorer** om du vill flytta datumet till föregående eller kommande datum.
+1. Lägg till **Date-operatorer** om du vill flytta datumet till föregående eller kommande datum.
 
-Du kan ange ett anpassat datumuttryck som innehåller flera operatorer, till exempel ```tm-11m-1d```.
+Du kan ange ett anpassat datumuttryck som innehåller flera operatorer, till exempel ```tm-11m-1d```.
 
 #### Datumreferenser
 
@@ -161,15 +161,15 @@ I följande tabell visas exempel på datumuttryck.
 
 ## Datumintervall från cell
 
-Datumintervallet kan anges i kalkylbladsceller. Använd **Datumintervall från cell** om du vill välja datablockets start- och slutdatum från markerade celler. När du väljer **Från cell** alternativ, visas panelen **Från** och **Till** fält där du kan ange en cellplats.
+Datumintervallet kan anges i kalkylbladsceller. Använd alternativet **Datumintervall från cell** för att välja datablockets start- och slutdatum från markerade celler. När du väljer alternativet **Från cell** visas fälten **Från** och **Till** på panelen, där du kan ange en cellplats.
 
-![Markera Från cellark1!H4 till Blad1!I4](./assets/image23.png)
+![Välj från cellark1!H4 till ark1!I4](./assets/image23.png)
 
 ## Exkludera idag
 
-Välj **Exkludera idag** om du vill exkludera idag från ett valt datumintervall. Om du väljer att inkludera idag kan ofullständiga data hämtas för idag.
+Välj alternativet **Uteslut i dag** om du vill exkludera i dag från ett valt datumintervall. Om du väljer att inkludera idag kan ofullständiga data hämtas för idag.
 
-När du väljer det här alternativet visas **Exkludera idag** inkluderar inte den aktuella dagen från alla lägen för datumintervall, inklusive kalender, rullande datum eller anpassade uttryck.
+Om du väljer det här alternativet utesluts den aktuella dagen från alla lägen för datumintervall, inklusive kalenderdatum, rullande datum och anpassade uttryck. ****
 
 ## Giltiga datumintervall
 
@@ -179,7 +179,7 @@ I följande lista beskrivs giltiga datumintervallformat.
 
 - Startdatumet måste vara tidigare än eller lika med slutdatumet. Båda datumen kan anges till framtiden.
 
-- När du använder rullande datum måste startdatumet vara idag eller tidigare. Det måste vara i det förflutna om **Exkludera idag** är markerad.
+- När du använder rullande datum måste startdatumet vara idag eller tidigare. Det måste vara tidigare om **Exkludera idag** är markerat.
 
 - Du kan skapa en statisk datumintervalluppsättning för framtiden. Du kan till exempel behöva ange ett framtida datum för lanseringen av en marknadsföringskampanj nästa vecka. Med det här alternativet skapas en arbetsboksövervakning för en kampanj i förväg.
 
@@ -187,19 +187,19 @@ I följande lista beskrivs giltiga datumintervallformat.
 
 Du kan redigera datumintervallet för ett befintligt datablock genom att välja Redigera datablock på KOMMANDON-panelen eller genom att markera datumintervalllänken på QUICK EDIT-panelen.
 
-**Redigera datablock** - Gör att du kan redigera flera datablocksparametrar, inklusive datumintervall, för ett enda datablock.
+**Redigera datablock** - Gör att du kan redigera flera datablocksparametrar, inklusive datumintervall, för ett enskilt datablock.
 
-**Snabbredigering: Datumintervall** — Används för att redigera datumintervallet för ett eller flera datablock.
+**Snabbredigering: Datumintervall** - Gör att du kan redigera datumintervallet för ett eller flera datablock.
 
 Redigera datumintervallet från SNABBREDIGERING-panelen
 
 1. Markera celler i ett eller flera datablock i ett kalkylblad.
 
-1. Klicka på **Datumintervall** på QUICK EDIT-panelen.
+1. Klicka på länken **Datumintervall** på panelen SNABBREDIGERING.
 
 1. Välj datumintervall med något av datumalternativen.
 
-1. Klicka **Använd**.
+1. Klicka på **Använd**.
 
 
 Report Builder använder det nya datumintervallet för alla datablock i markeringen.

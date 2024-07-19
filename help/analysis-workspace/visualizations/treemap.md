@@ -17,6 +17,6 @@ Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektang
 
 Varje förgrening i trädet tilldelas en rektangel, som sedan visas med mindre rektanglar som representerar undergrenar.
 
-![Treemap-exempel som visar plattor med mindre rektanglar som representerar undergrenar.](assets/treemap.png)
+![Treemap-exempel som visar rutor med mindre rektanglar som representerar undergrenar.](assets/treemap.png)
 
 När färger och storleksmått korrelerar med trädstrukturen är det ofta lätt att se mönster som annars är svåra upptäcka, till exempel om en viss färg är särskilt relevant. En annan fördel med treemap-diagram är att de genom sin konstruktion utnyttjar utrymmet effektivt.

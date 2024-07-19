@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Active] visa
+# [!UICONTROL Active]-vy
 
-The **[!UICONTROL Active]** ger insikter om användarnas tillväxt och förvärv under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är ett mått på användare. Användarna är indelade i fyra kategorier:
+Vyn **[!UICONTROL Active]** ger insikter om användarnas tillväxt och förvärv under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är ett mått på användare. Användarna är indelade i fyra kategorier:
 
 * **[!UICONTROL New]**: Användaren var aktiv under den aktuella perioden, men inte tidigare. Se hur långt analysen ser tillbaka genom att hålla pekaren över _[!UICONTROL New users]_i diagramförklaringen. Uppslagsintervallet bestäms dynamiskt utifrån det valda datumintervallet och intervallet.
 * **[!UICONTROL Repeat]**: Användaren var aktiv i den aktuella och omedelbart föregående perioden.
@@ -29,30 +29,30 @@ Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför 
 
 Exempel:
 
-* **Bevarande och bortfall av användare:** Ger en tydlig visualisering av perioder med hög eller låg användarlojalitet. Genom att känna igen dessa perioder av hög eller låg lojalitet kan du fatta produktbeslut för att öka kundlojaliteten eller hjälpa till att minimera bortfallet.
-* **Kampanjbedömning**: Att visa en viss kampanj kan hjälpa er att förstå hur mycket trafik den genererade och hur väl den hjälpte användarna att vara engagerade.
-* **Användarlivscykelanalys**: Analysering av aktiv användartillväxt under hela användarlivscykeln kan hjälpa till att identifiera specifika faser där användarengagemanget minskar. Om det till exempel finns ett stort antal vilande användare för enskilda personer i ett introduktionsstadium kan det tyda på användarvänlighetsproblem eller ett behov av bättre produktvägledning.
+* **Kvarhållande och urholkning av användare:** Skapar en tydlig visualisering av perioder med hög eller låg användarlojalitet. Genom att känna igen dessa perioder av hög eller låg lojalitet kan du fatta produktbeslut för att öka kundlojaliteten eller hjälpa till att minimera bortfallet.
+* **Kampanjbedömning**: Om du visar en viss kampanj kan du få en förståelse för hur mycket trafik den genererade och hur bra den hjälpte användarna att vara engagerade.
+* **Livscykelanalys för användare**: Genom att analysera aktiv användartillväxt under hela användarlivscykeln kan du identifiera specifika faser där användarinteraktionen försvinner. Om det till exempel finns ett stort antal vilande användare för enskilda personer i ett introduktionsstadium kan det tyda på användarvänlighetsproblem eller ett behov av bättre produktvägledning.
 
 ## Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL View]**: Växla mellan den här vytypen och [Nettotillväxt](net-growth.md).
+* **[!UICONTROL View]**: Växla mellan vytypen och [Nettotillväxt](net-growth.md).
 * **[!UICONTROL Events]**: Den händelse som du vill mäta. Eftersom den här vytypen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
-* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen inkluderar [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
+* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: Det segment som du vill filtrera data efter. Du kan inkludera ett segment i en fråga.
 
 ## Diagraminställningar
 
-The [!UICONTROL Active] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
+I vyn [!UICONTROL Active] finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
 
-* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Stacked bar] och [!UICONTROL Stacked area].
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är [!UICONTROL Stacked bar] och [!UICONTROL Stacked area].
 
 ## Tidsjämförelse
 
 {{apply-time-comparison}}
 
-![Jämför aktiv tid](../assets/active-compare.png){style="border:1px solid gray"}
+![Aktiv tidsjämförelse](../assets/active-compare.png){style="border:1px solid gray"}
 
 ## Datumintervall
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Vissa plattformsscheman kan ha objektarrayer. Adobe Customer Journey Analytics stöder inmatning och rapportering av objektarrayer i händelse-, uppslags- och profildata. Ett av de vanligaste exemplen är en varukorg som innehåller flera produkter. Varje produkt har ett namn, SKU, kategori, pris, kvantitet och andra dimensioner som du vill spåra. Alla de här ansiktena har olika krav, men måste alla få plats i samma träff.
 
-I tidigare versioner av Adobe Analytics utfördes den här funktionen med `products` variabel. Det var en sammanfogad sträng avgränsad med semikolon (`;`) för att separera olika delar av en produkt, medan kommatecken (`,`). Den var den enda variabeln med begränsat stöd för&quot;objektarrayer&quot;. Multivärdesvariabler som listvariabler kan ha stöd för motsvarande arrayer, men de kan inte ha stöd för &quot;objektarrayer&quot;. Customer Journey Analytics utnyttjar detta koncept ytterligare genom att stödja godtyckligt djupa hierarkier i en enda datarad, en funktion som inte finns i någon tidigare version av Adobe Analytics.
+I tidigare versioner av Adobe Analytics utfördes den här funktionen med variabeln `products`. Det var en sammanfogad sträng som avgränsades med semikolon (`;`) för att separera en produkts delar, medan produkter avgränsas med kommatecken (`,`). Den var den enda variabeln med begränsat stöd för&quot;objektarrayer&quot;. Multivärdesvariabler som listvariabler kan ha stöd för motsvarande arrayer, men de kan inte ha stöd för &quot;objektarrayer&quot;. Customer Journey Analytics utnyttjar detta koncept ytterligare genom att stödja godtyckligt djupa hierarkier i en enda datarad, en funktion som inte finns i någon tidigare version av Adobe Analytics.
 
 ## Exempel på samma händelse
 
@@ -75,7 +75,7 @@ När du skapar en datavy är följande mått och mått tillgängliga (baserat p�
    * product : warranty : length
    * product : warranty : name
    * product : warranty : type
-* **Mätvärden:**
+* **Mått:**
    * product:order
    * product:units
    * product : omsättning
@@ -84,7 +84,7 @@ När du skapar en datavy är följande mått och mått tillgängliga (baserat p�
 
 ### Exempel på samma händelse (rapporteringsbeteende)
 
-I följande tabeller visas Workspace-rapporter med vissa mått- och måttkombinationer med hjälp av händelsen ovan.
+Med hjälp av ovanstående händelse visar följande tabeller Workspace-rapporter med vissa mått- och måttkombinationer.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |

@@ -19,4 +19,4 @@ Vid etableringen anger kunderna i vilken region deras Adobe Experience Platform-
 
 ![CJA-datacenter](assets/data-centers.png)
 
-Se [Regional datainsamling](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) i Adobe Experience Cloud-dokumentationen.
+Mer information finns i [Regional datainsamling](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) i Adobe Experience Cloud-dokumentationen.

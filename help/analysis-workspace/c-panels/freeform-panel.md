@@ -15,4 +15,4 @@ ht-degree: 0%
 
 En friformspanel är en tom panel med en friformstabell som startläge.
 
-![Standardpanelen Frihand visar en tom panel med frihandstabell.](assets/freeform-panel.png)
+![Standardpanelen i frihandsfigur visar en tom panel med frihandstabell.](assets/freeform-panel.png)

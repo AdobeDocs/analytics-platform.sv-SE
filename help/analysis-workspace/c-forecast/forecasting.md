@@ -21,8 +21,8 @@ Prognoser finns i licensskikten Select och senare Customer Journey Analytics.
 
 Du kan använda prognoser för:
 
-* **Planering**: Genom att analysera trender och förutsäga framtida resultat kan ni identifiera potentiella möjligheter och hot och anpassa era strategier därefter. Detta kan hjälpa er att fördela resurser mer effektivt och effektivt.
-* **Budgetering**: Genom att prognostisera framtida intäkter och kostnader kan ni se till att era team har tillräckliga medel för att täcka sina kostnader och investera i tillväxtmöjligheter.
+* **Planering**: Genom att analysera trender och förutsäga framtida resultat kan du identifiera potentiella möjligheter och hot och anpassa dina strategier därefter. Detta kan hjälpa er att fördela resurser mer effektivt och effektivt.
+* **Budgetering**: Genom att prognostisera framtida intäkter och utgifter kan du se till att team har tillräckliga medel för att täcka sina kostnader och investera i tillväxtmöjligheter.
 * **Riskhantering**: Genom att förutse framtida händelser och trender kan du vidta proaktiva åtgärder för att minska riskerna och minimera potentiella förluster.
-* **Resursallokering**: Genom att förutsäga framtida efterfrågan kan ni se till att de nödvändiga resurserna finns tillgängliga för att tillgodose kundernas behov och undvika stockuttag och överlagring.
-* **Resultatutvärdering**: Genom att jämföra faktiska resultat med prognostiserade resultat kan du identifiera områden som ska förbättras och göra nödvändiga justeringar.
+* **Resursallokering**: Genom att förutsäga framtida behov kan du se till att nödvändiga resurser finns tillgängliga för att uppfylla kundernas behov och undvika utlagring eller överlagring.
+* **Prestandautvärdering**: Genom att jämföra faktiska resultat med prognostiserade resultat kan du identifiera områden som kan förbättras och göra nödvändiga justeringar.

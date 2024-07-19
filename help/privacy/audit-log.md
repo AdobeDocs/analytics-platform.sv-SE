@@ -15,7 +15,7 @@ ht-degree: 1%
 
 För att öka insynen i och synligheten för aktiviteter som utförs i systemet kan du med Adobe Customer Journey Analytics granska användaraktiviteter för olika tjänster och funktioner i form av &quot;granskningsloggar&quot;. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act).
 
-I grundläggande bemärkelse anger en granskningslogg **som** utförd **vad** och **när**. Varje åtgärd som registreras i en logg innehåller metadata som anger åtgärdstyp, datum och tid, e-post-ID för användaren som utförde åtgärden samt ytterligare attribut som är relevanta för åtgärdstypen.
+I grundläggande bemärkelse anger en granskningslogg **vem** utförde **vad**-åtgärden och **när**. Varje åtgärd som registreras i en logg innehåller metadata som anger åtgärdstyp, datum och tid, e-post-ID för användaren som utförde åtgärden samt ytterligare attribut som är relevanta för åtgärdstypen.
 
 Det här avsnittet handlar om granskningsloggar i Customer Journey Analytics, inklusive hur du visar och hanterar dem i användargränssnittet.
 
@@ -23,15 +23,15 @@ Det här avsnittet handlar om granskningsloggar i Customer Journey Analytics, in
 
 När funktionen är aktiverad för din organisation samlas granskningsloggarna automatiskt in när aktiviteten inträffar. Du behöver inte aktivera loggsamling manuellt.
 
-För att kunna visa och exportera granskningsloggar måste du ha fått **[!UICONTROL Audit Logs Access]** behörighet för åtkomstkontroll i Adobe Console. Läs mer om hur du hanterar enskilda behörigheter för Customer Journey Analytics-funktioner i [dokumentation om åtkomstkontroll](../technotes/access-control.md).
+För att kunna visa och exportera granskningsloggar måste du ha beviljats åtkomstkontrollbehörighet **[!UICONTROL Audit Logs Access]** i Adobe Console. Mer information om hur du hanterar enskilda behörigheter för Customer Journey Analytics-funktioner finns i [åtkomstkontrollsdokumentationen](../technotes/access-control.md).
 
 ## Visa granskningsloggen i användargränssnittet
 
-I Customer Journey Analytics går du till **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
+Gå till **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]** i Customer Journey Analytics.
 
 Granskningsloggen för i dag och i går visas som standard.
 
-![Granskningsloggmarkeringar idag och i går. ](assets/audit_ui.png)
+![Granskningsloggmarkering idag och i går. ](assets/audit_ui.png)
 
 Du kan välja vilka kolumner som ska visas genom att gå till kolumnväljaren längst upp till höger.
 
@@ -39,11 +39,11 @@ Du kan välja vilka kolumner som ska visas genom att gå till kolumnväljaren l�
 
 Dubbelklicka på knappen info (i) bredvid en beskrivning.
 
-![Granskningslogg som markerar infoknappen. ](assets/info-button-audit.png)
+![Granskningslogg som markerar informationsknappen. ](assets/info-button-audit.png)
 
 Följande objekt visas:
 
-* **[!UICONTROL Action Name]**: Den åtgärd som har vidtagits. Möjliga värden är:
+* **[!UICONTROL Action Name]**: Den åtgärd som utfördes. Möjliga värden är:
    * API_REQUEST
    * GODKÄNN
    * SKAPA
@@ -59,7 +59,7 @@ Följande objekt visas:
    * AVDELA
 * **[!UICONTROL Date Created]**: Datum och tid då åtgärden utfördes.
 * **[!UICONTROL Description]**: En sammanfattning av åtgärden.
-* **[!UICONTROL User Name]**: Den användare som utförde åtgärden.
+* **[!UICONTROL User Name]**: Användaren som utförde åtgärden.
 * **[!UICONTROL Email]**: E-postadressen till användaren som utförde åtgärden.
 * **[!UICONTROL Component Name]**: Komponenten som användaren utförde en åtgärd på.
 * **[!UICONTROL Component Type]**: Komponenttypen. Möjliga värden är:
@@ -80,17 +80,17 @@ Följande objekt visas:
    * SCHEDULED_PROJECT
    * ANVÄNDARE
    * USER_GROUP
-* **[!UICONTROL Component ID]**: ID:t för komponenten som användaren utförde åtgärden på.
+* **[!UICONTROL Component ID]**: ID:t för komponenten som användaren vidtagit åtgärder för.
 * **[!UICONTROL IMS Org ID]**: Organisationens IMS-ID i formatet `ABC123@AdobeOrg`.
 * **[!UICONTROL Log ID]**: Ett unikt ID som identifierar loggposten.
 * **[!UICONTROL User ID]**: Det unika ID:t som identifierar användaren som utförde åtgärden.
-* **[!UICONTROL User Type]**: Den autentiseringstyp som används. Giltiga värden är:
+* **[!UICONTROL User Type]**: Autentiseringstypen som används. Giltiga värden är:
    * IMS
    * OKTA
 
 ### Filtrera granskningsloggar
 
-Markera trattecknet (![filter](assets/filter-icon.png)) för att visa en lista med filterkontroller för att begränsa resultatet. Endast de sista 1 000 posterna visas, oavsett vilka filter som har valts.
+Markera trattikonen (![filter](assets/filter-icon.png)) om du vill visa en lista med filterkontroller för att begränsa resultatet. Endast de sista 1 000 posterna visas, oavsett vilka filter som har valts.
 
 ![Granskningslogg som visar de filter som visas för dataområde.](assets/filters.png)
 
@@ -133,10 +133,10 @@ I följande tabell visas vilka åtgärder för vilka komponenttyper som registre
 
 Du kan hämta granskningsloggar i CSV- eller JSON-format. Alla filter som används eller de markerade kolumnerna återspeglas i de hämtade filerna.
 
-1. Klicka **[!UICONTROL Download]** längst upp till höger på skärmen.
+1. Klicka på **[!UICONTROL Download]** längst upp till höger på skärmen.
 1. Ange formatet.
-1. Klicka **[!UICONTROL Download]** igen.
+1. Klicka på **[!UICONTROL Download]** igen.
 
 ## Hantera granskningsloggar i API
 
-Alla åtgärder som du kan utföra i användargränssnittet kan också utföras med API-anrop. Se [Customer Journey Analytics API-referensdokument](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) för mer information.
+Alla åtgärder som du kan utföra i användargränssnittet kan också utföras med API-anrop. Mer information finns i [Customer Journey Analytics API-referensdokumentet](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs).

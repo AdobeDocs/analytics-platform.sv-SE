@@ -23,19 +23,19 @@ Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artikl
 
 1. Klicka på Nästa för att visa fliken Dimensioner.
 
-1. Klicka på **...** -ikonen bredvid ett komponentnamn i tabellen.
+1. Klicka på ikonen **..** bredvid ett komponentnamn i tabellen.
 
-   ![Alternativen för ellipsikonen.](./assets/image27.png)
+   ![Alternativ för ellipsikoner.](./assets/image27.png)
 
-1. Välj **Filterdimension** på snabbmenyn för att visa **Filterdimension** fönster.
+1. Välj **Filterdimension** på snabbmenyn för att visa rutan **Filterdimension**.
 
-1. Välj **Mest populära** eller **Specifik**.
+1. Välj **Mest populära** eller **Specifik**.
 
-   ![Det specifika alternativ som är markerat i rutan Filterdimension.](./assets/image28.png)
+   ![Det specifika alternativ som har valts i rutan Filterdimension.](./assets/image28.png)
 
 1. Välj lämpliga alternativ baserat på vald filtertyp.
 
-1. Klicka **Använd** för att lägga till filtret.
+1. Klicka på **Använd** för att lägga till filtret.
 
    Report Builder visar ett meddelande som bekräftar det tillagda filtret.
 
@@ -54,7 +54,7 @@ Det vanligaste alternativet gör att du dynamiskt kan filtrera dimensionsobjekt 
 
 ### Alternativ för sidor och rader
 
-Använd **Sida** och **Rader** fält för att dela in data i sekventiella grupper eller sidor. På så sätt kan du dra in andra rankade radvärden än de översta i rapporten. Den här funktionen är särskilt användbar när du vill hämta data över gränsen på 50 000 rader.
+Använd fälten **Sida** och **Rader** för att dela in data i sekventiella grupper eller sidor. På så sätt kan du dra in andra rankade radvärden än de översta i rapporten. Den här funktionen är särskilt användbar när du vill hämta data över gränsen på 50 000 rader.
 
 #### Standardvärden för sidor och rader
 
@@ -82,7 +82,7 @@ Tabellen nedan innehåller exempel på sid- och radvärden och resultatet.
 
 I Customer Journey Analytics samlar vissa dimensioner in en post utan värde. Med det här filtret kan du exkludera dessa värden från rapporter. Du kan t.ex. skapa en klassificering som produktnamnsklassificeringen baserat på SKU-nyckeln för produkten. Om en specifik produkt-SKU inte har ställts in med sin specifika produktnamnsklassificering, anges värdet för produktnamnet till&quot;inget värde&quot;.
 
-Inkludera **Inget värde**&quot; är markerat som standard. Avmarkera det här alternativet om du vill utesluta poster utan värde.
+Inkludera **Inget värde** är valt som standard. Avmarkera det här alternativet om du vill utesluta poster utan värde.
 
 ### Filtrera efter villkor
 
@@ -114,36 +114,36 @@ Om du vill ändra måtten som används för att filtrera och sortera datablocket
 
 2. Klicka på pilen på det önskade måttet. 
 
-   ![Tabellbyggaren och mätvärden.](./assets/image30.png)
+   ![Tabellverktyget och måtten.](./assets/image30.png)
 
 
 ## Specifik filtrering
 
-Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd **Specifik** filtreringstyp för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
+Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd filtreringstypen **Specifik** för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
 
 ![Specifika alternativ och markerade objekt.](./assets/image32.png)
 
 ### Från lista
 
-1. Välj **Från lista** för att söka efter och välja dimensionsobjekt.
+1. Välj alternativet **Från lista** om du vill söka efter och välja dimensionsobjekt.
 
-   När du väljer **Från lista** om du väljer det här alternativet fylls listan med dimensionsobjekt med de flesta händelser först.
+   När du väljer alternativet **Från lista** fylls listan med dimensionsobjekt med de flesta händelser först.
 
    ![Alternativet Från lista och tillgängliga objekt.](./assets/image33.png)
 
-   The **Tillgängliga objekt** listan ordnas från dimensionsobjekt med de flesta händelser till de med minst.
+   Listan **Tillgängliga objekt** ordnas från dimensionsobjekt med de flesta händelser till de med minst.
 
-1. Ange ett sökord i dialogrutan **Lägg till objekt** fält för att söka i listan.
+1. Ange en sökterm i fältet **Lägg till objekt** för att söka i listan.
 
-1. Om du vill söka efter ett objekt som inte ingår i de senaste 90 dagarna klickar du på **Visa objekt för de senaste sex månaderna** för att utöka sökningen.
+1. Om du vill söka efter ett objekt som inte ingår i de senaste 90 dagarna klickar du på **Visa objekt för de senaste 6 månaderna** för att utöka sökningen.
 
-   ![The Show items from the last 6 month list.](./assets/image34.png)
+   ![Visa objekt från listan med de senaste sex månaderna.](./assets/image34.png)
 
-   Efter att data från de senaste 6 månaderna har lästs in uppdaterar Report Builder länken till **Visa objekt för de senaste 18 månaderna**.
+   När data från de senaste sex månaderna har lästs in uppdaterar Report Builder länken till **Visa objekt för de senaste 18 månaderna**.
 
 1. Välj en dimensionsartikel.
 
-   De valda dimensionsobjekten läggs automatiskt till i **Markerade objekt** lista.
+   Valda dimensionsobjekt läggs automatiskt till i listan **Markerade objekt**.
 
    ![](./assets/image35.png)
 
@@ -151,15 +151,15 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
    Om du vill flytta ett objekt i listan drar och släpper du objektet eller klickar på ... för att visa flyttmenyn.
 
-   ![Dimensionsobjektlistan.](./assets/image36.png)
+   ![Dimensionsobjektslistan.](./assets/image36.png)
 
-1. Klicka **Använd**
+1. Klicka på **Använd**
 
    Report Builder uppdaterar listan så att den specifika filtrering som du tillämpade visas.
 
 ### Från cellintervall
 
-Välj **Från cellintervall** om du vill välja ett cellintervall som innehåller listan med dimensionsobjekt som ska matchas.
+Välj alternativet **Från cellintervall** om du vill välja ett cellintervall som innehåller listan med dimensionsobjekt som ska matchas.
 
 ![Alternativet Från cellintervall och fältet för att markera ett cellintervall.](./assets/image37.png)
 
@@ -173,8 +173,8 @@ Markeringen kan innehålla tomma celler eller celler med värden som inte matcha
 
 ### På fliken Dimensioner i tabellverktyget
 
-Från **Dimensioner** klickar du på ikonen för avfasning bredvid ett dimensionsnamn för att visa en lista med dimensionsobjekt.
+På fliken **Dimensioner** klickar du på ikonen för avfasning bredvid ett dimensionsnamn för att visa listan med dimensionsobjekt.
 
 ![Fliken Dimensioner och listan över dimensioner.](./assets/dimensions_chevron.png)
 
-Du kan dra och släppa objekt på **Tabell** eller dubbelklicka på ett objektnamn för att lägga till det i **Tabell** builder.
+Du kan dra och släppa objekt på **tabellen** eller dubbelklicka på ett objektnamn för att lägga till det i **tabellverktyget**.

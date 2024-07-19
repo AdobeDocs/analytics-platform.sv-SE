@@ -22,13 +22,13 @@ Beteendeinställningar är tillgängliga för både mått och mått. Vilka inst�
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL Lower case] | Raderar rader som har samma värde men olika skiftläge. Om det här alternativet är aktiverat rapporteras alla instanser av en dimension med samma värde som gemener. Dina data innehåller till exempel värdena `"liverpool"`, `"Liverpool"`och `"LIVERPOOL"` i en strängdimension. If [!UICONTROL Lower case] är aktiverat kombineras alla tre värdena till `"liverpool"`. Om det är inaktiverat behandlas alla tre värdena som distinkta. |
+| [!UICONTROL Lower case] | Raderar rader som har samma värde men olika skiftläge. Om det här alternativet är aktiverat rapporteras alla instanser av en dimension med samma värde som gemener. Dina data innehåller till exempel värdena `"liverpool"`, `"Liverpool"` och `"LIVERPOOL"` i en strängdimension. Om [!UICONTROL Lower case] är aktiverat kombineras alla tre värdena till `"liverpool"`. Om det är inaktiverat behandlas alla tre värdena som distinkta. |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->Om du aktiverar [!UICONTROL Lower case] på en sökdatauppsättningsdimension kan det finnas flera uppslagsvärden för samma identifierare. Om den här konflikten inträffar använder Customer Journey Analytics det första ASCII-sorterade värdet (versalvärden före gemener). Adobe avråder från att använda uppslagsdatauppsättningar som innehåller samma värde när [!UICONTROL Lower case] är aktiverat.
+>Om du aktiverar [!UICONTROL Lower case] för en sökdatauppsättningsdimension kan det finnas flera uppslagsvärden för samma identifierare. Om den här konflikten inträffar använder Customer Journey Analytics det första ASCII-sorterade värdet (versalvärden före gemener). Adobe avråder från att använda uppslagsdatauppsättningar som innehåller samma värde när [!UICONTROL Lower case] är aktiverat.
 
 ![Skiftlägeskänslig dimension](../assets/case-sens-workspace.png)
 
@@ -38,7 +38,7 @@ Beteendeinställningar är tillgängliga för både mått och mått. Vilka inst�
 | --- | --- |
 | [!UICONTROL Count values] | Synlig för datatyperna Integer och Double schema. Öka måttet med den angivna mängden. Ökar till exempel måttet med 50 om värdet för kolumnen är `50`. |
 | [!UICONTROL Count instances] | Synlig för datatyperna Integer och Double schema. Öka måttet med ett, oavsett värde. Förekomsten av ett värde ökar mätvärdet. Ökar till exempel måttet med 1 om värdet för kolumnen är `50`. |
-| [!UICONTROL Values to count] | Synlig för datatyperna Boolean-schema. Låter dig avgöra om mätvärdena ökar med räkning `true`, `false`eller båda. |
+| [!UICONTROL Values to count] | Synlig för datatyperna Boolean-schema. Låter dig avgöra om måttet ökar genom att räkna `true`, `false` eller båda. |
 
 {style="table-layout:auto"}
 

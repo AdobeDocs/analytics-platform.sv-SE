@@ -19,7 +19,7 @@ Här är en lista i alfabetisk ordning över funktionerna och deras definitioner
 
 >[!NOTE]
 >
->Plats [!DNL metric] identifieras som ett argument i en funktion, tillåts även andra uttryck för mätvärden. Till exempel: [!DNL MAXV(metrics)] kan även [!DNL MAXV(PageViews + Visits).]
+>Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck för mätvärden. [!DNL MAXV(metrics)] tillåter till exempel även [!DNL MAXV(PageViews + Visits).]
 
 ## Tabellfunktioner kontra radfunktioner
 
@@ -35,7 +35,7 @@ ABS(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mått som du vill ha det absoluta värdet för. |
+| *metrisk* | Det mått som du vill ha det absoluta värdet för. |
 
 ## Högsta kolumn
 
@@ -47,7 +47,7 @@ MAXV(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Ett mått som du skulle vilja ha utvärderat. |
+| *metrisk* | Ett mått som du skulle vilja ha utvärderat. |
 
 ## Minsta kolumn
 
@@ -59,7 +59,7 @@ MINV(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Ett mått som du skulle vilja ha utvärderat. |
+| *metrisk* | Ett mått som du skulle vilja ha utvärderat. |
 
 ## Kolumnsumma
 
@@ -71,7 +71,7 @@ SUM(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mått som du vill ha det totala värdet eller summan för. |
+| *metrisk* | Det mått som du vill ha det totala värdet eller summan för. |
 
 ## Antal (tabell)
 
@@ -83,11 +83,11 @@ COUNT(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mått som du vill räkna. |
+| *metrisk* | Det mått som du vill räkna. |
 
 ## Exponent (rad)
 
-Returnerar *e* upphöjt till ett visst tal. Konstanten *e* är lika med 2,71828182845904, den naturliga logaritmens bas. EXP är den inverterade LN, den naturliga logaritmen av ett tal.
+Returnerar *e* upphöjt till ett angivet tal. Konstanten *e* är lika med 2.71828182845904, basen för den naturliga logaritmen. EXP är den inverterade LN, den naturliga logaritmen av ett tal.
 
 ```
 EXP(metric)
@@ -95,14 +95,14 @@ EXP(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Exponenten som används på basen *e*. |
+| *metrisk* | Exponenten som används på basen *e*. |
 
 ## Exponentiering
 
 Strömoperator
 
 <pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*.. (y gånger)
+pow(x,y) = x<sup>y</sup> = x*x*x*... (y gånger)
 </pre>
 
 ## Medel (tabell)
@@ -115,7 +115,7 @@ MEAN(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mätvärde som du vill ha medelvärdet för. |
+| *metrisk* | Det mätvärde som du vill ha medelvärdet för. |
 
 ## Median (tabell)
 
@@ -127,7 +127,7 @@ MEDIAN(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mätvärde som du vill ha medianen för. |
+| *metrisk* | Det mätvärde som du vill ha medianen för. |
 
 ## Modulo
 
@@ -170,7 +170,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>mått</i> </td> 
+   <td colname="col1"> <i>metrisk</i> </td> 
    <td colname="col2"> Den måttkolumn som definierar relativ position. </td> 
   </tr> 
   <tr> 
@@ -197,7 +197,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>mått</i> </td> 
+   <td colname="col1"> <i>metrisk</i> </td> 
    <td colname="col2"> Måttet som du vill ha kvartilsvärdet för. </td> 
   </tr> 
   <tr> 
@@ -207,11 +207,11 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-&#42;If *quart* = 0, QUARTILE returnerar det minsta värdet. If *quart* = 1, KVARTIL returnerar den första kvartilen (25 percentiler). If *quart* = 2, KVARTIL returnerar den första kvartilen (50 percentiler). If *quart* = 3, KVARTIL returnerar den första kvartilen (75 percentiler). If *quart* = 4, QUARTILE returnerar maxvärdet.
+&#42;Om *quart* = 0 returnerar QUARTILE minimivärdet. Om *quart* = 1 returnerar QUARTILE den första kvartilen (25 percentiler). Om *quart* = 2 returnerar QUARTILE den första kvartilen (50 percentiler). Om *quart* = 3 returnerar QUARTILE den första kvartilen (75 percentiler). Om *quart* = 4 returnerar QUARTILE det maximala värdet.
 
 ## Ansökningstillfälle
 
-Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln Round() *Intäkter*) för att avrunda intäkterna till närmaste dollar, eller 569 dollar. En produkt som rapporterar 569,51 USD avrundas till närmaste dollar, eller 570 USD.
+Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln Round( *Revenue*) för att avrunda intäkten till närmaste dollar, eller 569 dollar. En produkt som rapporterar 569,51 USD avrundas till närmaste dollar, eller 570 USD.
 
 ```
 ROUND(metric)
@@ -219,7 +219,7 @@ ROUND(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *tal* | Det mätvärde som du vill runda av. |
+| *number* | Det mätvärde som du vill runda av. |
 
 Round without a digits parameter is the same as round with a digits parameter of 0, DVS. round to the leading integer. Med en sifferparameter returneras så många siffror till höger om decimaltecknet. Om siffrorna är negativa returneras 0 till vänster om decimaltecknet.
 
@@ -256,7 +256,7 @@ SQRT(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *tal* | Måttet som du vill ha kvadratroten för. |
+| *number* | Måttet som du vill ha kvadratroten för. |
 
 ## Standardavvikelse (tabell)
 
@@ -266,7 +266,7 @@ Ekvationen för STDEV är:
 
 ![](assets/std_dev.png)
 
-där x är provets medelvärde (*mått*) och *n* är samplingsstorleken.
+där x är samplingsmedelvärdet (*metric*) och *n* är samplingsstorleken.
 
 ```
 STDEV(metric)
@@ -275,11 +275,11 @@ STDEV(metric)
 <table id="table_8BCF2E4B02434AABAAD026FB3C4E8B2F"> 
  <tbody> 
   <tr> 
-   <td> <b> Argument</b> </td> 
+   <td> <b> argument </b> </td> 
    <td> <b> Beskrivning</b> </td> 
   </tr> 
   <tr> 
-   <td> <b> <i> mått</i> </b> </td> 
+   <td> <b> <i> metrisk </i> </b> </td> 
    <td> <p> Det mått som du vill använda för standardavvikelsen. </p> </td> 
   </tr> 
  </tbody> 
@@ -293,7 +293,7 @@ Ekvationen för VARIANS är:
 
 ![](assets/variance_eq.png)
 
-där x är medelvärdet för provet, MEAN(*mått*), och *n* är samplingsstorleken.
+där x är samplingsmedelvärdet, MEAN(*metric*) och *n* är samplingsstorleken.
 
 ```
 VARIANCE(metric)
@@ -301,7 +301,7 @@ VARIANCE(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Det mått som du vill ha variansen för. |
+| *metrisk* | Det mått som du vill ha variansen för. |
 
 För att kunna beräkna en varians tittar du på en hel sifferkolumn. Från den listan med tal beräknar du först medelvärdet. När du har fått medelvärdet går du igenom varje tävlingsbidrag och gör följande:
 
@@ -321,4 +321,4 @@ Anta att du har en kolumn med tre objekt:
 
 3
 
-Medelvärdet för den här kolumnen är 2. Kolumnens varians blir ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3-2)<sup>2</sup>/3 = 2/3.
+Medelvärdet för den här kolumnen är 2. Variansen för kolumnen är ((1 - 2)<sup>2</sup> + (2 - 2)<sup></sup> + (3 - 2)<sup> </sup>/3 = 2/3.

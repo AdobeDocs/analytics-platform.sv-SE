@@ -18,7 +18,7 @@ Med Customer Journey Analytics kan ni analysera data med hjälp av kraften och f
 
 >[!TIP]
 >
->Om det inte finns några data i Analysis Workspace bör du kontrollera att du har följt [dataöverföringsprocess](/help/data-ingestion/data-ingestion.md), som innehåller följande:<ul><li>[Skapa en anslutning](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Kontrollera att anslutningen är konfigurerad för att importera nya data, data för bakåtfyllnad eller båda.</li><li>[Lägg till datauppsättningar](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Skapa datavyer](/help/data-views/create-dataview.md)</li></ul>
+>Om inga data är tillgängliga i Analysis Workspace kontrollerar du att du har följt [dataöverföringsprocessen](/help/data-ingestion/data-ingestion.md) som innehåller följande:<ul><li>[Skapa en anslutning](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Kontrollera att anslutningen är konfigurerad att importera nya data, data för bakåtfyllnad eller båda.</li><li>[Lägg till datauppsättningar](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Skapa datavyer](/help/data-views/create-dataview.md)</li></ul>
 
 Experimentera och dra i mått och mätvärden, ändra dimensionerna och måttattribueringsinställningar, egna namn, tidszon, sessionsinställningar osv.
 

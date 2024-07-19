@@ -4,24 +4,24 @@ description: Beskriver hur du använder funktionen Exportera hela tabeller för 
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: ee004948-3025-434b-a90b-8aa185800820
+source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
-
 # Exportera fullständig tabell
 
-I den här artikeln beskrivs hur [!DNL Customer Journey Analytics BI extension] kan användas för att implementera följande [användningsfall vid dataexport](overview.md):
+I den här artikeln beskrivs hur [!DNL Customer Journey Analytics BI extension] kan användas för att implementera följande [användningsfall för dataexport](overview.md):
 
 - Dataverifiering
 - Beredskap för AI/ML
 
 ## Introduktion
 
-Exportera data med [!DNL Customer Journey Analytics Full Table Export] Med kan du exportera data från frihandstabeller i Customer Journey Analytics Analysis Workspace.
+Genom att exportera data med [!DNL Customer Journey Analytics Full Table Export] kan du exportera data från frihandstabeller i Customer Journey Analytics Analysis Workspace.
 
 ![BI-tillägg](../assets/export-full-table.svg)
 
@@ -30,4 +30,3 @@ Exportera data med [!DNL Customer Journey Analytics Full Table Export] Med kan d
 Du kan direkt exportera allt innehåll i frihandstabeller som du skapar i Analysis Workspace till angivna molnmål med funktionen Exportera hela tabeller.
 
 Mer information finns i den detaljerade dokumentationen om [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md).
-

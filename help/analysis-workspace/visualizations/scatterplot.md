@@ -21,4 +21,4 @@ Spridningsvisningen visar förhållandet mellan dimensionsobjekt och upp till tr
 * Den tredje kolumnen bestämmer punktens radie.
 * Alla efterföljande kolumner i en friformstabell ignoreras av visualisering av punktdiagram.
 
-![Exempel på Scatplot som visar flera dimensionsobjekt ](assets/scatter.png)
+![Exempel på punktdiagram som visar flera dimensionsobjekt ](assets/scatter.png)

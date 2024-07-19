@@ -14,10 +14,10 @@ ht-degree: 0%
 
 Att markera beräknade värden som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
 
-1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** tabbtangenten och sedan välja **[!UICONTROL Calculated metrics]**.
+1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Calculated metrics]**.
 
 1. Markera stjärnan bredvid de beräknade mätvärden som du vill markera som favoriter i hanteraren för beräknade värden. Den ska nu visas som en gul stjärna:
 
    ![Gul stjärna som visar besökare från Bing.](assets/favorites.png)
 
-1. Du kan även filtrera på favoriter under **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Favorites]**.
+1. Du kan också filtrera på favoriter under **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Favorites]**.

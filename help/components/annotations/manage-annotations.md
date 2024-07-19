@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # Hantera anteckningar
 
-The [!UICONTROL Components] > [!UICONTROL Annotations] kan hantera anteckningar på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
+Hanteraren [!UICONTROL Components] > [!UICONTROL Annotations] erbjuder många sätt att hantera anteckningar, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
-The [!UICONTROL Annotations] -hanteraren visar alla anteckningar du äger som har omfattats av alla dina projekt och som har delats med dig.
+Hanteraren för [!UICONTROL Annotations] visar alla anteckningar du äger som har omfattats av alla dina projekt och som har delats med dig.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Att redigera en anteckning innebär att du kan justera datumintervall, färger, 
 
 * Håll pekaren över anteckningen i ett linjediagram och klicka på pennikonen i pekaren.
 
-* I [!UICONTROL Annotations Manager]klickar du på anteckningens titel.
+* Klicka på anteckningens titel i [!UICONTROL Annotations Manager].
 
 Båda dessa alternativ ger dig tillbaka i Annotations Builder. Där kan du göra nödvändiga justeringar och spara den nya versionen.
 

@@ -17,7 +17,7 @@ När du skapar ett nytt filter är det ibland enklare att kopiera ett befintligt
 
 Så här kopierar du ett filter i Filterhanteraren:
 
-1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** tabbtangenten och sedan välja **[!UICONTROL Filter]**.
+1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Filter]**.
 
 1. Markera det filter som du vill kopiera i Filterhanteraren.
 

@@ -33,7 +33,7 @@ Använd uppgiftsknappen Schemalägg i Report Builder-hubben för att snabbt skap
 
 1. Klicka på Schemalägg arbetsbok eller plusknappen i det övre vänstra hörnet för att skapa en ny schemalagd arbetsbok.
 
-   ![The Schedule workbooks window.](./assets/schedule-workbook.png){width="55%"}
+   ![Arbetsboksfönstret Schemalägg.](./assets/schedule-workbook.png){width="55%"}
 
    I schemaläggningsrutan visas viss fördefinierad information om arbetsboken, t.ex. arbetsbokens namn och det senaste datumet som arbetsboken ändrades.
 
@@ -45,17 +45,17 @@ Använd uppgiftsknappen Schemalägg i Report Builder-hubben för att snabbt skap
 
 1. (Valfritt) Välj **Lägg till tidsstämpel i filnamn**.
 
-   Du kan lägga till en tidsstämpel till filnamnet för att identifiera vilket datum arbetsboken uppdaterades. Detta är praktiskt om du snabbt vill se vilken version av en arbetsbok som skickades på ett visst datum. The **Förhandsgranska filnamn** visar hur arbetsbokens filnamn kommer att visas i e-postmeddelandet när arbetsboken distribueras. Tidsstämpelformatet är YYY-MM-DD.
+   Du kan lägga till en tidsstämpel till filnamnet för att identifiera vilket datum arbetsboken uppdaterades. Detta är praktiskt om du snabbt vill se vilken version av en arbetsbok som skickades på ett visst datum. **Filnamnsförhandsgranskningen** visar hur arbetsbokens filnamn kommer att visas i e-postmeddelandet när arbetsboken distribueras. Tidsstämpelformatet är YYY-MM-DD.
 
-1. (Valfritt) Välj **ZIP-komprimering** för att komprimera filen och ange lösenordsskydd för filen.
+1. (Valfritt) Välj **.zip-komprimering** om du vill komprimera filen och ange lösenordsskydd för filen.
 
-   När du väljer det här alternativet uppmanas du att ange ett lösenord för att öppna filen. Detta är praktiskt om du är orolig för datasäkerheten och vill lösenordsskydda arbetsboken. Skydda filen med ett lösenord kräver att du väljer **ZIP-komprimering**. Lösenordet måste innehålla minst 8 tecken och innehålla en siffra och ett specialtecken.
+   När du väljer det här alternativet uppmanas du att ange ett lösenord för att öppna filen. Detta är praktiskt om du är orolig för datasäkerheten och vill lösenordsskydda arbetsboken. Om du vill skydda filen med ett lösenord måste du välja **.zip-komprimering**. Lösenordet måste innehålla minst 8 tecken och innehålla en siffra och ett specialtecken.
 
    ![Ange ett lösenord i fältet Lösenordsskydda arbetsboken.](./assets/zip-compression.png){width="55%"}
 
-1. Retur **Mottagare**. Du kan ange namnet på en person som är erkänd i organisationen eller ange en e-postadress för en person inom eller utanför organisationen.
+1. Ange **mottagare**. Du kan ange namnet på en person som är erkänd i organisationen eller ange en e-postadress för en person inom eller utanför organisationen.
 
-1. Ange **Ämne** av e-postmeddelandet och en beskrivning av mottagarna. Ämnet får som standard arbetsbokens filnamn, men du kan ändra ämnet om det behövs. Du kan lägga till information i beskrivningsavsnittet.
+1. Ange **Ämne** för e-postmeddelandet och en beskrivning för mottagarna. Ämnet får som standard arbetsbokens filnamn, men du kan ändra ämnet om det behövs. Du kan lägga till information i beskrivningsavsnittet.
 
    ![Ange ett ämne i ämnesfältet.](./assets/recipients-subject.png){width="55%"}
 
@@ -67,13 +67,13 @@ Använd uppgiftsknappen Schemalägg i Report Builder-hubben för att snabbt skap
 
    ![Välj frekvens för att schemalägga rapporten.](./assets/frequency.png){width="55%"}
 
-1. När du angett schemat klickar du på **Skicka enligt schema**.
+1. När du har angett schemat klickar du på **Skicka enligt schema**.
 
    ![Klicka på Skicka enligt schema.](./assets/send-on-schedule.png){width="55%"}
 
    En bekräftelsetabell visas längst ned i Report Builder och den schemalagda arbetsboken visas på fliken Arbetsböcker.
 
-   ![Bekräftelsetabell](./assets/confirmation-toast.png){width="55%"}
+   ![Bekräftelsepopup](./assets/confirmation-toast.png){width="55%"}
 
 ## Skicka arbetsboken endast en gång
 
@@ -81,9 +81,9 @@ Du kan också skicka ut arbetsboken endast en gång.
 
 1. Avmarkera **Visa schemaläggningsalternativ**
 
-   ![Klicka på Avmarkera Visa schemaläggningsalternativ för att skicka ut en arbetsbok en gång.](./assets/send-now.png){width="40%"}
+   ![Klicka på Avmarkera Visa schemaläggningsalternativ om du vill skicka ut en arbetsbok en gång.](./assets/send-now.png){width="40%"}
 
-1. Klicka **Skicka nu**.
+1. Klicka på **Skicka nu**.
 
 ## Visa och redigera schemalagda arbetsböcker
 
@@ -105,11 +105,11 @@ Du kan visa och hantera alla schemalagda arbetsböcker på ett ställe under fli
 
 * (Valfritt) Klicka på papperskorgen för att ta bort schemaaktiviteten.
 
-  ![Skärmbild med en lista över schemalagda aktiviteter.](./assets/selected-workbook.png){width="40%"}
+  ![Skärmbild som visar listan med schemalagda aktiviteter.](./assets/selected-workbook.png){width="40%"}
 
 ## Granska status för schemalagda aktiviteter
 
-I historikvyn kan du granska statusen för varje schemalagd aktivitet. Det finns en separat rad som dokumenterar statusändringen för varje schemalagd aktivitet. I exemplet nedan visas *Nytt timschema* startades den 5 januari kl. 17.04. Senast 17:05 uppdaterades programmet och skickades till mottagarna. Nästa arbetsbok, *Felaktig arbetsbok*, påträffade ett fel under uppdateringsprocessen. Om det inte går att skicka en arbetsbok kan du felsöka på historikfliken genom att visa var i processen felet uppstod. I det här fallet beror det troligtvis på ett fel i datablocket, kanske en komponent som saknas, som hindrade arbetsboken från att uppdateras.
+I historikvyn kan du granska statusen för varje schemalagd aktivitet. Det finns en separat rad som dokumenterar statusändringen för varje schemalagd aktivitet. I exemplet nedan startades *New Timly Schedule* den 5 januari kl. 17:04. Senast 17:05 uppdaterades programmet och skickades till mottagarna. Nästa arbetsbok, *Ogiltig arbetsbok*, påträffade ett fel under uppdateringsprocessen. Om det inte går att skicka en arbetsbok kan du felsöka på historikfliken genom att visa var i processen felet uppstod. I det här fallet beror det troligtvis på ett fel i datablocket, kanske en komponent som saknas, som hindrade arbetsboken från att uppdateras.
 
 En grön bock anger att arbetsboken har skickats. Ett utropstecken i en röd triangel anger att ett fel har inträffat.
 
@@ -125,4 +125,4 @@ Du kan även visa historiken för en viss arbetsbok på fliken Arbetsböcker. Ma
 
 Arbetsboksfiltret visas sedan högst upp i historiken. Om du vill visa historiken för alla schemalagda aktiviteter igen klickar du på x bredvid filtret.
 
-![Arbetsboksfilter.](./assets/history3.png){width="55%"}
+![Arbetsboksfiltret.](./assets/history3.png){width="55%"}

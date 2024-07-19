@@ -22,7 +22,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 1. Skapa en frihandstabell med alla mått och mätvärden som du vill jämföra under en tidsperiod.
 1. Högerklicka på en tabellrad och välj **[!UICONTROL Compare Time Periods]**.
 
-   ![Tabellrad med Jämför tidsperioder markerat](assets/compare-time.png)
+   ![Tabellrad med Jämför tidsperioder markerad](assets/compare-time.png)
 
    >[!IMPORTANT]
    >
@@ -42,15 +42,15 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
 1. Jämförelsen ser ut så här:
 
-   ![Frihandstabell som visar en jämförelse av datumintervall och procentuell ändring.](assets/compare-time-result.png)
+   ![Frihandsregister som visar en jämförelse av datumintervall och procentuell ändring.](assets/compare-time-result.png)
 
    Rader i kolumnen Procent ändring visas som röda för negativa värden och gröna för positiva värden.
 
 1. (Valfritt) Som i andra Workspace-projekt kan du skapa visualiseringar baserat på dessa tidsjämförelser. Här är ett stolpdiagram:
 
-   ![Projektfältdiagram för arbetsyta.](assets/compare-time-barchart.png)
+   ![Workspace-projektfältdiagram.](assets/compare-time-barchart.png)
 
-   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages] inställningen är markerad i [!UICONTROL Visualization Settings].
+   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste inställningen [!UICONTROL Percentages] vara markerad i [!UICONTROL Visualization Settings].
 
 ## Lägg till en tidsperiodkolumn för jämförelse
 
@@ -84,15 +84,15 @@ Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan l
 
 Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from each column to all start on the same row (applies to entire table)]**. &quot;Gäller hela tabellen&quot; betyder att om du t.ex. gör en uppdelning i tabellen, och om du ändrar den här inställningen för uppdelningen, så ändras inställningen för hela tabellen.
 
-![Frihandstabell med tabellinställningspopup som visar Justera datum från varje kolumn så att alla startar på samma markerade rad.](assets/date-comparison-setting.png)
+![Friformstabell med popup-fönstret Tabellinställningar visar Justera datum från varje kolumn så att alla börjar på samma rad.](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
->Den här inställningen är **inaktiverad** (ej markerat) för alla befintliga projekt och **aktiverad** (markerat) för alla nya projekt.
+>Den här inställningen är **inaktiverad** (omarkerad) för alla befintliga projekt och **aktiverad** (markerad) för alla nya projekt.
 
 Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse mellan oktober och september 2016 börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september:
 
-![Jämförelse som visar procentandelar per månad.](assets/add-time-period-column3.png)
+![Jämförelse som visar procentsatser för månadsvis betalning.](assets/add-time-period-column3.png)
 
 <!-- 
 

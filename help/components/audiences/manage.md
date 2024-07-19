@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Genom att hantera tidigare skapade målgrupper kan ni:
 
-* **Schemalägg eller avschemalägg** automatisk uppdatering/uppdatering. Det maximala utgångsdatumet för schemat är 1 år.
-* **Förnya ett målgruppsuppdateringsschema** när den snart upphör att gälla. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan schemat förfaller.
-* Visa **uppdateringsintervall** och **senaste gången en målgrupp uppdaterades**
-* Få insikter i **hur lång tid det tog att producera en publik** från Customer Journey Analytics, och hur lång tid det tog att få målgruppen att visas i kundprofilen i realtid för aktiveringsändamål.
-* Se om målgrupperna i Customer Journey Analytics är **används aktivt av kundprofilen i realtid** eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
+* **Schemalägg eller avschemalägg** automatisk uppdatering/uppdatering av målgruppen. Det maximala utgångsdatumet för schemat är 1 år.
+* **Förnya ett målgruppsuppdateringsschema** när det snart går ut. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan schemat förfaller.
+* Visa **uppdateringsintervallet** och **senaste gången en målgrupp uppdaterades**
+* Få insikter om hur **lång tid det tog att producera en målgrupp** från Customer Journey Analytics och hur lång tid det tog att få målgruppen att visas i kundprofilen i realtid för aktiveringsändamål.
+* Se om målgrupperna i Customer Journey Analytics **används aktivt av kundprofilen i realtid** eller (helst) andra Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
 
 ## Hanteringsgränssnitt
 
-![Publikfönstret med flera filter.](assets/manage.png)
+![Publikfönstret visar flera filter.](assets/manage.png)
 
 | Användargränssnittsinställning | Definition |
 | --- | --- |
@@ -34,7 +34,7 @@ Genom att hantera tidigare skapade målgrupper kan ni:
 | [!UICONTROL Owner] | Ägaren till målgruppen - den person som skapade den. |
 | [!UICONTROL Refresh frequency] | Uppdateringsintervallet som konfigurerades när målgruppen skapades. |
 | [!UICONTROL Tags] | Alla taggar som används för den här målgruppen. |
-| [!UICONTROL Publishing status] | Kan visa [!UICONTROL Ready], [!UICONTROL In progress], eller [!UICONTROL Error]. |
+| [!UICONTROL Publishing status] | Kan visa [!UICONTROL Ready], [!UICONTROL In progress] eller [!UICONTROL Error]. |
 | [!UICONTROL  Last refreshed] | När publiken senast uppdaterades. |
 | [!UICONTROL Last modified] | När målgruppen senast redigerades eller ändrades. |
 

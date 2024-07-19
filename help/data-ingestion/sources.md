@@ -20,7 +20,7 @@ För att uppnå detta måste du:
 
 - **Konfigurera ett schema och en datauppsättning** i Adobe Experience Platform för att definiera modellen (schemat) för de data som du vill samla in och var data (datauppsättningen) ska samlas in.
 
-- **Använda en källkoppling** i Adobe Experience Platform för att hämta data till den konfigurerade datauppsättningen.
+- **Använd en källanslutning** i Adobe Experience Platform för att hämta data till den konfigurerade datauppsättningen.
 
 - **Konfigurera en anslutning** i Customer Journey Analytics. Den här anslutningen bör (åtminstone) innehålla din Adobe Experience Platform-datauppsättning.
 
@@ -50,9 +50,10 @@ Du måste först definiera ett schema som modellerar dessa data.
 
 Så här konfigurerar du ditt schema:
 
-1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** inom [!UICONTROL DATA MANAGEMENT].
+1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** i [!UICONTROL DATA MANAGEMENT] till vänster.
 
-1. Välj **[!UICONTROL Create schema]**. .
+1. Välj **[!UICONTROL Create schema]**.
+.
 1. I steget Välj en klass i guiden Skapa schema:
 
    1. Välj **[!UICONTROL Individual Profile]**.
@@ -61,12 +62,12 @@ Så här konfigurerar du ditt schema:
 
       >[!INFO]
       >
-      >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+      >    Ett Experience Event-schema används för att modellera _beteendet_ för en profil (som scennamn, push-knapp som läggs till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attribut_ (som namn, e-post, kön).
 
    1. Välj **[!UICONTROL Next]**.
 
 
-1. I [!UICONTROL Name and review step] i [!UICONTROL Create schema] guide:
+1. I [!UICONTROL Name and review step] i guiden [!UICONTROL Create schema]:
 
    1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
@@ -76,29 +77,29 @@ Så här konfigurerar du ditt schema:
 
 1. På fliken Struktur i exempelschemat:
 
-   1. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
+   1. Välj **[!UICONTROL + Add]** i [!UICONTROL Field groups].
 
-      ![Skapa schemafönster med fältgruppen Lägg till](./assets/add-field-group-button.png)
+      ![Skapa schemafönster som visar gruppen Lägg till fält](./assets/add-field-group-button.png)
 
       Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka dina scheman.
 
-   1. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL Loyalty Details]** fältgrupp från listan.
+   1. I dialogrutan [!UICONTROL Add fields groups] väljer du fältgruppen **[!UICONTROL Loyalty Details]** i listan.
 
       ![AEP Web SDK ExperienceEvent, fältgrupp](./assets/loyalty-fieldgroup.png)
 
       Du kan välja knappen Förhandsgranska om du vill se en förhandsvisning av de fält som är en del av den här fältgruppen.
 
-      ![AEP Web SDK ExperienceEvent, fältgruppförhandsgranskning](./assets/loyalty-fieldgroup-preview.png)
+      ![Förhandsgranskning av AEP Web SDK ExperienceEvent-fältgrupp](./assets/loyalty-fieldgroup-preview.png)
 
-      Välj **[!UICONTROL Back]** för att stänga förhandsgranskningen.
+      Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 
    1. Välj **[!UICONTROL Add field groups]**.
 
-1. Välj **[!UICONTROL +]** bredvid schemanamnet i [!UICONTROL Structure] -panelen.
+1. Välj **[!UICONTROL +]** bredvid schemanamnet på panelen [!UICONTROL Structure].
 
    ![Knappen Lägg till fält i exempelschema](./assets/example-loalty-schema-plus.png)
 
-1. I [!UICONTROL Field Properties] panel, ange `Identification` som namn, **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL Profile Core v2]** som [!UICONTROL Field Group].
+1. På panelen [!UICONTROL Field Properties] anger du `Identification` som namn, **[!UICONTROL Identification]** som [!UICONTROL Display name], väljer **[!UICONTROL Object]** som [!UICONTROL Type] och väljer **[!UICONTROL Profile Core v2]** som [!UICONTROL Field Group].
 
    ![Identifieringsobjekt](./assets/identifcation-loyalty-field.png)
 
@@ -106,7 +107,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
-1. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] i [!UICONTROL Field Properties] -panelen.
+1. Markera fältet **[!UICONTROL email]** i det identifieringsobjekt som du nyss lade till och välj **[!UICONTROL Identity]** och **[!UICONTROL Email]** i [!UICONTROL Identity namespace] på panelen [!UICONTROL Field Properties].
 
    ![Ange e-postadress som identitet](./assets/specify-email-loyalty-id.png)
 
@@ -114,23 +115,23 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i e-postattributet.
 
-1. Välj rotnivån för schemat (med schemanamnet) och välj sedan **[!UICONTROL Profile]** byt.
+1. Välj rotnivån för ditt schema (med schemanamnet) och välj sedan växeln **[!UICONTROL Profile]**.
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) för mer information.
+   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
 
    >[!IMPORTANT]
    >
    >    När du har sparat ett schema som är aktiverat för profilen kan det inte längre inaktiveras för profilen.
 
-   ![Aktivera schema för profil](./assets/enable-for-profile.png)
+   ![Aktivera schema för profilen](./assets/enable-for-profile.png)
 
-1. Välj **[!UICONTROL Save]** för att spara ditt schema.
+1. Välj **[!UICONTROL Save]** om du vill spara ditt schema.
 
 Du har skapat ett minimalt schema som modellerar de lojalitetsdata som du kan importera till Adobe Experience Platform. Schemat gör att profiler kan identifieras med e-postadressen. Genom att aktivera schemat för profilen ser du till att data från din strömningskälla läggs till i kundprofilen i realtid.
 
-Se [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) om du vill ha mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema.
+Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html).
 
 ### Konfigurera en datauppsättning
 
@@ -138,7 +139,7 @@ Med ditt schema har du definierat din datamodell. Nu måste du definiera konstru
 
 Så här konfigurerar du datauppsättningen:
 
-1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Datasets]** inom [!UICONTROL DATA MANAGEMENT].
+1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Datasets]** i [!UICONTROL DATA MANAGEMENT] till vänster.
 
 2. Välj **[!UICONTROL Create dataset]**.
 
@@ -156,7 +157,7 @@ Så här konfigurerar du datauppsättningen:
 
 6. Välj **[!UICONTROL Finish]**.
 
-7. Välj **[!UICONTROL Profile]** byt.
+7. Välj växeln **[!UICONTROL Profile]**.
 
    Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen är aktiverad berikas kundprofiler i realtid med inkapslade data.
 
@@ -164,9 +165,9 @@ Så här konfigurerar du datauppsättningen:
    >
    >    Du kan bara aktivera en datauppsättning för profilen när schemat, som datauppsättningen följer, också är aktiverat för profilen.
 
-   ![Aktivera schema för profil](./assets/loyalty-dataset-profile.png)
+   ![Aktivera schema för profilen](./assets/loyalty-dataset-profile.png)
 
-Se [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html) om du vill ha mer information om hur du visar, förhandsgranskar, skapar, tar bort en datauppsättning. Och hur man aktiverar en datauppsättning för kundprofil i realtid.
+Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html). Och hur man aktiverar en datauppsättning för kundprofil i realtid.
 
 
 ## Använda en källkoppling
@@ -175,15 +176,15 @@ Beroende på varifrån du får lojalitetsdata väljer du den relevanta källkopp
 
 Ni kan importera data från en mängd olika källor. Nedan följer bara några av alla tillgängliga källor:
 
-- Adobe (källanslutningarna inkluderar [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), med mera)
+- Adobe-program (källanslutningar omfattar [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) med flera)
 
-- Molnlagring (källanslutningarna inkluderar [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), med mera)
+- Molnlagring (källanslutningar omfattar [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) med flera)
 
-- Databaser (källkopplingar inkluderar) [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), med mera)
+- Databaser (källanslutningar omfattar [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) med flera)
 
 Så här konfigurerar du en källkoppling:
 
-1. I Adobe Experience Platform: **[!UICONTROL Sources]** från [!UICONTROL CONNECTIONS] till vänster.
+1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** från [!UICONTROL CONNECTIONS] i den vänstra listen.
 
 1. Välj din källanslutning i listan över tillgängliga källanslutningar.
 
@@ -193,9 +194,9 @@ Så här konfigurerar du en källkoppling:
 
    1. **[!UICONTROL Select data]**: Du väljer de källdata som du vill importera.
 
-   1. **[!UICONTROL Dataflow detail]**: Du anger mer information om dataflödet, till exempel namn och vilken datauppsättning som ska användas.
+   1. **[!UICONTROL Dataflow detail]**: Du anger ytterligare information om dataflödet, till exempel namn och vilken datauppsättning som ska användas.
 
-   1. **[!UICONTROL Mapping]**: Du mappar inkommande källdatafält till attribut i det schema som är associerat med den datamängd som du har valt.
+   1. **[!UICONTROL Mapping]**: Du mappar inkommande källdatafält till attribut i schemat som är associerat med den datamängd som du har valt.
 
    1. **[!UICONTROL Scheduling]**: Om det är tillgängligt kan du schemalägga inmatningen av data.
 
@@ -203,24 +204,24 @@ Så här konfigurerar du en källkoppling:
 
 1. Varje koppling ger detaljerad dokumentation. Så här öppnar du den här dokumentationen:
 
-   1. På kopplingsplattan väljer du **[!UICONTROL ...]** nästa [!UICONTROL Set up] eller [!UICONTROL Add data].
+   1. Markera **[!UICONTROL ...]** bredvid [!UICONTROL Set up] eller [!UICONTROL Add data] på kopplingsplattan.
 
       ![Visa dokumentation](./assets/sourceconnector-documentation.png)
 
    1. Välj **[!UICONTROL View documentation]**.
 
-Se [Importera och använda data från traditionella Adobe Analytics](./analytics.md) om du vill ha information om hur du använder Adobe Analytics källanslutning.
+Mer information om hur du använder Adobe Analytics-källkopplingen finns i [Importera och använda data från traditionella Adobe Analytics](./analytics.md).
 
-Se [Importera och använda strömmande data](./streaming.md) om du vill ha information om hur du använder HTTP API-källkopplingen.
+Mer information om hur du använder HTTP API-källkopplingen finns i [Importera och använda direktuppspelade data](./streaming.md).
 
-Se [Översikt över Source Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) för en översikt över källanslutningar, inklusive länkar till mer information för varje koppling.
+Se [Översikt över Source Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) för en översikt över källanslutningar, inklusive länkar till mer information för varje anslutning.
 
 
 ## Konfigurera en anslutning
 
 Om du vill använda Adobe Experience Platform-data i Customer Journey Analytics skapar du en anslutning som innehåller de data som är resultatet av konfigurationen av ditt schema, din datauppsättning och ditt arbetsflöde.
 
-Med en anslutning kan du integrera datauppsättningar från Adobe Experience Platform i Workspace. För att kunna rapportera om dessa datauppsättningar måste du först skapa en anslutning mellan datauppsättningar i Adobe Experience Platform och Workspace.
+Med en anslutning kan du integrera datauppsättningar från Adobe Experience Platform i Workspace. För att kunna rapportera om dessa datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Adobe Experience Platform och Workspace.
 
 Så här skapar du en anslutning:
 
@@ -228,33 +229,33 @@ Så här skapar du en anslutning:
 
 1. Välj **[!UICONTROL Create new connection]**.
 
-1. I **[!UICONTROL Untitled connection]** skärm:
+1. På skärmen **[!UICONTROL Untitled connection]**:
 
-   1. Namnge och beskriva anslutningen i **[!UICONTROL Connection Settings]**.
+   1. Namnge och beskriv din anslutning i **[!UICONTROL Connection Settings]**.
 
-   1. Välj rätt sandlåda i dialogrutan **[!UICONTROL Sandbox]** lista i **[!UICONTROL Data settings]** och välj antalet dagliga händelser i dialogrutan **[!UICONTROL Average number of daily events]** lista.
+   1. Välj rätt sandlåda i listan **[!UICONTROL Sandbox]** i **[!UICONTROL Data settings]** och välj antalet dagliga händelser i listan **[!UICONTROL Average number of daily events]**.
 
       ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
    1. Välj **[!UICONTROL Add datasets]**.
 
-1. I **[!UICONTROL Select datasets]** stega in **[!UICONTROL Add datasets]**:
+1. I steget **[!UICONTROL Select datasets]** i **[!UICONTROL Add datasets]**:
 
-   1. Välj den datauppsättning som du skapade tidigare (`Example Loyalty Dataset`) och andra datauppsättningar som du vill inkludera i anslutningen.
+   1. Markera datauppsättningen som du skapade tidigare (`Example Loyalty Dataset`) och alla andra datauppsättningar som du vill ta med i anslutningen.
 
       ![Lägg till datauppsättningar](./assets/cja-connections-2.png)
 
    1. Välj **[!UICONTROL Next]**.
 
-1. I **[!UICONTROL Datasets settings]** stega in **[!UICONTROL Add datasets]**:
+1. I steget **[!UICONTROL Datasets settings]** i **[!UICONTROL Add datasets]**:
 
    För varje datauppsättning:
 
-   1. Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
+   1. Välj en [!UICONTROL Person ID] bland de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-   1. Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
+   1. Välj rätt datakälla i listan [!UICONTROL Data source type]. Om du anger **[!UICONTROL Other]** lägger du till en beskrivning för datakällan.
 
-   1. Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
+   1. Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina inställningar.
 
       ![Konfigurera datauppsättningar](./assets/cja-connections-3.png)
 
@@ -262,7 +263,7 @@ Så här skapar du en anslutning:
 
    1. Välj **[!UICONTROL Save]**.
 
-När du har skapat en [anslutning](/help/connections/overview.md)kan du utföra olika hanteringsåtgärder, till exempel [välja och kombinera datauppsättningar](/help/connections/combined-dataset.md), [kontrollera status för en anslutnings datauppsättningar och status för datainmatning](/help/connections/manage-connections.md), med mera.
+När du har skapat en [anslutning](/help/connections/overview.md) kan du utföra olika hanteringsåtgärder, till exempel [markera och kombinera datauppsättningar](/help/connections/combined-dataset.md), [kontrollera status för en anslutnings datauppsättningar och status för dataöverföring](/help/connections/manage-connections.md), med mera.
 
 ## Konfigurera en datavy
 
@@ -274,9 +275,9 @@ Så här skapar du en datavy:
 
 2. Välj **[!UICONTROL Create new data view]**.
 
-3. I [!UICONTROL Configure] steg:
+3. I steget [!UICONTROL Configure]:
 
-   Välj din anslutning på menyn [!UICONTROL Connection] lista.
+   Välj din anslutning i listan [!UICONTROL Connection].
 
    Namn och (eventuellt) beskrivning av anslutningen.
 
@@ -284,21 +285,21 @@ Så här skapar du en datavy:
 
    Välj **[!UICONTROL Save and continue]**.
 
-4. I [!UICONTROL Components] steg:
+4. I steget [!UICONTROL Components]:
 
-   Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i [!UICONTROL METRICS] eller [!UICONTROL DIMENSIONS] komponentrutor.
+   Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i komponentrutorna [!UICONTROL METRICS] eller [!UICONTROL DIMENSIONS].
 
-   ![Datavy-komponenter](./assets/cja-dataview-2.png)
+   ![Datavykomponenter](./assets/cja-dataview-2.png)
 
    Välj **[!UICONTROL Save and continue]**.
 
-5. I [!UICONTROL Settings] steg:
+5. I steget [!UICONTROL Settings]:
 
-   ![Inställningar för datavy](./assets/cja-dataview-3.png)
+   ![Datavy settings](./assets/cja-dataview-3.png)
 
    Låt inställningarna vara som de är och välj **[!UICONTROL Save and finish]**.
 
-Se [Översikt över datavyer](../data-views/data-views.md) för mer information om hur du skapar och redigerar en datavy, vilka komponenter som är tillgängliga för dig och hur du använder filter- och sessionsinställningar.
+Mer information om hur du skapar och redigerar en datavy finns i [Översikt över datavyer](../data-views/data-views.md), vilka komponenter som är tillgängliga för dig och hur du använder inställningar för filter och sessioner.
 
 
 ## Konfigurera ett projekt
@@ -313,21 +314,21 @@ Så här skapar du ditt projekt:
 
 3. Välj **[!UICONTROL Create project]**.
 
-   ![Arbetsyteprojekt](./assets/cja-projects-1.png)
+   ![Workspace Project](./assets/cja-projects-1.png)
 
    Välj **[!UICONTROL Blank project]**.
 
-   ![Arbetsyta - Tomt projekt](./assets/cja-projects-2.png)
+   ![Workspace - Tomt projekt](./assets/cja-projects-2.png)
 
 4. Välj datavyn i listan.
 
-   ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
+   ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] . Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mått på [!UICONTROL Freeform table] i [!UICONTROL Panel] . Dra till exempel `Program Points Balance` och `Page View` som mått och `email` som mått för att få en snabb översikt över profiler som har besökt din webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
-   ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
+   ![Workspace - första rapporten](./assets/cja-projects-5.png)
 
-Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
+Mer information om hur du skapar projekt och bygger analyser med komponenter, visualiseringar och paneler finns i [Översikt över Analysis Workspace](../analysis-workspace/home.md) .
 
 >[!SUCCESS]
 >

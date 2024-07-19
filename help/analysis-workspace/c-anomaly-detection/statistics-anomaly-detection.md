@@ -21,7 +21,7 @@ Beroende på vilket datum som använts i rapporten används tre olika statistisk
 
 För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
 
-Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsbundenhet (ETS) enligt beskrivningen i [Hyndman et al. 2008](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
+Urvalet av tidsseriemodell baseras på följande kombinationer för typ av fel, trend och säsongsberoende (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
 
 1. ANA (additivt fel, ingen trend, additiv säsongsvariation)
 1. AAA (additivt fel, additiv trend, additiv säsongsvariation)
@@ -56,7 +56,7 @@ När modellen har valts och helger har identifierats i rapportdatumintervallet u
 
 Lägg märke till den dramatiska förbättringen av juldagen och nyårsdagen i följande exempel:
 
-![Två linjediagram som visar prestandaförändringar med och utan semesterprestanda.](assets/anomaly_statistics.png)
+![Två linjediagram som visar prestandaändringar med och utan semesterprestanda.](assets/anomaly_statistics.png)
 
 ## Analysidentifiering för timgranularitet
 

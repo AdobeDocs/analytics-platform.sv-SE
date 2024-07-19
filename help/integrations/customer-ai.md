@@ -1,5 +1,5 @@
 ---
-description: Ta reda på hur Adobe Experience Platform kundens AI-data integreras med Workspace i Customer Journey Analytics.
+description: Ta reda på hur Adobe Experience Platform kunddata för AI integreras med Workspace i Customer Journey Analytics.
 title: Integrera kundens AI-data med Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -27,13 +27,13 @@ Kundens AI kan integreras med Customer Journey Analytics i den utsträckning som
 * **Spåra benägenhetspoäng för ett användarsegment över tid**.
    * Användningsexempel: Förstå sannolikheten för att kunder i ett visst segment ska konvertera.
    * Exempel: En marknadsförare i en hotellkedja vill förstå sannolikheten för att en hotellkund ska köpa en showbiljett på hotellets konsertplats.
-* **Analysera vilka lyckade händelser eller attribut som är kopplade till benägenhetspoängen**.
+* **Analysera vilka lyckade händelser eller attribut som är associerade med benägenhetspoäng**.
    * Använd skiftläge: Förstå attribut eller framgångshändelser som är kopplade till benägenhetspoängen.
    * Exempel: En marknadsförare i en hotellkedja vill förstå hur inköp av showbiljetter på en konsertplats på ett hotell kopplas till benägenhetspoäng.
-* **Följ anmälningsflödet för kundbenägenhet över olika poängsättningsrundor**.
+* **Följ inmatningsflödet för kundbenägenhet över olika poängserier**.
    * Användningsexempel: Förstå personer som till en början var lågbenägna användare och som senare blev högbenägna användare.
    * Exempel: En marknadsförare i en hotellkedja vill förstå vilka hotellkunder som ursprungligen identifierades som kunder med låg benägenhet att köpa en showbiljett, men som med tiden blivit kunder med stor benägenhet att köpa en showbiljett.
-* **Titta på hur benägenheten är fördelad**.
+* **Titta på fördelningen av benägenheten**.
    * Användningsfall: Förstå fördelningen av benägenhetspoäng för att vara mer exakt när du definierar segment.
    * Exempel: En återförsäljare vill göra en viss kampanj för 50 USD av en produkt. De kanske bara vill göra en mycket begränsad befordran på grund av budgeten osv. De analyserar data och bestämmer sig för att endast inrikta sig på de 80 % mer av sina kunder.
 * **Titta på sannolikheten att utföra en åtgärd för en viss kohort över tiden**.
@@ -49,7 +49,7 @@ Så här integrerar du kundens AI-data med Customer Journey Analytics:
 
 ## Steg 1: Konfigurera en AI-instans för kund
 
-När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa följande [Konfigurera en AI-instans för kund](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html) i Adobe Experience Platform.
+När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa guiden [Konfigurera en AI-kundinstans](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html) i Adobe Experience Platform.
 
 ## Steg 2: Konfigurera en Customer Journey Analytics-anslutning till kundens AI-datauppsättningar
 
@@ -71,11 +71,11 @@ Här är ett exempel på ett XDM-schema som Customer Journey Analytics tar med s
 
 ## Steg 3: Skapa datavyer baserade på dessa anslutningar
 
-I Customer Journey Analytics kan du nu fortsätta till [skapa datavyer](/help/data-views/create-dataview.md) med mått (t.ex. poäng, poängdatum, sannolikhet o.s.v.) och mätvärden som infogades som en del av den anslutning du upprättade.
+I Customer Journey Analytics kan du nu fortsätta till [skapa datavyer](/help/data-views/create-dataview.md) med de dimensioner (till exempel poäng, poängdatum, sannolikhet o.s.v.) och mätvärden som togs in som en del av anslutningen som du upprättade.
 
-![Skapa datavyfönster](assets/create-dataview.png)
+![Skapa datavy-fönster](assets/create-dataview.png)
 
-## Steg 4: Rapport om CAI-poäng i arbetsytan
+## Steg 4: Rapport om CAI-poäng i Workspace
 
 Skapa ett nytt projekt i Customer Journey Analytics Workspace och dra in visualiseringar.
 
@@ -83,7 +83,7 @@ Skapa ett nytt projekt i Customer Journey Analytics Workspace och dra in visuali
 
 Här är ett exempel på ett Workspace-projekt med CAI-data som trendar benägenhetspoängen för ett användarsegment över tiden, i &#x200B; staplade stapeldiagram:
 
-![Poängbukar](assets/workspace-scores.png)
+![Scores-bucket](assets/workspace-scores.png)
 
 ### Tabell med orsakskoder
 
@@ -95,7 +95,7 @@ Här är en tabell som visar orsakskoder för varför ett segment har hög eller
 
 I det här flödesdiagrammet visas inmatningsflödet för kundens benägenhet jämfört med olika poängserier &#x200B;:
 
-![Inmatningsflöde](assets/flow.png)
+![Ingångsflöde](assets/flow.png)
 
 ### Fördelning av benägenhetspoäng
 
@@ -107,4 +107,4 @@ I det här stapeldiagrammet visas hur &#x200B; kan fördelas:
 
 I det här Venedig-diagrammet visas hur benägenheten överlappar olika poäng:
 
-![Propenthypsöverlappningar](assets/venn.png)
+![Propensitetsöverlappningar](assets/venn.png)

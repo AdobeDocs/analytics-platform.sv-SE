@@ -1,5 +1,5 @@
 ---
-description: Läs mer om mappar i arbetsytan
+description: Läs om Mappar i Workspace
 keywords: Analysis Workspace
 title: Översikt över mappar
 feature: Workspace Basics
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 # Om mappar i Analytics
 
-Mappar i Analytics är ett mapphanteringssystem som visas på Adobe Analytics startsida och när **Arbetsyta** > **Projekt** är markerat.
+Mappar i Analytics är ett mapphanteringssystem som visas på Adobe Analytics startsida och när **Workspace** > **Projekt** har valts.
 
-Med hjälp av mappar i arbetsytan kan du ordna och kategorisera dina projekt så att de blir lättare att hämta och få tillgång till. Med en delad företagsmapp kan administratörer dessutom enkelt skapa och dela innehåll med alla Workspace-användare.
+Med hjälp av mappar i Workspace kan du ordna och kategorisera dina projekt så att de blir lättare att hitta och komma åt. I en delad företagsmapp kan administratörer dessutom enkelt skapa och dela innehåll med alla Workspace-användare.
 
 När du har en lång lista med projekt kan det vara svårt att navigera till ett visst projekt. Med mappfunktionen kan du skapa mappar och undermappar för att hantera dina projekt, vilket gör det enklare att hitta projekt när du behöver dem.
 
-Det finns två typer av mappar i Workspace: mappen Company och personliga mappar.
+Det finns två typer av mappar i Workspace: företagsmappen och personliga mappar.
 
-När du loggar in på arbetsytan visas en lista över dina projekt tillsammans med företagsmappen och eventuella personliga mappar som du har skapat på startsidan för projekt.
+När du loggar in på Workspace visas en lista över dina projekt, liksom företagsmappen och eventuella personliga mappar som du har skapat på startsidan för projekt.
 
-![Projekt, startsida](../assets/landing-page2.png)
+![Projektstartsida](../assets/landing-page2.png)
 
 ## Om mappen Company {#company-folder}
 
@@ -38,11 +38,11 @@ När en användare loggar in på Workspace läggs företagsmappen automatiskt ti
 
 Administratörer har särskilda behörigheter tilldelade till mappen Company. Endast administratörer kan till exempel lägga till eller ta bort mappar eller projekt i företagsmappen. Användare utan administratörsåtkomst kan visa innehållet i mappen Company.
 
-![Sidan Projekt som visar administratörsalternativen.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![Sidan Projekt med administratörsalternativ.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 Icke-administratörer har begränsade alternativ.
 
-![På sidan Projekt visas alternativ som inte är administratörer för mappar.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
+![Sidan Projekt som visar alternativ för mappar som inte är administratörer.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
 ### Riktlinjer för företagsmapp {#company-folder-guidelines}
 
@@ -52,6 +52,6 @@ Icke-administratörer har begränsade alternativ.
 
 - Administratörer kan ta bort en mapp i företagsmappen som en annan administratör har skapat. Administratörer kan behöva samordna med andra administratörer för att se till att mapp- och projektåtkomsten är konsekvent.
 
-- När en administratör flyttar ett projekt till företagsmappen delas projektet med alla i **Redigera kopia** roll, även om de ursprungliga delade behörigheterna var begränsade.
+- När en administratör flyttar ett projekt till företagsmappen delas projektet med alla som har rollen **Redigera kopia**, även om de ursprungliga delade behörigheterna var begränsade.
 
 - När en administratör flyttar ett projekt från företagsmappen gäller de ursprungliga eller tidigare delningsbehörigheterna.

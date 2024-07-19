@@ -33,7 +33,7 @@ Här följer en jämförelse av funktionerna för beräknade värden och avancer
 | Grundläggande operatorer (lägg till, subtrahera, multiplicera, dividera) | Ja | Ja |
 | Använda filter | Nej | Ja |
 | [Grundfunktioner (antal, abs-värde, medelvärde osv.)](/help/components/calc-metrics/cm-functions.md) | Nej | Ja |
-| [Avancerade funktioner (regression, if/then, t-score etc.)](/help/components/calc-metrics/cm-adv-functions.md) | Nej | Ja |
+| [Avancerade funktioner (regression, if/then, t-score etc)](/help/components/calc-metrics/cm-adv-functions.md) | Nej | Ja |
 
 ## verktyg
 

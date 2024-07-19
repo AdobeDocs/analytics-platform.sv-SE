@@ -18,11 +18,11 @@ Ni kan utnyttja de nya Marketo Engage-datauppsättningarna i Adobe Experience Pl
 
 ## Steg 1: Mappa Marketo-källdatafält till deras XDM-mål
 
-Mappa [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) och [Verksamhet](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) objekt till respektive målfält för XDM-schema.
+Mappa objekten [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) och [Aktiviteter](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) till deras respektive målfält för XDM-schemat.
 
 ## Steg 2: Infoga Marketo-data i Adobe Experience Platform
 
-Använd [Marketo Engage-kontakt](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
+Använd [Marketo Engage-anslutningen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
 
 ## Steg 3: Konfigurera en anslutning till den här datauppsättningen i Customer Journey Analytics
 
@@ -30,18 +30,18 @@ För att kunna rapportera om datauppsättningar från Experience Platform måste
 
 ## Steg 4: Skapa en eller flera datavyer
 
-A [datavy](/help/data-views/data-views.md) är en behållare som är specifik för Customer Journey Analytics och som gör att du kan avgöra hur data från en anslutning ska tolkas. Här anges alla mått och mätvärden som är tillgängliga i Analysis Workspace - i det här fallet mått och mått som är specifika för Marketo. Det anger också vilka kolumner som måtten och mätvärdena hämtar data från. Datavyer definieras som förberedelser för rapportering i Analysis Workspace.
+En [datavy](/help/data-views/data-views.md) är en behållare som är specifik för Customer Journey Analytics och som gör att du kan avgöra hur data från en anslutning ska tolkas. Här anges alla mått och mätvärden som är tillgängliga i Analysis Workspace - i det här fallet mått och mått som är specifika för Marketo. Det anger också vilka kolumner som måtten och mätvärdena hämtar data från. Datavyer definieras som förberedelser för rapportering i Analysis Workspace.
 
 ## Steg 5: Rapportera i Analysis Workspace
 
 Ett exempel du kan utforska är: Hur många webbsidesbesök av leads hade vi i april-juni 2020?
 
-1. Öppna [Arbetsytan Analytics](/help/analysis-workspace/home.md) och skapa ett nytt projekt.
+1. Öppna [Analytics Workspace](/help/analysis-workspace/home.md) och skapa ett nytt projekt.
 Kunder med B2B/B2P CDP kan göra analyser i B2C-stil i Customer Journey Analytics. B2B-objekt är ännu inte tillgängliga.
 
-1. Skapa en [filter](/help/components/filters/create-filters.md) för webbsidesvyer enligt följande - Händelsetyp = web.webpagedetails.pageViews :
+1. Skapa ett [filter](/help/components/filters/create-filters.md) för webbsidesvyer enligt följande - Händelsetyp = web.webpagedetails.pageViews :
 
-   ![Definitionsfönster med händelsetyp och händelsetyp](../assets/marketo-filter.png)
+   ![Definitionsfönster med händelse- och händelsetyp](../assets/marketo-filter.png)
 
 1. Dra in filtret som du skapade - webbsidesvyer i friformstabellen och dra sedan in datumintervallet för månad. Detta ger dig möjlighet att besöka webbsidor med hjälp av leads varje månad:
 

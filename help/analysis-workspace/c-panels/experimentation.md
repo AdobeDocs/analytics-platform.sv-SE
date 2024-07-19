@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Panelen Experimentation
 
-The **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av användarupplevelser, marknadsföring och meddelanden för att avgöra vilket som är bäst för att uppnå ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe-lösningar som Target eller Journey Optimizer, och till och med från BYO (hämta in dina egna) data.
+På panelen **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av användarupplevelser, marknadsföring och meddelanden för att avgöra vilket som är bäst för att få ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe-lösningar som Target eller Journey Optimizer, och till och med från BYO (hämta in dina egna) data.
 
-Läs mer om [integrering mellan Adobe Customer Journey Analytics och Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
+Läs mer om [integreringen mellan Adobe Customer Journey Analytics och Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
 
 ## Åtkomstkontroll {#access}
 
@@ -23,46 +23,46 @@ Experimentationspanelen kan användas av alla Customer Journey Analytics-använd
 
 ## Nya funktioner i Beräknade värden {#functions}
 
-Två nya avancerade funktioner har lagts till: [!UICONTROL Lift] och [!UICONTROL Confidence]. Mer information finns i [Referens - avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md).
+Två nya avancerade funktioner lades till: [!UICONTROL Lift] och [!UICONTROL Confidence]. Mer information finns i [Referens - avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md).
 
 ## Steg 1: Skapa en anslutning för att experimentera med datauppsättningar {#connection}
 
-Det rekommenderade dataschemat är att experimentdata ska finnas i en [Objektarray](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste vara i ett **enkel** objektarray. Om du har experimenterat med data i en enda dimension (med experimentella data och variantdata i en avgränsad sträng) kan du använda [delsträng](/help/data-views/component-settings/substring.md) ställa in i datavyer för att dela dimensionen i två för användning i panelen.
+Det rekommenderade dataschemat är att experimentera data finns i en [objektarray](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste finnas i en **enkel**-objektmatris. Om du har experimenterat med data i en enda dimension (med experimentella data och variantdata i en avgränsad sträng) kan du använda inställningen [delsträng](/help/data-views/component-settings/substring.md) i datavyer för att dela dimensionen i två delar så att den kan användas i panelen.
 
-Efter att dina experimentdata har [inkapslad](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) till Adobe Experience Platform, [skapa en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdata.
+När dina experimentdata har [importerats](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) till Adobe Experience Platform [skapar du en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
 
 ## Steg 2: Lägga till kontextetiketter i datavyer {#context-labels}
 
-Administratörer kan lägga till datavyinställningar i Customer Journey Analytics [kontextetiketter](/help/data-views/component-settings/overview.md) till mått eller mätvärden och Customer Journey Analytics [!UICONTROL Experimentation] panelen kan använda dessa etiketter för sina ändamål. Två fördefinierade etiketter används för panelen Experimentation:
+I inställningarna för datavyer i Customer Journey Analytics kan administratörer lägga till [kontextetiketter](/help/data-views/component-settings/overview.md) i en dimension eller ett mått, och Customer Journey Analytics-tjänster som [!UICONTROL Experimentation]-panelen kan använda dessa etiketter för sina syften. Två fördefinierade etiketter används för panelen Experimentation:
 
 * [!UICONTROL Experimentation Experiment]
 * [!UICONTROL Experimentation Variant]
 
-I datavyn som innehåller experimentella data väljer du två dimensioner, en med experimentella data och en med variantdata. Ge sedan måtten etiketten med **[!UICONTROL Experiment]** och **[!UICONTROL Variant]** etiketter.
+I datavyn som innehåller experimentella data väljer du två dimensioner, en med experimentella data och en med variantdata. Etikettera sedan dimensionerna med etiketterna **[!UICONTROL Experiment]** och **[!UICONTROL Variant]**.
 
-![Alternativ för sammanhangsetikett för Experimentation and Experimentation Variant.](assets/context-label.png)
+![Alternativ för sammanhangsetikett för Experimentation och Experimentation Variant.](assets/context-label.png)
 
 Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte finns några experiment att arbeta med.
 
 ## Steg 3: Konfigurera panelen Experimentera {#configure}
 
-1. Dra panelen Experimentation till ett projekt i arbetsytan Customer Journey Analytics.
+1. I Customer Journey Analytics Workspace drar du panelen Experimentation till ett projekt.
 
-![Experimenteringspanelen dras till ett projekt.](assets/experiment.png)
+![Experimenteringspanelen har dragits till ett projekt.](assets/experiment.png)
 
 >[!IMPORTANT]
 >
->Om de nödvändiga inställningarna i datavyer i Customer Journey Analytics inte har slutförts får du följande meddelande innan du kan fortsätta: &quot;[!UICONTROL Please configure the experiment and variant dimensions in Data Views]&quot;.
+>Om den nödvändiga konfigurationen i datavyer i Customer Journey Analytics inte har slutförts får du det här meddelandet innan du kan fortsätta: [!UICONTROL Please configure the experiment and variant dimensions in Data Views].
 >
 
 1. Konfigurera panelens indatainställningar.
 
    | Inställning | Definition |
    | --- | --- |
-   | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har märkts med  **[!UICONTROL Experiment]** i datavyer och de tre senaste månadernas experimentdata. |
-   | **[!UICONTROL Control Variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har märkts med  **[!UICONTROL Variant]** etikett i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
+   | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har markerats med etiketten **[!UICONTROL Experiment]** i datavyer och de tre senaste månadernas experimentdata. |
+   | **[!UICONTROL Control Variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketten **[!UICONTROL Variant]** i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
    | **[!UICONTROL Success Metrics]** | Mätvärden eller mätvärden som en användare jämför varianter med. Den variant som har det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som den&quot;bästa varianten&quot; i ett experiment. Du kan lägga till upp till 5 mätvärden. |
-   | **[!UICONTROL Normalizing Metric]** | Grunden ([!UICONTROL People], [!UICONTROL Sessions], eller [!UICONTROL Events]) som testet körs på. Ett test kan t.ex. jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som **[!UICONTROL Conversions per session]** eller **[!UICONTROL Conversions per person]**. |
+   | **[!UICONTROL Normalizing Metric]** | Basen ([!UICONTROL People], [!UICONTROL Sessions] eller [!UICONTROL Events]) som ett test körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som **[!UICONTROL Conversions per session]** eller **[!UICONTROL Conversions per person]**. |
    | **[!UICONTROL Date Range]** | Datumintervallet anges automatiskt baserat på den första händelsen som togs emot i Customer Journey Analytics för det valda experimentet. Du kan begränsa eller utöka datumintervallet till en mer specifik tidsram om det behövs. |
 
 1. Klicka på **[!UICONTROL Build]**.
@@ -75,11 +75,11 @@ Du får också en textsammanfattning som anger om experimentet är slutgiltigt e
 
 För varje framgångsmått som du har valt visas en frihandstabell och en konverteringsgrad.
 
-![Experimentationsresultatet visar en friformstabell och en konverteringsgrad.](assets/exp-output1.png)
+![Experimentationsutdata visar en friformstabell och en konverteringsgrad.](assets/exp-output1.png)
 
-The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL Control Variant] prestanda:
+Diagrammet [!UICONTROL Line] ger dig prestanda för [!UICONTROL Control] jämfört med [!UICONTROL Control Variant]:
 
-![Linjediagrammets utdata med kontrollen jämfört med kontrollvariantens prestanda.](assets/exp-output2.png)
+![Linjediagrammets utdata visar prestanda för Kontroll jämfört med Kontrollvariant.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -87,15 +87,15 @@ The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL
 
 ## Steg 5: Tolka resultaten {#interpret}
 
-1. **Experiment är slutprodukt**: Varje gång du tittar på experimentrapporten analyseras de data som har samlats in i experimentet fram till nu. Och deklarerar att ett experiment är &quot;klart&quot; när ett giltigt konfidensintervall korsar ett tröskelvärde på 95 % för *minst en* av varianterna (med en Benjamini-Hochberg-korrigering tillämpad när det finns mer än två armar, för att korrigera för multipla hypotestester).
+1. **Experimentet är slutgiltigt**: Varje gång du visar experimenteringsrapporten analyseras de data som samlats in i experimentet fram till den här tidpunkten. Och deklarerar att ett experiment är &quot;antaget&quot; när ett giltigt konfidensintervall korsar ett tröskelvärde på 95 % för *minst en* av varianterna (med en Benjamini-Hochberg-korrigering tillämpad när det finns fler än två armar, för att korrigera för flera hypotesstester).
 
-2. **Best Performance Variant**: När ett experiment har förklarats vara slutgiltigt, benämns varianten med den högsta konverteringsgraden som&quot;varianten med bästa resultat&quot;. Observera att denna variant antingen måste vara kontroll- eller baslinjevarianten, eller en av varianterna som korsar det 95% som gäller vid varje tidpunkt (med korrigeringar av Benjamini-Hochberg tillämpade).
+2. **Best Performing Variant**: När ett experiment har deklarerats som entydigt markeras varianten med den högsta konverteringsgraden som&quot;bäst presterande variant&quot;. Observera att denna variant antingen måste vara kontroll- eller baslinjevarianten, eller en av varianterna som korsar det 95% som gäller vid varje tidpunkt (med korrigeringar av Benjamini-Hochberg tillämpade).
 
-3. **Konverteringsgrad**: Den konverteringsgrad som visas är en proportion mellan det framgångsrika mätvärdet och det normaliserande mätvärdet. Observera att det här värdet ibland kan vara större än 1 om mätvärdet inte är binärt (1 eller 0 för varje enhet i experimentet)
+3. **Konverteringsgrad**: Den konverteringsgrad som visas är en proportion mellan det genomförda mätvärdet och det normaliserande måttvärdet. Observera att det här värdet ibland kan vara större än 1 om mätvärdet inte är binärt (1 eller 0 för varje enhet i experimentet)
 
-4. **Lyft**: Sammanfattningen av expertrapporten visar Lyft över baslinjen, som är ett mått på den procentuella förbättringen av konverteringsgraden för en viss variant över baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given variant och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
+4. **Lyft**: Sammanfattningen av expertrapporten visar Lyft över baslinjen, vilket är ett mått på den procentuella förbättringen av konverteringsgraden för en given variant över baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given variant och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
 
-5. **Förtroende**: Det givna förtroendet som visas är ett sannolikhetsmått på hur mycket det finns bevis för att en viss variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda. Mer exakt är den sannolikhet som visas (uttryckt i procent) att du skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss variant och kontrollen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller *p*-values, the trust displayed is 1 - *p*-value.
+5. **Förtroende**: Det förtroende som visas varje gång är ett sannolikhetsmått för hur mycket bevis det finns för att en given variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda. Mer exakt är den sannolikhet som visas (uttryckt i procent) att du skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss variant och kontrollen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. Värdet för *p* är 1 - *p*.
 
 >[!NOTE]
 >
@@ -103,9 +103,9 @@ The [!UICONTROL Line] diagrammet ger dig [!UICONTROL Control] kontra [!UICONTROL
 
 ## Adobe statistisk metod {#statistics}
 
-Adobe har antagit en statistisk metod som bygger på [Sekvenser för alltid giltiga förtroenden](https://arxiv.org/abs/2103.06476).
+För att ge en enkel och säker statistisk slutsats har Adobe antagit en statistisk metod som baseras på [sekvenser med giltig konfidensordning ](https://arxiv.org/abs/2103.06476).
 
-En konfidenssekvens är *sekventiell* analog för ett konfidensintervall. För att förstå vad en konfidenssekvens är kan du föreställa dig att du upprepar dina experiment hundra gånger och beräknar en uppskattning av medelvärdet för affärsmätningen (t.ex. en öppen frekvens för ett e-postmeddelande) och dess associerade 95-procentiga konfidenssekvens för *alla nya användare* som kommer in i experimentet.
+En konfidenssekvens är en *sekventiell*-analog för ett konfidensintervall. För att förstå vad en konfidenssekvens är kan du föreställa dig att du upprepar dina experiment hundra gånger och beräknar en uppskattning av medelvärdet för affärsmätningen (t.ex. öppningsfrekvensen för ett e-postmeddelande) och dess associerade 95-procentiga konfidenssekvens för *varje ny användare* som deltar i experimentet.
 
 En 95-procentig konfidenssekvens innehåller det &quot;sanna&quot; värdet av företagsmätningen i 95 av de 100 experiment som du utförde. (Ett 95-procentigt konfidensintervall kunde endast beräknas en gång per experiment för att ge samma 95-procentiga täckningsgaranti, inte för varje enskild ny användare). Med hjälp av förtroendesekvenser kan du därför övervaka försök kontinuerligt, utan att öka antalet falska positiva fel, det vill säga de tillåter&quot;sökning&quot; vid resultat.
 
@@ -123,10 +123,10 @@ Experimenteringspanelen i Customer Journey Analytics gör att du kan analysera d
 
 Följande bild kontrasterar dessa situationer:
 
-![Ett diagram som visar observationsdata och en slumpmässig studie.](assets/randomize.png)
+![Ett diagram som visar observationsdata och den slumpmässiga utvärderingen.](assets/randomize.png)
 
 När du vill mäta effekten av intervention X på resultatet Y, är det möjligt att den verkliga orsaken till båda är den förvirrande faktorn C. Om data inte uppnås genom slumpgenerering av personer på X är effekten svårare att mäta, och analysen redogör uttryckligen för C. Slumpmässigt bryter X beroendet av C, vilket gör att vi kan mäta X:s effekt på Y utan att behöva oroa oss för andra variabler.
 
 ## Använda beräknade värden på panelen Experimentera
 
-Läs det här blogginlägget för mer information om [använda härledda värden i panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+I det här blogginlägget finns mer information om [hur du använder härledda mått på panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

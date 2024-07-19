@@ -26,13 +26,13 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 ## Skapa ett filter från en kontaktyta {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Skapa ett filter från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbart för andra rapporter. Du gör detta genom att högerklicka på kontaktytan och välja **[!UICONTROL Create filter from touchpoint]**.
+1. Skapa ett filter från en viss kontaktyta som du är särskilt intresserad av och som kan vara användbart för andra rapporter. Det gör du genom att högerklicka på kontaktytan och välja **[!UICONTROL Create filter from touchpoint]**.
 
-   ![Touchpoint-menyn med Skapa segment från kontaktyta markerad.](assets/segment-from-touchpoint.png)
+   ![Touchpoint-listrutan med Skapa segment från kontaktyta markerad.](assets/segment-from-touchpoint.png)
 
    Filterverktyget öppnas och är ifyllt med det fördefinierade sekventiella filtret som matchar den kontaktyta du valde:
 
-   ![I Filter Builder visas det förfyllda och fördefinierade sekventiella filtret.](assets/segment-builder.png)
+   ![Filterverktyget visar det ifyllda och förinbyggda sekventiella filtret.](assets/segment-builder.png)
 
 1. Ge filtret en titel och en beskrivning och spara den.
 
@@ -42,7 +42,7 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 Om du till exempel vill se hur användarna i USA trendar och påverkar utfallet drar du bara filtret för användare i USA till utfallet:
 
-![Filtret Användare i USA är markerat och markerat för att dras till utfallet.](assets/segment-touchpoint.png)
+![Filtret Användare i USA har markerats och markerats för att dras till utfallet.](assets/segment-touchpoint.png)
 
 Du kan också skapa en OCH-kontaktyta genom att dra filtret för amerikanska användare till en annan kontrollpunkt.
 
@@ -50,13 +50,13 @@ Du kan också skapa en OCH-kontaktyta genom att dra filtret för amerikanska anv
 
 Du kan jämföra ett obegränsat antal filter i Utfallsvisualiseringen.
 
-1. Välj de filter som du vill jämföra i dialogrutan [!UICONTROL Filter] till vänster. I vårt exempel har vi valt två filter: Användare i USA och Användare utanför USA.
+1. Välj de filter som du vill jämföra i fältet [!UICONTROL Filter] till vänster. I vårt exempel har vi valt två filter: Användare i USA och Användare utanför USA.
 1. Dra dem till filtersläppzonen längst upp.
 
-   ![Utfallsvisualisering med valda filter och röd pil som pekar på filtersläppszonen.](assets/segment-drop.png)
+   ![Utfallsvisualisering med valda filter och röd pil som pekar mot filtersläppszonen.](assets/segment-drop.png)
 
 1. Valfritt: Du kan behålla &quot;Alla besök&quot; som standardbehållare eller ta bort den.
 
-   ![Utfallsbilden visar alla besök tillsammans med de två filter som har dragits i föregående steg.](assets/seg-compare.png)
+   ![Utfall som visar alla besök tillsammans med de två filtren som drogs i föregående steg.](assets/seg-compare.png)
 
 1. Du kan nu jämföra utfallet för de två filtren, till exempel var ett filter ligger efter ett annat eller andra insikter.

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Översikt över Dimensioner
 
-Dimensioner är en komponenttyp i Customer Journey Analytics som används för att analysera data. Du kan till exempel använda dimensioner när du skapar rapporter i [Analysis Workspace](/help/analysis-workspace/home.md) eller in [Report Builder](/help/report-builder/report-buider-overview.md).
+Dimensioner är en komponenttyp i Customer Journey Analytics som används för att analysera data. Du kan till exempel använda dimensioner när du skapar rapporter i [Analysis Workspace](/help/analysis-workspace/home.md) eller i [Report Builder](/help/report-builder/report-buider-overview.md).
 
 Customer Journey Analytics är obegränsat. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla.
 
@@ -30,8 +30,8 @@ Varje dimension representerar en annan del eller del av din webbplats. Du kan ko
 
 ## Skapa dimensioner
 
-Customer Journey Analytics-administratörer kan [skapa dimensioner i en datavy](/help/data-views/create-dataview.md#components).
+Administratörer i Customer Journey Analytics kan [skapa dimensioner i en datavy](/help/data-views/create-dataview.md#components).
 
 ## Lägg till dimensionsbeskrivningar
 
-Administratörer i Customer Journey Analytics kan lägga till beskrivningar för dimensioner och andra komponenter antingen i datavyn eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar till dimensioner finns i [Lägga till komponentbeskrivningar](/help/components/add-component-descriptions.md).
+Administratörer i Customer Journey Analytics kan lägga till beskrivningar för dimensioner och andra komponenter antingen i datavyn eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar till dimensioner finns i [Lägg till komponentbeskrivningar](/help/components/add-component-descriptions.md).

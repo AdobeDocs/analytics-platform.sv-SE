@@ -16,16 +16,16 @@ Du kan stapla och ersätta filter i verktyget Beräknade mätvärden.
 
 ## Staplingsfilter {#stack-filter}
 
-1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mätvärden](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 1. På arbetsytan Definition släpper du det nya filtret bredvid det befintliga:
 
-![Definitionsyta som visar måtten för amerikanska besökare som släppts bredvid de befintliga internationella besökarna.](assets/cm_stack_seg.png)
+![Definitionsarbetsyta som visar det amerikanska besökarmåttet som släppts bredvid de befintliga internationella besökarna.](assets/cm_stack_seg.png)
 
 ## Ersätta ett filter med ett annat {#replace-filter}
 
-1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mätvärden](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 1. På arbetsytan Definition släpper du det nya filtret ovanpå det befintliga:
 
-![Definitionsyta som visar de amerikanska besökarna ovanpå de internationella besökarnas mätvärden.](assets/cm_replace_seg.png)
+![Definitionsyta som visar de amerikanska besökarna ovanpå de internationella besökarmåtten.](assets/cm_replace_seg.png)

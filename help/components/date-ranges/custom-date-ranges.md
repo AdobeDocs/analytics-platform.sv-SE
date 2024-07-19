@@ -20,7 +20,7 @@ Mer information om hur du lägger till befintliga datumintervall i ett projekt f
 
 Så här skapar du ett anpassat datumintervall:
 
-1. I Adobe Analytics: **[!UICONTROL Components]** > **[!UICONTROL Date ranges]**.
+1. I Adobe Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Date ranges]**.
 
    ![datumintervallsida](assets/date-ranges.png)
 
@@ -34,7 +34,7 @@ Så här skapar du ett anpassat datumintervall:
    | [!UICONTROL **Beskrivning**] | En beskrivning av datumintervallet. |
    | [!UICONTROL **Taggar**] | Eventuella taggar som du vill använda för datumintervallet. |
    | [!UICONTROL **Datumintervall**] | Välj ett anpassat datumintervall. Som standard är de senaste 30 dagarna markerade. |
-   | [!UICONTROL **Förinställning**] | Välj från en lista med förinställda datumintervall, till exempel [!UICONTROL **Igår**], [!UICONTROL **De senaste 7 dagarna**], [!UICONTROL **De senaste 30 dagarna**] och så vidare. |
+   | [!UICONTROL **Förinställning**] | Välj från en lista med förinställda datumintervall, t.ex. [!UICONTROL **I går**], [!UICONTROL **Senaste 7 dagarna**], [!UICONTROL **Senaste 30 dagarna**] o.s.v. |
    | [!UICONTROL **Starttid**] | Den tid på dagen som datumintervallet börjar. |
    | [!UICONTROL **Sluttid**] | Tiden på dagen som datumintervallet slutar. |
    | [!UICONTROL **Använd rullande datum**] | Med rullande datum kan du generera en dynamisk rapport som ser framåt eller bakåt under en angiven tidsperiod baserat på när du körde rapporten. Om du t.ex. vill rapportera alla beställningar som placerats i&quot;Senaste månaden&quot; (baserat på fältet Skapad den) och köra rapporten i december, ser du beställningar som gjorts i november. Om du körde samma rapport i januari skulle du se beställningar i december.<ul><li>**[!UICONTROL Date Preview]**: Anger vilken tidsperiod som den rullande kalendern omfattar.</li><li>**[!UICONTROL Start]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li><li>**[!UICONTROL End]**: Du kan välja mellan aktuell dag, aktuell vecka, aktuell månad, aktuellt kvartal, aktuellt år.</li></ul><br>Markerad som standard. |
@@ -47,7 +47,7 @@ I följande anpassade datumintervall visas ett datumintervall för&quot;två må
 
 ![](assets/date-range-two-months-ago.png)
 
-Det anpassade datumintervallet visas högst upp i [!UICONTROL Date Range] komponentpanelen i ditt projekt:
+Det anpassade datumintervallet visas högst upp på [!UICONTROL Date Range]-komponentpanelen i ditt projekt:
 
 ![](assets/date-range-panel-two-months-ago.png)
 

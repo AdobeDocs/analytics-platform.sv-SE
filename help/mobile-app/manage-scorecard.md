@@ -18,13 +18,13 @@ I det här avsnittet lär du dig att visa och hantera styrkortselement för Cust
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att använda filter. Segment är filter i Customer Journey Analytics.
+När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. I det här fältet kan du ange en ny **titel** för plattan och alternativt konfigurera plattan genom att använda filter. Segment är filter i Customer Journey Analytics.
 
-![Egenskapspanelen](assets/properties-tile-new.png)
+![Egenskapspanel](assets/properties-tile-new.png)
 
 ## Visa detaljbilder {#view-detail-slides}
 
-När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om en dimension inte har tillämpats, kommer uppdelningsdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
+När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om en dimension inte har tillämpats är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
 
 Uppdelningar förfinar analysen genom att dela upp mätvärden efter dimensionsobjekt som exempelvis följande:
 
@@ -32,7 +32,7 @@ Uppdelningar förfinar analysen genom att dela upp mätvärden efter dimensionso
 * Besök uppdelade efter produktkategori (detaljhandel)
 * Total intäkt uppdelad efter produktnamn
 
-![Brytningsvy](assets/break_view.png)
+![Breakdown_view](assets/break_view.png)
 
 Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
 
@@ -54,19 +54,19 @@ Du kan ändra layouten för varje detaljbild och lägga till text som bättre f�
 
 Du kan också ändra bildrutelayouten genom att dra och släppa visualiseringskomponenter från den vänstra listen på arbetsytan. Varje detaljbild kan endast innehålla två visualiseringar åt gången.
 
-![Ändra bildlayout](assets/slide-layout-change.png)
+![Ändring av bildlayout](assets/slide-layout-change.png)
 
 ### Lägga till beskrivande text i en bildruta
 
 Du kan lägga till text för att ge meningsfull information om vad som finns i diagrammen eller nyanserna om data.
 
-Om du vill lägga till text i en detaljbildruta väljer du en layout som visar `T` eller dra och släpp textvisualiseringskomponenten från den vänstra listen. Textredigeraren öppnas automatiskt när du lägger till en ny textvisualisering eller väljer en bildlayout med text. I textredigeraren finns alla standardalternativ för formatering av texten. Du kan använda textformat som stycke, rubriker och underrubriker och använda fet och kursiv stil. Du kan justera text, lägga till punktlistor och numrerade listor samt lägga till länkar. När du är klar med redigeringen klickar du på minimeringsknappen i det övre högra hörnet av textredigeraren för att stänga den. Om du vill redigera text som du redan har lagt till väljer du pennikonen och öppnar textredigeraren igen.
+Om du vill lägga till text i en detaljbildruta väljer du en layout som visar symbolen `T` eller drar och släpper textvisualiseringskomponenten från den vänstra listen. Textredigeraren öppnas automatiskt när du lägger till en ny textvisualisering eller väljer en bildlayout med text. I textredigeraren finns alla standardalternativ för formatering av texten. Du kan använda textformat som stycke, rubriker och underrubriker och använda fet och kursiv stil. Du kan justera text, lägga till punktlistor och numrerade listor samt lägga till länkar. När du är klar med redigeringen klickar du på minimeringsknappen i det övre högra hörnet av textredigeraren för att stänga den. Om du vill redigera text som du redan har lagt till väljer du pennikonen och öppnar textredigeraren igen.
 
-![Ändra bildlayout](assets/add-descriptive-text.png)
+![Ändring av bildlayout](assets/add-descriptive-text.png)
 
 ## Ta bort komponenter {#remove}
 
-Om du vill ta bort en komponent som används på hela styrkortet klickar du var som helst på styrkortet utanför plattorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **Första gången du besöker**:
+Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du håller muspekaren över komponenten, så som visas nedan för **förstagångsbesök** :
 
 ![Remove_components](assets/new_remove.png)
 
@@ -113,13 +113,13 @@ När du drar och släpper en komponent, t.ex. en visualisering, på en platta an
 >[!NOTE]
 >Bilder ärver komponenter från plattan, men rutor ärver inte komponenter från bildrutor.
 
-**Anpassa enskilda bildrutor**
+**Anpassa enskilda bilder**
 
 Du kan ändra visualiseringen för enskilda bilder i en dataartikel. Du kan till exempel ändra ett vågrätt fält till ett ringdiagram för en viss bildruta. Du kan också ändra layouten. Se [Anpassa detaljbilder](#customize-detail-slide).
 
 ### Förhandsgranska en dataartikel {#preview-data-story}
 
-När du har skapat en dataartikel använder du **Förhandsgranska** för att visa och interagera med en databerättelse som om du var en appanvändare. Mer information om hur du förhandsgranskar din dataartikel finns i [Förhandsgranska ett styrkort](#preview)
+När du har skapat en dataartikel använder du knappen **Förhandsgranska** för att visa och interagera med en dataartikel som om du var en appanvändare. Mer information om hur du förhandsgranskar din dataartikel finns i [Förhandsgranska ett styrkort](#preview)
 
 ### Navigera mellan rutor och bilder {#navigate-tiles-slides}
 
@@ -127,7 +127,7 @@ I navigeringsfältet visas ikoner som representerar vad som finns på varje bild
 
 Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
 ![Skapa en dataartikel](assets/data-story5.png)
-![Skapa en dataartikel](assets/data-story-nav.png){width="45%"}
+![Skapa en dataartikel ](assets/data-story-nav.png){width="45%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
 
@@ -135,11 +135,11 @@ Du kan också navigera fram och tillbaka genom att använda pilarna på tangentb
 
 Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har publicerats i appen Adobe Analytics dashboards.
 
-1. Klicka **[!UICONTROL Preview]** i skärmens övre högra hörn.
+1. Klicka på **[!UICONTROL Preview]** i skärmens övre högra hörn.
 
    ![Preview_scorecards](assets/preview.png)
 
-1. Om du vill visa hur styrkortet kommer att se ut på olika enheter väljer du en enhet på menyn [!UICONTROL Device preview] listruta.
+1. Om du vill visa hur styrkortet kommer att se ut på olika enheter väljer du en enhet i listrutan [!UICONTROL Device preview].
 
    ![Device_preview](assets/device-preview.png)
 
@@ -155,9 +155,9 @@ Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har
 
 Så här delar du styrkortet med en verkställande användare:
 
-1. Klicka på **[!UICONTROL Share]** meny och välj **[!UICONTROL Share scorecard]**.
+1. Klicka på menyn **[!UICONTROL Share]** och välj **[!UICONTROL Share scorecard]**.
 
-1. I **[!UICONTROL Share Mobile Scorecard]** fylla i fälten med:
+1. Fyll i fälten i formuläret **[!UICONTROL Share Mobile Scorecard]** genom att:
 
    * Ange namnet på styrkortet
    * Ange en beskrivning av styrkortet
@@ -166,11 +166,11 @@ Så här delar du styrkortet med en verkställande användare:
 
 1. Klicka på **[!UICONTROL Share]**.
 
-![Dela_styrkort](assets/new_share.png)
+![Share_Scorecards](assets/new_share.png)
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör efterföljande ändringar av styrkortet i styrkortsverktyget uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när de har uppdaterat styrkortet i sin app.
 
-Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och kontrollera **[!UICONTROL Share embedded components]** för att se till att dina chefsanvändare har tillgång till dessa ändringar.
+Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **[!UICONTROL Share embedded components]**) för att se till att dina chefsanvändare har tillgång till dessa ändringar.
 
 ### Dela styrkort med hjälp av en delbar länk
 
@@ -178,25 +178,25 @@ Genom att använda en delbar länk är det enkelt att dela ett styrkort i ett e-
 
 Dela ett styrkort med hjälp av en delbar länk
 
-1. Klicka på **[!UICONTROL Share]** meny och välj **[!UICONTROL Share scorecard]**.
+1. Klicka på menyn **[!UICONTROL Share]** och välj **[!UICONTROL Share scorecard]**.
 
-   ![Dela_styrkort](assets/share-scorecard.png)
+   ![Share_Scorecards](assets/share-scorecard.png)
 
 1. Kopiera länken och klistra in den i ett e-postmeddelande, dokument eller en snabbmeddelandeapp.
 
-   När en mottagare använder ett datorprogram eller en webbläsare för att öppna länken öppnas projektet i Workspace.
+   När en mottagare använder en datorapp eller en webbläsare för att öppna länken öppnas ett mobilstyrkortsprojekt i Workspace.
 
    När en mottagare öppnar länken på en mobil enhet öppnas styrkortet direkt i Adobe Analytics-appen för instrumentpaneler.
 
    Om en mottagare inte har laddat ned mobilappen dirigeras han/hon till applistan i App Store eller Google Play Store där han/hon kan ladda ned den.
 
 
-## Ta bort [!UICONTROL Unspecified] dimensionsuppgift {#remove-dims}
+## Ta bort dimensionsobjektet [!UICONTROL Unspecified] {#remove-dims}
 
-Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, gör följande:
+Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data gör du följande:
 
 1. Välj rätt platta.
-1. I rätt spår, under **[!UICONTROL Drill ins]** markerar du högerpilen bredvid dimensionsobjektet vars **[!UICONTROL Unspecified]** objekt som du vill ta bort.
+1. I den högra listen, under **[!UICONTROL Drill ins]**, väljer du högerpilen bredvid dimensionsobjektet vars **[!UICONTROL Unspecified]** objekt du vill ta bort.
 
    ![Egenskaper med pil som pekar mot högerpilen bredvid dimensionsnamnet.](assets/unspecified.png)
 
@@ -218,7 +218,7 @@ Så här visar du intelligenta bildtexter i ett mobilstyrkort:
 
 1. Tryck på den blå ikonen längst upp till höger för att generera bildtexterna. Bildtexterna visas under linjediagrammet.
 
-   ![Intelligent bildtext i linjvisualisering](assets/caption2.png)
+   ![Intelligent bildtext i radvisualisering](assets/caption2.png)
 
 1. Svep åt höger för att visa alla intelligenta bildtexter.
 
@@ -228,4 +228,4 @@ Så här visar du intelligenta bildtexter i ett mobilstyrkort:
 
    ![Rapportera problem med bildtext](assets/caption-report.png)
 
-1. Klicka på X för att avsluta **[!UICONTROL Report results]** -dialogrutan.
+1. Klicka på X för att avsluta dialogrutan **[!UICONTROL Report results]**.

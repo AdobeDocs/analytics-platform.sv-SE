@@ -20,47 +20,47 @@ ht-degree: 0%
 
 Med hjälp av häftning kan administratörer sätta ihop identiteter på datauppsättningar som finns i Customer Journey Analytics. Med hjälp av datauppsättningar ökar exaktheten i en profils representation, vilket i slutänden ger bättre analys och rapportering.
 
-Med sammanfogningsprocessen kan du definiera en befintlig **beständigt ID** i en datauppsättning. Häfta sedan ihop den beständiga identifieraren för ett angivet uppspelningsfönster (varje dag, varje vecka) med den mest korrekta **tillfälligt ID** (person eller autentiserad identifierare) tillgänglig för den datauppsättningen. Exempel på transienta identifierare är e-post, telefonnummer, CRM-id eller andra identiteter som lagras i diagrammet. Se [Ökning](overview.md) för mer information om häftning.
+Med sammanfogningsprocessen kan du definiera ett befintligt **beständigt ID** i en datauppsättning. Sätt sedan ihop den beständiga identifieraren för ett angivet uppspelningsfönster (varje dag, varje vecka) med det mest korrekta **transient ID** (person eller autentiserad identifierare) som är tillgängligt för den datauppsättningen. Exempel på transienta identifierare är e-post, telefonnummer, CRM-id eller andra identiteter som lagras i diagrammet. Se [Översikt](overview.md) för mer information om häftning.
 
 ## Skapa
 
 Om du vill börja sammanfoga fogar skapar du en eller flera sammanfogade datauppsättningar. Så här skapar du en sammanfogad datauppsättning:
 
-1. Välj **[!UICONTROL ** Stitlar **]** från **[!UICONTROL ** Datahantering **]** i det övre fältet.
+1. Välj **[!UICONTROL ** Stitching **]** från **[!UICONTROL ** Data Management **]** i det övre fältet.
 
-2. I [!UICONTROL Stitched datasets] skärm, välja **[!UICONTROL ** Skapa sammanfogad datauppsättning **]**.
+2. Välj **[!UICONTROL ** Skapa sammanfogad datamängd **]** på skärmen [!UICONTROL Stitched datasets].
 
    Du får en dialogruta som förklarar ditt ansvar.
 
-3. Välj **[!UICONTROL ** Fortsätt **]** om du accepterar dessa skyldigheter.
+3. Välj **[!UICONTROL ** Fortsätt **]** om du accepterar dessa ansvarsområden.
 
    >[!NOTE]
    >
-   >    Om du väljer **[!UICONTROL ** Avbryt **]** kan du inte skapa en sammanfogad datauppsättning.
+   >    Om du väljer **[!UICONTROL ** Avbryt **]** kan du inte skapa en sammansatt datauppsättning.
 
-4. I [!UICONTROL Stitched datasets > Untitled stitched dataset] skärm:
+4. På skärmen [!UICONTROL Stitched datasets > Untitled stitched dataset]:
 
-   1. Definiera en **[!UICONTROL ** Namn på datauppsättning **]** och (valfritt) **[!UICONTROL ** Beskrivning **]**,
+   1. Definiera ett **[!UICONTROL ** datauppsättningsnamn **]** och (valfritt) **[!UICONTROL ** Beskrivning **]**,
 
-   2. Välj sandlådan i dialogrutan **[!UICONTROL ** Sandbox **]** lista där händelsedatamängden lagras.
+   2. Välj sandlådan i listan **[!UICONTROL ** Sandbox **]** där händelsedatamängden lagras.
 
-      ![Skärm för inledande skapande](./assets/create-initial.png)
+      ![Startskärmen](./assets/create-initial.png)
 
-   3. Välj **[!UICONTROL ** Välj källdatauppsättning **]** -knappen.
+   3. Välj knappen **[!UICONTROL ** Välj källdatauppsättning **]**.
 
-      I [!UICONTROL Select one dataset to stitch] popup-fönster:
+      I popup-fönstret [!UICONTROL Select one dataset to stitch]:
 
       ![Välj en datauppsättning](./assets/select-one-dataset.png)
 
       - Välj en datauppsättning och välj **[!UICONTROL ** Välj **]** för att fortsätta.
 
-   4. Välj en beständig identifierare på menyn **[!UICONTROL ** Beständigt ID **]** lista.
+   4. Välj en beständig identifierare i listan **[!UICONTROL ** Beständigt ID **]**.
 
-   5. Välj en transient identifierare i **[!UICONTROL **&#x200B;Övergående ID **]** lista.
+   5. Välj en transient identifierare i listan **[!UICONTROL ** Transient ID **]**.
 
       Du ser att en förhandsvisningspanel visas för att beräkna mättnadsgraden (antal gånger det finns ett värde för var och en av de angivna identifierarna över antalet händelser) under de senaste sju dagarna. När beräkningen är klar visas färgerna på panelen om de minimala villkoren för att fästa bilden uppfylls (grönt) eller inte uppfylls (rött).
 
-      ![Skapa sammanfogad datamängd med statureringshastigheter](./assets/create-before-experimenting.png)
+      ![Skapa sammanfogad datamängd med mättnadsgrader](./assets/create-before-experimenting.png)
 
       Minimivillkoren är:
 
@@ -70,38 +70,38 @@ Om du vill börja sammanfoga fogar skapar du en eller flera sammanfogade dataupp
 
         Om minimivillkoren uppfylls kan du experimentera med provvärden.
 
-      - Välj **[!UICONTROL ** Skapa sammanfogade ID:n för demo **]**.
+      - Välj **[!UICONTROL ** Skapa sydda demo-ID:n **]**.
 
-        I [!UICONTROL Experiment with sample values] visas en tabell med exempelvärden för [!UICONTROL timestamp], [!UICONTROL Persistent ID], [!UICONTROL Transient ID], [!UICONTROL Stitched ID (Live)], [!UICONTROL Stitched ID (1-day replay)]och [!UICONTROL Stitched ID (7-day replay)].
+        I dialogrutan [!UICONTROL Experiment with sample values] visas en tabell med exempelvärden för [!UICONTROL timestamp], [!UICONTROL Persistent ID], [!UICONTROL Transient ID], [!UICONTROL Stitched ID (Live)], [!UICONTROL Stitched ID (1-day replay)] och [!UICONTROL Stitched ID (7-day replay)].
 
             ![Experimentera med exempelvärden](./assets/experiment-sample-values.png)
             
             1.  Ange ett värde för **[!UICONTROL **Persistent ID**]**.
             
-            2.  Välj **[!UICONTROL **Refresh stitched IDs**]** om du vill se effekten av sammanfogningsprocessen på data i datauppsättningen.
+            2.  Välj **[!UICONTROL **Refresh stitched IDs**]** för att se effekten av sammanfogningsprocessen på data i datauppsättningen.
             
             3.  Välj **[!UICONTROL **Close**]** när du är klar med att experimentera med provvärden.
         
 
-        Tillbaka i [!UICONTROL Stitched datasets > _Namn på datauppsättning_] skärm:
+        Tillbaka på skärmen [!UICONTROL Stitched datasets > _Datauppsättningsnamn_]:
 
-   6. Välj ett alternativ för frekvens och period för omräkning av historiska data från **[!UICONTROL ** Uppspelningsfönster **]** lista.
+   6. Välj ett alternativ för frekvens och period för omräkning av historiska data från listan **[!UICONTROL ** Uppspelningsfönster **]**.
 
-      Du kan välja mellan standardvärdena **[!UICONTROL ** Föregående dag, dagligen **]** eller **[!UICONTROL ** Föregående 7 dagar, varje vecka **]**.
+      Du kan välja mellan standardvärdet **[!UICONTROL ** Föregående dag, Varje dag **]** eller **[!UICONTROL ** Föregående 7 dagar, Varje vecka **]**.
 
-   7. Välj ett värde på menyn **[!UICONTROL ** Genomsnittligt antal dagliga händelser **]** lista.
+   7. Välj ett värde i listan **[!UICONTROL ** Genomsnittligt antal dagliga händelser **]**.
 
-   8. Ange ett värde (mellan `0` och `12`) i **[!UICONTROL ** Antal månader att fylla på igen **]**.
+   8. Ange ett värde (mellan `0` och `12`) i **[!UICONTROL ** Antal månader att fylla i igen **]**.
 
-   9. Välj **[!UICONTROL ** Spara **]** för att spara din sammanfogade datauppsättning och initiera sammanfogningen.
+   9. Välj **[!UICONTROL ** Spara **]** om du vill spara den sammanslagna datauppsättningen och initiera sammanfogningen.
 
 ## Visa status
 
-Du kan visa status för häftning i dialogrutan [!UICONTROL Stitched datasets] lista.
+Du kan visa status för sammanfogning i listan [!UICONTROL Stitched datasets].
 
-- Välj **[!UICONTROL ** Stitlar **]** från **[!UICONTROL ** Datahantering **]** i det övre fältet.
+- Välj **[!UICONTROL ** Stitching **]** från **[!UICONTROL ** Data Management **]** i det övre fältet.
 
-  Du ser en lista över sammanfogade datauppsättningar, som alla identifieras med [!UICONTROL Sandbox], [!UICONTROL Source dataset], [!UICONTROL Status], [!UICONTROL Backfill status], [!UICONTROL Owner]och [!UICONTROL Date created].
+  Du ser en lista över sammanfogade datauppsättningar, som alla identifieras med [!UICONTROL Sandbox], [!UICONTROL Source dataset], [!UICONTROL Status], [!UICONTROL Backfill status], [!UICONTROL Owner] och [!UICONTROL Date created].
 
   ![Översikt över sammanslagna datauppsättningar](./assets/overview-stitched-datasetts.png)
 
@@ -111,15 +111,15 @@ Du kan visa status för häftning i dialogrutan [!UICONTROL Stitched datasets] l
   |-----|-----|
   | **[!UICONTROL ** Köad **]** | Begäran tas emot och behandlas snart. |
   | **[!UICONTROL ** Skapande **]** pågår | Resurser och nyligen sammansatta datauppsättningar håller på att skapas. |
-  | **[!UICONTROL ** Teckning pågår **]** | Det finns resurser och sammanfogade datauppsättningar och sammanfogning pågår |
-  | **[!UICONTROL ** Fel **]** | Det är problem med att sy ihop. Ett schema kanske har ändrats mellan källdatauppsättningen och sammanfogade datauppsättningar, den dagliga volymen är för stor eller.. (_**behöver mer information här...**_) |
+  | **[!UICONTROL ** Stitching pågår **]** | Det finns resurser och sammanfogade datauppsättningar och sammanfogning pågår |
+  | **[!UICONTROL ** Fel **]** | Det är problem med att sy ihop. Ett schema kanske har ändrats mellan källdatauppsättningen och sammanfogade datauppsättningar, den dagliga volymen är för stor eller... (_**behöver mer information här..**_) |
 
   >[!INFO]
   >
-  >    När en status ändras skickas ett meddelande med meddelandet **[!UICONTROL ** Stitled dataset _datauppsättningens namn_ har ändrats till status _namn på status _**]**.
+  >    Varje gång en status ändras skickas ett meddelande med meddelandet **[!UICONTROL ** Den namngivna datauppsättningen _namnet på datauppsättningen_ har ändrats till status _statusnamnet _**]**.
 
 
-  The [!UICONTROL Backfill status] kan ha följande värden: 0 %, 25 %, 50 %, 75 % eller 100 %.
+  [!UICONTROL Backfill status] kan ha följande värden: 0 %, 25 %, 50 %, 75 % eller 100 %.
 
   Du kan välja informationsikonen om du vill visa ett popup-fönster med mer information om den valda sammanfogade datauppsättningen.
 
@@ -128,17 +128,17 @@ Du kan visa status för häftning i dialogrutan [!UICONTROL Stitched datasets] l
 
 >[!NOTE]
 >
->Du kan bara ta bort datauppsättningar som har status [!UICONTROL Stitching in progress], [!UICONTROL Error], eller [!UICONTROL Queued].
+>Du kan bara ta bort datauppsättningar som har statusen [!UICONTROL Stitching in progress], [!UICONTROL Error] eller [!UICONTROL Queued].
 
 
 Så här tar du bort en sammanfogad datauppsättning:
 
-- Välj **[!UICONTROL **...**]** för den sammanslagna datauppsättningen och välj **[!UICONTROL ** Ta bort **]** på menyn.
+- Välj **[!UICONTROL **..**]** för den sammanslagna datauppsättningen och välj **[!UICONTROL ** Ta bort **]** på menyn.
 
-  ![Ta bort en sammanfogad datauppsättning](./assets/delete-stitched-dataset.png)
+  ![Ta bort en sammansatt datauppsättning](./assets/delete-stitched-dataset.png)
 
 Så här tar du bort flera sammanfogade data:
 
 - Markera flera sammanfogade datauppsättningar med kryssrutan i början av varje listad datauppsättning.
 
-- Välj **[!UICONTROL **...**]** från en av de markerade sammanfogade datauppsättningarna och välj **[!UICONTROL ** Ta bort **]** på menyn.
+- Välj **[!UICONTROL **..**]** från en av de markerade sammanslagna datauppsättningarna och välj **[!UICONTROL ** Ta bort **]** på menyn.

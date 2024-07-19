@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Paneler - översikt
 
-A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser.
+En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser.
 
 ## Paneltyper
 
@@ -23,16 +23,16 @@ Följande paneltyper är tillgängliga i Analysis Workspace för [!UICONTROL Cus
 | --- | --- |
 | [Tom panel](/help/analysis-workspace/c-panels/blank-panel.md) | Välj bland tillgängliga paneler och visualiseringar för att starta analysen. |
 | [Panelen Snabbinsikter](quickinsight.md) | Bygg snabbt ett frihandsbord och en medföljande visualisering för att analysera och hitta insikter snabbare. |
-| [Attributionspanelen](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
+| [Panelen Attribution](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
 | [Frihandspanel](freeform-panel.md) | Utför obegränsade jämförelser och uppdelningar och lägg sedan till visualiseringar för att berätta en utförlig databerättelse. |
 | [Panelen för samtidiga medieanvändare](media-concurrent-viewers.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
-| [Panelen Medieuppspelning - tidsfördröjning](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysera den uppspelningstid som använts för att förstå var maximal samtidighet inträffade eller var bortfall inträffade. |
+| [Panelen Tidsuppgift för mediauppspelning](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysera den uppspelningstid som använts för att förstå var maximal samtidighet inträffade eller var bortfall inträffade. |
 
-![Panelen Customer Journey Analytics med en lista över tillgängliga paneltyper.](assets/panel-overview.png)
+![Panelen Customer Journey Analytics med en lista över tillgängliga paneltyper..](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Blank] och [!UICONTROL Freeform] paneler är bra att använda för att starta analysen, medan [!UICONTROL Attribution IQ] ger sig själv till mer avancerade analyser. A `"+"` -knappen är tillgänglig i projekt så att du kan lägga till tomma paneler när som helst.
+[!UICONTROL Quick Insights]-, [!UICONTROL Blank]- och [!UICONTROL Freeform]-panelerna är bra platser att starta analysen på, medan [!UICONTROL Attribution IQ] är intresserad av mer avancerade analyser. En `"+"`-knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
 
-Standardstartpanelen är [!UICONTROL Freeform] men du kan göra [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) även din standard.
+Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den [tomma panelen](/help/analysis-workspace/c-panels/blank-panel.md) till standardpanel.
 
 ## Kalender {#calendar}
 
@@ -40,7 +40,7 @@ Panelkalendern styr rapporteringsintervallet för tabeller och visualiseringar i
 
 Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering eller paneldropzon åsidosätts panelkalendern.
 
-![Kalenderfönstret som visar det valda datumintervallet.](assets/panel-calendar.png)
+![Kalenderfönstret visar det valda datumintervallet.](assets/panel-calendar.png)
 
 Du kan använda ett datumintervall på minutnivå under de avancerade inställningarna i panelkalendern. Om du rapporterar i ett datumintervall som sträcker sig över många dagar, gäller starttiden den första dagen och sluttiden den sista dagen i intervallet.
 
@@ -62,7 +62,7 @@ Ad hoc-filter är en typ av snabbfilter och är lokala för projektet. De visas 
 
 Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
-![Ad hoc-filter som publiceras och släpps in i släppzonen.](assets/adhoc-segment-filter.png)
+![Ad hoc-filter som är offentliga och släppta i släppzonen.](assets/adhoc-segment-filter.png)
 
 ### Statiska nedrullningsbara filter
 
@@ -74,26 +74,26 @@ Statiska nedrullningsbara filter kan också användas för att konsolidera flera
 
 #### Skapa statiska listrutefilter
 
-* För nedrullningsbara filter som använder dimensionsobjekt väljer du en dimension från den vänstra listen och släpper den i panelens listruta **samtidigt som du håller`[Shift]`**. Detta skapar ett nedrullningsbart filter med alla dimensionsobjekt som är associerade med den dimensionen.
+* För nedrullningsbara filter som använder dimensionsobjekt väljer du en dimension från den vänstra listen och släpper den i panelens listruta **medan du håller ned`[Shift]`**. Detta skapar ett nedrullningsbart filter med alla dimensionsobjekt som är associerade med den dimensionen.
 
-  Eller om du vill att listrutefiltret bara ska innehålla vissa dimensionsobjekt som är kopplade till en dimension, klickar du på högerpilsikonen bredvid önskad dimension i den vänstra listen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Välj flera dimensionsobjekt från den här listan med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **samtidigt som du håller** `[Shift]`.
+  Eller om du vill att listrutefiltret bara ska innehålla vissa dimensionsobjekt som är kopplade till en dimension, klickar du på högerpilsikonen bredvid önskad dimension i den vänstra listen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Välj flera dimensionsobjekt från den här listan med `[Shift + Click]` eller `[Ctrl + Click]` och släpp dem sedan i panelens dropzone **samtidigt som du håller ned** `[Shift]`.
 
-* För nedrullningsbara filter som använder en enda komponenttyp (t.ex. bara dimensioner, eller bara filter, eller endast mätvärden) väljer du flera objekt av samma typ i den vänstra listen med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **samtidigt som du håller`[Shift]`**.
+* För nedrullningsbara filter som använder en enda komponenttyp (t.ex. bara dimensioner, eller bara filter, eller endast mätvärden) väljer du flera objekt av samma typ i den vänstra listen med `[Shift + Click]` eller `[Ctrl + Click]` och släpper dem sedan i panelens dropzone **medan du håller`[Shift]`**.
 
   Ett enda nedrullningsbart filter skapas med komponenter som du har valt.
 
-* För nedrullningsbara filter som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 filter) väljer du flera komponenter med `[Shift + Click]` eller `[Ctrl + Click]`. Släpp markeringen i panelens dropzone **samtidigt som du håller`[Shift]`**. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara filter. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara filter: ett nedrullningsbart filter innehåller dimensionsobjekt och det andra innehåller mått.
+* För nedrullningsbara filter som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 filter) väljer du flera komponenter med `[Shift + Click]` eller `[Ctrl + Click]`. Släpp markeringen i panelens dropzone **medan du håller ned`[Shift]`**. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara filter. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara filter: ett nedrullningsbart filter innehåller dimensionsobjekt och det andra innehåller mått.
 
   ![Panelfönstret med segmentfältet Mobile Customer tillgängligt för att släppa ett statiskt nedrullningsfilter. ](assets/create-dropdown.png)
 
 Om du högerklickar på ett nedrullningsbart filter finns följande alternativ:
 
-* **[!UICONTROL Delete drop-down]**: Tar bort det nedrullningsbara filtret från panelen.
+* **[!UICONTROL Delete drop-down]**: Tar bort nedrullningsfiltret från panelen.
 * **[!UICONTROL Delete label]**: Ta bort texten ovanför ett nedrullningsbart filter. Om du vill ändra etiketten väljer du pennikonen .
 * **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart filter i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
 * **[!UICONTROL Require selection]**: Kräver att ett filter är inställt på panelen.
 
-[Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) om du vill veta mer om hur du lägger till nedrullningsbara filter i ett projekt.
+[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) om du vill veta mer om hur du lägger till nedrullningsbara filter i ditt projekt.
 
 #### Använda statiska nedrullningsbara filter
 
@@ -111,13 +111,13 @@ Med dynamiska nedrullningsbara filter kan du bestämma tillgängliga värden bas
 
 Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade filter visas. De Dimensioner som markeras i statiska nedrullningsbara filter påverkar tillgängliga värden i dynamiska nedrullningsbara filter. Inverteringen är emellertid inte true. De Dimensioner som markeras i dynamiska listrutefilter påverkar inte tillgängliga värden i statiska listrutefilter.
 
-Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart filter så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara filter kan innehålla fler värden. Välj **[!UICONTROL Reset all]** för att ta bort markeringen från alla nedrullningsbara filter för den panelen.
+Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart filter så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara filter kan innehålla fler värden. Välj **[!UICONTROL Reset all]** om du vill ta bort markeringen från alla nedrullningsbara filter för den panelen.
 
 Så här skapar du ett dynamiskt nedrullningsbart filter:
 
-* Dra och släpp en dimension till panelens dropzone **samtidigt som du håller`[Shift]`**.
+* Dra och släpp en dimension till panelens dropzone **medan du håller ned`[Shift]`**.
 * Dynamiska nedrullningsbara filter är inte tillgängliga för mått, filter eller datumintervall.
-* Högerklicka på ett nedrullningsbart filter och välj **[!UICONTROL Delete filter]** för att ta bort den.
+* Högerklicka på ett nedrullningsbart filter och välj **[!UICONTROL Delete filter]** för att ta bort det.
 
 Om du högerklickar på ett dynamiskt nedrullningsbart filter finns samma alternativ som för statiska nedrullningsbara filter.
 
@@ -125,7 +125,7 @@ Om du högerklickar på ett dynamiskt nedrullningsbart filter finns samma altern
 
 Ytterligare funktioner för en panel är tillgängliga genom att högerklicka på panelhuvudet.
 
-![Högerklicka på alternativen för en panelrubrik.](assets/right-click-menu.png)
+![Alternativ för högerklick för en panelrubrik.](assets/right-click-menu.png)
 
 Följande inställningar är tillgängliga:
 

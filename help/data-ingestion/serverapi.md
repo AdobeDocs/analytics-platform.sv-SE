@@ -1,6 +1,6 @@
 ---
-title: Importera data via Adobe Experience Platform Edge Network Server API
-description: Förklara hur data importeras till Customer Journey Analytics via Adobe Experience Platform Edge Network Server API och Edge Network
+title: Infoga data via Adobe Experience Platform Edge Network Server-API
+description: Förklara hur man importerar data till Customer Journey Analytics via Adobe Experience Platform Edge Network Server API och Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Importera data via Adobe Experience Platform Edge Network Server API
+# Infoga data via Adobe Experience Platform Edge Network Server-API
 
 Den här snabbstartsguiden förklarar hur du kan importera spårningsdata från enheter som IoT-enheter, digitalboxar, spelkonsoler och datorprogram direkt till Adobe Experience Platform med Adobe Experience Platform Edge Network Server API och Edge Network. Använd sedan dessa data i Customer Journey Analytics.
 
@@ -20,9 +20,9 @@ För att uppnå detta måste du:
 
 - **Konfigurera ett schema och en datauppsättning** i Adobe Experience Platform för att definiera modellen (schemat) för de data som du vill samla in och var data (datauppsättningen) ska samlas in.
 
-- **Konfigurera en datastream** för att konfigurera Adobe Experience Platform Edge Network så att insamlade data dirigeras till datauppsättningen som du konfigurerade i Adobe Experience Platform.
+- **Konfigurera en datastream** för att konfigurera Adobe Experience Platform Edge Network att dirigera dina insamlade data till datauppsättningen som du konfigurerade i Adobe Experience Platform.
 
-- **Använd server-API** för att skicka data direkt från programmet eller spelet som körs på en stationär dator, spelkonsol, IoT-enhet eller digitalbox till din datastam.
+- **Använd Server-API:t** om du vill skicka data direkt från programmet eller spelet som körs på en stationär dator, spelkonsol, IoT-enhet eller digitalbox till datastream.
 
 - **Distribuera och validera**. Ha en miljö där du kan iterera på utvecklingen och publicera den live i produktionsmiljön när allt har validerats.
 
@@ -52,9 +52,10 @@ Du måste först definiera ett schema som modellerar dessa data.
 
 Så här konfigurerar du ditt schema:
 
-1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** inom [!UICONTROL DATA MANAGEMENT].
+1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Schemas]** i [!UICONTROL DATA MANAGEMENT] till vänster.
 
-1. Välj **[!UICONTROL Create schema]**. .
+1. Välj **[!UICONTROL Create schema]**.
+.
 1. I steget Välj en klass i guiden Skapa schema:
 
    1. Välj **[!UICONTROL Experience Event]**.
@@ -63,12 +64,12 @@ Så här konfigurerar du ditt schema:
 
       >[!INFO]
       >
-      >    Ett Experience Event-schema används för att modellera _beteende_ för en profil (som scennamn, tryck på knappen för att lägga till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attributes_ (som namn, e-post, kön).
+      >    Ett Experience Event-schema används för att modellera _beteendet_ för en profil (som scennamn, push-knapp som läggs till i kundvagnen). Ett enskilt profilschema används för att modellera profilen _attribut_ (som namn, e-post, kön).
 
    1. Välj **[!UICONTROL Next]**.
 
 
-1. I [!UICONTROL Name and review step] i [!UICONTROL Create schema] guide:
+1. I [!UICONTROL Name and review step] i guiden [!UICONTROL Create schema]:
 
    1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
@@ -78,21 +79,21 @@ Så här konfigurerar du ditt schema:
 
 1. På fliken Struktur i exempelschemat:
 
-   1. Välj **[!UICONTROL + Add]** in [!UICONTROL Field groups].
+   1. Välj **[!UICONTROL + Add]** i [!UICONTROL Field groups].
 
       ![Lägg till fältgrupp](./assets/add-field-group-button.png)
 
       Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
-   1. I [!UICONTROL Add fields groups] väljer du **[!UICONTROL Blinding Light]** fältgrupp från listan. Den här fältgruppen skapas för att spåra användarförloppet i ett fiktivt spel med namnet Blinding Light på en konsol.
+   1. I dialogrutan [!UICONTROL Add fields groups] väljer du fältgruppen **[!UICONTROL Blinding Light]** i listan. Den här fältgruppen skapas för att spåra användarförloppet i ett fiktivt spel med namnet Blinding Light på en konsol.
 
-      ![Fältgruppen Ljus](assets/schema-fieldgroup-blindinglight.png)
+      ![Ljust fältgrupp för blinkning](assets/schema-fieldgroup-blindinglight.png)
 
-      Du kan välja knappen Förhandsgranska om du vill se en förhandsgranskning av fälten som är en del av den här fältgruppen, som `scores > afterMatch`.
+      Du kan välja knappen för förhandsgranskning om du vill se en förhandsgranskning av fälten som ingår i den här fältgruppen, till exempel `scores > afterMatch`.
 
-      ![Fältgruppsförhandsvisning för ljus som blinkar](assets/schema-fieldgroup-blindinglight-preview.png)
+      ![Förhandsvisning av fältgruppen Ljus blinkning](assets/schema-fieldgroup-blindinglight-preview.png)
 
-      Välj **[!UICONTROL Back]** för att stänga förhandsgranskningen.
+      Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 
    1. Välj **[!UICONTROL Add field groups]**.
 
@@ -100,11 +101,11 @@ Så här konfigurerar du ditt schema:
 
    ![Knappen Lägg till fält i exempelschema](./assets/example-gamingschema-plus.png)
 
-1. I [!UICONTROL Field Properties] panel, ange `identification` som [!UICONTROL Field name], **[!UICONTROL Identification]** som [!UICONTROL Display name], markera **[!UICONTROL Object]** som [!UICONTROL Type] och markera **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
+1. På panelen [!UICONTROL Field Properties] anger du `identification` som [!UICONTROL Field name], **[!UICONTROL Identification]** som [!UICONTROL Display name], väljer **[!UICONTROL Object]** som [!UICONTROL Type] och väljer **[!UICONTROL ExperienceEvent Core v2.1]** som [!UICONTROL Field Group].
 
    >[!NOTE]
    >
-   >Om fältgruppen inte är tillgänglig söker du efter en annan fältgrupp som innehåller identitetsfält. eller [skapa en ny fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) och [lägg till nya identitetsfält](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (som `ecid`, `crmId`och andra som du behöver) till fältgruppen och markera den nya fältgruppen.
+   >Om fältgruppen inte är tillgänglig söker du efter en annan fältgrupp som innehåller identitetsfält. Eller [skapa en ny fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) och [lägg till nya identitetsfält](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (som `ecid`, `crmId` och andra som du behöver) i fältgruppen och markera den nya fältgruppen.
 
    ![Identifieringsobjekt](./assets/identification-field-gaming.png)
 
@@ -112,7 +113,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
-1. Välj **[!UICONTROL ecid]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och **[!UICONTROL ECID]** från [!UICONTROL Identity namespace] i den högra panelen.
+1. Markera fältet **[!UICONTROL ecid]** i det identifieringsobjekt som du nyss lade till och välj **[!UICONTROL Identity]**, **[!UICONTROL Primary Identity]** och **[!UICONTROL ECID]** i listan [!UICONTROL Identity namespace] i den högra panelen.
 
    ![Ange ECID som identitet](./assets/specify-identity-gaming.png)
 
@@ -120,7 +121,7 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i attributet ecid.
 
-1. Välj **[!UICONTROL email]** fält i det identifieringsobjekt som du just lade till, och markera **[!UICONTROL Identity]** och **[!UICONTROL Email]** från [!UICONTROL Identity namespace] listan i [!UICONTROL Field Properties] -panelen.
+1. Markera fältet **[!UICONTROL email]** i det identifieringsobjekt som du nyss lade till och välj **[!UICONTROL Identity]** och **[!UICONTROL Email]** i listan [!UICONTROL Identity namespace] på panelen [!UICONTROL Field Properties].
 
    ![Ange e-postadress som identitet](./assets/specify-email-identity-gaming.png)
 
@@ -130,19 +131,19 @@ Så här konfigurerar du ditt schema:
 
    Välj **[!UICONTROL Save]**.
 
-1. Markera rotelementet i schemat som visar schemats namn och välj sedan **[!UICONTROL Profile]** byt.
+1. Markera rotelementet i schemat som visar schemats namn och välj sedan växeln **[!UICONTROL Profile]**.
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Se [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) för mer information.
+   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
 
    >[!IMPORTANT]
    >
    >    När du har sparat ett schema som är aktiverat för profilen kan det inte längre inaktiveras för profilen.
 
-   ![Aktivera schema för profil](./assets/enable-for-profile.png)
+   ![Aktivera schema för profilen](./assets/enable-for-profile.png)
 
-1. Välj **[!UICONTROL Save]** för att spara ditt schema.
+1. Välj **[!UICONTROL Save]** om du vill spara ditt schema.
 
 Du har skapat ett minimalt schema som modellerar de data du kan hämta från ditt spel. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profilen ser du till att data som hämtats från ditt konsolspel läggs till i kundprofilen i realtid.
 
@@ -160,7 +161,7 @@ Så här hämtar du profildata:
 
 - Aktivera schemat för profilen
 
-Se [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) om du vill ha mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema.
+Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html).
 
 ### Konfigurera en datauppsättning
 
@@ -168,7 +169,7 @@ Med ditt schema har du definierat din datamodell. Nu måste du definiera konstru
 
 Så här konfigurerar du datauppsättningen:
 
-1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Datasets]** inom [!UICONTROL DATA MANAGEMENT].
+1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Datasets]** i [!UICONTROL DATA MANAGEMENT] till vänster.
 
 2. Välj **[!UICONTROL Create dataset]**.
 
@@ -186,7 +187,7 @@ Så här konfigurerar du datauppsättningen:
 
 6. Välj **[!UICONTROL Finish]**.
 
-7. Välj **[!UICONTROL Profile]** byt.
+7. Välj växeln **[!UICONTROL Profile]**.
 
    Du uppmanas att aktivera datauppsättningen för profilen. När datauppsättningen är aktiverad berikas kundprofiler i realtid med inkapslade data.
 
@@ -194,23 +195,23 @@ Så här konfigurerar du datauppsättningen:
    >
    >    Du kan bara aktivera en datauppsättning för profilen när schemat, som datauppsättningen följer, också är aktiverat för profilen.
 
-   ![Aktivera schema för profil](./assets/aepwebsdk-dataset-profile.png)
+   ![Aktivera schema för profilen](./assets/aepwebsdk-dataset-profile.png)
 
-Se [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html) om du vill ha mer information om hur du visar, förhandsgranskar, skapar, tar bort en datauppsättning. Och hur man aktiverar en datauppsättning för kundprofil i realtid.
+Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html). Och hur man aktiverar en datauppsättning för kundprofil i realtid.
 
 ## Konfigurera en datastream
 
-En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras och API:t för Adobe Experience Platform Edge Network Server. När data samlas in med Adobe Experience Platform SDK:er och Edge Network Server API:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
+En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras och Adobe Experience Platform Edge Network Server API. När du samlar in data med Adobe Experience Platform SDK:er och Edge Network Server-API:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
 
 I din konfiguration vill du att de data du samlar in från spelet ska skickas till din datauppsättning i Adobe Experience Platform.
 
 Så här konfigurerar du datastream:
 
-1. I användargränssnittet för Adobe Experience Platform väljer du **[!UICONTROL Datastreams]** från [!UICONTROL DATA COLLECTION] till vänster.
+1. I Adobe Experience Platform-gränssnittet väljer du **[!UICONTROL Datastreams]** från [!UICONTROL DATA COLLECTION] i den vänstra listen.
 
 2. Välj **[!UICONTROL New Datastream]**.
 
-3. Namnge och beskriv ditt datastream. Välj ditt schema från [!UICONTROL Event Schema] lista.
+3. Namnge och beskriv ditt datastream. Välj ditt schema i listan [!UICONTROL Event Schema].
 
    ![Ny datastream](./assets/new-datastream.png)
 
@@ -220,23 +221,23 @@ Så här konfigurerar du datastream:
 
 6. I [!UICONTROL Add Service screen]:
 
-   1. Välj **[!UICONTROL Adobe Experience Platform]** från [!UICONTROL Service] lista.
+   1. Välj **[!UICONTROL Adobe Experience Platform]** i listan [!UICONTROL Service].
 
-   2. Säkerställ **[!UICONTROL Enabled]** är markerat.
+   2. Kontrollera att **[!UICONTROL Enabled]** är markerat.
 
-   3. Välj din datauppsättning på [!UICONTROL Event Dataset] lista.
+   3. Välj datauppsättningen i listan [!UICONTROL Event Dataset].
 
-      ![Tjänsten Datastream AEP](./assets/datastream-aep-service.png)
+      ![Datastream AEP-tjänst](./assets/datastream-aep-service.png)
 
-   4. Lämna de andra inställningarna och välj **[!UICONTROL Save]** för att spara datastream.
+   4. Lämna de andra inställningarna och välj **[!UICONTROL Save]** för att spara dataströmmen.
 
 Din datastream är nu konfigurerad för att vidarebefordra data som samlats in från ditt spel till datauppsättningen i Adobe Experience Platform.
 
-Se [Översikt över datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) om du vill ha mer information om hur du konfigurerar ett datastam och hur du hanterar känsliga data.
+Mer information om hur du konfigurerar ett datastam och hur du hanterar känsliga data finns i [Översikt över datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
-## Använd Edge Network Server API
+## Använd Edge Network Server-API
 
-Under spelets utveckling kan du lägga till relevanta anrop till Adobe Experience Platform Edge Network Server API där det är lämpligt.
+När du utvecklar ditt spel kan du lägga till relevanta anrop till Adobe Experience Platform Edge Network Server API där det är lämpligt.
 
 Om du till exempel vill uppdatera spelarens musikspår använder du:
 
@@ -269,15 +270,15 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 }'
 ```
 
-I exempelbegäran om POST `{DATASTREAM_ID}` pekar på identifieraren för exempeldatastream som du konfigurerade tidigare. `{sandbox}` är det unika namnet på sandlådan som identifierar sökvägen till den anpassade fältgruppen Ljus lutning.
+I exempeldatabegäran pekar `{DATASTREAM_ID}` på identifieraren för det exempeldataflöde som du konfigurerade tidigare. `{sandbox}` är det unika namnet på din sandlåda som identifierar sökvägen till den anpassade fältgruppen Ljus lutning.
 
-Se [Interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) och [Icke-interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) om du vill ha mer information om hur du använder API:t för Edge Network Server.
+Se [Interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) och [Icke-interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) om du vill ha mer information om hur du använder Edge Network Server-API:t.
 
 ## Konfigurera en anslutning
 
 Om du vill använda Adobe Experience Platform-data i Customer Journey Analytics skapar du en anslutning som innehåller de data som är resultatet av konfigurationen av ditt schema, din datauppsättning och ditt arbetsflöde.
 
-Med en anslutning kan du integrera datauppsättningar från Adobe Experience Platform i Workspace. För att kunna rapportera om dessa datauppsättningar måste du först skapa en anslutning mellan datauppsättningar i Adobe Experience Platform och Workspace.
+Med en anslutning kan du integrera datauppsättningar från Adobe Experience Platform i Workspace. För att kunna rapportera om dessa datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Adobe Experience Platform och Workspace.
 
 Så här skapar du en anslutning:
 
@@ -285,37 +286,37 @@ Så här skapar du en anslutning:
 
 2. Välj **[!UICONTROL Create new connection]**.
 
-3. I [!UICONTROL Untitled connection] skärm:
+3. På skärmen [!UICONTROL Untitled connection]:
 
-   Namnge och beskriva anslutningen i [!UICONTROL Connection Settings].
+   Namnge och beskriv din anslutning i [!UICONTROL Connection Settings].
 
-   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Average number of daily events] lista.
+   Välj rätt sandlåda i listan [!UICONTROL Sandbox] i [!UICONTROL Data settings] och välj antalet dagliga händelser i listan [!UICONTROL Average number of daily events].
 
    ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
    Välj **[!UICONTROL Add datasets]**.
 
-   I [!UICONTROL Select datasets] stega in [!UICONTROL Add datasets]:
+   I steget [!UICONTROL Select datasets] i [!UICONTROL Add datasets]:
 
    - Välj datauppsättningar som du har skapat tidigare och/eller andra relevanta datauppsättningar som du vill inkludera i anslutningen
 
    - Välj **[!UICONTROL Next]**.
 
-   I [!UICONTROL Datasets settings] stega in [!UICONTROL Add datasets]:
+   I steget [!UICONTROL Datasets settings] i [!UICONTROL Add datasets]:
 
    - För varje datauppsättning:
 
-      - Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
+      - Välj en [!UICONTROL Person ID] bland de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
+      - Välj rätt datakälla i listan [!UICONTROL Data source type]. Om du anger **[!UICONTROL Other]** lägger du till en beskrivning för datakällan.
 
-      - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
+      - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina inställningar.
 
    - Välj **[!UICONTROL Add datasets]**.
 
    Välj **[!UICONTROL Save]**.
 
-Se [Anslutningar - översikt](../connections/overview.md) för mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.
+Mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar finns i [Anslutningsöversikt](../connections/overview.md).
 
 ## Konfigurera en datavy
 
@@ -327,9 +328,9 @@ Så här skapar du en datavy:
 
 2. Välj **[!UICONTROL Create new data view]**.
 
-3. I [!UICONTROL Configure] steg:
+3. I steget [!UICONTROL Configure]:
 
-   Välj din anslutning på menyn [!UICONTROL Connection] lista.
+   Välj din anslutning i listan [!UICONTROL Connection].
 
    Namn och (eventuellt) beskrivning av anslutningen.
 
@@ -337,19 +338,19 @@ Så här skapar du en datavy:
 
    Välj **[!UICONTROL Save and continue]**.
 
-4. I [!UICONTROL Components] steg:
+4. I steget [!UICONTROL Components]:
 
-   Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i [!UICONTROL METRICS] eller [!UICONTROL DIMENSIONS] komponentrutor.
+   Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i komponentrutorna [!UICONTROL METRICS] eller [!UICONTROL DIMENSIONS].
 
    Välj **[!UICONTROL Save and continue]**.
 
-5. I [!UICONTROL Settings] steg:
+5. I steget [!UICONTROL Settings]:
 
-   ![Inställningar för datavy](./assets/cja-dataview-3.png)
+   ![Datavy settings](./assets/cja-dataview-3.png)
 
    Låt inställningarna vara som de är och välj **[!UICONTROL Save and finish]**.
 
-Se [Översikt över datavyer](../data-views/data-views.md) för mer information om hur du skapar och redigerar en datavy, vilka komponenter som är tillgängliga för dig och hur du använder filter- och sessionsinställningar.
+Mer information om hur du skapar och redigerar en datavy finns i [Översikt över datavyer](../data-views/data-views.md), vilka komponenter som är tillgängliga för dig och hur du använder inställningar för filter och sessioner.
 
 
 ## Konfigurera ett projekt
@@ -364,20 +365,20 @@ Så här skapar du ditt projekt:
 
 3. Välj **[!UICONTROL Create project]**.
 
-   ![Arbetsyteprojekt](./assets/cja-projects-1.png)
+   ![Workspace Project](./assets/cja-projects-1.png)
 
    Välj **[!UICONTROL Blank project]**.
 
-   ![Arbetsyta - Tomt projekt](./assets/cja-projects-2.png)
+   ![Workspace - Tomt projekt](./assets/cja-projects-2.png)
 
 4. Välj datavyn i listan.
 
-   ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
+   ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel].
+5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mått på [!UICONTROL Freeform table] i [!UICONTROL Panel].
 
-Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
+Mer information om hur du skapar projekt och bygger analyser med komponenter, visualiseringar och paneler finns i [Översikt över Analysis Workspace](../analysis-workspace/home.md) .
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastream på Edge Network för att säkerställa att data kan vidarebefordras till den datauppsättningen. Sedan använde du Edge Network Server-API:t för att skicka data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda speldata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar speldata.
+>Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastream på Edge Network för att se till att data kan vidarebefordras till den datauppsättningen. Sedan använde du Edge Network Server-API:t för att skicka data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda speldata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar speldata.

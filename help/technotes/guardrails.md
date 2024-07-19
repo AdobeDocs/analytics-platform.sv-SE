@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # Customer Journey Analytics Guardrails
 
-Det här dokumentet innehåller begränsningar för olika komponenter i Customer Journey Analytics. Information om säkerhetsutkast, omfångsparametrar och berättiganden finns i [Produktbeskrivning för Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) eller [Produktbeskrivning för Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+Det här dokumentet innehåller begränsningar för olika komponenter i Customer Journey Analytics. Information om säkerhetsutkast, omfångsparametrar och berättiganden finns i [produktbeskrivningen för Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) eller [produktbeskrivningen för Adobe Analytics-tillägget: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
 
 ## Begränsningstyper
 
@@ -22,8 +22,8 @@ Det finns två typer av standardgränser i det här dokumentet:
 
 | Typ av skyddsräcke | Beskrivning |
 |----------|---------|
-| **PrestandagarDRAils (mjuk gräns)** | Prestandaskydd är användningsgränser som relaterar till omfattningen av dina användningsfall. När du överskrider prestanda för säkerhetsritningar kan du uppleva prestandaförsämring och fördröjning. Adobe ansvarar inte för sådana prestandaförsämringar. Kunder som genomgående överträffar en prestandaregardit kan välja att licensiera ytterligare kapacitet för att undvika prestandaförsämring. |
-| **Systemstyrda skyddsräcken (fast gräns)** | Systemstyrda säkerhetsutkast används av användargränssnittet eller API:t för Customer Journey Analytics. Detta är begränsningar som du inte kan överskrida eftersom gränssnittet och API hindrar dig från att göra det eller returnerar ett fel. |
+| **Prestandagarantier (mjuk gräns)** | Prestandaskydd är användningsgränser som relaterar till omfattningen av dina användningsfall. När du överskrider prestanda för säkerhetsritningar kan du uppleva prestandaförsämring och fördröjning. Adobe ansvarar inte för sådana prestandaförsämringar. Kunder som genomgående överträffar en prestandaregardit kan välja att licensiera ytterligare kapacitet för att undvika prestandaförsämring. |
+| **Systemstyrda skyddsräcken (hård begränsning)** | Systemstyrda säkerhetsutkast används av användargränssnittet eller API:t för Customer Journey Analytics. Detta är begränsningar som du inte kan överskrida eftersom gränssnittet och API hindrar dig från att göra det eller returnerar ett fel. |
 
 {style="table-layout:auto"}
 
@@ -74,14 +74,14 @@ Vissa funktioner och deras associerade värde för gränsen beror på vilket Cus
 |---|--:|---|---|
 | Målgruppsfilter | 20 | Systemstyrd Guardrail | Maximalt antal [filter](../components/filters/filters-overview.md) per publik. |
 | Antal målgruppsidentiteter | 20 miljoner | Systemstyrd Guardrail | Maximalt antal identiteter per publik. |
-| Målgruppsuppdateringsfrekvens | 4 | Systemstyrd Guardrail | Maximal frekvens i timmar [publik](../components/audiences/audiences-overview.md) kan uppdateras. |
+| Målgruppsuppdateringsfrekvens | 4 | Systemstyrd Guardrail | Maximal frekvens i timmar och [målgrupp](../components/audiences/audiences-overview.md) kan uppdateras. |
 | Fönstret Uppslagning av målgruppsuppdatering | 90 | Systemstyrd Guardrail | Maximalt antal dagar för uppdateringsfönster. |
 | Uppdaterar förfallodatum för målgrupp | 13 | Systemstyrd Guardrail | Det maximala antalet månader som publiken inte längre kan uppdatera från det datum då den skapades. Kunderna kan förlänga denna period i ytterligare 13 månader. |
 | Antal uppdaterade målgrupper | 75, 150 | Systemstyrd Guardrail | Maximalt antal uppdaterade målgrupper, värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 {style="table-layout:auto"}
 
-Se även Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
+Se även Experience Platform [Real-time Customer Data Platform-garderobilder](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
 
 
 ## Förfallodatum för automatiserad datamängd
@@ -108,7 +108,7 @@ Se även Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Mått | 5 000 | Systemstyrd Guardrail | Maximalt antal dimensioner i en datavy. |
 | Anteckningsrubrik | 100 | Systemstyrd Guardrail | Maximalt antal tecken för en anteckningstitel. |
 | Anteckningsbeskrivning | 250 | Systemstyrd Guardrail | Maximalt antal tecken för en anteckningsbeskrivning. |
-| Schemafält | 10 | Systemstyrd Guardrail | Maximalt antal schemafält (exklusive standardfält) när regler definieras för en [härlett fält](../data-views/derived-fields/derived-fields.md). |
+| Schemafält | 10 | Systemstyrd Guardrail | Maximalt antal schemafält (exklusive standardfält) när regler definieras för ett [härlett fält](../data-views/derived-fields/derived-fields.md). |
 | Uppslags-/profilfält | 3 | Systemstyrd Guardrail | Maximalt antal söknings- eller profilschemafält inom maximalt antal schemafält (exklusive standardfält) när regler definieras för ett härlett fält. |
 | Härledda fält | 100-500 | Systemstyrd Guardrail | Maximalt antal härledda fält per anslutning. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
@@ -126,7 +126,7 @@ Se även Experience Platform [Real-time Customer Data Platform Guardrails](https
 
 {style="table-layout:auto"}
 
-Se även Experience Platform [Guardsedningar för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+Se även Experience Platform [Guardrails för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Export av måldata
@@ -138,7 +138,7 @@ Se även Experience Platform [Guardsedningar för datainmatning](https://experie
 
 {style="table-layout:auto"}
 
-Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+Se även Experience Platform [Datauppsättningsexportstödlinjer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Datallandningszon
@@ -226,7 +226,7 @@ Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://
 
 >[!NOTE]
 >
->Bearbetningstiderna nedan är Guardrails, inte avtalade servicenivåavtal (SLA). Latensen varierar beroende på kundens konfiguration, datavolymer och konsumentprogram. Reella bearbetningstider är ofta snabbare. Se ert Customer Journey Analytics-avtal för era specifika avtalsvillkor och SLA. Se Experience Platform [Guardsedningar för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) för mer information.
+>Bearbetningstiderna nedan är Guardrails, inte avtalade servicenivåavtal (SLA). Latensen varierar beroende på kundens konfiguration, datavolymer och konsumentprogram. Reella bearbetningstider är ofta snabbare. Se ert Customer Journey Analytics-avtal för era specifika avtalsvillkor och SLA. Mer information finns i Experience Platform [GuarDRAils for Data Ingclosure](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 | Dataflöde | Förväntad fördröjning |
 |---|---|
@@ -236,9 +236,9 @@ Se även Experience Platform [Skyddsramar för datauppsättningsexport](https://
 | Inmatning av data i datasjön från Edge Network eller inmatning av strömning | &lt; 60 minuter |
 | Datainmatning i datasjön från Adobe Analytics Source Connector | &lt; 2,25 timmar |
 | Dataintag i Customer Journey Analytics från datasjön | &lt; 90 minuter |
-| Stitching (valfri funktion; se [Översikt över titlar](../stitching/overview.md) för mer information) | &lt; 3,25 timmar |
+| Stitching (valfri funktion; se [Stitching overview](../stitching/overview.md) för mer information) | &lt; 3,25 timmar |
 | Adobe Analytics Source Connector Backfill på mindre än 10 miljarder händelser (maximalt 13 månaders historiska data) | &lt; 4 veckor |
 | Audience Publishing till kundprofil i realtid, inklusive automatisk generering av direktuppspelningssegmentet, så att segmentet kan vara klart att ta emot data. | cirka 60 minuter |
-| Uppdatera frekvens för målgrupper | Engångsuppdatering: fördröjning på mindre än 5 minuter.<br/>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen). |
+| Uppdatera frekvens för målgrupper | Engångsuppdatering: fördröjning på mindre än 5 minuter.<br/>Uppdatera var 4:e timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen). |
 
 {style="table-layout:auto"}

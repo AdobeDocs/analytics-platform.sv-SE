@@ -33,5 +33,5 @@ En bortfallsvisualisering är användbar vid analys av:
 * Allmänna, bredare trafikflöden: Av de personer som såg hemsidan visar det här flödet hur många som har gjort en sökning och hur många som till slut gick vidare för att titta på ett visst objekt.
 * Korrelationer mellan händelser på din webbplats. Korrelationer visar hur många procent av dem som tittade på din integritetspolicy gick vidare för att köpa en produkt.
 
-[Videosjälvstudievideo om bortfall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
+[Videosjälvstudievideo för utfallsvisning](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 

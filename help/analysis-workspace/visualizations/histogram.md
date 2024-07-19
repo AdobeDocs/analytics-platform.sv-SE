@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Histogram
 
-Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Med Analytics automatiseras&quot;buffring&quot; av tal till intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
+Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Analytics automatiserar&quot;paketeringen&quot; av tal i intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
 
 ## Skapa ett histogram {#section_74647707CC984A1CB6D3097F43A30B45}
 
 Skapa ett histogram:
 
-1. Klicka **[!UICONTROL Visualizations]** till vänster.
+1. Klicka på **[!UICONTROL Visualizations]** i den vänstra listen.
 1. Dra **[!UICONTROL Histogram]** till panelen.
 1. Välj ett mått som du vill dra till histogramvisualiseringen och klicka på **[!UICONTROL Build]**.
 
-![En tom histogrampanel som visar fältet Släpp ett mätvärde under.](assets/histogram.png)
+![Panelen Tomt histogram som visar fältet Släpp ett mätvärde under.](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 | Startar Bucket | Anger vilken bucket histogrammet börjar med. &quot;1&quot; är standardvärdet. Du kan ange startnummer från 0 till oändlighet (inga negativa tal). |
 | Mätbuffertar | Gör att du kan öka/minska antalet dataintervall (bucket). Det högsta antalet bucklor är 50. |
 | Storlek på mätpyts | Gör att du kan ange storleken för varje bucket. Du kan till exempel ändra bucketstorleken från en sidvy till två sidvyer. |
-| Inventeringsmetod | Här kan du välja bland [Besökare](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html), eller Träff-typ. Exempel: sidvisningar per besök eller sidvisningar per person eller sidvisningar per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
+| Inventeringsmetod | Gör att du kan välja mellan [besökare](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html) eller träff. Exempel: sidvisningar per besök eller sidvisningar per person eller sidvisningar per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -55,7 +55,7 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 
 Om du vill visa eller ändra datakällan för histogramdiagrammet klickar du på punkten bredvid histogramhuvudet för att gå till **[!UICONTROL Data Source Settings]** > **[!UICONTROL Show Data Source]**.
 
-![Alternativ för inställningar för datakälla med Visa datakälla och Lås markering markerat.](assets/manage-data-source.png)
+![Alternativ för Source-inställningar för data när Visa Source och Lås markering har valts.](assets/manage-data-source.png)
 
 Fördefinierade filter som visas i tabellen är interna filter och visas inte i filterväljaren. Klicka på ikonen i bredvid filternamnet och klicka sedan på **[!UICONTROL Make public]** för att göra filtret offentligt.
 
@@ -65,4 +65,4 @@ Om du vill utforska fler sätt att hantera frihandsdatatabeller och andra visual
 
 ## Blogginlägg
 
-Läs det här blogginlägget om information om [använda histogram för att identifiera oväntade datavärden](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).
+Läs det här blogginlägget om information om [hur du använder histogram för att identifiera oväntade datavärden](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).

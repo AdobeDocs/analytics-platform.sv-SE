@@ -47,24 +47,24 @@ Använd KOMMANDON-panelen för att komma åt kommandon som är kompatibla med de
 
 När du markerar ett eller flera datablock i ett kalkylblad visas panelen QUICK EDIT i Report Builder. Du kan använda panelen QUICK EDIT för att ändra parametrar i ett enda datablock eller för att ändra parametrar i flera datablock samtidigt.
 
-![Snabbredigeringspanelen i Report Builder](./assets/hub2.png)
+![Panelen Snabbredigering i Report Builder](./assets/hub2.png)
 
 De ändringar du gör i snabbredigeringsavsnitten gäller för alla markerade datablock.
 
 ### Datavyer
 
-Datablocken hämtar data från en markerad datavy. Om flera datablock är markerade i ett kalkylblad och de inte hämtar data från samma datavy, kan du **Datavyer** länk *Flera*.
+Datablocken hämtar data från en markerad datavy. Om flera datablock är markerade i ett kalkylblad och de inte hämtar data från samma datavy, visas länken **Datavyer** *Flera*.
 
-När du ändrar datavyn används den nya datavyn för alla datablock i markeringen. Komponenterna i datablocket matchas mot den nya datavyn baserat på ID, till exempel matchning ```evars```). Om en komponent inte hittas i ett datablock visas ett varningsmeddelande och komponenten tas bort från datablocket.
+När du ändrar datavyn används den nya datavyn för alla datablock i markeringen. Komponenterna i datablocket matchas mot den nya datavyn baserat på ID, till exempel matchning av ```evars```). Om en komponent inte hittas i ett datablock visas ett varningsmeddelande och komponenten tas bort från datablocket.
 
 Om du vill ändra datavyn väljer du en ny datavy i listrutan.
 
-![På Report Builder-navet visas listrutan för datavy.](./assets/image16.png)
+![Navet på Report Builder visar listrutan för datavyn.](./assets/image16.png)
 
 ### Datumintervall
 
-**Datumintervall** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall visas **Datumintervall** länk *Flera*.
+**Datumintervallet** visar datumintervallet för de markerade datablocken. Om flera datablock har markerats med flera datumintervall visas länken **Datumintervall** *Flera*.
 
 ### Filter
 
-The **Filter** I visas en sammanfattningslista över de filter som används av de markerade datablocken. Om flera datablock är markerade med flera filter **Filter** länk *Flera*.
+Länken **Filter** visar en sammanfattningslista över de filter som används av de markerade datablocken. Om flera datablock har markerats med flera filter visas länken **Filter** *Flera*.

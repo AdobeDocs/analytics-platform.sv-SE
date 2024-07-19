@@ -20,9 +20,9 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 >
 >Du har Adobe Analytics licensierat och driftsatt på en eller flera av dina webbplatser med någon av de dokumenterade implementeringsmetoderna:
 >
->- [Implementera analyser med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
+>- [Implementera analys med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
->- [Implementera Analytics med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
+>- [Implementera analys med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
 >
 >- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
@@ -48,17 +48,17 @@ Med Adobe Analytics källanslutning kan du överföra data från Adobe Analytics
 
 Så här skapar du en Adobe Analytics-källanslutning:
 
-1. Välj **[!UICONTROL Sources]**, från den vänstra listen.
+1. Välj **[!UICONTROL Sources]** i det vänstra fältet i plattformsgränssnittet.
 
-2. Välj **[!UICONTROL Adobe applications]** i listan över [!UICONTROL CATEGORIES].
+2. Välj **[!UICONTROL Adobe applications]** i listan med [!UICONTROL CATEGORIES].
 
-3. Välj **[!UICONTROL Set up]** eller **[!UICONTROL Add data]** i Adobe Analytics.
+3. Välj **[!UICONTROL Set up]** eller **[!UICONTROL Add data]** i rutan Adobe Analytics.
 
-   ![Adobe Experience Platform-fönster med Källor markerat tillsammans med Adobe-program och Lägg till data markerat.](./assets/sources-overview.png)
+   ![Fönstret Adobe Experience Platform med Källor markerat tillsammans med Adobe-program och Lägg till data markerat.](./assets/sources-overview.png)
 
 4. Välj **[!UICONTROL Report suite]**. Välj den som du vill använda i listan över rapportsviter.
 
-   ![Adobe Experience Platform-fönstret med en lista över rapportsviter](./assets/report-suites.png)
+   ![Adobe Experience Platform-fönstret med rapportsvitslistan](./assets/report-suites.png)
 
    Välj **[!UICONTROL Next]**.
 
@@ -70,27 +70,27 @@ Så här skapar du en Adobe Analytics-källanslutning:
 
 6. Namnge dataflödet och (eventuellt) ge en beskrivning.
 
-   ![Adobe Experience Platform-fönstret markerar avsnittet Dataflödesdetaljer](./assets/dataflow-detail.png)
+   ![Adobe Experience Platform-fönstret markerar dataflödesdetaljavsnittet](./assets/dataflow-detail.png)
 
    Välj **[!UICONTROL Next]**.
 
 7. Granska anslutningen och välj **[!UICONTROL Finish]**.
 
-   ![Fönstret Adobe Experience Platform som markerar avsnitten Connect och Data för granskning](./assets/review.png)
+   ![Adobe Experience Platform-fönstret markerar avsnitten Connect och Data för granskning](./assets/review.png)
 
 
 När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten. Dataflödet importerar upp till 13 månaders historiska data för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.
 
 När det första intaget är slutfört kan Adobe Analytics-rapportsvitens data användas av Customer Journey Analytics.
 
-Se [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) för en mycket mer omfattande självstudiekurs.
+En mer omfattande självstudiekurs finns i [Skapa en källanslutning till Adobe Analytics i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
 
 ## Konfigurera en anslutning
 
 Om du vill använda Adobe Experience Platform-data i Customer Journey Analytics skapar du en anslutning som innehåller de data som är resultatet av konfigurationen av ditt schema, din datauppsättning och ditt arbetsflöde.
 
-Med en anslutning kan du integrera datauppsättningar från Adobe Experience Platform i Workspace. För att kunna rapportera om dessa datauppsättningar måste du först skapa en anslutning mellan datauppsättningar i Adobe Experience Platform och Workspace.
+Med en anslutning kan du integrera datauppsättningar från Adobe Experience Platform i Workspace. För att kunna rapportera om dessa datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Adobe Experience Platform och Workspace.
 
 Så här skapar du en anslutning:
 
@@ -98,17 +98,17 @@ Så här skapar du en anslutning:
 
 2. Välj **[!UICONTROL Create new connection]**.
 
-3. I [!UICONTROL Untitled connection] skärm:
+3. På skärmen [!UICONTROL Untitled connection]:
 
-   Namnge och beskriva anslutningen i [!UICONTROL Connection Settings].
+   Namnge och beskriv din anslutning i [!UICONTROL Connection Settings].
 
-   Välj rätt sandlåda i dialogrutan [!UICONTROL Sandbox] lista i [!UICONTROL Data settings] och välj antalet dagliga händelser i dialogrutan [!UICONTROL Average number of daily events] lista.
+   Välj rätt sandlåda i listan [!UICONTROL Sandbox] i [!UICONTROL Data settings] och välj antalet dagliga händelser i listan [!UICONTROL Average number of daily events].
 
    ![Anslutningsinställningar](./assets/cja-connections-1.png)
 
    Välj **[!UICONTROL Add datasets]**.
 
-   I [!UICONTROL Select datasets] stega in [!UICONTROL Add datasets]:
+   I steget [!UICONTROL Select datasets] i [!UICONTROL Add datasets]:
 
    - Markera datauppsättningen som skapas automatiskt av Adobe Analytics-källkopplingen och andra datauppsättningar som du vill ta med i anslutningen.
 
@@ -116,15 +116,15 @@ Så här skapar du en anslutning:
 
    - Välj **[!UICONTROL Next]**.
 
-   I [!UICONTROL Datasets settings] stega in [!UICONTROL Add datasets]:
+   I steget [!UICONTROL Datasets settings] i [!UICONTROL Add datasets]:
 
    - För varje datauppsättning:
 
-      - Välj en [!UICONTROL Person ID] från de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
+      - Välj en [!UICONTROL Person ID] bland de tillgängliga identiteter som definieras i datauppsättningsscheman i Adobe Experience Platform.
 
-      - Välj rätt datakälla på menyn [!UICONTROL Data source type] lista. Om du anger **[!UICONTROL Other]** lägger du sedan till en beskrivning av datakällan.
+      - Välj rätt datakälla i listan [!UICONTROL Data source type]. Om du anger **[!UICONTROL Other]** lägger du till en beskrivning för datakällan.
 
-      - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina önskemål.
+      - Ange **[!UICONTROL Import all new data]** och **[!UICONTROL Dataset backfill existing data]** enligt dina inställningar.
 
      ![Konfigurera datauppsättningar](./assets/cja-connections-3a.png)
 
@@ -132,7 +132,7 @@ Så här skapar du en anslutning:
 
    Välj **[!UICONTROL Save]**.
 
-Se [Anslutningar - översikt](../connections/overview.md) för mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar.
+Mer information om hur du skapar och hanterar en anslutning och hur du väljer och kombinerar datauppsättningar finns i [Anslutningsöversikt](../connections/overview.md).
 
 ## Konfigurera en datavy
 
@@ -144,9 +144,9 @@ Så här skapar du en datavy:
 
 2. Välj **[!UICONTROL Create new data view]**.
 
-3. I [!UICONTROL Configure] steg:
+3. I steget [!UICONTROL Configure]:
 
-   Välj din anslutning på menyn [!UICONTROL Connection] lista.
+   Välj din anslutning i listan [!UICONTROL Connection].
 
    Namn och (eventuellt) beskrivning av anslutningen.
 
@@ -154,21 +154,21 @@ Så här skapar du en datavy:
 
    Välj **[!UICONTROL Save and continue]**.
 
-4. I [!UICONTROL Components] steg:
+4. I steget [!UICONTROL Components]:
 
-   Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i [!UICONTROL METRICS] eller [!UICONTROL DIMENSIONS] komponentrutor.
+   Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i komponentrutorna [!UICONTROL METRICS] eller [!UICONTROL DIMENSIONS].
 
-   ![Datavy-komponenter](./assets/cja-dataview-2.png)
+   ![Datavykomponenter](./assets/cja-dataview-2.png)
 
    Välj **[!UICONTROL Save and continue]**.
 
-5. I [!UICONTROL Settings] steg:
+5. I steget [!UICONTROL Settings]:
 
-   ![Inställningar för datavy](./assets/cja-dataview-3.png)
+   ![Datavy settings](./assets/cja-dataview-3.png)
 
    Låt inställningarna vara som de är och välj **[!UICONTROL Save and finish]**.
 
-Se [Översikt över datavyer](../data-views/data-views.md) för mer information om hur du skapar och redigerar en datavy, vilka komponenter som är tillgängliga för dig och hur du använder filter- och sessionsinställningar.
+Mer information om hur du skapar och redigerar en datavy finns i [Översikt över datavyer](../data-views/data-views.md), vilka komponenter som är tillgängliga för dig och hur du använder inställningar för filter och sessioner.
 
 
 ## Konfigurera ett projekt
@@ -183,21 +183,21 @@ Så här skapar du ditt projekt:
 
 3. Välj **[!UICONTROL Create project]**.
 
-   ![Arbetsyteprojekt](./assets/cja-projects-1.png)
+   ![Workspace Project](./assets/cja-projects-1.png)
 
    Välj **[!UICONTROL Blank project]**.
 
-   ![Arbetsyta - Tomt projekt](./assets/cja-projects-2.png)
+   ![Workspace - Tomt projekt](./assets/cja-projects-2.png)
 
 4. Välj datavyn i listan.
 
-   ![Vyn Välj data på arbetsytan](./assets/cja-projects-3.png).
+   ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mätvärden på [!UICONTROL Freeform table] i [!UICONTROL Panel] . Dra som ett exempel `Program Points Balance` och `Page View` som mått och `email` som en dimension för att få en snabb översikt över profiler som har besökt er webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
+5. Om du vill skapa din första rapport börjar du dra och släppa dimensioner och mått på [!UICONTROL Freeform table] i [!UICONTROL Panel] . Dra till exempel `Program Points Balance` och `Page View` som mått och `email` som mått för att få en snabb översikt över profiler som har besökt din webbplats och som ingår i lojalitetsprogrammet som samlar in förmånspoäng.
 
-   ![Arbetsyta - första rapporten](./assets/cja-projects-5.png)
+   ![Workspace - första rapporten](./assets/cja-projects-5.png)
 
-Se [Analysis Workspace - översikt](../analysis-workspace/home.md) om du vill ha mer information om hur du skapar projekt och bygger din analys med hjälp av komponenter, visualiseringar och paneler.
+Mer information om hur du skapar projekt och bygger analyser med komponenter, visualiseringar och paneler finns i [Översikt över Analysis Workspace](../analysis-workspace/home.md) .
 
 
 >[!SUCCESS]

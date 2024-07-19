@@ -2,7 +2,8 @@
 description: Beskriver hur du kopierar ett beräknat mått i hanteraren för beräknade värden
 title: Kopiera beräknade värden
 feature: Calculated Metrics
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+exl-id: b1cc1171-aebf-4b97-99db-9bbcef5ea9d7
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -15,7 +16,7 @@ När du skapar ett nytt beräknat mått är det ibland enklare att kopiera ett b
 
 Så här kopierar du beräknade värden i hanteraren för beräknade värden:
 
-1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** tabbtangenten och sedan välja **[!UICONTROL Calculated metrics]**.
+1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Calculated metrics]**.
 
 1. Välj det beräknade mätvärde som du vill kopiera i Beräknat mätvärde.
 

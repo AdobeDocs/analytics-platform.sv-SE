@@ -19,20 +19,20 @@ Du kan exportera Customer Journey Analytics-rapporter genom att skicka dem till 
 
 Alla märkord som används i projektet används automatiskt vid exporten.
 
-Det finns även andra metoder för att exportera data från Customer Journey Analytics, vilket beskrivs i [Exportera översikt](/help/analysis-workspace/export/export-project-overview.md).
+Det finns även andra metoder för att exportera Customer Journey Analytics-data, vilket beskrivs i [Översikt över export](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Skicka filen nu {#now}
 
 Så här skickar du en fil direkt till mottagarna via e-post:
 
-1. Klicka **[!UICONTROL Share]>[!UICONTROL Export file]**.
+1. Klicka på **[!UICONTROL Share]>[!UICONTROL Export file]**.
 1. Ange filtyp:
-   * [!UICONTROL **CSV**]: Välj det här alternativet om du vill ha oformaterade textdata.
+   * [!UICONTROL **CSV**]: Välj det här alternativet om du vill ha textdata.
    * [!UICONTROL **PDF**]: Välj det här alternativet om du vill att den hämtade filen ska innehålla alla tabeller och visualiseringar som visas i projektet.
 1. (Valfritt) Lägg till en beskrivning som ska ingå i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
 1. (Endast för vårdsköldens kunder) Ange ett lösenord. Se avsnittet Lösenordsskydda en schemalagd rapport.
-1. (Valfritt) Klicka på **[!UICONTROL Show scheduling options]** för att ange ett leveransschema.
+1. (Valfritt) Klicka på **[!UICONTROL Show scheduling options]** om du vill ange ett leveransschema.
 1. Klicka på **[!UICONTROL Send Now]**.
 
 ![Fönstret Skicka fil och knappen Skicka nu.](assets/send-file-no-scheduling-options.JPG)
@@ -41,7 +41,7 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
-1. Klicka **[!UICONTROL Share]>[!UICONTROL Schedule file export]**.
+1. Klicka på **[!UICONTROL Share]>[!UICONTROL Schedule file export]**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
@@ -50,7 +50,7 @@ Så här skickar du en fil i ett återkommande schema till mottagarna via e-post
 1. Ange leveransfrekvens. Varje frekvens tillåter olika anpassningar.
 1. Klicka på **[!UICONTROL Send on schedule]**.
 
-![Fönstret Skicka fil och schemaläggningsalternativen visas för att visa inställningarna för start, slut på datum och daglig frekvens.](assets/send-file.JPG)
+![Fönstret Skicka-fil och schemaläggningsalternativen visas för att visa inställningarna för start, slut på datum och daglig frekvens.](assets/send-file.JPG)
 
 ## Schemalagd projektledare {#manager}
 
@@ -89,7 +89,7 @@ Mer information finns i [Schemalagda projekt](/help/components/scheduled-project
 
 >[!NOTE]
 >
->Alternativet att lösenordsskydda ett schemalagt projekt visas bara för Customer Journey Analytics-kunder som har köpt [Hälsovårdssköld](https://business.adobe.com/solutions/industries/healthcare.html) tilläggsprodukt.
+>Alternativet att lösenordsskydda ett schemalagt projekt visas bara för Customer Journey Analytics-kunder som har köpt tilläggsprodukten [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html).
 
 Adobe använder lösenordet för att kryptera schemalagda projekt, oavsett om de skickas i .pdf- eller .csv-format.
 
@@ -99,7 +99,7 @@ När ditt företag har köpt SKU:n för hälso- och sjukvårdsskölden och aktiv
 
 * När ett befintligt schemalagt projekt ska skickas. Det aktuella schemalagda projektet är inaktiverat tills lösenordsskydd finns på plats. Ägaren till det schemalagda projektet får ett e-postmeddelande som informerar dem om detta krav.
 
-![Fönstret Redigera schemalagda projekt och lösenordskrypteringsmeddelanden som anger att din organisation kräver lösenordskryptering.](assets/password.png)
+![Det schemalagda projektfönstret och lösenordskrypteringsmeddelandet som anger att din organisation kräver lösenordskryptering.](assets/password.png)
 
 ### Lösenordskrav
 
@@ -107,8 +107,8 @@ Lösenordskraven uppfyller Adobe-standarderna och kräver minst 8 tecken med min
 
 ### Lösenordsskydda ett nytt schemalagt projekt
 
-1. När du har sparat projektet går du till **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, eller **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
-1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) eller [Skicka fil enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
+1. När du har sparat projektet går du till **[!UICONTROL Share]** > **[!UICONTROL Send file now]** eller **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
+1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) eller [Skicka filen enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Lösenordsskydda ett befintligt schemalagt projekt
 
@@ -118,5 +118,5 @@ Innan ett projekt är schemalagt får projektägaren ett e-postmeddelande som li
 
 1. Logga in på Customer Journey Analytics.
 1. Välj **[!UICONTROL View Scheduled Project]**.
-1. I **[!UICONTROL Edit scheduled project]** anger och anger ett lösenord igen.
+1. Ange och ange ett lösenord igen i dialogrutan **[!UICONTROL Edit scheduled project]**.
 1. Informera mottagarna av det schemalagda projektet om det här lösenordet. Distribuera inte lösenordet till personer som inte är mottagare av det schemalagda projektet.

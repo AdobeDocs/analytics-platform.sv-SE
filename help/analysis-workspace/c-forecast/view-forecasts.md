@@ -17,17 +17,17 @@ Du kan visa prognoser i en frihandstabell eller i ett linjediagram.
 
 ## Visa prognoser i en tabell
 
-Du kan visa prognoser i en friformstabell i tidsserier. När [!UICONTROL Show forecast] är aktiverat för Frihand-tabellen i [användarinställningar](../user-preferences.md), visas prognoser automatiskt för den första måttkolumnen som läggs till i tabellen. För ytterligare kolumner:
+Du kan visa prognoser i en friformstabell i tidsserier. När [!UICONTROL Show forecast] är aktiverat för friformstabellen i [användarinställningarna](../user-preferences.md) visas prognoser automatiskt för den första måttkolumnen som läggs till i tabellen. För ytterligare kolumner:
 
-1. Markera ikonen för kolumninställningar ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i kolumnrubriken kontrollerar du att **[!UICONTROL Show forecast]** är markerat i listan med alternativ. Mer information finns i [Kolumninställningar](../visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Markera ikonen för kolumninställningar ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i kolumnrubriken och kontrollera sedan att **[!UICONTROL Show forecast]** är markerat i listan med alternativ. Mer information finns i [Kolumninställningar](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
-1. Klicka utanför **[!UICONTROL Column settings]** för att spara inställningen och visa den uppdaterade tabellen.
+1. Klicka utanför menyn **[!UICONTROL Column settings]** om du vill spara inställningen och visa den uppdaterade tabellen.
 
 I tabellen visas prognoser enligt följande:
 
-![Visa prognos i register](assets/show-forecast-table.png)
+![Visa prognos i tabell](assets/show-forecast-table.png)
 
-* Prognosvärdet och procentandelen för varje cell visas i **mörkgrå**.
+* Prognosvärdet och procentandelen för varje cell visas i **mörkgrått**.
 * En prognossymbol anger ett prognosvärde <img src="./assets/forecast.svg" alt="Prognossymbol" width="20" /> visas i cellens övre högra hörn.
 
 
@@ -35,11 +35,11 @@ I tabellen visas prognoser enligt följande:
 
 Ett linjediagram är den enda visualisering som gör att du kan visa prognoser.
 
-1. Välj inställningsikonen ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i visualiseringshuvudet kontrollerar du att **[!UICONTROL Show forecast]** är markerat i listan med alternativ.
+1. Välj inställningsikonen ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i visualiseringshuvudet och kontrollera sedan att **[!UICONTROL Show forecast]** är markerat i listan med alternativ.
 
-1. (valfritt) Välj **[!UICONTROL Allow forecast to scale Y-axis]**. Det här alternativet är inte markerat som standard eftersom det ibland kan återge ett mindre läsbart diagram.
+1. (valfritt) Välj **[!UICONTROL Allow forecast to scale Y-axis]** om du vill tillåta att prognoserna skalar diagrammet korrekt. Det här alternativet är inte markerat som standard eftersom det ibland kan återge ett mindre läsbart diagram.
 
-1. Klicka utanför **[!UICONTROL Settings]** för att visa det uppdaterade linjediagrammet.
+1. Klicka utanför menyn **[!UICONTROL Settings]** om du vill visa det uppdaterade linjediagrammet.
 
 Prognoser visas i linjediagrammet enligt följande:
 

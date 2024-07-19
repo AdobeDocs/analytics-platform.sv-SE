@@ -21,12 +21,12 @@ Med kurering kan du begränsa komponenterna (mått, mått, filter, datuminterval
 
 ## Använd projektstrukturering
 
-1. Klicka **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 De komponenter som används i projektet läggs automatiskt till.
-1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till [!UICONTROL Curate Components] fält.
+1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till fältet [!UICONTROL Curate Components].
 1. Klicka på **[!UICONTROL Done]**.
 
-Du kan också använda Kurva från [!UICONTROL Share] genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
+Du kan också använda kurering från menyn [!UICONTROL Share] genom att klicka på **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
 ![Fönstret Kuratkomponenter visar de komponenter som används i projektet.](assets/curation-field.png)
 
@@ -40,13 +40,13 @@ När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av
 
 Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra listen:
 
-1. Klicka **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 1. Klicka på **[!UICONTROL Remove Curation]**.
 1. Klicka på **[!UICONTROL Done]**.
 
 ## Alternativ för komponenturval
 
-I ett välstrukturerat projekt kan mottagaren välja att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
+I ett välstrukturerat projekt får mottagaren alternativet att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
 
 * Användarens behörighetsnivå (admin eller icke-admin)
 * Projektroll (ägare/redigerare eller inte)
@@ -54,7 +54,7 @@ I ett välstrukturerat projekt kan mottagaren välja att **[!UICONTROL Show All]
 
 | Kurvtyp | Administratören kan se | Projektägaren (eller redigeringsrollen) som inte är administratör kan se | Dubblettroll som inte är administratör kan se |
 | --- | --- | --- | --- |
-| **Komponenter&quot;dolda&quot; från en datavy** | Alla datavykomponenter som är tillgängliga för rapportering (dolda komponenter kräver att du klickar på Visa alla) | Ej tillgängligt för rapportering | Ej tillgängligt för rapportering |
+| **Komponenter &quot;dolda&quot; från en datavy** | Alla datavykomponenter som är tillgängliga för rapportering (dolda komponenter kräver att du klickar på Visa alla) | Ej tillgängligt för rapportering | Ej tillgängligt för rapportering |
 | **Komponenter som har lagts till eller tagits bort från en datavy** | Endast komponenter som har lagts till i datavyn (dolda eller inte dolda). Administratörer kan inte rapportera fält eller komponenter som inte har definierats i datavyn. | Endast komponenter som har lagts till i datavyn, eller komponenter som ägs eller delas med användaren. Dolda komponenter är inte tillgängliga (som VD). | Endast komponenter som lagts till i DV-filen är inte dolda och har inkluderats i projektkurationen. |
 | **Kuraterade komponenter i ett projekt** | Alla datavykomponenter som är tillgängliga för rapportering (dolda komponenter kräver att du klickar på Visa alla) | Alla icke-dolda datavykomponenter (kräver att du klickar på Visa alla) | Endast förvaltade komponenter, plus eventuella komponenter som ägs eller delas med användaren |
 | **Kuraterat projekt med en datavy med dolda komponenter** | Alla datakomponenter som är tillgängliga för rapportering (dolda och icke-förvaltade komponenter kräver att du klickar på Visa alla) | Alla icke-förvaltade projektkomponenter, alla icke-dolda datavykomponenter och alla komponenter som ägs eller delas med användaren | Endast förvaltade komponenter, plus alla komponenter som ägs eller delas med användaren |

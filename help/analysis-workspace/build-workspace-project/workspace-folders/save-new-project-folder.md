@@ -1,5 +1,5 @@
 ---
-description: Läs om hur du sparar projekt i mappar på arbetsytan
+description: Läs om hur du sparar projekt i mappar i Workspace
 keywords: Analysis Workspace
 title: Spara projekt i mappar
 feature: Workspace Basics
@@ -18,12 +18,12 @@ Om du vill spara ett nytt projekt i en viss mapp väljer du mappnamnet i dialogr
 
 1. Skapa ett nytt projekt i Workspace.
 
-   ![Tabellfönstret Frihand där du kan skapa ett nytt projekt.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+   ![Det friformstabellfönster där du kan skapa ett nytt projekt.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1. I **Projekt** > **Spara** väljer du ett mappnamn i listrutan Mapp.
+1. Välj ett mappnamn i listrutan Mapp i dialogrutan **Projekt** > **Spara**.
 
    ![Fönstret Spara där du sparar det nya projektet i en mapp.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 
    Projektet sparas i den valda mappen.

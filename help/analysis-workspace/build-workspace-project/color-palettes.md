@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Visualiseringsfärgpalett
 
-Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men det gör den **not** påverkar Sammanfattningsändring, villkorsstyrd formatering i frihandstabeller och Kartvyn.
+Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men den påverkar **inte** Sammanfattningsändring, villkorsstyrd formatering i frihandstabeller och kartvisualisering.
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ Tänk på följande:
 ## Ändra din färgpalett:
 
 1. Navigera till **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]**.
-1. Från **[!UICONTROL Project Color Palette]** i den nedrullningsbara listan kan du välja ett av fem förinställda färgscheman.
+1. I listrutan **[!UICONTROL Project Color Palette]** kan du välja ett av fem förinställda färgscheman.
 
    ![De fem förinställda färgschemana.](assets/custom_palette.png)
 
-1. Om du vill ange en egen palett väljer du **[!UICONTROL Custom Palette]** under de förinställda alternativen.
+1. Om du vill ange en egen palett väljer du **[!UICONTROL Custom Palette]** under förinställningsalternativen.
 1. Ange upp till 16 kommaavgränsade hexadecimala värden (till exempel #00a4e4) för de färger som du vill använda. Om du t.ex. bara vill använda fyra värden upprepas dessa färger automatiskt i visualiseringar som innehåller fler färger.

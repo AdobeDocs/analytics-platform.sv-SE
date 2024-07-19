@@ -20,9 +20,9 @@ När man jämför antalet målgruppsmedlemskap mellan CDP i realtid och Customer
 
 ## Skillnader i identitetskonfigurationer
 
-CDP och Customer Journey Analytics i realtid har inte samma definition av en person i dag. CDP i realtid är helt beroende av informationen i [Identitetsdiagram](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html) för att skapa en sammanfogad profil.
+CDP och Customer Journey Analytics i realtid har inte samma definition av en person i dag. CDP i realtid är helt beroende av informationen i [identitetsdiagrammet](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html) för att skapa en sammanfogad profil.
 
-Customer Journey Analytics kan konfigureras att använda [Stitlar](../stitching/overview.md) som extraherar identifierare från datauppsättningar i datasjön och använder anpassad logik för att länka samman dem.
+Customer Journey Analytics kan konfigureras att använda [Stitching](../stitching/overview.md) som extraherar identifierare från datauppsättningar i datasjön och använder anpassad logik för att länka samman dem.
 
 I framtiden kommer Customer Journey Analytics att kunna använda Identity Graph.
 
@@ -34,7 +34,7 @@ Du kan välja att lägga in vissa data i realtid CDP och andra data i Customer J
 
 Customer Journey Analytics tillåter omfattande dataändringar vid frågetillfället, som att kombinera fält, dela upp fält och andra ändringar som inkluderar/exkluderar, delsträngar, deduplicering av värde, sessionisering och filtrering på radnivå.
 
-CDP erbjuder en annan uppsättning datahanteringsverktyg i realtid. Gäller [sammanfogningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html) fastställa vilka data som ska prioriteras och vilka data som ska kombineras för att skapa en enhetlig bild av en person.
+CDP erbjuder en annan uppsättning datahanteringsverktyg i realtid. Den tillämpar [sammanfogningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html) för att avgöra vilka data som ska prioriteras och vilka data som ska kombineras för att skapa en enhetlig vy för en person.
 
 ## Skillnader i TTL (Time to Live) och dataöverföring
 

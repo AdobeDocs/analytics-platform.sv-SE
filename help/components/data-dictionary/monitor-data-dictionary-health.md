@@ -33,21 +33,21 @@ Så här identifierar du hälsoproblem i din Data Dictionary:
 
 1. Öppna ett Analysis Workspace-projekt.
 
-1. Välj ikonen Datamordlista till vänster i Analysis Workspace. (Alternativa sätt att komma åt dataordlistan beskrivs i&quot;Åtkomst till dataordlistan&quot; i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).)
+1. Välj ikonen Datamordlista till vänster i Analysis Workspace. (Alternativa sätt att komma åt dataordlistan beskrivs i Åtkomst till dataordlistan i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).)
 
    Fönstret Data Dictionary visas.
 
-   ![Visning av ordlisteadministratörens hälsovy](assets/data-dictionary-admin.png)
+   ![Vyn som administratör för dataordlista visar ordlistehälsa](assets/data-dictionary-admin.png)
 
 1. Kontrollera att rätt datavy är markerad i listrutan.
 
-1. På [!UICONTROL **Ordlistehälsa**] flik, välja [!UICONTROL **Visa**] bredvid något av följande alternativ:
+1. På fliken [!UICONTROL **Lexikon**] väljer du [!UICONTROL **Visa**] bredvid något av följande alternativ:
 
    * [!UICONTROL **komponenter saknar beskrivningar**]
 
    * [!UICONTROL **komponenter har dubbletter**]
 
-   * [!UICONTROL **komponenter saknar dataanslutning**]
+   * [!UICONTROL **komponenter har inga data anslutna**]
 
    Beroende på vad du väljer tillämpas det aktuella filtret på dataordlistan, och endast de relevanta komponenterna visas.
 

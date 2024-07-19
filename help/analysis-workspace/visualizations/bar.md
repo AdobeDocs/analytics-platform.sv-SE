@@ -29,4 +29,4 @@ Den här visualiseringen är som ett stapeldiagram, men med seriestaplarna stapl
 
 En ny visualiseringsinställning för staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering:
 
-![Ett staplat liggande stapeldiagram på 100 %.](assets/stacked_100_percent.png)
+![Ett staplat liggande stapeldiagram till 100 %.](assets/stacked_100_percent.png)

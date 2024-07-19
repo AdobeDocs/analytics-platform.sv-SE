@@ -28,13 +28,13 @@ Så här hanterar du användningen av Customer Journey Analytics:
 
 ## Beräkna anslutningsstorlek {#estimate-size}
 
-Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Customer Journey Analytics]. Gör så här för att få en korrekt redovisning av hur din organisation använder händelsedatarader **för var och en av de anslutningar som din organisation har skapat**.
+Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Customer Journey Analytics]. Om du vill få ett korrekt konto för hur din organisation använder händelsedatarader gör du följande **för var och en av anslutningarna som din organisation har skapat**.
 
 >[!NOTE]
 >
 >Gör detta den första fredagen i varje månad, eftersom Adobe kör din senaste användningsrapport den dagen.
 
-1. I [!UICONTROL Customer Journey Analytics]klickar du på **[!UICONTROL Connections]** -fliken.
+1. Klicka på fliken **[!UICONTROL Connections]** i [!UICONTROL Customer Journey Analytics].
 
    Nu kan du se en lista över alla dina aktuella anslutningar.
 
@@ -42,7 +42,7 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 1. Lägg till **[!UICONTROL Records of event data available]** för varje anslutning som din organisation har skapat. (Beroende på storleken på anslutningen kan det ta en stund innan numret visas.)
 
-   ![Tillgängliga poster med händelsedata.](./assets/event-data.png)
+   ![Det finns tillgängliga poster med händelsedata.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -63,15 +63,15 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
 Med den här metoden kan du göra en djupare analys av dina användningsdata och historiken över din användning.
 
-1. Innan du skapar projektet i Workspace [skapa en datavy](/help/data-views/create-dataview.md) för var och en av anslutningarna, utan att några filter tillämpas.
+1. Innan du skapar projektet i Workspace [skapar du en datavy](/help/data-views/create-dataview.md) för var och en av anslutningarna, utan att använda några filter.
 
 >[!WARNING]
 >
 >    Skapa inte en ny anslutning som omfattar alla data bara för att mäta användningen, eftersom det effektivt skulle fördubbla användningen.
 
-1. Skapa nya projekt baserat på varje datavy i arbetsytan och dra in alla händelser (från **[!UICONTROL Metrics]** nedrullningsbar lista) fram till den första fredagen i månaden, med början den första dagen i ditt nuvarande Customer Journey Analytics-kontrakt.
+1. I Workspace skapar du nya projekt baserat på varje datavy och drar in alla händelser (från listrutan **[!UICONTROL Metrics]**) som leder fram till den första fredagen i månaden, med början den första dagen i ditt nuvarande Customer Journey Analytics-kontrakt.
 
-   ![Frihandsregister med händelser.](./assets/events-usage.png)
+   ![Frihandstabell med händelser.](./assets/events-usage.png)
 
    Då får du en bra uppfattning om hur din användning går från månad till månad.
 
@@ -79,11 +79,11 @@ Med den här metoden kan du göra en djupare analys av dina användningsdata och
 
 ## Skapa ett datablock i Report Builder {#arb}
 
-I REPORT BUILDER [skapa ett datablock](/help/report-builder/create-a-data-block.md) för varje datavy och sedan summera dem.
+I Report Builder skapar [du ett datablock](/help/report-builder/create-a-data-block.md) för varje datavy och summerar dem sedan.
 
 ## Skapa en automatiserad rapport i Customer Journey Analytics API {#api-report}
 
-1. Använd [API för Customer Journey Analytics-rapportering](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) för att köra en rapport om alla dina händelsedata, **för alla anslutningar**. Konfigurera detta så att rapporten körs
+1. Använd [Customer Journey Analytics-rapporterings-API:t](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) för att köra en rapport på alla dina händelsedata, **för varje anslutning**. Konfigurera detta så att rapporten körs
 
    * varje fredag varje månad.
    * till första dagen i ditt nuvarande Customer Journey Analytics-kontrakt.
@@ -94,7 +94,7 @@ I REPORT BUILDER [skapa ett datablock](/help/report-builder/create-a-data-block.
 
 ## Hantera din användning genom att definiera ett rullande datafönster {#rolling}
 
-Om du vill hantera din användning [anslutningsgränssnitt](/help/connections/create-connection.md) Med kan du definiera datalagring i Customer Journey Analytics som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader osv.).
+För att hantera din användning kan du med [anslutningsgränssnittet](/help/connections/create-connection.md) definiera datalagring i Customer Journey Analytics som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader osv.).
 
 Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
 

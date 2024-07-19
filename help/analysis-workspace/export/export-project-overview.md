@@ -22,11 +22,11 @@ I följande avsnitt beskrivs vilka filtyper som stöds, de olika metoder som är
 
 Du kan exportera Customer Journey Analytics-rapporter som en PDF-, CSV- eller JSON-fil.
 
-* **PDF:** Ger ett enkelt sätt att dela visuella data med intressenter. PDF-filer innehåller alla tabeller och visualiseringar som visas i projektet.
+* **PDF:** Ett enkelt sätt att dela visuella data med intressenter. PDF-filer innehåller alla tabeller och visualiseringar som visas i projektet.
 
-* **CSV:** Gör att du kan visa rådata i ett kalkylbladsprogram, t.ex. Excel. CSV-filer innehåller textdata.
+* **CSV:** Gör att du kan visa rådata i ett kalkylbladsprogram, till exempel Excel. CSV-filer innehåller textdata.
 
-* **JSON:** Innehåller ett öppet standardfilformat för datadelning.
+* **JSON:** Tillhandahåller ett öppet standardfilformat för datadelning.
 
 ## Exportmetoder
 

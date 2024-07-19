@@ -26,7 +26,7 @@ Så här visar du innehållsförteckningen i ett projekt:
 
 1. I Analysis Workspace går du till det projekt där du vill visa innehållsförteckningen.
 
-1. I det vänstra navigeringsfältet väljer du ikonen för innehållsförteckning ![ikonen toc](assets/toc-icon.png).
+1. I det vänstra navigeringsfältet väljer du ikonen ![innehållsförteckning](assets/toc-icon.png).
 
    Innehållsförteckningen för projektet visas och varje panel utökas som standard.
 

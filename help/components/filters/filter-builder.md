@@ -3,7 +3,8 @@ description: I filterverktyget finns en arbetsyta där du kan dra och släppa me
 title: Skapa filter
 feature: Filters
 role: User
-source-git-commit: c19309488e0a541b522ca6925c7ca2bdb90f2390
+exl-id: 160021f1-6942-4682-9114-d375307d9912
+source-git-commit: e1f1e37293f1a18616b11fea685d372ec499c407
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # Filter Builder
 
-The [!UICONTROL Filter builder] Med kan du skapa enkla eller komplexa filter som identifierar personattribut och åtgärder för besök och händelser. Den innehåller en arbetsyta för att dra och släppa mått, händelser eller andra filter för att filtrera personer baserat på hierarkilogik, regler och operatorer.
+Med [!UICONTROL Filter builder] kan du skapa enkla eller komplexa filter som identifierar personattribut och åtgärder för besök och händelser. Den innehåller en arbetsyta för att dra och släppa mått, händelser eller andra filter för att filtrera personer baserat på hierarkilogik, regler och operatorer.
 
 Mer information om hur du skapar snabbfilter som bara gäller för det projekt där de skapas finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
@@ -21,12 +22,12 @@ Mer information om hur du skapar snabbfilter som bara gäller för det projekt d
 Du kommer åt filterverktyget på något av följande sätt:
 
 * **Övre navigering**: Klicka **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**.
-* **[!UICONTROL Analysis Workspace]**: Med ett projekt öppet i Analysis Workspace väljer du **[!UICONTROL + Components]** > **[!UICONTROL Create filter]**.
+* **[!UICONTROL Analysis Workspace]**: Välj **[!UICONTROL + Components]** > **[!UICONTROL Create filter]** med ett projekt öppet i Analysis Workspace.
 * **[!UICONTROL Report Builder]**: [Arbeta med filter i Report Builder](/help/report-builder/work-with-filters.md).
 
 ## Översikt över Builder-kriterier {#section_F61C4268A5974C788629399ADE1E6E7C}
 
-Du kan lägga till regeldefinitioner och behållare för att definiera filter. (Information om hur du använder filterverktyget finns i [Öppna filterverktyget](#access-the-filter-builder).)
+Du kan lägga till regeldefinitioner och behållare för att definiera filter. (Mer information om åtkomst till filterverktyget finns i [Öppna filterverktyget](#access-the-filter-builder).)
 
 ![Filterverktyget visar nya filteralternativ som beskrivs i det här avsnittet.](assets/segment_builder_ui_2.png)
 
@@ -34,15 +35,15 @@ Du kan lägga till regeldefinitioner och behållare för att definiera filter. (
 | --- | --- |
 | **[!UICONTROL Title]** | Namnge filtret |
 | **[!UICONTROL Description]** | Ange en detaljerad beskrivning av filtret. |
-| **[!UICONTROL Tags]** | [Tagga filtret](/help/components/filters/manage-filters.md) du skapar genom att välja från en lista med befintliga taggar eller skapa en ny tagg. |
-| **[!UICONTROL Definitions]** | Här är du [skapa och konfigurera filter](/help/components/filters/filters-overview.md), lägger till regler och kapslar in och sekvensbehållare. |
-| **[!UICONTROL Include]** | (Översta behållarväljare.) Välj den översta nivån [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). Standardbehållaren på den översta nivån är händelsebehållaren. |
-| **[!UICONTROL Options]** | (kugghjulsikon) | <ul><li>**[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) i filterdefinitionen.</li><li>**[!UICONTROL Exclude]**: Du kan definiera filtret genom att utesluta en eller flera dimensioner, filter eller mått.</li></ul> |
+| **[!UICONTROL Tags]** | [Tagga det filter](/help/components/filters/manage-filters.md) som du skapar genom att välja från en lista med befintliga taggar eller skapa en ny tagg. |
+| **[!UICONTROL Definitions]** | Det är här du [skapar och konfigurerar filter](/help/components/filters/filters-overview.md), lägger till regler och kapslar och sekvensbehållare. |
+| **[!UICONTROL Include]** | (Översta behållarväljare.) Gör att du kan välja den översta [behållaren](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). Standardbehållaren på den översta nivån är händelsebehållaren. |
+| **[!UICONTROL Options]** | (kugghjulsikon) | <ul><li>**[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) i filterdefinitionen.</li><li>**[!UICONTROL Exclude]**: Gör att du kan definiera filtret genom att utesluta en eller flera dimensioner, filter eller mått.</li></ul> |
 | **[!UICONTROL Dimensions]** | Komponenter dras och tas bort från listan Dimensioner (orange sidofält). |
 | **[!UICONTROL Operator]** | Du kan jämföra och begränsa värden med valda operatorer. (är lika med, är inte lika, innehåller, innehåller alla, osv.) |
 | **[!UICONTROL Value]** | Värdet som du angav eller valde för dimensionen, filtret eller mätvärdet. |
 | **[!UICONTROL Attribution Models]** | Dessa modeller är bara tillgängliga för dimensioner och avgör vilka värden i en dimension som ska filtreras efter. Dimensioner är särskilt användbara i sekventiella filter.<ul><li>**[!UICONTROL Repeating]** (standard): Inkluderar instanser och beständiga värden för dimensionen.</li><li>**[!UICONTROL Instance]**: Inkluderar instanser för dimensionen.</li><li>**[!UICONTROL Non-repeating instance]**: Inkluderar unika instanser (icke-upprepande) för dimensionen. Detta är den modell som används i Flow när upprepade instanser utesluts.</li></ul>Se till exempel avsnittet Attribution models nedan. |
-| **[!UICONTROL And/Or/Then]** | Tilldelar [!UICONTROL AND/OR/THEN] mellan behållare eller regler. Operatorn THEN låter dig [definiera sekventiella filter](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL And/Or/Then]** | Tilldelar operatorerna [!UICONTROL AND/OR/THEN] mellan behållare eller regler. Operatorn THEN låter dig [definiera sekventiella filter](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Metric]** | (Grönt sidofält) Mätvärden som har dragits och tagits bort från listan Metrisk. |
 | **[!UICONTROL X]** | (Ta bort) Du kan ta bort den här delen av filterdefinitionen. |
 | **[!UICONTROL Create audience from filter]** | Genom att skapa en målgrupp från ett filter kan du dela filtret med Adobe Experience Platform för aktivering. [Läs mer …](/help/components/audiences/audiences-overview.md) |
@@ -51,37 +52,37 @@ Du kan lägga till regeldefinitioner och behållare för att definiera filter. (
 | **[!UICONTROL Metrics]** | Listan med mätvärden som du kan inkludera i filtret. Klicka på rubriken för att expandera. |
 | **[!UICONTROL Filters]** | Listan med befintliga filter som du kan ta med i filtret. Klicka på rubriken för att expandera. |
 | **[!UICONTROL Data View selector]** | Gör att du kan välja den rapportserie som det här filtret ska sparas under. Du kan fortfarande använda filtret i alla datavyer. |
-| **[!UICONTROL Filter Preview]** | Här kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt filter och hur brett filtret är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här filtret. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL People], [!UICONTROL Sessions]och [!UICONTROL Reports Run] för ett filter som körs mot en datauppsättning.<p>Diagrammet uppdateras omedelbart när du har skapat eller ändrat filterdefinitionen. |
-| **[!UICONTROL Save]** eller **[!UICONTROL Cancel]** | Sparar eller avbryter filtret. Efter klickning **[!UICONTROL Save]** kommer du till Filterhanteraren där du kan hantera filtret. |
+| **[!UICONTROL Filter Preview]** | Här kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt filter och hur brett filtret är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här filtret. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL People], [!UICONTROL Sessions] och [!UICONTROL Reports Run] för ett filter som körs mot en datauppsättning.<p>Diagrammet uppdateras omedelbart när du har skapat eller ändrat filterdefinitionen. |
+| **[!UICONTROL Save]** eller **[!UICONTROL Cancel]** | Sparar eller avbryter filtret. När du har klickat på **[!UICONTROL Save]** dirigeras du till Filterhanteraren där du kan hantera filtret. |
 
 ## Skapa ett filter {#build-filters}
 
-1. Dra bara en Dimension, ett filter eller en metrisk händelse från den vänstra rutan till den [!UICONTROL Definitions] fält.
+1. Dra en Dimension-, filter- eller måtthändelse från den vänstra rutan till fältet [!UICONTROL Definitions].
 
    ![](assets/drag_n_drop_dimension.png)
 
-1. Ange [operator](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html) i listrutan.
+1. Ange [operatorn](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html) i listrutan.
 1. Ange eller välj ett värde för det markerade objektet.
-1. Lägg till ytterligare behållare om det behövs, med **[!UICONTROL And]**, **[!UICONTROL Or]**, eller **[!UICONTROL Then]** regler.
+1. Lägg till ytterligare behållare om det behövs, med reglerna **[!UICONTROL And]**, **[!UICONTROL Or]** eller **[!UICONTROL Then]**.
 1. När du har placerat behållarna och angett reglerna ser du resultatet av filtret i valideringsdiagrammet längst upp till höger. Valideraren anger det procentuella och absoluta antalet sidvisningar, besök och unika personer som matchar filtret som du skapade.
-1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/filters-tag.md) behållaren genom att markera en befintlig tagg eller skapa en ny.
-1. Klicka **[!UICONTROL Save]** för att spara filtret.
+1. Under **[!UICONTROL Tags]** [taggar](/help/components/filters/filters-tag.md) behållaren genom att markera en befintlig tagg eller skapa en ny.
+1. Klicka på **[!UICONTROL Save]** för att spara filtret.
 
-   Du kommer till [Filterhantering](/help/components/filters/manage-filters.md), där du kan tagga, dela och hantera filtret på flera sätt.
+   Du dirigeras till [filterhanteraren](/help/components/filters/manage-filters.md) där du kan tagga, dela och hantera filtret på flera sätt.
 
 ## Lägg till behållare {#containers}
 
-Du kan [skapa ett ramverk med behållare](/help/components/filters/filters-overview.md) och sedan placera logiska regler och operatorer mellan.
+Du kan [skapa ett ramverk med behållare](/help/components/filters/filters-overview.md) och sedan placera logikregler och operatorer mellan.
 
 1. Klicka på **[!UICONTROL Options > Add container]**.
 
-   En ny [!UICONTROL **Händelse**] behållaren öppnas utan [!UICONTROL **Händelse**] (Sidvy) identifierad.
+   En ny [!UICONTROL **Event**]-behållare öppnas utan att en [!UICONTROL **Event**] (sidvy) identifieras.
 
    ![](assets/new_container.png)
 
 1. Ändra behållartypen efter behov.
 1. Dra en Dimension, ett filter eller en händelse från den vänstra rutan till behållaren.
-1. Fortsätt lägga till nya behållare på den översta nivån **[!UICONTROL Options]** > **[!UICONTROL Add container]** längst upp i definitionen eller lägg till behållare från en behållare till kapslingslogik.
+1. Fortsätt att lägga till nya behållare från den översta **[!UICONTROL Options]** > **[!UICONTROL Add container]**-knappen högst upp i definitionen, eller lägg till behållare från en behållare för att kapsla logiken.
 
    **ELLER**
 
@@ -93,7 +94,7 @@ Du kan skapa filter som innehåller rullande datumintervall för att få svar p�
 
 Du kan till exempel enkelt skapa ett filter som innehåller&quot;alla som har köpt något de senaste 60 dagarna&quot;.
 
-Du skapar en sessionsbehållare och lägger till [!UICONTROL Last 60 days] tidsintervall och mått [!UICONTROL Orders is greater than or equal to 1], med operatorn AND.
+Du skapar en sessionsbehållare och i den lägger du till tidsintervallet [!UICONTROL Last 60 days] och måttet [!UICONTROL Orders is greater than or equal to 1] med operatorn AND.
 
 Här är en video om hur du använder rullande datumintervall i filter:
 
@@ -101,7 +102,7 @@ Här är en video om hur du använder rullande datumintervall i filter:
 
 ## Staplingsfilter {#stack}
 
-Du kan använda staplingsfilter genom att kombinera villkoren i varje filter med en &#39;and&#39;-operator och sedan använda de kombinerade villkoren. Detta kan du göra i ett Workspace-projekt direkt eller i Filter Builder.
+Du kan använda staplingsfilter genom att kombinera villkoren i varje filter med en &#39;and&#39;-operator och sedan använda de kombinerade villkoren. Detta kan göras i ett Workspace-projekt direkt eller i Filter Builder.
 
 Om du till exempel staplar ett&quot;mobiltelefonanvändarfilter&quot; och ett&quot;USA-geografifilter&quot; returneras data endast för mobiltelefonanvändare i USA.
 
@@ -124,7 +125,7 @@ Genom att använda filterstackning kan du minska antalet filter till 22 och stap
 
 1. Ange en rubrik och beskrivning för filtret.
 
-1. Klicka **[!UICONTROL Show filters]** för att visa en lista med filter i den vänstra navigeringen.
+1. Klicka på **[!UICONTROL Show filters]** för att visa listan med filter i den vänstra navigeringen.
 
 1. Dra de filter som du vill stapla till filterdefinitionsytan.
 

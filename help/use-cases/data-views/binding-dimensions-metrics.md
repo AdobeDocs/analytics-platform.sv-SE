@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Customer Journey Analytics erbjuder flera sätt att behålla dimensionsvärden efter den träff som de är inställda på. En av de beständighetsmetoder som Adobe erbjuder kallas bindning. I tidigare versioner av Adobe Analytics kallades detta koncept försäljning.
 
-Även om du kan använda bindningsdimensioner med händelsedata på den översta nivån är detta koncept bäst när du arbetar med [Arrayer med objekt](/help/use-cases/object-arrays.md). Du kan tilldela en dimension till en del av en objektarray utan att använda den på alla attribut i en viss händelse. Du kan t.ex. tilldela en sökterm till en produkt i kundvagnens objektmatris utan att binda söktermen till hela händelsen.
+Även om du kan använda bindningsdimensioner med händelsedata på den översta nivån, är det här konceptet bäst att använda när du arbetar med [Arrayer med objekt](/help/use-cases/object-arrays.md). Du kan tilldela en dimension till en del av en objektarray utan att använda den på alla attribut i en viss händelse. Du kan t.ex. tilldela en sökterm till en produkt i kundvagnens objektmatris utan att binda söktermen till hela händelsen.
 
 ## Exempel 1: Använd bindningsdimensioner för att tilldela ytterligare produktattribut till ett inköp
 
@@ -73,13 +73,13 @@ Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När 
    }
    ```
 
-Om du vill se intäkt per färg utan en bindande dimension, dimensionen `product.color` Bevaras och attribuerar felaktigt tillgodoräknande av torktumlarens färg:
+Om du vill se intäkt efter färg utan bindningsdimension, kvarstår dimensionen `product.color` och tillskriver inte korrekt information till torktumlarens färg:
 
 | product.color | intäkt |
 | --- | --- |
 | neon orange | 2099 |
 
-Gå in på **[!UICONTROL Data views]** och binda [!DNL Product Color] dimension till [!DNL Product Name]:
+Gå till **[!UICONTROL Data views]** och bind dimensionen [!DNL Product Color] till [!DNL Product Name]:
 
 ![Bindningsdimension](../assets/binding-dimension.png)
 
@@ -238,13 +238,13 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
    }
    ```
 
-Om du använder en allokeringsmodell som inte innehåller någon bindningsdimension med söktermen, tilldelar alla tre produkterna intäkter endast till en enda sökterm. Om du till exempel använde [!UICONTROL Original] allokering med söktermdimensionen:
+Om du använder en allokeringsmodell som inte innehåller någon bindningsdimension med söktermen, tilldelar alla tre produkterna intäkter endast till en enda sökterm. Om du till exempel använde [!UICONTROL Original]-allokering med söktermsdimensionen:
 
 | search_term | intäkt |
 | --- | --- |
 | boxingshandskar | $204.97 |
 
-Om du använt [!UICONTROL Most Recent] allokering med söktermsdimensionen tilldelar alla tre produkterna fortfarande intäkter till en enda sökterm:
+Om du använde [!UICONTROL Most Recent]-allokering med söktermsdimensionen tilldelar alla tre produkterna fortfarande intäkter till en enda sökterm:
 
 | search_term | intäkt |
 | --- | --- |
@@ -252,7 +252,7 @@ Om du använt [!UICONTROL Most Recent] allokering med söktermsdimensionen tilld
 
 Det här exemplet innehåller bara en person, men många som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
 
-Du kan nu binda [!DNL Search Term] till [!DNL Product Name] när [!DNL Searches] Det finns ett mått som korrekt tilldelar söktermen intäkter.
+Du kan nu binda [!DNL Search Term] till [!DNL Product Name] när [!DNL Searches]-måttet finns för att korrekt attributera söktermen till intäkterna.
 
 ![Bindningsmått](../assets/binding-metric.png)
 
@@ -279,7 +279,7 @@ Om du ställer in söktermsdimensionen på den här beständiga modellen körs f
 
 Du kan binda en sökterm till en användarprofil så att persistensen mellan profiler förblir helt åtskild. Din organisation kör till exempel en direktuppspelningstjänst där ett övergripande konto kan ha flera profiler. Besökaren har en underordnad profil och en vuxenprofil.
 
-1. Kontot loggar in under den underordnade profilen och söker efter ett barns TV-program. Observera att `"ProfileID"` är `2` som representerar den underordnade profilen.
+1. Kontot loggar in under den underordnade profilen och söker efter ett barns TV-program. Observera att `"ProfileID"` är `2` för att representera den underordnade profilen.
 
    ```json
    {
@@ -301,7 +301,7 @@ Du kan binda en sökterm till en användarprofil så att persistensen mellan pro
    }
    ```
 
-1. Senare den kvällen växlar den överordnade till sin profil och söker efter vuxeninnehåll att titta på. Observera att `"ProfileID"` är `1` som representerar vuxenprofilen. Båda profilerna tillhör samma konto, som representeras av samma `"PersonID"`.
+1. Senare den kvällen växlar den överordnade till sin profil och söker efter vuxeninnehåll att titta på. Observera att `"ProfileID"` är `1` för att representera profilen för vuxna. Båda profilerna tillhör samma konto, som representeras av samma `"PersonID"`.
 
    ```json
    {
@@ -334,18 +334,18 @@ Du kan binda en sökterm till en användarprofil så att persistensen mellan pro
    }
    ```
 
-Om du använder den senaste allokeringen med förfallodatum för person visas `"grownup movie"` söktermen är den sista vyn i barnshowen.
+Om du använder Senaste allokering med sista giltighetsdatum för person, tilldelas söktermen `"grownup movie"` till den sista vyn i barnets program.
 
 | Sökterm | Videon startar |
 | --- | --- |
 | grownup movie | 2 |
 | barnshow | 1 |
 
-Om du binder `search_term` till `ProfileID`, skulle varje profils sökningar isoleras till sin egen profil, vilket tillskrivs de rätta visar att de söker efter.
+Om du binder `search_term` till `ProfileID` isoleras dock varje profils sökningar från sin egen profil, vilket kan tillskrivas de rätta sökningarna.
 
 ![Besökarbindning](../assets/binding-profileid.png)
 
-Analysis Workspace skulle korrekt tilldela det andra avsnittet av Orangey söktermen `"kids show"` utan att beakta sökningar från andra profiler.
+Analysis Workspace skulle korrekt attributera det andra avsnittet av Orangey till söktermen `"kids show"` utan att ta hänsyn till sökningar från andra profiler.
 
 | Sökterm | Videon startar |
 | --- | --- |
@@ -354,7 +354,7 @@ Analysis Workspace skulle korrekt tilldela det andra avsnittet av Orangey sökte
 
 ## Exempel 4: Utvärdera webbläsarbeteende jämfört med sökbeteenden i en detaljhandelsinställning
 
-Du kan binda värden till dimensioner som angetts för tidigare händelser. När du anger en variabel med en bindningsdimension, tar Customer Journey Analytics hänsyn till det beständiga värdet. Om du inte vill använda det här beteendet kan du justera bindningsdimensionens beständighetsinställningar. Titta på följande exempel där `product_finding_method` anges för en händelse och binds sedan till Cart Adds-måttet för följande händelse.
+Du kan binda värden till dimensioner som angetts för tidigare händelser. När du anger en variabel med en bindningsdimension, tar Customer Journey Analytics hänsyn till det beständiga värdet. Om du inte vill använda det här beteendet kan du justera bindningsdimensionens beständighetsinställningar. Titta på följande exempel där `product_finding_method` anges för en händelse och binds sedan till måttet för kundvagnen i följande händelse.
 
 1. En besökare söker efter `"camera"`. Observera att inga produkter har angetts på den här sidan.
 
@@ -418,19 +418,19 @@ Du kan binda värden till dimensioner som angetts för tidigare händelser. När
    }
    ```
 
-Om beständighet anges till den senaste allokeringen utan någon bindande dimension, kommer alla intäkter på 419,98 USD att tillskrivas `browse` sökmetod.
+Om persistence anges till den senaste allokeringen utan en bindningsdimension, kommer alla intäkter på 419,98 USD att tillskrivas sökmetoden `browse`.
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
 | bläddra | 419,98 |
 
-Om beständighet anges med ursprunglig allokering utan en bindande dimension, fördelas alla 419,98 USD av intäkten på `search` sökmetod.
+Om persistence anges med ursprunglig allokering utan en bindningsdimension, kommer alla intäkter på 419,98 USD att tillskrivas sökmetoden `search`.
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
 | sök | 419,98 |
 
-Men om du binder `product_finding_method` I Cart Adds-måttet kopplas varje produkt till rätt sökmetod.
+Om du binder `product_finding_method` till Cart Adds-måttet kopplas varje produkt till rätt sökmetod.
 
 | Produktsökningsmetod | Intäkter |
 | --- | --- |
@@ -440,4 +440,4 @@ Men om du binder `product_finding_method` I Cart Adds-måttet kopplas varje prod
 
 >[!MORELIKETHIS]
 >
->[Binda Dimensioner i datavyer](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) självstudie.
+>[Binda Dimensioner i datavyer](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html), genomgång.

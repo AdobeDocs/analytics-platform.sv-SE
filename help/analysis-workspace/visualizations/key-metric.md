@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Sammanfattning av nyckelmått
 
-The [!UICONTROL Key metric summary] Med visualisering kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
+Med visualiseringen [!UICONTROL Key metric summary] kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
 
 * **[!UICONTROL Line]** visualiseringar som visar hur måttet trendar för det primära datumintervallet och jämförelsedatumintervallet
 
 * **[!UICONTROL Summary percent change]** som visar måttökning eller minskning mellan det primära datumintervallet och jämförelsedatumintervallet
 
-* Aktuellt totalvärde ([!UICONTROL **samlingsnummer**]) för måttet
+* Aktuellt totalt värde ([!UICONTROL **sammanfattningsnummer**]) för måttet
 
 ## Användningsexempel
 
@@ -33,7 +33,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland an
 
 ## Konfigurera sammanfattningen av nyckelmått
 
-1. Dra **[!UICONTROL Key metric summary]** visualisering från **[!UICONTROL Visualizations]** menyn i den vänstra listen i en panel.
+1. Dra visualiseringen **[!UICONTROL Key metric summary]** från menyn **[!UICONTROL Visualizations]** i den vänstra listen till en panel.
 
 1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett filter (om du vill):
 
@@ -79,11 +79,11 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## Visa utdata
 
-![Viktiga mätresultat som visar metik-, sammanfattningsändring-, sammanfattningsnummer- och linjediagram.](assets/key-metric-output.png)
+![Viktiga måttutdata som visar metik-, sammanfattningsändring-, sammanfattningsnummer- och linjediagram.](assets/key-metric-output.png)
 
 Observera:
 
-* The **[!UICONTROL Previous period]** linjediagram (alltid i grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
+* Linjediagrammet **[!UICONTROL Previous period]** (visas alltid i grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
 
 * Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen döljs.
 
@@ -95,7 +95,7 @@ Observera:
 
 Sammanfattningen av nyckeltal erbjuder flera flexibla inställningar för bättre rapportering och kommunikation av viktiga mätvärden. Du kommer åt inställningarna via kugghjulsikonen i det övre högra hörnet av visualiseringen.
 
-![Sammanfattningsinställningar för nyckeltal med visningstypen Sammanfattning, Allmänt och Visningsalternativ.](assets/key-metric-settings.png)
+![Sammanfattningsinställningar för nyckeltal med visningstypen Sammanfattning, allmänna alternativ och visningsalternativ.](assets/key-metric-settings.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -116,7 +116,7 @@ När du har skapat visualiseringen kan du fortfarande redigera den ursprungliga 
 
 1. Klicka på pennikonen i det övre högra hörnet av visualiseringen (bredvid inställningsikonen).
 
-   ![Redigeringsikoner för visualisering](assets/edit-icon.png)
+   ![Ikon för visualisering-redigering.s](assets/edit-icon.png)
 
    Du återgår nu till den ursprungliga konfigurationsvyn.
 

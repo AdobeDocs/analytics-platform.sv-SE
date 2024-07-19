@@ -17,4 +17,4 @@ ht-degree: 0%
 Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att konfigurera programstyrkort. Med styrkort kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter. Chefsanvändare är slutanvändare för kontrollpaneler i Analytics. Som kurator bör du utföra dessa uppgifter för att effektivt konfigurera programmet för chefer:
 
 1. [Skapa styrkort för chefer](/help/mobile-app/create-scorecard.md).
-1. [Hjälper chefer med appkonfiguration och användning av appen](/help/mobile-app/set-up-execs.md).
+1. [Hjälper chefer med appkonfiguration och att använda appen](/help/mobile-app/set-up-execs.md).

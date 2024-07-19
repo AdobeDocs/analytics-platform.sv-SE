@@ -15,14 +15,14 @@ ht-degree: 0%
 
 Med Vennvisualiseringen kan du dra in upp till tre filter (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
 
-![Visualisering av vener som innehåller tre filter.](assets/venn.png)
+![Vennvisualisering som innehåller tre filter.](assets/venn.png)
 
 Du kan sedan hålla muspekaren över filtren för att få mer insikt i procenttal, osv.
 
-![Visualisering av ventiler med utökad information om filtret för utomhusdeltagare hösten 2015.](assets/venn_hover.png)
+![Vennvisualisering med utökad information om filtret för utomhusdeltagare 2015.](assets/venn_hover.png)
 
-Om du vill göra om Venndiagrammet till en frihandstabell klickar du på den färgade punkten bredvid **[!UICONTROL Venn]** sidhuvud och välj **[!UICONTROL Manage Data Sources]** > **[!UICONTROL Available Data Sources]** > **[!UICONTROL Freeform Table]**.
+Om du vill omvandla Venndiagrammet till en frihandstabell klickar du på den färgade punkten bredvid rubriken **[!UICONTROL Venn]** och väljer **[!UICONTROL Manage Data Sources]** > **[!UICONTROL Available Data Sources]** > **[!UICONTROL Freeform Table]**.
 
-Om du vill normalisera Venndiagrammet (ta bort storlek från det) går du till ikonen Visualiseringsinställningar och väljer **[!UICONTROL Normalization]**.
+Gå till ikonen Visualiseringsinställningar och välj **[!UICONTROL Normalization]** om du vill normalisera Venndiagrammet (ta bort storleken).
 
-![Visualiseringsinställningar för visualiseringstyp: Venndiagram.](assets/normalization.png)
+![Visualiseringsinställningar, alternativ för visualiseringstyp: Venndiagram.](assets/normalization.png)

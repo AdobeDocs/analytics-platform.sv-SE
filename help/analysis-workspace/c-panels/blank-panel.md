@@ -15,4 +15,4 @@ ht-degree: 0%
 
 En tom panel markerar alla visualiseringar du kan bygga från en panel, inklusive Frihand, Karta, Utfall, Flöde, Histogram, Kohort och Venn. Du kan också välja att göra den tomma panelen till standardprojektstartläge i stället för en friformspanel.
 
-![Den tomma panelen med alternativen Frihand, Karta, Utfall, Flödeshistogram, Kohort och Vennjustering.](assets/blank_panel.png)
+![Den tomma panelen med visualiseringsalternativen Frihand, Karta, Utfall, Flödeshistogram, Kohort och Ventin.](assets/blank_panel.png)

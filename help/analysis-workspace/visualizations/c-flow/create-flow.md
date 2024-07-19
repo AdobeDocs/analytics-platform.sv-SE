@@ -21,16 +21,16 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
 
 ## Skapa en flödesvisualisering {#configure}
 
-1. Lägg till en tom panel i projektet, välj ikonen Visualiseringar i den vänstra listen och dra sedan [!UICONTROL **Flöde**] visualisering i panelen.
+1. Lägg till en tom panel i projektet, markera ikonen Visualiseringar i den vänstra listen och dra sedan [!UICONTROL **Flödesvisualiseringen**] till panelen.
 
    eller
 
-   Lägg till en visualisering på något av de sätt som beskrivs i avsnittet Lägg till visualiseringar i en panel i [Visualiseringar - översikt](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+   Lägg till en visualisering på något av de sätt som beskrivs i avsnittet Lägg till visualiseringar i en panel i [Översikt över visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 1. Förankra Flödesvisualiseringen med något av följande alternativ:
 
    * [!UICONTROL **Börjar med**] (mått, dimensioner eller objekt), eller
-   * [!UICONTROL **Innehåller**] (mått, eller objekt), eller
+   * [!UICONTROL **Innehåller**] (dimensioner eller objekt), eller
    * [!UICONTROL **Slutar med**] (mått, dimensioner eller objekt)
 
    Var och en av dessa kategorier visas på skärmen som en&quot;släppzon&quot;. Du kan fylla i släppzonen på tre sätt:
@@ -41,11 +41,11 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
 
    >[!IMPORTANT]
    >
-   >Beräknade mått kan inte användas i  **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** fält.
+   >Beräknade mått kan inte användas i fälten **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]**.
 
-1. Om du väljer ett mätvärde måste du även ange [!UICONTROL **Dimensionen Banor**] som du använder som banleder till eller går från den markerade komponenten, enligt nedan. Standardvärdet är [!UICONTROL **Sida**].
+1. Om du väljer ett mätvärde måste du även ange en [!UICONTROL **Dimension för banor**] som du kan använda som inledande eller inledande  för den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
 
-   ![Dimensionen Pathing.](assets/pathing-dim.png)
+   ![Målningsdimensionen.](assets/pathing-dim.png)
 
 1. (Valfritt) Välj **[!UICONTROL Show advanced settings]** om du vill konfigurera något av följande alternativ:
 
@@ -55,32 +55,32 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
    | --- | --- |
    | **[!UICONTROL Wrap labels]** | Etiketterna på Flow-elementen trunkeras normalt för att spara skärmutrymme, men du kan göra hela etiketten synlig genom att markera den här rutan.  Standard = avmarkerat. |
    | **[!UICONTROL Include repeat instances]** | Flödesvisualiseringar baseras på instanser av en dimension. Den här inställningen ger dig möjlighet att inkludera eller exkludera upprepade instanser, t.ex. sidomladdning. Det går dock inte att ta bort upprepningar från Flow-visualiseringar som innehåller flervärdesdimensioner, som listVars, listProps, s.product, merchandising eVars osv. <p>Det här alternativet är inaktiverat som standard.</p> |
-   | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till dem som börjar/slutar med den första/sista förekomsten av en dimension/artikel/mått. Se avsnittet nedan, [Exempelscenario för &#39;begränsa till första/sista förekomsten&#39;](#example-scenario-for-limit-to-firstlast-occurrence), för en mer detaljerad förklaring. |
+   | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till dem som börjar/slutar med den första/sista förekomsten av en dimension/artikel/mått. Se avsnittet nedan, [Exempelscenario för &#39;begränsning till första/sista förekomsten&#39;](#example-scenario-for-limit-to-firstlast-occurrence), för en mer detaljerad förklaring. |
    | **[!UICONTROL Number of columns]** | Antalet kolumner som du vill ha i flödesdiagrammet. Du kan ange högst fem kolumner. |
    | **[!UICONTROL Items expanded per column]** | Antalet objekt som du vill ha i varje kolumn. Du kan ange högst 10 objekt utökade per kolumn. |
    | **[!UICONTROL Flow container]** | <ul><li>Besök</li><li>Besökare</li></ul> Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
 
    >[!IMPORTANT]
    >
-   >Kombinationen av **[!UICONTROL Number of columns]** och **[!UICONTROL Items expanded per column]** fastställa antalet underliggande begäranden som krävs för att skapa flödesvisualiseringen. Ju högre tal, desto längre tid tar det att återge en visualisering.
+   >Kombinationen av **[!UICONTROL Number of columns]** och **[!UICONTROL Items expanded per column]** avgör antalet underliggande begäranden som krävs för att skapa flödesvisualiseringen. Ju högre tal, desto längre tid tar det att återge en visualisering.
 
 
 1. Välj **[!UICONTROL Build]**.
 
 >[!INFO]
 >
->**Exempel:** Anta att du vill spåra sökvägen som användare tog både till och från de mest populära sidorna på din webbplats.
+>**Exempel:** Anta att du vill spåra sökvägen som användare tog både till och från de populäraste sidorna på din webbplats.
 >
 >För att göra detta skulle du
 >
 >1. Börja skapa en flödesvisualisering enligt beskrivningen ovan.
->1. Dra [!UICONTROL **Sida**] dimensionen i **[!UICONTROL Contains]** fält och sedan markera [!UICONTROL **Bygge**].
+>1. Dra dimensionen [!UICONTROL **Sida**] till fältet **[!UICONTROL Contains]** och välj sedan [!UICONTROL **Skapa**].
 >1. Flödesvisualiseringen byggs med den mest visade sidan synlig i fokusnoden mitt i visualiseringen. Du kan även se de översta sidorna som leder till den sidan (till vänster om fokusnoden) samt de översta sidorna som leder ut från fokussidan (till höger om fokusnoden).
->1. Analysera data i flödet enligt beskrivningen i [Visa och ändra flödesutdata](#view-and-change-the-flow-output).
+>1. Analysera data i flödet enligt beskrivningen i [Visa och ändra Flödesutdata](#view-and-change-the-flow-output).
 
 ## Visa och ändra flödesutdata {#output}
 
-![Exempel på flödesutdata som visar Slut med besök, Sökningsdimension: Sida och Flödesbehållare: Stycken.](assets/flow-output.png)
+![Exempel på flödesutdata som visar Slut med besök, Sökningsdimension: Sida och Flödesbehållare: Stors.](assets/flow-output.png)
 
 En sammanfattning av flödeskonfigurationen visas högst upp i diagrammet. Banorna i diagrammet är proportionella. Banor med mer aktivitet ser tjockare ut.
 
@@ -90,7 +90,7 @@ Om du vill gå längre ned i informationen har du flera alternativ:
 
 * När du klickar på en nod i diagrammet visas information om den noden. Klicka på noden igen för att komprimera den.
 
-  ![Exempel på interaktivt flödesdiagram som visar nodinformation.](assets/node-details.png)
+  ![Exempel på interaktivt flödesdiagram med nodinformation.](assets/node-details.png)
 
 * Du kan filtrera en kolumn så att endast vissa resultat visas, t.ex. inkludera och exkludera, ange villkor osv.
 
@@ -120,7 +120,7 @@ Ovanför varje kolumn visas ett filter när du håller pekaren över den. Genom 
 | [!UICONTROL Start over] | Returnerar dig till Frihand-diagramverktyget, där du kan skapa ett nytt flödesdiagram. |
 | [!UICONTROL Create filter for this path] | Skapa ett filter. Detta tar dig in i Filter Builder där du kan konfigurera det nya filtret. |
 | [!UICONTROL Breakdown] | Dela upp noden efter tillgängliga Dimensioner, mått eller tid. |
-| [!UICONTROL Filter column] | Samma filteralternativ visas som de är tillgängliga i frihandstabellen. Mer information om de tillgängliga alternativen finns i avsnittet Använda ett enkelt eller avancerat filter i en tabell i [Filtrera och ordna tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| [!UICONTROL Filter column] | Samma filteralternativ visas som de är tillgängliga i frihandstabellen. Mer information om de tillgängliga alternativen finns i avsnittet Använda ett enkelt eller avancerat filter i en tabell i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | [!UICONTROL Exclude item]/[!UICONTROL Restore excluded items] | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet högerklickar du igen och väljer **[!UICONTROL Restore Excluded Item]**. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 | [!UICONTROL Trend] | Skapa ett trenddiagram för noden. |
 | Visa nästa kolumn/Visa föregående kolumn | Visar nästa (höger) eller föregående (vänster) kolumn i visualiseringen. |
@@ -133,11 +133,11 @@ Ovanför varje kolumn visas ett filter när du håller pekaren över den. Genom 
 
 Tänk på följande när du använder det här alternativet:
 
-* **[!UICONTROL Limit to first/last occurrence]** räknar endast den första/sista förekomsten i serien. Alla andra förekomster av **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** villkor ignoreras.
-* Om den används med en **[!UICONTROL Starts with]** Flöde, inkluderas bara den första förekomsten som matchar startvillkoret.
-* Om den används med en **[!UICONTROL Ends with]** Flöde, inkluderas endast den sista förekomsten som matchar slutvillkoret.
-* Serien som används skiljer sig åt beroende på behållaren. Om du använder **[!UICONTROL Visit]** -behållaren kommer händelserierna att vara sessionen. Om du använder **[!UICONTROL Visitor]** container, kommer alla händelser att vara händelser för en viss användare i det angivna datumintervallet.
-* The **[!UICONTROL Limit to first/last occurrence]** kan konfigureras i de avancerade inställningarna när du använder ett måttobjekt eller ett Dimension-objekt i fälten &quot;Börjar med&quot; eller &quot;Slutar med&quot;.
+* **[!UICONTROL Limit to first/last occurrence]** räknar endast den första/sista förekomsten i serien. Alla andra förekomster av villkoret **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** ignoreras.
+* Om den används med ett **[!UICONTROL Starts with]**-flöde inkluderas endast den första förekomsten som matchar startvillkoret.
+* Om den används med ett **[!UICONTROL Ends with]**-flöde inkluderas endast den sista förekomsten som matchar slutvillkoret.
+* Serien som används skiljer sig åt beroende på behållaren. Om du använder behållaren **[!UICONTROL Visit]** blir händelserierna sessionen. Om du använder behållaren **[!UICONTROL Visitor]** kommer händelserierna att vara alla händelser för en viss användare i det angivna datumintervallet.
+* Alternativet **[!UICONTROL Limit to first/last occurrence]** kan konfigureras i de avancerade inställningarna när du använder ett mått- eller Dimension-objekt i fälten Börjar med eller Slutar med.
 
 Exempelserie med händelser:
 
@@ -145,24 +145,29 @@ Hem > Produkter > Lägg till i kundvagn > Produkter > Lägg till i kundvagn > Fa
 
 ### Fundera på en flödesanalys med följande inställningar:
 
-* Börja med[!UICONTROL  Add to cart] (Dimension)
-* [!UICONTROL Page] målningsdimension
-* [!UICONTROL Visit] container
+* Börja med [!UICONTROL  Add to cart] (Dimension)
+* [!UICONTROL Page]-målningsdimension
+* [!UICONTROL Visit] behållare
 
 Om Begränsa till första/sista förekomsten är inaktiverat räknas den här enskilda serien med händelser som 2 förekomster av Lägg till i kundvagnen.
-Förväntat flöde: &quot;Lägg i kundvagn&quot; (2) —> &quot;Produkter&quot; (1) -> &quot;Fakturering&quot; (1)
+Förväntat flöde:
+&quot;Lägg i kundvagnen&quot; (2) —> &quot;Produkter&quot; (1)
+->&quot;Fakturering&quot; (1)
 
 Om alternativet Begränsa till första/sista förekomsten är aktiverat inkluderas endast den första förekomsten av Lägg till i kundvagnen i analysen.
-Förväntat flöde: &quot;Lägg i kundvagn&quot; (1) —> &quot;Produkter&quot; (1)
+Förväntat flöde:
+&quot;Lägg i kundvagnen&quot; (1) —> &quot;Produkter&quot; (1)
 
 ### Tänk på samma händelsesekvens men använd följande inställningar:
 
-* Slutar med [!UICONTROL Add to cart] (Dimension)
-* [!UICONTROL Page] målningsdimension
-* [!UICONTROL Visit] container
+* Slutar med [!UICONTROL Add to cart] (Dimension Item)
+* [!UICONTROL Page]-målningsdimension
+* [!UICONTROL Visit] behållare
 
-If **[!UICONTROL Limit to first/last occurrence]** är *inaktiverad*, kommer den här enstaka serien händelser att räkna till 2 förekomster av&quot;Lägg i kundvagnen&quot;.
-Förväntat flöde: &quot;Produkter&quot; (2) &lt;— &quot;Lägg i kundvagn&quot; (2)
+Om **[!UICONTROL Limit to first/last occurrence]** är *inaktiverad* räknas två förekomster av&quot;Lägg i kundvagnen&quot; av den här enskilda händelsesekvensen.
+Förväntat flöde:
+&quot;Produkter&quot; (2) &lt;— &quot;Lägg i kundvagn&quot; (2)
 
-Om **[!UICONTROL Limit to first/last occurrence]** är *aktiverad*, bara den sista förekomsten av [!UICONTROL Add to cart] skulle ingå i analysen.
-Förväntat flöde: &quot;Produkter&quot; (1) &lt;— &quot;Lägg i kundvagn&quot; (1)
+Om **[!UICONTROL Limit to first/last occurrence]** däremot är *aktiverad* inkluderas bara den sista förekomsten av [!UICONTROL Add to cart] i analysen.
+Förväntat flöde:
+&quot;Produkter&quot; (1) &lt;— &quot;Lägg i kundvagn&quot; (1)

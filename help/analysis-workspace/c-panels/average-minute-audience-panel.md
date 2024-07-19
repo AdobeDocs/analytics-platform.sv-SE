@@ -37,80 +37,80 @@ Målgruppspanelen för media i genomsnitt ger följande fördelar jämfört med 
 
 1. I Analysis Workspace går du till en rapportserie som har komponenter aktiverade från tillägget Direktuppspelning Media Collection.
 
-1. I den vänstra navigeringen väljer du **Panel** -ikon.
+1. Välj ikonen **Paneler** i det vänstra navigeringsfältet.
 
-   ![Panelikon i vänster navigering](assets/panels-icon.png)
+   ![Panelikon i vänsternavigering](assets/panels-icon.png)
 
-1. Dra [!UICONTROL **Genomsnittlig minutmålgrupp för media**] på arbetsytan i Analysis Workspace.
+1. Dra panelen [!UICONTROL **Medias genomsnittliga minutantal**] till arbetsytan i Analysis Workspace.
 
-1. Om du vill konfigurera panelen fortsätter du med [Panelindata](#panel-inputs).
+1. Om du vill konfigurera panelen fortsätter du med [panelindata](#panel-inputs).
 
 ## Panelindata {#Input}
 
 Använd de indatainställningar som beskrivs i det här avsnittet för att konfigurera målgruppspanelen för genomsnittlig minuts i media.
 
-1. Börja skapa en målgruppspanel för medieminimemin, enligt beskrivningen i [Få åtkomst till den genomsnittliga publiken för media - minut](#access-the-media-average-minute-audience-panel).
+1. Börja skapa en målgruppspanel för mediemarginal, enligt beskrivningen i [Öppna den genomsnittliga målgruppspanelen för medieminiatyrer](#access-the-media-average-minute-audience-panel).
 
 1. Konfigurera följande indatainställningar:
 
    | Inställning | Beskrivning |
    |---------|------------|
-   | **Panelens datumintervall** | Panelens standarddatumintervall är [!UICONTROL **Den här månaden**]. Du kan redigera den för att visa en enstaka dag eller flera månader i taget. <br></br> Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå). Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
+   | **Panelens datumintervall** | Panelens datumintervall är som standard [!UICONTROL **Den här månaden**]. Du kan redigera den för att visa en enstaka dag eller flera månader i taget. <br></br> Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå). Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
    | [!UICONTROL **Släpp ett segment här (eller någon annan komponent)**] | Precis som andra paneler filtrerar den här inställningen dina markeringar baserat på segment som du har skapat. Detta är ett bra sätt att se på specifika plattformar, liveströmmar eller andra vanliga mediesegment. |
-   | [!UICONTROL **Beräkna mått för**] | Välj om du vill se den genomsnittliga minuten-publiken för ett visst innehåll eller om du vill se den genomsnittliga minuten-publiken för en anpassad tidsperiod:<ul><li>**Särskilt innehåll:** Det här alternativet är bara tillgängligt om varaktigheten har uppdaterats med hjälp av klassificeringar. Om längden inte är tillgänglig, eller om du vill visa den genomsnittliga minuten-publiken för en tidsserie med flera innehållsdelar eller innehåll utan en viss tilldelad varaktighet (som under en liveström eller händelse), bör du välja [!UICONTROL **Anpassad tidsperiod**]. (Du kan ange varaktighet med hjälp av klassificeringar antingen före eller efter bearbetningstiden.)</li><li>**Anpassad tidsperiod:** Detta är tillgängligt oavsett om varaktigheten är tillgänglig med hjälp av klassificeringar.</li></ul> <p>Den här inställningen ändrar arbetsflödet och rapportutdata.</p> |
+   | [!UICONTROL **Beräkna mått för**] | Välj om du vill se den genomsnittliga minuten-publiken för ett visst innehåll eller om du vill se den genomsnittliga minuten-publiken för en anpassad tidsperiod:<ul><li>**Specifikt innehåll:** Det här är bara tillgängligt om längden har uppdaterats med hjälp av klassificeringar. Om längden inte är tillgänglig, eller om du vill visa den genomsnittliga minuten-publiken för en tidsserie med flera innehålls- eller innehållsdelar utan en viss tilldelad varaktighet (som under en liveström eller händelse), ska du välja [!UICONTROL **Anpassad tidsperiod**]. (Du kan ange varaktighet med hjälp av klassificeringar antingen före eller efter bearbetningstiden.)</li><li>**Anpassad tidsperiod:** Detta är tillgängligt oavsett om varaktigheterna är tillgängliga med hjälp av klassificeringar.</li></ul> <p>Den här inställningen ändrar arbetsflödet och rapportutdata.</p> |
 
-1. Fortsätt med [Specifikt innehåll](#specific-content) eller [Anpassad tidsperiod](#custom-time-period), beroende på vilket alternativ du väljer i dialogrutan [!UICONTROL **Beräkna mått för**] listruta.
+1. Fortsätt med [specifikt innehåll](#specific-content) eller [anpassad tidsperiod](#custom-time-period), beroende på vilket alternativ du väljer i listrutan [!UICONTROL **Beräkna mått för**].
 
 ### Specifikt innehåll
 
-1. Om du valde [!UICONTROL **Specifikt innehåll**] i [!UICONTROL **Beräkna mått för**] nedrullningsbar meny när [konfigurera panelindata](#panel-inputs)anger du följande konfigurationsalternativ:
+1. Om du valde [!UICONTROL **specifikt innehåll**] i listrutan [!UICONTROL **Beräkna mått för**] när [panelindata](#panel-inputs) konfigureras anger du följande konfigurationsalternativ:
 
    | Inställning | Beskrivning |
    |---------|------------|
    | [!UICONTROL **Rapporteringsdimension**] | När du väljer specifikt innehåll kan du välja rapportutdata och använda antingen video- eller innehålls-ID-fälten för att visa innehållet och dess associerade genomsnittliga minutmålgrupp under den valda tidsperioden. |
-   | [!UICONTROL **Filtrera innehåll efter (valfritt)**] | Välj hur du vill filtrera det specifika innehållet, beroende på vilken vy du vill ha eller hur data är strukturerade. <ul>[!UICONTROL **Visa, säsong, avsnitt**]: Visar tillgängliga bildspel i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa visningsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden.</li><li>[!UICONTROL **Anpassad dimension**]: Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i den nedrullningsbara menyn för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt.</li><li>[!UICONTROL **Ingen**]: Visar alla videonamn som har genomsnittliga minutdata för det valda urvalet. (Det här alternativet är markerat som standard.)</li></ul> |
+   | [!UICONTROL **Filtrera innehåll efter (valfritt)**] | Välj hur du vill filtrera det specifika innehållet, beroende på vilken vy du vill ha eller hur data är strukturerade. <ul>[!UICONTROL **Visa, säsong, avsnitt**]: Visar tillgängliga bildspel i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa bildspelsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden.</li><li>[!UICONTROL **Anpassad dimension**]: Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i listrutan för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt.</li><li>[!UICONTROL **Inget**]: Visar alla videonamn som har genomsnittliga minutdata för det valda urvalet. (Det här alternativet är markerat som standard.)</li></ul> |
 
-1. Fortsätt med [Avancerade inställningar för specifikt innehåll](#specific-content-advanced-settings) för att konfigurera avancerade inställningar.
+1. Fortsätt med [Avancerade inställningar för specifikt innehåll](#specific-content-advanced-settings) om du vill konfigurera avancerade inställningar.
 
 ### Avancerade inställningar för specifikt innehåll
 
-1. Med [!UICONTROL **Specifikt innehåll**] markerat i [!UICONTROL **Beräkna mått för**] nedrullningsbar meny, välja [!UICONTROL **Visa avancerade inställningar**] anger du sedan följande konfigurationsalternativ:
+1. Välj [!UICONTROL **Specifikt innehåll**] i listrutan [!UICONTROL **Beräkna mått för**] och välj [!UICONTROL **Visa avancerade inställningar**]. Ange sedan följande konfigurationsalternativ:
 
    | Inställning | Beskrivning |
    |---------|------------|
    | Tabellinställningar | Standardinställningen visar beräkningsvärdena i tabellen, som visar täljaren och nämnaren för den genomsnittliga minutmålgruppen som de föregående kolumnerna i tabellen. Om du avmarkerar det här alternativet tas dessa två kolumner bort, så att endast den genomsnittliga minuten-publiken visas bredvid videonamnet eller innehålls-ID:t. |
    | Tidsåtgång för mått | Du kan välja hur lång tid som ska användas som standard, vilket endast inkluderar innehållstid, eller så kan du välja att använda den medietid som har använts, vilket inkluderar innehåll och annonstid tillsammans som täljarberäkning för den genomsnittliga minuten-målgruppen. |
 
-1. Välj [!UICONTROL **Bygge**] för att slutföra skapandet av målgruppspanelen för media i genomsnitt.
+1. Välj [!UICONTROL **Build**] om du vill skapa målgruppspanelen för medieminister.
 
-1. Fortsätt med [Panelutdata](#panel-output) om du vill ha information om hur man använder den genomsnittliga minuten-målgruppspanelen för media.
+1. Fortsätt med [Panelutdata](#panel-output) om du vill ha information om hur du använder den genomsnittliga minutpanelen för mediefiler.
 
 ### Anpassad tidsperiod
 
-1. Om du valde [!UICONTROL **Anpassad tidsperiod**] i [!UICONTROL **Beräkna mått för**] nedrullningsbar meny när [konfigurera panelindata](#panel-inputs)anger du följande konfigurationsalternativ:
+1. Om du valde [!UICONTROL **Anpassad tidsperiod**] i listrutan [!UICONTROL **Beräkna mått för**] när [panelindata](#panel-inputs) konfigureras anger du följande konfigurationsalternativ:
 
    | Inställning | Beskrivning |
    |---------|------------|
-   | Kornighet | Standardgranulariteten är [!UICONTROL **5 minuter**], men du kan välja vilken kornighet som helst som ska användas som nämnare för tidsserien inom den övergripande tidsperioden som valts i kalendervalet. Om du till exempel väljer 12:00 till 12:30 med 5 minuters granularitet returneras den genomsnittliga minuten-publiken över hela halvtimmen samt sex rader med den genomsnittliga minuten-publiken för varje femminutersperiod. Dessa rader används som datapunkter för tidsseriediagrammet. |
-   | [!UICONTROL **Filtrera innehåll efter (valfritt)**] | Välj hur du vill filtrera det specifika innehållet, beroende på vilken vy du vill ha eller hur data är strukturerade. <ul>[!UICONTROL **Visa, säsong, avsnitt**]: Visar tillgängliga bildspel i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa visningsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden.</li><li>[!UICONTROL **Anpassad dimension**]: Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i den nedrullningsbara menyn för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt.</li><li>[!UICONTROL **Ingen**]: Visar alla videonamn som har genomsnittliga minutdata för det valda urvalet. (Det här alternativet är markerat som standard.)</li></ul> |
+   | Kornighet | Standardgranulariteten är [!UICONTROL **5-minuters**], men du kan välja vilken granularitet som helst som används som nämnare för tidsserien inom den övergripande tidsperiodmarkeringen i kalendermarkeringen. Om du till exempel väljer 12:00 till 12:30 med 5 minuters granularitet returneras den genomsnittliga minuten-publiken över hela halvtimmen samt sex rader med den genomsnittliga minuten-publiken för varje femminutersperiod. Dessa rader används som datapunkter för tidsseriediagrammet. |
+   | [!UICONTROL **Filtrera innehåll efter (valfritt)**] | Välj hur du vill filtrera det specifika innehållet, beroende på vilken vy du vill ha eller hur data är strukturerade. <ul>[!UICONTROL **Visa, säsong, avsnitt**]: Visar tillgängliga bildspel i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa bildspelsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden.</li><li>[!UICONTROL **Anpassad dimension**]: Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i listrutan för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt.</li><li>[!UICONTROL **Inget**]: Visar alla videonamn som har genomsnittliga minutdata för det valda urvalet. (Det här alternativet är markerat som standard.)</li></ul> |
 
-1. Fortsätt med [Avancerade inställningar för anpassad tidsperiod](#custom-time-period-advanced-settings) för att konfigurera avancerade inställningar.
+1. Fortsätt med [Avancerade inställningar för anpassad tidsperiod](#custom-time-period-advanced-settings) om du vill konfigurera avancerade inställningar.
 
 ### Avancerade inställningar för anpassad tidsperiod
 
-1. Med [!UICONTROL **Anpassad tidsperiod**] markerat i [!UICONTROL **Beräkna mått för**] nedrullningsbar meny, välja [!UICONTROL **Visa avancerade inställningar**] anger du sedan följande konfigurationsalternativ:
+1. Välj [!UICONTROL **Anpassad tidsperiod**] i listrutan [!UICONTROL **Beräkna mått för**] och välj [!UICONTROL **Visa avancerade inställningar**]. Ange sedan följande konfigurationsalternativ:
 
    | Inställning | Beskrivning |
    |---------|------------|
    | Tabellinställningar | Standardinställningen visar beräkningsvärdena i tabellen, som visar täljaren och nämnaren för den genomsnittliga minutmålgruppen som de föregående kolumnerna i tabellen. Om du avmarkerar det här alternativet tas de två kolumnerna bort, så att bara den genomsnittliga minuten-målgruppen visas intill tidsperioden. |
 
-1. Välj [!UICONTROL **Bygge**] för att slutföra skapandet av målgruppspanelen för media i genomsnitt.
+1. Välj [!UICONTROL **Build**] om du vill skapa målgruppspanelen för medieminister.
 
-1. Fortsätt med [Panelutdata](#panel-output) om du vill ha information om hur man använder den genomsnittliga minuten-målgruppspanelen för media.
+1. Fortsätt med [Panelutdata](#panel-output) om du vill ha information om hur du använder den genomsnittliga minutpanelen för mediefiler.
 
 ## Panelutdata
 
-Utdata på panelen varierar beroende på om du väljer [!UICONTROL **Specifikt innehåll**] eller [!UICONTROL **Anpassad tidsperiod**] i [!UICONTROL **Beräkna mått för**] nedrullningsbar meny när [konfigurera panelindata](#panel-inputs).
+Utdata från panelen varierar beroende på om du väljer [!UICONTROL **Specifikt innehåll**] eller [!UICONTROL **Anpassad tidsperiod**] i listrutan [!UICONTROL **Beräkna mått för**] när [panelindata ](#panel-inputs) konfigureras.
 
 ### Specifikt innehåll
 
@@ -144,11 +144,11 @@ Den genomsnittliga minuten-panelen för media returnerar följande:
 
 * En tabell som visar filtren och den genomsnittliga minuten-publiken för detaljerna, samt hur lång tid och granularitet som använts för varje tidsperiod
 
-  Den här tabellen visas bara om alternativet under avancerade inställningar har anropats [!UICONTROL **Visa beräkningsvärden i registret**] är markerat.
+  Den här tabellen visas bara om alternativet under de avancerade inställningarna [!UICONTROL **Visa beräkningsvärden i tabellen**] har valts.
 
 Om du vill redigera och återskapa panelen väljer du ikonen Redigera (penna) längst upp till höger.
 
-![samtidiga visningsprogram](assets/custom-time-period-panel-output.png)
+![samtidiga visningsprogramutdata](assets/custom-time-period-panel-output.png)
 
 ### Datakälla för anpassad tidsperiod
 

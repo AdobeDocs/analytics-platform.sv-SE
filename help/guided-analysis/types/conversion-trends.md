@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Conversion trends] visa
+# [!UICONTROL Conversion trends]-vy
 
-The **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
+Vyn **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgrader över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
@@ -22,8 +22,8 @@ The **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgrad
 
 Exempel:
 
-* **Spåra optimering**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funktion](friction.md)kan du använda den här vyn för att spåra hur optimeringarna påverkar konverteringsgraden över tid.
-* **Utvärdering av A/B-tester**: Utvärdera effektiviteten i A/B-tester eller -experiment som utförs i samband med en tratt. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
+* **Spåra optimeringsaktiviteter**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funktion](friction.md) kan du använda den här vyn för att spåra hur dessa optimeringar påverkar konverteringsgraden över tid.
+* **Utvärdering av A/B-tester**: Utvärdera effektiviteten hos A/B-tester eller experiment som utförs i ett trattsammanhang. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
 * **Kampanjutvärdering över tid**: Mät effekten av marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
 
 ## Frågerår
@@ -31,26 +31,26 @@ Exempel:
 Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Funktion](friction.md).
-* **[!UICONTROL Steps]**: De händelsetyper som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen inkluderar [!UICONTROL Users] och [!UICONTROL Sessions].
-* **[!UICONTROL Segments]**: De segment som du vill jämföra tratten mellan. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
+* **[!UICONTROL Steps]**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
+* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Users] och [!UICONTROL Sessions].
+* **[!UICONTROL Segments]**: Segmenten som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ## Diagraminställningar
 
-The [!UICONTROL Conversion trends] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
+I vyn [!UICONTROL Conversion trends] finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
 
-* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Line].
-* **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Alternativ för beräkning av konvertering från [!UICONTROL First step] eller [!UICONTROL Previous step].
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är [!UICONTROL Line].
+* **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från [!UICONTROL First step] eller [!UICONTROL Previous step].
 
 >[!NOTE]
 >
->The **Genomsnittlig** i vyn Conversion trends skiljer sig från **Totalt** kolumn i [Bildvy](friction.md) tabell. Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
+>Kolumnen **Jämka** i vyn Konverteringstrender skiljer sig från kolumnen **Totalt** i tabellen [Bildvy](friction.md). Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
 
 ## Tidsjämförelse
 
 {{apply-time-comparison}}
 
-![Tidskonverteringstrender - jämför](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
+![Tidjämförelse för konverteringstrender](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
 
 ## Datumintervall
 

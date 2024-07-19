@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Frequency] visa
+# [!UICONTROL Frequency]-vy
 
-The **[!UICONTROL Frequency]** visa grupperade händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här vyn innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
+**[!UICONTROL Frequency]**-vyn grupperar händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här vyn innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
@@ -22,8 +22,8 @@ The **[!UICONTROL Frequency]** visa grupperade händelsedata efter hur ofta hän
 
 Exempel:
 
-* **Engagemang**: Följ upp hur engagerade användare är med alla händelser i produkten. Du kan klicka på valfri del av stapeldiagrammet för att spara det som ett segment. Segment för kundsegment med låg engagemangsfrekvens kan hjälpa er att avgöra varför användarna inte interagerar med händelsen med den önskade frekvensen. Segment för större engagemang kan hjälpa er att förstå varför användarna interagerar med händelsen ofta. Därifrån kan du uppmuntra andra användare att använda liknande beteenden.
-* **Kundlojalitet**: Ställ in händelsen på Beställningar och måttet på Användare. I den här vyn kan du gruppera användare efter hur många gånger de har gjort ett köp på din webbplats inom det angivna datumintervallet.
+* **Engagemang**: Spåra hur engagerade användare är med alla händelser i produkten. Du kan klicka på valfri del av stapeldiagrammet för att spara det som ett segment. Segment för kundsegment med låg engagemangsfrekvens kan hjälpa er att avgöra varför användarna inte interagerar med händelsen med den önskade frekvensen. Segment för större engagemang kan hjälpa er att förstå varför användarna interagerar med händelsen ofta. Därifrån kan du uppmuntra andra användare att använda liknande beteenden.
+* **Kundlojalitet**: Ange händelsen till Beställningar och måttet till Användare. I den här vyn kan du gruppera användare efter hur många gånger de har gjort ett köp på din webbplats inom det angivna datumintervallet.
 * **Supportoptimering**: Visa antalet supportsamtal eller öppna ärenden per användare för att få information om vilka användare som har mest problem. Sedan kan du skapa ett segment som fokuserar på deras upplevelse för att identifiera och lösa problem.
 * **Prenumerationstjänster**: Användare med lågt engagemang är mer benägna att försvinna. Att förstå hur mycket engagerade användare beter sig kan bidra till att uppmuntra liknande beteenden för användare med dåligt engagemang, vilket gör dem mindre benägna att avbryta prenumerationen.
 
@@ -33,14 +33,14 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Användning](usage.md).
 * **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som ett separat diagram. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
-* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen inkluderar [!UICONTROL Users], [!UICONTROL Sessions], [!UICONTROL Percentage of users] och [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
-* **[!UICONTROL Segments]**: De segment som du vill mäta. Varje markerat segment dubblerar antalet staplar i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
+* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Users], [!UICONTROL Sessions], [!UICONTROL Percentage of users] och [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
+* **[!UICONTROL Segments]**: Segmenten som du vill mäta. Varje markerat segment dubblerar antalet staplar i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
 
 ## Diagraminställningar
 
-The [!UICONTROL Frequency] I vyn finns följande diagraminställningar som du kan justera på menyn ovanför diagrammet:
+I vyn [!UICONTROL Frequency] finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
 
-* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen inkluderar [!UICONTROL Horizontal bar] och [!UICONTROL Stacked bar].
+* **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är [!UICONTROL Horizontal bar] och [!UICONTROL Stacked bar].
 
 ## Inställningar för Bucket
 
@@ -49,8 +49,8 @@ Avgör hur händelsen kategoriseras i grupper (grupper). I den trendade tabellvy
 * **[!UICONTROL Auto buckets]**: Identifiera automatiskt den optimala bucketstorleken baserat på datafördelningen.
 * **[!UICONTROL Customized buckets]**: Anpassa hur data grupperas i grupper.
    * [!UICONTROL From]: Den första bucket. Frekvensen som är mindre än det här värdet undantas från rapportering.
-   * [!UICONTROL To]: Frekvensen större än det här värdet grupperas i den sista bucket.
-   * [!UICONTROL Size]: Bucketintervallet.
+   * [!UICONTROL To]: Frekvensen som är större än det här värdet grupperas i den sista haken.
+   * [!UICONTROL Size]: Bucket-intervallet.
 
 ## Tidsjämförelse
 

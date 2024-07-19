@@ -12,20 +12,20 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Net growth] visa
+# [!UICONTROL Net growth]-vy
 
-The **[!UICONTROL Net growth]** vytypen ger insikter om i vilken takt du vinner eller förlorar användare under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är tillväxtmåttet.
+Vytypen **[!UICONTROL Net growth]** ger insikter om i vilken takt du vinner eller förlorar användare under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är tillväxtmåttet.
 
 Varje datapunkt representerar nettotillväxt, som beräknas med följande formel:
 
 `([New users] + [Return users]) / [Dormant users]`
 
-Resultatet av den här formeln är ett förhållande. En nettoökning av `1` representerar en jämvikt, produkten har fått samma antal användare som den förlorade. En nettotillväxt som är större än `1` representerar positiv tillväxt; det fanns fler nya +-användare än vilande användare. En nettotillväxt som är mindre än `1` representerar en förlust. Det fanns fler vilande användare än nya +-användare.
+Resultatet av den här formeln är ett förhållande. En nettoökning på `1` representerar en jämvikt. Produkten fick samma antal användare som den förlorade. En nettotillväxt som är större än `1` representerar positiv tillväxt. Det fanns fler nya +-användare än vilande användare. En nettotillväxt på mindre än `1` innebär också en förlust. Det fanns fler vilande användare än nya +-användare.
 
-Liknar [Aktiv](active.md) -vy definieras användare som följande:
+Ungefär som i vytypen [Aktiv](active.md) definieras användare enligt följande:
 
-* **[!UICONTROL New]**: Användaren var aktiv under den aktuella perioden, men inte tidigare. Se hur långt analysen ser tillbaka för att avgöra en ny användare genom att hålla pekaren över[!UICONTROL New users]&#39; i diagramförklaringen. Uppslagsintervallet bestäms dynamiskt utifrån det valda datumintervallet och intervallet.
-* **[!UICONTROL Return]**: Användaren var aktiv under den aktuella perioden och inte aktiv under den omedelbart föregående perioden, men var tidigare aktiv vid något tillfälle. Se hur långt tillbaka analysen ser ut för att bestämma en returanvändare genom att hålla pekaren över[!UICONTROL Return users]&#39; i diagramförklaringen. Uppslagsintervallet bestäms dynamiskt utifrån det valda datumintervallet och intervallet.
+* **[!UICONTROL New]**: Användaren var aktiv under den aktuella perioden, men inte tidigare. Se hur långt analysen ser tillbaka för att avgöra om en ny användare är markerad genom att hålla markören över [!UICONTROL New users] i diagramförklaringen. Uppslagsintervallet bestäms dynamiskt utifrån det valda datumintervallet och intervallet.
+* **[!UICONTROL Return]**: Användaren var aktiv under den aktuella perioden och inte aktiv under den omedelbart föregående perioden, men var tidigare aktiv vid något tillfälle. Se hur långt analysen ser tillbaka för att fastställa en returanvändare genom att hålla markören över [!UICONTROL Return users] i diagramförklaringen. Uppslagsintervallet bestäms dynamiskt utifrån det valda datumintervallet och intervallet.
 * **[!UICONTROL Dormant]**: Användaren var aktiv i den omedelbart föregående perioden, men är inte aktiv i den aktuella perioden. Vilande användare räknas inte med i det totala antalet aktiva användare.
 
 >[!NOTE]
@@ -38,9 +38,9 @@ Liknar [Aktiv](active.md) -vy definieras användare som följande:
 
 Exempel:
 
-* **Resultatutvärdering**: Gör att du kan bedöma den övergripande prestandan för din produkt när det gäller att köpa nya användare. Genom att följa tillväxttrender kan du bättre förstå om produkten lockar och behåller användare i önskad takt.
-* **Analys av kundvärvning**: Gör att ni kan bedöma hur effektiva era strategier för kundvärvning är. Genom att analysera källor till användartillväxt, t.ex. sökmotorer, kampanjer eller andra marknadsföringskanaler, kan ni identifiera de viktigaste tillväxtkällorna så att ni kan tilldela resurser i enlighet med detta.
-* **Kurnanalys**: Nettotillväxt inkluderar attrition i sin formel (vilande användare). Du kan utvärdera den övergripande statusen för din användarbas över tiden. Om nettotillväxten är konsekvent nedan `1`innebär det en hög grad av attribuering som kan leda till implementering av strategier för kvarhållande.
+* **Prestandautvärdering**: Gör att du kan utvärdera den övergripande prestandan för din produkt när det gäller att köpa nya användare. Genom att följa tillväxttrender kan du bättre förstå om produkten lockar och behåller användare i önskad takt.
+* **Analys av kundvärvning**: Gör att du kan bedöma hur effektiva era strategier för kundvärvning är. Genom att analysera källor till användartillväxt, t.ex. sökmotorer, kampanjer eller andra marknadsföringskanaler, kan ni identifiera de viktigaste tillväxtkällorna så att ni kan tilldela resurser i enlighet med detta.
+* **Kurnanalys**: Nettotillväxt inkluderar attribut i sin formel (vilande användare). Du kan utvärdera den övergripande statusen för din användarbas över tiden. Om nettotillväxten är konsekvent under `1` indikerar det en hög mängd attribut som kan leda till implementering av strategier för kvarhållning.
 
 ## Frågerår
 
@@ -48,7 +48,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Aktiv](active.md).
 * **[!UICONTROL Events]**: Den händelse som du vill mäta. Eftersom den här vytypen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
-* **[!UICONTROL Counted as]**: Den nedräkningsmetod som du vill använda för de markerade händelserna. Alternativen inkluderar [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
+* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: Det segment som du vill mäta. Du kan inkludera ett segment i en fråga.
 
 ## Tidsjämförelse

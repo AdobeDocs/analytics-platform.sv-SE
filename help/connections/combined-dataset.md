@@ -17,8 +17,8 @@ ht-degree: 1%
 
 När du skapar en anslutning kombinerar Customer Journey Analytics alla händelsedatamängder till en enda datauppsättning. Den här kombinerade händelsedatamängden är vad Customer Journey Analytics använder för rapportering (tillsammans med profil- och uppslagsdatauppsättningar). När du inkluderar flera händelsedatamängder i en anslutning:
 
-* Data för fält i datauppsättningar baserade på **samma schemasökväg** sammanfogas till en enda kolumn i den kombinerade datauppsättningen.
-* Personens ID-kolumn, som anges för varje datauppsättning, sammanfogas till en enda kolumn i den kombinerade datauppsättningen. **oavsett namn**. Denna kolumn är grunden för att identifiera unika personer i Customer Journey Analytics.
+* Data för fält i datauppsättningar som baseras på **samma schemasökväg** sammanfogas till en enda kolumn i den kombinerade datauppsättningen.
+* Kolumnen för person-ID, som anges för varje datauppsättning, sammanfogas till en enda kolumn i den kombinerade datauppsättningen, **oavsett namn**. Denna kolumn är grunden för att identifiera unika personer i Customer Journey Analytics.
 * Rader bearbetas baserat på tidsstämpel.
 * Händelser löses ned till millisekundnivån.
 
@@ -64,13 +64,13 @@ följande kombinerade datauppsättning används för rapportering.
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen `string_color` baseras på schemasökväg `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen  `_experience.somethingelse.string_color`. I det här scenariot är data **not** sammanfogas till en kolumn i den kombinerade datauppsättningen som skapas. I stället är resultatet två `string_color` kolumner i den kombinerade datauppsättningen.
+Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen baseras `string_color` på schemasökvägen `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen `_experience.somethingelse.string_color`. I det här scenariot sammanfogas data **inte** till en kolumn i den resulterande kombinerade datauppsättningen. I stället är resultatet två `string_color`-kolumner i den kombinerade datauppsättningen.
 
 Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session. Fält med identiska schemasökvägar sammanfogas.
 
 Detta koncept gäller också attribuering. Det spelar ingen roll vilken datamängd en rad kommer från. Attribution fungerar exakt som om alla händelser kom från en enda datamängd. Använda tabellerna ovan som exempel:
 
-Om anslutningen bara innehöll den första tabellen och inte den andra, drar du en rapport med hjälp av `string_color` dimension och `metric_a` mätvärden som använder den senaste beröringsattribueringen skulle visa:
+Om din anslutning bara innehöll den första tabellen och inte den andra skulle följande visas om du drog en rapport med måtten `string_color` och `metric_a` med hjälp av den senaste beröringsattribueringen:
 
 | string_color | metrisk_a |
 | --- | --- |
@@ -78,7 +78,7 @@ Om anslutningen bara innehöll den första tabellen och inte den andra, drar du 
 | Blå | 3 |
 | Röd | 2 |
 
-Om du däremot inkluderar båda tabellerna i anslutningen ändras attribueringen sedan `user_847` finns i båda datauppsättningarna. En rad från de andra datauppsättningsattributen `metric_a` till &#39;Gul&#39; där de tidigare inte var angivna:
+Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribueringen eftersom `user_847` finns i båda datauppsättningarna. En rad från den andra datauppsättningsattributen `metric_a` till Gul, där de tidigare var ospecificerade:
 
 | string_color | metrisk_a |
 | --- | --- |
@@ -88,7 +88,7 @@ Om du däremot inkluderar båda tabellerna i anslutningen ändras attribueringen
 
 >[!NOTE]
 >
->Om ett sammanfogat fält är en söknyckel för en händelsedatamängd i anslutningen, kommer den associerade uppsättningen att berika **alla** värden för det fältet. Det spelar ingen roll vilken händelsedatamängd en rad kommer från, eftersom sökrelationen är associerad med den delade schemasökvägen.
+>Om ett sammanfogat fält är en söknyckel för en händelsedatamängd i anslutningen, kommer den associerade sökdatamängden att förbättra **alla** värden för det fältet. Det spelar ingen roll vilken händelsedatamängd en rad kommer från, eftersom sökrelationen är associerad med den delade schemasökvägen.
 
 ## Flerkanalsanalys
 

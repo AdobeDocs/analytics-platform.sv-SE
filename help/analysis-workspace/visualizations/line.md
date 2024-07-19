@@ -15,24 +15,24 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Radvisualiseringen kommer snart att fungera [intelligenta bildtexter](/help/analysis-workspace/visualizations/intelligent-captions.md).
+>Radvisualiseringen innehåller snart [intelligenta bildtexter](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension.
 
 ![Radvisualisering](assets/line-viz.png)
 
-Välj inställningsikonen ![Inställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i det övre fältet i linjevisualiseringen för att komma åt [Visualiseringsinställningar](freeform-analysis-visualizations.md) tillgängliga. Inställningarna är indelade i:
+Välj inställningsikonen ![Inställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i det övre fältet i linjevisualiseringen för att komma åt [Visualiseringsinställningarna](freeform-analysis-visualizations.md) som är tillgängliga. Inställningarna är indelade i:
 
 <img src="./assets/viz-settings-line.png" alt="Visualiseringsinställningar" width="50%" />
 
 * **Allmänt**: Inställningar som är gemensamma för olika visualiseringstyper
-* **Axel**: Inställningar som påverkar x- eller y-axeln i linjens visualisering
-* **Övertäckningar**: Alternativ för att lägga till ytterligare kontext till de serier som visas i radvisualiseringen.
+* **Axel**: Inställningar som påverkar x- eller y-axeln för linjavisualisering
+* **Övertäckningar**: Alternativ för att lägga till ytterligare kontext till serien som visas i radvisualiseringen.
 
 
 ## Ändra granularitet
 
-En granularitetslistruta i [visningsinställningar](freeform-analysis-visualizations.md) gör att du kan ändra en anpassad visualisering (t.ex. linje, stapel) från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen.
+Med en granularitetslistruta i [visualiseringsinställningarna](freeform-analysis-visualizations.md) kan du ändra en trendvisualisering (t.ex. rad, stapel) från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen.
 
 ## Visa min eller max
 
@@ -42,7 +42,7 @@ Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!
 
 ## Visa trendlinjeövertäckning
 
-Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]** kan du välja att lägga till en regression eller en glidande medeltrendlinje i linjeserierna. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
+Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]** kan du välja att lägga till en regression eller en glidande medeltrendlinje i radserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
 
 >[!TIP]
 >

@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Datumintervall är en typ av komponent som du kan använda i Workspace-projekt. De gör att du kan se data som trendas över tid eller se när händelser inträffar som mest. Datumintervall färgkodas i lila.
 
-Med anpassade datumintervall kan du anpassa de datum som visas i arbetsyteprojekt. Använd datumintervallhanteraren för att [hantera](manage.md) eller [skapa](create.md) anpassade datumintervall.
+Med anpassade datumintervall kan du anpassa de datum som visas i Workspace-projekt. Använd hanteraren för datumintervall för att [hantera](manage.md) eller [skapa](create.md) anpassade datumintervall.

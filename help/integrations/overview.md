@@ -18,6 +18,6 @@ Adobe erbjuder många produkter och lösningar som utnyttjar data från Adobe Ex
 De flesta arbetsflöden omfattar följande steg:
 
 1. Använd den önskade lösningen eller tjänsten för att skicka data till plattformen som en datauppsättning.
-2. [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med datauppsättningen.
-3. [Skapa en datavy](/help/data-views/create-dataview.md) som innehåller de önskade måtten och mätvärdena för rapportering.
+2. [Skapa en anslutning](/help/connections/create-connection.md) i Customer Journey Analytics med den önskade datauppsättningen.
+3. [Skapa en datavy](/help/data-views/create-dataview.md) som innehåller önskade mått och mätvärden för rapportering.
 4. Kör rapporter i Analysis Workspace baserat på de dimensioner och mått som har konfigurerats i datavyn.

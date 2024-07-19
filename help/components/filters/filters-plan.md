@@ -20,7 +20,7 @@ Genom att ägna lite tid åt att planera filter ökar du chansen att de kan vara
 
    * När ska jag använda det här filtret?
 
-* Bestäm filteromfånget. som [filterbehållare](/help/components/filters/filters-overview.md) bäst representerar omfattningen? Använd den minsta möjliga behållaren.
+* Bestäm filteromfånget. Vilken [filterbehållare](/help/components/filters/filters-overview.md) är bäst för omfånget? Använd den minsta möjliga behållaren.
 
 * Bestäm vilka element som ska inkluderas i filterdefinitionen och vilka värden.
 

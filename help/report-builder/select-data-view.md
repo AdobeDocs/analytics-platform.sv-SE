@@ -26,9 +26,9 @@ Om du vill välja en datavy från en cell skapar du först ett datablock och til
 1. Skapa ett datablock.
 Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/help/report-builder/create-a-data-block.md).
 
-1. Klicka på *cellikon* i *Datavyer* -avsnitt.
+1. Klicka på *cellikonen* i avsnittet *Datavyer*.
 
-   ![Skapa ett nytt datablocksfönster med cellikonen markerad.](/help/report-builder/assets/cell-icon.png)
+   ![Skapa nytt fönster för datablock med cellikonen markerad.](/help/report-builder/assets/cell-icon.png)
 
 1. Välj en cellplats där datavyer ska läggas till i den markerade cellen.
 
@@ -38,9 +38,9 @@ Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/he
 
 1. Markera de datavyer som du vill tilldela cellen.
 
-   ![Snabbredigeringsrutan i Report Builder visar vyn Välj data.](/help/report-builder/assets/select-data-view.png)
+   ![Snabbredigeringsrutan för Report Builder med vyn Välj data.](/help/report-builder/assets/select-data-view.png)
 
-1. Klicka **Använd**.
+1. Klicka på **Använd**.
 
    När du är klar med datablocket kan du uppdatera datablocket med en annan datavy än den markerade cellen.
 
@@ -52,8 +52,8 @@ Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/he
 
 1. Välj en annan datavy i listrutan.
 
-1. (Valfritt) **Välj Uppdatera datablock** vid förändring.
+1. (Valfritt) **Välj Uppdatera datablock** vid ändring.
 
-1. Klicka **Använd**.
+1. Klicka på **Använd**.
 
    Report Builder uppdaterar datablocket med den valda datavyn.

@@ -2,7 +2,7 @@
 description: Lär dig mer om tangentbordsinteraktioner, kortkommandon och peka-och-klicka-beteenden i Analysis Workspace.
 keywords: Analysis Workspace
 feature: Workspace Basics
-title: Så här använder du arbetsytans snabbtangenter
+title: Använda Workspace snabbtangenter
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys och demokratisering.
 
-Obs! `CTRL` = Windows och `command` = MAC
+Obs! `CTRL` = Windows och `command` = Mac
 
 ## Navigeringsåtgärder
 

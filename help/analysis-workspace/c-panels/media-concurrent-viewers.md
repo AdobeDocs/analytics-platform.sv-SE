@@ -41,7 +41,7 @@ Du kan konfigurera panelen Medievisningsprogram för samtidig användning med de
 
 ### Serieuppdelad vy
 
-![Uppdelningsvyn i Media Concurrent Viewer Series med 7 av 10 dimensioner, segment eller datumintervall.](assets/concurrent-viewers-series-breakdown.png)
+![Serieuppdelningsvyn i Media Concurrent Viewer med 7 av 10 dimensioner, segment eller datumintervall.](assets/concurrent-viewers-series-breakdown.png)
 
 ## Panelutdata {#Output}
 
@@ -51,7 +51,7 @@ Du kan när som helst redigera och återskapa panelen genom att klicka på redig
 
 Om du har valt seriebrytning visas en rad i linjediagrammet och ett sammanfattningsnummer för varje rad:
 
-![Media Concurrent Viewer.](assets/concurrent-viewers-output.png)
+![Media Concurrent Viewer-utdata.](assets/concurrent-viewers-output.png)
 
 ### Data Source
 
@@ -59,12 +59,12 @@ Det enda mätvärdet som kan användas i den här panelen är samtidiga visnings
 
 | Mått | Beskrivning |
 |---|---|
-| Samtidiga visningsprogram | Antal unika personer som visar medieströmmarna vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika personkonton kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
+| Samtidiga visningsprogram | Antal unika personer som visar medieströmmarna vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Det här skiljer sig från Concurrent Viewer-rapportering i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika personkonton kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
 
 Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan du högerklicka på linjediagrammet och hämta som en CSV-fil.  Serieuppdelningar inkluderas.
 
 
-![Alternativen för Concurrent viewers output med&quot;Download data as CSV&quot; markerat.](assets/concurrent-viewers-download-csv.png)
+![Alternativen för Concurrent viewers-utdata med&quot;Download data as CSV&quot; markerat.](assets/concurrent-viewers-download-csv.png)
 
 ## Vanliga frågor {#FAQ}
 
@@ -78,6 +78,6 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 | Kan jag köra avvikelseidentifiering? | Nej.  Anomalsidentifiering är inte tillgängligt för den här panelen. |
 | Varför använda unika personer istället för aktiva sessioner? | Genom att använda unika personer kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
 | Vad innebär det att ha samtidiga visningsprogram med högre granularitet än en minut? | Med en granularitet som är större än en minut är samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom det tidsintervallet.  På timnivå är till exempel samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom timmen. |
-| Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika personer som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika personkonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
+| Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika personer som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Det här skiljer sig från Concurrent Viewer-rapportering i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika personkonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->

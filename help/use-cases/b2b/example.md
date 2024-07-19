@@ -20,7 +20,7 @@ I den här artikeln beskrivs hur du konfigurerar, konfigurerar och rapporterar p
 
 ## Anslutning
 
-Definiera anslutningen så att den inkluderar alla relevanta B2B-datauppsättningar från Experience Platform. Se till att du inkluderar och omvandlar alla relevanta sökdatauppsättningar som krävs för ett vanligt B2B-personbaserat rapportscenario. Se [Transformera datauppsättningar för B2B-sökning](/help/connections/transform-datasets-b2b-lookups.md) för mer information.
+Definiera anslutningen så att den inkluderar alla relevanta B2B-datauppsättningar från Experience Platform. Se till att du inkluderar och omvandlar alla relevanta sökdatauppsättningar som krävs för ett vanligt B2B-personbaserat rapportscenario. Mer information finns i [Omforma B2B-sökningsdatauppsättningar](/help/connections/transform-datasets-b2b-lookups.md).
 
 Datauppsättningar som du kan överväga att lägga till i anslutningen:
 
@@ -40,11 +40,11 @@ Datauppsättningar som du kan överväga att lägga till i anslutningen:
 -->
 
 
-Förhållandet mellan uppslagsscheman, profilschemat och händelseschemat definieras i B2B-inställningarna i Experience Platform. Se scheman i [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) och [Definiera en många-till-ett-relation mellan två scheman i Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) för mer information.
+Förhållandet mellan uppslagsscheman, profilschemat och händelseschemat definieras i B2B-inställningarna i Experience Platform. Mer information finns i Scheman i [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) och [Definiera en många-till-ett-relation mellan två scheman i Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html).
 
 ![Relation mellan B2B-scheman](assets/classes.png)
 
-För varje uppslagsdatauppsättning som du lägger till i anslutningen måste du uttryckligen definiera relationen till en händelsedatauppsättning med **[!UICONTROL Key]** och **[!UICONTROL Matching key]** i **[!UICONTROL Edit dataset]** -dialogrutan. Exempel:
+För varje uppslagsdatauppsättning som du lägger till i anslutningen måste du uttryckligen definiera relationen till en händelsedatamängd med hjälp av **[!UICONTROL Key]** och **[!UICONTROL Matching key]** i dialogrutan **[!UICONTROL Edit dataset]**. Exempel:
 
 ![Nyckel - Matchande nyckel](assets/key-matchingkey.png)
 
@@ -55,9 +55,9 @@ Fyra scheman används uttryckligen för att ansluta personschemat till andra rel
 * XDM Business Marketing List-medlemmar
 * XDM Business Campaign-medlemmar
 
-För varje uppslagsdatauppsättning aktiverar du även för ett schema som baseras på en sådan schemaklass **[!UICONTROL Transform dataset]** för att säkerställa att data omvandlas för personbaserade sökningar. Se [Omforma datauppsättningar för B2B-sökningar](/help/connections/transform-datasets-b2b-lookups.md) för mer information.
+För varje uppslagsdatauppsättning, för ett schema som baseras på en sådan schemaklass, aktiverar du även **[!UICONTROL Transform dataset]** för att säkerställa att data omvandlas för personbaserade uppslag. Mer information finns i [Omforma datauppsättningar för B2B-sökningar](/help/connections/transform-datasets-b2b-lookups.md).
 
-Tabellen nedan innehåller en exempelöversikt över [!UICONTROL Person ID], [!UICONTROL Key]och [!UICONTROL Matching key] värden för var och en av datauppsättningarna.
+Tabellen nedan innehåller en exempelöversikt över värdena [!UICONTROL Person ID], [!UICONTROL Key] och [!UICONTROL Matching key] för var och en av datauppsättningarna.
 
 
 | Datauppsättning | Person-ID | Nyckel | Matchande nyckel (i händelsedatamängd) |
@@ -71,12 +71,12 @@ Tabellen nedan innehåller en exempelöversikt över [!UICONTROL Person ID], [!U
 
 {style="table-layout:auto"}
 
-Se [Lägga till och konfigurera datauppsättningar](../../connections/create-connection.md) om du vill ha mer information om hur du konfigurerar inställningar för en datauppsättning.
+Mer information om hur du konfigurerar inställningar för en datauppsättning finns i [Lägg till och konfigurera datauppsättningar](../../connections/create-connection.md).
 
 
 ## Datavy
 
-För att få tillgång till relevanta B2B-dimensioner och mätvärden när du skapar ett Workspace-projekt måste du definiera datavyn därefter.
+För att få tillgång till relevanta B2B-dimensioner och mätvärden när du skapar ditt Workspace-projekt måste du definiera datavyn därefter.
 
 Du kan lägga till följande komponenter som dimensioner i datavyn för att vara säker på att du kan rapportera personbaserad nivå på dina B2B-data. Komponentnamnen ändras av tydlighetsskäl.
 
@@ -296,9 +296,9 @@ No metric components are defined as part of this dataset.
 
 -->
 
-## Arbetsyta
+## Workspace
 
-Med komponenterna korrekt definierade i datavyn kan du nu skapa specifika B2B-rapporter och visualiseringar i Workspace-projektet.
+Med komponenterna korrekt definierade i datavyn kan du nu skapa specifika B2B-rapporter och visualiseringar i ditt Workspace-projekt.
 
 Nedan visas ett exempelprojekt som är beroende av anslutningen och datavyn som beskrivs ovan.
 

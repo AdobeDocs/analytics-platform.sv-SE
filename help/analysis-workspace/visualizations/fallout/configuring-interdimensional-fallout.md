@@ -17,14 +17,14 @@ Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden 
 
 Förutom siddimensionen kan du till exempel lägga till åtgärdsbaserade dimensionsobjekt i en utfallsvisualisering. På så sätt kan ni visualisera hur sidor och vissa åtgärder interagerar på kundens vägar.
 
-![I vyn Alla besök visas flera dimensioner som kontaktytor.](assets/interdimensional-fallout1.png)
+![Vyn Alla besök visar flera dimensioner som kontaktytor.](assets/interdimensional-fallout1.png)
 
 Utfallet uppdateras dynamiskt så att du kan se utfallet i flera dimensioner.
 
 Du kan också lägga till mätvärden i den här mixen. I det här exemplet har vi lagt till måttet&quot;Delat foto&quot; för att ge intryck av kundens väg:
 
-![I vyn Alla besök visas det nya måttet: &quot;Delat foto&quot;.](assets/interdimensional-fallout2.png)
+![Vyn Alla besök visar det tillagda måttet: Delat foto.](assets/interdimensional-fallout2.png)
 
 Dessutom kan du kombinera olika mått och mätvärden i AND-kontrollpunkter. Bara dra ytterligare mått eller mätvärden över en befintlig dimension:
 
-![I vyn Alla besök visas det nya åtgärdsnamnet: Mått för delat och delat foto.](assets/interdimensional-fallout3.png)
+![Vyn Alla besök visar det tillagda åtgärdsnamnet: Mått för delat och delat foto.](assets/interdimensional-fallout3.png)

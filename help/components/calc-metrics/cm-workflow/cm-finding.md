@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Du kan hitta mätvärden i Analysis Workspace på samma sätt som du hittar andra typer av komponenter.
 
-Mer information om hur du snabbt hittar komponenter finns i [Söka, filtrera och sortera komponentlistan](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) in [Komponenter - översikt](/help/components/overview.md).
+Mer information om hur du snabbt hittar komponenter finns i [Söka, filtrera och sortera komponentlistan](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) i [Komponentöversikt](/help/components/overview.md).

@@ -1,5 +1,5 @@
 ---
-description: projekt med endast visning i arbetsytan
+description: projekt med endast visning i Workspace
 keywords: projekt med endast visning
 title: projekt med endast visning
 feature: Curate and Share
@@ -14,22 +14,22 @@ ht-degree: 0%
 
 # projekt med endast visning
 
-Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
+Du kan dela projekt som&quot;endast för visning&quot; till mottagare via arbetsflödet [Projektdelning](/help/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
-![Ett projekt som bara är tillgängligt för visning.](assets/view-only-project.png)
+![Ett projekt som endast är delat för visning.](assets/view-only-project.png)
 
 ## Inaktiverade interaktioner
 
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dolt vänster spår
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i en [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
 * Frihandsnr för synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering
 * Panelfilter
 * Redigera, Infoga och Komponentmenyer
-* Tips för arbetsyta
+* Workspace tips
 
 ## Aktiverade interaktioner
 

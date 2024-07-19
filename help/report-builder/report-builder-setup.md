@@ -72,7 +72,7 @@ Hämta och installera tillägget Report Builder
 
 Kontakta IT-avdelningen eller säkerhetsteamet och be om godkännande av tillägget Report Builder. När godkännande har beviljats väljer du fliken Administratörshanterad i dialogrutan för Office-tillägg.
 
-![Fliken Administratörshanterad i dialogrutan för Office-tillägg.](./assets/image1.png)
+![Fliken Administratörshantering i dialogrutan Office-tillägg.](./assets/image1.png)
 
 När du har installerat tillägget Report Builder visas ikonen Report Builder i Excel-menyfliksområdet på fliken Hem.
 
@@ -86,7 +86,7 @@ När du har installerat tillägget Report Builder for Excel för din operativpla
 
 1. Klicka på ikonen Report Builder för att starta Report Builder.
 
-1. I verktygsfältet i Adobe Report Builder klickar du på **Inloggning**.
+1. Klicka på **Logga in** i verktygsfältet i Adobe Report Builder.
 
    ![Klicka på inloggningsknappen för Report Builder.](./assets/rb_login.png)
 
@@ -104,7 +104,7 @@ När du loggar in första gången loggas du in på den standardorganisation som 
 
 1. Välj en organisation i listan över tillgängliga organisationer. Endast organisationer som du har åtkomst till listas.
 
-   ![Listan över organisationer som du har åtkomst till.](./assets/image5.png)
+   ![Listan över organisationer som du kan komma åt.](./assets/image5.png)
 
 ## Logga ut
 
@@ -116,4 +116,4 @@ Du kan logga ut från Report Builder från användarprofilen.
 
    ![Din användarprofilavatar och knappen Logga ut.](./assets/image6.png)
 
-1. Klicka **Logga ut**.
+1. Klicka på **Logga ut**.

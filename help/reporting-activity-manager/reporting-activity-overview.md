@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Översikt över Reporting Activity Manager
 
-The [!UICONTROL Reporting Activity Manager] är tillgängligt för administratörer.
+[!UICONTROL Reporting Activity Manager] är tillgänglig för administratörer.
 
 Om din organisation försämrar rapporternas prestanda under perioder med hög rapporteringsbelastning kan du med Reporting Activity Manager själv diagnostisera och åtgärda kapacitetsproblem utan att behöva kontakta Adobe kundtjänst. Du kan enkelt hantera rapporteringsköer i ett enda gränssnitt och omedelbart agera &#x200B; &#x200B; för att förbättra användarnas upplevelse.
 
@@ -32,7 +32,7 @@ Reporting Activity Manager ger följande fördelar:
 
 <!-- update for CJA -->
 
-Om du vill hantera rapporteringsaktivitet måste du ha rollen Produktadministratör. Mer information finns i [Åtkomstkontroll för Customer Journey Analytics](/help/technotes/access-control.md).
+Om du vill hantera rapporteringsaktivitet måste du ha rollen Produktadministratör. Mer information finns i [Åtkomstkontroll Customer Journey Analytics](/help/technotes/access-control.md).
 
 ## Visa rapporteringsaktivitet
 

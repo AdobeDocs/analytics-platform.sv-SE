@@ -19,13 +19,13 @@ Du kan också lägga till filter i en kontaktyta. Du kanske vill jämföra filte
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
-Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per händelse, till exempel products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra en pthing på eVars, inklusive eVars- och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html)-marknadsföring (variabler som kan ha flera värden per händelse, till exempel products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
-1. Dra en [!UICONTROL Fallout] visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
+1. Dra en [!UICONTROL Fallout]-visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
 
-1. Dra siddimensionen till frihandstabellen och sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]** som första kontaktyta.
+1. Dra siddimensionen till friformstabellen och dra sedan en sida (i det här fallet Home - JEsquire) till fältet **[!UICONTROL Add TouchPoint]** som första kontaktyta.
 
-   ![Listrutan Alla besök visar JEsquire som dras till fältet Lägg till kontaktpunkt.](assets/fallout1.png)
+   ![Listrutan Alla besök visar JEsquire som har dragits till fältet Lägg till kontaktpunkt.](assets/fallout1.png)
 
    Håll muspekaren över en kontaktyta för att se bortfallet och annan information om den nivån, t.ex. namnet på kontaktytan, antalet personer vid den punkten och se hur framgångsrik kontaktytan är (samt jämför framgångssiffran med andra kontaktytor).
 
@@ -35,15 +35,15 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
 
 1. Fortsätt lägga till kontaktytor tills sekvensen är klar.
 
-   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare till en kontaktyta.
+   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare kontaktytor till en kontaktyta.
 
    >[!NOTE]
    >
    >Flera filter förenas med AND, men flera objekt som dimensionsobjekt och mått förenas med OR.
 
-   ![Page:CamerRoll eller Page: Kamerans kontaktytor är markerade.](assets/multiple_obj_touchpoint.png)
+   ![Sidan:CamerRoll eller Sida: Kamerans kontaktytor är markerade.](assets/multiple_obj_touchpoint.png)
 
-1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från&quot;finally&quot;) i banan. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
+1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från&quot;till slut&quot;) i sökvägen. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
 
    ![Vyn Alla besök visar alternativet för eventuell sökväg markerat. ](assets/next-hit-eventually.png)
 
@@ -66,7 +66,7 @@ Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://
 |--- |--- |
 | Utfallsbehållare <ul><li>Besök</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera personsökningar. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå personernas engagemang på personnivå (olika besök) eller begränsa analysen till ett enda besök. |
 
-När du **högerklicka på en kontaktyta** visas följande alternativ:
+När du **högerklickar på en kontaktyta** visas följande alternativ:
 
 | Alternativ | Beskrivning |
 |--- |--- |

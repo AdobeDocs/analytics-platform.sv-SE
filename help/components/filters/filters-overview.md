@@ -26,7 +26,7 @@ Filter kan baseras på
 
 Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
 
-Filtreringen innehåller [Filter Builder](/help/components/filters/filter-builder.md) för att skapa filter och köra ett förtest samt [Filterhantering](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
+Filtreringen innehåller [Filter Builder](/help/components/filters/filter-builder.md) för att skapa filter och köra ett förtest samt [Filter Manager](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
 
 Det högsta antalet filter som du kan skapa per IMS-organisation är 50 000.
 
@@ -40,7 +40,7 @@ Med sekventiella filter kan du identifiera personer baserat på navigering (sidv
 
 >[!IMPORTANT]
 >
->Du måste ha **Välj** för att skapa sekventiella flerkanalsfilter. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
+>Du måste ha paketet **Select** för att kunna skapa sekventiella filter för flera kanaler. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
 
 Här är ett exempel:
 
@@ -102,7 +102,7 @@ Sessionsbehållare innehåller värden som baseras på förekomst per session:
 - Deltagandemått
 - Linjärt allokerade mätvärden
 
-Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session varar men också när en ny session ska skapas. Du kan till exempel definiera en ny mobilappssession baserat på varje gång en användare startar din mobilapp. Se [Sessionsinställningar](/help/data-views/session-settings.md) för mer information.
+Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session varar men också när en ny session ska skapas. Du kan till exempel definiera en ny mobilappssession baserat på varje gång en användare startar din mobilapp. Mer information finns i [Sessionsinställningar](/help/data-views/session-settings.md).
 
 ### Händelsebehållare {#event}
 

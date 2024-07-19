@@ -1,5 +1,5 @@
 ---
-description: Lär dig hur du skapar mappar och undermappar i arbetsytan
+description: Lär dig skapa mappar och undermappar i Workspace
 keywords: Analysis Workspace
 title: Skapa mappar
 feature: Workspace Basics
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Skapa mappar
 
-Du kan lägga till en ny mapp eller en undermapp i listan över projekt och mappar på startsidan för arbetsytan.
+Du kan lägga till en ny mapp eller en undermapp i listan över projekt och mappar på Workspace landningssida.
 
 ## Skapa en ny mapp {#create-new-folder}
 
 Om du vill skapa en ny mapp
 
-1. Klicka **Skapa nytt**.
+1. Klicka på **Skapa ny**.
 
 1. Ange ett namn för den nya mappen.
 
@@ -28,13 +28,13 @@ Om du vill skapa en ny mapp
 
    ![Skapa ett nytt mappfönster med det nya mappnamnet och listan med tillgängliga taggar.](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
-1. Klicka **Skapa**.
+1. Klicka på **Skapa**.
 
    ![Klicka på Skapa.](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
    Den nya mappen läggs till i huvudlistan med projekt och mappar.
 
-   ![Startsidan för projekt med den uppdaterade listan över projekt och mappar.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![Startsidan för projekt visar den uppdaterade listan över projekt och mappar.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## Skapa en undermapp {#create-subfolder}
 
@@ -42,15 +42,15 @@ Med undermappar kan du ange ytterligare nivåer för projekthantering och -organ
 
 Om du vill skapa en undermapp när en befintlig mapp är öppen
 
-1. Klicka **Skapa en ny mapp**.
+1. Klicka på **Skapa en ny mapp**.
 
    ![Klicka på Skapa en ny mapp.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
 1. Ange ett undermappsnamn och lägg till eventuella nödvändiga taggar.
 
-   ![Fönstret Skapa ny mapp med nytt namn och fältet Taggar.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![Fönstret Skapa ny mapp med nytt namn och taggfält.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
-1. Klicka **Skapa**.
+1. Klicka på **Skapa**.
 
    Den nya undermappen läggs till i listan över projekt och undermappar.
 
@@ -60,4 +60,4 @@ Om du vill skapa en undermapp när en befintlig mapp är öppen
    >
    >Du kan skapa upp till 10 nivåer av undermappar i en enda mapp.
 
-   ![I mapplistrutan visas alla undermappar i mappen.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+   ![I den nedrullningsbara listan över mappar visas alla undermappar i mappen.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

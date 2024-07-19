@@ -17,7 +17,7 @@ Beroende på dina behörigheter kan du dela filter med hela organisationen, grup
 
 | Administratör | Icke-administratör |
 |---|---|
-| Kan dela filter med alla, med grupper och med användare. Se [Admin Console dokumentation](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) för mer information. | Kan endast dela filter med enskilda användare. |
+| Kan dela filter med alla, med grupper och med användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html). | Kan endast dela filter med enskilda användare. |
 
 När bör du dela filter med hela företaget jämfört med bara en grupp användare eller personer? Här är några tips du kan följa:
 
@@ -31,7 +31,7 @@ Dela ett filter:
 
 1. Markera kryssrutan bredvid det filter du vill dela i Filterhanteraren.
 
-1. Klicka på i verktygsfältet för filterhantering **[!UICONTROL Share]**.
+1. Klicka på **[!UICONTROL Share]** i verktygsfältet för filterhantering.
 
 1. Om du är administratör kan du välja Alla eller välja Grupper och Användare i organisationen. Som icke-administratör kan du bara se enskilda användare. Använd sökfältet för att söka efter grupper eller användare. Klicka på **[!UICONTROL Share]**. Ikonen Delad visas bredvid filtret: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 

@@ -24,45 +24,45 @@ Följande information instruerar chefer för Customer Journey Analytics om hur m
 
 Ett analysstyrkort visar viktiga datavisualiseringar för chefsanvändare i en sida vid sida-layout, vilket visas nedan:
 
-![Exempel på analysstyrkort som visar demonstrationen av Mobile Scorecard](assets/intro_scorecard.png)
+![Exempel på analysstyrkort som visar Mobile Scorecard-demo](assets/intro_scorecard.png)
 
 Som kurator för det här styrkortet kan du använda styrkortsverktyget för att konfigurera vilka rutor som ska visas på styrkortet för den verkställande konsumenten. Du kan också konfigurera hur detaljerade vyer, eller delningarna, kan justeras när användaren trycker på plattorna. Styrkortbyggargränssnittet visas nedan:
 
-![Scorecard Builder visar det nya fönstret för mobilstyrkort. ](assets/scorecard_builder.png)
+![Styrkortverktyget visar det nya fönstret för mobilstyrkort. ](assets/scorecard_builder.png)
 
 Om du vill skapa styrkortet måste du göra följande:
 
-1. Öppna [!UICONTROL Blank Mobile Scorecard] mall.
+1. Öppna mallen [!UICONTROL Blank Mobile Scorecard].
 2. Konfigurera styrkortet med data och spara det.
 
-## Öppna [!UICONTROL Blank Mobile Scorecard] mall {#template}
+## Åtkomst till mallen [!UICONTROL Blank Mobile Scorecard] {#template}
 
-Du kommer åt [!UICONTROL Blank Mobile Scorecard] mall antingen genom att skapa ett nytt projekt eller från Verktyg-menyn.
+Du kan komma åt mallen [!UICONTROL Blank Mobile Scorecard] antingen genom att skapa ett nytt projekt eller via Verktyg-menyn.
 
 ### Skapa ett nytt projekt {#create}
 
-1. Öppna Customer Journey Analytics och klicka på **[!UICONTROL Workspace]** -fliken.
-1. Klicka **[!UICONTROL Create project]** och väljer **[!UICONTROL Blank mobile scorecard]** projektmall.
+1. Öppna Customer Journey Analytics och klicka på fliken **[!UICONTROL Workspace]**.
+1. Klicka på **[!UICONTROL Create project]** och välj projektmallen **[!UICONTROL Blank mobile scorecard]**.
 1. Klicka på **[!UICONTROL Create]**.
 
-![Fönstret Alla mallar med Tomt styrkort valt.](assets/new_template.png)
+![Fönstret Alla mallar med Tomt MObilitetskort markerat.](assets/new_template.png)
 
 ### Verktyg-menyn
 
-1. Från **[!UICONTROL Tools]** meny, välja **[!UICONTROL Analytics dashboards (Mobile App)]**.
-1. På nästa skärm klickar du **[!UICONTROL Create new scorecard]**.
+1. Välj **[!UICONTROL Analytics dashboards (Mobile App)]** på menyn **[!UICONTROL Tools]**.
+1. Klicka på **[!UICONTROL Create new scorecard]** på den följande skärmen.
 
 ## Konfigurera styrkortet med data och spara det {#configure}
 
 Så här implementerar du styrkortsmallen:
 
-1. Under **[!UICONTROL Properties]** (i den högra listen), ange en **[!UICONTROL Project data view]** som du vill använda data från.
+1. Under **[!UICONTROL Properties]** (i den högra listen) anger du **[!UICONTROL Project data view]** som du vill använda data från.
 
    ![Nytt mobilstyrkortsfönster som markerar datavyn](assets/properties_save.png)
 
-1. Om du vill lägga till en ny platta i styrkortet drar du en måttenhet från den vänstra panelen och släpper den i **[!UICONTROL Drag and Drop Metrics Here]** zon. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
+1. Om du vill lägga till en ny platta i styrkortet drar du en måttenhet från den vänstra panelen och släpper den i zonen **[!UICONTROL Drag and Drop Metrics Here]**. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
 
-   ![Ett nytt mobilstyrkortsfönster med en pil som pekar på ett mätvärde (New KPI) som tagits bort från styrkortet. ](assets/build_list.png)
+   ![Nytt mobilstyrkortsfönster med en pil som pekar på ett mätvärde (New KPI) som tagits bort från styrkortet. ](assets/build_list.png)
 
 
 1. Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.
@@ -71,7 +71,7 @@ Så här implementerar du styrkortsmallen:
 
 Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta.
 
-Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Channel]**, i detta exempel) till **[!UICONTROL Unique Visitors]** genom att dra och släppa det på plattan. Dimensioner visas under [!UICONTROL Drill Ins] (uppdelning) i den rutspecifika delen **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
+Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Channel]**, i det här exemplet) till måttet **[!UICONTROL Unique Visitors]** genom att dra och släppa det på plattan. Uppdelningar av Dimensioner visas under avsnittet [!UICONTROL Drill Ins] (nedbrytning) i det rutespecifika **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
 
 ![Nytt mobilstyrkortsfönster med en pil som pekar från dimensionslistan till styrkortsrutan.](assets/layer_dimensions.png)
 
@@ -79,15 +79,15 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 Om du vill använda filter på enskilda plattor drar du ett filter (segment är filter i Customer Journey Analytics) från den vänstra panelen och släpper det direkt ovanpå plattan.
 
-Om du vill använda filtret på alla plattor i styrkortet släpper du plattan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurera och använda filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
+Om du vill använda filtret på alla plattor i styrkortet släpper du plattan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurerar och tillämpar filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
 
-![Filterlistruteväljaren som markerar byggfiltren](assets/segment_ui.png)
+![Filterlistruteväljare som markerar byggfiltren](assets/segment_ui.png)
 
 ## Lägg till datumintervall {#dates}
 
 Lägg till och ta bort datumintervallkombinationer som kan väljas i styrkortet genom att markera listrutan för datumintervall.
 
-![Ny markering av mobilstyrkort i går kontra samma dag i förra veckan](assets/new_score_card.png)
+![Ny markering av mobilstyrkort i går jämfört med samma dag i förra veckan](assets/new_score_card.png)
 
 Varje nytt styrkort börjar med 6 kombinationer av datumintervall som fokuserar på data från idag och igår. Du kan ta bort onödiga datumintervall genom att klicka på x eller redigera varje datumintervallkombination genom att klicka på pennan.
 
@@ -95,11 +95,11 @@ Varje nytt styrkort börjar med 6 kombinationer av datumintervall som fokuserar 
 
 Om du vill skapa eller ändra ett primärt datum använder du listrutan för att välja bland tillgängliga datumintervall eller drar och släpper en datumkomponent från den högra listen i släppzonen.
 
-![Nytt mobilstyrkort som markerar datumintervallen med Primärt datum/Gårgår valt](assets/new_score_card3.png)
+![Nytt mobilstyrkort som markerar datumintervallen med Primärt datum/Gårgår markerat](assets/new_score_card3.png)
 
 Om du vill skapa ett jämförelsedatum kan du välja bland praktiska förinställningar för vanliga tidsjämförelser i listrutan. Du kan också dra och släppa en datumkomponent från den högra listen.
 
-![Nytt mobilstyrkort som markerar datumintervallen med jämförelsedatumet inställt på Samma dag förra veckan valt](assets/new_score_card4.png)
+![Nytt mobilstyrkort som markerar datumintervallen med jämförelsedatumet inställt på Samma dag förra veckan som valts](assets/new_score_card4.png)
 
 Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett nytt genom att klicka på kalenderikonen.
 
@@ -109,21 +109,21 @@ Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny da
 
 ### Visa eller dölj datumintervall för jämförelse {#show-comparison-dates}
 
-Om du vill inkludera datumintervall för jämförelse växlar du **Inkludera jämförelsedatum** inställning.
+Om du vill inkludera datumintervall för jämförelse växlar du till inställningen **Inkludera jämförelsedatum**.
 
 ![Ny markering av mobilstyrkort i går jämfört med föregående dag och Inkludera jämförelsedatum](assets/include-comparison-dates.png)
 
-Inställningen är *på* som standard. Växla till *av* om du inte vill visa jämförelsedatum.
+Inställningen är som standard *på*. Växla till *av* om du inte vill visa jämförelsedatum.
 
-![Ny markering av mobilstyrkort igår och Inkludera jämförelsedatum](assets/no-comparison-dates.png)
+![Ny markering av mobilstyrkort i går och Inkludera jämförelsedatum](assets/no-comparison-dates.png)
 
 ## Använd visualiseringar {#viz}
 
-Kontrollpanelerna för analyser erbjuder fyra visualiseringar som ger er insikt i dimensionsobjekt och mätvärden. Byt till en annan visualisering genom att ändra [!UICONTROL chart type] av en bricka [!UICONTROL Properties]. Markera bara den högra rutan och ändra sedan diagramtypen.
+Kontrollpanelerna för analyser erbjuder fyra visualiseringar som ger er insikt i dimensionsobjekt och mätvärden. Ändra till en annan visualisering genom att ändra [!UICONTROL chart type] för en rutas [!UICONTROL Properties]. Markera bara den högra rutan och ändra sedan diagramtypen.
 
-![Egenskaper för rutor](assets/properties.png)
+![Egenskaper för paneler](assets/properties.png)
 
-Eller klicka på [!UICONTROL Visualizations] ikonen i den vänstra listen och dra och släpp den högra visualiseringen på plattan:
+Du kan också klicka på ikonen [!UICONTROL Visualizations] i den vänstra listen och dra och släppa den högra visualiseringen på plattan:
 
 ![Visualiseringar](assets/vizs.png)
 
@@ -147,7 +147,7 @@ Radvisualiseringen representerar mätvärden som använder en rad för att visa 
 
 ### [!UICONTROL Horizontal Bar]
 
-Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. Om du till exempel vill se vad dina bästa produkter är kan du använda [!UICONTROL Horizontal Bar] för din egen visualisering.
+Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. Om du till exempel enkelt vill se vilka dina bästa produkter är kan du använda [!UICONTROL Horizontal Bar] som visualisering.
 
 ![Nytt mobilstyrkort med ett vågrätt streck](assets/horizontal.png)
 
@@ -157,12 +157,12 @@ Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänst
 
 ![Naming_Scorecards](assets/new_name.png)
 
-### Ta bort [!UICONTROL Unspecified] dimensionsuppgift {#remove-dims}
+### Ta bort dimensionsobjektet [!UICONTROL Unspecified] {#remove-dims}
 
-Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, gör följande:
+Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data gör du följande:
 
 1. Välj rätt platta.
-1. I rätt spår, under **[!UICONTROL Drill ins]** markerar du högerpilen bredvid dimensionsobjektet vars **[!UICONTROL Unspecified]** objekt som du vill ta bort.
+1. I den högra listen, under **[!UICONTROL Drill ins]**, väljer du högerpilen bredvid dimensionsobjektet vars **[!UICONTROL Unspecified]** objekt du vill ta bort.
 
    ![Egenskaper med pil som pekar mot högerpilen bredvid dimensionsnamnet.](assets/unspecified.png)
 
@@ -170,13 +170,13 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att använda filter. Segment är filter i Customer Journey Analytics.
+När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. I det här fältet kan du ange en ny **titel** för plattan och alternativt konfigurera plattan genom att använda filter. Segment är filter i Customer Journey Analytics.
 
-![Egenskapspanelen](assets/properties-tile-new.png)
+![Egenskapspanel](assets/properties-tile-new.png)
 
 ## Visa detaljbilder {#view-detail-slides}
 
-När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om en dimension inte har tillämpats, kommer uppdelningsdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
+När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om en dimension inte har tillämpats är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
 
 Uppdelningar förfinar analysen genom att dela upp mätvärden efter dimensionsobjekt som exempelvis följande:
 
@@ -184,7 +184,7 @@ Uppdelningar förfinar analysen genom att dela upp mätvärden efter dimensionso
 * Besök uppdelade efter produktkategori (detaljhandel)
 * Total intäkt uppdelad efter produktnamn
 
-![Brytningsvy](assets/break_view.png)
+![Breakdown_view](assets/break_view.png)
 
 Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
 
@@ -206,19 +206,19 @@ Du kan ändra layouten för varje detaljbild och lägga till text som bättre f�
 
 Du kan också ändra bildrutelayouten genom att dra och släppa visualiseringskomponenter från den vänstra listen på arbetsytan. Varje detaljbild kan endast innehålla två visualiseringar åt gången.
 
-![Ändra bildlayout](assets/slide-layout-change.png)
+![Ändring av bildlayout](assets/slide-layout-change.png)
 
 ### Lägga till beskrivande text i en bildruta
 
 Du kan lägga till text för att ge meningsfull information om vad som finns i diagrammen eller nyanserna om data.
 
-Om du vill lägga till text i en detaljbildruta väljer du en layout som visar `T` eller dra och släpp textvisualiseringskomponenten från den vänstra listen. Textredigeraren öppnas automatiskt när du lägger till en ny textvisualisering eller väljer en bildlayout med text. I textredigeraren finns alla standardalternativ för formatering av texten. Du kan använda textformat som stycke, rubriker och underrubriker och använda fet och kursiv stil. Du kan justera text, lägga till punktlistor och numrerade listor samt lägga till länkar. När du är klar med redigeringen klickar du på minimeringsknappen i det övre högra hörnet av textredigeraren för att stänga den. Om du vill redigera text som du redan har lagt till väljer du pennikonen och öppnar textredigeraren igen.
+Om du vill lägga till text i en detaljbildruta väljer du en layout som visar symbolen `T` eller drar och släpper textvisualiseringskomponenten från den vänstra listen. Textredigeraren öppnas automatiskt när du lägger till en ny textvisualisering eller väljer en bildlayout med text. I textredigeraren finns alla standardalternativ för formatering av texten. Du kan använda textformat som stycke, rubriker och underrubriker och använda fet och kursiv stil. Du kan justera text, lägga till punktlistor och numrerade listor samt lägga till länkar. När du är klar med redigeringen klickar du på minimeringsknappen i det övre högra hörnet av textredigeraren för att stänga den. Om du vill redigera text som du redan har lagt till väljer du pennikonen och öppnar textredigeraren igen.
 
-![Ändra bildlayout](assets/add-descriptive-text.png)
+![Ändring av bildlayout](assets/add-descriptive-text.png)
 
 ## Ta bort komponenter {#remove}
 
-Om du vill ta bort en komponent som används på hela styrkortet klickar du var som helst på styrkortet utanför plattorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **Första gången du besöker**:
+Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du håller muspekaren över komponenten, så som visas nedan för **förstagångsbesök** :
 
 ![Remove_components](assets/new_remove.png)
 
@@ -265,13 +265,13 @@ När du drar och släpper en komponent, t.ex. en visualisering, på en platta an
 >[!NOTE]
 >Bilder ärver komponenter från plattan, men rutor ärver inte komponenter från bildrutor.
 
-**Anpassa enskilda bildrutor**
+**Anpassa enskilda bilder**
 
 Du kan ändra visualiseringen för enskilda bilder i en dataartikel. Du kan till exempel ändra ett vågrätt fält till ett ringdiagram för en viss bildruta. Du kan också ändra layouten. Se [Anpassa detaljbilder](#customize-detail-slide).
 
 ### Förhandsgranska en dataartikel {#preview-data-story}
 
-När du har skapat en dataartikel använder du **Förhandsgranska** för att visa och interagera med en databerättelse som om du var en appanvändare. Mer information om hur du förhandsgranskar din dataartikel finns i [Förhandsgranska ett styrkort](#preview)
+När du har skapat en dataartikel använder du knappen **Förhandsgranska** för att visa och interagera med en dataartikel som om du var en appanvändare. Mer information om hur du förhandsgranskar din dataartikel finns i [Förhandsgranska ett styrkort](#preview)
 
 ### Navigera mellan rutor och bilder {#navigate-tiles-slides}
 
@@ -279,7 +279,7 @@ I navigeringsfältet visas ikoner som representerar vad som finns på varje bild
 
 Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
 ![Skapa en dataartikel](assets/data-story5.png)
-![Skapa en dataartikel](assets/data-story-nav.png){width="45%"}
+![Skapa en dataartikel ](assets/data-story-nav.png){width="45%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
 
@@ -287,11 +287,11 @@ Du kan också navigera fram och tillbaka genom att använda pilarna på tangentb
 
 Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har publicerats i appen Adobe Analytics dashboards.
 
-1. Klicka **[!UICONTROL Preview]** i skärmens övre högra hörn.
+1. Klicka på **[!UICONTROL Preview]** i skärmens övre högra hörn.
 
    ![Preview_scorecards](assets/preview.png)
 
-1. Om du vill visa hur styrkortet kommer att se ut på olika enheter väljer du en enhet på menyn [!UICONTROL Device preview] listruta.
+1. Om du vill visa hur styrkortet kommer att se ut på olika enheter väljer du en enhet i listrutan [!UICONTROL Device preview].
 
    ![Device_preview](assets/device-preview.png)
 
@@ -307,9 +307,9 @@ Du kan förhandsgranska hur styrkortet kommer att se ut och fungera när det har
 
 Så här delar du styrkortet med en verkställande användare:
 
-1. Klicka på **[!UICONTROL Share]** meny och välj **[!UICONTROL Share scorecard]**.
+1. Klicka på menyn **[!UICONTROL Share]** och välj **[!UICONTROL Share scorecard]**.
 
-1. I **[!UICONTROL Share Mobile Scorecard]** fylla i fälten med:
+1. Fyll i fälten i formuläret **[!UICONTROL Share Mobile Scorecard]** genom att:
 
    * Ange namnet på styrkortet
    * Ange en beskrivning av styrkortet
@@ -318,11 +318,11 @@ Så här delar du styrkortet med en verkställande användare:
 
 1. Klicka på **[!UICONTROL Share]**.
 
-![Dela_styrkort](assets/new_share.png)
+![Share_Scorecards](assets/new_share.png)
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör efterföljande ändringar av styrkortet i styrkortsverktyget uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när de har uppdaterat styrkortet i sin app.
 
-Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och kontrollera **[!UICONTROL Share embedded components]** för att se till att dina chefsanvändare har tillgång till dessa ändringar.
+Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **[!UICONTROL Share embedded components]**) för att se till att dina chefsanvändare har tillgång till dessa ändringar.
 
 ### Dela styrkort med hjälp av en delbar länk
 
@@ -330,13 +330,13 @@ Genom att använda en delbar länk är det enkelt att dela ett styrkort i ett e-
 
 Dela ett styrkort med hjälp av en delbar länk
 
-1. Klicka på **[!UICONTROL Share]** meny och välj **[!UICONTROL Share scorecard]**.
+1. Klicka på menyn **[!UICONTROL Share]** och välj **[!UICONTROL Share scorecard]**.
 
-   ![Dela_styrkort](assets/share-scorecard.png)
+   ![Share_Scorecards](assets/share-scorecard.png)
 
 1. Kopiera länken och klistra in den i ett e-postmeddelande, dokument eller en snabbmeddelandeapp.
 
-   När en mottagare använder ett datorprogram eller en webbläsare för att öppna länken öppnas projektet i Workspace.
+   När en mottagare använder en datorapp eller en webbläsare för att öppna länken öppnas ett mobilstyrkortsprojekt i Workspace.
 
    När en mottagare öppnar länken på en mobil enhet öppnas styrkortet direkt i Adobe Analytics-appen för instrumentpaneler.
 
