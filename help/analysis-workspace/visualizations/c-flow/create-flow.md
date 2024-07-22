@@ -4,9 +4,9 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b196b8c05ba05a3f46d71c10fdcaa2ad8ef0dcd6
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
    >
    >Beräknade mått kan inte användas i fälten **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]**.
 
-1. Om du väljer ett mätvärde måste du även ange en [!UICONTROL **Dimension för banor**] som du kan använda som inledande eller inledande  för den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
+1. Om du väljer ett mätvärde måste du även ange en [!UICONTROL **Dimension**] som du kan använda som sökväg som leder till eller kommer från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
 
    ![Målningsdimensionen.](assets/pathing-dim.png)
 
@@ -75,7 +75,7 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
 >
 >1. Börja skapa en flödesvisualisering enligt beskrivningen ovan.
 >1. Dra dimensionen [!UICONTROL **Sida**] till fältet **[!UICONTROL Contains]** och välj sedan [!UICONTROL **Skapa**].
->1. Flödesvisualiseringen byggs med den mest visade sidan synlig i fokusnoden mitt i visualiseringen. Du kan även se de översta sidorna som leder till den sidan (till vänster om fokusnoden) samt de översta sidorna som leder ut från fokussidan (till höger om fokusnoden).
+>1. Flödesvisualiseringen byggs med den mest visade sidan synlig i fokusnoden mitt i visualiseringen. Du kan även se de översta sidorna som leder till den sidan (till vänster om fokusnoden) samt de översta sidorna som leder ut från den sidan (till höger om fokusnoden).
 >1. Analysera data i flödet enligt beskrivningen i [Visa och ändra Flödesutdata](#view-and-change-the-flow-output).
 
 ## Visa och ändra flödesutdata {#output}
