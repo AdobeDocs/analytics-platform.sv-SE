@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 9a0e6ed66a20eac1fa5f94efd378842a579826c0
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,6 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
    * Delade konton kan bara redigeras av kontoägaren.
 
    * Vem som helst kan skapa en plats för det delade kontot.
-
-   **Obs!** Den här funktionen är i den begränsade testfasen av versionen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-versionsprocessen finns i [Customer Journey Analytics-funktionsreleaser](/help/release-notes/releases.md).
 
 1. I fältet [!UICONTROL **Kontotyp**] väljer du vilken typ av molnkonto du exporterar till. De tillgängliga kontotyperna är Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake och AEP Data Landing Zone.
 

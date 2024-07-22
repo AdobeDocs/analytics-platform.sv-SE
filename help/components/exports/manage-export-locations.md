@@ -5,7 +5,7 @@ title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 9f3182ed33fc5ad537b05e9effbdd25caf4e87d7
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 0%
@@ -147,8 +147,6 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 1. Välj [!UICONTROL **Ta bort**] igen i bekräftelsedialogrutan.
 
 ## Konfigurera företagsinställningar (endast administratörer)
-
-{{release-limited-testing-section}}
 
 Systemadministratörer kan hindra användare från att skapa konton och platser eller begränsa vilka typer av konton som användare kan skapa och använda.
 
