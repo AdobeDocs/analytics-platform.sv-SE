@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: fa6f549c83f8b91907f1bb174f061cbe32aeb13c
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (juli 2024)
 
-**Senast uppdaterad**: 17 juli 2024
+**Senast uppdaterad**: 24 juli 2024
 
 Versionsanteckningarna gäller den 17 juli 2024 till augusti 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller den 17 juli 2024 till augusti 2024. Adobe Custome
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Intelligenta aviseringar** | Intelligenta aviseringar finns nu i Customer Journey Analytics, så att ni kan meddelas direkt när det inträffar onormala händelser i era data.<p>Du kan ange att aviseringar ska utlösas baserat på avvikelsetrösklar, ändrade procentsatser eller specifika datapunkter. Varningar ger detaljerade kontroller som kan integreras med avvikelseidentifiering och aktiveras när du behöver dem som mest.</p><p>Processen att använda intelligenta aviseringar i Customer Journey Analytics är nästan identisk med att använda intelligenta aviseringar i Adobe Analytics. En viktig skillnad är att det inte finns timaviseringar i Customer Journey Analytics. Den här skillnaden beror på att datainmatningen för de olika typer av händelsedata som kan importeras är slutförd först efter en fördröjning, vanligtvis från 3 till 9 timmar efter datahändelsetiden.</p><p>(Uppdaterade dokumentationslänkar att följa)</p><!--<p>[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)</p> --> |  | 26 juli 2024 |
+| **Intelligenta aviseringar** | Intelligenta aviseringar finns nu i Customer Journey Analytics, så att ni kan meddelas direkt när det inträffar onormala händelser i era data.<p>Du kan ange att aviseringar ska utlösas baserat på avvikelsetrösklar, ändrade procentsatser eller specifika datapunkter. Varningar ger detaljerade kontroller som kan integreras med avvikelseidentifiering och aktiveras när du behöver dem som mest.</p><p>Processen att använda intelligenta aviseringar i Customer Journey Analytics är nästan identisk med att använda intelligenta aviseringar i Adobe Analytics. En viktig skillnad är att det inte finns timaviseringar i Customer Journey Analytics. Den här skillnaden beror på att datainmatningen för de olika typer av händelsedata som kan importeras är slutförd först efter en fördröjning, vanligtvis från 3 till 9 timmar efter datahändelsetiden.</p><p>(Uppdaterade dokumentationslänkar att följa)</p><!--<p>[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)</p> --> |  | TBD |
 | **Administratörsinställningar för att styra konton och platser som används vid export av rapporter till molnet** | En ny [&quot;Administratörsinställningar&quot;-flik i Platshanteraren ](/help/components/exports/manage-export-locations.md#configure-company-wide-settings-administrators-only) ger administratörer kontroll över om användare kan skapa och redigera konton och platser.<p>De här inställningarna gäller när användare [konfigurerar molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurerar molnexportplatser](/help/components/exports/cloud-export-locations.md).</p><p>Administratörer kan också begränsa vilka typer av konton som användare kan skapa och använda. Kontotyper är bland annat Google Cloud Platform, Azure RBAC, Amazon S3, AEP Data Landing Zone, Snowflake och så vidare.</p><p>Tidigare kunde alla användare skapa, redigera och använda konton och platser för alla typer av konton.</p> | 11 juli 2024 | 19 juli 2024 |
 | **Datakällor på sammanfattningsnivå** | Gör att du kan hämta in tidsseriedata som inte har något person-ID. Dessa tidsseriedata kan användas för att stödja olika användningsfall, som:<ul><li>Presentera högnivåindikatorer som en del av eller bredvid data på händelsenivå. Det kan vara något så enkelt som ett datum och ett enda mätvärde eller innehålla flera dimensioner och mätvärden, som annonsvisningar, öppning av e-post, reklamkostnader, kostnad för sålda produkter med mera.</li><li>Överföra mål eller mål på daglig, veckovis, månadsvis eller kvartalsvis basis och positionera dessa mål mot händelsenivåstatistik för att visualisera hur mätvärdena står i relation till organisationens mål eller mål.</li></ul><p>(Uppdaterade dokumentationslänkar att följa)</p> |  | 31 juli 2024 |
 | **Härledda fält - Dedupliceringsfunktion** | Funktionen [Deduplicera ](/help/data-views/derived-fields/derived-fields.md#deduplicate) i härledda fält hjälper dig att förhindra att ett värde räknas flera gånger. |  | 17 juli 2024 |
