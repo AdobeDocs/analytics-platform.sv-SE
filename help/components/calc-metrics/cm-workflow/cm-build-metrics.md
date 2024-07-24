@@ -3,9 +3,9 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Bygg mått
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,19 @@ Customer Journey Analytics har en arbetsyta där du kan dra och släppa dimensio
 
 ## Börja skapa ett beräknat mått
 
-Du kan börja skapa ett beräknat mått på något av följande sätt:
+Du kan använda verktyget för beräknade mätvärden för att skapa beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen. Du kan också skapa ett snabbt beräknat mått enligt beskrivningen i [Skapa beräknade värden för ett enskilt projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) i [Metrisk](/help/components/apply-create-metrics.md).
 
-* Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
-* Öppna ett projekt i Analysis Workspace och välj sedan ikonen **Plus** bredvid avsnittet [!UICONTROL **Metrisk**] i den vänstra listen.
-* I [!DNL Customer Journey Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** och väljer sedan **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
+Gå till verktyget för beräknade värden för att börja skapa ett beräknat mått som är tillgängligt i komponentlistan.
 
-## Områden i verktyget för beräknade värden
+1. Använd verktyget för beräknade värden på något av följande sätt:
+
+   * Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
+   * Öppna ett projekt i Analysis Workspace och välj sedan ikonen **Plus** bredvid avsnittet [!UICONTROL **Metrisk**] i den vänstra listen.
+   * I [!DNL Customer Journey Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** och väljer sedan **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
+
+1. Fortsätt med [Områden i det beräknade måttverktyget](#areas-of-the-calculated-metrics-builder).
+
+## Områden för verktyget för beräknade mätvärden
 
 I följande bild och medföljande tabell förklaras några av huvudområdena och funktionerna i verktyget för beräkning av mätvärden.
 
@@ -46,8 +52,8 @@ I följande bild och medföljande tabell förklaras några av huvudområdena och
 | Kugghjulsikon (Mättyp, Attribution) | Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mät- och attribueringsmodeller. <p>**Obs!** Tänk på följande när du uppdaterar en komponents attribuering till en icke-standardattribueringsmodell:</p><ul><li>**När komponenten används i en rapport med *en enda dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>**När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering behåller allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>Flera dimensioner är bara tillgängliga när [exporterar data till molnet](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).</p> |
 | Plustecken (+), ikon | Gör att du kan skapa en ny komponent, till exempel ett nytt filter (som tar dig till filterverktyget .) |
 | Sökkomponenter | Med det här sökfältet kan du söka efter dimensioner, mått, filter (endast avancerade beräknade värden) och funktioner (endast avancerade beräknade värden). |
-| Lista över Dimensioner | I stället för att lämna beräkningsverktyget för att skapa ett enkelt filter (i filterverktyget), t.ex. &quot;Page = Homepage&quot;, kan du dra sidan och välja Hemsida direkt från verktyget Beräknade mått. Detta resulterar i ett mycket effektivare arbetsflöde för att skapa filtrerade beräknade mätvärden. |
-| Lista över mått | Mätvärden finns i tre kategorier:<ul><li>Standardmått</li><li>Beräknade mått</li><li>Mätmallar - längst ned i listan.</li></ul>När du hovrar över ett mätresultat visas ikonen Info till höger om det. Om du klickar på den här ikonen visas följande information:<ul><li>Formeln för hur den beräknas.</li><li>En förgranskningstrend för måttet.</li><li>En redigeringsikon (penna) längst upp till höger som tar dig till verktyget Beräknade mätvärden där du kan redigera det här beräknade måttet.</li></ul> |
+| Lista över Dimensioner | I stället för att lämna det beräknade måttverktyget för att skapa ett enkelt filter (i filterverktyget), t.ex. &quot;Page = Homepage&quot;, kan du dra sidan och välja Hemsida direkt från det beräknade måttverktyget. Detta resulterar i ett mycket effektivare arbetsflöde för att skapa filtrerade beräknade mätvärden. |
+| Lista över mått | Mätvärden finns i tre kategorier:<ul><li>Standardmått</li><li>Beräknade mått</li><li>Mätmallar - längst ned i listan.</li></ul>När du hovrar över ett mätresultat visas ikonen Info till höger om det. Om du klickar på den här ikonen visas följande information:<ul><li>Formeln för hur den beräknas.</li><li>En förgranskningstrend för måttet.</li><li>En redigeringsikon (penna) längst upp till höger som tar dig till verktyget för beräknade mätvärden där du kan redigera det här beräknade måttet.</li></ul> |
 | Lista med filter | (Endast avancerade beräknade värden) Som administratör visar den här listan alla filter som har skapats i ditt inloggningsföretag. Om du inte är administratör visas de filter som du äger och de som delas med dig. |
 | Lista över funktioner | (Endast avancerade beräknade mätvärden) Funktionerna är uppdelade i två listor: Grundläggande (används oftast) och Avancerat. |
 | Datavyväljare | Med den här väljaren (längst upp till höger) kan du växla till en annan datavy. |
