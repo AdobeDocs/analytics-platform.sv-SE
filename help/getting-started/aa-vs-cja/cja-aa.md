@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
+source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
 workflow-type: tm+mt
-source-wordcount: '2278'
+source-wordcount: '2264'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Report Builder | Stöds med en ny Office 365-plugin för Excel. |
 | Användarbehörigheter/Dataåtkomstkontroller | Customer Journey Analytics skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)-produktadministratörer, produktprofiladministratörer och användare. Endast produktadministratörer kan skapa/uppdatera/ta bort anslutningar, projekt, filter eller beräknade värden som skapats av andra användare, medan produktadministratörer och produktprofiladministratörer kan redigera datavyer. Ytterligare användarbehörigheter är tillgängliga för exempelvis att skapa beräknade värden, filter eller anteckningar. |
 | Visualiseringar | Alla Workspace-visualiseringar stöds förutom för kartvisualisering. |
-| Sammanfogning mellan olika enheter och kanaler | Stöds för datauppsättningar som innehåller identitetsinformation direkt (kallas även fältbaserad sammanfogning). Diagrambaserad sammanfogning stöds ännu inte, men är planerad. Se [Stitching](../../stitching/overview.md). |
+| Sammanfogning mellan olika enheter och kanaler | Stöds för händelsedatamängder som innehåller identitetsinformation. Se [Stitching](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
 
