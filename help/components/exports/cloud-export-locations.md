@@ -5,7 +5,7 @@ title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: ec8f6c3c8cc1c0b12821e3b61fbef9f5fe875258
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -39,12 +39,13 @@ Mer information om hur du hanterar befintliga platser, inklusive visning, redige
    Dialogrutan Plats visas.
 
 1. Ange följande information:
-|Fält | Funktion |
-|—|—|
-| [!UICONTROL **Namn**] | Namnet på platsen.  |
-| [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av platsen för att hjälpa till att skilja den från andra platser på kontot. |
-| [!UICONTROL **Gör platsen tillgänglig för alla användare i organisationen**] | Aktivera det här alternativet om du vill att andra användare i organisationen ska kunna använda platsen. <p>Tänk på följande när du delar platser:</p><ul><li>Platser som du delar kan inte tas bort.</li><li>Delade platser kan bara redigeras av ägaren till platsen.</li><li>Platser kan bara delas om kontot som platsen är kopplad till också delas.</li></ul> |
-| [!UICONTROL **Platskonto**] | Välj det konto där du vill skapa platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md). |
+
+   | Fält | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Namn**] | Namnet på platsen. |
+   | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av platsen för att hjälpa till att skilja den från andra platser på kontot. |
+   | [!UICONTROL **Gör platsen tillgänglig för alla användare i organisationen**] | Aktivera det här alternativet om du vill att andra användare i organisationen ska kunna använda platsen. <p>Tänk på följande när du delar platser:</p><ul><li>Platser som du delar kan inte tas bort.</li><li>Delade platser kan bara redigeras av ägaren till platsen.</li><li>Platser kan bara delas om kontot som platsen är kopplad till också delas.</li></ul> |
+   | [!UICONTROL **Platskonto**] | Välj det konto där du vill skapa platsen. Mer information om hur du skapar ett konto finns i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md). |
 
 1. I avsnittet [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 
