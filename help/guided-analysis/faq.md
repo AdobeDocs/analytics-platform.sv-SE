@@ -5,9 +5,9 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
+source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -40,15 +40,17 @@ För att dina slutanvändare ska kunna bli mest framgångsrika med guidad analys
 
 +++**Hur skiljer sig terminologin mellan guidad analys och Analysis Workspace?**
 
-I den guidade analysen används termer som används oftare bland produktteamen. Du kan referera till den här tabellen när du växlar mellan guidad analys och [Analysis Workspace](../analysis-workspace/home.md).
+Guidad analys och [Analysis Workspace](../analysis-workspace/home.md) anpassar sig efter de flesta nyckeltermer, med några få skillnader.
 
 | Guidad analysterm | Analysis Workspace term |
 | --- | --- |
-| Händelse | Mått |
+| Händelse (ett binärt 1/0-mått) | Mått |
 | Användare | Folk |
-| Egenskap | Dimension |
-| Värde | Dimension |
+| Dimension | Dimension |
+| Dimension | Dimension |
 | Segment | Filter |
+| Filter | Rapportfilter |
+| Beräknade mått, mått | Beräknat mått |
 
 {style="table-layout:auto"}
 
