@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2353'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Stitching &quot;replaying&quot; data based on unique identifier it has learn. Re
 
 +++**Hur fungerar sammanfogning av historiska data (bakgrundsfyllning)?**
 
-När Adobe aktiveras första gången fylls data i bakåt så långt tillbaka som till början av föregående månad (upp till 60 dagar). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](../stitching/overview.md)
+När Adobe aktiveras första gången fylls sydda data i bakgrunden så långt du valt (upp till högst 25 månader, beroende på vilket Customer Journey Analytics-paket du har rätt till). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](../stitching/overview.md)
 
 +++
 
