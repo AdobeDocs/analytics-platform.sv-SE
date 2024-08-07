@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4f228dbe58a9efbe988f274c071c61ec5e36d321
+source-git-commit: 466b4e22ba39197208a191a7298bf37a0b3e36c8
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (juli 2024)
 
-**Senast uppdaterad**: 29 juli 2024
+**Senast uppdaterad**: 7 augusti 2024
 
 Versionsanteckningarna gäller den 17 juli 2024 till augusti 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -26,7 +26,7 @@ Versionsanteckningarna gäller den 17 juli 2024 till augusti 2024. Adobe Custome
 | **Härledda fält - Dedupliceringsfunktion** | Funktionen [Deduplicera ](/help/data-views/derived-fields/derived-fields.md#deduplicate) i härledda fält hjälper dig att förhindra att ett värde räknas flera gånger. |  | 17 juli 2024 |
 | **Etablering av guidad analys för CJA-kunder** | Med hjälp av guidad analys kan användarna själva leverera högkvalitativa data och insikter om kundresan via guidade arbetsflöden som bygger på data från olika kanaler i Customer Journey Analytics. <p>Funktionsövergripande team, från marknadsföring till produkt, kan kommunicera i realtid för att använda och förstå dessa rapporter.</p><p>Upp till 11 guidade analysvyer är nu tillgängliga i CJA-paket. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 17 juli 2024 |
 | **Dela konton och platser som används för export och import** | Användarna kan nu göra de konton och platser de skapar tillgängliga för alla användare i organisationen. Endast konto- och platsägare och systemadministratörer kan redigera och ta bort konton och platser. Tidigare kunde konton och platser bara användas av den användare som skapade dem. De här inställningarna är tillgängliga när användare [konfigurerar molnexportkonton](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts) och [konfigurerar molnexportplatser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/exports/cloud-export-locations). | 12 juni 2024 | 19 juli 2024 |
-| **Publiker publiceras i ett nytt&quot;Publiker&quot;-avsnitt i Experience Platform** | Publikationer som publiceras från Customer Journey Analytics är nu tillgängliga i det nya avsnittet&quot;Publiker&quot; i Adobe Experience Platform.<p>Tidigare fanns målgrupper som publicerades från Customer Journey Analytics tillgängliga i Experience Platform under segmentavsnittet.</p><p>Den här förbättringen ger följande fördelar:</p><ul><li>Publiken har inte längre en timmes fördröjning innan de visas i Experience Platform; de är tillgängliga sekunder efter att de har publicerats.</li><li>Publiker kan sorteras i Experience Platform med hjälp av kolumnen &quot;Ursprung&quot;, som visar det program som målgruppen ursprungligen publicerades från.</li><li>Med filtrerings- och sorteringsalternativen i Experience Platform kan du hitta rätt målgrupper snabbare.</li></ul> <p>(Dokumentationslänk följer)</p> |  | TBD |
+| **Publiker publiceras i ett nytt&quot;Publiker&quot;-avsnitt i Experience Platform** | Publikationer som publiceras från Customer Journey Analytics är nu tillgängliga i det nya avsnittet&quot;Publiker&quot; i Adobe Experience Platform.<p>Tidigare fanns målgrupper som publicerades från Customer Journey Analytics tillgängliga i Experience Platform under segmentavsnittet.</p><p>Den här förbättringen ger följande fördelar:</p><ul><li>Publiken har inte längre en timmes fördröjning innan de visas i Experience Platform; de är tillgängliga sekunder efter att de har publicerats.</li><li>Publiker kan sorteras i Experience Platform med hjälp av kolumnen &quot;Ursprung&quot;, som visar det program som målgruppen ursprungligen publicerades från.</li><li>Med filtrerings- och sorteringsalternativen i Experience Platform kan du hitta rätt målgrupper snabbare.</li></ul> <p>(Dokumentationslänk följer)</p> | 14 augusti 2024 | 22 augusti 2024 |
 
 {style="table-layout:auto"}
 
