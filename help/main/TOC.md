@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 6d4dd1cd0e2c9b89ed37ca713ecc6d5db7d9e745
+source-git-commit: 9c022dba63fd837aee28393aceb4eac851a993ec
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1099'
 ht-degree: 8%
 
 ---
@@ -91,10 +91,12 @@ ht-degree: 8%
       + [Inga värdealternativ](../data-views/component-settings/no-value-options.md)
       + [Persistence](../data-views/component-settings/persistence.md)
       + [Delsträng](../data-views/component-settings/substring.md)
+      + [Sammanfattningsdatagrupp](../data-views/component-settings/summary-data-group.md)
       + [Värdebuckning](../data-views/component-settings/value-bucketing.md)
    + [Standard, komponentreferens](../data-views/component-reference.md)
    + [BI-tillägg](../data-views/bi-extension.md)
    + [Härledda fält](../data-views/derived-fields/derived-fields.md)
+   + [Sammanfattningsdata](../data-views/summary-data.md)
    + [Etiketter och profiler](../data-views/data-governance.md)
 
 + Workspace-projekt {#cja-workspace}
@@ -346,11 +348,12 @@ ht-degree: 8%
       + [Konfigurera strömmande Google Analytics-data i plattformen](../use-cases/ga/streaming.md)
       + [Rapport om Google Analytics data i Customer Journey Analytics](../use-cases/ga/report.md)
    + Inläsning av data {#data-ingestion}
-      + [Infoga Marketo Engage data i Adobe Experience Platform och rapportera i Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
-      + [Engagera Adobe Experience Platform-målgrupper i Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Importera och använda data från Marketo Engage](../use-cases/data-ingestion/marketo.md)
+      + [Engagera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datavyer {#data-views}
       + [Datavyer använder exempel](../use-cases/data-views/data-views-usecases.md)
       + [Använd bindningsdimensioner och mätvärden](../use-cases/data-views/binding-dimensions-metrics.md)
+      + [Använd sammanfattningsdata](../use-cases/data-views/summary-data.md)
    + Dataexport {#data-export}
       + [Översikt](../use-cases/data-export/overview.md)
       + [BI-tillägg](../use-cases/data-export/bi-extension.md)

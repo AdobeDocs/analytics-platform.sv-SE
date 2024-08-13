@@ -4,7 +4,7 @@ description: Attributdimensioner till objektarrayer för komplex beständighetsa
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 1%
@@ -12,11 +12,11 @@ ht-degree: 1%
 ---
 
 
-# Använd bindningsdimensioner och mätvärden i Customer Journey Analytics
+# Använd bindningsdimensioner och mätvärden
 
 Customer Journey Analytics erbjuder flera sätt att behålla dimensionsvärden efter den träff som de är inställda på. En av de beständighetsmetoder som Adobe erbjuder kallas bindning. I tidigare versioner av Adobe Analytics kallades detta koncept försäljning.
 
-Även om du kan använda bindningsdimensioner med händelsedata på den översta nivån, är det här konceptet bäst att använda när du arbetar med [Arrayer med objekt](/help/use-cases/object-arrays.md). Du kan tilldela en dimension till en del av en objektarray utan att använda den på alla attribut i en viss händelse. Du kan t.ex. tilldela en sökterm till en produkt i kundvagnens objektmatris utan att binda söktermen till hela händelsen.
+Även om du kan använda bindningsdimensioner med händelsedata på den översta nivån, är det här konceptet bäst att använda när du arbetar med [Arrayer med objekt](/help/use-cases/object-arrays.md). Du kan tilldela en dimension till en del av en objektarray utan att tillämpa dimensionen på alla attribut i en viss händelse. Du kan t.ex. tilldela en sökterm till en produkt i kundvagnens objektmatris utan att binda söktermen till hela händelsen.
 
 ## Exempel 1: Använd bindningsdimensioner för att tilldela ytterligare produktattribut till ett inköp
 
@@ -90,11 +90,11 @@ När du anger den här beständighetsmodellen tar Customer Journey Analytics hä
 | vit | 1600 |
 | neon orange | 499 |
 
-## Exempel 2: Använd bindningsmått för att koppla söktermen till ett produktköp
+## Exempel 2: Använd bindningsmått för att koppla ett sökord till ett produktköp
 
-En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att binda en sökterm till en produkt så att varje sökterm får erkännande för den produkt som passar bäst. Tänk på följande kundresa:
+En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att binda en sökterm till en produkt så att varje sökterm får erkännande för sin lämpliga produkt. Tänk på följande kundresa:
 
-1. En besökare kommer till er webbplats och söker efter &quot;boxingshandskar&quot;. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
+1. En besökare kommer till din webbplats och söker efter `boxing gloves`. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
 
    ```json
    {
@@ -131,7 +131,7 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
    }
    ```
 
-3. Besökaren söker sedan efter &quot;tennisracket&quot;. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
+3. Besökaren söker sedan efter `tennis racket`. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
 
    ```json
    {
@@ -171,7 +171,7 @@ En av de vanligaste försäljningsmetoderna i Adobe Analytics har varit att bind
    }
    ```
 
-5. Besökaren söker en tredje gång efter &quot;skor&quot;. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
+5. Besökaren söker en tredje gång efter `shoes`. Sökmåtten stegvis ökas med ett och de tre översta sökresultaten visas.
 
    ```json
    {
@@ -250,9 +250,9 @@ Om du använde [!UICONTROL Most Recent]-allokering med söktermsdimensionen till
 | --- | --- |
 | skor | $204.97 |
 
-Det här exemplet innehåller bara en person, men många som söker efter olika saker kan feltilldela söktermer till olika produkter, vilket gör det svårt att avgöra vilka sökresultat som är bäst.
+I det här exemplet finns bara en person, men många som söker efter olika saker kan feltilldela söktermer till olika produkter. Flera personer söker efter olika saker vilket gör det svårt att avgöra vilka sökresultat som är bäst.
 
-Du kan nu binda [!DNL Search Term] till [!DNL Product Name] när [!DNL Searches]-måttet finns för att korrekt attributera söktermen till intäkterna.
+Du kan nu binda [!DNL Search Term] till [!DNL Product Name] när [!DNL Searches]-måttet finns för att attributera söktermen korrekt till intäkter.
 
 ![Bindningsmått](../assets/binding-metric.png)
 
@@ -268,11 +268,11 @@ Customer Journey Analytics identifierar automatiskt relationen mellan den valda 
 
 Om du ställer in söktermsdimensionen på den här beständiga modellen körs följande logik:
 
-* När söktermdimensionen är inställd kontrollerar du om det finns något produktnamn.
-* Om produktnamnet inte finns där, gör ingenting.
-* Om det finns ett produktnamn kontrollerar du om det finns något sökmått.
+* När söktermdimensionen är inställd kontrollerar du om det finns ett produktnamn.
+* Om produktnamnet inte finns där gör du ingenting.
+* Om produktnamnet finns där kontrollerar du om det finns något sökmått.
 * Om sökningsmåttet inte finns där, gör ingenting.
-* Om sökningsmåttet finns där binder du söktermen till alla produktnamn i den händelsen. Den kopierar sig själv till samma nivå som produktnamnet för händelsen. I det här exemplet behandlas det som product.search_term.
+* Om sökningsmåttet finns där binder du söktermen till alla produktnamn i den händelsen. Den kopierar sig själv till samma nivå som produktnamnet för händelsen. I det här exemplet behandlas det som `product.search_term`.
 * Om samma produktnamn visas i en efterföljande händelse överförs den bundna söktermen även till den händelsen.
 
 ## Exempel 3: Bind söktermen video till användarprofilen
@@ -334,7 +334,7 @@ Du kan binda en sökterm till en användarprofil så att persistensen mellan pro
    }
    ```
 
-Om du använder Senaste allokering med sista giltighetsdatum för person, tilldelas söktermen `"grownup movie"` till den sista vyn i barnets program.
+Om du använder Senaste allokering med sista giltighetsdatum för person, tilldelas söktermen `grownup movie` till den sista vyn i barnets program.
 
 | Sökterm | Videon startar |
 | --- | --- |
@@ -345,7 +345,7 @@ Om du binder `search_term` till `ProfileID` isoleras dock varje profils sökning
 
 ![Besökarbindning](../assets/binding-profileid.png)
 
-Analysis Workspace skulle korrekt attributera det andra avsnittet av Orangey till söktermen `"kids show"` utan att ta hänsyn till sökningar från andra profiler.
+Analysis Workspace attribuerar det andra avsnittet av Orangey till söktermen `kids show` utan att ta hänsyn till sökningar från andra profiler.
 
 | Sökterm | Videon startar |
 | --- | --- |
@@ -356,7 +356,7 @@ Analysis Workspace skulle korrekt attributera det andra avsnittet av Orangey til
 
 Du kan binda värden till dimensioner som angetts för tidigare händelser. När du anger en variabel med en bindningsdimension, tar Customer Journey Analytics hänsyn till det beständiga värdet. Om du inte vill använda det här beteendet kan du justera bindningsdimensionens beständighetsinställningar. Titta på följande exempel där `product_finding_method` anges för en händelse och binds sedan till måttet för kundvagnen i följande händelse.
 
-1. En besökare söker efter `"camera"`. Observera att inga produkter har angetts på den här sidan.
+1. En besökare söker efter `camera`. Observera att inga produkter har angetts på den här sidan.
 
    ```json
    {
