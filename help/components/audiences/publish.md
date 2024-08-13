@@ -4,9 +4,9 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 91ab1d3160db83979e1550f8f1b5135065cc6707
+source-git-commit: c384c4cdd1a63fd26e6eff0ff3394a089105275c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som ident
 
 Läs den här [översikten](/help/components/audiences/audiences-overview.md) om du vill bekanta dig med konceptet Customer Journey Analytics målgrupper.
 
-## Skapa målgrupper {#create}
+## Skapa och publicera en målgrupp {#create}
 
-1. Om du vill skapa målgrupper har du tre sätt att komma igång:
+1. Gör något av följande för att börja skapa och publicera en målgrupp:
 
    | Skapandemetod | Information |
    | --- | --- |
@@ -74,26 +74,26 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
 
 1. Klicka på **[!UICONTROL View audience in AEP]** i samma meddelande så dirigeras du till [segmentgränssnittet](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) i Adobe Experience Platform. Mer information finns nedan.
 
-## Vad händer när en målgrupp har skapats? {#after-audience-created}
+## Vad händer när en publik har skapats och publicerats? {#after-audience-created}
 
-När du har skapat en målgrupp skapar Adobe ett direktuppspelningssegment för Experience Platform för varje ny Customer Journey Analytics-målgrupp. Ett Adobe Experience Platform-direktuppspelningssegment skapas endast om din organisation är inställd för direktuppspelningssegmentering.
+När du har skapat och publicerat en målgrupp i Customer Journey Analytics är målgruppen tillgänglig i Experience Platform. Ett Adobe Experience Platform-direktuppspelningssegment skapas endast om din organisation är inställd för direktuppspelningssegmentering.
 
-* Adobe Experience Platform-segmentet har samma namn/beskrivning som Customer Journey Analytics-målgruppen, men namnet läggs till med målgrupps-ID:t för Customer Journey Analytics för att säkerställa att det är unikt.
-* Om målgruppsnamnet/beskrivningen för Customer Journey Analytics ändras återspeglas även ändringen i Adobe Experience Platform segmentnamn/beskrivning.
-* Om en Customer Journey Analytics-målgrupp tas bort av en användare tas Adobe Experience Platform-segmentet INTE bort. Orsaken är att Customer Journey Analytics-publiken senare kan tas bort.
+* Publiken i Platform har samma namn/beskrivning som Customer Journey Analytics-publiken, men namnet läggs till Customer Journey Analytics som målgrupps-ID för att säkerställa att det är unikt.
+* Alla ändringar av publikens namn eller beskrivning i Customer Journey Analytics återspeglas i Platform.
+* Om en målgrupp tas bort i Customer Journey Analytics är målgruppen fortfarande tillgänglig i Platform.
 
 ## Svarstidsfrågor {#latency}
 
 Vid flera tillfällen före, under och efter publikationen kan fördröjningar uppstå. Här är en översikt över möjliga latenser.
 
-![Latenser i målgruppspublicering enligt beskrivningen i det här avsnittet.](/help/components/audiences/assets/latency-diagram.png)
+![Latenser i målgruppspublicering enligt beskrivningen i det här avsnittet.](assets/latency-diagram.svg)
 
 | # | Svarstid | Varaktighet för fördröjning |
 | --- | --- | --- |
 | Visas inte | Källanslutning för Adobe Analytics till Analytics (A4T) | Upp till 30 minuter |
 | 1 | Intag av data i datasjön (från Analytics-källkopplingen eller andra källor) | Upp till 90 minuter |
 | 2 | Intag av data från Experience Platform Data Lake till Customer Journey Analytics | Upp till 90 minuter |
-| 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data.<p>**Obs!**: Publiken skapas/definieras i Experience Platform inom 1-2 minuter. Det tar dock cirka 60 minuter innan målgruppen börjar få ID:n baserat på matchande kriterier och är klar för aktivering. | Cirka 60 minuter |
+| 3 | Målgruppspublicering till kundprofil i realtid, inklusive automatisk generering av strömningssegmentet, så att segmentet kan vara klart att ta emot data. | Några sekunder |
 | 4 | Uppdateringsfrekvens för målgrupper | <ul><li>Engångsuppdatering (fördröjning på mindre än 5 minuter)</li><li>Uppdatera var fjärde timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen) |
 | 5 | Skapa mål i Adobe Experience Platform: Aktivera det nya segmentet | 1-2 timmar |
 
@@ -101,15 +101,34 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 ## Använda Customer Journey Analytics-målgrupper i Experience Platform {#audiences-aep}
 
-Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). Customer Journey Analytics skickar målgruppen över till Experience Platform med den primära identitetsuppsättningen, enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
+Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). Customer Journey Analytics skickar målgruppen till Experience Platform med den primära identitetsuppsättningen, enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
 
-RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. Nu kan till exempel <user@adobe.com> riktas mot alla deras enheter och kanaler. Om ingen profil hittas skapas en ny.
+RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. <user@adobe.com> kan till exempel riktas mot alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
-Du kan visa målgrupper i Customer Journey Analytics i Platform genom att gå till **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > fliken **[!UICONTROL Audiences]** > **[!UICONTROL CJA Audiences]**.
+Så här visar du Customer Journey Analytics-målgrupper i Platform:
 
-Du kan dra Customer Journey Analytics målgrupper till segmentdefinitionen för Adobe Experience Platform-segment.
+>[!AVAILABILITY]
+>
+>De funktioner som beskrivs i följande steg är i den begränsade testfasen av releasen och är kanske inte tillgängliga än i din miljö. Om de här stegen inte matchar det du ser i din miljö ska du i stället göra så här: Gå till [!UICONTROL **Segment**] > [!UICONTROL **Skapa segment**] > fliken [!UICONTROL **Publiker**] > [!UICONTROL **CJA-målgrupper**].
+>
+>Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
 
-![Användargränssnittet för Adobe Experience Platform markerar segment i den vänstra rutan och CJA-målgrupper i huvudpanelen.](assets/audiences-aep.png)
+1. Expandera [!UICONTROL **Kund**] i den vänstra listen och välj sedan [!UICONTROL **Publiker**]. <!-- is there a folder called "Customer Journey Analytics? -->
+
+1. Välj fliken [!UICONTROL **Bläddra**].
+
+   ![Publikalternativ i den vänstra panelen](assets/audiences-aep.png)
+
+1. Gör något av följande för att hitta den publik du har publicerat från Customer Journey Analytics:
+
+   * Sortera tabellen efter kolumnen [!UICONTROL **Ursprung**] för att visa målgrupper som visar [!UICONTROL **Customer Journey Analytics**] som ursprung.
+
+   * Markera filterikonen.
+
+   * Använd sökfältet.
+
+Mer information om hur du använder publiker i plattformen finns i avsnittet [Publiker](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences) i [Användargränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html) i Experience Platform-dokumentationen.
+
 
 ## Vanliga frågor {#faq}
 
