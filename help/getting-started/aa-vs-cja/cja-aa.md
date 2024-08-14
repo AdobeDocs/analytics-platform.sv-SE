@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
+source-git-commit: 835be84fd5f1398b88e265a21fe6f9665c758dce
 workflow-type: tm+mt
-source-wordcount: '2264'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,7 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | API-åtkomst för rapportering | Fullt stöd; tillgängligt via [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/). |
 | Schemalagda rapporter/projekt | Fullt stöd |
 | Segment | Fullt stöd. Nu kallat &quot;Filter&quot; - observera att inga befintliga segment i Analysis Workspace importeras till Customer Journey Analytics. |
+| Datakällor på sammanfattningsnivå | Fullt stöd |
 | Virtuella rapportsviter | Fullt stöd. [Datavyer](/help/data-views/create-dataview.md) anropas nu. |
 | Komponentstrukturering för virtuell rapportserie | Fullt stöd. Nu en del av datavyer. |
 | Enhet, webbläsare, referens, teknikdimensioner | Stöds för både [Analytics-källanslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar och för datauppsättningar som genererats av WebSDK. Läs [dokumentationen om vilka Analytics-variabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html).Om du använder Experience Platform Web SDK-datainsamling stöds inte Enhet och dimensioner baserade på enhetssökningen för närvarande. Framtida stöd planeras. Information om hur du lägger till enhets- och webbläsarsökningar i Web SDK-dataströmmen finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
@@ -103,7 +104,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | Realtidsrapportering | Support planeras. |
 | Segmentanalys | Support planeras. |
 | Datakällor för transaktions-ID | Support planeras. |
-| Datakällor på sammanfattningsnivå | Support planeras. |
 
 {style="table-layout:auto"}
 
