@@ -4,7 +4,7 @@ description: Information om hur du använder och konfigurerar sammanfattningsdat
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 
 
 # Sammanfattningsdata
+
+{{release-limited-testing}}
 
 Sammanfattningsdata är tidsseriedata som inte är knutna till ett personligt ID. Sammanfattningsdata representerar aggregerade data på en annan aggregeringsnivå, till exempel kampanjer. Du kan använda dessa data i Customer Journey Analytics för att stödja olika användningsfall. Till exempel data som innehåller ett datum och ett enda måttvärde, eller data som innehåller flera dimensioner och mätvärden.
 
