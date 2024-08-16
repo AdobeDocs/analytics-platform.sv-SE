@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
+source-git-commit: 3f83b4c141324a7b255ac5af039fa1d7607f3b15
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -58,16 +58,16 @@ Om du vill se till att en anslutning som stöder personbaserade sökningar av di
 
    | Datauppsättning | Person-ID | Nyckel | Matchande nyckel <br/> (i händelsedatamängd) |
    |---|---|---|---| 
-   | B2B-aktivitetsdatauppsättning | `personKey.sourceKey` | | |
-   | Persondatauppsättning för B2B | `b2b.personKey.sourceKey` | | |
-   | B2B-kontodatauppsättning | | `accountKey.sourceKey`❶<br/>Source Key | `b2b.accountKey.sourceKey`❶<br/>(Persondatauppsättning B2B) |
-   | Datamängd för B2B-säljprojekt | | `opportunityKey.sourceKey`❷<br/>Source Key | `opportunityKey.sourceKey`❷<br/>(Datamängd för B2B-säljprojektsrelation) |
-   | Kampanjdata för B2B | | `campaignKey.sourceKey`❸<br/>Source Key | `campaignKey.sourceKey`❸<br/>(Datamängd för B2B-kampanjmedlem) |
-   | Datamängd för B2B-marknadsföringslista | | `marketingListKey.sourceKey`❹<br/>Source Key | `marketingListKey.sourceKey`❹<br/>(Medlemsdatauppsättning för B2B-marknadsföringslista) |
-   | Relationsdatauppsättning för B2B-kontoperson | | `personKey.sourceKey`❺<br/>Source Key | `personKey.sourceKey`❺<br/>Source Key (händelsedatamängder) |
-   | Datamängd för relationsdata för B2B-säljprojekt | | `personKey.sourceKey`❻<br/>Source Key | `personKey.sourceKey`❻<br/>Source Key (händelsedatamängder) |
-   | Datamängd för B2B-kampanjmedlem | | `personKey.sourceKey`❼<br/>Source Key | `personKey.sourceKey`❼<br/>Source Key (händelsedatamängder) |
-   | Medlemsdatauppsättning för B2B-marknadsföringslista | | `personKey.sourceKey`❽<br/>Source Key | `personKey.sourceKey`❽<br/>Source Key (händelsedatamängder) |
+   | B2B-aktivitetsdatauppsättning | SourceKey <br/>**personKey.sourceKey** | | |
+   | Persondatauppsättning för B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
+   | B2B-kontodatauppsättning | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B-persondatauppsättning)<br/>**b2b.accountKey.sourceKey**❶ |
+   | Datamängd för B2B-säljprojekt | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B-säljprojektsrelationsdatauppsättning)<br/>**OpportunityKey.sourceKey**❷ |
+   | Kampanjdata för B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B Campaign-medlemsdatauppsättning)<br/>c **ampaignKey.sourceKey**❸<br/> |
+   | Datamängd för B2B-marknadsföringslista | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B Marketing List Member Dataset)<br/>**marketingListKey.sourceKey**❹ |
+   | Relationsdatauppsättning för B2B-kontoperson | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
+   | Datamängd för relationsdata för B2B-säljprojekt | | SourceKey <br/>**personKey.sourceKe** y ❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
+   | Datamängd för B2B-kampanjmedlem | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❼ |
+   | Medlemsdatauppsättning för B2B-marknadsföringslista | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
