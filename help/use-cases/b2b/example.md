@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 3f83b4c141324a7b255ac5af039fa1d7607f3b15
+source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Om du vill se till att en anslutning som stöder personbaserade sökningar av di
    | Persondatauppsättning för B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
    | B2B-kontodatauppsättning | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B-persondatauppsättning)<br/>**b2b.accountKey.sourceKey**❶ |
    | Datamängd för B2B-säljprojekt | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B-säljprojektsrelationsdatauppsättning)<br/>**OpportunityKey.sourceKey**❷ |
-   | Kampanjdata för B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B Campaign-medlemsdatauppsättning)<br/>c **ampaignKey.sourceKey**❸<br/> |
+   | Kampanjdata för B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B Campaign Member-datauppsättning)<br/>**campaignKey.sourceKey**❸<br/> |
    | Datamängd för B2B-marknadsföringslista | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B Marketing List Member Dataset)<br/>**marketingListKey.sourceKey**❹ |
    | Relationsdatauppsättning för B2B-kontoperson | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
    | Datamängd för relationsdata för B2B-säljprojekt | | SourceKey <br/>**personKey.sourceKe** y ❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
