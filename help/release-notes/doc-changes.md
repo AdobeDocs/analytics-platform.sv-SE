@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3568aad27001b322da77f5d1fb762db5ba6d433d
+source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
 workflow-type: tm+mt
-source-wordcount: '3970'
+source-wordcount: '4006'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | Augusti 2024 | |
+| Ett exempel på ett B2B-projekt | Ett [användningsfall](/help/use-cases/b2b/example.md) har lagts till som dokumenterar hur du konfigurerar, konfigurerar och rapporterar om profilnivåbaserade B2B-data i Customer Journey Analytics, med den nya [omformningsdatauppsättningen för B2B-sökningar](/help/connections/transform-datasets-b2b-lookups.md)-funktionen. |
 | Uppdaterade användningsfall för dataexport | Fler detaljerade frågeexempel har lagts till i [frågetjänsten (Data Distiller) och datauppsättningarna för export](/help/use-cases/data-export/queryservice-export-datasets.md) för att illustrera hur attribuering ska tillämpas på rätt sätt i sessioner med ett uppslagsfönster. |
 | Sammanfattningsdata | Dokumentation har lagts till för [sammanfattningsdata](/help/data-views/summary-data.md), [komponentinställningar för sammanfattningsdatagrupp](/help/data-views/component-settings/summary-data-group.md) och ett [användningsfall för sammanfattningsdata](/help/use-cases/data-views/summary-data.md). |
 | **Juli 2024** | |
