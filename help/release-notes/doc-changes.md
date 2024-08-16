@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 3568aad27001b322da77f5d1fb762db5ba6d433d
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '3970'
 ht-degree: 5%
 
 ---
@@ -19,6 +19,9 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 
 | Funktion | Beskrivning |
 | --- | --- |
+| Augusti 2024 | |
+| Uppdaterade användningsfall för dataexport | Fler detaljerade frågeexempel har lagts till i [frågetjänsten (Data Distiller) och datauppsättningarna för export](/help/use-cases/data-export/queryservice-export-datasets.md) för att illustrera hur attribuering ska tillämpas på rätt sätt i sessioner med ett uppslagsfönster. |
+| Sammanfattningsdata | Dokumentation har lagts till för [sammanfattningsdata](/help/data-views/summary-data.md), [komponentinställningar för sammanfattningsdatagrupp](/help/data-views/component-settings/summary-data-group.md) och ett [användningsfall för sammanfattningsdata](/help/use-cases/data-views/summary-data.md). |
 | **Juli 2024** | |
 | Lagt till information om snabba beräknade mätvärden | Uppdaterad information i [Metrisk](/help/components/apply-create-metrics.md) för att förtydliga skillnaden mellan [beräknade mått som skapas i beräkningsverktyget](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) och [de som skapas som snabbberäknade mätvärden i ett enskilt projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ytterligare information om slangarna för att skapa snabba beräknade mätvärden.<p>Beräknade mätvärden som har skapats i verktyget för beräknade mätvärden är tillgängliga i komponentlistan och kan tillämpas på projekt i hela organisationen, medan beräknade mätvärden som har skapats som snabba beräknade mätvärden endast är tillgängliga i det projekt där de skapades.</p><p>Uppdaterad information i [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) för att göra liknande förtydliganden.</p> |
 | Härledd dedupliceringsfunktion för fält | Dokumentation har lagts till i det härledda fältet [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate). |
