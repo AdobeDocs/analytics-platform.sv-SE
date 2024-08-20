@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
+source-git-commit: a80b20eb2e0395445e8f2e7fd0e76e2eef40522a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1760'
 ht-degree: 5%
 
 ---
@@ -77,7 +77,7 @@ Vissa funktioner och deras associerade värde för gränsen beror på vilket Cus
 | Målgruppsuppdateringsfrekvens | 4 | Systemstyrd Guardrail | Maximal frekvens i timmar och [målgrupp](../components/audiences/audiences-overview.md) kan uppdateras. |
 | Fönstret Uppslagning av målgruppsuppdatering | 90 | Systemstyrd Guardrail | Maximalt antal dagar för uppdateringsfönster. |
 | Uppdaterar förfallodatum för målgrupp | 13 | Systemstyrd Guardrail | Det maximala antalet månader som publiken inte längre kan uppdatera från det datum då den skapades. Kunderna kan förlänga denna period i ytterligare 13 månader. |
-| Antal uppdaterade målgrupper | 75, 150 | Systemstyrd Guardrail | Maximalt antal uppdaterade målgrupper, värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Antal uppdaterade målgrupper | 75, 150 | Systemstyrd Guardrail | Maximalt antal uppdaterade målgrupper. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 {style="table-layout:auto"}
 
@@ -100,7 +100,7 @@ Se även Experience Platform [Real-time Customer Data Platform-garderobilder](ht
 |---|--:|---|---|
 | Projekt | 50 000 | Systemstyrd Guardrail | Maximalt antal projekt för en organisation. |
 | Datavyer | 2 000 | Systemstyrd Guardrail | Maximalt antal [datavyer](../data-views/data-views.md) för en organisation. |
-| Datavyer | 50 | Systemstyrd Guardrail | Maximalt antal datavyer för en anslutning |
+| Datavyer | 500-1000 | Systemstyrd Guardrail | Maximalt antal datavyer för en anslutning. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 | Datauppsättningar | 100 | Systemstyrd Guardrail | Maximalt antal [datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) per anslutning. |
 | Anslutningar | 1000 | Systemstyrd Guardrail | Maximalt antal [anslutningar](../connections/overview.md) för en organisation. |
 | Anslutningstitel | 500 | Systemstyrd Guardrail | Högsta antal tecken för en anslutningsrubrik. |
@@ -156,8 +156,8 @@ Se även Experience Platform [Datauppsättningsexportstödlinjer](https://experi
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
 | Namngivna datauppsättningar | 5-50 | Systemstyrd Guardrail | Maximalt antal sammanslagna datauppsättningar per kund. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
-| Längd för bakgrundsfyllning | 6-25 | Systemstyrd Guardrail | Maximalt antal månader med data för bakgrundsfyllning. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
-| Uppspelningsfönster/Uppspelningsfrekvens | 1/1 - 30/7 | Systemstyrd Guardrail | Maximalt uppslagsfönster i dagar / Uppspelningsfrekvens; värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Längd för bakgrundsfyllning | 6-25 | Systemstyrd Guardrail | Maximalt antal månader med data för bakåtfyllnad. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Uppspelningsfönster/Uppspelningsfrekvens | 1/1 - 30/7 | Systemstyrd Guardrail | Maximalt uppslagsfönster i dagar / Uppspelningsfrekvens. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 {style="table-layout:auto"}
 
@@ -167,8 +167,8 @@ Se även Experience Platform [Datauppsättningsexportstödlinjer](https://experi
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
 | Namngivna datauppsättningar | 10-50 | Systemstyrd Guardrail | Maximalt antal sammanslagna datauppsättningar per kund. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
-| Längd för bakgrundsfyllning | 13-25 | Systemstyrd Guardrail | Maximalt antal månader med data för bakgrundsfyllning. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
-| Uppspelningsfönster/Uppspelningsfrekvens | 1/1 - 30/7 | Systemstyrd Guardrail | Maximalt uppslagsfönster i dagar / Uppspelningsfrekvens; värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Längd för bakgrundsfyllning | 13-25 | Systemstyrd Guardrail | Maximalt antal månader med data för bakåtfyllnad. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
+| Uppspelningsfönster/Uppspelningsfrekvens | 1/1 - 30/7 | Systemstyrd Guardrail | Maximalt uppslagsfönster i dagar / Uppspelningsfrekvens. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 
 ## Filter och beräknade värden
