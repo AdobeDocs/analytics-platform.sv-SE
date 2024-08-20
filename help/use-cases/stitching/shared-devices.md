@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hide-from-toc: true
 role: Admin
-source-git-commit: 97fcb5f16962b85aa4f95bfbe2f16295d8bb3452
+source-git-commit: f17d2ebdf9a45ebb3a4e923a34c4b9b3d629f038
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Stitching kan attribuera delade enhetsdata med antingen senaste-auth-attribuerin
 
 #### Senaste auktoriseringsattribuering
 
-Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Senaste autentisering används i Audience Manager och är det rekommenderade sättet för användning av kunddataprofiler i realtid. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn.
+Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Senaste autentisering används i Audience Manager och är det rekommenderade sättet för användning av kunddataprofiler i realtid. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Översikt över regler för länkning av identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
 När du använder senaste-auth-attribuering i sammanfogning kommer Stitched ID:n att matchas enligt tabellen nedan.
 
@@ -65,7 +65,7 @@ När du använder senaste-auth-attribuering i sammanfogning kommer Stitched ID:n
 
 #### Enhetsdelning
 
-Enhetsdelning attribuerar anonym aktivitet från en delad enhet till användaren i närmast närhet till den anonyma aktiviteten. Enhetsdelning är det rekommenderade sättet för analytiska användningsfall eftersom enhetsdelning ger kredit för både oautentiserad och autentiserad aktivitet till närmaste kända person. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
+Enhetsdelning attribuerar anonym aktivitet från en delad enhet till användaren i närmast närhet till den anonyma aktiviteten. Enhetsdelning används för närvarande i fältbaserad sammanfogning. Enhetsdelning är det rekommenderade sättet för analytiska användningsfall eftersom enhetsdelning ger kredit för både oautentiserad och autentiserad aktivitet till närmaste kända person. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
 
 När du använder enhetsdelad attribuering vid sammanfogning, kommer häftade ID:n att matchas enligt tabellen nedan.
 
