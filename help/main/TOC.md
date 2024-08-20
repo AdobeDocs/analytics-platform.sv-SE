@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 056c23c584823c7b3633d04585d15197692a2ee2
+source-git-commit: 190e8ad584cdb933b570467fc757b392627fc282
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1099'
 ht-degree: 8%
 
 ---
@@ -366,8 +366,6 @@ ht-degree: 8%
    + Flerkanalsdata {#cross-channel}
       + [Analysera data över olika kanaler](../use-cases/cross-channel/cross-channel.md)
       + [Importera callcenter och webbdata](../use-cases/cross-channel/call-center.md)
-   + Stitching {#stitching}
-      + [Delade enheter](/help/use-cases/stitching/shared-devices.md)
    + Adobe Analytics-data {#aa-data}
       + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
       + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
