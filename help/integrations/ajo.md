@@ -4,9 +4,9 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
+source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '2876'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,6 @@ Anslutningen har namnet **[!UICONTROL AJO Enabled Connection (*sandbox name *)]*
 | [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 | [!UICONTROL Journey Step Events] | [!UICONTROL Journey Step Event schema for Journey Orchestration] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL  IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
-| [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 | [!UICONTROL AJO Message Feedback Event Dataset] | [!UICONTROL AJO Message Feedback Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 | [!UICONTROL AJO Push Tracking Experience Event Dataset] | [!UICONTROL AJO Push Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 
@@ -70,7 +69,7 @@ Datavyn har namnet **AJO Enable Data View (Aktivera datavy) (*sandlådenamn*)**.
 
   | Kompatibilitet | Värde |
   |---|---|
-  | [!UICONTROL Set as default data view in Adobe Journey Optimizer] | Aktiverat (standard).<br/><br/>Med det här konfigurationsalternativet kan du ange en datavy som ska användas med Journey Optimizer, utan att behöva konfigurera manuellt. Mer information om hur du aktiverar det här konfigurationsalternativet (om det inte redan är aktiverat som standard) finns i avsnittet [Kompatibilitet](/help/data-views/create-dataview.md#compatibility) i [Skapa eller redigera en datavy](/help/data-views/create-dataview.md). <br/><br/>När du inaktiverar alternativet visas en dialogruta om du vill fortsätta ändra standarddatavyn. När du väljer **[!UICONTROL Continue]** måste du välja en annan datavy som standarddatavy. Välj **[!UICONTROL Confirm]** för att bekräfta ditt val. Välj **[!UICONTROL Cancel]** om du vill avbryta ändringen av standarddatavyn. |
+  | [!UICONTROL Set as the default data view in Adobe Journey Optimizer] | Aktiverat (standard).<br/><br/>Med det här konfigurationsalternativet kan du ange en datavy som ska användas med Journey Optimizer, utan att behöva konfigurera manuellt. Mer information om hur du aktiverar det här konfigurationsalternativet (om det inte redan är aktiverat som standard) finns i avsnittet [Kompatibilitet](/help/data-views/create-dataview.md#compatibility) i [Skapa eller redigera en datavy](/help/data-views/create-dataview.md). <br/><br/>När du inaktiverar alternativet visas en dialogruta om du vill fortsätta ändra standarddatavyn. När du väljer **[!UICONTROL Continue]** måste du välja en annan datavy som standarddatavy. Välj **[!UICONTROL Confirm]** för att bekräfta ditt val. Välj **[!UICONTROL Cancel]** om du vill avbryta ändringen av standarddatavyn. |
 
   | Behållare | Värde |
   |---|---|
@@ -88,7 +87,7 @@ Datavyn har namnet **AJO Enable Data View (Aktivera datavy) (*sandlådenamn*)**.
 
 - På fliken **Komponenter**:
    - Alla mått och mått som har [!UICONTROL (AJO)] tillagda i sitt namn läggs till automatiskt som en del av den här automatiska konfigurationen.
-   - Vissa mått eller mått, som har lagts till automatiskt, baseras på härledda fält. De här härledda fälten skapas specifikt för den här integreringen. Måttet [!UICONTROL Landing Page Clicks (AJO)] är till exempel baserat på det härledda fältet [!UICONTROL Landing Page Clicks].
+   - Vissa mått som har lagts till automatiskt baseras på härledda fält. De här härledda fälten skapas specifikt för den här integreringen. Måttet [!UICONTROL Landing Page Clicks (AJO)] är till exempel baserat på det härledda fältet [!UICONTROL Landing Page Clicks].
    - Vissa mått eller dimensioner har ytterligare konfiguration. [!UICONTROL Spam Complaint (AJO)] har till exempel [!UICONTROL Format]- och [!UICONTROL Include Exclude Values]-inställningar.
    - Alla automatiskt tillagda mått och mått har en sammanhangsetikett med namnet `:`*`name_of_metric_or_dimension`*. Måttet [!UICONTROL Landing Page Clicks (AJO)] har till exempel sammanhangsetiketten `:Landing page clicks (AJO)`.
 
@@ -101,7 +100,7 @@ Datavyn har namnet **AJO Enable Data View (Aktivera datavy) (*sandlådenamn*)**.
 
 ## Konfigurera en datavy som ska användas med Journey Optimizer manuellt
 
-I följande avsnitt beskrivs hur du manuellt kan använda data som genererats av Journey Optimizer för att utföra avancerade analyser i Customer Journey Analytics. Detta är bara nödvändigt om det [automatiska konfigurationsalternativet](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) inte räcker till för dina behov.
+I följande avsnitt beskrivs hur du manuellt kan använda data som genererats av Journey Optimizer för att utföra avancerade analyser i Customer Journey Analytics. Den här manuella konfigurationen är bara nödvändig om det [automatiska konfigurationsalternativet](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) inte räcker till för dina behov.
 
 ### Skicka data från Journey Optimizer till Experience Platform
 
@@ -124,7 +123,7 @@ Välj och konfigurera följande datauppsättningar:
 {style="table-layout:auto"}
 
 
-### Konfigurera datavyn så att den passar Journey Optimizer mått och mått
+### Konfigurera datavyn
 
 När en anslutning har skapats kan du skapa en eller flera [datavyer](/help/data-views/create-dataview.md) för att konfigurera önskade mått och mått som är tillgängliga i Customer Journey Analytics.
 
@@ -133,26 +132,45 @@ När en anslutning har skapats kan du skapa en eller flera [datavyer](/help/data
 >Datamatchningar mellan Journey Optimizer och Customer Journey Analytics är vanligtvis mindre än 1-2 %. Större avvikelser är möjliga för data som samlats in under de senaste två timmarna. Använd datumintervall, exklusive idag, för att minska avvikelser som inbegriper bearbetningstid.
 
 
-#### Konfigurera dimensioner i datavyn
+#### Konfigurera dimensioner
 
 Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med liknande dimensioner i Journey Optimizer. Mer information om alternativ för dimensionsanpassning finns i [Komponentinställningar](/help/data-views/component-settings/overview.md) i Datavy Manager.
 
-| Dimension | Schemaelement | Komponentinställningar |
-| --- | --- | --- |
-| Resensnamn | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponenttyp: Dimension |
-| Resenamn och version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Komponenttyp: Dimension |
-| Namn på resenod | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | Komponenttyp: Dimension |
-| Resensnodtyp | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Komponenttyp: Dimension |
-| Kampanjnamn | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Komponenttyp: Dimension |
-| Kanal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Komponenttyp: Dimension |
-| Push-titel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Komponenttyp: Dimension |
-| E-postämne | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Komponenttyp: Dimension |
-| Länketikett | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Komponenttyp: Dimension |
-| Experimentnamn | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | Komponenttyp: Dimension<br>Kontextetiketter: Experimentationsexperiment |
-| Behandlingsnamn | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Komponenttyp: Dimension<br>Kontextetiketter: Experimentationsvariant |
-| Felorsak vid e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Komponenttyp: Dimension |
-| Orsak till undantag av e-postleverans | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Komponenttyp: Dimension |
-| Elementetikett | `_experience.decisioning.propositionAction.label` | Komponenttyp: Dimension |
+| Dimension | Beskrivning | Datauppsättning(ar) | Schemaelement | Komponentinställningar |
+| --- | --- | --- | --- | --- |
+| Körningsfel för åtgärd (AJO) | Feltillstånd som förhindrade att körtidsmiljön för resan kunde köra åtgärden. | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.actionExecutionError ` | Komponenttyp: Dimension |
+| Åtgärdsetikett (AJO) | Kundens genererade visningsnamn för elementet som slutanvändaren interagerade med. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionAction.label` | Komponenttyp: Dimension |
+| Batch-ID (AJO) | GUID som skapas vid anrop av varje ny batchinstans för en schemalagd resa eller kampanjåtgärd. Om t.ex. en schemalagd resa eller en Campaign-åtgärd körs på 08.00 och 01.00 finns det två olika batchInstanceID:n. | AJO Push Tracking Experience Event datauppsättning, AJO Message Feedback Event datauppsättning, AJO Email Tracking Experience Event datauppsättning | ` _experience.customerJourneyManagement.`<br/>`messageExecution.batchInstanceID` | Komponenttyp: Dimension |
+| Tidsstämpel för batchinstans (AJO) | Tidsstämpeln för batchinstansen. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | Härledda fält | Komponenttyp: Dimension (härlett fält) |
+| Kampanj-ID (AJO) | Kampanjens ID. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`campaign.campaignID` | Komponenttyp: Dimension |
+| Kampanjnamn (AJO) | Namnet på kampanjen. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`campaign.name` | Komponenttyp: Dimension |
+| Kampanjversion-ID (AJO) | Kampanjens version-ID. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.campaign.campaignVersionID` | Komponenttyp: Dimension |
+| Kanal (AJO) | Den kanal som dessa data ska korreleras till. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.channel._id` | Komponenttyp: Dimension |
+| Korrelations-ID (AJO) | Korrelations-ID. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.propositions.`<br/>`scopeDetails.correlationID` | Komponenttyp: Dimension |
+| ID för beslutspolicy (AJO) | ID för beslutspolicyn som används vid beslut om vilka poster som ska tas med i förslaget. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | Härledda fält | Komponenttyp: Dimension (härlett fält) |
+| E-postmottagardomän (AJO) | Domän för e-postadress | AJO Push Tracking Experience Event datauppsättning, AJO Message Feedback Event datauppsättning, AJO Email Tracking Experience Event datauppsättning | `_experience.customerJourneyManagement.`<br/>`emailChannelContext.address` | Komponenttyp: Dimension |
+| Ämne för e-post (AJO) | Ämne, icke-personaliserat | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`channelDetails.email.subject` | Komponenttyp: Dimension |
+| Händelse-ID (AJO) | En unik identifierare för tidsseriehändelsen. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_id` | Komponenttyp: Dimension (härlett fält) |
+| ID för avslutningsvillkor (AJO) | ID för de utträdeskriterier som används för att avgöra om resan ska avslutas. | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaID` | Komponenttyp: Dimension |
+| Namn på avslutsvillkor (AJO) | Namn på avslutningskriterier. | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaName` | Komponenttyp: Dimension |
+| Experiment-ID (AJO) | ID:t för experimentet. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Komponenttyp: Dimension |
+| Experimentnamn (AJO) | Namnet på experimentet. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`experiment.experimentName` | Komponenttyp: Dimensionens kontextetiketter: Experimentationsexperiment |
+| Hämtningsfel (AJO) | Feltillstånd som förhindrade att hämtningen kördes av körningsmiljön. | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.fetchError` | Komponenttyp: Dimension |
+| Är optimerad för sändning (AJO) | Är meddelandekörning SendTimeOptimized? | AJO Push Tracking Experience Event datauppsättning, AJO Message Feedback Event datauppsättning, AJO Email Tracking Experience Event datauppsättning | `_experience.customerJourneyManagement.`<br/>`messageProfile.isSendTimeOptimized` | Komponenttyp: Dimension |
+| Är testresa (AJO) | Är händelsen en del av körningen av en testresa | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.inTest` | Komponenttyp: Dimension |
+| Är testmeddelande (AJO) | Är meddelandet skickat som testkörning | AJO Push Tracking Experience Event datauppsättning, AJO Message Feedback Event datauppsättning, AJO Email Tracking Experience Event datauppsättning | `_experience.customerJourneyManagement.`<br/>`messageProfile.isTestExecution` | Komponenttyp: Dimension |
+| Objekt-ID (AJO) | Objektets ID. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositions.items.id` | Komponenttyp: Dimension |
+| Objektnamn (AJO) | Namnet på objektet | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositions.items.name` | Komponenttyp: Dimension |
+| Reseåtgärds-ID | Åtgärds-ID för resan som MessageExecution aktiveras för. | AJO Push Tracking Experience Event datauppsättning, AJO Message Feedback Event datauppsättning, AJO Email Tracking Experience Event datauppsättning | `_experience.customerJourneyManagement.`<br/>`messageExecution.journeyActionID` | Komponenttyp: Dimension |
+| Nodnamn för reseåtgärd (AJO) | Åtgärdsnodens namn för resan. | AJO Push Tracking Experience Event dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset, AJO Entity Dataset | Härledda fält | Komponenttyp: Dimension (härlett fält) |
+| Namn på nod för resehändelse (AJO) | Det här värdet anges när ett segment eller en extern händelse inträffar under en resa. | AJO Push Tracking Experience Event dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset, AJO Entity Dataset | Härledda fält | Komponenttyp: Dimension (härlett fält) |
+| Resurs-ID (AJO) | ID för resan. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyID` | Komponenttyp: Dimension |
+| Resensnamn (AJO) | Namnet på resan. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyName` | Komponenttyp: Dimension |
+| Resensnamn och version (AJO) | Namnet på och versionen av resan. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNameAndVersion` | Komponenttyp: Dimension |
+| Reseversions-ID (AJO) | Resans version-ID. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`journey.journeyVersionID` | Komponenttyp: Dimension |
+| ID för landningssida (AJO) | Unik identifierare för landningssida. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | Komponenttyp: Dimension |
+| Landningssida Source (AJO) | Startsidans källa. | AJO Experience Event-datauppsättning för e-postspårning | Härledda fält | Komponenttyp: Dimension (härlett fält) |
+| Länk-URL (AJO) | Den URL som användaren klickade på. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Komponenttyp: Dimension |
 
 {style="table-layout:auto"}
 
@@ -160,32 +178,44 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 
 Du kan skapa följande mätvärden i en datavy för att få en ungefärlig paritet med liknande mätvärden i Journey Optimizer. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Datavy Manager för mer information om alternativ för måttanpassning.
 
-| Mått | Beskrivning | Schemaelement | Komponentinställningar |
-| --- | --- | --- | --- |
-| Studsar | Antalet meddelanden som studsade, inklusive både omedelbara studsar och studsar efter leveransen. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått <br>Inkludera exkluderingsvärden: Om något villkor uppfylls<br>Lika med: `bounce`, Lika med: `denylist` |
-| studsar efter leverans | Vissa e-posttjänster rapporterar e-postmeddelanden som skickas och skickar dem sedan. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `async` |
-| E-postklick | Antalet klick i meddelanden. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `click` |
-| E-post öppnas | Antalet öppnade meddelanden. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `open` |
-| Fel | Antalet meddelanden som har felrapporterats. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `error` |
-| Exkluderar | Antalet meddelanden som utelämnats. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `exclude` |
-| Skickar | Antalet meddelanden som e-postleverantörer accepterade. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `sent` |
-| Skräppost | Antalet skräppostklagomål. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `spam_complaint` |
-| Avbeställ | Antal avbrutna prenumerationer. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponenttyp: Mått <br>Inkludera exkluderade värden: Lika med `unsubscribe` |
-| Edge Sends | Antalet gånger som gränsnätverket skickar ett meddelande till antingen webben eller mobil SDK | Använd schemasträngelementet `_experience.decisioning.propositionEventType.send` | |
-| Inkommande skärmar | Antalet gånger som ett webb- eller InApp-meddelande visas för användaren | Använd schemasträngelementet `_experience.decisioning.propositionEventType.display` | |
-| Inkommande klick | Antal webbklick eller InApp-meddelandeklick | Använd schemasträngelementet `_experience.decisioning.propositionEventType.interact` | |
-| InApp-utlösare | Det antal gånger som beslutsmotorn föreslog att meddelandet ska visas. Mobile SDK kunde åsidosätta beslutet och minska antalet faktiska skärmar. | Använd schemasträngelementet `_experience.decisioning.propositionEventType.trigger` | |
-| InApp-avvisningar | Antalet gånger som ett InApp-meddelande tas bort från användargränssnittet av SDK | Använd schemasträngelementet `_experience.decisioning.propositionEventType.dismiss` | |
-
-{style="table-layout:auto"}
-
-#### Konfigurera beräknade värden i Analysis Workspace
-
-När du har konfigurerat de önskade måtten och måtten för Journey Optimizer-datauppsättningen kan du även konfigurera [Beräknade mätvärden](/help/components/calc-metrics/calc-metr-overview.md) för ytterligare insikter om dessa data. Dessa beräknade värden baseras på ovanstående mått som skapats i Data View Manager.
-
-| Beräknat mått | Beskrivning | Formel |
-| --- | --- | --- |
-| Skickade meddelanden | Totalt antal skickade meddelanden. Inkluderar slutförda eller misslyckade meddelanden. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
-| Levererade meddelanden | Antalet e-postmeddelanden som levereras till kunderna. | `[Sends] - [Bounces After Delivery]` |
+| Mått | Beskrivning | Datauppsättning(ar) | Schemaelement | Komponentinställningar |
+| --- | --- | --- | --- | --- |
+| Appinstallationer (AJO) | Antal programinstallationer | AJO Push Tracking Experience, händelsedatauppsättning | `application.installs.value` | Komponenttyp: Mått |
+| Applanseringar (AJO) | Antal gånger mobilappen startas | AJO Push Tracking Experience, händelsedatauppsättning | `application.launches.value` | Komponenttyp: Mått |
+| studsar för utgående kanaler (AJO) | Totalt antal meddelanden som studsat över utgående kanaler | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått |
+| Klicka (AJO) | Totalt antal klick i alla kanaler | AJO Push Tracking Experience, händelsedatauppsättning, händelser för kundresa, händelseuppsättning för AJO e-postspårning, händelsedatauppsättning för AJO Message Feedback, händelsedatauppsättning för | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Antal reserverbjudanden (AJO) | Antal reserverbjudanden. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | Komponenttyp: Mått |
+| Antal erbjudanden (AJO) | Antal erbjudanden. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | ` _experience.decisioning.`<br/>`propositions.items.id` | Komponenttyp: Mått |
+| Dedupliceringsmått (AJO) | Dedupliceringsmått | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_id` | Komponenttyp: Mått |
+| Levererat (AJO) | Totalt antal meddelanden som levererats. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Avvisad (AJO) | Räknar varje gång inApp-meddelandet stängs av Adobe SDK oavsett vilken åtgärd slutanvändaren väljer att stänga det. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponenttyp: Mått |
+| Skärmar (AJO) | Det här antalet visar AJO-meddelanden. Detta inkluderar e-postöppningar, webbvisningar och visning i appen. Mobilplattformar rapporterar inte SMS och push-meddelanden, och därför räknas de inte. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för kundresa, händelseuppsättning för AJO e-postspårning, händelsedatauppsättning för AJO Message Feedback, händelsedatauppsättning för | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| E-post öppnas (AJO) | Totalt antal e-postöppningar | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponenttyp: Mått |
+| Inkommande klick (AJO) | Totalt antal klick i inkommande kanaler | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionEventType.interact` | Komponenttyp: Mått |
+| Inkommande avstängningar (AJO) | Totalt antal stängningar över inkommande kanaler | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Komponenttyp: Mått |
+| Inkommande Impressions (AJO) | Totalt antal visningar över inkommande kanaler | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponenttyp: Mått |
+| Reseslut (AJO) | True om det aktuella steget ledde till att en instans av resan avslutades. Det sista steget i en resa för en viss profil har körts. | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Komponenttyp: Mått |
+| Resebyråer (AJO) | True if the step event was a travel entrance event for a profile. | Resestegshändelser | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Reseutträde (AJO) | True om det aktuella steget ledde till att en instans av resan avslutades. Detta är det sista steget i en resa för en viss profil som utfördes utan fel. | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Komponenttyp: Mått |
+| Resefel (AJO) | Ger det aktuella läget för steget som har slutförts. Möjliga värden: `Transitions` (Nästa steg inträffar vid en händelseövergång), `EndStep` (Det sista steget i den här reseinstansen har körts), `Error` (Det här steget påträffade ett feltillstånd och avslutar den aktuella reseinstansen), `TimedOut` (Det aktuella steget har avslutats på grund av en timeout för en hämtning eller en åtgärd). | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | Komponenttyp: Mått |
+| Landing Page Click (AJO) | Totalt antal klick på landningssidan. | AJO Experience Event-datauppsättning för e-postspårning | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Konverteringar av landningssidor (AJO) | Totalt antal konverteringar på landningssidan. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponenttyp: Mått |
+| Landing Page Views (AJO) | Totalt antal visningar på landningssidan. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponenttyp: Mått |
+| Node Enters (AJO) | True if the step event was a node entrance event for a profile. | Resestegshändelser | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Utgående klick (AJO) | Totalt antal klick i utgående kanaler | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponenttyp: Mått |
+| Utgående fel (AJO) | Totalt antal meddelanden med fel i utgående kanaler | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått |
+| Utgående undantag (AJO) | Totalt antal uteslutningshändelser över utgående kanaler | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått |
+| Utgående sändningar (AJO) | Totalt antal meddelanden som skickas via utgående kanaler | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Komponenttyp: Mått |
+| Push Custom Actions (AJO) | Totalt antal anpassade åtgärder i push-interaktion. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `eventType` | Komponenttyp: Mått |
+| Push-interaktioner (AJO) | Antal gånger mobilappen startas på grund av en direkt push-meddelandeinteraktion | AJO Push Tracking Experience, händelsedatauppsättning | `application.launches.value` | Komponenttyp: Mått |
+| Skickar (AJO) | Totalt antal meddelanden som skickas över alla kanaler | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| SMS inkommande meddelanden (AJO) | SMS inkommande svar. Exempel: stoppa, starta, prenumerera osv. | AJO Push Tracking Experience Event datauppsättning, AJO Message Feedback Event datauppsättning, AJO Email Tracking Experience Event datauppsättning | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | Komponenttyp: Mått |
+| Spam Complaint (AJO) | Totalt antal skräppostklagomål | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponenttyp: Mått |
+| Prenumerationslista - tillägg (AJO) | Totalt antal tillägg i prenumerationslistan. | AJO Experience Event-datauppsättning för e-postspårning | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Prenumerationslista tas bort (AJO) | Totalt antal borttagningar från prenumerationslistan. | AJO Experience Event-datauppsättning för e-postspårning | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Målinriktad (AJO) | Detta antal gånger ett förslag har riktats till en person. Detta är det antal gånger ett förslag övervägdes för visning till en person. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | Härledda fält | Komponenttyp: Mått (härlett fält) |
+| Utlöst (AJO) | Förslag valdes för att visas av Adobe SDK. Andra faktorer kan förhindra att den faktiskt visas. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
+| Unika besökare i expertvyn (AJO) | De unika besökarna i experimentet | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Komponenttyp: Mått |
+| Avbeställ (AJO) | Totalt antal avbeställningar | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponenttyp: Mått |
 
 {style="table-layout:auto"}
