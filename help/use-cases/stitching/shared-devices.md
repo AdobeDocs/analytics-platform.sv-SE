@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
+source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -102,7 +102,9 @@ Tänk på flera faktorer för att förstå hur användbara delade enheter är i 
 
 Om du vill förstå hur den delade enheten exponeras kan du överväga att utföra följande frågor.
 
-1. Förstå antalet enheter som delas. Du kan använda en fråga som räknar de enhets-ID:n som har två eller flera person-ID:n associerade med enhets-ID:t. En exempelfråga kan se ut så här:
+1. **Identifiera delade enheter**
+
+   Om du vill förstå hur många enheter som delas kan du utföra en fråga som räknar enhets-ID:n med två eller flera associerade person-ID:n. Detta hjälper till att identifiera enheter som används av flera personer.
 
    ```sql
    SELECT COUNT(*)
@@ -116,7 +118,9 @@ Om du vill förstå hur den delade enheten exponeras kan du överväga att utfö
    ```
 
 
-2. För de delade enheterna, som är ett resultat av den första frågan, måste du förstå hur många händelser av det totala antalet händelser som kan tillskrivas dessa delade enheter. Den här attribueringen ger en bättre bild av hur delade enheter påverkar era data och hur de påverkas när ni utför analyser. En exempelfråga kan se ut så här:
+2. **Attribution of events to shared devices**
+
+   För de delade enheter som identifieras avgör du hur många händelser av det totala antalet som kan tillskrivas dessa enheter. Detta ger insikt i vilken påverkan delade enheter har på dina data och vilka konsekvenser de har för analysen.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -141,7 +145,9 @@ Om du vill förstå hur den delade enheten exponeras kan du överväga att utfö
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. För de händelser som tilldelas delade enheter (resultatet av den andra frågan) måste du förstå hur många av dessa händelser som INTE har ett person-ID. I annat fall anges hur många av de delade enhetshändelserna som är anonyma händelser. I slutändan påverkar den algoritm (senaste autentisering, enhetsdelning, ECID-reset) som du väljer för att förbättra datakvaliteten dessa anonyma delade enhetshändelser. En exempelfråga kan se ut så här:
+3. **Identifiera anonyma händelser på delade enheter**
+
+   Bland de händelser som kan tillskrivas delade enheter kan du identifiera hur många som saknar ett person-ID, vilket anger anonyma händelser. Den algoritm som du väljer (till exempel last-auth, device-split eller ECID-reset) för att förbättra datakvaliteten påverkar dessa anonyma händelser.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -166,7 +172,9 @@ Om du vill förstå hur den delade enheten exponeras kan du överväga att utfö
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. Slutligen vill ni förstå vilken exponering varje kund skulle uppleva på grund av en felklassificering av händelser. För att få denna exponering måste du beräkna procentandelen anonyma händelser för varje delad enhet som relaterar till det totala antalet händelser. En exempelfråga kan se ut så här:
+4. **Beräkna exponering vid felklassificering av händelser**
+
+   Slutligen, utvärdera den exponering som varje kund kan drabbas av på grund av felklassificering av händelser. Beräkna procentandelen anonyma händelser över det totala antalet händelser för varje delad enhet. Detta bidrar till att förstå den potentiella effekten på kundens datakvalitet.
 
    ```sql
    SELECT COUNT(*) AS total_events,
