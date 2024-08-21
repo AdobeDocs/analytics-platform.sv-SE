@@ -4,9 +4,9 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
+source-git-commit: 5434b8432608ba5ee49f7062070fa1624af1b46a
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2868'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ I följande avsnitt beskrivs hur du manuellt kan använda data som genererats av
 
 Adobe Experience Platform är den centrala datakällan och länken mellan Journey Optimizer och Customer Journey Analytics. I [Kom igång med datauppsättningar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) i användarhandboken för Journey Optimizer finns anvisningar om hur du skickar Journey Optimizer-data till Experience Platform som en datauppsättning.
 
-### Skapa en anslutning i Customer Journey Analytics
+### Skapa en anslutning
 
 När Journey Optimizer-data finns i Adobe Experience Platform kan du [skapa en anslutning](/help/connections/create-connection.md) baserat på dina Journey Optimizer-datauppsättningar. Du kan också lägga till Journey Optimizer-datauppsättningar i en befintlig anslutning.
 
@@ -174,7 +174,7 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 
 {style="table-layout:auto"}
 
-#### Konfigurera mått i datavyn
+#### Konfigurera mått
 
 Du kan skapa följande mätvärden i en datavy för att få en ungefärlig paritet med liknande mätvärden i Journey Optimizer. Se [Komponentinställningar](/help/data-views/component-settings/overview.md) i Datavy Manager för mer information om alternativ för måttanpassning.
 
