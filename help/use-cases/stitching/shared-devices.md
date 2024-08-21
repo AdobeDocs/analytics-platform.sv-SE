@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
+source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 2%
+source-wordcount: '930'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +26,11 @@ När två personer använder samma enhet och båda gör ett köp kan exempeldata
 
 | Tidsstämpel | Sidnamn | Enhets-ID | E-post |
 |---|---|---|---|
-| 2023-05-12 12:01 | Startsida | 1234 | |
-| 2023-05-12 12:02 | Produktsida | 1234 | |
-| 2023-05-12 | Orderlyckade | 1234 | <ryan@a.com> |
-| 2023-05-12 | Produktsida | 1234 | |
-| 2023-05-12 12:08 | Orderlyckade | 1234 | <cassidy@a.com> |
+| 2023-05-12 12:01 | Startsida | `1234` | |
+| 2023-05-12 12:02 | Produktsida | `1234` | |
+| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` |
+| 2023-05-12 | Produktsida | `1234` | |
+| 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` |
 
 Orderhändelserna (köp) tilldelar korrekta data till rätt e-postadress. Hur tilldelningen påverkar er analys beror på hur ni utför analysen:
 
@@ -56,12 +56,12 @@ När du använder senaste-auth-attribuering i sammanfogning kommer Stitched ID:n
 
 | Tidsstämpel | Sidnamn | Enhets-ID | E-post | Namnlöst ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Startsida | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:02 | Produktsida | 1234 | | <cassidy@a.com> |
-| 2023-05-12 | Orderlyckade | 1234 | <ryan@a.com> | <cassidy@a.com> |
-| 2023-05-12 | Produktsida | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:08 | Orderlyckade | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Startsida | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Startsida | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | Produktsida | `1234` | | `cassidy@a.com` |
+| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 | Produktsida | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Startsida | `1234` | | `cassidy@a.com` |
 
 
 #### Enhetsdelning
@@ -72,12 +72,12 @@ När du använder enhetsdelad attribuering vid sammanfogning, kommer häftade ID
 
 | Tidsstämpel | Sidnamn | Enhets-ID | E-post | Namnlöst ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Startsida | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Produktsida | 1234 | | <ryan@a.com> |
-| 2023-05-12 | Orderlyckade | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 | Produktsida | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:08 | Orderlyckade | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Startsida | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Startsida | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Produktsida | `1234` | | `ryan@a.com` |
+| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 | Produktsida | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Startsida | `1234` | | `cassidy@a.com` |
 
 
 ### ECID-återställning
@@ -89,12 +89,12 @@ När du använder ECID-återställning tolkas kapslade ID:n som i tabellen nedan
 
 | Tidsstämpel | Sidnamn | Enhets-ID | E-post | Namnlöst ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Startsida | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Produktsida | 1234 | | <ryan@a.com> |
-| 2023-05-12 | Orderlyckade | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 | Produktsida | 5678 | | <cassidy@a.com> |
-| 2023-05-12 12:08 | Orderlyckade | 5678 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Startsida | 5678 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Startsida | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Produktsida | `1234` | | `ryan@a.com` |
+| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 | Produktsida | 5678 | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Orderlyckade | 5678 | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Startsida | 5678 | | `cassidy@a.com` |
 
 ## Exponering för delad enhet
 
