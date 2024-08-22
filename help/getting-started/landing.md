@@ -4,9 +4,9 @@ title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: c3d97fe2353011f4747d0c1742e49189cc91b85c
+source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,11 @@ ht-degree: 0%
 
 Landningssidan för Customer Journey Analytics visar [!DNL Analysis Workspace] och innehåller en startsida för projektledaren samt en utbildningssektion som hjälper dig att hantera kundresedata mer effektivt.
 
++++ Se videon för en introduktion till Customer Journey Analytics...
+
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+
++++
 
 Landningssidan för Customer Journey Analytics består av följande underflikar: Projekt och utbildningsmaterial.
 

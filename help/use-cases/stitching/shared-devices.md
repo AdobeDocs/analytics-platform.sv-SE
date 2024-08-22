@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
+source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Orderhändelserna (köp) tilldelar korrekta data till rätt e-postadress. Hur ti
 
 ## Förbättra personcentrerad analys
 
-För att förbättra personcentrerad analys av delade enheter har du två alternativ: du kan använda sammanfogning eller så kan du implementera funktionen för återställning av ECID. Båda metoderna beskrivs närmare i avsnitten nedan.
+Exempeldata är en blandning av både autentiserad och oautentiserad aktivitet för samma enhet. Utmaningen är att tilldela en person till den oautentiserade trafiken, så att ni kan utföra en personcentrerad analys och förhindra att kundreseanalyser tar bort aktiviteter som inte har något värde för person-ID. Du kan lösa det här problemet på två sätt: du kan använda häftning eller så kan du implementera funktionen för återställning av ECID. Båda alternativen beskrivs närmare i avsnitten nedan.
 
 ### Stitlar
 
