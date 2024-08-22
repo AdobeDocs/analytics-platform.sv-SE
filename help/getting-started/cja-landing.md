@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '841'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,15 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics och do
 AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverksamma att utföra uppgifter snabbt - oavsett om de förstår koncept, felsöker problem eller söker igenom information. Det gör det även möjligt för icke-experter att utföra expertuppgifter och ökar den övergripande kvaliteten på arbetet.
 
 [![bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB Sammanfattningsdata]
+
+Gör att du kan hämta in tidsseriedata som inte har något person-ID. Dessa tidsseriedata kan användas för att stödja olika användningsfall, t.ex.
+
+- Presentera högnivåindikatorer som en del av eller bredvid data på händelsenivå.
+- Överför mål per timme eller dag och positionera sedan dessa mål mot händelsenivåstatistik.
+
+[![bild](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
 
 >[!TAB Diagrambaserad utjämning*]
 
@@ -75,7 +84,7 @@ Prognosticering är en Analysis Workspace-funktion som prognostiserar ett standa
 
 >[!TAB Ny dokumentation]
 
-Nu finns det nya dokumentationsavsnitt på:<ul><li>Så här uppgraderar du från Adobe Analytics till Customer Journey Analytics.</li><li>Användningsexempel vid dataexport och de funktioner som krävs för Experience Platform och kundresor. </li></ul>Välj **[!UICONTROL Learn more]** för den här och andra dokumentationsuppdateringar.
+Nu finns det nya dokumentationsavsnitt på:<ul><li>Exempel på användning av sammanfattningsdata och exempel på B2B-användning.</li><li>Så här uppgraderar du från Adobe Analytics till Customer Journey Analytics.</li><li>Användningsexempel vid dataexport och de funktioner som krävs för Experience Platform och kundresor. </li></ul>Välj **[!UICONTROL Learn more]** för den här och andra dokumentationsuppdateringar.
 
 [![bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -130,7 +139,7 @@ Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics.
     </td>
      <td>
       <img src="./assets/dataviews.svg" width="35px"><br/>
-      <strong> Datavyer </strong><br/><a href="/help/data-views/data-views.md">Översikt</a> - <a href="/help/data-views/create-dataview.md">Skapa eller redigera</a> - <a href="/help/data-views/session-settings.md">Sessionsinställningar</a> - <a href="/help/data-views/derived-fields/derived-fields.md">Härledda fält</a> - <a href="/help/data-views/component-reference.md">Komponentreferens</a>
+      <strong> Datavyer </strong><br/><a href="/help/data-views/data-views.md">Översikt</a> - <a href="/help/data-views/create-dataview.md">Skapa eller redigera</a> - <a href="/help/data-views/session-settings.md">Sessionsinställningar</a> - <a href="/help/data-views/derived-fields/derived-fields.md">Härledda fält</a> - <a href="/help/data-views/summary-data.md">Sammanfattningsdata</a> - <a href="/help/data-views/component-reference.md">Komponentreferens</a>
     </td>
 
 </tr>
@@ -145,7 +154,7 @@ Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics.
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong> Dela, exportera, integrera </strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projekt</a> - <a href="/help/mobile-app/home.md">Analysinstrumentpaneler</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/integrations/overview.md">Integreringar</a>
+      <strong> Dela, exportera, integrera </strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projekt</a> - <a href="/help/mobile-app/home.md">Analysinstrumentpaneler</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">Molnexport</a> - <a href="/help/integrations/overview.md">Integreringar</a>
     </td>
   </tr>
 </table>
