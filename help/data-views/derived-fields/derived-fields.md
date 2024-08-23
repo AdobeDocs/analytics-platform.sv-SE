@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 0a046a89e1742d3470a78ebad4f93cb3b4ea7f4c
+source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
 workflow-type: tm+mt
 source-wordcount: '8011'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Exempel:
 
 - Definiera ett härlett fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (till exempel URL-parameter, sidadress, sidnamn).
 
-## Härlett fältgränssnitt
+## Härlett fältgränssnitt {#interface}
 
 När du skapar eller redigerar ett härlett fält använder du det härledda fältgränssnittet.
 
@@ -42,7 +42,7 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 
 {style="table-layout:auto"}
 
-## Guiden Fältmall
+## Guiden Fältmall {#wizard}
 
 När du använder det härledda fältgränssnittet för första gången visas guiden [!UICONTROL Start with a field template].
 
@@ -51,7 +51,7 @@ När du använder det härledda fältgränssnittet för första gången visas gu
 
 Dialogrutan för det härledda fältet innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Mer information om tillgängliga mallar finns i [Funktionsmallar](#function-templates).
 
-## Regelgränssnitt
+## Regelgränssnitt {#rules}
 
 När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
@@ -66,7 +66,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 {style="table-layout:auto"}
 
-## Skapa ett härlett fält
+## Skapa ett härlett fält {#create}
 
 1. Välj en befintlig datavy eller skapa en datavy. Mer information finns i [Datavyer](../data-views.md).
 
@@ -81,7 +81,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 5. Det nya härledda fältet läggs till i behållaren [!UICONTROL Derived fields >], som en del av **[!UICONTROL ** schemafälten **]** i den vänstra listen i datavyn.
 
 
-## Redigera ett härlett fält
+## Redigera ett härlett fält {#edit}
 
 1. Välj en befintlig datavy. Mer information finns i [Datavyer](../data-views.md).
 
@@ -117,7 +117,7 @@ Om du har använt ett härlett fält som en komponent för mått eller mätvärd
 
 
 
-## Ta bort ett härlett fält
+## Ta bort ett härlett fält {#delete}
 
 1. Välj en befintlig datavy. Mer information finns i [Datavyer](../data-views.md).
 
@@ -153,12 +153,12 @@ Om du har använt ett härlett fält som en komponent för mått eller mätvärd
 
 
 
-## Funktionsmallar
+## Funktionsmallar {#templates}
 
 Funktionsmallar är tillgängliga för att snabbt skapa ett härlett fält för specifika användningsområden. Dessa funktionsmallar kan nås från väljarområdet i det härledda fältgränssnittet eller presenteras vid första användningen i guiden [!UICONTROL Start with a field template].
 
 
-### Marknadsföringskanaler
+### Marknadsföringskanaler {#mchannel}
 
 Den här funktionsmallen använder en samling regler för att skapa marknadsföringskanaler.
 
@@ -170,7 +170,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Studsar
+### Studsar {#bounces}
 
 Den här funktionsmallen använder en samling regler för att identifiera webbplatsens gränser.
 
@@ -182,7 +182,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Kombinera flera Dimensioner
+### Kombinera flera Dimensioner {#multi-dim}
 
 Den här funktionsmallen kombinerar två värden till ett.
 
@@ -194,7 +194,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Eget namn på datauppsättning
+### Eget namn på datauppsättning {#friendlyname}
 
 Den här funktionsmallen ger ett läsbart datauppsättningsnamn.
 
@@ -206,7 +206,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Sidnamn från URL
+### Sidnamn från URL {#pagename}
 
 Den här funktionsmallen skapar ett enkelt sidnamn.
 
@@ -218,7 +218,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Semestersäsong
+### Semestersäsong {#holiday}
 
 Den här funktionsmallen klassificerar nyckeltider för året.
 
@@ -230,7 +230,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Månadsmål
+### Månadsmål {#goals}
 
 Den här funktionsmallen ställer in anpassade månatliga mål.
 
@@ -242,7 +242,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Hämta alla värden i avgränsad lista
+### Hämta alla värden i avgränsad lista {#allvalues}
 
 Den här funktionsmallen konverterar en begränsad lista till en array.
 
@@ -254,7 +254,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Hämta första värdet i avgränsad lista
+### Hämta första värdet i avgränsad lista {#firstvalue}
 
 Den här funktionsmallen hämtar det första värdet i en avgränsad lista.
 
@@ -266,7 +266,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Hämta sista värdet i avgränsad lista
+### Hämta sista värdet i avgränsad lista {#lastvalue}
 
 Den här funktionsmallen hämtar det sista värdet i en avgränsad lista.
 
@@ -278,7 +278,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Domännamn
+### Domännamn {#domain}
 
 Den här funktionsmallen extraherar domännamnet med ett reguljärt uttryck.
 
@@ -290,7 +290,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Hämta frågesträngsparameter
+### Hämta frågesträngsparameter {#querystring}
 
 Den här funktionsmallen extraherar frågesträngsvärden.
 
@@ -302,7 +302,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Övergångsfält
+### Övergångsfält {#transition}
 
 Den här funktionsmallen övergår från ett fält till ett annat.
 
@@ -314,7 +314,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Enkel punktidentifiering
+### Enkel punktidentifiering {#botdetection}
 
 Den här funktionsmallen implementerar identifiering av ljusrobotar.
 
@@ -326,7 +326,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Avsluta länk
+### Avsluta länk {#exit}
 
 Den här funktionsmallen identifierar den senaste länken som klickats i en session.
 
@@ -338,7 +338,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Hämta länk
+### Hämta länk {#download}
 
 Den här funktionsmallen flaggar vanliga nedladdningslänkar.
 
@@ -361,7 +361,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 -->
 
-## Funktionsreferens
+## Funktionsreferens {#functionref}
 
 {{select-package}}
 
@@ -384,7 +384,7 @@ För varje funktion som stöds finns information nedan:
 
 <!-- CASE WHEN -->
 
-### Skiftläge
+### Skiftläge {#casewhen}
 
 Använder villkorliga värden som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i ett nytt härlett fält, baserat på villkorens sekvens.
 
@@ -614,7 +614,7 @@ Följande begränsningar gäller och används när värden för *markera* och *a
 
 <!-- CLASSIFY -->
 
-### Klassificera
+### Klassificera {#classify}
 
 Definierar en uppsättning värden som ersätts av motsvarande värden i ett nytt härlett fält.
 
@@ -749,7 +749,7 @@ Följande ytterligare funktioner är tillgängliga i gränssnittet Klassifiera r
 
 <!-- CONCATENATE -->
 
-### Sammanfoga
+### Sammanfoga {#concatenate}
 
 Kombinerar fältvärden till ett nytt härlett fält med definierade avgränsare.
 
@@ -826,7 +826,7 @@ Du definierar ett `Origin - Destination` härlett fält. Du använder funktionen
 +++
 
 
-### Deduplicera
+### Deduplicera {#dedup}
 
 Förhindrar att ett värde räknas flera gånger.
 
@@ -911,7 +911,7 @@ Du definierar ett nytt härlett `Tracking Code (deduplicated)`-fält. Du använd
 
 <!-- FIND AND REPLACE -->
 
-### Sök och ersätt
+### Sök och ersätt {#find-replace}
 
 Söker efter alla värden i ett markerat fält och ersätter dessa värden med ett annat värde i ett nytt härlett fält.
 
@@ -981,7 +981,7 @@ Du definierar ett `Email Marketing (updated)` härlett fält. Du använder funkt
 
 <!-- LOOKUP -->
 
-### Sök
+### Sök {#lookup}
 
 Sök efter värden med hjälp av ett fält från en uppslagsdatauppsättning och returnerar ett värde i ett nytt härlett fält eller för vidare regelbearbetning.
 
@@ -1032,7 +1032,7 @@ Du kan snabbt infoga en [!UICONTROL Lookup]-funktion i regelbyggaren som redan i
 
 <!-- LOWERCASE -->
 
-### Gemener
+### Gemener {#lowercase}
 
 Konverterar värden från ett fält till gemener och lagrar dem i ett nytt härlett fält.
 
@@ -1083,7 +1083,7 @@ Du definierar ett `Product Names` härlett fält. Du använder funktionen [!UICO
 
 <!-- MATH -->
 
-### Matematik
+### Matematik {#math}
 
 Använd enkla matematiska operatorer (lägg till, subtrahera, multiplicera, dela och höj till en potens) i numeriska fält.
 
@@ -1164,7 +1164,7 @@ Använd Math-funktionen för träffnivåbaserade beräkningar. Använd funktione
 
 <!-- MERGE FIELDS -->
 
-### Sammanfoga fält
+### Sammanfoga fält {#merge}
 
 Sammanfogar värden från två olika fält till ett nytt härlett fält.
 
@@ -1230,7 +1230,7 @@ Du måste välja samma typ av fält i en regel för att slå samman fält. Om du
 
 <!-- NEXT OR PREVIOUS -->
 
-### Nästa eller Föregående
+### Nästa eller Föregående {#next-previous}
 
 Tar ett fält som indata och löser nästa eller föregående värde för det fältet inom sessionens eller användningens omfattning. Detta gäller endast fälten i tabellerna Besök och Händelse.
 
@@ -1302,7 +1302,7 @@ Du kan bara markera fält som tillhör tabellen Besök eller Händelse.
 
 <!-- REGEX REPLACE -->
 
-### Regex Replace
+### Regex Replace {#regex-replace}
 
 Ersätter ett värde från ett fält med ett reguljärt uttryck i ett nytt härlett fält.
 
@@ -1399,7 +1399,7 @@ Du kan använda de här sekvenserna i [!UICONTROL Output format] hur många gån
 
 <!-- SPLIT -->
 
-### Dela
+### Dela {#split}
 
 Delar ett värde från ett fält i ett nytt härlett fält.
 
@@ -1491,7 +1491,7 @@ Du skapar ett `Second Response` härlett fält som ska ta det senaste värdet fr
 
 <!-- SUMMARIZE -->
 
-### Sammanfatta
+### Sammanfatta {#summarize}
 
 Tillämpar aggregeringsfunktioner på mått och mått på händelse-, sessions- och användarnivå.
 
