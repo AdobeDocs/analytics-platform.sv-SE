@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: fb2a24d6f7a93e941a76db0d10c515381c476c31
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -94,16 +94,25 @@ Resans arbetsyta ger djupgående, grundliga analyser som inte är möjliga i Jou
 
 Att använda Journey Canvas för att analysera resor som skapats i Journey Optimizer ger flera fördelar:
 
-| Funktion | Fördelar |
-|---------|----------|
-| **Skapa händelser** | Skapa enkelt händelser genom att använda valfria mått, mätvärden eller filter för Customer Journey Analytics. <p>I Journey Optimizer måste en teknisk användare skapa en händelse innan den kan läggas till på en resa.</p> |
-| **Skapa målgrupper från anpassade noder** | Skapa målgrupper baserat på en anpassad nod som du skapar på resan inom visualiseringen av arbetsytan på resan. (Startar målgruppsverktyget i Customer Journey Analytics.) <p>I Journey Optimizer kan du bara skapa målgrupper för fördefinierade aktiviteter.</p> |
-| **Genomströmning och utfall** | B3 |
-| **Dela upp händelser** | B3 |
-| **Byt namn på händelser** | B3 |
-| **Ta bort händelser** | B3 |
-| **Kombinera händelser** | B3 |
-| **Anslut händelser** | B3 |
+* Skapa händelser genom att använda mått, mätvärden, filter eller datumintervall i Customer Journey Analytics.
+
+  I Journey Optimizer måste en teknisk användare skapa en händelse innan den kan läggas till på en resa.
+
+* Skapa målgrupper baserat på en anpassad nod som du skapar (startar målgruppsverktyget i Customer Journey Analytics).
+
+  I Journey Optimizer kan du bara skapa målgrupper för fördefinierade aktiviteter.
+
+* Analysera genomgång och utfall
+
+* Dela upp händelser oavsett dimension
+
+* Kombinera händelser
+
+* Connect-händelser
+
+* Byta namn på och ta bort händelser
+
+* Mycket mer
 
 ### Synkronisering mellan Journey Optimizer och arbetsytan på resan
 
@@ -144,8 +153,6 @@ Vissa termer som betyder något i Journey Optimizer betyder något annat i Custo
 | Term | Reseduk | Journey Optimizer |
 |---------|----------|---------|
 | **Händelse** | En av flera standardvärden som är tillgängliga i Customer Journey Analytics. Det här måttet räknar t.ex. intäkter, prenumerationer eller genererade leads. | Den aktivitetskategori som utlöser en personaliserad resa, till exempel ett onlineköp. |
-| A2 | B2 | C2 |
-| A3 | B3 | C3 |
 
 ### Analysera en Journey Optimizer-resa på arbetsytan i Journey
 
