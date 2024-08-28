@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: e0cf556a094726edbee35b21bf71d5d1f227fcc7
+source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Läs mer om [integreringen mellan Adobe Customer Journey Analytics och Adobe Tar
 
 Experimentationspanelen kan användas av alla Customer Journey Analytics-användare. Inga administratörsrättigheter eller andra behörigheter krävs. Installationen (steg 1 och 2 nedan) kräver åtgärder som bara administratörer kan utföra.
 
-## Nya funktioner i Beräknade värden {#functions}
+## Nya funktioner i beräknade värden {#functions}
 
 Två nya avancerade funktioner lades till: [!UICONTROL Lift] och [!UICONTROL Confidence]. Mer information finns i [Referens - avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md).
 
@@ -44,32 +44,33 @@ I datavyn som innehåller experimentella data väljer du två dimensioner, en me
 
 Utan dessa etiketter fungerar inte Experimentpanelen eftersom det inte finns några experiment att arbeta med.
 
-## Steg 3: Konfigurera panelen Experimentera {#configure}
+## Steg 3: Konfigurera panelen Experimentation {#configure}
 
-1. I Customer Journey Analytics Workspace drar du panelen Experimentation till ett projekt.
+1. I Analysis Workspace i Customer Journey Analytics lägger du till panelen Experimentation i ett projekt. Mer information om hur du lägger till paneler i ett projekt finns i [Lägga till paneler i projektet](/help/analysis-workspace/build-workspace-project/create-projects.md#add-panels-to-the-project) i [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md).
 
-![Experimenteringspanelen har dragits till ett projekt.](assets/experiment.png)
+   ![Experimenteringspanelen har dragits till ett projekt.](assets/experiment.png)
 
->[!IMPORTANT]
->
->Om den nödvändiga konfigurationen i datavyer i Customer Journey Analytics inte har slutförts får du det här meddelandet innan du kan fortsätta: [!UICONTROL Please configure the experiment and variant dimensions in Data Views].
->
+   >[!IMPORTANT]
+   >
+   >Om den nödvändiga konfigurationen i datavyer i Customer Journey Analytics inte har slutförts får du det här meddelandet innan du kan fortsätta: [!UICONTROL Please configure the experiment and variant dimensions in Data Views].
+   >
 
 1. Konfigurera panelens indatainställningar.
 
    | Inställning | Definition |
    | --- | --- |
    | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har markerats med etiketten **[!UICONTROL Experiment]** i datavyer och de tre senaste månadernas experimentdata. |
-   | **[!UICONTROL Control Variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketten **[!UICONTROL Variant]** i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
-   | **[!UICONTROL Success Metrics]** | Mätvärden eller mätvärden som en användare jämför varianter med. Den variant som har det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som den&quot;bästa varianten&quot; i ett experiment. Du kan lägga till upp till 5 mätvärden. |
-   | **[!UICONTROL Normalizing Metric]** | Basen ([!UICONTROL People], [!UICONTROL Sessions] eller [!UICONTROL Events]) som ett test körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som **[!UICONTROL Conversions per session]** eller **[!UICONTROL Conversions per person]**. |
+   | **[!UICONTROL Control variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketten **[!UICONTROL Variant]** i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
+   | **[!UICONTROL Success metrics]** | Mätvärden eller mätvärden som en användare jämför varianter med. Den variant som har det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som den&quot;bästa varianten&quot; i ett experiment. Du kan lägga till upp till 5 mätvärden. <p>Beräknade mätvärden som uppfyller de nödvändiga kriterierna kan också användas. Mer information finns i [Använd beräknade värden på panelen Experimentation](#use-calculated-metrics-in-the-experimentation-panel).</p> |
+   | **[!UICONTROL Normalizing metric]** | Basen ([!UICONTROL People], [!UICONTROL Sessions] eller [!UICONTROL Events]) som ett test körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som **[!UICONTROL Conversions per session]** eller **[!UICONTROL Conversions per person]**. |
+   | [!UICONTROL **Inkludera övre/nedre gräns för förtroende**] |  |
    | **[!UICONTROL Date Range]** | Datumintervallet anges automatiskt baserat på den första händelsen som togs emot i Customer Journey Analytics för det valda experimentet. Du kan begränsa eller utöka datumintervallet till en mer specifik tidsram om det behövs. |
 
-1. Klicka på **[!UICONTROL Build]**.
+1. Välj **[!UICONTROL Build]**.
 
 ## Steg 4: Visa panelutdata {#view}
 
-Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att klicka på redigeringspennan längst upp till höger.
+Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att välja redigeringspennan längst upp till höger.
 
 Du får också en textsammanfattning som anger om experimentet är slutgiltigt eller inte och som sammanfattar resultatet. Slutsatsen baseras på statistisk signifikans. (Se Statistisk metod nedan.) Du kan se sammanfattningsnummer för den mest högpresterande varianten med högsta lyft och självförtroende.
 
@@ -113,13 +114,13 @@ En 95-procentig konfidenssekvens innehåller det &quot;sanna&quot; värdet av f�
 
 Med Customer Journey Analytics kan analytiker välja vilken dimension som helst som&quot;experiment&quot;. Men hur tolkar man en analys där den dimension som väljs som försöksprodukt inte är en som är slumpmässig?
 
-Ta till exempel en annons som en person ser. Du kan vara intresserad av att mäta förändringen i vissa mätvärden (till exempel medelintäkter) om du bestämmer dig för att visa personer&quot;och B&quot; i stället för&quot;och A&quot;. Orsakseffekten av att visa annonser B i stället för annons A är av central betydelse för att fatta ett beslut om marknadsföring. Denna orsakseffekt kan mätas som de genomsnittliga intäkterna för hela befolkningen, om ni ersatte status quo för att visa och A med den alternativa strategin att visa och B.
+Ta till exempel en annons som en person ser. Du kan vara intresserad av att mäta förändringen i vissa mätvärden (till exempel medelintäkter) om du bestämmer dig för att visa personer&quot;och B&quot; i stället för&quot;och A&quot;. Orsakseffekten av att visa annonser B i stället för annons A är av central betydelse för att fatta ett beslut om marknadsföring. Denna orsakseffekt kan mätas som den genomsnittliga intäkten för hela populationen, om du ersatte status quo för att visa och A med den alternativa strategin att visa och B.
 
 A/B-tester är den guldbaserade standarden inom branschen för att objektivt mäta effekterna av sådana ingrepp. Den kritiska orsaken till varför ett A/B-test ger upphov till en uppskattning av orsakssamband beror på slumpgenereringen av personer för att få en av de möjliga varianterna.
 
 Tänk på en dimension som inte uppnås genom slumpgenerering, till exempel USA:s tillstånd för personen. Låt oss säga att personer främst kommer från två delstater, New York och Kalifornien. De genomsnittliga intäkterna från försäljningen av ett vinterklädmärke kan vara olika i de två delstaterna på grund av skillnaderna i det regionala vädret. I en sådan situation kan vädret vara den verkliga orsaken till försäljningen av kläder på vintern, och inte det faktum att personernas geografiska läge är olika.
 
-Experimenteringspanelen i Customer Journey Analytics gör att du kan analysera data som genomsnittliga intäktsskillnader mellan personlägena. I en sådan situation har produktionen ingen orsaksmässig tolkning. En sådan analys kan dock fortfarande vara av intresse. Den ger en uppskattning (tillsammans med mått på osäkerhet) av skillnaden i de genomsnittliga intäkterna för delstaterna.  Detta värde kallas även för &quot;Statistisk hypotestestning&quot;. Resultatet av den här analysen kan vara intressant, men inte nödvändigtvis åtgärdbart, eftersom du inte har gjort det och ibland inte kan göra personer slumpmässiga till ett av dimensionens möjliga värden.
+På panelen Experimentation i Customer Journey Analytics kan du analysera data som genomsnittliga intäktsskillnader mellan personlägena. I en sådan situation har produktionen ingen orsaksmässig tolkning. En sådan analys kan dock fortfarande vara av intresse. Den ger en uppskattning (tillsammans med mått på osäkerhet) av skillnaden i de genomsnittliga intäkterna för delstaterna.  Detta värde kallas även för &quot;Statistisk hypotestestning&quot;. Resultatet av den här analysen kan vara intressant, men inte nödvändigtvis åtgärdbart, eftersom du inte har gjort det och ibland inte kan göra personer slumpmässiga till ett av dimensionens möjliga värden.
 
 Följande bild kontrasterar dessa situationer:
 
@@ -127,6 +128,26 @@ Följande bild kontrasterar dessa situationer:
 
 När du vill mäta effekten av intervention X på resultatet Y, är det möjligt att den verkliga orsaken till båda är den förvirrande faktorn C. Om data inte uppnås genom slumpgenerering av personer på X är effekten svårare att mäta, och analysen redogör uttryckligen för C. Slumpmässigt bryter X beroendet av C, vilket gör att vi kan mäta X:s effekt på Y utan att behöva oroa oss för andra variabler.
 
-## Använda beräknade värden på panelen Experimentera
+## Använd beräknade mätvärden i experimenterande {#use-in-experimentation}
+
+>[!NOTE]
+>
+>För organisationer som använder både Customer Journey Analytics och Adobe Journey Optimizer gäller informationen i det här avsnittet även för experimentfunktioner i Journey Optimizer.
+
+
+Alla beräknade värden är inte kompatibla med panelen Experimentation.
+
+Beräknade mått som innehåller någon av följande mått eller konstanter är inte kompatibla med panelen Experimentation:
+
+* Basvärden från en sammanfattningsdatauppsättning <!--add link to Rob's "Summary data" doc when it's published -->
+* Basvärden som delas av varandra eller multipliceras tillsammans (till exempel `Revenue`/`Orders`)
+* Konstanter som har lagts till eller subtraherats från ett basmått (till exempel `Revenue+50`)
+* Något av följande basmått:
+   * Folk
+   * (vad mer?)
+
+Beräknade mätvärden som inte är kompatibla med panelen Experimentation har värdet [!UICONTROL **Everywhere i Customer Journey Analytics (utom experiment)**] i fältet [!UICONTROL **Produktkompatibilitet**] när det beräknade mätvärdet skapas. Mer information om hur du skapar beräknade mått finns i [Bygg mått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+
+## Använd härledda värden på panelen Experimentera
 
 I det här blogginlägget finns mer information om [hur du använder härledda mått på panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

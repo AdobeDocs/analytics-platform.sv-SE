@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
+source-git-commit: 91e28c2919ab5ace21ae9407ca758288370c7eca
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1112'
 ht-degree: 8%
 
 ---
@@ -143,6 +143,9 @@ ht-degree: 8%
          + [Flödesöversikt](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera en flödesvisualisering](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flerdimensionella flöden](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+      + Researbetsyta {#journey-canvas}
+         + [Översikt över arbetsytan Resa](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [Konfigurera en visualisering av en arbetsyta på resan](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [Område och område staplade](../analysis-workspace/visualizations/area.md)
       + [Stolpstreck och stapel](../analysis-workspace/visualizations/bar.md)
       + [Punktdiagram](../analysis-workspace/visualizations/bullet-graph.md)

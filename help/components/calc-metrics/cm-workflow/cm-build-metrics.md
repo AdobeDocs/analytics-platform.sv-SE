@@ -3,9 +3,9 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Bygg mått
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,18 @@ Gå till verktyget för beräknade värden för att börja skapa ett beräknat m
 
 ## Områden för verktyget för beräknade mätvärden
 
+<!-- 
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_viz_product_compatibility"
+>title="Product compatibility"
+>abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
+>"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
+>"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+
+-->
+
 I följande bild och medföljande tabell förklaras några av huvudområdena och funktionerna i verktyget för beräkning av mätvärden.
 
 ![Nytt fönster med beräknade mått som visar de huvudområden och funktioner som beskrivs i det här avsnittet.](assets/cm_builder_ui.png)
@@ -47,7 +59,7 @@ I följande bild och medföljande tabell förklaras några av huvudområdena och
 | Definition | Här drar du i mått/beräknade mått, filter och/eller funktioner för att skapa det beräknade måttet. <ul><li>Om du drar i ett beräknat mått expanderas måttdefinitionen automatiskt. </li> <li>Du kan kapsla definitioner med behållare. Till skillnad från filterbehållare fungerar dessa behållare som ett matematiskt uttryck och avgör ordningen på åtgärderna. </li> </ul> |
 | Operator | dividerat med ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) är standardoperatorn och det finns operatorerna +, - och x. |
 | Förhandsgranska | Ger en snabb läsning av eventuella fel. Förhandsvisningen täcker de senaste 90 dagarna. Det här är ett sätt att först mäta om du har valt rätt komponenter för måttet. Ett oväntat resultat skulle innebära att du måste ta en andra titt på måttdefinitionen. |
-| Produktkompatibilitet | För beräknade värden som du skapar i Customer Journey Analytics visas det här värdet alltid som [!UICONTROL **fullständigt bearbetade data**]. Beräknade mått kan bara innehålla data från händelsedatamängder. |
+| Produktkompatibilitet | Anger var i Customer Journey Analytics det här beräknade måttet kan användas. <p>Möjliga värden är:</p><ul><li>[!UICONTROL **Överallt i Customer Journey Analytics**]: Det beräknade måttet kan användas i hela Customer Journey Analytics, inklusive i Analysis Workspace, Report Builder och så vidare.</li><li>[!UICONTROL **Överallt i Customer Journey Analytics (utom experiment)**]: Det beräknade måttet kan användas i hela Customer Journey Analytics, utom på panelen Experimentation.</li> <p>Mer information om villkoren som avgör om ett beräknat mätresultat kan användas för experimenterande finns i [Använd beräknade mätvärden på panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) i [panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
 | Lägg till | För alla typer av beräknade värden kan du lägga till behållare och statiska tal i definitionen. För avancerade beräknade mätvärden kan du även lägga till filter och funktioner.<ul><li>Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas alltså före nästa åtgärd.</li><li>När du drar ett filter till en behållare filtreras allt i behållaren. (Endast avancerade beräknade mätvärden)</li><li>Du kan stapla flera filter i en behållare.</li></ul> |
 | Kugghjulsikon (Mättyp, Attribution) | Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mät- och attribueringsmodeller. <p>**Obs!** Tänk på följande när du uppdaterar en komponents attribuering till en icke-standardattribueringsmodell:</p><ul><li>**När komponenten används i en rapport med *en enda dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>**När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering behåller allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>Flera dimensioner är bara tillgängliga när [exporterar data till molnet](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).</p> |
 | Plustecken (+), ikon | Gör att du kan skapa en ny komponent, till exempel ett nytt filter (som tar dig till filterverktyget .) |

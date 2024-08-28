@@ -4,7 +4,7 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: c384c4cdd1a63fd26e6eff0ff3394a089105275c
+source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 0%
@@ -24,10 +24,12 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
    | Skapandemetod | Information |
    | --- | --- |
    | Från huvudmenyn **[!UICONTROL Components]>[!UICONTROL Audiences]** | Sidan Audiences Manager öppnas. Klicka på **[!UICONTROL Create audience]** så öppnas [!UICONTROL Audience builder]. |
-   | Från en friformstabell | Högerklicka på ett objekt i en friformstabell och välj **[!UICONTROL Create an audience from selection]**. Om du använder den här metoden fylls filtret i automatiskt med den dimension eller dimensionspost som du valde i tabellen. |
+   | Från en friformstabell | Högerklicka på ett objekt i en friformstabell och välj **[!UICONTROL Create audience from selection]**. Om du använder den här metoden fylls filtret i automatiskt med den dimension eller dimensionspost som du valde i tabellen. |
    | Från gränssnittet för att skapa/redigera filter | Markera rutan **[!UICONTROL Create an audience from this filter]**. Om du använder den här metoden fylls filtret i automatiskt. |
 
    {style="table-layout:auto"}
+
+   <!-- add beneath the Freeform table row above: | From within a Journey canvas visualization | Right-click a node in a Journey canvas visualization and select **[!UICONTROL Create audience]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. | -->
 
 1. Bygg publiken.
 

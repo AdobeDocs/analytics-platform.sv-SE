@@ -5,9 +5,9 @@ title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Punktdiagram](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Bullet icon](assets/Smock_GraphBullet_18_N.svg)</p> | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
 | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Kohortabellsikon](assets/Smock_TextNumbered_18_N.svg)</p> | En *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
 | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) <p>![Ringformsikon](assets/Smock_GraphDonut_18_N.svg)</p> | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller filter av en helhet. |
-| [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Utfallsikon](assets/Smock_ConversionFunnel_18_N.svg)</p> | Utfallsrapporter visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Kan anges till sekvenser av typen slutlig eller exakt |
+| [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Utfallsikon](assets/Smock_ConversionFunnel_18_N.svg)</p> | <!-- Similar to Journey canvas, -->Bortfallsvisualiseringar visar var personer slutade (faller bort) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Utfallsvisualiseringar kan ställas in på sekvenser av typen&quot;eventual&quot; eller&quot;exact&quot;. <p><!-- Unlike Journey canvas, -->Utfallsvisualiseringar ger endast analyser för linjära resor med en enda känd början och slut.</p> |
 | [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Flödesikon](assets/flow-icon.png)</p> | Visar exakta kundvägar via era webbplatser och appar. |
 | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Ikon för frihandstabell](assets/Smock_ViewTable_18_N.svg)</p> | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. Det är grunden för dataanalys i Workspace. |
 | [Histogram](/help/analysis-workspace/visualizations/histogram.md)<p>![Histogramikon](assets/Smock_GraphHistogram_18_N.svg)</p> | Ett histogram spänner över personer, besök eller händelser i grupper baserat på en mätvolym. |
@@ -39,6 +39,8 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Text](/help/analysis-workspace/visualizations/text.md)<p>![Ikonen Scatterplot](assets/Smock_Text_18_N.svg)</p> | Gör att du kan lägga till användardefinierad text i din Workspace. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
 | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap-ikon](assets/Smock_GraphTree_18_N.svg)</p> | Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Vennikon](assets/venn-icon.png)</p> | Använder cirklar för att beskriva måttöverlappningen för upp till 3 filter. |
+
+<!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
 ## Lägga till visualiseringar i en panel
 
