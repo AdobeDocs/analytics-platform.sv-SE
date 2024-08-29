@@ -5,7 +5,8 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
@@ -14,9 +15,11 @@ ht-degree: 0%
 
 # Översikt över arbetsytan Resa
 
+{{release-limited-testing}}
+
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder. Du kan definiera en resa från scratch eller visa en resa från Journey Optimizer och sedan se hur människor lämnade (föll ut) eller fortsatte igenom (föll igenom) resan.
 
-Du kan skapa analyser av användarresor genom att använda valfri kombination av händelser, dimensionsposter, filter och datumintervall för att skapa resednoder. Koppla ihop noderna för att skapa resans flöde och inkludera flera vägar och beslutspunkter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Datauppdateringar i realtid när du gör ändringar.
+Du kan [skapa analyser av användarresor](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) genom att använda valfri kombination av händelser, dimensionsobjekt, filter och datumintervall för att skapa resednoder. Koppla ihop noderna för att skapa resans flöde och inkludera flera vägar och beslutspunkter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Datauppdateringar i realtid när du gör ändringar.
 
 ## Viktiga funktioner
 
@@ -161,5 +164,3 @@ Mer information om hur du analyserar en Journey Optimizer-resa på en arbetsyta 
 ## Skapa analyser på arbetsytan i Journey
 
 Ni kan skapa analyser på arbetsytan i Journey som baseras på de dimensioner och mätvärden som finns i Analysis Workspace. Eller så kan du analysera resor som gjorts i Journey Optimizer. Mer information finns i [Konfigurera en visualisering av en arbetsyta på resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-
-

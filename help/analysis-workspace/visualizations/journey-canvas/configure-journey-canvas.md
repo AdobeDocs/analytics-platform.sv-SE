@@ -5,14 +5,17 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: 53984934-6fba-4f15-aeeb-d91039260553
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4276'
 ht-degree: 0%
 
 ---
 
 # Konfigurera en visualisering av en arbetsyta på resan
+
+{{release-limited-testing}}
 
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder.
 
@@ -78,9 +81,9 @@ Du måste [börja skapa en visualisering av en arbetsyta på resan](#begin-build
    | Inställning | Funktion |
    |---------|----------|
    | [!UICONTROL **Nodtyp**] | Gör att du kan konfigurera vilka nodtyper som visas i visualiseringen. Om du vill dölja en nodtyp i visualiseringen markerar du (x) bredvid nodtypen eller avmarkerar den i listrutan. Om du vill visa en dold nodtyp väljer du den i listrutan. <p>Beroende på innehållet i din visualisering kan följande typer av noder förekomma:</p><ul><li>[!UICONTROL **Lässegment**]</li><li>[!UICONTROL **Slut**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mått**]</li></ul><p>**Obs!** Tänk på följande när du använder det här fältet:</p><ul><li>Det här alternativet visas bara när Journey Optimizer-data identifieras i den datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</li><li>När du har ändrat en Journey Optimizer-resa på en arbetsyta för resan är det här alternativet inte längre tillgängligt. Mer information finns i [Visuella skillnader efter att en resa på arbetsytan för en resa har ändrats](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
-   | [!UICONTROL **Procentvärde**] | Välj bland följande alternativ: <ul><li>[!UICONTROL **Procent av totalt**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall.</li><li>[!UICONTROL **Procent av startnod**]: Procentandel av alla personer som ingår i startnoden.<p>Det här alternativet är bara tillgängligt om du har en enda startnod. Den är dold om du har flera startnoder.</p></li></ul> |
+   | [!UICONTROL **Procentvärde**] | Välj bland följande alternativ: <ul><li>[!UICONTROL **Procent av totalt**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall.</li><li>[!UICONTROL **Procent av startnod**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall och som också uppfyller villkoren för kundens startnod. (Det här alternativet är endast tillgängligt på resor med en enda startnod. Det är inaktiverat på resor med flera startnoder. En startnod definieras som en nod som inte har någon anslutning som kommer in i den.)</li></ul> |
    | [!UICONTROL **Pilinställningar**] | Välj bland följande alternativ:<ul><li>[!UICONTROL **Ingen**]: </li><li>[!UICONTROL **Villkor**]: </li><li>[!UICONTROL **Alla etiketter**]: </li></ul><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i datavyn som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
-   | [!UICONTROL **Visa utfall**] | Visa utfallsdata för varje nod, med antalet och procentandelen personer som lämnat resan på en viss nod. |
+   | [!UICONTROL **Visa utfall**] | Visa utfallsdata för varje nod. Detta visar antalet och procentandelen personer som avbrutit resan vid en viss nod. <p>Personer som faller bort från resan kan ha utfört andra åtgärder på webbplatsen, men de uppfyller aldrig kriterierna för nästa nod på resan.</p> |
 
 1. Fortsätt med [Lägg till en nod](#add-a-node).
 
@@ -92,7 +95,7 @@ Så här lägger du till en nod i en visualisering av en arbetsyta:
 
 1. Öppna en befintlig visualisering av en arbetsyta för resan i Analysis Workspace eller [börja skapa en ny](#begin-building-a-journey-canvas-visualization).
 
-1. Dra mått, dimensioner, dimensionsobjekt, filter eller datumintervall från den vänstra listen till arbetsytan. Beräknade mått stöds inte. Dessutom stöds inte mått eller dimensioner som är baserade på en [sammanfattningsdatauppsättning](/help/data-views/summary-data.md).
+1. Dra mått, dimensioner, dimensionsobjekt, filter eller datumintervall från den vänstra listen till arbetsytan. Mätvärden som baseras på ett [härlett fält](/help/data-views/derived-fields/derived-fields.md) stöds. Beräknade mått, liksom alla mått och mått som baseras på en [sammanfattningsdatamängd](/help/data-views/summary-data.md), stöds inte.
 
    Du kan markera flera komponenter i den vänstra listen genom att hålla ned Skift eller genom att hålla ned Kommando (Mac) eller Ctrl (Windows).
 
@@ -221,15 +224,25 @@ Den logik som tillämpas på noder när de kombineras varierar beroende på vilk
 
 Du kan ansluta noder som redan finns på arbetsytan eller ansluta en nod när du lägger till den på arbetsytan.
 
+#### Pilar mellan noder
+
+Noderna ansluts av en pil. Både pilens riktning och bredd har betydelse:
+
+* **Riktning**: Anger sekvensen med händelser för resan
+
+* **Bredd**: Anger procentvolym från en nod till en annan
+
 #### Logisk vid anslutning av noder
 
 När du ansluter noder på en arbetsyta i Journey ansluts de med hjälp av operatorn THEN. Detta kallas även [sekventiell filtrering](/help/components/filters/seg-sequential-build.md).
+
+Noderna är sammankopplade som en&quot;slutgiltig sökväg&quot;, vilket innebär att besökare räknas så länge de så småningom går från en nod till en annan, oavsett händelser som inträffar mellan de två noderna.
 
 Du kan visa logiken för anslutna noder genom att högerklicka på noden och sedan välja [!UICONTROL **Skapa filter från nod**]. Logiken visas i avsnittet [!UICONTROL **Definition**].
 
 #### Anslut befintliga noder
 
-Pilen mellan noderna på Resans arbetsyta avgör sekvensen av händelser under resan.
+Resorna kan inte vara cirkelformade, de måste gå tillbaka till tidigare anslutna noder.
 
 Så här ansluter du noder på arbetsytan Resor:
 
@@ -239,7 +252,7 @@ Så här ansluter du noder på arbetsytan Resor:
 
 1. Dra någon av de fyra blå punkterna till någon av de fyra sidorna i noden som du vill ansluta till.
 
-   En pil visas som förbinder de två noderna. Pilen anger i vilken riktning människor rör sig genom resan.
+   En pil visas som förbinder de två noderna. Mer information finns i [Pilar mellan noder](#arrows-between-nodes).
 
 #### Anslut noder när du lägger till en nod
 
@@ -249,7 +262,7 @@ Mer information finns i [Lägg till en nod](#add-a-node).
 
 ### Ändra färgen på en nod eller pil
 
-Du kan ändra färgen på en nod eller pil på arbetsytan.
+Du kan anpassa en resa visuellt genom att ändra färgen på en nod eller pil på arbetsytan. Du kan till exempel justera en färg för att ange en önskvärd eller oönskad händelse.
 
 Alternativet att ändra färgen är tillgängligt för följande objekt på arbetsytan:
 
@@ -339,7 +352,7 @@ Så här skapar du en publik:
 
 ### Visa trenddata
 
-Du kan visa trenddata i ett linjediagram för objekt på arbetsytan på resan. &lt;!—, med vissa färdiga avvikelseidentifieringsdata (det här är definitionen i Utfall)>
+Du kan visa trenddata i ett linjediagram för objekt på arbetsytan på resan. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 Alternativet att trender är tillgängligt för följande objekt på arbetsytan:
 
@@ -474,4 +487,3 @@ Så här tar du bort pilar mellan noder på arbetsytan för Resor:
 Öppna den resa du vill analysera på arbetsytan i Journey Optimizer.
 
 1. Välj [!UICONTROL **Analysera i CJA**]. <!-- ?? -->
-
