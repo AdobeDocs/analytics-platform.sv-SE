@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 79efab0baf9c44603a7aad7383f42a9d9c0b63cb
+source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2901'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Sekretessetiketter och integritetspolicyer som har skapats för datauppsättning
 Följande ytterligare standardvärden och begränsningar gäller av datastyrningsskäl.
 
 * BI-tillägget kräver en radgräns för frågeresultaten. Standardvärdet är 50, men du kan åsidosätta detta i SQL med `LIMIT n`, där `n` är 1 - 50000.
-* BI-tillägget kräver ett datumintervall för att begränsa de rader som används för beräkningar. Standardvärdet är de senaste 30 dagarna, men du kan åsidosätta detta i SQL `WHERE`-satsen med hjälp av de särskilda [`timestamp`](#timestamp)- eller [`daterange`](#date-range)-kolumnerna (se ytterligare dokumentation).
+* BI-tillägget kräver ett datumintervall för att begränsa de rader som används för beräkningar. Standardvärdet är de sista 30 dagarna, men du kan åsidosätta detta i SQL `WHERE`-satsen med hjälp av de särskilda [`timestamp`](#timestamp)- eller [`daterange`](#date-range)-kolumnerna.
 * BI-tillägget kräver aggregerade frågor. Du kan inte använda SQL som `SELECT * FROM ...` för att hämta de underliggande raderna i Raw-format. På en hög nivå bör dina sammanställda frågor använda:
    * Välj summor med `SUM` och/eller `COUNT`.<br/> Till exempel `SELECT SUM(metric1), COUNT(*) FROM ...`
    * Välj mått uppdelade efter dimension. <br/>Exempel: `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
