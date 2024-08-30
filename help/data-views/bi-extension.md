@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 483f74408cfb81f2cbbbb25df9402aa829be09b1
+source-git-commit: 79efab0baf9c44603a7aad7383f42a9d9c0b63cb
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2904'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,19 @@ De datastyrningsrelaterade inställningarna i Customer Journey Analytics ärvs f
 
 Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Data som efterfrågas med [!DNL Customer Journey Analytics BI extension] visar därför lämpliga varningar eller fel när de inte följer definierade sekretessetiketter och principer.
 
+#### Standardvärden och begränsningar
+
+Följande ytterligare standardvärden och begränsningar gäller av datastyrningsskäl.
+
+* BI-tillägget kräver en radgräns för frågeresultaten. Standardvärdet är 50, men du kan åsidosätta detta i SQL med `LIMIT n`, där `n` är 1 - 50000.
+* BI-tillägget kräver ett datumintervall för att begränsa de rader som används för beräkningar. Standardvärdet är de senaste 30 dagarna, men du kan åsidosätta detta i SQL `WHERE`-satsen med hjälp av de särskilda [`timestamp`](#timestamp)- eller [`daterange`](#date-range)-kolumnerna (se ytterligare dokumentation).
+* BI-tillägget kräver aggregerade frågor. Du kan inte använda SQL som `SELECT * FROM ...` för att hämta de underliggande raderna i Raw-format. På en hög nivå bör dina sammanställda frågor använda:
+   * Välj summor med `SUM` och/eller `COUNT`.<br/> Till exempel `SELECT SUM(metric1), COUNT(*) FROM ...`
+   * Välj mått uppdelade efter dimension. <br/>Exempel: `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+   * Välj distinkta mätvärden.<br/>Exempel: `SELECT DISTINCT dimension1 FROM ...`
+
+     Mer information finns i [SQL](#supported-sql) som stöds.
+
 ### Visa datavyer
 
 I standard-PostgreSQL CLI kan du visa dina vyer med `\dv`
@@ -310,7 +323,7 @@ Specialkolumnen `daterangeName` kan användas för att filtrera frågan med ett 
 >[!NOTE]
 >
 >Power BI stöder inte `daterange`-mått som är mindre än en dag (timme, 30 minuter, 5 minuter osv.).
-
+>
 
 #### Filter-ID
 
