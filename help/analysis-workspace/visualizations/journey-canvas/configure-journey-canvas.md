@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: '4359'
 ht-degree: 0%
 
 ---
@@ -65,16 +65,20 @@ Se [Översikt över arbetsytan på resan](/help/analysis-workspace/visualization
 
    <!-- add screen shot -->
 
-1. Oavsett om du skapar en ny analys från en tom arbetsyta eller analyserar en Journey Optimizer-resa, kan du konfigurera resan så som beskrivs i [Konfigurera en visualisering av en arbetsyta ](#begin-building-a-journey-canvas-visualization).
+1. Oavsett om du skapar en ny analys från en tom arbetsyta eller analyserar en Journey Optimizer-resa kan du konfigurera resan enligt beskrivningen i [Konfigurera visualiseringsinställningar](#configure-visualization-settings).
 
 
-## Konfigurera en visualisering av en arbetsyta på resan
+## Konfigurera visualiseringsinställningar
 
-Du måste [börja skapa en visualisering av en arbetsyta på resan](#begin-building-a-journey-canvas-visualization) innan du kan konfigurera den enligt beskrivningen i följande avsnitt.
+Det finns olika konfigurationsalternativ i arbetsytehuvudet på resan.
 
-### Konfigurera inställningar
+Så här konfigurerar du inställningar för visualisering av arbetsytan på resan:
 
 1. Öppna en befintlig visualisering av en arbetsyta för resan i Analysis Workspace eller [börja skapa en ny](#begin-building-a-journey-canvas-visualization).
+
+   Alternativ som gör att du kan konfigurera visualiseringen av arbetsytan på resan finns i rubriken:
+
+   ![Sidhuvudsalternativ för resans arbetsyta](assets/journey-canvas-header.png)
 
 1. Konfigurera någon av följande inställningar som visas högst upp i visualiseringen:
 
@@ -83,15 +87,17 @@ Du måste [börja skapa en visualisering av en arbetsyta på resan](#begin-build
    | [!UICONTROL **Nodtyp**] | Gör att du kan konfigurera vilka nodtyper som visas i visualiseringen. Om du vill dölja en nodtyp i visualiseringen markerar du (x) bredvid nodtypen eller avmarkerar den i listrutan. Om du vill visa en dold nodtyp väljer du den i listrutan. <p>Beroende på innehållet i din visualisering kan följande typer av noder förekomma:</p><ul><li>[!UICONTROL **Lässegment**]</li><li>[!UICONTROL **Slut**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mått**]</li></ul><p>**Obs!** Tänk på följande när du använder det här fältet:</p><ul><li>Det här alternativet visas bara när Journey Optimizer-data identifieras i den datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</li><li>När du har ändrat en Journey Optimizer-resa på en arbetsyta för resan är det här alternativet inte längre tillgängligt. Mer information finns i [Visuella skillnader efter att en resa på arbetsytan för en resa har ändrats](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
    | [!UICONTROL **Procentvärde**] | Välj bland följande alternativ: <ul><li>[!UICONTROL **Procent av totalt**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall.</li><li>[!UICONTROL **Procent av startnod**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall och som också uppfyller villkoren för kundens startnod. (Det här alternativet är endast tillgängligt på resor med en enda startnod. Det är inaktiverat på resor med flera startnoder. En startnod definieras som en nod som inte har någon anslutning som kommer in i den.)</li></ul> |
    | [!UICONTROL **Pilinställningar**] | Välj bland följande alternativ:<ul><li>[!UICONTROL **Ingen**]: </li><li>[!UICONTROL **Villkor**]: </li><li>[!UICONTROL **Alla etiketter**]: </li></ul><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i datavyn som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
-   | [!UICONTROL **Visa utfall**] | Visa utfallsdata för varje nod. Detta visar antalet och procentandelen personer som avbrutit resan vid en viss nod. <p>Personer som faller bort från resan kan ha utfört andra åtgärder på webbplatsen, men de uppfyller aldrig kriterierna för nästa nod på resan.</p> |
+   | [!UICONTROL **Visa utfall**] | Visa utfallsdata för varje nod. Detta visar antalet och procentandelen personer som lämnade resan efter en viss nod. <p>Personer som faller bort från resan kan ha utfört andra åtgärder på webbplatsen, men de uppfyller aldrig kriterierna för nästa nod på resan.</p> |
 
-1. Fortsätt med [Lägg till en nod](#add-a-node).
+1. Fortsätt med [Lägg till noder](#add-nodes).
 
-### Lägg till en nod
+## Lägg till noder
 
-Noder i en visualisering av en arbetsyta i en resa representerar händelser eller åtgärder som rör en användarresa. Du skapar noder genom att dra Workspace-komponenter från den vänstra listen till arbetsytan.
+Noder i en visualisering av en arbetsyta i en resa representerar händelser eller åtgärder som rör en användarresa.
 
-Så här lägger du till en nod i en visualisering av en arbetsyta:
+Du skapar noder genom att dra Workspace-komponenter från den vänstra listen till arbetsytan, genom att låta arbetsytan på resan välja de översta nästa eller föregående noderna baserat på befintliga noder, eller genom att duplicera befintliga noder.
+
+### Dra komponenter från den vänstra listen
 
 1. Öppna en befintlig visualisering av en arbetsyta för resan i Analysis Workspace eller [börja skapa en ny](#begin-building-a-journey-canvas-visualization).
 
@@ -180,6 +186,24 @@ Du kan lägga till de tre viktigaste noderna som finns mellan två befintliga no
 
    De tre översta noderna läggs till mellan de två befintliga noderna och de är anslutna som separata grenar.
 
+### Duplicera noder
+
+Alternativet att duplicera är tillgängligt för följande objekt på arbetsytan:
+
+* Flera noder
+
+Så här duplicerar du noder:
+
+1. Markera flera noder som du vill duplicera.
+
+1. Högerklicka på en av de markerade noderna och välj sedan [!UICONTROL **Duplicera**].
+
+## Designa resan
+
+Nodernas ordning och anslutningarna mellan dem påverkar arbetsytans data på resande fot. Resorna ska visuellt och korrekt återspegla den händelsesekvens som du vill rapportera om.
+
+När du har lagt till noder på arbetsytan kan du ordna om dem, kombinera dem, ansluta dem och lägga till tidsbegränsningar mellan dem.
+
 ### Ordna om noder
 
 Resor på arbetsytan i resan består av ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter.
@@ -260,9 +284,30 @@ När du lägger till en nod på arbetsytan kan du placera den mellan två anslut
 
 Mer information finns i [Lägg till en nod](#add-a-node).
 
+### Lägga till en tidsbegränsning mellan noder
+
+Du kan ange en tidsbegränsning mellan noder. När en person följer den definierade resan men tar längre tid än den angivna tidsperioden att förflytta sig mellan noderna, anses de ha lämnat resan.
+
+Alternativet att lägga till en tidsbegränsning är tillgängligt för följande objekt på arbetsytan:
+
+* Pilen mellan noder
+
+Så här lägger du till en tidsbegränsning:
+
+1. Högerklicka på pilen mellan två noder och välj sedan [!UICONTROL **Lägg till tidsbegränsning**].
+
+<!-- 
+
+from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
+1. Choose from the following options: 
+
+-->
+
+## Hantera noder eller pilar
+
 ### Ändra färgen på en nod eller pil
 
-Du kan anpassa en resa visuellt genom att ändra färgen på en nod eller pil på arbetsytan. Du kan till exempel justera en färg för att ange en önskvärd eller oönskad händelse.
+Du kan anpassa en resa visuellt genom att ändra färgen på en nod eller pil på arbetsytan. Du kan till exempel justera färger för att indikera en önskvärd eller oönskad händelse.
 
 Alternativet att ändra färgen är tillgängligt för följande objekt på arbetsytan:
 
@@ -310,7 +355,7 @@ Alternativet att använda en uppdelning av data är tillgängligt för följande
 
 * Flera pilar mellan noder
 
-### Använda en uppdelning på en eller flera noder eller pilar
+#### Använda en uppdelning på en eller flera noder eller pilar
 
 1. Markera en eller flera noder där du vill dela upp och högerklicka sedan på en av de markerade noderna.
 
@@ -320,7 +365,7 @@ Alternativet att använda en uppdelning av data är tillgängligt för följande
 
 1. Välj [!UICONTROL **Uppdelning**].
 
-### Tillämpa en uppdelning på en enskild nod
+#### Tillämpa en uppdelning på en enskild nod
 
 Du kan dra en dimension från den vänstra listen till den nod på arbetsytan där du vill tillämpa nedbrytningen.
 
@@ -374,37 +419,6 @@ Så här visar du trenddata:
 
 1. Välj [!UICONTROL **Trend**].
 
-### Duplicera noder
-
-Alternativet att duplicera är tillgängligt för följande objekt på arbetsytan:
-
-* Flera noder
-
-Så här duplicerar du noder:
-
-1. Markera flera noder som du vill duplicera.
-
-1. Högerklicka på en av de markerade noderna och välj sedan [!UICONTROL **Duplicera**].
-
-
-### Lägga till en tidsbegränsning mellan noder
-
-Du kan ange en tidsbegränsning mellan noder. När en person följer den definierade resan men tar längre tid än den angivna tidsperioden att förflytta sig mellan noderna, anses de ha lämnat resan.
-
-Alternativet att lägga till en tidsbegränsning är tillgängligt för följande objekt på arbetsytan:
-
-* Pilen mellan noder
-
-Så här lägger du till en tidsbegränsning:
-
-1. Högerklicka på pilen mellan två noder och välj sedan [!UICONTROL **Lägg till tidsbegränsning**].
-
-<!-- 
-
-from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
-1. Choose from the following options: 
-
--->
 
 ### Skapa ett filter baserat på en nod eller pil
 
