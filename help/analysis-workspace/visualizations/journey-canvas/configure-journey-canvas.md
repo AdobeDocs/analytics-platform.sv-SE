@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
+source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
 workflow-type: tm+mt
-source-wordcount: '4359'
+source-wordcount: '4484'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Se [Översikt över arbetsytan på resan](/help/analysis-workspace/visualization
    |---------|----------|
    | [!UICONTROL **Primärt mått**] | Det primära måttet påverkar följande aspekter av visualiseringen av arbetsytan på resan:  <ul><li>Definierar hur människor rör sig genom resan.</li><li>Det totala antalet som visas på varje nod.<p>Om Personer till exempel är det primära måttet visar varje nod antalet personer som har nått den noden under resan.</p></li><li>Procentandelen som visas på varje nod. (När visualiseringen har skapats kan du välja att visa antingen procentandelen av totalvärdet eller startnoden.)</li><p>Om Personer till exempel är det primära måttet visar varje nod den procentandel personer som nått den noden i resan (antingen procentandelen av det totala antalet eller startnoden).</p></li><li>När en dimension läggs till i visualiseringen läggs de tre viktigaste noderna i visualiseringen till, baserat på det primära måttet.</li></ul> |
    | [!UICONTROL **Sekundärt mått**] | Det sekundära måttet är valfritt. När en nod är markerad visas följande information på varje nod under det primära måttet: <ul><li>Det totala talet<p>Om sessioner till exempel är det sekundära måttet visar varje nod antalet sessioner som nått den noden under resan.</p></li><li>Procentandelen (när visualiseringen har skapats kan du välja att visa antingen procentandelen av den totala eller startnoden.)</li><p>Om sessioner till exempel är det sekundära måttet visar varje nod hur många sessioner som nått den noden under resan (antingen procentandelen av den totala eller startnoden).</p></li></ul> |
-   | [!UICONTROL **Journey Optimizer resa**]<!-- name? --> | Välj den Journey Optimizer-resa som du vill använda som bas för din analys på arbetsytan i Journey. (Du kan också lämna det här alternativet tomt om du vill ha en tom arbetsyta som du kan använda för att skapa analyser i Analysis Workspace.)</p> <p>När du analyserar en Journey Optimizer-resa på en arbetsyta visas resan med samma ordning, sekvens och struktur som i Journey Optimizer. Mer information finns i [Analysera Journey Optimizer-resor](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) i [Översikt över arbetsytan på resan](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i datavyn som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Journey Optimizer resa**]<!-- name? --> | Välj den Journey Optimizer-resa som du vill använda som bas för din analys på arbetsytan i Journey. (Du kan också lämna det här alternativet tomt om du vill ha en tom arbetsyta som du kan använda för att skapa analyser i Analysis Workspace.)</p> <p>När du analyserar en Journey Optimizer-resa på en arbetsyta visas resan med samma ordning, sekvens och struktur som i Journey Optimizer. Mer information finns i [Analysera Journey Optimizer-resor](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) i [Översikt över arbetsytan på resan](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
 
 1. (Valfritt) Välj [!UICONTROL **Visa avancerade inställningar**] och ange sedan följande information:
 
@@ -84,10 +84,11 @@ Så här konfigurerar du inställningar för visualisering av arbetsytan på res
 
    | Inställning | Funktion |
    |---------|----------|
-   | [!UICONTROL **Nodtyp**] | Gör att du kan konfigurera vilka nodtyper som visas i visualiseringen. Om du vill dölja en nodtyp i visualiseringen markerar du (x) bredvid nodtypen eller avmarkerar den i listrutan. Om du vill visa en dold nodtyp väljer du den i listrutan. <p>Beroende på innehållet i din visualisering kan följande typer av noder förekomma:</p><ul><li>[!UICONTROL **Lässegment**]</li><li>[!UICONTROL **Slut**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mått**]</li></ul><p>**Obs!** Tänk på följande när du använder det här fältet:</p><ul><li>Det här alternativet visas bara när Journey Optimizer-data identifieras i den datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</li><li>När du har ändrat en Journey Optimizer-resa på en arbetsyta för resan är det här alternativet inte längre tillgängligt. Mer information finns i [Visuella skillnader efter att en resa på arbetsytan för en resa har ändrats](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
+   | [!UICONTROL **Nodtyp**] | Gör att du kan konfigurera vilka nodtyper som visas i visualiseringen. Om du vill dölja en nodtyp i visualiseringen markerar du (x) bredvid nodtypen eller avmarkerar den i listrutan. Om du vill visa en dold nodtyp väljer du den i listrutan. <p>Beroende på innehållet i din visualisering kan följande typer av noder förekomma:</p><ul><li>[!UICONTROL **Lässegment**]</li><li>[!UICONTROL **Slut**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mått**]</li></ul><p>**Obs!** Tänk på följande när du använder det här fältet:</p><ul><li>Det här alternativet visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</li><li>När du har ändrat en Journey Optimizer-resa på en arbetsyta för resan är det här alternativet inte längre tillgängligt. Mer information finns i [Visuella skillnader efter att en resa på arbetsytan för en resa har ändrats](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
    | [!UICONTROL **Procentvärde**] | Välj bland följande alternativ: <ul><li>[!UICONTROL **Procent av totalt**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall.</li><li>[!UICONTROL **Procent av startnod**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall och som också uppfyller villkoren för kundens startnod. (Det här alternativet är endast tillgängligt på resor med en enda startnod. Det är inaktiverat på resor med flera startnoder. En startnod definieras som en nod som inte har någon anslutning som kommer in i den.)</li></ul> |
-   | [!UICONTROL **Pilinställningar**] | Välj bland följande alternativ:<ul><li>[!UICONTROL **Ingen**]: </li><li>[!UICONTROL **Villkor**]: </li><li>[!UICONTROL **Alla etiketter**]: </li></ul><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i datavyn som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Pilinställningar**] | Välj bland följande alternativ:<ul><li>[!UICONTROL **Ingen**]: </li><li>[!UICONTROL **Villkor**]: </li><li>[!UICONTROL **Alla etiketter**]: </li></ul><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
    | [!UICONTROL **Visa utfall**] | Visa utfallsdata för varje nod. Detta visar antalet och procentandelen personer som lämnade resan efter en viss nod. <p>Personer som faller bort från resan kan ha utfört andra åtgärder på webbplatsen, men de uppfyller aldrig kriterierna för nästa nod på resan.</p> |
+   | **Zoomkontroller** | Följande zoomkontroller finns i det övre högra hörnet av arbetsytan:<ul><li>**Zooma in** ![zooma in-ikon](assets/zoom-in-icon.png): Förstorar specifika delar av visualiseringen.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Zooma ut** ![zooma ut-ikonen](assets/zoom-out-icon.png): Minskar visualiseringen för att ge mer utrymme på arbetsytan.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Anpassa skärmen** ![Ikon för att passa skärmen](assets/fill-screen-icon.png): Justerar de aktuella zoom- och panoreringsinställningarna för att fylla skärmen med fullständig visualisering.</li></ul><p>Om du vill panorera över arbetsytan när du har zoomat in eller ut klickar du med musen och drar till önskad plats.</p> |
 
 1. Fortsätt med [Lägg till noder](#add-nodes).
 
@@ -208,7 +209,9 @@ När du har lagt till noder på arbetsytan kan du ordna om dem, kombinera dem, a
 
 Resor på arbetsytan i resan består av ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter.
 
-Du kan dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det.
+Du kan dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Du kan markera flera noder genom att hålla ned Kommando (Mac) eller Ctrl (Windows).
+
+När du ändrar ordningen på noderna i resan uppdateras data i enlighet med detta.
 
 ### Kombinera noder
 
@@ -282,7 +285,7 @@ Så här ansluter du noder på arbetsytan Resor:
 
 När du lägger till en nod på arbetsytan kan du placera den mellan två anslutna noder. Noden läggs till i resan mellan de två befintliga noderna.
 
-Mer information finns i [Lägg till en nod](#add-a-node).
+Mer information finns i [Lägg till noder](#add-nodes).
 
 ### Lägga till en tidsbegränsning mellan noder
 
@@ -369,7 +372,7 @@ Alternativet att använda en uppdelning av data är tillgängligt för följande
 
 Du kan dra en dimension från den vänstra listen till den nod på arbetsytan där du vill tillämpa nedbrytningen.
 
-Mer information finns i [Lägg till en nod](#add-a-node).
+Mer information finns i [Lägg till noder](#add-nodes).
 
 ### Skapa en målgrupp
 
