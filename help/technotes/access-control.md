@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: fb106077949cc5a1a2fbaf7702bd0c872152499f
+source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Fliken **[!UICONTROL Permissions]** ingår i varje produktprofil i [Admin Consol
 
 | Kategori | Behörighet | Beskrivning |
 | --- | --- | ---|
-| [!UICONTROL Data Views] | *namnet på en datavy* | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]** kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har åtkomst till. |
+| [!UICONTROL Data Views] | *datavyns namn* | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]** kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har åtkomst till. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] | Låt användare få åtkomst till [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Låt användarna komma åt [Guidad analys](/help/guided-analysis/overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Låt användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). Användarna kan tagga, dela, ta bort, byta namn på, godkänna, avgodkänna endast de beräknade mätvärden som de skapar eller de beräknade mätvärden som delas med dem. |
