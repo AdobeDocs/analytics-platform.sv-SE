@@ -4,7 +4,7 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -148,6 +148,6 @@ Beräknade mått som innehåller någon av följande mått eller konstanter är 
 
 Beräknade mätvärden som inte är kompatibla med panelen Experimentation har värdet [!UICONTROL **Everywhere i Customer Journey Analytics (utom experiment)**] i fältet [!UICONTROL **Produktkompatibilitet**] när det beräknade mätvärdet skapas. Mer information om hur du skapar beräknade mått finns i [Bygg mått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-## Använd härledda värden på panelen Experimentera
+## Använda beräknade värden på panelen Experimentera
 
-I det här blogginlägget finns mer information om [hur du använder härledda mått på panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+I det här blogginlägget finns information om [hur du använder beräknade värden på panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

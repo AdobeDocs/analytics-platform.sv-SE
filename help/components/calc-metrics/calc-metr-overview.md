@@ -4,16 +4,16 @@ description: Lär dig mer om filtrerade mätvärden som genereras vid rapportkö
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '458'
 ht-degree: 2%
 
 ---
 
 # Översikt över beräknade mätvärden
 
-Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden. Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen.
+Beräknade och avancerade beräknade värden är anpassade mått som du kan skapa utifrån befintliga mätvärden. Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen.
 
 Du kan
 
@@ -25,7 +25,7 @@ Du kan
 
 Här följer en jämförelse av funktionerna för beräknade värden och avancerade beräknade värden:
 
-| Alternativ för verktyget Builder | Beräknade mätvärden | Avancerade beräknade (härledda) mått |
+| Alternativ för verktyget Builder | Beräknade mätvärden | Avancerade beräknade värden |
 |---|---|---|
 | Formattyper (decimal, time, percent, currency | Ja | Ja |
 | Attributionsändringar (standard, linjär, deltagande osv.) | Ja | Ja |

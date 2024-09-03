@@ -4,9 +4,9 @@ title: Sammanfattningsnummer och sammanfattning
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 3a63c22c080b0d4d4848d707c6219902de687abd
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,11 @@ Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för at
 
 ## Visualisering av sammanfattningsändring {#summary-change}
 
-Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i sammanfattningsändringen kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) eller ett beräknat metrisk värde [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) alternativ.
+Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal.
+
+<!--
+The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
+-->
 
 Den här visualiseringen fungerar på följande sätt:
 
