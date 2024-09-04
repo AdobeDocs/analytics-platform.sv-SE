@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4526'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,10 @@ Du skapar noder genom att dra Workspace-komponenter från den vänstra listen ti
 
 ### Lägg till de översta noderna baserat på befintliga noder
 
+>[!AVAILABILITY]
+>
+>Den här funktionen är inte tillgänglig än.
+
 Du kan automatiskt lägga till de översta noderna baserat på de noder som redan finns på arbetsytan.
 
 Det här alternativet är tillgängligt för följande objekt på arbetsytan:
@@ -188,6 +192,10 @@ Du kan lägga till de tre viktigaste noderna som finns mellan två befintliga no
    De tre översta noderna läggs till mellan de två befintliga noderna och de är anslutna som separata grenar.
 
 ### Duplicera noder
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är inte tillgänglig än.
 
 Alternativet att duplicera är tillgängligt för följande objekt på arbetsytan:
 
@@ -289,6 +297,10 @@ Mer information finns i [Lägg till noder](#add-nodes).
 
 ### Lägga till en tidsbegränsning mellan noder
 
+>[!AVAILABILITY]
+>
+>Den här funktionen är inte tillgänglig än.
+
 Du kan ange en tidsbegränsning mellan noder. När en person följer den definierade resan men tar längre tid än den angivna tidsperioden att förflytta sig mellan noderna, anses de ha lämnat resan.
 
 Alternativet att lägga till en tidsbegränsning är tillgängligt för följande objekt på arbetsytan:
@@ -310,6 +322,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### Ändra färgen på en nod eller pil
 
+>[!AVAILABILITY]
+>
+>Den här funktionen är inte tillgänglig än.
+
 Du kan anpassa en resa visuellt genom att ändra färgen på en nod eller pil på arbetsytan. Du kan till exempel justera färger för att indikera en önskvärd eller oönskad händelse.
 
 Alternativet att ändra färgen är tillgängligt för följande objekt på arbetsytan:
@@ -329,6 +345,10 @@ Så här ändrar du färg på en nod eller pil:
    Följande färger är tillgängliga: <!--look into this interaction and color list-->
 
 ### Byta namn på en nod eller pil
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är inte tillgänglig än.
 
 När du drar en komponent till en visualisering av en arbetsyta på resan skapas en nod med samma namn som komponentnamnet. Du kan byta namn på noden så att den bättre motsvarar det steg i resan som noden representerar.
 
@@ -359,6 +379,10 @@ Alternativet att använda en uppdelning av data är tillgängligt för följande
 * Flera pilar mellan noder
 
 #### Använda en uppdelning på en eller flera noder eller pilar
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är inte tillgänglig än.
 
 1. Markera en eller flera noder där du vill dela upp och högerklicka sedan på en av de markerade noderna.
 
@@ -400,6 +424,10 @@ Så här skapar du en publik:
 
 ### Visa trenddata
 
+>[!AVAILABILITY]
+>
+>Den här funktionen är inte tillgänglig än.
+
 Du kan visa trenddata i ett linjediagram för objekt på arbetsytan på resan. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 Alternativet att trender är tillgängligt för följande objekt på arbetsytan:
@@ -421,7 +449,6 @@ Så här visar du trenddata:
    Markera en eller flera pilar mellan två noder som du vill visa trenddata för och högerklicka sedan på en av de markerade pilarna.
 
 1. Välj [!UICONTROL **Trend**].
-
 
 ### Skapa ett filter baserat på en nod eller pil
 
