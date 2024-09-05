@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 835be84fd5f1398b88e265a21fe6f9665c758dce
+source-git-commit: 75edfb09e3d2d4673d4c7f86b53eb5a620e77cbc
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2251'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,6 @@ I följande tabell visas vilka funktioner i Adobe Analytics som stöds, stöds d
 | --- | --- |
 | Larm | Support planeras. |
 | Bidragsanalys | Support planeras. |
-| Häftning av ID med enhetsdiagram | Support planeras. |
 | Projektmallar | Support planeras. |
 | Realtidsrapportering | Support planeras. |
 | Segmentanalys | Support planeras. |
@@ -139,8 +138,8 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | Omformningar i rapporttid | [Med datavyer](/help/data-views/data-views.md) i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde eller filtrera delmängder. Alla dessa omformningar görs på ett icke-förstörande sätt. Adobe Analytics har begränsade möjligheter genom virtuella rapportsviter och anpassad sessionslängd. |
 | BI-tillägg | Med [BI-tillägget](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) kan du ansluta CJA direkt till populära BI-visualiseringsverktyg som PowerBI eller Tableau. Genom att använda det här tillägget kan du få dina BI-rapporter att exakt matcha det du ser i Analysis Workspace och andra CJA-rapporteringsgränssnitt. Detta är ett mycket enklare sätt att få BI-rapportering för CJA utan att behöva återskapa rapporter/mätvärden från rådata. |
 | SQL-åtkomst | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
-| Stitlar | [Identitetssammanfogning](/help/stitching/overview.md) (eller helt enkelt sammanfogning) är en kraftfull funktion som höjer en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID). |
-| Obegränsade kunddimensioner och mätvärden | Customer Journey Analytics är obegränsade. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla. Dimensioner kan vara kapslade eller hierarkiska. <p>Adobe Analytics stöder däremot upp till högst 75 props och 250 eVars.</p> |
+| Stitlar | [Stitching](/help/stitching/overview.md) är en kraftfull funktion som höjer en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID). |
+| Obegränsade kunddimensioner och mätvärden | Customer Journey Analytics är obegränsade. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla. Dimensioner kan vara kapslade eller hierarkiska. <br/>Adobe Analytics stöder däremot upp till högst 75 props och 250 eVars. |
 | Obegränsade unika värden | Customer Journey Analytics stöder obegränsat antal unika värden eller dimensionsposter som kan rapporteras inom en dimension.<p>Det finns inga kardinalitetsbegränsningar för [för en dimension](/help/components/dimensions/high-cardinality.md), vilket gör att unika värden kan visas och räknas.</p><p>Den här metoden tar bort rapporterings- och analysbegränsningar som kan finnas med storskaliga Adobe Analytics-implementeringar, vilket resulterar i [!UICONTROL Low Traffic]-etiketter.</p><p>I Customer Journey Analytics går det att se en [!UICONTROL Uniques Exceeded]-etikett, men de förekommer mycket mindre ofta och kan minskas genom att ett filter eller segment tillämpas på data.</p> |
 
 {style="table-layout:auto"}
