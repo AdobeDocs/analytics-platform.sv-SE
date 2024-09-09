@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: c94544baf4c934b16b2fc9ce837dd41e07a3dcac
 workflow-type: tm+mt
-source-wordcount: '4526'
+source-wordcount: '5141'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Se [Översikt över arbetsytan på resan](/help/analysis-workspace/visualization
 
    eller
 
-   Lägg till en visualisering av arbetsytan på resan på något av de sätt som beskrivs i avsnittet [Lägg till visualiseringar i en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) i [Översikt över visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+   Lägg till en visualisering av en arbetsyta på resan på något av de sätt som beskrivs i avsnittet [Lägg till visualiseringar i en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) i [Översikt över visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 1. Ange följande grundläggande information:
 
@@ -84,9 +84,9 @@ Så här konfigurerar du inställningar för visualisering av arbetsytan på res
 
    | Inställning | Funktion |
    |---------|----------|
-   | [!UICONTROL **Nodtyp**] | Gör att du kan konfigurera vilka nodtyper som visas i visualiseringen. Om du vill dölja en nodtyp i visualiseringen markerar du (x) bredvid nodtypen eller avmarkerar den i listrutan. Om du vill visa en dold nodtyp väljer du den i listrutan. <p>Beroende på innehållet i din visualisering kan följande typer av noder förekomma:</p><ul><li>[!UICONTROL **Lässegment**]</li><li>[!UICONTROL **Slut**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mått**]</li></ul><p>**Obs!** Tänk på följande när du använder det här fältet:</p><ul><li>Det här alternativet visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</li><li>När du har ändrat en Journey Optimizer-resa på en arbetsyta för resan är det här alternativet inte längre tillgängligt. Mer information finns i [Visuella skillnader efter att en resa på arbetsytan för en resa har ändrats](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
-   | [!UICONTROL **Procentvärde**] | Välj bland följande alternativ: <ul><li>[!UICONTROL **Procent av totalt**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall.</li><li>[!UICONTROL **Procent av startnod**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall och som också uppfyller villkoren för kundens startnod. (Det här alternativet är endast tillgängligt på resor med en enda startnod. Det är inaktiverat på resor med flera startnoder. En startnod definieras som en nod som inte har någon anslutning som kommer in i den.)</li></ul> |
-   | [!UICONTROL **Pilinställningar**] | Välj bland följande alternativ:<ul><li>[!UICONTROL **Ingen**]: </li><li>[!UICONTROL **Villkor**]: </li><li>[!UICONTROL **Alla etiketter**]: </li></ul><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Nodtyp**] | Gör att du kan konfigurera vilka nodtyper som visas i visualiseringen. Om du vill dölja en nodtyp i visualiseringen markerar du (x) bredvid nodtypen eller avmarkerar den i listrutan. Om du vill visa en dold nodtyp väljer du den i listrutan. <p>Beroende på innehållet i din visualisering kan följande typer av noder förekomma:</p><ul><li>[!UICONTROL **Lässegment**]</li><li>[!UICONTROL **Slut**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mått**]</li></ul><p>**Obs!** Tänk på följande när du använder det här fältet:</p><ul><li>Det här alternativet visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</li><li>När du har ändrat en Journey Optimizer-resa på en arbetsyta i resan är det här alternativet inte längre tillgängligt. Mer information finns i [Visuella skillnader efter att en resa på arbetsytan för en resa har ändrats](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li><li>Noder tas inte bort från resan när du döljer dem. Mer information om hur du tar bort en nod finns i [Ta bort noder](#delete-nodes).</li></ul></p> |
+   | [!UICONTROL **Procentvärde**] | Välj bland följande alternativ: <ul><li>[!UICONTROL **Procent av totalt**]: Procentvärdet för alla personer som ingår i datavyn i panelens datumintervall.</li><li>[!UICONTROL **Procent av startnod**]: Procentandel av alla personer som ingår i datavyn i panelens datumintervall och som också uppfyller villkoren för kundens startnod. (Det här alternativet är endast tillgängligt på resor med en enda startnod. Det är inaktiverat på resor med flera startnoder. En startnod definieras som en nod som inte har någon anslutning som kommer in i den.)</li></ul> |
+   | [!UICONTROL **Pilinställningar**] | Pilarna som visas mellan noderna på arbetsytan kan innehålla egna namn, Journey Optimizer-etiketter och Journey Optimizer-villkor. Välj bland följande alternativ för att bestämma vilka som ska visas:<ul><li>[!UICONTROL **Inget**]: Inga egna namn, Journey Optimizer-etiketter eller Journey Optimizer-villkor visas på pilar på arbetsytan för Resor. </li><li>[!UICONTROL **Villkor**]: Alla villkorsetiketter som har konfigurerats i Journey Optimizer visas på pilar på arbetsytan för resan. Anpassade namn eller andra Journey Optimizer-etiketter visas inte.</li><li>[!UICONTROL **Alla etiketter**]: Om en pil innehåller ett eget namn, en etikett eller ett villkor visas den på pilen på arbetsytan för resan. Endast ett namn, en etikett eller ett villkor visas per pil i följande prioritetsordning: <ol><li>Ett anpassat namn har lagts till från arbetsytan på resan (enligt beskrivningen i [Byta namn på en nod eller pil](#rename-a-node-or-arrow))</li><li>En Journey Optimizer-etikett</li><li>Journey Optimizer-villkor</li></ol></li></ul><p>**Obs!**: Det här alternativet visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).</p> |
    | [!UICONTROL **Visa utfall**] | Visa utfallsdata för varje nod. Detta visar antalet och procentandelen personer som lämnade resan efter en viss nod. <p>Personer som faller bort från resan kan ha utfört andra åtgärder på webbplatsen, men de uppfyller aldrig kriterierna för nästa nod på resan.</p> |
    | **Zoomkontroller** | Följande zoomkontroller finns i det övre högra hörnet av arbetsytan:<ul><li>**Zooma in** ![zooma in-ikon](assets/zoom-in-icon.png): Förstorar specifika delar av visualiseringen.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Zooma ut** ![zooma ut-ikonen](assets/zoom-out-icon.png): Minskar visualiseringen för att ge mer utrymme på arbetsytan.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Anpassa skärmen** ![Ikon för att passa skärmen](assets/fill-screen-icon.png): Justerar de aktuella zoom- och panoreringsinställningarna för att fylla skärmen med fullständig visualisering.</li></ul><p>Om du vill panorera över arbetsytan när du har zoomat in eller ut klickar du med musen och drar till önskad plats.</p> |
 
@@ -114,7 +114,7 @@ Du skapar noder genom att dra Workspace-komponenter från den vänstra listen ti
    | Mått | En befintlig nod | Komponenten kombineras automatiskt med den befintliga noden. (Mer information finns i [Kombinera noder](#combine-nodes).)</p> |
    | Mått | En pil mellan två befintliga noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p> |
    | Dimension | Tomt område på arbetsytan | 3 noder skapas för de tre översta dimensionsobjekten där komponenten släpptes, utan anslutning till några befintliga noder. (**Obs!** Om bara 1 eller 2 noder visas betyder det att data endast är tillgängliga för 1 eller 2 av dimensionsobjekten. Om inga noder visas betyder det att data inte är tillgängliga för någon av dimensionsobjekten. I det här fallet kan du försöka lägga till den på en annan punkt av resan, justera visualiseringens datumintervall eller välja en annan dimension.)<p>Håll ned Skift-tangenten när du släpper dimensionen på arbetsytan för att lägga till den som en enda nod med tre dimensionsobjekt.</p><p></p> |
-   | Dimension | En befintlig nod | En uppdelning används automatiskt på noden med de fem översta dimensionsobjekten visade.<!--what happens if you hold Shift?--> |
+   | Dimension | En befintlig nod | En uppdelning används automatiskt på noden med de fem översta dimensionsobjekten visade.<!--what happens if you hold Shift?--><p>Om du vill visa detaljerna i en ny visualisering av en frihandstabell väljer du länken [!UICONTROL **Öppna i en frihandstabell**] på noden.</p> |
    | Dimension | En pil som ansluter två befintliga noder | 3 noder skapas för de tre främsta dimensionsobjekten som följer efter den första händelsen efter den första noden (för personer/sessioner som till slut kommer till den andra noden). Noderna visas mellan de två befintliga noderna där komponenten släpptes och varje nod är ansluten till båda befintliga noder. (**Obs!** Om bara 1 eller 2 noder visas betyder det att data endast är tillgängliga för 1 eller 2 av dimensionsobjekten. Om inga noder visas betyder det att data inte är tillgängliga för någon av dimensionsobjekten. I det här fallet kan du försöka lägga till den på en annan punkt av resan, justera visualiseringens datumintervall eller välja en annan dimension.)<p>Håll ned Skift-tangenten när du släpper dimensionen på arbetsytan för att lägga till den som en enda nod med tre dimensionsobjekt. (Mer information finns i [Anslut noder](#connect-nodes).)</p> |
    | Dimension | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några befintliga noder. |
    | Dimension | En befintlig nod | Komponenten kombineras automatiskt med den befintliga noden. |
@@ -122,12 +122,12 @@ Du skapar noder genom att dra Workspace-komponenter från den vänstra listen ti
    | Filter | Tomt område på arbetsytan | Noden visar var komponenten släpptes utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden omfattar summan av det primära måttet, filtrerat efter filtret som du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till filtret Dagar i ett tomt område på arbetsytan visas alla personer som har haft en händelse idag.</p> |
    | Filter | En befintlig nod | Använder filtret på den befintliga noden. |
    | Filter | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Använder filtret på den punkt på banan där komponenten släpptes.</p> |
-   | Datumintervall | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden inkluderar summan av det primära måttet, filtrerat efter det datumintervall du valde.</p> <p>Om du till exempel väljer Personer som det primära måttet för resan och sedan lägger till datumintervallet Den här månaden i ett tomt område på arbetsytan, visas alla personer som har haft en händelse under den aktuella månaden.</p> |
+   | Datumintervall | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden inkluderar summan av det primära måttet, filtrerat efter det datumintervall du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till datumintervallet Den här månaden i ett tomt område på arbetsytan, visas alla personer som har haft en händelse under den aktuella månaden.</p> |
    | Datumintervall | En befintlig nod | Använder datumintervallet på den befintliga noden. |
    | Datumintervall | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Tillämpar datumintervallet på den punkt på banan där komponenten släpptes.</p> |
-   | Flera komponenter | Ett tomt område på arbetsytan | **Om ingen av komponenterna är dimensioner:**<p>Varje komponent visas som en separat nod där komponenterna släpptes, utan anslutning till några befintliga noder.</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. </p><p>**Om någon av de komponenter du lägger till är dimensioner:**</p><p>Varje komponent visas som en separat nod där komponenterna släpptes, utan anslutning till några befintliga noder.</p><p>Endast en dimension kan läggas till åt gången, och 3 noder skapas för de tre översta dimensionsobjekten där komponenten släpptes.</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. De tre översta dimensionsobjekten kombineras med varje nod. (Mer information finns i [Kombinera noder](#combine-nodes).)</p> |
+   | Flera komponenter | Ett tomt område på arbetsytan | **Om ingen av komponenterna är dimensioner:**<p>Varje komponent visas som en separat nod där komponenterna släpptes, utan anslutning till några befintliga noder.</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. </p><p>**Om någon av de komponenter du lägger till är dimensioner:**</p><p>Varje komponent visas som en separat nod där komponenterna släpptes, utan anslutning till några befintliga noder.</p><p>Det går bara att lägga till en dimension åt gången. När dimensionen läggs till skapas 3 noder för de tre översta dimensionsobjekten där komponenten släpptes.</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. De tre översta dimensionsobjekten kombineras med varje nod. (Mer information finns i [Kombinera noder](#combine-nodes).)</p> |
    | Flera komponenter | En befintlig nod | Alla komponenter kombineras med den befintliga noden.<p>Om någon av de komponenter du lägger till är dimensioner kombineras de tre översta dimensionsobjekten med noden.</p> <p>Det går bara att lägga till en dimension åt gången.</p> |
-   | Flera komponenter | En pil som ansluter två befintliga noder | **Om ingen av komponenterna är dimensioner:**<p>Varje komponent visas som en separat nod där komponenterna släpptes och varje nod är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. (Komponenter måste vara av samma typ för att kunna kombineras till en enda nod.) (Mer information finns i [Kombinera noder](#combine-nodes).)</p><p>**Om någon av de komponenter du lägger till är dimensioner:**</p><p>Varje komponent visas som en separat nod där komponenterna släpptes och varje nod är ansluten till båda befintliga noder.</p><p>Endast en dimension kan läggas till åt gången, och 3 noder skapas för dimensionens tre främsta objekt som följer den första händelsen efter den första noden (för personer/sessioner som till slut kommer till den andra noden). Varje nod är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. De tre översta dimensionsobjekten kombineras med varje nod och varje nod är ansluten till båda befintliga noder. (Mer information finns i [Kombinera noder](#combine-nodes).)</p> |
+   | Flera komponenter | En pil som ansluter två befintliga noder | **Om ingen av komponenterna är dimensioner:**<p>Varje komponent visas som en separat nod där komponenterna släpptes och varje nod är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. (Komponenter måste vara av samma typ för att kunna kombineras till en enda nod.) (Mer information finns i [Kombinera noder](#combine-nodes).)</p><p>**Om någon av de komponenter du lägger till är dimensioner:**</p><p>Varje komponent visas som en separat nod där komponenterna släpptes och varje nod är ansluten till båda befintliga noder.</p><p>Det går bara att lägga till en dimension åt gången. När dimensionen läggs till skapas 3 noder för dimensionens tre främsta objekt som följer den första händelsen efter den första noden (för personer/sessioner som till slut kommer till den andra noden). Varje nod är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. De tre översta dimensionsobjekten kombineras med varje nod och varje nod är ansluten till båda befintliga noder. (Mer information finns i [Kombinera noder](#combine-nodes).)</p> |
 
    Noderna visas som en rektangulär ruta med följande information:
 
@@ -143,13 +143,13 @@ Du skapar noder genom att dra Workspace-komponenter från den vänstra listen ti
 
 1. Fortsätt att anpassa resan enligt beskrivningen i avsnitten nedan. Du kan ansluta noder, byta namn på noder, tillämpa uppdelningar, skapa målgrupper, lägga till tidsbegränsningar och mycket mer.
 
-### Lägg till de översta noderna baserat på befintliga noder
+### Visa de översta noderna baserat på befintliga noder
 
 >[!AVAILABILITY]
 >
 >Den här funktionen är inte tillgänglig än.
 
-Du kan automatiskt lägga till de översta noderna baserat på de noder som redan finns på arbetsytan.
+Du kan automatiskt visa de översta noderna baserat på de noder som redan finns på arbetsytan. Du kan lägga till de översta noderna på arbetsytan på resan eller visa dem i ett frihandsritbord.
 
 Det här alternativet är tillgängligt för följande objekt på arbetsytan:
 
@@ -157,39 +157,63 @@ Det här alternativet är tillgängligt för följande objekt på arbetsytan:
 
 * Pilen mellan noder
 
-#### Lägga till översta noder efter en befintlig nod
+#### Visa toppnoder efter en befintlig nod
 
-Du kan välja en nod och lägga till de tre noder som kommer efter den på resan.
+Du kan välja en nod och visa de viktigaste dimensionsobjekten som kommer efter den på resan. Du kan lägga till de tre viktigaste måttobjekten på arbetsytan på resan som separata noder, eller så kan du visa alla objekt med de översta måtten i en frihandstabell.
 
-1. Högerklicka på noden där du vill lägga till de tre noderna som kommer efter den på resan.
+1. Högerklicka på noden där du vill visa de viktigaste dimensionsobjekten som kommer efter den under resan.
 
-   Den här noden kan inte ha några befintliga noder som leder ut från den under resan.
+   Noden kan inte ha några befintliga noder som leder ut från den under resan.
 
-1. Välj [!UICONTROL **Lägg till översta noder efter den här noden**].
+1. Välj [!UICONTROL **Visa de översta noderna efter den här noden**].
 
-   De tre toppnoderna som kommer efter den här noden i resan läggs till och de ansluts till den nod du valde som en separat gren.
+1. Välj var du vill visa dimensionsobjekten:
 
-#### Lägga till översta noder före en befintlig nod
+   * [!UICONTROL **På arbetsytan på resan**]: Lägger till de tre översta noderna på arbetsytan som kommer efter den här noden på resan. Varje nod är ansluten till den nod som du valde som en separat gren på arbetsytan.
 
-Du kan lägga till de tre viktigaste noderna som kommer före en befintlig nod på resan.
+   * [!UICONTROL **I en frihandstabell**]: Skapar en frihandstabellvisualisering med alla toppdimensionsobjekt som kommer efter den här noden under resan.
 
-1. Högerklicka på noden där du vill lägga till de tre noderna som kommer före den på resan.
+1. Välj önskad dimension i listan med dimensioner.
+
+   Beroende på vad du valde i det föregående steget läggs de tre viktigaste måttobjekten till på arbetsytan som tre separata noder, eller så visas alla övre dimensionsobjekt i en frihandstabell.
+
+#### Visa toppnoder före en befintlig nod
+
+Du kan välja en nod och visa de viktigaste dimensionsobjekten som kommer före den under resan. Du kan lägga till de tre viktigaste måttobjekten på arbetsytan på resan som separata noder, eller så kan du visa alla objekt med de översta måtten i en frihandstabell.
+
+1. Högerklicka på noden där du vill visa de viktigaste dimensionsobjekten som kommer före den på resan.
 
    Den här noden kan inte ha några befintliga noder på resan.
 
-1. Välj [!UICONTROL **Lägg till översta noder före den här noden**].
+1. Välj [!UICONTROL **Visa de översta noderna före den här noden**].
 
-   De tre toppnoderna som kommer före den här noden i resan läggs till och de är anslutna till den nod som du har valt som en separat gren.
+1. Välj var du vill visa dimensionsobjekten:
 
-#### Lägga till översta noder mellan befintliga noder
+   * [!UICONTROL **På arbetsytan på resan**]: Lägger till de tre översta noderna på arbetsytan som kommer före den här noden på resan. Varje nod är ansluten till den nod som du valde som en separat gren på arbetsytan.
 
-Du kan lägga till de tre viktigaste noderna som finns mellan två befintliga noder:
+   * [!UICONTROL **I en frihandstabell**]: Skapar en frihandstabellvisualisering med alla toppdimensionsobjekt som kommer före den här noden på resan.
 
-1. Högerklicka på pilen mellan de två noderna där du vill lägga till de tre viktigaste noderna på resan.
+1. Välj önskad dimension i listan med dimensioner.
 
-1. Välj [!UICONTROL **Lägg till översta noder**].<!-- I don't think this should have the word "next" in the UI option, because it's both next and previous. It's in between. Just "Get top nodes" sounds better to me.-->
+   Beroende på vad du valde i det föregående steget läggs de tre viktigaste måttobjekten till på arbetsytan som tre separata noder, eller så visas alla övre dimensionsobjekt i en frihandstabell.
 
-   De tre översta noderna läggs till mellan de två befintliga noderna och de är anslutna som separata grenar.
+#### Visa de översta noderna mellan befintliga noder
+
+Du kan välja en pil och visa de övre dimensionsobjekten som finns mellan två befintliga noder på resan. Du kan lägga till de tre viktigaste måttobjekten på arbetsytan på resan som separata noder, eller så kan du visa alla objekt med de översta måtten i en frihandstabell.
+
+1. Högerklicka på pilen mellan de två noderna där du vill visa de översta dimensionsobjekten.
+
+1. Välj [!UICONTROL **Visa de översta noderna mellan dessa noder**].
+
+1. Välj var du vill visa dimensionsobjekten:
+
+   * [!UICONTROL **I arbetsytan på resan**]: Lägger till de tre översta noderna på arbetsytan som finns mellan de två befintliga noderna. Varje nod är ansluten till de omgivande noderna som en separat gren på arbetsytan.
+
+   * [!UICONTROL **I en frihandstabell**]: Skapar en frihandstabellvisualisering som visar alla objekt i den övre dimensionen som finns mellan de två befintliga noderna.
+
+1. Välj önskad dimension i listan med dimensioner.
+
+   Beroende på vad du valde i det föregående steget läggs de tre viktigaste måttobjekten till på arbetsytan som tre separata noder, eller så visas alla övre dimensionsobjekt i en frihandstabell.
 
 ### Duplicera noder
 
@@ -301,7 +325,7 @@ Mer information finns i [Lägg till noder](#add-nodes).
 >
 >Den här funktionen är inte tillgänglig än.
 
-Du kan ange en tidsbegränsning mellan noder. När en person följer den definierade resan men tar längre tid än den angivna tidsperioden att förflytta sig mellan noderna, anses de ha lämnat resan.
+Du kan ange en tidsbegränsning mellan noder. När en tidsbegränsning finns på plats anses människor ha lämnat resan om de följer den definierade resan men tar längre tid än den tilldelade tidsperioden att förflytta sig mellan noderna.
 
 Alternativet att lägga till en tidsbegränsning är tillgängligt för följande objekt på arbetsytan:
 
@@ -378,6 +402,16 @@ Alternativet att använda en uppdelning av data är tillgängligt för följande
 
 * Flera pilar mellan noder
 
+Tänk på följande när du använder en uppdelning:
+
+* Uppdelningar tillämpas på det primära måttet. Det sekundära måttet påverkas inte.
+
+* Att tillämpa en uppdelning påverkar inte resan. I stället visas en beskrivning av informationen för noden där den används.
+
+* Om en nod redan har en brytning ersätts den befintliga med en ny brytning.
+
+* Uppdelningsdata uppdateras om ändringar görs på en tidigare punkt under resan.
+
 #### Använda en uppdelning på en eller flera noder eller pilar
 
 >[!AVAILABILITY]
@@ -391,6 +425,14 @@ Alternativet att använda en uppdelning av data är tillgängligt för följande
    Markera en eller flera pilar mellan två noder där du vill tillämpa nedbrytningen och högerklicka sedan på en av de markerade pilarna.
 
 1. Välj [!UICONTROL **Uppdelning**].
+
+<!-- 1. Choose where you want to view the breakdown:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 #### Tillämpa en uppdelning på en enskild nod
 
@@ -410,6 +452,8 @@ Alternativet att skapa en målgrupp är tillgängligt för följande objekt på 
 
 * Flera pilar mellan noder
 
+När du skapar en publik från flera noder eller pilar förenas de med operatorn OR.
+
 Så här skapar du en publik:
 
 1. Markera en eller flera noder där du vill skapa en målgrupp och högerklicka sedan på en av de markerade noderna.
@@ -419,6 +463,14 @@ Så här skapar du en publik:
    Markera en eller flera pilar mellan två noder där du vill skapa en målgrupp och högerklicka sedan på en av de markerade pilarna.
 
 1. Välj [!UICONTROL **Skapa målgrupp**].
+
+<!-- 1. Choose where you want to create the audience:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 1. Fortsätt skapa och publicera målgruppen enligt beskrivningen i [Skapa och publicera målgrupper](/help/components/audiences/publish.md).
 
@@ -454,7 +506,7 @@ Så här visar du trenddata:
 
 Du kan skapa ett nytt filter baserat på en nod eller pil i en resa. När filtret har skapats kan du använda det var som helst i Analysis Workspace.
 
-Filter som skapas från arbetsytan i Resenstid använder [sekventiell filtrering](/help/components/filters/seg-sequential-build.md). Det innebär att filtret använder operatorn THEN för att länka ihop sekvensen av händelser (dvs. resan) som människor flödade igenom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i filtret.
+Filter som skapas från arbetsytan i Resenstid använder [sekventiell filtrering](/help/components/filters/seg-sequential-build.md). Det innebär att filtret använder operatorn THEN för att länka samman sekvensen av händelser (resan) som personer flödade genom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i filtret.
 
 Om du skapar ett filter baserat på en nod som har flera banor som flödar in i den, inkluderas alla banor i filtret. Separata banor förenas med operatorn OR.
 
