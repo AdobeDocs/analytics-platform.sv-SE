@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 91e28c2919ab5ace21ae9407ca758288370c7eca
+source-git-commit: f25c6e2bb7a9644a7356b3a1fc42a3b383d6f5e6
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 8%
 
 ---
@@ -190,6 +190,12 @@ ht-degree: 8%
       + [Prognosöversikt](../analysis-workspace/c-forecast/forecasting.md)
       + [Visa prognoser i Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistiska tekniker som används i prognostjänsten](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + Intelligenta aviseringar {#alerts}
+      + [Översikt över intelligenta aviseringar](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
+      + [Skillnader i Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [Skapa aviseringar](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
+      + [Hantera aviseringar](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
+      + [Användningsexempel](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)
