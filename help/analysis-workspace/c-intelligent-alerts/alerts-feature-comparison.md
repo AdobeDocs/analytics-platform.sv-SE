@@ -3,9 +3,9 @@ description: Se hur intelligenta aviseringar skiljer sig åt i Customer Journey 
 title: Jämförelse av smarta aviseringar mellan Customer Journey Analytics och Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: d6f800a6e3e79556026291387e984a35949b3c46
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Om du vill ta hänsyn till den här fördröjningen av inmatningstiden har avise
 
 Du kan justera standardfördröjningen på 9 timmar till valfri plats mellan 0 och 24 timmar. Om du minskar fördröjningen till under 9 timmar kan det dock innebära att du rapporterar ofullständiga data, vilket leder till felaktig varningsinformation.
 
-Mer information om hur du justerar fördröjningen och vilka faktorer du bör ta hänsyn till när du gör det finns i <!--add link -->.
+Mer information om hur du justerar fördröjningen och vilka faktorer du bör ta hänsyn till när du gör det finns i [Skapa aviseringar](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md).
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
