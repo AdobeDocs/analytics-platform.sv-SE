@@ -3,9 +3,9 @@ description: Få aviseringar när projektkomponenterna når vissa tröskelvärde
 title: Skapa varningar (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 8f866d47ef0caccb91bd0e9cb9043bb1e16e0d89
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Intelligenta aviseringar är endast tillgängliga för Adobe Analytics Prime- och Adobe Analytics Ultimate-kunder.
+>Intelligenta aviseringar är tillgängliga för alla kunder. Om du vill använda avvikelseidentifiering i intelligenta aviseringar måste du ha Customer Journey Analytics Select, Prime eller Ultimate.
 
 Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Customer Journey Analytics kan du få meddelanden direkt när onormala händelser inträffar i dina data.
 

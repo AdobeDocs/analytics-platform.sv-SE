@@ -3,14 +3,18 @@ description: Det nya systemet för intelligenta aviseringar ger mer exakt kontro
 title: Översikt över intelligenta aviseringar
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 17a7e794533c1536e362ca1fd11f45b053954c0a
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
 # Översikt över intelligenta aviseringar
+
+>[!NOTE]
+>
+>Intelligenta aviseringar är tillgängliga för alla kunder. Om du vill använda avvikelseidentifiering i intelligenta aviseringar måste du ha Customer Journey Analytics Select, Prime eller Ultimate.
 
 Med intelligenta aviseringar (eller bara &quot;aviseringar&quot;) i Customer Journey Analytics kan du få meddelanden när onormala händelser inträffar i dina data.
 
