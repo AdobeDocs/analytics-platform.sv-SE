@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
+source-git-commit: 64a05e72f512bc68cfd324ab20810ade8c0c5f66
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 
 Adobe har nyligen ändrat hur data behandlas i Customer Journey Analytics:
 
-<ul><li>Alla händelsedata med en tidsstämpel som är mindre än 24 timmar gamla direktuppspelas.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
+<ul><li>Händelsedata för"aktuell" dag direktuppspelas som livedata. Alla data med en händelsetid före 11:59:59 (23:59:59) föregående dag behandlas som en bakåtfyllnad.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
