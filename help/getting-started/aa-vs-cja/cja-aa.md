@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 33602a2c82d14463ebe4317704dbfa47b7b8ae35
+source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
 workflow-type: tm+mt
 source-wordcount: '2312'
 ht-degree: 1%
@@ -78,7 +78,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 
 | Funktion | Anteckningar |
 | --- | --- |
-| **Larm** | Processen för [att använda intelligenta aviseringar i Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md) är nästan identisk med användningen av intelligenta aviseringar i Adobe Analytics. <p>På grund av datainsamlingens tidpunkter i Customer Journey Analytics är det dock inte möjligt att få varningar per timme. I Customer Journey Analytics kan varningar konfigureras för varje dag, vecka eller månad.</p> |
+| **Larm** | Processen för [att använda intelligenta aviseringar i Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) är nästan identisk med användningen av intelligenta aviseringar i Adobe Analytics. <p>På grund av datainsamlingens tidpunkter i Customer Journey Analytics är det dock inte möjligt att få varningar per timme. I Customer Journey Analytics kan varningar konfigureras för varje dag, vecka eller månad.</p> |
 | **Analyser för mål (A4T)** | Integrationen [mellan Adobe Customer Journey Analytics och Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) ger kraftfulla analyser och tidsbesparande verktyg för optimeringsprogrammet. |
 | **Målgruppspublicering** | Stöds om licensen har erhållits med Adobe Customer Data Platform eller Journey Optimizer-produkter. [Audience Publishing](/help/components/audiences/audiences-overview.md) skickar målgrupper till kundprofilen i realtid i Experience Platform. |
 | **Klassificeringar** | Kallas nu&quot;Sök efter datauppsättningar&quot;. Klassifikationer som används i Analytics kan importeras till Experience Platform och Customer Journey Analytics med Analytics Classifications Source Connector. Uppslagsdatauppsättningar kan också överföras direkt till Experience Platform och göras tillgängliga i Customer Journey Analytics. |

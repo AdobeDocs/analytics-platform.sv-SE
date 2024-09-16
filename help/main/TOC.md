@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: f25c6e2bb7a9644a7356b3a1fc42a3b383d6f5e6
+source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1124'
 ht-degree: 8%
 
 ---
@@ -190,12 +190,6 @@ ht-degree: 8%
       + [Prognosöversikt](../analysis-workspace/c-forecast/forecasting.md)
       + [Visa prognoser i Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistiska tekniker som används i prognostjänsten](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + Intelligenta aviseringar {#alerts}
-      + [Översikt över intelligenta aviseringar](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
-      + [Skillnader i Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Skapa aviseringar](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
-      + [Hantera aviseringar](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
-      + [Användningsexempel](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)
@@ -299,6 +293,12 @@ ht-degree: 8%
       + [Hantera datumintervall](../components/date-ranges/manage.md)
       + [Skapa anpassade datumintervall](../components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
+   + Intelligenta aviseringar {#alerts}
+      + [Översikt](/help/components/c-intelligent-alerts/intellligent-alerts.md)
+      + [Skillnader i Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [Skapa](/help/components/c-intelligent-alerts/alert-builder.md)
+      + [Hantera](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [Användningsexempel](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Exporterar {#exports}
       + [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md)
