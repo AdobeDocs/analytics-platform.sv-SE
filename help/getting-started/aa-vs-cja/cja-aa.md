@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: 8017754adfde8a7d6ecea6d17138368d5430c1a6
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2311'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Inställningar för eVar beständighet** | Varor är inte längre en del av Customer Journey Analytics. Beständiga inställningar ingår nu i datavyer och är tillgängliga för alla dimensioner. Tänk på att persistence baseras på bearbetning av rapporttid, inte på bearbetning av datainsamling. Dimensioner som anges i datavyer är begränsade till högst 90 dagars beständighet och stöder inte obegränsad beständighet. |
 | **Geosegmenteringsdimensioner** | [Fullt stöd](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 | **Diagrambaserad utjämning** | Genom [Diagrambaserad Stitching](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview#graph-based-stitching) kan du utnyttja kraften i identitetsdiagrammet i [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) för att höja datauppsättningarna till den önskade identiteten. |
-| **Intelligenta aviseringar** | Processen att använda [Intelligent Alerts](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/intellligent-alerts) i Customer Journey Analytics är nästan identisk med att använda Intelligent Alerts i Adobe Analytics. Det finns dock [viktiga skillnader](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison). |
+| **Intelligenta aviseringar** | Processen att använda [Intelligent Alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md) i Customer Journey Analytics är nästan identisk med att använda Intelligent Alerts i Adobe Analytics. Det finns dock [viktiga skillnader](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison). |
 | **IP-förfalskning** | För Customer Journey Analytics-kunder som använder Analytics-källkopplingen för att fylla i data från Adobe Analytics till Customer Journey Analytics: IP-begränsningsinställningar som används i Adobe Analytics flödar igenom till Customer Journey Analytics-data. Du kan kontrollera de här inställningarna i Adobe Analytics efter behov.<p>För Customer Journey Analytics-kunder som använder Experience Platform Web SDK fylls data i direkt i Platform och Customer Journey Analytics. Du kan använda Data Prep för datainsamling i Platform för att konfigurera regler som döljer IP-adressen baserat på ditt företags krav. |
 | **Marknadskanaler** | När du använder Analytics-källkopplingen flödar Marketing Channels-data in i Customer Journey Analytics via den kopplingen. Reglerna för marknadsföringskanaler har konfigurerats i traditionella Adobe Analytics och vissa regler stöds inte. Mer information finns i [Customer Journey Analytics Marketing Channel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html). <br/>För WebSDK-implementeringar stöds regler för kanalbearbetning i rapporttid via [Härledda fält](../../data-views/derived-fields/derived-fields.md). |
 | **Merchandising-variabelbeständighet** | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
