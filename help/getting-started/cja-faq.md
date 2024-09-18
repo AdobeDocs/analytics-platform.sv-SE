@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 64a05e72f512bc68cfd324ab20810ade8c0c5f66
+source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2374'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 
 Adobe har nyligen ändrat hur data behandlas i Customer Journey Analytics:
 
-<ul><li>Händelsedata för"aktuell" dag direktuppspelas som livedata. Alla data med en händelsetid före 11:59:59 (23:59:59) föregående dag behandlas som en bakåtfyllnad.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
+<ul><li>Händelsedata för"aktuell" dag direktuppspelas som livedata. Alla data med en händelsetid före klockan 11 :59:59:00 (23:59:59) föregående dag behandlas som en bakåtfyllnad.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
@@ -150,7 +150,7 @@ Vid borttagning av data bör du tänka på sex typer av komponenter: sandlåda, 
 
 | Om du.. | Det här händer.. |
 | --- | --- |
-| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics]-anslutningar till datauppsättningar i den sandlådan. [!UICONTROL Connections] i Customer Journey Analytics som är knuten till den borttagna sandlådan tas inte bort automatiskt. |
+| Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics]-anslutningar till datauppsättningar i den sandlådan. Anslutningar, datavyer, mått och dimensioner relaterade till den här borttagna sandlådan tas också bort. | |
 | Ta bort ett schema i [!UICONTROL Adobe Experience Platform], men inte de datauppsättningar som är associerade med det här schemat | [!UICONTROL Adobe Experience Platform] tillåter inte att [!UICONTROL schemas] som har en eller flera [!UICONTROL datasets] associerade tas bort. En administratör med rätt behörighetsuppsättning kan dock ta bort datauppsättningarna först och sedan ta bort schemat. |
 | Ta bort en datamängd i datasjön [!UICONTROL Adobe Experience Platform] | Om du tar bort en datauppsättning i Adobe Experience Platform datasjön avbryts dataflödet från datauppsättningen till alla Customer Journey Analytics-anslutningar som innehåller den datauppsättningen. Alla data från den datauppsättningen tas automatiskt bort från de associerade Customer Journey Analytics-anslutningarna. |
 | Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | Kontakta kontoteamet på Adobe för att sätta igång processen för att ta bort en datauppsättning i en sparad anslutning. |
