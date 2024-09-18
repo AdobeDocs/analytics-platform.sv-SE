@@ -3,7 +3,7 @@ description: Skapa, redigera eller ta bort aviseringar.
 title: Varningshanteraren (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Du kan hantera befintliga aviseringar i Varningshanteraren. Du kan utföra olika hanteringsåtgärder för varningar, som taggning, namnbyte, borttagning med mera.
 
-Varningshanteraren är mycket strukturerad som [Filterhanteraren](/help/components/filters/manage-filters.md) och [Beräknad metrisk hanterare](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+Varningshanteraren är mycket strukturerad som [Filterhanteraren](/help/components/filters/manage-filters.md) och [Beräknad måtthanterare](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 ## Skapa aviseringar
 

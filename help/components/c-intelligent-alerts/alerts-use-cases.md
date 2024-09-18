@@ -1,18 +1,18 @@
 ---
-description: Användningsexempel för intelligenta aviseringar.
-title: Intelligenta aviseringar - användningsfall
+description: Användningsexempel för aviseringar.
+title: Varningar - användningsfall
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
-# Intelligenta aviseringar - användningsfall
+# Varningar - användningsfall
 
-Du kan skapa intelligenta aviseringar enligt beskrivningen i [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md).
+Du kan skapa aviseringar enligt beskrivningen i [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md).
 
 I följande avsnitt visas exempel på användningsområden som du kan använda när du skapar varningar.
 

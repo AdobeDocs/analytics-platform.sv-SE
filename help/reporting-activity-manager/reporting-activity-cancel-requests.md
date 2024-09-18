@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1478'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,7 @@ Programmen omfattar följande:
 * Report Builder
 * Användargränssnitt för byggare: segment, beräknade värden, anteckningar, målgrupper osv.
 * API-anrop från 2.0-API:t
-* Intelligenta aviseringar
+* Larm
 * Fullständig tabellexport
 * Dela med alla länkar
 * Guidad analys

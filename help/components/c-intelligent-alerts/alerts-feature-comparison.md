@@ -1,18 +1,18 @@
 ---
-description: Se hur intelligenta aviseringar skiljer sig åt i Customer Journey Analytics från Adobe Analytics
-title: Jämförelse av smarta aviseringar mellan Customer Journey Analytics och Adobe Analytics
+description: Läs om hur varningar skiljer sig i Customer Journey Analytics från Adobe Analytics
+title: Funktionsjämförelse för aviseringar Customer Journey Analytics och Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
-# Jämförelse av smarta aviseringar: Customer Journey Analytics och Adobe Analytics
+# Jämförelse av aviseringsfunktioner: Customer Journey Analytics och Adobe Analytics
 
-Processen att använda intelligenta aviseringar i Customer Journey Analytics är nästan identisk med att använda intelligenta aviseringar i Adobe Analytics. Det finns dock viktiga skillnader.
+Processen med att använda varningar i Customer Journey Analytics är nästan identisk med att använda varningar i Adobe Analytics. Det finns dock viktiga skillnader.
 
 I följande avsnitt beskrivs de viktigaste skillnaderna.
 
