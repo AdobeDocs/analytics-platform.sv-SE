@@ -4,9 +4,10 @@ description: Använd detaljerad information om hur man lägger in sammanfattande
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '4442'
+source-wordcount: '4609'
 ht-degree: 7%
 
 ---
@@ -487,6 +488,26 @@ För att vara säker på att du kan rapportera rätt data i Workspace vill du sk
             1. Välj dimensionen **[!UICONTROL Campaign Id]** i listan **[!UICONTROL Dimensions]**.
             1. Du ser att **[!UICONTROL Hide component in reporting]** i **[!UICONTROL Component settings]** nu är automatiskt aktiverat.
 
+      1. Skapa ett nytt härlett fält, till exempel `Campaign Name (Lookup Derived Field)`, för att säkerställa att du kan rapportera i Workspace med hjälp av dimensionen Campaign Name (Lookup) i datauppsättningen Example Lookup.
+
+         ![Härlett fält för kampanjnamn](../aa-data/../assets/summary-derived-field.png)
+
+         1. Välj **[!UICONTROL campaign_id]** för **[!UICONTROL Value]**.
+         1. Välj **[!UICONTROL Example Lookup Data Dataset]** i listrutan **[!UICONTROL Lookup dataset]**.
+         1. Välj **[!UICONTROL tracking_code]** i listrutan **[!UICONTROL Matching Key]**.
+         1. Välj **[!UICONTROL campaign_name]** i listrutan **[!UICONTROL Values to return]**.
+         1. Välj **[!UICONTROL Save]**.
+
+      1. Lägg till det nyskapade härledda fältet, **[!UICONTROL Campaign Name (Lookup Derived Field)]**, i komponentlistan för **[!UICONTROL Dimensions]**.
+
+      1. Välj dimensionen **[!UICONTROL Campaign Name (Lookup)]** i listan **[!UICONTROL Dimensions]**. I komponentpanelen:
+
+         ![Datagrupp för härledd fältsammanfattning](../assets/derived-field-summary-data-group.png)
+
+         1. Gräv upp ![SparronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
+         1. Aktivera **[!UICONTROL Create grouping]**.
+         1. Välj **[!UICONTROL Campaign Name (Lookup Derived Field)]** i listrutan **[!UICONTROL Dimension]**. Detta steg säkerställer att kampanjnamnet (Sök efter) från datauppsättningen Example Lookup kan användas på ett säkert sätt vid rapportering (se [Workspace](#workspace)).
+
       1. Välj måttet **[!UICONTROL Revenue]** i listan **[!UICONTROL Metrics]**. I komponentpanelen:
 
          ![Sammanfattningsdata för intäkter](../assets/revenue-summary-data.png)
@@ -566,6 +587,14 @@ Lägg till dina beräknade värden i rapporten.
          1. Välj önskad **[!UICONTROL Conditional formatting palette]**.
    1. Välj **[!UICONTROL Save]** om du vill spara projektet.
 
+Om du vill rapportera kampanjnamn i stället för spårningskod (Event) gör du så här:
+
+1. Duplicera visualiseringen av friformstabellen **[!UICONTROL Summary Data Report]**.
+1. Byt namn på den duplicerade visualiseringen till `Summary Data Report (using Campaign Name)`.
+1. Ersätt ![Växla](/help/assets/icons/Switch.svg) dimensionen **[!UICONTROL Tracking Code (Event)]** med dimensionen **[!UICONTROL Campaign Name (Lookup)]**.
+
+Du kan rapportera korrekt om kampanjnamn (sökning) på grund av det härledda fältet som du skapade och den sammanfattande datakomponentkonfigurationen för kampanjnamn (sökning). Se [Datavy](#data-view).
+
 Det färdiga projektet ska se ut som det som visas nedan.
 
 ![Exempelprojekt med sammanfattningsdata, med sammanfattningsdatapanelen och sammanfattningsdatarapport](../assets/summary-workspace.png)
@@ -575,4 +604,3 @@ Det färdiga projektet ska se ut som det som visas nedan.
 >
 >[Sammanfattningsdata](/help/data-views/summary-data.md)
 >[Komponentinställningar för sammanfattningsdatagrupp ](/help/data-views/component-settings/summary-data-group.md)
-
