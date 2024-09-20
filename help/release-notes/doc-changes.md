@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '4006'
+source-wordcount: '3996'
 ht-degree: 5%
 
 ---
@@ -262,7 +262,6 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | 7 oktober 2020 | Ett ämne har lagts till i [kombinerade händelsedatamängder](/help/connections/combined-dataset.md). |
 | 15 september 2020 | Ett ämne har lagts till om [dataöverföring](/help/data-ingestion/data-ingestion.md). |
 | 2 september 2020 | Avsnittet om [användarbehörigheter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) har uppdaterats. |
-| 7 augusti 2020 | Nytt avsnitt om [användningsfall för B2B - uppslagsdatauppsättning ](/help/use-cases/b2b/b2b.md) har lagts till. |
 | Juli 2020 | Information har lagts till om alternativet [Identitetskarta för person-ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html). |
 | Juli 2020 | Nytt ämne har lagts till för [objektarrayer](/help/use-cases/object-arrays.md) eller&quot;dataherarkier&quot;. |
 | 14 april 2020 | Uppdaterar det senaste användargränssnittet i avsnittet [Skapa anslutningar](/help/connections/create-connection.md). |

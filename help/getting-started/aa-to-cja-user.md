@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 ## Förändringar av begreppet klassificeringar
 
-&quot;Klassificeringar&quot; kallas nu&quot;Sök efter datauppsättningar&quot;. Uppslagsdatauppsättningar används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [Lägga till data på kontonivå som en uppslagsdatauppsättning](/help/use-cases/b2b/b2b.md) för ett exempel.
+&quot;Klassificeringar&quot; kallas nu *Uppslagsdatamängder*. Uppslagsdatauppsättningar används för att söka efter värden eller nycklar som finns i dina händelse- eller profildata. Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn.
 
 ## Förändringar av begreppet kundattribut
 
