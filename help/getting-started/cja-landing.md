@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
+source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '876'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,12 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics och do
 AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverksamma att utföra uppgifter snabbt - oavsett om de förstår koncept, felsöker problem eller söker igenom information. Det gör det även möjligt för icke-experter att utföra expertuppgifter och ökar den övergripande kvaliteten på arbetet.
 
 [![bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB Larm]
+
+Med varningar kan du meddelas baserat på ändrade procentsatser eller specifika datapunkter. Du kan förhandsgranska hur ofta en avisering kommer att utlösas, skicka aviseringar via e-post eller SMS, skapa staplade aviseringar med mera.
+
+[![bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
 >[!TAB Sammanfattningsdata]
 
