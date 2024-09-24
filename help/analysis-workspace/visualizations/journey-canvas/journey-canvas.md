@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,16 @@ Dessutom synkroniseras ändringar som görs på en resa i Journey Optimizer enda
 
 När du har ändrat en Journey Optimizer-resa på arbetsytan kan databearbetning, tillgängliga funktioner och synkroniseringsbeteende ändras.
 
+Om du gör en betydande ändring av en Journey Optimizer-resa på arbetsytan kan ändringar göras i databearbetning, tillgängliga funktioner och synkroniseringsbeteende. En betydande ändring innefattar något av följande:
+
+* Lägga till eller ta bort en nod
+
+* Lägga till eller ta bort en pil mellan noder
+
+* Ändra komponenterna på en nod
+
+Om du gör andra ändringar av en Journey Optimizer-resa på arbetsytan för en resa, som att dra en nod eller lägga till en uppdelning, gäller inte de skillnader som beskrivs i följande avsnitt.
+
 >[!NOTE]
 >
 >Om du vill återställa resan till det ursprungliga läget kan du trycka på Ctrl+Z när du har gjort den första ändringen på arbetsytan för resan. Eller så kan du ta bort och [återskapa resan på arbetsytan för resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
@@ -139,9 +149,13 @@ Det beror på att du, till skillnad från Journey Optimizer, kan använda flera 
 
 #### Skillnader i funktioner
 
-När du har ändrat en Journey Optimizer-resa på en arbetsyta i resan är listrutan [!UICONTROL **Nodtyp**] inte längre tillgänglig.
+När du har ändrat en Journey Optimizer-resa på en arbetsyta kan funktionaliteten ändras för följande funktioner, beroende på dina ändringar:
 
-Mer information om det här fältet finns i [Konfigurera inställningar](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+* Värdena som visas i fältet [!UICONTROL **Nodtyp**] ändras.
+
+* De alternativ som är tillgängliga i listrutan [!UICONTROL **Pilinställningar**] ändras.
+
+Mer information om dessa fält finns i [Konfigurera inställningar](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 #### Synkroniseringsskillnader
 
