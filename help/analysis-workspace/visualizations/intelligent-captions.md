@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: dae2282717d5d84862259d5b056fbfeb2d068cce
+source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -32,27 +32,29 @@ Naturliga språkkunskaper genereras nu.
 
 Kom ihåg
 
-* Du behöver minst 3 datapunkter för att kunna generera bildtexter. Annars kan du få ett felmeddelande som läser &quot;Inte tillräckligt med data för att analysera&quot;.
+* Du behöver minst 3 datapunkter för att kunna generera bildtexter. Annars kan du få ett fel som **[!UICONTROL Not enough data to analyze]**.
 
-* Bildtexter genereras varje gång de underliggande markerade data ändras i tabellen som styr visualiseringen.
+* Bildtexter genereras varje gång underliggande markerade data ändras i tabellen som styr visualiseringen.
 
 * Om det finns flera mätvärden i tabellen, genereras bildtexter endast för det första mätvärdet eller det mätvärde som användaren har valt.
 
-* Om du sparar projektet nu och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från det här projektet.
+* Om du sparar projektet vid en viss punkt och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från ett projekt.
 
-## Visa och tolka bildtexter {#view}
-
-Här följer ett exempel på hur bildtexterna kan se ut:
+Här är ett exempel på hur intelligenta bildtexter kan se ut:
 
 ![Intelligenta bildtexter för linjevisualisering, inklusive Seasonality, Min, Max, Spike och Decline.](assets/captions.png)
 
-## Kopiera till Urklipp {#copy}
+## Åtgärder
+
+Du kan utföra följande åtgärder på intelligenta bildtexter:
+
+### Kopiera till Urklipp {#copy}
 
 Du kan kopiera bildtexterna till ett urklipp och klistra in dem i en PowerPoint eller andra verktyg. Välj ![Kopiera bildtexter till urklipp](/help/assets/icons/Copy.svg) längst upp till höger i dialogrutan med bildtexter.
 
-## Redigera bildtexter {#edit}
+### Redigera visning {#edit}
 
-Du kan redigera beskrivningarna, till exempel dölja eller visa en viss kategori med insikter. Om du t.ex. inte vill ha insikten om minimibeställningen kan du bara dölja den insikten och klicka på Använd. och den visas inte igen.
+Du kan redigera visningen av bildtexter, till exempel dölja eller visa en viss kategori med insikter.
 
 1. Välj ![Redigera visning av intelligenta bildtexter](/help/assets/icons/EditInLight.svg) i dialogrutan Intelligenta bildtexter.
 
@@ -63,7 +65,7 @@ Du kan redigera beskrivningarna, till exempel dölja eller visa en viss kategori
 1. Välj **[!UICONTROL Apply]**.
 
 
-## Ge feedback
+### Ge feedback
 
 Du kan ge feedback på de genererade intelligenta bildtexterna.
 
@@ -73,13 +75,13 @@ Du kan ge feedback på de genererade intelligenta bildtexterna.
 
 1. Ange din feedback i dialogrutan **[!UICONTROL Thank you for your feedback]** och välj **[!UICONTROL Submit]** för att skicka den.
 
-## Exportera bildtexter {#export}
+### Exportera {#export}
 
-Du kan **exportera bildtexter via PDF**, förutsatt att projektet sparas med de bildtexter som skapas.
+Du kan exportera intelligenta bildtexter som en del av PDF, förutsatt att projektet sparas med de intelligenta bildtexter som skapas.
 
-## Växla av bildtexter {#toggle}
+### Växla av {#toggle}
 
-Om du inte vill visa intelligenta bildtexter kan du inaktivera den här funktionen.
+Om du inte vill visa intelligenta bildtexter kan du inaktivera funktionen.
 
 1. Gå till [Visualiseringsinställningar](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 1. Avmarkera **[!UICONTROL Show intelligent captions]**.
@@ -87,9 +89,6 @@ Om du inte vill visa intelligenta bildtexter kan du inaktivera den här funktion
    ![Alternativ för linjevisualisering som visar alternativet att avmarkera Visa intelligenta bildtexter.](assets/toggle-captions.png)
 
 1. Välj **[!UICONTROL Save]** om du vill spara inställningen.
-
-
-
 
 
 ## Intelligenta bildtexter i Mobile Scorecards
