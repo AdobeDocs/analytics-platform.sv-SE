@@ -1,19 +1,19 @@
 ---
-description: Använd intelligenta bildtexter för att generera insikter på naturliga språk för att snabbt identifiera trender inom visualiseringar.
+description: Använd intelligenta bildtexter för att generera insikter på naturens språk för att snabbt identifiera trender inom visualiseringar.
 title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
+source-git-commit: dae2282717d5d84862259d5b056fbfeb2d068cce
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 1%
+source-wordcount: '615'
+ht-degree: 0%
 
 ---
 
 # Intelligenta bildtexter
 
-Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Den första versionen innehåller automatiskt genererade insikter för visualiseringen [Line](line.md). (Övriga visualiseringar följer.)
+Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Den första versionen innehåller automatiskt genererade insikter för visualiseringen [Line](line.md). Andra visualiseringar följer.
 
 Intelligenta bildtexter inriktas på följande:
 
@@ -32,7 +32,7 @@ Naturliga språkkunskaper genereras nu.
 
 Kom ihåg
 
-* Du behöver minst 3 datapunkter för att bildtexterna ska kunna genereras. Annars kan du få ett felmeddelande som läser &quot;Inte tillräckligt med data för att analysera&quot;.
+* Du behöver minst 3 datapunkter för att kunna generera bildtexter. Annars kan du få ett felmeddelande som läser &quot;Inte tillräckligt med data för att analysera&quot;.
 
 * Bildtexter genereras varje gång de underliggande markerade data ändras i tabellen som styr visualiseringen.
 
@@ -48,19 +48,30 @@ Här följer ett exempel på hur bildtexterna kan se ut:
 
 ## Kopiera till Urklipp {#copy}
 
-Du kan kopiera bildtexterna till ett urklipp och klistra in dem i en PowerPoint eller något annat verktyg. Leta upp ikonen **[!UICONTROL Copy captions to clipboard]** längst upp till höger i dialogrutan med bildtexter.
+Du kan kopiera bildtexterna till ett urklipp och klistra in dem i en PowerPoint eller andra verktyg. Välj ![Kopiera bildtexter till urklipp](/help/assets/icons/Copy.svg) längst upp till höger i dialogrutan med bildtexter.
 
 ## Redigera bildtexter {#edit}
 
-Du kan redigera beskrivningarna, till exempel dölja eller visa en viss kategori med insikter. Om du t.ex. inte vill ha insikten om minimibeställningen kan du bara dölja den och klicka på Använd. Då visas den inte igen.
+Du kan redigera beskrivningarna, till exempel dölja eller visa en viss kategori med insikter. Om du t.ex. inte vill ha insikten om minimibeställningen kan du bara dölja den insikten och klicka på Använd. och den visas inte igen.
 
-1. Klicka på ikonen **[!UICONTROL Edit intelligent captions display]** bredvid urklippsikonen.
+1. Välj ![Redigera visning av intelligenta bildtexter](/help/assets/icons/EditInLight.svg) i dialogrutan Intelligenta bildtexter.
 
-1. I redigeringsdialogrutan klickar du på ögonikonen bredvid den insikt du vill dölja.
+1. Växla mellan ![Synlighet](/help/assets/icons/Visibility.svg) om du vill visa en specifik insikt (som **[!UICONTROL Min]**) eller ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) om du vill dölja en specifik insikt (som **[!UICONTROL Spike]**).
 
-1. Klicka på **[!UICONTROL Apply]**.
+   ![Redigera intelligenta bildtexter](assets/edit-intelligent-captions.png)
 
-Använd samma process för att visa bildtexter.
+1. Välj **[!UICONTROL Apply]**.
+
+
+## Ge feedback
+
+Du kan ge feedback på de genererade intelligenta bildtexterna.
+
+1. Välj ![Fler åtgärder](/help/assets/icons/More.svg) i dialogrutan Intelligenta bildtexter.
+
+1. Välj ![Bra svar](/help/assets/icons/ThumbUpOutline.svg) **[!UICONTROL Good response]**, ![ThumbDownOutline](/help/assets/icons/ThumbDownOutline.svg) **[!UICONTROL Bad response]** eller ![Flag](/help/assets/icons/Flag.svg) **[!UICONTROL Report]**.
+
+1. Ange din feedback i dialogrutan **[!UICONTROL Thank you for your feedback]** och välj **[!UICONTROL Submit]** för att skicka den.
 
 ## Exportera bildtexter {#export}
 
@@ -68,10 +79,40 @@ Du kan **exportera bildtexter via PDF**, förutsatt att projektet sparas med de 
 
 ## Växla av bildtexter {#toggle}
 
-Om du inte vill att intelligenta bildtexter ska genereras kan du inaktivera den här funktionen genom att gå till Visualiseringsinställningarna och avmarkera **[!UICONTROL Show intelligent captions]**.
+Om du inte vill visa intelligenta bildtexter kan du inaktivera den här funktionen.
 
-![Alternativ för linjevisualisering som visar alternativet att avmarkera Visa intelligenta bildtexter.](assets/toggle-captions.png)
+1. Gå till [Visualiseringsinställningar](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+1. Avmarkera **[!UICONTROL Show intelligent captions]**.
+
+   ![Alternativ för linjevisualisering som visar alternativet att avmarkera Visa intelligenta bildtexter.](assets/toggle-captions.png)
+
+1. Välj **[!UICONTROL Save]** om du vill spara inställningen.
+
+
+
+
 
 ## Intelligenta bildtexter i Mobile Scorecards
 
 Intelligenta bildtexter finns också i [mobilstyrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) i Customer Journey Analytics.
+
+## Funktionsåtkomst
+
+Följande parametrar styr åtkomsten till intelligenta bildtexter:
+
+* **Åtkomst till lösning**: Funktionen för intelligenta bildtexter är tillgänglig i Customer Journey Analytics, men inte i Adobe Analytics.
+
+* **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du organisationens administratör eller Adobe-kontorepresentant. Innan du kan använda Intelligent i din organisation måste du godkänna vissa GenAI-relaterade juridiska villkor.
+
+* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
+   1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
+   1. Välj namnet på den produktprofil som du vill ge tillgång till intelligenta bildtexter för.
+   1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
+   1. Välj ![Redigera](/help/assets/icons/Edit.svg) om du vill redigera **[!UICONTROL Reporting Tools]**.
+   1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) om du vill lägga till **Intelligent Captions** i **[!UICONTROL Included permission items]**.
+
+      ![Lägg till behörighet](./assets/intelligent-captions-permissions.png)
+
+   1. Välj **[!UICONTROL Save]** om du vill spara behörigheterna.
+
+Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md#access-control).

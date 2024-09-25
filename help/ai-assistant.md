@@ -4,9 +4,9 @@ title: AI Assistant för Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 3ed6eabae8607a10920c8917a818f0497b337893
+source-git-commit: dae2282717d5d84862259d5b056fbfeb2d068cce
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # AI Assistant för Adobe Customer Journey Analytics
 
-AI Assistant är en konversationsupplevelse som gör det möjligt för lärarna att utföra uppgifter snabbt - oavsett om det handlar om att förstå koncept, felsöka problem eller söka igenom information. Det gör det även möjligt för icke-experter att utföra expertuppgifter och ökar den övergripande kvaliteten på arbetet.
+AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverksamma att utföra uppgifter i snabb takt. Om uppgiften är att förstå begrepp, felsöka problem eller söka igenom information. Med AI Assistant kan även icke-experter utföra expertuppgifter och öka den övergripande kvaliteten på arbetet.
 
 AI Assistant i Customer Journey Analytics är utbildad i sin Adobe Experience League-dokumentation. När AI Assistant tillfrågas om det finns ett användbart svar som gör att du snabbt kan lära dig mer.
 
@@ -32,7 +32,7 @@ AI Assistant för Customer Journey Analytics är tillgängligt på alla produktn
 
 ## Produktkunskap {#knowledge}
 
-Modellen för hämtning av produktkunskap är utbildad i Customer Journey Analytics. Andra funktioner, som dataanalys, kommer att introduceras vid en senare tidpunkt.
+Modellen för hämtning av produktkunskap är utbildad i Customer Journey Analytics. Andra funktioner, som dataanalys, kommer att lanseras senare.
 
 | Produktkunskap | Exempel |
 | --- | --- |
@@ -42,16 +42,24 @@ Modellen för hämtning av produktkunskap är utbildad i Customer Journey Analyt
 
 ## Funktionsåtkomst
 
-I den här första versionen styrs åtkomsten till AI-assistentfunktionen av följande parametrar:
+Följande parametrar styr åtkomsten till AI-assistentfunktionen:
 
 * **Åtkomst till lösning**: AI-assistenten är tillgänglig i Customer Journey Analytics, men inte i Adobe Analytics. Det finns också i Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP och andra appar för Experience Platform.
 
-* **Kontraktsåtkomst**: Om du inte kan använda AI Assistant kontaktar du organisationens administratör eller Adobe-kontorepresentant. Innan AI Assistant kan användas av din organisation måste ditt företag godkänna vissa GenAI-relaterade juridiska villkor.
+* **Kontraktsåtkomst**: Om du inte kan använda AI Assistant kontaktar du organisationens administratör eller Adobe-kontorepresentant. Innan din organisation kan använda AI Assistant måste du godkänna vissa GenAI-relaterade juridiska villkor.
 
-* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] &quot;AI Assistant: Product Knowledge&quot; åtkomsten till det här verktyget. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i Admin Console:
-   1. Navigera till [!UICONTROL Admin Console] > [!UICONTROL Products and services] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Product Profile] > [!UICONTROL Permissions] > [!UICONTROL Edit Reporting Tools].
-   1. Lägg till&quot;AI Assistant: Product Knowledge&quot;.
-      ![Lägg till behörighet](assets/image.png)
+* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Product Knowledge]** åtkomsten till det här verktyget. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
+   1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
+   1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
+   1. Välj ![Redigera](/help/assets/icons/Edit.svg) om du vill redigera **[!UICONTROL Reporting Tools]**.
+   1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) om du vill lägga till **AI-assistenten: Produktkunskap** i **[!UICONTROL Included permission items]**.
+
+      ![Lägg till behörighet](assets/ai-assistant-permissions.png).
+
+   1. Välj **[!UICONTROL Save]** om du vill spara behörigheterna.
+
+Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md#access-control).
 
 ## Åtkomst till AI-assistenten i användargränssnittet i Customer Journey Analytics
 
