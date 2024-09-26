@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
+source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
 workflow-type: tm+mt
-source-wordcount: '2901'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Som standard har datavyerna ett tabellsäkert namn som genereras utifrån det eg
 
 Om du vill använda ID:n för datavyn som tabellnamn kan du lägga till den valfria inställningen `CJA_USE_IDS` i databasnamnet när du ansluter. `prod:cja?CJA_USE_IDS` visar till exempel dina datavyer med namn som `dv_ABC123`.
 
-### Datastyrning
+### Dataförvaltning
 
 De datastyrningsrelaterade inställningarna i Customer Journey Analytics ärvs från Adobe Experience Platform. Integrationen mellan Customer Journey Analytics och Adobe Experience Platform datastyrning möjliggör märkning av känsliga uppgifter från Customer Journey Analytics och tillämpning av integritetspolicyer.
 
@@ -399,5 +399,15 @@ Dessa funktioner kan användas för dimensioner i `SELECT`, `WHERE` eller i vill
 | [Extrahera](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. Använd artikel-ID i stället för värdet för vissa delar av den här funktionen eftersom du behöver talet och inte det egna namnet.<br/>Delar som stöds är:<br>- Nyckelord: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Strängar: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` eller  `'MINUTE'`. |
 | [Datum (del)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet. Använd artikel-ID i stället för värdet för vissa delar av den här funktionen eftersom du behöver talet och inte det egna namnet.<br/>Följande strängdelar stöds: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, eller `'MINUTE'`. |
 | [Datum (trunkerat)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generera en dynamisk dimensionsidentitet för det skickade fältet.<br/>Stränggranulariteter som stöds är: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` eller `'MINUTE'`. |
+
+{style="table-layout:auto"}
+
+### Delvis stöd
+
+Vissa SQL-funktioner stöds bara delvis med BI-tillägget och returnerar inte samma resultat som du ser med andra databaser.  Den här specifika funktionen används i SQL som genereras av olika BI-verktyg, för vilka BI-tillägget inte har en exakt matchning. Därför fokuserar BI-tillägget på en begränsad implementering som täcker den minsta användningen av BI-verktyg utan att utlösa fel. Se tabellen nedan för mer information.
+
+| Funktion | Exempel | Information |
+|---|---|---|
+| MIN() och MAX() | ``MIN(daterange)`` eller <br/> ``MAX(daterange)`` | `MIN()` på `timestamp`, `daterange` eller någon av `daterangeX` like `daterangeday` kommer att returneras för 2 år sedan.<br/><br/> `MAX()` på `timestamp`, `daterange` eller någon av `daterangeX` like `daterangeday` returnerar aktuellt datum/tid.<br/><br/>`MIN()` eller `MAX()` på andra dimensioner, mått eller uttryck returnerar 0. |
 
 {style="table-layout:auto"}
