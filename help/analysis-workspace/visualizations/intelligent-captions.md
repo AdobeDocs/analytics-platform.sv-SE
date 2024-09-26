@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
+source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,6 @@ Intelligenta bildtexter inriktas på följande:
 
 * Analytiker som behöver berättelser att dela med andra användare. Analytikerna behöver dessa insikter för att kunna ge sina användare kontext.
 * Affärsanvändare som snabbt vill upptäcka högnivåaktiviteter.
-
-Bildtexter är tillgängliga för alla Customer Journey Analytics-användare och kräver ingen särskild behörighet.
 
 ## Starta intelligenta bildtexter {#launch}
 
@@ -101,7 +99,7 @@ Följande parametrar styr åtkomsten till intelligenta bildtexter:
 
 * **Åtkomst till lösning**: Funktionen för intelligenta bildtexter är tillgänglig i Customer Journey Analytics, men inte i Adobe Analytics.
 
-* **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du organisationens administratör eller Adobe-kontorepresentant. Innan du kan använda Intelligent i din organisation måste du godkänna vissa GenAI-relaterade juridiska villkor.
+* **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du din organisations administratör eller Adobe-kontorepresentant. Innan du kan använda intelligenta bildtexter i organisationen måste du godkänna vissa GenAI-relaterade juridiska villkor.
 
 * **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
    1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
