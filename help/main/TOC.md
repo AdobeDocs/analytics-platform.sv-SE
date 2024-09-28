@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: f1e29025292a71b0734210d57eef60cb1eaa6d50
+source-git-commit: 8310e67ea42c44e9cc6d9cfcbd27642b068ef1ed
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1124'
 ht-degree: 8%
 
 ---
@@ -62,8 +62,8 @@ ht-degree: 8%
    + Infoga och använd snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Adobe Experience Platform Edge Network {#edge-network}
-         + [Webb-SDK](../data-ingestion/aepwebsdk.md)
-         + [Mobil-SDK](../data-ingestion/aepmobilesdk.md)
+         + [Web SDK](../data-ingestion/aepwebsdk.md)
+         + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server-API](../data-ingestion/serverapi.md)
       + [Batchdata](../data-ingestion/batch.md)
       + [Strömmande data](../data-ingestion/streaming.md)
@@ -98,6 +98,12 @@ ht-degree: 8%
    + [Härledda fält](../data-views/derived-fields/derived-fields.md)
    + [Sammanfattningsdata](../data-views/summary-data.md)
    + [Etiketter och profiler](../data-views/data-governance.md)
+
++ Verktyg {#tools}
+   + Produktanvändning {#product-usage}
+      + [Översikt](../tools/product-usage/usage-overview.md)
+      + [Datainställningar](../tools/product-usage/data-settings.md)
+      + [Inställningar för avanmälan](../tools/product-usage/opt-out-settings.md)
 
 + Workspace-projekt {#cja-workspace}
    + [Översikt över Analysis Workspace](../analysis-workspace/home.md)
@@ -345,7 +351,7 @@ ht-degree: 8%
    + [Integrera kundens AI](/help/integrations/customer-ai.md)
 
 + Datastyrning {#cja-privacy}
-   + [Datastyrning](../privacy/privacy-overview.md)
+   + [Dataförvaltning](../privacy/privacy-overview.md)
    + [Granskningslogg](../privacy/audit-log.md)
    + [Kundhanterade nycklar](../privacy/cmk.md)
 
