@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 6820adc70412f6abeae81bf8389227999d13f0d5
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2297'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Förbättrade säkerhets- och sekretessalternativ** - beredskap för HIPAA | Customer Journey Analytics är HIPAA-klart och erbjuder [ytterligare säkerhetsalternativ](/help/privacy/cmk.md) för efterlevnad av regler. Adobe Analytics är inte HIPAA-klart. |
 | **Experimentationsanalys** | Customer Journey Analytics kan [utvärdera lyften och förtroendet för alla experiment](/help/analysis-workspace/c-panels/experimentation.md) från alla datakällor som definieras som en del av en anslutning. Med den här utvärderingen kan ni förstå orsaks- och effektförhållandet mellan kundinteraktioner i alla kanaler. Analyserna begränsas till experimenterande analyser via A4T. |
 | **Prognos** | [Prognos](/help/analysis-workspace/c-forecast/forecasting.md) är en AI/ML-funktion som innehåller en statistisk förutsägelse för tidsserierelaterade data baserat på historiska data som redan finns i Customer Journey Analytics. Prognoser kan visas i frihandstabeller och i linjediagramvisualiseringar. |
-| **Guidad analys** | [Guidad analys](/help/guided-analysis/overview.md) är ett rapportformat som gör att användarna snabbt kan ta hand om sina databehov så att de snabbt kan få högkvalitativa insikter och fatta fler databaserade beslut. Guidad analys ingår i Adobe Product Analytics. |
+| **Guidad analys** | [Med guidad analys](/help/guided-analysis/overview.md) kan användarna själva leverera högkvalitativa data och insikter om kundresan via guidade arbetsflöden, som bygger på data från olika kanaler i Customer Journey Analytics. |
 | **Intelligenta bildtexter** | Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Den första versionen innehåller automatiskt genererade insikter för visualiseringen [Line](/help/analysis-workspace/visualizations/line.md). |
 | **Omformningar vid rapporttillfället** | [Med datavyer](/help/data-views/data-views.md) i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde eller filtrera delmängder. Alla dessa omformningar görs på ett icke-förstörande sätt. Adobe Analytics har begränsade möjligheter genom virtuella rapportsviter och anpassad sessionslängd. |
 | **BI-tillägg** | Med [BI-tillägget](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) kan du ansluta CJA direkt till populära BI-visualiseringsverktyg som PowerBI eller Tableau. Genom att använda det här tillägget kan du få dina BI-rapporter att exakt matcha det du ser i Analysis Workspace och andra CJA-rapporteringsgränssnitt. Detta är ett mycket enklare sätt att få BI-rapportering för CJA utan att behöva återskapa rapporter/mätvärden från rådata. |
