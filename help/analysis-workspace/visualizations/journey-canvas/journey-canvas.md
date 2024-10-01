@@ -3,12 +3,10 @@ description: Översikt över arbetsytan Resa
 title: Reseduk
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1318'
 ht-degree: 0%
 
 ---
@@ -35,7 +33,7 @@ Viktiga funktioner för visualisering av arbetsytan på resan är:
 
 ## Potentiella insikter
 
-Nedan följer några exempel på vilka typer av insikter som Journey Canvas kan ge. Du kan välja om dessa insikter ska baseras på alla personer i datavyn eller på alla personer som påbörjade resan.
+Nedan följer några exempel på vilka typer av insikter som Journey Canvas kan ge. Du kan välja om dessa insikter ska baseras på alla personer i datavyn, alla personer som påbörjade resan eller alla personer från den föregående noden på resan.
 
 **Genomströmning**
 
@@ -47,7 +45,7 @@ Nedan följer några exempel på vilka typer av insikter som Journey Canvas kan 
 
 **Utfall**
 
-* Poängen (noderna) på resan där de flesta människor föll utanför resan
+* Poängen (noderna) på resan där de flesta människor föll utanför resan (aldrig anlände till någon av de närmaste noderna)
 
 **Annan**
 
