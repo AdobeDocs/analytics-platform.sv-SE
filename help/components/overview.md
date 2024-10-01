@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 2%
@@ -75,7 +75,7 @@ Du kan hantera komponenter (individuellt eller genom att markera flera).
    | ![Stjärna](/help/assets/icons/Star.svg) [!UICONTROL **Favorit**] | Lägg till komponenten i listan med favoriter. Precis som med taggar kan du söka efter Favoriter i den vänstra panelen och filtrera efter dem i komponenthanterarna. |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL Un-favorite]** | Ta bort komponenten från favoritlistan. |
    | ![Markering](/help/assets/icons/Checkmark.svg) [!UICONTROL **Godkänn**] | Markera komponenter som godkända för att signalera till användarna att komponenten är godkänd för organisationen. Precis som med taggar kan du söka efter och filtrera efter Godkänd i den vänstra panelen. En ![bock](/help/assets/icons/Checkmark.svg) identifierar godkända komponenter. |
-   | ![Dela](/help/assets/icons/Share.svg) [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
+   | ![Dela](/help/assets/icons/ShareLight.svg) [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
    | ![Ta bort](/help/assets/icons/Delete.svg) [!UICONTROL **Ta bort**] | Ta bort komponenter som du inte längre behöver. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
 
 Anpassade komponenter kan också hanteras med respektive komponenthanterare. Se till exempel [Hantera filter](/help/components/filters/manage-filters.md).
