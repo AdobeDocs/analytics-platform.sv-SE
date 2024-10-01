@@ -3,23 +3,27 @@ title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 hide: true
 hidefromtoc: true
-source-git-commit: 18686285efbdbc9e8fdac93e215adc4061bb0022
+source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '373'
 ht-degree: 1%
 
 ---
 
 # Översikt över produktanvändning
 
-Produktanvändningen ger er möjlighet att visa analysdata om hur organisationen använder Customer Journey Analytics. När du har aktiverat följande Adobe Experience Platform-komponenter skapas och sammanfogas de automatiskt åt dig:
+Produktanvändningen ger er möjlighet att visa analysdata om hur organisationen använder Customer Journey Analytics. Det är tillgängligt för alla organisationer som använder Customer Journey Analytics. När du har aktiverat följande Adobe Experience Platform-komponenter skapas och sammanfogas de automatiskt åt dig:
 
-* Ett schema i Adobe Experience Platform
-* En datauppsättning i Adobe Experience Platform
-* En anslutning i Customer Journey Analytics
-* En datavy i Customer Journey Analytics
+* Ett schema i Adobe Experience Platform. Schemat är skrivskyddat och kan inte redigeras.
+* En datauppsättning i Adobe Experience Platform. Inställningarna för datauppsättningen är skrivskyddade och kan inte redigeras.
+* En förbindelse i Customer Journey Analytics. Inställningarna för anslutningen är skrivskyddade och kan inte redigeras.
+* En datavy i Customer Journey Analytics. Du kan redigera den här datavyn eller skapa fler datavyer med samma anslutning.
 
-Alla datainsamlingar och inställningar konfigureras automatiskt när de är aktiverade.
+Alla datainsamlingar och inställningar konfigureras automatiskt när de är aktiverade. Varje gång en användare gör en åtgärd i Analysis Workspace spåras den åtgärden och är tillgänglig för rapportering.
+
+>[!IMPORTANT]
+>
+>Den här funktionen tar hänsyn till era avtalsbaserade databegränsningar i Adobe Experience Platform. Se till att din organisation kan hantera data som genereras av den här funktionen innan du aktiverar den.
 
 ## Tillgängliga dimensioner
 
@@ -28,17 +32,19 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga:
 | Dimension | Beskrivning |
 | --- | --- |
 | Åtgärdsnamn | Den typ av åtgärd som användaren vidtagit. Du kan använda den här dimensionen som önskat mått genom att skapa en kopia i datavyinställningarna. |
-| Attributmodell som används | Den typ av attribueringsmodell som rapporten använder. |
+| Attributmodell som används | Den typ av attribueringsmodell som den aktuella komponenten använder. |
 | Komponent | Ett härlett fält. |
-| Komponenttyp | Den typ av komponent som används i projektet. |
+| Komponenttyp | Komponenttypen som läggs till, tas bort eller ändras. |
 | Anslutning | Anslutningen som används i projektet. |
 | Datavy | Datavyn som används i projektet. |
 | Funktion | Funktionen som används i projektet. |
 | Identifierare | Den unika identifieraren för händelsen. |
-| Inloggningsanvändare | Användaren som utlöste händelsen. |
-| Använd panel | Panelen som används i projektet. |
+| Inloggningsanvändare | Användaren som utförde åtgärden. |
+| Använd panel | Panelen där komponenten lades till, togs bort eller ändrades. |
 | Projekt | Ett härlett fält. |
 | Projektnamn | Projektets egna namn. |
 | Projekttyp | Projekttypen. |
 | Användar-ID | Det användar-ID som utlöste händelsen. |
-| Visualisering används | Visualiseringen som används i projektet. |
+| Visualisering används | Den visualisering som lades till, togs bort eller ändrades. |
+
+Produktanvändningen spårar inte enskilda projektkomponenter när ett projekt bara öppnas eller visas. Användaråtgärden för att öppna ett projekt spåras emellertid.
