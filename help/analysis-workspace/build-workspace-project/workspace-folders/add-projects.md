@@ -1,73 +1,57 @@
 ---
-description: Lär dig hur du lägger till mappar i Workspace
+description: Lär dig hur du lägger till eller flyttar mappar i Workspace
 keywords: Analysis Workspace
-title: Lägg till mappar i Workspace
+title: Lägga till eller flytta mappar
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
-# Lägg till projekt i mappar
+# Lägg till eller flytta projekt till mappar
 
-Du kan lägga till projekt i en mapp i tabellvyn eller från en mapp.
+Du kan lägga till eller flytta projekt till en mapp direkt från [projektlistan](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
-## Från tabellvyn {#table-view}
+## Flytta projekt till en mapp
 
-Lägg till projekt i en mapp från tabellvyn på startsidan.
+>[!NOTE]
+>
+>När en administratör flyttar ett projekt till företagsmappen delas mappen med alla, även om de befintliga delade behörigheterna är begränsade. När en administratör flyttar ett projekt från företagsmappen tillämpas de befintliga delade behörigheterna på nytt.
+>
 
-1. Markera ett eller flera projekt som du vill lägga till i en mapp.
+Så här flyttar du projekt till en mapp från [projektlistan](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list):
 
-   ![Projekttabellvy med tre valda projekt.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+1. Välj ![SelectBox](/help/assets/icons/SelectBox.svg) för ett eller flera projekt som du vill flytta till en mapp.
 
-1. Välj **Flytta till**. Dialogrutan Välj mapp visas.
+1. Välj ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **Flytta till** i listan över möjliga [åtgärder](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). Dialogrutan **[!UICONTROL Select Folder]** visas.
 
-1. Välj ett mappnamn i listrutan.
+1. Välj ett mappnamn i listrutan **[!UICONTROL Folder]**. I listrutan kan du gå igenom mapphierarkin och välja en undermapp på valfri nivå.
 
-   ![Vyn Välj mapp som visar listrutan och tillgängliga undermappar.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+   ![Vyn Välj mapp som visar listrutan och tillgängliga undermappar.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 
-1. Klicka på **Lägg till**.
+1. Välj **[!UICONTROL Move]**.
 
-   ![Klicka på Lägg till.](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
    De markerade projekten läggs till i mappen.
 
-   ![Den markerade undermappen visar de tre projekt som har flyttats.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   På Workspace landningssida visas nu mappen innehåller (3) projekt.
+## Lägga till projekt i en mapp
 
-   ![Den uppdaterade listan med startsidor för projekt visar undermappen med tre projekt.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+Så här lägger du till projekt i en mapp från [projektlistan](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list):
 
-## Från en mapp {#inside-folder}
+1. Välj ![SelectBox](/help/assets/icons/SelectBox.svg) den mapp som du vill lägga till projekt i.
 
-Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
+1. Välj ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **Add Projects** i listan över möjliga [åtgärder](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). Dialogrutan **[!UICONTROL Select Folder]** visas.
 
-1. Markera och öppna en mapp i tabellvyn.
+1. Välj ett eller flera projekt från [!UICONTROL *Välj projekt att lägga till i mappen*].
 
-   ![Undermappen som inte innehåller några projekt](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![Vyn Välj mapp som visar listrutan och tillgängliga undermappar.](/help/analysis-workspace/build-workspace-project/assets/add-projects-folder.png)
 
-1. Klicka på ikonen **..** ellips i det övre högra hörnet.
-
-   ![Alternativen i den nedrullningsbara ellipsen.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
-
-   I en nedrullningsbar meny visas alternativet att lägga till projekt i mappen. Med ytterligare alternativ kan du byta namn på, flytta eller ta bort mappen och hantera mappbehörigheter.
-
-1. Välj **Lägg till projekt** och välj det projekt som du vill lägga till     i listrutan.
-
-   ![Listan Lägg till projekt.](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
-
-   Du kan lägga till flera projekt i mappen.
-
-   ![Fönstret Lägg till projekt med tre projekt läggs till](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
-
-1. Klicka på **Lägg till** för att lägga till projekten i mappen.
-
-   ![Klicka på Lägg till.](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-
+1. Välj **[!UICONTROL Add]**.
 
 >[!NOTE]
 >

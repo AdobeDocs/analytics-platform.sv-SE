@@ -4,9 +4,9 @@ description: Lär dig använda Data Prep för att kombinera rapportsviter med ol
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Anta att ert företag vill överföra data från två olika rapportsviter till A
 | eVar1 = Sökord | eVar1 = Affärsenhet |
 | eVar2 = Kundkategori | eVar2 = Sökord |
 
-För enkelhetens skull, låt oss säga att det här är de enda definierade eVars för båda rapportsviterna.
+För enkelhetens skull antar vi att det här är de enda definierade eVars för båda rapportsviterna.
 
 Anta dessutom att du utför följande åtgärder:
 

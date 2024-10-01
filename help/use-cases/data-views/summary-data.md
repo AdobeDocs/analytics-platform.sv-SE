@@ -1,13 +1,13 @@
 ---
 title: Använd sammanfattningsdata i Customer Journey Analytics
-description: Använd detaljerad information om hur man lägger in sammanfattande data i Customer Journey Analytics
+description: Använd case som förklarar hur man överför sammanfattande data till Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
 workflow-type: tm+mt
-source-wordcount: '4609'
+source-wordcount: '4610'
 ht-degree: 7%
 
 ---
@@ -512,7 +512,7 @@ För att vara säker på att du kan rapportera rätt data i Workspace vill du sk
 
          ![Sammanfattningsdata för intäkter](../assets/revenue-summary-data.png)
          1. Gräv upp ![SparronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Välj ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** i listrutan **[!UICONTROL Attribution Model]**.
+            1. Välj ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** i listrutan **[!UICONTROL Attribution Model]**.
             1. Välj **[!UICONTROL 30 Day]** i listrutan **[!UICONTROL Lookback window]**.
          1. Bygg upp ![SparronDown](/help/assets/icons/ChevronDown.svg) **Format**.
             1. Välj **[!UICONTROL Currency]** i listrutan **[!UICONTROL Format]**.
@@ -522,7 +522,7 @@ För att vara säker på att du kan rapportera rätt data i Workspace vill du sk
 
          ![Sammanfattningsdata för beställningar](../assets/orders-summary-data.png)
          1. Gräv upp ![SparronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Välj ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** i listrutan **[!UICONTROL Attribution Model]**.
+            1. Välj ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** i listrutan **[!UICONTROL Attribution Model]**.
             1. Välj **[!UICONTROL 30 Day]** i listrutan **[!UICONTROL Lookback window]**.
          1. Gräv upp ![SparronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. Välj **[!UICONTROL Decimal]** i listrutan **[!UICONTROL Format]**.

@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 8310e67ea42c44e9cc6d9cfcbd27642b068ef1ed
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 8%
+source-wordcount: '1041'
+ht-degree: 9%
 
 ---
 
@@ -47,13 +47,13 @@ ht-degree: 8%
       + [Behåll historiska data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + Jämförelse med Adobe Analytics {#cja-aa-comparison}
       + [Översikt](../getting-started/aa-vs-cja/overview.md)
-      + [Använd Adobe Analytics-data i Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [Funktioner i Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Jämför terminologi för analysdata som skickas via Analytics-källkopplingen](../getting-started/aa-vs-cja/terminology.md)
-      + [Jämför databehandling i Adobe Analytics och Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
-      + [Virtuella rapporteringsmiljöer och sandlådemiljöer](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Bearbetningsregler, VISTA och klassificeringar jämfört med Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [AAID, ECID, AACUSTOMID och Analytics-källkopplingen](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Använd Adobe Analytics-data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Funktioner](../getting-started/aa-vs-cja/cja-aa.md)
+      + [Jämför terminologi](../getting-started/aa-vs-cja/terminology.md)
+      + [Jämför databearbetning](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Miljö](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+      + [Analysbearbetning jämfört med Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [Analysidentiteter](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Utveckling från Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Användarhandbok för Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
@@ -112,24 +112,23 @@ ht-degree: 8%
    + Projekt {#build-workspace-project}
       + [Projektöversikt](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md)
+      + [Öppna projekt](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
-      + [Innehållsförteckning för projekt](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Mappar i Workspace {#workspace-folders}
          + [Om mappar i Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Ta bort mappar](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
-         + [Lägg till projekt](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-         + [Ta bort ett projekt](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
-         + [Spara ett nytt projekt](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
+         + [Hantera mappar](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
+         + [Lägg till eller flytta projekt till mappar](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Snabbtangenter (kortkommandon)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](../analysis-workspace/build-workspace-project/view-density.md)
    + Visualiseringar {#visualizations}
       + [Visualiseringar - översikt](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](../analysis-workspace/visualizations/t-sync-visualization.md)
+      + [Intelligenta bildtexter](../analysis-workspace/visualizations/intelligent-captions.md)
       + Frihandstabell {#freeform-table}
-         + [Frihandsregister](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
-         + [Skapa hyperlänkar för dimensioner i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Översikt över frihandstabell](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Skapa hyperlänkar](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
@@ -137,46 +136,44 @@ ht-degree: 8%
          + [Filtrera och ordna tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
-         + [Vad är kohortanalys?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [Konfigurera en kohortanalysrapport](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [Översikt över kohortabellen](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [Konfigurera en kohorttabell](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Användningsexempel för kohortanalyser](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Utfall {#fallout}
          + [Utfallsöversikt](../analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [Konfigurera en utfallsvisualisering](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [Konfigurera ett utfall](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Interdimensionellt utfall](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Använda filter i bortfallsanalys](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flöde {#flow}
          + [Flödesöversikt](../analysis-workspace/visualizations/c-flow/flow.md)
-         + [Konfigurera en flödesvisualisering](../analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [Konfigurera ett flöde](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flerdimensionella flöden](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + Researbetsyta {#journey-canvas}
-         + [Översikt över arbetsytan Resa](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [Konfigurera en visualisering av en arbetsyta på resan](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-      + [Område och område staplade](../analysis-workspace/visualizations/area.md)
-      + [Stolpstreck och stapel](../analysis-workspace/visualizations/bar.md)
-      + [Punktdiagram](../analysis-workspace/visualizations/bullet-graph.md)
-      + [Kombinationsdiagram](../analysis-workspace/visualizations/combo-charts.md)
+      + [Yta (staplad)](../analysis-workspace/visualizations/area.md)
+      + [Stapel (staplad)](../analysis-workspace/visualizations/bar.md)
+      + [Punkt](../analysis-workspace/visualizations/bullet-graph.md)
+      + [Kombination](../analysis-workspace/visualizations/combo-charts.md)
       + [Munk](../analysis-workspace/visualizations/donut.md)
       + [Histogram](../analysis-workspace/visualizations/histogram.md)
-      + [Vågrätt streck och vågrätt streck staplade](../analysis-workspace/visualizations/horizontal-bar.md)
-      + [Intelligenta bildtexter](../analysis-workspace/visualizations/intelligent-captions.md)
+      + [Vågrätt streck (staplat)](../analysis-workspace/visualizations/horizontal-bar.md)
       + [Sammanfattning av nyckelmått](../analysis-workspace/visualizations/key-metric.md)
       + [Linje](../analysis-workspace/visualizations/line.md)
-      + [Scatterplot](../analysis-workspace/visualizations/scatterplot.md)
-      + [Sammanfattningsnummer och sammanfattning](../analysis-workspace/visualizations/summary-number-change.md)
+      + [Spridning](../analysis-workspace/visualizations/scatterplot.md)
+      + [Sammanfattningsnummer och ändring](../analysis-workspace/visualizations/summary-number-change.md)
+      + [Avsnittshuvud](/help/analysis-workspace/visualizations/section-header.md)
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Trädkarta](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Paneler {#panels}
       + [Paneler - översikt](../analysis-workspace/c-panels/panels.md)
-      + [Attributionspanelen](../analysis-workspace/c-panels/attribution.md)
       + [Tom panel](../analysis-workspace/c-panels/blank-panel.md)
-      + [Panelen Experimentation](../analysis-workspace/c-panels/experimentation.md)
-      + [Frihandspanelen](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Panelen Mediegenomsnitt för miniatyrmålgrupp](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [Panelen Snabbinsikter](../analysis-workspace/c-panels/quickinsight.md)
-      + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Medieuppspelningstid spenderad panel](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Tillskrivning](../analysis-workspace/c-panels/attribution.md)
+      + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
+      + [Frihandsfigur](../analysis-workspace/c-panels/freeform-panel.md)
+      + [Medie - genomsnittlig minutmålgrupp](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Media Concurrent Viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [Medieuppspelningstid spenderad](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Nästa eller föregående objekt](../analysis-workspace/c-panels/next-previous.md)
+      + [Snabba insikter](../analysis-workspace/c-panels/quickinsight.md)
    + Kuratera, dela och schemalägg projekt {#curate-share}
       + [Dela-menyn](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](../analysis-workspace/curate-share/curate.md)
@@ -196,6 +193,7 @@ ht-degree: 8%
       + [Prognosöversikt](../analysis-workspace/c-forecast/forecasting.md)
       + [Visa prognoser i Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistiska tekniker som används i prognostjänsten](../analysis-workspace/c-forecast/statistics-forecasting.md)
+      + [Innehållsförteckning](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)
@@ -245,7 +243,7 @@ ht-degree: 8%
       + [Hantera anteckningar](../components/annotations/manage-annotations.md)
       + [Visa anteckningar](../components/annotations/view-annotations.md)
       + [Mobilanteckningar](../components/annotations/mobile-annotations.md)
-   + [Schemalagt projekt](../components/scheduled-projects-manager.md)
+   + [Schemalagda projekt](../components/scheduled-projects-manager.md)
    + Målgrupper {#audiences}
       + [Översikt över målgrupper](../components/audiences/audiences-overview.md)
       + [Skapa och publicera målgrupper](../components/audiences/publish.md)
@@ -260,28 +258,27 @@ ht-degree: 8%
    + Filter {#cja-filters}
       + [Översikt över filter](../components/filters/filters-overview.md)
       + [Skapa filter](../components/filters/create-filters.md)
-      + [Skapa sekventiella filter](../components/filters/seg-sequential-build.md)
+      + [Skapa filter](../components/filters/filter-builder.md)
+      + [Snabbfilter](../components/filters/quick-filters.md)
+      + [Sekventiella filter](../components/filters/seg-sequential-build.md)
       + [Dela filter](../components/filters/filters-share.md)
       + [Taggfilter](../components/filters/filters-tag.md)
       + [Filtrera filterlistan](../components/filters/filters-filter.md)
       + [Markera filter som favoriter](../components/filters/filters-favorite.md)
       + [Godkänn filter](../components/filters/filters-approve.md)
       + [Kopiera filter](../components/filters/filters-copy.md)
-      + [Snabbfilter](../components/filters/quick-filters.md)
-      + [Filter Builder](../components/filters/filter-builder.md)
       + [Hantera filter](../components/filters/manage-filters.md)
       + [Operatorer](../components/filters/operators.md)
    + Beräknade mått {#cja-calcmetrics}
       + [Översikt över beräknade mätvärden](../components/calc-metrics/calc-metr-overview.md)
       + Arbetsflödet för beräknade mått {#cm-workflow}
-         + [Arbetsflöde för beräknade mätvärden](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Skapa beräknade mått](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Bygg beräknade värden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Hitta mätvärden](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [Bygg mätvärden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Mättyp och attribuering](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Bygg ett deltagandemått](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Filtrerade mätvärden](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Stapla och ersätta filter](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
-         + [Filtrerade och viktade mätvärden](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Filtrera beräknade värden](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [Markera beräknade värden som favoriter](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [Kopiera beräknade värden](../components/calc-metrics/cm-workflow/cm-copy.md)
@@ -289,21 +286,22 @@ ht-degree: 8%
          + [Tagga beräknade värden](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Godkänn beräknade värden](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Dela beräknade värden](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [Beräknad måtthanterare](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [Hantera beräknade värden](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [Exempel](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
       + [Standardberäknade värden](../components/calc-metrics/default-calcmetrics.md)
       + [Grundfunktioner](../components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](../components/calc-metrics/cm-adv-functions.md)
-   + Kalender och datumintervall {#cja-date-ranges}
-      + [Översikt över kalender- och datumintervall](../components/date-ranges/calendar.md)
-      + [Skapa ett datumintervall](../components/date-ranges/create.md)
+   + Datumintervall {#cja-date-ranges}
+      + [Översikt](../components/date-ranges/overview.md)
+      + [Skapa datumintervall](../components/date-ranges/create.md)
       + [Hantera datumintervall](../components/date-ranges/manage.md)
-      + [Skapa anpassade datumintervall](../components/date-ranges/custom-date-ranges.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
+      + [Exempel](../components/date-ranges/custom-date-ranges.md)
    + Larm {#alerts}
       + [Översikt](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-      + [Skillnader i Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Skapa](/help/components/c-intelligent-alerts/alert-builder.md)
-      + [Hantera](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md)
+      + [Hantera aviseringar](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [Jämförelse av funktioner](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [Användningsexempel](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Exporterar {#exports}
       + [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md)

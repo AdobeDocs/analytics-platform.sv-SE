@@ -3,23 +3,20 @@ description: Beskriver hur du kopierar ett beräknat mått i hanteraren för ber
 title: Kopiera beräknade värden
 feature: Calculated Metrics
 exl-id: b1cc1171-aebf-4b97-99db-9bbcef5ea9d7
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
 
 # Kopiera beräknade värden
 
-När du skapar ett nytt beräknat mått är det ibland enklare att kopiera ett befintligt beräknat mått som ligger nära det beräknade mätvärde som du vill skapa och sedan ändra den version som du kopierade.
+När du skapar ett nytt beräknat mått behöver du inte börja från början. Du kan kopiera ett befintligt beräknat mått som redan innehåller en korrekt definition att börja från och sedan ändra den version du kopierade.
 
-Så här kopierar du beräknade värden i hanteraren för beräknade värden:
+Så här kopierar du beräknade mått i [hanteraren för beräknade värden](cm-manager.md):
 
-1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Calculated metrics]**.
+1. Välj en eller flera av de beräknade mätvärden som du vill kopiera i [hanteraren för beräknade mätvärden](cm-manager.md).
+1. Välj ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** i åtgärdsfältet.
 
-1. Välj det beräknade mätvärde som du vill kopiera i Beräknat mätvärde.
-
-   Verktygsfältet för beräknad metrisk hantering visas.
-
-1. Välj **[!UICONTROL Copy]**.
+De nya beräknade måtten har skapats med samma namn och suffix `(Copy)`.

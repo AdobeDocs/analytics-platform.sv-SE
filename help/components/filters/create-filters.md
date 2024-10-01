@@ -4,31 +4,32 @@ description: Förstå användargränssnittet för att skapa filter.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 # Skapa filter
 
-Du kan skapa olika typer av filter i Workspace, beroende på hur komplexa de behöver vara, om de ska gälla endast det aktuella projektet eller alla projekt o.s.v.
+Du kan skapa olika typer av filter i Customer Journey Analytics.  Vilken typ du väljer beror på hur komplexa filtren behöver vara och om filtren endast ska gälla för det aktuella Workspace-projektet eller för alla projekt. Du kan skapa filter direkt i huvudgränssnittet för Customer Journey Analytics eller när du arbetar i ett Workspace-projekt.
 
-Här följer en sammanfattning av de filtertyper som är tillgängliga, med länkar till information om hur du skapar dem:
+Som standard kan bara administratörer skapa filter. Användare har behörighet att visa filter, på liknande sätt som användare visar andra komponenter (som anteckningar, beräknade värden osv.).
 
-| Filtertyp | Skapad var? | Tillämpligt var? | När ska du använda |
-| --- | --- | --- | --- |
-| Komponentlistefilter | Klicka på +, vilket tar dig till [filterverktyget](/help/components/filters/filter-builder.md) | Alla dina Workspace-projekt | För mer komplexa filter, sekventiella filter |
-| Snabbfilter | [Snabbfilterverktyg](/help/components/filters/quick-filters.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för filter med en regel (dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på filterikonen) |
-| Filter i bortfallsanalys | [Utfallsvisualisering](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) i Analysis Workspace | Till individuella utfallsvisualiseringar | Skapa filter från en kontaktyta, lägg till filter som kontaktyta och jämför viktiga arbetsflöden mellan olika filter |
-| Beräknat mätningsbaserat filter | [Bygg beräknade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | Till individuellt beräknat mått | Använd filter i måttdefinitionen |
+Administratörer kan dock ge användare behörighet **[!UICONTROL Filter Creation]** för **[!UICONTROL Reporting Tools]** i **[!UICONTROL Edit permissions for CJA Workspace Access]** via [Admin Console](/help/technotes/access-control.md#user-level-access).
 
-När du använder filter i ett frihandsprojekt finns det även flera andra metoder:
+Du kan skapa ett filter på följande sätt:
 
-| Åtgärd | Beskrivning |
-| --- | --- |
-| Skapa filter från markering | Skapa ett textbundet filter. Det här filtret gäller bara för det öppna projektet och sparas inte som ett Customer Journey Analytics-filter.<p> 1. Välj vilka tabellrader som du vill ska ingå i filtret.  2. Högerklicka på markeringen.  3. Klicka på *Skapa filter från markering*. |
-| Workspace [!UICONTROL Components] > [!UICONTROL New Filter] | Visar Filter Builder. Mer information om filtrering finns i [Filterverktyget](/help/components/filters/filter-builder.md). |
-| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) eller [Kuratprojekt](/help/analysis-workspace/curate-share/curate.md) kan du lära dig hur filter som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
-| Använd filter som dimensioner | I följande video visas hur du använder filter som dimensioner:  <p>[Använd filter som dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
+![Olika sätt att skapa ett filter](assets/create-filter.png)
+
+* ? I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Filters]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] i [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md).
+* ? I ett Workspace-projekt väljer du ![Lägg till](/help/assets/icons/Add.svg) vid ![Segment](/help/assets/icons/Segmentation.svg) **Filter** från den vänstra panelen Komponenter.
+* ? I ett Workspace-projekt väljer du **[!UICONTROL Create filter from selection]** på snabbmenyn i en visualisering.
+* ? I ett Workspace-projekt väljer du **[!UICONTROL Components]** på menyn och sedan **[!UICONTROL Create filter]**.
+* ? Använd genvägen **[!UICONTROL shift+cmd+e]** (macOS) eller **[!UICONTROL shift+ctrl+e]** (Windows) i ett Workspace-projekt.
+* ? Välj ![Lägg till](/help/assets/icons/Add.svg) i ***Släpp ett filter här (eller någon annan komponent)***. Den här åtgärden skapar ett projektfilter.
+
+Om du vill definiera det nya filtret använder du [filterverktyget](/help/components/filters/filter-builder.md).
+
+När du arbetar i ett Workspace-projekt kan du också snabbt skapa ett filter med [Snabbfilter](/help/components/filters/quick-filters.md).

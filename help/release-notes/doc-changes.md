@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: d0dbdcb6fa1402bce73584d1dd9165c1b3f00b33
 workflow-type: tm+mt
-source-wordcount: '4045'
+source-wordcount: '4044'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | **September 2024** | |
 | Uppdatering av sammanfattningsdata | Sammanfattningsdataartiklar med information om hur [sökdata](/help/data-views/summary-data.md#lookup-data) används korrekt vid rapportering av sammanfattningsdata har uppdaterats. |
 | Uppdatering för BI-tillägg | [standardvärden och begränsning](/help/data-views/bi-extension.md#defaults-and-limitations) har lagts till i dokumentationen för BI-tillägget. |
-| Larm | Dokumentation har lagts till för funktionen [Alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md) som nu är tillgänglig i Customer Journey Analytics. |
+| Aviseringar | Dokumentation har lagts till för funktionen [Alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md) som nu är tillgänglig i Customer Journey Analytics. |
 | **Augusti 2024** | |
 | Ett exempel på ett B2B-projekt | Ett [användningsfall](/help/use-cases/b2b/example.md) har lagts till som dokumenterar hur du konfigurerar, konfigurerar och rapporterar om profilnivåbaserade B2B-data i Customer Journey Analytics, med den nya [omformningsdatauppsättningen för B2B-sökningar](/help/connections/transform-datasets-b2b-lookups.md)-funktionen. |
 | Uppdaterade användningsfall för dataexport | Fler detaljerade frågeexempel har lagts till i [frågetjänsten (Data Distiller) och datauppsättningarna för export](/help/use-cases/data-export/queryservice-export-datasets.md) för att illustrera hur attribuering ska tillämpas på rätt sätt i sessioner med ett uppslagsfönster. |
@@ -43,7 +43,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Dokumentation om hur du lägger till komponenter i projekt | Allmän information om hur du [lägger till olika typer av komponenter i projekt i Analysis Workspace](/help/components/use-components-in-workspace.md) har lagts till. |
 | Användningsexempel vid dataexport | En uppsättning nya artiklar som beskriver [användningsfall för dataexport](/help/use-cases/data-export/overview.md) och hur du använder Experience Platform och Customer Journey Analytics för att implementera dessa användningsfall |
 | Ny dokumentation för uppgradering från Adobe Analytics till Customer Journey Analytics | För organisationer som uppgraderar från Adobe Analytics till Customer Journey Analytics finns det flera uppgraderingsalternativ och många överväganden att tänka på baserat på organisationens nuvarande Adobe Analytics-implementering och långsiktiga mål.<p>Nu finns det nya dokumentationsresurser som hjälper dig att förstå:</p><ul><li>De olika uppgraderingssökvägarna som finns</li><li>Vilka uppgraderingsalternativ som finns tillgängliga baserat på en organisations aktuella implementering av Adobe Analytics</li><li>Fördelar och nackdelar med varje uppgraderingsväg</li><li>Stegvisa anvisningar för varje uppgraderingsväg</li><li>Att tänka på vid hantering av historiska data</li><li>Och mycket mer!</li></ul><p>[Kom igång med uppgraderingen till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
-| Uppdaterad dokumentation om anpassade datumintervall | Skärmbilder och procedurer som rör [att skapa anpassade datumintervall](/help/components/date-ranges/custom-date-ranges.md) har uppdaterats för att matcha de aktuella produktfunktionerna och designen. |
+| Uppdaterad dokumentation om anpassade datumintervall | Skärmbilder och procedurer som relaterar till [exempeldatumintervall](/help/components/date-ranges/custom-date-ranges.md) har uppdaterats för att matcha de aktuella produktfunktionerna och designen. |
 | Översiktsinformation om Dimensioner | Lagt till information om [dimensioner](/help/components/dimensions/overview.md). |
 | Exempel på källkopplingar | Exempel på källanslutningar som är tillgängliga när du beskriver hur du [använder en källkoppling](/help/data-ingestion/sources.md#use-a-source-connector) för datainhämtning har lagts till. |
 | **April 2024** | |
@@ -141,7 +141,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Jämför Customer Journey Analytics med BI-lösningar | Nytt dokument på en [jämförelse](../getting-started/cja-vs-bi.md) av Customer Journey Analytics till vanliga BI-lösningar. |
 | Uppdatera till publikdokumentation | Nytt avsnitt om [latensöverväganden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency). |
 | Uppdatera till publikdokumentation | När du har skapat en målgrupp skapar Adobe ett [Experience Platform-direktuppspelningssegment för varje ny Customer Journey Analytics-målgrupp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
-| Workspace-kalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Workspace-kalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/components/date-ranges/overview.md#custom-date-ranges). |
 | Mobil styrkort | Nytt dokumentationsavsnitt som beskriver hur du visar och döljer datumintervall för jämförelse. Se [Visa datumintervall för jämförelse](/help/mobile-app/create-scorecard.md#show-comparison-dates) i Customer Journey Analytics. |
 | **Januari 2023** | |
 | Filtrera och ordna tabeller | Uppdaterat innehåll (inklusive att lägga till procedurer och förklara tillgängliga alternativ) i artikeln [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Artikelns namn ändrades från&quot;Sidnumrering, filtrering och sortering&quot;. |

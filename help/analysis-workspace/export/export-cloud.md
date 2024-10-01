@@ -5,7 +5,7 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '2205'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Så här exporterar du fullständiga tabeller från Analysis Workspace:
    | Beskrivning | Lägg till en beskrivning till exporten. Du kan välja att visa beskrivningar som en kolumn på [exportsidan](/help/components/exports/manage-exports.md) när du visar exporter. |
    | Datavy | Markera datavyn som innehåller de komponenter som du vill inkludera i exporten. Listrutan Datavy finns i dialogrutans övre vänstra hörn och kan identifieras med datavyikonen![datavyikon](assets/data-view-icon.png).  <p>**Obs!** Om du väljer en datavy som saknar komponenter som redan ingår i datatabellen, uppmanas du att rensa datatabellen och återskapa den med komponenter som ingår i den valda datavyn. </p> |
    | Fönstret Lookback | Välj den tidsram för rapportering som ska inkluderas i varje exportfil. Du kan välja mellan [!UICONTROL **I dag**], [!UICONTROL **I går**], [!UICONTROL **Senaste 7 dagarna**], [!UICONTROL **Senaste 30 dagarna**], [!UICONTROL **Den här veckan**] och [!UICONTROL **Den här månaden**]. <p>Det här alternativet visas inte när [!UICONTROL **exportfrekvensen**] är inställd på [!UICONTROL **Skicka nu (en gång)**]. |
-   | Datatabell | Visar friformstabellen som du exporterar. Du kan ändra datatabellen genom att dra komponenter från den vänstra listen till tabellen. Tabellen uppdateras dynamiskt när du lägger till komponenter på arbetsytan.  <p>Alla segment som har tillämpats på den fullständiga tabellen i projektet visas högst upp i varje enskild kolumn i tabellen.</p> |
+   | Datatabell | Visar friformstabellen som du exporterar. Du kan ändra datatabellen genom att dra komponenter från den vänstra panelen till tabellen. Tabellen uppdateras dynamiskt när du lägger till komponenter på arbetsytan.  <p>Alla segment som har tillämpats på den fullständiga tabellen i projektet visas högst upp i varje enskild kolumn i tabellen.</p> |
    | Rensa | Raderar innehållet i datatabellen. På så sätt kan du börja skapa en ny tabell direkt i dialogrutan Ny fullständig tabellexport. |
    | Exportfrekvens | Ange schemat för hur ofta exporten ska ske. <p>Du kan välja [!UICONTROL **Skicka nu (en gång)**] om du bara vill skicka exporten en gång. När du väljer det här alternativet påbörjas exporten omedelbart.<p>Du kan också välja att skicka exporten enligt ett angivet schema. När du skickar enligt ett schema kan du välja mellan alternativen [!UICONTROL **Dagligen**], [!UICONTROL **Veckovis**], [!UICONTROL **Månadsvis per veckodag**], [!UICONTROL **Månadsvis per dag i månaden**], [!UICONTROL **Årsvis per dag i månaden**] och [!UICONTROL **Årsvis per specifikt datum**]. </p><p>Tänk på följande när du väljer en exportfrekvens:</p><ul><li>Alternativen i fältet [!UICONTROL **Uppslag**] ändras beroende på vad du väljer här.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Ytterligare konfigurationsfält visas beroende på vilket alternativ du väljer.</li></ul> |
    | Startar | Den dag och tid då den schemalagda exporten ska börja. <p>Det här alternativet är bara tillgängligt när du väljer en schemalagd exportfrekvens.</p> |

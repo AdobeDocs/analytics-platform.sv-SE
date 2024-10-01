@@ -5,9 +5,9 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 När du använder en dimension som innehåller många unika värden kan den resulterande rapporten innehålla för många unika dimensionsobjekt för att visas eller beräknas. Resultaten trunkeras genom att dimensionsartiklar som anses vara minst viktiga tas bort. Dessa optimeringar görs för att bibehålla projekt- och produktprestanda.
 
-När du begär en rapport med för många unika värden visar Analysis Workspace en indikator i dimensionshuvudet som anger att inte alla dimensionsobjekt inkluderas. Exempel: &quot;Rader: 1-50 av mer än 22 343 156&quot;. Nyckelordet &quot;mer än&quot; indikerar att viss optimering har tillämpats på rapporten för att returnera de viktigaste dimensionsobjekten.
+När du begär en rapport med för många unika värden visar Analysis Workspace en indikator i dimensionshuvudet som anger att inte alla dimensionsobjekt inkluderas. Exempel: **[!UICONTROL Rows: 1-50 of more than 22,343,156]**. Nyckelordet **[!UICONTROL more than]** indikerar att viss optimering har tillämpats på rapporten för att returnera de viktigaste dimensionsobjekten.
 
 ![Frihandstabell i Workspace som visar nyckelordet &quot;mer än&quot; för att visa 1-50 av mer än 22 343 156](assets/high-cardinality.png)
 

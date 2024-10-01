@@ -6,97 +6,149 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: e766858a93f8dcfadda2e7518b0d74468ff1ae4b
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 3%
+source-wordcount: '1380'
+ht-degree: 1%
 
 ---
 
 # Översikt över Analysis Workspace {#analysis-workspace-overview}
 
->[!CONTEXTUALHELP]
->id="cja_workspace_fundamentals"
->title="Analysis Workspace Fundamentals"
->abstract="Följ demon nedan för att lära dig några av grunderna i Analysis Workspace: skapa en tabell, lägga till en visualisering, ändra datumintervall med mera."
->additional-url="https://images-tv.adobe.com/mpcv3/7381/7a0633f8-972f-4367-a2ed-b169981efa7b_1681135724.854x480at800_h264.mp4" text="Översikt över Analysis Workspace"
+Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter och sedan dela dessa insikter med andra. Med dra-och-släpp-gränssnittet i webbläsaren kan du utforma din analys, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning samt dela och schemalägga [projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) med vem du vill.
 
-Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter och sedan dela dessa insikter med andra. Med dra-och-släpp-gränssnittet i webbläsaren kan du utforma analyser, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning samt dela och schemalägga projekt med vem du vill.
 
-I följande video visas en kort översikt med exempel på vad som är möjligt.
++++ Se en video som visar möjligheterna med Analytics Workspace.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Områden i Analysis Workspace
+{{videoaa}}
 
-I följande bild och tabell förklaras några av huvudområdena i Analysis Workspace:
 
-![Analysis Workspace-fönstret markerar den vänstra och den vänstra listen, arbetsytan och listrutan för datavy.](assets/analysis-workspace-overvew.png)
++++
 
-| Plats i bild | Namn och funktion |
-|---------|----------|
-| A | **Längst till vänster:** Innehåller flikar för att lägga till paneler, visualiseringar och komponenter i Analysis Workspace. Innehåller även ikonen för datamordlista som används för att öppna datamappningslistan. |
-| B | **Vänster räl:** Beroende på vilken flik som är markerad i det yttersta vänstra fältet innehåller det här området individuella paneler, visualiseringar eller komponenter. |
-| C | **Arbetsyta:** Det här är huvudområdet där du drar innehåll från vänster spår för att skapa projektet. Projektet uppdateras dynamiskt när du lägger till paneler, visualiseringar och komponenter på arbetsytan. |
-| D | **Listrutan Datavy:** För varje panel i Analysis Workspace kan du välja vilken datavy du vill använda som datakälla i den nedrullningsbara menyn för datavy. |
+## Gränssnitt
 
-## Funktioner i Analysis Workspace {#analysis}
+Följande bild och tabell beskriver huvudelementen i Analysis Workspace användargränssnitt:
 
-Nedan följer några av de viktigaste funktionerna i Analysis Workspace:
+![Analysis Workspace-fönstret markerar den vänstra och den vänstra panelen, arbetsytan och listrutan för datavy.](assets/analysis-workspace-overview.png)
 
-### Panel
+| Plats | Namn och funktion |
+|:---------:|----------|
+| ? | Innehåller namnet på projektet, en menystruktur för att få åtkomst till funktioner, en knapp på ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) för att återgå till projektlistan och en **[!UICONTROL Share]**-knapp för att dela ditt Workspace-projekt. <br/>Markera namnet på ditt projekt (till exempel: Exempel på projekt) när som helst för att ändra namnet. <br/>Välj ![StarOutline](/help/assets/icons/StarOutline.svg) om du vill lägga till ditt projekt som ett favoritprojekt ![Star](/help/assets/icons/Star.svg). |
+| ? | **Panelen Knapp:** Innehåller knappar för att komma åt nyckelfunktionerna [i ](#features) i Analysis Workspace: ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Panels]**, ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Visualizations]** och ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** i ditt projekt i Analysis Workspace. Panelen innehåller även en ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]** - och ![Bookmark](/help/assets/icons/Bookmark.svg) **[!UICONTROL Data Dictionary]** -knapp för att öppna dataordlistan. |
+| ? | **Vänster panel:** Det här området innehåller enskilda paneler, visualiseringar, komponenter eller listor. Innehållet beror på vilken knapp som är markerad på knapppanelen. |
+| ? | **Arbetsyta:** Huvudområdet där du drar innehåll från den vänstra panelen för att skapa projektet. Projektet uppdateras dynamiskt när du lägger till paneler, lägger till visualiseringar i paneler och lägger till komponenter i visualiseringar. Du kan skapa flera paneler, och i varje panel kan du skapa flera visualiseringar.<br/>Varje panel baseras på en vald datavy. Den valda datavyn avgör vilka komponenter som är tillgängliga, som mått och mått. Mer information finns i [Paneler - Datavy](/help/analysis-workspace/c-panels/panels.md#data-view). |
 
-**Paneler** används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. På den vänstra listen väljer du den översta ikonen **[!UICONTROL Panels]** för att se en fullständig lista över tillgängliga paneler.
+## Funktioner
 
-Mer information om paneler finns i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
+De viktigaste funktionerna i Analysis Workspace finns på knapppanelen:
 
-![](assets/build-panels.png)
+| Ikon | Funktion | Beskrivning |
+|:---:|---|---|
+| ![Webbsida](/help/assets/icons/WebPage.svg) | **[!UICONTROL Panels]** | Paneler används för att ordna din analys inom ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. Välj ![WebPage](/help/assets/icons/WebPage.svg) på knapppanelen om du vill se en fullständig lista över tillgängliga paneler.<br/>Mer information om paneler finns i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md). |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL Visualizations]** | Visualiseringar som staplar och linjediagram kan användas för att ge liv åt data visuellt. På den vänstra panelen väljer du den mittersta **[!UICONTROL Visualizations]**-ikonen för att visa en fullständig lista över tillgängliga visualiseringar. <br/>Mer information om visualiseringar finns i [Översikt över visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
+| ![Kurva](/help/assets/icons/Curate.svg) | **[!UICONTROL Components]** | Komponenterna i Analysis Workspace består av följande:<ul><li>![Dimensioner](/help/assets/icons/Dimensions.svg) [Dimensioner](/help/components/dimensions/overview.md)</li><li>![Händelse](/help/assets/icons/Event.svg) [Mätvärden](/help/components/apply-create-metrics.md)</li><li>![Segmentering](/help/assets/icons/Segmentation.svg) [Filter](/help/components/filters/filters-overview.md)</li><li>![Kalender](/help/assets/icons/Calendar.svg) [Datumintervall](/help/components/date-ranges/overview.md)</li></ul>Mer information om de här komponenttyperna finns i [Översikt över komponenter](/help/components/overview.md). |
+| ![VisaLista](/help/assets/icons/ViewList.svg) | **[!UICONTROL Table of contents]** | Innehållsförteckningen organiserar alla paneler och visualiseringar i en komprimerbar lista så att du snabbt kan komma åt en viss panel eller visualisering. |
+| ![Bokmärke](/help/assets/icons/Bookmark.svg) | **Dataordlista** | Dataordlistan i Analysis Workspace hjälper både användare och administratörer att hålla reda på och förstå komponenterna i sin Analytics-miljö bättre.<br/>Om du vill veta mer om dataordlistan läser du [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md). |
 
-### Visualiseringar
 
-**Visualiseringar**, t.ex. en stapel eller ett linjediagram, kan användas för att visuellt ge liv åt data. På den vänstra listen väljer du mittenikonen **[!UICONTROL Visualizations]** för att se en fullständig lista över tillgängliga visualiseringar.
+## Meny
 
-Mer information om visualiseringar finns i [Översikt över visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+De flesta funktionerna i Analysis Workspace finns via dra-och-släpp och via snabbmenyer i paneler, visualiseringar och komponenter.
 
-![](assets/build-visualizations.png)
+Funktionaliteten finns även via Workspace-menyn och kortkommandon eller snabbtangenter. Kortkommandon varierar beroende på vilket operativsystem webbläsaren körs på. Se tabellerna nedan för en översikt.
 
-### Komponenter
+Observera att följande symboler kan användas på tangentbordet:
 
-Komponenterna i Analysis Workspace består av följande:
+- **⇧** för **[!UICONTROL *shift *]**.
+- **⌘** för **[!UICONTROL *cmd *]**(kommando).
+- **⌃** för **[!UICONTROL *ctrl *]**(kontroll).
+- **⌥** för **[!UICONTROL *opt *]**(alternativ).
+- **⎇** för **[!UICONTROL *alt *]**(alternativ).
 
-* Mått
+I tabellerna nedan finns en översikt över de tillgängliga menyerna.
 
-* Mätvärden
+| **[!UICONTROL Project]** | Genväg till Mac | Kortkommando i Windows | Beskrivning |
+|---|---|---|---|
+| **[!UICONTROL Create project]** | **[!UICONTROL *shift+cmd+p *]** | **[!UICONTROL *shift+Ctrl+p *]** | Skapa ett nytt projekt. |
+| **[!UICONTROL Create a mobile scorecard]** | | | [Skapa ett nytt mobilstyrkort](/help/mobile-app/create-scorecard.md). |
+| **[!UICONTROL Open...]** | **[!UICONTROL *cmd+o *]** | **[!UICONTROL *Ctrl+o *]** | [Öppna ett befintligt projekt](/help/analysis-workspace/build-workspace-project/save-projects.md#open-another-project). |
+| **[!UICONTROL Open previous version...]** | **[!UICONTROL *opt+cmd+o *]** | **[!UICONTROL *alt+Ctrl+o *]** | [Öppna tidigare versioner av ditt projekt](/help/analysis-workspace/build-workspace-project/save-projects.md#open-previous-version). |
+| **[!UICONTROL Save]** | **[!UICONTROL *cmd+s *]** | **[!UICONTROL *Ctrl+s *]** | [Spara ditt projekt](/help/analysis-workspace/build-workspace-project/save-projects.md#save-projects). |
+| **[!UICONTROL Save with notes...]** | **[!UICONTROL *opt+cmd+s *]** | **[!UICONTROL *alt+Ctrl+s *]** | [Lägg till anteckningar i projektversionen som du sparar](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
+| **[!UICONTROL Save as...]** | **[!UICONTROL *shift+cmd+s *]** | **[!UICONTROL *shift+Ctrl+s *]** | [Spara projektet med ett annat namn och med annan information](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
+| **[!UICONTROL Refresh project]** | **[!UICONTROL *opt+r *]** | **[!UICONTROL *alt+r *]** | Uppdatera projektet. |
+| **[!UICONTROL Download CSV]** | **[!UICONTROL *shift+cmd+v *]** | **[!UICONTROL *shift+Ctrl+v *]** | Hämta projektet som en CSV-fil. |
+| **[!UICONTROL Download PDF]** | **[!UICONTROL *shift+cmd+b *]** | **[!UICONTROL *shift+Ctrl+b *]** | Hämta projektet som ett PDF-dokument. |
+| **[!UICONTROL Project info & settings]** | | | Definiera inställningar för dina projekt, till exempel namn, taggar, färgpalett med mera. |
+| **[!UICONTROL User settings]** | | | [Konfigurera inställningar för Analysis Workspace](/help/analysis-workspace/user-preferences.md). |
 
-* Filter
 
-* Datumintervall
+| **[!UICONTROL Edit]** | Genväg till Mac | Kortkommando i Windows | Beskrivning |
+|---|---|---|---|
+| **[!UICONTROL Undo]** | **[!UICONTROL *cmd+z *]** | **[!UICONTROL *Ctrl+z *]** | Ångra föregående åtgärd. |
+| **[!UICONTROL Redo]** | **[!UICONTROL *cmd+shift+z *]** | **[!UICONTROL *Ctrl+Skift+z *]** | Gör om föregående åtgärd. |
+| **[!UICONTROL Clear all]** | **[!UICONTROL *opt+w *]** | **[!UICONTROL *alt+w *]** | Rensa alla paneler i det aktuella projektet. |
 
-Mer information om de här komponenttyperna finns i [Komponentöversikt](/help/components/overview.md).
+| **[!UICONTROL Insert]** | Genväg till Mac | Kortkommando i Windows | Beskrivning |
+|---|---|---|---|
+| **[!UICONTROL Blank panel]** | **[!UICONTROL *opt+b *]** | **[!UICONTROL *alt+b *]** | Infoga en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). |
+| **[!UICONTROL Media concurrent viewers]** | **[!UICONTROL *opt+h *]** | **[!UICONTROL *alt-h *]** | Infoga en [panel för parallella medievyer](/help/analysis-workspace/c-panels/media-concurrent-viewers.md). |
+| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Infoga en [medieuppspelningstid som har använts på panelen ](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| **[!UICONTROL Media average minute audience]** | **[!UICONTROL *opt+m *]** | **[!UICONTROL *alt+m *]** | Infoga en [medieminarium](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)-målgruppspanel. |
+| **[!UICONTROL Attribution]** | **[!UICONTROL *opt+e *]** | **[!UICONTROL *alt+e *]** | Infoga en [attribueringspanel](/help/analysis-workspace/c-panels/attribution.md). |
+| **[!UICONTROL Freeform]** | **[!UICONTROL *opt+a *]** | **[!UICONTROL *alt+a *]** | Infoga en [friformspanel](/help/analysis-workspace/c-panels/freeform-panel.md). |
+| **[!UICONTROL Quick insights]** | **[!UICONTROL *opt+j *]** | **[!UICONTROL *alt+j *]** | Infoga en [snabbinformationspanel](/help/analysis-workspace/c-panels/quickinsight.md). |
+| **[!UICONTROL Experimentation]** | **[!UICONTROL *opt+x *]** | **[!UICONTROL *alt+x *]** | Infoga en [expertpanel](/help/analysis-workspace/c-panels/experimentation.md). |
+| **[!UICONTROL Freeform table]** | **[!UICONTROL *opt+1 *]** | **[!UICONTROL *alt+1 *]** | Infoga en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)-visualisering. |
+| **[!UICONTROL Line]** | **[!UICONTROL *opt+2 *]** | **[!UICONTROL *alt+2 *]** | Infoga en [Line](/help/analysis-workspace/visualizations/line.md)-visualisering. |
+| **[!UICONTROL Bar]** | **[!UICONTROL *opt+3 *]** | **[!UICONTROL *alt+3 *]** | Infoga en [Bar](/help/analysis-workspace/visualizations/bar.md)-visualisering. |
+| **[!UICONTROL Combo]** | **[!UICONTROL *opt+4 *]** | **[!UICONTROL *alt+4 *]** | Infoga en [kombinationsvisualisering](/help/analysis-workspace/visualizations/combo-charts.md). |
 
-Var och en av de här komponenttyperna kan läggas till i en visualisering (till exempel en Freeform-tabell) för att du ska kunna besvara dina affärsfrågor.
 
-När du har förstått komponentterminologi kan du dra komponenter till visualiseringar (inklusive frihandstabeller) för att [bygga din analys](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
+| **[!UICONTROL Components]** | Genväg till Mac | Kortkommando i Windows | Beskrivning |
+|---|---|---|---|
+| **[!UICONTROL Create filter...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+Ctrl+e *]** | Skapa ett nytt [filter](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Create metric...]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+Ctrl+c *]** | Skapa ett nytt [beräknat mått](/help/components/calc-metrics/calc-metr-overview.md). |
+| **[!UICONTROL Create date range...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+Ctrl+d *]** | Skapa ett nytt [dataområde](/help/components/date-ranges/overview.md). |
+| **[!UICONTROL Create annotation...]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+Ctrl+o *]** | Skapa en ny [anteckning](/help/components/annotations/overview.md). |
+| **[!UICONTROL Create audience...]** | **[!UICONTROL *shift+cmd+u *]** | **[!UICONTROL *shift+Ctrl+u *]** | Skapa en ny [målgrupp](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL Refewsh components]** | **[!UICONTROL *opt+shift+r *]** | **[!UICONTROL *alt+shift+r *]** | Uppdatera komponenterna i projektet. |
 
-![](assets/build-components.png)
+| **[!UICONTROL Share]** | Genväg till Mac | Kortkommando i Windows | Beskrivning |
+|---|---|---|---|
+| **[!UICONTROL Share with Workspace users]** | **[!UICONTROL *cmd+h *]** | **[!UICONTROL *ctrl+h *]** | [Dela projektet med andra Workspace-användare](/help/analysis-workspace/curate-share/share-projects.md#share-with-customer-journey-analytics-users-and-groups-in-your-organization). |
+| **[!UICONTROL Share with anyone]** | **[!UICONTROL *opt+l *]** | **[!UICONTROL *alt+l *]** | [Dela en skrivskyddad version av projektet med alla](/help/analysis-workspace/curate-share/share-projects.md#share-a-link-to-a-project). |
+| **[!UICONTROL Send file]** | **[!UICONTROL opt+s]** | **[!UICONTROL *alt+s *]** | [Skicka projektet som en CSV- eller PDF-fil till andra mottagare](/help/analysis-workspace/curate-share/send-schedule-files.md). |
+| **[!UICONTROL Schedule file export]** | **[!UICONTROL *shift+opt+s *]** | **[!UICONTROL *shift+alt+s *]** | [Skicka projektet enligt ett schema som en CSV- eller PDF-fil till andra mottagare](/help/analysis-workspace/curate-share/send-schedule-files.md). |
+| **[!UICONTROL Curate project data]** | **[!UICONTROL *shift+cmd+g *]** | **[!UICONTROL *shift+Ctrl+g *]** | [Kuratera projektdata](/help/analysis-workspace/curate-share/curate.md). |
 
-### Dataordlista
-
-Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö.
-
-Mer information om dataordlistan finns i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).
+| Hjälp | Genväg till Mac | Kortkommando i Windows | Beskrivning |
+|---|---|---|---|
+| **[!UICONTROL Videos]** | | | Öppna Customer Journey Analytics YouTube-kanalen på en ny flik i webbläsaren. |
+| **[!UICONTROL Help documentation]** | | | Öppna dokumentationen (du läser just nu ...) på en ny flik i webbläsaren. |
+| **[!UICONTROL Help forum]** | | | Öppna Adobe Analytics Experience League Community-forumet på en ny flik i webbläsaren. |
+| **[!UICONTROL Hotkeys]** | | | Visa en översikt över de snabbtangenter (kortkommandon) som du kan använda i Workspace. |
+| **[!UICONTROL Enable debugger]** |  | | Aktivera felsökaren. Projektet läses in igen. |
+| **[!UICONTROL Disable debugger]** | | | Inaktivera felsökaren. Projektet läses in igen. |
+| **[!UICONTROL Performance]** | | | Visa en dialogruta med mätvärden för **[!UICONTROL Analysis Workspace performance]**. Använd **[!UICONTROL Download as CSV]** för att hämta en CSV-fil med prestandamätningar. |
+| **[!UICONTROL About Workspace]** | | | Visa en **[!UICONTROL About Analysis Workspace]**-dialogruta med versionsinformation, funktionsåtkomstnivåer och aktiva funktionsflaggor. |
 
 ## Datakällor
 
-Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering. Här finns mer information om hur du kan [hantera datakällor](/help/analysis-workspace/visualizations/t-sync-visualization.md).
+Du synkroniserar visualiseringar för att kontrollera vilken datatabell eller datakälla som motsvarar en visualisering. Mer information finns i [Hantera datakällor](/help/analysis-workspace/visualizations/t-sync-visualization.md).
 
-## Börja använda Analysis Workspace
+## Använd Analysis Workspace
 
-### Logga in på Adobe Analytics {#login}
 
-Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics på [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Analysis Workspace projektsida visas som standard. Om du har valt ett specifikt projekt visas det projektet som standard.
+Så här börjar du använda Analysis Workspace:
 
-### Skapa ett projekt {#new-project}
+1. Logga in på [Adobe Experience Cloud](https://experience.adobe.com).
+1. Välj **[!UICONTROL Customer Journey Analytics]** i appväljaren ![App](/help/assets/icons/Apps.svg) längst upp till höger i gränssnittet.
+1. Sidan **[!UICONTROL Projects]** i Analysis Workspace visas som standard. Om ett visst projekt har valts ut åt dig eller du arbetat med det nyligen, visas det projektet som standard.
+
+### Skapa ett projekt
 
 En analys i Analysis Workspace kallas [projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
@@ -108,13 +160,11 @@ Projekt kan ordnas i mappar och undermappar enligt beskrivningen i [Mappar i Ana
 
 När du skapar en analys i Analysis Workspace sparas ditt arbete [automatiskt](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
-När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Mer information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
+När du är klar med projektet och samlar in åtgärdbara insikter kan andra vilja förbruka projektet. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Mer information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Ytterligare resurser {#resources}
 
-* Adobe erbjuder hundratals [självstudiekurser om Analytics-videor](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
-* Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#analytics).
-* Ett bra sätt att bekanta sig med Analysis Workspace är att använda mallen Analysis Workspace självstudiekurs. I den här mallen beskrivs vanliga termer och steg för hur du bygger din första analys i Workspace. Så här startar du självstudiekursen:
-   1. På fliken [!UICONTROL **Workspace**] i Adobe Analytics väljer du **[!UICONTROL Learning]** till vänster.
-   1. Välj **[!UICONTROL Open Tutorial]**.
-      ![](assets/training-tutorial.png)
+- Sidan [Learning landing](/help/getting-started/landing.md#learning) i Customer Journey Analytics. Den här sidan är ett bra sätt att lära känna Analysis Workspace. Speciellt om Workspace Basic. I den här mallen beskrivs vanliga termer och steg för hur du skapar din första analys i Workspace
+- Adobe erbjuder hundratals [självstudiekurser om Analytics-videor](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
+- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
+

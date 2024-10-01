@@ -4,16 +4,16 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: cfaf29b8dd92325a4e5fdd2a960de798178db933
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3032'
 ht-degree: 1%
 
 ---
 
 # Referens - avancerade funktioner
 
-Du får åtkomst till dessa funktioner genom att kontrollera **[!UICONTROL Show Advanced]** i listrutan **[!UICONTROL Functions]**.
+Du får åtkomst till de här funktionerna genom att välja **[!UICONTROL Show all]** under listan ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** på panelen Komponenter. Bläddra ned för att se en lista över avancerade funktioner.
 
 ## Tabellfunktioner kontra radfunktioner
 
@@ -26,6 +26,7 @@ Den anger om nollor ska inkluderas i beräkningen. Ibland betyder noll&quot;inge
 Om du till exempel har ett intäktsmått och sedan lägger till ett sidvymått i rapporten finns det plötsligt fler rader för dina intäkter som alla är noll. Du vill antagligen inte att detta ska påverka MEAN, MIN, QUARTILE osv. beräkningar som du har i intäktskolumnen. I det här fallet kontrollerar du parametern include-zeros.
 
 Å andra sidan, om du har två mätvärden som du är intresserad av, kan det vara svårt att säga att en har ett högre genomsnitt eller ett lägre värde, eftersom vissa av raderna var nollor, så du skulle inte kontrollera parametern så att den inkluderar nollorna.
+
 
 ## OCH
 
@@ -56,7 +57,7 @@ Approximate Count Distinct (dimension)
 |---|---|
 | *dimension* | Dimensionen som du vill ha det ungefärliga distinkta artikelantalet för. |
 
-## Exempel på användningsfall
+### Exempel på användningsfall
 
 Approximate Count Distinct (kundens ID-eVar) är ett vanligt användningsfall för den här funktionen.
 
@@ -68,7 +69,7 @@ Så här kan måttet&quot;Approximate Customers&quot; användas vid rapportering
 
 ![Frihandstabell med unika besökare och ungefärliga kunder ](assets/approx-customers.png)
 
-## Jämföra räkningsfunktioner
+### Jämföra räkningsfunktioner
 
 Approximate Count Distinct() är en förbättring av funktionerna Count() och RowCount() eftersom måttet som skapas kan användas i alla dimensionella rapporter för att återge ett ungefärligt antal objekt för en separat dimension. Exempel: antalet kund-ID:n som används i en rapport av typ av mobil enhet.
 

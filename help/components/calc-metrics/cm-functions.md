@@ -4,16 +4,17 @@ description: Med beräkningsverktyget kan du använda statistiska och matematisk
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
 
 # Referens - grundläggande funktioner
 
-Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
+
+Med verktyget [Beräknade mätvärden](cm-workflow/cm-build-metrics.md) kan du använda statistiska och matematiska funktioner.
 
 Här är en lista i alfabetisk ordning över funktionerna och deras definitioner.
 
@@ -21,9 +22,12 @@ Här är en lista i alfabetisk ordning över funktionerna och deras definitioner
 >
 >Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck för mätvärden. [!DNL MAXV(metrics)] tillåter till exempel även [!DNL MAXV(PageViews + Visits).]
 
+
 ## Tabellfunktioner kontra radfunktioner
 
 En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen.
+
+
 
 ## Absolut värde (rad)
 
@@ -101,9 +105,9 @@ EXP(metric)
 
 Strömoperator
 
-<pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*... (y gånger)
-</pre>
+
+pow(x,y) = x<sup>y</sup> = x *x* x*... (y gånger)
+
 
 ## Medel (tabell)
 
@@ -313,7 +317,7 @@ För att kunna beräkna en varians tittar du på en hel sifferkolumn. Från den 
 
 När du har itererat över hela kolumnen får du en totalsumma. Sedan dividerar du summan med antalet objekt i kolumnen. Talet är variansen för kolumnen. Det är ett enda tal. Den visas dock som en kolumn med siffror.
 
-Anta att du har en kolumn med tre objekt:
+Om det är en kolumn med tre objekt:
 
 1
 

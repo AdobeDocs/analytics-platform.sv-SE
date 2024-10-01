@@ -5,16 +5,16 @@ title: Skapa delningsbara länkar
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Skapa delningsbara länkar
 
-Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Vissa länktyper kräver att mottagaren loggar in på Adobe Analytics innan han eller hon kommer åt projektet, medan andra inte gör det.
+Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Vissa länktyper kräver att mottagaren loggar in på Customer Journey Analytics innan han eller hon kommer åt projektet, medan andra inte gör det.
 
 ## Få en projektlänk att dela med andra Workspace-användare {#project-link}
 
@@ -32,8 +32,8 @@ Mer information finns i&quot;Dela ett projekt med vem som helst (ingen inloggnin
 
 Du kan också dela en länk till en viss del av ett projekt, till exempel en panel eller en enskild visualisering. Detta kallas ibland för koncernintern länkning. Detta kan vara användbart för att dra användarnas uppmärksamhet till viktiga insikter i projektet.
 
-* Högerklicka på **[!UICONTROL Get panel link]** från valfritt panelhuvud
-* Högerklicka på **[!UICONTROL Get visualization link]** från en tabell eller ett visualiseringshuvud
+* Välj **[!UICONTROL Get panel link]** på snabbmenyn för en panelrubrik
+* Välj **[!UICONTROL Get visualization link]** på snabbmenyn för ett visualiseringshuvud
 
 [Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
 

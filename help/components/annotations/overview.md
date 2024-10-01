@@ -5,47 +5,41 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Översikt över anteckningar
 
-Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till organisationen. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden. Du kan anteckna ett datum eller datumintervall med kända dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatstrafiken, användningen av mobilappar, intäkterna eller andra mätvärden.
+Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till andra intressenter i organisationen. Anteckningar gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden. Du kan anteckna ett datum eller datumintervall med kända dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatstrafiken, användningen av mobilappar, intäkterna eller andra mätvärden.
 
-Anta att du delar projekt med din organisation. Om trafiken har ökat mycket på grund av en marknadsföringskampanj kan du skapa en kommentar om startdatum för kampanjen och ange den som omfattning för hela datavyn. När användarna visar datauppsättningar som innehåller det datumet, ser de anteckningen i sina projekt, tillsammans med deras data.
+Du delar till exempel projekt med din organisation. Om dina erbjudanden har minskat avsevärt kan du skapa en **ogiltig offers**-anteckning och omfång för hela datavyn. När användarna visar datauppsättningar som innehåller det datumet, ser de anteckningen i sina projekt, tillsammans med deras data.
 
-![Linjediagram med anteckning markerad.](assets/multi-day.png)
+![Linjediagram med anteckning markerad.](assets/annotation-example.png)
 
-Tänk på detta:
+Anteckningar kan gälla för:
 
-* Anteckningar kan knytas till ett enstaka datum eller till ett datumintervall.
+* Ett enstaka datum eller ett datumintervall.
 
-* De kan användas på hela datauppsättningen eller på angivna mått, dimensioner eller filter.
+* Hela datamängden eller specifika mått, dimensioner eller filter.
 
-* De kan gälla för det projekt i vilket de skapades (standard) eller för alla projekt.
+* Det projekt i vilket anteckningar skapas (standard) eller i alla projekt.
 
-* De kan gälla för datavyn som de skapades i (standard) eller för alla datavyer.
+* Datavyn där anteckningar skapas (standard) eller alla datavyer.
 
-## Behörigheter
+Se [Skapa anteckningar](/help/components/annotations/create-annotations.md) för de olika alternativ som är tillgängliga för att skapa anteckningar. Sedan skapar, ändrar och sparar du anteckningar i [Anteckningsverktyget](create-annotations.md#annotation-builder).
 
-Som standard kan bara administratörer skapa anteckningar. Användare har rätt att visa anteckningar på samma sätt som andra Analytics-komponenter (t.ex. filter, beräknade värden).
+Du använder [Anteckningshanteraren](manage-annotations.md) för att hantera anteckningar.
 
-Administratörer kan dock ge användare behörigheten [!UICONTROL Annotation Creation] (analysverktyg) via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
-
-## Aktivera eller inaktivera anteckningar {#annotations-on-off}
+## Aktivera eller inaktivera anteckningar
 
 Anteckningar kan aktiveras och avaktiveras på flera nivåer:
 
-* På visualiseringsnivå: [!UICONTROL Visualization] inställningar > [!UICONTROL Show annotations]
-
-* På projektnivå: [!UICONTROL Project info & settings] > [!UICONTROL Show annotations]
-
-* På användarnivå: [!UICONTROL Components] > [!UICONTROL User preferences] > [!UICONTROL Data] > [!UICONTROL Show annotations]
-
-![Dialogrutan Visualiseringsinställningar med Visa anteckningar markerat](assets/show-ann.png)
-
-![Användarinställningar markerar Visa anteckningar.](assets/show-ann2.png)
+| Nivå | Använda... |
+|---|---|
+| **Visualisering** | Aktivera eller inaktivera ![Inställning](/help/assets/icons/Setting.svg) > **[!UICONTROL Settings]** > **[!UICONTROL Show annotations]**.<br/>![Aktivera inaktivering av anteckningar för en visualisering](/help/components/annotations/assets/annotations-visualization.png) |
+| **Projekt** | På en projektmeny för Workspace väljer du **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** och aktiverar eller inaktiverar **[!UICONTROL Show annotations]**.<br/>![Aktivera inaktivering av anteckningar för ett projekt](/help/components/annotations/assets/annotations-project.png) |
+| **Användare** | På fliken **[!UICONTROL Components]** väljer du **[!UICONTROL Preferences]** eller från en projektmeny för Workspace väljer du **[!UICONTROL Project]** > **[!UICONTROL User preferences]**. <br/>I **[!UICONTROL Preferences]** väljer du **[!UICONTROL Projects & Analysis]**. Välj **[!UICONTROL Data]** i det vänstra flikfältet. Längst ned aktiverar eller inaktiverar du **[!UICONTROL Show annotations]** under rubriken **[!UICONTROL Freeform table]**.<br/>![Aktivera inaktiverade anteckningar för en användare](/help/components/annotations/assets/annotations-user.png) |

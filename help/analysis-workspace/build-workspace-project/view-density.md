@@ -4,26 +4,42 @@ title: Visa densitet
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 373d0c9989fb692da23efe371c65344093801140
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
 # Visa densitet
 
-Genom att justera visningsdensiteten kan du se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra listen, frihandstabeller och kohorttabeller.
-Det finns tre alternativ när du växlar visningsdensitet med alternativknappar:
+Genom att justera visningsdensiteten kan du se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. Tre alternativ är tillgängliga:
 
-- **[!UICONTROL Compact]**: Det här är den version som har den mest komprimerade vyn.
-- **[!UICONTROL Comfortable]**: Det lämnar lite mer utfyllnad än den komprimerade versionen.
-- **[!UICONTROL Expanded]** (standard): Det här är vyn som du är van vid i Workspace.
+>[!BEGINTABS]
 
-![Vydensiteten Kompakt, bekväm och Expanderad.](assets/view-density.png)
+>[!TAB Kompakt]
+
+Det här är den version som har den mest komprimerade vyn.
+
+![Täthet för den komprimerade vyn.](assets/view-density-compact.png)
+
+>[!TAB Bekvämlig]
+
+Detta är den vy du är van vid i Workspace.
+
+![Täthet för utökad vy.](assets/view-density-comfortable.png)
+
+>[!TAB Utökad]
+
+Detta är den vy du är van vid i Workspace.
+
+![Täthet för utökad vy.](assets/view-density-expanded.png)
+
+>[!ENDTABS]
+
 
 Så här anger du visningsdensitet:
 
-1. I Workspace går du till **[!UICONTROL Projects]** > **[!UICONTROL Project Info and Settings]**.
+1. I Workspace går du till **[!UICONTROL Projects]** > **[!UICONTROL Project info and settings]**.
 
-1. Välj bland de tre alternativen ovan och klicka på **[!UICONTROL Save]**.
+1. Välj ett **[!UICONTROL View density]**-alternativ och välj **[!UICONTROL Save]**.

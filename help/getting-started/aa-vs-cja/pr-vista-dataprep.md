@@ -4,9 +4,9 @@ description: Läs mer om dataomvandling med bearbetningsregler och VISTA jämfö
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe Analytics [bearbetningsregler och VISTA-regler](https://experienceleague.a
 
 Data som samlas in av och lagras i Adobe Analytics kan omformas antingen med bearbetningsregler eller VISTA-regler eller både och. Men rapportsviter som sedan vidarebefordras till plattformen via Analytics-källkopplingen kan omvandlas ytterligare en gång med Data Prep. Detta kan vara önskvärt av flera skäl:
 
-* **Åtgärdar schemaskillnader mellan rapportsviter för användning i Customer Journey Analytics och/eller RTCDP**. Anta att rapportsvit A definierar `eVar1` som &quot;Sökord&quot; och rapportsvit B definierar `eVar2` som &quot;Sökord&quot;. Du kan använda dataprep för att mappa de två olika eVars-elementen till ett gemensamt fält som innehåller data från båda eVars-elementen. Detta gör det möjligt att [kombinera rapportsviter med olika scheman](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html) i en [Customer Journey Analytics-anslutning](/help/connections/overview.md) eller för användning i [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html).
+* **Åtgärdar schemaskillnader mellan rapportsviter för användning i Customer Journey Analytics och/eller RTCDP**. En rapportsvit A definierar till exempel `eVar1` som &quot;Sökord&quot; och rapportsvit B definierar `eVar2` som &quot;Sökord&quot;. Du kan använda dataprep för att mappa de två olika eVars-elementen till ett gemensamt fält som innehåller data från båda eVars-elementen. Detta gör det möjligt att [kombinera rapportsviter med olika scheman](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html) i en [Customer Journey Analytics-anslutning](/help/connections/overview.md) eller för användning i [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html).
 * **Mappar `eVars` fält till semantiskt meningsfulla namn**. `eVars` och `props` som kommer via Analytics-källkopplingen mappas till fält som _\_experience.analytics.customDimensions.eVars.eVar1_. Dataprep kan användas för att mappa `eVar`- och `prop`-fält till nya fält som har mer meningsfulla namn för användarna eller som matchar namn som kommer från andra datakällor. (Detta kan även uppnås på andra sätt, till exempel genom att byta namn på fälten i en [Customer Journey Analytics datavy](/help/data-views/create-dataview.md).)
 * **Omformar vanligtvis data**. Datapersonen har hundratals mappningsfunktioner som kan användas för att beräkna och beräkna nya fält baserat på data som kommer via Analytics-källkopplingen. Du kan dela upp avgränsade fält i separata fält. Du kan kombinera fält. Du kan ändra strängar. Du kan extrahera information från ett fält baserat på reguljära uttryck och mycket annat.
 

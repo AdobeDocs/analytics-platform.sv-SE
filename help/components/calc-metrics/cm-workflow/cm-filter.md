@@ -3,35 +3,34 @@ description: Filtrera efter taggar, datavy, ägare och andra filter (Visa alla, 
 title: Filtrera beräknade värden
 feature: Calculated Metrics
 exl-id: 902da464-14de-45b9-bd92-d2db064cb095
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
 
-# Filtrera beräknade värden
+# Filtrera listan med beräknade värden
 
-Filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd).
+Du kan filtrera listan med beräknade värden. Genom att använda ett filter på beräknade värden blir det enklare att hitta de beräknade mätvärden som är tillgängliga för dig, och att hantera beräknade mätvärden från [hanteraren för beräknade mätvärden](cm-manager.md).
 
-Filtrering gör det enklare att söka efter beräknade värden i segmentets bana.
 
-1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Calculated metrics]**.
+Så här filtrerar du listan med beräknade värden:
 
-1. Klicka på ikonen **[!UICONTROL Filters]** i hanteraren för beräknade värden: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
+1. Välj ![Filter](/help/assets/icons/Filter.svg) för att öppna panelen Filter. Om du behöver mer utrymme för filterlistan kan du stänga panelen genom att välja ![Filter](/help/assets/icons/Filter.svg) en gång till.
+1. Välj filter från någon av de tillgängliga [filteravsnitten](#filter-sections).
 
-   ![Beräknat måtthanterare som visar filterikonen och tillgängliga filter som taggar, rapportsviten och ägare.](assets/filtering.png)
+   >[!INFO]
+   >
+   >*Objekt* refererar till filterobjekt som visas i listan [Beräknade mått](cm-manager.md#filters-list).
+   > 
 
-1. Följande filter är tillgängliga:
+## Filtrera avsnitt
 
-   | Filternamn | Beskrivning |
-   |---|---|
-   | Taggar | Gör att du kan filtrera på beräknade värden med specifika [taggar](/help/components/calc-metrics/cm-workflow/cm-tagging.md). Som standard visas kolumnen Taggar. |
-   | Ägare | Gör att du kan filtrera beräknade värden efter ägare. |
-   | Datavy | Gör att du kan filtrera beräknade mätvärden efter datavy. |
-   | Andra filter > Visa alla | **(Endast admin)** Visar alla beräknade mått, deras ägare och det senaste datumet som de ändrades. |
-   | Andra filter > Mitt | Visar alla beräknade värden som du äger. |
-   | Andra filter > Delas med mig | Visar alla beräknade värden som andra [har delat](/help/components/calc-metrics/cm-workflow/cm-sharing.md) med dig. |
-   | Andra filter > Favoriter | Visar alla beräknade värden som du har markerat som [Favoriter](/help/components/calc-metrics/cm-workflow/cm-favorite.md). |
-   | Andra filter > Godkänt | Visar alla officiellt [godkända](/help/components/calc-metrics/cm-workflow/cm-approving.md) beräknade mätvärden. |
-   | Sök efter beräknade värden | Gör att du kan söka efter beräknade värden efter namn. |
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{otherfiltersfiltersection}}
+
+
+Listan [Beräknade mätvärden](cm-manager.md#filters-list) uppdateras automatiskt baserat på din filterkonfiguration. Du kan se de konfigurerade filtren i det [aktiva filterfältet](cm-manager.md#active-filter-bar).

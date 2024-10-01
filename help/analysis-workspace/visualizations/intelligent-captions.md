@@ -1,12 +1,12 @@
 ---
-description: Använd intelligenta bildtexter för att generera insikter på naturens språk för att snabbt identifiera trender inom visualiseringar.
+description: Använd intelligenta bildtexter för att generera naturtrogna insikter för att identifiera trender inom visualiseringar.
 title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
+source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Intelligenta bildtexter inriktas på följande:
 
 ## Starta intelligenta bildtexter {#launch}
 
-Om du vill starta automatiskt genererade bildtexter för en radvisualisering klickar du på ikonen **[!UICONTROL Intelligent captions]** längst upp till höger i visualiseringen.
+Om du vill starta automatiskt genererade bildtexter för en radvisualisering väljer du ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligent captions]** längst upp till höger i visualiseringen.
 
 ![Startanalysfönstret som visar trenden för intelligenta bildtexter för produktvyer. ](assets/intell-caps-1.png)
 
 Naturliga språkkunskaper genereras nu.
 
-Kom ihåg
+Kom ihåg att:
 
 * Du behöver minst 3 datapunkter för att kunna generera bildtexter. Annars kan du få ett fel som **[!UICONTROL Not enough data to analyze]**.
 

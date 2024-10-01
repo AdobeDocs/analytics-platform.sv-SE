@@ -6,43 +6,42 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
 
 # Dela upp dimensioner i Workspace
 
-Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
+Ni kan dela upp era data på ett obegränsat sätt för just era behov, bygga frågor med relevanta mått, dimensioner, filter, tidslinjer och andra analysvärden.
 
-Dela upp era data på obegränsade sätt för just era behov; bygg frågor med relevanta mått, dimensioner, filter, tidslinjer och andra analysvärden.
+1. I en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) väljer du **[!UICONTROL Breakdown]** ![SparronRight](/help/assets/icons/ChevronRight.svg) på snabbmenyn för en eller flera markerade rader.
 
-1. [Skapa ett projekt](/help/analysis-workspace/home.md) med en datatabell.
-1. Högerklicka på ett radobjekt i datatabellen och välj **[!UICONTROL Breakdown]** > *`<item>`*.
+   ![Stegresultat som visar Skapa avisering från markering.](assets/breakdown.png)
 
-   ![Stegresultat som visar Skapa avisering från markering.](assets/fa_data_table_actions.png)
+1. På undermenyn väljer du **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** eller **[!UICONTROL Data ranges]** och sedan ett alternativ.
 
-   Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppsfilter över valda tidsperioder. Du kan även gå ned mer i detalj.
+Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppsfilter över valda tidsperioder. Du kan även gå ned mer i detalj.
 
-   >[!NOTE]
-   >
-   >Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen ökar vid export av uppdelningar.
+>[!NOTE]
+>
+>Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen ökar vid export av uppdelningar.
 
-**Video: Dimensioner i Analysis Workspace**
+## Uppdelning efter position
 
->[!VIDEO](https://video.tv.adobe.com/v/23971)
+Som standard är uppdelningar fasta på statiska radobjekt. Tänk dig att du har delat upp de tre viktigaste sidobjekten (startsida, sökresultat, utcheckning) efter marknadsföringskanal. Sedan lämnar du projektet och återvänder två veckor senare. När du öppnar projektet igen har de tre översta sidorna ändrats, och nu är startsidan, sökresultaten och utcheckningen de 4-6 översta sidorna istället. Som standard visas dina Marketing Channel-indelningar fortfarande under Hemsida, Sökresultat och Utcheckning, även om de nu finns på raderna 4-6.
 
-**Video: Dimensioner**
+**Uppdelning efter position** delar däremot alltid upp de tre översta objekten, oavsett vilka de är. När du öppnar ditt projekt på nytt är Marketing Channel-uppdelningarna kopplade till de tre översta sidorna i tabellen. Och inte till startsidan, sökresultat och utcheckning, som nu finns på raderna 4-6. Se [Radinställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) om hur du konfigurerar den här inställningen.
 
->[!VIDEO](https://video.tv.adobe.com/v/23969)
+
 
 ## Tillämpa attribueringsmodeller på uppdelningar
 
-Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar på **[!UICONTROL Edit]**:
+Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en nedbrytning håller du pekaren över uppdelningsmodellen och väljer **[!UICONTROL Edit]**.
 
-![Jämförelse av orderattribut som visar brytningsinställningarna](assets/breakdown_settings.png)
+![Jämförelse av orderattribut som visar brytningsinställningarna](assets/breakdown-attribution.png)
 
 Detta är det förväntade beteendet när du tillämpar attribueringsmodeller på uppdelningar eller redigerar dem:
 
@@ -52,7 +51,15 @@ Detta är det förväntade beteendet när du tillämpar attribueringsmodeller p�
 
 * Om det redan finns attribut i kolumnträdet påverkas bara den du redigerar om du ändrar attributet.
 
-## Videor
++++ Visa videor som illustrerar uppdelningar
+
+DIMENSIONER i ANALYSIS WORKSPACE
+
+>[!VIDEO](https://video.tv.adobe.com/v/23971)
+
+Uppdelningar av Dimensioner
+
+>[!VIDEO](https://video.tv.adobe.com/v/23969)
 
 Lägga till mått och mätvärden i ditt projekt i Analysis Workspace:
 
@@ -65,3 +72,7 @@ Arbeta med dimensioner i en friformstabell:
 Dimension uppdelad efter position:
 
 >[!VIDEO](https://video.tv.adobe.com/v/24033)
+
+{{videoaa}}
+
++++

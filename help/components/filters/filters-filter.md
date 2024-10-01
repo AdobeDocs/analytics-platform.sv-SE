@@ -4,33 +4,53 @@ title: Filtrera filterlistan
 feature: Filters
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '177'
+ht-degree: 0%
 
 ---
 
 # Filtrera filterlistan
 
-Filtrera listan med filter i Filterhanteraren efter taggar, ägare och andra filter (Visa alla, Min, Delad med mig, Favoriter och Godkänd).
+Du kan filtrera listan med filter. Genom att använda ett filter på filter blir det enklare att hitta de filter som är tillgängliga för dig och hantera filter från [Filterhanteraren](manage-filters.md).
 
-Filtrering gör det enklare att söka efter filter.
+>[!NOTE]
+>
+>Filterlistan refererar till [filterlistan](manage-filters.md#filters-list) som en del av [Filterhanteraren](manage-filters.md). Du kan filtrera listan med hjälp av ![Filter](/help/assets/icons/Filter.svg) [panelen Filter](manage-filters.md#filter-panel), som ingår i samma [Filterhanterare](manage-filters.md).
+>
 
-1. Klicka på ikonen **[!UICONTROL Filters]** i Filterhanteraren: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![Filterhanteraren visar filterikonen och tillgängliga filter.](assets/filtering.png)
+Så här filtrerar du filterlistan:
 
-2. Följande filter är tillgängliga:
+1. Välj ![Filter](/help/assets/icons/Filter.svg) för att öppna panelen Filter. Om du behöver mer utrymme för filterlistan kan du stänga panelen genom att välja ![Filter](/help/assets/icons/Filter.svg) en gång till.
+1. Välj filter från någon av de tillgängliga [filteravsnitten](#filter-sections).
 
-   | Filternamn | Beskrivning |
-   |---|---|
-   | Taggar | Gör att du kan filtrera listan med filter med specifika [taggar](/help/components/filters/filters-tag.md). Som standard visas kolumnen Taggar. |
-   | Ägare | Gör att du kan filtrera listan med filter efter ägare. |
-   | Datavy | Gör att du kan filtrera efter datavy. |
-   | Andra filter > Visa alla | **(Endast admin)** Visar alla filter, deras ägare och det senaste datum som de ändrades. |
-   | Andra filter > Mitt | Visar alla filter som du äger. |
-   | Andra filter > Delat med mig | Visar alla filter som andra [har delat](/help/components/filters/filters-share.md) med dig. |
-   | Andra filter > Favoriter | Visar alla filter som du har markerat som [Favoriter](/help/components/filters/filters-favorite.md). |
-   | Andra filter > Godkänt | Visar alla officiellt [godkända](/help/components/filters/filters-approve.md) segment. |
-   | Sök segment | Gör att du kan söka efter segment efter namn. |
+   >[!INFO]
+   >
+   >*Objekt* refererar till de filterobjekt som visas i [filterlistan](manage-filters.md#filters-list).
+   > 
+
+## Filtrera avsnitt
+
+Följande filteravsnitt är tillgängliga:
+
+### Taggar
+
+{{tagfiltersection}}
+
+### Datavy
+
+{{dataviewfiltersection}}
+
+### Ägare
+
+{{ownerfiltersection}}
+
+
+### Andra filter
+
+{{otherfiltersfiltersection}}
+
+
+[Filterlistan](manage-filters.md#filters-list) uppdateras automatiskt baserat på din filterkonfiguration. Du kan se de konfigurerade filtren i det [aktiva filterfältet](manage-filters.md#active-filter-bar).

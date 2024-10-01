@@ -1,25 +1,39 @@
 ---
-description: Läs om felmeddelandena i Adobe Analysis Workspace och dess tillhörande komponenter
-title: Vanliga felmeddelanden i Analysis Workspace
+description: Läs mer om felmeddelandena och hur du felsöker i Adobe Analysis Workspace
+title: Vanliga fel och felsökning i Analysis Workspace
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: fe089afb2022d8c4b50346bb81d6ba4ad6404014
+source-git-commit: ec32b7bca6fd4fc4b2652d1265048ec788f19718
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 0%
+source-wordcount: '507'
+ht-degree: 9%
 
 ---
 
-# Vanliga felmeddelanden
+# Fel och felsökning
 
-Det kan uppstå fel vid interaktion med Analysis Workspace som också påverkar prestandan. Nedan visas de vanligaste feltyperna, varför de inträffar och optimeringar som kan göras.
+Det kan uppstå fel vid interaktion med Analysis Workspace som kan påverka dess funktioner eller prestanda. Nedan visas de vanligaste feltyperna, varför de inträffar och optimeringar som kan göras.
 
-| Felmeddelande | Varför inträffar detta? | Optimering |
+## Felmeddelanden
+
+Några vanliga felmeddelanden du kan se när du använder Analysis Workspace:
+
+| Felmeddelande | Varför inträffar felet? | Optimering |
 | --- | --- | --- |
 | [!UICONTROL The data view is experiencing unusually heavy reporting. Please try again later.] | Din organisation försöker köra för många samtidiga begäranden mot en viss datavy. Medarbetare till det här felet är API-begäranden, schemalagda projekt, schemalagda rapporter, schemalagda aviseringar och samtidiga användare som gör rapporteringsförfrågningar. | Sprid era förfrågningar och scheman för datavyn jämnare under dagen.<p>Administratörer kan använda [Rapporteringsaktivitetshanteraren för att identifiera och avbryta begäranden](/help/reporting-activity-manager/reporting-activity-overview.md) som förbrukar rapporttapacitet.</p> |
-| [!UICONTROL This report is too complex. Please review best practices for building Analysis Workspace reports.] | Din rapporteringsbegäran är för stor och kan inte utföras. Medarbetare till det här felet är timeout på grund av att begäran är komplex. | Förenkla begäran genom att förkorta datumintervallet, förenkla filtervillkoren eller ta bort vissa kolumner eller rader i tabellen. Eller överväg att dela upp tabellen i separata begäranden. |
+| [!UICONTROL This report is too complex. Please review best practices for building Analysis Workspace reports.] | Din rapporteringsbegäran är för stor och kan inte utföras. Medarbetare till det här felet är timeout på grund av att begäran är komplex. | Förenkla er begäran. Du kan t.ex. korta ned datumintervallet, förenkla filtervillkoren eller ta bort vissa kolumner eller rader i tabellen. Du kan också dela upp tabellen i separata begäranden. |
 | [!UICONTROL The data view is currently exceeding its reporting capacity. Please simplify the request or try again later.] | Din organisation försöker köra för många samtidiga begäranden mot en viss datavy. Medarbetare till det här felet är API-begäranden, schemalagda projekt och samtidiga användare som gör rapporteringsförfrågningar. | Sprid era förfrågningar och scheman för datavyn jämnare under dagen. |
 | [!UICONTROL A system error has occurred. Please log a Customer Care request under **[!UICONTROL Help > Submit Support Ticket]** and include your error code.] | Adobe har ett problem som måste lösas. | Skicka felkoden till kundtjänst. |
-| [!UICONTROL Error 500: Failed to load page] | Problem med ditt lokala nätverk, som brandväggsinställningar [för företag](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html), bidrar till det här felet. Dessutom kan Adobe ha ett problem som måste lösas. | Försök logga in igen efter flera minuter. Om problemet kvarstår skickar du EIM-instans-ID-koden till Kundtjänst. |
+| [!UICONTROL Error 500: Failed to load page] | Problem med ditt lokala nätverk, som brandväggsinställningar [för företag](https://experienceleague.adobe.com/en/docs/analytics/technotes/ip-addresses), bidrar till det här felet. Dessutom kan Adobe ha ett problem som måste lösas. | Försök logga in igen efter flera minuter. Om problemet kvarstår skickar du EIM-instans-ID-koden till Kundtjänst. |
 | [!UICONTROL Your request failed as a result of too many columns or pre-configured rows.] | Tabellen innehåller för många frihandsceller (rad * kolumner). | Ta bort kolumner eller rader i tabellen eller dela upp tabellen i separata begäranden. |
+
+
+## Felsökning
+
+När du använder Analysis Workspace kan du använda informationen nedan för att felsöka några vanliga problem.
+
+| Problem | Felsöka |
+|---|---|
+| När jag drar ett mätresultat över står det *Ogiltiga data*. | Ogiltiga data innebär att Adobe inte kan returnera data med den kombination av mått och mätvärden som används i rapporten. Två mätvärden som staplas ovanpå varandra kan till exempel inte returneras som data, eftersom det inte finns något sätt att visa två mätvärden på det sättet. Istället placerar du mätvärdena sida vid sida. |
+| När jag drar ett mätresultat över ser jag inga verkliga data - bara nollor. | Om du har skapat en rapport om arbetsytan men det inte finns några data kan du kontrollera några saker:<ul><li>Om du tillämpade ett filter i rapporten kanske filtervillkoren inte matchar några data. Försök att ta bort filtret eller justera filterdefinitionen.</li><li>Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.</li><li>Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att verifiera att data samlas in.</li></ul> |

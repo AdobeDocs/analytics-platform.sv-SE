@@ -3,18 +3,16 @@ description: Läs om hur varningar skiljer sig i Customer Journey Analytics frå
 title: Funktionsjämförelse för aviseringar Customer Journey Analytics och Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
-# Jämförelse av aviseringsfunktioner: Customer Journey Analytics och Adobe Analytics
+# Jämförelse av aviseringsfunktioner
 
-Processen med att använda varningar i Customer Journey Analytics är nästan identisk med att använda varningar i Adobe Analytics. Det finns dock viktiga skillnader.
-
-I följande avsnitt beskrivs de viktigaste skillnaderna.
+Processen med att använda varningar i Customer Journey Analytics är nästan identisk med att använda varningar i Adobe Analytics. Det finns dock viktiga skillnader. I följande avsnitt beskrivs de viktigaste skillnaderna.
 
 ## Varningar per timme är inte tillgängliga i Customer Journey Analytics
 

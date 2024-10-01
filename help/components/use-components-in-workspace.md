@@ -4,9 +4,9 @@ title: Använda komponenter i Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 697503bba56f44159df7a2f6a0e60a0a4178266d
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -15,35 +15,26 @@ ht-degree: 0%
 
 Komponenterna utgör själva data i alla projekt i Analysis Workspace. Komponenterna består av mått, mått, filter och datumintervall. Du kan lägga till komponenter i ett projekt genom att dra dem till visualiseringar eller paneler.
 
-Mer information om vilka typer av komponenter du kan lägga till finns i [Komponentöversikt](/help/components/overview.md).
+Mer information om vilka typer av komponenter du kan lägga till finns i [komponentöversikten](/help/components/overview.md).
 
 >[!TIP]
 >
->Om du vill ha information om de olika komponenterna väljer du ikonen Info bredvid en komponents namn i den vänstra listen i Analysis Workspace.
+>Om du vill ha information om varje komponent väljer du ikonen ![InfoOutline](/help/assets/icons/InfoOutline.svg) bredvid komponentens namn.
 
-## Börja lägga till komponenter i ett projekt
+## Lägga till komponenter i ett projekt
 
-1. [Skapa ett projekt i Analysis Workspace](/help/analysis-workspace/build-workspace-project/create-projects.md) om du inte redan gjort det.
+1. [Skapa ett projekt i Analysis Workspace](/help/analysis-workspace/build-workspace-project/create-projects.md).
 
-1. [Lägg till en panel](/help/analysis-workspace/c-panels/panels.md) eller [lägg till en visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) i projektet i Analysis Workspace.
+1. [Lägg till en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel) eller [lägg till en visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) i projektet i Analysis Workspace. Om du lägger till en komponent i ett tomt projekt skapas redan en frihandsritabellvisualisering åt dig.
 
-   Om du lägger till en komponent i ett tomt projekt skapas en frihandsritabellvisualisering automatiskt.
-
-1. Välj ikonen **[!UICONTROL Components]** i den vänstra listen.
-
-   ![](assets/build-components.png)
+1. Välj ![Kurva](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** på knapppanelen. Alla tillgängliga komponenter visas på den vänstra panelen. Mer information finns i [Gränssnitt](/help/analysis-workspace/home.md#interface).
 
 1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
 
-1. (Valfritt) Dra en komponent till filtersläppzonen i en panelrubrik.
+1. Du kan också dra en komponent till filtersläppzonen i en panelrubrik. Den här dra och släpp-funktionen definierar komponenten som ett filter och tillämpar filtret på allt innehåll på panelen.
+Mer information om hur du kan använda filtersläppzonen på en panel för att filtrera panelen finns i [Släpp zon](/help/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
 
-   Filter gäller för allt innehåll på panelen.
-
-   Mer information om hur du kan använda filtersläppzonen på en panel för att filtrera panelen finns i [Släpp zon](/help/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
-
-   ![släpp ett filter i släppzonen](assets/filter-dropzone.png)
-
-1. Mer detaljerad information finns i följande avsnitt, beroende på vilken komponenttyp du lägger till:
+1. Mer detaljerad information finns i följande avsnitt:
 
    * [Lägga till dimensioner i ett projekt](#add-dimensions-to-a-project)
 
@@ -53,80 +44,93 @@ Mer information om vilka typer av komponenter du kan lägga till finns i [Kompon
 
    * [Lägga till datumintervall i ett projekt](#add-date-ranges-to-a-project)
 
-## Lägga till dimensioner i ett projekt
+### Lägga till dimensioner i ett projekt
 
-[Dimensioner](/help/components/dimensions/overview.md) är variabler i Adobe Analytics som vanligtvis innehåller strängvärden. [Mått](/help/components/calc-metrics/calc-metr-overview.md) innehåller däremot numeriska värden som är kopplade till en dimension. En grundläggande rapport visar rader med strängvärden (dimension) mot en kolumn med numeriska värden (metrisk).
+[Dimensioner](/help/components/dimensions/overview.md) är variabler i Customer Journey Analytics som vanligtvis innehåller strängvärden. [Mått](/help/components/calc-metrics/calc-metr-overview.md) innehåller däremot numeriska värden som är kopplade till en dimension. En grundläggande rapport visar rader med strängvärden (dimension) mot en kolumn med numeriska värden (metrisk).
 
-1. Börja lägga till en dimension i ditt projekt i Analysis Workspace, enligt beskrivningen i [Börja lägga till komponenter i ett projekt](#begin-adding-components-to-a-project).
+1. Börja lägga till en dimension i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägg till komponenter i ett projekt](#add-components-to-a-project).
 
 1. Välj en av följande metoder för att lägga till dimensioner och bestämma vilken typ av data du vill analysera:
 
+   ![Lägg till en dimension](/help/components/assets/add-dimension.gif)
+
    * Dra en dimension till en visualisering (till exempel en frihandstabell) i Analysis Workspace.
 
-     ![Lägg till dimensioner i ett projekt](assets/add-dimensions.png)
+   * Dra en eller flera dimensioner från den vänstra panelen till filterdroppzonen för att skapa ett snabbfilter, enligt beskrivningen i [Lägg till filter i ett projekt](#add-filters-to-a-project).
 
-   * Dra en eller flera dimensioner från den vänstra listen till filtersläppzonen för att skapa ett ad hoc-filter, enligt beskrivningen i [Lägg till filter i ett projekt](#add-filters-to-a-project).
-
-1. (Valfritt) Du kan dela upp dimensioner och dimensionsobjekt i Analysis Workspace med andra komponenter.
-
-   Mer information finns i [Dela upp dimensioner i Workspace](/help/components/dimensions/t-breakdown-fa.md).
+1. Du kan även dela upp dimensioner och dimensionsobjekt i Analysis Workspace med andra komponenter. Mer information finns i [Dela upp dimensioner i Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
 Mer information om hur du använder dimensioner i Analysis Workspace finns i [Förhandsvisa dimensioner](/help/components/dimensions/view-dimensions.md), [Dela upp dimensioner](/help/components/dimensions/t-breakdown-fa.md) och [Tidsdelningsdimensioner](/help/components/dimensions/time-parting-dimensions.md).
 
-## Lägga till mätvärden i ett projekt
+### Lägga till mätvärden i ett projekt
 
 Med mätvärden kan du kvantifiera datapunkter i Analysis Workspace. De används oftast som kolumner i en visualisering och är knutna till dimensioner.
 
 Så här lägger du till en mätmetod i ett projekt i Analysis Workspace:
 
-1. Börja lägga till ett mått i ditt projekt i Analysis Workspace, enligt beskrivningen i [Börja lägga till komponenter i ett projekt](#begin-adding-components-to-a-project).
+1. Börja lägga till ett mått i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägg till komponenter i ett projekt](#add-components-to-a-project).
+
+
 
 1. Välj en av följande metoder för att lägga till ett mått i Analysis Workspace:
 
+   ![Lägger till ett mått](/help/components/assets/add-metric.gif)
+
    * Dra ett mätvärde till släppzonen för mätvärden i en tom Freeform-tabell om du vill se mätningen under projektets datumperiod.
 
-     ![Lägg till ett mått i ett projekt](assets/add-metrics.png)
-
-   * Dra ett mätvärde när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt.
+   * Dra ett mått när det finns en dimension för att se måttet för varje dimensionsobjekt.
 
    * Dra ett mätresultat över ett befintligt måtthuvud om du vill ersätta det.
 
-   * Dra ett mätvärde bredvid ett huvud om du vill visa båda mätvärdena sida vid sida.
+   * Lägg till det nya måttet genom att dra ett mätvärde till vänster om den högra sidan av en befintlig metrisk rubrik.
 
-Mer information om mätvärden finns i [Översikt över beräknade mätvärden](/help/components/calc-metrics/calc-metr-overview.md).
+   * Dra ett mätresultat ovanför eller under en befintlig måttrubrik om du vill skapa en metrisk överlappning.
 
-## Lägga till filter i ett projekt
 
-[Med filter](/help/components/filters/filters-overview.md) kan du identifiera underuppsättningar av besökare baserat på egenskaper eller specifika interaktioner.
+Mer information om mått finns i [Metrisk](/help/components/apply-create-metrics.md).
+
+### Lägga till filter i ett projekt
+
+[Med filter](/help/components/filters/filters-overview.md) kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller specifika interaktioner.
 
 Du kan använda filter i Analysis Workspace på något av följande sätt:
 
-### Lägga till filter på en panel
-
+* Lägga till filter på en panel
 När du lägger till filter på en panel tillämpas filtren på allt innehåll på panelen.
-
 Mer information om hur du kan använda filtersläppzonen på en panel för att filtrera panelen finns i [Släpp zon](/help/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
 
-### Lägga till filter i en kolumn i en frihandstabell
+* Lägga till filter i en visualisering
+När du lägger till filter i en kolumn i en frihandstabell tillämpas filtren på allt innehåll i tabellkolumnen. Du kan också lägga till filter som en del av en utfallsvisualisering.
 
-När du lägger till filter i en kolumn i en frihandstabell tillämpas filtren på allt innehåll i tabellkolumnen.
+* Använda filter i komponenter
+När du definierar komponenter som [beräknade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [anteckningar](/help/components/annotations/create-annotations.md#annotation-builder) eller till och med [filter](/help/components/filters/filter-builder.md) kan du använda filter som en del av definitionen.
 
-### Använd filter när du skapar beräknade värden
 
-I verktyget Beräknade mätvärden kan du använda filter i måttdefinitionen.
+### Lägga till datumintervall i ett projekt
 
-Mer information finns i [Filtrerade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
+[Datumintervall](/help/components/date-ranges/overview.md) bestämmer tidsramen för rapportering i Analysis Workspace, och kan tillämpas på en eller flera paneler i ett projekt och även på vissa visualiseringar (till exempel frihandstabellen).
 
-## Lägga till datumintervall i ett projekt
+Varje panel innehåller som standard ett datumintervall. Det finns flera sätt att uppdatera ett datumintervall för en panel. Ett sätt att uppdatera ett datumintervall för en panel i Analysis Workspace är att dra en datumintervallkomponent från den vänstra panelen:
 
-[Datumintervall](/help/components/date-ranges/custom-date-ranges.md) bestämmer tidsramen för rapportering i Analysis Workspace och kan tillämpas på en eller flera paneler i ett projekt.
+1. Du kan också lägga till ett datumintervall i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägg till komponenter i ett projekt](#add-components-to-a-project).
 
-Varje panel innehåller som standard ett datumintervall. Det finns flera sätt att uppdatera ett datumintervall för en panel. Ett sätt att uppdatera ett datumintervall för en panel i Analysis Workspace är att dra en datumintervallkomponent från den vänstra listen:
+1. Dra och släpp ett datumintervall från den vänstra panelen till:
 
-1. Börja lägga till ett datumintervall i ditt projekt i Analysis Workspace, enligt beskrivningen i [Börja lägga till komponenter i ett projekt](#begin-adding-components-to-a-project).
+   * Det aktuella datumintervallet för att ändra datumintervallet för panelen.
 
-1. Dra ett datumintervall från den vänstra listen till det aktuella datumintervallet i panelens övre högra del.
+     ![Släpp ett datumintervall](assets/add-date-range.gif)
 
-   ![släpp ett datumintervall](assets/daterange-drop.png)
+   * Ett mått eller en dimension i en visualisering av frihandsregister. Mer information finns i [Använd dataintervall](/help/components/date-ranges/overview.md#use-date-ranges).
 
-Mer information om hur du använder kalendrar och datumintervall i Analysis Workspace finns i [Översikt över kalendrar och datumintervall](/help/components/date-ranges/custom-date-ranges.md).
+Mer information om hur du använder och hanterar datumintervall i Analysis Workspace finns i [Översikt över datumintervall](/help/components/date-ranges/overview.md).
+
+## Komponentinformation
+
+Du kan hovra över valfri komponent om du vill visa ![mer information](/help/assets/icons/InfoOutline.svg). När det här alternativet är markerat visas ett popup-fönster med ytterligare information om komponenten.
+
+![Komponentinformation](assets/component-info.png)
+
+Baserat på din åtkomstkontroll kan du:
+
+* Få åtkomst till definitionen ![Bokmärke](/help/assets/icons/Bookmark.svg) [!UICONTROL Data dictionary] för komponenten.
+* Få åtkomst till komponentbyggaren ![Redigera](/help/assets/icons/Edit.svg) eller datavyn där komponenten är definierad.

@@ -5,7 +5,7 @@ title: projekt med endast visning
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Du kan dela projekt som&quot;endast för visning&quot; till mottagare via arbets
 
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
-* Dolt vänster spår
+* Dold vänster panel
 * Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
 * Frihandsnr för synliga rader

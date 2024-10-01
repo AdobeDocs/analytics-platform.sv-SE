@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
+source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Här är några videor som vägleder dig:
 
 * Tack vare datavyer i Customer Journey Analytics har ni större flexibilitet när det gäller att definiera mått och mått inom Customer Journey Analytics. Du kan till exempel använda värdet för en dimension för att bli definitionen av ett mätvärde. [Läs mer](/help/use-cases/data-views/data-views-usecases.md)
 
-* Om du har definierat en anpassad kalender i Adobe Analytics har du liknande [anpassade kalenderfunktioner](/help/components/date-ranges/custom-date-ranges.md) i Customer Journey Analytics. Du måste se till att din kalender är korrekt definierad.
+* Om du har definierat en anpassad kalender i Adobe Analytics har du liknande [anpassade kalenderfunktioner](/help/components/date-ranges/overview.md) i Customer Journey Analytics. Du måste se till att din kalender är korrekt definierad.
 
 * I Customer Journey Analytics kan du definiera en anpassad tidsgräns för besök/session samt definiera ett mätvärde som startar en ny session. Du kan skapa datavyer med olika sessionsdefinitioner för att få insikter över vad som var möjligt i Adobe Analytics. Den här funktionen kan vara särskilt användbar för mobildatauppsättningar.
 

@@ -3,9 +3,9 @@ description: Beskriver de två viktigaste sätten att hitta metrisk sortering oc
 title: Hitta mätvärden
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '46'
 ht-degree: 0%
 
 ---
@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Du kan hitta mätvärden i Analysis Workspace på samma sätt som du hittar andra typer av komponenter.
 
-Mer information om hur du snabbt hittar komponenter finns i [Söka, filtrera och sortera komponentlistan](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) i [Komponentöversikt](/help/components/overview.md).
+Mer information om hur du söker efter komponenter finns i [Sök](/help/components/overview.md#search) i [Komponentöversikt](/help/components/overview.md).

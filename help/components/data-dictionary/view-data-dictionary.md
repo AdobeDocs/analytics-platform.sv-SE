@@ -4,7 +4,7 @@ title: Visa dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Så här visar du information om en komponent i Data Dictionary:
 
 1. Gå till det Analysis Workspace-projekt som innehåller komponenten som du vill visa.
 
-1. Markera ikonen [!UICONTROL **Dataordlista**] i den vänstra listen i Analysis Workspace. (Alternativa sätt att komma åt dataordlistan beskrivs i Åtkomst till dataordlistan i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).)
+1. Markera ikonen [!UICONTROL **Dataordlista**] i den vänstra panelen i Analysis Workspace. (Alternativa sätt att komma åt dataordlistan beskrivs i Åtkomst till dataordlistan i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).)
 
    Fönstret Data Dictionary visas.
 

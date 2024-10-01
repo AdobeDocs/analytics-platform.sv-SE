@@ -1,30 +1,30 @@
 ---
-description: Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
+description: Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Utfall ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
 title: Interdimensionellt utfall
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 37158b4e614435724205c505f322c1d7a434c35d
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
 
 # Interdimensionellt utfall
 
-Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
+Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Utfall ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
 
-Förutom siddimensionen kan du till exempel lägga till åtgärdsbaserade dimensionsobjekt i en utfallsvisualisering. På så sätt kan ni visualisera hur sidor och vissa åtgärder interagerar på kundens vägar.
+Förutom dimensionen Sida kan du till exempel lägga till andra dimensionsobjekt (som ett specifikt enhetsnamn från dimensionen Enhetsnamn) till en utfallsvisualisering. Genom att kombinera olika dimensioner kan ni visualisera hur sidor och vissa åtgärder samspelar i kundens sökvägar.
 
-![Vyn Alla besök visar flera dimensioner som kontaktytor.](assets/interdimensional-fallout1.png)
+![Vyn Alla besök visar flera dimensioner som kontaktytor.](assets/fallout-otherdimension.png)
 
 Utfallet uppdateras dynamiskt så att du kan se utfallet i flera dimensioner.
 
-Du kan också lägga till mätvärden i den här mixen. I det här exemplet har vi lagt till måttet&quot;Delat foto&quot; för att ge intryck av kundens väg:
+Du kan också lägga till mätvärden. Du kan till exempel lägga till det metriska samtalet för att bara visa sökvägar för användare som det finns samtal för och ha kontaktat callcentret:
 
-![Vyn Alla besök visar det tillagda måttet: Delat foto.](assets/interdimensional-fallout2.png)
+![Vyn Alla besök visar det tillagda måttet: Delat foto.](assets/fallout-metrics.png)
 
-Dessutom kan du kombinera olika mått och mätvärden i AND-kontrollpunkter. Bara dra ytterligare mått eller mätvärden över en befintlig dimension:
+Ni kan kombinera mått och mätvärden. Dra en annan dimension eller mätvärde över en befintlig. För att förstå hur många som har en iPhone och som har kontaktat callcentret faller bort.
 
-![Vyn Alla besök visar det tillagda åtgärdsnamnet: Mått för delat och delat foto.](assets/interdimensional-fallout3.png)
+![Vyn Alla besök visar det tillagda åtgärdsnamnet: Mått för delat och delat foto.](assets/fallout-combined.png)

@@ -4,78 +4,114 @@ description: Hantera anteckningar i Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 1%
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
 # Hantera anteckningar
 
-Hanteraren [!UICONTROL Components] > [!UICONTROL Annotations] erbjuder många sätt att hantera anteckningar, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
+Du kan dela, filtrera, tagga, godkänna, kopiera, ta bort anteckningar och markera anteckningar som favoriter från ett centralt [!UICONTROL Annotations]-hanteringsgränssnitt. Så här hanterar du anteckningar:
 
-Hanteraren för [!UICONTROL Annotations] visar alla anteckningar du äger som har omfattats av alla dina projekt och som har delats med dig.
+* Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Annotations]**.
+
 
 >[!NOTE]
 >
->[!UICONTROL Annotations] som du bara skapade för ett visst projekt visas inte i hanteraren.
+>Anteckningarna som du skapar i ett visst Workspace-projekt visas inte i hanteraren för [!UICONTROL Annotations], såvida du inte har gjort anteckningen tillgänglig för alla dina projekt.
+>
 
-## Annotations Manager-användargränssnitt
+## Anteckningshanteraren
 
-![Anteckningsalternativ som delning, taggning eller kopiering som beskrivs i nästa avsnitt.](assets/annotation-mgr.png)
+Anteckningshanteraren har följande gränssnittselement:
 
-| Gränssnittselement | Beskrivning |
+![Anteckningsgränssnitt](assets/annotations-manager.png)
+
+### Anteckningslista
+
+I anteckningslistan ➊ alla anteckningar som du äger, anteckningar som har omfattats av alla dina projekt och de anteckningar som har delats med dig. Listan innehåller följande kolumner:
+
+| Kolumn | Beskrivning |
 | --- | --- | 
-| [!UICONTROL Title and Description] | Finns i Annotations Builder. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till Anteckningsverktyget. |
-| [!UICONTROL Data view] | Datavyn/datavyerna som den här anteckningen gäller för. |
-| [!UICONTROL Owner] | Anger vem som äger anteckningen. Som icke-administratör kan du bara se anteckningar som du äger eller de som delats med dig. |
-| [!UICONTROL Applied Date Range] | Det datum eller datumintervall som den här anteckningen gäller för. |
-| [!UICONTROL Shared with] | Visar hur många personer eller grupper som du har delat anteckningen med. Klicka för mer information. |
-| [!UICONTROL Date Modified] | Visar datum och tid då anteckningen senast ändrades. |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) en anteckning. |
+| **[!UICONTROL Title and description]** | Finns i Annotations Builder. Om du vill redigera titeln och beskrivningen markerar du titellänken. [Anteckningsverktyget](/help/components/annotations/create-annotations.md#annotation-builder) öppnas. En delad anteckning har markerats med ![Dela](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Data view]** | De datavyer som den här anteckningen gäller för. |
+| **[!UICONTROL Owner]** | Anteckningens ägare. Som användare ser du bara de anteckningar du äger eller de anteckningar som delas med dig. |
+| **[!UICONTROL Applied date range]** | Det datum eller datumintervall som den här anteckningen gäller för. |
+| **[!UICONTROL Tags]** | Taggarna för anteckningen. |
+| **[!UICONTROL Shared with]** | De personer eller grupper som du delade anteckningen med. Välj det här alternativet om du vill öppna dialogrutan **[!UICONTROL Share Component]**. |
+| **[!UICONTROL Date modified]** | Visar datum och tid då anteckningen senast ändrades. |
 
 {style="table-layout:auto"}
+
+Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vilka kolumner du vill visa.
+
+### Åtgärdsfält
+
+Du kan använda åtgärdsfältets ➋ för att göra anteckningar. Åtgärdsfältet innehåller följande åtgärder:
+
+| Åtgärd | Beskrivning |
+|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till en till anteckning med [Anteckningsverktyget](create-annotations.md#annotation-builder). |
+| ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om ingen anteckning är markerad i listan söker du efter anteckningar med det här sökfältet. |
+| ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade anteckningarna. I dialogrutan **[!UICONTROL Tag Component]** markerar eller avmarkerar du taggarna för de markerade anteckningarna. Välj **[!UICONTROL Save]** om du vill spara taggarna för de markerade anteckningarna. |
+| ![Dela](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Dela de markerade anteckningarna. I dialogrutan **[!UICONTROL Share Component]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda anteckningarna. Mer information finns i [Dela anteckningar](#share-annotations). |
+| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort de markerade anteckningarna. Du uppmanas att bekräfta åtgärden. |
+| ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på en enskild markerad anteckning. När du väljer det här alternativet kan du byta namn på anteckningen. |
+| ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera de markerade anteckningarna. Nya anteckningar skapas med samma namn och suffix (Kopiera) |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera anteckningarna till en `Annotations List.csv`-fil. |
+
+### Aktivt filterfält
+
+➌ visar de aktiva filtren (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
+
+### Panelen Filter
+
+Du kan filtrera anteckningar med den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]**. Filterpanelen visar typen av filter och antalet anteckningar som följer filtret. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
+
+Så här filtrerar du filterlistan:
+
+1. Välj ![Filter](/help/assets/icons/Filter.svg) för att öppna panelen Filter. Om du behöver mer utrymme för filterlistan kan du stänga panelen genom att välja ![Filter](/help/assets/icons/Filter.svg) en gång till.
+1. Du kan filtrera anteckningarna med någon av de tillgängliga [filteravsnitten](#filter-sections).
+
+   >[!INFO]
+   >
+   >*Objekt* refererar till anteckningsobjekten som visas i [anteckningslistan](manage-annotations.md#annotations-list).
+   > 
+
+#### Filtrera avsnitt
+
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{daterangefiltersection}}
+{{otherfiltersfiltersection}}
+
+
+[Anteckningslistan](manage-annotations.md#annotations-list) uppdateras automatiskt baserat på din filterkonfiguration. Du kan se de konfigurerade filtren i det [aktiva filterfältet](manage-annotations.md#active-filter-bar).
+
 
 ## Redigera anteckningar
 
-Att redigera en anteckning innebär att du kan justera datumintervall, färger, omfång eller om det gäller för alla datavyer eller projekt. Du kan redigera anteckningar på två sätt:
+Du kan redigera en anteckning på två sätt:
 
-* Håll pekaren över anteckningen i ett linjediagram och klicka på pennikonen i pekaren.
+* Använd ikonen [Komponentinformation](/help/components/use-components-in-workspace.md#component-info) i ett Workspace-projekt.
 
-* Klicka på anteckningens titel i [!UICONTROL Annotations Manager].
+* Markera anteckningens titel i listan [[!UICONTROL Annotations]](#annotations-list).
 
-Båda dessa alternativ ger dig tillbaka i Annotations Builder. Där kan du göra nödvändiga justeringar och spara den nya versionen.
+Du använder [Anteckningsverktyget](/help/components/annotations/create-annotations.md#annotation-builder) för att redigera anteckningen.
 
 ## Dela anteckningar
 
-När du delar anteckningar eller arbetar med anteckningar som delats med dig bör du tänka på följande:
+Följande gäller när du delar anteckningar eller arbetar med anteckningar som delas med dig:
 
-* Anta att du skapar ett projekt med enbart projektkommentarer och sedan delar projektet med en annan användare. De här anteckningarna visas, men de kan inte redigeras eller tas bort av någon som delar projektet med.
+* Anteckningar som bara är för projekt i ett projekt som du delar med andra användare visas för dessa användare. Användarna kan inte redigera eller ta bort de här anteckningarna som bara är för projekt.
+* Om du sparar en anteckning och delar anteckningen direkt med en användare, kan den användaren bara redigera och ta bort anteckningen om användaren har administratörsbehörighet.
 
-* Om du sparar en anteckning och delar den direkt med en användare, kan han/hon bara redigera/ta bort anteckningen om han/hon har administratörsbehörighet.
-
-* Om projektet delas med dig visas det bara i det projektet. Om anteckningen delas direkt med dig visas den i alla projekt där anteckningen kan visas.
+* Om ett projekt delas med dig visas anteckningar som skapats i det projektet bara i det projektet. Om en anteckning delas direkt med dig, visas anteckningen i alla projekt där anteckningen kan visas.
 
 ## Anteckningar och tidszoner
 
-Alla anteckningar skapas med en tidsstämpel, men ingen timinformation eller tidszonsinformation. Vid rapporttillfället används alltid tidszonen för panelens datavy. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du befinner dig i i datavyn.
-
-Ett annat exempel är nyårsdagen. Varje timme sätter olika tidszoner igång för fyrverkerier när det nya året börjar. På 10.00 amerikanska Mountain Time startar USA:s östkust brandarbeten eftersom det redan är 12.00 Eastern Time.
-
-## Andra anteckningsuppgifter
-
-Med Annotations Manager kan administratörer redigera, lägga till, tagga, ta bort, byta namn på, godkänna, kopiera, exportera och filtrera anteckningar. Den är inte synlig för användare som inte är administratörer.
-
-Välj bara en eller flera av anteckningarna så visas Aktivitetsfältet.
-
-| Uppgift | Beskrivning |
-| --- | --- |
-| Lägg till | Gå till Anteckningsverktyget där du kan skapa nya anteckningar. |
-| Tagg | Alla användare kan skapa taggar för anteckningar och använda en eller flera taggar för en anteckning. Men du kan bara se taggar för de filter som du äger. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>Taggar baserade på teamnamn, som social marknadsföring, mobilmarknadsföring</li><li>Projekttaggar (analystaggar), t.ex. analys på ingångssidan</li><li>Kategoritaggar: Män; geografi</li><li>Arbetsflödestaggar: Kuraterad för (en specifik affärsenhet); Godkänd</li></ul> |
-| Ta bort | Om du tar bort en anteckning tas den bort från alla projekt i organisationen. |
-| Byt namn | Om du ändrar namn på en anteckning ändras namnet i alla projekt som den används i. |
-| Kopiera | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |
-| Exportera till CSV | Exportera anteckningsdefinitionen till en CSV-fil. |
-| Filter (vänster remsa) | Filtrera efter taggar, datavy, owners och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
-
-{style="table-layout:auto"}
+Alla anteckningar skapas med en tidsstämpel, men ingen timmes- eller tidszonsinformation. Vid rapporttillfället används tidszonen för datavyn som konfigurerats för panelen.

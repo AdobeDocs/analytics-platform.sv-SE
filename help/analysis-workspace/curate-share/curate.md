@@ -5,7 +5,7 @@ title: Kuratprojekt
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Med kurering kan du begränsa komponenterna (mått, mått, filter, datuminterval
 
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 De komponenter som används i projektet läggs automatiskt till.
-1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till fältet [!UICONTROL Curate Components].
+1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra panelen till fältet [!UICONTROL Curate Components].
 1. Klicka på **[!UICONTROL Done]**.
 
 Du kan också använda kurering från menyn [!UICONTROL Share] genom att klicka på **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
@@ -38,7 +38,7 @@ När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av
 
 ## Ta bort projektstrukturering
 
-Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra listen:
+Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra panelen:
 
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 1. Klicka på **[!UICONTROL Remove Curation]**.
@@ -46,7 +46,7 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## Alternativ för komponenturval
 
-I ett välstrukturerat projekt får mottagaren alternativet att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
+I ett välstrukturerat projekt kommer mottagaren att få alternativet **[!UICONTROL Show All]** komponenter i den vänstra panelen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
 
 * Användarens behörighetsnivå (admin eller icke-admin)
 * Projektroll (ägare/redigerare eller inte)

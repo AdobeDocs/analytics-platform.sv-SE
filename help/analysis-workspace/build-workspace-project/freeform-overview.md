@@ -5,132 +5,276 @@ title: Projektöversikt
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 10751991e3c40cfefac7d32cea0b5cc557133232
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 1%
+source-wordcount: '1488'
+ht-degree: 0%
 
 ---
 
 # Projektöversikt
 
-Med Workspace-projekt kan ni kombinera datakomponenter, tabeller och visualiseringar för att skapa analyser och dela dem med vem som helst i organisationen. Innan du startar ditt första projekt bör du lära dig hur du får tillgång till, navigerar och hanterar dina projekt.
+Med Workspace-projekt kan du kombinera paneler, visualiseringar och komponenter för att skapa analyser och dela dem med vem som helst i organisationen. Innan du startar ditt första projekt bör du lära dig hur du får tillgång till, navigerar och hanterar dina projekt.
 
-## Projektlista {#project-list}
+Om du vill få åtkomst till projekt i Customer Journey Analytics väljer du **[!UICONTROL Workspace]**.  **[!UICONTROL Projects]**-hanteraren visar alla projekt som du äger eller projekt som delas med dig. Projektledaren med projektlistan är också standardstartsida för Customer Journey Analytics, om du inte har konfigurerat något annat i Inställningar.
 
-När du först går till **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** visas alla projekt du äger eller projekt som delas med dig på sidan. Detta är också landningssidan för Adobe Analytics, såvida du inte tidigare har angett en anpassad landningssida.
+![Projektstartsida som visar projektlistan.](assets/projects.png)
 
-![Projektstartsida som visar projektlistan.](assets/sample-project.png)
 
-Sidan Projekt innehåller följande information:
+## Titelområde
 
->[!NOTE]
->
->Vissa kolumner visas inte som standard. Klicka på ikonen **Anpassa tabell** ![Anpassa tabell](assets/projects-page-customize-columns-icon.png) om du vill anpassa de kolumner som visas.
+I titelområdet ➊ du skapa ett projekt, skapa en mapp, redigera dina inställningar och visa eller dölja en panel med ytterligare rutor.
 
-| Element | Beskrivning |
-|---|---|
-| [Redigera inställningar](/help/analysis-workspace/user-preferences.md) | Hantera inställningar för Analysis Workspace och dess tillhörande komponenter för alla nya projekt eller paneler som du skapar. |
-| [Skapa mapp](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Lägg till en ny mapp eller undermapp i listan över projekt och mappar. |
-| [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) | Starta ett nytt projekt från grunden. |
-| Visa mer | Visar alternativ för att skapa ett tomt projekt eller ett mobilstyrkort, [visa självstudier](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html) eller [visa versionsinformation](/help/release-notes/latest.md). |
-| Visa mappar och projekt | Välj om du vill visa mappstrukturen för projekt. Mer information finns i [Om mappar i Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Anpassa tabell (ikon) | Här kan du anpassa informationen som visas för varje projekt på sidan Projekt. |
-| Namn | Namn på Workspace-projektet. |
-| Typ | Anger om det här är ett Workspace-projekt, en mapp eller ett [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
-| Taggar | Taggar som tillämpades på projektet. |
-| Schemalagd | Anger om projekt har schemalagts att skickas med e-post till mottagare enligt ett schema. Se [Skicka projektdata till andra](/help/analysis-workspace/export/t-schedule-report.md). |
-| Delad länk (alla) | Projekt kan delas med alla - även med personer som inte har tillgång till Analysis Workspace. I den här kolumnen visas om projekt har delats på det här sättet. Mer information finns i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md). |
-| Datavy | Datavyn som projektet är associerat med. |
-| [Projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Anger din roll för projektet - ägare, redigera, duplicera, visa. |
-| Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
-| Delas med | Användare som projektet har delats med. |
-| Senast ändrad | Datum och tid när projektet senast ändrades. |
-| Senast öppnad | Datum och tid när projektet senast öppnades. |
-| Projekt-ID | ID för projektet. |
-| Senaste datumintervall | Det längsta datumintervallet för projektet. |
-| Antal frågor | Det totala antalet frågor i projektet. |
-| Plats | Mappen där projektet finns. |
+* Om du vill visa eller dölja en vänsterpanel där du kan välja mellan **[!UICONTROL Projects]** och **[!UICONTROL Learning]** väljer du ![Rail](/help/assets/icons/Rail.svg).
+* Titeln visar Projekt, eventuellt tillagda med en sökväg till den markerade mappen. Till exempel [!UICONTROL Projects] > **[!UICONTROL Company Folder]**. Du kan välja enskilda undermappsdelar för att gå direkt till den specifika mappen.
+* Om du vill visa rutor för en [**[!UICONTROL Blank project]**](create-projects.md), [**[!UICONTROL Blank mobile scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Guided analysis]**](/help/guided-analysis/overview.md), **[!UICONTROL Open the documentation]** och **[!UICONTROL Open release notes]** väljer du ![Sparrned](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show more]**. Om du vill dölja området med rutor väljer du ![SparrNed](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show less]**.
+* Baserat på vad du väljer att visa kan du med [Visa väljare](#show-selector) redigera inställningar och utföra åtgärder i den aktuella mappen som visas i **[!UICONTROL Projects]**:
 
-## Menyrad {#menu-bar}
+  | Åtgärd | Beskrivning |
+  |---|---|
+  | **[!UICONTROL Create project]** | Välj att [skapa ett nytt projekt](create-projects.md). |
+  | **[!UICONTROL Create folder]** | Välj att [skapa en ny mapp](workspace-folders/create-folders.md). |
+  | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** | [Redigera inställningar](/help/analysis-workspace/user-preferences.md) för alla dina projekt. När den synliga sökvägen resulterar i begränsat utrymme är den här åtgärden en del av undermenyn ![Mer](/help/assets/icons/More.svg). |
+  | **[!UICONTROL Add projects]** | Välj att [lägga till projekt](workspace-folders/add-projects.md) i den aktuella mappen. När den synliga sökvägen resulterar i begränsat utrymme är den här åtgärden en del av undermenyn ![Mer](/help/assets/icons/More.svg). |
+  | **[!UICONTROL Rename folder]** | [Byter namn på](workspace-folders/manage-folders.md#rename-folders) till den aktuella mappen. |
+  | **[!UICONTROL Move folder]** | [Flyttar](workspace-folders/manage-folders.md#move-folders) den aktuella mappen. |
+  | **[!UICONTROL Delete folder]** | [Tar bort](workspace-folders/manage-folders.md#delete-folders) den aktuella mappen. |
 
-I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga till komponenter, söka efter hjälp och mycket mer. Du kan även komma åt alla menyalternativ via [kortkommandon](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![Nya projektalternativ, bland annat alternativen Projekt, Redigera, Infoga, Komponenter, Dela och Hjälp.](assets/menu.png)
 
-| Menyalternativ | Beskrivning |
-|---|---|
-| Projekt | Innehåller vanliga åtgärder för projekthantering, inklusive Nytt, Öppna, Spara och Spara som. Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. Med alternativen för [Hämta projektdata](/help/analysis-workspace/export/download-send.md) kan du exportera data från Workspace. **Projektinformation och inställningar** (se nedan) innehåller många alternativ för att hantera ditt projekt. |
-| Redigera | Ångra eller gör om den senaste åtgärden. Rensa alla återställer projektet till en tom startpunkt. |
-| Infoga | Infoga nya paneler eller visualiseringar från den här menyn. Du kan även infoga nya paneler och visualiseringar från den vänstra listen. |
-| [Komponenter](/help/components/overview.md) | Skapa nya filter, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |
-| [Dela](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratera, dela och schemalägg PDF/CSV-projekt till mottagare i organisationen. |
-| Hjälp | Få tillgång till hjälpdokumentation, videoklipp och Analytics [Experience League-communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Hantera synligheten för Workspace-tips och [felsökaren](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Hitta information om Workspace och faktorer som påverkar projektet [prestanda](/help/technotes/optimizing-performance.md). |
-| Dela-knapp eller ägare | Om du arbetar i en egen eller Redigera för projektet ger knappen Dela i det övre högra hörnet tillgång till ett klick för att hantera projektmottagarna. Om du har en dubblett- eller vyroll för projektet visas projektägarens namn. |
 
-### Projektinformation och inställningar {#info-settings}
+## Projektlista
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** innehåller information på projektnivå om det aktuella projektet.
 
-![Fönstret Projektinformation och inställningar.](assets/projectinfo.png)
+Projektlistan ➋ alla projekt som du äger och som har delats med dig. Listan innehåller följande kolumner:
 
-Inställningarna inkluderar:
+| Kolumn | Beskrivning |
+| --- | --- | 
+| ![SelectBox](/help/assets/icons/SelectBox.svg) | När ett eller flera projekt är markerade visas ett blått åtgärdsfält längst ned i projektgränssnittet. Mer information finns i [Åtgärder](#actions). |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill gynna ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett projekt. |
+| **[!UICONTROL Title and description]** | Om du vill redigera projektet markerar du titellänken, som öppnar [Workspace-projektet](/help/analysis-workspace/home.md). Projekt som delas med dig markeras med ![Dela](/help/assets/icons/Share.svg). Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa en snabbmeny med mer information om projektet. Välj ![Mer](/help/assets/icons/More.svg) om du vill öppna en snabbmeny med åtgärder. Mer information finns i [Åtgärder](#actions). |
+| **[!UICONTROL Type]** | Ett Workspace-projekt, en ![FolderUser](/help/assets/icons/FolderUser.svg)-mapp eller ett [Mobile Scorecard](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
+| **[!UICONTROL Tags]** | Vilka taggar som används i projektet. |
+| Schemalagd | Anger om ett projekt är schemalagt att skickas med e-post till mottagarna. Alternativen är ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** eller ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Se [Skicka projektdata till andra](/help/analysis-workspace/export/t-schedule-report.md). |
+| **[!UICONTROL Shared link (anyone)]** | Om ett projekt delas med någon, även med personer som inte har tillgång till Analysis Workspace. Alternativen är ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** eller ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. Mer information finns i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md). |
+| **[!UICONTROL Project Role]** | Din roll för projektet. Alternativen är: Redigera, Duplicera, Visa. Mer information finns i [Projektroller](/help/analysis-workspace/curate-share/curate.md). |
+| **[!UICONTROL Data view]** | Datavyn som projektet är associerat med. |
+| **[!UICONTROL Owner]** | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
+| **[!UICONTROL Shared with]** | Användare som projektet har delats med. |
+| **[!UICONTROL Last Modified]** | Datum och tid när projektet senast ändrades. |
+| **[!UICONTROL Last Opened]** | Datum och tid när projektet senast öppnades. |
+| **[!UICONTROL Project ID]** | ID för projektet. |
+| **[!UICONTROL Longest Date Range]** | Det längsta datumintervallet för någon av panelerna eller visualiseringarna i projektet. |
+| **[!UICONTROL Number of Queries]** | Det totala antalet frågor i projektet. |
+| **[!UICONTROL Location]** | Mappen där projektet finns. |
 
-| Inställning | Beskrivning |
-|---|---|
-| Projektnamn | Namnet på projektet. Du kan dubbelklicka på namnet för att redigera det. |
-| Skapad av | Projektägarnamn |
-| Senast ändrad | Datum för senaste ändring av projektet. |
-| Taggar | Visar alla taggar som har använts i ett projekt för enklare kategorisering. |
-| Beskrivning | En beskrivning är användbar för att förtydliga syftet med ett projekt. Du kan dubbelklicka på beskrivningen för att redigera den. |
-| Räkna upprepande instanser i projekt | Anger om upprepade instanser räknas i rapporter. Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall. |
-| [Projektfärgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Du kan ändra den kategoriska färgpalett som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
-| [Visa densitet](/help/analysis-workspace/build-workspace-project/view-density.md) | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden av den vänstra listen, frihandstabeller och kohorttabeller. |
+Håll pekaren över en kolumnrubrik om du vill visa ![SparronDown](/help/assets/icons/ChevronDown.svg) och välj på snabbmenyn:
 
-## Vänster räl {#left-rail}
+* **[!UICONTROL Sort Ascending]**
+* **[!UICONTROL Sort Descending]**
+* **[!UICONTROL Resize column]**. En blå linje visas som gör det lättare att ändra storlek på kolumnen.
 
-I ett projekt finns det olika ikoner i den vänstra listen som representerar viktiga delar av ett projekt:
+### Åtgärder
 
-* [Paneler](/help/analysis-workspace/c-panels/panels.md) ![panelikon](assets/panels-icon.png)
-
-* [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![visualiseringsikon](assets/visualizations-icon.png)
-
-* [Komponenter](/help/components/overview.md)![komponentikon](assets/components-icon.png)
-
-* [Dataordlista](/help/components/data-dictionary/data-dictionary-overview.md)![ikon för dataordlista](assets/data-dictionary-icon.png)
-
-* [Innehållsförteckning](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![verktygsikon](assets/toc-icon.png)
-
-Komponenter (Dimensioner, Metrisk, Filter, Datumintervall) i den vänstra listen relaterar till den aktiva panelens datavy. Den aktiva panelen identifieras av den blå kant som omger den och den aktiva datavyn visas högst upp i komponentspåret.
-
-![Komponenterna som är relaterade till den aktiva paneldatavyn för datavyn för branschövergripande demodata.](assets/left-rail.png)
-
-## Projektarbetsyta {#canvas}
-
-Projektarbetsytan är där du sammanför paneler, tabeller, visualiseringar och komponenter för att bygga din analys. Ett projekt kan innehålla många paneler, och varje panel kan innehålla många tabeller och visualiseringar.
-
-Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser. Den aktiva panelen har en blå ram runt sig och avgör vilka komponenter som är tillgängliga i den vänstra listen.
-
-Beroende på vilken startpunkt du väljer för dina projekt har du antingen en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) på arbetsytan som du vill börja med. Det snabbaste sättet att börja analysera är att markera en eller flera komponenter och helt enkelt dra och släppa dem på arbetsytan i projektet. En datatabell återges automatiskt åt dig. [Lär dig mer](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) om de olika alternativen för att skapa en tabell eller använd vår [självstudiekurs](/help/analysis-workspace/home.md) för mer information om hur du skapar ditt första projekt.
-
-![En friformstabell för projektet.](assets/canvas.png)
-
-## Projektledare {#manager}
-
-Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Projekt**. Projekthanteraren visar de objekt som en viss användare har skapat. Du kan överföra projektägarskap till en ny användare under Admin > Analytics Users &amp; Assets > Transfer Assets.
-
-I Projects Manager kan du lägga till, tagga, dela, duplicera/kopiera och mycket mer. Sök efter ett projekt i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, ägare, projekttyp med mera.
-
-![Sökfält för taggar i projektledaren och sökfält för titel.](assets/project-manager.png)
-
-Följande är vanliga åtgärder i Projects Manager och kan utföras på ett eller flera projekt samtidigt:
+Du kan vidta åtgärder för ett eller flera projekt med snabbmenyn ![Mer](/help/assets/icons/More.svg) eller det blå åtgärdsfältet.
 
 | Åtgärd | Beskrivning |
 |---|---|
-| Lägg till | Skapa ett nytt projekt från grunden. |
-| Tagga eller godkänn | Välj &quot;Tagga&quot; eller &quot;Godkänn&quot; för att ordna dina projekt och göra dem enklare att söka efter. |
-| [Dela](/help/analysis-workspace/curate-share/share-projects.md) | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. |
-| Ta bort | Ta bort projektet. |
-| Byt namn | Redigera namnet på projektet. |
-| Kopiera | Skapa en kopia av projektet. Detta skapar ett nytt projekt- och projekt-ID. Alla aktier eller tidsplaner som är knutna till det ursprungliga projektet kopieras inte. |
-| Exportera till CSV | Ladda ned projektet som en CSV-fil som innehåller oformaterad text. |
+| ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *selected]** | Avmarkera de markerade projekten och mapparna och ta bort det blå åtgärdsfältet. |
+| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort ett eller flera projekt eller mappar. Du uppmanas att bekräfta åtgärden. |
+| ![Dela](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Dela ett projekt. Mer information finns i [Dela ett projekt](/help/analysis-workspace/curate-share/share-projects.md). |
+| ![Redigera](/help/assets/icons/Edit.svg) Byt namn | Byt namn på ett projekt. Öppnar en **[!UICONTROL Rename: *projektnamnsdialogruta *]**. Ange ett nytt namn och välj **[!UICONTROL Save]**. |
+| ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera ett eller flera projekt. Projekt får inte samma namn och suffix `(Copy)`. |
+| ![PinOn](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** eller **[!UICONTROL Unpin]** | Fäst eller ta bort ett eller flera projekt eller mappar. Fastnålade projekt och mappar visas högst upp i listan och den sorteringsordning du anger ignoreras. |
+| ![PilUp](/help/assets/icons/ArrowUp.svg) **[!UICONTROL Move up]** | Flytta ett fäst projekt eller en mapp uppåt i projektlistan. |
+| ![PilNed](/help/assets/icons/ArrowDown.svg) **[!UICONTROL Move down]** | Flytta ett fäst projekt eller en mapp nedåt i projektlistan. |
+| ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga ett eller flera projekt eller mappar. Dialogrutan **[!UICONTROL Tag Components]** visas och du kan välja en eller flera taggar. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda projekten eller mapparna. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** eller **[!UICONTROL Unapprove]** | Godkänn eller avgodkänn ett projekt. Endast administratörer kan godkänna projekt. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]** | Exportera de markerade projekten till en CSV-fil med namnet `Project List.csv`. |
+| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Add Projects]** | Lägg till ett eller flera projekt i en vald mapp. I **[!UICONTROL Add Projects]** kan du välja ett eller flera projekt. Välj **[!UICONTROL Add]** om du vill lägga till projekten i mappen. Mer information finns i [Lägg till projekt i mappar](workspace-folders/add-projects.md#from-inside-a-folder). |
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL Move to]** | Flytta ett eller flera markerade projekt till en mapp. I **[!UICONTROL Select Folder]** markerar du mappen som det markerade projektet ska flyttas till och väljer **[!UICONTROL Move]**. Mer information finns i [Lägg till projekt i mappar](workspace-folders/add-projects.md#from-the-project-list). |
+
+
+
+## Visa väljare
+
+Du kan växla utseende och känsla för projektgränssnittet med ➌ **[!UICONTROL Show]** väljare. **[!UICONTROL Show]**-väljaren definierar vilka alternativ som är tillgängliga i [titelområdet](#title-area) och vilka kolumner som visas i [projektlistan](#project-list).
+
+* Om du vill ändra tillgängliga alternativ för [titelområdet](#title-area) väljer du **[!UICONTROL Show]** **[!UICONTROL All projects]** eller **[!UICONTROL Show]** **[!UICONTROL Folders & Projects]**.
+
+* Om du vill definiera vilka kolumner som ska visas för [projektlistan](#project-list) väljer du ![Kolumninställning](/help/assets/icons/ColumnSetting.svg) och markerar eller avmarkerar kolumner i dialogrutan **[!UICONTROL Customize table]**. Välj **[!UICONTROL Apply]** om du vill använda anpassningen. Mer information om kolumnerna finns i [Projektlista](#project-list).
+
+## Panelen Filter
+
+Du kan filtrera projekt och mappar i [projektlistan](#project-list) med filterpanelen. Om du vill visa eller dölja filterpanelen använder du ![Filter](/help/assets/icons/Filter.svg).
+
+Filterpanelen består av följande avsnitt.
+
+### Taggar
+
+| Taggar | Beskrivning |
+|---|---|
+| ![Taggar](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du använder ![Sök](/help/assets/icons/Search.svg) *Sök efter taggar* för att söka efter taggar som du vill använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**2︎⃣**: Antalet taggar som är tillgängliga för projekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet projekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+
+
+### Datavy
+
+| Datavy | Beskrivning |
+|---|---|
+| ![Datavyer](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | I avsnittet **[!UICONTROL Data view]** kan du filtrera på datavyer. <ul><li>Du använder ![Sök](/help/assets/icons/Search.svg) *Sök i datavyer* för att söka efter datavyer som du vill använda för att filtrera.</li><li>Du kan välja mer än en datavy. Vilka datavyer som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**3︎⃣**: Antalet datavyer som är tillgängliga för projekten som är ett resultat av det aktuella filtret.</li><li>4︎⃣: Antalet projekt som är associerade med den specifika datavyn.</li></ul></li></ul> |
+
+
+### Ägare
+
+| Ägare | Beskrivning |
+|---|---|
+| ![Ägare](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | I avsnittet **[!UICONTROL Owner]** kan du filtrera efter ägare. <ul><li>Du använder ![Sök](/help/assets/icons/Search.svg) *Sökägare* för att söka efter ägare som du vill använda för att filtrera.</li><li>Du kan välja mer än en ägare. Vilka ägare som är tillgängliga beror på vad som har gjorts i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**3︎⃣**: Antalet ägare som är tillgängliga för projekten som är ett resultat av det aktuella filtret.</li><li>4︎⃣: Antalet projekt som är associerade med den specifika ägaren.</li></ul></li></ul> |
+
+
+### Typ
+
+| Typ | Beskrivning |
+|---|---|
+| ![Typ](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | I avsnittet **[!UICONTROL Type]** kan du filtrera efter typ av projekt eller mappar.<ul><li>Du kan välja ett eller flera av följande alternativ:<ul><li> **[!UICONTROL folder]**</li><li>**[!UICONTROL Workspace project]**</li><li>**[!UICONTROL Mobile scorecard]**</li></ul> <li>Du kan markera mer än ett annat filter. Vilka andra filter som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**5︎⃣**: Antalet andra filter som är tillgängliga för projekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet projekt som är associerade med det specifika andra filtret.</li></ul></li></ul> |
+
+
+### Andra filter
+
+| Andra filter | Beskrivning |
+|---|---|
+| ![Andra filter](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | I avsnittet **[!UICONTROL Other filters]** kan du filtrera på andra fördefinierade filter.<ul><li>Du kan välja ett eller flera av följande alternativ:<ul><li> **[!UICONTROL Show all]**</li><li>**[!UICONTROL Shared with me]**</li><li>**[!UICONTROL Mine]**</li><li>**[!UICONTROL Approved]**</li><li>**[!UICONTROL Favorites]**</li></ul> Vad du kan välja beror på din roll och dina behörigheter.</li><li>Du kan markera mer än ett annat filter. Vilka andra filter som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**5︎⃣**: Antalet andra filter som är tillgängliga för projekten som är resultatet av det aktuella filtret.</li><li>4︎⃣: Antalet projekt som är associerade med det specifika andra filtret.</li></ul></li></ul> |
+
+## Sök
+
+Du använder sökområdet för att söka efter projekt och mappar med hjälp av fältet ![Sök](/help/assets/icons/Search.svg). Börja skriva och [projektlistan](#project-list) filtrerar automatiskt dina sökindata.
+
+I sökområdet visas även de filter som har använts på panelen Filter.
+
+* Om du vill ta bort ett filter väljer du ![CrossSize75](/help/assets/icons/CrossSize75.svg) i filtret.
+* Om du vill ta bort alla filter väljer du Rensa alla.
+
+Om utrymmet är begränsat för att visa de enskilda filtren visas **[!UICONTROL Filtering by *x *filters]**.
+
+* Ta bort ett filter:
+
+   1. Använd **[!UICONTROL *x *filters]**![ChevronDown](/help/assets/icons/ChevronDown.svg) överst för att öppna en snabbmeny med en lista över filtyperna och de enskilda filtren.
+   1. Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) för att ta bort ett filter.
+
+
+<!--
+
+The Projects page contains the following information: 
+
+>[!NOTE]
+>
+>Some columns are not displayed by default. To customize the columns you see, click the **Customize table** icon ![Customize table](assets/projects-page-customize-columns-icon.png).
+
+|  Element  | Description  |
+|---|---|
+| [Edit preferences](/help/analysis-workspace/user-preferences.md) | Manage settings for Analysis Workspace and its related components for all new projects or panels that you create.  |
+| [Create folder](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)  | Add a new folder or subfolder to the list of projects and folders. |
+| [Create project](/help/analysis-workspace/build-workspace-project/create-projects.md)  | Start a new project from scratch.  |
+|  Show more  |Reveals options for creating a blank project or mobile scorecard, [viewing training tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html), or [viewing release notes](/help/release-notes/latest.md).  |
+| Show Folders & Projects| Choose whether to show the folder structure of projects. For more information, see [About Folders in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+|  Customize table (icon)  | Allows you to customize the information that shows for each project on the Projects page.  |
+|  Name  | Name of the Workspace project.  |
+| Type | Indicates whether this is a Workspace Project, a folder, or a [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
+|  Tags  |Tags that were applied to the project.  |
+| Scheduled | Indicates whether projects are scheduled to be emailed to recipients on a schedule. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
+| Shared link (anyone) | Projects can be shared with anyone--even with people who don't have access to Analysis Workspace. This column shows whether projects have been shared in this way. See [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
+| Data view | The data view that the project is associated with. |
+| [Project Role](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Indicates your role for the project - owners, edit, duplicate, view. |
+|  Owner  | The person who created this project (either you or someone who shared the project with you.)  |
+|  Shared with  | Users that the project has been shared with.  |
+|  Last Modified  | Date and time when the project was last modified.  |
+|  Last Opened  | Date and time when the project was last opened.  |
+|  Project ID  | The ID of the project.  |
+|  Longest Date Range  | The longest date range of the project.  |
+|  Number of Queries  | The total number of queries contained in the project.  |
+|  Location  | The folder where the project resides.  |
+
+## Menu bar {#menu-bar}
+
+Within a project, the menu provides options for managing your project, adding components, finding help, and more. Each menu option can also be accessed by keyboard [shortcuts](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+
+![New Project options including the Project, Edit, Insert, Components, Share, and Help options.](assets/menu.png)
+
+|  Menu item  | Description  |
+|---|---|
+|  Project  | Includes common actions for project management, including New, Open, Save, and Save As. You can also refresh the entire project to retrieve the most recent data and definitions by clicking Refresh Project. [Download project data](/help/analysis-workspace/export/download-send.md) options enable you to export data from Workspace. **Project Info & Settings** (see below) offers many options for managing your project.  |
+|  Edit  | Undo or redo your last action. Clear All will reset your project to a blank starting point. |
+|  Insert  | Insert new panels or visualizations from this menu. You can also insert new panels and visualizations from the left panel.  |
+|  [Components](/help/components/overview.md)  | Create new filters, calculated metric, date range, or alert components from your project. You can also create new components from the left panel. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
+|  [Share](/help/analysis-workspace/curate-share/send-schedule-files.md)  | Curate, share and schedule PDF/CSV projects to recipients in your organization.  |
+|  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/apis/using-analysis-workspace-to-build-api-2-requests). Find details about Workspace and factors that impact project [performance](/help/technotes/optimizing-performance.md).  |
+|  Share button or Owner  | If you are in an Own or Edit for the project, the Share button in the top-right gives you one-click access to manage your project recipients. If you are in a Duplicate or View role for the project, you will see the project owner's name. |
+
+### Project Info & Settings {#info-settings}
+
+**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** provides project-level information on the currently active project.
+
+![The Project Info & Settings window.](assets/projectinfo.png)
+
+Settings include:
+
+|  Setting  | Description  |
+|---|---|
+|  Project Name  | The name given to the project. You can double-click the name to edit it.  |
+|  Created By  | Project owner name  |
+|  Last Modified  | Date of last modification to the project.  |
+|  Tags  |Lists any tags applied to a project for easier categorization.  |
+|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it.  |
+|  Count repeat instances in project  | Specifies whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
+|  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
+| [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
+
+## Left panel
+
+Within a project, various icons are available in the left panel, and each represents important parts of a project:
+
+* [Panels](/help/analysis-workspace/c-panels/panels.md) ![panels icon](assets/panels-icon.png)
+
+* [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![visualizations icon](assets/visualizations-icon.png)
+
+* [Components](/help/components/overview.md)![components icon](assets/components-icon.png)
+
+* [Data dictionary](/help/components/data-dictionary/data-dictionary-overview.md)![data dictionary icon](assets/data-dictionary-icon.png)
+
+* [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
+
+Components (Dimensions, Metrics, Filters, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
+
+![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
+
+## Project canvas {#canvas}
+
+The project canvas is where you bring together panels, tables, visualizations, and components to build your analysis. A project can contain many panels, and each panel can contain many tables and visualizations.
+
+Panels are helpful when you want to organize your projects according to time periods, data views, or analysis use case. The active panel will have a blue border around it, and determines what components are available in the left panel.
+
+Depending on the starting point you chose for your projects, you will either have a [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) in the canvas to begin with. The quickest way to start analyzing is to select one or many components and simply drag & drop them into the project canvas. A table of data will automatically be rendered for you. [Learn more](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) about the different options for building a table, or leverage our [training tutorial](/help/analysis-workspace/home.md) for more guidance on building your first project.
+
+![A Freeform Table for the project.](assets/canvas.png)
+
+## Project Manager {#manager}
+
+Analysis Workspace projects can be managed under **Analytics > Components >  Projects**. The Project Manager shows the projects that a specific user created. You can transfer project ownership to a new user under Admin > Analytics Users & Assets > Transfer Assets.
+
+In Projects Manager, you can add, tag, share, duplicate/copy, and more. Search for a project in the search bar or by using the filter options in the left panel. You can filter by tag, owners, project type and more.
+
+![Project Manager Tags search field and Title search field.](assets/project-manager.png)
+
+The following are common actions in the Projects manager, and can be taken on one or many projects at once:
+
+|  Action  | Description  |
+|---|---|
+|  Add  | Create a new project from scratch.  |
+|  Tag or Approve  | Choose "Tag" or "Approve" to organize your projects and make them easier to search for.  |
+|  [Share](/help/analysis-workspace/curate-share/share-projects.md)  | Make a project available to other Analysis Workspace users in your organization.  |
+|  Delete  | Delete your project.  |
+|  Rename  | Edit the name of your project.  |
+|  Copy  | Create a duplicate copy of your project. This creates a new project and project ID. Any shares or schedules tied to the original project will not be copied. |
+|  Export to CSV  | Download your project as a CSV file, which includes plain-text data.  |
+
+-->
+

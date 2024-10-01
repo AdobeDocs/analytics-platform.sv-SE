@@ -3,10 +3,10 @@ title: Översikt över Dimensioner
 description: Lär dig vilka dimensioner som är och hur de används i Customer Journey Analytics
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 0%
+source-wordcount: '204'
+ht-degree: 1%
 
 ---
 
@@ -14,19 +14,22 @@ ht-degree: 0%
 
 Dimensioner är en komponenttyp i Customer Journey Analytics som används för att analysera data. Du kan till exempel använda dimensioner när du skapar rapporter i [Analysis Workspace](/help/analysis-workspace/home.md) eller i [Report Builder](/help/report-builder/report-buider-overview.md).
 
-Customer Journey Analytics är obegränsat. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla.
+Customer Journey Analytics är av obegränsad typ. Värden kan vara numeriska värden, text, objekt, listor eller blandningar av alla.
 
 En grundläggande rapport i Customer Journey Analytics visar rader med dimensioner (vanligtvis strängvärden) mot en kolumn med mätvärden (vanliga numeriska värden).
 
-Om du t.ex. kombinerat siddimensionen med Visits-måttet får du en rankad rapport som visar dina mest besökta sidor:
+Om du till exempel kombinerar siddimensionen med personmåttet får du en rankad rapport som visar dina populäraste sidor för personer:
 
-| `Page` | `Visits` |
-| --- | --- |
-| `Home page` | `800` |
-| `Product page` | `500` |
-| `Purchase page` | `100` |
+| Sida | Folk |
+| --- | ---: |
+| Startsida | 800 |
+| Produktsida | 500 |
+| Inköpssida | 100 |
+
+{style="table-layout:fixed"}
 
 Varje dimension representerar en annan del eller del av din webbplats. Du kan kombinera en av dessa mått med en eller flera mätvärden för att skapa en önskad rapport.
+
 
 ## Skapa dimensioner
 

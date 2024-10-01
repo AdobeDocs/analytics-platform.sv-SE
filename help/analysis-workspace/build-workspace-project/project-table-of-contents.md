@@ -1,20 +1,20 @@
 ---
-description: Information om projektinnehållsförteckningen som är tillgänglig i projekt
+description: Information om innehållsförteckningsfunktionen i ett Workspace-projekt
 keywords: Analysis Workspace
-title: Innehållsförteckning för projekt
+title: Innehållsförteckning
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 8941b6a8339294cf121a07ca0c14bac50342d04e
+source-git-commit: 9d32100f28e8806cc30aaf52e30216cbce1a38b0
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
 
-# Innehållsförteckning för projekt
+# Innehållsförteckning
 
-Du kan visa en innehållsförteckning i varje projekt i Analysis Workspace, så att du snabbt kan gå mellan olika paneler och visualiseringar som finns i projektet. Detta är särskilt användbart när du visar större projekt som innehåller många paneler och visualiseringar.
+Du kan visa en innehållsförteckning för ett projekt i Analysis Workspace, vilket gör att du snabbt kan växla mellan olika paneler och visualiseringar i projektet. Innehållsförteckningen är särskilt användbar när du visar större projekt som innehåller många paneler och visualiseringar.
 
 +++ Visa en videodemonstration av den här funktionen.
 
@@ -22,14 +22,22 @@ Du kan visa en innehållsförteckning i varje projekt i Analysis Workspace, så 
 
 +++
 
+>[!TIP]
+>
+>Du kan använda visualiseringen av avsnittshuvudet för att identifiera och föra fram ett avsnitt i en panel som innehåller många visualiseringar. De här avsnittsrubrikerna visas också som poster i innehållsförteckningen.
+>
+
+
 Så här visar du innehållsförteckningen i ett projekt:
 
 1. I Analysis Workspace går du till det projekt där du vill visa innehållsförteckningen.
 
-1. I det vänstra navigeringsfältet väljer du ikonen ![innehållsförteckning](assets/toc-icon.png).
+1. Välj ![VisaLista](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]** på knapppanelen. Mer information finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).<br/>
 
-   Innehållsförteckningen för projektet visas och varje panel utökas som standard.
+   **[!UICONTROL Table of contents]** för projektet visas och varje panel utökas som standard.
 
-   ![Projektets innehållsförteckning har utökats](assets/project-toc-expanded.png)
+1. I **[!UICONTROL Table of contents]** väljer du en visualisering.<br/>
 
-1. I innehållsförteckningen väljer du en visualisering för att gå till den i projektet.
+   Den valda visualiseringen rullas automatiskt till och markeras kortfattat.
+
+   ![Innehållsförteckningen är markerad](assets/toc-highlighted.png)

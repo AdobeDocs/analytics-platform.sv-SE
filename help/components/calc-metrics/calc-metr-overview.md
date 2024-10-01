@@ -4,51 +4,38 @@ description: Lär dig mer om filtrerade mätvärden som genereras vid rapportkö
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 2%
+source-wordcount: '214'
+ht-degree: 0%
 
 ---
 
 # Översikt över beräknade mätvärden
 
-Beräknade och avancerade beräknade värden är anpassade mått som du kan skapa utifrån befintliga mätvärden. Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen.
+Beräknade mätvärden är anpassade mätvärden som du kan skapa utifrån befintliga mätvärden. Beräknade mätvärden är ett flexibelt sätt att skapa, hantera och strukturera anpassade mätvärden som gör att ni kan analysera data utan att behöva ändra implementeringen.
 
-Du kan
++++ I den här videon finns en introduktion om hur du använder beräknade mätvärden.
 
-* Skapa filtrerade mätvärden som genereras vid rapportkörning, utan att behöva ändra implementeringen. Dessa kan visas historiskt eftersom de baseras på filter.
-* (Endast avancerade beräknade värden) Filtrera på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya personer&quot; med antalet personer som detta är den första sessionen för.
-* (Endast avancerade beräknade värden) Inkludera statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
+>[!VIDEO](https://video.tv.adobe.com/v/31787/?learn=on)
 
-## Beräknade mått jämfört med avancerade beräknade värden
++++
 
-Här följer en jämförelse av funktionerna för beräknade värden och avancerade beräknade värden:
+Ett typiskt arbetsflöde för beräknade värden består av dessa uppgifter
 
-| Alternativ för verktyget Builder | Beräknade mätvärden | Avancerade beräknade värden |
-|---|---|---|
-| Formattyper (decimal, time, percent, currency | Ja | Ja |
-| Attributionsändringar (standard, linjär, deltagande osv.) | Ja | Ja |
-| Mättyper (standard, total | Ja | Ja |
-| Grundläggande operatorer (lägg till, subtrahera, multiplicera, dividera) | Ja | Ja |
-| Använda filter | Nej | Ja |
-| [Grundfunktioner (antal, abs-värde, medelvärde osv.)](/help/components/calc-metrics/cm-functions.md) | Nej | Ja |
-| [Avancerade funktioner (regression, if/then, t-score etc)](/help/components/calc-metrics/cm-adv-functions.md) | Nej | Ja |
-
-## verktyg
-
-| Verktyg | Funktioner |
-|--- |--- |
-| Bygg beräknade mätvärden | <ul><li>Skapa beräknade och avancerade beräknade värden med avancerade allokeringsmodeller.</li><li>Lägg till textbundna filter i metriska formler.</li><li>Jämför filter i samma rapport. Exempel: jämför lokala personer med internationella.</li><li>Använd statistiska funktioner.</li><li> Tillhandahåll detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas).</li><li>Kopiera definitioner till nya mätvärden.</li><li>Ange en intern metrisk förhandsgranskning.</li><li>Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar.</li><li>Märk måtten.</li></ul> |
-| Beräknad måtthanterare | <ul><li>Dela mätvärden med andra.</li><li>Godkänn och strukturera mätvärden.</li><li>Ordna (tagga) mätvärden så att andra kan hitta dem.</li><li>Ta bort mätvärden.</li><li>Byt namn på mätvärden.</li></ul> |
-| API för beräknade värden | En del av API-uppsättningen för Customer Journey Analytics. |
-
-## Mallar för beräknade värden i Customer Journey Analytics
-
-| Namn på beräknat mått | Beskrivning av beräknat mått |
+| Uppgift | Beskrivning |
 | --- | --- |
-| Sessioner per person | Genomsnittligt antal sessioner per person |
-| Starthastighet för session | Den procentandel av tiden som ett dimensionsobjekt inträffade vid den första händelsen i en session. |
-| Sessionens sluthastighet | Den procentandel av tiden som ett dimensionsobjekt inträffade för den senaste händelsen i en session. |
-| Tilldelad tid per person | Den genomsnittliga tiden en person tillbringat på en given dimensionspost. |
-| Tilldelad tid per session | Den genomsnittliga tiden en person tillbringat per session för ett givet dimensionsobjekt. |
+| Plan | För mätvärden som ska godkännas officiellt ![bock](/help/assets/icons/Checkmark.svg) bör du planera och strukturera de beräknade mätvärden som du tror kommer att användas ofta. |
+| [Bygg](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | Skapa, ändra och spara beräknade värden. |
+| [Använd](/help/components/use-components-in-workspace.md) | Använd beräknade mätvärden direkt i dina Workspace-projekt. |
+| [Hantera](/help/components/calc-metrics/cm-workflow/cm-manager.md) | Hantera beräknade värden. Du kan [tagga](/help/components/calc-metrics/cm-workflow/cm-tagging.md), [godkänna](/help/components/calc-metrics/cm-workflow/cm-approving.md), [inte godkänna](/help/components/calc-metrics/cm-workflow/cm-approving.md), [filtrera](/help/components/calc-metrics/cm-workflow/cm-filter.md), [fördel](/help/components/calc-metrics/cm-workflow/cm-favorite.md) eller [till förmån](/help/components/calc-metrics/cm-workflow/cm-favorite.md), [dela](/help/components/calc-metrics/cm-workflow/cm-sharing.md) eller [kopiera](/help/components/calc-metrics/cm-workflow/cm-copy.md) en eller flera beräknade värden. |
+
+Se [Skapa beräknade värden](/help/components/calc-metrics/cm-workflow/cm-workflow.md) för de olika alternativ som finns för att skapa beräknade värden. Du skapar, ändrar och sparar definitionen av de beräknade måtten i [verktyget för beräknade värden](cm-workflow/cm-build-metrics.md).
+
+Du använder beräknade mätvärden direkt i Analysis Workspace. Se [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md)
+
+Du hanterar beräknade värden i [hanteraren för beräknade värden](cm-workflow/cm-manager.md).
+
+## Standardberäknade värden
+
+Adobe tillhandahåller ett antal beräknade standardvärden som identifieras av ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg). Mer information finns i [Standardberäknade värden](/help/components/calc-metrics/default-calcmetrics.md).

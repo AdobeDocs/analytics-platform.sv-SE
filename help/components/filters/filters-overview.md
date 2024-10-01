@@ -4,19 +4,19 @@ description: Förstå vilka filter som används för och hur du skapar ett enkel
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
 
 
-# Översikt över filter {#overview}
+# Översikt över filter
 
-Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
+Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
 
-Filter kan baseras på
+Filter kan baseras på:
 
 - attribut (webbläsartyp, enhet, antal besök, land, kön),
 - interaktioner (kampanjer, sökningar, sökmotor),
@@ -24,36 +24,63 @@ Filter kan baseras på
 - anpassade variabler (formulärfält, definierade kategorier, kund-ID),
 - och andra kriterier.
 
-Du kan skapa och spara filter i Filter Builder eller generera filter från en utfallsvisualisering (i Workspace). Dessutom kan filter användas tillsammans som staplade filter.
+Se [Skapa filter](/help/components/filters/create-filters.md) för olika alternativ för att skapa filter. Sedan skapar, ändrar och sparar du definitionen av ett filter i [filterverktyget](filter-builder.md). Du kan också skapa snabbfilter med hjälp av [snabbfiltermappen](quick-filters.md). Du kan också generera filter från visualiseringar i Workspace, till exempel med hjälp av visualiseringen [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) .
 
-Filtreringen innehåller [Filter Builder](/help/components/filters/filter-builder.md) för att skapa filter och köra ett förtest samt [Filter Manager](/help/components/filters/manage-filters.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela filter i hela organisationen.
+Du använder [filterhanteraren](manage-filters.md) för att hantera filter.
 
-Det högsta antalet filter som du kan skapa per IMS-organisation är 50 000.
+## Planfilter
 
-## Filtertyper {#types}
+I synnerhet som administratör ökar den korrekta planeringen av filter riskerna för att filtren används. Tänk på följande när du planerar filter:
 
-Mer information om tillgängliga typer av filter och hur du skapar dem finns i [Skapa filter](/help/components/filters/create-filters.md).
+- **Målgrupp**: Vem använder dina filter? Se till att du anger en bra filterbeskrivning så att läsarna förstår:
+   - Vad är det här filtret användbart för?
 
-## Sekventiella filter {#sequential}
+   - När ska jag använda det här filtret?
 
-Med sekventiella filter kan du identifiera personer baserat på navigering (sidvisningar på hela webbplatsen, interaktioner med scener i mobilappen eller med en meny i en digitalbox). Sekventiella filter ger ett filter med definierade åtgärder och interaktioner och hjälper dig att identifiera vad en person gillar och vad en person undviker. När du skapar sekventiella filter används operatorn THEN för att definiera och ordna personnavigering.
+- **Omfång**: Vilken [Filterbehållare](#filter-containers) är bäst för de data du är ute efter? Använd den minsta möjliga behållaren.
+
+- **Komponenter**: Bestäm vilka komponenter som ska inkluderas i filterdefinitionen och mot vilka värden villkoren ska validera.
+
+- **Process**: Överväg en godkännandeprocess för filtret. Det finns inget arbetsflöde för godkännande i Customer Journey Analytics, men du kan fortfarande ordna en process för att avgöra om du godkänner ett filter eller inte.
+
+- **Modularitet**: Definiera filter med modularitet i åtanke. Användarna av dina filter kan enkelt [stapla filter](filter-builder.md#stack-filters) för att skapa kraftfulla nya filter.
+
+
+## Filtertyper
+
+Du kan skapa tre typer av filter:
+
+### Snabbfilter
+
+Med snabbfilter kan du enkelt utforska data i ett visst Workspace-projekt, utan att behöva skapa ett filter i [Filter Builder](/help/components/filters/create-filters.md). Du definierar filtret direkt i Workspace gränssnitt. Mer information finns i [Snabbfilter](quick-filters.md).
+
+### Vanliga filter
+
+Med hjälp av regelbundna filter kan du identifiera data (personer, sessioner, händelser) baserat på ett eller flera villkor. Om det finns fler än ett villkor använder du logiska operatorer som And och Eller för att definiera filtret ytterligare. Du kan använda behållare för att gruppera villkor och skapa mer komplexa filter. Mer information finns i [Filterverktyget](filter-builder.md).
+
+### Sekventiella filter
 
 >[!IMPORTANT]
 >
 >Du måste ha paketet **Select** för att kunna skapa sekventiella filter för flera kanaler. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
 
-Här är ett exempel:
+Med sekventiella filter kan du identifiera data (personer, sessioner, händelser) baserat på navigering (sidvisningar på hela webbplatsen, interaktioner med scener i mobilappen eller med en meny i en digitalbox). Med sekventiella filter kan du till exempel identifiera vad en person gillar och vad en person undviker. Använd sedan den logiska operatorn för att definiera ett sekventiellt filter. Mer information finns i [Sekventiella filter](seg-sequential-build.md).
 
-| Session ett | Session två | Session tre |
+
+<!--
+An example of a complex sequential filter if you want to find the persons that 
+
+| Session One | Session Two | Session Three |
 | --- | --- | --- |
-| Personen gick till huvudlandningssidan A, exkluderade kampanjsidan B och visade sedan produktsidan C. | Personen gick åter till huvudlandningssidan A, exkluderade kampanjsidan B, gick tillbaka till produktsidan C och sedan till en ny sida D. | Personen angav och följde samma väg som i det första och andra besöket och uteslöt sedan sidan F för att gå direkt till produktsidan G. |
+| The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
+-->
 
 ## Filterbehållare {#containers}
 
-Filter baseras på en hierarki på person-, session- och händelsenivå med hjälp av en kapslad behållarmodell. Med de kapslade behållarna kan du definiera personattribut och åtgärder baserat på regler mellan och inom behållarna.
+Filter baseras på en hierarki på person-, session- och händelsenivå med hjälp av en kapslad behållarmodell. Med de kapslade behållarna kan du definiera villkor mellan och inuti behållarna.
 
 
-<table style="table-layout: fixed; border: none;">
+<table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
 <td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Person</td>
@@ -72,53 +99,104 @@ Filter baseras på en hierarki på person-, session- och händelsenivå med hjä
 </table>
 
 >[!NOTE]
->Personbehållaren kallades tidigare besökarbehållare. Sessionsbehållaren kallades besöksbehållaren och händelsebehållaren var tidigare Träff-behållaren.
+>
+>För Adobe Analytics:
+> 
+> - Behållaren **Person** kallas i Adobe Analytics för **besökarbehållaren**.
+> - Behållaren **Session** i Adobe Analytics kallas för **Besök**.
+> - **Event**-behållaren kallas i Adobe Analytics för **Hit**-behållaren.
+>
 
-Ett filter anger villkor för att filtrera en person baserat på personens attribut eller interaktioner med din webbplats, mobilapp eller annan enhetstyp som du har samlat in data från. Om du vill ange villkor i ett filter anger du regler för att filtrera personer baserat på personegenskaper och/eller navigeringsegenskaper. Om du vill dela upp personuppgifter ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningstips, skärmklickningar och menyval i en digitalbox för varje person. Men filtrera också på attribut som du har inhämtat från ett CRM- eller lojalitetssystem. I Filter Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska person-, session- eller händelsebehållare.
+Ett filter anger villkor för att filtrera personer, sessioner eller händelser baserat på villkor. Exempel: villkor för att filtrera personer baserat på personegenskaper och navigeringsegenskaper. Om du vill dela upp data ytterligare kan du filtrera efter specifika sessioner, sidvisningshändelser, skärmtapp, menyval i en digitalbox med mera. Men filtrera också på attribut som du har inhämtat från ett CRM- eller lojalitetssystem. [Filterverktyget](/help/components/filters/filter-builder.md) innehåller ett enkelt gränssnitt för att skapa dessa delmängder och tillämpa villkor i kapslade, hierarkiska person-, session- eller händelsebehållare.
 
-Behållararkitekturen som används i Filter Builder definierar Person som den yttersta behållaren. Behållaren innehåller data som är specifika för personen vid besök och sidvisningar, mobilskärmar eller menyskärmar i en digitalbox. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner, och med en kapslad händelsebehållare kan du dela upp personinformation baserat på individuella interaktioner. Med varje behållare kan du rapportera en persons historik, interaktioner som delats upp av sessioner eller dela upp enskilda upplevelsehändelser.
+Behållararkitekturen som används i [filterverktyget](/help/components/filters/filter-builder.md) definierar Person som den yttersta behållaren. Behållaren innehåller översiktsdata som är specifika för personen i olika sessioner och händelser, som sidvisningar, mobilprogramskärmar eller menyskärmar i en digitalbox. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner. Med en kapslad händelsebehållare kan du dela upp personinformation baserat på individuella interaktioner. Med varje behållare kan du rapportera över en persons historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
 
-### Personbehållare {#person}
+### Personbehållare
 
-Personbehållaren innehåller alla besök och sidvisningar, mobilappsskärmar, digitalboxar eller konsolspel för personer inom en viss tidsperiod. I stort sett alla upplevelsehändelser som ingår i de datauppsättningar som du har definierat i din Customer Journey Analytics-anslutning. Ett filter på personnivå returnerar de sidvyer, mobilappar eller digitalboxskärmar som uppfyller villkoret. Dessutom kan samma person interagera med andra kanaler, både online och offline (och endast begränsat av definierade datumintervall). Som den mest väldefinierade behållaren returnerar rapporter som genereras på personbehållarnivå sidvisningar, mobilappskärmar med mera, för alla besök och gör att du kan generera en flerkanalsanalys. Det innebär att personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
+Personbehållaren innehåller alla sessioner och alla händelser för de personer som uppfyller villkoren som anges i behållaren. När du definierar ett filter med ett enkelt villkor som `Page Name equals Checkout` tolkas personbehållaren till:
+
+- Alla personer som har besökt sidan med namnet `Checkout`.
+- Alla sessioner för dessa personer.
+- Alla händelsedata för dessa personer.
+
+Som den mest vitt definierade behållaren returnerar rapporter som genereras på personbehållarnivå händelser och sessioner för alla personer som kvalificerar sig för filtret. Personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
 Personbehållare kan innehålla värden som baseras på en persons övergripande historik:
 
-- Dagar före första köpet
-- Ursprunglig startsida eller startskärm för mobilapp
-- Ursprungliga referensdomäner
+- Dagar före första köpet.
+- Startsida eller startsida för mobilappar.
+- Ursprungliga referensdomäner.
 
-### Sessionsbehållare {#session}
+### Sessionsbehållare
 
-Med sessionsbehållaren kan du identifiera sidinteraktioner eller mobilappsinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar beteenden för hela besökssessionen när regeln har uppfyllts. Med sessionsbehållaren kan du också definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett filter. Den kan hjälpa dig att svara på följande frågor:
+Med sessionsbehållaren kan du identifiera sidinteraktioner eller mobilappsinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar upp beteenden för hela sessionen när regeln har uppfyllts. Med sessionsbehållaren kan du också definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett filter.  När du definierar ett filter med ett enkelt villkor som `Page Name equals Checkout` tolkas sessionsbehållaren som:
 
-- Hur många sessioner har varit kopplade till datakällor för både webben och Call Center?
+- Alla sessioner där en sida med namnet `Checkout` besöktes.
+- Alla händelsedata för dessa sessioner.
+
+Med sessionsbehållaren kan du besvara följande frågor:
+
+- Hur många sessioner involverade både webbdatakällor och datakällor för callcenter?
 - Vilka sidor bidrog till en lyckad konvertering till en försäljning?
 
-Sessionsbehållare innehåller värden som baseras på förekomst per session:
+Sessionsbehållare innehåller värden som baseras på händelser per session:
 
-- Sessionstyp
-- Inmatningssida
-- Returfrekvens
-- Deltagandemått
-- Linjärt allokerade mätvärden
+- Sessionstyp.
+- Startsida.
+- Returfrekvens.
+- Deltagandestatistik.
+- Linjärt allokerade mätvärden.
 
-Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session varar men också när en ny session ska skapas. Du kan till exempel definiera en ny mobilappssession baserat på varje gång en användare startar din mobilapp. Mer information finns i [Sessionsinställningar](/help/data-views/session-settings.md).
+Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session varar, men också när en ny session ska skapas. Du kan till exempel definiera en ny mobilappssession baserat på varje gång en användare startar din mobilapp. Mer information finns i [Sessionsinställningar](/help/data-views/session-settings.md).
 
-### Händelsebehållare {#event}
+### Händelsebehållare
 
-Händelsebehållaren definierar vilken sida, vilket mobilprogram eller annan typ av händelser som du vill inkludera eller exkludera från ett filter. Det är det smalaste av de tillgängliga behållarna så att du kan identifiera specifika klick, sidvy och knapp i en mobilapp där ett villkor är uppfyllt. Med händelsebehållaren kan du visa en enskild spårningskod eller isolera beteenden inom ett visst område i din mobilapp. Du kanske också vill hitta ett specifikt värde när en åtgärd inträffar, till exempel marknadsföringskanalen när en beställning har gjorts.
+Händelsebehållaren definierar vilken sida, vilket mobilprogram eller annan typ av händelser som du vill inkludera eller exkludera från ett filter. Det är det smalaste av de tillgängliga behållarna så att du kan identifiera specifika klick, sidvy och knapp i en mobilapp där ett villkor är uppfyllt. Med händelsebehållaren kan du visa en enskild spårningskod eller isolera beteenden inom ett visst område i din mobilapp. Du kanske också vill hitta ett specifikt värde när en åtgärd inträffar, till exempel marknadsföringskanalen när en beställning har gjorts. När du definierar ett filter med ett enkelt villkor som `Page Name equals Checkout` tolkas händelsebehållaren till:
 
-Händelsebehållare innehåller värdebaserade, ensidiga uppdelningar för:
+- Alla sidvyhändelser där sidnamnet är lika med `Checkout`.
+
+Händelsebehållare innehåller värdebaserade, enkelsidiga uppdelningar för:
 
 - Produkter
 - Visa utkast
 - Listdimensioner
 - Marknadsföringsdimensioner (i samband med händelser)
 
-## Inkörbar filtermall {#template}
 
-Traditionell analys innehåller ett flertal färdiga mallar och beräknade mätvärden. Många av dem gäller inte i Customer Journey Analytics, eller måste namnändras eller återskapas. Andra är beroende av en lösning för sammanhangsberoende variabler i Customer Journey Analytics.
+### Behållare för logikgrupp
 
-| Filternamn | Beskrivning |
+Med Logic Group kan du gruppera villkor i en enda sekventiell filterkontrollpunkt. Som en del av sekvensen utvärderas logiken som definieras i behållaren som identifieras som [!UICONTROL Logic Group] efter en sekventiell kontrollpunkt och före efterföljande kontrollpunkter. Mer information finns i [Logikgrupp](seg-sequential-build.md#logic-group).
+
+### Kapslade behållare
+
+När du skapar behållare i andra behållare skapar du i själva verket ett filter i ett filter. Följande logik används för kapslade behållare:
+
+1. Avgör vilka data som ska inkluderas med den yttersta behållaren. Alla data som inte matchar den här yttre regeln tas bort i rapporten.
+2. Använd den kapslade filterdefinitionen på återstående data. Den kapslade filterdefinitionen gäller INTE för data som den första definitionen ignorerade.
+3. Upprepa tills alla definitioner för kapslade behållarfilter har beräknats. Resterande data inkluderas sedan i resultatet och används för rapportering.
+
+
+<!--
+You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
+| Container | What container you can nest inside |
+| Event | Only event conditions |
+| Session | Session
+
+
+## Out-of-the-box filter template {#template}
+
+Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
+
+| Filter Name | Description |
 | --- | --- |
-| Alla data | Alla data är ett obligatoriskt filter som läggs till dynamiskt i rapporter när ett mätvärde läggs till på raden i en frihandstabell. |
+| All Data | All Data is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+-->
+
+>[!MORELIKETHIS]
+>
+>[Skapa filter](create-filters.md)
+>[Filterverktyget](filter-builder.md)
+>[Snabbfilter](quick-filters.md)
+>[Sekventiella filter](seg-sequential-build.md)
+>[Hantera filter](manage-filters.md)
+>

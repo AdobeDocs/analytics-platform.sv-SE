@@ -4,7 +4,7 @@ description: Lär dig hantera målgrupper i Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Genom att hantera tidigare skapade målgrupper kan ni:
 
 | Användargränssnittsinställning | Definition |
 | --- | --- |
-| Dölj/visa filter | Här kan du visa eller dölja följande filter i den vänstra listen: <ul><li>[!UICONTROL Data view]</li><li>[!UICONTROL Owner]</li><li>[!UICONTROL Refresh frequency]</li><li>[!UICONTROL Tags]</li></ul> |
+| Dölj/visa filter | Gör att du kan visa eller dölja följande filter i den vänstra panelen: <ul><li>[!UICONTROL Data view]</li><li>[!UICONTROL Owner]</li><li>[!UICONTROL Refresh frequency]</li><li>[!UICONTROL Tags]</li></ul> |
 | [!UICONTROL Title & Description] | Den titel och beskrivning som målgruppen fick när den skapades. |
 | [!UICONTROL Data view] | Datavyn som den här målgruppen skapades i. |
 | [!UICONTROL Audience size] | Det totala antalet människor i den här publiken. |

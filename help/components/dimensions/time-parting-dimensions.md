@@ -4,9 +4,9 @@ title: Tidsdelningsdimensioner
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Tidsdelningsdimensionerna baseras på datavyns tidszon. Dessa dimensioner finns 
 
 | Dimension | Exempelvärden |
 |--- |--- |
-| Timme på dagen | 0-23 |
-| AM/PM | AM, PM |
-| Veckodag | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
-| Veckodag/vecka | Weekday, Weekend |
-| Dag i månaden | 1-31 |
-| Månad på året | Januari-december |
-| Dag på året | 1-366 |
-| Kvartal på året | Q1, Q2, Q3, Q4 |
+| **[!UICONTROL Hour of Day]** | 0-23 |
+| **[!UICONTROL AM/PM]** | AM, PM |
+| **[!UICONTROL Day of Week]** | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
+| **[!UICONTROL Weekday/Weekend]** | Weekday, Weekend |
+| **[!UICONTROL Day of Month]** | 1-31 |
+| **[!UICONTROL Month of Year]** | Januari-december |
+| **[!UICONTROL Day of Year]** | 1-366 |
+| **[!UICONTROL Quarter of Year]** | Q1, Q2, Q3, Q4 |

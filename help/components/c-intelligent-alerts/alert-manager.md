@@ -1,110 +1,121 @@
 ---
 description: Skapa, redigera eller ta bort aviseringar.
-title: Varningshanteraren (Analysis Workspace)
+title: Hantera värden
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: bd58af0680fc9524453e072ecb60e3ada72ce634
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
 
 # Hantera aviseringar
 
-Du kan hantera befintliga aviseringar i Varningshanteraren. Du kan utföra olika hanteringsåtgärder för varningar, som taggning, namnbyte, borttagning med mera.
+
+Du kan filtrera, tagga, ta bort, byta namn på, kopiera, aktivera, inaktivera förnyelse och exportera aviseringar från ett centralt [!UICONTROL Alerts]-hanteringsgränssnitt. Så här hanterar du aviseringar:
+
+* Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Alerts]**.
 
 Varningshanteraren är mycket strukturerad som [Filterhanteraren](/help/components/filters/manage-filters.md) och [Beräknad måtthanterare](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
-## Skapa aviseringar
 
-Så här skapar du aviseringar från Alerts Manager:
+## Varningshanteraren
 
-1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt aviseringshanteraren i Customer Journey Analytics.
+Varningshanteraren har följande gränssnittselement:
 
-   ![](assets/alert-manager.png)
+![Gränssnitt för filter](assets/alerts-manager.png)
 
-1. Välj [!UICONTROL **Lägg till**] (eller [!UICONTROL **Skapa ny avisering**] om du inte har några befintliga aviseringar).
+### Varningslista
 
-1. Fortsätt med [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md) om du vill ha mer information om hur du skapar aviseringar.
+➊ visar alla aviseringar du äger, aviseringar som har omfattats av alla dina projekt och aviseringar som har delats med dig. Listan innehåller följande kolumner:
 
-## Hantera befintliga aviseringar
+| Kolumn | Beskrivning |
+|---|---|
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) en varning. |
+| **[!UICONTROL Title and description]** | Om du vill redigera varningen markerar du titellänken, som öppnar [Varningsverktyget](alert-builder.md#alert-builder). |
+| **[!UICONTROL Type]** | Visar om aviseringen är en datavarning från Customer Journey Analytics eller en varning om användning av serversamtal. |
+| **[!UICONTROL Enabled]** | Anger om aviseringen är aktiverad eller inaktiverad. |
+| **[!UICONTROL Data view]** | De datavyer som den här varningen gäller för. |
+| **[!UICONTROL Owner]** | Varningens ägare. Som icke-administratör visas endast aviseringar som du äger eller aviseringar som delas med dig. |
+| **[!UICONTROL Tags]** | Taggarna för den här varningen. |
+| **[!UICONTROL Expiration Date]** | Det datum och den tidpunkt då aviseringen förfaller. |
+| **[!UICONTROL Date modified]** | Datum och tid då aviseringen senast ändrades. |
 
-Så här hanterar du befintliga aviseringar i Varningshanteraren:
+<!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
 
-1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt aviseringshanteraren i Customer Journey Analytics.
+Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vilka kolumner du vill visa.
 
-   ![](assets/alert-manager.png)
+### Åtgärdsfält
 
-1. Välj en eller flera aviseringar som du vill hantera.
+Du kan använda åtgärdsfältets ➋ för att göra aviseringar. Åtgärdsfältet innehåller följande åtgärder:
 
-   ![](assets/alert-manager-tasks.png)
+| Åtgärd | Beskrivning |
+|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ytterligare en avisering med [Varningsverktyget](alert-builder.md#alert-builder). |
+| ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om ingen varning är markerad i listan söker du efter aviseringar med det här sökfältet. |
+| ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade varningarna. I dialogrutan **[!UICONTROL Tag Alert]** markerar eller avmarkerar du taggarna för de markerade aviseringarna. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda aviseringarna. |
+| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort de markerade aviseringarna. Du uppmanas att bekräfta åtgärden. |
+| ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på en enskild markerad varning. Om du väljer det här alternativet kan du byta namn på aviseringen. |
+| ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera den markerade varningen. Nya aviseringar skapas med samma namn och suffix `(Copy)`. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Enable]** eller **[!UICONTROL Disable]** | Aktivera eller inaktivera de markerade aviseringarna. |
+| ![Uppdatera](/help/assets/icons/Refresh.svg) **[!UICONTROL Renew]** | Förnyar aviseringens förfallodatum. Utgångsdatumet är ett år från den dag du väljer det här alternativet, oavsett det ursprungliga förfallodatumet. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera aviseringarna till en `Alerts List.csv`-fil. |
 
-1. Välj något av följande alternativ i åtgärdsfältet:
 
-   | Åtgärd | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Tagg**] | Använd en tagg på en varning. Det gör det enklare att ordna varningar. |
-   | [!UICONTROL **Ta bort**] | Tar bort varningen. |
-   | [!UICONTROL **Byt namn**] | Byter namn på aviseringen. |
-   | [!UICONTROL **Godkänn**] | Markera aviseringen som Godkänd. |
-   | [!UICONTROL **Kopiera**] | Skapar en kopia (dubblett) av varningen. |
-   | [!UICONTROL **Inaktivera**] | Inaktiverar en avisering som är aktiverad. |
-   | [!UICONTROL **Aktivera**] | Aktiverar en varning som är inaktiverad. |
-   | [!UICONTROL **Förnya**] | Förnyar aviseringens förfallodatum. Detta utökar förfallodatumet till 1 år från den dag du valde det här alternativet, oavsett det ursprungliga förfallodatumet. |
-   | [!UICONTROL **Exportera till CSV**] | Exporterar varningen till en CSV-fil. |
+### Aktivt filterfält
 
-## Redigera en varning
+➌ i filterfältet visas de aktiva filter som använts från filterpanelen i listan med varningar (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
 
-Så här redigerar du en befintlig varning:
 
-1. Välj **[!UICONTROL Components]** > **[!UICONTROL Alerts]** för att komma åt Alerts Manager i Adobe Analytics.
+### Panelen Filter
 
-   ![](assets/alert-manager.png)
+Du kan filtrera listan med varningar med den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]**. Filterpanelen visar typ av filter och antalet varningar som följer det specifika filtret.
 
-1. Markera varningsnamnet i kolumnen [!UICONTROL **Titel och beskrivning**].
+{{filterspanel}}
 
-1. Redigera varningen efter behov.
 
-   Nedan följer några av de saker du kan göra när du redigerar en varning:
+#### Filteravsnitt för taggar
 
-   * Lägg till aviseringar i andra rapportsviter
-   * Ändra ägare
-   * Uppdatera filtren
-   * Uppdatera förfallodatumet
+{{tagfiltersection}}
 
-1. Redigera varningen och välj sedan [!UICONTROL **Spara**].
 
-## Konfigurera kolumner
+#### Filteravsnitt för datavy
 
-Du kan konfigurera den information som visas för varje varning i Varningshanteraren genom att konfigurera de kolumner som visas.
+{{dataviewfiltersection}}
 
-Så här konfigurerar du synliga kolumner i Varningshanteraren:
 
-1. I Adobe Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Alerts]**.
+#### Ägarfilteravsnitt
 
-1. I Varningshanteraren väljer du ikonen **Anpassa kolumner** ![Anpassa kolumner](assets/customize-columns-icon.png) och markerar sedan de kolumner som du vill ska visas i Varningshanteraren.
+{{ownerfiltersection}}
 
-   Följande kolumner är tillgängliga:
 
-   | Kolumnrubrik | Beskrivning |
-   |---|---|
-   | Titel och beskrivning | Dessa värden finns i varningsverktyget. Om du vill redigera titeln och beskrivningen markerar du titellänken för att öppna varningsverktyget. |
-   | Favoriter | Visar stjärnikoner bredvid varje varning, så att du kan markera varningar som favoriter. <!-- For more information, see [Mark calculated metrics as favorites](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-favorite.md). --> |
-   | Typ | Visar om aviseringen är en Analytics-datavarning eller en varning om användning av serveranrop. |
-   | Aktiverad | Visar om aviseringen är aktiverad eller inaktiverad. |
-   | Rapportsvit | Anger i vilken rapportsvit som aviseringen senast sparades. |
-   | Ägare | Anger vem som äger aviseringen. Som icke-administratör kan du bara se aviseringar som du äger eller aviseringar som delats med dig. |
-   | Taggar | Visar taggar som har tillämpats på aviseringen, antingen av dig eller av personer som delat aviseringen med dig. |
-   | Utgångsdatum | Visar datumet och tiden då aviseringen förfaller. |
-   | Ändrat den | Anger datumet då aviseringen senast ändrades. |
+#### Aktiverat statusfilteravsnitt
 
-   {style="table-layout:auto"}
+{{enabledstatusfiltersection}}
 
-   <!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
+
+#### Textfilteravsnitt
+
+{{typefiltersection}}
+
+
+#### Andra filteravsnitt
+
+{{otherfiltersfiltersection}}
+
+
+
+## Redigera aviseringar
+
+Du kan redigera en varning
+
+* Markera aviseringens titel i listan [[!UICONTROL Alert]](#alerts-list).
+
+Du använder [varningsverktyget](alert-builder.md#alert-builder) för att redigera varningen.
 
 ## Felsöka en varning
 
-När du felsöker ett problem med en varning ska du ange JID-numret (Job Instance ID) till Adobe Support. JID-numret finns längst ned i e-postaviseringen som du fick.
+När du felsöker ett problem med en varning ska du ange JID-numret (Job Instance ID) till Adobe Support. JID-numret finns längst ned i det varningsmeddelande du får.
 
 ![Varningsmeddelande](assets/alerts-email.PNG)

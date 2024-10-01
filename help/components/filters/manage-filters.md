@@ -1,70 +1,77 @@
 ---
-title: Filterhantering
-description: Lär dig hantera filter i Customer Journey Analytics
+title: Hantera filter
+description: Lär dig hur du hanterar filter i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: e994a53934ae25802fb16e912d0fdee32d5ea524
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
 
-# Filterhantering
+# Hantera filter
 
-Filterhanteraren erbjuder många sätt att strukturera filter, som att dela, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
-Filterhanteraren visar alla filter som du äger och som har delats med dig. Administratörsnivåanvändare kan se alla filter i organisationen. I den här översikten visas användargränssnittet och funktionerna i filterhanteraren.
+Du kan [dela](filters-share.md), [filter](filters-filter.md), [tagg](filters-tag.md), [godkänna](filters-approve.md), byta namn på, [kopiera](filters-copy.md), ta bort, exportera filter och markera filter som [favorit](filters-favorite.md) från ett centralt [!UICONTROL Filters]-hanteringsgränssnitt. Så här hanterar du filter:
 
-![](assets/filter-manager-ui.png)
+* Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Filters]**.
 
-## Öppna Filterhanteraren
 
-1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Filters]**.
+>[!NOTE]
+>
+>Snabbfiltren som du skapar i ett visst Workspace-projekt visas inte i hanteraren för [!UICONTROL Filters], såvida du inte har gjort filtret tillgängligt för alla dina projekt.
+>
 
-## Tillgängliga åtgärder i Filterhanteraren
+## Filterhantering
 
-I Filterhanteraren kan du:
+Filterhanteraren har följande gränssnittselement:
 
-* [Filtrera filterlistan](/help/components/filters/filters-filter.md)
+![Gränssnitt för filter](assets/filters-manager.png)
 
-* [Markera filter som favoriter](/help/components/filters/filters-favorite.md)
+### Filterlista
 
-* [Godkänn filter](/help/components/filters/filters-approve.md)
+Filterlistan ➊ alla filter som du äger, de filter som har omfattats av alla dina projekt och de filter som har delats med dig. Listan innehåller följande kolumner:
 
-* [Taggfilter](/help/components/filters/filters-tag.md)
+| Kolumn | Beskrivning |
+| --- | --- | 
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett filter. Se [Markera filter som favorit](/help/components/filters/filters-favorite.md) |
+| **[!UICONTROL Title and description]** | Om du vill redigera filtret markerar du titellänken, som öppnar [filterverktyget](filter-builder.md). Ett delat filter anges med ![Dela](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Data view]** | De datavyer som det här filtret gäller för. |
+| **[!UICONTROL Owner]** | Filtrets ägare. Som användare ser du bara de filter som du äger eller de anteckningar som delas med dig. |
+| **[!UICONTROL Tags]** | Taggarna för detta filter. |
+| **[!UICONTROL Shared with]** | Hur många individer eller grupper som du har delat filtret med. Välj det här alternativet om du vill öppna dialogrutan **[!UICONTROL Share Component]**. Mer information finns i [Dela filter](filters-share.md). |
+| **[!UICONTROL Date modified]** | Datum och tid då filtret senast ändrades. |
+| **[!UICONTROL Used in]** | Visa var filter används och hur många gånger de används i varje område. <p>Om filtret till exempel används i 40 projekt och 2 varningar visas värdet för den här kolumnen som [!UICONTROL **42 komponenter**].</p> <p>Välj värdet i den här kolumnen för att se hur de olika filtren används (till exempel [!UICONTROL **Projekt (40)**], [!UICONTROL **Mobila styrkort (2)**]). Dessutom kan du visa en lista med objekt där filtren används. Se till exempel en lista över projekt där de används och välj länken [!UICONTROL **Projekt (40)**].</p><p>I vart och ett av följande områden visas antalet förekomster av filter som används i det området:</p>  <ul><li>[!UICONTROL **Projekt**]<p>Innehåller filter som har [skapats i filterverktyget](/help/components/filters/filter-builder.md#) och som är tillgängliga för alla projekt.</p></li><li>[!UICONTROL **Ad hoc-komponenter**]<p>Innehåller filter som [har skapats som snabbfilter](/help/components/filters/quick-filters.md) och som endast är tillgängliga i ett enskilt projekt.</p></li><li>[!UICONTROL **Schemalagda projekt**]</li><li>[!UICONTROL **Mobil styrkort**]</li><li>[!UICONTROL **Anteckningar**]</li><li>[!UICONTROL **Beräknade värden**]</li><li>[!UICONTROL **Report Builder**]<p>Om du väljer det här alternativet hämtas en CSV-fil med följande datakolumner:</p><ul><li>Report Builder</li><li>Senast använd</li><li>Användar-ID för senast använda IMS</li><li>Användarnamn med senaste åtkomst</li></ul></li></ul><p>Den här informationen hjälper dig att avgöra om en komponent är värdefull för användare i organisationen, var komponenten används och om komponenten behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen är endast tillgänglig för systemadministratörer.</li><li>Kolumnen [!UICONTROL **Används i**] visas inte som standard. Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att konfigurera visningen av den här kolumnen.</li><li>Den här informationen inkluderar inte användning från API:t eller Datan Warehouse.</li><li>Om det inte finns några data i den här kolumnen för en viss komponent, men komponenten har datumet [!UICONTROL **Senast använd**] , kan komponenten ha använts i en analys utan att sparas.</li><li>Användningsinformation finns tillgänglig från och med september 2023.</li></ul><p>Du kan använda [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i din organisation.</p> |
+| **[!UICONTROL Last Used]** | När filtret användes senast. |
 
-* [Dela filter](/help/components/filters/filters-share.md)
+{style="table-layout:auto"}
 
-* Exportera ett filter till en CSV-fil.
+Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vilka kolumner du vill visa.
 
-* [Kopiera filter](/help/components/filters/filters-copy.md)
+### Åtgärdsfält
 
-* Ta bort filter
+Du kan använda åtgärdsfältets ➋ för att utföra åtgärder på filter. Åtgärdsfältet innehåller följande åtgärder:
 
-## Konfigurera kolumner
+| Åtgärd | Beskrivning |
+|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ytterligare ett filter med [filterverktyget](filter-builder.md). |
+| ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om inget filter är markerat i listan söker du efter filter med det här sökfältet. |
+| ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de valda filtren. I dialogrutan **[!UICONTROL Tag Filter]** markerar eller avmarkerar du taggarna för de valda filtren. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda filtren. Mer information finns i [Taggfilter](/help/components/filters/filters-tag.md). |
+| ![Dela](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Dela de valda filtren. I dialogrutan **[!UICONTROL Share Filter]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda filtren. Mer information finns i [Dela filter](filters-share.md). |
+| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort de markerade filtren. Du uppmanas att bekräfta åtgärden. |
+| ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på ett enskilt markerat filter. När du har markerat det här alternativet kan du byta namn på filtret. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Godkänn de valda filtren. Mer information finns i [Godkänn filter](filters-approve.md). |
+| ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera det markerade filtret. Nya filter skapas med samma namn och suffix `(Copy)`. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera filter till en `Filters List.csv`-fil. |
 
-Du kan konfigurera informationen som visas för varje filter i filterhanteraren genom att konfigurera kolumnerna som visas.
+### Aktivt filterfält
 
-Så här konfigurerar du synliga kolumner i Filterhanteraren:
+➌ i filterfältet visas de aktiva filter som har använts från filterpanelen i listan med filter (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
 
-1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Components]** och sedan **[!UICONTROL Filers]**.
+### Panelen Filter
 
-1. I filterhanteraren väljer du ikonen **Anpassa kolumner** ![Anpassa kolumner](assets/customize-columns-icon.png) och markerar sedan de kolumner som du vill ska visas i filterhanteraren.
+Du kan filtrera filterlistan med hjälp av den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** . Filterpanelen visar typen av filter och antalet filter som uppfyller det specifika filtret. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
 
-   Följande kolumner är tillgängliga:
-
-   | Kolumnrubrik | Beskrivning |
-   |---|---|
-   | Titel och beskrivning | Dessa värden finns i filterverktyget. Om du vill redigera titeln och beskrivningen markerar du titellänken för att öppna filterverktyget. |
-   | Favoriter | Visar stjärnikoner bredvid varje filter, så att du kan markera filtren som favoriter. Mer information finns i [Markera filter som favoriter](/help/components/filters/filters-favorite.md). |
-   | Datavy | Den här kolumnen anger i vilken datavy filtret senast sparades. |
-   | Ägare | Anger vem som äger filtret. Om du inte är administratör kan du bara se filter som du äger eller de som delats med dig. |
-   | Taggar (inte incheckad i kolumnväljare, därför visas inte kolumnen) | Taggar som har tillämpats på filtret, antingen av dig eller av personer som delat filtret med dig. |
-   | Delas med | Visar enskilda personer eller grupper (endast Admin) eller Alla (endast Admin) som du har delat filtret med. <p>När ett filter delas av dig eller med dig visas en delningsikon bredvid filternamnet.</p> |
-   | Ändrat den | Visar datumet då filtret senast ändrades. |
-   | Används i | Visar var filter används och hur många gånger de används i varje område. <p>Om filtret till exempel används i 40 projekt och 2 varningar visas värdet för den här kolumnen som [!UICONTROL **42 komponenter**].</p> <p>Välj värdet i den här kolumnen för att se hur de olika filtren används (till exempel [!UICONTROL **Projekt (40)**], [!UICONTROL **Mobila styrkort (2)**]). Dessutom kan du visa en lista med objekt där filtren används. Se till exempel en lista över projekt där de används och välj länken [!UICONTROL **Projekt (40)**].</p><p>I vart och ett av följande områden visas antalet förekomster av filter som används i det området:</p>  <ul><li>[!UICONTROL **Projekt**]<p>Innehåller filter som har [skapats i filterverktyget](/help/components/filters/filter-builder.md#) och som är tillgängliga för alla projekt.</p></li><li>[!UICONTROL **Ad hoc-komponenter**]<p>Innehåller filter som [har skapats som snabbfilter](/help/components/filters/quick-filters.md) och som endast är tillgängliga i ett enskilt projekt.</p></li><li>[!UICONTROL **Schemalagda projekt**]</li><li>[!UICONTROL **Mobil styrkort**]</li><li>[!UICONTROL **Anteckningar**]</li><li>[!UICONTROL **Beräknade värden**]</li><li>[!UICONTROL **Report Builder**]<p>Om du väljer det här alternativet hämtas en CSV-fil med följande datakolumner:</p><ul><li>Report Builder</li><li>Senast använd</li><li>Användar-ID för senast använda IMS</li><li>Användarnamn med senaste åtkomst</li></ul></li><p>När du visar information för Report Builder är användningsinformation tillgänglig från och med september 2024.</p></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen är endast tillgänglig för systemadministratörer.</li><li>Kolumnen [!UICONTROL **Används i**] visas inte som standard. [Konfigurera kolumner](#configure-columns) så att de visas.</li><li>Om ett filter innehåller ett annat filter i definitionen visas ingen användning av det filtret i kolumnen [!UICONTROL **Används i**]. Om ett filter ingår i definitionen för en annan typ av komponent (till exempel ett beräknat mått) visas användningen i kolumnen [!UICONTROL **Används i**].</li><li>Den här informationen inkluderar inte användning från API:t eller Datan Warehouse.</li><li>Om det inte finns några data i den här kolumnen för en viss komponent, men den har datumet [!UICONTROL **Senast använd**], kan komponenten ha använts i en analys utan att sparas.</li><li>Användningsinformation finns tillgänglig från och med september 2023.</li></ul><p>Du kan använda [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i din organisation.</p> |
-   | Senast använd | Visar datumet då filtret senast användes i någon av följande komponenttyper: <ul><li>Beräknade mått</li><li>Projekt</li><li>Schemalagda projekt</li><li>Filter</li></ul> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen eller om den ska tas bort.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>För vissa komponenter kanske den här kolumnen inte innehåller data om komponenten senast användes före september 2023.</li><li>Den här informationen är endast tillgänglig för systemadministratörer.</li></ul><p>Du kan använda [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i din organisation. |
-
-   {style="table-layout:auto"}
+Mer information finns i [Filtrera listan med filter](filters-filter.md).

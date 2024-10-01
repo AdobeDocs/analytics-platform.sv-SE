@@ -4,9 +4,9 @@ title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -19,66 +19,78 @@ Med mätvärden kan du kvantifiera datapunkter i Analysis Workspace. De används
 
 Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace:
 
+
 * **Standardmått**: Exempel på standardvärden är Folk, Sessioner och Händelser.
 
-* **Beräknade mätvärden** ![Ikon för beräknade mätvärden](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg): Användardefinierade mätvärden som baseras på standardmått, statiska tal eller algoritmiska funktioner.
+* **Beräknade mått** ![Beräkna](/help/assets/icons/Calculator.svg): Användardefinierade mått som baseras på standardvärden, statiska tal eller algoritmiska funktioner.
 
-* **Mallar för beräknade mått**  <img src="./assets/adobe-logo.svg" width="18"> : Adobe-definierade mått som beter sig på liknande sätt som beräknade värden. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa dess logik.
+* **Beräknade måttmallar** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-definierade mått som fungerar på liknande sätt som beräknade mått. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa logiken.
 
-
-![Workspace-panelen markerar Metrisk i den vänstra rutan.](assets/cja-metrics.png)
-
-Du kan se om ett mätresultat har godkänts med ikonen ![Godkänd](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) eller inte. Om du vill ha mer information om ett mätresultat för du pekaren över mätvärdet och väljer ![informationsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
+Du kan se om ett mätresultat har godkänts med ikonen ![Godkänd](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) eller inte. Om du vill ha mer information om ett mätresultat för du pekaren över mätvärdet och väljer ![informationsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). Mer information finns i [Komponentinformation](use-components-in-workspace.md#component-info).
 
 
-Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod. Du kan också dra ett mått när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt. Om du drar ett mätresultat över ett befintligt måtthuvud ersätts det och om du drar ett mätvärde bredvid ett huvud kan du se båda mätvärdena sida vid sida.
 
 ## Använd mätvärden i Analysis Workspace
 
-Mätvärden kan användas på olika sätt i Analysis Workspace. Mer information om hur du lägger till mått och andra typer av komponenter i Analysis Workspace finns i [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md).
+Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod. Du kan också dra ett mått när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt. Om du drar ett mätresultat över ett befintligt måtthuvud ersätts det och om du drar ett mätvärde bredvid ett huvud kan du se båda mätvärdena sida vid sida.
 
-## Skapa beräknade mått
+Mer information om hur du lägger till mått och andra typer av komponenter i Analysis Workspace finns i [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md).
 
-Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner.
+## Beräknade mått
 
-Det finns flera sätt att skapa beräknade mått. Den metod du väljer avgör om det beräknade måttet är tillgängligt från komponentlistan i alla projekt, eller bara i det projekt där det skapades.
+Med beräknade mätvärden kan ni enkelt konfigurera hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner. Mer information finns i [Översikt över beräknade mätvärden](/help/components/calc-metrics/calc-metr-overview.md).
 
-### Skapa beräknade mätvärden för alla projekt
+<!--
 
-Du kan använda verktyget för beräknade mätvärden för att skapa beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen.
+There are several ways to create calculated metrics. See [Create calculated metrics]()
 
-Mer information om hur du får åtkomst till verktyget för beräknade värden finns i [Bygg mått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+### Create calculated metrics for all projects
 
-### Skapa beräknade mätvärden för ett enskilt projekt
+You can use the calculated metric builder to create calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
 
-Du kan skapa snabba beräknade mätvärden som bara är tillgängliga för det projekt där de skapades.
+For information about how to access the calculated metrics builder, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-Så här skapar du ett beräknat mått för ett enskilt projekt:
+### Create calculated metrics for a single project
 
-1. Öppna det projekt i Analysis Workspace där du vill skapa det beräknade måttet.
+You can create quick calculated metrics that are available only for the project where they were created.
 
-1. Högerklicka på en eller flera rubrikkolumnceller i en frihandstabell och välj sedan **[!UICONTROL Create metric from selection]**
+To create a calculated metric for a single project:
 
-   ![Markering av panelen Workspace Skapa från markering](assets/create-metric-from-selection.png)
+1. In Analysis Workspace, open the project where you want to create the calculated metric.
 
-1. Om du bara vill skapa ett beräknat mått för det här projektet väljer du bland följande alternativ:
+1. In a freeform table, select **[!UICONTROL Create metric from selection]** from the context menu in a column header.
 
-   * [!UICONTROL **Dela**]
+   ![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
 
-   * [!UICONTROL **Subtrahera**]
+1. To create a calculated metric for this project only, choose from the following options:
 
-   * [!UICONTROL **Lägg till**]
+   * [!UICONTROL **Divide**]
+   
+   * [!UICONTROL **Subtract**]
 
-   * [!UICONTROL **Multiplicera**]
+   * [!UICONTROL **Add**]
 
-   Om du vill öppna verktyget för beräknade mått och skapa det beräknade måttet för alla projekt väljer du [!UICONTROL **Öppna i verktyget för beräknade mått**] och fortsätter sedan med [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+   * [!UICONTROL **Multiply**]
 
-[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+   Or, to open the calculated metric builder and create the calculated metric for all projects, select [!UICONTROL **Open in Calculated Metric Builder**], then continue with [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+
+
+<!-- This video really shows an AA example using hits, etc.  Not suitable for CJA... >
++++ See the following video on how to create an implementation-less calculated metric from within Analysis Workspace.
+
+[Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+
++++
+
+-->
 
 ## Jämför mätvärden med olika attribueringsmodeller
 
-Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan högerklickar du på ett mätresultat och väljer **[!UICONTROL Compare Attribution Models]**:
+Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan för ett mätresultat väljer du **[!UICONTROL Compare attribution models]** på snabbmenyn för ett mätresultat.
 
 ![Workspace-panelen markerar Jämför attribueringsmodeller](assets/compare-attribution.png)
 
-Med den här genvägen kan du snabbt och enkelt jämföra en attribueringsmodell med en annan utan att dra i ett mätresultat och konfigurera det två gånger.
+Med den här genvägen kan du snabbt och enkelt jämföra attribueringsmodeller.
