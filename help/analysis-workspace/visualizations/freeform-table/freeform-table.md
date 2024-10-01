@@ -4,14 +4,24 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
 
-# Översikt över frihandstabell
+# Översikt över frihandstabell {#freeform-table-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_button"
+>title="Frihandsregister"
+>abstract="Skapa en tom frihandsritbordsvisualisering som du kan bygga upp med mått, segment, mätvärden och datumintervall. Du kan använda frihandstabellen som bas för andra visualiseringar."
+
+<!-- markdownlint-enable MD034 -->
+
 
 I Analysis Workspace är en ![Table](/help/assets/icons/Table.svg) **[!UICONTROL Freeform table]**-visualisering grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) i rader och kolumner för att skapa en anpassad tabell för analysen. När varje komponent släpps uppdateras tabellen omedelbart så att du snabbt kan analysera och fördjupa den.
 

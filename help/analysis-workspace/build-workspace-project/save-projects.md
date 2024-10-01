@@ -4,14 +4,24 @@ title: Spara projekt
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '794'
 ht-degree: 0%
 
 ---
 
-# Spara projekt
+# Spara projekt {#save-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_addnotes"
+>title="Lägg till anteckningar"
+>abstract="Lägg till anteckningar om den projektversion som sparas. Anteckningarna lagras med versionen och är tillgängliga på menyn **[!UICONTROL Project]** > **[!UICONTROL Open previous version]**."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Projekt i Analysis Workspace sparas automatiskt varannan minut. Du kan också spara projekt själv, spara ett projekt som en dubblett eller spara ett projekt med versionskommentarer.
 

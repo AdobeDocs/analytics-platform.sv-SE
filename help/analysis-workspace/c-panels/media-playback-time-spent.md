@@ -4,14 +4,14 @@ description: Så här använder och tolkar du den mediespelningstid som används
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
 
 ---
 
-# Medieuppspelningstid spenderad panel {#media-playback-time-spent-panel}
+# Medieuppspelningstid som använts på panelen {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
 

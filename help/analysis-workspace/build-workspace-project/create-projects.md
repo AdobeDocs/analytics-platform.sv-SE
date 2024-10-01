@@ -4,14 +4,24 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
 
-# Skapa projekt
+# Skapa projekt {#create-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_countrepeatinstances"
+>title="Antal upprepande instanser"
+>abstract="Anger om upprepade instanser räknas i rapporter.<br/><br/>Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Med [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan du skapa och visa affärskritiska analyser.  Dessa analyser kan delas med intressenter inom eller utanför organisationen.
 

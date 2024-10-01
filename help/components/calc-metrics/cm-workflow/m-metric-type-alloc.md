@@ -3,9 +3,9 @@ description: Läs mer om mätningstyp och attribuering
 title: Mättyp och attribut
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -148,8 +148,8 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
->title="Tidsminskning"
->abstract="De Dimensioner som ligger närmast konverteringen ger mest poäng."
+>title="Anpassad"
+>abstract="Definiera din egen positionsbaserad attribueringsvikt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -161,7 +161,6 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 >abstract="Krediten bestäms dynamiskt utifrån en statistisk algoritm."
 
 <!-- markdownlint-enable MD034 -->
-
 
 
 {{attribution-models-details}}
