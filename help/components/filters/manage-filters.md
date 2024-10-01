@@ -4,7 +4,7 @@ description: Lär dig hur du hanterar filter i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Filterlistan ➊ alla filter som du äger, de filter som har omfattats av alla d
 | Kolumn | Beskrivning |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett filter. Se [Markera filter som favorit](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Title and description]** | Om du vill redigera filtret markerar du titellänken, som öppnar [filterverktyget](filter-builder.md). Ett delat filter anges med ![Dela](/help/assets/icons/ShareLight.svg). |
+| **[!UICONTROL Title and description]** | Om du vill redigera filtret markerar du titellänken, som öppnar [filterverktyget](filter-builder.md). Ett delat filter anges med ![Dela](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Data view]** | De datavyer som det här filtret gäller för. |
 | **[!UICONTROL Owner]** | Filtrets ägare. Som användare ser du bara de filter som du äger eller de anteckningar som delas med dig. |
 | **[!UICONTROL Tags]** | Taggarna för detta filter. |
@@ -59,7 +59,7 @@ Du kan använda åtgärdsfältets ➋ för att utföra åtgärder på filter. Å
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ytterligare ett filter med [filterverktyget](filter-builder.md). |
 | ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om inget filter är markerat i listan söker du efter filter med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de valda filtren. I dialogrutan **[!UICONTROL Tag Filter]** markerar eller avmarkerar du taggarna för de valda filtren. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda filtren. Mer information finns i [Taggfilter](/help/components/filters/filters-tag.md). |
-| ![Dela](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | Dela de valda filtren. I dialogrutan **[!UICONTROL Share Filter]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda filtren. Mer information finns i [Dela filter](filters-share.md). |
+| ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Dela de valda filtren. I dialogrutan **[!UICONTROL Share Filter]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda filtren. Mer information finns i [Dela filter](filters-share.md). |
 | ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort de markerade filtren. Du uppmanas att bekräfta åtgärden. |
 | ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på ett enskilt markerat filter. När du har markerat det här alternativet kan du byta namn på filtret. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Godkänn de valda filtren. Mer information finns i [Godkänn filter](filters-approve.md). |

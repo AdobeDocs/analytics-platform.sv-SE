@@ -4,7 +4,7 @@ title: Dela filter
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -21,7 +21,7 @@ I [Filterhanteraren](manage-filters.md) kan du dela filter. Beroende på dina be
 Så här delar du ett eller flera filter:
 
 1. Välj ett eller flera av de filter som du vill dela i [Filterhanteraren](manage-filters.md).
-1. Välj ![Dela](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** i åtgärdsfältet.
+1. Välj ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** i åtgärdsfältet.
 1. I dialogrutan **[!UICONTROL Share Filters]**:
 
    ![Dialogrutan Dela filter](assets/share-filter-dialog.png)

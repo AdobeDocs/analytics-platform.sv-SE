@@ -4,7 +4,7 @@ description: Dela, byta namn på eller ta bort datumintervall i Analysis Workspa
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Du kan använda åtgärdsfältets ➋ för att utföra åtgärder på datuminter
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ett annat datumintervall med hjälp av [datumintervallverktyget](create.md#date-range-builder). |
 | ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om inget datumintervall är markerat i listan söker du efter datumintervall med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade datumintervallen. I dialogrutan **[!UICONTROL Tag Date range]** markerar eller avmarkerar du taggarna för de markerade datumintervallen. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda datumintervallen. |
-| ![Dela](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | Dela de markerade datumintervallen. I dialogrutan **[!UICONTROL Share Date range]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda datumintervallen. |
+| ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Dela de markerade datumintervallen. I dialogrutan **[!UICONTROL Share Date range]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda datumintervallen. |
 | ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort de markerade datumintervallen. Du uppmanas att bekräfta åtgärden. |
 | ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på ett enstaka markerat datumintervall. När du har markerat det här alternativet kan du byta namn på datumintervallet. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Godkänn de valda datumintervallen. |

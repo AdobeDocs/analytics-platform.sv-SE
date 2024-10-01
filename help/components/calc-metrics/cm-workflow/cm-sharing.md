@@ -3,7 +3,7 @@ description: Beroende på dina behörigheter kan du dela mätvärden med hela or
 title: Dela beräknade värden
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -20,7 +20,7 @@ I [hanteraren för beräknade värden](cm-manager.md) kan du dela beräknade vä
 Så här delar du ett eller flera beräknade mått:
 
 1. Välj en eller flera av de beräknade mätvärden som du vill dela i [hanteraren för beräknade mätvärden](cm-manager.md).
-1. Välj ![Dela](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** i åtgärdsfältet.
+1. Välj ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** i åtgärdsfältet.
 1. I dialogrutan **[!UICONTROL Share Calculated metric]**:
 
    ![Dialogrutan Dela beräknade värden](assets/share-calculated-metrics-dialog.png)
