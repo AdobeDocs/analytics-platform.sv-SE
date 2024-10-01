@@ -3,7 +3,7 @@ title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: dcd3ee5f3db5af434b87bfded0e360c66643793e
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Alla datainsamlingar och inställningar konfigureras automatiskt när de är akt
 
 >[!IMPORTANT]
 >
->Den här funktionen tar hänsyn till era avtalsbaserade databegränsningar i Adobe Experience Platform. Se till att din organisation kan hantera data som genereras av den här funktionen innan du aktiverar den.
+>Den här funktionen är viktig för dina avtalsenliga radbegränsningar i Adobe Experience Platform. Se till att din organisation kan hantera data som genereras av den här funktionen innan du aktiverar den.
 
 ## Tillgängliga dimensioner
 

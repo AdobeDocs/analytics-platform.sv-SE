@@ -3,9 +3,9 @@ title: Inställningar för produktanvändningsdata
 description: Aktivera, inaktivera eller konfigurera inställningar för produktanvändning.
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: 40b761928697d1d55e1177aa7b2b3c056739ecc9
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ Sidan _Datainställningar_ hanterar din produktanvändningskonfiguration. Du kan
 Följande inställningar är tillgängliga på den här sidan:
 
 * **Aktivera produktanvändning**: Växlar tillgänglighet för insamling av produktanvändningsdata. Om du aktiverar produktanvändning och sedan inaktiverar den i framtiden tas inte datauppsättningen, anslutningen och datavyn bort. Spärra/knip är inaktiverat globalt för din organisation när den är avstängd.
-* **Sandbox**: Anger den Adobe Experience Platform-sandlåda som schemat och datauppsättningen skapas under. Sandlådan som du väljer påverkar inte insamling av produktanvändningsdata. Om du ändrar den här sandlådeinställningen skapas en separat datamängd, anslutning och datavy. Historiska data finns kvar i föregående sandlåda.
-* **Åsidosätt datalagringsfönstret**: Alla datauppsättningar har ett standardfönster för datalagring. Om den här inställningen är inaktiverad följer produktanvändningen den standardtidsperioden. Du kan aktivera den här inställningen om du vill korta ned den tid som data sparas. Du kan inte utöka datalagringen utanför datauppsättningens standardfönster för datalagring.
+* **Sandbox**: Anger den Adobe Experience Platform-sandlåda som schemat och datauppsättningen skapas under. Sandlådan som du väljer påverkar inte insamling av produktanvändningsdata. Om du ändrar den här sandlådeinställningen tas alla befintliga data bort. En ny datauppsättning, anslutning och datavy skapas i den valda sandlådan.
+* **Åsidosätt datalagringsfönstret**: Alla datauppsättningar har ett standardfönster för datalagring. Om den här inställningen är inaktiverad följer produktanvändningen den standardtidsperioden. Du kan aktivera den här inställningen om du vill korta ned den tid som data sparas. Förkorta tidsfönstret för datalagring och minska kostnaderna och gör det möjligt att följa eventuella personalspecifika riktlinjer för sekretess. Du kan inte utöka datalagringen utanför datauppsättningens standardfönster för datalagring.
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_sandbox"
@@ -36,4 +36,4 @@ Följande inställningar är tillgängliga på den här sidan:
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
 >title="Åsidosätt fönstret för datalagring"
->abstract="Minska tillgängligheten av produktanvändningsdata för att minska kostnaderna."
+>abstract="Korta tillgängligheten för produktanvändningsdata för att minska kostnaderna eller följa riktlinjerna för integritet."
