@@ -5,9 +5,9 @@ keywords: produktanalys
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1393'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,19 @@ I likhet med Analysis Workspace- och Mobile-styrkort använder guidad analys dat
 
 Följande guidade analysvyer är tillgängliga:
 
-| Analystyp | Vytyp | Beskrivning |
-| --- | --- | --- |
-| [!UICONTROL Feature matrix] | [Engagemang](types/engagement.md) | Förstå bredden och djupet av engagemanget. |
-| [!UICONTROL Funnel] | [Funktion](types/friction.md) | Jämför konverteringsgrader mellan steg. |
-| [!UICONTROL Funnel] | [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
-| [!UICONTROL Impact] | [Utgåva](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
-| [!UICONTROL Impact] | [Första användningen](types/first-use.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
-| [!UICONTROL Retention] | [Kvarhållningsfrekvenser](types/retention-rates.md) | Mät användarnas återkommande returvanor. |
-| [!UICONTROL Trends] | [Användning](types/usage.md) | Mät användarengagemanget över tid. |
-| [!UICONTROL Trends] | [Frekvens](types/frequency.md) | Mät engagemang efter användningsfrekvens. |
-| [!UICONTROL User growth] | [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
-| [!UICONTROL User growth] | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
-| [!UICONTROL User stream] | [Tidslinje](types/timeline.md) | Utforska mönster i sessionsaktivitet. |
+| Vytyp | Beskrivning |
+| --- | --- |
+| [Engagemang](types/engagement.md) | Förstå bredden och djupet av engagemanget. |
+| [Funktion](types/friction.md) | Jämför konverteringsgrader mellan steg. |
+| [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
+| [Utgåva](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
+| [Första användningen](types/first-use.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
+| [Kvarhållningsfrekvenser](types/retention-rates.md) | Mät användarnas återkommande returvanor. |
+| [Användning](types/usage.md) | Mät användarengagemanget över tid. |
+| [Frekvens](types/frequency.md) | Mät engagemang efter användningsfrekvens. |
+| [Aktiv](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
+| [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
+| [Tidslinje](types/timeline.md) | Utforska mönster i sessionsaktivitet. |
 
 {style="table-layout:auto"}
 
@@ -40,15 +40,27 @@ Följande guidade analysvyer är tillgängliga:
 
 Du kommer åt Guidad analys från Customer Journey Analytics hemsida.
 
-1. Klicka på **[!UICONTROL Guided analysis]** på hemsidan, som tar dig direkt till [vyn Användningstrender](types/usage.md).
+1. Välj **[!UICONTROL Guided analysis]** på hemsidan, som tar dig direkt till [vyn Användningstrender](types/usage.md).
 
    ![Landningssidoruta](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. Klicka på **[!UICONTROL Create new]** om du vill visa de olika visningsalternativen och välja en annan startpunkt för analysen.
+1. Välj **[!UICONTROL Create new]** om du vill visa de olika visningsalternativen och välja en annan startpunkt för analysen.
 
    ![Skapa en ny modal](assets/create-new-modal.png){style="border:1px solid gray"}
 
-Om din organisation ännu inte har etablerats för guidad analys kontaktar du ditt Adobe-kontoteam.
+Du kan även komma åt Guidad analys inifrån ett Analysis Workspace-projekt.
+
+1. Välj **[!UICONTROL Blank project]** på startsidan om du vill skapa ett tomt Workspace-projekt.
+
+   ![Skapa tomt projekt](assets/blank-project.png){style="border:1px solid gray"}
+
+1. Välj ![Guidad analys](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL Guided Analysis]** i den vänstra listen.
+
+   ![Workspace left rail](assets/workspace-left-rail.png){style="border:1px solid gray"}
+
+1. Dra en visningstyp till Workspace arbetsyta och välj sedan knappen **[!UICONTROL Create]** för att generera önskad analys. Du kan också dra en befintlig analys till Workspace Canvas från avsnittet **[!UICONTROL Saved]**.
+
+   ![Skapa panel](assets/create-panel.png)
 
 ## Gränssnitt
 
