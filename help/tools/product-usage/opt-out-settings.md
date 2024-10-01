@@ -3,16 +3,18 @@ title: Inställningar för produktanvändningsavanmälan
 description: Hantera avanmälningsinställningar för enskilda användare inom organisationen.
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
 # Inställningar för produktanvändningsavanmälan {#product-usage-opt-out-settings}
 
-På sidan _Avanvisningsinställningar_ kan du exkludera eller ta med användare i organisationen igen från spårning av produktanvändning.
+{{release-limited-testing}}
+
+På sidan _Avanvisningsinställningar_ kan du exkludera eller ta med användare i organisationen igen från spårning av produktanvändning. Det är bara synligt för produktadministratörer.
 
 **Customer Journey Analytics** > **[!UICONTROL Tools]** > **[!UICONTROL Product Usage]** > **[!UICONTROL Opt-out settings]**
 
