@@ -4,14 +4,25 @@ description: Information om och om hur du konfigurerar dimensioner från dataupp
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Summary data group] komponentinställningar
+# [!UICONTROL Summary data group] komponentinställningar {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="Sammanfattningsdatagrupp"
+>abstract="En sammanfattningsdatagrupp skapar en association mellan alla dimensioner i grupperingen och används för att kombinera dimensioner från sammanfattningsdatamängder med andra dimensioner för rapportering."
+
+<!-- markdownlint-enable MD034 -->
+
 
 En sammanfattningsdatagrupp skapar en association mellan alla dimensioner i grupperingen och används för att kombinera dimensioner från sammanfattningsdatamängder med andra dimensioner för rapportering.
 
@@ -40,5 +51,3 @@ Värden i `tracking_code` kan eventuellt visas som annorlunda än `campaign_code
 >
 >Se till att du grupperar dimensioner från endast en dimension och inte använder gruppering från flera dimensioner. Om du till exempel skapar en gruppering genom att lägga till dimensionen `campaign_name` i dimensionen `tracking_code` ska du inte skapa en gruppering för dimensionen `campaign_name` också.
 >
-
-

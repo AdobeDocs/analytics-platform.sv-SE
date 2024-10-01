@@ -1,71 +1,206 @@
 ---
 description: I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, filter och funktioner för att skapa anpassade mått baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
-title: Bygg mått
+title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
 
-# Bygg mätvärden
+# Bygg beräknade värden {#build-metrics}
 
-Customer Journey Analytics har en arbetsyta där du kan dra och släppa dimensioner, mått, filter och funktioner för att skapa anpassade mått baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
-
-## Börja skapa ett beräknat mått
-
-Du kan använda verktyget för beräknade mätvärden för att skapa beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen. Du kan också skapa ett snabbt beräknat mått enligt beskrivningen i [Skapa beräknade värden för ett enskilt projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) i [Metrisk](/help/components/apply-create-metrics.md).
-
-Gå till verktyget för beräknade värden för att börja skapa ett beräknat mått som är tillgängligt i komponentlistan.
-
-1. Använd verktyget för beräknade värden på något av följande sätt:
-
-   * Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
-   * Öppna ett projekt i Analysis Workspace och välj sedan ikonen **Plus** bredvid avsnittet [!UICONTROL **Metrisk**] i den vänstra listen.
-   * I [!DNL Customer Journey Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** och väljer sedan **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
-
-1. Fortsätt med [Områden i det beräknade måttverktyget](#areas-of-the-calculated-metrics-builder).
-
-## Områden för verktyget för beräknade mätvärden
-
-<!-- 
+<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_journeycanvas_viz_product_compatibility"
->title="Product compatibility"
->abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
->"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
->"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+>id="cja_components_calculatedmetrics_productcompatibility"
+>title="Produktkompatibilitet"
+>abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, till exempel i Analysis Workspace, Report Builder och så vidare. Vissa beräknade värden kan inte användas med experimenterande."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
--->
+<!-- markdownlint-enable MD034 -->
 
-I följande bild och medföljande tabell förklaras några av huvudområdena och funktionerna i verktyget för beräkning av mätvärden.
+<!-- markdownlint-disable MD034 -->
 
-![Nytt fönster med beräknade mått som visar de huvudområden och funktioner som beskrivs i det här avsnittet.](assets/cm_builder_ui.png)
+>[!CONTEXTUALHELP]
+>id="cja_components_calculatedmetrics_externalid"
+>title="Externt ID"
+>abstract="Om du ändrar det externa ID:t kan det påverka hur det beräknade mätvärdet visas i externa källor, t.ex. affärsinformationsverktyg"
 
-| Fält | Beskrivning |
-| --- | --- |
-| Titel | Det är obligatoriskt att namnge måttet. Du kan inte spara måttet om det inte har ett namn. |
-| Beskrivning | Ge den en användarvänlig beskrivning för att visa vad den används för och skilja den från liknande. <p>Beskrivningen visas också i en rapport. Det är bäst att INTE placera formeln i beskrivningen. Beskriv i stället vad det här måttet ska och inte ska användas för. (Formeln genereras när du bygger måttet, under rubriken Sammanfattning. Därför behöver du inte lägga till formeln i beskrivningen.) </p> |
-| Format | Du kan välja Decimal, Time, Percent och Currency. |
-| Decimaler | Visar hur många decimaler som ska visas i rapporten. Det maximala antalet decimaler som du kan ange är 10. |
-| Visa uppåttrend som.. | Den här inställningen för metrisk polaritet visar om Analytics bör ta hänsyn till en uppåtgående trend i mätvärdet som god (grön) eller dålig (röd). Därför visas rapportens diagram som grönt eller rött när det går upp. |
-| Valuta | Basvalutan för den här datavyn. |
-| Taggar | Taggning är ett bra sätt att ordna mätvärden. Alla användare kan skapa taggar och använda en eller flera taggar i ett mätresultat. Men du kan bara se taggar för de filter som du äger eller som har delats med dig. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>**Teamnamn**, till exempel Social Marketing, Mobile Marketing.</li><li>**Projekt** (analystaggar), t.ex. Sidanalys.</li><li>**Kategorier**, till exempel Kvinnors, Geografi.</li><li>**Arbetsflöden**, till exempel Att godkännas; Kuraterat för (en specifik affärsenhet)</li></ul> |
-| Sammanfattning | <p>Sammanfattningsformeln uppdateras varje gång du ändrar måttdefinitionen. Formeln visas också i måttfältet till vänster när du håller muspekaren över ett mätresultat och klickar på <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" />-ikon. </p> |
-| Definition | Här drar du i mått/beräknade mått, filter och/eller funktioner för att skapa det beräknade måttet. <ul><li>Om du drar i ett beräknat mått expanderas måttdefinitionen automatiskt. </li> <li>Du kan kapsla definitioner med behållare. Till skillnad från filterbehållare fungerar dessa behållare som ett matematiskt uttryck och avgör ordningen på åtgärderna. </li> </ul> |
-| Operator | dividerat med ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) är standardoperatorn och det finns operatorerna +, - och x. |
-| Förhandsgranska | Ger en snabb läsning av eventuella fel. Förhandsvisningen täcker de senaste 90 dagarna. Det här är ett sätt att först mäta om du har valt rätt komponenter för måttet. Ett oväntat resultat skulle innebära att du måste ta en andra titt på måttdefinitionen. |
-| Produktkompatibilitet | Anger var i Customer Journey Analytics det här beräknade måttet kan användas. <p>Möjliga värden är:</p><ul><li>[!UICONTROL **Överallt i Customer Journey Analytics**]: Det beräknade måttet kan användas i hela Customer Journey Analytics, inklusive i Analysis Workspace, Report Builder och så vidare.</li><li>[!UICONTROL **Överallt i Customer Journey Analytics (utom experiment)**]: Det beräknade måttet kan användas i hela Customer Journey Analytics, utom på panelen Experimentation.</li> <p>Mer information om villkoren som avgör om ett beräknat mätresultat kan användas för experimenterande finns i [Använd beräknade mätvärden på panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) i [panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
-| Lägg till | För alla typer av beräknade värden kan du lägga till behållare och statiska tal i definitionen. För avancerade beräknade mätvärden kan du även lägga till filter och funktioner.<ul><li>Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas alltså före nästa åtgärd.</li><li>När du drar ett filter till en behållare filtreras allt i behållaren. (Endast avancerade beräknade mätvärden)</li><li>Du kan stapla flera filter i en behållare.</li></ul> |
-| Kugghjulsikon (Mättyp, Attribution) | Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mät- och attribueringsmodeller. <p>**Obs!** Tänk på följande när du uppdaterar en komponents attribuering till en icke-standardattribueringsmodell:</p><ul><li>**När komponenten används i en rapport med *en enda dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>**När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering behåller allokeringsmodellen när en icke-standardattribueringsmodell används.</li><li>Flera dimensioner är bara tillgängliga när [exporterar data till molnet](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).</p> |
-| Plustecken (+), ikon | Gör att du kan skapa en ny komponent, till exempel ett nytt filter (som tar dig till filterverktyget .) |
-| Sökkomponenter | Med det här sökfältet kan du söka efter dimensioner, mått, filter (endast avancerade beräknade värden) och funktioner (endast avancerade beräknade värden). |
-| Lista över Dimensioner | I stället för att lämna det beräknade måttverktyget för att skapa ett enkelt filter (i filterverktyget), t.ex. &quot;Page = Homepage&quot;, kan du dra sidan och välja Hemsida direkt från det beräknade måttverktyget. Detta resulterar i ett mycket effektivare arbetsflöde för att skapa filtrerade beräknade mätvärden. |
-| Lista över mått | Mätvärden finns i tre kategorier:<ul><li>Standardmått</li><li>Beräknade mått</li><li>Mätmallar - längst ned i listan.</li></ul>När du hovrar över ett mätresultat visas ikonen Info till höger om det. Om du klickar på den här ikonen visas följande information:<ul><li>Formeln för hur den beräknas.</li><li>En förgranskningstrend för måttet.</li><li>En redigeringsikon (penna) längst upp till höger som tar dig till verktyget för beräknade mätvärden där du kan redigera det här beräknade måttet.</li></ul> |
-| Lista med filter | (Endast avancerade beräknade värden) Som administratör visar den här listan alla filter som har skapats i ditt inloggningsföretag. Om du inte är administratör visas de filter som du äger och de som delas med dig. |
-| Lista över funktioner | (Endast avancerade beräknade mätvärden) Funktionerna är uppdelade i två listor: Grundläggande (används oftast) och Avancerat. |
-| Datavyväljare | Med den här väljaren (längst upp till höger) kan du växla till en annan datavy. |
+<!-- markdownlint-enable MD034 -->
+
+
+Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren ](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+
+>[!BEGINTABS]
+
+>[!TAB Bygg beräknade mätvärden]
+
+![Fönstret Beräknad mätinformation visar fält och alternativ som beskrivs i nästa avsnitt.](assets/calculated-metric-builder.png)
+
+>[!TAB Skapa eller redigera beräknade mått]
+
+![Fönstret Beräknad mätinformation visar fält och alternativ som beskrivs i nästa avsnitt.](assets/create-edit-calculated-metric.png)
+
+>[!ENDTABS]
+
+1. Ange följande information (![Obligatorisk](/help/assets/icons/Required.svg) krävs):
+
+   | Element | Beskrivning |
+   | --- | --- |
+   | **[!UICONTROL Data view]** | Du kan välja datavyn för det beräknade måttet.  Det beräknade mätvärde som du definierar är tillgängligt i Workspace-projekt baserat på den valda datavyn. |
+   | **[!UICONTROL Project-only metric]** | En informationsruta som förklarar att måttet bara visas i det projekt där det skapades och att måttet inte läggs till i komponentlistan. Aktivera **[!UICONTROL Make this metric available to all your projects and add it to your component list]** om du vill ändra den inställningen. Den här informationsrutan visas bara när du skapar ett mått i Workspace med **[!UICONTROL Create metric from selection]** och har valt en funktion (som **[!UICONTROL Mean]** eller **[!UICONTROL Median]**). Använd sedan [Komponentinformationen](/help/components/use-components-in-workspace.md#component-info) för att redigera det mätvärdet. |
+   | **[!UICONTROL Title]** ![Krävs](/help/assets/icons/Required.svg) | Namnge det beräknade måttet, till exempel `Conversion Rate`. |
+   | **[!UICONTROL External ID]** ![Krävs](/help/assets/icons/Required.svg) | Namnet på det beräknade måttet när ett externt BI-verktyg och BI-tillägget används. Värdet definieras automatiskt som `undefined_xxx` om du inte åsidosätter värdet. |
+   | **[!UICONTROL Description]** | Ange en beskrivning för filtret, till exempel `Calculated metric to define the conversion rate.` Det finns ingen anledning att beskriva formeln för det beräknade måttet eftersom formeln redan är automatiskt tillgänglig i [!UICONTROL Summary]. |
+   | **[!UICONTROL Format]** | Välj ett format för det beräknade måttet: Du kan välja mellan **[!UICONTROL Decimal]**, **[!UICONTROL Time]**, **[!UICONTROL Percent]** och **[!UICONTROL Currency]**. |
+   | **[!UICONTROL Decimal places]** | Ange antalet decimaler för det valda formatet. Endast aktiverat när det valda formatet är Decimal, Currency och Percent. |
+   | **[!UICONTROL Show upward trend as]** | Ange om en uppåtgående trend för det beräknade måttet ska visas som mellanrum **[!UICONTROL Good (Green)]** eller som ▼ **[!UICONTROL Bad (Red)]**. |
+   | **[!UICONTROL Currency]** | Ange valutan för det beräknade måttet. Endast aktiverat när det valda formatet är Valuta. |
+   | **[!UICONTROL Tags]** | Organisera det beräknade måttet genom att skapa eller använda en eller flera taggar. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
+   | **[!UICONTROL Preview]** | Förhandsvisningen täcker de senaste 90 dagarna och är ett sätt att mäta om du har definierat mätvärdena korrekt. |
+   | **[!UICONTROL Summary]** | Visar en sammanfattning av definitionen av det beräknade måttet. <br/>Till exempel: ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Total Orders]** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]**. |
+   | **[!UICONTROL Definition]** ![Krävs](/help/assets/icons/Required.svg) | Definiera filtret med [Definitionsverktyget](#definition-builder). |
+
+1. Om du vill verifiera om den beräknade måttdefinitionen är korrekt använder du den ständigt uppdaterade **[!UICONTROL Preview]** av resultaten för det beräknade måttet. **[!UICONTROL Preview]** täcker de senaste 90 dagarna och utvärderar definitionen av ditt beräknade mått kontinuerligt.
+
+   **[!UICONTROL Product compatibility]** anger om det beräknade måttet kan användas i försök. Möjliga värden är:
+   * **[!UICONTROL Everywhere in Customer Journey Analytics]**: Det beräknade måttet kan användas i hela Customer Journey Analytics, förutom på panelen Experimentation.
+   * **[!UICONTROL Everywhere in Customer Journey Analytics (excluding experimentation)]**: Det beräknade måttet kan användas i hela Customer Journey Analytics.
+
+1. Välj:
+   * **[!UICONTROL Save]** om du vill spara det beräknade måttet.
+   * **[!UICONTROL Save As]** om du vill spara en kopia av det beräknade måttet.
+   * **[!UICONTROL Cancel]** om du vill avbryta alla ändringar du har gjort i det beräknade måttet eller avbryta skapandet av ett nytt beräknat mätvärde.
+
+
+## Definition builder
+
+Du använder Definitionsverktyget för att dra och släppa dimensioner, mått, filter och funktioner för att skapa anpassade mätvärden baserat på behållarhierarkilogik, regler och operatorer. I den konstruktionen kan du använda standardvärden, Adobe-definierade mått, beräknade värden, filter, dimensioner och funktioner. Alla de här komponenterna är tillgängliga från komponentpanelen i verktyget Beräknade mått. Dessutom kan du använda operatorer och behållare i definitionen.
+
+![Skapa beräknat mått](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
+
+Endast mätvärden definieras som enskilda komponenter i området **[!UICONTROL Definition]**. Alla andra komponenter definieras som en behållare, radbrytningsmått eller andra behållare. Mer information finns i [Behållare](#containers).
+
+### Mätvärden
+
+Så här lägger du till ett mått:
+
+* Dra och släpp en ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
+
+När du använder ett beräknat mätvärde som en del av definitionen expanderas det beräknade mätvärdet.
+
+Så här ändrar du ett mått:
+
+1. Välj ![Inställning](/help/assets/icons/Setting.svg) i en måttkomponent i området **[!UICONTROL Definition]**.
+1. I popup-dialogrutan kan du definiera typen av mätvärden och en attribueringsmodell. Se [Mättyp och Attribution](m-metric-type-alloc.md).
+
+Så här tar du bort ett mått:
+
+* Välj ![Stäng](/help/assets/icons/Close.svg) i måttet.
+
+### Operatorer
+
+Med operatorer kan du ange operatorn mellan komponenter eller behållare. Operatorer visas automatiskt mellan
+
+* två eller flera mätvärden i en behållare,
+* två eller flera behållare i en behållare,
+* en eller flera mätvärden och en eller flera behållare i en behållare.
+
+Du kan välja:
+
+| Symbol | Operator |
+|:---:|---|
+| ![Dela](/help/assets/icons/Divide.svg) | Dela (standard) |
+| ![Stäng](/help/assets/icons/Close.svg) | Multiplicera |
+| ![Ta bort](/help/assets/icons/Remove.svg) | Ta bort |
+| ![Lägg till](/help/assets/icons/Add.svg) | Lägg till |
+
+### Statiskt nummer
+
+Du kan lägga till ett statiskt tal i den beräknade måttdefinitionen. Så här lägger du till ett statiskt nummer:
+
+* Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare.
+* Välj **[!UICONTROL Static number]**. En statisk nummerbehållare visas.
+* Välj [!UICONTROL *Klicka för att lägga till ett värde*] och skriv ett värde.
+
+
+### Behållare
+
+Du lägger till dimensioner, filter och funktioner som behållare i en beräknad måttdefinition. Du kan också lägga till en allmän behållare. Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas före nästa komponent eller behållare.
+
+
+#### Filterbehållare
+
+Du använder begreppet filterbehållare för att skapa ett [filtrerat mätvärde](metrics-with-segments.md). Du kan skapa en filterbehållare med ett filter eller med ett filter som du skapar från en dimension.
+
+* Så här lägger du till en filterbehållare från en dimension:
+
+   1. Dra och släpp en ![Dimension](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
+   1. Definiera villkoret för filtret i popup-fönstret **[!UICONTROL Create Filter from Dimension]**. Välj i listan med operatorer och välj ett värde eller ange ett värde. Till exempel **[!UICONTROL Month]** **[!UICONTROL equals]** ![SparrboxDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Välj **[!UICONTROL Done]**. En filterbehållare läggs till i **[!UICONTROL Definition]**.
+
+
+* Om du vill lägga till en filterbehållare från ett filter kan du använda:
+
+   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika filter.
+En filterbehållare läggs automatiskt till i **[!UICONTROL Definition]** med hjälp av filtrets namn.
+
+   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** från komponentpanelen till en generisk behållare. Behållaren ändras till en filterbehållare.
+
+   * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare:
+
+      1. Välj **[!UICONTROL Filter]**. En filterbehållare läggs till i **[!UICONTROL Definition]**.
+      1. I den nya filterbehållaren väljer du ett filter i listrutan [!UICONTROL *Välj...*].
+
+  >[!TIP]
+  >
+  >Du kan lägga till mer än ett filter i en behållare.
+
+  Filtren i behållaren namnges efter filterkomponenten. Exempel: ![Segmentering](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web sessions]**. Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa en popup med information om filtret. I popup-fönstret väljer du ![Redigera](/help/assets/icons/Edit.svg) för att redigera filterdefinitionen.
+
+Så här tar du bort ett filter från en behållare:
+
+* Välj ![Stäng](/help/assets/icons/Close.svg) bredvid filternamnet.
+
+Mer information och exempel finns i [Filtrerade mätvärden](metrics-with-segments.md).
+
+#### Funktionsbehållare
+
+Om du vill lägga till en funktionsbehållare kan du använda:
+
+* Dra och släpp:
+
+   1. Dra och släpp en ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika funktioner.
+   1. En funktionsbehållare läggs automatiskt till i **[!UICONTROL Definition]** med funktionens namn.
+
+* Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare:
+
+   1. Välj **[!UICONTROL Function]**.
+   1. I behållaren väljer du en funktion i listrutan [!UICONTROL *Välj...*].
+
+Funktionsbehållaren namnges efter funktionskomponenten. Exempel: ![Funktion](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa ett popup-fönster med information om funktionen. Välj **[!UICONTROL Learn more]** om du vill ha mer information om funktionen.
+
+Mer information om hur du använder funktioner och vilka funktioner som är tillgängliga för att skapa ett beräknat mått finns i [Använd funktioner](cm-using-functions.md).
+
+
+#### Allmän behållare
+
+Så här lägger du till en allmän behållare:
+
+* Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare
+* Välj **[!UICONTROL Container]**. En ny tom generisk behållare läggs till i **[!UICONTROL Definition]**. Du kan använda en generisk behållare för att kapsla in eller skapa en hierarki i definitionen av det beräknade måttet.
+
+
+#### Ta bort en behållare
+
+Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.svg) på behållarnivå.
+
+>[!MORELIKETHIS]
+>
+>[Använda funktioner](cm-using-functions.md)
+>[Filter](/help/components/filters/filters-overview.md)
+>
+

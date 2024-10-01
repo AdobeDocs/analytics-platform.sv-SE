@@ -4,14 +4,32 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1668'
 ht-degree: 0%
 
 ---
 
-# Skapa och publicera målgrupper
+# Skapa och publicera målgrupper {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="Uppdateringsfrekvens"
+>abstract="Se hur ofta en målgrupps medlemskap kommer att utvärderas på nytt.<br/>En gång utvärderas bara en målgrupp."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="Målgruppsgräns"
+>abstract="Att uppdatera målgrupper är begränsat baserat på hur ofta de uppdateras."
+
+<!-- markdownlint-enable MD034 -->
 
 I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) i Adobe Experience Platform för kundanpassning och personalisering.
 
@@ -53,7 +71,7 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
 
 1. Tolka förhandsgranskningen av data.
 
-   Publiken förhandsvisas i den högra listen. Här kan ni göra en sammanfattande analys av den målgrupp ni har skapat.
+   Publiken förhandsvisas i den högra panelen. Här kan ni göra en sammanfattande analys av den målgrupp ni har skapat.
 
    ![Skärmbild av förhandsgranskningen av data som visar en sammanfattad analys av målgruppen.](assets/data-preview.png)
 
@@ -115,7 +133,7 @@ Så här visar du Customer Journey Analytics-målgrupper i Platform:
 >
 >Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
 
-1. Expandera [!UICONTROL **Kund**] i den vänstra listen och välj sedan [!UICONTROL **Publiker**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Expandera [!UICONTROL **Kund**] i den vänstra panelen och välj sedan [!UICONTROL **Publiker**]. <!-- is there a folder called "Customer Journey Analytics? -->
 
 1. Välj fliken [!UICONTROL **Bläddra**].
 

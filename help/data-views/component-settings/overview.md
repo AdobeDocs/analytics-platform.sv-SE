@@ -5,14 +5,33 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
-# Komponentinställningar
+# Komponentinställningar {#component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_settings"
+>title="Komponentinställningar"
+>abstract="Visa och konfigurera namn, beskrivning och andra inställningar för en komponent.<br/><br/>**Parametrar **<br/>**Dölj komponent i rapportering**: Om du markerar den här rutan döljs den här komponenten för icke-adminanvändare i rapporter. Administratörer kan fortfarande komma åt den genom att välja **[!UICONTROL Show all components]** i ett Workspace-projekt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_contextlabels"
+>title="Sammanhangsetiketter"
+>abstract="Om du tar bort en sammanhangsetikett kan det påverka specifika paneler eller rapporter där komponenten krävs."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Följande information beskriver de inställningar som används av en datavykomponent.
 

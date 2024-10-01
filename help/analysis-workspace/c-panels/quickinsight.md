@@ -4,20 +4,36 @@ title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1054'
 ht-degree: 1%
 
 ---
 
-# Panelen Snabbinsikter
+# Panelen Snabbinsikter {#quick-insights-panel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_quickinsights_button"
+>title="Snabba insikter"
+>abstract="Skapa en panel för att snabbt skapa en frihandsritabell och medföljande visualisering för att analysera och hitta insikter snabbare."
+
+<!-- markdownlint-enable MD034 -->
+
 
 [!UICONTROL Quick Insights] ger vägledning till icke-analytiker och nya användare av [!UICONTROL Analysis Workspace] så att de kan lära sig att snabbt och enkelt svara på affärsfrågor. Det är också ett bra verktyg för avancerade användare som snabbt vill besvara en enkel fråga utan att själva behöva skapa en tabell.
 
-När du först börjar använda [!UICONTROL Analysis Workspace] kanske du undrar vilka visualiseringar som skulle vara mest användbara, vilka dimensioner och mätvärden som skulle kunna underlätta insikter, var objekten ska dras och släppas, var ett filter ska skapas osv.
+När du börjar använda [!UICONTROL Analysis Workspace] kanske du undrar:
 
-För att underlätta detta, och baserat på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace], utnyttjar [!UICONTROL Quick Insights] en algoritm som ger dig de vanligaste måtten, måtten, filtren och datumintervallen som ditt företag använder. Du kommer att se mått, mätvärden och filter som taggats som [!UICONTROL Popular] i listrutan, vilket visas här:
+* vilka visualiseringar som skulle vara mest användbara,
+* vilka dimensioner och mätvärden som kan underlätta insikter,
+* var du kan dra och släppa objekt,
+* var ett filter ska skapas,
+* med mera.
+
+För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en algoritm som ger dig de populäraste dimensionerna, måtten, filtren och datumintervallen som ditt företag använder. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Du ser faktiskt mått, mätvärden och filter som taggats med [!UICONTROL POPULAR] i listrutan, vilket visas här:
 
 ![Panelen Snabbinsikter.](assets/popular-tag.png)
 
@@ -34,74 +50,94 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 
 | Byggblock (komponent) | Definition |
 |---|---|
-| [!UICONTROL Dimension] | Dimensioner är beskrivningar eller egenskaper för mätdata som kan visas, delas upp och jämföras i ett projekt. De är icke-numeriska värden och datum som delas upp i dimensionsobjekt. Till exempel är &quot;webbläsare&quot; eller &quot;sida&quot; dimensioner. |
-| [!UICONTROL Dimension item] | Dimensioner är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel&quot;Chrome&quot;,&quot;Firefox&quot;,&quot;Edge&quot; osv. |
+| **[!UICONTROL Dimension]** | Dimensioner är beskrivningar eller egenskaper för mätdata som kan visas, delas upp och jämföras i ett projekt. De är icke-numeriska värden och datum som delas upp i dimensionsobjekt. *webbläsare* eller *sida* är till exempel en dimension. |
+| **[!UICONTROL Dimension item]** | Dimensioner är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel *Chrome*, *Firefox*, *Edge* eller andra. |
 | [!UICONTROL Metric] | Mätvärden är kvantitativ information om personaktivitet, t.ex. vyer, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
-| [!UICONTROL Visualization] | Workspace erbjuder [ett antal visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data, till exempel stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram och andra. |
-| [!UICONTROL Dimension Breakdown] | En dimensionsuppdelning är ett sätt att bokstavligen dela upp en dimension med andra dimensioner. I det här exemplet kan du bryta ned USA efter mobila enheter för att få mobilenhetsbesök per delstat, eller så kan du bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer osv. |
-| [!UICONTROL filter] | Med filter kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor]-filter baserat på attribut: webbläsartyp, enhet, antal besök, land, kön eller baserat på interaktioner: kampanjer, nyckelordssökning, sökmotor eller baserat på utträden och poster: personer från Facebook, en definierad landningssida, refererande domän eller baserat på anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
+| **[!UICONTROL Visualization]** | Workspace erbjuder [ett antal visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data. t.ex. stapeldiagram, mundiagram, histogram, linjediagram, kartor, punktdiagram med mera. |
+| **[!UICONTROL Dimension Breakdown]** | En dimensionsuppdelning är ett sätt att dela upp en dimension efter andra dimensioner. Du kan till exempel bryta ned USA:s mobilenheter för att få mobilenhetsbesök per delstat. Eller så kan ni bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer med mera. |
+| **[!UICONTROL Filter]** | Med filter kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan t.ex. skapa [!UICONTROL People]-filter baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>utträde och tävlingsbidrag: personer från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
 
-## Kom igång med Quick Insights
+## Använd
 
-1. Logga in på Customer Journey Analytics med de inloggningsuppgifter som du har fått.
-1. Gå till [!UICONTROL Workspace], klicka på **[!UICONTROL Create New Project]** och sedan på **[!UICONTROL Quick Insights]**. (Du kan även komma åt den här panelen från menyn **[!UICONTROL Panel]** i den vänstra listen.)
+Så här använder du en **[!UICONTROL Quick insights]**-panel:
 
-   ![I vyn Alla mallar markeras alternativet Snabbinsikter.](assets/qibuilder.png)
+1. Skapa en **[!UICONTROL Quick insights]**-panel. Mer information om hur du skapar en panel finns i [Skapa en panel](panels.md#create-a-panel).
 
-   ![Panellistan som markerar alternativet Snabbinsikt.](assets/qi-panel.png)
+1. När du först använder en **[!UICONTROL Quick insights]**-panel kanske du vill gå igenom den korta [!UICONTROL Intro tutorial] som lär dig grunderna. Välj ![HelpOutline](/help/assets/icons/HelpOutline.svg) bredvid paneltiteln Snabbinsikter och välj **[!UICONTROL Intro tutorial]** i popup-fönstret.
 
-1. När du börjar gå igenom den korta självstudiekursen som lär ut några av grunderna i [!UICONTROL Quick Insights panel] när du börjar. Du kan också klicka för att **[!UICONTROL Skip Tutorial]**.
-1. Välj dina byggstenar (kallas även komponenter): dimensioner (orange), mått (grönt), filter (blått) eller datumintervall (lila). Du måste välja minst en dimension och ett mått för att en tabell ska kunna skapas automatiskt.
+1. Ange [indata](#panel-input) för panelen.
 
-   ![Komponenterna inklusive mått, mått, filter, segment och datumintervall.](assets/qibuilder2.png)
+1. Observera [utdata](#panel-output) för panelen.
 
-   Du kan välja byggblock på tre olika sätt:
-   * Dra och släpp dem från den vänstra listen.
-   * Om du vet vad du söker efter: Börja skriva och [!UICONTROL Quick Insights] fyller i tomrummen åt dig.
-   * Klicka på listrutan och sök i listan.
 
-1. När du har lagt till minst en dimension och ett mått skapas följande för dig:
+### Panelindata
 
-   * En Freeform-tabell med dimensionen (här, USA) lodrätt och måttet (här, Besök) vågrätt högst upp. Kolla in den här tabellen:
+Välj byggstenar:
 
-   ![Registret Frihand visar dimensionen lodrätt och måttet vågrätt.](assets/qibuilder3.png)
+* **[!UICONTROL Analyze]** - ange en dimension (orange)
+* **[!UICONTROL by]** - ange ett mått (grönt)
+* **[!UICONTROL filter by]** - ange ett filter (blått)
+* **[!UICONTROL on]** - ange ett dataområde (lila).
 
-   * En åtföljande visualisering, i det här fallet ett [stapeldiagram](/help/analysis-workspace/visualizations/bar.md). Den visualisering som genereras baseras på den typ av data som du har lagt till i tabellen. Alla tidsbaserade data (till exempel [!UICONTROL Visits] per dag/månad) blir som standard ett [!UICONTROL Line]-diagram. Alla icke-tidsbaserade data (till exempel [!UICONTROL Visits] per [!UICONTROL Device]) blir som standard ett [!UICONTROL Bar]-diagram. Du kan ändra visualiseringstypen genom att klicka på listrutepilen bredvid visualiseringstypen.
+Du måste välja minst en dimension och ett mått för att visualiseringen ska fungera korrekt.
 
-1. (Valfritt) Detaljera mått och visa dimensionsobjekt genom att klicka på > högerpilen bredvid dimensionen.
 
-1. Försök att lägga till fler förbättringar enligt beskrivningen nedan under Fler tips.
 
-1. Spara projektet genom att klicka på **[!UICONTROL Project > Save]**.
+Du kan ange byggblocken på tre sätt:
+
+* Dra och släpp komponenter från den vänstra panelen.
+* Börja skriva i ett av byggblocksfälten. När indata påträffas fylls byggblocksfältet automatiskt i med möjliga värden.
+* Ange en listruta för byggblock (till exempel `Country` i **[!UICONTROL Analyze]**) och sök i listan med möjliga värden (med ![Sparrhöger](/help/assets/icons/ChevronRight.svg)) efter det värde du vill använda (till exempel **[!UICONTROL Country code]**).
+
+Välj **[!UICONTROL Clear]** om du vill rensa alla inmatningsfält.
+
+
+### Panelutdata
+
+1. När du har lagt till minst en dimension och ett mätvärde kan du se resultatet.
+
+   ![Registret Frihand visar dimensionen lodrätt och måttet vågrätt.](assets/quick-insights-output.png)
+
+   * En friformstabell med dimensionen (landskod) och måttet (sessioner), filtrerad av webbsessioner under de senaste 12 månaderna.
+
+   * En åtföljande visualisering, i det här fallet ett [stapeldiagram](/help/analysis-workspace/visualizations/bar.md). Den visualisering som genereras baseras på den typ av data som du har lagt till i tabellen. Alla tidsbaserade data (till exempel [!UICONTROL Sessions] per dag/månad) blir som standard ett [!UICONTROL Line]-diagram. Alla icke-tidsbaserade data (till exempel [!UICONTROL Sessions] per [!UICONTROL Device]) blir som standard ett [!UICONTROL Bar]-diagram. Du kan ändra visualiseringstypen genom att klicka på listrutepilen bredvid visualiseringstypen.
+
+1. Försök lägga till fler förbättringar enligt beskrivningen nedan under [Fler tips](#more-tips)
+
+1. Du kanske vill spara projektet med **[!UICONTROL Project > Save]**.
 
 ## Fler tips
 
 Andra användbara tips visas i [!UICONTROL Quick Insights Builder]. Vissa av dem beror på den senaste åtgärden.
 
-* Slutför först självstudiekursen **[!UICONTROL More tips]**: Öppna den via hjälpen (?) -ikonen bredvid titeln [!UICONTROL Quick Insights]. Den här självstudiekursen visar upp till 24 timmar efter att du har skapat ett projekt med minst en dimension och ett mått.
+* Först kanske du vill slutföra självstudiekursen **[!UICONTROL More tips]**. Den här självstudiekursen visar upp till 24 timmar efter att du har skapat ett projekt med minst en dimension och ett mått. Välj ![HelpOutline](/help/assets/icons/HelpOutline.svg) bredvid paneltiteln Snabbinsikter och välj **[!UICONTROL More tips]** i popup-fönstret.
 
-  ![Meddelande från panelen Snabbinformation visas när du klickar på hjälpikonen.](assets/qibuilder4.png)
+  ![Meddelande från panelen Snabbinformation visas när du har valt hjälpikonen.](assets/qibuilder4.png)
 
-* **Uppdelning med**: Du kan använda upp till tre nivåer av uppdelningar på dimensioner för att gå ned till de data du verkligen behöver.
+* Du kan analysera flera dimensioner och mätvärden, kombinera eller jämföra filter och ange ett dataområde:
 
-  ![Undernivåer av uppdelningar.](assets/qibuilder5.png)
+  ![Resultat av verktyget för snabb Insights-byggaren](assets/qibuilder-result.png)
 
-* **Lägg till fler mätvärden**: Du kan lägga till upp till två mätvärden till genom att använda operatorn AND för att lägga till dem i tabellen.
+   * **[!UICONTROL Analyze]** dimension **[!UICONTROL Broken-Down by]**: Du kan använda upp till tre nivåer av uppdelningar på dimensioner för att gå ned till de data du verkligen behöver. Se ➊, ➋ och ➌.
 
-  ![Flera mätvärden, inklusive besök och enheter.](assets/qibuilder6.png)
+   * Lägg till fler mätvärden **[!UICONTROL by]**: Du kan lägga till upp till två mätvärden till. Se och..
 
-* **Lägg till fler filter**: Du kan lägga till upp till två filter till genom att använda operatorerna AND eller OR för att lägga till dem i tabellen. Se vad som händer med tabellen när du lägger till mobilanvändare eller lojala besökare. De står bredvid varandra, ovanför mätvärdena. Om du lade till mobila användare OCH lojala besökare skulle du se resultat från båda filtren tillsammans, och de skulle staplas ovanpå varandra i tabellen.
+   * **[!UICONTROL filter by]**: Du kan lägga till upp till två filter till. Du kan till exempel lägga till Bokningar som ett filter och kombinera det filtret med de filter du jämför med Vanliga bokningar och Första gången. Se ➏, ➐ och ➑.
 
-  ![Bild som visar tillagda mobilanvändare och lojala besökare.](assets/qibuilder7.png)
+   * on: Du kan ange dataområde. Se ➒.
 
 ## Kända begränsningar
 
-Om du försöker redigera direkt i tabellen kommer panelen [!UICONTROL Quick Insights] att bli osynkroniserad. Du kan återställa den till de tidigare [!UICONTROL Quick Insights] inställningarna genom att klicka på **[!UICONTROL Resync Builder]** överst till höger på panelen.
-
-![Panelen Snabbinsikter med alternativet Synkronisera om Builder.](assets/qibuilder9.png)
+Om du försöker redigera direkt i tabellen kan panelen [!UICONTROL Quick Insights] bli osynkroniserad. Välj **[!UICONTROL Resync Builder]** längst upp till höger på panelen om du vill återställa den till de tidigare [!UICONTROL Quick Insights] inställningarna.
 
 Du får en varning innan du lägger till något direkt i tabellen:
 
-![Alternativvarning för omsynkroniseringsverktyget.](assets/qibuilder8.png)
+![Alternativvarning för omsynkroniseringsverktyget.](assets/qibuilder-outofsync.png)
 
-Om du skapar direkt kommer tabellen nu att fungera som en traditionell Freeform-tabell, utan de praktiska funktionerna för nya användare.
+Om du skapar tabellen direkt fungerar den som en traditionell Freeform-tabell, utan de praktiska funktionerna för nya användare.
+
+
+>[!MORELIKETHIS]
+>
+>[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>

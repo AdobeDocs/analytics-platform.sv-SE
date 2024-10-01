@@ -4,29 +4,57 @@ title: Stolpstreck och stapel
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
 # Stolpstreck och stapel
 
-## Liggande {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
+## Liggande {#bar}
 
-Den här visualiseringen visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bar_button"
+>title="Liggande"
+>abstract="Skapa en fältvisualisering som representerar olika värden för ett eller flera mätvärden."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Visualiseringen ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
 
 ![Visualisering av virtuella fält med flera mätvärden, inklusive sidvyer, besök, poster och avslutningar.](assets/bar.png)
 
-Med en listruta för granularitet i visualiseringsinställningarna kan du ändra en trendvisualisering (t.ex. rad, stapel) från dag till vecka till månad, osv.
+Med en listruta för granularitet i visualiseringsinställningarna kan du ändra en trendvisualisering (till exempel rad, rad) från dag till vecka till månad, osv.
 
-## Stapel staplad {#section_9EA83779AE964635907EE5031A785A49}
+## Stapel staplad {#bar-stacked}
 
-Den här visualiseringen är som ett stapeldiagram, men med seriestaplarna staplade ovanpå varandra.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_barstacked_button"
+>title="Stapel staplad"
+>abstract="Skapar en streckvisualisering som representerar olika värden över en eller flera staplade mätvärden."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Visualiseringen av ![GraphBarVerticalStacking](/help/assets/icons/GraphBarVerticalStacked.svg) **[!UICONTROL Bar stacked]** fungerar som ett stapeldiagram, men med seriestaplarna staplade ovanpå varandra.
 
 ![Staplat stolpdiagram med flera mätvärden.](assets/bar-stacked.png)
 
-En ny visualiseringsinställning för staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering:
+Använd alternativet **[!UICONTROL 100% stacked]** i ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** för att omvandla diagrammet till en 100 % staplad visualisering.
 
-![Ett staplat liggande stapeldiagram till 100 %.](assets/stacked_100_percent.png)
+![Ett staplat liggande stapeldiagram till 100 %.](assets/bar-stacked100.png)
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

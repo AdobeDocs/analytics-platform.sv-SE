@@ -5,15 +5,26 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '857'
 ht-degree: 5%
 
 ---
 
 
-# [!UICONTROL Persistence] komponentinställningar
+# [!UICONTROL Persistence] komponentinställningar {#persistence-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_persistence"
+>title="Persistence"
+>abstract="Konfigurera standardallokeringsmodellen som används för en dimension. Allokering tillämpas före filter i rapportering."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 [!UICONTROL Persistence] är möjligheten för ett givet dimensionsvärde att relatera till ett mått efter händelsen som det är inställt på. Den använder en kombination av allokering och förfallodatum.
 

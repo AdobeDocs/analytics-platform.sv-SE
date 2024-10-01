@@ -5,14 +5,24 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 1%
+source-wordcount: '325'
+ht-degree: 0%
 
 ---
 
-# Inställningar för beteendekomponent
+# Inställningar för beteendekomponent {#behavior-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_behavior"
+>title="Beteende"
+>abstract="Bestäm hur radartiklar i den här dimensionen aggregeras.<br/><br/>**Parametrar **<br/>**Gemener**: Används för att ange om strängvärdena i fältet ska vara gemena."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Beteendeinställningar är tillgängliga för både mått och mått. Vilka inställningar som är tillgängliga beror på komponenttypen och schemadatatypen.
 

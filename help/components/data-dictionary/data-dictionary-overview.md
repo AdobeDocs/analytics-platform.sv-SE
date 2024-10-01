@@ -4,20 +4,37 @@ title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
 
-# Översikt över dataordlistan
+# Översikt över dataordlistan {#data-dictionary-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_datadictionary"
+>title="Dataordlista"
+>abstract="Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö. <br/>Analysadministratörer ansvarar för att strukturera information om varje komponent i Data Dictionary för användarna."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö.
 
 Analysadministratörer ansvarar för att strukturera information om varje komponent i Data Dictionary så att den blir tillgänglig för användarna.
 
+
++++ Visa en video som demonstrerar datamallen
+
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+
+{{videoaa}}
+
++++
 
 ## Fördelar för användare
 
@@ -57,16 +74,14 @@ Här följer några exempel på hur Analytics-administratörer kan använda Data
 
 Du kan komma åt datamodlistan på något av följande sätt i Analysis Workspace:
 
-* Från ikonen **Dataordlista** i den vänstra listen.
+![Ikon för datamordlista i den vänstra panelen](assets/data-dictionary-access.png)
 
-  ![Ikon för datamordlista i den vänstra listen](assets/data-dictionary-access-icon.png)
+* Från ![Bokmärke](/help/assets/icons/Bookmark.svg) på knapppanelen.
 
-* Från ikonen **Dataordlista** i infoporten för en komponent.
 
-  ![Ikon för datamordlista i infopover](assets/data-dictionary-access-infopopover.png)
-  <!--update screenshot; this was taken from a mock-->
 
-* Från menyn: [!UICONTROL **Hjälp**] > [!UICONTROL **Dataordlista**].
+* Från ![Bokmärke](/help/assets/icons/Bookmark.svg) i infoporten för en komponent.
+
 
 Mer information om de olika alternativen som är tillgängliga i datamordlistan finns i [Visa komponentinformation i datamordlistan](/help/components/data-dictionary/view-data-dictionary.md).
 

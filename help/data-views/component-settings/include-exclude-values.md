@@ -5,14 +5,34 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# Inkludera inställningar för komponenten Uteslut värden
+# Inkludera inställningar för komponenten Uteslut värden {#include-exclude-values-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_includeexcludevalues"
+>title="Inkludera exkluderingsvärden"
+>abstract="Filtrera ett mätvärde så att endast värden som matchar specifika villkor räknas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_includeexcludevalues"
+>title="Inkludera exkluderingsvärden"
+>abstract="Begränsa en dimension så att den endast innehåller värden som matchar specifika villkor. Inkluderingar och undantag sker före allokering och filter i rapporter.<br/><br/>**Parametrar **<br/>**Skiftlägeskänsliga**: Kontrollera om filterlogiken nedan är skiftlägeskänslig."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Med Inkludera exkluderade värden kan du skapa regler som är beroende av värdet för en dimensionspost. Värden som inte uppfyller villkoren som du anger behandlas i Analysis Workspace som om de aldrig fanns, även om data fortfarande finns i den underliggande datauppsättningen.
 

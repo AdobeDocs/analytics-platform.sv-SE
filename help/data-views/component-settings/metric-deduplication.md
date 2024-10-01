@@ -5,14 +5,24 @@ exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Komponentinställningar för måttborttagning av dubbletter
+# Komponentinställningar för måttborttagning av dubbletter {#metric-deduplication-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_deduplication"
+>title="Metrisk deduplicering"
+>abstract="Konfigurera ett mätvärde så att det endast räknar värden som förekommer icke-repetitivt."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Med metrisk borttagning av dubbletter kan du konfigurera ett mätvärde så att det bara räknar värden som inte upprepas.
 

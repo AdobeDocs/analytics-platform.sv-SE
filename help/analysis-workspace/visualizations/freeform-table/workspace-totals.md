@@ -4,43 +4,56 @@ title: Workspace summor
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b9abcf48c5334d71639d7d96558a63611a4a491c
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 0%
+source-wordcount: '438'
+ht-degree: 1%
 
 ---
 
-# Workspace summor
+# Workspace summor {#workspace-totals}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_grandtotal"
+>title="Summa"
+>abstract="Summan stöds inte för tabeller eller uppdelningar med statiska rader"
+
+<!-- markdownlint-enable MD034 -->
+
 
 I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan visa två summor:
 
-* **[!UICONTROL Grand Total]** (grå &#39;slut på&#39;-tal) - det här totala antalet representerar alla händelser som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas.
-* **[!UICONTROL Table Total]** (svart tal) - den här summan är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive alternativet [!UICONTROL Include None], visas.
-
 ![Friformstabell som visar totalsumman och tabellsumman.](assets/total-row.png)
 
-## Visa total inställning
+* **[!UICONTROL Table total]** ➊ - Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand total]. Summan återspeglar alla tabellfilter som används i friformstabellen, inklusive alternativet [!UICONTROL Include None].
+* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - Det här totala antalet representerar alla händelser som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas.
 
-Under **[!UICONTROL Column Settings]** finns alternativ för **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte är rimliga, t.ex. i vissa [Beräknade måttscenarier](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
 
-![Alternativ för kolumninställningar som visar markeringar för Visa summor och Visa totalsumma.](assets/column-settings-total.png)
 
-## Inställningar för totalt antal statiska rader
 
-[Statiska radsummor ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) fungerar på olika sätt och styrs under **[!UICONTROL Row Settings]**.
+## Visa summor
 
-* **[!UICONTROL Show sum of current rows as the total]** - Detta visar en summa på klientsidan av raderna i tabellen, vilket innebär att summan **inte** dubblerar mått som besök eller personer.
-* **[!UICONTROL Show Grand Total]** - det här visar en serversidessumma, vilket innebär att summan kommer att ta bort dubbletter av mått som besök eller personer.
+Under ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Column settings]** finns det alternativ för **[!UICONTROL Show totals]** och **[!UICONTROL Show grand total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen, vilket kan vara önskvärt om det inte går att använda summorna. I vissa [beräknade måttscenarier](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals).
 
-![Radinställningar som visar Visa totalsumma markerat.](assets/static-rows.png)
+
+[Statiska radsummor](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) fungerar annorlunda och styrs med ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Row Settings]**.
+
+| Alternativ | Beskrivning |
+|---|---|
+| **[!UICONTROL Show sum of current rows as the total]** | Visa en summa av raderna i tabellen på klientsidan. Den här summan tar **inte** bort dubbletter av mått som sessioner eller personer. |
+| **[!UICONTROL Show grand total]** | Visa en serversidessumma. Den totala mängden avduplicerade mått som sessioner eller personer. |
+
+Se [Dynamiska och statiska dimensionsobjekt i frihandstabeller](column-row-settings/manual-vs-dynamic-rows.md).
+
 
 ## Frågor och svar
 
 | Frågor | Svar |
 |---|---|
-| Vilken summa är procentsatserna för gråa kolumner baserade på? | Detta beror på inställningen **[!UICONTROL Percentages]** under **[!UICONTROL Row Settings]**:<ul><li>Beräkna procentandelar per kolumn - Det här är standardinställningen. Procentsatserna baseras på tabellsumman.</li><li>Beräkna procentandelar per rad - Procentsatserna baseras på totalsumman.</li></ul> |
-| Hur påverkar inställningen för **[!UICONTROL Include Unspecified (None)]** summorna? | Om inställningen **[!UICONTROL Include Unspecified (None)]** inte är markerad tas raden Ingen/Ospecificerad bort från tabellen, Tabellsumma, och utförs på alla beräknade mått som använder måtten [&#39;Total&#39; ](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/m-metric-type-alloc.html) |
-| När anpassade tabellfilter tillämpas på en frihandstabell, gör jag då alla mina beräknade värden och villkorsstyrda formateringskonton för filtret? | Inte just nu. **[!UICONTROL Include Unspecified (None)]** räknas med, men anpassade tabellfilter påverkar inte följande:<ul><li>Kolumnens max/min-intervall som villkorsstyrd formatering använder ser ut över alla data.</li><li>Beräknade mätvärden som utnyttjar **[!UICONTROL Grand Total]** mätningstyper.</li><li>Beräknade mätvärden med funktioner som beräknas över rader i en friformstabell, t.ex. kolumnsumma, kolumnmax, kolumnmin, antal, medel, medel, medel, percentil, kvartil, radantal, standardavvikelse, varians, ackumulerat, kumulativt genomsnitt, regressionsvarianter, T-poäng, T-test, Z-poäng, Z-test, Z-test.</li></ul> |
-| I Beräknade mått, vad återspeglar den **[!UICONTROL Grand Total]**-metriska typen? | **[!UICONTROL Grand Total]** fortsätter att referera till **[!UICONTROL Grand Total]** och reflekterar inte filter som används i en tabell eller **[!UICONTROL Table Total]**. |
-| Vilken summa visas när data kopieras och klistras in från en frihandstabell eller hämtas via CSV? | Den totala raden återspeglar endast **[!UICONTROL Table Total]** och respekterar inställningen för kolumnen **[!UICONTROL Show Totals]**. |
+| Vilka *totalt* är procentsatserna för gråa kolumner baserade på? | Det här *totala*-värdet beror på inställningen **[!UICONTROL Percentages]** under **[!UICONTROL Row Settings]**:<ul><li>Beräkna procentandelar per kolumn - Den här inställningen är standard. Procentsatserna baseras på tabellsumman.</li><li>Beräkna procentandelar per rad - Procentsatserna baseras på totalsumman.</li></ul> |
+| Hur påverkar inställningen för **[!UICONTROL Include "No value"]** summorna? | Om inställningen **[!UICONTROL Include "No value"]** inte är markerad tas raden **[!UICONTROL No value]** bort från tabellen, tabellsumman, och fortsätter till alla beräknade mått som använder [*Total* metrisk typ](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetric-workflow/m-metric-type-alloc) |
+| När anpassade tabellfilter tillämpas på en frihandstabell, gör jag då alla mina beräknade värden och villkorsstyrda formateringskonton för filtret? | Inte just nu. **[!UICONTROL Include "No value"]** är ett konto, men anpassade tabellfilter påverkar inte följande:<ul><li>Kolumnens maximala/minsta intervall som villkorsstyrd formatering använder ser ut över alla data.</li><li>Beräknade mätvärden som utnyttjar **[!UICONTROL Grand total]** mätningstyper.</li><li>Beräknade mätvärden med funktioner som beräknas över rader i en friformstabell: Kolumnsumma, Kolumnmax, Kolumnmin, Antal, Medel, Percentile, Kvarnvärde, Radantal, Standardavvikelse, Varians, Ackumulativt, Ackumulativt genomsnitt, Regressionsvarianter, T-poäng, T-test, Z-poäng och Z-test.</li></ul> |
+| I Beräknade mått, vad återspeglar den **[!UICONTROL Grand total]**-metriska typen? | **[!UICONTROL Grand total]** fortsätter att referera till **[!UICONTROL Grand total]** och reflekterar inte filter som används i en tabell eller **[!UICONTROL Table total]**. |
+| Vilken summa visas när data kopieras och klistras in från en frihandstabell eller hämtas via CSV? | Den totala raden återspeglar endast **[!UICONTROL Table total]** och respekterar inställningen för kolumnen **[!UICONTROL Show totals]**. |

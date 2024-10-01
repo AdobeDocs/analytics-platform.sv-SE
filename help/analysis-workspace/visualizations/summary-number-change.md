@@ -1,41 +1,58 @@
 ---
-description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att visa viktiga datapunkter i ett projekt.
+description: Använd visualiseringar av sammanfattningsnummer och sammanfattningsändringar för att visa viktiga datapunkter i ett projekt.
 title: Sammanfattningsnummer och sammanfattning
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 1%
+source-wordcount: '443'
+ht-degree: 0%
 
 ---
 
-# Sammanfattningsnummer och sammanfattning
+# Sammanfattningsnummer och ändring av sammanfattning
 
-## Visualisering av sammanfattningsnummer {#summary-number}
+## Sammanfattningsnummer {#summary-number}
 
-Använd visualisering av sammanfattningsnummer för att markera ett stort tal som är viktigt i ett projekt. Den här visualiseringen fungerar på följande sätt:
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarynumber_button"
+>title="Sammanfattningsnummer"
+>abstract="Skapa en visualisering som visar summor och delsummor."
+
+<!-- markdownlint-enable MD034 -->
+
+Använd visualiseringen ![Sammanfattning](/help/assets/icons/123.svg) **[!UICONTROL Summary number]** för att markera ett stort antal som är viktiga i ett projekt. Den här visualiseringen fungerar på följande sätt med den associerade datakällan:
 
 * Markerar kolumnsumman om ingen cell är markerad.
 * Om en enskild cell är markerad visas sammanfattningen för den cellen.
 * Om flera celler är markerade visas den första cellen som är markerad.
 * Om kolumnen är markerad väljs det första cellvärdet i kolumnen.
 
-Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
+![Visualisering av sammanfattningsnummer](asses/../assets/summary-number.png)
 
-| Inställning | Definition |
+Som en del av visualiseringsinställningarna finns det specifika alternativ för Sammanfattningsnummer.
+
+| Alternativ | Definition |
 |--- |--- |
-| Procenttal | Visa procenttal i stället för råa tal. |
-| Förklaring synlig | Visa information om måttet som visas. |
-| Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
-| Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
+| **[!UICONTROL Abbreviate value]** | Välj **[!UICONTROL Abbreviate value]** om du vill förkorta talvärdet på ett intelligent sätt. När du har markerat det här alternativet anger du ett tal för att definiera förkortningen. Till exempel:<br/><table><tr><td>**Ursprungligt värde**</td><td>**Förkortningsvärde**</td><td>**Resultat**</td></tr><tr><td>12 011 141,25 USD</td><td>Inte markerad</td><td  align="right">12 011 141,25 USD</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `0`</td><td align="right">12 miljoner dollar</td></tr><tr><td>12 011 141,25 USD</td><td> Markerad, inställd på `1`</td><td  align="right">$12.0M</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `2`</td><td align="right">$12.01M</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `3`</td><td align="right">$12.011M</td></tr></table> |
+| **[!UICONTROL Summarize value by]** | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
 
-{style="table-layout:auto"}
+## Sammanfattningsändring {#summary-change}
 
-## Visualisering av sammanfattningsändring {#summary-change}
+<!-- markdownlint-disable MD034 -->
 
-Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal.
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarychange_button"
+>title="Sammanfattningsändring"
+>abstract="Skapa en visualisering som visar delta (ändring) mellan två tal"
+
+<!-- markdownlint-enable MD034 -->
+
+
+Använd visualiseringen ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Summary Change]** för att visa delta (ändring) mellan två tal. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
 The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
@@ -54,11 +71,17 @@ Den här visualiseringen fungerar på följande sätt:
 ![Visualisering av sammanfattningsändring som visar delta mellan två tal.s](assets/summary-change.png)
 
 
-Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
+Som en del av visualiseringsinställningarna är specifika **[!UICONTROL Summary change options]** tillgängliga.
 
-| Inställning | Definition |
+| Alternativ | Definition |
 |--- |--- |
-| Procenttal | Visa procenttal i stället för råa tal. |
-| Förklaring synlig | Visa information om måttet som visas. |
-| Visa procentuell ändring | Visar procentuell ändring mellan de två talen. |
-| Visa råskillnad | Visar den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |
+| **[!UICONTROL Show percent change]** | Visa procentuell ändring mellan de två talen. |
+| **[!UICONTROL Show raw difference]** | Visa den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |
+| **[!UICONTROL Abbreviate value]** | Välj **[!UICONTROL Abbreviate value]** om du vill förkorta det ändrade värdet på ett intelligent sätt. När du har markerat det här alternativet anger du ett tal för att definiera förkortningen. Till exempel:<br/><table><tr><td>**Ursprungligt värde**</td><td>**Förkortningsvärde**</td><td>**Resultat**</td></tr><tr><td>12 011 141,25 USD</td><td>Inte markerad</td><td  align="right">12 011 141,25 USD</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `0`</td><td align="right">12 miljoner dollar</td></tr><tr><td>12 011 141,25 USD</td><td> Markerad, inställd på `1`</td><td  align="right">$12.0M</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `2`</td><td align="right">$12.01M</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på `3`</td><td align="right">$12.011M</td></tr></table> |
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

@@ -5,14 +5,24 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 19923592c8c50d93e150ba908f23313513d3450b
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
 
-# Dela projekt
+# Dela projekt {#share-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_shareprojects"
+>title="Dela projekt"
+>abstract="Du kan dela dessa projektroller med andra användare i organisationen."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
 
@@ -30,10 +40,13 @@ Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
 
 Alla [kurationer](curate.md) som du tillämpar före delning visas när mottagarna öppnar projektet.
 
-Här är en videoöversikt över projektdelning:
++++ Visa en video som visar hur du använder projektdelning.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
 
+{{videoaa}}
+
++++
 
 ## Dela med användare och grupper i Customer Journey Analytics i din organisation {#Add}
 
@@ -65,7 +78,7 @@ När du delar en specifik projektroll med användare och grupper i organisatione
 
 Så här delar du en specifik projektroll med användare eller grupper i organisationen:
 
-1. I Customer Journey Analytics väljer du fliken [!UICONTROL **Workspace**] och sedan [!UICONTROL **Projekt**] i den vänstra listen.
+1. I Customer Journey Analytics väljer du fliken [!UICONTROL **Workspace**] och sedan [!UICONTROL **Projekt**] i den vänstra panelen.
 
 1. Markera kryssrutan bredvid ett eller flera projekt som du vill dela och välj sedan [!UICONTROL **Dela**].
 
@@ -82,9 +95,9 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    **Redigera original:** Mottagarna kan **[!UICONTROL Save]** ändra ett projekt och fungera som medägare. Den här rollen är användbar om du vill samhantera ett projekt med andra kollegor. Detta inkluderar redigering, borttagning och ändring av mottagarlistor för ett delat projekt. <br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen.
 
-   **Redigera kopia:** Mottagarna kan **[!UICONTROL Save as]** och har tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men du inte vill att ditt projekt ska ändras.
+   **Redigera kopia:** Mottagarna kan **[!UICONTROL Save as]** och har tillgång till den vänstra panelen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men du inte vill att ditt projekt ska ändras.
 
-   **Skrivskyddad:** Mottagarna kan inte **[!UICONTROL Save]** eller **[!UICONTROL Save as]** och har inte åtkomst till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö. Läs mer om [Skrivskyddad projektupplevelse](/help/analysis-workspace/curate-share/view-only-projects.md).
+   **Skrivskyddad:** Mottagarna kan inte **[!UICONTROL Save]** eller **[!UICONTROL Save as]** och har inte åtkomst till den vänstra panelen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Customer Journey Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö. Läs mer om [Skrivskyddad projektupplevelse](/help/analysis-workspace/curate-share/view-only-projects.md).
 
 1. (Villkorligt) Om du delar ett projekt ska du välja om du vill aktivera följande alternativ när du delar projektet:
 
@@ -148,7 +161,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
 1. Öppna det Analysis Workspace-projekt som du vill dela.
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
+1. Välj **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
 
    Om det finns ändringar som inte har sparats uppmanas du att spara projektet.
 
@@ -164,7 +177,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
-     När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
+     När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Customer Journey Analytics.
 
      Customer Journey Analytics-administratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
@@ -172,13 +185,13 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
       * Om det här alternativet är aktiverat och du inte kan inaktivera det, innebär det att Customer Journey Analytics-administratören kräver Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt. Detta gäller alltid för organisationer som skaffat ett vårdcertifikat.
 
-1. Klicka på ikonen **Kopiera länk** ![Kopiera länkikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) bredvid fältet **[!UICONTROL Share with anyone (no login required)]** för att kopiera länken till systemets Urklipp.
+1. Bredvid fältet **[!UICONTROL Share with anyone (no login required)]** väljer du ![Länk](/help/assets/icons/Link.svg) för att kopiera länken till systemets Urklipp.
 
 1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
 
    Alla som du delar länken med kan visa Analysis Workspace-projektet.
 
-1. (Valfritt) Du kan klicka på ikonen **Skapa ny länk** ![Skapa länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) för att ta bort åtkomst för användare som tidigare har fått en länk till projektet. En ny länk skapas som du kan dela med användare som du vill ska få åtkomst till projektet.
+1. (Valfritt) Du kan välja ![Skapa ny länkikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) om du vill ta bort åtkomst från användare som tidigare har fått en länk till projektet. En ny länk skapas som du kan dela med användare som du vill ska få åtkomst till projektet.
 
 1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt.
 

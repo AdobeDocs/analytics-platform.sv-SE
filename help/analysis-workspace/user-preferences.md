@@ -5,91 +5,146 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 39486d83a446c8bcfe93824c06bee3c681922ff4
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '3245'
+source-wordcount: '3355'
 ht-degree: 0%
 
 ---
 
 # Användarinställningar
 
-Du kan hantera inställningar för Analysis Workspace och dess relaterade komponenter för alla nya projekt eller paneler som du skapar. Befintliga projekt och paneler påverkas inte.
+Du kan hantera användarinställningar och -inställningar för Analysis Workspace och relaterade komponenter för alla nya projekt eller paneler som du skapar. Befintliga projekt och paneler påverkas inte.
 
 ## Uppdatera inställningar
 
-1. Gå till landningssidan [!UICONTROL **Projekt**] i Customer Journey Analytics och välj sedan [!UICONTROL **Redigera inställningar**].
+Du kan uppdatera dina inställningar på följande sätt:
 
-   ![Workspace projektvy som markerar de alternativ för redigeringsinställningar som beskrivs på den här sidan.](assets/user-preferences.png)
+- Välj ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** i Workspace huvudgränssnitt.
+- Välj **[!UICONTROL Project]** > **[!UICONTROL User preferences]** på menyn när du arbetar i ett Workspace-projekt.
+- Välj **[!UICONTROL Components]** > **[!UICONTROL Preferences]** i det övre huvudfältet i Customer Journey Analytics (endast tillgängligt för produktadministratörer).
 
-   eller
+## Konfigurera inställningar
 
-   Produktadministratörer kan uppdatera IMS-organisationsinställningarna genom att gå till fliken [!UICONTROL **Komponenter**] och sedan välja [!UICONTROL **Inställningar**].
+Du kan konfigurera följande inställningar:
 
-1. Om du vill ha mer information om de tillgängliga inställningarna på varje flik kan du fortsätta med något av följande avsnitt i den här artikeln:
-
-   * [Allmänna inställningar](#general-preferences)
-
-   * [IMS-organisationsinställningar](#ims-organization-preferences)
-
-   * [Inställningar för projekt och analys](#project-preferences)
-
-   * [Inställningar för frihandstabell](#freeform-table-preferences)
-
-   * [Visualiseringsinställningar](#visualizations-preferences)
-
-## Allmänna inställningar
+### Allmänna inställningar
 
 Allmänna inställningar gäller för Customer Journey Analytics i webbläsaren. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
 | Inställningar | Alternativ |
 | --- | --- |
-| Landningssida | Välj vilken sida som ska visas som standardsida när du öppnar Adobe Analytics: <ul><li>Projektlista (standard)</li><li>Tomt projekt</li><li>Specifikt projekt valt från en lista</li></ul> |
-| Visa tips | Visar tips i en blå ruta längst ned till höger i Analysis Workspace. <p>Det här alternativet är aktiverat som standard.</p> |
-| Komponenter som visas i grupper med vänster skena | Välj hur många av varje komponent som ska visas på komponentmenyn i den vänstra listen. <p>Om du väljer 0 är komponenten inte längre tillgänglig från den vänstra listen på arbetsytorna.</p><p>Som standard visas fem komponenter för vart och ett av följande:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponentöversikt](/help/components/overview.md).</p> |
+| **[!UICONTROL Landing page]** | Välj vilken sida som ska visas som standardsida när du öppnar Customer Journey Analytics: <ul><li>Projektlista (standard)</li><li>Tomt projekt</li><li>Guidad analys av tomma trender</li><li>Specifikt projekt, valt från en lista</li></ul> |
+| **[!UICONTROL Tips]** | Visar tips i en blå ruta längst ned till höger i Analysis Workspace. <p>Det här alternativet är aktiverat som standard.</p> |
+| **[!UICONTROL Components displayed in left panel groups]** | Välj hur många av varje komponentgrupp som ska visas på komponentmenyn i den vänstra panelen. <p>Om du väljer 0 för en komponentgrupp är komponentgruppen inte längre tillgänglig från den vänstra panelen.</p><p>Som standard visas fem komponenter för var och en av följande komponentgrupper:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponentöversikt](/help/components/overview.md).</p> |
 
-## IMS-organisationsinställningar
+### IMS-organisationsinställningar {#ims-organization-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_shareonlyworkspace"
+>title="Tillåt endast delning med Workspace-användare"
+>abstract="När alternativet **[!UICONTROL Share with anyone]** är aktiverat är det inte längre tillgängligt för användare när de delar ett Analysis Workspace-projekt. Personer som tidigare fått åtkomst till ett projekt via det här delningsalternativet har inte längre åtkomst till projektet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_requireexperiencecloudauth"
+>title="Kräv autentisering av Experience Cloud"
+>abstract="När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet Dela med vem som helst i Analysis Workspace autentisera med sina inloggningsuppgifter för Experience Cloud."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Du kan uppdatera företagsinställningarna som gäller för alla användare och projekt i organisationen. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
 | **Projektdelning** | | |
-| | Tillåt endast delning med Workspace-användare | <p>När det här alternativet är aktiverat kan användare i organisationen inte se alternativet &quot;Dela med någon&quot; på menyn Dela. Det innebär att användare inte kan dela projekt med personer som inte har ett Analysis Workspace-konto i organisationen enligt beskrivningen i [Dela ett projekt med någon (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).</p><p>Det här alternativet är inaktiverat som standard för alla organisationer (vilket innebär att användare kan dela projekt med personer utanför organisationen) förutom för kunder som har licensierat vårdsköld. </p><p>Tänk på följande när du aktiverar eller inaktiverar det här alternativet:</p> <ul><li><p>När du aktiverar det här alternativet kan personer som tidigare fått åtkomst till ett projekt via delningsalternativet &quot;Dela med vem som helst&quot; inte längre få åtkomst till projektet.</p></li><li><p>Om det här alternativet är aktiverat (för att endast tillåta delning med Workspace-användare) och sedan inaktiveras (för att tillåta delning med vem som helst), kommer personer som tidigare fått åtkomst till ett projekt via delningsalternativet &quot;Dela med vem som helst&quot; inte automatiskt att få tillgång till projektet. I det här fallet måste användaren som delade projektet aktivera alternativet [!UICONTROL **Länk är aktivt**] som är tillgängligt när ett projekt delas med någon ([!UICONTROL **Dela**] > [!UICONTROL **Dela med vem som helst**]), vilket beskrivs i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).</p></li><li><p>**För kunder som licensierar hälsovård:** Det här alternativet är aktiverat som standard och kan inte inaktiveras. Innan du kan inaktivera det här alternativet så att användare kan använda delningsalternativet Dela med vem som helst måste du först lägga till behörigheten [!UICONTROL **Dela projektlänkar med vem som helst**] (finns under [!UICONTROL **Rapporteringsverktyg**]) i Adobe Admin Console. När behörigheten har lagts till kan du inaktivera det här alternativet och sedan godkänna det juridiska meddelandet. Mer information om hur du lägger till en behörighet i Admin Console finns i [Hantera produktbehörigheter i Admin Console](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).</p></li> |
-| | Kräv autentisering av Experience Cloud | <p>När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet &quot;Dela med vem som helst&quot; i Analysis Workspace autentisera med sina inloggningsuppgifter för Experience Cloud.</p> <p>När det här alternativet är aktiverat aktiveras alternativet&quot;Kräv autentisering av Experience Cloud&quot; varje gång en användare delar ett projekt med delningsalternativet&quot;Dela med vem som helst&quot; i delningsdialogrutan och det kan inte inaktiveras av den användare som delar projektet. (Mer information om hur användare kan dela projekt med vem som helst finns i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>Tänk på följande när du aktiverar det här alternativet:</p><ul><li><p>När du aktiverar det här alternativet inaktiveras alla projekt som tidigare delats med delningsalternativet &quot;Dela med vem som helst&quot; och som inte har alternativet &quot;Kräv autentisering av Experience Cloud&quot; aktiverat.</p></li> <li><p>Om det här alternativet är aktiverat (för att kräva autentisering från Experience Cloud) och sedan inaktiverat (för att alla som har länken ska kunna komma åt projektet), kommer personer som tidigare fått åtkomst till ett projekt via delningsalternativet &quot;Dela med vem som helst&quot; inte automatiskt att få tillgång till projektet. I det här fallet måste användaren som delade projektet aktivera alternativet &quot;Länken är aktiv&quot; som är tillgängligt när ett projekt delas med någon ([!UICONTROL **Dela**] > [!UICONTROL **Dela med vem som helst**] > [!UICONTROL **Länken är aktiv**]), vilket beskrivs i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md) .</p></li> <li><p>Det här alternativet är bara tillgängligt om enkel inloggning har implementerats i din organisation. Mer information om hur systemadministratörer kan aktivera enkel inloggning för din organisation finns i [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Om enkel inloggning har konfigurerats för din organisation kontrollerar du om någon typ av autokontoskapande har implementerats i konsolen. Vanligtvis konfigurerar en systemadministratör detta enligt beskrivningen i [Aktivera automatisk kontogenerering](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>Om din organisation licensierar hälso- och sjukvårdssköld är det här alternativet aktiverat som standard och kan inte inaktiveras.</p></li></ul> |
+| | Tillåt endast delning med Workspace-användare | När det här alternativet är aktiverat kan användare i organisationen inte se alternativet **[!UICONTROL Share with anyone]** på menyn **[!UICONTROL Share]**. Det innebär att användare inte kan dela projekt med personer som inte har ett Analysis Workspace-konto i organisationen enligt beskrivningen i [Dela ett projekt med någon (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).<br/>Det här alternativet är inaktiverat som standard för alla organisationer (vilket innebär att användare kan dela projekt med personer utanför organisationen) förutom för kunder som har licensierat vårdsköld. <p>Tänk på följande när du aktiverar eller inaktiverar det här alternativet:<ul><li>När du aktiverar det här alternativet kan personer som tidigare fått åtkomst till ett projekt via delningsalternativet [!UICONTROL Share with anyone] inte längre få åtkomst till projektet.</li><li>Om det här alternativet är aktiverat (för att endast tillåta delning med Workspace-användare) och sedan inaktiveras (för att tillåta delning med vem som helst), kommer personer som tidigare fått åtkomst till ett projekt via delningsalternativet [!UICONTROL Share with anyone] inte automatiskt att få tillgång till projektet. I det här fallet måste användaren som delade projektet aktivera alternativet [!UICONTROL **Link är aktivt**] som är tillgängligt när ett projekt delas med någon **([!UICONTROL Share]** > **[!UICONTROL Share with anyone]**), vilket beskrivs i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).</li><li>**För kunder som licensierar hälsovård:** Det här alternativet är aktiverat som standard och kan inte inaktiveras. Innan du kan inaktivera det här alternativet så att användare kan använda delningsalternativet [!UICONTROL Share with anyone] måste du först lägga till behörigheten [!UICONTROL Share project links with anyone] (som finns under [!UICONTROL Reporting Tools]) i Adobe Admin Console. När behörigheten har lagts till kan du inaktivera det här alternativet och sedan godkänna det juridiska meddelandet. Mer information om hur du lägger till en behörighet i Admin Console finns i [Hantera produktbehörigheter i Admin Console](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).</li></ul> |
+| | Kräv autentisering av Experience Cloud | När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet Dela med vem som helst i Analysis Workspace autentisera med sina inloggningsuppgifter för Experience Cloud.<p>När det här alternativet är aktiverat aktiveras alternativet [!UICONTROL Require Experience Cloud authentication] i delningsdialogrutan när en användare delar ett projekt med delningsalternativet [!UICONTROL Share with anyone] och det kan inte inaktiveras av den användare som delar projektet. Mer information om hur användare kan dela projekt med vem som helst finns i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Tänk på följande när du aktiverar det här alternativet: <ul><li>När du aktiverar det här alternativet inaktiveras alla projekt som tidigare delats med delningsalternativet [!UICONTROL Share with anyone] och som inte har alternativet [!UICONTROL Require Experience Cloud authentication] aktiverat.<p>Om det här alternativet är aktiverat (för att kräva autentisering från Experience Cloud) och sedan inaktiverat (för att tillåta alla med länken att komma åt projektet), kommer personer som tidigare fått åtkomst till ett projekt via delningsalternativet [!UICONTROL Share with anyone] inte automatiskt att återfå sin åtkomst till projektet. I det här fallet måste användaren som delade projektet aktivera alternativet [!UICONTROL Link is active]*som är tillgängligt när ett projekt delas med någon **([!UICONTROL Share]** > **[!UICONTROL Share with anyone]** > **[!UICONTROL Link is active]**), vilket beskrivs i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).</li><li>Det här alternativet är bara tillgängligt om enkel inloggning har implementerats i din organisation. Mer information om hur systemadministratörer kan aktivera enkel inloggning för din organisation finns i [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/enterprise/using/set-up-identity.html).</p><p>Om enkel inloggning har konfigurerats för din organisation kontrollerar du om någon typ av autokontoskapande har implementerats i konsolen. Vanligtvis konfigurerar en systemadministratör detta enligt beskrivningen i [Aktivera automatiskt skapande av konto](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html).</li><li>Om din organisation licensierar hälso- och sjukvårdssköld är det här alternativet aktiverat som standard och kan inte inaktiveras.</li></ul> |
 
 {style="table-layout:auto"}
 
-## Inställningar för projekt och analys
+### Inställningar för projekt och analys {#project-and-analysis-preferences}
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_categoricalpalette"
+>title="Kategoriserad palett"
+>abstract="Gäller många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_divergingpalette"
+>title="Förvrängningspalett"
+>abstract="Används för kohorttabellen i Analysis Workspace och för guidad analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_sequentialpalette"
+>title="Sekventiell palett"
+>abstract="Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Du kan anpassa de här inställningarna för alla nya Analysis Workspace-projekt, nya Analysis Workspace-paneler och nya guidade analyser. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
 Vissa av dessa inställningar kan även anpassas för enskilda projekt i Analysis Workspace, vilket beskrivs i [Projektöversikt](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
-Klicka på de länkade inställningsrubrikerna för mer information och kontext om varje inställning.
-
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
 | **Visning** | | |
-|  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden för den vänstra listen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
+|  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
 | | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj de visualiseringsfärgpaletter som används i Analysis Workspace och guidad analys. <ul><li> Kategoripalett: Används för många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde. Välj mellan alternativ som tillhandahålls av Adobe eller ange en anpassad palett som definieras av kommaavgränsade hexvärden.</li><li> Olika paletter: Används för tabellen Kohort i Analysis Workspace och vägledd analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten.<li> Sekventiell palett: Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt.</li></ul> |
 | **Data** | | |
-|  | [Datavy](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Välj var tabeller och visualiseringar ska hämta sina data. <ul><li>Senaste (standard)</li><li>Specifik datavy vald från en lista</li></ul> |
-|  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Anpassade intervall</li></ul> |
+|  | [Datavy](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Välj de data där tabeller och visualiseringar hämtar data. <ul><li>Senaste (standard)</li><li>Specifik datavy vald från en lista</li></ul> |
+|  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Du kan aktivera [!UICONTROL Make date range components relative to panel calendar by default].</li></ul> |
 |  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
-|  | Antal upprepande instanser | Anger om upprepade instanser räknas i rapporter. Den här inställningen (när den är aktiverad) hanterar flera på varandra följande sidvyer till samma sida som flera sidvyer. När det är inaktiverat räknas de som en enda sidvy. <p>**Obs!** Den här inställningen påverkar bara vissa mått (t.ex. enkelsidiga besök) och den gäller inte för visualiseringar av flöde och utfall.</p> |
+|  | Instansinventering | Aktivera [!UICONTROL Count repeat instances] om du vill ange om upprepade instanser ska räknas i rapporter. När du t.ex. aktiverar det här alternativet behandlas flera på varandra följande sidvyer som flera sidvyer. När det här alternativet är inaktiverat, räknas flera på varandra följande sidvyer till samma sida som en enda sidvy. <p>**Obs!** Den här inställningen påverkar bara vissa mått (till exempel sessioner) och den gäller inte för visualiseringar i flöde och utfall.</p> |
 |  | Nummerformat | <ul><li>1 000,00 (standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-avgränsningstecken | <ul><li>Komma (standard)</li><li>Semikolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Blanksteg</li><li>Tabb</li></ul> |
 |  | Visa anteckningar | Välj om anteckningar ska visas i dina projekt. Mer information om anteckningar finns i [Översikt över anteckningar](/help/components/annotations/overview.md). |
 
 
-## Inställningar för frihandstabell
+### Inställningar för frihandstabell {#freeform-table-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showanomalies"
+>title="Visa avvikelser"
+>abstract="Om du väljer **[!UICONTROL Show anomalies]** körs avvikelseidentifiering automatiskt på den första metriska kolumnen som läggs till i en tidsserievisualisering av frihandstabell."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showforecast"
+>title="Visa prognos"
+>abstract="Om du väljer **[!UICONTROL Show forecast]** prognostiseras automatiskt den första måttkolumnen som läggs till i en tidsserie visualisering av friformstabell."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Du kan anpassa inställningarna för frihandstabeller för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
 Vissa av dessa inställningar kan även anpassas för enskilda tabeller.
 
-Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de tillgängliga inställningarna.
+Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext om de tillgängliga inställningarna.
 
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
@@ -115,13 +170,13 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | Procentberäkning | <ul><li>Kolumn</li><li>Rad</li></ul> |
 | | Kolumnsummor (endast statiska rader) | <ul><li>Visa summan av rader: Visar summan av enskilda radobjekt </li><li>Visa totalsumma: visar den borttagna dubblettsumman av rader.</li></ul> |
 
-## Visualiseringsinställningar
+### Visualiseringsinställningar
 
 Du kan uppdatera visualiseringsinställningarna för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
 Vissa av dessa inställningar kan också anpassas för individuella visualiseringar.
 
-Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de tillgängliga inställningarna.
+Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext om de tillgängliga inställningarna.
 
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
@@ -132,6 +187,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | Visa dubbelaxel (om tillämpligt) | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | | Normalisering (om tillämpligt) | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | | Fästpunkt Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
+| | Ankaravvikelser för att skala Y-axeln | Y-axeln skalas med avvikande värden. |
 | **[Linjediagram](/help/analysis-workspace/visualizations/line.md)** | | |
 | | Procenttal | Visar värden i procent för linjevisualiseringar. |
 | | Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för linjevisualiseringen. |
@@ -162,9 +218,9 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | Visa jämförelse | Visa jämförelsedata. När det är dolt döljs både jämförelsetabellen och de sammanfattande ändringsobjekten. |
 | | Alternativ för talvärde | I avsnittet [!UICONTROL **Sammanfattning av nyckelmått**] <ul><li>Visa procentuell ändring</li><li>Visa rådifferens</li>Rådifferens mellan det totala värdet för måttet i det primära datumintervallet och det sekundära datumintervallet</ul> |
 | **[Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | Behållare | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor. Dessa inställningar hjälper er att förstå personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Besök</li><li>Besökare</li></ul> |
+| | Behållare | Gör att du kan växla mellan **[!UICONTROL Session]** och **[!UICONTROL Person]** för att analysera personsökvägen. Standardvärdet är **[!UICONTROL Person]**. Dessa inställningar hjälper er att förstå personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Session</li><li>Person</li></ul> |
 | **[Flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | Behållare | I avsnittet [!UICONTROL **Flöde**] <ul><li>Besök</li><li>Besökare</li></ul> |
+| | Behållare | I avsnittet [!UICONTROL **Flöde**] <ul><li>Session</li><li>Person</li></ul> |
 | | Radbryt etiketter | Etiketterna på Flow-elementen trunkeras normalt för att spara skärmutrymme, men du kan göra hela etiketten synlig genom att markera den här rutan. Standard = avmarkerat. |
 | | Inkludera upprepade förekomster | Flödesvisualiseringar baseras på instanser av en dimension. Den här inställningen ger dig möjlighet att inkludera eller exkludera upprepade instanser, t.ex. sidomladdning. Det går dock inte att ta bort upprepningar från Flow-visualiseringar som innehåller flervärdesdimensioner, som listVars, listProps, s.product, merchandising eVars osv. Standard = avmarkerat. |
 | | Visa verktygstips | Avgör om verktygstips som innehåller noddata ska visas när du hovrar över enskilda noder i en flödesvisualisering. |
@@ -174,7 +230,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. <p>Mer information finns i [Stapel och stapel](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | Antal fickor | Välj antalet dataintervall (bucket) i visualiseringen. Det högsta antalet bucklor är 50. <p>Mer information finns i [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
-| | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Besök</li><li>Besökare</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per person, sidvyer för besök eller sidvyer per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
+| | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Session</li><li>Person</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per person, sidvyer för besök eller sidvyer per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
 | **[Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Värde | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Procentuell ändring</li><li>Rådifferens</li></ul> |
 | | Procenttal | Visar värden i procent för visualiseringar av sammanfattningsändringar. |
@@ -201,21 +257,19 @@ Du kan återställa alla dina användarinställningar till standardinställninga
 
 Det går inte att ångra den här åtgärden.
 
-1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] **>** [!UICONTROL **Inställningar**].
-
-   ![Användarinställningar](assets/user-preferences.png)
+1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] **>** [!UICONTROL **Inställningar**] på den översta menyn. Eller välj **[!UICONTROL Project]** > **[!UICONTROL User settings]** på Workspace-menyn.
 
 1. Välj **[!UICONTROL Restore defaults]** i det övre högra hörnet.
 
-1. Välj **[!UICONTROL Restore defaults]** när du uppmanas till det.
+1. Välj **[!UICONTROL Restore defaults]** i **[!UICONTROL Restore system default settings]**, .
 
 ## [!UICONTROL Dark theme]
 
-Om du föredrar en mörk bakgrund för ditt Adobe Analytics-användargränssnitt kan du växla till [!UICONTROL Dark theme].
+Om du föredrar en mörk bakgrund för användargränssnittet i Customer Journey Analytics kan du växla till [!UICONTROL Dark theme].
 
-1. Klicka på användarikonen Experience Cloud längst upp till höger.
+1. Markera användarikonen Experience Cloud längst upp till höger.
 
    ![mörkt-tema](assets/dark-theme.png)
 
-1. Flytta **[!UICONTROL Dark theme]**-växeln åt höger.
+1. Aktivera **[!UICONTROL Dark theme]**..
 

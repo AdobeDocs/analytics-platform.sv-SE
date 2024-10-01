@@ -4,24 +4,32 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: b196b8c05ba05a3f46d71c10fdcaa2ad8ef0dcd6
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
 
-# Sammanfattning av nyckelmått
+# Sammanfattning av nyckelmått {#key-metric-summary}
 
-Med visualiseringen [!UICONTROL Key metric summary] kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
+<!-- markdownlint-disable MD034 -->
 
-* **[!UICONTROL Line]** visualiseringar som visar hur måttet trendar för det primära datumintervallet och jämförelsedatumintervallet
+>[!CONTEXTUALHELP]
+>id="cja_workspace_keymetricsummary_button"
+>title="Sammanfattning av nyckelmått"
+>abstract="Skapa en visualisering som är som en kombination av rad-, sammanfattningsändrings- och sammanfattningsnummerdiagram. Använd den här visualiseringen för att jämföra hur viktiga mätvärden är trender mellan två tidsperioder."
 
-* **[!UICONTROL Summary percent change]** som visar måttökning eller minskning mellan det primära datumintervallet och jämförelsedatumintervallet
+<!-- markdownlint-enable MD034 -->
+
+
+Med visualiseringen ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
+
+* **[!UICONTROL Line]**-visualisering visar hur måttet trendar för det primära datumintervallet och jämförelsedatumintervallet
+
+* **[!UICONTROL Summary percent change]** visar ökning eller minskning av måttet mellan det primära datumintervallet och jämförelsedatumintervallet
 
 * Aktuellt totalt värde ([!UICONTROL **sammanfattningsnummer**]) för måttet
-
-## Användningsexempel
 
 Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland annat:
 
@@ -31,15 +39,15 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland an
 
 * En chefer vill förstå hur nya bokningar ändrades från detta kvartal till förra kvartalet.
 
-## Konfigurera sammanfattningen av nyckelmått
+## Använd
 
-1. Dra visualiseringen **[!UICONTROL Key metric summary]** från menyn **[!UICONTROL Visualizations]** i den vänstra listen till en panel.
+1. Lägg till en ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]**-visualisering. Se [Lägga till en visualisering på en panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Konfigurera visualiseringen genom att välja ett mätvärde, ett primärt datumintervall och ett jämförelsedatumintervall och ett filter (om du vill):
+1. Konfigurera visualiseringen genom att välja **[!UICONTROL Metric]**, **[!UICONTROL Primary date range]**, **[!UICONTROL Comparison date range]** (valfritt) och **[!UICONTROL Filter]** (valfritt):
 
-   ![Nyckelmätningskonfiguration som visar alternativen för mått, primärt datumintervall, jämförelsedatumintervall och segment.](assets/key-metric-config.png)
+   ![Nyckelmätningskonfiguration som visar alternativen för mått, primärt datumintervall, jämförelsedatumintervall och segment.](assets/key-metrics-config.png)
 
-   | Konfigurationsinställning | Definition |
+   | Alternativ | Beskrivning |
    | --- | --- |
    | **[!UICONTROL Metric]** | Välj det mätvärde som du vill undersöka. Alla mätvärden stöds. |
    | **[!UICONTROL Primary date range]** | Det aktuella datumintervallet för frihandstabellen. |
@@ -48,7 +56,7 @@ Den här visualiseringen åtgärdar ett antal vanliga användningsfall, bland an
 
    {style="table-layout:auto"}
 
-1. Klicka på **[!UICONTROL Build]**.
+1. Välj **[!UICONTROL Build]**.
 
 <!--## How the Key Metric Summary visualization handles the comparison date range
 
@@ -77,49 +85,43 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 
 When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
 
-## Visa utdata
+Resultatet av sammanfattningen av nyckeltal ser ut så här:
 
-Utdata ska se ut ungefär så här:
-
-![Viktiga måttutdata som visar metik-, sammanfattningsändring-, sammanfattningsnummer- och linjediagram.](assets/key-metric-output.png)
-
-Observera:
+![Viktiga måttutdata som visar metik-, sammanfattningsändring-, sammanfattningsnummer- och linjediagram.](assets/key-metrics.png)
 
 * Linjediagrammet **[!UICONTROL Previous period]** (visas alltid i grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
 
-* Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen döljs.
+* Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen är dold.
 
 * Härifrån kan du hovra över linjediagrammen för att se statistik för enskilda dagar:
 
-![Besök statistik](assets/key-metric-output2.png)
 
-## Visualiseringsinställningar
+## Konfigurera
 
-Sammanfattningen av nyckeltal erbjuder flera flexibla inställningar för bättre rapportering och kommunikation av viktiga mätvärden. Du kommer åt inställningarna via kugghjulsikonen i det övre högra hörnet av visualiseringen.
+När du har skapat visualiseringen kan du redigera den ursprungliga konfigurationen.
 
-![Sammanfattningsinställningar för nyckeltal med visningstypen Sammanfattning, allmänna alternativ och visningsalternativ.](assets/key-metric-settings.png)
+1. Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Configure visualization]** högst upp i visualiseringen.
+
+   Du dirigeras tillbaka till den ursprungliga konfigurationsdialogrutan.
+
+1. Ändra inställningarna. Välj **[!UICONTROL Reset]** om du vill återställa de aktuella inställningarna. Välj **[!UICONTROL Build]** om du vill återskapa visualiseringen.
+
+## Inställningar
+
+Som en del av visualiseringsinställningarna finns det specifika viktiga sammanfattningsinställningar.
 
 | Inställning | Beskrivning |
-| --- | --- |
-| **[!UICONTROL Emphasize percent change]** | Visa sammanfattningsändring i framträdande fetstil i mitten av visualiseringen |
-| **[!UICONTROL Emphasize number value]** | Visa sammanfattningsnummer i framträdande fetstil i mitten av visualiseringen |
-| **[!UICONTROL Legend visible]** | Visa eller dölj teckenförklaringen längst ned i visualiseringen |
-| **[!UICONTROL Show annotations]** | Visa eller dölj anteckningar som lagts till av en administratör |
-| **[!UICONTROL Show sparklines]** | Visa eller dölj linjediagram längst ned i diagrammet. När teckenförklaringen är dold ändras den inte längre till att referera till raderna visuellt |
-| **[!UICONTROL Show min and max on sparklines]** | Visa eller dölj lägsta och högsta värden i primära och jämförande raddiagram |
-| **[!UICONTROL Show comparison]** | Visa eller dölj jämförelsedata. När det är dolt döljs både jämförelsetabellen och de sammanfattande ändringsobjekten. |
-| **[!UICONTROL Show total number]** | Visa eller dölj sammanfattningsnummer |
-| **[!UICONTROL Show raw difference]** | Visa eller dölj den obearbetade skillnaden mellan det totala värdet för måttet i det primära datumintervallet och det sekundära datumintervallet |
-| **[!UICONTROL Abbreviate value]** | Förkorta talvärdena för att förenkla kommunikationen (t.ex. 20 000 -> 20 kB) |
+|---|---|
+| **[!UICONTROL Summary display type]** | Välj mellan **[!UICONTROL Emphasize percent change]** eller **[!UICONTROL Emphasize number value]**. |
+| **[!UICONTROL Show trendlines]** | Visa trendlinjer i visualiseringen. |
+| **[!UICONTROL Show max and min on trendlines]** | Visa högsta och lägsta värde på trendlinjer. |
+| **[!UICONTROL Show comparison percentage and trendline]** | Visa jämförelseprocent med trendlinje. Om de inte är markerade döljs båda. |
+| **[!UICONTROL Number value options]** | **[!UICONTROL Show total number]** eller **[!UICONTROL Show raw difference]** för talvärdet. |
+| **[!UICONTROL Abbreviate value]** | Välj **[!UICONTROL Abbreviate value]** om du vill förkorta talvärdet på ett intelligent sätt. När du har markerat det här alternativet anger du ett tal för att definiera förkortningen. Till exempel:<br/><table><tr><td>**Ursprungligt värde**</td><td>**Förkortning**</td><td>**Resultat**</td></tr><tr><td>12 011 141,25 USD</td><td>Inte markerad</td><td  align="right">12 011 141,25 USD</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på 1</td><td align="right">12 miljoner dollar</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på 2</td><td  align="right">$12.0M</td></tr><tr><td>12 011 141,25 USD</td><td>Markerad, inställd på 2</td><td align="right">$12.011M</td></tr><tr><td>12 011 141,25 USD</td><td>Markera, ange till 3</td><td align="right">$12.011M</td></tr></table> |
 
-## Redigera visualisering
-
-När du har skapat visualiseringen kan du fortfarande redigera den ursprungliga konfigurationen.
-
-1. Klicka på pennikonen i det övre högra hörnet av visualiseringen (bredvid inställningsikonen).
-
-   ![Ikon för visualisering-redigering.s](assets/edit-icon.png)
-
-   Du återgår nu till den ursprungliga konfigurationsvyn.
-
-1. Ändra måttet, det primära datumintervallet, jämförelsedatumintervallet eller filtret.
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

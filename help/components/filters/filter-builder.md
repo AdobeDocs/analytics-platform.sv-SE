@@ -4,141 +4,207 @@ title: Skapa filter
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: e1f1e37293f1a18616b11fea685d372ec499c407
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
+source-wordcount: '1358'
+ht-degree: 0%
 
 ---
 
-# Filter Builder
+# Skapa filter {#build-filters}
 
-Med [!UICONTROL Filter builder] kan du skapa enkla eller komplexa filter som identifierar personattribut och åtgärder för besök och händelser. Den innehåller en arbetsyta för att dra och släppa mått, händelser eller andra filter för att filtrera personer baserat på hierarkilogik, regler och operatorer.
+<!-- markdownlint-disable MD034 -->
 
-Mer information om hur du skapar snabbfilter som bara gäller för det projekt där de skapas finns i [Snabbfilter](/help/components/filters/quick-filters.md).
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_createaudience"
+>title="Skapa publik"
+>abstract="Målgrupper kan skapas från ett filter och delas med Adobe Experience Platform för aktivering."
 
-## Öppna filterverktyget
+<!-- markdownlint-enable MD034 -->
 
-Du kommer åt filterverktyget på något av följande sätt:
 
-* **Övre navigering**: Klicka **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**.
-* **[!UICONTROL Analysis Workspace]**: Välj **[!UICONTROL + Components]** > **[!UICONTROL Create filter]** med ett projekt öppet i Analysis Workspace.
-* **[!UICONTROL Report Builder]**: [Arbeta med filter i Report Builder](/help/report-builder/work-with-filters.md).
+Dialogrutan **[!UICONTROL Filter builder]** används för att skapa nya eller redigera befintliga filter. Dialogrutan heter **[!UICONTROL New filter]** eller **[!UICONTROL Edit filter]** för filter som du skapar eller hanterar från hanteraren [[!UICONTROL Filters] ](/help/components/filters/manage-filters.md).
 
-## Översikt över Builder-kriterier {#section_F61C4268A5974C788629399ADE1E6E7C}
+>[!BEGINTABS]
 
-Du kan lägga till regeldefinitioner och behållare för att definiera filter. (Mer information om åtkomst till filterverktyget finns i [Öppna filterverktyget](#access-the-filter-builder).)
+>[!TAB Filterverktyget]
 
-![Filterverktyget visar nya filteralternativ som beskrivs i det här avsnittet.](assets/segment_builder_ui_2.png)
+![Fönstret Filterinformation visar fält och alternativ som beskrivs i nästa avsnitt.](assets/filter-builder.png)
 
-| UI-element | Beskrivning |
-| --- | --- |
-| **[!UICONTROL Title]** | Namnge filtret |
-| **[!UICONTROL Description]** | Ange en detaljerad beskrivning av filtret. |
-| **[!UICONTROL Tags]** | [Tagga det filter](/help/components/filters/manage-filters.md) som du skapar genom att välja från en lista med befintliga taggar eller skapa en ny tagg. |
-| **[!UICONTROL Definitions]** | Det är här du [skapar och konfigurerar filter](/help/components/filters/filters-overview.md), lägger till regler och kapslar och sekvensbehållare. |
-| **[!UICONTROL Include]** | (Översta behållarväljare.) Gör att du kan välja den översta [behållaren](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). Standardbehållaren på den översta nivån är händelsebehållaren. |
-| **[!UICONTROL Options]** | (kugghjulsikon) | <ul><li>**[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) i filterdefinitionen.</li><li>**[!UICONTROL Exclude]**: Gör att du kan definiera filtret genom att utesluta en eller flera dimensioner, filter eller mått.</li></ul> |
-| **[!UICONTROL Dimensions]** | Komponenter dras och tas bort från listan Dimensioner (orange sidofält). |
-| **[!UICONTROL Operator]** | Du kan jämföra och begränsa värden med valda operatorer. (är lika med, är inte lika, innehåller, innehåller alla, osv.) |
-| **[!UICONTROL Value]** | Värdet som du angav eller valde för dimensionen, filtret eller mätvärdet. |
-| **[!UICONTROL Attribution Models]** | Dessa modeller är bara tillgängliga för dimensioner och avgör vilka värden i en dimension som ska filtreras efter. Dimensioner är särskilt användbara i sekventiella filter.<ul><li>**[!UICONTROL Repeating]** (standard): Inkluderar instanser och beständiga värden för dimensionen.</li><li>**[!UICONTROL Instance]**: Inkluderar instanser för dimensionen.</li><li>**[!UICONTROL Non-repeating instance]**: Inkluderar unika instanser (icke-upprepande) för dimensionen. Detta är den modell som används i Flow när upprepade instanser utesluts.</li></ul>Se till exempel avsnittet Attribution models nedan. |
-| **[!UICONTROL And/Or/Then]** | Tilldelar operatorerna [!UICONTROL AND/OR/THEN] mellan behållare eller regler. Operatorn THEN låter dig [definiera sekventiella filter](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Metric]** | (Grönt sidofält) Mätvärden som har dragits och tagits bort från listan Metrisk. |
-| **[!UICONTROL X]** | (Ta bort) Du kan ta bort den här delen av filterdefinitionen. |
-| **[!UICONTROL Create audience from filter]** | Genom att skapa en målgrupp från ett filter kan du dela filtret med Adobe Experience Platform för aktivering. [Läs mer …](/help/components/audiences/audiences-overview.md) |
-| **[!UICONTROL Search component]** | Söker igenom listan med dimensioner, filter eller mätvärden. |
-| **[!UICONTROL Dimensions]** | (Lista) Listan med dimensioner som du kan inkludera i filtret. Klicka på rubriken för att expandera. |
-| **[!UICONTROL Metrics]** | Listan med mätvärden som du kan inkludera i filtret. Klicka på rubriken för att expandera. |
-| **[!UICONTROL Filters]** | Listan med befintliga filter som du kan ta med i filtret. Klicka på rubriken för att expandera. |
-| **[!UICONTROL Data View selector]** | Gör att du kan välja den rapportserie som det här filtret ska sparas under. Du kan fortfarande använda filtret i alla datavyer. |
-| **[!UICONTROL Filter Preview]** | Här kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt filter och hur brett filtret är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här filtret. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL People], [!UICONTROL Sessions] och [!UICONTROL Reports Run] för ett filter som körs mot en datauppsättning.<p>Diagrammet uppdateras omedelbart när du har skapat eller ändrat filterdefinitionen. |
-| **[!UICONTROL Save]** eller **[!UICONTROL Cancel]** | Sparar eller avbryter filtret. När du har klickat på **[!UICONTROL Save]** dirigeras du till Filterhanteraren där du kan hantera filtret. |
+>[!TAB Skapa eller redigera filter]
 
-## Skapa ett filter {#build-filters}
+![Fönstret Filterinformation visar fält och alternativ som beskrivs i nästa avsnitt.](assets/create-edit-filter.png)
 
-1. Dra en Dimension-, filter- eller måtthändelse från den vänstra rutan till fältet [!UICONTROL Definitions].
+>[!ENDTABS]
 
-   ![](assets/drag_n_drop_dimension.png)
+1. Ange följande information (![Obligatorisk](/help/assets/icons/Required.svg) krävs):
 
-1. Ange [operatorn](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html) i listrutan.
-1. Ange eller välj ett värde för det markerade objektet.
-1. Lägg till ytterligare behållare om det behövs, med reglerna **[!UICONTROL And]**, **[!UICONTROL Or]** eller **[!UICONTROL Then]**.
-1. När du har placerat behållarna och angett reglerna ser du resultatet av filtret i valideringsdiagrammet längst upp till höger. Valideraren anger det procentuella och absoluta antalet sidvisningar, besök och unika personer som matchar filtret som du skapade.
-1. Under **[!UICONTROL Tags]** [taggar](/help/components/filters/filters-tag.md) behållaren genom att markera en befintlig tagg eller skapa en ny.
-1. Klicka på **[!UICONTROL Save]** för att spara filtret.
+   | Element | Beskrivning |
+   | --- | --- |
+   | **[!UICONTROL Data view]** | Du kan välja datavyn för filtret.  Filtret som du definierar är tillgängligt som ett filter på fliken [Inställningar](/help/data-views/create-dataview.md#settings-filters) i en datavy. |
+   | **[!UICONTROL Project-only filter]** | En informationsruta som förklarar att filtret bara visas i det projekt där det skapades och att filtret inte läggs till i komponentlistan. Aktivera **[!UICONTROL Make this filter available to all your projects and add it to your component list]** om du vill ändra den inställningen. Den här informationsrutan visas bara när du skapar ett [snabbfilter](quick-filters.md) och aktiverar snabbfilterinformationen som ett vanligt filter med **[!UICONTROL Open builder]** från [!UICONTROL Quick filter]-gränssnittet. |
+   | **[!UICONTROL Title]** ![Krävs](/help/assets/icons/Required.svg) | Ge filtret ett namn, till exempel `Last month mobile customers`. |
+   | **[!UICONTROL Description]** | Ange en beskrivning för filtret, till exempel `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Tags]** | Ordna filtret genom att skapa eller använda en eller flera taggar. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
+   | **[!UICONTROL Definition]** ![Krävs](/help/assets/icons/Required.svg) | Definiera filtret med [Definitionsverktyget](#definition-builder). |
 
-   Du dirigeras till [filterhanteraren](/help/components/filters/manage-filters.md) där du kan tagga, dela och hantera filtret på flera sätt.
+   {style="table-layout:auto"}
 
-## Lägg till behållare {#containers}
+1. Om du vill kontrollera om filterdefinitionen är korrekt använder du den ständigt uppdaterade förhandsgranskningen av filterresultatet högst upp till höger.
+1. Om du vill skapa en målgrupp från filtret och dela målgruppen med Experience Platform väljer du **[!UICONTROL Create audience from filter]**. Mer information finns i [Skapa och publicera målgrupper](/help/components/audiences/publish.md).
+1. Välj:
+   * **[!UICONTROL Save]** om du vill spara filtret.
+   * **[!UICONTROL Save As]** om du vill spara en kopia av filtret.
+   * **[!UICONTROL Delete]** för att ta bort filtret.
+   * **[!UICONTROL Cancel]** om du vill avbryta alla ändringar du har gjort i filtret eller avbryta skapandet av ett nytt filter.
 
-Du kan [skapa ett ramverk med behållare](/help/components/filters/filters-overview.md) och sedan placera logikregler och operatorer mellan.
 
-1. Klicka på **[!UICONTROL Options > Add container]**.
+## Definition builder
 
-   En ny [!UICONTROL **Event**]-behållare öppnas utan att en [!UICONTROL **Event**] (sidvy) identifieras.
+Du använder Definitionsverktyget för att skapa filterdefinitionen. I den konstruktionen använder du komponenter, behållare, operatorer och logik.
 
-   ![](assets/new_container.png)
+Du kan konfigurera typen och omfattningen av din definition:
 
-1. Ändra behållartypen efter behov.
-1. Dra en Dimension, ett filter eller en händelse från den vänstra rutan till behållaren.
-1. Fortsätt att lägga till nya behållare från den översta **[!UICONTROL Options]** > **[!UICONTROL Add container]**-knappen högst upp i definitionen, eller lägg till behållare från en behållare för att kapsla logiken.
+1. Om du vill ange typen av definition anger du om du vill att definitionen ska vara inkluderad eller exkluderad. Välj ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** och i listrutan **[!UICONTROL Include]** eller **[!UICONTROL Exclude]**.
+1. Om du vill ange definitionens omfattning väljer du i listrutan **[!UICONTROL Include]** eller **[!UICONTROL Exclude]** om du vill att definitionens omfång ska vara **[!UICONTROL Event]**, **[!UICONTROL Session]** eller **[!UICONTROL Person]**.
 
-   **ELLER**
+Du kan alltid ändra de här inställningarna senare.
 
-   Markera en eller flera regler och klicka sedan på **[!UICONTROL Options]** > **[!UICONTROL Add container from selection]**. Detta gör om markeringen till en separat behållare.
+### Komponenter
 
-## Använd datumintervall {#date-ranges}
+En viktig del av arbetet med att skapa filterdefinitioner är att använda mått, mätvärden, befintliga filter och datumintervall. Alla dessa komponenter är tillgängliga från komponentpanelen i filterverktyget.
 
-Du kan skapa filter som innehåller rullande datumintervall för att få svar på frågor om pågående kampanjer eller evenemang.
+![Börja bygga en definition](assets/start-building-filter.gif){width=100%}
 
-Du kan till exempel enkelt skapa ett filter som innehåller&quot;alla som har köpt något de senaste 60 dagarna&quot;.
+Så här lägger du till en komponent:
 
-Du skapar en sessionsbehållare och i den lägger du till tidsintervallet [!UICONTROL Last 60 days] och måttet [!UICONTROL Orders is greater than or equal to 1] med operatorn AND.
+1. Dra och släpp en komponent från komponentpanelen till **[!UICONTROL Drag and drop Metric(s), Filter(s), and/or Dimensions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
+1. Ange information för komponenten. Välj till exempel ett värde från **[!UICONTROL Select value]**. Eller ange ett värde. Vad och hur du kan ange ett eller flera värden beror på komponenten och operatorn.
+1. Om du vill kan du ändra standardoperatorn. Exempel: från **[!UICONTROL equals]** till **[!UICONTROL equals any of]**. Se [Operatorer](operators.md) för en detaljerad översikt över tillgängliga operatorer.
 
-Här är en video om hur du använder rullande datumintervall i filter:
+Så här redigerar du en komponent:
+
+* Välj en ny operator för komponenten i listrutan operator.
+* Välj eller ange ett annat värde för operatorn om det är lämpligt.
+* Om komponenttypen är en dimension kan du definiera attribueringsmodellen. Mer information finns i [Attributmodell](#attribution-models).
+
+Så här tar du bort en komponent:
+
+* Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) i en komponent.
+
+### Behållare
+
+Du kan gruppera flera komponenter i en eller flera behållare och definiera logik i och mellan behållare. Med behållare kan du skapa komplexa definitioner för filtret.
+
+![Lägg till en behållare](assets/add-container.gif){Width=100%}
+
+* Om du vill lägga till en behållare väljer du **[!UICONTROL Add container]** från ![Inställningar](/help/assets/icons/Setting.svg) **[!UICONTROL Options]**.
+* Om du vill lägga till en befintlig komponent i behållaren drar och släpper du komponenten i behållaren.
+* Om du vill lägga till en annan komponent i behållaren drar och släpper du en komponent från komponentpanelen i behållaren. Använd den blå infogningslinjen som stödlinje.
+* Om du vill lägga till en annan komponent utanför behållaren drar och släpper du en komponent från komponentpanelen utanför behållaren, men inuti huvuddefinitionsbehållaren. Använd den blå infogningslinjen som stödlinje.
+* Om du vill ändra logiken mellan komponenterna i en behållare, mellan behållare eller mellan en behållare och en komponent, väljer du lämplig **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]**. När du väljer Sedan kan du göra om filtret till ett sekventiellt filter. Mer information finns i [Skapa sekventiellt filter](seg-sequential-build.md).
+* Om du vill ändra behållarnivån väljer du ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Besök](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** eller ![Användare](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
+
+Du kan använda ![Setting](/help/assets/icons/Setting.svg) i en behållare för följande åtgärder:
+
+| Behållaråtgärd | Beskrivning |
+|---|---|
+| **[!UICONTROL Add container]** | Lägg till en kapslad behållare i behållaren. |
+| **[!UICONTROL Exclude]** | Uteslut resultatet från behållaren i filterdefinitionen. Ett tunt rött fält till vänster identifierar en exkluderingsbehållare. |
+| **[!UICONTROL Include]** | Inkludera resultatet från behållaren i filterdefinitionen. Inkludera är standard. Ett tunt grått fält till vänster identifierar en inkluderingsbehållare. |
+| **[!UICONTROL Name container]** | Byt namn på behållaren från standardbeskrivningen. Skriv ett namn i textfältet. Om du inte anger några indata används standardbeskrivningen. |
+| **[!UICONTROL Delete container]** | Ta bort behållaren från definitionen. |
+
+
+## Datumintervall
+
+Du kan skapa filter som innehåller rullande datumintervall. Ni kan alltså besvara frågor om pågående kampanjer eller evenemang. Du kan t.ex. skapa ett filter som innehåller *alla som har gjort ett onlineköp de senaste 60 dagarna*.
+
+![Filtrera med rullande datumintervall](assets/filter-rolling-date-range.gif)
+
++++ Här är en video om hur du använder rullande datumintervall i filter
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
+{{videoaa}}
+
++++
+
 ## Staplingsfilter {#stack}
 
-Du kan använda staplingsfilter genom att kombinera villkoren i varje filter med en &#39;and&#39;-operator och sedan använda de kombinerade villkoren. Detta kan göras i ett Workspace-projekt direkt eller i Filter Builder.
+Du kan skapa ett filter med hjälp av filter. När du använder filter i ett filter kan du optimera filtret och minska komplexiteten.
 
-Om du till exempel staplar ett&quot;mobiltelefonanvändarfilter&quot; och ett&quot;USA-geografifilter&quot; returneras data endast för mobiltelefonanvändare i USA.
+Tänk dig att du vill filtrera efter kombinationen av enhetstyp (2) och USA (50). Du kan antingen skapa 100 filter, var och en för den unika kombinationen av enhetstyp (mobiltelefon eller surfplatta) och USA-läge. Om du vill få tillgång till den kaliforniska surfplattan använder du något av de 100 filtren:
 
-Tänk på dessa filter som byggstenar eller moduler som du kan inkludera i ett filterbibliotek, så att användarna kan använda dem som de vill. På så sätt kan du dramatiskt minska antalet filter. Anta till exempel att du har 40 filter:
+![Enkelt filter för CA och surfplatta](assets/filter-ca-tablet-single.png)
 
-* 20 för mobilanvändare i olika länder (US_mobile, Germany_mobile, France_mobile, Brazil_mobile, osv.)
-* 20 för surfplatteanvändare i olika länder (US_tablet, Germany_tablet, France_tablet, Brazil_tablet, osv.)
+Eller så kan du definiera 52 filter: 50 filter för USA, ett för mobiltelefonen och ett för surfplattan. Sedan staplar du filtren för att få samma resultat. För att få tillgång till den kaliforniska surfplattan behöver du två filter:
 
-Genom att använda filterstackning kan du minska antalet filter till 22 och stapla dem efter behov. Du måste skapa följande filter:
+![Staplat filter för CA och surfplatta](assets/filter-ca-tablet-stacked.png)
 
-* ett filter för mobilanvändare
-* ett filter för surfplattor
-* 20 filter för olika geografiska områden
 
->[!NOTE]
->
->När du staplar två filter förenas de som standard med en AND-programsats. Detta kan inte ändras till en OR-sats.
+## Tillskrivning {#attribution}
 
-1. Gå till Filterverktyget.
+<!-- markdownlint-disable MD034 -->
 
-1. Ange en rubrik och beskrivning för filtret.
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_repeating"
+>title="Upprepande"
+>abstract="Inkluderar instanser och beständiga värden för dimensionen."
 
-1. Klicka på **[!UICONTROL Show filters]** för att visa listan med filter i den vänstra navigeringen.
+<!-- markdownlint-enable MD034 -->
 
-1. Dra de filter som du vill stapla till filterdefinitionsytan.
+<!-- markdownlint-disable MD034 -->
 
-1. Välj [!UICONTROL **Spara**].
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_instance"
+>title="Instance"
+>abstract="Inkluderar instanser och beständiga värden för dimensionen."
 
-## Attributionsmodeller {#attribution}
+<!-- markdownlint-enable MD034 -->
 
-![](assets/attribution-models.jpg)
+<!-- markdownlint-disable MD034 -->
 
-**Exempel: Händelsefilter där eVar1 = A**
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_nonrepeatinginstance"
+>title="Icke upprepande instans"
+>abstract="Inkluderar unika (icke upprepande) instanser för dimensionen."
 
-| Exempel | A | A | A (beständig) | B | A | C |
-|---|---|---|---|---|---|---|
-| Upprepande | X | X | X | - | X | - |
-| Instance | X | X | - | - | X | - |
-| Icke upprepande instans | X | - | - | - | X | - |
+<!-- markdownlint-enable MD034 -->
+
+
+
+När du använder en dimension i filterverktyget har du möjlighet att ange attribueringsmodellen för den dimensionen. Den attribueringsmodell du väljer avgör om data uppfyller villkoren som du har angett för dimensionskomponenten.
+
+Välj ![Inställning](/help/assets/icons/Setting.svg) i dimensionskomponenten och välj en av attributmodellerna i popup-fönstret:
+
+| Models | Beskrivning |
+|---|---|
+| **[!UICONTROL Repeating model (default)]** | Inkludera instans- och beständiga värden för dimensionen för att avgöra kvalificeringen. |
+| **[!UICONTROL Instance]** | Inkludera endast instansvärden för dimensionen för att bestämma kvalificeringen. |
+| **[!UICONTROL Non-repeating instance]** | Inkludera unika instansvärden (ej upprepade) för dimensionen för att avgöra kvalificeringen. |
+
+
+![Attributmodell i dimension när ett filter skapas](assets/filter-dimension-attribution.png)
+
+### Exempel
+
+Som en del av en filterdefinition har du angett följande villkor: Sidnamn är lika med Kvinnor. Liknar exemplet ovan. Du upprepar den här filterdefinitionen med två andra attribueringsmodeller. Du har alltså tre filter var och en med en egen attribueringsmodell:
+
+* Kvinnors sida - Attribution - Upprepande (standard)
+* Kvinnlig sida - Attribution - Instans
+* Women Page - Attribution - Non-repeating instance
+
+
+Tabellen nedan förklarar, för varje attribueringsmodell, vilka inkommande händelser som är kvalificerade ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) för det villkoret.
+
+
+| Kvinnssida - Attribution - <br/>*attribueringsmodell* | Händelse 1:<br/>Sidnamnet är lika med<br/>Kvinnor | Händelse 2:<br/>Sidnamnet är lika med<br/>Män | Händelse 3:<br/>Sidnamnet är lika med<br/>Kvinnor | Händelse 4:<br/>Sidnamnet är lika med<br/>Kvinnor<br/>(beständigt) | Händelse 5:<br/>Sidnamnet är lika med<br/>Utcheckning | Händelse 6:<br/>Sidnamnet är lika med<br/>Kvinnor | Händelse 7:<br/>Sidnamnet är lika med<br/>Hem |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
+| Upprepande (standard) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
+| Instance | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
+| Icke upprepande instans | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
+
+En exempelrapport om händelser som använder de tre filtren ser ut så här:
+
+![Resultat av filterattribueringsmodell](assets/filter-dimension-attribution-results.png)

@@ -5,14 +5,24 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '707'
 ht-degree: 1%
 
 ---
 
-# Formatera komponentinställningar
+# Formatera komponentinställningar {#format-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format"
+>title="Format"
+>abstract="Avgör hur en komponent visas när den används i rapporter."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Med Format kan du bestämma hur ett givet mätvärde ska visas när det används i rapporter.
 

@@ -5,14 +5,24 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '8011'
-ht-degree: 3%
+source-wordcount: '8487'
+ht-degree: 2%
 
 ---
 
-# Härledda fält
+# Härledda fält {#derived-fields}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields"
+>title="Härledda fält"
+>abstract="Med ett härlett fält kan du definiera dataändringar direkt med hjälp av ett anpassningsbart regelverktyg. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i Workspace eller ytterligare definiera det som en komponent i datavyn."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Härledda fält är en viktig aspekt av rapportfunktionen i realtid i Adobe Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Workspace](../../analysis-workspace/home.md) eller ytterligare definiera det härledda fältet som en komponent i [datavyn](../data-views.md).
 
@@ -32,6 +42,8 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 
 ![Skärmbild av dialogrutan Härlett fält](assets/derived-field-dialog.png)
 
+
+![Programöversikt](/help/assets/icons/ProgramOverview.svg)
 
 |  | Namn | Beskrivning |
 |---------|----------|--------|
@@ -386,6 +398,16 @@ För varje funktion som stöds finns information nedan:
 
 ### Skiftläge {#casewhen}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_casewhen"
+>title="Skiftläge"
+>abstract="Med den här funktionen kan du använda villkor som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i det nya härledda fältet baserat på villkorens sekvens."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Använder villkorliga värden som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i ett nytt härlett fält, baserat på villkorens sekvens.
 
 +++ Information
@@ -616,6 +638,16 @@ Följande begränsningar gäller och används när värden för *markera* och *a
 
 ### Klassificera {#classify}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_classify"
+>title="Klassificera"
+>abstract="Med den här funktionen kan du definiera en uppsättning värden som ersätts av motsvarande värden med en textinmatning."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Definierar en uppsättning värden som ersätts av motsvarande värden i ett nytt härlett fält.
 
 +++ Information
@@ -751,6 +783,16 @@ Följande ytterligare funktioner är tillgängliga i gränssnittet Klassifiera r
 
 ### Sammanfoga {#concatenate}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_concatenate"
+>title="Sammanfoga"
+>abstract="Den här funktionen ger möjlighet att kombinera två eller flera fält, härledda fält eller användarinmatade strängvärden till ett enda fält med definierade avgränsare"
+
+<!-- markdownlint-enable MD034 -->
+
+
 Kombinerar fältvärden till ett nytt härlett fält med definierade avgränsare.
 
 +++ Information
@@ -827,6 +869,16 @@ Du definierar ett `Origin - Destination` härlett fält. Du använder funktionen
 
 
 ### Deduplicera {#dedup}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_deduplicate"
+>title="Deduplicera"
+>abstract="Med den här funktionen kan du konfigurera ett fält så att värden endast räknas som icke-repetitiva på antingen sessions- eller personnivå. Dessutom kan ett ID för borttagning av dubbletter användas för att säkerställa att endast ett värde används baserat på ett visst ID (t.ex. ett köp-ID) (antingen den första instansen eller den sista instansen)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Förhindrar att ett värde räknas flera gånger.
 
@@ -911,7 +963,17 @@ Du definierar ett nytt härlett `Tracking Code (deduplicated)`-fält. Du använd
 
 <!-- FIND AND REPLACE -->
 
-### Sök och ersätt {#find-replace}
+### Sök och ersätt {#find-and-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_findandreplace"
+>title="Sök och ersätt"
+>abstract="Med den här funktionen kan du söka efter alla värden i ett markerat fält och ersätta dessa värden med ett annat värde i ett nytt härlett fält."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Söker efter alla värden i ett markerat fält och ersätter dessa värden med ett annat värde i ett nytt härlett fält.
 
@@ -983,6 +1045,16 @@ Du definierar ett `Email Marketing (updated)` härlett fält. Du använder funkt
 
 ### Sök {#lookup}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lookup"
+>title="Sök"
+>abstract="Den här funktionen ger möjlighet att använda fält från en uppslagsdatauppsättning med hjälp av en matchande nyckel mellan datauppsättningar."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Sök efter värden med hjälp av ett fält från en uppslagsdatauppsättning och returnerar ett värde i ett nytt härlett fält eller för vidare regelbearbetning.
 
 +++ Information
@@ -1034,6 +1106,16 @@ Du kan snabbt infoga en [!UICONTROL Lookup]-funktion i regelbyggaren som redan i
 
 ### Gemener {#lowercase}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lowercase"
+>title="Gemener"
+>abstract="Den här funktionen konverterar hela strängtexten till gemener."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Konverterar värden från ett fält till gemener och lagrar dem i ett nytt härlett fält.
 
 +++ Information
@@ -1084,6 +1166,16 @@ Du definierar ett `Product Names` härlett fält. Du använder funktionen [!UICO
 <!-- MATH -->
 
 ### Matematik {#math}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_math"
+>title="Matematik"
+>abstract="Med den här funktionen kan du utföra matematiska operationer i ett fält. Funktionen kan användas för att utföra grundläggande aritmetiska operationer, som addition, subtraktion, multiplikation och division."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Använd enkla matematiska operatorer (lägg till, subtrahera, multiplicera, dela och höj till en potens) i numeriska fält.
 
@@ -1166,6 +1258,16 @@ Använd Math-funktionen för träffnivåbaserade beräkningar. Använd funktione
 
 ### Sammanfoga fält {#merge}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_mergefields"
+>title="Sammanfoga fält"
+>abstract="Med den här funktionen kan du ta värden från två olika fält och inkludera deras respektive värden i en enda dimension. Regeln kontrollerar först om det första värdet har angetts. Annars används det andra värdet och så vidare."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Sammanfogar värden från två olika fält till ett nytt härlett fält.
 
 +++ Information
@@ -1231,6 +1333,16 @@ Du måste välja samma typ av fält i en regel för att slå samman fält. Om du
 <!-- NEXT OR PREVIOUS -->
 
 ### Nästa eller Föregående {#next-previous}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_nextprevious"
+>title="Nästa eller Föregående"
+>abstract="Med den här funktionen kan du titta på nästa eller föregående värde som samlats in för ett givet fält."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Tar ett fält som indata och löser nästa eller föregående värde för det fältet inom sessionens eller användningens omfattning. Detta gäller endast fälten i tabellerna Besök och Händelse.
 
@@ -1303,6 +1415,16 @@ Du kan bara markera fält som tillhör tabellen Besök eller Händelse.
 <!-- REGEX REPLACE -->
 
 ### Regex Replace {#regex-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_regexreplace"
+>title="Regex Replace"
+>abstract="Med den här funktionen kan du extrahera delar av en sträng med reguljära uttryck."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Ersätter ett värde från ett fält med ett reguljärt uttryck i ett nytt härlett fält.
 
@@ -1401,6 +1523,16 @@ Du kan använda de här sekvenserna i [!UICONTROL Output format] hur många gån
 
 ### Dela {#split}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_split"
+>title="Dela"
+>abstract="Med den här funktionen kan du dela upp ett fält i flera fält baserat på en avgränsare."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Delar ett värde från ett fält i ett nytt härlett fält.
 
 +++ Information
@@ -1493,6 +1625,16 @@ Du skapar ett `Second Response` härlett fält som ska ta det senaste värdet fr
 
 ### Sammanfatta {#summarize}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_summarize"
+>title="Sammanfatta"
+>abstract="Den här funktionen gör det möjligt att samla värden på en händelse-, sessions- eller personnivå. Beroende på fälttypen för det valda fältet är olika alternativ tillgängliga."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Tillämpar aggregeringsfunktioner på mått och mått på händelse-, sessions- och användarnivå.
 
 +++ Information
@@ -1560,6 +1702,16 @@ Använd funktionen Summera för händelse-, sessions- eller personomfattningsbas
 <!-- TRIM -->
 
 ### Rensa
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_trim"
+>title="Rensa"
+>abstract="Med den här funktionen kan du trimma antingen blanksteg eller specialtecken från början eller slutet av en sträng. Det går också att ange antalet tecken som ska användas för det returnerade värdet, antingen från strängens början eller slut."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Beskär tomt utrymme, specialtecken eller antal tecken från början eller slutet av fältvärden till ett nytt härlett fält.
 
@@ -1672,6 +1824,16 @@ Du skapar ett `Store Identifier` härlett fält. Du använder funktionen [!UICON
 <!-- URL PARSE -->
 
 ### URL-parsning
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_urlparse"
+>title="URL-parsning"
+>abstract="Den här funktionen gör det möjligt att analysera olika delar av en URL, inklusive värden, sökvägar eller frågeparametrar."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågeparametrar.
 

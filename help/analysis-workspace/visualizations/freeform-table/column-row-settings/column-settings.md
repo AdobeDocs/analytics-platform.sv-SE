@@ -4,59 +4,75 @@ title: Kolumninställningar
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 49b165c4dfec99ff1c65d4aacf4a5ffbe65d4004
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 13%
+source-wordcount: '811'
+ht-degree: 7%
 
 ---
 
 # [!UICONTROL Column Settings]
 
-I [!UICONTROL Column Settings] kan du konfigurera kolumnformatering, varav vissa kan vara villkorliga.
+I [!UICONTROL Column settings] kan du konfigurera kolumnformatering, varav vissa kan vara villkorliga.
 
-Visa en video om rad- och kolumninställningar här:
++++ Visa en videodemonstration av den här funktionen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
-## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
+{{videoaa}}
 
-Om du vill komma åt [!UICONTROL Column Settings] drar du en frihandstabell till projektet och klickar sedan på inställningsikonen ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i kolumnrubriken.
++++
 
-<img src="./assets/column-settings.png" alt="Kolumninställningarna som visar cellerna Totalt, Tabellceller och Förhandsvisning av tabellceller." width="50%" />
+Om du vill komma åt [!UICONTROL Column settings] väljer du ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) i kolumnrubriken.
 
-Du kan redigera inställningarna **för flera kolumner samtidigt**. Markera bara flera kolumner och klicka på inställningsikonen för någon av dessa kolumner. Alla ändringar du gör gäller för alla kolumner där celler är markerade.
+![Kolumninställningar](assets/column-settings.png)
 
-| Element | Beskrivning |
+
+Du kan redigera inställningar för flera kolumner samtidigt. Markera flera kolumner och välj ![Inställning](/help/assets/icons/Setting.svg) i någon av de markerade kolumnerna. Alla ändringar du gör gäller för alla kolumner där celler är markerade.
+
+| Alternativ | Beskrivning |
 | --- | --- |
-| Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
-| Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Vi kan visa procenttal som är större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna blir för stora. |
-| Visa avvikelser | Avgör om avvikelseidentifiering körs på värdena i den här kolumnen. |
-| Visa prognos | Avgör om prognosvärden visas i den här kolumnen. |
-| Radbryt rubriktext | Gör att du kan radbryta rubriktexten i frihandstabeller så att rubrikerna blir mer läsbara och tabellerna mer delbara. Detta är användbart för .pdf-återgivning och för mått med långa namn. Aktiverat som standard. |
-| Tolka noll som inget värde | För celler med värdet 0 anger om en 0-cell eller en tom cell ska visas. Det här är användbart när du tittar på data för varje dag i en månad, och vissa dagar har inte inträffat än.  I stället för att visa 0 för framtida datum kan tomma celler visas i stället. Diagram följer även den här inställningen (d.v.s. de visar inte en linje eller en stapel med 0 värden när den här inställningen är markerad). |
-| Bakgrund | Anger om en cell visar/döljer all cellformatering, inklusive stapeldiagrammet och villkorsstyrd formatering. |
-| Stolpdiagram | Visar ett vågrätt stolpdiagram som representerar cellens värde i förhållande till totalvärdet för kolumnen. |
-| Villkorsstyrd formatering | Se avsnittet nedan. |
-| Förhandsgranskning av tabellcell | Visar en förhandsvisning av hur varje cell visas med de valda formateringsalternativen. |
+| **[!UICONTROL Show total]** | Visa en summa på klientsidan av kolumnen. Den här summan tar **inte** bort dubbletter av mått som sessioner eller personer. |
+| **[!UICONTROL Show grand total]** | Visa en serversidessumma av kolumnen. Det totala antalet avduplicerade mått som sessioner eller personer. |
+| **[!UICONTROL Show sparkline]** | Visa ett linjediagram i kolumnrubriken. |
+| **[!UICONTROL Number]** | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
+| **[!UICONTROL Percent]** | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Procenttal som är större än 100 % är möjliga för att säkerställa att de är korrekta. Det övre gränsvärdet kan flyttas till 1 000 % för att förhindra att kolumnbredden blir för stor. |
+| **[!UICONTROL Show anomalies]** | Kontrollera om avvikelseidentifiering körs på värdena i den här kolumnen. |
+| **[!UICONTROL Show forecast]** | Kontrollera om prognosvärden visas i den här kolumnen. |
+| **[!UICONTROL Wrap header text]** | Radbryt rubriktexten i frihandstabeller så att rubrikerna blir lättare att läsa och tabellerna blir mer delbara. Figursättningen är användbar för återgivning i PDF och för mått med långa namn. Aktiverat som standard. |
+| **[!UICONTROL Interpret zero as no value]** | För celler med värdet 0 anger du om en 0-cell eller en tom cell ska visas. Den här tolkningen är användbar när du tittar på data för varje dag i en månad, och vissa dagar är i framtiden.  I stället för att visa 0 för framtida datum visas tomma celler i stället. Diagram följer även den här inställningen (d.v.s. diagrammen visar inte en linje eller stapel med 0 värden). |
+| **[!UICONTROL Background]** | Ange om en cell ska visa/dölja all cellformatering, inklusive stapeldiagrammet och villkorsstyrd formatering. |
+| **[!UICONTROL Bar Graph]** | Visa ett vågrätt stolpdiagram som representerar cellens värde i förhållande till totalvärdet för kolumnen. |
+| **[!UICONTROL Conditional Formatting]** | Använd villkorlig formatering. Se [avsnittet](#conditional-formatting) nedan. |
+| **[!UICONTROL Table Cell Preview]** | En förhandsvisning av hur varje cell visas med de valda formateringsalternativen. |
+| **[!UICONTROL Use non-default attribution model]** | Använd en attribueringsmodell som inte är standard. Se [avsnittet](#use-non-default-attribution-model) nedan. |
 
 ## Villkorsstyrd formatering {#conditional-formatting}
 
-Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre gränser som du kan definiera. Om du använder villkorsstyrd formatering (färger o.s.v.) i frihandstabeller aktiveras även automatiskt vid uppdelning, såvida inte &quot;Anpassade&quot; gränser har valts.
+Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre gränser som du kan definiera. Användning av villkorsstyrd formatering i frihandstabeller aktiveras också automatiskt vid uppdelningar, såvida inte [!UICONTROL Custom]-gränser har valts.
 
-<img src="./assets/conditional-formatting.png" alt="Alternativen för villkorsstyrd formatering med Anpassad vald" width="50%" />
+<img src="./assets/conditional-formatting.png" alt="Alternativen för villkorsstyrd formatering med Anpassad vald" width="40%" />
 
-| Element | Beskrivning |
+| Villkorliga formateringsalternativ | Beskrivning |
 | --- | --- |
-| Villkorsstyrd formatering | Använder en förkonfigurerad färguppsättning som du väljer för celler. Beroende på vilket av de fyra tillgängliga färgscheman du väljer tilldelas olika färger till höga värden, mittpunktsvärden och låga värden. <br> Om du ersätter en dimension i tabellen återställs de villkorliga formateringsgränserna. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått på Y-axeln). |
-| Använd procentgränser | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Detta fungerar för mätvärden som endast är procentbaserade (som Studsfrekvens) samt för mätvärden som har ett antal och ett procenttal (som sidvyer). |
-| Automatiskt genererad | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
-| Anpassad | Tilldela manuellt övre/mellersta/nedre gränser. Då får du den flexibilitet du behöver för att avgöra när ett kolumnvärde blir bra, medelbra eller dåligt. |
-| Paletten Villkorsstyrd formatering | Välj vilket av de fyra tillgängliga färgschemana som du vill använda för villkorsstyrd formatering. |
+| **[!UICONTROL  Use percent limits]** | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Procentgränsområdet fungerar för mått som enbart är procentbaserade (t.ex. studsfrekvens) och för mått som har ett antal och ett procentvärde (t.ex. sidvyer). |
+| **[!UICONTROL Auto-generated]** | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
+| **[!UICONTROL Custom]** | Tilldela **[!UICONTROL Upper limit]**, **[!UICONTROL Midpoint]** och **[!UICONTROL Lower limit]** manuellt. Begränsningar ger flexibilitet att avgöra när ett kolumnvärde blir bra, medelvärde eller dåligt. |
+| **[!UICONTROL Conditional formatting palette]** | Använd en förkonfigurerad färguppsättning för celler. Beroende på vilket av de fyra tillgängliga färgscheman du väljer tilldelas olika färger till höga värden, mittpunktsvärden och låga värden. <br> Om du ersätter en dimension i tabellen återställs de villkorliga formateringsgränserna. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått på Y-axeln). |
 
-## Använd en attribueringsmodell som inte är standard {#attribution}
+## Använd en attribueringsmodell som inte är standard {#use-non-default-attribution-model}
 
-Gör att du kan åsidosätta standardattributmodellen som angetts i [datavyer](/help/data-views/component-settings/attribution.md).
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>title="Använd en attribueringsmodell som inte är standard"
+>abstract="Aktivera en attribueringsmodell som inte är standard för de markerade kolumnerna"
+
+<!-- markdownlint-enable MD034 -->
+
+
+Du kan åsidosätta standardattribueringsmodellen som är konfigurerad i [datavyer](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
@@ -72,13 +88,24 @@ Gör att du kan åsidosätta standardattributmodellen som angetts i [datavyer](/
 
 Så här använder du en icke-standardattribueringsmodell för ett mätresultat i en Analysis Workspace:
 
-1. Klicka på inställningsikonen (kugghjulsikonen) på ett mätvärde i kolumnen Frihandstabell.
+1. Välj **[!UICONTROL Use non-default attribution model]**. När du redan har valt det här alternativet använder du **[!UICONTROL Edit]** för att redigera attribueringsmodellen. Eller avmarkera om du vill återgå till standardattribueringsmodellen.
 
    ![Alternativen för kolumninställningar markerar datainställningar: Använd ett icke-standardattribueringsläge.](assets/attribution-checkbox.png)
 
-2. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attribution models](/help/data-views/component-settings/attribution.md).
+2. I **[!UICONTROL Column attribution model]** väljer du en **[!UICONTROL Model]** och en **[!UICONTROL Lookback window]**. Uppslagsfönstret avgör vilket fönster med dataattribuering som används för varje konvertering.
 
    ![Alternativen för kolumnattribueringsmodell visar Linjär markerad.](assets/attribution-select.png)
+
+
+### Attributionsmodeller
+
+{{attribution-models-details}}
+
+### Fönstret Lookback
+
+{{attribution-lookback-window}}
+
+
 
 >[!MORELIKETHIS]
 >

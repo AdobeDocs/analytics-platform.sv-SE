@@ -1,21 +1,21 @@
 ---
 description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
 keywords: Analysis Workspace
-title: Skicka data från Customer Journey Analytics till andra via e-post
+title: Skicka rapporter till andra via e-post
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
 
-# Skicka data från Customer Journey Analytics till andra via e-post
+# Skicka filer till andra
 
-Du kan exportera Customer Journey Analytics-rapporter genom att skicka dem till utvalda mottagare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema. Filer kan skickas i CSV- eller PDF-format.
+Du kan skicka Customer Journey Analytics-rapporter som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera filer som ska skickas enligt ett schema. Filer kan skickas i CSV- eller PDF-format.
 
 Alla märkord som används i projektet används automatiskt vid exporten.
 
@@ -56,7 +56,7 @@ Så här skickar du en fil i ett återkommande schema till mottagarna via e-post
 
 Schemalagda Analysis Workspace-projekt kan hanteras under **[!UICONTROL Analytics]> [!UICONTROL Components] >[!UICONTROL Scheduled Projects]**.
 
-I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
+I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra panelen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
 
 | Fält | Beskrivning |
 | --- | --- |
@@ -78,14 +78,24 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **[!UICONTROL Edit schedule]** | Klicka på schemats rubrik för att uppdatera dess leveransinställningar. |
 | **[!UICONTROL Delete schedule]** | Markera det schemalagda projektet i listan och klicka sedan på Ta bort på menyn. Detta tar bort det valda schemat för projektet. Själva projektet tas inte bort. |
 | **[!UICONTROL Add tags]** | Markera det schemalagda projektet i listan och välj sedan Tagga eller Godkänn för att ordna dina scheman och göra dem enklare att söka efter. |
-| **[!UICONTROL View failed schedules]** | Navigera till den vänstra listen > Andra filter > Misslyckade för att se misslyckade scheman. |
-| **[!UICONTROL View expired schedules]** | Navigera till den vänstra listen > Andra filter > Förfallen om du vill visa scheman som har upphört att gälla. Klicka på schemats rubrik för att ställa in ett nytt leveransschema. |
+| **[!UICONTROL View failed schedules]** | Navigera till den vänstra panelen > Andra filter > Misslyckade för att se misslyckade scheman. |
+| **[!UICONTROL View expired schedules]** | Navigera till den vänstra panelen > Andra filter > Förfallen om du vill visa scheman som har upphört att gälla. Klicka på schemats rubrik för att ställa in ett nytt leveransschema. |
 | **[!UICONTROL View schedule ID]** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
 I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser.
 Mer information finns i [Schemalagda projekt](/help/components/scheduled-projects-manager.md).
 
 ## Lösenordsskydda ett schemalagt projekt {#password}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sendfile_password"
+>title="Lösenordskryptering"
+>abstract="Det angivna lösenordet används för att kryptera filen för det schemalagda projektet. Säkerhetskraven för din organisation kräver lösenordskryptering."
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

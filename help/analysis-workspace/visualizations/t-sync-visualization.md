@@ -5,45 +5,50 @@ title: Hantera datakällor
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 2%
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
-# Hantera datakällor
+# Hantera datakällor {#manage-data-sources}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_lockselection"
+>title="Lås markering"
+>abstract="Aktivera den här inställningen för att låsa visualiseringen till de valda positionerna eller de valda objekten i datakällan."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_lockselection_showtable"
+>title="Visa tabell"
+>abstract="Om du väljer **[!UICONTROL Show table]** genereras en ny datakälla för den aktuella visualiseringen, som är skild från den ursprungliga datakällan."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
 
-**Tips!** Du kan se vilka visualiseringar som är relaterade till färgen på punkten bredvid titeln. Matchande färger innebär att visualiseringar baseras på samma datakälla.
+>[!TIP]
+>
+>Du kan se vilka visualiseringar som är relaterade till färgen ![StatusOrange](/help/assets/icons/StatusOrange.svg) bredvid titeln för visualiseringar. Matchande färger innebär att visualiseringar baseras på samma datakälla.
+>
 
-Genom att hantera en datakälla kan du visa datakällan eller låsa markeringen. Dessa inställningar avgör hur visualiseringen ändras (eller inte ändras) när nya data kommer in.
+Du kan visa eller dölja datakällan. Du kan även låsa markeringen till markerade positioner eller markerade objekt. Dessa inställningar avgör hur visualiseringen ändras (eller inte ändras) när nya data kommer in.
 
-1. [Skapa ett projekt](/help/analysis-workspace/home.md) med en datatabell och en [visualisering](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
-1. Markera cellerna (datakällan) som du vill koppla till visualiseringen i datatabellen.
-1. I visualiseringen klickar du på punkten bredvid titeln för att öppna dialogrutan **[!UICONTROL Data Source]**. Välj **[!UICONTROL Show Data Source]** eller **[!UICONTROL Lock Selection]**.
+![Dialogrutan Data Source med alternativen som beskrivs i nästa avsnitt.](assets/lock-selection.png)
 
-   ![Dialogrutan för Source-alternativet Data visar de alternativ som beskrivs i nästa avsnitt.](assets/manage-data-source.png)
 
-   Synkronisering av en visualisering till en tabellcell skapar en ny (dold) tabell och färgkodar den synkroniserade visualiseringen med den tabellen.
-
-| Element | Beskrivning |
+| Alternativ | Beskrivning |
 |--- |--- |
-| [!UICONTROL Linked Visualizations] | Om det finns visualiseringar kopplade till en frihands- eller kohorttabell öppnas den övre vänstra punkten för att visa de anslutna visualiseringarna och har kryssrutealternativet &quot;visa&quot; för att visa/dölja tabellen.  När du hovrar markeras den länkade visualiseringen och du klickar på den. |
-| [!UICONTROL Show Data Source] | Gör att du kan visa (genom att aktivera kryssrutan) eller dölja (genom att inaktivera) den datatabell som motsvarar visualiseringen. |
-| [!UICONTROL Lock Selection] | Aktivera den här inställningen för att låsa visualiseringen till de data som är markerade i motsvarande datatabell. När det är aktiverat väljer du mellan:  <ul><li>**Markerade positioner**: Välj det här alternativet om du vill att visualiseringen ska förbli låst på de positioner som är markerade i motsvarande datatabell. Dessa positioner kommer även fortsättningsvis att visualiseras, även om de specifika objekten i dessa positioner ändras. Välj till exempel det här alternativet om du alltid vill visa de fem främsta kampanjnamnen i den här visualiseringen, oavsett vilka kampanjnamn som visas i de fem främsta.</li> <li>**Markerade objekt**: Välj det här alternativet om du vill att visualiseringen ska förbli låst för de specifika objekt som är markerade i motsvarande datatabell. Dessa objekt kommer även fortsättningsvis att visualiseras, även om de ändrar sin rankning bland objekt i tabellen. Välj till exempel det här alternativet om du alltid vill visa samma fem specifika kampanjnamn i den här visualiseringen, oavsett var kampanjnamnen rangordnas.</li></ul> |
-
-Arkitekturen skiljer sig från den tidigare på så sätt att Analysis Workspace inte längre skapar en dold tabell som lagrar den låsta markeringen åt dig. Datakällan pekar nu på tabellen som du skapade visualiseringen från.
-
-**Exempel på användningsområden:**
-
-* Du kan skapa en sammanfattningsvisualisering och låsa den till en cell i tabellen som du skapade den från. När du aktiverar&quot;Visa data-Source&quot; visas exakt var informationen kommer från i tabellen. Källdata blir nedtonade:
-
-  ![Datakällans plats i ett kalkylblad.](assets/data-source2.png)>
-* Du kan lägga till många visualiseringar och hämta dem från olika celler i samma tabell, vilket visas här. Tabellen är densamma som i exemplet ovan, men källcellen (och måttet) är annorlunda:
-
-  ![Datakällans plats med tillagda visualiseringar från flera celler](assets/data-source3.png)>
-* Du kan se om det finns några visualiseringar kopplade till en frihand- eller kohorttabell genom att klicka på den övre vänstra punkten (Data Source Settings). Vid hovring markeras den länkade visualiseringen och om du klickar på den kommer du till den.
-
-  ![Data Source Settings markerar en länkad visualisering för de översta sidvyerna.](assets/linked-visualizations.png)>
+| **[!UICONTROL Data source]** | Välj den datakälla som visualiseringen baseras på i listrutan. |
+| **[!UICONTROL Linked visualizations]** | Visar alla länkade visualiseringar. Gäller datakällan (friformstabell). |
+| **[!UICONTROL Show data source]** | Gör att du kan visa eller dölja den datakälla (frihandstabell) som motsvarar visualiseringen. |
+| **[!UICONTROL Lock Selection]** | Välj det här alternativet om du vill låsa visualiseringen ![LockClosed](/help/assets/icons/LockClosed.svg) till de data som är markerade i motsvarande datatabell. När den är aktiverad väljer du mellan:  <ul><li>**Markerade positioner**: Visualiseringen är låst för de **positioner** som är markerade i motsvarande datatabell. Dessa positioner fortsätter att visualiseras, även om de specifika objekten i de här positionerna ändras (till exempel på grund av sortering eller filtrering). Välj till exempel det här alternativet om du alltid vill visa de fem främsta kampanjnamnen som anges i datakällan i den här visualiseringen. Oavsett vilka kampanjnamn som visas.</li> <li>**Markerade objekt**: Visualiseringen är låst för de specifika **objekt** som är markerade i motsvarande datatabell. Dessa objekt fortsätter att visualiseras, även om de ändrar sin rankning bland objekt i tabellen. Välj till exempel det här alternativet om du alltid vill visa samma fem specifika kampanjnamn som finns i datakällan i den här visualiseringen. Oavsett hur kampanjnamnen rankas.</li></ul>Om visualiseringen är låst till data som inte längre är synliga i den anslutna datatabellen, kan du generera en ny tabell. Välj **[!UICONTROL Show table]** om du vill generera en ny datakälla för den aktuella visualiseringen, som är skild från den ursprungliga datakällan. |

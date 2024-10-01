@@ -4,25 +4,44 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
-# Venn
+# Venn {#venn}
 
-Med Vennvisualiseringen kan du dra in upp till tre filter (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_venn_button"
+>title="Venn"
+>abstract="Skapar en visualisering av venndiagram för att snabbt jämföra visuellt två element och storleken på deras överlappning."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Med visualiseringen ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** kan du dra upp till tre filter och ett mätvärde (från komponentpanelen) för att skapa ett Venndiagram.
 
 ![Vennvisualisering som innehåller tre filter.](assets/venn.png)
 
-Du kan sedan hålla muspekaren över filtren för att få mer insikt i procenttal, osv.
+Du kan hålla muspekaren över filtren för att få bättre insikt i procenttal och mycket mer.
 
-![Vennvisualisering med utökad information om filtret för utomhusdeltagare 2015.](assets/venn_hover.png)
+Om du vill generera en [!UICONTROL Freeform table] från visualiseringen [!UICONTROL Venn] markerar du den färgade ![StatusOrange](/help/assets/icons/StatusOrange.svg) bredvid rubriken **[!UICONTROL Venn]** och väljer **[!UICONTROL Show data source]**. Du kommer att se en **[!UICONTROL Venn Data]**-friformstabell med de data som används för att skapa [!UICONTROL Venn]-visualiseringen.
 
-Om du vill omvandla Venndiagrammet till en frihandstabell klickar du på den färgade punkten bredvid rubriken **[!UICONTROL Venn]** och väljer **[!UICONTROL Manage Data Sources]** > **[!UICONTROL Available Data Sources]** > **[!UICONTROL Freeform Table]**.
+<!--
+To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.
 
-Gå till ikonen Visualiseringsinställningar och välj **[!UICONTROL Normalization]** om du vill normalisera Venndiagrammet (ta bort storleken).
+![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
-![Visualiseringsinställningar, alternativ för visualiseringstyp: Venndiagram.](assets/normalization.png)
+-->
+
+>[!MORELIKETHIS]
+>
+>[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 0%
 
 När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. De flesta schemaelement kan antingen vara en dimension eller ett mått beroende på företagets behov. När du drar ett schemaelement till en datavy visas alternativ till höger, där du kan justera hur dimensionen eller mätningen fungerar i Customer Journey Analytics.
 
-Här är en video om ämnet:
++++ Visa en video som illustrerar datavyer i Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 Så här skapar eller redigerar du en datavy:
 
@@ -26,7 +28,17 @@ Så här skapar eller redigerar du en datavy:
 1. Om du vill skapa en datavy väljer du **[!UICONTROL Create new data view]**. Du kan också välja en befintlig datavy i listan över datavyer för att redigera den.
 
 
-## Konfigurera
+## Konfigurera {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="Externt ID"
+>abstract="Om du ändrar det externa ID:t kan det påverka hur datavyns namn visas i externa källor, till exempel affärsinformationsverktyg."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Så här konfigurerar du en ny eller befintlig datavy:
 
@@ -50,9 +62,20 @@ Innehåller övergripande inställningar för datavyn.
 
 {style="table-layout:auto"}
 
-### Kompatibilitet
+### Kompatibilitet {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Datavyer i Journey Optimizer"
+>abstract="Journey Optimizer måste använda en datavy som är konfigurerad med Customer Journey Analytics.<br/>Aktivera det här alternativet om du vill göra det här till standarddatavyn som används i Adobe Journey Optimizer-rapporter."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Vilka komponenter och datauppsättningar som läggs till."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Innehåller inställningar som är tillämpliga när du använder Adobe Journey Optimizer förutom Customer Journey Analytics.
 

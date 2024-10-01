@@ -5,14 +5,24 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
 
-# [!UICONTROL Value Bucketing] komponentinställningar
+# [!UICONTROL Value Bucketing] komponentinställningar {#value-bucketing-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_valuebucketing"
+>title="Värdebuckning"
+>abstract="Bucket-värden i specifika intervall. Dessa intervall visas som dimensionsobjekt i rapporter."
+
+<!-- markdownlint-enable MD034 -->
+
 
 När du skapar eller redigerar en datavy kan du med värdeberäkning kombinera numeriska värden som baseras på ett intervall. Den är bara tillgänglig för dimensioner med datatyperna Heltal eller Dubbelt schema.
 

@@ -5,14 +5,24 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2600'
 ht-degree: 0%
 
 ---
 
-# Skapa ett mobilstyrkort
+# Skapa ett mobilstyrkort {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="Anteckningar"
+>abstract="Anteckningar kan skapas i komponenthanteraren i ett arbetsyteprojekt."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Följande information instruerar chefer för Customer Journey Analytics om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Till att börja med kan du visa videon om att bygga styrkort för kontrollpaneler i Analytics:
 
@@ -135,7 +145,7 @@ Använd visualisering av sammanfattningsnummer för att markera ett stort tal so
 
 ### [!UICONTROL Donut]
 
-På samma sätt som ett cirkeldiagram visar den här visualiseringen data som en del av en helhet. Använd ett mundiagram när du jämför procentandelar av en summa. Låt oss till exempel säga att du vill se vilken annonsplattform som har bidragit till det totala antalet unika personer:
+På samma sätt som ett cirkeldiagram visar den här visualiseringen data som en del av en helhet. Använd ett mundiagram när du jämför procentandelar av en summa. Du vill till exempel se vilken annonsplattform som har bidragit till det totala antalet unika personer:
 
 ![Nytt filmstyrkort med en Donut-visualisering](assets/donut-viz.png)
 

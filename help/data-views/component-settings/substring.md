@@ -5,14 +5,24 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Substring] komponentinställningar
+# Inställningar för delsträngskomponent {#substring-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_substring"
+>title="Delsträng"
+>abstract="Extrahera delar av en sträng med regler eller reguljära uttryck."
+
+<!-- markdownlint-enable MD034 -->
+
 
 [!UICONTROL Substring]-komponentinställningar gör att du kan utföra flera strängredigeringsmetoder för att hämta önskade dimensionsobjekt i rapporter.
 

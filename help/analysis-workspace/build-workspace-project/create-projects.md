@@ -4,100 +4,75 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 0%
+source-wordcount: '386'
+ht-degree: 2%
 
 ---
 
 # Skapa projekt
 
-Med [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan du visa affärskritiska analyser som kan delas med intressenter inom eller utanför organisationen.
+Med [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan du skapa och visa affärskritiska analyser.  Dessa analyser kan delas med intressenter inom eller utanför organisationen.
 
-Allmän information om hur du kommer igång med Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).
+1. I Customer Journey Analytics väljer du **[!UICONTROL Workspace]**.
 
-I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till de viktigaste byggstenarna för ett Analysis Workspace-projekt: paneler, visualiseringar och komponenter.
+1. Välj **[!UICONTROL Projects]** i den vänstra panelen och välj sedan **[!UICONTROL Create project]**.
 
-## Börja skapa ett projekt
+1. Välj **Tomt Workspace-projekt** om du vill skapa ditt Workspace-projekt med en webbläsare.
 
-1. I Adobe Analytics väljer du [!UICONTROL **Workspace**].
-
-1. På fliken [!UICONTROL **Workspace**] väljer du fliken [!UICONTROL **Projekt**] till vänster på sidan och sedan [!UICONTROL **Skapa projekt**] .
-
-1. Välj om du vill skapa ett tomt projekt eller ett tomt mobilstyrkort
-
-   * **Tomt projekt** om du tänker dela analysen från webbläsaren
-   * [**Tomt mobilstyrkort**](/help/mobile-app/curator.md) om du tänker dela din analys från mobilappen Adobe Analytics dashboards.
+   Mer information om hur du skapar ett Mobile Scorecard-projekt som du kan dela med andra intressenter via en mobilapp finns i [Tomt mobilstyrkort](/help/mobile-app/curator.md) . Och se [Guidad analys](/help/guided-analysis/overview.md) för mer information om de olika alternativ som finns för att skapa ditt guidade analysprojekt.
 
 1. Välj [!UICONTROL **Skapa**].
 
-1. Därefter måste du lägga till paneler, visualiseringar och komponenter i projektet. Lägg först till paneler i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägg till paneler i projektet](#add-panels-to-the-project). Du kan sedan lägga till visualiseringar i alla paneler. Slutligen kan du lägga till komponenter till valfria paneler eller visualiseringar.
 
-## Lägga till paneler i projektet {#panels}
+Nu när du har skapat ett tomt Workspace-projekt måste du känna till användargränssnittet i [Analysis Workspace](/help/analysis-workspace/home.md). När du är klar kan du skapa ditt projekt. Så här gör du:
 
-[Paneler](/help/analysis-workspace/c-panels/panels.md) är grunden till alla projekt i Analysis Workspace. Paneler används för att ordna innehållet (visualiseringar och komponenter) i ett projekt.
+![Exempelprojekt](assets/example-project.png)
 
-Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna.
+* Lägg till [paneler](/help/analysis-workspace/c-panels/panels.md) i ditt projekt. Till exempel ➊ **[!DNL Example Panel]**.
 
-Så här lägger du till en panel:
+* Lägg till [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) på panelerna. Exempel:
+   * **[!DNL Line Graph]** [➋ ](/help/analysis-workspace/visualizations/line.md)
+   * **[!DNL Countries]** [➌ ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) i frihandstabell
+* Lägg till [komponenter](/help/components/overview.md) i dina visualiseringar. Exempel:
+   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md)
+   * **[!DNL People]** [mätvärde](/help/components/apply-create-metrics.md),
+   * **[!DNL Avg Order Value]** [beräknat ➏](/help/components/calc-metrics/calc-metr-overview.md)
+   * **[!DNL Mobile App Sessions]** [filter](/help/components/filters/filters-overview.md) ➐
+   * **[!DNL Last Month]** [datumintervall](/help/components/date-ranges/overview.md) ➑
+   * **[!DNL Example]** [➒](/help/components/annotations/overview.md)
 
-1. Markera ikonen [!UICONTROL **Paneler**] i den vänstra listen.
 
-   ![Ikonen Välj paneler och listan över tillgängliga paneler.](assets/build-panels.png)
+## Projektinformation och inställningar {#project-info-settings}
 
-1. Sök efter panelen som du vill lägga till. När den visas i den vänstra listen drar du den till ditt projekt.
+<!-- markdownlint-disable MD034 -->
 
-1. Lägg till visualiseringar på panelen enligt beskrivningen i [Lägg till visualiseringar i projektet](#add-visualizations-to-the-project).
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_repeatinstances"
+>title="Antal upprepande instanser"
+>abstract="Anger om upprepade instanser räknas i rapporter.<br/>Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall."
 
-   Du kan också lägga till komponenter direkt på en panel, enligt beskrivningen i [Lägg till komponenter i projektet](#add-components-to-the-project).
+<!-- markdownlint-enable MD034 -->
 
-## Lägg till visualiseringar i projektet
 
-[Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) (t.ex. en frihandstabell, ett stapeldiagram eller ett linjediagram) kan användas för att visuellt ge liv åt data.
+Projektinställningar innehåller information på projektnivå om det aktiva projektet.
 
->[!TIP]
->
->Frihandstabeller är den vanligaste typen av visualisering och är grunden för interaktiv dataanalys. Mer information om hur du arbetar med frihandstabeller i Analysis Workspace finns i [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
+![Fönstret Projektinformation och inställningar.](./assets/projectinfo.png)
 
-Lägga till en visualisering:
+Inställningarna inkluderar:
 
-1. Välj ikonen **[!UICONTROL Visualizations]** i den vänstra listen.
+| Inställning | Beskrivning |
+|---|---|
+| Projektnamn | Namnet på projektet. Du kan dubbelklicka på namnet för att redigera det. |
+| Ägare | Projektägarnamn |
+| Senast ändrad | Datum för senaste ändring av projektet. |
+| Taggar | Visar alla taggar som har använts i ett projekt för enklare kategorisering. |
+| Beskrivning | En beskrivning är användbar för att förtydliga syftet med ett projekt. Du kan dubbelklicka på beskrivningen för att redigera den. |
+| Antal upprepande instanser | Ange om upprepade instanser ska räknas i rapporter. Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall. |
+| Visa anteckningar | Ange om anteckningar ska visas för det här projektet eller inte. |
+| [Projektfärgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Du kan ändra den kategoriska färgpalett som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
+| [Visa densitet](/help/analysis-workspace/build-workspace-project/view-density.md) | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. |
 
-   ![Den valda visualiseringsikonen och listan över tillgängliga visualiseringar.](assets/build-visualizations.png)
 
-1. Sök efter den visualisering som du vill lägga till. När den visas i den vänstra listen drar du den till en panel i projektet.
 
-1. Lägg till komponenter i visualiseringen enligt beskrivningen i [Lägg till komponenter i projektet](#add-components-to-the-project).
-
-## Lägga till komponenter i projektet
-
-[Komponenterna](/help/components/overview.md) utgör faktiska data för alla projekt. Du kan lägga till komponenter till visualiseringar eller till paneler.
-
->[!TIP]
->
->Om du vill ha information om de olika komponenterna väljer du ikonen Info bredvid en komponents namn i den vänstra listen eller läser [komponentöversikten](/help/components/overview.md).
-
-Här följer grundläggande information om hur du lägger till en komponent i ett projekt i Analysis Workspace. Mer information om hur du lägger till olika typer av komponenter (mått, mått, filter och datumintervall) finns i [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md).
-
-Så här lägger du till en komponent i ett projekt i Analysis Workspace:
-
-1. Välj ikonen **[!UICONTROL Components]** i den vänstra listen.
-
-   ![Ikonen för valda komponenter och listan över tillgängliga dimensioner.](assets/build-components.png)
-
-1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
-
-   Du kan till exempel dra ett filter till filtersläppzonen i en panelrubrik.
-
-   ![släpp ett filter i släppzonen](assets/filter-dropzone.png)
-
-   Mer information om hur du lägger till komponenter i projekt finns i [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md).
-
-1. (Valfritt) Dela projektet enligt beskrivningen i [Spara och dela projektet](#save-and-share-the-project).
-
-## Spara och dela projektet
-
-När du skapar en analys i Analysis Workspace sparas ditt arbete [automatiskt](/help/analysis-workspace/build-workspace-project/save-projects.md).
-
-När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Mer information om hur du delar ett projekt finns i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
