@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 0e627d536682f62b499f7f6d477c1d906de13f24
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1052'
 ht-degree: 9%
 
 ---
@@ -173,8 +173,8 @@ ht-degree: 9%
       + [Tillskrivning](../analysis-workspace/c-panels/attribution.md)
       + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
       + [Frihandsfigur](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Medie - genomsnittlig minutmålgrupp](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [Media Concurrent Viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [Genomsnittlig minutmålgrupp för media](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Medievisningsprogram för samtidig användning](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Medieuppspelningstid spenderad](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nästa eller föregående objekt](../analysis-workspace/c-panels/next-previous.md)
       + [Snabba insikter](../analysis-workspace/c-panels/quickinsight.md)
@@ -257,7 +257,7 @@ ht-degree: 9%
       + [Förhandsvisa dimensioner](../components/dimensions/view-dimensions.md)
       + [Dela upp dimensioner](../components/dimensions/t-breakdown-fa.md)
       + [Tidsdelningsdimensioner](../components/dimensions/time-parting-dimensions.md)
-      + [Dimensioner med mycket hög kardinalitet](../components/dimensions/high-cardinality.md)
+      + [Höga kardinaldimensioner](../components/dimensions/high-cardinality.md)
    + [Mätvärden](../components/apply-create-metrics.md)
    + Filter {#cja-filters}
       + [Översikt över filter](../components/filters/filters-overview.md)

@@ -4,9 +4,9 @@ title: Filtrera och ordna tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Så här exkluderar du specifika rader från en friformstabell:
 
 1. Håll pekaren över raden som du vill utesluta och välj sedan ![Stäng](/help/assets/icons/Close.svg).
 
-   Håll ned Skift-tangenten om du vill markera flera rader eller håll ned Kommando-tangenten (Mac) eller Ctrl-tangenten (Windows) om du vill markera flera rader.
+   Håll ned ***Skift*** om du vill markera ett radintervall eller håll ned ***cmd***-tangenten (på Mac) eller ***ctrl***-tangenten (på Windows) om du vill markera flera rader.
 
 <!--### Right-click > Delete selected rows
 

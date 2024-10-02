@@ -4,9 +4,9 @@ title: Flödesöversikt
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 
 
-Visualiseringen ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Flow] visar kundsökvägar via dina webbplatser och appar.
+Visualiseringen ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** visar kundsökvägar via dina webbplatser och appar.
 
 Med visualiseringen kan du
 
@@ -37,7 +37,7 @@ Med visualiseringen kan du
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, till exempel inmatning, en viss dimension eller avslutning.
 * Skapa filter genom att ange en specifik punkt i en vald bana
 
-+++ Visa en videodemonstration av visualiseringen av [!UICONTROL Flow].
++++ Visa en videodemonstration av Flow-visualiseringen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
 

@@ -4,7 +4,7 @@ title: Om utfallsrapporter och visualiseringar
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: b38e9052618f7326cd5ea22b6cda8b96624a3f84
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 <!-- markdownlint-enable MD034 -->
 
 
-En ![ConversionTrnel](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL Fallout]-visualisering visar var personer slutade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
+En ![ConversionTrnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]**-visualisering visar var personer slutade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
 
 +++ Visa en videodemonstration av [!UICONTROL Fallout visualization].
 

@@ -4,9 +4,9 @@ description: Hantera anteckningar i Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -52,16 +52,16 @@ Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vil
 
 Du kan använda åtgärdsfältets ➋ för att göra anteckningar. Åtgärdsfältet innehåller följande åtgärder:
 
-| Åtgärd | Beskrivning |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till en till anteckning med [Anteckningsverktyget](create-annotations.md#annotation-builder). |
-| ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om ingen anteckning är markerad i listan söker du efter anteckningar med det här sökfältet. |
-| ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade anteckningarna. I dialogrutan **[!UICONTROL Tag Component]** markerar eller avmarkerar du taggarna för de markerade anteckningarna. Välj **[!UICONTROL Save]** om du vill spara taggarna för de markerade anteckningarna. |
-| ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Dela de markerade anteckningarna. I dialogrutan **[!UICONTROL Share Component]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda anteckningarna. Mer information finns i [Dela anteckningar](#share-annotations). |
-| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort de markerade anteckningarna. Du uppmanas att bekräfta åtgärden. |
-| ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på en enskild markerad anteckning. När du väljer det här alternativet kan du byta namn på anteckningen. |
-| ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera de markerade anteckningarna. Nya anteckningar skapas med samma namn och suffix (Kopiera) |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera anteckningarna till en `Annotations List.csv`-fil. |
+| Ikon | Åtgärd | Beskrivning |
+|:--:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Add]** | Lägg till en till anteckning med [Anteckningsverktyget](create-annotations.md#annotation-builder). |
+| ![Sök](/help/assets/icons/Search.svg) | [!UICONTROL *Sök efter titel*] | Om ingen anteckning är markerad i listan söker du efter anteckningar med det här sökfältet. |
+| ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Tagga de markerade anteckningarna. I dialogrutan **[!UICONTROL Tag Component]** markerar eller avmarkerar du taggarna för de markerade anteckningarna. Välj **[!UICONTROL Save]** om du vill spara taggarna för de markerade anteckningarna. |
+| ![Dela](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Share]** | Dela de markerade anteckningarna. I dialogrutan **[!UICONTROL Share Component]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda anteckningarna. Mer information finns i [Dela anteckningar](#share-annotations). |
+| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de markerade anteckningarna. Du uppmanas att bekräfta åtgärden. |
+| ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på en enskild markerad anteckning. När du väljer det här alternativet kan du byta namn på anteckningen. |
+| ![Kopiera](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Kopiera de markerade anteckningarna. Nya anteckningar skapas med samma namn och suffix (Kopiera) |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Export to CSV]** | Exportera anteckningarna till en `Annotations List.csv`-fil. |
 
 ### Aktivt filterfält
 

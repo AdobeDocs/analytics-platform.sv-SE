@@ -4,9 +4,9 @@ title: Kolumninställningar
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '818'
 ht-degree: 7%
 
 ---
@@ -51,7 +51,7 @@ Du kan redigera inställningar för flera kolumner samtidigt. Markera flera kolu
 
 Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre gränser som du kan definiera. Användning av villkorsstyrd formatering i frihandstabeller aktiveras också automatiskt vid uppdelningar, såvida inte [!UICONTROL Custom]-gränser har valts.
 
-<img src="./assets/conditional-formatting.png" alt="Alternativen för villkorsstyrd formatering med Anpassad vald" width="40%" />
+![Villkorsstyrd formatering](./assets/conditional-formatting.png)
 
 | Villkorliga formateringsalternativ | Beskrivning |
 | --- | --- |
@@ -67,9 +67,19 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Använd en attribueringsmodell som inte är standard"
->abstract="Aktivera en attribueringsmodell som inte är standard för de markerade kolumnerna"
+>abstract="Aktivera en attribueringsmodell som inte är standard för de markerade kolumnerna."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>title="Använd en attribueringsmodell som inte är standard"
+>abstract="Attributionsläget som inte är standard är inte tillgängligt för det här måttet."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Du kan åsidosätta standardattribueringsmodellen som är konfigurerad i [datavyer](/help/data-views/component-settings/attribution.md).

@@ -4,9 +4,9 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Kom ihåg att:
    | Jämförelsetyp | Definition |
    | --- | --- |
    | **[!UICONTROL Time comparison]** | Den vanligaste typen av jämförelse - till exempel en jämförelse mellan den här tidsperioden och för 4 veckor sedan. Om du har valt [!UICONTROL Time comparison] kan du göra ett andra val för vilken tidsperiod du vill jämföra.<p>![Radjämförelse med den valda tidsperioden och det sekundära urvalsfältet för tidsperioden.](assets/combo-time-period.png) |
-   | **[!UICONTROL Function]** | Du kan introducera en funktion som [!UICONTROL Average] i jämförelsen. Se en lista över funktioner som stöds nedan.<p>![Listrutan för radjämförelse med valda funktioner och en lista med tillgängliga funktioner som stöds.](assets/combo-functions.png) |
+   | **[!UICONTROL Function]** | Du kan introducera en funktion som [!UICONTROL Average] i jämförelsen. Se listan med [funktioner som stöds](#supported-functions).<p>![Listrutan för radjämförelse med valda funktioner och en lista med tillgängliga funktioner som stöds.](assets/combo-functions.png) |
    | **[!UICONTROL Secondary metric]** | Du kan till exempel jämföra [!UICONTROL Revenue] med ett annat mått.<p>![Ett kombinationsdiagram som jämför två mätvärden.](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}

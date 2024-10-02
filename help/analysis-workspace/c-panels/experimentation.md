@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,6 @@ Beräknade mått som innehåller någon av följande mått eller konstanter är 
 * Konstanter som har lagts till eller subtraherats från ett basmått (till exempel `Revenue+50`)
 * Något av följande basmått:
    * Folk
-   * (vad mer?)
 
 Beräknade mätvärden som inte är kompatibla med panelen Experimentation har värdet [!UICONTROL **Everywhere i Customer Journey Analytics (utom experiment)**] i fältet [!UICONTROL **Produktkompatibilitet**] när det beräknade mätvärdet skapas. Mer information om hur du skapar beräknade mått finns i [Bygg mått](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 

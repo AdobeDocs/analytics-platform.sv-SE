@@ -3,9 +3,9 @@ description: Skapa, redigera eller ta bort aviseringar.
 title: Hantera värden
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: bd58af0680fc9524453e072ecb60e3ada72ce634
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -50,17 +50,17 @@ Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vil
 
 Du kan använda åtgärdsfältets ➋ för att göra aviseringar. Åtgärdsfältet innehåller följande åtgärder:
 
-| Åtgärd | Beskrivning |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ytterligare en avisering med [Varningsverktyget](alert-builder.md#alert-builder). |
-| ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om ingen varning är markerad i listan söker du efter aviseringar med det här sökfältet. |
-| ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade varningarna. I dialogrutan **[!UICONTROL Tag Alert]** markerar eller avmarkerar du taggarna för de markerade aviseringarna. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda aviseringarna. |
-| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort de markerade aviseringarna. Du uppmanas att bekräfta åtgärden. |
-| ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på en enskild markerad varning. Om du väljer det här alternativet kan du byta namn på aviseringen. |
-| ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera den markerade varningen. Nya aviseringar skapas med samma namn och suffix `(Copy)`. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Enable]** eller **[!UICONTROL Disable]** | Aktivera eller inaktivera de markerade aviseringarna. |
-| ![Uppdatera](/help/assets/icons/Refresh.svg) **[!UICONTROL Renew]** | Förnyar aviseringens förfallodatum. Utgångsdatumet är ett år från den dag du väljer det här alternativet, oavsett det ursprungliga förfallodatumet. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera aviseringarna till en `Alerts List.csv`-fil. |
+| Ikon | Åtgärd | Beskrivning |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Add]** | Lägg till ytterligare en avisering med [Varningsverktyget](alert-builder.md#alert-builder). |
+| ![Sök](/help/assets/icons/Search.svg) | [!UICONTROL *Sök efter titel*] | Om ingen varning är markerad i listan söker du efter aviseringar med det här sökfältet. |
+| ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Tagga de markerade varningarna. I dialogrutan **[!UICONTROL Tag Alert]** markerar eller avmarkerar du taggarna för de markerade aviseringarna. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda aviseringarna. |
+| ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de markerade aviseringarna. Du uppmanas att bekräfta åtgärden. |
+| ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på en enskild markerad varning. Om du väljer det här alternativet kan du byta namn på aviseringen. |
+| ![Kopiera](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Kopiera den markerade varningen. Nya aviseringar skapas med samma namn och suffix `(Copy)`. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Enable]** eller **[!UICONTROL Disable]** | Aktivera eller inaktivera de markerade aviseringarna. |
+| ![Uppdatera](/help/assets/icons/Refresh.svg) | **[!UICONTROL Renew]** | Förnyar aviseringens förfallodatum. Utgångsdatumet är ett år från den dag du väljer det här alternativet, oavsett det ursprungliga förfallodatumet. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Export to CSV]** | Exportera aviseringarna till en `Alerts List.csv`-fil. |
 
 
 ### Aktivt filterfält

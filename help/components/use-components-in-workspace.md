@@ -4,9 +4,9 @@ title: Använda komponenter i Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Mer information om vilka typer av komponenter du kan lägga till finns i [kompon
 
 >[!TIP]
 >
->Om du vill ha information om varje komponent väljer du ikonen ![InfoOutline](/help/assets/icons/InfoOutline.svg) bredvid komponentens namn.
+>Använd ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill ha information om varje komponent. Mer information finns i [Komponentinformation](#component-info)
 
 ## Lägga till komponenter i ett projekt
 

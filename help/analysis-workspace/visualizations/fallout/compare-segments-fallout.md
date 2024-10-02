@@ -5,7 +5,7 @@ title: Använda filter i bortfallsanalys
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och j
 
 >[!IMPORTANT]
 >
->Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en person-context Fallout måste filter som används som kontrollpunkter vara besök eller händelsebaserade filter. Med en kontextutfällning måste filter som används som kontrollpunkt vara händelsebaserade filter. Om du använder en ogiltig kombination är utfallet 100 %. En varning visas i Utfallsvisualiseringen när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, som:
-
-* Använda ett personbaserat filter som kontaktyta inuti en personsammanhangsbaserad utfallsvisualisering
-* Använda ett personbaserat filter som kontaktyta i en sammanhangsbaserad Fallout-visualisering
-* Använda ett besöksbaserat filter som kontaktyta i en snabbutfallsvisualisering
+>Filter som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en person-context Fallout måste filter som används som kontrollpunkter vara sessions- eller händelsebaserade filter. Med en bortfall för sessionskontext måste filter som används som kontrollpunkt vara händelsebaserade filter. Om du använder en ogiltig kombination är utfallet 100 %. En varning visas i Utfallsvisualiseringen när du lägger till ett inkompatibelt filter som kontaktyta. Vissa ogiltiga kombinationer av filterbehållare leder till ogiltiga utfallsdiagram, som:
+>
+>* Använda ett personbaserat filter som kontaktyta inuti en personsammanhangsbaserad utfallsvisualisering
+>* Använda ett personbaserat filter som kontaktyta i en sessionssammanhangsbaserad utfallsvisualisering
+>* Använda ett sessionsbaserat filter som kontaktyta i en sessionssammanhangsbaserad utfallsvisualisering
 
 ## Skapa ett filter från en kontaktyta
 

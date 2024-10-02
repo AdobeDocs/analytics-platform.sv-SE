@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 0%
@@ -97,18 +97,15 @@ Tillgängliga tidsjämförelsealternativ omfattar föregående period, 13 veckor
 
 ## Videodemonstration - Adobe Analytics {#videoaa}
 
->[!NOTE]
->
->I den här videon demonstreras funktionaliteten med Adobe Analytics. Funktionen finns dock på liknande sätt i Customer Journey Analytics. Tänk på följande skillnader i terminologi.
->
->
->| Adobe Analytics | Customer Journey Analytics |
->|:---:|:---:|
->| Segment | Filter |
->| Besökare | Person |
->| Besök | Session |
->| Träff | Händelse |
->
+I den här videon demonstreras funktionaliteten med Adobe Analytics. Funktionen finns dock på liknande sätt i Customer Journey Analytics. Tänk på följande skillnader i terminologi.
+
+| Adobe Analytics | Customer Journey Analytics |
+|:---:|:---:|
+| Segment | Filter |
+| Besökare | Person |
+| Besök | Session |
+| Träff | Händelse |
+
 
 ## Panelen Filter {#filterspanel}
 
