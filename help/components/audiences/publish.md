@@ -4,9 +4,9 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
+source-git-commit: 905d8e0bfe2e0dbc9c6a03d9eb9a6efd4926fbbf
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1711'
 ht-degree: 0%
 
 ---
@@ -42,12 +42,10 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
    | Skapandemetod | Information |
    | --- | --- |
    | Från huvudmenyn **[!UICONTROL Components]>[!UICONTROL Audiences]** | Sidan Audiences Manager öppnas. Klicka på **[!UICONTROL Create audience]** så öppnas [!UICONTROL Audience builder]. |
-   | Från en friformstabell | Högerklicka på ett objekt i en friformstabell och välj **[!UICONTROL Create audience from selection]**. Om du använder den här metoden fylls filtret i automatiskt med den dimension eller dimensionspost som du valde i tabellen. |
+   | Från en visualisering i Analysis Workspace | Många visualiseringar i Analysis Workspace gör att du kan skapa en målgrupp genom att högerklicka. Du kan till exempel högerklicka på ett objekt i en frihandstabell eller högerklicka på en nod på arbetsytan för resan och sedan välja **[!UICONTROL Create audience]**. <p>Om du använder den här metoden fylls filtret i automatiskt med den dimension eller dimensionspost som du valde i tabellen.</p><p>Med följande visualiseringar kan du skapa en målgrupp med hjälp av högerklicksmenyn:</p><ul><li>Kohort</li><li>Utfall</li><li>Flöde</li><li>Frihandsregister</li><li>Reseduk</li><li>Venn</li></ul><p>**Obs!** Målgrupper kan inte innehålla beräknade värden. Om du försöker skapa en målgrupp som innehåller ett beräknat mätvärde inkluderas inte det beräknade måttet i målgruppsdefinitionen.</p> |
    | Från gränssnittet för att skapa/redigera filter | Markera rutan **[!UICONTROL Create an audience from this filter]**. Om du använder den här metoden fylls filtret i automatiskt. |
 
    {style="table-layout:auto"}
-
-   <!-- add beneath the Freeform table row above: | From within a Journey canvas visualization | Right-click a node in a Journey canvas visualization and select **[!UICONTROL Create audience]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. | -->
 
 1. Bygg publiken.
 
@@ -64,7 +62,7 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
    | Utgångsdatum | När publiken slutar uppdatera. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan målgruppen förfaller. |
    | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max 90 dagar. |
    | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
-   | [!UICONTROL Filter] | Filter är huvudindata för publiken. Du kan lägga till upp till 20 filter. Dessa filter kan kopplas till operatorerna `And` eller `Or`. |
+   | [!UICONTROL Filter] | Filter är huvudindata för publiken. Du kan lägga till upp till 20 filter. Dessa filter kan kopplas till operatorerna `And` eller `Or`.<p>När du skapar en målgrupp från en visualisering i Analysis Workspace (till exempel en frihandsritabell eller en arbetsyta) bevaras eventuella filter som tillämpas på panelen eller på kolumnen. Du kan ta bort alla filter som tillämpas automatiskt.</p> |
    | [!UICONTROL View sample IDs] | Ett exempel på ID:n i den här målgruppen. Använd sökfältet för att söka efter exempel-ID:n. |
 
    {style="table-layout:auto"}
