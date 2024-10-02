@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder. Du kan definiera en resa från scratch eller visa en resa från Journey Optimizer och sedan se hur människor lämnade (föll ut) eller fortsatte igenom (föll igenom) resan.
 
 Du kan [skapa analyser av användarresor](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) genom att använda valfri kombination av händelser, dimensionsobjekt, filter och datumintervall för att skapa resednoder. Koppla ihop noderna för att skapa resans flöde och inkludera flera vägar och beslutspunkter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Datauppdateringar i realtid när du gör ändringar.
+
+[Noderna är anslutna](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) som en&quot;slutgiltig sökväg&quot;, vilket betyder att besökare räknas så länge de så småningom förflyttar sig från en nod till en annan, oavsett händelser som inträffar mellan de två noderna. Den tid som användarna får förflytta sig längs banan bestäms av behållarinställningen.
+
+![Researbetsyta](assets/journey-canvas.png)
 
 ## Viktiga funktioner
 
@@ -39,13 +43,13 @@ Nedan följer några exempel på vilka typer av insikter som Journey Canvas kan 
 
 * Antalet och procentandelen personer som slutförde resan (anlänt till den avslutande noden)
 
-* Antalet och procentandelen personer som anlänt till en viss punkt (nod) på resan
+* Antalet och procentandelen personer som anlände till en viss nod på resan
 
-* Det vanligaste steget efter eller före en viss punkt (nod) på resan
+* Det vanligaste steget efter eller före en viss nod på resan
 
 **Utfall**
 
-* Poängen (noderna) på resan där de flesta människor föll utanför resan (aldrig anlände till någon av de närmaste noderna)
+* Nod på resan där människor oftast föll utanför resan (aldrig anlände till någon av de närmaste noderna)
 
 **Annan**
 

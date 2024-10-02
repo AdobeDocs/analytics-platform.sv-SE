@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 9%
+source-wordcount: '1021'
+ht-degree: 10%
 
 ---
 
@@ -127,31 +127,31 @@ ht-degree: 9%
       + [Hantera datakällor](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [Intelligenta bildtexter](../analysis-workspace/visualizations/intelligent-captions.md)
       + Frihandstabell {#freeform-table}
-         + [Översikt över frihandstabell](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Översikt](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Skapa hyperlänkar](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska jämfört med statiska artiklar](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrera och ordna tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Workspace summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
-         + [Översikt över kohortabellen](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [Konfigurera en kohorttabell](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [Användningsexempel för kohortanalyser](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [Översikt](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [Konfigurera](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [Användningsexempel](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Utfall {#fallout}
-         + [Utfallsöversikt](../analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [Konfigurera ett utfall](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [Översikt](../analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [Konfigurera](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Interdimensionellt utfall](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Använda filter i bortfallsanalys](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Använda filter](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flöde {#flow}
-         + [Flödesöversikt](../analysis-workspace/visualizations/c-flow/flow.md)
-         + [Konfigurera ett flöde](../analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [Översikt](../analysis-workspace/visualizations/c-flow/flow.md)
+         + [Konfigurera](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flerdimensionella flöden](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + Researbetsyta {#journey-canvas}
-         + [Översikt över arbetsytan Resa](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [Konfigurera en visualisering av en arbetsyta på resan](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [Felsökning av arbetsytan på resan](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [Översikt](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [Konfigurera](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+         + [Felsökning](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Yta (staplad)](../analysis-workspace/visualizations/area.md)
       + [Stapel (staplad)](../analysis-workspace/visualizations/bar.md)
       + [Punkt](../analysis-workspace/visualizations/bullet-graph.md)
@@ -168,7 +168,7 @@ ht-degree: 9%
       + [Trädkarta](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Paneler {#panels}
-      + [Paneler - översikt](../analysis-workspace/c-panels/panels.md)
+      + [Översikt](../analysis-workspace/c-panels/panels.md)
       + [Tom panel](../analysis-workspace/c-panels/blank-panel.md)
       + [Tillskrivning](../analysis-workspace/c-panels/attribution.md)
       + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
@@ -185,16 +185,16 @@ ht-degree: 9%
       + [Skapa delningsbara länkar](../analysis-workspace/curate-share/shareable-links.md)
       + [projekt med endast visning](../analysis-workspace/curate-share/view-only-projects.md)
    + Exportera {#export}
-      + [Exportera översikt](../analysis-workspace/export/export-project-overview.md)
+      + [Översikt](../analysis-workspace/export/export-project-overview.md)
       + [Ladda ned](../analysis-workspace/export/download-send.md)
       + [Skicka till andra](../analysis-workspace/export/t-schedule-report.md)
       + [Exportera till molnet](../analysis-workspace/export/export-cloud.md)
    + Avvikelseidentifiering {#anomaly-detection}
-      + [Översikt över avvikelseidentifiering](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Översikt](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Visa avvikelser i Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [Statistiska tekniker som används för avvikelseidentifiering](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + Prognos {#forecasting}
-      + [Prognosöversikt](../analysis-workspace/c-forecast/forecasting.md)
+      + [Översikt](../analysis-workspace/c-forecast/forecasting.md)
       + [Visa prognoser i Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistiska tekniker som används i prognostjänsten](../analysis-workspace/c-forecast/statistics-forecasting.md)
       + [Innehållsförteckning](../analysis-workspace/build-workspace-project/project-table-of-contents.md)

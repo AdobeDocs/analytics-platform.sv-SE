@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 057c9f4a0e8fb163bfb23cea1870f949ad4ae1c0
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,23 @@ Om du till exempel använder Person som behållare med Session som primärt elle
 
 Följande konfigurationer kan resultera i noder som visar procenttal som överskrider 100 %:
 
-* När fältet **[!UICONTROL Percentage value]** är inställt på **[!UICONTROL Percent of total]** och ett primärt mått har valts, vilket ger mindre data för startnoden än för efterföljande noder.
+* När fältet **[!UICONTROL Percentage value]** är inställt på **[!UICONTROL Percent of total]** eller **[!UICONTROL Percent of start node]** och ett primärt mått är markerat, vilket ger mindre data för startnoden än för efterföljande noder.
 
   Om du t.ex. väljer Intäkter som primär måttenhet och ingen intäkt realiseras på det primära måttet, kommer det på alla noder där intäkten realiseras att visa sig som över 100 %.
 
+## Noder som har ett högre procentvärde eller värde än tidigare noder
+
+## Noder som har ett högre procentvärde eller värde än föregående noder
+
+## Noder som kommer senare under resan har ett högre procenttal eller värde än de som kommer tidigare
+
+## En nod med ett högre procentvärde eller ett högre värde än noder som föregår noden i resan
+
+## Noder med ett högre procentvärde eller värde än tidigare noder
+
+## Noder
+
+## Ett högre procentvärde eller värde i efterföljande noder
 
 ## En resa som inte är trattformad
 

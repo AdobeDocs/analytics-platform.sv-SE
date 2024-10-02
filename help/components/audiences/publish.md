@@ -4,9 +4,9 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
@@ -126,12 +126,6 @@ Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den
 RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. <user@adobe.com> kan till exempel riktas mot alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Så här visar du Customer Journey Analytics-målgrupper i Platform:
-
->[!AVAILABILITY]
->
->De funktioner som beskrivs i följande steg är i den begränsade testfasen av releasen och är kanske inte tillgängliga än i din miljö. Om de här stegen inte matchar det du ser i din miljö ska du i stället göra så här: Gå till [!UICONTROL **Segment**] > [!UICONTROL **Skapa segment**] > fliken [!UICONTROL **Publiker**] > [!UICONTROL **CJA-målgrupper**].
->
->Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).
 
 1. Expandera [!UICONTROL **Kund**] i den vänstra panelen och välj sedan [!UICONTROL **Publiker**]. <!-- is there a folder called "Customer Journey Analytics? -->
 

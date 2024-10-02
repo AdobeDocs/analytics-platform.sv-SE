@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '6504'
+source-wordcount: '6575'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 0%
 {{release-limited-testing}}
 
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder.
+
+![Researbetsyta](assets/journey-canvas.png)
 
 ## Översikt över arbetsytan Resa
 
@@ -33,11 +35,13 @@ Se [Översikt över arbetsytan på resan](/help/analysis-workspace/visualization
 
 ## Börja bygga en visualisering av en arbetsyta i resan
 
-1. Lägg till en tom panel i projektet, markera ikonen [!UICONTROL **Visualiseringar**] i den vänstra listen och dra sedan visualiseringen [!UICONTROL **Resursytan**] till panelen.
+1. Lägg till en tom panel i ditt projekt, markera ikonen [!UICONTROL **Visualiseringar**] i den vänstra listen och dra sedan visualiseringen ![GraphPathing](/help/assets/icons/Branch3.svg) [!UICONTROL **Journey Canvas**] till panelen.
 
    eller
 
    Lägg till en visualisering av en arbetsyta på resan på något av de sätt som beskrivs i avsnittet [Lägg till visualiseringar i en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) i [Översikt över visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+
+   ![Researbetsytans konfiguration](assets/journey-canvas-configure.png)
 
 1. Ange följande grundläggande information för att konfigurera arbetsytan på resan:
 
@@ -83,9 +87,9 @@ Så här konfigurerar du inställningar för visualisering av arbetsytan på res
    | Inställning | Funktion |
    |---------|----------|
    | [!UICONTROL **Nodtyp**] | Gör att du kan konfigurera vilka nodtyper som visas i visualiseringen.<p>Om du vill dölja en nodtyp i visualiseringen markerar du (x) bredvid nodtypen eller avmarkerar den i listrutan. Om du vill visa en dold nodtyp väljer du den i listrutan. (Noder tas inte bort från resan när du döljer dem. Mer information om hur du tar bort en nod finns i [Ta bort noder](#delete-nodes).)</p><p>Det här fältet kan innehålla Journey Optimizer-nodtyper ([!UICONTROL **Läs segment**], [!UICONTROL **Slut**] o.s.v.) och komponentnodtyper ([!UICONTROL **Dimension**], [!UICONTROL **Mått**], [!UICONTROL **Filter**] och [!UICONTROL **Datumintervall**]) enligt följande: </p><ul><li>**Endast Journey Optimizer-nodtyper visas** om resan är en Journey Optimizer-resa som inte har ändrats på arbetsytan för resan med någon av följande ändringar:<ul><li>Lagt till eller tagit bort noder</li><li>Pilar som lagts till eller tagits bort</li><li>Ändrade komponenter på en nod</li></ul></li><li>**Både Journey Optimizer-nodtyper och komponentnodtyper visas** om resan är en Journey Optimizer-resa som har ändrats på arbetsytan för en resa med någon av följande ändringar:<ul><li>Lagt till eller tagit bort noder</li><li>Pilar som lagts till eller tagits bort</li><li>Ändrade komponenter på en nod</li></ul></li><li>**Endast komponentnodtyper visas** om resan inte är en Journey Optimizer-resa.</li></ul></p> |
-   | [!UICONTROL **Procentvärde**] | Det procentvärde som visas på varje nod i resan. <p>Tänk på följande när du konfigurerar procentvärdena som visas på noder under resan:</p><ul><li>Ett procentvärde visas för det primära måttet på varje nod. Ett procenttal visas också för det sekundära måttet om ett sådant har konfigurerats. (Mer information om de primära och sekundära måttinställningarna finns i [Börjar skapa en visualisering av en arbetsyta på resan](#begin-building-a-journey-canvas-visualization).)</li><li>Procentsatserna omfattar alla personer eller sessioner som ingår i datavyn inom panelens datumintervall. Om _personer_ eller _sessioner_ används beror på behållarinställningen. (Mer information om behållarinställningen finns i [Börjar skapa en visualisering av en arbetsyta på resan](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Välj bland följande alternativ:</p> <ul><li>[!UICONTROL **Procent av startnod**]: Beräknar procentsatserna som visas på varje nod i förhållande till startnoden. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde. <p>En _startnod_ är en nod som inte har några anslutna noder före.</p><p>En resa kan innehålla flera startnoder. [!UICONTROL **Procent av totalt**] används emellertid om resan innehåller två eller flera startnoder som leder till en gemensam nod. Om du vill använda [!UICONTROL **Procent av startnod**] uppdaterar du resan så att varje nod i resan kan spåras tillbaka till en enda startnod.</p></li><li>[!UICONTROL **Procent av föregående nod**]: Beräknar procentsatserna som visas på varje nod i förhållande till föregående nod. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde.</li><li>[!UICONTROL **Procent av totalt**]: Beräknar procentsatserna som visas på varje nod i förhållande till alla data i datavyn. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde.</li></ul> |
-   | [!UICONTROL **Pilinställningar**] | Pilarna som visas mellan noderna på arbetsytan kan konfigureras så att anpassade etiketter och värden visas. <p>_Etiketter_ är egna namn som visas på pilar. Endast en etikett visas på en viss pil. Etiketterna kan vara något av följande och visas i den här inställningsordningen:</p><ol><li>Ett anpassat namn som lagts till från en arbetsyta i resan (enligt beskrivningen i [Lägg till eller uppdatera en etikett på en pil](#add-or-update-a-label-on-an-arrow))</li><li>En Journey Optimizer-etikett</li><li>Journey Optimizer-villkor</li></ol><p>_Värden_ är de tal och procenttal som visas på pilar, och de anger vilka personer eller sessioner som har flyttat från en nod till nästa nod på resan. (Med andra ord, de som inte föll bort från resan i ett visst steg.) </p><p>Följande alternativ är tillgängliga för resor som inte har sitt ursprung i Journey Optimizer och för Journey Optimizer resor som inte har ändrats avsevärt på arbetsytan under resan: (Betydande ändringar är att lägga till eller ta bort noder, lägga till eller ta bort pilar eller ändra komponenterna i en nod.)</p><ul><li>[!UICONTROL **Inga etiketter**]: Inga etiketter visas på pilar i resan. </br> Det här alternativet är bara tillgängligt om resan har ändrats i </li><li>[!UICONTROL **Endast etiketter**]: Etiketter visas på pilar i resan.</li></ul><p>Följande alternativ är tillgängliga för Journey Optimizer-resor som har ändrats betydligt på arbetsytan i Resan: (Betydande ändringar innefattar att lägga till eller ta bort noder, lägga till eller ta bort pilar eller ändra komponenterna i en nod.)(**Obs!**: De här alternativen visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Inga etiketter eller värden**]: Inga etiketter eller värden visas på pilar under resan.</li><li>[!UICONTROL **Endast etiketter**]: Endast etiketter visas på pilar i resan. Värden visas inte.</li><li>[!UICONTROL **Endast värden**]: Endast värden visas på pilar i resan. Etiketter visas inte.</li><li>[!UICONTROL **Värden och etiketter**]: Både etiketter och värden visas på pilar under resan.</li></ul> |
-   | [!UICONTROL **Visa utfall**] | Utfallsdata visar en procentandel och ett antal som faller utanför varje nod på resan. Utfallsdata baseras på det mått som är associerat med resans behållarinställningar. De baseras inte på det primära eller sekundära måttet.<p>Som standard är behållaren _Person_, så måttet som används för utfallsdata är _Personer_. Om behållaren ändras till _Session_ är det mått som används för utfallsdata _Sessioner_ och så vidare.</p><p>Om till exempel _Person_ är behållarinställning visar bortfallet hur många procent och hur många personer på varje nod av resan som aldrig anlänt till någon av de närmast följande noderna. De kan ha utfört andra åtgärder på webbplatsen, men uppfyller inte kriterierna som definieras av någon av de noder som följer direkt.</p> <p>Mer information om inställningen för arbetsytebehållaren i Journey finns i [Börja skapa en visualisering av en arbetsyta i Journey](#begin-building-a-journey-canvas-visualization). |
+   | [!UICONTROL **Procentvärde**] | Det procentvärde som visas på varje nod i resan.<p>![procentvärde](assets/journey-canvas-percentage.png)</p> <p>Tänk på följande när du konfigurerar procentvärdena som visas på noder under resan:</p><ul><li>Ett procentvärde visas för det primära måttet på varje nod. Ett procenttal visas också för det sekundära måttet om ett sådant har konfigurerats. (Mer information om de primära och sekundära måttinställningarna finns i [Börjar skapa en visualisering av en arbetsyta på resan](#begin-building-a-journey-canvas-visualization).)</li><li>Procentsatserna omfattar alla personer eller sessioner som ingår i datavyn inom panelens datumintervall. Om _personer_ eller _sessioner_ används beror på behållarinställningen. (Mer information om behållarinställningen finns i [Börjar skapa en visualisering av en arbetsyta på resan](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Välj bland följande alternativ:</p> <ul><li>[!UICONTROL **Procent av startnod**]: Beräknar procentsatserna som visas på varje nod i förhållande till startnoden. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde. <p>En _startnod_ är en nod som inte har några anslutna noder före.</p><p>En resa kan innehålla flera startnoder. [!UICONTROL **Procent av totalt**] används emellertid om resan innehåller två eller flera startnoder som leder till en gemensam nod. Om du vill använda [!UICONTROL **Procent av startnod**] uppdaterar du resan så att varje nod i resan kan spåras tillbaka till en enda startnod.</p></li><li>[!UICONTROL **Procent av föregående nod**]: Beräknar procentsatserna som visas på varje nod i förhållande till föregående nod. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde.</li><li>[!UICONTROL **Procent av totalt**]: Beräknar procentsatserna som visas på varje nod i förhållande till alla data i datavyn. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde.</li></ul> |
+   | [!UICONTROL **Pilinställningar**] | Pilarna som visas mellan noderna på arbetsytan kan konfigureras så att anpassade etiketter och värden visas. <p>![pilinställningar](assets/journey-canvas-arrow-settings.png)</p><p>_Etiketter_ är egna namn som visas på pilar. Endast en etikett visas på en viss pil. Etiketterna kan vara något av följande och visas i den här inställningsordningen:</p><ol><li>Ett anpassat namn som lagts till från en arbetsyta i resan (enligt beskrivningen i [Lägg till eller uppdatera en etikett på en pil](#add-or-update-a-label-on-an-arrow))</li><li>En Journey Optimizer-etikett</li><li>Journey Optimizer-villkor</li></ol><p>_Värden_ är de tal och procenttal som visas på pilar, och de anger vilka personer eller sessioner som har flyttat från en nod till nästa nod på resan. (Med andra ord, de som inte föll bort från resan i ett visst steg.) </p><p>Följande alternativ är tillgängliga för resor som inte har sitt ursprung i Journey Optimizer och för Journey Optimizer resor som inte har ändrats avsevärt på arbetsytan under resan: (Betydande ändringar är att lägga till eller ta bort noder, lägga till eller ta bort pilar eller ändra komponenterna i en nod.)</p><ul><li>[!UICONTROL **Inga etiketter**]: Inga etiketter visas på pilar i resan. </br> Det här alternativet är bara tillgängligt om resan har ändrats i </li><li>[!UICONTROL **Endast etiketter**]: Etiketter visas på pilar i resan.</li></ul><p>Följande alternativ är tillgängliga för Journey Optimizer-resor som har ändrats betydligt på arbetsytan i Resan: (Betydande ändringar innefattar att lägga till eller ta bort noder, lägga till eller ta bort pilar eller ändra komponenterna i en nod.)(**Obs!**: De här alternativen visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Inga etiketter eller värden**]: Inga etiketter eller värden visas på pilar under resan.</li><li>[!UICONTROL **Endast etiketter**]: Endast etiketter visas på pilar i resan. Värden visas inte.</li><li>[!UICONTROL **Endast värden**]: Endast värden visas på pilar i resan. Etiketter visas inte.</li><li>[!UICONTROL **Värden och etiketter**]: Både etiketter och värden visas på pilar under resan.</li></ul> |
+   | [!UICONTROL **Visa utfall**] | Utfallsdata visar en procentandel och ett antal som faller utanför varje nod på resan. Utfallsdata baseras på det mått som är associerat med resans behållarinställningar. De baseras inte på det primära eller sekundära måttet. <p>![utfall](assets/journey-canvas-fallout.png)</p><p>Som standard är behållaren _Person_, så måttet som används för utfallsdata är _Personer_. Om behållaren ändras till _Session_ är det mått som används för utfallsdata _Sessioner_ och så vidare.</p><p>Om till exempel _Person_ är behållarinställning visar bortfallet hur många procent och hur många personer på varje nod av resan som aldrig anlänt till någon av de närmast följande noderna. De kan ha utfört andra åtgärder på webbplatsen, men uppfyller inte kriterierna som definieras av någon av de noder som följer direkt.</p> <p>Mer information om inställningen för arbetsytebehållaren i Journey finns i [Börja skapa en visualisering av en arbetsyta i Journey](#begin-building-a-journey-canvas-visualization). |
    | **Zoomkontroller** | Följande zoomkontroller finns i det övre högra hörnet av arbetsytan:<ul><li>**Zooma in** ![zooma in-ikon](assets/zoom-in-icon.png): Förstorar specifika delar av visualiseringen.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Zooma ut** ![zooma ut-ikonen](assets/zoom-out-icon.png): Minskar visualiseringen för att ge mer utrymme på arbetsytan.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Anpassa skärmen** ![Ikon för att passa skärmen](assets/fill-screen-icon.png): Justerar de aktuella zoom- och panoreringsinställningarna för att fylla skärmen med fullständig visualisering.</li></ul><p>Om du vill panorera över arbetsytan när du har zoomat in eller ut klickar du med musen och drar till önskad plats.</p> |
 
 1. Fortsätt med [Lägg till noder](#add-nodes).
@@ -284,6 +288,8 @@ Den logik som tillämpas på noder när de kombineras varierar beroende på vilk
 
 Du kan ansluta noder som redan finns på arbetsytan eller ansluta en nod när du lägger till den på arbetsytan.
 
+Du ansluter noder för att definiera resans händelsesekvens.
+
 #### Pilar mellan noder
 
 Noderna ansluts av en pil. Både pilens riktning och bredd har betydelse:
@@ -292,11 +298,13 @@ Noderna ansluts av en pil. Både pilens riktning och bredd har betydelse:
 
 * **Bredd**: Anger procentvolym från en nod till en annan
 
+  ![Pilriktning och -bredd](assets/journey-canvas-arrow-width.png)
+
 #### Logisk vid anslutning av noder
 
 När du ansluter noder på en arbetsyta i Journey ansluts de med hjälp av operatorn THEN. Detta kallas även [sekventiell filtrering](/help/components/filters/seg-sequential-build.md).
 
-Noderna är sammankopplade som en&quot;slutgiltig sökväg&quot;, vilket innebär att besökare räknas så länge de så småningom går från en nod till en annan, oavsett händelser som inträffar mellan de två noderna.
+Noderna är sammankopplade som en&quot;slutgiltig sökväg&quot;, vilket innebär att besökare räknas så länge de så småningom går från en nod till en annan, oavsett händelser som inträffar mellan de två noderna. Den tid som användarna får förflytta sig längs banan bestäms av behållarinställningen. Den kan också styras genom att [lägga till en tidsbegränsning](#add-a-time-constraint-between-nodes).
 
 Du kan visa logiken för anslutna noder genom att högerklicka på noden och sedan välja [!UICONTROL **Skapa filter från nod**]. Logiken visas i avsnittet [!UICONTROL **Definition**].
 
@@ -474,6 +482,14 @@ Tänk på följande när du använder en uppdelning:
 Du kan dra en dimension från den vänstra listen till den nod på arbetsytan där du vill tillämpa nedbrytningen.
 
 Mer information finns i [Lägg till noder](#add-nodes).
+
+#### Ta bort en nedbrytning
+
+Så här tar du bort en indelning som har tillämpats:
+
+1. Högerklicka på den nod som har nedbrytning.
+
+1. Välj **[!UICONTROL Remove breakdown]**.
 
 ### Skapa en målgrupp
 
