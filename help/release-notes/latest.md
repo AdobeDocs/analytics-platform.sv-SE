@@ -3,10 +3,10 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c403e2bbf20de3dca4440160ef3f69a9d0d60a2f
+source-git-commit: e45b57ca3ec55493c252336ac0b78fef97e03b36
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 1%
+source-wordcount: '513'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ Versionsinformationen gäller den 2 oktober 2024-22 oktober 2024. Adobe Customer
 | **Produktanvändning** | Se hur er organisation använder Customer Journey Analytics. Om du aktiverar den här funktionen skapas en datauppsättning i Adobe Experience Platform som samlar in data när någon i organisationen använder Analysis Workspace. En anslutning och en datavy skapas också automatiskt, vilket ger dig åtkomst till dimensioner som de vanligaste projekttyperna, de mest aktiva användarna och de vanligaste komponenterna som används i projekt. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) | 3 oktober 2024 | 23 oktober 2024 |
 | **Visualisering av arbetsytan på resan** | Researbetsytan är en visualisering i arbetsytan Analys som gör att du kan analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det.<p>Kunder med tillgång till Adobe Journey Optimizer kan analysera Journey Optimizer resor.<p>Mer information om arbetsytan på resan finns i [Översikt över arbetsytan på resan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas).<p>Mer information om hur du skapar en visualisering av en arbetsyta på resan finns i [Konfigurera arbetsytan på resan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas). | 2 oktober 2024 | 14 oktober 2024 |
 | **Panelfilter och kolumnfilter ingår nu när en målgrupp skapas** | När du skapar en målgrupp från en visualisering i Analysis Workspace inkluderas nu panelfilter och kolumnfilter som ytterligare kriterier. Om filtren inte behövs kan de tas bort innan målgruppen publiceras. Tidigare ignorerades alla filter som tillämpades på panelen eller på kolumnen i en visualisering i Analysis Workspace när en målgrupp skapades.<p>Mer information om hur du skapar en målgrupp från Customer Journey Analytics finns i [Skapa och publicera målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish). |  | 2 oktober 2024 |
-
+| **Resursöverföring** | Gör att du kan överföra ägarskap av komponenter som projekt, filter och beräknade värden till andra användare för att säkerställa kontinuitet och lämplig åtkomst. | Oktober 15 | Oktober 22 |
 
 ## Korrigeringar i Customer Journey Analytics
 
