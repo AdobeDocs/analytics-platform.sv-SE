@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 3b9f477001747a96359f77f2e48baf7589b7a1e4
 workflow-type: tm+mt
-source-wordcount: '6575'
+source-wordcount: '6373'
 ht-degree: 0%
 
 ---
@@ -149,10 +149,6 @@ Du kan skapa noder på följande sätt: genom att dra Workspace-komponenter frå
 
 ### Visa de översta noderna baserat på befintliga noder
 
->[!AVAILABILITY]
->
->Den här funktionen är inte tillgänglig än.
-
 Du kan automatiskt visa de översta noderna baserat på de noder som redan finns på arbetsytan. Du kan lägga till de översta noderna på arbetsytan på resan eller visa dem i ett frihandsritbord.
 
 Det här alternativet är tillgängligt för följande objekt på arbetsytan:
@@ -221,17 +217,17 @@ Du kan välja en pil och visa de övre dimensionsobjekten som finns mellan två 
 
 ### Duplicera noder
 
->[!AVAILABILITY]
->
->Den här funktionen är inte tillgänglig än.
-
 Alternativet att duplicera är tillgängligt för följande objekt på arbetsytan:
+
+* Enskilda noder
 
 * Flera noder
 
 Så här duplicerar du noder:
 
-1. Markera flera noder som du vill duplicera.
+1. Markera en eller flera noder som du vill duplicera.
+
+   Om du vill markera flera noder håller du ned Kommando (Mac) eller Ctrl (Windows).
 
 1. Högerklicka på en av de markerade noderna och välj sedan [!UICONTROL **Duplicera**].
 
@@ -263,7 +259,7 @@ Du kan göra något av följande om du vill kombinera noder på arbetsytan för 
 
 * Dra flera komponenter samtidigt från den vänstra listen till ett tomt område på arbetsytan samtidigt som du håller ned Skift.
 
-* Markera de noder du vill kombinera på arbetsytan, högerklicka på någon av de markerade noderna och välj sedan **Kombinera**.<!--Is there a limit on how many you can combine? -->
+<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
 
 #### Logisk när noder kombineras
 
@@ -304,7 +300,7 @@ Noderna ansluts av en pil. Både pilens riktning och bredd har betydelse:
 
 När du ansluter noder på en arbetsyta i Journey ansluts de med hjälp av operatorn THEN. Detta kallas även [sekventiell filtrering](/help/components/filters/seg-sequential-build.md).
 
-Noderna är sammankopplade som en&quot;slutgiltig sökväg&quot;, vilket innebär att besökare räknas så länge de så småningom går från en nod till en annan, oavsett händelser som inträffar mellan de två noderna. Den tid som användarna får förflytta sig längs banan bestäms av behållarinställningen. Den kan också styras genom att [lägga till en tidsbegränsning](#add-a-time-constraint-between-nodes).
+Noderna är sammankopplade som en&quot;slutgiltig sökväg&quot;, vilket innebär att besökare räknas så länge de så småningom går från en nod till en annan, oavsett händelser som inträffar mellan de två noderna. Den tid som användarna får förflytta sig längs banan bestäms av behållarinställningen. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
 Du kan visa logiken för anslutna noder genom att högerklicka på noden och sedan välja [!UICONTROL **Skapa filter från nod**]. Logiken visas i avsnittet [!UICONTROL **Definition**].
 
@@ -328,23 +324,23 @@ När du lägger till en nod på arbetsytan kan du placera den mellan två anslut
 
 Mer information finns i [Lägg till noder](#add-nodes).
 
-### Lägga till en tidsbegränsning mellan noder
+<!--
+
+### Add a time constraint between nodes
 
 >[!AVAILABILITY]
 >
->Den här funktionen är inte tillgänglig än.
+>This feature is not yet available.
 
-Du kan ange en tidsbegränsning mellan noder. När en tidsbegränsning finns på plats anses människor ha lämnat resan om de följer den definierade resan men tar längre tid än den tilldelade tidsperioden att förflytta sig mellan noderna.
+You can set a time constraint between nodes. When a time constraint is in place, people are considered to have fallen out of the journey if they follow the defined journey but take longer than the allotted time period to move between the nodes.
 
-Alternativet att lägga till en tidsbegränsning är tillgängligt för följande objekt på arbetsytan:
+The option to add a time constraint is available for the following objects on the canvas:
 
-* Pilen mellan noder
+* The arrow between nodes
 
-Så här lägger du till en tidsbegränsning:
+To add a time constraint:
 
-1. Högerklicka på pilen mellan två noder i en visualisering av arbetsytan på resan och välj sedan [!UICONTROL **Lägg till tidsbegränsning**].
-
-<!-- 
+1. In a Journey canvas visualization, right-click the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
 from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
 1. Choose from the following options: 
@@ -353,35 +349,35 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ## Hantera noder eller pilar
 
-### Ändra färgen på en nod eller pil
+<!--
+
+### Change the color of a node or arrow
 
 >[!AVAILABILITY]
 >
->Den här funktionen är inte tillgänglig än.
+>This feature is not yet available.
 
-Du kan anpassa en resa visuellt genom att ändra färgen på en nod eller pil på arbetsytan. Du kan till exempel justera färger för att indikera en önskvärd eller oönskad händelse.
+You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
 
-Alternativet att ändra färgen är tillgängligt för följande objekt på arbetsytan:
+The option to change the color is available for the following objects on the canvas:
 
-* Enskilda noder
+* Individual nodes
 
-* Pilen mellan noder
+* The arrow between nodes
 
-Så här ändrar du färg på en nod eller pil:
+To change the color of a node or arrow:
 
-1. Högerklicka på noden eller pilen vars färg du vill ändra i en visualisering av arbetsytan på resan.
+1. In a Journey canvas visualization, right-click the node or arrow whose color you want to change.
 
-1. Välj [!UICONTROL **Ändra färg**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
+1. Select [!UICONTROL **Change color**]. 
 
-1. Välj önskad färg.
+1. Select the desired color. 
 
-   Följande färger är tillgängliga: <!--look into this interaction and color list-->
+   The following colors are available: 
+
+-->
 
 ### Byta namn på en nod
-
->[!AVAILABILITY]
->
->Den här funktionen är inte tillgänglig än.
 
 När du drar en komponent till en visualisering av en arbetsyta på resan skapas en nod med samma namn som komponentnamnet. Du kan byta namn på noden så att den bättre motsvarar det steg i resan som noden representerar.
 
@@ -453,15 +449,13 @@ Tänk på följande när du använder en uppdelning:
 
 #### Använda en uppdelning på en eller flera noder eller pilar
 
->[!AVAILABILITY]
->
->Den här funktionen är inte tillgänglig än.
-
 1. I en visualisering av arbetsytan på resan väljer du en eller flera noder där du vill använda en uppdelning. Högerklicka sedan på en av de markerade noderna.
 
    eller
 
    I en visualisering av en arbetsyta på resan markerar du en eller flera pilar mellan två noder där du vill tillämpa nedbrytningen. Högerklicka sedan på en av de markerade pilarna.
+
+   Om du vill markera flera noder eller pilar håller du ned Kommando (Mac) eller Ctrl (Windows).
 
 1. Välj [!UICONTROL **Uppdelning**].
 
@@ -513,6 +507,8 @@ Så här skapar du en publik:
 
    I en visualisering av en arbetsyta på resan markerar du en eller flera pilar mellan två noder där du vill skapa en målgrupp. Högerklicka sedan på en av de markerade pilarna.
 
+   Om du vill markera flera noder eller pilar håller du ned Kommando (Mac) eller Ctrl (Windows).
+
    >[!NOTE]
    >
    >Målgrupper kan inte innehålla beräknade värden eller mätvärden som är baserade på en [sammanfattningsdatauppsättning](/help/data-views/summary-data.md). Om du försöker skapa en målgrupp från ett område på en arbetsyta som innehåller ett beräknat mått eller ett mätvärde som baseras på en sammanfattningsdatauppsättning, kommer det beräknade måttet inte att inkluderas i målgruppsdefinitionen.
@@ -522,10 +518,6 @@ Så här skapar du en publik:
 1. Fortsätt skapa och publicera målgruppen enligt beskrivningen i [Skapa och publicera målgrupper](/help/components/audiences/publish.md).
 
 ### Visa trenddata
-
->[!AVAILABILITY]
->
->Den här funktionen är inte tillgänglig än.
 
 Du kan visa trenddata i ett linjediagram för objekt på arbetsytan på resan. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
@@ -546,6 +538,8 @@ Så här visar du trenddata:
    eller
 
    I en visualisering av en arbetsyta på resan markerar du en eller flera pilar mellan två noder som du vill visa trenddata för och högerklickar sedan på en av de markerade pilarna.
+
+   Om du vill markera flera noder eller pilar håller du ned Kommando (Mac) eller Ctrl (Windows).
 
 1. Välj [!UICONTROL **Trend**].
 
