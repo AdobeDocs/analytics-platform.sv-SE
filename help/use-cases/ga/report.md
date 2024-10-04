@@ -1,18 +1,18 @@
 ---
-title: Rapport om Google Analytics data i Customer Journey Analytics
+title: Rapport om Google Analytics data
 description: Visar användbara rapporter om Google Analytics data i Customer Journey Analytics
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
 
-# Rapport om Google Analytics data i Customer Journey Analytics
+# Rapport om Google Analytics data
 
 När du har data tillgängliga i Customer Journey Analytics ger följande exempel användbara scenarier för rapportering av dessa data.
 

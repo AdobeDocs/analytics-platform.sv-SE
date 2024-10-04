@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '964'
 ht-degree: 10%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 10%
    + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
    + Infoga och använd snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Adobe Experience Platform Edge Network {#edge-network}
+      + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
          + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
          + [Server-API](../data-ingestion/serverapi.md)
@@ -115,7 +115,7 @@ ht-degree: 10%
       + [Öppna projekt](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
       + Mappar i Workspace {#workspace-folders}
-         + [Om mappar i Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Om mappar](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Hantera mappar](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [Lägg till eller flytta projekt till mappar](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -132,7 +132,7 @@ ht-degree: 10%
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
-            + [Dynamiska jämfört med statiska artiklar](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+            + [Dynamiska och statiska objekt](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrera och ordna tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Workspace summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
@@ -175,7 +175,7 @@ ht-degree: 10%
       + [Frihandsfigur](../analysis-workspace/c-panels/freeform-panel.md)
       + [Genomsnittlig minutmålgrupp för media](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Medievisningsprogram för samtidig användning](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Medieuppspelningstid spenderad](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Medieuppspelningstid](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nästa eller föregående objekt](../analysis-workspace/c-panels/next-previous.md)
       + [Snabba insikter](../analysis-workspace/c-panels/quickinsight.md)
    + Kuratera, dela och schemalägg projekt {#curate-share}
@@ -191,20 +191,20 @@ ht-degree: 10%
       + [Exportera till molnet](../analysis-workspace/export/export-cloud.md)
    + Avvikelseidentifiering {#anomaly-detection}
       + [Översikt](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-      + [Visa avvikelser i Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
-      + [Statistiska tekniker som används för avvikelseidentifiering](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+      + [Visa avvikelser](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Statistisk teknik](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + Prognos {#forecasting}
       + [Översikt](../analysis-workspace/c-forecast/forecasting.md)
-      + [Visa prognoser i Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
-      + [Statistiska tekniker som används i prognostjänsten](../analysis-workspace/c-forecast/statistics-forecasting.md)
-      + [Innehållsförteckning](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Visa prognoser](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [Statistisk teknik](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + [Innehållsförteckning](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
-   + Vanliga frågor om Workspace {#workspace-faq}
+   + Vanliga frågor om Workspace och mer {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)
       + [Felmeddelanden](../analysis-workspace/workspace-faq/error-messages.md)
-      + [Analysis Workspace begränsningar](../analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Begränsningar](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Tillgänglighet i Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Tillgänglighet](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Kontrollpaneler för analyser {#cja-dashboards}
    + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
@@ -360,10 +360,10 @@ ht-degree: 10%
 + Användningsexempel {#cja-usecases}
    + [Användningsexempel i Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Google Analytics data {#ga}
-      + [Migrera data från Google Analytics till Customer Journey Analytics - översikt](../use-cases/ga/overview.md)
-      + [Infoga Google Analytics historiska data i plattformen](../use-cases/ga/backfill.md)
-      + [Konfigurera strömmande Google Analytics-data i plattformen](../use-cases/ga/streaming.md)
-      + [Rapport om Google Analytics data i Customer Journey Analytics](../use-cases/ga/report.md)
+      + [Migrera data från Google Analytics](../use-cases/ga/overview.md)
+      + [Ingest Google Analytics historiska data](../use-cases/ga/backfill.md)
+      + [Konfigurera Google Analytics-data för direktuppspelning](../use-cases/ga/streaming.md)
+      + [Rapport om Google Analytics data](../use-cases/ga/report.md)
    + Inläsning av data {#data-ingestion}
       + [Importera och använda data från Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Engagera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -390,14 +390,14 @@ ht-degree: 10%
    + Stitching {#stitching}
       + [Delade enheter](/help/use-cases/stitching/shared-devices.md)
    + Härledda fält {#derived-fields}
-      + [Använd härledda fält för att rapportera mål](../use-cases/goals-using-derived-fields.md)
+      + [Rapport om mål](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
 
 + Felsökning av {#troubleshooting}
-   + [Jämför dina Adobe Analytics-data med Customer Journey Analytics](../troubleshooting/compare.md)
-   + [Överensstämmelse i mätvärden och antalet målgruppsmedlemskap mellan CDP och Customer Journey Analytics i realtid](../troubleshooting/consistency-rcdp-cja.md)
+   + [Jämför data](../troubleshooting/compare.md)
+   + [Överensstämmelse mellan mätvärden och målgrupper](../troubleshooting/consistency-rcdp-cja.md)
    + [Brist på behörigheter](../troubleshooting/lack-of-permissions.md)
 
 + Tech notes {#technotes}
@@ -408,7 +408,7 @@ ht-degree: 10%
    + [Ordlista](../technotes/glossary.md)
    + [Guardrails](../technotes/guardrails.md)
    + [IP-adresser](../technotes/ip-addresses.md)
-   + [Optimera Customer Journey Analytics prestanda](../technotes/optimizing-performance.md)
+   + [Optimera prestanda](../technotes/optimizing-performance.md)
    + [Visa och hantera användning](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

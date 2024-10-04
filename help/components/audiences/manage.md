@@ -4,9 +4,9 @@ description: Lär dig hantera målgrupper i Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,8 @@ Genom att hantera tidigare skapade målgrupper kan ni:
 * Se om målgrupperna i Customer Journey Analytics aktivt **används av kundplattformen för realtid**. Eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
 
 Om du har [åtkomst till målgruppsvyn](/help/technotes/access-control.md#user-level-access) kan du visa målgrupper. Om du har [åtkomst för att skapa ](/help/technotes/access-control.md#user-level-access) målgrupper kan du redigera och ta bort målgrupper. I [publiklistan](#audiences-list) visas målgrupperna.
+
+![Målgruppshanteraren](assets/audiences-manager.png)
 
 ## Publiklista
 

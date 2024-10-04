@@ -4,9 +4,9 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '1852'
+source-wordcount: '1865'
 ht-degree: 1%
 
 ---
@@ -147,25 +147,25 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 ## Använda Customer Journey Analytics-målgrupper i Experience Platform {#audiences-aep}
 
-Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till kundprofilen i realtid (RTCP). Customer Journey Analytics skickar målgruppen till Experience Platform med den primära identitetsuppsättningen, enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
+Customer Journey Analytics tar alla namnutrymmes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till Real-time Customer Data Platform. Customer Journey Analytics skickar målgruppen till Experience Platform med den primära identitetsuppsättningen, enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
 
-RTCP undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. <user@adobe.com> kan till exempel riktas mot alla enheter och kanaler. Om ingen profil hittas skapas en ny.
+Real-time Customer Data Platform undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. <user@adobe.com> kan till exempel riktas mot alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
 Så här visar du Customer Journey Analytics-målgrupper i Platform:
 
-1. Expandera [!UICONTROL **Kund**] i den vänstra panelen och välj sedan [!UICONTROL **Publiker**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Expandera **[!UICONTROL Customer]** i den vänstra panelen och välj sedan **[!UICONTROL Audiences]**. <!-- is there a folder called "Customer Journey Analytics? -->
 
-1. Välj fliken [!UICONTROL **Bläddra**].
-
-   ![Publikalternativ i den vänstra panelen](assets/audiences-aep.png)
+1. Välj fliken **[!UICONTROL Browse]**.
 
 1. Gör något av följande för att hitta den publik du har publicerat från Customer Journey Analytics:
 
-   * Sortera tabellen efter kolumnen [!UICONTROL **Ursprung**] för att visa målgrupper som visar [!UICONTROL **Customer Journey Analytics**] som ursprung.
+   ![Publikalternativ i den vänstra panelen](assets/aep-audiences.png)
 
-   * Markera filterikonen.
+   * Sortera tabellen efter kolumnen **[!UICONTROL Origin]** för att visa målgrupper som visar [!UICONTROL **Customer Journey Analytics**] som ursprung.
 
-   * Använd sökfältet.
+   * Filtrera ![Filter](/help/assets/icons/Filter.svg) på **[!UICONTROL Origin]** och välj **[!UICONTROL Customer Journey Analytics]**.
+
+   * Använd sökfältet ![Sök](/help/assets/icons/Search.svg).
 
 Mer information om hur du använder publiker i plattformen finns i avsnittet [Publiker](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
 
@@ -186,7 +186,7 @@ När en Customer Journey Analytics-publik tas bort visas den inte längre i anv�
 
 +++
 
-+++**Om en motsvarande profil inte finns i RTCDP, skapas en ny profil?**
++++**Om det inte finns någon motsvarande profil i Real-time Customer Data Platform, skapas en ny profil?**
 
 Ja, det kommer det.
 
@@ -194,7 +194,7 @@ Ja, det kommer det.
 
 +++**Skickar Customer Journey Analytics målgruppsdata som pipeline-händelser eller som en platt fil som också skickas till datasjön?**
 
-Customer Journey Analytics strömmar data till RTCP via rörledning, och dessa data samlas också in i en systemdatauppsättning i datasjön.
+Customer Journey Analytics strömmar data till Real-time Customer Data Platform via rörledning, och dessa data samlas också in i en systemdatauppsättning i sjön.
 
 +++
 
@@ -210,9 +210,9 @@ Se ovan. Endast en identitet per Customer Journey Analytics skickas.
 
 +++
 
-+++**Bearbetar RTCP även Customer Journey Analytics-meddelanden? Kan Customer Journey Analytics lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?**
++++**Bearbetar Real-time Customer Data Platform även Customer Journey Analytics? Kan Customer Journey Analytics lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?**
 
-Nej. Endast en identitet per person skickas, så det skulle inte finnas några diagramkanter för RTCP att använda.
+Nej. Endast en identitet per person skickas, så det finns inga diagramkanter som Real-time Customer Data Platform kan använda.
 
 +++
 

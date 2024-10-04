@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 1ded359997c4915f1b5ea6237aceb4d3d922b3a9
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
 
-# Importera data via Adobe Experience Platform Web SDK
+# Importera data via Web SDK
 
 Den här snabbstartsguiden förklarar hur du kan importera data för webbplatsspårning direkt till Adobe Experience Platform med Adobe Experience Platform Web SDK och Edge Network och sedan använda dessa data i Customer Journey Analytics.
 

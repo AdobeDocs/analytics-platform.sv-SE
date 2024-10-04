@@ -1,19 +1,19 @@
 ---
-title: Ingest Google Analytics history data into Adobe Experience Platform
+title: Ingest Google Analytics historiska data
 description: Beskriver hur du använder Adobe Customer Journey Analytics för att importera Google Analytics-data till Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
 
-# Ingest Google Analytics history data into Adobe Experience Platform
+# Ingest Google Analytics historiska data
 
 På den här sidan fokuseras på hur du importerar historiska data för Google Analytics till Adobe Experience Platform som en datauppsättning, vilket gör att du kan referera till den datauppsättningen i en datavy i Customer Journey Analytics. Du kan kombinera stegen på den här sidan med [Konfigurera en Google Analytics-implementering](streaming.md) som genererar en återkommande datauppsättning. Kombinera den här historiska datauppsättningen med den aktuella implementeringens datauppsättning för att få en smidig vy över data i Customer Journey Analytics med både aktuella och efterfyllda data.
 

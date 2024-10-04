@@ -1,17 +1,17 @@
 ---
-title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
+title: Dynamiska jämfört med statiska dimensionsobjekt
 description: Så här interagerar du med dynamiska och statiska dimensionsobjekt i tabeller
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
-# Dynamiska och statiska dimensionsobjekt i frihandstabeller
+# Dynamiska och statiska dimensionsobjekt
 
 I frihandstabeller kan raderna och kolumnerna innehålla olika komponentvärden. Dessa värden kan vara dynamiska (ändras över tid) eller statiska (ändras inte över tid), beroende på vilken analys du vill bygga.
 

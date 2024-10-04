@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3085'
 ht-degree: 0%
 
 ---
 
-# Importera data via Adobe Experience Platform Mobile SDK
+# Importera data via Mobile SDK
 
 Den här snabbstartsguiden förklarar hur du kan importera spårningsdata för mobilappar direkt till Adobe Experience Platform med Adobe Experience Platform Mobile SDK och Edge Network. Använd sedan dessa data i Customer Journey Analytics.
 

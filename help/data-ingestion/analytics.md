@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
 
-# Importera och använda data från traditionella Adobe Analytics
+# Importera och använda data från Adobe Analytics
 
 Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in av Adobe Analytics i Customer Journey Analytics.
 

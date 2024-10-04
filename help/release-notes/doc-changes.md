@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 51d4f05d7d28befed0a5c0d1b47b53c2e045f7f7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '4070'
+source-wordcount: '4074'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Oktober 2024** | |
-| Workspace och komponenter | Uppdaterade dokumentationen om Workspace-projekt (projekt, visualiseringar och paneler) och komponenter (anteckningar, dimensioner, (beräknade) mått, filter, datumintervall och aviseringar). |
+| Workspace och komponenter | Uppdaterade dokumentationen om Analysis Workspace-projekt (projekt, visualiseringar och paneler) och komponenter (anteckningar, dimensioner, (beräknade) mått, filter, datumintervall, aviseringar, schemalagda projekt och målgrupper). |
 | **September 2024** | |
 | Uppdatering av sammanfattningsdata | Sammanfattningsdataartiklar med information om hur [sökdata](/help/data-views/summary-data.md#lookup-data) används korrekt vid rapportering av sammanfattningsdata har uppdaterats. |
 | Uppdatering för BI-tillägg | [standardvärden och begränsning](/help/data-views/bi-extension.md#defaults-and-limitations) har lagts till i dokumentationen för BI-tillägget. |

@@ -1,17 +1,17 @@
 ---
-title: Konfigurera strömmande Google Analytics-data i Adobe Experience Platform
+title: Konfigurera Google Analytics-data för direktuppspelning
 description: Lär dig hur du konfigurerar implementeringen för att skicka ett Google-datalager till Adobe Experience Platform
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Konfigurera strömmande Google Analytics-data i Adobe Experience Platform
+# Konfigurera Google Analytics-data för direktuppspelning
 
 På den här sidan fokuseras på hur du importerar data i Google Analytics live till Adobe Experience Platform, så att du kan referera till den datauppsättningen i en datavy i Customer Journey Analytics. Du kan kombinera stegen på den här sidan med [Ingest Google Analytics-historiska data till Adobe Experience Platform](backfill.md), som genererar en datamängd som innehåller historiska data. Kombinera en strömmande datauppsättning med en datauppsättning för bakgrundsfyllning för att få en sömlös vy över tidigare och nuvarande data i Customer Journey Analytics.
 

@@ -5,14 +5,14 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
-# Använd mått för marknadsföringskanaler i Adobe Experience Platform
+# Använd mått för marknadsföringskanal
 
 Om din organisation använder [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) för att hämta rapportsvitsdata till Customer Journey Analytics kan du konfigurera en anslutning i Customer Journey Analytics för att rapportera om dimensionerna för marknadsföringskanalen.
 

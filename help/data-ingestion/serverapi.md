@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2176'
 ht-degree: 0%
 
 ---
 
-# Infoga data via Adobe Experience Platform Edge Network Server-API
+# Infoga data via Edge Network Server-API
 
 Den här snabbstartsguiden förklarar hur du kan importera spårningsdata från enheter som IoT-enheter, digitalboxar, spelkonsoler och datorprogram direkt till Adobe Experience Platform med Adobe Experience Platform Edge Network Server API och Edge Network. Använd sedan dessa data i Customer Journey Analytics.
 
