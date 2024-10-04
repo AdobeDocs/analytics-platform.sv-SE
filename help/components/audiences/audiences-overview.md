@@ -4,14 +4,14 @@ description: Läs mer om begreppet målgruppspublicering i Customer Journey Anal
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 4d71aaaaa0ac0162588dd6767e6c6209676dfc18
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# Customer Journey Analytics Audience publishing overview
+# Översikt över publikpublicering
 
 Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) i Adobe Experience Platform för kundanpassning och personalisering.
 
@@ -31,13 +31,13 @@ De målgrupper du skapar i Customer Journey Analytics behöver inte baseras på 
 
 **Filter**: En uppsättning regler som, när de utvärderas över en datauppsättning för en tidsperiod, skapar en delmängd av data. Ett filter kan användas för att skapa en målgrupp i kombination med andra stödtjänster. Filter definieras och bevaras i Customer Journey Analytics.
 
-**Filter** kontra **Segment**: Customer Journey Analytics använder inte begreppet&quot;segment&quot;, utan i stället&quot;filter&quot;. Båda är en uppsättning regler som kan innehålla liknande logik, men de ger olika utdata. Ett filter används för att begränsa en datauppsättning för analysändamål. Ett segment används för att skapa en lista med identiteter som kan användas för aktivering. Segment producerar målgrupper i kundprofilen i realtid, men inte filter (enbart). Customer Journey Analytics Audience Publishing är den process genom vilken vi använder ett Customer Journey Analytics-filter för att skapa en målgrupp som kan konsumeras av kundprofilen i realtid.
+**Filter** kontra **segment**: Customer Journey Analytics använder inte konceptet *segment* - i stället används *filter*. Båda är en uppsättning regler som kan innehålla liknande logik, men de ger olika utdata. Ett filter används för att begränsa en datauppsättning för analysändamål. Ett segment används för att skapa en lista med identiteter som kan användas för aktivering. Segment producerar målgrupper i kundprofilen i realtid, men inte filter (enbart). Customer Journey Analytics Audience Publishing är den process genom vilken vi använder ett Customer Journey Analytics-filter för att skapa en målgrupp som kan konsumeras av kundprofilen i realtid.
 
 ## Behörigheter
 
 * Administratörer får automatiskt behörighet **[!UICONTROL Audience Publishing]** i Adobe Admin Console.
 
-* Administratörer kan ge behörighet till enskilda användare.
+* Administratörer och produktprofiladministratörer kan ge enskilda användare behörighet att **[!UICONTROL Audience Creation]** och **[!UICONTROL Audience View]**. Mer information finns i [Åtkomstkontroll på användarnivå](/help/technotes/access-control.md#user-level-access).
 
 * Administratörer behöver även behörigheten **[!UICONTROL Manage Profiles]** i Adobe Experience Platform.
 

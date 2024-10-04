@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -117,6 +117,7 @@ Fliken **[!UICONTROL Permissions]** ingår i varje produktprofil i [Admin Consol
 | [!UICONTROL Reporting Tools] | [!UICONTROL Filter Creation] | Låt användarna skapa [filter](/help/components/filters/filters-overview.md). Användare kan tagga, dela, ta bort, byta namn på, godkänna, inte godkänna enbart de filter de skapar eller de filter som delas med dem. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Ge användarna åtkomst till fliken [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Låt användarna skapa [anteckningar](/help/components/annotations/overview.md). Användare kan endast tagga, dela, ta bort och byta namn på de anteckningar de skapar eller anteckningar som delas med dem. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Låt användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Låt användare skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audit Logs Access] | Tvinga behörighetskontrollen för användargränssnittet för [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) och granskningsloggarna. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |

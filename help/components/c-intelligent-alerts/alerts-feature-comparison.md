@@ -3,9 +3,9 @@ description: Läs om hur varningar skiljer sig i Customer Journey Analytics frå
 title: Funktionsjämförelse för aviseringar Customer Journey Analytics och Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -56,9 +56,8 @@ I Adobe Analytics finns följande alternativ:
 
 * Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
 
-* Öppna ett projekt i Analysis Workspace och använd sedan följande kortkommando:
+* Öppna ett projekt i Analysis Workspace och använd sedan följande kortkommando: **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows) eller**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS).
 
-  `ctrl (or cmd) + shift + a`
 
 
 
