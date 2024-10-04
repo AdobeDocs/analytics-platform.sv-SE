@@ -4,7 +4,7 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_venn_button"
 >title="Venn"
->abstract="Skapar en visualisering av venndiagram för att snabbt jämföra visuellt två element och storleken på deras överlappning."
+>abstract="Skapa en visualisering av venndiagram för att snabbt jämföra visuellt två element och storleken på deras överlappning."
 
 <!-- markdownlint-enable MD034 -->
 

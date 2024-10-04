@@ -4,10 +4,10 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 905d8e0bfe2e0dbc9c6a03d9eb9a6efd4926fbbf
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 0%
+source-wordcount: '1852'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_refreshfrequency"
 >title="Uppdateringsfrekvens"
->abstract="Se hur ofta en målgrupps medlemskap kommer att utvärderas på nytt.<br/>En gång utvärderas bara en målgrupp."
+>abstract="Se hur ofta en målgrupps medlemskap omprövas.<br/>En gång utvärderas bara en målgrupp."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,74 +31,102 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
-I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) i Adobe Experience Platform för kundanpassning och personalisering.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_refreshlookbackwindow"
+>title="Uppdatera uppslagsfönstret"
+>abstract="Definiera antalet dagar från idag som en målgrupp utvärderas från."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_audiencesizelimit"
+>title="Storleksgräns för målgrupp"
+>abstract="Målgrupperna får inte vara större än 20 miljoner medlemmar."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_audiences_namespacesincluded"
+>title="Namnutrymmen ingår"
+>abstract="Identiteterna i den här målgruppen består av namnutrymmena nedan."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+
+I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Adobe Experience Platform för kundanpassning och personalisering.
 
 Läs den här [översikten](/help/components/audiences/audiences-overview.md) om du vill bekanta dig med konceptet Customer Journey Analytics målgrupper.
 
 ## Skapa och publicera en målgrupp {#create}
 
-1. Gör något av följande för att börja skapa och publicera en målgrupp:
+1. Gör något av följande om du vill skapa och publicera en publik:
 
    | Skapandemetod | Information |
    | --- | --- |
-   | Från huvudmenyn **[!UICONTROL Components]>[!UICONTROL Audiences]** | Sidan Audiences Manager öppnas. Klicka på **[!UICONTROL Create audience]** så öppnas [!UICONTROL Audience builder]. |
-   | Från en visualisering i Analysis Workspace | Många visualiseringar i Analysis Workspace gör att du kan skapa en målgrupp genom att högerklicka. Du kan till exempel högerklicka på ett objekt i en frihandstabell eller högerklicka på en nod på arbetsytan för resan och sedan välja **[!UICONTROL Create audience]**. <p>Om du använder den här metoden fylls filtret i automatiskt med den dimension eller dimensionspost som du valde i tabellen.</p><p>Med följande visualiseringar kan du skapa en målgrupp med hjälp av högerklicksmenyn:</p><ul><li>Kohort</li><li>Utfall</li><li>Flöde</li><li>Frihandsregister</li><li>Reseduk</li><li>Venn</li></ul><p>**Obs!** Målgrupper kan inte innehålla beräknade värden. Om du försöker skapa en målgrupp som innehåller ett beräknat mätvärde inkluderas inte det beräknade måttet i målgruppsdefinitionen.</p> |
-   | Från gränssnittet för att skapa/redigera filter | Markera rutan **[!UICONTROL Create an audience from this filter]**. Om du använder den här metoden fylls filtret i automatiskt. |
+   | Från gränssnittet **[!UICONTROL Audiences]**. | Välj **[!UICONTROL Components]** > **[!UICONTROL Audiences]** på Customer Journey Analytics-huvudmenyn. Gränssnittet Publiker visas. Välj **[!UICONTROL Create audience]** och [!UICONTROL Audience builder] öppnas. |
+   | Från en visualisering i Analysis Workspace | Många visualiseringar i Analysis Workspace gör att du kan skapa en målgrupp med hjälp av snabbmenyn. Du kan till exempel välja **[!UICONTROL Create audience]** på snabbmenyn för ett objekt i en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en nod i [Researbetsytan](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>När du använder den här metoden fylls filtret i Audience Builder i automatiskt med den dimension eller det dimensionsobjekt som du valde.</p><p>Med följande visualiseringar kan du skapa en målgrupp med hjälp av högerklicksmenyn:</p><ul><li>[Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Obs!** Målgrupper kan inte innehålla beräknade värden. Om du försöker skapa en målgrupp som innehåller ett beräknat mått inkluderas inte det beräknade måttet i målgruppsdefinitionen.</p> |
+   | Från gränssnittet för att skapa/redigera filter | Markera rutan **[!UICONTROL Create an audience from this filter]**. Om du använder den här metoden fylls filtret i automatiskt. Mer information finns i [Skapa filter](/help/components/filters/create-filters.md). |
 
    {style="table-layout:auto"}
 
-1. Bygg publiken.
+1. Bygg målgruppen med [Audience Builder](#audience-builder).
 
-   Konfigurera de här inställningarna innan du kan publicera målgruppen.
+1. Tolka data med panelen [Förhandsgranska datum](#data-preview).
 
-   ![Skärmbild av en målgrupp som visar inställningar som beskrivs i nästa avsnitt.](assets/create-audience.png)
+1. Välj **[!UICONTROL [!UICONTROL View sample IDs]]** om du vill visa ett exempel på ID:n i den här målgruppen. I dialogrutan **[!UICONTROL Sample IDs]** kan du använda ![ Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter exempel-ID:n*] för att söka efter exempel-ID:n.
 
-   | Inställning | Beskrivning |
-   | --- | --- |
-   | [!UICONTROL Name] | Namnet på publiken. |
-   | [!UICONTROL Tags] | Alla taggar som du vill ska tilldelas till målgruppen för organisatoriska ändamål. Du kan använda en befintlig tagg eller ange en ny. |
-   | [!UICONTROL Description] | Lägg till en bra beskrivning av målgruppen för att skilja den från andra. |
-   | [!UICONTROL Refresh frequency] | Hur ofta du vill uppdatera publiken.<ul><li>Du kan välja att skapa en enda målgrupp (standard) som inte behöver uppdateras. Detta kan till exempel vara användbart för specifika engångskampanjer.</li><li>Du kan välja andra uppdateringsintervall. För 4-timmars uppdateringsfrekvensen finns det en gräns på 75 till 150 målgrupper som uppdateras beroende på ditt Customer Journey Analytics-berättigande.</li></ul> |
-   | Utgångsdatum | När publiken slutar uppdatera. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan målgruppen förfaller. |
-   | Uppdatera uppslagsfönstret | Anger hur långt tillbaka i datafönstret du vill gå när du skapar den här målgruppen. Max 90 dagar. |
-   | [!UICONTROL One-time date range] | Datumintervall när du vill att en engångspublik ska publiceras. |
-   | [!UICONTROL Filter] | Filter är huvudindata för publiken. Du kan lägga till upp till 20 filter. Dessa filter kan kopplas till operatorerna `And` eller `Or`.<p>När du skapar en målgrupp från en visualisering i Analysis Workspace (till exempel en frihandsritabell eller en arbetsyta) bevaras eventuella filter som tillämpas på panelen eller på kolumnen. Du kan ta bort alla filter som tillämpas automatiskt.</p> |
-   | [!UICONTROL View sample IDs] | Ett exempel på ID:n i den här målgruppen. Använd sökfältet för att söka efter exempel-ID:n. |
+1. Kontrollera målgruppskonfigurationen och välj **[!UICONTROL Publish]**.
+Du får ett bekräftelsemeddelande om att publiken publiceras. Det tar bara en minut eller två att publicera publikationen i Experience Platform.
 
-   {style="table-layout:auto"}
+1. Välj **[!UICONTROL View audience in AEP]** i samma meddelande så dirigeras du till [segmentgränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview) i Adobe Experience Platform. Mer information finns nedan.
 
-1. Tolka förhandsgranskningen av data.
+## Audience Builder
 
-   Publiken förhandsvisas i den högra panelen. Här kan ni göra en sammanfattande analys av den målgrupp ni har skapat.
+Konfigurera de här inställningarna för att definiera eller uppdatera målgruppen.
 
-   ![Skärmbild av förhandsgranskningen av data som visar en sammanfattad analys av målgruppen.](assets/data-preview.png)
+![Skärmbild av en målgrupp som visar inställningar som beskrivs i nästa avsnitt.](assets/create-audience.png)
 
-   | Förhandsvisningsinställning | Beskrivning |
-   | --- | --- |
-   | [!UICONTROL Data preview]-fönstret | Datumintervallet för målgruppen. |
-   | [!UICONTROL Total people] | Ett summerat antal av det totala antalet personer i den här publiken. Den kan gå så högt som 20 miljoner människor. Om er målgrupp överstiger 20 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera den. |
-   | [!UICONTROL Audience size limit] | Visar hur långt från gränsen på 20 miljoner som den här målgruppen är. |
-   | [!UICONTROL Estimated audience return] | Den här inställningen är användbar för återmarknadsföring av kunder i den här målgruppen som kommer tillbaka till din webbplats, mobilapp eller någon annan kanal (med andra ord som visas i den här datauppsättningen igen). <p>Här kan du välja tidsram (nästa 7 dag, nästa 2 veckor, nästa månad) för det uppskattade antalet kunder som kan komma att returnera. |
-   | [!UICONTROL Estimated to return] | Numret ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde i listrutan. Vi tittar på den historiska bortfallsfrekvensen för den här publiken för att förutse detta antal. |
-   | [!UICONTROL Preview metrics] | Med den här inställningen kan du titta på specifika mätvärden för att se om den här målgruppen bidrar med ett oproportionerligt belopp till det här mätvärdet, till exempel [!UICONTROL Revenue] eller [!UICONTROL Average time on site]. Det ger dig det sammanlagda antalet mätvärden, liksom procentandelen av det totala antalet. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
-   | [!UICONTROL Namespaces included] | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
-   | [!UICONTROL Sandbox] | Den [Experience Platform-sandlåda](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) som den här publiken finns i. När du publicerar den här målgruppen på Platform kan du bara arbeta med den inom gränserna för den här sandlådan. |
+| Inställning | Beskrivning |
+| --- | --- |
+| ![Data](/help/assets/icons/Data.svg) | Välj en datavy som ska användas för att skapa målgrupper. |
+| **[!UICONTROL Name]** | Namnet på publiken. Exempel: `Really Interested in Potential Car Buyers` |
+| **[!UICONTROL Tags]** | Alla taggar som du vill tilldela målgruppen för organisatoriska ändamål. Du kan markera en eller flera befintliga taggar eller ange en ny. |
+| **[!UICONTROL Description]** | En beskrivning av målgruppen, för att skilja den från andra. Exempel: `Build an audience of really interested potential car buyers` |
+| **[!UICONTROL Refresh frequency]** | Hur ofta du vill uppdatera publiken.<p/>Du kan välja mellan <ul><li>**[!UICONTROL One time]** målgrupp: en målgrupp (standard) som inte behöver uppdateras. Det här alternativet kan till exempel vara användbart för specifika engångskampanjer.<br/>Du måste ange **[!UICONTROL One time date range]**. Du kan använda ![Kalender](/help/assets/icons/Calendar.svg) för att ange ett datumintervall.</li><li>En uppfriskande publik. Du kan välja mellan följande alternativ:<ul><li>**[!UICONTROL Every 4 hour]** s: en publik som uppdateras var fjärde timme.</li><li>**[!UICONTROL Daily]**: en publik som uppdateras dagligen</li><li>**[!UICONTROL Weekly]**: en målgrupp som uppdateras varje vecka.</li><li>**[!UICONTROL Monthly]**: en målgrupp som uppdateras varje månad</li></ul></li><br/>Om du vill uppdatera målgrupper måste du ange:<ul><li>**[!UICONTROL Refresh lookback window]**. Definiera antalet dagar från idag då en målgrupp utvärderas. Du kan välja mellan alternativ eller definiera en anpassad tid. Det högsta antalet är 90 dagar.</li><li>**[!UICONTROL Expiration date]**: Definiera när målgruppen slutar uppdatera. Du kan använda ![Kalender](/help/assets/icons/Calendar.svg) för att välja ett datum. Standardvärdet är 1 år från skapandedatumet. Utgångna målgrupper behandlas på liknande sätt som schemalagda rapporter. Administratören får ett e-postmeddelande en månad innan målgruppen går ut.</li></ul> Observera att det finns en gräns på 75 till 150 målgruppsuppdateringar, beroende på ditt tillstånd för Customer Journey Analytics.</li></ul> |
+| **[!UICONTROL Filter]** | Filter är huvudindata för publiken. Dra och släpp ett eller flera filter från den vänstra ![segmenteringspanelen](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** till filterområdet. Du kan använda ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *sökfiltren*] för att söka efter filter. Du kan lägga till upp till 20 filter. Filter kan kopplas till operatorerna **[!UICONTROL And]** eller **[!UICONTROL Or]**.<p>När du skapar en målgrupp från en visualisering i Analysis Workspace (till exempel en frihandsritabell eller en arbetsyta) bevaras eventuella filter som tillämpas på panelen eller på kolumnen. Du kan ta bort alla filter som tillämpas automatiskt.</p> |
+| **[!UICONTROL Data preview]** | Välj ![Info](/help/assets/icons/Info.svg) om du vill visa eller dölja [Förhandsgranska data](#data-preview) för det valda datumintervallet. |
 
-   {style="table-layout:auto"}
+## Förhandsgranska data
 
-1. Kontrollera målgruppskonfigurationen och klicka på **[!UICONTROL Publish]**.
+Panelen Förhandsgranska data innehåller följande information.
 
-   Om allt gick bra får du ett bekräftelsemeddelande om att publiken publicerades. Det tar bara några minuter för publiken att dyka upp i Experience Platform. (Även för målgrupper med miljontals medlemmar bör det ta mindre än fem minuter.)
+| Element | Beskrivning |
+| --- | --- |
+| **[!UICONTROL Total people]** | Ett summerat antal av det totala antalet personer i den här publiken. Den maximala storleken är 20 miljoner människor. Om er målgrupp överstiger 20 miljoner människor måste ni minska målgruppens storlek innan ni kan publicera. |
+| **[!UICONTROL Audience size limit]** | Visualisering för att visa hur långt från 20 miljoner som den här målgruppen är. |
+| **[!UICONTROL Estimated audience return]** | Du kan använda det här värdet för att omdirigera personer i den här målgruppen som kommer tillbaka till din webbplats, mobilapp eller någon annan kanal.<p>Du kan välja tidsram (**[!UICONTROL Next 7 days]**, **[!UICONTROL Next 2 weeks]** eller **[!UICONTROL Next month]**) för det uppskattade antalet kunder som kan returnera. |
+| **[!UICONTROL Estimated to return]** | Detta nummer ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde. Det här talet beräknas med hjälp av den historiska bortfallstakten för den här målgruppen. |
+| **[!UICONTROL Preview metrics]** | Du kan välja ett specifikt mått för att se hur data för det måttet baseras på den målgrupp du anger.  Varje förhandsvisningsmått visar en summa för måttet baserat på målgruppen. Och en procentandel av målgruppsbaserade mätvärden från den totala summan av mätvärdena, enligt datavyn. Exempelvis är 381 personer (det mätvärde du valde) resultatet av din målgruppsdefinition, som är 5 % av det totala antalet personer som är tillgängliga i datavyn. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
+| **[!UICONTROL Namespaces included]** | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
+| **[!UICONTROL Sandbox]** | Den [Experience Platform-sandlåda](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som den här publiken finns i. När du publicerar den här målgruppen på Platform kan du bara arbeta med målgruppen inom gränserna för den här sandlådan. |
 
-1. Klicka på **[!UICONTROL View audience in AEP]** i samma meddelande så dirigeras du till [segmentgränssnittet](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) i Adobe Experience Platform. Mer information finns nedan.
+{style="table-layout:auto"}
 
 ## Vad händer när en publik har skapats och publicerats? {#after-audience-created}
 
-När du har skapat och publicerat en målgrupp i Customer Journey Analytics är målgruppen tillgänglig i Experience Platform. Ett Adobe Experience Platform-direktuppspelningssegment skapas endast om din organisation är inställd för direktuppspelningssegmentering.
+När du har skapat och publicerat en målgrupp i Customer Journey Analytics är målgruppen tillgänglig i Experience Platform. Ett Adobe Experience Platform-direktuppspelningssegment skapas bara om din organisation är inställd för direktuppspelningssegmentering.
 
-* Publiken i Platform har samma namn/beskrivning som Customer Journey Analytics-publiken, men namnet läggs till Customer Journey Analytics som målgrupps-ID för att säkerställa att det är unikt.
-* Alla ändringar av publikens namn eller beskrivning i Customer Journey Analytics återspeglas i Platform.
-* Om en målgrupp tas bort i Customer Journey Analytics är målgruppen fortfarande tillgänglig i Platform.
+* Publiken i Platform har samma namn och beskrivning som Customer Journey Analytics-publiken. Namnet läggs till med målgrupps-ID:t för Customer Journey Analytics för att säkerställa att målgruppen är unik.
+* Alla ändringar av publikens namn eller beskrivning i Customer Journey Analytics återspeglas i Experience Platform.
+* Om en målgrupp tas bort i Customer Journey Analytics är målgruppen fortfarande tillgänglig i Experience Platform.
 
 ## Svarstidsfrågor {#latency}
 
@@ -106,7 +134,7 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 ![Latenser i målgruppspublicering enligt beskrivningen i det här avsnittet.](assets/latency-diagram.svg)
 
-| # | Svarstid | Varaktighet för fördröjning |
+|  | Svarstid | Varaktighet för fördröjning |
 | --- | --- | --- |
 | Visas inte | Källanslutning för Adobe Analytics till Analytics (A4T) | Upp till 30 minuter |
 | 1 | Intag av data i datasjön (från Analytics-källkopplingen eller andra källor) | Upp till 90 minuter |
@@ -139,7 +167,7 @@ Så här visar du Customer Journey Analytics-målgrupper i Platform:
 
    * Använd sökfältet.
 
-Mer information om hur du använder publiker i plattformen finns i avsnittet [Publiker](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences) i [Användargränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html) i Experience Platform-dokumentationen.
+Mer information om hur du använder publiker i plattformen finns i avsnittet [Publiker](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
 
 
 ## Vanliga frågor {#faq}
@@ -154,17 +182,17 @@ I det här fallet skickas en exit-händelse till Experience Platform från Custo
 
 +++**Vad händer om du tar bort en målgrupp i Customer Journey Analytics?**
 
-När en Customer Journey Analytics-publik tas bort visas den inte längre i användargränssnittet för Experience Platform. Inga profiler som är kopplade till den målgruppen tas emellertid bort i Platform.
+När en Customer Journey Analytics-publik tas bort visas den inte längre i användargränssnittet för Experience Platform. Profiler som är kopplade till den målgruppen tas dock inte bort i Experience Platform.
 
 +++
 
-+++**Om det inte finns någon motsvarande profil i RTCDP, kommer en ny profil att skapas?**
++++**Om en motsvarande profil inte finns i RTCDP, skapas en ny profil?**
 
 Ja, det kommer det.
 
 +++
 
-+++**Skickar Customer Journey Analytics målgruppsdata som pipeline-händelser eller som en platt fil som också skickas till Data Lake?**
++++**Skickar Customer Journey Analytics målgruppsdata som pipeline-händelser eller som en platt fil som också skickas till datasjön?**
 
 Customer Journey Analytics strömmar data till RTCP via rörledning, och dessa data samlas också in i en systemdatauppsättning i datasjön.
 
@@ -172,19 +200,19 @@ Customer Journey Analytics strömmar data till RTCP via rörledning, och dessa d
 
 +++**Vilka identiteter skickar Customer Journey Analytics över?**
 
-Vilka identitets-/namnområdespar som angavs i [anslutningsinställningen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som sitt &quot;person-ID&quot;.
+Vilka identitets-/namnområdespar som angavs i [anslutningsinställningen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som person-ID.
 
 +++
 
 +++**Vilket ID har valts som primär identitet?**
 
-Se ovan. Vi skickar bara en identitet per Customer Journey Analytics&quot;person&quot;.
+Se ovan. Endast en identitet per Customer Journey Analytics skickas.
 
 +++
 
 +++**Bearbetar RTCP även Customer Journey Analytics-meddelanden? Kan Customer Journey Analytics lägga till identiteter i ett profilidentitetsdiagram genom målgruppsdelning?**
 
-Nej. Vi skickar bara en identitet per person, så det finns inga diagramkanter som RTCP kan använda.
+Nej. Endast en identitet per person skickas, så det skulle inte finnas några diagramkanter för RTCP att använda.
 
 +++
 
@@ -194,9 +222,9 @@ Tidpunkten för uppdateringen baseras på när den ursprungliga målgruppen publ
 
 +++
 
-+++**Kan varje dag, vecka och månad för uppdateringen konfigureras av användare?**
++++**Kan du konfigurera uppdateringstiden varje dag, vecka och månad?**
 
-Nej, de kan inte konfigureras av användare.
+Nej, användare kan inte konfigurera uppdateringstiden.
 
 +++
 

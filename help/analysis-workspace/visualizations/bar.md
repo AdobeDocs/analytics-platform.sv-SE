@@ -4,7 +4,7 @@ title: Stolpstreck och stapel
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Med en listruta för granularitet i visualiseringsinställningarna kan du ändra
 >[!CONTEXTUALHELP]
 >id="cja_workspace_barstacked_button"
 >title="Stapel staplad"
->abstract="Skapar en streckvisualisering som representerar olika värden över en eller flera staplade mätvärden."
+>abstract="Skapa en stapelvisualisering för att representera olika värden över en eller flera staplade mätvärden."
 
 <!-- markdownlint-enable MD034 -->
 
