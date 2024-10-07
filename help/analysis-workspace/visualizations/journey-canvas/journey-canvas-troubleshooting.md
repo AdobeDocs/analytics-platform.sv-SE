@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2fc2bd660b017140b8dfa660cf71054af9efb87e
+source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -40,15 +40,15 @@ Eftersom du kan använda alla mått som primära mått på en arbetsyta på en r
 
 ![Resa med noder som är högre än föregående nod](assets/journey-canvas-higher-percentage.png)
 
-Den resa som används i följande scenarier har konfigurerats med följande inställningar:
+Den resa som används i följande scenarier har konfigurerats med dessa inställningar:
 
 * **[!UICONTROL Person]** anges som behållare
 
 * **[!UICONTROL Event]** anges som primärt mått
 
-#### Scenario 1 - Användare En följer resan i den första sessionen och sedan endast senare noder i en efterföljande session
+#### Scenario 1: Användare A följer resvägen i första sessionen. I en efterföljande session har användaren en händelse som bara matchar en senare nod.
 
-Anta att användare A besöker webbplatsen och slutför resan (nod 1: &quot;Besök webbplats&quot; > Nod 2: &quot;Visa produkt A&quot; > Nod 3: &quot;Checka ut&quot;). Eftersom Användare A slutförde resan räknas en händelse på varje nod av resan.
+Anta att användare A besöker webbplatsen och slutför resan (nod 1: &quot;Besök webbplats&quot; > Nod 2: &quot;Visa produkt A&quot; > Nod 3: &quot;Checka ut&quot;). Eftersom användare A hade en händelse som matchade varje nod på resan i ordning, räknas en händelse för varje nod på resan.
 
 Anta nu att Användare A besöker webbplatsen igen i en senare session. Eftersom Användare A redan har slutfört resan i en tidigare session genom att följa resan innebär det att varje gång Användare A har en händelse som matchar någon nod i resan - även om Användare A inte har följt vägen för resan i den aktuella sessionen - räknas en händelse på den relevanta noden i resan. Om till exempel Användare A checkar ut räknas en händelse på noden Checka ut. Detta kan resultera i en högre procentandel och ett större tal på noden &quot;Checka ut&quot; än på föregående nod, &quot;Visa produkt A&quot;.
 
@@ -58,11 +58,11 @@ Om behållarinställningen hade ställts in på &quot;Session&quot; skulle händ
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
-#### Scenario 2 - Användare B faller utanför kundresan
+#### Scenario 2: Användare B faller utanför kundresan
 
 Anta att Användare B besöker webbplatsen och inte slutför resan (besöker webbplatsen, besöker produkt B och checkar sedan ut). I det här fallet räknas en händelse för kundens startnod,&quot;Besök webbplats&quot;, men en händelse räknas inte för de återstående noderna och Användare B faller utanför kundresan. Trots att Användare B har checkat ut räknas inte en händelse på den tredje noden (&quot;Checka ut&quot;) eftersom Användare B inte slutförde resan genom att visa produkt A innan utcheckningen.
 
-Detta beror på att händelser bara räknas för varje nod när personer följer kundens&quot;slutliga sökväg&quot;, vilket betyder att händelser bara räknas om personen till slut flyttas från en nod till en annan, oavsett händelser som inträffar mellan de två noderna.
+Detta beror på att händelser bara räknas för varje nod när personer följer kundens&quot;slutliga väg&quot;. Detta innebär att händelser bara räknas om personen så småningom flyttas från en nod till en annan, oavsett eventuella händelser mellan de två noderna.
 
 ### På resan konvergerar flera banor till en enda nod
 
