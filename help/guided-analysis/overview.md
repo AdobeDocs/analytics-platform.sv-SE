@@ -5,7 +5,7 @@ keywords: produktanalys
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c403a660e1d60b1ee2e5552d615dffc2b52930a4
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 0%
@@ -84,11 +84,11 @@ Vyer med guidad analys ingår i Customer Journey Analytics-paket på följande s
 
 | Paket | Tillgängliga vyer |
 | --- | --- |
-| [!UICONTROL CJA add-ons] | Trends: Usage, Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rate, User growth: Active, User growth: Net growth |
-| [!UICONTROL CJA Foundation] | Trender: Användning |
-| [!UICONTROL CJA Select] | Foundation views + Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rate, User growth: Active, User growth: Net growth |
-| [!UICONTROL CJA Prime] | Välj vyer + användarström: Tidslinje, funktionsmatris: engagemang, effekt: release, effekt: första användningen |
-| [!UICONTROL CJA Ultimate] | Prime views |
+| [!UICONTROL Customer Journey Analytics add-ons] | Trends: Usage, Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rate, User growth: Active, User growth: Net growth |
+| [!UICONTROL Customer Journey Analytics Foundation] | Trender: Användning |
+| [!UICONTROL Customer Journey Analytics Select] | Foundation views + Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rate, User growth: Active, User growth: Net growth |
+| [!UICONTROL Customer Journey Analytics Prime] | Välj vyer + användarström: Tidslinje, funktionsmatris: engagemang, effekt: release, effekt: första användningen |
+| [!UICONTROL Customer Journey Analytics Ultimate] | Prime views |
 
 {style="table-layout:auto"}
 
