@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 10%
+source-wordcount: '950'
+ht-degree: 11%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 10%
    + [Utför grundläggande analys](../analysis-workspace/perform-basic-analysis.md)
    + [Avancerad analys](../analysis-workspace/perform-adv-analysis.md)
    + Projekt {#build-workspace-project}
-      + [Projektöversikt](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Översikt](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Öppna projekt](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
@@ -123,7 +123,7 @@ ht-degree: 10%
       + [Färgpaletter](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](../analysis-workspace/build-workspace-project/view-density.md)
    + Visualiseringar {#visualizations}
-      + [Visualiseringar - översikt](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+      + [Översikt](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [Intelligenta bildtexter](../analysis-workspace/visualizations/intelligent-captions.md)
       + Frihandstabell {#freeform-table}
@@ -179,7 +179,7 @@ ht-degree: 10%
       + [Nästa eller föregående objekt](../analysis-workspace/c-panels/next-previous.md)
       + [Snabba insikter](../analysis-workspace/c-panels/quickinsight.md)
    + Kuratera, dela och schemalägg projekt {#curate-share}
-      + [Dela-menyn](../analysis-workspace/curate-share/send-schedule-files.md)
+      + [Översikt](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](../analysis-workspace/curate-share/curate.md)
       + [Dela projekt](../analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](../analysis-workspace/curate-share/shareable-links.md)
@@ -207,9 +207,9 @@ ht-degree: 10%
       + [Tillgänglighet](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Kontrollpaneler för analyser {#cja-dashboards}
-   + [Kontrollpaneler för analyser - översikt](../mobile-app/home.md)
+   + [Översikt](../mobile-app/home.md)
    + [Läraruppgifter](../mobile-app/curator.md)
-   + [Skapa ett mobilstyrkort](../mobile-app/create-scorecard.md)
+   + [Skapa mobilstyrkort](../mobile-app/create-scorecard.md)
    + [Hantera styrkort för mobila enheter](../mobile-app/manage-scorecard.md)
    + [Konfigurera chefer för att använda kontrollpaneler](../mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](../mobile-app/executive.md)
@@ -238,7 +238,7 @@ ht-degree: 10%
    + [Vanliga frågor och svar](../guided-analysis/faq.md)
 
 + Komponenter {#cja-components}
-   + [Komponenter - översikt](../components/overview.md)
+   + [Översikt](../components/overview.md)
    + [Använda komponenter i Analysis Workspace](../components/use-components-in-workspace.md)
    + [Lägga till komponentbeskrivningar](../components/add-component-descriptions.md)
    + Anteckningar {#annotations}
@@ -260,7 +260,7 @@ ht-degree: 10%
       + [Höga kardinaldimensioner](../components/dimensions/high-cardinality.md)
    + [Mätvärden](../components/apply-create-metrics.md)
    + Filter {#cja-filters}
-      + [Översikt över filter](../components/filters/filters-overview.md)
+      + [Översikt](../components/filters/filters-overview.md)
       + [Skapa filter](../components/filters/create-filters.md)
       + [Skapa filter](../components/filters/filter-builder.md)
       + [Snabbfilter](../components/filters/quick-filters.md)
@@ -274,7 +274,7 @@ ht-degree: 10%
       + [Hantera filter](../components/filters/manage-filters.md)
       + [Operatorer](../components/filters/operators.md)
    + Beräknade mått {#cja-calcmetrics}
-      + [Översikt över beräknade mätvärden](../components/calc-metrics/calc-metr-overview.md)
+      + [Översikt](../components/calc-metrics/calc-metr-overview.md)
       + Arbetsflödet för beräknade mått {#cm-workflow}
          + [Skapa beräknade mått](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Bygg beräknade värden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
@@ -315,13 +315,13 @@ ht-degree: 10%
       + [Hantera exportloggar](/help/components/exports/manage-export-logs.md)
       + [Felsöka exporter](/help/components/exports/troubleshoot-exports.md)
    + Dataordlista {#data-dictionary}
-      + [Översikt över dataordlistan](../components/data-dictionary/data-dictionary-overview.md)
+      + [Översikt](../components/data-dictionary/data-dictionary-overview.md)
       + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
       + [Redigera komponentposter i Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Övervaka dataordlistans hälsa](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
-   + [Översikt över Report Builder](../report-builder/report-buider-overview.md)
+   + [Översikt](../report-builder/report-buider-overview.md)
    + [Konfigurera Report Builder](../report-builder/report-builder-setup.md)
    + [Skapa ett datablock](../report-builder/create-a-data-block.md)
    + [Report Builder Hub](../report-builder/report-builder-hub.md)

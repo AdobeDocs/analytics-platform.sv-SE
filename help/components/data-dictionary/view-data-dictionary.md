@@ -1,17 +1,17 @@
 ---
 description: Med Data Dictionary i Analysis Workspace kan användare katalogisera och hålla reda på de olika komponenterna i Analysis Workspace, inklusive deras avsedda användning, som är godkända, som är dubbletter osv.
-title: Visa dataordlistan
+title: Visa komponentinformation
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# Visa komponentinformation i Data Dictionary
+# Visa komponentinformation
 
 Med Data Dictionary kan du visa information om en komponent, inklusive komponentbeskrivningen, liknande komponenter, andra komponenter som en komponent ofta används med, med mera.
 

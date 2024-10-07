@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: cfc48aea3f474fedece022898f224ee68fb2b649
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1344'
 ht-degree: 1%
 
 ---
@@ -34,8 +34,8 @@ Följande bild och tabell beskriver huvudelementen i Analysis Workspace använda
 
 | Plats | Namn och funktion |
 |:---------:|----------|
-| ? | Innehåller namnet på projektet, en menystruktur för att få åtkomst till funktioner, en knapp på ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) för att återgå till projektlistan och en **[!UICONTROL Share]**-knapp för att dela ditt Workspace-projekt. <br/>Markera namnet på ditt projekt (till exempel: Exempel på projekt) när som helst för att ändra namnet. <br/>Välj ![StarOutline](/help/assets/icons/StarOutline.svg) om du vill lägga till ditt projekt som ett favoritprojekt ![Star](/help/assets/icons/Star.svg). |
-| ? | **Panelen Knapp:** Innehåller knappar för att komma åt [funktioner](#features) i Analysis Workspace:<br/>![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Panels]**<br/>![Guidad analys](/help/assets/icons/GuidedAnalysis.svg)**[!UICONTROL Guided Analysis]**<br/>![ GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Visualizations]**<br/>![Curate](/help/assets/icons/Curate.svg)**[!UICONTROL Components]**<br/>![ ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]**<br/>![Bookmark](/help/assets/icons/Bookmark.svg) {11 6}**[!UICONTROL Data Dictionary]** |
+| ? | Innehåller namnet på projektet, en menystruktur för att få åtkomst till funktioner, en knapp på ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) för att återgå till projektlistan och en **[!UICONTROL Share]**-knapp för att [dela ditt Workspace-projekt](/help/analysis-workspace/curate-share/share-projects.md). <br/>Välj namnet på ditt projekt (till exempel: Nytt projekt) när som helst för att ändra namnet. <br/>Markera ![StarOutline](/help/assets/icons/StarOutline.svg) om du vill markera projektet som ett favoritprojekt ![Star](/help/assets/icons/Star.svg). |
+| ? | **Knapppanelen:** Innehåller knappar för att komma åt [funktioner](#features) i Analysis Workspace:<ul><li>![Webbsida](/help/assets/icons/WebPage.svg) [[!UICONTROL Panels]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Guidad analys](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Guided Analysis]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualizations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratera](/help/assets/icons/Curate.svg) [[!UICONTROL Components]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table of contents]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Bokmärke](/help/assets/icons/Bookmark.svg) [[!UICONTROL Data Dictionary]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | ? | **Vänster panel:** Det här området innehåller enskilda paneler, visualiseringar, komponenter eller listor. Innehållet beror på vilken knapp som är markerad på knapppanelen. |
 | ? | **Arbetsyta:** Huvudområdet där du drar innehåll från den vänstra panelen för att skapa projektet. Projektet uppdateras dynamiskt när du lägger till paneler, lägger till visualiseringar i paneler och lägger till komponenter i visualiseringar. Du kan skapa flera paneler, och i varje panel kan du skapa flera visualiseringar.<br/>Varje panel baseras på en vald datavy. Den valda datavyn avgör vilka komponenter som är tillgängliga, som mått och mått. Mer information finns i [Paneler - Datavy](/help/analysis-workspace/c-panels/panels.md#data-view). |
 
@@ -45,7 +45,7 @@ De viktigaste funktionerna i Analysis Workspace finns på knapppanelen:
 
 | Ikon | Funktion | Beskrivning |
 |:---:|---|---|
-| ![Webbsida](/help/assets/icons/WebPage.svg) | **[!UICONTROL Panels]** | [Paneler](/help/analysis-workspace/c-panels/panels.md) används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. Välj ![WebPage](/help/assets/icons/WebPage.svg) på knapppanelen om du vill se en fullständig lista över tillgängliga paneler. |
+| ![Webbsida](/help/assets/icons/WebPage.svg) | **[!UICONTROL Panels]** | [Paneler](/help/analysis-workspace/c-panels/panels.md) används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. |
 | ![Guidad analys](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL Guided Analysis]** | [Med guidad analys](../guided-analysis/overview.md) kan du självbetjäna data och insikter av hög kvalitet om kundresan via guidade arbetsflöden. Du kan skapa en analys som ska ingå i ditt Workspace-projekt eller inkludera en befintlig analys som du sparat tidigare. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL Visualizations]** | [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), t.ex. en stapel eller ett linjediagram, kan användas för att ge data liv. På den vänstra panelen väljer du den mittersta **[!UICONTROL Visualizations]**-ikonen för att visa en fullständig lista över tillgängliga visualiseringar. |
 | ![Kurva](/help/assets/icons/Curate.svg) | **[!UICONTROL Components]** | [Komponenter](/help/components/overview.md) innehåller följande element:<ul><li>![Dimensioner](/help/assets/icons/Dimensions.svg) [Dimensioner](/help/components/dimensions/overview.md)</li><li>![Händelse](/help/assets/icons/Event.svg) [Mätvärden](/help/components/apply-create-metrics.md)</li><li>![Segmentering](/help/assets/icons/Segmentation.svg) [Filter](/help/components/filters/filters-overview.md)</li><li>![Kalender](/help/assets/icons/Calendar.svg) [Datumintervall](/help/components/date-ranges/overview.md)</li></ul> |

@@ -1,17 +1,17 @@
 ---
 description: Med Data Dictionary i Analysis Workspace kan användare katalogisera och hålla reda på de olika komponenterna i Analysis Workspace, inklusive deras avsedda användning, som är godkända, som är dubbletter osv.
-title: Redigera poster i Data Dictionary
+title: Redigera komponentposter
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
-# Redigera komponentposter i Data Dictionary
+# Redigera komponentposter
 
 Customer Journey Analytics-administratörer kan redigera komponentposter i datamappningen för en viss datavy. Alla ändringar som görs är synliga för alla som använder datavyn.
 

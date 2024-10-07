@@ -1,17 +1,17 @@
 ---
-title: Skapa ett datumintervall
+title: Skapa datumintervall
 description: Skapa ett datumintervall för rapportering.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
-# Skapa ett datumintervall
+# Skapa datumintervall
 
 
 Vem som helst kan skapa ett anpassat datumintervall. Du kan skapa ett datumintervall på följande sätt:
