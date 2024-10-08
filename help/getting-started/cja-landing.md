@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '820'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,13 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics och do
 AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverksamma att utföra uppgifter snabbt - oavsett om de förstår koncept, felsöker problem eller söker igenom information. Det gör det även möjligt för icke-experter att utföra expertuppgifter och ökar den övergripande kvaliteten på arbetet.
 
 [![bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+
+>[!TAB Guidad analys]
+
+Guidad analys är nu tillgängligt direkt från Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser.
+
+[![bild](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 >[!TAB Larm]
 
@@ -72,27 +79,6 @@ BI-tillägget ger SQL-åtkomst till datavyer som du har definierat i Customer Jo
 
 *_Du måste ha Select-paketet eller senare för att kunna använda BI-tillägget._*
 
-
-<!--
->[!TAB Improved Audience Publising] 
-
-Audiences that are published from Customer Journey Analytics are now available in the new **Audiences** section in Adobe Experience Platform. Audiences are now available in Experience Platform seconds after they are published from Customer Journey Analytics. Improved sorting and filter options in Experience Platform for Customer Journey Analytics audiences. 
-
-[![image](assets/learn-more-button.svg)](/help/components/audiences/publish.md)
-
--->
-
->[!TAB Prognos]
-
-Prognosticering är en Analysis Workspace-funktion som prognostiserar ett standardmått eller beräknat mått med en tidshalaritet som stöds (timvis, daglig, veckovis, månadsvis och årsvis). Prognoser är endast tillgängliga för tidsserierelaterade data.
-
-[![bild](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
-
->[!TAB Ny dokumentation]
-
-Nu finns det nya dokumentationsavsnitt på:<ul><li>Exempel på användning av sammanfattningsdata och exempel på B2B-användning.</li><li>Så här uppgraderar du från Adobe Analytics till Customer Journey Analytics.</li><li>Användningsexempel vid dataexport och de funktioner som krävs för Experience Platform och kundresor. </li></ul>Välj **[!UICONTROL Learn more]** för den här och andra dokumentationsuppdateringar.
-
-[![bild](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
