@@ -1,29 +1,33 @@
 ---
-title: Referens - avancerade funktioner
+title: Avancerade funktioner
 description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2856'
 ht-degree: 2%
 
 ---
 
-# Referens - avancerade funktioner
+# Avancerade funktioner
 
-Du får åtkomst till de här funktionerna genom att välja **[!UICONTROL Show all]** under listan ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** på panelen Komponenter. Bläddra ned för att se en lista över avancerade funktioner.
+Med verktyget [Beräknade mätvärden](cm-workflow/cm-build-metrics.md) kan du använda statistiska och matematiska funktioner. I den här artikeln visas en alfabetisk lista över de avancerade funktionerna och deras definitioner.
+
+Du får åtkomst till de här funktionerna genom att välja **[!UICONTROL Show all]** under listan ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** på panelen Komponenter. Bläddra ned för att se listan med **[!UICONTROL Advanced functions]**.
 
 ## Tabellfunktioner jämfört med radfunktioner
 
-En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen. I tillämpliga fall och när det är relevant kommenteras en funktion med funktionstypen.
+En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen.
+
+I tillämpliga fall och när det är relevant kommenteras en funktion med funktionstypen: [!BADGE Tabell]{type="Neutral"}[!BADGE Rad]{type="Neutral"}
 
 ## Vad betyder parametern include-zeros?
 
 Den anger om nollor ska inkluderas i beräkningen. Ibland betyder noll *ingenting*, men ibland är det viktigt.
 
-Om du till exempel har ett intäktsmått och sedan lägger till ett sidvymått i rapporten finns det plötsligt fler rader för dina intäkter, som alla är noll. Du vill förmodligen inte att det ytterligare måttet ska påverka några [MEAN](cm-functions.md#mean), [MIN](cm-functions.md#row-min), [QUARTILE](cm-functions.md#quartile) och fler beräkningar som du har i intäktskolumnen. I det här fallet kontrollerar du parametern `include-zeros`.
+Om du till exempel har ett intäktsmått och sedan lägger till ett sidvymått i rapporten finns det plötsligt fler rader för dina intäkter, som alla är noll. Du vill förmodligen inte att det ytterligare måttet ska påverka några **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** och fler beräkningar som du har i intäktskolumnen. I det här fallet kontrollerar du parametern `include-zeros`.
 
 Ett alternativt scenario är att du har två intressanta mätvärden och ett har ett högre genomsnitt eller minimum eftersom några av raderna är nollor.  I så fall kan du välja att inte kontrollera parametern så att den innehåller nollor.
 
@@ -918,13 +922,13 @@ Returvärdet är sannolikheten att se provningsvärdet x med hänsyn till antale
 
 **Exempel:**
 
-1. Använd den för att hitta avvikelser:
+1. Använd funktionen för att hitta avvikelser:
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. Kombinera den med **[IF](#if)** om du vill ignorera mycket höga eller låga studsfrekvenser och räkna sessioner med allt annat:
+1. Kombinera funktionen med **[IF](#if)** om du vill ignorera mycket höga eller låga avhoppsfrekvenser och räkna sessioner med allt annat:
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )

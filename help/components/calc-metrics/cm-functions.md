@@ -1,31 +1,41 @@
 ---
-title: Referens - grundläggande funktioner
+title: Grundfunktioner
 description: Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
 
-# Referens - grundläggande funktioner
+# Grundfunktioner
 
 
-Med verktyget [Beräknade mätvärden](cm-workflow/cm-build-metrics.md) kan du använda statistiska och matematiska funktioner.
-
-Här är en lista i alfabetisk ordning över funktionerna och deras definitioner.
+Med verktyget [Beräknade mätvärden](cm-workflow/cm-build-metrics.md) kan du använda statistiska och matematiska funktioner. I den här artikeln visas en alfabetisk lista över funktionerna och deras definitioner.
 
 >[!NOTE]
 >
 >Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck för mätvärden. Till exempel tillåter [COLUMN MAXIMUM(metrics)](#column-maximum) även [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum).
 
 
+
 ## Tabellfunktioner jämfört med radfunktioner
 
-En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen. I tillämpliga fall och när det är relevant kommenteras en funktion med funktionstypen.
+En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen.
+
+I tillämpliga fall och när det är relevant kommenteras en funktion med funktionstypen: [!BADGE Tabell]{type="Neutral"}[!BADGE Rad]{type="Neutral"}
+
+## Vad betyder parametern include-zeros?
+
+Den anger om nollor ska inkluderas i beräkningen. Ibland betyder noll *ingenting*, men ibland är det viktigt.
+
+Om du till exempel har ett intäktsmått och sedan lägger till ett sidvymått i rapporten finns det plötsligt fler rader för dina intäkter, som alla är noll. Du vill förmodligen inte att det ytterligare måttet ska påverka några **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** och fler beräkningar som du har i intäktskolumnen. I det här fallet kontrollerar du parametern `include-zeros`.
+
+Ett alternativt scenario är att du har två intressanta mätvärden och ett har ett högre genomsnitt eller minimum eftersom några av raderna är nollor.  I så fall kan du välja att inte kontrollera parametern så att den innehåller nollor
+
 
 
 ## Absolut värde
