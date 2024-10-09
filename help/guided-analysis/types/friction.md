@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 216783872bf4dd26fe2137dffe8994d03193b604
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här vytypen och [Konverteringstrender](conversion-trends.md).
 * **[!UICONTROL Steps]**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
-   * [!UICONTROL Compare]: I varje steg finns ett alternativ för att jämföra flera händelser i ett enda tratt-steg, vilket skapar en&quot;forked trnel&quot;. Med den här funktionen kan du jämföra friktionen för två resor sida vid sida utan att skapa två separata analyser. Det är användbart när det finns stegalternativ eller när ett A/B-experiment körs i tratten. Se [Funnel friction analysis](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel/funnel-friction-analysis) i självstudiekurserna för Customer Journey Analytics för en video som förklarar hur du jämför kanter.
+   * [!UICONTROL Compare]: I varje steg finns ett alternativ för att jämföra flera händelser i ett enda tratt-steg, vilket skapar en&quot;forked trnel&quot;. Med den här funktionen kan du jämföra friktionen för två resor sida vid sida utan att skapa två separata analyser. Det är användbart när det finns stegalternativ eller när ett A/B-experiment körs i tratten. Se [Tratt](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) i självstudiekurserna för Customer Journey Analytics för en video som förklarar hur du jämför kanter.
 * **[!UICONTROL Counted as]**: Omfånget som du vill tillämpa på tratten. Alternativen är [!UICONTROL Sessions] och [!UICONTROL Users].
    * [!UICONTROL Sessions]: Alla steg måste inträffa inom samma session för att räknas.
    * [!UICONTROL Users]: Alla steg måste inträffa i det valda rapportfönstret för att räknas.

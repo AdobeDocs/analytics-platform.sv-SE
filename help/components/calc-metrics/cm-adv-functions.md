@@ -4,7 +4,7 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
 source-wordcount: '2856'
 ht-degree: 2%
@@ -168,7 +168,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
-Beräkna valfri giltig konfidensgrad **lower** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](http://arxiv.org/pdf/2103.06476).
+Beräkna valfri giltig konfidensgrad **lower** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476).
 
 Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att en viss variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda.
 
@@ -183,7 +183,7 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
-Beräkna det valfria tidsgiltiga förtroendet **upper** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](http://arxiv.org/pdf/2103.06476).
+Beräkna det valfria tidsgiltiga förtroendet **upper** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476).
 
 Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att en viss variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda.
 

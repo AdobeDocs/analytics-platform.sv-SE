@@ -4,7 +4,7 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
 source-wordcount: '4088'
 ht-degree: 5%
@@ -113,7 +113,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | **Juni 2023** | |
 | Flerkanalsanalys och stygn | I väntan på kommande ändringar för att aktivera sammanfogning och för att ytterligare klargöra hur flerkanalsanalys kan höjas med sammanfogning, redigeras dokumentation om funktionen för flerkanalsanalys så att den hänvisar till [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) som Customer Journey Analytics-funktion och användningsexempel, och [Stitching](../stitching/overview.md) som en viktig funktion för att uppnå detta. |
 | PowerBI- och Tableau-åtkomst till datavyer i Customer Journey Analytics | Tillägget Customer Journey Analytics BI ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. [Läs mer](/help/data-views/bi-extension.md) |
-| Adobe Journey Optimizer datavyer | Customer Journey Analytics-administratörer har tillgång till vissa extra datavyer i Customer Journey Analytics som heter&quot;AJO Data view (Sandbox-name)&quot;. [Läs mer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration). |
+| Adobe Journey Optimizer datavyer | Customer Journey Analytics-administratörer har tillgång till vissa extra datavyer i Customer Journey Analytics som heter&quot;AJO Data view (Sandbox-name)&quot;. [Läs mer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/reporting-configuration). |
 | Valutakonvertering | Uppdaterad dokumentation om stöd för [valutakonvertering](../data-views/component-settings/format.md#currency). |
 | Uppdateringar av beräknade mätvärden | Följande uppdateringar gjordes av dokumentationen för beräknade värden för att den skulle överensstämma med den nuvarande funktionaliteten i Customer Journey Analytics: <ul><li>Uppdaterade listan över [standardberäknade värden](/help/components/calc-metrics/default-calcmetrics.md) som är tillgängliga i Customer Journey Analytics</li><li>Uppdaterade skärmdumpar och -procedurer i olika beräknade mätningsartiklar </li></ul> |
 | **Maj 2023** | |
