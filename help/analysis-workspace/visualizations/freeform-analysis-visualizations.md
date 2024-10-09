@@ -5,9 +5,9 @@ title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1530'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) | En histogramvisualisering blockerar personer, besök eller händelser i grupper baserat på en mätvolym. |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Vågrätt fält](/help/analysis-workspace/visualizations/horizontal-bar.md) | En vågrät fältvisualisering visar vågräta staplar som representerar olika värden över ett eller flera mätvärden. |
 | ![GraphBarHorizontalStached](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Vågrätt fält staplat](/help/analysis-workspace/visualizations/horizontal-bar.md) | En staplad vågrät fältvisualisering visar vågräta staplar som representerar olika värden över ett eller flera mätvärden. |
+| ![Förgrening3](/help/assets/icons/Branch3.svg) | [Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Med en visualisering av arbetsytan på resan kan ni analysera och få insikter om de resor som ni erbjuder era användare och kunder. |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Sammanfattning av nyckelmått](/help/analysis-workspace/visualizations/key-metric.md) | En sammanfattning av nyckeltal kombinerar visualisering av rad, sammanfattningsändring och sammanfattningsnummer. |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linjediagram](/help/analysis-workspace/visualizations/line.md) | En radvisualisering representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram använder tid längs x-axeln. |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Spridning](/help/analysis-workspace/visualizations/scatterplot.md) | En punktvisualisering visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
