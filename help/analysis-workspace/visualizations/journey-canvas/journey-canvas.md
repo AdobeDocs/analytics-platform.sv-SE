@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1697'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,36 @@ Viktiga funktioner för visualisering av arbetsytan på resan är:
 
 ## Potentiella insikter
 
-Nedan följer några exempel på vilka typer av insikter som Journey Canvas kan ge. Du kan välja om dessa insikter ska baseras på alla personer i datavyn, alla personer som påbörjade resan eller alla personer från den föregående noden på resan.
+Researbetsytan ger användbara insikter för de mest komplexa resorna.
 
-**Genomströmning**
+### Bana med högsta konverteringsgrad {#conversion-rate-caption}
+
+Den mest framträdande insikten på arbetsytan i Journey visas som en bildtext högst upp på själva arbetsytan.
+
+Den här beskrivningen sammanfattar vilken av alla vägar som hade den högsta konverteringsgraden.
+
+![Insiktsbildtext för arbetsytan på resan](assets/journey-canvas-caption.png)
+
+Tänk på följande när du tolkar den här bildtexten:
+
+* En _sökväg_ definieras som en startnod som ansluts med pilar till en slutnod, med valfritt antal noder anslutna mellan dem.
+
+* Beräkningen av konverteringsgraden beror på typen av resa (antalet startnoder och slutnoder som ingår i resan och huruvida vägarna korsar dem mellan dem).
+
+  I följande tabell beskrivs hur konverteringsgraden beräknas baserat på resetypen:
+
+  | Resetyp | Beräkning av konverteringssats | Exempel |
+  |---------|----------|---------|
+  | **En enda startnod och en enda slutnod** | Konverteringsgraden beräknas genom att antalet slutnoder divideras med antalet för startnoden. | ![Resa med flera starter som konvergerar till en gemensam nod](assets/journey-canvas-single-path.png) |
+  | **En enskild startnod och flera slutnoder** | Konverteringsgraden beräknas genom att hitta slutnoden med det högsta talet och dividera talet med startnodens. | ![Resa med flera starter som konvergerar till en gemensam nod](assets/journey-canvas-singlestart-multiend.png) |
+  | **Flera fristående sökvägar, där varje sökväg innehåller en enda startnod och en enda slutnod** | Konverteringsgraden beräknas genom att antalet slutnoder divideras med antalet för startnoden. Sökvägen med den högsta konverteringsgraden beskrivs i bildtexten. | ![Resa med flera starter som konvergerar till en gemensam nod](assets/journey-canvas-multi-start-separate.png) |
+  | **Flera startnoder som vid någon tidpunkt under resan konvergerar till en gemensam nod** | Konverteringsgraden beräknas genom att hitta slutnoden med det högsta talet och dividera talet med startnodens med det lägsta talet. | ![Resa med flera starter som konvergerar till en gemensam nod](assets/journey-canvas-multi-start-converge.png) |
+
+### Fallthrough, Fallout, and more
+
+Nedan följer några exempel på andra insikter som Journey Canvas kan ge. Du kan välja om dessa insikter ska baseras på alla personer i datavyn, alla personer som påbörjade resan eller alla personer från den föregående noden på resan.
+
+#### Fallthrough
 
 * Antalet och procentandelen personer som slutförde resan (anlänt till den avslutande noden)
 
@@ -47,14 +74,13 @@ Nedan följer några exempel på vilka typer av insikter som Journey Canvas kan 
 
 * Det vanligaste steget efter eller före en viss nod på resan
 
-**Utfall**
+#### Utfall
 
 * Nod på resan där människor oftast föll utanför resan (aldrig anlände till någon av de närmaste noderna)
 
-**Annan**
+#### Ytterligare data för varje nod
 
-* Ytterligare data för alla noder i resan (genom att lägga till en detaljdimension för noden)
-
+* Lägg till en detaljdimension på valfri nod i resan för att visa ytterligare data för den specifika noden
 
 ## Välj mellan visualiseringar av arbetsytan på resan och utfall
 
