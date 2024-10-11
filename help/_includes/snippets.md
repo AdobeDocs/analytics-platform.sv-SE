@@ -1,7 +1,7 @@
 ---
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '3624'
+source-wordcount: '3955'
 ht-degree: 0%
 
 ---
@@ -227,3 +227,23 @@ Med **linjär** och ett **personsökningsfönster** delas krediten in i betalsö
 
 Konverteringshändelser som vanligtvis har ett heltal delas om kredit tillhör fler än en kanal. Om till exempel två kanaler bidrar till en order med en linjär attribueringsmodell får båda kanalerna 0,5 av den ordningen. Dessa partiella mätvärden summeras för alla personer och avrundas sedan till närmaste heltal för rapportering.
 
+## Jämförelser av resevisualisering {#journey-visualization-comparisons}
+
+Olika visualiseringar i kundreseanalyser är utformade för att analysera de resor du erbjuder dina kunder.
+
+Använd följande information för att välja den visualisering som bäst passar dina behov.
+
+| Funktion | Reseduk | Utfall | Flöde |
+|---------|----------|---------|---------|
+| **Fördefinierad sidsekvens** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas. | Ja</br>Sökvägen kan vara en slutlig sökväg eller begränsas till nästa kontaktyta | Nej |
+| **Utforska sidsekvenser (ad hoc-analys)** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas. | Begränsad</br>Du kan högerklicka och visa direkt utfall i en friformstabell. | Ja</br>Endast experimentell analys. Varje nod visar den omedelbara (inte slutliga) nästa kontaktyta längs banan. |
+| **Visar var personer slutade (föll ut) och fortsatte igenom (gick igenom)** | Ja</br>Visar både fördefinierade och experimentella resor | Ja</br>Visar fördefinierade resor | Ja</br>Visar för experimentella resor |
+| **Linjära resor** | Ja | Ja | Nej |
+| **Icke-linjära resor med flera startpunkter och sökvägar** | Ja | Nej | Ja |
+| **Primärt mått** | Alla mått, inklusive beräknade värden | Endast session eller person | Endast förekomster |
+| **Sekundärt mått** | Ja<p>Alla mått, inklusive beräknade värden</p> | Nej | Nej |
+| **Komponentstöd i noder eller kontaktytor** | Alla komponenter för alla noder, inklusive mått, beräknade värden, dimensioner, dimensionsobjekt, filter och datumintervall. | Alla komponenter för alla noder, inklusive mått, beräknade värden, dimensioner, dimensionsobjekt, filter och datumintervall. | Endast dimensionsobjekt (utom start- och slutkontaktytan) |
+| **Jämför filter** | Nej | Ja<p>Jämför två olika filter sida vid sida i samma rapport.</p> | Nej |
+| **Adobe Journey Optimizer-resor** | Ja</br>Öppna resor från Journey Optimizer för djupgående analyser och anpassningar | Nej | Nej |
+
+{style="table-layout:auto"}

@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1606'
 ht-degree: 0%
 
 ---
@@ -82,32 +82,31 @@ Nedan följer några exempel på andra insikter som Journey Canvas kan ge. Du ka
 
 * Lägg till en detaljdimension på valfri nod i resan för att visa ytterligare data för den specifika noden
 
-## Välj mellan visualiseringar av arbetsytan på resan och utfall
+## Välj mellan visualiseringar för arbetsyta, bortfall eller flöde i resan
 
-Visualiseringar av arbetsytan på resan liknar [Utfallsvisualiseringar](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), eftersom båda visualiseringarna visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sekvens med sidor.
-
-Det finns dock viktiga skillnader.
+Visualiseringen av arbetsytan på resan har likheter med [Utfallsvisualisering](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) och [Flödesvisualisering](/help/analysis-workspace/visualizations/c-flow/flow.md), men med viktiga skillnader.
 
 ### Förstå skillnaderna
 
-I följande tabell visas de typer av analyser som stöds i arbetsytevisualiseringen på resans yta och i utfallsvisualiseringen:
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-| Funktion | Visualisering av arbetsyta på resans yta | Utfallsvisualisering |
-|---------|----------|---------|
-| Linjära resor | Ja | Ja |
-| Icke-linjära resor med flera ingångspunkter och sökvägar | Ja | Nej |
-| Adobe Journey Optimizer resor | Ja | Nej |
-| Primärt mått | Alla mått, inklusive beräknade värden | Kan endast använda mät för session eller användare |
-| Sekundärt mått | Ja<p>Alla mått, inklusive beräknade värden</p> | Nej |
-| Jämför filter | Nej | Ja<p>Jämför ett [obegränsat antal filter](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+{{journey-visualization-comparisons}}
 
-### Välj vilken visualisering som ska användas
+### När du ska använda Resans arbetsyta
 
-Innan du väljer mellan att använda arbetsytan för resan eller Bortfall måste du [förstå skillnaderna mellan de två](#understand-the-differences).
+Reseduken är oumbärlig för
 
-Om din bortfallsanalys endast omfattar en linjär resa som har en enda känd början och slut bör du använda en [utfallsvisualisering](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) som ett enklare alternativ för de här mer enkla användarresorna.
+* Bortfallsanalys som omfattar resor med flera ingångspunkter och sökvägar.
 
-Resans arbetsyta är avgörande för bortfallsanalys som omfattar resor med flera ingångspunkter och sökvägar, eller för analys av resor som har skapats i Journey Optimizer.
+* Icke-linjära resor med flera ingångspunkter och sökvägar, med en fördefinierad sidsekvens.
+
+* Förberedande ad hoc-analys som bygger på en fördefinierad resa.
+
+* Analys som kräver ett primärt mått som inte är Session, Person eller Förekomster.
+
+* Djupgående analyser av resor med ursprung i Adobe Journey Optimizer.
+
+Använd [tabellen ovan](#understand-the-differences) för att förstå skillnaderna mellan visualiseringar av arbetsyta, utfall och flöde för resan.
 
 ## Analysera Journey Optimizer resor
 

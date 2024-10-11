@@ -4,9 +4,9 @@ title: Flödesöversikt
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -56,3 +56,22 @@ Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en slä
 >[Konfigurera en flödesvisualisering](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
+## Välj mellan visualiseringar av arbetsytan i Flöde, Utfall eller Resurs
+
+Flödesvisualiseringen har likheter med [Utfallsvisualisering](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) och visualisering av arbetsytan på [Resurs](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), men med viktiga skillnader.
+
+### Förstå skillnaderna
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### När ska Flow användas
+
+Flödesvisualiseringar passar bäst för:
+
+* Förberedande ad hoc-analys för nästa kontaktyta på banan. (Använd arbetsytan på resande fot med en fördefinierad sidsekvens, eller de som använder en slutlig bana.)
+
+* Icke-linjära resor med flera ingångspunkter och sökvägar. (Använd arbetsytan Resa för resor med en fördefinierad sidsekvens.)
+
+Använd [tabellen ovan](#understand-the-differences) för att förstå skillnaderna mellan arbetsytan för Flöde, Utfall och Resa.
