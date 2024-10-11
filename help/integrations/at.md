@@ -1,17 +1,17 @@
 ---
-title: Målrapportering i Adobe Customer Journey Analytics
+title: Målrapportering
 description: Integrera Adobe Target med Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-source-git-commit: b189776de8cadae3a93c717b6814f2130ab1be43
+source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# Målrapportering i Adobe Customer Journey Analytics
+# Målrapportering
 
 Med Target Reporting i Customer Journey Analytics kan ni mäta och rapportera om Adobe Target-aktiviteter direkt i Customer Journey Analytics. Den här funktionen är jämförbar med vad som utförs i Adobe Analytics (AA) via Analytics for Target (A4T), men med anslutningen till Adobe Experience Platform (AEP).
 

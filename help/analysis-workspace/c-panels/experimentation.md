@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2101'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Experimentation"
->abstract="Jämför olika användarupplevelser, marknadsförings- och meddelandevarianter för att avgöra vilket som är bäst för att få fram ett visst resultat.<br/><br/>**Parametrar **<br/>**Experimentera**: Det experiment som ska analyseras.<br>**Kontrollvariant**: Kontrollvariant för det valda experimentet.<br/>**Resultatmått**: Upp till 5 standardvärden (ej beräknade) för lyckade försök ska analyseras mot.<br/>**Normaliserar mätvärden**: Personer, sessioner eller händelser. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Detta mått påverkar också hur data aggregeras innan konfidensberäkningen tillämpas."
+>abstract="Jämför olika användarupplevelser, marknadsförings- och meddelandevarianter för att avgöra vilket som är bäst för att få fram ett visst resultat.<br/><br/>**Parametrar **<br/>**Experimentera**: Experimentet som analyseras.<br>**Kontrollvariant**: Kontrollvariant för det valda experimentet.<br/>**Resultatmått**: Upp till 5 standardvärden (ej beräknade) för lyckade försök ska analyseras mot.<br/>**Normaliserar mätvärden**: Personer, sessioner eller händelser. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Detta mått påverkar också hur data aggregeras innan konfidensberäkningen tillämpas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ Läs mer om [integreringen mellan Adobe Customer Journey Analytics och Adobe Tar
 
 ## Åtkomstkontroll {#access}
 
-Experimentationspanelen kan användas av alla Customer Journey Analytics-användare. Inga administratörsrättigheter eller andra behörigheter krävs. [Krav](#prerequisites) kräver dock åtgärder som bara administratörer kan utföra.
+Experimentationspanelen kan användas av alla Customer Journey Analytics-användare. Inga administratörsrättigheter eller andra behörigheter krävs. Förutsättningarna kräver dock åtgärder som bara administratörer kan utföra.
 
 ## Nya funktioner i beräknade värden
 
@@ -52,6 +52,7 @@ Om du vill använda panelen för experimenterande måste du uppfylla följande k
 ### Skapa en anslutning för att experimentera med datauppsättningar
 
 Det rekommenderade dataschemat är att experimentera data finns i en [objektarray](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste finnas i en **enkel**-objektmatris. Om du har experimenterat med data i en enda dimension (med experimentella data och variantdata i en avgränsad sträng) kan du använda inställningen [delsträng](/help/data-views/component-settings/substring.md) i datavyer för att dela dimensionen i två delar så att den kan användas i panelen.
+
 
 När dina experimentdata har [importerats](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) till Adobe Experience Platform [skapar du en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
 
@@ -79,8 +80,6 @@ Så här använder du en **[!UICONTROL Experimentation]**-panel:
 
 1. Observera [utdata](#panel-output) för panelen.
 
-   ![Experimenteringspanelen har dragits till ett projekt.](assets/experiment.png)
-
    >[!IMPORTANT]
    >
    >Om den nödvändiga konfigurationen i datavyer i Customer Journey Analytics inte har slutförts får du det här meddelandet innan du kan fortsätta: [!UICONTROL Please configure the experiment and variant dimensions in Data views].
@@ -92,13 +91,15 @@ Så här använder du panelen Experimentation:
 
 1. Konfigurera panelens indatainställningar:
 
+   ![Experimenteringspanelen har dragits till ett projekt.](assets/experiment-input.png)
+
    | Inställning | Definition |
    | --- | --- |
    | **[!UICONTROL Date Range]** | Datumintervallet för panelen Experimentation anges automatiskt baserat på den första händelsen som togs emot i Customer Journey Analytics för det valda experimentet. Du kan begränsa eller utöka datumintervallet till en mer specifik tidsram om det behövs. |
    | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har markerats med etiketten **[!UICONTROL Experiment]** i datavyer och de tre senaste månadernas experimentdata. |
    | **[!UICONTROL Control variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketten **[!UICONTROL Variant]** i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
-   | **[!UICONTROL Success metrics]** | Mätvärden eller mätvärden som en användare jämför varianter med. Den variant som har det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som den&quot;bästa varianten&quot; i ett experiment. Du kan lägga till upp till 5 mätvärden. |
-   | **[!UICONTROL Normalizing metric]** | Basen ([!UICONTROL People], [!UICONTROL Sessions] eller [!UICONTROL Events]) som ett test körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som **[!UICONTROL Conversions per session]** eller **[!UICONTROL Conversions per person]**. |
+   | **[!UICONTROL Success metrics]** ➊ | Mätvärden eller mätvärden som en användare jämför varianter med. Varianten med det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som *varianten* för ett experiment med bästa resultat. Du kan lägga till upp till 5 mätvärden. |
+   | **[!UICONTROL Normalizing metric]** ➋ | Basen ([!UICONTROL People], [!UICONTROL Sessions] eller [!UICONTROL Events]) som ett test körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som sidvy |
    | **[!UICONTROL Include confidence upper/lower bounds]** | Aktivera det här alternativet om du vill visa övre och nedre gränser för konfidensnivåer. |
 
 
@@ -106,17 +107,14 @@ Så här använder du panelen Experimentation:
 
 ### Panelutdata
 
-Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att välja redigeringspennan längst upp till höger.
+Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen visas [sammanfattningsändringar](../visualizations/summary-number-change.md) som en påminnelse om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att välja redigeringspennan längst upp till höger.
 
 Du får också en textsammanfattning som anger om experimentet är slutgiltigt eller inte och som sammanfattar resultatet. Slutsatsen baseras på statistisk signifikans (se [Statistisk metod](#adobes-statistical-methodology)). Du kan se sammanfattningsnummer för den mest högpresterande varianten med högsta lyft och självförtroende.
 
-För varje framgångsmått som du har valt visas en frihandstabell och en konverteringsgrad.
+För varje framgångsmått som du har valt visas en [frihandstabell](../visualizations/freeform-table/freeform-table.md)-visualisering och en [linje](../visualizations/line.md)-visualisering.
 
-![Experimentationsutdata visar en friformstabell och en konverteringsgrad.](assets/exp-output1.png)
+![Experimentationsutdata visar en friformstabell och en konverteringsgrad.](assets/experiment-output.png)
 
-Diagrammet [!UICONTROL Line] ger dig prestanda för [!UICONTROL Control] jämfört med [!UICONTROL Control Variant]:
-
-![Linjediagrammets utdata visar prestanda för Kontroll jämfört med Kontrollvariant.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -124,11 +122,11 @@ Diagrammet [!UICONTROL Line] ger dig prestanda för [!UICONTROL Control] jämfö
 
 #### Tolka resultaten
 
-1. **Experimentationen är klar**: Varje gång du visar experimenteringsrapporten analyseras de data som samlats in i experimentet fram till den här tidpunkten. Analysen deklarerar att ett experiment är avgörande när ett giltigt konfidensintervall för en tid överskrider ett tröskelvärde på 95 % för *minst en* av varianterna. Med mer än två armar tillämpas en Benjamini-Hochberg-korrigering för korrigering vid testning av flera hypoteser.
+1. **Experimentationen är klar**: Varje gång du visar experimenteringsrapporten analyseras de data som samlats in i experimentet fram till den här tidpunkten. Analysen deklarerar att ett experiment är avgörande när den giltiga *anytime*-förtroendet korsar ett tröskelvärde på 95 % för *minst en* av varianterna. Med mer än två armar tillämpas en Benjamini-Hochberg-korrigering för korrigering vid testning av flera hypoteser.
 
-2. **Mest högpresterande variant**: När ett experiment har deklarerats som entydigt markeras varianten med den högsta konverteringsgraden som den mest presterande varianten. Observera att denna variant antingen måste vara kontroll- eller baslinjevarianten, eller en av varianterna som korsar det 95% som gäller vid varje tidpunkt (med korrigeringar av Benjamini-Hochberg tillämpade).
+2. **Mest högpresterande variant**: När ett experiment har deklarerats som entydigt markeras varianten med den högsta konverteringsgraden som den mest presterande varianten. Observera att den här varianten antingen måste vara kontroll- eller baslinjevarianten, eller en av varianterna som korsar det giltiga konfidensintervallet på 95 % *någon gång* (med korrigeringar av Benjamini-Hochberg tillämpade).
 
-3. **Konverteringsgrad**: Den konverteringsgrad som visas är en proportion mellan det genomförda mätvärdet och det normaliserande mätvärdet. Observera att det här värdet ibland kan vara större än 1 om mätvärdet inte är binärt (1 eller 0 för varje enhet i experimentet)
+3. **Konverteringsgrad**: Den konverteringsgrad som visas är ett förhållande mellan ➊ för lyckade resultat och det normaliserande ➋. Observera att det här värdet kan vara större än 1 om mätvärdet inte är binärt (1 eller 0 för varje enhet i experimentet)
 
 4. **Lyft**: Sammanfattningen av expertrapporten visar Lyft över baslinjen, vilket är ett mått på den procentuella förbättringen av konverteringsgraden för en given variant över baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given variant och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
 
