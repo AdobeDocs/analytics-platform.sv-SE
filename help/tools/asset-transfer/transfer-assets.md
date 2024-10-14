@@ -1,9 +1,9 @@
 ---
 title: Överför resurser
 description: Lär dig överföra komponenter från en användare till en annan
-hide: true
-hidefromtoc: true
-source-git-commit: 1a0422144b795be7f129b13208e93f8d3645a8e7
+role: Admin
+solution: Customer Journey Analytics
+source-git-commit: faa9545fa3928a19aeaaf7285a9643e7dc253cea
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
