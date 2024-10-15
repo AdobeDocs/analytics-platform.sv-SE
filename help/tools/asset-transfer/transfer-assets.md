@@ -3,10 +3,10 @@ title: Överför resurser
 description: Lär dig överföra komponenter från en användare till en annan
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: faa9545fa3928a19aeaaf7285a9643e7dc253cea
+source-git-commit: 9663a24c2430d3822cb83876ea048b6423405215
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 1%
+source-wordcount: '531'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,14 @@ Resursöverföring kräver produktadministratörsbehörighet för Customer Journ
 
 1. Gå igenom varje komponentmapp i den vänstra navigeringen för att välja enskilda komponenter eller alla resurser i en mapp som ska överföras.
 
-   Observera att när du överför resurser från en administratör till en icke-administratör uppgraderas inte mottagaren till en administratör.
+   >[!NOTE]
+   >
+   >Att överföra resurser från en administratör till en annan person uppgraderar inte mottagaren till en administratör.
+
+
+   >[!NOTE]
+   >
+   >    När resurser som refererar till andra komponenter överförs (till exempel projekt som refererar till andra filter och beräknade värden), delas komponenter som inte ägs av den aktuella ägaren av projektet endast med mottagaren. Ägarskapet för alla andra komponenter överförs till mottagaren.
 
 1. Om du vill markera _alla_ resurser i en mapp markerar du kryssrutan bredvid **[!UICONTROL Name]** högst upp i tabellen.
 
@@ -58,17 +65,31 @@ Resursöverföring kräver produktadministratörsbehörighet för Customer Journ
    >
    >Stäng inte skärmen under överföringen för att undvika att processen avbryts. Detta ger en smidig överföringsupplevelse.
 
+## Överföringsresultat
+
+Det finns tre möjliga konsekvenser för en överföring:
+
+- **Överföringen lyckades**: &quot;Assets har överförts.&quot;
+
+- **Delvis slutförd**: &quot;Vissa resurser har överförts.&quot;
+
+- **Överföringsfel**: &quot;Det gick inte att överföra resurser. Försök igen.&quot;
+
 ## Överför resurser under uppgradering från Adobe Analytics till Customer Journey Analytics
 
 Ett av de största användningsområdena för överföring av mediefiler är vid uppgradering från Adobe Analytics till Customer Journey Analytics.
 
 Med funktionen [Komponentmigrering](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) i Adobe Analytics kan du migrera administratörsägda projekt till andra administratörer. Alla komponenter som ingår i dessa projekt återskapas sedan i Customer Journey Analytics och mottagaradministratören äger alla dessa komponenter, oavsett vem som skapade dem.
 
-Med det här verktyget kan administratörer sedan omtilldela komponenter till sina rättsinnehavare.
+Med det här verktyget kan administratörer sedan omtilldela komponenter till sina rättsinnehavare, oavsett om de är administratörer eller inte.
+
+>[!IMPORTANT]
+>
+>Även om du kan överföra komponenter med det här verktyget måste du som administratör fortfarande se till att mottagaren har tillgång till de datavyer som krävs för att visa/använda dessa komponenter. Du kan visa och tilldela behörigheter i [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html).
 
 ## Exportera till CSV
 
-Du kan exportera en lista över resurser som överförts från en användare till en annan till en CSV-fil.
+Med alternativet **[!UICONTROL Export to CSV]** kan administratörer bara hämta en lista över användare som visas i en CSV-fil. De kan inte exportera en lista med överförda resurser till en CSV-fil.
 
 <!---## Unknown users
 
