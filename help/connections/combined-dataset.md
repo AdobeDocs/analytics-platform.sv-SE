@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
+source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 1%
+source-wordcount: '919'
+ht-degree: 3%
 
 ---
 
@@ -30,20 +30,20 @@ Titta på följande exempel. Du har två händelsedatamängder, där vart och et
 >
 >Adobe Experience Platform lagrar vanligtvis en tidsstämpel i UNIX® millisekunder. I det här exemplet används datum och tid för läsbarhet.
 
-| `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
-| --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | |
-| `user_310` | `1 Jan 7:04 AM` | | | `2` |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | `3` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | `4` |
-| `user_847` | `2 Jan 12:44 PM` | | | `2` |
+| example_id | tidsstämpel | string_color | string_Animal | metrisk_a |
+| --- | --- | --- | --- | ---: |
+| user_310 | 1 jan 07:02 | Röd | Fox | |
+| user_310 | 1 jan 07:04 | | | 2 |
+| user_310 | 1 jan 07:08 | Blå | | 3 |
+| user_847 | 2 Jan 12:31 PM | | Sköldpadda | 4 |
+| user_847 | 2 jan 12:44 PM | | | 2 |
 
-| `different_id` | `timestamp` | `string_color` | `string_shape` | `metric_b` |
-| --- | --- | --- | --- | --- |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | `Circle` | `8.5` |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
+| different_id | tidsstämpel | string_color | string_shape | metrisk_b |
+| --- | --- | --- | --- | ---: |
+| user_847 | 2 Jan 12:26 PM | Gul | Cirkel | 8,5 |
+| user_847 | 2 Jan 1:01 PM | Röd | | |
+| alternateid_656 | 2 Jan 8:58 PM | Röd | Fyrkant | 4,2 |
+| alternateid_656 | 2 jan 9:03 PM | | Triangel | 3,1 |
 
 När du skapar en anslutning med dessa två händelsedatamängder och har identifierat
 
@@ -52,19 +52,31 @@ När du skapar en anslutning med dessa två händelsedatamängder och har identi
 
 följande kombinerade datauppsättning används för rapportering.
 
-| `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
-| --- | --- | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | | | |
-| `user_310` | `1 Jan 7:04 AM` | | | | `2` | |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | | `3` | |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | | `Circle` | | `8.5` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | | `4` | |
-| `user_847` | `2 Jan 12:44 PM` | | | | `2` | |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
+| id | tidsstämpel | string_color | string_Animal | string_shape | metrisk_a | metrisk_b |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| user_310 | 1 jan 07:02 | Röd | Fox | | | |
+| user_310 | 1 jan 07:04 | | | | 2 | |
+| user_310 | 1 jan 07:08 | Blå | | | 3 | |
+| user_847 | 2 Jan 12:26 PM | Gul | | Cirkel | | 8,5 |
+| user_847 | 2 Jan 12:31 PM | | Sköldpadda | | 4 | |
+| user_847 | 2 jan 12:44 PM | | | | 2 | |
+| user_847 | 2 Jan 1:01 PM | Röd | | | | |
+| alternateid_656 | 2 Jan 8:58 PM | Röd | | Fyrkant | | 4,2 |
+| alternateid_656 | 2 jan 9:03 PM | | | Triangel | | 3,1 |
 
-Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen baseras `string_color` på schemasökvägen `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen `_experience.somethingelse.string_color`. I det här scenariot sammanfogas data **inte** till en kolumn i den resulterande kombinerade datauppsättningen. I stället är resultatet två `string_color`-kolumner i den kombinerade datauppsättningen.
+Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen baseras `string_color` på schemasökvägen `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen `_experience.somethingelse.string_color`. I det här scenariot sammanfogas data **inte** till en kolumn i den resulterande kombinerade datauppsättningen. I stället är resultatet två `string_color`-kolumner i den kombinerade datauppsättningen:
+
+| id | tidsstämpel | _upplevelse.<br/>vad som helst.<br/>strängfärg | upplevelse.<br/>något annat.<br/>strängfärg | string_Animal | string_shape | metrisk_a | metrisk_b |
+| --- | --- | --- | --- | --- | --- | ---: | ---:|
+| user_310 | 1 jan 07:02 | Röd | | Fox | | | |
+| user_310 | 1 jan 07:04 | | | | | 2 | |
+| user_310 | 1 jan 07:08 | Blå | | | | 3 | |
+| user_847 | 2 Jan 12:26 PM | | Gul | | Cirkel | | 8,5 |
+| user_847 | 2 Jan 12:31 PM | | | Sköldpadda |  | 4 | |
+| user_847 | 2 jan 12:44 PM | | | | | 2 | |
+| user_847 | 2 Jan 1:01 PM | | Röd | | | | |
+| alternateid_656 | 2 Jan 8:58 PM | | Röd | | Fyrkant | | 4,2 |
+| alternateid_656 | 2 jan 9:03 PM | | | | Triangel | | 3,1 |
 
 Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session. Fält med identiska schemasökvägar sammanfogas.
 
@@ -73,7 +85,7 @@ Detta koncept gäller också attribuering. Det spelar ingen roll vilken datamän
 Om din anslutning bara innehöll den första tabellen och inte den andra skulle följande visas om du drog en rapport med måtten `string_color` och `metric_a` med hjälp av den senaste beröringsattribueringen:
 
 | string_color | metrisk_a |
-| --- | --- |
+| --- | ---: |
 | Ospecificerad | 6 |
 | Blå | 3 |
 | Röd | 2 |
@@ -81,7 +93,7 @@ Om din anslutning bara innehöll den första tabellen och inte den andra skulle 
 Om du däremot inkluderade båda tabellerna i anslutningen, ändras attribueringen eftersom `user_847` finns i båda datauppsättningarna. En rad från den andra datauppsättningsattributen `metric_a` till Gul, där de tidigare var ospecificerade:
 
 | string_color | metrisk_a |
-| --- | --- |
+| --- | ---: |
 | Gul | 6 |
 | Blå | 3 |
 | Röd | 2 |
