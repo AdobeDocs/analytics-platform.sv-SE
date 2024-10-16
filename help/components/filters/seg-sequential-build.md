@@ -3,16 +3,16 @@ description: Sekventiella filter är filter som använder operatorn THEN för at
 title: Sekventiella filter
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: d6ea541de7c8b97151f16a01f61a002c5b877e7c
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
 
 # Sekventiella filter
 
-Du skapar sekventiella filter med hjälp av operatorn Sedan, i stället för operatorn And eller Or mellan komponent, behållare och komponenter eller behållare. Den logiska operatorn then anger att ett filtervillkor inträffar, följt av ett annat.
+Du skapar sekventiella filter med hjälp av den logiska operatorn Sedan mellan komponenter, behållare och komponenter, eller behållare. Den logiska operatorn then anger att ett filtervillkor inträffar, följt av ett annat.
 
 +++ Här är en video som visar sekventiell segmentering.
 
@@ -23,13 +23,13 @@ Du skapar sekventiella filter med hjälp av operatorn Sedan, i stället för ope
 +++
 
 
-Ett sekventiellt filter har [grundläggande funktioner](#basics) och ytterligare alternativ som du kan konfigurera för att göra sekventiellt filter mer komplext:
+Ett sekventiellt filter har [grundläggande funktioner](#basics) och ytterligare alternativ som du kan konfigurera för att göra det sekventiella filtret mer komplext:
 
 ![Sekventiellt filter](assets/sequential-filter.gif)
 
 * [Efter- och inom](#after-and-within)-begränsningar för logiken Sedan i sekvensfilterdefinitionen:
 
-* Vilka data som ska [inkluderas](#include) som en del av den övergripande sekvensen för filterdefinitionen. Eller för en sekvens som definieras som en del av en behållare. Som standard beaktas alla matchande data som identifieras av ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include Everyone].
+* Vilka data som ska [inkluderas](#include) som en del av den övergripande sekvensen för filterdefinitionen. Eller för en sekvens som definieras som en del av en behållare. Som standard beaktas alla matchande data. Dessa data identifieras av ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include Everyone].
 
    * Välj ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** om du bara vill ta hänsyn till data före sekvensen.
    * Välj ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** om du bara vill ta hänsyn till data efter sekvensen.
@@ -50,7 +50,7 @@ Exemplen nedan visar hur du använder sekventiella filter i olika fall.
 
 #### Enkel sekvens
 
-Identifiera personer som visade en sida och sedan såg en annan sida. Data på händelsenivå filtrerar den här sekvensen oavsett tidigare, tidigare eller tillfälliga sessioner eller tidpunkten eller antalet sidvisningar mellan sessionerna.
+Identifiera personer som visade en sida och sedan såg en annan sida. Data på händelsenivå filtreras med den här sekvensen. Oberoende av tidigare, tidigare eller tillfälliga sessioner, eller tid eller antal sidvisningar mellan sessionerna.
 
 ![Sekventiellt filter omfattar alla](assets/sequence-include-everyone.png)
 
@@ -75,7 +75,7 @@ Identifiera personer som vid sin första session besökte en viss sida och sedan
 
 #### Kapsla en sekvens
 
-Identifiera alla sessioner där en person besöker en sida före en annan och sedan har uppföljningssessioner som inbegriper två andra sidor. Exempel: identifiera alla sessioner där en person först besöker hemsidan, sedan sidan i kategori 1 och sedan har andra sessioner där sidan i kategori 2 och kategori 3 besöktes.
+Identifiera alla sessioner där en person besöker en sida före en annan och sedan har uppföljningssessioner som omfattar två andra sidor. Exempel: identifiera alla sessioner där en person först besöker hemsidan, sedan en sida i kategori 1 och sedan har andra sessioner där sidan i kategori 2 och kategori 3 besöktes.
 
 ![Kapslad sekvens](assets/sequence-nested.png)
 
@@ -92,14 +92,14 @@ Så här använder du tidsbegränsningar för operatorn **[!UICONTROL Then]**:
 1. Ange en tidsperiod (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, fram till **[!UICONTROL Years]**).
 1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**eller **[!UICONTROL +]**.
 
-Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tidskonflikt.
+Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tidsbegränsning.
 
 I tabellen nedan förklaras i detalj operatorerna för tidsbegränsning.
 
 | Operatorer | Beskrivning |
 |--- |--- |
-| **[!UICONTROL After]** | Operatorn [!UICONTROL After] används för att ange en minimigräns för hur lång tid det tar mellan två kontrollpunkter. När du anger After-värdena börjar tidsgränsen när filtret används. Om till exempel operatorn Efter är inställd på en behållare för att identifiera personer som besöker sida A men inte återvänder till sida B förrän efter en dag, börjar den dagen när besökaren lämnar sida A.  För att besökaren ska kunna inkluderas i filtret måste minst 1440 minuter (en dag) visas efter att sidan A har lämnat sidan A för att sidan B ska kunna visas. |
-| **[!UICONTROL Within]** | Operatorn [!UICONTROL Within] används för att ange en maximal tidsgräns mellan två kontrollpunkter. Om operatorn [!UICONTROL Within] till exempel är inställd på en behållare för att identifiera personer som besöker sida A och sedan återbesöker sida B inom en dag, börjar den dagen när personen lämnar sida A. För att inkluderas i filtret har personen högst en dag innan sidan B öppnas. För den person som ska inkluderas i filtret måste öppningssida B visas inom högst 1440 minuter (en dag) efter att sidan A har lämnat sidan B. |
+| **[!UICONTROL After]** | Operatorn [!UICONTROL After] används för att ange en minimigräns för hur lång tid det tar mellan två kontrollpunkter. När du anger After-värdena börjar tidsgränsen när filtret används. Om operatorn [!UICONTROL After] till exempel är inställd på en behållare för att identifiera personer som besöker sida A, men inte återvänder till sida B förrän efter en dag, börjar den dagen när besökaren lämnar sida A.  För att besökaren ska kunna inkluderas i filtret måste minst 1440 minuter (en dag) visas efter att sidan A har lämnat sidan A för att sidan B ska kunna visas. |
+| **[!UICONTROL Within]** | Operatorn [!UICONTROL Within] används för att ange en maximal tidsgräns mellan två kontrollpunkter. Om operatorn [!UICONTROL Within] till exempel är inställd på en behållare för att identifiera personer som besöker sida A och sedan återgår till sida B inom en dag, börjar den dagen när personen lämnar sida A. För att inkluderas i filtret har personen högst en dag innan sidan B öppnas. För den person som ska inkluderas i filtret måste öppningssida B visas inom högst 1440 minuter (en dag) efter att sidan A har lämnat sidan B. |
 | **[!UICONTROL After but Within]** | När du använder både operatorn [!UICONTROL After] och operatorn [!UICONTROL Within] börjar och slutar båda operatorerna parallellt, inte sekventiellt. <br/>Du kan till exempel skapa ett filter med behållaren inställd på: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>Villkoren för att identifiera besökare i det här filtret uppfylls bara mellan en och två veckor. Båda villkoren tillämpas från och med den första sidvyn. |
 
 
@@ -138,7 +138,7 @@ Med begränsningarna ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]
 
 #### Exempel
 
-Nedan visas ett exempel på ett sekventiellt filter som söker efter personer som besökt en produktkategorisida (Kvinna | Showen), följt av en utcheckningssida (utcheckning) | Tack) på en sida.
+Nedan visas ett exempel på ett sekventiellt filter som söker efter personer som besökt en produktkategorisida (Kvinnor | Showen), följt av en utcheckningssida (utcheckning) | Tack) på en sida.
 
 ![Sekvensfilter i](assets/sequence-filter-within.png)
 
@@ -163,18 +163,18 @@ Sekvensfiltret identifierar data som matchar det angivna mönstret som helhet.  
 
 Följande exempelsekvenser matchar eller matchar inte:
 
-| Sekvens | ![GodkännAvvisa](/help/assets/icons/ApproveReject.svg) |
-|--- | --- |
-| A och sedan B i samma session | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| A, sedan C och sedan D och B (mellan olika sessioner) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| B och A | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
+| | Sekvens | ![GodkännAvvisa](/help/assets/icons/ApproveReject.svg) |
+|---:|--- | --- |
+| 1 | `Women \| Shoes` och sedan `Checkout \| Thank You` i samma session | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 2 | `Women \| Shoes` sedan `Men \| Shoes` sedan `Checkout \| Thank You` (mellan olika sessioner) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 3 | `Checkout \| Thank You` och sedan `Women \| Shoes` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
 
 ### Endast före sekvens och Endast efter sekvens
 
 Alternativen ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** och ![ SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** filtrerar data till en delmängd före eller efter den angivna sekvensen.
 
-* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Endast före sekvens**: Inkluderar alla data före en sekvens och de första data i själva sekvensen (se exempel 1, 3). Om en sekvens visas flera gånger som en del av data, inkluderar [!UICONTROL Only Before Sequence] den första träffen av den sista sekvensen och alla tidigare träffar (se exempel 2).
-* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Endast efter sekvens**: Inkluderar alla träffar efter en sekvens och de sista data som finns i själva sekvensen (se exempel 1, 3). Om en sekvens visas flera gånger som en del av data, inkluderar Endast efter den senaste träffen av den första sekvensen och alla efterföljande träffar (se exempel 2).
+* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Endast före sekvens**: Inkluderar alla data före en sekvens och de första data i själva sekvensen. Om en sekvens visas flera gånger som en del av data, inkluderar [!UICONTROL Only Before Sequence] den första träffen av den sista förekomsten av sekvensen och alla tidigare träffar.
+* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Endast efter sekvens**: Inkluderar alla träffar efter en sekvens och de sista data som finns i själva sekvensen. Om en sekvens visas flera gånger som en del av data, inkluderar [!UICONTROL Only After Sequence] den senaste träffen av den första förekomsten av sekvensen och alla efterföljande träffar.
 
 Överväg en definition som specificerar en sekvens av en komponent med kriterier som identifieras av B, följt (därefter) av en komponent med kriterier som identifieras av D. De tre alternativen identifierar data enligt följande:
 
@@ -199,7 +199,7 @@ Du har definierat tre versioner av ett sekventiellt filter för webbplatsavsnitt
 
 ![Sekvensfilter](assets/site-section-filters.png)
 
-När du rapporterar om webbplatsavsnitt med dessa tre filter är det här exempelutdata i en friformstabell.
+När du rapporterar på webbplatsavsnitt med dessa tre filter ser exempelutdata i en friformstabell ut så här:
 
 ![Sekventiell filterrapport](assets/sequential-filter-freeform-table.png)
 
@@ -215,7 +215,7 @@ Exempel på uteslutningsdefinitioner är:
 * **Uteslut refererande domäner**. Använd en definition som endast innehåller refererande domäner från Google.com och utesluter alla andra.
 * **Identifiera icke-köpare**. Identifiera när order är större än noll och exkludera sedan [!UICONTROL Person].
 
-[!UICONTROL Exclude] kan användas för att identifiera en sekvens där specifika sessioner eller händelser inte utförs av personen. [!UICONTROL Exclude] kan också ingå i en logikgrupp (se nedan).
+[!UICONTROL Exclude] kan användas för att identifiera en sekvens där specifika sessioner eller händelser inte utförs av personen. [!UICONTROL Exclude] kan också inkluderas i en [!UICONTROL Logic Group] (se nedan).
 
 Du kan exkludera behållare, inte komponenter.
 
@@ -225,7 +225,7 @@ Nedan finns exempel på [!UICONTROL Exclude].
 
 #### Uteslut inom
 
-Identifiera personer som besökt en sida, inte besökt en annan sida och sedan besökt ytterligare en sida. Du utelämnar behållaren med ![Uteslut](/help/assets/icons/Setting.svg). En exkluderad behållare identifieras av ett rött tunt streck till vänster.
+Identifiera personer som besökt en sida, inte besökt en annan sida och sedan besökt ytterligare en sida. Du utelämnar behållaren med ![Inställning](/help/assets/icons/Setting.svg) [!UICONTROL Exclude]. En exkluderad behållare identifieras av ett tunt rött streck till vänster.
 
 ![Exkludera sekvens](assets/sequence-exclude.png)
 
@@ -252,7 +252,7 @@ Identifiera personer som besökt en sida men aldrig besökt andra sidor. Till ex
 
 Med Logic Group kan du gruppera villkor i en enda sekventiell filterkontrollpunkt. Som en del av sekvensen utvärderas logiken som definieras i behållaren som identifieras som logikgrupp efter en sekventiell kontrollpunkt och före efterföljande sekventiell kontrollpunkt.
 
-Villkoren inom logikgruppen kan uppfyllas i vilken ordning som helst. Icke-sekventiella behållare (händelse, session, person) kräver däremot inte att deras villkor uppfylls i den övergripande sekvensen, vilket ger ett möjligt intuitivt resultat om de används med en Då-operator.
+Villkoren inom logikgruppen kan uppfyllas i vilken ordning som helst. Icke-sekventiella behållare (händelse, session, person) kräver däremot inte att deras villkor uppfylls i den övergripande sekvensen, vilket ger eventuella intuitiva resultat om de används med en then-operator.
 
 [!UICONTROL Logic Group] har utformats för att behandla *flera villkor som en grupp, utan någon ordning* bland de grupperade villkoren. I annat fall anges att ordningen för villkoren i en logikgrupp inte är relevant.
 
@@ -267,9 +267,9 @@ Här är några exempel på hur du använder logikgruppsbehållaren.
 
 #### Alla beställningar
 
-Identifiera personer som visade en sida och sedan visade varje sida från en annan uppsättning sidor i valfri ordning. Till exempel besökte personer som besökte hemsidan och sedan alla sidor på Men, Kvinnor och Barn, oavsett ordningsföljd.
+Identifiera personer som besökte en sida och sedan visade varje sida från en annan uppsättning sidor i valfri ordning. Till exempel besökte personer som besökte hemsidan, sedan varje sida för män, sidan Kvinnor och sidan för barn, oavsett ordningen.
 
-Du kan skapa det här filtret utan en [!UICONTROL Logic Group], men konstruktionen kommer att bli komplex och krånglig. Du måste ange alla sidsekvenser som besökaren kan visa. Av tydlighetsskäl öppnas bara den första behållaren ![ChevronDown](/help/assets/icons/ChevronDown.svg) och de andra behållarna stängs ![ChevronRight](/help/assets/icons/ChevronRight.svg) . Du kan härleda innehållet i de andra behållarna med hjälp av rubrikerna.
+Du kan skapa det här filtret utan en [!UICONTROL Logic Group], men konstruktionen kommer att bli komplex och krånglig. Ange varje sidsekvens som besökaren kan visa. För tydlighetens skull bör det endast vara den första behållaren som öppnas ![ChevronDown](/help/assets/icons/ChevronDown.svg) och de andra behållarna stängs ![ChevronRight](/help/assets/icons/ChevronRight.svg). Du kan härleda innehållet i de andra behållarna med hjälp av rubrikerna.
 
 ![Exempel som inte använder en logikgrupp](assets/logicgroup-example-notusing.png)
 
@@ -285,13 +285,13 @@ Identifiera personer som besökt en sida eller en annan sida och sedan besökt y
 
 #### Uteslut och
 
-Identifiera personer som besökt en sida och sedan uttryckligen inte besökt en uppsättning andra sidor, utan besökt en annan sida. Till exempel besökte de personer som besökte hemsidan inte någon av sidorna Män eller Kvinnor, utan besökte barnsidan.
+Identifiera personer som besökt en sida och som då uttryckligen inte besökt en uppsättning andra sidor, men som också besökt en annan sida. Till exempel besökte de personer som besökte hemsidan inte någon av sidorna Män eller Kvinnor, utan besökte barnsidan.
 
 ![Logikgrupp exkluderad och](assets/logicgroup-exclude-and.png)
 
 #### Uteslut eller
 
-Identifiera personer som besökt en sida och sedan uttryckligen inte besökt någon sida i en uppsättning sidor, men som besökt en annan sida. Till exempel besökte de som besökte hemsidan inte sidan Män och Kvinnor, utan besökte barnsidan.
+Identifiera personer som besökt en sida och som då uttryckligen inte besökt någon sida i en uppsättning sidor, men som besökt ännu en sida. Till exempel besökte de som besökte hemsidan inte sidan Män och Kvinnor, utan besökte barnsidan.
 
 ![Logikgrupp exkluderad och](assets/logicgroup-exclude-or.png)
 
@@ -307,7 +307,7 @@ An example of a complex sequential filter if you want to find the persons that
 
 ## Ett exempel
 
-Som ett sista exempel vill ni identifiera personer som har lärt sig om en viss produktsida, utan att de här personerna någonsin påverkas av er kampanj Empower Your Move. Och vid sitt första besök i din webbutik tittade de på hemsidan men inte närmare på några friskvårdsprodukter (kugghjulsprodukter) från kategorin Män. Under nästa session gick de dock direkt efter det till en produktsida och lade en onlinebeställning utan att gå igenom startsidan först.
+Det sista exemplet är att ni vill identifiera personer som lärt sig om en viss produktsida, utan att de här personerna någonsin påverkas av er kampanj Empower Your Move. Och vid sitt första besök i din webbutik tittade de på hemsidan men inte närmare på några friskvårdsprodukter (kugghjulsprodukter) från kategorin Män. Under nästa session direkt efter det gick de till en produktsida och lade en onlineorder utan att gå igenom startsidan först.
 
 
 ![Exempel på komplexa sekventiella filter](assets/sequential-complex.png)

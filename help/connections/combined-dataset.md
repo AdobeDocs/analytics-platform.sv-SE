@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8241bcc4a2653da456c1577eb95d5504ca118cd9
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 3%
@@ -66,7 +66,7 @@ följande kombinerade datauppsättning används för rapportering.
 
 Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen baseras `string_color` på schemasökvägen `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen `_experience.somethingelse.string_color`. I det här scenariot sammanfogas data **inte** till en kolumn i den resulterande kombinerade datauppsättningen. I stället är resultatet två `string_color`-kolumner i den kombinerade datauppsättningen:
 
-| id | tidsstämpel | _upplevelse.<br/>vad som helst.<br/>strängfärg | upplevelse.<br/>något annat.<br/>strängfärg | string_Animal | string_shape | metrisk_a | metrisk_b |
+| id | tidsstämpel | _upplevelse.<br/>vad som helst.<br/>strängfärg | _upplevelse.<br/>något annat.<br/>strängfärg | string_Animal | string_shape | metrisk_a | metrisk_b |
 | --- | --- | --- | --- | --- | --- | ---: | ---:|
 | user_310 | 1 jan 07:02 | Röd | | Fox | | | |
 | user_310 | 1 jan 07:04 | | | | | 2 | |
