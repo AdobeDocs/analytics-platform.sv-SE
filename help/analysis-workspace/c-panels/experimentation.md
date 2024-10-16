@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
+source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 
 
-På panelen **[!UICONTROL Experimentation]** kan analytiker jämföra olika varianter av användarupplevelser, marknadsföring och meddelanden för att avgöra vilket som är bäst för att få ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst: online, offline, från Adobe-lösningar som Target eller Journey Optimizer, och till och med från BYO (hämta in dina egna) data.
+På panelen **[!UICONTROL Experimentation]** kan analytiker jämföra olika användarupplevelser, marknadsförings- och meddelandevarianter för att avgöra vilket som är bäst för att få ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst: online, offline, från Adobe-lösningar som Target eller Journey Optimizer, och till och med från BYO (hämta in dina egna) data.
 
 Läs mer om [integreringen mellan Adobe Customer Journey Analytics och Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
 
@@ -41,9 +41,9 @@ Läs mer om [integreringen mellan Adobe Customer Journey Analytics och Adobe Tar
 
 Experimentationspanelen kan användas av alla Customer Journey Analytics-användare. Inga administratörsrättigheter eller andra behörigheter krävs. Förutsättningarna kräver dock åtgärder som bara administratörer kan utföra.
 
-## Nya funktioner i beräknade värden
+## Funktioner i beräknade värden
 
-Två nya avancerade funktioner lades till: Lyft och Förtroende. Mer information finns i [Referens - avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md).
+Det finns två avancerade funktioner: Lyft och Förtroende. Mer information finns i [Referens - avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md).
 
 ## Förutsättningar
 
@@ -51,7 +51,7 @@ Om du vill använda panelen för experimenterande måste du uppfylla följande k
 
 ### Skapa en anslutning för att experimentera med datauppsättningar
 
-Det rekommenderade dataschemat är att experimentera data finns i en [objektarray](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste finnas i en **enkel**-objektmatris. Om du har experimenterat med data i en enda dimension (med experimentella data och variantdata i en avgränsad sträng) kan du använda inställningen [delsträng](/help/data-views/component-settings/substring.md) i datavyer för att dela dimensionen i två delar så att den kan användas i panelen.
+Det rekommenderade dataschemat är att experimenteringsdata finns i en [objektarray](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste finnas i en **enkel**-objektmatris. Om du har dina experimentella data i en enda dimension (med experimentella data och variantdata i en avgränsad sträng) kan du använda inställningen [delsträng](/help/data-views/component-settings/substring.md) i datavyer för att dela dimensionen i två delar så att den kan användas i panelen.
 
 
 När dina experimentdata har [importerats](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) till Adobe Experience Platform [skapar du en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
@@ -91,12 +91,12 @@ Så här använder du panelen Experimentation:
 
 1. Konfigurera panelens indatainställningar:
 
-   ![Experimenteringspanelen har dragits till ett projekt.](assets/experiment-input.png)
+   ![Experimentationspanelen har dragits till ett projekt.](assets/experiment-input.png)
 
    | Inställning | Definition |
    | --- | --- |
    | **[!UICONTROL Date Range]** | Datumintervallet för panelen Experimentation anges automatiskt baserat på den första händelsen som togs emot i Customer Journey Analytics för det valda experimentet. Du kan begränsa eller utöka datumintervallet till en mer specifik tidsram om det behövs. |
-   | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har markerats med etiketten **[!UICONTROL Experiment]** i datavyer och de tre senaste månadernas experimentdata. |
+   | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketterats med etiketten **[!UICONTROL Experiment]** i datavyer och de senaste tre månadernas experimentdata. |
    | **[!UICONTROL Control variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketten **[!UICONTROL Variant]** i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
    | **[!UICONTROL Success metrics]** ➊ | Mätvärden eller mätvärden som en användare jämför varianter med. Varianten med det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som *varianten* för ett experiment med bästa resultat. Du kan lägga till upp till 5 mätvärden. |
    | **[!UICONTROL Normalizing metric]** ➋ | Basen ([!UICONTROL People], [!UICONTROL Sessions] eller [!UICONTROL Events]) som ett test körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som sidvy |
@@ -168,12 +168,11 @@ När du vill mäta effekten av intervention X på resultatet Y, är det möjligt
 >
 >För organisationer som använder både Customer Journey Analytics och Adobe Journey Optimizer gäller informationen i det här avsnittet även för experimentfunktioner i Journey Optimizer.
 
-
 Alla beräknade värden är inte kompatibla med panelen Experimentation.
 
 Beräknade mått som innehåller någon av följande mått eller konstanter är inte kompatibla med panelen Experimentation:
 
-* Basvärden från en sammanfattningsdatauppsättning <!--add link to Rob's "Summary data" doc when it's published -->
+* Basmått från en [sammanfattningsdatauppsättning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/summary-data)
 * Basvärden som delas av varandra eller multipliceras tillsammans (till exempel `Revenue`/`Orders`)
 * Konstanter som har lagts till eller subtraherats från ett basmått (till exempel `Revenue+50`)
 * Något av följande basmått:

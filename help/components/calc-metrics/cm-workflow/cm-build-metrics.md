@@ -3,9 +3,9 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,8 +67,8 @@ Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa n
 1. Om du vill verifiera om den beräknade måttdefinitionen är korrekt använder du den ständigt uppdaterade **[!UICONTROL Preview]** av resultaten för det beräknade måttet. **[!UICONTROL Preview]** täcker de senaste 90 dagarna och utvärderar definitionen av ditt beräknade mått kontinuerligt.
 
    **[!UICONTROL Product compatibility]** anger om det beräknade måttet kan användas i försök. Möjliga värden är:
-   * **[!UICONTROL Everywhere in Customer Journey Analytics]**: Det beräknade måttet kan användas i hela Customer Journey Analytics, förutom på panelen Experimentation.
-   * **[!UICONTROL Everywhere in Customer Journey Analytics (excluding experimentation)]**: Det beräknade måttet kan användas i hela Customer Journey Analytics.
+   * **[!UICONTROL Everywhere in Customer Journey Analytics]**: Det beräknade måttet kan användas i hela Customer Journey Analytics.
+   * **[!UICONTROL Everywhere in Customer Journey Analytics (excluding experimentation)]**: Det beräknade måttet kan användas i hela Customer Journey Analytics, förutom på panelen Experimentation.
 
 1. Välj:
    * **[!UICONTROL Save]** om du vill spara det beräknade måttet.
