@@ -4,7 +4,7 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 2%
@@ -142,7 +142,7 @@ Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics.
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong> Guidad analys </strong><br/><a href="/help/guided-analysis/overview.md">Översikt</a> - <a href="/help/guided-analysis/types/active.md">Användartillväxt</a> - <a href="/help/guided-analysis/types/usage.md">Trender</a> - <a href="/help/guided-analysis/types/friction.md">Tratt</a> - <a href="/help/guided-analysis/types/release.md">Effekt</a> - <a href="/help/guided-analysis/industry-use-cases.md">Branschanvändning</a>
+      <strong> Guidad analys </strong><br/><a href="/help/guided-analysis/overview.md">Översikt</a> - <a href="/help/guided-analysis/types/active-growth.md">Användartillväxt</a> - <a href="/help/guided-analysis/types/trends.md">Trender</a> - <a href="/help/guided-analysis/types/funnel.md">Tratt</a> - <a href="/help/guided-analysis/types/release-impact.md">Effekt</a> - <a href="/help/guided-analysis/industry-use-cases.md">Branschanvändning</a>
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>

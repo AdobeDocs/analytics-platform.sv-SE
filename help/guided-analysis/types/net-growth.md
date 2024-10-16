@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Net growth]-vy
 
-Vytypen **[!UICONTROL Net growth]** ger insikter om i vilken takt du vinner eller förlorar användare under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är tillväxtmåttet.
+Vytypen ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** ger insikter om i vilken takt du vinner eller förlorar användare under en viss period. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln är tillväxtmåttet.
 
 Varje datapunkt representerar nettotillväxt, som beräknas med följande formel:
 
@@ -22,7 +22,7 @@ Varje datapunkt representerar nettotillväxt, som beräknas med följande formel
 
 Resultatet av den här formeln är ett förhållande. En nettoökning på `1` representerar en jämvikt. Produkten fick samma antal användare som den förlorade. En nettotillväxt som är större än `1` representerar positiv tillväxt. Det fanns fler nya +-användare än vilande användare. En nettotillväxt på mindre än `1` innebär också en förlust. Det fanns fler vilande användare än nya +-användare.
 
-Ungefär som i vytypen [Aktiv](active.md) definieras användare enligt följande:
+Ungefär som i vytypen [Aktiv](active-growth.md) definieras användare enligt följande:
 
 * **[!UICONTROL New]**: Användaren var aktiv under den aktuella perioden, men inte tidigare. Se hur långt analysen ser tillbaka för att avgöra om en ny användare är markerad genom att hålla markören över [!UICONTROL New users] i diagramförklaringen. Uppslagsintervallet bestäms dynamiskt utifrån det valda datumintervallet och intervallet.
 * **[!UICONTROL Return]**: Användaren var aktiv under den aktuella perioden och inte aktiv under den omedelbart föregående perioden, men var tidigare aktiv vid något tillfälle. Se hur långt analysen ser tillbaka för att fastställa en returanvändare genom att hålla markören över [!UICONTROL Return users] i diagramförklaringen. Uppslagsintervallet bestäms dynamiskt utifrån det valda datumintervallet och intervallet.
@@ -46,7 +46,7 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL View]**: Växla mellan den här vytypen och [Aktiv](active.md).
+* **[!UICONTROL View]**: Växla mellan den här vytypen och [Aktiv](active-growth.md).
 * **[!UICONTROL Events]**: Den händelse som du vill mäta. Eftersom den här vytypen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
 * **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: Det segment som du vill mäta. Du kan inkludera ett segment i en fråga.

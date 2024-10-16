@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 hide: true
 hide-from-toc: true
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1954'
 ht-degree: 2%
 
 ---
@@ -408,7 +408,6 @@ Titta på [Wiki-sidan](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spect
 | Prognos | `![Forecast](/help/assets/icons/Forecast.svg)` | ![Prognos](/help/assets/icons/Forecast.svg) |
 | Formulär | `![Form](/help/assets/icons/Form.svg)` | ![Formulär](/help/assets/icons/Form.svg) |
 | Framåt | `![Forward](/help/assets/icons/Forward.svg)` | ![Framåt](/help/assets/icons/Forward.svg) |
-| Frekvens | `![Frequency](/help/assets/icons/Frequency.svg)` | ![Frekvens](/help/assets/icons/Frequency.svg) |
 | FullScreen | `![FullScreen](/help/assets/icons/FullScreen.svg)` | ![FullScreen](/help/assets/icons/FullScreen.svg) |
 | FullScreenExit | `![FullScreenExit](/help/assets/icons/FullScreenExit.svg)` | ![FullScreenExit](/help/assets/icons/FullScreenExit.svg) |
 | Funktion | `![Function](/help/assets/icons/Function.svg)` | ![Funktion](/help/assets/icons/Function.svg) |
@@ -706,6 +705,7 @@ Titta på [Wiki-sidan](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spect
 | Obligatoriskt | `![Required](/help/assets/icons/Required.svg)` | ![Krävs](/help/assets/icons/Required.svg) |
 | Ändra storlek | `![Resize](/help/assets/icons/Resize.svg)` | ![Ändra storlek](/help/assets/icons/Resize.svg) |
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![ResolvedComment](/help/assets/icons/ResolvedComment.svg) |
+| Kvarhållning | `![Retention](/help/assets/icons/Retention.svg)` | ![Kvarhållning](/help/assets/icons/Retention.svg) |
 | RetentionRates | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![RetentionRates](/help/assets/icons/RetentionRates.svg) |
 | Retweet | `![Retweet](/help/assets/icons/Retweet.svg)` | ![Retweet](/help/assets/icons/Retweet.svg) |
 | Återanvänd | `![Reuse](/help/assets/icons/Reuse.svg)` | ![Återanvänd](/help/assets/icons/Reuse.svg) |
@@ -918,7 +918,6 @@ Titta på [Wiki-sidan](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spect
 | UnresolvedComment | `![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg)` | ![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg) |
 | UploadToCloud | `![UploadToCloud](/help/assets/icons/UploadToCloud.svg)` | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) |
 | UploadToCloudOutline | `![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg)` | ![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg) |
-| Användning | `![Usage](/help/assets/icons/Usage.svg)` | ![Användning](/help/assets/icons/Usage.svg) |
 | Användare | `![User](/help/assets/icons/User.svg)` | ![Användare](/help/assets/icons/User.svg) |
 | UserActivity | `![UserActivity](/help/assets/icons/UserActivity.svg)` | ![Användaraktivitet](/help/assets/icons/UserActivity.svg) |
 | UserAdd | `![UserAdd](/help/assets/icons/UserAdd.svg)` | ![UserAdd](/help/assets/icons/UserAdd.svg) |

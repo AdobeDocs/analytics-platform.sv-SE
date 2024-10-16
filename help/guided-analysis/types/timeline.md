@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: e9721eaf993175dd46e9d8edf9176d7c00308e8c
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Timeline]-vy
 
-I vyn **[!UICONTROL Timeline]** kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och berätta bättre användarberättelser. Med den vänstra listen kan du filtrera flödet efter egenskapsvärden och segment. Med den högra listen kan du välja i en slumpmässig lista över användare som matchar filtervillkoren. I mittområdet visas strömmen för den valda användaren per session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
+I vyn ![Tidslinje](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** kan du observera sessionshändelser på användarnivå över tid för att hitta upplevelsemönster och berätta bättre användarberättelser. Med den vänstra listen kan du filtrera flödet efter egenskapsvärden och segment. Med den högra listen kan du välja i en slumpmässig lista över användare som matchar filtervillkoren. I mittområdet visas strömmen för den valda användaren per session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
@@ -31,7 +31,7 @@ Om en datavy inte har komponenten [!UICONTROL Person ID] tillagd visas följande
 
 Exempel:
 
-* **Friktionssökning**: Om du hittar en brant minskning i vyn [Friktion](friction.md) kan du skapa ett segment för dessa användare och tillämpa segmentet i den här vyn för att undersöka möjliga orsaker.
+* **Friktionssökning**: Om du hittar en brant minskning i vyn [Friktion](funnel.md) kan du skapa ett segment för dessa användare och tillämpa segmentet i den här vyn för att undersöka möjliga orsaker.
 * **Felbeteende**: Om användarna råkar ut för ett produktfel kan du utforska vad användarna gjorde före eller efter att felet visades.
 * **Datainsamlingsvalidering**: Dataadministratörer kan filtrera den här vyn till sitt eget person-ID för att verifiera att organisationens implementering fungerar som förväntat.
 

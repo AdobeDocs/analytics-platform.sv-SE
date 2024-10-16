@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 1a0422144b795be7f129b13208e93f8d3645a8e7
+source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 11%
+source-wordcount: '938'
+ht-degree: 12%
 
 ---
 
@@ -218,24 +218,17 @@ ht-degree: 11%
 
 + Guidad analys {#guided-analysis}
    + [Översikt](../guided-analysis/overview.md)
-   + Funktionsmatris {#feature-matrix}
-      + [Engagemang](../guided-analysis/types/engagement.md)
-   + Tratt {#funnel}
-      + [Bildvy](../guided-analysis/types/friction.md)
-      + [Vy över konverteringstrender](../guided-analysis/types/conversion-trends.md)
-   + Påverkan {#impact}
-      + [Versionsvy](../guided-analysis/types/release.md)
-      + [Vyn Första användningen](../guided-analysis/types/first-use.md)
-   + Kvarhållning {#retention}
-      + [Bevarandegrad](../guided-analysis/types/retention-rates.md)
-   + Trender {#trends}
-      + [Användningsvy](../guided-analysis/types/usage.md)
-      + [Frekvensvy](../guided-analysis/types/frequency.md)
-   + Användartillväxt {#user-growth}
-      + [Aktiv vy](../guided-analysis/types/active.md)
-      + [Vyn Nettotillväxt](../guided-analysis/types/net-growth.md)
-   + Användarström {#streams}
-      + [Tidslinje](../guided-analysis/types/timeline.md)
+   + [Aktiv tillväxt](../guided-analysis/types/active-growth.md)
+   + [Konverteringstrender](../guided-analysis/types/conversion-trends.md)
+   + [Engagemang](../guided-analysis/types/engagement.md)
+   + [Effekt för första användningen](../guided-analysis/types/first-use-impact.md)
+   + [Frekvens](../guided-analysis/types/frequency.md)
+   + [Tratt](../guided-analysis/types/funnel.md)
+   + [Nettotillväxt](../guided-analysis/types/net-growth.md)
+   + [Frisläpp påverkan](../guided-analysis/types/release-impact.md)
+   + [Kvarhållning](../guided-analysis/types/retention.md)
+   + [Tidslinje](../guided-analysis/types/timeline.md)
+   + [Trender](../guided-analysis/types/trends.md)
    + [Användningsexempel](../guided-analysis/industry-use-cases.md)
    + [Vanliga frågor och svar](../guided-analysis/faq.md)
 

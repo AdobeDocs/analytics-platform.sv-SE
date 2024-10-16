@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Conversion trends]-vy
 
-Vyn **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgrader över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
+Vyn ![Konverteringstrender](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgrader över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
@@ -22,7 +22,7 @@ Vyn **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgrad
 
 Exempel:
 
-* **Spåra optimeringsaktiviteter**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funktion](friction.md) kan du använda den här vyn för att spåra hur dessa optimeringar påverkar konverteringsgraden över tid.
+* **Spåra optimeringsaktiviteter**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funktion](funnel.md) kan du använda den här vyn för att spåra hur dessa optimeringar påverkar konverteringsgraden över tid.
 * **Utvärdering av A/B-tester**: Utvärdera effektiviteten hos A/B-tester eller experiment som utförs i ett trattsammanhang. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
 * **Kampanjutvärdering över tid**: Mät effekten av marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
 
@@ -30,7 +30,7 @@ Exempel:
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL View]**: Växla mellan den här vytypen och [Funktion](friction.md).
+* **[!UICONTROL View]**: Växla mellan den här vytypen och [Funktion](funnel.md).
 * **[!UICONTROL Steps]**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
 * **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Users] och [!UICONTROL Sessions].
 * **[!UICONTROL Segments]**: Segmenten som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
@@ -44,7 +44,7 @@ I vyn [!UICONTROL Conversion trends] finns följande diagraminställningar som k
 
 >[!NOTE]
 >
->Kolumnen **Jämka** i vyn Konverteringstrender skiljer sig från kolumnen **Totalt** i tabellen [Bildvy](friction.md). Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
+>Kolumnen **Jämka** i vyn Konverteringstrender skiljer sig från kolumnen **Totalt** i tabellen [Bildvy](funnel.md). Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
 
 ## Tidsjämförelse
 

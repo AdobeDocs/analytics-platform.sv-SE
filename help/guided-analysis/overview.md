@@ -5,9 +5,9 @@ keywords: produktanalys
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6497a73aaf7ab7ab597d7a9b00315d126ce402f8
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,19 @@ Med hjälp av guidad analys kan användare, från marknadsföring till produkter
 
 Följande guidade analyser är tillgängliga:
 
-| Analys | Beskrivning |
-| --- | --- |
-| [Aktiv tillväxt](types/active.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
-| [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
-| [Engagemang](types/engagement.md) | Förstå bredden och djupet av engagemanget. |
-| [Inverkan vid första användningen](types/first-use.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
-| [Frekvens](types/frequency.md) | Mät engagemang efter användningsfrekvens. |
-| [Tratt](types/friction.md) | Jämför konverteringsgrader mellan steg. |
-| [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
-| [Versionseffekt](types/release.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
-| [Kvarhållning](types/retention-rates.md) | Mät användarnas återkommande returvanor. |
-| [Tidslinje](types/timeline.md) | Utforska mönster i sessionsaktivitet. |
-| [Trends](types/usage.md) | Mät användarengagemanget över tid. |
+| Ikon | Analys | Beskrivning |
+| :----:|--- | --- |
+| ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) | [Aktiv tillväxt](types/active-growth.md) | Identifiera vem som är ny, bevarad, återvändande eller vilande. |
+| ![ConversionTrens](/help/assets/icons/ConversionTrends.svg) | [Konverteringstrender](types/conversion-trends.md) | Spåra förändringar i konverteringsgrader över tid. |
+| ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) | [Engagemang](types/engagement.md) | Förstå bredden och djupet av engagemanget. |
+| ![FirstUse](/help/assets/icons/FirstUse.svg) | [Inverkan vid första användningen](types/first-use-impact.md) | Mät effekten av förstagångsanvändning på nyckelindikatorer. |
+| ![Histogram](/help/assets/icons/Histogram.svg) | [Frekvens](types/frequency.md) | Mät engagemang efter användningsfrekvens. |
+| ![ConversionTratt](/help/assets/icons/ConversionFunnel.svg) | [Tratt](types/funnel.md) | Jämför konverteringsgrader mellan steg. |
+| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Nettotillväxt](types/net-growth.md) | Kommer du att få eller förlora användare? |
+| ![Utgåva](/help/assets/icons/Release.svg) | [Versionseffekt](types/release-impact.md) | Jämför prestanda i lika stora perioder före och efter lanseringen. |
+| ![Kvarhållning](/help/assets/icons/Retention.svg) | [Kvarhållning](types/retention.md) | Mät användarnas återkommande returvanor. |
+| ![Tidslinje](/help/assets/icons/Timeline.svg) | [Tidslinje](types/timeline.md) | Utforska mönster i sessionsaktivitet. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Trends](types/trends.md) | Mät användarengagemanget över tid. |
 
 {style="table-layout:auto"}
 
@@ -38,7 +38,7 @@ Följande guidade analyser är tillgängliga:
 
 Du kommer åt Guidad analys från Customer Journey Analytics hemsida.
 
-1. Välj **[!UICONTROL Guided analysis]** på hemsidan, som tar dig direkt till [vyn Användningstrender](types/usage.md).
+1. Välj **[!UICONTROL Guided analysis]** på hemsidan, som tar dig direkt till [vyn Användningstrender](types/trends.md).
 
    ![Landningssidoruta](assets/landing-page-tile.png){style="border:1px solid gray"}
 

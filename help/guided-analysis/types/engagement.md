@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Engagement]-vy
 
-Vyn **[!UICONTROL Engagement]** ger dig insikt i hur ofta en funktion används jämfört med hur många som använder den. Den här analysen fungerar bäst när flera funktioner jämförs. Det hjälper er att fatta investeringsbeslut genom att förstå vad era kärnfunktioner, er kraft, engångsfunktioner och tvivelaktiga funktioner är.
+Vyn ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** ger dig insikt i hur ofta en funktion används jämfört med hur många som använder den. Den här analysen fungerar bäst när flera funktioner jämförs. Det hjälper er att fatta investeringsbeslut genom att förstå vad era kärnfunktioner, er kraft, engångsfunktioner och tvivelaktiga funktioner är.
 
 Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta används av engagerade användare. Funktioner som pekar åt höger om den här visualiseringen visar att de används av många av dina aktiva användare. Medianvärdet för hur många gånger en funktion används dividerar diagrammet vågrätt. Procentandelen aktiva användare delar diagrammet lodrätt. Medianer beräknas baserat på händelser som valts i frågan, inte alla data.
 
