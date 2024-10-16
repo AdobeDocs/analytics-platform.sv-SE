@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
+source-git-commit: 18131b0ccabbc8043e2638c735a4a603029f4b93
 workflow-type: tm+mt
-source-wordcount: '4088'
+source-wordcount: '4084'
 ht-degree: 5%
 
 ---
@@ -53,7 +53,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Prognostiserade statistiska tekniker | Artikeln som beskriver de [statistiska tekniker som används i prognostjänsten ](../analysis-workspace/c-forecast/statistics-forecasting.md) har lagts till. |
 | Tillagd information som rekommenderar fullständig tabellexport för höga kardinalitetsmått | Punkter har lagts till i [Bästa tillvägagångssätt för dimensioner med hög kardinalitet](/help/components/dimensions/high-cardinality.md) för att rekommendera att använda Full tabellexport för dimensioner med hög kardinalitet. |
 | Lagt till dokumentation om intelligenta bildtexter i mobilstyrkort | [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) kan hjälpa icke-analytiker att förstå sina data bättre utan hjälp av analytiker. |
-| Ny dokumentation om Adobe Product Analytics-funktioner | <ul><li>[Funktionsmatris](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Förbättrade [kvarhållningsfrekvenser](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Förbättrade insikter i tratt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Jämför händelser i ett enda tratt-steg</li></ul> |
+| Ny dokumentation om Adobe Product Analytics-funktioner | <ul><li>[Funktionsmatris](/help/guided-analysis/types/funnel.md)</li><li>Förbättrad [lagring](/help/guided-analysis/types/retention.md)</li><li>[Förbättrade insikter i tratt](/help/guided-analysis/types/funnel.md)</li><li>Jämför händelser i ett enda tratt-steg</li></ul> |
 | **Mars 2024** | |
 | Användningsinformation om kolumnen Används i är tillgänglig först från och med september 2023. | Tydligare är att användningsinformationen för kolumnen **Används i** på [projektstartsidan](/help/getting-started/landing.md) endast går tillbaka till september 2023. |
 | Lagt till dokumentation om behörighetsförbättringar för Workspace-komponenter som bara är till för projekt | Om du delar ett projekt med andra användare kan dessa användare redigera [snabbfilter](/help/components/filters/quick-filters.md) och andra komponenter som bara är till för projektet och som är inbäddade i det delade projektet. |
