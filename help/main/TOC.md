@@ -9,7 +9,7 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
+source-git-commit: 29869538b2f2475b707fd3c088b5715f44de319a
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 12%
@@ -21,6 +21,7 @@ ht-degree: 12%
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 + [AI Assistant för Adobe Customer Journey Analytics](../ai-assistant.md)
+
 + Versionsinformation {#releases}
    + [Senaste versionen](../release-notes/latest.md)
    + [2024 års utgåvor](../release-notes/2024.md)
@@ -287,7 +288,7 @@ ht-degree: 12%
          + [Dela beräknade värden](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Hantera beräknade värden](../components/calc-metrics/cm-workflow/cm-manager.md)
          + [Exempel](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-      + [Standardberäknade värden](../components/calc-metrics/default-calcmetrics.md)
+      + [Mallar för beräknade mätvärden](../components/calc-metrics/default-calcmetrics.md)
       + [Grundfunktioner](../components/calc-metrics/cm-functions.md)
       + [Avancerade funktioner](../components/calc-metrics/cm-adv-functions.md)
    + Datumintervall {#cja-date-ranges}

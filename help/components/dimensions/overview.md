@@ -3,10 +3,10 @@ title: Översikt över Dimensioner
 description: Lär dig vilka dimensioner som är och hur de används i Customer Journey Analytics
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,29 @@ Varje dimension representerar en annan del eller del av din webbplats. Du kan ko
 ## Skapa dimensioner
 
 Administratörer i Customer Journey Analytics kan [skapa dimensioner i en datavy](/help/data-views/create-dataview.md#components).
+
+## Standarddimensioner
+
+När du skapar en datavy läggs följande tidsbaserade komponenter till som standard som dimensioner till datavyn:
+
+- 15 minuter
+- 30 minuter
+- 5 minuter
+- Dag
+- Dag i månaden
+- Veckodag
+- Dag på året
+- Timme
+- Timme på dagen
+- Minut
+- Minut av timmen
+- Månad
+- Månad på året
+- Kvartal
+- Kvartal på året
+- Andra
+- Vecka på året
+- År
 
 ## Lägg till dimensionsbeskrivningar
 

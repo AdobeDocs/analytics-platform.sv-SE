@@ -1,19 +1,19 @@
 ---
 description: Adobe tillhandahåller olika beräknade värden som du kan använda. På den här sidan visas dessa mått och deras avsedda användning.
-title: Standardberäknade värden
+title: Mallar för beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: a507417c945f827ebb8bc92f7b5f54a9c4e6faa0
+source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Standardberäknade värden
+# Mallar för beräknade mätvärden
 
-Customer Journey Analytics tillhandahåller följande beräknade standardvärden som täcker de vanligaste användningsfallen. Dessa Adobe-definierade beräknade standardvärden identifieras av en liten ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) -logotyp. Om du snabbt vill filtrera efter dessa mått väljer du ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Adobe Template]** i [komponentfiltret](/help/components/overview.md#filter).
+Customer Journey Analytics tillhandahåller följande mallar för beräknade värden som täcker de vanligaste användningsområdena. Dessa Adobe-definierade beräknade värden identifieras av en liten ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) -logotyp. Om du snabbt vill filtrera efter dessa mått väljer du ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Adobe Template]** i [komponentfiltret](/help/components/overview.md#filter).
 
 | Namn på beräknat mätvärde | Beskrivning<br/>Formel |
 |---------|----------|
