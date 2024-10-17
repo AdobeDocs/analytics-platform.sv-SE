@@ -3,9 +3,9 @@ title: Inställningar för produktanvändningsdata
 description: Aktivera, inaktivera eller konfigurera inställningar för produktanvändning.
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,7 @@ Sidan _Datainställningar_ hanterar din produktanvändningskonfiguration. Du kan
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Product Usage]** > **[!UICONTROL Data settings]**
 
 >[!IMPORTANT]
->
->När du aktiverar den här funktionen måste du godkänna villkoren innan du använder den. När du godkänner dessa villkor gör du det för hela din organisations räkning. Personen som godkänner dessa villkor äger datavyn som skapas automatiskt när den här funktionen är aktiverad.
+>När du aktiverar den här funktionen måste du godkänna villkoren innan du använder den. När du godkänner dessa villkor gör du det för hela din organisations räkning.
 
 Följande inställningar är tillgängliga på den här sidan:
 

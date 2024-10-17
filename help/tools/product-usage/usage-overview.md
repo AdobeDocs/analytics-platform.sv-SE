@@ -3,9 +3,9 @@ title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-Produktanvändningen ger er möjlighet att visa analysdata om hur organisationen använder Customer Journey Analytics. Det är tillgängligt för alla organisationer som använder Customer Journey Analytics. När du har aktiverat följande Adobe Experience Platform-komponenter skapas och sammanfogas de automatiskt åt dig:
+Produktanvändningen ger er möjlighet att visa analysdata om hur organisationen använder Customer Journey Analytics. Det är tillgängligt för alla organisationer som använder Customer Journey Analytics. När den är aktiverad skapas och sammanfogas följande Adobe Experience Platform-komponenter automatiskt. Dessa komponenter ägs av systemet, är skrivskyddade och kan inte redigeras.
 
-* Ett schema i Adobe Experience Platform. Schemat ägs av systemet, är skrivskyddat och kan inte redigeras.
-* En datauppsättning i Adobe Experience Platform. Den här datauppsättningen ägs av systemet, är skrivskyddad och kan inte redigeras.
-* En förbindelse i Customer Journey Analytics. Den här anslutningen ägs av systemet, är skrivskyddad och kan inte redigeras.
-* En datavy i Customer Journey Analytics. Du kan redigera den här datavyn eller skapa fler datavyer med hjälp av anslutningen ovan. Datavyns ägare är den person som aktiverar produktanvändning för din organisation.
+* Ett schema i Adobe Experience Platform
+* En datauppsättning i Adobe Experience Platform
+* En anslutning i Customer Journey Analytics
+* En datavy i Customer Journey Analytics
 
 Alla datainsamlingar och inställningar konfigureras automatiskt när de är aktiverade. Varje gång en användare gör en åtgärd i Analysis Workspace spåras den åtgärden och är tillgänglig för rapportering.
 
@@ -29,7 +29,7 @@ Alla datainsamlingar och inställningar konfigureras automatiskt när de är akt
 
 ## Tillgängliga dimensioner
 
-När du aktiverar produktanvändning är följande dimensioner tillgängliga:
+När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om du vill ändra några dimensionsinställningar skapar du en kopia av den systemägda datavyn och använder den kopierade datavyn i Analysis Workspace.
 
 | Dimension | Beskrivning |
 | --- | --- |
