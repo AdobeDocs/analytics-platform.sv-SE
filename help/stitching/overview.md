@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
 workflow-type: tm+mt
 source-wordcount: '4009'
 ht-degree: 1%
@@ -17,7 +17,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >Du måste ha paketet **Select** eller högre (för fältbaserad sammanfogning) eller paketet **Prime** eller högre (för diagrambaserad sammanfogning) för att kunna använda de funktioner som beskrivs i det här avsnittet. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
-
 
 Identitetssammanfogning (eller helt enkelt sammanfogning) är en kraftfull funktion som ökar en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter sömlöst på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID).
 
