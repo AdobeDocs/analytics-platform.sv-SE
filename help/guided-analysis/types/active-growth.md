@@ -5,7 +5,7 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför 
 
 +++
 
-![Aktiv tidsjämförelse](../assets/active-growth-compare.png){style="border:1px solid gray"}
+![Aktiv tidsjämförelse](../assets/active-growth-compare.png)
 
 ## Användningsexempel
 
