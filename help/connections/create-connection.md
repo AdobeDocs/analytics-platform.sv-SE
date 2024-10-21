@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
 workflow-type: tm+mt
-source-wordcount: '3376'
-ht-degree: 1%
+source-wordcount: '3521'
+ht-degree: 0%
 
 ---
 
@@ -134,11 +134,67 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_matchingkey"
->title="Matchningsnyckel"
->abstract="Välj ett fält som ska kopplas till i en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd."
+>id="cja_connection_primaryID"
+>title="Primärt ID"
+>abstract="Välj rätt primärt ID för anslutningen: Person för ett B2C-scenario. Konto för ett B2B-scenario."
 
 <!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_optionalContainers"
+>title="Valfria behållare"
+>abstract="Välj ytterligare behållare.<br/><br/>**[!UICONTROL Global account]**: aktiverar konfiguration av globala konton i en anslutning.<br/>**[!UICONTROL Opportunity]**: aktiverar konfiguration av affärsmöjligheter i en anslutning.<br/>**[!UICONTROL Buying group]**: aktiverar konfiguration av inköpsgrupper i en anslutning."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_personID"
+>title="Person-ID"
+>abstract="Välj ett person-ID bland de tillgängliga identiteter som definieras i dataset-schemat i Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountID"
+>title="Konto-ID"
+>abstract="Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_globalAccountID"
+>title="ID för globalt konto"
+>abstract="Välj ett globalt konto-ID (den unika identifieraren för ett globalt konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_opportunityID"
+>title="ID för affärsmöjlighet"
+>abstract="Välj ett affärsmöjlighets-ID (den unika identifieraren för en affärsmöjlighet) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_buyingGroupID"
+>title="ID för inköpsgrupp"
+>abstract="Välj ett inköpsgrupp-ID (den unika identifieraren för en inköpsgrupp) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 
