@@ -1,58 +1,67 @@
 ---
-title: Vy över konverteringstrender
+title: Analys av konverteringstrender
 description: Spåra förändringar i konverteringsgraden över tid.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Conversion trends]-vy
+# [!UICONTROL Conversion trends]-analys
 
-Vyn ![Konverteringstrender](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgrader över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
+Analysen ![Konverteringstrender](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
+
++++ Demo av video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
++++
+
+![Tidjämförelse för konverteringstrender](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
+
 ## Användningsexempel
 
-Exempel:
+Användningsexempel för den här analysen är:
 
-* **Spåra optimeringsaktiviteter**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funktion](funnel.md) kan du använda den här vyn för att spåra hur dessa optimeringar påverkar konverteringsgraden över tid.
+* **Spåra optimeringsaktiviteter**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [tratt](funnel.md)-analysen kan du använda den här analysen för att spåra hur dessa optimeringar påverkar konverteringsgraden över tid.
 * **Utvärdering av A/B-tester**: Utvärdera effektiviteten hos A/B-tester eller experiment som utförs i ett trattsammanhang. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
 * **Kampanjutvärdering över tid**: Mät effekten av marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
 
-## Frågerår
+## Gränssnitt
+
+I [Gränssnitt](../overview.md#interface) finns en översikt över gränssnittet för guidad analys. Följande inställningar är specifika för den här analysen:
+
+### Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL View]**: Växla mellan den här vytypen och [Funktion](funnel.md).
+* **[!UICONTROL View]**: Växla mellan den här analysen och [tratt](funnel.md).
 * **[!UICONTROL Steps]**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
 * **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Users] och [!UICONTROL Sessions].
 * **[!UICONTROL Segments]**: Segmenten som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
-## Diagraminställningar
+### Diagraminställningar
 
-I vyn [!UICONTROL Conversion trends] finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
+Analysen av [!UICONTROL Conversion trends] innehåller följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är [!UICONTROL Line].
 * **[!UICONTROL Conversion from]**: Anger procentberäkningen från steg till steg. Du kan använda alternativen för att beräkna konverteringen från [!UICONTROL First step] eller [!UICONTROL Previous step].
 
 >[!NOTE]
 >
->Kolumnen **Jämka** i vyn Konverteringstrender skiljer sig från kolumnen **Totalt** i tabellen [Bildvy](funnel.md). Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
+>Kolumnen **Genomsnitt** i tabellen för analys av konverteringstrender skiljer sig från kolumnen **Totalt** i tabellen [Trattanalys](funnel.md). Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
 
-## Tidsjämförelse
+### Tidsjämförelse
 
 {{apply-time-comparison}}
 
-![Tidjämförelse för konverteringstrender](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
 
-## Datumintervall
+### Datumintervall
 
 Det önskade datumintervallet för analysen. Den här inställningen har två komponenter:
 

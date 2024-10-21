@@ -1,48 +1,58 @@
 ---
-title: Frekvensvy
+title: Frekvensanalys
 description: Mät engagemang efter användningsfrekvens.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Frequency]-vy
+# [!UICONTROL Frequency]-analys
 
-I ![Frekvensen](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** grupperas händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här vyn innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
+Analysen av ![frekvens](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** grupperar händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här analysen innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
+
++++ Demo av video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
++++
+
+![Frekvens](../assets/frequency.png)
+
 ## Användningsexempel
 
-Exempel:
+Användningsexempel för den här analysen är:
 
 * **Engagemang**: Spåra hur engagerade användare är med alla händelser i produkten. Du kan klicka på valfri del av stapeldiagrammet för att spara det som ett segment. Segment för kundsegment med låg engagemangsfrekvens kan hjälpa er att avgöra varför användarna inte interagerar med händelsen med den önskade frekvensen. Segment för större engagemang kan hjälpa er att förstå varför användarna interagerar med händelsen ofta. Därifrån kan du uppmuntra andra användare att använda liknande beteenden.
-* **Kundlojalitet**: Ange händelsen till Beställningar och måttet till Användare. I den här vyn kan du gruppera användare efter hur många gånger de har gjort ett köp på din webbplats inom det angivna datumintervallet.
+* **Kundlojalitet**: Ange händelsen till Beställningar och måttet till Användare. Med den här analysen kan du gruppera användare efter hur många gånger de har gjort ett köp på webbplatsen inom det angivna datumintervallet.
 * **Supportoptimering**: Visa antalet supportsamtal eller öppna ärenden per användare för att få information om vilka användare som har mest problem. Sedan kan du skapa ett segment som fokuserar på deras upplevelse för att identifiera och lösa problem.
 * **Prenumerationstjänster**: Användare med lågt engagemang är mer benägna att försvinna. Att förstå hur mycket engagerade användare beter sig kan bidra till att uppmuntra liknande beteenden för användare med dåligt engagemang, vilket gör dem mindre benägna att avbryta prenumerationen.
 
-## Frågerår
+## Gränssnitt
+
+I [Gränssnitt](../overview.md#interface) finns en översikt över gränssnittet för guidad analys. Följande inställningar är specifika för den här analysen:
+
+### Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL View]**: Växla mellan den här vytypen och [Användning](trends.md).
+* **[!UICONTROL View]**: Växla mellan den här analysen och [Trends](trends.md).
 * **[!UICONTROL Events]**: De händelser som du vill mäta. Varje markerad händelse representeras som ett separat diagram. En rad som representerar händelsen trended läggs till i tabellen. Du kan inkludera upp till fem händelser.
-* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Users], [!UICONTROL Sessions], [!UICONTROL Percentage of users] och [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här vyn är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
+* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Users], [!UICONTROL Sessions], [!UICONTROL Percentage of users] och [!UICONTROL Percentage of sessions]. Nämnaren för procentbaserade mått i den här analysen är användare eller sessioner som gjorde de valda händelserna, inte alla aktiva användare av produkten.
 * **[!UICONTROL Segments]**: Segmenten som du vill mäta. Varje markerat segment dubblerar antalet staplar i diagrammet och raderna i tabellen. Du kan inkludera upp till fem segment.
 
-## Diagraminställningar
+### Diagraminställningar
 
-I vyn [!UICONTROL Frequency] finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
+Analysen av [!UICONTROL Frequency] innehåller följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är [!UICONTROL Horizontal bar] och [!UICONTROL Stacked bar].
 
-## Inställningar för Bucket
+### Inställningar för Bucket
 
 Avgör hur händelsen kategoriseras i grupper (grupper). I den trendade tabellvyn är användarna paketerade baserat på användningsfrekvens i totalt och i varje intervall, vilket innebär att 1 användare kan räkna till olika bucklar i olika intervall.
 
@@ -52,11 +62,11 @@ Avgör hur händelsen kategoriseras i grupper (grupper). I den trendade tabellvy
    * [!UICONTROL To]: Frekvensen som är större än det här värdet grupperas i den sista haken.
    * [!UICONTROL Size]: Bucket-intervallet.
 
-## Tidsjämförelse
+### Tidsjämförelse
 
 {{apply-time-comparison}}
 
-## Datumintervall
+### Datumintervall
 
 Det önskade datumintervallet för analysen. Den här inställningen har två komponenter:
 

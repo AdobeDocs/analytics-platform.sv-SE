@@ -1,20 +1,20 @@
 ---
-title: Åtagandevy
+title: Förlovningsanalys
 description: Förstå bredden och djupet av engagemanget.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Engagement]-vy
+# [!UICONTROL Engagement]-analys
 
-Vyn ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** ger dig insikt i hur ofta en funktion används jämfört med hur många som använder den. Den här analysen fungerar bäst när flera funktioner jämförs. Det hjälper er att fatta investeringsbeslut genom att förstå vad era kärnfunktioner, er kraft, engångsfunktioner och tvivelaktiga funktioner är.
+Analysen ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** ger dig insikt i hur ofta en funktion används jämfört med hur många som använder den. Den här analysen fungerar bäst när flera funktioner jämförs. Det hjälper er att fatta investeringsbeslut genom att förstå vad era kärnfunktioner, er kraft, engångsfunktioner och tvivelaktiga funktioner är.
 
 Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta används av engagerade användare. Funktioner som pekar åt höger om den här visualiseringen visar att de används av många av dina aktiva användare. Medianvärdet för hur många gånger en funktion används dividerar diagrammet vågrätt. Procentandelen aktiva användare delar diagrammet lodrätt. Medianer beräknas baserat på händelser som valts i frågan, inte alla data.
 
@@ -23,11 +23,17 @@ Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta an
 * Funktionerna längst ned till vänster i matrisen har **låg effekt** och används inte särskilt mycket.
 * Funktionerna längst ned till höger i matrisen är dina **engångs**-funktioner. De används ofta, men inte ofta.
 
++++ Demo av video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
+
++++
+
+![Jämför avtal](../assets/engagement-compare.png)
 
 ## Användningsexempel
 
-Exempel:
+Användningsexempel för den här analysen är:
 
 * **Engagemang efter funktion**: Du kan upprätta en direkt korrelation mellan engagemang och användning av en viss funktion. Att förstå vilka funktioner som används mest kan hjälpa till att avgöra vilka funktioner som ska investeras ytterligare.
 * **Upptäck underanvända funktioner**: Funktioner med låga aktiva användare men hög användning kan visa på en kraftfull funktion, en som är värdefull men inte upptäcks eller används av den bredare befolkningen. Överväg att förbättra upptäckten av dessa funktioner så att fler användare utnyttjar dem.
@@ -35,7 +41,11 @@ Exempel:
 * **Skapa funktionsbaserade segment**: Visar funktionsanvändning på det här sättet för att få fler analysmöjligheter. Skapa ett segment för vilken punkt som helst i diagrammet för att dyka ytterligare in i användargruppen och tillämpa dessa inlärningar på er strategi för användarengagemang.
 * **A/B-testning**: Jämför användningen av flera funktioner i olika användargrupper. Lägg till segment i frågespelaren för att avgöra skillnaden i funktionsanvändning mellan nyckelanvändargrupper.
 
-## Frågerår
+## Gränssnitt
+
+I [Gränssnitt](../overview.md#interface) finns en översikt över gränssnittet för guidad analys. Följande inställningar är specifika för den här analysen:
+
+### Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
@@ -47,22 +57,22 @@ Med frågerefältet kan du konfigurera följande komponenter:
 >
 >Om flera händelser representerar användning av en enda funktion kan du skapa en ny händelse som representerar funktionen i datavyer.
 
-## Diagraminställningar
+### Diagraminställningar
 
-I vyn [!UICONTROL Engagement] finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
+Analysen av [!UICONTROL Engagement] innehåller följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
 * **[!UICONTROL Medians]**: Avgör var medianinjerna visas och hur de plottade punkterna relaterar till medianerna.
    * **[!UICONTROL Standard]**: Visa det absoluta värdet av användning och engagemang.
    * **[!UICONTROL Normalized]**: Visa relativa ändringar från varje median.
 * **[!UICONTROL Top events overlay]**: Se hur dina händelser fungerar jämfört med de 20 vanligaste händelserna, baserat på företagets och användarens senaste och relevanta händelser (samma algoritm som tillämpas på händelseväljaren i frågespelaren).
 
-## Tidsjämförelse
+### Tidsjämförelse
 
 {{apply-time-comparison}}
 
-## Datumintervall
+### Datumintervall
 
 Det önskade datumintervallet för analysen. Den här inställningen har två komponenter:
 
-* **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa trenddata efter. Den här vytypen behandlar [!UICONTROL Interval] på ungefär samma sätt som [!UICONTROL Counted as] i frågerinjen. Timvis aktiva användare stöds inte.
+* **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa trenddata efter. Den här analysen behandlar [!UICONTROL Interval] på ungefär samma sätt som [!UICONTROL Counted as] i frågerinjen. Timvis aktiva användare stöds inte.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.

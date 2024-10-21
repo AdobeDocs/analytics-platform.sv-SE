@@ -1,38 +1,48 @@
 ---
-title: Kvarhållning
+title: Kvarhållningsanalys
 description: Mät hur många användare som fortsätter att använda produkten.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 8592d6d5d4a9d7b8ac6a40963059d386ec5ee804
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
 
-# Kvarhållning
+# Kvarhållningsanalys
 
-Vyn ![Kvarhållning](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]** mäter hur användarna fortsätter att använda produkten med tiden, vilket kan hjälpa dig att förstå hur produktmarknaden passar. Analysen räknar användare baserat på två viktiga händelser:
+![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]**-analysen mäter hur användarna fortsätter att använda produkten med tiden, vilket kan hjälpa dig att förstå hur produktmarknaden passar. Analysen räknar användare baserat på två viktiga händelser:
 
 * Starthändelse: Den händelse som används för att kvalificera användare för att ingå i din analys.
 * Returhändelse: En eller flera händelser som en användare måste interagera med för att räknas som en återkommande användare i din analys.
 
-I den här vyn representerar diagrammets x-axel tiden sedan en användares första starthändelse och y-axeln den procentandel användare som interagerar med en eller flera returhändelser. Du kan visa både kvarhållning och kurvor över varaktigheter, och varaktigheterna som visas kan anpassas med frågeinställningarna. Under diagrammet innehåller en tabell aggregerade data med alternativet att visa enskilda kohorter, som är en grupp personer som utförde starthändelsen på samma datum.
+I den här analysen representerar diagrammets x-axel tiden sedan en användares första starthändelse och y-axeln den procentandel användare som interagerar med en eller flera returhändelser. Du kan visa både kvarhållning och kurvor över varaktigheter, och varaktigheterna som visas kan anpassas med frågeinställningarna. Under diagrammet innehåller en tabell aggregerade data med alternativet att visa enskilda kohorter, som är en grupp personer som utförde starthändelsen på samma datum.
+
++++ Demo av video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
++++
+
+![Kvarhållning](../assets/retention.png)
+
 ## Användningsexempel
 
-Exempel:
+Användningsexempel för den här analysen är:
 
 * **Kohortanalys**: Gruppera användare i kohorter baserat på de åtgärder de vidtar, till exempel registreringar eller köp. Du kan jämföra hur väl dessa grupper behåller och avgöra hur de ska förbättra varje grupps användarupplevelse.
 * **Produktmarknadsanpassning**: Mät regelbunden användning av produkten och visualisera som kundlojalitetskurvor. Ju större lojalitet desto bättre anpassning av produktmarknaden, och där kurvan förenklas visas hur lång tid det tar att anpassa sig. Se analysen på övergripande nivå eller uppdelad efter enskilda produktfunktioner för att få djupare insikter.
 * **Analys av prenumerationstjänster**: Om din produkt använder en prenumeration eller en annan typ av återkommande intäktsmodell kan du se hur många användare som får ut det mesta av din produkt. Du kan identifiera vissa egenskaper och beteenden som dessa användare uppvisar.
 * **Användarengagemang**: Utvärdera hur vissa typer av användare interagerar med din produkt och jämför hur ofta de returnerar. Ett givet segment med lägre lojalitet än andra kan ge er insikt i hur ni kan förbättra potentiella delupplevelser som de kan ha.
 
-## Frågerår
+## Gränssnitt
+
+I [Gränssnitt](../overview.md#interface) finns en översikt över gränssnittet för guidad analys. Följande inställningar är specifika för den här analysen:
+
+### Frågerår
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
@@ -51,13 +61,13 @@ Med frågerefältet kan du konfigurera följande komponenter:
       * Med **[!UICONTROL Custom durations]** kan du anpassa de fyra varaktighetsintervall som visas i diagrammet och tabellen.
 * **[!UICONTROL Segments]**: Segmenten som du vill mäta. Varje markerat segment lägger till en rad i kohortabellen. Du kan inkludera upp till tre segment.
 
-## Diagraminställningar
+### Diagraminställningar
 
-I vyn [!UICONTROL Retention rates] finns följande diagraminställningar som kan justeras på menyn ovanför diagrammet:
+Analysen av [!UICONTROL Retention] innehåller följande diagraminställningar som kan justeras i menyn ovanför diagrammet:
 
 * **[!UICONTROL Chart type]**: Den typ av visualisering som du vill använda. Alternativen är [!UICONTROL Bar] och [!UICONTROL Line].
 
-## Datumintervall
+### Datumintervall
 
 Det önskade datumintervallet för analysen. Den här inställningen har två komponenter:
 
