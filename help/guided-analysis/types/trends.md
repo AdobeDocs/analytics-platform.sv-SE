@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,13 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är Timly, Daily, Weekly, Monthly och Quarterly. Samma datumintervall kan ha olika intervall som påverkar antalet datapunkter i diagrammet och antalet kolumner i tabellen. Om du till exempel visar en analys som sträcker sig över tre dagar med daglig granularitet visas bara tre datapunkter, medan en analys som sträcker sig över tre dagar med timgranularitet visar 72 datapunkter.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
 
-## Exempel
 
-Nedan finns ett exempel på analysen.
+<!--
 
-![Jämför trender](../assets/trends-compare.png)
+## Example
+
+See below for an example of the analysis.
+
+![Trends compare](../assets/trends-compare.png)
+
+-->

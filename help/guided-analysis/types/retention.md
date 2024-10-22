@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1190'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,11 @@ Om du väljer ett datumintervall som ligger nära den aktuella dagen inkluderas 
 * **[!UICONTROL Analyzing users who did the start event in [Date interval]]**: Om en användare engagerar sig i händelsen inom det här datumintervallet inkluderas de i analysen. Detta datumintervall garanterar att alla användare har tillräckligt med tid för att kvalificera sig för alla tidsintervall. Datumintervallet kan skilja sig från det du väljer om det ligger nära dagens datum.
 * **[!UICONTROL Data from [Date interval] is reserved to complete the analysis]**: Om en användare engagerar för första gången inom den här perioden ingår de **inte** i analysen. För de senaste datumintervallen har dessa användare inte möjlighet att kvalificera sig för alla tidsintervall. För tidigare datumintervall var dessa användare aktiva utanför det valda datumintervallet.
 
-## Exempel
+<!--
+## Example
 
-Nedan finns ett exempel på analysen.
+See below for an example of the analysis.
 
-![Kvarhållning](../assets/retention.png)
+![Retention](../assets/retention.png)
+
+-->
