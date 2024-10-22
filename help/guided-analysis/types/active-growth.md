@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,8 @@ Analysen av ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Act
 
 Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför den vågräta axeln, medan alla vilande användare visas i orange under den vågräta axeln.
 
-+++ Demo av video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
-
-+++
-
-![Aktiv tidsjämförelse](../assets/active-growth-compare.png)
 
 ## Användningsexempel
 
@@ -68,3 +63,12 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är Timly, Daily, Weekly, Monthly och Quarterly. Samma datumintervall kan ha olika intervall, vilket påverkar antalet datapunkter i diagrammet och antalet kolumner i tabellen. Om du till exempel visar en analys som sträcker sig över tre dagar med daglig granularitet visas bara tre datapunkter, medan en analys som sträcker sig över tre dagar med timgranularitet visar 72 datapunkter.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Active time compare](../assets/active-growth-compare.png)
+
+-->

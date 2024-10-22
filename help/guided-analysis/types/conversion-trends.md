@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,9 @@ ht-degree: 0%
 
 Analysen ![Konverteringstrender](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 
-+++ Demo av video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
-+++
-
-![Tidjämförelse för konverteringstrender](../assets/conversion-trends-compare.png)
 
 ## Användningsexempel
 
@@ -67,3 +63,12 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är Timly, Daily, Weekly, Monthly och Quarterly. Samma datumintervall kan ha olika intervall, vilket påverkar antalet datapunkter i diagrammet och antalet kolumner i tabellen. Om du till exempel visar en analys som sträcker sig över tre dagar med daglig granularitet visas bara tre datapunkter, medan en analys som sträcker sig över tre dagar med timgranularitet visar 72 datapunkter.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Conversion trends time compare](../assets/conversion-trends-compare.png)
+
+-->

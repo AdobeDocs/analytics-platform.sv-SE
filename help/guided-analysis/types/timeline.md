@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,9 @@ Med analysen ![Tidslinje](/help/assets/icons/Timeline.svg) **[!UICONTROL Timelin
 >* **Administratörer**: *Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.*
 >* **Icke-administratörer**: *Egenskapen PersonID krävs för den här analysen. Samarbeta med Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.*
 
-
-+++ Demo av video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
-+++
 
-![Tidslinje](../assets/timeline-new.png)
 
 ## Användningsexempel
 
@@ -68,3 +63,10 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa trenddata efter. Den här inställningen påverkar inte icke-trendanalyser som Tidslinje.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
+
+
+## Exempel
+
+Nedan finns ett exempel på analysen.
+
+![Tidslinje](../assets/timeline-new.png)

@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 0%
 
 Analysen av ![frekvens](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** grupperar händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här analysen innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
 
-+++ Demo av video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
-
-+++
-
-![Frekvens](../assets/frequency.png)
 
 ## Användningsexempel
 
@@ -72,3 +66,13 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Diagrammet och tabellen visar aggregerade data som standard, med möjlighet att expandera tabellen till en trendvy. I trendvyn är användarna paketerade baserat på användningsfrekvens i totalt och i varje intervall, vilket innebär att 1 användare kan räkna till olika bucklar i olika intervall.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
+
+
+<!--
+## Example
+
+See below foran example of the analysis.
+
+![Frequency](../assets/frequency.png)
+
+-->

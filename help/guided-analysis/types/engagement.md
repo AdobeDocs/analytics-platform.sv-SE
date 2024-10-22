@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,8 @@ Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta an
 * Funktionerna längst ned till vänster i matrisen har **låg effekt** och används inte särskilt mycket.
 * Funktionerna längst ned till höger i matrisen är dina **engångs**-funktioner. De används ofta, men inte ofta.
 
-+++ Demo av video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
-+++
-
-![Jämför avtal](../assets/engagement-compare.png)
 
 ## Användningsexempel
 
@@ -76,3 +71,11 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa trenddata efter. Den här analysen behandlar [!UICONTROL Interval] på ungefär samma sätt som [!UICONTROL Counted as] i frågerinjen. Timvis aktiva användare stöds inte.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Enagement compare](../assets/engagement-compare.png)
+-->

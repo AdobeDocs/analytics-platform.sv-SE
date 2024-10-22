@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 0%
 
 Analysen ![ConversionTrnel ](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel]**ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje steg som en användare måste gå igenom. Den lodräta axeln representerar procentandelen användare eller sessioner i varje steg. Alla steg måste utföras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret.
 
-+++ Demo av video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
-
-+++
-
-![Jämför tratttid](../assets/funnel-compare.png)
 
 ## Användningsexempel
 
@@ -69,3 +63,12 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Den här inställningen påverkar inte icke-trendanalyser som [Tratt](funnel.md).
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Funnel time compare](../assets/funnel-compare.png)
+
+-->

@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 0%
 
 Analysen ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** ger värdefull information om produktens prestanda eller användarnas beteende över tid. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter dina önskade händelser.
 
-+++ Demo av video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
-
-+++
-
-![Jämför trender](../assets/trends-compare.png)
 
 ## Användningsexempel
 
@@ -75,3 +69,8 @@ Det önskade datumintervallet för analysen. Den här inställningen har två ko
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är Timly, Daily, Weekly, Monthly och Quarterly. Samma datumintervall kan ha olika intervall som påverkar antalet datapunkter i diagrammet och antalet kolumner i tabellen. Om du till exempel visar en analys som sträcker sig över tre dagar med daglig granularitet visas bara tre datapunkter, medan en analys som sträcker sig över tre dagar med timgranularitet visar 72 datapunkter.
 * **[!UICONTROL Date]**: Start- och slutdatumet. Förinställningar för rullande datumintervall och tidigare sparade anpassade intervall är tillgängliga för att underlätta, eller så kan du använda kalenderväljaren och välja ett fast datumintervall.
 
+## Exempel
+
+Nedan finns ett exempel på analysen.
+
+![Jämför trender](../assets/trends-compare.png)

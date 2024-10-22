@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,8 @@ ht-degree: 0%
 
 Analysen ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL First use impact]** visar en jämförelse av hur nyckelindikatorer som har utförts före och efter det att en användare använder en produktfunktion för första gången. Den vågräta axeln i den här rapporten är ett relativt tidsintervall före och efter händelsen, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck i mitten av diagrammet representerar dag 0 när en funktion först används av en viss användare. Eftersom användare inte alltid använder funktioner på samma dag och dina rollouter kan inträffa under flera dagar, kan dag 0 betyda något som skiljer sig åt för varje enskild användare.
 
-+++ Demo av video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
-
-+++
-
-![Inverkan vid första användningen](../assets/first-use-impact.png)
 
 
 ## Användningsexempel
@@ -66,3 +61,12 @@ Datumval i [!UICONTROL First use impact]-analysen fungerar annorlunda än andra 
 
 * **[!UICONTROL Interval]**: Datumgranulariteten som du vill visa data efter. Giltiga alternativ är [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly] och [!UICONTROL Quarterly]. Om du ändrar intervallet påverkas alternativen för perioden Före och efter.
 * **[!UICONTROL Before and after period]**: Den tid det tar att analysera före och efter den första use-händelsen som anges i frågerinjen. Vilka alternativ som är tillgängliga beror på valet av [!UICONTROL Interval].
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![First use impact](../assets/first-use-impact.png)
+
+-->

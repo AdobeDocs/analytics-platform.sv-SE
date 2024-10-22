@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,8 @@ ht-degree: 0%
 
 I den här analysen representerar diagrammets x-axel tiden sedan en användares första starthändelse och y-axeln den procentandel användare som interagerar med en eller flera returhändelser. Du kan visa både kvarhållning och kurvor över varaktigheter, och varaktigheterna som visas kan anpassas med frågeinställningarna. Under diagrammet innehåller en tabell aggregerade data med alternativet att visa enskilda kohorter, som är en grupp personer som utförde starthändelsen på samma datum.
 
-+++ Demo av video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
-+++
-
-![Kvarhållning](../assets/retention.png)
 
 ## Användningsexempel
 
@@ -78,3 +73,9 @@ Om du väljer ett datumintervall som ligger nära den aktuella dagen inkluderas 
 
 * **[!UICONTROL Analyzing users who did the start event in [Date interval]]**: Om en användare engagerar sig i händelsen inom det här datumintervallet inkluderas de i analysen. Detta datumintervall garanterar att alla användare har tillräckligt med tid för att kvalificera sig för alla tidsintervall. Datumintervallet kan skilja sig från det du väljer om det ligger nära dagens datum.
 * **[!UICONTROL Data from [Date interval] is reserved to complete the analysis]**: Om en användare engagerar för första gången inom den här perioden ingår de **inte** i analysen. För de senaste datumintervallen har dessa användare inte möjlighet att kvalificera sig för alla tidsintervall. För tidigare datumintervall var dessa användare aktiva utanför det valda datumintervallet.
+
+## Exempel
+
+Nedan finns ett exempel på analysen.
+
+![Kvarhållning](../assets/retention.png)
