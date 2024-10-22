@@ -4,9 +4,9 @@ title: Optimera prestanda för Customer Journey Analytics och Analysis Workspace
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '2564'
 ht-degree: 0%
 
 ---
@@ -86,3 +86,32 @@ Dessutom kan du **hämta prestandainnehållet som CSV** och enkelt dela det med 
 | **Antal frihandsceller** | Se tabellen &quot;Frågefaktorer&quot; ovan. | |
 | **Använda komponenter** | Se tabellen &quot;Frågefaktorer&quot; ovan. | |
 | **Högsta datumintervall** | Se tabellen &quot;Frågefaktorer&quot; ovan. | |
+
+## Begärandefaktorer
+
+[!UICONTROL Help] > [!UICONTROL Performance] förfrågningsfaktorer
+
+Använd följande diagram och termer för att lära dig hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna:
+
+>[!NOTE]
+>
+>Rekommenderade riktlinjer för dessa faktorer baseras på Medium komplexitetspoäng för att rapportera förfrågningar.
+
+
+### Bearbetningsdiagram för begäran
+
+![Begär bearbetning](assets/request-processing.png)
+
+### Bearbetningsvillkor för begäran
+
+| Faktor | Definition | Optimering |
+| --- | --- | --- |
+| [!UICONTROL **Genomsnittlig begärandetid**] | Den tid som krävs från det att begäran initieras till dess att den är slutförd. Riktlinjen är 15 sekunder. <p>I diagrammet [Begäranbearbetning](#request-processing-diagram) ovan representerar begärandetiden hela processen, från **Analysis Workspace-begäran initierad** till **Analysis Workspace-begäran slutförd**.</p> |  |
+| [!UICONTROL **Senaste begärandetid**] | Den tid som krävs från det att begäran initieras till dess att den är slutförd. <p>I diagrammet [Begäranbearbetning](#request-processing-diagram) ovan representerar begärandetiden hela processen, från **Analysis Workspace-begäran initierad** till **Analysis Workspace-begäran slutförd**.</p> |  |
+| [!UICONTROL **Genomsnittlig sökningstid**] | Eftersom Analysis Workspace endast lagrar hash-värdet för strängar som används i något segment utförs **Lookups** varje gång du bearbetar ett projekt för att matcha hash-värdena med rätt värden. Riktlinjen är under 2 sekunder.<p>Detta kan vara en resurskrävande process, beroende på antalet värden som eventuellt matchar hash-värdet. </p><p>I diagrammet [Bearbetning av begäran](#request-processing-diagram) ovan visas uppslagstiden i fasen **Uppslag** (vid tiden för **Bearbetning av begärandemotor**).</p> | Om förfrågningar går långsammare här beror det förmodligen på att du har för många strängsegment i ditt projekt, eller på att du har strängar med för många generiska värden som har för många möjliga matchningar. |
+| [!UICONTROL **Genomsnittlig kötid**] | Den totala väntetiden i kön innan begäranden bearbetas. Riktlinjen är 5 sekunder.<p>I diagrammet [Begäranbearbetning](#request-processing-diagram) ovan visas kötiden i fasen **Begär motorkö** och **Serverkö**.</p> | Om förfrågningar går långsammare här kan det bero på att för många förfrågningar körs samtidigt i organisationen. Försök köra begäran vid låg belastning. |
+| [!UICONTROL **Genomsnittlig serverbearbetningstid**] | Genomsnittlig tid det tar att behandla begäran.<p>I diagrammet [Begäranbearbetning](#request-processing-diagram) ovan visas den genomsnittliga serverbearbetningstiden i fasen **Serverkö** och **Serverbearbetning**. Riktlinjen är tio sekunder | Om förfrågningar går långsammare här är det troligt att projektet har för långa datumintervall eller komplexa visualiseringar. Prova att korta ned projektets datumintervall för att minska bearbetningstiden. |
+| [!UICONTROL **Komplexitet**] | Alla begäranden kräver inte samma tid för att behandlas. Komplexa begäranden kan ge en allmän uppfattning om hur lång tid som krävs för att behandla begäran. Riktlinjen är Medium eller lägre. <p>Möjliga värden är:</p> <ul><li>[!UICONTROL **Låg**]</li><li>[!UICONTROL **Medium**]</li><li>[!UICONTROL **Hög**]</li></ul>Värdet påverkas av värdena i följande kolumner:<ul><li>[!UICONTROL **Månadsgränser**]</li><li>[!UICONTROL **Kolumner**]</li><li>[!UICONTROL **Segment**]</li></ul> |  |
+| [!UICONTROL **Månadsgränser**] | Antalet månader som ingår i en begäran. Fler månadsgränser gör begäran ännu mer komplex. Riktlinjen är 6 eller färre. | Om förfrågningar går långsammare här kan det bero på att månadsgränserna i ditt projekt är för stora. Försök att minska antalet månader. |
+| [!UICONTROL **Kolumner**] | Antalet mått och uppdelningar i begäran. Fler kolumner ökar komplexiteten i begäran. Riktlinjen är 10 eller färre. | Om förfrågningar går långsammare här kan det bero på att det finns för många kolumner i projektet. Försök att minska antalet kolumner. |
+| [!UICONTROL **Segment**] | Antalet segment som används i begäran. Fler segment ökar komplexiteten i begäran. Riktlinjen är 5 eller färre. | Om förfrågningar går långsammare här kan det bero på att det finns för många segment i projektet. Försök att minska antalet segment. |

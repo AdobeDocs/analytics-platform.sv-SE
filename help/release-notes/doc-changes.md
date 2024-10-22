@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 18131b0ccabbc8043e2638c735a4a603029f4b93
+source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
 workflow-type: tm+mt
-source-wordcount: '4084'
+source-wordcount: '4118'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Oktober 2024** | |
+| Ny information om begärandefaktorer i Analysis Workspace prestanda | En ny [Request factor](/help/technotes/optimizing-performance.md#request-factors)-sektion i artikeln [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) förklarar hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna. |
 | Workspace och komponenter | Uppdaterade dokumentationen om Analysis Workspace-projekt (projekt, visualiseringar och paneler) och komponenter (anteckningar, dimensioner, (beräknade) mått, filter, datumintervall, aviseringar, schemalagda projekt och målgrupper). |
 | Guidad analys | Uppdaterad dokumentation med tillgänglighet för [guidad analys](/help/guided-analysis/overview.md) inifrån Analysis Workspace. |
 | **September 2024** | |
