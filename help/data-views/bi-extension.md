@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
+source-git-commit: e5d66bfbc39d3b20b2833b6a83485b106b3d4231
 workflow-type: tm+mt
-source-wordcount: '3051'
+source-wordcount: '3064'
 ht-degree: 0%
 
 ---
@@ -34,16 +34,22 @@ Nedan visas ytterligare steg för att konfigurera CJA-behörigheter
 
 ### Utgående autentiseringsuppgifter
 
-* Tillgång till Experience Platform och Customer Journey Analytics.
-* Beviljad produktadministratörsåtkomst till Customer Journey Analytics så att du kan visa, redigera, uppdatera eller ta bort anslutningar och datavyer.
-* ELLER
-* Beviljad åtkomst till de datavyer som du vill komma åt.
-* Beviljade åtkomst till CJA BI-tillägget.
+Om du vill använda utgångsdatum för inloggningsuppgifter kan du:
+
+* Ge åtkomst till Experience Platform och Customer Journey Analytics.
+* Ge produktadministratören åtkomst till Customer Journey Analytics så att du kan visa, redigera, uppdatera eller ta bort anslutningar och datavyer.
+
+Eller så kan du:
+
+* Ge åtkomst till de datavyer du vill komma åt.
+* Bevilja åtkomst till Customer Journey Analytics BI-tillägget.
 
 ### Referenser som inte förfaller
 
-* Skapa inloggningsuppgifter som inte förfaller i Adobe.
-* Bevilja åtkomst till de autentiseringsuppgifter som inte förfaller genom att följa de steg som anges i [Utgående autentiseringsuppgifter](#Expiring-credentials).
+Så här använder du ej förfallande autentiseringsuppgifter:
+
+* Skapa autentiseringsuppgifter som inte förfaller i Experience Platform.
+* Bevilja åtkomst till de autentiseringsuppgifter som inte förfaller genom att följa stegen som anges i [Utgående autentiseringsuppgifter](#Expiring-credentials).
 
 Mer information finns i [Åtkomstkontroll för kundresa](../technotes/access-control.md), särskilt [Tilläggsbehörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
