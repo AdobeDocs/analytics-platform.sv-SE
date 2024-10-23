@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3588'
 ht-degree: 0%
 
 ---
@@ -194,6 +194,16 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >abstract="Välj ett inköpsgrupp-ID (den unika identifieraren för en inköpsgrupp) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Matchningsnyckel"
+>abstract="Välj hur du vill förena: baserat på en matchande nyckel eller en matchande behållare.<br/><br/>**[!UICONTROL Matching key]**: Välj ett fält som du vill koppla ihop med en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd.<br/>**[!UICONTROL Matching container]**: Välj en behållare som ska användas för att ansluta till en av händelsedatamängderna. Om listan är tom har du förmodligen inte konfigurerat en eller flera behållare."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 <!-- markdownlint-disable MD034 -->

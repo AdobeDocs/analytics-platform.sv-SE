@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3051'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,22 @@ De viktigaste fördelarna är:
 
 ## Förutsättningar
 
-Om du vill använda den här funktionen måste du ha:
-
+Om du vill använda den här funktionen kan du använda förfallande eller ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. Guiden [Autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för autentiseringsuppgifter eller ej förfallande autentiseringsuppgifter.
+Nedan visas ytterligare steg för att konfigurera CJA-behörigheter
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
+
+### Utgående autentiseringsuppgifter
 
 * Tillgång till Experience Platform och Customer Journey Analytics.
 * Beviljad produktadministratörsåtkomst till Customer Journey Analytics så att du kan visa, redigera, uppdatera eller ta bort anslutningar och datavyer.
+* ELLER
 * Beviljad åtkomst till de datavyer som du vill komma åt.
 * Beviljade åtkomst till CJA BI-tillägget.
-* Använd förfallodatum för autentiseringsuppgifter som inte förfaller för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. Guiden [Autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för autentiseringsuppgifter eller ej förfallande autentiseringsuppgifter.
+
+### Referenser som inte förfaller
+
+* Skapa inloggningsuppgifter som inte förfaller i Adobe.
+* Bevilja åtkomst till de autentiseringsuppgifter som inte förfaller genom att följa de steg som anges i [Utgående autentiseringsuppgifter](#Expiring-credentials).
 
 Mer information finns i [Åtkomstkontroll för kundresa](../technotes/access-control.md), särskilt [Tilläggsbehörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
