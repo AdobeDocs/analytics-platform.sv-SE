@@ -4,7 +4,7 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 347ab5b400fb8a5fddc02878f779be7112d693ab
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -80,8 +80,8 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 | Alternativ | Beskrivning |
 |---|---|
 | **[!UICONTROL Create metric from selection]** | Skapa ett nytt mått från det valda måttet. Mått kan vara Medel, Media, Kolumn max, Kolumn min, Kolumnsumma. Du kan också välja Öppna i verktyget för beräknade mått om du vill skapa ett beräknat mått. |
-| **[!UICONTROL Add time period column]** | Lägg till en tidsperiodkolumn. Du erbjuds flera alternativ där kalenderintervallet på panelen avgör *datumintervallet*: <li>**[!UICONTROL Prior *datumintervall *till det här dataintervallet]**</li><li>**[!UICONTROL These *datumintervall *till det här datumintervallet]**.</li><li>**[!UICONTROL Custom data range to this date range]**. Öppnar **[!UICONTROL Date range builder]** för att ange datumintervall.</li>Mer information finns i [Datumjämförelse](/help/components/date-ranges/time-comparison.md). |
-| **[!UICONTROL Compare time periods]** | Lägger till jämförelsetidsperiodens kolumner. Endast tillgängligt när dimensionen inte är baserad på tid. Du erbjuds flera alternativ som avgör *datumintervallet*: <li>**[!UICONTROL Prior *datumintervall *till det här dataintervallet]**</li><li>**[!UICONTROL Custom data range to this date range]**. Öppnar **[!UICONTROL Date range builder]** för att ange datumintervall.</li>Mer information finns i [Datumjämförelse](/help/components/date-ranges/time-comparison.md). |
+| **[!UICONTROL Add time period column]** | Lägg till en tidsperiodkolumn. Du erbjuds flera alternativ där kalenderintervallet på panelen avgör *datumintervallet*: <li>**[!UICONTROL Prior *datumintervall *till det här datumintervallet]**</li><li>**[!UICONTROL These *datumintervall *till det här datumintervallet]**.</li><li>**[!UICONTROL Custom date range to this date range]**. Öppnar **[!UICONTROL Date range builder]** för att ange datumintervall.</li>Mer information finns i [Datumjämförelse](/help/components/date-ranges/time-comparison.md). |
+| **[!UICONTROL Compare time periods]** | Lägger till jämförelsetidsperiodens kolumner. Endast tillgängligt när dimensionen inte är baserad på tid. Du erbjuds flera alternativ som avgör *datumintervallet*: <li>**[!UICONTROL Prior *datumintervall *till det här datumintervallet]**</li><li>**[!UICONTROL Custom date range to this date range]**. Öppnar **[!UICONTROL Date range builder]** för att ange datumintervall.</li>Mer information finns i [Datumjämförelse](/help/components/date-ranges/time-comparison.md). |
 | **[!UICONTROL Modify attribution models]** | Ändra kolumnens attribueringsmodell. |
 | **[!UICONTROL Compare attribution model]** | Ange en ny distributionsmodell och jämför den med attribueringsmodellen för den valda kolumnen. En ny kolumn läggs till med den nya attributmodellens mått. En ändringskolumn i procent läggs också till för jämförelse. |
 | **[!UICONTROL Reset column widths]** | Återställ kolumnbredderna till standardbredden. |

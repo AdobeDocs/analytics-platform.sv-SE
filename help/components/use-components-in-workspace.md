@@ -4,7 +4,7 @@ title: Använda komponenter i Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Varje panel innehåller som standard ett datumintervall. Det finns flera sätt a
 
      ![Släpp ett datumintervall](assets/add-date-range.gif)
 
-   * Ett mått eller en dimension i en visualisering av frihandsregister. Mer information finns i [Använd dataintervall](/help/components/date-ranges/overview.md#use-date-ranges).
+   * Ett mått eller en dimension i en visualisering av frihandsregister. Mer information finns i [Använd datumintervall](/help/components/date-ranges/overview.md#use-date-ranges).
 
 Mer information om hur du använder och hanterar datumintervall i Analysis Workspace finns i [Översikt över datumintervall](/help/components/date-ranges/overview.md).
 

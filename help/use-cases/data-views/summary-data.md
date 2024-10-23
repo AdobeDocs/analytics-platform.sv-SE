@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '4610'
 ht-degree: 7%
@@ -430,7 +430,7 @@ Efter en stund kontrollerar du att data från datauppsättningarna har lästs in
 1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Connections]** på den översta menyn.
 1. Välj din anslutning, till exempel **[!UICONTROL Example Connection Using Summary Data]**.
-1. Välj ett lämpligt dataområde i informationen för **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]**.
+1. Välj ett lämpligt datumintervall i informationen för **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]**.
    1. Välj ![Kalender](/help/assets/icons/Calendar.svg) och sedan **[!UICONTROL Last 7 days]**.
    1. Välj **[!UICONTROL Apply]**.
 
@@ -550,7 +550,7 @@ Skapa ett nytt projekt i Analysis Workspace om du vill rapportera sammanfattning
 Du ser en tom arbetsyta med en [!UICONTROL Freeform]-panel, som består av en tom [!UICONTROL Freeform table].
 
 1. Se till att datavyn som valts för panelen refererar till datavyn som innehåller konfigurationen för sammanfattningsdata. Exempel: **[!UICONTROL Example Data View Using Summary Data.]**
-1. Se till att dataområdet är giltigt för de data som du vill rapportera om. Till exempel: **[!UICONTROL Last 2 full months]**.
+1. Kontrollera att datumintervallet är giltigt för de data som du vill rapportera om. Till exempel: **[!UICONTROL Last 2 full months]**.
 1. Dra **[!UICONTROL Tracking Code (Event)]** från **[!UICONTROL Dimensions]** och släpp dimensionen i den tomma friformstabellen.
 1. Dra **[!UICONTROL Orders]** från **[!UICONTROL Metrics]** och släpp måttet i kolumnen **[!UICONTROL Events]** för att ersätta den kolumnen i friformstabellen.
 1. Dra **[!UICONTROL Revenue]** från **[!UICONTROL Metrics]** och släpp måttet för att lägga till det som en extra kolumn i friformstabellen.

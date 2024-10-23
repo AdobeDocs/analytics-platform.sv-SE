@@ -4,7 +4,7 @@ description: Lär dig hur du visar och hanterar Customer Journey Analytics grans
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 2%
@@ -111,7 +111,7 @@ Följande objekt visas:
 
 Markera trattikonen (![filter](assets/filter-icon.png)) om du vill visa en lista med filterkontroller för att begränsa resultatet. Endast de sista 1 000 posterna visas, oavsett vilka filter som har valts.
 
-![Granskningslogg som visar de filter som visas för dataområde.](assets/filters.png)
+![Granskningslogg som visar de filter som visas för datumintervall.](assets/filters.png)
 
 Följande filter är tillgängliga för granskningshändelser i användargränssnittet:
 

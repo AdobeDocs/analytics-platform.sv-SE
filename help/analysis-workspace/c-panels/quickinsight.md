@@ -4,7 +4,7 @@ title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Välj byggstenar:
 * **[!UICONTROL Analyze]** - ange en dimension (orange)
 * **[!UICONTROL by]** - ange ett mått (grönt)
 * **[!UICONTROL filter by]** - ange ett filter (blått)
-* **[!UICONTROL on]** - ange ett dataområde (lila).
+* **[!UICONTROL on]** - ange ett datumintervall (lila).
 
 Du måste välja minst en dimension och ett mått för att visualiseringen ska fungera korrekt.
 
@@ -114,7 +114,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder]. Vissa av dem
 
   ![Meddelande från panelen Snabbinformation visas när du har valt hjälpikonen.](assets/qibuilder4.png)
 
-* Du kan analysera flera dimensioner och mätvärden, kombinera eller jämföra filter och ange ett dataområde:
+* Du kan analysera flera dimensioner och mätvärden, kombinera eller jämföra filter och ange ett datumintervall:
 
   ![Resultat av verktyget för snabb Insights-byggaren](assets/qibuilder-result.png)
 
@@ -124,7 +124,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder]. Vissa av dem
 
    * **[!UICONTROL filter by]**: Du kan lägga till upp till två filter till. Du kan till exempel lägga till Bokningar som ett filter och kombinera det filtret med de filter du jämför med Vanliga bokningar och Första gången. Se ➏, ➐ och ➑.
 
-   * on: Du kan ange dataområde. Se ➒.
+   * on: Du kan ange datumintervall. Se ➒.
 
 ## Kända begränsningar
 

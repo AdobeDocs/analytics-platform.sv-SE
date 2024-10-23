@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '3355'
 ht-degree: 0%
@@ -229,7 +229,7 @@ Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext
 | **Skiktade diagram** | | |
 | | 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. <p>Mer information finns i [Stapel och stapel](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
-| | Antal fickor | Välj antalet dataintervall (bucket) i visualiseringen. Det högsta antalet bucklor är 50. <p>Mer information finns i [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
+| | Antal fickor | Välj antalet datumintervall (bucket) i visualiseringen. Det högsta antalet bucklor är 50. <p>Mer information finns i [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
 | | Inventeringsmetod | Välj bland följande alternativ: <ul><li>Träff</li><li>Session</li><li>Person</li></ul> <p>Om du till exempel använder det tillsammans med sidvyer kan du välja sidvyer per person, sidvyer för besök eller sidvyer per händelse. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell.</p> |
 | **[Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Värde | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Procentuell ändring</li><li>Rådifferens</li></ul> |

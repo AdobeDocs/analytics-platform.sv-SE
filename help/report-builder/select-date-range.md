@@ -1,12 +1,12 @@
 ---
-title: Markera ett dataområde i Report Builder i Customer Journey Analytics
+title: Så här väljer du ett datumintervall i Report Builder i Customer Journey Analytics
 description: Beskriver hur du använder kalender, rullande datum och anpassade uttryck i Report Builder för Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Du kan välja att exkludera idag för valfritt datumintervall.
 
 ## Använda kalendern
 
-När du använder **kalendern** visar datumintervallfältet det aktuella datumintervallet för begäran om datablocket. Du kan ange datum direkt i datumintervallfältet eller använda ett dataområdesalternativ.
+När du använder **kalendern** visar datumintervallfältet det aktuella datumintervallet för begäran om datablocket. Du kan ange datum direkt i datumintervallfältet eller använda ett datumintervallalternativ.
 
 ### Datumintervallfält
 
@@ -92,7 +92,7 @@ Med alternativet för rullande datum kan du välja ett datumintervall med rullan
 
    ![Report Builder datumintervall med den aktuella dagen plus 14 dagar.](./assets/image21.png)
 
-1. Klicka på Nästa för att definiera dataområdet.
+1. Klicka på Nästa för att definiera datumintervallet.
 
    Använd datumförhandsvisningen för att bekräfta att det resulterande datumintervallet är det önskade intervallet.
 
