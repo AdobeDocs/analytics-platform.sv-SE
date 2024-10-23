@@ -3,32 +3,35 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 68bdee0cfc0a8a6718ea16cfdaea407c3c8c6e0b
+source-git-commit: 3db41390781517932447ab5e67cf9ba8fe02d774
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 2%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
-# Aktuell versionsinformation för Adobe Customer Journey Analytics (oktober 2024)
+# Aktuell versionsinformation för Adobe Customer Journey Analytics (23 oktober 2024)
 
-**Senast uppdaterad**: 15 oktober 2024
+**Senast uppdaterad**: 23 oktober 2024
 
-Versionsinformationen gäller den 2 oktober 2024-22 oktober 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsinformationen omfattar frisläppningsperioden 15 oktober 2024 till slutet av 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya eller uppdaterade funktioner
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Resursöverföring** | Gör att du kan överföra ägarskap av komponenter som projekt, filter och beräknade värden till andra användare för att säkerställa kontinuitet och lämplig åtkomst. [Läs mer](/help/tools/asset-transfer/transfer-assets.md) |  | Oktober 15 |
-| **Guidad analys: Bädda in i Workspace** | [Guidad analys](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) är nu tillgängligt direkt i Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser. Från ett nytt område på vänster sida kan du skapa nya guidade analyser som du kan lägga till i dina projekt. Du kan också komma åt sparade guidade analyser som kan återanvändas som byggblock i många projekt. | 2 oktober 2024 | 31 oktober 2024 |
-| **Produktanvändning** | Se hur er organisation använder Customer Journey Analytics. Om du aktiverar den här funktionen skapas en datauppsättning i Adobe Experience Platform som samlar in data när någon i organisationen använder Analysis Workspace. En anslutning och en datavy skapas också automatiskt, vilket ger dig åtkomst till dimensioner som de vanligaste projekttyperna, de mest aktiva användarna och de vanligaste komponenterna som används i projekt. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) | 23 oktober 2024 | Januari 2025 |
-| **Visualisering av arbetsytan på resan** | Researbetsytan är en visualisering i arbetsytan Analys som gör att du kan analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det.<p>Kunder med tillgång till Adobe Journey Optimizer kan analysera Journey Optimizer resor.<p>Mer information om arbetsytan på resan finns i [Översikt över arbetsytan på resan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas).<p>Mer information om hur du skapar en visualisering av en arbetsyta på resan finns i [Konfigurera arbetsytan på resan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas). | 2 oktober 2024 | 14 oktober 2024 |
-| **Panelfilter och kolumnfilter ingår nu när en målgrupp skapas** | När du skapar en målgrupp från en visualisering i Analysis Workspace inkluderas nu panelfilter och kolumnfilter som ytterligare kriterier. Om filtren inte behövs kan de tas bort innan målgruppen publiceras. Tidigare ignorerades alla filter som tillämpades på panelen eller på kolumnen i en visualisering i Analysis Workspace när en målgrupp skapades.<p>Mer information om hur du skapar en målgrupp från Customer Journey Analytics finns i [Skapa och publicera målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish). |  | 2 oktober 2024 |
+| **Guidad analys: Bädda in i Workspace** | [Guidad analys](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) är nu tillgängligt direkt i Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser. Från ett nytt område på vänster sida kan du skapa nya guidade analyser som du kan lägga till i dina projekt. Du kan också komma åt sparade guidade analyser som kan återanvändas som byggblock i många projekt. | 2 oktober 2024 | 23 oktober 2024 |
+| **Produktanvändning** | Se hur er organisation använder Customer Journey Analytics. Om du aktiverar den här funktionen skapas en datauppsättning i Adobe Experience Platform som samlar in data när någon i organisationen använder Analysis Workspace. En anslutning och en datavy skapas också automatiskt, vilket ger dig åtkomst till dimensioner som de vanligaste projekttyperna, de mest aktiva användarna och de vanligaste komponenterna som används i projekt. [Dokumentationslänk att följa] | 23 oktober 2024 | Januari 2025 |
+
 
 ## Korrigeringar i Customer Journey Analytics
 
-AN-354085; AN-355870; AN-356037; AN-356881; AN-357100; AN-358193; AN-358364; AN-4 358911; AN-359000; AN-359160
+Målgrupper: AN-359692
+Anslutningar: AN-360403
+Fullständig tabellexport: AN-359785
+Rapportering: AN-350707; AN-355331; AN-359308; AN-359826; AN-359915; AN-360097; AN-360245
+Report Builder: AN-361022
 
 ## Viktiga meddelanden för Customer Journey Analytics-administratörer
 
