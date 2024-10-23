@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
+source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1654'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,13 @@ Den mest framträdande insikten på arbetsytan i Journey visas som en bildtext h
 
 Den här beskrivningen sammanfattar vilken av alla vägar som hade den högsta konverteringsgraden.
 
+När resan innehåller flera startnoder ser bildtexten ut så här:
+
 ![Insiktsbildtext för arbetsytan på resan](assets/journey-canvas-caption.png)
+
+När resan innehåller en enda startnod ser bildtexten ut så här:
+
+![En startnod för insiktsbildtext på arbetsytan på resan](assets/journey-canvas-caption-singlestart.png)
 
 Tänk på följande när du tolkar den här bildtexten:
 
@@ -176,13 +182,9 @@ Det beror på att du, till skillnad från Journey Optimizer, kan använda flera 
 
 #### Skillnader i funktioner
 
-När du har ändrat en Journey Optimizer-resa på en arbetsyta kan funktionaliteten ändras för följande funktioner, beroende på dina ändringar:
+När du har ändrat en Journey Optimizer-resa på arbetsytan för en resa ändras de alternativ som är tillgängliga i listrutan [!UICONTROL **Pilinställningar**], beroende på dina ändringar. Mer information finns i [Konfigurera inställningar](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* Värdena som visas i fältet [!UICONTROL **Nodtyp**] ändras.
-
-* De alternativ som är tillgängliga i listrutan [!UICONTROL **Pilinställningar**] ändras.
-
-Mer information om dessa fält finns i [Konfigurera inställningar](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Fältet [!UICONTROL **Nodtyp**] är bara tillgängligt i Journey Optimizer. Den är inte tillgänglig när du visar en Journey Optimizer-resa på en arbetsyta i en resa, oavsett om du gör ändringar på resan på arbetsytan i en resa i Europa eller inte.
 
 #### Synkroniseringsskillnader
 
