@@ -5,9 +5,9 @@ keywords: produktanalys
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,6 @@ ht-degree: 0%
 # Översikt över guidad analys
 
 Med hjälp av guidad analys kan användare, från marknadsföring till produkter och analytiker, själva leverera högkvalitativa data och insikter om kundresan via guidade arbetsflöden som bygger på data från olika kanaler i Customer Journey Analytics. I den guidade analysen, som liknar Analysis Workspace- och Mobile-styrkort, används data från en [datavy](/help/data-views/data-views.md) som refererar till data i Adobe Experience Platform via en [anslutning](../connections/overview.md). Många rapporter som skapas i den guidade analysen kan smidigt överföras till Analysis Workspace för ytterligare forskning.
-
->[!NOTE]
->
->Se [Vanliga frågor](faq.md) för skillnader i terminologi (segment, filter och mer) mellan den guidade analysen och Analysis Workspace.
-
 
 Följande guidade analyser är tillgängliga:
 
