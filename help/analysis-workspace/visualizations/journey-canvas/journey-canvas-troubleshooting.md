@@ -3,9 +3,7 @@ description: Exempel när du konfigurerar en visualisering av en arbetsyta i en 
 title: Exempel på arbetsyta på resan
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -13,8 +11,6 @@ ht-degree: 0%
 ---
 
 # Felsökning av arbetsytan på resan
-
-{{release-limited-testing}}
 
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder.
 

@@ -4,7 +4,7 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 0%
@@ -12,8 +12,6 @@ ht-degree: 0%
 ---
 
 # Översikt över arbetsytan Resa
-
-{{release-limited-testing}}
 
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder. Du kan definiera en resa från scratch eller visa en resa från Journey Optimizer och sedan se hur människor lämnade (föll ut) eller fortsatte igenom (föll igenom) resan.
 
