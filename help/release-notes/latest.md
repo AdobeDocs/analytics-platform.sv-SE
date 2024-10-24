@@ -3,7 +3,7 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 0920203cc40cdf234186851a931492843182cf5c
+source-git-commit: da5c47f6572664f22cf2aa30d4551ab47326115a
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (23 oktober 2024)
 
-**Senast uppdaterad**: 23 oktober 2024
+**Senast uppdaterad**: 24 oktober 2024
 
 Versionsinformationen omfattar frisläppningsperioden 15 oktober 2024 till slutet av 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
