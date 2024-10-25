@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1802'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Innehåller övergripande inställningar för datavyn.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Datavyer i Journey Optimizer"
->abstract="Journey Optimizer måste använda en datavy som är konfigurerad med Customer Journey Analytics.<br/>Aktivera det här alternativet om du vill göra det här till standarddatavyn som används i Adobe Journey Optimizer-rapporter."
+>abstract="Customer Journey Analytics måste använda en anslutning och datavy som är kompatibel med Adobe Journey Optimizer. Som standard skapas en anslutning och en datavy automatiskt för detta.<br/>Du kan också aktivera det här alternativet om du vill göra den här datavyn till standarddatavyn som används i Adobe Journey Optimizer-rapporter. När det här alternativet är aktiverat läggs alla nödvändiga komponenter som krävs för Journey Optimizer till i datavyn, och alla nödvändiga Journey Optimizer-datauppsättningar läggs till i anslutningen som är kopplad till datavyn."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Vilka komponenter och datauppsättningar som läggs till."
 
 <!-- markdownlint-enable MD034 -->

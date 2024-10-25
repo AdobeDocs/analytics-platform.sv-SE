@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 12%
+source-wordcount: '942'
+ht-degree: 11%
 
 ---
 
@@ -363,9 +363,10 @@ ht-degree: 12%
       + [Importera och använda data från Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Engagera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datavyer {#data-views}
-      + [Datavyer använder exempel](../use-cases/data-views/data-views-usecases.md)
-      + [Använd bindningsdimensioner och mätvärden](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [Använd sammanfattningsdata](../use-cases/data-views/summary-data.md)
+      + [Datavyer använder exempel](/help/use-cases/data-views/data-views-usecases.md)
+      + [Använd bindningsdimensioner och mätvärden](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md)
+      + [Användningsexempel för BI-tillägg](/help/use-cases/data-views/bi-extension-usecases.md)
    + Dataexport {#data-export}
       + [Översikt](../use-cases/data-export/overview.md)
       + [BI-tillägg](../use-cases/data-export/bi-extension.md)
