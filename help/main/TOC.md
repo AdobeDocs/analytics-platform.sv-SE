@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
+source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '975'
 ht-degree: 11%
 
 ---
@@ -45,6 +45,16 @@ ht-degree: 11%
       + [Välj uppgraderingsväg](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Skicka data till plattformen](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Behåll historiska data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+      + [Rekommenderad process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Arkitektur av ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Skapa ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [Använd ditt befintliga schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [Skapa en datauppsättning](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [Skapa ett datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Lägg till plattform som en tjänst](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Skapa en anslutning](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
+      + [Skapa en datavy](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [Validera dataflöde](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
    + Jämförelse med Adobe Analytics {#cja-aa-comparison}
       + [Översikt](../getting-started/aa-vs-cja/overview.md)
       + [Använd Adobe Analytics-data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
