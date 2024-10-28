@@ -3,10 +3,10 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: da5c47f6572664f22cf2aa30d4551ab47326115a
+source-git-commit: 1fffde84a332a7ae2911b8d8e8bb62717e5f2043
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 2%
+source-wordcount: '375'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ Versionsinformationen omfattar frisläppningsperioden 15 oktober 2024 till slute
 | ----------- | ---------- | ------- | ---- |
 | **Resursöverföring** | Gör att du kan överföra ägarskap av komponenter som projekt, filter och beräknade värden till andra användare för att säkerställa kontinuitet och lämplig åtkomst. [Läs mer](/help/tools/asset-transfer/transfer-assets.md) |  | Oktober 15 |
 | **Guidad analys: Bädda in i Workspace** | [Guidad analys](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) är nu tillgängligt direkt i Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser. Från ett nytt område på vänster sida kan du skapa nya guidade analyser som du kan lägga till i dina projekt. Du kan också komma åt sparade guidade analyser som kan återanvändas som byggblock i många projekt. | 2 oktober 2024 | 23 oktober 2024 |
-| **Produktanvändning** | Se hur er organisation använder Customer Journey Analytics. Om du aktiverar den här funktionen skapas en datauppsättning i Adobe Experience Platform som samlar in data när någon i organisationen använder Analysis Workspace. En anslutning och en datavy skapas också automatiskt, vilket ger dig åtkomst till dimensioner som de vanligaste projekttyperna, de mest aktiva användarna och de vanligaste komponenterna som används i projekt. [Dokumentationslänk att följa] | 23 oktober 2024 | Januari 2025 |
+| **Produktanvändning** | Se hur er organisation använder Customer Journey Analytics. Om du aktiverar den här funktionen skapas en datauppsättning i Adobe Experience Platform som samlar in data när någon i organisationen använder Analysis Workspace. En anslutning och en datavy skapas också automatiskt, vilket ger dig åtkomst till dimensioner som de vanligaste projekttyperna, de mest aktiva användarna och de vanligaste komponenterna som används i projekt. [Läs mer](/help/tools/product-usage/usage-overview.md) | 23 oktober 2024 | Januari 2025 |
 | **Ny information om begärandefaktorer i Analysis Workspace Performance** | Det finns nu ett nytt avsnitt,&quot;Begärandefaktorer&quot;, som är tillgängligt när du analyserar prestanda i Analysis Workspace. Mer information om hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna finns i&quot;Begärandefaktorer&quot; i [Optimera Analysis Workspace-prestanda](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | 1 oktober 2024 |
 
 
