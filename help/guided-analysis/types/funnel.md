@@ -5,14 +5,23 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Funnel]-analys
+# [!UICONTROL Funnel]-analys {#funnel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_funnel_button"
+>title="Tratt"
+>abstract="Jämför konverteringsgrader mellan steg."
+
+<!-- markdownlint-enable MD034 -->
 
 Analysen ![ConversionTrnel ](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel]**ger en visuell representation av en viktig användarresa i din produkt. Den vågräta axeln representerar varje steg som en användare måste gå igenom. Den lodräta axeln representerar procentandelen användare eller sessioner i varje steg. Alla steg måste utföras i den slutliga ordningen, men kan inträffa när som helst i rapportfönstret.
 

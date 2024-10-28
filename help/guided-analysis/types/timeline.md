@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Timeline]-analys
+# [!UICONTROL Timeline]-analys {#timeline}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_timeline_button"
+>title="Tidslinje"
+>abstract="Observera sessionshändelser på användarnivå över tid."
+
+<!-- markdownlint-enable MD034 -->
 
 Med analysen ![Tidslinje](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** kan du observera sessionshändelser på användarnivå över tiden för att hitta upplevelsemönster och berätta bättre användarberättelser. Med den vänstra listen kan du filtrera flödet efter egenskapsvärden och segment. Med den högra listen kan du välja i en slumpmässig lista över användare som matchar filtervillkoren. I mittområdet visas strömmen för den valda användaren per session, bestående av tidsstämpel, egenskapsvärden och varaktighet. Varaktighet är inte tillgängligt för den senaste händelsen i en given session.
 

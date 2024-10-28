@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
 
-# Kvarhållningsanalys
+# Kvarhållningsanalys {#retention}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_retention_button"
+>title="Kvarhållning"
+>abstract="Mät hur många användare som fortsätter att använda produkten."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]**-analysen mäter hur användarna fortsätter att använda produkten med tiden, vilket kan hjälpa dig att förstå hur produktmarknaden passar. Analysen räknar användare baserat på två viktiga händelser:
 
