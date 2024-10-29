@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bab067f50e04b7eb1a211d8767cd2cd7a2acd9c5
+source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 0%
@@ -30,16 +30,6 @@ Så här skapar eller redigerar du en datavy:
 
 ## Konfigurera {#configure}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_externalid"
->title="Externt ID"
->abstract="Om du ändrar det externa ID:t kan det påverka hur datavyns namn visas i externa källor, till exempel affärsinformationsverktyg."
-
-<!-- markdownlint-enable MD034 -->
-
-
 Så här konfigurerar du en ny eller befintlig datavy:
 
 1. Välj fliken **[!UICONTROL Configure]** (om den inte redan är aktiv).
@@ -49,7 +39,16 @@ Så här konfigurerar du en ny eller befintlig datavy:
 1. Välj **[!UICONTROL Save and continue]** om du vill fortsätta konfigurera den nya eller befintliga datavyn. Välj **[!UICONTROL Save]** om du vill spara konfigurationen för den befintliga datavyn.
 
 
-### Inställningar
+### Inställningar {#settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="Externt ID"
+>abstract="Om du ändrar det externa ID:t kan det påverka hur datavyns namn visas i externa källor, till exempel affärsinformationsverktyg."
+
+<!-- markdownlint-enable MD034 -->
 
 Innehåller övergripande inställningar för datavyn.
 

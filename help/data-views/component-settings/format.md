@@ -5,7 +5,7 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
@@ -22,16 +22,6 @@ ht-degree: 1%
 >abstract="Avgör hur en komponent visas när den används i rapporter."
 
 <!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format_currencyconversion"
->title="Valutakonvertering"
->abstract="Välj en valutakoddimension för att konfigurera och visa valutan i en vald valutatyp."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Med Format kan du bestämma hur ett givet mätvärde ska visas när det används i rapporter.
@@ -64,7 +54,16 @@ Du kan bestämma hur ett givet mätresultat ska visas genom att justera dess for
 
    {style="table-layout:auto"}
 
-## Använd valutakonvertering
+## Använd valutakonvertering {#use-currency-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="Valutakonvertering"
+>abstract="Välj en valutakoddimension för att konfigurera och visa valutan i en vald valutatyp."
+
+<!-- markdownlint-enable MD034 -->
 
 Valutakonverteringen i Customer Journey Analytics kan vara mycket värdefull för företag som är verksamma internationellt. Genom att eliminera komplexiteten i den manuella valutaomvandlingen kan valutaomräkningen i Customer Journey Analytics skapa enhetlighet och tydlighet i finansiella data. Valutakonverteringen håller reda på de dagliga historiska växelkurserna och bibehåller dessa dagskurser under en period på fyra år.
 

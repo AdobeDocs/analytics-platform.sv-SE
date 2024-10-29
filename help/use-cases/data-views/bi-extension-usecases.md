@@ -6,9 +6,9 @@ feature: Data Views
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: b111a75041743e14a71d0df56b04c85ed4bae7b8
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '2126'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Följande användningsfall dokumenteras:
 För varje användningsfall finns instruktioner tillgängliga för följande BI-verktyg i avsnittet **Detaljer**:
 
 * Power BI Desktop (version 2.136.1478.0, 64 bitar (september 2024))
-* Tableau Desktop (version 2022.3.5 (2023.23.0310) 64-bitar)
+* Tableu Desktop (version 2024.1.5 (20241.24.0705.0334) 64-bitar)
 
-Instruktionerna refererar till en exempeldatavy som heter **[!UICONTROL public.ares_sql_validation]**, två exempeldimensioner (**[!UICONTROL Product Name]** och **[!UICONTROL Product Category]**) och två exempelmått (**[!UICONTROL Purchases]** och **[!UICONTROL Purchase Revenue]**). När du går igenom instruktionerna kan du ändra de här exempelobjekten för din specifika miljö där det passar.
+Instruktionerna refererar till en exempeldatavy som heter **[!UICONTROL public.cc_data_view]**, två exempeldimensioner (**[!UICONTROL Product Name]** och **[!UICONTROL Product Category]**) och två exempelmått (**[!UICONTROL Purchases]** och **[!UICONTROL Purchase Revenue]**). När du går igenom instruktionerna kan du ändra de här exempelobjekten för din specifika miljö där det passar.
 
 
 ## Visa och koppla data
@@ -81,13 +81,13 @@ I det här användningsexemplet konfigureras anslutningen från BI-verktyget til
    1. Välj **[!UICONTROL Connect]**.
 1. I dialogrutan **[!UICONTROL Navigator]** hämtas datavyer. Den här hämtningen kan ta en stund. När den har hämtats:
    ![Inläsningsdata för Power BI-målservern](assets/powerbi-navigator-load.png)
-   1. Välj **[!UICONTROL public.ares_sql_validation]** i listan i den vänstra panelen.
+   1. Välj **[!UICONTROL public.cc_data_view]** i listan i den vänstra panelen.
    1. Välj **[!UICONTROL Load]**.
 1. Efter en stund visas tillgängliga mått och mått i rutan **[!UICONTROL Data]**.
    ![Power BI-tjänstserverdata har lästs in](assets/powerbi-navigator-loaded.png)
 
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform-frågetjänsten.
 
@@ -118,8 +118,8 @@ I det här användningsexemplet konfigureras anslutningen från BI-verktyget til
    * Namnet på databasen, under **[!UICONTROL Database]**.
    * En lista med tabeller, under **[!UICONTROL Table]**.
      ![Tablet PC ansluten](assets/tableau-connected.png)
-   1. Dra **[!UICONTROL ares_sql_validation]**-posten och släpp posten i huvudvyn som läser **[!UICONTROL Drag tables]** här.
-1. Huvudfönstret visar nu information om datavyn **[!UICONTROL ares_sql_validation]**.
+   1. Dra **[!UICONTROL cc_data_view]**-posten och släpp posten i huvudvyn som läser **[!UICONTROL Drag tables]** här.
+1. Huvudfönstret visar nu information om datavyn **[!UICONTROL cc_data_view]**.
    ![Tablet PC ansluten](assets/tableau-validation.png)
 
 >[!ENDTABS]
@@ -132,6 +132,11 @@ I det här användningsexemplet konfigureras anslutningen från BI-verktyget til
 I det här fallet vill du visa en tabell och en enkel radvisualisering som visar en daglig trend för förekomster från 1 januari 2023 till 31 januari 2023.
 
 +++ Information
+
+>[!PREREQUISITES]
+>
+>Kontrollera att du har verifierat en [lyckad anslutning och kan visa datavyer](#connect-and-list-data-views) för BI-verktyget som du vill testa det här användningsexemplet för.
+>
 
 >[!BEGINTABS]
 
@@ -169,7 +174,7 @@ I det här fallet vill du visa en tabell och en enkel radvisualisering som visar
 
    ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-filter-final.png)
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
@@ -196,11 +201,11 @@ I det här fallet vill du visa en tabell och en enkel radvisualisering som visar
    1. Dra **[!UICONTROL DAY(Daterangeday)]** från **[!UICONTROL Columns]** till **[!UICONTROL Rows]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn i verktygsfältet.
 
-      **[!UICONTROL Day]**-vyn ska se ut så här nedan.
+      **[!UICONTROL Data]**-vyn ska se ut så här nedan.
 
       ![Skrivbordsdata för Tablet PC](assets/uc2-tableau-data.png)
 
-1. Välj fliken **[!UICONTROL Dashboard]** om du vill skapa en ny **[!UICONTROL Dashboard 1]**-vy. I vyn **[!UICONTROL Dashboard 1]**:
+1. Skapa en ny **[!UICONTROL Dashboard 1]**-vy genom att klicka på tabbknappen **[!UICONTROL New Dashboard]** (längst ned). I vyn **[!UICONTROL Dashboard 1]**:
    1. Dra och släpp **[!UICONTROL Graph]**-bladet från **[!UICONTROL Sheets]**-hyllan till **[!UICONTROL Dashboard 1]**-vyn som läser *Drop sheets här*.
    1. Dra och släpp **[!UICONTROL Data]**-bladet från **[!UICONTROL Sheets]**-hyllan nedanför **[!UICONTROL Graph]**-bladet till **[!UICONTROL Dashboard 1]**-vyn.
    1. Markera bladet **[!UICONTROL Data]** i vyn och ändra **[!UICONTROL Entire View]** till **[!UICONTROL Fix Width]**.
@@ -209,7 +214,6 @@ I det här fallet vill du visa en tabell och en enkel radvisualisering som visar
 
       ![Instrumentpanel för bordsdator ](assets/uc2-tableau-dashboard.png)
 
-
 >[!ENDTABS]
 
 +++
@@ -217,19 +221,61 @@ I det här fallet vill du visa en tabell och en enkel radvisualisering som visar
 
 ## Trend varje timme
 
-Synpunkter på användningsfall
+I det här fallet vill du visa en tabell och en enkel radvisualisering som visar en timtrend för förekomster för 1 januari 2023.
 
 +++ Information
+
+>[!PREREQUISITES]
+>
+>Kontrollera att du har verifierat en [lyckad anslutning och kan visa datavyer](#connect-and-list-data-views) för BI-verktyget som du vill testa det här användningsexemplet för.
+>
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
-Steg
+![Alert](/help/assets/icons/Alert.svg) Power BI **förstår** inte hur datumtidskolumner ska hanteras, så dimensioner som **[!UICONTROL daterangehour]** och **[!UICONTROL daterangeminute]** stöds inte.
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
-Steg
+1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
+   1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
+   1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `02/01/2023`.
+
+      ![Datorfilter för Tablet PC](assets/uc3-tableau-filter.png)
+
+   1. Dra och släpp **[!UICONTROL Daterangehour]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
+      * Välj **[!UICONTROL More]** > **[!UICONTROL Hours]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL HOUR(Daterangeday)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
+      * Värdena konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn i verktygsfältet.
+
+      Vyn Blad 1 ska se ut så här nedan.
+
+      ![Diagram för skrivbordsdator för Tableau](assets/uc3-tableau-graph.png)
+
+1. Välj **[!UICONTROL Duplicate]** på snabbmenyn på fliken **[!UICONTROL Sheet 1]** om du vill skapa ett andra blad.
+1. Välj **[!UICONTROL Rename]** på snabbmenyn på fliken **[!UICONTROL Sheet 1]** om du vill byta namn på bladet till `Graph`.
+1. Välj **[!UICONTROL Rename]** på snabbmenyn på fliken **[!UICONTROL Sheet 1 (2)]** om du vill byta namn på bladet till `Data`.
+1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I datavyn:
+   1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
+   1. Dra **[!UICONTROL HOUR(Daterangeday)]** från **[!UICONTROL Columns]** till **[!UICONTROL Rows]**.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn i verktygsfältet.
+
+      **[!UICONTROL Data]**-vyn ska se ut så här nedan.
+
+      ![Skrivbordsdata för Tablet PC](assets/uc3-tableau-data.png)
+
+1. Skapa en ny **[!UICONTROL Dashboard 1]**-vy genom att klicka på tabbknappen **[!UICONTROL New Dashboard]** (längst ned). I vyn **[!UICONTROL Dashboard 1]**:
+   1. Dra och släpp **[!UICONTROL Graph]**-bladet från **[!UICONTROL Sheets]**-hyllan till **[!UICONTROL Dashboard 1]**-vyn som läser *Drop sheets här*.
+   1. Dra och släpp **[!UICONTROL Data]**-bladet från **[!UICONTROL Sheets]**-hyllan nedanför **[!UICONTROL Graph]**-bladet till **[!UICONTROL Dashboard 1]**-vyn.
+   1. Markera bladet **[!UICONTROL Data]** i vyn och ändra **[!UICONTROL Entire View]** till **[!UICONTROL Fix Width]**.
+
+      **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
+
+      ![Instrumentpanel för bordsdator ](assets/uc3-tableau-dashboard.png)
+
 
 >[!ENDTABS]
 
@@ -238,19 +284,90 @@ Steg
 
 ## Månadstrender
 
-Synpunkter på användningsfall
+I det här fallet vill du visa en tabell och en enkel radvisualisering som visar en månadstrend för förekomster för 1 januari 2023-1 januari 2024.
 
 +++ Information
+
+>[!PREREQUISITES]
+>
+>Kontrollera att du har verifierat en [lyckad anslutning och kan visa datavyer](#connect-and-list-data-views) för BI-verktyget som du vill testa det här användningsexemplet för.
+>
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
-Steg
+1. I rutan **[!UICONTROL Data]**:
+   1. Välj dimensionen **[!UICONTROL daterangemonth]**.
+   1. Välj måttet **[!UICONTROL occurrences]**.
 
->[!TAB Tablet PC]
+   En tabell visas med förekomsterna för den aktuella månaden. Förstora tabellvisualiseringen för bättre synlighet.
 
-Steg
+1. I rutan **[!UICONTROL Filters]**:
+
+   1. Välj **[!UICONTROL daterangemonth is (All)]** från **[!UICONTROL Filters on this visual]**.
+   1. Välj **[!UICONTROL Advanced filtering]** som **[!UICONTROL Filter type]**.
+   1. Definiera filtret för **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `1/1/2024.` Du kan använda kalenderikonen för att välja och välja datum.
+   1. Välj **[!UICONTROL Apply filter]**.
+
+   Tabellen uppdateras med det använda **[!UICONTROL daterangeday]**-filtret.
+
+1. I rutan **[!UICONTROL Visualizations]**:
+
+   1. Välj visualisering för **[!UICONTROL Line chart]**.
+
+   En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen.
+
+   ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png)
+
+1. Visualisering av linjediagram:
+
+   1. Välj ![Mer](/help/assets/icons/More.svg).
+   1. Välj **[!UICONTROL Show as a table]** på snabbmenyn.
+
+   Huvudvyn uppdateras för att visa både en radvisualisering och en tabell.
+
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png)
+
+>[!TAB Skrivbord för Tablet PC]
+
+1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
+   1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
+   1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `01/01/2024`.
+
+      ![Datorfilter för Tablet PC](assets/uc4-tableau-filter.png)
+
+   1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
+      * Välj **[!UICONTROL MONTH]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL MONTH(Daterangeday)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
+      * Värdena konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn i verktygsfältet.
+
+      Vyn Blad 1 ska se ut så här nedan.
+
+      ![Diagram för skrivbordsdator för Tableau](assets/uc4-tableau-graph.png)
+
+1. Välj **[!UICONTROL Duplicate]** på snabbmenyn på fliken **[!UICONTROL Sheet 1]** om du vill skapa ett andra blad.
+1. Välj **[!UICONTROL Rename]** på snabbmenyn på fliken **[!UICONTROL Sheet 1]** om du vill byta namn på bladet till `Graph`.
+1. Välj **[!UICONTROL Rename]** på snabbmenyn på fliken **[!UICONTROL Sheet 1 (2)]** om du vill byta namn på bladet till `Data`.
+1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I datavyn:
+   1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
+   1. Dra **[!UICONTROL MONTH(Daterangeday)]** från **[!UICONTROL Columns]** till **[!UICONTROL Rows]**.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn i verktygsfältet.
+
+      **[!UICONTROL Data]**-vyn ska se ut så här nedan.
+
+      ![Skrivbordsdata för Tablet PC](assets/uc4-tableau-data.png)
+
+1. Skapa en ny **[!UICONTROL Dashboard 1]**-vy genom att klicka på tabbknappen **[!UICONTROL New Dashboard]** (längst ned). I vyn **[!UICONTROL Dashboard 1]**:
+   1. Dra och släpp **[!UICONTROL Graph]**-bladet från **[!UICONTROL Sheets]**-hyllan till **[!UICONTROL Dashboard 1]**-vyn som läser *Drop sheets här*.
+   1. Dra och släpp **[!UICONTROL Data]**-bladet från **[!UICONTROL Sheets]**-hyllan nedanför **[!UICONTROL Graph]**-bladet till **[!UICONTROL Dashboard 1]**-vyn.
+   1. Markera bladet **[!UICONTROL Data]** i vyn och ändra **[!UICONTROL Entire View]** till **[!UICONTROL Fix Width]**.
+
+      **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
+
+      ![Instrumentpanel för bordsdator ](assets/uc4-tableau-dashboard.png)
 
 >[!ENDTABS]
 
@@ -263,13 +380,18 @@ Synpunkter på användningsfall
 
 +++ Information
 
+>[!PREREQUISITES]
+>
+>Kontrollera att du har verifierat en [lyckad anslutning och kan visa datavyer](#connect-and-list-data-views) för BI-verktyget som du vill testa det här användningsexemplet för.
+>
+
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop]
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -290,7 +412,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -311,7 +433,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -333,7 +455,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -355,7 +477,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -377,7 +499,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -399,7 +521,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -421,7 +543,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -443,7 +565,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -465,7 +587,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 
@@ -487,7 +609,7 @@ Synpunkter på användningsfall
 
 Steg
 
->[!TAB Tablet PC]
+>[!TAB Skrivbord för Tablet PC]
 
 Steg
 

@@ -5,9 +5,9 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '870'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="Persistence"
->abstract="Konfigurera standardallokeringsmodellen som används för en dimension. Allokering tillämpas före filter i rapportering."
+>abstract="Konfigurera standardallokeringsmodellen som används för en dimension. Allokering tillämpas före filter i rapportering. Mer information finns i [allokeringsinställningar](/help/data-views/component-settings/persistence.md#allocation-settings), [förfalloinställningar](/help/data-views/component-settings/persistence.md#expiration-settings), [bindningsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) och bindningsmått."
 
 <!-- markdownlint-enable MD034 -->
 
