@@ -4,9 +4,9 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 126d2213b97b71ff3116ff53e56217b8b6e7a479
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1886'
 ht-degree: 1%
 
 ---
@@ -126,7 +126,7 @@ När du har skapat och publicerat en målgrupp i Customer Journey Analytics är 
 
 * Publiken i Platform har samma namn och beskrivning som Customer Journey Analytics-publiken. Namnet läggs till med målgrupps-ID:t för Customer Journey Analytics för att säkerställa att målgruppen är unik.
 * Alla ändringar av publikens namn eller beskrivning i Customer Journey Analytics återspeglas i Experience Platform.
-* Om en målgrupp tas bort i Customer Journey Analytics är målgruppen fortfarande tillgänglig i Experience Platform.
+* Om en målgrupp tas bort i Customer Journey Analytics är målgruppen fortfarande tillgänglig i Experience Platform tills profilmedlemskapet för målgruppen upphör. Profilmedlemskapet upphör efter 420 dagar för en engångspublik och efter 16 dagar för återkommande målgrupper.
 
 ## Svarstidsfrågor {#latency}
 
