@@ -3,13 +3,11 @@ title: Delade enheter
 description: Förklaring av hur delade enheter hanteras med hjälp av häftning och andra tekniker.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
-hidefromtoc: true
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
+source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -67,7 +65,7 @@ När senaste-auth-attribuering används för sammanfogning tolkas Stitched ID:n 
 
 ### Enhetsdelning
 
-Enhetsdelning attribuerar anonym aktivitet från en delad enhet till användaren i närmast närhet till den anonyma aktiviteten. Enhetsdelning är det rekommenderade sättet för analytiska användningsfall eftersom enhetsdelning ger kredit för både oautentiserad och autentiserad aktivitet till närmaste kända person. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
+Enhetsdelning attribuerar anonym aktivitet från en delad enhet till användaren i närmast närhet till den anonyma aktiviteten. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
 
 När enhetsdelad attribuering används vid sammanfogning tolkas häftade ID:n som i tabellen nedan.
 
