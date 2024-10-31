@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 1442aa9be5e6a6dc283ba559a2ff6c46de862425
+source-git-commit: e723339831bf835b43096affd4e0f15f41462f54
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Funktioner som inte är tillgängliga:
 | Funktionen stöds inte | Beskrivning |
 | --- | --- |
 | Sammanfattning eller svar direkt | AI-assistenten kan inte svara direkt i chattfältet med ett kortfattat svar på en användarfråga.Exempel på frågor som inte omfattas:<ul><li>*Ge mig en sammanfattning av insikterna från min senaste fråga.*</li><li>*Sammanfatta högdagrarna från linjevisualiseringen.*</li></ul> |
-| Tydligare frågor | Tydliga frågor är begränsade till komponenter och dimensionsobjekt. AI-assistenten kan inte förtydliga datavyer, visualiseringar, datakornighet, jämförelse, omfång osv. Utan att klargöra några frågor blir assistenten som standard den som användaren mest troligt frågar efter. Om det returnerar en oväntad visualisering eller datagranularitet kan användaren sedan använda multibläddrings-/uppdateringsfunktionen för att justera visualisering och data. |
+| Tydligare frågor | Tydliga frågor är begränsade till komponenter och dimensionsobjekt. AI-assistenten kan inte förtydliga datavyer, visualiseringar, datakornighet, jämförelse, omfång osv. Utan att klargöra några frågor blir assistenten som standard den som du mest troligt frågar efter. Om det returnerar en oväntad visualisering eller datagranularitet kan du sedan använda funktionen för flera omgångar/uppdateringar för att justera visualisering och data. |
 | Workspace Actions / Capabilities | AI-assistenten kan inte vidta åtgärder för en användare i Workspace utöver att skapa och uppdatera visualiseringar. Den kan till exempel inte göra något av följande:<ul><li>Gränssnittsknappar för sammanhangsberoende åtgärder (lägg till i diagram, ny panel, ny tabell)</li><li>Dela</li><li>Exportera</li><li>Ladda ned</li><li>Hantera användarinställningar</li><li>Kurva</li><li>Hantera datavy</li><li>Analytics Dashboards-app</li><li>Tillskrivning</li></ul> |
 | Visualiseringstyper som inte stöds | <ul><li>Flöde</li><li>Utfall</li><li>Kohortabell</li><li>Område, staplat område</li><li>Stapel staplad</li><li>Punkt</li><li>Kombination</li><li>Histogram</li><li>Vågrätt streck, vågrätt streck</li><li>Sammanfattning av nyckelmått</li><li>Spridning</li><li>Sammanfattningsändring</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
 | Förklara och verifiera | Genomskinlig beskrivning eller citat av hur AI-assistenten genererade ett svar och ger dig ett sätt att bekräfta att svaret är korrekt. |
@@ -67,22 +67,40 @@ Det finns också i Adobe Experience Platform, Adobe Journey Optimizer, Adobe Rea
 
 Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md#access-control).
 
-## AI-assistenten för dataanalys
+## Få åtkomst till och använd AI-assistenten för dataanalys
 
+1. Klicka på den här länken om du vill öppna Workspace i Labs IMS-organisationen (på scenen) och logga in med din Adobe ID.
 
+1. Klicka på **[!UICONTROL Blank project]** i banderollen högst upp på projektsidan för att öppna ett nytt tomt projekt.
 
+1. Klicka på ikonen för AI-assistentchatt längst upp till höger.
 
-## Använd AI-assistenten för dataanalys
+   ![AI Assistant-ikon](/help/assets/ai-asst-icon.png)
 
-1. I Customer Journey Analytics går du till den tilldelade sandlådan.
+1. Ställ din första dataanalysfråga i AI-assistenten i dialogrutan **[!UICONTROL Ask about Customer Journey Analytics]** längst ned.
 
-1. Öppna ett Workspace-projekt.
+   Anta till exempel att du är intresserad av de order ditt företag fick i juli. Du kan alltså skriva&quot;Visa order i juli&quot;.
+
+   ![AI-fråga](/help/assets/ai-asst-prompt1.png)
 
 
 ## Exempel på frågor om dataanalys
 
 Här är några exempel på hur AI-assistenten svarar på frågor och förväntade visualiseringar:
 
+| Exempelfråga | Förväntad visualisering |
+| --- | --- |
+| Visa vinst i [månad] | Linje<p>Om du frågar efter en trend eller ett mätvärde med ett visst tidsintervall returneras som standard en radinvisualisering. |
+| Trendorder på [månad] | Linje |
+| Visa intäkter per region i [månad] | Liggande |
+| Inkomstandel per produktkategori | Munk |
+| Beställningar per veckodag från januari till maj | Liggande |
+| Visa order per kön från mars till juni | Liggande |
+| Vad är vinsten för SKU:er från februari till maj? | Liggande |
+| Intäkter efter butiksnamn i [månad] | Liggande |
+| Vilka var mina tio bästa skal med vinst på [månad]? | Liggande |
+| Andel inköp per månad på året | Munk |
+| Total vinst i [månad] | Sammanfattningsnummer<p>Om användaren frågar efter&quot;summan&quot; för ett mätvärde i ett visst tidsintervall bör det returnera en visualisering av sammanfattningsnummer. |
 
 
 ## Uppmana till bästa praxis
@@ -91,7 +109,7 @@ TBD
 
 ## Förväntningar om testning av Alpha och efterfrågad feedback
 
-TB D
+TBD
 
 ## Frågor och kontakt
 
