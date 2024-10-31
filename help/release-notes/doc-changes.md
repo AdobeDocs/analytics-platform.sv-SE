@@ -4,10 +4,10 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8ff3a1c874a0eb67e4b7a6edda6156c4d07edc9f
+source-git-commit: ad51c3cab669121e270603e133d53b6c97be8846
 workflow-type: tm+mt
-source-wordcount: '4153'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **Oktober 2024** | |
-| Delade enheter | Lagt till en användningsfallartikel som ger kontext på delade enheter, hur data från delade enheter hanteras och minskas med hjälp av sammanfogning, och som förstår hur delade enheter exponeras i data med hjälp av frågetjänsten. |
+| Delade enheter | En [användningsfallartikel](/help/use-cases/stitching/shared-devices.md) har lagts till som ger kontext på delade enheter, hur du hanterar och reducerar data från delade enheter med hjälp av sammanslagning och hur du förstår exponeringen för delade enheter i dina data med hjälp av frågetjänsten. |
 | Ny information om begärandefaktorer i Analysis Workspace prestanda | En ny [Request factor](/help/technotes/optimizing-performance.md#request-factors)-sektion i artikeln [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) förklarar hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna. |
 | Workspace och komponenter | Uppdaterade dokumentationen om Analysis Workspace-projekt (projekt, visualiseringar och paneler) och komponenter (anteckningar, dimensioner, (beräknade) mått, filter, datumintervall, aviseringar, schemalagda projekt och målgrupper). |
 | Guidad analys | Uppdaterad dokumentation med tillgänglighet för [guidad analys](/help/guided-analysis/overview.md) inifrån Analysis Workspace. |
