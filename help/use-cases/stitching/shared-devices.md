@@ -6,17 +6,17 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
+exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
+source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
 
-
 # Delade enheter
 
-Den här artikeln innehåller kontext på delade enheter, hur du hanterar och minskar data från delade enheter med hjälp av sammanfogning, och hur du förstår exponeringen för delade enheter i dina data med hjälp av frågetjänsten.
+Den här artikeln innehåller kontext på delade enheter, hur du hanterar och minskar data från delade enheter med [sammanfogning](/help/stitching/overview.md) och hur du förstår exponeringen för delade enheter i dina data med hjälp av frågetjänsten.
 
 ## Vad är en delad enhet?
 
@@ -24,35 +24,36 @@ En delad enhet är en enhet som används av mer än en person. Vanliga scenarier
 
 När två personer använder samma enhet och båda gör ett köp kan exempeldata för händelsen se ut så här:
 
-| Tidsstämpel | Sidnamn | Enhets-ID | E-post |
-|---|---|---|---|
-| 2023-05-12 12:01 | Startsida | `1234` | |
-| 2023-05-12 12:02 | Produktsida | `1234` | |
-| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` |
-| 2023-05-12 | Produktsida | `1234` | |
-| 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` |
+| Händelse | Tidsstämpel | Sidnamn | Enhets-ID | E-post |
+|--:|---|---|---|---|
+| 1 | 2023-05-12 12:01 | Startsida | `1234` | |
+| 2 | 2023-05-12 12:02 | Produktsida | `1234` | |
+| 3 | 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` |
+| 4 | 2023-05-12 | Produktsida | `1234` | |
+| 5 | 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` |
 
-Orderhändelserna (köp) tilldelar korrekta data till rätt e-postadress. Hur tilldelningen påverkar er analys beror på hur ni utför analysen:
+Som du kan se i den här tabellen börjar en länk mellan ett enhets-ID och ett person-ID när autentisering sker på händelse 3 och 5. För att förstå effekten av marknadsföringssatsningar på personnivå måste dessa oautentiserade händelser tillskrivas rätt person.
 
-- Enhetscentrerad metod: analys utförd med enhets-ID. På så sätt inkluderas både autentiserade och icke-autentiserade data i analysen. Detta tillvägagångssätt tillåter dock inte en mer personbaserad analys.
-- Personcentrerad metod: analys utförd med e-postadress eller annan personidentifierare. På så sätt inkluderas endast autentiserade händelser i analysen. Detta tillvägagångssätt ger ingen fullständig bild av kundresan, inklusive förvärv
+<!--
+The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
+
+- Device centric approach: analysis performed using the Device ID. With this approach, both authenticated and unauthenticated data are included in analysis. However, this approach does not allow for a more person based analysis. 
+- Person centric approach: analysis performed using the email address or other person identifier. With this approach, only authenticated events are included in the analysis. This approach doesn't provide a complete picture of the customer journey, including acquisition
+
+-->
 
 ## Förbättra personcentrerad analys
 
-Exempeldata är en blandning av både autentiserad och oautentiserad aktivitet för samma enhet. Utmaningen är att tilldela en person till den oautentiserade trafiken, så att ni kan utföra en personcentrerad analys och förhindra att kundreseanalyser tar bort aktiviteter som inte har något värde för person-ID. Du kan lösa det här problemet på två sätt: du kan använda häftning eller så kan du implementera funktionen för återställning av ECID. Båda alternativen beskrivs närmare i avsnitten nedan.
+Sammanfogningsprocessen åtgärdar det här attribueringsproblemet genom att lägga till den valda identifieraren (i exempeldata, e-postmeddelandet) till händelser där identifieraren inte finns. Stitching utnyttjar en mappning mellan enhets-ID:n och person-ID:n för att säkerställa att både autentiserad och oautentiserad trafik kan användas i analysen, så att den är personcentrerad. Mer information finns i [Stitching](/help/stitching/overview.md).
 
-### Stitlar
-
-Sammanfogningsprocessen åtgärdar den brist på personcentrerad strategi som uppstår. Med Stitching läggs den valda personidentifieraren (i exempeldata, e-postadressen) till i händelser där den identifieraren inte finns. Stitching utnyttjar en mappning mellan enhets-ID:n och person-ID:n för att säkerställa att både autentiserad och oautentiserad trafik kan användas i analysen, så att den är personcentrerad. Mer information finns i [Stitching](/help/stitching/overview.md).
-
-Stitching kan attribuera delade enhetsdata med antingen senaste-auth-attribuering eller enhetsdelad attribuering. Implementeringsändringar via ECID-återställning kan dock även gälla delade enheter.
+Stitching kan attribuera delade enhetsdata med antingen senaste-auth-attribuering eller enhetsdelad attribuering. Alla försök att fästa oautentiserade händelser till en känd användare är icke-deterministiska.
 
 
-#### Senaste auktoriseringsattribuering
+### Senaste auktoriseringsattribuering
 
-Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Senaste autentisering används i Audience Manager och är det rekommenderade sättet för användning av kunddataprofiler i realtid. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Översikt över regler för länkning av identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Översikt över regler för länkning av identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
-När du använder senaste-auth-attribuering i sammanfogning kommer Stitched ID:n att matchas enligt tabellen nedan.
+När senaste-auth-attribuering används för sammanfogning tolkas Stitched ID:n som i tabellen nedan.
 
 | Tidsstämpel | Sidnamn | Enhets-ID | E-post | Namnlöst ID |
 |---|---|---|---|---|
@@ -64,11 +65,11 @@ När du använder senaste-auth-attribuering i sammanfogning kommer Stitched ID:n
 | 2023-05-13 11:08 | Startsida | `1234` | | `cassidy@a.com` |
 
 
-#### Enhetsdelning
+### Enhetsdelning
 
-Enhetsdelning attribuerar anonym aktivitet från en delad enhet till användaren i närmast närhet till den anonyma aktiviteten. Enhetsdelning används för närvarande i fältbaserad sammanfogning. Enhetsdelning är det rekommenderade sättet för analytiska användningsfall eftersom enhetsdelning ger kredit för både oautentiserad och autentiserad aktivitet till närmaste kända person. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
+Enhetsdelning attribuerar anonym aktivitet från en delad enhet till användaren i närmast närhet till den anonyma aktiviteten. Enhetsdelning är det rekommenderade sättet för analytiska användningsfall eftersom enhetsdelning ger kredit för både oautentiserad och autentiserad aktivitet till närmaste kända person. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
 
-När du använder enhetsdelad attribuering vid sammanfogning, kommer häftade ID:n att matchas enligt tabellen nedan.
+När enhetsdelad attribuering används vid sammanfogning tolkas häftade ID:n som i tabellen nedan.
 
 | Tidsstämpel | Sidnamn | Enhets-ID | E-post | Namnlöst ID |
 |---|---|---|---|---|
@@ -80,21 +81,25 @@ När du använder enhetsdelad attribuering vid sammanfogning, kommer häftade ID
 | 2023-05-13 11:08 | Startsida | `1234` | | `cassidy@a.com` |
 
 
-### ECID-återställning
+<!--
 
-Som namnet antyder implementerar ECID-återställning funktioner som återställer ECID på en förbestämd utlösare, i de flesta fall en inloggnings- eller utloggningshändelse. Med den här implementeringen får en enda enhet ett nytt ECID varje gång den förbestämda utlösaren aktiveras. Den här återställningen tvingar enheten att bli en *ny enhet* om och om igen från ett dataperspektiv. Återställningen av ECID förhindrar också att delade enheter visas i data. Inga ytterligare algoritmer krävs, men du har ansvaret för att implementera ECID-återställningssignalen som en del av Adobe-datainsamlingsimplementeringen.
+### ECID reset 
+
+As the name implies, ECID reset implements functionality that resets the ECID on a predetermined trigger, in most cases a login or logout event. With this implementation, a single device gets a new ECID every time the predetermined trigger fires. Essentially, this reset forces the device to become a *new device* over and again from a data perspective. The ECID reset also helps to prevent shared devices from even showing up in the data. No additional algorithms are required, but you have the responsibility to implement the ECID reset signal as part of your Adobe data collection implementation.
 
 
-När du använder ECID-återställning tolkas kapslade ID:n som i tabellen nedan.
+When using ECID reset, Stitched IDs resolve as shown in the table below. 
 
-| Tidsstämpel | Sidnamn | Enhets-ID | E-post | Namnlöst ID |
+| Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Startsida | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | Produktsida | `1234` | | `ryan@a.com` |
-| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 | Produktsida | 5678 | | `cassidy@a.com` |
-| 2023-05-12 12:08 | Orderlyckade | 5678 | `cassidy@a.com` | `cassidy@a.com` |
-| 2023-05-13 11:08 | Startsida | 5678 | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
+
+-->
 
 ## Exponering för delad enhet
 
@@ -120,7 +125,7 @@ Om du vill förstå hur den delade enheten exponeras kan du överväga att utfö
 
 2. **Attribution of events to shared devices**
 
-   För de delade enheter som identifieras avgör du hur många händelser av det totala antalet som kan tillskrivas dessa enheter. Detta ger insikt i vilken påverkan delade enheter har på dina data och vilka konsekvenser de har för analysen.
+   För de delade enheter som identifieras avgör du hur många händelser av det totala antalet som kan tillskrivas dessa enheter. Den här attribueringen ger insikt i hur delade enheter påverkar era data och vilka konsekvenser de kan få för analysen.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -198,5 +203,3 @@ Om du vill förstå hur den delade enheten exponeras kan du överväga att utfö
    ) shared_persistent_ids 
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
-
-
