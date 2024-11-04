@@ -4,7 +4,7 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5e239753928f5c994245025c8b5d2aee3eee6091
+source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
 workflow-type: tm+mt
 source-wordcount: '2860'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Du kan konfigurera data som genereras av Journey Optimizer för att utföra avan
 
 ## Konfigurera Journey Optimizer-integrering automatiskt
 
-Journey Optimizer har stöd för att använda Customer Journey Analytics som rapporteringsmotor. Se [Kom igång med det nya rapporteringsgränssnittet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen.
+Journey Optimizer har stöd för att använda Customer Journey Analytics som rapporteringsmotor. Se [Kom igång med det nya rapporteringsgränssnittet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen.
 
 När du har aktiverat Customer Journey Analytics-rapportering för Journey Optimizer skapas automatiskt en [anslutning](/help/connections/overview.md) och [datavy](/help/data-views/data-views.md) för den specifika sandlådan.
 
