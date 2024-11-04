@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
 workflow-type: tm+mt
-source-wordcount: '8487'
+source-wordcount: '8486'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,6 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 ![Skärmbild av dialogrutan Härlett fält](assets/derived-field-dialog.png)
 
 
-![Programöversikt](/help/assets/icons/ProgramOverview.svg)
 
 |  | Namn | Beskrivning |
 |---------|----------|--------|
@@ -188,6 +187,8 @@ Den här funktionsmallen använder en samling regler för att identifiera webbpl
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av Bounces-regelbyggaren](assets/function-template-bounces.png)
@@ -199,6 +200,8 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 Den här funktionsmallen kombinerar två värden till ett.
 
 +++ Information
+
+{{select-package}}
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
@@ -212,6 +215,8 @@ Den här funktionsmallen ger ett läsbart datauppsättningsnamn.
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av regelverktyget för anpassat datauppsättningsnamn](assets/function-template-friendly-dataset-name.png)
@@ -223,6 +228,8 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 Den här funktionsmallen skapar ett enkelt sidnamn.
 
 +++ Information
+
+{{select-package}}
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
@@ -236,6 +243,8 @@ Den här funktionsmallen klassificerar nyckeltider för året.
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av guiden för helgsäsongsregel](assets/function-template-holiday-season.png)
@@ -247,6 +256,8 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 Den här funktionsmallen ställer in anpassade månatliga mål.
 
 +++ Information
+
+{{select-package}}
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
@@ -260,6 +271,8 @@ Den här funktionsmallen konverterar en begränsad lista till en array.
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av regelverktyget Hämta alla värden i avgränsad lista](assets/function-template-get-all-values-in-delimited-list.png)
@@ -271,6 +284,8 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 Den här funktionsmallen hämtar det första värdet i en avgränsad lista.
 
 +++ Information
+
+{{select-package}}
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
@@ -284,6 +299,8 @@ Den här funktionsmallen hämtar det sista värdet i en avgränsad lista.
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av regelbyggaren Get Last Value i Delimited List](assets/function-template-get-last-value-in-delimited-list.png)
@@ -295,6 +312,8 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 Den här funktionsmallen extraherar domännamnet med ett reguljärt uttryck.
 
 +++ Information
+
+{{select-package}}
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
@@ -308,6 +327,8 @@ Den här funktionsmallen extraherar frågesträngsvärden.
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av Get Query String Parameter rule builder](assets/function-template-get-query-string-parameter.png)
@@ -319,6 +340,8 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 Den här funktionsmallen övergår från ett fält till ett annat.
 
 +++ Information
+
+{{select-package}}
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
@@ -332,6 +355,8 @@ Den här funktionsmallen implementerar identifiering av ljusrobotar.
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av regelbyggaren för enkel punktidentifiering](assets/function-template-simple-bot-detection.png)
@@ -344,6 +369,8 @@ Den här funktionsmallen identifierar den senaste länken som klickats i en sess
 
 +++ Information
 
+{{select-package}}
+
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
 ![Skärmbild av regelbyggaren för att avsluta länk](assets/function-template-exit-link.png)
@@ -355,6 +382,8 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 Den här funktionsmallen flaggar vanliga nedladdningslänkar.
 
 +++ Information
+
+{{select-package}}
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
