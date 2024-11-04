@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: ab8a4c65de59e725d7d181ee699d7a196988bf98
+source-git-commit: 7f5eddcf1ceaa6228411867f5794bfe72b2ad6ab
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 AI-assistenten för dataanalys är en intelligent, kontextmedveten konversationsagent som kan hjälpa dig att snabbare och effektivare svara på frågor du har om dina Analysis Workspace-data i Customer Journey Analytics.
 
-Assistenten går igenom alla data i en datavy, inklusive de olika typerna av mått och komponenter, och översätter prompten till rätt mått, mått och datumintervall för analysen. Istället för att behöva bekanta dig med komponenterna i datavyn och sedan dra och släppa dem i den bästa kombinationen för att besvara din fråga, behöver du bara skriva in frågan i AI-assistenten.
+Assistenten går igenom alla data i en datavy, inklusive olika typer av mått och komponenter, och översätter prompten till rätt mått, mått och datumintervall för analysen. Istället för att behöva bekanta dig med komponenterna i datavyn och sedan dra och släppa dem i den bästa kombinationen för att besvara din fråga, behöver du bara skriva in frågan i AI-assistenten.
 
 ## Omfattning kontra funktioner utanför omfånget för Alpha
 
-### Funktioner som är inom omfånget
+### Funktioner i Alpha
 
 | Funktion som stöds | Beskrivning |
 | --- | --- |
@@ -29,10 +29,10 @@ Assistenten går igenom alla data i en datavy, inklusive de olika typerna av må
 | **Visualiseringstyper som stöds** | <ul><li>Linje</li><li>Flera rader</li><li>Frihandsfigur</li><li>Liggande</li><li>Munk</li><li>Sammanfattningsnummer</li></ul> |
 | **Frågeidentifiering utanför scope** | Om du skickar in en fråga som inte omfattas, t.ex.&quot;exportera det här projektet&quot;, svarar assistenten genom att meddela att frågan inte omfattas. |
 | **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt sammanhang för att AI-assistenten ska kunna svara på, eller är för generisk, svarar AI-assistenten med en klargörande fråga och/eller föreslagna alternativ. Exempel: <p>**Komponenter**<ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av de nedan &quot;regionerna&quot; vill du fokusera på?*</li><li>Filter: *Vilket kontofilter vill du använda?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul>**Dimension-objekt**: Vilket butiksnamn menade du? (t.ex. Store #5274, Store #2949 osv.) |
-| **Flera varv** | AI Assistant svarar på en fråga med kontexten från en eller flera föregående uppmaningar, vilket gör att användare kan uppdatera visualiseringar och ställa uppföljningsfrågor. Exempel: *Visa data från mars till april istället.* |
+| **Flera varv** | AI-assistenten svarar på en fråga med kontexten från föregående uppmaning(n), vilket gör att användare kan uppdatera visualiseringar och ställa uppföljningsfrågor.Exempel: <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> |
 | **Feedback** | <ul><li>Tummen uppåt</li><li>Tummen nedåt</li><li>Flagga</li></ul> |
 
-### Funktioner som inte är tillgängliga
+### Alpha-funktioner som inte är tillgängliga
 
 | Funktionen stöds inte | Beskrivning |
 | --- | --- |
@@ -69,25 +69,29 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 ## Få åtkomst till och använd AI-assistenten för dataanalys
 
-1. Klicka på den här länken om du vill öppna Workspace i Labs IMS-organisationen (på scenen) och logga in med din Adobe ID.
+1. Gå till [experience.adobe.com](https://experience.adobe.com/) och logga in med din Adobe ID.
 
-1. Klicka på **[!UICONTROL Blank project]** i banderollen högst upp på projektsidan för att öppna ett nytt tomt projekt.
+2. Välj **Customer Journey Analytics** från startsidan för Experience Cloud
 
-1. Klicka på ikonen för AI-assistentchatt längst upp till höger.
+3. Klicka på **[!UICONTROL Blank project]** i banderollen högst upp på projektsidan för att öppna ett nytt tomt projekt.
+
+4. Se till att den markerade datavyn för panelen är datavyn som aktiverades för AI Assistant-användning för Alpha-testning (kontakta taylorb@adobe.com eller Alpha i slackkanalen om du är osäker).
+
+5. Klicka på ikonen för AI-assistentchatt längst upp till höger.
 
    ![AI Assistant-ikon](/help/assets/ai-asst-icon.png)
 
-1. Ställ en dataanalysfråga i AI-assistenten i dialogrutan **[!UICONTROL Ask about Customer Journey Analytics]** längst ned.
+6. Ställ en dataanalysfråga i AI-assistenten i dialogrutan **[!UICONTROL Ask about Customer Journey Analytics]** längst ned.
 
 ### Exempel 1
 
 Anta till exempel att du är intresserad av de order ditt företag fick i juli.
 
-1. Ange&quot;Visa order i juli.&quot;
+1. Ange *&quot;Trendorder i juli.&quot;*
 
    ![AI-fråga](/help/assets/ai-asst-prompt1.png)
 
-1. AI Assistant samlar nu in insikter genom att undersöka data i datavyn, inklusive mått och komponenter. Uppmaningen översätts till rätt dimensioner, mått och dataintervall.
+2. AI Assistant samlar nu in insikter genom att undersöka data i datavyn, inklusive mått och komponenter. Uppmaningen översätts till rätt dimensioner, mått och dataintervall.
 
    Som du ser har den automatiskt genererat ett linjediagram och en frihandstabell med beställningar för juli.
 
@@ -97,9 +101,9 @@ Anta till exempel att du är intresserad av de order ditt företag fick i juli.
 
 Sedan vill du se hur era intäkter står sig jämfört med region.
 
-1. I fönstret anger du&quot;Visa intäkt per region&quot;.
+1. I fönstret anger du *&quot;Visa intäkt per region&quot;*
 
-2. AI är tillräckligt smart för att förstå att&quot;region&quot; är&quot;kundregion&quot;. Det skapar ett stapeldiagram som bäst visar intäkter per region:
+2. AI Assistant förstår på ett intelligent sätt att med&quot;region&quot; menar man&quot;kundregion&quot;. Det skapar ett stapeldiagram som bäst visar intäkter per region:
 
    ![Stapeldiagram](/help/assets/ai-asst-result2.png)
 
@@ -107,7 +111,7 @@ Sedan vill du se hur era intäkter står sig jämfört med region.
 
 Nu ska vi titta på intäkterna per produktkategori.
 
-1. I fönstret anger du&quot;Visa intäkt per produktkategori&quot;.
+1. I fönstret anger du *&quot;Andel av intäkter per produktkategori&quot;.*
 
 2. Återigen väljer AI-assistenten för dataanalys den lämpligaste visualiseringen, i det här fallet **[!UICONTROL Donut]**-visualiseringen, för att besvara frågan.
 
@@ -117,9 +121,9 @@ Nu ska vi titta på intäkterna per produktkategori.
 
 Slutligen vill ni veta vilken SKU som är mest lönsam och var ni bör investera marknadsföringsresurser.
 
-1. I promptfönstret frågar du&quot;What is the gain across SKUs from February to May.&quot;
+1. Fråga *&quot;Vad är vinsten på SKU:er från februari till maj i promptfönstret?&quot;*
 
-1. Ett enkelt **[!UICONTROL Bar]**-diagram ger det mest kortfattade svaret:
+2. Ett enkelt **[!UICONTROL Bar]**-diagram ger det mest kortfattade svaret:
 
    ![Stapeldiagram](/help/assets/ai-asst-result4.png)
 
@@ -144,23 +148,31 @@ Här är några exempel på vanliga uppmaningar och vilka visualiseringar som AI
 
 ## Uppmana till bästa praxis
 
-TBD
+AI Assistant bearbetar sammanhanget som anges av varje användaruppmaning och försöker på ett intelligent sätt svara på den lämpligaste visualiseringen samt komponenter i en frihandstabell. AI-assistentens svar kan dock variera beroende på de specifika ord och fraser som används i en prompt, så små språkändringar kan leda till olika resultat. Så här får du ut det mesta: <ul><li>Var tydlig: Ta med exakta termer (som&quot;förra månadens försäljning i Kalifornien&quot;) för att begränsa svaret.</li><li>Använd Rensa mått och filter: Om du lägger till specifika mått (som&quot;Intäkter&quot;), dimensioner (t.ex.&quot;webbplatsnamn&quot;), filter (t.ex.&quot;iPhone-användare&quot;) och datumintervall (t.ex.&quot;senaste tre månader&quot;) kan AI Assistant fokusera på rätt data.</li><li>Ställ frågor direkt: Avvecklingsfrågor direkt, som&quot;Vad är den genomsnittliga intäkten per produktkategori i år?&quot; gör det enklare för AI Assistant att ge tydliga och relevanta insikter.</li></ul>
+
+I tabellen nedan finns exempeltermer och fraser som du kan använda i uppmaningar med AI-assistenten för dataanalys i CJA, tillsammans med de typer av svar du kan förvänta dig. De här exemplen är utformade för att hjälpa dig att lära dig hur specifika ord eller strukturer kan påverka AI-assistentens resultat och ge dig mer exakta och värdefulla insikter. Observera att AI-assistenten använder generativ AI, så visualiseringar eller valda data kan variera något mellan liknande uppmaningar.
+
+| Önskat resultat | Exempel på termer och fraser |
+| --- | --- |
+| Visualisering av sammanfattningsnummer | <ul><li>Totalt</li></ul> |
+| Jämför komponenter | <ul><li>Jämför</li><li>VS</li><li>Kontrast</li><li>Vecka för vecka</li><li>Månad för månad</li><li>Kvartal över kvartal</li><li>År-över-år</li></ul> |
+| Visualisering av ring | <ul><li>Andel</li><li>Andel av</li><li>Distribution</li><li>Procent</li><li>Bidrag</li><li>Del</li><li>Delar</li></ul> |
+| Radvisualisering | <ul><li>Trend</li><li>[Mått] i [Tidsintervall]</li></ul> |
+| Visualisering av fält | <ul><li>[Mått] av [dimension]</li></ul> |
 
 ## Förväntningar om testning av Alpha och efterfrågad feedback
 
-När du har ställt varje fråga ska du noggrant granska assistentens svar. Det är viktigt att noggrant utvärdera de genererade visualiseringarna innan man ger feedback.
+När du har ställt varje fråga ska du noggrant granska assistentens svar. Det är viktigt att noggrant utvärdera de genererade visualiseringarna innan man ger feedback. Tänk på följande när du utvärderar svaret från AI-assistenten:
 
-Utvärdera svaret: Ges svaret korrekt?
+* Chatt rail-svar eller -mall: Utvärdera det textsvar som assistenten ger. Är svaret lämpligt med tanke på ert sammanhang?
 
-Om assistenten svarar i chattfältet: Utvärdera textsvaret.
+* Visualisering/diagram: Utvärdera visualiseringen. Är det en lämplig/förväntad visualisering för din fråga eller skulle du ha förväntat dig en annan visualisering?
 
-* Om en visualisering/diagram visas: utvärdera visualiseringen. Är det rätt/förväntad visualisering för din fråga?
+* Frihandstabell: Utvärdera frihandstabellen. Är frihandstabellens data korrekta? Delar den upp data där det efterfrågas? Används de filter som du har begärt eller väntat dig?
 
-* Om en friformstabell visas: Utvärdera frihandstabellen. Är frihandstabellens data korrekta? Delar den upp data där det efterfrågas? Används de filter som du har begärt eller väntat dig?
+* Felmeddelande/Odefinierat: Om ett generiskt felmeddelande visas som anger att frågan ligger utanför definitionsområdet, kan du ge feedback om huruvida du anser att meddelandet som ligger utanför definitionsområdet är lämpligt med tanke på uppmaningen. Var prompten verkligen i sin linda?
 
-* Om du får ett generiskt felmeddelande om att frågan ligger utanför räckvidden, kan du ge feedback om huruvida du anser att det meddelande som ligger utanför området är lämpligt med tanke på uppmaningen. Var prompten verkligen i sin linda?
-
-För varje svar ger du tummen uppåt eller tummen nedåt, baserat på svaret
+**För varje svar ska du ge tummen uppåt eller tummen nedåt, baserat på svaret**
 
 När du har markerat reglagen uppåt/nedåt, gör du ett val för de relevanta flervalsrutorna för feedback. Om du vill ge mer feedback lägger du till anteckningar i den öppna textrutan.
 
