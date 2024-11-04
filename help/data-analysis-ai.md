@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 7f5eddcf1ceaa6228411867f5794bfe72b2ad6ab
+source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 AI-assistenten för dataanalys är en intelligent, kontextmedveten konversationsagent som kan hjälpa dig att snabbare och effektivare svara på frågor du har om dina Analysis Workspace-data i Customer Journey Analytics.
 
 Assistenten går igenom alla data i en datavy, inklusive olika typer av mått och komponenter, och översätter prompten till rätt mått, mått och datumintervall för analysen. Istället för att behöva bekanta dig med komponenterna i datavyn och sedan dra och släppa dem i den bästa kombinationen för att besvara din fråga, behöver du bara skriva in frågan i AI-assistenten.
+
+![AI-assistenten för dataanalys](assets/cja-ai-asst-da.gif)
 
 ## Omfattning kontra funktioner utanför omfånget för Alpha
 
