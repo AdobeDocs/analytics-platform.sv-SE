@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
+source-git-commit: 376ad62c3883eef675f9b1df639e8c46ee259229
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1587'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # AI-assistenten för dataanalys i Customer Journey Analytics - Alpha
 
-AI-assistenten för dataanalys är en intelligent, kontextmedveten konversationsagent som kan hjälpa dig att snabbare och effektivare svara på frågor du har om dina Analysis Workspace-data i Customer Journey Analytics.
+AI-assistenten för dataanalys är en generativ AI-konversationsagent som kan hjälpa dig att snabbare och effektivare svara på frågor du har om dina Analysis Workspace-data i Customer Journey Analytics.
 
-Assistenten går igenom alla data i en datavy, inklusive olika typer av mått och komponenter, och översätter prompten till rätt mått, mått och datumintervall för analysen. Istället för att behöva bekanta dig med komponenterna i datavyn och sedan dra och släppa dem i den bästa kombinationen för att besvara din fråga, behöver du bara skriva in frågan i AI-assistenten.
+När du ställer en fråga i AI Assistant skannar AI-assistenten igenom alla komponenter i datavyn, inklusive de olika typerna av mätvärden och komponenter, och översätter prompten till rätt mått, mätvärden och datumintervall för analysen. Istället för att behöva bekanta dig med komponenterna i datavyn och sedan dra och släppa dem i den bästa kombinationen för att besvara din fråga, behöver du bara skriva in frågan i AI-assistenten.
 
 ![AI-assistenten för dataanalys](assets/cja-ai-asst-da.gif)
 
@@ -32,6 +32,7 @@ Assistenten går igenom alla data i en datavy, inklusive olika typer av mått oc
 | **Frågeidentifiering utanför scope** | Om du skickar in en fråga som inte omfattas, t.ex.&quot;exportera det här projektet&quot;, svarar assistenten genom att meddela att frågan inte omfattas. |
 | **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt sammanhang för att AI-assistenten ska kunna svara på, eller är för generisk, svarar AI-assistenten med en klargörande fråga och/eller föreslagna alternativ. Exempel: <p>**Komponenter**<ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av de nedan &quot;regionerna&quot; vill du fokusera på?*</li><li>Filter: *Vilket kontofilter vill du använda?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul>**Dimension-objekt**: Vilket butiksnamn menade du? (t.ex. Store #5274, Store #2949 osv.) |
 | **Flera varv** | AI-assistenten svarar på en fråga med kontexten från föregående uppmaning(n), vilket gör att användare kan uppdatera visualiseringar och ställa uppföljningsfrågor.Exempel: <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> |
+| **Verifierbarhet** | Data kan verifieras och korrigeras med hjälp av den genererade frihandstabellen och datavisualisering. Om en användare till exempel frågar *Trendbeställningar förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts på den nyligen genererade panelen, datavisualisering och frihandstabellen. |
 | **Feedback** | <ul><li>Tummen uppåt</li><li>Tummen nedåt</li><li>Flagga</li></ul> |
 
 ### Alpha-funktioner som inte är tillgängliga
@@ -42,7 +43,6 @@ Assistenten går igenom alla data i en datavy, inklusive olika typer av mått oc
 | **Tydligare frågor** | Tydliga frågor är begränsade till komponenter och dimensionsobjekt. AI-assistenten kan inte förtydliga datavyer, visualiseringar, datakornighet, jämförelse, omfång osv. Utan att klargöra några frågor blir assistenten som standard den som du mest troligt frågar efter. Om det returnerar en oväntad visualisering eller datagranularitet kan du sedan använda funktionen för flera omgångar/uppdateringar för att justera visualisering och data. |
 | **Workspace-åtgärder/funktioner** | AI-assistenten kan inte vidta åtgärder för en användare i Workspace utöver att skapa och uppdatera visualiseringar. Den kan till exempel inte göra något av följande:<ul><li>Gränssnittsknappar för sammanhangsberoende åtgärder (lägg till i diagram, ny panel, ny tabell)</li><li>Dela</li><li>Exportera</li><li>Ladda ned</li><li>Hantera användarinställningar</li><li>Kurva</li><li>Hantera datavy</li><li>Analytics Dashboards-app</li><li>Tillskrivning</li></ul> |
 | **Visualiseringstyper som inte stöds** | <ul><li>Flöde</li><li>Utfall</li><li>Kohortabell</li><li>Område, staplat område</li><li>Stapel staplad</li><li>Punkt</li><li>Kombination</li><li>Histogram</li><li>Vågrätt streck, vågrätt streck</li><li>Sammanfattning av nyckelmått</li><li>Spridning</li><li>Sammanfattningsändring</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
-| **Förklaring och verifiering** | Genomskinlig beskrivning eller citat av hur AI-assistenten genererade ett svar och ger dig ett sätt att bekräfta att svaret är korrekt. |
 
 <!---## Feature access in the Customer Journey Analytics UI
 
@@ -77,7 +77,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Klicka på **[!UICONTROL Blank project]** i banderollen högst upp på projektsidan för att öppna ett nytt tomt projekt.
 
-4. Se till att den markerade datavyn för panelen är datavyn som aktiverades för AI Assistant-användning för Alpha-testning (kontakta taylorb@adobe.com eller Alpha i slackkanalen om du är osäker).
+4. Se till att den markerade datavyn för panelen är datavyn som aktiverades för AI Assistant-användning för Alpha-testning (nå ut i Alpha-slackkanalen om du är osäker).
 
 5. Klicka på ikonen för AI-assistentchatt längst upp till höger.
 
@@ -111,23 +111,23 @@ Sedan vill du se hur era intäkter står sig jämfört med region.
 
 ### Exempel 3
 
-Nu ska vi titta på intäkterna per produktkategori.
+Därefter vill du, förutom att förstå intäkter per region, också se data för vinst per region. I stället för att behöva skriva in den senaste uppmaningen kan du be AI Assistant att uppdatera den senaste visualiserings- och frihandstabellen.
+
+1. Skriv *&quot;Lägg till vinst&quot;* i promptfönstret.
+
+2. Diagrammet **[!UICONTROL Bar]** ger fortfarande det mest kortfattade svaret, men vinstmåttet har lagts till som en kolumn i friformstabellen:
+
+   ![Stapeldiagram](/help/assets/ai-asst-result4.png)
+
+### Exempel 4
+
+Slutligen ska vi titta på intäkterna per produktkategori.
 
 1. I fönstret anger du *&quot;Andel av intäkter per produktkategori&quot;.*
 
 2. Återigen väljer AI-assistenten för dataanalys den lämpligaste visualiseringen, i det här fallet **[!UICONTROL Donut]**-visualiseringen, för att besvara frågan.
 
    ![Ringdiagram](/help/assets/ai-asst-result3.png)
-
-### Exempel 4
-
-Slutligen vill ni veta vilken SKU som är mest lönsam och var ni bör investera marknadsföringsresurser.
-
-1. Fråga *&quot;Vad är vinsten på SKU:er från februari till maj i promptfönstret?&quot;*
-
-2. Ett enkelt **[!UICONTROL Bar]**-diagram ger det mest kortfattade svaret:
-
-   ![Stapeldiagram](/help/assets/ai-asst-result4.png)
 
 ## Exempel på frågor om dataanalys
 
@@ -180,7 +180,6 @@ När du har markerat reglagen uppåt/nedåt, gör du ett val för de relevanta f
 
 ## Frågor och kontakt
 
-* E-post `taylorb@adobe.com` (PM)
 * Skicka frågor och feedback i Alpha-slackkanalen: #aep-cja-ai-assistent-testers ??
 
 
