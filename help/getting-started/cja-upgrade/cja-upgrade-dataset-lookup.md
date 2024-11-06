@@ -8,12 +8,12 @@ hide: true
 hidefromtoc: true
 source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
-# Skapa ett datastream som ska användas med Customer Journey Analytics
+# Skapa uppslagsdatauppsättningar för att klassificera data i Customer Journey Analytics
 
 >[!NOTE]
 > 
@@ -21,23 +21,18 @@ ht-degree: 0%
 >
 >När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
 
-<!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
+På samma sätt som med klassificeringsdata i Adobe Analytics är uppslagsuppsättningar en metod för att klassificera data i Customer Journey Analytics.
 
-En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När data samlas in med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
+När du använder Analytics-källkopplingen tillämpas vissa standardsökdatauppsättningar automatiskt vid rapporttillfället. Mer information finns i [Lägga till standardsökningar i dina datauppsättningar](/help/connections/standard-lookups.md).
 
-I din konfiguration vill du konfigurera datastream för att skicka insamlade data till datauppsättningen i Adobe Experience Platform.
+För att kunna klassificera data med en ny implementering av Experience Platform Web SDK måste du skapa en uppslagsdatauppsättning för varje dimension som innehåller data som du vill klassificera.
 
-Så här konfigurerar du datastream:
+Så här skapar du uppslagsdatauppsättningar för användning i Customer Journey Analytics:
 
-1. I Adobe Experience Platform väljer du **[!UICONTROL Datastreams]** från [!UICONTROL DATA COLLECTION] i den vänstra listen.
+1. Skapa ett nytt schema i AEP. Det här är ett nytt schema som är specifikt för uppslagsdatauppsättningar. Du kan inte använda ett befintligt schema.
 
-1. Välj **[!UICONTROL New Datastream]**.
+1. Du måste skapa en ny schemaklass för uppslag.
 
-1. Namnge och beskriv ditt datastream. Välj ditt schema i listan [!UICONTROL Event Schema].
-
-   ![Ny datastream](assets/new-datastream.png)
-
-1. Välj **[!UICONTROL Save]**.
+1. Skapa en uppslagsdatauppsättning av det.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-
