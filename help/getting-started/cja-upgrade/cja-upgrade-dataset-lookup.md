@@ -1,15 +1,15 @@
 ---
-title: Skapa ett schema för Customer Journey Analytics
-description: Läs mer om rekommenderad sökväg när du uppgraderar från Adobe Analytics till Customer Journey Analytics
+title: Skapa uppslagsdatauppsättningar för att klassificera data i Customer Journey Analytics
+description: Lär dig hur du skapar uppslagsdatauppsättningar för att klassificera data i Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 3827bafd85a03e8574667095b372aa61afb6756b
+source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
