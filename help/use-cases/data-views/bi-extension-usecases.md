@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 1fda8abfe4c4b5d9d4a2ddf99b0bb83db45539e3
+source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
 workflow-type: tm+mt
-source-wordcount: '7032'
+source-wordcount: '7262'
 ht-degree: 1%
 
 ---
@@ -1478,6 +1478,60 @@ Beräknade mätvärden som du definierar i Customer Journey Analytics identifier
 **Datumintervall**
 Datumintervall som du har definierat i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL daterangeName]** . När du använder ett **[!UICONTROL daterangeName]**-fält kan du ange vilket datumintervall som ska användas.
 
+**Anpassade omformningar**
+Power BI Desktop tillhandahåller anpassade omformningsfunktioner med hjälp av [DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/dax-overview). Du vill till exempel köra ett fall där en dimension rangordnas med produktnamn i gemener. Så här gör du:
+
+1. Välj fältvisualisering i rapportvyn.
+1. Välj product_name i datapanelen.
+1. Välj Ny kolumn i verktygsfältet.
+1. I formelredigeraren definierar du en ny kolumn med namnet `product_name_lower`, som `product_name_lower = LOWER('public.cc_data_view[product_name])`.
+   ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png)
+1. Se till att du väljer den nya kolumnen product_name_lower i rutan Data i stället för kolumnen product_name.
+1. Välj Rapportera som tabell från ![Mer](/help/assets/icons/More.svg) i tabellvisualiseringen.
+
+   Ditt Power BI Desktop ska se ut så här nedan.
+   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png)
+
+Den anpassade omvandlingen resulterar i en uppdatering av SQL-frågor. Se hur funktionen `lower` används i SQL-exemplet nedan:
+
+```sql
+select "_"."product_name_lower",
+    "_"."a0",
+    "_"."a1"
+from 
+(
+    select "rows"."product_name_lower" as "product_name_lower",
+        sum("rows"."purchases") as "a0",
+        sum("rows"."purchase_revenue") as "a1"
+    from 
+    (
+        select "_"."daterange" as "daterange",
+            "_"."product_name" as "product_name",
+            "_"."purchase_revenue" as "purchase_revenue",
+            "_"."purchases" as "purchases",
+            lower("_"."product_name") as "product_name_lower"
+        from 
+        (
+            select "_"."daterange",
+                "_"."product_name",
+                "_"."purchase_revenue",
+                "_"."purchases"
+            from 
+            (
+                select "daterange",
+                    "product_name",
+                    "purchase_revenue",
+                    "purchases"
+                from "public"."cc_data_view" "$Table"
+            ) "_"
+            where ("_"."daterange" < date '2024-01-01' and "_"."daterange" >= date '2023-01-01') and ("_"."product_name" in ('4G Cellular Trail Camera', '4K Wildlife Trail Camera', 'Wireless Trail Camera', '8-Person Cabin Tent', '20MP No-Glow Trail Camera', 'HD Wildlife Camera', '4-Season Mountaineering Tent', 'Trail Camera', '16MP Trail Camera with Solar Panel', '10-Person Family Tent'))
+        ) "_"
+    ) "rows"
+    group by "product_name_lower"
+) "_"
+where not "_"."a0" is null or not "_"."a1" is null
+limit 1000001
+```
 
 >[!TAB Skrivbord för Tablet PC]
 
@@ -1498,6 +1552,34 @@ Beräknade mått som du har definierat i Customer Journey Analytics identifieras
 
 **Datumintervall**
 Datumintervall som du har definierat i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL Daterange Name]** . När du använder ett **[!UICONTROL Daterange Name]**-fält kan du ange vilket datumintervall som ska användas.
+
+**Anpassade omformningar**
+Tableu Desktop har anpassade omformningsfunktioner som använder [Beräknade fält](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Du vill till exempel köra ett fall där en dimension rangordnas med produktnamn i gemener. Så här gör du:
+
+1. Välj **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** på huvudmenyn.
+   1. Definiera **[!UICONTROL Lowercase Product Name]** med funktionen `LOWER([Product Name])`.
+      ![Beräknat fält i tabell](assets/uc14-tableau-calculated-field.png)
+   1. Välj **[!UICONTROL OK]**.
+1. Markera bladet **[!UICONTROL Data]**.
+   1. Dra **[!UICONTROL Lowercase Product Name]** från **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Rows]**.
+   1. Ta bort **[!UICONTROL Product Name]** från **[!UICONTROL Rows]**.
+1. Välj vyn **[!UICONTROL Dashboard 1]**.
+
+Ditt skrivbord ska se ut så här nedan.
+
+![Skrivbord för Tablet PC efter omvandling](assets/uc14-tableau-final.png)
+
+Den anpassade omvandlingen resulterar i en uppdatering av SQL-frågor. Se hur funktionen `LOWER` används i SQL-exemplet nedan:
+
+```sql
+SELECT LOWER(CAST(CAST("cc_data_view"."product_name" AS TEXT) AS TEXT)) AS "Calculation_1562467608097775616",
+  SUM("cc_data_view"."purchase_revenue") AS "sum:purchase_revenue:ok",
+  SUM("cc_data_view"."purchases") AS "sum:purchases:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-12-31')))
+GROUP BY 1
+HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
+```
 
 >[!ENDTABS]
 
@@ -1548,7 +1630,6 @@ Följande Customer Journey Analytics-visualiseringar har en liknande upplevelse 
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Textruta](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p> | [Treemap-diagram](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
-
 
 >[!TAB Skrivbord för Tablet PC]
 
