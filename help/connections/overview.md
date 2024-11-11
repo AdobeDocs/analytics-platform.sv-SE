@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 7a5fa07e3bafa3da5b044ce37299196a006f1d64
+source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
@@ -24,18 +24,20 @@ Här är en videoöversikt:
 
 ## Nödvändiga behörigheter
 
-Om du vill skapa en Customer Journey Analytics-anslutning behöver du följande behörigheter i [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Om du vill skapa en anslutning till Customer Journey Analytics behöver du följande behörigheter. Mer information om behörigheter finns i dokumentationen för [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) och [Adobe Experience Platform Permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-Adobe Experience Platform:
+### Inom Adobe Admin Console:
+
+* Customer Journey Analytics: Produktadministratör
+* Adobe Experience Platform: Tillagd i produktprofilen med namnet *AEP-Default-All-Users*
+
+### Inom Adobe Experience Platform behörigheter:
 
 * Datamodellering: Visa scheman, Hantera scheman
 * Datahantering: Visa datauppsättningar, Hantera datauppsättningar
 * Inmatning av data: Hantera källor
-* Visa identitetsnamnutrymmen
-
-Customer Journey Analytics
-
-* Produktadministratörsåtkomst
+* Identity Management: Visa identitetsnamnutrymmen
+* Sandlådor: Sandlådor som används i relaterade Customer Journey Analytics-anslutningar
 
 >[!IMPORTANT]
 >
