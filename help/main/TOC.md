@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 261396f3a63e3356f100b860324b2e8bb9702800
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 11%
+source-wordcount: '1036'
+ht-degree: 10%
 
 ---
 
@@ -50,7 +50,10 @@ ht-degree: 11%
       + [Analysimplementering](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Skapa uppslagsdatauppsättningar för klassificeringar](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Skapa ett härlett fält för marknadsföringskanal](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Använd taggar för att uppgradera](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
+      + [Implementera taggen loader för Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)
+      + [Skapa en tagg för din egenskap](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+      + [Lägg till Web SDK-tillägget i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [Lägg till logik för XDM-datainsamling i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Arkitektur av ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Skapa ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Använd ditt befintliga schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
