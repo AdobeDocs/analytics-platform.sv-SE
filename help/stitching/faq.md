@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 1%
+source-wordcount: '1871'
+ht-degree: 3%
 
 ---
 
@@ -70,6 +70,80 @@ Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journe
 +++**Hur hanterar Stitching sekretessförfrågningar?**
 
 Adobe hanterar förfrågningar om sekretess i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka in dataåtkomst och borttagningsbegäranden. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
+
+>[!IMPORTANT]
+>
+>Frigörandeprocessen, som en del av begäran om integritet, ändras i början av 2025. Den aktuella enhetsprocessen ändrar namn på händelser med den senaste versionen av kända identiteter. Denna omfördelning av händelser till en annan identitet kan få oönskade juridiska konsekvenser. För att åtgärda dessa problem uppdaterar den nya upplösningsprocessen från och med 2025 händelser som omfattas av sekretessposten med det beständiga ID:t.
+> 
+
+Tänk dig följande data för identiteter, händelser före sammanfogning och efter sammanfogning.
+
+| Identitetskarta | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+|---|---|---|---|---|---|---|
+|  | 1 | ts1 | 123 | ecid | Bob | CustId |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Händelsedatauppsättning | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| | 2 | ts1 | 123 | ecid | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Stitled dataset | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace | Namnlöst ID | Namnutrymme med rutor |
+|---|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | Bob | CustId |
+| | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Aktuell process för sekretesspolicy**
+
+När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med genomstrykningsposter bort. Andra händelser får en ny titel med hjälp av identitetskartan. Det första sammanslagna ID:t i den sammanslagna datauppsättningen uppdateras till **Alex**.
+
+| Identitetskarta | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Händelsedatauppsättning | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Stitled dataset | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace | Namnlöst ID | Namnutrymme med rutor |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Ny process för sekretesspolicy**
+
+När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med genomstrykningsposter bort. Andra händelser får en ny titel med det beständiga ID:t. Det första sammanslagna ID:t i den sammanslagna datauppsättningen uppdateras till **123**.
+
+| Identitetskarta | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Händelsedatauppsättning | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Stitled dataset | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace | Namnlöst ID | Namnutrymme med rutor |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **123** | ecid |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 +++
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '4135'
 ht-degree: 1%
 
 ---
@@ -90,6 +90,12 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
    - **Månadsvis**: Data spelas upp en gång i månaden med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en månad gamla bearbetas dock inte om förrän nästa månad spelas upp igen.
 
 - **Sekretess**: När sekretessrelaterade förfrågningar tas emot, förutom att den begärda identiteten tas bort, måste alla sammanfogningar av den identiteten i oautentiserade händelser ångras.
+
+  >[!IMPORTANT]
+  >
+  >Frigörandeprocessen, som en del av begäran om integritet, ändras i början av 2025. Den aktuella enhetsprocessen ändrar namn på händelser med den senaste versionen av kända identiteter. Denna omfördelning av händelser till en annan identitet kan få oönskade juridiska konsekvenser. För att åtgärda dessa problem uppdaterar den nya upplösningsprocessen från och med 2025 händelser som omfattas av sekretessposten med det beständiga ID:t.
+  > 
+
 
 Data utanför uppslagsfönstret spelas inte upp igen. En besökare måste autentisera sig inom ett visst fönster för att få ett oautentiserat besök och ett autentiserat besök att identifieras tillsammans. När en enhet känns igen är den sydd från den punkten framåt.
 
@@ -231,6 +237,11 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
    - **Månadsvis**: Data spelas upp en gång i månaden med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en månad gamla bearbetas dock inte om förrän nästa månad spelas upp igen.
 
 - **Sekretess**: När sekretessrelaterade begäranden tas emot, förutom att den begärda identiteten tas bort från källdatauppsättningen, måste alla sammanfogningar av den identiteten över oautentiserade händelser ångras. Identiteten måste också tas bort från identitetsdiagrammet för att förhindra att den specifika identiteten häftas med i framtiden.
+
+  >[!IMPORTANT]
+  >
+  >Frigörandeprocessen, som en del av begäran om integritet, ändras i början av 2025. Den aktuella enhetsprocessen ändrar namn på händelser med den senaste versionen av kända identiteter. Denna omfördelning av händelser till en annan identitet kan få oönskade juridiska konsekvenser. För att åtgärda dessa problem uppdaterar den nya upplösningsprocessen från och med 2025 händelser som omfattas av sekretessposten med det beständiga ID:t.
+  > 
 
 Data utanför uppslagsfönstret spelas inte upp igen. En besökare måste autentisera sig inom ett visst fönster för att få ett oautentiserat besök och ett autentiserat besök att identifieras tillsammans. När en enhet känns igen är den sydd från den punkten framåt.
 
