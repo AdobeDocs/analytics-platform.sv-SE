@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 7fc625fcca51deebf860829ac67ca1b88b64cd1a
+source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
 workflow-type: tm+mt
-source-wordcount: '7254'
-ht-degree: 1%
+source-wordcount: '7932'
+ht-degree: 0%
 
 ---
 
@@ -23,31 +23,38 @@ I den här artikeln beskrivs hur du slutför ett antal användningsfall med till
 
 Följande användningsfall dokumenteras:
 
-* [Visa och koppla data](#connect-and-validate)
-* [Daglig trend](#daily-trend)
-* [Trend varje timme](#hourly-trend)
-* [Månadstrender](#monthly-trend)
-* [Enkel dimension rankad](#single-dimension-ranked)
-* [Flera dimensioner rankade](#multiple-dimension-ranked)
-* [Räkna distinkta dimensionsvärden](#count-distinct-dimension-values)
-* [Använd datumintervallnamn för att filtrera](#use-date-range-names-to-filter)
-* [Använd filternamn för att filtrera](#use-filter-names-to-filter)
-* [Använd dimensionsvärden för att filtrera](#use-dimension-values-to-filter)
-* [Sortera](#sort)
-* [Gränser](#limits)
-* [Till FLATTEN eller inte](#to-flatten-or-not)
-* [Omformningar](#transformations)
-* [Visualiseringar](#visualizations)
+* **Anslut**
+   * [Visa och koppla data](#connect-and-validate)
+   * [Till FLATTEN eller inte](#to-flatten-or-not)
 
-Det första användningsexemplet fokuserar på hur du ansluter BI-verktyg med tillägget Customer Journey Analytics BI.
+* **Rapportera och analysera**
+   * [Daglig trend](#daily-trend)
+   * [Trend varje timme](#hourly-trend)
+   * [Månadstrender](#monthly-trend)
+   * [Enkel dimension rankad](#single-dimension-ranked)
+   * [Flera dimensioner rankade](#multiple-dimension-ranked)
+   * [Räkna distinkta dimensionsvärden](#count-distinct-dimension-values)
+   * [Använd datumintervallnamn för att filtrera](#use-date-range-names-to-filter)
+   * [Använd filternamn för att filtrera](#use-filter-names-to-filter)
+   * [Använd dimensionsvärden för att filtrera](#use-dimension-values-to-filter)
+   * [Sortera](#sort)
+   * [Gränser](#limits)
 
-I användningsfall 2-12 finns instruktioner om hur du kan uppnå liknande Customer Journey Analytics-visualiseringar i de BI-verktyg som för närvarande stöds.
+* **Förstå**
 
-Användningsexempel 13-15 innehåller mer information om:
+   * [Omformningar](#transformations)
+   * [Visualiseringar](#visualizations)
+   * [Caveats](#caveats)
 
-* Olika sätt att ansluta till BI-verktygen.
+I **connect**-användningsexemplet fokuseras på hur du ansluter BI-verktyg med Customer Journey Analytics BI-tillägget.
+
+**rapport- och analysexemplen** instruerar dig hur du kan uppnå liknande Customer Journey Analytics-visualiseringar i de BI-verktyg som för närvarande stöds.
+
+**Använd**-användningsexemplen innehåller mer information om:
+
 * Transformeringar som inträffar när du använder BI-verktyg för att rapportera och analysera.
 * Visualiseringslikheter och skillnader mellan Customer Journey Analytics och BI-verktyg.
+* Omslag till alla BI-verktyg som du bör känna till.
 
 
 ## Anslut och validera
@@ -147,6 +154,57 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
       1. Dra **[!UICONTROL cc_data_view]**-posten och släpp posten i huvudvyn som läser **[!UICONTROL Drag tables]** här.
    1. I huvudfönstret visas information om datavyn **[!UICONTROL cc_data_view]**.
       ![Tablet PC ansluten](assets/tableau-validation.png)
+
+>[!ENDTABS]
+
++++
+
+## Till FLATTEN eller inte
+
+I det här fallet vill du veta om du måste använda ytterligare en `FLATTEN`-parameter för databasen när du ansluter till Customer Journey Analytics med BI-tillägget.
+
++++ Customer Journey Analytics
+
+Customer Journey Analytics tillhandahåller information om hur du ansluter i gränssnittet Experience Platform.
+
+1. Navigera till din Experience Platform-sandlåda.
+1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
+1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
+1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
+
+![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png)
+
+
++++
+
++++ BI-verktyg
+
+>[!PREREQUISITES]
+>
+>Kontrollera att du har verifierat [en lyckad anslutning, kan visa datavyer och använda en datavy](#connect-and-validate) för BI-verktyget som du vill testa det här användningsfallet för. I avsnittet BI-verktyg finns information om vilka explicita `FLATTEN`-parameteralternativ som krävs för en korrekt anslutning.
+>
+
+>[!BEGINTABS]
+
+>[!TAB Power BI Desktop]
+
+Power BI Desktop stöder följande scenarier för parametern `FLATTEN`.
+
+| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
+|---|---|:---:|---|
+| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop visar fel: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
+
+>[!TAB Skrivbord för Tablet PC]
+
+Tableu Desktop stöder följande scenarier för parametern `FLATTEN`.
+
+| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
+|---|---|:---:|---|
+| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
 
 >[!ENDTABS]
 
@@ -862,8 +920,8 @@ Observera hur datumintervallet som definieras i visualiseringen av frihandstabel
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange Name]** från listan **[!UICONTROL Tables]** i hyllan **[!UICONTROL Filters]**.
    1. Kontrollera att **[!UICONTROL Select from list]** är markerat i dialogrutan **[!UICONTROL Filter \[Daterange Name\]]** och välj **[!UICONTROL Last Year 2023]** i listan. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
-   1. Dra **[!UICONTROL Daterangemonth]**-posten från listan **[!UICONTROL Tables]** till **[!UICONTROL Rows]**. Välj **[!UICONTROL Daterangemonth]** och välj **[!UICONTROL Month]**. Värdet ändras till **[!UICONTROL MONTH(Daterangemonth)]**.
-   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** till **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra **[!UICONTROL Daterangemonth]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Rows]**. Välj **[!UICONTROL Daterangemonth]** och välj **[!UICONTROL Month]**. Värdet ändras till **[!UICONTROL MONTH(Daterangemonth)]**.
+   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
    1. Välj **[!UICONTROL Swap Rows and Columns]** i verktygsfältet.
    1. Välj **[!UICONTROL Fit Width]** i listrutan **[!UICONTROL Fit]**.
@@ -938,7 +996,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
    1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `01/02/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** till **[!UICONTROL Rows]**.
-   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** till **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
    1. Välj **[!UICONTROL Fit Width]** i listrutan **[!UICONTROL Fit]**.
 
@@ -1014,7 +1072,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
    1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `1/2/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** till **[!UICONTROL Rows]**.
-   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** till **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
    1. Välj **[!UICONTROL Fit Width]** i listrutan **[!UICONTROL Fit]**.
 
@@ -1168,7 +1226,7 @@ limit 1000001
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
    1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `1/2/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Rows]**.
-   1. Dra **[!UICONTROL Purchases]**-posten från listan **[!UICONTROL Tables]** till **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Purchases)]**.
+   1. Dra **[!UICONTROL Purchases]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Purchases)]**.
    1. Dra **[!UICONTROL Purchase Revenue]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**, intill **[!UICONTROL SUM(Purchases)]**. Värdet ändras till **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
    1. Välj **[!UICONTROL Fit Width]** i listrutan **[!UICONTROL Fit]**.
@@ -1333,7 +1391,7 @@ limit 1000001
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
    1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och väljer **[!UICONTROL Previous years]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** till **[!UICONTROL Rows]**.
-   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** till **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
    1. Välj **[!UICONTROL Fit Width]** i listrutan **[!UICONTROL Fit]**.
    1. Välj **[!UICONTROL Product Name]** i **[!UICONTROL Rows]**. Välj **[!UICONTROL Filter]** i listrutan.
@@ -1383,60 +1441,6 @@ GROUP BY 1
 >[!ENDTABS]
 
 +++
-
-
-## Till FLATTEN eller inte
-
-Du vill veta om du måste använda ytterligare en `FLATTEN`-parameter för databasen när du ansluter till Customer Journey Analytics med BI-tillägget.
-
-+++ Customer Journey Analytics
-
-Customer Journey Analytics tillhandahåller information om hur du ansluter i gränssnittet Experience Platform.
-
-1. Navigera till din Experience Platform-sandlåda.
-1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
-1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
-1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
-
-![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png)
-
-
-+++
-
-+++ BI-verktyg
-
->[!PREREQUISITES]
->
->Kontrollera att du har verifierat [en lyckad anslutning, kan visa datavyer och använda en datavy](#connect-and-validate) för BI-verktyget som du vill testa det här användningsfallet för. I avsnittet BI-verktyg finns information om vilka explicita `FLATTEN`-parameteralternativ som krävs för en korrekt anslutning.
->
-
->[!BEGINTABS]
-
->[!TAB Power BI Desktop]
-
-Power BI Desktop stöder följande scenarier för parametern `FLATTEN`.
-
-| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
-|---|---|:---:|---|
-| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop visar fel: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
-
->[!TAB Skrivbord för Tablet PC]
-
-Tableu Desktop stöder följande scenarier för parametern `FLATTEN`.
-
-| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
-|---|---|:---:|---|
-| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-
->[!ENDTABS]
-
-+++
-
-
 
 ## Omformningar
 
@@ -1603,7 +1607,9 @@ Customer Journey Analytics har ett antal visualiseringar. Se [Visualiseringar](/
 
 >[!TAB Power BI Desktop]
 
-Följande Customer Journey Analytics-visualiseringar har en liknande upplevelse som Power BI Desktop.
+### Jämförelse
+
+För de flesta visualiseringar i Customer Journey Analytics erbjuder Power BI Desktop likvärdiga upplevelser. Se tabellen nedan.
 
 | Ikon | Customer Journey Analytics visualisering | Power BI Desktop-visualisering |
 | :---: | --- | ---| 
@@ -1631,10 +1637,62 @@ Följande Customer Journey Analytics-visualiseringar har en liknande upplevelse 
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p> | [Treemap-diagram](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
 
+
+### Detaljgranska
+
+Power BI stöder [detaljerat läge](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) för att utforska detaljinformation om vissa visualiseringar. I exemplet nedan analyserar du inköpsinkomster för produktkategorier. På snabbmenyn för ett fält som representerar en produktkategori kan du välja **[!UICONTROL Drill down]**.
+
+![Power BI-borrning nedåt](assets/uc15-powerbi-drilldown.png)
+
+Detaljnivån uppdaterar visualiseringen med inköpsintäkterna för produkter i den valda produktkategorin.
+
+![Power BI-fördjupning](assets/uc15-powerbi-drillup.png)
+
+Detaljnivån resulterar i följande SQL-fråga som använder en `WHERE`-sats:
+
+```sql
+select "_"."product_category" as "c25",
+    "_"."product_name" as "c26",
+    "_"."a0" as "a0"
+from 
+(
+    select "_"."product_category",
+        "_"."product_name",
+        "_"."a0"
+    from 
+    (
+        select "_"."product_category",
+            "_"."product_name",
+            "_"."a0"
+        from 
+        (
+            select "rows"."product_category" as "product_category",
+                "rows"."product_name" as "product_name",
+                sum("rows"."purchase_revenue") as "a0"
+            from 
+            (
+                select "_"."product_category",
+                    "_"."product_name",
+                    "_"."purchase_revenue"
+                from "public"."cc_data_view" "_"
+                where ("_"."daterange" >= date '2023-01-01' and "_"."product_category" = 'Fishing') and "_"."daterange" < date '2024-01-01'
+            ) "rows"
+            group by "product_category",
+                "product_name"
+        ) "_"
+        where not "_"."a0" is null
+    ) "_"
+) "_"
+order by "_"."product_category",
+        "_"."product_name"
+limit 1001
+```
+
 >[!TAB Skrivbord för Tablet PC]
 
+### Jämförelse
 
-Följande Customer Journey Analytics visualiseringar har en liknande upplevelse som finns i Tableu.
+För de flesta visualiseringar i Customer Journey Analytics erbjuder Tableau likvärdiga upplevelser. Se tabellen nedan.
 
 | Ikon | Customer Journey Analytics visualisering | Power BI Desktop-visualisering |
 | :---: | --- | ---| 
@@ -1661,6 +1719,67 @@ Följande Customer Journey Analytics visualiseringar har en liknande upplevelse 
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p> | [Treemap-diagram](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_treemap.htm) |
 | ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
+
+
+### Detaljgranska
+
+Tableau stöder [detaljerat läge](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) via [hierarkier](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). I exemplet nedan skapar du en hierarki när du markerar fältet Produktnamn i Tabeller och drar det över produktkategorin. Sedan kan du välja **[!UICONTROL + Drill down]** på snabbmenyn för ett fält som representerar en produktkategori.
+
+![Detaljnivå för flikar](assets/uc15-tableau-drilldown.png)
+
+Detaljnivån uppdaterar visualiseringen med inköpsintäkterna för produkter i den valda produktkategorin.
+
+![Tabbladet - detaljnivå upp](assets/uc15-tableau-drillup.png)
+
+Detaljnivån resulterar i följande SQL-fråga som använder en GROUP BY-sats:
+
+```sql
+SELECT CAST("cc_data_view"."product_category" AS TEXT) AS "product_category",
+  CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
+  SUM("cc_data_view"."purchase_revenue") AS "sum:purchase_revenue:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND ("cc_data_view"."daterange" < (TIMESTAMP '2024-01-01 00:00:00.000')))
+GROUP BY 1,
+  2
+```
+
+Frågan begränsar **inte** resultaten till den valda produktkategorin. Endast visualiseringen visar den valda produktkategorin.
+
+![Tabbladet - detaljnivå upp](assets/uc15-tableau-drillup2.png)
+
+Du kan också skapa en detaljerad kontrollpanel där ett visuellt värde är resultatet av markeringen i ett annat visuellt läge. I exemplet nedan används visualiseringen **[!UICONTROL Product Categories]** som ett filter för att uppdatera tabellen **[!UICONTROL Product Names]**. Det här visualiseringsfiltret är bara för klienten och leder inte till någon ytterligare SQL-fråga.
+
+![Visualiseringsfilter för Tablet PC](assets/uc15-tableau-visualizationfilter.png)
+
+
+>[!ENDTABS]
+
++++
+
+
+## Caveats
+
+Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med tillägget Customer Journey Analytics BI.
+
++++ BI-verktyg
+
+>[!BEGINTABS]
+
+>[!TAB Power BI Desktop]
+
+* Power BI Desktop Avancerad filtrering av datumintervall är exklusiv.  För slutdatumet måste du välja ett som ligger efter den dag du vill rapportera på. Till exempel **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
+* Power BI Desktop har standardvärdet **[!UICONTROL Import]** när du skapar en anslutning. Kontrollera att du använder **[!UICONTROL Direct Query]**.
+* Power BI Desktop visar dataomvandlingar via Power Query.  Power Query fungerar i första hand med Import-typanslutningar, så många omformningar som du använder, som datum- eller strängfunktioner, genererar ett fel som säger att du måste växla till en Import-typanslutning.  Om du behöver omforma data vid frågetillfället bör du använda härledda dimensioner och mätvärden så att Power BI inte behöver göra själva omformningarna.
+* Power BI Desktop förstår inte hur typkolumner för datum och tid ska hanteras. Därför stöds inte måtten **[!UICONTROL daterange*X *]**som **[!UICONTROL daterangehour]**och **[!UICONTROL daterangeminute]**.
+* Power BI Desktop försöker som standard skapa flera anslutningar med hjälp av fler sessioner i frågetjänsten.  Du bör gå till Power BI-inställningarna för ditt projekt och inaktivera parallella frågor.
+* Power BI Desktop utför all sortering och begränsning på klientsidan och har också olika semantik för toppfiltrering av *X* som innehåller bundna värden så att du inte kan skapa exakt samma sortering och begränsning som du kan göra i Analysis Workspace.
+* I tidigare versioner av Power BI Desktop, oktober 2024-versionen bryts PostgreSQL-datakällor. Se till att du använder den version som omnämns i den här artikeln.
+
+>[!TAB Skrivbord för Tablet PC]
+
+* Datumfiltreringen för Tableu är exklusiv. För slutdatumet måste du välja ett som ligger efter den dag du vill rapportera på.
+* Som standard när du lägger till ett datum- eller datum-/tidsmått som **[!UICONTROL Daterangemonth]** på raderna i ett blad, kapslas fältet i en **[!UICONTROL YEAR()]** -funktion.  För att få det du vill ha måste du markera dimensionen och välja den datumfunktion som du vill använda i listrutan.  Ändra till exempel **[!UICONTROL Year]** till **[!UICONTROL Month]** när du försöker använda **[!UICONTROL Daterangemonth]**.
+* Det är inte uppenbart att resultaten begränsas till de övre *X* i skrivbordet i Tableu. Du kan begränsa resultaten explicit eller använda ett beräkningsfält och funktionen **[!UICONTROL INDEX()]**.  Om du lägger till ett översta *X*-filter i en dimension genereras komplex SQL med hjälp av en inre koppling som inte stöds.
 
 >[!ENDTABS]
 
