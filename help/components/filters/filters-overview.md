@@ -4,9 +4,9 @@ description: Förstå vilka filter som används för och hur du skapar ett enkel
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -174,9 +174,13 @@ När du skapar behållare i andra behållare skapar du i själva verket ett filt
 2. Använd den kapslade filterdefinitionen på återstående data. Den kapslade filterdefinitionen gäller INTE för data som den första definitionen ignorerade.
 3. Upprepa tills alla definitioner för kapslade behållarfilter har beräknats. Resterande data inkluderas sedan i resultatet och används för rapportering.
 
+>[!NOTE]
+>
+>När du kapslar in ett filter i ett filter (du t.ex. drar ett filter från panelen Komponenter till filterdefinitionen) skapas en behållare med en kopia (inte en referens) av filterdefinitionen som dras.
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
 
 | Container | What container you can nest inside |
 | Event | Only event conditions |
