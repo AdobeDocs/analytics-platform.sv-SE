@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
+source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
 workflow-type: tm+mt
 source-wordcount: '7932'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Instruktionerna avser en exempelmiljö med följande objekt:
 * Mätvärden: **[!UICONTROL Purchase Revenue]** ?? och **[!UICONTROL Purchases]** ?..
 * Filter: **[!UICONTROL Fishing Products]** ??.
 
-![Grundinställningar för Customer Journey Analytics](assets/cja-base.png)
+![Grundinställningar för Customer Journey Analytics](assets/cja-base.png){zoomable="yes"}
 
 När du går igenom användningsexemplen ersätter du de här exempelobjekten med objekt som passar just din miljö.
 
@@ -89,7 +89,7 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
    1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
    1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
 
-      ![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png)
+      ![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png){width="100" zoomable="yes"}
 
 1. Starta Power BI Desktop.
    1. Välj **[!UICONTROL Get data from other sources]** i huvudgränssnittet.
@@ -129,7 +129,7 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
    1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
    1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
 
-      ![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png)
+      ![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Starta Tableu.
    1. Välj **[!UICONTROL PostgreSQL]** från den vänstra listen under **[!UICONTROL To a Server]**. Om den inte är tillgänglig väljer du **[!UICONTROL More...]** och väljer **[!UICONTROL PostgreSQL]** i **[!UICONTROL Installed Connectors]**.
