@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 6f264ffd30bb1308f95a913a16fb587f36d95a04
+source-git-commit: cc743d74a98dae9029654add65d3e685320fe9f3
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 0%
@@ -180,4 +180,4 @@ När du har markerat reglagen uppåt/nedåt, gör du ett val för de relevanta f
 
 ## Frågor och kontakt
 
-* Skicka frågor och feedback i Alpha-slackkanalen: #aep-cja-ai-assistent-testers ??
+* Skicka frågor och feedback i Alpha-slackkanalen: #cja-assistent-data-alpha
