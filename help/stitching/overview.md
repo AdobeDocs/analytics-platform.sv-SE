@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
+source-git-commit: 93fbf7778d3253e75429e4fce336306904035494
 workflow-type: tm+mt
-source-wordcount: '4135'
+source-wordcount: '4203'
 ht-degree: 1%
 
 ---
@@ -83,11 +83,11 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
 
 - **Liveutjämning**: försöker sammanfoga varje träff (händelse) när den kommer in. Träffar från enheter som är&quot;nya&quot; i datauppsättningen (som aldrig har autentiserats) sammanfogas vanligtvis inte på den här nivån. Träffar från enheter som redan känns igen sammanfogas omedelbart.
 
-- **Spela upp sammanfogning**:&quot;Spelar upp&quot; data baserat på unika identifierare (tillfälliga ID:n) som den har lärt sig. På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) (till tillfälliga ID:n). Adobe erbjuder följande repriser:
-   - **Dagligen**: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
-   - **Veckovis**: Data spelas upp en gång i veckan med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en vecka gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
-   - **Varannan vecka**: Data spelas upp en gång varannan vecka med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är yngre än två veckor behandlas dock inte om förrän nästa gång i veckan.
-   - **Månadsvis**: Data spelas upp en gång i månaden med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en månad gamla bearbetas dock inte om förrän nästa månad spelas upp igen.
+- **Spela upp sammanfogning**:&quot;Spelar upp&quot; data baserat på unika identifierare (tillfälliga ID:n) som den har lärt sig. På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) (till tillfälliga ID:n). Uppspelningen bestäms av två parametrar: **frequency** och **lookback window**. Adobe erbjuder följande kombinationer av dessa parametrar:
+   - **Daglig sökning efter en daglig frekvens**: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
+   - **Veckovis uppslag med en veckofrekvens**: Data spelas upp en gång i veckan med ett veckovisa uppslagsfönster (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en vecka gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
+   - **Veckovis uppspelning på en veckofrekvens**: Data spelas upp en gång i veckan med ett varannan vecka-uppslag (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än två veckor gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
+   - **Månadsvis uppslag på en veckofrekvens**: Data spelas upp varje vecka med ett månadsuppslag (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en månad gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
 
 - **Sekretess**: När sekretessrelaterade förfrågningar tas emot, förutom att den begärda identiteten tas bort, måste alla sammanfogningar av den identiteten i oautentiserade händelser ångras.
 
@@ -230,11 +230,11 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
 
 - **Liveutjämning**: försöker sammanfoga varje träff (händelse) när den kommer in, med det beständiga ID:t för att leta upp det tillfälliga ID:t för det valda namnområdet genom att fråga efter identitetsdiagrammet. Om det tillfälliga ID:t är tillgängligt från sökningen sammanfogas detta tillfälliga ID omedelbart.
 
-- **Spela upp sammanfogning**: &quot;Spelar upp&quot; data baserat på uppdaterade identiteter från identitetsdiagrammet. På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) när identitetsdiagrammet har matchat identiteten för ett namnutrymme. Adobe erbjuder följande repriser:
-   - **Dagligen**: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
-   - **Veckovis**: Data spelas upp en gång i veckan med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en vecka gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
-   - **Varannan vecka**: Data spelas upp en gång varannan vecka med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är yngre än två veckor behandlas dock inte om förrän nästa gång i veckan.
-   - **Månadsvis**: Data spelas upp en gång i månaden med uppslagsfönstret (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en månad gamla bearbetas dock inte om förrän nästa månad spelas upp igen.
+- **Spela upp sammanfogning**: *spelar upp* data baserat på uppdaterade identiteter från identitetsdiagrammet. På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) när identitetsdiagrammet har matchat identiteten för ett namnutrymme. Uppspelningen bestäms av två parametrar: **frequency** och **lookback window**. Adobe erbjuder följande kombinationer av dessa parametrar:
+   - **Daglig sökning efter en daglig frekvens**: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att repriser är mycket oftare, men oautentiserade besökare måste autentisera samma dag som de besöker webbplatsen.
+   - **Veckovis uppslag med en veckofrekvens**: Data spelas upp en gång i veckan med ett veckovisa uppslagsfönster (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en vecka gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
+   - **Veckovis uppspelning på en veckofrekvens**: Data spelas upp en gång i veckan med ett varannan vecka-uppslag (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än två veckor gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
+   - **Månadsvis uppslag på en veckofrekvens**: Data spelas upp varje vecka med ett månadsuppslag (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en månad gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
 
 - **Sekretess**: När sekretessrelaterade begäranden tas emot, förutom att den begärda identiteten tas bort från källdatauppsättningen, måste alla sammanfogningar av den identiteten över oautentiserade händelser ångras. Identiteten måste också tas bort från identitetsdiagrammet för att förhindra att den specifika identiteten häftas med i framtiden.
 
