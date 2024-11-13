@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
+source-git-commit: 6f264ffd30bb1308f95a913a16fb587f36d95a04
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1628'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. Se till att den markerade datavyn för panelen är datavyn som aktiverades för AI Assistant-användning för Alpha-testning (nå ut i Alpha-slackkanalen om du är osäker).
 
-5. Klicka på ikonen för AI-assistentchatt längst upp till höger.
+5. Klicka på ikonen för AI-assistentchatt längst upp till höger. Obs! Om du inte ser chattikonen i det övre högra hörnet kan du kontakta din administratör och be dem att följa [dessa instruktioner](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) för att aktivera&quot;AI Assistant: Product Knowledge&quot; och&quot;AI Assistant: Data Analysis&quot; i Admin Console.
 
    ![AI Assistant-ikon](/help/assets/ai-asst-icon.png)
 
