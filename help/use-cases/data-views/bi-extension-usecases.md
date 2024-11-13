@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
+source-git-commit: d6d6777f3d40a979eefecea6ab6d4bd818be2401
 workflow-type: tm+mt
-source-wordcount: '7932'
+source-wordcount: '7896'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,6 @@ Följande användningsfall dokumenteras:
 
 * **Anslut**
    * [Visa och koppla data](#connect-and-validate)
-   * [Till FLATTEN eller inte](#to-flatten-or-not)
 
 * **Rapportera och analysera**
    * [Daglig trend](#daily-trend)
@@ -120,6 +119,25 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
       ![Power BI-tjänstserverdata har lästs in](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
+### Till FLATTEN eller inte
+
+Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+
+| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
+|---|---|:---:|---|
+| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Rekommenderat alternativ att använda!** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop visar fel: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
+
+### Mer information
+
+* [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+
+
+
+
 >[!TAB Skrivbord för Tablet PC]
 
 1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform-frågetjänsten.
@@ -155,56 +173,23 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
    1. I huvudfönstret visas information om datavyn **[!UICONTROL cc_data_view]**.
       ![Tablet PC ansluten](assets/tableau-validation.png){zoomable="yes"}
 
->[!ENDTABS]
+### Till FLATTEN eller inte
 
-+++
-
-## Till FLATTEN eller inte
-
-I det här fallet vill du veta om du måste använda ytterligare en `FLATTEN`-parameter för databasen när du ansluter till Customer Journey Analytics med BI-tillägget.
-
-+++ Customer Journey Analytics
-
-Customer Journey Analytics tillhandahåller information om hur du ansluter i gränssnittet Experience Platform.
-
-1. Navigera till din Experience Platform-sandlåda.
-1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
-1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
-1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
-
-![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png){zoomable="yes"}
-
-
-+++
-
-+++ BI-verktyg
-
->[!PREREQUISITES]
->
->Kontrollera att du har verifierat [en lyckad anslutning, kan visa datavyer och använda en datavy](#connect-and-validate) för BI-verktyget som du vill testa det här användningsfallet för. I avsnittet BI-verktyg finns information om vilka explicita `FLATTEN`-parameteralternativ som krävs för en korrekt anslutning.
->
-
->[!BEGINTABS]
-
->[!TAB Power BI Desktop]
-
-Power BI Desktop stöder följande scenarier för parametern `FLATTEN`.
+Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
 | Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
 | `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop visar fel: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Rekommenderat alternativ för**. Obs! `%3FFLATTEN` är en URL-kodad version av `?FLATTEN`. |
 
->[!TAB Skrivbord för Tablet PC]
+### Mer information
 
-Tableu Desktop stöder följande scenarier för parametern `FLATTEN`.
+* [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Anslut skrivbordet till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
-| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
-|---|---|:---:|---|
-| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+
 
 >[!ENDTABS]
 
@@ -277,7 +262,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
       * Välj **[!UICONTROL Day]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL DAY(Daterangeday)]**.
    1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
       * Värdena konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** i listrutan **[IUICONTROL-anpassning]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -289,7 +274,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I vyn **[!UICONTROL Data]**:
    1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
    1. Välj **[!UICONTROL Swap Rows and Columns]** i verktygsfältet.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** i listrutan **[IUICONTROL-anpassning]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -347,7 +332,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
       * Välj **[!UICONTROL More]** > **[!UICONTROL Hours]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL HOUR(Daterangeday)]**.
    1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
       * Värdena konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** i listrutan **[IUICONTROL-anpassning]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -359,7 +344,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I vyn **[!UICONTROL Data]**:
    1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
    1. Dra **[!UICONTROL HOUR(Daterangeday)]** från **[!UICONTROL Columns]** till **[!UICONTROL Rows]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** i listrutan **[IUICONTROL-anpassning]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -448,7 +433,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
       * Välj **[!UICONTROL MONTH]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL MONTH(Daterangeday)]**.
    1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
       * Värdena konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** i listrutan **[IUICONTROL-anpassning]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -460,7 +445,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I datavyn:
    1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
    1. Dra **[!UICONTROL MONTH(Daterangeday)]** från **[!UICONTROL Columns]** till **[!UICONTROL Rows]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** i listrutan **[IUICONTROL-anpassning]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -823,6 +808,15 @@ Du kan sedan använda det måttet i en **[!UICONTROL Count Distinct Dimension Va
 
    ![Distinkt tabell för antal Power BI Desktop Multiple Count](assets/uc7-powerbi-final.png){zoomable="yes"}
 
+Du kan också använda funktionen antal som skiljer sig från Power BI.
+
+1. Välj dimensionen **[!UICONTROL product_name]**.
+1. Använd funktionen **[!UICONTROL Count (Distinct)]** på dimensionen **[!UICONTROL product_name]** i **[!UICONTROL Columns]**.
+
+   ![Distinkt antal Power BIN](assets/uc7-powerbi-alternative.png){zoomable="yes"}
+
+
+
 >[!TAB Skrivbord för Tablet PC]
 
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
@@ -861,6 +855,14 @@ Du kan sedan använda det måttet i en **[!UICONTROL Count Distinct Dimension Va
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
    ![Instrumentpanel för bordsdator ](assets/uc7-tableau-final.png){zoomable="yes"}
+
+
+Du kan också använda funktionen för att räkna distinkt från skrivbordet i Tableu.
+
+1. Använd **[!UICONTROL Product Name]** i stället för **[!UICONTROL Cm Product Name Count Distinct]**.
+1. Använd **[!UICONTROL Measure]** > **[!UICONTROL Count (Distinct)]** på **[!UICONTROL Product Name]** i **[!UICONTROL Marks]**.
+
+   ![Distinkt antal Power BIN](assets/uc7-tableau-alternative.png){zoomable="yes"}
 
 >[!ENDTABS]
 
