@@ -1,13 +1,13 @@
 ---
 title: Customer Journey Analytics BI-tillägg
-description: Lär dig hur du kan använda Power BI eller Tableau för att komma åt datavyer med tillägget Customer Journey Analytics BI.
+description: Lär dig hur du kan använda Power BI eller Tableau Desktop för att få åtkomst till datavyer med tillägget Customer Journey Analytics BI.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: e5d66bfbc39d3b20b2833b6a83485b106b3d4231
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '3089'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{select-package}}
 
-[!DNL Customer Journey Analytics BI extension] aktiverar SQL-åtkomst till de [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableu eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
+[!DNL Customer Journey Analytics BI extension] aktiverar SQL-åtkomst till de [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableau Desktop eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
 
 Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina datavyer i Customer Journey Analytics som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
 
@@ -100,7 +100,7 @@ Mer information finns i [Användargränssnittsguiden för frågeredigeraren](htt
 
 ### BI-verktyg
 
-För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension] endast för Power BI och Tableau. Andra BI-verktyg som använder PSQL-gränssnittet kan också fungera, men stöds ännu inte officiellt.
+För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension] endast för Power BI och Tableau Desktop. Andra BI-verktyg som använder PSQL-gränssnittet kan också fungera, men stöds ännu inte officiellt.
 
 +++ Power BI
 
@@ -145,7 +145,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 +++
 
-+++Tableau
++++Tableau Desktop
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
@@ -155,9 +155,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    1. Välj ` cja` **[!UICONTROL ** Databas **]**.
 
-   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) vid behov i Tablet.
+   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) när det behövs i Tableu Desktop.
 
-1. I tabell:
+1. I Tableau Desktop:
 
    1. Välj **[!UICONTROL ** Mer **]** från **[!UICONTROL ** Till en server **]** i den vänstra listen.
 
@@ -192,6 +192,8 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 +++
 
 Se [Ansluta klienter till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) för en översikt och mer information om de olika verktygen som finns.
+
+Se [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget
 
 ## Funktionalitet
 

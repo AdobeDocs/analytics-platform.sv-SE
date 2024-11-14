@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '824'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ Nu finns nya härledda fältfunktioner (Math, Next eller Previous, Summarize, De
 
 >[!TAB BI-tillägg*]
 
-BI-tillägget ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Nu kan du använda ditt BI-favoritverktyg för att skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt.
+BI-tillägget ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Nu kan du använda ditt BI-favoritverktyg för att skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt. [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) har angetts.
 
 [![bild](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

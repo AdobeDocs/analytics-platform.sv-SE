@@ -5,9 +5,9 @@ exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -21,4 +21,4 @@ Customer Journey Analytics aktiverar följande viktiga användningsexempel:
 * **Utnyttja datavetenskapen för era analytiker**: Med Customer Journey Analytics kan vanliga människor använda datavetenskap för att låsa upp djupgående insikter och analyser.
 * **Visualisera och interagera med datauppsättningar med ad hoc-rapportering**: Workspace kan använda alla datauppsättningar från Adobe Experience Platform som uppfyller vissa grundläggande regler.
 * **Visa data som inte är webbdata**: Workspace är inte längre begränsat till en fast definition av en träff eller händelse. Anpassade scheman ger fullständig kontroll över data och definitioner.
-* **Få bättre kontroll över din datahantering**: Ändra data som du har överfört, skapa nya datauppsättningar och importera dem till Workspace. Adobe Experience Platform tillhandahåller verktyg för att fråga, extrahera, omforma och läsa in med Experience Platform Query Service.
+* **Få bättre kontroll över din datahantering**: Ändra data som du har överfört, skapa nya datauppsättningar och importera dem till Workspace. Adobe Experience Platform tillhandahåller verktyg för frågor, extrahering, omformning och inläsning via Experience Platform Query Service och BI-tillägget.

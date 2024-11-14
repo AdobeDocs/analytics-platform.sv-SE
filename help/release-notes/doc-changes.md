@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a8d983255e3922bd619b614acedd21f66cc563b9
+source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
-source-wordcount: '4175'
+source-wordcount: '4196'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Funktion | Beskrivning |
 | --- | --- |
 | **November 2024** | |
+| Användningsexempel för BI-tillägg | Dokumentation för flera [BI-tillägg använder fall](/help/use-cases/data-views/bi-extension-usecases.md) för BI-verktyg som Power BI Desktop och Tableau Desktop. |
 | Förfrågningar om titlar och sekretess | Meddelande har lagts till om [kommande ändringar i den upplösande processen](/help/stitching/faq.md#frequently-asked-questions) som är ett resultat av sekretessförfrågningar. |
 | **Oktober 2024** | |
 | Delade enheter | En [användningsfallartikel](/help/use-cases/stitching/shared-devices.md) har lagts till som ger kontext på delade enheter, hur du hanterar och reducerar data från delade enheter med hjälp av sammanslagning och hur du förstår exponeringen för delade enheter i dina data med hjälp av frågetjänsten. |

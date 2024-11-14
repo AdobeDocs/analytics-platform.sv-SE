@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 62779154e889158c62e4713a951fb3633c16d5e1
+source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1252'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ Mer information finns i [Använd bindningsmåtten](binding-dimensions-metrics.md
 
 Mer information finns i [Använda sammanfattningsdata](summary-data.md).
 
+## Användningsexempel för BI-tillägg
+
+Se användningsexempel för [BI-tillägg](bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget.
+
 ## Skapa ett mått från ett strängschemafält {#string}
 
 När du skapar en datavy kan du till exempel skapa ett [!UICONTROL Orders]-mått från ett [!UICONTROL Page Title]-schemafält som är en sträng.
@@ -35,7 +39,7 @@ När du skapar en datavy kan du till exempel skapa ett [!UICONTROL Orders]-mått
 1. Öppna avsnittet **[!UICONTROL Include/Exclude Values]** och ange följande:
    1. Aktivera **[!UICONTROL Set include exclude values]**.
    1. Välj **[!UICONTROL If all criteria are met]** från **[!UICONTROL Match]**.
-   1. Ange `confirmation`. Den här texten för page_title anger att den här sidan är relaterad till att placera en order. När du har granskat alla sidrubriker där villkoren uppfylls, räknas `1` för varje instans. Resultatet är ett nytt mått (inte ett beräknat mått). Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Det fungerar med Attribution IQ, filter och var du än är kan du använda standardvärden.
+   1. Ange `confirmation`. Den här texten för page_title anger att den här sidan är relaterad till att placera en order. När du har granskat alla sidrubriker där villkoren uppfylls, räknas `1` för varje instans. Resultatet är ett nytt mätvärde (inte ett beräknat mätvärde) Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Det fungerar med Attribution IQ, filter och var du än är kan du använda standardvärden.
 
    ![Dimension till mått](../assets/string-to-metric.gif){width=100%}
 1. Du kan ytterligare ange en attribueringsmodell för det här måttet, till exempel [!UICONTROL Last Touch], med [!UICONTROL Lookback window] av [!UICONTROL Session].
