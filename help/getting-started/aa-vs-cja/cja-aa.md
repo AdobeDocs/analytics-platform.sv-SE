@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 1cf7ae6635f51f0ca06cbc235032525e3d9b3fec
+source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
 workflow-type: tm+mt
 source-wordcount: '2311'
 ht-degree: 1%
@@ -41,7 +41,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 
 ## Funktioner/komponenter i Adobe Analytics som stöds fullt ut {#full-support}
 
-| Adobe Analytics Feature | Anmärkningar om stöd |
+| Adobe Analytics Feature | Kommentarer om CJA-stöd |
 | --- | --- |
 | **Analysidentifiering** | Fullt stöd |
 | **Attribution IQ** | Fullt stöd |
@@ -78,7 +78,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 
 | Funktion | Anteckningar |
 | --- | --- |
-| **Advertising Cloud** | Du kan [samla in historiska data för AMO ID:n och EF ID:n för användning i Adobe Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars) |
+| **Advertising Cloud** | Du kan [samla in historiska data för AMO ID:n och EF ID:n för användning i Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
 | **Larm** | Processen med att [använda aviseringar i Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) är nästan identisk med att använda aviseringar i Adobe Analytics. <p>På grund av datainsamlingens tidpunkter i Customer Journey Analytics är det dock inte möjligt att få varningar per timme. I Customer Journey Analytics kan varningar konfigureras för varje dag, vecka eller månad.</p> |
 | **Analyser för mål (A4T)** | Integrationen [mellan Adobe Customer Journey Analytics och Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) ger kraftfulla analyser och tidsbesparande verktyg för optimeringsprogrammet. |
 | **Målgruppspublicering** | Stöds om licensen har erhållits med Adobe Customer Data Platform eller Journey Optimizer-produkter. [Audience Publishing](/help/components/audiences/audiences-overview.md) skickar målgrupper till kundprofilen i realtid i Experience Platform. |
