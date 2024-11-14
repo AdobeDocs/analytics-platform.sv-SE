@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
+source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -47,3 +48,4 @@ För att kunna använda marknadsföringskanaler i Customer Journey Analytics nä
 
    Det nya härledda fältet läggs till i fältet Härledda fält > behållare, som en del av schemafälten i den vänstra listen i datavyn.
 
+1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).

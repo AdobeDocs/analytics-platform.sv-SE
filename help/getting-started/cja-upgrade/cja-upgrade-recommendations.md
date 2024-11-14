@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: ae2f9220829c897c8f1e0425ec192035dcf0097d
+source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -90,9 +90,13 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. (Valfritt) Om du vill integrera Customer Journey Analytics med Adobe Journey Optimizer använder du personaliseringsobjektet i implementeringen för användning i Adobe Journey Optimizer.
 
-1. (Valfritt) Hämta historiska data från Adobe Analytics med Analytics-källkopplingen.
+1. (Valfritt) Hämta historiska data från Adobe Analytics med Analytics-källkopplingen:
 
-   Mer information finns i [Använd en källkoppling](/help/data-ingestion/sources.md#use-a-source-connector) i [Importera och använda data med hjälp av källanslutningar](/help/data-ingestion/sources.md).
+   1. [Skapa ett schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+
+   1. [Skapa Analytics-källkopplingen och mappningsfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. Expandera avsnittet som beskriver hur du vill implementera Experience Platform Web SDK för implementeringen av Customer Journey Analytics och slutför sedan de associerade stegen:
 
@@ -106,7 +110,7 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    +++Taggar
 
-   1. [Implementera inläsartaggen på din plats](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md).
+   1. [Implementera inläsartaggen på din plats](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
    1. [Skapa en taggegenskap och lägg till Adobe Experience Platform Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
 

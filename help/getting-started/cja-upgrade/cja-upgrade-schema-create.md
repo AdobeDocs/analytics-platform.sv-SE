@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
+source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
 
-# Skapa ett XDM-schema som ska användas med Customer Journey Analytics
+# Skapa ett XDM-schema som du kan använda med Customer Journey Analytics Web SDK-implementeringen
 
 >[!NOTE]
 > 
@@ -39,7 +40,7 @@ Så här skapar du ett schema:
 
 1. Välj **[!UICONTROL Create schema]**.
 
-1. I steget Välj en klass i guiden Skapa schema:
+1. I steget **[!UICONTROL Select a class]** i guiden Skapa schema:
 
    1. Välj **[!UICONTROL Experience Event]**.
 
@@ -60,11 +61,11 @@ Så här skapar du ett schema:
 
    1. Välj **[!UICONTROL Finish]**.
 
-1. På fliken [!UICONTROL **Struktur**] i ditt schema:
+1. Lägg till alla fältgrupper som innehåller fält som du vill inkludera i schemat.
+
+   Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
    1. Välj **[!UICONTROL + Add]** i avsnittet **[!UICONTROL Field groups]**.
-
-      Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
       ![Lägg till fältgrupp](assets/add-field-group-button.png)
 
@@ -78,7 +79,19 @@ Så här skapar du ett schema:
 
       Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 
+   1. (Valfritt) Markera eventuella ytterligare fältgrupper som du vill ta med.
+
    1. Välj **[!UICONTROL Add field groups]**.
+
+1. (Valfritt) Om du har anpassade fält som du vill inkludera i ditt schema skapar du en anpassad fältgrupp och lägger till anpassade fält i fältgruppen.
+
+   1. Välj **[!UICONTROL + Add]** i avsnittet **[!UICONTROL Field groups]**.
+
+      ![Lägg till fältgrupp](assets/add-field-group-button.png)
+
+   1. Välj **[!UICONTROL Create new field group]** i dialogrutan [!UICONTROL Add fields groups].
+
+   1. Ange ett visningsnamn och en valfri beskrivning och välj sedan **[!UICONTROL Add field groups]**.
 
 1. Välj **[!UICONTROL +]** bredvid schemanamnet på panelen [!UICONTROL Structure].
 
@@ -147,4 +160,3 @@ Så här skapar du ett schema:
    Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html).
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-
