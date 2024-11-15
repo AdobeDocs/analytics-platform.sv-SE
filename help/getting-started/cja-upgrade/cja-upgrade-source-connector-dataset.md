@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d30a1a7cbe441529f5b094215c0ea1131c1f67fc
+exl-id: 424485a3-a076-4656-83b6-733f16cc2326
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
@@ -20,6 +21,30 @@ ht-degree: 0%
 >Följ bara stegen på den här sidan när du har slutfört alla tidigare uppgraderingssteg. Du kan följa de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller följa uppgraderingsstegen som har skapats dynamiskt för din organisation med uppgraderingsenkäten för [Adobe Analytics till Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
+
+>[!NOTE]
+>
+>Informationen på den här sidan förutsätter följande:
+>
+>* Du uppgraderar från Adobe Analytics till Customer Journey Analytics.
+>* Du använder Web SDK för din framtida datainsamling från Customer Journey Analytics.
+>* Du vill använda Analytics-källkopplingen för att överföra historiska analysdata från Adobe till Customer Journey Analytics.
+
+## Förstå hur Analytics-källkopplingen kan överföra historiska data till Customer Journey Analytics
+
+Du kan använda Analytics-källkopplingen för att hämta data från Adobe Analytics rapportsvit till Adobe Experience Platform. Dessa data kan sedan användas som historiska data i Customer Journey Analytics.
+
+Den här processen förutsätter att du vill [skapa ett XDM-schema när du uppgraderar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som passar behoven i din organisation och de plattformsspecifika program som du använder.
+
+Om du vill använda Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics måste du:
+
+1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. [Skapa Analytics-källkopplingen och kartfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+
+1. Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen, enligt beskrivningen nedan.
+
+## Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen
 
 När du [har skapat en Analytics-källkoppling för historiska data](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md) skapas en datauppsättning automatiskt för Analytics-data.
 
@@ -68,7 +93,7 @@ Så här lägger du till den automatiskt skapade datauppsättningen i samma ansl
 
 1. Definiera perioden som du vill att bakåtfyllnaden ska omfatta genom att ange start- och slutdatum eller genom att välja kalenderikonen ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
-   Analysens källanslutning importerar upp till 13 månaders data (oavsett storlek) för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.
+   Källkopplingen för Analytics importerar 13 månaders data (oavsett storlek) för produktionssandlådor. Bakgrundsfyllningen i icke-produktionssandlådor är tre månader.
 
    >[!IMPORTANT]
    >
@@ -83,4 +108,3 @@ Så här lägger du till den automatiskt skapade datauppsättningen i samma ansl
 1. Välj **[!UICONTROL Add datasets]** och välj sedan **[!UICONTROL Save]** för att spara anslutningen.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-

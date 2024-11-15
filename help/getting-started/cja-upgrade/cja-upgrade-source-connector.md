@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8e51e97b0616a5406c5c3a29431fde87a551ab9f
+exl-id: f96565a2-f556-4b45-b88e-984613614d2e
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -21,13 +22,23 @@ ht-degree: 0%
 >
 >När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
 
+## Förstå hur Analytics-källkopplingen kan överföra historiska data till Customer Journey Analytics
+
 Du kan använda Analytics-källkopplingen för att hämta data från Adobe Analytics rapportsvit till Adobe Experience Platform. Dessa data kan sedan användas som historiska data i Customer Journey Analytics.
 
-Följande steg förutsätter att du vill [skapa ett XDM-schema när du uppgraderar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder.
+Den här processen förutsätter att du vill [skapa ett XDM-schema när du uppgraderar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som passar behoven i din organisation och de plattformsspecifika program som du använder.
 
-När ditt XDM-schema har skapats måste du skapa Adobe Analytics-källkopplingen som ska användas för historiska data.
+Om du vill använda Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics måste du:
 
-Mer utförliga allmänna riktlinjer om hur du skapar en källanslutning finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. Skapa Analytics-källkopplingen och mappningsfälten enligt beskrivningen nedan.
+
+1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Skapa Analytics-källkopplingen och kartfälten
+
+När ditt XDM-schema har skapats måste du skapa Adobe Analytics-källkopplingen som ska användas för historiska data. (Mer utförliga allmänna riktlinjer om hur du skapar en källanslutning finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
 
 Så här skapar du en Adobe Analytics-källanslutning som ska användas för historiska data:
 
@@ -78,7 +89,3 @@ Så här skapar du en Adobe Analytics-källanslutning som ska användas för his
    Om du använder Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics Web SDK-implementeringen måste du lägga till den automatiskt skapade datauppsättningen i anslutningen som du skapade för Web SDK-implementeringen.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-
-
-
-
