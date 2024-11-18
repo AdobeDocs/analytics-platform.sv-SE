@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Cust
 
    >[!CAUTION]
    >
-   >   Detta antal gäller endast händelsedata, inte profil- eller sökdata. Om du har profil- och sökdata kommer antalet att vara något högre. Det finns dock för närvarande inget sätt att rapportera om användningen av profil- och sökdata i användargränssnittet. Den här funktionen är särpresenterad för 2023.
+   >   Detta antal gäller endast händelsedata, inte profil- eller sökdata. Om du har profil- och sökdata kommer antalet att vara något högre. Det finns dock för närvarande inget sätt att rapportera om användningen av profil- och sökdata i användargränssnittet.
 
 1. När du har angett summan av alla händelsedatarader ska du slå upp behörigheten&quot;Rader med data&quot; i det Customer Journey Analytics-kontrakt som ditt företag signerade med Adobe.
 
