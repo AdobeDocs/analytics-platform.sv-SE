@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '590'
+ht-degree: 1%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
->Följ bara stegen på den här sidan när du har slutfört alla tidigare uppgraderingssteg. Du kan följa de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller följa uppgraderingsstegen som har skapats dynamiskt för din organisation med uppgraderingsenkäten för [Adobe Analytics till Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
+>Använd informationen på den här sidan när du besvarar frågor i checklistan för uppgradering av [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
-Det finns olika sätt att uppgradera till Customer Journey Analytics, men det finns inte alla uppgraderingsalternativ för varje typ av Adobe Analytics-implementering. Den rekommenderade uppgraderingssökvägen är dock tillgänglig oavsett hur Adobe Analytics implementeras i din organisation.
+Det finns olika sätt att implementera Adobe Analytics. När du uppgraderar till Customer Journey Analytics är inte alla uppgraderingsalternativ tillgängliga för alla Adobe Analytics-implementeringar. Den rekommenderade uppgraderingssökvägen är dock tillgänglig oavsett hur Adobe Analytics implementeras i din organisation.
 
-Använd informationen nedan för att få en förståelse för er nuvarande Adobe Analytics-implementering och vilka uppgraderingsalternativ som finns tillgängliga för er organisation.
+Använd informationen nedan för att lära dig mer om hur Adobe Analytics implementeras och vilka uppgraderingsalternativ som finns tillgängliga för din organisation.
 
 Kontakta din Adobe-representant om du behöver mer specifik rådgivning, vägledning eller support.
 

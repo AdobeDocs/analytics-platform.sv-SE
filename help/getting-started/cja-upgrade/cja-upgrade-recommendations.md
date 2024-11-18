@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -90,14 +90,6 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. (Valfritt) Om du vill integrera Customer Journey Analytics med Adobe Journey Optimizer använder du personaliseringsobjektet i implementeringen för användning i Adobe Journey Optimizer.
 
-1. (Valfritt) Hämta historiska data från Adobe Analytics med Analytics-källkopplingen:
-
-   1. [Skapa ett schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
-
-   1. [Skapa Analytics-källkopplingen och mappningsfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
-
-   1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
-
 1. Expandera avsnittet som beskriver hur du vill implementera Experience Platform Web SDK för implementeringen av Customer Journey Analytics och slutför sedan de associerade stegen:
 
    +++Manuell implementering (JS-fil)
@@ -135,6 +127,20 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 1. [Skapa en datavy i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
 1. [Verifiera att data flödar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+
+1. (Valfritt) Hämta historiska data från Adobe Analytics med Analytics-källkopplingen:
+
+   >[!NOTE]
+   >
+   >Följ de här stegen om du inte tidigare har skapat någon källkoppling för Analytics.
+   >
+   >Om du redan använder Analytics-källkopplingen med Customer Journey Analytics följer du stegen i [Flytta från Analytics-källkopplingen till Web SDK för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+
+   1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
+
+   1. [Skapa Analytics-källkopplingen och mappningsfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. [Migrera projekt och komponenter](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 

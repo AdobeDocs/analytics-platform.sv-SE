@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,6 @@ ht-degree: 0%
 >Följ bara stegen på den här sidan när du har slutfört alla tidigare uppgraderingssteg. Du kan följa de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller följa uppgraderingsstegen som har skapats dynamiskt för din organisation med uppgraderingsenkäten för [Adobe Analytics till Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
-
->[!NOTE]
->
->Informationen på den här sidan förutsätter följande:
->
->* Du uppgraderar från Adobe Analytics till Customer Journey Analytics.
->* Du använder Web SDK för din framtida datainsamling från Customer Journey Analytics.
->* Du vill använda Analytics-källkopplingen för att överföra historiska analysdata från Adobe till Customer Journey Analytics.
 
 ## Förstå hur Analytics-källkopplingen kan överföra historiska data till Customer Journey Analytics
 
