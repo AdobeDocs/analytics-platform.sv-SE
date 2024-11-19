@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
+source-git-commit: a1feb2e8458169ed208da2c42fab62d25e1015bb
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -39,11 +40,11 @@ Här följer en högnivåprocess för att gå från källkopplingen för Analyti
 
    Mer information finns i [Välj schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
-1. (Villkorligt) Om du tänker använda Adobe Analytics-schemat lägger du till datauppsättningen som skapades automatiskt av Analytics-källkopplingen till din Customer Journey Analytics-anslutning.
+1. (Villkorligt) Om du tänker använda Adobe Analytics-schemat med din Web SDK-implementering lägger du till datauppsättningen som skapades automatiskt av Analytics-källkopplingen till din Customer Journey Analytics-anslutning.
 
    Mer information finns i [Lägg till datakällans anslutningsdatauppsättning för Analytics i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
-1. (Villkorligt) Om du tänker skapa ett XDM-schema:
+1. (Villkorligt) Om du tänker skapa ett XDM-schema som ska användas med Web SDK-implementeringen:
 
    1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
 
@@ -54,11 +55,3 @@ Här följer en högnivåprocess för att gå från källkopplingen för Analyti
    1. Ta bort den ursprungliga Analytics-källkopplingen. <!-- need to add steps somewhere about how to do this -->
 
    1. [Skapa en ny Analytics-källkoppling och mappningsfält](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
-
-
-
-
-
-
-
-
