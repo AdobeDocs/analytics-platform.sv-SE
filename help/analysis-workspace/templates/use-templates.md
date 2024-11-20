@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9f2f79e264d9cdd460751c50fe252bb7237682fd
+exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
+source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
 workflow-type: tm+mt
-source-wordcount: '13205'
+source-wordcount: '15294'
 ht-degree: 0%
 
 ---
@@ -523,14 +524,14 @@ Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- | 
-| [!UICONTROL **Första kontra Upprepa användare**] | Visa en jämförelse av förstagångsbesökare för att upprepa besökare. <p>**Detta kan hjälpa dig** att bättre förstå hur effektiv din webbplats är när det gäller att behålla kundlojaliteten, eller hur ofta du skaffar nya kunder.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att erbjuda incitament för framtida köp till förstagångsbesökare för att locka dem att återvända.</p><p>Den här mallen använder </p> |
-| **Person-ID/namnområde** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder  </p> |
-| **Platsöversikt** | Visa en översikt över besökarnas plats i en kartvisualisering.<p>**Det här kan hjälpa dig** att bättre förstå var besökarna finns som besöker din webbplats. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera marknadsföringsresurser på de platser där du ser störst intresse och möjlighet.</p><p>Den här mallen använder  </p> |
+| [!UICONTROL **Första kontra Upprepa användare**] | Visa en jämförelse av förstagångsbesökare för att upprepa besökare. <p>**Detta kan hjälpa dig** att bättre förstå hur effektiv din webbplats är när det gäller att behålla kundlojaliteten, eller hur ofta du skaffar nya kunder.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att erbjuda incitament för framtida köp till förstagångsbesökare för att locka dem att återvända.</p><!-- This template uses the --> |
+| **Person-ID/namnområde** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><!-- This template uses the --> |
+| **Platsöversikt** | Visa en översikt över besökarnas plats i en kartvisualisering.<p>**Det här kan hjälpa dig** att bättre förstå var besökarna finns som besöker din webbplats. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera marknadsföringsresurser på de platser där du ser störst intresse och möjlighet.</p><!-- This template uses the --> |
 | **Geografiska länder** | Se det land som besökarna kommer ifrån.<p>**Det här kan hjälpa dig** att bättre förstå vad de populäraste länderna besökarna kommer från när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i dessa länder, eller se till att webbplatsupplevelsen är optimal i länder som har olika primära språk.</p><p>Den här mallen använder dimensionen Länder. </p> |
 | **Geo USA-lägen** | Visa det tillstånd (i USA) som folk från webbplatsen har sitt ursprung i. Detta liknar mallen Geo Regions, förutom att den är specifik för USA.<p>**Det här kan hjälpa dig** att bättre förstå de populäraste amerikanska delstatsbesökarna som kommer från de som besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringsaktiviteter i dessa lägen.</p><p>I den här mallen används dimensionen USA. </p> |
 | **Geo-regioner** | Visa det geografiska område som personer som besöker webbplatsen kommer från. En region är ett geografiskt område som är mindre än ett land men större än en stad. I vissa länder är en region en stat, provins eller prefektion. I andra områden är det ett land, en avdelning eller en storstadsregion. <p>**Det här kan hjälpa dig** att bättre förstå de populäraste regionerna som besökarna kommer ifrån när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i de här regionerna, eller se till att webbplatsupplevelsen är optimal i regioner som har olika primära språk. </p><p>I den här mallen används dimensionerna ID (variabler/geoland) och Region. </p> |
-| **Geo-städer** | Se den stad som folk från webbplatsen kommer ifrån. <p>**Det här kan hjälpa dig** att bättre förstå de populäraste städer som besökarna kommer från när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringsaktiviteter i dessa städer. </p><p>Den här mallen använder dimensionen Städer </p> |
-| **Geo US DMA** | Se vilka områden i USA som besökarna kommer ifrån.<p>**Det här kan hjälpa dig** att bättre förstå de populäraste regionerna som besökarna kommer ifrån när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att använda data för att fokusera på marknadsföringsaktiviteter i de mest framgångsrika regionerna. </p><p>Den här mallen använder </p> |
+| **Geo-städer** | Se den stad som folk från webbplatsen kommer ifrån. <p>**Det här kan hjälpa dig** att bättre förstå de populäraste städer som besökarna kommer från när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringsaktiviteter i dessa städer. </p><p>Den här mallen använder dimensionen Städer. </p> |
+| **Geo US DMA** | Se vilka områden i USA som besökarna kommer ifrån.<p>**Det här kan hjälpa dig** att bättre förstå de populäraste regionerna som besökarna kommer ifrån när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att använda data för att fokusera på marknadsföringsaktiviteter i de mest framgångsrika regionerna. </p><!-- This template uses the --> |
 | **Språk** | Se vilka språk besökarna föredrar att se innehåll på. <p>**Det här kan hjälpa dig** att bättre förstå besökarnas vanligaste språk.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som fokuslokaliseringsaktiviteter eller marknadsföringsaktiviteter för de vanligaste språken.</p><p>Den här mallen använder dimensionen Språk.</p> |
 | **Tekniköversikt** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder </p> |
 | **Webbläsare** | Visa namn och version för de webbläsare som användarna använder mest för att komma åt webbplatsen.<p>**Detta kan hjälpa dig** att bättre förstå de vanligaste webbläsarna som besökarna använder.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, till exempel förbättra webbplatsens kvalitet genom att testa nya versioner av webbplatsen med de vanligaste webbläsarna. Om du gör det kan du maximera kvalitetskontrollen.</p><p>Den här mallen använder dimensionen Webbläsare. </p> |
@@ -708,12 +709,14 @@ Följande mallar är tillgängliga:
 
 ### Mobil: Mobilapp {#mobile-app}
 
+<!-- add contextual help for Mobile app screens and mobile app actions -->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-lifecycle-metrics-app-usage-template"
->title="Användning av mobilappar"
->abstract=""
+>title="Visa antalet användare, starter och första starter för appen samt den genomsnittliga sessionslängden."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur mycket appen används. <br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra appprestanda så att den kan anpassas till användningsmängden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -721,8 +724,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-journeys"
->title="Mobilappsresor"
->abstract=""
+>title="Visa de framträdande användningsmönstren för din mobilapp."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur andra använder din app. <br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra hur användare kan komma från en skärm till en annan och anpassa sig till de vanligaste arbetsflödena."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -730,8 +733,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-key-metrics"
->title="Mätvärden för mobilappar"
->abstract=""
+>title="Visa några av de vanligaste mätvärdena för mobilappar."
+>abstract="**Detta kan hjälpa dig** att bättre förstå grundläggande prestanda i din mobilapp.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att utvärdera den övergripande hälsan och prestandan för din app."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -739,8 +742,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-messaging"
->title="Mobilappsmeddelanden"
->abstract=""
+>title="Visa prestandadata för meddelanden i appen och push-meddelanden för appen."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur användare använder meddelandefunktioner i appen samt hur effektivt push-meddelanden genererar trafik till din app.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra push-meddelandefunktionen i appen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -748,8 +751,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-performance-template"
->title="Mobilappsprestanda"
->abstract=""
+>title="Se hur appen fungerar och var användarna har problem."
+>abstract="**Detta kan hjälpa dig** att bättre förstå om användare som använder din app stöter på långsamhet eller försämrade prestanda. <br/>**Baserat på vad du lär dig kan du** göra flera saker, som att åtgärda befintliga problem eller förbättra appprestanda innan problem uppstår."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -757,8 +760,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-retention"
->title="Underhåll av mobilappar"
->abstract=""
+>title="Visa vilka användare som är de mest lojala användarna av appen och vad de gör i appen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur dina mest lojala användare använder din app.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra marknadsföringen för de funktioner som de mest lojala användarna använder."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -766,14 +769,14 @@ Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- | 
-| [!UICONTROL **Mobilapp Screens**] | Visa information om de mobilskärmar som används vid åtkomst till webbplatsen, t.ex. skärmstorlek, skärmbredd och skärmhöjd. <p>**Detta kan hjälpa dig** att bättre förstå hur andra upplever din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera återgivningen av webbplatsen för de vanligaste skärmstorlekarna.</p><p>Den här mallen använder |
-| **Mobilappsåtgärder** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Användning av mobilappar** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Mobilappsresor** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Mobilappsmått** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Mobilappsmeddelanden** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Mobilappsprestanda** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Kvarhållning av mobilapp** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
+| [!UICONTROL **Mobilapp Screens**] | Visa antalet händelser, sessioner och personer som är associerade med varje skärm i mobilappen.<p>**Det här kan hjälpa dig** att bättre förstå vilka skärmar på din webbplats som är populäraste.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra innehåll på de vanligaste skärmarna.</p><p>I den här mallen används ändringsmåtten Händelser, Sessioner, Personer och Procent. Även sidtitelsdimensionen används.</p> |
+| **Mobilappsåtgärder** | Visa de åtgärder som andra vidtar i din mobilapp. <p>**Det här kan hjälpa dig** att bättre förstå hur användare använder din app och det värde de får från den.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra framkallningsfunktioner som kompletterar eller förbättrar dem som är populäraste.</p><p>I den här mallen används ändringsmåtten Händelser, Sessioner, Personer och Procent. |
+| **Användning av mobilappar** | Visa antalet användare, starter och första starter för appen samt den genomsnittliga sessionslängden.<p>**Det här kan hjälpa dig** att bättre förstå hur mycket appen används. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra appprestanda så att den kan anpassas till användningsmängden.</p><!-- This template uses the --> |
+| **Mobilappsresor** | Visa de framträdande användningsmönstren för din mobilapp. <p>**Detta kan hjälpa dig** att bättre förstå hur andra använder din app. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra hur användare kan komma från en skärm till en annan och anpassa sig till de vanligaste arbetsflödena. </p><!-- This template uses the --> |
+| **Mobilappsmått** | Visa några av de vanligaste mätvärdena för mobilappar. <p>**Detta kan hjälpa dig** att bättre förstå grundläggande prestanda i din mobilapp.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att utvärdera den övergripande hälsan och prestandan för din app.</p><!-- This template uses the --> |
+| **Mobilappsmeddelanden** | Visa prestandadata för meddelanden i appen och push-meddelanden för appen.<p>**Det här kan hjälpa dig** att bättre förstå hur användare använder meddelandefunktioner i appen samt hur effektivt push-meddelanden genererar trafik till din app.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra push-meddelandefunktionen i appen.</p><!-- This template uses the --> |
+| **Mobilappsprestanda** | Se hur appen fungerar och var användarna har problem. <p>**Detta kan hjälpa dig** att bättre förstå om användare som använder din app stöter på långsamhet eller försämrade prestanda. </p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att åtgärda befintliga problem eller förbättra appprestanda innan problem uppstår.</p><!-- This template uses the --> |
+| **Kvarhållning av mobilapp** | Visa vilka användare som är de mest lojala användarna av appen och vad de gör i appen. <p>**Detta kan hjälpa dig** att bättre förstå hur dina mest lojala användare använder din app.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra marknadsföringen för de funktioner som de mest lojala användarna använder.</p><!-- This template uses the --> |
 
 ### Mobil: Information om mobila enheter {#mobile-devices}
 
@@ -822,45 +825,170 @@ Följande mallar är tillgängliga:
 | **Typ av mobil enhet** | Visa de mobila enhetstyper som användare använder för att få tillgång till din webbplats, t.ex. telefoner och surfplattor.<p>**Detta kan hjälpa dig** att bättre förstå de olika typer av mobila enheter som används för att komma åt din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera webbplatsen för de typer av mobila enheter som används mest.</p><p>Den här mallen använder dimensionen för mobilenhetstyp.</p> |
 | **Tillverkare** | Se vilka tillverkare som producerar de mobila enheter som användarna använder för att få tillgång till er webbplats, som Apple och Samsung.<p>**Det här kan hjälpa dig** att bättre förstå vilka tillverkare som är populärast bland dina användare.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att skräddarsy innehållsleveransen baserat på kapaciteten hos olika tillverkare för att säkerställa en smidig användarupplevelse.</p><p>I den här mallen används Mobile Manufacturer-dimensionen.</p> |
 
-### Tidsdelning
+### Tidsdelning {#time-parting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--minuteOfHour"
+>title="Visa antalet händelser, sessioner och personer på din webbplats, uppdelat efter minut. Om du t.ex. har en rapport med en rapporttidsram på en dag grupperas den första minuten i varje timme på dagen i samma dimensionsobjekt."
+>abstract="**Detta kan hjälpa dig** att förstå trender på detaljnivå.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera resurser för topptider, ända ned till minuten.<br/>Den här mallen använder dimensionen Timme i minuter."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--hourOfDay"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter timme på dagen. Om du t.ex. har en rapport som sträcker sig från 1 januari till 7 januari grupperas den första timmen för varje dag i samma dimensionsobjekt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.<br/>Den här mallen använder dimensionen Timme för dag."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--am-pm"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter AM och PM. Om du till exempel har en rapport som sträcker sig från 1 januari till 7, grupperas AM-timmarna för varje dag i samma dimensionsobjekt."
+>abstract="***Det här kan hjälpa dig** att bättre förstå när du besöker din webbplats oftast och oftast.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.<br/>Den här mallen använder AM/PM-dimensionen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfWeek"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter veckodag. Om du till exempel har en rapport som sträcker sig över januari, grupperas varje veckodag i samma dimensionsobjekt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka veckodagar din webbplats besöker mest och minst ofta.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.<br/>Den här mallen använder dimensionen Dag i veckan."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfMonth"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag i månaden. Om du till exempel har en rapport som sträcker sig över ett helt år grupperas varje dag i månaden i samma dimensionsobjekt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka dagar i varje månad som webbplatsen besöks mest och minst ofta.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.<br/>Den här mallen använder dimensionen Dag i månaden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfYear"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje dag på året i samma dimensionsobjekt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka dagar på året som webbplatsen oftast och oftast besöker.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.<br/>Den här mallen använder dimensionen Dag på året."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--weekdayWeekend"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter veckodagar och helger. Om du till exempel har en rapport som sträcker sig över januari, grupperas veckodagar och helger i separata dimensionsobjekt."
+>abstract="**Detta kan hjälpa dig** att bättre förstå skillnaderna i webbplatstrafik för veckodagar jämfört med helger.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att din kundtjänst är mer intensiv på helger, om rapporten visar att helger är mer än vardagar.<br/>Den här mallen använder dimensionen Veckodag/Veckoslut."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--weekOfYear"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter vecka på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje vecka i samma dimensionsobjekt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka veckor på året som webbplatsen besöks mest och minst ofta.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämplig i telefonen under trafikveckor, till exempel under helgdagar.<br/>Den här mallen använder dimensionen Vecka på året."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--monthOfYear"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter månad på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje månad i samma dimensionsobjekt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka månader din webbplats är mest frekvent och sällan besökt.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämplig i telefonen för högtrafikmånader, till exempel under helgerna.<br/>Den här mallen använder dimensionen Månad på år."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--quarterOfYear"
+>title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter kvartal på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje kvartal i samma dimensionsobjekt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka delar av webbplatsen som är mest frekvent och sällan besökta.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att starta produkter för att öka antalet historiskt lågtrafikplatser.<br/>Den här mallen använder dimensionen Kvartal på året."
+
+<!-- markdownlint-enable MD034 -->
 
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- | 
-| [!UICONTROL **Minut av timmen**] | Visa antalet händelser, sessioner och personer på din webbplats, uppdelat efter minut. Om du t.ex. har en rapport med en rapporttidsram på en dag grupperas den första minuten i varje timme på dagen i samma dimensionsobjekt.<p>**Detta kan hjälpa dig** att förstå trender på detaljnivå.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>I den här mallen används dimensionen Minut för timme. |
-| **Timme på dagen** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter timme på dagen. Om du t.ex. har en rapport som sträcker sig från 1 januari till 7 januari grupperas den första timmen för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder dimensionen Timme för dag. |
-| **AM/PM** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter AM och PM. Om du till exempel har en rapport som sträcker sig från 1 januari till 7, grupperas AM-timmarna för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks oftast och minst.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder AM/PM-dimensionen. |
-| **Veckodag** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter veckodag. Om du till exempel har en rapport som sträcker sig över januari, grupperas varje veckodag i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka veckodagar din webbplats besöker mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag i vecka. |
-| **Dag i månaden** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag i månaden. Om du till exempel har en rapport som sträcker sig över ett helt år grupperas varje dag i månaden i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka dagar i varje månad som webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag i månaden. |
-| **Dag på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje dag på året i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka dagar på året som webbplatsen oftast och oftast besöker.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag på år. |
-| **Veckodag/Veckoslut** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter veckodagar och helger. Om du till exempel har en rapport som sträcker sig över januari, grupperas veckodagar och helger i separata dimensionsobjekt. <p>**Detta kan hjälpa dig** att bättre förstå skillnaderna i webbplatstrafik för veckodagar jämfört med helger.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att din kundtjänst är mer intensiv på helger, om rapporten visar att helger är mer än vardagar.</p><p>Den här mallen använder dimensionen Veckodag/Veckoslut. |
-| **Vecka på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter vecka på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje vecka i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå vilka veckor på året som webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämplig i telefonen under trafikveckor, till exempel under helgdagar.</p><p>Den här mallen använder dimensionen Vecka på året. |
-| **Månad på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter månad på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje månad i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå vilka månader din webbplats är mest frekvent och sällan besökt.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämplig i telefonen för högtrafikmånader, till exempel under helgerna.</p><p>Den här mallen använder dimensionen Månad på år. |
-| **Kvartal på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter kvartal på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje kvartal i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå vilka delar av webbplatsen som är mest frekvent och sällan besökta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att starta produkter för att öka antalet historiskt lågtrafikplatser.</p><p>Den här mallen använder dimensionen Kvartal på året. |
+| [!UICONTROL **Minut av timmen**] | Visa antalet händelser, sessioner och personer på din webbplats, uppdelat efter minut. Om du t.ex. har en rapport med en rapporttidsram på en dag grupperas den första minuten i varje timme på dagen i samma dimensionsobjekt.<p>**Detta kan hjälpa dig** att förstå trender på detaljnivå.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera resurser för topptider, ända ned till minuten.</p><p>I den här mallen används dimensionen Minut för timme.</p> |
+| **Timme på dagen** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter timme på dagen. Om du t.ex. har en rapport som sträcker sig från 1 januari till 7 januari grupperas den första timmen för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder dimensionen Timme för dag.</p> |
+| **AM/PM** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter AM och PM. Om du till exempel har en rapport som sträcker sig från 1 januari till 7, grupperas AM-timmarna för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks oftast och minst.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder AM/PM-dimensionen.</p> |
+| **Veckodag** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter veckodag. Om du till exempel har en rapport som sträcker sig över januari, grupperas varje veckodag i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka veckodagar din webbplats besöker mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag i vecka.</p> |
+| **Dag i månaden** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag i månaden. Om du till exempel har en rapport som sträcker sig över ett helt år grupperas varje dag i månaden i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka dagar i varje månad som webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag i månaden.</p> |
+| **Dag på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje dag på året i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka dagar på året som webbplatsen oftast och oftast besöker.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag på år.&lt;/> |
+| **Veckodag/Veckoslut** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter veckodagar och helger. Om du till exempel har en rapport som sträcker sig över januari, grupperas veckodagar och helger i separata dimensionsobjekt. <p>**Detta kan hjälpa dig** att bättre förstå skillnaderna i webbplatstrafik för veckodagar jämfört med helger.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att din kundtjänst är mer intensiv på helger, om rapporten visar att helger är mer än vardagar.</p><p>Den här mallen använder dimensionen Veckodag/Veckoslut.</p> |
+| **Vecka på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter vecka på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje vecka i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå vilka veckor på året som webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämplig i telefonen under trafikveckor, till exempel under helgdagar.</p><p>Den här mallen använder dimensionen Vecka på året.</p> |
+| **Månad på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter månad på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje månad i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå vilka månader din webbplats är mest frekvent och sällan besökt.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämplig i telefonen för högtrafikmånader, till exempel under helgerna.</p><p>Den här mallen använder dimensionen Månad på år.</p> |
+| **Kvartal på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter kvartal på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje kvartal i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå vilka delar av webbplatsen som är mest frekvent och sällan besökta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att starta produkter för att öka antalet historiskt lågtrafikplatser.</p><p>Den här mallen använder dimensionen Kvartal på året.</p> |
 
-### Kanalövergripande
+### Kanalövergripande {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--multiChannelOverview"
+>title="Se hur trafiken distribueras över flera kanaler."
+>abstract="**Detta kan hjälpa dig** att bättre förstå vilka kanaler som är mest framgångsrika när det gäller trafik och engagemang. <br/>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, som att fokusera marknadsföringen på de kanaler som ger störst avkastning på investeringen.<br/>Den här mallen använder användar-, sessions- och händelsemått."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--callCenterDeflection"
+>title="Se hur webbtrafiken påverkar trafiken i callcenter."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur självbetjäningsinnehållet på din webbplats avspeglar trafiken till ditt callcenter.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, till exempel förbättra självbetjäningsinnehållet för att minska trafiken till ditt call center, eller mäta avkastningen på ditt självbetjäningsinnehåll genom att beräkna hur mycket som sparats via färre supportsamtal.<br/>Den här mallen använder mått för webbsessioner, mobilappssessioner och flerkanalssessioner för Web+App."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--webAppTemplate"
+>title="Visa webbtrafik och mobiltrafik tillsammans."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur webb- och mobiltrafiken distribueras till din webbplats.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att avsätta mer resurser till din mobilappsupplevelse när den når en viss trafiknivå.<br/>Den här mallen använder mått för webbsessioner, mobilappssessioner och flerkanalssessioner för Web+App."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--onlineOffline"
+>title="Visa trafik online och offline tillsammans."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur online- och offlinetrafik distribueras till din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att avsätta mer resurser till din onlineupplevelse när den når en viss trafiknivå."
+
+<!-- markdownlint-enable MD034 -->
 
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- | 
-| [!UICONTROL **Översikt över flera kanaler**] | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Jämförelse mellan kanaler** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Avböjning av samtalscenter (Web+Call Center)** | Se hur webbtrafiken påverkar trafiken i callcenter.<p>**Detta kan hjälpa dig** att bättre förstå hur självbetjäningsinnehållet på din webbplats avspeglar trafiken till ditt callcenter.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, till exempel förbättra självbetjäningsinnehållet för att minska trafiken till ditt call center, eller mäta avkastningen på ditt självbetjäningsinnehåll genom att beräkna hur mycket som sparats via färre supportsamtal.</p><p>Den här mallen använder |
-| **Webb+App** | Visa webbtrafik och mobiltrafik tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur webb- och mobiltrafiken distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att avsätta mer resurser till din mobilappsupplevelse när den når en viss trafiknivå.</p><p>Den här mallen använder |
-| **Online/Offline** | Visa trafik online och offline tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur online- och offlinetrafik distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att avsätta mer resurser till din onlineupplevelse när den når en viss trafiknivå.</p><p>Den här mallen använder |
+| [!UICONTROL **Översikt över flera kanaler**] | Se hur trafiken distribueras över flera kanaler. <p>**Detta kan hjälpa dig** att bättre förstå vilka kanaler som är mest framgångsrika när det gäller trafik och engagemang. </p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, som att fokusera marknadsföringen på de kanaler som ger störst avkastning på investeringen.</p><p>I den här mallen används användar-, sessions- och händelsemätningar.</p> |
+| **Avböjning av samtalscenter (Web+Call Center)** | Se hur webbtrafiken påverkar trafiken i callcenter.<p>**Detta kan hjälpa dig** att bättre förstå hur självbetjäningsinnehållet på din webbplats avspeglar trafiken till ditt callcenter.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, till exempel förbättra självbetjäningsinnehållet för att minska trafiken till ditt call center, eller mäta avkastningen på ditt självbetjäningsinnehåll genom att beräkna hur mycket som sparats via färre supportsamtal.</p><p>I den här mallen används mått för webbsessioner, mobilappssessioner och flerkanalssessioner för Web+App.</p> |
+| **Webb+App** | Visa webbtrafik och mobiltrafik tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur webb- och mobiltrafiken distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att avsätta mer resurser till din mobilappsupplevelse när den når en viss trafiknivå.</p><p>I den här mallen används mått för webbsessioner, mobilappssessioner och flerkanalssessioner för Web+App.</p> |
+| **Online/Offline** | Visa trafik online och offline tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur online- och offlinetrafik distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att avsätta mer resurser till din onlineupplevelse när den når en viss trafiknivå.</p><!-- This template uses the ... --> |
 
-### Andra kanaler
+### Andra kanaler {#other-channels}
 
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- | 
 | [!UICONTROL **Kontrollpanel för samtalscenter**] | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **POS/Offline** | Visa kassor och offlinetransaktionsdata.<p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
+| **POS/Offline** | Visa transaktionsdata (POS), inklusive intjänade intäkter, utförda order och sålda enheter. Den här mallen innehåller även visualiseringar som visar information om de främsta butikerna, de viktigaste produkterna och de viktigaste produktkategorierna samt online- och offlineförsäljning. <p>**Det här kan hjälpa dig** att bättre förstå vilka produkter som är era mest säljande produkter på olika butiksplatser och online.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att tilldela fler marknadsföringsresurser till produkter och kanaler med höga prestanda.</p><p>I den här mallen används måtten för användare, intäkter och order.</p> |
 | **E-post/AJO** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
-| **Undersökning** | <p>**Det här kan hjälpa dig** att bättre förstå</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som </p><p>Den här mallen använder |
+| **Undersökning** | Visa användarengagemang för era undersökningar. Se antalet starter och slutföranden, de vanligaste frågorna och svaren samt antalet första kontra upprepade deltagare.<p>**Det här kan hjälpa dig** att bättre förstå engagemangsnivåerna och frekvensen av lyckade enkäter.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera framtida undersökningar för att ge bättre deltagande.</p><p>I den här mallen används värdena för användare, händelser, undersökningar, slutförda undersökningar och antalet slutförda enkäter.</p> |
 
 ### AJO {#AJO-templates}
 
@@ -868,8 +996,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-campaign"
->title="AJO-kampanjer"
->abstract=""
+>title="Se viktiga mätvärden för era Journey Optimizer-kampanjer, inklusive e-postkampanjer, experiment, i appen, SMS med mera."
+>abstract="**Detta kan hjälpa dig** att bättre förstå detaljer som antalet klick och antalet levererade meddelanden, vilket ger en heltäckande insikt i kampanjens effektivitet och engagemangsnivå.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera dina kampanjer baserat på målpublikens engagemangsnivåer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -877,8 +1005,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-journey"
->title="AJO resor"
->abstract=""
+>title="Se viktiga mätvärden för era Journey Optimizer-resor, inklusive e-postresor, experimenterande, i appen, SMS med mera."
+>abstract="**Detta kan hjälpa dig** att bättre förstå detaljer som antalet klick och antalet levererade meddelanden, vilket ger en heltäckande insikt i hur effektiv din resa är och hur hög engagemanget är.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera dina kampanjer baserat på målpublikens engagemangsnivåer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -886,8 +1014,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-landing-page"
->title="AJO landningssidor"
->abstract=""
+>title="Visa användarbeteende, engagemangsmönster, konverteringsgrader och andra viktiga mätvärden."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur effektiv din landningssida är. <br/>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera prestanda för landningssidor."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -895,8 +1023,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
->title="AJO - översikt"
->abstract=""
+>title="Se en detaljerad sammanfattning av trafik- och engagemangsmätningar för alla kampanjer och resor i er miljö."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur effektiva era kampanjer och resor är på hög nivå. <br/>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera kampanjer och resor baserat på målpublikens engagemangsnivåer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -904,8 +1032,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
->title="AJO prenumerationer"
->abstract=""
+>title="Visa profilernas prenumerationer och avbeställningar som är kopplade till särskilda listor."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur effektiva olika prenumerationskampanjer och -initiativ är när det gäller att öka engagemanget och konverteringarna.<br/>**Baserat på vad du lär dig kan du** göra något annat, som att justera dina prenumerationskampanjer baserat på målpublikens engagemangsnivåer."
 
 <!-- markdownlint-enable MD034 -->
 
