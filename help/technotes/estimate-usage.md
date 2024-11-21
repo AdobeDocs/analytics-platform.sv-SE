@@ -4,9 +4,9 @@ description: Visar två metoder för att beräkna användningen och en metod fö
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
+source-git-commit: 191d1b7a4b851e93a44487dad4794709cbbd0374
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,6 @@ Så här hanterar du användningen av Customer Journey Analytics:
 ## Beräkna anslutningsstorlek {#estimate-size}
 
 Du kan behöva veta hur många rader med händelsedata du har i [!UICONTROL Customer Journey Analytics]. Om du vill få ett korrekt konto för hur din organisation använder händelsedatarader gör du följande **för var och en av anslutningarna som din organisation har skapat**.
-
->[!NOTE]
->
->Gör detta den första fredagen i varje månad, eftersom Adobe kör din senaste användningsrapport den dagen.
 
 1. Klicka på fliken **[!UICONTROL Connections]** i [!UICONTROL Customer Journey Analytics].
 
