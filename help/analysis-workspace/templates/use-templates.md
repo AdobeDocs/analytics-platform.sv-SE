@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
+source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
-source-wordcount: '15294'
+source-wordcount: '15370'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,17 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
 1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**].
 
-1. Välj [!UICONTROL **Mallar**].
+   ![Mallflikar](assets/view-prebuilt-templates.png)
 
-   ![Fliken Rapporter](assets/view-prebuilt-reports.png)
+1. Välj någon av följande flikar i avsnittet [!UICONTROL **Mallar**]:
+
+   * **[!UICONTROL Adobe templates]**: Visar alla mallar som tillhandahålls av Adobe.
+
+   * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för i din organisation.
+
+     Företagsmallar kan bara skapas av en administratör.
+
+1. Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
 
 1. I sökfältet börjar du skriva namnet på mallen som du vill söka efter och väljer den sedan i listan med mallar.
 
@@ -61,19 +69,19 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
 1. Välj mallen för att skapa en rapport baserad på den mall du valde.
 
-## Anpassa och spara en mall {#use-reports}
+## Skapa ett projekt baserat på en mall {#use-reports}
 
-En mall kanske inte passar dina behov exakt, men den kan göra att du kommer nära. I dessa fall kan du använda mallen som utgångspunkt och sedan anpassa den så att den passar dina specifika syften.
+En mall kanske inte passar dina behov exakt, men den kan göra att du kommer nära. I dessa fall kan du använda mallen som utgångspunkt för ditt projekt och sedan anpassa den så att den passar dina specifika syften.
 
 Om du navigerar bort från en mall efter att ha gjort ändringar uppmanas du att spara eller ignorera ändringarna. Om du sparar ändringar i en mall sparas mallen som ett nytt projekt.
 
-Så här anpassar och sparar du en mall:
+Så här anpassar du en mall och sparar den som ett projekt:
 
 1. I Adobe Analytics väljer du fliken [!UICONTROL **Workspace**].
 
 1. Välj fliken [!UICONTROL **Mallar**].
 
-1. Markera den mall som du vill visa. Välj till exempel rapporten [!UICONTROL **Sidor**] under [!UICONTROL **Mest populära**].
+1. Markera den mall som du vill visa. Välj till exempel mallen [!UICONTROL **Sidor**] under [!UICONTROL **Mest populära**].
 
    Sidmallen, som den visas i Analysis Workspace, visar två [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([stapeldiagram](/help/analysis-workspace/visualizations/bar.md) och [sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md)) samt en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). Det mätvärde som används är förekomster.
 
@@ -82,7 +90,7 @@ Så här anpassar och sparar du en mall:
 1. Gör något av följande:
 
    * Visa mallen.
-   * Dra ett eller flera segment till segmentsläppzonen längst upp. Dra till exempel segmentet [!UICONTROL **Mobila kunder**] och visa resultatet.
+   * Dra ett eller flera filter till filtersläppzonen längst upp. Dra till exempel filtret [!UICONTROL **Mobila kunder**] och visa resultatet.
    * Ändra datumintervallet genom att gå till kalendern längst upp till höger.
    * Lägg in dimensionsanalyser, dra in andra mätvärden och anpassa mallen efter behov.
 
