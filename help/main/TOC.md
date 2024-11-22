@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: a5425eccff643cd45fd630172b0113e646b2a9cc
+source-git-commit: 5af92d5eaaa671bfbe9d29ab2a336eab78a067cc
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1085'
 ht-degree: 10%
 
 ---
@@ -70,6 +70,7 @@ ht-degree: 10%
       + [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Använd Analytics-källkopplingen exklusivt](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
       + [Gå från Analytics-källkopplingen till Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+      + [Inaktivera insamling av AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
    + Jämförelse med Adobe Analytics {#cja-aa-comparison}
       + [Översikt](../getting-started/aa-vs-cja/overview.md)
       + [Använd Adobe Analytics-data](../getting-started/aa-vs-cja/aa-data-in-cja.md)

@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,11 @@ Om du vill använda Analytics-källkopplingen för att hämta historiska data ti
 
 1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. [Skapa Analytics-källkopplingen och kartfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Om du inte redan har en Analytics-källkoppling [skapar du Analytics-källkopplingen och mappar fält till XDM-schemat](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   eller
+
+   Om du redan har en Analytics-källkoppling mappar [fält från källkopplingen till ditt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen, enligt beskrivningen nedan.
 
@@ -83,20 +87,26 @@ Så här lägger du till den automatiskt skapade datauppsättningen i samma ansl
 
 1. Välj **[!UICONTROL Request backfill]** i avsnittet **[!UICONTROL Dataset backfill]**.
 
-1. Definiera perioden som du vill att bakåtfyllnaden ska omfatta genom att ange start- och slutdatum eller genom att välja kalenderikonen ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Definiera den period som du vill att återfyllningen av anslutningen ska inkludera i Customer Journey Analytics genom att ange start- och slutdatum eller genom att markera kalenderikonen ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
-   Källkopplingen för Analytics importerar 13 månaders data (oavsett storlek) för produktionssandlådor. Bakgrundsfyllningen i icke-produktionssandlådor är tre månader.
+   Var tydlig när du anger de datum du begär för bakåtfyllnad. Beroende på flera faktorer kan du göra något av följande:
 
-   >[!IMPORTANT]
-   >
-   >Var tydlig när du anger de datum du begär för bakåtfyllnad. Slutdatumet bör vara det datum då du först började samla in data med Web SDK-implementeringen.
-   >
-   >Du kan också välja ett datum kort efter det datum då du först började samla in data med Web SDK-implementeringen och sedan använda segment för att filtrera bort överlappande data.
+   * Välj ett slutdatum som är samma datum som när du började samla in data med Web SDK-implementeringen.
+
+   * Välj ett slutdatum som ligger kort efter det datum då du först började samla in data med Web SDK-implementeringen och använd sedan datavysegment för att filtrera bort överlappande data.
+
+   * Välj ett slutdatum som ger en större överlappning av data och använd sedan datavysegment för att filtrera bort överlappande data.
+
+     **Obs!** Det här alternativet skulle leda till ökade kostnader eftersom det skulle finnas fler rader i anslutningen.
 
    <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. Välj **[!UICONTROL Queue backfill]**.
 
 1. Välj **[!UICONTROL Add datasets]** och välj sedan **[!UICONTROL Save]** för att spara anslutningen.
+
+1. (Villkorligt) Om du använder uppslagsdatauppsättningar måste du skapa uppslagsdatauppsättningen och lägga till den i anslutningen. Mer information finns i [Skapa uppslagsdatauppsättningar för att klassificera data i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+
+   Detta krävs bara om du inte redan gjorde det när du konfigurerade din Web SDK-implementering.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).

@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ När du använder Analytics-källkopplingen tillämpas vissa standardsökdataupp
 
 För att kunna klassificera data i Customer Journey Analytics när du använder Experience Platform Web SDK måste du skapa ett XDM-schema och en uppslagsdatauppsättning för varje dimension som innehåller data som du vill klassificera.
 
-## Skapa ett XDM-schema
+## Skapa ett XDM-schema som ska användas med uppslagsdatauppsättningen
 
 Skapa ett nytt XDM-schema för varje dimension som innehåller data som du vill klassificera i Customer Journey Analytics. När du skapar uppslagsdatauppsättningen i ett senare steg kommer den att referera till det här schemat.
 
@@ -120,9 +120,9 @@ Så här lägger du till uppslagsdatauppsättningen i anslutningen i Customer Jo
 
 1. Välj **[!UICONTROL Add datasets]** och sedan **[!UICONTROL Save]**.
 
+   <!-- is there a step right in between here where you select the dataset -->
+
 1. Använd fältet **[!UICONTROL Key]** och fältet **[!UICONTROL Matching key]** för att skapa en korrelation mellan fältet i din uppslagsdatauppsättning och det i din händelse- eller sammanfattningsdatauppsättning.
 
 1. När alla uppslagsdatauppsättningar har lagts till i anslutningen i Customer Journey Analytics fortsätter du enligt de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-
-1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
 

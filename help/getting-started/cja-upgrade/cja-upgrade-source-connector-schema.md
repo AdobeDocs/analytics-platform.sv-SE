@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,11 @@ Om du vill använda Analytics-källkopplingen för att hämta historiska data ti
 
 1. Skapa ett XDM-schema för Analytics-källkopplingen enligt beskrivningen nedan.
 
-1. [Skapa Analytics-källkopplingen och kartfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Om du inte redan har en Analytics-källkoppling [skapar du Analytics-källkopplingen och mappar fält till XDM-schemat](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   eller
+
+   Om du redan har en Analytics-källkoppling mappar [fält från källkopplingen till ditt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -40,11 +44,11 @@ Om du vill använda Analytics-källkopplingen för att hämta historiska data ti
 
 Du bör redan ha [skapat ett nytt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) för Experience Platform Web SDK-implementeringen som ska användas med Customer Journey Analytics. Det här schemat ska innehålla alla fältgrupper för fält som du planerar att samla in data om.
 
-Utöver det XDM-schema som du redan har skapat för Web SDK-implementeringen måste du nu skapa ett andra XDM-schema som kan användas med Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics.
+Nu måste du använda samma fältgrupper från ditt Web SDK-schema och lägga till dem i ett nytt schema som du kan använda med Analytics-källkopplingen.
 
-Det andra schemat måste innehålla:
+Det här schemat för Analytics-källkopplingen måste innehålla:
 
-* Alla fältgrupper (inklusive anpassade fältgrupper) som ingår i det schema som du skapade för Web SDK-implementeringen. (Alla anpassade fält som inte är en del av en standardfältgrupp bör ha lagts till i ditt Web SDK-schema som en del av en anpassad fältgrupp.)
+* Alla fältgrupper (inklusive eventuella egna fältgrupper som du har skapat) som ingår i ditt anpassade schema som du har skapat för Web SDK-implementeringen. (Alla anpassade fält som inte är en del av en standardfältgrupp bör ha lagts till i ditt Web SDK-schema som en del av en anpassad fältgrupp.)
 
 * Fältgruppen Adobe Analytics ExperienceEvent-mall
 

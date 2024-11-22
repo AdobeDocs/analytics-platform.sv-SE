@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,11 @@ Om du vill använda Analytics-källkopplingen för att hämta historiska data ti
 
 1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Skapa Analytics-källkopplingen och mappningsfälten enligt beskrivningen nedan.
+1. Om du inte redan har en Analytics-källanslutning skapar du Analytics-källkopplingen och mappar fält till XDM-schemat enligt beskrivningen nedan.
+
+   eller
+
+   Om du redan har en Analytics-källkoppling mappar [fält från källkopplingen till ditt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -69,6 +73,8 @@ Så här skapar du en Adobe Analytics-källanslutning som ska användas för his
    ![mappa schemafält](assets/schema-mapping.png)
 
    1. I **[!UICONTROL Source field]** väljer du ett Adobe Analytics-fält i fältgruppen Adobe Analytics ExperienceEvent-mall. I **[!UICONTROL Target field]** markerar du sedan XDM-fältet som du vill mappa det till.
+
+      Alla Adobe Analytics-fält har inte ett motsvarande fält i XDM på grund av de inbyggda arkitekturskillnaderna mellan AppMeasurement och XDM.
 
    1. Upprepa den här processen för varje fält i fältgruppen Adobe Analytics ExperienceEvent-mall som du använder för att samla in data i Adobe Analytics.
 
