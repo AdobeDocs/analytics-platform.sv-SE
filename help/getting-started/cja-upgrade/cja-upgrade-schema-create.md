@@ -1,20 +1,20 @@
 ---
-title: Skapa ett schema för Customer Journey Analytics
-description: Läs mer om rekommenderad sökväg när du uppgraderar från Adobe Analytics till Customer Journey Analytics
+title: Skapa ett anpassat schema för Customer Journey Analytics
+description: Lär dig hur du skapar ett anpassat schema för Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
 
-# Skapa ett XDM-schema som du kan använda med Customer Journey Analytics Web SDK-implementeringen
+# Skapa ett anpassat schema som kan användas med Customer Journey Analytics Web SDK-implementeringen
 
 >[!NOTE]
 > 
@@ -24,13 +24,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Innan du börjar skapa ditt XDM-schema bör du samarbeta med datagruppen och andra intressenter i hela organisationen för att identifiera din organisations idealiska schemadesign för Customer Journey Analytics och andra Adobe Experience Platform-program som du använder. Mer information finns i [Skapa ditt schema för användning med Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Innan du börjar skapa ett anpassat schema bör du samarbeta med ditt datateam och andra intressenter i hela organisationen för att identifiera din organisations idealiska schemadesign för Customer Journey Analytics och de andra Adobe Experience Platform-program du använder. Mer information finns i [Skapa ditt schema för användning med Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe rekommenderar att du skapar ett anpassat XDM-schema (Experience Data Model) när du uppgraderar till Customer Journey Analytics. Ett anpassat schema möjliggör ett effektivt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder. När du behöver ändra schemat behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.
+Adobe rekommenderar att du skapar ett anpassat XDM-schema (Experience Data Model) som ska användas med Web SDK när du uppgraderar till Customer Journey Analytics. Ett anpassat schema möjliggör ett effektivt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder. När du behöver ändra schemat behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.
 
 ## Skapa schemat
 
-Det XDM-schema som du definierar representerar modellen för de data som du samlar in i Adobe Experience Platform.
+Det anpassade schema som du definierar för din Web SDK-implementering representerar datamodellen som du samlar in i Adobe Experience Platform.
 
 Så här skapar du ett anpassat schema:
 

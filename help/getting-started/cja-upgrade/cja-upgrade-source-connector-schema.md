@@ -1,20 +1,20 @@
 ---
-title: Skapa ett XDM-schema för Analytics-källkopplingen
-description: Lär dig hur du skapar ett XDM-schema för Analytics-källkopplingen
+title: Skapa ett anpassat schema för Analytics-källkopplingen
+description: Lär dig hur du skapar ett anpassat schema för Analytics-källkopplingen
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
-# Skapa ett XDM-schema för Analytics-källkopplingen
+# Skapa ett anpassat schema för Analytics-källkopplingen
 
 >[!NOTE]
 > 
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 Du kan använda Analytics-källkopplingen för att hämta data från Adobe Analytics rapportsvit till Adobe Experience Platform. Dessa data kan sedan användas som historiska data i Customer Journey Analytics.
 
-Den här processen förutsätter att du vill [skapa ett XDM-schema när du uppgraderar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som passar behoven i din organisation och de plattformsspecifika program som du använder.
+I den här processen förutsätts att du vill [skapa ett anpassat schema som ska användas med Customer Journey Analytics Web SDK-implementeringen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som är anpassat efter behoven i din organisation och de specifika plattformsprogram som du använder.
 
 Om du vill använda Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics måste du:
 
-1. Skapa ett XDM-schema för Analytics-källkopplingen enligt beskrivningen nedan.
+1. Skapa ett anpassat schema för Analytics-källkopplingen enligt beskrivningen nedan.
 
-1. Om du inte redan har en Analytics-källkoppling [skapar du Analytics-källkopplingen och mappar fält till XDM-schemat](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+1. Om du inte redan har en Analytics-källkoppling [skapar du Analytics-källkopplingen och mappar fälten till det anpassade schemat](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
 
    eller
 
@@ -40,9 +40,9 @@ Om du vill använda Analytics-källkopplingen för att hämta historiska data ti
 
 1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## Skapa ett XDM-schema för Analytics-källkopplingen
+## Skapa ett anpassat schema för Analytics-källkopplingen
 
-Du bör redan ha [skapat ett nytt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) för Experience Platform Web SDK-implementeringen som ska användas med Customer Journey Analytics. Det här schemat ska innehålla alla fältgrupper för fält som du planerar att samla in data om.
+Du bör redan ha [skapat ett nytt anpassat schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) för Experience Platform Web SDK-implementeringen som ska användas med Customer Journey Analytics. Det här schemat ska innehålla alla fältgrupper för fält som du planerar att samla in data om.
 
 Nu måste du använda samma fältgrupper från ditt Web SDK-schema och lägga till dem i ett nytt schema som du kan använda med Analytics-källkopplingen.
 
@@ -52,9 +52,9 @@ Det här schemat för Analytics-källkopplingen måste innehålla:
 
 * Fältgruppen Adobe Analytics ExperienceEvent-mall
 
-Så här skapar du XDM-schemat som ska användas med Analytics-källkopplingen:
+Så här skapar du det anpassade schema som ska användas med Analytics-källkopplingen:
 
-1. I Adobe Experience Platform börjar du skapa ett nytt XDM-schema enligt beskrivningen i [Skapa ett XDM-schema som ska användas med Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+1. I Adobe Experience Platform börjar du skapa ett nytt anpassat schema enligt beskrivningen i [Skapa ett anpassat schema som ska användas med Customer Journey Analytics Web SDK-implementeringen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
 
 1. Lägg till alla fältgrupper (inklusive anpassade fältgrupper) som ingår i det schema som du skapade för Web SDK-implementeringen.
 

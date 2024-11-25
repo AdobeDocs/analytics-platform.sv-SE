@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -26,23 +26,23 @@ ht-degree: 0%
 
 Du kan använda Analytics-källkopplingen för att hämta data från Adobe Analytics rapportsvit till Adobe Experience Platform. Dessa data kan sedan användas som historiska data i Customer Journey Analytics.
 
-Den här processen förutsätter att du vill [skapa ett XDM-schema när du uppgraderar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som passar behoven i din organisation och de plattformsspecifika program som du använder.
+I den här processen förutsätts att du vill [skapa ett anpassat schema som ska användas med Customer Journey Analytics Web SDK-implementeringen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som är anpassat efter behoven i din organisation och de specifika plattformsprogram som du använder.
 
 Om du vill använda Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics måste du:
 
-1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Skapa ett anpassat schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Om du inte redan har en Analytics-källanslutning skapar du Analytics-källkopplingen och mappar fält till XDM-schemat enligt beskrivningen nedan.
+1. Om du inte redan har en Analytics-källanslutning skapar du Analytics-källkopplingen och mappar fält till ditt anpassade Web SDK-schema, enligt beskrivningen nedan.
 
    eller
 
-   Om du redan har en Analytics-källkoppling mappar [fält från källkopplingen till ditt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+   Om du redan har en Analytics-källkoppling mappar [fält från källkopplingen till ditt anpassade Web SDK-schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
 ## Skapa Analytics-källkopplingen och kartfälten
 
-När ditt XDM-schema har skapats måste du skapa Adobe Analytics-källkopplingen som ska användas för historiska data. (Mer utförliga allmänna riktlinjer om hur du skapar en källanslutning finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
+När du har skapat ett anpassat schema måste du skapa Adobe Analytics-källkopplingen för att kunna använda för historiska data. (Mer utförliga allmänna riktlinjer om hur du skapar en källanslutning finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
 
 Så här skapar du en Adobe Analytics-källanslutning som ska användas för historiska data:
 
@@ -60,11 +60,11 @@ Så här skapar du en Adobe Analytics-källanslutning som ska användas för his
 
 1. Välj **[!UICONTROL Next]** i skärmens övre högra hörn.
 
-1. Välj **[!UICONTROL Custom schema]** och välj sedan det schema som du skapade i [Skapa ett XDM-schema som innehåller Adobe Analytics-fältgruppen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md). <!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
+1. Välj **[!UICONTROL Custom schema]** och välj sedan det schema som du skapade i [Skapa ett anpassat schema som innehåller Adobe Analytics-fältgruppen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md). <!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
 
    <!-- add screenshot -->
 
-1. Mappa varje Adobe Analytics-dimension till en anpassad XDM-schemadimension.
+1. Mappa varje Adobe Analytics-dimension till en anpassad schemadimension.
 
    1. Välj fliken **[!UICONTROL Custom]** i avsnittet **[!UICONTROL Map standard fields]**.
 
@@ -72,7 +72,7 @@ Så här skapar du en Adobe Analytics-källanslutning som ska användas för his
 
    ![mappa schemafält](assets/schema-mapping.png)
 
-   1. I **[!UICONTROL Source field]** väljer du ett Adobe Analytics-fält i fältgruppen Adobe Analytics ExperienceEvent-mall. I **[!UICONTROL Target field]** markerar du sedan XDM-fältet som du vill mappa det till.
+   1. I **[!UICONTROL Source field]** väljer du ett Adobe Analytics-fält i fältgruppen Adobe Analytics ExperienceEvent-mall. I **[!UICONTROL Target field]** markerar du sedan det anpassade fältet i XDM-schemat som du vill mappa det till.
 
       Alla Adobe Analytics-fält har inte ett motsvarande fält i XDM på grund av de inbyggda arkitekturskillnaderna mellan AppMeasurement och XDM.
 

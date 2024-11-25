@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -26,11 +26,11 @@ På samma sätt som med klassificeringsdata i Adobe Analytics är uppslagsuppsä
 
 När du använder Analytics-källkopplingen tillämpas vissa standardsökdatauppsättningar automatiskt vid rapporttillfället. Mer information finns i [Lägga till standardsökningar i dina datauppsättningar](/help/connections/standard-lookups.md).
 
-För att kunna klassificera data i Customer Journey Analytics när du använder Experience Platform Web SDK måste du skapa ett XDM-schema och en uppslagsdatauppsättning för varje dimension som innehåller data som du vill klassificera.
+För att kunna klassificera data i Customer Journey Analytics när du använder Experience Platform Web SDK måste du skapa ett anpassat schema och en uppslagsdatauppsättning för varje dimension som innehåller data som du vill klassificera.
 
-## Skapa ett XDM-schema som ska användas med uppslagsdatauppsättningen
+## Skapa ett anpassat schema som ska användas med uppslagsdatauppsättningen
 
-Skapa ett nytt XDM-schema för varje dimension som innehåller data som du vill klassificera i Customer Journey Analytics. När du skapar uppslagsdatauppsättningen i ett senare steg kommer den att referera till det här schemat.
+Skapa ett nytt anpassat schema för varje dimension som innehåller data som du vill klassificera i Customer Journey Analytics. När du skapar uppslagsdatauppsättningen i ett senare steg kommer den att referera till det här schemat.
 
 Upprepa den här processen för varje dimension som innehåller data som du vill klassificera.
 
@@ -58,7 +58,7 @@ Så här skapar du ett schema som ska användas med en uppslagsdatauppsättning 
 
 ## Skapa en uppslagsdatauppsättning
 
-När du har [skapat ett XDM-schema](#create-an-xdm-schema-for-lookup-datasets) som ska användas för en uppslagsdatauppsättning måste du skapa uppslagsdatauppsättningen och mappa den till ditt schema.
+När du har [skapat ett anpassat schema](#create-a-custom-schema-to-use-with-the-lookup-dataset) som ska användas för en uppslagsdatauppsättning måste du skapa uppslagsdatauppsättningen och mappa den till ditt schema.
 
 Upprepa den här processen för varje dimension som innehåller data som du vill klassificera.
 
@@ -100,7 +100,7 @@ Så här skapar du en uppslagsdatauppsättning som ska användas med ett schema 
 
 ## Lägg till uppslagsdatauppsättningen i anslutningen i Customer Journey Analytics
 
-När du har [skapat ett XDM-schema](#create-an-xdm-schema-for-lookup-datasets) och [skapat en uppslagsdatauppsättning](#create-a-lookup-dataset) måste du lägga till uppslagsdatauppsättningen i anslutningen i Customer Journey Analytics.
+När du har [skapat ett anpassat schema](#create-a-custom-schema-to-use-with-the-lookup-dataset) och [skapat en uppslagsdatauppsättning](#create-a-lookup-dataset) måste du lägga till uppslagsdatauppsättningen i anslutningen i Customer Journey Analytics.
 
 Upprepa den här processen för varje dimension som innehåller data som du vill klassificera.
 

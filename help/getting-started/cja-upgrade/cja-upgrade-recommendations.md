@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. Jämför data i Adobe Analytics från den gamla implementeringen till data i Customer Journey Analytics från den nya implementeringen och se till att du förstår alla skillnader och varför de finns. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
-1. (Valfritt) Hämta historiska data från Adobe Analytics med Analytics-källkopplingen:
+1. Hämta historiska data från Adobe Analytics med Analytics-källkopplingen:
 
    >[!NOTE]
    >

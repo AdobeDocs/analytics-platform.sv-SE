@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,17 @@ ht-degree: 0%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-När du uppgraderar till Customer Journey Analytics rekommenderar Adobe att du skapar ett nytt XDM-schema som bättre passar organisationens behov när du börjar använda andra plattformstjänster. Du kan också välja att använda ditt befintliga Adobe Analytics-schema.
+När du uppgraderar till Customer Journey Analytics rekommenderar Adobe att du skapar ett anpassat Experience Data Model-schema (XDM) som bättre passar organisationens behov när du börjar använda andra plattformstjänster. Du kan också välja att använda ditt befintliga Adobe Analytics-schema.
 
 Tänk på fördelarna och nackdelarna med var och en av dem.
 
-## Skapa ett XDM-schema som är anpassat till din organisation (rekommenderas)
+## Skapa ett anpassat schema som är anpassat till din organisation (rekommenderas)
 
-Adobe rekommenderar att du skapar ett nytt XDM-schema när du uppgraderar till Customer Journey Analytics.
+Adobe rekommenderar att du skapar ett anpassat schema när du uppgraderar till Customer Journey Analytics.
 
 | Fördelar | Nackdelar |
 |----------|---------|
-| <ul><p>Fördelarna med att uppdatera till ditt eget XDM-schema är bland annat:</p><ul><li>Ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder.</li><p>När du behöver ändra schemat behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></ul> | <p>Nackdelar med att uppdatera till ditt eget XDM-schema:</p><ul><li>Att uppdatera schemat är en tidsödande process som krävs innan du börjar skicka data till plattformen.</li></ul> |
+| <ul><p>Fördelarna med att uppdatera till ditt eget anpassade schema är bland annat:</p><ul><li>Ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder.</li><p>När du behöver ändra schemat behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></ul> | <p>Nackdelar med att uppdatera till ditt eget anpassade schema:</p><ul><li>Att uppdatera schemat är en tidsödande process som krävs innan du börjar skicka data till plattformen.</li></ul> |
 
 ## Använd ditt befintliga Adobe Analytics-schema
 
