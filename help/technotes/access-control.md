@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,16 @@ Utöver att läggas till som produktadministratör i produktprofilen **Customer 
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Skrivskyddad åtkomst för identitetsnamnutrymmen. |
 
   Mer information om behörigheter i Experience Platform finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+
+
+* Om Adobe Journey Optimizer har integrerats med CJA där det finns AJO Connections måste även behörigheterna Journeys läggas till för att få åtkomst till Connections:
+
+  | Kategori | Behörighet | Beskrivning |
+  |---|---|---|
+  | [!UICONTROL Journeys] | [!UICONTROL View Journeys Events, Data Sources and Actions] | Skrivskyddad åtkomst till resehändelser, anpassade reseåtgärder och datakällor för resan. |
+  | [!UICONTROL Journeys] | [!UICONTROL Manage Journeys Events, Data Sources and Actions] | Läs, skapa, redigera och ta bort händelser, källor eller åtgärder. |
+  | [!UICONTROL Journeys] | [!UICONTROL View Journeys] | Skrivskyddad åtkomst till resor. |
+  | [!UICONTROL Journeys] | [!UICONTROL Manage Journeys] | Läs, skapa, redigera och ta bort resor. |
 
 * Exportera datauppsättningar till [mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
