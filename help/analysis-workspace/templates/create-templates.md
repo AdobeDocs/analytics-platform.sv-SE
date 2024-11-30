@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 96844fae07734e979e9dd4689d5eded6a7a3b926
+exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
+source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -20,15 +21,13 @@ Personer i inloggningsföretaget kan använda de här företagsmallarna enligt b
 
 ## Skapa en mall
 
-<!-- is this only admins? -->
-
 Så här skapar du en ny mall som kan användas av personer i ditt inloggningsföretag:
 
 1. I Analysis Workspace skapar du ett projekt i det läge du vill.
 
 1. Välj [!UICONTROL **Projekt**] > **[!UICONTROL Save as template…]**.
 
-   ![Företagsrapport](assets/company-template-save.png)
+   ![Företagsmall](assets/company-template-save.png)
 
 1. Ange följande information i dialogrutan [!UICONTROL Save as template]:
 
@@ -45,11 +44,37 @@ Så här skapar du en ny mall som kan användas av personer i ditt inloggningsf�
 
 Mer information om hur användare kan skapa ett projekt baserat på en mall finns i [Skapa ett projekt baserat på en mall](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) i [Använda mallar](/help/analysis-workspace/templates/use-templates.md).
 
-## Hantera företagsmallar
+## Redigera eller ta bort mallar
 
-Administratörer kan ta bort, byta namn på, tagga och godkänna företagsmallar.
+Administratörer kan redigera eller ta bort företagsmallar.
 
-Så här visar och hanterar du företagsmallar:
+1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**] och sedan **[!UICONTROL _login_company_name _-mallar]**.
+
+1. Om du visar mallar i en kolumnvy ![kolumnvisningsikon](assets/column-view-icon.png):
+
+   1. Gå till mallen som du vill redigera eller ta bort och välj informationsikonen bredvid mallnamnet.
+
+      ![Information om företagsmall](assets/company-template-info.png)
+
+   1. Välj **[!UICONTROL Preview]**.
+
+   1. Välj ikonen Mer och välj sedan **[!UICONTROL Edit]** eller **[!UICONTROL Delete]**.
+
+      ![Redigera eller ta bort mall](assets/company-template-edit-delete.png)
+
+1. Om du visar mallar i en kortvy ![visas ikonen för kortvyn](assets/card-view-icon.png):
+
+   1. Leta reda på mallen som du vill redigera eller ta bort.
+
+      ![Vyn Företagsmallkort](assets/company-template-cards.png)
+
+   1. Välj ikonen Mer och välj sedan **[!UICONTROL Edit]** eller **[!UICONTROL Delete]**.
+
+      ![Redigera eller ta bort företagsmallkort](assets/company-template-card-edit-delete.png)
+
+## Byta namn på, tagga eller godkänna mallar
+
+Administratörer kan byta namn på, tagga och godkänna företagsmallar.
 
 1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**] och sedan **[!UICONTROL Projects tab]** i den vänstra listen.
 
@@ -61,24 +86,20 @@ Så här visar och hanterar du företagsmallar:
 
    Företagsmallar kan identifieras med hjälp av ![mallikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) som föregår mallnamnet.
 
-   <!-- Update screenshot -->
-
-   ![Visa företagsmallfilter](assets/company-reports-filter.png)
-
-1. Välj en eller flera företagsmallar i listan Mallar.
+   ![Visa företagsmallfilter](assets/company-templates-filter.png)
 
 1. Klicka på ikonen **..** bredvid en mall för att visa tillgängliga alternativ.
 
-   <!-- Update screenshot -->
+   ![Åtgärder för företagsmallar](assets/company-templates-actions.png)
 
-   ![Åtgärder för företagsmallar](assets/company-reports-actions.png)
+1. Välj **[!UICONTROL Rename]**, **[!UICONTROL Tag]** eller **[!UICONTROL Approve]**.
 
-1. Välj **[!UICONTROL Delete]**, **[!UICONTROL Rename]**, **[!UICONTROL Tag]** eller **[!UICONTROL Approve]**).
+   Du kan också ta bort en mall eller så kan du ta bort en mall enligt beskrivningen i [Redigera eller ta bort mallar](#edit-or-delete-templates).
 
 1. (Valfritt) Om du vill återgå till den vanliga vyn avmarkerar du **[!UICONTROL Company templates]** i filterfältet.
 
 ## Åtkomst till en företagsmall
 
-Precis som med mallar från Adobe kan du komma åt mallar som medarbetarna i organisationen har skapat.
+Precis som med mallar från Adobe kan användare i organisationen komma åt mallar som administratörer skapar.
 
 Mer information om hur du får åtkomst till en företagsmall finns i [Åtkomst till och kör en mall](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) i [Använd mallar](/help/analysis-workspace/templates/use-templates.md).

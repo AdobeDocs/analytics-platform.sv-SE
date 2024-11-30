@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
+source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
 workflow-type: tm+mt
-source-wordcount: '15370'
+source-wordcount: '15380'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
    * **[!UICONTROL Adobe templates]**: Visar alla mallar som tillhandahålls av Adobe.
 
-   * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för i din organisation.
+   * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för din organisation.
 
-     Företagsmallar kan bara skapas av en administratör.
+     Företagsmallar kan bara skapas av en administratör. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analysis-workspace/templates/create-templates.md).
 
 1. Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
 
@@ -77,13 +77,15 @@ Om du navigerar bort från en mall efter att ha gjort ändringar uppmanas du att
 
 Så här anpassar du en mall och sparar den som ett projekt:
 
-1. I Adobe Analytics väljer du fliken [!UICONTROL **Workspace**].
+1. I Customer Journey Analytics väljer du fliken [!UICONTROL **Workspace**].
 
 1. Välj fliken [!UICONTROL **Mallar**].
 
 1. Markera den mall som du vill visa. Välj till exempel mallen [!UICONTROL **Sidor**] under [!UICONTROL **Mest populära**].
 
    Sidmallen, som den visas i Analysis Workspace, visar två [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([stapeldiagram](/help/analysis-workspace/visualizations/bar.md) och [sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md)) samt en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). Det mätvärde som används är förekomster.
+
+   <!--update screenshot. The following is AA -->
 
    ![Sidmallar](assets/pages-report.png)
 
@@ -96,7 +98,7 @@ Så här anpassar du en mall och sparar den som ett projekt:
 
 1. (Valfritt) Spara mallen som ett projekt genom att välja [!UICONTROL **Projekt**] > [!UICONTROL **Spara**].
 
-   Mallen sparas som ett nytt projekt. Den ändrar inte den befintliga rapporten. Mer information om hur du sparar en rapport som ett projekt finns i [Spara projekt](/help/analysis-workspace/build-workspace-project/save-projects.md).
+   Mallen sparas som ett nytt projekt. Den ändrar inte den befintliga mallen. Mer information om hur du sparar projekt finns i [Spara projekt](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
 ## Tillgängliga mallar
 
