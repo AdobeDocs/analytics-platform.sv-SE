@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
+source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
 workflow-type: tm+mt
-source-wordcount: '15380'
+source-wordcount: '15430'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,11 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
      Företagsmallar kan bara skapas av en administratör. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analysis-workspace/templates/create-templates.md).
 
-1. Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
+1. Använd något av följande alternativ för att ändra hur du visar de tillgängliga mallarna:
+
+   * Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
+
+   * När du använder ikonen för kortvyn ![kortvyn ](assets/card-view-icon.png) kan du välja bland följande sorteringsordning: **[!UICONTROL Most recently used]**, **[!UICONTROL Most popular]**, **[!UICONTROL Alphabetical]**, **[!UICONTROL Categorical]**.
 
 1. I sökfältet börjar du skriva namnet på mallen som du vill söka efter och väljer den sedan i listan med mallar.
 
@@ -57,17 +61,23 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
    En lista över tillgängliga mallar finns i avsnittet [Tillgängliga mallar](#available-templates) nedan.
 
-1. (Valfritt) Visa och använd mallar som innehåller komponenter som inte är tillgängliga i datavyn. (Som standard är de enda mallarna som visas de som använder komponenter som är tillgängliga i datavyn.)
+1. (Valfritt) Visa och använd mallar som innehåller komponenter som inte är tillgängliga i datavyn. (Som standard visas mallar bara om de använder komponenter som är tillgängliga i datavyn.)
 
-   1. Markera (namn på filteralternativ?) för att visa mallar som kräver ytterligare komponenter.
+   1. Markera filterikonen.
 
-      <!-- add screenshot -->
+   1. Välj **[!UICONTROL Not ready for use]** om du vill visa mallar som kräver ytterligare komponenter.
 
-   1. Markera den mall som du vill använda.
-
-   1. Om mallen innehåller komponenter som inte är tillgängliga i datavyn visas ett meddelande som anger vilka komponenter som saknas. Klicka (button?) för att gå till datavyn där du automatiskt kan skapa dem. <!--how do you do this? Walk through the process -->
+      ![Använd en mall som saknar komponenter](assets/template-not-ready.png)
 
 1. Välj mallen för att skapa en rapport baserad på den mall du valde.
+
+1. (Villkorligt) Om mallen innehåller komponenter som inte är tillgängliga i datavyn visas dialogrutan Inkompatibel datavy, där det anges att datavyn är inkompatibel med mallen och vilka komponenter som saknas.
+
+   Gör något av följande:
+
+   * Välj en annan datavy i listrutan **[!UICONTROL Change data view]**.
+
+   * Välj **[!UICONTROL Continue anyway]** om du vill visa mallen med de komponenter som saknas.
 
 ## Skapa ett projekt baserat på en mall {#use-reports}
 
