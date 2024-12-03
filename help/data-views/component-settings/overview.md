@@ -5,7 +5,7 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
+source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Följande information beskriver de inställningar som används av en datavykompo
 | [!UICONTROL Component Name] | Obligatoriskt. Här kan du ange ett eget namn som visas i Analysis Workspace. Du kan byta namn på en komponent för att ge den ett namn som är specifikt för datavyn. |
 | [!UICONTROL Description] | Valfritt, men rekommenderas. Ger information om komponenten till andra användare. |
 | [!UICONTROL Tags] | Valfritt. Gör att du kan tagga komponenten med egna eller färdiga taggar för enklare sökning/filtrering i Analysis Workspace-gränssnittet. |
-| [!UICONTROL Context labels] | Valfritt. En nedrullningsbar lista med tillgängliga systemdefinierade etiketter som kan användas på en komponent. Dessa etiketter kan behövas för att definiera en uppsättning komponenter som du kan använda i experimenteringsrapporter med hjälp av [upplevelsepanelen](/help/analysis-workspace/c-panels/experimentation.md) i Analysis Workspace-projekt. Mer information finns i [Integrera med Journey Optimizer](/help/integrations/ajo.md#data-view) och [Målrapportering](/help/integrations/at.md). |
+| [!UICONTROL Context labels] | Valfritt. En nedrullningsbar lista med tillgängliga systemdefinierade etiketter som kan användas på en komponent. Dessa etiketter kan behövas för att definiera en uppsättning komponenter som du kan använda i experimentrapporter med hjälp av [panelen Experimentation](/help/analysis-workspace/c-panels/experimentation.md) i Analysis Workspace-projekt. Mer information finns i [Integrera med Journey Optimizer](/help/integrations/ajo.md#data-view) och [Målrapportering](/help/integrations/at.md). |
 | [!UICONTROL Schema field name] | Schemafältets namn. |
 | [!UICONTROL Dataset type] | Obligatoriskt. Ett icke-redigerbart fält som visar vilken datamängdstyp (händelse, sökning eller profil) som komponenten kommer från. |
 | [!UICONTROL Dataset] | Ett icke-redigerbart fält som visar vilken datamängd som komponenten kommer från. Det här fältet kan innehålla flera datauppsättningar. |
