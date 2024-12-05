@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: bf3eb96ac3c764c73f4131b8ddd05809994f08df
 workflow-type: tm+mt
-source-wordcount: '15430'
+source-wordcount: '15471'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,11 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
    En lista över tillgängliga mallar finns i avsnittet [Tillgängliga mallar](#available-templates) nedan.
 
-1. (Valfritt) Visa och använd mallar som innehåller komponenter som inte är tillgängliga i datavyn. (Som standard visas mallar bara om de använder komponenter som är tillgängliga i datavyn.)
+1. (Valfritt) Du kan visa mallar som innehåller komponenter som inte är tillgängliga i datavyn. (Som standard visas mallar bara om de använder komponenter som är tillgängliga i datavyn.)
+
+   >[!NOTE]
+   >
+   >   Innan du kan använda de här mallarna måste en administratör först lägga till de nödvändiga kontextetiketterna för de saknade komponenterna i datavyn. Mer information finns i [Lägga till saknade komponenter i datavyn för en viss mall](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) i [Använd mallar](/help/analysis-workspace/templates/create-templates.md).
 
    1. Markera filterikonen.
 
