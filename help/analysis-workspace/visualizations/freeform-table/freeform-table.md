@@ -4,9 +4,9 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 <!-- markdownlint-enable MD034 -->
 
 
-I Analysis Workspace är en ![Table](/help/assets/icons/Table.svg) **[!UICONTROL Freeform table]**-visualisering grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) i rader och kolumner för att skapa en anpassad tabell för analysen. När varje komponent släpps uppdateras tabellen omedelbart så att du snabbt kan analysera och fördjupa den.
+I Analysis Workspace är en ![Table](/help/assets/icons/Table.svg) **[!UICONTROL Freeform table]**-visualisering grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](/help/components/overview.md) i rader och kolumner för att skapa en anpassad tabell för analysen. När varje komponent släpps uppdateras tabellen omedelbart så att du snabbt kan analysera och fördjupa den.
 
 ![Frihandstabell med komponenter i rader och kolumner, inklusive besök och onlineorder för flera webbsidor.](assets/opening-section.png)
 
@@ -54,16 +54,16 @@ Du kan interagera med och anpassa en frihandstabell på flera olika sätt:
 ### Rader
 
 * Du kan snabbt [skapa en ny visualisering](../freeform-analysis-visualizations.md#visualize) från en eller flera rader med ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg).
-* Du kan anpassa fler rader till en enda skärm genom att justera projektets [visningstäthet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density).
+* Du kan anpassa fler rader till en enda skärm genom att justera projektets [visningstäthet](/help/analysis-workspace/build-workspace-project/view-density.md).
 * Varje dimensionsrad kan visa upp till 400 rader, innan sidnumreringen görs. Markera siffran bredvid **[!UICONTROL Rows]** i den första kolumnrubriken om du vill visa fler rader på en sida. Navigera till en annan sida med ![SparronRight](/help/assets/icons/ChevronRight.svg) i den första kolumnrubriken.
-* Du kan dela upp rader med ytterligare komponenter. Om du vill dela upp flera rader samtidigt markerar du flera rader och drar sedan nästa komponent ovanpå de markerade raderna. Läs mer om [uppdelningar](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa).
-* Rader kan [filtreras](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort) om du vill visa en reducerad uppsättning med objekt. Ytterligare inställningar är tillgängliga under [Radinställningar](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings).
+* Du kan dela upp rader med ytterligare komponenter. Om du vill dela upp flera rader samtidigt markerar du flera rader och drar sedan nästa komponent ovanpå de markerade raderna. Läs mer om [uppdelningar](/help/components/dimensions/t-breakdown-fa.md).
+* Rader kan [filtreras](/help/components/filters/filters-overview.md) om du vill visa en reducerad uppsättning med objekt. Ytterligare inställningar är tillgängliga under [Radinställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Kolumner
 
 * Komponenter kan staplas i kolumner för att skapa filtrerade mätvärden, tabbanalyser med mera.
-* Vyn för varje kolumn kan justeras under [kolumninställningarna](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/column-settings).
-* Flera åtgärder är tillgängliga via [snabbmenyn](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/right-click-for-workspace-efficiency). Menyn innehåller olika åtgärder beroende på om du markerar tabellrubriken, rader eller kolumner.
+* Vyn för varje kolumn kan justeras under [kolumninställningarna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
+* Flera åtgärder är tillgängliga via [snabbmenyn](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu). Menyn innehåller olika åtgärder beroende på om du markerar tabellrubriken, rader eller kolumner.
 
 
 ## Inställningar

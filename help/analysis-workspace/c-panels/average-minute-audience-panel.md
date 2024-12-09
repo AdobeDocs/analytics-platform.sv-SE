@@ -4,9 +4,9 @@ description: Hur man använder och tolkar den minimala målgruppspanelen för me
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 28a43ef92bee1359509c0c3f92d51a08653830c3
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 0%
 >title="Genomsnittlig minutmålgrupp för media"
 >abstract="Skapa en panel för att analysera den genomsnittliga minuten-publiken för visst innehåll, eller under en viss tidsperiod."
 
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -29,8 +28,6 @@ ht-degree: 0%
 >id="cja_workspace_mediaaverageminuteaudience_panel"
 >title="Genomsnittlig minutmålgrupp för media"
 >abstract="Visar prestandan för visst medieinnehåll eller för en anpassad tidsperiod.<br/><br/>**Allmänna parametrar **<br/>**Beräkna mätvärden för**: Välj det mätvärde som ska användas för panelen. Välj **Specifikt innehåll** om du vill analysera den genomsnittliga minuten-publiken för specifikt innehåll eller händelse utifrån innehållets längd. **Välj Anpassad tidsperiod** om du vill analysera hur den genomsnittliga minuten publiken ändras under en anpassad vald tidsperiod.<br/>**Rapporteringsdimension**: Välj att rapportera med **videonamn** för dimensionen **Innehåll-ID**. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde.<br/>**Kornighet**: Välj granularitet för rapporten. Endast tillgängligt när du har valt Anpassad tidsperiod som mått.<br/>**Filtrera innehåll efter (valfritt)**: Välj ett specifikt program, årstid, avsnitt eller välj en anpassad dimension för att filtrera innehållet.<br/><br/>**Avancerade inställningar **<br/>**Tabellinställningar**: Välj om du vill visa beräkningsvärden i tabellen.<br/>**Tidsåtgång för mått**: Välj vilken tid du vill använda för beräkning av specifikt innehåll. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="Specifikt innehåll"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="Anpassad tidsperiod"
 
 <!-- markdownlint-enable MD034 -->
 

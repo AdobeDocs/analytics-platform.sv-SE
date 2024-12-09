@@ -4,9 +4,9 @@ title: Vanliga fel och felsökning i Analysis Workspace
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: ec32b7bca6fd4fc4b2652d1265048ec788f19718
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '506'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ Några vanliga felmeddelanden du kan se när du använder Analysis Workspace:
 | [!UICONTROL This report is too complex. Please review best practices for building Analysis Workspace reports.] | Din rapporteringsbegäran är för stor och kan inte utföras. Medarbetare till det här felet är timeout på grund av att begäran är komplex. | Förenkla er begäran. Du kan t.ex. korta ned datumintervallet, förenkla filtervillkoren eller ta bort vissa kolumner eller rader i tabellen. Du kan också dela upp tabellen i separata begäranden. |
 | [!UICONTROL The data view is currently exceeding its reporting capacity. Please simplify the request or try again later.] | Din organisation försöker köra för många samtidiga begäranden mot en viss datavy. Medarbetare till det här felet är API-begäranden, schemalagda projekt och samtidiga användare som gör rapporteringsförfrågningar. | Sprid era förfrågningar och scheman för datavyn jämnare under dagen. |
 | [!UICONTROL A system error has occurred. Please log a Customer Care request under **[!UICONTROL Help > Submit Support Ticket]** and include your error code.] | Adobe har ett problem som måste lösas. | Skicka felkoden till kundtjänst. |
-| [!UICONTROL Error 500: Failed to load page] | Problem med ditt lokala nätverk, som brandväggsinställningar [för företag](https://experienceleague.adobe.com/en/docs/analytics/technotes/ip-addresses), bidrar till det här felet. Dessutom kan Adobe ha ett problem som måste lösas. | Försök logga in igen efter flera minuter. Om problemet kvarstår skickar du EIM-instans-ID-koden till Kundtjänst. |
+| [!UICONTROL Error 500: Failed to load page] | Problem med ditt lokala nätverk, som brandväggsinställningar [för företag](/help/technotes/ip-addresses.md), bidrar till det här felet. Dessutom kan Adobe ha ett problem som måste lösas. | Försök logga in igen efter flera minuter. Om problemet kvarstår skickar du EIM-instans-ID-koden till Kundtjänst. |
 | [!UICONTROL Your request failed as a result of too many columns or pre-configured rows.] | Tabellen innehåller för många frihandsceller (rad * kolumner). | Ta bort kolumner eller rader i tabellen eller dela upp tabellen i separata begäranden. |
 
 

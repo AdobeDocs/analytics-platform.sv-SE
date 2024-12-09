@@ -5,9 +5,9 @@ title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
    * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) på panelen där du vill lägga till visualiseringen och välj sedan den ikon som representerar den visualisering som du vill lägga till. Håll pekaren över ikonen för varje visualisering för att se namnet.
 
-   * Lägg till en [tom panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) och välj sedan den visualisering som du vill lägga till.
+   * Lägg till en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md) och välj sedan den visualisering som du vill lägga till.
 
    * Välj **[!UICONTROL Duplicate visualization]** eller **[!UICONTROL Copy visualization]** på snabbmenyn för en befintlig visualisering i ditt Analysis Workspace-projekt.
 

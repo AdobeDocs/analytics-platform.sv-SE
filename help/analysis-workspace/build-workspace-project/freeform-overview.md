@@ -5,9 +5,9 @@ title: Projektöversikt
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Projektlistan ➋ alla projekt som du äger och som har delats med dig. Listan i
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | När ett eller flera projekt är markerade visas ett blått åtgärdsfält längst ned i projektgränssnittet. Mer information finns i [Åtgärder](#actions). |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill gynna ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett projekt. |
 | **[!UICONTROL Title and description]** | Om du vill redigera projektet markerar du titellänken, som öppnar [Workspace-projektet](/help/analysis-workspace/home.md). Projekt som delas med dig markeras med ![Dela](/help/assets/icons/ShareAlt.svg). Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa en snabbmeny med mer information om projektet. Välj ![Mer](/help/assets/icons/More.svg) om du vill öppna en snabbmeny med åtgärder. Mer information finns i [Åtgärder](#actions). |
-| **[!UICONTROL Type]** | Ett Workspace-projekt, en ![FolderUser](/help/assets/icons/FolderUser.svg)-mapp eller ett [Mobile Scorecard](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
+| **[!UICONTROL Type]** | Ett Workspace-projekt, en ![FolderUser](/help/assets/icons/FolderUser.svg)-mapp eller ett [Mobile Scorecard](/help/mobile-app/home.md). |
 | **[!UICONTROL Tags]** | Vilka taggar som används i projektet. |
 | Schemalagd | Anger om ett projekt är schemalagt att skickas med e-post till mottagarna. Alternativen är ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** eller ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Se [Skicka projektdata till andra](/help/analysis-workspace/export/t-schedule-report.md). |
 | **[!UICONTROL Shared link (anyone)]** | Om ett projekt delas med någon, även med personer som inte har tillgång till Analysis Workspace. Alternativen är ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** eller ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. Mer information finns i [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) i [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md). |

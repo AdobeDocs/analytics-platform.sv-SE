@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    eller
 
-   Välj **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projektstrukturering](curate.md).
+   Välj **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](curate.md).
 
 ## Dela en länk till ett projekt
 
@@ -171,7 +171,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
    Om du väljer det här alternativet skapas en länk till projektet som kan delas med alla. Du kan när som helst inaktivera åtkomsten till projektet genom att inaktivera det här alternativet.
 
-   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange kontots förfallodatum](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html) i handboken för Analytics-administratörer.
+   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan bara överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser](/help/tools/asset-transfer/transfer-assets.md) i handboken för Analytics Admin.
 
 1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av Customer Journey Analytics-administratören):
 

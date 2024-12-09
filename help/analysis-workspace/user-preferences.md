@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '3355'
+source-wordcount: '3350'
 ht-degree: 0%
 
 ---
@@ -107,12 +107,12 @@ Vissa av dessa inställningar kan även anpassas för enskilda projekt i Analysi
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
 | **Visning** | | |
-|  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
-| | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj de visualiseringsfärgpaletter som används i Analysis Workspace och guidad analys. <ul><li> Kategoripalett: Används för många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde. Välj mellan alternativ som tillhandahålls av Adobe eller ange en anpassad palett som definieras av kommaavgränsade hexvärden.</li><li> Olika paletter: Används för tabellen Kohort i Analysis Workspace och vägledd analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten.<li> Sekventiell palett: Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt.</li></ul> |
+|  | [Visa densitet](/help/analysis-workspace/build-workspace-project/view-density.md) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
+| | [Färgpaletten](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Välj de visualiseringsfärgpaletter som används i Analysis Workspace och guidad analys. <ul><li> Kategoripalett: Används för många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde. Välj mellan alternativ som tillhandahålls av Adobe eller ange en anpassad palett som definieras av kommaavgränsade hexvärden.</li><li> Olika paletter: Används för tabellen Kohort i Analysis Workspace och vägledd analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten.<li> Sekventiell palett: Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt.</li></ul> |
 | **Data** | | |
-|  | [Datavy](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Välj de data där tabeller och visualiseringar hämtar data. <ul><li>Senaste (standard)</li><li>Specifik datavy vald från en lista</li></ul> |
-|  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Du kan aktivera [!UICONTROL Make date range components relative to panel calendar by default].</li></ul> |
-|  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
+|  | [Datavy](/help/analysis-workspace/c-panels/panels.md#data-view) | Välj de data där tabeller och visualiseringar hämtar data. <ul><li>Senaste (standard)</li><li>Specifik datavy vald från en lista</li></ul> |
+|  | [Kalender](/help/analysis-workspace/c-panels/panels.md#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Du kan aktivera [!UICONTROL Make date range components relative to panel calendar by default].</li></ul> |
+|  | [Paneltyp](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
 |  | Instansinventering | Aktivera [!UICONTROL Count repeat instances] om du vill ange om upprepade instanser ska räknas i rapporter. När du t.ex. aktiverar det här alternativet behandlas flera på varandra följande sidvyer som flera sidvyer. När det här alternativet är inaktiverat, räknas flera på varandra följande sidvyer till samma sida som en enda sidvy. <p>**Obs!** Den här inställningen påverkar bara vissa mått (till exempel sessioner) och den gäller inte för visualiseringar i flöde och utfall.</p> |
 |  | Nummerformat | <ul><li>1 000,00 (standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-avgränsningstecken | <ul><li>Komma (standard)</li><li>Semikolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Blanksteg</li><li>Tabb</li></ul> |

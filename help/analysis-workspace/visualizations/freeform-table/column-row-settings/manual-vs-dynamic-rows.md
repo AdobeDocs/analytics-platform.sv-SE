@@ -4,9 +4,9 @@ description: Så här interagerar du med dynamiska och statiska dimensionsobjekt
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Objekt med dynamiska dimensioner ändras över tid och är beroende av det mått
 
 När du släpper en dimension i en frihandstabell returneras dynamiska rader. Dynamiska rader representerar de översta objekten som motsvarar dimensionen för ett givet mått och en viss tidsperiod. Du kan också släppa en dimension i tabellkolumner på fri hand, och dimensionen utökas automatiskt till de fem främsta dimensionsobjekten.
 
-När du t.ex. drar dimensionen Webbläsartyp till tabellen, visas dimensionsobjekten för webbläsartyp (t.ex. Microsoft, Apple, Google) Återgå dynamiskt till tabellraderna. Om de utelämnas i en kolumn returneras dimensionsobjekten för de fem vanligaste webbläsartyperna dynamiskt.
+När du t.ex. drar dimensionen Webbläsartyp till tabellen, återgår de översta textobjekten (t.ex. Microsoft, Apple, Google) dynamiskt till tabellraderna. Om de utelämnas i en kolumn returneras dimensionsobjekten för de fem vanligaste webbläsartyperna dynamiskt.
 
 Dynamiska dimensionsobjekt har radfilteralternativet ![Filter](/help/assets/icons/Filter.svg) och ![Close](/help/assets/icons/Close.svg) och har **inte** låset ![LockClosed](/help/assets/icons/LockClosed.svg). <!--do they have the lock icon? --> När du klickar på ![Stäng](/help/assets/icons/Close.svg) bredvid ett dynamiskt dimensionsobjekt tillämpas ett filter automatiskt. Mer information om hur du tillämpar filter på tabeller finns i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
@@ -53,4 +53,4 @@ Dimensioner från olika dimensioner kan läggas till i samma tabell. Radhuvudet 
 Dynamiska och statiska rader fungerar på olika sätt i den totala frihandsraden. Som standard:
 
 * Dynamiska rader summeras på serversidan och dubblettmått som sessioner eller personer tas bort.
-* Statiska rader summeras på klientsidan och deduplicerar **inte**-mått. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumman**. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* Statiska rader summeras på klientsidan och deduplicerar **inte**-mått. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumman**. [Läs mer](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)

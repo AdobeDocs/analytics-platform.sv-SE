@@ -4,9 +4,9 @@ title: Workspace summor
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: b9abcf48c5334d71639d7d96558a63611a4a491c
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 
 ## Visa summor
 
-Under ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Column settings]** finns det alternativ för **[!UICONTROL Show totals]** och **[!UICONTROL Show grand total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen, vilket kan vara önskvärt om det inte går att använda summorna. I vissa [beräknade måttscenarier](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals).
+Under ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Column settings]** finns det alternativ för **[!UICONTROL Show totals]** och **[!UICONTROL Show grand total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen, vilket kan vara önskvärt om det inte går att använda summorna.
 
 
 [Statiska radsummor](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) fungerar annorlunda och styrs med ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Row Settings]**.
@@ -53,7 +53,7 @@ Se [Dynamiska och statiska dimensionsobjekt i frihandstabeller](column-row-setti
 | Frågor | Svar |
 |---|---|
 | Vilka *totalt* är procentsatserna för gråa kolumner baserade på? | Det här *totala*-värdet beror på inställningen **[!UICONTROL Percentages]** under **[!UICONTROL Row Settings]**:<ul><li>Beräkna procentandelar per kolumn - Den här inställningen är standard. Procentsatserna baseras på tabellsumman.</li><li>Beräkna procentandelar per rad - Procentsatserna baseras på totalsumman.</li></ul> |
-| Hur påverkar inställningen för **[!UICONTROL Include "No value"]** summorna? | Om inställningen **[!UICONTROL Include "No value"]** inte är markerad tas raden **[!UICONTROL No value]** bort från tabellen, tabellsumman, och fortsätter till alla beräknade mått som använder [*Total* metrisk typ](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetric-workflow/m-metric-type-alloc) |
+| Hur påverkar inställningen för **[!UICONTROL Include "No value"]** summorna? | Om inställningen **[!UICONTROL Include "No value"]** inte är markerad tas raden **[!UICONTROL No value]** bort från tabellen, tabellsumman, och fortsätter till alla beräknade mått som använder [*Total*-mätningstyper](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md). |
 | När anpassade tabellfilter tillämpas på en frihandstabell, gör jag då alla mina beräknade värden och villkorsstyrda formateringskonton för filtret? | Inte just nu. **[!UICONTROL Include "No value"]** är ett konto, men anpassade tabellfilter påverkar inte följande:<ul><li>Kolumnens maximala/minsta intervall som villkorsstyrd formatering använder ser ut över alla data.</li><li>Beräknade mätvärden som utnyttjar **[!UICONTROL Grand total]** mätningstyper.</li><li>Beräknade mätvärden med funktioner som beräknas över rader i en friformstabell: Kolumnsumma, Kolumnmax, Kolumnmin, Antal, Medel, Percentile, Kvarnvärde, Radantal, Standardavvikelse, Varians, Ackumulativt, Ackumulativt genomsnitt, Regressionsvarianter, T-poäng, T-test, Z-poäng och Z-test.</li></ul> |
 | I Beräknade mått, vad återspeglar den **[!UICONTROL Grand total]**-metriska typen? | **[!UICONTROL Grand total]** fortsätter att referera till **[!UICONTROL Grand total]** och reflekterar inte filter som används i en tabell eller **[!UICONTROL Table total]**. |
 | Vilken summa visas när data kopieras och klistras in från en frihandstabell eller hämtas via CSV? | Den totala raden återspeglar endast **[!UICONTROL Table total]** och respekterar inställningen för kolumnen **[!UICONTROL Show totals]**. |

@@ -4,9 +4,9 @@ title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ När du redigerar en textruta eller beskrivning kan du justera den markerade tex
 
 ## Lägg till hyperlänkar {#hyperlinks}
 
-Om du vill lägga till en hyperlänk markerar du texten och väljer ![Länk](/help/assets/icons/Link.svg) på menyn. Du kan använda hyperlänkar för att ge ytterligare hjälp till projektmottagarna. Hyperlänkar kan länka till externa webbplatser, dokumentationssidor, [Workspace-projekt, paneler eller visualiseringar](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links) med mera.
+Om du vill lägga till en hyperlänk markerar du texten och väljer ![Länk](/help/assets/icons/Link.svg) på menyn. Du kan använda hyperlänkar för att ge ytterligare hjälp till projektmottagarna. Hyperlänkar kan länka till externa webbplatser, dokumentationssidor, [Workspace-projekt, paneler eller visualiseringar](/help/analysis-workspace/curate-share/shareable-links.md) med mera.
 
 ![Textalternativ med länkikonen markerad.](assets/hyperlink.png)
 

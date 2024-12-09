@@ -4,9 +4,9 @@ title: Tillgänglighet i Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: dca8b99dad97e939e8021a681cb21ab14ca1ff87
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar uppifrån och ned och frå
 
 ### Kortkommandon (snabbtangenter)
 
-[!UICONTROL Analysis Workspace] erbjuder en mängd [kortkommandon](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys) för ett smidigare arbetsflöde.
+[!UICONTROL Analysis Workspace] erbjuder en mängd [kortkommandon](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för ett smidigare arbetsflöde.
 
 ## Stöd för skärmläsare och skärmförstorare
 
@@ -64,7 +64,7 @@ En skärmläsare läser upp text som visas på datorskärmen. Den läser även i
 
 [!UICONTROL Analysis Workspace] strävar efter WCAG 2.1-överensstämmelse, inklusive krav på färgkontrast.
 
-Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes).
+Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md).
 
 ## Nödvändig validering
 

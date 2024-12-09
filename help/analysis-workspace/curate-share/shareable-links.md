@@ -5,9 +5,9 @@ title: Skapa delningsbara länkar
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ Analysis Workspace erbjuder många sätt att dela ett projekt med dina användar
 
 ## Få en projektlänk att dela med andra Workspace-användare {#project-link}
 
-Om du vill dela en länk till ett projekt går du till det projekt du vill dela och väljer sedan [!UICONTROL **Dela**] > [!UICONTROL **Hämta projektlänk**] (eller **Dela**] > [!UICONTROL **Dela med Workspace-användare**] > [!UICONTROL **Dela via länk**). Användare som du delar länken med måste logga in.
+Om du vill dela en länk till ett projekt går du till det projekt du vill dela och väljer sedan Gå till **[!UICONTROL Share]** > **[!UICONTROL Get project link]** (eller **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]** > **[!UICONTROL Share by link]**). Användare som du delar länken med måste logga in.
 
-Om mottagaren av länken inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) får administratörer **[!UICONTROL Edit original]** och icke-administratörer **[!UICONTROL Edit copy]**-upplevelser.
+Om mottagaren av länken inte har tilldelats en [projektroll](/help/analysis-workspace/curate-share/share-projects.md) får administratörer **[!UICONTROL Edit original]** och icke-administratörer **[!UICONTROL Edit copy]**-upplevelser.
 
 ## Få en skrivskyddad länk att dela med vem som helst
 
