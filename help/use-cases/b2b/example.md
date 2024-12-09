@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
+source-git-commit: 912e6a3200cdc8463667266f9cae75e4f6278337
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
 
 # Ett exempel på ett B2B-projekt
 
-I den här artikeln beskrivs hur du konfigurerar, konfigurerar och rapporterar profilbaserade B2B-data i Customer Journey Analytics på profilnivå.
+I den här artikeln visas ett exempel på hur du vill rapportera persondata i Customer Journey Analytics korrekt i samband med en vanlig B2B-konfiguration. En sådan konfiguration ingår i [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  I användningsexemplet förklaras hur du konfigurerar, konfigurerar och rapporterar om profilbaserade B2B-data på profilnivå (människa) i Customer Journey Analytics.
 
 ## Anslutning
 
@@ -41,7 +41,7 @@ Definiera anslutningen så att den inkluderar alla relevanta B2B-datauppsättnin
 -->
 
 
-Förhållandet mellan B2B-sökscheman, profilschemat och händelseschemat definieras i B2B-konfigurationen i Experience Platform. Se Scheman i [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) och [Definiera en många-till-ett-relation mellan två scheman i Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+Förhållandet mellan B2B-sökscheman, profilschemat och händelseschemat definieras i B2B-konfigurationen i Experience Platform. Se Scheman i [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) och [Definiera en många-till-ett-relation mellan två scheman i Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Om du vill se till att en anslutning som stöder personbaserade sökningar av dina B2B-data är korrekt konfigurerad använder du följande bild för en översikt och följer dessa steg:
