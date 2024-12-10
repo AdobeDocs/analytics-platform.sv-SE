@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ När du vill använda snabbfilter bör du tänka på följande:
 
 ## Skapa
 
-Snabbfilter gäller för paneler. Du kan skapa ytterligare ett snabbfilter för alla paneler i Workspace-projektet. Alla användare i Analysis Workspace kan skapa snabbfilter.
+Snabbfilter gäller för paneler. Du kan skapa ett eller flera snabbfilter för alla paneler i ditt Workspace-projekt. Alla användare i Analysis Workspace kan skapa snabbfilter.
 
 Så här skapar du ett snabbfilter:
 

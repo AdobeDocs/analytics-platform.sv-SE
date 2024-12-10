@@ -4,9 +4,9 @@ description: Lär dig använda en kohorttabell för kohortanalys i Analysis Work
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Exempel på vad du kan göra med en [!UICONTROL Cohort table]:
 >[!IMPORTANT]
 >
 >[!UICONTROL Cohort Analysis] stöder inte icke-filterbara mått (inklusive beräknade värden), icke-heltalsmått (till exempel Intäkter) eller förekomster. Endast mätvärden som kan användas i filter kan användas i [!UICONTROL Cohort Analysis], och de kan bara ökas med 1 åt gången.
+
+Kohorttabeller i Customer Journey Analytics stöder dubbelbaserade (eller numeriska) mätvärden. Exempel: Purchase.Value (en dubbel) kan användas som Inkluderings-/returmått. Dessutom fördubblas också alla mätvärden som skickas till Adobe Experience Platform via Analytics Source Connector.
 
 ## Cohort table capabilities
 
