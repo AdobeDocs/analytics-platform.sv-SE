@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
+source-git-commit: ae0e7a906700522d7babc1d573a0b4cdbf1be6fc
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Vanligtvis stöder dataexport ett antal användningsfall. Varje användningsfall
 
 | Användningsexempel vid dataexport | Funktioner för Experience Platform och Customer Journey Analytics |
 |---|---|
-| **Säkerhetskopiera data**<br/> Behåll en fullständig kopia av dina digitala data för att uppfylla eller följa lagar och förordningar. | **Experience Platform**: [**Exportera datauppsättningar**](export-datasets.md)<br/> Exportera data som samlats in i Experience Platform direkt till molnmål enligt ett schema eller ad hoc.<br/>*För närvarande begränsad version, fullständig version för Customer Journey Analytics-kunder förväntas bli klar i juni 2024.* |
+| **Säkerhetskopiera data**<br/> Behåll en fullständig kopia av dina digitala data för att uppfylla eller följa lagar och förordningar. | **Experience Platform**: [**Exportera datauppsättningar**](export-datasets.md)<br/> Exportera data som samlats in i Experience Platform direkt till molnmål enligt ett schema eller ad hoc. |
 | **Dataverifiering**<br/> Utvärdera klickströmsdata för korrekt datainsamling. | **Experience Platform**: [**Query Service (Data Distiller) &amp; Export datasets**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL interface to execute ad hoc SQL queries using your favorite SQL tool to validate the data in your datasets.<br/><br/>**Customer Journey Analytics**: [**Exportera hela tabellen**](export-full-table.md)<br/> Verifiera bearbetade data från CJA med attribut och sessioner. |
 | **Data Lake-, Data Warehouse- eller BI-verktyg**<br/> Använd digitala data i dina egna BI-verktyg eller Data Lake för användning med ytterligare datauppsättningar. | **Customer Journey Analytics**: [**BI-tillägg**](bi-extension.md)<br/> Lägg till Customer Journey Analytics-bearbetade mått i datavisualiseringsverktyg som Power BI och kombinera med ytterligare data för anpassade rapporter <br/><br/>**Experience Platform**: [**Frågetjänst (Data Distiller) och exportdatamängder**](queryservice-export-datasets.md)<br> Generera anpassade klickströmsdata med SQL som ska levereras till molnmål. |
 | **Beredskap för AI/ML**<br/> Förbättra artificiell intelligens/Maskinininlärningsmodeller och uppgifter med data från Customer Journey Analytics. | **Customer Journey Analytics**: [**Exportera hela tabellen**](export-full-table.md)<br/> Exportera bearbetade mått och mått för Customer Journey Analytics till molnmål en gång eller återkommande, inklusive beräknade värden och segmentering.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) och Export datasets**](queryservice-export-datasets.md)<br/> Generera anpassade klickströmsdata med SQL för att utöka AI-/ML-modeller. |
