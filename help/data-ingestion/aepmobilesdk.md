@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '3085'
 ht-degree: 0%
 
 ---
 
-# Importera data via Mobile SDK
+# Hämta in data via Mobile SDK
 
 Den här snabbstartsguiden förklarar hur du kan importera spårningsdata för mobilappar direkt till Adobe Experience Platform med Adobe Experience Platform Mobile SDK och Edge Network. Använd sedan dessa data i Customer Journey Analytics.
 
@@ -239,7 +239,7 @@ Mer information om hur du konfigurerar ett datastam och hur du hanterar känslig
 
 ## Använd taggar
 
-Om du vill implementera kod på din webbplats för att samla in data använder du taggfunktionen i Adobe Experience Platform. Med tagghanteringslösningen kan ni driftsätta kod tillsammans med andra taggningskrav. Taggar erbjuder sömlös integrering med Adobe Experience Platform via tillägget Adobe Experience Platform Mobile SDK.
+Om du vill implementera kod på din webbplats för att samla in data använder du taggfunktionen i Adobe Experience Platform. Med tagghanteringslösningen kan ni driftsätta kod tillsammans med andra taggningskrav. Taggar är sömlöst integrerade med Adobe Experience Platform med tillägget Adobe Experience Platform Mobile SDK.
 
 ### Skapa en tagg
 
@@ -262,7 +262,7 @@ Om du vill konfigurera väljer du den nyligen skapade taggen i listan med [!UICO
 
 Lägg till tillägget Adobe Platform Edge Network i taggen så att du kan skicka data till Adobe Experience Platform (via din datastream).
 
-Så här skapar och konfigurerar du Adobe Experience Platform Mobile SDK-tillägget:
+Så här skapar och konfigurerar du tillägget Adobe Experience Platform Mobile SDK:
 
 1. Välj **[!UICONTROL Extensions]** i den vänstra listen. Du ser att tilläggen Mobile Core och Profile redan är tillgängliga.
 
@@ -392,7 +392,7 @@ Så här skapar och publicerar du en tagg:
 
    - Välj **[!UICONTROL Save & Build to Development]**.
 
-   Taggen sparas och byggs för din utvecklingsmiljö. En grön punkt visar att taggen har skapats på utvecklingsmiljön.
+   Taggen sparas och är utformad för din utvecklingsmiljö. En grön punkt visar att taggen har skapats på utvecklingsmiljön.
 
 4. Du kan välja **[!UICONTROL ...]** om du vill återskapa biblioteket eller flytta biblioteket till en staging- eller produktionsmiljö.
 
@@ -417,7 +417,7 @@ Så här får du kodanvisningar som förklarar hur du konfigurerar din mobilapp 
 
 3. Välj **[!UICONTROL Close]**.
 
-I stället för koden för utvecklingsmiljön kan du ha valt en annan miljö (testmiljö, produktion) baserat på var du håller på att distribuera Adobe Experience Platform Mobile SDK.
+I stället för koden för utvecklingsmiljön kan du ha valt en annan miljö (staging, production) baserat på var du håller på att distribuera Adobe Experience Platform Mobile SDK.
 
 Mer information finns i [Miljö](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?).
 

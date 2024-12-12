@@ -1,15 +1,15 @@
 ---
 title: Övergång från Analytics-källkopplingen till Web SDK för Customer Journey Analytics
-description: Lär dig hur du går över till Web SDK från Analytics-källkopplingen när du uppgraderar till Customer Journey Analytics
+description: Lär dig hur du går över till SDK för webben från Analytics-kontakten när du uppgraderar till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Det finns nackdelar med att använda Analytics-källkopplingen som enda implementering för Customer Journey Analytics.
 
-Om din organisation redan har uppgraderat till Customer Journey Analytics med enbart implementering av Analytics-källkopplingen bör du överväga att gå över till en implementering som använder Analytics-källkopplingen (för att ta över historiska data), i kombination med en ny implementering av Web SDK (för pågående datainsamling).
+Om din organisation redan har uppgraderat till Customer Journey Analytics med enbart implementering av Analytics-källkopplingen rekommenderar Adobe att du går över till en implementering som använder Analytics-källkopplingen (för historiska data), i kombination med en ny implementering av Web SDK (för kontinuerlig datainsamling).
 
 ## Förstå fördelar och nackdelar med att endast använda Analytics-källkopplingen
 
@@ -32,7 +32,7 @@ Information om för- och nackdelar med att använda Analytics-källkopplingen fi
 
 Här följer en högnivåprocess för övergång från exklusiv användning av Analytics-källkopplingen till en implementering som består av både Analytics-källkopplingen och en Web SDK-implementering:
 
-1. Skapa en Web SDK-implementering, enligt beskrivningen i [Detaljerade rekommenderade uppgraderingssteg](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) i artikeln [Uppgradera från Adobe Analytics till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
+1. Skapa en Web SDK-implementering enligt beskrivningen i [Detaljerade rekommenderade uppgraderingssteg](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) i artikeln [Uppgradera från Adobe Analytics till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 
    När implementeringen av Web SDK har konfigurerats fortsätter du med följande steg.
 

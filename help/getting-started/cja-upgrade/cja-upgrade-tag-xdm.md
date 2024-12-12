@@ -6,7 +6,8 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -21,7 +22,7 @@ ht-degree: 0%
 >
 >När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
 
-När du har [skapat taggen och lagt till Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md) måste du konfigurera den med dataelement och regler, enligt hur du vill spåra din webbplats och skicka data till Adobe Experience Platform. När du har konfigurerat dataelement och regler för taggen kan du skapa och publicera den.
+När du har [skapat taggen och lagt till Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md) måste du konfigurera den med dataelement och regler, beroende på hur du vill spåra din webbplats och skicka data till Adobe Experience Platform. När du har konfigurerat dataelement och regler för taggen kan du skapa och publicera den.
 
 ## Konfigurera dataelement
 
@@ -61,7 +62,7 @@ Så här definierar du ett dataelement för sidnamn:
 
 1. Välj **[!UICONTROL Save]**.
 
-   Nu vill du ställa in ett dataelement som refererar till det Experience Cloud-ID som automatiskt tillhandahålls av Adobe Experience Platform Web SDK och som är tillgängligt via tillägget Experience Cloud ID-tjänst.
+   Nu vill du ställa in ett dataelement som refererar till det Experience Cloud-ID som automatiskt tillhandahålls av Adobe Experience Platform Web SDK och som är tillgängligt via tillägget för Experience Cloud ID-tjänsten.
 
 1. Fortsätt med [ECID-dataelementet](#ecid-data-element).
 
@@ -194,7 +195,7 @@ Så här definierar du en regel:
 
 När du har definierat dataelement och regler måste du skapa och publicera taggen. När du skapar en biblioteksversion måste du tilldela den till en miljö. Byggnadens tillägg, regler och dataelement kompileras sedan och placeras i den tilldelade miljön. Varje miljö har en unik inbäddningskod som gör att du kan integrera den tilldelade inbäddningen på din plats.
 
-Adobe Experience Platform Tags stöder enkla till komplexa publiceringsarbetsflöden som passar din användning av Adobe Experience Platform Web SDK. Mer information finns i [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+Adobe Experience Platform Tags hanterar enkla till komplexa publiceringsflöden som passar din användning av Adobe Experience Platform Web SDK. Mer information finns i [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 Så här skapar och publicerar du en tagg:
 
@@ -220,9 +221,8 @@ Så här skapar och publicerar du en tagg:
 
 1. Välj **[!UICONTROL Save & Build to Development]**.
 
-   Taggen sparas och byggs för din utvecklingsmiljö. En grön punkt visar att taggen har skapats på utvecklingsmiljön.
+   Taggen sparas och är utformad för din utvecklingsmiljö. En grön punkt visar att taggen har skapats på utvecklingsmiljön.
 
 1. Du kan välja **[!UICONTROL ...]** om du vill återskapa biblioteket eller flytta biblioteket till en staging- eller produktionsmiljö.
 
    ![Publish - Bygg bibliotek](assets/build-library.png)
-
