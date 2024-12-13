@@ -4,9 +4,9 @@ description: Hur man använder och tolkar den minimala målgruppspanelen för me
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Panelen **[!UICONTROL Media average minute audience]** är bara tillgänglig för kunder som har köpt tillägget Direktuppspelning av mediasamling för Customer Journey Analytics.
+>Panelen **[!UICONTROL Media average minute audience]** är bara tillgänglig för kunder som har köpt Streaming Media Collection för Customer Journey Analytics.
 >
 >Kontakta din säljare eller ditt Adobe-kontoteam på Adobe för mer information.
 >
@@ -62,8 +62,7 @@ Så här använder du en **[!UICONTROL Media average minute audience]**-panel:
 
 1. Skapa en **[!UICONTROL Media average minute audience]**-panel. Mer information om hur du skapar en panel finns i [Skapa en panel](panels.md#create-a-panel).
 
-1. Se till att du väljer en datavy för panelen som har komponenter konfigurerade från tillägget Direktuppspelad mediasamling.
-
+1. Se till att du väljer en datavy för panelen som har konfigurerade komponenter från den direktuppspelande mediesamlingen.
 
 1. Ange [indata](#panel-input) för panelen.
 

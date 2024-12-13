@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
+source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
 workflow-type: tm+mt
-source-wordcount: '4196'
+source-wordcount: '4199'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,7 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Härledd dedupliceringsfunktion för fält | Dokumentation har lagts till i det härledda fältet [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate). |
 | Uppdaterade vanliga felmeddelanden | Mindre uppdateringar av de [vanliga felmeddelandena](/help/analysis-workspace/workspace-faq/error-messages.md) har gjorts. |
 | **Juni 2024** | |
-| Uppdaterat produktnamn som hänvisar till funktioner för direktuppspelande media | Ersatte instanser av&quot;Media Analytics&quot; och&quot;Streaming Media&quot; med namnet&quot;Streaming Media Collection Add-on&quot; när de refererar till en uppsättning funktioner för direktuppspelande media som samlar in strömmande mediedata och visar dem i Analysis Workspace. <p>Dessa uppdateringar är tillgängliga i hela dokumentationen för Customer Journey Analytics samt i dokumentationen för [tilläggsprogrammet för mediesamling](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
+| Uppdaterat produktnamn som hänvisar till funktioner för direktuppspelande media | Ersatte instanser av&quot;Media Analytics&quot; och&quot;Streaming Media&quot; med namnet&quot;Streaming Media Collection Add-on&quot; och&quot;Streaming Media Collection&quot; när de refererar till en uppsättning funktioner för direktuppspelande media som samlar in direktuppspelningsdata och visar dessa i Analysis Workspace. <p>Dessa uppdateringar är tillgängliga i hela dokumentationen för Customer Journey Analytics samt i [dokumentationen för direktuppspelad mediesamling](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Diagrambaserad utjämning | Uppdaterade och omstrukturerade [sammanfogningsdokumentation](/help/stitching/overview.md) med introduktionen av diagrambaserad sammanfogning. |
 | AI-assistenten | [dokumentation](../ai-assistant.md) har lagts till i AI-assistenten för Customer Journey Analytics. |
 | Omforma datauppsättningar för B2B-sökningar | Lagt till dokumentation om stöd för [personbaserade sökningar på B2B-data](/help/connections//transform-datasets-b2b-lookups.md) (inklusive konton, affärsmöjligheter, marknadsföringslistor och kampanjer) med transformering av B2B-sökningsdatauppsättningar. |

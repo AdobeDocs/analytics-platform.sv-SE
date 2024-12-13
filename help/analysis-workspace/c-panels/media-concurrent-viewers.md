@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Medievisningsprogram för 
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Så här använder du en **[!UICONTROL Media concurrent viewers]**-panel:
 
 1. Skapa en **[!UICONTROL Media concurrent viewers]**-panel. Mer information om hur du skapar en panel finns i [Skapa en panel](panels.md#create-a-panel).
 
-1. Se till att du väljer en datavy för panelen som har komponenter konfigurerade från tillägget Direktuppspelad mediasamling.
+1. Se till att du väljer en datavy för panelen som har konfigurerade komponenter från den direktuppspelande mediesamlingen.
 
 1. Ange [indata](#panel-input) för panelen.
 

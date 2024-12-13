@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Använd [tabellen ovan](#understand-the-differences) för att förstå skillnade
 
 Analyser av Journey Optimizer resor på arbetsytan i Journey ger djupgående, användbara insikter om hur människor interagerar med en resa.
 
-När du analyserar en Journey Optimizer-resa på en arbetsyta visas resan med samma ordning, sekvens och struktur som i Journey Optimizer. Om du kan göra ändringar i en resa på en arbetsyta i en resa synkroniseras inte längre [ändringar från Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
+När du analyserar en Journey Optimizer-resa på en arbetsyta visas resan med samma ordning, sekvens och struktur som i Journey Optimizer. Om du gör betydande ändringar i en resa på en arbetsyta i en resa synkroniseras inte längre [ändringar från Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
 
 ### Fördelar med att analysera Journey Optimizer resor med arbetsytan i Journey
 
@@ -152,7 +152,7 @@ Att använda Journey Canvas för att analysera resor som skapats i Journey Optim
 
 När du har skapat en analys av en Journey Optimizer-resa på arbetsytan i Journey synkroniseras data endast i en riktning, från Journey Optimizer till arbetsytan i Journey. Det innebär att ändringar som görs på en resa på arbetsytan i Journey aldrig återspeglas i Journey Optimizer.
 
-Dessutom synkroniseras ändringar som görs på en resa i Journey Optimizer endast med arbetsytan på resan om resan inte ändras på arbetsytan på resan. När du har ändrat en resa på en arbetsyta på en resa på en arbetsyta på en resa, återspeglas inte de ändringar du gör på resan i Journey Optimizer på arbetsytan på resan. Om du vill se ändringarna återspeglas i arbetsytan på resan kan du ta bort och [återskapa resan på arbetsytan på resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Dessutom synkroniseras ändringar som gjorts på en resa i Journey Optimizer med arbetsytan [endast om resan inte har ändrats avsevärt på arbetsytan ](#differences-after-modifying-a-journey-in-journey-canvas). När du har ändrat en resa på en arbetsyta på en resa på en arbetsyta på en resa, återspeglas inte de ändringar du gör på resan i Journey Optimizer på arbetsytan på resan. Om du vill se ändringarna återspeglas i arbetsytan på resan kan du ta bort och [återskapa resan på arbetsytan på resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 ### Skillnader efter ändring av en resa på arbetsytan i en resa {#differences-after-modifying}
 

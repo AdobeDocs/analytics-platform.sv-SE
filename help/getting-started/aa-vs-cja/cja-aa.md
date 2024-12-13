@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
+source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2310'
 ht-degree: 1%
 
 ---
@@ -68,11 +68,11 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **API-åtkomst för rapportering** | Fullt stöd; tillgängligt via [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/). |
 | **Schemalagda rapporter/projekt** | Fullt stöd |
 | **Segment** | Fullt stöd. Nu kallat &quot;Filter&quot; - observera att inga befintliga segment i Analysis Workspace importeras till Customer Journey Analytics. |
-| **Tillägget för direktuppspelad mediesamling** | Direktuppspelande mediedata är tillgängliga med Analytics-källkopplingen som en del av panelen Media Concurrent Viewer och panelen Media Playback Time Spent (Tid för uppspelning i Workspace). |
+| **Direktuppspelad mediasamling** | Direktuppspelande mediedata är tillgängliga med Analytics-källkopplingen som en del av panelen Media Concurrent Viewer och panelen Media Playback Time Spent (Tid för uppspelning i Workspace). |
 | **Datakällor på sammanfattningsnivå** | Fullt stöd |
 | **Virtuella rapportsviter** | Fullt stöd. [Datavyer](/help/data-views/create-dataview.md) anropas nu. |
 | **Komponentstrukturering för virtuell rapportserie** | Fullt stöd. Nu en del av datavyer. |
-| **Enhet, webbläsare, referens, teknikdimensioner** | Stöds för både [Analytics-källanslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar och för datauppsättningar som genererats av WebSDK. Mer information finns i [dokumentationen om vilka Analytics-variabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). Om du använder Experience Platform Web SDK-datainsamling stöds för närvarande inte enheter och dimensioner baserade på enhetssökningen. Framtida stöd planeras. Information om hur du lägger till enhets- och webbläsarsökningar i Web SDK-dataströmmen finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
+| **Enhet, webbläsare, referens, teknikdimensioner** | Stöds för både [Analytics-källanslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-baserade datauppsättningar och för datauppsättningar som genererats av WebSDK. Mer information finns i [dokumentationen om vilka Analytics-variabler som stöds via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). Om du använder datainsamling från Experience Platform Web SDK stöds för närvarande inte enheter och dimensioner baserade på enhetssökning. Framtida stöd planeras. Mer information om hur du lägger till enhets- och webbläsarsökningar i SDK-dataströmmen finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 
 ## Stöds på ett nytt sätt {#new-support}
 
@@ -94,7 +94,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Geosegmenteringsdimensioner** | [Fullt stöd](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html) |
 | **Diagrambaserad utjämning** | Genom [Diagrambaserad Stitching](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview#graph-based-stitching) kan du utnyttja kraften i identitetsdiagrammet i [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) för att höja datauppsättningarna till den önskade identiteten. |
 | **Larm** | Processen att använda [varningar](/help/components/c-intelligent-alerts/intelligent-alerts.md) i Customer Journey Analytics är nästan identisk med att använda varningar i Adobe Analytics. Det finns dock [viktiga skillnader](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/alerts/alerts-feature-comparison). |
-| **IP-förfalskning** | För Customer Journey Analytics-kunder som använder Analytics-källkopplingen för att fylla i data från Adobe Analytics till Customer Journey Analytics: IP-begränsningsinställningar som används i Adobe Analytics flödar igenom till Customer Journey Analytics-data. Du kan kontrollera de här inställningarna i Adobe Analytics efter behov.<p>För Customer Journey Analytics-kunder som använder Experience Platform Web SDK fylls data i direkt i Platform och Customer Journey Analytics. Du kan använda Data Prep för datainsamling i Platform för att konfigurera regler som döljer IP-adressen baserat på ditt företags krav. |
+| **IP-förfalskning** | För Customer Journey Analytics-kunder som använder Analytics-källkopplingen för att fylla i data från Adobe Analytics till Customer Journey Analytics: IP-begränsningsinställningar som används i Adobe Analytics flödar igenom till Customer Journey Analytics-data. Du kan kontrollera de här inställningarna i Adobe Analytics efter behov.<p>För Customer Journey Analytics-kunder som använder Experience Platform Web SDK kan data fyllas i direkt på Platform och Customer Journey Analytics. Du kan använda Data Prep för datainsamling i Platform för att konfigurera regler som döljer IP-adressen baserat på ditt företags krav. |
 | **Marknadskanaler** | När du använder Analytics-källkopplingen flödar Marketing Channels-data in i Customer Journey Analytics via den kopplingen. Reglerna för marknadsföringskanaler har konfigurerats i traditionella Adobe Analytics och vissa regler stöds inte. Mer information finns i [Customer Journey Analytics Marketing Channel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html). <br/>För WebSDK-implementeringar stöds regler för kanalbearbetning i rapporttid via [Härledda fält](../../data-views/derived-fields/derived-fields.md). |
 | **Merchandising-variabelbeständighet** | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | **Måttborttagning av dubbletter** | Nu konfigurerat för mätvärden i datavyer. Metrisk borttagning av dubbletter sker på person- eller sessionsnivå i stället för på data-, data- eller anslutningsnivå. |
