@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: bf3eb96ac3c764c73f4131b8ddd05809994f08df
+source-git-commit: 3ae10f81cb38500c035811542bc761f06688a130
 workflow-type: tm+mt
-source-wordcount: '15471'
+source-wordcount: '17950'
 ht-degree: 0%
 
 ---
@@ -152,10 +152,23 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 
 ### Mest populära {#most-popular}
 
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--training"
+>id="aa-template--unitsOvertimeReport"
+>title="Visa det totala antalet enheter som köpts i alla order. Data visas över en tidsperiod och jämförs med tidigare perioder."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur enhetsförsäljningen ökar eller minskar över tid. Du kan använda ett segment för att lära dig vilka kunder eller geografiska områden som köper flest enheter och hur enhetsförsäljningen trendar över tid.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera effekten av en nyligen lanserad marknadsföringskampanj genom att jämföra enhetsförsäljningen före och efter att kampanjen har startats. Du kan också jämföra försäljningen per år under helger.<br/>Den här mallen använder måtten Dag och Enheter."
+
+<!-- markdownlint-enable MD034 -->
+
+<!--both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--training"
 >title="Mall för självstudiekurser"
 >abstract="Lär dig vanliga Analysis Workspace-termer och steg för att skapa din första analys."
 
@@ -164,7 +177,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--pagesRankedReport"
+>id="template--pagesRankedReport"
 >title="Identifiera de mest populära och minst populära sidorna."
 >abstract="**Detta kan hjälpa dig** att bättre förstå din målgrupp och vilken typ av information de är mest intresserade av.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en mängd saker, till exempel justera sidmetadata för att öka synligheten på sidor som visas i mindre grad, eller lägga tid på att förbättra innehållet på de sidor som visas mest.<br/>Den här mallen använder måtten Siddimension och Sidvyer."
 
@@ -173,7 +186,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--pageViewsOvertimeReport"
+>id="template--pageViewsOvertimeReport"
 >title="Visa det totala antalet sidvisningar. Data visas över en tidsperiod och jämförs med tidigare perioder. "
 >abstract="**Detta kan hjälpa dig** att bättre förstå hur trafiken på din webbplats kan öka eller minska med tiden.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera effekten av en nyligen lanserad marknadsföringskampanj genom att jämföra webbplatstrafiken före och efter att kampanjen har startats. Eller jämför semestertrafiken år för år.<br/>Den här mallen använder måtten Dag och Sidvisning."
 
@@ -182,7 +195,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--visitsOvertimeReport"
+>id="template--visitsOvertimeReport"
 >title="Visa det totala antalet besök. Data visas över en tidsperiod och jämförs med tidigare perioder."
 >abstract="**Detta kan hjälpa dig** att bättre förstå hur trafiken på din webbplats kan öka eller minska med tiden.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera effekten av en nyligen lanserad marknadsföringskampanj genom att jämföra webbplatstrafiken före och efter att kampanjen har startats. Eller jämför semestertrafiken år för år.<br/>Den här mallen använder måtten Dag och Besök."
 
@@ -191,7 +204,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--visitorsOvertimeReport"
+>id="template--visitorsOvertimeReport"
 >title="Visa det totala antalet unika besökare. Data visas över en tidsperiod och jämförs med tidigare perioder. "
 >abstract="**Detta kan hjälpa dig** att bättre förstå hur webbplatsens räckvidd och målgruppsstorlek ökar eller minskar över tid eller jämfört med en tidigare period.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera om en nyligen lanserad marknadsföringskampanj lyckades attrahera nya personer till webbplatsen genom att jämföra unika besökare före och efter det att kampanjen startades. Eller så kan du jämföra antalet personer som ska besöka sajten under helger år för år.<br/>Den här mallen använder måtten Dag och Unika besökare. "
 
@@ -200,7 +213,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--keyMetricsReport"
+>id="template--keyMetricsReport"
 >title="Visa en rapport som visar sidvisningar, besök och unika besökarmått sida vid sida. Data visas över en tidsperiod och jämförs med tidigare perioder."
 >abstract="**Detta kan hjälpa dig** att jämföra dessa viktiga mätvärden för att få en mer fullständig bild av antalet unika personer som besöker webbplatsen, antalet gånger som sidorna besöktes och antalet sessioner.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera det genomsnittliga antalet sidor som varje person tittar på när han/hon besöker webbplatsen under en viss vecka eller månad, och hur detta ändrades under vissa tider på året eller före och efter det att marknadsföringskampanjer kördes. <br/>Den här mallen använder måtten Dag, Sidvisning, Besök och Unika besökare."
 
@@ -209,7 +222,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--siteSectionRankedReport"
+>id="template--siteSectionRankedReport"
 >title="Se de populäraste eller mest högpresterande avsnitten på webbplatsen."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilka avsnitt på webbplatsen som är mest besökta.<br>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka produkter eller tjänster som du tillhandahåller och som ger mest intresse.<br/>Den här mallen använder dimensionen Platsavsnitt och Visits-måttet."
 
@@ -218,7 +231,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--next-page-report"
+>id="template--next-page-report"
 >title="Se de vanligaste platserna där man besöker en viss plats omedelbart efter besök eller omedelbart."
 >abstract="**Detta kan hjälpa dig** att förstå hur trafiken flyttas från en viss sida till andra delar av webbplatsen och förstå de sökvägar som användarna tar för att komma fram till en viss sida.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera om siddesignen eller layouten kan optimeras för att dirigera människor till mer önskade sidor, som en sida för att göra ett köp eller lämna en granskning. Eller utvärdera om informationen på den aktuella sidan kan ge den riktning eller de åtgärder som folk vill ha när de kommer från föregående sidor. Du kan också bedöma om sidor som inte visas som tidigare sidor behöver mer framträdande länkar till den aktuella sidan.<br/>Den här mallen använder panelen Nästa eller Föregående objekt."
 
@@ -227,7 +240,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--campaignRankedReport"
+>id="template--campaignRankedReport"
 >title="Visa länkarna som lyckades mest när det gällde att köra trafik till er webbplats."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vilka spårningskoder (och de länkar de är kopplade till) som var de mest använda för att komma åt din webbplats.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att justera din strategi för var du lägger till länkar till din webbplats.<br/>Den här mallen använder spårningskoddimensionen och Visits-måttet."
 
@@ -236,7 +249,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--productsRankedReport"
+>id="template--productsRankedReport"
 >title="Visa antalet order per produkt. Data visas över en tidsperiod."
 >abstract="**Detta kan hjälpa dig** att förstå vilka produkter som har störst eller lägst efterfrågan.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att justera dina marknadsföringsstrategier för att marknadsföra högpresterande produkter eller för att förbättra eller avbryta underpresterande produkter. Du kan också justera produktlagret baserat på din analys av data.<br/>Den här mallen använder produktdimensionen och ordermåttet."
 
@@ -245,7 +258,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--lastTouchChannelRankedReport"
+>id="template--lastTouchChannelRankedReport"
 >title="Visa de senaste marknadsföringskanalerna som besökarna matchar under sin engagemangsperiod (30 dagar som standard)."
 >abstract="**Detta kan hjälpa dig** att förstå vilka marknadsföringskanaler som var mest effektiva när det gäller att ta personer till din webbplats som resulterar i konverteringar.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att tilldela mer resurser till högpresterande kanaler eller tilldela färre resurser till underpresterande kanaler.<br/>Den här mallen använder dimensionen Senaste beröringskanal och det unika besökarmåttet."
 
@@ -254,7 +267,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--lastTouchChannelDetailRankedReport"
+>id="template--lastTouchChannelDetailRankedReport"
 >title="Visa information om de senaste marknadsföringskanalerna som besökarna matchar under sin engagemangsperiod (30 dagar som standard)."
 >abstract="**Detta kan hjälpa dig** att förstå inte bara vilka marknadsföringskanaler som var mest effektiva när det gäller att ta personer till din webbplats som resulterar i konverteringar, utan även information om dessa marknadsföringskanaler. Om en besökare till exempel kom till din webbplats och matchade med marknadsföringskanalen Betald sökning kan du använda kanalinformationen för att se vilken sökmotor som användes eller vilket nyckelord de sökte efter.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att tilldela mer resurser till högpresterande kanaler eller tilldela färre resurser till underpresterande kanaler.<br/>Den här mallen använder dimensionen Senaste beröringskanaldetalj och det unika besökarmåttet. "
 
@@ -263,7 +276,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--revenueOvertimeReport"
+>id="template--revenueOvertimeReport"
 >title="Visa det monetära beloppet för produkter som köpts i alla order. Data visas över en tidsperiod och jämförs med tidigare perioder."
 >abstract="**Detta kan hjälpa dig** att förstå hur intäkterna ökar eller minskar över tid. Du kan kombinera det här måttet med vilken dimension som helst för att lära dig vilka dimensionsobjekt som har bidragit till intäkterna.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel framtida projektintäkter baserade på tidigare trender. Ni kan också lägga till ytterligare en dimension, som spårningskoddimensionen, för att lära er vilka kampanjer som genererar störst intäkter.<br/>Den här mallen använder måtten Dag och Intäkter."
 
@@ -272,7 +285,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--ordersOvertimeReport"
+>id="template--ordersOvertimeReport"
 >title="Visa det totala antalet inköpshändelser. Data visas över en tidsperiod och jämförs med tidigare perioder."
 >abstract="**Detta kan hjälpa dig** att bättre förstå hur intresset för dina produkter och tjänster ökar eller minskar över tid. Du kan använda ett segment för att lära dig vilka kunder eller geografiska områden som gör mest beställningar och hur dessa beställningar trendar över tid.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera effekten av en nyligen lanserad marknadsföringskampanj genom att jämföra order före och efter det att kampanjen har startats. Eller så kan du jämföra årsavgiftsbeställningar.<br/>Den här mallen använder måtten Dag och Order."
 
@@ -299,6 +312,127 @@ Följande mallar är tillgängliga:
 
 ### Webb: Engagemang {#web-engagement}
 
+<!--AA only-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--timeSpentVisitOvertimeReport"
+>title="Se den genomsnittliga tid besökare tillbringar på er webbplats under varje besök. Data visas över en tidsperiod och jämförs med tidigare perioder."
+>abstract="**Detta kan hjälpa dig** att bättre förstå besökarnas engagemangsnivåer och hur mycket tid besökarna spenderar på webbplatsen.<br/>**Baserat på vad du lär dig kan du** göra något annat, som att utvärdera om ändringar på din webbplats leder till att besökarna spenderar mer tid på webbplatsen.<br/>Den här mallen använder måtten Dag och Tid per besök (sekunder)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--timePriorRankedReport"
+>title="Visa den genomsnittliga tiden som användare tillbringar före en lyckad händelse."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur lång tid det tar för besökarna att utföra en önskad åtgärd, till exempel göra ett köp.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera om ändringar av din webbplats förbättrar besökarens förmåga att snabbt nå en lyckad händelse.<br/>Den här mallen använder dimensionen Tid före händelse och måttet för unika besökare."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--falloutReport"
+>title="Visa var personer lämnar eller fortsätter via en fördefinierad sidsekvens."
+>abstract="**Det här kan hjälpa dig** att bättre förstå var personer faller bort från användarresan.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera konverteringsgraden via specifika processer på webbplatsen (till exempel en köp- eller registreringsprocess) eller analysera korrelationer mellan händelser på webbplatsen. (Exempel: hur många procent av de personer som tittade på din integritetspolicy gick vidare till att köpa en produkt.) Du kan också använda den här mallen för att utföra jämförelser sida vid sida av två olika segment i samma rapport.<br/>Den här mallen använder utfallsvisualisering."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--cross-device-analysis"
+>title="Se vilka enheter som används i alla delar av resan."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur många som interagerar med ert varumärke, vilka typer av enheter de använder och hur deras användning av flera enheter påverkar deras upplevelse. Hur ofta startar man en uppgift på en mobil enhet och sedan övergår till en stationär dator för att slutföra en uppgift? Vilka är de vanligaste sökvägarna som användare tar från en enhet till en annan? Var faller de? Var lyckas de? Och så vidare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera vissa delar av användarresan för en mobil upplevelse.<br/>Den här mallen använder värdena för Flödesvisualisering, Utfallsvisualisering, Kohortanalys, Personmått och Unika enheter."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--web-retention"
+>title="Se vilka era lojala användare är och vad de gör på er webbplats."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur många gånger den genomsnittliga personen besöker din webbplats, hur ofta personer återvänder till webbplatsen och hur många dagar som förflutit mellan återkomstbesöken.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera vilket innehåll som är mest effektivt för att ta personer tillbaka till webbplatsen.<br/>Den här mallen använder Visits-måttet och det unika besökarmåttet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--audio-consumption-template"
+>title="Se trender och de viktigaste mätvärdena för medieanvändning på alla digitala enheter."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur besökare konsumerar ljudinnehåll på din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera vilket innehåll som konsumeras mest.<br/>Den här mallen använder Visits-måttet och det unika besökarmåttet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--media-recency-frequency-loyalty"
+>title="Se trender och de viktigaste mätvärdena för mediekonsumtion på alla digitala enheter."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur många gånger den genomsnittliga personen besöker din webbplats, hur ofta personer återvänder till webbplatsen och hur många dagar som förflutit mellan återkomstbesöken.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera vilket innehåll som är mest effektivt för att ta personer tillbaka till webbplatsen.<br/>Den här mallen använder Visits-måttet och det unika besökarmåttet."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--reloadsRankedReport"
+>title="Visa det antal gånger en dimensionsobjekt fanns under en omladdning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning."
+>abstract="**Detta kan hjälpa dig** att identifiera när det kan uppstå problem på en viss sida som uppmanar en besökare att läsa in sidan igen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sidor som har problem som behöver åtgärdas.<br/>Den här mallen använder måttet Läs in igen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--timeSpentPageRankedReport"
+>title="Se den genomsnittliga tid besökare tillbringar på er webbplats under varje besök. Data visas över en tidsperiod och jämförs med tidigare perioder."
+>abstract="**Detta kan hjälpa dig** att bättre förstå besökarnas engagemangsnivåer och hur mycket tid besökarna spenderar på webbplatsen.<br/>**Baserat på vad du lär dig kan du** göra något annat, som att utvärdera om ändringar på din webbplats leder till att besökarna spenderar mer tid på webbplatsen.<br/>Den här mallen använder måtten Dag och Tid per besök (sekunder)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--entryPageOriginalRankedReport"
+>title="Visa de populäraste sidorna som andra kommer åt när de besöker webbplatsen för första gången under besökarens livstid."
+>abstract="**Detta kan hjälpa dig** att bättre förstå vilka sidor som genererar mest trafik till din webbplats eller förstå mer om de första visningar besökarna har på din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera den första upplevelsen som andra personer kommer in på webbplatsen, eller se till att de sidor som de första användarna ser när de kommer in på din webbplats är välkomna och tillhandahåller nödvändiga länkar till andra delar av din webbplats.<br/>Den här mallen använder måttet för sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--singlePageVisitsRankedReport"
+>title="Visa antalet besök som bestod av en enda unik sida."
+>abstract="**Detta kan hjälpa dig** att bättre förstå besökarnas engagemangsnivåer och hur mycket tid besökarna spenderar på webbplatsen.<br/>**Baserat på vad du lär dig kan du** göra något annat, som att utvärdera om ändringar på din webbplats leder till att besökarna spenderar mer tid på webbplatsen.<br/>Den här mallen använder dimensionen för besök på en sida."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--sitePerformanceOverview"
+>title="Visa prestandadata för din Adobe Experience Manager-webbplats."
+>abstract="**Det här kan hjälpa dig** att bättre förstå värdeberäkning från Adobe Experience Manager.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera inställningarna för Experience Manager."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--itp-impact"
+>title="Visa och analysera effekterna av ITP (Intelligent Tracking Prevention) på datainsamling och rapportering."
+>abstract="**Detta kan hjälpa dig** att bättre förstå potentiella dataförluster på grund av cookie-begränsningar som ITP har infört.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att anpassa analysinställningarna för att minimera effekten av ITP."
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -311,7 +445,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--web-content-consumption"
+>id="template--web-content-consumption"
 >title="Se vilket webbinnehåll som konsumeras mest och engagerande användare."
 >abstract="**Det här kan hjälpa dig** att bättre förstå var personer ska gå när de kommer in på webbplatsen, vilka delar av webbplatsen som de flesta besöker och vilka sidor som troligen kommer att leda bort personer från webbplatsen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sökvägar på webbplatsen som leder personer till de viktigaste sidorna och vilka sidor som är mer benägna att leda personer bort från webbplatsen.<br/>I den här mallen används måtten Siddimension och Sidvisning, Visits-måttet, det unika besökarmåttet, starthastighetsmåttet, avhoppsfrekvensen, avslutningsmåttet och innehållshastighetsmåttet. Flödesvisualiseringar används också för in-, avslutnings- och toppavsnitt."
 
@@ -320,7 +454,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--media-content-consumption"
+>id="template--media-content-consumption"
 >title="Se vilket medieinnehåll som konsumeras mest och engagerande användare."
 >abstract="**Det här kan hjälpa dig** att bättre förstå var personer ska gå när de kommer in på webbplatsen, vilka delar av webbplatsen som de flesta besöker och vilka sidor som troligen kommer att leda bort personer från webbplatsen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sökvägar på webbplatsen som leder personer till de viktigaste sidorna och vilka sidor som är mer benägna att leda personer bort från webbplatsen.<br/>I den här mallen används måtten Siddimension och Sidvisning, Visits-måttet, det unika besökarmåttet, starthastighetsmåttet, avhoppsfrekvensen, avslutningsmåttet och innehållshastighetsmåttet. Flödesvisualiseringar används också för in-, avslutnings- och toppsektioner, en satsytevisualisering som visar sidvyer för de vanligaste sidorna, en streckvisualisering som visar sidvisningar efter paketerad tid och en linjevisualisering som visar en trendvy över den genomsnittliga tiden som har tillbringats på webbplatsen."
 
@@ -329,7 +463,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--page-summary-report"
+>id="template--page-summary-report"
 >title="Visa viktig information om alla sidor i egenskaperna. Visar sidvyer, en trendlinje, en flödesvisualisering och mycket mer."
 >abstract="**Detta kan hjälpa dig** att bättre förstå hur människor interagerar med en viss sida.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera sidans prestanda över en tidsperiod eller bättre förstå vad som driver trafik till sidan.<br/>Den här mallen använder måttet Sidvyer. Det använder även linjevisualisering och Flow-visualisering."
 
@@ -338,7 +472,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--entryPageRankedReport"
+>id="template--entryPageRankedReport"
 >title="Visa de översta sidorna som andra kommer åt när de besöker webbplatsen första gången."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vilka sidor som genererar mest trafik till din webbplats eller förstå mer om de första visningar besökarna har på din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera den första upplevelsen som andra personer kommer in på webbplatsen, eller se till att de sidor som de första användarna ser när de kommer in på din webbplats är välkomna och tillhandahåller nödvändiga länkar till andra delar av din webbplats.<br/>Den här mallen använder måttet för sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering."
 
@@ -347,7 +481,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--exitPageRankedReport"
+>id="template--exitPageRankedReport"
 >title="Visa de översta sidorna som andra kommer åt direkt innan de lämnar din webbplats."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilka sidor som leder personer bort från webbplatsen. <br/>**Baserat på vad du lär dig kan du** göra något av följande, till exempel uppdatera vanliga avslutssidor för att optimera upplevelsen som andra får innan de lämnar webbplatsen, eller inkludera innehåll eller länkar för att uppmuntra andra att stanna kvar på webbplatsen.<br/>Den här mallen använder måttet för sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering."
 
@@ -373,10 +507,32 @@ Följande mallar är tillgängliga:
 
 ### Webb: Konvertering {#web-conversion}
 
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--productConversionReport"
+>id="aa-template--categoryRankedReport"
+>title="."
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--commerce-and-marketing-management"
+>title="Visa fördefinierade insikter för återförsäljare om era handelsaktiviteter för att förbättra försäljningen. Detta riktar sig till användare av Magento, men kan utnyttjas av alla webbutiker."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur dina handelsaktiviteter bidrar till försäljningssiffror.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att justera budgeten efter aktiviteter som får störst avkastning."
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--productConversionReport"
 >title="Produktkonverteringstrattmall"
 >abstract=""
 
@@ -385,7 +541,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--retail-products-template"
+>id="template--retail-products-template"
 >title="Se vilka produkter som ger bäst resultat."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vilka produkter som är mest framgångsrika.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att öka finansieringen av framgångsrika produkter och minska finansieringen av mindre framgångsrika produkter.<br/>Den här mallen använder måtten Produktvyer, kundvagnstillägg, Beställningar, Intäkter och Enheter. Det använder också produktdimensionen."
 
@@ -394,7 +550,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartConversionReport"
+>id="template--cartConversionReport"
 >title="Visa hur många gånger personer har utfört utcheckningshändelser, t.ex. lagt till artiklar i kundvagnen, visat kundvagnen, tagit bort artiklar från kundvagnen och checkat ut."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vilka delar av processen som leder till konvertering och vilka som löper större risk att överge kundvagnen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att minska friktionen i vissa steg i utcheckningsprocessen.<br/>Den här mallen använder"
 
@@ -403,7 +559,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartsOvertimeReport"
+>id="template--cartsOvertimeReport"
 >title="Visa antalet personer som har lagt till en produkt i kundvagnen."
 >abstract="**Detta kan hjälpa dig** att bättre förstå antalet personer som lägger till en produkt i kundvagnen, till skillnad från det totala antalet produkter som läggs till i en kundvagn.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att mäta effektiviteten hos dina produktsidor.<br/>Den här mallen använder Carts-måttet."
 
@@ -412,7 +568,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartViewsOvertimeReport"
+>id="template--cartViewsOvertimeReport"
 >title="Se hur många gånger kunderna har sett sin kundvagn."
 >abstract="**Det här kan hjälpa dig** att bättre förstå utcheckningsupplevelsen i ett försök att minska antalet kundvagnsavhoppningar eller analysera tiden mellan kundvagnstillägg och utcheckning av olika produkter.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, till exempel erbjuda kampanjer för produkter som ligger längst i varukorgar och som löper störst risk att överges.<br/>Den här mallen använder måttet för kundvagnsvyer."
 
@@ -421,7 +577,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartAdditionsOvertimeReport"
+>id="template--cartAdditionsOvertimeReport"
 >title="Se hur många gånger någon har lagt till något i kundvagnen."
 >abstract="**Detta kan hjälpa dig** att bättre förstå den del av konverteringsprocessen där kundintresset för en produkt är tillräckligt högt för att de ska kunna lägga till den i kundvagnen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra produktrekommendationerna för alla kunder. Detta kan göras genom att analysera vilka produkter som ofta läggs till i samma varukorgar och föreslå relaterade produkter som baseras på artiklar som redan finns i varukorgen."
 
@@ -430,7 +586,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cartRemovalsOvertimeReport"
+>id="template--cartRemovalsOvertimeReport"
 >title="Se hur många gånger någon har tagit bort något från kundvagnen."
 >abstract="**Detta kan hjälpa dig** att bättre förstå den del av konverteringsprocessen där kunderna inte längre är intresserade av en produkt, eller så kan det hjälpa dig att förstå var det kan finnas problem i utcheckningsprocessen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel ta bort eventuella hinder som kan finnas i utcheckningsprocessen, till exempel en komplicerad användarupplevelse.<br/>Den här mallen använder måttet för kundvagnsborttagning."
 
@@ -439,7 +595,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--purchaseConversionReport"
+>id="template--purchaseConversionReport"
 >title="Inköpskonverteringstrattmall"
 >abstract=""
 
@@ -463,10 +619,158 @@ Följande mallar är tillgängliga:
 
 ### Webb: Målgrupp {#web-audience}
 
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--countryGeoReport"
+>id="aa-template--timeZoneRankedReport"
+>title="Visa de översta tidszonerna för besökare som kommer åt din webbplats."
+>abstract="**Det här kan hjälpa dig** att bättre förstå i vilka tidszoner besökarna bor.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att justera webbplatsunderhåll ibland, vilket påverkar så få personer som möjligt."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--domainRankedReport"
+>title="Visa de vanligaste domänerna för besökare som kommer åt din webbplats."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka organisationer dina besökare kommer ifrån.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, till exempel rikta ditt innehåll mot dina största kunder."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--topLevelDomainRankedReport"
+>title="Visa de vanligaste domänerna för besökare som kommer åt din webbplats."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka organisationer dina besökare kommer ifrån.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, till exempel rikta ditt innehåll mot dina största kunder."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--browserWidthRankedReport"
+>title="Visa de vanligaste webbläsarbredderna som andra använder för att komma åt webbplatsen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur innehåll visas för besökare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra webbplatsens kvalitet genom att testa nya versioner av webbplatsen med de vanligaste webbläsarbredderna. Om du gör det kan du maximera kvalitetskontrollen.<br/>Den här mallen använder webbläsardimensionen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--browserHeightRankedReport"
+>title="Visa de topphöjder i webbläsaren som andra använder för att komma åt webbplatsen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur innehåll visas för besökare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra webbplatsens kvalitet genom att testa nya versioner av webbplatsen med de vanligaste webbläsarhöjderna. Om du gör det kan du maximera kvalitetskontrollen.<br/>Den här mallen använder webbläsardimensionen. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--operatingSystemRankedReport"
+>title="Visa namnet på de operativsystem och den version som andra använder för att komma åt din webbplats."
+>abstract="**Detta kan hjälpa dig** att bättre förstå de vanligaste operativsystemen och versionerna som besökarna använder.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel förbättra platskvaliteten genom att testa nya versioner av din webbplats med de viktigaste operativsystemen och versionerna. Om du gör det kan du maximera kvalitetskontrollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--operatingSystemTypeRankedReport"
+>title="Visa namnet på de operativsystem som användarna använder för att komma åt din webbplats."
+>abstract="**Detta kan hjälpa dig** att bättre förstå de vanligaste operativsystemen som besökarna använder.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel förbättra platskvaliteten genom att testa nya versioner av din webbplats med de vanligaste operativsystemen. Om du gör det kan du maximera kvalitetskontrollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--returnFrequencyRankedReport"
+>title="Visa telekommunikationsföretaget som tillhandahåller mobil nätverksanslutning till de mobila enheterna som användarna använder för att få tillgång till din webbplats."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka mobiloperatörer som är populärast hos din användarbas.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en mängd saker, som att anpassa innehållsleveransen baserat på nätverkskapaciteten för olika operatörer för att säkerställa en smidig användarupplevelse.<br/>Den här mallen använder dimensionen Mobiloperatör."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--returnVisitorsOvertimeReport"
+>title="Visa telekommunikationsföretaget som tillhandahåller mobil nätverksanslutning till de mobila enheterna som användarna använder för att få tillgång till din webbplats."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka mobiloperatörer som är populärast hos din användarbas.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en mängd saker, som att anpassa innehållsleveransen baserat på nätverkskapaciteten för olika operatörer för att säkerställa en smidig användarupplevelse.<br/>Den här mallen använder dimensionen Mobiloperatör."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--visitNumberRankedReport"
+>title="Visa hur många gånger en besökare har besökt webbplatsen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur engagerade besökare är när de återvänder till din webbplats. Detta gäller besökarens livstid, oavsett projektets datumintervall.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att justera marknadsföringsaktiviteter för besökare som ofta är besökare.<br/>Den här mallen använder dimensionen för besöksnumret."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--customerLoyaltyRankedReport"
+>title="Visa antalet besökare på din webbplats som har gjort 0 tidigare inköp, 1 tidigare inköp, 2 tidigare inköp eller 3+ tidigare inköp."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur din webbplats påverkar köpbeteendet. .<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att fokusera på besökare som kommer tillbaka för att göra ett köp, så att du kan uppmuntra till liknande beteende för nya besökare.<br/>Den här mallen använder kundlojalitetsdimensionen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--daysBeforeFirstPurchaseRankedReport"
+>title="Se hur många dagar det är mellan första gången en besökare kommer till er webbplats och när de gör ett köp. Om en besökare till exempel gör ett köp en dag efter första besök, tillhör alla efterföljande besök eller evenemang dimensionsposten 1 dag."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur lång tid det tar för besökarna att göra ett köp.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att uppdatera din webbplats för att uppmuntra till snabbare förvärv.<br/>Den här mallen använder dimensionen Dagar före första inköp."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--daysSinceLastPurchaseRankedReport"
+>title="Se hur lång tid det tar mellan besökarens aktuella träff och det senaste köpet vid den tidpunkten."
+>abstract="**Detta kan hjälpa dig** att förstå besökarnas beteende bättre efter att ha köpt något på webbplatsen.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att uppdatera din webbplats för att uppmuntra uppföljningsköp.<br/>Den här mallen använder Dagar sedan den senaste inköpsdimensionen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--mobileScreenSizeRankedReport"
+>title="Visa de populäraste skärmstorlekarna för mobila enheter som användare använder för att komma åt din webbplats."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur innehåll visas för besökare.<br/>**Baserat på vad du lär dig kan du** göra flera saker, till exempel förbättra platskvaliteten genom att testa nya versioner av din webbplats med de vanligaste mobilskärmstorlekarna. Om du gör det kan du maximera kvalitetskontrollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--mobileScreenHeightRankedReport"
+>title="Visa höjder på mobilskärmen som andra använder för att komma åt webbplatsen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur innehåll visas för besökare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra webbplatskvaliteten genom att testa nya versioner av din webbplats med de vanligaste höjderna för mobilskärmar. Om du gör det kan du maximera kvalitetskontrollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--mobileScreenWidthRankedReport"
+>title="Visa bredder för den övre mobilskärmen som andra använder för att komma åt webbplatsen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur innehåll visas för besökare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra webbplatskvaliteten genom att testa nya versioner av webbplatsen med de vanligaste mobilskärmsbredderna. Om du gör det kan du maximera kvalitetskontrollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--countryGeoReport"
 >title="Se det land som besökarna kommer ifrån."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vad de populäraste länderna besökarna kommer från när de besöker din webbplats.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i dessa länder, eller se till att webbplatsupplevelsen är optimal i länder som har olika primära språk.<br/>Den här mallen använder dimensionen Länder."
 
@@ -475,7 +779,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--stateGeoReport"
+>id="template--stateGeoReport"
 >title="Visa det tillstånd (i USA) som folk från webbplatsen har sitt ursprung i. Detta liknar mallen Geo Regions, förutom att den är specifik för USA."
 >abstract="**Det här kan hjälpa dig** att bättre förstå de populäraste amerikanska delstatsbesökarna som kommer från de som besöker din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringsaktiviteter i dessa lägen.<br/>Den här mallen använder dimensionen USA."
 
@@ -484,7 +788,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--regionGeoReport"
+>id="template--regionGeoReport"
 >title="Visa det geografiska område som personer som besöker webbplatsen kommer från. En region är ett geografiskt område som är mindre än ett land men större än en stad. I vissa länder är en region en stat, provins eller prefektion. I andra områden är det ett land, en avdelning eller en storstadsregion. "
 >abstract="**Det här kan hjälpa dig** att bättre förstå de populäraste regionerna som besökarna kommer ifrån när de besöker din webbplats.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i de här regionerna, eller se till att webbplatsupplevelsen är optimal i regioner som har olika primära språk. <br/>Den här mallen använder dimensionerna ID(variabler/geocountry) och Region. "
 
@@ -493,7 +797,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--cityGeoReport"
+>id="template--cityGeoReport"
 >title="Se den stad som folk från webbplatsen kommer ifrån."
 >abstract="**Det här kan hjälpa dig** att bättre förstå de populäraste städer som besökarna kommer från när de besöker din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringsaktiviteter i dessa städer. <br/>Den här mallen använder dimensionen Städer"
 
@@ -502,7 +806,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--dmaGeoReport"
+>id="template--dmaGeoReport"
 >title="Se vilka områden i USA som besökarna kommer ifrån."
 >abstract="**Det här kan hjälpa dig** att bättre förstå de populäraste regionerna som besökarna kommer ifrån när de besöker din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att använda data för att fokusera på marknadsföringsaktiviteter i de mest framgångsrika regionerna. "
 
@@ -511,7 +815,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--languageRankedReport"
+>id="template--languageRankedReport"
 >title="Se vilka språk besökarna föredrar att se innehåll på."
 >abstract="**Det här kan hjälpa dig** att bättre förstå besökarnas vanligaste språk.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som fokuslokaliseringsaktiviteter eller marknadsföringsaktiviteter för de vanligaste språken.<br/>Den här mallen använder språkdimensionen."
 
@@ -520,7 +824,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--web-technology-template"
+>id="template--web-technology-template"
 >title="Teknik - översikt"
 >abstract=""
 
@@ -529,7 +833,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--browserRankedReport"
+>id="template--browserRankedReport"
 >title="Visa namn och version för de webbläsare som användarna använder mest för att komma åt webbplatsen."
 >abstract="**Detta kan hjälpa dig** att bättre förstå de vanligaste webbläsarna som besökarna använder.<br/>**Baserat på vad du lär dig kan du** göra flera saker, till exempel förbättra webbplatsens kvalitet genom att testa nya versioner av webbplatsen med de vanligaste webbläsarna. Om du gör det kan du maximera kvalitetskontrollen.<br/>Den här mallen använder webbläsardimensionen."
 
@@ -538,7 +842,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--browserTypeRankedReport"
+>id="template--browserTypeRankedReport"
 >title="Visa namnen på de organisationer som har skapat de vanligaste webbläsarna som användarna använder för att komma åt webbplatsen. Detta skiljer sig från webbläsarmallen på så sätt att olika versioner av samma webbläsare inte listas som separata dimensionsobjekt."
 >abstract="**Detta kan hjälpa dig** att bättre förstå de vanligaste webbläsarna som besökarna använder <br/>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, till exempel förbättra webbplatsens kvalitet genom att testa nya versioner av webbplatsen med de vanligaste webbläsarna. Om du gör det kan du maximera kvalitetskontrollen. <br/>Den här mallen använder dimensionen för webbläsartypen. "
 
@@ -563,10 +867,43 @@ Följande mallar är tillgängliga:
 
 ### Webb: Förvärv {#web-acquisition}
 
+<!--CJA only-->
+
+<!--AA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--marketing-channel-overview-template"
+>id="aa-template--mobile-app-acquisition-template"
+>title="Se hur er webbplats får besökare på mobila enheter."
+>abstract="**Detta kan hjälpa dig** att bättre förstå olika faktorer som leder till förvärv, som söknyckelord, refererande domän och så vidare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera marknadsföringen till de mest effektiva kanalerna.<br/>Den här mallen använder Studsfrekvens-måttet och Bounces-måttet. Det använder också dimensionen Sökmotor, Nyckelordsdimension för sökning, Siddimension för startsida, Dimensionen Referera till domän, Dimensionen Spårningskod och Referensdimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--advertisingAnalyticsPaidSearch"
+>title="Visa alla dina Google- och Bing betalsökdata sida vid sida."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur mycket trafik som skickas till din webbplats och om kunderna konverterar.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att uppskatta kostnadseffektiviteten för en annonskampanj."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa-template--searchEngineRankRankedReport"
+>title="Visa vilken sida av sökresultat en besökare klickade igenom till din webbplats. Om din webbplats till exempel visas på den andra sidan av sökresultatet i en sökmotor är dimensionsobjektet för den här variabeln Söksida 2."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur högt dina sidor rankas i sökresultaten.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, förbättra SEO-strategin för att se till att ditt innehåll visas på första sidan i sökresultaten."
+
+<!-- markdownlint-enable MD034 -->
+
+<!--Both AA and CJA-->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--marketing-channel-overview-template"
 >title="När du använder anpassad attribuering visar den här mallen hur besökare kommer till din webbplats."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vilka av era marknadsföringskanaler som är mest effektiva.<br/>**Baserat på vad du lär dig kan du** göra många saker, som att investera mer i effektiva marknadsföringskanaler och ta bort från mindre effektiva marknadsföringskanaler.<br/>Den här mallen använder dimensionerna ID(variabler/marketingchannel) och Intäktsmåttet."
 
@@ -575,7 +912,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--firstouchChannelRankedReport"
+>id="template--firstouchChannelRankedReport"
 >title="Visa den första marknadsföringskanalen som en besökare matchar under besökarens engagemangsperiod (30 dagar som standard)."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vilka marknadsföringskanaler som driver den inledande trafiken till din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel fokusera marknadsföringen på områden som är mest effektiva.<br/>Den här mallen använder dimensionen Första beröringskanalen."
 
@@ -584,7 +921,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--firstouchChannelDetailRankedReport"
+>id="template--firstouchChannelDetailRankedReport"
 >title="Visa information om den första marknadsföringskanalen som en besökare matchar under besökarens insatsperiod (30 dagar som standard)."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vad som har bidragit till träffmatchningen i en marknadsföringskanal. Om en besökare till exempel kom till din webbplats och matchade med marknadsföringskanalen Betald sökning kan du använda kanalinformationen för att se vilken sökmotor som användes eller vilket nyckelord de sökte efter.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel fokusera marknadsföringen på områden som är mest effektiva.<br/>Den här mallen använder dimensionen Första beröringskanaldetalj."
 
@@ -593,7 +930,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--campaignConversionReport"
+>id="template--campaignConversionReport"
 >title="Kampanjkonverteringstratt"
 >abstract=""
 
@@ -602,7 +939,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--retail-campaign-performance-template"
+>id="template--retail-campaign-performance-template"
 >title="Visa detaljerad information om hur era marknadsföringskampanjer fungerar."
 >abstract="**Det här kan hjälpa dig** att bättre förstå olika indikatorer för att lyckas med kampanjer, t.ex. intäkter, produktvisningar, beställningar och så vidare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera marknadsföringen på de kampanjer som genererar störst intäkter. <br/>I den här mallen används måtten Intäktssiffror, Produktvyer, Cart Additions, Orders och Units. Den använder även spårningskoddimensionen och referensdomändimensionen."
 
@@ -611,7 +948,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--web-acquisition-template"
+>id="template--web-acquisition-template"
 >title="Se hur er webbplats får besökare."
 >abstract="**Detta kan hjälpa dig** att bättre förstå olika faktorer som leder till förvärv, som söknyckelord, refererande domän och så vidare.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera marknadsföringen till de mest effektiva kanalerna.<br/>Den här mallen använder Studsfrekvens-måttet och Bounces-måttet. Det använder också dimensionen Sökmotor, Nyckelordsdimension för sökning, Siddimension för startsida, Dimensionen Referera till domän, Dimensionen Spårningskod och Referensdimension."
 
@@ -620,7 +957,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchKeywordRankedReport"
+>id="template--searchKeywordRankedReport"
 >title="Visa söknyckelorden som besökarna använder för att nå din webbplats, oavsett om det är betalt eller naturligt."
 >abstract="**Detta kan hjälpa dig** att bättre förstå nyckelord som människor använder i sökningar som resulterar i webbplatstrafik. <br/>**Baserat på vad du lär dig kan du** göra något av följande, som att identifiera och fylla i SEO-luckor mellan nyckelord som används och de som driver webbplatstrafiken.<br/>Den här mallen använder dimensionen Sök nyckelord."
 
@@ -629,7 +966,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchPaidKeywordRankedReport"
+>id="template--searchPaidKeywordRankedReport"
 >title="Visa söknyckelorden som besökarna använder för att nå din webbplats, som matchade betald sökningsidentifiering."
 >abstract="**Detta kan hjälpa dig** att bättre förstå nyckelord som människor använder i sökningar som resulterar i webbplatstrafik.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att identifiera och fylla i SEO-luckor mellan nyckelord som används och de som driver webbplatstrafiken. <br/>Den här mallen använder dimensionen Söknyckelord - Betald. "
 
@@ -638,7 +975,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchNaturalKeywordRankedReport"
+>id="template--searchNaturalKeywordRankedReport"
 >title="Visa söknyckelorden som besökarna använder för att nå din webbplats, vilket inte matchade betald sökningsidentifiering."
 >abstract="**Detta kan hjälpa dig** att bättre förstå nyckelord som människor använder i sökningar som resulterar i webbplatstrafik.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att identifiera och fylla i SEO-luckor mellan nyckelord som används och de som driver webbplatstrafiken.<br/>Den här mallen använder söknyckelordet - naturlig dimension. "
 
@@ -647,7 +984,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchRankedReport"
+>id="template--searchRankedReport"
 >title="Visa sökmotorerna som besökarna använder för att nå din webbplats, oavsett om det är betalt eller naturligt."
 >abstract="**Detta kan hjälpa dig** att bättre förstå de sökmotorer som användarna använder och som resulterar i webbplatstrafik. <br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera SEO-arbetet på sökmotorer som genererar flest trafik till webbplatsen.<br/>Den här mallen använder dimensionen Sökmotor. "
 
@@ -656,7 +993,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchPaidRankedReport"
+>id="template--searchPaidRankedReport"
 >title="Visa sökmotorerna som besökarna använder för att nå din webbplats, som matchade betald sökningsidentifiering."
 >abstract="**Detta kan hjälpa dig** att bättre förstå de sökmotorer som användarna använder och som resulterar i webbplatstrafik.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera SEO-arbetet på sökmotorer som genererar flest trafik till webbplatsen. <br/>Den här mallen använder sökmotorn - betaldimension."
 
@@ -665,7 +1002,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--searchNaturalRankedReport"
+>id="template--searchNaturalRankedReport"
 >title="Visa söknyckelorden som besökarna använder för att nå din webbplats, vilket inte matchade betald sökningsidentifiering."
 >abstract="**Detta kan hjälpa dig** att bättre förstå de sökmotorer som användarna använder och som resulterar i webbplatstrafik.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera SEO-arbetet på sökmotorer som genererar flest trafik till webbplatsen.<br/>Den här mallen använder sökmotorn - naturlig dimension."
 
@@ -674,7 +1011,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referringDomainRankedReport"
+>id="template--referringDomainRankedReport"
 >title="Visa vilka domäner som användare klickar igenom för att nå din webbplats."
 >abstract="**Detta kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som genererar mest trafik till din. (En länk måste finnas på den externa platsen och en besökare måste klicka på den för att dimensionsposten ska kunna visas.)<br/>**Baserat på vad du lär dig kan du** göra något annat, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande toppdomänerna. <br/>Den här mallen använder dimensionen Refererande domän."
 
@@ -683,7 +1020,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referringDomainOriginalRankedReport"
+>id="template--referringDomainOriginalRankedReport"
 >title="Visa den första refererande domänen som personer klickat igenom för att nå din webbplats. (När det har angetts innehåller det samma värde för hela besökar-ID:t.)"
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som ursprungligen kör trafik till din webbplats.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande huvuddomänerna. <br/>Den här mallen använder dimensionen Ursprunglig referensdomän."
 
@@ -692,7 +1029,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referrerRankedReport"
+>id="template--referrerRankedReport"
 >title="Visa vilka URL:er besökarna var på när de klickade igenom för att nå din webbplats. (En länk måste finnas på den externa URL:en och en besökare måste klicka på den för att dimensionsobjektet ska kunna visas.)"
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilka specifika URL:er som genererar mest trafik till din webbplats.<br/>**Baserat på vad du lär dig kan du** göra något annat, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de översta URL:erna. <br/>Den här mallen använder dimensionen Refererande domän.</p>"
 
@@ -701,7 +1038,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--referrerTypeRankedReport"
+>id="template--referrerTypeRankedReport"
 >title="Visa vilka generiska kanaler besökarna klickade igenom för att komma till er webbplats. Adobe bibehåller reglerna för varje kanal. Möjliga kanaler är sökmotorer, sociala nätverk, andra webbplatser, hårddisk eller e-post."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilken typ av referenter som leder flest trafik till din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från en viss kanal.<br/>Den här mallen använder dimensionen Refererartyp."
 
@@ -735,10 +1072,12 @@ Följande mallar är tillgängliga:
 
 <!-- add contextual help for Mobile app screens and mobile app actions -->
 
+<!--CJA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-lifecycle-metrics-app-usage-template"
+>id="template--mobile-lifecycle-metrics-app-usage-template"
 >title="Visa antalet användare, starter och första starter för appen samt den genomsnittliga sessionslängden."
 >abstract="**Det här kan hjälpa dig** att bättre förstå hur mycket appen används. <br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra appprestanda så att den kan anpassas till användningsmängden."
 
@@ -747,7 +1086,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-journeys"
+>id="template--mobile-app-journeys"
 >title="Visa de framträdande användningsmönstren för din mobilapp."
 >abstract="**Detta kan hjälpa dig** att bättre förstå hur andra använder din app. <br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra hur användare kan komma från en skärm till en annan och anpassa sig till de vanligaste arbetsflödena."
 
@@ -756,7 +1095,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-key-metrics"
+>id="template--mobile-app-key-metrics"
 >title="Visa några av de vanligaste mätvärdena för mobilappar."
 >abstract="**Detta kan hjälpa dig** att bättre förstå grundläggande prestanda i din mobilapp.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att utvärdera den övergripande hälsan och prestandan för din app."
 
@@ -765,7 +1104,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-messaging"
+>id="template--mobile-app-messaging"
 >title="Visa prestandadata för meddelanden i appen och push-meddelanden för appen."
 >abstract="**Det här kan hjälpa dig** att bättre förstå hur användare använder meddelandefunktioner i appen samt hur effektivt push-meddelanden genererar trafik till din app.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra push-meddelandefunktionen i appen."
 
@@ -774,7 +1113,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-performance-template"
+>id="template--mobile-app-performance-template"
 >title="Se hur appen fungerar och var användarna har problem."
 >abstract="**Detta kan hjälpa dig** att bättre förstå om användare som använder din app stöter på långsamhet eller försämrade prestanda. <br/>**Baserat på vad du lär dig kan du** göra flera saker, som att åtgärda befintliga problem eller förbättra appprestanda innan problem uppstår."
 
@@ -783,7 +1122,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-app-retention"
+>id="template--mobile-app-retention"
 >title="Visa vilka användare som är de mest lojala användarna av appen och vad de gör i appen."
 >abstract="**Detta kan hjälpa dig** att bättre förstå hur dina mest lojala användare använder din app.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra marknadsföringen för de funktioner som de mest lojala användarna använder."
 
@@ -807,7 +1146,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileCarrierRankedReport"
+>id="template--mobileCarrierRankedReport"
 >title="Visa telekommunikationsföretaget som tillhandahåller mobil nätverksanslutning till de mobila enheterna som användarna använder för att få tillgång till din webbplats."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilka mobiloperatörer som är populärast hos din användarbas.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en mängd saker, som att anpassa innehållsleveransen baserat på nätverkskapaciteten för olika operatörer för att säkerställa en smidig användarupplevelse.<br/>Den här mallen använder dimensionen Mobiloperatör."
 
@@ -816,7 +1155,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileDeviceNameRankedReport"
+>id="template--mobileDeviceNameRankedReport"
 >title="Visa märke och modell för mobila enheter som används för att komma åt din webbplats."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilka mobila enheter som är populärast bland dina användare.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera återgivningen av din webbplats för de vanligaste mobila enheterna.<br/>Den här mallen använder dimensionen Mobilenhetsnamn."
 
@@ -825,7 +1164,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileDeviceTypeRankedReport"
+>id="template--mobileDeviceTypeRankedReport"
 >title="Visa de mobila enhetstyper som användare använder för att få tillgång till din webbplats, t.ex. telefoner och surfplattor."
 >abstract="**Detta kan hjälpa dig** att bättre förstå de olika typer av mobila enheter som används för att komma åt din webbplats.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera webbplatsen för de typer av mobila enheter som används mest.<br/>Den här mallen använder dimensionen Mobilenhetstyp."
 
@@ -834,7 +1173,7 @@ Följande mallar är tillgängliga:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobileManufacturerRankedReport"
+>id="template--mobileManufacturerRankedReport"
 >title="Se vilka tillverkare som producerar de mobila enheter som användarna använder för att få tillgång till er webbplats, som Apple och Samsung."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilka tillverkare som är populärast bland dina användare.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att skräddarsy innehållsleveransen baserat på kapaciteten hos olika tillverkare för att säkerställa en smidig användarupplevelse.<br/>Den här mallen använder Mobile Manufacturer-dimensionen."
 
@@ -850,6 +1189,8 @@ Följande mallar är tillgängliga:
 | **Tillverkare** | Se vilka tillverkare som producerar de mobila enheter som användarna använder för att få tillgång till er webbplats, som Apple och Samsung.<p>**Det här kan hjälpa dig** att bättre förstå vilka tillverkare som är populärast bland dina användare.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att skräddarsy innehållsleveransen baserat på kapaciteten hos olika tillverkare för att säkerställa en smidig användarupplevelse.</p><p>I den här mallen används Mobile Manufacturer-dimensionen.</p> |
 
 ### Tidsdelning {#time-parting}
+
+<!--CJA only-->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -958,6 +1299,8 @@ Följande mallar är tillgängliga:
 
 ### Kanalövergripande {#cross-channel}
 
+<!--CJA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -1016,6 +1359,8 @@ Följande mallar är tillgängliga:
 
 ### AJO {#AJO-templates}
 
+<!--CJA only-->
+
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -1071,27 +1416,3 @@ Följande mallar är tillgängliga:
 | **AJO - översiktsrapport** | Se en detaljerad sammanfattning av trafik- och engagemangsmätningar för alla kampanjer och resor i er miljö.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiva era kampanjer och resor är på hög nivå. </p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera kampanjer och resor baserat på målpublikens engagemangsnivåer.</p> |
 | **AJO-prenumerationer** | Visa profilernas prenumerationer och avbeställningar som är kopplade till särskilda listor.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiva olika prenumerationskampanjer och -initiativ är när det gäller att öka engagemanget och konverteringarna.</p><p>**Baserat på vad du lär dig kan du** göra något annat, som att justera dina prenumerationskampanjer baserat på målpublikens engagemangsnivåer.</p> |
 
-
-<!-- deleted: 
-
-| [!UICONTROL **Real-Time**] | View the dimensions and metrics that are currently being collected on your site. <p>**This can help you** better understand what is trending on your site.</p><p>**Based on what you learn, you might** respond to and actively manage the performance of your current marketing content and campaigns.</p> <p>This template uses the [Real-time report](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md).</p> | 
-| [!UICONTROL **Fallout**] | View where people leave or continue through a predefined sequence of pages.<p>**This can help you** better understand where people are falling out of the user journey.</p><p>**Based on what you learn, you might** do any number of things, like analyze conversion rates through specific processes on your site (such as a purchase or registration process), or analyze correlations between events on your site. (For example, what percentage of people who looked at your privacy policy went on to purchase a product.) You can also use this template to perform side-by-side comparisons of two different segments in the same report.</p> <p>This template uses the [Fallout visualization](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).</p> | 
-| [!UICONTROL **Cross-device analysis**] | View which devices people used across all points of the journey.<p>**This can help you** better understand how many people interact with your brand, the types of devices they use, and how their use of multiple devices affects their experience. For example, how often do people begin a task on a mobile device and then later move to a desktop to complete a task? What are the most common paths users take from one device to another? Where do they drop out? Where do they succeed? And so forth.</p><p>**Based on what you learn, you might** do any number of things, like optimize certain parts of the user journey for a mobile experience.</p> <p>This template uses the [Flow visualization](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md), [Fallout visualization](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md), [Cohort analysis](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), [the People metric](/help/components/metrics/people.md), and [the Unique devices metric](/help/components/metrics/unique-devices.md).</p> |
-| [!UICONTROL **Web retention**] | View who your loyal users are and what they are doing on your site.<p>**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.</p><p>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<p>This template uses the [Visits metric](/help/components/metrics/visits.md) and the [Unique visitors metric](/help/components/metrics/unique-visitors.md).</p> | 
-| [!UICONTROL **Streaming Media Consumption**] | View  trends and top metrics of media consumption across all digital devices.<p>**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.</p><p>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<p>This template uses the [Visits metric](/help/components/metrics/visits.md) and the [Unique visitors metric](/help/components/metrics/unique-visitors.md).</p> | 
-
--->
-
-<!--
-
-Ignore below this 
-
-| Menu item | Reports under this menu item |
-| --- | --- | 
-| **[!UICONTROL Most Popular]** | <ul><li>Training Tutorial (Pre-existing Workspace template)</li><li>Pages (What are my top pages?)</li><li>Page views (How many page views am I generating?)</li><li>Visits (How many visits am I getting?)</li><li>Visitors (How many visitors am I getting?)</li><li>Key metrics (How are my most important metrics performing?)</li><li>Site sections (Which sections of my site generated the most page views?)</li><li>Real-Time (What is trending on my site, and why?)</li><li>Next page (What are the next pages my visitors go to?)</li><li>Previous page (What are the previous pages my visitors went to?)</li><li>Campaigns (What campaigns are driving my key metrics?)</li><li>Products (What products are driving my key metrics?)</li><li>Last touch channel (Which last touch channel is performing best?</li><li>Last touch channel detail (Which specific last touch channel is outperforming others?)</li><li>Revenue (How is my revenue performing?)</li><li>Orders (How are my orders performing?)</li><li>Units (How many units am I selling?)</li></ul> | 
-| **[!UICONTROL Engagement]** | <ul><li>Key metrics (How are my most important metrics performing?)</li><li>Page views (How many page views am I generating?)</li><li>Pages (What are my top pages?)</li><li>Visits (How many visits am I getting?)</li><li>Visitors (How many visitors am I getting?)</li><li>Time spent per visit (How much time do my users spend per visit?)</li><li>Time prior to event (How much time do my users spend prior to a success event?)</li><li>Site sections (Which sections of my site generated the most page views?</li><li>Web content consumption (Which content is consumed most and is engaging users?)</li><li>Media content consumption (Which content is consumed most and is engaging users?)</li><li>Next and previous page flow (What are/were the next/previous paths my visitors take/took?)</li><li>Fallout (Where am I seeing fallout through my digital properties?)</li><li>Cross-device analysis (Using cross-device analysis in Analysis Workspace)</li><li>Web retention (Who are my loyal users and what do they do?)</li><li>Media audio consumption (What are trends and top metrics of audio consumption?)</li><li>Media recency, frequency, loyalty (Who are my loyal readers?)</li><li>Page analysis > Reloads (Which pages generate the most reloads?)</li><li>Page analysis > Time spent on page (How much time do my users spend on my pages?)</li><li>Entries & exits > Entry pages (What are my top entry pages?)</li><li>Entries & exits > Original entry pages (What page did my visitor originally enter from?)</li><li>Entries & exits > Single-page visits (Which pages generated the most single-page visits?)</li><li>Entries & exits > Exit pages (What are my top exit pages?)</li><li>Page Analysis > Page summary</li></ul> |
-| **[!UICONTROL Conversion]** | <ul><li>Products > Products (Which products are driving my key metrics?)</li><li>Products > Product performance (Which products are performing best?)</li><li>Products > Categories (What are my best performing product categories?</li><li>Shopping cart > Carts (How many users added a product to cart?</li><li>Shopping cart > Cart views (How many times did my visitors view their carts?)</li><li>Shopping cart > Cart additions (How often are users adding a product to their cart?)</li><li>Shopping cart > Cart removals (How often are users removing a product from their cart?)</li><li>Purchases > Revenue (How is my revenue performing?)</li><li>Purchases > Orders (How are my orders performing?)</li><li>Purchases > Units (How many units am I selling?)</li><li>[Magento: marketing and commerce](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#commerce)</li></ul> |
-| **[!UICONTROL Audience]** |<ul><li>People metric (How many people are interacting with my brand?)</li><li>Visitor profile > Location overview (Which locations are driving the most usage among users)</li><li>Visitor profile > Geosegmentation > Geo Counties, Geo US States, Geo Regions, Geo Cities, Geo US DMA (Which geographies are my users visiting from?)</li><li>Visitor profile > Languages (Which language do my users prefer?)</li><li>Visitor profile > Time zones (Which time zones are my users visiting from?)</li><li>Visitor profile > Domains (Which ISPs are my visitors using to access my site?)</li><li>Visitor profile > Top level domains (Which domains are driving traffic to my site?)</li><li>Visitor profile > Technology > Technology overview (What technologies are people using to access my site?)</li><li>Visitor profile > Technology > Browsers, Browser type, Browser width, Browser height (Which company's browser, browser version, and its width and height, are people using to access my site?)</li><li>Visitor profile > Technology > Operating system, Operating system types (Which OS and which version of it do my visitors use?)</li><li>Visitor profile > Technology > Mobile carrier (Which mobile carriers do my visitors use to access my site?)</li><li>Visitor retention > Return frequency (How much time passes between my user's current visit and previous visits?)</li><li>Visitor retention > Return visits (How many of my visits are returning users?)</li><li>Visitor retention > Visit number (Which visit number bucket drives most of my key metrics)</li><li>Visitor retention > Sales cycle > Customer loyalty (Which loyalty segment do my users belong to?)</li><li>Visitor retention > Sales cycle > Days before first purchase (How many days passed between my users' first visit and their first purchase?)</li><li>Visitor retention > Sales cycle > Days since last purchase (How many days have passed between my users' current visit and their last purchase? )</li><li>Visitor retention > Mobile > Devices and Device types (Which devices and device types are my visitors using?)</li><li>Visitor retention > Mobile > Manufacturer (Which mobile device manufacturer do my visitors use?)</li><li>Visitor retention > Mobile > Screen size, Screen height, Screen width (Which mobile screen size/height/width do my visitors have?)</li><li>Visitor retention > Mobile > [Mobile app usage](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app journeys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app metrics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app messaging](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app performance](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>Visitor retention > Mobile > [Mobile app retention](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li></ul> |
-| **[!UICONTROL Acquisition]** |<ul><li>Marketing channels > First touch channel, First touch channel detail (Which first touch channel, and which specific first touch channel is performing best?)</li><li>Marketing channels > First last channel, First last channel detail (Which last touch channel, and which specific last touch channel is performing best?)</li><li>Campaigns > Campaigns (Which campaigns are driving my key metrics?)</li><li>Campaigns > Campaign performance (What campaigns are driving the most revenue?)</li><li>Campaigns > Tracking code (Which campaign tracking codes perform the best?)</li><li>[Web acquisition](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#web)</li><li>[Mobile acquisition](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#mobile)</li><li>[Advertising Analytics: paid search](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#advertising)</li><li>Search keywords - all, paid, natural (Which search keywords and paid/natural search keywords drive my key metrics the best?)</li><li>Search engines - all, paid, natural (Which search engines and paid/natural search engines drive my key metrics the best?)</li><li>All search page ranking (Which search page are my users visiting from?)</li><li>Referring domains (Which domains are driving traffic to my site?)</li><li>Original referring domains (What was the first domain users were on before visiting my site?)</li><li>Referrers (Which URLs were my users on before clicking through to my site?)</li><li>Referrer types (Which category do my referring URLs belong to?)</li></ul> |
-
--->
