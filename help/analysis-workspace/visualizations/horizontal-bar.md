@@ -4,7 +4,7 @@ title: Vågrätt streck och vågrätt streck staplade
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Visualiseringen av det vågräta fältet har ett standardalternativ och ett stap
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_horizontalbar_button"
+>id="workspace_horizontalbar_button"
 >title="Vågrätt fält"
 >abstract="Skapa en vågrät fältvisualisering som representerar olika värden för ett eller flera mätvärden."
 
@@ -36,7 +36,7 @@ Visualiseringen av ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.s
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_horizontalbarstacked_button"
+>id="workspace_horizontalbarstacked_button"
 >title="Staplad vågrät stapel"
 >abstract="Skapa en vågrät fältvisualisering för att representera olika värden över en eller flera staplade mätvärden."
 

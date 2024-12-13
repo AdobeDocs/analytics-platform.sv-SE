@@ -4,7 +4,7 @@ title: Punktdiagram
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_goalvalue"
+>id="workspace_bullet_goalvalue"
 >title="Målvärde"
 >abstract="**[!UICONTROL High goal]** är det främsta målet du siktar på. **[!UICONTROL Low goal]** och **[!UICONTROL Mid goal]** skapar intervall under [!UICONTROL High goal]. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]** är markerat. Exempel: `20` om ditt mål är tjugo procent."
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_button"
+>id="workspace_bullet_button"
 >title="Punkt"
 >abstract="Skapa en punktgraf för att visa hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål)."
 

@@ -4,7 +4,7 @@ title: Flödesöversikt
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -16,12 +16,12 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_button"
+>id="workspace_flow_button"
 >title="Flöde"
 >abstract="Skapa en visualisering för att visa flödet av människor från en kontrollpunkt till nästa."
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_panel"
+>id="workspace_flow_panel"
 >title="Flöde"
 >abstract="Analysera besöksflödet eller besökarna från en kontaktyta till nästa.<br/><br/>**Parametrar **<br/>**Börjar med**: Lägg till en dimension, dimensionsobjekt eller mätvärden för att se de högsta kontaktytorna efter förekomsten av den markerade komponenten.<br/>**Innehåller**: Lägg till en dimension eller ett dimensionsobjekt om du vill visa de övre kontaktytorna före och efter förekomsten av den markerade komponenten.<br/>**Slutar med**: Lägg till en dimension, dimensionsobjekt eller mätvärde för att se de övre kontaktytorna innan den valda komponenten finns.<br/>**Målningsdimension**: Lägg till en dimension som ska användas som vägleda till eller gå från den markerade komponenten."
 

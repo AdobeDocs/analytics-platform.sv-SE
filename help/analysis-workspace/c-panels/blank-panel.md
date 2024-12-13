@@ -4,7 +4,7 @@ title: Tom panel
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_blankpanel_button"
+>id="workspace_blankpanel_button"
 >title="Tom panel"
 >abstract="Visa ett urval paneler eller visualiseringar som du kan skapa för att skapa en helt anpassad analys."
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Paneler i Analysis Workspace"

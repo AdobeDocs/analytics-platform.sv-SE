@@ -3,7 +3,8 @@ description: En panel som visar nästa eller föregående dimensionsobjekt för 
 title: Panelen Nästa eller föregående objekt
 feature: Panels
 role: User, Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_nextorpreviousitem_button"
+>id="workspace_nextorpreviousitem_button"
 >title="Nästa eller föregående objekt"
 >abstract="Skapa en panel för att förstå de tidigare dimensioner som personer kommer från eller nästa dimension kommer till."
 
@@ -24,7 +25,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_nextorpreviousitem_panel"
+>id="workspace_nextorpreviousitem_panel"
 >title="Kapsla eller föregående objekt"
 >abstract="Analysera de vanligaste platserna som besökare tidigare kom från eller kom till nästa.<br/><br/>**Dimension**: Välj en dimension. Till exempel **Sida**.<br/>**Dimension**: Markera en specifik dimensionsobjekt. Exempel: **Hemsida**.<br/>**Riktning**: Välj **Nästa** om du vill visa dimensionsobjekten direkt efter den valda dimensionsobjektet. Välj **Föregående** om du vill se dimensionsobjekten som leder upp till den valda dimensionsposten.<br/>**Behållare**: Välj **Session** om du vill visa nästa/föregående dimensionsobjekt i samma session, eller välj **Person** om du vill visa nästa/föregående dimensionsobjekt för samma person."
 

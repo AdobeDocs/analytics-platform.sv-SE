@@ -4,7 +4,7 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_combo_button"
+>id="workspace_combo_button"
 >title="Kombination"
 >abstract="Skapa snabbt en visualisering av kombinationsdiagram utan att först behöva skapa en frihandstabell."
 

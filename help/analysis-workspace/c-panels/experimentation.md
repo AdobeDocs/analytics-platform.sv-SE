@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_button"
+>id="workspace_experimentation_button"
 >title="Experimentation"
 >abstract="Skapa en panel för att jämföra olika användarupplevelser, marknadsförings- och meddelandevarianter. Och för att avgöra vilken variation som är bäst när det gäller att få fram ett visst resultat."
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_panel"
+>id="workspace_experimentation_panel"
 >title="Experimentation"
 >abstract="Jämför olika användarupplevelser, marknadsförings- och meddelandevarianter för att avgöra vilket som är bäst för att få fram ett visst resultat.<br/><br/>**Parametrar **<br/>**Experimentera**: Experimentet som analyseras.<br>**Kontrollvariant**: Kontrollvariant för det valda experimentet.<br/>**Resultatmått**: Upp till 5 standardvärden (ej beräknade) för lyckade försök ska analyseras mot.<br/>**Normaliserar mätvärden**: Personer, sessioner eller händelser. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Detta mått påverkar också hur data aggregeras innan konfidensberäkningen tillämpas."
 
@@ -109,7 +109,7 @@ Så här använder du panelen Experimentation:
 
 Experimentationspanelen returnerar en mängd data och visualiseringar som hjälper dig att förstå hur dina experiment fungerar bättre. Längst upp på panelen visas [sammanfattningsändringar](../visualizations/summary-number-change.md) som en påminnelse om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att välja redigeringspennan längst upp till höger.
 
-Du får också en textsammanfattning som anger om experimentet är slutgiltigt eller inte och som sammanfattar resultatet. Slutsatsen baseras på statistisk signifikans (se [Statistisk metod](#adobes-statistical-methodology)). Du kan se sammanfattningsnummer för den mest högpresterande varianten med högsta lyft och självförtroende.
+Du får också en textsammanfattning som anger om experimentet är slutgiltigt eller inte och som sammanfattar resultatet. Slutsatsen baseras på statistisk signifikans (se [Statistisk metod](#adobes-statistical-methodology)). Du kan se sammanfattningssiffror för den mest högpresterande varianten med största lyft och förtroende.
 
 För varje framgångsmått som du har valt visas en [frihandstabell](../visualizations/freeform-table/freeform-table.md)-visualisering och en [linje](../visualizations/line.md)-visualisering.
 

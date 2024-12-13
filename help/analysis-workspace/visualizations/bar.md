@@ -4,7 +4,7 @@ title: Stolpstreck och stapel
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Fältvisualiseringen har ett standardalternativ och ett staplingsalternativ.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bar_button"
+>id="workspace_bar_button"
 >title="Liggande"
 >abstract="Skapa en fältvisualisering som representerar olika värden för ett eller flera mätvärden."
 
@@ -38,7 +38,7 @@ Med en listruta för granularitet i visualiseringsinställningarna kan du ändra
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_barstacked_button"
+>id="workspace_barstacked_button"
 >title="Stapel staplad"
 >abstract="Skapa en stapelvisualisering för att representera olika värden över en eller flera staplade mätvärden."
 

@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '3350'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Allmänna inställningar gäller för Customer Journey Analytics i webbläsaren.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_shareonlyworkspace"
+>id="workspace_prefs_shareonlyworkspace"
 >title="Tillåt endast delning med Workspace-användare"
 >abstract="När alternativet **[!UICONTROL Share with anyone]** är aktiverat är det inte längre tillgängligt för användare när de delar ett Analysis Workspace-projekt. Personer som tidigare fått åtkomst till ett projekt via det här delningsalternativet har inte längre åtkomst till projektet."
 
@@ -52,7 +52,7 @@ Allmänna inställningar gäller för Customer Journey Analytics i webbläsaren.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_requireexperiencecloudauth"
+>id="workspace_prefs_requireexperiencecloudauth"
 >title="Kräv autentisering av Experience Cloud"
 >abstract="När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet Dela med vem som helst i Analysis Workspace autentisera med sina inloggningsuppgifter för Experience Cloud."
 
@@ -75,7 +75,7 @@ Du kan uppdatera företagsinställningarna som gäller för alla användare och 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_categoricalpalette"
+>id="workspace_prefs_categoricalpalette"
 >title="Kategoriserad palett"
 >abstract="Gäller många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde."
 
@@ -84,7 +84,7 @@ Du kan uppdatera företagsinställningarna som gäller för alla användare och 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_divergingpalette"
+>id="workspace_prefs_divergingpalette"
 >title="Förvrängningspalett"
 >abstract="Används för kohorttabellen i Analysis Workspace och för guidad analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten."
 
@@ -93,7 +93,7 @@ Du kan uppdatera företagsinställningarna som gäller för alla användare och 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_sequentialpalette"
+>id="workspace_prefs_sequentialpalette"
 >title="Sekventiell palett"
 >abstract="Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt."
 
@@ -124,7 +124,7 @@ Vissa av dessa inställningar kan även anpassas för enskilda projekt i Analysi
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showanomalies"
+>id="workspace_prefs_showanomalies"
 >title="Visa avvikelser"
 >abstract="Om du väljer **[!UICONTROL Show anomalies]** körs avvikelseidentifiering automatiskt på den första metriska kolumnen som läggs till i en tidsserievisualisering av frihandstabell."
 
@@ -133,7 +133,7 @@ Vissa av dessa inställningar kan även anpassas för enskilda projekt i Analysi
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showforecast"
+>id="workspace_prefs_showforecast"
 >title="Visa prognos"
 >abstract="Om du väljer **[!UICONTROL Show forecast]** prognostiseras automatiskt den första måttkolumnen som läggs till i en tidsserie visualisering av friformstabell."
 

@@ -4,9 +4,9 @@ description: Lär dig använda en kohorttabell för kohortanalys i Analysis Work
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_button"
+>id="workspace_cohorttable_button"
 >title="Kohortabell"
 >abstract="Skapa en kohortvisualisering för att gruppera användare baserat på slutförandet av en händelse och analysera det pågående engagemanget och bortfallet över tid."
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_panel"
+>id="workspace_cohorttable_panel"
 >title="Alternativtabell"
 >abstract="Gruppera användarna efter att ha slutfört en händelse, analysera sedan deras pågående engagemang och kraschar över tid.<br/><br/>**Parametrar **<br/>**Inkluderingskriterier**: De komponenter som används för att definiera den inledande besökarkohorten.<br/>**Returvillkor**: Komponenterna som används för att avgöra om en besökare har returnerat."
 

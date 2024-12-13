@@ -5,7 +5,7 @@ title: Hantera datakällor
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_lockselection"
+>id="workspace_freeformtable_lockselection"
 >title="Lås markering"
 >abstract="Aktivera den här inställningen för att låsa visualiseringen till de valda positionerna eller de valda objekten i datakällan."
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_lockselection_showtable"
+>id="workspace_freeformtable_lockselection_showtable"
 >title="Visa tabell"
 >abstract="Om du väljer **[!UICONTROL Show table]** genereras en ny datakälla för den aktuella visualiseringen, som är skild från den ursprungliga datakällan."
 

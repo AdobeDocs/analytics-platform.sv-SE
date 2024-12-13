@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Medievisningsprogram för 
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_button"
+>id="workspace_mediaconcurrentviewers_button"
 >title="Medievisningsprogram för samtidig användning"
 >abstract="Skapa en panel för att analysera den genomsnittliga minuten-publiken för visst innehåll, eller under en viss tidsperiod."
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_panel"
+>id="workspace_mediaconcurrentviewers_panel"
 >title="Medievisningsprogram för samtidig användning"
 >abstract="Analysera samtidiga visningsprogram över tid, visa samtidighet vid toppmöten eller dela upp och jämföra.<br/><br>**Kornighet**: Välj en tidsperiod om du vill visa samtidiga visningsprogram efter.<br/>**Panelsammanfattningsnummer**:<br/>Alternativ för att visa sammanfattningsnummer med datum- och tidsinformation för varje rad. Maximal visar detaljer för maximal samtidighet. Minimivärdet visar information om dalvärdet.<br/>**Serieuppdelning (valfritt)**: Dela upp visualisering efter segment, dimensioner, dimensionsobjekt eller datumintervall. Visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå."
 

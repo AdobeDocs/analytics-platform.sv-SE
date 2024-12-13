@@ -4,7 +4,7 @@ title: Histogram
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_histogram_button"
+>id="workspace_histogram_button"
 >title="Histogram"
 >abstract="Skapa en histogramvisualisering som representerar fördelningen av numeriska data i grupper av intervall."
 

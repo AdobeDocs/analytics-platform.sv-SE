@@ -5,7 +5,7 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_activegrowth_button"
+>id="workspace_guidedanalysis_activegrowth_button"
 >title="Aktiv tillväxt"
 >abstract="Identifiera vem som är ny, bevarad, återvändande eller vilande."
 

@@ -4,7 +4,7 @@ description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 8%
@@ -16,13 +16,13 @@ ht-degree: 8%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_button"
+>id="workspace_attribution_button"
 >title="Tillskrivning"
 >abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsmått"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panelen Attribution IQ"
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_panel"
+>id="workspace_attribution_panel"
 >title="Attributionspanelen"
 >abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden.<br/><br/>**Parametrar **<br/>**Kanal**<br/> Dimensionen som ska attribut mot. Denna dimension kan vara marknadsföringskanaler, kampanjer eller andra dimensioner.<br/>**Modeller**<br/> Modellen avgör hur krediter tilldelas till kontaktytor.<br/>**Fönstret för bakåtsökning**<br/> Den här inställningen bestämmer fönstret för dataattribuering som gäller för varje konvertering."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panelen Attribution IQ"

@@ -4,7 +4,7 @@ description: Så här använder och tolkar du den mediespelningstid som används
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_button"
+>id="workspace_mediaplaybacktimespent_button"
 >title="Medieuppspelningstid"
 >abstract="Skapa en panel för att analysera videoförbrukningen över tid, med olika granularitetsnivåer och möjlighet att dela upp och jämföra."
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_panel"
+>id="workspace_mediaplaybacktimespent_panel"
 >title="Medieuppspelningstid"
 >abstract="Analysera videoförbrukningen över tid, välj olika detaljrikedom, uppdelad och jämför.<br/><br/>**Kornighet**: Välj en tidsperiod om du vill visa samtidiga visningsprogram efter.<br/>**Panelsammanfattningsnummer (valfritt)**: Alternativ för att visa sammanfattningsnummer med datum- och tidsinformation för varje rad. Maximalt värde visar detaljer för den maximala uppspelningstiden. Minimivärdet visar information om dalvärdet. Summan visar information om den totala uppspelningstiden.<br/>**Serieuppdelning (valfritt)**: Dela upp visualisering efter segment, dimensioner, dimensionsobjekt eller datumintervall. Visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå.<br/>**Tidsformat**: Alternativ för att visa tidsformatet för visualiseringar i timmar eller minuter."
 

@@ -4,7 +4,7 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_countrepeatinstances"
+>id="workspace_project_countrepeatinstances"
 >title="Antal upprepande instanser"
 >abstract="Anger om upprepade instanser räknas i rapporter.<br/><br/>Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall."
 
@@ -59,7 +59,7 @@ Nu när du har skapat ett tomt Workspace-projekt måste du känna till användar
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_repeatinstances"
+>id="workspace_project_repeatinstances"
 >title="Antal upprepande instanser"
 >abstract="Anger om upprepade instanser räknas i rapporter.<br/>Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall."
 

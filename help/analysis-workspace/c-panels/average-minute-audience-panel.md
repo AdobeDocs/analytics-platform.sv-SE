@@ -4,7 +4,7 @@ description: Hur man använder och tolkar den minimala målgruppspanelen för me
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 28a43ef92bee1359509c0c3f92d51a08653830c3
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaminuteaverageaudience_button"
+>id="workspace_mediaminuteaverageaudience_button"
 >title="Genomsnittlig minutmålgrupp för media"
 >abstract="Skapa en panel för att analysera den genomsnittliga minuten-publiken för visst innehåll, eller under en viss tidsperiod."
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaaverageminuteaudience_panel"
+>id="workspace_mediaaverageminuteaudience_panel"
 >title="Genomsnittlig minutmålgrupp för media"
 >abstract="Visar prestandan för visst medieinnehåll eller för en anpassad tidsperiod.<br/><br/>**Allmänna parametrar **<br/>**Beräkna mätvärden för**: Välj det mätvärde som ska användas för panelen. Välj **Specifikt innehåll** om du vill analysera den genomsnittliga minuten-publiken för specifikt innehåll eller händelse utifrån innehållets längd. **Välj Anpassad tidsperiod** om du vill analysera hur den genomsnittliga minuten publiken ändras under en anpassad vald tidsperiod.<br/>**Rapporteringsdimension**: Välj att rapportera med **videonamn** för dimensionen **Innehåll-ID**. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde.<br/>**Kornighet**: Välj granularitet för rapporten. Endast tillgängligt när du har valt Anpassad tidsperiod som mått.<br/>**Filtrera innehåll efter (valfritt)**: Välj ett specifikt program, årstid, avsnitt eller välj en anpassad dimension för att filtrera innehållet.<br/><br/>**Avancerade inställningar **<br/>**Tabellinställningar**: Välj om du vill visa beräkningsvärden i tabellen.<br/>**Tidsåtgång för mått**: Välj vilken tid du vill använda för beräkning av specifikt innehåll. Endast tillgängligt när du har valt Specifikt innehåll som mätvärde."
 
