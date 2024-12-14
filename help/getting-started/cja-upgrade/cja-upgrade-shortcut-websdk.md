@@ -1,19 +1,20 @@
 ---
-title: Uppgradera genväg Migrera en AppMeasurement- eller Analytics-tilläggsimplementering till Web SDK
+title: Uppgradera genväg Migrera en AppMeasurement- eller Analytics-tilläggsimplementering för att använda Web SDK
 description: Läs mer om rekommenderad sökväg när du uppgraderar från Adobe Analytics till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8ef60cc3918b79919674e3c0478a2c1b1bd21d27
+exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
+source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
-# Uppgraderingsgenväg: Migrera en implementering av ett AppMeasurement- eller Analytics-tillägg till Web SDK {#shortcut-migrate-websdk}
+# Uppgraderingsgenväg: Migrera en AppMeasurement- eller Analytics-tilläggsimplementering till Web SDK {#shortcut-migrate-websdk}
 
 >[!NOTE]
 >
@@ -23,18 +24,18 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
->title="Migrera din Analytics-implementering till Web SDK"
+>title="Migrera din Analytics-implementering till att använda Web SDK"
 >abstract="I stället för att skicka data via ett XDM-objekt kan du skicka alla variabler i AppMeasurement-format via dataobjektet. Med den här genvägen kan du fortsätta att använda AppMeasurementen logik för att skicka data till plattformen."
 
 <!-- markdownlint-enable MD034 -->
 
-När du uppgraderar till Customer Journey Analytics rekommenderar [Adobe en ny implementering av Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Beroende på flera faktorer, som tidslinje och resursbegränsningar, kanske de rekommenderade uppgraderingsstegen inte är praktiska för din organisation.
+När du uppgraderar till Customer Journey Analytics rekommenderar Adobe [en ny implementering av Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Beroende på flera faktorer, som tidslinje och resursbegränsningar, kanske de rekommenderade uppgraderingsstegen inte är praktiska för din organisation.
 
-Om din Adobe Analytics-implementering är AppMeasurement eller Analytics-tillägget finns det en uppgraderingsgenväg som gör att du kan migrera din Adobe Analytics-implementering för att använda Adobe Experience Platform Web SDK för att börja skicka data till Edge Network och Adobe Analytics innan du skickar den till Customer Journey Analytics.
+Om din Adobe Analytics-implementering är AppMeasurement eller Analytics-tillägget finns det en uppgraderingsgenväg som gör att du kan migrera din Adobe Analytics-implementering och använda Adobe Experience Platform Web SDK för att börja skicka data till Edge Network och Adobe Analytics innan du skickar den till Customer Journey Analytics.
 
 ## Fördelar och fördelar
 
-Tänk på följande fördelar och nackdelar med uppgraderingsgenvägen när du migrerar implementeringen av AppMeasurementet eller Analytics-tillägget till Web SDK:
+Tänk på följande för- och nackdelar med uppgraderingsgenvägen när du migrerar implementeringen av AppMeasurementet eller Analytics-tillägget till Web SDK:
 
 | Fördelar | Nackdelar |
 |----------|---------|
@@ -55,4 +56,3 @@ De grundläggande stegen för att migrera en implementering av ett AppMeasuremen
 1. (Valfritt) Skapa ett XDM-schema för din organisation när du har tid.
 
 1. (Villkorligt) Om du skapade ett XDM-schema kan du mappa alla fält i dataobjektet till XDM-schemat med hjälp av datastreamappning.
-
