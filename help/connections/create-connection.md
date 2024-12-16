@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
+source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3610'
 ht-degree: 0%
 
 ---
@@ -204,8 +204,6 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 
 <!-- markdownlint-enable MD034 -->
 
-
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -232,6 +230,16 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >abstract="Det här alternativet omformar datauppsättningen så att den kan användas för personbaserade sökningar i B2B-scenarier. När den är aktiverad är omvandlingen av datauppsättningen oåterkallelig."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_connectionmap"
+>title="Anslutningskarta"
+>abstract="Anslutningskartan visar relationerna mellan händelse-, person-, konto- och relevanta sökdatauppsättningar (som affärsmöjligheter, kampanjmedlemmar med mera)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Platform när du skapar en anslutning.
 

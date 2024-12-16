@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
 workflow-type: tm+mt
-source-wordcount: '3049'
+source-wordcount: '3150'
 ht-degree: 0%
 
 ---
@@ -205,6 +205,46 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 
 
 ## Användning
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_keyusagemetrics"
+>title="Viktiga användningsmått"
+>abstract="Ange månads- och totaldata för rader som ska rapporteras, både för kärnrader och historiska rader."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyingestedrows"
+>title="Månatliga kapslade rader"
+>abstract="Mäter det totala antalet poster som läggs till i systemet varje månad för att ge insikter om datatillväxt och intagsfrekvens."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyreportablerows"
+>title="Månatliga rapporteringsbara rader"
+>abstract="Spårar antalet rader som är tillgängliga för rapportering. Rapporteringsbara rader är de inkapslade raderna minus de rader som hoppas över och tas bort under intag. Rapporteringsbara rader fungerar som nyckeltal för fakturering och dataanvändning."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_detailbreakdown"
+>title="Detaljuppdelning."
+>abstract="Du kan visa detaljerade mått efter anslutning, datauppsättning, sandlåda och taggar, med alternativet att hämta en CSV-fil med data."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Gränssnittet [!UICONTROL Usage] visar hur inkapslade och rapportbara rader används i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. Förutom övervakningsfunktioner kan du använda användargränssnittet för att planera förnyelsen av din Customer Journey Analytics-licens.
 
