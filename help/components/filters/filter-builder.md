@@ -4,9 +4,9 @@ title: Skapa filter
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 8772f2dcd5f9c20ca9d366b8c172218f45e4713c
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,16 @@ ht-degree: 0%
 >abstract="Målgrupper kan skapas från ett filter och delas med Adobe Experience Platform för aktivering."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filter_datapreview"
+>title="Förhandsgranska data"
+>abstract="Jämför data i det här filtret med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Dialogrutan **[!UICONTROL Filter builder]** används för att skapa nya eller redigera befintliga filter. Dialogrutan heter **[!UICONTROL New filter]** eller **[!UICONTROL Edit filter]** för filter som du skapar eller hanterar från hanteraren [[!UICONTROL Filters] ](/help/components/filters/manage-filters.md).

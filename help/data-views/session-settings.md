@@ -5,14 +5,26 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
-# Sessionsinställningar
+# Sessionsinställningar {#session-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_settings_datapreview"
+>title="Förhandsgranska data"
+>abstract="Jämför data i det här filtret med data i anslutningen. Procentandelen för förhandsgranskning baseras på det totala antalet i anslutningen från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-enable MD034 -->
+
 
 I Customer Journey Analytics kan ni definiera en session på vilket sätt som helst för att matcha hur människor interagerar med era digitala upplevelser. Du konfigurerar sessionsinställningar i en datavy.
 
