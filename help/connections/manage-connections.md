@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
 workflow-type: tm+mt
-source-wordcount: '3150'
+source-wordcount: '3204'
 ht-degree: 0%
 
 ---
@@ -243,6 +243,25 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >abstract="Du kan visa detaljerade mått efter anslutning, datauppsättning, sandlåda och taggar, med alternativet att hämta en CSV-fil med data."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_otherdatasets"
+>title="Andra datauppsättningar"
+>abstract="För månader före september 2024 samlades data in på datauppsättningsnivå och visas som *Andra datauppsättningar* för tydlighet. Från och med september 2024 samlas data in på en detaljerad datauppsättningsnivå och *andra datauppsättningar* visas inte längre."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_unknowndatasetsorconnections"
+>title="Okända datauppsättningar eller anslutningar"
+>abstract="Okända datauppsättningar eller anslutningar visas med deras ID."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 
