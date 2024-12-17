@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
+source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
-source-wordcount: '3204'
+source-wordcount: '3322'
 ht-degree: 0%
 
 ---
@@ -262,7 +262,32 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_datanotavailable"
+>title="Data är inte tillgängliga"
+>abstract="Historiska data före september 2024 är inte tillgängliga på grund av systembegränsningar. Mätvärden samlas in och visas från och med september 2024. Diagrammet visar de 18 senaste månaderna på tidslinjen och framtida data visas när data blir tillgängliga."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_corereportablerows"
+>title="Centrala rapporteringsbara rader"
+>abstract="Visar det totala antalet rader som är tillgängliga de senaste 13 månaderna. Den 1 februari 2024 visar till exempel antalet totalt antal rader som är tillgängliga med en händelsetidsstämpel från januari 2023 till januari 2024."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_historicalreportablerows"
+>title="Historiska rader som ska rapporteras"
+>abstract="Visar det totala antalet rader som är tillgängliga för en period som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
+
+<!-- markdownlint-enable MD034 -->
 
 
 Gränssnittet [!UICONTROL Usage] visar hur inkapslade och rapportbara rader används i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. Förutom övervakningsfunktioner kan du använda användargränssnittet för att planera förnyelsen av din Customer Journey Analytics-licens.
