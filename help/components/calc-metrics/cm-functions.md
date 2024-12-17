@@ -4,10 +4,10 @@ description: Med beräkningsverktyget kan du använda statistiska och matematisk
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 2%
+source-wordcount: '1569'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,17 @@ Ett alternativt scenario är att du har två intressanta mätvärden och ett har
 
 
 
-## Absolut värde
+## Absolut värde {#absolute-value}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_absolute_value"
+>title="Absolut värde"
+>abstract="Returnerar det absoluta värdet av ett tal. Det absoluta värdet för ett tal är talet med ett positivt värde."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
@@ -49,7 +59,16 @@ Ett alternativt scenario är att du har två intressanta mätvärden och ett har
 | mått | Det mått som du vill beräkna det absoluta värdet för. |
 
 
-## Högsta kolumn
+## Högsta kolumn {#column-maximum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_maximum"
+>title="Högsta kolumn"
+>abstract="Returnerar det största värdet i en uppsättning dimensionselement för en måttkolumn. MAXV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
@@ -61,7 +80,17 @@ Returnerar det största värdet i en uppsättning dimensionselement för en måt
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
 
-## Minsta kolumn
+## Minsta kolumn {#column-minimum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_minimum"
+>title="Minsta kolumn"
+>abstract="Returnerar det minsta värdet i en uppsättning dimensionselement för en måttkolumn. MINV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
@@ -73,7 +102,17 @@ Returnerar det minsta värdet i en uppsättning dimensionselement för en måttk
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
 
-## Kolumnsumma
+## Kolumnsumma {#column-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_sum"
+>title="Kolumnsumma"
+>abstract="Lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
@@ -84,7 +123,17 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 
 
-## Antal
+## Antal {#count}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_count"
+>title="Antal"
+>abstract="Returnerar antalet, eller antalet, värden som inte är noll för ett mätvärde i en kolumn (antalet unika element som rapporteras inom en dimension)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
@@ -95,7 +144,16 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | mått | Det mätvärde som du vill räkna. |
 
 
-## Exponent
+## Exponent {#exponent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponent"
+>title="Exponent"
+>abstract="Returnerar e upphöjt till ett angivet tal. Konstanten e är lika med 2,71828182845904, basen för den naturliga logaritmen. EXPONENT är den inverterade LN, den naturliga logaritmen av ett tal."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
@@ -106,7 +164,17 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | mått | Exponenten som används på basen e. |
 
 
-## Medel
+## Medel {#mean}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_mean"
+>title="Medel"
+>abstract="Returnerar det aritmetiska medelvärdet, eller medelvärdet, för ett mått i en kolumn"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
@@ -118,7 +186,17 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
 
-## Median
+## Median {#median}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_median"
+>title="Median"
+>abstract="Returnerar medianvärdet för ett mått i en kolumn. Medianvärdet är talet i mitten av en sifferuppsättning. Det innebär att hälften av talen har värden som är större än eller lika med medianen och hälften är mindre än eller lika med medianen."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -130,7 +208,17 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
 
-## Modulo
+## Modulo {#modulo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_modulo"
+>title="Modulo"
+>abstract="Returnerar resten efter division av x med y med division Euclidean. "
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
@@ -157,7 +245,17 @@ För att vara säker på att du alltid får ett positivt tal använder du
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## Procent
+## Procent {#percentile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_percentile"
+>title="Procent"
+>abstract="Returnerar den n:e percentilen, som är ett värde mellan 0 och 100. När n &lt; 0 används noll. När n > 100 returneras 100."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
@@ -171,7 +269,16 @@ MODULO(MODULO(x,y)+y,y)
 
 
 
-## Effektoperator
+## Strömoperator {#power-operator}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_operator"
+>title="Strömoperator"
+>abstract="Returnerar x upphöjt till y-potensen."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
@@ -183,7 +290,17 @@ Returnerar x upphöjt till y-potensen.
 | metric_Y | Den kraft som du vill upphöja metric_X till. |
 
 
-## Quartile
+## Quartile {#quartile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quartile"
+>title="Quartile"
+>abstract="Returnerar kvartilen med värden för ett mått. Du kan till exempel använda kvartilarna för att hitta de 25 % av de bästa produkterna som genererar störst intäkter."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
@@ -196,7 +313,16 @@ Returnerar x upphöjt till y-potensen.
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
 
-## Ansökningstillfälle
+## Ansökningstillfälle {#round}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_round"
+>title="Ansökningstillfälle"
+>abstract="Rund utan parametern *number* är samma som rund med parametern *number* på 0, det vill säga rund till närmaste heltal.  Med parametern *number* returnerar ROUND siffrorna *number* till höger om decimaltalet.  Om *number* är negativt returneras 0 till vänster om decimaltalet."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
@@ -216,15 +342,32 @@ ROUND( 314.15, -1) = 310
 ROUND( 314.15, -2) = 300
 ```
 
+## Antal rader {#row-count}
 
-## Antal rader
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_count"
+>title="Antal rader"
+>abstract="Returnerar antalet rader för en given kolumn (antalet unika element som rapporteras inom en dimension). *Unique-värden som överstiger* räknas som 1."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
 Returnerar antalet rader för en given kolumn (antalet unika element som rapporteras inom en dimension). *Unique-värden som överstiger* räknas som 1.
 
 
-## Max rad
+## Max rad {#row-max}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_max"
+>title="Max rad"
+>abstract="Maximalt antal kolumner för varje rad."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
@@ -235,7 +378,17 @@ Maximalt antal kolumner för varje rad.
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
-## Min rad
+
+## Min rad {#row-min}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_min"
+>title="Min rad"
+>abstract="Minsta antal kolumner för varje rad."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
@@ -248,7 +401,16 @@ Minsta antal kolumner för varje rad.
 
 
 
-## Radsumma
+## Radsumma {#row-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_sum"
+>title="Radsumma"
+>abstract="Summan av kolumnerna i varje rad."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
@@ -259,7 +421,17 @@ Summan av kolumnerna i varje rad.
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 
 
-## Kvadratrot
+## Kvadratrot {#square-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_square_root"
+>title="Kvadratrot"
+>abstract="Returnerar den positiva kvadratroten av ett tal. Kvadratroten av ett tal är värdet av talet upphöjt till 1/2."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
@@ -270,7 +442,16 @@ Summan av kolumnerna i varje rad.
 | mått | Måttet som du vill beräkna kvadratroten för. |
 
 
-## Standardavvikelse
+## Standardavvikelse {#standard-deviation}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_standard_deviation"
+>title="Standardavvikelse"
+>abstract="Returnerar standardavvikelsen, eller kvadratroten av variansen, baserat på en exempelpopulation med data."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
@@ -282,7 +463,16 @@ Summan av kolumnerna i varje rad.
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
 
-## Varians
+## Varians {#variance}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_variance"
+>title="Varians"
+>abstract="Returnerar variansen baserat på en exempelpopulation med data."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
@@ -320,9 +510,6 @@ I exemplet med följande kolumn med tre objekt:
 | 3 |
 
 Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)<sup>2</sup> + (2 - 2)<sup></sup> + (3 - 2)<sup> </sup>/3) = 2/3.
-
-
-
 
 <!--
 

@@ -4,10 +4,10 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
 workflow-type: tm+mt
-source-wordcount: '2856'
-ht-degree: 2%
+source-wordcount: '4153'
+ht-degree: 1%
 
 ---
 
@@ -32,19 +32,36 @@ Om du till exempel har ett intäktsmått och sedan lägger till ett sidvymått i
 Ett alternativt scenario är att du har två intressanta mätvärden och ett har ett högre genomsnitt eller minimum eftersom några av raderna är nollor.  I så fall kan du välja att inte kontrollera parametern så att den innehåller nollor.
 
 
-## Och
+## Och {#and}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_and"
+>title="Och"
+>abstract="Förening. Inte lika med noll anses vara sant och lika med noll anses vara falskt. Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-
 Förening. Inte lika med noll anses vara sant och lika med noll anses vara falskt. Utdata är antingen 0 (false) eller 1 (true).
-
 
 | Argument | Beskrivning |
 |---|---|
 | logical_test | Kräver minst en parameter, men kan ha ett valfritt antal parametrar. Alla värden eller uttryck som kan utvärderas till TRUE eller FALSE |
 
-## Distinkt antal
+
+## Distinkt antal {#approximate_count_distinct}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_approximate_count_distinct"
+>title="Distinkt antal"
+>abstract="Returnerar det ungefärliga distinkta antalet dimensionsobjekt för den valda dimensionen."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL APPROXIMATE COUNT DISTINCT(dimension)]**
 
@@ -62,8 +79,16 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 
 
 
+## Arc Cosine {#arc-cosine}
 
-## Arc Cosine
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_cosine"
+>title="Arc Cosine"
+>abstract="Returnerar arcus cosinus, eller inverterad cosinus, för ett mätresultat. Arcus cosinus är den vinkel vars cosinus är tal. Den returnerade vinkeln anges i radianer i intervallet 0 (noll) till pi. Om du vill konvertera resultatet från radianer till grader multiplicerar du det med 180/PI()."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
@@ -77,7 +102,16 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 
 
 
-## Båge sinus
+## Båge sinus {#arc-sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_sine"
+>title="Båge sinus"
+>abstract="Returnerar arcus sinus, eller inverterad sinus, för ett tal. Arcussinus är vinkeln vars sinus är ett tal. Den returnerade vinkeln anges i radianer i intervallet -pi/2 till pi/2. Om du vill uttrycka arcus sinus i grader multiplicerar du resultatet med 180/PI()"
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
@@ -91,7 +125,16 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 
 
 
-## Bågtangent
+## Bågtangent {#arc-tangent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_tangent"
+>title="Bågtangent"
+>abstract="Returnerar talets arcus tangens, eller inverterade tangent. Arcus tangent är vinkeln vars tangent är ett tal. Den returnerade vinkeln anges i radianer i intervallet -pi/2 till pi/2. Om du vill uttrycka arcus tangens i grader multiplicerar du resultatet med 180/PI()."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
@@ -105,13 +148,20 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 
 
 
-## Cdf-T
+## Cdf-T {#cdf-t}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_t"
+>title="Cdf-T"
+>abstract="Returnerar sannolikheten för att en slumpmässig variabel med studentfördelning med n frihetsgrader har ett z-score mindre än kol."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(metric, number)]**
 
-
 Returnerar sannolikheten för att en slumpmässig variabel med studentfördelning med n frihetsgrader har ett z-score mindre än kol.
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -129,13 +179,20 @@ CDF-T(x, ∞) ? cdf_z(x)
 ```
 
 
-## Cdf-Z
+## Cdf-Z {#cdf-z}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_z"
+>title="Cdf-Z"
+>abstract="Returnerar sannolikheten för att en slumpvariabel med en normal fördelning har ett z-score som är mindre än col."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(metric, number)]**
 
-
 Returnerar sannolikheten för att en slumpvariabel med en normal fördelning har ett z-score som är mindre än col.
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -151,20 +208,61 @@ CDF-Z(2) ? 0.97725
 CDF-Z(-3) ? 0.0013499
 ```
 
-## Tak
+## Tak {#ceiling}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_ceiling"
+>title="Tak"
+>abstract="Returnerar det minsta heltalet som inte är mindre än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln CEILING(Intäkter) för att avrunda intäkten upp till närmaste dollar, eller 570 USD."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
 | mått | Det mätvärde som du vill runda av |
 
 
-## Förtroende (lägre)
+## Förtroende {#confidence}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence"
+>title="Förtroende"
+>abstract="Beräkna det tidssäkra förtroendet med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
+
+Beräkna det tidssäkra förtroendet med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476).
+
+Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att en viss variant är densamma som kontrollvarianten. Ett högre förtroende tyder inte på att kontrollvarianten och icke-kontrollvarianten har samma prestanda.
+
+| Argument | Beskrivning |
+| --- | --- |
+| normalizing-container | Basen (Personer, Sessioner eller Händelser) som ett test körs på. |
+| framgångsmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
+| control | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
+| signifikanströskel | Tröskelvärdet i den här funktionen är inställt på 95 % som standard. |
+
+
+## Förtroende (lägre) {#confidence-lower}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_lower"
+>title="Förtroende (lägre)"
+>abstract="Beräkna valfri giltig konfidensgrad **lower** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
@@ -179,7 +277,16 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 | control | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
 | signifikanströskel | Tröskelvärdet i den här funktionen är inställt på 95 % som standard. |
 
-## Förtroende (övre)
+## Förtroende (övre) {#confidence-upper}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_upper"
+>title="Förtroende (övre)"
+>abstract="Beräkna det valfria tidsgiltiga förtroendet **upper** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
@@ -195,7 +302,16 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 | signifikanströskel | Tröskelvärdet i den här funktionen är inställt på 95 % som standard. |
 
 
-## Cosine
+## Cosine {#cosine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cosine"
+>title="Cosine"
+>abstract="Returnerar cosinus för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
@@ -206,7 +322,16 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 | mått | Vinkeln i radianer som du vill ha cosinus för |
 
 
-## Kubrot
+## Kubrot {#cube-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cube_root"
+>title="Kubrot"
+>abstract="Returnerar den positiva kubroten för ett tal. Kubroten för ett tal är värdet för det talet upphöjt till upphöjt till upphöjt till 1/3."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUBE ROOT(metric)]**
 
@@ -220,7 +345,16 @@ Returnerar den positiva kubroten för ett tal. Kubroten för ett tal är värdet
 
 
 
-## Kumulativ
+## Kumulativ {#cumulative}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative"
+>title="Kumulativ"
+>abstract="Returnerar summan av de sista n elementen i kolumn x. Om n > 0 är summan av de sista n elementen eller x. Om n &lt; 0, summera föregående element."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
@@ -240,7 +374,16 @@ Returnerar summan av de sista n elementen i kolumn x. Om n > 0 är summan av de 
 | Juli | 400 dollar | 1 100 dollar | 600 dollar |
 
 
-## Kumulativ (medel)
+## Kumulativ (medel) {#cumulative-average}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative_average"
+>title="Kumulativ (medel)"
+>abstract="Returnerar medelvärdet för de sista n elementen i kolumn x. Om n > 0 är summan av de sista n elementen eller x. Om n &lt; 0, summera föregående element."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
@@ -257,10 +400,18 @@ Returnerar medelvärdet för de sista n elementen i kolumn x. Om n > 0 är summa
 >
 
 
-## Jämn
+## Jämn {#equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_equal"
+>title="Jämn"
+>abstract="Lika. Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
-
 
 Lika. Utdata är antingen 0 (false) eller 1 (true).
 
@@ -275,8 +426,16 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 `Metric 1 = Metric 2`
 
 
+## Exponentiell regression: Korrelationskoefficient {#exponential-regression-correlation-coefficient}
 
-## Exponentiell regression: Korrelationskoefficient
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>title="Exponentiell regression: Korrelationskoefficient"
+>abstract="Exponentiell regression: Y = en exp(X) + b. Returnerar korrelationskoefficienten."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
@@ -290,7 +449,16 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 | metric_Y | Ett mått som du vill korrelera med metric_X |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
-## Exponentiell regression: Förväntat Y
+## Exponentiell regression: Förväntat Y {#exponential-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_predicted_y"
+>title="Exponentiell regression: Förväntat Y"
+>abstract="Exponentiell regression: Y = en exp(X) + b. Returnerar Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
@@ -305,7 +473,16 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Exponentiell regression: Intercept
+## Exponentiell regression: Intercept {#exponential-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_intercept"
+>title="Exponentiell regression: Intercept"
+>abstract="Exponentiell regression: Y = a exp(X) + b. Returnerar b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -319,7 +496,16 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Exponentiell regression: Lutning
+## Exponentiell regression: Lutning {#exponential-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_slope"
+>title="Exponentiell regression: Lutning"
+>abstract="Exponentiell regression: Y = a exp(X) + b. Returnerar a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
@@ -334,7 +520,16 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Floor
+## Floor {#floor}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_floor"
+>title="Floor"
+>abstract="Returnerar det största heltalet som inte är större än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln FLOOR(Intäkter) för att avrunda intäkten nedåt till närmaste dollar, eller 569 dollar."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
@@ -345,13 +540,20 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 | mått | Det mätvärde som du vill runda av. |
 
 
-## Större än
+## Större än {#greather-than}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than"
+>title="Större än"
+>abstract="Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN()]**
 
-
 Utdata är antingen 0 (false) eller 1 (true).
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -362,13 +564,21 @@ Utdata är antingen 0 (false) eller 1 (true).
 
 `Metric 1 > Metric 2`
 
-## Större än eller lika med
+
+## Större än eller lika med {#greater-than-or-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than_or_equal"
+>title="Större än eller lika med"
+>abstract="Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL()]**
 
-
 Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -381,7 +591,16 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Hyperbolisk cosinus
+## Hyperbolisk cosinus {#hyperbolic-cosine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_cosine"
+>title="Hyperbolisk cosinus"
+>abstract="Returnerar hyperbolisk cosinus för ett tal."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
@@ -395,34 +614,56 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Hyperbolisk sinus
+## Hyperbolisk sinus {#hyperbolic-sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_sine"
+>title="Hyperbolisk sinus"
+>abstract="Returnerar hyperbolisk sinus för ett tal."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
 | mått | Vinkeln i radianer som du vill hitta hyperbolisk sinus för |
 
 
+## Hyperbolisk tangens {#hyperbolic-tangent}
 
-## Hyperbolisk tangens
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_tangent"
+>title="Hyperbolisk tangens"
+>abstract="Returnerar hyperbolisk tangens för ett tal."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
 | mått | Vinkeln i radianer som du vill hitta hyperbolisk tangent för |
 
 
-## If
+## If {#if}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_if"
+>title="If"
+>abstract="Om värdet för villkorsparametern är icke-noll (true) är resultatet värdet för parametern value_if_true. I annat fall är det värdet på parametern value_if_false."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
@@ -437,30 +678,45 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 | value_if_false | Värdet som du vill returnera om argumentet logical_test utvärderas till FALSE. (Det här argumentet är som standard 0 om det inte inkluderas.) |
 
 
-## Mindre än
+## Mindre än {#less-than}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than"
+>title="Mindre än"
+>abstract="Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
 
-
 Utdata är antingen 0 (false) eller 1 (true).
-
 
 | Argument | Beskrivning |
 |---|---|
 | metric_X | |
 | metric_Y | |
 
-
 ### Exempel
 
 `Metric 1 < Metric 2`
 
-## Mindre än eller lika med
+
+## Mindre än eller lika med {#less-than-or-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than_or_equal"
+>title="Mindre än eller lika med"
+>abstract="Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
 Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -473,7 +729,35 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Linjär regression: Korrelationskoefficient
+## Lyft (#lift)
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_lift"
+>title="Lyft"
+>abstract="Höjden på kvoten jämfört med kontrollvärdet."
+
+<!-- markdownlint-enable MD034 -->
+
+| Argument | Beskrivning |
+| --- | --- |
+| normalizing-container | Basen (Personer, Sessioner eller Händelser) som ett test körs på. |
+| framgångsmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
+| control | Den variant som alla andra varianter i experimentet jämförs med. Ange namnet på kontrollvariantens dimensionsobjekt. |
+
+
+
+## Linjär regression: Korrelationskoefficient {#linear-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_correlation_coefficient"
+>title="Linjär regression: Korrelationskoefficient"
+>abstract="Linjär regression: Y = a X + b. Returnerar korrelationskoefficienten."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
@@ -489,7 +773,16 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Linear regression: Intercept
+## Linear Regression: Intercept {#linear-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_intercept"
+>title="Linear Regression: Intercept"
+>abstract="Linear regression: Y = a X + b. Returns b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -505,7 +798,16 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Linear regression: Predicated Y
+## Linear Regression: Predicated Y {#linear-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_predicted_y"
+>title="Linear Regression: Predicated Y"
+>abstract="Linjär regression: Y = a X + b. Returnerar Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
@@ -521,13 +823,20 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Linjär regression: Lutning
+## Linjär regression: Lutning {#linear-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_slope"
+>title="Linjär regression: Lutning"
+>abstract="Linjär regression: Y = a X + b. Returnerar a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -536,7 +845,16 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Loggbas 10
+## Loggbas 10 {#log-base-ten}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_base_ten"
+>title="Loggbas 10"
+>abstract="Returnerar 10-logaritmen för ett tal."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
@@ -549,13 +867,20 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 | mått | Det positiva realtal som du vill ha bas-10-logaritmen för |
 
 
-## Loggregression: Korrelationskoefficient
+## Loggregression: Korrelationskoefficient {#log-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_coefficient"
+>title="Loggregression: Korrelationskoefficient"
+>abstract="abstrakt"
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -564,13 +889,20 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Loggregression: Korsning
+## Loggregression: Skärpning {#log-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_intercept"
+>title="Loggregression: Skärpning"
+>abstract="Loggregression: Y = a ln(X) + b. Returnerar b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -580,13 +912,20 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Loggregression: Förväntat Y
+## Loggregression: Förväntat Y {#log-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_predicted_y"
+>title="Loggregression: Förväntat Y"
+>abstract="Loggregression: Y = a ln(X) + b. Returnerar Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -596,13 +935,20 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Loggregression: Långsam
+## Loggregression: Långsam {#log-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_slope"
+>title="Loggregression: Långsam"
+>abstract="Loggregression: Y = a ln(X) + b. Returnerar a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -612,13 +958,20 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Naturlig logg
+## Naturlig logg {#natural-log}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_natural_log"
+>title="Naturlig logg"
+>abstract="Returnerar den naturliga logaritmen för ett tal. Naturliga logaritmer baseras på konstanten e (2.71828182845904). LN är inversen till EXP-funktionen."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL NATURAL LOG(metric)]**
 
-
 Returnerar den naturliga logaritmen för ett tal. Naturliga logaritmer baseras på konstanten e (2.71828182845904). LN är inversen till EXP-funktionen.
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -626,13 +979,20 @@ Returnerar den naturliga logaritmen för ett tal. Naturliga logaritmer baseras p
 
 
 
-## Inte
+## Inte {#not}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not"
+>title="Inte"
+>abstract="Negation som boolesk. Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
 
-
 Negation som boolesk. Utdata är antingen 0 (false) eller 1 (true).
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -640,7 +1000,16 @@ Negation som boolesk. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Inte lika med
+## Inte lika med {#not-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not_equal"
+>title="Inte lika med"
+>abstract="Inte lika med. Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
@@ -658,7 +1027,16 @@ Inte lika med. Utdata är antingen 0 (false) eller 1 (true).
 `Metric 1 != Metric 2`
 
 
-## eller
+## eller {#or}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_or"
+>title="eller"
+>abstract="Förskjutning. Inte lika med noll anses vara sant och lika med noll anses vara falskt. Utdata är antingen 0 (false) eller 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
@@ -676,20 +1054,36 @@ Inte lika med. Utdata är antingen 0 (false) eller 1 (true).
 >0 (noll) betyder False och alla andra värden är True.
 
 
-## Pi
+## Pi {#pi}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_pi"
+>title="Pi"
+>abstract="Returnerar Pi: 3,14159..."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
 Returnerar Pi: 3,14159...
 
 
-## Effektregression: Korrelationskoefficient
+## Effektregression: Korrelationskoefficient {#power-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_correlation_coefficient"
+>title="Effektregression: Korrelationskoefficient"
+>abstract="Strömregression: Y = b X ^ a. Returnerar korrelationskoefficienten."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -699,7 +1093,16 @@ Returnerar Pi: 3,14159...
 
 
 
-## Strömregression: Skärpning
+## Strömregression: Skärpning {#power-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_intercept"
+>title="Strömregression: Skärpning"
+>abstract="Strömregression: Y = b X ^ a. Returnerar b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -714,13 +1117,20 @@ Returnerar Pi: 3,14159...
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Strömregression: Förväntat Y
+## Strömregression: Förväntat Y {#power-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_predicted_y"
+>title="Strömregression: Förväntat Y"
+>abstract="Strömregression: Y = b X ^ a. Returnerar Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -730,13 +1140,20 @@ Returnerar Pi: 3,14159...
 
 
 
-## Strömregression: Långsam
+## Strömregression: Långsam {#power-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_slope"
+>title="Strömregression: Långsam"
+>abstract="Strömregression: Y = b X ^ a. Returnerar a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -746,13 +1163,20 @@ Returnerar Pi: 3,14159...
 
 
 
-## Kvadratisk regression: Korrelationskoefficient
+## Kvadratisk regression: Korrelationskoefficient {#quadratic-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>title="Kvadratisk regression: Korrelationskoefficient"
+>abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar korrelationskoefficienten."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -760,13 +1184,20 @@ Returnerar Pi: 3,14159...
 | metric_Y | Ett mått som du vill korrelera med metric_X |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
-## Kvadratisk regression: Intercept
+## Kvadratisk regression: Intercept {#quadratic-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_intercept"
+>title="Kvadratisk regression: Intercept"
+>abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -775,13 +1206,20 @@ Returnerar Pi: 3,14159...
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Kvadratisk regression: Förväntat Y
+## Kvadratisk regression: Förväntat Y {#quadratic-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_predicted_y"
+>title="Kvadratisk regression: Förväntat Y"
+>abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -789,13 +1227,21 @@ Returnerar Pi: 3,14159...
 | metric_Y | Ett mätvärde som du vill ange som oberoende data |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
-## Kvadratisk regression: Långsam
+
+## Kvadratisk regression: Långsam {#quadratic-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_slope"
+>title="Kvadratisk regression: Långsam"
+>abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -805,13 +1251,20 @@ Returnerar Pi: 3,14159...
 
 
 
-## Ömsesidig regression: Korrelationskoefficient
+## Ömsesidig regression: Korrelationskoefficient {#reciprocal-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>title="Ömsesidig regression: Korrelationskoefficient"
+>abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar korrelationskoefficienten."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -820,13 +1273,20 @@ Returnerar Pi: 3,14159...
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Ömsesidig regression: Skärpning
+## Ömsesidig regression: Korsning {#reciprocal-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_intercept"
+>title="Ömsesidig regression: Korsning"
+>abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -835,13 +1295,20 @@ Returnerar Pi: 3,14159...
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Ömsesidig regression: Förväntat Y
+## Ömsesidig regression: Förutsedd Y {#reciprocal-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_predicted_y"
+>title="Ömsesidig regression: Förutsedd Y"
+>abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -850,13 +1317,20 @@ Returnerar Pi: 3,14159...
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## Ömsesidig regression: Lutning
+## Ömsesidig regression: Lutning {#reciprocal-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_slope"
+>title="Reciproregression: Långsam"
+>abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tabell]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -867,7 +1341,16 @@ Returnerar Pi: 3,14159...
 
 
 
-## Sinus
+## Sinus {#sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_sine"
+>title="Sinus"
+>abstract="Returnerar sinus för angiven vinkel. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
@@ -882,13 +1365,20 @@ Returnerar Pi: 3,14159...
 
 
 
-## T-poäng
+## T-poäng {#t-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_score"
+>title="T-poäng"
+>abstract="Avvikelsen från [MEAN](cm-functions.md#mean), dividerad med standardavvikelsen. Alias för [Z-bakgrundsmusik](#z-score)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
-
 Avvikelsen från [MEAN](cm-functions.md#mean), dividerad med standardavvikelsen. Alias för [Z-bakgrundsmusik](#z-score).
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -896,13 +1386,20 @@ Avvikelsen från [MEAN](cm-functions.md#mean), dividerad med standardavvikelsen.
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
 
-## T-test
+## T-test {#t-test}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_test"
+>title="T-test"
+>abstract="Utför ett m-tailed t-test med t-score på x och n frihetsgrader."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL T-TEST(metric, degrees, tails)]**
 
-
 Utför ett m-tailed t-test med t-score på x och n frihetsgrader.
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -920,7 +1417,7 @@ Underskriften är T-TEST(metrisk, grader, svans). Under anropet anropas bara ***
 
 Returvärdet är sannolikheten att se provningsvärdet x med hänsyn till antalet frihetsgrader och antalet svansar.
 
-**Exempel:**
+### Exempel
 
 1. Använd funktionen för att hitta avvikelser:
 
@@ -936,14 +1433,20 @@ Returvärdet är sannolikheten att se provningsvärdet x med hänsyn till antale
 
 
 
+## Tangent {#tangent}
 
-## Tangent
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_tangent"
+>title="Tangent"
+>abstract="Returnerar tangenten för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
 
-
-Returnerar tangenten för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI( )/180.
-
+Returnerar tangenten för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180.
 
 | Argument | Beskrivning |
 |---|---|
@@ -951,13 +1454,20 @@ Returnerar tangenten för den angivna vinkeln. Om vinkeln är i grader multiplic
 
 
 
-## Z-poäng
+## Z-poäng {#z-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_score"
+>title="Z-poäng"
+>abstract="Avvikelsen från medelvärdet delat med standardavvikelsen."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-
 [!BADGE Rad]{type="Neutral"}
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -978,13 +1488,20 @@ Ekvationen för Z-score är:
 
 
 
-## Z-test
+## Z-test {#z-test}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_test"
+>title="Z-test"
+>abstract="Utför ett n-tailed z-test med z-score x."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-
 Utför ett n-tailed z-test med z-score x.
-
 
 | Argument | Beskrivning |
 |---|---|
@@ -994,11 +1511,6 @@ Utför ett n-tailed z-test med z-score x.
 >[!NOTE]
 >
 >Anta att värdena normalt fördelas.
-
-
-
-
-
 
 
 
