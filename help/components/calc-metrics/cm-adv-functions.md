@@ -4,9 +4,9 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
-source-wordcount: '4153'
+source-wordcount: '4163'
 ht-degree: 1%
 
 ---
@@ -874,7 +874,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 >[!CONTEXTUALHELP]
 >id="calcmetrics_function_log_regression_coefficient"
 >title="Loggregression: Korrelationskoefficient"
->abstract="abstrakt"
+>abstract="Loggregression: Y = a ln(X) + b. Returnerar korrelationskoefficienten."
 
 <!-- markdownlint-enable MD034 -->
 

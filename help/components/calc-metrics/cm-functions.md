@@ -4,7 +4,7 @@ description: Med beräkningsverktyget kan du använda statistiska och matematisk
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 1%
@@ -191,7 +191,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_median"
+>id="calcmetrics_function_median"
 >title="Median"
 >abstract="Returnerar medianvärdet för ett mått i en kolumn. Medianvärdet är talet i mitten av en sifferuppsättning. Det innebär att hälften av talen har värden som är större än eller lika med medianen och hälften är mindre än eller lika med medianen."
 
@@ -426,7 +426,7 @@ Summan av kolumnerna i varje rad.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_square_root"
+>id="calcmetrics_function_square_root"
 >title="Kvadratrot"
 >abstract="Returnerar den positiva kvadratroten av ett tal. Kvadratroten av ett tal är värdet av talet upphöjt till 1/2."
 
