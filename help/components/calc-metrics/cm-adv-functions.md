@@ -4,7 +4,7 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
+source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
 workflow-type: tm+mt
 source-wordcount: '4163'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Ett alternativt scenario är att du har två intressanta mätvärden och ett har
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_and"
+>id="functions-and"
 >title="Och"
 >abstract="Förening. Inte lika med noll anses vara sant och lika med noll anses vara falskt. Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -57,7 +57,7 @@ Förening. Inte lika med noll anses vara sant och lika med noll anses vara falsk
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_approximate_count_distinct"
+>id="functions-count-distinct-metric"
 >title="Distinkt antal"
 >abstract="Returnerar det ungefärliga distinkta antalet dimensionsobjekt för den valda dimensionen."
 
@@ -84,7 +84,7 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_cosine"
+>id="functions-acos"
 >title="Arc Cosine"
 >abstract="Returnerar arcus cosinus, eller inverterad cosinus, för ett mätresultat. Arcus cosinus är den vinkel vars cosinus är tal. Den returnerade vinkeln anges i radianer i intervallet 0 (noll) till pi. Om du vill konvertera resultatet från radianer till grader multiplicerar du det med 180/PI()."
 
@@ -107,7 +107,7 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_sine"
+>id="functions-asin"
 >title="Båge sinus"
 >abstract="Returnerar arcus sinus, eller inverterad sinus, för ett tal. Arcussinus är vinkeln vars sinus är ett tal. Den returnerade vinkeln anges i radianer i intervallet -pi/2 till pi/2. Om du vill uttrycka arcus sinus i grader multiplicerar du resultatet med 180/PI()"
 
@@ -130,7 +130,7 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_tangent"
+>id="functions-atan"
 >title="Bågtangent"
 >abstract="Returnerar talets arcus tangens, eller inverterade tangent. Arcus tangent är vinkeln vars tangent är ett tal. Den returnerade vinkeln anges i radianer i intervallet -pi/2 till pi/2. Om du vill uttrycka arcus tangens i grader multiplicerar du resultatet med 180/PI()."
 
@@ -153,7 +153,7 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_t"
+>id="functions-cdf-t"
 >title="Cdf-T"
 >abstract="Returnerar sannolikheten för att en slumpmässig variabel med studentfördelning med n frihetsgrader har ett z-score mindre än kol."
 
@@ -184,7 +184,7 @@ CDF-T(x, ∞) ? cdf_z(x)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_z"
+>id="functions-cdf-z"
 >title="Cdf-Z"
 >abstract="Returnerar sannolikheten för att en slumpvariabel med en normal fördelning har ett z-score som är mindre än col."
 
@@ -213,7 +213,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_ceiling"
+>id="functions-ceil"
 >title="Tak"
 >abstract="Returnerar det minsta heltalet som inte är mindre än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln CEILING(Intäkter) för att avrunda intäkten upp till närmaste dollar, eller 570 USD."
 
@@ -233,7 +233,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence"
+>id="functions-waskr-confidence"
 >title="Förtroende"
 >abstract="Beräkna det tidssäkra förtroendet med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476)."
 
@@ -258,7 +258,7 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_lower"
+>id="functions-waskr-confidence-interval-lower"
 >title="Förtroende (lägre)"
 >abstract="Beräkna valfri giltig konfidensgrad **lower** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476)."
 
@@ -282,7 +282,7 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_upper"
+>id="functions-waskr-confidence-interval-upper"
 >title="Förtroende (övre)"
 >abstract="Beräkna det valfria tidsgiltiga förtroendet **upper** med WASKR-metoden enligt beskrivningen i [Tidsenhetlig central gränsteori och asymptotiska konfidenssekvenser](https://arxiv.org/pdf/2103.06476)."
 
@@ -307,7 +307,7 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cosine"
+>id="functions-cos"
 >title="Cosine"
 >abstract="Returnerar cosinus för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180."
 
@@ -327,7 +327,7 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cube_root"
+>id="functions-cube-root"
 >title="Kubrot"
 >abstract="Returnerar den positiva kubroten för ett tal. Kubroten för ett tal är värdet för det talet upphöjt till upphöjt till upphöjt till 1/3."
 
@@ -350,7 +350,7 @@ Returnerar den positiva kubroten för ett tal. Kubroten för ett tal är värdet
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative"
+>id="functions-cumul"
 >title="Kumulativ"
 >abstract="Returnerar summan av de sista n elementen i kolumn x. Om n > 0 är summan av de sista n elementen eller x. Om n &lt; 0, summera föregående element."
 
@@ -379,7 +379,7 @@ Returnerar summan av de sista n elementen i kolumn x. Om n > 0 är summan av de 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative_average"
+>id="functions-cumul-avg"
 >title="Kumulativ (medel)"
 >abstract="Returnerar medelvärdet för de sista n elementen i kolumn x. Om n > 0 är summan av de sista n elementen eller x. Om n &lt; 0, summera föregående element."
 
@@ -405,7 +405,7 @@ Returnerar medelvärdet för de sista n elementen i kolumn x. Om n > 0 är summa
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_equal"
+>id="functions-eq"
 >title="Jämn"
 >abstract="Lika. Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -431,7 +431,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>id="functions-ls-corr-exp"
 >title="Exponentiell regression: Korrelationskoefficient"
 >abstract="Exponentiell regression: Y = en exp(X) + b. Returnerar korrelationskoefficienten."
 
@@ -454,7 +454,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_predicted_y"
+>id="functions-ls-pred-exp"
 >title="Exponentiell regression: Förväntat Y"
 >abstract="Exponentiell regression: Y = en exp(X) + b. Returnerar Y."
 
@@ -478,7 +478,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_intercept"
+>id="functions-ls-intercept-exp"
 >title="Exponentiell regression: Intercept"
 >abstract="Exponentiell regression: Y = a exp(X) + b. Returnerar b."
 
@@ -501,7 +501,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_slope"
+>id="functions-ls-slope-exp"
 >title="Exponentiell regression: Lutning"
 >abstract="Exponentiell regression: Y = a exp(X) + b. Returnerar a."
 
@@ -525,7 +525,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_floor"
+>id="functions-floor"
 >title="Floor"
 >abstract="Returnerar det största heltalet som inte är större än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln FLOOR(Intäkter) för att avrunda intäkten nedåt till närmaste dollar, eller 569 dollar."
 
@@ -545,7 +545,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than"
+>id="functions-gt"
 >title="Större än"
 >abstract="Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -570,7 +570,7 @@ Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than_or_equal"
+>id="functions-ge"
 >title="Större än eller lika med"
 >abstract="Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -596,7 +596,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_cosine"
+>id="functions-cosh"
 >title="Hyperbolisk cosinus"
 >abstract="Returnerar hyperbolisk cosinus för ett tal."
 
@@ -619,7 +619,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_sine"
+>id="functions-sinh"
 >title="Hyperbolisk sinus"
 >abstract="Returnerar hyperbolisk sinus för ett tal."
 
@@ -639,7 +639,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_tangent"
+>id="functions-tanh"
 >title="Hyperbolisk tangens"
 >abstract="Returnerar hyperbolisk tangens för ett tal."
 
@@ -659,7 +659,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_if"
+>id="functions-if"
 >title="If"
 >abstract="Om värdet för villkorsparametern är icke-noll (true) är resultatet värdet för parametern value_if_true. I annat fall är det värdet på parametern value_if_false."
 
@@ -683,7 +683,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than"
+>id="functions-lt"
 >title="Mindre än"
 >abstract="Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -708,7 +708,7 @@ Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than_or_equal"
+>id="functions-le"
 >title="Mindre än eller lika med"
 >abstract="Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -734,7 +734,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_lift"
+>id="functions-waskr-lift"
 >title="Lyft"
 >abstract="Höjden på kvoten jämfört med kontrollvärdet."
 
@@ -753,7 +753,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_correlation_coefficient"
+>id="functions-ls-corr-linear"
 >title="Linjär regression: Korrelationskoefficient"
 >abstract="Linjär regression: Y = a X + b. Returnerar korrelationskoefficienten."
 
@@ -778,7 +778,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_intercept"
+>id="functions-ls-intercept-linear"
 >title="Linear Regression: Intercept"
 >abstract="Linear regression: Y = a X + b. Returns b."
 
@@ -803,7 +803,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_predicted_y"
+>id="functions-ls-pred-linear"
 >title="Linear Regression: Predicated Y"
 >abstract="Linjär regression: Y = a X + b. Returnerar Y."
 
@@ -828,7 +828,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_slope"
+>id="functions-ls-slope-linear"
 >title="Linjär regression: Lutning"
 >abstract="Linjär regression: Y = a X + b. Returnerar a."
 
@@ -850,7 +850,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_base_ten"
+>id="functions-log10"
 >title="Loggbas 10"
 >abstract="Returnerar 10-logaritmen för ett tal."
 
@@ -872,7 +872,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_coefficient"
+>id="functions-ls-corr-log"
 >title="Loggregression: Korrelationskoefficient"
 >abstract="Loggregression: Y = a ln(X) + b. Returnerar korrelationskoefficienten."
 
@@ -894,7 +894,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_intercept"
+>id="functions-ls-intercept-log"
 >title="Loggregression: Skärpning"
 >abstract="Loggregression: Y = a ln(X) + b. Returnerar b."
 
@@ -917,7 +917,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_predicted_y"
+>id="functions-ls-pred-log"
 >title="Loggregression: Förväntat Y"
 >abstract="Loggregression: Y = a ln(X) + b. Returnerar Y."
 
@@ -940,7 +940,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_slope"
+>id="functions-ls-slope-log"
 >title="Loggregression: Långsam"
 >abstract="Loggregression: Y = a ln(X) + b. Returnerar a."
 
@@ -963,7 +963,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_natural_log"
+>id="functions-log"
 >title="Naturlig logg"
 >abstract="Returnerar den naturliga logaritmen för ett tal. Naturliga logaritmer baseras på konstanten e (2.71828182845904). LN är inversen till EXP-funktionen."
 
@@ -984,7 +984,7 @@ Returnerar den naturliga logaritmen för ett tal. Naturliga logaritmer baseras p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not"
+>id="functions-not"
 >title="Inte"
 >abstract="Negation som boolesk. Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -1005,7 +1005,7 @@ Negation som boolesk. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not_equal"
+>id="functions-ne"
 >title="Inte lika med"
 >abstract="Inte lika med. Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -1032,7 +1032,7 @@ Inte lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_or"
+>id="functions-or"
 >title="eller"
 >abstract="Förskjutning. Inte lika med noll anses vara sant och lika med noll anses vara falskt. Utdata är antingen 0 (false) eller 1 (true)."
 
@@ -1059,7 +1059,7 @@ Inte lika med. Utdata är antingen 0 (false) eller 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_pi"
+>id="functions-pi"
 >title="Pi"
 >abstract="Returnerar Pi: 3,14159..."
 
@@ -1075,7 +1075,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_correlation_coefficient"
+>id="functions-ls-corr-power"
 >title="Effektregression: Korrelationskoefficient"
 >abstract="Strömregression: Y = b X ^ a. Returnerar korrelationskoefficienten."
 
@@ -1098,7 +1098,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_intercept"
+>id="functions-ls-intercept-power"
 >title="Strömregression: Skärpning"
 >abstract="Strömregression: Y = b X ^ a. Returnerar b."
 
@@ -1122,7 +1122,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_predicted_y"
+>id="functions-ls-pred-power"
 >title="Strömregression: Förväntat Y"
 >abstract="Strömregression: Y = b X ^ a. Returnerar Y."
 
@@ -1145,7 +1145,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_slope"
+>id="functions-ls-slope-power"
 >title="Strömregression: Långsam"
 >abstract="Strömregression: Y = b X ^ a. Returnerar a."
 
@@ -1168,7 +1168,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>id="functions-ls-corr-quadratic"
 >title="Kvadratisk regression: Korrelationskoefficient"
 >abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar korrelationskoefficienten."
 
@@ -1189,7 +1189,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_intercept"
+>id="functions-ls-intercept-quadratic"
 >title="Kvadratisk regression: Intercept"
 >abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar a."
 
@@ -1211,7 +1211,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_predicted_y"
+>id="functions-ls-pred-quadratic"
 >title="Kvadratisk regression: Förväntat Y"
 >abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar Y."
 
@@ -1233,7 +1233,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_slope"
+>id="functions-ls-slope-quadratic"
 >title="Kvadratisk regression: Långsam"
 >abstract="Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar b."
 
@@ -1256,7 +1256,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>id="functions-ls-corr-reciprocal"
 >title="Ömsesidig regression: Korrelationskoefficient"
 >abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar korrelationskoefficienten."
 
@@ -1278,7 +1278,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_intercept"
+>id="functions-ls-intercept-reciprocal"
 >title="Ömsesidig regression: Korsning"
 >abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar a."
 
@@ -1300,7 +1300,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_predicted_y"
+>id="functions-ls-pred-reciprocal"
 >title="Ömsesidig regression: Förutsedd Y"
 >abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar Y."
 
@@ -1322,7 +1322,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_slope"
+>id="functions-ls-slope-reciprocal"
 >title="Reciproregression: Långsam"
 >abstract="Ömsesidig regression: Y = a + b X ^ -1. Returnerar b."
 
@@ -1346,7 +1346,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_sine"
+>id="functions-sin"
 >title="Sinus"
 >abstract="Returnerar sinus för angiven vinkel. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180."
 
@@ -1370,7 +1370,7 @@ Returnerar Pi: 3,14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_score"
+>id="functions-t-score"
 >title="T-poäng"
 >abstract="Avvikelsen från [MEAN](cm-functions.md#mean), dividerad med standardavvikelsen. Alias för [Z-bakgrundsmusik](#z-score)."
 
@@ -1391,7 +1391,7 @@ Avvikelsen från [MEAN](cm-functions.md#mean), dividerad med standardavvikelsen.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_test"
+>id="functions-t-test"
 >title="T-test"
 >abstract="Utför ett m-tailed t-test med t-score på x och n frihetsgrader."
 
@@ -1438,7 +1438,7 @@ Returvärdet är sannolikheten att se provningsvärdet x med hänsyn till antale
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_tangent"
+>id="functions-tan"
 >title="Tangent"
 >abstract="Returnerar tangenten för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180."
 
@@ -1459,7 +1459,7 @@ Returnerar tangenten för den angivna vinkeln. Om vinkeln är i grader multiplic
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_score"
+>id="functions-z-score"
 >title="Z-poäng"
 >abstract="Avvikelsen från medelvärdet delat med standardavvikelsen."
 
@@ -1493,7 +1493,7 @@ Ekvationen för Z-score är:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_test"
+>id="functions-z-test"
 >title="Z-test"
 >abstract="Utför ett n-tailed z-test med z-score x."
 

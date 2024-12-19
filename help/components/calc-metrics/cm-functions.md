@@ -4,7 +4,7 @@ description: Med beräkningsverktyget kan du använda statistiska och matematisk
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
+source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Ett alternativt scenario är att du har två intressanta mätvärden och ett har
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_absolute_value"
+>id="functions-abs"
 >title="Absolut värde"
 >abstract="Returnerar det absoluta värdet av ett tal. Det absoluta värdet för ett tal är talet med ett positivt värde."
 
@@ -64,7 +64,7 @@ Ett alternativt scenario är att du har två intressanta mätvärden och ett har
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_maximum"
+>id="functions-col-max"
 >title="Högsta kolumn"
 >abstract="Returnerar det största värdet i en uppsättning dimensionselement för en måttkolumn. MAXV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement."
 
@@ -85,7 +85,7 @@ Returnerar det största värdet i en uppsättning dimensionselement för en måt
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_minimum"
+>id="functions-col-min"
 >title="Minsta kolumn"
 >abstract="Returnerar det minsta värdet i en uppsättning dimensionselement för en måttkolumn. MINV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement."
 
@@ -107,7 +107,7 @@ Returnerar det minsta värdet i en uppsättning dimensionselement för en måttk
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_sum"
+>id="functions-col-sum"
 >title="Kolumnsumma"
 >abstract="Lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension)."
 
@@ -128,7 +128,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_count"
+>id="functions-count"
 >title="Antal"
 >abstract="Returnerar antalet, eller antalet, värden som inte är noll för ett mätvärde i en kolumn (antalet unika element som rapporteras inom en dimension)."
 
@@ -149,7 +149,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponent"
+>id="functions-exp"
 >title="Exponent"
 >abstract="Returnerar e upphöjt till ett angivet tal. Konstanten e är lika med 2,71828182845904, basen för den naturliga logaritmen. EXPONENT är den inverterade LN, den naturliga logaritmen av ett tal."
 
@@ -169,7 +169,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_mean"
+>id="functions-mean"
 >title="Medel"
 >abstract="Returnerar det aritmetiska medelvärdet, eller medelvärdet, för ett mått i en kolumn"
 
@@ -191,7 +191,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_median"
+>id="functions-median"
 >title="Median"
 >abstract="Returnerar medianvärdet för ett mått i en kolumn. Medianvärdet är talet i mitten av en sifferuppsättning. Det innebär att hälften av talen har värden som är större än eller lika med medianen och hälften är mindre än eller lika med medianen."
 
@@ -213,7 +213,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_modulo"
+>id="functions-modulo"
 >title="Modulo"
 >abstract="Returnerar resten efter division av x med y med division Euclidean. "
 
@@ -250,7 +250,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_percentile"
+>id="functions-percentile"
 >title="Procent"
 >abstract="Returnerar den n:e percentilen, som är ett värde mellan 0 och 100. När n &lt; 0 används noll. När n > 100 returneras 100."
 
@@ -274,7 +274,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_operator"
+>id="functions-pow"
 >title="Strömoperator"
 >abstract="Returnerar x upphöjt till y-potensen."
 
@@ -295,7 +295,7 @@ Returnerar x upphöjt till y-potensen.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quartile"
+>id="functions-quartile"
 >title="Quartile"
 >abstract="Returnerar kvartilen med värden för ett mått. Du kan till exempel använda kvartilarna för att hitta de 25 % av de bästa produkterna som genererar störst intäkter."
 
@@ -318,7 +318,7 @@ Returnerar x upphöjt till y-potensen.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_round"
+>id="functions-round"
 >title="Ansökningstillfälle"
 >abstract="Rund utan parametern *number* är samma som rund med parametern *number* på 0, det vill säga rund till närmaste heltal.  Med parametern *number* returnerar ROUND siffrorna *number* till höger om decimaltalet.  Om *number* är negativt returneras 0 till vänster om decimaltalet."
 
@@ -347,7 +347,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_count"
+>id="functions-count-rows"
 >title="Antal rader"
 >abstract="Returnerar antalet rader för en given kolumn (antalet unika element som rapporteras inom en dimension). *Unique-värden som överstiger* räknas som 1."
 
@@ -363,7 +363,7 @@ Returnerar antalet rader för en given kolumn (antalet unika element som rapport
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_max"
+>id="functions-row-max"
 >title="Max rad"
 >abstract="Maximalt antal kolumner för varje rad."
 
@@ -384,7 +384,7 @@ Maximalt antal kolumner för varje rad.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_min"
+>id="functions-row-min"
 >title="Min rad"
 >abstract="Minsta antal kolumner för varje rad."
 
@@ -406,7 +406,7 @@ Minsta antal kolumner för varje rad.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_sum"
+>id="functions-row-sum"
 >title="Radsumma"
 >abstract="Summan av kolumnerna i varje rad."
 
@@ -426,7 +426,7 @@ Summan av kolumnerna i varje rad.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_square_root"
+>id="functions-sqrt"
 >title="Kvadratrot"
 >abstract="Returnerar den positiva kvadratroten av ett tal. Kvadratroten av ett tal är värdet av talet upphöjt till 1/2."
 
@@ -447,7 +447,7 @@ Summan av kolumnerna i varje rad.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_standard_deviation"
+>id="functions-stdev"
 >title="Standardavvikelse"
 >abstract="Returnerar standardavvikelsen, eller kvadratroten av variansen, baserat på en exempelpopulation med data."
 
@@ -468,7 +468,7 @@ Summan av kolumnerna i varje rad.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_variance"
+>id="functions-variance"
 >title="Varians"
 >abstract="Returnerar variansen baserat på en exempelpopulation med data."
 
