@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3ae10f81cb38500c035811542bc761f06688a130
+source-git-commit: 34b94eeeeb501f6c0deb982351b7c65e0a97bc68
 workflow-type: tm+mt
-source-wordcount: '17950'
+source-wordcount: '18087'
 ht-degree: 0%
 
 ---
@@ -1347,6 +1347,24 @@ Följande mallar är tillgängliga:
 | **Online/Offline** | Visa trafik online och offline tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur online- och offlinetrafik distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att avsätta mer resurser till din onlineupplevelse när den når en viss trafiknivå.</p><!-- This template uses the ... --> |
 
 ### Andra kanaler {#other-channels}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--pointOfSale"
+>title="Visa transaktionsdata (POS), inklusive intjänade intäkter, utförda order och sålda enheter. Den här mallen innehåller även visualiseringar som visar information om de främsta butikerna, de viktigaste produkterna och de viktigaste produktkategorierna samt online- och offlineförsäljning."
+>abstract="**Det här kan hjälpa dig** att bättre förstå vilka produkter som är era mest säljande produkter på olika butiksplatser och online.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att tilldela fler marknadsföringsresurser till produkter och kanaler med höga prestanda."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--survey"
+>title="Visa användarengagemang för era undersökningar. Se antalet starter och slutföranden, de vanligaste frågorna och svaren samt antalet första kontra upprepade deltagare."
+>abstract="**Det här kan hjälpa dig** att bättre förstå engagemangsnivåerna och frekvensen av lyckade enkäter.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera framtida undersökningar för att ge bättre deltagande."
+
+<!-- markdownlint-enable MD034 -->
 
 Följande mallar är tillgängliga:
 
