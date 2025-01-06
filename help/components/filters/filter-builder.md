@@ -4,7 +4,7 @@ title: Skapa filter
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: b1bf7dfa4b2b95c2b3c00b71719a93bc7394ed33
+source-git-commit: 388708526204f0854b486643fa58d1f8504575aa
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -213,7 +213,7 @@ Tabellen nedan förklarar, för varje attribueringsmodell, vilka inkommande hän
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
 | Upprepande (standard) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
 | Instance | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
-| Icke upprepande instans | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
+| Icke upprepande instans | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
 
 En exempelrapport om händelser som använder de tre filtren ser ut så här:
 
