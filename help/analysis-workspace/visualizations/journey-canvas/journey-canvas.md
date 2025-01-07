@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
+source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Reseduk"
->abstract="På liknande sätt som Fallout visar den här visualiseringen hur man går igenom eller faller bort från en serie kontaktytor. Använd arbetsytan på resan för resor med flera ingångspunkter och sökvägar, eller för att analysera resor som skapats i Journey Optimizer."
+>abstract="Visar hur personer går igenom eller faller bort från en serie kontaktytor. Använd för resor med flera ingångspunkter och sökvägar, eller för att analysera resor som skapats i Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 

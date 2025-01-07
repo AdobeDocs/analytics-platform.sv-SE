@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
+source-git-commit: 614e15a492b247d98e4e32c0f06d8ae438ca6d45
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="Förhandsgranska data"
->abstract="Jämför data i det här filtret med data i anslutningen. Procentandelen för förhandsgranskning baseras på det totala antalet i anslutningen från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
+>abstract="Jämför data i den här datavyn med anslutningsdata. Procentandelen för förhandsgranskning baseras på det totala antalet i anslutningen från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
 
 <!-- markdownlint-enable MD034 -->
 
