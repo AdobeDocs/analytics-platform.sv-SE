@@ -4,14 +4,34 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
+source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# Översikt över arbetsytan Resa
+# Översikt över arbetsytan Resa {#journey-canvas-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_button"
+>title="Reseduk"
+>abstract="På liknande sätt som Fallout visar den här visualiseringen hur man går igenom eller faller bort från en serie kontaktytor. Använd arbetsytan på resan för resor med flera ingångspunkter och sökvägar, eller för att analysera resor som skapats i Journey Optimizer."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_panel"
+>title="Reseduk"
+>abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor"
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder. Du kan definiera en resa från scratch eller visa en resa från Journey Optimizer och sedan se hur människor lämnade (föll ut) eller fortsatte igenom (föll igenom) resan.
 
