@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Den här artikeln innehåller kontext på delade enheter, hur du hanterar och mi
 
 ## Vad är en delad enhet?
 
-En delad enhet är en enhet som används av mer än en person. Vanliga scenarier är enheter som surfplattor, enheter som används i kioskdatorer eller datorutrustning som delas av agenter i callcenters.
+En delad enhet är en enhet som används av mer än en person. Vanliga scenarier är enheter som surfplattor, enheter som används i kioskdatorer eller datorutrustning som delas av agenter i ett callcenter.
 
 När två personer använder samma enhet och båda gör ett köp kan exempeldata för händelsen se ut så här:
 
@@ -49,7 +49,7 @@ Stitching kan attribuera delade enhetsdata med antingen senaste-auth-attribuerin
 
 ### Senaste auktoriseringsattribuering
 
-Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Översikt över regler för länkning av identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details).
 
 När senaste-auth-attribuering används för sammanfogning tolkas Stitched ID:n som i tabellen nedan.
 
@@ -65,7 +65,7 @@ När senaste-auth-attribuering används för sammanfogning tolkas Stitched ID:n 
 
 ### Enhetsdelning
 
-Enhetsdelning attribuerar anonym aktivitet från en delad enhet till användaren i närmast närhet till den anonyma aktiviteten. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
+Enhetsdelning attribuerar anonym aktivitet från en delad enhet till den senaste kända användaren, som tidigare sett. Enhetsdelning används för närvarande i fältbaserad sammanfogning.
 
 När enhetsdelad attribuering används vid sammanfogning tolkas häftade ID:n som i tabellen nedan.
 

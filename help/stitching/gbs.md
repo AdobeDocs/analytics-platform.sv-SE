@@ -4,9 +4,10 @@ description: Förklaring av diagrambaserade stygn
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---
@@ -146,7 +147,7 @@ Följande krav gäller specifikt för diagrambaserad sammanfogning:
 Följande begränsningar gäller specifikt för diagrambaserad sammanfogning:
 
 - Tidsstämplar beaktas inte när du frågar efter ett tillfälligt ID med det angivna namnutrymmet. Det är alltså möjligt att ett beständigt ID sammanfogas med ett tillfälligt ID från en post som har en tidigare tidsstämpel.
-- Inget stöd för delade enheter. När flera identiteter returneras används den första lexikografiska identiteten genom att identitetsdiagrammet efterfrågas med ett namnutrymme.
+- I scenarier med delade enheter, där namnutrymmet i diagrammet innehåller flera identiteter, används den första lexikografiska identiteten. Om namnutrymmesbegränsningar och -prioriteringar konfigureras som en del av releasen av regler för diagramlänkning, används den senast autentiserade användarens identitet. Mer information finns i [Delade enheter](/help/use-cases/stitching/shared-devices.md).
 - I identitetsdiagrammet finns det en hård gräns på tre månader för att efterfylla identiteter. Du använder bakåtfyllnadsidentiteter om du inte använder ett Experience Platform-program, som Real-time Customer Data Platform, för att fylla i identitetsdiagrammet.
 - [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximalt antal identiteter i ett diagram: 50.
