@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2226'
 ht-degree: 1%
 
 ---
@@ -178,6 +178,7 @@ Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bor
    * Skapades från ett fält som är en del av en [objektmatris](/help/use-cases/object-arrays.md) (liknar flervärdesvariabler i Adobe Analytics)
    * Har [persistence aktiverat](/help/data-views/component-settings/persistence.md)
    * Använder inte en [bindningsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
+* Flera dimensioner från fält som refererar till olika [arrayer av objekt](/help/use-cases/object-arrays.md). (Flera dimensioner som refererar till samma array med objekt tillåts.)
 * Mer än 5 dimensioner och 5 mätvärden per rapport (upp till 5 dimensioner och 5 mätvärden stöds)
 * I tabellkolumner:
    * Datumintervall
