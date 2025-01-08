@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 78803a2062b38b0f4a80837d18dbf3e9cc609cc8
+source-git-commit: 02026709480872216ee76e842045517822c59bff
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1919'
 ht-degree: 3%
 
 ---
@@ -46,6 +46,8 @@ Uppslagsfönstret för att skriva in data igen beror på hur ofta du vill att da
 I vissa situationer är det möjligt att flera personer loggar in från samma enhet. Exempel är en delad enhet hemma, delade datorer i ett bibliotek eller en kioskdator i ett butiksuttag.
 
 Det tillfälliga ID:t åsidosätter det beständiga ID:t, så delade enheter betraktas som separata personer (även om de kommer från samma enhet).
+
+Mer information finns i [Använda delade enheter](/help/use-cases/stitching/shared-devices.md).
 
 +++
 
