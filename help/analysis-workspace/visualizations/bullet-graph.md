@@ -4,20 +4,15 @@ title: Punktdiagram
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 7980286bed4f08b2ca23c0930538adb6c694344e
+badgePremium: label="Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Adobe Analytics-version av den här artikeln"
+source-git-commit: f13f5be06cfadc9ff875c378a0505b4f1f4469dd
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
 # Punkt {#bullet}
-
-<!-- markdownlint-disable MD034 -->
-
-[!BADGE Adobe Analytics version]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
-
-<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -37,7 +32,6 @@ ht-degree: 0%
 >abstract="Skapa en punktgraf för att visa hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål)."
 
 <!-- markdownlint-enable MD034 -->
-
 
 Visualiseringen av ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visar hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål).
 
