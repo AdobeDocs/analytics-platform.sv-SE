@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
+source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3519'
 ht-degree: 0%
 
 ---
@@ -151,9 +151,9 @@ Gränssnittet Anslutningsinformation ger en detaljerad vy över anslutningsstatu
 | Schema | Det Experience Platform-schema som datauppsättningen baseras på. |
 | [!UICONTROL Import new data] | Status för import av nya data för datauppsättningen: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**om datauppsättningen är konfigurerad att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** om datauppsättningen är konfigurerad att inte importera ny dataimport. |
 | [!UICONTROL Transform data] | Transformeringsstatus för tillämpliga B2B-sökdatauppsättningar. Mer information finns i [Omforma datauppsättningar för B2B-sökningar](transform-datasets-b2b-lookups.md).<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**för tillämpliga datauppsättningar aktiverade för omvandling, <p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** för tillämpliga datamängder som inte har aktiverats för omformning, och<p>**[!UICONTROL N/A]** för alla andra datauppsättningar, inte tillämpligt för transformering. |
-| [!UICONTROL Backfill data] | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _efterfyllnadsbearbetning]**för antal efterfyllningar som bearbetas,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om bakåtfyllningar inte har konfigurerats. |
+| [!UICONTROL Backfill data] | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _backfills processing]**för antal bearbetning av bakåtfyllningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om bakåtfyllningar inte har konfigurerats. |
 | [!UICONTROL Import new data] | Status för import av nya data för datauppsättningen: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**om datauppsättningen är konfigurerad att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** om datauppsättningen är konfigurerad att inte importera nya data. |
-| [!UICONTROL Backfill data] | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _efterfyllnadsbearbetning]**för antal efterfyllningar som bearbetas,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om inga bakåtfyllningar är konfigurerade. |
+| [!UICONTROL Backfill data] | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _backfills processing]**för antal bearbetning av bakåtfyllningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om inga bakåtfyllningar är konfigurerade. |
 
 >[!IMPORTANT]
 >
@@ -195,16 +195,16 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 | [!UICONTROL Records deleted] | Hur många poster som togs bort under den valda tidsperioden. |
 | [!UICONTROL Batches added] | Hur många datagrupper som har lagts till i den här datauppsättningen. |
 | [!UICONTROL Records skipped] | Hur många rader hoppades över under intag under den valda tidsperioden.<p>Orsaker till att hoppa över poster är bland annat: Tidsstämplar saknas, person-ID saknas eller är ogiltigt osv. Uppdaterades var 10:e minut.<p>Ogiltiga person-ID:n (till exempel `undefined` eller `00000000`, eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som visas i en händelse mer än 1 miljon gånger i en viss månad) är ID:n som inte kan tilldelas någon specifik användare eller person. Dessa rader kan inte infogas i systemet och resulterar i felbenägen inmatning och rapportering. Du kan åtgärda ogiltiga person-ID:n på tre sätt:<ul><li>Använd [Stitching](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som sedan hoppas över vid förtäring (helst inte med ett ogiltigt eller helt nollfritt användar-ID).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
-| [!UICONTROL Last added] | När den sista batchen lades till. |
+| [!UICONTROL Last added] | Tidsstämpeln som den senaste batchen lades till. |
 | [!UICONTROL Import new data] | Status för import av nya data för datauppsättningen: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**om datauppsättningen är konfigurerad att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** om datauppsättningen är konfigurerad att inte importera nya data. |
-| [!UICONTROL Backfill data] | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _efterfyllnadsbearbetning]**för antal efterfyllningar som bearbetas,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om inga bakåtfyllningar är konfigurerade.<p>Om du vill visa en dialogruta med en översikt över de tidigare efterfyllningarna för datauppsättningen väljer du <img src="./assets/pastbackfill.svg" alt="Tidigare bakåtfyllningar" width="15"/> **[!UICONTROL Past backfills]**. |
+| [!UICONTROL Backfill data] | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _backfills processing]**för antal bearbetning av bakåtfyllningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om inga bakåtfyllningar är konfigurerade.<p>Om du vill visa en dialogruta med en översikt över de tidigare efterfyllningarna för datauppsättningen väljer du <img src="./assets/pastbackfill.svg" alt="Tidigare bakåtfyllningar" width="15"/> **[!UICONTROL Past backfills]**. |
 | [!UICONTROL Data source type] | Datakälltyp som definieras när datauppsättningen läggs till i anslutningen. |
 | [!UICONTROL Dataset type] | Antingen [!UICONTROL Event], [!UICONTROL Profile], [!UICONTROL Lookup] eller [!UICONTROL Summary]. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection) |
 | [!UICONTROL Schema] | Det Experience Platform-schema som den här datauppsättningen baseras på. |
 | [!UICONTROL Dataset ID] | Detta datauppsättnings-ID genereras i Experience Platform. |
 
 
-## Användning
+## Användning {#connections-usage}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -212,7 +212,6 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_usage_keyusagemetrics"
 >title="Viktiga användningsmått"
 >abstract="Ange månads- och totaldata för rader som ska rapporteras, både för kärnrader och historiska rader."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -222,7 +221,6 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_usage_monthlyingestedrows"
 >title="Månatliga kapslade rader"
 >abstract="Mäter det totala antalet poster som läggs till i systemet varje månad för att ge insikter om datatillväxt och intagsfrekvens."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -231,7 +229,6 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_usage_monthlyreportablerows"
 >title="Månatliga rapporteringsbara rader"
 >abstract="Spårar antalet rader som är tillgängliga för rapportering. Rapporteringsbara rader är de inkapslade raderna minus de rader som hoppas över och tas bort under intag. Rapporteringsbara rader fungerar som nyckeltal för fakturering och dataanvändning."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -241,7 +238,6 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_usage_detailbreakdown"
 >title="Detaljuppdelning."
 >abstract="Du kan visa detaljerade mått efter anslutning, datauppsättning, sandlåda och taggar, med alternativet att hämta en CSV-fil med data."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -249,8 +245,7 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Andra datauppsättningar"
->abstract="För månader före september 2024 samlades data in på datauppsättningsnivå och visas som *Andra datauppsättningar* för tydlighet. Från och med september 2024 samlas data in på en detaljerad datauppsättningsnivå och *andra datauppsättningar* visas inte längre."
-
+>abstract="För månaderna före september 2024 samlades data in på datauppsättningsnivå och visas som *Andra datauppsättningar* för tydlighet. Från och med september 2024 samlas data in på en detaljerad datauppsättningsnivå och *andra datauppsättningar* visas inte längre."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -259,7 +254,6 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="Okända datauppsättningar eller anslutningar"
 >abstract="Okända datauppsättningar eller anslutningar visas med deras ID."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -268,7 +262,6 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_usage_datanotavailable"
 >title="Data är inte tillgängliga"
 >abstract="Historiska data före september 2024 är inte tillgängliga på grund av systembegränsningar. Mätvärden samlas in och visas från och med september 2024. Diagrammet visar de 18 senaste månaderna på tidslinjen och framtida data visas när data blir tillgängliga."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -277,7 +270,6 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_corereportablerows"
 >title="Centrala rapporteringsbara rader"
 >abstract="Visar det totala antalet rader som är tillgängliga de senaste 13 månaderna. Den 1 februari 2024 visar till exempel antalet totalt antal rader som är tillgängliga med en händelsetidsstämpel från januari 2023 till januari 2024."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -286,41 +278,94 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_historicalreportablerows"
 >title="Historiska rader som ska rapporteras"
 >abstract="Visar det totala antalet rader som är tillgängliga för en period som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
-
 <!-- markdownlint-enable MD034 -->
 
 
-Gränssnittet [!UICONTROL Usage] visar hur inkapslade och rapportbara rader används i alla anslutningar. Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. Förutom övervakningsfunktioner kan du använda användargränssnittet för att planera förnyelsen av din Customer Journey Analytics-licens.
+Gränssnittet [!UICONTROL Usage] visar hur inkapslade och rapportbara rader används i alla anslutningar. Om det inte är markerat väljer du fliken **[!UICONTROL Usage]** för att komma åt gränssnittet.
 
-Du kan välja ett tidsintervall (mellan de senaste sex månaderna, året till datum eller de senaste två åren) och ett intervall (mellan månads- eller kvartalsvis) för att övervaka Customer Journey Analytics användning. Gränssnittet är uppdelat i två delar:
+Med det här gränssnittet kan du avgöra om din användning i Customer Journey Analytics överensstämmer med det som avtalats. Förutom övervakningsfunktioner kan du använda användargränssnittet för att planera förnyelsen av din Customer Journey Analytics-licens.
 
-* Inmatade rader: totalt antal rader som importerats/skickats från händelsedatamängder över alla Customer Journey Analytics-anslutningar, inklusive poster som hoppats över vid förtäring
-* Rapporteringsbara rader: totalt antal rader som kan rapporteras och som innehåller alla händelsedata för alla Customer Journey Analytics-anslutningar
+Gränssnittet Användning använder följande mått:
 
-![användningsvy](assets/usage-view.png)
+| Måttnamn | Beskrivning |
+|---|---|
+| Historiska rader som ska rapporteras | Antal rader för perioden äldre än 13 månader. |
+| Centrala rapporteringsbara rader | Antal rader under de senaste 13 månaderna. |
+| Indragna rader | Hur många rader som har importerats för den specifika perioden. |
+| Rapporteringsbara rader | Hur många rader med data har du som en del av anslutningen för den angivna perioden. |
+| Ackumulerade rader | Hur många rader som kapslas upp till den angivna månaden. |
 
-Välj fliken **[!UICONTROL Usage]** för att komma åt gränssnittet.
-
-### Rapport om användning
-
-1. Välj en **[!UICONTROL Time range]**. Du kan välja mellan **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]** eller **[!UICONTROL Last 2 Years]**.
-1. Välj en **[!UICONTROL Interval]**. Du kan välja mellan **[!UICONTROL Monthly]** eller **[!UICONTROL Quarterly]**.
-
-För [!UICONTROL Ingested rows]:
-
-* På en panel visas det totala antalet inkapslade rader som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
-   * I en ruta visas antalet kapslade rader för den senaste månaden och ändringen i % (anges av ▼) från föregående månad.
-   * ett linjediagram visar ◼︎ [!UICONTROL Monthly ingested rows].<br/>Om du vill visa ett popup-fönster som visar antalet kapslade rader per månad för en månad håller du pekaren över en datapunkt i linjediagrammet.
+>[!NOTE]
+>
+>Data samlas in från och med juli 2024 för de viktigaste, historiska och totala posterna. Kontakta din kontoansvarige för att få information om tidigare historiska data.
+>
 
 
-För [!UICONTROL Reportable rows]:
 
-* På en panel visas totalt antal rader som kan rapporteras och som innehåller alla händelsedata för alla anslutningar som uppdateras varannan dag i månaden. I panelen:
-   * en ruta visar det sammanlagda antalet rader som kan rapporteras.
-   * I en ruta visas det totala antalet rader som ska rapporteras för den senaste månaden och ändringen i % (anges av ▼ eller liknande) från den föregående månaden.
-   * ett linjediagram visar ◼︎ [!UICONTROL Monthly reportable rows].<br/>Om du vill visa ett popup-fönster som visar antalet kumulativa rapportbara rader för en viss månad håller du pekaren över en datapunkt i linjediagrammet.
-   * ett linjediagram visar ◼︎ [!UICONTROL Cumulative reportable rows].<br/>Om du vill visa ett popup-fönster som visar antalet månatliga rapportbara rader för en månad, håller du pekaren över en datapunkt i linjediagrammet.
+Användargränssnittet består av två paneler:
 
+* Panelen **[!UICONTROL Key usage metrics]**: innehåller rader som kan rapporteras för kärndata och historiska data. Panelen håller också reda på procentuella ändringar jämfört med föregående månad för både kärndatarader och historiska datarader.
+
+  Panelen visas i en visualisering:
+
+   * **[!UICONTROL Core data reportable rows]**.
+
+     Hur många rapporteringsbara rader har du under de senaste 13 månaderna? Sammanfattningsnumret är antalet rader som ska rapporteras (till exempel 741M) för den senaste månaden (till exempel december 2024).
+
+   * **[!UICONTROL Historical data reportable rows]**.
+
+     Hur många rapporteringsbara rader har du för en period som är äldre än 13 månader. Sammanfattningsnumret är antalet historiskt rapportbara rader (till exempel 127M) för den senaste månaden (till exempel december 2024).
+
+  När du hovrar över ett staplat fält i visualiseringen visas ett popup-fönster med antalet rader för den specifika delen av fältet (till exempel).
+
+
+  ![Nyckelanvändningsmått](assets/usage-key-usage-metrics.png)
+
+* En kombinerad panel med tre underpaneler för:
+
++++ Indragna rader
+
+  Underpanelen **[!UICONTROL Ingested rows]** mäter det totala antalet poster som läggs till i systemet varje månad, vilket ger insikt i datatillväxt och intagsfrekvens. Underpanelen innehåller en sammanfattning av den här månadens totala antal infogade rader och ändringen från föregående månad.
+
+  ![Inkapslade rader](assets/usage-ingested-rows.png)
+
+  Du kan hovra över datapunkter i visualiseringen om du vill visa ett popup-fönster med mer information.
+
++++
+
++++ Rapporteringsbara rader
+
+  Visualiseringen av **[!UICONTROL Reportable rows]** håller reda på antalet rader som är tillgängliga för rapportering genom att ta bort överhoppade och borttagna rader från kapslade rader, vilket är ett nyckelmått för fakturering och dataanvändning. Underpanelen innehåller två sammanfattningar:
+
+   * **[!UICONTROL Last month total]**: En sammanfattning av det totala antalet rader som kan rapporteras fram till den här månaden.
+   * **[!UICONTROL This month]**: En sammanfattning av månadens totala rapporteringsbara rader och ändringen från föregående månad.
+
+  ![Rapporteringsbara rader](assets/usage-reportable-rows.png)
+
+  Du kan hovra över datapunkter i visualiseringarna om du vill visa ett popup-fönster med mer information.
+
++++
+
++++ Detaljuppdelning
+
+  Du kan använda tabellen **[!UICONTROL Detail breakdown]** för att visa detaljerade mått efter anslutning, datauppsättning, sandlåda och taggar. Datauppsättningar rapporteras med ID i stället för namn, eftersom datauppsättningsnamn kan ändras under en rapportperiod. Okända datauppsättningar eller anslutningar rapporteras med hjälp av ID.
+
+  För månaderna före september 2024 samlades data in på datauppsättningsnivå och visas som [!UICONTROL Other datasets] för tydlighet. Från och med september 2024 samlas data in på en detaljerad datauppsättningsnivå och [!UICONTROL Other datasets] visas inte längre.
+
+   * Välj en kombination för **[!UICONTROL View by]** och **[!UICONTROL Breakdown by]** om du vill ändra nedbrytningen.
+
+     | Alternativ för **[!UICONTROL View by]** | Alternativ för **[!UICONTROL Breakdown by]** |
+     |---|---|
+     | **[!UICONTROL Connection]** | **[!UICONTROL -]** och **[!UICONTROL Dataset]** |
+     | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+     | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+     | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
+
+  ![Detaljuppdelning](assets/usage-detail-breakdown.png)
+
++++
+
+  Du kan definiera en **[!UICONTROL Time range]** i månader att rapportera om. Använd ![Kalender](/help/assets/icons/Calendar.svg) för att välja tidsintervall.
 
 >[!MORELIKETHIS]
 >

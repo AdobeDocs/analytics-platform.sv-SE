@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
+source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
 workflow-type: tm+mt
-source-wordcount: '3089'
+source-wordcount: '3145'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ I Adobe Experience Platform:
 
 1. Välj ![Skapa fråga](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Skapa fråga **]**.
 
-1. Välj `cja` **[!UICONTROL ** Databas **]**.
+1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
 1. Om du vill köra frågan skriver du SQL-satsen och väljer knappen ![Spela upp](assets/Smock_Play_18_N.svg) (eller trycker på `[SHIFT]` + `[ENTER]`).
 
@@ -85,7 +85,7 @@ I Adobe Experience Platform:
 
    1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
-   1. Välj `cja` **[!UICONTROL ** Databas **]**.
+   1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
    1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i avsnittet **[!UICONTROL ** PSQL-kommando **]**.
 
@@ -110,7 +110,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
-   1. Välj `cja` **[!UICONTROL ** Databas **]**.
+   1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
    1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) vid behov i Power BI.
 
@@ -153,7 +153,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
-   1. Välj ` cja` **[!UICONTROL ** Databas **]**.
+   1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
    1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) när det behövs i Tableu Desktop.
 
