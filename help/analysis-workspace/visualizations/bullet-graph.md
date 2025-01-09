@@ -4,7 +4,7 @@ title: Punktdiagram
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: b1cdaa871bf5040cf1cf436348b4ca03c5553a76
+source-git-commit: 9d2df264659341252c0ad02705eb4db04337ab0c
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >id="workspace_bullet_goalvalue"
 >title="Målvärde"
 >abstract="**[!UICONTROL High goal]** är det främsta målet du siktar på. **[!UICONTROL Low goal]** och **[!UICONTROL Mid goal]** skapar intervall under [!UICONTROL High goal]. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]** är markerat. Exempel: `20` om ditt mål är tjugo procent."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph" text="Punkt (Adobe Analytics)"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="Punkt (Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
