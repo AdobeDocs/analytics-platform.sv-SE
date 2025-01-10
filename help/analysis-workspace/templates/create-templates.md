@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
+source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -37,14 +37,16 @@ Så här skapar du en ny mall som kan användas av personer i ditt inloggningsf�
    | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
    | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. Den här förklaringen visas på mallens förhandsgranskningssida. |
    | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**.<p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
-   | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]** och **[!UICONTROL Acquisition]**. <p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
+   | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]** och **[!UICONTROL Journey Optimizer]**. <p>De val du väljer avgör mallens plats på sidan Organisationsmallar. Användarna kan navigera till mallen eller filtrera listan efter användningsfall. </p><p>**Obs!** Om du väljer **[!UICONTROL Journey Optimizer]** blir mallen även tillgänglig i Adobe Journey Optimizer. I Journey Optimizer finns en nedrullningsbar meny på sidan **[!UICONTROL Reports]** där användarna kan välja den här mallen eller standardmallen. Mer information finns i [Kom igång med den uppdaterade rapportfunktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen. |
+   | **[!UICONTROL Journey Optimizer activity type]** | Välj den Journey Optimizer-aktivitetstyp som ska associeras med den här mallen: **[!UICONTROL Campaigns]**, **[!UICONTROL Journeys]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Reports]** eller **[!UICONTROL Subscriptions]**. <p>Lämna fältet tomt om du vill att den här mallen ska kopplas till alla aktivitetstyper.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |
+   | **[!UICONTROL Journey Optimizer activity]** | Välj den Journey Optimizer-aktivitet som ska associeras med den här mallen. <p>Lämna det här fältet tomt om du vill att den här mallen ska kopplas till alla aktiviteter av den valda aktivitetstypen.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |
    | **[!UICONTROL Tags]** | Ange de taggar som du vill lägga till i mallen. Användarna kan filtrera listan med mallar efter de taggar du lägger till. |
 
 1. Välj [!UICONTROL **Spara som mall**].
 
 Mer information om hur användare kan skapa ett projekt baserat på en mall finns i [Skapa ett projekt baserat på en mall](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) i [Använda mallar](/help/analysis-workspace/templates/use-templates.md).
 
-## Redigera eller ta bort mallar
+## Redigera eller ta bort en mall
 
 Administratörer kan redigera eller ta bort företagsmallar.
 
@@ -73,6 +75,25 @@ Administratörer kan redigera eller ta bort företagsmallar.
    1. Välj ikonen Mer och välj sedan **[!UICONTROL Edit]** eller **[!UICONTROL Delete]**.
 
       ![Redigera eller ta bort företagsmallkort](assets/company-template-card-edit-delete.png)
+
+1. Om du redigerar en mall gör du önskade ändringar och väljer sedan [!UICONTROL **Projekt**] > **[!UICONTROL Save as template…]**.
+
+   ![Företagsmall](assets/company-template-save.png)
+
+1. Ange följande information i dialogrutan [!UICONTROL Save as template]:
+
+   | Fält | Beskrivning |
+   |---------|----------|
+   | **[!UICONTROL Name]** | Ange ett beskrivande namn för mallen. |
+   | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
+   | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. Den här förklaringen visas på mallens förhandsgranskningssida. |
+   | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**. Om inga kanaler är markerade inkluderas mallen i alla kanaler.<p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
+   | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]** och **[!UICONTROL Journey Optimizer]**. <p>De val du väljer avgör mallens plats på sidan Organisationsmallar. Användarna kan navigera till mallen eller filtrera listan efter användningsfall. </p><p>**Obs!** Om du väljer **[!UICONTROL Journey Optimizer]** blir mallen även tillgänglig i Adobe Journey Optimizer. I Journey Optimizer finns en nedrullningsbar meny på sidan **[!UICONTROL Reports]** där användarna kan välja den här mallen eller standardmallen. Mer information finns i [Kom igång med den uppdaterade rapportfunktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen. |
+   | **[!UICONTROL Journey Optimizer activity type]** | Välj den Journey Optimizer-aktivitetstyp som ska associeras med den här mallen: **[!UICONTROL Campaigns]**, **[!UICONTROL Journeys]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Reports]** eller **[!UICONTROL Subscriptions]**. <p>Lämna fältet tomt om du vill att den här mallen ska kopplas till alla aktivitetstyper.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |
+   | **[!UICONTROL Journey Optimizer activity]** | Välj den Journey Optimizer-aktivitet som ska associeras med den här mallen. <p>Lämna det här fältet tomt om du vill att den här mallen ska kopplas till alla aktiviteter av den valda aktivitetstypen.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |
+   | **[!UICONTROL Tags]** | Ange de taggar som du vill lägga till i mallen. Användarna kan filtrera listan med mallar efter de taggar du lägger till. |
+
+1. Välj [!UICONTROL **Spara som mall**].
 
 ## Byta namn på, tagga eller godkänna mallar
 
