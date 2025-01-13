@@ -4,10 +4,9 @@ title: Punktdiagram
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Välj det här alternativet om du vill visa Adobe Analytics-versionen av den här artikeln."
-source-git-commit: 896c7be6f1cfa4b0b714eb08ac47c1b89edecb79
+source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -20,7 +19,6 @@ ht-degree: 0%
 >id="workspace_bullet_goalvalue"
 >title="Målvärde"
 >abstract="**[!UICONTROL High goal]** är det främsta målet du siktar på. **[!UICONTROL Low goal]** och **[!UICONTROL Mid goal]** skapar intervall under [!UICONTROL High goal]. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]** är markerat. Exempel: `20` om ditt mål är tjugo procent."
->additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="Punkt (Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,6 +30,8 @@ ht-degree: 0%
 >abstract="Skapa en punktgraf för att visa hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål)."
 
 <!-- markdownlint-enable MD034 -->
+
+*I den här artikeln beskrivs punktvisualiseringen i **Customer Journey Analytics**. Se [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) för versionen **Adobe Analytics**av den här artikeln.*
 
 Visualiseringen av ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visar hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål).
 
