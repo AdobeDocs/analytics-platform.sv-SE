@@ -6,7 +6,7 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
+source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Administratörer kan byta namn på, tagga och godkänna företagsmallar.
 
 ## Lägga till saknade komponenter i datavyn för en viss mall
 
-Som standard kommer vissa mallar från Adobe inte att fungera eftersom de innehåller komponenter som inte finns i datavyn.
+Som standard kan vissa mallar från Adobe inte användas eftersom de innehåller komponenter som inte finns i datavyn.
 
 För varje komponent som saknas finns en matchande sammanhangsetikett tillgänglig i datavyn. Du måste antingen lägga till den matchande kontextetiketten i en komponent som redan finns i datavyn, eller så måste du lägga till en ny komponent i datavyn och lägga till kontextetiketten i den.
 

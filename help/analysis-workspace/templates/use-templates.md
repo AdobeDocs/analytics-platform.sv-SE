@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 065230672137c98015680e4a033a2f5ac3a1bc24
+source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
 workflow-type: tm+mt
-source-wordcount: '19283'
+source-wordcount: '19266'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
    * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för din organisation.
 
-     Företagsmallar kan bara skapas av en administratör. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analysis-workspace/templates/create-templates.md).
+     Endast administratörer kan skapa företagsmallar. Mer information om hur du skapar en företagsmall finns i [Skapa och hantera mallar](/help/analysis-workspace/templates/create-templates.md).
 
 1. Använd något av följande alternativ för att ändra hur du visar de tillgängliga mallarna:
 
@@ -95,7 +95,7 @@ Så här anpassar du en mall och sparar den som ett projekt:
 
 1. Välj fliken [!UICONTROL **Mallar**].
 
-1. Markera den mall som du vill visa. Välj till exempel mallen [!UICONTROL **Sidor**] under [!UICONTROL **Mest populära**].
+1. Välj den mall som du vill visa. Välj till exempel mallen [!UICONTROL **Sidor**] under [!UICONTROL **Mest populära**].
 
    Sidmallen, som den visas i Analysis Workspace, visar två [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([stapeldiagram](/help/analysis-workspace/visualizations/bar.md) och [sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md)) samt en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). Det mätvärde som används är förekomster.
 
@@ -286,7 +286,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 
 >[!CONTEXTUALHELP]
 >id="template--revenueOvertimeReport"
->title="Visa det monetära beloppet för produkter som köpts i alla order. Data visas över en tidsperiod och jämförs med tidigare perioder."
+>title="Visa det monetära beloppet för alla produkter som köpts i alla order. Data visas över en tidsperiod och jämförs med tidigare perioder."
 >abstract="**Detta kan hjälpa dig** att förstå hur intäkterna ökar eller minskar över tid. Du kan kombinera det här måttet med vilken dimension som helst för att lära dig vilka dimensionsobjekt som har bidragit till intäkterna.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel framtida projektintäkter baserade på tidigare trender. Ni kan också lägga till ytterligare en dimension, som spårningskoddimensionen, för att lära er vilka kampanjer som genererar störst intäkter.<br/>Den här mallen använder måtten Dag och Intäkter."
 
 <!-- markdownlint-enable MD034 -->
@@ -401,7 +401,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="aa-template--reloadsRankedReport"
 >title="Visa det antal gånger en dimensionsobjekt fanns under en omladdning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning."
->abstract="**Detta kan hjälpa dig** att identifiera när det kan uppstå problem på en viss sida som uppmanar en besökare att läsa in sidan igen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sidor som har problem som behöver åtgärdas.<br/>Den här mallen använder måttet Läs in igen."
+>abstract="**Detta kan hjälpa dig** att identifiera när det kan uppstå problem på en viss sida som skulle uppmana en besökare att läsa in sidan igen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sidor som har problem som behöver åtgärdas.<br/>Den här mallen använder måttet Läs in igen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -445,7 +445,7 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--formsPerformanceOverview"
->title="Visa prestandadata för dina Adobe Experience Manager-formulär."
+>title="Visa prestandadata för din Adobe Experience Manager Forms."
 >abstract="**Det här kan hjälpa dig** att bättre förstå värdeberäkning från Adobe Experience Manager.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera inställningarna för Experience Manager."
 
 <!-- markdownlint-enable MD034 -->
@@ -535,7 +535,7 @@ Följande mallar är tillgängliga:
 | [!UICONTROL **Besökare**] | <!--duplicated in Most popular section-->Visa det totala antalet unika besökare. Data visas över en tidsperiod och jämförs med tidigare perioder. <p>**Detta kan hjälpa dig** att bättre förstå hur webbplatsens räckvidd och målgruppsstorlek ökar eller minskar över tid eller jämfört med en tidigare period.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera om en nyligen lanserad marknadsföringskampanj lyckades attrahera nya personer till webbplatsen genom att jämföra unika besökare före och efter det att kampanjen startades. Eller så kan du jämföra antalet personer som ska besöka sajten under helger år för år.</p><p>I den här mallen används måtten Dag och Unika besökare.</p> |
 | [!UICONTROL **Tidsåtgång**] | Se den genomsnittliga tid besökarna tillbringar på er webbplats under varje besök, liksom den genomsnittliga tid som användarna tillbringar innan ett lyckat besök. Data visas över en tidsperiod och jämförs med tidigare perioder. <p>**Detta kan hjälpa dig** att bättre förstå besökarnas engagemangsnivåer och hur lång tid det tar för besökarna att utföra en önskad åtgärd, till exempel göra ett köp.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera om ändringar av din webbplats förbättrar besökarens förmåga att snabbt nå en lyckad händelse.</p><p>I den här mallen används måtten Dag och Tid per besök (sekunder), Dag och Antal besök (sekunder).</p> |
 | [!UICONTROL **Webbplatsavsnitt**] | <!--duplicated in Most popular section-->Se de populäraste eller mest högpresterande avsnitten på webbplatsen. <p>**Det här kan hjälpa dig** att bättre förstå vilka avsnitt på webbplatsen som är mest besökta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka produkter eller tjänster som du tillhandahåller och som ger mest intresse.</p> <p>Den här mallen använder dimensionen Platsavsnitt och måttet Besök.</p> |
-| [!UICONTROL **Webbinnehållsförbrukning**] | Se vilket webbinnehåll som konsumeras mest och engagerande användare.<p>**Det här kan hjälpa dig** att bättre förstå var personer ska gå när de kommer in på webbplatsen, vilka delar av webbplatsen som de flesta besöker och vilka sidor som troligen kommer att leda bort personer från webbplatsen.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sökvägar på webbplatsen som leder personer till de viktigaste sidorna och vilka sidor som är mer benägna att leda personer bort från webbplatsen <!-- not sure about these takeaways... -->.</p> <p>I den här mallen används måtten Siddimension och Sidvisning, Visits-mått, Unika besökare, Inmatningshastighet, Studsfrekvens, Exit Rate-mått och Innehållshastighet. Flödesvisualiseringar används också för in-, avslutnings- och toppavsnitt.</p> |
+| [!UICONTROL **Webbinnehållsförbrukning**] | Se vilket webbinnehåll som konsumeras mest och engagerande användare.<p>**Det här kan hjälpa dig** att bättre förstå var personer ska gå när de kommer in på webbplatsen, vilka delar av webbplatsen som de flesta besöker och vilka sidor som troligen kommer att leda bort personer från webbplatsen.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sökvägar på webbplatsen som leder personer till de viktigaste sidorna och vilka sidor som är mer benägna att leda personer bort från webbplatsen.</p> <p>I den här mallen används måtten Siddimension och Sidvisning, Visits-mått, Unika besökare, Inmatningshastighet, Studsfrekvens, Exit Rate-mått och Innehållshastighet. Flödesvisualiseringar används också för in-, avslutnings- och toppavsnitt.</p> |
 | [!UICONTROL **Medieinnehållsförbrukning**] | Se vilket medieinnehåll som konsumeras mest och engagerande användare.<p>**Det här kan hjälpa dig** att bättre förstå var personer ska gå när de kommer in på webbplatsen, vilka delar av webbplatsen som de flesta besöker och vilka sidor som troligen kommer att leda bort personer från webbplatsen.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera vilka sökvägar på webbplatsen som leder personer till de viktigaste sidorna och vilka sidor som är mer benägna att leda personer bort från webbplatsen <!-- not sure about these takeaways... -->.</p> <p>I den här mallen används måtten Siddimension och Sidvisning, Visits-mått, Unika besökare, Inmatningshastighet, Studsfrekvens, Exit Rate-mått och Innehållshastighet. Flödesvisualiseringar används också för in-, avslutnings- och toppsektioner, en satsytevisualisering som visar sidvyer för de vanligaste sidorna, en streckvisualisering som visar sidvisningar efter paketerad tid och en linjevisualisering som visar en trendvy över den genomsnittliga tiden som har tillbringats på webbplatsen.</p> |
 | [!UICONTROL **Nästa och föregående sidflöde**] | Visa en flödesvisualisering av de vanligaste platserna som folk besöker direkt efter besök och omedelbart innan de besöker en viss sida. <p>**Detta kan hjälpa dig** att förstå hur trafiken flyttas från en viss sida till andra delar av webbplatsen och förstå de sökvägar som användarna tar för att komma fram till en viss sida.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera om siddesignen eller layouten kan optimeras för att dirigera människor till mer önskade sidor, som en sida för att göra ett köp eller lämna en granskning. Eller utvärdera om informationen på den aktuella sidan kan ge den riktning eller de åtgärder som folk vill ha när de kommer från föregående sidor. Du kan också bedöma om sidor som inte visas som tidigare sidor behöver mer framträdande länkar till den aktuella sidan.</p><p>Den här mallen använder panelen Nästa eller Föregående objekt.</p> |
 | **Sidsammanfattning** | Visa viktig information om alla sidor i egenskaperna. Visar sidvyer, en trendlinje, en flödesvisualisering och mycket mer.  <p>**Detta kan hjälpa dig** att bättre förstå hur människor interagerar med en viss sida.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera sidans prestanda över en tidsperiod eller bättre förstå vad som driver trafik till sidan.</p><p>I den här mallen används måttet Sidvyer. Det använder även linjevisualisering och Flow-visualisering.</p> |
@@ -550,7 +550,7 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--categoryRankedReport"
->title="Visa antalet besök som är kopplade till varje produktkategori på din webbplats. Detta är användbart för implementeringar som använder variabeln products och vill se mätvärden runt produktkategorin. Dimensionen som fyller i den här mallen kan vara tom om du inte har några produkter på webbplatsen."
+>title="Visa antalet besök som är kopplade till varje produktkategori på din webbplats. Detta är användbart för implementeringar som använder variabeln products och vill se mätvärden för produktkategorin. Dimensionen som fyller i den här mallen kan vara tom om du inte har några produkter på webbplatsen."
 >abstract="**Det här kan hjälpa dig** att bättre förstå populära eller mest visade produkter. &lt;/br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att mäta effekten av en marknadsföringskampanj för en viss produkt.<br/>Den här mallen använder måtten Kategori och Besök. "
 
 <!-- markdownlint-enable MD034 -->
@@ -559,8 +559,8 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--commerce-and-marketing-management"
->title="Visa fördefinierade insikter för återförsäljare om era handelsaktiviteter för att förbättra försäljningen. Detta riktar sig till användare av Magento, men kan utnyttjas av alla webbutiker."
->abstract="**Detta kan hjälpa dig** att bättre förstå hur dina handelsaktiviteter bidrar till försäljningssiffror.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att justera budgeten efter aktiviteter som får störst avkastning."
+>title="Visa fördefinierade insikter för återförsäljare om era handelsaktiviteter för att förbättra försäljningen. Detta riktar sig till användare av Adobe Commerce, men kan utnyttjas av alla webbutiker."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur dina handelsaktiviteter bidrar till försäljningssiffror.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att justera budgeten efter aktiviteter som får störst avkastning."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -616,7 +616,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--cartAdditionsOvertimeReport"
 >title="Se hur många gånger någon har lagt till något i kundvagnen."
->abstract="**Detta kan hjälpa dig** att bättre förstå den del av konverteringsprocessen där kundintresset för en produkt är tillräckligt högt för att de ska kunna lägga till den i kundvagnen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra produktrekommendationerna för alla kunder. Detta kan göras genom att analysera vilka produkter som ofta läggs till i samma varukorgar och föreslå relaterade produkter som baseras på artiklar som redan finns i varukorgen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå den del av konverteringsprocessen där kundintresset för en produkt är tillräckligt högt för att de ska kunna lägga till den i kundvagnen.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra produktrekommendationerna för alla kunder. Detta kan göras genom att analysera vilka produkter som ofta läggs till i samma varukorgar och genom att föreslå relaterade produkter baserade på artiklar som redan finns i varukorgen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -699,7 +699,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="aa-template--timeZoneRankedReport"
 >title="Visa de översta tidszonerna för besökare som kommer åt din webbplats."
->abstract="**Det här kan hjälpa dig** att bättre förstå i vilka tidszoner besökarna bor.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att justera webbplatsunderhåll ibland, vilket påverkar så få personer som möjligt."
+>abstract="**Det här kan hjälpa dig** att bättre förstå i vilka tidszoner besökarna bor.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att justera webbplatsunderhåll vid tidpunkter som påverkar så få personer som möjligt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -798,7 +798,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="aa-template--customerLoyaltyRankedReport"
 >title="Visa antalet besökare på din webbplats som har gjort 0 tidigare inköp, 1 tidigare inköp, 2 tidigare inköp eller 3+ tidigare inköp."
->abstract="**Detta kan hjälpa dig** att bättre förstå hur din webbplats påverkar köpbeteendet. .<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att fokusera på besökare som kommer tillbaka för att göra ett köp, så att du kan uppmuntra till liknande beteende för nya besökare.<br/>Den här mallen använder kundlojalitetsdimensionen."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur din webbplats påverkar köpbeteendet.<br/>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att fokusera på besökare som kommer tillbaka för att göra ett köp, så att du kan uppmuntra till liknande beteende för nya besökare.<br/>Den här mallen använder kundlojalitetsdimensionen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -942,7 +942,7 @@ Följande mallar är tillgängliga:
 | **Geografiska städer** | Se den stad som folk från webbplatsen kommer ifrån. <p>**Det här kan hjälpa dig** att bättre förstå de populäraste städer som besökarna kommer från när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringsaktiviteter i dessa städer. </p><p>Den här mallen använder dimensionen Städer. </p> |
 | **Geo US DMA** | Se vilka områden i USA som besökarna kommer ifrån.<p>**Det här kan hjälpa dig** att bättre förstå de populäraste regionerna som besökarna kommer ifrån när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att använda data för att fokusera på marknadsföringsaktiviteter i de mest framgångsrika regionerna. </p><!-- This template uses the --> |
 | **Språk** | Se vilka språk besökarna föredrar att se innehåll på. <p>**Det här kan hjälpa dig** att bättre förstå besökarnas vanligaste språk.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som fokuslokaliseringsaktiviteter eller marknadsföringsaktiviteter för de vanligaste språken.</p><p>Den här mallen använder dimensionen Språk.</p> |
-| **Tekniköversikt** | Visa information om den teknik som andra använder för att komma åt webbplatsen, t.ex. operativsystem, webbläsare och enheter. <p>**Detta kan hjälpa dig** att bättre förstå vilka tekniker som används oftast när du ansluter till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera webbplatsen för de tekniker som används.</p> |
+| **Tekniköversikt** | Visa information om den teknik som används för att komma åt webbplatsen, t.ex. operativsystem, webbläsare och enheter. <p>**Detta kan hjälpa dig** att bättre förstå vilka tekniker som används oftast när du ansluter till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera webbplatsen för de tekniker som används.</p> |
 | **Webbläsare** | Visa namn och version för de webbläsare som användarna använder mest för att komma åt webbplatsen.<p>**Detta kan hjälpa dig** att bättre förstå de vanligaste webbläsarna som besökarna använder.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, till exempel förbättra webbplatsens kvalitet genom att testa nya versioner av webbplatsen med de vanligaste webbläsarna. Om du gör det kan du maximera kvalitetskontrollen.</p><p>Den här mallen använder dimensionen Webbläsare. </p> |
 | **Webbläsartyper** | Visa namnen på de organisationer som har skapat de vanligaste webbläsarna som användarna använder för att komma åt webbplatsen. Detta skiljer sig från webbläsarmallen på så sätt att olika versioner av samma webbläsare inte listas som separata dimensionsobjekt.<p>**Detta kan hjälpa dig** att bättre förstå de vanligaste webbläsarna som besökarna använder</p><p>**Baserat på vad du lär dig kan du** göra flera saker, till exempel förbättra webbplatsens kvalitet genom att testa nya versioner av webbplatsen med de vanligaste webbläsarna. Om du gör det kan du maximera kvalitetskontrollen. </p><p>Den här mallen använder dimensionen för webbläsartyp. </p> |
 
@@ -975,7 +975,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="aa-template--searchEngineRankRankedReport"
 >title="Visa vilken sida av sökresultat en besökare klickade igenom till din webbplats. Om din webbplats till exempel visas på den andra sidan av sökresultatet i en sökmotor är dimensionsobjektet för den här variabeln Söksida 2."
->abstract="**Det här kan hjälpa dig** att bättre förstå hur högt dina sidor rankas i sökresultaten.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, förbättra SEO-strategin för att se till att ditt innehåll visas på första sidan i sökresultaten."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur högt dina sidor rankas i sökresultaten.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att förbättra SEO-strategin för att se till att ditt innehåll visas på den första sidan i sökresultaten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1094,7 +1094,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--referringDomainRankedReport"
 >title="Visa vilka domäner som användare klickar igenom för att nå din webbplats."
->abstract="**Detta kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som genererar mest trafik till din. (En länk måste finnas på den externa platsen och en besökare måste klicka på den för att dimensionsposten ska kunna visas.)<br/>**Baserat på vad du lär dig kan du** göra något annat, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande toppdomänerna. <br/>Den här mallen använder dimensionen Refererande domän."
+>abstract="**Detta kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som genererar mest trafik till din. (En länk måste finnas på den externa platsen och en besökare måste klicka på den för att dimensionsposten ska kunna visas.)<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande domänerna. <br/>Den här mallen använder dimensionen Refererande domän."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1138,12 +1138,12 @@ Följande mallar är tillgängliga:
 | [!UICONTROL **Kampanjer**] > [!UICONTROL **Kampanjkonverteringstratt**] | Visa antalet klick och utcheckningar för era kampanjer. <p>**Detta kan hjälpa dig** att bättre förstå hur marknadsföringskampanjer driver konverteringsgraden framåt.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att avgöra vilka marknadsföringskampanjer som genererar mest avkastning.</p> |
 | [!UICONTROL **Kampanjer**] > [!UICONTROL **Kampanjprestanda**] | Visa detaljerad information om hur era marknadsföringskampanjer fungerar.<p>**Det här kan hjälpa dig** att bättre förstå olika indikatorer för att lyckas med kampanjer, t.ex. intäkter, produktvisningar, beställningar och så vidare.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera marknadsföringen på de kampanjer som genererar störst intäkter. </p><p>I den här mallen används måtten Intäkter, Produktvyer, Cart Additions, Orders och Units. Den använder även spårningskoddimensionen och referensdomändimensionen. </p> |
 | **Webbförvärv** | Se hur er webbplats får besökare.<p>**Detta kan hjälpa dig** att bättre förstå olika faktorer som leder till förvärv, som söknyckelord, refererande domän och så vidare.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera marknadsföringen till de mest effektiva kanalerna.</p><p>I den här mallen används Studsfrekvens-måttet och Bounces-måttet. Det använder också dimensionen Sökmotor, Nyckelordsdimension för sökning, Siddimension för startsida, Dimensionen Referera till domän, Dimensionen Spårningskod och Referensdimension.  </p> |
-| **Sök efter deywords - all** | Visa söknyckelorden som besökarna använder för att nå din webbplats, oavsett om det är betalt eller naturligt. <p>**Detta kan hjälpa dig** att bättre förstå nyckelord som människor använder i sökningar som resulterar i webbplatstrafik. </p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att identifiera och fylla i SEO-luckor mellan nyckelord som används och de som driver webbplatstrafiken.</p><p>Den här mallen använder dimensionen Sök nyckelord. </p> |
+| **Sök nyckelord - alla** | Visa söknyckelorden som besökarna använder för att nå din webbplats, oavsett om det är betalt eller naturligt. <p>**Detta kan hjälpa dig** att bättre förstå nyckelord som människor använder i sökningar som resulterar i webbplatstrafik. </p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att identifiera och fylla i SEO-luckor mellan nyckelord som används och de som driver webbplatstrafiken.</p><p>Den här mallen använder dimensionen Sök nyckelord. </p> |
 | **Söknyckelord - betald** | Visa söknyckelorden som besökarna använder för att nå din webbplats, som matchade betald sökningsidentifiering.<p>**Detta kan hjälpa dig** att bättre förstå nyckelord som människor använder i sökningar som resulterar i webbplatstrafik.</p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att identifiera och fylla i SEO-luckor mellan nyckelord som används och de som driver webbplatstrafiken. </p><p>Den här mallen använder dimensionen Söknyckelord - Betald. </p> |
 | **Sök efter nyckelord - naturligt** | Visa söknyckelorden som besökarna använder för att nå din webbplats, vilket inte matchade betald sökningsidentifiering.<p>**Detta kan hjälpa dig** att bättre förstå nyckelord som människor använder i sökningar som resulterar i webbplatstrafik.</p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att identifiera och fylla i SEO-luckor mellan nyckelord som används och de som driver webbplatstrafiken.</p><p>Den här mallen använder dimensionen Sök nyckelord - naturligt. </p> |
 | **Sökmotorer - alla** | Visa sökmotorerna som besökarna använder för att nå din webbplats, oavsett om det är betalt eller naturligt. <p>**Detta kan hjälpa dig** att bättre förstå de sökmotorer som användarna använder och som resulterar i webbplatstrafik. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera SEO-arbetet på sökmotorer som genererar flest trafik till webbplatsen.</p><p>Den här mallen använder dimensionen Sökmotor. </p> |
 | **Sökmotorer - betalda** | Visa sökmotorerna som besökarna använder för att nå din webbplats, som matchade betald sökningsidentifiering.<p>**Detta kan hjälpa dig** att bättre förstå de sökmotorer som användarna använder och som resulterar i webbplatstrafik.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera SEO-arbetet på sökmotorer som genererar flest trafik till webbplatsen. </p><p>I den här mallen används dimensionen Sökmotor - betald. </p> |
-| **Söksiffror - naturliga** | Visa söknyckelorden som besökarna använder för att nå din webbplats, vilket inte matchade betald sökningsidentifiering.<p>**Detta kan hjälpa dig** att bättre förstå de sökmotorer som användarna använder och som resulterar i webbplatstrafik.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera SEO-arbetet på sökmotorer som genererar flest trafik till webbplatsen.</p><p>Den här mallen använder sökmotorn - naturlig dimension. </p> |
+| **Sökmotorer - naturliga** | Visa söknyckelorden som besökarna använder för att nå din webbplats, vilket inte matchade betald sökningsidentifiering.<p>**Detta kan hjälpa dig** att bättre förstå de sökmotorer som användarna använder och som resulterar i webbplatstrafik.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att fokusera SEO-arbetet på sökmotorer som genererar flest trafik till webbplatsen.</p><p>Den här mallen använder sökmotorn - naturlig dimension. </p> |
 | **Refererande domäner** | Visa vilka domäner som användare klickar igenom för att nå din webbplats.<p>**Detta kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som genererar mest trafik till din. (En länk måste finnas på den externa platsen och en besökare måste klicka på den för att dimensionsposten ska kunna visas.)</p><p>**Baserat på vad du lär dig kan du** göra något annat, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande toppdomänerna. </p><p>Den här mallen använder dimensionen Refererande domän. </p> |
 | **Ursprungliga refererande domäner** | Visa den första refererande domänen som personer klickat igenom för att nå din webbplats. (När det har angetts innehåller det samma värde för hela besökar-ID:t.)<p>**Det här kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som ursprungligen kör trafik till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande huvuddomänerna. </p><p>Den här mallen använder dimensionen Ursprunglig referensdomän. </p> |
 | **Referenter** | Visa vilka URL:er besökarna var på när de klickade igenom för att nå din webbplats. (En länk måste finnas på den externa URL:en och en besökare måste klicka på den för att dimensionsobjektet ska kunna visas.)  <p>**Det här kan hjälpa dig** att bättre förstå vilka specifika URL:er som genererar mest trafik till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra något annat, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de översta URL:erna. </p><p>Den här mallen använder dimensionen Refererande domän </p><p>I den här mallen används referensdimensionen. </p> |
@@ -1165,7 +1165,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--mobileappactions"
 >title="Visa de åtgärder som andra vidtar i din mobilapp."
->abstract="**Det här kan hjälpa dig** att bättre förstå hur användare använder din app och det värde de får från den.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra framkallningsfunktioner som kompletterar eller förbättrar dem som är populäraste."
+>abstract="**Detta kan hjälpa dig** att bättre förstå hur andra använder din app och vilket värde de får av den.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utveckla funktioner som kompletterar eller förbättrar dem som är populäraste."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1194,7 +1194,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-key-metrics"
 >title="Visa några av de vanligaste mätvärdena för mobilappar."
->abstract="**Detta kan hjälpa dig** att bättre förstå grundläggande prestanda i din mobilapp.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att utvärdera den övergripande hälsan och prestandan för din app."
+>abstract="**Detta kan hjälpa dig** att bättre förstå din mobilapps grundläggande prestanda.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att utvärdera programmets övergripande hälsa och prestanda."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1233,7 +1233,7 @@ Följande mallar är tillgängliga:
 | **Åtgärder för mobilappar** | Visa de åtgärder som andra vidtar i din mobilapp. <p>**Det här kan hjälpa dig** att bättre förstå hur användare använder din app och det värde de får från den.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra framkallningsfunktioner som kompletterar eller förbättrar dem som är populäraste.</p><p>I den här mallen används ändringsmåtten Händelser, Sessioner, Personer och Procent. |
 | **Användning av mobilappar** | Visa antalet användare, starter och första starter för appen samt den genomsnittliga sessionslängden.<p>**Det här kan hjälpa dig** att bättre förstå hur mycket appen används. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra appprestanda så att den kan anpassas till användningsmängden.</p><!-- This template uses the --> |
 | **Mobilappsresor** | Visa de framträdande användningsmönstren för din mobilapp. <p>**Detta kan hjälpa dig** att bättre förstå hur andra använder din app. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra hur användare kan komma från en skärm till en annan och anpassa sig till de vanligaste arbetsflödena. </p><!-- This template uses the --> |
-| **Mätvärden för mobilappar** | Visa några av de vanligaste mätvärdena för mobilappar. <p>**Detta kan hjälpa dig** att bättre förstå grundläggande prestanda i din mobilapp.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att utvärdera den övergripande hälsan och prestandan för din app.</p><!-- This template uses the --> |
+| **Mätvärden för mobilappar** | Visa några av de vanligaste mätvärdena för mobilappar. <p>**Detta kan hjälpa dig** att bättre förstå din mobilapps grundläggande prestanda.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att utvärdera programmets övergripande hälsa och prestanda.</p><!-- This template uses the --> |
 | **Meddelanden för mobilappar** | Visa prestandadata för meddelanden i appen och push-meddelanden för appen.<p>**Det här kan hjälpa dig** att bättre förstå hur användare använder meddelandefunktioner i appen samt hur effektivt push-meddelanden genererar trafik till din app.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra push-meddelandefunktionen i appen.</p><!-- This template uses the --> |
 | **Mobilappsprestanda** | Se hur appen fungerar och var användarna har problem. <p>**Detta kan hjälpa dig** att bättre förstå om användare som använder din app stöter på långsamhet eller försämrade prestanda. </p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att åtgärda befintliga problem eller förbättra appprestanda innan problem uppstår.</p><!-- This template uses the --> |
 | **Kvarhållande av mobilappar** | Visa vilka användare som är de mest lojala användarna av appen och vad de gör i appen. <p>**Detta kan hjälpa dig** att bättre förstå hur dina mest lojala användare använder din app.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra marknadsföringen för de funktioner som de mest lojala användarna använder.</p><!-- This template uses the --> |
@@ -1312,7 +1312,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="cja-template--am-pm"
 >title="Visa händelser, sessioner och personer på din webbplats, uppdelade efter AM och PM. Om du till exempel har en rapport som sträcker sig från 1 januari till 7, grupperas AM-timmarna för varje dag i samma dimensionsobjekt."
->abstract="***Det här kan hjälpa dig** att bättre förstå när du besöker din webbplats oftast och oftast.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.<br/>Den här mallen använder AM/PM-dimensionen."
+>abstract="***Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.<br/>Den här mallen använder AM/PM-dimensionen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1385,7 +1385,7 @@ Följande mallar är tillgängliga:
 | --- | --- | 
 | [!UICONTROL **Minut av timmen**] | Visa antalet händelser, sessioner och personer på din webbplats, uppdelat efter minut. Om du t.ex. har en rapport med en rapporttidsram på en dag grupperas den första minuten i varje timme på dagen i samma dimensionsobjekt.<p>**Detta kan hjälpa dig** att förstå trender på detaljnivå.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera resurser för topptider, ända ned till minuten.</p><p>I den här mallen används dimensionen Minut för timme.</p> |
 | **Timme på dagen** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter timme på dagen. Om du t.ex. har en rapport som sträcker sig från 1 januari till 7 januari grupperas den första timmen för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder dimensionen Timme för dag.</p> |
-| **AM/PM** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter AM och PM. Om du till exempel har en rapport som sträcker sig från 1 januari till 7, grupperas AM-timmarna för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks oftast och minst.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder AM/PM-dimensionen.</p> |
+| **AM/PM** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter AM och PM. Om du till exempel har en rapport som sträcker sig från 1 januari till 7, grupperas AM-timmarna för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder AM/PM-dimensionen.</p> |
 | **Veckodag** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter veckodag. Om du till exempel har en rapport som sträcker sig över januari, grupperas varje veckodag i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka veckodagar din webbplats besöker mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag i vecka.</p> |
 | **Dag i månaden** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag i månaden. Om du till exempel har en rapport som sträcker sig över ett helt år grupperas varje dag i månaden i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka dagar i varje månad som webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag i månaden.</p> |
 | **Dag på året** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter dag på året. Om du till exempel har en rapport som sträcker sig över flera år grupperas varje dag på året i samma dimensionsobjekt. <p>**Det här kan hjälpa dig** att bättre förstå vilka dagar på året som webbplatsen oftast och oftast besöker.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som personal som är mer lämpad för telefonsamtalscentret under dagar med hög trafik.</p><p>Den här mallen använder dimensionen Dag på år.&lt;/> |
@@ -1403,7 +1403,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="cja-template--multiChannelOverview"
 >title="Se hur trafiken distribueras över flera kanaler."
->abstract="**Detta kan hjälpa dig** att bättre förstå vilka kanaler som är mest framgångsrika när det gäller trafik och engagemang. <br/>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, som att fokusera marknadsföringen på de kanaler som ger störst avkastning på investeringen.<br/>Den här mallen använder användar-, sessions- och händelsemått."
+>abstract="**Detta kan hjälpa dig** att bättre förstå vilka kanaler som är mest framgångsrika när det gäller trafik och engagemang. <br/>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, till exempel fokusera marknadsföringen på de kanaler som ger störst avkastning på investeringen.<br/>Den här mallen använder användar-, sessions- och händelsemått."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1438,7 +1438,7 @@ Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- | 
-| [!UICONTROL **Översikt över flera kanaler**] | Se hur trafiken distribueras över flera kanaler. <p>**Detta kan hjälpa dig** att bättre förstå vilka kanaler som är mest framgångsrika när det gäller trafik och engagemang. </p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, som att fokusera marknadsföringen på de kanaler som ger störst avkastning på investeringen.</p><p>I den här mallen används användar-, sessions- och händelsemätningar.</p> |
+| [!UICONTROL **Översikt över flera kanaler**] | Se hur trafiken distribueras över flera kanaler. <p>**Detta kan hjälpa dig** att bättre förstå vilka kanaler som är mest framgångsrika när det gäller trafik och engagemang. </p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, till exempel fokusera marknadsföringen på de kanaler som ger störst avkastning på investeringen.</p><p>I den här mallen används användar-, sessions- och händelsemätningar.</p> |
 | **Webb+App** | Visa webbtrafik och mobiltrafik tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur webb- och mobiltrafiken distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att avsätta mer resurser till din mobilappsupplevelse när den når en viss trafiknivå.</p><p>I den här mallen används mått för webbsessioner, mobilappssessioner och flerkanalssessioner för Web+App.</p> |
 | **Online/Offline** | Visa trafik online och offline tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur online- och offlinetrafik distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att avsätta mer resurser till din onlineupplevelse när den når en viss trafiknivå.</p><!-- This template uses the ... --> |
 | **Avböjning av samtalscenter** | Se hur webbtrafiken påverkar trafiken i callcenter.<p>**Detta kan hjälpa dig** att bättre förstå hur självbetjäningsinnehållet på din webbplats avspeglar trafiken till ditt callcenter.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, till exempel förbättra självbetjäningsinnehållet för att minska trafiken till ditt call center, eller mäta avkastningen på ditt självbetjäningsinnehåll genom att beräkna hur mycket som sparats via färre supportsamtal.</p><p>I den här mallen används mått för webbsessioner, mobilappssessioner och flerkanalssessioner för Web+App.</p> |
