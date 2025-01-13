@@ -4,7 +4,7 @@ title: Punktdiagram
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
+source-git-commit: 59b0462f114ca98289b4f7de92478d031d97fd31
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -31,7 +31,11 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
 *I den här artikeln beskrivs punktvisualiseringen i **Customer Journey Analytics**. Se [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) för versionen **Adobe Analytics**av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Visualiseringen av ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visar hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål).
 
