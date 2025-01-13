@@ -3,10 +3,10 @@ description: Använd kartvisualisering i ett Workspace-projekt.
 title: Karta
 feature: Visualizations
 role: User, Admin
-badgePremium: label="Adobe Analytics" url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization" tooltip="Välj det här alternativet om du vill visa Adobe Analytics-versionen av den här artikeln."
+badgePremium: label="Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization.html" tooltip="Välj det här alternativet om du vill visa Adobe Analytics-versionen av den här artikeln."
 hide: true
 hidefromtoc: true
-source-git-commit: d05990b0eac6b08530b8526b3b48b722139be018
+source-git-commit: 3c3ef1c79e5863b74a3b7458c87d1f83f7188e5a
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
