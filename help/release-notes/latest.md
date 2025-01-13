@@ -3,16 +3,16 @@ title: Visa versionsinformation för Customer Journey Analytics
 description: Versionsinformation för senaste Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
+source-git-commit: af9ed77160d1bf784d900d50055dded3e9f98eb1
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 3%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (23 oktober 2024)
 
-**Senast uppdaterad**: 24 oktober 2024
+**Senast uppdaterad**: 13 januari 2025
 
 Versionsinformationen omfattar frisläppningsperioden 15 oktober 2024 till slutet av 2024. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -21,7 +21,7 @@ Versionsinformationen omfattar frisläppningsperioden 15 oktober 2024 till slute
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Resursöverföring** | Gör att du kan överföra ägarskap av komponenter som projekt, filter och beräknade värden till andra användare för att säkerställa kontinuitet och lämplig åtkomst. [Läs mer](/help/tools/asset-transfer/transfer-assets.md) |  | Oktober 15 |
-| **Guidad analys: Bädda in i Workspace** | [Guidad analys](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) är nu tillgängligt direkt i Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser. Från ett nytt område på vänster sida kan du skapa nya guidade analyser som du kan lägga till i dina projekt. Du kan också komma åt sparade guidade analyser som kan återanvändas som byggblock i många projekt. | 2 oktober 2024 | 23 oktober 2024 |
+| **Guidad analys: Bädda in i Workspace** | [Guidad analys](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) är nu tillgängligt direkt i Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser. Från ett nytt område på vänster sida kan du skapa nya guidade analyser som du kan lägga till i dina projekt. Du kan också komma åt sparade guidade analyser som kan återanvändas som byggblock i många projekt. |   | 22 januari 2025 |
 | **Produktanvändning** | Se hur er organisation använder Customer Journey Analytics. Om du aktiverar den här funktionen skapas en datauppsättning i Adobe Experience Platform som samlar in data när någon i organisationen använder Analysis Workspace. En anslutning och en datavy skapas också automatiskt, vilket ger dig åtkomst till dimensioner som de vanligaste projekttyperna, de mest aktiva användarna och de vanligaste komponenterna som används i projekt. [Läs mer](/help/tools/product-usage/usage-overview.md) | 23 oktober 2024 | Januari 2025 |
 | **Ny information om begärandefaktorer i Analysis Workspace Performance** | Det finns nu ett nytt avsnitt,&quot;Begärandefaktorer&quot;, som är tillgängligt när du analyserar prestanda i Analysis Workspace. Mer information om hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna finns i&quot;Begärandefaktorer&quot; i [Optimera Analysis Workspace-prestanda](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | 1 oktober 2024 |
 
