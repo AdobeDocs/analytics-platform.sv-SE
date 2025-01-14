@@ -4,7 +4,7 @@ title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_datadictionary"
+>id="component_datadictionary"
 >title="Dataordlista"
 >abstract="Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö. <br/>Analysadministratörer ansvarar för att strukturera information om varje komponent i Data Dictionary för användarna."
 

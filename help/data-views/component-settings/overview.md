@@ -5,7 +5,7 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_settings"
+>id="dataview_component_settings"
 >title="Komponentinställningar"
 >abstract="Visa och konfigurera namn, beskrivning och andra inställningar för en komponent.<br/><br/>**Parametrar **<br/>**Dölj komponent i rapportering**: Om du markerar den här rutan döljs den här komponenten för icke-adminanvändare i rapporter. Administratörer kan fortfarande komma åt den genom att välja **[!UICONTROL Show all components]** i ett Workspace-projekt."
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_contextlabels"
+>id="dataview_component_contextlabels"
 >title="Sammanhangsetiketter"
 >abstract="Om du tar bort en sammanhangsetikett kan det påverka specifika paneler eller rapporter där komponenten krävs."
 

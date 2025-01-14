@@ -4,7 +4,7 @@ description: Skapa ett datumintervall för rapportering.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Date range builder]]
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_dateranges_endtime"
+>id="components_dateranges_endtime"
 >title="Sluttid"
 >abstract="Sluttider omfattar alltid 59 sekunder."
 

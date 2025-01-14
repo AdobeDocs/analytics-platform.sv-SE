@@ -4,7 +4,7 @@ description: Lär dig hur du visar och hanterar Customer Journey Analytics grans
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_userid"
+>id="tools_auditlog_userid"
 >title="Användar-ID"
 >abstract="Du hittar användar-ID:t genom att klicka på informationsknappen i en loggpost som innehåller den önskade användaren."
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_componentid"
+>id="tools_auditlog_componentid"
 >title="Komponent-ID"
 >abstract="Komponent-ID:t hittas genom att klicka på knappen info på en loggpost som innehåller den önskade komponenten."
 

@@ -4,7 +4,7 @@ title: Skapa filter
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 388708526204f0854b486643fa58d1f8504575aa
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_createaudience"
+>id="components_filters_createaudience"
 >title="Skapa publik"
 >abstract="Målgrupper kan skapas från ett filter och delas med Adobe Experience Platform för aktivering."
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_datapreview"
+>id="components_filters_datapreview"
 >title="Förhandsgranska data"
 >abstract="Jämför data i det här filtret med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
 
@@ -158,7 +158,7 @@ Eller så kan du definiera 52 filter: 50 filter för USA, ett för mobiltelefone
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_repeating"
+>id="components_filters_attribution_repeating"
 >title="Upprepande"
 >abstract="Inkluderar instanser och beständiga värden för dimensionen."
 
@@ -167,7 +167,7 @@ Eller så kan du definiera 52 filter: 50 filter för USA, ett för mobiltelefone
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_instance"
+>id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Inkluderar instanser och beständiga värden för dimensionen."
 
@@ -176,7 +176,7 @@ Eller så kan du definiera 52 filter: 50 filter för USA, ett för mobiltelefone
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_nonrepeatinginstance"
+>id="components_filters_attribution_nonrepeatinginstance"
 >title="Icke upprepande instans"
 >abstract="Inkluderar unika (icke upprepande) instanser för dimensionen."
 

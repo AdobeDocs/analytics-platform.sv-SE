@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '3519'
+source-wordcount: '3793'
 ht-degree: 0%
 
 ---
@@ -278,6 +278,82 @@ När en datauppsättning väljs i datamängdstabellen visas information om den v
 >id="cja_connections_historicalreportablerows"
 >title="Historiska rader som ska rapporteras"
 >abstract="Visar det totala antalet rader som är tillgängliga för en period som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_keyusagemetrics"
+>title="Viktiga användningsmått"
+>abstract="Ange månads- och totaldata för rader som ska rapporteras, både för kärnrader och historiska rader."
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_monthlyingestedrows"
+>title="Månatliga kapslade rader"
+>abstract="Mäter det totala antalet poster som läggs till i systemet varje månad för att ge insikter om datatillväxt och intagsfrekvens."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_monthlyreportablerows"
+>title="Månatliga rapporteringsbara rader"
+>abstract="Spårar antalet rader som är tillgängliga för rapportering. Rapporteringsbara rader är de inkapslade raderna minus de rader som hoppas över och tas bort under intag. Rapporteringsbara rader fungerar som nyckeltal för fakturering och dataanvändning."
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_detailbreakdown"
+>title="Detaljuppdelning."
+>abstract="Du kan visa detaljerade mått efter anslutning, datauppsättning, sandlåda och taggar, med alternativet att hämta en CSV-fil med data."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_otherdatasets"
+>title="Andra datauppsättningar"
+>abstract="För månaderna före september 2024 samlades data in på datauppsättningsnivå och visas som *Andra datauppsättningar* för tydlighet. Från och med september 2024 samlas data in på en detaljerad datauppsättningsnivå och *andra datauppsättningar* visas inte längre."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_unknowndatasetsorconnections"
+>title="Okända datauppsättningar eller anslutningar"
+>abstract="Okända datauppsättningar eller anslutningar visas med deras ID."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_datanotavailable"
+>title="Data är inte tillgängliga"
+>abstract="Historiska data före september 2024 är inte tillgängliga på grund av systembegränsningar. Mätvärden samlas in och visas från och med september 2024. Diagrammet visar de 18 senaste månaderna på tidslinjen och framtida data visas när data blir tillgängliga."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_corereportablerows"
+>title="Centrala rapporteringsbara rader"
+>abstract="Visar det totala antalet rader som är tillgängliga de senaste 13 månaderna. Den 1 februari 2024 visar till exempel antalet totalt antal rader som är tillgängliga med en händelsetidsstämpel från januari 2023 till januari 2024."
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_historicalreportablerows"
+>title="Historiska rader som ska rapporteras"
+>abstract="Visar det totala antalet rader som är tillgängliga för en period som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
+
 <!-- markdownlint-enable MD034 -->
 
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '8486'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields"
+>id="dataview_derivedfields"
 >title="Härledda fält"
 >abstract="Med ett härlett fält kan du definiera dataändringar direkt med hjälp av ett anpassningsbart regelverktyg. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i Workspace eller ytterligare definiera det som en komponent i datavyn."
 
@@ -430,7 +430,7 @@ För varje funktion som stöds finns information nedan:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_casewhen"
+>id="dataview_derivedfields_casewhen"
 >title="Skiftläge"
 >abstract="Med den här funktionen kan du använda villkor som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i det nya härledda fältet baserat på villkorens sekvens."
 
@@ -670,7 +670,7 @@ Följande begränsningar gäller och används när värden för *markera* och *a
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_classify"
+>id="dataview_derivedfields_classify"
 >title="Klassificera"
 >abstract="Med den här funktionen kan du definiera en uppsättning värden som ersätts av motsvarande värden med en textinmatning."
 
@@ -815,7 +815,7 @@ Följande ytterligare funktioner är tillgängliga i gränssnittet Klassifiera r
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_concatenate"
+>id="dataview_derivedfields_concatenate"
 >title="Sammanfoga"
 >abstract="Den här funktionen ger möjlighet att kombinera två eller flera fält, härledda fält eller användarinmatade strängvärden till ett enda fält med definierade avgränsare"
 
@@ -902,7 +902,7 @@ Du definierar ett `Origin - Destination` härlett fält. Du använder funktionen
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_deduplicate"
+>id="dataview_derivedfields_deduplicate"
 >title="Deduplicera"
 >abstract="Med den här funktionen kan du konfigurera ett fält så att värden endast räknas som icke-repetitiva på antingen sessions- eller personnivå. Dessutom kan ett ID för borttagning av dubbletter användas för att säkerställa att endast ett värde används baserat på ett visst ID (t.ex. ett köp-ID) (antingen den första instansen eller den sista instansen)."
 
@@ -997,7 +997,7 @@ Du definierar ett nytt härlett `Tracking Code (deduplicated)`-fält. Du använd
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_findandreplace"
+>id="dataview_derivedfields_findandreplace"
 >title="Sök och ersätt"
 >abstract="Med den här funktionen kan du söka efter alla värden i ett markerat fält och ersätta dessa värden med ett annat värde i ett nytt härlett fält."
 
@@ -1077,7 +1077,7 @@ Du definierar ett `Email Marketing (updated)` härlett fält. Du använder funkt
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lookup"
+>id="dataview_derivedfields_lookup"
 >title="Sök"
 >abstract="Den här funktionen ger möjlighet att använda fält från en uppslagsdatauppsättning med hjälp av en matchande nyckel mellan datauppsättningar."
 
@@ -1138,7 +1138,7 @@ Du kan snabbt infoga en [!UICONTROL Lookup]-funktion i regelbyggaren som redan i
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lowercase"
+>id="dataview_derivedfields_lowercase"
 >title="Gemener"
 >abstract="Den här funktionen konverterar hela strängtexten till gemener."
 
@@ -1199,7 +1199,7 @@ Du definierar ett `Product Names` härlett fält. Du använder funktionen [!UICO
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_math"
+>id="dataview_derivedfields_math"
 >title="Matematik"
 >abstract="Med den här funktionen kan du utföra matematiska operationer i ett fält. Funktionen kan användas för att utföra grundläggande aritmetiska operationer, som addition, subtraktion, multiplikation och division."
 
@@ -1290,7 +1290,7 @@ Använd Math-funktionen för träffnivåbaserade beräkningar. Använd funktione
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_mergefields"
+>id="dataview_derivedfields_mergefields"
 >title="Sammanfoga fält"
 >abstract="Med den här funktionen kan du ta värden från två olika fält och inkludera deras respektive värden i en enda dimension. Regeln kontrollerar först om det första värdet har angetts. Annars används det andra värdet och så vidare."
 
@@ -1366,7 +1366,7 @@ Du måste välja samma typ av fält i en regel för att slå samman fält. Om du
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_nextprevious"
+>id="dataview_derivedfields_nextprevious"
 >title="Nästa eller Föregående"
 >abstract="Med den här funktionen kan du titta på nästa eller föregående värde som samlats in för ett givet fält."
 
@@ -1448,7 +1448,7 @@ Du kan bara markera fält som tillhör tabellen Besök eller Händelse.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_regexreplace"
+>id="dataview_derivedfields_regexreplace"
 >title="Regex Replace"
 >abstract="Med den här funktionen kan du extrahera delar av en sträng med reguljära uttryck."
 
@@ -1555,7 +1555,7 @@ Du kan använda de här sekvenserna i [!UICONTROL Output format] hur många gån
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_split"
+>id="dataview_derivedfields_split"
 >title="Dela"
 >abstract="Med den här funktionen kan du dela upp ett fält i flera fält baserat på en avgränsare."
 
@@ -1657,7 +1657,7 @@ Du skapar ett `Second Response` härlett fält som ska ta det senaste värdet fr
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_summarize"
+>id="dataview_derivedfields_summarize"
 >title="Sammanfatta"
 >abstract="Den här funktionen gör det möjligt att samla värden på en händelse-, sessions- eller personnivå. Beroende på fälttypen för det valda fältet är olika alternativ tillgängliga."
 
@@ -1735,7 +1735,7 @@ Använd funktionen Summera för händelse-, sessions- eller personomfattningsbas
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_trim"
+>id="dataview_derivedfields_trim"
 >title="Rensa"
 >abstract="Med den här funktionen kan du trimma antingen blanksteg eller specialtecken från början eller slutet av en sträng. Det går också att ange antalet tecken som ska användas för det returnerade värdet, antingen från strängens början eller slut."
 
@@ -1857,7 +1857,7 @@ Du skapar ett `Store Identifier` härlett fält. Du använder funktionen [!UICON
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_urlparse"
+>id="dataview_derivedfields_urlparse"
 >title="URL-parsning"
 >abstract="Den här funktionen gör det möjligt att analysera olika delar av en URL, inklusive värden, sökvägar eller frågeparametrar."
 

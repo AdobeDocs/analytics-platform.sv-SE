@@ -3,7 +3,7 @@ description: Läs mer om mätningstyp och attribuering
 title: Mättyp och attribut
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_nondefaultattributionmodel"
+>id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="Använd en attribueringsmodell som inte är standard"
 >abstract="Aktivera en icke-standardattribueringsmodell för det valda måttet."
 
@@ -57,7 +57,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attributionmodel"
+>id="components_calculatedmetrics_attributionmodel"
 >title="Modell"
 >abstract="Välj en attribueringsmodell för måttet."
 
@@ -66,7 +66,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_lasttouch"
+>id="components_calculatedmetrics_attribution_lasttouch"
 >title="Senaste beröring"
 >abstract="100 % av krediterna går till det sista dimensionsvärdet som en besökare kan se."
 
@@ -75,7 +75,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_firsttouch"
+>id="components_calculatedmetrics_attribution_firsttouch"
 >title="Första beröring"
 >abstract="100 % av krediterna går till det första dimensionsvärdet som en besökare ser."
 
@@ -84,7 +84,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_linear"
+>id="components_calculatedmetrics_attribution_linear"
 >title="Linjär"
 >abstract="Krediten fördelas jämnt över alla dimensionsvärden."
 
@@ -93,7 +93,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_participation"
+>id="components_calculatedmetrics_attribution_participation"
 >title="deltagande"
 >abstract="100 % tack för alla dimensionsvärden som ses av en besökare.<br/>Kolumnsummor är överskattade."
 
@@ -102,7 +102,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_sametouch"
+>id="components_calculatedmetrics_attribution_sametouch"
 >title="Samma beröring"
 >abstract="Kreditering ges endast till dimensionsvärden som inträffar för samma händelse som konvertering."
 
@@ -111,7 +111,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_ushaped"
+>id="components_calculatedmetrics_attribution_ushaped"
 >title="U Shaped"
 >abstract="40 % krediterar det första dimensionsvärdet, 40 % fram till det sista, 20 % delas av mitten."
 
@@ -120,7 +120,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_jcurve"
+>id="components_calculatedmetrics_attribution_jcurve"
 >title="J-kurva"
 >abstract="60 % krediterar det sista dimensionsvärdet, 20 % till det första och 20 % delas av mitten."
 
@@ -129,7 +129,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_inversej"
+>id="components_calculatedmetrics_attribution_inversej"
 >title="Inverterad J"
 >abstract="60 % krediterar det första dimensionsvärdet, 20 % till det sista, 20 % delas av mitten."
 
@@ -138,7 +138,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_timedecay"
+>id="components_calculatedmetrics_attribution_timedecay"
 >title="Tidsminskning"
 >abstract="De Dimensioner som ligger närmast konverteringen ger mest poäng."
 
@@ -147,7 +147,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_custom"
+>id="components_calculatedmetrics_attribution_custom"
 >title="Anpassad"
 >abstract="Definiera din egen positionsbaserad attribueringsvikt."
 
@@ -156,7 +156,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_algorithmic"
+>id="components_calculatedmetrics_attribution_algorithmic"
 >title="Algoritmisk"
 >abstract="Krediten bestäms dynamiskt utifrån en statistisk algoritm."
 
@@ -171,7 +171,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_lookbackwindow"
+>id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Fönstret Lookback"
 >abstract="Den här inställningen bestämmer fönstret för den dataattribuering som ska användas för varje konvertering."
 

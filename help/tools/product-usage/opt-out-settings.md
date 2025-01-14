@@ -1,9 +1,10 @@
 ---
 title: Inställningar för produktanvändningsavanmälan
 description: Hantera avanmälningsinställningar för enskilda användare inom organisationen.
-source-git-commit: 7d22c512e8e96963b288567704d2245e64411b10
+exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -25,5 +26,10 @@ Adobe använder en kombination av spårning på klientsidan och serversidan för
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_opt_out_settings"
+>title="Avanmäl användare"
+>abstract="Undanta användare från spårning av produktanvändning."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_opt_out_settings"
 >title="Avanmäl användare"
 >abstract="Undanta användare från spårning av produktanvändning."

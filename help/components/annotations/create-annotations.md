@@ -4,7 +4,7 @@ description: Så här skapar du anteckningar i Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]]
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_details"
+>id="components_annotations_details"
 >title="Anteckningsinformation"
 >abstract="Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till organisationen. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden."
 
@@ -48,7 +48,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]]
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_scope"
+>id="components_annotations_scope"
 >title="Omfång"
 >abstract="Med omfång kan du anpassa vilka data som ska kommenteras. Beräknade mått och segment ärver inte automatiskt anteckningar som tillämpas på komponenter som används i deras definitioner. Du kan lägga till nya beräknade värden i omfångsavsnittet i en befintlig anteckning. Nya segment kräver en ny anteckning."
 

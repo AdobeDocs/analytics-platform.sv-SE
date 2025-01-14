@@ -1,9 +1,10 @@
 ---
 title: Inställningar för produktanvändningsdata
 description: Aktivera, inaktivera eller konfigurera inställningar för produktanvändning.
-source-git-commit: 7d22c512e8e96963b288567704d2245e64411b10
+exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -32,5 +33,15 @@ Följande inställningar är tillgängliga på den här sidan:
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
+>title="Åsidosätt fönstret för datalagring"
+>abstract="Korta tillgängligheten för produktanvändningsdata för att minska kostnaderna eller följa riktlinjerna för integritet."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_sandbox"
+>title="Adobe Experience Platform sandlåda"
+>abstract="Anger den Adobe Experience Platform-sandlåda som schemat och datauppsättningen skapas under."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_data_retention"
 >title="Åsidosätt fönstret för datalagring"
 >abstract="Korta tillgängligheten för produktanvändningsdata för att minska kostnaderna eller följa riktlinjerna för integritet."
