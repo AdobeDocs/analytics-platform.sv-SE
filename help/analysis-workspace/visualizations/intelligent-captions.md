@@ -4,14 +4,77 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
+source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
 
-# Intelligenta bildtexter
+# Intelligenta bildtexter {#intelligent-captions}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_area"
+>title="Intelligenta bildtexter: Område"
+>abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_bar"
+>title="Intelligent captions: Bar"
+>abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_donut"
+>title="Intelligenta bildtexter: Donut"
+>abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_horizontalbar"
+>title="Intelligenta bildtexter: Vågrät liggande stapel"
+>abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_line"
+>title="Intelligenta bildtexter: Line"
+>abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_fallout"
+>title="Intelligenta bildtexter: Utfall"
+>abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_flow"
+>title="Intelligenta bildtexter: Flöde"
+>abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
+
+<!-- markdownlint-enable MD034 -->
 
 Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Den första versionen innehåller automatiskt genererade insikter för visualiseringen [Line](line.md). Andra visualiseringar följer.
 
