@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
+source-git-commit: 198d2670b2008cb669433753d5bfedd90f71c220
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -191,3 +191,10 @@ Så här lägger du till saknade komponenter i en mall:
 Precis som med mallar från Adobe kan användare i organisationen komma åt mallar som administratörer skapar.
 
 Mer information om hur du får åtkomst till en företagsmall finns i [Åtkomst till och kör en mall](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) i [Använd mallar](/help/analysis-workspace/templates/use-templates.md).
+
+## Dölj fliken Mallar
+
+Administratörer kan dölja fliken Mallar för alla användare i organisationen.
+
+1. Gå till **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Preferences]** > **[!UICONTROL Company]**.
+1. Välj alternativet för **[!UICONTROL Hide Templates tab]**.
