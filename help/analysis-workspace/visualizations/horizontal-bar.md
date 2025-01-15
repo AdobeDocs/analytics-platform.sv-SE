@@ -4,9 +4,9 @@ title: Vågrätt streck och vågrätt streck staplade
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,13 @@ Visualiseringen av det vågräta fältet har ett standardalternativ och ett stap
 >abstract="Skapa en vågrät fältvisualisering som representerar olika värden för ett eller flera mätvärden."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs de staplade visualiseringarna för det vågräta och vågräta strecket i **Customer Journey Analytics**. Mer information om **Adobe Analytics**-versionen av den här artikeln finns i [Vågrätt fält och vågrätt fält staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar).*
+
+>[!ENDSHADEBOX]
 
 
 Visualiseringen av ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]** visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.

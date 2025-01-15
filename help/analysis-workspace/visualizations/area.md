@@ -4,14 +4,14 @@ title: Område och område staplade
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# Område och område staplade
+# Yta (staplad)
 
 ## Område {#area}
 
@@ -23,6 +23,13 @@ ht-degree: 0%
 >abstract="Skapa en områdesgraf som representerar skärningspunkten mellan flera mätvärden."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs de staplade områdena Område och Yta i **Customer Journey Analytics**. Se [Område och område staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 
 Visualiseringen av ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** är som ett linjediagram, men med ett färgat område under linjen. Lägg till ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden.

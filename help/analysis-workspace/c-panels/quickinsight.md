@@ -4,9 +4,9 @@ title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1078'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 1%
 >abstract="Skapa en panel för att snabbt skapa en frihandsritabell och medföljande visualisering för att analysera och hitta insikter snabbare."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Den här artikeln visar panelen Snabbinsikter i **Customer Journey Analytics**. Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 
 [!UICONTROL Quick Insights] ger vägledning till icke-analytiker och nya användare av [!UICONTROL Analysis Workspace] så att de kan lära sig att snabbt och enkelt svara på affärsfrågor. Det är också ett bra verktyg för avancerade användare som snabbt vill besvara en enkel fråga utan att själva behöva skapa en tabell.

@@ -4,9 +4,9 @@ title: Linje
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 0%
 >abstract="Skapa en linjevisualisering som visar hur värden ändras under en tidsperiod. En radvisualisering kan bara användas när tid används som dimension."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras linjevisualiseringen i **Customer Journey Analytics**. Se [Rad](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 
 Visualiseringen ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Line]** representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. En radvisualisering kan bara användas när tid används som dimension.

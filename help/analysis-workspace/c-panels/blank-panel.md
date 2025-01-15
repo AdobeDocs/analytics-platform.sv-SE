@@ -4,9 +4,9 @@ title: Tom panel
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '237'
 ht-degree: 6%
 
 ---
@@ -22,6 +22,13 @@ ht-degree: 6%
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Paneler i Analysis Workspace"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Den här artikeln visar panelen Tom i **Customer Journey Analytics**. Se [Tom panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 
 En **[!UICONTROL Blank panel]** visar ett urval paneler (indikeras av ![WebPage](/help/assets/icons/WebPage.svg)) eller visualiseringar som du kan skapa för att skapa en helt anpassad analys.

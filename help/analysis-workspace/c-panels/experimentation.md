@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2130'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,12 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln visas panelen Experimentation i **Customer Journey Analytics**. Information om hur du analyserar Adobe Target-aktiviteter och -upplevelser i **Adobe Analytics**finns i [Analytics for Target-panelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel).*
+
+>[!ENDSHADEBOX]
 
 
 På panelen **[!UICONTROL Experimentation]** kan analytiker jämföra olika användarupplevelser, marknadsförings- och meddelandevarianter för att avgöra vilket som är bäst för att få ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst: online, offline, från Adobe-lösningar som Target eller Journey Optimizer, och till och med från BYO (hämta in dina egna) data.

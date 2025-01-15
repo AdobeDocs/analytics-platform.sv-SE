@@ -4,9 +4,9 @@ title: Sammanfattningsnummer och sammanfattning
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,14 @@ ht-degree: 0%
 >abstract="Skapa en visualisering som visar summor och delsummor."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras visualiseringen av sammanfattningsnumret och sammanfattningsändringen i **Customer Journey Analytics**. Se [Sammanfattningsnummer och Sammanfattningsändring](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
+
 
 Använd visualiseringen ![Sammanfattning](/help/assets/icons/123.svg) **[!UICONTROL Summary number]** för att markera ett stort antal som är viktiga i ett projekt. Den här visualiseringen fungerar på följande sätt med den associerade datakällan:
 

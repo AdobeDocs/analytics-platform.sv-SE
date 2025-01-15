@@ -4,9 +4,9 @@ title: Om utfallsrapporter och visualiseringar
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '349'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,12 @@ ht-degree: 1%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln dokumenteras utfallsvisualiseringen i **Customer Journey Analytics**. Se [Utfall](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 En ![ConversionTrnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]**-visualisering visar var personer slutade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
 

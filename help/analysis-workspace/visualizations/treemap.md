@@ -4,10 +4,10 @@ title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 13%
+source-wordcount: '153'
+ht-degree: 11%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 13%
 >abstract="Skapa en treemap-visualisering för att visa hierarkiska (trädstrukturerade) data med kapslade rektanglar."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs Treemap-visualiseringen i **Customer Journey Analytics**. Se [Treemap](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/treemap) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 
 Använd en ![GraphTree](/help/assets/icons/GraphTree.svg) **[!UICONTROL Treemap]**-visualisering för att visa hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar.

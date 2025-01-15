@@ -4,9 +4,9 @@ title: Stolpstreck och stapel
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,13 @@ Fältvisualiseringen har ett standardalternativ och ett staplingsalternativ.
 >abstract="Skapa en fältvisualisering som representerar olika värden för ett eller flera mätvärden."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs staplade visualiseringar för staplar och staplar i **Customer Journey Analytics**. Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 
 Visualiseringen ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.

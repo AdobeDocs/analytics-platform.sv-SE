@@ -4,9 +4,9 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 0%
 >abstract="Skapa en visualisering av venndiagram för att snabbt jämföra visuellt två element och storleken på deras överlappning."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs Vennbildens visualisering i **Customer Journey Analytics**. Se [Vennn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 
 Med visualiseringen ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** kan du dra upp till tre filter och ett mätvärde (från komponentpanelen) för att skapa ett Venndiagram.
