@@ -4,7 +4,7 @@ title: Skapa filter
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 8eb146fccbdbe47df8ca28f7b8dcbce2bf6888fd
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -192,7 +192,7 @@ Välj ![Inställning](/help/assets/icons/Setting.svg) i dimensionskomponenten oc
 |---|---|
 | **[!UICONTROL Repeating model (default)]** | Inkludera instans- och beständiga värden för dimensionen för att avgöra kvalificeringen. |
 | **[!UICONTROL Instance]** | Inkludera endast instansvärden för dimensionen för att bestämma kvalificeringen. |
-| **[!UICONTROL Non-repeating instance]** | Inkludera unika instansvärden (ej upprepade) för dimensionen för att avgöra kvalificeringen. |
+| **[!UICONTROL Non-repeating instance]** | Inkludera unika instansvärden (ej upprepade) för dimensionen för att fastställa kvalificeringen. |
 
 
 ![Attributmodell i dimension när ett filter skapas](assets/filter-dimension-attribution.png)

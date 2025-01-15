@@ -4,9 +4,9 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
+source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2033'
 ht-degree: 1%
 
 ---
@@ -149,17 +149,21 @@ Komponenter som inte är filterkomponenter kan också dras direkt till släppzon
 
 Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
 
-![Ad hoc-filter som är offentliga och släppta i släppzonen.](assets/adhoc-segment-filter.png)
+![Ad hoc-filter som är offentliga och släppta i släppzonen](assets/adhoc-segment-filter.png)
 
 ### Nedrullningsbara filter
 
-+++ Se en video som förklarar listrutefilter.
-
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
-{{videoaa}}
+I den här videon demonstreras funktionaliteten med Adobe Analytics. Funktionen finns dock på liknande sätt i Customer Journey Analytics. Tänk på följande skillnader i terminologi.
 
-+++
+| Adobe Analytics | Customer Journey Analytics |
+| --- | --- |
+| Segment | Filter |
+| Besökare | Person |
+| Besök | Session |
+| Träff | Händelse |
+
 
 #### Statiska nedrullningsbara filter
 
