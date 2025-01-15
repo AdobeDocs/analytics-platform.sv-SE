@@ -4,9 +4,9 @@ description: Så här använder och tolkar du den mediespelningstid som används
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln visas hur länge medieuppspelningen har pågått i panelen **Customer Journey Analytics**. Mer information om **Adobe Analytics**-versionen av den här artikeln finns i [Medieuppspelningstiden som använts på panelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent).*
+*I den här artikeln visas hur länge medieuppspelningen har pågått i panelen ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Mer information om ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln finns i [Medieuppspelningstiden på panelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent).*
 
 >[!ENDSHADEBOX]
 

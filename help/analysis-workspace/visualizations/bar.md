@@ -4,9 +4,9 @@ title: Stolpstreck och stapel
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Fältvisualiseringen har ett standardalternativ och ett staplingsalternativ.
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln beskrivs staplade visualiseringar för staplar och staplar i **Customer Journey Analytics**. Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) för **Adobe Analytics**-versionen av den här artikeln.*
+*I den här artikeln beskrivs staplade visualiseringar i Bar och Bar i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln beskrivs Vennbildens visualisering i **Customer Journey Analytics**. Se [Vennn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) för **Adobe Analytics**-versionen av den här artikeln.*
+*I den här artikeln beskrivs Vennvisualiseringen i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Vennn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 
