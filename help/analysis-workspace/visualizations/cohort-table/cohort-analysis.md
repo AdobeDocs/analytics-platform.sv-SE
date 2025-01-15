@@ -4,9 +4,9 @@ description: Lär dig använda en kohorttabell för kohortanalys i Analysis Work
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*Den här artikeln dokumenterar kohorttabellen i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Kohorttabell](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
+*I den här artikeln beskrivs kohorttabellen i **Customer Journey Analytics**.<br/>Se [Kohorttabell](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) för **Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2130'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln beskrivs panelen Experimentation i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Mer information om hur du analyserar Adobe Target-aktiviteter och -upplevelser i ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**finns i [Analytics för målpanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel).*
+*I den här artikeln visas panelen Experimentation i **Customer Journey Analytics**.<br/>Se [Analys för målpanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) för information om hur du analyserar Adobe Target-aktiviteter och -upplevelser i **Adobe Analytics**.*
 
 >[!ENDSHADEBOX]
 

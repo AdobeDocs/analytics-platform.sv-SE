@@ -4,9 +4,9 @@ title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1078'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln beskrivs panelen Snabbinsikter i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
+*Den här artikeln visar panelen Snabbinsikter i **Customer Journey Analytics**.<br/>Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för **Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

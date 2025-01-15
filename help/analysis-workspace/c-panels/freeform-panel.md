@@ -4,9 +4,9 @@ title: Frihandspanelen
 feature: Panels
 exl-id: 4e1d5d72-da59-419a-835e-a3c90f1362b4
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln dokumenteras friformspanelen i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Frihandspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
+*I den här artikeln visas friformspanelen i **Customer Journey Analytics**.<br/>Se [Frihandspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) för **Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

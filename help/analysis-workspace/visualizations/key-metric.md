@@ -4,9 +4,9 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
+*I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i **Customer Journey Analytics**.<br/>Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för **Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '679'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Den här artikeln dokumenterar panelen Attribution i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Attribution panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
+*Den här artikeln dokumenterar panelen Attribution i **Customer Journey Analytics**.<br/>Se [Attribution panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) för **Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 

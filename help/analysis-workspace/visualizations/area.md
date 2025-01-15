@@ -4,9 +4,9 @@ title: Område och område staplade
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*I den här artikeln dokumenteras staplade Area- och Area-visualiseringar i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Se [Område och ytor staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) för ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**-versionen av den här artikeln.*
+*I den här artikeln beskrivs de staplade områdena Område och Yta i **Customer Journey Analytics**.<br/>Se [Område och ytor staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) för **Adobe Analytics**-versionen av den här artikeln.*
 
 >[!ENDSHADEBOX]
 
