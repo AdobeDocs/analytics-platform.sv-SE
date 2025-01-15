@@ -5,7 +5,7 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 0e4e4621abe02c022981e458282543908b2396c2
+source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
 workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Workspace-projekt i Customer Journey Analytics baseras på datavyer.
 Med datavyer kan du ändra inställningar för schemaelement spontant utan att behöva ändra schemat i Adobe Experience Platform eller implementera om Customer Journey Analytics-miljön.
 
 * Du kan ändra en komponent från ett mätvärde till en dimension och vice versa. Du kan skapa mätvärden från strängfält eller skapa dimensioner från numeriska fält. Den här funktionen gör livet enklare eftersom du inte behöver skapa ett numeriskt fält i XDM-schemat för varje mätvärde du vill ha. I stället kan du skapa det spontant i dialogrutan för datavyer. Här är några exempel:
-   * **Skapa en eller flera och/eller en dimension från ett enda schemafält**. Det är en en-till-många-relation. Du kan till exempel skapa en eller flera intäktsmått och/eller en eller flera intäktsdimensioner från ett enda schemafält.
+   * **Skapa ett eller flera mått och/eller mått från ett enda schemafält**. Det är en en-till-många-relation. Du kan till exempel skapa en eller flera intäktsmått och/eller en eller flera intäktsdimensioner från ett enda schemafält.
    * **Använd ett strängfält som mått**: När du fyller i ett schema i Experience Platform med en datauppsättning kanske du inte vet i förväg vilka schemaelement du behöver. Du kanske inte har insett att du behövde ett mått för *Fel på en sida*. Därför skapade du inte ett numeriskt schemaelement med den här effekten. Genom att använda ett strängelement som mätvärden kan du nu använda datavysinställningarna för att ange att en sträng som innehåller ordet `error` kan användas som mätvärden när som helst.
    * **Använd ett numeriskt fält som en dimension**: Om du till exempel vill hämta intäktsmåttet från intäktsdimensionen visar intäktsdimensionen varje värde som en dimensionspost. Och antalet instanser för varje dimensionsartikel som ett mått.
 
@@ -46,7 +46,7 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 * Du kan visa mer schemarelaterad information om komponenter. Till exempel:
 
    * vilken datamängdstyp (händelse, profil, sökning, sammanfattning) som komponenten kommer från,
-   * vilken schematyp (sträng, heltal osv.) det kommer från, och
+   * vilken schematyp (sträng, heltal osv.) som det kommer från, och
    * schemasökvägen (XDM-fältet som den baseras på).
 
 * Du kan tagga en komponent så att det blir enklare att söka efter den i Workspace.

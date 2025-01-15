@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 1%
@@ -155,7 +155,7 @@ Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md)
 
 +++ Se en video som förklarar listrutefilter.
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?format=jpeg)
+>[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
 {{videoaa}}
 
