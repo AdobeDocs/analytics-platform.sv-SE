@@ -4,9 +4,9 @@ description: Lär dig använda en kohorttabell för kohortanalys i Analysis Work
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 353993c14103906553d87738ed3f7fc0926e123c
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,9 @@ Kohorttabeller i Customer Journey Analytics stöder dubbelbaserade (eller numeri
 
 ## Cohort table capabilities
 
-Följande funktioner gör att du kan finjustera kontrollen över de kohorter du bygger:
+I följande avsnitt beskrivs kohortanalysfunktioner som gör det möjligt att finjustera kontrollen över kohorterna som du bygger.
+
+Mer information om hur du skapar en kohort och kör en [!UICONTROL Cohort Analysis]-rapport finns i [Konfigurera en kohorttabell](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
 ### [!UICONTROL Retention]-tabell
 
