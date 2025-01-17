@@ -1,15 +1,15 @@
 ---
 title: Implementera taggen loader för Web SDK-tillägget
-description: Lär dig hur du implementerar taggen loader för Web SDK-tillägget
+description: Lär dig hur du implementerar Loader-taggen för Web SDK-tillägget
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 937a7f31361027438929194f8ccc5aee83c33bc0
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Du måste installera taggen på den webbplats som du vill spåra, vilket innebä
 I följande process beskrivs hur du hämtar koden som refererar till din tagg. Mer information finns i [Implementeringsguiderna för taggar och vidarebefordran av händelser](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) i Experience Platform-dokumentationen.
 
 Så här hämtar du koden som refererar till din tagg:
+
+1. Logga in på experience.adobe.com med dina Adobe ID-uppgifter.
+
+1. Gå till **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]** i Adobe Experience Platform.
+
+1. På sidan **[!UICONTROL Tag Properties]** väljer du den nyligen skapade taggen i listan över egenskaper för att öppna den.
 
 1. Välj **[!UICONTROL Environments]** i den vänstra listen.
 

@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: f76d098d-d223-40e4-be81-d28e7581396b
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -27,6 +28,12 @@ En datastream representerar konfigurationen på serversidan när Adobe Experienc
 
 I din konfiguration vill du konfigurera datastream för att skicka insamlade data till datauppsättningen i Adobe Experience Platform.
 
+>[!NOTE]
+>
+>Följande steg krävs bara för Adobe Analytics-implementeringar som använder AppMeasurement eller Analytics-tillägg (taggar).
+>
+>Om din Adobe Analytics-implementering använder Web SDK eller Web SDK Extension finns datastream redan i din Adobe Analytics-miljö.
+
 Så här konfigurerar du datastream:
 
 1. I Adobe Experience Platform väljer du **[!UICONTROL Datastreams]** från [!UICONTROL DATA COLLECTION] i den vänstra listen.
@@ -40,4 +47,3 @@ Så här konfigurerar du datastream:
 1. Välj **[!UICONTROL Save]**.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-

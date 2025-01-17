@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -26,25 +26,39 @@ När du har [skapat taggen och lagt till Web SDK-tillägget](/help/getting-start
 
 ## Konfigurera dataelement
 
-Dataelement är byggstenarna för dataordlistan (eller datamappningen). Använd dataelement för att samla in, ordna och leverera data över marknadsförings- och annonseringsteknologier. Du ställer in dataelement i taggen som läser från datalagret och kan användas för att leverera data till Adobe Experience Platform.
+Dataelement är byggstenarna för dataordlistan (eller datamappningen). Använd dataelement för att samla in, ordna och leverera data över marknadsförings- och annonseringsteknologier. Du ställer in dataelement i taggen som läser från datalagret och kan användas för att leverera data till Adobe Experience Platform. (Mer information om dataelement finns i [Dataelement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) i taggdokumentationen.)
 
-Det finns olika typer av dataelement. Först ställer du in ett dataelement för att hämta det sidnamn som personer tittar på på din webbplats. Ställ sedan in ett dataelement som refererar till Experience Cloud-ID:t. Definiera slutligen ett XDM-objektdataelement.
+I följande avsnitt beskrivs föreslagna dataelement och andra vanliga dataelement som du kan konfigurera.
 
-### Dataelement för sidnamn
+Det finns olika typer av dataelement. Två vanliga dataelement som du kanske vill konfigurera är: ett som hämtar sidnamnet som personer visar på din webbplats och ett som hämtar Experience Cloud-ID för varje person som besöker din webbplats.
 
-Så här definierar du ett dataelement för sidnamn:
+När du har konfigurerat dessa två dataelement kan du konfigurera ytterligare dataelement för de specifika data som du vill hämta.
+
+När du har definierat alla önskade dataelement måste du tilldela dataelementen till [schemat som du skapade](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) tidigare. För att göra detta definierar du ett XDM-dataelement, som tillhandahåller en representation av ditt XDM-schema.
+
+<!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
+
+### Skapa föreslagna dataelement
+
+I följande avsnitt beskrivs hur du skapar gemensamma dataelement som gäller för de flesta organisationer.
+
+#### Dataelement för sidnamn
+
+Ett vanligt dataelement som gäller för de flesta organisationer är ett dataelement som hämtar det sidnamn som personen visar.
+
+Så här skapar du ett dataelement för sidnamn:
 
 1. Logga in på experience.adobe.com med dina Adobe ID-uppgifter.
 
 1. Gå till **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]** i Adobe Experience Platform.
 
-1. Markera den nyligen skapade taggen i listan med [!UICONTROL Tag Properties] för att öppna den.
+1. På sidan **[!UICONTROL Tag Properties]** väljer du den nyligen skapade taggen i listan över egenskaper för att öppna den.
 
 1. Välj **[!UICONTROL Data Elements]** i den vänstra listen.
 
 1. Välj **[!UICONTROL Add Data Element]**.
 
-1. Ange följande information i dialogrutan [!UICONTROL Create Data Element]:
+1. Ange följande information i dialogrutan **[!UICONTROL Create Data Element]**:
 
    * **[!UICONTROL Name]**: Namnet på dataelementet. Till exempel `Page Name`.
 
@@ -66,9 +80,11 @@ Så här definierar du ett dataelement för sidnamn:
 
 1. Fortsätt med [ECID-dataelementet](#ecid-data-element).
 
-### ECID-dataelement
+#### ECID-dataelement
 
-Så här definierar du ett ECID-dataelement:
+Ett vanligt dataelement som gäller de flesta organisationer är ett dataelement som samlar in Experience Cloud-ID:t för varje person som besöker webbplatsen.
+
+Så här skapar du ett ECID-dataelement:
 
 1. Logga in på experience.adobe.com med dina Adobe ID-uppgifter.
 
@@ -76,11 +92,23 @@ Så här definierar du ett ECID-dataelement:
 
 1. Markera den nyligen skapade taggen i listan med [!UICONTROL Tag Properties] för att öppna den.
 
+1. (Villkorligt) Installera Experience Cloud ID-tjänsttillägget om det inte redan är installerat:
+
+   1. Välj **[!UICONTROL Extensions]** i den vänstra listen.
+
+   1. Fliken **[!UICONTROL Installed]** är markerad som standard. Om rutan **[!UICONTROL Experience Cloud ID Service]** visas går du till steg 5.
+
+   1. Om rutan **[!UICONTROL Experience Cloud ID Service]** inte visas väljer du fliken **[!UICONTROL Catalog]**.
+
+   1. Sök efter **[!UICONTROL Experience Cloud ID Service]** i sökfältet och markera sedan rutan när den visas
+
+   1. Välj **[!UICONTROL Install]** > **[!UICONTROL Save]**.
+
 1. Välj **[!UICONTROL Data Elements]** i den vänstra listen.
 
 1. Välj **[!UICONTROL Add Data Element]**.
 
-1. Ange följande information i dialogrutan [!UICONTROL Create Data Element]:
+1. Ange följande information i dialogrutan **[!UICONTROL Create Data Element]**:
 
    * **[!UICONTROL Name]**: Namnet på dataelementet. Till exempel `ECID`.
 
@@ -92,11 +120,45 @@ Så här definierar du ett ECID-dataelement:
 
 1. Välj **[!UICONTROL Save]**.
 
-1. Fortsätt med [XDM-objektdataelementet](#xdm-object-data-element).
+1. Fortsätt med [Skapa ytterligare dataelement](#create-additional-data-elements).
+
+### Skapa ytterligare dataelement
+
+Skapa ett dataelement för varje typ av data som du vill samla in. Använd samma process som beskrivs i [Dataelementet för sidnamn](#page-name-data-element) och [ECID-dataelementet](#ecid-data-element) för att skapa ytterligare dataelement.
+
+De dataelement som du skapar bör ha ett motsvarande fält i schemat.
+
+Vanliga dataelement varierar beroende på bransch- och verksamhetskrav. Här följer några vanliga dataelement, ordnade efter bransch:
+
+**Butiksdataelement**
+
+* Produkter
+
+* Kundtillägg
+
+* Utcheckningar
+
+**Finansiella dataelement**
+
+* Transaktions-ID
+
+* Transaktionsdatum
+
+* Tjänsttyp
+
+**Dataelement för hälso- och sjukvård**
+
+* Leverantörs-ID
+
+* Besöksdatum
+
+* Typ av behandling
+
+När du har skapat alla dataelement som krävs av organisationen för implementeringen fortsätter du med [XDM-objektdataelementet](#xdm-object-data-element).
 
 ### XDM-objektdataelement
 
-Slutligen vill du nu mappa något av dina specifika dataelement till det schema du definierade tidigare. Du definierar ett annat dataelement som tillhandahåller en representation av XDM-schemat.
+Slutligen vill du nu mappa alla dataelement som du har skapat till [schemat som du skapade](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) tidigare. Det gör du genom att definiera ett XDM-objektdataelement som ger en representation av ditt XDM-schema.
 
 Så här definierar du ett XDM-objektdataelement:
 
@@ -110,7 +172,7 @@ Så här definierar du ett XDM-objektdataelement:
 
 1. Välj **[!UICONTROL Add Data Element]**.
 
-1. Ange följande information i dialogrutan [!UICONTROL Create Data Element]:
+1. Ange följande information i dialogrutan **[!UICONTROL Create Data Element]**:
 
    * **[!UICONTROL Name]**: Namnet på dataelementet. Till exempel `XDM - Page View`.
 
@@ -127,7 +189,6 @@ Så här definierar du ett XDM-objektdataelement:
    ![Välj ECID-dataelement](assets/pick-ecid-dataelement.png)
 
    ![Mappa ECID-dataelement](assets/map-ecid.png)
-
 
 1. Mappa attributet `web > webPageDetails > name`, som definierats i ditt schema, till dataelementet för sidnamn.
 
@@ -159,13 +220,13 @@ Så här definierar du en regel:
 
 1. Välj **[!UICONTROL Rules]** i den vänstra listen.
 
-1. Välj **[!UICONTROL Create New Rule]**.
+1. Välj **[!UICONTROL Add Rule]**.
 
-1. Ange följande information i dialogrutan [!UICONTROL Create Rule]:
+1. Ange följande information i dialogrutan **[!UICONTROL Create Rule]**:
 
    * **[!UICONTROL Name]**: Namnet på regeln. Till exempel `Page View`.
 
-   * **[!UICONTROL Events]**: Välj **[!UICONTROL + Add]**. Ange sedan följande information i dialogrutan [!UICONTROL Event Configuration]. När du är klar väljer du **[!UICONTROL Keep Changes]**.
+   * **[!UICONTROL Events]**: Välj **[!UICONTROL + Add]**. Ange sedan följande information i dialogrutan **[!UICONTROL Event Configuration]**. När du är klar väljer du **[!UICONTROL Keep Changes]**.
 
       * **[!UICONTROL Extension]**: Välj **[!UICONTROL Core]** i listan.
 
@@ -177,9 +238,9 @@ Så här definierar du en regel:
 
       * **[!UICONTROL Extension]**: Välj **[!UICONTROL Adobe Experience Platform Web SDK]** i listan.
 
-      * **[!UICONTROL Action Type]**: Välj **[!UICONTROL Send Event]** i listan.
+      * **[!UICONTROL Action Type]**: Välj **[!UICONTROL Send event]** i listan.
 
-      * **[!UICONTROL Type]**: Välj **[!UICONTROL web.webpagedetails.pageViews]** i listan.
+      * **[!UICONTROL Type]**: Välj **[!UICONTROL Web Webpagedetails Page Views]** i listan.
 
       * **[!UICONTROL XDM data]**: Välj cylinderikonen och välj sedan **[!UICONTROL XDM - Page View]** i listan med dataelement.
 
@@ -190,6 +251,12 @@ Så här definierar du en regel:
         ![Skapa regel](assets/rule-pageview.png)
 
 1. Välj **[!UICONTROL Save]**.
+
+1. Upprepa den här processen för varje regel som du vill lägga till på webbplatsen.
+
+   Mer information om regler finns i [Regler](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules) i taggdokumentationen.
+
+1. Fortsätt med [Skapa och publicera taggen](#build-and-publish-your-tag).
 
 ## Bygg och publicera taggen
 
@@ -207,9 +274,9 @@ Så här skapar och publicerar du en tagg:
 
 1. Välj **[!UICONTROL Publishing Flow]** i den vänstra listen.
 
-1. Välj **[!UICONTROL Select a working library]** följt av **[!UICONTROL Add Library…]**.
+1. Välj **[!UICONTROL Add Library]**.
 
-1. Ange följande information i dialogrutan [!UICONTROL Create Library]:
+1. Ange följande information i dialogrutan **[!UICONTROL Create Library]**:
 
    * **[!UICONTROL Name]**: Bibliotekets namn.
 

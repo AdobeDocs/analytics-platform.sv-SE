@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 0%
 
 Det bör redan finnas ett datastream innan du slutför stegen i det här avsnittet. När och hur datastream skapades beror på din Adobe Analytics-implementering, enligt följande:
 
-* Om din Adobe Analytics-implementering använder Web SDK eller Web SDK Extension var datastream tillgänglig för din Adobe Analytics-miljö, före uppgraderingsprocessen.
+* Om Adobe Analytics-implementeringen använder Web SDK eller Web SDK Extension var datastream tillgänglig för din Adobe Analytics-miljö, före uppgraderingsprocessen.
 
 * För andra Adobe Analytics-implementeringar är det en del av uppgraderingsprocessen att skapa en datastream, vilket beskrivs i [Skapa en datastream som ska användas med Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md).
 

@@ -7,18 +7,16 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: f4fd3c1932a736577d480e86cad70f55de75cb21
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
 
 # Uppgradera från Adobe Analytics till Customer Journey Analytics
 
-När du uppgraderar från Adobe Analytics till Customer Journey Analytics rekommenderar Adobe en ny implementering av Experience Platform Web SDK, tillsammans med Analytics-källkopplingen, enligt beskrivningen i [Rekommenderade uppgraderingssteg för de flesta organisationer](#recommended-upgrade-steps-for-most-organizations).
-
-Beroende på flera faktorer, t.ex. tidslinje och resursbegränsningar, kanske de rekommenderade uppgraderingsstegen inte är praktiska för din organisation. I så fall använder du uppgraderingsenkäten [Adobe Analytics till Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) för att dynamiskt generera uppgraderingssteg som är anpassade efter organisationens unika förhållanden.
+När du uppgraderar från Adobe Analytics till Customer Journey Analytics kan du följa de [rekommenderade uppgraderingsstegen](#recommended-upgrade-steps-for-most-organizations). Du kan också [dynamiskt generera uppgraderingssteg](#dynamically-generate-upgrade-steps-for-your-organization) för organisationens unika omständigheter.
 
 ## Rekommenderade uppgraderingssteg för de flesta organisationer
 
@@ -100,9 +98,11 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    +++Taggar
 
-   1. [Implementera inläsartaggen på din plats](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
-
    1. [Skapa en taggegenskap och lägg till Adobe Experience Platform Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
+
+   1. [Lägg till Adobe Experience Platform Web SDK-tillägget i taggegenskapen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+
+   1. [Implementera inläsartaggen på din plats](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
    1. [Lägg till logik för XDM-datainsamling i taggen ](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md).
 
@@ -120,11 +120,11 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. (Valfritt) Koppla webbdata till data från andra kanaler, som callcenter-data.
 
-   Du uppnår detta genom att lägga till ytterligare datauppsättningar till din Customer Journey Analytics-anslutning.
+   Du uppnår detta genom att lägga till ytterligare datauppsättningar till din Customer Journey Analytics-anslutning, vilket beskrivs i [Importera callcenter och webbdata](/help/use-cases/cross-channel/call-center.md).
 
 1. [Skapa en datavy i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
-1. [Verifiera att data flödar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+1. [Verifiera att data flödar in i datavyn i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
 
 1. [Migrera projekt och komponenter](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
