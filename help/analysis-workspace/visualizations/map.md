@@ -7,9 +7,9 @@ badgePremium: label="Adobe Analytics" url="https://experienceleague.adobe.com/do
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
+source-git-commit: c0c02b8ae1a614f3e623642a8671bb25d8a26f4f
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-*Det finns för närvarande ingen kartvyalisering tillgänglig i **Customer Journey Analytics**.
-Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) om du vill ha information om visualisering av kartor i Adobe Analytics.*
+Det finns för närvarande ingen kartvisualisering tillgänglig i ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.
+Mer information om kartvisualisering finns i [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) i ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**.
 
 >[!ENDSHADEBOX]

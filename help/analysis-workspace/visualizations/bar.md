@@ -4,7 +4,7 @@ title: Stolpstreck och stapel
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: c0c02b8ae1a614f3e623642a8671bb25d8a26f4f
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -12,6 +12,12 @@ ht-degree: 0%
 ---
 
 # Stapel (staplad)
+
+>[!BEGINSHADEBOX]
+
+*I den här artikeln beskrivs staplade visualiseringar för staplar och staplar i **Customer Journey Analytics**.<br/>Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) för **Adobe Analytics**-versionen av den här artikeln.*
+
+>[!ENDSHADEBOX]
 
 Fältvisualiseringen har ett standardalternativ och ett staplingsalternativ.
 
@@ -26,12 +32,6 @@ Fältvisualiseringen har ett standardalternativ och ett staplingsalternativ.
 
 <!-- markdownlint-enable MD034 -->
 
-
->[!BEGINSHADEBOX]
-
-*I den här artikeln beskrivs staplade visualiseringar för staplar och staplar i **Customer Journey Analytics**.<br/>Se [Stapel och stapel staplade](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) för **Adobe Analytics**-versionen av den här artikeln.*
-
->[!ENDSHADEBOX]
 
 
 Visualiseringen ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
