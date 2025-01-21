@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: f45a457d251767634e28984d7c75158dac6e51e8
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Den här artikeln innehåller kontext på delade enheter, hur du hanterar och mi
 
 En delad enhet är en enhet som används av mer än en person. Vanliga scenarier är enheter som surfplattor, enheter som används i kioskdatorer eller datorutrustning som delas av agenter i ett callcenter.
 
-När två personer använder samma enhet och båda gör ett köp kan exempeldata för händelsen se ut så här:
+När två personer använder samma enhet och båda gör ett autentiserat köp kan exempelhändelsedata se ut så här:
 
 | Händelse | Tidsstämpel | Sidnamn | Enhets-ID | E-post |
 |--:|---|---|---|---|
