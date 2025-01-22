@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 50d46d5b2d663e6f0b3951006db34bff0193417e
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
 workflow-type: tm+mt
-source-wordcount: '19275'
+source-wordcount: '19269'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
 1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**].
 
-   ![Mallflikar](assets/view-prebuilt-templates.png)
+   ![Mallflikar](assets/view-prebuilt-templates-full.png)
 
 1. Välj någon av följande flikar i avsnittet [!UICONTROL **Mallar**]:
 
@@ -43,9 +43,9 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
 1. Använd något av följande alternativ för att ändra hur du visar de tillgängliga mallarna:
 
-   * Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyikonen ![kolumnvy](assets/column-view-icon.png) eller kortvyikonen ![kortvy](assets/card-view-icon.png) .
+   * Välj om du vill visa mallar i en kolumnvy eller i en kortvy genom att antingen markera kolumnvyn ![VisaKolumn](/help/assets/icons/ViewColumn.svg) eller kortvyikonen ![Kort](/help/assets/icons/Card.svg) .
 
-   * När du använder ikonen för kortvyn ![kortvyn ](assets/card-view-icon.png) kan du välja bland följande sorteringsordning: **[!UICONTROL Most recently used]**, **[!UICONTROL Most popular]**, **[!UICONTROL Alphabetical]**, **[!UICONTROL Categorical]**.
+   * När du använder kortvyn ![Kort](/help/assets/icons/Card.svg) väljer du bland följande sorteringsordning: **[!UICONTROL Most recently used]**, **[!UICONTROL Most popular]**, **[!UICONTROL Alphabetical]**, **[!UICONTROL Categorical]**.
 
 1. I sökfältet börjar du skriva namnet på mallen som du vill söka efter och väljer den sedan i listan med mallar.
 

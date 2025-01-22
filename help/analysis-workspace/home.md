@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1338'
 ht-degree: 1%
 
 ---
@@ -17,14 +17,13 @@ ht-degree: 1%
 
 Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter och sedan dela dessa insikter med andra. Med dra-och-släpp-gränssnittet i webbläsaren kan du utforma din analys, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning samt dela och schemalägga [projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) med vem du vill.
 
+>[!BEGINSHADEBOX]
 
-+++ Se en video som visar möjligheterna med Analytics Workspace.
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis workspace](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"}
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!ENDSHADEBOX]
 
-{{videoaa}}
 
-+++
 
 ## Gränssnitt
 
