@@ -2,9 +2,9 @@
 title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 9e29a16fc8d2cfe9a7a2e926b5f592280b2c1c7a
+source-git-commit: ae22dc84406427567d45b670aa9737ea3a8b2f7b
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -36,17 +36,96 @@ Om du navigerar till det här avsnittet av gränssnittet i Customer Journey Anal
 
 När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om du vill ändra några dimensionsinställningar skapar du en kopia av den systemägda datavyn och använder den kopierade datavyn i Analysis Workspace.
 
-| Dimension | Beskrivning |
-| --- | --- |
-| Åtgärdsnamn | Den typ av åtgärd som användaren vidtagit. Du kan använda den här dimensionen som önskat mått genom att skapa en kopia i datavyinställningarna. |
-| Attributmodell som används | Den typ av attribueringsmodell som komponenten använder. |
-| Komponent | Ett härlett fält som innehåller komponenttypen och komponentnamnet. |
-| Komponenttyp | Komponenttypen som läggs till, tas bort eller ändras. |
-| Inloggningsanvändare | Användaren som utförde åtgärden. |
-| Använd panel | Panelen där komponenten lades till, togs bort eller ändrades. |
-| Projektnamn | Projektets egna namn. |
-| Projekttyp | Projekttypen. |
-| Användar-ID | Det användar-ID som utlöste händelsen. |
-| Visualisering används | Den visualisering som lades till, togs bort eller ändrades. |
+* **[!UICONTROL Action Name]**: Den typ av åtgärd som användaren vidtagit. Du kan använda den här dimensionen som önskat mått genom att skapa en kopia i datavyinställningarna. Bland Dimensionerna finns:
+   * [!UICONTROL Add attribution]
+   * [!UICONTROL Add component]
+   * [!UICONTROL Add panel]
+   * [!UICONTROL Add visualization]
+   * [!UICONTROL Create new guided analysis]
+   * [!UICONTROL Create new project]
+   * [!UICONTROL Curate components]
+   * [!UICONTROL Download CSV]
+   * [!UICONTROL Download PDF]
+   * [!UICONTROL Load guided analysis]
+   * [!UICONTROL Load project]
+   * [!UICONTROL New scorecard loaded]
+   * [!UICONTROL Open data dictionary]
+   * [!UICONTROL Open intelligent captions]
+   * [!UICONTROL Project share]
+   * [!UICONTROL Run Experimentation panel]
+   * [!UICONTROL Save project]
+   * [!UICONTROL Scorecard saved]
+   * [!UICONTROL Send file]
+   * [!UICONTROL Send file on schedule]
+   * [!UICONTROL Share project with anyone]
+   * [!UICONTROL Share project with Workspace users]
+* **[!UICONTROL Attribution Model Used]**: Den typ av attribueringsmodell som komponenten använder. Bland Dimensionerna finns:
+   * [!UICONTROL Last touch]
+   * [!UICONTROL First touch]
+   * [!UICONTROL Linear]
+   * [!UICONTROL Participation]
+   * [!UICONTROL Same touch]
+   * [!UICONTROL U shaped]
+   * [!UICONTROL J curve]
+   * [!UICONTROL Inverse J]
+   * [!UICONTROL Time decay]
+   * [!UICONTROL Custom]
+   * [!UICONTROL Algorithmic]
+* **[!UICONTROL Component Name]**: Namnet på komponenten som lades till, togs bort eller ändrades.
+* **[!UICONTROL Component Type]**: Den typ av komponent som lades till, togs bort eller ändrades. Bland Dimensionerna finns:
+   * [!UICONTROL Dimension]
+   * [!UICONTROL Metric]
+   * [!UICONTROL Filter]
+   * [!UICONTROL Calculated metric]
+   * [!UICONTROL Date range]
+   * [!UICONTROL Annotation]
+   * [!UICONTROL Alert]
+* **[!UICONTROL Login User]**: Användaren som utförde åtgärden.
+* **[!UICONTROL Panel Used]**: Panelen där komponenten lades till, togs bort eller ändrades. Bland Dimensionerna finns:
+   * [!UICONTROL Attribution]
+   * [!UICONTROL Blank panel]
+   * [!UICONTROL Experimentation]
+   * [!UICONTROL Freeform]
+   * [!UICONTROL Next or previous item]
+   * [!UICONTROL Quick insights]
+   * [!UICONTROL Trends]
+   * [!UICONTROL Funnel]
+   * [!UICONTROL User growth]
+   * [!UICONTROL Impact]
+   * [!UICONTROL User stream]
+   * [!UICONTROL Retention]
+   * [!UICONTROL Feature matrix]
+* **[!UICONTROL Project Name]**: Projektets egna namn.
+* **[!UICONTROL Project Type]**: Projekttypen. Bland Dimensionerna finns:
+   * `workspace-projects`
+   * `guided-analysis`
+   * `mobile-scorecard-builder`
+* **[!UICONTROL User ID]**: Det användar-ID som utlöste händelsen.
+* **[!UICONTROL Visualization Used]**: Den visualisering som lades till, togs bort eller ändrades. Bland Dimensionerna finns:
+   * [!UICONTROL Freeform table]
+   * [!UICONTROL Cohort table]
+   * [!UICONTROL Fallout]
+   * [!UICONTROL Flow]
+   * [!UICONTROL Journey Canvas reportlet]
+   * [!UICONTROL Area]
+   * [!UICONTROL Area stacked]
+   * [!UICONTROL Bar]
+   * [!UICONTROL Bar stacked]
+   * [!UICONTROL Bullet]
+   * [!UICONTROL Combo]
+   * [!UICONTROL Donut]
+   * [!UICONTROL Histogram]
+   * [!UICONTROL Horizontal bar]
+   * [!UICONTROL Horizontal bar stacked]
+   * [!UICONTROL Key metric summary]
+   * [!UICONTROL Line]
+   * [!UICONTROL Map]
+   * [!UICONTROL Scatter]
+   * [!UICONTROL Section header]
+   * [!UICONTROL Summary change]
+   * [!UICONTROL Summary number]
+   * [!UICONTROL Text]
+   * [!UICONTROL Treemap]
+   * [!UICONTROL Venn]
 
 Produktanvändningen spårar inte enskilda projektkomponenter när ett projekt bara öppnas eller visas. Användaråtgärden för att öppna ett projekt spåras emellertid.
