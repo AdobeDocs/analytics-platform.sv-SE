@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
 workflow-type: tm+mt
 source-wordcount: '19269'
 ht-degree: 0%
@@ -1548,4 +1548,3 @@ Följande mallar är tillgängliga:
 | **Journey Optimizer landningssidor** | Visa användarbeteende, engagemangsmönster, konverteringsgrader och andra viktiga mätvärden.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiv din landningssida är. </p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera prestanda för landningssidor.</p> |
 | **Journey Optimizer - översiktsrapport** | Se en detaljerad sammanfattning av trafik- och engagemangsmätningar för alla kampanjer och resor i er miljö.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiva era kampanjer och resor är på hög nivå. </p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera kampanjer och resor baserat på målpublikens engagemangsnivåer.</p> |
 | **Journey Optimizer-prenumerationer** | Visa profilernas prenumerationer och avbeställningar som är kopplade till särskilda listor.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiva olika prenumerationskampanjer och -initiativ är när det gäller att öka engagemanget och konverteringarna.</p><p>**Baserat på vad du lär dig kan du** göra något annat, som att justera dina prenumerationskampanjer baserat på målpublikens engagemangsnivåer.</p> |
-

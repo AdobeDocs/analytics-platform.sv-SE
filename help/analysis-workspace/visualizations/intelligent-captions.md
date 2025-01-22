@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
+source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
-Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Den första versionen innehåller automatiskt genererade insikter för visualiseringen [Line](line.md). Andra visualiseringar följer.
+Funktionen för intelligenta bildtexter använder avancerad generativ AI för att ge viktiga insikter om de vanligaste Workspace-visualiseringarna på naturspråket.
 
 Intelligenta bildtexter inriktas på följande:
 
@@ -85,11 +85,10 @@ Intelligenta bildtexter inriktas på följande:
 
 ## Starta intelligenta bildtexter {#launch}
 
-Om du vill starta automatiskt genererade bildtexter för en radvisualisering väljer du ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligent captions]** längst upp till höger i visualiseringen.
+Om du vill starta automatiskt genererade intelligenta bildtexter för en visualisering väljer du ![Intelligenta bildtexter](/help/assets/icons/AI.svg) längst upp till höger i visualiseringen. Det här valet genererar insikter om naturliga språk.
 
-![Startanalysfönstret som visar trenden för intelligenta bildtexter för produktvyer. ](assets/intell-caps-1.png)
+![Startanalysfönstret som visar trenden för intelligenta bildtexter för produktvyer. ](assets/intelligent-captions.gif)
 
-Naturliga språkkunskaper genereras nu.
 
 Kom ihåg att:
 
@@ -97,13 +96,28 @@ Kom ihåg att:
 
 * Bildtexter genereras varje gång underliggande markerade data ändras i tabellen som styr visualiseringen.
 
-* Om det finns flera mätvärden i tabellen, genereras bildtexter endast för det första mätvärdet eller det mätvärde som användaren har valt.
+* Om det finns flera mätvärden i en associerad frihandstabell, genereras bildtexter endast för det första mätvärdet eller det mätvärde som användaren har valt. Bildtexter kan dock genereras för flera mätvärden för linje- och områdesvisualiseringar.
 
 * Om du sparar projektet vid en viss punkt och läser in det igen senare, uppdateras bildtexterna automatiskt med nya data. Detsamma gäller för schemalagda projekt och PDF-filer som exporteras från ett projekt.
 
-Här är ett exempel på hur intelligenta bildtexter kan se ut:
 
-![Intelligenta bildtexter för linjevisualisering, inklusive Seasonality, Min, Max, Spike och Decline.](assets/captions.png)
+## Visualiseringar {#visualizations}
+
+Intelligenta bildtexter stöds i följande visualiseringar:
+
+* [Rad](line.md) (inklusive flera rader)
+* [Liggande](bar.md)
+* [Vågrätt fält](horizontal-bar.md)
+* [Område](area.md) (inklusive flera riktningslinjer)
+* [Munk](donut.md)
+* [Utfall](fallout/fallout-flow.md)
+* [Flöde](c-flow/flow.md)
+
+<!--
+Here is an example of what intelligent captions could look like:
+
+![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
+-->
 
 ## Åtgärder
 
@@ -111,15 +125,24 @@ Du kan utföra följande åtgärder på intelligenta bildtexter:
 
 ### Kopiera till Urklipp {#copy}
 
-Du kan kopiera bildtexterna till ett urklipp och klistra in dem i en PowerPoint eller andra verktyg. Välj ![Kopiera bildtexter till urklipp](/help/assets/icons/Copy.svg) längst upp till höger i dialogrutan med bildtexter.
+Du kan kopiera bildtexterna till ett urklipp och klistra in dem i en PowerPoint eller andra verktyg. Du kan kopiera enskilda bildtexter i en vy eller kopiera alla bildtexter samtidigt i den utökade bildtextvyn.
+
+* Om du vill kopiera bildtexterna väljer du ![Kopiera bildtexter till Urklipp](/help/assets/icons/Copy.svg) längst upp till höger i dialogrutan med bildtexter.
+
+### Visa alla eller enskilda intelligenta bildtexter  {#show-all-or-individual}
+
+Du kan visa alla intelligenta bildtexter samtidigt i en utökad vy eller visa enskilda intelligenta bildtexter i en vy i taget.
+
+* Om du vill visa alla intelligenta bildtexter väljer du ![Visa alla intelligenta bildtexter](/help/assets/icons/Maximize.svg).
+* Om du vill visa enskilda intelligenta bildtexter, en i taget, väljer du ![Visa enskilda intelligenta bildtexter](/help/assets/icons/Minimize.svg).
 
 ### Redigera visning {#edit}
 
 Du kan redigera visningen av bildtexter, till exempel dölja eller visa en viss kategori med insikter.
 
-1. Välj ![Redigera visning av intelligenta bildtexter](/help/assets/icons/EditInLight.svg) i dialogrutan Intelligenta bildtexter.
+1. Välj ![Redigera synlighet för intelligenta bildtexter](/help/assets/icons/EditInLight.svg) i dialogrutan Intelligenta bildtexter.
 
-1. Växla mellan ![Synlighet](/help/assets/icons/Visibility.svg) om du vill visa en specifik insikt (som **[!UICONTROL Min]**) eller ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) om du vill dölja en specifik insikt (som **[!UICONTROL Spike]**).
+1. Växla mellan ![Växla synlighet](/help/assets/icons/Visibility.svg) om du vill visa en viss insikt (till exempel **[!UICONTROL Min]**) eller ![Växla synlighet ](/help/assets/icons/VisibilityOff.svg) om du vill dölja en viss insikt (till exempel **[!UICONTROL Spike]**).
 
    ![Redigera intelligenta bildtexter](assets/edit-intelligent-captions.png)
 
@@ -128,7 +151,7 @@ Du kan redigera visningen av bildtexter, till exempel dölja eller visa en viss 
 
 ### Ge feedback
 
-Du kan ge feedback på de genererade intelligenta bildtexterna.
+Du kan ge feedback på de genererade intelligenta bildtexterna (feedback kan bara ges i den utökade bildtextvyn).
 
 1. Välj ![Fler åtgärder](/help/assets/icons/More.svg) i dialogrutan Intelligenta bildtexter.
 
@@ -162,7 +185,7 @@ Följande parametrar styr åtkomsten till intelligenta bildtexter:
 
 * **Åtkomst till lösning**: Funktionen för intelligenta bildtexter är tillgänglig i Customer Journey Analytics, men inte i Adobe Analytics.
 
-* **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du din organisations administratör eller Adobe-kontorepresentant. Innan du kan använda intelligenta bildtexter i organisationen måste du godkänna vissa GenAI-relaterade juridiska villkor.
+* **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du organisationens administratör eller Adobe Account Representant (Admin). Innan du kan använda intelligenta bildtexter i din organisation måste du godkänna vissa allmänna AI-relaterade juridiska villkor.
 
 * **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
    1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
