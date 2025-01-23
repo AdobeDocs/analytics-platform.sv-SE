@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
+source-git-commit: 8c4b42c0046068ba45a47ecd9c7eab2ed89028e5
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2377'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | --- | --- |
 | **Möjlighet att kombinera datauppsättningar (till exempel Adobe Analytics rapportsviter)** | Med Customer Journey Analytics kan du [kombinera data](/help/connections/combined-dataset.md) från flera rapportsviter som om de vore en enda rapportserie i Adobe Analytics. |
 | **Anordnande för alla typer av data** | Customer Journey Analytics kombineras med Experience Platform för att kunna lagra alla typer av datarotor och datatyper. Med [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) kan data representeras och struktureras på ett enhetligt sätt, vara klara för kombination och utforskande. Adobe Analytics fokuserar främst på webb- och mobilanalysdata med vissa funktioner för att [importera data](https://experienceleague.adobe.com/docs/analytics/import/home.html). |
+| **BI-tillägg** | Med [BI-tillägget](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) kan du ansluta CJA direkt till populära BI-visualiseringsverktyg som PowerBI eller Tableau. Genom att använda det här tillägget kan du få dina BI-rapporter att exakt matcha det du ser i Analysis Workspace och andra CJA-rapporteringsgränssnitt. Detta är ett mycket enklare sätt att få BI-rapportering för CJA utan att behöva återskapa rapporter/mätvärden från rådata. |
 | **Enhetsövergripande analys** | Customer Journey Analytics stöder den sömlösa kombinationen av enhetsspecifika datauppsättningar från oautentiserade och autentiserade sessioner. Customer Journey Analytics erbjuder att fylla i historiska data baklänges till kända enheter. I Adobe Analytics begränsas den här funktionen till en enda rapportserie och användning av ett enhetsdiagram. |
 | **Förbättringar av Dimensionen** | Customer Journey Analytics ger större flexibilitet vid användning av dimensioner: <ul><li>**Anpassade numeriska dimensioner**: [Skapa egna numeriska baserade dimensioner i en datavy](/help/data-views/create-dataview.md#components).</li><li>**Sortera strängbaserade dimensioner**: [Sortera strängbaserade dimensioner i bokstavsordning i en friformstabell.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>I Adobe Analytics fanns bara en handfull inbyggda numeriska mått tillgängliga, och det gick inte att sortera efter strängbaserade dimensioner.</p> |
 | **Härledda fält** | [Härledda fält](/help/data-views/derived-fields/derived-fields.md) tillåter rapporttidsomformningar av dina data. Data kan kombineras, korrigeras eller skapas direkt, och dessa omvandlingar gäller retroaktivt för alla rapporter. |
@@ -31,11 +32,12 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Experimentationsanalys** | Customer Journey Analytics kan [utvärdera lyften och förtroendet för alla experiment](/help/analysis-workspace/c-panels/experimentation.md) från alla datakällor som definieras som en del av en anslutning. Med den här utvärderingen kan ni förstå orsaks- och effektförhållandet mellan kundinteraktioner i alla kanaler. Analyserna begränsas till experimenterande analyser via A4T. |
 | **Prognos** | [Prognos](/help/analysis-workspace/c-forecast/forecasting.md) är en AI/ML-funktion som innehåller en statistisk förutsägelse för tidsserierelaterade data baserat på historiska data som redan finns i Customer Journey Analytics. Prognoser kan visas i frihandstabeller och i linjediagramvisualiseringar. |
 | **Guidad analys** | [Med guidad analys](/help/guided-analysis/overview.md) kan användarna själva leverera högkvalitativa data och insikter om kundresan via guidade arbetsflöden, som bygger på data från olika kanaler i Customer Journey Analytics. |
-| **Intelligenta bildtexter** | Intelligenta bildtexter använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Den första versionen innehåller automatiskt genererade insikter för visualiseringen [Line](/help/analysis-workspace/visualizations/line.md). |
+| **Intelligenta bildtexter** | [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Intelligenta bildtexter stöds för följande visualiseringar: Line, Multi-line, Bar, Horizontal bar, Donut, Area, Flow och Fallout. |
+| **Produktanvändning** | [Produktanvändning]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() visar hur din organisation använder Customer Journey Analytics. |
 | **Omformningar vid rapporttillfället** | [Med datavyer](/help/data-views/data-views.md) i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde eller filtrera delmängder. Alla dessa omformningar görs på ett icke-förstörande sätt. Adobe Analytics har begränsade möjligheter genom virtuella rapportsviter och anpassad sessionslängd. |
-| **BI-tillägg** | Med [BI-tillägget](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) kan du ansluta CJA direkt till populära BI-visualiseringsverktyg som PowerBI eller Tableau. Genom att använda det här tillägget kan du få dina BI-rapporter att exakt matcha det du ser i Analysis Workspace och andra CJA-rapporteringsgränssnitt. Detta är ett mycket enklare sätt att få BI-rapportering för CJA utan att behöva återskapa rapporter/mätvärden från rådata. |
 | **SQL-åtkomst** | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
 | **Stitching** | [Stitching](/help/stitching/overview.md) är en kraftfull funktion som höjer en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID). |
+| **Mallar i Adobe Journey Optimizer** | Anpassa det nya rapporteringsgränssnittet i Adobe Journey Optimizer genom att skapa eller redigera en [mall](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en) i Customer Journey Analytics och sedan spara mallen som ska användas på rapportsidan i Journey Optimizer. |
 | **Obegränsade kunddimensioner och mätvärden** | Customer Journey Analytics är obegränsade. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla. Dimensioner kan vara kapslade eller hierarkiska. <br/>Adobe Analytics stöder däremot upp till högst 75 props och 250 eVars. |
 | **Obegränsade unika värden** | Customer Journey Analytics stöder obegränsat antal unika värden eller dimensionsposter som kan rapporteras inom en dimension.<p>Det finns inga kardinalitetsbegränsningar för [för en dimension](/help/components/dimensions/high-cardinality.md), vilket gör att unika värden kan visas och räknas.</p><p>Den här metoden tar bort rapporterings- och analysbegränsningar som kan finnas med storskaliga Adobe Analytics-implementeringar, vilket resulterar i [!UICONTROL Low Traffic]-etiketter.</p><p>I Customer Journey Analytics går det att se en [!UICONTROL Uniques Exceeded]-etikett, men de förekommer mycket mindre ofta och kan minskas genom att ett filter eller segment tillämpas på data.</p> |
 
@@ -64,6 +66,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **PDF-export** | Fullt stöd |
 | **Projektstrukturering** | Fullt stöd |
 | **Projektlänkning** | Fullt stöd |
+| **Produktmallar** | Innehåller [fördefinierade mallar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates) och [företagsmallar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template). |
 | **Bearbetning av rapporttid** | Fullt stöd; Customer Journey Analytics förlitar sig enbart på bearbetning av rapporttid. |
 | **API-åtkomst för rapportering** | Fullt stöd; tillgängligt via [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/). |
 | **Schemalagda rapporter/projekt** | Fullt stöd |
@@ -118,7 +121,6 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | Funktion | Anteckningar |
 | --- | --- |
 | **Bidragsanalys** | Support planeras. |
-| **Projektmallar** | Support planeras. |
 | **Realtidsrapportering** | Support planeras. |
 | **Segment IQ** | Support planeras. |
 | **Datakällor för transaktions-ID** | Support planeras. |
