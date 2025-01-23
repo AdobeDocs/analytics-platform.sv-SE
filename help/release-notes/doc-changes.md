@@ -4,9 +4,9 @@ description: Listar innehållsuppdateringar för den dokumentation för Customer
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
+source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
 workflow-type: tm+mt
-source-wordcount: '4236'
+source-wordcount: '4382'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,8 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | --- | --- |
 | **Januari 2025** |  |
 | Användningsstatistik | Uppdaterad dokumentation om det förbättrade gränssnittet för [användningsstatistik](/help/connections/manage-connections.md#usage). |
-
+| Produktanvändning | [Produktanvändningen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) visar hur din organisation använder Customer Journey Analytics. |
+| Guidad analys | Uppdaterad dokumentation med tillgänglighet för [Guidad analys](/help/guided-analysis/overview.md) inifrån Guidad analys. |
 
 ## 2024
 
@@ -31,15 +32,19 @@ Följande uppdateringar har gjorts i dokumentationen för Customer Journey Analy
 | Användningsexempel för BI-tillägg | Dokumentation för flera [BI-tillägg använder fall](/help/use-cases/data-views/bi-extension-usecases.md) för BI-verktyg som Power BI Desktop och Tableau Desktop. |
 | Förfrågningar om titlar och sekretess | Meddelande har lagts till om [kommande ändringar i den upplösande processen](/help/stitching/faq.md#frequently-asked-questions) som är ett resultat av sekretessförfrågningar. |
 | **Oktober 2024** | |
+| Visualisering av arbetsyta på resans yta | [Researbetsytan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) är en visualisering i arbetsytan Analys som gör att du kan analysera hur personer går igenom eller faller bort från en definierad resa. |
+| Överföring av tillgångar | Gör att du kan [överföra ägarskap](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) för komponenter som projekt, filter och beräknade värden till andra användare för att säkerställa kontinuitet och lämplig åtkomst. |
 | Förbättrat användargränssnitt | Artikeln om det förbättrade gränssnittet har uppdaterats så att du kan visa din [användning av inkapslade och rapportbara rader över alla anslutningar](/help/connections/manage-connections.md#usage) |
 | Delade enheter | En [användningsfallartikel](/help/use-cases/stitching/shared-devices.md) har lagts till som ger kontext på delade enheter, hur du hanterar och reducerar data från delade enheter med hjälp av sammanslagning och hur du förstår exponeringen för delade enheter i dina data med hjälp av frågetjänsten. |
 | Ny information om begärandefaktorer i Analysis Workspace prestanda | En ny [Request factor](/help/technotes/optimizing-performance.md#request-factors)-sektion i artikeln [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) förklarar hur begäranden behandlas och de olika faktorer som påverkar bearbetningstiderna. |
 | Workspace och komponenter | Uppdaterade dokumentationen om Analysis Workspace-projekt (projekt, visualiseringar och paneler) och komponenter (anteckningar, dimensioner, (beräknade) mått, filter, datumintervall, aviseringar, schemalagda projekt och målgrupper). |
 | Guidad analys | Uppdaterad dokumentation med tillgänglighet för [guidad analys](/help/guided-analysis/overview.md) inifrån Analysis Workspace. |
+| Uppdaterad målgruppsdokumentation | När [skapar en målgrupp](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish?lang=en) från en visualisering i Analysis Workspace inkluderas panelfilter och kolumnfilter nu som ytterligare villkor. |
 | **September 2024** | |
 | Uppdatering av sammanfattningsdata | Sammanfattningsdataartiklar med information om hur [sökdata](/help/data-views/summary-data.md#lookup-data) används korrekt vid rapportering av sammanfattningsdata har uppdaterats. |
 | Uppdatering för BI-tillägg | [standardvärden och begränsning](/help/data-views/bi-extension.md#defaults-and-limitations) har lagts till i dokumentationen för BI-tillägget. |
 | Aviseringar | Dokumentation har lagts till för funktionen [Alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md) som nu är tillgänglig i Customer Journey Analytics. |
+| Ytterligare information i kolumnen Används i i den beräknade metriska hanteraren och filterhanteraren | Kolumnen &quot;Används i&quot; i [beräknad måtthanterare](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en) och [filterhanterare](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en) innehåller följande nya rapportområden: Report Builder och ad hoc-komponenter |
 | **Augusti 2024** | |
 | Ett exempel på ett B2B-projekt | Ett [användningsfall](/help/use-cases/b2b/example.md) har lagts till som dokumenterar hur du konfigurerar, konfigurerar och rapporterar om profilnivåbaserade B2B-data i Customer Journey Analytics, med den nya [omformningsdatauppsättningen för B2B-sökningar](/help/connections/transform-datasets-b2b-lookups.md)-funktionen. |
 | Uppdaterade användningsfall för dataexport | Fler detaljerade frågeexempel har lagts till i [frågetjänsten (Data Distiller) och datauppsättningarna för export](/help/use-cases/data-export/queryservice-export-datasets.md) för att illustrera hur attribuering ska tillämpas på rätt sätt i sessioner med ett uppslagsfönster. |

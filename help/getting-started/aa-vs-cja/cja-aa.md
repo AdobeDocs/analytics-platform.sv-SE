@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 55da4faa73d708a450274c2b4d44c246ef5feb49
+source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 1%
@@ -34,7 +34,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Guidad analys** | [Med guidad analys](/help/guided-analysis/overview.md) kan användarna själva leverera högkvalitativa data och insikter om kundresan via guidade arbetsflöden, som bygger på data från olika kanaler i Customer Journey Analytics. |
 | **Intelligenta bildtexter** | [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) använder avancerad maskininlärning och generativ AI för att ge värdefulla insikter på naturspråket för Workspace-visualiseringar. Intelligenta bildtexter stöds för följande visualiseringar: Line, Multi-line, Bar, Horizontal bar, Donut, Area, Flow och Fallout. |
 | **Researbetsyta** | [Researbetsytan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) är en visualisering i arbetsytan Analys som gör att du kan analysera hur personer går igenom eller faller bort från en definierad resa. |
-| **Produktanvändning** | [Produktanvändning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview()) visar hur din organisation använder Customer Journey Analytics. |
+| **Produktanvändning** | [Produktanvändningen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) visar hur din organisation använder Customer Journey Analytics. |
 | **Omformningar vid rapporttillfället** | [Med datavyer](/help/data-views/data-views.md) i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde eller filtrera delmängder. Alla dessa omformningar görs på ett icke-förstörande sätt. Adobe Analytics har begränsade möjligheter genom virtuella rapportsviter och anpassad sessionslängd. |
 | **SQL-åtkomst** | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
 | **Stitching** | [Stitching](/help/stitching/overview.md) är en kraftfull funktion som höjer en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID). |
