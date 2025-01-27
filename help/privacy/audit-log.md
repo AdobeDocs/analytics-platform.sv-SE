@@ -4,10 +4,10 @@ description: Lär dig hur du visar och hanterar Customer Journey Analytics grans
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 2%
+source-wordcount: '872'
+ht-degree: 1%
 
 ---
 
@@ -63,22 +63,22 @@ Dubbelklicka på knappen info (i) bredvid en beskrivning.
 Följande objekt visas:
 
 * **[!UICONTROL Action Name]**: Den åtgärd som utfördes. Möjliga värden är:
-   * API_REQUEST
-   * GODKÄNN
-   * SKAPA
-   * DELETE
-   * REDIGERA
-   * EMBARGO
-   * EXPORTERA
-   * ORG_CHANGE
-   * UPPDATERA
-   * DELA
-   * ÖVERFÖRING
-   * OGODKÄND
-   * AVDELA
+   * API_REQUEST: Alla åtgärder utlöser en backend API-begäran. Information visas om vad API-begäran var.
+   * GODKÄNNANDE: En godkännandeåtgärd utfördes.
+   * CREATE: En Skapa-åtgärd utfördes.
+   * DELETE: En raderingsåtgärd utfördes.
+   * REDIGERA: En redigeringsåtgärd utfördes.
+   * EMBARGO:
+   * EXPORT: En exportåtgärd utfördes.
+   * ORG_CHANGE: En åtgärd för organisationsändring utfördes.
+   * UPPDATERA: En uppdateringsåtgärd utfördes.
+   * DELA: En delningsåtgärd utfördes.
+   * ÖVERFÖRING: En överföringsåtgärd utfördes.
+   * OGODKÄND: En åtgärd av typen &quot;unGodkänn&quot; utfördes.
+   * UNSHARE: En åtgärd av typen unshare utfördes.
 * **[!UICONTROL Date Created]**: Datum och tid då åtgärden utfördes.
 * **[!UICONTROL Description]**: En sammanfattning av åtgärden.
-* **[!UICONTROL User Name]**: Användaren som utförde åtgärden.
+* **[!UICONTROL User Name]**: Användaren som utförde åtgärden. Ibland kanske användarnamnet saknas. Du bör använda funktionen [Produktanvändning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) eftersom den alltid innehåller inloggningsnamnet.
 * **[!UICONTROL Email]**: E-postadressen till användaren som utförde åtgärden.
 * **[!UICONTROL Component Name]**: Komponenten som användaren utförde en åtgärd på.
 * **[!UICONTROL Component Type]**: Komponenttypen. Möjliga värden är:
@@ -94,7 +94,7 @@ Följande objekt visas:
    * FILTER
    * IMS_ORG
    * MOBILE
-   * PROJEKT
+   * PROJEKT (Workspace)
    * RAPPORT
    * SCHEDULED_PROJECT
    * ANVÄNDARE
