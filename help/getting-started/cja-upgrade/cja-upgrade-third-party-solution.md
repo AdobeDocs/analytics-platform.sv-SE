@@ -1,81 +1,26 @@
 ---
-title: Förstå hur Adobe Analytics implementeras och hur det påverkar din uppgradering till Customer Journey Analytics
-description: Läs mer om rekommenderad sökväg när du uppgraderar från Adobe Analytics till Customer Journey Analytics
+title: Uppgradera från en analyslösning från tredje part till Customer Journey Analytics
+description: Lär dig hur du uppgraderar från en analyslösning från tredje part till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
 
-# Förstå hur Adobe Analytics implementeras och hur det påverkar din uppgradering till Customer Journey Analytics {#implementation-affects-upgrade}
+# Uppgradera från en analyslösning från tredje part till Customer Journey Analytics {#upgrade-from-third-party}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-upgrade-appmeasurement"
->title="AppMeasurement (manuell JS-fil)"
->abstract="En JavaScript-implementering som läser in AppMeasurement.js på en sida och skickar data till Adobe med objektet s (till exempel s.eVar1)."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-analyticsextension"
->title="Adobe Analytics-tillägg (taggar)"
->abstract="En taggimplementering som läser in Adobe Experience Platform Data Collection (tidigare Launch). Taggen har tillägget Adobe Analytics installerat."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-websdk"
->title="Web SDK (alloy.js)"
->abstract="En JavaScript-implementering som läser in Web SDK-biblioteket (alloy.js) på en sida och skickar data till Adobe med en JSON-nyttolast."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-websdkextension"
->title="Web SDK-tillägg (taggar)"
->abstract="En taggimplementering som läser in Adobe Experience Platform Data Collection (tidigare Launch). Taggen har Web SDK-tillägget installerat."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-api"
->title="API för datainfogning"
->abstract="En implementering som använder API:t för infogning av data eller API:t för massdatainfogning."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-mobilesdk"
->title="Mobile SDK"
->abstract="En implementering som använder Adobe Experience Platform Mobile SDK."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-upgrade-unknown"
->title="Okänd implementering"
->abstract="Om du inte är den person som hanterar implementeringen kan du tillfälligt välja det här alternativet."
+>id="cja-upgrade-third-party"
+>title="En analysprodukt från tredje part"
+>abstract="En implementering som samlar in data för en analysprodukt från tredje part, till exempel Google Analytics. Om du väljer det här alternativet inaktiveras flera alternativ i enkäten som inte gäller när du uppgraderar till Customer Journey Analytics från en analysprodukt från tredje part."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -83,13 +28,18 @@ ht-degree: 1%
 > 
 >Använd informationen på den här sidan när du besvarar frågor i checklistan för uppgradering av [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
-Det finns olika sätt att implementera Adobe Analytics. När du uppgraderar till Customer Journey Analytics är inte alla uppgraderingsalternativ tillgängliga för alla Adobe Analytics-implementeringar. Den rekommenderade uppgraderingssökvägen är dock tillgänglig oavsett hur Adobe Analytics implementeras i din organisation.
+Den rekommenderade processen att uppgradera från en analyslösning från tredje part till Customer Journey Analytics är en ny implementering av Experience Platform Web SDK, vilket är den bästa datainsamlingsmetoden för Customer Journey Analytics. Tillsammans med Web SDK rekommenderar Adobe också att man hämtar in historiska data från tredjepartslösningen till Adobe Experience Platform.
 
-Använd informationen nedan för att lära dig mer om hur Adobe Analytics implementeras och vilka uppgraderingsalternativ som finns tillgängliga för din organisation.
+<!-- After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. -->
+
+Använd följande process när du går till Customer Journey Analytics från en analyslösning från tredje part, som Google Analytics:
+
+1. ...
+
 
 Kontakta din Adobe-representant om du behöver mer specifik rådgivning, vägledning eller support.
 
-| Befintlig Adobe Analytics-implementering | Beskrivning | Tillgängliga uppgraderingssökvägar |
+| Befintlig analyslösning | Beskrivning | Tillgängliga uppgraderingssökvägar |
 |---------|----------|----------|
 | AppMeasurement | AppMeasurement för JavaScript har tidigare varit ett vanligt sätt att implementera Adobe Analytics.<p>Mer information om den här implementeringstypen finns i [Implementera Adobe Analytics med AppMeasurementet för JavaScript](https://experienceleague.adobe.com/en/docs/analytics/implementation/js/overview).</p> | <ul><li>[(Rekommenderas) Ny implementering av Experience Platform Web SDK för kontinuerlig datainsamling; Analytics Source Connector för historiska data ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Ny implementering av Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>Migrera Adobe Analytics till Web SDK</li><li>[Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)</li></ul> |
 | Adobe Analytics-tillägg (taggar) | <p>Taggar i Adobe Experience Platform är en tagghanteringslösning som gör att ni kan driftsätta Analytics-kod tillsammans med andra taggningskrav. Adobe erbjuder integreringar med andra lösningar och produkter och låter er driftsätta anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.</p><p>Mer information om den här implementeringstypen finns i [Implementera Adobe Analytics med Analytics-tillägget](https://experienceleague.adobe.com/en/docs/analytics/implementation/launch/overview).</p> | <ul><li>[(Rekommenderas) Ny implementering av Experience Platform Web SDK för kontinuerlig datainsamling; Analytics Source Connector för historiska data ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Ny implementering av Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>Migrera Adobe Analytics till Web SDK</li><li>[Analytics Source Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)</li></ul> |
