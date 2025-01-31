@@ -4,9 +4,9 @@ title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,15 @@ Med Data Dictionary i Analysis Workspace kan både användare och administratör
 Analysadministratörer ansvarar för att strukturera information om varje komponent i Data Dictionary så att den blir tillgänglig för användarna.
 
 
-+++ Visa en video som demonstrerar datamallen
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataordlista för Analyis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
 
 ## Fördelar för användare
 

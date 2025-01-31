@@ -5,9 +5,9 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,13 @@ Datastrukturen i Universal Analytics-egenskaperna skiljer sig från datastruktur
 
 Universal Analytics-egenskaper lagrar varje post i sina data som en användarsession i stället för som enskilda händelser. Det krävs en SQL-fråga för att omvandla data från Universal Analytics till ett format som är kompatibelt med Adobe Experience Platform. Använd funktionen `UNNEST` på fältet `hits` i GA-schemat och spara den som en BigQuery-tabell.
 
->[!VIDEO](https://video.tv.adobe.com/v/332634)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Från Google Analytics till Customer Journey Analytics - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ```sql
 SELECT
@@ -74,7 +80,13 @@ Navigera till **Exportera > Exportera till GCS** i Google Cloud Platform. När d
 1. I Adobe Experience Platform väljer du **[!UICONTROL Sources]** till vänster.
 1. Leta upp alternativet **[!UICONTROL Google Cloud Storage]** under katalogen. Klicka på **[!UICONTROL Add data]**.
 
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importera Google Analytics-data till Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

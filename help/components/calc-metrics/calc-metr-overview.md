@@ -4,9 +4,9 @@ description: Lär dig mer om filtrerade mätvärden som genereras vid rapportkö
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 Beräknade mätvärden är anpassade mätvärden som du kan skapa utifrån befintliga mätvärden. Beräknade mätvärden är ett flexibelt sätt att skapa, hantera och strukturera anpassade mätvärden som gör att ni kan analysera data utan att behöva ändra implementeringen.
 
-+++ I den här videon finns en introduktion om hur du använder beräknade mätvärden.
 
->[!VIDEO](https://video.tv.adobe.com/v/31787/?learn=on)
 
-+++
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till beräknade värden](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 Ett typiskt arbetsflöde för beräknade värden består av dessa uppgifter
 

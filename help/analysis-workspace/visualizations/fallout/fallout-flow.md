@@ -4,9 +4,9 @@ title: Om utfallsrapporter och visualiseringar
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -31,13 +31,15 @@ _I den här artikeln dokumenteras utfallsvisualiseringen i_ ![CustomerJourneyAna
 
 En ![ConversionTrnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]**-visualisering visar var personer slutade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
 
-+++ Visa en videodemonstration av [!UICONTROL Fallout visualization].
 
->[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en utfallsvisualiseringsrapport](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 Med hjälp av bortfallsvisualiseringar kan du:
 

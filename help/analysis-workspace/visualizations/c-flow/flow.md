@@ -4,9 +4,9 @@ title: Flödesöversikt
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -41,15 +41,17 @@ Med visualiseringen kan du
 
 * Visualisera kundresan via er webbplats eller tillämpning.
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, till exempel inmatning, en viss dimension eller avslutning.
-* Skapa filter genom att ange en specifik punkt i en vald bana
+* Skapa filter genom att ange en specifik punkt i en vald bana.
 
-+++ Visa en videodemonstration av Flow-visualiseringen.
 
->[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en flödesvisualisering](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Flerdimensionella flöden
 

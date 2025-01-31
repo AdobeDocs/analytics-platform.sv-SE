@@ -4,14 +4,26 @@ title: Sammanfattningsnummer och sammanfattning
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # Sammanfattningsnummer och ändring av sammanfattning
+
+>[!BEGINSHADEBOX]
+
+_I den här artikeln dokumenteras visualiseringar av sammanfattningsnummer och sammanfattningsändringar i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Sammanfattningsnummer och Sammanfattningsändring](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av sammanfattningsnummer och sammanfattningsändring](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 ## Sammanfattningsnummer {#summary-number}
 
@@ -23,14 +35,6 @@ ht-degree: 0%
 >abstract="Skapa en visualisering som visar summor och delsummor."
 
 <!-- markdownlint-enable MD034 -->
-
-
->[!BEGINSHADEBOX]
-
-_I den här artikeln dokumenteras visualiseringar av sammanfattningsnummer och sammanfattningsändringar i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Sammanfattningsnummer och Sammanfattningsändring](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
-
->[!ENDSHADEBOX]
-
 
 Använd visualiseringen ![Sammanfattning](/help/assets/icons/123.svg) **[!UICONTROL Summary number]** för att markera ett stort antal som är viktiga i ett projekt. Den här visualiseringen fungerar på följande sätt med den associerade datakällan:
 

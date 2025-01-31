@@ -4,9 +4,9 @@ title: Punktdiagram
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,18 @@ _I den här artikeln beskrivs punktvisualiseringen i_ ![CustomerJourneyAnalytics
 
 Visualiseringen av ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visar hur ett mätvärde jämförs med, eller mäter mot, prestandaintervall (mål).
 
-![](assets/bullet.png)
+![Visualisering av punktdiagram](assets/bullet.png)
 
 Punktdiagrammet har ett enda primärt mått (till exempel nuvarande intäkter från år till dag) och gör att du kan ange kvalitativa intervall för prestanda (till exempel jämfört med en målintäkt). Du kan ange höga, medelstora och låga målintervall. Du kan ange målintervall i ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]**.
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av punktdiagram](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Inställningar
 

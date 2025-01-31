@@ -4,22 +4,21 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 347ab5b400fb8a5fddc02878f779be7112d693ab
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
 
 # Radinställningar
 
-+++ Visa en videodemonstration av den här funktionen.
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
-+++
+>[!ENDSHADEBOX]
 
 Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen. Om du vill komma åt tabellradsinställningar väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** bredvid en dimension, ett filter, ett mått, en tidsperiod eller en uppdelning inom vart och ett av dessa objekt.
 

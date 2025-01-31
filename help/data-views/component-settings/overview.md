@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e326b5457c82a7b4789c68588546707fabca42f6
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,12 @@ Följande information beskriver de inställningar som används av en datavykompo
 
 {style="table-layout:auto"}
 
-Här är en video om komponentinställningar i datavyer:
 
->[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponenttypsinställningar](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
+

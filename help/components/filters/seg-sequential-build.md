@@ -3,9 +3,9 @@ description: Sekventiella filter är filter som använder operatorn THEN för at
 title: Sekventiella filter
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2343'
 ht-degree: 1%
 
 ---
@@ -14,13 +14,15 @@ ht-degree: 1%
 
 Du skapar sekventiella filter med den logiska operatorn [!UICONTROL Then] mellan komponenter, behållare och komponenter, eller behållare. Den logiska operatorn [!UICONTROL Then] indikerar att ett filtervillkor inträffar, följt av ett annat.
 
-+++ Här är en video som visar sekventiell segmentering.
 
->[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sekventiell segmentering](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 Ett sekventiellt filter har [grundläggande funktioner](#basics) och ytterligare alternativ som du kan konfigurera för att göra det sekventiella filtret mer komplext:
 

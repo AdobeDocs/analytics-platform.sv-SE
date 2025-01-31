@@ -4,7 +4,7 @@ title: Skapa filter
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8eb146fccbdbe47df8ca28f7b8dcbce2bf6888fd
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -132,13 +132,13 @@ Du kan skapa filter som innehåller rullande datumintervall. Ni kan alltså besv
 
 ![Filtrera med rullande datumintervall](assets/filter-rolling-date-range.gif)
 
-+++ Här är en video om hur du använder rullande datumintervall i filter
 
->[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rullande datumintervall i segment](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Staplingsfilter {#stack}
 

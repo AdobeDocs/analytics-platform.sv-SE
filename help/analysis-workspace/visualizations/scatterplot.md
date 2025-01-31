@@ -4,9 +4,9 @@ description: En visualisering som visar relationen mellan upp till tre mätvärd
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ _I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![CustomerJourney
 >[!ENDSHADEBOX]
 
 
-Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** visar relationen mellan dimensionsobjekt och upp till tre mätvärden. Den kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
+Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** visar relationen mellan dimensionsobjekt och upp till tre mätvärden. Visualiseringen kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
 
 * Radkomponenten (vanligtvis en dimension) representerar varje punkt i diagrammet. Olika rader visas som olika färgade punkter.
 * Kolumnen längst till vänster (vanligtvis ett mått) ritar punktens position på Y-axeln (lodrätt).
@@ -39,6 +39,14 @@ Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTR
 * Alla efterföljande kolumner i en friformstabell ignoreras av visualisering av punktdiagram.
 
 ![Exempel på punktdiagram som visar flera dimensionsobjekt ](assets/scatter.png)
+
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av platsyta](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

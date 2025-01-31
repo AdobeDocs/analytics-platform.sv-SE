@@ -4,9 +4,9 @@ title: Munk
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,15 @@ På samma sätt som ett cirkeldiagram visar visualiseringen ![GraphDonut](/help/
 
 ![Ett ringdiagram som visar data som delar eller filter av en helhet.](assets/donut.png)
 
-+++ Visa en videodemonstration av den här funktionen.
 
->[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägg till en donutvisualisering](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

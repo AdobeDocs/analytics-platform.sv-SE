@@ -4,9 +4,9 @@ description: Så här använder och tolkar du den mediespelningstid som används
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,15 @@ Den uppspelningstid som spenderas kan hjälpa dig att förstå:
 
 * Där bortfall inträffade.
 
-+++ Visa en videodemonstration av den här funktionen.
 
->[!VIDEO](https://video.tv.adobe.com/v/338699)
+>[!BEGINSHADEBOX]
 
-+++
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstid som använts](https://video.tv.adobe.com/v/338699){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Använd
 

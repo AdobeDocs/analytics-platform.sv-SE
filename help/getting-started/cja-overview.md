@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '952'
 ht-degree: 2%
 
 ---
@@ -20,9 +20,13 @@ Customer Journey Analytics-arkitekturen på hög nivå visas här:
 
 ![Customer Journey Analytics-arkitekturen förklaras i det här avsnittet](assets/cja-architecture.png)
 
-Här är en videoöversikt av Customer Journey Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [kundreseanalys: Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} för en introduktionsvideo till Customer Journey Analytics.
+
+>[!ENDSHADEBOX]
+
 
 ## Jämföra Customer Journey Analytics med traditionell Adobe Analytics
 
@@ -88,11 +92,17 @@ Från datainmatning till direkt SQL-åtkomst - flera komponenter från Experienc
 
 ## Videor
 
-* Arbeta med data i Customer Journey Analytics:
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+>[!BEGINSHADEBOX]
 
-* Arkitektur och integrering av Customer Journey Analytics:
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeta med data i Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} för en introduktionsvideo om hur du arbetar med data i Customer Journey Analytics.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arkitektur och integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} för en introduktionsvideo om arkitekturen och integreringen av Customer Journey Analytics.
+
+>[!ENDSHADEBOX]
+
 

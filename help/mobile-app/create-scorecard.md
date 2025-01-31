@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '2600'
+source-wordcount: '2631'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ ht-degree: 0%
 
 Följande information instruerar chefer för Customer Journey Analytics om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Till att börja med kan du visa videon om att bygga styrkort för kontrollpaneler i Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/343458)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa ett mobilstyrkort](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 >[!NOTE]
 >
@@ -202,7 +208,14 @@ Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appen
 
 Med skräddarsydda detaljbilder kan ni målinrikta er ännu mer om vilken information ni delar med er målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 Du kan ändra layouten för varje detaljbild och lägga till text som bättre förklarar vad slutanvändaren kan se i informationen. Du kan också ändra diagramtyp med hjälp av den nedrullningsbara menyn.
 
@@ -240,7 +253,15 @@ Om du till exempel fokuserar på webbtrafik kan det vara dina viktigaste mätvä
 
 Titta på videon och lär dig mer om hur du skapar databerättelser i mobilstyrkortsprojekt i Analysis Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för ett Mobile-styrkortsprojekt](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 **Skapa en dataartikel** {#data-story-create}
 

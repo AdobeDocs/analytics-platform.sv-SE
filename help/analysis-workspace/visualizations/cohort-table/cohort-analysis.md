@@ -4,9 +4,9 @@ description: Lär dig använda en kohorttabell för kohortanalys i Analysis Work
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -52,13 +52,15 @@ Exempel på vad du kan göra med en [!UICONTROL Cohort table]:
 
 [!UICONTROL Cohort table] är tillgängligt för alla Customer Journey Analytics-kunder med åtkomstbehörighet till [!UICONTROL Analysis Workspace].
 
-+++ Visa en videodemonstration av kohorttabellen.
 
->[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortanalys i Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!IMPORTANT]
 >

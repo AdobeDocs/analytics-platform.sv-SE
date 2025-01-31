@@ -5,18 +5,23 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
 
 # Snabbguide för chefsanvändare
 
-Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa kontrollpaneler i Analytics. Här är en video som visar den här informationen:
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa kontrollpaneler i Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/343460/)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hjälpa chefer att komma åt mobilstyrkort](https://video.tv.adobe.com/v/343460/){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort på kontrollpaneler i Analytics. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
 

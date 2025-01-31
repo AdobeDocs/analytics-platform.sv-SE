@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,19 @@ Kunddata i Experience Platform lagras som datamängder, som består av ett [sche
 
 Din Customer Journey Analytics-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. De skapar sedan [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar begreppsmässigt virtuella rapportsviter och är grunden för rapportering i Customer Journey Analytics. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
 
-Med en anslutning kan Analytics Admin integrera datauppsättningar från Adobe Experience Platform i Customer Journey Analytics, som ingår i följande video:
+Med en anslutning kan Analytics Admin integrera datauppsättningar från Adobe Experience Platform i Customer Journey Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
+
+<!-- Outdated UI
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
+
 
 Adobe erbjuder flera sätt att överföra data till Adobe Experience Platform, inklusive rapportsvitsdata via Analytics-källkopplingen eller Web SDK. Befintliga implementeringar från flera rapportsviter kan kombineras i Experience Platform. De anslutningar och datavyer som baseras på dessa datauppsättningar kan kombinera data som tidigare fanns i separata rapportsviter.
 
@@ -78,9 +88,14 @@ Förutom segmentändringen uppdateras även segmentbehållarna.
 
 ## Förändringar av begreppet beräknade mätvärden
 
-Beräknade mätvärden namnges på liknande sätt mellan Adobe Analytics och Customer Journey Analytics. [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett Experience Platform-schemaelement. Den här grundläggande ändringen innebär att inga av de befintliga beräknade måtten är kompatibla med [!UICONTROL Customer Journey Analytics]. Om du vill flytta Adobe Analytics beräknade värden till Customer Journey Analytics ska du titta i följande video:
+Beräknade mätvärden namnges på liknande sätt mellan Adobe Analytics och Customer Journey Analytics. [!UICONTROL Customer Journey Analytics] använder inte längre eVars, props eller händelser och använder i stället ett Experience Platform-schemaelement. Den här grundläggande ändringen innebär att inga av de befintliga beräknade måtten är kompatibla med [!UICONTROL Customer Journey Analytics].
 
->[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Flytta beräknade värden från Adobe Analytics till Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} för en demonstrationsvideo om hur du flyttar beräknade värden.
+
+>[!ENDSHADEBOX]
 
 ## Ändringar av variabelattribuerings- och förfalloinställningar
 
@@ -100,9 +115,14 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 ## Ändringar i hur Adobe identifierar besökare
 
-Customer Journey Analytics utökar begreppet identiteter utöver ECID:n så att det omfattar alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Om du använder ett gemensamt namnområdes-ID för datauppsättningar, eller om du använder [Stitching](../stitching/overview.md), kan du länka samman personer mellan olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i Customer Journey Analytics måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics:
+Customer Journey Analytics utökar begreppet identiteter utöver ECID:n så att det omfattar alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Om du använder ett gemensamt namnområdes-ID för datauppsättningar, eller om du använder [Stitching](../stitching/overview.md), kan du länka samman personer mellan olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i Customer Journey Analytics måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda identitet i Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 ## Förändringar av begreppet lågtrafikdimensionsobjekt
 

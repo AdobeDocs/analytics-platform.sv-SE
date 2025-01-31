@@ -4,9 +4,9 @@ title: Snabbfilter
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1098'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,13 @@ ht-degree: 0%
 Med snabbfilter kan du snabbt utforska data i ett Workspace-projekt utan att behöva skapa ett filter i [Filter Builder](/help/components/filters/create-filters.md).
 
 
-+++ I följande video visas hur du använder snabbfilter.
 
->[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Snabbsegment i Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
-+++
+>[!ENDSHADEBOX]
+
 
 När du vill använda snabbfilter bör du tänka på följande:
 

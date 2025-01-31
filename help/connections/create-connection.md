@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '4092'
+source-wordcount: '4093'
 ht-degree: 0%
 
 ---
@@ -131,11 +131,13 @@ Arbetsflödet för att skapa och redigera anslutningar gör att alla konfigurati
 * Du kan redigera datauppsättningar, t.ex. för att begära en annan bakgrundsfyllning.
 * Du kan importera befintliga data per datauppsättning.
 
-+++ Video som illustrerar hur du skapar och redigerar en anslutning
 
->[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa och redigera en anslutning](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 ## Förutsättningar
 

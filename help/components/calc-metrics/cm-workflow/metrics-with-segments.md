@@ -3,9 +3,9 @@ description: Genom att filtrera enskilda mätvärden kan ni göra mätbara jämf
 title: Filtrerade mätvärden
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -87,10 +87,12 @@ Upprepa stegen ovan för den internationella versionen av det beräknade måttet
    ![Workspace Freeform-tabellvisualisering som visar totalt antal tyska och internationella personer](assets/workspace-german-vs-international-totals-percentage.png)
 
 
-+++ Här är en video som visar hur du använder ett filtrerat beräknat mätvärde som ett implementeringsfritt mätvärde.
 
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd ett filtrerat beräknat mätresultat som ett implementeringsfritt mätvärde](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+

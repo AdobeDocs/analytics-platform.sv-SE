@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,15 @@ Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
 
 Alla [kurationer](curate.md) som du tillämpar före delning visas när mottagarna öppnar projektet.
 
-+++ Visa en video som visar hur du använder projektdelning.
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektdelning i Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Dela med användare och grupper i Customer Journey Analytics i din organisation {#Add}
 
@@ -153,9 +155,13 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 >
 >* Funktionen [!UICONTROL Share with anyone] är blockerad för både licenser för hälso- och sjukvårdssköld och skölden för skydd av privatlivet och säkerheten.
 
-I följande videodemonstration och medföljande dokumentation beskrivs alternativen för att dela en länk med vem som helst:
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela med vem som helst](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
+
 
 Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
@@ -203,9 +209,16 @@ När någon delar ett projekt med dig genom att dela en länk (antingen från fl
 
 ## Dela inbäddade komponenter
 
-Här är en video om ämnet:
+Du kan dela de inbäddade komponenterna som är en del av ditt projekt.
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela inbäddade komponenter i Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Vanliga frågor {#FAQs}
 

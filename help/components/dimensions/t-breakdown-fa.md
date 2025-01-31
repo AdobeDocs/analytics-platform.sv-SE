@@ -6,9 +6,9 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,28 +51,49 @@ Detta är det förväntade beteendet när du tillämpar attribueringsmodeller p�
 
 * Om det redan finns attribut i kolumnträdet påverkas bara den du redigerar om du ändrar attributet.
 
-+++ Visa videor som illustrerar dimensioner och dimensioner
+>[!BEGINSHADEBOX]
 
-DIMENSIONER i ANALYSIS WORKSPACE
-
->[!VIDEO](https://video.tv.adobe.com/v/23971)
-
-Uppdelningar av Dimensioner
-
->[!VIDEO](https://video.tv.adobe.com/v/23969)
-
-Lägga till mått och mätvärden i ditt projekt i Analysis Workspace:
-
->[!VIDEO](https://video.tv.adobe.com/v/30606)
-
-Arbeta med dimensioner i en friformstabell:
-
->[!VIDEO](https://video.tv.adobe.com/v/40179)
-
-Dimension uppdelad efter position:
-
->[!VIDEO](https://video.tv.adobe.com/v/24033)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension i Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension-indelningar](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägga till mått och mätvärden](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeta med dimensioner i en frihandstabell](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedbrytning av Dimension efter position](https://video.tv.adobe.com/v/24033){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+

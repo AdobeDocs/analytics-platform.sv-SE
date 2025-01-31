@@ -4,9 +4,9 @@ description: Lär dig skapa hyperlänkar för dimensionsobjekt i en frihandstabe
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1595'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ Du kan skapa hyperlänkar för dimensionsobjekt för att göra dem klickbara i e
 
 Den här funktionen är särskilt användbar när du skapar hyperlänkar för följande typer av dimensionsobjekt:
 
-* Dimensioner som har URL-värden (t.ex. en sidURL-dimension)
+* Dimensioner som har URL-värden (t.ex. sidans URL-dimension).
 
-* Dimensioner som innehåller uppdelningar som har URL-värden (t.ex. en sidnamnsdimension som har en nedbrytning av sidans URL-dimension)
+* Dimensioner som innehåller uppdelningar som har URL-värden (t.ex. en sidnamnsdimension som har en uppdelning av sidans URL-dimension).
 
-* Dimension av objekt eller uppdelningar som har värden som är en del av en URL (t.ex. en sidnamnsdimension som är en del av en URL)
+* Dimension av objekt eller uppdelningar som har värden som är en del av en URL (till exempel en sidnamnsdimension som är en del av en URL).
 
-+++ Visa en videodemonstration av den här funktionen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa hyperlänkar i en frihandstabell](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Skapa hyperlänkar
 
