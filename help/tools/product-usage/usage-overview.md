@@ -2,9 +2,9 @@
 title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: dbf4ff28f693085320c3e496ea99eede2ddb17d2
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,6 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * `workspace-projects`
    * `guided-analysis`
    * `mobile-scorecard-builder`
-* **[!UICONTROL User ID]**: Det användar-ID som utlöste händelsen.
 * **[!UICONTROL Visualization Used]**: Den visualisering som lades till, togs bort eller ändrades. Bland Dimensionerna finns:
    * [!UICONTROL Freeform table]
    * [!UICONTROL Cohort table]

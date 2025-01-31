@@ -2,7 +2,7 @@
 title: Inställningar för produktanvändningsdata
 description: Aktivera, inaktivera eller konfigurera inställningar för produktanvändning.
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # Inställningar för produktanvändningsdata {#product-usage-data-settings}
-
-{{release-limited-testing}}
 
 Sidan _Datainställningar_ hanterar din produktanvändningskonfiguration. Du kan använda den här sidan för att aktivera eller inaktivera produktanvändning för din organisation. Du kan också konfigurera vilken Adobe Experience Platform-sandlåda som datauppsättningen skapas under och åsidosätta datalagringsfönstret om du vill. Det är bara synligt för produktadministratörer.
 

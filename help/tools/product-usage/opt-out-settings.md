@@ -2,7 +2,7 @@
 title: Inställningar för produktanvändningsavanmälan
 description: Hantera avanmälningsinställningar för enskilda användare inom organisationen.
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # Inställningar för produktanvändningsavanmälan {#product-usage-opt-out-settings}
-
-{{release-limited-testing}}
 
 På sidan _Avanvisningsinställningar_ kan du exkludera eller ta med användare i organisationen igen från spårning av produktanvändning. Det är bara synligt för produktadministratörer.
 
