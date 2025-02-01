@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Medievisningsprogram för 
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -53,13 +53,13 @@ Ni kan analysera samtidiga visningsprogram för att förstå var maximal samtidi
 I Analysis Workspace är indikatorn för Concurrent viewers antalet unika personer som visar medieströmmarna vid en viss tidpunkt, oavsett antalet sessioner.
 
 
-+++ Visa en videodemonstration av den här funktionen.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panelen Medievisningsprogram för samtidig användning](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} .
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 ## Använd
 

@@ -4,9 +4,9 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2003'
 ht-degree: 1%
 
 ---
@@ -153,16 +153,13 @@ Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md)
 
 ### Nedrullningsbara filter
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-I den här videon demonstreras funktionaliteten med Adobe Analytics. Funktionen finns dock på liknande sätt i Customer Journey Analytics. Tänk på följande skillnader i terminologi.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedrullningsbara filter](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
-| Adobe Analytics | Customer Journey Analytics |
-| --- | --- |
-| Segment | Filter |
-| Besökare | Person |
-| Besök | Session |
-| Träff | Händelse |
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 
 #### Statiska nedrullningsbara filter

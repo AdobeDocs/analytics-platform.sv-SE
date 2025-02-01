@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Med analysen ![Tidslinje](/help/assets/icons/Timeline.svg) **[!UICONTROL Timelin
 >* **Administratörer**: *Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.*
 >* **Icke-administratörer**: *Egenskapen PersonID krävs för den här analysen. Samarbeta med Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 
 

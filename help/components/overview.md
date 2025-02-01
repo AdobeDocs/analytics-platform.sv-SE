@@ -5,9 +5,9 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '900'
 ht-degree: 2%
 
 ---
@@ -44,12 +44,6 @@ Om du vill öppna panelen Komponenter väljer du ![Kurva](/help/assets/icons/Cur
 
 Mer information om hur du använder komponenter i ett projekt finns i [Skapa ett projekt](/help/analysis-workspace/home.md).
 
-
-+++ Visa en video som visar möjligheterna med komponenter:
-
->[!VIDEO](https://video.tv.adobe.com/v/23979)
-
-+++
 
 ## Hantera komponenter {#actions}
 

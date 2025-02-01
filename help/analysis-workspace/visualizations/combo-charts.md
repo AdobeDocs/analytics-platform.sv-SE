@@ -4,9 +4,9 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ _I den här artikeln dokumenteras kombinationsvisualiseringen i_ ![CustomerJourn
 >[!ENDSHADEBOX]
 
 
-Visualiseringen ![Kommentar](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** gör det enkelt att snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. Du kan enkelt visa trender i dina data i en kombination av rad och rad.
+Visualiseringen av ![kombinationsdiagrammet](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** gör det enkelt att snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. Du kan enkelt visa trender i dina data i en kombination av rad och rad.
 
 Använd en [!UICONTROL Combo] för att:
 

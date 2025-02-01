@@ -4,7 +4,7 @@ title: Område och område staplade
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 5655c951422c4abbd7bd12686027968efea5c6ea
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -51,8 +51,6 @@ Visualiseringen av ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL 
 >abstract="Skapa en områdesgraf som representerar stapling av flera mätvärden."
 
 <!-- markdownlint-enable MD034 -->
-
-
 
 
 Visualiseringen av ![GraphAreaStacks](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** är som ett område, men varje serie börjar överst i föregående serie.

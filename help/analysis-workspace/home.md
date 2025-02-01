@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1338'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter o
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över arbetsytan Analys](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över arbetsytan Analys](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -27,11 +27,11 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över a
 
 Följande bild och tabell beskriver huvudelementen i Analysis Workspace användargränssnitt:
 
-![Analysis Workspace-fönstret markerar den vänstra och den vänstra panelen, arbetsytan och listrutan för datavy.](assets/analysis-workspace-overview.png)
+![Analysis Workspace-fönstret markerar de olika avsnitten i gränssnittet](assets/analysis-workspace-overview.png)
 
 | Plats | Namn och funktion |
 |:---------:|----------|
-| ? | Innehåller namnet på projektet, en menystruktur för att få åtkomst till funktioner, en knapp på ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) för att återgå till projektlistan och en **[!UICONTROL Share]**-knapp för att [dela ditt Workspace-projekt](/help/analysis-workspace/curate-share/share-projects.md). <br/>Välj namnet på ditt projekt (till exempel: Nytt projekt) när som helst för att ändra namnet. <br/>Markera ![StarOutline](/help/assets/icons/StarOutline.svg) om du vill markera projektet som ett favoritprojekt ![Star](/help/assets/icons/Star.svg). |
+| ? | Innehåller namnet på projektet, en menystruktur för att få åtkomst till funktioner, en knapp ![Bakåt](/help/assets/icons/ChevronLeft.svg) för att återgå till projektlistan och en **[!UICONTROL Share]**-knapp för att [dela ditt Workspace-projekt](/help/analysis-workspace/curate-share/share-projects.md). <br/>Välj namnet på ditt projekt (till exempel: Nytt projekt) när som helst för att ändra namnet. <br/>Välj ![Till skillnad](/help/assets/icons/StarOutline.svg) om du vill markera ditt projekt som ett favoritprojekt ![till förmån](/help/assets/icons/Star.svg). |
 | ? | **Knapppanelen:** Innehåller knappar för att komma åt [funktioner](#features) i Analysis Workspace:<ul><li>![Webbsida](/help/assets/icons/WebPage.svg) [[!UICONTROL Panels]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Guidad analys](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Guided Analysis]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualizations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratera](/help/assets/icons/Curate.svg) [[!UICONTROL Components]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table of contents]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Bokmärke](/help/assets/icons/Bookmark.svg) [[!UICONTROL Data Dictionary]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | ? | **Vänster panel:** Det här området innehåller enskilda paneler, visualiseringar, komponenter eller listor. Innehållet beror på vilken knapp som är markerad på knapppanelen. |
 | ? | **Arbetsyta:** Huvudområdet där du drar innehåll från den vänstra panelen för att skapa projektet. Projektet uppdateras dynamiskt när du lägger till paneler, lägger till visualiseringar i paneler och lägger till komponenter i visualiseringar. Du kan skapa flera paneler, och i varje panel kan du skapa flera visualiseringar.<br/>Varje panel baseras på en vald datavy. Den valda datavyn avgör vilka komponenter som är tillgängliga, som mått och mått. Mer information finns i [Paneler - Datavy](/help/analysis-workspace/c-panels/panels.md#data-view). |

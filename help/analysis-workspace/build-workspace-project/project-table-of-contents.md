@@ -5,9 +5,9 @@ title: Innehållsförteckning
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 9d32100f28e8806cc30aaf52e30216cbce1a38b0
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '177'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,12 @@ ht-degree: 1%
 
 Du kan visa en innehållsförteckning för ett projekt i Analysis Workspace, vilket gör att du snabbt kan växla mellan olika paneler och visualiseringar i projektet. Innehållsförteckningen är särskilt användbar när du visar större projekt som innehåller många paneler och visualiseringar.
 
-+++ Visa en videodemonstration av den här funktionen.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en innehållsförteckning](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >
