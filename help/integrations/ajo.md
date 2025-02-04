@@ -4,9 +4,9 @@ description: Hämta in data som genererats av Adobe Journey Optimizer och analys
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
+source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '3354'
 ht-degree: 0%
 
 ---
@@ -169,6 +169,31 @@ Du kan skapa följande mått i en datavy för att få en ungefärlig paritet med
 | ID för landningssida (AJO) | Unik identifierare för landningssida. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | Komponenttyp: Dimension |
 | Landningssida Source (AJO) | Startsidans källa. | AJO Experience Event-datauppsättning för e-postspårning | Härledda fält | Komponenttyp: Dimension (härlett fält) |
 | Länk-URL (AJO) | Den URL som användaren klickade på. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Komponenttyp: Dimension |
+| Orsak till uteslutning av meddelande (AJO) | Uteslutningsorsak | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageExclusion.reason` | Komponenttyp: Dimension |
+| Meddelandefelkategori (AJO) | Felkategori | AJO Message Feedback Event Dataset | ` _experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.category` | Komponenttyp: Dimension |
+| Orsak till meddelandefel (AJO) | Felorsak | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | Komponenttyp: Dimension |
+| Meddelandefelstyp (AJO) | Feltyp | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.type` | Komponenttyp: Dimension |
+| Status för meddelandefel (AJO) | Felstatus | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | Komponenttyp: Dimension |
+| Meddelande-ID (AJO) | Det meddelande-ID som dessa data ska korreleras till. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.messageID` | Komponenttyp: Dimension |
+| Försök igen (AJO) | Antal nya försök | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.retryCount` | Komponenttyp: Dimension |
+| Nod-ID (AJO) | Nod-ID för kundnoden. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Komponenttyp: Dimension |
+| Nodnamn (AJO) | Nodnamnet för kundnoden. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeName` | Komponenttyp: Dimension |
+| Nodtyp (AJO) | Nodtypen för kundnoden. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Komponenttyp: Dimension |
+| OS (AJO) | Operativsystemets namn. | AJO Push Tracking Experience, händelsedatauppsättning | `environment.operatingSystem` | Komponenttyp: Dimension |
+| OS-version (AJO) | Operativsystemets version. | AJO Push Tracking Experience, händelsedatauppsättning | environment.operatingSystemVersion | Komponenttyp: Dimension |
+| Push Platform (AJO) | Push-tjänster, t.ex. apns eller fcm. | AJO händelsedatauppsättning för e-postspårning, händelsedatauppsättning för AJO-meddelanden, AJO händelsedatauppsättning för push-spårning | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | Komponenttyp: Dimension |
+| Push Title (AJO) | Push Title, ej personaliserad. | AJO Entity DataSet, AJO Message Feedback Event Dataset, AJO Push Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
+| Avvisad godkännandeprincip (AJO) | Namn på motsvarande princip för avvisat samtycke. | Resestegshändelser | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | Komponenttyp: Dimension |
+| SMS inkommande meddelande (AJO) | SMS inkommande svar, t.ex. stopp, start, prenumeration osv. | AJO händelsedatauppsättning för e-postspårning, händelsedatauppsättning för AJO-meddelanden, AJO händelsedatauppsättning för push-spårning | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | Komponenttyp: Dimension |
+| SMS-meddelandetyp (AJO) | SMS-provider, t.ex. inkommande, inkommande svar eller skicka. | AJO händelsedatauppsättning för e-postspårning, händelsedatauppsättning för AJO-meddelanden, AJO händelsedatauppsättning för push-spårning | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Komponenttyp: Dimension |
+| SMS-provider (AJO) | SMS-leverantör, t.ex. sinch eller twilio. | AJO händelsedatauppsättning för e-postspårning, händelsedatauppsättning för AJO-meddelanden, AJO händelsedatauppsättning för push-spårning | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Komponenttyp: Dimension |
+| Markeringstyp (AJO) | Kanalytan som meddelandet visades på. | Resestegshändelser, AJO händelsedatauppsättning för e-postspårning, händelsedatauppsättning för AJO-meddelandefeedback, händelsedatauppsättning för AJO Push Tracking Experience | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | Komponenttyp: Dimension |
+| Prenumerationslista-ID (AJO) | Unik identifierare för prenumerationslista. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.subscription.`<br/>` subscriptionListID` | Komponenttyp: Dimension |
+| Yta (AJO) |  | Resestegshändelser, AJO händelsedatauppsättning för e-postspårning, händelsedatauppsättning för AJO-meddelandefeedback, händelsedatauppsättning för AJO Push Tracking Experience | `_experience.decisioning.`<br/>`propositions.scope` | Komponenttyp: Dimension |
+| Bearbetnings-ID (AJO) | ID för vald behandling för experimentet. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | Komponenttyp: Dimension |
+| Behandlingsnamn (AJO) | Namnet på den valda behandlingen för experimentet. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentName` | Komponenttyp: Dimension |
+| URL-ID (AJO) | Unik identifierare för den URL som användaren klickade på. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Komponenttyp: Dimension |
+| URL-etikett (AJO) | Etikett för personlig URL. | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | Komponenttyp: Dimension |
 
 {style="table-layout:auto"}
 
@@ -212,7 +237,7 @@ Du kan skapa följande mätvärden i en datavy för att få en ungefärlig parit
 | Prenumerationslista - tillägg (AJO) | Totalt antal tillägg i prenumerationslistan. | AJO Experience Event-datauppsättning för e-postspårning | Härledda fält | Komponenttyp: Mått (härlett fält) |
 | Prenumerationslista tas bort (AJO) | Totalt antal borttagningar från prenumerationslistan. | AJO Experience Event-datauppsättning för e-postspårning | Härledda fält | Komponenttyp: Mått (härlett fält) |
 | Målinriktad (AJO) | Detta antal gånger ett förslag har riktats till en person. Detta är det antal gånger ett förslag övervägdes för visning till en person. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | Härledda fält | Komponenttyp: Mått (härlett fält) |
-| Utlöst (AJO) | Förslag valdes för att visas av Adobe SDK. Andra faktorer kan förhindra att den faktiskt visas. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
+| Utlöst (AJO) | Förslag valdes för visning av Adobe SDK. Andra faktorer kan förhindra att den faktiskt visas. | AJO Push Tracking Experience, händelsedatauppsättning, händelser för resesteg, händelseuppsättning för AJO Message Feedback, händelsedatauppsättning för AJO Email Tracking Experience | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Komponenttyp: Mått |
 | Unika besökare i expertvyn (AJO) | De unika besökarna i experimentet | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Komponenttyp: Mått |
 | Avbeställ (AJO) | Totalt antal avbeställningar | AJO Experience Event-datauppsättning för e-postspårning | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Komponenttyp: Mått |
 
