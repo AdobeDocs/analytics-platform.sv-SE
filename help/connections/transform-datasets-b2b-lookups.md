@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
+source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,12 @@ Den här omvandlingen är bara tillgänglig för datauppsättningar med data fö
 
 Så här aktiverar du omformning för en sådan datauppsättning:
 
-![Aktivera omformningsdatauppsättning](assets/transform-dataset.gif)
+![Aktivera omformningsdatauppsättning](/help/connections/assets/transform.gif)
 
-* Se till att du väljer rätt identifierare för **[!UICONTROL Key]** och **[!UICONTROL Matching key]**, till exempel `personKey.sourceKey`.
+* Verifiera de föreslagna värdena för **[!UICONTROL Key]** och **[!UICONTROL Matching key]** för varje datauppsättning. Om du ändrar värdena från de föreslagna värdena visas en varning som ber dig att fortsätta. Du måste vara säker på att:
+
+   * Värdet som du väljer för **Key** baseras på persondatatypen ID.
+   * Värdet som du väljer för **Matchande nyckel** definieras som det primära identitetsfältet för händelsedatamängden.
 
 * Välj alternativ för att importera nya data och återfyllnad av datauppsättning.
 
@@ -43,7 +46,7 @@ Så här aktiverar du omformning för en sådan datauppsättning:
 
   >[!IMPORTANT]
   >
-  >När den är aktiverad och anslutningen har sparats går omvandlingen inte att ångra. Du kan inte ändra omformningsinställningen för en datauppsättning när en anslutning har sparats, förutom genom att ta bort och lägga till datauppsättningen en gång till i anslutningen.
+  >När den är aktiverad och anslutningen har sparats går omvandlingen inte att ångra. Du kan inte ändra konfigurationen för datamängden Key, Matching key och Transform. Du kan bara ta bort, lägga till och sedan konfigurera om datauppsättningen.
 
 Så här aktiverar du omformning för en eller flera datauppsättningar som redan ingår i en befintlig anslutning:
 
