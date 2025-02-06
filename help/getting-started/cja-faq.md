@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: edbe0a1b3354b17defb9aef90564f2e36586b181
+source-git-commit: 408773de0fd157edf0cd7b8edc8a8873eff00eb0
 workflow-type: tm+mt
-source-wordcount: '2390'
+source-wordcount: '2389'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 >[!NOTE]
 >Det finns ingen fast datastorlek i Customer Journey Analytics och därför kan Adobe inte binda sig till en standardintag. Adobe arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
 
-<ul><li>Live-data eller händelser: bearbetas och hämtas inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.) **Obs!** Om sys är aktiverat kan intaget ta upp till 3,25 timmar. Mer information finns i [skyddsutkast](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails).</li><li>Små backfillar: inom sju dagar<li>Stora backfillar: inom 30 dagar</li></ul>
+<ul><li>Live-data eller händelser: bearbetas och hämtas inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.) Om sömnad är aktiverat kan intag ta upp till 3,25 timmar.<p>Mer information finns i [skyddsutkast](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails).</li><li>Små backfillar: inom sju dagar<li>Stora backfillar: inom 30 dagar</li></ul>
 
 Adobe har nyligen ändrat hur data behandlas i Customer Journey Analytics:
 
