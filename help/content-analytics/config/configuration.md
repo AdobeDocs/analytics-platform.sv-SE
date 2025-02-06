@@ -2,13 +2,14 @@
 title: Konfigurera innehållsanalys
 description: En översikt över hur du konfigurerar Content Analytics
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 164d67748f8af066b603dcabeecf6d7cfca0f947
+exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
+source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -26,4 +27,3 @@ Om du vill konfigurera innehållsanalys för din organisation kan du antingen:
 
 * använder den guidade konfigurationen [för innehållsanalys](guided.md). Konfigurationsguiden vägleder dig genom alla steg som krävs för att ställa in förutsättningarna för en automatisk konfiguration av innehållsanalys.
 * följer en [manuell process](manual.md) för att konfigurera innehållsanalys.
-

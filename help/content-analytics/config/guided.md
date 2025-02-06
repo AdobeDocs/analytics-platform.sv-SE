@@ -2,13 +2,14 @@
 title: Guidad konfiguration för innehållsanalys
 description: Konfigurera Content Analytics med en introduktionsguidad konfiguration
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 69e2f358398fd8d2646e5a3c1cb6dfd1b5b5efbb
+exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
+source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1599'
 ht-degree: 0%
 
 ---
@@ -200,6 +201,16 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
 >title="Datainsamling"
 >abstract="Ange vilka resurser som ska **inkluderas** eller **exkluderas** vid insamling av data för innehållsanalys"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_experiences_edit_button"
+>title="Datainsamling"
+>abstract="Du kan redigera inställningarna för sidor i tillägget Adobe Content Analytics i taggegenskapen som är kopplad till den markerade konfigurationen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_edit_button"
+>title="Datainsamling"
+>abstract="Du kan redigera inställningarna för resurser i Adobe Content Analytics-tillägget i taggegenskapen som är kopplad till den markerade konfigurationen."
+
 <!-- markdownlint-enable MD034 -->
 
 #### Ny konfiguration
@@ -272,5 +283,3 @@ När du har skapat eller redigerat en konfiguration är följande åtgärder til
       1. Om Web SDK inte är konfigurerat för taggegenskapen skapas en ny Web SDK-konfiguration som endast skickar Content Analytics-händelser.
       1. Om Web SDK är konfigurerat för den här taggegenskapen görs inga ändringar i den befintliga Web SDK-konfigurationen.
 * **[!UICONTROL Save]**: Ändringar som görs i en implementerad konfiguration sparas och implementeringen uppdateras.
-
-
