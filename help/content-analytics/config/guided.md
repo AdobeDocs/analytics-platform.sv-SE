@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 0%
+source-wordcount: '1596'
+ht-degree: 1%
 
 ---
 
@@ -92,7 +92,7 @@ Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Datavy"
->abstract="Välj en befintlig datavy från Customer Journey Analytics som du vill sammanfoga innehållsanalysdata med.<br/>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}"
+>abstract="Välj en befintlig datavy från Customer Journey Analytics som du vill sammanfoga innehållsanalysdata med."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -119,7 +119,7 @@ Om du redigerar en befintlig konfiguration visas endast datavyer som är tillgä
 En datavy är kopplad till en [anslutning](/help/connections/overview.md) i Customer Journey Analytics. Och en Connection är baserad på en sandlåda i organisationen. När du har sparat konfigurationen fylls **[!UICONTROL Sandbox]** automatiskt i med rätt namn på sandlådan, baserat på den valda datavyn.
 
 
-### Upplevelsehantering och -definition
+### Upplevelsehantering och -definition {#onboarding-experiences}
 
 <!-- markdownlint-disable MD034 -->
 
