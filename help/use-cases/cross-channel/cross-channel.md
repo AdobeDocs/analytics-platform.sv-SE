@@ -5,14 +5,23 @@ exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
 
-# Flerkanalsanalys
+# Flerkanalsanalys {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-additional-datasets"
+>title="Lägg till ytterligare datauppsättningar i anslutningen"
+>abstract="När du har lagt till data i en datauppsättning i Adobe Experience Platform kan du lägga till datauppsättningen i anslutningen i Customer Journey Analytics. När du lägger till data från andra kanaler måste du se till att de följer det schema som din organisation använder.<br><br>Varje datauppsättning som du lägger till kräver en enorm mängd arbete, särskilt när det gäller att säkerställa att den unika identifieraren finns för varje händelse och att den övergripande datastrukturen följer organisationens anpassade schema. Om du skapar det här arbetsflödet kan det ta samordningen mellan många team inom organisationen att spridas över flera månader."
+
+<!-- markdownlint-enable MD034 -->
 
 Flerkanalsanalys ger en samlad bild av kundernas beteende i olika kanaler genom att sammanföra data från olika webb-, mobil- och offlineegenskaper. Ni kan till exempel använda den här konsoliderade vyn för att analysera kundinteraktioner på både dator och mobil för att förstå kundbeteenden och få insikter för att optimera digitala kundupplevelser. Ni kan också analysera kundinteraktioner över alla kanaler, inklusive digitala och offlinekanaler som supportinteraktioner och köp i butiken, för att bättre förstå och optimera kundresan.
 

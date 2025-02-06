@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: f71f5b863a024d882a116a5fd3bf0fc433e5fe99
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
-# Övervaka datauppsättningsintag vid uppgradering till Customer Journey Analytics
+# Övervaka datauppsättningsintag vid uppgradering till Customer Journey Analytics {#monitor-ingestion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-validate"
+>title="Validera data i datauppsättningen"
+>abstract="Nu när du har konfigurerat implementeringen av Web SDK kan du använda aktivitetshanteraren för datauppsättning för att se inkapslade och misslyckade batchar. Om du ser primärt kapslade batchar är det här steget klart. Om du i första hand ser misslyckade batchar eller inga batchar bör du kontrollera din Web SDK-implementering för att säkerställa att data skickas korrekt till Adobe.<br><br>Om allt var korrekt och felfritt kan det här steget utföras på mindre än en dag. Om det finns flera datainsamlingsproblem kan det ta särskilt lång tid att felsöka dem."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

@@ -5,14 +5,23 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2281'
 ht-degree: 1%
 
 ---
 
-# Exportera Customer Journey Analytics-rapporter till molnet
+# Exportera Customer Journey Analytics-rapporter till molnet {#full-table-export}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-full-table-export"
+>title="Skapa fullständig registerexport som liknar Data Warehouse"
+>abstract="Fullständig tabellexport är tillgänglig så snart du ser data i Analysis Workspace. Du kan skapa eller schemalägga fullständig tabellexport efter behov.<br><br>Det tar bara några minuter att slutföra skapandet av fullständig tabellexport om du redan vet vilka data som ska inkluderas i exporten."
+
+<!-- markdownlint-enable MD034 -->
 
 Du kan exportera Workspace fullständiga tabeller från Customer Journey Analytics och skicka exporter till angivna molnmål.
 

@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# Verifiera att data flödar till Customer Journey Analytics
+# Verifiera att data flödar till Customer Journey Analytics {#validate-data}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-data-validate"
+>title="Verifiera att data flödar"
+>abstract="Använd anslutningsinformationen för att validera om data flödar till Customer Journey Analytics.<br><br>Om allt var korrekt och felfritt kan det här steget utföras på mindre än en dag. Om det finns flera datainsamlingsproblem kan det ta särskilt lång tid att felsöka dem."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

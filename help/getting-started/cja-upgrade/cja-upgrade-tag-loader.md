@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
-# Implementera taggen loader för Web SDK-tillägget
+# Implementera taggen loader för Web SDK-tillägget {#upgrade-tag-loader}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-loader"
+>title="Implementera loader-taggen på din plats"
+>abstract="Samarbeta med webbplatsens utvecklingsteam för att installera loader-taggen på alla sidor på webbplatsen.<br><br>Slutförandetiden för den här aktiviteten beror till stor del på svarstiden för det tekniker som du arbetar med för att distribuera koden. Vissa organisationer som har mycket anpassningsbara teknikerteam kan slutföra det här steget på några dagar, medan konstruktionsteam med en lång eftersläpning av uppgifter kan ta en månad eller längre."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

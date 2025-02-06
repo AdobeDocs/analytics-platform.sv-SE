@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# Skapa en datavy i Customer Journey Analytics
+# Skapa en datavy i Customer Journey Analytics {#upgrade-create-dataview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataview"
+>title="Skapa en datavy i Customer Journey Analytics"
+>abstract="En datavy är en behållare som är specifik för Customer Journey Analytics och som gör att du kan avgöra hur data från en anslutning ska tolkas.<br><br>Det tar några minuter att skapa datavyn i början, men det kan ta flera dagar att konfigurera varje dimension och mätvärde med de önskade komponentinställningarna. Om du ändrar de här inställningarna tillämpas de retroaktivt, så att din organisation kan finjustera dem med tiden."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -56,4 +66,3 @@ Så här skapar du en datavy:
 1. När alla önskade inställningar har angetts väljer du **[!UICONTROL Save and finish]**.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-

@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
 
-# Lägg till logik för XDM-datainsamling i taggen
+# Lägg till logik för XDM-datainsamling i taggen {#upgrade-tag-xdm}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-xdm"
+>title="Lägg till logik för XDM-datainsamling i taggen"
+>abstract="Med inläsartaggen installerad på din plats kan du lägga till regler och dataelement för att fylla i ett XDM-objekt som ska skickas till Adobe. Adobe rekommenderar att du underhåller ett designdokument för lösningen för att spåra hur taggarna är konfigurerade.<br><br>Det här steget innehåller mycket arbete eftersom det handlar om att konfigurera all Analytics-logik för din egenskap. Förvänta dig att en månad eller längre ska dedikera rätt taggregler, testa dem och distribuera dem på din webbplats."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

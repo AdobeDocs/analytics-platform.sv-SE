@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
-source-git-commit: 701e3d3ce535318e3d3debcdcd591615ea9ca4a1
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
-# Använd Analytics-källkopplingen enbart för att uppgradera till Customer Journey Analytics
+# Använd Analytics-källkopplingen enbart för att uppgradera till Customer Journey Analytics {#use-source-connector-exclusively}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-exclusively"
+>title="Använd bara Analytics-källkopplingen"
+>abstract="(Rekommenderas inte) Du kan inte integrera med andra Adobe Experience Platform-tjänster eller flytta bort från Adobe Analytics med källkopplingen för Analytics. Om du vill testa data från andra källor måste du antagligen fästa ihop. Uppfyll alla dessa krav i enkäten för att välja det här alternativet."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
-# Välj schema för Customer Journey Analytics
+# Välj schema för Customer Journey Analytics {#choose-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-tailored"
+>title="Använd ett anpassat schema"
+>abstract="(Rekommenderas) Om du anpassar ditt schema kan din organisation bara spåra det du behöver och undvika de overheadkostnader som är kopplade till dumma och onödiga fält. Det här alternativet inkluderar fältgrupper som lagts till av Web SDK och fältgrupper som är anpassade efter din organisation."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-default"
+>title="Använd standardschemat"
+>abstract="(Rekommenderas inte) Adobe Analytics-schemat innehåller mer än tusen fält, vilket kan leda till rörigt och komplext schema. Din organisation skulle tvingas att fortsätta att följa konceptet med props och eVars, som är ett äldre koncept som inte används i Customer Journey Analytics. Det är svårare att integrera med andra Adobe Experience Platform-tjänster."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
@@ -40,7 +58,7 @@ Alternativet att använda ditt befintliga Adobe Analytics-schema med Customer Jo
 
 | Fördelar | Nackdelar |
 |----------|---------|
-| <p>Fördelarna med att använda Adobe Analytics-schemat är bland annat:</p><ul><li>Enkel uppgradering<p>Om du redan skickar data till Adobe Analytics med Adobe Experience Platform Web SDK kan du lägga till ytterligare en tjänst i ditt datastream för att skicka data till Adobe Experience Platform (som sedan kan användas i din Customer Journey Analytics-konfiguration).</p></li></ul> | <p>Nackdelar med att använda Adobe Analytics-schemat är:</p><ul><li>När du använder Adobe Analytics-schemat begränsas du inte i termer av hur det kan användas med andra plattformsprogram, men det resulterar i ett schema som är mer komplext än det annars skulle kunna vara. Detta beror på att Adobe Analytics-schemat innehåller många objekt som är specifika för Adobe Analytics och som sannolikt inte kommer att användas av din organisation.<p>När du behöver ändra schemat måste du gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></li></ul> |
+| <p>Fördelarna med att använda Adobe Analytics-schemat är bland annat:</p><ul><li>Enkel uppgradering<p>Om du redan skickar data till Adobe Analytics med Adobe Experience Platform Web SDK kan du lägga till ytterligare en tjänst i ditt datastam för att skicka data till Adobe Experience Platform (som sedan kan användas i din Customer Journey Analytics-konfiguration).</p></li></ul> | <p>Nackdelar med att använda Adobe Analytics-schemat är:</p><ul><li>När du använder Adobe Analytics-schemat begränsas du inte i termer av hur det kan användas med andra plattformsprogram, men det resulterar i ett schema som är mer komplext än det annars skulle kunna vara. Detta beror på att Adobe Analytics-schemat innehåller många objekt som är specifika för Adobe Analytics och som sannolikt inte kommer att användas av din organisation.<p>När du behöver ändra schemat måste du gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></li></ul> |
 
 
 

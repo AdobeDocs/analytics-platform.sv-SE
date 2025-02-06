@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
 
-# Skapa Analytics-källkopplingen och kartfälten
+# Skapa Analytics-källkopplingen och kartfälten {#create-source-connector}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create"
+>title="Skapa Analytics-källkopplingen"
+>abstract="Använd Analytics-källkopplingen för att importera rapportsvitsdata för användning i Customer Journey Analytics.<br><br>Det tar bara några minuter att skapa Analytics-källkopplingen med standardinställningarna."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-map-fields"
+>title="Skapa Analytics-källkopplingen och mappningsschemafält"
+>abstract="Källkopplingen måste kunna mappa Adobe Analytics-fält till organisationens schema. Använd det här gränssnittet för att ge källkopplingen den mappningen. Det här steget är en del av att lägga till historiska data i Customer Journey Analytics.<br><br>Den tid som det här steget tar beror på hur många dimensioner och mått du måste mappa. Det här steget är inte så svårt som det är omständligt och repetitivt. Datastream-mappningen förväntas ta ungefär en vecka att slutföra."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,13 +44,13 @@ ht-degree: 0%
 
 Du kan använda Analytics-källkopplingen för att hämta data från Adobe Analytics rapportsvit till Adobe Experience Platform. Dessa data kan sedan användas som historiska data i Customer Journey Analytics.
 
-I den här processen förutsätts att du vill [skapa ett anpassat schema som ska användas med Customer Journey Analytics Web SDK-implementeringen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som är anpassat efter behoven i din organisation och de specifika plattformsprogram som du använder.
+Den här processen förutsätter att du vill [skapa ett anpassat schema som ska användas med Customer Journey Analytics Web SDK-implementeringen](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som är anpassat efter behoven i din organisation och de plattformsspecifika program som du använder.
 
 Om du vill använda Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics måste du:
 
 1. [Skapa ett anpassat schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Om du inte redan har en Analytics-källanslutning skapar du Analytics-källkopplingen och mappar fält till ditt anpassade Web SDK-schema, enligt beskrivningen nedan.
+1. Om du inte redan har en Analytics-källanslutning skapar du Analytics-källkopplingen och mappar fälten till ditt anpassade Web SDK-schema enligt beskrivningen nedan.
 
    eller
 
@@ -92,6 +110,6 @@ Så här skapar du en Adobe Analytics-källanslutning som ska användas för his
 
    När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten. Dataflödet importerar upp till 13 månaders historiska data för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.
 
-   Om du använder Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics Web SDK-implementeringen måste du lägga till den automatiskt skapade datauppsättningen i anslutningen som du skapade för Web SDK-implementeringen.
+   Om du använder Analytics-källkopplingen för att hämta historiska data till din Customer Journey Analytics Web SDK-implementering måste du lägga till den automatiskt skapade datauppsättningen i anslutningen som du skapade för din Web SDK-implementering.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).

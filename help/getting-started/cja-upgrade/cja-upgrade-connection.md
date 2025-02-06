@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1589'
 ht-degree: 0%
 
 ---
 
-# Skapa och konfigurera en anslutning som ska användas med Customer Journey Analytics
+# Skapa och konfigurera en anslutning som ska användas med Customer Journey Analytics {#upgrade-create-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-connection"
+>title="Skapa en anslutning i Customer Journey Analytics"
+>abstract="Med en anslutning kan ni översätta data från Adobe Experience Platform till ett format som är optimerat för Customer Journey Analytics-rapportering. Det är enkelt att skapa en anslutning i Customer Journey Analytics, vilket tar bara några minuter."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -116,4 +126,3 @@ Du kan lägga till datauppsättningen Experience Platform när du skapar en ansl
    {style="table-layout:auto"}
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-

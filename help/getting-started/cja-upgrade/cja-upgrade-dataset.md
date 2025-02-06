@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
-# Skapa en datauppsättning som ska användas med Customer Journey Analytics
+# Skapa en datauppsättning som ska användas med Customer Journey Analytics {#upgrade-create-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-create"
+>title="Skapa en datauppsättning i Adobe Experience Platform"
+>abstract="En datauppsättning är en plats där insamlade data finns. Skapa den här platsen i Adobe Experience Platform.<br><br>Det tar bara några minuter att skapa en datauppsättning med ett schema i åtanke."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -58,4 +68,3 @@ Så här skapar du en datauppsättning:
    Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html). Du kan även lära dig hur du aktiverar en datauppsättning för kundprofil i realtid.
 
 1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
-

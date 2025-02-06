@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
-# Skapa ett härlett fält för marknadsföringskanal för Customer Journey Analytics
+# Skapa ett härlett fält för marknadsföringskanal för Customer Journey Analytics {#create-marketing-channel-derived-field}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-marketing-channel"
+>title="Skapa ett härlett fält för en marknadsföringskanal"
+>abstract="Härledda fält skapas i en datavy.<br><br>Det tar bara några minuter att använda en standardinställning för marknadsföringskanal. Det kan ta flera timmar att skapa en mycket anpassad inställning för marknadsföringskanaler."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

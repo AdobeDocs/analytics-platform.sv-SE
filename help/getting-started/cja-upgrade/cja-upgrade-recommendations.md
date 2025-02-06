@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
@@ -177,13 +177,11 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. Läs mer om stöd för [funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). De flesta Adobe Analytics-funktioner stöds i Customer Journey Analytics och många andra funktioner finns i Customer Journey Analytics.
 
-1. [Inaktivera datainsamling för AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md) när din Web SDK-implementering är klar och du känner dig trygg med de data du samlar in.
+1. Inaktivera Adobe Analytics när implementeringen av Customer Journey Analytics Web SDK är klar och du känner dig trygg med de data du samlar in.
 
-1. Inaktivera Analytics-källkopplingen när alla anslutningsdata för Analytics-källan har lämnat din datalagringsperiod.
+   Adobe rekommenderar att du håller Adobe Analytics-miljön igång under en tid efter att du har implementerat Customer Journey Analytics.
 
-   I och med implementeringen av Experience Platform Web SDK behövs bara Analytics-källkopplingen för historiska Adobe Analytics-data och för att jämföra data från den ursprungliga implementeringen med den nya implementeringen.
-
-   När ni har tillräckligt med historiska data från den nya implementeringen och känner till rapporteringsskillnaderna i Customer Journey Analytics bör ni inaktivera källkopplingen för Analytics.
+   Mer information om hur Adobe Analytics används under och efter en uppgradering, samt den föreslagna tidpunkten för inaktivering av Adobe Analytics, finns i [Utvärdera hur länge du behöver Adobe Analytics efter att du uppgraderat till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 ## Generera uppgraderingssteg dynamiskt för organisationen
 

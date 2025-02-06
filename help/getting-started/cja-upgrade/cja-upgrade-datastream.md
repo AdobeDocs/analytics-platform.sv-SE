@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
 
-# Skapa ett datastream som ska användas med Customer Journey Analytics
+# Skapa ett datastream som ska användas med Customer Journey Analytics {#upgrade-create-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-datastream-create"
+>title="Skapa ett datastream i Adobe Experience Platform"
+>abstract="En datastream är en mellanliggande plats som överför data till alla konfigurerade tjänster. Skapa den här platsen i Adobe Experience Platform.<br><br>Det tar bara några minuter att skapa en datastam i plattformsgränssnittet."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

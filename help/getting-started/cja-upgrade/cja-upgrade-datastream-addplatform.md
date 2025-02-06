@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
-# Lägg till plattform som en tjänst i ditt datastream
+# Lägg till plattform som en tjänst i ditt datastream {#upgrade-addplatform-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-addplatform-datastream"
+>title="Lägg till Adobe Experience Platform som en tjänst i datastream"
+>abstract="En datastream behöver en eller flera tjänster att skicka data till. Konfigurera Adobe Experience Platform som en tjänst i din datastream.<br><br>Det är en enkel process att lägga till tjänster i ett datastream. Det tar bara några minuter att slutföra."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

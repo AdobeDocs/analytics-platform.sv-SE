@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
 
-# Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen
+# Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen {#upgrade-source-connector-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-dataset"
+>title="Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen"
+>abstract="Nu när historiska data från Analytics-rapportsviten finns i Adobe Experience Platform kan du lägga till den datauppsättningen i din befintliga anslutning som du skapade när du konfigurerade Customer Journey Analytics först. När det här steget är klart är historiska data i Customer Journey Analytics tillgängliga.<br><br>Det är enkelt att lägga till en datauppsättning i en anslutning i Customer Journey Analytics, vilket tar bara några minuter."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -44,9 +53,9 @@ Om du vill använda Analytics-källkopplingen för att hämta historiska data ti
 
 När du [har skapat en Analytics-källkoppling för historiska data](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md) skapas en datauppsättning automatiskt för Analytics-data.
 
-Du måste lägga till den här automatiskt skapade datauppsättningen i samma anslutning som du skapade för Web SDK-implementeringen. Om du gör det placeras Analytics-data i samma datavy i Customer Journey Analytics som dina Web SDK-data.
+Du måste lägga till den här automatiskt skapade datauppsättningen i samma anslutning som du skapade för din Web SDK-implementering. När du gör det placeras Analytics-data i samma datavy i Customer Journey Analytics som era Web SDK-data.
 
-Så här lägger du till den automatiskt skapade datauppsättningen i samma anslutning som du skapade för Web SDK-implementeringen:
+Så här lägger du till den automatiskt skapade datauppsättningen i samma anslutning som du skapade för din Web SDK-implementering:
 
 1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Connections]**.
 
@@ -93,7 +102,7 @@ Så här lägger du till den automatiskt skapade datauppsättningen i samma ansl
 
    * Välj ett slutdatum som är samma datum som när du började samla in data med Web SDK-implementeringen.
 
-   * Välj ett slutdatum som ligger kort efter det datum då du först började samla in data med Web SDK-implementeringen och använd sedan datavysegment för att filtrera bort överlappande data.
+   * Välj ett slutdatum som ligger kort efter det datum då du började samla in data med Web SDK-implementeringen och använd sedan datavysegment för att filtrera bort överlappande data.
 
    * Välj ett slutdatum som ger en större överlappning av data och använd sedan datavysegment för att filtrera bort överlappande data.
 

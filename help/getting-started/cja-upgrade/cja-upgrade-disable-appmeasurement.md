@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
 
-# Inaktivera insamling av AppMeasurement
+# Inaktivera insamling av AppMeasurement {#disable-appmeasurement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-appmeasurement"
+>title="Inaktivera insamling av AppMeasurement"
+>abstract="Med Web SDK-data i full funktionalitet kan du samarbeta med ditt utvecklarteam för att ta bort AppMeasurement.js från din webbplats eller egendom.<br><br>Det tar bara några minuter att ta bort AppMeasurement från en webbplats, men det tar tid för teknikteamet att slutföra åtgärden. Se dock till att era Analytics-användare använder Customer Journey Analytics och inte Adobe Analytics. Den här meddelandeprocessen för att flytta alla kan ta betydligt längre tid om ni inte redan har gjort det."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,5 +36,3 @@ ht-degree: 0%
 * **Taggar:** Inaktivera Adobe Analytics-tillägget
 
 * **AppMeasurment:** Ersätt AppMeasurement.js-biblioteket s=newobject
-
-

@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1460cbd05cce793b25d026c413744508ab951147
+source-git-commit: 8d14bb23283107402332106df36e8f7898ea5d30
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '437'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 1%
 > 
 >Använd informationen på den här sidan när du besvarar frågor i checklistan för uppgradering av [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
-I följande lista visas endast de funktioner som finns med i checklistan för uppgradering av [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/). En omfattande lista som visar vilka Adobe Analytics-funktioner som stöds, stöds delvis eller inte stöds i Customer Journey Analytics finns i [Funktionsstöd för Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
+I följande lista visas endast de Adobe Analytics-funktioner som behöver övervägas under uppgraderingsprocessen för Customer Journey Analytics. En omfattande lista som visar vilka Adobe Analytics-funktioner som stöds, stöds delvis eller inte alls i Customer Journey Analytics finns i [Funktionsstöd för Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 Ta en titt på vilka av följande Adobe Analytics-funktioner du vill fortsätta använda när du uppgraderar till Customer Journey Analytics:
 
