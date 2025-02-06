@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 408773de0fd157edf0cd7b8edc8a8873eff00eb0
+source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
 workflow-type: tm+mt
 source-wordcount: '2389'
 ht-degree: 0%
@@ -122,7 +122,8 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 
 +++**Vilka är gränserna för inmatning av tidigare eller framtida datum/tidsstämplar i datauppsättningar för händelser i Customer Journey Analytics?**
 
-<ul><li>Gällande tidigare datum/tidsstämplar: Händelsedata upp till tio år gamla.</li><li>Angående framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.</li></ul>
+* Gällande tidigare datum/tidsstämplar: Händelsedata upp till tio år gamla.
+* Angående framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.
 
 +++
 
@@ -130,13 +131,17 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 ## 4. Svarstidsfrågor {#latency}
 
 >[!NOTE]
+>
 >Det finns ingen fast datastorlek i Customer Journey Analytics och därför kan Adobe inte binda sig till en standardintag. Adobe arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
 
-<ul><li>Live-data eller händelser: bearbetas och hämtas inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek &gt; 50 miljoner rader: längre än 90 minuter.) Om sömnad är aktiverat kan intag ta upp till 3,25 timmar.<p>Mer information finns i [skyddsutkast](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails).</li><li>Små backfillar: inom sju dagar<li>Stora backfillar: inom 30 dagar</li></ul>
+* Live-data eller händelser: bearbetas och hämtas inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.) Om sömnad är aktiverat kan intag ta upp till 3,25 timmar. Mer information finns i [skyddsutkast](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails).
+* Små backfillar: inom sju dagar
+* Stora backfillar: inom 30 dagar
 
 Adobe har nyligen ändrat hur data behandlas i Customer Journey Analytics:
 
-<ul><li>Händelsedata för"aktuell" dag direktuppspelas som livedata. Alla data med en händelsetid före klockan 11 :59:59:00 (23:59:59) föregående dag behandlas som en bakåtfyllnad.</li><li>Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.</li></ul>
+* Händelsedata för&quot;aktuell&quot; dag direktuppspelas som livedata. Alla data med en händelsetid före klockan 11 :59:59:00 (23:59:59) föregående dag behandlas som en bakåtfyllnad.
+* Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
