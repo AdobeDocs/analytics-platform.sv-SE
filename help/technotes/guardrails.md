@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2dd215b0fe689c9370e9f5867fd1bd5fdee83d42
+source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 5%
@@ -236,7 +236,7 @@ Se även Experience Platform [Datauppsättningsexportstödlinjer](https://experi
 | Inmatning av data i datasjön från Edge Network eller inmatning av strömning | &lt; 60 minuter |
 | Datainmatning i datasjön från Adobe Analytics Source Connector | &lt; 2,25 timmar |
 | Dataintag i Customer Journey Analytics från datasjön | &lt; 90 minuter |
-| Stitching (valfri funktion; se [Stitching overview](../stitching/overview.md) för mer information) | 4 timmar |
+| Stitching (valfri funktion; se [Stitching overview](../stitching/overview.md) för mer information) | &lt; 4 timmar |
 | Adobe Analytics Source Connector Backfill på mindre än 10 miljarder händelser (maximalt 13 månaders historiska data) | &lt; 4 veckor |
 | Audience Publishing till kundprofil i realtid, inklusive automatisk generering av direktuppspelningssegmentet, så att segmentet kan vara klart att ta emot data. | cirka 60 minuter |
 | Uppdatera frekvens för målgrupper | Engångsuppdatering: fördröjning på mindre än 5 minuter.<br/>Uppdatera var 4:e timme, varje dag, varje vecka, varje månad (fördröjningen går hand i hand med uppdateringsfrekvensen). |
