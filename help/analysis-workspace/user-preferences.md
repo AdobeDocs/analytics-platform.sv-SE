@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3387'
 ht-degree: 0%
 
 ---
@@ -138,6 +138,17 @@ Vissa av dessa inställningar kan även anpassas för enskilda projekt i Analysi
 >abstract="Om du väljer **[!UICONTROL Show forecast]** prognostiseras automatiskt den första måttkolumnen som läggs till i en tidsserie visualisering av friformstabell."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulttablemetric"
+>title="Standardtabellmått"
+>abstract="Välj det standardmått eller den standardbehållare som ska användas för frihandstabeller. Om den markerade datavyn inte innehåller det valda standardmåttet eller den valda standardbehållaren växlar tabellen automatiskt till ett annat primärt mått."
+
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Du kan anpassa inställningarna för frihandstabeller för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
