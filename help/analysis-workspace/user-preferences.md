@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '3387'
+source-wordcount: '3451'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Vissa av dessa inställningar kan även anpassas för enskilda projekt i Analysi
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="Standardtabellmått"
->abstract="Välj det standardmått eller den standardbehållare som ska användas för frihandstabeller. Om den markerade datavyn inte innehåller det valda standardmåttet eller den valda standardbehållaren växlar tabellen automatiskt till ett annat primärt mått."
+>abstract="Välj standardmåttet som ska användas för frihandstabeller. Om den markerade datavyn inte innehåller det valda standardmåttet växlar tabellen automatiskt till ett annat primärt mått."
 
 
 <!-- markdownlint-enable MD034 -->
@@ -181,7 +181,17 @@ Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext
 | | Procentberäkning | <ul><li>Kolumn</li><li>Rad</li></ul> |
 | | Kolumnsummor (endast statiska rader) | <ul><li>Visa summan av rader: Visar summan av enskilda radobjekt </li><li>Visa totalsumma: visar den borttagna dubblettsumman av rader.</li></ul> |
 
-### Visualiseringsinställningar
+### Visualiseringsinställningar {#visalization-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultflowcontainer"
+>title="Standardtabellmått"
+>abstract="Välj standardbehållaren som ska användas för Flödesvisualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar flödesvisualiseringen automatiskt till en annan primär behållare."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultfalloutcontainer"
+>title="Standardtabellmått"
+>abstract="Välj standardbehållaren som ska användas för bortfallsvisualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar utfallsvisualiseringen automatiskt till en annan primär behållare."
 
 Du kan uppdatera visualiseringsinställningarna för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 

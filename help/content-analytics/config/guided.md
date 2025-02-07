@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
+source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1614'
 ht-degree: 1%
 
 ---
@@ -283,3 +283,9 @@ När du har skapat eller redigerat en konfiguration är följande åtgärder til
       1. Om Web SDK inte är konfigurerat för taggegenskapen skapas en ny Web SDK-konfiguration som endast skickar Content Analytics-händelser.
       1. Om Web SDK är konfigurerat för den här taggegenskapen görs inga ändringar i den befintliga Web SDK-konfigurationen.
 * **[!UICONTROL Save]**: Ändringar som görs i en implementerad konfiguration sparas och implementeringen uppdateras.
+* **[!UICONTROL Exit]**. Avslutar den guidade konfigurationen. Alla ändringar som görs i en implementerad konfiguration ignoreras.
+
+>[!MORELIKETHIS]
+>
+>[Manuell konfiguration av innehållsanalys](manual.md)
+>

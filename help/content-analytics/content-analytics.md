@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,5 +68,5 @@ I Content Analytics används webbbildvisningsdata som samlats in i händelsedata
 
 >[!MORELIKETHIS]
 >
->[Använd innehållsanalys (t.b.d.)](#value)
+>[Rapporter om innehållsanalys](#report/report.md)
 >[Konfigurera innehållsanalys](config/configuration.md)
