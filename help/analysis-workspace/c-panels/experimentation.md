@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: dbf0ef92069778f6c805fa4315864b2c2c4a6622
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2139'
 ht-degree: 0%
 
 ---
@@ -189,3 +189,7 @@ Beräknade mätvärden som inte är kompatibla med panelen Experimentation har v
 ## Använda beräknade värden på panelen Experimentera
 
 I det här blogginlägget finns information om [hur du använder beräknade värden på panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+
+>[!MORELIKETHIS]
+>[Mastering Adobe Customer Journey Analytics Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>
