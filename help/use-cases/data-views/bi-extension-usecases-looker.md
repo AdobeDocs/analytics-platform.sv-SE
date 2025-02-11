@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 3930b3dd1ba4e058f1a89308dbd0ccec57208359
+source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
 workflow-type: tm+mt
-source-wordcount: '10355'
+source-wordcount: '10356'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
          1. Namnge projektet i **[!UICONTROL Create a new LookML Project for this model]**. För `example: example_looker_project`.
          1. Välj **[!UICONTROL Next]**.
       1. I **[!UICONTROL ➋ Select Tables]**:
-         1. Välj **[!UICONTROL public]** och kontrollera sedan att datavyn för Customer Journey Analytics är markerad. Till exempel: ![Markering](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**.
+         1. Välj **[!UICONTROL public]** och kontrollera sedan att datavyn för Customer Journey Analytics är markerad. Till exempel: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
          1. Välj **[!UICONTROL Next]**.
       1. I **[!UICONTROL ➌ Select Primary Keys]**:
          1. Välj **[!UICONTROL Next]**.
@@ -244,7 +244,7 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
          1. Se till att du väljer vyn. Till exempel: **[!UICONTROL cc_data_view.view]**.
          1. Välj **[!UICONTROL Next]**.
       1. I **[!UICONTROL ➎ Enter Model Name]**:
-         1. Ge modellen ett namn. Till exempel: `example_looker_mode`l.
+         1. Ge modellen ett namn. Till exempel: `example_looker_model`.
       1. Välj **[!UICONTROL Complete and Explore Data]**.
 
    Du omdirigeras till **[!UICONTROL Explore]**-gränssnittet för Looker, redo att utforska data.
@@ -258,8 +258,8 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
 | Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Rekommenderat alternativ att använda!** |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Fel när Looker visas: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Rekommenderat alternativ för**. Obs! `%3FFLATTEN` är en URL-kodad version av `?FLATTEN`. |
 
 ### Mer information
 
