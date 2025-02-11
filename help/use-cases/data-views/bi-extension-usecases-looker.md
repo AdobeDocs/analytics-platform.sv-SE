@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 676f6c83bcf35f8da1a07841c043e1b56c57baf6
+source-git-commit: 3930b3dd1ba4e058f1a89308dbd0ccec57208359
 workflow-type: tm+mt
-source-wordcount: '10346'
+source-wordcount: '10355'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,7 @@ I den här artikeln beskrivs hur du slutför ett antal användningsfall med Cust
 
 * **Power BI Desktop**. Den version som används är 2.137.1102.0 (64 bitar) (oktober 2024).
 * **Skrivbord för surfplatta**. Den version som används är 2024.1.5 (20241.24.0705.0334), 64 bitar.
+* **Looker**. Online version 25.0.23, tillgänglig via [looker.com](https://looker.com){target="_blank"}
 
 Följande användningsfall dokumenteras:
 
@@ -208,7 +209,7 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
    1. Välj **[!UICONTROL Add Connection]**.
    1. I **[!UICONTROL Connect your database to Looker screen]**.
 
-      ![Looker Connect to database](assets/looker-connect.png)
+      ![Looker Connect to database](assets/looker-connect.png){zoomable="yes"}
 
       1. Ange en **[!UICONTROL Name]** för din anslutning, till exempel `Example Looker Connection`.
       1. Kontrollera att **[!UICONTROL All Projects]** är markerat som **[!UICONTROL Connection Scope]**.
@@ -370,7 +371,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Från avsnittet **[!UICONTROL Cc Data View]** i den vänstra listen,
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Date]** i listan med **[!UICONTROL DIMENSIONS]**.
@@ -380,7 +381,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Sökresultat, daglig trend](assets/uc2-looker-result.png)
+![Sökresultat, daglig trend](assets/uc2-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -460,7 +461,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/01/02]**.
 1. Från avsnittet **[!UICONTROL Cc Data View]** i den vänstra listen,
    1. Välj **[!UICONTROL ‣ Daterangehour Date]** och sedan **[!UICONTROL Time]** i listan med **[!UICONTROL DIMENSIONS]**.
@@ -470,7 +471,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Sökresultat, daglig trend](assets/uc3-looker-result.png)
+![Sökresultat, daglig trend](assets/uc3-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -579,7 +580,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Från vänster **[!UICONTROL Cc Data View]**-räl,
    1. Välj **[!UICONTROL ‣ Daterangemonth Date]** och sedan **[!UICONTROL Month]** i listan med **[!UICONTROL DIMENSIONS]**.
@@ -589,7 +590,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Sökresultat, daglig trend](assets/uc4-looker-result.png)
+![Sökresultat, daglig trend](assets/uc4-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -731,7 +732,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Välj **[!UICONTROL Product Name]** i avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen.
 1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
@@ -742,7 +743,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Purchase Revenue`.
       1. Välj fliken **[!UICONTROL Field details]**.
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
-         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png)
+         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Välj **[!UICONTROL Save]**.
    1. Välj **[!UICONTROL Custom Measure]** en gång till i listrutan **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
       1. Välj **[!UICONTROL Purchases]** i listrutan **[!UICONTROL Field to measure]**.
@@ -762,12 +763,12 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
    1. Bläddra ned för att se **[!UICONTROL Purchases]** och ändra **[!UICONTROL Type]** till **[!UICONTROL Line]**.
    1. Välj fliken **[!UICONTROL Y]**.
    1. Dra **[!UICONTROL Purchases]** från behållaren **[!UICONTROL Left 1]** till den plats där den läser **[!UICONTROL *Dra serien hit för att skapa en ny vänsteraxel *]**. Den här åtgärden skapar en **[!UICONTROL Left 2]**-behållare.
-      ![Söker i visualiseringskonfiguration](assets/uc5-looker-visualization.png)
+      ![Söker i visualiseringskonfiguration](assets/uc5-looker-visualization.png){zoomable="yes"}
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) bredvid **[!UICONTROL Edit]** för att dölja popup-dialogrutan
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Sökresultat, daglig trend](assets/uc5-looker-result.png)
+![Sökresultat, daglig trend](assets/uc5-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -936,7 +937,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
    1. Välj **[!UICONTROL Product Category]**.
@@ -949,7 +950,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchase Revenue`.
       1. Välj fliken **[!UICONTROL Field details]**.
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
-         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png)
+         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Välj **[!UICONTROL Save]**.
    1. Välj **[!UICONTROL Custom Measure]** en gång till i listrutan **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
       1. Välj **[!UICONTROL Purchases]** i listrutan **[!UICONTROL Field to measure]**.
@@ -968,14 +969,14 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
    1. Rulla ned och välj **[!UICONTROL Edit Chart Config]**.
    1. Ändra JSON i **[!UICONTROL Chart Config (Override)]** som i skärmbilden nedan och välj sedan **[!UICONTROL Preview]**.
 
-      ![Looker-serialiseringskonfiguration](assets/uc6-looker-visualization.png)
+      ![Looker-serialiseringskonfiguration](assets/uc6-looker-visualization.png){zoomable="yes"}
 
    1. Välj **[!UICONTROL Apply]**.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) bredvid **[!UICONTROL Edit]** för att dölja popup-dialogrutan
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Sökresultat, daglig trend](assets/uc6-looker-result.png)
+![Sökresultat, daglig trend](assets/uc6-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1097,18 +1098,18 @@ Du kan också använda funktionen för att räkna distinkt från skrivbordet i T
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
    1. Välj **[!UICONTROL Daterange Date]** och sedan **[!UICONTROL Date]**.
    1. Välj **[!UICONTROL Aggregate ‣ Count Distinct]** på snabbmenyn **⋮ mer** på **[!UICONTROL Product Name]**.
-      ![Sök produktnamn, snabbmeny](assets/uc7-looker-count-distinct.png)
+      ![Sök produktnamn, snabbmeny](assets/uc7-looker-count-distinct.png){zoomable="yes"}
 1. Välj **[!UICONTROL Run]**.
 1. Välj **[!UICONTROL ‣ Visualization]** och välj 6︎⃣ i verktygsfältet för att visa visualisering av ett enstaka värde.
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Distinkt antal sökare](assets/uc7-looker-result.png)
+![Distinkt antal sökare](assets/uc7-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1193,7 +1194,7 @@ Observera hur datumintervallet som definieras i visualiseringen av frihandstabel
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Distinkt antal sökare](assets/uc8-looker-result.png)
+![Distinkt antal sökare](assets/uc8-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1276,7 +1277,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]** om du vill lägga till ytterligare ett filter.
 1. I dialogrutan **[!UICONTROL Add Filter]**:
@@ -1292,7 +1293,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Distinkt antal sökare](assets/uc9-looker-result.png)
+![Distinkt antal sökare](assets/uc9-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1378,7 +1379,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]** om du vill lägga till ytterligare ett filter.
 1. I dialogrutan **[!UICONTROL Add Filter]**:
@@ -1393,7 +1394,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 Du bör se en liknande tabell som nedan.
 
-![Distinkt antal sökare](assets/uc10-looker-result.png)
+![Distinkt antal sökare](assets/uc10-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1571,7 +1572,7 @@ GROUP BY 1
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Välj **[!UICONTROL Product Name]** i avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen.
 1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
@@ -1582,7 +1583,7 @@ GROUP BY 1
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchase Revenue`.
       1. Välj fliken **[!UICONTROL Field details]**.
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
-         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png)
+         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Välj **[!UICONTROL Save]**.
 1. Se till att du väljer **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) i kolumnen **[!UICONTROL Purchase Revenue]**.
 1. Välj **[!UICONTROL Run]**.
@@ -1590,7 +1591,7 @@ GROUP BY 1
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Distinkt antal sökare](assets/uc11-looker-result.png)
+![Distinkt antal sökare](assets/uc11-looker-result.png){zoomable="yes"}
 
 
 Frågan som genereras av Looker med BI-tillägget inkluderar `ORDER BY`, vilket betyder att sorteringen utförs med Looker och BI-tillägget.
@@ -1808,7 +1809,7 @@ GROUP BY 1
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-      ![Looker-filter](assets/uc2-looker-filter.png)
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
    1. Välj **[!UICONTROL Product Name]**.
@@ -1820,7 +1821,7 @@ GROUP BY 1
 
 En visualisering och en tabell som liknar den visas nedan.
 
-![Distinkt antal sökare](assets/uc12-looker-result.png)
+![Distinkt antal sökare](assets/uc12-looker-result.png){zoomable="yes"}
 
 Frågan som genereras av Looker med BI-tillägget inkluderar `FETCH NEXT 5 ROWS ONLY`, vilket innebär att gränsen körs via Looker och BI-tillägget.
 
@@ -2012,13 +2013,13 @@ Looker tillhandahåller anpassade omformningsfunktioner med hjälp av anpassade 
 1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
    1. Välj **[!UICONTROL Custom Dimension]** i listrutan **[!UICONTROL + Add]**.
    1. Ange `lower(${cc_data_view.product_name})` i textområdet **[!UICONTROL Expression]**. Du får hjälp med rätt syntax när du börjar skriva `Product Name`.
-      ![Exempel på sökomformning](assets/uc14-looker-transformation.png)
+      ![Exempel på sökomformning](assets/uc14-looker-transformation.png){zoomable="yes"}
    1. Ange `product name` som **[!UICONTROL Name]**.
    1. Välj **[!UICONTROL Save]**.
 
 Du bör se en liknande tabell som nedan.
 
-![Sökomformningsresultat](assets/uc14-looker-result.png)
+![Sökomformningsresultat](assets/uc14-looker-result.png){zoomable="yes"}
 
 
 Den anpassade omvandlingen resulterar i en uppdatering av SQL-frågor. Se hur funktionen `LOWER` används i SQL-exemplet nedan:
