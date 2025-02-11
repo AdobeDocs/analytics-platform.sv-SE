@@ -7,7 +7,7 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
+source-git-commit: e29b22fe7ba78faa5d4d169f1ff755b0ca488f8e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -64,9 +64,9 @@ I Content Analytics används webbbildvisningsdata som samlats in i händelsedata
 1. Vid granskningen samlas specifika innehållsanalysdata in via en korrekt konfiguration av Experience Platform Web SDK och Experience Platform Edge Network. Och sedan skickas data till en dedikerad datauppsättning för innehållsanalys och relevanta uppslagsdatauppsättningar.
 1. Tjänsten för funktionssammansättning och identitetstjänsten bearbetar granskade data.
 1. Resultaten av dessa tjänster (komponenter, attribut och identiteter) används för att uppdatera relevanta data för innehållsanalys i Experience Platform.
-1. Data från innehållsanalysen, tillsammans med beteendedata och andra uppslagsdatauppsättningar, kan sedan användas i en Customer Journey Analytics-konfiguration (Connection, Data view och Workspace). Denna konfiguration utgör grunden för de unika insikterna på makronivå om ditt innehåll.
+1. Informationen i innehållsanalysen, tillsammans med beteendedata och andra uppslagsdatauppsättningar, kan sedan användas i en Customer Journey Analytics-konfiguration (Connection, Data view och Workspace). Denna konfiguration utgör grunden för de unika insikterna på makronivå om ditt innehåll.
 
 >[!MORELIKETHIS]
 >
->[Rapporter om innehållsanalys](#report/report.md)
+>[Rapporter om innehållsanalys](report/report.md)
 >[Konfigurera innehållsanalys](config/configuration.md)

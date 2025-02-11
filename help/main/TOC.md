@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+source-git-commit: f8b984d2b429c731608b9774b44acea75ff1dfc7
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1134'
 ht-degree: 10%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 10%
       + [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Använd Analytics-källkopplingen exklusivt](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
       + [Gå från Analytics-källkopplingen till Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-      + [Inaktivera insamling av AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+      + [Inaktivera AppMeasurement datainsamling](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + [Uppgradera från en analyslösning från tredje part](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
       + [Funktionssupport för Adobe Analytics vid uppgradering](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
       + [Adobe Analytics under och efter en uppgradering](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
@@ -290,7 +290,7 @@ ht-degree: 10%
       + [Skapa och publicera målgrupper](../components/audiences/publish.md)
       + [Hantera målgrupper](../components/audiences/manage.md)
    + Dimensioner {#dimensions}
-      + [Översikt över Dimensioner](../components/dimensions/overview.md)
+      + [Översikt över dimensioner](../components/dimensions/overview.md)
       + [Förhandsvisa dimensioner](../components/dimensions/view-dimensions.md)
       + [Dela upp dimensioner](../components/dimensions/t-breakdown-fa.md)
       + [Tidsdelningsdimensioner](../components/dimensions/time-parting-dimensions.md)
@@ -359,17 +359,17 @@ ht-degree: 10%
 
 + Report Builder {#cja-reportbuilder}
    + [Översikt](../report-builder/report-buider-overview.md)
-   + [Konfigurera Report Builder](../report-builder/report-builder-setup.md)
+   + [Report Builder Setup](../report-builder/report-builder-setup.md)
    + [Skapa ett datablock](../report-builder/create-a-data-block.md)
    + [Report Builder Hub](../report-builder/report-builder-hub.md)
    + [Välj en datavy](../report-builder/select-data-view.md)
    + [Välj ett datumintervall](../report-builder/select-date-range.md)
    + [Arbeta med filter](../report-builder/work-with-filters.md)
-   + [Filtrera Dimensioner](../report-builder/filter-dimensions.md)
+   + [Filterdimensioner](../report-builder/filter-dimensions.md)
    + [Hantera datablock](../report-builder/manage-reportbuilder.md)
    + [Schemalägg arbetsböcker](../report-builder/schedule-reportbuilder.md)
    + [Begränsade etiketter](../report-builder/restricted-labels.md)
-   + [Inställningar för Report Builder](../report-builder/report-builder-settings.md)
+   + [Report Builder-inställningar](../report-builder/report-builder-settings.md)
 
 + Rapporteringsaktivitetshanteraren {#reporting-activity-manager}
    + [Översikt](../reporting-activity-manager/reporting-activity-overview.md)
@@ -398,20 +398,21 @@ ht-degree: 10%
    + [Kundhanterade nycklar](../privacy/cmk.md)
 
 + Användningsexempel {#cja-usecases}
-   + [Användningsexempel i Customer Journey Analytics](../use-cases/cja-usecases.md)
-   + Google Analytics data {#ga}
+   + [Användningsexempel för Customer Journey Analytics](../use-cases/cja-usecases.md)
+   + Google Analytics-data {#ga}
       + [Migrera data från Google Analytics](../use-cases/ga/overview.md)
-      + [Ingest Google Analytics historiska data](../use-cases/ga/backfill.md)
-      + [Konfigurera Google Analytics-data för direktuppspelning](../use-cases/ga/streaming.md)
-      + [Rapport om Google Analytics data](../use-cases/ga/report.md)
+      + [Ingest Google Analytics history data](../use-cases/ga/backfill.md)
+      + [Konfigurera strömmande Google Analytics-data](../use-cases/ga/streaming.md)
+      + [Rapport om Google Analytics-data](../use-cases/ga/report.md)
    + Inläsning av data {#data-ingestion}
-      + [Importera och använda data från Marketo Engage](../use-cases/data-ingestion/marketo.md)
-      + [Engagera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Importera och använda Marketo Engage-data](../use-cases/data-ingestion/marketo.md)
+      + [Importera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datavyer {#data-views}
       + [Datavyer använder exempel](/help/use-cases/data-views/data-views-usecases.md)
       + [Använd bindningsdimensioner och mätvärden](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md)
       + [Användningsexempel för BI-tillägg](/help/use-cases/data-views/bi-extension-usecases.md)
+      + [Användningsexempel för BI-tillägg (Looker)](/help/use-cases/data-views/bi-extension-usecases-looker.md)
    + Dataexport {#data-export}
       + [Översikt](../use-cases/data-export/overview.md)
       + [BI-tillägg](../use-cases/data-export/bi-extension.md)
