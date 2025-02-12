@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: e29b22fe7ba78faa5d4d169f1ff755b0ca488f8e
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ This is a placeholder article for upcoming Content Analytics documentation. Curr
 
 {#release-limited-testing}
 
-Med Content Analytics kan marknadsförarna förstå hur innehåll påverkar de nyckeltal som ett företag har definierat. Förutom de traditionella mikronivåbaserade funktionerna för att testa delar av innehåll (till exempel A/B-tester) ger Content Analytics insikter om hur innehåll påverkar på makronivå. Ger kunderna bättre respons på en viss ton röst, en viss färgpall eller specifika teman?
+Med Content Analytics kan marknadsförarna förstå hur innehåll påverkar de nyckeltal som ett företag har definierat. Förutom beteendedata samlar Content Analytics in data om hur innehåll konsumeras och hur innehåll påverkar. Ger kunderna bättre respons på en viss ton röst, en viss färgpall eller specifika teman? Denna information, tillsammans med specifikt utformade arbetsflöden och mallar för rapportering, kan hjälpa er att utföra ännu bättre analyser och få djupare insikter om kundresedata i Customer Journey Analytics.
 
 I Content Analytics används en AI- och maskininlärningsbaserad **funktionstjänst** för att dela upp innehåll i komponenter och attribut. Genom att skapa en strukturerad metadataprofil för allt innehåll kan du analysera vilket innehåll och vilka attribut som detta innehåll ger affärsresultat.
 
-Förutom att skapa den här strukturerade metadataprofilen innehåller Content Analytics en **identitetstjänst** som identifierar resurser och upplevelser med en enda identifierare. Identitetstjänsten förstår om en resurs har ändrat storlek, beskurits eller sparats i ett annat filformat. Tjänsten tilldelar alla varianter av den tillgången till samma identifierare. Därför gör identitetstjänsten att du kan sammanställa en tillgångs prestanda baserat på dess olika former och placeringar.
+Förutom att skapa den här strukturerade metadataprofilen innehåller Content Analytics en **identitetstjänst** som identifierar resurser och upplevelser med en enda identifierare. Identitetstjänsten känner igen när exakt samma resurs visas på mer än ett ställe. När det inträffar behandlas de två instanserna av resurser som samma, vilket ger en mer helhetsbild av innehållets användning och konsumtion.
 
 ## Värde
 
@@ -59,9 +59,7 @@ I Content Analytics används webbbildvisningsdata som samlats in i händelsedata
 ![Innehållsanalys - Så fungerar det](assets/how-it-works.png)
 
 
-1. Identifieringsdelen av funktionstjänsten aktiveras när en ny ögonblicksbild av data hämtas från en händelsedatamängd som är aktiverad för Content Analytics.
-1. Tjänsten för funktionsidentifiering avgör vilka data i ögonblicksbilden som är relevanta för innehållsanalys och granskar upplevelsen och resurserna i dessa webbilder.
-1. Vid granskningen samlas specifika innehållsanalysdata in via en korrekt konfiguration av Experience Platform Web SDK och Experience Platform Edge Network. Och sedan skickas data till en dedikerad datauppsättning för innehållsanalys och relevanta uppslagsdatauppsättningar.
+1. När en användare besöker en webbplats registrerar Experience Plarform Web SDK, som är konfigurerad för innehållsanalys, interaktion med innehåll.
 1. Tjänsten för funktionssammansättning och identitetstjänsten bearbetar granskade data.
 1. Resultaten av dessa tjänster (komponenter, attribut och identiteter) används för att uppdatera relevanta data för innehållsanalys i Experience Platform.
 1. Informationen i innehållsanalysen, tillsammans med beteendedata och andra uppslagsdatauppsättningar, kan sedan användas i en Customer Journey Analytics-konfiguration (Connection, Data view och Workspace). Denna konfiguration utgör grunden för de unika insikterna på makronivå om ditt innehåll.

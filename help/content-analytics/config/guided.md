@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1755'
 ht-degree: 1%
 
 ---
@@ -21,9 +21,14 @@ ht-degree: 1%
 >Den här artikeln är ett preliminärt inofficiellt utkast till en kommande slutversion och ingår i Content Analytics-dokumentationen. Allt innehåll kan ändras och inga rättsliga skyldigheter kan härledas från den aktuella versionen av den här artikeln.
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 Med den guidade konfigurationen kan du konfigurera innehållsanalyser snabbt och enkelt. I den guidade konfigurationen används en guide för att konfigurera kraven för att konfigurera Content Analytics automatiskt för din organisation. På skärmen **[!UICONTROL Configuration]** kan du antingen skapa en ny konfiguration eller redigera en befintlig konfiguration.
+
+>[!IMPORTANT]
+>
+>Du kan bara ha en Content Analytics-konfiguration per sandlåda i organisationen.
+
 
 Få åtkomst till konfigurationen för innehållsanalys
 
@@ -92,7 +97,7 @@ Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Datavy"
->abstract="Välj en befintlig datavy från Customer Journey Analytics som du vill sammanfoga innehållsanalysdata med."
+>abstract="Välj en befintlig datavy från Customer Journey Analytics som du vill sammanfoga dina innehållsanalysdata med."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -116,7 +121,7 @@ Om du redigerar en befintlig konfiguration visas endast datavyer som är tillgä
    * Om du vill definiera vilka kolumner som ska visas i tabellen väljer du ![Kolumninställningar](/help/assets/icons/ColumnSetting.svg). Välj vilka kolumner som ska visas i dialogrutan **[!UICONTROL Customize table]** och välj **[!UICONTROL Apply]** för att tillämpa ändringarna.
 1. Välj **[!UICONTROL Save]** för att bekräfta den valda datavyn. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 
-En datavy är kopplad till en [anslutning](/help/connections/overview.md) i Customer Journey Analytics. Och en Connection är baserad på en sandlåda i organisationen. När du har sparat konfigurationen fylls **[!UICONTROL Sandbox]** automatiskt i med rätt namn på sandlådan, baserat på den valda datavyn.
+En datavy är kopplad till en Customer Journey Analytics [Connection](/help/connections/overview.md). Och en Connection är baserad på en sandlåda i organisationen. När du har sparat konfigurationen fylls **[!UICONTROL Sandbox]** automatiskt i med rätt namn på sandlådan, baserat på den valda datavyn.
 
 
 ### Upplevelsehantering och -definition {#onboarding-experiences}
@@ -141,13 +146,15 @@ En datavy är kopplad till en [anslutning](/help/connections/overview.md) i Cust
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_edit_button"
 >title="Upplevelsehantering och -definition"
->abstract="Du kan redigera inställningarna i tillägget Adobe Content Analytics i taggegenskapen som är kopplad till den markerade konfigurationen."
+>abstract="Du kan redigera inställningarna i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
 
 
 
 <!-- markdownlint-enable MD034 -->
 
-I det här avsnittet kan du välja att inkludera upplevelser i de data som du samlar in med Content Analytics. En upplevelse är all text på en webbsida som är reproducerbar med den URL som den första användaren använder när han/hon besöker den webbsidan. När du väljer det här alternativet måste du definiera för vilka URL-adresser som du vill inkludera upplevelser.
+I det här avsnittet kan du välja att inkludera upplevelser i de data som du samlar in med Content Analytics.  En upplevelse är all text på en webbsida som är reproducerbar med den URL som den första användaren använder när han/hon besöker den webbsidan.
+
+Som standard är **[!UICONTROL Include experiences]** inaktiverad. När du väljer det här alternativet måste du definiera för vilka URL-adresser som du vill inkludera upplevelser.
 
 Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 
@@ -157,14 +164,14 @@ Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 1. Ange parametrarna som bestämmer hur innehåll återges på webbplatsen. Parametrarna är noll eller flera kombinationer av **[!UICONTROL Domain regular expression]** och **[!UICONTROL Query parameters]**.
    1. Ange en **[!UICONTROL Domain regular expression]**, till exempel `(?!.*\b(store|help|admin)\b)`.
    1. Ange en kommaavgränsad lista med **[!UICONTROL Query parameters,]**, till exempel `outdoors, patio, kitchen`.
-   1. Välj **[!UICONTROL Remove]** om du vill ta bort en kombination.
-   1. Välj **[!UICONTROL Add another]** om du vill lägga till en annan kombination.
+1. Välj **[!UICONTROL Remove]** om du vill ta bort en kombination av reguljära uttryck och frågeparametrar för domäner.
+1. Välj **[!UICONTROL Add another]** om du vill lägga till en annan kombination av ett reguljärt uttryck och frågeparametrar.
 
 Så här redigerar du befintliga eller inkluderar nya upplevelser i en implementerad konfiguration:
 
 ![Konfiguration av innehållsanalys - Hämta och definiera ](../assets/aca-configuration-experience-edit.png)
 
-* Välj ![Redigera](/help/assets/icons/Edit.svg) om du vill redigera parametrarna i tillägget Adobe Content Analytics i taggegenskapen, som är associerad med den markerade konfigurationen.
+* Välj ![Redigera](/help/assets/icons/Edit.svg) om du vill redigera parametrarna i Adobe Content Analytics-tillägget i taggegenskapen, som är associerad med den valda konfigurationen.
 
 
 ### Datainsamling {#onboarding-data-collection}
@@ -204,12 +211,12 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Datainsamling"
->abstract="Du kan redigera inställningarna för sidor i tillägget Adobe Content Analytics i taggegenskapen som är kopplad till den markerade konfigurationen."
+>abstract="Du kan redigera inställningarna för sidor i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Datainsamling"
->abstract="Du kan redigera inställningarna för resurser i Adobe Content Analytics-tillägget i taggegenskapen som är kopplad till den markerade konfigurationen."
+>abstract="Du kan redigera inställningarna för resurser i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -230,10 +237,7 @@ I en ny konfiguration måste du definiera vilken taggegenskap du vill använda e
 
    1. Välj **[!UICONTROL Create new]**.
    2. Ange en **[!UICONTROL Tag name]**, till exempel `ACA Test`.
-   3. Ange en eller flera **[!UICONTROL Domains]**, till exempel `example.com`.
-
-   * Om du vill lägga till fler domäner väljer du **[!UICONTROL Add another]**.
-   * Om du vill ta bort en domän väljer du ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+   3. Ange **[!UICONTROL Domains]**, till exempel `example.com`.
 
 * Om du har valt att inkludera upplevelser, ange vilka sidor som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
 
@@ -254,13 +258,25 @@ För en befintlig konfiguration kan du inte redigera taggegenskapen. Du kan dock
 
 ### Sammanfattning
 
-När du har angett all nödvändig information visas ett **[!UICONTROL You're almost ready to implement _konfigurationsnamn _för innehållsanalyssammanfattningen]**.
+När du har angett all nödvändig information visas en sammanfattning med information om de artefakter som skapas eller ändras.
 
-För befintliga implementerade konfigurationer visas ett **[!UICONTROL You have implemented _konfigurationsnamn _för en sammanfattning av innehållsanalys]**.
+* En **[!UICONTROL You're almost ready to implement _konfigurationsnamn _för innehållsanalys]**visas när du implementerar en ny konfiguration.
+
+* För befintliga implementerade konfigurationer visas ett **[!UICONTROL You have implemented _konfigurationsnamn _för en sammanfattning av innehållsanalys]**.
 
 ![Konfigurationssammanfattning för innehållsanalys](../assets/aca-configuration-summary.png)
 
 ### Åtgärder
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning"
+>title="Varning om introduktionsimplementering"
+>abstract="Detta konfigurerar innehållsanalysen delvis baserat på de indata du angett i det här arbetsflödet. Flera andra inställningar väljs automatiskt baserat på vad som vanligtvis är användbart för Content Analytics. Vi rekommenderar att du granskar inställningarna för varje artefakt för att bekräfta att de uppfyller dina krav och riktlinjer. <br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/>Observera också att för att kunna härleda attribut för bilder och text, kommer Adobe att hämta dessa attribut med den URL som lästes in när användarna besöker efter de datainsamlingsinställningar som du har implementerat."
+
+<!-- markdownlint-enable MD034 -->
+
 
 När du har skapat eller redigerat en konfiguration är följande åtgärder tillgängliga.
 

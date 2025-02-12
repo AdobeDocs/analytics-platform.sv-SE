@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
+source-git-commit: 007674fd9da69a4a333d5300c4f4d30640c4b366
 workflow-type: tm+mt
 source-wordcount: '10356'
 ht-degree: 0%
@@ -222,7 +222,7 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
       1. Välj **[!UICONTROL Expand all]** vid **[!UICONTROL Optional Settings]**.
       1. Ange **[!UICONTROL Max connections]** per nod till `5`.
       1. Kontrollera att **[!UICONTROL SSL]** är aktiverat.
-      1. Välj **[!UICONTROL Test]** om du vill testa anslutningen. En banderoll visas högst upp på skärmen med ett meddelande som **[!UICONTROL Success, can connect JDBC string: jdbc:postgresql://examplecompany.platform-query-stage.adobe.io:80/prod:cja?FLATTEN?tcpKeepAlive=true&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory&sslmode=prefer]**.
+      1. Välj **[!UICONTROL Test]** om du vill testa anslutningen. En banderoll visas högst upp på skärmen med ett meddelande som **[!UICONTROL Success, can connect JDBC ....]**.
       1. Välj **[!UICONTROL Connect]** om du vill upprätta och spara anslutningen.
    1. Den nya anslutningen visas i gränssnittet **[!UICONTROL Connections]**.
    1. Välj **¥** från **[!UICONTROL Admin]** om du vill gå till huvudnavigeringen i den vänstra listen.
