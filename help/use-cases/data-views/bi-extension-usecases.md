@@ -1,23 +1,26 @@
 ---
 title: Användningsexempel för BI-tillägget i Customer Journey Analytics
-description: Flera användningsfall som visar hur BI-tillägget används i olika BI-verktyg i Customer Journey Analytics
+description: Flera användningsfall som visar hur du använder BI-tillägget i olika BI-verktyg i Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
+hide: true
+hidefromtoc: true
+exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
+source-git-commit: d0bea7f5f23322c1b20729400c19f5dda6a0712c
 workflow-type: tm+mt
-source-wordcount: '7902'
+source-wordcount: '10356'
 ht-degree: 0%
 
 ---
 
 # Användningsexempel för BI-tillägg
 
-I den här artikeln beskrivs hur du slutför ett antal användningsfall med tillägget Customer Journey Analytics BI. I varje användningsexempel förklaras Customer Journey Analytics-funktionen, följt av information om de BI-verktyg som stöds:
+I den här artikeln beskrivs hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget. I varje exempel förklaras Customer Journey Analytics-funktionaliteten, följt av information om alla BI-verktyg som stöds:
 
 * **Power BI Desktop**. Den version som används är 2.137.1102.0 (64 bitar) (oktober 2024).
 * **Skrivbord för surfplatta**. Den version som används är 2024.1.5 (20241.24.0705.0334), 64 bitar.
+* **Looker**. Online version 25.0.23, tillgänglig via [looker.com](https://looker.com){target="_blank"}
 
 Följande användningsfall dokumenteras:
 
@@ -45,12 +48,12 @@ Följande användningsfall dokumenteras:
 
 I **connect**-användningsexemplet fokuseras på hur du ansluter BI-verktyg med Customer Journey Analytics BI-tillägget.
 
-**rapport- och analysexemplen** instruerar dig hur du kan uppnå liknande Customer Journey Analytics-visualiseringar i de BI-verktyg som för närvarande stöds.
+**rapport- och analysexemplen** instruerar dig hur du kan uppnå liknande Customer Journey Analytics-visualiseringar i de BI-verktyg som stöds för närvarande.
 
 **Använd**-användningsexemplen innehåller mer information om:
 
 * Transformeringar som inträffar när du använder BI-verktyg för att rapportera och analysera.
-* Visualiseringslikheter och skillnader mellan Customer Journey Analytics och BI-verktyg.
+* Visualiseringslikheter och skillnader mellan Customer Journey Analytics- och BI-verktyg.
 * Omslag till alla BI-verktyg som du bör känna till.
 
 
@@ -67,7 +70,7 @@ Instruktionerna avser en exempelmiljö med följande objekt:
 * Mätvärden: **[!UICONTROL Purchase Revenue]** ?? och **[!UICONTROL Purchases]** ?..
 * Filter: **[!UICONTROL Fishing Products]** ??.
 
-![Grundinställningar för Customer Journey Analytics](assets/cja-base.png){zoomable="yes"}
+![Customer Journey Analytics Base-konfiguration](assets/cja-base.png){zoomable="yes"}
 
 När du går igenom användningsexemplen ersätter du de här exempelobjekten med objekt som passar just din miljö.
 
@@ -79,7 +82,7 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
 
 >[!TAB Power BI Desktop]
 
-1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform-frågetjänsten.
+1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform Query Service.
 
    1. Navigera till din Experience Platform-sandlåda.
    1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
@@ -102,11 +105,11 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
       1. Välj **[!UICONTROL OK]**.
    1. I dialogrutan **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]**:
       ![PowerBI Desktop-användare och lösenord](assets/powerbi-userpassword.png){zoomable="yes"}
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera värdena **[!UICONTROL Username]** och **[!UICONTROL Password]** från Experience Platform-panelen **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** i fälten **[!UICONTROL User name]** och **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera värdena **[!UICONTROL Username]** och **[!UICONTROL Password]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** i fälten **[!UICONTROL User name]** och **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
       1. Kontrollera att listrutan för **[!UICONTROL Select which level to apply these settings to]** är inställd på **[!UICONTROL Server]** som du har definierat tidigare.
       1. Välj **[!UICONTROL Connect]**.
    1. I dialogrutan **[!UICONTROL Navigator]** hämtas datavyer. Den här hämtningen kan ta en stund. När du har hämtat det här ser du följande i Power BI Desktop.
-      ![Power BI Destkop Load Data](assets/powerbi-navigator-load.png){zoomable="yes"}
+      ![Power BI Desktop Load Data](assets/powerbi-navigator-load.png){zoomable="yes"}
       1. Välj **[!UICONTROL public.cc_data_view]** i listan i den vänstra panelen.
       1. Du har två alternativ:
          1. Välj **[!UICONTROL Load]** om du vill fortsätta och slutföra konfigurationen.
@@ -114,7 +117,7 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
             ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png){zoomable="yes"}
             * Välj **[!UICONTROL Close & Apply]**.
    1. Efter en stund visas **[!UICONTROL public.cc_data_view]** i rutan **[!UICONTROL Data]**. Välj ![SparronRight](/help/assets/icons/ChevronRight.svg) om du vill visa mått och mått.
-      ![Power BI-tjänstserverdata har lästs in](assets/powerbi-navigator-loaded.png){zoomable="yes"}
+      ![Data för Power BI-tjänstservern har lästs in](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
 ### Till FLATTEN eller inte
@@ -138,7 +141,7 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 >[!TAB Skrivbord för Tablet PC]
 
-1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform-frågetjänsten.
+1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform Query Service.
 
    1. Navigera till din Experience Platform-sandlåda.
    1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
@@ -152,12 +155,12 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
       ![Tableu-anslutningar](assets/tableau-connectors.png){zoomable="yes"}
    1. I dialogrutan **[!UICONTROL PostgreSQL]** går du till fliken **[!UICONTROL General]**:
       ![Dialogrutan Logga in i tabell](assets/tableau-signin.png){zoomable="yes"}
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in **[!UICONTROL Host]** från Experience Platform-panelen **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till **[!UICONTROL Server]**.
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in **[!UICONTROL Port]** från Experience Platform-panelen **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till **[!UICONTROL Port]**.
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in **[!UICONTROL Database]** från Experience Platform-panelen **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till **[!UICONTROL Database]**. Lägg till `%3FFLATTEN` i värdet som du klistrar in. Till exempel: `prod:cja%3FFLATTEN`.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Host]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Server]**.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Port]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Port]**.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Database]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Database]**. Lägg till `%3FFLATTEN` i värdet som du klistrar in. Till exempel: `prod:cja%3FFLATTEN`.
       1. Välj **[!UICONTROL Username and Password]** i listrutan **[!UICONTROL Authentication]**.
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in **[!UICONTROL Username]** från Experience Platform-panelen **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till **[!UICONTROL Username]**.
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in **[!UICONTROL Password]** från Experience Platform-panelen **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Username]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Username]**.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Password]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
       1. Kontrollera att **[!UICONTROL Require SSL]** är markerad.
       1. Välj **[!UICONTROL Sign In]**.
 
@@ -188,6 +191,80 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
 * [Anslut skrivbordet till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
 
+>[!TAB Sökare]
+
+1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform Query Service.
+
+   1. Navigera till din Experience Platform-sandlåda.
+   1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
+   1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
+   1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
+
+      ![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Logga in på Looker
+
+   1. Välj **[!UICONTROL Admin]** i den vänstra listen.
+   1. Välj **[!UICONTROL Connections]**.
+   1. Välj **[!UICONTROL Add Connection]**.
+   1. I **[!UICONTROL Connect your database to Looker screen]**.
+
+      ![Looker Connect to database](assets/looker-connect.png){zoomable="yes"}
+
+      1. Ange en **[!UICONTROL Name]** för din anslutning, till exempel `Example Looker Connection`.
+      1. Kontrollera att **[!UICONTROL All Projects]** är markerat som **[!UICONTROL Connection Scope]**.
+      1. Välj **[!UICONTROL PostgreSQL 9.5+]** som dialekt.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värdet **[!UICONTROL Host]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** som värde för **[!UICONTROL Host]**. Till exempel: `examplecompany.platform-query.adobe.io`.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värdet **[!UICONTROL Port]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** som värde för **[!UICONTROL Port]**. Till exempel: `80`.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värdet **[!UICONTROL Database]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** som värde för **[!UICONTROL Database]**. Lägg till `%3FFLATTEN` i värdet som du klistrar in. Exempel: `prod:cja%3FFLATTEN`.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värdet **[!UICONTROL Username]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** som värde för **[!UICONTROL Username]**.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värdet **[!UICONTROL Password]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** som värde för **[!UICONTROL Password]**.
+      1. Välj **[!UICONTROL Expand all]** vid **[!UICONTROL Optional Settings]**.
+      1. Ange **[!UICONTROL Max connections]** per nod till `5`.
+      1. Kontrollera att **[!UICONTROL SSL]** är aktiverat.
+      1. Välj **[!UICONTROL Test]** om du vill testa anslutningen. En banderoll visas högst upp på skärmen med ett meddelande som **[!UICONTROL Success, can connect JDBC ....]**.
+      1. Välj **[!UICONTROL Connect]** om du vill upprätta och spara anslutningen.
+   1. Den nya anslutningen visas i gränssnittet **[!UICONTROL Connections]**.
+   1. Välj **¥** från **[!UICONTROL Admin]** om du vill gå till huvudnavigeringen i den vänstra listen.
+   1. Välj **[!UICONTROL Develop]**.
+   1. Välj **[!UICONTROL Projects]**.
+   1. Välj **[!UICONTROL New Model]** i LookML-projekt.
+   1. För att vara säker på att du inte påverkar andra användare. Välj Ange utvecklingsläge när du uppmanas till det.
+   1. I **[!UICONTROL Create Model]**-upplevelsen:
+      1. I **[!UICONTROL ➊ Select Database Connection]**:
+         1. Välj din databasanslutning i **[!UICONTROL Select database connection]**. Till exempel: **[!UICONTROL example_looker_connection]**.
+         1. Namnge projektet i **[!UICONTROL Create a new LookML Project for this model]**. För `example: example_looker_project`.
+         1. Välj **[!UICONTROL Next]**.
+      1. I **[!UICONTROL ➋ Select Tables]**:
+         1. Välj **[!UICONTROL public]** och kontrollera sedan att datavyn för Customer Journey Analytics är markerad. Till exempel: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
+         1. Välj **[!UICONTROL Next]**.
+      1. I **[!UICONTROL ➌ Select Primary Keys]**:
+         1. Välj **[!UICONTROL Next]**.
+      1. I **[!UICONTROL ➍ Select Explores to Create]**:
+         1. Se till att du väljer vyn. Till exempel: **[!UICONTROL cc_data_view.view]**.
+         1. Välj **[!UICONTROL Next]**.
+      1. I **[!UICONTROL ➎ Enter Model Name]**:
+         1. Ge modellen ett namn. Till exempel: `example_looker_model`.
+      1. Välj **[!UICONTROL Complete and Explore Data]**.
+
+   Du omdirigeras till **[!UICONTROL Explore]**-gränssnittet för Looker, redo att utforska data.
+
+
+
+### Till FLATTEN eller inte
+
+Looker stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+
+| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
+|---|---|:---:|---|
+| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Rekommenderat alternativ för**. Obs! `%3FFLATTEN` är en URL-kodad version av `?FLATTEN`. |
+
+### Mer information
+
+* [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 
@@ -202,7 +279,7 @@ I det här fallet vill du visa en tabell och en enkel radvisualisering som visar
 
 Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
-![Customer Journey Analytics, panelen Trend dagligen](assets/cja_daily_trend.png){zoomable="yes"}
+![Customer Journey Analytics Daily Trend-panelen](assets/cja_daily_trend.png){zoomable="yes"}
 
 +++
 
@@ -234,16 +311,16 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
 1. I rutan **[!UICONTROL Visualizations]** väljer du **[!UICONTROL Line chart]**-visualisering.
 
-   En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI Desktop ska se ut så här nedan.
+   En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Use Case 2 Date range filter](assets/uc2-pbi-daterange.png){zoomable="yes"}
+   ![Power BI-filtret Datumintervall med VERSALER 2 ](assets/uc2-pbi-daterange.png){zoomable="yes"}
 
 1. Visualisering av linjediagram:
 
    1. Välj ![Mer](/help/assets/icons/More.svg).
    1. Välj **[!UICONTROL Show as a table]** på snabbmenyn.
 
-   Huvudvyn uppdateras för att visa både en radvisualisering och en tabell. Ditt Power BI Desktop ska se ut så här nedan.
+   Huvudvyn uppdateras för att visa både en radvisualisering och en tabell. Ditt Power BI-skrivbord ska se ut så här nedan.
 
    ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-final.png){zoomable="yes"}
 
@@ -286,6 +363,26 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
       ![Instrumentpanel för bordsdator ](assets/uc2-tableau-dashboard.png){zoomable="yes"}
 
+
+>[!TAB Sökare]
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Från avsnittet **[!UICONTROL Cc Data View]** i den vänstra listen,
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Date]** i listan med **[!UICONTROL DIMENSIONS]**.
+   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]** om du vill visa radinvisualiseringen.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Sökresultat, daglig trend](assets/uc2-looker-result.png){zoomable="yes"}
+
 >[!ENDTABS]
 
 +++
@@ -299,7 +396,7 @@ I det här fallet vill du visa en tabell och en enkel radvisualisering som visar
 
 Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 
-![Customer Journey Analytics Trendvisualiseringar per timme](assets/cja_hourly_trend.png){zoomable="yes"}
+![Customer Journey Analytics Trend-visualiseringar per timme](assets/cja_hourly_trend.png){zoomable="yes"}
 
 +++
 
@@ -314,7 +411,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 
 >[!TAB Power BI Desktop]
 
-![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **förstår** inte hur datum- och tidsfält ska hanteras, så dimensioner som **[!UICONTROL daterangehour]** och **[!UICONTROL daterangeminute]** stöds inte.
+![AlertRed](/help/assets/icons/AlertRed.svg) Power BI förstår **inte** hur datum- och tidsfält ska hanteras, så dimensioner som **[!UICONTROL daterangehour]** och **[!UICONTROL daterangeminute]** stöds inte.
 
 >[!TAB Skrivbord för Tablet PC]
 
@@ -356,6 +453,26 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
       ![Instrumentpanel för bordsdator ](assets/uc3-tableau-dashboard.png){zoomable="yes"}
 
 
+>[!TAB Sökare]
+
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/01/02]**.
+1. Från avsnittet **[!UICONTROL Cc Data View]** i den vänstra listen,
+   1. Välj **[!UICONTROL ‣ Daterangehour Date]** och sedan **[!UICONTROL Time]** i listan med **[!UICONTROL DIMENSIONS]**.
+   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]** om du vill visa radinvisualiseringen.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Sökresultat, daglig trend](assets/uc3-looker-result.png){zoomable="yes"}
+
 >[!ENDTABS]
 
 +++
@@ -369,7 +486,7 @@ I det här fallet vill du visa en tabell och en enkel radvisualisering som visar
 
 Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
-![Customer Journey Analytics - månatlig trendvisualisering](assets/cja_monthly_trend.png){zoomable="yes"}
+![Customer Journey Analytics månadstrendvisualisering](assets/cja_monthly_trend.png){zoomable="yes"}
 
 +++
 
@@ -403,16 +520,16 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
    1. Välj visualisering för **[!UICONTROL Line chart]**.
 
-   En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI Desktop ska se ut så här nedan.
+   En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
+   ![Power BI-filtret Datumintervall med VERSALER 2 ](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
 
 1. Visualisering av linjediagram:
 
    1. Välj ![Mer](/help/assets/icons/More.svg).
    1. Välj **[!UICONTROL Show as a table]** på snabbmenyn.
 
-   Huvudvyn uppdateras för att visa både en radvisualisering och en tabell. Ditt Power BI Desktop ska se ut så här nedan.
+   Huvudvyn uppdateras för att visa både en radvisualisering och en tabell. Ditt Power BI-skrivbord ska se ut så här nedan.
 
    ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png){zoomable="yes"}
 
@@ -455,6 +572,26 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
       ![Instrumentpanel för bordsdator ](assets/uc4-tableau-dashboard.png){zoomable="yes"}
 
+
+>[!TAB Sökare]
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. Från vänster **[!UICONTROL Cc Data View]**-räl,
+   1. Välj **[!UICONTROL ‣ Daterangemonth Date]** och sedan **[!UICONTROL Month]** i listan med **[!UICONTROL DIMENSIONS]**.
+   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]** om du vill visa radinvisualiseringen.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Sökresultat, daglig trend](assets/uc4-looker-result.png){zoomable="yes"}
+
 >[!ENDTABS]
 
 +++
@@ -468,7 +605,7 @@ I det här fallet vill du visa en tabell och en enkel fältvisualisering som vis
 
 Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användningsfallet:
 
-![Customer Journey Analytics, endimensionell, rankad visualisering](assets/cja-single-dimension-ranked.png){zoomable="yes"}
+![Customer Journey Analytics Single Dimension rankad visualisering](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
 +++ BI-verktyg
@@ -506,7 +643,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
 1. I tabellvisualiseringen:
 
-   1. Välj **[!UICONTROL Sum of purchase_revenue]** om du vill sortera produktnamnen i fallande inköpsintäktsordning. Ditt Power BI Desktop ska se ut så här nedan.
+   1. Välj **[!UICONTROL Sum of purchase_revenue]** om du vill sortera produktnamnen i fallande inköpsintäktsordning. Ditt Power BI-skrivbord ska se ut så här nedan.
 
    ![Power BI Desktop Use Case 5 Table status ](assets/uc5-pbi-table.png){zoomable="yes"}
 
@@ -528,9 +665,9 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
 1. Dra och släpp **[!UICONTROL purchases]** på **[!UICONTROL Line y-axis]** i rutan **[!UICONTROL Visualizations]**.
 
-   Linjediagrammet och det staplade stapeldiagrammet uppdateras. Ditt Power BI Desktop ska se ut så här nedan.
+   Linjediagrammet och det staplade stapeldiagrammet uppdateras. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI, användningsfall för datorer, versaler 5, diagram](assets/uc5-pbi-chart.png){zoomable="yes"}
+   ![Power BI-diagram för skrivbordsanvändning, VERSALER 5](assets/uc5-pbi-chart.png){zoomable="yes"}
 
 1. Visualisering av linjediagram och skiktade stapeldiagram:
 
@@ -546,7 +683,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `31/12/2024`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `31/12/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
 
       ![Datorfilter för Tablet PC](assets/uc5-tableau-filter.png){zoomable="yes"}
 
@@ -586,6 +723,53 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
    ![Instrumentpanel för bordsdator ](assets/uc5-tableau-dashboard.png){zoomable="yes"}
 
+
+
+>[!TAB Sökare]
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. Välj **[!UICONTROL Product Name]** i avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen.
+1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
+   1. Välj **[!UICONTROL Custom Measure]** i listrutan **[!UICONTROL + Add]**.
+   1. I dialogrutan **[!UICONTROL Create custom measure]**:
+      1. Välj **[!UICONTROL Purchase Revenue]** i listrutan **[!UICONTROL Field to measure]**.
+      1. Välj **[!UICONTROL Sum]** i listrutan **[!UICONTROL Measure type]**.
+      1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Purchase Revenue`.
+      1. Välj fliken **[!UICONTROL Field details]**.
+      1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
+         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
+      1. Välj **[!UICONTROL Save]**.
+   1. Välj **[!UICONTROL Custom Measure]** en gång till i listrutan **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
+      1. Välj **[!UICONTROL Purchases]** i listrutan **[!UICONTROL Field to measure]**.
+      1. Välj **[!UICONTROL Sum]** i listrutan **[!UICONTROL Measure type]**.
+      1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchases`.
+      1. Välj fliken **[!UICONTROL Field details]**.
+      1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
+      1. Välj **[!UICONTROL Save]**.
+   1. Båda fälten läggs automatiskt till i datavyn.
+1. Välj **[!UICONTROL + Filter]** om du vill lägga till ytterligare **[!UICONTROL Filters]** och begränsa data.
+1. I dialogrutan **[!UICONTROL Add Filter]** väljer du **[!UICONTROL ‣ Custom Fields]** och sedan **[!UICONTROL Purchase Revenue]**.
+1. Gör lämpliga markeringar och ange de föreslagna värdena, så att filtret läser **[!UICONTROL is between inclusive]** `1000000` **[!UICONTROL AND]** `2000000`.
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]** om du vill visa radinvisualiseringen.
+1. Välj **[!UICONTROL Edit]** i **[!UICONTROL Visualization]** för att uppdatera visualiseringen. I popup-dialogrutan:
+   1. Välj fliken **[!UICONTROL Series]**.
+   1. Bläddra ned för att se **[!UICONTROL Purchases]** och ändra **[!UICONTROL Type]** till **[!UICONTROL Line]**.
+   1. Välj fliken **[!UICONTROL Y]**.
+   1. Dra **[!UICONTROL Purchases]** från behållaren **[!UICONTROL Left 1]** till den plats där den läser **[!UICONTROL *Dra serien hit för att skapa en ny vänsteraxel *]**. Den här åtgärden skapar en **[!UICONTROL Left 2]**-behållare.
+      ![Söker i visualiseringskonfiguration](assets/uc5-looker-visualization.png){zoomable="yes"}
+   1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) bredvid **[!UICONTROL Edit]** för att dölja popup-dialogrutan
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Sökresultat, daglig trend](assets/uc5-looker-result.png){zoomable="yes"}
+
 >[!ENDTABS]
 
 +++
@@ -599,7 +783,7 @@ I det här fallet vill du visa en tabell som delar upp inköpsinkomster och ink�
 
 Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användningsfallet:
 
-![Rankad panel för flera Dimensioner i Customer Journey Analytics](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
+![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
 
 +++
 
@@ -639,9 +823,9 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
 1. Om du vill förbättra läsbarheten väljer du **[!UICONTROL View]** på den översta menyn, väljer **[!UICONTROL Page View]** > **[!UICONTROL Actual size]** och ändrar storlek på tabellvisualiseringen.
 
-1. Om du vill dela upp varje kategori i tabellen väljer du **[!UICONTROL +]** på produktkategorinivå. Ditt Power BI Desktop ska se ut så här nedan.
+1. Om du vill dela upp varje kategori i tabellen väljer du **[!UICONTROL +]** på produktkategorinivå. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Multiple Dimensions Rankad matristabell](assets/uc6-powerbi-data.png){zoomable="yes"}
+   ![Power BI-matristabell med flera dimensioner för stationära datorer ](assets/uc6-powerbi-data.png){zoomable="yes"}
 
 1. Välj **[!UICONTROL Home]** på den översta menyn och välj **[!UICONTROL New visual]**. En ny visuell vy läggs till i rapporten.
 
@@ -653,9 +837,9 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 1. Om du vill ändra det visuella objektet markerar du stapeldiagrammet och väljer **[!UICONTROL Treemap]** i rutan **[!UICONTROL Visualizations]**.
 1. Se till att **[!UICONTROL product_category]** visas under **[!UICONTROL Category]** och att **[!UICONTROL product_name]** visas under **[!UICONTROL Details]** i rutan **[!UICONTROL Visualizations]**.
 
-   Ditt Power BI Desktop ska se ut så här nedan.
+   Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Multiple Dimensions Rankad treemap](assets/uc6-powerbi-treemap.png){zoomable="yes"}
+   ![Power BI Multiple Dimensions, rankat treemap](assets/uc6-powerbi-treemap.png){zoomable="yes"}
 
 1. Välj **[!UICONTROL Home]** på den översta menyn och välj **[!UICONTROL New visual]**. En ny visuell vy läggs till i rapporten.
 
@@ -670,9 +854,9 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
 1. Blanda om de enskilda visualiseringarna i rapporten.
 
-   Ditt Power BI Desktop ska se ut så här nedan.
+   Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Multiple Dimensions Rankad sist](assets/uc6-powerbi-final.png){zoomable="yes"}
+   ![Flera dimensioner för Power BI Desktop Rankad sist](assets/uc6-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Skrivbord för Tablet PC]
@@ -684,7 +868,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datorrankat filter för flera Dimensioner i Tableu ](assets/uc6-tableau-filter.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc6-tableau-filter.png){zoomable="yes"}
 
    1. Dra **[!UICONTROL Product Category]** och släpp intill **[!UICONTROL Columns]**.
    1. Dra **[!UICONTROL Purchase Revenue]** och släpp intill **[!UICONTROL Rows]**. Värdet ändras till **[!UICONTROL SUM(Purchase Revenue)]**.
@@ -697,7 +881,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datordefinierad kategori för flera Dimensioner i Tableu ](assets/uc6-tableau-category.png){zoomable="yes"}
+      ![Flera dimensioner rankade för Tableu Desktop ](assets/uc6-tableau-category.png){zoomable="yes"}
 
 1. Byt namn på aktuellt **[!UICONTROL Sheet 1]**-blad till `Category`.
 1. Välj **[!UICONTROL New Worksheet]** om du vill skapa ett nytt blad och ändra namnet till `Data`.
@@ -716,7 +900,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datorrankade data för flera Dimensioner på Tableu-skrivbordet](assets/uc6-tableau-data.png){zoomable="yes"}
+      ![Skrivbordsdator med flera Dimension-rankade data](assets/uc6-tableau-data.png){zoomable="yes"}
 
 1. Välj **[!UICONTROL New worksheet]** om du vill skapa ett nytt blad och ändra namnet till **[!UICONTROL Treemap]**.
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
@@ -733,7 +917,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datorrankade data för flera Dimensioner på Tableu-skrivbordet](assets/uc6-tableau-treemap.png){zoomable="yes"}
+      ![Skrivbordsdator med flera Dimension-rankade data](assets/uc6-tableau-treemap.png){zoomable="yes"}
 
 1. Skapa en ny **[!UICONTROL Dashboard 1]**-vy genom att klicka på tabbknappen **[!UICONTROL New Dashboard]** (längst ned). I vyn **[!UICONTROL Dashboard 1]**:
    1. Dra och släpp **[!UICONTROL Category]**-bladet från **[!UICONTROL Sheets]**-hyllan till **[!UICONTROL Dashboard 1]**-vyn som läser *Drop sheets här*.
@@ -744,6 +928,55 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
    ![Instrumentpanel för bordsdator ](assets/uc6-tableau-final.png){zoomable="yes"}
+
+
+>[!TAB Sökare]
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
+   1. Välj **[!UICONTROL Product Category]**.
+   1. Välj **[!UICONTROL Product Name]**.
+1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
+   1. Välj **[!UICONTROL Custom Measure]** i listrutan **[!UICONTROL + Add]**.
+   1. I dialogrutan **[!UICONTROL Create custom measure]**:
+      1. Välj **[!UICONTROL Purchase Revenue]** i listrutan **[!UICONTROL Field to measure]**.
+      1. Välj **[!UICONTROL Sum]** i listrutan **[!UICONTROL Measure type]**.
+      1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchase Revenue`.
+      1. Välj fliken **[!UICONTROL Field details]**.
+      1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
+         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
+      1. Välj **[!UICONTROL Save]**.
+   1. Välj **[!UICONTROL Custom Measure]** en gång till i listrutan **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
+      1. Välj **[!UICONTROL Purchases]** i listrutan **[!UICONTROL Field to measure]**.
+      1. Välj **[!UICONTROL Sum]** i listrutan **[!UICONTROL Measure type]**.
+      1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchases`.
+      1. Välj fliken **[!UICONTROL Field details]**.
+      1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
+      1. Välj **[!UICONTROL Save]**.
+   1. Båda fälten läggs automatiskt till i datavyn.
+1. Välj **[!UICONTROL + Filter]** i avsnittet **[!UICONTROL Filters]**. I dialogrutan **[!UICONTROL Add Filter]**. Välj **[!UICONTROL ‣ Custom Fields]** och sedan **[!UICONTROL Purchase Revenue]**.
+1. Välj **[!UICONTROL is >]** och ange `800000` för att begränsa resultaten.
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]** om du vill visa radinvisualiseringen.
+1. Välj **[!UICONTROL Edit]** i **[!UICONTROL Visualization]** för att uppdatera visualiseringen. I popup-dialogrutan:
+   1. Välj fliken **[!UICONTROL Plot]**.
+   1. Rulla ned och välj **[!UICONTROL Edit Chart Config]**.
+   1. Ändra JSON i **[!UICONTROL Chart Config (Override)]** som i skärmbilden nedan och välj sedan **[!UICONTROL Preview]**.
+
+      ![Looker-serialiseringskonfiguration](assets/uc6-looker-visualization.png){zoomable="yes"}
+
+   1. Välj **[!UICONTROL Apply]**.
+   1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) bredvid **[!UICONTROL Edit]** för att dölja popup-dialogrutan
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Sökresultat, daglig trend](assets/uc6-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -758,11 +991,11 @@ I det här fallet vill du ha det tydliga antalet produktnamn som rapporterades i
 
 Om du vill rapportera ett distinkt antal produktnamn anger du ett beräknat mått i Customer Journey Analytics, med **[!UICONTROL Title]** `Product Name (Count Distinct)` och **[!UICONTROL External Id]** `product_name_count_distinct`.
 
-![Customer Journey Analytics produktnamn (Distincr Count) beräknat mått](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
+![Beräknade Customer Journey Analytics-produktnamn (Distincr Count) ](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
 
 Du kan sedan använda det måttet i en **[!UICONTROL Count Distinct Dimension Values]**-panel för följande användningsfall:
 
-![Värden för distinkt räkning för Customer Journey Analytics](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
+![Customer Journey Analytics Distinct Count-värden](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
 
 +++
 
@@ -789,24 +1022,24 @@ Du kan sedan använda det måttet i en **[!UICONTROL Count Distinct Dimension Va
 
 1. Om du vill ändra det lodräta stapeldiagrammet till en tabell kontrollerar du att diagrammet är markerat och väljer **[!UICONTROL Table]** i rutan **[!UICONTROL Visualizations]**.
 
-   Ditt Power BI Desktop ska se ut så här nedan.
+   Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Distinkt tabell för antal Power BI Desktop Multiple Count](assets/uc7-powerbi-table.png){zoomable="yes"}
+   ![Distinkt tabell för antal Power BI-skrivbord (Multiple Count)](assets/uc7-powerbi-table.png){zoomable="yes"}
 
 1. Välj tabellvisualisering. Välj **[!UICONTROL Copy]** > **[!UICONTROL Copy visual]** på snabbmenyn.
 1. Klistra in visualiseringen med **[!UICONTROL ctrl-v]**. Den exakta kopian av visualiseringen överlappar den ursprungliga. Flytta den åt höger i rapportområdet.
 1. Om du vill ändra den kopierade visualiseringen från en tabell till ett kort väljer du **[!UICONTROL Card]** från **[!UICONTROL Visualizations]**.
 
-   Ditt Power BI Desktop ska se ut så här nedan.
+   Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Distinkt tabell för antal Power BI Desktop Multiple Count](assets/uc7-powerbi-final.png){zoomable="yes"}
+   ![Distinkt tabell för antal Power BI-skrivbord (Multiple Count)](assets/uc7-powerbi-final.png){zoomable="yes"}
 
-Du kan också använda funktionen antal som skiljer sig från Power BI.
+Du kan också använda funktionen för antal som skiljer sig från Power BI.
 
 1. Välj dimensionen **[!UICONTROL product_name]**.
 1. Använd funktionen **[!UICONTROL Count (Distinct)]** på dimensionen **[!UICONTROL product_name]** i **[!UICONTROL Columns]**.
 
-   ![Distinkt antal Power BIN](assets/uc7-powerbi-alternative.png){zoomable="yes"}
+   ![Distinkt antal för Power BI](assets/uc7-powerbi-alternative.png){zoomable="yes"}
 
 
 
@@ -816,7 +1049,7 @@ Du kan också använda funktionen antal som skiljer sig från Power BI.
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
    1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `31/1/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
-   1. Dra **[!UICONTROL Cm Product Name Count Distinct]** till **[!UICONTROL Rows]**. Värdet ändras till **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. Det här fältet är det beräknade måttet som du har definierat i Customer Journey Analytics.
+   1. Dra **[!UICONTROL Cm Product Name Count Distinct]** till **[!UICONTROL Rows]**. Värdet ändras till **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. Det här fältet är det beräknade mått som du har definierat i Customer Journey Analytics.
    1. Dra **[!UICONTROL Daterangeday]** och släpp intill **[!UICONTROL Columns]**. Välj **[!UICONTROL Daterangeday]** och välj **[!UICONTROL Day]** i listrutan.
    1. Om du vill ändra radinvisualiseringen till en tabell väljer du **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
    1. Välj **[!UICONTROL Swap Rows and Columns]** i verktygsfältet.
@@ -824,7 +1057,7 @@ Du kan också använda funktionen antal som skiljer sig från Power BI.
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datorrankat filter för flera Dimensioner i Tableu ](assets/uc7-tableau-data.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-data.png){zoomable="yes"}
 
 1. Välj **[!UICONTROL Duplicate]** på snabbmenyn på fliken **[!UICONTROL Sheet 1]** om du vill skapa ett andra blad.
 1. Välj **[!UICONTROL Rename]** på snabbmenyn på fliken **[!UICONTROL Sheet 1]** om du vill byta namn på bladet till `Data`.
@@ -839,7 +1072,7 @@ Du kan också använda funktionen antal som skiljer sig från Power BI.
 
    Ditt skrivbord ska se ut så här nedan.
 
-   ![Datorrankat filter för flera Dimensioner i Tableu ](assets/uc7-tableau-card.png){zoomable="yes"}
+   ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-card.png){zoomable="yes"}
 
 1. Skapa en ny **[!UICONTROL Dashboard 1]**-vy genom att klicka på tabbknappen **[!UICONTROL New Dashboard]** (längst ned). I vyn **[!UICONTROL Dashboard 1]**:
    1. Dra och släpp **[!UICONTROL Card]**-bladet från **[!UICONTROL Sheets]**-hyllan till **[!UICONTROL Dashboard 1]**-vyn som läser *Drop sheets här*.
@@ -855,12 +1088,32 @@ Du kan också använda funktionen för att räkna distinkt från skrivbordet i T
 1. Använd **[!UICONTROL Product Name]** i stället för **[!UICONTROL Cm Product Name Count Distinct]**.
 1. Använd **[!UICONTROL Measure]** > **[!UICONTROL Count (Distinct)]** på **[!UICONTROL Product Name]** i **[!UICONTROL Marks]**.
 
-   ![Distinkt antal Power BIN](assets/uc7-tableau-alternative.png){zoomable="yes"}
+   ![Distinkt för antal flikar](assets/uc7-tableau-alternative.png){zoomable="yes"}
+
+
+>[!TAB Sökare]
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
+   1. Välj **[!UICONTROL Daterange Date]** och sedan **[!UICONTROL Date]**.
+   1. Välj **[!UICONTROL Aggregate ‣ Count Distinct]** på snabbmenyn **⋮ mer** på **[!UICONTROL Product Name]**.
+      ![Sök produktnamn, snabbmeny](assets/uc7-looker-count-distinct.png){zoomable="yes"}
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]** och välj 6︎⃣ i verktygsfältet för att visa visualisering av ett enstaka värde.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Distinkt antal sökare](assets/uc7-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 +++
-
 
 
 ## Använd datumintervallnamn för att filtrera
@@ -871,11 +1124,11 @@ I det här fallet vill du använda ett datumintervall som du har definierat i Cu
 
 Om du vill rapportera med hjälp av ett datumintervall anger du ett datumintervall i Customer Journey Analytics, med **[!UICONTROL Title]** `Last Year 2023`.
 
-![Customer Journey Analytics Använd datumintervallnamn som ska filtreras](assets/cja-daterange.png){zoomable="yes"}
+![Customer Journey Analytics Använd datumintervallnamn för att filtrera](assets/cja-daterange.png){zoomable="yes"}
 
 Du kan sedan använda det datumintervallet i en exempelpanel **[!UICONTROL Using Date Range Names To Filter]** för följande användningsfall:
 
-![Värden för distinkt räkning för Customer Journey Analytics](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics Distinct Count-värden](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
 
 Observera hur datumintervallet som definieras i visualiseringen av frihandstabellen åsidosätter datumintervallet som tillämpas på panelen.
 
@@ -906,9 +1159,9 @@ Observera hur datumintervallet som definieras i visualiseringen av frihandstabel
    1. Under fältet **[!UICONTROL Search]** väljer du **[!UICONTROL Last Year 2023]**, som är namnet på ditt datumintervall som definieras i Customer Journey Analytics.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort **[!UICONTROL daterangeName]** från **[!UICONTROL Columns]**.
 
-   Tabellen uppdateras med det använda **[!UICONTROL daterangeName]**-filtret. Ditt Power BI Desktop ska se ut så här nedan.
+   Tabellen uppdateras med det använda **[!UICONTROL daterangeName]**-filtret. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop använder datumintervallnamn för filter](assets/uc8-powerbi-final.png){zoomable="yes"}
+   ![Power BI Desktop använder datumintervallnamn för att filtrera](assets/uc8-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Skrivbord för Tablet PC]
 
@@ -923,7 +1176,25 @@ Observera hur datumintervallet som definieras i visualiseringen av frihandstabel
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datorrankat filter för flera Dimensioner i Tableu ](assets/uc8-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc8-tableau-final.png){zoomable="yes"}
+
+>[!TAB Sökare]
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Name]** i listan med fält.
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Name]** som **[!UICONTROL is]** och välj **[!UICONTROL Last Year 2023]** i listan med värden.
+1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
+   1. Välj **[!UICONTROL Daterange Month]** och sedan **[!UICONTROL Month]**.
+   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]**.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Distinkt antal sökare](assets/uc8-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -933,17 +1204,17 @@ Observera hur datumintervallet som definieras i visualiseringen av frihandstabel
 
 ## Använd filternamn för att filtrera
 
-I det här fallet vill du använda ett befintligt filter för produktkategorin Fiske, som du har definierat i Customer Journey Analytics, för att filtrera och rapportera produktnamn och förekomster (händelser) under januari 2023.
+I det här fallet vill du använda ett befintligt filter för produktkategorin Fiske som du har definierat i Customer Journey Analytics. Filtrera och rapportera om produktnamn och förekomster (händelser) under januari 2023.
 
 +++ Customer Journey Analytics
 
-Inspect filtret som du vill använda i Customer Journey Analytics.
+Kontrollera filtret som du vill använda i Customer Journey Analytics.
 
-![Customer Journey Analytics Använd filternamn för filter](assets/cja-fishing-products.png){zoomable="yes"}
+![Customer Journey Analytics använder filternamn för att filtrera](assets/cja-fishing-products.png){zoomable="yes"}
 
 Du kan sedan använda det filtret i en exempelpanel **[!UICONTROL Using Date Range Names To Filter]** för att använda skiftläget:
 
-![Värden för distinkt räkning för Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics Distinct Count-värden](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -970,16 +1241,16 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
    1. Välj **[!UICONTROL filterName is (All)]** från **[!UICONTROL Filters on this visual]**.
    1. Välj **[!UICONTROL Basic filtering]** som **[!UICONTROL Filter type]**.
-   1. Under fältet **[!UICONTROL Search]** väljer du **[!UICONTROL Fishing Products]**, som är namnet på det befintliga filter som definieras i Customer Journey Analytics.
+   1. Under fältet **[!UICONTROL Search]** väljer du **[!UICONTROL Fishing Products]**, som är namnet på det befintliga filtret som definierats i Customer Journey Analytics.
    1. Välj **[!UICONTROL daterange is (All)]** från **[!UICONTROL Filters on this visual]**.
    1. Välj **[!UICONTROL Advanced filtering]** som **[!UICONTROL Filter type]**.
    1. Definiera filtret för **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort **[!UICONTROL filterName]** från **[!UICONTROL Columns]**.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort **[!UICONTROL daterange]** från **[!UICONTROL Columns]**.
 
-   Tabellen uppdateras med det använda **[!UICONTROL filterName]**-filtret. Ditt Power BI Desktop ska se ut så här nedan.
+   Tabellen uppdateras med det använda **[!UICONTROL filterName]**-filtret. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop använder datumintervallnamn för filter](assets/uc9-powerbi-final.png){zoomable="yes"}
+   ![Power BI Desktop använder datumintervallnamn för att filtrera](assets/uc9-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Skrivbord för Tablet PC]
@@ -997,7 +1268,32 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datorrankat filter för flera Dimensioner i Tableu ](assets/uc9-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc9-tableau-final.png){zoomable="yes"}
+
+>[!TAB Sökare]
+
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]** om du vill lägga till ytterligare ett filter.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Filter name]** i listan med fält.
+1. Kontrollera **[!UICONTROL is]** markeringen för filtret.
+1. Välj **[!UICONTROL Fishing Products]** i listan över möjliga värden.
+1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
+   1. Välj **[!UICONTROL Product Name]**.
+   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]**.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Distinkt antal sökare](assets/uc9-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1006,17 +1302,17 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 ## Använd dimensionsvärden för att filtrera
 
-Du skapar ett nytt filter i Customer Journey Analytics som filtrerar på produkter i jaktproduktkategorin. Sedan vill du använda det nya filtret för att rapportera produktnamn och förekomster (händelser) för produkter i jaktkategorin under januari 2023.
+Du skapar ett nytt filter i Customer Journey Analytics som filtrerar produkter i jaktproduktkategorin. Sedan vill du använda det nya filtret för att rapportera produktnamn och förekomster (händelser) för produkter i jaktkategorin under januari 2023.
 
 +++ Customer Journey Analytics
 
 Skapa ett nytt filter med **[!UICONTROL Title]** `Hunting Products` i Customer Journey Analytics.
 
-![Customer Journey Analytics Använd Dimensioner för att filtrera](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics använder Dimension-värden för att filtrera](assets/cja-hunting-products.png){zoomable="yes"}
 
 Du kan sedan använda det filtret i en exempelpanel **[!UICONTROL Using Dimension Values To Filter]** för att använda skiftläget:
 
-![Värden för distinkt räkning för Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
+![Customer Journey Analytics Distinct Count-värden](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1044,16 +1340,16 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 1. I rutan **[!UICONTROL Filters]**:
    1. Välj **[!UICONTROL filterName is (All)]** från **[!UICONTROL Filters on this visual]**.
    1. Välj **[!UICONTROL Basic filtering]** som **[!UICONTROL Filter type]**.
-   1. Under fältet **[!UICONTROL Search]** väljer du **[!UICONTROL Hunting Products]**, som är namnet på det befintliga filter som definieras i Customer Journey Analytics.
+   1. Under fältet **[!UICONTROL Search]** väljer du **[!UICONTROL Hunting Products]**, som är namnet på det befintliga filtret som definierats i Customer Journey Analytics.
    1. Välj **[!UICONTROL daterange is (All)]** från **[!UICONTROL Filters on this visual]**.
    1. Välj **[!UICONTROL Advanced filtering]** som **[!UICONTROL Filter type]**.
    1. Definiera filtret för **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort **[!UICONTROL filterName]** från **[!UICONTROL Columns]**.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort **[!UICONTROL daterange]** från **[!UICONTROL Columns]**.
 
-   Tabellen uppdateras med det använda **[!UICONTROL filterName]**-filtret. Ditt Power BI Desktop ska se ut så här nedan.
+   Tabellen uppdateras med det använda **[!UICONTROL filterName]**-filtret. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop använder datumintervallnamn för filter](assets/uc10-powerbi-final.png){zoomable="yes"}
+   ![Power BI Desktop använder datumintervallnamn för att filtrera](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
@@ -1073,7 +1369,32 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Datorrankat filter för flera Dimensioner i Tableu ](assets/uc10-tableau-final.png){zoomable="yes"}
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc10-tableau-final.png){zoomable="yes"}
+
+>[!TAB Sökare]
+
+1. I 1. Uppdatera anslutningen i **[!UICONTROL Explore]**-gränssnittet för Looker. Välj ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]** om du vill lägga till ytterligare ett filter.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Product Category]** i listan med fält.
+1. Kontrollera **[!UICONTROL is]** som markering för filtret.
+1. Välj **[!UICONTROL Hunting Products]** i listan över möjliga värden.
+1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
+   1. Välj **[!UICONTROL Product Name]**.
+   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
+1. Välj **[!UICONTROL Run]**.
+
+Du bör se en liknande tabell som nedan.
+
+![Distinkt antal sökare](assets/uc10-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1089,7 +1410,7 @@ I det här fallet vill du rapportera om inköpsinkomster och inköp för produkt
 
 Ett exempel på **[!UICONTROL Sort]**-panel för användningsfallet:
 
-![Panelen Sortera Customer Journey Analytics](assets/cja-sort.png){zoomable="yes"}
+![Panelen Customer Journey Analytics-sortering](assets/cja-sort.png){zoomable="yes"}
 
 +++
 
@@ -1121,9 +1442,9 @@ Ett exempel på **[!UICONTROL Sort]**-panel för användningsfallet:
 
 1. I rapporten väljer du **[!UICONTROL Sum of purchase_revenue]** för att sortera tabellen i fallande ordning efter inköpsintäkt.
 
-   Ditt Power BI Desktop ska se ut så här nedan.
+   Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop använder datumintervallnamn för filter](assets/uc11-powerbi-final.png){zoomable="yes"}
+   ![Power BI Desktop använder datumintervallnamn för att filtrera](assets/uc11-powerbi-final.png){zoomable="yes"}
 
 Frågan som körs av Power BI Desktop med BI-tillägget innehåller inte någon `sort`-sats. Avsaknaden av en `sort`-sats tyder på att sorteringen körs på klientsidan.
 
@@ -1243,6 +1564,53 @@ WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."
 GROUP BY 1
 ```
 
+>[!TAB Sökare]
+
+1. Uppdatera anslutningen i **[!UICONTROL Explore]**-gränssnittet för Looker. Välj ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Välj **[!UICONTROL Product Name]** i avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen.
+1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
+   1. Välj **[!UICONTROL Custom Measure]** i listrutan **[!UICONTROL + Add]**.
+   1. I dialogrutan **[!UICONTROL Create custom measure]**:
+      1. Välj **[!UICONTROL Purchase Revenue]** i listrutan **[!UICONTROL Field to measure]**.
+      1. Välj **[!UICONTROL Sum]** i listrutan **[!UICONTROL Measure type]**.
+      1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchase Revenue`.
+      1. Välj fliken **[!UICONTROL Field details]**.
+      1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
+         ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
+      1. Välj **[!UICONTROL Save]**.
+1. Se till att du väljer **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) i kolumnen **[!UICONTROL Purchase Revenue]**.
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]**.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Distinkt antal sökare](assets/uc11-looker-result.png){zoomable="yes"}
+
+
+Frågan som genereras av Looker med BI-tillägget inkluderar `ORDER BY`, vilket betyder att sorteringen utförs med Looker och BI-tillägget.
+
+```sql
+-- Looker Query Context '{"user_id":6,"history_slug":"fc83573987b999306eaf6e1a3f2cde70","instance_slug":"71d4667f0b76c0011463658f45c3f7a3"}' 
+SELECT
+    cc_data_view."product_name"  AS "cc_data_view.product_name",
+    COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "purchase_revenue"
+FROM
+    "public"."cc_data_view" AS "cc_data_view"
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 500 ROWS ONLY
+```
+
 >[!ENDTABS]
 
 +++
@@ -1255,7 +1623,7 @@ I det här fallet vill du rapportera de fem vanligaste förekomsterna av produkt
 
 Ett exempel på **[!UICONTROL Limit]**-panel för användningsfallet:
 
-![Panelen Gräns för Customer Journey Analytics](assets/cja-limit.png){zoomable="yes"}
+![Customer Journey Analytics Limit-panelen](assets/cja-limit.png){zoomable="yes"}
 
 +++
 
@@ -1289,11 +1657,11 @@ Ett exempel på **[!UICONTROL Limit]**-panel för användningsfallet:
 1. I visualiseringsfönstret:
    * Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort daterange från kolumner.
 
-   Ditt Power BI Desktop ska se ut så här nedan.
+   Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop använder datumintervallnamn för filter](assets/uc12-powerbi-final.png){zoomable="yes"}
+   ![Power BI Desktop använder datumintervallnamn för att filtrera](assets/uc12-powerbi-final.png){zoomable="yes"}
 
-Frågan som körs av Power BI Desktop med BI-tillägget innehåller en `limit`-sats, men inte den som förväntades. Gränsen för de 5 högsta förekomsterna tillämpas av Power BI Desktop med uttryckliga produktnamnsresultat.
+Frågan som körs av Power BI Desktop med BI-tillägget innehåller en `limit`-sats, men inte den som förväntades. Gränsen för de fem högsta förekomsterna tillämpas av Power BI Desktop med explicit produktnamnsresultat.
 
 ```sql
 select "_"."product_name",
@@ -1433,13 +1801,52 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
+>[!TAB Sökare]
+
+1. Uppdatera anslutningen i **[!UICONTROL Explore]**-gränssnittet för Looker. Välj ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. Kontrollera att du har en ren konfiguration i gränssnittet **[!UICONTROL Explore]** för Looker. Om inte väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]**.
+1. I dialogrutan **[!UICONTROL Add Filter]**:
+   1. Välj **[!UICONTROL ‣ Cc Data View]**
+   1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
+      ![Looker-filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
+   1. Välj **[!UICONTROL Product Name]**.
+   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
+1. Se till att du väljer **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) i kolumnen **[!UICONTROL Purchase Revenue]**.
+1. Se till att du väljer **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) i kolumnen **[!UICONTROL Purchase Revenue]**.
+1. Välj **[!UICONTROL Run]**.
+1. Välj **[!UICONTROL ‣ Visualization]**.
+
+En visualisering och en tabell som liknar den visas nedan.
+
+![Distinkt antal sökare](assets/uc12-looker-result.png){zoomable="yes"}
+
+Frågan som genereras av Looker med BI-tillägget inkluderar `FETCH NEXT 5 ROWS ONLY`, vilket innebär att gränsen körs via Looker och BI-tillägget.
+
+```sql
+-- Looker Query Context '{"user_id":6,"history_slug":"a8f3b1ebd5712413ca1ae695090f70db","instance_slug":"71d4667f0b76c0011463658f45c3f7a3"}' 
+SELECT
+    cc_data_view."product_name"  AS "cc_data_view.product_name",
+    COUNT(*) AS "cc_data_view.count"
+FROM
+    "public"."cc_data_view" AS "cc_data_view"
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2024-01-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 5 ROWS ONLY
+```
+
 >[!ENDTABS]
 
 +++
 
 ## Omformningar
 
-Du vill förstå omformningarna av Customer Journey Analytics-objekt som dimensioner, mått, filter, beräknade mått och datumintervall med de olika BI-verktygen.
+Du vill förstå omformningarna av Customer Journey Analytics-objekt som dimensioner, mått, filter, beräknade värden och datumintervall med de olika BI-verktygen.
 
 +++ Customer Journey Analytics
 
@@ -1459,36 +1866,36 @@ Du använder komponenter som [Filter](/help/components/filters/filters-overview.
 
 >[!TAB Power BI Desktop]
 
-Objekten Customer Journey Analytics är tillgängliga i rutan **[!UICONTROL Data]** och hämtas från tabellen som du har markerat i Power BI Desktop. Exempel: **[!UICONTROL public.cc_data_view]**. Tabellens namn är detsamma som det externa ID som du har definierat för datavyn i Customer Journey Analytics. Datavy med till exempel **[!UICONTROL Title]** `C&C - Data View` och **[!UICONTROL External ID]** `cc_data_view`.
+Customer Journey Analytics-objekten är tillgängliga i rutan **[!UICONTROL Data]** och hämtas från tabellen som du har valt i Power BI Desktop. Exempel: **[!UICONTROL public.cc_data_view]**. Tabellnamnet är detsamma som det externa ID som du har definierat för datavyn i Customer Journey Analytics. Datavy med till exempel **[!UICONTROL Title]** `C&C - Data View` och **[!UICONTROL External ID]** `cc_data_view`.
 
 **Dimensioner**
-Dimensioner från Customer Journey Analytics identifieras av [!UICONTROL Component ID] . [!UICONTROL Component ID] definieras i datavyn i Customer Journey Analytics. Dimensionen **[!UICONTROL Product Name]** i Customer Journey Analytics har till exempel [!UICONTROL Component ID] **[!UICONTROL product_name]** som är namnet på dimensionen i Power BI Desktop.
-Datumintervalldimensioner från Customer Journey Analytics, som **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]** och mer, är tillgängliga som **[!UICONTROL daterangeday]**, **[!UICONTROL daterangeweek]**, **[!UICONTROL daterangemonth]** med flera.
+Dimensioner från Customer Journey Analytics identifieras av [!UICONTROL Component ID] . [!UICONTROL Component ID] definieras i datavyn för Customer Journey Analytics. Dimensionen **[!UICONTROL Product Name]** i Customer Journey Analytics har till exempel [!UICONTROL Component ID] **[!UICONTROL product_name]** som är namnet på dimensionen i Power BI Desktop.
+Datumintervallsdimensioner från Customer Journey Analytics, som **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]** och mer, är tillgängliga som **[!UICONTROL daterangeday]**, **[!UICONTROL daterangeweek]**, **[!UICONTROL daterangemonth]** med flera.
 
 **Mätvärden**
-Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Component ID] . [!UICONTROL Component ID] definieras i datavyn i Customer Journey Analytics. Måttet **[!UICONTROL Purchase Revenue]** i Customer Journey Analytics har till exempel [!UICONTROL Component ID] **[!UICONTROL purchase_revenue]** som är namnet på måttet i Power BI Desktop. En **[!UICONTROL ∑]** indikerar mått. När du använder ett mätvärde i en visualisering får måttet det nya namnet **[!UICONTROL Sum of *metric *]**.
+Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Component ID] . [!UICONTROL Component ID] definieras i datavyn för Customer Journey Analytics. Måttet **[!UICONTROL Purchase Revenue]** i Customer Journey Analytics har till exempel [!UICONTROL Component ID] **[!UICONTROL purchase_revenue]** som är namnet på måttet i Power BI Desktop. En **[!UICONTROL ∑]** indikerar mått. När du använder ett mätvärde i en visualisering får måttet det nya namnet **[!UICONTROL Sum of *metric *]**.
 
 **Filter**
 Filter som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL filterName]** . När du använder ett **[!UICONTROL filterName]**-fält i Power BI Desktop kan du ange vilket filter som ska användas.
 
 **Beräknade mått**
-Beräknade mått som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] du har definierat för det beräknade måttet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**t i Power BI Desktop.
+Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**t i Power BI Desktop.
 
 **Datumintervall**
 Datumintervall som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL daterangeName]** . När du använder ett **[!UICONTROL daterangeName]**-fält kan du ange vilket datumintervall som ska användas.
 
 **Anpassade omformningar**
-Power BI Desktop tillhandahåller anpassade omformningsfunktioner med hjälp av [DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/dax-overview). Du vill till exempel köra ett fall där en dimension rangordnas med produktnamn i gemener.
+Power BI Desktop har anpassade omvandlingsfunktioner med [DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/dax-overview). Du vill till exempel köra [Single dimension rankad](#single-dimension-ranked) med produktnamn i gemener.
 
 1. Välj fältvisualisering i rapportvyn.
-1. Välj product_name i datapanelen.
-1. Välj Ny kolumn i verktygsfältet.
+1. Välj **[!UICONTROL product_name]** i datapanelen.
+1. Välj **[!UICONTROL New column]** i verktygsfältet.
 1. I formelredigeraren definierar du en ny kolumn med namnet `product_name_lower`, som `product_name_lower = LOWER('public.cc_data_view[product_name])`.
    ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png){zoomable="yes"}
-1. Se till att du väljer den nya kolumnen product_name_lower i rutan Data i stället för kolumnen product_name.
-1. Välj Rapportera som tabell från ![Mer](/help/assets/icons/More.svg) i tabellvisualiseringen.
+1. Se till att du väljer den nya kolumnen **[!UICONTROL product_name_lower]** i rutan **[!UICONTROL Data]** i stället för kolumnen **[!UICONTROL product_name]**.
+1. Välj **[!UICONTROL Report as Table]** från ![Mer](/help/assets/icons/More.svg) i tabellvisualiseringen.
 
-   Ditt Power BI Desktop ska se ut så här nedan.
+   Ditt Power BI-skrivbord ska se ut så här nedan.
    ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png){zoomable="yes"}
 
 Den anpassade omvandlingen resulterar i en uppdatering av SQL-frågor. Se hur funktionen `lower` används i SQL-exemplet nedan:
@@ -1534,26 +1941,26 @@ limit 1000001
 
 >[!TAB Skrivbord för Tablet PC]
 
-Objekten Customer Journey Analytics är tillgängliga i sidofältet **[!UICONTROL Data]** när du arbetar i ett blad. Och hämtas från tabellen som du har valt som en del av sidan **[!UICONTROL Data source]** i Tableau. Exempel: **[!UICONTROL cc_data_view]**. Tabellens namn är detsamma som det externa ID som du har definierat för datavyn i Customer Journey Analytics. Datavy med till exempel **[!UICONTROL Title]** `C&C - Data View` och **[!UICONTROL External ID]** `cc_data_view`.
+Customer Journey Analytics-objekten är tillgängliga i sidlisten **[!UICONTROL Data]** när du arbetar i ett blad. Och hämtas från tabellen som du har valt som en del av sidan **[!UICONTROL Data source]** i Tableau. Exempel: **[!UICONTROL cc_data_view]**. Tabellnamnet är detsamma som det externa ID som du har definierat för datavyn i Customer Journey Analytics. Datavy med till exempel **[!UICONTROL Title]** `C&C - Data View` och **[!UICONTROL External ID]** `cc_data_view`.
 
 **Dimensioner**
-Dimensioner från Customer Journey Analytics identifieras av [!UICONTROL Component name] . [!UICONTROL Component name] definieras i datavyn i Customer Journey Analytics. Dimensionen **[!UICONTROL Product Name]** i Customer Journey Analytics har till exempel [!UICONTROL Component name] **[!UICONTROL Product Name]** som är namnet på dimensionen i Tableau. Alla dimensioner identifieras av **[!UICONTROL Abc]**.
-Datumintervalldimensioner från Customer Journey Analytics, som **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]** och mer, är tillgängliga som **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]** med flera. När du använder en datumintervalldimension måste du välja en lämplig definition av datum och tid som ska användas på den datumintervalldimensionen i listrutan. Exempel: **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
+Dimensioner från Customer Journey Analytics identifieras av [!UICONTROL Component name] . [!UICONTROL Component name] definieras i datavyn för Customer Journey Analytics. Dimensionen **[!UICONTROL Product Name]** i Customer Journey Analytics har till exempel en [!UICONTROL Component name] **[!UICONTROL Product Name]** som är namnet på dimensionen i Tableau. Alla dimensioner identifieras av **[!UICONTROL Abc]**.
+Datumintervallsdimensioner från Customer Journey Analytics, som **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]** och mer, är tillgängliga som **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]** med flera. När du använder en datumintervalldimension måste du välja en lämplig definition av datum och tid som ska användas på den datumintervalldimensionen i listrutan. Exempel: **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
 
 **Mätvärden**
-Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Component Name] . [!UICONTROL Component Name] definieras i datavyn i Customer Journey Analytics. Måttet **[!UICONTROL Purchase Revenue]** i Customer Journey Analytics har till exempel [!UICONTROL Component Name] **[!UICONTROL Purchase Revenue]** som är namnet på måttet i Tableau. Alla mått identifieras av **[!UICONTROL #]**. När du använder ett mätvärde i en visualisering får måttet det nya namnet **[!UICONTROL Sum(*metric *)]**.
+Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Component Name] . [!UICONTROL Component Name] definieras i datavyn för Customer Journey Analytics. Måttet **[!UICONTROL Purchase Revenue]** i Customer Journey Analytics har till exempel [!UICONTROL Component Name] **[!UICONTROL Purchase Revenue]** som är namnet på måttet i Tableau. Alla mått identifieras av **[!UICONTROL #]**. När du använder ett mätvärde i en visualisering får måttet det nya namnet **[!UICONTROL Sum(*metric *)]**.
 
 **Filter**
 Filter som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL Filter Name]** . När du använder ett **[!UICONTROL Filter Name]**-fält i Tableau kan du ange vilket filter som ska användas.
 
 **Beräknade mått**
-Beräknade mått som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL Title] du har definierat för det beräknade måttet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** och visas som **[!UICONTROL Cm Product Name Count Distinct]** i Tableau.
+Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL Title] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** och visas som **[!UICONTROL Cm Product Name Count Distinct]** i Tableau.
 
 **Datumintervall**
 Datumintervall som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL Daterange Name]** . När du använder ett **[!UICONTROL Daterange Name]**-fält kan du ange vilket datumintervall som ska användas.
 
 **Anpassade omformningar**
-Tableu Desktop har anpassade omformningsfunktioner som använder [Beräknade fält](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Du vill till exempel köra ett fall där en dimension rangordnas med produktnamn i gemener.
+Tableu Desktop har anpassade omformningsfunktioner som använder [Beräknade fält](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Du vill till exempel köra [Single dimension rankad](#single-dimension-ranked) med produktnamn i gemener.
 
 1. Välj **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** på huvudmenyn.
    1. Definiera **[!UICONTROL Lowercase Product Name]** med funktionen `LOWER([Product Name])`.
@@ -1580,6 +1987,57 @@ GROUP BY 1
 HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
 ```
 
+>[!TAB Sökare]
+
+Customer Journey Analytics-objekten är tillgängliga i gränssnittet **[!UICONTROL Explore]**. Och hämtas som en del av konfigurationen av anslutningen, projektet och modellen i Looker. Exempel: **[!UICONTROL cc_data_view]**. Vyns namn är detsamma som det externa ID som du har definierat för datavyn i Customer Journey Analytics. Datavy med till exempel **[!UICONTROL Title]** `C&C - Data View` och **[!UICONTROL External ID]** `cc_data_view`.
+
+**Dimensioner**
+Dimensioner från Customer Journey Analytics visas som **[!UICONTROL DIMENSION]** i den **[!UICONTROL Cc Data View]** vänstra listen. Dimensionen definieras i datavyn för Customer Journey Analytics. Dimensionen **[!UICONTROL Product Name]** i Customer Journey Analytics har till exempel en **[!UICONTROL DIMENSION]** **[!UICONTROL Product Name]** som är namnet på dimensionen i Looker.
+Datumintervallsdimensioner från Customer Journey Analytics, som **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]** och mer, är tillgängliga som **[!UICONTROL Daterangeday Date]**, **[!UICONTROL Daterangeweek Date]**, **[!UICONTROL Daterangemonth Date]** med flera.  När du använder en datumintervalldimension måste du välja en lämplig definition av datum och tid. Exempel: **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Date]**.
+
+**Mätvärden**
+Mätvärden från Customer Journey Analytics listas som **[!UICONTROL DIMENSION]** i den **[!UICONTROL Cc Data View]** vänstra listen. Måttet **[!UICONTROL Purchase Revenue]** i Customer Journey Analytics har till exempel **[!UICONTROL DIMENSION]** **[!UICONTROL Purchase Revenue]**. Om du vill använda som mätvärde skapar du ett anpassat måttfält så som visas i exemplen ovan, eller använder kortkommandot för en dimension. Välj till exempel **[!UICONTROL ⋮]**, **[!UICONTROL Aggregate]** och sedan **[!UICONTROL Sum]**.
+
+**Filter**
+Filter som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL Filter Name]** . När du använder ett **[!UICONTROL Filter Name]**-fält i Looker kan du ange vilket filter som ska användas.
+
+**Beräknade mått**
+Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL Title] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** och visas som **[!UICONTROL Cm Product Name Count Distinct]** i Looker.
+
+**Datumintervall**
+Datumintervall som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL Daterange Name]** . När du använder ett **[!UICONTROL Daterange Name]**-fält kan du ange vilket datumintervall som ska användas.
+
+**Anpassade omformningar**
+Looker tillhandahåller anpassade omformningsfunktioner med hjälp av anpassade fältbyggare, vilket visas ovan. Du vill till exempel köra [Single dimension rankad](#single-dimension-ranked) med produktnamn i gemener.
+
+1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
+   1. Välj **[!UICONTROL Custom Dimension]** i listrutan **[!UICONTROL + Add]**.
+   1. Ange `lower(${cc_data_view.product_name})` i textområdet **[!UICONTROL Expression]**. Du får hjälp med rätt syntax när du börjar skriva `Product Name`.
+      ![Exempel på sökomformning](assets/uc14-looker-transformation.png){zoomable="yes"}
+   1. Ange `product name` som **[!UICONTROL Name]**.
+   1. Välj **[!UICONTROL Save]**.
+
+Du bör se en liknande tabell som nedan.
+
+![Sökomformningsresultat](assets/uc14-looker-result.png){zoomable="yes"}
+
+
+Den anpassade omvandlingen resulterar i en uppdatering av SQL-frågor. Se hur funktionen `LOWER` används i SQL-exemplet nedan:
+
+```sql
+SELECT
+    LOWER((cc_data_view."product_name")) AS "product_name",
+    COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchase_revenue",
+    COALESCE(SUM(CAST(( cc_data_view."purchases"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchases"
+FROM public.cc_data_view  AS cc_data_view
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-01')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2024-01-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 500 ROWS ONLY
+```
+
 >[!ENDTABS]
 
 +++
@@ -1604,9 +2062,9 @@ Customer Journey Analytics har ett antal visualiseringar. Se [Visualiseringar](/
 
 ### Jämförelse
 
-För de flesta visualiseringar i Customer Journey Analytics erbjuder Power BI Desktop likvärdiga upplevelser. Se tabellen nedan.
+För de flesta visualiseringar från Customer Journey Analytics erbjuder Power BI Desktop likvärdiga upplevelser. Se tabellen nedan.
 
-| Ikon | Customer Journey Analytics visualisering | Power BI Desktop-visualisering |
+| Ikon | Customer Journey Analytics visualisering | Power BI datorvisualisering |
 | :---: | --- | ---| 
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Område](/help/analysis-workspace/visualizations/area.md) | [Ytdiagram, staplat ytdiagram och 100 % ytdiagram](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#area-charts-basic-layered-and-stacked) |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Bar](/help/analysis-workspace/visualizations/bar.md) | [Grupperat kolumndiagram](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
@@ -1635,13 +2093,13 @@ För de flesta visualiseringar i Customer Journey Analytics erbjuder Power BI De
 
 ### Detaljgranska
 
-Power BI stöder ett [detaljerat läge](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) för att utforska detaljinformation om vissa visualiseringar. I exemplet nedan analyserar du inköpsinkomster för produktkategorier. På snabbmenyn för ett fält som representerar en produktkategori kan du välja **[!UICONTROL Drill down]**.
+Power BI har stöd för ett [detaljerat läge](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) för att utforska detaljerad information om vissa visualiseringar. I exemplet nedan analyserar du inköpsinkomster för produktkategorier. På snabbmenyn för ett fält som representerar en produktkategori kan du välja **[!UICONTROL Drill down]**.
 
-![Power BI-borrning nedåt](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
+![Power BI - detaljnivå](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
 Detaljgranska uppdaterar visualiseringen med inköpsintäkter för produkter i den valda produktkategorin.
 
-![Power BI-fördjupning](assets/uc15-powerbi-drillup.png){zoomable="yes"}
+![Power BI - detaljnivå](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
 Detaljnivån resulterar i följande SQL-fråga som använder en `WHERE`-sats:
 
@@ -1687,9 +2145,9 @@ limit 1001
 
 ### Jämförelse
 
-För de flesta visualiseringar i Customer Journey Analytics erbjuder Tableau likvärdiga upplevelser. Se tabellen nedan.
+För de flesta visualiseringar från Customer Journey Analytics erbjuder Tableau Desktop likvärdiga upplevelser. Se tabellen nedan.
 
-| Ikon | Customer Journey Analytics visualisering | Power BI Desktop-visualisering |
+| Ikon | Customer Journey Analytics visualisering | Power BI datorvisualisering |
 | :---: | --- | ---| 
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Område](/help/analysis-workspace/visualizations/area.md) | [Ytdiagram](https://help.tableau.com/current/pro/desktop/en-us/qs_area_charts.htm) |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Bar](/help/analysis-workspace/visualizations/bar.md) | [Stolpdiagram](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
@@ -1722,7 +2180,7 @@ Tableau stöder [detaljerat läge](https://learn.microsoft.com/en-us/power-bi/co
 
 ![Detaljnivå för flikar](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
-Detaljnivån uppdaterar visualiseringen med inköpsintäkterna för produkter i den valda produktkategorin.
+Detaljgranska uppdaterar visualiseringen med inköpsintäkter för produkter i den valda produktkategorin.
 
 ![Tabbladet - detaljnivå upp](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
@@ -1747,6 +2205,38 @@ Du kan också skapa en detaljerad kontrollpanel där ett visuellt värde är res
 ![Visualiseringsfilter för Tablet PC](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
 
 
+>[!TAB Sökare]
+
+### Jämförelse
+
+För de flesta visualiseringar från Customer Journey Analytics erbjuder Looker likvärdiga upplevelser. Se tabellen nedan.
+
+| Ikon | Customer Journey Analytics visualisering | Power BI datorvisualisering |
+| :---: | --- | ---| 
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [Område](/help/analysis-workspace/visualizations/area.md) | [Ytdiagram](https://cloud.google.com/looker/docs/area-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Bar](/help/analysis-workspace/visualizations/bar.md) | [Stolpdiagram](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Stapel staplad](/help/analysis-workspace/visualizations/bar.md) | [Stolpdiagram](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Punkt](/help/analysis-workspace/visualizations/bullet-graph.md) | [Punktdiagram](https://cloud.google.com/looker/docs/bullet-chart) |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
+| ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](/help/analysis-workspace/visualizations/combo-charts.md) | [Anpassa visualiseringar](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings) |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | [Ringdiagram](https://cloud.google.com/looker/docs/donut-multiples-options) |
+| ![ConversionTratt](/help/assets/icons/ConversionFunnel.svg) | [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Tratt](https://cloud.google.com/looker/docs/funnel-options) |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | [Sankey](https://cloud.google.com/looker/docs/sankey) |
+| ![VisaTabell](/help/assets/icons/ViewTable.svg)</p> | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tabell](https://cloud.google.com/looker/docs/table-options) |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) | |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Vågrätt fält](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Stolpdiagram](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarHorizontalStached](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Vågrätt fält staplat](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Stolpdiagram](https://cloud.google.com/looker/docs/bar-options) |
+| ![Förgrening3](/help/assets/icons/Branch3.svg) | [Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Sammanfattning av nyckelmått](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linjediagram](/help/analysis-workspace/visualizations/line.md) | [Linjediagram](https://cloud.google.com/looker/docs/line-options) |
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Spridning](/help/analysis-workspace/visualizations/scatterplot.md) | [Spridningsdiagram](https://cloud.google.com/looker/docs/scatter-options) |
+| ![PageRule](/help/assets/icons/PageRule.svg) | [Avsnittshuvud](/help/analysis-workspace/visualizations/section-header.md) |  |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) | [Enkelt värde](https://cloud.google.com/looker/docs/single-value-options) |
+| ![123](/help/assets/icons/123.svg)</p> | [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md) | [Enkelt värde](https://cloud.google.com/looker/docs/single-value-options) |
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Enkelt värde](https://cloud.google.com/looker/docs/single-value-options) |
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md) | [Treemap-diagram](https://cloud.google.com/looker/docs/treemap) |
+| ![Typ](/help/assets/icons/TwoDots.svg) | [Venndiagram](/help/analysis-workspace/visualizations/venn.md) | [Venndiagram](https://cloud.google.com/looker/docs/venn) |
+
 >[!ENDTABS]
 
 +++
@@ -1754,7 +2244,7 @@ Du kan också skapa en detaljerad kontrollpanel där ett visuellt värde är res
 
 ## Caveats
 
-Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med tillägget Customer Journey Analytics BI.
+Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med Customer Journey Analytics BI-tillägget.
 
 +++ BI-verktyg
 
@@ -1762,19 +2252,27 @@ Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med til
 
 >[!TAB Power BI Desktop]
 
-* Power BI Desktop Avancerad filtrering av datumintervall är exklusiv.  För slutdatumet måste du välja ett som är efter dagen som du vill rapportera på. Till exempel **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
-* Power BI Desktop har standardvärdet **[!UICONTROL Import]** när du skapar en anslutning. Kontrollera att du använder **[!UICONTROL Direct Query]**.
+* Power BI Desktop Advanced datumintervallfiltrering är exklusiv.  För slutdatumet måste du välja ett som är efter dagen som du vill rapportera på. Exempel: **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
+* Power BI Skrivbord är som standard **[!UICONTROL Import]** när du skapar en anslutning. Kontrollera att du använder **[!UICONTROL Direct Query]**.
 * Power BI Desktop visar dataomvandlingar via Power Query.  Power Query fungerar i första hand med Import-typanslutningar så många omformningar som du använder som datum- eller strängfunktioner ger ett felmeddelande om att du måste växla till en Import-typanslutning.  Om du behöver omforma data vid frågetillfället bör du använda härledda dimensioner och mätvärden så att Power BI inte behöver göra själva omformningarna.
-* Power BI Desktop förstår inte hur typkolumner för datum och tid ska hanteras. Därför stöds inte måtten **[!UICONTROL daterange*X *]**som **[!UICONTROL daterangehour]**och **[!UICONTROL daterangeminute]**.
+* Power BI Desktop förstår inte hur typkolumner för datum och tid ska hanteras. Därför stöds inte **[!UICONTROL daterange*X *]**-dimensioner som **[!UICONTROL daterangehour]**och **[!UICONTROL daterangeminute]**.
 * Power BI Desktop försöker som standard skapa flera anslutningar med hjälp av fler sessioner i frågetjänsten.  Gå till Power BI-inställningarna för ditt projekt och inaktivera parallella frågor.
-* Power BI Desktop gör all sortering och begränsar kundens möjligheter. Power BI Desktop har också olika semantik för toppfiltrering av *X* som innehåller bundna värden. Du kan alltså inte skapa samma sortering och begränsning som i Analysis Workspace.
-* I tidigare versioner av Power BI Desktop, oktober 2024-versionen bryts PostgreSQL-datakällor. Se till att du använder den version som omnämns i den här artikeln.
+* Power BI Desktop sköter all sortering och begränsning på klientsidan. Power BI Desktop har också olika semantik för toppfiltrering av *X* som innehåller bundna värden. Du kan alltså inte skapa samma sortering och begränsning som i Analysis Workspace.
+* I tidigare versioner av Power BI Desktop, oktober 2024-versionen, bryts PostgreSQL-datakällor. Se till att du använder den version som omnämns i den här artikeln.
 
 >[!TAB Skrivbord för Tablet PC]
 
 * Datumfiltreringen för Tableu är exklusiv. För slutdatumet måste du välja ett som är efter dagen som du vill rapportera på.
 * När du lägger till ett datum- eller datum-/tidsmått som **[!UICONTROL Daterangemonth]** på raderna i ett blad, radbryts fältet i en **[!UICONTROL YEAR()]**-funktion.  För att få det du vill ha måste du markera dimensionen och välja den datumfunktion som du vill använda i listrutan.  Ändra till exempel **[!UICONTROL Year]** till **[!UICONTROL Month]** när du försöker använda **[!UICONTROL Daterangemonth]**.
 * Det är inte uppenbart att resultaten begränsas till de övre *X* i skrivbordet i Tableu. Du kan begränsa resultaten explicit eller använda ett beräkningsfält och funktionen **[!UICONTROL INDEX()]**.  Om du lägger till ett översta *X*-filter i en dimension genereras komplex SQL med hjälp av en inre koppling som inte stöds.
+
+>[!TAB Sökare]
+
+* Looker har ett maximalt antal anslutningar per nod som måste vara mellan 5 och 100.  Du kan inte ange värdet 1.  Den här inställningen innebär att en Looker-anslutning alltid använder minst 5 av de tillgängliga frågetjänstsessionerna.
+* Med Looker kan du skapa ett projekt med en vy som baseras på en Customer Journey Analytics datavy. Looker skapar sedan en modell baserad på de mått och mätvärden som är tillgängliga i datavyn med LookerML.  Den här projektvyn uppdateras inte automatiskt så att den matchar källan.  Om du ändrar eller lägger till mått, mått, beräknade värden eller filter i CJA-datavyn visas inte dessa ändringar automatiskt i Looker.  Du måste uppdatera projektvyn manuellt eller skapa ett nytt projekt.
+* Uppslagets användarupplevelse i datum- eller datum-/tidsfält som **[!UICONTROL Daterange Date]** eller **[!UICONTROL Daterangeday Date]** är förvirrande.
+* Lookers datumintervall är exklusivt i stället för inkluderande.  **[!UICONTROL until (before)]** är grått, så du kanske missar den aspekten.  För slutdagen måste du välja en som ligger efter den dag du vill rapportera på.
+* Looker behandlar inte automatiskt mätvärden.  När du väljer ett mätvärde försöker Looker som standard att behandla mätvärdet som en dimension i frågan.  Om du vill behandla en mätmetod som en mätmetod måste du skapa ett anpassat fält enligt bilden ovan. Som genväg kan du välja **[!UICONTROL ⋮]**, markera **[!UICONTROL Aggregate]** och sedan välja **[!UICONTROL Sum]**.
 
 >[!ENDTABS]
 
