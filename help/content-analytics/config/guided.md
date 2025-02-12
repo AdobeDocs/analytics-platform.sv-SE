@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 1%
@@ -256,7 +256,7 @@ För en befintlig konfiguration kan du inte redigera taggegenskapen. Du kan dock
 
 * Om du vill redigera vilka resurser som ska inkluderas eller exkluderas när du samlar in data för innehållsanalys väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Asset]**.
 
-### Sammanfattning
+### Sammanfattning {#summary}
 
 När du har angett all nödvändig information visas en sammanfattning med information om de artefakter som skapas eller ändras.
 
@@ -266,7 +266,7 @@ När du har angett all nödvändig information visas en sammanfattning med infor
 
 ![Konfigurationssammanfattning för innehållsanalys](../assets/aca-configuration-summary.png)
 
-### Åtgärder
+### Åtgärder {#actions}
 
 <!-- markdownlint-disable MD034 -->
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="Lägg till logik för XDM-datainsamling i taggen"
->abstract="Med inläsartaggen installerad på din plats kan du lägga till regler och dataelement för att fylla i ett XDM-objekt som ska skickas till Adobe. Adobe rekommenderar att du underhåller ett designdokument för lösningen för att spåra hur taggarna är konfigurerade.<br><br>Det här steget innehåller mycket arbete eftersom det handlar om att konfigurera all Analytics-logik för din egenskap. Förvänta dig att en månad eller längre ska dedikera rätt taggregler, testa dem och distribuera dem på din webbplats."
+>abstract="Med inläsartaggen installerad på din webbplats kan du lägga till regler och dataelement för att fylla i ett XDM-objekt som ska skickas till Adobe. Adobe rekommenderar att du underhåller ett designdokument för en lösning som håller reda på hur taggarna är konfigurerade.<br><br>Det här steget innehåller mycket arbete eftersom det handlar om att konfigurera all Analytics-logik för din egenskap. Förvänta dig att en månad eller längre ska dedikera rätt taggregler, testa dem och distribuera dem på din webbplats."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -85,13 +85,13 @@ Så här skapar du ett dataelement för sidnamn:
 
 1. Välj **[!UICONTROL Save]**.
 
-   Nu vill du ställa in ett dataelement som refererar till det Experience Cloud-ID som automatiskt tillhandahålls av Adobe Experience Platform Web SDK och som är tillgängligt via tillägget för Experience Cloud ID-tjänsten.
+   Nu vill du skapa ett dataelement som refererar till det Experience Cloud-id som automatiskt tillhandahålls av Adobe Experience Platform Web SDK och som är tillgängligt via Experience Cloud ID-tjänsttillägget.
 
 1. Fortsätt med [ECID-dataelementet](#ecid-data-element).
 
 #### ECID-dataelement
 
-Ett vanligt dataelement som gäller de flesta organisationer är ett dataelement som samlar in Experience Cloud-ID:t för varje person som besöker webbplatsen.
+Ett vanligt dataelement som gäller de flesta organisationer är ett dataelement som samlar in Experience Cloud-id:t för varje person som besöker er webbplats.
 
 Så här skapar du ett ECID-dataelement:
 
@@ -293,7 +293,7 @@ Så här skapar och publicerar du en tagg:
 
 1. Välj **[!UICONTROL + Add All Changed Resources]**.
 
-   ![Publish - Skapa bibliotek](assets/create-library-aep.png)
+   ![Publicera - Skapa bibliotek](assets/create-library-aep.png)
 
 1. Välj **[!UICONTROL Save & Build to Development]**.
 
@@ -301,4 +301,4 @@ Så här skapar och publicerar du en tagg:
 
 1. Du kan välja **[!UICONTROL ...]** om du vill återskapa biblioteket eller flytta biblioteket till en staging- eller produktionsmiljö.
 
-   ![Publish - Bygg bibliotek](assets/build-library.png)
+   ![Publicera - Bygg bibliotek](assets/build-library.png)

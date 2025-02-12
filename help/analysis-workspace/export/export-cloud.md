@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
->title="Skapa fullständig registerexport som liknar Data Warehouse"
+>title="Skapa fullregisterexporter som liknar Data Warehouse"
 >abstract="Fullständig tabellexport är tillgänglig så snart du ser data i Analysis Workspace. Du kan skapa eller schemalägga fullständig tabellexport efter behov.<br><br>Det tar bara några minuter att slutföra skapandet av fullständig tabellexport om du redan vet vilka data som ska inkluderas i exporten."
 
 <!-- markdownlint-enable MD034 -->
@@ -125,7 +125,7 @@ En manifestfil med filnamnet `cja-export-{reportInstanceId}-{idx}.json.gz` ingå
 
 ## Fördelar med att exportera till molnet
 
-Genom att exportera Customer Journey Analytics data till molnet kan du:
+Genom att exportera Customer Journey Analytics-data till molnet kan du:
 
 * Exportera till en delad plats, som Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3 eller Snowflake.
 
@@ -155,7 +155,7 @@ Se till att tabellerna, miljön och behörigheterna uppfyller följande krav:
 
 * **Miljö:** Kontrollera att de [IP-adresser](/help/technotes/ip-addresses.md) och [domäner](/help/technotes/domains.md) som används av Customer Journey Analytics tillåts via organisationens brandvägg.
 
-* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har behörigheten [!UICONTROL **Fullständig tabellexport**] för att kunna exportera fullständiga tabeller. Mer information om hur du tilldelar en produktprofil behörighet i Admin Console finns i [Customer Journey Analytics behörighet i Admin Console](/help/technotes/access-control.md).
+* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har behörigheten [!UICONTROL **Fullständig tabellexport**] för att kunna exportera fullständiga tabeller. Information om hur du tilldelar en produktprofil behörighet i Admin Console finns i [Customer Journey Analytics-behörighet i Admin Console](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
@@ -174,7 +174,7 @@ Följande funktioner stöds inte och tas automatiskt bort från export i fulltab
 * Dynamiska dimensioner
 
   Mer information finns i [Dynamiska och statiska dimensionsobjekt i frihandstabeller](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
-* Dimensioner i den första uppdelningen konverteras och läggs till som en sekundär dimension i raden i den exporterade tabellen. Andra uppdelningar tas inte med i tabellen
+* Dimensionerna i den första uppdelningen konverteras och läggs till som en sekundär dimension i raden i den exporterade tabellen. Andra uppdelningar tas inte med i tabellen
 * Sortering stöds inte för de flesta datauppsättningar. Data kan sorteras för små datauppsättningar
 
 ### Komponenter som inte stöds
@@ -216,9 +216,9 @@ Om en attribueringsmodell som inte är standard används i en rapport ignoreras 
   >
   >Flerdimensionella rapporter stöds bara när data exporteras till molnet, vilket beskrivs i den här artikeln.
 
-## Jämförelse mellan fullständig tabellexport (i Customer Journey Analytics) och Data Warehouse (i Adobe Analytics)
+## Jämförelse av fullständig tabellexport (i Customer Journey Analytics) till Data Warehouse (i Adobe Analytics)
 
-Om du tidigare använt Data Warehouse för att exportera Adobe Analytics-data kan följande tabell hjälpa dig att förstå skillnaden mellan att exportera hela tabeller i Customer Journey Analytics och att exportera data med Data Warehouse i Adobe Analytics.
+Om du tidigare använde Data Warehouse för att exportera Adobe Analytics-data kan följande tabell hjälpa dig att förstå skillnaden mellan att exportera fullständiga tabeller i Customer Journey Analytics och att exportera data med Data Warehouse i Adobe Analytics.
 
 
 | Funktion | Fullständig tabellexport i Customer Journey Analytics | DATA WAREHOUSE i ADOBE ANALYTICS |

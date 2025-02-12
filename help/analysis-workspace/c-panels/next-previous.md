@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="Kapsla eller föregående objekt"
->abstract="Analysera de vanligaste platserna som besökare tidigare kom från eller kom till nästa.<br/><br/>**Dimension**: Välj en dimension. Till exempel **Sida**.<br/>**Dimension**: Markera en specifik dimensionsobjekt. Exempel: **Hemsida**.<br/>**Riktning**: Välj **Nästa** om du vill visa dimensionsobjekten direkt efter den valda dimensionsobjektet. Välj **Föregående** om du vill se dimensionsobjekten som leder upp till den valda dimensionsposten.<br/>**Behållare**: Välj **Session** om du vill visa nästa/föregående dimensionsobjekt i samma session, eller välj **Person** om du vill visa nästa/föregående dimensionsobjekt för samma person."
+>abstract="Analysera de vanligaste platserna som besökare tidigare kom från eller kom till nästa.<br/><br/>**Dimension**: Välj en dimension. Till exempel **Sida**.<br/>**Dimension-objekt**: Välj en specifik dimensionsobjekt. Exempel: **Hemsida**.<br/>**Riktning**: Välj **Nästa** om du vill visa dimensionsobjekten direkt efter den valda dimensionsobjektet. Välj **Föregående** om du vill se dimensionsobjekten som leder upp till den valda dimensionsposten.<br/>**Behållare**: Välj **Session** om du vill visa nästa/föregående dimensionsobjekt i samma session, eller välj **Person** om du vill visa nästa/föregående dimensionsobjekt för samma person."
 
 <!-- markdownlint-enable MD034 -->
 

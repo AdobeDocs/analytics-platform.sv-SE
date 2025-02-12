@@ -1,6 +1,6 @@
 ---
 title: Skapa ett anpassat schema för Customer Journey Analytics
-description: Lär dig hur du skapar ett anpassat schema för Customer Journey Analytics
+description: Lär dig skapa ett anpassat schema för Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
 >title="Skapa önskat anpassat schema i Adobe Experience Platform"
->abstract="Använd användargränssnittet i Adobe Experience Platform för att skapa ett schema så att Adobe vet rätt format för att lagra data.<br><br>I det här steget ska du skapa det schema som din organisation har godkänt. Den beräknade tiden för att skapa schemat i Adobe Experience Platform-gränssnittet är ungefär en vecka, beroende på hur många dimensioner och mått som behöver skapas."
+>abstract="Använd användargränssnittet i Adobe Experience Platform för att skapa ett schema så att Adobe vet vilket format som ska användas för att lagra data.<br><br>I det här steget ska du skapa det schema som din organisation har godkänt. Den beräknade tiden för att skapa schemat i Adobe Experience Platform-gränssnittet är ungefär en vecka, beroende på hur många dimensioner och mått som behöver skapas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Aktivera ditt schema för profil"
->abstract="Aktivera en profil i ditt schema för användning i Adobe Real-time CDP. Det här steget visas eftersom du valde att integrera med CDP i realtid i Adobe.<br><br>Eftersom det här steget innebär att du klickar i en enskild ruta tar det här steget bara några minuter."
+>abstract="Aktivera en profil i ditt schema för användning i Adobe CDP i realtid. Det här steget visas eftersom du valde att integrera med Adobe CDP i realtid.<br><br>Eftersom det här steget innebär att du klickar i en enskild ruta tar det här steget bara några minuter."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ I följande avsnitt beskrivs hur du skapar ett schema som kan användas med Cust
 
 * **Adobe Analytics-schema som använder fältgruppen Adobe Analytics ExperienceEvent:** Kräver tillägg av tusentals fält som inte behövs. Eventuella nödvändiga framtida ändringar är svårare.
 
-Mer information om de här schemaalternativen finns i [Välj schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Mer information om de här schemaalternativen finns i [Välja schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Skapa schemat
 
@@ -116,7 +116,7 @@ Så här skapar du ett anpassat schema:
 
       Om du väljer att använda Adobe Analytics standardschema i stället för att skapa ett anpassat XDM-schema, kan du lägga till fältgruppen Adobe Analytics ExperienceEvent nu. Adobe rekommenderar dock att du skapar ett anpassat XDM-schema i stället för att lägga till den här fältgruppen.
 
-      Mer information om de här schemaalternativen finns i [Välj schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+      Mer information om de här schemaalternativen finns i [Välja schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Välj **[!UICONTROL Add field groups]**.
 
@@ -142,7 +142,7 @@ Så här skapar du ett anpassat schema:
 
    ![Identifieringsobjekt](assets/identification-field.png)
 
-   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I ditt fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
+   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I så fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
@@ -150,7 +150,7 @@ Så här skapar du ett anpassat schema:
 
    ![Ange ECID som identitet](./assets/specify-identity.png)
 
-   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sy ihop) beteendet hos profiler med samma ECID.
+   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sammanfoga) beteendet hos profiler med samma ECID.
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i attributet ecid.
 
@@ -178,7 +178,7 @@ Så här skapar du ett anpassat schema:
 
 1. Välj **[!UICONTROL Save]** om du vill spara ditt schema.
 
-   Du har skapat ett minimalt schema som modellerar de data som du kan hämta från webbplatsen. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profil ser du till att data som hämtas från din webbplats läggs till i kundprofilen i realtid.
+   Du har skapat ett minimalt schema som modellerar de data som du kan hämta från webbplatsen. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud Identity och e-postadress. Genom att aktivera schemat för profil ser du till att data som hämtas från din webbplats läggs till i kundprofilen i realtid.
 
    Bredvid beteendedata kan du även hämta profilattributdata från din webbplats (till exempel information om profiler som prenumererar på ett nyhetsbrev).
 
@@ -190,7 +190,7 @@ Så här skapar du ett anpassat schema:
 
    * Lägg till ett identifieringsobjekt baserat på fältgruppen Profile Core v2.
 
-   * Definiera Experience Cloud-ID som primär identifierare och e-post som identifierare.
+   * Definiera Experience Cloud ID som primär identifierare och e-postadress som identifierare.
 
    * Aktivera schemat för profilen
 

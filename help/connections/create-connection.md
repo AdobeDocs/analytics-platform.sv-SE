@@ -1,6 +1,6 @@
 ---
 title: Skapa eller redigera en anslutning
-description: Beskriver hur du skapar eller redigerar en anslutning till en datauppsättning för Experience Platform i Customer Journey Analytics.
+description: Beskriver hur du skapar eller redigerar en anslutning till en Experience Platform-datauppsättning i Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
@@ -141,7 +141,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa och rediger
 
 ## Förutsättningar
 
-Det maximala antalet datauppsättningar som du kan lägga till i en anslutning är 100. Blandningen beror på vilket Customer Journey Analytics-paket ditt företag har köpt.
+Det maximala antalet datauppsättningar som du kan lägga till i en anslutning är 100. Blandningen beror på vilket Customer Journey Analytics-paket företaget har köpt.
 
 Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
 
@@ -166,11 +166,11 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
    | **[!UICONTROL Connection name]** | Ange ett unikt namn för anslutningen. |
    | **[!UICONTROL Connection description]** | Beskriv syftet med den här anslutningen. |
    | **[!UICONTROL Sandbox]** | Välj en sandlåda i Experience Platform som innehåller den eller de datauppsättningar som du vill skapa en anslutning till.<p>Adobe Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som partitionerar en enda plattformsinstans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.<p>När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen. |
-   | **[!UICONTROL Enable rolling data window]** | Om den här kryssrutan är markerad kan du definiera datalagring i Customer Journey Analytics som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader och så vidare).<p>Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller en profil- eller uppslagsdatauppsättning (förutom en eller flera händelsedatamängder), behålls dessa data för samma tidsperiod.<p> Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.<p>Om du låter standardinställningen (inte markerad) stå över kvarhållningsperioden för data i Adobe Experience Platform. Om du har 25 månaders data i Experience Platform får Customer Journey Analytics 25 månaders data genom backfill. Om du raderade 10 av dessa månader i Platform behåller Customer Journey Analytics de återstående 15 månaderna. |
+   | **[!UICONTROL Enable rolling data window]** | Om den här kryssrutan är markerad kan du definiera Customer Journey Analytics datalagring som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader och så vidare).<p>Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller en profil- eller uppslagsdatauppsättning (förutom en eller flera händelsedatamängder), behålls dessa data för samma tidsperiod.<p> Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.<p>Om du låter standardinställningen (inte markerad) stå över kvarhållningsperioden för data i Adobe Experience Platform. Om ni har 25 månaders data i Experience Platform får Customer Journey Analytics 25 månaders data genom förifyllning. Om du raderade 10 av dessa månader i Platform behåller Customer Journey Analytics de återstående 15 månaderna. |
    | **[!UICONTROL Add datasets]** (se nedan) | Lägg till datauppsättningar om det inte finns några datauppsättningar i datauppsättningslistan. |
    | **[!UICONTROL Dataset name]** | Markera en eller flera datauppsättningar som du vill hämta till Customer Journey Analytics och välj **[!UICONTROL Add]**.<p>(Om du har många datauppsättningar att välja bland kan du söka efter rätt datauppsättningar med sökfältet Sök efter datauppsättningar ovanför listan med datauppsättningar.) |
    | **[!UICONTROL Last updated]** | Endast för händelsedatamängder anges den här inställningen automatiskt till standardfältet för tidsstämpling från händelsebaserade scheman i Experience Platform. &quot;Ej tillämpligt&quot; innebär att den här datauppsättningen inte innehåller några data. |
-   | **[!UICONTROL Number of records]** | Det totala antalet poster under föregående månad för datauppsättningen i Experience Platform. |
+   | **[!UICONTROL Number of records]** | Det totala antalet poster under den föregående månaden för datauppsättningen i Experience Platform. |
    | **[!UICONTROL Schema]** | Det [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) som baserar sig på vilken datauppsättningen skapades i Adobe Experience Platform. |
    | **[!UICONTROL Dataset type]** | För varje datauppsättning som du har lagt till i den här anslutningen anger Customer Journey Analytics automatiskt datauppsättningstypen baserat på de data som kommer in. Det finns tre olika datamängdstyper: Händelsedata, Profildata och Uppslagsdata. Se tabellen nedan för en förklaring av datamängdstyperna. |
    | **[!UICONTROL Granularity]** | Detaljrikedomen för data i datauppsättningen. Gäller endast för sammanfattningsdatauppsättningar. |
@@ -209,7 +209,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="cja_connection_personid"
 >title="Person-ID"
->abstract="Välj ett person-ID bland de tillgängliga identiteter som definieras i dataset-schemat i Experience Platform."
+>abstract="Välj ett person-ID bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -218,7 +218,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Konto-ID"
->abstract="Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+>abstract="Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -237,7 +237,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalaccountid"
 >title="ID för globalt konto"
->abstract="Välj ett globalt konto-ID (den unika identifieraren för ett globalt konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+>abstract="Välj ett globalt konto-ID (den unika identifieraren för ett globalt konto) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -246,7 +246,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityid"
 >title="ID för affärsmöjlighet"
->abstract="Välj ett affärsmöjlighets-ID (den unika identifieraren för en affärsmöjlighet) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+>abstract="Välj ett affärsmöjlighets-ID (den unika identifieraren för en affärsmöjlighet) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -273,7 +273,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Importera nya data"
->abstract="Eventuella nya batchar som läggs till i datauppsättningen Experience Platform läggs automatiskt till i den här anslutningen och blir tillgängliga för analys."
+>abstract="Eventuella nya batchar som läggs till i Experience Platform dataset läggs automatiskt till i den här anslutningen och blir tillgängliga för analys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -327,7 +327,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="Person-ID"
->abstract="Välj ett person-ID bland de tillgängliga identiteter som definieras i dataset-schemat i Experience Platform."
+>abstract="Välj ett person-ID bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -336,7 +336,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="Konto-ID"
->abstract="Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+>abstract="Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -352,7 +352,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="connection_globalaccountid"
 >title="ID för globalt konto"
->abstract="Välj ett globalt konto-ID (den unika identifieraren för ett globalt konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+>abstract="Välj ett globalt konto-ID (den unika identifieraren för ett globalt konto) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -361,7 +361,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="connection_opportunityid"
 >title="ID för affärsmöjlighet"
->abstract="Välj ett affärsmöjlighets-ID (den unika identifieraren för en affärsmöjlighet) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform."
+>abstract="Välj ett affärsmöjlighets-ID (den unika identifieraren för en affärsmöjlighet) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -388,7 +388,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
 >title="Importera nya data"
->abstract="Eventuella nya batchar som läggs till i datauppsättningen Experience Platform läggs automatiskt till i den här anslutningen och blir tillgängliga för analys."
+>abstract="Eventuella nya batchar som läggs till i Experience Platform dataset läggs automatiskt till i den här anslutningen och blir tillgängliga för analys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -420,11 +420,11 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 <!-- markdownlint-enable MD034 -->
 
 
-Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Platform när du skapar en anslutning.
+Med det nya arbetsflödet kan du lägga till en Experience Platform-datauppsättning när du skapar en anslutning.
 
 1. Välj **[!UICONTROL Add datasets]** i dialogrutan Anslutningsinställningar.
 
-1. I [!UICONTROL Select datasets]-steget visas en lista med datauppsättningar i Experience Platform.
+1. I steget [!UICONTROL Select datasets] visas en lista med Experience Platform-datauppsättningar.
 
    ![Välj datauppsättningar](assets/select-datasets.png)
 
@@ -434,9 +434,9 @@ Med det nya arbetsflödet kan du lägga till en datauppsättning i Experience Pl
    |---|---|
    | Datauppsättning | Datauppsättningens namn. Markera namnet som du vill dirigera till datauppsättningen i Experience Platform. Välj ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) om du vill visa ett popup-fönster med mer information om datauppsättningen. Du kan välja **[!UICONTROL Edit in Platform]** om du vill redigera datauppsättningen direkt i Experience Platform. |
    | Datauppsättningstyp | Datatypen: Händelse, profil, sökning eller sammanfattning. |
-   | Antal poster | Det totala antalet poster under föregående månad för datauppsättningen i Experience Platform. |
+   | Antal poster | Det totala antalet poster under den föregående månaden för datauppsättningen i Experience Platform. |
    | Schema | Schemat för datauppsättningen. Markera namnet som du vill dirigera till schemat i Experience Platform. |
-   | Senaste batch | Status för den senaste batchen som importerats i Experience Platform. Mer information finns i [Gruppstatus](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |
+   | Senaste batch | Status för den senaste batchen som importerats till Experience Platform. Mer information finns i [Gruppstatus](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |
    | Datauppsättnings-ID | Datauppsättningens ID. |
    | Senast uppdaterad | Den senaste uppdaterade tidsstämpeln för datauppsättningen. |
 
@@ -496,10 +496,10 @@ Det finns olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] 
 
 | Typ av datauppsättning | Beskrivning | Tidsstämpel | Schema | Person-ID |
 |---|---|---|---|---|
-| **[!UICONTROL Event]** | Data som representerar händelser i tid. Exempel: webbbesök, interaktioner, transaktioner, POS-data, undersökningsdata, annonsvisningsdata osv. Dessa data kan vara typiska klickströmsdata, med ett kund-ID eller ett cookie-ID och en tidsstämpel. Med händelsedata får du flexibilitet vad gäller vilket ID som används som person-ID. | Ange automatiskt till standardtidsstämpelfältet från händelsebaserade scheman i [!UICONTROL Experience Platform]. | Alla inbyggda eller anpassade scheman som baseras på en XDM-klass med beteendet&quot;Time Series&quot;. Exempel är &quot;XDM Experience Event&quot; eller &quot;XDM Decision Event&quot;. | Du kan välja vilket person-ID du vill inkludera. Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnutrymme. Alla dessa identiteter kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code och så vidare. |
-| **[!UICONTROL Lookup]** | Du kan lägga till datauppsättningar som uppslag med fält inom alla datamängdstyper: Profil-, uppslags- och händelsedatamängder (den sistnämnda stöds alltid). Den här extra möjligheten utökar Customer Journey Analytics förmåga att stödja komplexa datamodeller, inklusive B2B. Dessa data används för att söka efter värden eller nycklar som finns i dina Event-, Profile- eller Lookup-data. Du kan lägga till upp till två söknivåer. (Observera att [Härledda fält](/help/data-views/derived-fields/derived-fields.md) inte kan användas som matchande nycklar för uppslag i anslutningar.) Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [B2B-exemplet](/help/use-cases/b2b/example.md) för ett exempel. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på en XDM-klass med beteendet &quot;Record&quot;, förutom klassen &quot;XDM Individual Profile&quot;. | Ej tillämpligt |
+| **[!UICONTROL Event]** | Data som representerar händelser i tid. Exempel: webbbesök, interaktioner, transaktioner, POS-data, undersökningsdata, annonsvisningsdata osv. Dessa data kan vara typiska klickströmsdata, med ett kund-ID eller ett cookie-ID och en tidsstämpel. Med händelsedata får du flexibilitet vad gäller vilket ID som används som person-ID. | Ange automatiskt till standardtidsstämpelfältet från händelsebaserade scheman i [!UICONTROL Experience Platform]. | Alla inbyggda eller anpassade scheman som baseras på en XDM-klass med beteendet&quot;Time Series&quot;. Exempel är &quot;XDM Experience Event&quot; eller &quot;XDM Decision Event&quot;. | Du kan välja vilket person-ID du vill inkludera. Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnområde. Alla dessa identiteter kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code och så vidare. |
+| **[!UICONTROL Lookup]** | Du kan lägga till datauppsättningar som uppslag med fält inom alla datamängdstyper: Profil-, uppslags- och händelsedatamängder (den sistnämnda stöds alltid). Den här extrafunktionen utökar Customer Journey Analytics förmåga att stödja komplexa datamodeller, inklusive B2B. Dessa data används för att söka efter värden eller nycklar som finns i dina Event-, Profile- eller Lookup-data. Du kan lägga till upp till två söknivåer. (Observera att [Härledda fält](/help/data-views/derived-fields/derived-fields.md) inte kan användas som matchande nycklar för uppslag i anslutningar.) Du kan till exempel överföra sökdata som mappar numeriska ID:n i händelsedata till produktnamn. Se [B2B-exemplet](/help/use-cases/b2b/example.md) för ett exempel. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på en XDM-klass med beteendet &quot;Record&quot;, förutom klassen &quot;XDM Individual Profile&quot;. | Ej tillämpligt |
 | **[!UICONTROL Profile]** | Data som tillämpas på dina personer, användare eller kunder i [!UICONTROL Event]-data. Du kan till exempel överföra CRM-data om dina kunder. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på klassen &quot;XDM Individual Profile&quot;. | Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning (utom sammanfattningsdatauppsättningar), som definieras i [!DNL Experience Platform], har en egen uppsättning med ett eller flera person-ID definierade. Till exempel cookie-ID, Stitched ID, User ID, Tracking Code och så vidare.<br>![Person-ID ](assets/person-id.png)**Obs!** Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, visas detta i rapporten. Om du vill sammanfoga datauppsättningar måste du använda samma person-ID. |
-| **Sammanfattning** | Tidsseriedata som inte är knutna till ett enskilt person-ID. Sammanfattningsdata representerar aggregerade data på en annan aggregeringsnivå, till exempel kampanjer. Du kan använda dessa data i Customer Journey Analytics för att stödja olika användningsfall. Mer information finns i [Sammanfattningsdata](/help/data-views/summary-data.md). | Ställ automatiskt in standardtidsstämpelfältet från händelsebaserade summeringsscheman i Experience Platform. Endast kornighet varje timme eller dag stöds. | Alla inbyggda eller anpassade scheman som baseras på klassen XDM Summary Metrics. | Ej tillämpligt |
+| **Sammanfattning** | Tidsseriedata som inte är knutna till ett enskilt person-ID. Sammanfattningsdata representerar aggregerade data på en annan aggregeringsnivå, till exempel kampanjer. Du kan använda dessa data i Customer Journey Analytics för att stödja olika användningsfall. Mer information finns i [Sammanfattningsdata](/help/data-views/summary-data.md). | Ställ automatiskt in standardtidsstämpelfältet från händelsebaserade sammanfattningsscheman i Experience Platform. Endast kornighet varje timme eller dag stöds. | Alla inbyggda eller anpassade scheman som baseras på klassen XDM Summary Metrics. | Ej tillämpligt |
 
 {style="table-layout:auto"}
 
@@ -509,7 +509,7 @@ Den här sökfunktionen är användbar om du vill lägga till ett numeriskt fäl
 
 ![Sökschema](assets/schema.png)
 
-Ni har nu stöd för att lägga in dessa värden som mått i Customer Journey Analytics-rapporter. När du konfigurerar anslutningen och hämtar in uppslagsdatauppsättningar kan du redigera datauppsättningarna och välja [!UICONTROL Key] och [!UICONTROL Matching Key]:
+Nu har ni stöd för att lägga in dessa värden som mått i Customer Journey Analytics-rapporter. När du konfigurerar anslutningen och hämtar in uppslagsdatauppsättningar kan du redigera datauppsättningarna och välja [!UICONTROL Key] och [!UICONTROL Matching Key]:
 
 ![Redigera-datamängd](assets/lookup-dataset.png)
 
@@ -527,8 +527,8 @@ Om du väljer Identitetskarta får du ytterligare två konfigurationsalternativ:
 
 | Alternativ | Beskrivning |
 |---|---|
-| **[!UICONTROL Use Primary ID Namespace]** | Det här alternativet instruerar Customer Journey Analytics att hitta identiteten i identitetskartan som är markerad med ett `primary=true`-attribut och använda den identiteten som ID för den raden. Den här identiteten är den primärnyckel som används i Experience Platform för partitionering. Och den här identiteten är också den primära kandidaten för användning som Customer Journey Analytics person-ID (beroende på hur datauppsättningen konfigureras i en Customer Journey Analytics-anslutning). |
-| **[!UICONTROL Namespace]** | (Det här alternativet är bara tillgängligt om du inte använder namnutrymmet för primärt ID.) Identitetsnamnutrymmen är en komponent i [Experience Platform-identitetstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namnutrymmen fungerar som indikatorer för det sammanhang som en identitet relateras till. Om du anger ett namnutrymme söker Customer Journey Analytics igenom varje rads identitetskarta efter namnutrymmesnyckeln och använder identiteten under namnutrymmet som ID för den raden. Eftersom Customer Journey Analytics inte kan göra en fullständig datauppsättningssökning av alla rader för att avgöra vilka namnutrymmen som finns, visas alla möjliga namnutrymmen i listrutan. Ha koll på vilka namnutrymmen som anges i data. Dessa namnutrymmen identifieras inte automatiskt. |
+| **[!UICONTROL Use Primary ID Namespace]** | Det här alternativet instruerar Customer Journey Analytics att hitta identiteten i identitetskartan som är markerad med ett `primary=true`-attribut och använda identiteten som ID för den raden. Den här identiteten är den primärnyckel som används i Experience Platform för partitionering. Och den här identiteten är också den primära kandidaten för användning som Customer Journey Analytics person-ID (beroende på hur datauppsättningen konfigureras i en Customer Journey Analytics-anslutning). |
+| **[!UICONTROL Namespace]** | (Det här alternativet är bara tillgängligt om du inte använder namnutrymmet för primärt ID.) Identitetsnamnutrymmen är en komponent i [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namnutrymmen fungerar som indikatorer för det sammanhang som en identitet relateras till. Om du anger ett namnutrymme söker Customer Journey Analytics igenom varje rads identitetskarta efter namnutrymmesnyckeln och använder identiteten under namnutrymmet som ID för den raden. Eftersom Customer Journey Analytics inte kan göra en fullständig datauppsättningssökning av alla rader för att avgöra vilka namnutrymmen som finns, visas alla möjliga namnutrymmen i listrutan. Ha koll på vilka namnutrymmen som anges i data. Dessa namnutrymmen identifieras inte automatiskt. |
 
 {style="table-layout:auto"}
 
@@ -566,4 +566,4 @@ När du skapar en anslutning kan du lägga till stora datauppsättningar för up
 
 Du kan begära en algoritmisk rensning av en stor uppslagsdatauppsättning. Den här algoritmiska rensningen sparar bara data i uppslagsdatauppsättningen som matchar nycklarna i händelsedatauppsättningen. På så sätt behöver du inte läsa in hela datauppsättningen för orensad sökning. Gamla eller mindre ofta använda objekt tas bort, vilket kan påverka rapporter något men ger avsevärda fördelar. Algoritmen tittar tillbaka 90 dagar och uppdateras varje vecka.
 
-Kontakta supportteamet på Adobe för mer information och för att aktivera den här funktionen.
+Kontakta Adobe supportteam för mer information och aktivera den här funktionen.

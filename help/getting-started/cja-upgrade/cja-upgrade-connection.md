@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Skapa en anslutning i Customer Journey Analytics"
->abstract="Med en anslutning kan ni översätta data från Adobe Experience Platform till ett format som är optimerat för Customer Journey Analytics-rapportering. Det är enkelt att skapa en anslutning i Customer Journey Analytics, vilket tar bara några minuter."
+>abstract="Med en anslutning kan ni översätta data från Adobe Experience Platform till ett format som är optimerat för Customer Journey Analytics rapportering. Det är enkelt att skapa en anslutning i Customer Journey Analytics, vilket tar bara några minuter."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-Följande information förklarar hur du skapar och konfigurerar en anslutning samt hur du lägger till datauppsättningar i Experience Platform i den anslutning du skapar. Mer information om hur du skapar och konfigurerar en anslutning finns i [Skapa eller redigera en anslutning](/help/connections/create-connection.md).
+Följande information förklarar hur du skapar och konfigurerar en anslutning samt hur du lägger till Experience Platform-datauppsättningar i den anslutning du skapar. Mer information om hur du skapar och konfigurerar en anslutning finns i [Skapa eller redigera en anslutning](/help/connections/create-connection.md).
 
 ## Skapa och konfigurera anslutningen {#create-connection}
 
@@ -49,11 +49,11 @@ Följande information förklarar hur du skapar och konfigurerar en anslutning sa
    | **[!UICONTROL Connection name]** | Ange ett unikt namn för anslutningen. |
    | **[!UICONTROL Connection description]** | Beskriv syftet med den här anslutningen. |
    | **[!UICONTROL Sandbox]** | Välj en sandlåda i Experience Platform som innehåller den eller de datauppsättningar som du vill skapa en anslutning till.<p>Adobe Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som partitionerar en enda plattformsinstans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.<p>När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen. |
-   | **[!UICONTROL Enable rolling data window]** | Om den här kryssrutan är markerad kan du definiera datalagring i Customer Journey Analytics som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader och så vidare).<p>Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller en profil- eller uppslagsdatauppsättning (förutom en eller flera händelsedatamängder), behålls dessa data för samma tidsperiod.<p> Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.<p>Om du låter standardinställningen (inte markerad) stå över kvarhållningsperioden för data i Adobe Experience Platform. Om du har 25 månaders data i Experience Platform får Customer Journey Analytics 25 månaders data genom backfill. Om du raderade 10 av dessa månader i Platform behåller Customer Journey Analytics de återstående 15 månaderna. |
+   | **[!UICONTROL Enable rolling data window]** | Om den här kryssrutan är markerad kan du definiera Customer Journey Analytics datalagring som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader och så vidare).<p>Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller en profil- eller uppslagsdatauppsättning (förutom en eller flera händelsedatamängder), behålls dessa data för samma tidsperiod.<p> Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.<p>Om du låter standardinställningen (inte markerad) stå över kvarhållningsperioden för data i Adobe Experience Platform. Om ni har 25 månaders data i Experience Platform får Customer Journey Analytics 25 månaders data genom förifyllning. Om du raderade 10 av dessa månader i Platform behåller Customer Journey Analytics de återstående 15 månaderna. |
    | **[!UICONTROL Add datasets]** (se nedan) | Lägg till datauppsättningar om det inte finns några datauppsättningar i datauppsättningslistan. |
    | **[!UICONTROL Dataset name]** | Markera en eller flera datauppsättningar som du vill hämta till Customer Journey Analytics och välj **[!UICONTROL Add]**.<p>(Om du har många datauppsättningar att välja bland kan du söka efter rätt datauppsättningar med sökfältet Sök efter datauppsättningar ovanför listan med datauppsättningar.) |
    | **[!UICONTROL Last updated]** | Endast för händelsedatamängder anges den här inställningen automatiskt till standardfältet för tidsstämpling från händelsebaserade scheman i Experience Platform. &quot;Ej tillämpligt&quot; innebär att den här datauppsättningen inte innehåller några data. |
-   | **[!UICONTROL Number of records]** | Det totala antalet poster under föregående månad för datauppsättningen i Experience Platform. |
+   | **[!UICONTROL Number of records]** | Det totala antalet poster under den föregående månaden för datauppsättningen i Experience Platform. |
    | **[!UICONTROL Schema]** | Det [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) som baserar sig på vilken datauppsättningen skapades i Adobe Experience Platform. |
    | **[!UICONTROL Dataset type]** | För varje datauppsättning som du har lagt till i den här anslutningen anger Customer Journey Analytics automatiskt datauppsättningstypen baserat på de data som kommer in. Det finns tre olika datamängdstyper: Händelsedata, Profildata och Uppslagsdata. Se tabellen nedan för en förklaring av datamängdstyperna. |
    | **[!UICONTROL Granularity]** | Detaljrikedomen för data i datauppsättningen. Gäller endast för sammanfattningsdatauppsättningar. |
@@ -69,11 +69,11 @@ Följande information förklarar hur du skapar och konfigurerar en anslutning sa
 
 ## Lägga till och konfigurera datauppsättningar {#add-dataset}
 
-Du kan lägga till datauppsättningen Experience Platform när du skapar en anslutning.
+Du kan lägga till en Experience Platform-datauppsättning när du skapar en anslutning.
 
 1. Välj **[!UICONTROL Add datasets]** i dialogrutan Anslutningsinställningar.
 
-1. I [!UICONTROL Select datasets]-steget visas en lista med datauppsättningar i Experience Platform.
+1. I steget [!UICONTROL Select datasets] visas en lista med Experience Platform-datauppsättningar.
 
    ![Välj datauppsättningar](assets/select-datasets.png)
 
@@ -83,9 +83,9 @@ Du kan lägga till datauppsättningen Experience Platform när du skapar en ansl
    |---|---|
    | Datauppsättning | Datauppsättningens namn. Markera namnet som du vill dirigera till datauppsättningen i Experience Platform. Välj ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) om du vill visa ett popup-fönster med mer information om datauppsättningen. Du kan välja **[!UICONTROL Edit in Platform]** om du vill redigera datauppsättningen direkt i Experience Platform. |
    | Datauppsättningstyp | Datatypen: Händelse, profil, sökning eller sammanfattning. |
-   | Antal poster | Det totala antalet poster under föregående månad för datauppsättningen i Experience Platform. |
+   | Antal poster | Det totala antalet poster under den föregående månaden för datauppsättningen i Experience Platform. |
    | Schema | Schemat för datauppsättningen. Markera namnet som du vill dirigera till schemat i Experience Platform. |
-   | Senaste batch | Status för den senaste batchen som importerats i Experience Platform. Mer information finns i [Gruppstatus](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |
+   | Senaste batch | Status för den senaste batchen som importerats till Experience Platform. Mer information finns i [Gruppstatus](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states). |
    | Datauppsättnings-ID | Datauppsättningens ID. |
    | Senast uppdaterad | Den senaste uppdaterade tidsstämpeln för datauppsättningen. |
 

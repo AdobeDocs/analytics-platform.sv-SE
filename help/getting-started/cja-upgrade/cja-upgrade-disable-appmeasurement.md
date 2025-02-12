@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ---
 
-# Inaktivera insamling av AppMeasurement {#disable-appmeasurement}
+# Inaktivera AppMeasurement datainsamling {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement"
->title="Inaktivera insamling av AppMeasurement"
+>title="Inaktivera AppMeasurement datainsamling"
 >abstract="Med Web SDK-data i full funktionalitet kan du samarbeta med ditt utvecklarteam för att ta bort AppMeasurement.js från din webbplats eller egendom.<br><br>Det tar bara några minuter att ta bort AppMeasurement från en webbplats, men det tar tid för teknikteamet att slutföra åtgärden. Se dock till att era Analytics-användare använder Customer Journey Analytics och inte Adobe Analytics. Den här meddelandeprocessen för att flytta alla kan ta betydligt längre tid om ni inte redan har gjort det."
 
 <!-- markdownlint-enable MD034 -->

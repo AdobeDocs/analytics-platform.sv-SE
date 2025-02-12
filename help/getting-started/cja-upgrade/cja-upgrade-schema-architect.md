@@ -1,5 +1,5 @@
 ---
-title: Skapa ditt schema för användning med Customer Journey Analytics
+title: Skapa ett schema som kan användas med Customer Journey Analytics
 description: Läs mer om rekommenderad sökväg när du uppgraderar från Adobe Analytics till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Skapa ditt schema för användning med Customer Journey Analytics {#upgrade-schema-architect}
+# Skapa ett schema som kan användas med Customer Journey Analytics {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -35,13 +35,13 @@ Adobe rekommenderar att du skapar ett anpassat XDM-schema (Experience Data Model
 
 Ett anpassat XDM-schema möjliggör ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder. Till skillnad från det Adobe Analytics-standardschema som använder fältgruppen Adobe Analytics ExperienceEvent behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras när du behöver ändra ett anpassat XDM-schema.
 
-Mer information om de här schemaalternativen finns i [Välj schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Mer information om de här schemaalternativen finns i [Välja schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 Granska följande avsnitt när du börjar skapa XDM-schemat.
 
 ## Undvik Adobe Analytics-begränsningar i XDM-schemat
 
-Den underliggande arkitekturen i Customer Journey Analytics ger mycket större flexibilitet än Adobe Analytics. Att skapa ett nytt XDM-schema är ett viktigt sätt att låsa upp den flexibiliteten. När du uppgraderar till Customer Journey Analytics bör du se till att du inte överför onödiga Adobe Analytics-begränsningar till ditt schema.
+Customer Journey Analytics underliggande arkitektur ger mycket större flexibilitet än Adobe Analytics. Att skapa ett nytt XDM-schema är ett viktigt sätt att låsa upp den flexibiliteten. När du uppgraderar till Customer Journey Analytics bör du se till att du inte överför onödiga Adobe Analytics-begränsningar till ditt schema.
 
 | Adobe Analytics dataarkitektur | XDM-schemaarkitektur |
 |---------|----------|

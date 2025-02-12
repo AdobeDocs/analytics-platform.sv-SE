@@ -1,19 +1,20 @@
 ---
-title: Förstå Adobe Analytics funktionssupport när du uppgraderar till Customer Journey Analytics
+title: Förstå Adobe Analytics funktionssupport vid uppgradering till Customer Journey Analytics
 description: Läs om Adobe Analytics funktionssupport när du uppgraderar till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8d14bb23283107402332106df36e8f7898ea5d30
+exl-id: 92053109-f80d-47ab-b011-c28a5411149c
+source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 1%
 
 ---
 
-# Förstå Adobe Analytics funktionssupport när du uppgraderar till Customer Journey Analytics {#feature-support-upgrade}
+# Förstå Adobe Analytics funktionssupport vid uppgradering till Customer Journey Analytics {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -80,9 +81,9 @@ ht-degree: 1%
 
 >[!NOTE]
 > 
->Använd informationen på den här sidan när du besvarar frågor i checklistan för uppgradering av [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Använd informationen på den här sidan när du besvarar frågor i [checklistan för uppgradering av Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
-I följande lista visas endast de Adobe Analytics-funktioner som behöver övervägas under uppgraderingsprocessen för Customer Journey Analytics. En omfattande lista som visar vilka Adobe Analytics-funktioner som stöds, stöds delvis eller inte alls i Customer Journey Analytics finns i [Funktionsstöd för Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
+I följande lista visas endast de Adobe Analytics-funktioner som behöver övervägas under uppgraderingen till Customer Journey Analytics. En omfattande lista som visar vilka Adobe Analytics-funktioner som stöds, stöds delvis eller inte stöds i Customer Journey Analytics finns i [Stöd för Customer Journey Analytics-funktioner](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 Ta en titt på vilka av följande Adobe Analytics-funktioner du vill fortsätta använda när du uppgraderar till Customer Journey Analytics:
 
@@ -92,7 +93,6 @@ Ta en titt på vilka av följande Adobe Analytics-funktioner du vill fortsätta 
 | [Övertäckning för aktivitetskarta och länkspårning](https://experienceleague.adobe.com/en/docs/analytics/analyze/activity-map/overview) | Inte tillgängligt ännu |
 | [Klassificeringsdata](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/c-classifications) | Uppslagsdatauppsättningar är en metod för att klassificera data i Customer Journey Analytics.<p>[Skapa en uppslagsdatauppsättning för varje dimension som innehåller klassificeringsdata.](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)</p> |
 | [Marknadskanaler](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | Härledda fält skapas i en datavy. <p>[Skapa ett härlett fält för marknadsföringskanal.](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> |
-| [Datafeeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Första generationens dataexport av datauppsättningar är tillgänglig via [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html) och via [Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html). Dessa alternativ ger händelse-/radnivåexport av alla data som samlats in eller importerats till Experience Platform Data Lake. Postprocessdatakolumner är inte tillgängliga eftersom postkolumner beräknas vid frågetiden. Det går att exportera postkolumner genom rapportering. |
-| [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | [Fullständig tabellexport i Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) är utvecklingen av Data Warehouse i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Datan Warehouse idag. |
+| [Datafeeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Första generationens dataexport är tillgänglig via [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html) och via [Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html). Dessa alternativ ger händelse-/radnivåexport av alla data som samlats in eller importerats till Experience Platform Data Lake. Postprocessdatakolumner är inte tillgängliga eftersom postkolumner beräknas vid frågetiden. Det går att exportera postkolumner genom rapportering. |
+| [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | [Customer Journey Analytics Fullständig tabellexport](/help/analysis-workspace/export/export-cloud.md) är utvecklingen av Data Warehouse-rapporter i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag. |
 | [Direktuppspelande mediedata](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview) | Direktuppspelande mediedata är tillgängliga med Analytics-källkopplingen som en del av panelen Media Concurrent Viewer och panelen Media Playback Time Spent (Tid för uppspelning i Workspace). |
-

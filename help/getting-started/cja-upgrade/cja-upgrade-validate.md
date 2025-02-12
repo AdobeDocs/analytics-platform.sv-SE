@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="Verifiera att data flödar"
->abstract="Använd anslutningsinformationen för att validera om data flödar till Customer Journey Analytics.<br><br>Om allt var korrekt och felfritt kan det här steget utföras på mindre än en dag. Om det finns flera datainsamlingsproblem kan det ta särskilt lång tid att felsöka dem."
+>abstract="Använd anslutningsinformationen för att validera om data flödar in i Customer Journey Analytics.<br><br>Om allt var korrekt och felfritt kan det här steget utföras på mindre än en dag. Om det finns flera datainsamlingsproblem kan det ta särskilt lång tid att felsöka dem."
 
 <!-- markdownlint-enable MD034 -->
 

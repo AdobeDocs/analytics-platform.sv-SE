@@ -35,7 +35,7 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
 
 1. Välj någon av följande flikar i avsnittet [!UICONTROL **Mallar**]:
 
-   * **[!UICONTROL Adobe templates]**: Visar alla mallar som tillhandahålls av Adobe.
+   * **[!UICONTROL Adobe templates]**: Visar alla mallar från Adobe.
 
    * **[!UICONTROL _login_company_name _-mallar]**: Visar alla företagsmallar som har skapats för din organisation.
 
@@ -437,7 +437,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="aa-template--sitePerformanceOverview"
 >title="Visa prestandadata för din Adobe Experience Manager-webbplats."
->abstract="**Det här kan hjälpa dig** att bättre förstå värdeberäkning från Adobe Experience Manager.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera inställningarna för Experience Manager."
+>abstract="**Det här kan hjälpa dig** att bättre förstå värdeberäkning från Adobe Experience Manager.<br/>**Beroende på vad du lär dig kan du** göra något annat, som att optimera dina Experience Manager-inställningar."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -446,7 +446,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="aa-template--formsPerformanceOverview"
 >title="Visa prestandadata för din Adobe Experience Manager Forms."
->abstract="**Det här kan hjälpa dig** att bättre förstå värdeberäkning från Adobe Experience Manager.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera inställningarna för Experience Manager."
+>abstract="**Det här kan hjälpa dig** att bättre förstå värdeberäkning från Adobe Experience Manager.<br/>**Beroende på vad du lär dig kan du** göra något annat, som att optimera dina Experience Manager-inställningar."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -529,7 +529,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--productUsageOverviewReport"
 >title="Se hur Customer Journey Analytics används i er organisation."
->abstract="**Det här kan hjälpa dig** att bättre förstå hur många människor som använder Customer Journey Analytics, hur ofta de använder det och hur många användningsmönster de använder över tid. Du kan också se antalet projekt som skapas och information om dessa projekt (till exempel vilka komponenter, visualiseringar och paneler som används mest) samt många andra användningsstatistik.<br/>**Baserat på vad du lär dig kan du** göra flera saker, t.ex. ta bort oanvända projekt eller komponenter, eller tillhandahålla användarutbildning för populära funktioner."
+>abstract="**Det här kan hjälpa dig** att bättre förstå hur många som använder Customer Journey Analytics, hur ofta de använder det och hur många användartrender de använder över tid. Du kan också se antalet projekt som skapas och information om dessa projekt (till exempel vilka komponenter, visualiseringar och paneler som används mest) samt många andra användningsstatistik.<br/>**Baserat på vad du lär dig kan du** göra flera saker, t.ex. ta bort oanvända projekt eller komponenter, eller tillhandahålla användarutbildning för populära funktioner."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -550,7 +550,7 @@ Följande mallar är tillgängliga:
 | **Sidsammanfattning** | Visa viktig information om alla sidor i egenskaperna. Visar sidvyer, en trendlinje, en flödesvisualisering och mycket mer.  <p>**Detta kan hjälpa dig** att bättre förstå hur människor interagerar med en viss sida.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera sidans prestanda över en tidsperiod eller bättre förstå vad som driver trafik till sidan.</p><p>I den här mallen används måttet Sidvyer. Det använder även linjevisualisering och Flow-visualisering.</p> |
 | **Startsidor** | Visa de översta sidorna som andra kommer åt när de besöker webbplatsen första gången. <p>**Detta kan hjälpa dig** att bättre förstå vilka sidor som genererar mest trafik till din webbplats eller förstå mer om de första visningar besökarna har på din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera den första upplevelsen som andra personer kommer in på webbplatsen, eller se till att de sidor som de första användarna ser när de kommer in på din webbplats är välkomna och tillhandahåller nödvändiga länkar till andra delar av din webbplats.</p><p>Den här mallen använder måttet Sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering.</p> |
 | **Avsluta sidor** | Visa de översta sidorna som andra kommer åt direkt innan de lämnar din webbplats.<p>**Det här kan hjälpa dig** att bättre förstå vilka sidor som leder personer bort från webbplatsen. </p><p>**Baserat på vad du lär dig kan du** göra något av följande, till exempel uppdatera vanliga avslutssidor för att optimera upplevelsen som andra får innan de lämnar webbplatsen, eller inkludera innehåll eller länkar för att uppmuntra andra att stanna kvar på webbplatsen.</p><p>Den här mallen använder måttet Sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering.</p> |
-| **Översikt över produktanvändning** (kommer snart) | Se hur Customer Journey Analytics används i er organisation. <p>**Det här kan hjälpa dig** att bättre förstå hur många människor som använder Customer Journey Analytics, hur ofta de använder det och hur många användningsmönster de använder över tid. Du kan också se antalet projekt som skapas och information om dessa projekt (till exempel vilka komponenter, visualiseringar och paneler som används mest) samt många andra användningsstatistik.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, t.ex. ta bort oanvända projekt eller komponenter, eller tillhandahålla användarutbildning för populära funktioner.</p> |
+| **Översikt över produktanvändning** (kommer snart) | Se hur Customer Journey Analytics används i er organisation. <p>**Det här kan hjälpa dig** att bättre förstå hur många som använder Customer Journey Analytics, hur ofta de använder det och hur många användartrender de använder över tid. Du kan också se antalet projekt som skapas och information om dessa projekt (till exempel vilka komponenter, visualiseringar och paneler som används mest) samt många andra användningsstatistik.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, t.ex. ta bort oanvända projekt eller komponenter, eller tillhandahålla användarutbildning för populära funktioner.</p> |
 
 ### Webb: Konvertering {#web-conversion}
 
@@ -1128,7 +1128,7 @@ Följande mallar är tillgängliga:
 
 >[!CONTEXTUALHELP]
 >id="template--referrerTypeRankedReport"
->title="Visa vilka generiska kanaler besökarna klickade igenom för att komma till er webbplats. Adobe bibehåller reglerna för varje kanal. Möjliga kanaler är sökmotorer, sociala nätverk, andra webbplatser, hårddisk eller e-post."
+>title="Visa vilka generiska kanaler besökarna klickade igenom för att komma till er webbplats. Adobe behåller reglerna för varje kanal. Möjliga kanaler är sökmotorer, sociala nätverk, andra webbplatser, hårddisk eller e-post."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vilken typ av referenter som leder flest trafik till din webbplats.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från en viss kanal.<br/>Den här mallen använder dimensionen Refererartyp."
 
 <!-- markdownlint-enable MD034 -->
@@ -1155,7 +1155,7 @@ Följande mallar är tillgängliga:
 | **Refererande domäner** | Visa vilka domäner som användare klickar igenom för att nå din webbplats.<p>**Detta kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som genererar mest trafik till din. (En länk måste finnas på den externa platsen och en besökare måste klicka på den för att dimensionsposten ska kunna visas.)</p><p>**Baserat på vad du lär dig kan du** göra något annat, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande toppdomänerna. </p><p>Den här mallen använder dimensionen Refererande domän. </p> |
 | **Ursprungliga refererande domäner** | Visa den första refererande domänen som personer klickat igenom för att nå din webbplats. (När det har angetts innehåller det samma värde för hela besökar-ID:t.)<p>**Det här kan hjälpa dig** att bättre förstå vilka tredjepartswebbplatser som ursprungligen kör trafik till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de refererande huvuddomänerna. </p><p>Den här mallen använder dimensionen Ursprunglig referensdomän. </p> |
 | **Referenter** | Visa vilka URL:er besökarna var på när de klickade igenom för att nå din webbplats. (En länk måste finnas på den externa URL:en och en besökare måste klicka på den för att dimensionsobjektet ska kunna visas.)  <p>**Det här kan hjälpa dig** att bättre förstå vilka specifika URL:er som genererar mest trafik till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra något annat, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från de översta URL:erna. </p><p>Den här mallen använder dimensionen Refererande domän </p><p>I den här mallen används referensdimensionen. </p> |
-| **Refererartyper** | Visa vilka generiska kanaler besökarna klickade igenom för att komma till er webbplats. Adobe bibehåller reglerna för varje kanal. Möjliga kanaler är sökmotorer, sociala nätverk, andra webbplatser, hårddisk eller e-post.<p>**Det här kan hjälpa dig** att bättre förstå vilken typ av referenter som leder flest trafik till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från en viss kanal.</p><p>Den här mallen använder dimensionen Refererartyp.</p> |
+| **Refererartyper** | Visa vilka generiska kanaler besökarna klickade igenom för att komma till er webbplats. Adobe behåller reglerna för varje kanal. Möjliga kanaler är sökmotorer, sociala nätverk, andra webbplatser, hårddisk eller e-post.<p>**Det här kan hjälpa dig** att bättre förstå vilken typ av referenter som leder flest trafik till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att skapa eller justera innehåll för att bättre anpassa sig till intressena hos besökare som kommer från en viss kanal.</p><p>Den här mallen använder dimensionen Refererartyp.</p> |
 
 ### Mobil: Mobilapp {#mobile-app}
 

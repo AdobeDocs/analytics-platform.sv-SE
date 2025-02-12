@@ -1,5 +1,5 @@
 ---
-title: Förstå olika implementeringsalternativ för SDK på webben när du uppgraderar till Customer Journey Analytics
+title: Förstå olika implementeringsalternativ för SDK på webben vid uppgradering till Customer Journey Analytics
 description: Läs om implementeringsalternativen för SDK på webben när du uppgraderar till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# Förstå olika implementeringsalternativ för SDK på webben när du uppgraderar till Customer Journey Analytics {#web-sdk-implementation-options}
+# Förstå olika implementeringsalternativ för SDK på webben vid uppgradering till Customer Journey Analytics {#web-sdk-implementation-options}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
-Den rekommenderade processen att uppgradera från Adobe Analytics till Customer Journey Analytics är en ny implementering av Experience Platform Web SDK, vilket är den bästa datainsamlingsmetoden för Customer Journey Analytics.
+Den rekommenderade processen att uppgradera från Adobe Analytics till Customer Journey Analytics är en ny implementering av Experience Platform Web SDK, som är den bästa datainsamlingsmetoden för Customer Journey Analytics.
 
 Det finns tre sätt att använda Adobe Experience Platform Web SDK:
 

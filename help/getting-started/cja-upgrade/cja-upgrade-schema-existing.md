@@ -1,6 +1,6 @@
 ---
 title: Välj schema för Customer Journey Analytics
-description: Läs mer om vilka alternativ som är tillgängliga när du väljer ett schema för Customer Journey Analytics och om för- och nackdelarna med varje schema
+description: Läs mer om vilka alternativ som är tillgängliga när du väljer ett schema för Customer Journey Analytics och om för- och nackdelarna med det
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -30,7 +30,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
 >title="Använd standardschemat"
->abstract="(Rekommenderas inte) Adobe Analytics-schemat innehåller mer än tusen fält, vilket kan leda till rörigt och komplext schema. Din organisation skulle tvingas att fortsätta att följa konceptet med props och eVars, som är ett äldre koncept som inte används i Customer Journey Analytics. Det är svårare att integrera med andra Adobe Experience Platform-tjänster."
+>abstract="(Rekommenderas inte) Adobe Analytics-schemat innehåller mer än tusen fält, vilket kan leda till rörigt och komplext schema. Din organisation måste fortsätta att följa konceptet med props och eVars, som är ett gammalt koncept som inte används i Customer Journey Analytics. Det är svårare att integrera med andra Adobe Experience Platform-tjänster."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-När du uppgraderar till Customer Journey Analytics rekommenderar Adobe att du skapar ett anpassat Experience Data Model-schema (XDM) som bättre passar organisationens behov när du börjar använda andra plattformstjänster. Du kan också välja att använda ditt befintliga Adobe Analytics-schema.
+När du uppgraderar till Customer Journey Analytics rekommenderar Adobe att du skapar ett anpassat Experience Data Model-schema (XDM) som bättre motsvarar organisationens behov när du börjar använda andra plattformstjänster. Du kan också välja att använda ditt befintliga Adobe Analytics-schema.
 
 Tänk på fördelarna och nackdelarna med var och en av dem.
 

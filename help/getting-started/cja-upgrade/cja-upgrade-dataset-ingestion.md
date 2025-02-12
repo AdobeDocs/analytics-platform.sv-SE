@@ -1,5 +1,5 @@
 ---
-title: Övervaka datauppsättningsintag vid uppgradering till Customer Journey Analytics
+title: Övervaka datauppsättningsåtkomster vid uppgradering till Customer Journey Analytics
 description: Lär dig hur du övervakar datauppsättningsåtgången när du uppgraderar till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Övervaka datauppsättningsintag vid uppgradering till Customer Journey Analytics {#monitor-ingestion}
+# Övervaka datauppsättningsåtkomster vid uppgradering till Customer Journey Analytics {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 När du har konfigurerat implementeringen av Web SDK måste du kontrollera status för enskilda batchar för att verifiera att data hämtas till datauppsättningen.
 
-1. I användargränssnittet för Experience Platform väljer du **[!UICONTROL Monitoring]** i den vänstra navigeringen.
+1. I Experience Platform-gränssnittet väljer du **[!UICONTROL Monitoring]** i den vänstra navigeringen.
 
    Kontrollpanelen för övervakning visas. På den här kontrollpanelen kan du visa status för inkommande data från antingen batch- eller direktuppspelningsinmatning.
 
@@ -49,7 +49,7 @@ När du har konfigurerat implementeringen av Web SDK måste du kontrollera statu
 
 1. Välj batch-ID för en given datauppsättning och validera sedan att **[!UICONTROL Success]** visas i fältet **[!UICONTROL Status]**.
 
-   Om **[!UICONTROL Failed]** visas i fältet **[!UICONTROL Status]** kontrollerar du att Web SDK-implementeringen är korrekt när data skickas till Adobe.
+   Om **[!UICONTROL Failed]** visas i fältet **[!UICONTROL Status]** kontrollerar du att Web SDK-implementeringen är korrekt när du skickar data till Adobe.
 
    Upprepa det här steget för att verifiera status för varje batch.
 

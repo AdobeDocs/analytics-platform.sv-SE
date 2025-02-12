@@ -140,7 +140,7 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_timedecay"
 >title="Tidsminskning"
->abstract="De Dimensioner som ligger närmast konverteringen ger mest poäng."
+>abstract="Dimension-värden som ligger närmast konverteringen ger mest valuta för pengarna."
 
 <!-- markdownlint-enable MD034 -->
 

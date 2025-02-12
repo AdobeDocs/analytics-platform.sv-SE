@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
 >title="Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen"
->abstract="Nu när historiska data från Analytics-rapportsviten finns i Adobe Experience Platform kan du lägga till den datauppsättningen i din befintliga anslutning som du skapade när du konfigurerade Customer Journey Analytics först. När det här steget är klart är historiska data i Customer Journey Analytics tillgängliga.<br><br>Det är enkelt att lägga till en datauppsättning i en anslutning i Customer Journey Analytics, vilket tar bara några minuter."
+>abstract="Nu när historiska data från Analytics-rapportsviten finns i Adobe Experience Platform lägger du till den datauppsättningen i din befintliga anslutning som du skapade när du konfigurerade Customer Journey Analytics första gången. När det här steget är klart finns historiska data i Customer Journey Analytics tillgängliga.<br><br>Det är enkelt att lägga till en datauppsättning i en anslutning i Customer Journey Analytics, vilket tar bara några minuter."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 Du kan använda Analytics-källkopplingen för att hämta data från Adobe Analytics rapportsvit till Adobe Experience Platform. Dessa data kan sedan användas som historiska data i Customer Journey Analytics.
 
-Den här processen förutsätter att du vill [skapa ett XDM-schema när du uppgraderar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som passar behoven i din organisation och de plattformsspecifika program som du använder.
+Den här processen förutsätter att du vill [skapa ett XDM-schema när du uppgraderar till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), eftersom du vill ha ett anpassat schema som passar organisationens behov och de plattformsspecifika program som du använder.
 
 Om du vill använda Analytics-källkopplingen för att hämta historiska data till Customer Journey Analytics måste du:
 
@@ -96,7 +96,7 @@ Så här lägger du till den automatiskt skapade datauppsättningen i samma ansl
 
 1. Välj **[!UICONTROL Request backfill]** i avsnittet **[!UICONTROL Dataset backfill]**.
 
-1. Definiera den period som du vill att återfyllningen av anslutningen ska inkludera i Customer Journey Analytics genom att ange start- och slutdatum eller genom att markera kalenderikonen ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Ange den period som du vill att återfyllnaden av anslutningen ska omfatta i Customer Journey Analytics genom att ange start- och slutdatum eller genom att välja kalenderikonen ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
    Var tydlig när du anger de datum du begär för bakåtfyllnad. Beroende på flera faktorer kan du göra något av följande:
 

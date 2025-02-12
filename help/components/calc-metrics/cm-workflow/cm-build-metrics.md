@@ -1,5 +1,5 @@
 ---
-description: I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, filter och funktioner för att skapa anpassade mått baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
+description: I verktyget Beräknade mätvärden kan du dra och släppa dimensioner, mått, filter och funktioner på en arbetsyta för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
@@ -17,7 +17,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
->abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, till exempel i Analysis Workspace, Report Builder och så vidare. Vissa beräknade värden kan inte användas med experimenterande."
+>abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 <!-- markdownlint-enable MD034 -->
@@ -138,7 +138,7 @@ Du använder begreppet filterbehållare för att skapa ett [filtrerat mätvärde
 
 * Så här lägger du till en filterbehållare från en dimension:
 
-   1. Dra och släpp en ![Dimension](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
+   1. Dra och släpp en ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
    1. Definiera villkoret för filtret i popup-fönstret **[!UICONTROL Create Filter from Dimension]**. Välj i listan med operatorer och välj ett värde eller ange ett värde. Till exempel **[!UICONTROL Month]** **[!UICONTROL equals]** ![SparrboxDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Välj **[!UICONTROL Done]**. En filterbehållare läggs till i **[!UICONTROL Definition]**.
 
