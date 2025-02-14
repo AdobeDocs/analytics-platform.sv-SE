@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: ffa5bcbe246696a8364ff312bff1b7cc1256ff2c
+source-git-commit: 5fbda947c847c803f95e5c3f412219b0af927d12
 workflow-type: tm+mt
-source-wordcount: '10356'
+source-wordcount: '11956'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,7 @@ I den här artikeln beskrivs hur du slutför ett antal användningsfall med Cust
 * **Power BI Desktop**. Den version som används är 2.137.1102.0 (64 bitar) (oktober 2024).
 * **Skrivbord för surfplatta**. Den version som används är 2024.1.5 (20241.24.0705.0334), 64 bitar.
 * **Looker**. Online version 25.0.23, tillgänglig via [looker.com](https://looker.com){target="_blank"}
+* **Jupyter-anteckningsbok**. Den version som används är 7.3.2
 
 Följande användningsfall dokumenteras:
 
@@ -264,6 +265,199 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
 * [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform Query Service.
+
+   1. Navigera till din Experience Platform-sandlåda.
+   1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
+   1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
+   1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
+
+      ![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Kontrollera att du har konfigurerat en dedikerad virtuell Python-miljö för att köra din Jupyter-miljö för bärbara datorer.
+1. Kontrollera att du har installerat de nödvändiga biblioteken i din virtuella miljö:
+   * ipytonsql: `pip install ipython-sql`.
+   * psykopg2-binär: `pip install psycopg-binary`.
+   * sqlalchemy: pip `install sqlalchemy`.
+
+1. Starta Jupyter-anteckningsbok från din virtuella miljö: `jupyter notebook`.
+1. Skapa en ny anteckningsbok eller hämta [den här exempelanteckningsboken](assets/BI-Extension.ipynb.zip).
+1. I den första cellen anger och kör du:
+
+   ```
+   %config SqlMagic.style = '_DEPRECATED_DEFAULT'
+   ```
+
+1. Ange konfigurationsparametrarna för anslutningen i en ny cell. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för konfigurationsparametrarna. Exempel:
+
+   ```
+   import ipywidgets as widgets
+   from IPython.display import display
+   
+   config_host = widgets.Text(description='Host:', value='example.platform-query-stage.adobe.io',
+                           layout=widgets.Layout(width="600px"))
+   display(config_host)
+   config_port = widgets.IntText(description='Port:', value=80,
+                              layout=widgets.Layout(width="200px"))
+   display(config_port)
+   config_db = widgets.Text(description='Database:', value='prod:cja',
+                         layout=widgets.Layout(width="300px"))
+   display(config_db)
+   config_username = widgets.Text(description='Username:', value='EC582F955C8A79F70A49420E@AdobeOrg',
+                               layout=widgets.Layout(width="600px"))
+   display(config_username)
+   config_password = widgets.Password(description='Password:', value='***',
+                                   layout=widgets.Layout(width="600px"))
+   display(config_password)
+   ```
+
+1. Kör cellen.
+1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in lösenordet från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till fältet **[!UICONTROL Password]** i Jupyter Notebook.
+
+   ![Konfigurationssteg 1 för jupter-anteckningsbok](assets/jupyter-config-step1.png)
+
+1. I en ny cell anger du programsatserna för att läsa in SQL-tillägget, det bibliotek som krävs och ansluta till Customer Journey Analytics.
+
+   ```python
+   %load_ext sql
+   from sqlalchemy import create_engine
+   %sql postgresql://{config_username.value}:{config_password.value}@{config_host.value}:{config_port.value}/{config_db.value}?sslmode=require
+   ```
+
+   Kör skalet. Du ska inte se några utdata, men cellen ska köras utan någon varning.
+
+   ![Jupyer-konfigurationssteg för anteckningsbok, steg 4](assets/jupyter-config-step2.png)
+
+1. I ett nytt anrop anger du programsatserna för att få en lista över tillgängliga datavyer baserade på anslutningen.
+
+   ```python
+   %%sql
+   SELECT n.nspname as "Schema",
+      c.relname as "Name",
+      CASE c.relkind WHEN 'r' THEN 'table' WHEN 'v' THEN 'view' WHEN 'm' THEN 'materialized view' WHEN 'i' THEN 'index' WHEN 'S' THEN 'sequence' WHEN 's' THEN 'special' WHEN 't' THEN 'TOAST table' WHEN 'f' THEN 'foreign table' WHEN 'p' THEN 'partitioned table' WHEN 'I' THEN 'partitioned index' END as "Type",
+      pg_catalog.pg_get_userbyid(c.relowner) as "Owner"
+   FROM pg_catalog.pg_class c
+   LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+   WHERE c.relkind IN ('v','')
+      AND n.nspname <> 'pg_catalog'
+      AND n.nspname !~ '^pg_toast'
+      AND n.nspname <> 'information_schema'
+      AND pg_catalog.pg_table_is_visible(c.oid)
+      AND c.relname NOT LIKE '%test%'
+      AND c.relname NOT LIKE '%ajo%'
+   ORDER BY 1,2;
+   ```
+
+   Kör skalet. Du bör se utdatamodeller som liknar skärmbilden nedan.
+
+   ![Konfigurationssteg 5](assets/jupyter-config-step3.png) för anteckningsbok för jupyter
+
+   Du bör se **[!UICONTROL cc_data_view]** i listan med datavyer.
+
+### Till FLATTEN eller inte
+
+Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+
+| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
+|---|---|:---:|---|
+| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Rekommenderat alternativ för**. Obs! `%3FFLATTEN` är en URL-kodad version av `?FLATTEN`. |
+
+### Mer information
+
+* [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
+>[!TAB RStudio]
+
+1. Få åtkomst till de nödvändiga autentiseringsuppgifterna och parametrarna från användargränssnittet för Experience Platform Query Service.
+
+   1. Navigera till din Experience Platform-sandlåda.
+   1. Välj ![Frågor](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** i den vänstra listen.
+   1. Välj fliken **[!UICONTROL Credentials]** i gränssnittet **[!UICONTROL Queries]**.
+   1. Välj `prod:cja` i listrutan **[!UICONTROL Database]**.
+
+      ![Fråga efter autentiseringsuppgifter för tjänsten](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Starta RStudio.
+1. Skapa en ny R Markdown-fil eller hämta [det här exemplet på R-markeringsfil](assets/BI-Extension.Rmd.zip).
+1. I ditt första segment anger du följande programsatser mellan ` ```{r} ` och ` ``` `. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för de olika parametrarna, till exempel `host`, `dbname` och `user`. Exempel:
+
+   ```R
+   library(rstudioapi)
+   library(DBI)
+   library(dplyr)
+   library(tidyr)
+   library(RPostgres)
+   library(ggplot2)
+   
+   host <- rstudioapi::showPrompt(title = "Host", message = "Host", default = "orangestagingco.platform-query-stage.adobe.io")
+   dbname <- rstudioapi::showPrompt(title = "Database", message = "Database", default = "prod:cja?FLATTEN")
+   user <- rstudioapi::showPrompt(title = "Username", message = "Username", default = "EC582F955C8A79F70A49420E@AdobeOrg")
+   password <- rstudioapi::askForPassword(prompt = "Password")
+   ```
+
+1. Kör segmentet. Du uppmanas att ange **[!UICONTROL Host]**, **[!UICONTROL Database]** och **[!UICONTROL User]**. Acceptera bara de värden du har angett som en del av föregående steg.
+1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in lösenordet från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till dialogrutan **[!UICONTROL Password]** i RStudio.
+
+   ![RStudio, konfigurationssteg 1](assets/rstudio-config-step1.png)
+
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+
+   ```R
+   con <- dbConnect(
+      RPostgres::Postgres(),
+      host = host,
+      port = 80,
+      dbname = dbname,
+      user = user,
+      password = password,
+      sslmode = 'require'
+   )
+   ```
+
+1. Kör segmentet. Du bör inte se några utdata om anslutningen lyckas.
+
+
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+
+   ```R
+   views <- dbListTables(con)
+   print(views)
+   ```
+
+1. Kör segmentet. Du bör se `character(0)` som den enda utdatafilen.
+
+
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+
+   ```R
+   glimpse(dv)
+   ```
+
+1. Kör segmentet. Du bör se utdatamodeller som liknar skärmbilden nedan.
+
+   ![RStudio, konfigurationssteg 2](assets/rstudio-config-step2.png)
+
+### Till FLATTEN eller inte
+
+RStudio stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+
+| FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
+|---|---|:---:|---|
+| Ingen | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Rekommenderat alternativ för**. |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
+
+### Mer information
+
+* [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
 >[!ENDTABS]
 
 +++
@@ -381,6 +575,54 @@ En visualisering och en tabell som liknar den visas nedan.
 
 ![Sökresultat, daglig trend](assets/uc2-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangeday AS Date, COUNT(*) AS Events \
+             FROM cc_data_view \
+             WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+             GROUP BY 1 \
+             ORDER BY Date ASC
+   df = data.DataFrame()
+   df = df.groupby('Date', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Date', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc2-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   ## Daily Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(daterangeday) %>%
+      count() %>%
+      arrange(daterangeday, .by_group = FALSE)
+   ggplot(df, aes(x = daterangeday, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Date")
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc2-rstudio-results.png)
+
 >[!ENDTABS]
 
 +++
@@ -470,6 +712,54 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 En visualisering och en tabell som liknar den visas nedan.
 
 ![Sökresultat, daglig trend](assets/uc3-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangehour AS Hour, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-01-02' \
+               GROUP BY 1 \
+                ORDER BY Hour ASC
+   df = data.DataFrame()
+   df = df.groupby('Hour', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Hour', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc3-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -589,6 +879,54 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 En visualisering och en tabell som liknar den visas nedan.
 
 ![Sökresultat, daglig trend](assets/uc4-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc4-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -767,6 +1105,57 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 En visualisering och en tabell som liknar den visas nedan.
 
 ![Sökresultat, daglig trend](assets/uc5-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Purchase Revenue', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc5-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   library(tidyr)
+   
+   ## Single dimension ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases)) %>%
+      arrange(product_name, .by_group = FALSE)
+   dfV <- df %>%
+      head(5)
+   ggplot(dfV, aes(x = purchase_revenue, y = product_name)) +
+      geom_col(position = "dodge") +
+      geom_text(aes(label = purchase_revenue), vjust = -0.5)
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -976,6 +1365,52 @@ En visualisering och en tabell som liknar den visas nedan.
 
 ![Sökresultat, daglig trend](assets/uc6-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_category AS `Product Category`, product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1, 2 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby(['Product Category', 'Product Name'], as_index=False).sum()
+   plt.figure(figsize=(8, 8))
+   sns.scatterplot(x='Product Category', y='Product Name', size='Purchase Revenue', sizes=(10, 200), hue='Purchases', palette='husl', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc6-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   ## Multiple dimensions ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_category, product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc6-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1109,6 +1544,40 @@ En visualisering och en tabell som liknar den visas nedan.
 
 ![Distinkt antal sökare](assets/uc7-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   data = %sql SELECT COUNT(DISTINCT(product_name)) AS `Product Name` \
+      FROM cc_data_view \
+      WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01';
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc7-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   ## Count Distinct
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      summarise(product_name_count_distinct = n_distinct(product_name))
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc7-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1193,6 +1662,73 @@ Observera hur datumintervallet som definieras i visualiseringen av frihandstabel
 En visualisering och en tabell som liknar den visas nedan.
 
 ![Distinkt antal sökare](assets/uc8-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   data = %sql SELECT daterangeName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   daterange_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Date Range Name:',
+      style=style
+   )
+   display(daterange_name)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc8-jupyter-input.png)
+
+1. Välj **[!UICONTROL Fishing Products]** i listrutan.
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterangeName = '{daterange_name.value}' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc8-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt namn för datumintervall. Exempel: `Last Year 2023`.
+
+   ```R
+   ## Monthly Events for Last Year
+   df <- dv %>%
+      filter(daterangeName == "Last Year 2023") %>%
+      group_by(daterangemonth) %>%
+      count() %>%
+      arrange(daterangemonth, .by_group = FALSE)
+   ggplot(df, aes(x = daterangemonth, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1293,6 +1829,72 @@ En visualisering och en tabell som liknar den visas nedan.
 
 ![Distinkt antal sökare](assets/uc9-looker-result.png){zoomable="yes"}
 
+
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   data = %sql SELECT filterName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   filter_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Filter Name:',
+      style=style
+   )
+   display(filter_name)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc9-jupyter-input.png)
+
+1. Välj **[!UICONTROL Fishing Products]** i listrutan.
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+                  AND filterName = '{filter_name.value}' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc9-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt filternamn. Exempel: `Fishing Products`.
+
+   ```R
+   ## Dimension filtered by name
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & filterName == "Fishing Products") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc9-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1300,7 +1902,8 @@ En visualisering och en tabell som liknar den visas nedan.
 
 ## Använd dimensionsvärden för att filtrera
 
-Du skapar ett nytt filter i Customer Journey Analytics som filtrerar produkter i jaktproduktkategorin. Sedan vill du använda det nya filtret för att rapportera produktnamn och förekomster (händelser) för produkter i jaktkategorin under januari 2023.
+Du använder det dynamiska **[!UICONTROL Hunting]**-värdet för **[!UICONTROL Product Category]** för att filtrera produkter från jaktkategorin. För BI-verktyg som inte har stöd för dynamisk hämtning av produktkategorivärden skapar du ett nytt filter i Customer Journey Analytics som filtrerar produkter i jaktproduktkategorin.
+Sedan vill du använda det nya filtret för att rapportera produktnamn och förekomster (händelser) för produkter i jaktkategorin under januari 2023.
 
 +++ Customer Journey Analytics
 
@@ -1329,7 +1932,7 @@ Du kan sedan använda det filtret i en exempelpanel **[!UICONTROL Using Dimensio
 
 1. I rutan **[!UICONTROL Data]**:
    1. Välj **[!UICONTROL daterange]**.
-   1. Välj **[!UICONTROL filterName]**.
+   1. Välj **[!UICONTROL product_category]**.
    1. Välj **[!UICONTROL product_name]**.
    1. Välj **[!UICONTROL ∑ occurrences]**.
 
@@ -1338,20 +1941,22 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 1. I rutan **[!UICONTROL Filters]**:
    1. Välj **[!UICONTROL filterName is (All)]** från **[!UICONTROL Filters on this visual]**.
    1. Välj **[!UICONTROL Basic filtering]** som **[!UICONTROL Filter type]**.
-   1. Under fältet **[!UICONTROL Search]** väljer du **[!UICONTROL Hunting Products]**, som är namnet på det befintliga filtret som definierats i Customer Journey Analytics.
    1. Välj **[!UICONTROL daterange is (All)]** från **[!UICONTROL Filters on this visual]**.
    1. Välj **[!UICONTROL Advanced filtering]** som **[!UICONTROL Filter type]**.
    1. Definiera filtret för **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Välj **[!UICONTROL Basic filter]** som **[!UICONTROL Filter type]** för **[!UICONTROL product_category]** och välj **[!UICONTROL Hunting]** i listan över möjliga värden.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort **[!UICONTROL filterName]** från **[!UICONTROL Columns]**.
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort **[!UICONTROL daterange]** från **[!UICONTROL Columns]**.
 
-   Tabellen uppdateras med det använda **[!UICONTROL filterName]**-filtret. Ditt Power BI-skrivbord ska se ut så här nedan.
+   Tabellen uppdateras med det använda **[!UICONTROL product_category]**-filtret. Ditt Power BI-skrivbord ska se ut så här nedan.
 
    ![Power BI Desktop använder datumintervallnamn för att filtrera](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
 >[!TAB Skrivbord för Tablet PC]
+
+![AlertRed](/help/assets/icons/AlertRed.svg) Skrivbordsdatorn Tableau stöder inte hämtning av den dynamiska listan över produktkategorier från Customer Journey Analytics. I det här användningsexemplet används det nyligen skapade filtret för **[!UICONTROL Hunting Products]** och filternamnskriterierna används.
 
 1. I vyn **[!UICONTROL Data Source]**, under **[!UICONTROL Data]**, på snabbmenyn på **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, väljer du **[!UICONTROL Refresh]**. Du måste uppdatera anslutningen för att kunna plocka upp det nya filtret som du just definierade i Customer Journey Analytics.
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
@@ -1384,15 +1989,75 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Product Category]** i listan med fält.
 1. Kontrollera **[!UICONTROL is]** som markering för filtret.
-1. Välj **[!UICONTROL Hunting Products]** i listan över möjliga värden.
-1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
-   1. Välj **[!UICONTROL Product Name]**.
-   1. Välj **[!UICONTROL Count]** under **[!UICONTROL MEASURES]** i den vänstra listen (längst ned).
-1. Välj **[!UICONTROL Run]**.
 
-Du bör se en liknande tabell som nedan.
+![AlertRed](/help/assets/icons/AlertRed.svg)-uppslag visar inte listan över möjliga värden för **[!UICONTROL Product Category]**.
 
 ![Distinkt antal sökare](assets/uc10-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   data = %sql SELECT DISTINCT product_category FROM cc_data_view WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01';
+   style = {'description_width': 'initial'}
+   category_filter = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Product Category:',
+      style=style
+   )
+   display(category_filter)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc10-jupyter-input.png)
+
+1. Välj **[!UICONTROL Hunting]** i listrutan.
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               AND product_category = '{category_filter.value}' \
+               GROUP BY 1 \
+               ORDER BY Events DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc10-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder en lämplig kategori. Till exempel `Hunting`.
+
+   ```R
+   ## Dimension 1 Filtered by Dimension 2 value
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & product_category == "Hunting") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc10-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1601,12 +2266,69 @@ SELECT
     COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "purchase_revenue"
 FROM
     "public"."cc_data_view" AS "cc_data_view"
-WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2024-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
 GROUP BY
     1
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+```
+
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc11-jupyter-results.png)
+
+Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
+
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   ## Dimension 1 Sorted
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc11-rstudio-results.png)
+
+Frågan som genereras av RStudio med BI-tillägget inkluderar `ORDER BY`, vilket innebär att ordningen tillämpas via RStudio och BI-tillägget.
+
+```sql
+SELECT
+  "product_name",
+  SUM("purchase_revenue") AS "purchase_revenue",
+  SUM("purchases") AS "purchases"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2023-02-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "purchase_revenue" DESC
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -1838,6 +2560,60 @@ ORDER BY
 FETCH NEXT 5 ROWS ONLY
 ```
 
+
+>[!TAB Jupyter-anteckningsbok]
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc12-jupyter-results.png)
+
+Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
+
+>[!TAB RStudio]
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   ## Dimension 1 Limited
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE) %>%
+      head(5)
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc12-rstudio-results.png)
+
+Frågan som genereras av RStudio med BI-tillägget inkluderar `LIMIT 5`, vilket innebär att gränsen tillämpas via RStudio och BI-tillägget.
+
+```sql
+SELECT "product_name", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2024-01-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "n" DESC
+LIMIT 5
+```
+
 >[!ENDTABS]
 
 +++
@@ -2034,6 +2810,66 @@ GROUP BY
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+```
+
+>[!TAB Jupyter-anteckningsbok]
+
+Customer Journey Analytics-objekten (mått, mått, filter, beräknade mått och datumintervall) är tillgängliga som en del av de inbäddade SQL-frågor som du skapar. Se tidigare exempel.
+
+**Anpassade omformningar**
+
+1. Ange följande satser i en ny cell.
+
+   ```python
+   data = %sql SELECT LOWER(product_category) AS `Product Category`, COUNT(*) AS EVENTS \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Jupyter-anteckningsboksresultat](assets/uc13-jupyter-results.png)
+
+Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
+
+>[!TAB RStudio]
+
+Customer Journey Analytics-komponenterna (mått, mått, filter, beräknade värden och datumintervall) är tillgängliga som liknande namngivna objekt på R-språket. Se komponenterna med komponenten Se tidigare exempel.
+
+**Anpassade omformningar**
+
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+
+   ```R
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange <= "2024-01-01") %>%
+      mutate(d2=lower(product_category)) %>%
+      group_by(d2) %>%
+      count() %>%
+      arrange(d2, .by_group = FALSE)
+   print(df)
+   ```
+
+1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
+
+   ![Resultat av Gällande ljud](assets/uc13-rstudio-results.png)
+
+Frågan som genereras av RStudio med BI-tillägget inkluderar `lower`, vilket betyder att den anpassade omvandlingen körs av RStudio och BI-tillägget.
+
+```sql
+SELECT "d2", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*, lower("product_category") AS "d2"
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" <= '2024-01-01')
+) AS "q01"
+GROUP BY "d2"
+ORDER BY "d2"
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -2235,7 +3071,19 @@ För de flesta visualiseringar från Customer Journey Analytics erbjuder Looker 
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md) | [Treemap-diagram](https://cloud.google.com/looker/docs/treemap) |
 | ![Typ](/help/assets/icons/TwoDots.svg) | [Venndiagram](/help/analysis-workspace/visualizations/venn.md) | [Venndiagram](https://cloud.google.com/looker/docs/venn) |
 
+>[!TAB Jupyter-anteckningsbok]
+
+Att jämföra visualiseringsfunktionerna i **matplotlib.pyplot**, det tillståndbaserade gränssnittet mot matplotlib, ligger utanför syftet med den här artikeln. Se exemplen ovan för inspiration och dokumentationen till [matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html).
+
+
+>[!TAB RStudio]
+
+Att jämföra visualiseringsfunktionerna i **ggplot2**, datavisualiseringspaketet i R, ligger utanför syftet med den här artikeln. Se exemplen ovan för inspiration och dokumentationen till [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).
+
 >[!ENDTABS]
+
+
+
 
 +++
 
@@ -2271,6 +3119,15 @@ Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med Cus
 * Uppslagets användarupplevelse i datum- eller datum-/tidsfält som **[!UICONTROL Daterange Date]** eller **[!UICONTROL Daterangeday Date]** är förvirrande.
 * Lookers datumintervall är exklusivt i stället för inkluderande.  **[!UICONTROL until (before)]** är grått, så du kanske missar den aspekten.  För slutdagen måste du välja en som ligger efter den dag du vill rapportera på.
 * Looker behandlar inte automatiskt mätvärden.  När du väljer ett mätvärde försöker Looker som standard att behandla mätvärdet som en dimension i frågan.  Om du vill behandla en mätmetod som en mätmetod måste du skapa ett anpassat fält enligt bilden ovan. Som genväg kan du välja **[!UICONTROL ⋮]**, markera **[!UICONTROL Aggregate]** och sedan välja **[!UICONTROL Sum]**.
+
+>[!TAB Jupyter-anteckningsbok]
+
+* Den största skillnaden för Jupyter Notebook är att verktyget inte har något dra och släpp-gränssnitt som andra BI-verktyg. Du kan skapa bra bilder, men du måste skriva kod för att uppnå detta.
+
+>[!TAB RStudio]
+
+* R-distributionen fungerar med ett platt schema så alternativet **[!UICONTROL FLATTEN]** krävs.
+* Huvudkavatten för RStudio är att verktyget inte har ett dra och släpp-användargränssnitt som andra BI-verktyg. Du kan skapa bra bilder, men du måste skriva kod för att uppnå detta.
 
 >[!ENDTABS]
 
