@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
+source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 1%
@@ -273,7 +273,7 @@ När du har angett all nödvändig information visas en sammanfattning med infor
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Varning om introduktionsimplementering"
->abstract="Detta konfigurerar innehållsanalysen delvis baserat på de indata du angett i det här arbetsflödet. Flera andra inställningar väljs automatiskt baserat på vad som vanligtvis är användbart för Content Analytics. Vi rekommenderar att du granskar inställningarna för varje artefakt för att bekräfta att de uppfyller dina krav och riktlinjer. <br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/>Observera också att för att kunna härleda attribut för bilder och text, kommer Adobe att hämta dessa attribut med den URL som lästes in när användarna besöker efter de datainsamlingsinställningar som du har implementerat."
+>abstract="Detta konfigurerar innehållsanalysen delvis baserat på de indata du angett i det här arbetsflödet. Flera andra inställningar väljs automatiskt baserat på vad som vanligtvis är användbart för Content Analytics. Vi rekommenderar att du granskar inställningarna för varje artefakt för att bekräfta att de uppfyller dina krav och riktlinjer. <br/><br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/><br/>Observera också att för att kunna härleda attribut för bilder och text, kommer Adobe att hämta dessa attribut med den URL som lästes in när användarna besöker efter de datainsamlingsinställningar som du har implementerat."
 
 <!-- markdownlint-enable MD034 -->
 
