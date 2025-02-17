@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: e2063ee571f78558c487f80041f9d28616138c61
+source-git-commit: 220d48cd35d065b38dac441ce4155fa162a07533
 workflow-type: tm+mt
 source-wordcount: '11965'
 ht-degree: 0%
@@ -318,7 +318,7 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 1. Kör cellen.
 1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in lösenordet från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till fältet **[!UICONTROL Password]** i Jupyter Notebook.
 
-   ![Konfigurationssteg 1 för jupter-anteckningsbok](assets/jupyter-config-step1.png)
+   ![Konfigurationssteg 1 för jupter-anteckningsbok](assets/jupyter-config-step1.png){zoomable="yes"}
 
 1. I en ny cell anger du programsatserna för att läsa in SQL-tillägget, det bibliotek som krävs och ansluta till Customer Journey Analytics.
 
@@ -330,7 +330,7 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 
    Kör skalet. Du ska inte se några utdata, men cellen ska köras utan någon varning.
 
-   ![Jupyer-konfigurationssteg för anteckningsbok, steg 4](assets/jupyter-config-step2.png)
+   ![Jupyer-konfigurationssteg för anteckningsbok, steg 4](assets/jupyter-config-step2.png){zoomable="yes"}
 
 1. I ett nytt anrop anger du programsatserna för att få en lista över tillgängliga datavyer baserade på anslutningen.
 
@@ -354,7 +354,7 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 
    Kör skalet. Du bör se utdatamodeller som liknar skärmbilden nedan.
 
-   ![Konfigurationssteg 5](assets/jupyter-config-step3.png) för anteckningsbok för jupyter
+   ![Konfigurationssteg 5](assets/jupyter-config-step3.png){zoomable="yes"} för anteckningsbok för jupyter
 
    Du bör se **[!UICONTROL cc_data_view]** i listan med datavyer.
 
@@ -405,7 +405,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 1. Kör segmentet. Du uppmanas att ange **[!UICONTROL Host]**, **[!UICONTROL Database]** och **[!UICONTROL User]**. Acceptera bara de värden du har angett som en del av föregående steg.
 1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in lösenordet från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till dialogrutan **[!UICONTROL Password]** i RStudio.
 
-   ![RStudio, konfigurationssteg 1](assets/rstudio-config-step1.png)
+   ![RStudio, konfigurationssteg 1](assets/rstudio-config-step1.png){zoomable="yes"}
 
 1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
 
@@ -442,7 +442,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 1. Kör segmentet. Du bör se utdatamodeller som liknar skärmbilden nedan.
 
-   ![RStudio, konfigurationssteg 2](assets/rstudio-config-step2.png)
+   ![RStudio, konfigurationssteg 2](assets/rstudio-config-step2.png){zoomable="yes"}
 
 ### Till FLATTEN eller inte
 
@@ -599,7 +599,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc2-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc2-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -622,7 +622,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc2-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc2-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -737,7 +737,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc3-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc3-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -760,7 +760,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc3-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc3-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -904,7 +904,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc4-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc4-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -927,7 +927,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc4-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc4-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1130,7 +1130,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc5-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc5-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1156,7 +1156,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc5-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc5-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1390,7 +1390,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc6-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc6-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1409,7 +1409,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc6-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc6-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1559,7 +1559,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc7-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc7-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1576,7 +1576,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc7-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc7-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1682,7 +1682,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc8-jupyter-input.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc8-jupyter-input.png){zoomable="yes"}
 
 1. Välj **[!UICONTROL Fishing Products]** i listrutan.
 
@@ -1706,7 +1706,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc8-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc8-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1729,7 +1729,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc8-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc8-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1849,7 +1849,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc9-jupyter-input.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc9-jupyter-input.png){zoomable="yes"}
 
 1. Välj **[!UICONTROL Fishing Products]** i listrutan.
 
@@ -1874,7 +1874,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc9-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc9-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1893,7 +1893,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc9-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc9-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -2013,7 +2013,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc10-jupyter-input.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc10-jupyter-input.png){zoomable="yes"}
 
 1. Välj **[!UICONTROL Hunting]** i listrutan.
 
@@ -2039,7 +2039,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc10-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc10-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -2058,7 +2058,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc10-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc10-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -2292,7 +2292,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc11-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc11-jupyter-results.png){zoomable="yes"}
 
 Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
@@ -2313,7 +2313,7 @@ Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc11-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc11-rstudio-results.png){zoomable="yes"}
 
 Frågan som genereras av RStudio med BI-tillägget inkluderar `ORDER BY`, vilket innebär att ordningen tillämpas via RStudio och BI-tillägget.
 
@@ -2578,7 +2578,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc12-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc12-jupyter-results.png){zoomable="yes"}
 
 Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
@@ -2599,7 +2599,7 @@ Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc12-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc12-rstudio-results.png){zoomable="yes"}
 
 Frågan som genereras av RStudio med BI-tillägget inkluderar `LIMIT 5`, vilket innebär att gränsen tillämpas via RStudio och BI-tillägget.
 
@@ -2833,7 +2833,7 @@ Customer Journey Analytics-objekten (mått, mått, filter, beräknade mått och 
 
 1. Kör cellen. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Jupyter-anteckningsboksresultat](assets/uc13-jupyter-results.png)
+   ![Jupyter-anteckningsboksresultat](assets/uc13-jupyter-results.png){zoomable="yes"}
 
 Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
@@ -2857,7 +2857,7 @@ Customer Journey Analytics-komponenterna (mått, mått, filter, beräknade värd
 
 1. Kör segmentet. Du bör se utdata som liknar skärmbilden nedan.
 
-   ![Resultat av Gällande ljud](assets/uc13-rstudio-results.png)
+   ![Resultat av Gällande ljud](assets/uc13-rstudio-results.png){zoomable="yes"}
 
 Frågan som genereras av RStudio med BI-tillägget inkluderar `lower`, vilket betyder att den anpassade omvandlingen körs av RStudio och BI-tillägget.
 

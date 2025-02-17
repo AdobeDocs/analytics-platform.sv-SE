@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
+source-git-commit: 30e3df15aecec0bab180cd06e0ae7c79f58cdf44
 workflow-type: tm+mt
-source-wordcount: '3145'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 [!DNL Customer Journey Analytics BI extension] aktiverar SQL-åtkomst till de [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableau Desktop eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
 
-Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina datavyer i Customer Journey Analytics som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
+Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina Customer Journey Analytics-datavyer som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
 
 De viktigaste fördelarna är:
 
-* Du behöver inte återskapa en motsvarande representation av datavyer från Customer Journey Analytics i BI-verktyget. <br/>Se [Datavyer](data-views.md) för mer information om funktionaliteten hos datavyer för att förstå vad som måste återskapas.
-* Större konsekvens i rapportering och analys mellan BI-verktyg och Customer Journey Analytics.
-* Kombinera data från Customer Journey Analytics med andra datakällor som redan finns i BI-verktyg.
+* Du behöver inte återskapa en motsvarande representation av Customer Journey Analytics datavyer i BI-verktyget. <br/>Se [Datavyer](data-views.md) för mer information om funktionaliteten hos datavyer för att förstå vad som måste återskapas.
+* Bättre enhetlighet i rapportering och analys mellan BI-verktyg och Customer Journey Analytics.
+* Kombinera Customer Journey Analytics-data med andra datakällor som redan finns i BI-verktyg.
 
 ## Förutsättningar
 
@@ -48,10 +48,10 @@ Eller så kan du:
 
 Så här använder du ej förfallande autentiseringsuppgifter:
 
-* Skapa autentiseringsuppgifter som inte förfaller i Experience Platform.
+* Skapa inloggningsuppgifter som inte förfaller i Experience Platform.
 * Bevilja åtkomst till de autentiseringsuppgifter som inte förfaller genom att följa stegen som anges i [Utgående autentiseringsuppgifter](#Expiring-credentials).
 
-Mer information finns i [Åtkomstkontroll för kundresa](../technotes/access-control.md), särskilt [Tilläggsbehörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
+Mer information finns i [Åtkomstkontroll för kundresa](../technotes/access-control.md), särskilt [Tilläggsbehörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics-behörigheter i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Användning
@@ -135,13 +135,13 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
       1. Du uppmanas att ange **[!UICONTROL Username]** och **[!UICONTROL Password]**. Använd motsvarande parametrar från Experience Platform Queries [!UICONTROL Credentials].
 
 
-   1. När inloggningen är klar visas datavytabellerna i Customer Journey Analytics i Power BI:er **[!UICONTROL ** Navigator **]**.
+   1. När inloggningen är klar visas datavytabellerna för Customer Journey Analytics i Power BI:er **[!UICONTROL ** Navigator **]**.
 
    1. Markera de datavytabeller som du vill använda och välj **[!UICONTROL ** Läs in **]**.
 
    Alla dimensioner och mätvärden som är kopplade till en eller flera markerade tabeller visas i den högra rutan, redo att användas i dina visualiseringar.
 
-   Mer information finns i [Ansluta Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+   Mer information finns i [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -175,25 +175,100 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
       1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i listan **[!UICONTROL ** Autentisering **]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Användarnamn **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Användarnamn **]**.
+      1. Klistra in parametern **[!UICONTROL ** Användarnamn **]** från Experience Platform-frågor [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Användarnamn **]**.
 
       1. Klistra in parametern **[!UICONTROL ** Password **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Password **]** .
 
       1. Välj **[!UICONTROL ** Logga in **]**.
 
-   1. Datavyer i Customer Journey Analytics visas som tabeller i listan **[!UICONTROL ** Tabell **]**.
+   1. Customer Journey Analytics datavyer visas som tabeller i listan **[!UICONTROL ** Tabell **]**.
 
    1. Dra de tabeller som du vill använda på arbetsytan.
 
    Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Ansluta tabell till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
+   Mer information finns i [Ansluta tabell till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+
++++
+
++++ Looker
+
+1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
+
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+
+   1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
+
+   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) vid behov i Looker.
+
+1. I Looker:
+
+   1. Välj **[!UICONTROL Admin]** i den vänstra listen.
+   1. Välj **[!UICONTROL Connections]**.
+   1. Välj **[!UICONTROL Add Connection]**.
+   1. Klistra in lämpliga värden på skärmen **[!UICONTROL Connect your database to Looker]** när du konfigurerar den nya anslutningen. Se till att du väljer **[!UICONTROL PostgreSQL 9.5+]** som dialekt.
+   1. Välj **[!UICONTROL Test]** om du vill testa anslutningen.
+   1. När det är klart väljer du **[!UICONTROL Update]** för att spara anslutningen.
+
+   Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
+
+   Mer information finns i [Anslut sökare till frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+
++++
+
++++ Jupyter Notebook
+
+1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
+
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+
+   1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
+
+   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) vid behov i Jupyter-anteckningsboken.
+
+1. I Jupyter Notebook:
+
+   1. Se till att du använder de bibliotek som behövs.
+   1. Använd rätt värden när du konfigurerar och kör anslutningen.
+   1. Testa anslutningen genom att köra en relevant fråga.
+
+   När det är klart kan du arbeta med data för att skapa rapporter och visualiseringar.
+
+   Mer information finns i [Ansluta Jupyter-anteckningsbok till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+
++++
+
++++ RStudio
+
+1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
+
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+
+   1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
+
+   1. Använd ![Kopiera](assets/Smock_Copy_18_N.svg) om du vill kopiera var och en av Postgres-autentiseringsparametrarna ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username] med flera) vid behov i Jupyter-anteckningsboken.
+
+1. I RStudio:
+
+   1. Se till att du använder de bibliotek som behövs.
+   1. Använd rätt värden när du konfigurerar och kör anslutningen.
+   1. Testa anslutningen genom att köra en relevant fråga.
+
+   När det är klart kan du arbeta med data för att skapa rapporter och visualiseringar.
+
+   Mer information finns i [Anslut RStudio till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio). Se även [BI-tilläggsanvändningsfall](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel (som använder RPostgres-paketet i stället).
 
 +++
 
 Se [Ansluta klienter till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) för en översikt och mer information om de olika verktygen som finns.
 
-Se [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget
+Se [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget.
 
 ## Funktionalitet
 
@@ -203,7 +278,7 @@ Om du vill använda ID:n för datavyn som tabellnamn kan du lägga till den valf
 
 ### Dataförvaltning
 
-De datastyrningsrelaterade inställningarna i Customer Journey Analytics ärvs från Adobe Experience Platform. Integrationen mellan Customer Journey Analytics och Adobe Experience Platform datastyrning möjliggör märkning av känsliga uppgifter från Customer Journey Analytics och tillämpning av integritetspolicyer.
+De datastyrningsrelaterade inställningarna i Customer Journey Analytics ärvs från Adobe Experience Platform. Integrationen mellan Customer Journey Analytics och Adobe Experience Platform Data Governance möjliggör märkning av känsliga Customer Journey Analytics-data och tillämpning av sekretesspolicyer.
 
 Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Data som efterfrågas med [!DNL Customer Journey Analytics BI extension] visar därför lämpliga varningar eller fel när de inte följer definierade sekretessetiketter och principer.
 
