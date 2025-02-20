@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Customer Journey Analytics
 description: Visa den senaste versionsinformationen om Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
+source-git-commit: e6f86bf3dee81d70300cb26a1593d0e40966a63b
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '255'
 ht-degree: 6%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (februari 2025)
 
-**Senast uppdaterad**: 19 februari 2025
+**Senast uppdaterad**: 20 februari 2025
 
 Versionsanteckningarna gäller frisläppningsperioden 24 januari 2025-18 mars 2025. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,7 +20,9 @@ Versionsanteckningarna gäller frisläppningsperioden 24 januari 2025-18 mars 20
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI-tillägg - stöd för sökare** | Tillägget Customer Journey Analytics BI har nu stöd för [Looker, Jupyter Notebook och R Studio](/help/data-views/bi-extension.md). [BI-tilläggets användningsfall](/help/use-cases/data-views/bi-extension-usecases.md) har uppdaterats för att återspegla de ytterligare verktyg som stöds. |   | 24 januari 2025 |
+| **BI-tillägg - utökad support** | Customer Journey Analytics BI-tillägget [har nu stöd för Looker, Jupyter Notebook och R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | 24 januari 2025 |
+| **Mediesamling: Adobe Source Connector-uppdateringar för nya Media Reporting XDM** | Analytics Source Connector mappar automatiskt strömmande mediedata i Adobe Analytics till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30 januari 2025 |
+
 
 ## Korrigeringar i Customer Journey Analytics
 
