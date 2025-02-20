@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
+source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '864'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 Den här tekniska handboken ger självhjälp för Customer Journey Analytics. Med Customer Journey Analytics kan ni hämta kunddata från valfri kanal (både online och offline) till Adobe Experience Platform. Och analysera sedan dessa data på samma sätt som ni gör med era befintliga digitala data med Analysis Workspace idag.
 
-Med Customer Journey Analytics kan du styra hur du kopplar samman online- och offlinedata i Analysis Workspace med vilket kundID som helst, så att du kan utföra attribuering, filter, flöde, utfall osv. i alla era kunddata.
+Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och offlinedata i Analysis Workspace med vilket kundens ID som helst, så att ni kan utföra attribuering, filter, flöde, utfall osv. i alla era kunddata.
 
 ## Vad är nytt?
 
-Få en glimt av de senaste förbättringarna i Customer Journey Analytics och dokumentation! En omfattande lista med funktioner, förbättringar och korrigeringar finns i den detaljerade [versionsinformationen](../release-notes/latest.md). Besök sidan [Dokumentationsuppdateringar](../release-notes/doc-changes.md) om du vill hålla dig uppdaterad med de senaste ändringarna.
+Få en glimt av de senaste förbättringarna i Customer Journey Analytics-produkten och -dokumentationen! En omfattande lista med funktioner, förbättringar och korrigeringar finns i den detaljerade [versionsinformationen](../release-notes/latest.md). Besök sidan [Dokumentationsuppdateringar](../release-notes/doc-changes.md) om du vill hålla dig uppdaterad med de senaste ändringarna.
 
 >[!BEGINTABS]
 
@@ -35,6 +35,13 @@ AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverk
 Guidad analys är nu tillgängligt direkt från Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser.
 
 [![bild](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+
+
+>[!TAB Intelligenta bildtexter v2]
+
+Intelligenta bildtexter stöds nu, med ytterligare gränssnittsförbättringar, för visualiseringar för [Rad](/help/analysis-workspace/visualizations/line.md) (inklusive flera rader), [Stapel](/help/analysis-workspace/visualizations/bar.md), [Vågrätt streck](/help/analysis-workspace/visualizations/horizontal-bar.md), [Område](/help/analysis-workspace/visualizations/area.md) (inklusive flera riktningslinjer), [Ring upp](/help/analysis-workspace/visualizations/donut.md), [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) och [Flöde ](/help/analysis-workspace/visualizations/c-flow/flow.md) .
+
+[![bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
 >[!TAB Larm]
 
@@ -53,11 +60,11 @@ Gör att du kan hämta in tidsseriedata som inte har något person-ID. Dessa tid
 
 >[!TAB Diagrambaserad utjämning*]
 
-Med hjälp av diagrambaserad sammanfogning kan du använda identitetsdiagrammet från Experience Platform Identity Service för att få en bättre bild av kundresan genom att: <ul><li>Sammanfoga datauppsättningar med olika identifierare utan att behöva extrahera, omvandla och läsa in ytterligare data för att spegla en enda identifierare.</li> <li>Förbättra täckningen av preferens- eller gyllene identitet för en enskild datauppsättning genom att dela identiteter mellan datauppsättningar.</li><li>Justera profiler som skapats i Real-time Customer Data Platform och Journey Optimizer med personer i Customer Journey Analytics.</li></ul>
+Med hjälp av diagrambaserad sammanfogning kan du använda identitetsdiagrammet från Experience Platform Identity Service för att få en bättre bild av kundresan genom att: <ul><li>Sammanfoga datauppsättningar med olika identifierare utan att behöva extrahera, omvandla och läsa in ytterligare data för att spegla en enda identifierare.</li> <li>Förbättra täckningen av preferens- eller gyllene identitet för en enskild datauppsättning genom att dela identiteter mellan datauppsättningar.</li><li>Justera profiler som skapats i Real-Time Customer Data Platform och Journey Optimizer med personer i Customer Journey Analytics.</li></ul>
 
 [![bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
-*_Du måste ha Prime-paketet för diagrambaserad stygn._*
+*_Du måste ha Prime-paketet för diagrambaserad sammanfogning._*
 
 >[!TAB B2B-sökningar]
 
@@ -73,7 +80,7 @@ Nu finns nya härledda fältfunktioner (Math, Next eller Previous, Summarize, De
 
 >[!TAB BI-tillägg*]
 
-BI-tillägget ger SQL-åtkomst till datavyer som du har definierat i Customer Journey Analytics. Nu kan du använda ditt BI-favoritverktyg för att skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder för sina Analysis Workspace-projekt. [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) har angetts.
+BI-tillägget ger SQL-åtkomst till de datavyer som du har definierat i Customer Journey Analytics. Nu kan du använda ditt BI-favoritverktyg (Power BI Desktop, Tableau Desktop, Looker, Juyter Notebook och RStudio) för att skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder i sina Analysis Workspace-projekt. [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) har angetts.
 
 [![bild](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
@@ -117,7 +124,7 @@ Börja med att läsa materialet i länkarna nedan för att bekanta dig med Custo
 
 ## Utforska dokumentationen
 
-Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics. Och hur ni får in era data i lösningen och sedan kan ta fram, visa, analysera och demokratisera dessa data och de analyser och rapporter som blir resultatet.
+Jämför Customer Journey Analytics med Adobe Analytics. Och hur ni får in era data i lösningen och sedan kan ta fram, visa, analysera och demokratisera dessa data och de analyser och rapporter som blir resultatet.
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -146,7 +153,7 @@ Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics.
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong> Dela, exportera, integrera </strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projekt</a> - <a href="/help/mobile-app/home.md">Analysinstrumentpaneler</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">Molnexport</a> - <a href="/help/integrations/overview.md">Integreringar</a>
+      <strong> Dela, exportera, integrera </strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projekt</a> - <a href="/help/mobile-app/home.md">Analysinstrumentpaneler</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">Cloud-export</a> - <a href="/help/integrations/overview.md">Integreringar</a>
     </td>
   </tr>
 </table>
@@ -155,13 +162,13 @@ Förstå hur Customer Journey Analytics står sig jämfört med Adobe Analytics.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">produktbeskrivning för Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">produktbeskrivning för Adobe Analytics (tillägg Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API:er för Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">AI Assistant</a>
+<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics produktbeskrivning</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-tillägg) produktbeskrivning</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics-API:er</a> - <a href="/help/ai-assistant.md">AI-assistenten</a>
 </td>
-<td><strong>Datainmatning</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Översikt</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Källor</a> - <a href="/help/data-ingestion/serverapi.md">Server-API</a>}
+<td><strong>Datainmatning</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Översikt</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Källor</a> - <a href="/help/data-ingestion/serverapi.md">Server-API</a>
 </td>
 </tr>
 </table>
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>Håll dig informerad, bidra till communityn och höj din Customer Journey Analytics-upplevelse!</b><br>Besök Adobe Analytics community och diskutera funktionaliteten med andra verksamma. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">Gå med i communityn idag!</a></td></tr></tbody></table>
+<b>Håll dig informerad, delta i communityn och höj din Customer Journey Analytics-upplevelse!</b><br>Besök Adobe Analytics community och diskutera funktionaliteten med andra verksamma. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">Gå med i communityn idag!</a></td></tr></tbody></table>

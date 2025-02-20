@@ -3,10 +3,10 @@ title: Aktuella versionsinformation för Customer Journey Analytics
 description: Visa den senaste versionsinformationen om Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 89ad5b445c79ee318ca064cbeb1da5948a714671
+source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 7%
+source-wordcount: '208'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller frisläppningsperioden 24 januari 2025-18 mars 20
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI-tillägg - stöd för sökare** | Customer Journey Analytics BI-tillägget [har nu stöd för Looker, Jupyter Notebook och R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | 24 januari 2025 |
+| **BI-tillägg - stöd för sökare** | Tillägget Customer Journey Analytics BI har nu stöd för [Looker, Jupyter Notebook och R Studio](/help/data-views/bi-extension.md). [BI-tilläggets användningsfall](/help/use-cases/data-views/bi-extension-usecases.md) har uppdaterats för att återspegla de ytterligare verktyg som stöds. |   | 24 januari 2025 |
 
 ## Korrigeringar i Customer Journey Analytics
 
