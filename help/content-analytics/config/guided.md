@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
+source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1810'
 ht-degree: 1%
 
 ---
@@ -148,13 +148,16 @@ En datavy är kopplad till en Customer Journey Analytics [Connection](/help/conn
 >title="Upplevelsehantering och -definition"
 >abstract="Du kan redigera inställningarna i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
 
-
-
 <!-- markdownlint-enable MD034 -->
 
 I det här avsnittet kan du välja att inkludera upplevelser i de data som du samlar in med Content Analytics.  En upplevelse är all text på en webbsida som är reproducerbar med den URL som den första användaren använder när han/hon besöker den webbsidan.
 
 Som standard är **[!UICONTROL Include experiences]** inaktiverad. När du väljer det här alternativet måste du definiera för vilka URL-adresser som du vill inkludera upplevelser.
+
+Du bör endast överväga att inkludera upplevelser när följande gäller:
+
+* Innehållet på webbplatsen drivs endast av en URL.
+* Sidorna på webbplatsen måste kunna reproduceras med hjälp av sidans URL.
 
 Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 
@@ -286,6 +289,7 @@ När du har skapat eller redigerat en konfiguration är följande åtgärder til
    * **[!UICONTROL Adobe Experience Platform]**-konfiguration:
       1. Skapa scheman för att modellera Content Analytics-händelser, resursattribut och (om de är konfigurerade) upplevelseattribut.
       1. Skapa datauppsättningar för att samla in Content Analytics-händelser, resursattribut och (om de är konfigurerade) upplevelseattribut.
+      1. Skapandet av ett dataflöde som använder funktionstjänsten för att generera och uppdatera innehållsattribut från Content Analytics-händelser.
    * **[!UICONTROL Content Analytics]**-konfiguration:
       * Inställning av en funktionsmonteringsprocess baserad på konfigurationen.
    * **[!UICONTROL Customer Journey Analytics]**-konfiguration:
