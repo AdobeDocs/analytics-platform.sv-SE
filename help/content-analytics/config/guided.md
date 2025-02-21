@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
 workflow-type: tm+mt
-source-wordcount: '1891'
-ht-degree: 1%
+source-wordcount: '1935'
+ht-degree: 0%
 
 ---
 
@@ -105,9 +105,14 @@ Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics 
 >abstract="Välj en befintlig datavy från Customer Journey Analytics som du vill sammanfoga dina innehållsanalysdata med.<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change"
->title="Välj datavy"
+>id="aca_onboarding_dataview_change_content"
+>title="Ny datavy"
 >abstract="Om du väljer en ny datavy uppdateras datavyn så att den innehåller mått och mått för innehållsanalys. Om det behövs uppdateras även den associerade anslutningen så att den innehåller innehållsanalysdatauppsättningar. Anslutningen och datavyn som för närvarande är konfigurerad för innehållsanalys ändras inte."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change_title"
+>title="Ny datavy"
+>abstract="Ny datavy"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -144,12 +149,12 @@ En datavy är kopplad till en Customer Journey Analytics [Connection](/help/conn
 >abstract="Samla upplevelser i innehållsanalys"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_url_header"
+>id="aca_onboarding_experiences_parameters_header"
 >title="Upplevelsehantering och -definition"
->abstract="Ange URL-adresser som parametrarna nedan gäller för"
+>abstract="Ange de parametrar som avgör hur innehåll återges på webbplatsen."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_edit_button"
+>id="aca_onboarding_experiencecapture_edit_button"
 >title="Upplevelsehantering och -definition"
 >abstract="Du kan redigera inställningarna i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
 
@@ -194,7 +199,7 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Datainsamling"
->abstract="Ange en taggegenskap"
+>abstract="**Ange en taggegenskap**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -228,7 +233,7 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
 
 <!-- markdownlint-enable MD034 -->
 
-#### Ny konfiguration
+#### Ny konfiguration {#new-configuration}
 
 I en ny konfiguration måste du definiera vilken taggegenskap du vill använda eller skapa en ny taggegenskap. Och du måste definiera sidorna och resurserna som du vill inkludera eller exkludera med hjälp av reguljära uttryck.
 
@@ -256,7 +261,7 @@ I en ny konfiguration måste du definiera vilken taggegenskap du vill använda e
    * Ange ett vanligt uttryck för **[!UICONTROL Asset]**. Till exempel: `(?!.*\b(store|help|admin)\b)`.
 
 
-#### Befintlig konfiguration
+#### Befintlig konfiguration {#existing-configuration}
 
 För en befintlig konfiguration kan du inte redigera taggegenskapen. Du kan dock redigera sidor och resurser som ska inkluderas eller exkluderas.
 
@@ -279,9 +284,19 @@ När du har angett all nödvändig information visas en sammanfattning med infor
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning"
+>id="aca_onboarding_implementation_warning_content"
 >title="Varning om introduktionsimplementering"
 >abstract="Om du väljer **[!UICONTROL Implement]** konfigureras innehållsanalysen baserat på de indata du har angett i det här arbetsflödet. Flera inställningar väljs som standard baserat på vad som är användbart för innehållsanalys, men du (som personuppgiftsansvarig) måste granska inställningarna för varje artefakt för att bekräfta att inställningarna har implementerats i enlighet med din sekretesspolicy, avtalsrättigheter och skyldigheter samt krav på samtycke enligt tillämplig lag.<br/><br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/><br/>För att härleda attribut för bilder och text hämtar Adobe attributen med:<ol><li>URL:en som hämtas när användarens webbplats besöker, enligt de datainsamlingsinställningar som du har konfigurerat, och</li><li>URL-adressen där bilden finns.</li></ol>Du får inte märka bilder som lagras på tredjepartswebbplatser."
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning_title"
+>title="Bekräftelse av implementering"
+>abstract="Bekräftelse av implementering"
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,6 +322,11 @@ När du har skapat eller redigerat en konfiguration är följande åtgärder til
       * En rapportmall för Content Analytics läggs till i Workspace.
 * **[!UICONTROL Save]**: Ändringar som görs i en implementerad konfiguration sparas och implementeringen uppdateras.
 * **[!UICONTROL Exit]**. Avslutar den guidade konfigurationen. Alla ändringar som görs i en implementerad konfiguration ignoreras.
+
+
+## Publicera {#publish}
+
+Om du vill aktivera din konfiguration för innehållsanalys måste du [manuellt](manual.md) publicera taggegenskapen som skapas efter att du har valt **[!UICONTROL Implement]**, som en del av den guidade konfigurationsguiden.
 
 >[!MORELIKETHIS]
 >

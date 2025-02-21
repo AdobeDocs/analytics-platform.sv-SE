@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,16 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-*Och nu för något helt annat..*
+I den här artikeln beskrivs de manuella konfigurationsåtgärder som du kan behöva för att göra ändringar i implementeringen av Content Analytics. I allmänhet bör du använda den [guidade konfigurationsguiden](guided.md) för att göra ändringar i implementeringen, men inte alla ändringar kan göras med den konfigurationsguiden.
+
+Följande manuella konfigurationsåtgärder är tillgängliga:
+
+## Publicera
+
+Om du vill aktivera en konfiguration för innehållsanalys måste du publicera den associerade taggegenskapen.
+
+
+## Ändra
 
 >[!MORELIKETHIS]
 >
