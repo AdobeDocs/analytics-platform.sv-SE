@@ -4,9 +4,9 @@ title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 17d3e8ed5986348bb4ba50822dfd9bb43d5a7570
+source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    * [!UICONTROL **Multiplicera**]: Skapar en ny kolumn som multiplicerar värdena för de två markerade kolumnerna.
 
-   * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen för de två markerade kolumnerna.
+   * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen mellan de två markerade kolumnerna.
 
 [Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
