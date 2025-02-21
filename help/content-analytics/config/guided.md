@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1891'
 ht-degree: 1%
 
 ---
@@ -103,6 +103,11 @@ Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics 
 >id="aca_onboarding_dataview_header_alt"
 >title="Datavy"
 >abstract="Välj en befintlig datavy från Customer Journey Analytics som du vill sammanfoga dina innehållsanalysdata med.<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change"
+>title="Välj datavy"
+>abstract="Om du väljer en ny datavy uppdateras datavyn så att den innehåller mått och mått för innehållsanalys. Om det behövs uppdateras även den associerade anslutningen så att den innehåller innehållsanalysdatauppsättningar. Anslutningen och datavyn som för närvarande är konfigurerad för innehållsanalys ändras inte."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -276,7 +281,7 @@ När du har angett all nödvändig information visas en sammanfattning med infor
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Varning om introduktionsimplementering"
->abstract="Detta konfigurerar innehållsanalysen delvis baserat på de indata du angett i det här arbetsflödet. Flera andra inställningar väljs automatiskt baserat på vad som vanligtvis är användbart för Content Analytics. Vi rekommenderar att du granskar inställningarna för varje artefakt för att bekräfta att de uppfyller dina krav och riktlinjer. <br/><br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/><br/>Observera också att för att kunna härleda attribut för bilder och text, kommer Adobe att hämta dessa attribut med den URL som lästes in när användarna besöker efter de datainsamlingsinställningar som du har implementerat."
+>abstract="Om du väljer **[!UICONTROL Implement]** konfigureras innehållsanalysen baserat på de indata du har angett i det här arbetsflödet. Flera inställningar väljs som standard baserat på vad som är användbart för innehållsanalys, men du (som personuppgiftsansvarig) måste granska inställningarna för varje artefakt för att bekräfta att inställningarna har implementerats i enlighet med din sekretesspolicy, avtalsrättigheter och skyldigheter samt krav på samtycke enligt tillämplig lag.<br/><br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/><br/>För att härleda attribut för bilder och text hämtar Adobe attributen med:<ol><li>URL:en som hämtas när användarens webbplats besöker, enligt de datainsamlingsinställningar som du har konfigurerat, och</li><li>URL-adressen där bilden finns.</li></ol>Du får inte märka bilder som lagras på tredjepartswebbplatser."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -285,27 +290,25 @@ När du har skapat eller redigerat en konfiguration är följande åtgärder til
 
 * **[!UICONTROL Discard]**: Alla ändringar som gjorts som en del av skapandet av en ny konfiguration eller redigeringen av en befintlig konfiguration tas bort.
 * **[!UICONTROL Save for later]**: Ändringar som görs i en ny konfiguration eller en befintlig konfiguration som ännu inte implementerats sparas. Du kan gå igenom konfigurationen igen senare om du vill göra ytterligare ändringar eller implementera konfigurationen.
-* **[!UICONTROL Implement]**: Ändringar som görs i en ny konfiguration eller befintlig, ännu inte implementerad konfiguration sparas och implementeras. Implementeringen består av följande:
+* **[!UICONTROL Implement]**: Inställningar för eller ändringar som gjorts i en ny konfiguration eller befintlig konfiguration som ännu inte implementerats sparas och implementeras. Implementeringen består av följande:
    * **[!UICONTROL Adobe Experience Platform]**-konfiguration:
-      1. Skapa scheman för att modellera Content Analytics-händelser, resursattribut och (om de är konfigurerade) upplevelseattribut.
-      1. Skapa datauppsättningar för att samla in Content Analytics-händelser, resursattribut och (om de är konfigurerade) upplevelseattribut.
-      1. Skapandet av ett dataflöde som använder funktionstjänsten för att generera och uppdatera innehållsattribut från Content Analytics-händelser.
-   * **[!UICONTROL Content Analytics]**-konfiguration:
-      * Inställning av en funktionsmonteringsprocess baserad på konfigurationen.
-   * **[!UICONTROL Customer Journey Analytics]**-konfiguration:
-      1. Den valda datavyn uppdateras med mått och mått för innehållsanalys.
-      1. Anslutningen som är kopplad till den valda datavyn har ändrats så att den inkluderar händelser- och attributdatamängder för Content Analytics.
-      1. Rapporteringsmallar för innehållsanalyser läggs till i Workspace.
+      * Skapa scheman för att modellera Content Analytics-händelser, resursattribut och (om de är konfigurerade) upplevelseattribut.
+      * Skapa datauppsättningar för att samla in Content Analytics-händelser, resursattribut och (om de är konfigurerade) upplevelseattribut.
+      * Skapandet av ett dataflöde som använder funktionstjänsten för att generera och uppdatera innehållsattribut från Content Analytics-händelser.
    * **[!UICONTROL Data collection]**-konfiguration:
-      1. Den nya eller befintliga taggegenskapen är konfigurerad för att stödja insamling av innehållsanalysdata. Den här konfigurationen innebär att tillägget Adobe Content Analytics för taggar ingår.
-      1. En datastream skapas för Content Analytics-händelser.
-      1. Tillägget Adobe Content Analytics är konfigurerat för att säkerställa att Content Analytics-händelser skickas till datastream för Content Analytics.
-      1. Om Web SDK inte är konfigurerat för taggegenskapen skapas en ny Web SDK-konfiguration som endast skickar Content Analytics-händelser.
-      1. Om Web SDK är konfigurerat för den här taggegenskapen görs inga ändringar i den befintliga Web SDK-konfigurationen.
+      * Den nya eller befintliga taggegenskapen är konfigurerad för att stödja insamling av innehållsanalysdata. Den här konfigurationen innebär att tillägget Adobe Content Analytics för taggar ingår.
+      * En datastream skapas för Content Analytics-händelser.
+      * Tillägget Adobe Content Analytics är konfigurerat för att säkerställa att Content Analytics-händelser skickas till datastream för Content Analytics.
+      * Om Web SDK inte är konfigurerat för taggegenskapen skapas en ny Web SDK-konfiguration som endast skickar Content Analytics-händelser.
+      * Om Web SDK är konfigurerat för den här taggegenskapen görs inga ändringar i den befintliga Web SDK-konfigurationen.
+   * **[!UICONTROL Customer Journey Analytics]**-konfiguration:
+      * Den valda datavyn uppdateras med mått och mått för innehållsanalys.
+      * Anslutningen som är kopplad till den valda datavyn har ändrats så att den inkluderar händelser- och attributdatamängder för Content Analytics.
+      * En rapportmall för Content Analytics läggs till i Workspace.
 * **[!UICONTROL Save]**: Ändringar som görs i en implementerad konfiguration sparas och implementeringen uppdateras.
 * **[!UICONTROL Exit]**. Avslutar den guidade konfigurationen. Alla ändringar som görs i en implementerad konfiguration ignoreras.
 
 >[!MORELIKETHIS]
 >
->[Manuell konfiguration av innehållsanalys](manual.md)
+>[Manuell konfiguration](manual.md)
 >

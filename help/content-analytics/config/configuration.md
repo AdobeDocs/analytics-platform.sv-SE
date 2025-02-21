@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 0%
 
 
 Om du vill konfigurera innehållsanalys för din organisation använder du [den guidade konfigurationen](guided.md) för innehållsanalys. Konfigurationsguiden vägleder dig genom alla steg som krävs för att ställa in förutsättningarna för en automatisk konfiguration av innehållsanalys.
+
+När implementeringen är klar kan du göra vissa ändringar med hjälp av den guidade konfigurationsguiden. [Manuella ändringar](manual.md) kan dock krävas utöver det.
 
 ## Förutsättningar
 
@@ -56,6 +58,8 @@ Innan du konfigurerar Content Analytics bör du kontrollera att följande krav �
 >>
 [!MORELIKETHIS]
 >>
+* [Guidad konfiguration](guided.md)
+* [Manuell konfiguration](manual.md)
 * [Åtkomstkontroll](/help/technotes/access-control.md)
 >
 
