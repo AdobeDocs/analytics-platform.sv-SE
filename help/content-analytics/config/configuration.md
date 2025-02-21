@@ -55,12 +55,11 @@ Innan du konfigurerar Content Analytics bör du kontrollera att följande krav �
    * Ni har en tydlig förståelse för vilka (typer av) resurser ni vill samla in analyser och insikter om innehållsengagemang.
 
 
->>
-[!MORELIKETHIS]
->>
-* [Guidad konfiguration](guided.md)
-* [Manuell konfiguration](manual.md)
-* [Åtkomstkontroll](/help/technotes/access-control.md)
+>[!MORELIKETHIS]
+>
+>* [Guidad konfiguration](guided.md)
+>* [Manuell konfiguration](manual.md)
+>* [Åtkomstkontroll](/help/technotes/access-control.md)
 >
 
 
