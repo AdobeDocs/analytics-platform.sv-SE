@@ -4,7 +4,7 @@ title: Kolumninställningar
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 7%
@@ -41,7 +41,7 @@ Du kan redigera inställningar för flera kolumner samtidigt. Markera flera kolu
 | **[!UICONTROL Percent]** | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Procenttal som är större än 100 % är möjliga för att säkerställa att de är korrekta. Det övre gränsvärdet kan flyttas till 1 000 % för att förhindra att kolumnbredden blir för stor. |
 | **[!UICONTROL Show anomalies]** | Kontrollera om avvikelseidentifiering körs på värdena i den här kolumnen. |
 | **[!UICONTROL Show forecast]** | Kontrollera om prognosvärden visas i den här kolumnen. |
-| **[!UICONTROL Wrap header text]** | Radbryt rubriktexten i frihandstabeller så att rubrikerna blir lättare att läsa och tabellerna blir mer delbara. Figursättningen är användbar för återgivning i PDF och för mått med långa namn. Aktiverat som standard. |
+| **[!UICONTROL Wrap header text]** | Radbryt rubriktexten i frihandstabeller så att rubrikerna blir lättare att läsa och tabellerna blir mer delbara. Figursättningen är användbar för PDF-återgivning och för mått med långa namn. Aktiverat som standard. |
 | **[!UICONTROL Interpret zero as no value]** | För celler med värdet 0 anger du om en 0-cell eller en tom cell ska visas. Den här tolkningen är användbar när du tittar på data för varje dag i en månad, och vissa dagar är i framtiden.  I stället för att visa 0 för framtida datum visas tomma celler i stället. Diagram följer även den här inställningen (d.v.s. diagrammen visar inte en linje eller stapel med 0 värden). |
 | **[!UICONTROL Background]** | Ange om en cell ska visa/dölja all cellformatering, inklusive stapeldiagrammet och villkorsstyrd formatering. |
 | **[!UICONTROL Bar Graph]** | Visa ett vågrätt stolpdiagram som representerar cellens värde i förhållande till totalvärdet för kolumnen. |
@@ -57,7 +57,7 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 
 | Villkorliga formateringsalternativ | Beskrivning |
 | --- | --- |
-| **[!UICONTROL  Use percent limits]** | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Procentgränsområdet fungerar för mått som enbart är procentbaserade (t.ex. studsfrekvens) och för mått som har ett antal och ett procentvärde (t.ex. sidvyer). |
+| **[!UICONTROL Use percent limits]** | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Procentgränsområdet fungerar för mått som enbart är procentbaserade (t.ex. studsfrekvens) och för mått som har ett antal och ett procentvärde (t.ex. sidvyer). |
 | **[!UICONTROL Auto-generated]** | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
 | **[!UICONTROL Custom]** | Tilldela **[!UICONTROL Upper limit]**, **[!UICONTROL Midpoint]** och **[!UICONTROL Lower limit]** manuellt. Begränsningar ger flexibilitet att avgöra när ett kolumnvärde blir bra, medelvärde eller dåligt. |
 | **[!UICONTROL Conditional formatting palette]** | Använd en förkonfigurerad färguppsättning för celler. Beroende på vilket av de fyra tillgängliga färgscheman du väljer tilldelas olika färger till höga värden, mittpunktsvärden och låga värden. <br> Om du ersätter en dimension i tabellen återställs de villkorliga formateringsgränserna. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått på Y-axeln). |

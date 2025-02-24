@@ -4,7 +4,7 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Följande [snabbmeny](../freeform-analysis-visualizations.md#context-menu)-alter
 | **[!UICONTROL Download items as CSV (*dimensionsnamn *)]** | Ladda omedelbart ned dimensionsobjekten (högst 50 000) av visualiseringen till din lokala enhet. Högst 50 000 dimensionsartiklar för den valda dimensionen. |
 | **[!UICONTROL Copy visualization]** | Kopiera visualiseringen så att du kan infoga visualiseringen på en annan plats i projektet eller i ett helt annat projekt. |
 | **[!UICONTROL Download data CSV]** | Ladda omedelbart ned visuella data till din lokala enhet. |
-| **[!UICONTROL  Export full table...]** | Exportera hela tabellen till en angiven molnplats. Se [Exporterar Customer Journey Analytics-rapporter till molnet](../../export/export-cloud.md) |
+| **[!UICONTROL Export full table...]** | Exportera hela tabellen till en angiven molnplats. Se [Exporterar Customer Journey Analytics-rapporter till molnet](../../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Gör en exakt kopia av visualiseringen. |
 | **[!UICONTROL Edit description]** | Lägg till (eller redigera) en textbeskrivning för visualiseringen. Se [Text](../text.md). |
 | **[!UICONTROL Get visualization link]** | Kopiera och dela en länk direkt till visualiseringen. Länken visas i en dialogruta för delning. Välj Kopiera för att kopiera länken till Urklipp. |
