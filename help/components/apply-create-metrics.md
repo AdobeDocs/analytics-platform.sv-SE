@@ -4,9 +4,9 @@ title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Mer information om hur du kommer åt verktyget för beräknade värden finns i [
 
 ### Skapa beräknade mätvärden för ett enskilt projekt
 
-Du kan skapa snabba beräknade mätvärden som bara är tillgängliga för det projekt där de skapades.
+Du kan snabbt skapa ett beräkningsmått som bara är tillgängligt för det projekt där det skapades.
 
 Så här skapar du ett beräknat mått för ett enskilt projekt:
 

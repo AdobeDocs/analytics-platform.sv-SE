@@ -3,9 +3,9 @@ description: I verktyget Beräknade mätvärden kan du dra och släppa dimension
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa n
    | Element | Beskrivning |
    | --- | --- |
    | **[!UICONTROL Data view]** | Du kan välja datavyn för det beräknade måttet.  Det beräknade mätvärde som du definierar är tillgängligt i Workspace-projekt baserat på den valda datavyn. |
-   | **[!UICONTROL Project-only metric]** | En informationsruta som förklarar att måttet bara visas i det projekt där det skapades och att måttet inte läggs till i komponentlistan. Aktivera **[!UICONTROL Make this metric available to all your projects and add it to your component list]** om du vill ändra den inställningen. Den här informationsrutan visas bara när du skapar ett mått i Workspace med **[!UICONTROL Create metric from selection]** och har valt en funktion (som **[!UICONTROL Mean]** eller **[!UICONTROL Median]**). Använd sedan [Komponentinformationen](/help/components/use-components-in-workspace.md#component-info) för att redigera det mätvärdet. |
+   | **[!UICONTROL Project-only metric]** | En informationsruta visas högst upp i den här dialogrutan när du redigerar ett beräknat mått som har skapats för ett enskilt projekt, vilket beskrivs i [Skapa beräknade värden för ett enskilt projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). <p>Om du vill göra det här beräknade måttet tillgängligt för alla projekt väljer du alternativet **[!UICONTROL Make this metric available to all your projects and add it to your component list]**.</p> |
    | **[!UICONTROL Title]** ![Krävs](/help/assets/icons/Required.svg) | Namnge det beräknade måttet, till exempel `Conversion Rate`. |
    | **[!UICONTROL External ID]** ![Krävs](/help/assets/icons/Required.svg) | Namnet på det beräknade måttet när ett externt BI-verktyg och BI-tillägget används. Värdet definieras automatiskt som `undefined_xxx` om du inte åsidosätter värdet. |
    | **[!UICONTROL Description]** | Ange en beskrivning för filtret, till exempel `Calculated metric to define the conversion rate.` Det finns ingen anledning att beskriva formeln för det beräknade måttet eftersom formeln redan är automatiskt tillgänglig i [!UICONTROL Summary]. |
