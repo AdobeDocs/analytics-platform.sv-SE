@@ -7,21 +7,21 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
 
-# Utvärdera hur länge du behöver Adobe Analytics efter att ha uppgraderat till Customer Journey Analytics {#evaluate-aa-needs}
+# Utvärdera när Adobe Analytics ska inaktiveras efter uppgradering till Customer Journey Analytics {#evaluate-aa-needs}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="Gå till Customer Journey Analytics"
->abstract="(Rekommenderas) Customer Journey Analytics är det primära analysverktyget för er organisation. Din organisation kan dock fortfarande behöva Adobe Analytics om den är starkt beroende av funktioner som är exklusiva för verktyget och dessa arbetsflöden inte kan ändras."
+>abstract="(Rekommenderas) Adobe rekommenderar att du gör en fullständig övergång från Adobe Analytics till Customer Journey Analytics. Under övergångsperioden bör du köra Adobe Analytics tillsammans med Customer Journey Analytics för att kunna jämföra data sida vid sida. När du känner dig trygg med data kan du inaktivera Adobe Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

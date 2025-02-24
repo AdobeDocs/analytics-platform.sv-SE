@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
-# Inaktivera AppMeasurement datainsamling {#disable-appmeasurement}
+# Inaktivera Adobe Analytics {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 >
 >När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
 
-<!-- need to work on this -->
+Innan du inaktiverar Adobe Analytics bör du granska informationen i [Utvärdera när Adobe Analytics ska inaktiveras efter uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 * **Taggar:** Inaktivera Adobe Analytics-tillägget
 

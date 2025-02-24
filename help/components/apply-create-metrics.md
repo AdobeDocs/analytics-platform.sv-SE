@@ -4,9 +4,9 @@ title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ Du kan se om ett mätresultat har godkänts med ikonen ![Godkänd](https://spect
 
 ## Jämför mätvärden med olika attribueringsmodeller
 
-Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan för ett mätresultat väljer du **[!UICONTROL Compare attribution models]** på snabbmenyn för ett mätresultat.
+Om du snabbt vill jämföra en attribueringsmodell med en annan för ett mätresultat väljer du **[!UICONTROL Compare attribution models]** på snabbmenyn för ett mätresultat.
 
 ![Workspace-panelen markerar Jämför attribueringsmodeller](assets/compare-attribution.png)
 
-Med den här genvägen kan du snabbt och enkelt jämföra attribueringsmodeller.
+Med den här genvägen kan du jämföra en attribueringsmodell med en annan utan att dra i ett mätresultat och konfigurera det två gånger.
 
 ## Skapa beräknade mått
 

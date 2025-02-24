@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 4bbd661ce2cac94a2d532c13320e98eb0015e358
+source-git-commit: 0dd3dcc819b6e4a7b13fb4601322d94fd5db179a
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1160'
 ht-degree: 10%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 10%
    + [Strategi för funktionsreleaser](../release-notes/releases.md)
    + [Dokumentationsuppdateringar](../release-notes/doc-changes.md)
 
-+ Komma igång {#cja-overview}
++ Kom igång {#cja-overview}
    + [Customer Journey Analytics - översikt](../getting-started/cja-overview.md)
    + [Snabbstartsguide](../getting-started/cja-getting-started.md)
    + [Landningssida](../getting-started/landing.md)
@@ -47,34 +47,44 @@ ht-degree: 10%
       + [Välj uppgraderingsväg](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Skicka data till plattformen](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Behåll historiska data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
-      + [Rekommenderad process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + [Analysimplementering](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
-      + [Skapa uppslagsdatauppsättningar för klassificeringar](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-      + [Övervaka datamängdsinmatning](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + [Skapa ett härlett fält för marknadsföringskanal](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Implementera taggen loader för Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-      + [Skapa en tagg för din egenskap](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-      + [Lägg till tillägget Web SDK i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-      + [Lägg till logik för XDM-datainsamling i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [Arkitektur av ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
-      + [Skapa ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-      + [Använd ditt befintliga schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-      + [Skapa en datauppsättning](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
-      + [Skapa ett datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Lägg till plattform som en tjänst](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Rekommenderad uppgraderingsprocess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + Arkitekt och skapa ett schema {#schema}
+         + [Arkitektur av ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+         + [Skapa ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+         + [Använd ditt befintliga schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + Skapa ett datastream {#create-datastream}
+         + [Skapa ett datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+         + [Lägg till plattform som en tjänst](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + Skapa datauppsättningar {#create-datasets}
+         + [Skapa en datauppsättning](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+         + [Skapa uppslagsdatauppsättningar för klassificeringar](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+         + [Övervaka datamängdsinmatning](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+      + Skapa taggar {#create-tags}
+         + [Skapa en tagg för din egenskap](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+         + [Lägg till tillägget Web SDK i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+         + [Implementera taggen loader för Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+         + [Lägg till logik för XDM-datainsamling i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Skapa en anslutning](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Skapa en datavy](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [Skapa ett härlett fält för marknadsföringskanal](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Validera dataflöde](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [Genväg för uppgradering: Migrera till Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
-      + [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-      + [Skapa Analytics-källkopplingen och kartfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
-      + [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-      + [Använd Analytics-källkopplingen exklusivt](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
-      + [Gå från Analytics-källkopplingen till Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-      + [Inaktivera AppMeasurement datainsamling](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-      + [Uppgradera från en analyslösning från tredje part](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
-      + [Funktionssupport för Adobe Analytics vid uppgradering](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-      + [Adobe Analytics under och efter en uppgradering](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + Behåll historiska data med Analytics-källkopplingen {#historical-data-source-connector}
+         + [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+         + [Skapa Analytics-källkopplingen och kartfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+         + [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+      + [Utvärdera när Adobe Analytics ska inaktiveras](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [Inaktivera Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+      + Alternativa uppgraderingsmetoder {#alternative-upgrade-methods}
+         + [Använda AppMeasurement datainsamling](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
+         + [Skicka datalager](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
+         + [Källanslutning för analyser](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
+      + Andra uppgraderingsscenarier {#other-upgrade-scenarios}
+         + [Gå från Analytics-källkopplingen till Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+         + [Uppgradera från en icke-Adobe Analytics-lösning](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+      + Ytterligare information {#additional-information}
+         + [Analysimplementering](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+         + [Funktionssupport för Adobe Analytics vid uppgradering](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+         + [Customer Journey Analytics-funktioner](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
    + Jämförelse med Adobe Analytics {#cja-aa-comparison}
       + [Översikt](../getting-started/aa-vs-cja/overview.md)
       + [Använd Adobe Analytics-data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -87,7 +97,7 @@ ht-degree: 10%
    + [Utveckling från Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Användarhandbok för Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
-+ Datainmatning {#cja-data-ingestion}
++ Inläsning av data {#cja-data-ingestion}
    + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
    + Infoga och använd snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
@@ -170,7 +180,7 @@ ht-degree: 10%
             + [Dynamiska och statiska objekt](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrera och ordna tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Workspace summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-      + Kohorttabell {#cohort-table}
+      + Kohortregister {#cohort-table}
          + [Översikt](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Användningsexempel](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)

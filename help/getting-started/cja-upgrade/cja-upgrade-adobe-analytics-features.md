@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
+source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '482'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,15 @@ ht-degree: 1%
 >id="cja-upgrade-activity-map"
 >title="Övertäckning för aktivitetskarta och länkspårning"
 >abstract="Ett webbläsartillägg som gör att du kan visa länkspårningsdata som en övertäckning på webbplatsen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-activity-map-support"
+>title="Det finns ännu inget stöd för övertäckning av aktivitetskarta"
+>abstract="Activity Map övertäckningsstöd finns ännu inte i Customer Journey Analytics. Den planeras bli tillgänglig i framtiden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -76,6 +85,15 @@ ht-degree: 1%
 >id="cja-upgrade-streaming-media"
 >title="Direktuppspelande mediedata"
 >abstract="Ett tillägg till Adobe Analytics som specialiserar sig på datainsamling av media, som ljud, video eller direktuppspelat innehåll."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-component-migration"
+>title="Migrera projekt och komponenter"
+>abstract="Använd Adobe Analytics-projekt och tillhörande komponenter i Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

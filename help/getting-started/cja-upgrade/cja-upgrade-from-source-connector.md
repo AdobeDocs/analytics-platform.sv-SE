@@ -1,13 +1,13 @@
 ---
 title: Övergång från Analytics-källkopplingen till Web SDK för Customer Journey Analytics
-description: Lär dig hur du går över till SDK för webben från Analytics-kontakten när du uppgraderar till Customer Journey Analytics
+description: Lär dig hur du går över till Web SDK från Analytics-källkopplingen när du uppgraderar till Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
+source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -27,15 +27,15 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
->Använd informationen på den här sidan när du besvarar frågor i checklistan för uppgradering av [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Använd informationen på den här sidan när du besvarar frågor i [checklistan för uppgradering av Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
 Det finns nackdelar med att använda Analytics-källkopplingen som enda implementering för Customer Journey Analytics.
 
-Om din organisation redan har uppgraderat till Customer Journey Analytics med enbart implementering av Analytics-källkopplingen rekommenderar Adobe att du går över till en implementering som använder Analytics-källkopplingen (för historiska data), i kombination med en ny implementering av Web SDK (för kontinuerlig datainsamling).
+Om din organisation redan har uppgraderat till Customer Journey Analytics med enbart källkopplingsimplementeringen för Analytics rekommenderar Adobe att du går över till en implementering som använder källkopplingen för Analytics (för historiska data) i kombination med en ny implementering av Web SDK (för kontinuerlig datainsamling).
 
 ## Förstå fördelar och nackdelar med att endast använda Analytics-källkopplingen
 
-Information om för- och nackdelar med att använda Analytics-källkopplingen finns i [Använd Analytics-källkopplingen enbart för att uppgradera till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md).
+Information om för- och nackdelar med att använda Analytics-källkopplingen finns i [Använd Analytics-källkopplingen enbart för att uppgradera till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md).
 
 ## Övergång från Analytics-källkopplingen till Web SDK
 
