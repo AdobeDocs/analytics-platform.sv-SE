@@ -4,7 +4,7 @@ description: Skapa ett datumintervall för rapportering.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: a913f23506f692e64633408b8cd9bad6be27970b
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Vem som helst kan skapa ett anpassat datumintervall. Du kan skapa ett datuminter
 
 ![Skapa en anteckning](assets/create-date-range.png)
 
-* ? I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Date range]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] i [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md).
+* ? I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Date range]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** i [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md).
 * ? I ett Workspace-projekt väljer du **[!UICONTROL Custom date range to this date range]** på snabbmenyn i en visualisering.
 * ? I ett Workspace-projekt väljer du **[!UICONTROL Components]** på menyn och sedan **[!UICONTROL Create date range]**
 * ? Använd genvägen **[!UICONTROL ctrl+shift+d]** (Windows) eller **[!UICONTROL shift+command+d]** (macOS) i ett Workspace-projekt.
