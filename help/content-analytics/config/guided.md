@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 023e7dda53cc60096076599d30a8dd78db1bfbd7
+source-git-commit: 4650718a067f68d4edfad3db71e822898f661648
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 0%
@@ -284,7 +284,6 @@ När du har angett all nödvändig information visas en sammanfattning med infor
 >abstract="Om du väljer **[!UICONTROL Implement]** konfigureras innehållsanalysen baserat på de indata du har angett i det här arbetsflödet. Flera inställningar väljs som standard baserat på vad som är användbart för innehållsanalys, men du (som personuppgiftsansvarig) måste granska inställningarna för varje artefakt för att bekräfta att inställningarna har implementerats i enlighet med din sekretesspolicy, avtalsrättigheter och skyldigheter samt krav på samtycke enligt tillämplig lag.<br/><br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/><br/>För att härleda attribut för bilder och text hämtar Adobe attributen med:<ol><li>URL:en som hämtas när användarens webbplats besöker, enligt de datainsamlingsinställningar som du har konfigurerat, och</li><li>URL-adressen där bilden finns.</li></ol>Du får inte märka bilder som lagras på tredjepartswebbplatser."
 
 <!-- markdownlint-enable MD034 -->
-
 
 När du har skapat eller redigerat en konfiguration är följande åtgärder tillgängliga.
 
