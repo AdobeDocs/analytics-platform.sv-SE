@@ -4,7 +4,7 @@ title: Flerdimensionella flöden
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
 role: User
-source-git-commit: 80522177d5258e4b5046b3872483ce2b482ae77d
+source-git-commit: 1eeba4dc9de52f2890cf25794e767f199a4aa04c
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Om du vill utforska interaktionen mellan skärmar och händelsetyper (som att l�
 
   ![Ett flöde som visar siddimensionen som dras till det tomma utrymmet i slutet.](assets/flowapp-add.png)
 
-Flödesvisualiseringen nedan visar resultatet av att lägga till dimensionen **[!UICONTROL  Event Types]**. Visualiseringen ger insikter om hur mobilappsanvändare förflyttar sig mellan olika skärmar i appen innan de lägger till produkter i en kundvagn, stänger appen, presenteras ett erbjudande med mera.
+Flödesvisualiseringen nedan visar resultatet av att lägga till dimensionen **[!UICONTROL Event Types]**. Visualiseringen ger insikter om hur mobilappsanvändare förflyttar sig mellan olika skärmar i appen innan de lägger till produkter i en kundvagn, stänger appen, presenteras ett erbjudande med mera.
 
 ![En fLow som visar siddimensionens resultat högst upp i listan.](assets/flowapp-result.png)
 
