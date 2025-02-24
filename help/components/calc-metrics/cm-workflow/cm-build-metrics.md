@@ -3,9 +3,9 @@ description: I verktyget Beräknade mätvärden kan du dra och släppa dimension
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: 3c11f204b73ec1cc5c4c359b6cc5c88023c93e43
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,23 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
+Customer Journey Analytics har en arbetsyta där du kan dra och släppa mått, mätvärden, filter och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa beräknade mätvärden.
+
+## Börja skapa ett beräknat mått
+
+Du kan använda verktyget för beräknade mätvärden för att skapa eller redigera beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen. Du kan också snabbt skapa ett beräknat mått som bara är tillgängligt för det projekt där det skapades, vilket beskrivs i [Skapa beräknade värden för ett enskilt projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) i [Metrisk](/help/components/apply-create-metrics.md).
+
+Gå till verktyget för beräknade värden för att börja skapa ett beräknat mått som är tillgängligt i komponentlistan.
+
+1. Använd verktyget för beräknade värden på något av följande sätt:
+
+   * Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
+   * Öppna ett projekt i Analysis Workspace och välj sedan ikonen **Plus** bredvid avsnittet [!UICONTROL **Metrisk**] i den vänstra listen.
+   * I [!DNL Customer Journey Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** och väljer sedan **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
+
+1. Fortsätt med [Områden i det beräknade måttverktyget](#areas-of-the-calculated-metrics-builder).
+
+## Områden för verktyget för beräknade mätvärden
 
 Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren ](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
