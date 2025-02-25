@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
+source-git-commit: ef93e386e3c3e64a022805dcf8674b7fddf361a5
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3514'
 ht-degree: 0%
 
 ---
@@ -186,12 +186,23 @@ Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="Standardtabellmått"
->abstract="Välj standardbehållaren som ska användas för Flödesvisualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar flödesvisualiseringen automatiskt till en annan primär behållare."
+>abstract="Välj standardbehållaren som ska användas för [!UICONTROL Flow]-visualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar visualiseringen [!UICONTROL Flow] automatiskt till en annan primär behållare."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="Standardtabellmått"
->abstract="Välj standardbehållaren som ska användas för bortfallsvisualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar utfallsvisualiseringen automatiskt till en annan primär behållare."
+>abstract="Välj standardbehållaren som ska användas för [!UICONTROL Fallout]-visualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar visualiseringen [!UICONTROL Fallout] automatiskt till en annan primär behållare."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulthistogramcountingmethod"
+>title="Standardtabellmått"
+>abstract="Välj den standardräkningsmetod som ska användas för [!UICONTROL Histogram]-visualiseringar. Om den valda datavyn inte innehåller den valda standardmetoden för räkning, kommer visualiseringen [!UICONTROL Histogram] automatiskt att växla till en annan primär metod för att räkna."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultjourneycanvascontainer"
+>title="Standardtabellmått"
+>abstract="Välj standardbehållaren som ska användas för [!UICONTROL Journey canvas]-visualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar visualiseringen [!UICONTROL Journey canvas] automatiskt till en annan primär behållare."
+
 
 Du kan uppdatera visualiseringsinställningarna för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
