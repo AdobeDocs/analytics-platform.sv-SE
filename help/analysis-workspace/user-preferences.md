@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ef93e386e3c3e64a022805dcf8674b7fddf361a5
+source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
-source-wordcount: '3514'
+source-wordcount: '3511'
 ht-degree: 0%
 
 ---
@@ -185,22 +185,22 @@ Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
->title="Standardtabellmått"
+>title="Standardbehållare"
 >abstract="Välj standardbehållaren som ska användas för [!UICONTROL Flow]-visualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar visualiseringen [!UICONTROL Flow] automatiskt till en annan primär behållare."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
->title="Standardtabellmått"
+>title="Standardbehållare"
 >abstract="Välj standardbehållaren som ska användas för [!UICONTROL Fallout]-visualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar visualiseringen [!UICONTROL Fallout] automatiskt till en annan primär behållare."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
->title="Standardtabellmått"
+>title="Standardmetod för inventering"
 >abstract="Välj den standardräkningsmetod som ska användas för [!UICONTROL Histogram]-visualiseringar. Om den valda datavyn inte innehåller den valda standardmetoden för räkning, kommer visualiseringen [!UICONTROL Histogram] automatiskt att växla till en annan primär metod för att räkna."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
->title="Standardtabellmått"
+>title="Standardbehållare"
 >abstract="Välj standardbehållaren som ska användas för [!UICONTROL Journey canvas]-visualiseringar. Om den markerade datavyn inte innehåller den valda standardbehållaren växlar visualiseringen [!UICONTROL Journey canvas] automatiskt till en annan primär behållare."
 
 
