@@ -7,25 +7,21 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
 
 # Content Analytics - översikt
 
-<!-- 
-This is a placeholder article for upcoming Content Analytics documentation. Currently used to set up contextual help entries for developer working on onboarding UI and workspace UI 
--->
-
 >[!WARNING]
 >
 >Den här artikeln är ett preliminärt inofficiellt utkast till en kommande slutversion och ingår i Content Analytics-dokumentationen. Allt innehåll kan ändras och inga rättsliga skyldigheter kan härledas från den aktuella versionen av den här artikeln.
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 Med Content Analytics kan marknadsförarna förstå hur innehåll påverkar de nyckeltal som ett företag har definierat. Förutom beteendedata samlar Content Analytics in data om hur innehåll konsumeras och hur innehåll påverkar. Ger kunderna bättre respons på en viss ton röst, en viss färgpall eller specifika teman? Denna information, tillsammans med specifikt utformade arbetsflöden och mallar för rapportering, kan hjälpa er att utföra ännu bättre analyser och få djupare insikter om kundresedata i Customer Journey Analytics.
 
@@ -63,6 +59,12 @@ I Content Analytics används webbbildvisningsdata som samlats in i händelsedata
 1. Tjänsten för funktionssammansättning och identitetstjänsten bearbetar granskade data.
 1. Resultaten av dessa tjänster (komponenter, attribut och identiteter) används för att uppdatera relevanta data för innehållsanalys i Experience Platform.
 1. Informationen i innehållsanalysen, tillsammans med beteendedata och andra uppslagsdatauppsättningar, kan sedan användas i en Customer Journey Analytics-konfiguration (Connection, Data view och Workspace). Denna konfiguration utgör grunden för de unika insikterna på makronivå om ditt innehåll.
+
+>[!NOTE]
+>
+>Content Analytics använder AI/ML. Resultaten (för att ge upplevelser och resurser en viss funktionalitet) kan vara felaktiga.
+>
+
 
 >[!MORELIKETHIS]
 >
