@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1893'
 ht-degree: 0%
 
 ---
@@ -170,11 +170,11 @@ Resans arbetsyta ger djupgående, grundliga analyser som inte är möjliga i Jou
 
 Att använda Journey Canvas för att analysera resor som skapats i Journey Optimizer ger flera fördelar:
 
-* Skapa händelser genom att använda mått, mätvärden, filter eller datumintervall i Customer Journey Analytics.
+* Skapa händelser genom att använda Customer Journey Analytics mått, mätvärden, filter eller datumintervall.
 
   I Journey Optimizer måste en teknisk användare skapa en händelse innan den kan läggas till på en resa.
 
-* Skapa målgrupper baserat på en anpassad nod som du skapar (startar målgruppsverktyget i Customer Journey Analytics).
+* Skapa målgrupper baserat på en anpassad nod som du skapar (startar Customer Journey Analytics målgruppsbyggare).
 
   I Journey Optimizer kan du bara skapa målgrupper för fördefinierade aktiviteter.
 
@@ -232,9 +232,9 @@ Fältet [!UICONTROL **Nodtyp**] är bara tillgängligt i Journey Optimizer. Den 
 
 När du har ändrat en Journey Optimizer-resa på arbetsytan i Journey återspeglas inte de ändringar du gör på resan i Journey Optimizer på arbetsytan i Journey. Om du vill se ändringarna återspeglas i arbetsytan på resan kan du ta bort och [återskapa resan på arbetsytan på resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-### Skillnader i terminologi mellan Journey Optimizer och Customer Journey Analytics
+### Terminologiska skillnader mellan Journey Optimizer och Customer Journey Analytics
 
-Vissa termer som betyder något i Journey Optimizer betyder något annat i Customer Journey Analytics. När du använder en arbetsyta på en resa används termerna Customer Journey Analytics.
+Vissa termer som betyder något i Journey Optimizer betyder något annat i Customer Journey Analytics. När du använder en arbetsyta på en resa används Customer Journey Analytics-termerna.
 
 | Term | Reseduk | Journey Optimizer |
 |---------|----------|---------|
@@ -247,3 +247,9 @@ Mer information om hur du analyserar en Journey Optimizer-resa på en arbetsyta 
 ## Skapa analyser på arbetsytan i Journey
 
 Ni kan skapa analyser på arbetsytan i Journey som baseras på de dimensioner och mätvärden som finns i Analysis Workspace. Eller så kan du analysera resor som gjorts i Journey Optimizer. Mer information finns i [Konfigurera en visualisering av en arbetsyta på resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+
+>[!MORELIKETHIS]
+>
+> * [A Guide to Journey Canvas Visualization in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+
