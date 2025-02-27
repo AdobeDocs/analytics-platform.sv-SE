@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
+source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
@@ -109,6 +109,6 @@ Ta en titt på vilka av följande Adobe Analytics-funktioner du vill fortsätta 
 | [Övertäckning för aktivitetskarta och länkspårning](https://experienceleague.adobe.com/en/docs/analytics/analyze/activity-map/overview) | Inte tillgängligt ännu |
 | [Klassificeringsdata](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/c-classifications) | Uppslagsdatauppsättningar är en metod för att klassificera data i Customer Journey Analytics.<p>[Skapa en uppslagsdatauppsättning för varje dimension som innehåller klassificeringsdata.](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)</p> |
 | [Marknadskanaler](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | Härledda fält skapas i en datavy. <p>[Skapa ett härlett fält för marknadsföringskanal.](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> |
-| [Datafeeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Första generationens dataexport är tillgänglig via [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html) och via [Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html). Dessa alternativ ger händelse-/radnivåexport av alla data som samlats in eller importerats till Experience Platform Data Lake. Postprocessdatakolumner är inte tillgängliga eftersom postkolumner beräknas vid frågetiden. Det går att exportera postkolumner genom rapportering. |
+| [Datafeeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience Platform och Customer Journey Analytics har ett antal funktioner som, antingen separat eller tillsammans, kan lösa de olika exportkraven. Dessa funktioner omfattar [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html), [Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html), [Customer Journey Analytics Full Table Export](/help/analysis-workspace/export/export-cloud.md) och [BI Tool Integration](/help/data-views/bi-extension.md).<p>Mer information om exportalternativ finns i [Användningsexempel för dataexport](/help/use-cases/data-export/overview.md).</p> |
 | [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | [Customer Journey Analytics Fullständig tabellexport](/help/analysis-workspace/export/export-cloud.md) är utvecklingen av Data Warehouse-rapporter i Adobe Analytics, med många nya, ofta efterfrågade funktioner som inte är tillgängliga i Data Warehouse idag. |
 | [Direktuppspelande mediedata](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview) | Direktuppspelande mediedata är tillgängliga med Analytics-källkopplingen som en del av panelen Media Concurrent Viewer och panelen Media Playback Time Spent (Tid för uppspelning i Workspace). |
