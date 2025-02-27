@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,11 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Använd informationen på den här sidan när du besvarar frågor i [checklistan för uppgradering av Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Det finns nackdelar med att använda Analytics-källkopplingen som enda implementering för Customer Journey Analytics.
 
-Om din organisation redan har uppgraderat till Customer Journey Analytics med enbart källkopplingsimplementeringen för Analytics rekommenderar Adobe att du går över till en implementering som använder källkopplingen för Analytics (för historiska data) i kombination med en ny implementering av Web SDK (för kontinuerlig datainsamling).
+Om din organisation redan har uppgraderat till Customer Journey Analytics med enbart källanslutningskomplementeringen för Analytics rekommenderar Adobe att man går över till en ny implementering av Web SDK för kontinuerlig datainsamling och använder källkopplingen för Analytics endast för historiska data.
 
 ## Förstå fördelar och nackdelar med att endast använda Analytics-källkopplingen
 

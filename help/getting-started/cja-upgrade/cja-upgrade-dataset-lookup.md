@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Följ bara stegen på den här sidan när du har slutfört alla tidigare uppgraderingssteg. Du kan följa de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller följa uppgraderingsstegen som har skapats dynamiskt för din organisation med uppgraderingsenkäten för [Adobe Analytics till Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
+{{upgrade-note-step}}
 
 På samma sätt som med klassificeringsdata i Adobe Analytics är uppslagsuppsättningar en metod för att klassificera data i Customer Journey Analytics.
 
@@ -39,7 +35,7 @@ För att kunna klassificera data i Customer Journey Analytics när du använder 
 
 ## Skapa ett anpassat schema som ska användas med uppslagsdatauppsättningen
 
-Skapa ett nytt anpassat schema för varje dimension som innehåller data som du vill klassificera i Customer Journey Analytics. När du skapar uppslagsdatauppsättningen i ett senare steg kommer den att referera till det här schemat.
+Skapa ett nytt anpassat schema för varje dimension som innehåller data som ska klassificeras i Customer Journey Analytics. När du skapar uppslagsdatauppsättningen i ett senare steg kommer den att referera till det här schemat.
 
 Upprepa den här processen för varje dimension som innehåller data som du vill klassificera.
 
@@ -75,7 +71,7 @@ Så här skapar du en uppslagsdatauppsättning som ska användas med ett schema 
 
 >[!NOTE]
 >
->I följande process används en CSV-fil för att skapa datauppsättningen. Du kan också använda en annan metod som är tillgänglig för import av data till Experience Platform, till exempel för att konfigurera ett datastream.
+>I följande process används en CSV-fil för att skapa datauppsättningen. Du kan också använda någon annan metod som är tillgänglig för import av data till Experience Platform, till exempel för att konfigurera ett datastream.
 
 1. I Adobe Experience Platform väljer du **[!UICONTROL Workflows]** i den vänstra listen.
 
@@ -107,7 +103,7 @@ Så här skapar du en uppslagsdatauppsättning som ska användas med ett schema 
 
 1. Fortsätt med [Lägg till sökdatauppsättningen i anslutningen i Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics).
 
-## Lägg till uppslagsdatauppsättningen i anslutningen i Customer Journey Analytics
+## Lägg till uppslagsdatauppsättningen i din anslutning i Customer Journey Analytics
 
 När du har [skapat ett anpassat schema](#create-a-custom-schema-to-use-with-the-lookup-dataset) och [skapat en uppslagsdatauppsättning](#create-a-lookup-dataset) måste du lägga till uppslagsdatauppsättningen i anslutningen i Customer Journey Analytics.
 

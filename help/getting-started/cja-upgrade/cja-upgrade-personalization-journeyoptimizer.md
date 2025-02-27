@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -23,6 +23,8 @@ ht-degree: 0%
 >abstract="Använd personaliseringsobjektet i implementeringen för användning i Adobe Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
+
+{{upgrade-note}}
 
 Resultatet av personaliseringsobjektet hamnar i en datauppsättning. Resultatet av experimenterande. När en kund har använt AA med Target hamnar det i ett helt annat utrymme än när de migrerar till CJA och kommer att använda CJA med Adobe Target.
 

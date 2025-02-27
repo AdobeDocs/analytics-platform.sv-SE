@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 0dd3dcc819b6e4a7b13fb4601322d94fd5db179a
+source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 10%
+source-wordcount: '1165'
+ht-degree: 9%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 10%
       + [Skapa en datavy](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Skapa ett härlett fält för marknadsföringskanal](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Validera dataflöde](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
+      + [Ställ in direktuppspelad mediesamling](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Behåll historiska data med Analytics-källkopplingen {#historical-data-source-connector}
          + [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Skapa Analytics-källkopplingen och kartfälten](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)

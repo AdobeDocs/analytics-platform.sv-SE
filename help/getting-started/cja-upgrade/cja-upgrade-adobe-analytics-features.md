@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="Direktuppspelande mediedata"
->abstract="Ett tillägg till Adobe Analytics som specialiserar sig på datainsamling av media, som ljud, video eller direktuppspelat innehåll."
+>abstract="Ett tillägg till Adobe Analytics och Customer Journey Analytics som specialiserar sig på datainsamling av media, som ljud, video eller direktuppspelat innehåll."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -97,9 +97,7 @@ ht-degree: 1%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Använd informationen på den här sidan när du besvarar frågor i [checklistan för uppgradering av Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 I följande lista visas endast de Adobe Analytics-funktioner som behöver övervägas under uppgraderingen till Customer Journey Analytics. En omfattande lista som visar vilka Adobe Analytics-funktioner som stöds, stöds delvis eller inte stöds i Customer Journey Analytics finns i [Stöd för Customer Journey Analytics-funktioner](/help/getting-started/aa-vs-cja/cja-aa.md).
 

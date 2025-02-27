@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
 
-# Skapa ett anpassat schema som kan användas med Customer Journey Analytics Web SDK-implementering {#create-custom-schema}
+# Skapa ett anpassat schema som kan användas med Customer Journey Analytics {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -43,11 +43,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Följ bara stegen på den här sidan när du har slutfört alla tidigare uppgraderingssteg. Du kan följa de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller följa uppgraderingsstegen som har skapats dynamiskt för din organisation med uppgraderingsenkäten för [Adobe Analytics till Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->När du är klar med stegen på den här sidan fortsätter du med de rekommenderade uppgraderingsstegen eller de dynamiskt genererade uppgraderingsstegen.
+{{upgrade-note-step}}
 
 >[!IMPORTANT]
 >
@@ -108,7 +104,7 @@ Så här skapar du ett anpassat schema:
 
       Du kan välja knappen för förhandsgranskning om du vill se en förhandsgranskning av fälten som ingår i den här fältgruppen, till exempel `web > webPageDetails > name`.
 
-      ![Förhandsgranskning av AEP Web SDK ExperienceEvent-fältgrupp](assets/aepwebsdk-experiencevent-preview.png)
+      ![AEP Web SDK ExperienceEvent, förhandsgranskning av fältgrupp](assets/aepwebsdk-experiencevent-preview.png)
 
       Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 

@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 74719504960f00f4593633bb62f29d8655cdadd9
+exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -78,9 +79,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Använd informationen på den här sidan när du besvarar frågor i [checklistan för uppgradering av Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 I följande lista visas endast de Customer Journey Analytics-funktioner som behöver övervägas under uppgraderingsprocessen. En omfattande lista som visar vilka Adobe Analytics-funktioner som stöds, stöds delvis eller inte stöds i Customer Journey Analytics finns i [Stöd för Customer Journey Analytics-funktioner](/help/getting-started/aa-vs-cja/cja-aa.md).
 
@@ -94,5 +93,3 @@ Ta en titt på vilka av följande Customer Journey Analytics-funktioner du vill 
 | [Integrera tillfälligt med Adobe Target (A4T)](/help/integrations/at.md) | Med Target Reporting i Customer Journey Analytics kan du [mäta och rapportera Adobe Target-aktiviteter](/help/integrations/at.md) direkt i Customer Journey Analytics. |
 | [Integrera med Adobe Journey Optimizer](/help/integrations/ajo.md) | Du kan konfigurera data som genererats av Journey Optimizer så att [utför avancerad analys i Customer Journey Analytics](/help/integrations/ajo.md). |
 | Integrera tillfälligt med Adobe Audience Manager |  |
-
-
