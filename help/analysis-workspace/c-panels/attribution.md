@@ -4,10 +4,10 @@ description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 7%
+source-wordcount: '649'
+ht-degree: 8%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="Tillskrivning"
->abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsmått"
+>abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller med framgångsmått, kanal- och uppslagsfönster."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panelen Attribution IQ"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Attributionspanelen"
->abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden.<br/><br/>**Parametrar **<br/>**Kanal**<br/> Dimensionen som ska attribut mot. Denna dimension kan vara marknadsföringskanaler, kampanjer eller andra dimensioner.<br/>**Modeller**<br/> Modellen avgör hur krediter tilldelas till kontaktytor.<br/>**Fönstret för bakåtsökning**<br/> Den här inställningen bestämmer fönstret för dataattribuering som gäller för varje konvertering."
+>abstract="Jämför och visualisera snabbt valfritt antal attribueringsmodeller för ett framgångsmått. Markera kanalen (dimensionen), modellerna som ska inkluderas och uppslagsfönstret."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panelen Attribution IQ"
 
 <!-- markdownlint-enable MD034 -->
@@ -37,7 +37,7 @@ _Den här artikeln dokumenterar panelen Attribution i_ ![CustomerJourneyAnalytic
 
 Panelen **[!UICONTROL Attribution]** är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Panelen innehåller en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
 
-Customer Journey Analytics förbättrar attribueringen genom att låta dig:
+Customer Journey Analytics förbättrar attribueringen genom att du kan:
 
 * Definiera attribuering bortom betalda medier: Alla dimensioner, mätvärden, kanaler eller händelser kan tillämpas på modeller (till exempel intern sökning), inte bara marknadsföringskampanjer.
 * Använd obegränsad jämförelse av attribueringsmodell: jämför dynamiskt så många modeller du vill.

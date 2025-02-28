@@ -4,9 +4,9 @@ description: Så här använder och tolkar du den mediespelningstid som används
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="Medieuppspelningstid"
->abstract="Analysera videoförbrukningen över tid, välj olika detaljrikedom, uppdelad och jämför.<br/><br/>**Kornighet**: Välj en tidsperiod om du vill visa samtidiga visningsprogram efter.<br/>**Panelsammanfattningsnummer (valfritt)**: Alternativ för att visa sammanfattningsnummer med datum- och tidsinformation för varje rad. Maximalt värde visar detaljer för den maximala uppspelningstiden. Minimivärdet visar information om dalvärdet. Summan visar information om den totala uppspelningstiden.<br/>**Serieuppdelning (valfritt)**: Dela upp visualisering efter segment, dimensioner, dimensionsobjekt eller datumintervall. Visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå.<br/>**Tidsformat**: Alternativ för att visa tidsformatet för visualiseringar i timmar eller minuter."
+>abstract="Analysera videoförbrukningen över tid, välj olika detaljrikedom och bryt ned och jämför med filter, dimensioner, dimensionsobjekt eller datumintervall."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas hur länge medieuppspelningen har pågått i panelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Mer information om_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln finns i [Medieuppspelningstiden på den här panelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)._
+_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Mer information om_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln finns i [Medieuppspelningstiden på den här panelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _I den här artikeln visas hur länge medieuppspelningen har pågått i panelen 
 >[!NOTE]
 >
 >Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Customer Journey Analytics.
->Kontakta din säljare på Adobe eller Adobe för mer information.
+>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
 
 Panelen **[!UICONTROL Media playback time spent]** gör det möjligt att analysera uppspelningen över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra.

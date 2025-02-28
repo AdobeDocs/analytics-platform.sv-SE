@@ -5,9 +5,9 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Beteende"
->abstract="Bestäm hur radartiklar i den här dimensionen aggregeras.<br/><br/>**Parametrar **<br/>**Gemener**: Används för att ange om strängvärdena i fältet ska vara gemena."
+>abstract="Bestäm hur radartiklar i den här dimensionen aggregeras. Ange om strängvärdena i fältet ska vara lägre."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ Beteendeinställningar är tillgängliga för både mått och mått. Vilka inst�
 
 ![Beteendeinställningar](../assets/behavior-settings.png)
 
-## Inställningar för Dimensionens beteende
+## Dimension beteendeinställningar
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -38,7 +38,7 @@ Beteendeinställningar är tillgängliga för både mått och mått. Vilka inst�
 
 >[!NOTE]
 >
->Om du aktiverar [!UICONTROL Lower case] för en sökdatauppsättningsdimension kan det finnas flera uppslagsvärden för samma identifierare. Om den här konflikten inträffar använder Customer Journey Analytics det första ASCII-sorterade värdet (versalvärden före gemener). Adobe avråder från att använda uppslagsdatauppsättningar som innehåller samma värde när [!UICONTROL Lower case] är aktiverat.
+>Om du aktiverar [!UICONTROL Lower case] för en sökdatauppsättningsdimension kan det finnas flera uppslagsvärden för samma identifierare. Om den här konflikten inträffar använder Customer Journey Analytics det första ASCII-sorterade värdet (versalvärden före gemener). Adobe rekommenderar att du inte använder uppslagsdatauppsättningar som innehåller samma värde när [!UICONTROL Lower case] är aktiverat.
 
 ![Skiftlägeskänslig dimension](../assets/case-sens-workspace.png)
 

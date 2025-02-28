@@ -5,9 +5,9 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="Inkludera exkluderingsvärden"
->abstract="Begränsa en dimension så att den endast innehåller värden som matchar specifika villkor. Inkluderingar och undantag sker före allokering och filter i rapporter.<br/><br/>**Parametrar **<br/>**Skiftlägeskänsliga**: Kontrollera om filterlogiken nedan är skiftlägeskänslig."
+>abstract="Begränsa en dimension så att den endast innehåller värden som matchar specifika villkor. Inkluderingar och undantag sker före allokering och filter i rapporter. Kontrollera om den angivna filterlogiken är skiftlägeskänslig."
 
 <!-- markdownlint-enable MD034 -->
 

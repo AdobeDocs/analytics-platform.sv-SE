@@ -4,14 +4,15 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
 
-# Konfigurera en utfallsvisualisering
+# Konfigurera en utfallsvisualisering {#configure-fallout-visualization}
+
 
 Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan t.ex. lägga till händelser, t.ex. enheter, samt unika personer och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
@@ -54,7 +55,12 @@ Du kan göra lappningar på mått, mätvärden och filter. Anta till exempel att
    | **[!UICONTROL Next event]** | Vi räknar med att landa på nästa sida i banan vid nästa händelse. |
 
 
-## Inställningar
+## Inställningar {#settings}
+
+>[!CONTEXTUALHELP]
+>id="workspace_fallout_container"
+>title="Bortfallsbehållare"
+>abstract="Välj en behållare som ska analyseras. Det här valet hjälper dig att förstå engagemang och begränsningar för analysen av den valda behållaren."
 
 Som en del av visualiseringen är specifika inställningar tillgängliga.
 

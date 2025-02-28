@@ -4,9 +4,9 @@ title: Panelen Nästa eller föregående objekt
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,12 @@ ht-degree: 0%
 >title="Nästa eller föregående objekt"
 >abstract="Skapa en panel för att förstå de tidigare dimensioner som personer kommer från eller nästa dimension kommer till."
 
-<!-- markdownlint-disable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
->title="Kapsla eller föregående objekt"
->abstract="Analysera de vanligaste platserna som besökare tidigare kom från eller kom till nästa.<br/><br/>**Dimension**: Välj en dimension. Till exempel **Sida**.<br/>**Dimension-objekt**: Välj en specifik dimensionsobjekt. Exempel: **Hemsida**.<br/>**Riktning**: Välj **Nästa** om du vill visa dimensionsobjekten direkt efter den valda dimensionsobjektet. Välj **Föregående** om du vill se dimensionsobjekten som leder upp till den valda dimensionsposten.<br/>**Behållare**: Välj **Session** om du vill visa nästa/föregående dimensionsobjekt i samma session, eller välj **Person** om du vill visa nästa/föregående dimensionsobjekt för samma person."
+>title="Nästa eller föregående objekt"
+>abstract="Analysera de vanligaste platserna som besökare tidigare kom från eller kom till nästa. Ange dimension, dimensionsartikel, riktning och behållare som ska användas för visualiseringen."
+
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +37,12 @@ _I den här artikeln dokumenteras panelen Nästa eller Föregående objekt i_ ![
 
 Panelen **[!UICONTROL Next or previous item]** innehåller ett antal tabeller och visualiseringar för att identifiera nästa eller föregående dimensionsobjekt för en viss dimension. Du kanske till exempel vill utforska vilka sidor kunderna besöker oftast efter att de besökt hemsidan.
 
-## Använd
+## Använd {#use}
+
+>[!CONTEXTUALHELP]
+>id="workspace_nextorpreviousitem_container"
+>title="Behållare"
+>abstract="Välj behållaren för att fastställa omfattningen av din fråga."
 
 Så här använder du en **[!UICONTROL Next or previous item]**-panel:
 

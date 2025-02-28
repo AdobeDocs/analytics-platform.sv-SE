@@ -4,14 +4,20 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
 
-# Konfigurera en flödesvisualisering
+# Konfigurera en flödesvisualisering {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_container"
+>title="Flödesbehållare"
+>abstract="Välj den behållare som ska användas för att visa (siffror för) banan."
+
 
 Flödesvisualiseringar hjälper er att förstå den resa som följer av en specifik konverteringshändelse på er webbplats eller i er app. Eller leda upp till en viss konverteringshändelse. Visualiseringen spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden.
 
@@ -39,7 +45,7 @@ Du kan konfigurera början eller slutet av sökvägen som du är intresserad av.
    >
    >Beräknade mått kan inte användas i fälten **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]**.
 
-1. Om du väljer ett mätvärde måste du även ange en [!UICONTROL **Dimension**] som du kan använda som sökväg som leder till eller kommer från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
+1. Om du väljer ett mätvärde måste du även ange en [!UICONTROL **Sökväg-Dimension**] som du kan använda som sökväg som leder till eller kommer från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
 
    ![Flödeskonfiguration](assets/flow-configure.png)
 
@@ -113,7 +119,7 @@ Använd en snabbmeny på en nod i flödesvisualiseringen med följande alternati
 | **[!UICONTROL Focus on this node]** | Ändra fokus till den valda noden. Flödesdiagrammets fokusnod visas i mitten. |
 | **[!UICONTROL Start over]** | Gå tillbaka till Frihandsdiagramverktyget där du kan skapa ett nytt flödesdiagram. |
 | **[!UICONTROL Create a filter for this path]** | Skapa ett filter. Det här valet tar dig till filterverktyget, där du kan konfigurera det nya filtret. |
-| **[!UICONTROL Breakdown]** | Dela upp noden efter tillgängliga Dimensioner, mått eller tid. |
+| **[!UICONTROL Breakdown]** | Dela upp noden efter tillgängliga mått, mått eller tid. |
 | **[!UICONTROL Filter column]** | Samma filteralternativ visas som de är tillgängliga i frihandstabellen. Mer information om de tillgängliga alternativen finns i avsnittet Använda ett enkelt eller avancerat filter i en tabell i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | **[!UICONTROL Exclude item]** eller **[!UICONTROL Restore excluded items]** | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet väljer du **[!UICONTROL Restore Excluded Item]** på snabbmenyn. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 | **[!UICONTROL Trend]** | Skapa ett trenddiagram för noden. |
@@ -141,7 +147,7 @@ I exemplet nedan inkluderas **alla** förekomster av *huvudkategorin för produk
   I exemplet nedan inkluderas bara de **sista** förekomsterna av *huvudkategorin för produkten* och *Lägg i kundvagnen* i varje steg i flödet.
   ![Lint, start](assets/limitonlast.png)
 * Serien som används skiljer sig åt beroende på behållaren. Om du använder behållaren **[!UICONTROL Person]** är händelserierna sessionen. Om du använder behållaren **[!UICONTROL Session]** är händelserierna alla händelser för en viss användare i det angivna datumintervallet.
-* Alternativet **[!UICONTROL Limit to first/last occurrence]** kan konfigureras i de avancerade inställningarna när du använder ett mått- eller Dimension-objekt i fälten **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]**.
+* Alternativet **[!UICONTROL Limit to first/last occurrence]** kan konfigureras i de avancerade inställningarna när du använder ett mått eller ett Dimension-objekt i fälten **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]**.
 
 
 >[!MORELIKETHIS]

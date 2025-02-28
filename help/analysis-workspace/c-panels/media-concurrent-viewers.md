@@ -4,9 +4,9 @@ description: Så här använder och tolkar du panelen Medievisningsprogram för 
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="Medievisningsprogram för samtidig användning"
->abstract="Skapa en panel för att analysera den genomsnittliga minuten-publiken för visst innehåll, eller under en viss tidsperiod."
+>abstract="Skapa en panel för att analysera samtidiga visningsprogram under en viss tidsperiod."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Medievisningsprogram för samtidig användning"
->abstract="Analysera samtidiga visningsprogram över tid, visa samtidighet vid toppmöten eller dela upp och jämföra.<br/><br>**Kornighet**: Välj en tidsperiod om du vill visa samtidiga visningsprogram efter.<br/>**Panelsammanfattningsnummer**:<br/>Alternativ för att visa sammanfattningsnummer med datum- och tidsinformation för varje rad. Maximal visar detaljer för maximal samtidighet. Minimivärdet visar information om dalvärdet.<br/>**Serieuppdelning (valfritt)**: Dela upp visualisering efter segment, dimensioner, dimensionsobjekt eller datumintervall. Visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå."
+>abstract="Analysera samtidiga visningsprogram över tid, visa samtidighet för toppvärden och dela upp och jämföra dem med filter, dimensioner, dimensionsobjekt eller datumintervall."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -43,7 +43,7 @@ _Den här artikeln visar panelen Medievisningsprogram för samtidig användning 
 >
 >Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Customer Journey Analytics.
 >
->Kontakta din säljare eller ditt Adobe-kontoteam på Adobe för mer information.
+>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
 
 Panelen **[!UICONTROL Media concurrent viewers]** gör det möjligt att analysera samtidiga visningsprogram över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra.

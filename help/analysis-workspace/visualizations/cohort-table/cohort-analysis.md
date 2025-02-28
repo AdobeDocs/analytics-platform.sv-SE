@@ -4,9 +4,9 @@ description: Lär dig använda en kohorttabell för kohortanalys i Analysis Work
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Kohortabell"
->abstract="Gruppera användarna efter att ha slutfört en händelse, analysera sedan deras pågående engagemang och kraschar över tid.<br/><br/>**Parametrar **<br/>**Inkluderingskriterier**: De komponenter som används för att definiera den inledande besökarkohorten.<br/>**Returvillkor**: Komponenterna som används för att avgöra om en besökare har returnerat."
+>abstract="Gruppera användarna efter att ha slutfört en händelse, analysera sedan deras pågående engagemang och kraschar över tid. Ange ytterligare inställningar som granularitet, typ av kohortanalys och om rullande beräkning ska användas eller inte. Du kan ange avancerade alternativ för att skapa en latenstabell eller en anpassad dimensionskohort baserat på en vald dimension."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ Exempel på vad du kan göra med en [!UICONTROL Cohort table]:
 * Identifiera när en testversion eller ett erbjudande ska avslutas för att maximera värdet.
 * Få idéer för A/B-testning inom områden som priser, uppgraderingsalternativ osv.
 
-[!UICONTROL Cohort table] är tillgängligt för alla Customer Journey Analytics-kunder med åtkomstbehörighet till [!UICONTROL Analysis Workspace].
+[!UICONTROL Cohort table] är tillgängligt för alla Customer Journey Analytics-kunder med åtkomsträttigheter till [!UICONTROL Analysis Workspace].
 
 
 >[!BEGINSHADEBOX]
