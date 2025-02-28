@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '8486'
+source-wordcount: '8489'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Härledda fält är en viktig aspekt av rapportfunktionen i realtid i Adobe Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Workspace](../../analysis-workspace/home.md) eller ytterligare definiera det härledda fältet som en komponent i [datavyn](../data-views.md).
 
-Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser utanför Customer Journey Analytics. Till exempel [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) eller inom dina egna ETL-/ELT-processer (Extract Transform).
+Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än Customer Journey Analytics. Till exempel [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) eller inom dina egna ETL-/ELT-processer (Extract Transform).
 
 Härledda fält definieras i [datavyer](../data-views.md), baseras på en uppsättning funktioner som definierats som regler och tillämpas på tillgängliga standard- och/eller schemafält.
 
@@ -195,7 +195,7 @@ Om du vill använda mallen måste du ange rätt parametrar för varje funktion s
 
 +++
 
-### Kombinera flera Dimensioner {#multi-dim}
+### Kombinera flera Dimension {#multi-dim}
 
 Den här funktionsmallen kombinerar två värden till ett.
 
@@ -205,7 +205,7 @@ Den här funktionsmallen kombinerar två värden till ett.
 
 Om du vill använda mallen måste du ange rätt parametrar för varje funktion som listas som en del av reglerna i mallen. Mer information finns i [Funktionsreferens](#function-reference).
 
-![Skärmbild av regelverktyget för kombinering av flera Dimensioner](assets/function-template-multi-dimension-combine.png)
+![Skärmbild av Multi-Dimension Combine-regelbyggaren](assets/function-template-multi-dimension-combine.png)
 
 +++
 
@@ -643,7 +643,7 @@ Du definierar ett `Trip Duration (bucketed)` härlett fält. Du skapar följande
 
 ## Mer information {#casewhen-more-info}
 
-Customer Journey Analytics använder en kapslad behållarstruktur, som utformas efter att Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model) har . Mer bakgrundsinformation finns i [Behållare](../create-dataview.md#containers) och [Filtrera behållare](../../components/filters/filters-overview.md#filter-containers). Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
+Customer Journey Analytics använder en kapslad behållarstruktur som har utformats efter Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). Mer bakgrundsinformation finns i [Behållare](../create-dataview.md#containers) och [Filtrera behållare](../../components/filters/filters-overview.md#filter-containers). Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
 
 Customer Journey Analytics använder följande standardbehållarmodell:
 
@@ -1994,8 +1994,9 @@ I regeln Klassificera nedan används till exempel tre operatorer.
 
 Stöd för sök- och profilfält i härledda fält gör att du kan omforma data baserat på händelseuppslag och profilattribut. Detta kan vara praktiskt i B2B-scenarier med kontonivådata i uppslags- eller profildatauppsättningar. Dessutom är det här stödet användbart för att hantera data i vanliga fält från sökdata (som kampanjinformation och erbjudandetyp) eller från profildata (som medlemsnivå och kontotyp).
 
-Mer bakgrundsinformation om härledda fält finns i:
+>[!MORELIKETHIS]
+>
+>- [Blogg: Making the Most of Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [Blogg: Exempel på härledda fält för Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blogg: Förbättringar av Adobe Customer Journey Analytics-härledda fält](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
-- [Utnyttja dina data maximalt: Ett ramverk för att använda härledda fält i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
-
-- [Användningsexempel för härledda fält för Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)

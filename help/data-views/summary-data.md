@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1140'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Dina klickströmsdata på platsen innehåller följande händelser.
 
 ### Kombinerade data
 
-Som förklaras i [Kombinerad händelsedatamängd](/help/connections/combined-dataset.md) skapar Customer Journey Analytics en övergripande kombinerad händelsedatamängd när en anslutning definieras. När du konfigurerar datavyn för dimensioner som härstammar från en sammanfattningsdatauppsättning finns alternativ för att gruppera och dölja dimensioner som förberedelse för rapportering i Workspace. Sammanfattningsdata kombineras med händelsedata, särskilt för sammanfattningsdata, baserat på konfigurationen för [sammanfattningsdatagruppen](component-settings/summary-data-group.md).
+Som förklaras i [Kombinerad händelsedatamängd](/help/connections/combined-dataset.md) skapar Customer Journey Analytics en övergripande kombinerad händelsedatamängd när du definierar en anslutning. När du konfigurerar datavyn för dimensioner som härstammar från en sammanfattningsdatauppsättning finns alternativ för att gruppera och dölja dimensioner som förberedelse för rapportering i Workspace. Sammanfattningsdata kombineras med händelsedata, särskilt för sammanfattningsdata, baserat på konfigurationen för [sammanfattningsdatagruppen](component-settings/summary-data-group.md).
 
 | Spårningskod | Kampanjkod | Impressions | Kostnad | Klickningar | Intäkter |
 |---|---|--:|--:|--:|--:|
@@ -93,7 +93,7 @@ För att sammanfattningsdata ska kunna användas korrekt i rapporter och analyse
 
 ### Kornighet och tidszon
 
-När du konfigurerar datauppsättningen som innehåller sammanfattningsdata i Customer Journey Analytics, märker du att granulariteten automatiskt härleds från data. Markeringarna för listrutan **[!UICONTROL Timestamp]** och **[!UICONTROL Timezone]** är inaktiverade eftersom båda är härledda från schemadefinitionen.
+När du konfigurerar datauppsättningen som innehåller sammanfattningsdata i Customer Journey Analytics, märker du att granulariteten automatiskt kommer från dessa data. Markeringarna för listrutan **[!UICONTROL Timestamp]** och **[!UICONTROL Timezone]** är inaktiverade eftersom båda är härledda från schemadefinitionen.
 
 #### Kornighet
 
@@ -101,10 +101,10 @@ Du kan inte blanda och matcha timgranulariteten och daglig granularitet för din
 
 #### Tidszon
 
-Tidszonen för sammanfattningsdata definieras på sammanfattningsschemanivå i Experience Platform. Tidszonen gäller endast för timdetaljerade data.
+Tidszonen för dina sammanfattningsdata definieras på sammanfattningsschemanivå i Experience Platform. Tidszonen gäller endast för timdetaljerade data.
 
-- För daglig granularitet använder Experience Platform UTC, såvida inte en tidszonsförskjutning inkluderas i tidsstämpeln. När du lägger till den sammanfattningsdatauppsättning som innehåller dagliga sammanfattningsdata, ignorerar Customer Journey Analytics den tidszonsdefinition som angetts i schemat och respekterar den dag som är associerad med tidsstämpeln från data i datauppsättningen.
-- För timgranularitet respekterar Customer Journey Analytics den tidszon som konfigurerats i schemat med sammanfattningsdata i Experience Platform vid tolkning av tidsstämpeln. Tabellen nedan innehåller några exempel på denna tolkning.
+- För daglig granularitet antar Experience Platform UTC, såvida inte en tidszonsförskjutning inkluderas i tidsstämpeln. När du lägger till sammanfattningsdatauppsättningen som innehåller dagliga sammanfattningsdata, ignorerar Customer Journey Analytics den tidszonsdefinition som angetts i schemat och respekterar den dag som är associerad med tidsstämpeln från data i datauppsättningen.
+- För timgranularitet respekterar Customer Journey Analytics den tidszon som konfigurerats i schemat för sammanfattningsdata i Experience Platform när tidsstämpeln tolkas. Tabellen nedan innehåller några exempel på denna tolkning.
 
   | Tidsstämpel <br/> - källdata | Schema för tidszon<br/> | Tidsstämpel<br/>Upplevelse<br/>Plattform | Tidszon<br/>, data<br/>vy | Tidsstämpel<br/>kund<br/>resa<br>Analys |
   |---|---|---|:---|---|
@@ -142,8 +142,8 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 | Variabel | Värde |
 |---|---|
-| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform-API:er](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication). |
-| `$SCHEMA_ID` | Du kan hitta ID:t för ditt schema i användargränssnittet för Experience Platform. Välj ditt sammanfattningsschema i listan med scheman och sök efter **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** i den högra panelen. Använd det ID:t som värde. |
+| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication). |
+| `$SCHEMA_ID` | Du kan hitta ID:t för ditt schema i Experience Platform-gränssnittet. Välj ditt sammanfattningsschema i listan med scheman och sök efter **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** i den högra panelen. Använd det ID:t som värde. |
 | `$GRANULARITY` | Ange `hour` eller `day` som värde. |
 | `$TIMEZONE` | Ange rätt värde för tidszonsidentifierare från TZ-identifierarkolumnen i [List of tz database time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Till exempel: `America/Los_Angeles`. |
 
@@ -153,4 +153,6 @@ Kontrollera att komponentinställningarna för en sammanfattningsdatagrupp är d
 
 >[!MORELIKETHIS]
 >
->I artikeln [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md) finns ett detaljerat exempel på hur du använder och rapporterar om sammanfattningsdata.
+>- I artikeln [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md) finns ett detaljerat exempel på hur du använder och rapporterar om sammanfattningsdata.
+>- Blogg: [Hur sammanfattningsdata förbättrar Adobe Customer Journey Analytics-datauppsättningar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+
