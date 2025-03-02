@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
+source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,19 @@ Den här omvandlingen är bara tillgänglig för datauppsättningar med data fö
 >
 >Det finns en gräns på högst 10 000 objekt för varje id. Den här begränsningen innebär att för varje person-ID kan du bara ha 10 000 konton, 10 000 möjligheter, 10 000 marknadsföringslistor eller 10 000 kampanjer.
 
+>[!PREREQUISITES]
+>
+>För att importen ska fungera på rätt sätt måste du verifiera att B2B-sökdatauppsättningarna har data ifyllda för följande fält (enligt definitionen i B2B-sökscheman):
+>
+>| Datauppsättning som innehåller data som överensstämmer med schema | Fältet ifyllt med data |
+>|---|---|
+>| XDM Business Account Person Relation | `accountPersonID` |
+>| XDM Affärsmöjlighet, person | `opportunityPersonID` |
+>| XDM Business Marketing List | `marketingListMemberID` |
+>| XDM Business Campaign-medlemmar | `campaign.sourceKey` |
+>
 
-Så här aktiverar du omformning för en sådan datauppsättning:
+Så här aktiverar du omformning för en B2B-sökdatauppsättning:
 
 ![Aktivera omformningsdatauppsättning](/help/connections/assets/transform.gif)
 
