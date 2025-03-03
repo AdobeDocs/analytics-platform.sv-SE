@@ -4,9 +4,9 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
+source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
 workflow-type: tm+mt
-source-wordcount: '4163'
+source-wordcount: '4267'
 ht-degree: 1%
 
 ---
@@ -418,8 +418,8 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 
 | Argument | Beskrivning |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Det mätvärde som du vill använda för att jämföra. |
+| metric_Y | Det mätvärde som du vill jämföra med. |
 
 ### Exempel
 
@@ -557,8 +557,8 @@ Utdata är antingen 0 (false) eller 1 (true).
 
 | Argument | Beskrivning |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Det basmått som du vill använda för att jämföra. |
+| metric_Y | Det mätvärde som du vill jämföra med. |
 
 ### Exempel
 
@@ -582,8 +582,8 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 | Argument | Beskrivning |
 |---|---|
-| metric_X |  |
-| metric_Y |  |
+| metric_X | Det basmått som du vill använda för att jämföra. |
+| metric_Y | Det mätvärde som du vill jämföra med. |
 
 ### Exempel
 
@@ -695,8 +695,8 @@ Utdata är antingen 0 (false) eller 1 (true).
 
 | Argument | Beskrivning |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Det mätvärde som du vill använda för att jämföra. |
+| metric_Y | Det mätvärde som du vill jämföra med. |
 
 ### Exempel
 
@@ -720,8 +720,8 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 | Argument | Beskrivning |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Det mätvärde som du vill använda för att jämföra. |
+| metric_Y | Det mätvärde som du vill jämföra med. |
 
 ### Exempel
 
@@ -1019,8 +1019,8 @@ Inte lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 | Argument | Beskrivning |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Det mätvärde som du vill använda för att jämföra. |
+| metric_Y | Det mätvärde som du vill jämföra med. |
 
 ### Exempel
 
