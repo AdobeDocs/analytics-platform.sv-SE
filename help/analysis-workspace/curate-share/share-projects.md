@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1970'
 ht-degree: 0%
 
 ---
@@ -50,9 +50,9 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektdelning i 
 >[!ENDSHADEBOX]
 
 
-## Dela med användare och grupper i Customer Journey Analytics i din organisation {#Add}
+## Dela med Customer Journey Analytics användare och grupper i er organisation {#Add}
 
-Du kan dela ett projekt med befintliga användare eller grupper på Customer Journey Analytics i organisationen. När du delar ett projekt enligt beskrivningen i det här avsnittet måste de användare du delar med redan ha ett Customer Journey Analytics-konto.
+Du kan dela ett projekt med befintliga Customer Journey Analytics-användare eller -grupper i din organisation. När du delar ett projekt enligt beskrivningen i det här avsnittet måste de användare du delar med redan ha ett Customer Journey Analytics-konto.
 
 Du kan dela en specifik roll med användare eller grupper eller dela en länk.
 
@@ -137,7 +137,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 
 * Personer utanför din organisation
 
-* Personer i din organisation som inte har tillgång till Customer Journey Analytics
+* Personer i organisationen som inte har tillgång till Customer Journey Analytics
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 >
 >* Möjligheten att dela ett projekt på det här sättet kan inaktiveras av Customer Journey Analytics-administratören, vilket beskrivs i [Inställningar](/help/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har Customer Journey Analytics-administratören inaktiverat den här möjligheten.
 >
->* Projekt med mer än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till Customer Journey Analytics.
+>* Projekt med fler än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till Customer Journey Analytics.
 >
 >* Användare som du delar med kan visa alla filter som använts på projektet under [kurationen](curate.md).
 > 
@@ -153,8 +153,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 >
 >* Ett projekt kan bli oåtkomligt om många användare försöker få åtkomst till en viss länk samtidigt. Som standard har fler än 190 personer tillgång till en enda länk var femte minut. Om din organisation når den gränsen väntar du i fem minuter och försöker sedan att få åtkomst till länken igen.
 >
->* Funktionen [!UICONTROL Share with anyone] är blockerad för både licenser för hälso- och sjukvårdssköld och skölden för skydd av privatlivet och säkerheten.
-
+>* För både [!DNL Healthcare Shield]- och [!DNL Privacy & Security Shield]-licenser kräver funktionen [!UICONTROL Share with anyone] Experience Cloud-autentisering. För [!DNL Healthcare Shield]-kunder visas en varning om HIPAA-kompatibilitet, men du kan fortfarande använda den här funktionen efter att du har autentiserat dig för Experience Cloud.
 
 >[!BEGINSHADEBOX]
 
@@ -189,7 +188,7 @@ Så här delar du ett Analysis Workspace-projekt med vem som helst:
 
       * Om det här alternativet inte visas har Customer Journey Analytics-administratören inte aktiverat den här funktionen.
 
-      * Om det här alternativet är aktiverat och du inte kan inaktivera det, innebär det att Customer Journey Analytics-administratören kräver Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt. Detta gäller alltid för organisationer som skaffat ett vårdcertifikat.
+      * Om det här alternativet är aktiverat och du inte kan inaktivera det innebär det att Customer Journey Analytics-administratören kräver Experience Cloud-autentisering för alla som använder Analysis Workspace-projekt. Detta gäller alltid för organisationer som skaffat ett vårdcertifikat.
 
 1. Bredvid fältet **[!UICONTROL Share with anyone (no login required)]** väljer du ![Länk](/help/assets/icons/Link.svg) för att kopiera länken till systemets Urklipp.
 
