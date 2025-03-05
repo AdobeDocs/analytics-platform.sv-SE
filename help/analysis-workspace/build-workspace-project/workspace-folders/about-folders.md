@@ -5,9 +5,9 @@ title: Översikt över mappar
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 8571fbcfddd18658306e264cef88a3f10861e069
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -49,12 +49,7 @@ Non-Admins have limited options.
 Nedan följer några riktlinjer när du arbetar med företagsmappen:
 
 - Administratörer kan lägga till projekt i mappen Company eller skapa ett nytt projekt och spara det nya projektet i mappen Company. Icke-administratörer kan visa innehållet i mappen Company.
-
 - Administratörer kan skapa undermappar i företagsmappen.
-
 - Administratörer kan ta bort en mapp i företagsmappen som en annan administratör har skapat. Administratörer kan behöva samordna med andra administratörer för att säkerställa att mapp- och projektåtkomsten är konsekvent.
-
 - När en administratör flyttar ett projekt till företagsmappen delas mappen med alla, även om de ursprungliga delade behörigheterna var begränsade.
-- När en administratör flyttar ett projekt från företagsmappen gäller de ursprungliga eller tidigare delningsbehörigheterna.
-
 - När en administratör flyttar ett projekt från företagsmappen gäller de ursprungliga eller tidigare delningsbehörigheterna.

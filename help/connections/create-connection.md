@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
+source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4110'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 
 ## Skapa och konfigurera anslutningen {#create-connection}
 
-1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Connections]**.
+1. I Customer Journey Analytics väljer du **[!UICONTROL Connections]** på huvudmenyn.
 1. Välj **[!UICONTROL Create new connection]**.
 
    ![Namnlösa anslutningsinställningar](assets/create-conn1.png)

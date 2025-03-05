@@ -4,7 +4,7 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
+source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
 
    | Skapandemetod | Information |
    | --- | --- |
-   | Från gränssnittet **[!UICONTROL Audiences]**. | Välj **[!UICONTROL Components]** > **[!UICONTROL Audiences]** på Customer Journey Analytics huvudmeny. Gränssnittet Publiker visas. Välj **[!UICONTROL Create audience]** så öppnas [!UICONTROL Audience builder]. |
+   | Från gränssnittet **[!UICONTROL Audiences]** | Välj **[!UICONTROL Components]** > **[!UICONTROL Audiences]** på Customer Journey Analytics huvudmeny. Gränssnittet Publiker visas. Välj **[!UICONTROL Create audience]** så öppnas [!UICONTROL Audience builder]. |
    | Från en visualisering i Analysis Workspace | Många visualiseringar i Analysis Workspace gör att du kan skapa en målgrupp med hjälp av snabbmenyn. Du kan till exempel välja **[!UICONTROL Create audience]** på snabbmenyn för ett objekt i en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en nod i [Researbetsytan](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>När du använder den här metoden fylls filtret i Audience Builder i automatiskt med den dimension eller det dimensionsobjekt som du valde.</p><p>Med följande visualiseringar kan du skapa en målgrupp med hjälp av högerklicksmenyn:</p><ul><li>[Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Obs!** Målgrupper kan inte innehålla beräknade värden. Om du försöker skapa en målgrupp som innehåller ett beräknat mått inkluderas inte det beräknade måttet i målgruppsdefinitionen.</p> |
    | Från gränssnittet för att skapa/redigera filter | Markera rutan **[!UICONTROL Create an audience from this filter]**. Om du använder den här metoden fylls filtret i automatiskt. Mer information finns i [Skapa filter](/help/components/filters/create-filters.md). |
 
@@ -147,7 +147,7 @@ Vid flera tillfällen före, under och efter publikationen kan fördröjningar u
 
 ## Använda Customer Journey Analytics-målgrupper i Experience Platform {#audiences-aep}
 
-Customer Journey Analytics tar alla namnutrymmes- och ID-kombinationer från er publicerade målgrupp och strömmar dem till Real-Time Customer Data Platform. Customer Journey Analytics skickar målgruppen till Experience Platform med den primära identitetsuppsättningen, enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
+Customer Journey Analytics tar alla namnområdes- och ID-kombinationer från den publicerade målgruppen och strömmar dem till Real-Time Customer Data Platform. Customer Journey Analytics skickar målgruppen till Experience Platform med den primära identitetsuppsättningen, enligt vad som valdes som [!UICONTROL Person ID] när anslutningen konfigurerades.
 
 Real-Time Customer Data Platform undersöker sedan varje namnutrymmes-/ID-kombination och söker efter en profil som det kan vara en del av. En profil är i princip ett kluster med länkade namnutrymmen, ID:n och enheter. Om en profil hittas läggs namnutrymmet och ID:t till i de andra ID:n i den här profilen som ett segmentmedlemsattribut. <user@adobe.com> kan till exempel riktas mot alla enheter och kanaler. Om ingen profil hittas skapas en ny.
 
