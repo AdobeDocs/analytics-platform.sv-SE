@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 4c0a18bcaef0b9d6a4d2289fc0be20cfcfefff7d
+source-git-commit: a3817114534ddea434ee0c5b8147ba90e1d144dc
 workflow-type: tm+mt
-source-wordcount: '19458'
+source-wordcount: '19456'
 ht-degree: 0%
 
 ---
@@ -550,7 +550,7 @@ Följande mallar är tillgängliga:
 | **Sidsammanfattning** | Visa viktig information om alla sidor i egenskaperna. Visar sidvyer, en trendlinje, en flödesvisualisering och mycket mer.  <p>**Detta kan hjälpa dig** att bättre förstå hur människor interagerar med en viss sida.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att analysera sidans prestanda över en tidsperiod eller bättre förstå vad som driver trafik till sidan.</p><p>I den här mallen används måttet Sidvyer. Det använder även linjevisualisering och Flow-visualisering.</p> |
 | **Startsidor** | Visa de översta sidorna som andra kommer åt när de besöker webbplatsen första gången. <p>**Detta kan hjälpa dig** att bättre förstå vilka sidor som genererar mest trafik till din webbplats eller förstå mer om de första visningar besökarna har på din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera den första upplevelsen som andra personer kommer in på webbplatsen, eller se till att de sidor som de första användarna ser när de kommer in på din webbplats är välkomna och tillhandahåller nödvändiga länkar till andra delar av din webbplats.</p><p>Den här mallen använder måttet Sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering.</p> |
 | **Avsluta sidor** | Visa de översta sidorna som andra kommer åt direkt innan de lämnar din webbplats.<p>**Det här kan hjälpa dig** att bättre förstå vilka sidor som leder personer bort från webbplatsen. </p><p>**Baserat på vad du lär dig kan du** göra något av följande, till exempel uppdatera vanliga avslutssidor för att optimera upplevelsen som andra får innan de lämnar webbplatsen, eller inkludera innehåll eller länkar för att uppmuntra andra att stanna kvar på webbplatsen.</p><p>Den här mallen använder måttet Sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering.</p> |
-| **Översikt över produktanvändning** (kommer snart) | Se hur Customer Journey Analytics används i er organisation. <p>**Det här kan hjälpa dig** att bättre förstå hur många som använder Customer Journey Analytics, hur ofta de använder det och hur många användartrender de använder över tid. Du kan också se antalet projekt som skapas och information om dessa projekt (till exempel vilka komponenter, visualiseringar och paneler som används mest) samt många andra användningsstatistik.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, t.ex. ta bort oanvända projekt eller komponenter, eller tillhandahålla användarutbildning för populära funktioner.</p> |
+| **Översikt över produktanvändning** | Se hur Customer Journey Analytics används i er organisation. <p>**Det här kan hjälpa dig** att bättre förstå hur många som använder Customer Journey Analytics, hur ofta de använder det och hur många användartrender de använder över tid. Du kan också se antalet projekt som skapas och information om dessa projekt (till exempel vilka komponenter, visualiseringar och paneler som används mest) samt många andra användningsstatistik.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, t.ex. ta bort oanvända projekt eller komponenter, eller tillhandahålla användarutbildning för populära funktioner.</p> |
 
 ### Webb: Konvertering {#web-conversion}
 
