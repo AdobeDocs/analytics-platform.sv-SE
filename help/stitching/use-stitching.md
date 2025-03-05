@@ -4,9 +4,10 @@ description: Hur du använder stygn
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-source-git-commit: 5e25cb4d974ab85cca3aa2bb777675e12f63038b
+exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
+source-git-commit: 157f70353f60da3fec83e016e7a09f69f7f514cf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -17,14 +18,14 @@ När din organisation uppfyller alla [krav](#prerequisites) och förstår vanlig
 
 ## Välj alternativ
 
-Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i produktbeskrivningen för [Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
+Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
 
-| | Customer Journey Analytics<br/>Markera | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
+| | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | Tillgängliga sammanfogningsmetoder | <li>Fältbaserad stygn</li> | <li>Fältbaserad stygn</li><li>Diagrambaserad utjämning</li> | <li>Fältbaserad stygn</li><li>Diagrambaserad utjämning</li> |
 | Varaktighet för engångssammanfogning av bakfyllning | 13 månader | 13 månader | 25 månader |
 | Fönster för uppspelning och uppspelningsfrekvens | <li>1 dag, varje dag</li><li>upp till 7 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 14 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 30 dagar, varje vecka</li> |
-| Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 10 | 50 |
+| Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 15 | 50 |
 
 ## Begär support
 
@@ -38,7 +39,7 @@ Det Customer Journey Analytics-paket som du är berättigad till avgör vilka me
    - Namn på sandlåda.
 
 
-2. Adobe kundsupport samarbetar med Adobe och gör det möjligt att sy ihop bilder när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny kolumn för sammanfogade ID i Adobe Experience Platform. Adobe kundsupport kan ange den nya datauppsättningens ID.
+2. Adobe kundsupport arbetar tillsammans med Adobe tekniker för att knyta ihop material när du får din begäran. När den är aktiverad visas en ny inmatad datauppsättning som innehåller en ny kolumn för sammanfogade ID i Adobe Experience Platform. Adobe kundsupport kan tillhandahålla den nya datauppsättningens ID.
 
 3. När Adobe aktiveras första gången fylls data i baklänges. Se ditt Customer Journey Analytics-paket för att se om [alternativet](#options) är tillgängligt.
 
@@ -48,7 +49,7 @@ Det Customer Journey Analytics-paket som du är berättigad till avgör vilka me
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-När datavyn har konfigurerats kan du köra din Customer Journey Analytics-rapportanalys över olika kanaler och enheter.
+När datavyn har konfigurerats kan du köra Customer Journey Analytics rapportanalys i alla kanaler och på alla enheter.
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
@@ -71,6 +72,3 @@ Alternatively, you can set up and use stitching through the Customer Journey Ana
 Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
 
 -->
-
-
-
