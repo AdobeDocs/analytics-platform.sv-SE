@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,24 @@ ht-degree: 0%
 >id="cja-upgrade-websdk-api"
 >title="NPM-paket"
 >abstract="Använd API:t för datainsamling för att skicka data direkt till en datastam. Både icke-autentiserade (klient-till-server) och autentiserade (server-till-server) typer stöds."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-no-selection"
+>title="Implementera Web SDK för den angivna egendomen"
+>abstract="Välj önskad implementeringstyp i enkäten för mer detaljerade instruktioner."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-third-party"
+>title="Lägg till Web SDK-biblioteket i tagghanteringssystemet från tredje part"
+>abstract="Arbeta med administratören via tagghanteringssystemet för att lägga till Web SDK-biblioteket på din webbplats.<br><br>Slutförandetiden för den här aktiviteten beror till stor del på svarstiden hos den person som ansvarar för tagghanteringssystemet. Om du lägger till SDK-biblioteket för webben kan implementeringslogiken ingå och driftsättas under organisationens standardversionscykler."
 
 <!-- markdownlint-enable MD034 -->
 

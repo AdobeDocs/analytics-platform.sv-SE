@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -20,40 +20,48 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Använd personaliseringsobjektet för Adobe Journey Optimizer"
->abstract="Använd personaliseringsobjektet i implementeringen för användning i Adobe Journey Optimizer."
+>abstract="Genom att utnyttja den senaste tekniken inom maskininlärning och djupinlärning under övervakning kan en företagsanvändare (marknadsförare) med personaliserad optimering definiera affärsmål och använda sina kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-Resultatet av personaliseringsobjektet hamnar i en datauppsättning. Resultatet av experimenterande. När en kund har använt AA med Target hamnar det i ett helt annat utrymme än när de migrerar till CJA och kommer att använda CJA med Adobe Target.
+Genom att utnyttja den senaste tekniken inom maskininlärning och djupinlärning under övervakning kan en företagsanvändare (marknadsförare) med personaliserad optimering definiera affärsmål och använda sina kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal.
 
-Target var det gamla sättet att skapa ett A/B-test eller -experiment. Sedan säkerställde man resultaten av testerna i Target och slutade med AA för rapportering. Om du nu använder Target kan du nu, i stället för att säga att du vill ha data i Target, välja CJA som rapportkälla för en Adobe Target-aktivitet. Så om en kund gör detta i AA och vill gå över till CJA, ...
+Mer information finns i [Personlig optimeringsmodell](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) i Journey Optimizer Guide.
 
-Om en kund har AJO och använder erbjudanden i AJO kan de lägga upp erbjudanden och det skapar också datauppsättningar i Platform... Men det är inte relevant med uppgradering, exakt.
+<!--
 
+The result of the personalization object ends up in a dataset. The result of experimentation. When a customer has used AA with Target, that ends up in a complete different space than when they're migrating to CJA and they're going to use CJA with Adobe Target. 
 
+Target was the old way of setting up an A/B test or experimentation. Then ensuring the results of those tests in Target ended up in AA for reporting. Now if you're using Target, instead of saying that you want the data in Target, you can now select CJA as your reporting source for an Adobe Target activity. So if a customer is doing this in AA and they want to move to CJA, ...
 
-Frågor vi behöver svara på:
-
-1. Hur fastställer vi personaliseringskriterierna (röd för användare A och blå för användare B)?
-
-1. Vad implementerar vi på webbplatsen för att fastställa det röda/blå objektet?
-
-
-Två sätt:
-
-Återge innehåll manuellt eller automatiskt.
-
-
-## Manuell implementering av Web SDK
-
-
-## Implementering av SDK för mobiler
+If a customer has AJO, and is using Offers in AJO, then they can set up offers, and that also creates datasets in Platform... But that's not relevant with upgrade, exactly.
 
 
 
+Questions we need to answer:
+
+1. How do we determine the personalization criteria (Red for user A and blue for User B)
+
+1. What do we implement on the site to determine the red / blue object?
 
 
-## Taggar
+2 ways we can do it:
+
+Manually rendering content or Automatically rendering content. 
+
+
+## Manual implementation of the Web SDK
+
+
+## Mobile SDK implementation 
+
+
+
+
+
+## Tags
+
+-->
 

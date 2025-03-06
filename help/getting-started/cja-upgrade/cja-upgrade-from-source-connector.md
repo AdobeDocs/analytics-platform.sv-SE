@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 0%
 >id="cja-upgrade-source-connector"
 >title="Implementering av källanslutning för analyser"
 >abstract="Med Analytics-källkopplingen kan ni enkelt få värde från Customer Journey Analytics, men kräver att ni betalar för både Adobe Analytics och Customer Journey Analytics. Den här guiden hjälper dig att gå mot en oberoende implementering av SDK för webben."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="Ta bort den befintliga Analytics-källkopplingen"
+>abstract="Analyskällans koppling som du har för närvarande är inte kompatibel med organisationens anpassade schema. Data finns dock fortfarande i analysrapportsviten. I det här steget tas den aktuella Analytics-källkopplingen bort så att du kan återskapa den med rätt schema i ett efterföljande steg.<br><br>Innan du tar bort källkopplingen kanske du vill samordna med andra i organisationen för att säkerställa att borttagningen av källkopplingen inte påverkar rapporteringen inom organisationen. Denna samordning kan ta flera veckor."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1584'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ När du uppgraderar från Adobe Analytics till Customer Journey Analytics kan du
 
 ## Rekommenderade uppgraderingssteg för de flesta organisationer {#upgrade-process}
 
-Den rekommenderade processen att uppgradera från Adobe Analytics till Customer Journey Analytics är en ny implementering av Experience Platform Web SDK, vilket är den bästa datainsamlingsmetoden för Customer Journey Analytics. Tillsammans med Web SDK rekommenderar Adobe också att du använder Analytics-källkopplingen för att underlätta övergången till Customer Journey Analytics. Använd Analytics-källkopplingen för att bevara historiska Adobe Analytics-data och för att utföra datavämning sida vid sida.
+Den rekommenderade processen att uppgradera från Adobe Analytics till Customer Journey Analytics är en ny implementering av Experience Platform Web SDK, som är den bästa datainsamlingsmetoden för Customer Journey Analytics. Tillsammans med Web SDK rekommenderar Adobe också att du använder Analytics-källkopplingen för att underlätta övergången till Customer Journey Analytics. Använd Analytics-källkopplingen för att bevara historiska Adobe Analytics-data och för att utföra datavämning sida vid sida.
 
-När du har tillräckligt med historiska data i Experience Platform Web SDK och har gått över till Customer Journey Analytics helt kan Analytics-källkopplingen stängas av och Web SDK kan användas exklusivt.
+När du har tillräckligt med historiska data i Experience Platform Web SDK och har gått över till Customer Journey Analytics helt kan källkopplingen för Analytics stängas av och Web SDK kan användas exklusivt.
 
 >[!NOTE]
 >
->Om uppgraderingsstegen som beskrivs i det här avsnittet inte är praktiska för din organisation kan du använda frågeformuläret [Adobe Analytics till Customer Journey Analytics upgrade](https://gigazelle.github.io/cja-ttv/) för att dynamiskt generera uppgraderingssteg som är anpassade efter din organisations unika omständigheter.
+>Om uppgraderingsstegen som beskrivs i det här avsnittet inte är praktiska för din organisation kan du använda frågeformuläret [Adobe Analytics till Customer Journey Analytics ](https://gigazelle.github.io/cja-ttv/) för att dynamiskt generera uppgraderingssteg som är anpassade efter organisationens unika förhållanden.
 
 ### Rekommenderad uppgraderingsprocess på hög nivå {#high-level-upgade-process}
 
@@ -41,7 +41,7 @@ När du har tillräckligt med historiska data i Experience Platform Web SDK och 
 
 1. **Implementera Experience Platform Web SDK (för pågående datainsamling)**
 
-   En ny implementering av Experience Platform Web SDK är det bästa sättet att samla in data för Customer Journey Analytics. Det är den bästa grunden för att få ut så mycket som möjligt av Customer Journey Analytics, eftersom det är den mest kraftfulla, enkla och framtidssäkra metoden för implementering av Customer Journey Analytics.
+   En ny implementering av Experience Platform Web SDK är det bästa sättet att samla in data för Customer Journey Analytics. Det är den bästa grunden för att få ut så mycket som möjligt av Customer Journey Analytics eftersom det är den mest högpresterande, enkla och framtidssäkra metoden för att implementera Customer Journey Analytics.
 
    * Högpresterande rapportering och datatillgänglighet eftersom Adobe Experience Platform är byggt för personalisering i realtid
 
@@ -51,7 +51,7 @@ När du har tillräckligt med historiska data i Experience Platform Web SDK och 
 
 1. **Konfigurera Adobe Analytics-källkopplingen (för överföring av historiska data)**
 
-   För att underlätta övergången till Experience Platform Web SDK med Customer Journey Analytics rekommenderar Adobe också att du använder Adobe Analytics källanslutning. På så sätt kan du spara historiska data och visa data från din befintliga Adobe Analytics-implementering i Customer Journey Analytics, sida vid sida med data från din nya Experience Platform Web SDK-implementering.
+   För att övergången till Experience Platform Web SDK med Customer Journey Analytics ska bli så smidig som möjligt rekommenderar Adobe även att du använder Adobe Analytics källanslutning. På så sätt kan du lagra historiska data och visa data från din befintliga Adobe Analytics-implementering i Customer Journey Analytics, sida vid sida med data från din nya Experience Platform Web SDK-implementering.
 
    Med Analytics-källkopplingen kan ni:
 
@@ -63,7 +63,7 @@ När du har tillräckligt med historiska data i Experience Platform Web SDK och 
 
      Du kan hålla Analytics-källkontakten igång tills du känner dig bekant med skillnaderna. <!--elaborate on what those differences are? -->
 
-   Analyskällans koppling som en fristående implementering rekommenderas inte för långtidsanvändning av Customer Journey Analytics. Detta beror på hög latens, klumpiga och komplexa scheman, beroende av Adobe Analytics nomenklatur (prop, eVar o.s.v.) och svårigheter att så småningom gå från källkopplingen för Analytics till den rekommenderade Web SDK-implementeringen.
+   Analyskällans koppling som en fristående implementering rekommenderas inte för långtidsanvändning av Customer Journey Analytics. Detta beror på hög latens, klumpiga och komplexa scheman, beroende av Adobe Analytics nomenklatur (prop, eVar o.s.v.) och svårigheter att så småningom gå från källkopplingen till den rekommenderade Web SDK-implementeringen.
 
 ### Detaljerade rekommenderade uppgraderingssteg
 
@@ -87,15 +87,15 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    Det gör du genom att [skapa en uppslagsdatauppsättning för varje dimension som innehåller klassificeringsdata](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
 
-1. För Adobe Analytics-implementeringar med AppMeasurement eller Analytics-tillägg (taggar) skapar [ett datastödram i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
+1. För Adobe Analytics-implementeringar som använder AppMeasurement eller Analytics-tillägget (taggar) [skapar du ett datastam i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   För Adobe Analytics-implementeringar som använder Web SDK finns det redan ett datastream.
+   För Adobe Analytics-implementeringar som använder Web SDK finns det redan ett datastream. Mer information finns i [Konfigurera din befintliga Adobe Analytics Web SDK-implementering för att skicka data till plattformen](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md).
 
 1. [Lägg till Adobe Experience Platform som en tjänst i ditt datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md).
 
 1. (Valfritt) Om du vill integrera Customer Journey Analytics med Adobe Journey Optimizer använder du personaliseringsobjektet i implementeringen för användning i Adobe Journey Optimizer.
 
-1. Expandera avsnittet som beskriver hur du vill implementera Experience Platform Web SDK för implementeringen av Customer Journey Analytics och slutför sedan de associerade stegen:
+1. Expandera avsnittet som beskriver hur du vill implementera Experience Platform Web SDK för din Customer Journey Analytics-implementering och slutför sedan de tillhörande stegen:
 
    +++Manuell implementering (JS-fil)
 
@@ -141,13 +141,13 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. (Valfritt) Om du använder marknadsföringskanaler i Adobe Analytics kan du [skapa ett marknadsföringskanalhärlett fält i Customer Journey Analytics](/help/data-views/derived-fields/derived-fields.md#marketing-channels).
 
-   Härledda fält är en viktig aspekt av realtidsrapporteringen i Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare.
+   Härledda fält är en viktig aspekt av realtidsrapporter i Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare.
 
    Ett sätt att använda härledda fält är att definiera ett härlett fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (till exempel URL-parameter, sidadress eller sidnamn).
 
    Använd [marknadsföringskanalernas funktionsmall](/help/data-views/derived-fields/derived-fields.md#marketing-channels) i härledda fält för att snabbt skapa ett härlett fält för marknadsföringskanaler.
 
-1. Jämför data i Adobe Analytics från den gamla implementeringen till data i Customer Journey Analytics från den nya implementeringen och se till att du förstår alla skillnader och varför de finns. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
+1. Jämför data i Adobe Analytics från din gamla implementering med data i Customer Journey Analytics från din nya implementering och se till att du förstår eventuella skillnader och varför de finns. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
 1. Hämta historiska data från Adobe Analytics med Analytics-källkopplingen:
 
@@ -169,9 +169,9 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. Planera användarnas introduktion.
 
-   Precis som i Adobe Analytics är Analysis Workspace det viktigaste användarvänliga verktyget i Customer Journey Analytics. Men det finns vissa viktiga skillnader mellan Analysis Workspace i Customer Journey Analytics som användare måste vara medvetna om.
+   Precis som i Adobe Analytics är Analysis Workspace det viktigaste användarvänliga verktyget i Customer Journey Analytics. Det finns dock vissa viktiga skillnader när det gäller att använda Analysis Workspace i Customer Journey Analytics som användare måste vara medvetna om.
 
-   Du bör ge dina användare god tid (3-6 månader) att bekanta sig med Analysis Workspace viktigaste skillnader i Customer Journey Analytics.
+   Du bör ge dina användare god tid (3-6 månader) att bekanta sig med de viktigaste skillnaderna mellan Analysis Workspace i Customer Journey Analytics.
 
    Mer information om några av de viktigaste skillnaderna mellan Adobe Analytics och Customer Journey Analytics finns i [Användarhandbok för Adobe Analytics-användare](/help/getting-started/aa-to-cja-user.md).
 
@@ -181,7 +181,7 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    Adobe rekommenderar att du håller Adobe Analytics-miljön igång under en tid efter att du har implementerat Customer Journey Analytics.
 
-   Mer information om hur Adobe Analytics används under och efter en uppgradering, samt den föreslagna tidpunkten för inaktivering av Adobe Analytics, finns i [Utvärdera hur länge du behöver Adobe Analytics efter att du uppgraderat till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
+   Mer information om hur Adobe Analytics används under och efter en uppgradering, samt den föreslagna tidpunkten för inaktivering av Adobe Analytics, finns i [Utvärdera hur länge du behöver Adobe Analytics efter uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 ## Generera uppgraderingssteg dynamiskt för organisationen
 

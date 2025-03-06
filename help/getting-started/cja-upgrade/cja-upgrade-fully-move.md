@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,15 @@ ht-degree: 0%
 >id="cja-upgrade-keep-aa"
 >title="Behåll båda analysprodukterna"
 >abstract="(Rekommenderas inte) Om du väljer det här alternativet inkluderar ditt avtal med Adobe både Adobe Analytics och Customer Journey Analytics, vilket kan vara dyrare för din organisation över tid."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-source-connector"
+>title="Inaktivera Analytics-källkopplingen så att data används exklusivt från SDK"
+>abstract="Analyskällans koppling används för att tillhandahålla datavämförelser sida vid sida, historiska data och åtkomst till vissa funktioner som inte är helt tillgängliga i Customer Journey Analytics. När du inte längre behöver Adobe Analytics kan du inaktivera källkopplingen för Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -58,6 +67,24 @@ När du ska avgöra om och när din organisation ska inaktivera Adobe Analytics 
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="Inaktivera ett tagghanteringssystem från tredje part"
 >abstract="Med Web SDK-data i full funktionalitet arbetar du med tagghanteraren för att ta bort AppMeasurement-biblioteket från tredjepartssystemet för tagghantering.<br><br>Den beräknade tiden för att utföra det här steget beror på hur enkelt det är att inaktivera AppMeasurement från tagghanteringsprodukten, samt på vilken releasecykel din organisation använder för att distribuera och hantera taggkod."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-tags"
+>title="Inaktivera Analytics-tillägget i taggar"
+>abstract="Med Web SDK-data i full funktionalitet kan du samarbeta med tagghanteraren för att ta bort tillägget Adobe Analytics från taggegenskapen. Innan du gör detta bör du kontrollera att dina användare har gått över från Adobe Analytics till Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-api"
+>title="Inaktivera API-datainsamling för Adobe Analytics"
+>abstract="Med Web SDK-data i full funktionalitet kan du samarbeta med rätt tekniker för att ta bort Adobe Analytics-koden från projektet. Innan du gör detta bör du kontrollera att dina användare har gått över från Adobe Analytics till Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

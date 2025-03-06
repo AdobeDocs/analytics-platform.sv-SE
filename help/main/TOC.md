@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 87b2927735834d253fa8a35ba106c1ed720a4ced
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1193'
 ht-degree: 9%
 
 ---
@@ -59,12 +59,12 @@ ht-degree: 9%
          + [Skapa en datauppsättning](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
          + [Skapa uppslagsdatauppsättningar för klassificeringar](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
          + [Övervaka datamängdsinmatning](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + Skapa taggar {#create-tags}
+      + Implementera Web SDK med taggarna {#create-tags}
          + [Skapa en tagg för din egenskap](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [Lägg till tillägget Web SDK i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [Implementera taggen loader för Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
          + [Lägg till logik för XDM-datainsamling i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [Implementera SDK för webben manuellt](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+      + [Implementera Web SDK manuellt](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
       + [Implementera Web SDK med API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
       + [Skapa en anslutning](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Skapa en datavy](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
@@ -88,6 +88,8 @@ ht-degree: 9%
          + [Analysimplementering](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
          + [Funktionssupport för Adobe Analytics vid uppgradering](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
          + [Customer Journey Analytics-funktioner](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
+         + [Implementeringsalternativ för SDK](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
+         + [Konfigurera Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
    + Jämförelse med Adobe Analytics {#cja-aa-comparison}
       + [Översikt](../getting-started/aa-vs-cja/overview.md)
       + [Använd Adobe Analytics-data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
