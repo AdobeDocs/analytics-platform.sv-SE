@@ -5,9 +5,9 @@ exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5807700b9fe10769bf86f5c4020dd7c23df6e616
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Standardsökningar är bara tillgängliga för datakällor för Analytics-källkoppling i Customer Journey Analytics. Du kan använda dem med Adobe Analytics standardimplementeringar, [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) eller Experience Platform datainsamlings-API:erna.
+>Standardsökningar är bara tillgängliga för datakällor för Analytics-källkoppling i Customer Journey Analytics. Du kan använda dem med Adobe Analytics standardimplementeringar, [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) eller Experience Platform datainsamlings-API:er.
 >
 
-Standarduppslag (kallas även uppslag som tillhandahålls av Adobe) förbättrar möjligheten för Customer Journey Analytics att rapportera om vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En &#39;standardsökning&#39; liknar en uppslagsdatauppsättning. Standardsökningar kan användas i olika Experience Cloud-organisationer. De tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten). Det finns en standarddatauppsättning för sökning för varje schemaplats som Adobe klassificerar.
+Standarduppslag (även kallat uppslag som tillhandahålls av Adobe) förbättrar möjligheten för Customer Journey Analytics att rapportera vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En &#39;standardsökning&#39; liknar en uppslagsdatauppsättning. Standardsökningar kan användas i olika Experience Cloud-organisationer. De tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten). Det finns en standardsökdatamängd för varje schemaplats som Adobe klassificerar.
 
 I traditionella Adobe Analytics visas de här dimensionerna fristående, medan du i Customer Journey Analytics måste ta med de här dimensionerna när du skapar datavyer. I anslutningsarbetsflödet väljer du en datauppsättning som är flaggad som en med en nyckel för standardsökning. Användargränssnittet för datavyer kan automatiskt inkludera alla standardsökningsdimensioner som är tillgängliga för rapportering. Uppslagsfilerna uppdateras automatiskt och är tillgängliga i alla regioner och för alla konton. De lagras i regionspecifika organisationer som är kopplade till kunden.
 
@@ -75,10 +75,15 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 ## Rapport om standardsökningsdimensioner
 
-För att kunna rapportera standarddimensioner för sökning måste du lägga till dem när du skapar en datavy i Customer Journey Analytics:
+För att kunna rapportera om Adobe standardsökningsdimensioner måste du lägga till en eller flera av dessa dimensioner när du skapar en [datavy](/help/data-views/data-views.md) i Customer Journey Analytics. I **[!UICONTROL Data view]** > **[!UICONTROL Components]**:
 
-![Skapa en datavy som visar listan Lägg till komponenter](assets/global-lookup.png)
+1. Välj **[!UICONTROL Schema fields]** i listrutan i den vänstra listen.
+1. Välj **[!UICONTROL Adobe lookups]** i listan över behållare för schemafält.
+1. Gå ned till **[!UICONTROL Browser]**, **[!UICONTROL Mobile]** eller **[!UICONTROL Operating System]** tills du hittar dimensionen du vill lägga till.
+1. Dra dimensionen till tabellen **[!UICONTROL Metrics]** eller **[!UICONTROL Dimensions]** i **[!UICONTROL Included components]**.
 
-Du kan sedan se sökdata i Workspace:
+   ![Skapa en datavy som visar listan Lägg till komponenter](assets/add-standard-lookup-dimension.gif)
+
+Du kan sedan använda sökdata i Workspace:
 
 ![Frihandstabell som visar data](assets/gl-reporting.png)

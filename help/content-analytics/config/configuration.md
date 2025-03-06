@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 596e54a559bac69214e1de3ea37da6177f110b7a
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -39,10 +39,11 @@ Konfigurationen av Content Analytics består av följande steg:
    * Datainsamling
       * En datastream skapas och en Experience Platform-tjänst konfigureras i datastream för att strömma data till händelsedatauppsättningen för upplevelsen av Content Analytics.
       * En taggegenskap skapas med Adobe Content Analytics-tillägget konfigurerat för rätt sandlåda, datastream och andra konfigurationsalternativ från konfigurationsguiden.
-1. Endast när du publicerar taggegenskapen manuellt distribueras och aktiveras Content Analytics.
+1. Endast när du [manuellt publicerar ](manual.md) taggegenskapen distribueras och aktiveras Content Analytics.
+
 1. Du kan bara göra vissa begränsade ändringar i en implementerad konfiguration med guiden [guidad konfiguration](guided.md). Ändra till exempel [datavyn](/help/data-views/data-views.md).
 1. Du kan göra andra ändringar i en implementerad konfiguration med [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) i den associerade taggegenskapen.
-1. Endast när du återpublicerar taggegenskapen manuellt distribueras och aktiveras konfigurationsändringarna från steg 4 och 5.
+1. Endast när du [manuellt återpublicerar ](manual.md) taggegenskapen distribueras och aktiveras konfigurationsändringarna från steg 4 och 5.
 
 
 Innan du konfigurerar Content Analytics bör du kontrollera att följande krav är uppfyllda:

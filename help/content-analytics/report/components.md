@@ -6,7 +6,8 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -49,6 +50,9 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Upplev vågrätt pixeldjup | Kvantifierbart värde för upplevelsens horisontella pixeldjup. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Upplev vertikalt pixeldjup | Kvantifierbart värde för upplevelsens vertikala pixeldjup. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 
+{style="table-layout:fixed"}
+
+
 
 ## Upplevelseattribut
 
@@ -68,6 +72,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Antal Experience Words | ![AI genererade](/help/assets/icons/AI.svg) Antal ord för upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 | Antal upplevelseord per mening | ![AI genererade](/help/assets/icons/AI.svg) Antal ord per mening för upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 
+{style="table-layout:fixed"}
+
 
 ## Experience events
 
@@ -75,6 +81,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 |---|---|---|---|
 | Upplevelsevyer | Kvantifierbart mått på antalet visningar av upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 | Upplev klickningar | Kvantifierbart mått på antalet klick i upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
+
+{style="table-layout:fixed"}
 
 
 ## Resursmetadata
@@ -96,6 +104,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Skapad resurs | Skapad resurs | Dimension | Senaste \| Session |
 | Resursen uppdaterades senast av | Identifierare för tillgångsuppdatering. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Senast uppdaterad | Tillgångsuppdateringsdatum. | Dimension | Senaste \| Session |
+
+{style="table-layout:fixed"}
 
 
 ## Resursattribut
@@ -119,6 +129,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Ljusvillkor för resurs | ![AI genererade](/help/assets/icons/AI.svg) ljusförhållanden för resursen. Möjliga värden är: gyllene timmen, blå timmen, middag, övercast, night, high key, low key, day lighting, incandescent, fluorescent, colorful och studio. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Inställning för resurskamera | ![AI genererade](/help/assets/icons/AI.svg) kamerainställning för resursen. Möjliga värden är: snabb slutarhastighet, lång exponering. bokeh blur, rörelseoskärpa, tilt-shift-oskärpa, flash, vidvinkel, svart och vitt, surrealistisk, dubbel exponering, makro och normalläge. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 
+{style="table-layout:fixed"}
+
 
 ## Resurshändelser
 
@@ -126,6 +138,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 |---|---|---|---|
 | Resursvyer | Kvantifierbart mått för antalet visningar av tillgången. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 | Klickningar på resurs | Kvantifierbart mått för antalet klick i tillgången. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
+
+{style="table-layout:fixed"}
 
 
 <!--
@@ -137,6 +151,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Experience Path Root | Root path to the experience. | Derived Field | |
 | Asset Location | Location of the asset. | Derived Field | |
 | Asset Percenption ID + Asset ID | Combiination of asset perception identifier and asset identifier | Derived Field | |
+
+{style="table-layout:fixed"}
 -->
 
 ## Beräknade mått
@@ -145,3 +161,5 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 |---|---|---|---|
 | Klickfrekvens för resurs - styrfrekvens | Resursklickningar / Resursvyer | Beräknat mått | |
 | upplevelseklickfrekvens | Upplevelseklickningar/upplevelsevyer | Beräknat mått | |
+
+{style="table-layout:fixed"}

@@ -1,11 +1,11 @@
 ---
 title: Använd sammanfattningsdata i Customer Journey Analytics
-description: Använd case som förklarar hur man överför sammanfattande data till Customer Journey Analytics
+description: Använd ett exempel som förklarar hur man överför sammanfattande data till Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '4610'
 ht-degree: 7%
@@ -25,7 +25,7 @@ Användningsexemplet innehåller exempeldata för sammanfattningsdata, händelse
 
 ## Ingest
 
-Du använder följande exempelsammanfattningsdata för det här användningsexemplet och visar sammanfattningsdata för att köra kampanjer på Facebook.
+Du använder följande exempelsammanfattningsdata för det här användningsfallet och visar sammanfattningsdata för att köra kampanjer på Facebook.
 
 +++Sammanfattningsdata
 
@@ -56,7 +56,7 @@ Du använder följande exempelsammanfattningsdata för det här användningsexem
 
 Om du vill använda sammanfattningsdata i Customer Journey Analytics, i en rapport eller som en del av dataanalysen i Workspace behöver du
 
-- ett sammanfattningsschema i Experience Platform,
+- ett sammanfattningsschema i Experience Platform
 - en sammanfattning av datauppsättningen i Experience Platform,
 - en anslutning i Customer Journey Analytics som är konfigurerad att använda sammanfattningsdatauppsättningen,
 - en datavy i Customer Journey Analytics som är korrekt konfigurerad med mått och mått för sammanfattningsdata.
@@ -376,14 +376,14 @@ Så här överför du exempeldata till den här datauppsättningen:
    1. Du kan också välja ![Förhandsgranska](/help/assets/icons/Preview.svg) **[!UICONTROL Preview data]** om du vill öppna en dialogruta med en förhandsgranskning av data som har lästs in i datauppsättningen.
    1. Välj **[!UICONTROL Finish]**.
 
-I **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]** visas status för din överföring. Uppdatera för att se uppdateringar av överföringen. När det är klart läses exempeldata in i Experience Platform.
+I **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]** visas status för din överföring. Uppdatera för att se uppdateringar av överföringen. När det är klart läses dina exempeldata in i Experience Platform.
 
 
 
 
 ## Anslutning
 
-Om du vill använda exempeldata i Customer Journey Analytics skapar du en anslutning som innehåller exempeldatauppsättningen för sammanfattningsdata från Experience Platform.
+Om du vill använda exempeldata i Customer Journey Analytics skapar du en anslutning som innehåller datauppsättningen Exempelsammanfattning från Experience Platform.
 
 
 1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
@@ -423,7 +423,7 @@ Om du vill använda exempeldata i Customer Journey Analytics skapar du en anslut
 
 1. Välj **[!UICONTROL Save]** på anslutningsskärmen **[!UICONTROL Connections]** > **[!UICONTROL Example Connection using Summary Data]** för att spara anslutningen.
 
-Data från datauppsättningarna läggs till i Customer Journey Analytics, vilket kan ta några timmar. Var tålmodig innan du fortsätter.
+Data från datauppsättningarna läggs till i Customer Journey Analytics, som kan ta några timmar. Var tålmodig innan du fortsätter.
 
 Efter en stund kontrollerar du att data från datauppsättningarna har lästs in korrekt i Customer Journey Analytics.
 
@@ -452,7 +452,7 @@ För att vara säker på att du kan rapportera rätt data i Workspace vill du sk
       1. Lämna alla andra inställningar.
       1. Välj **[!UICONTROL Save and continue]**.
    1. I **[!UICONTROL Components]**-steget av **[!UICONTROL Data views]** > **[!UICONTROL Example Data View Using Summary Data]**:
-      1. Lägg till följande komponenter i listan Dimensioner och mått. Observera att komponentnamnen av tydlighetsskäl ändras från standardnamnet, med **[!UICONTROL Component name]** i **[!UICONTROL Component settings]** på komponentpanelen (till höger).
+      1. Lägg till följande komponenter i Dimensions- och Metrics-listan. Observera att komponentnamnen av tydlighetsskäl ändras från standardnamnet, med **[!UICONTROL Component name]** i **[!UICONTROL Component settings]** på komponentpanelen (till höger).
 
          **Mätvärden**
 
@@ -484,7 +484,7 @@ För att vara säker på att du kan rapportera rätt data i Workspace vill du sk
          1. Gräv upp ![SparronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Aktivera **[!UICONTROL Create grouping]**.
          1. Välj **[!UICONTROL Campaign Id]** i listrutan **[!UICONTROL Dimension]**. Detta steg säkerställer att händelsedata och sammanfattningsdata kombineras korrekt för rapportering.
-         1. Du kan även aktivera **[!UICONTROL Hide in reporting]**. [!UICONTROL Hide in reporting] ser till att den valda dimensionen ([!UICONTROL Campaign Id]) döljs i Analysis Workspace och andra rapportverktyg för Customer Journey Analytics. Om du har aktiverat det här alternativet kan du verifiera alternativet:
+         1. Du kan även aktivera **[!UICONTROL Hide in reporting]**. [!UICONTROL Hide in reporting] säkerställer att den valda dimensionen ([!UICONTROL Campaign Id]) döljs i Analysis Workspace och andra rapportverktyg från Customer Journey Analytics. Om du har aktiverat det här alternativet kan du verifiera alternativet:
             1. Välj dimensionen **[!UICONTROL Campaign Id]** i listan **[!UICONTROL Dimensions]**.
             1. Du ser att **[!UICONTROL Hide component in reporting]** i **[!UICONTROL Component settings]** nu är automatiskt aktiverat.
 
