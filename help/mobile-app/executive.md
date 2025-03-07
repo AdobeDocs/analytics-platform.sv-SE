@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Om du vill använda kontrollpanelerna effektivt måste du ha styrkortets kurator
 
 Om du vill få åtkomst till styrkort på instrumentpaneler ser du till att:
 
-* Du har en giltig inloggning i Customer Journey Analytics
+* Du har en giltig inloggning på Customer Journey Analytics
 * Markören har skapat mobila styrkort korrekt och delat dem med dig
 
 ### Hämta och installera kontrollpaneler
@@ -42,7 +42,7 @@ Följ stegen i operativsystemet på enheten för att hämta och installera progr
 
 >[!NOTE]
 >
->Även om mobilappen heter Adobe Analytics dashboard i appbutiken kan appen användas på samma sätt med Customer Journey Analytics mobilstyrkort.
+>Även om mobilappen heter Adobe Analytics Dashboard i appbutiken kan appen användas på samma sätt med Customer Journey Analytics mobilstyrkort.
 
 **För företagsledare på iOS:**
 
@@ -56,15 +56,15 @@ Klicka på följande länk (den är också tillgänglig i Customer Journey Analy
 
 [Android link](https://bit.ly/2LM38Oo)
 
-När programmet har laddats ned och installerats kan företagsanvändare logga in i det med sina befintliga inloggningsuppgifter för Customer Journey Analytics.
+När programmet har laddats ned och installerats kan företagsanvändare logga in i det med sina befintliga Customer Journey Analytics-inloggningsuppgifter.
 
-![välkomstskärmen för appen Customer Journey Analytics](assets/welcome.png)
+![Välkomstskärm för Customer Journey Analytics-appar](assets/welcome.png)
 
 ## Använda instrumentpaneler {#use-dashboards}
 
 Så här använder du kontrollpaneler:
 
-1. Logga in på appen. Inloggningsskärmen visas när du startar instrumentpaneler. Följ instruktionerna med dina befintliga inloggningsuppgifter för Customer Journey Analytics. Vi stöder både Adobe och Enterprise/Federated ID.
+1. Logga in på appen. Inloggningsskärmen visas när du startar instrumentpaneler. Följ instruktionerna med dina befintliga Customer Journey Analytics-uppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
 
    ![Logga in i sekvens](assets/signseq.png)
 
@@ -82,7 +82,7 @@ Så här använder du kontrollpaneler:
 
    Om du loggar in och ser ett meddelande som säger att inget har delats kontrollerar du följande med markören:
 
-   * Du kan logga in i den högra Customer Journey Analytics-sandlådan.
+   * Du kan logga in i rätt Customer Journey Analytics-sandlåda.
    * Styrkortet har delats med dig.
 
    ![Inget delat](assets/nothing.png)
@@ -120,11 +120,11 @@ Så här använder du kontrollpaneler:
 
    * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det närmast föregående. Tryck på något av dessa två alternativ för att markera det första intervallet. I listan **[!UICONTROL COMPARE TO]**: tryck på ett av alternativen för att jämföra data för den här tidsperioden med det första datumintervallet du valde. Tryck på **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du har valt.
 
-1. Om du vill använda ett segmentfilter på styrkortet trycker du på listrutan för filter och väljer ett segment som har konfigurerats av markören. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Workspace.
+1. Om du vill tillämpa ett segment på styrkortet trycker du på listrutan för segment och väljer ett segment som har konfigurerats av markören. [Segment](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Workspace.
 
-   ![Segmentfilter](assets/segment_filter.png)
+   ![Segment](assets/segment_filter.png)
 
-1. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller uppdelningar som du kan vara intresserad av kontaktar du ditt Customer Journey Analytics-team för att få styrkortet uppdaterat. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
+1. Hämta [!UICONTROL Scorecard] uppdateringar. Om en/ett [!UICONTROL Scorecard] inte innehåller alla mått eller uppdelningar som du kan vara intresserad av kontaktar du Customer Journey Analytics-teamet för att få styrkortet uppdaterat. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
 
 1. Lämna feedback om den här appen:
 

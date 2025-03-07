@@ -5,20 +5,20 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1782'
 ht-degree: 0%
 
 ---
 
 # Hantera styrkort
 
-I det här avsnittet lär du dig att visa och hantera styrkortselement för Customer Journey Analytics.
+I det här avsnittet beskrivs hur du kan visa och hantera styrkortselement.
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. I det här fältet kan du ange en ny **titel** för plattan och alternativt konfigurera plattan genom att använda filter. Segment är filter i Customer Journey Analytics.
+När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. I den här rälsen kan du ange en ny **titel** för plattan och alternativt konfigurera plattan genom att använda segment.
 
 ![Egenskapspanel](assets/properties-tile-new.png)
 
@@ -109,7 +109,7 @@ Om du vill ta bort en bildruta trycker du på papperskorgsikonen.
 
 ### Anpassa en dataartikel {#customize-data-story}
 
-Med hjälp av dataartiklar kan du anpassa allt så att du kan dela information som du vill dela och utesluta allt som du inte behöver. Du kan anpassa plattor och enskilda bildrutor för att lägga till filter, visa uppdelningar, ändra layout och ändra visualiseringar.
+Med hjälp av dataartiklar kan du anpassa allt så att du kan dela information som du vill dela och utesluta allt som du inte behöver. Du kan anpassa plattor och enskilda bildrutor för att lägga till segment, visa uppdelningar, ändra layout och ändra visualiseringar.
 
 **Anpassa rutor**
 

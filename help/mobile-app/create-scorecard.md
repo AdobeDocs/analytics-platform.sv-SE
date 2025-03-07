@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2617'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 <!-- markdownlint-enable MD034 -->
 
 
-Följande information instruerar chefer för Customer Journey Analytics om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Till att börja med kan du visa videon om att bygga styrkort för kontrollpaneler i Analytics:
+Följande information beskriver för chefer av Customer Journey Analytics-data hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Till att börja med kan du visa videon om att bygga styrkort för kontrollpaneler i Analytics:
 
 
 >[!BEGINSHADEBOX]
@@ -87,17 +87,17 @@ Så här implementerar du styrkortsmallen:
 
 Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta.
 
-Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Channel]**, i det här exemplet) till måttet **[!UICONTROL Unique Visitors]** genom att dra och släppa det på plattan. Uppdelningar av Dimensioner visas under avsnittet [!UICONTROL Drill Ins] (nedbrytning) i det rutespecifika **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
+Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Channel]**, i det här exemplet) till måttet **[!UICONTROL Unique Visitors]** genom att dra och släppa det på plattan. Dimensionsindelningar visas under avsnittet [!UICONTROL Drill Ins] (uppdelning) i den rutespecifika **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
 
 ![Nytt mobilstyrkortsfönster med en pil som pekar från dimensionslistan till styrkortsrutan.](assets/layer_dimensions.png)
 
-## Använda filter {#filters}
+## Använd segment {#segments}
 
-Om du vill använda filter på enskilda plattor drar du ett filter (segment är filter i Customer Journey Analytics) från den vänstra panelen och släpper det direkt ovanpå plattan.
+Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan.
 
-Om du vill använda filtret på alla plattor i styrkortet släpper du plattan ovanpå styrkortet. Du kan också använda filter genom att välja filter på filtermenyn under datumintervallen. Du [konfigurerar och tillämpar filter för styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
+Om du vill använda segmentet på alla plattor i styrkortet, släpper du plattan ovanpå styrkortet. Du kan också tillämpa segment genom att markera dem på segmentmenyn under datumintervallen. Du [konfigurerar och tillämpar segment för dina styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
 
-![Filterlistruteväljare som markerar byggfiltren](assets/segment_ui.png)
+![Segmentlistruteväljare som markerar byggsegmenten](assets/segment_ui.png)
 
 ## Lägg till datumintervall {#dates}
 
@@ -186,7 +186,7 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data gö
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. I det här fältet kan du ange en ny **titel** för plattan och alternativt konfigurera plattan genom att använda filter. Segment är filter i Customer Journey Analytics.
+När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. I den här rälsen kan du ange en ny **titel** för plattan och alternativt konfigurera plattan genom att använda segment.
 
 ![Egenskapspanel](assets/properties-tile-new.png)
 
@@ -281,7 +281,7 @@ Om du vill ta bort en bildruta trycker du på papperskorgsikonen.
 
 ### Anpassa en dataartikel {#customize-data-story}
 
-Med hjälp av dataartiklar kan du anpassa allt så att du kan dela information som du vill dela och utesluta allt som du inte behöver. Du kan anpassa plattor och enskilda bildrutor för att lägga till filter, visa uppdelningar, ändra layout och ändra visualiseringar.
+Med hjälp av dataartiklar kan du anpassa allt så att du kan dela information som du vill dela och utesluta allt som du inte behöver. Du kan anpassa plattor och enskilda bildrutor för att lägga till segment, visa uppdelningar, ändra layout och ändra visualiseringar.
 
 **Anpassa rutor**
 

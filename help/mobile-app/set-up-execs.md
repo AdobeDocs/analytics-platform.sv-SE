@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt oc
 
 1. Konfigurera nya användare i [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html).
 
-1. För att kunna dela styrkort måste du ge programanvändare behörighet att komma åt styrkortskomponenter som Analysis Workspace, de datavyer som styrkort baseras på samt filter, mått och mått.
+1. Om du vill kunna dela styrkort måste du ge programanvändare behörighet att komma åt styrkortskomponenter som Analysis Workspace, de datavyer som styrkort baseras på samt segment, mått och mått.
 
 ## Systemkrav för appanvändare
 
 För att se till att företagsinterna användare har tillgång till dina styrkort i appen ska du se till att:
 
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
-* De har en giltig inloggning i Customer Journey Analytics.
+* De har en giltig inloggning på Customer Journey Analytics.
 * Du har skapat mobila styrkort för dem och delat dem med dem.
 * De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar dina styrkort till **[!UICONTROL Share embedded components]**.
 
@@ -35,7 +35,7 @@ För att se till att företagsinterna användare har tillgång till dina styrkor
 
 >[!NOTE]
 >
->Även om mobilappen heter Adobe Analytics dashboard i appbutiken kan appen användas på samma sätt med Customer Journey Analytics mobilstyrkort.
+>Även om mobilappen heter Adobe Analytics Dashboard i appbutiken kan appen användas på samma sätt med Customer Journey Analytics mobilstyrkort.
 
 **För företagsledare på iOS:**
 
@@ -49,7 +49,7 @@ Klicka på följande länk (den är också tillgänglig i Customer Journey Analy
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-När de har hämtats och installerats kan företagsanvändare logga in i programmet med sina befintliga inloggningsuppgifter för Customer Journey Analytics. Vi stöder både Adobe och Enterprise/Federated ID.
+När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Customer Journey Analytics-autentiseringsuppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
 
 ![Adobe Analytics-instrumentpaneler - välkomstskärm](assets/welcome.png)
 
@@ -59,7 +59,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i program
 
    Skärmen **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör.
 
-1. Låt dem trycka på namnet på inloggningsföretaget eller Experience Cloud-organisationen som gäller för styrkortet som du delade.
+1. Låt dem trycka på namnet på inloggningsföretaget eller Experience Cloud Org som gäller för styrkortet som du delade.
 
    Styrkortslistan visar sedan alla styrkort som har delats med den verkställande direktören under det inloggningsföretaget.
 
@@ -74,7 +74,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i program
 
 Förklara för den verkställande användaren hur rutor visas i de styrkort som du delar.
 
-![Förklara rutor inklusive datumintervall, segmentfilter, mått och valda dimensioner](assets/newexplain.png)
+![Förklara rutor inklusive datumintervall, segment, mått och mått som valts](assets/newexplain.png)
 
 ![Exempelstyrkort](assets/intro_scorecard.png)
 
@@ -115,4 +115,4 @@ Om den verkställande användaren loggar in och ser ett meddelande om att inget 
 * Den verkställande användaren kan ha valt fel Customer Journey Analytics-sandlåda, eller
 * Styrkortet kanske inte har delats med den verkställande användaren.
 
-Kontrollera att chefsanvändaren kan logga in på rätt Customer Journey Analytics-sandlåda och att styrkortet har delats.
+Kontrollera att chefsanvändaren kan logga in i rätt Customer Journey Analytics-sandlåda och att styrkortet har delats.
