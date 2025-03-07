@@ -5,26 +5,30 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
 
 # Steg 1: Kom igång med uppgraderingen till Customer Journey Analytics
 
+>[!AVAILABILITY]
+>
+>Informationen på den här sidan ersätts med följande mer omfattande uppgraderingsinformation: <ul><li>**Rekommenderade uppgraderingssteg**<p>Mer information finns i [Rekommenderad sökväg vid uppgradering från Adobe Analytics till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide**<p>Det finns en ny uppgraderingsguide som dynamiskt genererar uppgraderingssteg som är skräddarsydda för just er organisation och era unika omständigheter.</p><p>Om du vill få åtkomst till guiden från Customer Journey Analytics väljer du fliken **[!UICONTROL Workspace]** och sedan **[!UICONTROL Upgrade to Customer Journey Analytics]** i den vänstra panelen. Följ instruktionerna på skärmen.</p></li></ul>
+
 Customer Journey Analytics är nästa generation av analyser. Den möjliggör datainsamling i flera kanaler (både online- och offlinedata), kombinerat med kraftfull rapporttidsbearbetning (genom definition av komponenter och härledda fält i datavyer).
 
-Innan du börjar uppgradera från Adobe Analytics till Customer Journey Analytics bör du känna till fördelarna med Customer Journey Analytics samt vilka steg som krävs för att uppgradera.
+Innan du börjar uppgradera från Adobe Analytics till Customer Journey Analytics bör du känna till fördelarna med Customer Journey Analytics och vilka steg som krävs för att uppgradera.
 
 ## Förstå fördelarna med Customer Journey Analytics
 
-Nedan följer några av de viktigaste fördelarna: (En utförlig lista samt mer information om alla dessa nyckelfunktioner finns i [Funktioner som bara är tillgängliga i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md#adobe-customer-journey-analytics-features-not-available-in-adobe-analytics).)
+Nedan följer några av de viktigaste fördelarna: (En utförlig lista samt mer information om alla dessa funktioner finns i [Funktioner som bara är tillgängliga i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md#adobe-customer-journey-analytics-features-not-available-in-adobe-analytics).)
 
 * [Flerkanalsrapportering](/help/getting-started/aa-to-cja-user.md#changes-to-data-architecture)
 
-  Customer Journey Analytics kombineras med Experience Platform för att kunna lagra alla typer av datarotor och datatyper. Samla in och rapportera data från olika kanaler, t.ex. digitala (webb), butikssystem, mobiler, CRM-system med mera.
+  Customer Journey Analytics kombineras med Experience Platform förmåga att lagra alla typer av datarotor och datatyper. Samla in och rapportera data från olika kanaler, t.ex. digitala (webb), butikssystem, mobiler, CRM-system med mera.
 
 * [Omformningar i rapporttid i datavyer](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
@@ -49,7 +53,7 @@ Nedan följer några av de viktigaste fördelarna: (En utförlig lista samt mer 
 ## Förstå uppgraderingsprocessen
 
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
-Informationen på den här sidan omfattar steg 1 i uppgraderingsprocessen, vilket framgår av tabellen nedan. Slutför alla steg i den här tabellen för att uppgradera från Adobe Analytics till Customer Journey Analytics.
+Informationen på den här sidan omfattar steg 1 i uppgraderingsprocessen, vilket framgår av tabellen nedan. Slutför alla steg i tabellen för att uppgradera från Adobe Analytics till Customer Journey Analytics.
 
 | Uppgradering | Information |
 |---------|----------|
@@ -57,7 +61,7 @@ Informationen på den här sidan omfattar steg 1 i uppgraderingsprocessen, vilke
 | **Steg 2: [Välj uppgraderingssökväg](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Det finns olika metoder för uppgradering till Customer Journey Analytics. Välj den metod som är bäst för er organisation, beroende på er nuvarande Adobe Analytics-miljö och era långsiktiga mål. |
 | **Steg 3: [Skicka data till Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | Processen för att skicka data till Adobe Experience Platform skiljer sig åt beroende på vilken uppgraderingsväg du väljer i steg 2. |
 | **Steg 4: [Behåll historiska data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | De flesta organisationer måste bevara sina historiska Adobe Analytics-data under en viss tid. Det finns olika alternativ för att uppnå detta. |
-| **Steg 5: [Utför ytterligare implementeringsuppgifter](/help/getting-started/cja-getting-started.md)** | I uppgraderingsprocessen måste du utföra olika uppgifter innan du kan börja använda Customer Journey Analytics-miljön.<p>Dessa ytterligare uppgifter gäller uppgraderingar från Adobe Analytics och nya implementeringar i Customer Journey Analytics.</p><p>Bland dessa uppgifter finns:</p><ul><li>Placera andra data i Experience Platform</li><li>Skapa anslutningar mellan plattformsdatauppsättningar och Customer Journey Analytics</li><li>Skapa datavyer</li><li>Portar för API-användning för rapportering</li><li>Redovisning av datafeeds och Data Warehouse</li><li>Migrera projekt och komponenter</li><li>Planera användarintroduktion</li></ul> <p>Mer information finns i [Komma igång för Customer Journey Analytics](/help/getting-started/cja-getting-started.md). |
+| **Steg 5: [Utför ytterligare implementeringsuppgifter](/help/getting-started/cja-getting-started.md)** | I uppgraderingsprocessen måste du utföra olika uppgifter innan Customer Journey Analytics-miljön kan användas.<p>Dessa ytterligare uppgifter gäller uppgraderingar från Adobe Analytics och nya Customer Journey Analytics-implementeringar.</p><p>Bland dessa uppgifter finns:</p><ul><li>Lägg in andra data i Experience Platform</li><li>Skapa anslutningar mellan plattformsdatauppsättningar och Customer Journey Analytics</li><li>Skapa datavyer</li><li>Portar för API-användning för rapportering</li><li>Redovisning av datafeeds och Data Warehouse</li><li>Migrera projekt och komponenter</li><li>Planera användarintroduktion</li></ul> <p>Mer information finns i [Customer Journey Analytics Getting Started](/help/getting-started/cja-getting-started.md). |
 
 {style="table-layout:auto"}
 

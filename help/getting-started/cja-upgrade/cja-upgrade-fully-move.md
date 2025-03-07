@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -135,3 +135,6 @@ När du inte längre behöver Adobe Analytics för de syften som beskrivs i avsn
    När du har samlat in tillräckligt med historiska data i Customer Journey Analytics med den nya Web SDK-implementeringen kan du ta bort källkopplingen för Analytics helt och hållet.
 
    Gör detta när du inte längre behöver historiska data från din Adobe Analytics-miljö via källkopplingen i Analytics, och du kan bara förlita dig på historiska data som du har samlat in med den nya Web SDK-implementeringen.
+
+{{upgrade-final-step}}
+

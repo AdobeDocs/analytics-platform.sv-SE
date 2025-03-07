@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ Så här skapar du en tagg för din egenskap:
 
    ![Skapa en egenskap](assets/create-property.png)
 
-1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

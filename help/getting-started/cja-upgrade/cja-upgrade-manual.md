@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,7 @@ ht-degree: 0%
 
 Du kan installera Platform Web SDK manuellt genom att lägga till baskoden direkt på varje sida i implementeringen.
 
-Mer information finns i [Alternativ 2: Installera den fördefinierade fristående versionen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) i [Installera Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) i Web SDK Guide.
+1. Följ stegen i avsnittet [Alternativ 2: Installera den fördefinierade fristående versionen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) i [Installera Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) i Web SDK Guide.
+
+{{upgrade-final-step}}
+

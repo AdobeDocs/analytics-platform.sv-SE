@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -49,5 +49,5 @@ När du har konfigurerat implementeringen av Web SDK måste du kontrollera statu
 
    Upprepa det här steget för att verifiera status för varje batch.
 
-1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}
 

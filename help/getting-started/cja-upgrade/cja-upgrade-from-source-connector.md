@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -78,3 +78,5 @@ Här följer en högnivåprocess för övergång från exklusiv användning av A
 1. Ta bort den ursprungliga Analytics-källkopplingen. <!-- need to add steps somewhere about how to do this -->
 
 1. [Skapa en ny Analytics-källkoppling och mappningsfält](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+{{upgrade-final-step}}

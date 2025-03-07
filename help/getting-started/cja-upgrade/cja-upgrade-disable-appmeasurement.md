@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,8 @@ Innan du inaktiverar Adobe Analytics bör du granska informationen i [Utvärdera
 * **Taggar:** Inaktivera Adobe Analytics-tillägget
 
 * **AppMeasurment:** Ersätt AppMeasurement.js-biblioteket s=newobject
+
+>[!NOTE]
+>
+>Den här informationen är inte tillgänglig än. Den kommer att finnas tillgänglig inom den närmaste framtiden.
+

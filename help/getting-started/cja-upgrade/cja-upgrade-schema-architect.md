@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -39,17 +39,23 @@ Granska följande avsnitt när du börjar skapa XDM-schemat.
 
 Customer Journey Analytics underliggande arkitektur ger mycket större flexibilitet än Adobe Analytics. Att skapa ett nytt XDM-schema är ett viktigt sätt att låsa upp den flexibiliteten. När du uppgraderar till Customer Journey Analytics bör du se till att du inte överför onödiga Adobe Analytics-begränsningar till ditt schema.
 
+>[!NOTE]
+>
+>Följande information är inte fullständig ännu. Den kommer att vara fullständig inom den närmaste framtiden.
+
 | Adobe Analytics dataarkitektur | XDM-schemaarkitektur |
 |---------|----------|
 | Enskilda mätvärden läggs till i Analytics-dataarkitekturen.<br/>I Adobe Analytics har du till exempel olika eVar för varje händelse. | Skapa enskilda mått i datavyn i stället för i XDM-schemat. Det ger större flexibilitet om du behöver göra ändringar vid ett senare tillfälle.<br/>I Customer Journey Analytics har du till exempel en enda händelse i schemat och använder create-händelser i datavyn. |
-| Props och eVars krävs för att skapa anpassade variabler. | B2 |
-| A3 | B3 |
+| Props och eVars krävs för att skapa anpassade variabler. |  |
 
 ## Identifiera ert datateam och andra intressenter i hela organisationen
 
+>[!NOTE]
+>
+>Den här informationen är inte tillgänglig än. Den kommer att finnas tillgänglig inom den närmaste framtiden.
 
 ## Överväg andra Adobe Experience Platform-program som används i er organisation
 
-
-
-1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
+>[!NOTE]
+>
+>Den här informationen är inte tillgänglig än. Den kommer att finnas tillgänglig inom den närmaste framtiden.

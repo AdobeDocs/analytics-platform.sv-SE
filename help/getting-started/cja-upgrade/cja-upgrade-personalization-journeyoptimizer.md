@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -28,7 +28,9 @@ ht-degree: 0%
 
 Genom att utnyttja den senaste tekniken inom maskininlärning och djupinlärning under övervakning kan en företagsanvändare (marknadsförare) med personaliserad optimering definiera affärsmål och använda sina kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal.
 
-Mer information finns i [Personlig optimeringsmodell](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) i Journey Optimizer Guide.
+1. Följ informationen i [Personlig optimeringsmodell](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) i Journey Optimizer Guide.
+
+{{upgrade-final-step}}
 
 <!--
 

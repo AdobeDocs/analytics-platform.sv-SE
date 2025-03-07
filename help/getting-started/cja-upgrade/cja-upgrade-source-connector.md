@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -108,4 +108,4 @@ Så här skapar du en Adobe Analytics-källanslutning som ska användas för his
 
    Om du använder Analytics-källkopplingen för att hämta historiska data till din Customer Journey Analytics Web SDK-implementering måste du lägga till den automatiskt skapade datauppsättningen i anslutningen som du skapade för din Web SDK-implementering.
 
-1. Följ de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller de [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

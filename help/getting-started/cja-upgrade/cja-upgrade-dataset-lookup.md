@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -129,5 +129,7 @@ Så här lägger du till uppslagsdatauppsättningen i anslutningen i Customer Jo
 
 1. Använd fältet **[!UICONTROL Key]** och fältet **[!UICONTROL Matching key]** för att skapa en korrelation mellan fältet i din uppslagsdatauppsättning och det i din händelse- eller sammanfattningsdatauppsättning.
 
-1. När alla uppslagsdatauppsättningar har lagts till i anslutningen i Customer Journey Analytics fortsätter du enligt de [rekommenderade uppgraderingsstegen](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) eller [dynamiskt genererade uppgraderingsstegen](https://gigazelle.github.io/cja-ttv/).
+1. Upprepa den här processen tills alla uppslagsdatauppsättningar har lagts till i anslutningen i Customer Journey Analytics.
+
+{{upgrade-final-step}}
 

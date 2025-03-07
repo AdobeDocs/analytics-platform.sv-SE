@@ -4,9 +4,9 @@ description: Skicka data till Adobe Experience Platform vid migrering till Custo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,9 @@ Informationen på den här sidan omfattar steg 3 i uppgraderingsprocessen, vilke
 
 +++
 
+>[!AVAILABILITY]
+>
+>Informationen på den här sidan ersätts med följande mer omfattande uppgraderingsinformation: <ul><li>**Rekommenderade uppgraderingssteg**<p>Mer information finns i [Rekommenderad sökväg vid uppgradering från Adobe Analytics till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide**<p>Det finns en ny uppgraderingsguide som dynamiskt genererar uppgraderingssteg som är skräddarsydda för just er organisation och era unika omständigheter.</p><p>Om du vill få åtkomst till guiden från Customer Journey Analytics väljer du fliken **[!UICONTROL Workspace]** och sedan **[!UICONTROL Upgrade to Customer Journey Analytics]** i den vänstra panelen. Följ instruktionerna på skärmen.</p></li></ul>
 
 När du har [valt den uppgraderingssökväg](/help/getting-started/cja-upgrade/cja-upgrade-path.md) som passar din organisation kan du börja skicka data till Adobe Experience Platform för att göra den tillgänglig i Customer Journey Analytics.
 
