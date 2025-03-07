@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---
 
-# Filtrera Dimensioner
+# Filterdimensioner
 
 Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artiklarna för den dimensionen.
 
@@ -21,7 +21,7 @@ Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artikl
 
 1. Markera ett datablock och klicka på Redigera datablock på kommandopanelen.
 
-1. Klicka på Nästa för att visa fliken Dimensioner.
+1. Klicka på **[!UICONTROL Next]** för att visa fliken Dimensioner.
 
 1. Klicka på ikonen **..** bredvid ett komponentnamn i tabellen.
 
@@ -39,7 +39,7 @@ Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artikl
 
    Report Builder visar ett meddelande som bekräftar det tillagda filtret.
 
-Håll pekaren över en dimension om du vill visa använda filter. För Dimensioner med använda filter visas en filterikon till höger om Dimensionens namn.
+Håll pekaren över en dimension om du vill visa använda filter. Dimensioner med tillämpade filter visas med en filterikon till höger om Dimension-namnet.
 
 ## Filtertyp
 
@@ -139,7 +139,7 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
    ![Visa objekt från listan med de senaste sex månaderna.](./assets/image34.png)
 
-   När data från de senaste sex månaderna har lästs in uppdaterar Report Builder länken till **Visa objekt för de senaste 18 månaderna**.
+   När data från de senaste 6 månaderna har lästs in uppdaterar Report Builder länken till **Visa objekt de senaste 18 månaderna**.
 
 1. Välj en dimensionsartikel.
 
@@ -171,9 +171,9 @@ När du markerar ett cellintervall bör du tänka på följande begränsningar:
 
 Markeringen kan innehålla tomma celler eller celler med värden som inte matchar ett visst dimensionsobjekt.
 
-### På fliken Dimensioner i tabellverktyget
+### Från fliken Dimensioner i tabellverktyget
 
-På fliken **Dimensioner** klickar du på ikonen för avfasning bredvid ett dimensionsnamn för att visa listan med dimensionsobjekt.
+På fliken **Dimensioner** klickar du på ikonen för att visa en lista med dimensionsobjekt bredvid ett dimensionsnamn.
 
 ![Fliken Dimensioner och listan över dimensioner.](./assets/dimensions_chevron.png)
 

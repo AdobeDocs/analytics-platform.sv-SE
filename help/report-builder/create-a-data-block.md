@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -43,13 +43,13 @@ Konfigurera de inledande datablocksparametrarna för datablockets plats, datavye
 
    ![Skärmbild som visar datumintervallalternativet och den aktiva knappen Nästa.](./assets/choose_date_data_view3.png)
 
-   När du har konfigurerat datablocket kan du välja mått, mätvärden och filter för att skapa datablocket. Flikarna Dimensioner, Metrisk och Filter visas ovanför rutan Tabellverktyg.
+   När du har konfigurerat datablocket kan du välja mått, mätvärden och segment för att skapa datablocket. Flikarna Dimensioner, Metrisk och Segment visas ovanför rutan Tabellverktyg.
 
 ## Bygg datablocket
 
 Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan layouten.
 
-1. Lägg till Dimensioner, mätvärden och filter.
+1. Lägg till dimensioner, mått och segment.
 
    Bläddra i komponentlistorna eller använd fältet **sök** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
 
@@ -57,7 +57,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    - Dimension-komponenter läggs till i avsnittet Rad eller i kolumnavsnittet om du redan har en dimension i kolumnerna.
    - Datumkomponenter läggs till i avsnittet Kolumn.
-   - Filterkomponenter läggs till i avsnittet Filter.
+   - Segmentkomponenter läggs till i segmentavsnittet.
 
    **Startdatum som Dimension**
 
