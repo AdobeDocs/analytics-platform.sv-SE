@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 0%
 >id="cja-upgrade-source-connector-create-schema"
 >title="Skapa ett schema för Analytics-källkopplingen"
 >abstract="Det här schemat är en kombination av fältgruppen Adobe Analytics ExperienceEvent med alla fältgrupper som utgör organisationens anpassade schema. Det gör att du kan mappa de fält som används av Analytics-källkopplingen till organisationens schema, och det används bara för historiska data.<br><br>Under tiden som det är tekniskt tekniskt nyttigt kan schemat skapas på några timmar, kanske snabbare om du vet exakt vilka fältgrupper som utgör organisationens anpassade schema."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-historical"
+>title="Skapa Analytics-källkopplingen för historiska data"
+>abstract="Du kan använda Analytics-källkopplingen för att hämta data från Adobe Analytics rapportsvit till Adobe Experience Platform. Dessa data kan sedan användas som historiska data i Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

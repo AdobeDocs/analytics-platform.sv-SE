@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 99f82353e41180a0090e84e58593d63fc5cbe803
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Med hjälp av AI Assistant kan du besvara datacentrerade frågor i Analysis Work
 | **Verifierbarhet** | Data kan verifieras och korrigeras med hjälp av den genererade frihandstabellen och datavisualisering. Om en användare till exempel frågar *Trendbeställningar förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts på den nyligen genererade panelen, datavisualisering och frihandstabellen. |
 | **Feedback** | <ul><li>Tummen upp</li><li>Tummen ned</li><li>Flagga</li></ul> |
 
-### OMFATTANDE Alpha-funktioner
+### OMFATTANDE Beta-funktioner
 
 | Funktionen stöds inte | Beskrivning |
 | --- | --- |
@@ -78,9 +78,9 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Välj **[!UICONTROL Blank project]** i banderollen högst upp på projektsidan om du vill öppna ett nytt tomt projekt.
 
-4. Se till att den valda datavyn för panelen är samma datavy som aktiverades för AI Assistant för Alpha-testning.
+4. Se till att den valda datavyn för panelen är samma datavy som aktiverades för AI Assistant för Beta-testning.
 
-   Om du är osäker kontaktar du Alpha Slack-kanal.
+   Om du är osäker kontaktar du Beta Slack-kanal.
 
 5. Välj ikonen för AI Assistant-chatt längst upp till höger på sidan.
 
@@ -187,7 +187,7 @@ De här exemplen är utformade för att hjälpa dig att lära dig hur specifika 
 | Radvisualisering | <ul><li>Trend</li><li>[Mått] i [Tidsintervall]</li></ul> |
 | Streckvisualisering | <ul><li>[Mått] av [Dimension]</li></ul> |
 
-## Alpha testar förväntningar och begär feedback
+## Beta testar förväntningar och begär feedback
 
 När du har ställt varje fråga ska du noggrant granska assistentens svar. Det är viktigt att noggrant utvärdera de genererade visualiseringarna innan man ger feedback.
 
