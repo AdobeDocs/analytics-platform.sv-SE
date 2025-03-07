@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Dataslockhanteraren visar alla datablock som finns i en arbetsbok. 
 
 ## Sortera listan över datablock
 
-Du kan sortera data blockeringslista efter en kolumn som visas. Du kan till exempel sortera data blockeringslista efter datavyer, filter, datumintervall och andra variabler.
+Du kan sortera data blockeringslista efter en kolumn som visas. Du kan till exempel sortera data blockeringslista efter datavyer, segment, datumintervall och andra variabler.
 
 Om du vill sortera data blockeringslista klickar du på en kolumnrubrik.
 
@@ -46,9 +46,9 @@ Använd sökfältet för att hitta något i datablockstabellen. Du kan till exem
 
 ## Redigera datablock
 
-Du kan redigera datavyn, datumintervallet eller de filter som används i ett eller flera datablock.
+Du kan redigera datavyn, datumintervallet eller de segment som används i ett eller flera datablock.
 
-Du kan till exempel ersätta ett befintligt filter med ett nytt filter i ett eller flera datablock.
+Du kan till exempel ersätta ett befintligt segment med ett nytt segment i ett eller flera datablock.
 
 1. Markera de datablock som du vill uppdatera. Du kan markera kryssrutan på den översta nivån om du vill markera alla datablock, eller markera enskilda datablock.
 
@@ -58,7 +58,7 @@ Du kan till exempel ersätta ett befintligt filter med ett nytt filter i ett ell
 
    ![Snabbredigeringsfönstret](./assets/image58.png)
 
-1. Välj en filterlänk för att uppdatera datavyer, datumintervall eller filter.
+1. Markera en segmentlänk om du vill uppdatera datavyer, datumintervall eller segment.
 
    ![Fältet Lägg till segment i snabbredigeringsfönstret](./assets/image59.png)
 
@@ -83,7 +83,7 @@ Klicka på papperskorgsikonen om du vill ta bort ett markerat datablock.
 
 ## Gruppera datablock
 
-Du kan gruppera datablocken med listrutan **Gruppera efter** eller klicka på en kolumnrubrik. Om du vill sortera datablock efter kolumn klickar du på kolumnrubriken. Om du vill gruppera datablock efter grupper väljer du ett gruppnamn i listrutan **Gruppera efter**. På skärmbilden nedan visas datablock grupperade efter ark. Här visas datablock grupperade efter Sheet1 och Sheet2.  Det här är användbart i till exempel om du vill ersätta filter. Om du har flera filter tillämpade på varje datablock är det bra att skapa en grupp som innehåller alla datablock som du vill ersätta. Sedan kan du enkelt markera och redigera alla samtidigt.
+Du kan gruppera datablocken med listrutan **Gruppera efter** eller klicka på en kolumnrubrik. Om du vill sortera datablock efter kolumn klickar du på kolumnrubriken. Om du vill gruppera datablock efter grupper väljer du ett gruppnamn i listrutan **Gruppera efter**. På skärmbilden nedan visas datablock grupperade efter ark. Här visas datablock grupperade efter Sheet1 och Sheet2.  Detta är till exempel användbart i segmentbytet. Om du har flera segment tillämpade på varje datablock är det bra att skapa en grupp som innehåller alla datablock som du vill ersätta. Sedan kan du enkelt markera och redigera alla samtidigt.
 
 ![Datablockhanteraren visar listan Gruppera efter ark.](./assets/group-data-blocks.png)
 

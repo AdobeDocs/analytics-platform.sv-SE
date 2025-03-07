@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 19771d5cd2d2a38919c42e7f76bd700016020912
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Med Report Builder för Customer Journey Analytics kan du enkelt skapa, redigera
 
 Med Report Builder för Customer Journey Analytics kan man
 
-- Referera befintliga kalkylbladsceller för att få perfekt radordning, datumintervall eller filter
+- Referera befintliga kalkylbladsceller för att få perfekt radordning, datumintervall eller segment
 - Skapa anpassade datum med kalender, cellreferenser eller matematik för datum
 - Designa tabeller och visualiseringar med välbekanta formateringsverktyg från Excel
 
