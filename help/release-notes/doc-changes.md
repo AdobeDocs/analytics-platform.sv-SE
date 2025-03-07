@@ -4,9 +4,9 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
+source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
 workflow-type: tm+mt
-source-wordcount: '4629'
+source-wordcount: '4644'
 ht-degree: 5%
 
 ---
@@ -19,6 +19,8 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Mars 2025** | |
+| Användningsexempel för Quantum Metric | Användningsexempel har lagts till för att samla in data från [kvantmätare](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
 | **Februari 2025** |  |
 | Media Collection: Adobe Source Connector-uppdateringar för nya Media Reporting XDM | Analytics: Source Connector [mappar automatiskt strömmande mediedata i Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. |
 | BI-tillägg - utökat stöd | Tillägget Customer Journey Analytics BI har nu stöd för [Looker, Jupyter Notebook och R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
@@ -199,7 +201,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Oktober 2022 | Mobilapp: Nytt avsnitt om [anpassade detaljvyer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides). |
 | Oktober 2022 | Uppdateringar av [Customer Journey Analytics-funktionssupport](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | **September 2022** | |
-| September 2022 | Nytt användningsexempel om [Migrerar Google Analytics-data till Customer Journey Analytics](/help/use-cases/ga/overview.md). |
+| September 2022 | Nytt användningsexempel om [Migrerar Google Analytics-data till Customer Journey Analytics](/help/use-cases/third-party/ga/overview.md). |
 | September 2022 | Nytt avsnitt om [Kombinationsdiagram](/help/analysis-workspace/visualizations/combo-charts.md) i Workspace. |
 | September 2022 | Nytt avsnitt om [Experimentationspanelen](/help/analysis-workspace/c-panels/experimentation.md) i Workspace. |
 | **Augusti 2022** | |
@@ -269,7 +271,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | April 2021 | Nytt ämne om [persistence](/help/data-views/component-settings/persistence.md). |
 | April 2021 | Ny dokumentation om stöd för schemalagda projekt i Workspace |
 | April 2021 | Nya ämnen om [förbättrad datavyer](/help/data-views/data-views.md). |
-| April 2021 | Nya ämnen om [inhämtning av Google Analytics-data](/help/use-cases/ga/overview.md) och [analys av dessa data](/help/use-cases/ga/report.md). |
+| April 2021 | Nya ämnen om [inhämtning av Google Analytics-data](/help/use-cases/third-party/ga/overview.md) och [analys av dessa data](/help/use-cases/third-party/ga/report.md). |
 | April 2021 | Avsnittet [Schemalagda rapporter](/help/analysis-workspace/export/t-schedule-report.md) har lagts till i Workspace. |
 | April 2021 | Nytt avsnitt om [högkardinalitetsdimensioner i Customer Journey Analytics](/help/components/dimensions/high-cardinality.md). |
 | **Mars 2021** | |
