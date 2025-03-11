@@ -4,10 +4,8 @@ description: Läs mer om rekommenderad sökväg när du uppgraderar från Adobe 
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: ff951b6ca03fc5be4d24651b8b8e4bdd06216274
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -93,7 +91,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="Bestäm din befintliga implementeringstyp"
->abstract="Arbeta internt i organisationen för att avgöra vilken typ av implementering du använder för att skicka data till Adobe Analytics. Om du är redo att migrera till Customer Journey Analytics är det sannolikt att du samarbetar med den individ eller det team som känner till den här informationen.<br><br>När du har fastställt vilken typ av implementering din organisation använder ändrar du svaret i enkäten."
+>abstract="Arbeta internt i organisationen för att avgöra vilken typ av implementering du använder för att skicka data till Adobe Analytics. När du uppgraderar till Customer Journey Analytics kan du samarbeta med den person eller det team som känner till informationen.<br><br>När du har fastställt vilken typ av implementering din organisation använder ändrar du svaret i Customer Journey Analytics Upgrade Guide."
 
 <!-- markdownlint-enable MD034 -->
 

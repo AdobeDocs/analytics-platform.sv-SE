@@ -4,11 +4,10 @@ description: Läs om implementeringsalternativen för SDK på webben när du upp
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
+exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -47,7 +46,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="Implementera Web SDK för den angivna egendomen"
->abstract="Välj önskad implementeringstyp i enkäten för mer detaljerade instruktioner."
+>abstract="Välj önskad implementeringstyp i uppgraderingsguiden för mer detaljerade anvisningar."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,6 +72,3 @@ Det finns tre sätt att använda Adobe Experience Platform Web SDK:
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm): Installera Web SDK på din webbplats med NPM-pakethanteraren.
 
 Mer information finns i [Översikt över Web SDK-installationen](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) i Experience Platform Web SDK Guide.
-
-
-

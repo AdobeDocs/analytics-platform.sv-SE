@@ -4,10 +4,8 @@ description: Lär dig skapa ett anpassat schema för Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 0%

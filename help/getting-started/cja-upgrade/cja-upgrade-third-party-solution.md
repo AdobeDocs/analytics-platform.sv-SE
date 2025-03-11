@@ -4,12 +4,10 @@ description: Lär dig hur du uppgraderar från en analyslösning från tredje pa
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="En produkt som inte är från Adobe Analytics"
->abstract="En implementering som samlar in data för en annan produkt än Adobe Analytics, till exempel Google Analytics. Om du väljer det här alternativet inaktiveras flera alternativ i enkäten som inte gäller när du uppgraderar till Customer Journey Analytics från en produkt som inte är från Adobe Analytics."
+>abstract="En implementering som samlar in data för en annan produkt än Adobe Analytics, till exempel Google Analytics. Om du väljer det här alternativet inaktiveras flera alternativ i uppgraderingsguiden som inte gäller när du uppgraderar till Customer Journey Analytics från en produkt som inte är från Adobe Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
