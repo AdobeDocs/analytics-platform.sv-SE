@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2624'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Som kurator för det här styrkortet kan du använda styrkortsverktyget för att
 
 Om du vill skapa styrkortet måste du göra följande:
 
-1. Öppna mallen [!UICONTROL Blank Mobile Scorecard].
+1. Öppna mallen [!UICONTROL Blank mobile scorecard] i Workspace.
 2. Konfigurera styrkortet med data och spara det.
 
 ## Åtkomst till mallen [!UICONTROL Blank Mobile Scorecard] {#template}
@@ -58,6 +58,7 @@ Du kan komma åt mallen [!UICONTROL Blank Mobile Scorecard] antingen genom att s
 ### Skapa ett nytt projekt {#create}
 
 1. Öppna Customer Journey Analytics och klicka på fliken **[!UICONTROL Workspace]**.
+1. Klicka på **[!UICONTROL Projects]** i den vänstra listen.
 1. Klicka på **[!UICONTROL Create project]** och välj projektmallen **[!UICONTROL Blank mobile scorecard]**.
 1. Klicka på **[!UICONTROL Create]**.
 
@@ -72,7 +73,7 @@ Du kan komma åt mallen [!UICONTROL Blank Mobile Scorecard] antingen genom att s
 
 Så här implementerar du styrkortsmallen:
 
-1. Under **[!UICONTROL Properties]** (i den högra listen) anger du **[!UICONTROL Project data view]** som du vill använda data från.
+1. Under **[!UICONTROL Scorecard properties]** (i den högra listen) anger du **[!UICONTROL Project data view]** som du vill använda data från.
 
    ![Nytt mobilstyrkortsfönster som markerar datavyn](assets/properties_save.png)
 
