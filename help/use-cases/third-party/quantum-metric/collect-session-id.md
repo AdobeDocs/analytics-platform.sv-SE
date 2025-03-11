@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
+source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -51,23 +52,4 @@ Redigera den befintliga datavyn för att lägga till sessions-ID som en tillgän
 1. I den högra rutan anger du inställningen [persistence](/help/data-views/component-settings/persistence.md) till Session.
 1. Klicka på **[!UICONTROL Save]**.
 
-## Steg 4: Konfigurera Workspace för att anpassa dimensionen för sessions-ID
 
-Skapa en friformstabell i Workspace och konfigurera den så att sessions-ID-värden är länkar direkt till kvantmätvärden.
-
-1. Logga in på [experience.adobe.com](https://experience.adobe.com).
-1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Workspace]** på den översta menyn.
-1. Välj ett befintligt projekt eller skapa ett projekt.
-1. Skapa en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
-1. Dra sessions-ID-dimensionen till Workspace Canvas.
-1. Högerklicka på dimensionskolumnens rubrik och välj sedan **[!UICONTROL Create hyperlinks for all dimension items]**.
-1. Välj **[!UICONTROL Create a custom URL]**.
-1. Klistra in följande URL-struktur:
-
-   ```
-   https://adobe.quantummetric.com/#/replay/cookie:$value
-   ```
-
-1. Klicka på **[!UICONTROL Create]**.
-
-Varje sessions-ID är nu en klickbar länk. Länkarna tar dig till Quantum Metric på en ny flik så att du kan analysera den sessionen mer i detalj. Mer information om hur du lägger till hyperlänkar i Analysis Workspace-dimensionsobjekt finns i [Skapa hyperlänkar i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md).
