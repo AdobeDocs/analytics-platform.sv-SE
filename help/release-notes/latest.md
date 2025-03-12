@@ -3,39 +3,40 @@ title: Aktuella versionsinformation för Customer Journey Analytics
 description: Visa den senaste versionsinformationen om Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 816208ae82ac8cc0b79ba2621aa4174306cf7397
+source-git-commit: 2b92f98a6eeeaee65e0a307186db69878d70aceb
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 5%
+source-wordcount: '490'
+ht-degree: 3%
 
 ---
 
-# Aktuell versionsinformation för Adobe Customer Journey Analytics (februari 2025)
+# Aktuell versionsinformation för Adobe Customer Journey Analytics (mars 2025)
 
-**Senast uppdaterad**: 11 mars 2025
 
-Versionsanteckningarna gäller frisläppningsperioden 24 januari 2025-12 mars 2025. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+**Senast uppdaterad**: 12 mars 2025
+
+Versionsanteckningarna gäller den 5 mars-14 april 2025. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya eller uppdaterade funktioner
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI-tillägg - utökad support** | Customer Journey Analytics BI-tillägget [har nu stöd för Looker, Jupyter Notebook och R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | 24 januari 2025 |
-| **Mediesamling: Adobe Source Connector-uppdateringar för nya Media Reporting XDM** | Analytics Source Connector mappar automatiskt strömmande mediedata i Adobe Analytics till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30 januari 2025 |
+| **Mall för produktanvändning** | Med en ny Workspace-mall kan du visa hur Customer Journey Analytics-produkten används i din organisation. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates). |  | 5 mars 2025 |
 | **Customer Journey Analytics - uppgraderingsguide** | Här kan du skapa en stegvis guide för uppgradering från Adobe Analytics till Customer Journey Analytics. Den här guiden är anpassad efter din organisation och tar hänsyn till din nuvarande Adobe Analytics-miljö, dina avsedda användningsområden för Customer Journey Analytics samt tidsbesparande transaktioner som din organisation vill göra.<p>Logga in på [!DNL Customer Journey Analytics] och välj sedan **[!UICONTROL Upgrade to Customer Journey Analytics]** på fliken **[!UICONTROL Workspace]** för att börja generera din anpassade guide.<p>[Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |  | 11 mars 2025 |
+| **Uppdaterar radobjektet Inget värde på numeriska dimensioner** | För numeriska mått kan du med den här uppdateringen<ul><li>Använd dimensionsobjektet Inget värde i ett filter.</li><li>Utför en uppdelning i en rapport för radobjektet Inget värde.</li></ul> (Dokumentationslänk följer) |  | 26 mars 2025 |
+| **Adobe Content Analytics** | Med Adobe Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering.<p>Med färdiga rapportmallar och nya funktioner som Asset Inspector kan du spara tid. Med den här funktionen kan du inte bara visualisera mediefilen i linje med dina data, utan även öppna varje mediefil för sammanfattad information, inklusive prestanda, placeringar, attribut med mera.<p>Ni kan undersöka den nya uppsättningen innehållsdata i samband med hela kundresan för att besvara viktiga affärsfrågor, bedöma innehållsprestanda, förbättra segmenteringen, identifiera optimeringsmöjligheter och definiera nya målgrupper för aktivering.<p>Content Analytics är ett tillägg till Customer Journey Analytics. (Dokumentationslänk följer) |  | 27 mars 2025 |
+| **Mediesamling: Adobe Source Connector-uppdateringar för nya Media Reporting XDM** | Analytics Source Connector mappar automatiskt strömmande mediedata i Adobe Analytics till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 31 mars 2025 |
 
 
 ## Korrigeringar i Customer Journey Analytics
 
-**Publiker**: AN-365687; AN-366674
-**Datainmatning**: AN-368376
-**Datavyer**: AN-368443
-**Härledda fält**: AN-368441
-**Guidad analys**: AN-367697
-**Researbetsyta**: AN-367890
-**Mobilapp**: AN-367137
-**Power BI-tillägg**: AN-367643
-**Workspace**: AN-352828; AN-359248; AN-368583
+**Varningar**: AN-368098
+**Analysis Workspace**: AN-33301; AN-365796; AN-368023
+**Granskningslogg**: AN-368100
+**Datavyer**: AN-369504
+**Filter**: AN-369037
+**Fullständig tabellexport**: AN-369330
+**Mobilapp**: AN-369365
 
 
 ## Viktiga meddelanden för Customer Journey Analytics-administratörer
