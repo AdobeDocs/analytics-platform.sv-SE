@@ -1,13 +1,13 @@
 ---
 title: IP-adresser som används av Customer Journey Analytics
-description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
+description: Om brandväggen blockerar IP-adresser som kommer från Adobe använder du den här listan för att uppdatera brandväggsinställningarna.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Den här sidan innehåller IP-adresser som du måste lägga till i tillåtelseli
 
 >[!IMPORTANT]
 >
->Även om Adobe gör sitt bästa för att hålla det här dokumentet aktuellt kan det inte garantera att listan med IP-intervall är densamma. Möjliga förändringar är tillväxt och expansion av verksamheten, ett Internetregister kräver ändringar av Adobe IP-adressutrymme eller att en Internetleverantör slutar fungera.
+>Även om Adobe gör sitt bästa för att hålla det här dokumentet aktuellt kan det inte garantera att listan med IP-intervall är densamma. Möjliga förändringar är bland annat tillväxt och expansion av verksamheten, ett Internetregister kräver ändringar av Adobe IP-adressutrymme eller att en Internetleverantör slutar fungera.
 
-## VA7: Kunder i USA och Amerika
+## Kunder i USA och Amerika
 
 | IP-block (CIDR-notation) |
 | --- |
@@ -47,8 +47,9 @@ Den här sidan innehåller IP-adresser som du måste lägga till i tillåtelseli
 | `52.254.106.208/28` |
 | `20.186.185.227` |
 | `52.254.107.0/28` |
+| `66.117.18.0/24` |
 
-## NLD2: Europa
+## Europa
 
 | IP-block (CIDR-notation) |
 | --- |
@@ -76,7 +77,7 @@ Den här sidan innehåller IP-adresser som du måste lägga till i tillåtelseli
 | `40.74.7.208/28` |
 | `40.74.6.112/28` |
 
-## AUS5: Australien
+## Australien
 
 | IP-block (CIDR-notation) |
 | --- |
@@ -108,7 +109,7 @@ Den här sidan innehåller IP-adresser som du måste lägga till i tillåtelseli
 | `20.193.56.128/28` |
 | `20.227.32.175` |
 
-## CAN2: Kanada
+## Kanada
 
 | IP-block (CIDR-notation) |
 | --- |
