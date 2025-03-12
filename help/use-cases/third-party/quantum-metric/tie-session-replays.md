@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
+source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -21,6 +22,29 @@ Genom att länka Quantum Metric-sessionsuppspelningar till CJA-data kan kunderna
 
 Det här användningsexemplet kräver att du samlar in Quantum Metrics sessions-ID tillsammans med resten av implementeringen. Mer information om hur du ändrar implementeringen finns i [Samla in sessions-ID:n för kvantmått i Customer Journey Analytics](collect-session-id.md).
 
-## Visa sessioner från Customer Journey Analytics
+## Steg 1: Konfigurera Workspace för att anpassa dimensionen för sessions-ID
+
+Skapa en friformstabell i Workspace och konfigurera den så att sessions-ID-värden är länkar direkt till kvantmätvärden.
+
+1. Logga in på [experience.adobe.com](https://experience.adobe.com).
+1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Workspace]** på den översta menyn.
+1. Välj ett befintligt projekt eller skapa ett projekt.
+1. Skapa en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
+1. Dra sessions-ID-dimensionen till Workspace Canvas.
+1. Högerklicka på dimensionskolumnens rubrik och välj sedan **[!UICONTROL Create hyperlinks for all dimension items]**.
+1. Välj **[!UICONTROL Create a custom URL]**.
+1. Klistra in följande URL-struktur:
+
+   ```
+   https://adobe.quantummetric.com/#/replay/cookie:$value
+   ```
+
+1. Klicka på **[!UICONTROL Create]**.
+
+Varje sessions-ID är nu en klickbar länk. Länkarna tar dig till Quantum Metric på en ny flik så att du kan analysera den sessionen mer i detalj. Mer information om hur du lägger till hyperlänkar i Analysis Workspace-dimensionsobjekt finns i [Skapa hyperlänkar i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md).
+
+## Steg 2 Visa sessioner från Customer Journey Analytics
 
 När du har skapat Workspace-rapporten med klickbara länkar kan du använda filter i Customer Journey Analytics för att identifiera intressanta sessioner som du kan analysera ytterligare i kvantmätaren.
+Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på https://www.quantummetric.com/platform/session-replay
+
