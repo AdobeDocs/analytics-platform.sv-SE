@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 5fa4d47bcd42e4e392a7075076895826cf7061b1
+source-git-commit: 2f9cfc3fc7edaa21175d44dfb3f9bface5cf0d81
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3188'
 ht-degree: 0%
 
 ---
@@ -322,20 +322,174 @@ Se tabellen nedan för exempel på den SQL du kan använda.
 
 +++ Exempel
 
-| Mönster | Exempel |
-|---|---|
-| Schemaidentifiering | <pre>VÄLJ * FRÅN DV1 DÄR 1=0</pre> |
-| Rankad eller uppdelad | <pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/> filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39; AND<br/> AND (dim2 = &#39;A&#39; ELLER dim3 IN (&#39;X&#39;, &#39;Y&#39;&#39;, &#39;Z&#39;)<br/>GRUPP BY dim1</pre> |
-| `HAVING`-sats | <pre>VÄLJ dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;202-01-02&#39;<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
-| Distinkta, övre <br/>dimensionsvärden | <pre>VÄLJ DISTINCT dim1 FROM dv1</pre><pre>VÄLJ dim1 SOM dv1<br/>FRÅN dv1<br/>WHERE \`timestamp\` MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>VÄLJ dim1 SOM dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMLIMIN IT 15</pre> |
-| Måttsummor | <pre>VÄLJ SUM(metric1) SOM m1<br/>FRÅN dv1<br/>WHERE \`timestamp\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;</pre> |
-| Flerdimensions<br/>uppdelningar<br/>och toppdistinktioner | <pre>VÄLJ dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>VÄLJ dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>VÄLJ DISTINCT dim1, dim2<br/>FROM dv1</pre> |
-| Delmarkera:<br/>Filtrera ytterligare<br/>resultat | <pre>VÄLJ dim1, m1<br/>FROM (<br/> SELECT dim1, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br> GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Delmarkera:<br/>Frågar över<br/>datavyer | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/> SELECT dim1 AS key, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;{3 <br/> GROUP BY dim1<br/><br/> UNION<br/><br/> SELECT dim2 AS key, SUM(m1) AS m1<br/> FROM dv2<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/> GROUP BY dim2 <br/>GRUPPERA EFTER nyckel<br/>BESTÄLL EFTER summa</pre> |
-| Delmarkera: <br/>Källa i lager, <br/>filtrering, <br/> och aggregering | Lager med delmarkeringar:<br><pre>MARKERA rows.dim1, SUM(rows.m1) SOM total<br/>FROM (<br/> SELECT \_.dim1,\_.m1<br/> FROM (<br/>)    VÄLJ \* FRÅN DV1<br/>    DÄR \`tidsstämpel\&quot; MELLAN &#39;2022-01-01&#39; OCH &#39;2022-01-02&#39;<br/> ) \_<br/> DÄR \_.dim1 i (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rader<br/>GRUPP BY 1<br/>BESTÄLL EFTER</pre><br/>Lager med CTE WITH:<br/><pre>MED rader SOM (<br/>) MED \_ AS (<br/>)    SELECT * FROM data_ares <br/>    DÄR \`tidsstämpel\` MELLAN &#39;2021-01-01&#39; OCH &#39;2021-02-01&#39;<br/> )<br/> MARKERA \_.item, \_.units FROM \_<br/> DÄR \_.item INTE ÄR NULL<br/>)<br/>MARKERA rader.item, SUTENT M(rows.units) AS units<br/>FROM rows WHERE rows.item in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
-| Väljer var <br/>måtten kommer före<br/> eller blandas med <br/>måtten | <pre>VÄLJ SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;202-01-02&#39;<br/>GROUP BY 2</pre> |
-
-{style="table-layout:auto"}
+<table style="table-layout:auto">
+    <thead>
+        <tr>
+            <th>Mönster</th>
+            <th>Exempel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Schemaidentifiering </td>
+            <td>
+                <pre><code>SELECT * FROM dv1 WHERE 1=0</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Rankad eller uppdelad </td>
+            <td>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1</code></pre>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02' AND
+  filterId = '12345'
+GROUP BY dim1</code></pre>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02' AND
+  AND (dim2 = 'A' OR dim3 IN ('X', 'Y', 'Z'))
+GROUP BY dim1</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td><code>HAVING</code> sats </td>
+            <td>
+                <pre><code>SELECT dim1, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1
+HAVING m1 > 100</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Distinkt, övre 
+dimensionsvärden </td>
+            <td>
+                <pre><code>SELECT DISTINCT dim1 FROM dv1</code></pre>
+                <pre><code>SELECT dim1 AS dv1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1</code></pre>
+                <pre><code>SELECT dim1 AS dv1
+FROM dv1
+WHERE `timestamp` >= '2022-01-01' AND `timestamp` < '2022-01-02'
+GROUP BY dim1
+ORDER BY SUM(metric1)
+LIMIT 15</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Måttsummor </td>
+            <td>
+                <pre><code>SELECT SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Flera dimensioner
+uppdelning
+och förstklassiga </td>
+            <td>
+                <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY dim1, dim2</code></pre>
+                <pre><code>SELECT dim1, dim2, SUM(metric1) AS m1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY 1, 2
+ORDER BY 1, 2</code></pre>
+                <pre><code>SELECT DISTINCT dim1, dim2
+FROM dv1</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Delmarkera:
+Filtrera ytterligare
+resultat </td>
+            <td>
+                <pre><code>SELECT dim1, m1
+FROM (
+  SELECT dim1, SUM(metric1) AS m1
+  FROM dv1
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GRUPPERA EFTER NEDRE1
+)
+WHERE dim1 in ('A', 'B')</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Delmarkera:
+Fråga tvärs över
+datavyer </td>
+            <td>
+                <pre><code>SELECT key, SUM(m1) AS total
+FROM (
+  SELECT dim1 AS key, SUM(metric1) AS m1
+  FROM dv1
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+  GROUP BY dim1
+<br>
+  UNION
+<br>
+  SELECT dim2 AS key, SUM(m1) AS m1
+  FROM dv2
+  WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+  GROUP BY dim2
+)
+GROUP BY key
+ORDER BY total</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>Delmarkera: 
+Källa i lager, 
+filtrering, 
+och aggregering </td>
+            <td>Lager med delmarkeringar:
+<pre><code>SELECT rows.dim1, SUM(rows.m1) AS total
+FROM (
+  SELECT _.dim1,_.m1
+  FROM (
+    SELECT * FROM dv1
+    WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+  ) _
+  WHERE _.dim1 in ('A', 'B', 'C')
+) rows
+GROUP BY 1
+ORDER BY total</code></pre>
+Lager med CTE WITH:
+<pre><code>WITH rows AS (
+  WITH _ AS (
+    SELECT * FROM data_ares
+    WHERE `timestamp` BETWEEN '2021-01-01' AND '2021-02-01'
+  )
+  SELECT _.item, _.units FROM _
+  WHERE _.item IS NOT NULL
+)
+SELECT rows.item, SUM(rows.units) AS units
+FROM rows WHERE rows.item in ('A', 'B', 'C')
+GROUP BY rows.item</code></pre>
+        </td>
+        </tr>
+        <tr>
+            <td>Markerar var
+mätvärden kommer före
+ eller är blandade med
+dimensionerna </td>
+            <td>
+                <pre><code>SELECT SUM(metric1) AS m1, dim1
+FROM dv1
+WHERE `timestamp` BETWEEN '2022-01-01' AND '2022-01-02'
+GROUP BY 2</code></pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 +++
 
