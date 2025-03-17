@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
+source-git-commit: 94dad68426a08ffa34ded7905567fbea307b1de4
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # Tie Quantum Metric-sessionen spelas upp på nytt till data i Customer Journey Analytics
 
-Genom att länka Quantum Metric-sessionsuppspelningar till CJA-data kan kunderna bättre förstå&quot;varför&quot; bakom&quot;vad&quot;.  Workspace kan användas för att upptäcka sessioner med friktion. Sedan kan du klicka på hyperlänkade sessions-ID:n för att utforska sessionsreprisen i Quantum Metric.  Dessa data gör det möjligt att visa beteenden i en session och bättre förstå vad som driver konsumentens friktion.
+Genom att länka Quantum Metric-sessionsuppspelningar till CJA-data kan kunderna bättre förstå&quot;varför&quot; bakom&quot;vad&quot;.  Workspace kan användas för att upptäcka sessioner med friktion. Sedan kan du klicka på hyperlänkade sessions-ID:n för att utforska sessionsreprisen i Quantum Metric.  Dessa data gör det möjligt att visa beteenden i en session och bättre förstå vad som driver konsumentens friktion.  Genom sessionsrepriser som är knutna till CJA kan ni fånga upp viktiga kontexter kring kundbeteenden i er upplevelse.
 
 ## Förutsättningar
 
@@ -46,5 +46,5 @@ Varje sessions-ID är nu en klickbar länk. Länkarna tar dig till Quantum Metri
 ## Steg 2 Visa sessioner från Customer Journey Analytics
 
 När du har skapat Workspace-rapporten med klickbara länkar kan du använda filter i Customer Journey Analytics för att identifiera intressanta sessioner som du kan analysera ytterligare i kvantmätaren.
-Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på https://www.quantummetric.com/platform/session-replay
+Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)
 
