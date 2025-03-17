@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: a0f82948895f3eac86cf00df1dec8abc2f723fc2
+source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Använd Quantum Metric-heatmaps med Customer Journey Analytics
 
-Genom att länka kvantmetrisk heatmappning till CJA-data kan ni bättre förstå sidnivåengagemanget och optimera sidor baserat på kundens beteende. Workspace kan användas för att förstå konsumentflöden och se vilka vägar kunderna följer från en sida till nästa. Sedan kan du klicka på hyperlänkade sid-URL:er för att visuellt heatmappa hur användarna interagerar med innehållet.
+Genom att länka kvantmetrisk heatmappning till CJA-data kan ni bättre förstå sidnivåengagemanget och optimera sidor baserat på kundens beteende. Workspace kan användas för att förstå konsumentflöden och se vilka vägar kunderna följer från en sida till nästa. Sedan kan du klicka på hyperlänkade sid-URL:er för att visuellt heatmappa hur användarna interagerar med innehållet.  Genom att länka Quantum Metric Heatmapping till CJA kan du nu koppla sidnivåinteraktioner till affärsresultat, vilket tar din analys till nästa nivå.
 
 Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på https://www.quantummetric.com/platform/session-replay
 
@@ -48,6 +48,6 @@ Du måste vara berättigad till Quantum Metric-paketet **UX Ops** för att komma
 
 ## Visa heatmaps genom att klicka på länkar i Customer Journey Analytics
 
-När du har hittat en sida som du vill utforska heatmapping för kan du använda den på panelen som URL:en finns i. Tabellen returnerar en URL som gör att du kan utforska heatmaps för sidan i fråga, rullningsdjup och nyckelzoner för interaktion.  Läs mer om kvantmetriska värmekartor på https://www.quantummetric.com/platform/interaction-heatmaps
+När du har hittat en sida som du vill utforska heatmapping för kan du använda den på panelen som URL:en finns i. Tabellen returnerar en URL som gör att du kan utforska heatmaps för sidan i fråga, rullningsdjup och nyckelzoner för interaktion.  Läs mer om kvantmetriska värmekartor på [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)
 
 
