@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Med Content Analytics kan marknadsförarna förstå hur innehåll påverkar de n
 
 I Content Analytics används en AI- och maskininlärningsbaserad **funktionstjänst** för att dela upp innehåll i komponenter och attribut. Genom att skapa en strukturerad metadataprofil för allt innehåll kan du analysera vilket innehåll och vilka attribut som detta innehåll ger affärsresultat.
 
-Förutom att skapa den här strukturerade metadataprofilen innehåller Content Analytics en **identitetstjänst** som identifierar resurser och upplevelser med en enda identifierare. Identitetstjänsten känner igen när exakt samma resurs visas på mer än ett ställe. När det inträffar behandlas de två instanserna av resurser som samma, vilket ger en mer helhetsbild av innehållets användning och konsumtion.
+Förutom att skapa den här strukturerade metadataprofilen innehåller Content Analytics en **identitetstjänst** som identifierar resurser och upplevelser med en enda identifierare. Identitetstjänsten känner igen när samma resurs visas på mer än ett ställe. När det inträffar behandlas de två instanserna av resurser som samma, vilket ger en mer helhetsbild av innehållets användning och konsumtion.
 
 ## Värde
 
@@ -52,17 +52,24 @@ I Content Analytics används följande nyckeltermer:
 
 I Content Analytics används webbbildvisningsdata som samlats in i händelsedatamängder i Experience Platform. Dessa data kan samlas in via de olika metoder som är tillgängliga: Experience Platform Edge Network (Web SDK, Server API) eller Analytics-källkopplingen.
 
-![Innehållsanalys - Så fungerar det](assets/how-it-works.png)
+![Innehållsanalys - Så fungerar det](assets/aca-overview.gif)
 
 
-1. När en användare besöker en webbplats registrerar Experience Plarform Web SDK, som är konfigurerad för innehållsanalys, interaktion med innehåll.
-1. Tjänsten för funktionssammansättning och identitetstjänsten bearbetar granskade data.
+1. När en användare besöker en webbplats som konfigurerats för Content Analytics, registrerar Experience Platform Web SDK interaktion med innehållet.
+1. Tjänsten för funktionssammansättning och identitetstjänsten bearbetar granskade data. Processen består av en crawler som granskar de offentliga versionerna av de konfigurerade URL:erna och använder AI/ML-tjänster.
 1. Resultaten av dessa tjänster (komponenter, attribut och identiteter) används för att uppdatera relevanta data för innehållsanalys i Experience Platform.
-1. Informationen i innehållsanalysen, tillsammans med beteendedata och andra uppslagsdatauppsättningar, kan sedan användas i en Customer Journey Analytics-konfiguration (Connection, Data view och Workspace). Denna konfiguration utgör grunden för de unika insikterna på makronivå om ditt innehåll.
+1. Data från innehållsanalysen, tillsammans med beteendedata och andra uppslagsdatauppsättningar, används i Customer Journey Analytics-konfigurationen (en kombination av Connection, datavyn och Workspace). Denna inställning ger grunden till de unika insikterna på makronivå om ditt innehåll.
 
 >[!NOTE]
 >
->Content Analytics använder AI/ML. Resultaten (för att ge upplevelser och resurser en viss funktionalitet) kan vara felaktiga.
+>Content Analytics utnyttjar AI/ML-tjänster som kan ge felaktiga eller vilseledande resultat. Använd därför ditt omdöme för att granska och validera AI/ML-genererade utdata.
+>
+>Du kan använda fliken **[!UICONTROL Feedback]**, som är tillgänglig från ![ InfoOutline](/help/assets/icons/InfoOutline.svg) i huvudgränssnittet, för att ge feedback om AI/ML-genererade utdata.
+>
+
+>[!NOTE]
+>
+>Om du har licensierat tillägget Sekretess och säkerhetssköld ska du vara medveten om att (alla data som genereras av) upplevelser och resurser, som är föremål för Content Analytics, inte omfattas av DULE-märkning eller Kundhanterade nycklar.
 >
 
 
@@ -70,3 +77,4 @@ I Content Analytics används webbbildvisningsdata som samlats in i händelsedata
 >
 >[Rapporter om innehållsanalys](report/report.md)
 >[Konfigurera innehållsanalys](config/configuration.md)
+>

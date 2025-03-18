@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Experience Persucrap Strategies | ![AI genererade](/help/assets/icons/AI.svg) strategier för upplevelser som finns i den angivna upplevelsen. Möjliga värden är: Social identitet, socialt korrektur, auktoritet, kreativitet, fotnoter i dörren, överkommande reaktion, återkoppling, förankring och jämförelse, sociala effekter, skrämsel och antropomorfism. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Upplev berättelser | ![AI genererade](/help/assets/icons/AI.svg) berättelser som upplevelsen bygger på relevans från en marknadsförares vypunkt. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Upplevelsetoner | ![AI genererade](/help/assets/icons/AI.svg) toner som upplevelsen bygger på relevans från en marknadsförares vypunkt | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
-| Experience Marketing Eures | ![AI genererade](/help/assets/icons/AI.svg) Den känsla som anropades i läsaren när den läste upplevelsen: Akutaktivitet, exklusivitet, Uppmuntrade, Utmaning, Nyhet, Achievement, Lita på, Enkelhet och Fascination. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
+| Experience Marketing Eures | ![AI genererade](/help/assets/icons/AI.svg) Den känsla som anropades i läsaren när texten som används som en del av upplevelsen lästes: trängsel, exklusivitet, uppmuntran, utmaning, nyfikenhet, förstärkning, förtroende, enkelhet och fascination. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Experience Emojis Count | ![AI genererade](/help/assets/icons/AI.svg) antal känslolägesikoner för upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 | Experience Hashtags Count | ![AI genererade](/help/assets/icons/AI.svg) antal hashtaggar för upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 | Antal upplevelsemeningar | ![AI genererade](/help/assets/icons/AI.svg) antal meningar för upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
@@ -163,3 +163,4 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | upplevelseklickfrekvens | Upplevelseklickningar/upplevelsevyer | Beräknat mått | |
 
 {style="table-layout:fixed"}
+

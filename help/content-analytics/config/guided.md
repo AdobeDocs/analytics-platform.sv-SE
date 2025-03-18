@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+source-git-commit: 61b27e14386aaba1612844f3e00692edd38cba17
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 0%
+source-wordcount: '3192'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +50,7 @@ För varje konfiguration finns följande information:
 
 Du kan använda ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att anpassa tabellen. Välj vilka kolumner som ska visas i dialogrutan **[!UICONTROL Customize table]** och välj **[!UICONTROL Apply]** för att tillämpa ändringarna.
 
-På skärmen Innehållsanalys **[!UICONTROL Configuration]** kan du skapa en ny konfiguration eller redigera en befintlig konfiguration.
+På skärmen Content Analytics **[!UICONTROL Configuration]** kan du skapa en ny konfiguration eller redigera en befintlig konfiguration.
 
 Så här skapar du en ny konfiguration:
 
@@ -76,11 +76,11 @@ Guiden för guidad konfiguration består av fyra avsnitt ([Detaljer](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Information"
->abstract="Den här guiden ställer in de krav som krävs för att konfigurera Content Analytics. Ange ett namn för konfigurationen"
+>abstract="I den här guiden anges de krav som krävs för att konfigurera Content Analytics. Ange ett namn för konfigurationen"
 
 <!-- markdownlint-enable MD034 -->
 
-Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics configuration`.
+Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics configuration`. Namnet krävs för att spara eller implementera en konfiguration.
 
 ![Konfigurationsinformation för innehållsanalys](../assets/aca-configuration-details.png)
 
@@ -107,24 +107,47 @@ Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="Ny datavy"
->abstract="Om du väljer en ny datavy uppdateras datavyn så att den innehåller mått och mått för innehållsanalys. Om det behövs uppdateras även den associerade anslutningen så att den innehåller innehållsanalysdatauppsättningar. Anslutningen och datavyn som för närvarande är konfigurerad för innehållsanalys ändras inte."
+>abstract="Om du väljer en ny datavy uppdateras datavyn så att den innehåller Content Analytics-mått och mått. Om det behövs uppdateras även den associerade anslutningen så att den innehåller innehållsanalysdatauppsättningar. Anslutningen och datavyn som för närvarande är konfigurerad för innehållsanalys ändras inte."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_current_cleanup_labels_dialog"
+>title="Rensa den markerade datavyn"
+>abstract="Du har valt en datavy som redan har etablerats för Content Analytics. Den befintliga Content Analytics-konfigurationen tas bort och datavyn etableras med den nya konfigurationen."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
+>title="Rensa föregående datavy"
+>abstract="Du har valt en ny datavy. Content Analytics-konfigurationen för den tidigare markerade datavyn tas bort."
 
 <!-- markdownlint-enable MD034 -->
 
 Din konfiguration kräver att du väljer en [datavy](/help/data-views/data-views.md).
 
-![Konfiguration av innehållsanalys för en datavy](../assets/aca-configuration-dataview.png)
+1. Välj en datavy
 
-Så här väljer du en datavy:
+   * Använd ![Data](/help/assets/icons/Data.svg) **[!UICONTROL Select Data view]** om du vill välja en ny datavy för en konfiguration.
 
-1. Använd ![Data](/help/assets/icons/Data.svg) **[!UICONTROL Select Data view]**. Du ser en **[!UICONTROL Data view]**-dialogruta där du kan välja en datavy för din konfiguration.
+     ![Konfiguration av innehållsanalys för en datavy](../assets/aca-configuration-dataview.png)
 
-   Om du skapar en ny konfiguration visar listan endast datavyer som är kopplade till sandlådor som inte har någon aktiv konfiguration.
-Om du redigerar en befintlig konfiguration visas endast datavyer som är tillgängliga i sandlådan som redan är kopplad till den befintliga konfigurationen.
+   * Om du vill ändra en datavy för en konfiguration väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**.
 
+     ![Konfiguration av innehållsanalys för en datavy](../assets/aca-configuration-dataview-edit.png)
+
+
+   I båda scenarierna visas en **[!UICONTROL Data view]**-dialogruta där du kan välja en datavy för din konfiguration.
+
+   ![Content Analytics-konfiguration av en datavy - datavytabell](../assets/aca-configuration-dataview-dialog.png)
+
+   För en ny konfiguration visar listan endast datavyer som är associerade med sandlådor som inte har någon aktiv konfiguration.
+
+   Om du redigerar en befintlig konfiguration visas endast datavyer som är tillgängliga i sandlådan som redan är kopplad till den befintliga konfigurationen.
+
+   * Om du vill söka efter en viss datavy använder du fältet ![Sök](/help/assets/icons/Search.svg).
    * Om du vill filtrera listan med tillgängliga datavyer väljer du ![Visa filter](/help/assets/icons/Filter.svg). Du kan filtrera listan på Connection, Owner och Sandbox.<br/>Använd ![Dölj](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** för att dölja filterrutan.
    * Om du vill definiera vilka kolumner som ska visas i tabellen väljer du ![Kolumninställningar](/help/assets/icons/ColumnSetting.svg). Välj vilka kolumner som ska visas i dialogrutan **[!UICONTROL Customize table]** och välj **[!UICONTROL Apply]** för att tillämpa ändringarna.
+
 1. Välj **[!UICONTROL Save]** för att bekräfta den valda datavyn. Välj **[!UICONTROL Cancel]** om du vill avbryta.
+
 
 En datavy är kopplad till en Customer Journey Analytics [Connection](/help/connections/overview.md). Och en Connection är baserad på en sandlåda i organisationen. När du har sparat konfigurationen fylls **[!UICONTROL Sandbox]** automatiskt i med rätt namn på sandlådan, baserat på den valda datavyn.
 
@@ -146,12 +169,12 @@ En datavy är kopplad till en Customer Journey Analytics [Connection](/help/conn
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
 >title="Upplevelsehantering och -definition"
->abstract="Ange de parametrar som avgör hur innehåll återges på webbplatsen."
+>abstract="Ange parametrarna som bestämmer hur innehåll återges på webbplatsen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Upplevelsehantering och -definition"
->abstract="Du kan redigera inställningarna i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
+>abstract="Du kan redigera inställningarna i tillägget Adobe Content Analytics i taggegenskapen som är kopplad till den aktuella konfigurationen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -159,9 +182,9 @@ I det här avsnittet kan du välja att inkludera upplevelser i de data som du sa
 
 Som standard är **[!UICONTROL Include experiences]** inaktiverad. När du väljer det här alternativet måste du definiera för vilka URL-adresser som du vill inkludera upplevelser.
 
-Du bör endast överväga att inkludera upplevelser när följande gäller:
+Inkludera endast upplevelser när följande gäller:
 
-* Innehållet på webbplatsen drivs endast av en URL.
+* Du kan bara komma åt webbplatsinnehållet med offentliga URL:er. Åtkomst till webbplatsen kräver inte personliga tokens, cookies eller andra mekanismer som inte är tillgängliga via URL:en.
 * Sidorna på webbplatsen måste kunna reproduceras med hjälp av sidans URL.
 
 Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
@@ -169,27 +192,31 @@ Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 ![Konfiguration av innehållsanalys - Hämta och definiera ](../assets/aca-configuration-experience.png)
 
 1. Aktivera **[!UICONTROL Include experiences]**.
-1. Ange parametrarna som bestämmer hur innehåll återges på webbplatsen. Parametrarna är noll eller flera kombinationer av **[!UICONTROL Domain regular expression]** och **[!UICONTROL Query parameters]**.
-   1. Ange en **[!UICONTROL Domain regular expression]**, till exempel `(?!.*\b(store|help|admin)\b)`.
+1. Valfritt. Ange hur innehåll ska återges på webbplatsen. Parametrarna är noll eller flera kombinationer av **[!UICONTROL Domain regular expression]** och **[!UICONTROL Query parameters]**.
+   1. Ange en **[!UICONTROL Domain regular expression]**, till exempel `/^(?!.*\b(store|help|admin)\b)/`. Se till att du undviker reguljära uttryck med `/`.
    1. Ange en kommaavgränsad lista med **[!UICONTROL Query parameters,]**, till exempel `outdoors, patio, kitchen`.
 1. Välj **[!UICONTROL Remove]** om du vill ta bort en kombination av reguljära uttryck och frågeparametrar för domäner.
-1. Välj **[!UICONTROL Add another]** om du vill lägga till en annan kombination av ett reguljärt uttryck och frågeparametrar.
+1. Välj **[!UICONTROL Add Regex]** om du vill lägga till en annan kombination av ett reguljärt uttryck och frågeparametrar.
 
 Så här redigerar du befintliga eller inkluderar nya upplevelser i en implementerad konfiguration:
 
 ![Konfiguration av innehållsanalys - Hämta och definiera ](../assets/aca-configuration-experience-edit.png)
 
-* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera parametrarna i [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) i taggegenskapen som är kopplad till den valda konfigurationen.
+* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för att samla in upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) i taggegenskapen som är associerad med den aktuella konfigurationen.
+
+
 
 
 ### Datainsamling {#onboarding-data-collection}
+
+I det här avsnittet konfigurerar du hur du samlar in innehållsanalysdata.
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Datainsamling"
->abstract="Definiera vilken taggegenskap du vill använda eller skapa en ny. Och definiera de sidor och resurser som du vill inkludera eller exkludera med hjälp av reguljära uttryck."
+>abstract="Ange vilken taggegenskap du vill använda eller skapa en ny. Och definiera de sidor och resurser som du vill inkludera eller exkludera med hjälp av reguljära uttryck."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
@@ -219,50 +246,50 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Datainsamling"
->abstract="Du kan redigera inställningarna för sidor i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
+>abstract="Du kan redigera inställningarna för sidor i tillägget Adobe Content Analytics i taggegenskapen som är kopplad till den aktuella konfigurationen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Datainsamling"
->abstract="Du kan redigera inställningarna för resurser i Adobe Content Analytics-tillägget i taggegenskapen, som är kopplad till den valda konfigurationen."
+>abstract="Du kan redigera inställningarna för resurser i Adobe Content Analytics-tillägget i taggegenskapen som är kopplad till den aktuella konfigurationen."
 
 <!-- markdownlint-enable MD034 -->
 
 #### Ny konfiguration {#new-configuration}
 
-I en ny konfiguration måste du definiera vilken taggegenskap du vill använda eller skapa en ny taggegenskap. Och du måste definiera sidorna och resurserna som du vill inkludera eller exkludera med hjälp av reguljära uttryck.
+I en ny konfiguration måste du definiera om du vill använda en befintlig taggegenskap eller skapa en ny taggegenskap. Och du måste definiera sidorna och resurserna som du vill inkludera eller exkludera med hjälp av reguljära uttryck.
 
 * Så här använder du en befintlig taggegenskap:
 
   ![Tagg för befintlig datainsamling för innehållsanalys](../assets/aca-configuration-datacollection-existingtag.png)
 
-   * Välj **[!UICONTROL Existing]**.
-   * Välj en befintlig egenskap i listrutan **[!UICONTROL Tag property]**.
+   1. Välj **[!UICONTROL Existing]**.
+   2. Välj en befintlig egenskap i listrutan **[!UICONTROL Tags property]**. Du kan börja skriva för att söka efter och begränsa de tillgängliga alternativen.
 
 * Så här skapar du en ny taggegenskap:
 
   ![Datainsamling för innehållsanalys - ny tagg](../assets/aca-configuration-datacollection-newtag.png)
 
    1. Välj **[!UICONTROL Create new]**.
-   2. Ange en **[!UICONTROL Tag name]**, till exempel `ACA Test`.
+   2. Ange en **[!UICONTROL Tags name]**, till exempel `ACA Test`.
    3. Ange **[!UICONTROL Domains]**, till exempel `example.com`.
 
 * Om du har valt att inkludera upplevelser, ange vilka sidor som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
 
-   * Ange ett vanligt uttryck för **[!UICONTROL Experience]**. Till exempel: `(?!.*\b(store|help|admin)\b)`.
+   * Ange ett vanligt uttryck för **[!UICONTROL Experience]**. Till exempel: `/^(?!.*documentation).*/` om du vill exkludera alla dokumentationssidor från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
 
 * Ange vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
 
-   * Ange ett vanligt uttryck för **[!UICONTROL Asset]**. Till exempel: `(?!.*\b(store|help|admin)\b)`.
+   * Ange ett vanligt uttryck för **[!UICONTROL Asset]**. Till exempel: `/^(?!.*(logo\.jpg|\.svg)).*$/` om du vill exkludera alla JPEG- och SVG-logotyper från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
 
 
 #### Befintlig konfiguration {#existing-configuration}
 
 För en befintlig konfiguration kan du inte redigera taggegenskapen. Du kan dock redigera sidor och resurser som ska inkluderas eller exkluderas.
 
-* Om du vill redigera vilka sidor som ska inkluderas eller exkluderas när du samlar in data för innehållsanalys väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Experience]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) som är associerat med taggegenskapen för din konfiguration för innehållsanalys. Du kan redigera det reguljära uttrycket så att sidor tas med eller utesluts. Se till att du [publicerar](manual.md#publish) som du ändrar.
+* Om du vill redigera vilka sidor som ska inkluderas eller exkluderas när du samlar in data för innehållsanalys väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Experience]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket så att sidor tas med eller utesluts. Se till att du [publicerar](manual.md#publish) som du ändrar.
 
-* Om du vill redigera vilka resurser som ska inkluderas eller exkluderas när du samlar in data för innehållsanalys väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Asset]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) som är associerat med taggegenskapen för din konfiguration för innehållsanalys. Du kan redigera det reguljära uttrycket för att inkludera eller exkludera resurser. Kontrollera att du [publicerar](manual.md#publish) dina ändringar.
+* Om du vill redigera vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Asset]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket för att inkludera eller exkludera resurser. Kontrollera att du [publicerar](manual.md#publish) dina ändringar.
 
 ### Sammanfattning {#summary}
 
@@ -281,7 +308,7 @@ När du har angett all nödvändig information visas en sammanfattning med infor
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Bekräftelse av implementering"
->abstract="Om du väljer **[!UICONTROL Implement]** konfigureras innehållsanalysen baserat på de indata du har angett i det här arbetsflödet. Flera inställningar väljs som standard baserat på vad som är användbart för innehållsanalys, men du (som personuppgiftsansvarig) måste granska inställningarna för varje artefakt för att bekräfta att inställningarna har implementerats i enlighet med din sekretesspolicy, avtalsrättigheter och skyldigheter samt krav på samtycke enligt tillämplig lag.<br/><br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/><br/>För att härleda attribut för bilder och text hämtar Adobe attributen med:<ol><li>URL:en som hämtas när användarens webbplats besöker, enligt de datainsamlingsinställningar som du har konfigurerat, och</li><li>URL-adressen där bilden finns.</li></ol>Du får inte märka bilder som lagras på tredjepartswebbplatser."
+>abstract="Om du väljer **[!UICONTROL Implement]** konfigureras innehållsanalysen baserat på de indata du har angett i det här arbetsflödet. Flera inställningar väljs som standard baserat på vad som är praktiskt för Content Analytics, men du (som registeransvarig) måste granska inställningarna för varje artefakt för att bekräfta att inställningarna har implementerats i enlighet med din sekretesspolicy, avtalsrättigheter och skyldigheter samt krav på samtycke enligt tillämplig lag.<br/><br/>Observera att inga data samlas in förrän taggbiblioteket som är associerat med den här konfigurationen publiceras manuellt.<br/><br/>För att härleda attribut för bilder och text hämtar Adobe attributen med:<ol><li>URL-adressen, som hämtas när användaren besöker webbplatsen, enligt de datainsamlingsinställningar du har konfigurerat, och</li><li>URL-adressen där bilden finns.</li></ol>Du får inte märka bilder som lagras på tredjepartswebbplatser."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -295,14 +322,14 @@ När du har skapat eller redigerat en konfiguration är följande åtgärder til
       * Skapa datauppsättningar för att samla in Content Analytics-händelser, resursattribut och (om de är konfigurerade) upplevelseattribut.
       * Skapandet av ett dataflöde som använder funktionstjänsten för att generera och uppdatera innehållsattribut från Content Analytics-händelser.
    * **[!UICONTROL Data collection]**-konfiguration:
-      * Den nya eller befintliga taggegenskapen är konfigurerad för att stödja insamling av innehållsanalysdata. Den här konfigurationen innebär att tillägget Adobe Content Analytics för taggar ingår.
+      * Den nya eller befintliga taggegenskapen är konfigurerad för Content Analytics datainsamling. Den här konfigurationen innebär att tillägget Adobe Content Analytics för taggar ingår.
       * En datastream skapas för Content Analytics-händelser.
       * Tillägget Adobe Content Analytics är konfigurerat för att säkerställa att Content Analytics-händelser skickas till datastream för Content Analytics.
       * Om Web SDK inte är konfigurerat för taggegenskapen skapas en ny Web SDK-konfiguration som endast skickar Content Analytics-händelser.
       * Om Web SDK är konfigurerat för den här taggegenskapen görs inga ändringar i den befintliga Web SDK-konfigurationen.
    * **[!UICONTROL Customer Journey Analytics]**-konfiguration:
       * Den valda datavyn uppdateras med mått och mått för innehållsanalys.
-      * Anslutningen som är kopplad till den valda datavyn har ändrats så att den inkluderar händelser- och attributdatamängder för Content Analytics.
+      * Anslutningen som är kopplad till den valda datavyn ändras så att den omfattar Content Analytics-händelser och attribut.
       * En rapportmall för Content Analytics läggs till i Workspace.
 * **[!UICONTROL Save]**: Ändringar som görs i en implementerad konfiguration sparas och implementeringen uppdateras.
 * **[!UICONTROL Exit]**. Avslutar den guidade konfigurationen. Alla ändringar som görs i en implementerad konfiguration ignoreras.
@@ -310,7 +337,642 @@ När du har skapat eller redigerat en konfiguration är följande åtgärder til
 
 ## Publicera {#publish}
 
-Om du vill aktivera din konfiguration för innehållsanalys måste du [manuellt](manual.md) publicera taggegenskapen som skapas efter att du har valt **[!UICONTROL Implement]**, som en del av den guidade konfigurationsguiden.
+Om du vill aktivera din Content Analytics-konfiguration måste du publicera taggegenskapen som skapas efter att du har markerat **[!UICONTROL Implement]** [manuellt](manual.md).
+
+
+## Inställningar och konfigurationer för introduktion
+
+I följande avsnitt beskrivs inställningarna och konfigurationerna som används för [Customer Journey Analytics](#customer-journey-analytics-cja), [Experience Platform](#experience-platform-aep) och [Datainsamling](#data-collection-dc) som en del av implementeringen av en Content Analytics-konfiguration.
+
+Mer information finns i följande scenarier:
+
+* Egenskapen **Taggar** finns **✓** eller finns inte **✕**.
+* **Webbtillägget SDK** för taggegenskapen finns **✓** eller finns inte **✕**.
+* Adobe **Content Analytics**-tillägget för taggegenskapen finns **✓** eller finns inte **✕**.
+
+### Customer Journey Analytics {#cja}
+
+<table style="table-layout:fixed">
+  <tr>
+    <th></th>
+    <th colspan="4">Scenarier:</th>
+  </tr>
+  <tr>
+    <th>
+      <strong>Inställning</strong>
+    </th>
+    <th>
+      <strong> ✓ taggar <br> ✓ Web SDK<br/> ✓ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> ✓ taggar <br> ✓ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> flagga <br> ✕ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> ✕ taggar <br> ✕ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>Rapportmall</td>
+      <td colspan="4">En rapportmall är tillgänglig</td>
+    </tr>
+    <tr>
+      <td>Datavy</td>
+      <td colspan="4">Ändrad/skapad med ACA-mått och -mått</td>
+    </tr>
+    <tr>
+      <td>Anslutning</td>
+      <td colspan="4">Ändrad för att inkludera ACA-datauppsättningar (ACA-händelser, resursattribut, Experience Attribute)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experience Platform {#aep}
+
+<table style="table-layout:fixed">
+  <tr>
+    <th></th>
+    <th colspan="4">Scenarier:</th>
+  </tr>
+  <tr>
+    <th>
+      <strong>Inställning</strong>
+    </th>
+    <th>
+      <strong> ✓ taggar <br> ✓ Web SDK<br/> ✓ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> ✓ taggar <br> ✓ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> flagga <br> ✕ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> ✕ taggar <br> ✕ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+  </tr>
+  <tbody>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Events-schema</strong></td>
+    </tr>
+    <tr>
+      <td style="margin-left: 160.0px;">Namn</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+    </tr>
+    <tr>
+      <td>Beskrivning</td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+    </tr>
+    <tr>
+      <td>Profil aktiverad</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Events-datauppsättning</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+    </tr>
+    <tr>
+      <td>Schema</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+    </tr>
+    <tr>
+      <td>Beskrivning</td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+    </tr>
+    <tr>
+      <td>Taggar</td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+    </tr>
+    <tr>
+      <td>Systemdatauppsättning</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>Profil aktiverad</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+    </tr>
+    <tr>
+      <td>Datastyrning (DULE-etiketter)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics resursattributschema</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+    </tr>
+    <tr>
+      <td>Beskrivning</td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+    </tr>
+    <tr>
+      <td>Profil aktiverad</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Assets Attributes, datauppsättning</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+    </tr>
+    <tr>
+      <td>Schema</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+      <td>Content Analytics resursattribut</td>
+    </tr>
+    <tr>
+      <td>Beskrivning</td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+    </tr>
+    <tr>
+      <td>Taggar</td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+    </tr>
+    <tr>
+      <td>Systemdatauppsättning</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>Profil aktiverad</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+    </tr>
+    <tr>
+      <td>Datastyrning (DULE-etiketter)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes schema</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+    </tr>
+    <tr>
+      <td>Beskrivning</td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+    </tr>
+    <tr>
+      <td>Profil aktiverad</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes, datauppsättning</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+    </tr>
+    <tr>
+      <td>Schema</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+    </tr>
+    <tr>
+      <td>Beskrivning</td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+      <td><i>förbestämd tbd</i></td>
+    </tr>
+    <tr>
+      <td>Taggar</td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+      <td><i>tom?</i></td>
+    </tr>
+    <tr>
+      <td>Systemdatauppsättning</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>Profil aktiverad</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+      <td>Nej</td>
+    </tr>
+    <tr>
+      <td>Datastyrning (DULE-etiketter)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Datainsamling {#dc}
+
+<table style="table-layout:fixed">
+  <tr>
+    <th></th>
+    <th colspan="4">Scenarier:</th>
+  </tr>
+  <tr>
+    <th>
+      <strong>Inställning</strong>
+    </th>
+    <th>
+      <strong> ✓ taggar <br> ✓ Web SDK<br/> ✓ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> ✓ taggar <br> ✓ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> flagga <br> ✕ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong> ✕ taggar <br> ✕ Web SDK<br/> ✕ Content Analytics</strong>
+    </th>
+  </tr>
+  <tbody>
+    <tr>
+      <td colspan="5"><strong><br/>Datastream</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td><i>befintligt värde</i></td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
+    </tr>
+    <tr>
+      <td>Beskrivning</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>förbestämd</i></td>
+      <td><i>förbestämd</i></td>
+      <td><i>förbestämd</i></td>
+    </tr>
+    <tr>
+      <td>Mappningsschema</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>förbestämd</i></td>
+      <td><i>förbestämd</i></td>
+      <td><i>förbestämd</i></td>
+    </tr>
+    <tr>
+      <td>Geolokalisering och nätverkssökning</td>
+      <td><i>befintliga värden</i></td>
+      <td>Alla alternativ är inaktiverade</td>
+      <td>Alla alternativ är inaktiverade</td>
+      <td>Alla alternativ är inaktiverade</td>
+    </tr>
+    <tr>
+      <td>Enhetssökning</td>
+      <td><i>befintligt värde</i></td>
+      <td>Samla inte in någon enhetsinformation</td>
+      <td>Samla inte in någon enhetsinformation</td>
+      <td>Samla inte in någon enhetsinformation</td>
+    </tr>
+    <tr>
+      <td>IP-förvanskning</td>
+      <td><i>befintligt värde</i></td>
+      <td>Ingen</td>
+      <td>Ingen</td>
+      <td>Ingen</td>
+    </tr>
+    <tr>
+      <td>Cookie för första parts-ID</td>
+      <td><i>befintligt värde</i></td>
+      <td>Av</td>
+      <td>Av</td>
+      <td>Av</td>
+    </tr>
+    <tr>
+      <td>Synkronisering av tredje parts-ID</td>
+      <td><i>befintligt värde</i></td>
+      <td>Av</td>
+      <td>Av</td>
+      <td>Av</td>
+    </tr>
+    <tr>
+      <td>Åtkomsttyp</td>
+      <td><i>befintligt värde</i></td>
+      <td>Blandad autentisering</td>
+      <td>Blandad autentisering</td>
+      <td>Blandad autentisering</td>
+    </tr>
+    <tr>
+      <td>Media Analytics</td>
+      <td><i>befintligt värde</i></td>
+      <td>Av</td>
+      <td>Av</td>
+      <td>Av</td>
+    </tr>
+        <tr>
+      <td>Punktidentifiering</td>
+      <td><i>befintligt värde</i></td>
+      <td>Av</td>
+      <td>Av</td>
+      <td>Av</td>
+    </tr>
+    <tr>
+      <td>Mappning</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>angiven</i></td>
+      <td><i>angiven</i></td>
+      <td><i>angiven</i></td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Taggar, egenskap</strong><br/>En befintlig eller ny egenskap. Namnet och domänen anges av användaren.</td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td><i>användare tillhandahöll</i> (standard"Content Analytics")</td>
+    </tr>
+    <tr>
+      <td>Domän</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td ><i>förbestämd</i></td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Bibliotek för taggar</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>
+        <br/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>SDK-tillägg för webben</strong></td>
+    </tr>
+    <tr>
+      <td>Namn</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Content Analytics - Web SDK</td>
+      <td>Content Analytics - Web SDK</td>
+    </tr>
+    <tr>
+      <td>IMS-organisation</td>
+      <td><i>automatiskt ifylld</i></td>
+      <td><i>automatiskt ifylld</i></td>
+      <td><i>automatiskt ifylld</i></td>
+      <td><i>automatiskt ifylld</i></td>
+    </tr>
+    <tr>
+      <td>Edge Domain</td>
+      <td><i>befintligt värde<br/>Kan kräva en uppdatering för att matcha AppMeasurement-implementeringen</i></td>
+      <td><i>befintligt värde<br/>Kan kräva en uppdatering för att matcha AppMeasurement-implementeringen</i></td>
+      <td>
+        <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+      </td>
+      <td>
+        <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Dataströmmar</strong></td>
+    </tr>
+    <tr>
+      <td>Produktion</td>
+      <td><i>befintligt värde<br/>Åsidosättning av datastream som används för att skicka till ett annat datastream</i></td>
+      <td><i>befintligt värde<br/>Åsidosättning av datastream som används för att skicka till ett annat datastream</i></td>
+      <td><i>angiven användare</i>?</td>
+      <td><i>angiven användare</i>?</td>
+    </tr>
+    <tr>
+      <td>Mellanlagring</td>
+      <td><i>befintligt värde<br/>Åsidosättning av datastream som används för att skicka till ett annat datastream</i></td>
+      <td><i>befintligt värde<br/>Åsidosättning av datastream som används för att skicka till ett annat datastream</i></td>
+      <td><i>angiven användare</i>?</td>
+      <td><i>angiven användare</i>?</td>
+    </tr>
+    <tr>
+      <td>Utveckling</td>
+      <td><i>befintligt värde<br/>Åsidosättning av datastream som används för att skicka till ett annat datastream</i></td>
+      <td><i>befintligt värde<br/>Åsidosättning av datastream som används för att skicka till ett annat datastream</i></td>
+      <td><i>angiven användare</i>?</td>
+      <td><i>angiven användare</i>?</td>
+    </tr>
+    <tr>
+      <td>Sekretess</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>In?</td>
+      <td>In?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Identitet</strong></td>
+    </tr>
+    <tr>
+      <td>Migrera ECID</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Markerad</td>
+      <td>Markerad</td>
+    </tr>
+    <tr>
+      <td>Använda cookies från tredje part</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Markerad</td>
+      <td>Markerad</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Personalisering</strong></td>
+    </tr>
+    <tr>
+      <td>Migrera Target från at.js till Web SDK</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Omarkerad</td>
+      <td>Omarkerad</td>
+    </tr>
+    <tr>
+      <td>Aktivera lagring av personalisering</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Omarkerad</td>
+      <td>Omarkerad</td>
+    </tr>
+    <tr>
+      <td>Automatiskt klickningssamling för Adobe Journey Optimizer</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Alltid</td>
+      <td>Alltid</td>
+    </tr>
+    <tr>
+      <td>Automatiskt klickningssamling för Adobe Target</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Aldrig</td>
+      <td>Aldrig</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Datainsamling</strong></td>
+    </tr>
+    <tr>
+      <td>Samla in interna länkklick</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Omarkerad</td>
+      <td>Omarkerad</td>
+    </tr>
+    <tr>
+      <td>Samla in externa länkklick</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Omarkerad</td>
+      <td>Omarkerad</td>
+    </tr>
+    <tr>
+      <td>Samla in nedladdningslänksklickningar</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Omarkerad</td>
+      <td>Omarkerad</td>
+    </tr>
+    <tr>
+      <td>Inkludera automatiskt när händelsedata skickas</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>All standardkontextinformation</td>
+      <td>All standardkontextinformation</td>
+    </tr>
+    <tr>
+      <td>Direktuppspelningsmedia</td>
+      <td><i>befintliga värden</i></td>
+      <td><i>befintliga värden</i></td>
+      <td>Tomma värden</td>
+      <td>Tomma värden</td>
+    </tr>
+    <tr>
+      <td>Åsidosättningar av dataströmskonfiguration</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>Matcha datastream-konfiguration</td>
+      <td>Matcha datastream-konfiguration</td>
+    </tr>
+    <tr>
+      <td>Avancerade inställningar - Edge bassökväg</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>befintligt värde</i></td>
+      <td>ee</td>
+      <td>ee</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Extension</strong></td>
+    </tr>
+    <tr>
+      <td>Dataströmmar</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>förbestämd</i></td>
+      <td><i>förbestämd</i></td>
+      <td><i>förbestämd</i></td>
+    </tr>
+    <tr>
+      <td>Experience Capturing &amp; Definition</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>angiven</i></td>
+      <td><i>angiven</i></td>
+      <td><i>angiven</i></td>
+    </tr>
+    <tr>
+      <td>Händelsefiltrering</td>
+      <td><i>befintligt värde</i></td>
+      <td><i>angiven</i></td>
+      <td><i>angiven</i></td>
+      <td><i>angiven</i></td>
+    </tr>
+  </tbody>
+</table>
 
 >[!MORELIKETHIS]
 >
