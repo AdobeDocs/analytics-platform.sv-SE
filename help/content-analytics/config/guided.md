@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 61b27e14386aaba1612844f3e00692edd38cba17
+source-git-commit: 5eb9136107ed872639b02df2549a2f81dee83e76
 workflow-type: tm+mt
 source-wordcount: '3192'
 ht-degree: 1%
@@ -192,7 +192,7 @@ Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 ![Konfiguration av innehållsanalys - Hämta och definiera ](../assets/aca-configuration-experience.png)
 
 1. Aktivera **[!UICONTROL Include experiences]**.
-1. Valfritt. Ange hur innehåll ska återges på webbplatsen. Parametrarna är noll eller flera kombinationer av **[!UICONTROL Domain regular expression]** och **[!UICONTROL Query parameters]**.
+1. Valfritt. Ange parametrarna för hur innehållet återges på webbplatsen. Parametrarna är noll eller flera kombinationer av **[!UICONTROL Domain regular expression]** och **[!UICONTROL Query parameters]**.
    1. Ange en **[!UICONTROL Domain regular expression]**, till exempel `/^(?!.*\b(store|help|admin)\b)/`. Se till att du undviker reguljära uttryck med `/`.
    1. Ange en kommaavgränsad lista med **[!UICONTROL Query parameters,]**, till exempel `outdoors, patio, kitchen`.
 1. Välj **[!UICONTROL Remove]** om du vill ta bort en kombination av reguljära uttryck och frågeparametrar för domäner.
