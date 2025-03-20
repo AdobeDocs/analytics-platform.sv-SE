@@ -4,9 +4,9 @@ description: Skapa ett datumintervall för rapportering.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 2ed18bcf2767d513265f909690ea53fdbd90a2b5
+source-git-commit: a6295d550e0e357569d530b72fe50a58d7ecfbbe
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,12 @@ Vem som helst kan skapa ett anpassat datumintervall. Du kan skapa ett datuminter
 
 ![Skapa en anteckning](assets/create-date-range.png)
 
-* (A) I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Date range]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** i [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md).
-* (B) I ett Workspace-projekt väljer du **[!UICONTROL Custom date range to this date range]** på snabbmenyn i en visualisering.
-* (C) I ett Workspace-projekt väljer du **[!UICONTROL Components]** på menyn och väljer **[!UICONTROL Create date range]**
-* (D) Använd genvägen **[!UICONTROL ctrl+shift+d]** (Windows) eller **[!UICONTROL shift+command+d]** (macOS) i ett Workspace-projekt.
-* (E) I ett Workspace-projekt väljer du ![Lägg till](/help/assets/icons/Add.svg) i ![Kalender](/help/assets/icons/Calendar.svg) **Datumintervall** från den vänstra panelen Komponenter.
+* **A**. I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Date range]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** i [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md).
+* **B**. I ett Workspace-projekt väljer du **[!UICONTROL Custom date range to this date range]** på snabbmenyn i en visualisering.
+* **C**. I ett Workspace-projekt väljer du **[!UICONTROL Components]** på menyn och sedan **[!UICONTROL Create date range]**
+* **D**. Använd genvägen **[!UICONTROL ctrl+shift+d]** (Windows) eller **[!UICONTROL shift+command+d]** (macOS) i ett Workspace-projekt.
+* **E**. I ett Workspace-projekt väljer du ![Lägg till](/help/assets/icons/Add.svg) i ![Kalender](/help/assets/icons/Calendar.svg) **Datumintervall** från den vänstra panelen Komponenter.
+* F. I en visualisering som stöds, som en linjevisualisering, väljer du **[!UICONTROL Annotate Selection]** på snabbmenyn på en datapunkt.
 
 Om du vill definiera anteckningen använder du [[!UICONTROL Date range builder]](#annotation-builder):
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '8489'
 ht-degree: 2%
@@ -1570,7 +1570,7 @@ Delar ett värde från ett fält i ett nytt härlett fält.
 
 | Typ av indatadata | Indata | Operatorer som ingår | Gräns | Utdata |
 |---|---|---|---|---|
-| <ul><li>Sträng</li><li>Numeriskt</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></ul><ul><li>[!UICONTROL Method]:</li><ul><li>Från vänster</li><li>Från höger</li><li>Konvertera till array</li></ul></li><li>För avgränsare:<ul><li>Sträng</li></ul><li>För index:<ul><li>Numeriskt</li></ul></li> | <p>Ej tillämpligt</p> | <p>5 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
+| <ul><li>Sträng</li><li>Numeriskt</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Regler</li><li>Standardfält</li><li>Fält</li></ul></ul><ul><li>[!UICONTROL Method]:</li><ul><li>Från vänster</li><li>Från höger</li><li>Konvertera till array</li></ul></li><li>För avgränsare:<ul><li>Sträng</li></ul><li>För index:<ul><li>Numeriskt</li></ul></li> | <p>Ej tillämpligt</p> | <p>2 funktioner per härlett fält</p> | <p>Nytt härlett fält</p> |
 
 {style="table-layout:auto"}
 
@@ -1966,7 +1966,7 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 | <p>Sammanfoga fält</p> | <ul><li>2 Funktioner för att slå samman fält per härlett fält</li></ul> |
 | <p>Nästa eller Föregående</p> | <ul><li>3 Nästa eller Föregående funktion per härlett fält</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace-funktion per härlett fält</li></ul> |
-| <p>Dela</p> | <ul><li>5 Delningsfunktioner per härlett fält</li></ul> |
+| <p>Dela</p> | <ul><li>2 Delningsfunktioner per härlett fält</li></ul> |
 | <p>Sammanfatta</p> | <ul><li>3 Sammanfatta funktioner per härlett fält</li></ul> |
 | <p>Rensa</p> | <ul><li>1 Trimningsfunktion per härlett fält</li></ul> |
 | <p>URL-parsning</p> | <ul><li>5 URL-tolkningsfunktioner per härlett fält</li></ul> |

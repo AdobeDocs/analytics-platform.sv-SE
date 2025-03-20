@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 02026709480872216ee76e842045517822c59bff
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 3%
@@ -24,7 +24,7 @@ Du kan använda en Flow-visualisering med datauppsättnings-ID-dimensionen.
 
 1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och skapa ett tomt Workspace-projekt.
 2. Välj fliken **[!UICONTROL ** Visualiseringar **]** till vänster och dra en **[!UICONTROL ** Flödesvisualisering **]** till arbetsytan till höger.
-3. Markera fliken **[!UICONTROL ** Komponenter **]** till vänster och dra dimensionen **[!UICONTROL ** Datauppsättning-ID **]** till mittplatsen **[!UICONTROL ** Dimension eller Objekt **]**.
+3. Markera fliken **[!UICONTROL ** Komponenter **]** till vänster och dra dimensionen **[!UICONTROL ** Datauppsättning-ID **]** till mittplatsen **[!UICONTROL ** Dimension eller Item **]**.
 4. Den här flödesrapporten är interaktiv. Om du vill expandera flödena till efterföljande eller föregående sidor markerar du något av värdena. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
 
 Om du vill byta namn på dimensionsobjekt för datauppsättnings-ID kan du använda en uppslagsdatauppsättning.
@@ -67,7 +67,7 @@ För diagrambaserade sammanfogningar kan en person ha många beständiga ID:n i 
 
 +++ När jag har kontaktat mitt Adobe-kontoteam med den önskade informationen, hur lång tid tar det innan den inmatade datauppsättningen blir tillgänglig?
 
-Det finns direktutjämning ungefär en vecka efter det att Adobe har synat sig. Tillgängligheten för förifyllning beror på mängden befintliga data. Små datauppsättningar (mindre än 1 miljon händelser per dag) tar normalt några dagar, medan stora datauppsättningar (1 miljard händelser per dag) kan ta en vecka eller mer.
+Livesutsättning är tillgänglig cirka en vecka efter det att Adobe möjliggör syning. Tillgängligheten för förifyllning beror på mängden befintliga data. Små datauppsättningar (mindre än 1 miljon händelser per dag) tar normalt några dagar, medan stora datauppsättningar (1 miljard händelser per dag) kan ta en vecka eller mer.
 
 +++
 
@@ -85,7 +85,7 @@ Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journe
 
 +++ Hur hanterar Stitching sekretessförfrågningar?
 
-Adobe hanterar förfrågningar om sekretess i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka in dataåtkomst och borttagningsbegäranden. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
+Adobe hanterar förfrågningar om integritet i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka in dataåtkomst och borttagningsbegäranden. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
 
 >[!IMPORTANT]
 >
@@ -170,7 +170,7 @@ När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med
 Om fältet för beständigt ID är tomt för en händelse i en datauppsättning som sammanfogas, bestäms ID:t för den händelsen på ett av två sätt:
 
 * Om fältet Transient ID inte är tomt använder Customer Journey Analytics värdet i Transient ID som Stitched ID.
-* Om fältet Övergående ID är tomt lämnar Customer Journey Analytics också fältet Stitched ID tomt. I det här fallet är Persistent ID, Transient ID och Stitched ID tomma för händelsen. Dessa typer av händelser tas bort från alla Customer Journey Analytics-anslutningar med datauppsättningen som sammanfogas där Stitched ID valdes som person-ID.
+* Om fältet Transient ID är tomt lämnas också Stitched ID tomt. I det här fallet är Persistent ID, Transient ID och Stitched ID tomma för händelsen. Dessa typer av händelser tas bort från alla Customer Journey Analytics-anslutningar som använder datauppsättningen som sammanfogas där Stitched ID valdes som person-ID.
 
 +++
 
@@ -199,17 +199,17 @@ Var försiktig med &quot;personkomprimering&quot;, som inträffar när sammanfog
 
 ## Jämförelse av mått
 
-+++ Hur fungerar mätvärden i datauppsättningar som sammanfogats med Customer Journey Analytics jämfört med liknande värden i datauppsättningar som inte sammanställts med Customer Journey Analytics och med Adobe Analytics?
++++ Hur fungerar mätvärden i Customer Journey Analytics sammanslagna datauppsättningar jämfört med liknande värden i Customer Journey Analytics osökta datauppsättningar och med Adobe Analytics?
 
 Vissa mätvärden i Customer Journey Analytics liknar mätvärden i traditionell analys, men andra är olika beroende på vad du jämför. I tabellen nedan jämförs flera vanliga mätvärden:
 
-| **Customer Journey Analytics sammanfogade data** | **Data som inte sammanfogats med Customer Journey Analytics** | **Adobe Analytics** | **Analysera Ultimate med CDA** |
+| **Customer Journey Analytics sammanfogade data** | **Customer Journey Analytics oschade data** | **Adobe Analytics** | **Analysera Ultimate med CDA** |
 | ----- | ----- | ----- | ----- |
 | **Personer** = Antal distinkta person-ID:n där Stitched ID väljs som person-ID. **Personer** kan vara högre eller lägre än **Unika besökare** i traditionella Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Personer** = Antal distinkta person-ID:n baserat på den kolumn som valts som person-ID. **Personer** i Analytics-källanslutningsdatauppsättningar liknar **Unika besökare** i traditionella Adobe Analytics om `endUserIDs._experience.aaid.id` används som person-ID i Customer Journey Analytics. | **Unika besökare** = Antal distinkta besökar-ID. **Unika besökare** kanske inte är samma som antalet distinkta **ECID** s. | Se [Personer](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
-| **Sessioner**: Definieras baserat på sessionsinställningarna i datavyn Customer Journey Analytics. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i datavyn i Customer Journey Analytics. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i den virtuella [CDA-rapportsviten](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
-| **Händelser** = antal rader i sammanslagna data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med ett tomt Persistent ID. | **Händelser** = antal rader i osydda data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock att om några händelser har ett tomt person-ID i de data som inte sammanställts i datavjön i Experience Platform, ingår inte dessa händelser i Customer Journey Analytics. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
+| **Sessioner**: Definieras baserat på sessionsinställningarna i Customer Journey Analytics datavy. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i datavyn för Customer Journey Analytics. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Besök**: Definieras baserat på sessionsinställningarna som anges i den virtuella [CDA-rapportsviten](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
+| **Händelser** = antal rader i sammanslagna data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med ett tomt Persistent ID. | **Händelser** = antal rader i osydda data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock att om några händelser har ett tomt person-ID i de icke sammansatta data som finns i Experience Platform datavinje, ingår inte dessa händelser i Customer Journey Analytics. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
-Andra mätvärden kan vara liknande i Customer Journey Analytics och Adobe Analytics. Det totala antalet för [anpassade Adobe Analytics-händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är till exempel jämförbart mellan traditionella Adobe Analytics och Customer Journey Analytics (oavsett om de är sammanfogade eller inte). [Skillnader i funktioner](/help/getting-started/aa-vs-cja/cja-aa.md)), t.ex. borttagning av dubbletter av händelser mellan Customer Journey Analytics och Adobe Analytics, kan orsaka diskrepans mellan de två produkterna.
+Andra mätvärden kan likna i Customer Journey Analytics och Adobe Analytics. Det totala antalet för [anpassade Adobe Analytics-händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) 1-100 är till exempel jämförbart mellan traditionella Adobe Analytics och Customer Journey Analytics (oavsett om de är sammanfogade eller inte). [Skillnader i funktioner](/help/getting-started/aa-vs-cja/cja-aa.md)), t.ex. borttagning av dubbletter av händelser mellan Customer Journey Analytics och Adobe Analytics, kan orsaka diskrepans mellan de två produkterna.
 
 +++
 
@@ -217,7 +217,7 @@ Andra mätvärden kan vara liknande i Customer Journey Analytics och Adobe Analy
 
 +++ Kan Customer Journey Analytics använda fält för identitetskarta?
 
-Nej, Customer Journey Analytics kan för närvarande inte använda Identitetskarta-fält för sammanfogning.
+Nej, Customer Journey Analytics kan för närvarande inte använda Identity Map-fält för sammanfogning.
 
 +++
 
@@ -225,7 +225,7 @@ Nej, Customer Journey Analytics kan för närvarande inte använda Identitetskar
 
 +++ Måste data kapslas om för att växla från fältbaserad sammanfogning till diagrambaserad sammanfogning?
 
-Data behöver inte kapslas in i Experience Platform, men måste konfigureras om i Customer Journey Analytics. Följ dessa steg:
+Data behöver inte kapslas in på nytt i Experience Platform, men de måste konfigureras om i Customer Journey Analytics. Följ dessa steg:
 
 1. Konfigurera den nya diagrambaserade sammanslagna datauppsättningen.
 1. Konfigurera den nya datauppsättningen som en del av en ny anslutning i Customer Journey Analytics.

@@ -4,9 +4,9 @@ description: Så här skapar du anteckningar i Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ Du kan skapa en anteckning på följande sätt:
 
 ![Skapa en anteckning](assets/create-annotation.png)
 
-* ? I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Annotations]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] i [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md).
-* ? I ett Workspace-projekt väljer du **[!UICONTROL Create annotation from selection]** på snabbmenyn i en visualisering.
-* ? I ett Workspace-projekt väljer du **[!UICONTROL Annotate Selection]** på snabbmenyn i ett linjediagram.
-* ??I ett Workspace-projekt väljer du **[!UICONTROL Components]** på menyn och sedan **[!UICONTROL Create annotation]**.
-* ? Använd genvägen **[!UICONTROL ctrl+shift+o]** (Windows) eller **[!UICONTROL shift+command+o]** (macOS) i ett Workspace-projekt
+* **A**. I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Annotations]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] i [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md).
+* **B**. I ett Workspace-projekt väljer du **[!UICONTROL Create annotation from selection]** på snabbmenyn i en visualisering.
+* **C**. I ett Workspace-projekt väljer du **[!UICONTROL Annotate Selection]** på snabbmenyn i ett linjediagram.
+* **D**. I ett Workspace-projekt väljer du **[!UICONTROL Components]** på menyn och sedan **[!UICONTROL Create annotation]**.
+* **E**.  Använd genvägen **[!UICONTROL ctrl+shift+o]** (Windows) eller **[!UICONTROL shift+command+o]** (macOS) i ett Workspace-projekt
 
 Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]](#annotation-builder):
 
