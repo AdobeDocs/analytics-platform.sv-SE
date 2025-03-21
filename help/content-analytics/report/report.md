@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
+source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Så här använder du mallen:
 1. I dialogrutan **[!UICONTROL Set up your template]** väljer du ett mått i dialogrutan **[!UICONTROL Select a conversion metric]**. Exempel: **[!UICONTROL Asset CTR]**.
 1. Välj **[!UICONTROL Continue]**.
 
-Ett **[!UICONTROL Content Analytics Overview]**-projekt öppnas i Workspace. Projektet består av fyra paneler, där varje panel innehåller frihandsritabeller och visualiseringar som besvarar en viss fråga:
+Ett **[!UICONTROL Content Analytics Overview]**-projekt öppnas i [Analysis Workspace](/help/analysis-workspace/home.md). Projektet består av fyra [paneler](/help/analysis-workspace/c-panels/panels.md), där varje panel innehåller [frihandstabeller](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) och [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) som kan besvara en viss fråga:
 
 * **Vilket innehåll fungerar bäst?**
 Panelen hjälper er att förstå vilka upplevelser och vilka resurser i upplevelserna som skapar engagemang och konverteringar. Upplevelserna är en komplett webbsida som spelas in vid en viss tidpunkt. En upplevelse kan innehålla både text och flera enskilda bildresurser. En resurs är en enskild bild.
@@ -85,9 +85,9 @@ Panelen hjälper er att förstå vilka upplevelser och vilka resurser i upplevel
 
    * **Erfarenheter**
 
-      * **Upplev CTR**: en sammanfattning av visualisering av ändringar som visar Experience CTR.
-      * **Top converting experiences**: En horisontell stapeldiagramvisualisering som visar de mest konverterande upplevelserna baserat på det valda konverteringsmåttet.
-      * **De bästa upplevelserna**: En frihandstabell (inklusive miniatyrbilder och förhandsvisningar) för de mest högpresterande upplevelserna.
+      * **Upplev CTR**: en [sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) visualisering, som visar upplevelseindikatorn för aktuell tid.
+      * **Top converting experiences**: En [horisontell fältvisualisering](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de bästa konverteringsupplevelserna baserat på det valda konverteringsmåttet.
+      * **De bästa upplevelserna**: En [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (inklusive [miniatyrbilder](#thumbnails) och [förhandsvisningar](#previews)) för de bästa upplevelserna.
 
    * **Assets**
 
