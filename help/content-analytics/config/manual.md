@@ -7,19 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
 # Manuell konfiguration för innehållsanalys
 
->[!WARNING]
->
->Den här artikeln är ett preliminärt inofficiellt utkast till en kommande slutversion och ingår i Content Analytics-dokumentationen. Allt innehåll kan ändras och inga rättsliga skyldigheter kan härledas från den aktuella versionen av den här artikeln.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -31,14 +28,14 @@ Följande manuella konfigurationsåtgärder är tillgängliga:
 
 Så här aktiverar du en ny konfiguration eller ändringar som du har gjort i en befintlig konfiguration:
 
-1. Du måste följa [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Biblioteket för taggegenskapen som innehåller din Content Analytics-konfiguration har publicerats. Endast då samlas Content Analytics-data in för de domäner, upplevelser och resurser som du har konfigurerat.
+1. Du måste följa [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Biblioteket för taggegenskapen som innehåller din Content Analytics-konfiguration har publicerats.
 
 1. Du måste [installera](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) den inbäddade koden i `<head>`-elementet på sidorna i din utvecklings-, staging- eller publiceringsmiljö, enligt Content Analytics.
 
 
 ## Inaktivera
 
-Så här inaktiverar du insamling av innehållsanalysdata:
+Så här inaktiverar du samlingen av innehållsanalysdata:
 
 1. Ta bort den [inbäddade koden](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) i `<head>`-elementet för sidorna i din utvecklings-, staging- eller produktionsmiljö, som omfattas av Content Analytics.
 1. [Ta bort](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) den associerade taggegenskapen för din Content Analytics-konfiguration.
@@ -57,6 +54,10 @@ Du använder [Adobe Content Analytics-tillägget](https://experienceleague.adobe
   >
   >Kontrollera att den sandlåda och datastam som du konfigurerar i Adobe Content Analytics-tillägget redan har konfigurerats för Content Analytics med den [guidade konfigurationen](guided.md) i ett tidigare skede. Den här konfigurationen ser till att alla nödvändiga artefakter är tillgängliga.<br/><br/>Verifiera också att uppdateringar för sandbox eller datastreams inte stör en annan Content Analytics-konfiguration som är konfigurerad att använda samma sandlåda eller datastreams.
   >
+
+* [Upplevelsehämtning och definition](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+
+  Du kan redigera det reguljära uttrycket för att ändra hur du gör .
 
 * [Händelsefiltrering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 

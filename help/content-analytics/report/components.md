@@ -7,19 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1350'
 ht-degree: 1%
 
 ---
 
 # Content Analytics-komponenter
 
->[!WARNING]
->
->Den här artikeln är ett preliminärt inofficiellt utkast till en kommande slutversion och ingår i Content Analytics-dokumentationen. Allt innehåll kan ändras och inga rättsliga skyldigheter kan härledas från den aktuella versionen av den här artikeln.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -33,7 +30,7 @@ I Content Analytics läggs följande kategorier av komponenter (dimensioner, (be
 * [Assets event](#asset-events)
 * [Beräknade mått](#calculated-metrics)
 
-I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/ML-genererat värde.
+I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/ML-genererat attribut/värdepar.
 
 ## Upplev metadata
 

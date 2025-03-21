@@ -7,43 +7,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 1%
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
 # Konfigurera innehållsanalys
 
->[!WARNING]
->
->Den här artikeln är ett preliminärt inofficiellt utkast till en kommande slutversion och ingår i Content Analytics-dokumentationen. Allt innehåll kan ändras och inga rättsliga skyldigheter kan härledas från den aktuella versionen av den här artikeln.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
 Konfigurationen av Content Analytics består av följande steg:
 
-![Konfiguration av innehållsanalys](../assets/aca-configuration.svg)
+![Konfiguration av innehållsanalys](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. Använd guiden [guidad konfiguration](guided.md) från Content Analytics för att vägleda dig genom alla steg som krävs för att ställa in förutsättningarna för en konfiguration av Content Analytics. Du kan spara dina konfigurationer och returnera dem senare.
-1. När du känner dig bekväm med konfigurationsvärdena kan du implementera konfigurationen. Den här implementeringen skapar alla nödvändiga artefakter, baserat på vad du har konfigurerat i guiden. Följande artefakter skapas, uppdateras eller väljs:
-   * Customer Journey Analytics
-      * En [datavy](/help/data-views/data-views.md) har valts.
-      * En [anslutning](/help/connections/overview.md) är markerad och hämtas automatiskt från den valda datavyn.
-   * Experience Platform
-      * Sandlådan markeras och hämtas automatiskt från anslutningen. Nödvändiga arbetsflöden och tjänster aktiveras i sandlådan.
-      * Content Analytics-scheman markeras i sandlådan. Om det inte är tillgängligt skapas de nödvändiga scheman.
-      * Content Analytics datamängder markeras i sandlådan. Om de inte är tillgängliga skapas de nödvändiga datauppsättningarna.
-   * Datainsamling
-      * En datastream skapas och en Experience Platform-tjänst konfigureras i datastream för att strömma data till händelsedatauppsättningen för upplevelsen av Content Analytics.
-      * En taggegenskap skapas med Adobe Content Analytics-tillägget konfigurerat för rätt sandlåda, datastream och andra konfigurationsalternativ från konfigurationsguiden.
+1. Använd guiden [guidad konfiguration](guided.md) från Content Analytics för att vägleda dig genom alla steg som krävs för att ställa in förutsättningarna för en konfiguration av Content Analytics. Du kan spara dina konfigurationer när som helst och returnera dem senare.
+1. När du känner dig bekväm med konfigurationsvärdena kan du implementera konfigurationen. Den här implementeringen skapar alla nödvändiga artefakter, baserat på vad du har konfigurerat i guiden.
 1. Endast när du [manuellt publicerar](manual.md) taggegenskapen distribueras och aktiveras din Content Analytics-konfiguration.
 
 1. Du kan bara göra vissa mindre ändringar i en implementerad konfiguration med guiden [guidad konfiguration](guided.md). Ändra till exempel [datavyn](/help/data-views/data-views.md).
-1. Du kan göra andra ändringar i en implementerad konfiguration. Använd [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) i den associerade taggegenskapen.
-1. Endast när du [manuellt återpublicerar ](manual.md) taggegenskapen distribueras och aktiveras konfigurationsändringarna från steg 4 och 5.
+1. Du kan göra andra ändringar i en implementerad konfiguration med [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) i den associerade taggegenskapen.
+1. Endast när du [manuellt återpublicerar ](manual.md) taggegenskapen distribueras och aktiveras konfigurationsändringarna.
 
 
 ## Förutsättningar

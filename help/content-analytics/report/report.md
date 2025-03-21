@@ -7,30 +7,27 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: df3a877feed82f6cbd181561da68837373bdafb8
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
 
 # Översikt över Content Analytics-rapportering
 
->[!WARNING]
->
->Den här artikeln är ett preliminärt inofficiellt utkast till en kommande slutversion och ingår i Content Analytics-dokumentationen. Allt innehåll kan ändras och inga rättsliga skyldigheter kan härledas från den aktuella versionen av den här artikeln.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
-Rapportering om innehållsanalys görs i Analysis Workspace. En specifik Workspace [mall](#template) finns tillgänglig, så du kan omedelbart komma åt ett förifyllt Workspace-projekt med relevanta innehållsinsikter.
+Du rapporterar, gör analyser och får insikter om Content Analytics inom [Analysis Workspace](/help/analysis-workspace/home.md). En specifik Workspace [mall](#template) finns tillgänglig, så du kan omedelbart komma åt ett förifyllt Workspace-projekt med relevanta innehållsinsikter.
 
 Så här börjar du rapportera om innehållsanalys från grunden:
 
 1. [Skapa ett nytt](/help/analysis-workspace/build-workspace-project/create-projects.md) eller [öppna ett befintligt](/help/analysis-workspace/build-workspace-project/open-projects.md)-projekt i Workspace.
 1. Se till att du [väljer en datavy](/help/analysis-workspace/c-panels/panels.md#data-view) för Content Analytics-rapportering. Content Analytics-rapportering är bara tillgängligt för datavyer som är [konfigurerade](/help/content-analytics/config/configuration.md) för Content Analytics.
 1. Dra en ![tabellvisualisering](/help/assets/icons/Table.svg) [Frihandsritabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) på arbetsytan.
-1. Använd [specifika komponenter för innehållsanalys](components.md) och andra generiska [komponenter](/help/components/overview.md) (som filter, datumintervall, anteckningar) för att skapa insikter för innehållsanalyser. Du kan också använda mallen [Innehållsanalys](#template).
+1. Använd [specifika komponenter för innehållsanalys](components.md) och andra generiska [komponenter](/help/components/overview.md) (som filter, datumintervall, anteckningar) för att skapa insikter för innehållsanalyser.
 
 ## Miniatyrbilder
 
@@ -38,9 +35,16 @@ Baserat på de dimensioner av innehållsanalysen som du använder i ditt projekt
 
 ![Miniatyrbilder för innehållsanalys](../assets/aca-thumbnails.png)
 
+Så här konfigurerar du visningen av miniatyrbilder för en Content Analytics-dimension:
+
+* Hovra över en rubrikrad för en Content Analytics-dimension. Till exempel **[!UICONTROL Asset Name]** eller **[!UICONTROL Experience IDs]**.
+* Välj ![Inställning](/help/assets/icons/Setting.svg).
+* I popup-fönstret **[!UICONTROL Row setting]**, under **[!UICONTROL Settings]**, markerar eller avmarkerar **[!UICONTROL Show Thumbnails]**.
+
+
 ## Förhandsgranskningar
 
-För dimensioner som har miniatyrbilder (som Resursnamn, Upplevelsenamn med flera) kan du öppna ett popup-fönster för förhandsvisning.
+För rader med en Content Analytics-dimension som visar miniatyrbilder kan du öppna ett popup-fönster för förhandsvisning.
 
 Så här öppnar du förhandsgranskningen med följande information:
 
@@ -50,11 +54,11 @@ Så här öppnar du förhandsgranskningen med följande information:
   |---|---|
   | ![Förhandsgranskning av upplevelse av innehållsanalys](../assets/aca-experience-preview.png) | ![Förhandsgranskning av innehållsanalysresurser](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Name of the experience]** | **[!UICONTROL Name of the asset]** |
-  | **[!UICONTROL Impressions (all times)]**: Antal visningar för upplevelsen. | **[!UICONTROL Impressions (all times)]**: Antal visningar för resursen. |
-  | **[!UICONTROL Assets]**: Antal resurser som den här upplevelsen innehåller. Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. | **[!UICONTROL Experiences]**: Antal upplevelser där den här resursen visas. ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. |
+  | **[!UICONTROL Impressions (all time)]**: Antal visningar för upplevelsen. | **[!UICONTROL Impressions (all times)]**: Antal visningar för resursen. |
+  | **[!UICONTROL Assets]**: Antal resurser som den här upplevelsen innehåller. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. | **[!UICONTROL Experiences]**: Antal upplevelser där den här resursen visas. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. |
   | **[!UICONTROL First impression]**: Datum för första intryck av upplevelsen. | **[!UICONTROL First impression]**: Datum för första exponering av resursen. |
   | **[!UICONTROL  Most recent impression]**: Datum för det senaste intrycket av upplevelsen. | **[!UICONTROL Most recent impression]**: Datum för det senaste intrycket av resursen. |
-  | **[!UICONTROL Experience attributes]**: Attributen för upplevelsen. | **[!UICONTROL Asset attributes]**: Resursens attribut. |
+  | **[!UICONTROL Experience attributes]**: Upplevelsens [attribut](/help/content-analytics/report/components.md#experience-attributes). | **[!UICONTROL Asset attributes]**: Resursens [attribut](/help/content-analytics/report/components.md#asset-attributes). |
 
 
 ## Mall
@@ -72,7 +76,7 @@ Så här använder du mallen:
 1. I dialogrutan **[!UICONTROL Set up your template]** väljer du ett mått i dialogrutan **[!UICONTROL Select a conversion metric]**. Exempel: **[!UICONTROL Asset CTR]**.
 1. Välj **[!UICONTROL Continue]**.
 
-Ett **[!UICONTROL Content Analytics Overview]**-projekt öppnas i Workspace. Projektet består av fyra paneler där varje panel besvarar specifika frågor:
+Ett **[!UICONTROL Content Analytics Overview]**-projekt öppnas i Workspace. Projektet består av fyra paneler, där varje panel innehåller frihandsritabeller och visualiseringar som besvarar en viss fråga:
 
 * **Vilket innehåll fungerar bäst?**
 Panelen hjälper er att förstå vilka upplevelser och vilka resurser i upplevelserna som skapar engagemang och konverteringar. Upplevelserna är en komplett webbsida som spelas in vid en viss tidpunkt. En upplevelse kan innehålla både text och flera enskilda bildresurser. En resurs är en enskild bild.
@@ -129,18 +133,18 @@ En [ linje ](/help/analysis-workspace/visualizations/line.md) -visualisering som
 En [ friformstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar nyckelorden för de översta upplevelserna baserat på det valda konverteringsmåttet.
 
 * **Var visas resurser på min webbplats?**
-En panel som består av en frihandstabell som innehåller information om var de flesta vyresurserna finns på webbplatsen.
+En panel som består av en frihandstabell som innehåller information om var de mest visade resurserna visas på webbplatsen.
 
   Panelen består av en visualisering:
 
    * **Var visas de mest visade resurserna?**
-Du kan dela upp alla tillgångs-ID utifrån dimensioner som hjälper dig att förstå var bilden visas.
+Du kan dela upp en resurs efter dimensioner för att få en bättre förståelse för var bilden visas.
 
-     I det här exemplet används [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (inklusive [miniatyrbilder](#thumbnails) och [förhandsvisningar](#previews)), [!UICONTROL *Resursens ID*] i stället för [!UICONTROL *Resurs-ID*]. Ibland kan samma bild dupliceras på webbplatsen med en annan bild-URL. Med attributet [!UICONTROL _Resursupptäckt_] kan du gruppera dessa dubbletter under ett enda ID. Eftersom resurser kan ändras på en sida, delas varje resurs upp efter [!UICONTROL _Experience ID_], för att identifiera vilken version av sidan som resursen fanns på.
+     I exemplet [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (inklusive [miniatyrbilder](#thumbnails) och [förhandsvisningar](#previews)) används **[!UICONTROL Asset Perception ID]** i stället för [!UICONTROL Asset Id]. Ibland kan samma bild dupliceras på webbplatsen med en annan bild-URL. Attributet [!UICONTROL Asset Perception ID] hjälper till att gruppera dessa dubbletter under ett enda ID.
 
-     Du kan ersätta [!UICONTROL _Experience ID_] med andra dimensioner som hjälper dig att förstå platsen för en resursplats på din plats. Exempel: [!UICONTROL _Sidnamn_], [!UICONTROL _sidadress_] eller [!UICONTROL _webbplatsavsnitt_].
+     Eftersom resurser kan ändras på en sida, delas varje resurs upp efter **[!UICONTROL Experience Id]** för att identifiera vilken version av sidan som resursen fanns på. Du kan ersätta [!UICONTROL Experience Id] med andra dimensioner som hjälper dig att förstå platsen för en resurs på din plats. Till exempel [!UICONTROL Page name], [!UICONTROL Page URL] eller [!UICONTROL Site section].
 
-     Du kan också byta ut [!UICONTROL _Perception-ID_] mot [!UICONTROL _Resurs-ID_] för att få en post med var specifika bild-URL:er refereras.
+     Du kan också växla ut [!UICONTROL Asset Perception ID] med [!UICONTROL Asset Id] för att få en post över var specifika bild-URL:er refereras.
 
 
 >[!MORELIKETHIS]
