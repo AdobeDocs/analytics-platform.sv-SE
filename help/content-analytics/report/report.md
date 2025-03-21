@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1175'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Baserat på de dimensioner av innehållsanalysen som du använder i ditt projekt
 
 ![Miniatyrbilder för innehållsanalys](../assets/aca-thumbnails.png)
 
-Så här konfigurerar du visningen av miniatyrbilder för en Content Analytics-dimension:
+Som standard visas miniatyrbilder för relevanta Content Analytics-dimensioner. Så här konfigurerar du visningen av miniatyrbilder för en Content Analytics-dimension:
 
 * Hovra över en rubrikrad för en Content Analytics-dimension. Till exempel **[!UICONTROL Asset Name]** eller **[!UICONTROL Experience IDs]**.
 * Välj ![Inställning](/help/assets/icons/Setting.svg).
