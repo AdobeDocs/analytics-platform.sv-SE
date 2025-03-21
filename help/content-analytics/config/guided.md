@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: e8ba272d2deb535374a47b61c22d58c4168ff50c
 workflow-type: tm+mt
-source-wordcount: '3215'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -262,7 +262,7 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
 
   ![Tagg för befintlig datainsamling för innehållsanalys](../assets/aca-configuration-datacollection-existingtag.png)
 
-   1. Välj **[!UICONTROL Existing]**.
+   1. Välj **[!UICONTROL Choose existing]**.
    2. Välj en befintlig egenskap i listrutan **[!UICONTROL Tags property]**. Du kan börja skriva för att söka efter och begränsa de tillgängliga alternativen.
 
 * Så här skapar du en ny taggegenskap:
@@ -271,16 +271,15 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
 
    1. Välj **[!UICONTROL Create new]**.
    1. Ange en **[!UICONTROL Tags name]**, till exempel `ACA Test for Documentation`.
-  <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
-   1. Välj **[!UICONTROL Add]**.
+   1. Ange **[!UICONTROL Domains]**, till exempel `example.com`.
 
 * Om du har valt att inkludera upplevelser, ange vilka sidor som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
 
-   * Ange ett vanligt uttryck för **[!UICONTROL Experience]**. Till exempel: `/^(?!.*documentation).*/` om du vill exkludera alla dokumentationssidor från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
+   * Ange en sträng för reguljärt uttryck för **[!UICONTROL Pages to include / exclude]**. Till exempel: `/^(?!.*documentation).*/` om du vill exkludera alla dokumentationssidor från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
 
 * Ange vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
 
-   * Ange ett vanligt uttryck för **[!UICONTROL Asset]**. Till exempel: `/^(?!.*(logo\.jpg|\.svg)).*$/` om du vill exkludera alla JPEG- och SVG-logotyper från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
+   * Ange en sträng för reguljärt uttryck för **[!UICONTROL Assets to include / exclude]**. Till exempel: `/^(?!.*(logo\.jpg|\.svg)).*$/` om du vill exkludera alla JPEG- och SVG-logotyper från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
 
 
 #### Befintlig konfiguration {#existing-configuration}
