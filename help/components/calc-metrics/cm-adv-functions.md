@@ -4,9 +4,9 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
+source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4267'
+source-wordcount: '4376'
 ht-degree: 1%
 
 ---
@@ -729,7 +729,7 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 
 
-## Lyft (#lift)
+## Lyft {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -739,6 +739,10 @@ Mindre än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 >abstract="Höjden på kvoten jämfört med kontrollvärdet."
 
 <!-- markdownlint-enable MD034 -->
+
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(normalizing-container, success-metric, control)]**
+
+Höjden på kvoten jämfört med kontrollvärdet.
 
 | Argument | Beskrivning |
 | --- | --- |
@@ -1338,6 +1342,27 @@ Returnerar Pi: 3,14159...
 | metric_Y | Ett mätvärde som du vill ange som oberoende data |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna |
 
+
+
+## Provvarians
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="functions-waskr-variance-estimate"
+>title="Provvarians"
+>abstract="Beräknar en uppskattning av samplingsvariansen med hjälp av formeln (summa(metrisk^2) / (N - 1)) - (summa(metrisk))^2/(N*(N-1)). där N är antalet för den normaliserande behållaren. <br/>Detta används som en del av *valfri tid för giltiga* konfidensberäkningar. I allmänhet är den här funktionen inte användbar ensam, utan kan användas för att kontrollera beräkningar eller för att utföra konfidensberäkningar *manuellt*."
+
+![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
+
+Beräknar en uppskattning av provavvikelsen.
+
+| Argument | Beskrivning |
+| --- | --- |
+| normalizing-container | Basen (Personer, Sessioner eller Händelser) som ett test körs på. |
+| framgångsmått | Mätvärden eller mätvärden som en användare jämför varianter med. |
+
+<!-- markdownlint-enable MD034 -->
 
 
 
