@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 82d7702c57fdff86fa1f4b70d75e7ff7f019ec86
+source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,11 @@ Skapa en friformstabell i Workspace och konfigurera den så att sessions-ID-vär
 
 1. Klicka på **[!UICONTROL Create]**.
 
-Varje sessions-ID är nu en klickbar länk. Länkarna tar dig till Quantum Metric på en ny flik så att du kan analysera den sessionen mer i detalj. Mer information om hur du lägger till hyperlänkar i Analysis Workspace-dimensionsobjekt finns i [Skapa hyperlänkar i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md).
+Varje sessions-ID är nu en klickbar länk. Mer information om hur du lägger till hyperlänkar i Analysis Workspace-dimensionsobjekt finns i [Skapa hyperlänkar i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md).
 
 ## Steg 2 Visa sessioner från Customer Journey Analytics
 
-När du har skapat Workspace-rapporten med klickbara länkar kan du använda filter i Customer Journey Analytics för att identifiera intressanta sessioner som du kan analysera ytterligare i kvantmätaren.
-Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Om du behöver ytterligare resurser kontaktar du kundsupportrepresentanten för Quantum Metric eller skickar en begäran via Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
+När du har hittat ett intressant segment som du vill utforska sessionsuppspelningar för kan du använda det på panelen som innehåller dina sessions-ID-länkar och filtrera efter segment. Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska mer i Quantum Metric.
+
+Läs mer om Quantum Metric-sessionsuppspelning på [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Om du behöver ytterligare resurser kontaktar du kundsupportrepresentanten för Quantum Metric eller skickar en begäran via Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
