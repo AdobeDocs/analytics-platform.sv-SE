@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 94dad68426a08ffa34ded7905567fbea307b1de4
+source-git-commit: 82d7702c57fdff86fa1f4b70d75e7ff7f019ec86
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -46,5 +46,5 @@ Varje sessions-ID är nu en klickbar länk. Länkarna tar dig till Quantum Metri
 ## Steg 2 Visa sessioner från Customer Journey Analytics
 
 När du har skapat Workspace-rapporten med klickbara länkar kan du använda filter i Customer Journey Analytics för att identifiera intressanta sessioner som du kan analysera ytterligare i kvantmätaren.
-Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)
+Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Om du behöver ytterligare resurser kontaktar du kundsupportrepresentanten för Quantum Metric eller skickar en begäran via Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
