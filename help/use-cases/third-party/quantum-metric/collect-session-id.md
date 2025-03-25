@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
+source-git-commit: 255f06ba504a0fa189a02966c5d3c63e1a4fadfd
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,11 @@ ht-degree: 0%
 
 Vissa användningsfall, som [att koppla Quantum Metric-sessionsåterspelningar](tie-session-replays.md) eller [med hjälp av kvantmetriska heatmaps](heatmap.md), kräver att du ändrar implementeringen för att samla in sessions-ID:t för kvantmetrisk. På den här sidan beskrivs processen för att överföra data till din befintliga implementering.
 
+## Förutsättningar
+
 I de här stegen förutsätts att du använder taggar i Adobe Experience Platform Data Collection. Du kan anpassa datainsamlingsmetoderna till en manuell implementering av Web SDK om din organisation inte använder taggar.
 
-## Steg 1: Hämta sessions-ID:t för kvantmått med tillägget för kvantmetriska taggar
+### Steg 1: Hämta sessions-ID:t för kvantmått med tillägget för kvantmetriska taggar
 
 Följ de här stegen för att lägga till Quantum Metric-sessions-ID:t till data som du skickar till Adobe Experience Platform.
 
@@ -37,11 +39,11 @@ Följ de här stegen för att lägga till Quantum Metric-sessions-ID:t till data
 
 Mer information finns i dokumentationen för [Quantum Metric-taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
 
-## Steg 2: Bekräfta inkluderade datamängdsfält
+### Steg 2: Bekräfta inkluderade datamängdsfält
 
 Bekräfta att datauppsättningarna i din anslutning nu har ett sessions-ID för kvantmått i den önskade datauppsättningen.
 
-## Steg 3: Lägg till sessions-ID för kvantmått som en tillgänglig dimension
+### Steg 3: Lägg till sessions-ID för kvantmått som en tillgänglig dimension
 
 Redigera den befintliga datavyn för att lägga till sessions-ID som en tillgänglig dimension i Customer Journey Analytics.
 
