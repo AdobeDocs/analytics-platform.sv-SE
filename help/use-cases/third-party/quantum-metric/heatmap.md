@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
+source-git-commit: b82a345fbae1a0ab2debf2c4eb580422745db473
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,6 @@ Du måste vara berättigad till Quantum Metric-paketet **UX Ops** för att komma
 
 ## Visa heatmaps genom att klicka på länkar i Customer Journey Analytics
 
-När du har hittat en sida som du vill utforska heatmapping för kan du använda den på panelen som URL:en finns i. Tabellen returnerar en URL som gör att du kan utforska heatmaps för sidan i fråga, rullningsdjup och nyckelzoner för interaktion.  Läs mer om kvantmetriska värmekartor på [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)
+När du har hittat en sida som du vill utforska heatmapping för kan du använda den på panelen som URL:en finns i. Tabellen returnerar en URL som gör att du kan utforska heatmaps för sidan i fråga, rullningsdjup och nyckelzoner för interaktion.  Mer information om kvantmetriska värmekartor finns på [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  Om du behöver ytterligare resurser kontaktar du kundsupportrepresentanten för Quantum Metric eller skickar en begäran via Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
 
