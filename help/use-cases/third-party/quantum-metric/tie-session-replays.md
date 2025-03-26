@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
+source-git-commit: 9563b13da52963eaf7b17050fb9a7cb3a47ef1ed
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Genom att länka Quantum Metric-sessionsuppspelningar till CJA-data kan kunderna bättre förstå&quot;varför&quot; bakom&quot;vad&quot;.  Workspace kan användas för att upptäcka sessioner med friktion. Sedan kan du klicka på hyperlänkade sessions-ID:n för att utforska sessionsreprisen i Quantum Metric.  Dessa data gör det möjligt att visa beteenden i en session och bättre förstå vad som driver konsumentens friktion.  Genom sessionsrepriser som är knutna till CJA kan ni fånga upp viktiga kontexter kring kundbeteenden i er upplevelse.
 
-## Förutsättningar
+## Förutsättningar:
 
 Det här användningsexemplet kräver att du samlar in Quantum Metrics sessions-ID tillsammans med resten av implementeringen. Mer information om hur du ändrar implementeringen finns i [Samla in sessions-ID:n för kvantmått i Customer Journey Analytics](collect-session-id.md).
 
