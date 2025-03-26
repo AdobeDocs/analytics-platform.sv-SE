@@ -5,9 +5,9 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 16e8668d88dda2784ba60a1fa4302225ceff190f
+source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,10 @@ ht-degree: 0%
 
 När du använder ett numeriskt värde som dimension kan du
 
-* Konfigurera alternativet&quot;Inget värde&quot; i en datavy. Observera att alla konfigurationsinställningar stöds förutom för **[!UICONTROL Treat "No value" as a value]**.
-* Använd [!UICONTROL Include "No value"] för numeriska dimensioner i en friformstabell i Workspace.
-* Använd operatorerna &quot;exists&quot; eller &quot;does not exist&quot; med numeriska dimensioner i filterverktyget.
+* Konfigurera alternativet&quot;Inget värde&quot; i en datavy. Observera att alla konfigurationsinställningar som visas ovan stöds förutom för **[!UICONTROL Treat "No value" as a value]**.
+* Använd **[!UICONTROL Include "No value"]** för numeriska dimensioner i en friformstabell i Workspace.
+* Använd operatorerna **[!UICONTROL exists]** eller **[!UICONTROL does not exist]** med numeriska dimensioner i filterverktyget.
+
 
 >[!MORELIKETHIS]
 >
