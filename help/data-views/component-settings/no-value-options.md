@@ -5,9 +5,9 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 16e8668d88dda2784ba60a1fa4302225ceff190f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 <!-- markdownlint-enable MD034 -->
 
 
-Med inga värdealternativ kan du bestämma hur Analysis Workspace ska hantera situationer där en händelse i en datauppsättning innehåller ett mått, men där dimensionen inte innehåller något värde. Du kan välja namnet på dimensionsobjektet, dölja det helt eller till och med behandla det som ett faktiskt värde.
+[!UICONTROL No value options] låter dig avgöra hur Analysis Workspace hanterar situationer där en händelse i en datauppsättning innehåller ett mått, men dimensionen inte innehåller något värde. Du kan välja namnet på dimensionsobjektet, dölja det helt eller till och med behandla det som ett faktiskt värde.
 
 ![Inga värdealternativ](../assets/no-value-options.png)
 
@@ -32,13 +32,20 @@ Med inga värdealternativ kan du bestämma hur Analysis Workspace ska hantera si
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL If shown, call "No value"] | Ett textfält där du kan byta namn på dimensionsobjektet **[!UICONTROL No value]** till något annat. |
-| [!UICONTROL Don't show No value by default] | Visar inte det här värdet vid rapportering. Måttförekomster som inte är kopplade till den här dimensionen visas inte i rapporten. |
-| [!UICONTROL Show No value by default] | Visar det här värdet i rapporteringen. |
-| [!UICONTROL Treat No value as a value] | Ersätter tomma värden i data med texten som du angav under [!UICONTROL If shown, call "No value"]. Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på objektet **[!UICONTROL No value]** till Desktop. När du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla instanser av strängen &quot;Red&quot; som visas i själva data att hamna under samma radobjekt som du har angett. |
+| **[!UICONTROL If shown, call "No value"]** | Ett textfält där du kan byta namn på dimensionsobjektet **[!UICONTROL No value]** till något annat. |
+| **[!UICONTROL Don't show "No value" by default]** | Visar inte det här värdet vid rapportering. Måttförekomster som inte är kopplade till den här dimensionen visas inte i rapporten. |
+| **[!UICONTROL Show "No value" by default]** | Visar det här värdet i rapporteringen. |
+| **[!UICONTROL Treat "No value" as a value]** | (Stöds inte för numeriska dimensioner) Ersätter tomma värden i data med texten som du angav under [!UICONTROL If shown, call "No value"]. Om du t.ex. har Mobile-enhetstyper som dimension kan du byta namn på objektet **[!UICONTROL No value]** till Desktop. När du ändrar det här fältet till ett anpassat värde behandlas det anpassade värdet som ett giltigt strängvärde. Om du anger värdet &quot;Red&quot; i det här fältet kommer alla instanser av strängen &quot;Red&quot; som visas i själva data att hamna under samma radobjekt som du har angett. |
 
-{style="table-layout:auto"}
+## &quot;Inget värde&quot;-stöd för numeriska dimensioner {#numeric}
 
-## Blogginlägg
+När du använder ett numeriskt värde som dimension kan du
 
-Här är ett relaterat blogginlägg om att [hantera&quot;inget värde&quot; i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+* Konfigurera alternativet&quot;Inget värde&quot; i en datavy. Observera att alla konfigurationsinställningar stöds förutom för **[!UICONTROL Treat "No value" as a value]**.
+* Använd [!UICONTROL Include "No value"] för numeriska dimensioner i en friformstabell i Workspace.
+* Använd operatorerna &quot;exists&quot; eller &quot;does not exist&quot; med numeriska dimensioner i filterverktyget.
+
+>[!MORELIKETHIS]
+>
+>Här är ett relaterat blogginlägg om att [hantera&quot;inget värde&quot; i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+
