@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1194'
 ht-degree: 1%
 
 ---
@@ -44,8 +44,6 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Experience Thumbnail URL | URL för upplevelsens miniatyrbild. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Vågrätt procentdjup | Kvantifierbart värde för upplevelsens horisontella procentuella djup. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Upplev vertikalt procentdjup | Kvantifierbart värde för upplevelsens vertikala procentdjup. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
-| Upplev vågrätt pixeldjup | Kvantifierbart värde för upplevelsens horisontella pixeldjup. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
-| Upplev vertikalt pixeldjup | Kvantifierbart värde för upplevelsens vertikala pixeldjup. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 
 {style="table-layout:fixed"}
 
@@ -55,7 +53,6 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 
 | Titel | Beskrivning | Typ | Inställningar |
 |---|---|---|---|
-| Upplevelseläsbarhetspoäng | ![AI genererade](/help/assets/icons/AI.svg) läsbarhetspoäng för upplevelsen. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Upplevelsenyckelord | ![AI genererade](/help/assets/icons/AI.svg) nyckelord för upplevelsen. | Dimension<br>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Experience Persucrap Strategies | ![AI genererade](/help/assets/icons/AI.svg) strategier för upplevelser som finns i den angivna upplevelsen. Möjliga värden är: Social identitet, socialt korrektur, auktoritet, kreativitet, fotnoter i dörren, överkommande reaktion, återkoppling, förankring och jämförelse, sociala effekter, skrämsel och antropomorfism. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
 | Upplev berättelser | ![AI genererade](/help/assets/icons/AI.svg) berättelser som upplevelsen bygger på relevans från en marknadsförares vypunkt. | Dimension<br/>Härlett fält | Visa \| Inget värde<br/>Senaste \| Session |
@@ -76,8 +73,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 
 | Titel | Beskrivning | Typ | Inställningar |
 |---|---|---|---|
-| Upplevelsevyer | Kvantifierbart mått på antalet visningar av upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
-| Upplev klickningar | Kvantifierbart mått på antalet klick i upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
+| Experience Views | Kvantifierbart mått på antalet visningar av upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
+| Experience Clicks | Kvantifierbart mått på antalet klick i upplevelsen. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 
 {style="table-layout:fixed"}
 
@@ -88,19 +85,12 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 |---|---|---|---|
 | Resurs-Source | URL för resursens offentliga tillgängliga källa. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Tillgångs-ID | Unik identifierare för tillgången. Resursens binärfil avgör unikheten. Om resursens binärfil ändras ändras inte ID:t. Det unika ID:t kan vara URL:en, men kan också vara en hash som skapats. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
-| Resursnamn | Namnet på resursen. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
-| Resurstyp | Typ av tillgång. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
-| Resursminiatyrbilds-URL | URL för resursens miniatyrbild. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Resurs, HTML Path | Sammansatt HTML-sökväg för resursen. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Resurslänk-URL | Närmaste sidankarpunkt för resursen. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Resursens visningsbredd | Visningsbredd för innehållsresurs. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Resursvisningshöjd | Visningshöjd för innehållsresurs. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Resurs - absolut vänster | Innehållsresurs absolut vänster. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
 | Tillgång absolut överkant | Innehållsresurs absolut överkant. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
-| Resurs skapad av | Identifierare för att skapa resurser. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
-| Skapad resurs | Skapad resurs | Dimension | Senaste \| Session |
-| Resursen uppdaterades senast av | Identifierare för tillgångsuppdatering. | Dimension | Visa \| Inget värde<br/>Senaste \| Session |
-| Senast uppdaterad | Tillgångsuppdateringsdatum. | Dimension | Senaste \| Session |
 
 {style="table-layout:fixed"}
 
@@ -134,7 +124,7 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Titel | Beskrivning | Typ | Inställningar |
 |---|---|---|---|
 | Resursvyer | Kvantifierbart mått för antalet visningar av tillgången. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
-| Klickningar på resurs | Kvantifierbart mått för antalet klick i tillgången. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
+| Resursklickningar | Kvantifierbart mått för antalet klick i tillgången. | Mått | Räkna värden<br/>Decimal \| Decimaler: 0 |
 
 {style="table-layout:fixed"}
 
@@ -156,8 +146,8 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 
 | Titel | Beskrivning | Typ | Inställningar |
 |---|---|---|---|
-| Klickfrekvens för resurs - styrfrekvens | Resursklickningar / Resursvyer | Beräknat mått | |
-| upplevelseklickfrekvens | Upplevelseklickningar/upplevelsevyer | Beräknat mått | |
+| Klickfrekvens för resurs - styrfrekvens | Resursklickningar/resursvyer | Beräknat mått | |
+| upplevelseklickfrekvens | Experience Clicks/Experience Views | Beräknat mått | |
 
 {style="table-layout:fixed"}
 

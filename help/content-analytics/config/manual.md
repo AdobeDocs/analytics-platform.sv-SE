@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -20,31 +20,31 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-I den här artikeln beskrivs de manuella åtgärder som krävs för att aktivera eller inaktivera en konfiguration för innehållsanalys eller för att redigera implementeringen av din Content Analytics.
+I den här artikeln beskrivs de manuella åtgärder som krävs för att starta eller stoppa datainsamlingen i en Content Analytics-konfiguration eller för att redigera din Content Analytics-implementering.
 
 Följande manuella konfigurationsåtgärder är tillgängliga:
 
-## Aktivera
+## Starta datainsamling
 
-Så här aktiverar du en ny konfiguration eller ändringar som du har gjort i en befintlig konfiguration:
+Så här startar du datainsamlingen för en implementerad Content Analytics-konfiguration:
 
-1. Du måste följa [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Biblioteket för taggegenskapen som innehåller din Content Analytics-konfiguration har publicerats.
+1. Följ [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Biblioteket för taggegenskapen som innehåller din Content Analytics-konfiguration har publicerats.
 
-1. Du måste [installera](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) den inbäddade koden i `<head>`-elementet på sidorna i din utvecklings-, staging- eller publiceringsmiljö, enligt Content Analytics.
+1. [Installera](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) den inbäddade koden i elementet `<head>` på sidorna i din utvecklings-, staging- eller publiceringsmiljö, enligt Content Analytics.
 
 
-## Inaktivera
+## Stoppa datainsamling
 
-Så här inaktiverar du samlingen av innehållsanalysdata:
+Så här stoppar du datainsamlingen för en implementerad Content Analytics-konfiguration:
 
 1. Ta bort den [inbäddade koden](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) i `<head>`-elementet för sidorna i din utvecklings-, staging- eller produktionsmiljö, som omfattas av Content Analytics.
 1. [Ta bort](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) den associerade taggegenskapen för din Content Analytics-konfiguration.
 
 
 
-## Ändra
+## Ändra datainsamling
 
-Du kan göra några mindre ändringar i en implementerad konfiguration med hjälp av [guiden för guidad konfiguration](guided.md). Ändra till exempel datavyn.
+Du kan göra några mindre ändringar i en implementerad konfiguration med hjälp av [guiden för guidad konfiguration](guided.md). Du kan till exempel ändra datavyn eller aktivera eller inaktivera upplevelser.
 
 Du använder [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) i taggegenskapen som är kopplad till din Content Analytics-konfiguration för att göra ändringar i följande artefakter:
 
@@ -57,14 +57,14 @@ Du använder [Adobe Content Analytics-tillägget](https://experienceleague.adobe
 
 * [Upplevelsehämtning och definition](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
-  Du kan redigera det reguljära uttrycket för att ändra hur du gör .
+  Du kan aktivera eller inaktivera upplevelser och redigera kombinationer av reguljära uttryck och frågeparametrar för att avgöra hur innehåll återges på webbplatsen.
 
 * [Händelsefiltrering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 
   Du kan redigera reguljära uttryck för att ändra hur du filtrerar sidor och resurser.
 
 
-När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar du att du använder [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} för att aktivera ändringarna.
+När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar du att du använder [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} för att starta datainsamlingen baserat på gjorda ändringar.
 
 
 

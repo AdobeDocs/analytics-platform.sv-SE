@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,10 @@ Content Analytics ger ett ökat värde:
 
 I Content Analytics används följande nyckeltermer:
 
-![Assets och upplevelser](/help/content-analytics/assets//content-analytics-experience-asset.png)
+![Assets och upplevelser](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **Upplevelse**: En upplevelse är all text på en webbsida som kan återges med den URL som används av den ursprungliga användaren som besökte webbsidan. Varje upplevelse får en unik identifierare.
-* **Resurs**: En resurs är en enskild och unik del av innehållet, som en bild. Varje resurs får också en unik identifierare.
+* **Upplevelse**: En upplevelse är all text på en webbsida som kan återges med den URL som används av den ursprungliga användaren som besökte webbsidan. Varje upplevelse får en unik identifierare. Ändringar på sidan som leder till ändringar i HTML på sidan ger en ny upplevelse.
+* **Resurs**: En resurs är en enskild och unik del av innehållet, som en bild. Varje resurs får också en unik identifierare och ett perceptuellt ID. Ett perceptuellt ID är en identifierare som delas med resurser som är visuellt identiska. Perceptuella ID:n hjälper till att ta bort dubbletter av resurser som kan ha en annan resurs-URL och därmed ett annat resurs-ID, men som är praktiskt taget identiska.
 * **Attribut**: Ett attribut är ett beskrivande metadataelement som är associerat med en upplevelse eller resurs. Exempel på attribut är: stil på fotografi, läsbarhet, övertalningsstrategi, objektfärg, bakgrundsfärg.
 
 ## Så här fungerar det
@@ -52,7 +52,7 @@ I Content Analytics används webbbildvisningsdata som samlats in i händelsedata
 ![Innehållsanalys - Så fungerar det](assets/aca-overview.gif)
 
 
-1. När en användare besöker en webbplats, [konfigurerad för Content Analytics](config/configuration.md), registrerar Experience Platform Web SDK interaktion med innehåll.
+1. När en användare besöker en webbplats, [konfigurerad för Content Analytics](config/configuration.md), registrerar Experience Platform Web SDK visningar och interaktioner med innehåll.
 1. Identitet- och funktionstjänsten bearbetar dessa interaktioner. Den processen består av en crawler som granskar de offentliga versionerna av de konfigurerade URL:erna som definierar interaktionen. För alla dessa crawlade URL:er identifierar identitetstjänsten unikt upplevelserna och resurserna. Och funktionstjänsten använder AI/ML-tjänster för att identifiera upplevelser och metadata och attribut för resurser.
 1. Resultaten av dessa tjänster ([komponenter, attribut och identiteter](/help/content-analytics/report/components.md)) används för att uppdatera relevanta data för innehållsanalys i Experience Platform.
 1. Data för innehållsanalys, tillsammans med beteendedata och andra sökdata, kan användas i en Customer Journey Analytics-konfiguration ([Anslutning](/help/connections/overview.md), [Datavy](/help/data-views/data-views.md) och [Workspace](/help/analysis-workspace/home.md)). Denna inställning ger grunden till de unika insikterna på makronivå om ditt innehåll. <br/>Du kan snabbt komma igång med Content Analytics-rapporter och -analyser med hjälp av mallen [Content Analytics](/help/content-analytics/report/report.md#template).

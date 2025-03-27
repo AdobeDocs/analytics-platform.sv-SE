@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Så här öppnar du förhandsgranskningen med följande information:
   | Förhandsgranska upplevelse | Förhandsgranska resurs |
   |---|---|
   | ![Förhandsgranskning av upplevelse av innehållsanalys](../assets/aca-experience-preview.png) | ![Förhandsgranskning av innehållsanalysresurser](../assets/aca-asset-preview.png) |
-  | **[!UICONTROL Name of the experience]** | **[!UICONTROL Name of the asset]** |
+  | Dimensionens namn (till exempel **[!UICONTROL Experience ID])** | Namn på resursdimensionen (till exempel **[!UICONTROL Asset ID])** |
   | **[!UICONTROL Impressions (all time)]**: Antal visningar för upplevelsen. | **[!UICONTROL Impressions (all times)]**: Antal visningar för resursen. |
   | **[!UICONTROL Assets]**: Antal resurser som den här upplevelsen innehåller. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. | **[!UICONTROL Experiences]**: Antal upplevelser där den här resursen visas. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. |
   | **[!UICONTROL First impression]**: Datum för första intryck av upplevelsen. | **[!UICONTROL First impression]**: Datum för första exponering av resursen. |
@@ -83,7 +83,12 @@ Panelen hjälper er att förstå vilka upplevelser och vilka resurser i upplevel
 
   Panelen består av följande visualiseringar:
 
-   * **Erfarenheter**
+   * **Upplevelser**.
+
+     >[!NOTE]
+     >
+     >Dessa visualiseringar visas bara när du har [inkluderade upplevelser](/help/content-analytics/config/guided.md#experience-capture-and-definition) i din Content Analytics-konfiguration.
+     > 
 
       * **Upplev CTR**: en [sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) visualisering, som visar upplevelseindikatorn för aktuell tid.
       * **Top converting experiences**: En [horisontell fältvisualisering](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de bästa konverteringsupplevelserna baserat på det valda konverteringsmåttet.
@@ -117,7 +122,13 @@ En [ rad ](/help/analysis-workspace/visualizations/line.md) -visualisering som v
 Ett exempel på en [ frihandstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som jämför prestanda för objekt i en attributkategori för en resurs: Förgrundsfärger. Du kan ersätta det här resursattributet med andra dimensioner för tillgångsattributkategorier.
 
 * **Vilka upplevelseattribut bidrar till konverteringarna?**
-Resursattribut fokuserar på bildens visuella egenskaper, men upplevelseattribut fokuserar på texten på sidan. Med visualiseringarna nedan kan du utforska vilka upplevelseattribut som bidrar till konverteringen. Dessa attribut tilldelas också automatiskt med hjälp av AI- och GenAI-modeller.
+
+  >[!NOTE]
+  >
+  >Den här panelen visas bara när du har [inkluderade upplevelser](/help/content-analytics/config/guided.md#experience-capture-and-definition) i din Content Analytics-konfiguration.
+  > 
+
+  Resursattribut fokuserar på bildens visuella egenskaper, men upplevelseattribut fokuserar på texten på sidan. Med visualiseringarna nedan kan du utforska vilka upplevelseattribut som bidrar till konverteringen. Dessa attribut tilldelas också automatiskt med hjälp av AI- och GenAI-modeller.
 
   Panelen består av följande visualiseringar:
 
