@@ -4,9 +4,9 @@ description: Lär dig hur du visar och hanterar Customer Journey Analytics grans
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
+source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '893'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ För att kunna visa och exportera granskningsloggar måste du ha beviljats åtko
 
 ## Visa granskningsloggen i användargränssnittet
 
-Gå till **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]** i Customer Journey Analytics.
+I Customer Journey Analytics går du till **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
 
 Granskningsloggen för i dag och i går visas som standard.
 
@@ -68,7 +68,7 @@ Följande objekt visas:
    * CREATE: En Skapa-åtgärd utfördes.
    * DELETE: En raderingsåtgärd utfördes.
    * REDIGERA: En redigeringsåtgärd utfördes.
-   * EMBARGO:
+   * EMBARGO: När du begränsar en begäran i [Rapporteringsaktivitetshanteraren](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) registreras åtgärden i granskningsloggen under EMBARGO.
    * EXPORT: En exportåtgärd utfördes.
    * ORG_CHANGE: En åtgärd för organisationsändring utfördes.
    * UPPDATERA: En uppdateringsåtgärd utfördes.
