@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
+source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
@@ -22,6 +22,12 @@ Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och of
 Få en glimt av de senaste förbättringarna i Customer Journey Analytics-produkten och -dokumentationen! En omfattande lista med funktioner, förbättringar och korrigeringar finns i den detaljerade [versionsinformationen](../release-notes/latest.md). Besök sidan [Dokumentationsuppdateringar](../release-notes/doc-changes.md) om du vill hålla dig uppdaterad med de senaste ändringarna.
 
 >[!BEGINTABS]
+
+>[!TAB Content Analytics]
+
+Med Adobe Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering.
+
+[![bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
 >[!TAB AI-assistenten]
 
@@ -65,18 +71,6 @@ Med hjälp av diagrambaserad sammanfogning kan du använda identitetsdiagrammet 
 [![bild](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 *_Du måste ha Prime-paketet för diagrambaserad sammanfogning._*
-
->[!TAB B2B-sökningar]
-
-Som en del av konfigurationen av en anslutning kan du omvandla datauppsättningar för specifika B2B-sökscheman för att bättre stödja personbaserade sökningar på B2B-data.
-
-[![bild](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
-
->[!TAB Härledda fält]
-
-Nu finns nya härledda fältfunktioner (Math, Next eller Previous, Summarize, Deduplicate) och ytterligare funktionsmallar (som Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, med flera).
-
-[![bild](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI-tillägg*]
 
