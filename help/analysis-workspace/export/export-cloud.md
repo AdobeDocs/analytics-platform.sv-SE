@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
+source-git-commit: a7bd67894b02174d980a730086f89df97b524356
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2285'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,7 @@ Följande funktioner stöds inte och tas automatiskt bort från export i fulltab
 * Sökfiltrering
 * Statiska rader
 * Datumjustering
+* Mätvärden från sammanfattningsdatauppsättningar
 * Dynamiska dimensioner
 
   Mer information finns i [Dynamiska och statiska dimensionsobjekt i frihandstabeller](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
