@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ceb6ac97686165c2883ad8057730bb09e4d7ad16
+source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -249,6 +249,11 @@ I det här avsnittet konfigurerar du hur du samlar in innehållsanalysdata.
 >title="Datainsamling"
 >abstract="Du kan redigera inställningarna för resurser i Adobe Content Analytics-tillägget i taggegenskapen som är kopplad till den aktuella konfigurationen."
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="Taggegenskapen är inaktiverad"
+>abstract="Content Analytics-tillägget är redan aktivt."
+
 <!-- markdownlint-enable MD034 -->
 
 #### Ny konfiguration {#new-configuration}
@@ -277,6 +282,11 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
 * Ange vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
 
    * Ange en sträng för reguljärt uttryck för **[!UICONTROL Assets to include / exclude]**. Till exempel: `/^(?!.*(logo\.jpg|\.svg)).*$/` om du vill exkludera alla JPEG- och SVG-logotyper från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
+
+>[!IMPORTANT]
+>
+>Om du har en befintlig Web SDK-implementering med Javascript, och inte använder Tags, måste du ta bort det automatiska inkluderade Web SDK-tillägget manuellt från den nyligen skapade Tags-egenskapen.
+
 
 
 #### Befintlig konfiguration {#existing-configuration}

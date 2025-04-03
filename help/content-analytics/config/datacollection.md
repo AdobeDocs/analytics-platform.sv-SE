@@ -6,13 +6,13 @@ feature: Content Analytics
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
+source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
-
 
 # Content Analytics datainsamling
 
@@ -24,11 +24,13 @@ I den här artikeln förklaras i detalj hur data samlas in med Content Analytics
 Följande definitioner används i den här artikeln:
 
 * **Upplevelse**: En upplevelse definieras som textinnehållet på en hel webbsida. För datainsamling registrerar Content Analytics Experience ID. Content Analytics spelar inte in texten på sidan.
-* **Resurs**: En bild. Content Analytics sparar resurs-URL:en.
-* **Relevant URL**: Bas-URL:en plus eventuella parametrar som driver innehållet på sidan.
 * **Experience ID**: En unik kombination av relevant URL och upplevelseversion.
    * Du anger, som en del av [configuration](configuration.md), vilka parametrar som är relevanta för alla angivna fullständiga URL:er.
-   * Du kan definiera den [versionsidentifierare](manual.md#versioning) som används. Versionen beaktas inte vid datainsamling. Endast relevant URL samlas in.
+   * Du kan definiera den [versionsidentifierare](manual.md#versioning) som används.
+* **Resurs**: En bild. Content Analytics sparar resurs-URL:en.
+* **Resurs-ID**: Resursens URL.
+* **Relevant URL**: Bas-URL:en plus eventuella parametrar som driver innehållet på sidan.
+
 
 ## Funktionalitet
 
@@ -38,7 +40,7 @@ Content Analytics bibliotek samlar in data när:
 * Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
 
 
-### Content Analytics event
+## Content Analytics event
 
 Ett Content Analytics-event består av:
 
@@ -50,7 +52,15 @@ Ett Content Analytics-event består av:
 * Resursvyer (om sådana finns, och om de är konfigurerade)
 * Resursklickningar (om sådana finns, och om de har konfigurerats)
 
-#### Inspelade vyer eller klick
+
+Content Analytics-event samlas in som en sekvens av:
+
+1. [En inspelad vy eller klicka på](#recorded-view-or-click).
+1. [En vanlig eller specifik (beteendemässig) händelse](#regular-or-specific-behaviorial-event).
+
+Content Analytics samlar in data på det här sättet för att återspegla den sekvensen, i stället för att samla in en vy eller klicka separat från att samla in händelsen direkt efter den vyn eller klickningen. Detta sätt att samla in innehållsanalysdata minskar också mängden data som samlas in. datainsamling.
+
+### Inspelad vy eller klick
 
 En resursvy registreras när:
 
@@ -73,26 +83,19 @@ En klickning spelas in när:
 * Alla klick sker på en länk på sidan där upplevelserna är aktiverade.
 
 
-#### Skickade händelser
+### Regelbunden eller specifik (beteendemässig) händelse
 
-Content Analytics-händelser skickas när följande två villkor inträffar:
+Utlösare för att utlösa en vanlig eller specifik (beteendemässig) händelse i Content Analytics-sammanhang är:
 
-* Innehållet skickas, vilket inträffar när:
-
-   * En resursvy eller ett klick registreras.
-   * En upplevelsevy eller ett klick spelas in.
-
-* En utlösare för att skicka en händelse utlöses, vilket inträffar när:
-
-   * Web SDK eller AppMeasurement skickar en händelse.
-   * Synligheten ändras till dold, till exempel:
-      * Sidan tas bort
-      * Fliken Växla
-      * Minimera webbläsare
-      * Stäng webbläsaren
-      * Lås skärm
-   * URL-adressen ändras, vilket resulterar i en ändrad relevant URL-adress.
-   * En resursvy överskrider batchgränsen på 32.
+* Web SDK eller AppMeasurement skickar en händelse.
+* Synligheten ändras till dold, till exempel:
+   * Sidan tas bort
+   * Fliken Växla
+   * Minimera webbläsare
+   * Stäng webbläsaren
+   * Lås skärm
+* URL-adressen ändras, vilket resulterar i en ändrad relevant URL-adress.
+* En resursvy överskrider batchgränsen på 32.
 
 
 ## Scheman
