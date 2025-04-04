@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 0%
 # Konfigurera innehållsanalys
 
 {{release-limited-testing}}
+
 
 Konfigurationen av Content Analytics består av följande steg:
 
@@ -42,8 +43,8 @@ Innan du konfigurerar Content Analytics måste du kontrollera att följande krav
 * Du har noga övervägt följande viktiga konfigurationsalternativ:
 
    * Din webbplats passar för upplevelserapporter. Korrekt erfarenhetsrapportering är bara möjligt när följande villkor är uppfyllda:
-      * Du kan bara få åtkomst till webbplatsinnehållet via offentliga URL:er. Åtkomst till webbplatsen kräver inte personliga tokens, cookies eller andra mekanismer som inte är tillgängliga via URL:en.
-      * Sidorna på din webbplats kan reproduceras med hjälp av sidans URL, och du förstår vilka valfria URL-parametrar som skapar upplevelser.
+      * Sidorna på webbplatsen måste kunna reproduceras med hjälp av sidans URL.
+      * Det textinnehåll som visas av en viss användare kan återges med hjälp av sidans URL och är inte beroende av cookies eller andra anpassningsmekanismer.
    * Ni har en tydlig förståelse för vilka sidor ni vill samla in innehållsanalyser och insikter.
    * Ni har en tydlig förståelse för vilka (typer av) resurser ni vill samla in analyser och insikter om innehållsengagemang.
 

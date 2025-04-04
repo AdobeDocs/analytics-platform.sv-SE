@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
+source-git-commit: 6f077ada9df1604b86fde21aa6b11b12160aeaa7
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 0%
 # Guidad konfiguration för innehållsanalys
 
 {{release-limited-testing}}
+
 
 Med den guidade konfigurationen kan du konfigurera innehållsanalyser snabbt och enkelt. I den guidade konfigurationen används en guide för att konfigurera kraven för att konfigurera Content Analytics automatiskt för din organisation. På skärmen **[!UICONTROL Configuration]** kan du antingen skapa en ny konfiguration eller redigera en befintlig konfiguration.
 
@@ -179,15 +180,20 @@ Som standard är **[!UICONTROL Include experiences]** inaktiverad. När du välj
 
 Inkludera endast upplevelser när följande gäller:
 
-* Du kan bara komma åt webbplatsinnehållet med offentliga URL:er. Åtkomst till webbplatsen kräver inte personliga tokens, cookies eller andra mekanismer som inte är tillgängliga via URL:en.
 * Sidorna på webbplatsen måste kunna reproduceras med hjälp av sidans URL.
+* Det textinnehåll som visas av en viss användare kan återges med hjälp av sidans URL och är inte beroende av cookies eller andra anpassningsmekanismer.
 
 Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 
 ![Konfiguration av innehållsanalys - Hämta och definiera ](../assets/aca-configuration-experience.png)
 
-1. Aktivera **[!UICONTROL Include experiences]**.
-1. Du kan också ange parametrar för hur innehåll återges på webbplatsen. Parametrarna är noll eller flera kombinationer av **[!UICONTROL Domain regular expression]** och **[!UICONTROL Query parameters]**. Frågeparametrarna anger vilka parametrar som påverkar innehållet på sidan. Med dessa indata kan Content Analytics ignorera alla parametrar som inte påverkar innehållet på sidan när en unik upplevelse definieras.
+1. Aktivera **[!UICONTROL Include experiences]**. När du aktiverar upplevelser påverkas följande:
+
+   * Datainsamling i Content Analytics-tillägget
+   * Processen som genererar upplevelseattribut från Content Analytics händelsedata
+   * Rapporteringsmallen i Customer Journey Analytics.
+
+1. Ange parametrarna för hur innehåll återges på webbplatsen. Parametrarna är noll eller flera kombinationer av **[!UICONTROL Domain regular expression]** och **[!UICONTROL Query parameters]**. Frågeparametrarna anger vilka parametrar som påverkar innehållet på sidan. Med dessa indata kan Content Analytics ignorera alla parametrar som inte påverkar innehållet på sidan när en unik upplevelse definieras.
    1. Ange en **[!UICONTROL Domain regular expression]**, till exempel `/^(?!.*\b(store|help|admin)\b)/`. Se till att du undviker reguljära uttryck med `/`. Det reguljära uttrycket för domänen anger vilka URL:er dessa parametrar gäller för. Du kan till exempel ha flera platser, och för varje plats styr olika parametrar innehållet. Om frågeparametrarna gäller för alla dina sidor kan du använda `.*` för att ange alla sidor.
    1. Ange en kommaavgränsad lista med **[!UICONTROL Query parameters,]**, till exempel `outdoors, patio, kitchen`.
 1. Välj **[!UICONTROL Remove]** om du vill ta bort en kombination av reguljära uttryck och frågeparametrar för domäner.
@@ -197,10 +203,9 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
 
 ![Konfiguration av innehållsanalys - Hämta och definiera ](../assets/aca-configuration-experience-edit.png)
 
-* Växla **[!UICONTROL Include experiences]** om du vill aktivera eller inaktivera tillgängligheten för upplevelsekomponenter, visualiseringar och paneler i Analysis Workspace.
-* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för datainsamling för upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) i taggegenskapen som är associerad med den aktuella konfigurationen.
+* Växla **[!UICONTROL Include experiences]** om du vill aktivera eller inaktivera tillgängligheten för upplevelsekomponenter, visualiseringar, paneler och mallar i Analysis Workspace.
 
-
+* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för datainsamling ytterligare för upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) i taggegenskapen som är associerad med den aktuella konfigurationen.
 
 
 ### Datainsamling {#onboarding-data-collection}
@@ -265,7 +270,8 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
   ![Tagg för befintlig datainsamling för innehållsanalys](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. Välj **[!UICONTROL Choose existing]**.
-   2. Välj en befintlig egenskap i listrutan **[!UICONTROL Tags property]**. Du kan börja skriva för att söka efter och begränsa de tillgängliga alternativen.
+   2. Välj en befintlig egenskap i listrutan **[!UICONTROL Tags property]**. Du kan börja skriva för att söka efter och begränsa de tillgängliga alternativen. Du kan inte välja en taggegenskap som redan används av en annan implementerad Content Analytics-konfiguration.
+
 
 * Så här skapar du en ny taggegenskap:
 
@@ -275,13 +281,13 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
    1. Ange en **[!UICONTROL Tags name]**, till exempel `ACA Test for Documentation`.
    1. Ange **[!UICONTROL Domains]**, till exempel `example.com`.
 
-* Om du har valt att inkludera upplevelser, ange vilka sidor som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
+* Ange vilka sidor som ska inkluderas eller exkluderas när data samlas in för Content Analytics.
 
-   * Ange en sträng för reguljärt uttryck för **[!UICONTROL Pages to include / exclude]**. Till exempel: `/^(?!.*documentation).*/` om du vill exkludera alla dokumentationssidor från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
+  Ange en sträng för reguljärt uttryck för **[!UICONTROL Pages to include / exclude]**. <br/>Till exempel: `^(?!.*documentation).*` om du vill exkludera alla dokumentationssidor från Content Analytics.
 
 * Ange vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics.
 
-   * Ange en sträng för reguljärt uttryck för **[!UICONTROL Assets to include / exclude]**. Till exempel: `/^(?!.*(logo\.jpg|\.svg)).*$/` om du vill exkludera alla JPEG- och SVG-logotyper från Content Analytics. Se till att du undviker reguljära uttryck med `/`.
+  Ange en sträng för reguljärt uttryck för **[!UICONTROL Assets to include / exclude]**. <br/>Till exempel: `^(?!.*(logo\.jpg|\.svg)).*$` om du vill exkludera alla logotyper för JPEG- och SVG-bilder från Content Analytics.
 
 >[!IMPORTANT]
 >
@@ -318,11 +324,11 @@ När du har angett all nödvändig information visas en sammanfattning med infor
 
 <!-- markdownlint-enable MD034 -->
 
-När du har skapat eller redigerat en konfiguration är följande åtgärder tillgängliga.
+När du skapar eller redigerar en konfiguration har du följande alternativ:
 
-* **[!UICONTROL Discard]**: Alla ändringar som gjorts som en del av skapandet av en ny konfiguration eller redigeringen av en befintlig konfiguration tas bort.
-* **[!UICONTROL Save for later]**: Ändringar som görs i en ny konfiguration eller en befintlig konfiguration som ännu inte implementerats sparas. Du kan gå igenom konfigurationen igen senare om du vill göra ytterligare ändringar eller implementera konfigurationen.
-* **[!UICONTROL Implement]**: Inställningar för eller ändringar som gjorts i en ny konfiguration eller befintlig konfiguration som ännu inte implementerats sparas och implementeras. Implementeringen består av följande:
+* **[!UICONTROL Discard]**: Alla ändringar som gjorts som en del av konfigurationen ignoreras.
+* **[!UICONTROL Save for later]**: Ändringar som görs i en konfiguration sparas. Du kan gå igenom konfigurationen igen senare om du vill göra ytterligare ändringar eller implementera konfigurationen. Endast ett värde för [!UICONTROL Name] krävs för att spara en konfiguration.
+* **[!UICONTROL Implement]**: Inställningar för eller ändringar i en konfiguration sparas och implementeras. Alla fält som markerats som ![Obligatoriskt](/help/assets/icons/Required.svg) måste ha korrekta värden. Implementeringen består av följande:
 
    * **[!UICONTROL Customer Journey Analytics]**-konfiguration:
       * Den valda datavyn uppdateras med mått och mått för innehållsanalys.

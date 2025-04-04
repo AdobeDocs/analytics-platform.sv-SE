@@ -7,14 +7,16 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # Content Analytics datainsamling
+
+{{release-limited-testing}}
 
 I den här artikeln förklaras i detalj hur data samlas in med Content Analytics
 
@@ -23,8 +25,8 @@ I den här artikeln förklaras i detalj hur data samlas in med Content Analytics
 
 Följande definitioner används i den här artikeln:
 
-* **Upplevelse**: En upplevelse definieras som textinnehållet på en hel webbsida. För datainsamling registrerar Content Analytics Experience ID. Content Analytics spelar inte in texten på sidan.
-* **Experience ID**: En unik kombination av relevant URL och upplevelseversion.
+* **Upplevelse**: En upplevelse definieras som textinnehållet på en hel webbsida. För datainsamling registrerar Content Analytics det Experience ID som baseras på sidans URL. Senare hämtas texten på sidan via hämtningstjänsten.
+* **Experience ID**: En unik kombination av relevant URL (bas-URL plus eventuella parametrar som driver innehåll på sidan) och [upplevelseversion](manual.md#versioning).
    * Du anger, som en del av [configuration](configuration.md), vilka parametrar som är relevanta för alla angivna fullständiga URL:er.
    * Du kan definiera den [versionsidentifierare](manual.md#versioning) som används.
 * **Resurs**: En bild. Content Analytics sparar resurs-URL:en.
@@ -64,7 +66,7 @@ Content Analytics samlar in data på det här sättet för att återspegla den s
 
 En resursvy registreras när:
 
-* Resursen har inte exkluderats enligt ACA tilläggskonfiguration.
+* Resursen har inte exkluderats enligt Content Analytics tilläggskonfiguration.
 * Tillgången är 75 %.
 * Tillgången har inte redan registrerats för den här sidan.
 
@@ -100,7 +102,7 @@ Utlösare för att utlösa en vanlig eller specifik (beteendemässig) händelse 
 
 ## Scheman
 
-Content Analytics data samlas in i datauppsättningar i Experience Platform, baserat på specifika Content Analytics-scheman. Referensscheman är allmänt tillgängliga och används i en standardimplementering av Content Analytics.
+Content Analytics data samlas in i datauppsättningar i Experience Platform, baserat på specifika Content Analytics-scheman. Referensscheman är allmänt tillgängliga:
 
 * [Digital Asset-schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [Digital Experience-schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
