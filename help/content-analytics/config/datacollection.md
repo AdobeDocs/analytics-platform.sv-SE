@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 89f7d8b388ab8c742712d748813520a51c736003
+source-git-commit: 02d24416bd1f56417005dfa1b693964073fb8a59
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Content Analytics-event samlas in som en sekvens av:
 1. [En inspelad vy eller klicka på](#recorded-view-or-click).
 1. [En vanlig eller specifik (beteendemässig) händelse](#regular-or-specific-behaviorial-event).
 
-Content Analytics samlar in data på det här sättet för att återspegla den sekvensen, i stället för att samla in en vy eller klicka separat från att samla in händelsen direkt efter den vyn eller klickningen. Detta sätt att samla in innehållsanalysdata minskar också mängden data som samlas in. datainsamling.
+Content Analytics samlar in data på det här sättet för att återspegla den sekvensen, i stället för att samla in en vy eller klicka separat från att samla in händelsen direkt efter den vyn eller klickningen. Detta sätt att samla in innehållsanalysdata minskar också mängden data som samlas in.
 
 ### Inspelad vy eller klick
 
@@ -71,7 +71,7 @@ En resursvy registreras när:
 Ett klick på en mediefil registreras när:
 
 * Resursen har visats.
-* Resursen har inte exkluderats enligt ACA tilläggskonfiguration.
+* Resursen har inte exkluderats enligt Content Analytics tilläggskonfiguration.
 * Ett klick direkt på resursen, som är en länk, som leder till en annan sida.
 
 En upplevelsevy registreras när:
@@ -95,7 +95,7 @@ Utlösare för att utlösa en vanlig eller specifik (beteendemässig) händelse 
    * Stäng webbläsaren
    * Lås skärm
 * URL-adressen ändras, vilket resulterar i en ändrad relevant URL-adress.
-* En resursvy överskrider batchgränsen på 32.
+* Inspelade resursvyer som är klara att skickas överskrider antalet 32.
 
 
 ## Scheman
