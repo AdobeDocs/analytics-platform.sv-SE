@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dafd4360d12c5b8a6b9ce99799722cecbca9768c
+source-git-commit: dfc9ba843fbddc135c0f8160fb672adb36e9146f
 workflow-type: tm+mt
-source-wordcount: '3236'
+source-wordcount: '3268'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,8 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 1. [Skapa en datavy i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
 1. [Verifiera att data flödar in i datavyn i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+
+1. I din Adobe Analytics-miljö [använder du Analytics Inventory](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory) för att se en omfattande översikt över din Adobe Analytics-miljö, inklusive antalet projekt och komponenter, rapportsviter, användare och mycket mer.
 
 1. [Migrera projekt och komponenter](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
