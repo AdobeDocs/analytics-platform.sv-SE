@@ -5,9 +5,9 @@ exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: af88be97f303095129177b2132c6711c648cea34
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Med metrisk borttagning av dubbletter kan du konfigurera ett mätvärde så att 
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Metric deduplication] | En kryssruta där du kan aktivera metrisk deduplicering. Inaktiverad som standard. |
-| [!UICONTROL Deduplication scope] | Här kan du bestämma hur långt bakåt den unika kontrollen ska gå.<br>**Session**: Endast den första mätarförekomsten av sessionen räknas.<br>**Person**: Endast den första mätförekomsten i rapportfönstret räknas. |
+| [!UICONTROL Deduplication scope] | Här kan du bestämma hur långt bakåt den unika kontrollen ska gå.<br/>**[!UICONTROL Global account]**: Endast den första metriska förekomsten i rapportfönstret räknas.<br/>**[!UICONTROL Account]**: Endast den första metriska förekomsten i rapportfönstret räknas.<br/>**[!UICONTROL Opportunity]**: Endast den första metriska förekomsten i rapportfönstret räknas.<br/>**[!UICONTROL Buying group]**: Endast den första metriska förekomsten i rapportfönstret räknas.<br/>**[!UICONTROL Person]**: Endast den första metriska förekomsten i rapportfönstret räknas.<br>**[!UICONTROL Session]**: Endast den första mätarförekomsten av sessionen räknas.<br> |
 | [!UICONTROL Deduplication ID] | I stället för att tillämpa borttagning av dubbletter på själva måttet kan du använda metrisk borttagning av dubbletter baserat på en dimension i stället. Värdefull för dimensioner som Inköp-ID för borttagning av dubbletter. |
 | [!UICONTROL Value to keep] | <ul><li>**Behåll den första instansen**: Använd den här instansen i situationer där den första instansen av mätvärdet är den giltiga. Den vanligaste är förmodligen en inköpsbekräftelse. Även om någon av misstag läser in sidan igen och vi får en ny instans av en inköpsbekräftelse, är den första händelsen den giltiga.</li><li>**Behåll den sista instansen**: Använd detta i situationer där den sista instansen är mer användbar för att samla in. Exempel: Någon uppdaterar sin onlineprofil. Vi vill bara räkna en av dessa uppdateringar per session. De kan dock uppdatera sin profil flera gånger under sessionen. Om vi behåller den första instansen kan det finnas aktiviteter som inte är kopplade till evenemanget. I det här fallet är det bättre att behålla den sista förekomsten.</li></ul> |
 
