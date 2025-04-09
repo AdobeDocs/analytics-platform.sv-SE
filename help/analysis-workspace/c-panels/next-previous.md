@@ -4,9 +4,9 @@ title: Panelen Nästa eller föregående objekt
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 2c28d9658165baf4de9519733c321d47c71f2bda
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Du kan konfigurera panelen [!UICONTROL Next or previous item] med följande inda
 | **[!UICONTROL Dimension]** | Välj dimensionen som du vill utforska nästa eller föregående objekt för. |
 | **[!UICONTROL Dimension item]** | Välj den specifika dimensionsobjektet i mitten av nästa/föregående fråga. |
 | **[!UICONTROL Direction]** | Ange om du letar efter dimensionsobjektet [!UICONTROL Next] eller [!UICONTROL Previous]. |
-| **[!UICONTROL Container]** | Välj behållaren [!UICONTROL Session] eller [!UICONTROL Person] (standard) för att fastställa omfattningen för din fråga. |
+| **[!UICONTROL Container]** | Markera behållaren, **[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Session]** eller **[!UICONTROL Person]**, för att fastställa omfattningen för din fråga. |
 
 {style="table-layout:auto"}
 

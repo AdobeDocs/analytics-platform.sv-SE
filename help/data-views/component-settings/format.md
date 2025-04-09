@@ -65,7 +65,7 @@ Du kan bestämma hur ett givet mätresultat ska visas genom att justera dess for
 
 <!-- markdownlint-enable MD034 -->
 
-Valutakonverteringen i Customer Journey Analytics kan vara mycket värdefull för företag som är verksamma internationellt. Genom att eliminera komplexiteten i den manuella valutaomvandlingen kan valutaomräkningen i Customer Journey Analytics skapa enhetlighet och tydlighet i finansiella data. Valutakonverteringen håller reda på de dagliga historiska växelkurserna och bibehåller dessa dagskurser under en period på fyra år.
+Valutaomvandling i Customer Journey Analytics kan vara mycket värdefullt för företag som är verksamma internationellt. Genom att eliminera komplexiteten i den manuella valutaomräkningen i Customer Journey Analytics kan man få enhetlighet och tydlighet i ekonomiska data. Valutakonverteringen håller reda på de dagliga historiska växelkurserna och bibehåller dessa dagskurser under en period på fyra år.
 
 Om till exempel ett e-handelsföretag är verksamt i USA, Storbritannien och EU kan försäljningsdata automatiskt konverteras till USD, vilket gör det enkelt att jämföra och få en helhetsbild av resultatet.
 

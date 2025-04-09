@@ -6,7 +6,7 @@ exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
 source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4964'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Du får åtkomst till de här funktionerna genom att välja **[!UICONTROL Show a
 
 En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen.
 
-I tillämpliga fall och när det är relevant kommenteras en funktion med funktionstypen: [!BADGE Tabell]{type="Neutral"}[!BADGE Rad]{type="Neutral"}
+Om det är tillämpligt och relevant kommenteras en funktion med funktionstypen: [!BADGE Tabell]{type="Neutral"} eller [!BADGE Rad]{type="Neutral"}
 
 ## Vad betyder parametern include-zeros?
 
@@ -93,7 +93,7 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar arcuscosinus, eller inverterad cosinus, för ett mätresultat. Arcus cosinus är den vinkel vars cosinus är tal. Den returnerade vinkeln anges i radianer i intervallet 0 (noll) till pi. Om du vill konvertera resultatet från radianer till grader multiplicerar du det med 180/PI().
 
 
 | Argument | Beskrivning |
@@ -116,7 +116,7 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar arcsinus, eller inverterad sinus, för ett tal. Arcussinus är vinkeln vars sinus är ett tal. Den returnerade vinkeln anges i radianer i intervallet -pi/2 till pi/2. Om du vill uttrycka arcussinus i grader multiplicerar du resultatet med 180/PI().
 
 
 | Argument | Beskrivning |
@@ -139,7 +139,7 @@ Ett vanligt användningsexempel för den här funktionen är när du vill få et
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar arcus tangens, eller inverterad tangens, för ett tal. Arcus tangent är vinkeln vars tangent är ett tal. Den returnerade vinkeln anges i radianer i intervallet -pi/2 till pi/2. Om du vill uttrycka arcus tangens i grader multiplicerar du resultatet med 180/PI().
 
 
 | Argument | Beskrivning |
@@ -221,7 +221,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar det minsta heltalet som inte är mindre än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln CEILING(Intäkter) för att avrunda intäkten upp till närmaste dollar, eller 570 USD.
 
 | Argument | Beskrivning |
 |---|---|
@@ -315,7 +315,7 @@ Förtroende är ett sannolikhetsmått på hur mycket det finns belägg för att 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar cosinus för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180.
 
 | Argument | Beskrivning |
 |---|---|
@@ -440,7 +440,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = en exp(X) + b. Returnerar korrelationskoefficienten.
 
 
 | Argument | Beskrivning |
@@ -463,7 +463,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Exponentiell regression: Y = en exp(X) + b. Returnerar Y.
 
 
 | Argument | Beskrivning |
@@ -487,7 +487,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = ett exp(X) + b. Returnerar b.
 
 | Argument | Beskrivning |
 |---|---|
@@ -510,7 +510,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = a exp(X) + b. Returnerar a.
 
 
 | Argument | Beskrivning |
@@ -533,7 +533,7 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar det största heltalet som inte är större än ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD, använder du formeln FLOOR(Intäkter) för att avrunda intäkten nedåt till närmaste dollar, eller 569 dollar.
 
 | Argument | Beskrivning |
 |---|---|
@@ -605,7 +605,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar hyperbolisk cosinus för ett tal.
 
 
 | Argument | Beskrivning |
@@ -627,7 +627,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar hyperbolisk sinus för ett tal.
 
 | Argument | Beskrivning |
 |---|---|
@@ -647,7 +647,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar hyperbolisk tangens för ett tal.
 
 | Argument | Beskrivning |
 |---|---|
@@ -668,7 +668,7 @@ Större än eller lika med. Utdata är antingen 0 (false) eller 1 (true).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Om värdet för villkorsparametern är icke-noll (true) är resultatet värdet för parametern value_if_true. I annat fall är det värdet på parametern value_if_false.
 
 
 | Argument | Beskrivning |
@@ -766,7 +766,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Linjär regression: Y = a X + b. Returnerar korrelationskoefficienten.
 
 
 | Argument | Beskrivning |
@@ -791,7 +791,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Linjär regression: Y = a X + b. Returnerar b.
 
 
 | Argument | Beskrivning |
@@ -816,7 +816,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Linjär regression: Y = a X + b. Returnerar Y.
 
 
 | Argument | Beskrivning |
@@ -840,7 +840,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Linjär regression: Y = a X + b. Returnerar a.
 
 | Argument | Beskrivning |
 |---|---|
@@ -863,7 +863,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar 10-logaritmen för ett tal.
 
 
 | Argument | Beskrivning |
@@ -884,7 +884,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Loggregression: Y = a ln(X) + b. Returnerar korrelationskoefficienten.
 
 | Argument | Beskrivning |
 |---|---|
@@ -906,7 +906,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Loggregression: Y = a ln(X) + b. Returnerar b.
 
 | Argument | Beskrivning |
 |---|---|
@@ -929,7 +929,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Loggregression: Y = a ln(X) + b. Returnerar Y.
 
 | Argument | Beskrivning |
 |---|---|
@@ -952,7 +952,7 @@ Höjden på kvoten jämfört med kontrollvärdet.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Loggregression: Y = a ln(X) + b. Returnerar a.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1045,7 +1045,7 @@ Inte lika med. Utdata är antingen 0 (false) eller 1 (true).
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Förskjutning. Inte lika med noll anses vara sant och lika med noll anses vara falskt. Utdata är antingen 0 (false) eller 1 (true).
 
 
 | Argument | Beskrivning |
@@ -1087,7 +1087,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Strömregression: Y = b X ^ a. Returnerar korrelationskoefficienten.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1111,7 +1111,7 @@ Returnerar Pi: 3,14159...
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Strömregression: Y = b X ^ a. Returnerar b.
 
 
 | Argument | Beskrivning |
@@ -1134,7 +1134,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Strömregression: Y = b X ^ a. Returnerar Y.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1157,7 +1157,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Strömregression: Y = b X ^ a. Returnerar a.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1180,7 +1180,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar korrelationskoefficienten.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1201,7 +1201,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar a.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1223,7 +1223,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar Y.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1245,7 +1245,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Kvadratisk regression: Y = (a + bX) ^ 2, Returnerar b.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1268,7 +1268,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Ömsesidig regression: Y = a + b X ^ -1. Returnerar korrelationskoefficienten.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1290,7 +1290,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Ömsesidig regression: Y = a + b X ^ -1. Returnerar a.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1312,7 +1312,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Ömsesidig regression: Y = a + b X ^ -1. Returnerar Y.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1334,7 +1334,7 @@ Returnerar Pi: 3,14159...
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Ömsesidig regression: Y = a + b X ^ -1. Returnerar b.
 
 | Argument | Beskrivning |
 |---|---|
@@ -1380,7 +1380,7 @@ Beräknar en uppskattning av provavvikelsen.
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar sinus för den angivna vinkeln. Om vinkeln är i grader multiplicerar du vinkeln med PI()/180.
 
 
 | Argument | Beskrivning |
@@ -1492,7 +1492,7 @@ Returnerar tangenten för den angivna vinkeln. Om vinkeln är i grader multiplic
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Avvikelsen från medelvärdet dividerat med standardavvikelsen.
 
 | Argument | Beskrivning |
 |---|---|

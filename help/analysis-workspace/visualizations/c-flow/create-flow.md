@@ -4,9 +4,9 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Du kan konfigurera början eller slutet av sökvägen som du är intresserad av.
    | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till banor som börjar eller slutar med den första eller sista förekomsten av en dimension, artikel eller mätvärde. Mer information finns i [Begränsa till första/sista förekomsten](#example-scenario-for-limit-to-firstlast-occurrence). |
    | **[!UICONTROL Number of columns]** | Antalet kolumner som du vill ha i flödesdiagrammet. Du kan ange högst fem kolumner. |
    | **[!UICONTROL Items expanded per column]** | Antalet objekt som du vill ha i varje kolumn. Du kan ange högst 10 objekt utökade per kolumn. |
-   | **[!UICONTROL Flow container]** | Du kan växla mellan **[!UICONTROL Sessions]** och **[!UICONTROL Person]** för att analysera målningen. Dessa inställningar hjälper dig att förstå en persons engagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. |
+   | **[!UICONTROL Flow container]** | Du kan växla mellan **[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessions]** och **[!UICONTROL Person]** för att analysera målningen. Dessa inställningar hjälper dig att förstå en persons engagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. |
 
    >[!IMPORTANT]
    >

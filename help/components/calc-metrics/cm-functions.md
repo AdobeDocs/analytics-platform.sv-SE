@@ -6,7 +6,7 @@ exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1811'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Med verktyget [Beräknade mätvärden](cm-workflow/cm-build-metrics.md) kan du a
 
 En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen.
 
-I tillämpliga fall och när det är relevant kommenteras en funktion med funktionstypen: [!BADGE Tabell]{type="Neutral"}[!BADGE Rad]{type="Neutral"}
+Om det är tillämpligt och relevant kommenteras en funktion med funktionstypen: [!BADGE Tabell]{type="Neutral"} eller [!BADGE Rad]{type="Neutral"}
 
 ## Vad betyder parametern include-zeros?
 
@@ -52,7 +52,7 @@ Ett alternativt scenario är att du har två intressanta mätvärden och ett har
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar det absoluta värdet av ett tal. Det absoluta värdet för ett tal är talet med ett positivt värde.
 
 | Argument | Beskrivning |
 |---|---|
@@ -137,7 +137,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Returnerar antalet, eller antalet, värden som inte är noll för ett mätvärde i en kolumn (antalet unika element som rapporteras i en dimension).
 
 | Argument | Beskrivning |
 |---|---|
@@ -157,7 +157,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar e upphöjt till ett angivet tal. Konstanten e är lika med 2,71828182845904, basen för den naturliga logaritmen. EXPONENT är den inverterade LN, den naturliga logaritmen av ett tal.
 
 | Argument | Beskrivning |
 |---|---|
@@ -178,7 +178,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Returnerar det aritmetiska medelvärdet, eller medelvärdet, för ett mått i en kolumn.
 
 | Argument | Beskrivning |
 |---|---|
@@ -200,7 +200,7 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Returnerar medianen för ett mätvärde i en kolumn. Medianvärdet är talet i mitten av en sifferuppsättning. Det innebär att hälften av talen har värden som är större än eller lika med medianen och hälften är mindre än eller lika med medianen.
 
 | Argument | Beskrivning |
 |---|---|
@@ -259,7 +259,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Returnerar den n:e percentilen, som är ett värde mellan 0 och 100. När n &lt; 0 används noll. När n > 100 returneras 100.
 
 | Argument | Beskrivning |
 |---|---|
@@ -304,7 +304,7 @@ Returnerar x upphöjt till y-potensen.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}[KOLUMN MINIMUM](#column-minimum), [MEDIAN](#median) och [COLUMN MAXIMUM](#column-maximum) returnerar samma värde som [QUARTILE](#quartile) när kvartilen är lika med `0` (noll), `2` respektive `4`.
+[!BADGE Tabell]{type="Neutral"} Returnerar kvartilen med värden för ett mätresultat. Du kan till exempel använda kvartilarna för att hitta de 25 % av de bästa produkterna som genererar störst intäkter. [KOLUMN MINIMUM](#column-minimum), [MEDIAN](#median) och [COLUMN MAXIMUM](#column-maximum) returnerar samma värde som [QUARTILE](#quartile) när kvartilen är lika med `0` (noll), `2` respektive `4`.
 
 | Argument | Beskrivning |
 |---|---|
@@ -435,7 +435,7 @@ Summan av kolumnerna i varje rad.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE Rad]{type="Neutral"}
+[!BADGE Rad]{type="Neutral"} Returnerar den positiva kvadratroten av ett tal. Kvadratroten av ett tal är värdet av talet upphöjt till 1/2.
 
 | Argument | Beskrivning |
 |---|---|
@@ -455,7 +455,7 @@ Summan av kolumnerna i varje rad.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Returnerar standardavvikelsen, eller kvadratroten av variansen, baserat på en exempelpopulation med data.
 
 | Argument | Beskrivning |
 |---|---|
@@ -476,7 +476,7 @@ Summan av kolumnerna i varje rad.
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE Tabell]{type="Neutral"}
+[!BADGE Tabell]{type="Neutral"} Returnerar variansen baserat på en exempelpopulation med data.
 
 | Argument | Beskrivning |
 |---|---|

@@ -4,7 +4,7 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
+source-git-commit: d86396a5c02be682c784e0acd4387de3796bda96
 workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Reseduk"
->abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor"
+>abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Reseduk"
->abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor"
+>abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor."
 
 <!-- markdownlint-enable MD034 -->
 
