@@ -4,9 +4,9 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2129'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Så här använder du panelen Experimentation:
    | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketterats med etiketten **[!UICONTROL Experiment]** i datavyer och de senaste tre månadernas experimentdata. |
    | **[!UICONTROL Control variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketten **[!UICONTROL Variant]** i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
    | **[!UICONTROL Success metrics]** ➊ | Mätvärden eller mätvärden som en användare jämför varianter med. Varianten med det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som *varianten* för ett experiment med bästa resultat. Du kan lägga till upp till 5 mätvärden. |
-   | **[!UICONTROL Normalizing metric]** ➋ | Basen ([!UICONTROL People], [!UICONTROL Sessions] eller [!UICONTROL Events]) som ett test körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som sidvy |
+   | **[!UICONTROL Normalizing metric]** ➋ | Grundläggande (**[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL People]**, **[!UICONTROL Sessions]** eller **[!UICONTROL Events]**) som testet körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som sidvy. |
    | **[!UICONTROL Include confidence upper/lower bounds]** | Aktivera det här alternativet om du vill visa övre och nedre gränser för konfidensnivåer. |
 
 

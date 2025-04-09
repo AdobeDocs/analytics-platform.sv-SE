@@ -5,16 +5,16 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '2007'
 ht-degree: 0%
 
 ---
 
 # Skapa eller redigera en datavy
 
-När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. De flesta schemaelement kan antingen vara en dimension eller ett mått beroende på företagets behov. När du drar ett schemaelement till en datavy visas alternativ till höger, där du kan justera hur dimensionen eller mätningen fungerar i Customer Journey Analytics.
+När du skapar en datavy måste du antingen skapa mått och mått från schemaelement eller använda standardkomponenter. De flesta schemaelement kan antingen vara en dimension eller ett mått beroende på företagets behov. När du drar ett schemaelement till en datavy visas alternativ till höger, där du kan justera hur dimensionen eller måtten fungerar i Customer Journey Analytics.
 
 
 >[!BEGINSHADEBOX]
@@ -34,9 +34,22 @@ Så här skapar eller redigerar du en datavy:
 
 Så här konfigurerar du en ny eller befintlig datavy:
 
+>[!BEGINTABS]
+
+>[!TAB Standard]
+
+![Konfigurera datavy](assets/dataview-configure.png)
+
+>[!TAB B2B edition]
+
+![Konfigurera datavyn B2B](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. Välj fliken **[!UICONTROL Configure]** (om den inte redan är aktiv).
 
-   ![Konfigurera datavy](assets/dataview-configure.png)
+
 1. Ange information om [!UICONTROL Settings], [!UICONTROL Container] och [!UICONTROL Calendar] (se nedan).
 1. Välj **[!UICONTROL Save and continue]** om du vill fortsätta konfigurera den nya eller befintliga datavyn. Välj **[!UICONTROL Save]** om du vill spara konfigurationen för den befintliga datavyn.
 
@@ -56,10 +69,10 @@ Innehåller övergripande inställningar för datavyn.
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL **Anslutning**] | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller en eller flera Adobe Experience Platform-datauppsättningar. |
-| [!UICONTROL **Namn**] | Obligatoriskt. Datavyns namn. Värdet visas i den övre högra listrutan i Analysis Workspace. |
-| [!UICONTROL **Externt ID**] | Obligatoriskt. Namnet på datavyn som du kan använda i externa källor, t.ex. affärsinformationsverktyg. Standardvärdet är `unspecified`. Om du inte anger ett externt ID genereras namnet från datavyns namn och blanksteg ersätts med understreck. |
-| [!UICONTROL **Beskrivning**] | Valfritt. Adobe rekommenderar en detaljerad beskrivning så att användarna förstår varför datavyn finns och vem den är avsedd för. |
+| **[!UICONTROL Connection]** | Det här fältet länkar datavyn till anslutningen som du upprättade tidigare, som innehåller en eller flera Adobe Experience Platform-datauppsättningar. |
+| **[!UICONTROL Name]** | Obligatoriskt. Datavyns namn. Värdet visas i den övre högra listrutan i Analysis Workspace. |
+| **[!UICONTROL External ID]** | Obligatoriskt. Namnet på datavyn som du kan använda i externa källor, t.ex. affärsinformationsverktyg. Standardvärdet är `unspecified`. Om du inte anger ett externt ID genereras namnet från datavyns namn och blanksteg ersätts med understreck. |
+| **[!UICONTROL Description]** | Valfritt. Adobe rekommenderar en detaljerad beskrivning så att användarna förstår varför datavyn finns och vem den är avsedd för. |
 
 {style="table-layout:auto"}
 
@@ -82,7 +95,7 @@ Det här avsnittet visas bara för administratörer som har etablerats med Journ
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL **Ange som standarddatavy i Adobe Journey Optimizer**] | Det här konfigurationsalternativet standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan också utföra avancerade analyser av dina Adobe Journey Optimizer-data i Customer Journey Analytics (genom att välja ![Öppna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analysera i CJA**] i Journey Optimizer).<p>För att kunna utföra den här typen av analyser måste Journey Optimizer ha tillgång till datavyn Customer Journey Analytics.<p>Aktivera det här alternativet om du vill göra det här till standarddatavyn som används i Journey Optimizer-rapporter för din sandlåda.</p><p>Det här konfigurationsalternativet automatiskt:</p><ul><li>Konfigurerar alla nödvändiga Journey Optimizer-datauppsättningar i den associerade anslutningen i Customer Journey Analytics för användning med Journey Optimizer.</li><li>Skapar en uppsättning Journey Optimizer-mått och -dimensioner i datavyn (inklusive härledda fält och beräknade värden). Kontextetiketter anges automatiskt för alla dessa mått och mått.</li></ul><p><p>Tänk på följande när du aktiverar det här alternativet: <ul><li>Du kan ändra standarddatavyn vid ett senare tillfälle, men om du gör det kan Journey Optimizer rapporteringsdata ändras. Om du väljer att inaktivera det här alternativet när det har aktiverats uppmanas du att välja en ny standarddatavy.</li><li>Om du redan har gjort manuella anpassningar av datauppsättningarna, dimensionerna eller måtten i datavyn i Customer Journey Analytics, förblir dina manuella anpassningar intakta när du aktiverar det här konfigurationsalternativet. Det här alternativet gör ytterligare anpassningar som ytterligare standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan också göra manuella anpassningar när du har aktiverat det här alternativet.</li><li>När det här alternativet är markerat kan anslutningen som är kopplad till datavyn inte tas bort.</li></ul>Mer information finns i [Integrera Adobe Journey Optimizer med Adobe Customer Journey Analytics](/help/integrations/ajo.md). |
+| [!UICONTROL **Ange som standarddatavy i Adobe Journey Optimizer**] | Det här konfigurationsalternativet standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan även utföra avancerade analyser av dina Adobe Journey Optimizer-data i Customer Journey Analytics (genom att välja ![Öppna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analysera i CJA**] i Journey Optimizer).<p>För att kunna utföra den här typen av analyser måste Journey Optimizer ha tillgång till en datavy från Customer Journey Analytics.<p>Aktivera det här alternativet om du vill göra det här till standarddatavyn som används i Journey Optimizer-rapporter för din sandlåda.</p><p>Det här konfigurationsalternativet automatiskt:</p><ul><li>Konfigurerar alla Journey Optimizer-datauppsättningar som behövs i den associerade anslutningen i Customer Journey Analytics för användning med Journey Optimizer.</li><li>Skapar en uppsättning Journey Optimizer-mått och -dimensioner i datavyn (inklusive härledda fält och beräknade värden). Kontextetiketter anges automatiskt för alla dessa mått och mått.</li></ul><p><p>Tänk på följande när du aktiverar det här alternativet: <ul><li>Du kan ändra standarddatavyn vid ett senare tillfälle, men om du gör det kan Journey Optimizer rapporteringsdata ändras. Om du väljer att inaktivera det här alternativet när det har aktiverats uppmanas du att välja en ny standarddatavy.</li><li>Om du redan har gjort manuella anpassningar av datauppsättningarna, dimensionerna eller mätvärdena i datavyn för Customer Journey Analytics, förblir dina manuella anpassningar intakta när du aktiverar det här konfigurationsalternativet. Det här alternativet gör ytterligare anpassningar som ytterligare standardiserar rapporteringen i Journey Optimizer och Customer Journey Analytics. Du kan också göra manuella anpassningar när du har aktiverat det här alternativet.</li><li>När det här alternativet är markerat kan anslutningen som är kopplad till datavyn inte tas bort.</li></ul>Mer information finns i [Integrera Adobe Journey Optimizer med Adobe Customer Journey Analytics](/help/integrations/ajo.md). |
 
 {style="table-layout:auto"}
 
@@ -92,9 +105,13 @@ Anger namnet på behållare för datavyn. Behållarnamn används ofta i [filter]
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!UICONTROL **Personbehållarnamn**] | [!UICONTROL Person] (standard). Behållaren [!UICONTROL Person] innehåller alla sessioner och händelser för personer inom den angivna tidsramen. Om din organisation använder en annan term (till exempel &quot;Besökare&quot; eller &quot;Användare&quot;) kan du byta namn på behållaren här. |
-| [!UICONTROL **Namn på sessionsbehållare**] | [!UICONTROL Session] (standard). Med behållaren [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
-| [!UICONTROL **Namn på händelsebehållare**] | [!UICONTROL Event] (standard). Behållaren [!UICONTROL Event] definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (standard). Behållaren [!UICONTROL Global Account] innehåller alla sessioner och händelser för globala konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account container name]** | `Account` (standard). Behållaren [!UICONTROL Account] innehåller alla sessioner och händelser för konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (standard). Behållaren [!UICONTROL Opportunity] innehåller alla sessioner och händelser för affärsmöjligheter inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (standard). Behållaren [!UICONTROL Buying group] innehåller alla sessioner och händelser för att köpa grupper inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| **[!UICONTROL Person container name]** | `Person` (standard). Behållaren [!UICONTROL Person] innehåller alla sessioner och händelser för personer inom den angivna tidsramen. Om din organisation använder en annan term (till exempel &quot;Besökare&quot; eller &quot;Användare&quot;) kan du byta namn på behållaren här. |
+| **[!UICONTROL Session container name]** | `Session` (standard). Med behållaren [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
+| **[!UICONTROL Event container name]** | `Event` (standard). Behållaren [!UICONTROL Event] definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
 
 {style="table-layout:auto"}
 
@@ -124,11 +141,11 @@ Sedan kan du ange komponenterna i en datavy, vilket betyder att du kan skapa må
 
    ![Fliken Komponenter](assets/dataview-components.png)
 
-   Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan.  Komponenterna som redan ingår är standardkomponenter (systemgenererade) som krävs för alla datavyer (som händelser, personer, sessionsmätningar och måtten Minute, Quarter, Week). Adobe använder också filtret **[!UICONTROL Contains data]** och **[!UICONTROL is not deprecated]** som standard, så att endast schemafält som innehåller data och som inte är inaktuella visas.
+   Du kan se [!UICONTROL Connection] längst upp till vänster, som innehåller datauppsättningarna, och dess [!UICONTROL Schema fields] nedan.  Komponenterna som redan ingår är standardkomponenter (systemgenererade) som krävs för alla datavyer (som händelser, personer, sessionsmätningar och måtten Minute, Quarter, Week). Adobe använder även filtret **[!UICONTROL Contains data]** och **[!UICONTROL is not deprecated]** som standard, så att endast schemafält som innehåller data och som inte är inaktuella visas.
 
 1. Sök efter ett schemafält med hjälp av ![sökikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** eller hitta ett fält genom att flytta till någon av datauppsättningssamlingarna, till exempel ![mappikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** .<br/>Du kan också skapa ett härlett fält med hjälp av ![dataikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Skapa härlett fält** . Mer information finns i [Härledda fält](./derived-fields/derived-fields.md).
 
-1. När du har hittat ett specifikt schemafält eller definierat ett härlett fält drar du det fältet, till exempel ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]** , från den vänstra listen till avsnittet Metrics (mått) eller Dimensions ().
+1. När du har hittat ett specifikt schemafält eller definierat ditt härledda fält, drar du det fältet, till exempel ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]** , från den vänstra listen till avsnittet Metrics (mått) eller Dimensions.
 Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt. I fältet pageName kan du till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot; genom att använda olika [komponentinställningar](component-settings/overview.md) till höger.
 Om du drar en mapp för schemafält från den vänstra listen sorteras de automatiskt i vanliga avsnitt. Strängfält hamnar i avsnittet [!UICONTROL Dimensions] och numeriska schematyper hamnar i avsnittet [!UICONTROL Metrics]. Du kan också klicka på **[!UICONTROL Add all]** och lägga till alla schemafält på deras respektive platser.
 
@@ -179,5 +196,11 @@ Du kan lägga till filter som gäller för en hel datavy. Det här filtret till�
 ### Sessionsinställningar
 
 Fastställ inaktivitetstiden mellan händelser innan en session förfaller och en ny påbörjas. En tidsperiod krävs. Du kan också tvinga en ny session att starta när en händelse innehåller ett visst mått. Mer information finns i [Sessionsinställningar](session-settings.md).
+
+### Förhandsgranska data
+
+I dataförhandsvisningen jämförs (för de olika behållarna) data i den här datavyn med data i anslutningen. Procentandelen för förhandsgranskning baseras på det totala antalet i anslutningen under de senaste 90 dagarna.
+
+Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas.
 
 När alla önskade inställningar har angetts klickar du på **[!UICONTROL Save and finish]**.

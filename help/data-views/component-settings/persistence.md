@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 5%
+source-wordcount: '958'
+ht-degree: 4%
 
 ---
 
@@ -84,20 +84,26 @@ Information om tillgängliga allokeringsinställningar.
   | Första kända | C | C | C | C | C |
   | Senast känd | A | A | A | A | A |
 
+
 ## Inställningar för [!UICONTROL Expiration]
 
 Information om tillgängliga förfalloinställningar.
 
 * **Session**: Upphör att gälla efter en given session. Förfallotid som standard.
-* **Person**: Upphör att gälla i slutet av rapporteringsfönstret.
+* **Personrapporteringsfönster**: Upphör att gälla i slutet av rapporteringsfönstret.
+* **Fönstret Rapportering för globalt konto** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapporteringsfönstret.
+* **Fönstret Kontorapportering** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapportfönstret.
+* **Fönstret för säljprojektsrapportering** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapportfönstret.
+* **Buying Group Reporting Window** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapporteringsfönstret.
 * **Anpassad tid**: Förfaller efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. När du använder tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
 * **Mått**: När det här måttet visas i en händelse upphör det beständiga värdet i dimensionen omedelbart att gälla. Du kan använda valfritt mätvärde som förfallodatum för den här dimensionen. Det här förfalloalternativet är bara tillgängligt för allokeringsinställningarna Original och Senaste.
+
 
 ## [!UICONTROL Binding Dimension]
 
 En nedrullningsbar lista där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga alternativ är andra dimensioner som ingår i datavyn.
 
-Se [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du använder bindningsdimensioner effektivt.
+Se [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
 
 
 >[!BEGINSHADEBOX]
@@ -111,6 +117,6 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindningsdimensio
 
 En nedrullningsbar lista där du kan välja ett mått som fungerar som en bindningsutlösare. Giltiga alternativ är mätvärden som ingår i datavyn.
 
-Den här inställningen visas bara när Dimensionen Bindning är lägre i objektarrayen än i komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen.
+Den här inställningen visas bara när Binding Dimension är lägre i objektarrayen än komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen.
 
 Se det andra exemplet under [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) för mer information om hur du använder bindningsmått effektivt.
