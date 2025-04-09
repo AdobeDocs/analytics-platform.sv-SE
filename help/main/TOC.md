@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+source-git-commit: 3bdde8181ec2a0e507dae907acb3da2b702f5578
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 9%
+source-wordcount: '1216'
+ht-degree: 10%
 
 ---
 
@@ -32,14 +32,18 @@ ht-degree: 9%
    + [Dokumentationsuppdateringar](../release-notes/doc-changes.md)
 
 + Kom igång {#cja-overview}
-   + [Customer Journey Analytics - översikt](../getting-started/cja-overview.md)
-   + [Snabbstartsguide](../getting-started/cja-getting-started.md)
-   + [Landningssida](../getting-started/landing.md)
-   + [Landningssida (gammal)](../getting-started/cja-landing-old.md)
-   + [Frågor och svar](../getting-started/cja-faq.md)
-   + [Jämför Customer Journey Analytics med BI-lösningar](../getting-started/cja-vs-bi.md)
-   + [AI Assistant för Adobe Customer Journey Analytics](../ai-assistant.md)
-   + [AI-assistenten för dataanalys för Customer Journey Analytics](../data-analysis-ai.md)
+   + Customer Journey Analytics {#cja-b2c-overview}
+      + [Översikt](../getting-started/cja-overview.md)
+      + [Snabbstartsguide](../getting-started/cja-getting-started.md)
+      + [Landningssida](../getting-started/landing.md)
+      + [Frågor och svar](../getting-started/cja-faq.md)
+      + [Jämför med BI-lösningar](../getting-started/cja-vs-bi.md)
+      + [AI-assistenten](../ai-assistant.md)
+      + [Agent för datainsikter](../data-analysis-ai.md)
+   + Customer Journey Analytics B2B edition {#cja-b2b}
+      + [Översikt](/help/getting-started/cja-b2b-edition.md)
+      + [B2B-koncept och -funktioner](/help/getting-started/cja-b2b-concepts-features.md)
+      + [Snabbstartsguide](/help/getting-started/cja-b2b-quick-start-guide.md)
 
 + Customer Journey Analytics och Adobe Analytics {#compare-aa-cja}
    + Uppgradera till Customer Journey Analytics {#upgrade-to-cja}
@@ -59,7 +63,7 @@ ht-degree: 9%
          + [Skapa en datauppsättning](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
          + [Skapa uppslagsdatauppsättningar för klassificeringar](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
          + [Övervaka datamängdsinmatning](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + Implementera Web SDK med taggarna {#create-tags}
+      + Implementera Web SDK med taggar {#create-tags}
          + [Skapa en tagg för din egenskap](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [Lägg till tillägget Web SDK i taggen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [Implementera taggen loader för Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
@@ -103,9 +107,9 @@ ht-degree: 9%
    + [Utveckling från Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Användarhandbok för Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
-+ Inläsning av data {#cja-data-ingestion}
++ Intag av data {#cja-data-ingestion}
    + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
-   + Infoga och använd snabbstartguider{#ingest-use-guides}
+   + Infoga och använda snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
          + [Web SDK](../data-ingestion/aepwebsdk.md)
@@ -145,8 +149,8 @@ ht-degree: 9%
    + [Sammanfattningsdata](../data-views/summary-data.md)
    + [Etiketter och profiler](../data-views/data-governance.md)
 
-+ Verktyg {#tools}
-   + Resursöverföring {#asset-transfer}
++ verktyg {#tools}
+   + Tillgångsöverföring {#asset-transfer}
       + [Överför resurser](../tools/asset-transfer/transfer-assets.md)
    + Produktanvändning {#product-usage}
       + [Översikt](../tools/product-usage/usage-overview.md)
@@ -177,7 +181,7 @@ ht-degree: 9%
       + [Översikt](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [Intelligenta bildtexter](../analysis-workspace/visualizations/intelligent-captions.md)
-      + Frihandstabell {#freeform-table}
+      + Frihandsregister {#freeform-table}
          + [Översikt](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Skapa hyperlänkar](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Kolumn- och radinställningar {#column-row-settings}
@@ -186,7 +190,7 @@ ht-degree: 9%
             + [Dynamiska och statiska objekt](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrera och ordna tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Workspace summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-      + Kohortregister {#cohort-table}
+      + Kohortabell {#cohort-table}
          + [Översikt](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Användningsexempel](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
@@ -199,7 +203,7 @@ ht-degree: 9%
          + [Översikt](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flerdimensionella flöden](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + Researbetsyta {#journey-canvas}
+      + Reseduk {#journey-canvas}
          + [Översikt](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Konfigurera](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [Felsökning](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
@@ -219,7 +223,7 @@ ht-degree: 9%
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Trädkarta](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
-   + Paneler {#panels}
+   + Panel {#panels}
       + [Översikt](../analysis-workspace/c-panels/panels.md)
       + [Tom panel](../analysis-workspace/c-panels/blank-panel.md)
       + [Tillskrivning](../analysis-workspace/c-panels/attribution.md)
@@ -251,14 +255,14 @@ ht-degree: 9%
       + [Statistisk teknik](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Innehållsförteckning](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
-   + Vanliga frågor om Workspace och mer {#workspace-faq}
+   + Vanliga frågor och svar om Workspace med mera {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)
       + [Felmeddelanden](../analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ Innehållsanalys {#content-analytics}
++ Content Analytics {#content-analytics}
    + [Översikt](/help/content-analytics/content-analytics.md)
    + Rapport {#report}
       + [Översikt](/help/content-analytics/report/report.md)
@@ -308,7 +312,7 @@ ht-degree: 9%
       + [Översikt över målgrupper](../components/audiences/audiences-overview.md)
       + [Skapa och publicera målgrupper](../components/audiences/publish.md)
       + [Hantera målgrupper](../components/audiences/manage.md)
-   + Dimensioner {#dimensions}
+   + Mått {#dimensions}
       + [Översikt över dimensioner](../components/dimensions/overview.md)
       + [Förhandsvisa dimensioner](../components/dimensions/view-dimensions.md)
       + [Dela upp dimensioner](../components/dimensions/t-breakdown-fa.md)
@@ -331,7 +335,7 @@ ht-degree: 9%
       + [Operatorer](../components/filters/operators.md)
    + Beräknade mått {#cja-calcmetrics}
       + [Översikt](../components/calc-metrics/calc-metr-overview.md)
-      + Arbetsflödet för beräknade mått {#cm-workflow}
+      + Arbetsflöde för beräknade mätvärden {#cm-workflow}
          + [Skapa beräknade mått](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Bygg beräknade värden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Hitta mätvärden](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -357,13 +361,13 @@ ht-degree: 9%
       + [Hantera datumintervall](../components/date-ranges/manage.md)
       + [Datumjämförelse](../components/date-ranges/time-comparison.md)
       + [Exempel](../components/date-ranges/custom-date-ranges.md)
-   + Larm {#alerts}
+   + Aviseringar {#alerts}
       + [Översikt](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Hantera aviseringar](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Jämförelse av funktioner](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [Användningsexempel](/help/components/c-intelligent-alerts/alerts-use-cases.md)
-   + Exporterar {#exports}
+   + Export {#exports}
       + [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md)
       + [Hantera platser för molnexport](/help/components/exports/manage-export-locations.md)
@@ -395,7 +399,7 @@ ht-degree: 9%
    + [Visa rapporteringsaktivitet](../reporting-activity-manager/reporting-activity.md)
    + [Avbryt rapporteringsbegäranden](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
-+ Stitching {#stitching}
++ Stitlar {#stitching}
    + [Översikt](/help/stitching/overview.md)
    + [Fältbaserad stygn](/help/stitching/fbs.md)
    + [Diagrambaserad stygn](/help/stitching/gbs.md)
@@ -411,7 +415,7 @@ ht-degree: 9%
    + [Integrera beslutsstyrningsdata](/help/integrations/ajo-od.md)
    + [Integrera kundens AI](/help/integrations/customer-ai.md)
 
-+ Datastyrning {#cja-privacy}
++ Dataförvaltning {#cja-privacy}
    + [Dataförvaltning](../privacy/privacy-overview.md)
    + [Granskningslogg](../privacy/audit-log.md)
    + [Kundhanterade nycklar](../privacy/cmk.md)
@@ -432,7 +436,7 @@ ht-degree: 9%
          + [Använd heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Lägg till friktionshändelser](/help/use-cases/third-party/quantum-metric/friction-events.md)
          + [Source Connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
-   + Inläsning av data {#data-ingestion}
+   + Intag av data {#data-ingestion}
       + [Importera och använda Marketo Engage-data](../use-cases/data-ingestion/marketo.md)
       + [Importera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datavyer {#data-views}
@@ -451,12 +455,12 @@ ht-degree: 9%
    + Flerkanalsdata {#cross-channel}
       + [Analysera data över olika kanaler](../use-cases/cross-channel/cross-channel.md)
       + [Importera callcenter och webbdata](../use-cases/cross-channel/call-center.md)
-   + Adobe Analytics-data {#aa-data}
+   + Adobe Analytics data {#aa-data}
       + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
       + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
    + Komplexa data {#complex-data}
       + [Använda arrayer med objekt](../use-cases/object-arrays.md)
-   + Stitching {#stitching}
+   + Stitlar {#stitching}
       + [Delade enheter](/help/use-cases/stitching/shared-devices.md)
    + Härledda fält {#derived-fields}
       + [Rapport om mål](../use-cases/goals-using-derived-fields.md)
@@ -464,12 +468,12 @@ ht-degree: 9%
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)
 
-+ Felsökning av {#troubleshooting}
++ Felsökning {#troubleshooting}
    + [Jämför data](../troubleshooting/compare.md)
    + [Överensstämmelse mellan mätvärden och målgrupper](../troubleshooting/consistency-rcdp-cja.md)
    + [Brist på behörigheter](../troubleshooting/lack-of-permissions.md)
 
-+ Tech notes {#technotes}
++ Tekniska anteckningar {#technotes}
    + [Åtkomstkontroll](../technotes/access-control.md)
    + [Datacenter](../technotes/data-centers.md)
    + [Borttagningskonsekvenser](../technotes/deletion.md)
