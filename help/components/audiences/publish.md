@@ -4,10 +4,10 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 20ccc42c902cbcadb509147352a5681fab9e44e0
+source-git-commit: dab355e2934689afc06b9228ac5caf357b4ae4e6
 workflow-type: tm+mt
-source-wordcount: '2259'
-ht-degree: 0%
+source-wordcount: '1886'
+ht-degree: 1%
 
 ---
 
@@ -169,38 +169,38 @@ Så här visar du Customer Journey Analytics-målgrupper i Platform:
 
 Mer information om hur du använder publiker i plattformar finns i avsnittet [Publiker](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
 
-### Förstå skillnader i antalet målgrupper mellan Customer Journey Analytics och Real-Time Customer Data Platform
+<!---### Understand discrepancies in audience counts between Customer Journey Analytics and Real-Time Customer Data Platform
 
-Skillnader i antalet målgrupper kan uppstå mellan Customer Journey Analytics och Real-Time Customer Data Platform. Nedan ges en detaljerad förklaring av dessa skillnader:
+Discrepancies in audience counts may occur between Customer Journey Analytics and Real-Time Customer Data Platform. The points below provide a detailed explanation of these differences:
 
-![Infografik om målgruppsskillnader mellan Customer Journey Analytics och Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
+![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
 
-**Sannolikheter kontra deterministiska räkningar**
+**Probabilistic versus deterministic counts**
 
-Den metod som används för att beräkna antalet målgruppsmedlemskap skiljer sig mellan de två programmen, vilket beskrivs nedan.
+The methodology by which audience membership numbers are being calculated differs between the two apps, as described below.
 
-* **Customer Journey Analytics**: Måttet **[!UICONTROL Total People]** i Customer Journey Analytics är ett uppskattat värde. Detta innebär att antalet är en uppskattning som baseras på målgruppens regler och kan ändras mellan uppdateringsintervall.
-* **Real-Time Customer Data Platform**: Antalet i Real-Time Customer Data Platform är deterministiskt, baserat på dagliga utvärderingsjobb, och har korrigerats när målgruppen slutar publicera i målportalen.
+*  **Customer Journey Analytics**: The **[!UICONTROL Total People]** metric in Customer Journey Analytics is an estimated value. This means that the count is an estimate based on the rules of the audience and it can change between refresh intervals.
+*  **Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is deterministic, based on daily evaluation jobs, and fixed at the time the audience finishes publishing into the audience portal. 
 
-**Publiceringsintervall och frekvens**
+**Publishing interval and rate**
 
-Publiken publicerar till Real-Time Customer Data Platform med en hastighet av 1 500 poster per sekund (RPS). En publik på 20 miljoner medlemmar tar till exempel cirka 3,7 timmar att publicera fullt ut (20 MB/1 500 RPS/3 600 sekunder per timme). Under den här tiden är det troligtvis skillnader i målgruppsmedlemskap mellan de två programmen.
+Audiences publish to Real-Time Customer Data Platform at a rate of 1500 records per second (RPS). For example, an audience of 20 million members will take approximately 3.7 hours to fully publish (20M / 1500 RPS / 3600 seconds per hour). During this time, differences in audience membership between the two apps are likely.
 
-**Profilfragmentering**
+**Profile fragmentation**
 
-Om det redan finns profiler som importerats från Customer Journey Analytics i Real-Time Customer Data Platform räknas de inte som nya profiler. Detta kan leda till lägre än förväntat antal profiler i Real-Time Customer Data Platform.
+If profiles imported from Customer Journey Analytics already exist in Real-Time Customer Data Platform, they are not counted as new profiles. This can lead to lower-than-expected profile counts in Real-Time Customer Data Platform.
 
-**Batch jämfört med direktuppspelade målgrupper**
+**Batch versus streaming audiences**
 
-Customer Journey Analytics-målgrupper ingår inte i det dagliga batchutvärderingsjobbet och förblir fasta tills nästa publiceringsintervall. Andra grupper i Real-Time Customer Data Platform utvärderas däremot var 24:e timme.
+Customer Journey Analytics audiences are not included in the daily batch evaluation job and remain fixed until the next publish interval. In contrast, other batch audiences in Real-Time Customer Data Platform are re-evaluated every 24 hours.
 
-### Viktiga sätt att komma ihåg
+### Key takeaways to remember
 
-* **Uppskattat antal i Customer Journey Analytics**: Förstå att antalet **[!UICONTROL Total People]** i Customer Journey Analytics är en uppskattning och kan variera på grund av strömmande data och identitetsbeteenden.
-* **Deterministiskt antal i Real-Time Customer Data Platform**: Antalet i Real-Time Customer Data Platform är fast och ändras inte förrän vid nästa publiceringsintervall.
-* **Profilfragmentering**: Observera att befintliga profiler i Real-Time Customer Data Platform kanske inte bidrar till antalet nya profiler vid import från Customer Journey Analytics.
+* **Estimated counts in Customer Journey Analytics**: Understand that the **[!UICONTROL Total People]** count in Customer Journey Analytics is an estimate and can vary due to streaming data and identity behaviors.
+* **Deterministic counts in Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is fixed and does not change until the next publish interval.
+* **Profile Fragmentation**: Be aware that existing profiles in Real-Time Customer Data Platform may not contribute to new profile counts when importing from Customer Journey Analytics.
 
-Genom att tydligt skilja på dessa aspekter kan ni bättre förstå och hantera era målgruppsdata i Customer Journey Analytics och Real-Time Customer Data Platform.
+By clearly differentiating these aspects, you can better understand and manage your audience data across Customer Journey Analytics and Real-Time Customer Data Platform.--->
 
 ## Vanliga frågor {#faq}
 
