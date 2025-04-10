@@ -4,10 +4,10 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
+source-git-commit: 20ccc42c902cbcadb509147352a5681fab9e44e0
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 1%
+source-wordcount: '2259'
+ht-degree: 0%
 
 ---
 
@@ -169,6 +169,38 @@ Så här visar du Customer Journey Analytics-målgrupper i Platform:
 
 Mer information om hur du använder publiker i plattformar finns i avsnittet [Publiker](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
 
+### Förstå skillnader i antalet målgrupper mellan Customer Journey Analytics och Real-Time Customer Data Platform
+
+Skillnader i antalet målgrupper kan uppstå mellan Customer Journey Analytics och Real-Time Customer Data Platform. Nedan ges en detaljerad förklaring av dessa skillnader:
+
+![Infografik om målgruppsskillnader mellan Customer Journey Analytics och Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
+
+**Sannolikheter kontra deterministiska räkningar**
+
+Den metod som används för att beräkna antalet målgruppsmedlemskap skiljer sig mellan de två programmen, vilket beskrivs nedan.
+
+* **Customer Journey Analytics**: Måttet **[!UICONTROL Total People]** i Customer Journey Analytics är ett uppskattat värde. Detta innebär att antalet är en uppskattning som baseras på målgruppens regler och kan ändras mellan uppdateringsintervall.
+* **Real-Time Customer Data Platform**: Antalet i Real-Time Customer Data Platform är deterministiskt, baserat på dagliga utvärderingsjobb, och har korrigerats när målgruppen slutar publicera i målportalen.
+
+**Publiceringsintervall och frekvens**
+
+Publiken publicerar till Real-Time Customer Data Platform med en hastighet av 1 500 poster per sekund (RPS). En publik på 20 miljoner medlemmar tar till exempel cirka 3,7 timmar att publicera fullt ut (20 MB/1 500 RPS/3 600 sekunder per timme). Under den här tiden är det troligtvis skillnader i målgruppsmedlemskap mellan de två programmen.
+
+**Profilfragmentering**
+
+Om det redan finns profiler som importerats från Customer Journey Analytics i Real-Time Customer Data Platform räknas de inte som nya profiler. Detta kan leda till lägre än förväntat antal profiler i Real-Time Customer Data Platform.
+
+**Batch jämfört med direktuppspelade målgrupper**
+
+Customer Journey Analytics-målgrupper ingår inte i det dagliga batchutvärderingsjobbet och förblir fasta tills nästa publiceringsintervall. Andra grupper i Real-Time Customer Data Platform utvärderas däremot var 24:e timme.
+
+### Viktiga sätt att komma ihåg
+
+* **Uppskattat antal i Customer Journey Analytics**: Förstå att antalet **[!UICONTROL Total People]** i Customer Journey Analytics är en uppskattning och kan variera på grund av strömmande data och identitetsbeteenden.
+* **Deterministiskt antal i Real-Time Customer Data Platform**: Antalet i Real-Time Customer Data Platform är fast och ändras inte förrän vid nästa publiceringsintervall.
+* **Profilfragmentering**: Observera att befintliga profiler i Real-Time Customer Data Platform kanske inte bidrar till antalet nya profiler vid import från Customer Journey Analytics.
+
+Genom att tydligt skilja på dessa aspekter kan ni bättre förstå och hantera era målgruppsdata i Customer Journey Analytics och Real-Time Customer Data Platform.
 
 ## Vanliga frågor {#faq}
 
