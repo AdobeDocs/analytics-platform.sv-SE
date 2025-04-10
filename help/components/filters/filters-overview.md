@@ -4,7 +4,7 @@ description: Förstå vilka filter som används för och hur du skapar ett enkel
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
+source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
 workflow-type: tm+mt
 source-wordcount: '1421'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Översikt över filter
 
-Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
+Med Customer Journey Analytics kan ni skapa, hantera, dela och lägga på kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
 
 Filter kan baseras på:
 
@@ -24,7 +24,7 @@ Filter kan baseras på:
 - anpassade variabler (formulärfält, definierade kategorier, kund-ID),
 - och andra kriterier.
 
-Se [Skapa filter](/help/components/filters/create-filters.md) för olika alternativ för att skapa filter. Sedan skapar, ändrar och sparar du definitionen av ett filter i [filterverktyget](filter-builder.md). Du kan också skapa snabbfilter med hjälp av [snabbfiltermappen](quick-filters.md). Du kan också generera filter från visualiseringar i Workspace, till exempel med hjälp av visualiseringen [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) .
+Se [Skapa filter](/help/components/filters/create-filters.md) för olika alternativ för att skapa filter. Sedan skapar, ändrar och sparar du definitionen av ett filter i [filterverktyget](filter-builder.md). Du kan också skapa snabbfilter med hjälp av [snabbfilterverktyget](quick-filters.md). Du kan också generera filter från visualiseringar i Workspace, till exempel med hjälp av visualiseringen [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) .
 
 Du använder [filterhanteraren](manage-filters.md) för att hantera filter.
 

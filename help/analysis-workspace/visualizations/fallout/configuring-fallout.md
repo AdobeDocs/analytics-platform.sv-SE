@@ -4,9 +4,9 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Du kan göra lappningar på mått, mätvärden och filter. Anta till exempel att
    | Alternativ | Beskrivning |
    |---|---|
    | **[!UICONTROL Eventual path]** (standard) | Personer räknas som *så småningom* landar på nästa sida i sökvägen, men inte nödvändigtvis på nästa händelse. |
-   | **[!UICONTROL Next event]** | Vi räknar med att landa på nästa sida i banan vid nästa händelse. |
+   | **[!UICONTROL Next event]** | Personer räknas som kommer att landa på nästa sida i banan på nästa händelse. |
 
 
 ## Inställningar {#settings}
