@@ -4,9 +4,9 @@ description: Lär dig hantera målgrupper i Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
+source-git-commit: 65dcbf63d9e155cb7e04bf9a550151a37b8457e6
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '721'
 ht-degree: 1%
 
 ---
@@ -15,43 +15,64 @@ ht-degree: 1%
 
 Publiker kan hanteras i Customer Journey Analytics med **[!UICONTROL Components]** > **[!UICONTROL Audiences]**.
 
+## Förstå målgruppshantering
+
 Genom att hantera tidigare skapade målgrupper kan ni:
 
 * **Schemalägg eller avschemalägg** automatisk uppdatering/uppdatering av målgruppen. Det maximala utgångsdatumet för schemat är 1 år.
 * **Förnya ett målgruppsuppdateringsschema** när det snart går ut. Utgångna målgrupper behandlas på samma sätt som schemalagda rapporter som förfaller - administratören får ett e-postmeddelande en månad innan schemat förfaller.
 * Visa **uppdateringsintervallet** och **senaste gången en målgrupp uppdaterades**
-* Få insikt i hur lång tid det tog att producera en målgrupp **från Customer Journey Analytics.** Det tog att få fram information om hur lång tid det tog att producera en målgrupp. Och hur lång tid det tog att få publiken att visas i kundplattformen i realtid för aktiveringsändamål.
-* Se om målgrupperna i Customer Journey Analytics aktivt **används av kundplattformen för realtid**. Eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
+* Få insikt i hur lång tid det tog att producera en målgrupp **från Customer Journey Analytics.** Det tog att få insikt i hur lång tid det tog att producera en målgrupp. Och hur lång tid det tog att få publiken att visas i kundplattformen i realtid för aktiveringsändamål.
+* Se om målgrupperna i Customer Journey Analytics **används aktivt av kundplattformen i realtid**. Eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
 
-Om du har [åtkomst till målgruppsvyn](/help/technotes/access-control.md#user-level-access) kan du visa målgrupper. Om du har [åtkomst för att skapa ](/help/technotes/access-control.md#user-level-access) målgrupper kan du redigera och ta bort målgrupper. I [publiklistan](#audiences-list) visas målgrupperna.
+Om du har [åtkomst till målgruppsvyn](/help/technotes/access-control.md#user-level-access) kan du visa målgrupper. Om du har [åtkomst för att skapa ](/help/technotes/access-control.md#user-level-access) målgrupper kan du redigera och ta bort målgrupper.
+
+## Visa målgrupper i publiklistan
+
+Listan Publiker ➊ visar de befintliga målgrupperna.
 
 ![Målgruppshanteraren](assets/audiences-manager.png)
 
-## Publiklista
+Så här visar du målgruppslistan:
 
-I publiklistan ➊ visas kolumner för:
+1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Audiences]**.
 
-| Kolumn | Beskrivning |
-| --- | --- |
-| ![SelectBox](/help/assets/icons/SelectBox.svg) | När en eller flera målgrupper är markerade visas ett blått åtgärdsfält längst ned i publikgränssnittet. Mer information finns i [Åtgärder](#actions). |
-| **[!UICONTROL Title & Description]** | Titeln och beskrivningen som du angav när du skapade målgruppen. |
-| **[!UICONTROL Data view]** | Datavyn som den här målgruppen skapades i. |
-| **[!UICONTROL Audience size]** | Det totala antalet människor i den här publiken. |
-| **[!UICONTROL Owner]** | Ägaren till målgruppen - den person som skapade målgruppen. |
-| **[!UICONTROL Refresh frequency]** | Uppdateringsintervallet som konfigurerades när målgruppen skapades. |
-| **[!UICONTROL Tags]** | Alla taggar som används för den här målgruppen. |
-| **[!UICONTROL Publishing status]** | Kan visa ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Ready]**, ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL In progress]** eller ![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Error]**. |
-| **[!UICONTROL Last refreshed]** | Tidsstämpel när målgruppen senast uppdaterades. |
-| **[!UICONTROL Last modified]** | Tidsstämpel när målgruppen senast redigerades eller ändrades. |
+1. (Valfritt) Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att konfigurera vilka kolumner som ska visas.
 
-Du kan använda ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att konfigurera vilka kolumner som ska visas. Sök efter en målgrupp med ![Sök](/help/assets/icons/Search.svg).
+1. (Valfritt) Sök efter en målgrupp med ![Sök](/help/assets/icons/Search.svg).
+
+   Följande kolumner är tillgängliga med information om varje målgrupp:
+
+   | Kolumn | Beskrivning |
+   | --- | --- |
+   | ![SelectBox](/help/assets/icons/SelectBox.svg) | När en eller flera målgrupper är markerade visas ett blått åtgärdsfält längst ned i publikgränssnittet. Mer information finns i [Åtgärder](#actions). |
+   | **[!UICONTROL Title & Description]** | Titeln och beskrivningen som du angav när du skapade målgruppen. |
+   | **[!UICONTROL Data view]** | Datavyn som den här målgruppen skapades i. |
+   | **[!UICONTROL Audience size]** | Det totala antalet människor i den här publiken. |
+   | **[!UICONTROL Owner]** | Ägaren till målgruppen - den person som skapade målgruppen. |
+   | **[!UICONTROL Refresh frequency]** | Uppdateringsintervallet som konfigurerades när målgruppen skapades. |
+   | **[!UICONTROL Tags]** | Alla taggar som används för den här målgruppen. |
+   | **[!UICONTROL Publishing status]** | Kan visa ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Ready]**, ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL In progress]** eller ![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Error]**. |
+   | **[!UICONTROL Last refreshed]** | Tidsstämpel när målgruppen senast uppdaterades. |
+   | **[!UICONTROL Last modified]** | Tidsstämpel när målgruppen senast redigerades eller ändrades. |
+
+## Redigera målgrupper
+
+Du kan redigera inställningarna för en viss målgrupp när som helst. När du redigerar en målgrupp (antingen en engångspublik eller en återkommande målgrupp) krävs en publicering på nytt.
 
 Så här redigerar du en målgrupp:
 
-1. Välj publikens titel. Använd dialogrutan **[!UICONTROL Edit audience project]** för att uppdatera målgruppen. Mer information finns i [Målgruppsverktyget](publish.md#audience-builder).
+1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Audiences]**.
 
-1. Välj **[!UICONTROL Republish]** om du vill publicera målgruppen igen.
+   Sidan Publiker visas.
 
+1. Markera titeln på den målgrupp som du vill redigera.
+
+   Dialogrutan **[!UICONTROL Edit audience]** visas.
+
+1. Du kan uppdatera alla tillgängliga fält för målgruppen. Mer information om fälten som du kan uppdatera finns i [Målgruppsverktyget](/help/components/audiences/publish.md#audience-builder) i artikeln [Skapa och publicera målgrupper](/help/components/audiences/publish.md).
+
+1. Välj **[!UICONTROL Republish]**.
 
 ## Åtgärder
 
@@ -71,9 +92,11 @@ Följande åtgärder är tillgängliga i det blå åtgärdsfältet när du välj
 | ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de valda målgrupperna. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Export to CSV]** | Exportera de valda målgrupperna till en fil med namnet `audiences.csv`. |
 
-## Filter
+## Filtrera målgruppslistan
 
 Du kan filtrera [publiklistan](#audiences-list) med ➋ på filterpanelen. Om du vill visa eller dölja filterpanelen använder du ![Filter](/help/assets/icons/Filter.svg).
+
+![Målgruppshanteraren](assets/audiences-manager.png)
 
 Filterpanelen består av följande avsnitt.
 
