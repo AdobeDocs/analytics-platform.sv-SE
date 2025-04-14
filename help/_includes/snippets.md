@@ -1,7 +1,7 @@
 ---
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 3f84fd36c4859a4325774be2a6cb8793cda2295e
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3466'
 ht-degree: 0%
 
 ---
@@ -138,13 +138,13 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 * **30 dagar**: Kan synkroniseras upp till 30 dagar från när konverteringen gjordes.
 * **60 dagar**: Kan synkroniseras upp till 60 dagar från när konverteringen gjordes.
 * **90 dagar**: Återställer upp till 90 dagar från när konverteringen inträffade.
-* **13 månader** [!BADGE B2B edition]{type=Informative}: Kan synkroniseras upp till 13 månader efter konverteringen.
+* **13 månader** [!BADGE B2B edition]{type=Informative}
 * **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar den ändrade [Sessionstimeout](/help/data-views/create-dataview.md#session-settings) i en datavy.
 * **Person (rapporteringsfönster)**: Alla besök kontrolleras fram till den första i månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för personsökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
-* **Global Account (Reporting Window)** [!BADGE B2B edition]{type=Informative}: Kontrollerar för alla globala konton fram till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för global kontosökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
-* **Konton (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}: Kontrollerar för alla konton fram till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för kontosökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
-* **Möjlighet (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}: Alla affärsmöjligheter kan säkerhetskopieras till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för affärsmöjlighetssökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
-* **Köpgrupp (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}: Kontrollerar alla inköpsgrupper fram till den första i månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för inköpsgruppens sökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
+* **Global Account (Reporting Window)** [!BADGE B2B edition]{type=Informative}
+* **Konton (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}
+* **Möjligheter (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}
+* **Buying group (Reporting Window)** [!BADGE B2B edition]{type=Informative}
 * **Anpassad tid:** Används för att ange ett anpassat uppslagsfönster från när en konvertering inträffade. Du kan ange antalet minuter, timmar, dagar, veckor, månader eller kvartal. Om en konvertering till exempel skedde den 20 februari skulle ett uppslagsfönster på fem dagar utvärdera alla dimensionskontaktytor från den 15 februari till den 20 februari i attribueringsmodellen.
 
 ## Attributionsexempel {#attribution-example}
@@ -193,17 +193,17 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Funktion | Reseduk | Utfall | Flöde |
 |---------|----------|---------|---------|
-| **Fördefinierad sidsekvens** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas. | Ja</br>Sökvägen kan vara en slutlig sökväg eller begränsas till nästa kontaktyta | Nej |
-| **Utforska sidsekvenser (ad hoc-analys)** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas. | Begränsad</br>Du kan högerklicka och visa direkt utfall i en friformstabell. | Ja</br>Endast experimentell analys. Alltid inom en dimensionsinstans mellan noder. Det innebär att varje nod visar den omedelbara (inte slutliga) nästa kontaktyta längs banan. |
-| **Visar var personer slutade (föll ut) och fortsatte igenom (gick igenom)** | Ja</br>Visar både fördefinierade och experimentella resor | Ja</br>Visar fördefinierade resor | Ja</br>Visar för experimentella resor |
+| **Fördefinierad sidsekvens** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas genom att [visa de översta noderna baserat på befintliga noder](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Ja</br>Sökvägen kan vara en slutlig sökväg eller begränsas till nästa kontaktyta | Nej |
+| **Utforska sidsekvenser (ad hoc-analys)** | Ja</br>Kombinerar fördefinierad och undersökande analys. Den slutliga sökvägen används när fördefinierade noder används på banan (besökare räknas så länge de till slut går från en fördefinierad nod till en annan). Nästa nod som är direkt (inte slutgiltig) kan också visas genom att [visa de översta noderna baserat på befintliga noder](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Begränsad</br>Du kan högerklicka och visa direkt utfall i en friformstabell. | Ja</br>Endast experimentell analys. Alltid inom en dimensionsinstans mellan noder. Det innebär att varje nod visar den omedelbara (inte slutliga) nästa kontaktyta längs banan. |
+| **Visar var personer slutade (föll ut) och fortsatte igenom (gick igenom)** | Ja</br>Visar både fördefinierade och experimentella resor. | Ja</br>Visar fördefinierade resor | Ja</br>Visar för experimentella resor |
 | **Linjära resor** | Ja | Ja | Nej |
 | **Icke-linjära resor med flera startpunkter och sökvägar** | Ja | Nej | Ja |
-| **Primärt mått** | Alla mått, inklusive beräknade värden | Endast session eller person | Endast förekomster (banvyer) |
-| **Sekundärt mått** | Ja<p>Alla mått, inklusive beräknade värden</p> | Nej | Nej |
+| **Primärt mått** | Alla mätvärden, inklusive beräknade värden. | Endast session eller person | Endast förekomster (banvyer) |
+| **Sekundärt mått** | Ja<p>Alla mätvärden, inklusive beräknade värden.</p> | Nej | Nej |
 | **Komponentstöd i noder eller kontaktytor** | Mätvärden, dimensionsobjekt, filter och datumintervall. | Mätvärden, dimensionsobjekt, filter och datumintervall. | Endast dimensionsobjekt (utom start- och slutkontaktytan) |
 | **Jämför filter** | Nej | Ja<p>Jämför två olika filter sida vid sida i samma rapport.</p> | Nej |
 | **Komponentinteraktion genom att dra och släppa** | Ja | Ja | Nej |
-| **Adobe Journey Optimizer-resor** | Ja</br>Öppna resor från Journey Optimizer för djupgående analyser och anpassningar | Nej | Nej |
+| **Adobe Journey Optimizer-resor** | Ja</br>Öppna resor från Journey Optimizer för djupgående analyser och anpassningar. | Nej | Nej |
 
 {style="table-layout:auto"}
 
@@ -236,7 +236,7 @@ Använd följande information för att välja den visualisering som bäst passar
 
 >[!AVAILABILITY]
 >
->De funktioner som beskrivs i den här artikeln och alla andra artiklar och funktioner som har märkts med [!BADGE B2B edition]{type=Informative}.  är i den begränsade testfasen av lanseringen och är kanske inte tillgänglig än i din miljö. <br/>Dessutom kan [!BADGE B2B edition]{type=Informative}-funktioner och dokumentation för [!BADGE B2B edition]{type=Informative}-funktioner ändras och inga juridiska skyldigheter härledas från dem.<br/>Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md).
+>De funktioner som beskrivs i den här artikeln och alla andra artiklar och funktioner som har märkts med [!BADGE B2B edition]{type=Informative}<br/>Dessutom, [!BADGE B2B edition]{type=Informative}[!BADGE B2B edition]{type=Informative}<br/>Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md).
 >
 
 
@@ -244,4 +244,4 @@ Använd följande information för att välja den visualisering som bäst passar
 
 >[!INFO]
 >
->I den här dokumentationen markeras specifika B2B-artiklar eller funktioner, som bara är tillgängliga med Customer Journey Analytics B2B edition, med [!BADGE B2B edition]{type=Informative}.
+I den här dokumentationen markeras specifika B2B-artiklar eller funktioner som bara är tillgängliga i Customer Journey Analytics B2B edition med [!BADGE B2B edition]{type=Informative}

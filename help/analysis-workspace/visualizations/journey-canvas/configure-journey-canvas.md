@@ -4,9 +4,9 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 2b291c4aabfd6857dc29af0338760be80f179384
+source-git-commit: a909804e066339750c2271f6c65c108a6a6199f8
 workflow-type: tm+mt
-source-wordcount: '6204'
+source-wordcount: '6207'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Se [Översikt över arbetsytan på resan](/help/analysis-workspace/visualization
 
 * Viktiga funktioner
 
-* Potential insights
+* Potentiella insikter
 
-* Differences between Journey canvas and Fallout
+* Skillnader mellan arbetsyta för resan och utfall
 
 * Information om hur man analyserar Journey Optimizer resor
 
@@ -57,18 +57,18 @@ Se [Översikt över arbetsytan på resan](/help/analysis-workspace/visualization
 
 1. Välj [!UICONTROL **Skapa**].
 
-   Om du har valt en Journey Optimizer-resa visas resan med samma ordning, sekvens och struktur som i Journey Optimizer. (Only users with access to Journey optimizer can select a Journey Optimizer journey.)
+   Om du har valt en Journey Optimizer-resa visas resan med samma ordning, sekvens och struktur som i Journey Optimizer. (Endast användare med tillgång till Journey-optimering kan välja en Journey Optimizer-resa.)
 
    <!-- add screen shot -->
 
-   If you didn&#39;t select a Journey Optimizer journey, a blank canvas displays where you can begin adding nodes to the journey. (Only users with access to Journey optimizer can select a Journey Optimizer journey.)
+   Om du inte har valt någon Journey Optimizer-resa visas en tom arbetsyta där du kan börja lägga till noder under resan. (Endast användare med tillgång till Journey-optimering kan välja en Journey Optimizer-resa.)
 
    <!-- add screen shot -->
 
-1. Whether you are creating a new analysis from a blank canvas or you are analyzing a Journey Optimizer journey, you can configure the journey as described in [Configure visualization settings](#configure-visualization-settings).
+1. Oavsett om du skapar en ny analys från en tom arbetsyta eller analyserar en Journey Optimizer-resa kan du konfigurera resan enligt beskrivningen i [Konfigurera visualiseringsinställningar](#configure-visualization-settings).
 
 
-## Configure visualization settings
+## Konfigurera visualiseringsinställningar
 
 Det finns olika konfigurationsalternativ i arbetsytehuvudet på resan.
 
@@ -87,9 +87,9 @@ Så här konfigurerar du inställningar för visualisering av arbetsytan på res
    | [!UICONTROL **Procentvärde**] | Det procentvärde som visas på varje nod i resan.<p>![procentvärde](assets/journey-canvas-percentage.png)</p> <p>Tänk på följande när du konfigurerar procentvärdena som visas på noder under resan:</p><ul><li>Ett procentvärde visas för det primära måttet på varje nod. Ett procenttal visas också för det sekundära måttet om ett sådant har konfigurerats. (Mer information om de primära och sekundära måttinställningarna finns i [Börjar skapa en visualisering av en arbetsyta på resan](#begin-building-a-journey-canvas-visualization).)</li><li>Procentsatserna omfattar alla personer eller sessioner som ingår i datavyn inom panelens datumintervall. Om _personer_ eller _sessioner_ används beror på behållarinställningen. (Mer information om behållarinställningen finns i [Börjar skapa en visualisering av en arbetsyta på resan](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Välj bland följande alternativ:</p> <ul><li>[!UICONTROL **Procent av startnod**]: Beräknar procentsatserna som visas på varje nod i förhållande till startnoden. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde. <p>En _startnod_ är en nod som inte har några anslutna noder före.</p><p>En resa kan innehålla flera startnoder. [!UICONTROL **Procent av totalt**] används emellertid om resan innehåller två eller flera startnoder som leder till en gemensam nod. Om du vill använda [!UICONTROL **Procent av startnod**] uppdaterar du resan så att varje nod i resan kan spåras tillbaka till en enda startnod.</p></li><li>[!UICONTROL **Procent av föregående nod**]: Beräknar procentsatserna som visas på varje nod i förhållande till föregående nod. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde.</li><li>[!UICONTROL **Procent av totalt**]: Beräknar procentsatserna som visas på varje nod i förhållande till alla data i datavyn. Procentsatserna baseras på det primära och sekundära mätvärdet som du valde.</li></ul> |
    | [!UICONTROL **Pilinställningar**] | Pilarna som visas mellan noderna på arbetsytan kan konfigureras så att anpassade etiketter och värden visas. <p>![pilinställningar](assets/journey-canvas-arrow-settings.png)</p><p>_Etiketter_ är egna namn som visas på pilar. Endast en etikett visas på en viss pil. Etiketterna kan vara något av följande och visas i den här inställningsordningen:</p><ol><li>Ett anpassat namn som lagts till från en arbetsyta i resan (enligt beskrivningen i [Lägg till eller uppdatera en etikett på en pil](#add-or-update-a-label-on-an-arrow))</li><li>En Journey Optimizer-etikett</li><li>Journey Optimizer-villkor</li></ol><p>_Värden_ är de tal och procenttal som visas på pilar, och de anger vilka personer eller sessioner som har flyttat från en nod till nästa nod på resan. (Med andra ord, de som inte föll bort från resan i ett visst steg.) </p><p>Följande alternativ är tillgängliga för resor som inte har sitt ursprung i Journey Optimizer och för Journey Optimizer resor som inte har ändrats avsevärt på arbetsytan under resan: (Betydande ändringar är att lägga till eller ta bort noder, lägga till eller ta bort pilar eller ändra komponenterna i en nod.)</p><ul><li>[!UICONTROL **Inga etiketter**]: Inga etiketter visas på pilar i resan. </br> Det här alternativet är bara tillgängligt om resan har ändrats i </li><li>[!UICONTROL **Endast etiketter**]: Etiketter visas på pilar i resan.</li></ul><p>Följande alternativ är tillgängliga för Journey Optimizer-resor som har ändrats betydligt på arbetsytan i Resan: (Betydande ändringar innefattar att lägga till eller ta bort noder, lägga till eller ta bort pilar eller ändra komponenterna i en nod.)(**Obs!**: De här alternativen visas bara när Journey Optimizer-data identifieras i samma datavy som är markerad på den Analysis Workspace-panel där du lägger till visualiseringen. Mer information om hur du ändrar datavyn på en panel i Analysis Workspace finns i [Analysis Workspace - översikt](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Inga etiketter eller värden**]: Inga etiketter eller värden visas på pilar under resan.</li><li>[!UICONTROL **Endast etiketter**]: Endast etiketter visas på pilar i resan. Värden visas inte.</li><li>[!UICONTROL **Endast värden**]: Endast värden visas på pilar i resan. Etiketter visas inte.</li><li>[!UICONTROL **Värden och etiketter**]: Både etiketter och värden visas på pilar under resan.</li></ul> |
    | [!UICONTROL **Visa utfall**] | Utfallsdata visar en procentandel och ett antal som faller utanför varje nod på resan. Utfallsdata baseras på det mått som är associerat med resans behållarinställningar. De baseras inte på det primära eller sekundära måttet. <p>![utfall](assets/journey-canvas-fallout.png)</p><p>Som standard är behållaren _Person_, så måttet som används för utfallsdata är _Personer_. Om behållaren ändras till _Session_ är det mått som används för utfallsdata _Sessioner_ och så vidare.</p><p>Om till exempel _Person_ är behållarinställning visar bortfallet hur många procent och hur många personer på varje nod av resan som aldrig anlänt till någon av de närmast följande noderna. De kan ha utfört andra åtgärder på webbplatsen, men uppfyller inte kriterierna som definieras av någon av de noder som följer direkt.</p> <p>Mer information om inställningen för arbetsytebehållaren i Journey finns i [Börja skapa en visualisering av en arbetsyta i Journey](#begin-building-a-journey-canvas-visualization). |
-   | **Zoomkontroller** | Följande zoomkontroller finns i det övre högra hörnet av arbetsytan:<ul><li>**Zooma in** ![zooma in-ikon](assets/zoom-in-icon.png): Förstorar specifika delar av visualiseringen.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Zoom out** ![zoom out icon](assets/zoom-out-icon.png): Shrinks the visualization to allow more room on the canvas.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Fit screen** ![fit screen icon](assets/fill-screen-icon.png): Adjusts current zoom and pan settings to fill the screen with the full visualization.</li></ul><p>To pan across the canvas after zooming in or out, click your mouse and drag to the desired location.</p> |
+   | **Zoomkontroller** | Följande zoomkontroller finns i det övre högra hörnet av arbetsytan:<ul><li>**Zooma in** ![zooma in-ikon](assets/zoom-in-icon.png): Förstorar specifika delar av visualiseringen.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Zooma ut** ![zooma ut-ikonen](assets/zoom-out-icon.png): Minskar visualiseringen för att ge mer utrymme på arbetsytan.<p>Du kan också använda muskontroller, som att fästa på en styrplatta.</p></li><li>**Anpassa skärmen** ![Ikon för att passa skärmen](assets/fill-screen-icon.png): Justerar de aktuella zoom- och panoreringsinställningarna för att fylla skärmen med fullständig visualisering.</li></ul><p>Om du vill panorera över arbetsytan när du har zoomat in eller ut klickar du med musen och drar till önskad plats.</p> |
 
-1. Continue with [Add nodes](#add-nodes).
+1. Fortsätt med [Lägg till noder](#add-nodes).
 
 ## Lägg till noder
 
@@ -120,7 +120,7 @@ Du kan skapa noder på följande sätt: genom att dra Workspace-komponenter frå
    | Dimension | En pil som ansluter två befintliga noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p> |
    | Filter | Tomt område på arbetsytan | Noden visar var komponenten släpptes utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden omfattar summan av det primära måttet, filtrerat efter filtret som du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till filtret Dagar i ett tomt område på arbetsytan visas alla personer som har haft en händelse idag.</p> |
    | Filter | En befintlig nod | Använder filtret på den befintliga noden. |
-   | Filter | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Applies the filter to the point on the path where the component was dropped.</p> |
+   | Filter | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Använder filtret på den punkt på banan där komponenten släpptes.</p> |
    | Datumintervall | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden inkluderar summan av det primära måttet, filtrerat efter det datumintervall du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till datumintervallet Den här månaden i ett tomt område på arbetsytan, visas alla personer som har haft en händelse under den aktuella månaden.</p> |
    | Datumintervall | En befintlig nod | Använder datumintervallet på den befintliga noden. |
    | Datumintervall | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Tillämpar datumintervallet på den punkt på banan där komponenten släpptes.</p> |
@@ -146,7 +146,7 @@ Du kan skapa noder på följande sätt: genom att dra Workspace-komponenter frå
 
 ### Visa de översta noderna baserat på befintliga noder
 
-Du kan automatiskt visa de översta noderna baserat på de noder som redan finns på arbetsytan. Du kan lägga till de översta noderna på arbetsytan på resan eller visa dem i ett frihandsritbord.
+Du kan automatiskt visa de översta noderna direkt utifrån de noder som redan finns på arbetsytan. Du kan lägga till de översta noderna på arbetsytan på resan eller visa dem i ett frihandsritbord.
 
 Researbetsytan använder det primära måttet för att avgöra vilka noder som ska visas.
 
@@ -158,7 +158,7 @@ Det här alternativet är tillgängligt för följande objekt på arbetsytan:
 
 #### Visa toppnoder efter en befintlig nod
 
-You can select a node and show the top dimension items that come after it in the journey. Du kan lägga till de tre viktigaste måttobjekten på arbetsytan på resan som separata noder, eller så kan du visa alla objekt med de översta måtten i en frihandstabell.
+Du kan välja en nod och visa de toppdimensionsobjekt som kommer omedelbart efter den i resan. Du kan lägga till de tre viktigaste måttobjekten på arbetsytan på resan som separata noder, eller så kan du visa alla objekt med de översta måtten i en frihandstabell.
 
 1. Högerklicka på noden där du vill visa de viktigaste dimensionsobjekten som kommer efter den under resan.
 
@@ -178,7 +178,7 @@ You can select a node and show the top dimension items that come after it in the
 
 #### Visa toppnoder före en befintlig nod
 
-Du kan välja en nod och visa de viktigaste dimensionsobjekten som kommer före den under resan. Du kan lägga till de tre viktigaste måttobjekten på arbetsytan på resan som separata noder, eller så kan du visa alla objekt med de översta måtten i en frihandstabell.
+Du kan välja en nod och visa de toppdimensionsobjekt som kommer omedelbart före den på resan. Du kan lägga till de tre viktigaste måttobjekten på arbetsytan på resan som separata noder, eller så kan du visa alla objekt med de översta måtten i en frihandstabell.
 
 1. Högerklicka på noden där du vill visa de viktigaste dimensionsobjekten som kommer före den på resan.
 
@@ -486,7 +486,7 @@ Så här tar du bort en indelning som har tillämpats:
 
 ### Skapa en målgrupp
 
-The option to create an audience is available for the following objects on the canvas:
+Alternativet att skapa en målgrupp är tillgängligt för följande objekt på arbetsytan:
 
 * Enskilda noder
 
