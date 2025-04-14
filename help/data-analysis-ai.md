@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
+source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
    1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
    1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
    1. Välj ![Redigera](/help/assets/icons/Edit.svg) om du vill redigera **[!UICONTROL Reporting Tools]**.
-   1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) om du vill lägga till **AI-assistenten: Datavisualisering** i **[!UICONTROL Included permission items]**.
+   1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) om du vill lägga till **AI-assistenten: Produktkunskap** och **AI-assistenten: Dataanalys** i **[!UICONTROL Included permission items]**.
 
       ![Lägg till behörighet](assets/ai-assistant-permissions.png).
 
