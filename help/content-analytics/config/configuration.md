@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
+source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%
@@ -35,11 +35,11 @@ Konfigurationen av Content Analytics består av följande steg:
 Innan du konfigurerar Content Analytics måste du kontrollera att följande krav uppfylls:
 
 * Du har angett användaragenten och IP-adressen som tillåtet för den funktionstjänst som används i Content Analytics. Den användaragentsträng som ska konfigureras är: <code>AdobeFeaturization/1.0</code>.
-* Om du har implementerat [Web SDK med Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} för normal beteendedatainsamling kontrollerar du att du använder standardnamnet <code>alloy</code> för Javascript-biblioteket.
+* Om du har implementerat [Web SDK med Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} för vanlig beteendedatainsamling kontrollerar du att du använder standardnamnet <code>alloy</code> för Javascript-biblioteket.
 * Du har en Customer Journey Analytics-produktadministratörsroll med de extra behörigheterna att hantera anslutningar och hantera datavyer.
 * Du måste ha [behörighet för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. Dessa tillstånd består av:
    * [Experience Platform-behörigheter](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Experience Platform Data Collection permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
+   * [Experience Platform Data Collection permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Du har noga övervägt följande viktiga konfigurationsalternativ:
 
    * Din webbplats passar för upplevelserapporter. Korrekt erfarenhetsrapportering är bara möjligt när följande villkor är uppfyllda:
