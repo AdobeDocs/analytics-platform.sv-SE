@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1918'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Livesutsättning är tillgänglig cirka en vecka efter det att Adobe möjliggör
 
 [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) är en funktion som är specifik för traditionella Adobe Analytics och som gör att du kan förstå hur människor arbetar på olika enheter. Det finns två arbetsflöden för att länka samman enhetsdata: fältbaserad sammanfogning och enhetsgrafen.
 
-Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journey Analytics och som gör det möjligt att förstå hur människor arbetar på olika enheter och i olika kanaler. Den sammanfogar en datauppsättnings person-ID så att den datauppsättningen kan kombineras med andra datauppsättningar. Den här funktionen fungerar i design på ungefär samma sätt som fältbaserad stygning mellan olika enheter, men implementeringen är annorlunda på grund av att dataarkitekturen skiljer sig mellan traditionell Analytics och Customer Journey Analytics. Mer information finns i [Stitching](overview.md) och [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) use case.
+Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journey Analytics och som gör det möjligt att förstå hur människor arbetar på olika enheter och i olika kanaler. Den sammanfogar en datauppsättnings person-ID så att den datauppsättningen kan kombineras med andra datauppsättningar. Den här funktionen fungerar i design på samma sätt som fältbaserad sammanfogning av analys över flera enheter, men implementeringen skiljer sig åt på grund av att dataarkitekturen skiljer sig mellan traditionell Analytics och Customer Journey Analytics. Mer information finns [i Sammanfogning](overview.md) och användningsfall för [flerkanalsanalys](../use-cases/cross-channel/cross-channel.md) .
 
 +++
 
@@ -124,7 +124,7 @@ När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Händelsedatauppsättning | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+| Händelsedatauppsättning | ID | Tidsstämpel | beständigt ID | Beständig namnrymd | Tillfälligt ID | Tillfälligt namnområde |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
@@ -140,11 +140,11 @@ När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med
 
 **Ny process för sekretesspolicy**
 
-När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med genomstrykningsposter bort. Andra händelser får en ny titel med det beständiga ID:t. Det första sammanslagna ID:t i den sammanslagna datauppsättningen uppdateras till **123**.
+När en sekretessbegäran tas emot för en kund med CustID Bob tas raderna med genomstrukna poster bort. Andra händelser får en ny titel med det beständiga ID:t. Till exempel uppdateras det första sammanfogade ID:t i den sammanfogade datauppsättningen till **123**.
 
-| Identitetskarta | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace |
+| Identitetskarta | ID | tidsstämpel | beständigt ID | Beständig namnrymd | Tillfälligt ID | Tillfälligt namnområde |
 |:---:|---|---|---|---|---|---|
-| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| ![Ta bort disposition](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
@@ -157,8 +157,8 @@ När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med
 
 | Stitled dataset | ID | tidsstämpel | beständigt ID | beständigt namnutrymme | transient-id | transient namespace | Namnlöst ID | Namnutrymme med rutor |
 |:---:|---|---|---|---|---|---|---|---|
-| | 1 | ts0 | 123 | ecid | | | **123** | ecid |
-| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 1 | ts0 | 123 | ecid | | | **123** | ecid ecid |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid ecid~~ | ~~Guppa~~ | ~~CustId~~ | ~~Guppa~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 +++
@@ -230,11 +230,11 @@ Data behöver inte kapslas in på nytt i Experience Platform, men de måste konf
 1. Konfigurera den nya diagrambaserade sammanslagna datauppsättningen.
 1. Konfigurera den nya datauppsättningen som en del av en ny anslutning i Customer Journey Analytics.
 1. Växla din befintliga datavy till den nya anslutningen (och som sådan den nya grafbaserade, stilade datauppsättningen)
-1. Ta bort den gamla anslutningen som använder den fältbaserade sammanslagna datauppsättningen.
+1. Ta bort den gamla anslutningen som använde den fältbaserade sammanfogade datauppsättningen.
 
 +++
 
-## Rapporteringsincidenter
+## Störningar i rapporteringen
 
 +++ Skulle det bli några avbrott i befintliga rapporter?
 

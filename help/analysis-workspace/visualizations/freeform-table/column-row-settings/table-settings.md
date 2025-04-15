@@ -4,9 +4,9 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,7 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 | **[!UICONTROL Create annotation from selection]** | Öppna **[!UICONTROL Annotation details]** för att lägga till en anteckning. |
 | **[!UICONTROL Create filter from selection]** | Öppna **[!UICONTROL Filter builder]** för att skapa ett filter från markeringen. |
 | **[!UICONTROL Create audience from selection]** | Öppna dialogrutan **[!UICONTROL Create audience]** om du vill skapa en målgrupp utifrån urvalet. |
+
+## Ändra radhöjd
+
+Du kan ange vydensiteten för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).
