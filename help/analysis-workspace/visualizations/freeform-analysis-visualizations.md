@@ -5,7 +5,7 @@ title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Punkt](/help/analysis-workspace/visualizations/bullet-graph.md) | En punktgraf som visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | En kohortvisualisering är en grupp personer som delar gemensamma egenskaper under en viss period. En kohorttabell är användbar för retentions-, urn- eller latensanalys. |
 | ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](combo-charts.md) | Med ett kombinationsdiagram kan du snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visas data som delar av eller filter i en helhet i en munteckning. |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visas data som delar av eller segment i en helhet i en munhandvisning. |
 | ![ConversionTratt](/help/assets/icons/ConversionFunnel.svg) | [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | En utfallsvisualisering visar var personer lämnade (föll ut) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | En flödesvisualisering visar exakta kundvägar via era webbplatser och appar. |
 | ![VisaTabell](/help/assets/icons/ViewTable.svg)</p> | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En frihandsritbordsvisualisering är en interaktiv visualisering. Visualisering av tabeller på frihand är grunden för dataanalys i Workspace. |
@@ -44,7 +44,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | ![123](/help/assets/icons/123.svg)</p> | [Sammanfattningsnummer](/help/analysis-workspace/visualizations/summary-number-change.md) | En visualisering av ett sammanfattningsnummer visar den markerade cellen som ett stort tal. |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | Med textvisualisering kan du lägga till användardefinierad text i din Workspace. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap-diagram](/help/analysis-workspace/visualizations/treemap.md)<p> | I en treemap-visualisering visas hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar. |
-| ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | I en vennvisualisering används cirklar för att avbilda den metriska överlappningen av upp till 3 filter. |
+| ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | En venn-visualisering använder cirklar för att avbilda den metriska överlappningen av upp till 3 segment. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -158,6 +158,6 @@ Vissa visualiseringar (som Cohort-tabellen, Fallout, Flow med flera) har en konf
 
 ## Visualisera
 
-Om du inte är säker på vilken visualisering du ska välja väljer du ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** i valfri tabellrad på frihand (tillgänglig vid hovring). Den här markeringen är det snabbaste sättet att lägga till en visualisering. Analysis Workspace har en väl underbyggd gissning där visualisering bäst passar era data. Om du t.ex. har markerat en rad skapas ett [linjediagram](line.md). Om du har markerat tre filterrader skapas ett [venn](venn.md)-diagram.
+Om du inte är säker på vilken visualisering du ska välja väljer du ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** i valfri tabellrad på frihand (tillgänglig vid hovring). Den här markeringen är det snabbaste sättet att lägga till en visualisering. Analysis Workspace har en väl underbyggd gissning där visualisering bäst passar era data. Om du t.ex. har markerat en rad skapas ett [linjediagram](line.md). Om du har markerat tre segmentrader skapas ett [venn](venn.md)-diagram.
 
 ![Snabb visualisering](assets/quick-viz.png)

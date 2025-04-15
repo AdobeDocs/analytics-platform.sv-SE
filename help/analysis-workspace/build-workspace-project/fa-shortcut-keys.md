@@ -5,7 +5,7 @@ feature: Workspace Basics
 title: Använda Workspace snabbtangenter
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Observera att följande symboler kan användas på tangentbordet:
 | Skapa en avisering | **[!UICONTROL *cmd + shift + a *]** | **[!UICONTROL *Ctrl + Skift + a *]** |
 | Skapa beräknat mått | **[!UICONTROL *cmd + shift + c *]** | **[!UICONTROL *Ctrl + Skift + c *]** |
 | Skapa ett datumintervall | **[!UICONTROL *cmd + shift + d *]** | **[!UICONTROL *Ctrl + Skift + d *]** |
-| Skapa ett filter | **[!UICONTROL *cmd + shift + e *]** | **[!UICONTROL *Ctrl + Skift + e *]** |
+| Skapa ett segment | **[!UICONTROL *cmd + shift + e *]** | **[!UICONTROL *Ctrl + Skift + e *]** |
 | Rensa alla | **[!UICONTROL *alt + w *]** | **[!UICONTROL *opt + w *]** |
 | Kopiera | **[!UICONTROL *cmd + c *]** | **[!UICONTROL *ctrl + c *]** |
 | Gör om | **[!UICONTROL *cmd + shift + z *]** | **[!UICONTROL *Ctrl + Skift + z *]** |
@@ -76,7 +76,7 @@ Observera att följande symboler kan användas på tangentbordet:
 | Spara projekt som | **[!UICONTROL *cmd + shift + s *]** | **[!UICONTROL *Ctrl + Skift + s *]** |
 | Spara som mall | **[!UICONTROL *opt + t *]** | **[!UICONTROL *alt + t *]** |
 | Hämta som CSV | **[!UICONTROL *cmd + shift + v *]** | **[!UICONTROL *Ctrl + Skift + v *]** |
-| Hämta som PDF | **[!UICONTROL *cmd + shift + b *]** | **[!UICONTROL *Ctrl + Skift + b *]** |
+| Ladda ned som PDF | **[!UICONTROL *cmd + shift + b *]** | **[!UICONTROL *Ctrl + Skift + b *]** |
 | Kuratera projektdata | **[!UICONTROL *cmd + shift + g *]** | **[!UICONTROL *Ctrl + Skift + g *]** |
 | Dela projekt | **[!UICONTROL *cmd + g *]** | **[!UICONTROL *ctrl + g *]** |
 | Hämta projektlänk | **[!UICONTROL *alt + l *]** | **[!UICONTROL *alt + l *]** |

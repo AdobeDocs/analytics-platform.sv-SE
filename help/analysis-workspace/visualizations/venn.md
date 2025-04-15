@@ -1,10 +1,10 @@
 ---
-description: Med Vennvisualiseringen kan du dra in upp till tre filter (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
+description: Med Vennvisualiseringen kan du dra i upp till tre segment (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
 title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -30,11 +30,11 @@ _I den här artikeln dokumenteras Vennvisualiseringen i_ ![CustomerJourneyAnalyt
 >[!ENDSHADEBOX]
 
 
-Med visualiseringen ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** kan du dra upp till tre filter och ett mätvärde (från komponentpanelen) för att skapa ett Venndiagram.
+Med visualiseringen ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** kan du dra i upp till tre segment och ett mått (från komponentpanelen) för att skapa ett Venndiagram.
 
-![Vennvisualisering som innehåller tre filter.](assets/venn.png)
+![Vennvisualisering som innehåller tre segment.](assets/venn.png)
 
-Du kan hålla muspekaren över filtren för att få bättre insikt i procenttal och mycket mer.
+Du kan hovra över segmenten för att få mer insikt i procentandelar och mycket mer.
 
 Om du vill generera en [!UICONTROL Freeform table] från visualiseringen [!UICONTROL Venn] markerar du den färgade ![StatusOrange](/help/assets/icons/StatusOrange.svg) bredvid rubriken **[!UICONTROL Venn]** och väljer **[!UICONTROL Show data source]**. Du kommer att se en **[!UICONTROL Venn Data]**-friformstabell med de data som används för att skapa [!UICONTROL Venn]-visualiseringen.
 

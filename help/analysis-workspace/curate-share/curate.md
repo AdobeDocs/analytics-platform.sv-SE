@@ -5,7 +5,7 @@ title: Kuratprojekt
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 
 # Kuratprojekt
 
-Med kurering kan du begränsa komponenterna (mått, mått, filter, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderat steg innan du delar ett projekt.
+Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderat steg innan du delar ett projekt.
 
 >[!NOTE]
-> Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Curation är ett sekundärt filter.
+> Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Kuration är ett sekundärt segment.
 
 ## Använd projektstrukturering
 

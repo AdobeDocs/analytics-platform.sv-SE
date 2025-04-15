@@ -4,7 +4,7 @@ description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 8%
@@ -43,7 +43,7 @@ Customer Journey Analytics förbättrar attribueringen genom att du kan:
 * Använd obegränsad jämförelse av attribueringsmodell: jämför dynamiskt så många modeller du vill.
 * Undvik implementeringsändringar: Med rapporttidsbearbetning och sammanhangsberoende sessioner kan kundens reskontext byggas in och tillämpas vid körning.
 * Skapa den session som bäst matchar attribueringsscenariot.
-* Dela upp attribuering med filter: Jämför enkelt marknadsföringskanalernas prestanda i alla viktiga filter (till exempel New vs. Repeat customers, Product X vs. Product Y, Loyalty level eller CLV).
+* Dela upp attribuering efter segment: Jämför enkelt resultatet i era marknadsföringskanaler i alla viktiga segment (till exempel nya kontra upprepade kunder, produkt X jämfört med produkt Y, lojalitetsnivå eller CLV).
 * Granska analyser av kontaktytor och kanalbyten: använd venndiagram och histogram samt trendattribuering.
 * Analysera viktiga marknadsföringssekvenser visuellt: utforska vägar som leder till konvertering visuellt med flernodsflöde och bortfallsvisualisering.
 * Skapa beräknade värden: använd valfria metoder för attribueringstilldelning.
@@ -82,7 +82,7 @@ Följande visualisering är en del av panelutdata.
 
 * **Totalt mått**: Det totala antalet konverteringar som inträffade under rapporttidsperioden och som är kopplade till den dimension som du valde.
 * **Attribution Comparison Bar**: Jämför de tilldelade konverteringarna visuellt för alla dimensionsobjekt från den valda dimensionen. Varje stapelfärg representerar en distinkt attribueringsmodell.
-* **Attributjämförelsetabell**: Visar samma data som stapeldiagrammet, representerat som en tabell. Om du markerar olika kolumner eller rader i den här tabellen filtreras stapeldiagrammet och flera andra visualiseringar i panelen. Den här tabellen fungerar på ungefär samma sätt som andra frihandstabeller i Workspace, vilket gör att du kan lägga till komponenter som mått, filter och uppdelningar.
+* **Attributjämförelsetabell**: Visar samma data som stapeldiagrammet, representerat som en tabell. Om du markerar olika kolumner eller rader i den här tabellen segmenteras stapeldiagrammet och flera av de andra visualiseringarna på panelen. Den här tabellen fungerar på ungefär samma sätt som andra frihandstabeller i Workspace, vilket gör att du kan lägga till komponenter som mått, segment och uppdelningar.
 * **Överlappningsdiagram**: En Vennvisualisering som visar de tre viktigaste dimensionsobjekten och hur ofta de deltar tillsammans i en konvertering. Storleken på bubbelöverlappningen anger till exempel hur ofta konverteringar inträffade när en person exponerades för båda dimensionsobjekten. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
 * **Prestandainformation**: En spridningsvisualisering för att jämföra upp till tre attribueringsmodeller visuellt.
 * **Trended Performance**: Visar trenden för konverteringar av attribut för den översta dimensionsobjektet. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.

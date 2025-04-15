@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Med hjälp av Data Insights Agent kan du besvara datacentrerade frågor i Analys
 | **Skapa och uppdatera visualiseringar** | Skapar en friformstabell och tillhörande visualisering (t.ex. en linje, streck, munstycke).<p>Exempel: *Vad är vinsten för SKU:er från februari till maj?* |
 | **Visualiseringstyper som stöds** | <ul><li>Linje</li><li>Flera rader</li><li>Frihandsregister</li><li>Liggande</li><li>Munk</li><li>Sammanfattningsnummer</li></ul> |
 | **Frågeidentifiering utanför scope** | Om du skickar en fråga som inte omfattas, till exempel&quot;exportera det här projektet&quot;, svarar Data Insights Agent genom att meddela att frågan inte omfattas. |
-| **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt kontext för att Data Insights-agenten ska kunna svara, eller är för generisk, svarar Data Insights-agenten med en klargörande fråga eller föreslagna alternativ. Exempel: <p>**Komponenter**<ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Filter: *Vilket kontofilter vill du använda?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul>**Dimension-objekt**: Vilket butiksnamn menade du? (Exempel: Store #5274, Store #2949 osv.) |
+| **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt kontext för att Data Insights-agenten ska kunna svara, eller är för generisk, svarar Data Insights-agenten med en klargörande fråga eller föreslagna alternativ. Exempel: <p>**Komponenter**<ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Filter: *Vilket kontosegment vill du använda?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul>**Dimension-objekt**: Vilket butiksnamn menade du? (Exempel: Store #5274, Store #2949 osv.) |
 | **Flera varv** | Agenten för datainsikter svarar på en fråga med kontexten från tidigare uppmaningar, vilket gör att användare kan uppdatera visualiseringar och ställa uppföljningsfrågor. Exempel: <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> |
 | **Verifierbarhet** | Data kan verifieras och korrigeras med hjälp av den genererade frihandstabellen och datavisualisering. Om en användare till exempel frågar *Trendbeställningar förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts på den nyligen genererade panelen, datavisualisering och frihandstabellen. |
 | **Feedback** | <ul><li>Tummen upp</li><li>Tummen ned</li><li>Flagga</li></ul> |
@@ -167,7 +167,7 @@ För att få bästa möjliga resultat bör du följa följande riktlinjer:
 
 * Var specifik: Inkludera exakta termer för att begränsa svaret. Här följer ett exempel på en specifik fråga:&quot;Sista månadens försäljning i Kalifornien&quot;
 
-* Använd tydliga mätvärden och filter: Genom att lägga till specifika mätvärden (t.ex.&quot;Intäkter&quot;), dimensioner (t.ex.&quot;webbplatsnamn&quot;), filter (t.ex.&quot;iPhone-användare&quot;) och datumintervall (t.ex.&quot;de senaste tre månaderna&quot;) kan Data Insights-agenten fokusera på rätt data.
+* Använd tydliga mätvärden och segment: Genom att lägga till specifika mätvärden (t.ex.&quot;Intäkter&quot;), dimensioner (t.ex.&quot;webbplatsnamn&quot;), segment (t.ex.&quot;iPhone-användare&quot;) och datumintervall (t.ex.&quot;de senaste tre månaderna&quot;) kan Data Insights-agenten fokusera på rätt data.
 
 * Ställ direkta frågor: Fraseringsfrågor gör det enklare för Data Insights-agenten att ge tydliga, relevanta insikter. Här följer ett exempel på hur du ställer en direkt fråga i en fråga:&quot;Vad är den genomsnittliga intäkten per produktkategori i år?&quot;
 
@@ -193,7 +193,7 @@ Tänk på följande när du utvärderar ett svar från Data Insights Agent:
 
 * Visualisering/diagram: Utvärdera visualiseringen. Är det en lämplig eller förväntad visualisering för din fråga eller skulle du ha förväntat dig en annan visualisering?
 
-* Frihandstabell: Utvärdera frihandstabellen. Är frihandstabellens data korrekta? Delar den upp data där det efterfrågas? Används de filter som du har begärt eller väntat dig?
+* Frihandstabell: Utvärdera frihandstabellen. Är frihandstabellens data korrekta? Delar den upp data där det efterfrågas? Är de tillämpade segmenten de som du har begärt eller förväntat?
 
 * Felmeddelande/Odefinierat: Om ett generiskt felmeddelande om att frågan ligger utanför definitionsområdet visas, kan du ge feedback om huruvida du anser att meddelandet som ligger utanför definitionsområdet är lämpligt, med tanke på din uppmaning. Var din fråga verkligen i omfång?
 

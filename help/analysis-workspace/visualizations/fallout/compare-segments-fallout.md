@@ -1,20 +1,20 @@
 ---
-description: Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
-keywords: bortfall och filter;filter i bortfallsanalys;jämför filter i bortfall
-title: Använda filter i bortfallsanalys
+description: Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace.
+keywords: utfall och segment;segment i utfallsanalys;jämför segment i utfall
+title: Använd segment i utfallsanalys
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-# Använda filter i bortfallsanalys
+# Använd segment i utfallsanalys
 
-Du kan skapa filter från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
+Du kan skapa segment från en kontaktyta, lägga till filter som kontaktyta och jämföra viktiga arbetsflöden mellan olika filter i Analysis Workspace.
 
 >[!IMPORTANT]
 >

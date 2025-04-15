@@ -5,7 +5,7 @@ title: projekt med endast visning
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -23,11 +23,11 @@ Du kan dela projekt som&quot;endast för visning&quot; till mottagare via arbets
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dold vänster panel
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
-* Frihandsfiltrering
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart segment med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Frihandssegmentering
 * Frihandsnr för synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering
-* Panelfilter
+* Panelsegment
 * Redigera, Infoga och Komponentmenyer
 * Workspace tips
 
@@ -39,5 +39,5 @@ Några av de mer välkända interaktionerna i ett projekt med endast visning är
 | --- | --- |
 | Frihandsregister | <ul><li>Sidindelning och sortering</li><li>Hovring</li><li>Cellmarkeringar som uppdaterar länkade visualiseringar</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Högerklicka > Kopiera till Urklipp</li></ul> |
 | Visualiseringar | <ul><li>Klicka för att aktivera/inaktivera förklaring</li><li>Hovring</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Komprimera/expandera</li><li>Flöde - expandera flödesnoder</li><li>Karta - zoom</li></ul> |
-| Panel | <ul><li>Interaktiva nedrullningsbara filter</li><li>Högerklicka > Hämta panellänk</li><li>Komprimera/expandera</li></ul> |
-| Projekt | <ul><li>Inspektera alla informationsikoner</li><li>Projektmeny - Nytt, Öppna, Ange som landningssida, Uppdatera, Hämta CSV/PDF, Begränsad projektinformation och inställningar</li><li>Dela-menyn - Hämta projektlänk, Skicka fil nu</li><li>Hjälpmenyn - Alla åtgärder förutom Tips och felsökningsalternativ</li></ul> |
+| Panel | <ul><li>Interaktiva nedrullningsbara segment</li><li>Högerklicka > Hämta panellänk</li><li>Komprimera/expandera</li></ul> |
+| Projekt | <ul><li>Inspektera alla informationsikoner</li><li>Project menu - New, Open, Set as landing page, Refresh, Download CSV/PDF, limited Project Info &amp; Settings</li><li>Dela-menyn - Hämta projektlänk, Skicka fil nu</li><li>Hjälpmenyn - Alla åtgärder förutom Tips och felsökningsalternativ</li></ul> |

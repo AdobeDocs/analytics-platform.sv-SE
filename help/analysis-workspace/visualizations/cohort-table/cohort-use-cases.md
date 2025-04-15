@@ -5,7 +5,7 @@ title: Användningsexempel för kohortanalyser
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Personer räknas inte som *engagerade* under de följande månaderna, såvida de
 
 ## Användningsexempel för prenumeration
 
-Du kan arbeta på Adobe.com och erbjuda en kostnadsfri prenumeration på Creative Cloud. Målet är att man ska uppgradera från den kostnadsfria versionen till den 30-dagars testversionen eller, i slutändan, den betalda versionen.
+Du arbetar på Adobe.com och erbjuder en kostnadsfri prenumeration på Creative Cloud. Målet är att man ska uppgradera från den kostnadsfria versionen till den 30-dagars testversionen eller, i slutändan, den betalda versionen.
 
 **Kornighet**: Månadsvis
 
@@ -46,9 +46,9 @@ Ni vill inte förlora potentiella kunder under den tredje månaden. Så ni har s
 
 Kolla in era kohortanalysrapporter några månader senare. För kohorter som bildas efter lanseringen av kampanjen har konverteringen till betalda Creative Cloud-prenumerationer under den tredje månaden ökat från 4-5 % till 13-14 %. Denna ökning av konverteringsgraden resulterar i hundratusentals dollar per kohort för varje månadskohort som kommer tre månader framåt från den tidpunkten.
 
-## Komplexa kohortfilter använder skiftläge
+## Komplexa kohortsegment använder skiftläge
 
-En stor hotellkedja vänder sig till flera kundgrupper för att få kampanjer och hålla koll på resultatet. För att identifiera de bästa grupperna med användarkohorter att rikta sig till, vill de skapa mycket specifika kohortgrupper. Med hjälp av de utökade [!UICONTROL Inclusion]- och [!UICONTROL Return]-kriterierna i [!UICONTROL Cohort]-tabellerna kan hotellkedjan definiera precis rätt kohortgrupper med flera mätvärden och filter. Hotellkedjan kan identifiera underpresterande kundgrupper för att rikta sig till kunder med kampanjer och erbjudanden för att öka bokningarna.
+En stor hotellkedja vänder sig till flera kundgrupper för att få kampanjer och hålla koll på resultatet. För att identifiera de bästa grupperna med användarkohorter att rikta sig till, vill de skapa mycket specifika kohortgrupper. Med hjälp av de utökade [!UICONTROL Inclusion]- och [!UICONTROL Return]-kriterierna i [!UICONTROL Cohort]-tabellerna kan hotellkedjan definiera precis rätt kohortgrupper med flera mätvärden och segment. Hotellkedjan kan identifiera underpresterande kundgrupper för att rikta sig till kunder med kampanjer och erbjudanden för att öka bokningarna.
 
 ## App Version Adobes användningsexempel
 
@@ -60,8 +60,8 @@ Ett multinationella medieföretag använder riktade kampanjer för att locka anv
 
 ## Produktstartexempel
 
-En stor klädhandlare har många filter för sina kunder som genererar stora delar av intäkterna. Varje filter har specifika produkter som är utformade och skapade med filtret i åtanke. När de lanserar en produkt vill de veta hur den nya produkten har ökat försäljningen till olika kohorter med tiden. Med den nya [!UICONTROL Latency Table]-inställningen i [!UICONTROL Cohort Analysis] kan de analysera ett visst kundfiltrets beteende och intäkter före och efter lanseringen. Med hjälp av den här informationen kan de identifiera vilka produkter som genererar nya intäkter och vilka som inte drar nytta av kundernas intresse.
+En stor klädhandlare har många specifika kundsegment som genererar stora delar av intäkterna för sin verksamhet. Varje segment har specifika produkter som är utformade och skapade med segmentet i åtanke. När de lanserar en produkt vill de veta hur den nya produkten har ökat försäljningen till olika kohorter med tiden. Med den nya [!UICONTROL Latency Table]-inställningen i [!UICONTROL Cohort Analysis] kan de analysera ett visst kundsegments beteende och intäkter före och efter lanseringen. Med hjälp av den här informationen kan de identifiera vilka produkter som genererar nya intäkter och vilka som inte drar nytta av kundernas intresse.
 
 ## Individuell tröghet - De flesta lojala användare använder skiftläge
 
-Ett stort flygbolag får större delen av sin framgång och sina intäkter från återkommande och lojala kunder. I många fall utgör deras lojala resenärer merparten av intäkterna och att behålla dessa kunder är avgörande för deras långsiktiga framgång. Det kan ofta vara svårt att identifiera sina mest lojala och enhetliga kunder. Med den nya [!UICONTROL Rolling Calculation]-inställningen i [!UICONTROL Cohort Analysis] kan flygbolaget analysera lojala kundfilter och ta reda på vilka resenärer som har upprepat köpare månadsvis. Flygbolaget kan även inrikta sig på resenärerna med belöningar och förmåner för deras lojalitet. Genom att byta från kundlojalitet till bortfall kan flygbolaget dessutom identifiera vilka kunder som inte är återkommande köpare varje månad och inrikta sig på dessa kunder med kampanjer. Så att flygbolaget kan återta kontakten med dessa kunder och se till att de fortsätter att vara lojala kunder i framtiden.
+Ett stort flygbolag får större delen av sin framgång och sina intäkter från återkommande och lojala kunder. I många fall utgör deras lojala resenärer merparten av intäkterna och att behålla dessa kunder är avgörande för deras långsiktiga framgång. Det kan ofta vara svårt att identifiera sina mest lojala och enhetliga kunder. Med den nya [!UICONTROL Rolling Calculation]-inställningen i [!UICONTROL Cohort Analysis] kan flygbolaget analysera lojala kundsegment och ta reda på vilka resenärer som upprepade köpare varje månad. Flygbolaget kan även inrikta sig på resenärerna med belöningar och förmåner för deras lojalitet. Genom att byta från kundlojalitet till bortfall kan flygbolaget dessutom identifiera vilka kunder som inte är återkommande köpare varje månad och inrikta sig på dessa kunder med kampanjer. Så att flygbolaget kan återta kontakten med dessa kunder och se till att de fortsätter att vara lojala kunder i framtiden.

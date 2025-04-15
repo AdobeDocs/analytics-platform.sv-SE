@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '3511'
 ht-degree: 0%
@@ -166,8 +166,8 @@ Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext
 | | Justera datum | Välj det här alternativet om du vill justera datum från varje kolumn så att alla börjar på samma rad. |
 | **[Kolumn](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
 | | Radbryt rubriktext | Gör att du kan radbryta rubriktexten i frihandstabeller så att rubrikerna blir mer läsbara och tabellerna mer delbara. Detta är användbart för .pdf-återgivning och för mått med långa namn. Aktiverat som standard. |
-| | Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive alternativet [!UICONTROL Include None], visas. |
-| | Visa totalsummor | Denna summa representerar alla händelser som har samlats in, ibland kallat&quot;total datavy&quot;. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas. Summan stöds inte för tabeller eller uppdelningar med [statiska rader](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
+| | Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Det återspeglar alla tabellsegment som används i frihandstabellen, inklusive alternativet [!UICONTROL Include None]. |
+| | Visa totalsummor | Denna summa representerar alla händelser som har samlats in, ibland kallat&quot;total datavy&quot;. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar segmentvillkoren återspeglas. Summan stöds inte för tabeller eller uppdelningar med [statiska rader](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
 | | Visa miniatyrdiagram | Visa eller dölj linjediagram längst ned i diagrammet. När teckenförklaringen är dold ändras den inte längre till att referera till raderna visuellt. |
 | | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
 | | Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Vi kan visa procenttal som är större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna blir för stora. |

@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 1%
@@ -85,7 +85,7 @@ När du skapar en ny panel baseras standarddatavyn på datavyn för den panel du
 
 >[!IMPORTANT]
 >
->Den valda datavyn avgör vilka dimensioner, mätvärden och filter som är tillgängliga för att skapa visualiseringar i en panel.
+>Den valda datavyn avgör vilka dimensioner, mätvärden och segment som är tillgängliga för att skapa visualiseringar i en panel.
 >
 >
 >När du växlar en datavy för en panel kanske vissa komponenter inte är tillgängliga i den nya datavyn. Ändringen kan göra att visualiseringen inte återges korrekt. Du kan se varningar som:
@@ -100,7 +100,7 @@ Panelkalendern styr rapportens datumintervall för tabeller och visualiseringar 
 
 >[!NOTE]
 >
->Om en ![kalender](/help/assets/icons/Calendar.svg)-datumintervallkomponent används i en visualisering eller panel (till exempel som ett filter) åsidosätter datumintervallkomponenten panelkalendern.
+>Om en ![kalender](/help/assets/icons/Calendar.svg)-datumintervallkomponent används i en visualisering eller panel (till exempel som ett segment) åsidosätter datumintervallkomponenten panelkalendern.
 >
 
 
@@ -134,22 +134,22 @@ Välj **[!UICONTROL Apply to all panels]** om du vill använda datumintervallet 
 
 ## Släppzon {#dropzone}
 
-Med panelens släppzon kan du använda filter och nedrullningsbara filter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel.
+Med panelens släppzon kan du tillämpa segment och listrutesegment på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera segment på en panel.
 
 ### Filter
 
-Dra och släpp eventuella filter från den vänstra panelen i panelens släppzon för att börja filtrera panelen. Upprepa den här processen om du vill lägga till fler filter på panelen. Filter visas sida vid sida högst upp på panelen.
+Dra och släpp segment från den vänstra panelen i panelens släppzon för att börja segmentera panelen. Upprepa den här processen om du vill lägga till fler segment på panelen. Filter visas sida vid sida högst upp på panelen.
 
 ![Den vänstra panelen visar tillgängliga mått och det mobila kundmåttet som dras till panelens släppzon.](assets/segment-filter.png)
 
-#### Snabbfilter
+#### Snabbsegment
 
-Komponenter som inte är filterkomponenter kan också dras direkt till släppzonen för att skapa snabbfilter, vilket sparar tid och arbete med att gå till [filterverktyget](/help/components/filters/filter-builder.md). Filter som skapas på det här sättet definieras automatiskt som händelsenivåfilter. Du kan snabbt ändra den här definitionen genom att välja ![Redigera](/help/assets/icons/Edit.svg) bredvid filternamnet.
+Komponenter som inte tillhör segment kan också dras direkt till släppzonen för att skapa snabbsegment, vilket sparar tid och arbete med att gå till [segmentbyggaren](/help/components/filters/filter-builder.md). Filter som skapas på det här sättet definieras automatiskt som händelsenivåsegment. Du kan snabbt ändra den här definitionen genom att välja ![Redigera](/help/assets/icons/Edit.svg) bredvid segmentnamnet.
 
 
-Mer information finns i [Snabbfilter](/help/components/filters/quick-filters.md).
+Mer information finns i [Snabbsegment](/help/components/filters/quick-filters.md).
 
-![Ad hoc-filter som är offentliga och släppta i släppzonen](assets/adhoc-segment-filter.png)
+![Ad hoc-segment som är offentliga och släpps i släppzonen](assets/adhoc-segment-filter.png)
 
 ### Nedrullningsbara filter
 
@@ -162,57 +162,57 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedrullningsbara 
 >[!ENDSHADEBOX]
 
 
-#### Statiska nedrullningsbara filter
+#### Statiska rullgardinssegment
 
-Med statiska nedrullningsbara filter kan du interagera med data på ett kontrollerat sätt. Du kan till exempel lägga till ett nedrullningsbart filter för Mobila enhetstyper så att du kan filtrera panelen efter Surfplatta, Mobiltelefon eller Skrivbord.
+Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat sätt. Du kan till exempel lägga till ett nedrullningsbart segment för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
 
-Statiska nedrullningsbara filter kan också användas för att konsolidera flera projekt till ett. Om du t.ex. har många versioner av samma projekt med olika landsfilter kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landsfilter.
+Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
 
-![Statiska nedrullningsbara filter visar filtret &quot;Direkt&quot; för marknadskanalen markerat. ](assets/dropdown-filter-intro.png)
+![Statiska nedrullningsbara segment med markerat segment för marknadskanalen &quot;Direkt&quot;. ](assets/dropdown-filter-intro.png)
 
-##### Skapa statiska listrutefilter
+##### Skapa statiska rullgardinssegment
 
-* För nedrullningsbara filter som använder dimensionsobjekt väljer du en dimension från den vänstra panelen och släpper dimensionen i panelens släppzon samtidigt som du håller ned ⇧ (*shift*). Den här åtgärden skapar ett nedrullningsbart filter med alla dimensionsobjekt som är associerade med den dimensionen.
+* För rullgardinsmenyer som använder dimensionsobjekt väljer du en dimension från den vänstra panelen och släpper dimensionen i panelens släppzon samtidigt som du håller ned ⇧ (*shift*). Den här åtgärden skapar ett nedrullningsbart segment med alla dimensionsobjekt som är associerade med den dimensionen.
 
-  Eller om du vill att listrutefiltret bara ska innehålla vissa dimensionsobjekt som är kopplade till en dimension, markerar du högerpilsikonen bredvid önskad dimension på den vänstra panelen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Markera flera dimensionsobjekt i den här listan med ⇧+![Markera](/help/assets/icons/Select.svg) (*Skift* + *välj*) eller ^+![Markera](/help/assets/icons/Select.svg) (*kontroll* + *markera*) och släpp dem sedan i panelens släppzon **samtidigt som du håller ned** ⇧.
+  Om du vill att listrutesegmentet endast ska innehålla specifika dimensionsobjekt som är kopplade till en dimension, väljer du högerpilsikonen bredvid önskad dimension på den vänstra panelen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Markera flera dimensionsobjekt i den här listan med ⇧+![Markera](/help/assets/icons/Select.svg) (*Skift* + *välj*) eller ^+![Markera](/help/assets/icons/Select.svg) (*kontroll* + *markera*) och släpp dem sedan i panelens släppzon **samtidigt som du håller ned** ⇧.
 
-* För nedrullningsbara filter som använder en enda komponenttyp (t.ex. bara dimensioner, eller bara filter, eller endast mätvärden) väljer du flera objekt av samma typ på den vänstra panelen med ⇧+![Markera](/help/assets/icons/Select.svg) eller ^+![Markera](/help/assets/icons/Select.svg). Släpp sedan objekten i panelens släppzon **samtidigt som du håller ned** ⇧.
+* För rullgardinsmenyer som använder en enda komponenttyp (t.ex. bara dimensioner, eller bara segment, eller endast mått) väljer du flera objekt av samma typ på den vänstra panelen med ⇧+![Markera](/help/assets/icons/Select.svg) eller ^+![Markera](/help/assets/icons/Select.svg). Släpp sedan objekten i panelens släppzon **samtidigt som du håller ned** ⇧.
 
-  Ett enda nedrullningsbart filter skapas med komponenter som du har valt.
+  Ett enskilt nedrullningsbart segment skapas med de komponenter som du har valt.
 
-* För nedrullningsbara filter som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 filter) väljer du flera komponenter med ⇧+![Markera](/help/assets/icons/Select.svg) eller ^+![Markera](/help/assets/icons/Select.svg). Släpp markeringen i panelens släppzon **medan du håller ned** ⇧. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara filter. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara filter: ett nedrullningsbart filter innehåller dimensionsobjekt och det andra innehåller mått.
+* För rullgardinsmenyer som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 segment) väljer du flera komponenter med ⇧+![Markera](/help/assets/icons/Select.svg) eller ^+![Markera](/help/assets/icons/Select.svg). Släpp markeringen i panelens släppzon **medan du håller ned** ⇧. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara segment. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara segment: ett nedrullningsbart segment innehåller dimensionsobjekt och det andra innehåller mått.
 
-Ett nedrullningsbart filter innehåller följande alternativ för snabbmenyer:
+Ett nedrullningsbart segment innehåller följande alternativ för snabbmenyer:
 
-* **[!UICONTROL Delete drop-down]**: Tar bort nedrullningsfiltret från panelen.
-* **[!UICONTROL Delete label]**: Ta bort texten som visas ovanför ett nedrullningsbart filter. Om du vill ändra etiketten håller du pekaren över etiketten och väljer ![Redigera etikett för nedrullningsbart filter](/help/assets/icons/Edit.svg).
-* **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart filter i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
-* **[!UICONTROL Require selection]**: Kräver att ett filter är inställt på panelen.
+* **[!UICONTROL Delete drop-down]**: Tar bort det nedrullningsbara segmentet från panelen.
+* **[!UICONTROL Delete label]**: Ta bort texten som visas ovanför ett nedrullningsbart segment. Om du vill ändra etiketten håller du pekaren över etiketten och väljer ![Redigera etikett för det nedrullningsbara segmentet](/help/assets/icons/Edit.svg).
+* **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart segment i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
+* **[!UICONTROL Require selection]**: Kräver att ett segment är inställt på panelen.
 
-##### Använda statiska nedrullningsbara filter
+##### Använda statiska rullgardinssegment
 
-Användare kan använda den nedrullningsbara filtermenyn på något av följande sätt för att filtrera panelen:
+Användare kan använda den nedrullningsbara segmentmenyn på något av följande sätt för att segmentera panelen:
 
-* Använd ett enda filter på panelen genom att välja filtret i listrutan.
+* Använd ett segment på panelen genom att markera segmentet i det nedrullningsbara segmentet.
 
-* Använd flera filter på panelen genom att markera mer än ett filter i listrutan. Panelen filtreras så att den innehåller något av de valda filtren.
+* Använd flera segment på panelen genom att markera mer än ett segment i listrutan. Panelen segmenteras för att inkludera något av de valda segmenten.
 
 
-#### Dynamiska nedrullningsbara filter
+#### Dynamiska rullgardinsmenyer
 
-Med dynamiska nedrullningsbara filter kan du bestämma tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara filter. Du kan till exempel skapa två dynamiska listrutor med en landsdimension och en stadsdimension. När du väljer ett land i listrutan **[!UICONTROL Countries]** justeras listrutan **[!UICONTROL Cities]** dynamiskt så att den bara visar städer i det landet.
+Med dynamiska listrutesegment kan du fastställa tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara segment. Du kan till exempel skapa två dynamiska listrutor med en landsdimension och en stadsdimension. När du väljer ett land i listrutan **[!UICONTROL Countries]** justeras listrutan **[!UICONTROL Cities]** dynamiskt så att den bara visar städer i det landet.
 
-Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade filter visas. De Dimensioner som markeras i statiska nedrullningsbara filter påverkar tillgängliga värden i dynamiska nedrullningsbara filter. Inverteringen är emellertid inte true. De Dimensioner som markeras i dynamiska listrutefilter påverkar inte tillgängliga värden i statiska listrutefilter.
+Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade segment visas. Dimension-objekt som markeras i statiska rullgardinssegment påverkar tillgängliga värden i dynamiska rullgardinssegment. Inverteringen är emellertid inte true. Dimension-objekt som är markerade i dynamiska rullgardinssegment påverkar inte tillgängliga värden i statiska rullgardinssegment.
 
-Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart filter så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara filter kan innehålla fler värden. Välj **[!UICONTROL Reset all]** om du vill ta bort markeringen från alla nedrullningsbara filter för den panelen.
+Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart segment så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara segment kan innehålla fler värden. Välj **[!UICONTROL Reset all]** om du vill ta bort markeringen från alla nedrullningsbara segment för den panelen.
 
-Så här skapar du ett dynamiskt nedrullningsbart filter:
+Så här skapar du ett dynamiskt nedrullningsbart segment:
 
 * Dra och släpp en dimension i panelens släppzon **samtidigt som du håller ned** ⇧.
 
-Observera att dynamiska nedrullningsbara filter inte är tillgängliga för mått, filter eller datumintervall.
+Observera att dynamiska rullgardinsmenyer inte är tillgängliga för mått, segment eller datumintervall.
 
-Ett dynamiskt nedrullningsbart filter har samma alternativ för snabbmenyer som statiska nedrullningsbara filter.
+Ett dynamiskt nedrullningsbart segment har samma alternativ för snabbmenyer som statiska nedrullningsbara segment.
 
 
 ## Snabbmeny

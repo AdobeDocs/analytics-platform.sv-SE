@@ -4,7 +4,7 @@ title: Statistiska tekniker som används för avvikelseidentifiering
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Beroende på vilket datum som använts i rapporten används tre olika statistisk
 
 ## Analysidentifiering för daglig granularitet
 
-För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
+För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en modell för avkänning (kallas funktionell segmentering).
 
 Urvalet av tidsseriemodell baseras på följande kombinationer för typ av fel, trend och säsongsberoende (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). I algoritmen görs följande försök:
 
@@ -29,7 +29,7 @@ Urvalet av tidsseriemodell baseras på följande kombinationer för typ av fel, 
 1. MNA (multiplikativt fel, ingen trend, additiv säsongsvariation)
 1. AAN (additivt fel, additiv trend, ingen säsongsvariation)
 
-Algoritmen testar lämpligheten hos vart och ett av dessa genom att välja det som har det bästa genomsnittliga absoluta procentfelet (MAPE). Om MAPE för modellen med bästa tidsserie är större än 15 % används emellertid funktionell filtrering. Vanligtvis är data med hög repetitionsgrad (t.ex. vecka över vecka eller månad över månad) bäst lämpade för en tidsseriemodell.
+Algoritmen testar lämpligheten hos vart och ett av dessa genom att välja det som har det bästa genomsnittliga absoluta procentfelet (MAPE). Om MAPE för modellen för bästa tidsserie är större än 15 % används emellertid funktionell segmentering. Vanligtvis är data med hög repetitionsgrad (t.ex. vecka över vecka eller månad över månad) bäst lämpade för en tidsseriemodell.
 
 Efter modellval justerar algoritmen sedan resultaten baserat på helger och årstidsberoende. För helger kontrollerar algoritmen om någon av följande helger finns i datumintervallet för rapportering:
 

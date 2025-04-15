@@ -4,7 +4,7 @@ title: Flödesöversikt
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Med visualiseringen kan du
 
 * Visualisera kundresan via er webbplats eller tillämpning.
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, till exempel inmatning, en viss dimension eller avslutning.
-* Skapa filter genom att ange en specifik punkt i en vald bana.
+* Skapa segment genom att definiera en viss punkt i en vald bana.
 
 
 >[!BEGINSHADEBOX]

@@ -4,7 +4,7 @@ title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 1%
@@ -37,10 +37,10 @@ När du börjar använda [!UICONTROL Analysis Workspace] kanske du undrar:
 * vilka visualiseringar som skulle vara mest användbara,
 * vilka dimensioner och mätvärden som kan underlätta insikter,
 * var du kan dra och släppa objekt,
-* var ett filter ska skapas,
+* var ett segment ska skapas,
 * med mera.
 
-För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en algoritm som ger dig de populäraste dimensionerna, måtten, filtren och datumintervallen som ditt företag använder. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Du ser faktiskt mått, mätvärden och filter som taggats med [!UICONTROL POPULAR] i listrutan, vilket visas här:
+För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en algoritm som ger dig de populäraste dimensionerna, måtten, segmenten och datumintervallen som ditt företag använder. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Dimensioner, mätvärden och segment som taggats med [!UICONTROL POPULAR] visas i listrutan, vilket visas här:
 
 ![Panelen Snabbinsikter.](assets/popular-tag.png)
 
@@ -48,7 +48,7 @@ För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en
 
 * Bygg en datatabell och en medföljande visualisering på rätt sätt i [!UICONTROL Analysis Workspace].
 * Lär dig terminologi och vokabulär för grundläggande komponenter och delar av [!UICONTROL Analysis Workspace].
-* Gör enkla uppdelningar av dimensioner, lägg till flera mätvärden eller jämför enkelt filter i en [!UICONTROL Freeform table].
+* Gör enkla uppdelningar av dimensioner, lägg till flera mätvärden eller jämför segment enkelt i en [!UICONTROL Freeform table].
 * Ändra eller prova olika visualiseringstyper för att snabbt och intuitivt hitta sökverktyget för din analys.
 
 ## Grundläggande nyckelterminologi
@@ -58,11 +58,11 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 | Byggblock (komponent) | Definition |
 |---|---|
 | **[!UICONTROL Dimension]** | Dimensioner är beskrivningar eller egenskaper för mätdata som kan visas, delas upp och jämföras i ett projekt. De är icke-numeriska värden och datum som delas upp i dimensionsobjekt. *webbläsare* eller *sida* är till exempel en dimension. |
-| **[!UICONTROL Dimension item]** | Dimensioner är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel *Chrome*, *Firefox*, *Edge* eller andra. |
+| **[!UICONTROL Dimension item]** | Dimension-artiklar är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel *Chrome*, *Firefox*, *Edge* eller andra. |
 | [!UICONTROL Metric] | Mätvärden är kvantitativ information om personaktivitet, t.ex. vyer, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
 | **[!UICONTROL Visualization]** | Workspace erbjuder [ett antal visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data. t.ex. stapeldiagram, mundiagram, histogram, linjediagram, kartor, punktdiagram med mera. |
 | **[!UICONTROL Dimension Breakdown]** | En dimensionsuppdelning är ett sätt att dela upp en dimension efter andra dimensioner. Du kan till exempel bryta ned USA:s mobilenheter för att få mobilenhetsbesök per delstat. Eller så kan ni bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer med mera. |
-| **[!UICONTROL Filter]** | Med filter kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan t.ex. skapa [!UICONTROL People]-filter baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>utträde och tävlingsbidrag: personer från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
+| **[!UICONTROL Filter]** | Med filter kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL People] segment baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>utträde och tävlingsbidrag: personer från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
 
 ## Använd
 
@@ -83,7 +83,7 @@ Välj byggstenar:
 
 * **[!UICONTROL Analyze]** - ange en dimension (orange)
 * **[!UICONTROL by]** - ange ett mått (grönt)
-* **[!UICONTROL filter by]** - ange ett filter (blått)
+* **[!UICONTROL segment by]** - ange ett segment (blått)
 * **[!UICONTROL on]** - ange ett datumintervall (lila).
 
 Du måste välja minst en dimension och ett mått för att visualiseringen ska fungera korrekt.
@@ -105,7 +105,7 @@ Välj **[!UICONTROL Clear]** om du vill rensa alla inmatningsfält.
 
    ![Registret Frihand visar dimensionen lodrätt och måttet vågrätt.](assets/quick-insights-output.png)
 
-   * En friformstabell med dimensionen (landskod) och måttet (sessioner), filtrerad av webbsessioner under de senaste 12 månaderna.
+   * En friformstabell med måtten (landskod) och mått (sessioner), segmenterade efter webbsessioner de senaste 12 månaderna.
 
    * En åtföljande visualisering, i det här fallet ett [stapeldiagram](/help/analysis-workspace/visualizations/bar.md). Den visualisering som genereras baseras på den typ av data som du har lagt till i tabellen. Alla tidsbaserade data (till exempel [!UICONTROL Sessions] per dag/månad) blir som standard ett [!UICONTROL Line]-diagram. Alla icke-tidsbaserade data (till exempel [!UICONTROL Sessions] per [!UICONTROL Device]) blir som standard ett [!UICONTROL Bar]-diagram. Du kan ändra visualiseringstypen genom att klicka på listrutepilen bredvid visualiseringstypen.
 
@@ -121,7 +121,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder]. Vissa av dem
 
   ![Meddelande från panelen Snabbinformation visas när du har valt hjälpikonen.](assets/qibuilder4.png)
 
-* Du kan analysera flera dimensioner och mätvärden, kombinera eller jämföra filter och ange ett datumintervall:
+* Du kan analysera flera dimensioner och mätvärden, kombinera eller jämföra segment och ange ett datumintervall:
 
   ![Resultat av verktyget för snabb Insights-byggaren](assets/qibuilder-result.png)
 
@@ -129,7 +129,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder]. Vissa av dem
 
    * Lägg till fler mätvärden **[!UICONTROL by]**: Du kan lägga till upp till två mätvärden till. Se och..
 
-   * **[!UICONTROL filter by]**: Du kan lägga till upp till två filter till. Du kan till exempel lägga till Bokningar som ett filter och kombinera det filtret med de filter du jämför med Vanliga bokningar och Första gången. Se ➏, ➐ och ➑.
+   * **[!UICONTROL segment by]**: Du kan lägga till upp till två segment till. Du kan till exempel lägga till Bokningar som ett segment och kombinera det segmentet med segmenten Vanliga bokningar och Första gången som du jämför. Se ➏, ➐ och ➑.
 
    * on: Du kan ange datumintervall. Se ➒.
 

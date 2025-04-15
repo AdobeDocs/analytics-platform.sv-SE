@@ -5,7 +5,7 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 100fe0c9bf5dd1db78ae8188e8de1f8ea53123dc
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1969'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
 1. (Villkorligt) Om du delar ett projekt ska du välja om du vill aktivera följande alternativ när du delar projektet:
 
-   * **Dela inbäddade projektkomponenter:** Delar filter, beräknade värden och datumintervall med alla mottagare. När komponenterna har delats visas de i listrutan Komponenter i mottagarens Workspace. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
+   * **Dela inbäddade projektkomponenter:** Delar segment, beräknade värden och datumintervall med alla mottagare. När komponenterna har delats visas de i listrutan Komponenter i mottagarens Workspace. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
    * **Ange som startsida för mottagare:** Anger den här sidan som startsida för mottagare. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
@@ -147,7 +147,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 >
 >* Projekt med fler än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till Customer Journey Analytics.
 >
->* Användare som du delar med kan visa alla filter som använts på projektet under [kurationen](curate.md).
+>* Användare som du delar med kan visa alla segment som har tillämpats på projektet under [kurationen](curate.md).
 > 
 >* Användare som du delar med kan ändra projektets datumintervall. Datumintervallet som du anger för projektet visas som standard.
 >

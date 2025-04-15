@@ -1,10 +1,10 @@
 ---
-description: Visualisering av omformningar visar data som delar eller filter av en helhet.
+description: Visualisering av omgivande objekt visar data som delar eller segment av en helhet.
 title: Munk
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -30,9 +30,9 @@ _I den här artikeln dokumenteras Donut-visualiseringen i_ ![CustomerJourneyAnal
 >[!ENDSHADEBOX]
 
 
-På samma sätt som ett cirkeldiagram visar visualiseringen ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** data som delar eller filter av en helhet. Använd en munstycksvisualisering när du jämför procentandelar av en summa, vanligtvis med ett litet antal objekt.
+På samma sätt som ett cirkeldiagram visar ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** data som delar eller segment i en helhet. Använd en munstycksvisualisering när du jämför procentandelar av en summa, vanligtvis med ett litet antal objekt.
 
-![Ett ringdiagram som visar data som delar eller filter av en helhet.](assets/donut.png)
+![Ett ringdiagram som visar data som delar eller segment i en helhet.](assets/donut.png)
 
 
 >[!BEGINSHADEBOX]

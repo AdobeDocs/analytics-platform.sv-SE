@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 1%
@@ -106,7 +106,7 @@ I tabellerna nedan finns en översikt över de tillgängliga menyerna.
 
 | **[!UICONTROL Components]** | Genväg till Mac | Kortkommando i Windows | Beskrivning |
 |---|---|---|---|
-| **[!UICONTROL Create filter...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+Ctrl+e *]** | Skapa ett nytt [filter](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Create segment...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+Ctrl+e *]** | Skapa ett nytt [segment](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Create metric...]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+Ctrl+c *]** | Skapa ett nytt [beräknat mått](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Create date range...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+Ctrl+d *]** | Skapa ett nytt [datumintervall](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Create annotation...]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+Ctrl+o *]** | Skapa en ny [anteckning](/help/components/annotations/overview.md). |

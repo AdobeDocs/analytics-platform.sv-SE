@@ -4,7 +4,7 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras visualiseringen av nyckelmätningssammanfattningen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +61,7 @@ Den här visualiseringen åtgärdar flera vanliga användningsfall, bland annat:
    | **[!UICONTROL Metric]** | Välj det mätvärde som du vill undersöka. Alla mätvärden stöds. |
    | **[!UICONTROL Primary date range]** | Det aktuella datumintervallet för frihandstabellen.<p>Välj bland tillgängliga datumintervall i datavyn.</p> <p>Välj [!UICONTROL **Panelens datumintervall**] om du vill använda samma datumintervall som används på panelen där visualiseringen finns.</p> |
    | **[!UICONTROL Comparison date range]** | Datumintervallet som du vill jämföra med det primära datumintervallet. |
-   | **[!UICONTROL Filter (optional)]** | Alla filter som du är intresserad av för denna sammanfattning. |
+   | **[!UICONTROL Filter (optional)]** | Alla segment som du är intresserad av för sammanfattningen. |
 
    {style="table-layout:auto"}
 
@@ -153,7 +153,7 @@ När du har skapat visualiseringen kan du fortfarande redigera den ursprungliga 
 
    Du återgår nu till den ursprungliga konfigurationsvyn.
 
-1. Ändra måttet, det primära datumintervallet, jämförelsedatumintervallet eller filtret.
+1. Ändra måttet, det primära datumintervallet, jämförelsedatumintervallet eller segmentet.
 
 >[!MORELIKETHIS]
 >

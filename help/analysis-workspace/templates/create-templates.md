@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 50d46d5b2d663e6f0b3951006db34bff0193417e
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Så här skapar du en ny mall som kan användas av personer i ditt inloggningsf�
    | **[!UICONTROL Name]** | Ange ett beskrivande namn för mallen. |
    | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
    | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. Den här förklaringen visas på mallens förhandsgranskningssida. |
-   | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**.<p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
+   | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**.<p>De val du väljer avgör var mallen visas och vilka segment som gäller för användare som har åtkomst till den från sidan Organisationsmallar.</p> |
    | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]** och **[!UICONTROL Journey Optimizer]**. <p>De val du väljer avgör mallens plats på sidan Organisationsmallar. Användarna kan navigera till mallen eller filtrera listan efter användningsfall. </p><p>**Obs!** Alternativet **[!UICONTROL Journey Optimizer]** är bara tillgängligt om det finns Journey Optimizer-data i datavyn som du använder i Customer Journey Analytics. Om du väljer **[!UICONTROL Journey Optimizer]** blir mallen tillgänglig för användning i Adobe Journey Optimizer. I Journey Optimizer finns en nedrullningsbar meny på sidan **[!UICONTROL Reports]** där användarna kan välja den här mallen eller standardmallen. Mer information finns i [Kom igång med den uppdaterade rapportfunktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen. |
    | **[!UICONTROL Journey Optimizer activity type]** | Välj den Journey Optimizer-aktivitetstyp som ska associeras med den här mallen: **[!UICONTROL Campaigns]**, **[!UICONTROL Journeys]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Reports]** eller **[!UICONTROL Subscriptions]**. <p>Lämna fältet tomt om du vill att den här mallen ska kopplas till alla aktivitetstyper.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |
    | **[!UICONTROL Journey Optimizer activity]** | Välj den Journey Optimizer-aktivitet som ska associeras med den här mallen. <p>Lämna det här fältet tomt om du vill att den här mallen ska kopplas till alla aktiviteter av den valda aktivitetstypen.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |

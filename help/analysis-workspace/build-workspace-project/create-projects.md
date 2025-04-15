@@ -4,7 +4,7 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Nu när du har skapat ett tomt Workspace-projekt måste du känna till användar
    * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md)
    * **[!DNL People]** [mätvärde](/help/components/apply-create-metrics.md),
    * **[!DNL Avg Order Value]** [beräknat ➏](/help/components/calc-metrics/calc-metr-overview.md)
-   * **[!DNL Mobile App Sessions]** [filter](/help/components/filters/filters-overview.md) ➐
+   * **[!DNL Mobile App Sessions]** [segment](/help/components/filters/filters-overview.md) ➐
    * **[!DNL Last Month]** [datumintervall](/help/components/date-ranges/overview.md) ➑
    * **[!DNL Example]** [➒](/help/components/annotations/overview.md)
 

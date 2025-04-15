@@ -4,7 +4,7 @@ description: Lär dig använda en kohorttabell för kohortanalys i Analysis Work
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -41,7 +41,7 @@ _Den här artikeln dokumenterar kohorttabellen i_ ![CustomerJourneyAnalytics](/h
 
 En *kohort* är en grupp personer som delar gemensamma egenskaper under en angiven period. En ![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL Cohort table]**-visualisering är till exempel användbar när du vill veta hur en kohort interagerar med ett varumärke. Du kan enkelt upptäcka ändringar i trender och sedan svara på dem. (Förklaringar av [!UICONTROL Cohort Analysis] finns på webben, till exempel [Kohortanalys 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
-När du har skapat en kohortrapport kan du strukturera komponenterna (specifika dimensioner, mätvärden och filter) och sedan dela kohortrapporten med vem som helst. Se [Kuratera och dela](/help/analysis-workspace/curate-share/curate.md).
+När du har skapat en kohortrapport kan du strukturera komponenterna (specifika dimensioner, mått och segment) och sedan dela kohortrapporten med vem som helst. Se [Kuratera och dela](/help/analysis-workspace/curate-share/curate.md).
 
 Exempel på vad du kan göra med en [!UICONTROL Cohort table]:
 
@@ -64,7 +64,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortanalys i An
 
 >[!IMPORTANT]
 >
->[!UICONTROL Cohort Analysis] stöder inte icke-filterbara mått (inklusive beräknade värden), icke-heltalsmått (till exempel Intäkter) eller förekomster. Endast mätvärden som kan användas i filter kan användas i [!UICONTROL Cohort Analysis], och de kan bara ökas med 1 åt gången.
+>[!UICONTROL Cohort Analysis] stöder inte icke-segmenterbara mått (inklusive beräknade värden), icke-heltalsmått (t.ex. Intäkter) eller förekomster. Endast mätvärden som kan användas i segment kan användas i [!UICONTROL Cohort Analysis], och de kan bara ökas med 1 åt gången.
 
 Kohorttabeller i Customer Journey Analytics stöder dubbelbaserade (eller numeriska) mätvärden. Exempel: Purchase.Value (en dubbel) kan användas som Inkluderings-/returmått. Dessutom fördubblas också alla mätvärden som skickas till Adobe Experience Platform via Analytics Source Connector.
 
@@ -76,13 +76,13 @@ Mer information om hur du skapar en kohort och kör en [!UICONTROL Cohort Analys
 
 ### [!UICONTROL Retention]-tabell
 
-En [!UICONTROL Retention]-kohorttabell returnerar personer: varje datacell visar det råa antalet och procentandelen personer i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
+En [!UICONTROL Retention]-kohorttabell returnerar personer: varje datacell visar det råa antalet och procentandelen personer i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
 
 ![En återgivningskohortrapport som visar enheter och procent av personerna i kohorten.](assets/retention-report.png)
 
 ### [!UICONTROL Churn]-tabell
 
-En [!UICONTROL Churn]-kohorttabell är omvänd till en kvarhållningstabell och visar de personer som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 filter.
+En [!UICONTROL Churn]-kohorttabell är omvänd till en kvarhållningstabell och visar de personer som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
 
 ![En Churn-tabell som visar enheter och procentandel av personer som inte uppfyller returkriterierna för en kohort.](assets/churn-report.png)
 

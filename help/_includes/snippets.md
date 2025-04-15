@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3f84fd36c4859a4325774be2a6cb8793cda2295e
+source-git-commit: d91a00036cbbfa21c7d0a772ccbefb2ab37a4c59
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3756'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ ht-degree: 0%
 
 | Alternativ | Funktion |
 |---------|----------|
-| **[!UICONTROL Recommended]** | Sortera komponenter för varje typ (mått, mått, filter och datumintervall) baserat på deras rekommendation. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i varje lista. |
-| **[!UICONTROL Last modified]** | Sortera komponenter för varje typ (mått, mått, filter och datumintervall) baserat på deras senaste ändringsdatum. De senast ändrade komponenterna visas högre i varje lista. |
-| **[!UICONTROL Alphabetical]** | Sortera komponenterna för varje typ (mått, mått, filter och datumintervall) i stigande alfabetisk ordning. |
-| **[!UICONTROL Categorical]** | Sortera komponenter för varje typ (mått, mått, filter och datumintervall) baserat på deras kategori. Exempel: Kuraterade jämfört med Ej strukturerade datavykomponenter. |
+| **[!UICONTROL Recommended]** | Sortera komponenter för varje typ (mått, mått, segment och datumintervall) baserat på deras rekommendation. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i varje lista. |
+| **[!UICONTROL Last modified]** | Sortera komponenter för varje typ (dimension, mått, segment och datumintervall) baserat på deras senaste ändringsdatum. De senast ändrade komponenterna visas högre i varje lista. |
+| **[!UICONTROL Alphabetical]** | Sortera komponenterna för varje typ (mått, mått, segment och datumintervall) i stigande alfabetisk ordning. |
+| **[!UICONTROL Categorical]** | Sortera komponenterna för varje typ (dimension, mått, segment och datumintervall) baserat på deras kategori. Exempel: Kuraterade jämfört med Ej strukturerade datavykomponenter. |
 
 {style="table-layout:auto"}
 
@@ -57,7 +57,7 @@ Tillgängliga tidsjämförelsealternativ omfattar föregående period, 13 veckor
 
 ## Videodemonstration - Adobe Analytics {#videoaa}
 
-*Den här videon demonstrerar funktionaliteten med Adobe Analytics. Funktionen finns dock på liknande sätt i Customer Journey Analytics. Observera skillnaderna i terminologi mellan Adobe Analytics och Customer Journey Analytics (till exempel segment kontra filter, eller besök kontra sessioner).*
+*Den här videon demonstrerar funktionaliteten med Adobe Analytics. Funktionen finns dock på liknande sätt i Customer Journey Analytics. Observera skillnaderna i terminologi mellan Adobe Analytics och Customer Journey Analytics (t.ex.&quot;besök&quot; jämfört med&quot;sessioner&quot;).*
 
 
 ## Panelen Filter {#filterspanel}
@@ -138,13 +138,13 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 * **30 dagar**: Kan synkroniseras upp till 30 dagar från när konverteringen gjordes.
 * **60 dagar**: Kan synkroniseras upp till 60 dagar från när konverteringen gjordes.
 * **90 dagar**: Återställer upp till 90 dagar från när konverteringen inträffade.
-* **13 månader** [!BADGE B2B edition]{type=Informative}
+* **13 månader** [!BADGE B2B edition]{type=Informative}: Kan synkroniseras upp till 13 månader efter konverteringen.
 * **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar den ändrade [Sessionstimeout](/help/data-views/create-dataview.md#session-settings) i en datavy.
 * **Person (rapporteringsfönster)**: Alla besök kontrolleras fram till den första i månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för personsökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
-* **Global Account (Reporting Window)** [!BADGE B2B edition]{type=Informative}
-* **Konton (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}
-* **Möjligheter (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}
-* **Buying group (Reporting Window)** [!BADGE B2B edition]{type=Informative}
+* **Global Account (Reporting Window)** [!BADGE B2B edition]{type=Informative}: Kontrollerar för alla globala konton fram till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för global kontosökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
+* **Konton (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}: Kontrollerar för alla konton fram till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för kontosökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
+* **Möjlighet (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}: Alla affärsmöjligheter kan säkerhetskopieras till den första månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för affärsmöjlighetssökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
+* **Köpgrupp (rapporteringsfönster)** [!BADGE B2B edition]{type=Informative}: Kontrollerar alla inköpsgrupper fram till den första i månaden i det aktuella datumintervallet. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för inköpsgruppens sökning 1 september - 30 september. Om du använder det här uppslagsfönstret kan du ibland se att dimensionsobjekt tilldelas till datum utanför rapportfönstret.
 * **Anpassad tid:** Används för att ange ett anpassat uppslagsfönster från när en konvertering inträffade. Du kan ange antalet minuter, timmar, dagar, veckor, månader eller kvartal. Om en konvertering till exempel skedde den 20 februari skulle ett uppslagsfönster på fem dagar utvärdera alla dimensionskontaktytor från den 15 februari till den 20 februari i attribueringsmodellen.
 
 ## Attributionsexempel {#attribution-example}
@@ -236,7 +236,7 @@ Använd följande information för att välja den visualisering som bäst passar
 
 >[!AVAILABILITY]
 >
->De funktioner som beskrivs i den här artikeln och alla andra artiklar och funktioner som har märkts med [!BADGE B2B edition]{type=Informative}<br/>Dessutom, [!BADGE B2B edition]{type=Informative}[!BADGE B2B edition]{type=Informative}<br/>Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md).
+>De funktioner som beskrivs i den här artikeln och alla andra artiklar och funktioner som har märkts med [!BADGE B2B edition]{type=Informative}.  är i den begränsade testfasen av lanseringen och är kanske inte tillgänglig än i din miljö. <br/>Dessutom kan [!BADGE B2B edition]{type=Informative}-funktioner och dokumentation för [!BADGE B2B edition]{type=Informative}-funktioner ändras och inga juridiska skyldigheter härledas från dem.<br/>Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md).
 >
 
 
@@ -244,4 +244,4 @@ Använd följande information för att välja den visualisering som bäst passar
 
 >[!INFO]
 >
-I den här dokumentationen markeras specifika B2B-artiklar eller funktioner som bara är tillgängliga i Customer Journey Analytics B2B edition med [!BADGE B2B edition]{type=Informative}
+>I den här dokumentationen markeras specifika B2B-artiklar eller funktioner, som bara är tillgängliga med Customer Journey Analytics B2B edition, med [!BADGE B2B edition]{type=Informative}.

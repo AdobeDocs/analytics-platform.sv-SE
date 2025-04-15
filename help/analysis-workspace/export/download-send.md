@@ -1,10 +1,10 @@
 ---
-description: Du kan hämta data från Analysis Workspace genom att kopiera dem eller i formaten PDF och CSV.
+description: Du kan hämta data från Analysis Workspace genom att kopiera dem eller i PDF- och CSV-format.
 title: Hämta Customer Journey Analytics-data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Hämta Customer Journey Analytics-data
 
-Du kan hämta Customer Journey Analytics-data till din personliga arbetsstation. Detta kan vara i form av kopierade data, CSV eller PDF. Ett PDF är att föredra om du vill att visualiseringar ska ingå i den hämtade filen. CSV och kopierade data är att föredra om du bara vill ha textdata.
+Du kan ladda ned Customer Journey Analytics-data till din personliga arbetsstation. Detta kan vara i form av kopierade data, CSV eller PDF. Ett PDF-program är att föredra om du vill att visualiseringar ska ingå i den hämtade filen. CSV och kopierade data är att föredra om du bara vill ha textdata.
 
 Det finns även andra metoder för att exportera Customer Journey Analytics-data, vilket beskrivs i [Översikt över export](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -21,13 +21,13 @@ Det finns även andra metoder för att exportera Customer Journey Analytics-data
 
 Tänk på följande när du hämtar projekt:
 
-* När du hämtar projekt som en CSV-fil eller PDF kan projektet sparas eller sparas utan att sparas när du begär en projekthämtning. Endast sparade projekt kan dock vara [schemalagda](/help/analysis-workspace/export/t-schedule-report.md).
+* När du hämtar projekt som en CSV- eller PDF-fil kan projektet sparas eller sparas utan att sparas när du begär en projekthämtning. Endast sparade projekt kan dock vara [schemalagda](/help/analysis-workspace/export/t-schedule-report.md).
 
-* Vid hämtning av projekt som PDF:
-   * Det kan ta flera minuter att exportera nedladdningar eftersom projektet körs på nytt på Adobe-servrar innan det återges i PDF-format. Vi rekommenderar att du inte lämnar projektet förrän PDF har hämtats i webbläsaren. Du kan dock fortsätta att göra ändringar i projektet medan du väntar. Om det tar längre tid än fem minuter att återge ett PDF uppmanas du att skicka det via e-post i stället.
+* När du laddar ned projekt som PDF:
+   * Det kan ta flera minuter att exportera nedladdningar eftersom projektet körs på nytt på Adobe-servrar innan det renderas i PDF-format. Vi rekommenderar att du inte lämnar projektet förrän PDF har hämtats i webbläsaren. Du kan dock fortsätta att göra ändringar i projektet medan du väntar. Om en PDF tar längre tid än fem minuter att återge uppmanas du att skicka den via e-post i stället.
    * Hämtningar återges som en sida utan sidnumrering.
-   * PDF innehåller det som finns på Workspace sida. Om ett projekt har visualiseringar och paneler i anpassad storlek måste du ändra dem så att de storleksändras automatiskt (knappen i det övre högra hörnet) så att det inte finns något trunkerat innehåll.
-   * Eventuella [hyperlänkar](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) som finns i frihandstabeller fungerar inte i det hämtade PDF.
+   * PDF-återgivningar innehåller det som finns på sidan i Workspace. Om ett projekt har visualiseringar och paneler i anpassad storlek måste du ändra dem så att de storleksändras automatiskt (knappen i det övre högra hörnet) så att det inte finns något trunkerat innehåll.
+   * Eventuella [hyperlänkar](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) som finns i frihandstabeller fungerar inte i det hämtade PDF-programmet.
 
 Så här hämtar du ett projekt som en CSV- eller PDF-fil:
 
@@ -41,13 +41,13 @@ Så här hämtar du ett projekt som en CSV- eller PDF-fil:
 
      Välj det här alternativet om du vill att den hämtade filen ska vara oformaterad.
 
-   ![Listrutan Projekt med alternativen Hämta CSV och Hämta PDF är markerade.](assets/download-project.png)
+   ![Listrutan Projekt med alternativen Hämta CSV och Hämta PDF markerade.](assets/download-project.png)
 
-1. (Villkorligt) Om du väljer att hämta ett PDF visas ett meddelande när projektet är klart att hämtas. Välj [!UICONTROL **Hämta**].
+1. (Villkorligt) Om du väljer att hämta en PDF-fil visas ett meddelande när projektet är klart att hämtas. Välj [!UICONTROL **Hämta**].
 
 ## Kopiera till Urklipp (snabbtangent: Ctrl+C) {#copy-data}
 
-Med högerklicksalternativet **[!UICONTROL Copy to clipboard]** kan du snabbt kopiera Customer Journey Analytics data från Workspace och klistra in dem i ett tredjepartsverktyg.
+Med högerklicksalternativet **[!UICONTROL Copy to clipboard]** kan du snabbt kopiera Customer Journey Analytics-data från Workspace och klistra in dem i ett verktyg från tredje part.
 
 * Om du vill att den visade tabellen ska kopieras högerklickar du på tabellrubriken och väljer **Kopiera data till Urklipp**.
 * Om du vill att en delmängd av data ska kopieras gör du en markering i tabellen och högerklickar sedan > **Kopiera markering till Urklipp**.
@@ -76,11 +76,11 @@ Med högerklicksalternativet **[!UICONTROL Download data as CSV]** kan du hämta
 
 ## Hämta objekt som CSV {#download-items}
 
-Om du vill analysera mer än de 400 synliga dataraderna i en tabell högerklickar du på tabellrubriken eller valfri rad och väljer **Hämta objekt som CSV (_Dimensionens namn_)**. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt (baserat på tabellsortering) för den valda dimensionen med sorteringsalternativ och filter. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen. Även om inga begränsningar används i friformstabellen rekommenderar vi att alternativet Hämta objekt används i tabeller med mindre än 20 kolumner för att optimera prestandan.
+Om du vill analysera fler än de 400 synliga dataraderna i en tabell högerklickar du på tabellrubriken eller valfri rad och väljer **Hämta objekt som CSV (_Dimension namn_)**. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt (baserat på tabellsortering) för den valda dimensionen med sorteringsalternativ och filter. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen. Även om inga begränsningar används i friformstabellen rekommenderar vi att alternativet Hämta objekt används i tabeller med mindre än 20 kolumner för att optimera prestandan.
 
 >[!TIP]
 >
-> Om din dimension överstiger 50 000 objekt hämtar du filen med olika sorteringsmått tillämpade eller använder ett filter. Du kan t.ex. sortera efter besök i en nedladdning och sedan stigande efter besök i en andra nedladdning. Det här tipset kan hjälpa dig att hämta objekt med längre svans.
+> Om din dimension överstiger 50 000 objekt hämtar du filen med olika sorteringsvärden eller använder ett segment. Du kan t.ex. sortera efter besök i en nedladdning och sedan stigande efter besök i en andra nedladdning. Det här tipset kan hjälpa dig att hämta objekt med längre svans.
 
 Du kan utföra flera uppgifter samtidigt i projektet och till och med navigera till ett nytt Workspace-projekt på samma flik medan hämtningen pågår. Hämtningen pausas om du öppnar en ny flik i webbläsaren. Hämtningen avbryts om du lämnar Workspace helt eller stänger webbläsarfliken.
 
@@ -90,7 +90,7 @@ Du kan utföra flera uppgifter samtidigt i projektet och till och med navigera t
 
 Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följande:
 
-* Alla panelfilter används som filter.
+* Alla panelsegment används som filter.
 * Uppdelningar **ovanför** den valda dimensionen i tabellen används som filter ovanför varje kolumn.
 * Uppdelningar **nedanför** av den valda dimensionen i tabellen tas bort.
 
@@ -118,6 +118,6 @@ Om det finns datafält som är märkta som känsliga i [!UICONTROL Data View] be
 
 | Fråga | Svar |
 | --- | --- |
-| Varför är min nedladdade PDF-sida? | Workspace paginerar för närvarande inte nedladdat PDF. |
+| Varför är min nedladdade PDF en sida? | Workspace paginerar för närvarande inte nedladdade PDF-filer. |
 | Kan jag exportera mer än 50 000 objekt med alternativet &quot;Hämta objekt som CSV&quot;? | Varje nedladdning kan innehålla upp till 50 000 dimensionsobjekt, men du kan ändra sorteringsordningen i tabellen för att hämta längre slutobjekt eller använda ett filter för att hämta mer specifika objekt. |
 | Vad gör **[!UICONTROL Copy visualization]**? | Till skillnad från [!UICONTROL **Kopiera data till Urklipp**] eller [!UICONTROL **Kopiera markering till Urklipp**] är alternativet **[!UICONTROL Copy visualization]** för högerklick inte ett exportalternativ. Du kan kopiera en visualisering eller panel från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. [Intralänkande video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
