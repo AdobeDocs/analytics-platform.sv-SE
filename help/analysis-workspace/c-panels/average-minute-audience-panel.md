@@ -4,7 +4,7 @@ description: Hur man använder och tolkar den minimala målgruppspanelen för me
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1635'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Genomsnittlig minutmålgrupp för media"
->abstract="Visar prestandan för specifikt medieinnehåll eller prestanda under en anpassad tidsperiod. Ange rapporteringsdimensionen och filtrera innehåll om du vill."
+>abstract="Visar prestandan för specifikt medieinnehåll eller prestanda under en anpassad tidsperiod. Ange rapporteringsdimensionen och eventuellt segmentera innehållet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -82,7 +82,7 @@ Använd de indatainställningar som beskrivs i det här avsnittet för att konfi
    | Inställning | Beskrivning |
    |---------|------------|
    | **Panelens datumintervall** | Panelens datumintervall är som standard [!UICONTROL **Den här månaden**]. Du kan redigera den för att visa en enstaka dag eller flera månader i taget. <br></br> Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå). Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
-   | [!UICONTROL **Släpp ett segment här (eller någon annan komponent)**] | Precis som andra paneler filtrerar den här inställningen dina markeringar baserat på segment som du har skapat. Den här inställningen är ett bra sätt att se på specifika plattformar, liveströmmar eller andra vanliga mediesegment. |
+   | [!UICONTROL **Släpp ett segment här (eller någon annan komponent)**] | I likhet med andra paneler segmenterar den här inställningen dina markeringar baserat på segment som du har skapat. Den här inställningen är ett bra sätt att se på specifika plattformar, liveströmmar eller andra vanliga mediesegment. |
    | [!UICONTROL **Beräkna mått för**] | Välj om du vill se den genomsnittliga minutmålgruppen för [**[!UICONTROL Specific content]**](#specific-content). Eller om du vill se den genomsnittliga minuten-publiken för en [**[!UICONTROL Custom time period]**](#custom-time-period).<br/><br/>Välj [!UICONTROL **Anpassad tidsperiod**]: <ul><li>Om längden inte är tillgänglig, eller </li><li>om du vill visa den genomsnittliga minutmålgruppen för en tidsserie med flera innehållsdelar, eller</li><li>för innehåll utan angiven varaktighet (som under en liveström eller händelse)</li></ul></li></li></ul> <p>Den här inställningen ändrar arbetsflödet och rapportutdata.</p> |
 
 1. Fortsätt med [specifikt innehåll](#specific-content) eller [anpassad tidsperiod](#custom-time-period), beroende på vilket alternativ du väljer i listrutan [!UICONTROL **Beräkna mått för**].

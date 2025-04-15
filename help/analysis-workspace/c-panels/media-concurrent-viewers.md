@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Medievisningsprogram för 
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Medievisningsprogram för samtidig användning"
->abstract="Analysera samtidiga visningsprogram över tid, visa samtidighet för toppvärden och dela upp och jämföra dem med filter, dimensioner, dimensionsobjekt eller datumintervall."
+>abstract="Analysera samtidiga visningsprogram över tid, visa samtidighet för toppvärden och dela upp och jämföra dem med segment, dimensioner, dimensionsobjekt eller datumintervall."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -82,7 +82,7 @@ Du kan konfigurera panelen för visningsprogram för parallella media med följa
 | **[!UICONTROL Panel date range]** | Panelens datumintervall är som standard Idag.  Du kan redigera den för att visa en enstaka dag eller flera månader i taget. <br> <br>Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå).  Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
 | **[!UICONTROL Granularity]** | Granularitetsstandardvärdet är Minut.<br>Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå).  Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
 | **[!UICONTROL Panel summary numbers]** | Det finns en sammanfattning av datum- och tidsinformation för samtidiga visningsprogram. Maximal visar detaljer för maximal samtidighet. **[!UICONTROL Minimum]** visar information om dalvärdet.  Som standard visas bara Maximum, men du kan ändra den till Minimum eller både Maximum och Minimum.<br><br>Om du använder uppdelningar visas ett summeringsnummer för varje. |
-| **[!UICONTROL Series breakdown]** | Du kan även dela upp visualiseringen med filter, dimensioner, dimensionsobjekt eller datumintervall.<br>Du kan visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå.<br>När du drar en dimension markeras de översta dimensionsobjekten automatiskt baserat på det valda panelens datumintervall.<br>Om du vill jämföra datumintervall drar du 2 eller fler datumintervall till serieuppdelningsfiltret. |
+| **[!UICONTROL Series breakdown]** | Du kan även dela upp visualiseringen efter segment, dimensioner, dimensionsobjekt eller datumintervall.<br>Du kan visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå.<br>När du drar en dimension markeras de översta dimensionsobjekten automatiskt baserat på det valda panelens datumintervall.<br>Om du vill jämföra datumintervall drar du 2 eller fler datumintervall till serieuppdelningssegmentet. |
 
 Här är ett exempel på panelen som konfigurerats för **[!UICONTROL Minute]** granularitet, med **[!UICONTROL Maximum only]** sammanfattningsnummer. Och bruten av **[!UICONTROL Other]**, **[!UICONTROL Table]**, **[!UICONTROL Mobile Phone]**, **[!UICONTROL Gaming Console]**, **[!UICONTROL Media Player]**, **[!UICONTROL Set-top Box]**, **[!UICONTROL Television]**.
 
@@ -116,7 +116,7 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 |---|---|
 | Var är friformsregistret? Hur ser jag datakällan? | Frihandsregistret är inte tillgängligt i den här vyn.  Du kan hämta datakällan från snabbmenyn för linjediagram och välja **[!UICONTROL Download data as CSV]**. |
 | Varför ändrades min granularitet? | Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå).  Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet.<br><br>När du ändrar från ett större datumintervall till ett mindre uppdateras granulariteten till den lägsta detaljnivån som tillåts när datumintervallet ändras. Om du vill visa en högre granularitet redigerar du panelen och återskapar den. |
-| Hur jämför jag videonamn, filter, innehållstyper och annat? | Om du vill jämföra dessa objekt i en enda visualisering drar du filter, dimensioner eller specifika dimensionsobjekt i serieuppdelningsfiltret.<br><br>Vyn är begränsad till tio uppdelningar.  Om du vill visa mer än 10 måste du använda flera paneler. |
+| Hur jämför jag videonamn, segment, innehållstyper och andra? | Om du vill jämföra de här objekten i en enda visualisering drar du segment, dimensioner eller specifika dimensionsobjekt i serieuppdelningssegmentet.<br><br>Vyn är begränsad till tio uppdelningar.  Om du vill visa mer än 10 måste du använda flera paneler. |
 | Hur jämför jag datumintervall? | Om du vill jämföra datumintervall i en enda visualisering använder du serieuppdelningarna genom att dra två eller flera datumintervall.  Datumintervallen åsidosätter panelens datumintervall. |
 | Hur ändrar jag visualiseringstypen? | På den här panelen kan du endast använda linjevisualisering för tidsserien. |
 | Kan jag köra avvikelseidentifiering? | Nej.  Anomalsidentifiering är inte tillgängligt för den här panelen. |
