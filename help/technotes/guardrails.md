@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
+source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1760'
 ht-degree: 5%
 
 ---
@@ -53,14 +53,23 @@ Vissa av funktionerna och deras associerade värde beror på vilket Customer Jou
 | Paneler per projekt | 15 | Systemstyrd Guardrail | Maximalt antal [paneler](../analysis-workspace/home.md#panels) per projekt. |
 | Visualiseringar per panel | 25 | Systemstyrd Guardrail | Maximalt antal [visualiseringar](../analysis-workspace/home.md#visualizations) per panel. |
 | Härledda fält per frihandstabell | 5 | Systemstyrd Guardrail | Maximalt antal olika härledda fält i en friformstabell. |
-| Kommentarer per projekt | 1 000 | Systemstyrd Guardrail | Maximalt antal kommentarer per projekt. |
-| Svar per kommentar | 100 | Systemstyrd Guardrail | Maximalt antal svar per kommentar. |
-| Bilder per kommentar | 5 | Systemstyrd Guardrail | Maximalt antal bilder per kommentar. |
-| Bildstorlek | 2 | Systemstyrd Guardrail | Maximal uppladdningsstorlek per bild i MB |
 
 {style="table-layout:auto"}
 
+
 <!--
+
+Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
+
+Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
+Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
+Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
+Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
+
+-->
+
+<!--
+
 ## Attribution AI
 
 | Name |  Value | Description | PD? |
@@ -69,7 +78,6 @@ Vissa av funktionerna och deras associerade värde beror på vilket Customer Jou
 | Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
-{style="table-layout:auto"}
 -->
 
 ## Målgrupper
