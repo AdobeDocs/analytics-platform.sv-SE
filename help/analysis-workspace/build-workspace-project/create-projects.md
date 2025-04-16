@@ -4,9 +4,9 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
@@ -65,6 +65,15 @@ Nu när du har skapat ett tomt Workspace-projekt måste du känna till användar
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_project_commenting"
+>title="Tillåt kommentarer"
+>abstract="När det här alternativet är aktiverat finns det ett kommentarsområde till höger om projektet i Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Projektinställningar innehåller information på projektnivå om det aktiva projektet.
 
@@ -83,6 +92,7 @@ Inställningarna inkluderar:
 | Visa anteckningar | Ange om anteckningar ska visas för det här projektet eller inte. |
 | [Projektfärgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Du kan ändra den kategoriska färgpalett som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
 | [Visa densitet](/help/analysis-workspace/build-workspace-project/view-density.md) | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. |
+| Tillåt kommentarer | När det här alternativet är aktiverat finns det ett kommentarsområde till höger om projektet i Analysis Workspace. Mer information finns i [Lägga till och hantera kommentarer i projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
 
 
 
