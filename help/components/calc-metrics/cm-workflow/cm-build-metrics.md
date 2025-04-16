@@ -3,7 +3,7 @@ description: I verktyget Beräknade mätvärden kan du dra och släppa dimension
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 3c11f204b73ec1cc5c4c359b6cc5c88023c93e43
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
-Customer Journey Analytics har en arbetsyta där du kan dra och släppa mått, mätvärden, filter och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa beräknade mätvärden.
+Customer Journey Analytics har en arbetsyta där du kan dra och släppa dimensioner, mätvärden, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa beräknade mätvärden.
 
 ## Börja skapa ett beräknat mått
 
@@ -71,7 +71,7 @@ Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa n
    | **[!UICONTROL Project-only metric]** | En informationsruta visas högst upp i den här dialogrutan när du redigerar ett beräknat mått som har skapats för ett enskilt projekt, vilket beskrivs i [Skapa beräknade värden för ett enskilt projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). <p>Om du vill göra det här beräknade måttet tillgängligt för alla projekt väljer du alternativet **[!UICONTROL Make this metric available to all your projects and add it to your component list]**.</p> |
    | **[!UICONTROL Title]** ![Krävs](/help/assets/icons/Required.svg) | Namnge det beräknade måttet, till exempel `Conversion Rate`. |
    | **[!UICONTROL External ID]** ![Krävs](/help/assets/icons/Required.svg) | Namnet på det beräknade måttet när ett externt BI-verktyg och BI-tillägget används. Värdet definieras automatiskt som `undefined_xxx` om du inte åsidosätter värdet. |
-   | **[!UICONTROL Description]** | Ange en beskrivning för filtret, till exempel `Calculated metric to define the conversion rate.` Det finns ingen anledning att beskriva formeln för det beräknade måttet eftersom formeln redan är automatiskt tillgänglig i [!UICONTROL Summary]. |
+   | **[!UICONTROL Description]** | Ange en beskrivning för segmentet, till exempel `Calculated metric to define the conversion rate.` Det finns ingen anledning att beskriva formeln för det beräknade måttet eftersom formeln redan är automatiskt tillgänglig i [!UICONTROL Summary]. |
    | **[!UICONTROL Format]** | Välj ett format för det beräknade måttet: Du kan välja mellan **[!UICONTROL Decimal]**, **[!UICONTROL Time]**, **[!UICONTROL Percent]** och **[!UICONTROL Currency]**. |
    | **[!UICONTROL Decimal places]** | Ange antalet decimaler för det valda formatet. Endast aktiverat när det valda formatet är Decimal, Currency och Percent. |
    | **[!UICONTROL Show upward trend as]** | Ange om en uppåtgående trend för det beräknade måttet ska visas som mellanrum **[!UICONTROL Good (Green)]** eller som ▼ **[!UICONTROL Bad (Red)]**. |
@@ -79,7 +79,7 @@ Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa n
    | **[!UICONTROL Tags]** | Organisera det beräknade måttet genom att skapa eller använda en eller flera taggar. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
    | **[!UICONTROL Preview]** | Förhandsvisningen täcker de senaste 90 dagarna och är ett sätt att mäta om du har definierat mätvärdena korrekt. |
    | **[!UICONTROL Summary]** | Visar en sammanfattning av definitionen av det beräknade måttet. <br/>Till exempel: ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Total Orders]** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]**. |
-   | **[!UICONTROL Definition]** ![Krävs](/help/assets/icons/Required.svg) | Definiera filtret med [Definitionsverktyget](#definition-builder). |
+   | **[!UICONTROL Definition]** ![Krävs](/help/assets/icons/Required.svg) | Definiera ditt segment med [Definitionsverktyget](#definition-builder). |
 
 1. Om du vill verifiera om den beräknade måttdefinitionen är korrekt använder du den ständigt uppdaterade **[!UICONTROL Preview]** av resultaten för det beräknade måttet. **[!UICONTROL Preview]** täcker de senaste 90 dagarna och utvärderar definitionen av ditt beräknade mått kontinuerligt.
 
@@ -95,7 +95,7 @@ Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa n
 
 ## Definition builder
 
-Du använder Definitionsverktyget för att dra och släppa dimensioner, mått, filter och funktioner för att skapa anpassade mätvärden baserat på behållarhierarkilogik, regler och operatorer. I den konstruktionen kan du använda standardvärden, Adobe-definierade mått, beräknade värden, filter, dimensioner och funktioner. Alla de här komponenterna är tillgängliga från komponentpanelen i verktyget Beräknade mått. Dessutom kan du använda operatorer och behållare i definitionen.
+Du använder Definitionsverktyget för att dra och släppa dimensioner, mått, segment och funktioner för att skapa anpassade mätvärden baserat på behållarhierarkilogik, regler och operatorer. I den konstruktionen kan du använda standardvärden, Adobe-definierade mått, beräknade värden, segment, dimensioner och funktioner. Alla de här komponenterna är tillgängliga från komponentpanelen i verktyget Beräknade mått. Dessutom kan du använda operatorer och behållare i definitionen.
 
 ![Skapa beräknat mått](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -105,7 +105,7 @@ Endast mätvärden definieras som enskilda komponenter i området **[!UICONTROL 
 
 Så här lägger du till ett mått:
 
-* Dra och släpp en ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
+* Dra och släpp en ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
 
 När du använder ett beräknat mätvärde som en del av definitionen expanderas det beräknade mätvärdet.
 
@@ -146,41 +146,41 @@ Du kan lägga till ett statiskt tal i den beräknade måttdefinitionen. Så här
 
 ### Behållare
 
-Du lägger till dimensioner, filter och funktioner som behållare i en beräknad måttdefinition. Du kan också lägga till en allmän behållare. Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas före nästa komponent eller behållare.
+Du lägger till dimensioner, segment och funktioner som behållare i en beräknad måttdefinition. Du kan också lägga till en allmän behållare. Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas före nästa komponent eller behållare.
 
 
-#### Filterbehållare
+#### Segmentbehållare
 
-Du använder begreppet filterbehållare för att skapa ett [filtrerat mätvärde](metrics-with-segments.md). Du kan skapa en filterbehållare med ett filter eller med ett filter som du skapar från en dimension.
+Du använder konceptet med en segmentbehållare för att skapa ett [segmenterat mått](metrics-with-segments.md). Du kan skapa en segmentbehållare med ett segment eller med ett segment som du skapar från en dimension.
 
-* Så här lägger du till en filterbehållare från en dimension:
+* Så här lägger du till en segmentbehållare från en dimension:
 
-   1. Dra och släpp en ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
-   1. Definiera villkoret för filtret i popup-fönstret **[!UICONTROL Create Filter from Dimension]**. Välj i listan med operatorer och välj ett värde eller ange ett värde. Till exempel **[!UICONTROL Month]** **[!UICONTROL equals]** ![SparrboxDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
-   1. Välj **[!UICONTROL Done]**. En filterbehållare läggs till i **[!UICONTROL Definition]**.
+   1. Dra och släpp en ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
+   1. Ange villkoret för segmentet i popup-menyn **[!UICONTROL Create Filter from Dimension]**. Välj i listan med operatorer och välj ett värde eller ange ett värde. Till exempel **[!UICONTROL Month]** **[!UICONTROL equals]** ![SparrboxDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Välj **[!UICONTROL Done]**. En segmentbehållare läggs till i **[!UICONTROL Definition]**.
 
 
-* Om du vill lägga till en filterbehållare från ett filter kan du använda:
+* Om du vill lägga till en segmentbehållare från ett segment kan du använda:
 
-   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika filter.
-En filterbehållare läggs automatiskt till i **[!UICONTROL Definition]** med hjälp av filtrets namn.
+   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika segment.
+En segmentbehållare läggs automatiskt till i **[!UICONTROL Definition]** med segmentets namn.
 
-   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** från komponentpanelen till en generisk behållare. Behållaren ändras till en filterbehållare.
+   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** från komponentpanelen till en generisk behållare. Behållaren ändras till en segmentbehållare.
 
    * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare:
 
-      1. Välj **[!UICONTROL Filter]**. En filterbehållare läggs till i **[!UICONTROL Definition]**.
-      1. I den nya filterbehållaren väljer du ett filter i listrutan [!UICONTROL *Välj...*].
+      1. Välj **[!UICONTROL Filter]**. En segmentbehållare läggs till i **[!UICONTROL Definition]**.
+      1. I den nya segmentbehållaren väljer du ett segment i listrutan [!UICONTROL *Markera...*].
 
   >[!TIP]
   >
-  >Du kan lägga till mer än ett filter i en behållare.
+  >Du kan lägga till mer än ett segment i en behållare.
 
-  Filtren i behållaren namnges efter filterkomponenten. Exempel: ![Segmentering](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web sessions]**. Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa en popup med information om filtret. I popup-fönstret väljer du ![Redigera](/help/assets/icons/Edit.svg) för att redigera filterdefinitionen.
+  Segmenten i behållaren namnges efter segmentkomponenten. Exempel: ![Segmentering](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web sessions]**. Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa ett popup-fönster med information om segmentet. I popup-fönstret väljer du ![Redigera](/help/assets/icons/Edit.svg) för att redigera segmentdefinitionen.
 
-Så här tar du bort ett filter från en behållare:
+Så här tar du bort ett segment från en behållare:
 
-* Välj ![Stäng](/help/assets/icons/Close.svg) bredvid filternamnet.
+* Välj ![Stäng](/help/assets/icons/Close.svg) bredvid segmentnamnet.
 
 Mer information och exempel finns i [Filtrerade mätvärden](metrics-with-segments.md).
 
@@ -190,7 +190,7 @@ Om du vill lägga till en funktionsbehållare kan du använda:
 
 * Dra och släpp:
 
-   1. Dra och släpp en ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika funktioner.
+   1. Dra och släpp en ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika funktioner.
    1. En funktionsbehållare läggs automatiskt till i **[!UICONTROL Definition]** med funktionens namn.
 
 * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare:

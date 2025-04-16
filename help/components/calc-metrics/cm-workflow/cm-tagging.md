@@ -3,7 +3,7 @@ description: I hanteraren för beräknade mått kan du ordna segment med hjälp 
 title: Tagga beräknade värden
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -36,7 +36,7 @@ När du har sparat taggarna visas de i fältet [!UICONTROL Tag] för det valda b
 
 <!--
 
-In the Calculated metric manager, you can organize filters by tagging them.
+In the Calculated metric manager, you can organize segments by tagging them.
 
 All users can create tags for calculated metrics and apply one or more tags to a metric. However, you can see tags only for those calculated metrics that you own or that have been shared with you. 
 

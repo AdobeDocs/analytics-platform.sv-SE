@@ -3,7 +3,7 @@ description: Beroende på dina behörigheter kan du dela mätvärden med hela or
 title: Dela beräknade värden
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Nedan följer några tips om hur du bör dela beräknade värden med andra och m
 
 * Som administratör kan du dela ett beräknat mått med en viss grupp om det beräknade måttet ger affärsvärde för användarna i den gruppen.
 
-* Som administratör eller enskild användare kan du dela ett beräknat mått med en eller flera personer för att validera ett beräknat mått. Om filtren inte visar sig vara användbara kan du ta bort det beräknade måttet.
+* Som administratör eller enskild användare kan du dela ett beräknat mått med en eller flera personer för att validera ett beräknat mått. Om segmenten inte visar sig vara användbara kan du ta bort det beräknade måttet.
 
 
 <!--

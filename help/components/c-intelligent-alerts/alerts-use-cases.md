@@ -3,7 +3,8 @@ description: Användningsexempel för aviseringar.
 title: Användningsfall för aviseringar
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+exl-id: 3aa5e38e-fa19-40aa-a537-d4da529e1bc7
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -18,7 +19,7 @@ I följande avsnitt visas exempel på användningsområden som du kan använda n
 
 ## Filtrera aviseringar
 
-Du kan skapa enkla varningar med filter. Du kan till exempel definiera en avisering om antalet sessioner för personer som besöker hemsidan via en mobilappssession.
+Du kan skapa enkla varningar med hjälp av segment. Du kan till exempel definiera en avisering om antalet sessioner för personer som besöker hemsidan via en mobilappssession.
 
 
 ![](assets/alerts-example1.png)

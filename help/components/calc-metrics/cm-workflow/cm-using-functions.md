@@ -3,7 +3,7 @@ description: Med funktioner kan du filtrera/sortera data och göra statistiska a
 title: Använd funktioner
 feature: Calculated Metrics
 exl-id: 7a41aa4e-90c6-4242-a801-2eef6b524cfe
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -20,7 +20,7 @@ En lista över alla funktioner finns i [Grundfunktioner](/help/components/calc-m
 
 >[!NOTE]
 >
->När du inkluderar funktioner i Definitionen av verktyget för beräknade värden ska du alltid använda funktionen innan du drar i mått eller filter.
+>När du inkluderar funktioner i Definitionen av verktyget för beräknade värden ska du alltid använda funktionen innan du drar i mått eller segment.
 >
 
 

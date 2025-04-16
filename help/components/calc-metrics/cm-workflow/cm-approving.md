@@ -3,7 +3,7 @@ description: I hanteraren för beräknade mätvärden kan du skapa ett arbetsfl�
 title: Godkänn beräknade värden
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Godkänn beräknade värden
 
-I [hanteraren för beräknade värden](cm-manager.md) kan du godkänna och inte godkänna filter. Endast administratörer kan godkänna beräknade värden.
+I [Calculated Metrics Manager](cm-manager.md) kan du godkänna och inte godkänna segment. Endast administratörer kan godkänna beräknade värden.
 
 Så här godkänner du beräknade värden:
 
