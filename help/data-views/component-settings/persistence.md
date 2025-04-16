@@ -5,9 +5,9 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '1008'
 ht-degree: 4%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 4%
 
 
 
-[!UICONTROL Persistence] är möjligheten för ett givet dimensionsvärde att relatera till ett mått efter händelsen som det är inställt på. Den använder en kombination av allokering och förfallodatum.
+[!UICONTROL Persistence] är möjligheten för ett givet dimensionsvärde att attribut till ett mätvärde efter händelsen som det är inställt på. Den använder en kombination av allokering och förfallodatum.
 
 ![Fönstret Datavy där alternativen för persistence markeras](../assets/persistence.png)
 
-* Med **Allokering** kan du bestämma vilket värde som ska behållas när mer än ett dimensionsobjekt kan finnas i taget i en enda kolumn.
+* Med **Allokering** kan du avgöra vilket värde som ska behållas när mer än ett dimensionsobjekt kan finnas i taget i en enda kolumn.
 
   >[!NOTE]
   >
@@ -45,8 +45,8 @@ ht-degree: 4%
 | Inställning | Beskrivning |
 | --- | --- |
 | [!UICONTROL Set persistence] | Aktivera beständighet för dimensionen. Om persistence inte är aktiverat, relaterar dimensionen endast till mått som finns i samma händelse. Den här inställningen är inaktiverad som standard. |
-| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativen är: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. Från och med den 28 oktober 2021 läggs ett uppslagsfönster på upp till 90 dagar till i inställningen [!UICONTROL Allocation]. |
-| [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativ: [!UICONTROL Session] (standard), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). Den maximala förfallotiden som du kan ange är 90 dagar. Om du väljer en allokering av [!UICONTROL All] är bara [!UICONTROL Session] eller [!UICONTROL Person] förfallodatum tillgängliga. |
+| [!UICONTROL Allocation] | Här kan du ange den allokeringsmodell som används för en dimension för beständighet. Alternativ:<ul><li>**[!UICONTROL Most recent]**: Värdena i dimensionen behålls tills de skrivs över av efterföljande värden</li><li> **[!UICONTROL Original]**: Det första värdet för den här dimensionen kvarstår och skrivs inte över av efterföljande värden</li><li>**[!UICONTROL All]**: Alla värden för den här dimensionen behålls samtidigt</li><li>**[!UICONTROL First known]**: Det första värdet för den här dimensionen används och kommer att tillämpas på alla händelser före och efter.</li><li>**[!UICONTROL Last known]**: Det sista värdet för den här dimensionen används och kommer att tillämpas på alla händelser före och efter.</li></ul> |
+| [!UICONTROL Expiration] | Gör att du kan ange det beständiga fönstret för en dimension. Alternativ: <ul><li>**[!UICONTROL Session]** (standard)</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL Custom Time]**</li><li>**[!UICONTROL Metric]**</li></ul>. Du kanske måste kunna förfalla dimensionen på ett köp (till exempel interna sökvillkor eller andra användningsfall för varuexponering). Den maximala förfallotiden som du kan ange är 90 dagar. Om du väljer en allokering av [!UICONTROL All] är bara [!UICONTROL Session] eller [!UICONTROL Person] förfallodatum tillgängliga. |
 
 {style="table-layout:auto"}
 

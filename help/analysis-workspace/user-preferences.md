@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 60074b300cb5fa07ed3b2d6bb2e4501881909984
+source-git-commit: 693227516950aec921d82564b39622a9e3ef4b9d
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3726'
 ht-degree: 0%
 
 ---
@@ -40,23 +40,15 @@ Allmänna inställningar gäller för din Customer Journey Analytics-upplevelse 
 
 ### IMS-organisationsinställningar {#ims-organization-preferences}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_shareonlyworkspace"
 >title="Tillåt endast delning med Workspace-användare"
 >abstract="När alternativet **[!UICONTROL Share with anyone]** är aktiverat är det inte längre tillgängligt för användare när de delar ett Analysis Workspace-projekt. Personer som tidigare fått åtkomst till ett projekt via det här delningsalternativet har inte längre åtkomst till projektet."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
 >title="Kräv Experience Cloud-autentisering"
 >abstract="När det här alternativet är aktiverat måste personer som får åtkomst till ett projekt från alternativet Dela med alla i Analysis Workspace autentisera med sina Experience Cloud-inloggningsuppgifter."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Du kan uppdatera företagsinställningarna som gäller för alla användare och projekt i organisationen. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
@@ -71,34 +63,20 @@ Du kan uppdatera företagsinställningarna som gäller för alla användare och 
 
 ### Inställningar för projekt och analys {#project-and-analysis-preferences}
 
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_categoricalpalette"
 >title="Kategoriserad palett"
 >abstract="Gäller många visualiseringar i Analysis Workspace och guidad analys. Varje färg representerar ett tydligt kategoriserat värde."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_divergingpalette"
 >title="Förvrängningspalett"
 >abstract="Används för kohorttabellen i Analysis Workspace och för guidad analys av användartillväxt. Den här paletten har en numerisk betydelse med två extremvärden och en baslinje i mitten."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_sequentialpalette"
 >title="Sekventiell palett"
 >abstract="Används för den guidade analysen av frekvenstrender (staplade fält). Den här paletten har en numerisk innebörd från ljust till mörkt."
-
-<!-- markdownlint-enable MD034 -->
-
 
 Du kan anpassa de här inställningarna för alla nya Analysis Workspace-projekt, nya Analysis Workspace-paneler och nya guidade analyser. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
 
@@ -121,34 +99,21 @@ Vissa av dessa inställningar kan även anpassas för enskilda projekt i Analysi
 
 ### Inställningar för frihandstabell {#freeform-table-preferences}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showanomalies"
 >title="Visa avvikelser"
 >abstract="Om du väljer **[!UICONTROL Show anomalies]** körs avvikelseidentifiering automatiskt på den första metriska kolumnen som läggs till i en tidsserievisualisering av frihandstabell."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showforecast"
 >title="Visa prognos"
 >abstract="Om du väljer **[!UICONTROL Show forecast]** prognostiseras automatiskt den första måttkolumnen som läggs till i en tidsserie visualisering av friformstabell."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="Standardtabellmått"
 >abstract="Välj standardmåttet som ska användas för frihandstabeller. Om den markerade datavyn inte innehåller det valda standardmåttet växlar tabellen automatiskt till ett annat primärt mått."
-
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Du kan anpassa inställningarna för frihandstabeller för alla nya projekt som du skapar i Analysis Workspace. Mer information om hur du kommer åt de här inställningarna finns i [Uppdatera inställningar](#update-preferences).
@@ -250,16 +215,16 @@ Markera de länkade avsnittsrubrikerna om du vill ha mer information och kontext
 | | Visa jämförelse | Visa jämförelsedata. När det är dolt döljs både jämförelsetabellen och de sammanfattande ändringsobjekten. |
 | | Alternativ för talvärde | I avsnittet [!UICONTROL **Sammanfattning av nyckelmått**] <ul><li>Visa procentuell ändring</li><li>Visa rådifferens</li>Rådifferens mellan det totala värdet för måttet i det primära datumintervallet och det sekundära datumintervallet</ul> |
 | **[Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | Behållare | Gör att du kan växla mellan **[!UICONTROL Session]** och **[!UICONTROL Person]** för att analysera målningen. De här inställningarna hjälper dig att förstå kontointeraktionen på olika B2B-behållarnivåer [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Globala konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Buying Groups [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Affärsmöjligheter [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Person</li></ul> |
+| | Behållare | Välj den behållare som ska analyseras. Den föredragna behållaren hjälper dig att förstå kontointeraktionen på olika B2B-behållarnivåer [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Globala konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Buying Groups [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Affärsmöjligheter [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Person</li></ul> |
 | **[Flöde](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | Behållare | I avsnittet **[!UICONTROL Flow]**: <ul><li>Globala konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Buying Groups [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Affärsmöjligheter [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Person</li></ul> |
+| | Behållare | Välj önskad behållare att analysera. Den föredragna behållaren hjälper dig att förstå kontointeraktionen på olika B2B-behållarnivåer [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Globala konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Buying Groups [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Affärsmöjligheter [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Person</li></ul> |
 | | Radbryt etiketter | Etiketterna på Flow-elementen trunkeras normalt för att spara skärmutrymme, men du kan göra hela etiketten synlig genom att markera den här rutan. Standard = avmarkerat. |
 | | Inkludera upprepade förekomster | Flödesvisualiseringar baseras på instanser av en dimension. Den här inställningen ger dig möjlighet att inkludera eller exkludera upprepade instanser, till exempel Sidomladdning. Det går dock inte att ta bort upprepningar från Flow-visualiseringar som innehåller flervärdesdimensioner, som listVars, listProps, s.product, merchandising eVars osv. Standard = avmarkerat. |
 | | Visa verktygstips | Avgör om verktygstips, som innehåller noddata, ska visas när du hovrar över enskilda noder i en flödesvisualisering. |
 | | Antal kolumner | Anger hur många kolumner du vill ha i flödesdiagrammet. |
 | | Objekt utökade per kolumn | Hur många objekt du vill ha i varje kolumn. |
 | **[Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)** | | |
-| | Behållare | Gör att du kan växla mellan **[!UICONTROL Session]** och **[!UICONTROL Person]** för att analysera målningen. Standardvärdet är **[!UICONTROL Person]**. De här inställningarna hjälper dig att förstå kontointeraktionen på olika B2B-behållarnivåer [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Globala konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Buying Groups [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Affärsmöjligheter [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Person</li></ul> |
+| | Behållare | Välj den behållare som ska analyseras. Den föredragna behållaren hjälper dig att förstå kontointeraktionen på olika B2B-behållarnivåer [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, personengagemang på personnivå (mellan sessioner) eller begränsa analysen till en enda session. <p>Följande alternativ är tillgängliga:</p> <ul><li>Globala konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Konton [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Buying Groups [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Affärsmöjligheter [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Person</li></ul> |
 | **Skiktade diagram** | | |
 | | 100 % staplad | Den här inställningen för staplade ytor, staplade staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. <p>Mer information finns i [Stapel och stapel](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
