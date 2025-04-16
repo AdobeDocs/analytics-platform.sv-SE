@@ -1,13 +1,13 @@
 ---
-title: Vanliga frågor om Customer Journey Analytics
+title: CUSTOMER JOURNEY ANALYTICS FAQ
 description: Customer Journey Analytics - Frågor och svar.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 1bea6a1bc7d2070f01a60ef859675a0f9d03c86d
+source-git-commit: 13f2bdb9753c0f4252262c595061ed9b54c38a3c
 workflow-type: tm+mt
-source-wordcount: '2389'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Nej, [!UICONTROL Customer Journey Analytics] stöder alla ID:n i en datauppsätt
 
 +++**Vad händer om jag behöver ETL (Extract, Transform, Load) för mina data före [!UICONTROL Customer Journey Analytics]?**
 
-Customer Journey Analytics innehåller [dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html)-funktioner som kan hjälpa dig att omvandla dina data innan du skickar dem till Adobe Experience Platform datasjön. Om du behöver ETL efter att data redan har importerats, kan [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) erbjuda några begränsade alternativ, men det kan tillkomma extra avgifter.
+Customer Journey Analytics innehåller funktioner för [dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) som hjälper dig att omvandla dina data innan du skickar dem till Adobe Experience Platform dataruta. Om du behöver ETL efter att data redan har importerats, kan [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) erbjuda några begränsade alternativ, men det kan tillkomma extra avgifter.
 
 +++
 
@@ -65,7 +65,7 @@ Stitching &quot;replaying&quot; data based on unique identifier it has learn. Re
 
 +++**Hur fungerar sammanfogning av historiska data (bakgrundsfyllning)?**
 
-När Adobe aktiveras första gången fylls sydda data i bakgrunden så långt du valt (upp till högst 25 månader, beroende på vilket Customer Journey Analytics-paket du har rätt till). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](../stitching/overview.md)
+När Adobe aktiveras första gången fylls data i igen så långt du valt (upp till högst 25 månader, beroende på vilket Customer Journey Analytics-paket du har rätt till). För att denna efterfyllning ska kunna utföras måste det tillfälliga ID:t finnas i de icke sammanfogade data som är långt tillbaka i tiden. [Läs mer](../stitching/overview.md)
 
 +++
 
@@ -94,7 +94,7 @@ Så länge person-ID:t matchar mellan datauppsättningar kan [!UICONTROL Custome
 
 +++**Hur överför jag mina offlinedata till [!UICONTROL Customer Journey Analytics]?**
 
-Din rätt till Customer Journey Analytics gör att du kan importera data till Experience Platform. Du kan sedan skapa anslutningar till dessa data- och datavyer i [!UICONTROL Customer Journey Analytics] för rapportering i Analysis Workspace. Experience Platform datagrupp kan hjälpa dig att ge rekommendationer eller konsulttjänster vid behov.
+Med din rätt till Customer Journey Analytics kan du importera data till Experience Platform. Du kan sedan skapa anslutningar till dessa data- och datavyer i [!UICONTROL Customer Journey Analytics] för rapportering i Analysis Workspace. Experience Platform datagrupp kan hjälpa dig att ge rekommendationer eller konsulttjänster vid behov.
 
 +++
 
@@ -120,7 +120,7 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 +++
 
 
-+++**Vilka är gränserna för inmatning av tidigare eller framtida datum/tidsstämplar i datauppsättningar för händelser i Customer Journey Analytics?**
++++**Vilka är gränserna för inmatning av tidigare eller framtida datum/tidsstämplar i Customer Journey Analytics händelsedatamängder?**
 
 * Gällande tidigare datum/tidsstämplar: Händelsedata upp till tio år gamla.
 * Angående framtida datum/tidsstämplar: Händelsedata (prediktiva) upp till en månad i framtiden.
@@ -138,14 +138,14 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 * Små backfillar: inom sju dagar
 * Stora backfillar: inom 30 dagar
 
-Adobe har nyligen ändrat hur data behandlas i Customer Journey Analytics:
+Adobe har nyligen förändrat hur data behandlas i Customer Journey Analytics:
 
 * Händelsedata för&quot;aktuell&quot; dag direktuppspelas som livedata. Alla data med en händelsetid före klockan 11 :59:59:00 (23:59:59) föregående dag behandlas som en bakåtfyllnad.
 * Alla händelsedata med en tidsstämpel som är mer än 24 timmar gamla (även om de finns i samma batch som nyare data) betraktas som förifyllda och kapslade med lägre prioritet.
 
 ## 5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
-Med inställningen [**[!UICONTROL Enable rolling data window]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) kan du definiera datalagring i Customer Journey Analytics som ett rullande fönster på månader (tre månader, sex månader osv.). Den är inställd på en [!UICONTROL connection]-nivå, inte på en [!UICONTROL dataset]-nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
+Med inställningen [**[!UICONTROL Enable rolling data window]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) kan du definiera Customer Journey Analytics-datalagring som ett rullande fönster på månader (tre månader, sex månader osv.). Den är inställd på en [!UICONTROL connection]-nivå, inte på en [!UICONTROL dataset]-nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
 
 Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
 
@@ -157,14 +157,14 @@ Vid borttagning av data bör du tänka på sex typer av komponenter: sandlåda, 
 | --- | --- |
 | Ta bort en sandlåda i [!UICONTROL Adobe Experience Platform] | Om du tar bort en sandlåda stoppas dataflödet till alla [!UICONTROL Customer Journey Analytics]-anslutningar till datauppsättningar i den sandlådan. Anslutningar, datavyer, mått och dimensioner relaterade till den här borttagna sandlådan tas också bort. | |
 | Ta bort ett schema i [!UICONTROL Adobe Experience Platform], men inte de datauppsättningar som är associerade med det här schemat | [!UICONTROL Adobe Experience Platform] tillåter inte att [!UICONTROL schemas] som har en eller flera [!UICONTROL datasets] associerade tas bort. En administratör med rätt behörighetsuppsättning kan dock ta bort datauppsättningarna först och sedan ta bort schemat. |
-| Ta bort en datamängd i datasjön [!UICONTROL Adobe Experience Platform] | Om du tar bort en datauppsättning i Adobe Experience Platform datasjön avbryts dataflödet från datauppsättningen till alla Customer Journey Analytics-anslutningar som innehåller den datauppsättningen. Alla data från den datauppsättningen tas automatiskt bort från de associerade Customer Journey Analytics-anslutningarna. |
-| Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | Kontakta kontoteamet på Adobe för att sätta igång processen för att ta bort en datauppsättning i en sparad anslutning. |
+| Ta bort en datamängd i datasjön [!UICONTROL Adobe Experience Platform] | Om du tar bort en datauppsättning i Adobe Experience Platform datasjön avbryts dataflödet från datauppsättningen till alla Customer Journey Analytics Connections som innehåller den datauppsättningen. Alla data från den datauppsättningen tas automatiskt bort från de associerade Customer Journey Analytics-anslutningarna. |
+| Ta bort en datauppsättning i [!UICONTROL Customer Journey Analytics] | Kontakta Adobe-kontoteamet för att sätta igång processen för att ta bort en datauppsättning i en sparad anslutning. |
 | Ta bort en batch från en datauppsättning (i [!UICONTROL Adobe Experience Platform]) | Om en batch tas bort från en [!UICONTROL Adobe Experience Platform]-datauppsättning tas samma batch bort från alla Customer Journey Analytics-anslutningar som innehåller den specifika gruppen. Customer Journey Analytics meddelas om batchborttagningar i [!UICONTROL Adobe Experience Platform]. |
 | Ta bort en batch **medan den importeras** till [!UICONTROL Customer Journey Analytics] | Om det bara finns en batch i datauppsättningen visas inga data eller delar av data från den gruppen i [!UICONTROL Customer Journey Analytics]. Intag har återställts. Om det till exempel finns fem grupper i datauppsättningen och tre av dem redan har importerats när datauppsättningen togs bort, visas data från dessa tre grupper i [!UICONTROL Customer Journey Analytics]. |
 | Ta bort en anslutning i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande anger att:<ul><li>Datavyer som skapats för den borttagna anslutningen fungerar inte längre.</li><li> Alla Workspace-projekt som är beroende av datavyer i den borttagna anslutningen slutar fungera.</li></ul> |
 | Ta bort en datavy i [!UICONTROL Customer Journey Analytics] | Ett felmeddelande indikerar att alla Workspace-projekt som är beroende av den här borttagna datavyn kommer att sluta fungera. |
 
-## 7. Att tänka på vid sammanslagning av rapportsviter i Customer Journey Analytics {#merge-reportsuite}
+## 7. Att tänka på när du sammanfogar rapportsviter i Customer Journey Analytics {#merge-reportsuite}
 
 Om du tänker importera Adobe Analytics-data via [Adobe Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) bör du tänka på dessa förändringar när du sammanfogar två eller flera rapportsviter från Adobe Analytics.
 
@@ -211,19 +211,19 @@ Du kan [skapa och publicera målgrupper](https://experienceleague.adobe.com/en/d
 
 +++**Om jag är en befintlig [!DNL Data Workbench]-kund, kan jag flytta till [!UICONTROL Customer Journey Analytics] just nu?**
 
-Det beror på ditt användningssätt, så samarbeta med ditt Adobe-kontoteam. Det aktuella användningsexemplet kanske redan passar Customer Journey Analytics!
+Det beror på hur du använder programmet, så samarbeta med Adobe Account Team. Det aktuella användningsexemplet kanske redan passar Customer Journey Analytics!
 
 +++
 
 ## 9. Beräkna anslutningsstorlek {#estimate-size}
 
-Se [Beräkna och hantera användningen](/help/technotes/estimate-usage.md).
+Se [Användning av anslutningar](/help/connections/manage-connections.md#usage).
 
 ## 10. Om användningsövertäckning {#overage}
 
-Användningsgränserna övervakas regelbundet och upprätthålls av Adobe. datarader: de dagliga genomsnittliga dataraderna som är tillgängliga för analys inom Customer Journey Analytics.
+Användningsbegränsningar övervakas och tillämpas regelbundet av Adobe. datarader: de dagliga genomsnittliga dataraderna som är tillgängliga för analys inom Customer Journey Analytics.
 
-Ditt kontrakt ger till exempel en miljon rader med data. Anta att du laddar upp två miljoner rader med data dag 1 av Customer Journey Analytics. På dag 2 tar du bort 1 miljon rader och behåller din användning på den högsta tillåtna nivån (det vill säga en miljon rader data) under återstoden av licensvillkoren. Beroende på dina avtalsvillkor kan du ändå ådra dig en proportionell överanvändningsavgift för dag 1 eftersom du har överskridit dina licensrättigheter för&quot;datarader&quot;.
+Ditt kontrakt ger till exempel en miljon rader med data. Anta att ni laddar upp två miljoner datarader dag 1 av Customer Journey Analytics. På dag 2 tar du bort 1 miljon rader och behåller din användning på den högsta tillåtna nivån (det vill säga en miljon rader data) under återstoden av licensvillkoren. Beroende på dina avtalsvillkor kan du ändå ådra dig en proportionell överanvändningsavgift för dag 1 eftersom du har överskridit dina licensrättigheter för&quot;datarader&quot;.
 
 ## 11. Diagnostisera avvikelser i data {#discrepancies}
 
@@ -240,9 +240,9 @@ Läs mer om [konsekvenserna av datauppsättningen och borttagning av anslutninga
 
 ## 12. Regional datainsamling
 
-Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe och andra lösningar sker så nära besökarna som möjligt. När data har samlats in regionalt på ett datainsamlingscenter (DCC, även kallat Edge-webbplats, en del av Platform Edge Network) vidarebefordras de via en säker anslutning till de relevanta lösningarna baserat på konfigurationen av din datastam och/eller händelsevidarebefordran.
+Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe och andra lösningar sker så nära besökarna som möjligt. När data har samlats in lokalt på ett datainsamlingscenter (DCC, även kallat Edge-webbplats, en del av Platform Edge Network) vidarebefordras de via en säker anslutning till relevanta lösningar baserat på konfigurationen av ditt datastam och/eller din händelsevidarebefordran.
 
-![Dataflöde med Edge Network](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
+![Dataflöde med Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 I den regionala datainsamlingsprocessen används följande steg:
 
@@ -253,7 +253,7 @@ I den regionala datainsamlingsprocessen används följande steg:
 Att använda regional datainsamling ger flera fördelar:
 
 * **Prestanda**: Med RDC ansluter besökarna till närmaste DCC. Denna optimering ger den snabbaste svarstiden, vilket ger mer exakt spårning och snabbare laddningstider.
-* **Redundans**: Om kommunikationen mellan DCC och DPC avbryts, sparar Adobe RDC-infrastrukturen data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs.
+* **Redundans**: Om kommunikationen mellan DCC och DPC avbryts, sparar Adobe RDC-infrastruktur data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs.
 
 Följande platser (kan ändras) ingår för närvarande i RDC:
 
@@ -269,7 +269,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 
 När data når det regionala datacentret avgör datastreamkonfigurationen hur data slussas vidare.
 
-Customer Journey Analytics kräver datauppsättningar från Adobe Experience Platform, så din konfiguration för dataström/händelsevidarebefordran kräver att Adobe Experience Platform-tjänsten dirigerar data från det regionala datacentret till datacentret där din Adobe Experience Platform-instans finns. Customer Journey Analytics och tillhörande stödtjänster och infrastruktur driftsätts i samma Adobe Experience Platform-instans.
+Customer Journey Analytics kräver datauppsättningar från Adobe Experience Platform, så din konfiguration för dataström/händelsevidarebefordran kräver att Adobe Experience Platform-tjänsten dirigerar data från det regionala datacentret till datacentret där din Adobe Experience Platform-instans finns. Customer Journey Analytics och dess stödtjänster och infrastruktur driftsätts i samma Adobe Experience Platform-instans.
 
 
-Se [Översikt över datainsamling](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) om du vill ha mer information om hur datainsamling sker utanför Adobe Experience Platform Edge Network och dess regionala datacenter.
+Se [Översikt över datainsamling](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) om du vill ha mer information om hur du samlar in data utanför Adobe Experience Platform Edge Network och dess regionala datacenter.
