@@ -4,7 +4,7 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 3c9827c4930568edb2022c699585f716a8ca72fe
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Reseduk"
->abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor."
+>abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Bygg analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och segment. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Reseduk"
->abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Skapa analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor."
+>abstract="Analysera hur människor går igenom eller faller bort från en definierad resa. Bygg analyser av användarresor genom att skapa ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och segment. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Data uppdateras i takt med att du gör det. <br/><br/>Kunder med tillgång till Adobe Journey Optimizer kan analysera befintliga Journey Optimizer-resor."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ _I den här artikeln dokumenteras visualiseringen av arbetsytan på resan i_ ![C
 
 Med visualiseringen av arbetsytan på resande fot kan ni analysera och få djupgående insikter om de resor som ni erbjuder era användare och kunder. Du kan definiera en resa från scratch eller visa en resa från Journey Optimizer och sedan se hur människor lämnade (föll ut) eller fortsatte igenom (föll igenom) resan.
 
-Du kan [skapa analyser av användarresor](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) genom att använda valfri kombination av händelser, dimensionsobjekt, filter och datumintervall för att skapa resednoder. Koppla ihop noderna för att skapa resans flöde och inkludera flera vägar och beslutspunkter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Datauppdateringar uppdateras i realtid när du gör ändringar.
+Du kan [skapa analyser av användarresor](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) genom att använda valfri kombination av händelser, dimensionsobjekt, segment och datumintervall för att skapa resednoder. Koppla ihop noderna för att skapa resans flöde och inkludera flera vägar och beslutspunkter. Dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan. Datauppdateringar uppdateras i realtid när du gör ändringar.
 
 [Noderna är anslutna](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) som en&quot;slutgiltig sökväg&quot;, vilket betyder att besökare räknas så länge de så småningom förflyttar sig från en nod till en annan, oavsett händelser som inträffar mellan de två noderna. Den tid som användarna får förflytta sig längs banan bestäms av behållarinställningen.
 
@@ -170,7 +170,7 @@ Resans arbetsyta ger djupgående, grundliga analyser som inte är möjliga i Jou
 
 Att använda Journey Canvas för att analysera resor som skapats i Journey Optimizer ger flera fördelar:
 
-* Skapa händelser genom att använda Customer Journey Analytics mått, mätvärden, filter eller datumintervall.
+* Skapa händelser genom att använda Customer Journey Analytics mått, mätvärden, segment eller datumintervall.
 
   I Journey Optimizer måste en teknisk användare skapa en händelse innan den kan läggas till på en resa.
 
