@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
 workflow-type: tm+mt
-source-wordcount: '4046'
+source-wordcount: '4052'
 ht-degree: 0%
 
 ---
@@ -485,3 +485,5 @@ Användargränssnittet består av två paneler:
 >[!MORELIKETHIS]
 >
 >[Visa, felsök och ändra anslutningsinställningar](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) - självstudiekurs.
+>[Hantera din Customer Journey Analytics-användning](/help/technotes/estimate-usage.md)
+>

@@ -4,9 +4,9 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
+source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
 workflow-type: tm+mt
-source-wordcount: '4681'
+source-wordcount: '4696'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Funktion | Beskrivning |
 | --- | --- |
 | **April 2025** | |
+| Visa och hantera användning | Dokumentationen om hur du [visar](/help/connections/manage-connections.md#usage) och [hanterar](/help/technotes/estimate-usage.md) Customer Journey Analytics-användning har omarbetats |
 | Content Analytics | [Dokumentation](/help/content-analytics/content-analytics.md) för Adobe Content Analytics. Med Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering. |
 | **Mars 2025** | |
 | Användningsexempel för Quantum Metric | Användningsexempel har lagts till för att samla in data från [kvantmätare](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
@@ -193,7 +194,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Datum | Uppdatera beskrivning |
 | --- | --- |
 | **December 2022** |  |
-| 16 december 2022 | Nytt avsnitt om [mätning och hantering av dataanvändningen i Customer Journey Analytics](/help/technotes/estimate-usage.md). |
+| 16 december 2022 | Nytt avsnitt om [hur du hanterar dataanvändningen i Customer Journey Analytics](/help/technotes/estimate-usage.md). |
 | **Oktober 2022** | |
 | Oktober 2022 | Nytt avsnitt om [lösenordsskydd för schemalagda projekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). Den här funktionen stöder [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Nytt avsnitt om [Kundhanterade nycklar](/help/privacy/cmk.md). Den här funktionen stöder [HIPAA-beredskap](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
