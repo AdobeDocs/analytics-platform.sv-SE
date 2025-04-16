@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6f077ada9df1604b86fde21aa6b11b12160aeaa7
+source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2449'
 ht-degree: 0%
 
 ---
@@ -120,11 +120,11 @@ Din konfiguration kräver att du väljer en [datavy](/help/data-views/data-views
 
    * Använd ![Data](/help/assets/icons/Data.svg) **[!UICONTROL Select Data view]** om du vill välja en ny datavy för en konfiguration.
 
-     ![Konfiguration av innehållsanalys för en datavy](../assets/aca-configuration-dataview.png)
+     ![Content Analytics-konfiguration av en datavy](../assets/aca-configuration-dataview.png)
 
    * Om du vill ändra en datavy för en konfiguration väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**.
 
-     ![Konfiguration av innehållsanalys för en datavy](../assets/aca-configuration-dataview-edit.png)
+     ![Content Analytics-konfiguration av en datavy](../assets/aca-configuration-dataview-edit.png)
 
 
    I båda scenarierna visas en **[!UICONTROL Data view]**-dialogruta där du kan välja en datavy för din konfiguration.
@@ -145,7 +145,7 @@ Din konfiguration kräver att du väljer en [datavy](/help/data-views/data-views
 1. Välj **[!UICONTROL Save]** för att bekräfta den valda datavyn. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 
 
-I Customer Journey Analytics är en datavy knuten till en Customer Journey Analytics [Connection](/help/connections/overview.md). Och en Connection är baserad på en sandlåda i organisationen. När du har sparat konfigurationen fylls **[!UICONTROL Sandbox]** automatiskt i med namnet på sandlådan, baserat på den valda datavyn.
+I Customer Journey Analytics är en [datavy](/help/data-views/data-views.md) kopplad till en Customer Journey Analytics [connection](/help/connections/overview.md). Och en anslutning baseras på en sandlåda i organisationen. När du har sparat konfigurationen fylls **[!UICONTROL Sandbox]** automatiskt i med namnet på sandlådan, baserat på den valda datavyn.
 
 
 ### Upplevelsehantering och -definition {#onboarding-experiences}
@@ -155,12 +155,12 @@ I Customer Journey Analytics är en datavy knuten till en Customer Journey Analy
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="Upplevelsehantering och -definition"
->abstract="Du kan välja att inkludera upplevelser i de data du samlar in med Content Analytics. När du väljer det här alternativet måste du definiera en eller flera kombinationer av en regex- och frågeparametrar för att definiera för vilka URL:er du vill inkludera upplevelser."
+>abstract="Ni kan välja att inkludera upplevelser i de data ni samlar in med Content Analytics. När du väljer det här alternativet måste du definiera en eller flera kombinationer av en regex- och frågeparametrar för att definiera för vilka URL:er du vill inkludera upplevelser."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
 >title="Upplevelsehantering och -definition"
->abstract="Samla upplevelser i innehållsanalys"
+>abstract="Samla upplevelser i Content Analytics"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
@@ -168,13 +168,23 @@ I Customer Journey Analytics är en datavy knuten till en Customer Journey Analy
 >abstract="Ange parametrarna som bestämmer hur innehåll återges på webbplatsen."
 
 >[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_new_include_experiences"
+>title="Upplevelsehantering och -definition"
+>abstract="När det här alternativet är aktiverat samlas upplevelsedata in, upplevelseattribut genereras och upplevelserapporter är tillgängliga."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_edit_include_experiences"
+>title="Upplevelsehantering och -definition"
+>abstract="När det här alternativet är aktiverat samlas upplevelsedata in, upplevelseattribut genereras och upplevelserapporter är tillgängliga. <br><br/>Använd ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** om du vill ändra datainsamlingskonfigurationen för upplevelser i taggegenskapen som är kopplad till den aktuella konfigurationen."
+
+>[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Upplevelsehantering och -definition"
->abstract="Du kan redigera inställningarna i tillägget Adobe Content Analytics i taggegenskapen som är kopplad till den aktuella konfigurationen."
+>abstract="Du måste redigera inställningarna för upplevelsedatainsamling i Adobe Content Analytics-tillägget i taggegenskapen som är kopplad till den aktuella konfigurationen."
 
 <!-- markdownlint-enable MD034 -->
 
-I det här avsnittet kan du välja att inkludera upplevelser i de data som du samlar in med Content Analytics.  En upplevelse är all text på en webbsida som är reproducerbar med den URL som den första användaren använder när han/hon besöker den webbsidan.
+I det här avsnittet kan du välja att inkludera upplevelser i de data du samlar in med Content Analytics.  En upplevelse är all text på en webbsida som är reproducerbar med den URL som den första användaren använder när han/hon besöker den webbsidan.
 
 Som standard är **[!UICONTROL Include experiences]** inaktiverad. När du väljer det här alternativet måste du definiera för vilka URL-adresser som du vill inkludera upplevelser.
 
@@ -201,9 +211,12 @@ Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 
 Så här redigerar du befintliga eller inkluderar nya upplevelser i en implementerad konfiguration:
 
-![Konfiguration av innehållsanalys - Hämta och definiera ](../assets/aca-configuration-experience-edit.png)
+![Inhämtning och definition av Content Analytics konfigurationsupplevelse](../assets/aca-configuration-experience-edit.png)
 
-* Växla **[!UICONTROL Include experiences]** om du vill aktivera eller inaktivera tillgängligheten för upplevelsekomponenter, visualiseringar, paneler och mallar i Analysis Workspace.
+* Växla **[!UICONTROL Include experiences]** för att aktivera eller inaktivera:
+
+   * Processen som genererar upplevelseattribut från Content Analytics händelsedata
+   * Rapporteringsmallen i Customer Journey Analytics.
 
 * Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för datainsamling ytterligare för upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) i taggegenskapen som är associerad med den aktuella konfigurationen.
 
@@ -291,7 +304,7 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
 
 >[!IMPORTANT]
 >
->Om du har en befintlig Web SDK-implementering med Javascript, och inte använder Tags, måste du ta bort det automatiska inkluderade Web SDK-tillägget manuellt från den nyligen skapade Tags-egenskapen.
+>Om du har en befintlig Web SDK-implementering som använder [JavaScript-biblioteket](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) och inte använder [taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) måste du ta bort det automatiska inkluderade Web SDK-tillägget manuellt från den nyligen skapade Tags-egenskapen.
 
 
 
@@ -331,8 +344,8 @@ När du skapar eller redigerar en konfiguration har du följande alternativ:
 * **[!UICONTROL Implement]**: Inställningar för eller ändringar i en konfiguration sparas och implementeras. Alla fält som markerats som ![Obligatoriskt](/help/assets/icons/Required.svg) måste ha korrekta värden. Implementeringen består av följande:
 
    * **[!UICONTROL Customer Journey Analytics]**-konfiguration:
-      * Den valda datavyn uppdateras med mått och mått för innehållsanalys.
-      * Anslutningen som är kopplad till den valda datavyn ändras så att den omfattar Content Analytics-händelser och attribut.
+      * Den valda datavyn uppdateras för att inkludera Content Analytics-dimensioner och mått.
+      * Anslutningen som är kopplad till den valda datavyn har ändrats så att den innehåller Content Analytics-händelser och attribut.
       * En rapportmall för Content Analytics läggs till i Workspace.
 
 
