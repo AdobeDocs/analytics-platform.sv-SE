@@ -4,7 +4,7 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i e
 
 ## Frihandsritbordsverktyget
 
-Om du vill lägga till flera komponenter i tabellen först och sedan återge data kan du välja **[!UICONTROL Enable table builder]**. När verktyget är aktiverat kan du dra och släppa dimensioner, uppdelningar, mätvärden och filter för att skapa tabeller som besvarar mer komplexa frågor. Data uppdateras när du har valt **[!UICONTROL Build]**.
+Om du vill lägga till flera komponenter i tabellen först och sedan återge data kan du välja **[!UICONTROL Enable table builder]**. Med verktyget aktiverat kan du dra och släppa dimensioner, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa frågor. Data uppdateras när du har valt **[!UICONTROL Build]**.
 
 ![En frihandstabellbyggare som visar ](assets/table-builder.png)
 
@@ -56,7 +56,7 @@ Du kan interagera med och anpassa en frihandstabell på flera olika sätt:
 
 ### Filter och sortering
 
-* Du kan [filtrera och sortera](filter-and-sort.md) data i en tabell.
+* Du kan [segmentera och sortera](filter-and-sort.md) data i en tabell.
 
 ### Rader
 
@@ -64,11 +64,11 @@ Du kan interagera med och anpassa en frihandstabell på flera olika sätt:
 * Du kan anpassa fler rader till en enda skärm genom att justera projektets [visningstäthet](/help/analysis-workspace/build-workspace-project/view-density.md).
 * Varje dimensionsrad kan visa upp till 400 rader, innan sidnumreringen görs. Markera siffran bredvid **[!UICONTROL Rows]** i den första kolumnrubriken om du vill visa fler rader på en sida. Navigera till en annan sida med ![SparronRight](/help/assets/icons/ChevronRight.svg) i den första kolumnrubriken.
 * Du kan dela upp rader med ytterligare komponenter. Om du vill dela upp flera rader samtidigt markerar du flera rader och drar sedan nästa komponent ovanpå de markerade raderna. Läs mer om [uppdelningar](/help/components/dimensions/t-breakdown-fa.md).
-* Rader kan [filtreras](/help/components/filters/filters-overview.md) om du vill visa en reducerad uppsättning med objekt. Ytterligare inställningar är tillgängliga under [Radinställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
+* Rader kan [segmenteras](/help/components/filters/filters-overview.md) om du vill visa en reducerad uppsättning med artiklar. Ytterligare inställningar är tillgängliga under [Radinställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Kolumner
 
-* Komponenter kan staplas i kolumner för att skapa filtrerade mätvärden, tabbanalyser med mera.
+* Komponenter kan staplas i kolumner för att skapa segmenterade mätvärden, tabbanalyser med mera.
 * Vyn för varje kolumn kan justeras under [kolumninställningarna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
 * Flera åtgärder är tillgängliga via [snabbmenyn](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu). Menyn innehåller olika åtgärder beroende på om du markerar tabellrubriken, rader eller kolumner.
 

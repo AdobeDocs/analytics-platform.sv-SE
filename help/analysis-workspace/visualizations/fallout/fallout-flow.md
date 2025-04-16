@@ -4,7 +4,7 @@ title: Om utfallsrapporter och visualiseringar
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en utfallsv
 
 Med hjälp av bortfallsvisualiseringar kan du:
 
-* Jämför två olika filter sida vid sida i samma rapport.
+* Jämför två olika segment sida vid sida i samma rapport.
 * Dra och släpp (och ordna om) steg i tratten (kontaktytor).
 * Blanda och matcha värden från olika dimensioner och mätvärden.
 * Skapa en flerdimensionell utfallsrapport.
@@ -75,7 +75,7 @@ Bortfallsvisualiseringar passar bäst för:
 
 * Bortfallsanalys som omfattar resor med en fördefinierad sidsekvens och en enda startpunkt och sökväg. (Använd resans arbetsyta för resor med flera ingångspunkter och sökvägar.)
 
-* Resor där du behöver jämföra två olika filter sida vid sida i samma rapport.
+* Resor där ni behöver jämföra två olika segment sida vid sida i samma rapport.
 
 Använd [tabellen ovan](#understand-the-differences) för att förstå skillnaderna mellan visualiseringar av arbetsyta, utfall och flöde för resan.
 

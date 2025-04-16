@@ -4,7 +4,7 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan t.ex. lägga till händelser, t.ex. enheter, samt unika personer och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
-Du kan också lägga till filter i en kontaktyta. Du kanske vill jämföra filter som iOS- och Android™-användare. Dra de önskade filtren högst upp i utfallet och information om dessa filter läggs till i utfallsrapporten. Om du bara vill visa dessa filter kan du ta bort baslinjen Alla besök.
+Du kan till och med lägga till segment inom en kontaktyta. Du kanske vill jämföra segment som iOS- och Android™-användare. Dra de önskade segmenten högst upp i utfallet och information om dessa segment läggs till i utfallsrapporten. Om du bara vill visa de segmenten kan du ta bort baslinjen Alla besök.
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
-Du kan göra lappningar på mått, mätvärden och filter. Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
 ## Använd
 
@@ -41,7 +41,7 @@ Du kan göra lappningar på mått, mätvärden och filter. Anta till exempel att
 
    >[!NOTE]
    >
-   >Flera filter förenas med AND, men flera objekt som dimensionsobjekt och mått förenas med OR.
+   >Flera segment förenas med AND, men flera objekt som dimensionsposter och mätvärden förenas med OR.
 
    ![Sidan:CamerRoll eller Sida: Kamerans kontaktytor är markerade.](assets/fallout-or.png)
 
@@ -82,7 +82,7 @@ Som en del av visualiseringen finns det specifika alternativ för snabbmenyer.
 | **[!UICONTROL Trend all touchpoints (%)]** | Trends all the touchpoint percentage in the fallout (except **[!UICONTROL All People]**, if it is included), on the same chart. |
 | **[!UICONTROL Break down fallthrough at this touchpoint]** | Se vad personer gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
 | **[!UICONTROL Break down fallout at this touchpoint]** | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. |
-| **[!UICONTROL Create filter from touchpoint]** | Skapa ett nytt filter från den valda kontaktytan. |
+| **[!UICONTROL Create segment from touchpoint]** | Skapa ett nytt segment från den markerade kontaktytan. |
 
 >[!MORELIKETHIS]
 >

@@ -4,7 +4,7 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: a909804e066339750c2271f6c65c108a6a6199f8
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '6207'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Du kan skapa noder på följande sätt: genom att dra Workspace-komponenter frå
 
 1. Öppna en befintlig visualisering av en arbetsyta för resan i Analysis Workspace eller [börja skapa en ny](#begin-building-a-journey-canvas-visualization).
 
-1. Dra mått, dimensioner, dimensionsobjekt, filter eller datumintervall från den vänstra listen till arbetsytan. Mätvärden som baseras på ett [härlett fält](/help/data-views/derived-fields/derived-fields.md) stöds. Beräknade mått, liksom alla mått och mått som baseras på en [sammanfattningsdatamängd](/help/data-views/summary-data.md), stöds inte.
+1. Dra mått, dimensioner, dimensionsobjekt, segment eller datumintervall från den vänstra listen till arbetsytan. Mätvärden som baseras på ett [härlett fält](/help/data-views/derived-fields/derived-fields.md) stöds. Beräknade mått, liksom alla mått och mått som baseras på en [sammanfattningsdatamängd](/help/data-views/summary-data.md), stöds inte.
 
    Du kan markera flera komponenter i den vänstra listen genom att hålla ned Skift eller genom att hålla ned Kommando (Mac) eller Ctrl (Windows).
 
@@ -118,10 +118,10 @@ Du kan skapa noder på följande sätt: genom att dra Workspace-komponenter frå
    | Dimension | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några befintliga noder. |
    | Dimension | En befintlig nod | Komponenten kombineras automatiskt med den befintliga noden. |
    | Dimension | En pil som ansluter två befintliga noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p> |
-   | Filter | Tomt område på arbetsytan | Noden visar var komponenten släpptes utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden omfattar summan av det primära måttet, filtrerat efter filtret som du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till filtret Dagar i ett tomt område på arbetsytan visas alla personer som har haft en händelse idag.</p> |
-   | Filter | En befintlig nod | Använder filtret på den befintliga noden. |
-   | Filter | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Använder filtret på den punkt på banan där komponenten släpptes.</p> |
-   | Datumintervall | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden inkluderar summan av det primära måttet, filtrerat efter det datumintervall du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till datumintervallet Den här månaden i ett tomt område på arbetsytan, visas alla personer som har haft en händelse under den aktuella månaden.</p> |
+   | Filter | Tomt område på arbetsytan | Noden visar var komponenten släpptes utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden inkluderar summan av det primära måttet, segmenterat efter det segment du valde.</p> <p>Om du till exempel väljer Personer som det primära måttet för resan och sedan lägger till ett segment av Idag till ett tomt område på arbetsytan, visas alla personer som har haft en händelse idag.</p> |
+   | Filter | En befintlig nod | Tillämpar segmentet på den befintliga noden. |
+   | Filter | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Tillämpar segmentet på den punkt på banan där komponenten släpptes.</p> |
+   | Datumintervall | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden omfattar summan av det primära måttet, segmenterat efter det datumintervall du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till datumintervallet Den här månaden i ett tomt område på arbetsytan, visas alla personer som har haft en händelse under den aktuella månaden.</p> |
    | Datumintervall | En befintlig nod | Använder datumintervallet på den befintliga noden. |
    | Datumintervall | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Tillämpar datumintervallet på den punkt på banan där komponenten släpptes.</p> |
    | Flera komponenter | Ett tomt område på arbetsytan | **Om ingen av komponenterna är dimensioner:**<p>Varje komponent visas som en separat nod där komponenterna släpptes, utan anslutning till några befintliga noder.</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. </p><p>**Om någon av de komponenter du lägger till är dimensioner:**</p><p>Varje komponent visas som en separat nod där komponenterna släpptes, utan anslutning till några befintliga noder.</p><p>Det går bara att lägga till en dimension åt gången. När dimensionen läggs till skapas 3 noder för de tre översta dimensionsobjekten där komponenten släpptes.</p><p>Håll ned Skift-tangenten när du släpper komponenterna på arbetsytan för att lägga till dem som en kombinerad nod. De tre översta dimensionsobjekten kombineras med varje nod. (Mer information finns i [Kombinera noder](#combine-nodes).)</p> |
@@ -238,7 +238,7 @@ När du har lagt till noder på arbetsytan kan du ordna om dem, kombinera dem, a
 
 ### Ordna om noder
 
-Resor på arbetsytan i resan består av ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och filter.
+Resor på resans arbetsyta består av ett flexibelt diagram över noder och pilar som representerar en kombination av händelser, dimensionsobjekt och segment.
 
 Du kan dra noder på arbetsytan för att ändra ordningen på händelser och villkor för resan.
 
@@ -266,7 +266,7 @@ Den logik som tillämpas på noder när de kombineras varierar beroende på vilk
 
 >[!TIP]
 >
->Du kan visa logiken för en kombinerad nod genom att högerklicka på noden och sedan välja [!UICONTROL **Skapa filter från nod**]. Logiken visas i avsnittet [!UICONTROL **Definition**].
+>Du kan visa logiken för en kombinerad nod genom att högerklicka på noden och sedan välja [!UICONTROL **Skapa segment från nod**]. Logiken visas i avsnittet [!UICONTROL **Definition**].
 
 
 | Komponenttyper som ska kombineras | Använd logik (operator) |
@@ -297,11 +297,11 @@ Noderna ansluts av en pil. Både pilens riktning och bredd har betydelse:
 
 #### Logisk vid anslutning av noder
 
-När du ansluter noder på en arbetsyta i Journey ansluts de med hjälp av operatorn THEN. Detta kallas även [sekventiell filtrering](/help/components/filters/seg-sequential-build.md).
+När du ansluter noder på en arbetsyta i Journey ansluts de med hjälp av operatorn THEN. Detta kallas även [sekventiell segmentering](/help/components/filters/seg-sequential-build.md).
 
 Noderna är sammankopplade som en&quot;slutgiltig sökväg&quot;, vilket innebär att besökare räknas så länge de så småningom går från en nod till en annan, oavsett händelser som inträffar mellan de två noderna. Den tid som användarna får förflytta sig längs banan bestäms av behållarinställningen. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
-Du kan visa logiken för anslutna noder genom att högerklicka på noden och sedan välja [!UICONTROL **Skapa filter från nod**]. Logiken visas i avsnittet [!UICONTROL **Definition**].
+Du kan visa logiken för anslutna noder genom att högerklicka på noden och sedan välja [!UICONTROL **Skapa segment från nod**]. Logiken visas i avsnittet [!UICONTROL **Definition**].
 
 #### Anslut befintliga noder
 
@@ -542,25 +542,25 @@ Så här visar du trenddata:
 
 1. Välj [!UICONTROL **Trend**].
 
-### Skapa ett filter baserat på en nod eller pil
+### Skapa ett segment baserat på en nod eller pil
 
-Du kan skapa ett nytt filter baserat på en nod eller pil i en resa. När filtret har skapats kan du använda det var som helst i Analysis Workspace.
+Du kan skapa ett nytt segment baserat på en nod eller pil inom en resa. När segmentet har skapats kan du använda det var som helst i Analysis Workspace.
 
-Filter som skapas från arbetsytan i Resenstid använder [sekventiell filtrering](/help/components/filters/seg-sequential-build.md). Det innebär att filtret använder operatorn THEN för att länka samman sekvensen av händelser (resan) som personer flödade genom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i filtret.
+Filter som skapas från arbetsytan i Resursen använder [sekventiell segmentering](/help/components/filters/seg-sequential-build.md). Det innebär att segmentet använder operatorn THEN för att länka samman sekvensen av händelser (resan) som människor flödade genom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i segmentet.
 
-Om du skapar ett filter baserat på en nod som har flera banor som flödar in i den, inkluderas alla banor i filtret. Separata banor förenas med operatorn OR.
+Om du skapar ett segment baserat på en nod som har flera banor som flödar in i det, inkluderas alla banor i segmentet. Separata banor förenas med operatorn OR.
 
-Så här skapar du ett filter:
+Så här skapar du ett segment:
 
-1. Högerklicka på noden eller pilen som du vill använda för att skapa filtret i en visualisering av arbetsytan på resan.
+1. Högerklicka på noden eller pilen som du vill använda för att skapa segmentet i en visualisering av arbetsytan på resan.
 
-1. Välj [!UICONTROL **Skapa filter från nod**] eller [!UICONTROL **Skapa filter från pil**].
+1. Välj [!UICONTROL **Skapa segment från nod**] eller [!UICONTROL **Skapa segment från pil**].
 
-   Filterverktyget visas. I avsnittet [!UICONTROL **Definition**] skapas filterdefinitionen baserat på noden eller pilen som du valde och dess kontext inom resan.
+   Filterverktyget visas. I avsnittet [!UICONTROL **Definition**] skapas segmentdefinitionen baserat på noden eller pilen som du valde och dess kontext inom resan.
 
-1. Ange en titel för filtret och gör eventuella andra ändringar. Mer information om hur du skapar ett filter finns i [Filterverktyget](/help/components/filters/filter-builder.md).
+1. Ange en rubrik för segmentet och gör eventuella andra ändringar. Mer information om hur du skapar ett segment finns i [Filterverktyget](/help/components/filters/filter-builder.md).
 
-1. Välj [!UICONTROL **Spara**] om du vill spara filtret.
+1. Välj [!UICONTROL **Spara**] om du vill spara segmentet.
 
 ### Ta bort noder
 

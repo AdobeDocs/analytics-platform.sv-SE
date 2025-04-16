@@ -4,9 +4,9 @@ title: Filtrera och ordna tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Så här filtrerar du data i frihandstabeller:
 
 1. Välj **[!UICONTROL Apply]** om du vill filtrera data. Välj **[!UICONTROL Clear]** om du vill rensa alla indata. Välj **[!UICONTROL Cancel]** om du vill avbryta och stänga dialogrutan. <br/>En färgad ![Filter](/help/assets/icons/FilterColored.svg) **Filter** -ikon anger och visar information när ett filter används i tabellen.
 
-### Använda målgruppsfilter
+### Använd målgruppssegment
 
 Mer information finns i [Översikt över filter](/help/components/filters/filters-overview.md).
 

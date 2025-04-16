@@ -4,7 +4,7 @@ title: Workspace summor
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
@@ -27,8 +27,8 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 
 ![Friformstabell som visar totalsumman och tabellsumman.](assets/total-row.png)
 
-* **[!UICONTROL Table total]** ➊ - Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand total]. Summan återspeglar alla tabellfilter som används i friformstabellen, inklusive alternativet [!UICONTROL Include None].
-* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - Det här totala antalet representerar alla händelser som har samlats in. När ett filter används på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar filtervillkoren visas.
+* **[!UICONTROL Table total]** ➊ - Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand total]. Summan återspeglar alla tabellsegment som används i friformstabellen, inklusive alternativet [!UICONTROL Include None].
+* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - Det här totala antalet representerar alla händelser som har samlats in. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar segmentvillkoren återspeglas.
 
 
 
@@ -54,6 +54,6 @@ Se [Dynamiska och statiska dimensionsobjekt i frihandstabeller](column-row-setti
 |---|---|
 | Vilka *totalt* är procentsatserna för gråa kolumner baserade på? | Det här *totala*-värdet beror på inställningen **[!UICONTROL Percentages]** under **[!UICONTROL Row Settings]**:<ul><li>Beräkna procentandelar per kolumn - Den här inställningen är standard. Procentsatserna baseras på tabellsumman.</li><li>Beräkna procentandelar per rad - Procentsatserna baseras på totalsumman.</li></ul> |
 | Hur påverkar inställningen för **[!UICONTROL Include "No value"]** summorna? | Om inställningen **[!UICONTROL Include "No value"]** inte är markerad tas raden **[!UICONTROL No value]** bort från tabellen, tabellsumman, och fortsätter till alla beräknade mått som använder [*Total*-mätningstyper](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md). |
-| När anpassade tabellfilter tillämpas på en frihandstabell, gör jag då alla mina beräknade värden och villkorsstyrda formateringskonton för filtret? | Inte just nu. **[!UICONTROL Include "No value"]** är ett konto, men anpassade tabellfilter påverkar inte följande:<ul><li>Kolumnens maximala/minsta intervall som villkorsstyrd formatering använder ser ut över alla data.</li><li>Beräknade mätvärden som utnyttjar **[!UICONTROL Grand total]** mätningstyper.</li><li>Beräknade mätvärden med funktioner som beräknas över rader i en friformstabell: Kolumnsumma, Kolumnmax, Kolumnmin, Antal, Medel, Percentile, Kvarnvärde, Radantal, Standardavvikelse, Varians, Ackumulativt, Ackumulativt genomsnitt, Regressionsvarianter, T-poäng, T-test, Z-poäng och Z-test.</li></ul> |
-| I Beräknade mått, vad återspeglar den **[!UICONTROL Grand total]**-metriska typen? | **[!UICONTROL Grand total]** fortsätter att referera till **[!UICONTROL Grand total]** och reflekterar inte filter som används i en tabell eller **[!UICONTROL Table total]**. |
+| När anpassade tabellsegment används i en frihandstabell, gör jag alla mina beräknade värden och villkorsstyrda formateringskonton för segmentet? | Inte just nu. **[!UICONTROL Include "No value"]** är ett konto, men anpassade tabellsegment påverkar inte följande:<ul><li>Kolumnens maximala/minsta intervall som villkorsstyrd formatering använder ser ut över alla data.</li><li>Beräknade mätvärden som utnyttjar **[!UICONTROL Grand total]** mätningstyper.</li><li>Beräknade mätvärden med funktioner som beräknas över rader i en friformstabell: Kolumnsumma, Kolumnmax, Kolumnmin, Antal, Medel, Percentile, Kvarnvärde, Radantal, Standardavvikelse, Varians, Ackumulativt, Ackumulativt genomsnitt, Regressionsvarianter, T-poäng, T-test, Z-poäng och Z-test.</li></ul> |
+| I Beräknade mått, vad återspeglar den **[!UICONTROL Grand total]**-metriska typen? | **[!UICONTROL Grand total]** fortsätter att referera till **[!UICONTROL Grand total]** och speglar inte segment som används i en tabell eller **[!UICONTROL Table total]**. |
 | Vilken summa visas när data kopieras och klistras in från en frihandstabell eller hämtas via CSV? | Den totala raden återspeglar endast **[!UICONTROL Table total]** och respekterar inställningen för kolumnen **[!UICONTROL Show totals]**. |

@@ -1,13 +1,13 @@
 ---
-title: Vad är komponenterna i Customer Journey Analytics?
-description: Lär dig vilka komponenter Customer Journey Analytics erbjuder och hur du kan använda dem vid rapportering.
+title: Vad är komponenter i Customer Journey Analytics?
+description: Lär dig vilka komponenter Customer Journey Analytics har och hur du kan använda dem vid rapportering.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 2%
 
 ---
@@ -16,27 +16,27 @@ ht-degree: 2%
 
 Komponenter är funktioner i Customer Journey Analytics som kan användas i visualiseringar (t.ex. Freeform table) eller som komplement till rapporteringsfunktioner.
 
-Så här hanterar du komponenter från huvudgränssnittet i Customer Journey Analytics:
+Så här hanterar du komponenter från Customer Journey Analytics huvudgränssnitt:
 
 1. Välj **[!UICONTROL Components]** i det övre fältet.
 1. Välj **[!UICONTROL Components]** om du vill se en översikt över de komponenter som du kan hantera, eller markera komponenten som du vill hantera direkt på menyn.
 
 Du kan hantera följande komponenter:
 
-* [Filter](filters/filters-overview.md): Bygg, hantera, dela och tillämpa kraftfulla målgruppsfilter på dina rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
+* [Segment](filters/filters-overview.md): Skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i dina rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
 * [Beräknade mått](calc-metrics/calc-metr-overview.md): Använd mått och formler som nya komponenter för rapportering
 * [Datumintervall](date-ranges/create.md): Anpassa och förfina datumintervall som Analysis Workspace erbjuder.
 * [Anteckningar](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till din organisation.
 * [Intelligenta aviseringar](/help/components/c-intelligent-alerts/intelligent-alerts.md): Gör att du kan meddelas baserat på ändrade procentsatser eller specifika datapunkter.
 * [Schemalagda projekt](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): Hantera dina schemalagda projekt.
 * [Inställningar](/help/analysis-workspace/user-preferences.md): Hantera inställningarna för Analysis Workspace.
-* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
+* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
 * [Exportera](/help/components/exports/manage-export-locations.md): Hantera ditt exportkonto och platser.
 
 
 ## Analysis Workspace-komponenter
 
-Komponenterna i Analysis Workspace består av mått, dimensioner, filter och datumintervall som du kan dra och släppa på paneler och visualiseringar i ditt Workspace-projekt. Anpassade komponenter som du skapar läggs till i panelerna, till exempel ett beräknat mått eller ett anpassat datumintervall.
+Komponenterna i Analysis Workspace består av mått, dimensioner, segment och datumintervall som du kan dra och släppa på paneler och visualiseringar i ditt Workspace-projekt. Anpassade komponenter som du skapar läggs till i panelerna, till exempel ett beräknat mått eller ett anpassat datumintervall.
 
 Om du vill öppna panelen Komponenter väljer du ![Kurva](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** på knapppanelen.
 
@@ -69,10 +69,10 @@ Du kan hantera komponenter (individuellt eller genom att markera flera).
    | ![Stjärna](/help/assets/icons/Star.svg) [!UICONTROL **Favorit**] | Lägg till komponenten i listan med favoriter. Precis som med taggar kan du söka efter Favoriter i den vänstra panelen och filtrera efter dem i komponenthanterarna. |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL Un-favorite]** | Ta bort komponenten från favoritlistan. |
    | ![Markering](/help/assets/icons/Checkmark.svg) [!UICONTROL **Godkänn**] | Markera komponenter som godkända för att signalera till användarna att komponenten är godkänd för organisationen. Precis som med taggar kan du söka efter och filtrera efter Godkänd i den vänstra panelen. En ![bock](/help/assets/icons/Checkmark.svg) identifierar godkända komponenter. |
-   | ![Dela](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
-   | ![Ta bort](/help/assets/icons/Delete.svg) [!UICONTROL **Ta bort**] | Ta bort komponenter som du inte längre behöver. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel filter eller beräknade värden. |
+   | ![Dela](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel segment eller beräknade värden. |
+   | ![Ta bort](/help/assets/icons/Delete.svg) [!UICONTROL **Ta bort**] | Ta bort komponenter som du inte längre behöver. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel segment eller beräknade värden. |
 
-Anpassade komponenter kan också hanteras med respektive komponenthanterare. Se till exempel [Hantera filter](/help/components/filters/manage-filters.md).
+Anpassade komponenter kan också hanteras med respektive komponenthanterare. Se till exempel [Hantera segment](/help/components/filters/manage-filters.md).
 
 ## Hantera komponentlistan
 
@@ -84,7 +84,7 @@ Du kan söka efter, filtrera och sortera komponentlistan på den vänstra panele
 
 2. I sökfältet börjar du skriva namnet på komponenten som du vill använda i ditt projekt.
 
-   En färg och ikon identifierar komponenttypen. **Dimensioner** ![Ikonen för Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Filter** ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Ikonen för datumintervall](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna.<br/>Adobe-ikonen ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) anger antingen en beräkningsmall eller en filtermall. Beräkningsikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) anger ett beräknat mätvärde som en administratör i organisationen har skapat.
+   En färg och ikon identifierar komponenttypen. **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Filter** ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Datumintervallikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna.<br/>Adobe-ikonen ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) anger antingen en beräkningsmall eller en segmentmall. Beräkningsikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) anger ett beräknat mätvärde som en administratör i organisationen har skapat.
 
 3. Välj komponenten i listrutan.
 
@@ -100,11 +100,11 @@ Du kan söka efter, filtrera och sortera komponentlistan på den vänstra panele
    |---------|---|----------|
    | ![Markering](/help/assets/icons/Checkmark.svg) | **[!UICONTROL Approved]** | Visa endast komponenter som har markerats som Godkänd av en administratör. |
    | ![Stjärna](/help/assets/icons/Star.svg) | **[!UICONTROL Favorites]** | Visa endast komponenter som finns i din favoritlista. <br/>Mer information om hur du lägger till komponenter i din favoritlista finns i [Hantera komponenter](#manage-components). |
-   | ![Dimensioner](/help/assets/icons/Dimensions.svg) | **[!UICONTROL Dimensions]** | Visa endast komponenter som är Dimensioner. |
+   | ![Dimensioner](/help/assets/icons/Dimensions.svg) | **[!UICONTROL Dimensions]** | Visa endast komponenter som är dimensioner. |
    | ![Händelse](/help/assets/icons/Event.svg) | **[!UICONTROL Metrics]** | Visa endast komponenter som är mätvärden. |
-   | ![Segmentering](/help/assets/icons/Segmentation.svg) | **[!UICONTROL Filters]** | Visa endast komponenter som är filter. |
+   | ![Segmentering](/help/assets/icons/Segmentation.svg) | **[!UICONTROL Segments]** | Visa endast komponenter som är segment. |
    | ![Kalender](/help/assets/icons/Calendar.svg) | **[!UICONTROL Date ranges]** | Visa endast komponenter som är datumintervall. |
-   | ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL *Märkordsnamn *]** | Visa bara komponenter med de valda taggarna. Det finns en dedikerad tagg för Adobe-mallen som är [standardmåtten ](/help/components/calc-metrics/default-calcmetrics.md) från Adobe. |
+   | ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL *Märkordsnamn *]** | Visa bara komponenter med de valda taggarna. Det finns en dedikerad tagg för Adobe Template som är de [beräknade standardmåtten](/help/components/calc-metrics/default-calcmetrics.md) från Adobe. |
 
    Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) i ett filter för att ta bort filtret.
 

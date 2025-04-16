@@ -4,7 +4,7 @@ title: Använda komponenter i Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Använda komponenter i Analysis Workspace
 
-Komponenterna utgör själva data i alla projekt i Analysis Workspace. Komponenterna består av mått, mått, filter och datumintervall. Du kan lägga till komponenter i ett projekt genom att dra dem till visualiseringar eller paneler.
+Komponenterna utgör själva data i alla projekt i Analysis Workspace. Komponenterna består av mått, mått, segment och datumintervall. Du kan lägga till komponenter i ett projekt genom att dra dem till visualiseringar eller paneler.
 
 Mer information om vilka typer av komponenter du kan lägga till finns i [komponentöversikten](/help/components/overview.md).
 
@@ -31,8 +31,8 @@ Mer information om vilka typer av komponenter du kan lägga till finns i [kompon
 
 1. Bläddra till eller sök efter komponenten som du vill lägga till och dra den sedan till en panel eller visualisering i projektet.
 
-1. Du kan också dra en komponent till filtersläppzonen i en panelrubrik. Den här dra och släpp-funktionen definierar komponenten som ett filter och tillämpar filtret på allt innehåll på panelen.
-Mer information om hur du kan använda filtersläppzonen på en panel för att filtrera panelen finns i [Släpp zon](/help/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
+1. Du kan också dra en komponent till segmentets släppzon i ett panelhuvud. Den här dra-och-släpp-funktionen definierar komponenten som ett segment och tillämpar segmentet på allt innehåll på panelen.
+Mer information om hur du kan använda segmentsläppzonen på en panel för att segmentera panelen finns i [Släppzon](/help/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
 
 1. Mer detaljerad information finns i följande avsnitt:
 
@@ -40,7 +40,7 @@ Mer information om hur du kan använda filtersläppzonen på en panel för att f
 
    * [Lägga till mätvärden i ett projekt](#add-metrics-to-a-project)
 
-   * [Lägga till filter i ett projekt](#add-filters-to-a-project)
+   * [Lägga till segment i ett projekt](#add-segments-to-a-project)
 
    * [Lägga till datumintervall i ett projekt](#add-date-ranges-to-a-project)
 
@@ -56,7 +56,7 @@ Mer information om hur du kan använda filtersläppzonen på en panel för att f
 
    * Dra en dimension till en visualisering (till exempel en frihandstabell) i Analysis Workspace.
 
-   * Dra en eller flera dimensioner från den vänstra panelen till filterdroppzonen för att skapa ett snabbfilter, enligt beskrivningen i [Lägg till filter i ett projekt](#add-filters-to-a-project).
+   * Dra en eller flera dimensioner från den vänstra panelen till segmentets släppzon för att skapa ett snabbsegment, enligt beskrivningen i [Lägg till segment i ett projekt](#add-filters-to-a-project).
 
 1. Du kan även dela upp dimensioner och dimensionsobjekt i Analysis Workspace med andra komponenter. Mer information finns i [Dela upp dimensioner i Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
@@ -93,17 +93,17 @@ Mer information om mått finns i [Metrisk](/help/components/apply-create-metrics
 
 [Med filter](/help/components/filters/filters-overview.md) kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller specifika interaktioner.
 
-Du kan använda filter i Analysis Workspace på något av följande sätt:
+Du kan använda segment i Analysis Workspace på något av följande sätt:
 
-* Lägga till filter på en panel
-När du lägger till filter på en panel tillämpas filtren på allt innehåll på panelen.
-Mer information om hur du kan använda filtersläppzonen på en panel för att filtrera panelen finns i [Släpp zon](/help/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
+* Lägga till segment i en panel
+När du lägger till segment på en panel används segmenten på allt innehåll på panelen.
+Mer information om hur du kan använda segmentsläppzonen på en panel för att segmentera panelen finns i [Släppzon](/help/analysis-workspace/c-panels/panels.md#drop-zone) i [Panelöversikt](/help/analysis-workspace/c-panels/panels.md).
 
-* Lägga till filter i en visualisering
-När du lägger till filter i en kolumn i en frihandstabell tillämpas filtren på allt innehåll i tabellkolumnen. Du kan också lägga till filter som en del av en utfallsvisualisering.
+* Lägga till segment i en visualisering
+När du lägger till segment i en kolumn i en frihandstabell används segmenten på allt innehåll i tabellkolumnen. Du kan också lägga till segment som en del av en utfallsvisualisering.
 
-* Använda filter i komponenter
-När du definierar komponenter som [beräknade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [anteckningar](/help/components/annotations/create-annotations.md#annotation-builder) eller till och med [filter](/help/components/filters/filter-builder.md) kan du använda filter som en del av definitionen.
+* Använda segment i komponenter
+När du definierar komponenter som [beräknade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [anteckningar](/help/components/annotations/create-annotations.md#annotation-builder) eller till och med [segment](/help/components/filters/filter-builder.md) kan du använda filter som en del av definitionen.
 
 
 ### Lägga till datumintervall i ett projekt

@@ -4,7 +4,7 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumnin
 
 >[!ENDSHADEBOX]
 
-Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen. Om du vill komma åt tabellradsinställningar väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** bredvid en dimension, ett filter, ett mått, en tidsperiod eller en uppdelning inom vart och ett av dessa objekt.
+Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen. Om du vill komma åt tabellradsinställningar väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** bredvid en dimension, ett segment, ett mått, en tidsperiod eller en uppdelning inom vart och ett av dessa objekt.
 
 ![Frihandstabell som markerar inställningsikonen för mått](assets/row-settings.png)
 
@@ -71,7 +71,7 @@ Följande alternativ på snabbmenyn är tillgängliga när du markerar ett eller
 | **[!UICONTROL Trend selection]** | Skapa en anpassad linjediagramvisualisering för markeringen. |
 | **[!UICONTROL Display only selected rows]** | Visa endast de markerade raderna i visualiseringen. |
 | **[!UICONTROL Display all rows]** | Visa alla rader i visualiseringen. |
-| **[!UICONTROL Create filter from selection]** | Öppna **[!UICONTROL Filter builder]** för att skapa ett filter från markeringen. |
+| **[!UICONTROL Create segment from selection]** | Öppna **[!UICONTROL Filter builder]** för att skapa ett segment från markeringen. |
 | **[!UICONTROL Create audience from selection]** | Öppna dialogrutan **[!UICONTROL Create audience]** om du vill skapa en målgrupp utifrån urvalet. |
 
 Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnrubrik för mätvärden.
@@ -85,7 +85,7 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 | **[!UICONTROL Compare attribution model]** | Ange en ny distributionsmodell och jämför den med attribueringsmodellen för den valda kolumnen. En ny kolumn läggs till med den nya attributmodellens mått. En ändringskolumn i procent läggs också till för jämförelse. |
 | **[!UICONTROL Reset column widths]** | Återställ kolumnbredderna till standardbredden. |
 | **[!UICONTROL Create annotation from selection]** | Öppna **[!UICONTROL Annotation details]** för att lägga till en anteckning. |
-| **[!UICONTROL Create filter from selection]** | Öppna **[!UICONTROL Filter builder]** för att skapa ett filter från markeringen. |
+| **[!UICONTROL Create segment from selection]** | Öppna **[!UICONTROL Filter builder]** för att skapa ett segment från markeringen. |
 | **[!UICONTROL Create audience from selection]** | Öppna dialogrutan **[!UICONTROL Create audience]** om du vill skapa en målgrupp utifrån urvalet. |
 
 ## Ändra radhöjd

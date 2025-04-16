@@ -4,7 +4,7 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 0%
@@ -121,7 +121,7 @@ Använd en snabbmeny på en nod i flödesvisualiseringen med följande alternati
 | **[!UICONTROL Create a filter for this path]** | Skapa ett filter. Det här valet tar dig till filterverktyget, där du kan konfigurera det nya filtret. |
 | **[!UICONTROL Breakdown]** | Dela upp noden efter tillgängliga mått, mått eller tid. |
 | **[!UICONTROL Filter column]** | Samma filteralternativ visas som de är tillgängliga i frihandstabellen. Mer information om de tillgängliga alternativen finns i avsnittet Använda ett enkelt eller avancerat filter i en tabell i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
-| **[!UICONTROL Exclude item]** eller **[!UICONTROL Restore excluded items]** | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet väljer du **[!UICONTROL Restore Excluded Item]** på snabbmenyn. Du kan också öppna filtret längst upp i kolumnen och ta bort rutan med det objekt du just uteslutit. |
+| **[!UICONTROL Exclude item]** eller **[!UICONTROL Restore excluded items]** | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet väljer du **[!UICONTROL Restore Excluded Item]** på snabbmenyn. Du kan också öppna segmentet överst i kolumnen och ta bort rutan med det objekt du just uteslutit. |
 | **[!UICONTROL Trend]** | Skapa ett trenddiagram för noden. |
 | **[!UICONTROL Show next column]** / **[!UICONTROL Show previous column]** | Visar nästa (höger) eller föregående (vänster) kolumn i visualiseringen. |
 | **[!UICONTROL Hide colum]**n | Döljer den markerade kolumnen från visualiseringen. |

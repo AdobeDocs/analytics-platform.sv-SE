@@ -4,7 +4,7 @@ title: Lägga till komponentbeskrivningar
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: a0e301130cf7f8c4b3be17dfe52648fde5ee4fe4
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Beskrivningar hjälper användarna att förstå hur de olika komponenterna används när de skapar projekt i Analysis Workspace eller när de visar rapporter.
 
-Customer Journey Analytics-administratörer kan lägga till beskrivningar för komponenter (mått, mått, filter och datumintervall) i en datavy eller med hjälp av Data Dictionary.
+Customer Journey Analytics-administratörer kan lägga till beskrivningar för komponenter (mått, mått, segment och datumintervall) i en datavy eller med hjälp av datamappningslistan.
 
 ## Lägga till beskrivningar i en datavy
 
