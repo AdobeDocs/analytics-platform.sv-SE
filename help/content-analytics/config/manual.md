@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Du använder [Adobe Content Analytics-tillägget](https://experienceleague.adobe
   Du kan redigera reguljära uttryck för att ändra hur du filtrerar sidor och resurser.
 
 
-När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar du att du använder [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} för att starta datainsamlingen baserat på gjorda ändringar.
+När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar du att du använder [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} för att starta datainsamlingen baserat på de ändringar du har gjort.
 
 
 
@@ -74,7 +74,9 @@ När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar d
 
 ## Versioner
 
-Om du behöver versionshantering av dina Content Analytics-upplevelser måste du lägga till en global `adobe.getContentExperienceVersion`-funktion på de sidor som du anser har upplevelser som du vill analysera.
+Om du vill samla in Content Analytics-upplevelser bör du överväga att implementera versionshantering för att säkerställa att nya upplevelser (ändringar på din webbsida) samlas in på rätt sätt.
+
+Om du vill implementera versionshantering lägger du till en global `adobe.getContentExperienceVersion`-funktion på sidorna som du anser att upplevelser som du vill analysera ska analyseras.
 
 Funktionen `adobe.getContentExperienceVersion` ska returnera en sträng som värde, vilket kan vara vad du vill för att identifiera versionen. Versionen har lagts till i URL:en för [upplevelse-ID](/help/content-analytics/report/components.md#experience-metadata).
 

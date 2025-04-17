@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
+source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2458'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Din konfiguration kräver att du väljer en [datavy](/help/data-views/data-views
 1. Välj **[!UICONTROL Save]** för att bekräfta den valda datavyn. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 
 
-I Customer Journey Analytics är en [datavy](/help/data-views/data-views.md) kopplad till en Customer Journey Analytics [connection](/help/connections/overview.md). Och en anslutning baseras på en sandlåda i organisationen. När du har sparat konfigurationen fylls **[!UICONTROL Sandbox]** automatiskt i med namnet på sandlådan, baserat på den valda datavyn.
+I Customer Journey Analytics är en [datavy](/help/data-views/data-views.md) kopplad till en Customer Journey Analytics [connection](/help/connections/overview.md). Och en anslutning baseras på en sandlåda i organisationen. När du har sparat konfigurationen fylls fältet **[!UICONTROL Sandbox]** automatiskt i med namnet på sandlådan, baserat på den valda datavyn.
 
 
 ### Upplevelsehantering och -definition {#onboarding-experiences}
@@ -180,7 +180,7 @@ I Customer Journey Analytics är en [datavy](/help/data-views/data-views.md) kop
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Upplevelsehantering och -definition"
->abstract="Du måste redigera inställningarna för upplevelsedatainsamling i Adobe Content Analytics-tillägget i taggegenskapen som är kopplad till den aktuella konfigurationen."
+>abstract="Du måste redigera inställningarna för insamling av upplevelsedata i Adobe Content Analytics-tillägget."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -192,6 +192,14 @@ Inkludera endast upplevelser när följande gäller:
 
 * Sidorna på webbplatsen måste kunna reproduceras med hjälp av sidans URL.
 * Det textinnehåll som visas av en viss användare kan återges med hjälp av sidans URL och är inte beroende av cookies eller andra anpassningsmekanismer.
+
+>[!IMPORTANT]
+>
+>Implementera [Content Analytics-versionshantering](manual.md#versioning) om du vill samla in ändringar som du gör i de upplevelser (sidor) som omfattas av Content Analytics.
+
+
+
+#### Ny konfiguration {#new-experiences-configuration}
 
 Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 
@@ -208,6 +216,9 @@ Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
    1. Ange en kommaavgränsad lista med **[!UICONTROL Query parameters,]**, till exempel `outdoors, patio, kitchen`.
 1. Välj **[!UICONTROL Remove]** om du vill ta bort en kombination av reguljära uttryck och frågeparametrar för domäner.
 1. Välj **[!UICONTROL Add Regex]** om du vill lägga till en annan kombination av ett reguljärt uttryck och frågeparametrar.
+
+
+### Implementerad konfiguration {#implemented-experiences-configuration}
 
 Så här redigerar du befintliga eller inkluderar nya upplevelser i en implementerad konfiguration:
 
@@ -304,7 +315,8 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
 
 >[!IMPORTANT]
 >
->Om du har en befintlig Web SDK-implementering som använder [JavaScript-biblioteket](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) och inte använder [taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) måste du ta bort det automatiska inkluderade Web SDK-tillägget manuellt från den nyligen skapade Tags-egenskapen.
+>Ta manuellt bort det automatiska inkluderade Web SDK-tillägget från den nyligen skapade Tags-egenskapen om du har en befintlig Web SDK-implementering som använder [JavaScript-biblioteket](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) i stället för [taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>
 
 
 

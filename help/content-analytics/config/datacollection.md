@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: e3753cfde5e57a86229d0a42a125afcc118bc479
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Följande definitioner används i den här artikeln:
 * **Upplevelse**: En upplevelse definieras som textinnehållet på en hel webbsida. För datainsamling registrerar Content Analytics det Experience ID som baseras på sidans URL. Senare hämtas texten på sidan via hämtningstjänsten.
 * **Experience ID**: En unik kombination av relevant URL (bas-URL plus eventuella parametrar som driver innehåll på sidan) och [upplevelseversion](manual.md#versioning).
    * Du anger, som en del av [configuration](configuration.md), vilka parametrar som är relevanta för alla angivna fullständiga URL:er.
-   * Du kan definiera den [versionsidentifierare](manual.md#versioning) som används.
+   * Du definierar en [versionsidentifierare](manual.md#versioning) som ska användas, så att du samlar in ändringar i dina upplevelser på rätt sätt.
 * **Resurs**: En bild. Content Analytics sparar resurs-URL:en.
 * **Resurs-ID**: Resursens URL.
 * **Relevant URL**: Bas-URL:en plus eventuella parametrar som driver innehållet på sidan.
@@ -85,7 +85,7 @@ En klickning spelas in när:
 
 ### Regelbunden eller specifik (beteendemässig) händelse
 
-Utlösare för att utlösa en vanlig eller specifik (beteendemässig) händelse i Content Analytics-sammanhang är:
+Utlösare för att utlösa en vanlig eller specifik (beteendemässig) händelse i Content Analytics:
 
 * Web SDK eller AppMeasurement skickar en händelse.
 * Synligheten ändras till dold, till exempel:

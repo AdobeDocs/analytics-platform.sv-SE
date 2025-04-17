@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,10 @@ Konfigurationen av Content Analytics består av följande steg:
 Innan du konfigurerar Content Analytics måste du kontrollera att följande krav uppfylls:
 
 * Du har angett användaragenten och IP-adressen som tillåtet för den funktionstjänst som används i Content Analytics. Den användaragentsträng som ska konfigureras är: <code>AdobeFeaturization/1.0</code>.
-* Om du har implementerat [Web SDK med Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} för vanlig beteendedatainsamling kontrollerar du att du använder standardnamnet <code>alloy</code> för Javascript-biblioteket.
+* Om du har implementerat [Web SDK med JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} för normal beteendedatainsamling måste du kontrollera att du använder standardnamnlegeringen <code>.</code> för JavaScript Library.
 * Du har en Customer Journey Analytics-produktadministratörsroll med de extra behörigheterna att hantera anslutningar och hantera datavyer.
-* Du måste ha [behörighet för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. Dessa tillstånd består av:
+* Om du funderar på att samla in Content Analytics-upplevelser ska du kontrollera att du har konfigurerat och uppdaterat [Content Analytics-versionshantering](manual.md#versioning) baserat på ändringar på dina webbsidor.
+* Du måste ha [behörighet för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}:
    * [Experience Platform-behörigheter](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
    * [Experience Platform Data Collection permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Du har noga övervägt följande viktiga konfigurationsalternativ:
