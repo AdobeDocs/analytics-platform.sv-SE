@@ -1,10 +1,10 @@
 ---
 title: Operatorer
-description: Bestäm hur en komponent interagerar med ett värde i ett filter.
+description: Bestäm hur en komponent interagerar med ett värde inom ett segment.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Med filterverktyget kan du jämföra och begränsa värden för komponenter med 
 
 ## Distinkta räkningsoperatorer
 
-Du kan filtrera på ett distinkt antal artiklar i en dimension. Du kan till exempel skapa filter för personer som har tittat på mer än fem olika produkter eller besök där mer än fem olika sidor har visats.
+Du kan segmentera ett visst antal artiklar i en dimension. Du kan till exempel skapa segment för personer som har tittat på mer än fem olika produkter eller besök där mer än fem olika sidor har visats.
 
 | Operator | Beskrivning |
 | --- | --- |

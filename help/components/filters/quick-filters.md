@@ -1,19 +1,19 @@
 ---
-description: Använd snabbfilter i Analysis Workspace för Customer Journey Analytics
-title: Snabbfilter
+description: Använd snabbsegment i Analysis Workspace för Customer Journey Analytics
+title: Snabbsegment
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
 
-# Snabbfilter
+# Snabbsegment
 
-Med snabbfilter kan du snabbt utforska data i ett Workspace-projekt utan att behöva skapa ett filter i [Filter Builder](/help/components/filters/create-filters.md).
+Med snabbsegment kan du snabbt utforska data i ett Workspace-projekt, utan att behöva skapa ett segment i [Segment Builder](/help/components/filters/create-filters.md).
 
 
 
@@ -24,46 +24,46 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Snabbsegment i An
 >[!ENDSHADEBOX]
 
 
-När du vill använda snabbfilter bör du tänka på följande:
+Observera följande när du vill använda snabbsegment:
 
-* Snabbfilter skapas direkt i ett Workspace-projekt. Det innebär att ett snabbfilter bara gäller för det Workspace-projekt där du skapar snabbfiltret. Snabbfiltren i ditt Workspace-projekt är inte tillgängliga i andra projekt och kan inte delas med andra användare.
-* Du kan bara ange tre villkor som en del av ett snabbfilter.
-* Snabbfilter stöder inte kapslade behållare eller sekventiella villkor.
-* Du kan redigera snabbfilter i ett delat Workspace-projekt. Andra användare kan alltså redigera snabbfiltren i ett Workspace-projekt som du har delat med dessa användare.
+* Snabbsegment skapas direkt i ett Workspace-projekt. Det innebär att ett snabbsegment bara gäller för det Workspace-projekt där du skapar snabbsegmentet. Snabbsegmenten i ditt Workspace-projekt är inte tillgängliga i andra projekt och kan inte delas med andra användare.
+* Du kan bara ange tre villkor som en del av ett snabbsegment.
+* Snabbsegment har inte stöd för kapslade behållare eller sekventiella villkor.
+* Du kan redigera snabbsegment i ett delat Workspace-projekt. Andra användare kan alltså redigera snabbsegmenten i ett Workspace-projekt som du har delat med dessa användare.
 
 ## Skapa
 
-Snabbfilter gäller för paneler. Du kan skapa ett eller flera snabbfilter för alla paneler i ditt Workspace-projekt. Alla användare i Analysis Workspace kan skapa snabbfilter.
+Snabbsegment gäller för paneler. Du kan skapa ett eller flera snabbsegment för alla paneler i ditt Workspace-projekt. Alla användare i Analysis Workspace kan skapa snabbsegment.
 
-Så här skapar du ett snabbfilter:
+Så här skapar du ett snabbsegment:
 
-* Välj ![FilterAdd](/help/assets/icons/FilterAdd.svg) längst upp på panelen. <br/>Redigera sedan filtret direkt i [snabbfilterverktyget](#quick-filter-builder).
-* Dra en komponent från komponentpanelen till filtersläppzonen i panelhuvudet. Håll pekaren över filtret när det tagits bort och välj ![Redigera](/help/assets/icons/Edit.svg) för att redigera filtret i [snabbfilterverktyget](#quick-filter-builder).
+* Välj ![SegmentAdd](/help/assets/icons/FilterAdd.svg) längst upp på panelen. <br/>Redigera sedan segmentet direkt i [snabbsegmentsverktyget](#quick-filter-builder).
+* Dra en komponent från komponentpanelen till segmentets släppzon i panelhuvudet. Håll markören över segmentet och välj ![Redigera](/help/assets/icons/Edit.svg) för att redigera segmentet i [snabbsegmentsverktyget](#quick-filter-builder) när det släppts.
 
-När du skapar ett snabbfilter med dra och släpp bör du tänka på följande:
+När du skapar ett snabbt segment med dra och släpp bör du tänka på följande:
 
-* Alla komponenttyper stöds inte. Beräknade mätvärden stöds inte, och endast mått och mätvärden som du kan använda för att skapa filter stöds.
-* För mått och måttkomponenter skapar [snabbfilterverktyget](#quick-filter-builder) automatiskt ett `exists` -villkor. Om du till exempel drar och släpper `City` skapas villkoret `City exists`.
-* För dimensionsvärden skapar [snabbfilterverktyget](#quick-filter-builder) automatiskt ett `equals`-villkor. Om du till exempel drar och släpper `amsterdam` från dimensionen `City` skapas villkoret `City equals amsterdam`.
-* Om du drar och släpper `unspecified` eller `none` skapar [snabbfilterverktyget](#quick-filter-builder) automatiskt ett `does not exist` -villkor.
+* Alla komponenttyper stöds inte. Beräknade mätvärden stöds inte, och endast mått och mätvärden från vilka du kan skapa segment stöds.
+* För mått och måttkomponenter skapar [snabbsegmentsverktyget](#quick-filter-builder) automatiskt ett `exists` -villkor. Om du till exempel drar och släpper `City` skapas villkoret `City exists`.
+* För dimensionsvärden skapar [snabbsegmentsverktyget](#quick-filter-builder) automatiskt ett `equals`-villkor. Om du till exempel drar och släpper `amsterdam` från dimensionen `City` skapas villkoret `City equals amsterdam`.
+* Om du drar och släpper `unspecified` eller `none` skapar [snabbsegmentsverktyget](#quick-filter-builder) automatiskt ett `does not exist`-villkor.
 
-Snabbfilter som du skapar visas högst upp på panelen. Snabbfilter har ett ljusblått tunt fält till vänster. När ett snabbfilter är i redigeringsläge med hjälp av [snabbfilterverktyget](#quick-filter-builder) är bakgrunden i snabbfiltret ljusblå.
+Snabbsegment som du skapar visas högst upp på panelen. Snabbsegment har ett ljusblått tunt fält till vänster. När ett snabbsegment är i redigeringsläge med hjälp av [snabbsegmentsverktyget](#quick-filter-builder) är bakgrunden i snabbsegmentet ljusblå.
 
-Resultatet av de snabbfilter du skapar på en panel används (med AND-logik) på alla visualiseringar som är en del av panelen.
+Resultatet av de snabbsegment du skapar på en panel används (med AND-logik) på alla visualiseringar som är en del av panelen.
 
 
 ## Hantera
 
-Håll pekaren över **[!UICONTROL Quick filter]** om du vill hantera ett snabbfilter.
+Håll pekaren över **[!UICONTROL Quick segment]** om du vill hantera ett snabbsegment.
 
-* Välj ![Redigera](/help/assets/icons/Edit.svg) för att öppna [snabbfilterverktyget](#quick-filter-builder) och redigera snabbfiltret.
-* Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) för att öppna ett popup-fönster. I popup-fönstret visas information om filtret. Du kan välja **[!UICONTROL Make available to all projects and add to your component list]** om du vill lägga till filtret i komponentlistan ![Filter](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** på komponentpanelen. Du ser en **[!UICONTROL Save quick filter]**-dialogruta där du uppmanas att ange ett namn för filtret. Välj **[!UICONTROL Save]** om du vill fortsätta. [!UICONTROL Quick filter] blir en **[!UICONTROL Filter]**. Du kan inte längre redigera filtret med [snabbfilterverktyget](#quick-filter-builder). I stället måste du redigera filtret som ett vanligt filter med hjälp av [filterverktyget](filter-builder.md).
+* Välj ![Redigera](/help/assets/icons/Edit.svg) för att öppna [snabbsegmentsverktyget](#quick-filter-builder) och redigera snabbsegmentet.
+* Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) för att öppna ett popup-fönster. I popup-fönstret visas information om filtret. Du kan välja **[!UICONTROL Make available to all projects and add to your component list]** om du vill lägga till segmentet i komponentlistan ![ Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** på komponentpanelen. Du ser en **[!UICONTROL Save quick segment]**-dialogruta där du uppmanas att ange ett namn för segmentet. Välj **[!UICONTROL Save]** om du vill fortsätta. [!UICONTROL Quick segment] blir en **[!UICONTROL Segment]**. Du kan inte längre redigera segmentet med [snabbsegmentsverktyget](#quick-filter-builder). I stället måste du redigera segmentet som ett vanligt segment med hjälp av [segmentverktyget](filter-builder.md).
 
-## Snabbfilterverktyg
+## Bygg snabbt segment
 
-Nedan finns ett exempel på verktyget Snabbfilter. I exemplet öppnas verktyget för ett snabbfilter med namnet `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Båda snabbfiltren längst upp gäller panelen [!UICONTROL Average Order Value Dashboard] och alla visualiseringar i den, till exempel friformstabellen [!UICONTROL Average Order Value Per Country].
+Nedan finns ett exempel på snabbsegmentsverktyget. I exemplet öppnas verktyget för ett snabbfilter med namnet `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Båda snabbfiltren längst upp gäller panelen [!UICONTROL Average Order Value Dashboard] och alla visualiseringar i den, till exempel friformstabellen [!UICONTROL Average Order Value Per Country].
 
-![Snabbfilterverktyg](assets/quick-filter-builder.png)
+![Skapa snabbsegment](assets/quick-filter-builder.png)
 
 Snabbfilterverktyget består av följande områden och knappar.
 

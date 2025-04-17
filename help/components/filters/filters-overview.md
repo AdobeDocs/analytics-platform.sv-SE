@@ -1,20 +1,20 @@
 ---
-title: Översikt över filter
-description: Förstå vilka filter som används för och hur du skapar ett enkelt filter.
+title: Översikt över segment
+description: Förstå vilka segment som används för och hur du skapar ett enkelt segment.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
 
 
-# Översikt över filter
+# Översikt över segment
 
-Med Customer Journey Analytics kan ni skapa, hantera, dela och lägga på kraftfulla filter för riktade målgrupper i era rapporter. Med filter kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
+Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter. Med filter kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
 
 Filter kan baseras på:
 
@@ -24,60 +24,60 @@ Filter kan baseras på:
 - anpassade variabler (formulärfält, definierade kategorier, kund-ID),
 - och andra kriterier.
 
-Se [Skapa filter](/help/components/filters/create-filters.md) för olika alternativ för att skapa filter. Sedan skapar, ändrar och sparar du definitionen av ett filter i [filterverktyget](filter-builder.md). Du kan också skapa snabbfilter med hjälp av [snabbfilterverktyget](quick-filters.md). Du kan också generera filter från visualiseringar i Workspace, till exempel med hjälp av visualiseringen [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) .
+Se [Skapa segment](/help/components/filters/create-filters.md) för de olika alternativ som finns för att skapa segment. Sedan skapar, ändrar och sparar du definitionen av ett segment i [segmentbyggaren](filter-builder.md). Du kan också skapa snabbsegment med hjälp av [snabbsegmentsverktyget](quick-filters.md). Du kan också generera segment från visualiseringar i Workspace, till exempel med hjälp av visualiseringen [Utfall](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) .
 
-Du använder [filterhanteraren](manage-filters.md) för att hantera filter.
+Du använder [segmenthanteraren](manage-filters.md) för att hantera segment.
 
-## Planfilter
+## Planera segment
 
-I synnerhet som administratör ökar den korrekta planeringen av filter riskerna för att filtren används. Tänk på följande när du planerar filter:
+I synnerhet som administratör förbättrar den korrekta planeringen av segment chanserna att segmenten används. Tänk på följande när du planerar segment:
 
-- **Målgrupp**: Vem använder dina filter? Se till att du anger en bra filterbeskrivning så att läsarna förstår:
-   - Vad är det här filtret användbart för?
+- **Målgrupp**: Vilka ska använda era segment? Se till att ni ger en bra segmentbeskrivning så att målgruppen förstår:
+   - Vad är det här segmentet användbart för?
 
-   - När ska jag använda det här filtret?
+   - När ska jag använda det här segmentet?
 
-- **Omfång**: Vilken [Filterbehållare](#filter-containers) är bäst för de data du är ute efter? Använd den minsta möjliga behållaren.
+- **Omfång**: Vilken [segmentbehållare](#filter-containers) är bäst för de data du är ute efter? Använd den minsta möjliga behållaren.
 
-- **Komponenter**: Bestäm vilka komponenter som ska inkluderas i filterdefinitionen och mot vilka värden villkoren ska validera.
+- **Komponenter**: Bestäm vilka komponenter som ska inkluderas i segmentdefinitionen och mot vilka värden villkoren ska validera.
 
-- **Process**: Överväg en godkännandeprocess för filtret. Det finns inget arbetsflöde för godkännande i Customer Journey Analytics, men du kan fortfarande ordna en process för att avgöra om du godkänner ett filter eller inte.
+- **Process**: Överväg en godkännandeprocess för dina segment. Det finns inget arbetsflöde för godkännande i Customer Journey Analytics, men du kan fortfarande organisera en process för att avgöra om du godkänner ett segment eller inte.
 
-- **Modularitet**: Definiera filter med modularitet i åtanke. Användarna av dina filter kan enkelt [stapla filter](filter-builder.md#stack-filters) för att skapa kraftfulla nya filter.
+- **Modularitet**: Definiera segment med modularitet i åtanke. Användarna av dina segment bör enkelt kunna [stapla segment](filter-builder.md#stack-filters) för att skapa kraftfulla nya segment.
 
 
-## Filtertyper
+## Segmenttyper
 
-Du kan skapa tre typer av filter:
+Du kan skapa tre typer av segment:
 
-### Snabbfilter
+### Snabbsegment
 
-Med snabbfilter kan du enkelt utforska data i ett visst Workspace-projekt, utan att behöva skapa ett filter i [Filter Builder](/help/components/filters/create-filters.md). Du definierar filtret direkt i Workspace gränssnitt. Mer information finns i [Snabbfilter](quick-filters.md).
+Med snabbsegment kan du enkelt utforska data i ett visst Workspace-projekt, utan att behöva skapa ett segment i [Segment Builder](/help/components/filters/create-filters.md). Du definierar segmentet direkt i Workspace gränssnitt. Mer information finns i [Snabbsegment](quick-filters.md).
 
-### Vanliga filter
+### Vanliga segment
 
-Med hjälp av regelbundna filter kan du identifiera data (personer, sessioner, händelser) baserat på ett eller flera villkor. Om det finns fler än ett villkor använder du logiska operatorer som And och Eller för att definiera filtret ytterligare. Du kan använda behållare för att gruppera villkor och skapa mer komplexa filter. Mer information finns i [Filterverktyget](filter-builder.md).
+Med vanliga segment kan du identifiera data (personer, sessioner, händelser) baserat på ett eller flera villkor. Om du har fler än ett villkor använder du logiska operatorer som And och Eller för att definiera segmentet ytterligare. Du kan använda behållare för att gruppera villkor och skapa mer komplexa segment. Mer information finns i [Segmentverktyget](filter-builder.md).
 
-### Sekventiella filter
+### Sekventiella segment
 
 >[!IMPORTANT]
 >
->Du måste ha paketet **Select** för att kunna skapa sekventiella filter för flera kanaler. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
+>Du måste ha paketet **Select** för att kunna skapa sekventiella flerkanalssegment. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
 
-Med sekventiella filter kan du identifiera data (personer, sessioner, händelser) baserat på navigering (sidvisningar på hela webbplatsen, interaktioner med scener i mobilappen eller med en meny i en digitalbox). Med sekventiella filter kan du till exempel identifiera vad en person gillar och vad en person undviker. Använd sedan den logiska operatorn för att definiera ett sekventiellt filter. Mer information finns i [Sekventiella filter](seg-sequential-build.md).
+Med sekventiella segment kan du identifiera data (personer, sessioner, händelser) baserat på navigering (sidvisningar på hela webbplatsen, interaktioner med scener i mobilappen eller med en meny i en digitalbox). Med hjälp av sekventiella segment kan du till exempel identifiera vad en person gillar och vad en person undviker. Du använder operatorn Sedan för att definiera ett sekventiellt segment. Mer information finns i [Sekventiella segment](seg-sequential-build.md).
 
 
 <!--
-An example of a complex sequential filter if you want to find the persons that 
+An example of a complex sequential segment if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
 | The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
 -->
 
-## Filterbehållare {#containers}
+## Segmentbehållare {#containers}
 
-Filter baseras på en hierarki på person-, session- och händelsenivå med hjälp av en kapslad behållarmodell. Med de kapslade behållarna kan du definiera villkor mellan och inuti behållarna.
+Segmenten baseras på hierarkin på person-, session- och händelsenivå med hjälp av en kapslad behållarmodell. Med de kapslade behållarna kan du definiera villkor mellan och inuti behållarna.
 
 
 <table style="table-layout: fixed; border: none;" width="100%">
@@ -107,13 +107,13 @@ Filter baseras på en hierarki på person-, session- och händelsenivå med hjä
 > - **Event**-behållaren kallas i Adobe Analytics för **Hit**-behållaren.
 >
 
-Ett filter anger villkor för att filtrera personer, sessioner eller händelser baserat på villkor. Exempel: villkor för att filtrera personer baserat på personegenskaper och navigeringsegenskaper. Om du vill dela upp data ytterligare kan du filtrera efter specifika sessioner, sidvisningshändelser, skärmtapp, menyval i en digitalbox med mera. Men filtrera också på attribut som du har inhämtat från ett CRM- eller lojalitetssystem. [Filterverktyget](/help/components/filters/filter-builder.md) innehåller ett enkelt gränssnitt för att skapa dessa delmängder och tillämpa villkor i kapslade, hierarkiska person-, session- eller händelsebehållare.
+Ett segment ställer in villkor för att segmentera personer, sessioner eller händelser baserat på villkor. Exempelvis baseras villkoren för att segmentera personer på personegenskaper och navigeringsegenskaper. Om du vill dela upp data ytterligare kan du segmentera särskilda sessioner, sidvisningshändelser, skärmtryck, menyval i en digitalbox med mera. Du kan även segmentera attribut som du har inhämtat från ett CRM- eller lojalitetssystem. [Segmentbyggaren](/help/components/filters/filter-builder.md) har ett enkelt gränssnitt för att skapa dessa delmängder och tillämpa villkor i kapslade, hierarkiska person-, session- eller händelsebehållare.
 
-Behållararkitekturen som används i [filterverktyget](/help/components/filters/filter-builder.md) definierar Person som den yttersta behållaren. Behållaren innehåller översiktsdata som är specifika för personen i olika sessioner och händelser, som sidvisningar, mobilprogramskärmar eller menyskärmar i en digitalbox. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner. Med en kapslad händelsebehållare kan du dela upp personinformation baserat på individuella interaktioner. Med varje behållare kan du rapportera över en persons historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
+Behållararkitekturen som används i [Segmentbyggaren](/help/components/filters/filter-builder.md) definierar Person som den yttersta behållaren. Den här behållaren innehåller översiktsdata som är specifika för personen i olika sessioner och händelser, som sidvisningar, mobilprogramskärmar eller menyskärmar i en digitalbox. Med en kapslad sessionsbehållare kan du ange regler för att dela upp persondata baserat på sessioner. Med en kapslad händelsebehållare kan du dela upp personinformation baserat på individuella interaktioner. Med varje behållare kan du rapportera över en persons historik, interaktioner uppdelade efter sessioner eller dela upp enskilda händelser.
 
 ### Personbehållare
 
-Personbehållaren innehåller alla sessioner och alla händelser för de personer som uppfyller villkoren som anges i behållaren. När du definierar ett filter med ett enkelt villkor som `Page Name equals Checkout` tolkas personbehållaren till:
+Personbehållaren innehåller alla sessioner och alla händelser för de personer som uppfyller villkoren som anges i behållaren. När du definierar ett segment med ett enkelt villkor som `Page Name equals Checkout` tolkas personbehållaren till:
 
 - Alla personer som har besökt sidan med namnet `Checkout`.
 - Alla sessioner för dessa personer.
@@ -128,7 +128,7 @@ Personbehållare kan innehålla värden som baseras på en persons övergripande
 
 ### Sessionsbehållare
 
-Med sessionsbehållaren kan du identifiera sidinteraktioner eller mobilappsinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar upp beteenden för hela sessionen när regeln har uppfyllts. Med sessionsbehållaren kan du också definiera vilka sessioner som du vill inkludera eller exkludera när du skapar och använder ett filter.  När du definierar ett filter med ett enkelt villkor som `Page Name equals Checkout` tolkas sessionsbehållaren som:
+Med sessionsbehållaren kan du identifiera sidinteraktioner eller mobilappsinteraktioner, kampanjer eller konverteringar för en viss session. Sessionsbehållaren är den vanligaste behållaren eftersom den fångar upp beteenden för hela sessionen när regeln har uppfyllts. Med sessionsbehållaren kan du också definiera vilka sessioner du vill inkludera eller exkludera när du skapar och använder ett segment.  När du definierar ett segment med ett enkelt villkor som `Page Name equals Checkout` tolkas sessionsbehållaren som:
 
 - Alla sessioner där en sida med namnet `Checkout` besöktes.
 - Alla händelsedata för dessa sessioner.
@@ -150,7 +150,7 @@ Med datavyer i Customer Journey Analytics kan du bestämma hur länge en session
 
 ### Händelsebehållare
 
-Händelsebehållaren definierar vilken sida, vilket mobilprogram eller annan typ av händelser som du vill inkludera eller exkludera från ett filter. Det är det smalaste av de tillgängliga behållarna så att du kan identifiera specifika klick, sidvy och knapp i en mobilapp där ett villkor är uppfyllt. Med händelsebehållaren kan du visa en enskild spårningskod eller isolera beteenden inom ett visst område i din mobilapp. Du kanske också vill hitta ett specifikt värde när en åtgärd inträffar, till exempel marknadsföringskanalen när en beställning har gjorts. När du definierar ett filter med ett enkelt villkor som `Page Name equals Checkout` tolkas händelsebehållaren till:
+Händelsebehållaren definierar vilken sida, vilket mobilprogram eller annan typ av händelser som du vill inkludera eller exkludera från ett segment. Det är den smalaste av de tillgängliga behållarna. Du kan identifiera specifika klick, sidvy och knapp i en mobilapp där ett villkor är uppfyllt. Med händelsebehållaren kan du visa en enskild spårningskod eller isolera beteenden inom ett visst område i din mobilapp. Du kanske också vill hitta ett specifikt värde när en åtgärd inträffar, till exempel marknadsföringskanalen när en beställning har gjorts. När du definierar ett segment med ett enkelt villkor som `Page Name equals Checkout` tolkas händelsebehållaren till:
 
 - Alla sidvyhändelser där sidnamnet är lika med `Checkout`.
 
@@ -164,19 +164,19 @@ Händelsebehållare innehåller värdebaserade, enkelsidiga uppdelningar för:
 
 ### Behållare för logikgrupp
 
-Med Logic Group kan du gruppera villkor i en enda sekventiell filterkontrollpunkt. Som en del av sekvensen utvärderas logiken som definieras i behållaren som identifieras som [!UICONTROL Logic Group] efter en sekventiell kontrollpunkt och före efterföljande kontrollpunkter. Mer information finns i [Logikgrupp](seg-sequential-build.md#logic-group).
+Med Logic Group kan du gruppera villkor i en enda kontrollpunkt för sekventiella segment. Som en del av sekvensen utvärderas logiken som definieras i behållaren som identifieras som [!UICONTROL Logic Group] efter en sekventiell kontrollpunkt och före efterföljande kontrollpunkter. Mer information finns i [Logikgrupp](seg-sequential-build.md#logic-group).
 
 ### Kapslade behållare
 
-När du skapar behållare i andra behållare skapar du i själva verket ett filter i ett filter. Följande logik används för kapslade behållare:
+När du skapar behållare i andra behållare skapar du i själva verket ett segment i ett segment. Följande logik används för kapslade behållare:
 
 1. Avgör vilka data som ska inkluderas med den yttersta behållaren. Alla data som inte matchar den här yttre regeln tas bort i rapporten.
-2. Använd den kapslade filterdefinitionen på återstående data. Den kapslade filterdefinitionen gäller INTE för data som den första definitionen ignorerade.
-3. Upprepa tills alla definitioner för kapslade behållarfilter har beräknats. Resterande data inkluderas sedan i resultatet och används för rapportering.
+2. Använd den kapslade segmentdefinitionen på återstående data. Den kapslade segmentdefinitionen gäller INTE för data som den första definitionen ignorerade.
+3. Upprepa tills alla segmentdefinitioner för kapslade behållare har beräknats. Resterande data inkluderas sedan i resultatet och används för rapportering.
 
 >[!NOTE]
 >
->När du kapslar in ett filter i ett filter (du t.ex. drar ett filter från panelen Komponenter till filterdefinitionen) skapas en behållare med en kopia (inte en referens) av filterdefinitionen som dras.
+>När du kapslar in ett segment i ett segment (du t.ex. drar ett segment från panelen Komponenter till segmentdefinitionen) skapas en behållare med en kopia (inte en referens) av segmentdefinitionen som dras.
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
@@ -187,20 +187,20 @@ You can use nesting between containers and between conditions within a container
 | Session | Session
 
 
-## Out-of-the-box filter template {#template}
+## Out-of-the-box segment template {#template}
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
 | Filter Name | Description |
 | --- | --- |
-| All Data | All Data is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+| All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->
 
 >[!MORELIKETHIS]
 >
->[Skapa filter](create-filters.md)
->[Filterverktyget](filter-builder.md)
->[Snabbfilter](quick-filters.md)
->[Sekventiella filter](seg-sequential-build.md)
->[Hantera filter](manage-filters.md)
+>[Skapa segment](create-filters.md)
+>[Segmentbyggare](filter-builder.md)
+>[Snabbsegment ](quick-filters.md)
+>[Sekventiella segment ](seg-sequential-build.md)
+>[Hantera segment ](manage-filters.md)
 >
