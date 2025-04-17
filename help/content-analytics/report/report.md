@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: b4325135ec05737a75027ded70e96f599eb0220c
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
@@ -18,16 +18,16 @@ ht-degree: 0%
 
 Du rapporterar, gör analyser och får insikter om Content Analytics inom [Analysis Workspace](/help/analysis-workspace/home.md). En specifik Workspace [mall](#template) finns tillgänglig, så du kan omedelbart komma åt ett förifyllt Workspace-projekt med relevanta innehållsinsikter.
 
-Så här börjar du rapportera om innehållsanalys från grunden:
+Så här börjar du rapportera om Content Analytics från grunden:
 
 1. [Skapa ett nytt](/help/analysis-workspace/build-workspace-project/create-projects.md) eller [öppna ett befintligt](/help/analysis-workspace/build-workspace-project/open-projects.md)-projekt i Workspace.
 1. Se till att du [väljer en datavy](/help/analysis-workspace/c-panels/panels.md#data-view) för Content Analytics-rapportering. Content Analytics-rapportering är bara tillgängligt för datavyer som är [konfigurerade](/help/content-analytics/config/configuration.md) för Content Analytics.
 1. Dra en ![tabellvisualisering](/help/assets/icons/Table.svg) [Frihandsritabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) på arbetsytan.
-1. Använd [specifika komponenter för innehållsanalys](components.md) och andra generiska [komponenter](/help/components/overview.md) (som filter, datumintervall, anteckningar) för att skapa insikter för innehållsanalyser.
+1. Använd [specifika Content Analytics-komponenter](components.md) och andra generiska [komponenter](/help/components/overview.md) (som segment, datumintervall, anteckningar) för att skapa insikter i innehållsanalysen.
 
 ## Miniatyrbilder
 
-Baserat på de dimensioner av innehållsanalysen som du använder i ditt projekt visas miniatyrbilder för resurser och dimensioner.
+Baserat på de Content Analytics-specifika dimensioner du använder i ditt projekt visas miniatyrbilder för resurser och dimensioner.
 
 ![Miniatyrbilder för innehållsanalys](../assets/aca-thumbnails.png)
 
@@ -48,7 +48,7 @@ Så här öppnar du förhandsgranskningen med följande information:
 
   | Förhandsgranska upplevelse | Förhandsgranska resurs |
   |---|---|
-  | ![Förhandsgranskning av upplevelse av innehållsanalys](../assets/aca-experience-preview.png) | ![Förhandsgranskning av innehållsanalysresurser](../assets/aca-asset-preview.png) |
+  | ![Content Analytics Experience Preview](../assets/aca-experience-preview.png) | ![Content Analytics Asset Preview](../assets/aca-asset-preview.png) |
   | Dimensionens namn (till exempel **[!UICONTROL Experience ID])** | Namn på resursdimensionen (till exempel **[!UICONTROL Asset ID])** |
   | **[!UICONTROL Impressions (all time)]**: Antal visningar för upplevelsen. | **[!UICONTROL Impressions (all times)]**: Antal visningar för resursen. |
   | **[!UICONTROL Assets]**: Antal resurser som den här upplevelsen innehåller. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. | **[!UICONTROL Experiences]**: Antal upplevelser där den här resursen visas. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. |
@@ -67,7 +67,7 @@ Så här använder du mallen:
 
 1. Välj **[!UICONTROL Workspace]** på huvudmenyn.
 1. Kontrollera att du har valt en datavy som är konfigurerad för Content Analytics.
-1. Sök efter eller använd filter (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**s) för att hitta och välja mallen **[!UICONTROL Content analytics]**.
+1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**s) för att hitta och välja mallen **[!UICONTROL Content analytics]**.
 1. Välj **[!UICONTROL Use template]**.
 1. I dialogrutan **[!UICONTROL Set up your template]** väljer du ett mått i dialogrutan **[!UICONTROL Select a conversion metric]**. Exempel: **[!UICONTROL Asset CTR]**.
 1. Välj **[!UICONTROL Continue]**.

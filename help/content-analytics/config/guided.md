@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: e79094d974e4e91b044611f997c0e4215487d74f
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
@@ -138,7 +138,7 @@ Din konfiguration kräver att du väljer en [datavy](/help/data-views/data-views
    Du kan utföra följande åtgärder:
 
    * Om du vill söka efter en viss datavy använder du fältet ![Sök](/help/assets/icons/Search.svg).
-   * Om du vill filtrera listan med tillgängliga datavyer väljer du ![Visa filter](/help/assets/icons/Filter.svg). Du kan filtrera listan på [!UICONTROL Connection], [!UICONTROL Owner] och [!UICONTROL Sandbox].<br/>Använd ![Dölj](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** för att dölja filterrutan.
+   * Om du vill segmentera listan med tillgängliga datavyer väljer du ![Visa segment](/help/assets/icons/Filter.svg). Du kan segmentera listan på [!UICONTROL Connection], [!UICONTROL Owner] och [!UICONTROL Sandbox].<br/>Använd ![Dölj](/help/assets/icons/Filter.svg) **[!UICONTROL Hide segments]** för att dölja segmentrutan.
    * Om du vill definiera vilka kolumner som ska visas i tabellen väljer du ![Kolumninställningar](/help/assets/icons/ColumnSetting.svg). Välj vilka kolumner som ska visas i dialogrutan **[!UICONTROL Customize table]** och välj **[!UICONTROL Apply]** för att tillämpa ändringarna.
 
 1. Välj ![SelectBox](/help/assets/icons/SelectBox.svg) för datavyn som du vill använda.
@@ -229,7 +229,7 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
    * Processen som genererar upplevelseattribut från Content Analytics händelsedata
    * Rapporteringsmallen i Customer Journey Analytics.
 
-* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för datainsamling ytterligare för upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) i taggegenskapen som är associerad med den aktuella konfigurationen.
+* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för datainsamling ytterligare för upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) i taggegenskapen som är associerad med den aktuella konfigurationen.
 
 
 ### Datainsamling {#onboarding-data-collection}
@@ -324,9 +324,9 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
 
 För en befintlig konfiguration kan du inte redigera taggegenskapen. Du kan dock redigera sidor och resurser som ska inkluderas eller exkluderas.
 
-* Om du vill redigera vilka sidor som ska inkluderas eller exkluderas när du samlar in data för innehållsanalys väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Experience]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket så att sidor tas med eller utesluts. Kontrollera att du [publicerar](#publish) dina ändringar.
+* Om du vill redigera vilka sidor som ska inkluderas eller exkluderas när du samlar in data för innehållsanalys väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Experience]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket så att sidor tas med eller utesluts. Kontrollera att du [publicerar](#publish) dina ändringar.
 
-* Om du vill redigera vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Asset]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket för att inkludera eller exkludera resurser. Kontrollera att du [publicerar](#publish) dina ändringar.
+* Om du vill redigera vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Asset]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket för att inkludera eller exkludera resurser. Kontrollera att du [publicerar](#publish) dina ändringar.
 
 ### Sammanfattning {#summary}
 

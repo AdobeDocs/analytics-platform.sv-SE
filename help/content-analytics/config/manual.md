@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -56,9 +56,9 @@ Du använder [Adobe Content Analytics-tillägget](https://experienceleague.adobe
 
   Du kan aktivera eller inaktivera upplevelser och redigera kombinationer av reguljära uttryck och frågeparametrar för att avgöra hur innehåll återges på webbplatsen.
 
-* [Händelsefiltrering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
+* [Händelsesegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
-  Du kan redigera reguljära uttryck för att ändra hur du filtrerar sidor och resurser.
+  Du kan redigera reguljära uttryck för att ändra hur du segmenterar sidor och resurser.
 
 
 När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar du att du använder [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} för att starta datainsamlingen baserat på de ändringar du har gjort.

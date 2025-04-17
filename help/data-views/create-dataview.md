@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2010'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Det här avsnittet visas bara för administratörer som har etablerats med Journ
 
 ### Behållare
 
-Anger namnet på behållare för datavyn. Behållarnamn används ofta i [filter](/help/components/filters/filters-overview.md#Filter-containers).
+Anger namnet på behållare för datavyn. Behållarnamn används ofta i [segment](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -185,13 +185,13 @@ Du kan filtrera ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow
 ## Inställningar
 
 1. Välj fliken **[!UICONTROL Settings]**.
-1. Konfigurera filter som ska användas i hela datavyn. Se [Inställningar (filter)](#settings-filters) nedan.
+1. Konfigurera segment som ska användas i hela datavyn. Se [Inställningar (segment)](#settings-filters) nedan.
 1. Konfigurera timeout och mått för sessioner. Se [Sessionsinställningar](#session-settings) nedan.
 1. Välj **[!UICONTROL Save and continue]** om du vill fortsätta konfigurera den nya eller befintliga datavyn. Välj **[!UICONTROL Save]** om du vill spara konfigurationen för den befintliga datavyn.
 
-### Inställningar (filter)
+### Inställningar (segment)
 
-Du kan lägga till filter som gäller för en hel datavy. Det här filtret tillämpas på alla rapporter som du kör i Workspace. Dra ett filter från listan till vänster till fältet [!UICONTROL Add filters].
+Du kan lägga till segment som gäller för en hel datavy. Det här segmentet tillämpas på alla rapporter som du kör i Workspace. Dra ett segment från listan till vänster till fältet [!UICONTROL Add segments].
 
 ### Sessionsinställningar
 

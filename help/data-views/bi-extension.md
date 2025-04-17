@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 2f9cfc3fc7edaa21175d44dfb3f9bface5cf0d81
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '3188'
 ht-degree: 0%
@@ -519,7 +519,7 @@ På grund av den underliggande karaktären hos hur Customer Journey Analytics fu
 
 #### Villkorliga mått
 
-Du kan bädda in en `IF`- eller `CASE`-sats i funktionerna `SUM` eller `COUNT` för att lägga till ytterligare filtrering som är specifik för ett markerat mätresultat. Att lägga till dessa satser liknar att tillämpa ett filter på en måttkolumn i en Workspace-rapporttabell.
+Du kan bädda in en `IF`- eller `CASE`-sats i funktionerna `SUM` eller `COUNT` för att lägga till ytterligare segmentering som är specifik för ett valt mätresultat. Att lägga till dessa satser liknar att tillämpa ett segment i en måttkolumn i en Workspace-rapporttabell.
 
 Exempel:
 
@@ -556,26 +556,26 @@ Specialkolumnen `timestamp` används för att ange datumintervall för frågan. 
 * Om bara ett max anges (`timestamp < X` eller `timestamp <= X`) är intervallet från X minus 30 dagar till X.
 * Om inget anges är intervallet från och med nu minus 30 dagar.
 
-Tidsstämpelintervallet konverteras till ett globalt datumintervallfilter i RankedRequest.
+Tidsstämpelintervallet konverteras till ett globalt datumintervall i RankedRequest.
 Tidsstämpelfältet kan också användas i datum/tid-funktioner för att analysera eller korta av händelsens tidsstämpel.
 
 #### Datumintervall
 
-Specialkolumnen `daterange` fungerar på ungefär samma sätt som `timestamp`, men filtreringen är begränsad till fullständiga dagar. `daterange` är också valfritt och har samma standardvärden som `timestamp`.
+Specialkolumnen `daterange` fungerar på ungefär samma sätt som `timestamp`, men segmenteringen är begränsad till fullständiga dagar. `daterange` är också valfritt och har samma standardvärden som `timestamp`.
 Fältet `daterange` kan också användas i datum/tid-funktioner för att analysera eller korta av händelsedatumet.
 
-Specialkolumnen `daterangeName` kan användas för att filtrera frågan med ett namngivet datumintervall som `Last Quarter`.
+Specialkolumnen `daterangeName` kan användas för att segmentera frågan med ett namngivet datumintervall som `Last Quarter`.
 
 >[!NOTE]
 >
 >Power BI stöder inte `daterange`-mått som är mindre än en dag (timme, 30 minuter, 5 minuter osv.).
 >
 
-#### Filter-ID
+#### Segment-ID
 
-Specialkolumnen `filterId` är valfri och används för att tillämpa ett externt definierat filter på frågan. Att använda ett externt definierat filter på en fråga liknar att dra ett filter på en panel i Workspace. Flera filter-ID:n kan användas av `AND`.
+Specialkolumnen `filterId` är valfri och används för att tillämpa ett externt definierat segment på frågan. Att använda ett externt definierat segment i en fråga liknar att dra ett segment på en panel i Workspace. Flera segment-ID:n kan användas av `AND`.
 
-Tillsammans med `filterId` kan du använda `filterName` för att använda ett filternamn i stället för ID.
+Tillsammans med `filterId` kan du använda `filterName` för att använda ett segmentnamn i stället för ett ID.
 
 ### Where-sats
 
@@ -583,11 +583,11 @@ Satsen `WHERE` hanteras i tre steg:
 
 1. Hitta datumintervallet från specialfälten `timestamp`, `daterange` eller `daterangeName`.
 
-1. Sök efter externt definierade `filterId` eller `filterName` som ska inkluderas i filtreringen.
+1. Sök efter externt definierade `filterId` eller `filterName` som ska inkluderas i segmentet.
 
-1. Omvandla de återstående uttrycken till ad hoc-filter.
+1. Omvandla de återstående uttrycken till ad hoc-segment.
 
-Hanteringen görs genom att tolka den första nivån på `AND` i `WHERE` -satsen. Varje `AND`-ed-uttryck på den översta nivån måste matcha något av ovanstående. Allt som är större än den första nivån i `AND` eller, om `WHERE`-satsen använder `OR` på den översta nivån, hanteras som ett ad hoc-filter.
+Hanteringen görs genom att tolka den första nivån på `AND` i `WHERE` -satsen. Varje `AND`-ed-uttryck på den översta nivån måste matcha något av ovanstående. Allt som är större än den första nivån i `AND` eller, om `WHERE`-satsen använder `OR` på den översta nivån, hanteras som ett ad hoc-segment.
 
 ### Sorteringsordning
 

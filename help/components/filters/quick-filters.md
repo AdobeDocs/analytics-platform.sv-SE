@@ -4,7 +4,7 @@ title: Snabbsegment
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 0%
@@ -65,18 +65,18 @@ Nedan finns ett exempel på snabbsegmentsverktyget. I exemplet öppnas verktyget
 
 ![Skapa snabbsegment](assets/quick-filter-builder.png)
 
-Snabbfilterverktyget består av följande områden och knappar.
+Snabbsegmentsverktyget består av följande områden och knappar.
 
 ### Sidhuvudsområde
 
-Rubrikområdet bestämmer snabbfiltrets namn, typ och omfattning. Den visar också en visuell information om resultatet av snabbfiltret.
+Rubrikområdet bestämmer snabbsegmentets namn, typ och omfång. Den visar också en visuell information om resultatet av snabbsegmentet.
 
 | Element | Beskrivning |
 |---|---|
-| **[!UICONTROL Name]** | Namnet hämtas automatiskt från snabbfilterdefinitionen. |
-| **[!UICONTROL People]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Förhandsgranska visuella data från snabbfiltret. En stapel och ett procenttal ger insikt i hur mycket av de totala data som är en del av resultatet av snabbfiltret. En röd ![varning](/help/assets/icons/Alert.svg) signalerar att snabbfiltret inte returnerar data. |
-| **[!UICONTROL Include]**<br/>**[!UICONTROL Exclude]** | Välj i listrutan ![SparronDown](/help/assets/icons/ChevronDown.svg) om du vill inkludera eller exkludera resultaten av snabbfiltret från data på panelen. |
-| **[!UICONTROL Event]**<br/>**[!UICONTROL Session]**<br/>**[!UICONTROL Person]** | Välj snabbfiltrets omfång i listrutan ![SparronDown](/help/assets/icons/ChevronDown.svg). |
+| **[!UICONTROL Name]** | Namnet hämtas automatiskt från snabbsegmentsdefinitionen. |
+| **[!UICONTROL People]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Förhandsvisa visuella data som är resultatet av snabbsegmentet. En stapel och ett procenttal ger insikt i hur mycket av de totala data som är en del av resultatet av snabbsegmentet. En röd ![varning](/help/assets/icons/Alert.svg) signalerar att snabbsegmentet inte returnerar data. |
+| **[!UICONTROL Include]**<br/>**[!UICONTROL Exclude]** | Välj i listrutan ![ChevronDown](/help/assets/icons/ChevronDown.svg) om du vill ta med eller exkludera resultatet av snabbsegmentet från data på panelen. |
+| **[!UICONTROL Event]**<br/>**[!UICONTROL Session]**<br/>**[!UICONTROL Person]** | I listrutan ![SparronDown](/help/assets/icons/ChevronDown.svg) väljer du snabbsegmentets omfång. |
 
 ### Villkorsområde
 
@@ -88,25 +88,25 @@ Villkorsområdet anger villkoren (upp till högst tre). För varje villkor kan d
 | **[!UICONTROL *komponent *]** | Komponentfältet för villkoret. Du kan [!UICONTROL *Typ om du vill lägga till*] en komponent, markera en komponent i listan eller dra och släppa en komponent från komponentpanelen. Du kan bara släppa liknande komponenter i komponentfältet för villkoret. Du kan t.ex. bara släppa en dimensionskomponent från komponentpanelen på ett dimensionsvillkor. <br/>Du kan också dra och släppa för att ersätta en befintlig komponent.<br/>Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort komponenten från komponentfältet. |
 | **[!UICONTROL *operator *]** | Komponentens operator. Mer information finns i [Operatorer](operators.md). Endast tillgängligt för mått och mätvärden. |
 | **[!UICONTROL *värde *]** | Värdet för villkoret. Beroende på vilken operator som är vald kan värdet väljas från en lista eller så anger du ett värde. |
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Välj det här alternativet om du vill ta bort ett villkor från snabbfiltret. |
+| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Välj det här alternativet om du vill ta bort ett villkor från snabbsegmentet. |
 
 ### Knappar
 
 | Knapp | Beskrivning |
 |---|---|
-| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Endast tillgängligt när du definierar mer än ett villkor. Välj i listrutan ![ChevronDown](/help/assets/icons/ChevronDown.svg) mellan villkoren. Markeringen avgör snabbfiltrets booleska logik. Du kan inte blanda logik när du har tre villkor. Den booleska logiken är antingen **[!UICONTROL AND]** eller **[!UICONTROL OR]**. |
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | Lägger till ytterligare ett villkor i snabbfiltret. Den här knappen är bara tillgänglig när du har definierat ett eller två villkor för snabbfiltret. |
-| **[!UICONTROL Apply]** | Använd ändringarna på snabbfiltret. |
-| **[!UICONTROL Open builder]** | Du uppmanas att bekräfta med en **[!UICONTROL Are your sure?]**-dialogruta. Om du väljer **[!UICONTROL OK]** kan du inte längre ändra filtret i [snabbfilterverktyget](#quick-filter-builder). Snabbfiltret har bytt namn till **[!UICONTROL Filter]** och har nu ett mörkare blått tunt fält till vänster.<br/>Det vanliga [filterverktyget](filter-builder.md) öppnas med alternativet **[!UICONTROL Make this filter available to all your projects and add it to your component list]**. <ul><li>Om du väljer det här alternativet och väljer **[!UICONTROL Apply]** läggs filtret till i komponentlistan ![ Filter](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** på komponentpanelen.</li><li>Om du inte markerar det här alternativet och väljer **[!UICONTROL Apply]** förblir filtret ett Workspace-projektfilter.</li></ul> |
-| **[!UICONTROL Cancel]** | Välj det här alternativet om du vill avbryta skapandet eller redigeringen av ett snabbfilter. |
+| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Endast tillgängligt när du definierar mer än ett villkor. Välj i listrutan ![ChevronDown](/help/assets/icons/ChevronDown.svg) mellan villkoren. Markeringen avgör den booleska logiken för snabbsegmentet. Du kan inte blanda logik när du har tre villkor. Den booleska logiken är antingen **[!UICONTROL AND]** eller **[!UICONTROL OR]**. |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | Lägger till ytterligare ett villkor i ditt snabbsegment. Den här knappen är bara tillgänglig när du har definierat ett eller två villkor för snabbsegmentet. |
+| **[!UICONTROL Apply]** | Använd ändringarna på snabbsegmentet. |
+| **[!UICONTROL Open builder]** | Du uppmanas att bekräfta med en **[!UICONTROL Are your sure?]**-dialogruta. Om du väljer **[!UICONTROL OK]** kan du inte längre ändra ditt segment i [snabbsegmentsverktyget](#quick-filter-builder). Snabbsegmentets namn ändras till **[!UICONTROL Segment]** och har nu ett mörkare blått tunt fält till vänster.<br/>Det vanliga [segmentverktyget](filter-builder.md) öppnas med alternativet **[!UICONTROL Make this segment available to all your projects and add it to your component list]**. <ul><li>Om du väljer det här alternativet och väljer **[!UICONTROL Apply]** läggs segmentet till i komponentlistan ![ Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** på komponentpanelen.</li><li>Om du inte markerar det här alternativet och väljer **[!UICONTROL Apply]** förblir segmentet bara för Workspace-projekt.</li></ul> |
+| **[!UICONTROL Cancel]** | Välj det här alternativet om du vill avbryta skapandet eller redigeringen av ett snabbsegment. |
 
-## Snabbfilter jämfört med filter
+## Snabbsegment kontra segment
 
-Snabbfilter är precis vad de namnges. Du kan skapa och redigera snabbfilter snabbt och se effekterna direkt i panelen.
+Snabbsegment är precis vad de namnges. Du kan skapa och redigera snabbsegment snabbt och direkt i panelen.
 
-Filter har följande fördelar jämfört med snabbfilter.
+Segment har följande fördelar jämfört med snabbsegment.
 
-* Filter kan göras tillgängliga i alla dina Workspace-projekt
-* Filter kan bli mer komplicerade med kapslade och hierarkiska behållare och sekvenser (med sekvensfilter).
+* Segment kan göras tillgängliga i alla dina Workspace-projekt
+* Segment har stöd för större komplexitet med kapslade och hierarkiska behållare och sekvenser (med sekvenssegment).
 
 
