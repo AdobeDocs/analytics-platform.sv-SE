@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
+source-git-commit: e79094d974e4e91b044611f997c0e4215487d74f
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
@@ -218,7 +218,7 @@ Så här inkluderar du upplevelser i en ny eller ej implementerad konfiguration:
 1. Välj **[!UICONTROL Add Regex]** om du vill lägga till en annan kombination av ett reguljärt uttryck och frågeparametrar.
 
 
-### Implementerad konfiguration {#implemented-experiences-configuration}
+#### Implementerad konfiguration {#implemented-experiences-configuration}
 
 Så här redigerar du befintliga eller inkluderar nya upplevelser i en implementerad konfiguration:
 
