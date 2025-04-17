@@ -4,7 +4,7 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '2229'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
    | --- | --- |
    | Från gränssnittet **[!UICONTROL Audiences]** | Välj **[!UICONTROL Components]** > **[!UICONTROL Audiences]** på Customer Journey Analytics huvudmeny. Gränssnittet Publiker visas. Välj **[!UICONTROL Create audience]** så öppnas [!UICONTROL Audience builder]. |
    | Från en visualisering i Analysis Workspace | Många visualiseringar i Analysis Workspace gör att du kan skapa en målgrupp med hjälp av snabbmenyn. Du kan till exempel välja **[!UICONTROL Create audience]** på snabbmenyn för ett objekt i en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en nod i [Researbetsytan](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>När du använder den här metoden fylls segmentet i Audience Builder i automatiskt med den dimension eller det dimensionsobjekt som du valde.</p><p>Med följande visualiseringar kan du skapa en målgrupp med hjälp av högerklicksmenyn:</p><ul><li>[Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Obs!** Målgrupper kan inte innehålla beräknade värden. Om du försöker skapa en målgrupp som innehåller ett beräknat mått inkluderas inte det beräknade måttet i målgruppsdefinitionen.</p> |
-   | Från gränssnittet för att skapa/redigera segment | Markera rutan **[!UICONTROL Create an audience from this segment]**. Om du använder den här metoden fylls segmentet i automatiskt. Mer information finns i [Skapa filter](/help/components/filters/create-filters.md). |
+   | Från gränssnittet för att skapa/redigera segment | Markera rutan **[!UICONTROL Create an audience from this segment]**. Om du använder den här metoden fylls segmentet i automatiskt. Mer information finns i [Skapa segment](/help/components/filters/create-filters.md). |
 
    {style="table-layout:auto"}
 

@@ -4,7 +4,7 @@ title: Övervaka dataordlistans hälsa
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -49,6 +49,6 @@ Så här identifierar du hälsoproblem i din Data Dictionary:
 
    * [!UICONTROL **komponenter har inga data anslutna**]
 
-   Beroende på vad du väljer tillämpas det aktuella filtret på dataordlistan, och endast de relevanta komponenterna visas.
+   Beroende på vad du väljer används rätt segment i datamallen, och endast de relevanta komponenterna visas.
 
 1. Redigera någon av komponenterna för att förbättra hälsan i datamallen. Mer information om hur du redigerar en komponent i Data Dictionary finns i [Redigera komponentposter i Data Dictionary](/help/components/data-dictionary/edit-entries-data-dictionary.md).

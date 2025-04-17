@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -32,10 +32,10 @@ Om sorteringsmåttet är ett beräknat mått, använder servern måtten i det be
 
 ## Bästa tillvägagångssätt för höga kardinalitetsmått
 
-Det bästa sättet att hantera stora kardinalitetsmått är att begränsa antalet dimensionsobjekt som en rapport behandlar. Eftersom alla rapporter bearbetas när de begärs kan du justera rapportparametrarna för att få omedelbara resultat. Adobe rekommenderar någon av följande optimeringar av högkardinalitetsmått:
+Det bästa sättet att hantera stora kardinalitetsmått är att begränsa antalet dimensionsobjekt som en rapport behandlar. Eftersom alla rapporter bearbetas när de begärs kan du justera rapportparametrarna för att få omedelbara resultat. Adobe rekommenderar någon av följande optimeringar av kardinalitetsdimensioner:
 
-* Använd ett [filter](/help/components/filters/create-filters.md). Filter tillämpas när varje server bearbetar en delmängd av data.
-* Använd en sökning. Dimensioner som utesluts från söktermen tas bort från rapportresultaten, vilket gör det lättare att se de önskade dimensionsobjekten.
+* Använd ett [segment](/help/components/filters/create-filters.md). Segmenten tillämpas när varje server bearbetar en delmängd av data.
+* Använd en sökning. Dimension-objekt som utesluts från söktermen tas bort från rapportresultaten, vilket gör det lättare att se de önskade dimensionsobjekten.
 * Använd en dimension för uppslagsdatauppsättning. Dimensionerna för uppslagsdatauppsättningen kombinerar dimensionsobjekt för händelsedatamängd, som begränsar antalet unika värden som returneras.
 * Använd komponentinställningen [Inkludera/exkludera](/help/data-views/component-settings/include-exclude-values.md) i datavyhanteraren.
 * Förkorta datumintervallet för begäran. Om många unika värden ackumuleras över tid kan en förkortning av datumintervallet i Workspace-rapporten begränsa antalet unika värden som servrar kan bearbeta.

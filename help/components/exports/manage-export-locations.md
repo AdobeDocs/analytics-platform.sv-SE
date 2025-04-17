@@ -1,13 +1,13 @@
 ---
-description: Hantera den molnexportplats där Customer Journey Analytics data kan skickas
+description: Hantera molnexportplatsen dit Customer Journey Analytics-data kan skickas
 keywords: Analysis Workspace
 title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Mer information om hur du skapar en ny plats finns i [Konfigurera molnexportplat
 
 ## Filtrera och söka efter platser
 
-Om du vill hitta den information du behöver kan du antingen filtrera platslistan eller söka efter en plats.
+Om du vill hitta den information du behöver kan du antingen filtrera listan över platser eller söka efter en plats.
 
 ### Filtrera listan med platser
 
@@ -154,7 +154,7 @@ Systemadministratörer kan hindra användare från att skapa konton och platser 
 
 ### Konfigurera om användare kan skapa och redigera konton
 
-Som standard kan alla användare i organisationen skapa konton och redigera konton som de skapar i din Customer Journey Analytics-miljö, vilket beskrivs i [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md).
+Som standard kan alla användare i organisationen skapa konton och redigera konton som de skapar i din Customer Journey Analytics-miljö, enligt beskrivningen i [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md).
 
 Du kan hindra användare från att skapa konton. När du gör det kan användare fortfarande använda konton som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort konton som användare har skapat enligt beskrivningen i [Ta bort ett konto](#delete-an-account).
 
@@ -170,7 +170,7 @@ Så här begränsar du alla användare från att skapa och redigera konton:
 
 ### Konfigurera om användare kan skapa och redigera platser
 
-Som standard kan alla användare i organisationen skapa platser och redigera platser som de skapar i din Customer Journey Analytics-miljö, vilket beskrivs i [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
+Som standard kan alla användare i organisationen skapa platser och redigera platser som de skapar i din Customer Journey Analytics-miljö, enligt beskrivningen i [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
 Du kan hindra användare från att skapa platser. När du gör det kan användare fortfarande använda platser som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort platser som användare har skapat enligt beskrivningen i [Ta bort platser](#delete-a-location).
 

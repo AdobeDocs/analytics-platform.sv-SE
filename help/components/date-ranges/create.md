@@ -4,7 +4,7 @@ description: Skapa ett datumintervall för rapportering.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 3f9c185c86f2ae2727881d0d74ca54815867adb1
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Dialogrutan **[!UICONTROL New date range]** eller **[!UICONTROL Edit date range]
 
 1. Ange **[!UICONTROL Title]** som datumintervall. Exempel: **[!UICONTROL Quarterly]**.
 1. Du kan också ange **[!UICONTROL Description]**.
-1. Ordna filtret genom att skapa eller använda en eller flera **[!UICONTROL Tags]**. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
+1. Organisera segmentet genom att skapa eller använda en eller flera **[!UICONTROL Tags]**. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
 1. Välj en **[!UICONTROL Date Range]** genom att först välja startdatum och sedan slutdatum.
 Du kan också välja en **[!UICONTROL Preset]** i listrutan [!UICONTROL *Välj en förinställning*].
 

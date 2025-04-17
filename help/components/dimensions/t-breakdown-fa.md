@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Dela upp dimensioner i Workspace
 
-Ni kan dela upp era data på ett obegränsat sätt för just era behov, bygga frågor med relevanta mått, dimensioner, filter, tidslinjer och andra analysvärden.
+Ni kan dela upp era data på ett obegränsat sätt för just era behov, bygga frågor med relevanta mått, dimensioner, segment, tidslinjer och andra analysvärden.
 
 1. I en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) väljer du **[!UICONTROL Breakdown]** ![SparronRight](/help/assets/icons/ChevronRight.svg) på snabbmenyn för en eller flera markerade rader.
 
@@ -23,7 +23,7 @@ Ni kan dela upp era data på ett obegränsat sätt för just era behov, bygga fr
 
 1. På undermenyn väljer du **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** eller **[!UICONTROL Date ranges]** och sedan ett alternativ.
 
-Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppsfilter över valda tidsperioder. Du kan även gå ned mer i detalj.
+Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppssegment under valda tidsperioder. Du kan även gå ned mer i detalj.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension i Analy
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension-indelningar](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension-uppdelningar](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -89,7 +89,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeta med dimens
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedbrytning av Dimension efter position](https://video.tv.adobe.com/v/24033){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension-nedbrytning efter position](https://video.tv.adobe.com/v/24033){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

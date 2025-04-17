@@ -1,29 +1,29 @@
 ---
-description: Du kan skapa ett arbetsflöde som innefattar att godkänna filter för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciperna.
-title: Godkänn filter
+description: Du kan skapa ett arbetsflöde som innefattar godkännande av segment för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciper.
+title: Godkänn segment
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
-# Godkänn filter
+# Godkänn segment
 
-I [Filterhanteraren](manage-filters.md) kan du godkänna och inte godkänna filter. Endast administratörer kan godkänna filter.
+I [Segmenthanteraren](manage-filters.md) kan du godkänna och inte godkänna segment. Endast administratörer kan godkänna segment.
 
-Så här godkänner du filter:
+Så här godkänner du segment:
 
-1. Markera ett eller flera av de filter som du vill godkänna i [Filterhanteraren](manage-filters.md).
-1. Välj ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** i åtgärdsfältet. Godkända filter indikeras med ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
+1. Markera ett eller flera av de segment som du vill godkänna i [Segmenthanteraren](manage-filters.md).
+1. Välj ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** i åtgärdsfältet. De godkända segmenten indikeras med ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
 
-Så här avgodkänner du filter:
+Så här tar du bort segment:
 
-1. I [Filterhanteraren](manage-filters.md) väljer du ett eller flera av de filter som du vill ta bort godkännandet för.
+1. I [Segmenthanteraren](manage-filters.md) markerar du ett eller flera av segmenten som du vill avgodkänna.
 1. Välj ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]** i åtgärdsfältet.
 
 
-Du kan filtrera listan med filter efter godkända filter. Välj **[!UICONTROL Other filters]** på panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** och välj **[!UICONTROL Approved]**. Mer information finns i [Filtrera listan med filter](/help/components/filters/filters-filter.md).
+Du kan segmentera listan med segment efter godkända segment. Välj **[!UICONTROL Other segments]** på panelen ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** och välj **[!UICONTROL Approved]**. Mer information finns i [Segmentera listan med segment](/help/components/filters/filters-filter.md).
