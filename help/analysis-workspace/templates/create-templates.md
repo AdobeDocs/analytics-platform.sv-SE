@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 0f4b396bb44612ef52b640ffaeba6aa5aeace423
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,16 @@ Administratörer kan skapa mallar och spara dem så att andra kan använda dem i
 
 Personer i inloggningsföretaget kan använda de här företagsmallarna enligt beskrivningen i [Använd mallar](/help/analysis-workspace/templates/use-templates.md).
 
-## Skapa en mall
+## Skapa en mall {#create-templates}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="use-case-ajo-template"
+>title="Använd mall i Journey Optimizer"
+>abstract="När du använder den här mallen i Journey Optimizer används datavyn som är inställd som standarddatavy i Adobe Journey Optimizer, oavsett vilken datavy som är vald med den här mallen i Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
 
 Så här skapar du en ny mall som kan användas av personer i ditt inloggningsföretag:
 
@@ -86,7 +95,7 @@ Administratörer kan redigera eller ta bort företagsmallar.
    | **[!UICONTROL Description]** | Ange en kort beskrivning av mallen som beskriver dess avsedda användning. |
    | **[!UICONTROL Why use this template]** | Ge en kort förklaring för att informera personer i organisationen om hur den här mallen kan användas. Den här förklaringen visas på mallens förhandsgranskningssida. |
    | **[!UICONTROL Channels]** | Välj de kanaler som gäller för den här mallen. Du kan välja flera kanaler: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]** och **[!UICONTROL In-store]**. Om inga kanaler är markerade inkluderas mallen i alla kanaler.<p>De val du väljer avgör var mallen visas och vilka filter som gäller för användare som använder den från sidan Organisationsmallar.</p> |
-   | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]** och **[!UICONTROL Journey Optimizer]**. <p>De val du väljer avgör mallens plats på sidan Organisationsmallar. Användarna kan navigera till mallen eller filtrera listan efter användningsfall. </p><p>**Obs!** Om du väljer **[!UICONTROL Journey Optimizer]** blir mallen även tillgänglig i Adobe Journey Optimizer. I Journey Optimizer finns en nedrullningsbar meny på sidan **[!UICONTROL Reports]** där användarna kan välja den här mallen eller standardmallen. Mer information finns i [Kom igång med den uppdaterade rapportfunktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen. |
+   | **[!UICONTROL Use cases]** | Välj de användningsfall som gäller för den här mallen. Du kan välja flera användningsfall: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]** och **[!UICONTROL Journey Optimizer]**. <p>De val du väljer avgör mallens plats på sidan Organisationsmallar. Användarna kan navigera till mallen eller filtrera listan efter användningsfall. </p><p>**Obs!** När du väljer alternativet **[!UICONTROL Journey Optimizer]** är mallen tillgänglig för användning i Adobe Journey Optimizer. I Journey Optimizer finns en nedrullningsbar meny på sidan **[!UICONTROL Reports]** där användarna kan välja den här mallen eller standardmallen. Mer information finns i [Kom igång med den uppdaterade rapportfunktionen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen.</p><p>Tänk på följande när du väljer alternativet Journey Optimizer:</p><ul><li>Det här alternativet är bara tillgängligt om det finns Journey Optimizer-data i datavyn som du använder i Customer Journey Analytics.</li><li>När du använder den här mallen i Journey Optimizer används datavyn som är inställd som standarddatavy i Adobe Journey Optimizer, oavsett vilken datavy som är vald med den här mallen i Customer Journey Analytics. <br/>Mer information om hur du anger en datavy som standarddatavy i Journey Optimizer finns i [Kompatibilitet](/help/data-views/create-dataview.md#compatibility) i [Skapa eller redigera en datavy](/help/data-views/create-dataview.md).</li></ul> |
    | **[!UICONTROL Journey Optimizer activity type]** | Välj den Journey Optimizer-aktivitetstyp som ska associeras med den här mallen: **[!UICONTROL Campaigns]**, **[!UICONTROL Journeys]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Reports]** eller **[!UICONTROL Subscriptions]**. <p>Lämna fältet tomt om du vill att den här mallen ska kopplas till alla aktivitetstyper.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |
    | **[!UICONTROL Journey Optimizer activity]** | Välj den Journey Optimizer-aktivitet som ska associeras med den här mallen. <p>Lämna det här fältet tomt om du vill att den här mallen ska kopplas till alla aktiviteter av den valda aktivitetstypen.</p><p>Det här fältet visas bara om **[!UICONTROL Journey Optimizer]** har valts i fältet **[!UICONTROL Use cases]**.</p> |
    | **[!UICONTROL Tags]** | Ange de taggar som du vill lägga till i mallen. Användarna kan filtrera listan med mallar efter de taggar du lägger till. |
