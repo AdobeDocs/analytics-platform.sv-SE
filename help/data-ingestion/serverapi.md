@@ -1,13 +1,13 @@
 ---
-title: Infoga data via Adobe Experience Platform Edge Network Server-API
-description: Förklara hur man importerar data till Customer Journey Analytics via Adobe Experience Platform Edge Network Server API och Edge Network
+title: Infoga data via Adobe Experience Platform Edge Network Server API
+description: Förklara hur data importeras till Customer Journey Analytics via Adobe Experience Platform Edge Network Server API och Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ För att uppnå detta måste du:
 
 >[!NOTE]
 >
->Den här snabbstartsguiden är en förenklad guide om hur du importerar data som samlats in från ett program eller spel som körs på en IoT-enhet, digitalbox, spelkonsol eller dator till Adobe Experience Platform och använder i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Den här snabbstartsguiden är en förenklad guide om hur man importerar data som samlats in från ett program eller spel som körs på en IoT-enhet, digitalbox, spelkonsol eller dator till Adobe Experience Platform och använder i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera ett schema och en datauppsättning
@@ -109,7 +109,7 @@ Så här konfigurerar du ditt schema:
 
    ![Identifieringsobjekt](./assets/identification-field-gaming.png)
 
-   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I så fall vill du identifiera profiler som spelar ditt spel med hjälp av det Experience Cloud-ID och den e-postadress de använder för att logga in på spelkonsolen. Det finns många andra attribut för att spåra din persons identifiering.
+   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I så fall vill du identifiera profiler som spelar ditt spel med hjälp av det Experience Cloud-ID och den e-postadress som de använder för att logga in på spelkonsolen. Det finns många andra attribut för att spåra din persons identifiering.
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
@@ -117,7 +117,7 @@ Så här konfigurerar du ditt schema:
 
    ![Ange ECID som identitet](./assets/specify-identity-gaming.png)
 
-   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sy ihop) beteendet hos profiler med samma ECID.
+   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sammanfoga) beteendet hos profiler med samma ECID.
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i attributet ecid.
 
@@ -145,7 +145,7 @@ Så här konfigurerar du ditt schema:
 
 1. Välj **[!UICONTROL Save]** om du vill spara ditt schema.
 
-Du har skapat ett minimalt schema som modellerar de data du kan hämta från ditt spel. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profilen ser du till att data som hämtats från ditt konsolspel läggs till i kundprofilen i realtid.
+Du har skapat ett minimalt schema som modellerar de data du kan hämta från ditt spel. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud Identity och e-postadress. Genom att aktivera schemat för profilen ser du till att data som hämtats från ditt konsolspel läggs till i kundprofilen i realtid.
 
 Bredvid beteendedata kan du även hämta profilattributdata från konsolen (t.ex. information om profiler som har loggats in i konsolen).
 
@@ -157,7 +157,7 @@ Så här hämtar du profildata:
 
 - Lägg till ett identifieringsobjekt baserat på fältgruppen Profile Core v2.
 
-- Definiera Experience Cloud-ID som primär identifierare och e-post som identifierare.
+- Definiera Experience Cloud ID som primär identifierare och e-postadress som identifierare.
 
 - Aktivera schemat för profilen
 
@@ -201,7 +201,7 @@ Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datau
 
 ## Konfigurera en datastream
 
-En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras och Adobe Experience Platform Edge Network Server API. När du samlar in data med Adobe Experience Platform SDK:er och Edge Network Server-API:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
+En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras och Adobe Experience Platform Edge Network Server API. När data samlas in med Adobe Experience Platform SDK:er och Edge Network Server-API:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
 
 I din konfiguration vill du att de data du samlar in från spelet ska skickas till din datauppsättning i Adobe Experience Platform.
 
@@ -237,7 +237,7 @@ Mer information om hur du konfigurerar ett datastam och hur du hanterar känslig
 
 ## Använd Edge Network Server-API
 
-När du utvecklar ditt spel kan du lägga till relevanta anrop till Adobe Experience Platform Edge Network Server API där det är lämpligt.
+Under spelets utveckling kan du lägga till relevanta anrop till Adobe Experience Platform Edge Network Server API där det är lämpligt.
 
 Om du till exempel vill uppdatera spelarens musikspår använder du:
 
@@ -270,7 +270,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 }'
 ```
 
-I exempeldatabegäran pekar `{DATASTREAM_ID}` på identifieraren för det exempeldataflöde som du konfigurerade tidigare. `{sandbox}` är det unika namnet på din sandlåda som identifierar sökvägen till den anpassade fältgruppen Ljus lutning.
+I exemplet på POST-begäran pekar `{DATASTREAM_ID}` på identifieraren för det exempeldataflöde som du konfigurerade tidigare. `{sandbox}` är det unika namnet på din sandlåda som identifierar sökvägen till den anpassade fältgruppen Ljus lutning.
 
 Se [Interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) och [Icke-interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) om du vill ha mer information om hur du använder Edge Network Server-API:t.
 
@@ -282,7 +282,7 @@ Med en anslutning kan du integrera datauppsättningar från Adobe Experience Pla
 
 Så här skapar du en anslutning:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Connections]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new connection]**.
 
@@ -324,7 +324,7 @@ En datavy är en behållare som är specifik för Customer Journey Analytics och
 
 Så här skapar du en datavy:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Data views]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new data view]**.
 
@@ -359,7 +359,7 @@ Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt ka
 
 Så här skapar du ditt projekt:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Projects]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Projects]** på den översta menyn.
 
 2. Välj **[!UICONTROL Projects]** i den vänstra navigeringen.
 
@@ -381,4 +381,4 @@ Mer information om hur du skapar projekt och bygger analyser med komponenter, vi
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastream på Edge Network för att se till att data kan vidarebefordras till den datauppsättningen. Sedan använde du Edge Network Server-API:t för att skicka data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda speldata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar speldata.
+>Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du har konfigurerat en datastream på Edge Network för att säkerställa att data kan vidarebefordras till den datauppsättningen. Sedan använde du Edge Network Server-API:t för att skicka data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda speldata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar speldata.

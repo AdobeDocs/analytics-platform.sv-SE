@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Så här skapar du en Adobe Analytics-källanslutning:
 
 När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en datauppsättning med Adobe Analytics-data från rapportsviten. Dataflödet importerar upp till 13 månaders historiska data för produktionssandlådor. Bakåtfyllnaden i icke-produktionssandlådor är begränsad till tre månader.
 
-När det första intaget är slutfört kan Adobe Analytics-rapportsvitens data användas av Customer Journey Analytics.
+När det första intaget är slutfört är dina Adobe Analytics-rapportsviter klara att användas av Customer Journey Analytics.
 
 En mer omfattande självstudiekurs finns i [Skapa en källanslutning till Adobe Analytics i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
@@ -94,7 +94,7 @@ Med en anslutning kan du integrera datauppsättningar från Adobe Experience Pla
 
 Så här skapar du en anslutning:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Connections]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new connection]**.
 
@@ -140,7 +140,7 @@ En datavy är en behållare som är specifik för Customer Journey Analytics och
 
 Så här skapar du en datavy:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Data views]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new data view]**.
 
@@ -177,7 +177,7 @@ Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt ka
 
 Så här skapar du ditt projekt:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Projects]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Projects]** på den översta menyn.
 
 2. Välj **[!UICONTROL Projects]** i den vänstra navigeringen.
 

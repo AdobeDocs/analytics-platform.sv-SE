@@ -1,20 +1,20 @@
 ---
 title: Importera och använda data med hjälp av källkopplingar
-description: Förklara hur du importerar och använder data med hjälp av källanslutningar i Customer Journey Analytics
+description: Förklara hur man importerar och använder data med hjälp av källanslutningar i Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1888'
 ht-degree: 0%
 
 ---
 
 # Importera och använda data med hjälp av källkopplingar
 
-Den här snabbstartsguiden förklarar hur du kan importera data till Adobe Experience Platform med hjälp av en källanslutning till en DataProvider och sedan använda dessa data i Customer Journey Analytics.
+Den här snabbstartsguiden förklarar hur du kan importera data till Adobe Experience Platform med en källanslutning till en DataProvider och sedan använda dessa data i Customer Journey Analytics.
 
 För att uppnå detta måste du:
 
@@ -89,7 +89,7 @@ Så här konfigurerar du ditt schema:
 
       Du kan välja knappen Förhandsgranska om du vill se en förhandsvisning av de fält som är en del av den här fältgruppen.
 
-      ![Förhandsgranskning av AEP Web SDK ExperienceEvent-fältgrupp](./assets/loyalty-fieldgroup-preview.png)
+      ![AEP Web SDK ExperienceEvent, förhandsgranskning av fältgrupp](./assets/loyalty-fieldgroup-preview.png)
 
       Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 
@@ -225,7 +225,7 @@ Med en anslutning kan du integrera datauppsättningar från Adobe Experience Pla
 
 Så här skapar du en anslutning:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Connections]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 1. Välj **[!UICONTROL Create new connection]**.
 
@@ -271,7 +271,7 @@ En datavy är en behållare som är specifik för Customer Journey Analytics och
 
 Så här skapar du en datavy:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Data views]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new data view]**.
 
@@ -308,7 +308,7 @@ Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt ka
 
 Så här skapar du ditt projekt:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Projects]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Projects]** på den översta menyn.
 
 2. Välj **[!UICONTROL Projects]** i den vänstra navigeringen.
 
@@ -332,4 +332,4 @@ Mer information om hur du skapar projekt och bygger analyser med komponenter, vi
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Börja med att definiera vilka lojalitetsdata du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform, och du konfigurerade rätt källanslutning för att ge dig lojalitetsdata. Du definierade en anslutning i Customer Journey Analytics för att använda inkapslade lojalitetsdata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.
+>Du har slutfört alla steg. Börja med att definiera vilka lojalitetsdata du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform, och du konfigurerade rätt källanslutning för att ge dig lojalitetsdata. Du har definierat en anslutning i Customer Journey Analytics för att använda inkapslade lojalitetsdata och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era data.

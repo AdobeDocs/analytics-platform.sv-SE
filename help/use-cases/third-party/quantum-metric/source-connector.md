@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ Mer information finns i [Adobe Experience Platform-källanslutningar](https://ex
 Om du skapar en källanslutning för Quantum Metric-data skapas automatiskt en datauppsättning i Adobe Experience Platform. Lägg till den här datauppsättningen i en ny eller befintlig [anslutning](/help/connections/overview.md) i Customer Journey Analytics.
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com).
-1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Connections]** på den översta menyn.
+1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Ge anslutningen ett namn och lägg till datamängden Quantum Metric i anslutningen.
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -46,7 +47,7 @@ Om du skapar en källanslutning för Quantum Metric-data skapas automatiskt en d
 Skapa en [datavy](/help/data-views/data-views.md) för att konfigurera mått- och måttinställningar.
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com).
-1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Data views]** på den översta menyn.
+1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj önskad datavy eller skapa en datavy.
 1. Leta upp de önskade kvantmåtten och måtten i schemafältlistan till höger och dra dem till mått- och mätområdet i mitten.
 1. Använd den högra rutan för att konfigurera alla önskade dimensioner och mått.

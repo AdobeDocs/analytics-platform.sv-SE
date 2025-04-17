@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ När du skapar en datavy måste du antingen skapa mått och mått från schemael
 
 Så här skapar du en datavy:
 
-1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och gå till fliken **[!UICONTROL Data views]**.
+1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 1. Välj **[!UICONTROL Create new data view]**. Du kan också välja en befintlig datavy i listan över datavyer för att redigera den.
 

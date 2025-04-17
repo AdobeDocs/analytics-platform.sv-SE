@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Upprepa den här processen för varje dimension som innehåller data som du vill
 
 Så här lägger du till uppslagsdatauppsättningen i anslutningen i Customer Journey Analytics:
 
-1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Connections]**.
+1. I Customer Journey Analytics väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 1. Välj ![Mer ikon](assets/More.svg) bredvid anslutningen där du vill lägga till uppslagsdatauppsättningen och välj sedan **[!UICONTROL Edit]**.
 

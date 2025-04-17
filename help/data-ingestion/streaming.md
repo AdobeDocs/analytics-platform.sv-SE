@@ -1,13 +1,13 @@
 ---
 title: Importera och använda strömmande data
-description: Förklara hur du importerar och använder strömmande data i Customer Journey Analytics
+description: Förklara hur man importerar och använder strömmande data i Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Så här konfigurerar du ditt schema:
 
       Du kan välja knappen Förhandsgranska om du vill se en förhandsvisning av de fält som är en del av den här fältgruppen.
 
-      ![Förhandsgranskning av AEP Web SDK ExperienceEvent-fältgrupp](./assets/loyalty-fieldgroup-preview.png)
+      ![AEP Web SDK ExperienceEvent, förhandsgranskning av fältgrupp](./assets/loyalty-fieldgroup-preview.png)
 
       Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 
@@ -198,7 +198,7 @@ Om du vill direktuppspela dessa data i den datauppsättning som du skapade måst
 
 Så här skapar du en HTTP API-källkoppling:
 
-1. I användargränssnittet för Experience Platform väljer du **[!UICONTROL Sources]** under [!UICONTROL CONNECTIONS] i den vänstra listen.
+1. I Experience Platform-gränssnittet väljer du **[!UICONTROL Sources]** under [!UICONTROL CONNECTIONS] i den vänstra listen.
 
 2. Välj **[!UICONTROL Streaming]** i listan med [!UICONTROL CATEGORIES].
 
@@ -253,7 +253,7 @@ Med en anslutning kan du integrera datauppsättningar från Adobe Experience Pla
 
 Så här skapar du en anslutning:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Connections]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new connection]**.
 
@@ -299,7 +299,7 @@ En datavy är en behållare som är specifik för Customer Journey Analytics och
 
 Så här skapar du en datavy:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Data views]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new data view]**.
 
@@ -336,7 +336,7 @@ Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt ka
 
 Så här skapar du ditt projekt:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Projects]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Projects]** på den översta menyn.
 
 2. Välj **[!UICONTROL Projects]** i den vänstra navigeringen.
 

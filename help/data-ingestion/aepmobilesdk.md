@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3085'
+source-wordcount: '3089'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ För att uppnå detta måste du:
 
 >[!NOTE]
 >
->Den här snabbstartsguiden är en förenklad guide om hur du importerar data som samlats in från programmet till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+>Den här snabbstartsguiden är en förenklad guide om hur du importerar data som samlats in från ditt program till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera ett schema och en datauppsättning
@@ -91,7 +91,7 @@ Så här konfigurerar du ditt schema:
 
       Du kan välja knappen för förhandsgranskning om du vill se en förhandsgranskning av fälten som ingår i den här fältgruppen, till exempel `application > name`.
 
-      ![Förhandsgranskning av AEP Mobile Lifecycle Details-fältgrupp](./assets/aepmobilesdk-experienceevent-preview.png)
+      ![AEP Mobile Lifecycle Details (fältgruppsförhandsgranskning)](./assets/aepmobilesdk-experienceevent-preview.png)
 
       Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 
@@ -109,7 +109,7 @@ Så här konfigurerar du ditt schema:
 
    ![Identifieringsobjekt](./assets/identification-field-mobile.png)
 
-   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I så fall vill du identifiera profiler med din mobilapp med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
+   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I så fall vill du identifiera profiler med din mobilapp med hjälp av Experience Cloud ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
@@ -117,7 +117,7 @@ Så här konfigurerar du ditt schema:
 
    ![Ange ECID som identitet](./assets/specify-identity-mobile.png)
 
-   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sy ihop) beteendet hos profiler med samma ECID.
+   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sammanfoga) beteendet hos profiler med samma ECID.
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i attributet ecid.
 
@@ -145,7 +145,7 @@ Så här konfigurerar du ditt schema:
 
 1. Välj **[!UICONTROL Save]** om du vill spara ditt schema.
 
-Du har skapat ett minimalt schema som modellerar de data du kan hämta från ditt mobilprogram. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profilen ser du till att data som hämtas från mobilappen läggs till i kundprofilen i realtid.
+Du har skapat ett minimalt schema som modellerar de data du kan hämta från ditt mobilprogram. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud Identity och e-postadress. Genom att aktivera schemat för profilen ser du till att data som hämtas från mobilappen läggs till i kundprofilen i realtid.
 
 Bredvid beteendedata kan du även hämta profilattributdata från ditt mobilprogram (till exempel information om profiler som prenumererar på ett nyhetsbrev).
 
@@ -157,7 +157,7 @@ Så här hämtar du profildata:
 
 - Lägg till ett identifieringsobjekt baserat på fältgruppen Profile Core v2.
 
-- Definiera Experience Cloud-ID som primär identifierare och e-post som identifierare.
+- Definiera Experience Cloud ID som primär identifierare och e-postadress som identifierare.
 
 - Aktivera schemat för profilen
 
@@ -201,7 +201,7 @@ Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datau
 
 ## Konfigurera en datastream
 
-En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När data samlas in med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
+En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När du samlar in data med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
 
 I din konfiguration vill du att de data du samlar in från mobilappen ska skickas till din datauppsättning i Adobe Experience Platform.
 
@@ -278,7 +278,7 @@ Så här skapar och konfigurerar du tillägget Adobe Experience Platform Mobile 
 
 1. Välj **[!UICONTROL Save]**.
 
-Mer information finns i [Konfigurera tillägget Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/edge-network).
+Mer information finns i [Konfigurera Adobe Experience Platform Edge Network-tillägget](https://developer.adobe.com/client-sdks/documentation/edge-network).
 
 Du vill också konfigurera följande tillägg från katalogen:
 
@@ -364,13 +364,13 @@ Så här definierar du en regel:
 
    - Välj **[!UICONTROL Save]**.
 
-Ovanstående är bara ett exempel på en regel som skickar XDM-data med programstatus till Adobe Edge-nätverket och till Adobe Experience Platform.
+Ovanstående är bara ett exempel på en regel som skickar XDM-data med programstatus till Adobe Edge Network och till Adobe Experience Platform.
 
 Du kan använda regler på olika sätt i taggen för att hantera variabler (med dataelementen).
 
 Mer information finns i [Regler](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform).
 
-### Bygg och Publish din tagg
+### Skapa och publicera taggen
 
 När du har definierat dataelement och regler måste du skapa och publicera taggen. När du skapar en biblioteksversion måste du tilldela den till en miljö. Byggnadens tillägg, regler och dataelement kompileras sedan och placeras i den tilldelade miljön. Varje miljö har en unik inbäddningskod som gör att du kan integrera den tilldelade inbäddningen på din plats.
 
@@ -388,7 +388,7 @@ Så här skapar och publicerar du en tagg:
 
    - Välj **[!UICONTROL + Add All Changed Resources]**.
 
-     ![Publish - Skapa bibliotek](./assets/build-library-mobile.png)
+     ![Publicera - Skapa bibliotek](./assets/build-library-mobile.png)
 
    - Välj **[!UICONTROL Save & Build to Development]**.
 
@@ -396,7 +396,7 @@ Så här skapar och publicerar du en tagg:
 
 4. Du kan välja **[!UICONTROL ...]** om du vill återskapa biblioteket eller flytta biblioteket till en staging- eller produktionsmiljö.
 
-Adobe Experience Platform Tags hanterar enkla till komplexa publiceringsflöden som passar er användning av Adobe Experience Platform Edge Network.
+Adobe Experience Platform Tags hanterar enkla till komplexa publiceringsarbetsflöden som passar er användning av Adobe Experience Platform Edge Network.
 
 Mer information finns i [Översikt över publicering](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration).
 
@@ -437,7 +437,7 @@ Med en anslutning kan du integrera datauppsättningar från Adobe Experience Pla
 
 Så här skapar du en anslutning:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Connections]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new connection]**.
 
@@ -483,7 +483,7 @@ En datavy är en behållare som är specifik för Customer Journey Analytics och
 
 Så här skapar du en datavy:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Data views]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new data view]**.
 
@@ -520,7 +520,7 @@ Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt ka
 
 Så här skapar du ditt projekt:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Projects]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Projects]** på den översta menyn.
 
 2. Välj **[!UICONTROL Projects]** i den vänstra navigeringen.
 
@@ -544,4 +544,4 @@ Mer information om hur du skapar projekt och bygger analyser med komponenter, vi
 
 >[!SUCCESS]
 >
->Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastam på Edge Network för att se till att data kan vidarebefordras till datauppsättningen. Sedan definierade och distribuerade du taggen som innehåller tilläggen (Adobe Experience Platform Edge Network och andra), dataelementen och reglerna för att hämta data från mobilappen och skicka dessa data till din datastam. Du har definierat en anslutning i Customer Journey Analytics för att använda push-meddelandespårningsdata för mobilappar och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era mobilappsdata.
+>Du har slutfört alla steg. Börja med att definiera vilka data du vill samla in (schema) och var de ska lagras (datauppsättning) i Adobe Experience Platform. Du konfigurerade en datastam på Edge Network för att se till att data kan vidarebefordras till den datauppsättningen. Sedan definierade och distribuerade du taggen som innehåller tilläggen (Adobe Experience Platform Edge Network med flera), dataelementen och reglerna för att hämta data från mobilappen och skicka dessa data till din dataram. Du har definierat en anslutning i Customer Journey Analytics för att använda push-meddelandespårningsdata för mobilappar och andra data. Med datavyns definition kan ni ange vilken dimension och vilka mätvärden som ska användas och slutligen skapa ert första projekt som visualiserar och analyserar era mobilappsdata.

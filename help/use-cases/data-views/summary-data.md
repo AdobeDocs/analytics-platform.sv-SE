@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '4610'
+source-wordcount: '4616'
 ht-degree: 7%
 
 ---
@@ -387,7 +387,7 @@ Om du vill använda exempeldata i Customer Journey Analytics skapar du en anslut
 
 
 1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
-1. Välj **[!UICONTROL Connections]** på den översta menyn.
+1. Välj **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj **[!UICONTROL Create new connection]**.
 1. I **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]**:
    1. Ange en **[!UICONTROL Connection name]**, till exempel `Example Connection Using Summary Data`.
@@ -428,7 +428,7 @@ Data från datauppsättningarna läggs till i Customer Journey Analytics, som ka
 Efter en stund kontrollerar du att data från datauppsättningarna har lästs in korrekt i Customer Journey Analytics.
 
 1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
-1. Välj **[!UICONTROL Connections]** på den översta menyn.
+1. Välj **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj din anslutning, till exempel **[!UICONTROL Example Connection Using Summary Data]**.
 1. Välj ett lämpligt datumintervall i informationen för **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]**.
    1. Välj ![Kalender](/help/assets/icons/Calendar.svg) och sedan **[!UICONTROL Last 7 days]**.
@@ -443,7 +443,7 @@ I listan med **[!UICONTROL Datasets]** bör värdena i kolumnen **[!UICONTROL Re
 För att vara säker på att du kan rapportera rätt data i Workspace vill du skapa en datavy med relevanta mått och mått.
 
 1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
-1. Välj **[!UICONTROL Data views]** på den översta menyn.
+1. Välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj **[!UICONTROL Create new data view]**.
 1. Gå igenom guideskärmarna i **[!UICONTROL Data views]** för att konfigurera datavyn.
    1. I **[!UICONTROL Configure]**-steget i **[!UICONTROL Data views]**:

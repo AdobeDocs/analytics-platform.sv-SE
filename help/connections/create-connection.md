@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '4659'
+source-wordcount: '4661'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 0%
 >title="Genomsnittligt antal dagliga användningar"
 >abstract="Välj ett intervall för antalet förväntade dagliga händelser för hela anslutningen."
 
-<!-- markdownlint-enable MD034 -->
 
 
 Arbetsflödet för att skapa och redigera anslutningar gör att alla konfigurationsinställningar för datauppsättningar och anslutningar hamnar mitt på skärmen med ett hjälparbetsflöde. Den ger detaljerad information om val, konfiguration och granskning av datauppsättningar. Och gör att du kan ange viktig information som datamängdstyp, storlek, schema, datauppsättnings-ID, batchstatus, bakåtfyllnadsstatus, person-ID och mycket annat, för att minska risken för fel anslutningskonfiguration. Här är en översikt över funktionerna:
@@ -154,7 +153,7 @@ Kontakta administratören om du är osäker på vilket Customer Journey Analytic
 
 ## Skapa och konfigurera anslutningen {#create-connection}
 
-1. I Customer Journey Analytics väljer du **[!UICONTROL Connections]** på huvudmenyn.
+1. I Customer Journey Analytics väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj **[!UICONTROL Create new connection]**.
 
 >[!BEGINTABS]
@@ -442,7 +441,6 @@ På skärmen **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]**
 >title="Anslutningskarta"
 >abstract="Anslutningskartan visar relationerna mellan händelse-, person-, konto- och relevanta sökdatauppsättningar (som affärsmöjligheter, kampanjmedlemmar med mera)."
 
-<!-- markdownlint-enable MD034 -->
 
 
 Med arbetsflödet kan du lägga till en eller flera Experience Platform-datauppsättningar när du skapar en anslutning.

@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Bekräfta att datauppsättningarna i din anslutning nu har ett sessions-ID för 
 Redigera den befintliga datavyn för att lägga till sessions-ID som en tillgänglig dimension i Customer Journey Analytics.
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com).
-1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Data views]** på den översta menyn.
+1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj önskad befintlig datavy.
 1. Leta upp händelselistan för kvantmetrisk friktion till vänster och dra den till mätområdet i mitten.
 1. I den högra rutan anger du inställningen [Inkludera/exkludera värden](/help/data-views/component-settings/include-exclude-values.md) till önskade friktionshändelser som du vill spåra. Du kan lägga till flera friktionshändelser i samma mätvärde för att kombinera dem. Du kan också dra en annan kopia av friktionshändelsefältet till mätområdet för att spåra andra friktionshändelser som ett separat mått.

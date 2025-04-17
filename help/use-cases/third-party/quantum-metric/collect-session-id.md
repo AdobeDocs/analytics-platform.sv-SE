@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: ae88ab16e85bd1274990f8c4d04771398293fe09
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Bekräfta att datauppsättningarna i din anslutning nu har ett sessions-ID för 
 Redigera den befintliga datavyn för att lägga till sessions-ID som en tillgänglig dimension i Customer Journey Analytics.
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com).
-1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Data views]** på den översta menyn.
+1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj önskad befintlig datavy.
 1. Leta upp listan med sessions-ID för kvantmått till vänster och dra den till dimensionsområdet i mitten.
 1. I den högra rutan anger du inställningen [persistence](/help/data-views/component-settings/persistence.md) till Session.

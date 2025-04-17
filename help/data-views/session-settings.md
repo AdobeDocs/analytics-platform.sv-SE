@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Definitioner av sessionsinställningar är icke-förstörande och ändrar inte u
 
 Så här definierar du kontexten för en session i en datavy:
 
-1. Välj **[!UICONTROL Data views]** i användargränssnittet för Customer Journey Analytics.
+1. Välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, i huvudnavigeringen för Customer Journey Analytics-gränssnittet.
 
 2. Skapa en ny eller redigera en befintlig datavy. Mer information finns i [Skapa eller redigera en datavy](create-dataview.md).
 

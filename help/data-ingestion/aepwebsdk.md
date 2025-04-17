@@ -1,13 +1,13 @@
 ---
 title: Importera data via Adobe Experience Platform Web SDK
-description: Förklara hur man importerar data till Customer Journey Analytics via Adobe Experience Platform Web SDK och Edge Network
+description: Förklara hur data importeras till Customer Journey Analytics via Adobe Experience Platform Web SDK och Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ För att uppnå detta måste du:
 
 >[!NOTE]
 >
-> Den här snabbstartsguiden är en förenklad guide om hur du importerar data som samlats in från din webbplats till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
+> Den här snabbstartsguiden är en förenklad guide om hur man importerar data som samlats in från er webbplats till Adobe Experience Platform och använder dem i Customer Journey Analytics. Vi rekommenderar starkt att man studerar den ytterligare informationen när det hänvisas till.
 
 
 ## Konfigurera ett schema och en datauppsättning
@@ -91,7 +91,7 @@ Så här konfigurerar du ditt schema:
 
       Du kan välja knappen för förhandsgranskning om du vill se en förhandsgranskning av fälten som ingår i den här fältgruppen, till exempel `web > webPageDetails > name`.
 
-      ![Förhandsgranskning av AEP Web SDK ExperienceEvent-fältgrupp](./assets/aepwebsdk-experiencevent-preview.png)
+      ![AEP Web SDK ExperienceEvent, förhandsgranskning av fältgrupp](./assets/aepwebsdk-experiencevent-preview.png)
 
       Välj **[!UICONTROL Back]** om du vill stänga förhandsgranskningen.
 
@@ -109,7 +109,7 @@ Så här konfigurerar du ditt schema:
 
    ![Identifieringsobjekt](./assets/identification-field.png)
 
-   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I ditt fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud-ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
+   Identifieringsobjektet lägger till identifieringsfunktioner i ditt schema. I så fall vill du identifiera profiler som besöker din webbplats med hjälp av Experience Cloud ID och e-postadress. Det finns många andra attribut som du kan använda för att spåra din persons ID (till exempel kundens ID, lojalitets-ID).
 
    Välj **[!UICONTROL Apply]** om du vill lägga till det här objektet i ditt schema.
 
@@ -117,7 +117,7 @@ Så här konfigurerar du ditt schema:
 
    ![Ange ECID som identitet](./assets/specify-identity.png)
 
-   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sy ihop) beteendet hos profiler med samma ECID.
+   Du anger Experience Cloud Identity som den primära identitet som Adobe Experience Platform Identity-tjänsten kan använda för att kombinera (sammanfoga) beteendet hos profiler med samma ECID.
 
    Välj **[!UICONTROL Apply]**. En fingeravtrycksikon visas i attributet ecid.
 
@@ -145,7 +145,7 @@ Så här konfigurerar du ditt schema:
 
 1. Välj **[!UICONTROL Save]** om du vill spara ditt schema.
 
-Du har skapat ett minimalt schema som modellerar de data som du kan hämta från webbplatsen. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud-identitet och e-postadress. Genom att aktivera schemat för profil ser du till att data som hämtas från din webbplats läggs till i kundprofilen i realtid.
+Du har skapat ett minimalt schema som modellerar de data som du kan hämta från webbplatsen. Schemat gör det möjligt att identifiera profiler med hjälp av Experience Cloud Identity och e-postadress. Genom att aktivera schemat för profil ser du till att data som hämtas från din webbplats läggs till i kundprofilen i realtid.
 
 Bredvid beteendedata kan du även hämta profilattributdata från din webbplats (till exempel information om profiler som prenumererar på ett nyhetsbrev).
 
@@ -157,7 +157,7 @@ Så här hämtar du profildata:
 
 - Lägg till ett identifieringsobjekt baserat på fältgruppen Profile Core v2.
 
-- Definiera Experience Cloud-ID som primär identifierare och e-post som identifierare.
+- Definiera Experience Cloud ID som primär identifierare och e-postadress som identifierare.
 
 - Aktivera schemat för profilen
 
@@ -201,7 +201,7 @@ Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datau
 
 ## Konfigurera en datastream
 
-En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När data samlas in med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
+En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web och Mobile SDK implementeras. När du samlar in data med Adobe Experience Platform SDK:er skickas data till Adobe Experience Platform Edge Network. Det är datastream som avgör vilka tjänster som data vidarebefordras till.
 
 I din konfiguration vill du att de data du samlar in från webbplatsen ska skickas till din datauppsättning i Adobe Experience Platform.
 
@@ -312,7 +312,7 @@ Så här definierar du ett dataelement för sidnamn:
 
    - Välj **[!UICONTROL Save]**.
 
-Nu vill du ställa in ett dataelement som refererar till det Experience Cloud-ID som automatiskt tillhandahålls av Adobe Experience Platform Web SDK och som är tillgängligt via tillägget för Experience Cloud ID-tjänsten.
+Nu vill du skapa ett dataelement som refererar till det Experience Cloud-id som automatiskt tillhandahålls av Adobe Experience Platform Web SDK och som är tillgängligt via Experience Cloud ID-tjänsttillägget.
 
 Så här definierar du ett ECID-dataelement:
 
@@ -422,7 +422,7 @@ Du kan använda regler på olika sätt i taggen för att hantera variabler (med 
 
 Mer information finns i [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html).
 
-### Bygg och Publish din tagg
+### Skapa och publicera taggen
 
 När du har definierat dataelement och regler måste du skapa och publicera taggen. När du skapar en biblioteksversion måste du tilldela den till en miljö. Byggnadens tillägg, regler och dataelement kompileras sedan och placeras i den tilldelade miljön. Varje miljö har en unik inbäddningskod som gör att du kan integrera den tilldelade inbäddningen på din plats.
 
@@ -440,7 +440,7 @@ Så här skapar och publicerar du en tagg:
 
    - Välj **[!UICONTROL + Add All Changed Resources]**.
 
-     ![Publish - Skapa bibliotek](./assets/create-library-aep.png)
+     ![Publicera - Skapa bibliotek](./assets/create-library-aep.png)
 
    - Välj **[!UICONTROL Save & Build to Development]**.
 
@@ -448,7 +448,7 @@ Så här skapar och publicerar du en tagg:
 
 4. Du kan välja **[!UICONTROL ...]** om du vill återskapa biblioteket eller flytta biblioteket till en staging- eller produktionsmiljö.
 
-   ![Publish - Bygg bibliotek](./assets/build-library.png)
+   ![Publicera - Bygg bibliotek](./assets/build-library.png)
 
 Adobe Experience Platform Tags hanterar enkla till komplexa publiceringsflöden som passar din användning av Adobe Experience Platform Web SDK.
 
@@ -493,7 +493,7 @@ Med en anslutning kan du integrera datauppsättningar från Adobe Experience Pla
 
 Så här skapar du en anslutning:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Connections]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new connection]**.
 
@@ -539,7 +539,7 @@ En datavy är en behållare som är specifik för Customer Journey Analytics och
 
 Så här skapar du en datavy:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Data views]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 2. Välj **[!UICONTROL Create new data view]**.
 
@@ -576,7 +576,7 @@ Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt ka
 
 Så här skapar du ditt projekt:
 
-1. I användargränssnittet för Customer Journey Analytics väljer du **[!UICONTROL Projects]** i den övre navigeringen.
+1. I Customer Journey Analytics-gränssnittet väljer du **[!UICONTROL Projects]** på den översta menyn.
 
 2. Välj **[!UICONTROL Projects]** i den vänstra navigeringen.
 

@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Du måste lägga till den här automatiskt skapade datauppsättningen i samma an
 
 Så här lägger du till den automatiskt skapade datauppsättningen i samma anslutning som du skapade för din Web SDK-implementering:
 
-1. I Customer Journey Analytics väljer du fliken **[!UICONTROL Connections]**.
+1. I Customer Journey Analytics väljer du **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 
 1. Välj anslutningen som du [skapade för din Web SDK-implementering](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 

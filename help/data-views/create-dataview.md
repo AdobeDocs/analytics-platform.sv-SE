@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa eller redig
 
 Så här skapar eller redigerar du en datavy:
 
-1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och gå till fliken **[!UICONTROL Data views]**.
+1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Om du vill skapa en datavy väljer du **[!UICONTROL Create new data view]**. Du kan också välja en befintlig datavy i listan över datavyer för att redigera den.
 
 
