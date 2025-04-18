@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Om ni börjar anställa Adobe Customer Journey Analytics kan ni märka vissa likheter och skillnader mellan Adobe Analytics och Customer Journey Analytics. På den här sidan förklaras skillnaderna så att ni kan anpassa er till det nya arbetsflödet för implementering och rapportering. Den här sidan innehåller även ytterligare resurser om nya koncept och ytterligare steg för att göra din resa som analytiker enklare och mer framgångsrik.
 
-Flera av funktionerna i Customer Journey Analytics har bytt namn och fått en ny utformning för att passa branschens standarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Begränsningarna för eVars och props finns inte längre, vilket gynnar flexibla anpassade mått och mätvärden.
+Flera funktioner i Customer Journey Analytics har fått ett nytt namn och har fått en ny utformning som är anpassad efter branschens standarder. Vissa uppdaterade termer innehåller segment, virtuella rapportsviter, klassificeringar, kundattribut och behållarnamn. Begränsningarna för eVars och props finns inte längre, vilket gynnar flexibla anpassade mått och mätvärden.
 
 ## Vad som inte har ändrats
 
@@ -34,11 +34,11 @@ Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan t
 
 ## Ändringar i dataarkitekturen {#architecture}
 
-Customer Journey Analytics får sina data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
+Customer Journey Analytics hämtar data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
 
-Kunddata i Experience Platform lagras som datamängder, som består av ett [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) och datagrupper. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
+Kunddata i Experience Platform lagras som datauppsättningar, som består av ett [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) och datagrupper. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
-Din Customer Journey Analytics-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. De skapar sedan [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar begreppsmässigt virtuella rapportsviter och är grunden för rapportering i Customer Journey Analytics. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
+Din Customer Journey Analytics-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. De skapar sedan [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar konceptuellt virtuella rapportsviter och är grunden för rapportering i Customer Journey Analytics. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
 
 Med en anslutning kan Analytics Admin integrera datauppsättningar från Adobe Experience Platform i Customer Journey Analytics.
 
@@ -68,17 +68,17 @@ Se [Använd fall runt datavyer](/help/use-cases/data-views/data-views-usecases.m
 
 ## Förändringar av begreppet eVars och Props
 
-Begreppen [!UICONTROL eVars], [!UICONTROL props] och [!UICONTROL events] i traditionella Adobe Analytics finns inte längre i [!UICONTROL Customer Journey Analytics]. I Adobe Analytics kan eVars och props lagra beskrivningar av innehåll, kunder, kampanjer osv. och händelser räknas saker som intäkter, prenumerationer eller genererade leads. Customer Journey Analytics bevarar båda datatyperna och du kan få tillgång till dem på samma sätt - från den vänstra listen i Analysis Workspace, under Dimensioner respektive Metrisk.
+Begreppen [!UICONTROL eVars], [!UICONTROL props] och [!UICONTROL events] i traditionella Adobe Analytics finns inte längre i [!UICONTROL Customer Journey Analytics]. I Adobe Analytics kan eVars och props lagra beskrivningar av innehåll, kunder, kampanjer osv. och händelser räknas saker som intäkter, prenumerationer eller genererade leads. Customer Journey Analytics bevarar båda datatyperna, och du kan komma åt dem på samma sätt - från den vänstra listen i Analysis Workspace, under Dimensioner respektive Metrics.
 
-I Customer Journey Analytics finns det ett obegränsat antal schemaelement, inklusive mått, mått och listfält. Dessa mappas till ett obegränsat antal schemaelement, inklusive mått, mått och listfält i Experience Platform. Alla inställningar för besök och attribuering som används efter bearbetning av regler i Adobe Analytics gäller nu vid frågetiden i Customer Journey Analytics.
+I Customer Journey Analytics finns det ett obegränsat antal schemaelement, inklusive mått, mått och listfält. Dessa mappas till ett obegränsat antal schemaelement, inklusive dimensioner, mått och listfält i Experience Platform. Alla inställningar för besök och attribuering som används efter bearbetning av regler i Adobe Analytics gäller nu vid frågetagande i Customer Journey Analytics.
 
 Med den här flexibiliteten kan du råka ut för situationer där ett enda schemafält kan användas både som en dimension och ett mått för olika spårningsbehov.
 
 ## Förändringar av segmentkonceptet
 
-Även om segment inte är tekniskt migrerade från Adobe Analytics till Customer Journey Analytics kan du använda komponentmigreringsverktyget för att återskapa Adobe Analytics-segment i Customer Journey Analytics. Segmenten återskapas i Customer Journey Analytics baserat på de dimensioner och mätvärden som mappas. Mer information finns i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
+Även om segment inte är tekniskt migrerade från Adobe Analytics till Customer Journey Analytics kan du använda komponentmigreringsverktyget för att återskapa dina Adobe Analytics-segment i Customer Journey Analytics. Segmenten återskapas i Customer Journey Analytics baserat på de dimensioner och mätvärden som mappas. Mer information finns i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
 
-Även om du ännu inte kan dela eller publicera [!UICONTROL filters] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till den enhetliga profilen i Experience Platform är den här funktionen under utveckling.
+Även om du ännu inte kan dela eller publicera [!UICONTROL segments] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform enhetliga profil är den här funktionen under utveckling.
 
 Förutom segmentändringen uppdateras även segmentbehållarna.
 
@@ -113,9 +113,9 @@ Du kan också ha flera datavyer baserade på samma anslutning. Du kan till exemp
 
 &quot;Kundattribut&quot; kallas nu &quot;profildatamängder&quot;. Profildatauppsättningar innehåller data som tillämpas på dina personer, användare eller kunder i [!UICONTROL Event]-data. Du kan till exempel överföra CRM-data om dina kunder. Du kan välja vilket person-ID du vill inkludera. Varje datauppsättning som definieras i [!DNL Experience Platform] har en egen uppsättning med ett eller flera person-ID:n definierade.
 
-## Ändringar i hur Adobe identifierar besökare
+## Förändringar i hur Adobe identifierar besökare
 
-Customer Journey Analytics utökar begreppet identiteter utöver ECID:n så att det omfattar alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Om du använder ett gemensamt namnområdes-ID för datauppsättningar, eller om du använder [Stitching](../stitching/overview.md), kan du länka samman personer mellan olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i Customer Journey Analytics måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics
+Customer Journey Analytics utvidgar begreppet identiteter utöver ECID:n till att omfatta alla ID:n du vill använda, inklusive Kund-ID, Kakcookie-ID, Stitched ID, Användar-ID, Spårningskod osv. Om du använder ett gemensamt namnområdes-ID för datauppsättningar, eller om du använder [Stitching](../stitching/overview.md), kan du länka samman personer mellan olika datauppsättningar. Alla användare som skapar ett Workspace-projekt i Customer Journey Analytics måste förstå de ID som används i datauppsättningarna. Se följande video som visar hur du använder identiteter i Customer Journey Analytics
 
 
 >[!BEGINSHADEBOX]

@@ -1,11 +1,11 @@
 ---
 title: Översikt över datavyer
-description: En datavy anger hur du vill tolka element i data i anslutningen Customer Journey Analytics, t.ex. mått, dimensioner, sessioner osv.
+description: En datavy anger hur du vill tolka dataelement i Customer Journey Analytics-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 0%
@@ -22,7 +22,7 @@ En datavy är en behållare som är specifik för Customer Journey Analytics och
 
 Du kan skapa olika datavyer för samma anslutning, med mycket olika uppsättningar komponenter (mått/mått). Eller skapa datavyer med olika inställningar för tidsgräns för besök, attribuering osv. Du kan till exempel ha en datavy där alla dimensioner är inställda på [!UICONTROL Last Touch], och samtidigt en annan datavy (baserad på samma datamängd) med alla dimensioner inställda på [!UICONTROL First Touch].
 
-Workspace-projekt i Customer Journey Analytics baseras på datavyer.
+Workspace-projekt i Customer Journey Analytics bygger på datavyer.
 
 >[!IMPORTANT]
 >
@@ -55,7 +55,7 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 
 * Du kan formatera ett mätresultat, till exempel visa decimal, tid, procent eller valuta, ange decimaler, visa upp trend som grön eller röd och ange valutaalternativ.
 
-* Du kan skapa ett mått eller en dimension baserat på endast några av värdena i schemafältet. Om du till exempel vill ha ett felmått kan du skapa ett mått från sidnamnsfältet, men bara inkludera sidor som innehåller ordet `error`. Felmåttet som skapas på det här sättet stöder filter, kan infogas i beräknade värden och fungerar med attribuering, flöde, utfall osv.
+* Du kan skapa ett mått eller en dimension baserat på endast några av värdena i schemafältet. Om du till exempel vill ha ett felmått kan du skapa ett mått från sidnamnsfältet, men bara inkludera sidor som innehåller ordet `error`. Felmåttet som skapas på det här sättet stöder segment, kan infogas i beräknade värden och fungerar med attribuering, flöde, utfall osv.
 
 * För dimensioner kan du automatiskt inkludera eller exkludera endast vissa värden i ett visst fält. Om en utvecklare till exempel har skickat fel värde på `dev mistake` till ett fält kan du enkelt utesluta det från rapportering med hjälp av en exkluderingsregel. Dimensionen fungerar som om fel värde aldrig fanns i data.
 
@@ -63,7 +63,7 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 
 ## Krav för datavyer {#prerequisites}
 
-* Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till datauppsättningar i Experience Platform](/help/connections/create-connection.md).
+* Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till Experience Platform datamängder](/help/connections/create-connection.md).
 * Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview).
 * Om du använder [Adobe Analytics-källkopplingen](/help/data-ingestion/analytics.md) eller har bakgrundskunskap om Adobe Analytics, kanske du vill förstå hur fält i dina scheman och datamängder relaterar till Adobe Analytics-motsvarigheter. Mer information finns i [Mappningar av analysfält](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
 
@@ -80,7 +80,7 @@ Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektniv
 * [!UICONTROL Component type]
 * Metrisk formatering
 * Datavy name
-* Dimension allokering
+* Dimension-tilldelning
 
 ## Ta bort datavyer {#delete}
 

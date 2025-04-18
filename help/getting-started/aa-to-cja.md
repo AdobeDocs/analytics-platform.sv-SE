@@ -1,13 +1,13 @@
 ---
 title: Utveckling från Adobe Analytics
-description: Steg för att omvandla Adobe Analytics-data till data från Customer Journey Analytics
+description: Steg för att omvandla Adobe Analytics-data till Customer Journey Analytics-data
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Att förbereda dina Adobe Analytics-data för en smidig övergång till Customer
 
 ### Samla in identiteter
 
-Den kanske viktigaste faktorn när det gäller att förstå en kundresa är att veta vem kunden är i varje steg. Om du till exempel har en identifierare som finns i alla dina kanaler och motsvarande data för Customer Journey Analytics kan du sammanfoga flera källor i Customer Journey Analytics.
+Den kanske viktigaste faktorn när det gäller att förstå en kundresa är att veta vem kunden är i varje steg. Om du har en identifierare som finns i alla dina kanaler och motsvarande data för Customer Journey Analytics kan du sammanfoga flera källor i Customer Journey Analytics.
 Exempel på identiteter kan vara ett kund-ID, konto-ID eller e-post-ID. Oavsett vilken identitet (och det kan finnas flera) måste du tänka på följande för varje ID:
 
 * ID finns eller kan läggas till i alla datakällor som du vill hämta till Customer Journey Analytics
@@ -32,15 +32,15 @@ I datauppsättningar som Adobe Analytics kanske ingen identitet finns på varje 
 
 ### Justera variablerna
 
-Den enklaste metoden att omvandla Adobe Analytics-data till Customer Journey Analytics är att importera en [global rapportserie](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) till Experience Platform med [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en datauppsättning i Experience Platform, som i sin tur enkelt kan anslutas till Customer Journey Analytics.
+Det enklaste sättet att omvandla Adobe Analytics-data till Customer Journey Analytics-data är att importera en [global rapportserie](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) till Experience Platform med [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). Den här kopplingen mappar dina Adobe Analytics-variabler direkt till ett XDM-schema och en XDM-datauppsättning i Experience Platform, som i sin tur enkelt kan anslutas till Customer Journey Analytics.
 
 En fullständig global rapportsvit kanske inte alltid är möjlig för en implementering. Om du planerar att ta in flera rapportsviter i Customer Journey Analytics har du två alternativ:
 
-* Planera för att få variablerna att stämma överens i alla dessa rapportsviter. EVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportsviten 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När variablerna hämtas in i Customer Journey Analytics blandas de i en enda eVar1-dimension, vilket kan leda till förvirrande och oriktiga rapporter.
+* Planera för att få variablerna att stämma överens i alla dessa rapportsviter. EVar1 i rapportsviten 1 kan till exempel peka på [!UICONTROL Page]. I rapportserie 2 kan eVar1 peka på [!UICONTROL Internal Campaign]. När variablerna hämtas in till Customer Journey Analytics blandas de in i en enda eVar1-dimension, vilket kan leda till förvirrande och felaktig rapportering.
 
-* Använd funktionen [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) för att mappa variabler. Det blir enklare om alla rapportsviter använder samma vanliga variabeldesign, men det behövs inte om du använder den nya funktionen [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) för Experience Platform. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
+* Använd funktionen [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) för att mappa variabler. Det blir enklare om alla rapportsviter använder samma vanliga variabeldesign, men det behövs inte om du använder den nya funktionen [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) i Experience Platform. Det gör att du kan referera till en variabel med dess mappade värde, som finns på datastream-nivån (eller egenskapsnivån).
 
-Om du har undvikit att gå över till en global rapportserie på grund av problem med [!UICONTROL Uniques Exceeded] eller [!UICONTROL Low Traffic], vet du att Customer Journey Analytics inte har några [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md). Det gör att alla unika värden kan visas och räknas.
+Om du har undvikit att gå över till en global rapportserie på grund av problem med [!UICONTROL Uniques Exceeded] eller [!UICONTROL Low Traffic], bör du vara medveten om att Customer Journey Analytics inte har några [kardinalitetsbegränsningar för en dimension](/help/components/dimensions/high-cardinality.md). Det gör att alla unika värden kan visas och räknas.
 
 Här är ett användningsexempel för [som kombinerar rapportsviter med olika scheman](/help/use-cases/aa-data/combine-report-suites.md).
 
@@ -50,15 +50,15 @@ De traditionella inställningarna för Adobe Analytics Marketing Channel fungera
 
 * Bearbetningsnivån för de Adobe Analytics-data som hämtas in till Adobe Experience Platform.
 
-* Customer Journey Analytics rapportering
+* Customer Journey Analytics rapporttidskaraktär
 
 Adobe har publicerat [uppdaterade metodtips för implementering av marknadsföringskanal](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html). Dessa uppdaterade rekommendationer hjälper dig att få ut det mesta av de funktioner som redan finns i Adobe Analytics med Attribution IQ. De kommer också att hjälpa dig att lyckas när du går över till Customer Journey Analytics.
 
-I och med introduktionen av [härledda fält](../data-views/derived-fields/derived-fields.md) som en del av datavyer i Customer Journey Analytics stöds även marknadsföringskanaler på ett icke-förstörande och retroaktivt sätt med funktionsmallen för [marknadsföringskanalen](../data-views/derived-fields/derived-fields.md#function-templates).
+I och med introduktionen av [härledda fält](../data-views/derived-fields/derived-fields.md) som en del av Customer Journey Analytics datavyer stöds även marknadsföringskanaler på ett icke-förstörande och retroaktivt sätt med [funktionsmallen för marknadsföringskanal](../data-views/derived-fields/derived-fields.md#function-templates).
 
 ## Förbered dig för kritiska skillnader när du migrerar till Customer Journey Analytics
 
-I takt med att er organisation utvecklas till att använda Customer Journey Analytics kan ni ta hjälp av dessa steg för att förbereda era data och bli medvetna om de kritiska skillnaderna mellan de båda teknikerna. Den här artikeln riktar sig till en administratörspass.
+I takt med att ni börjar använda Customer Journey Analytics bör ni undersöka dessa steg för att förbereda era data och för att bli medvetna om kritiska skillnader mellan de båda teknikerna. Den här artikeln riktar sig till en administratörspass.
 
 ### Arbeta bekvämt med rapporttidsbearbetning {#report-time}
 
@@ -70,7 +70,7 @@ Denna förskjutning resulterar i vissa skillnader i hur data rapporteras, särsk
 
 ### Identifiera kritiska segment och beräknade värden {#segments-calcmetrics}
 
-Adobe Analytics-segment (som kallas [!UICONTROL filters] i Customer Journey Analytics) och beräknade värden är inte kompatibla med Customer Journey Analytics. I många fall kan dessa komponenter återskapas i Customer Journey Analytics med hjälp av nya scheman och tillgängliga data.
+Adobe Analytics segment och beräknade värden är inte kompatibla med Customer Journey Analytics. I många fall kan dessa komponenter återskapas i Customer Journey Analytics med hjälp av nya scheman och tillgängliga data.
 
 För att övergången ska bli så smidig som möjligt för användarna när de växlar mellan systemen ska du planera i förväg med
 
@@ -78,7 +78,7 @@ För att övergången ska bli så smidig som möjligt för användarna när de v
 
 2. dokumentera definitioner, och
 
-3. Identifierar vilka fält som krävs i data för att replikera dem i Customer Journey Analytics som [Filter](/help/components/filters/filters-overview.md) och [Beräknade mått](/help/components/calc-metrics/calc-metr-overview.md).
+3. Identifierar vilka fält som krävs i data för att replikera dem i Customer Journey Analytics som [Segment](/help/components/filters/filters-overview.md) och [Beräknade mått](/help/components/calc-metrics/calc-metr-overview.md).
 
 Här är några videor som vägleder dig:
 
@@ -88,7 +88,7 @@ Här är några videor som vägleder dig:
 
 ### Andra överväganden
 
-* Tack vare datavyer i Customer Journey Analytics har ni större flexibilitet när det gäller att definiera mått och mått inom Customer Journey Analytics. Du kan till exempel använda värdet för en dimension för att bli definitionen av ett mätvärde. [Läs mer](/help/use-cases/data-views/data-views-usecases.md)
+* Tack vare kraften i Customer Journey Analytics datavyer har ni större flexibilitet när det gäller att definiera mått och mått i Customer Journey Analytics. Du kan till exempel använda värdet för en dimension för att bli definitionen av ett mätvärde. [Läs mer](/help/use-cases/data-views/data-views-usecases.md)
 
 * Om du har definierat en anpassad kalender i Adobe Analytics har du liknande [anpassade kalenderfunktioner](/help/components/date-ranges/overview.md) i Customer Journey Analytics. Du måste se till att din kalender är korrekt definierad.
 
@@ -98,4 +98,4 @@ Här är några videor som vägleder dig:
 
 ### Nästa steg
 
-När du har flyttat till Customer Journey Analytics och observerat eventuella datamaterial kan du jämföra dina ursprungliga Adobe Analytics-data med Adobe Analytics-data som nu finns i Customer Journey Analytics. [Läs mer](/help/troubleshooting/compare.md)
+När du har flyttat till Customer Journey Analytics kan du jämföra dina ursprungliga Adobe Analytics-data med Adobe Analytics-data som nu finns i Customer Journey Analytics. [Läs mer](/help/troubleshooting/compare.md)

@@ -5,7 +5,7 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Customer Journey Analytics - översikt
 
-Customer Journey Analytics är Adobe nästa generation av Analytics-lösning som gör att ni kan använda kraften i Analysis Workspace med data från Adobe Experience Platform. Den kan bryta ned, filtrera, ställa frågor och visualisera årens datavärde och kombineras med plattformens möjlighet att lagra alla typer av datamappningar och datatyper. Med hjälp av **Experience Data Model (XDM)** kan data representeras och organiseras på ett enhetligt sätt, vara klara för kombinering och utforskande. Med **Adobe Experience Platform Query Service** kan du använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla data.
+Customer Journey Analytics är Adobe nästa generation av Analytics-lösning som gör att ni kan använda kraften i Analysis Workspace med data från Adobe Experience Platform. Den kan dela upp, segmentera, ställa frågor och visualisera årens datavärde, och kombineras med plattformens förmåga att lagra alla typer av datamodeller och datatyper. Med hjälp av **Experience Data Model (XDM)** kan data representeras och organiseras på ett enhetligt sätt, vara klara för kombinering och utforskande. Med **Adobe Experience Platform Query Service** kan du använda SQL-kompatibla verktyg och ramverk för att fråga efter och ändra alla data.
 
 Customer Journey Analytics-arkitektur på hög nivå visas här:
 

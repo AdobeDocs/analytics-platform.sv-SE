@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ![Inställningar för delsträng](../assets/substring-settings.png)
 
-[!UICONTROL Substring] är bara tillgängligt för dimensioner och är retroaktiv för de data som den tillämpas på. Det är en omedelbar dataomvandling som sker innan filtrering eller andra analysåtgärder tillämpas.
+[!UICONTROL Substring] är bara tillgängligt för dimensioner och är retroaktiv för de data som den tillämpas på. Det är en omedelbar dataomvandling som sker innan segmentering eller andra analysåtgärder tillämpas.
 
 ## Från vänster/höger
 

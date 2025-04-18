@@ -9,7 +9,7 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 10%
@@ -199,7 +199,7 @@ ht-degree: 10%
          + [Översikt](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurera](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Interdimensionellt utfall](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Använda filter](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Använd segment](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flöde {#flow}
          + [Översikt](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -320,19 +320,19 @@ ht-degree: 10%
       + [Tidsdelningsdimensioner](../components/dimensions/time-parting-dimensions.md)
       + [Höga kardinaldimensioner](../components/dimensions/high-cardinality.md)
    + [Mätvärden](../components/apply-create-metrics.md)
-   + Filter {#cja-filters}
+   + Segment {#cja-segments}
       + [Översikt](../components/filters/filters-overview.md)
-      + [Skapa filter](../components/filters/create-filters.md)
-      + [Skapa filter](../components/filters/filter-builder.md)
-      + [Snabbfilter](../components/filters/quick-filters.md)
-      + [Sekventiella filter](../components/filters/seg-sequential-build.md)
-      + [Dela filter](../components/filters/filters-share.md)
-      + [Taggfilter](../components/filters/filters-tag.md)
-      + [Filtrera filterlistan](../components/filters/filters-filter.md)
-      + [Markera filter som favoriter](../components/filters/filters-favorite.md)
-      + [Godkänn filter](../components/filters/filters-approve.md)
-      + [Kopiera filter](../components/filters/filters-copy.md)
-      + [Hantera filter](../components/filters/manage-filters.md)
+      + [Skapa segment](../components/filters/create-filters.md)
+      + [Skapa segment](../components/filters/filter-builder.md)
+      + [Snabbsegment](../components/filters/quick-filters.md)
+      + [Sekventiella segment](../components/filters/seg-sequential-build.md)
+      + [Dela segment](../components/filters/filters-share.md)
+      + [Tagga segment](../components/filters/filters-tag.md)
+      + [Filtrera listan med segment](../components/filters/filters-filter.md)
+      + [Markera segment som favoriter](../components/filters/filters-favorite.md)
+      + [Godkänn segment](../components/filters/filters-approve.md)
+      + [Kopiera segment](../components/filters/filters-copy.md)
+      + [Hantera segment](../components/filters/manage-filters.md)
       + [Operatorer](../components/filters/operators.md)
    + Beräknade mått {#cja-calcmetrics}
       + [Översikt](../components/calc-metrics/calc-metr-overview.md)
@@ -342,8 +342,8 @@ ht-degree: 10%
          + [Hitta mätvärden](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Mättyp och attribuering](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Bygg ett deltagandemått](../components/calc-metrics/cm-workflow/participation-metric.md)
-         + [Filtrerade mätvärden](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [Stapla och ersätta filter](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Segmenterade mätvärden](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [Stapla och ersätta segment](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Filtrera beräknade värden](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [Markera beräknade värden som favoriter](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [Kopiera beräknade värden](../components/calc-metrics/cm-workflow/cm-copy.md)

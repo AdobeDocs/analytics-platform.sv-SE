@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3812b10e558c1b8a3ee4fe474405543c68433d8e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -23,7 +23,7 @@ I den här artikeln förklaras allmänna koncept och funktioner för datauppsät
 
 Datauppsättningar är källor för en anslutning. Som en del av konfigurationen av en anslutning definierar du datauppsättningar som ska ingå i den anslutningen.
 
-Behållare används i Customer Journey Analytics för att stödja och underlätta funktioner som filter, beräknade värden och avancerade analysfunktioner.
+Behållare används i Customer Journey Analytics för att stödja och underlätta funktioner som segment, beräknade värden och avancerade analysfunktioner.
 
 
 

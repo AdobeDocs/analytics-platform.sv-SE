@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 13f2bdb9753c0f4252262c595061ed9b54c38a3c
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera dataupps
 
 +++**Hur ansluter jag onlinedata till offlinedata i [!UICONTROL Customer Journey Analytics]?**
 
-Så länge person-ID:t matchar mellan datauppsättningar kan [!UICONTROL Customer Journey Analytics] ansluta filter, attribuering, flöde, utfall och så vidare mellan datauppsättningar.
+Så länge person-ID:t matchar mellan datauppsättningar kan [!UICONTROL Customer Journey Analytics] ansluta segment, attribuering, flöde, utfall och så vidare mellan datauppsättningar.
 
 +++
 
@@ -174,7 +174,7 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics-källkopplinge
 | [!UICONTROL Sessions] och [!UICONTROL People] antal | De dedupliceras över flera rapportsviter. Därför kanske antalet inte matchar. |
 | Metrisk deduplicering | Tar bort instanser av ett mått (till exempel [!UICONTROL Orders]) om flera rader har samma transaktions-ID (till exempel [!UICONTROL Purchase ID]). Detta förhindrar att nyckeltal räknas för mycket. Därför kanske inte mätvärden som [!UICONTROL Orders] kan sammanfattas i alla rapportsviter. |
 | Valuta | Valutakonvertering stöds ännu inte i Customer Journey Analytics. Om rapportsviterna du försöker sammanfoga använder olika basvalutor kan det uppstå problem. |
-| [!UICONTROL Persistence] | [Persistence](../data-views/component-settings/persistence.md) sträcker sig över flera rapportsviter, vilket påverkar [!UICONTROL filters], [!UICONTROL attribution] och så vidare. Siffrorna kanske inte läggs ihop korrekt. |
+| [!UICONTROL Persistence] | [Persistence](../data-views/component-settings/persistence.md) sträcker sig över flera rapportsviter, vilket påverkar [!UICONTROL segments], [!UICONTROL attribution] och så vidare. Siffrorna kanske inte läggs ihop korrekt. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] dedupliceras inte automatiskt när rapportsviter sammanfogas. När du kombinerar flera klassificeringsfiler till en enda [!UICONTROL lookup]-datauppsättning kan du stöta på problem. |
 
 ## 8. [!UICONTROL Adobe Analytics] komponenter
