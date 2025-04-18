@@ -4,7 +4,7 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 5%
@@ -23,7 +23,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Visa och hantera användning | Dokumentationen om hur du [visar](/help/connections/manage-connections.md#usage) och [hanterar](/help/technotes/estimate-usage.md) Customer Journey Analytics-användning har omarbetats |
 | Content Analytics | [Dokumentation](/help/content-analytics/content-analytics.md) för Adobe Content Analytics. Med Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering. |
 | **Mars 2025** | |
-| Användningsexempel för Quantum Metric | Användningsexempel har lagts till för att samla in data från [kvantmätare](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
+| Användningsexempel för Quantum Metric | Användningsexempel har lagts till för att samla in data från [kvantmätare](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | **Februari 2025** |  |
 | Media Collection: Adobe Source Connector-uppdateringar för nya Media Reporting XDM | Analytics: Source Connector [mappar automatiskt strömmande mediedata i Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. |
 | BI-tillägg - utökat stöd | Tillägget Customer Journey Analytics BI har nu stöd för [Looker, Jupyter Notebook och R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |

@@ -7,26 +7,24 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: b82a345fbae1a0ab2debf2c4eb580422745db473
+source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
 # Använd Quantum Metric-heatmaps med Customer Journey Analytics
 
-Genom att länka kvantmetrisk heatmappning till CJA-data kan ni bättre förstå sidnivåengagemanget och optimera sidor baserat på kundens beteende. Workspace kan användas för att förstå konsumentflöden och se vilka vägar kunderna följer från en sida till nästa. Sedan kan du klicka på hyperlänkade sid-URL:er för att visuellt heatmappa hur användarna interagerar med innehållet.  Genom att länka Quantum Metric Heatmapping till CJA kan du nu koppla sidnivåinteraktioner till affärsresultat, vilket tar din analys till nästa nivå.
+Genom att länka kvantmetrisk heatmappning till CJA-data kan ni bättre förstå sidnivåengagemanget och optimera sidor baserat på kundens beteende. Workspace kan användas för att förstå konsumentflöden och se vilka vägar kunderna följer från en sida till nästa. Sedan kan du klicka på hyperlänkade sid-URL:er för att visuellt heatmappa hur användarna interagerar med innehållet. Genom att länka Quantum Metric Heatmapping till CJA kan du nu koppla sidnivåinteraktioner till affärsresultat, vilket tar din analys till nästa nivå.
 
 Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska QM ytterligare.  Läs mer om Quantum Metric-sessionsuppspelning på https://www.quantummetric.com/platform/session-replay
 
 ## Förutsättningar
 
-Det här användningsexemplet kräver att du samlar in Quantum Metrics sessions-ID tillsammans med resten av implementeringen. Mer information om hur du ändrar implementeringen finns i [Samla in sessions-ID:n för kvantmått i Customer Journey Analytics](collect-session-id.md).
-
 Du måste vara berättigad till Quantum Metric-paketet **UX Ops** för att komma åt Quantum Metrics heatmap-funktioner.
 
-## Skapa en friformstabell i Workspace och konfigurera den så att sessions-ID-värden är länkar direkt till kvantmätvärden.
+## Steg 1: Skapa en frihandstabell i Workspace och konfigurera den så att sessions-ID-värdena är länkar direkt till kvantmätvärden.
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com).
 1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Workspace]** på den översta menyn.
@@ -42,12 +40,8 @@ Du måste vara berättigad till Quantum Metric-paketet **UX Ops** för att komma
    ```
 
 1. Klicka på **[!UICONTROL Create]**.
+1. Testa en av länkarna för att se om den öppnas i URL:en med tillägget Quantum Metric synligt. Länkarna öppnas på en ny flik så att ditt Workspace-projekt förblir öppet.
 
-1. Klicka på Skapa och testa sedan någon av länkarna för att se om den öppnas i URL:en med QM-tillägget öppet. Obs! Den öppnas på en separat flik så att du inte förlorar ditt arbete.
+## Steg 2: Visa heatmaps genom att klicka på länkar i Customer Journey Analytics
 
-
-## Visa heatmaps genom att klicka på länkar i Customer Journey Analytics
-
-När du har hittat en sida som du vill utforska heatmapping för kan du använda den på panelen som URL:en finns i. Tabellen returnerar en URL som gör att du kan utforska heatmaps för sidan i fråga, rullningsdjup och nyckelzoner för interaktion.  Mer information om kvantmetriska värmekartor finns på [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  Om du behöver ytterligare resurser kontaktar du kundsupportrepresentanten för Quantum Metric eller skickar en begäran via Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
-
-
+När du har hittat en sida som du vill utforska heatmapping kan du använda den på den önskade panelen. Tabellen returnerar en URL som gör att du kan utforska heatmaps, rullningsdjup och nyckelzoner för interaktion med Quantum Metric. Mer information finns i [Produktöversikt för kvantmetrisk heatmap](https://www.quantummetric.com/platform/interaction-heatmaps). Du kan också kontakta din kundsupportrepresentant för Quantum Metric eller skicka en begäran via [portalen för kvantmetrisk kundbegäran](https://community.quantummetric.com/s/public-support-page).

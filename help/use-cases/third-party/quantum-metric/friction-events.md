@@ -1,15 +1,15 @@
 ---
 title: Lägg till Quantum Metric-friktionshändelser i Customer Journey Analytics
-description: Lägg till djupare insikter i Customer Journey Analytics med friktionshändelser som samlats in i Quantum Metric.
+description: Lägg in friktionshändelser från Quantum Metric i Customer Journey Analytics beteendedata för att få djupare insikter i CJA.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,20 @@ Det här användningsexemplet har två krav:
 
 ## Steg 1: Hämta friktionshändelser med tillägget Quantum Metric-tagg
 
-Quantum Metric CSM-teamet kan hjälpa dig att avgöra vilka schemaelement som ska läggas till och instruera dig att ändra implementeringen för att samla in önskade data för användning i Customer Journey Analytics. Kontakta Quantum Metric Customer Success Manager om du vill ha mer information.
+Se [Tillägg för kvantmetrisk datatyp](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) i guiden för destinationer för Adobe Experience Platform om du vill ha anvisningar om hur du ställer in dina taggar så att de inkluderar kvantmetrisk data. När du använder det här tillägget skickas fler rader till en befintlig datauppsättning.
 
-I slutändan vill du börja spåra friktionshändelsens namn i ett fält.
+Använd taggar i Adobe Experience Platform Data Collection för att manuellt ange namnet på friktionshändelsen så att den kan inkluderas i XDM-objektet och analyseras. Ett sätt att göra detta är i regelns egen kod:
 
-## Steg 2: Bekräfta inkluderade datamängdsfält
+```js
+_satellite.setVar('qm_error_name','error rage click');
+return true;
+```
 
-Bekräfta att datauppsättningarna i din anslutning nu har ett sessions-ID för kvantmått i den önskade datauppsättningen.
+Lägg sedan till det dynamiskt angivna dataelementet i XDM-objektet:
 
-## Steg 3: Lägg till en eller flera dimensioner och mått i datavyn i Customer Journey Analytics
+![Namn på kvantmetriskt fel, bild](assets/error-name.png)
+
+## Steg 2: Lägg till en eller flera dimensioner och mått i datavyn i Customer Journey Analytics
 
 Redigera den befintliga datavyn för att lägga till sessions-ID som en tillgänglig dimension i Customer Journey Analytics.
 
@@ -45,8 +50,9 @@ Redigera den befintliga datavyn för att lägga till sessions-ID som en tillgän
 1. Leta upp händelselistan för kvantmetrisk friktion till vänster och dra den till mätområdet i mitten.
 1. I den högra rutan anger du inställningen [Inkludera/exkludera värden](/help/data-views/component-settings/include-exclude-values.md) till önskade friktionshändelser som du vill spåra. Du kan lägga till flera friktionshändelser i samma mätvärde för att kombinera dem. Du kan också dra en annan kopia av friktionshändelsefältet till mätområdet för att spåra andra friktionshändelser som ett separat mått.
 1. När du har skapat alla önskade mått och mätvärden klickar du på **[!UICONTROL Save]**.
+1. En fullständig lista över felhändelser finns i dokumentationen för Quantum Metric. Om du har ytterligare frågor kan du kontakta din kundsupportrepresentant för Quantum Metric eller skicka en begäran via [portalen för kvantmetrisk kundbegäran](https://community.quantummetric.com/s/public-support-page).
 
-## Steg 4: Använd mått och mätvärden med övriga data i Analysis Workspace
+## Steg 3: Använd mått och mätvärden med övriga data i Analysis Workspace
 
 Med händelsedata från Quantum Metric-friktionen som samlas in tillsammans med övriga besökardata kan du använda dem precis som du gör med andra mått eller mätvärden i Customer Journey Analytics.
 
