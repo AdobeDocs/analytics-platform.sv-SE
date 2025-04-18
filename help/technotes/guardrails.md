@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 5%
@@ -84,7 +84,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
-| Målgruppsfilter | 20 | Systemstyrd Guardrail | Maximalt antal [filter](../components/filters/filters-overview.md) per publik. |
+| Målgruppssegment | 20 | Systemstyrd Guardrail | Maximalt antal [segment](../components/filters/filters-overview.md) per målgrupp. |
 | Antal målgruppsidentiteter | 20 miljoner | Systemstyrd Guardrail | Maximalt antal identiteter per publik. |
 | Målgruppsuppdateringsfrekvens | 4 | Systemstyrd Guardrail | Maximal frekvens i timmar och [målgrupp](../components/audiences/audiences-overview.md) kan uppdateras. |
 | Fönstret Uppslagning av målgruppsuppdatering | 90 | Systemstyrd Guardrail | Maximalt antal dagar för uppdateringsfönster. |
@@ -183,18 +183,18 @@ Se även Experience Platform [Datauppsättningsexportstödlinjer](https://experi
 | Uppspelningsfönster/Uppspelningsfrekvens | 1/1 - 30/7 | Systemstyrd Guardrail | Maximalt uppslagsfönster i dagar / Uppspelningsfrekvens. Värdet varierar beroende på Customer Journey Analytics-paketet (se produktbeskrivning). |
 
 
-## Filter och beräknade värden
+## Segment och beräknade värden
 
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
-| Behållare per filter | 50 | Systemstyrd Guardrail | Maximalt antal behållare per filter. |
+| Behållare per filter | 50 | Systemstyrd Guardrail | Maximalt antal behållare per segment. |
 | Mått per beräknat mått | 25 | Systemstyrd Guardrail | Maximalt antal mätvärden per beräknat mätvärde. |
-| Mått och mått per filter | 25 | Systemstyrd Guardrail | Maximalt antal unika mått per filter. |
-| Kapslade behållare per filter | 10 | Systemstyrd Guardrail | Maximalt antal kapslade behållare per filter. |
-| Regler per filter | 100 | Systemstyrd Guardrail | Maximalt antal regler per filter. |
-| Strängjämförelser per Dimension och filter | 100 | Systemstyrd Guardrail | Högsta antal strängjämförelser per dimension och filter. |
+| Mått och mått per filter | 25 | Systemstyrd Guardrail | Maximalt antal unika mått och dimensioner per segment. |
+| Kapslade behållare per filter | 10 | Systemstyrd Guardrail | Maximalt antal kapslade behållare per segment. |
+| Regler per segment | 100 | Systemstyrd Guardrail | Maximalt antal regler per segment. |
+| Strängjämförelser per Dimension per segment | 100 | Systemstyrd Guardrail | Högsta antal strängjämförelser per dimension och segment. |
 | Beräknade mätvärden | 6 000 | Systemstyrd Guardrail | Maximalt antal beräknade värden för en organisation. |
-| Filter | 50 000 | Systemstyrd Guardrail | Maximalt antal filter som du kan definiera för en organisation. |
+| Segment | 50 000 | Systemstyrd Guardrail | Maximalt antal segment som du kan definiera för en organisation. |
 | API-anrop | 120 | Systemstyrd Guardrail | API-begäranden per minut (12 begäranden var sjätte sekund). |
 
 {style="table-layout:auto"}
@@ -205,7 +205,7 @@ Se även Experience Platform [Datauppsättningsexportstödlinjer](https://experi
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
 | Plattor | 16 | Systemstyrd Guardrail | Maximalt antal plattor per styrkort. |
-| Filter | 10 | Systemstyrd Guardrail | Maximalt antal filter per styrkort. |
+| Segment | 10 | Systemstyrd Guardrail | Maximalt antal segment per styrkort. |
 | Mått | 10 | Systemstyrd Guardrail | Maximalt antal dimensioner per styrkort. |
 
 {style="table-layout:auto"}

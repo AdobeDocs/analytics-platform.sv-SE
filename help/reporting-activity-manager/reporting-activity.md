@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -51,11 +51,11 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
    ![Rapporteringsaktivitet visar rapportkön](assets/reporting-activity-monthly.png)
 
-1. (Valfritt) Du kan söka efter eller filtrera listan över anslutningar:
+1. (Valfritt) Du kan söka efter eller segmentera listan med anslutningar:
 
    * Använd sökfältet för att söka efter en viss anslutning. Börja skriva anslutningsnamnet eller ID:t och listan över anslutningar som uppdateras medan du skriver.
 
-   * Välj ![Filter](/help/assets/icons/Filter.svg) för att utöka listan med filteralternativ. Du kan filtrera efter [!UICONTROL **Favoriter**] eller [!UICONTROL **Status**].
+   * Välj ![Filter](/help/assets/icons/Filter.svg) om du vill expandera listan med segmentalternativ. Du kan filtrera efter [!UICONTROL **Favoriter**] eller [!UICONTROL **Status**].
 
      Om du vill markera en anslutning som favorit väljer du stjärnikonen till vänster om anslutningsnamnet.
 

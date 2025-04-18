@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Med hjälp av Data Insights Agent kan du besvara datacentrerade frågor i Analys
 | **Skapa och uppdatera visualiseringar** | Skapar en friformstabell och tillhörande visualisering (t.ex. en linje, streck, munstycke).<p>Exempel: *Vad är vinsten för SKU:er från februari till maj?* |
 | **Visualiseringstyper som stöds** | <ul><li>Linje</li><li>Flera rader</li><li>Frihandsregister</li><li>Liggande</li><li>Munk</li><li>Sammanfattningsnummer</li></ul> |
 | **Frågeidentifiering utanför scope** | Om du skickar en fråga som inte omfattas, till exempel&quot;exportera det här projektet&quot;, svarar Data Insights Agent genom att meddela att frågan inte omfattas. |
-| **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt kontext för att Data Insights-agenten ska kunna svara, eller är för generisk, svarar Data Insights-agenten med en klargörande fråga eller föreslagna alternativ. Exempel: <p>**Komponenter**<ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Filter: *Vilket kontosegment vill du använda?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul>**Dimension-objekt**: Vilket butiksnamn menade du? (Exempel: Store #5274, Store #2949 osv.) |
+| **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt kontext för att Data Insights-agenten ska kunna svara, eller är för generisk, svarar Data Insights-agenten med en klargörande fråga eller föreslagna alternativ. Exempel: <p>**Komponenter**<ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Segment: *Vilket kontosegment vill du tillämpa?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul>**Dimension-objekt**: Vilket butiksnamn menade du? (Exempel: Store #5274, Store #2949 osv.) |
 | **Flera varv** | Agenten för datainsikter svarar på en fråga med kontexten från tidigare uppmaningar, vilket gör att användare kan uppdatera visualiseringar och ställa uppföljningsfrågor. Exempel: <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> |
 | **Verifierbarhet** | Data kan verifieras och korrigeras med hjälp av den genererade frihandstabellen och datavisualisering. Om en användare till exempel frågar *Trendbeställningar förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts på den nyligen genererade panelen, datavisualisering och frihandstabellen. |
 | **Feedback** | <ul><li>Tummen upp</li><li>Tummen ned</li><li>Flagga</li></ul> |

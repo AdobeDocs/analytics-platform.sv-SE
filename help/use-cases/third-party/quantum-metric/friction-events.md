@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -66,4 +66,4 @@ Möjliga analysidéer är:
 
 * Trend friction-händelsedata över tid
 * Lägg till Customer Journey Analytics-händelser som några steg och Quantum Metric-friktionshändelser i en utfalls- eller trattvisualisering. Med den här rapporten kan ni se var besökarna som oftast stöter på problem.
-* Skapa och lägg på ett filter för besökare som upplever friktionshändelser för en djupare analys
+* Skapa och tillämpa ett segment för besökare som upplever friktionshändelser för en djupgående analys

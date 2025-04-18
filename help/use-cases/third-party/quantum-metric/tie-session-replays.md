@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,6 @@ Varje sessions-ID är nu en klickbar länk. Mer information om hur du lägger ti
 
 ## Steg 5: Visa sessioner från Customer Journey Analytics
 
-När du har hittat ett intressant segment som du vill utforska sessionsuppspelningar kan du använda det på panelen som innehåller dina sessions-ID-länkar och filtrera efter segment. Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska mer i kvantmätaren.
+När du har hittat ett intressant segment som du vill utforska sessionsuppspelningar kan du använda det på panelen som innehåller dina sessions-ID-länkar och segment. Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon av dem för att utforska mer i kvantmätaren.
 
 Mer information finns i [Enterprise Guide to session replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) på Quantum Metric. Du kan också kontakta din kundsupportrepresentant för Quantum Metric eller skicka en begäran via [portalen för kvantmetrisk kundbegäran](https://community.quantummetric.com/s/public-support-page).

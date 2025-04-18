@@ -3,19 +3,19 @@ title: Överför resurser
 description: Lär dig överföra komponenter från en användare till en annan
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 9663a24c2430d3822cb83876ea048b6423405215
+exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 0%
 
 ---
 
-
 # Överför resurser
 
-Med verktyget Resursöverföring kan du överföra ägarskap av resurser till andra användare. Assets kan innehålla komponenter som projekt, filter, datumintervall, beräknade värden, anteckningar, aviseringar och schemalagda projekt.
+Med verktyget Resursöverföring kan du överföra ägarskap av resurser till andra användare. Assets kan innehålla komponenter som projekt, segment, datumintervall, beräknade värden, anteckningar, aviseringar och schemalagda projekt.
 
-Assets är ofta knutet till en enskild ägare och i vissa fall, t.ex. filter och beräknade värden, kan de inte redigeras eller delas ens av administratörer. När användare lämnar organisationen eller ändrar sin roll kan det bli nödvändigt att överföra ägarskapet av dessa resurser till andra användare för att säkerställa kontinuitet och lämplig åtkomst.
+Assets är ofta knutet till en enskild ägare och kan i vissa fall, t.ex. segment och beräknade värden, inte redigeras eller delas ens av administratörer. När användare lämnar organisationen eller ändrar sin roll kan det bli nödvändigt att överföra ägarskapet av dessa resurser till andra användare för att säkerställa kontinuitet och lämplig åtkomst.
 
 ## Behörigheter
 
@@ -23,7 +23,7 @@ Resursöverföring kräver produktadministratörsbehörighet för Customer Journ
 
 ## Överför resurser
 
-1. Navigera till **[!UICONTROL Tools]** > **[!UICONTROL Asset Transfer]** i CJA.
+1. I CJA går du till **[!UICONTROL Tools]** > **[!UICONTROL Asset Transfer]**.
 
    ![Menyobjekt för resursöverföring](/help/tools/asset-transfer/assets/asset-transfer.png)
 
@@ -51,7 +51,7 @@ Resursöverföring kräver produktadministratörsbehörighet för Customer Journ
 
    >[!NOTE]
    >
-   >    När resurser som refererar till andra komponenter överförs (till exempel projekt som refererar till andra filter och beräknade värden), delas komponenter som inte ägs av den aktuella ägaren av projektet endast med mottagaren. Ägarskapet för alla andra komponenter överförs till mottagaren.
+   >    När du överför resurser som refererar till andra komponenter (till exempel projekt som refererar till andra segment och beräknade värden), delas komponenter som inte ägs av den aktuella ägaren av projektet endast med mottagaren. Ägarskapet för alla andra komponenter överförs till mottagaren.
 
 1. Om du vill markera _alla_ resurser i en mapp markerar du kryssrutan bredvid **[!UICONTROL Name]** högst upp i tabellen.
 

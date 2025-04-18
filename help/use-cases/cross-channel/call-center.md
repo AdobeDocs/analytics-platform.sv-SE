@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Customer Journey Analytics har den värdefulla och robusta möjligheten att komb
 
 * Den viktigaste komponenten för att kombinera dessa två datauppsättningar är en gemensam identifierare mellan varje datakälla. Exempel är ett kund-ID, en hashad e-post, inloggningsanvändarnamn eller telefonnummer.
 * Tillgång till både Adobe Experience Platform och Customer Journey Analytics
-* Om datauppsättningen innehåller loggar från ett interaktivt röstsvarssystem rekommenderar Adobe att data endast behandlas med uppmaningsinteraktioner innan de importeras till Platform.
+* Om datauppsättningen innehåller loggar från ett interaktivt röstsvarssystem rekommenderar Adobe att du endast bearbetar dessa data med uppmaningsinteraktioner innan du importerar dem till plattformen.
 * Om datauppsättningen innehåller samtalsloggar rekommenderar Adobe att du inkluderar följande kolumner:
    * Datum/tid då samtalet inleddes
    * Samtalsorsak
@@ -42,7 +42,7 @@ När du importerar data till plattformen kan följande tips hjälpa dig att få 
 
 ## Koppla samman person-ID:n
 
-Customer Journey Analytics kräver en gemensam identifierare för att generera en [kombinerad datamängd](/help/connections/combined-dataset.md).
+Customer Journey Analytics kräver en gemensam identifierare för att skapa en [kombinerad datamängd](/help/connections/combined-dataset.md).
 
 * Om dina datauppsättningar redan har en gemensam identifierare för varje händelse i båda datauppsättningarna kan du hoppa över det här steget och fortsätta skapa en anslutning.
 * Om någon av dina datauppsättningar bara har en gemensam identifierare för vissa händelser, kan du sammanfoga data med [Stitching](/help/stitching/overview.md) för steg som aktiverar flerkanalsanalys för dessa två datauppsättningar.
@@ -69,11 +69,11 @@ Följande visualiseringar kan användas för att få insikter från din sammansl
 
 Denna visualisering hjälper er att förstå hur väl CCA sammanfogar data.
 
-1. Skapa två filter. Variabeln som används i dessa två filter är samma variabel som nämns ovan som återspeglar datakällan för varje händelse. Mer information finns i [Skapa ett filter](/help/components/filters/create-filters.md).
+1. Skapa två segment. Variabeln som används i de här två segmenten är samma variabel som nämns ovan som återspeglar datakällan för varje händelse. Mer information finns i [Skapa ett segment](/help/components/filters/create-filters.md).
    * Personbehållare där datauppsättnings-ID är lika med dina webbdata
    * Personbehållare där datauppsättnings-ID är lika med dina kundtjänstdata
 2. Dra en [Vennbildvisualisering](/help/analysis-workspace/visualizations/venn.md) till arbetsytan i Analysis Workspace.
-3. Dra de två nyskapade filtren till området **[!UICONTROL Add Filter]** och personmåttet till området **[!UICONTROL Add Metric]**.
+3. Dra de två nyskapade segmenten till området **[!UICONTROL Add Filter]** och personmåttet till området **[!UICONTROL Add Metric]**.
 
 I den resulterande Venndatavisualiseringen visas antalet personer i datauppsättningen som innehåller både webb- och callcenterdata. Ju större överlappning, desto fler personer sys ihop. De områden som inte överlappar representerar personer som endast finns i den ena datauppsättningen eller den andra.
 
@@ -93,8 +93,8 @@ Den resulterande rapporten visar de översta sidorna som driver samtal till ert 
 Du kan öka insikterna ytterligare med den här tabellen genom att dela upp samtal utifrån orsak eller kategori.
 
 1. Klicka på den högra markören under dimensionen Anropsorsak i komponentlistan. Den här åtgärden visar enskilda dimensionsvärden.
-2. Dra önskade dimensionsvärden under anropsmåttet, som filtrerar mätvärdena efter varje anropsorsak.
-3. Upprepa för varje samtalsorsak som du vill fördjupa dig i. Använd filtret Alla sessioner om du vill visa den sammanlagda summan.
+2. Dra önskade dimensionsvärden under anropsmåttet, som segmenterar mätvärdena för varje anropsorsak.
+3. Upprepa för varje samtalsorsak som du vill fördjupa dig i. Använd segmentet Alla sessioner för att visa den sammanställda summan.
 
 <!-- screenshot -->
 
@@ -139,10 +139,10 @@ step 2:
 
 Slide 4
 
-Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential filters, but you lose the ability to use attribution IQ
+use sequential segments, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->

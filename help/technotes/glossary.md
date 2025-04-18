@@ -5,9 +5,9 @@ exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,10 @@ Vissa Customer Journey Analytics-termer skiljer sig från hur de traditionellt h
 | --- | --- | --- |
 | Sök datauppsättning | Klassificering | Använd sökning för att hämta värdet från den angivna datauppsättningen för en nyckel/matchande nyckel (i en händelsedatamängd) där det finns en 1-till-1-relation. Du kan till exempel ange&quot;tracking_code&quot; som den nyckel som matchar&quot;tracking_code&quot; i händelsedatamängden. |
 | Profildatamängd | Kundattribut | Om du samlar in företagsdata i en CRM-databas (customer relationship management) kan du överföra dessa data till en profildatauppsättning i Adobe Experience Platform. När du har skapat en anslutning till datauppsättningen i Customer Journey Analytics och skapat en datavy kan du utnyttja data i Workspace. |
-| Experience Cloud organisation | Inloggningsföretag | Se [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
+| Experience Cloud | Inloggningsföretag | Se [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | Ej tillämpligt | Report Suite | Rapporteringssviter i traditionell Adobe Analytics-mening finns inte längre. I stället skapar du (virtuella) [datavyer](/help/data-views/create-dataview.md) från de plattformsdatauppsättningar som du har upprättat anslutningar till. |
-| Filter | Segment | Segment är nu filter. Filter i Customer Journey Analytics fungerar på samma sätt som segment. Det är bara terminologin som har ändrats. |
-| Datavy | Virtuell rapportsvit | I Adobe Analytics är ett virtuellt rapportpaket en filtrerad vy av ett överordnat rapportpaket. Den största skillnaden mellan ett virtuellt rapportpaket och en datavy i Customer Journey Analytics är att det virtuella rapportpaketet är en delmängd av ett rapportpaket av typen&quot;bas&quot; eller&quot;överordnad&quot; och därför ärver några av dess inställningar. Eftersom det inte längre finns några överordnade rapportsviter/basrapportsviter definierar du datavyer med egna inställningar. |
+| Segment | Segment | Segment som brukade vara filter. De har bytt namn till&quot;segment&quot;. |
+| Datavy | Virtuell rapportsvit | I Adobe Analytics är ett virtuellt rapportpaket en filtrerad vy av ett överordnat rapportpaket. Den största skillnaden mellan ett virtuellt rapportpaket och en datavy i Customer Journey Analytics är att det virtuella rapportpaketet är en delmängd av ett rapportpaket av typen&quot;base&quot; eller&quot;parent&quot; och därför ärver några av dess inställningar. Eftersom det inte längre finns några överordnade rapportsviter/basrapportsviter definierar du datavyer med egna inställningar. |
 
 ## Adobe Experience Platform ordlista
 

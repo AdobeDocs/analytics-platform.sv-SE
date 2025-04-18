@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Customer Journey Analytics använder en kraftfull egen arkitektur som distribuer
 
 Rapporteringsmotorn är avgörande för att Customer Journey Analytics ska kunna interagera med och agera på alla kundresedata i den rapporteringsmotorn. Customer Journey Analytics har en omfattande uppsättning komponenter som gör att du kan göra detta visuellt och genom att dra och släppa. Med BI-visualiseringsverktyg kan du utforska inom gränserna för SQL-förberedda data (som definieras av IT). Med Customer Journey Analytics kan du bryta ned och segmentera så mycket du vill, utan att behöva gå tillbaka till IT för att skapa ytterligare en SQL-vy.
 
-&quot;Progressivt&quot; är ett nyckelbegrepp här: i motsats till de flesta visualiseringar i BI-verktyg kan du med det visuella dra-och-släpp-gränssnittet i Customer Journey Analytics kontinuerligt dela upp data efter dina specifika behov: du kan interaktivt skapa visuella frågor med relevanta mått, dimensioner, filter (segment), beräkningar, tidslinjer, anteckningar och andra analysvärden.
+&quot;Progressivt&quot; är ett nyckelbegrepp här: i motsats till de flesta visualiseringar i BI-verktyg kan du med det visuella dra-och-släpp-gränssnittet i Customer Journey Analytics kontinuerligt dela upp data efter dina specifika behov: du kan interaktivt skapa visuella frågor med relevanta mått, dimensioner, segment, beräkningar, tidslinjer, anteckningar och andra analysvärden.
 
 De inbyggda visualiseringskomponenterna är smarta funktioner som:
 

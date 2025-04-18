@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3753'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Allmänna inställningar gäller för din Customer Journey Analytics-upplevelse 
 | --- | --- |
 | **[!UICONTROL Landing page]** | Välj vilken sida som ska visas som standardsida när du öppnar Customer Journey Analytics: <ul><li>Projektlista (standard)</li><li>Tomt projekt</li><li>Guidad analys av tomma trender</li><li>Specifikt projekt, valt från en lista</li></ul> |
 | **[!UICONTROL Tips]** | Visar tips i en blå ruta längst ned till höger i Analysis Workspace. <p>Det här alternativet är aktiverat som standard.</p> |
-| **[!UICONTROL Components displayed in left panel groups]** | Välj hur många av varje komponentgrupp som ska visas på komponentmenyn i den vänstra panelen. <p>Om du väljer 0 för en komponentgrupp är komponentgruppen inte längre tillgänglig från den vänstra panelen.</p><p>Som standard visas fem komponenter för var och en av följande komponentgrupper:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponentöversikt](/help/components/overview.md).</p> |
+| **[!UICONTROL Components displayed in left panel groups]** | Välj hur många av varje komponentgrupp som ska visas på komponentmenyn i den vänstra panelen. <p>Om du väljer 0 för en komponentgrupp är komponentgruppen inte längre tillgänglig från den vänstra panelen.</p><p>Som standard visas fem komponenter för var och en av följande komponentgrupper:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Segment</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponentöversikt](/help/components/overview.md).</p> |
 
 ### IMS-organisationsinställningar {#ims-organization-preferences}
 

@@ -1,13 +1,13 @@
 ---
-title: Använd exempel för datavyer i Customer Journey Analytics
-description: Flera användningsfall som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
+title: Användningsexempel för datavyer i Customer Journey Analytics
+description: Flera användningsområden som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Mer information finns i [Använda sammanfattningsdata](summary-data.md).
 
 ## Användningsexempel för BI-tillägg
 
-Se användningsexempel för [BI-tillägg](bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget.
+Se användningsexemplen för [BI-tillägget](bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget.
 
 ## Skapa ett mått från ett strängschemafält {#string}
 
@@ -39,7 +39,7 @@ När du skapar en datavy kan du till exempel skapa ett [!UICONTROL Orders]-mått
 1. Öppna avsnittet **[!UICONTROL Include/Exclude Values]** och ange följande:
    1. Aktivera **[!UICONTROL Set include exclude values]**.
    1. Välj **[!UICONTROL If all criteria are met]** från **[!UICONTROL Match]**.
-   1. Ange `confirmation`. Den här texten för page_title anger att den här sidan är relaterad till att placera en order. När du har granskat alla sidrubriker där villkoren uppfylls, räknas `1` för varje instans. Resultatet är ett nytt mätvärde (inte ett beräknat mätvärde) Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Det fungerar med Attribution IQ, filter och var du än är kan du använda standardvärden.
+   1. Ange `confirmation`. Den här texten för page_title anger att den här sidan är relaterad till att placera en order. När du har granskat alla sidrubriker där villkoren uppfylls, räknas `1` för varje instans. Resultatet är ett nytt mätvärde (inte ett beräknat mätvärde) Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Det fungerar med Attribution IQ, segment och alla andra kan du använda standardvärden.
 
    ![Dimension till mått](../assets/string-to-metric.gif){width=100%}
 1. Du kan ytterligare ange en attribueringsmodell för det här måttet, till exempel [!UICONTROL Last Touch], med [!UICONTROL Lookback window] av [!UICONTROL Session].
@@ -132,7 +132,7 @@ Nya sessioner rapporteras nästan alltid korrekt. De enda undantagen är:
 
 ## Använda funktionerna Datum och Tid {#date}
 
-Scheman i Adobe Experience Platform innehåller fälten [!UICONTROL Date] och [!UICONTROL Date-Time]. Datavyer i Customer Journey Analytics har nu stöd för dessa fält. När du drar dessa fält till en datavy som en dimension kan du ange deras [format](/help/data-views/component-settings/format.md). Den här formatinställningen avgör hur fälten visas i rapporter. Exempel:
+Scheman i Adobe Experience Platform innehåller fälten [!UICONTROL Date] och [!UICONTROL Date-Time]. Customer Journey Analytics datavyer har nu stöd för dessa fält. När du drar dessa fält till en datavy som en dimension kan du ange deras [format](/help/data-views/component-settings/format.md). Den här formatinställningen avgör hur fälten visas i rapporter. Exempel:
 
 * Om du väljer **[!UICONTROL Day]** med formatet **[!UICONTROL Month, Day, Year]** för datumformatet kan ett exempel i en rapportering se ut så här: 23 augusti 2022.
 
