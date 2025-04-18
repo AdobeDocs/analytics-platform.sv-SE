@@ -4,7 +4,7 @@ title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Customer Journey Analytics landningssida
 
-Landningssidan för Customer Journey Analytics visar [!DNL Analysis Workspace] och innehåller en startsida för projektledaren samt en utbildningssektion som hjälper dig att hantera kundresedata mer effektivt.
+Startsidan för Customer Journey Analytics markerar [!DNL Analysis Workspace] och innehåller en startsida för projektledaren och en utbildningssektion som hjälper dig att hantera kundresedata mer effektivt.
 
 
 >[!BEGINSHADEBOX]
@@ -25,7 +25,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Startsida i Analy
 >[!ENDSHADEBOX]
 
 
-Landningssidan för Customer Journey Analytics består av följande underflikar: Projekt och utbildningsmaterial.
+Customer Journey Analytics landningssida består av följande underflikar: Projekt och utbildningsmaterial.
 
 **[!UICONTROL Projects]** är anpassade designer som kombinerar datakomponenter, tabeller och visualiseringar som du har skapat eller som någon annan har skapat och delat med dig. [!UICONTROL Projects] refererar också till tomma projekt och tomma mobilstyrkort.
 
@@ -53,7 +53,7 @@ Fliken **[!UICONTROL Learning]** innehåller praktiska videoutgångar, självstu
 
 >[!NOTE]
 >
->Flera av följande inställningar finns kvar under sessionen och mellan sessionerna. Till exempel den flik du har markerat, de markerade filtren, de markerade kolumnerna och kolumnsorteringsriktningen. Sökresultaten är inte beständiga.
+>Flera av följande inställningar finns kvar under sessionen och mellan sessionerna. Till exempel den flik du har markerat, de markerade segmenten, de markerade kolumnerna och kolumnsorteringsriktningen. Sökresultaten är inte beständiga.
 
 Mer information finns i [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
@@ -116,11 +116,11 @@ Utbildningssidan innehåller praktiska videoutgångar, självstudiekurser och l�
 Lär dig mer med utbildningssidan i Customer Journey Analytics:
 
 * Nybörjare, mellanliggande eller avancerade funktioner och användningsområden i Customer Journey Analytics
-* Hur man smidigare kan gå över från Adobe Analytics till Customer Journey Analytics
+* Gå smidigare från Adobe Analytics till Customer Journey Analytics
 
 Så här kommer du åt utbildningsinnehållet:
 
-* I Customer Journey Analytics väljer du [!UICONTROL **Workspace**] på den översta menyn och sedan [!UICONTROL **Learning**] på den vänstra panelen.
+* I Customer Journey Analytics väljer du [!UICONTROL **Workspace**] på den översta menyn och sedan [!UICONTROL **Om**] på den vänstra panelen.
 
 ### Funktioner
 
@@ -130,7 +130,7 @@ Utbildningssidan har följande funktioner
 * **Spåra förlopp:** När du har markerat en del av innehållet visas en ![CheckCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** -tagg. Den här taggen hjälper dig att spåra dina framsteg med utbildningsinnehållet. Du kan markera taggen ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** om du vill ta bort den från ett visst innehåll.
 * **Visa ytterligare innehåll:** När du visar en videofilm väljer du **[!UICONTROL Learn more]** om du vill visa relaterat dokumentationsinnehåll på Experience League. Du kan också välja något av följande alternativ på sidan Lär dig mer om du vill visa ytterligare innehåll:
    * **[!UICONTROL Visit YouTube]:** Visa hela spelningslistan för Analysis Workspace YouTube.
-   * [!UICONTROL **Besök Experience League**]: Se hela sviten med dokumentation för Customer Journey Analytics på Experience League.
+   * [!UICONTROL **Besök Experience League**]: Se hela uppsättningen Customer Journey Analytics-dokumentation för Experience League.
 * **Grundläggande om nya användare:** Demonstrationen [!UICONTROL Learning Workspace Fundamentals] rekommenderas för nya användare. Demonstrationen tar dig direkt till Workspace och leder dig igenom de vanligaste åtgärderna. Demonstrationen kan också startas om när som helst i Workspace via verktygstipset i sidhuvudet [Frihandspanelen](/help/analysis-workspace/c-panels/freeform-panel.md) eller [Tom panel](/help/analysis-workspace/c-panels/blank-panel.md).
 
 ## Önskad startsida

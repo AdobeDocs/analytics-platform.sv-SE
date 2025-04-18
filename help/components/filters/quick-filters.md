@@ -4,7 +4,7 @@ title: Snabbsegment
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 0%
@@ -57,11 +57,11 @@ Resultatet av de snabbsegment du skapar på en panel används (med AND-logik) p�
 Håll pekaren över **[!UICONTROL Quick segment]** om du vill hantera ett snabbsegment.
 
 * Välj ![Redigera](/help/assets/icons/Edit.svg) för att öppna [snabbsegmentsverktyget](#quick-filter-builder) och redigera snabbsegmentet.
-* Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) för att öppna ett popup-fönster. I popup-fönstret visas information om filtret. Du kan välja **[!UICONTROL Make available to all projects and add to your component list]** om du vill lägga till segmentet i komponentlistan ![ Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** på komponentpanelen. Du ser en **[!UICONTROL Save quick segment]**-dialogruta där du uppmanas att ange ett namn för segmentet. Välj **[!UICONTROL Save]** om du vill fortsätta. [!UICONTROL Quick segment] blir en **[!UICONTROL Segment]**. Du kan inte längre redigera segmentet med [snabbsegmentsverktyget](#quick-filter-builder). I stället måste du redigera segmentet som ett vanligt segment med hjälp av [segmentverktyget](filter-builder.md).
+* Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) för att öppna ett popup-fönster. I popup-fönstret visas information om segmentet. Du kan välja **[!UICONTROL Make available to all projects and add to your component list]** om du vill lägga till segmentet i komponentlistan ![ Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** på komponentpanelen. Du ser en **[!UICONTROL Save quick segment]**-dialogruta där du uppmanas att ange ett namn för segmentet. Välj **[!UICONTROL Save]** om du vill fortsätta. [!UICONTROL Quick segment] blir en **[!UICONTROL Segment]**. Du kan inte längre redigera segmentet med [snabbsegmentsverktyget](#quick-filter-builder). I stället måste du redigera segmentet som ett vanligt segment med hjälp av [segmentverktyget](filter-builder.md).
 
 ## Bygg snabbt segment
 
-Nedan finns ett exempel på snabbsegmentsverktyget. I exemplet öppnas verktyget för ett snabbfilter med namnet `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Båda snabbfiltren längst upp gäller panelen [!UICONTROL Average Order Value Dashboard] och alla visualiseringar i den, till exempel friformstabellen [!UICONTROL Average Order Value Per Country].
+Nedan finns ett exempel på snabbsegmentsverktyget. I exemplet öppnas byggaren för ett snabbsegment med namnet `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Båda snabbsegmenten längst upp gäller för panelen [!UICONTROL Average Order Value Dashboard] och alla visualiseringar i den, till exempel friformstabellen [!UICONTROL Average Order Value Per Country].
 
 ![Skapa snabbsegment](assets/quick-filter-builder.png)
 

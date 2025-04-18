@@ -5,7 +5,7 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -18,13 +18,13 @@ Vanliga frågor och svar för guidad analys.
 
 +++**Har min organisation åtkomst till guidad analys?**
 
-Vyer med guidad analys ingår i alla paket med Customer Journey Analytics. Se avsnittet [provisionering](overview.md#provisioning) på översiktssidan om du vill veta mer om de vyer som CJA-paketet låser upp.
+Vyer med guidad analys ingår i alla Customer Journey Analytics-paket. Se avsnittet [provisionering](overview.md#provisioning) på översiktssidan om du vill veta mer om vilka vyer ditt CJA-paket låser upp.
 
 +++
 
 +++**Vilka implementeringsändringar krävs för att använda guidad analys?**
 
-Om du redan använder Customer Journey Analytics idag behövs inga ytterligare implementeringsändringar. I den guidade analysen används samma [datavyer](../data-views/data-views.md) och [anslutningar](../connections/overview.md) som andra CJA-gränssnitt som [Analysis Workspace](../analysis-workspace/home.md).
+Om du redan använder Customer Journey Analytics idag behövs inga ytterligare implementeringsändringar. I den guidade analysen används samma [datavyer](../data-views/data-views.md) och [anslutningar](../connections/overview.md) som i andra CJA-gränssnitt som [Analysis Workspace](../analysis-workspace/home.md).
 
 För att dina slutanvändare ska kunna bli mest framgångsrika med guidad analys rekommenderar vi att du har ett starkt händelseschema och en stark hanteringsstrategi i Adobe Experience Platform och [datavyer](../data-views/data-views.md).
 
@@ -62,7 +62,7 @@ Guidad analys och [Analysis Workspace](../analysis-workspace/home.md) anpassar s
 
 * **Analysis Workspace är en dimensionsinriktad upplevelse.** tabeller består vanligtvis av dimensionella rader, medan kolumner vanligtvis är mått. Du kan använda filter på både rader och kolumner för att få fram önskade data.
 
-* **Guidad analys är en händelse- och användarcentrerad upplevelse.** Varje analys börjar med att välja händelser, sedan kan dimensioner och filter läggas till för att förfina händelsedata.
+* **Guidad analys är en händelse- och användarcentrerad upplevelse.** Varje analys börjar med att välja händelser, sedan kan dimensioner och segment läggas till för att förfina händelsedata.
 
 ![Analysis Workspace och guidade analysvyer](assets/structure.png){style="border:1px solid gray"}
 
@@ -70,7 +70,7 @@ Titta på följande exempel där du fokuserar på data runt hemsidan på din web
 
 * En typisk dimensionsinriktad Analysis Workspace-strategi skulle vara:&quot;Vi tittar på startsidan och ser hur många sidvisningar den fått.&quot;
 
-  ![Dimensionen centrerad](assets/dimension-centered.png){style="border:1px solid gray"}
+  ![Centrerad i Dimension](assets/dimension-centered.png){style="border:1px solid gray"}
 
 * En typisk händelse och användarcentrerad metod för guidad analys är&quot;Hur många användare har besökt hemsidan?&quot;
 

@@ -4,7 +4,7 @@ description: Läs mer om virtuella rapportmiljöer och sandlådemiljöer.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics
 
-Adobe erbjuder en mängd olika sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är praktiskt att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html):
+Adobe har ett antal sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är praktiskt att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html):
 
 * Adobe Analytics virtuella rapportsviter
-* datavyer i Customer Journey Analytics
+* Customer Journey Analytics datavyer
 * Adobe Experience Platform sandlådor
 
 ## Adobe Analytics virtuella rapportsviter
@@ -42,27 +42,27 @@ En virtuell rapportsvit är inte:
 * Tillgängligt som källa för dataflöden till Adobe Experience Platform via Analytics-källkopplingen. Endast fullständiga (icke-virtuella) rapportsviter är tillgängliga för användning med Analytics-källkopplingen.
 
 
-## datavyer i Customer Journey Analytics
+## Customer Journey Analytics datavyer
 
 Mer information finns i: [Översikt över datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html).
 
 En datavy:
 
-* Kan baseras på Customer Journey Analytics-filter.
+* Kan baseras på Customer Journey Analytics-segment.
 * Kan tillämpas på både historiska och nya data på ett icke-förstörande sätt.
-* Gör att du kan skapa en eller flera virtuella vyer ovanpå en anslutning till Customer Journey Analytics, som kan användas av olika affärsteam.
+* Gör att du kan skapa en eller flera virtuella vyer ovanpå en Customer Journey Analytics-anslutning, som kan användas av olika affärsteam.
 * Kan användas för att styra åtkomst till och strukturera olika typer av data för olika användare i Customer Journey Analytics.
-* Innehåller kraftfulla icke-förstörande alternativ för att omforma och förbättra data som kommer in i Customer Journey Analytics via en anslutning till Customer Journey Analytics.
-* Baseras på Customer Journey Analytics rapporthanteringsfunktioner.
+* Innehåller kraftfulla icke-förstörande alternativ för att omvandla och förbättra data som kommer in i Customer Journey Analytics via en Customer Journey Analytics-anslutning.
+* Baseras på rapporttidsbearbetningen i Customer Journey Analytics.
 * Tillåter användare att skapa en anpassad definition för &quot;session&quot;.
-* Används vid rapportkörning, ungefär som vid en filterutvärdering. Detta är _efter_ att Source Connector (Adobe Analytics eller någon annan) har skrivit data till en datauppsättning i Adobe Experience Platform-sjön, och _efter_ har data importerats till Customer Journey Analytics via en Customer Journey Analytics-anslutning.
+* Används vid rapportkörning, ungefär som vid en segmentutvärdering. Detta är _efter_ att Source Connector (Adobe Analytics eller någon annan) har skrivit data till en datauppsättning i Adobe Experience Platform-sjön och _efter_ att data har importerats till Customer Journey Analytics via en Customer Journey Analytics-anslutning.
 * Tillåter ett obegränsat antal variabler, även om kurering kan begränsa vilka variabler som exponeras för användare
 * Tillåter anpassad namngivning av behållare för händelse, session och person.
 * Stöder anpassade kalenderalternativ.
 
 Datavyn innehåller inte följande:
 
-* Tillhandahåll direkt ett sätt att kombinera rapportsviter eller andra datauppsättningar. I stället kombineras datauppsättningar med i en Customer Journey Analytics-anslutning. De kombinerade data från anslutningen till Customer Journey Analytics är tillgängliga för användning i alla datavyer som baseras på anslutningen.
+* Tillhandahåll direkt ett sätt att kombinera rapportsviter eller andra datauppsättningar. I stället kombineras datauppsättningar med i en Customer Journey Analytics-anslutning. De kombinerade data från Customer Journey Analytics-anslutningen är tillgängliga för användning i alla datavyer som baseras på den anslutningen.
 
 ## Adobe Experience Platform sandlådor
 
@@ -70,7 +70,7 @@ Mer information finns i: [Översikt över sandlådor](https://experienceleague.a
 
 En Adobe Experience Platform-sandlåda:
 
-* Ger möjlighet att partitionera en enda Adobe Experience Platform-instans i separata virtuella miljöer (dev, test, stage, production osv.) för att utveckla och utveckla applikationer för digitala upplevelser.
+* Ger möjlighet att partitionera en enda Adobe Experience Platform-instans i separata virtuella miljöer (dev, test, stage, production osv.) för att utveckla och utveckla program för digitala upplevelser.
 * Kan ses som en behållare som innehåller alla data och program för en viss miljö.
 
 En Adobe Experience Platform-sandlåda gör inte följande:

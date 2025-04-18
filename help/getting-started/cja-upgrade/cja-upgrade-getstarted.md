@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Nedan följer några av de viktigaste fördelarna: (En utförlig lista samt mer 
 
 * [Omformningar i rapporttid i datavyer](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-  Med datavyer i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde, filtrera delmängder eller använda härledda fält. Alla dessa omformningar är icke-förstörande.
+  Med datavyer i Customer Journey Analytics kan du tolka data från en anslutning ytterligare. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde, segmentdelningar eller använda härledda fält. Alla dessa omformningar är icke-förstörande.
 
 * [Omvandlingar gäller historiska och nya data](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 

@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Så här skapar du en datavy:
 
    Mer information om vilka alternativ som är tillgängliga när du lägger till komponenter i en datavy finns i [Komponenter](/help/data-views/create-dataview.md#components) i [Skapa eller redigera en datavy](/help/data-views/create-dataview.md).
 
-1. Välj fliken [!UICONTROL **Inställningar**]. Härifrån kan du konfigurera filter så att de tillämpas på hela datavyn och konfigurera sessionens tidsgräns och mått.
+1. Välj fliken [!UICONTROL **Inställningar**]. Härifrån kan ni konfigurera segment så att de tillämpas i hela datavyn och konfigurera sessionens tidsgräns och mätvärden.
 
    Mer information om de alternativ som är tillgängliga när du konfigurerar inställningar för en datavy finns i [Inställningar](/help/data-views/create-dataview.md#settings) i [Skapa eller redigera en datavy](/help/data-views/create-dataview.md).
 

@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 916afd0d70f2690df61dde70f46f63e78d62b21a
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2448'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Stitching** | [Stitching](/help/stitching/overview.md) är en kraftfull funktion som höjer en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera och som gör det möjligt att smidigt kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID). |
 | **Mallar i Adobe Journey Optimizer** | Anpassa det nya rapporteringsgränssnittet i Adobe Journey Optimizer genom att skapa eller redigera en [mall](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en) i Customer Journey Analytics och sedan spara mallen som ska användas på rapportsidan i Journey Optimizer. |
 | **Obegränsade kunddimensioner och mätvärden** | Customer Journey Analytics-måtten är obegränsade. Värden kan vara numeriska, text, objekt, listor eller blandningar av alla. Dimensioner kan vara kapslade eller hierarkiska. <br/>Adobe Analytics stöder däremot upp till högst 75 props och 250 eVars. |
-| **Obegränsade unika värden** | Customer Journey Analytics har stöd för ett obegränsat antal unika värden eller dimensionsobjekt som kan rapporteras i en enda dimension.<p>Det finns inga kardinalitetsbegränsningar för [för en dimension](/help/components/dimensions/high-cardinality.md), vilket gör att unika värden kan visas och räknas.</p><p>Den här metoden tar bort rapporterings- och analysbegränsningar som kan finnas med storskaliga Adobe Analytics-implementeringar, vilket resulterar i [!UICONTROL Low Traffic]-etiketter.</p><p>I Customer Journey Analytics går det att se en [!UICONTROL Uniques Exceeded]-etikett, men de förekommer mycket mindre ofta och kan minskas genom att ett filter eller segment tillämpas på data.</p> |
+| **Obegränsade unika värden** | Customer Journey Analytics har stöd för ett obegränsat antal unika värden eller dimensionsobjekt som kan rapporteras i en enda dimension.<p>Det finns inga kardinalitetsbegränsningar för [för en dimension](/help/components/dimensions/high-cardinality.md), vilket gör att unika värden kan visas och räknas.</p><p>Den här metoden tar bort rapporterings- och analysbegränsningar som kan finnas med storskaliga Adobe Analytics-implementeringar, vilket resulterar i [!UICONTROL Low Traffic]-etiketter.</p><p>I Customer Journey Analytics går det att se en [!UICONTROL Uniques Exceeded]-etikett, men dessa förekommer mycket sällan och kan minskas genom att ett segment används i data.</p> |
 
 ## Funktioner/komponenter i Adobe Analytics som stöds fullt ut {#full-support}
 
@@ -109,7 +109,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Produktvariabel** | Inom Experience Platform kan användare använda en array med objekt i ett dataset-schema för att tillgodose detta användningsfall. Inom Customer Journey Analytics kan kunderna använda valfritt antal produktvariabler och är inte begränsade till en enda variabel som i Adobe Analytics. |
 | **Projektdelning** | Projektdelning stöds endast mellan användare av Customer Journey Analytics - det finns ingen projektdelning mellan Customer Journey Analytics och det traditionella Analysis Workspace. |
 | **Report Builder** | Stöds med en ny Office 365-plugin för Excel. |
-| **Användarbehörigheter/Dataåtkomstkontroller** | Customer Journey Analytics skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)-produktadministratörer, produktprofiladministratörer och användare. Endast produktadministratörer kan skapa/uppdatera/ta bort anslutningar, projekt, filter eller beräknade värden som skapats av andra användare, medan produktadministratörer och produktprofiladministratörer kan redigera datavyer. Ytterligare användarbehörigheter är tillgängliga för exempelvis att skapa beräknade värden, filter eller anteckningar. |
+| **Användarbehörigheter/Dataåtkomstkontroller** | Customer Journey Analytics skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)-produktadministratörer, produktprofiladministratörer och användare. Endast produktadministratörer kan skapa/uppdatera/ta bort anslutningar, projekt, filter eller beräknade värden som skapats av andra användare, medan produktadministratörer och produktprofiladministratörer kan redigera datavyer. Ytterligare användarbehörigheter är tillgängliga för exempelvis att skapa beräknade värden, segment eller anteckningar. |
 | **Visualiseringar** | Alla Workspace-visualiseringar stöds förutom för kartvisualisering. |
 | **Sammanfogning mellan enheter och kanaler** | Stöds för händelsedatamängder som innehåller identitetsinformation. Se [Stitching](../../stitching/overview.md). |
 
