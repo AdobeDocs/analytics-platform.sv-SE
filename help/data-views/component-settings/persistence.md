@@ -5,7 +5,7 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistence"
->abstract="Konfigurera standardallokeringsmodellen som används för en dimension. Allokering tillämpas före filter i rapportering. Mer information finns i [allokeringsinställningar](/help/data-views/component-settings/persistence.md#allocation-settings), [förfalloinställningar](/help/data-views/component-settings/persistence.md#expiration-settings), [bindningsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) och [bindningsmått](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Konfigurera standardallokeringsmodellen som används för en dimension. Allokering gäller före segment i rapportering. Mer information finns i [allokeringsinställningar](/help/data-views/component-settings/persistence.md#allocation-settings), [förfalloinställningar](/help/data-views/component-settings/persistence.md#expiration-settings), [bindningsdimension](/help/data-views/component-settings/persistence.md#binding-dimension) och [bindningsmått](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 
 * Med **Förfallotid** kan du bestämma hur länge ett dimensionsobjekt kvarstår efter den händelse det är inställt på.
 
-[!UICONTROL Persistence] är bara tillgängligt för dimensioner och är retroaktiv för de data som den tillämpas på. Det är en omedelbar dataomvandling som sker innan filtrering eller andra analysåtgärder tillämpas.
+[!UICONTROL Persistence] är bara tillgängligt för dimensioner och är retroaktiv för de data som den tillämpas på. Det är en omedelbar dataomvandling som sker innan segmentering eller andra analysåtgärder tillämpas.
 
 | Inställning | Beskrivning |
 | --- | --- |
