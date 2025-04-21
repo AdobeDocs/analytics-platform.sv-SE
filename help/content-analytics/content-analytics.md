@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 28a0abd3415a167e6dd3de3b77bd49b78fc003cd
+source-git-commit: feb253b20820112d5aa4b4eee31cff74d99fa186
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
@@ -43,15 +43,15 @@ Content Analytics använder följande nyckeltermer:
 
 ## Så här fungerar det
 
-I Content Analytics används webbbildvisningsdata som samlats in i händelsedatamängder i Experience Platform. Dessa data kan samlas in via de olika metoder som är tillgängliga: Experience Platform Edge Network (Web SDK, Server API) eller Analytics-källkopplingen.
+Content Analytics använder webbbildvisningsdata i händelsedatamängder i Experience Platform för att [samla in innehållshändelsedata](config/datacollection.md). Innehållsdatainsamlingen kombineras med (befintlig) datainsamlingsimplementering av beteendedata.
 
 ![Content Analytics - så fungerar det](assets/aca-overview.gif)
-
 
 1. När en användare besöker en webbplats, [konfigurerad för Content Analytics](config/configuration.md), registrerar Experience Platform Web SDK visningar och interaktioner med innehåll.
 1. Identitet- och funktionstjänsten bearbetar dessa interaktioner. Den processen består av en hämtningstjänst som granskar de offentliga versionerna av de konfigurerade URL:erna som definierar interaktionen. För alla dessa hämtade URL:er identifierar identitetstjänsten unikt upplevelserna och resurserna. Och funktionstjänsten använder AI/ML-tjänster för att identifiera upplevelser och metadata och attribut för resurser.
 1. Resultaten av dessa tjänster ([komponenter, attribut och identiteter](/help/content-analytics/report/components.md)) används för att uppdatera relevanta data för innehållsanalys i Experience Platform.
 1. Data för innehållsanalys, tillsammans med beteendedata och andra sökdata, kan användas i en Customer Journey Analytics-konfiguration ([Anslutning](/help/connections/overview.md), [Datavy](/help/data-views/data-views.md) och [Workspace](/help/analysis-workspace/home.md)). Denna inställning ger grunden till de unika insikterna på makronivå om ditt innehåll. <br/>Du kan snabbt komma igång med Content Analytics-rapporter och -analyser med hjälp av mallen [Content Analytics](/help/content-analytics/report/report.md#template).
+
 
 >[!NOTE]
 >
