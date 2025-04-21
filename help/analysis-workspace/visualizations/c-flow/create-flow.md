@@ -4,7 +4,7 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Använd en snabbmeny på en nod i flödesvisualiseringen med följande alternati
 |--- |--- |
 | **[!UICONTROL Focus on this node]** | Ändra fokus till den valda noden. Flödesdiagrammets fokusnod visas i mitten. |
 | **[!UICONTROL Start over]** | Gå tillbaka till Frihandsdiagramverktyget där du kan skapa ett nytt flödesdiagram. |
-| **[!UICONTROL Create a filter for this path]** | Skapa ett filter. Det här valet tar dig till filterverktyget, där du kan konfigurera det nya filtret. |
+| **[!UICONTROL Create a segment for this path]** | Skapa ett segment. Det här valet tar dig in i segmentbyggaren, där du kan konfigurera det nya segmentet. |
 | **[!UICONTROL Breakdown]** | Dela upp noden efter tillgängliga mått, mått eller tid. |
 | **[!UICONTROL Filter column]** | Samma filteralternativ visas som de är tillgängliga i frihandstabellen. Mer information om de tillgängliga alternativen finns i avsnittet Använda ett enkelt eller avancerat filter i en tabell i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | **[!UICONTROL Exclude item]** eller **[!UICONTROL Restore excluded items]** | Tar bort en specifik nod från kolumnen och skapar den automatiskt som ett filter överst i kolumnen. Om du vill återställa det uteslutna objektet väljer du **[!UICONTROL Restore Excluded Item]** på snabbmenyn. Du kan också öppna segmentet överst i kolumnen och ta bort rutan med det objekt du just uteslutit. |

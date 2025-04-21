@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '985'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,6 @@ Se [Åtkomstkontroll](/help/technotes/access-control.md).
 
 Flera funktioner i Customer Journey Analytics har bytt namn, jämfört med traditionella Adobe Analytics, så att de överensstämmer med branschstandarder. Några av de uppdaterade terminologin:
 
-* Segment kallas nu för filter.
 * Virtuella rapportsviter kallas nu datavyer.
 * Klassificeringar kallas nu&quot;Sök efter datauppsättningar&quot;.
 * Kundattribut kallas nu profildatamängder.

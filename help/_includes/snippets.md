@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '3756'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Tillgängliga tidsjämförelsealternativ omfattar föregående period, 13 veckor
 *Den här videon demonstrerar funktionaliteten med Adobe Analytics. Funktionen finns dock på liknande sätt i Customer Journey Analytics. Observera skillnaderna i terminologi mellan Adobe Analytics och Customer Journey Analytics (t.ex.&quot;besök&quot; jämfört med&quot;sessioner&quot;).*
 
 
-## Segmentpanelen {#filterspanel}
+## Panelen Filter {#filterspanel}
 
 1. Välj ![Filter](/help/assets/icons/Filter.svg) för att öppna panelen Filter. Om du behöver mer utrymme för filterlistan kan du stänga panelen genom att välja ![Filter](/help/assets/icons/Filter.svg) en gång till.
 1. Välj filter från något av de tillgängliga filteravsnitten.

@@ -4,7 +4,7 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '6207'
 ht-degree: 0%
@@ -118,9 +118,9 @@ Du kan skapa noder på följande sätt: genom att dra Workspace-komponenter frå
    | Dimension | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några befintliga noder. |
    | Dimension | En befintlig nod | Komponenten kombineras automatiskt med den befintliga noden. |
    | Dimension | En pil som ansluter två befintliga noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p> |
-   | Filter | Tomt område på arbetsytan | Noden visar var komponenten släpptes utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden inkluderar summan av det primära måttet, segmenterat efter det segment du valde.</p> <p>Om du till exempel väljer Personer som det primära måttet för resan och sedan lägger till ett segment av Idag till ett tomt område på arbetsytan, visas alla personer som har haft en händelse idag.</p> |
-   | Filter | En befintlig nod | Tillämpar segmentet på den befintliga noden. |
-   | Filter | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Tillämpar segmentet på den punkt på banan där komponenten släpptes.</p> |
+   | Segment | Tomt område på arbetsytan | Noden visar var komponenten släpptes utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden inkluderar summan av det primära måttet, segmenterat efter det segment du valde.</p> <p>Om du till exempel väljer Personer som det primära måttet för resan och sedan lägger till ett segment av Idag till ett tomt område på arbetsytan, visas alla personer som har haft en händelse idag.</p> |
+   | Segment | En befintlig nod | Tillämpar segmentet på den befintliga noden. |
+   | Segment | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Tillämpar segmentet på den punkt på banan där komponenten släpptes.</p> |
    | Datumintervall | Tomt område på arbetsytan | Noden visar var komponenten släpptes, utan anslutning till några andra noder.<p>Antalet och procentandelen som visas på noden omfattar summan av det primära måttet, segmenterat efter det datumintervall du valde.</p> <p>Om du t.ex. väljer Personer som det primära måttet för resan och sedan lägger till datumintervallet Den här månaden i ett tomt område på arbetsytan, visas alla personer som har haft en händelse under den aktuella månaden.</p> |
    | Datumintervall | En befintlig nod | Använder datumintervallet på den befintliga noden. |
    | Datumintervall | En pil som ansluter två noder | Noden visas mellan de två befintliga noderna där komponenten släpptes och är ansluten till båda befintliga noder. (Mer information finns i [Anslut noder](#connect-nodes).)</p><p>Tillämpar datumintervallet på den punkt på banan där komponenten släpptes.</p> |
@@ -274,10 +274,10 @@ Den logik som tillämpas på noder när de kombineras varierar beroende på vilk
 | Mått + Mått | Kopplad med OR |
 | Dimension-artikel + Dimension-artikel (från samma överordnade dimension) | Kopplad med OR |
 | Dimension item + Dimension item (from different parent dimensions) | Kopplad med AND |
-| Filter + filter | Kopplad med AND |
-| Dimension + mått, datumintervall eller filter | Kopplad med AND |
-| Datumintervall + Mått, Filter eller Dimension | Kopplad med AND |
-| Filter + mått, datumintervall eller Dimension | Kopplad med AND |
+| Segment + segment | Kopplad med AND |
+| Dimension + mått, datumintervall eller segment | Kopplad med AND |
+| Datumintervall + Mått, Segment eller Dimension | Kopplad med AND |
+| Segment + mått, datumintervall eller Dimension | Kopplad med AND |
 
 ### Anslut noder
 
@@ -546,7 +546,7 @@ Så här visar du trenddata:
 
 Du kan skapa ett nytt segment baserat på en nod eller pil inom en resa. När segmentet har skapats kan du använda det var som helst i Analysis Workspace.
 
-Filter som skapas från arbetsytan i Resursen använder [sekventiell segmentering](/help/components/filters/seg-sequential-build.md). Det innebär att segmentet använder operatorn THEN för att länka samman sekvensen av händelser (resan) som människor flödade genom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i segmentet.
+Segment som har skapats från arbetsytan på resan använder [sekventiell segmentering](/help/components/filters/seg-sequential-build.md). Det innebär att segmentet använder operatorn THEN för att länka samman sekvensen av händelser (resan) som människor flödade genom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i segmentet.
 
 Om du skapar ett segment baserat på en nod som har flera banor som flödar in i det, inkluderas alla banor i segmentet. Separata banor förenas med operatorn OR.
 
@@ -556,9 +556,9 @@ Så här skapar du ett segment:
 
 1. Välj [!UICONTROL **Skapa segment från nod**] eller [!UICONTROL **Skapa segment från pil**].
 
-   Filterverktyget visas. I avsnittet [!UICONTROL **Definition**] skapas segmentdefinitionen baserat på noden eller pilen som du valde och dess kontext inom resan.
+   Segmentbyggaren visas. I avsnittet [!UICONTROL **Definition**] skapas segmentdefinitionen baserat på noden eller pilen som du valde och dess kontext inom resan.
 
-1. Ange en rubrik för segmentet och gör eventuella andra ändringar. Mer information om hur du skapar ett segment finns i [Filterverktyget](/help/components/filters/filter-builder.md).
+1. Ange en rubrik för segmentet och gör eventuella andra ändringar. Mer information om hur du skapar ett segment finns i [Segmentbyggare](/help/components/filters/filter-builder.md).
 
 1. Välj [!UICONTROL **Spara**] om du vill spara segmentet.
 

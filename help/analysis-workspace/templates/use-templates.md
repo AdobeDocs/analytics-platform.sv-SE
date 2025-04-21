@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 004804eace69ec72f824603ec0d7b82470b19041
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '19643'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Följande information beskriver hur du får åtkomst till och använder mallar f
    >
    >Mer information om kontextetiketter finns i [Komponentinställningar](/help/data-views/component-settings/overview.md).
 
-   1. Markera filterikonen.
+   1. Markera segmentikonen.
 
    1. Välj **[!UICONTROL Not ready for use]** om du vill visa mallar som kräver ytterligare komponenter.
 
@@ -106,7 +106,7 @@ Så här anpassar du en mall och sparar den som ett projekt:
 1. Gör något av följande:
 
    * Visa mallen.
-   * Dra ett eller flera filter till filtersläppzonen längst upp. Dra till exempel filtret [!UICONTROL **Mobila kunder**] och visa resultatet.
+   * Dra ett eller flera segment till segmentsläppzonen längst upp. Dra till exempel segmentet [!UICONTROL **Mobila kunder**] och visa resultatet.
    * Ändra datumintervallet genom att gå till kalendern längst upp till höger.
    * Lägg in dimensionsanalyser, dra in andra mätvärden och anpassa mallen efter behov.
 

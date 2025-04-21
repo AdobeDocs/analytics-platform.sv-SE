@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 1%
@@ -136,26 +136,26 @@ Välj **[!UICONTROL Apply to all panels]** om du vill använda datumintervallet 
 
 Med panelens släppzon kan du tillämpa segment och listrutesegment på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera segment på en panel.
 
-### Filter
+### Segment
 
-Dra och släpp segment från den vänstra panelen i panelens släppzon för att börja segmentera panelen. Upprepa den här processen om du vill lägga till fler segment på panelen. Filter visas sida vid sida högst upp på panelen.
+Dra och släpp segment från den vänstra panelen i panelens släppzon för att börja segmentera panelen. Upprepa den här processen om du vill lägga till fler segment på panelen. Segmenten visas sida vid sida högst upp på panelen.
 
 ![Den vänstra panelen visar tillgängliga mått och det mobila kundmåttet som dras till panelens släppzon.](assets/segment-filter.png)
 
 #### Snabbsegment
 
-Komponenter som inte tillhör segment kan också dras direkt till släppzonen för att skapa snabbsegment, vilket sparar tid och arbete med att gå till [segmentbyggaren](/help/components/filters/filter-builder.md). Filter som skapas på det här sättet definieras automatiskt som händelsenivåsegment. Du kan snabbt ändra den här definitionen genom att välja ![Redigera](/help/assets/icons/Edit.svg) bredvid segmentnamnet.
+Komponenter som inte tillhör segment kan också dras direkt till släppzonen för att skapa snabbsegment, vilket sparar tid och arbete med att gå till [segmentbyggaren](/help/components/filters/filter-builder.md). Segment som skapas på det här sättet definieras automatiskt som händelsenivåsegment. Du kan snabbt ändra den här definitionen genom att välja ![Redigera](/help/assets/icons/Edit.svg) bredvid segmentnamnet.
 
 
 Mer information finns i [Snabbsegment](/help/components/filters/quick-filters.md).
 
 ![Ad hoc-segment som är offentliga och släpps i släppzonen](assets/adhoc-segment-filter.png)
 
-### Nedrullningsbara filter
+### Nedrullningsbara segment
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedrullningsbara filter](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedrullningsbara segment](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

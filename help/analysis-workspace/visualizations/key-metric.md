@@ -4,7 +4,7 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Den här visualiseringen åtgärdar flera vanliga användningsfall, bland annat:
 
 1. Lägg till en ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]**-visualisering. Se [Lägga till en visualisering på en panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Konfigurera visualiseringen genom att välja **[!UICONTROL Metric]**, **[!UICONTROL Primary date range]**, **[!UICONTROL Comparison date range]** (valfritt) och **[!UICONTROL Filter]** (valfritt):
+1. Konfigurera visualiseringen genom att välja **[!UICONTROL Metric]**, **[!UICONTROL Primary date range]**, **[!UICONTROL Comparison date range]** (valfritt) och **[!UICONTROL Segment]** (valfritt):
 
    ![Nyckelmätningskonfiguration som visar alternativen för mått, primärt datumintervall, jämförelsedatumintervall och segment.](assets/key-metrics-config.png)
 
@@ -61,7 +61,7 @@ Den här visualiseringen åtgärdar flera vanliga användningsfall, bland annat:
    | **[!UICONTROL Metric]** | Välj det mätvärde som du vill undersöka. Alla mätvärden stöds. |
    | **[!UICONTROL Primary date range]** | Det aktuella datumintervallet för frihandstabellen.<p>Välj bland tillgängliga datumintervall i datavyn.</p> <p>Välj [!UICONTROL **Panelens datumintervall**] om du vill använda samma datumintervall som används på panelen där visualiseringen finns.</p> |
    | **[!UICONTROL Comparison date range]** | Datumintervallet som du vill jämföra med det primära datumintervallet. |
-   | **[!UICONTROL Filter (optional)]** | Alla segment som du är intresserad av för sammanfattningen. |
+   | **[!UICONTROL Segment (optional)]** | Alla segment som du är intresserad av för sammanfattningen. |
 
    {style="table-layout:auto"}
 

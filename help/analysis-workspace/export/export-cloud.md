@@ -5,7 +5,7 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: a7bd67894b02174d980a730086f89df97b524356
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 1%
@@ -183,7 +183,7 @@ Följande funktioner stöds inte och tas automatiskt bort från export i fulltab
 Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bort dem från tabellen när du exporterar hela tabeller:
 
 * Beräknade mått som använder grundläggande eller avancerade funktioner i metrisk definition (mer information finns i [Grundfunktioner](/help/components/calc-metrics/cm-functions.md) och [Avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md))
-* Komponenter som har begränsats av en administratör från att exporteras (mer information finns i avsnittet *Filter om datastyrningsprinciper i datavyer* i [Etiketter och profiler](/help/data-views/data-governance.md) )
+* Komponenter som har begränsats av en administratör från att exporteras (mer information finns i avsnittet *Segment om datastyrningsprinciper i datavyer* i [Etiketter och profiler](/help/data-views/data-governance.md) )
 * Alla dimensioner som uppfyller alla följande kriterier:
    * Skapades från ett fält som är en del av en [objektmatris](/help/use-cases/object-arrays.md) (liknar flervärdesvariabler i Adobe Analytics)
    * Har [persistence aktiverat](/help/data-views/component-settings/persistence.md)
@@ -197,7 +197,7 @@ Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bor
    * Beräknade mått
    * Mätvärden
    * Datumintervall
-   * Filter
+   * Segment
 
 ### Attributionsbeteende
 

@@ -4,7 +4,7 @@ description: Så här interagerar du med dynamiska och statiska dimensionsobjekt
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Dynamiska dimensionsobjekt har radfilteralternativet ![Filter](/help/assets/icon
 
 Statiska dimensionsobjekt ändras inte med tiden. De är fasta komponenter som alltid returneras i en friformstabell. Statiska dimensionsobjekt föredras när du alltid vill analysera samma objekt, oavsett om det är specifika kampanjer eller specifika dagar i veckan.
 
-Varje gång du manuellt markerar och släpper specifika komponentvärden (mått, mått, filter, datumintervall) i en tabell blir resultatet en statisk lista med rader eller kolumner.
+Varje gång du manuellt markerar och släpper specifika komponentvärden (mått, mått, segment, datumintervall) i en tabell blir resultatet en statisk lista med rader eller kolumner.
 
 Om du till exempel drar över vissa objekt i webbläsartypen, som Microsoft och Apple, hämtas dessa två objekt alltid till tabellen.
 
@@ -44,9 +44,9 @@ Statiska dimensionsobjekt har **inte** alternativet radfilter. I stället finns 
 
 ## Blandade dimensionsobjekt
 
-Dimensioner från olika dimensioner kan läggas till i samma tabell. Radhuvudet säger **[!UICONTROL Mixed Dimensions]** i dessa fall. Dessa dimensionsobjekt är statiska. Du kan till exempel lägga till specifika dimensionsobjekt från dimensionen Webbläsargrupp och andra dimensionsobjekt från dimensionen Webbläsarnamn.
+Dimension-objekt med olika dimensioner kan läggas till i samma tabell. Radhuvudet säger **[!UICONTROL Mixed Dimensions]** i dessa fall. Dessa dimensionsobjekt är statiska. Du kan till exempel lägga till specifika dimensionsobjekt från dimensionen Webbläsargrupp och andra dimensionsobjekt från dimensionen Webbläsarnamn.
 
-![En friformstabell som markerar kolumnen Blandade Dimensioner.](assets/mixed-dimensions.png)
+![En friformstabell som markerar kolumnen Blandade dimensioner.](assets/mixed-dimensions.png)
 
 ## Frihandsrader
 

@@ -4,7 +4,7 @@ title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 | [!UICONTROL Metric] | Mätvärden är kvantitativ information om personaktivitet, t.ex. vyer, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
 | **[!UICONTROL Visualization]** | Workspace erbjuder [ett antal visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data. t.ex. stapeldiagram, mundiagram, histogram, linjediagram, kartor, punktdiagram med mera. |
 | **[!UICONTROL Dimension Breakdown]** | En dimensionsuppdelning är ett sätt att dela upp en dimension efter andra dimensioner. Du kan till exempel bryta ned USA:s mobilenheter för att få mobilenhetsbesök per delstat. Eller så kan ni bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer med mera. |
-| **[!UICONTROL Filter]** | Med filter kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL People] segment baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>utträde och tävlingsbidrag: personer från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
+| **[!UICONTROL Segment]** | Med segment kan du identifiera delmängder av personer baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL People] segment baserat på <li>attribut: webbläsartyp, enhet, antal besök, land, kön eller</li><li>interaktioner: kampanjer, nyckelordssökning, sökmotor eller</li><li>utträde och tävlingsbidrag: personer från Facebook, en definierad landningssida, hänvisande domän, eller</li><li> anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
 
 ## Använd
 
