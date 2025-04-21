@@ -4,7 +4,7 @@ title: Snabbsegment
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Villkorsområdet anger villkoren (upp till högst tre). För varje villkor kan d
 | **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Endast tillgängligt när du definierar mer än ett villkor. Välj i listrutan ![ChevronDown](/help/assets/icons/ChevronDown.svg) mellan villkoren. Markeringen avgör den booleska logiken för snabbsegmentet. Du kan inte blanda logik när du har tre villkor. Den booleska logiken är antingen **[!UICONTROL AND]** eller **[!UICONTROL OR]**. |
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | Lägger till ytterligare ett villkor i ditt snabbsegment. Den här knappen är bara tillgänglig när du har definierat ett eller två villkor för snabbsegmentet. |
 | **[!UICONTROL Apply]** | Använd ändringarna på snabbsegmentet. |
-| **[!UICONTROL Open builder]** | Du uppmanas att bekräfta med en **[!UICONTROL Are your sure?]**-dialogruta. Om du väljer **[!UICONTROL OK]** kan du inte längre ändra ditt segment i [snabbsegmentsverktyget](#quick-filter-builder). Snabbsegmentets namn ändras till **[!UICONTROL Segment]** och har nu ett mörkare blått tunt fält till vänster.<br/>Det vanliga [segmentverktyget](filter-builder.md) öppnas med alternativet **[!UICONTROL Make this segment available to all your projects and add it to your component list]**. <ul><li>Om du väljer det här alternativet och väljer **[!UICONTROL Apply]** läggs segmentet till i komponentlistan ![ Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** på komponentpanelen.</li><li>Om du inte markerar det här alternativet och väljer **[!UICONTROL Apply]** förblir segmentet bara för Workspace-projekt.</li></ul> |
+| **[!UICONTROL Open builder]** | Du uppmanas att bekräfta med en **[!UICONTROL Are your sure?]**-dialogruta. Om du väljer **[!UICONTROL OK]** kan du inte längre ändra ditt segment i [snabbsegmentsverktyget](#quick-filter-builder). Snabbsegmentets namn ändras till **[!UICONTROL Segment]** och har nu ett mörkare blått tunt fält till vänster.<br/>Det vanliga [segmentverktyget](filter-builder.md) öppnas med alternativet **[!UICONTROL Make this segment available to all your projects and add it to your component list]**. <ul><li>Om du väljer det här alternativet och väljer **[!UICONTROL Apply]** läggs segmentet till i komponentlistan ![ Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** på komponentpanelen.</li><li>Om du inte markerar det här alternativet och väljer **[!UICONTROL Apply]** förblir segmentet bara för Workspace-projekt.</li></ul> |
 | **[!UICONTROL Cancel]** | Välj det här alternativet om du vill avbryta skapandet eller redigeringen av ett snabbsegment. |
 
 ## Snabbsegment kontra segment

@@ -4,7 +4,7 @@ description: Bestäm hur en komponent interagerar med ett värde inom ett segmen
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Operatorer
 
-Med filterverktyget kan du jämföra och begränsa värden för komponenter med valda operatorer. Det finns två kategorier av operatorer: [[!UICONTROL Standard]](#standard-operators) och [[!UICONTROL Distinct Count]](#distinct-count-operators).
+Med segmentverktyget kan du jämföra och begränsa värden för komponenter med hjälp av valda operatorer. Det finns två kategorier av operatorer: [[!UICONTROL Standard]](#standard-operators) och [[!UICONTROL Distinct Count]](#distinct-count-operators).
 
 ## Standardoperatorer
 

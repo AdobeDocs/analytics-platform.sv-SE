@@ -3,9 +3,10 @@ description: Skapa, redigera eller ta bort aviseringar.
 title: Hantera värden
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Du kan filtrera, tagga, ta bort, byta namn på, kopiera, aktivera, inaktivera f�
 
 * Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Alerts]**.
 
-Varningshanteraren är mycket strukturerad som [Filterhanteraren](/help/components/filters/manage-filters.md) och [Beräknad måtthanterare](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+Varningshanteraren är strukturerad som [Segmenthanteraren](/help/components/filters/manage-filters.md) och [hanteraren för beräknade värden](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 
 ## Varningshanteraren
@@ -34,7 +35,7 @@ Varningshanteraren har följande gränssnittselement:
 |---|---|
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) en varning. |
 | **[!UICONTROL Title and description]** | Om du vill redigera varningen markerar du titellänken, som öppnar [Varningsverktyget](alert-builder.md#alert-builder). |
-| **[!UICONTROL Type]** | Visar om aviseringen är en datavarning från Customer Journey Analytics eller en varning om användning av serversamtal. |
+| **[!UICONTROL Type]** | Visar om aviseringen är en Customer Journey Analytics-datavarning eller en varning om användning av serversamtal. |
 | **[!UICONTROL Enabled]** | Anger om aviseringen är aktiverad eller inaktiverad. |
 | **[!UICONTROL Data view]** | De datavyer som den här varningen gäller för. |
 | **[!UICONTROL Owner]** | Varningens ägare. Som icke-administratör visas endast aviseringar som du äger eller aviseringar som delas med dig. |

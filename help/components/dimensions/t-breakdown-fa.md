@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Ni kan dela upp era data på ett obegränsat sätt för just era behov, bygga fr
 
    ![Stegresultat som visar Skapa avisering från markering.](assets/breakdown.png)
 
-1. På undermenyn väljer du **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** eller **[!UICONTROL Date ranges]** och sedan ett alternativ.
+1. På undermenyn väljer du **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Segments]** eller **[!UICONTROL Date ranges]** och sedan ett alternativ.
 
 Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppssegment under valda tidsperioder. Du kan även gå ned mer i detalj.
 

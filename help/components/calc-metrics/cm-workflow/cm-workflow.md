@@ -3,9 +3,9 @@ description: Lär dig hur du skapar beräknade värden.
 title: Skapa beräknade mått
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Administratörer kan dock ge användare behörighet **[!UICONTROL Calculated Met
 
 Du kan skapa ett beräknat mått på följande sätt:
 
-![Olika sätt att skapa ett filter](assets/create-metric.png)
+![Olika sätt att skapa ett beräknat mått](assets/create-metric.png)
 
 * **A**. I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Calculated metrics]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] i [[!UICONTROL Calculated metrics] manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 * **B**. I ett Workspace-projekt väljer du ![Lägg till](/help/assets/icons/Add.svg) vid ![Händelse](/help/assets/icons/Event.svg) **Mätvärden** från den vänstra panelen Komponenter.

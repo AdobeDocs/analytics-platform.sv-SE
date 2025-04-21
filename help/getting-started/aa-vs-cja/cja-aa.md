@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2432'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Listvariabler/Listfragment** | Fullt stöd. Customer Journey Analytics använder XDM och stöder obegränsat antal strängarrayer som kan användas på liknande sätt som listVars. |
 | **Merchandising eVars** | Fullt stöd via [bindningsdimensioner och bindningsmått](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | **Mätvärden** | Fullt stöd: Customer Journey Analytics använder Experience Data Model (XDM) och har stöd för obegränsade mätvärden och är inte knutet till Adobe Analytics anpassade framgångshändelser. Vissa standardmått har bytt namn från Adobe Analytics: Besökare = Folk, Besök = Sessioner, Hits = Händelser. |
-| **Migrerar projekt, filter och beräknade värden från Adobe Analytics till Customer Journey Analytics** | Fullt stöd. |
+| **Migrerar projekt, segment och beräknade värden från Adobe Analytics till Customer Journey Analytics** | Fullt stöd. |
 | **Mobil styrkort/instrumentpaneler** | Fullt stöd |
 | **Paneler** | Fullt stöd för följande paneler: Tom panel, Attribution, Freeform, Quick insights och Next eller previous item. |
 | **PDF-export** | Fullt stöd |
@@ -73,7 +73,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Bearbetning av rapporttid** | Fullt stöd; Customer Journey Analytics förlitar sig enbart på bearbetning av rapporttid. |
 | **API-åtkomst för rapportering** | Fullt stöd; tillgängligt via [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/). |
 | **Schemalagda rapporter/projekt** | Fullt stöd |
-| **Segment** | Fullt stöd. Nu kallat &quot;Filter&quot; - observera att inga befintliga segment i traditionella Analysis Workspace importeras till Customer Journey Analytics. |
+| **Segment** | Fullt stöd. (kallades tidigare&quot;Filter&quot;.) |
 | **Direktuppspelad mediasamling** | Direktuppspelande mediedata är tillgängliga med Analytics-källkopplingen som en del av panelen Media Concurrent Viewer och panelen Media Playback Time Spent (Tid för uppspelning i Workspace). |
 | **Datakällor på sammanfattningsnivå** | Fullt stöd |
 | **Virtuella rapportsviter** | Fullt stöd. [Datavyer](/help/data-views/create-dataview.md) anropas nu. |
@@ -109,7 +109,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Produktvariabel** | Inom Experience Platform kan användare använda en array med objekt i ett dataset-schema för att tillgodose detta användningsfall. Inom Customer Journey Analytics kan kunderna använda valfritt antal produktvariabler och är inte begränsade till en enda variabel som i Adobe Analytics. |
 | **Projektdelning** | Projektdelning stöds endast mellan användare av Customer Journey Analytics - det finns ingen projektdelning mellan Customer Journey Analytics och det traditionella Analysis Workspace. |
 | **Report Builder** | Stöds med en ny Office 365-plugin för Excel. |
-| **Användarbehörigheter/Dataåtkomstkontroller** | Customer Journey Analytics skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)-produktadministratörer, produktprofiladministratörer och användare. Endast produktadministratörer kan skapa/uppdatera/ta bort anslutningar, projekt, filter eller beräknade värden som skapats av andra användare, medan produktadministratörer och produktprofiladministratörer kan redigera datavyer. Ytterligare användarbehörigheter är tillgängliga för exempelvis att skapa beräknade värden, segment eller anteckningar. |
+| **Användarbehörigheter/Dataåtkomstkontroller** | Customer Journey Analytics skiljer mellan [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)-produktadministratörer, produktprofiladministratörer och användare. Endast produktadministratörer kan skapa/uppdatera/ta bort anslutningar, projekt, segment eller beräknade värden som skapats av andra användare, medan produktadministratörer och produktprofiladministratörer kan redigera datavyer. Ytterligare användarbehörigheter är tillgängliga för exempelvis att skapa beräknade värden, segment eller anteckningar. |
 | **Visualiseringar** | Alla Workspace-visualiseringar stöds förutom för kartvisualisering. |
 | **Sammanfogning mellan enheter och kanaler** | Stöds för händelsedatamängder som innehåller identitetsinformation. Se [Stitching](../../stitching/overview.md). |
 

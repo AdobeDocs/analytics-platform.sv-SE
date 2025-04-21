@@ -2,7 +2,7 @@
 title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Översikt över produktanvändning
 
-Produktanvändningen ger er möjlighet att visa analysdata om hur organisationen använder Customer Journey Analytics. Det är tillgängligt för alla organisationer som använder Customer Journey Analytics. När den är aktiverad skapas och sammanfogas följande Adobe Experience Platform-komponenter automatiskt. Dessa komponenter ägs av systemet, är skrivskyddade och kan inte redigeras.
+Med produktanvändning kan organisationen visa analysdata om hur organisationen använder Customer Journey Analytics. Det är tillgängligt för alla organisationer som använder Customer Journey Analytics. När den är aktiverad skapas och sammanfogas följande Adobe Experience Platform-komponenter automatiskt. Dessa komponenter ägs av systemet, är skrivskyddade och kan inte redigeras.
 
 * Ett schema i Adobe Experience Platform
 * En datauppsättning i Adobe Experience Platform
@@ -28,13 +28,13 @@ Alla datainsamlingar och inställningar konfigureras automatiskt när de är akt
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Product Usage]**
 
-Om du navigerar till det här avsnittet av gränssnittet i Customer Journey Analytics kommer du till [Datainställningar](data-settings.md) där du kan aktivera den här funktionen.
+Om du navigerar till det här avsnittet av gränssnittet i Customer Journey Analytics går du till [Datainställningar](data-settings.md) där du kan aktivera den här funktionen.
 
 ## Tillgängliga dimensioner
 
 När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om du vill ändra några dimensionsinställningar skapar du en kopia av den systemägda datavyn och använder den kopierade datavyn i Analysis Workspace.
 
-* **[!UICONTROL Action Name]**: Den typ av åtgärd som användaren vidtagit. Du kan använda den här dimensionen som önskat mått genom att skapa en kopia i datavyinställningarna. Bland Dimensionerna finns:
+* **[!UICONTROL Action Name]**: Den typ av åtgärd som användaren vidtagit. Du kan använda den här dimensionen som önskat mått genom att skapa en kopia i datavyinställningarna. Dimension innehåller följande:
    * [!UICONTROL Add attribution]
    * [!UICONTROL Add component]
    * [!UICONTROL Add panel]
@@ -57,7 +57,7 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL Send file on schedule]
    * [!UICONTROL Share project with anyone]
    * [!UICONTROL Share project with Workspace users]
-* **[!UICONTROL Attribution Model Used]**: Den typ av attribueringsmodell som komponenten använder. Bland Dimensionerna finns:
+* **[!UICONTROL Attribution Model Used]**: Den typ av attribueringsmodell som komponenten använder. Dimension innehåller följande:
    * [!UICONTROL Last touch]
    * [!UICONTROL First touch]
    * [!UICONTROL Linear]
@@ -70,16 +70,16 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL Custom]
    * [!UICONTROL Algorithmic]
 * **[!UICONTROL Component Name]**: Namnet på komponenten som lades till, togs bort eller ändrades.
-* **[!UICONTROL Component Type]**: Den typ av komponent som lades till, togs bort eller ändrades. Bland Dimensionerna finns:
+* **[!UICONTROL Component Type]**: Den typ av komponent som lades till, togs bort eller ändrades. Dimension innehåller följande:
    * [!UICONTROL Dimension]
    * [!UICONTROL Metric]
-   * [!UICONTROL Filter]
+   * [!UICONTROL Segment]
    * [!UICONTROL Calculated metric]
    * [!UICONTROL Date range]
    * [!UICONTROL Annotation]
    * [!UICONTROL Alert]
 * **[!UICONTROL Login User]**: Användaren som utförde åtgärden.
-* **[!UICONTROL Panel Used]**: Panelen där komponenten lades till, togs bort eller ändrades. Bland Dimensionerna finns:
+* **[!UICONTROL Panel Used]**: Panelen där komponenten lades till, togs bort eller ändrades. Dimension innehåller följande:
    * [!UICONTROL Attribution]
    * [!UICONTROL Blank panel]
    * [!UICONTROL Experimentation]
@@ -94,11 +94,11 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL Retention]
    * [!UICONTROL Feature matrix]
 * **[!UICONTROL Project Name]**: Projektets egna namn.
-* **[!UICONTROL Project Type]**: Projekttypen. Bland Dimensionerna finns:
+* **[!UICONTROL Project Type]**: Projekttypen. Dimension innehåller följande:
    * `workspace-projects`
    * `guided-analysis`
    * `mobile-scorecard-builder`
-* **[!UICONTROL Visualization Used]**: Den visualisering som lades till, togs bort eller ändrades. Bland Dimensionerna finns:
+* **[!UICONTROL Visualization Used]**: Den visualisering som lades till, togs bort eller ändrades. Dimension innehåller följande:
    * [!UICONTROL Freeform table]
    * [!UICONTROL Cohort table]
    * [!UICONTROL Fallout]

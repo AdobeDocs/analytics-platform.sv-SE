@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Fliken **[!UICONTROL Permissions]** ingår i varje produktprofil i [Admin Consol
 | [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] | Låt användare få åtkomst till [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Låt användarna komma åt [Guidad analys](/help/guided-analysis/overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Låt användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). Användarna kan tagga, dela, ta bort, byta namn på, godkänna, avgodkänna endast de beräknade mätvärden som de skapar eller de beräknade mätvärden som delas med dem. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Filter Creation] | Låt användare skapa [segment](/help/components/filters/filters-overview.md). Användare kan tagga, dela, ta bort, byta namn på, godkänna, inte godkänna enbart de segment som de skapar eller de segment som delas med dem. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Låt användare skapa [segment](/help/components/filters/filters-overview.md). Användare kan tagga, dela, ta bort, byta namn på, godkänna, inte godkänna enbart de segment som de skapar eller de segment som delas med dem. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Ge användarna åtkomst till fliken [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Låt användarna skapa [anteckningar](/help/components/annotations/overview.md). Användare kan endast tagga, dela, ta bort och byta namn på de anteckningar de skapar eller anteckningar som delas med dem. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Låt användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |

@@ -3,7 +3,7 @@ description: Sekventiella segment är segment som använder operatorn THEN för 
 title: Sekventiella segment
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Ett sekventiellt segment har [grundläggande funktioner](#basics) och ytterligar
 
 
 
-Grunderna för att skapa ett sekventiellt segment skiljer sig inte från att skapa ett reguljärt segment med hjälp av [segmentverktyget](filter-builder.md). Du kan använda [Definitionsverktyget](filter-builder.md#definition-builder) för att skapa din segmentdefinition. I den konstruktionen använder du komponenter, behållare, operatorer och logik. Ett reguljärt segment blir ett sekventiellt filter så snart du väljer operatorn **[!UICONTROL Then]** i huvuddefinitionen eller i någon av behållarna som du använder i [Definitionsbyggaren](filter-builder.md#definition-builder).
+Grunderna för att skapa ett sekventiellt segment skiljer sig inte från att skapa ett reguljärt segment med hjälp av [segmentverktyget](filter-builder.md). Du kan använda [Definitionsverktyget](filter-builder.md#definition-builder) för att skapa din segmentdefinition. I den konstruktionen använder du komponenter, behållare, operatorer och logik. Ett reguljärt segment blir ett sekventiellt segment så snart du väljer operatorn **[!UICONTROL Then]** i huvuddefinitionen eller i någon av behållarna som du använder i [Definitionsbyggaren](filter-builder.md#definition-builder).
 
 ### Exempel
 

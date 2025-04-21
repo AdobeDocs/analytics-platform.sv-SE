@@ -4,7 +4,7 @@ title: Dela segment
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Dela ett eller flera segment:
 
 1. I [Segmenthanteraren](manage-filters.md) väljer du ett eller flera av de segment som du vill dela.
 1. Välj ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** i åtgärdsfältet.
-1. I dialogrutan **[!UICONTROL Share Filters]**:
+1. I dialogrutan **[!UICONTROL Share Segments]**:
 
-   ![Dialogrutan Dela filter](assets/share-filter-dialog.png)
+   ![Dialogrutan Dela segment](assets/share-filter-dialog.png)
 
    1. (valfritt) Använd ![Sök](/help/assets/icons/Search.svg) för att *söka efter enskilda personer eller grupper* och begränsa listan med grupper eller individer som du vill dela segmentet med.
 

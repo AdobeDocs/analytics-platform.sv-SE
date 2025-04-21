@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Du kan använda en numerisk dimension för att hämta mätvärden till din [!UIC
 
 ## Gör underhändelsefiltrering {#sub-event}
 
-Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionerna för att inkludera/exkludera kan du filtrera på underhändelsenivå, medan filter (segment) som är inbyggda i filterverktyget bara ger dig filtrering på händelsenivå. Du kan alltså filtrera efter händelser genom att använda Inkludera/Exkludera i datavyer och sedan referera till det nya måttet/måttet i ett filter på händelsenivå.
+Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionerna för att inkludera/exkludera kan du filtrera på underhändelsenivå, medan segment som byggts i segmentbyggaren bara ger dig filtrering på händelsenivå. Du kan filtrera subhändelser genom att använda Inkludera/Exkludera i datavyer och sedan referera till det nya måttet/dimensionen i ett segment på händelsenivå.
 
 Använd till exempel funktionerna för att inkludera/exkludera i datavyer om du bara vill fokusera på produkter som genererade mer än 50 dollar för försäljning. Om du har en beställning som innehåller ett produktköp på 50 USD och ett produktköp på 25 USD tar funktionen för att inkludera/exkludera bort produktinköpet på 25 USD, inte hela beställningen.
 

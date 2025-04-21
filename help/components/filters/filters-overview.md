@@ -4,7 +4,7 @@ description: Förstå vilka segment som används för och hur du skapar ett enke
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1426'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Översikt över segment
 
-Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter. Med filter kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller interaktioner. Filter är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
+Med Customer Journey Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter. Med segment kan du identifiera deluppsättningar av personer, sessioner eller händelser baserat på egenskaper eller interaktioner. Segmenten är utformade som kodade målgruppsinsikter som du kan bygga för dina specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar.
 
-Filter kan baseras på:
+Segment kan baseras på:
 
 - attribut (webbläsartyp, enhet, antal besök, land, kön),
 - interaktioner (kampanjer, sökningar, sökmotor),
@@ -119,7 +119,7 @@ Personbehållaren innehåller alla sessioner och alla händelser för de persone
 - Alla sessioner för dessa personer.
 - Alla händelsedata för dessa personer.
 
-Som den mest vitt definierade behållaren returnerar rapporter som genereras på personbehållarnivå händelser och sessioner för alla personer som kvalificerar sig för filtret. Personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
+Rapporter som genereras på personbehållarnivå är den mest definierade behållaren och returnerar händelser och sessioner för alla personer som kvalificerar sig för segmentet. Personbehållaren är den som kan ändras mest baserat på definierade datumintervall.
 Personbehållare kan innehålla värden som baseras på en persons övergripande historik:
 
 - Dagar före första köpet.
@@ -191,7 +191,7 @@ You can use nesting between containers and between conditions within a container
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
 | All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->

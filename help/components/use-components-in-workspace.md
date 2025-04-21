@@ -4,7 +4,7 @@ title: Använda komponenter i Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -89,9 +89,9 @@ Så här lägger du till en mätmetod i ett projekt i Analysis Workspace:
 
 Mer information om mått finns i [Metrisk](/help/components/apply-create-metrics.md).
 
-### Lägga till filter i ett projekt
+### Lägga till segment i ett projekt
 
-[Med filter](/help/components/filters/filters-overview.md) kan du identifiera delmängder av personer, sessioner eller händelser baserat på egenskaper eller specifika interaktioner.
+Med [segment](/help/components/filters/filters-overview.md) kan du identifiera deluppsättningar av personer, sessioner eller händelser baserat på egenskaper eller specifika interaktioner.
 
 Du kan använda segment i Analysis Workspace på något av följande sätt:
 
@@ -103,7 +103,7 @@ Mer information om hur du kan använda segmentsläppzonen på en panel för att 
 När du lägger till segment i en kolumn i en frihandstabell används segmenten på allt innehåll i tabellkolumnen. Du kan också lägga till segment som en del av en utfallsvisualisering.
 
 * Använda segment i komponenter
-När du definierar komponenter som [beräknade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [anteckningar](/help/components/annotations/create-annotations.md#annotation-builder) eller till och med [segment](/help/components/filters/filter-builder.md) kan du använda filter som en del av definitionen.
+När du definierar komponenter som [beräknade mätvärden](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [anteckningar](/help/components/annotations/create-annotations.md#annotation-builder) eller till och med [segment](/help/components/filters/filter-builder.md) kan du använda segment som en del av definitionen.
 
 
 ### Lägga till datumintervall i ett projekt

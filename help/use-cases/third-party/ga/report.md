@@ -5,7 +5,7 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: fef935eb7692ffb2dade28cb6a7c3d408bcac1c3
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 0%
@@ -56,9 +56,9 @@ Med hjälp av beräknade mätvärden kan du använda attribueringen på dina web
 
 ![Beräknat mått](../../assets/calc-metric.png)
 
-Med Attribution IQ kan du också filtrera dina data. Du kan bara se attribuering mot vissa användaruppsättningar, till exempel de som använder mer än en enhet.
+Med Attribution IQ kan ni också segmentera era data. Du kan bara se attribuering mot vissa användaruppsättningar, till exempel de som använder mer än en enhet.
 
-![Filter](../../assets/filter.png)
+![Segment](../../assets/filter.png)
 
 Du kan också tilldela webb- och appintäkter till ditt Google Ad Content. Datauppsättningens exempel genererade mer intäkter från att mobilappen drivs av Google Ads online än från webben. Genom att sortera annonser efter webb- och appintäkter får ni en annan bild av vad era främsta Google-annonser var.
 

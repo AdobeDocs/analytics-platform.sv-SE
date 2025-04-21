@@ -4,7 +4,7 @@ title: Skapa segment
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Dialogrutan **[!UICONTROL Segment builder]** används för att skapa nya eller r
    | **[!UICONTROL Data view]** | Du kan välja datavy för segmentet.  Segmentet som du definierar är tillgängligt som ett segment på fliken [Inställningar](/help/data-views/create-dataview.md#settings-filters) i en datavy. |
    | **[!UICONTROL Project-only segment]** | En informationsruta som förklarar att segmentet bara är synligt i det projekt där det skapas och att segmentet inte läggs till i komponentlistan. Aktivera **[!UICONTROL Make this segment available to all your projects and add it to your component list]** om du vill ändra den inställningen. Den här informationsrutan visas bara när du skapar ett [snabbsegment](quick-filters.md) och vrider snabbsegmentsinformationen till ett reguljärt segment med **[!UICONTROL Open builder]** från [!UICONTROL Quick segment]-gränssnittet. |
    | **[!UICONTROL Title]** ![Krävs](/help/assets/icons/Required.svg) | Namnge segmentet, till exempel `Last month mobile customers`. |
-   | **[!UICONTROL Description]** | Ange en beskrivning av segmentet, till exempel `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Description]** | Ange en beskrivning av segmentet, till exempel `Segment to define the mobile customers for the last month`. |
    | **[!UICONTROL Tags]** | Organisera segmentet genom att skapa eller använda en eller flera taggar. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
    | **[!UICONTROL Definition]** ![Krävs](/help/assets/icons/Required.svg) | Definiera ditt segment med [Definitionsverktyget](#definition-builder). |
 
@@ -82,7 +82,7 @@ Du kan alltid ändra de här inställningarna senare.
 
 ### Komponenter
 
-En viktig del av arbetet med att skapa segmentdefinitionen är att använda mått, mätvärden, befintliga segment och datumintervall. Alla dessa komponenter är tillgängliga från komponentpanelen i filterverktyget.
+En viktig del av arbetet med att skapa segmentdefinitionen är att använda mått, mätvärden, befintliga segment och datumintervall. Alla dessa komponenter är tillgängliga från komponentpanelen i segmentbyggaren.
 
 ![Börja bygga en definition](assets/start-building-filter.gif){width=100%}
 
@@ -130,7 +130,7 @@ Du kan använda ![Setting](/help/assets/icons/Setting.svg) i en behållare för 
 
 Du kan skapa segment som innehåller rullande datumintervall. På så sätt kan ni besvara frågor om pågående kampanjer eller evenemang. Du kan till exempel skapa ett segment som innehåller *alla som har gjort ett onlineköp de senaste 60 dagarna*.
 
-![Filtrera med rullande datumintervall](assets/filter-rolling-date-range.gif)
+![Segment med rullande datumintervall](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]

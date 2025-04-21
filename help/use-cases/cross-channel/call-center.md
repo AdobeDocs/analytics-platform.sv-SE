@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Denna visualisering hjälper er att förstå hur väl CCA sammanfogar data.
    * Personbehållare där datauppsättnings-ID är lika med dina webbdata
    * Personbehållare där datauppsättnings-ID är lika med dina kundtjänstdata
 2. Dra en [Vennbildvisualisering](/help/analysis-workspace/visualizations/venn.md) till arbetsytan i Analysis Workspace.
-3. Dra de två nyskapade segmenten till området **[!UICONTROL Add Filter]** och personmåttet till området **[!UICONTROL Add Metric]**.
+3. Dra de två nyskapade segmenten till området **[!UICONTROL Add Segment]** och personmåttet till området **[!UICONTROL Add Metric]**.
 
 I den resulterande Venndatavisualiseringen visas antalet personer i datauppsättningen som innehåller både webb- och callcenterdata. Ju större överlappning, desto fler personer sys ihop. De områden som inte överlappar representerar personer som endast finns i den ena datauppsättningen eller den andra.
 

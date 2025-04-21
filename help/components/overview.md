@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Så här hanterar du komponenter från Customer Journey Analytics huvudgränssni
 
 Du kan hantera följande komponenter:
 
-* [Segment](filters/filters-overview.md): Skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i dina rapporter. Med filter kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
+* [Segment](filters/filters-overview.md): Skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i dina rapporter. Med segment kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
 * [Beräknade mått](calc-metrics/calc-metr-overview.md): Använd mått och formler som nya komponenter för rapportering
 * [Datumintervall](date-ranges/create.md): Anpassa och förfina datumintervall som Analysis Workspace erbjuder.
 * [Anteckningar](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till din organisation.
@@ -84,7 +84,7 @@ Du kan söka efter, filtrera och sortera komponentlistan på den vänstra panele
 
 2. I sökfältet börjar du skriva namnet på komponenten som du vill använda i ditt projekt.
 
-   En färg och ikon identifierar komponenttypen. **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Filter** ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Datumintervallikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna.<br/>Adobe-ikonen ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) anger antingen en beräkningsmall eller en segmentmall. Beräkningsikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) anger ett beräknat mätvärde som en administratör i organisationen har skapat.
+   En färg och ikon identifierar komponenttypen. **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Segment** ![Segmentikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Datumintervallikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna.<br/>Adobe-ikonen ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) anger antingen en beräkningsmall eller en segmentmall. Beräkningsikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) anger ett beräknat mätvärde som en administratör i organisationen har skapat.
 
 3. Välj komponenten i listrutan.
 

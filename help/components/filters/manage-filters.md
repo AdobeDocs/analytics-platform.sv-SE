@@ -4,7 +4,7 @@ description: Lär dig hantera segment i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 66ec61ea64f1265d887d4941a22e1f9757120daa
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Du kan [dela](filters-share.md), [segment](filters-filter.md), [tagg](filters-ta
 
 >[!NOTE]
 >
->Snabbsegmenten som du skapar i ett visst Workspace-projekt visas inte i hanteraren för [!UICONTROL Filters], såvida du inte har gjort segmentet tillgängligt för alla dina projekt.
+>Snabbsegmenten som du skapar i ett visst Workspace-projekt visas inte i hanteraren för [!UICONTROL Segment], såvida du inte har gjort segmentet tillgängligt för alla dina projekt.
 >
 
 ## Segmenthanterare
@@ -37,7 +37,7 @@ Segmentlistan ➊ alla segment som du äger, de segment som har omfattats av all
 | Kolumn | Beskrivning |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill gynna ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett segment. Se [Markera segment som favorit](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Title and description]** | Om du vill redigera segmentet markerar du titellänken, som öppnar [filterverktyget](filter-builder.md). Ett delat segment anges med ![Dela](/help/assets/icons/ShareAlt.svg). |
+| **[!UICONTROL Title and description]** | Om du vill redigera segmentet markerar du titellänken, som öppnar [segmentverktyget](filter-builder.md). Ett delat segment anges med ![Dela](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Data view]** | De datavyer som det här segmentet gäller för. |
 | **[!UICONTROL Owner]** | Segmentets ägare. Som användare ser du bara de segment som du äger eller de anteckningar som delas med dig. |
 | **[!UICONTROL Tags]** | Taggarna för detta segment. |
@@ -54,7 +54,7 @@ Du kan agera på segment med hjälp av ➋ i åtgärdsfältet. Åtgärdsfältet 
 
 | Åtgärd | Beskrivning |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ett annat segment med [filterverktyget](filter-builder.md). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Lägg till ett annat segment med hjälp av [segmentverktyget](filter-builder.md). |
 | ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om inget segment är markerat i listan söker du efter segment med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade segmenten. I dialogrutan **[!UICONTROL Tag Segment]** markerar eller avmarkerar du taggarna för de markerade segmenten. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda segmenten. Mer information finns i [Tagga segment](/help/components/filters/filters-tag.md). |
 | ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Dela de markerade segmenten. I dialogrutan **[!UICONTROL Share Segment]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda segmenten. Mer information finns i [Dela segment](filters-share.md). |
@@ -62,7 +62,7 @@ Du kan agera på segment med hjälp av ➋ i åtgärdsfältet. Åtgärdsfältet 
 | ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på ett enskilt markerat segment. När du har markerat det här alternativet kan du byta namn på segmentet. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Godkänn de markerade segmenten. Mer information finns i [Godkänn segment](filters-approve.md). |
 | ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera det markerade segmentet. Nya segment skapas med samma namn och suffix `(Copy)`. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera segmenten till en `Filters List.csv`-fil. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera segmenten till en `Segments List.csv`-fil. |
 
 ### Aktivt segmentfält
 

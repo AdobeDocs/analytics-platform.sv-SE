@@ -3,7 +3,7 @@ description: Genom att segmentera enskilda mätvärden kan ni göra måttjämfö
 title: Segmenterade mätvärden
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 2f87afb9c87b0436ee40cc67a04d99d4f4f10e74
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Se avsnitten nedan för att illustrera hur segmenterade mätvärden kan hjälpa 
 
    Ditt segment skulle kunna se ut som.
 
-   ![Filtrera Tyskland](assets/filter-germany.png)
+   ![Segmentera Tyskland](assets/filter-germany.png)
 
 1. Använd segmentet för att uppdatera det beräknade måttet i verktyget Beräknade mått.
 
@@ -52,7 +52,7 @@ Upprepa stegen ovan för den internationella versionen av det beräknade måttet
 
    Ditt segment ska se ut som.
 
-   ![Filtrera Tyskland](assets/filter-not-germany.png)
+   ![Segmentera Tyskland](assets/filter-not-germany.png)
 
 1. Använd segmentet för att uppdatera det beräknade måttet i verktyget Beräknade mått.
 

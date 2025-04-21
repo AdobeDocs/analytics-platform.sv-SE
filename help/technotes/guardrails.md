@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 5%
@@ -187,10 +187,10 @@ Se även Experience Platform [Datauppsättningsexportstödlinjer](https://experi
 
 | Namn | Värde | Begränsa typ | Beskrivning |
 |---|--:|---|---|
-| Behållare per filter | 50 | Systemstyrd Guardrail | Maximalt antal behållare per segment. |
+| Behållare per segment | 50 | Systemstyrd Guardrail | Maximalt antal behållare per segment. |
 | Mått per beräknat mått | 25 | Systemstyrd Guardrail | Maximalt antal mätvärden per beräknat mätvärde. |
-| Mått och mått per filter | 25 | Systemstyrd Guardrail | Maximalt antal unika mått och dimensioner per segment. |
-| Kapslade behållare per filter | 10 | Systemstyrd Guardrail | Maximalt antal kapslade behållare per segment. |
+| Mått och dimensioner per segment | 25 | Systemstyrd Guardrail | Maximalt antal unika mått och dimensioner per segment. |
+| Kapslade behållare per segment | 10 | Systemstyrd Guardrail | Maximalt antal kapslade behållare per segment. |
 | Regler per segment | 100 | Systemstyrd Guardrail | Maximalt antal regler per segment. |
 | Strängjämförelser per Dimension per segment | 100 | Systemstyrd Guardrail | Högsta antal strängjämförelser per dimension och segment. |
 | Beräknade mätvärden | 6 000 | Systemstyrd Guardrail | Maximalt antal beräknade värden för en organisation. |

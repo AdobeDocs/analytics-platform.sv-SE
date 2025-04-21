@@ -5,7 +5,7 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Guidad analys och [Analysis Workspace](../analysis-workspace/home.md) anpassar s
 | Användare | Folk |
 | Dimension | Dimension |
 | Dimension | Dimension |
-| Segment | Filter |
+| Segment | Segment |
 | Filter | Rapportfilter |
 | Beräknade mått, mått | Beräknat mått |
 
@@ -60,7 +60,7 @@ Guidad analys och [Analysis Workspace](../analysis-workspace/home.md) anpassar s
 
 Även om [Analysis Workspace](../analysis-workspace/home.md) och guidad analys använder samma underliggande data är det sätt på vilket varje verktyg gör att du kan skapa frågor med dessa data annorlunda.
 
-* **Analysis Workspace är en dimensionsinriktad upplevelse.** tabeller består vanligtvis av dimensionella rader, medan kolumner vanligtvis är mått. Du kan använda filter på både rader och kolumner för att få fram önskade data.
+* **Analysis Workspace är en dimensionsinriktad upplevelse.** tabeller består vanligtvis av dimensionella rader, medan kolumner vanligtvis är mått. Segment kan användas på både rader och kolumner för att få fram önskade data.
 
 * **Guidad analys är en händelse- och användarcentrerad upplevelse.** Varje analys börjar med att välja händelser, sedan kan dimensioner och segment läggas till för att förfina händelsedata.
 

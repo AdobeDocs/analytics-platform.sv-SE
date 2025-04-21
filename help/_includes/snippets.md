@@ -1,5 +1,5 @@
 ---
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
 workflow-type: tm+mt
 source-wordcount: '3756'
 ht-degree: 0%
@@ -200,8 +200,8 @@ Använd följande information för att välja den visualisering som bäst passar
 | **Icke-linjära resor med flera startpunkter och sökvägar** | Ja | Nej | Ja |
 | **Primärt mått** | Alla mätvärden, inklusive beräknade värden. | Endast session eller person | Endast förekomster (banvyer) |
 | **Sekundärt mått** | Ja<p>Alla mätvärden, inklusive beräknade värden.</p> | Nej | Nej |
-| **Komponentstöd i noder eller kontaktytor** | Mätvärden, dimensionsobjekt, filter och datumintervall. | Mätvärden, dimensionsobjekt, filter och datumintervall. | Endast dimensionsobjekt (utom start- och slutkontaktytan) |
-| **Jämför filter** | Nej | Ja<p>Jämför två olika filter sida vid sida i samma rapport.</p> | Nej |
+| **Komponentstöd i noder eller kontaktytor** | Mätvärden, dimensionsobjekt, segment och datumintervall. | Mätvärden, dimensionsobjekt, segment och datumintervall. | Endast dimensionsobjekt (utom start- och slutkontaktytan) |
+| **Jämför segment** | Nej | Ja<p>Jämför två olika segment sida vid sida i samma rapport.</p> | Nej |
 | **Komponentinteraktion genom att dra och släppa** | Ja | Ja | Nej |
 | **Adobe Journey Optimizer-resor** | Ja</br>Öppna resor från Journey Optimizer för djupgående analyser och anpassningar. | Nej | Nej |
 

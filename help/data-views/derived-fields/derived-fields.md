@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '8489'
 ht-degree: 2%
@@ -643,7 +643,7 @@ Du definierar ett `Trip Duration (bucketed)` härlett fält. Du skapar följande
 
 ## Mer information {#casewhen-more-info}
 
-Customer Journey Analytics använder en kapslad behållarstruktur som har utformats efter Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). Mer bakgrundsinformation finns i [Behållare](../create-dataview.md#containers) och [Filtrera behållare](../../components/filters/filters-overview.md#filter-containers). Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
+Customer Journey Analytics använder en kapslad behållarstruktur som har utformats efter Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) (Experience Data Model). Mer bakgrundsinformation finns i [Behållare](../create-dataview.md#containers) och [Segmentbehållare](../../components/filters/filters-overview.md#filter-containers). Den här behållarmodellen är flexibel till sin natur men medför vissa begränsningar när regelverktyget används.
 
 Customer Journey Analytics använder följande standardbehållarmodell:
 

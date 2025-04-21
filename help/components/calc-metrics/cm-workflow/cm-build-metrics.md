@@ -1,9 +1,9 @@
 ---
-description: I verktyget Beräknade mätvärden kan du dra och släppa dimensioner, mått, filter och funktioner på en arbetsyta för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
+description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensioner, mått, segment och funktioner på en arbetsyta för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -156,7 +156,7 @@ Du använder konceptet med en segmentbehållare för att skapa ett [segmenterat 
 * Så här lägger du till en segmentbehållare från en dimension:
 
    1. Dra och släpp en ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]**-komponent från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika komponenter.
-   1. Ange villkoret för segmentet i popup-menyn **[!UICONTROL Create Filter from Dimension]**. Välj i listan med operatorer och välj ett värde eller ange ett värde. Till exempel **[!UICONTROL Month]** **[!UICONTROL equals]** ![SparrboxDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Ange villkoret för segmentet i popup-menyn **[!UICONTROL Create Segment from Dimension]**. Välj i listan med operatorer och välj ett värde eller ange ett värde. Till exempel **[!UICONTROL Month]** **[!UICONTROL equals]** ![SparrboxDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Välj **[!UICONTROL Done]**. En segmentbehållare läggs till i **[!UICONTROL Definition]**.
 
 
@@ -165,11 +165,11 @@ Du använder konceptet med en segmentbehållare för att skapa ett [segmenterat 
    * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** från komponentpanelen till **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. Du kan använda ![sökfunktionen](/help/assets/icons/Search.svg) i komponentfältet för att söka efter specifika segment.
 En segmentbehållare läggs automatiskt till i **[!UICONTROL Definition]** med segmentets namn.
 
-   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** från komponentpanelen till en generisk behållare. Behållaren ändras till en segmentbehållare.
+   * Dra och släpp en ![segmenteringskomponent](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** från komponentpanelen till en generisk behållare. Behållaren ändras till en segmentbehållare.
 
    * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare:
 
-      1. Välj **[!UICONTROL Filter]**. En segmentbehållare läggs till i **[!UICONTROL Definition]**.
+      1. Välj **[!UICONTROL Segment]**. En segmentbehållare läggs till i **[!UICONTROL Definition]**.
       1. I den nya segmentbehållaren väljer du ett segment i listrutan [!UICONTROL *Markera...*].
 
   >[!TIP]
@@ -182,7 +182,7 @@ Så här tar du bort ett segment från en behållare:
 
 * Välj ![Stäng](/help/assets/icons/Close.svg) bredvid segmentnamnet.
 
-Mer information och exempel finns i [Filtrerade mätvärden](metrics-with-segments.md).
+Mer information och exempel finns i [Segmenterade mätvärden](metrics-with-segments.md).
 
 #### Funktionsbehållare
 
@@ -218,6 +218,6 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->[Filter](/help/components/filters/filters-overview.md)
+>[Segment](/help/components/filters/filters-overview.md)
 >
 
