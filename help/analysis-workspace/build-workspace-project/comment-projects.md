@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 11e6d5a2aace4554b48c05c2316061de1e628108
+exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
+source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -24,6 +25,10 @@ Med kommentarerna i Analysis Workspace kan du dela insikter och ställa frågor 
 >* **Organisation:** Customer Journey Analytics-administratören kan inaktivera den här funktionaliteten för organisationen enligt beskrivningen i [Inställningar](/help/analysis-workspace/user-preferences.md).
 
 ## Visa kommentarer
+
+Du kan visa kommentarer från kommentarområdet i den högra listen eller från kommentarmärket om det finns några.
+
+![Visa kommentarer i Analysis Workspace](assets/workspace-comments-view.png)
 
 ### Visa kommentarer i kommentarsområdet
 
@@ -61,6 +66,12 @@ Så här kommenterar du ett visst område i projektet (till exempel ett måttvä
 
 1. Med projektet öppet i Analysis Workspace högerklickar du på det område i projektet där du vill infoga kommentaren.
 
+   Alla visualiseringar har stöd för kommentarsemblem i visningsrubriken, men endast följande visualiseringar har stöd för kommentarsemblem på specifika datapunkter i visualiseringen:
+
+   * Frihandsregister
+   * Kohortabell
+   * Linje
+
    <!--add screenshot-->
 
 1. Välj **[!UICONTROL Add comment]**.
@@ -97,6 +108,8 @@ Kommentarsfunktionen i Analysis Workspace gör det enklare att samarbeta med and
 
 1. Skriv in @-symbolen och börja sedan skriva förnamnet, efternamnet eller e-postadressen för den person som du vill ta med.
 
+   ![tagga användare](assets/comments-tag-user.png)
+
 1. Markera personens namn när det visas i listrutan.
 
 Tänk på följande när du använder symbolen @ för att inkludera personer i en kommentar:
@@ -122,6 +135,38 @@ Tänk på följande när du använder symbolen @ för att inkludera personer i e
 1. (Valfritt) Meddela en annan person om din kommentar genom att skriva @-symbolen följt av namnet på personen. Mer information om hur du använder @-symbolen för att meddela andra finns i [Inkludera andra i en kommentar](#include-others-in-a-comment).
 
 1. Välj **[!UICONTROL Submit]**.
+
+## Placera ett emblem för en befintlig kommentar
+
+Om det finns en kommentar i kommentarsområdet på den högra listen men den inte har något emblem i projektet ännu, kan du lägga till märket.
+
+1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+
+1. Markera mer-ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid kommentaren som du vill placera ett märke för och välj sedan **[!UICONTROL Place badge]**.
+
+1. Markera det område i projektet där du vill placera emblemet för den befintliga kommentaren.
+
+   Ett **kommentarsemblem** ![kommentarsemblem](assets/comment-indicator.png) placeras i det område i Workspace-projektet som du har valt. Kommentaren visas också längst upp i kommentarsområdet i den högra listen.
+
+   Mer information finns i [Visa kommentarsemblem i ett projekt](#view-comment-badges-in-a-project).
+
+Så här tar du bort ett märke:
+
+1. Markera den bricka som du vill ta bort och välj sedan **[!UICONTROL Remove badge]**.
+
+   Märket tas bort, men kommentaren är fortfarande tillgänglig i kommentarsområdet till höger.
+
+## Flytta ett emblem för en befintlig kommentar
+
+Du kan flytta ett kommentarsmärke som redan finns för en befintlig kommentar.
+
+1. Med projektet öppet i Analysis Workspace letar du reda på märket för kommentaren som du vill flytta.
+
+1. Högerklicka på märket och välj sedan **[!UICONTROL Move placement]**.
+
+1. Markera det område i projektet där du vill placera emblemet.
+
+<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
 
 ## Kopiera länken till en kommentar
 
@@ -182,36 +227,3 @@ Så här löser du en kommentar:
 Som standard är lösta kommentarer dolda i kommentarområdet. Så här visar du lösta kommentarer:
 
 1. Markera filterikonen i kommentarsområdet och avmarkera sedan alternativet **[!UICONTROL Hide resolved comments]**.
-
-## Placera ett emblem för en befintlig kommentar
-
-Om det finns en kommentar i kommentarsområdet på den högra listen men den inte har något emblem i projektet ännu, kan du lägga till märket.
-
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
-
-1. Markera mer-ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid kommentaren som du vill placera ett märke för och välj sedan **[!UICONTROL Place badge]**.
-
-1. Markera det område i projektet där du vill placera emblemet för den befintliga kommentaren.
-
-   Ett **kommentarsemblem** ![kommentarsemblem](assets/comment-indicator.png) placeras i det område i Workspace-projektet som du har valt. Kommentaren visas också längst upp i kommentarsområdet i den högra listen.
-
-   Mer information finns i [Visa kommentarsemblem i ett projekt](#view-comment-badges-in-a-project).
-
-Så här tar du bort ett märke:
-
-1. Markera den bricka som du vill ta bort och välj sedan **[!UICONTROL Remove badge]**.
-
-   Märket tas bort, men kommentaren är fortfarande tillgänglig i kommentarsområdet till höger.
-
-## Flytta ett emblem för en befintlig kommentar
-
-Du kan flytta ett kommentarsmärke som redan finns för en befintlig kommentar.
-
-1. Med projektet öppet i Analysis Workspace letar du reda på märket för kommentaren som du vill flytta.
-
-1. Högerklicka på märket och välj sedan **[!UICONTROL Move placement]**.
-
-1. Markera det område i projektet där du vill placera emblemet.
-
-<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
-
