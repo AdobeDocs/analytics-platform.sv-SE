@@ -4,7 +4,7 @@ title: Skapa segment
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 0%
@@ -20,17 +20,10 @@ ht-degree: 0%
 >title="Skapa publik"
 >abstract="Målgrupper kan skapas från ett segment och delas med Adobe Experience Platform för aktivering."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Förhandsgranska data"
 >abstract="Jämför data i det här segmentet med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Dialogrutan **[!UICONTROL Segment builder]** används för att skapa nya eller redigera befintliga segment. Dialogrutan heter **[!UICONTROL New segment]** eller **[!UICONTROL Edit segment]** för segment som du skapar eller hanterar från [[!UICONTROL Segment]-hanteraren ](/help/components/filters/manage-filters.md).
@@ -155,32 +148,23 @@ Eller så kan du definiera 52 segment: 50 segment för USA, en för mobiltelefon
 
 ## Tillskrivning {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="Upprepande"
 >abstract="Inkluderar instanser och beständiga värden för dimensionen."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Inkluderar instanser och beständiga värden för dimensionen."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="Icke upprepande instans"
 >abstract="Inkluderar unika (icke upprepande) instanser för dimensionen."
 
-<!-- markdownlint-enable MD034 -->
 
 
 
@@ -218,3 +202,5 @@ Tabellen nedan förklarar, för varje attribueringsmodell, vilka inkommande hän
 En exempelrapport om händelser som använder de tre segmenten ser ut så här:
 
 ![Resultat av segmentattribueringsmodell](assets/filter-dimension-attribution-results.png)
+
+<!-- markdownlint-enable MD034 -->

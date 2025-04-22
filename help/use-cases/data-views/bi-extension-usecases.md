@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
 source-wordcount: '11965'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Följande användningsfall dokumenteras:
    * [Enkel dimension rankad](#single-dimension-ranked)
    * [Flera dimensioner rankade](#multiple-dimension-ranked)
    * [Räkna distinkta dimensionsvärden](#count-distinct-dimension-values)
-   * [Använd datumintervallnamn för att segmentera](#use-date-range-names-to-segment)
+   * [Använd datumintervallnamn för att filtrera](#use-date-range-names-to-filter)
    * [Använd segmentnamn för att segmentera](#use-segment-names-to-segment)
    * [Använd dimensionsvärden för att segmentera](#use-dimension-values-to-segment)
    * [Sortera](#sort)
@@ -1737,17 +1737,17 @@ En visualisering och en tabell som liknar den visas nedan.
 
 
 
-## Använd filternamn för att filtrera
+## Använd segmentnamn för att segmentera
 
-I det här fallet vill du använda ett befintligt filter för produktkategorin Fiske som du har definierat i Customer Journey Analytics. Filtrera och rapportera om produktnamn och förekomster (händelser) under januari 2023.
+I det här fallet vill du använda ett befintligt segment för produktkategorin Fiske, som du har definierat i Customer Journey Analytics. Att segmentera och rapportera om produktnamn och förekomster (händelser) under januari 2023.
 
 +++ Customer Journey Analytics
 
-Kontrollera filtret som du vill använda i Customer Journey Analytics.
+Kontrollera segmentet som du vill använda i Customer Journey Analytics.
 
 ![Customer Journey Analytics använder filternamn för att filtrera](assets/cja-fishing-products.png){zoomable="yes"}
 
-Du kan sedan använda det filtret i en exempelpanel **[!UICONTROL Using Date Range Names To Filter]** för att använda skiftläget:
+Du kan sedan använda det segmentet i en exempelpanel **[!UICONTROL Using Segment Names To Segment]** för följande användningsområden:
 
 ![Customer Journey Analytics Distinct Count-värden](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
@@ -1901,18 +1901,18 @@ En visualisering och en tabell som liknar den visas nedan.
 +++
 
 
-## Använd dimensionsvärden för att filtrera
+## Använd dimensionsvärden för att segmentera
 
-Du använder det dynamiska **[!UICONTROL Hunting]**-värdet för **[!UICONTROL Product Category]** för att filtrera produkter från jaktkategorin. För BI-verktyg som inte har stöd för dynamisk hämtning av produktkategorivärden skapar du ett nytt filter i Customer Journey Analytics som filtrerar produkter i jaktproduktkategorin.
-Sedan vill du använda det nya filtret för att rapportera produktnamn och förekomster (händelser) för produkter i jaktkategorin under januari 2023.
+Du använder det dynamiska **[!UICONTROL Hunting]**-värdet för **[!UICONTROL Product Category]** för att segmentera produkter från jaktkategorin. För de BI-verktyg som inte har stöd för dynamisk hämtning av produktkategorivärden skapar du ett nytt segment i Customer Journey Analytics som segmenterar produkter i jaktproduktkategorin.
+Sedan vill du använda det nya segmentet för att rapportera produktnamn och förekomster (händelser) för produkter i jaktkategorin under januari 2023.
 
 +++ Customer Journey Analytics
 
-Skapa ett nytt filter med **[!UICONTROL Title]** `Hunting Products` i Customer Journey Analytics.
+Skapa ett nytt segment med **[!UICONTROL Title]** `Hunting Products` i Customer Journey Analytics.
 
-![Customer Journey Analytics använder Dimension-värden för att filtrera](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics använder Dimension-värden för att segmentera](assets/cja-hunting-products.png){zoomable="yes"}
 
-Du kan sedan använda det filtret i en exempelpanel **[!UICONTROL Using Dimension Values To Filter]** för att använda skiftläget:
+Du kan sedan använda det segmentet i en exempelpanel **[!UICONTROL Using Dimension Values To Filter]** för följande användningsområden:
 
 ![Customer Journey Analytics Distinct Count-värden](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 

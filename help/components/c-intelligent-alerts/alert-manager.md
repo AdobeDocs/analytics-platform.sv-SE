@@ -4,9 +4,9 @@ title: Hantera värden
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,9 @@ Du kan använda åtgärdsfältets ➋ för att göra aviseringar. Åtgärdsfält
 
 Du kan filtrera listan med varningar med den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]**. Filterpanelen visar typ av filter och antalet varningar som följer det specifika filtret.
 
-{{filterspanel}}
+
+1. Välj ![Filter](/help/assets/icons/Filter.svg) för att öppna panelen Filter. Om du behöver mer utrymme för varningslistan kan du välja ![Filter](/help/assets/icons/Filter.svg) en gång till för att stänga panelen.
+1. Välj filter från något av de tillgängliga filteravsnitten.
 
 
 #### Filteravsnitt för taggar

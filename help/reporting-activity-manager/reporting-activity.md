@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
    ![Rapporteringsaktivitet visar rapportkön](assets/reporting-activity-monthly.png)
 
-1. (Valfritt) Du kan söka efter eller segmentera listan med anslutningar:
+1. (Valfritt) Du kan söka efter eller filtrera listan över anslutningar:
 
    * Använd sökfältet för att söka efter en viss anslutning. Börja skriva anslutningsnamnet eller ID:t och listan över anslutningar som uppdateras medan du skriver.
 

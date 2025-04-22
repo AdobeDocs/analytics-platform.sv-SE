@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 0%
@@ -159,8 +159,8 @@ Du kan ge produktprofilsadministration åtkomst till en gruppledare för en tred
 
 Du vill ge användarna åtkomst till data från endast en dag. Så här begränsar du åtkomsten till de raderna:
 
-1. Skapa ett filter i [!UICONTROL Settings] för en viss datavy, där [!UICONTROL Day] är lika med det datum som du vill att de ska ha dataåtkomst till. Mer information finns i [Skapa datavy](/help/data-views/create-dataview.md#settings-filters).
-1. Spara datavyn, som tillämpar filtret på datadelen av datauppsättningarna i den underliggande anslutningen. Alla rader som inte passar filterdefinitionen exkluderas automatiskt från datavyn och är inte tillgängliga för Analysis Workspace när den här datavyn används.
+1. Skapa ett segment i [!UICONTROL Settings] för en viss datavy, där [!UICONTROL Day] är lika med det datum som du vill att de ska ha dataåtkomst till. Mer information finns i [Skapa datavy](/help/data-views/create-dataview.md#settings-filters).
+1. Spara datavyn, som använder segmentet på datadelen i datauppsättningarna i den underliggande anslutningen. Rader som inte passar in i segmentdefinitionen exkluderas automatiskt från datavyn och är inte tillgängliga för Analysis Workspace när den här datavyn används.
 1. Skapa en ny [produktprofil](#product-profile-admin-role) i Admin Console, lägg till användare i produktprofilen och ta endast med den här specifika datavyn i produktprofilen.
 
 ### Åtkomstkontroll på värdenivå

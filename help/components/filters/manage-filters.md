@@ -4,7 +4,7 @@ description: Lär dig hantera segment i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -64,12 +64,12 @@ Du kan agera på segment med hjälp av ➋ i åtgärdsfältet. Åtgärdsfältet 
 | ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera det markerade segmentet. Nya segment skapas med samma namn och suffix `(Copy)`. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Exportera segmenten till en `Segments List.csv`-fil. |
 
-### Aktivt segmentfält
+### Aktivt filterfält
 
-Segmentfältet ➌ visa de aktiva segment som används från segmentpanelen till listan med segment (om det finns några). Du kan snabbt ta bort ett segment med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett segment har angetts kan du ta bort alla segment med **[!UICONTROL Remove all]**.
+I ➌ visas de aktiva segment som används från filterpanelen i listan med segment (om det finns några). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
 
-### Segmentpanel
+### Panelen Filter
 
-Du kan segmentera listan med segment med den vänstra panelen ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** . Segmentpanelen visar segmenttypen och antalet segment som uppfyller det specifika segmentet. Välj ![Segment](/help/assets/icons/Filter.svg) för att växla visningen av segmentpanelen.
+Du kan filtrera listan med segment med hjälp av den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]**. Filterpanelen visar typen av filter och antalet segment som använder det specifika filtret. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av panelen Filter.
 
 Mer information finns i [Filtrera listan med segment](filters-filter.md).

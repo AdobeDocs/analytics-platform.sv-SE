@@ -6,12 +6,13 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
+source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
+
 
 # Filterdimensioner
 
@@ -21,9 +22,9 @@ Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artikl
 
 1. Markera ett datablock och klicka på Redigera datablock på kommandopanelen.
 
-1. Klicka på **[!UICONTROL Next]** för att visa fliken Dimensioner.
+1. Välj **[!UICONTROL Next]** om du vill visa fliken Dimensioner.
 
-1. Klicka på ikonen **..** bredvid ett komponentnamn i tabellen.
+1. Välj ![MoreSmall](/help/assets/icons/MoreSmall.svg) bredvid ett komponentnamn i tabellen.
 
    ![Alternativ för ellipsikoner.](./assets/image27.png)
 
@@ -39,29 +40,40 @@ Som standard returnerar varje dimensionsartikel i tabellen de 10 översta artikl
 
    Report Builder visar ett meddelande som bekräftar det tillagda filtret.
 
-Håll pekaren över en dimension om du vill visa använda filter. Dimensioner med tillämpade filter visas med en filterikon till höger om Dimension-namnet.
+Håll pekaren över en dimension om du vill visa använda filter. Dimensioner med tillämpade filter visas med en ![Filter](/help/assets/icons/Filter.svg)-filterikon bredvid Dimension-namnet.
+
+## Ändra filter och sorteringsordning
+
+En pil visas bredvid mätvärdet som används för att filtrera och sortera datablocket. Pilens riktning anger om måttet är sorterat i stigande eller fallande ordning.
+
+Om du vill ändra sorteringsriktning markerar du pilen bredvid måttet.
+
+Om du vill ändra måtten som används för att filtrera och sortera datablocket
+
+1. Håll pekaren över den önskade måttkomponenten i tabellverktyget för att visa ytterligare alternativ.
+
+2. Välj pilen på det önskade måttet.
+
+   ![Tabellverktyget och måtten.](./assets/image30.png)
+
+
 
 ## Filtertyp
 
 Det finns två sätt att filtrera dimensionsobjekt: De vanligaste och specifika.
 
-## Mest populära
+### Mest populära
 
 Det vanligaste alternativet gör att du dynamiskt kan filtrera dimensionsobjekt baserat på mätvärden. Den vanligaste filtreringen returnerar de högst rankade dimensionsobjekten baserat på måttvärden. Som standard listas de första 10 dimensionsobjekten, sorterade efter det första mätvärdet som lagts till i datablocket.
 
 ![Det populäraste alternativet.](./assets/image29.png)
 
 
-### Alternativ för sidor och rader
+**Alternativ för sidor och rader**
 
 Använd fälten **Sida** och **Rader** för att dela in data i sekventiella grupper eller sidor. På så sätt kan du dra in andra rankade radvärden än de översta i rapporten. Den här funktionen är särskilt användbar när du vill hämta data över gränsen på 50 000 rader.
 
-#### Standardvärden för sidor och rader
-
-- Sida = 1
-- Rader = 10
-
-Standardinställningarna för Sida och Rader anger att varje sida har 10 rader med data. Sidan 1 returnerar de 10 översta objekten, sidan 2 returnerar de 10 efterföljande objekten och så vidare.
+Standardvärdet för Sida är 1 och för Rader 10. Dessa standardvärden innebär att varje sida har 10 rader med data. Sidan 1 returnerar de 10 översta objekten, sidan 2 returnerar de 10 efterföljande objekten och så vidare.
 
 Tabellen nedan innehåller exempel på sid- och radvärden och resultatet.
 
@@ -73,16 +85,16 @@ Tabellen nedan innehåller exempel på sid- och radvärden och resultatet.
 | 2 | 100 | Posterna 101-200 |
 | 2 | 50 000 | 50 001-100 000 |
 
-#### Minimum- och maximum-värden
+Minsta och högsta värden är:
 
 - Startsida: Min = 1, Max: 50 miljoner
 - Antal rader: Min = 1, Max: 50 000
 
 ### Inkludera &quot;Inget värde&quot;
 
-I Customer Journey Analytics samlar vissa dimensioner in en post utan värde. Med det här filtret kan du exkludera dessa värden från rapporter. Du kan t.ex. skapa en klassificering som produktnamnsklassificeringen baserat på SKU-nyckeln för produkten. Om en specifik produkt-SKU inte har ställts in med sin specifika produktnamnsklassificering, anges värdet för produktnamnet till&quot;inget värde&quot;.
+I Customer Journey Analytics samlar vissa dimensioner in en&quot;Inget värde&quot;-post. Med det här filtret kan du exkludera dessa värden från rapporter. Du kan t.ex. skapa en klassificering som produktnamnsklassificeringen baserat på SKU-nyckeln för produkten. Om en specifik produkt-SKU inte har ställts in med sin specifika produktnamnsklassificering, anges värdet för produktnamnet till&quot;inget värde&quot;.
 
-Inkludera **Inget värde** är valt som standard. Avmarkera det här alternativet om du vill utesluta poster utan värde.
+**[!UICONTROL Include "No value"]** är markerat som standard. Avmarkera det här alternativet om du vill utesluta poster utan värde.
 
 ### Filtrera efter villkor
 
@@ -96,34 +108,19 @@ Ange filtervillkor
 
 1. Ange ett värde i sökfältet.
 
-1. Klicka på Lägg till rad för att bekräfta markeringen och lägga till ett annat villkorsobjekt.
+1. Välj ![Lägg till](/help/assets/icons/Add.svg) **[!UICONTROL Add row]** för att bekräfta markeringen och lägga till ett annat villkorsobjekt.
 
-1. Klicka på borttagningsikonen för att ta bort ett villkorsobjekt.
+1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort ett villkorsobjekt.
 
    Du kan inkludera upp till 10 villkorsobjekt.
 
-### Ändra filter och sorteringsordning
-
-En pil visas bredvid mätvärdet som används för att filtrera och sortera datablocket. Pilens riktning anger om måttet är sorterat som störst, minst till störst.
-
-Om du vill ändra sorteringsriktning klickar du på pilen bredvid måttet. 
-
-Om du vill ändra måtten som används för att filtrera och sortera datablocket
-
-1. Håll pekaren över den önskade måttkomponenten i tabellverktyget för att visa ytterligare alternativ.
-
-2. Klicka på pilen på det önskade måttet. 
-
-   ![Tabellverktyget och måtten.](./assets/image30.png)
-
-
-## Specifik filtrering
+### Specifik filtrering
 
 Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd filtreringstypen **Specifik** för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
 
 ![Specifika alternativ och markerade objekt.](./assets/image32.png)
 
-### Från lista
+#### Från lista
 
 1. Välj alternativet **Från lista** om du vill söka efter och välja dimensionsobjekt.
 
@@ -157,7 +154,7 @@ Med alternativet Specifik kan du skapa en fast lista med dimensionsobjekt för v
 
    Report Builder uppdaterar listan så att den specifika filtrering som du tillämpade visas.
 
-### Från cellintervall
+#### Från cellintervall
 
 Välj alternativet **Från cellintervall** om du vill välja ett cellintervall som innehåller listan med dimensionsobjekt som ska matchas.
 

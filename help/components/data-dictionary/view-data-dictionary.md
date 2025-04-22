@@ -4,7 +4,7 @@ title: Visa komponentinformation
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Så här visar du information om en komponent i Data Dictionary:
 
    Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Segment** ![Segmentikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Datumintervallikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Adobe-ikonen ![Adobe-ikonen](assets/default-calc-metric-icon.png) indikerar antingen en beräknad mätmall eller en segmentmall, och räknikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indikerar ett beräknat mätresultat som har skapats av en Analytics-administratör i din organisation.
 
-1. (Valfritt) Markera ikonen **Filter** ![Dataglexikonfilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) och välj sedan något av följande segmentalternativ för att segmentera komponentlistan:
+1. (Valfritt) Markera ikonen **Filter** ![Datamordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) och välj sedan något av följande segmentalternativ för att filtrera komponentlistan:
 
    | Alternativ | Funktion |
    |---------|----------|

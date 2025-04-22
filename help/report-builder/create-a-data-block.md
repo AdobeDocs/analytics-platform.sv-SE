@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
+source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -21,25 +21,33 @@ Ett *datablock* är den datatabell som skapas av en enskild databegäran. En Rep
 
 Konfigurera de inledande datablocksparametrarna för datablockets plats, datavyer och datumintervall.
 
-1. Klicka på **Skapa datablock**.
+1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**.
 
-   ![Skärmbild med alternativet Skapa datablock.](./assets/create_db.png)
+   ![Skärmbild med alternativet Skapa datablock.](./assets/create-datablock.png)
 
-1. Ange **datablockets plats**.
+1. Ange **[!UICONTROL Data block location]**.
 
    Platsalternativet för datablocket definierar den plats i kalkylbladet där rapportbyggaren lägger till data i kalkylbladet.
 
-   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som a3, \\\$a3, a\\\$3 eller sheet1!a2. Den angivna cellen kommer att vara det övre vänstra hörnet i datablocket när data hämtas.
+   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som `a3`, `\\\$a3`, `a\\\$3` eller `sheet1!a2`. Den angivna cellen kommer att vara det övre vänstra hörnet i datablocket när data hämtas.
 
-1. Välj **datavyer**.
+   Använd ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) om du vill välja en plats för ett datablock från den markerade cellen i kalkylbladet.
+
+1. Välj **[!UICONTROL Data views]**.
 
    Med alternativet Datavyer kan du välja en datavy från en nedrullningsbar meny eller referera till en datavy från en cellplats.
 
-1. Ange **datumintervallet**.
+   Välj ![DataViewSelector](/help/assets/icons/DataViewSelector.svg) om du vill skapa en datavy från en cell.
+
+1. Ange **[!UICONTROL Date range]**.
 
    Med datumintervallalternativet kan du välja ett datumintervall. Datumintervall kan vara fasta eller rullande. Mer information om alternativ för datumintervall finns i [Välj ett datumintervall](select-date-range.md).
 
-1. Klicka på **Nästa**.
+   Välj **[!UICONTROL Calendar]** om du vill välja ett dataintervall med ![Kalender](/help/assets/icons/Calendar.svg) eller ange ett datumintervall manuellt. Du kan också välja en förinställning i listrutan Sökförinställningar.
+
+   Välj **[!UICONTROL From Cell]** om du vill definiera start- och slutdata baserat på en cell i det aktuella bladet.
+
+1. Välj **Nästa**.
 
    ![Skärmbild som visar datumintervallalternativet och den aktiva knappen Nästa.](./assets/choose_date_data_view3.png)
 
@@ -53,17 +61,17 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    Bläddra i komponentlistorna eller använd fältet **sök** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
 
-   Dubbelklicka på en komponent för att lägga till den i ett standardavsnitt i tabellen.
+   Dubbelklicka på en komponent för att lägga till komponenten i ett standardavsnitt i tabellen.
 
    - Dimension-komponenter läggs till i avsnittet Rad eller i kolumnavsnittet om du redan har en dimension i kolumnerna.
    - Datumkomponenter läggs till i avsnittet Kolumn.
    - Segmentkomponenter läggs till i segmentavsnittet.
 
-   **Startdatum som Dimension**
+### Startdatum som Dimension
 
-   Ange startdatumet som en dimension för att tydligt identifiera startdatumet för ditt datablock. Detta är praktiskt om du har en schemalagd rapport med ett löpande datumintervall eller om du har ett okonventionellt datumintervall och du behöver inte ta hänsyn till startdatumet.
+Ange startdatumet som en dimension för att tydligt identifiera startdatumet för ditt datablock. Detta är praktiskt om du har en schemalagd rapport med ett löpande datumintervall eller om du har ett okonventionellt datumintervall och du behöver inte ta hänsyn till startdatumet.
 
-   ![Skärmbild som visar startdatumet i listan över dimensioner.](./assets/start-date-dimension.png){width="30%"}
+![Skärmbild som visar startdatumet i listan över dimensioner.](./assets/start-date-dimension.png)
 
 1. Ordna objekten i tabellrutan för att anpassa layouten för ditt datablock.
 
@@ -73,28 +81,29 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 
    ![Skärmbild som visar de tillagda komponenterna och det uppdaterade kalkylbladet.](./assets/image10.png)
 
-   **Visa eller dölj rad- och kolumnrubriker**
+### Visa eller dölj rad- och kolumnrubriker
 
-1. Klicka på inställningsikonen **Tabell** .
+1. Välj ikonen **[!UICONTROL Table]** ![Inställningar](/help/assets/icons/Setting.svg).
 
-   ![Skärmbild med alternativet Tabellinställningar.](./assets/table-settings.png){width="35%"}
+   ![Skärmbild med alternativet Tabellinställningar.](./assets/table-settings.png)
 
 1. Markera eller avmarkera alternativet Visa rad- och kolumnrubriker. Rubrikerna visas som standard.
 
-   **Dölj eller visa dimensionsetiketter och måttrubriker**
+### Dölja eller visa dimensionsetiketter och måttrubriker
 
-1. Klicka på ellipsikonen på dimensionerna eller kolumnrubrikerna för att visa inställningarna.
+Markera ellipsikonen på dimensionerna eller kolumnrubrikerna för att visa inställningarna.
 
-   ![Ellipsikonen i avsnittet Rad.](./assets/row-heading.png){width="35%"}
+![Ellipsikonen i avsnittet Rad.](./assets/row-heading.png)
 
-1. Klicka på Dölj eller Visa för att växla dimensionsetiketter eller kolumnrubriker. Alla etiketter visas som standard.
+1. Välj ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) **[!UICONTROL Hide]** eller ![Visibility](/help/assets/icons/Visibility.svg) **[!UICONTROL Show]** för att växla dimensionsetiketter eller kolumnrubriker. Alla etiketter visas som standard.
 
-1. Klicka på **Slutför**.
+1. Välj **[!UICONTROL Finish]**.
 
-   Ett bearbetningsmeddelande visas när analysdata hämtas.
 
-   ![Bearbetningsmeddelandet.](./assets/image11.png)
+Ett bearbetningsmeddelande visas när analysdata hämtas.
 
-   Report Builder hämtar data och visar det ifyllda datablocket i kalkylbladet.
+![Bearbetningsmeddelandet.](./assets/image11.png)
 
-   ![Det slutförda datablocket.](./assets/image12.png)
+Report Builder hämtar data och visar det ifyllda datablocket i kalkylbladet.
+
+![Det slutförda datablocket.](./assets/image12.png)

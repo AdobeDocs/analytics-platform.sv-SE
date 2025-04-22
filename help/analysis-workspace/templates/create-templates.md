@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: b98cd4dc73e57f9ae5704a5d9e529ae3b518576c
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Administratörer kan byta namn på, tagga och godkänna företagsmallar.
 
 1. Markera filterikonen om du vill filtrera listan med projekt.
 
-1. I filterfältet väljer du **ANDRA FILTER** och sedan **Företagsmallar**.
+1. Markera **[!UICONTROL Other filters]** i filterfältet och välj sedan **[!UICONTROL Company templates]**.
 
    En lista över företagsmallar visas. Alla vanliga projekt visas inte, såvida de inte är fästa.
 

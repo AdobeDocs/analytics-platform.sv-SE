@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
@@ -138,7 +138,7 @@ Din konfiguration kräver att du väljer en [datavy](/help/data-views/data-views
    Du kan utföra följande åtgärder:
 
    * Om du vill söka efter en viss datavy använder du fältet ![Sök](/help/assets/icons/Search.svg).
-   * Om du vill segmentera listan med tillgängliga datavyer väljer du ![Visa segment](/help/assets/icons/Filter.svg). Du kan filtrera listan på [!UICONTROL Connection], [!UICONTROL Owner] och [!UICONTROL Sandbox].<br/>Använd ![Dölj](/help/assets/icons/Filter.svg) **[!UICONTROL Hide segments]** för att dölja segmentrutan.
+   * Om du vill filtrera listan med tillgängliga datavyer väljer du ![Visa filter](/help/assets/icons/Filter.svg). Du kan filtrera listan på [!UICONTROL Connection], [!UICONTROL Owner] och [!UICONTROL Sandbox].<br/>Använd ![Dölj](/help/assets/icons/Filter.svg) **[!UICONTROL Hide segments]** för att dölja segmentrutan.
    * Om du vill definiera vilka kolumner som ska visas i tabellen väljer du ![Kolumninställningar](/help/assets/icons/ColumnSetting.svg). Välj vilka kolumner som ska visas i dialogrutan **[!UICONTROL Customize table]** och välj **[!UICONTROL Apply]** för att tillämpa ändringarna.
 
 1. Välj ![SelectBox](/help/assets/icons/SelectBox.svg) för datavyn som du vill använda.

@@ -4,9 +4,9 @@ description: Förstå vilka segment som används för och hur du skapar ett enke
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -160,6 +160,14 @@ Händelsebehållare innehåller värdebaserade, enkelsidiga uppdelningar för:
 - Visa utkast
 - Listdimensioner
 - Marknadsföringsdimensioner (i samband med händelser)
+
+
+
+### B2B-behållare
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+
+När du har tillgång till [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) finns det fler behållare som kan användas i segment. Mer information om hur du använder dessa ytterligare behållare finns i [B2B-koncept och -funktioner](/help/getting-started/cja-b2b-concepts-features.md).
 
 
 ### Behållare för logikgrupp
