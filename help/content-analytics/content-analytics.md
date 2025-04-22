@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: feb253b20820112d5aa4b4eee31cff74d99fa186
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 0%
@@ -13,8 +13,6 @@ ht-degree: 0%
 ---
 
 # Content Analytics - översikt
-
-{{release-limited-testing}}
 
 Content Analytics hjälper marknadsförarna att förstå hur innehåll påverkar de nyckeltal som ett företag har definierat. Förutom beteendedata samlar Content Analytics in data om hur innehåll konsumeras och hur innehåll påverkar. Ger kunderna bättre respons på en viss ton röst, en viss färgpalett eller specifika teman? Denna information, tillsammans med specifikt utformade arbetsflöden och mallar för rapportering, kan hjälpa er att utföra ännu bättre analyser och få djupare insikter om kundresedata i Customer Journey Analytics.
 

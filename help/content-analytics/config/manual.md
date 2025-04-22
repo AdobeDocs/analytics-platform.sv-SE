@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -13,9 +13,6 @@ ht-degree: 0%
 ---
 
 # Manuell konfiguration för innehållsanalys
-
-{{release-limited-testing}}
-
 
 I den här artikeln beskrivs de manuella åtgärder som krävs för att starta eller stoppa datainsamlingen i en Content Analytics-konfiguration eller för att redigera din Content Analytics-implementering.
 
