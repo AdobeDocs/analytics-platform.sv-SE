@@ -1,10 +1,10 @@
 ---
 description: Du kan skapa ett arbetsflöde som innefattar godkännande av segment för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciper.
 title: Godkänn segment
-feature: Filters
+feature: Filters, Segments
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
