@@ -4,7 +4,7 @@ title: Hämta Customer Journey Analytics-data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följan
 * Uppdelningar **ovanför** den valda dimensionen i tabellen används som filter ovanför varje kolumn.
 * Uppdelningar **nedanför** av den valda dimensionen i tabellen tas bort.
 
-I exemplet ovan hämtas sidobjekt med panelfiltret (kunder med nya besökare) och komponenterna ovan (marknadsföringskanal = e-post) tillämpade som filter, och komponenterna nedan (mobilenhetstyp) tas bort från den hämtade CSV-filen.
+I exemplet ovan hämtas sidobjekt med panelsegmentet (kunder med nya besökare) och komponenterna ovan (marknadsföringskanal = e-post) som filter, och komponenterna nedan (mobilenhetstyp) tas bort från den hämtade CSV-filen.
 
 ![Den hämtade CSV-filen som öppnats i Excel.](assets/downloaded-file.png)
 
