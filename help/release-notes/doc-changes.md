@@ -4,9 +4,9 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
 workflow-type: tm+mt
-source-wordcount: '4696'
+source-wordcount: '5031'
 ht-degree: 5%
 
 ---
@@ -21,9 +21,16 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | --- | --- |
 | **April 2025** | |
 | Visa och hantera användning | Dokumentationen om hur du [visar](/help/connections/manage-connections.md#usage) och [hanterar](/help/technotes/estimate-usage.md) Customer Journey Analytics-användning har omarbetats |
-| Content Analytics | [Dokumentation](/help/content-analytics/content-analytics.md) för Adobe Content Analytics. Med Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering. |
+| Adobe Content Analytics | Med [Content Analytics](/help/content-analytics/content-analytics.md) kan du snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering. |
+| Uppdaterade XDM-fält för att samla in Streaming Media-data till Adobe Experience Platform | När Streaming Media-data samlas in i Adobe Experience Platform bör de XDM-fältsökvägar som visas under rubriken &quot;XDM Field Path&quot; i dokumentationen för Streaming Media-parametrar inte längre användas. De här fältsökvägarna finns på följande sidor och markeras som &quot;Undertryckta&quot;: [Parametrar för ljud- och videoinnehåll](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Lägg till parametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Kapitelparametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parametrar för spelartillstånd](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) och [Kvalitetsparametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |
+| Media Collection: Adobe Source Connector-uppdateringar för nya Media Reporting XDM | Analytics Source Connector mappar automatiskt strömmande mediedata i Adobe Analytics till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| **Terminologisk ändring: &quot;Filter&quot; till &quot;Segment&quot;** | Tidigare kallade Adobe Customer Journey Analytics segment för&quot;filter&quot;. Terminologin har nu anpassats till Adobe Analytics. &quot;Filter&quot; kallas nu &quot;segment&quot;. (Det är tydligt att sökfilter fortfarande kallas för &quot;filter&quot;.) Gränssnittet och dokumentationen har uppdaterats. |
 | **Mars 2025** | |
 | Användningsexempel för Quantum Metric | Användningsexempel har lagts till för att samla in data från [kvantmätare](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
+| Produktanvändningsmall | Med en ny Workspace-mall kan du visa hur Customer Journey Analytics-produkten används i din organisation. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
+| Customer Journey Analytics uppgraderingsguide | Här kan du skapa en stegvis guide för uppgradering från Adobe Analytics till Customer Journey Analytics. Logga in på [!DNL Customer Journey Analytics] och välj sedan **[!UICONTROL Upgrade to Customer Journey Analytics]** på fliken **[!UICONTROL Workspace]** för att börja generera din anpassade guide. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| Uppdaterar till radobjektet Inget värde för numeriska dimensioner | För numeriska dimensioner kan du med den här uppdateringen använda dimensionsobjektet Inget värde i ett segment och utföra en uppdelning i en rapport på radobjektet Inget värde. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
+| Media Collection: Adobe Source Connector-uppdateringar för nya Media Reporting XDM | Analytics Source Connector mappar automatiskt strömmande mediedata i Adobe Analytics till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Februari 2025** |  |
 | Media Collection: Adobe Source Connector-uppdateringar för nya Media Reporting XDM | Analytics: Source Connector [mappar automatiskt strömmande mediedata i Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. |
 | BI-tillägg - utökat stöd | Tillägget Customer Journey Analytics BI har nu stöd för [Looker, Jupyter Notebook och R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
