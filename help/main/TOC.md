@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: aa7b73db10e81a96f532eedf09091109209124c0
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1223'
 ht-degree: 10%
 
 ---
@@ -148,6 +148,9 @@ ht-degree: 10%
    + [Härledda fält](../data-views/derived-fields/derived-fields.md)
    + [Sammanfattningsdata](../data-views/summary-data.md)
    + [Etiketter och profiler](../data-views/data-governance.md)
+   + Delade mått{#shared-metrics-dimensions}
+      + [Översikt](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+      + [Redigerare](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + verktyg {#tools}
    + Tillgångsöverföring {#asset-transfer}
@@ -165,7 +168,7 @@ ht-degree: 10%
       + [Översikt](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Öppna projekt](/help/analysis-workspace/build-workspace-project/open-projects.md)
-      + [Kommentera i projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+      + [Kommentera projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
       + Mappar i Workspace {#workspace-folders}
          + [Om mappar](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -424,6 +427,36 @@ ht-degree: 10%
 
 + Användningsexempel {#cja-usecases}
    + [Användningsexempel för Customer Journey Analytics](../use-cases/cja-usecases.md)
+   + Adobe Analytics data {#aa-data}
+      + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
+      + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
+   + B2B {#b2b}
+      + [Ett exempel på ett B2B-projekt](../use-cases/b2b/example.md)
+   + Komplexa data {#complex-data}
+      + [Använda arrayer med objekt](../use-cases/object-arrays.md)
+   + Flerkanalsdata {#cross-channel}
+      + [Analysera data över olika kanaler](../use-cases/cross-channel/cross-channel.md)
+      + [Importera callcenter och webbdata](../use-cases/cross-channel/call-center.md)
+   + Dataexport {#data-export}
+      + [Översikt](../use-cases/data-export/overview.md)
+      + [BI-tillägg](../use-cases/data-export/bi-extension.md)
+      + [Exportera datauppsättningar](../use-cases/data-export/export-datasets.md)
+      + [Exportera fullständig tabell](../use-cases/data-export/export-full-table.md)
+      + [Frågetjänst och exportera datauppsättningar](../use-cases/data-export/queryservice-export-datasets.md)
+   + Intag av data {#data-ingestion}
+      + [Importera och använda Marketo Engage-data](../use-cases/data-ingestion/marketo.md)
+      + [Importera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + Datavyer {#data-views}
+      + [Datavyer använder exempel](/help/use-cases/data-views/data-views-usecases.md)
+      + [Använd bindningsdimensioner och mätvärden](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md)
+      + [Användningsexempel för BI-tillägg](/help/use-cases/data-views/bi-extension-usecases.md)
+   + Härledda fält {#derived-fields}
+      + [Rapport om mål](../use-cases/goals-using-derived-fields.md)
+   + Produktanalys {#product-analysis}
+      + [Produktanalys](/help/use-cases/product-analysis.md)
+   + Stitlar {#stitching}
+      + [Delade enheter](/help/use-cases/stitching/shared-devices.md)
    + Tredjepartsdata {#third-party}
       + [Översikt](/help/use-cases/third-party/overview.md)
       + Google Analytics {#ga}
@@ -437,34 +470,6 @@ ht-degree: 10%
          + [Använd heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Lägg till friktionshändelser](/help/use-cases/third-party/quantum-metric/friction-events.md)
          + [Source Connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
-   + Intag av data {#data-ingestion}
-      + [Importera och använda Marketo Engage-data](../use-cases/data-ingestion/marketo.md)
-      + [Importera och använda Experience Platform-målgrupper](../use-cases/data-ingestion/ingest-aep-segments.md)
-   + Datavyer {#data-views}
-      + [Datavyer använder exempel](/help/use-cases/data-views/data-views-usecases.md)
-      + [Använd bindningsdimensioner och mätvärden](/help/use-cases/data-views/binding-dimensions-metrics.md)
-      + [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md)
-      + [Användningsexempel för BI-tillägg](/help/use-cases/data-views/bi-extension-usecases.md)
-   + Dataexport {#data-export}
-      + [Översikt](../use-cases/data-export/overview.md)
-      + [BI-tillägg](../use-cases/data-export/bi-extension.md)
-      + [Exportera datauppsättningar](../use-cases/data-export/export-datasets.md)
-      + [Exportera fullständig tabell](../use-cases/data-export/export-full-table.md)
-      + [Frågetjänst och exportera datauppsättningar](../use-cases/data-export/queryservice-export-datasets.md)
-   + B2B {#b2b}
-      + [Ett exempel på ett B2B-projekt](../use-cases/b2b/example.md)
-   + Flerkanalsdata {#cross-channel}
-      + [Analysera data över olika kanaler](../use-cases/cross-channel/cross-channel.md)
-      + [Importera callcenter och webbdata](../use-cases/cross-channel/call-center.md)
-   + Adobe Analytics data {#aa-data}
-      + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
-      + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
-   + Komplexa data {#complex-data}
-      + [Använda arrayer med objekt](../use-cases/object-arrays.md)
-   + Stitlar {#stitching}
-      + [Delade enheter](/help/use-cases/stitching/shared-devices.md)
-   + Härledda fält {#derived-fields}
-      + [Rapport om mål](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Användarhandbok för Labs](../labs/labs.md)

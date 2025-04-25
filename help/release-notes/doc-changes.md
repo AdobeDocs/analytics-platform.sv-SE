@@ -4,9 +4,9 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9cda9a2b8d5ec876a1c4a5c539daa1e0624a4460
+source-git-commit: f3e1f5190024a38dc26199061fb7f466b8d0c472
 workflow-type: tm+mt
-source-wordcount: '5040'
+source-wordcount: '5062'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,8 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Funktion | Beskrivning |
 | --- | --- |
 | **April 2025** | |
+| Produktanalys - användningsfall | [Produktanalys har lagts till i Customer Journey Analytics](/help/use-cases/product-analysis.md). |
+| Delade mått | Dokumentation för funktionen [Delade mått och dimensioner](/help/data-views/shared-metrics-dimensions/smd-overview.md) har lagts till. |
 | Report Builder | Granskade och uppdaterade dokumentationen för [Report Builder](/help/report-builder/report-buider-overview.md). |
 | Visa och hantera användning | Dokumentationen om hur du [visar](/help/connections/manage-connections.md#usage) och [hanterar](/help/technotes/estimate-usage.md) Customer Journey Analytics-användning har omarbetats |
 | Adobe Content Analytics | Med [Content Analytics](/help/content-analytics/content-analytics.md) kan du snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering. |
