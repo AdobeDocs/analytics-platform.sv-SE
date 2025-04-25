@@ -4,9 +4,9 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
+source-git-commit: 9cda9a2b8d5ec876a1c4a5c539daa1e0624a4460
 workflow-type: tm+mt
-source-wordcount: '5031'
+source-wordcount: '5040'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Funktion | Beskrivning |
 | --- | --- |
 | **April 2025** | |
+| Report Builder | Granskade och uppdaterade dokumentationen för [Report Builder](/help/report-builder/report-buider-overview.md). |
 | Visa och hantera användning | Dokumentationen om hur du [visar](/help/connections/manage-connections.md#usage) och [hanterar](/help/technotes/estimate-usage.md) Customer Journey Analytics-användning har omarbetats |
 | Adobe Content Analytics | Med [Content Analytics](/help/content-analytics/content-analytics.md) kan du snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering. |
 | Uppdaterade XDM-fält för att samla in Streaming Media-data till Adobe Experience Platform | När Streaming Media-data samlas in i Adobe Experience Platform bör de XDM-fältsökvägar som visas under rubriken &quot;XDM Field Path&quot; i dokumentationen för Streaming Media-parametrar inte längre användas. De här fältsökvägarna finns på följande sidor och markeras som &quot;Undertryckta&quot;: [Parametrar för ljud- och videoinnehåll](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Lägg till parametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Kapitelparametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parametrar för spelartillstånd](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) och [Kvalitetsparametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |

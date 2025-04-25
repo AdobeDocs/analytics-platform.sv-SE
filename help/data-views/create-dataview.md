@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
 workflow-type: tm+mt
 source-wordcount: '2010'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Du kan filtrera ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow
 
 ### Inställningar (segment)
 
-Du kan lägga till segment som gäller för en hel datavy. Det här segmentet tillämpas på alla rapporter som du kör i Workspace. Dra ett segment från listan till vänster till fältet [!UICONTROL Add segments].
+Du kan lägga till segment som gäller för en hel datavy. Det här segmentet tillämpas på alla rapporter som du kör i Workspace. Dra ett segment från listan till vänster till fältet **[!UICONTROL Add segments]**.
 
 ### Sessionsinställningar
 

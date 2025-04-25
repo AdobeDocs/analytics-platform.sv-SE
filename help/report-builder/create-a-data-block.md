@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
+source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,14 @@ Konfigurera de inledande datablocksparametrarna för datablockets plats, datavye
 
 1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**.
 
-   ![Skärmbild med alternativet Skapa datablock.](./assets/create-datablock.png)
+   ![Skärmbild som visar alternativet Skapa datablock](./assets/create-data-block.png){zoomable="yes"}
+
 
 1. Ange **[!UICONTROL Data block location]**.
 
-   Platsalternativet för datablocket definierar den plats i kalkylbladet där rapportbyggaren lägger till data i kalkylbladet.
+   Platsalternativet för datablocket anger den plats i kalkylbladet där Report Builder lägger till data i ditt kalkylblad.
 
-   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress som `a3`, `\\\$a3`, `a\\\$3` eller `sheet1!a2`. Den angivna cellen kommer att vara det övre vänstra hörnet i datablocket när data hämtas.
+   Om du vill ange platsen för datablocket markerar du en enskild cell i kalkylbladet eller anger en celladress, till exempel `a3`, `\\\$a3`, `a\\\$3` eller `sheet1!a2`. Den angivna cellen blir det övre vänstra hörnet i datablocket när data hämtas.
 
    Använd ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) om du vill välja en plats för ett datablock från den markerade cellen i kalkylbladet.
 
@@ -41,69 +42,79 @@ Konfigurera de inledande datablocksparametrarna för datablockets plats, datavye
 
 1. Ange **[!UICONTROL Date range]**.
 
-   Med datumintervallalternativet kan du välja ett datumintervall. Datumintervall kan vara fasta eller rullande. Mer information om alternativ för datumintervall finns i [Välj ett datumintervall](select-date-range.md).
+   Med alternativet **[!UICONTROL Date range]** kan du välja ett datumintervall. Datumintervall kan vara fasta eller rullande.
 
-   Välj **[!UICONTROL Calendar]** om du vill välja ett dataintervall med ![Kalender](/help/assets/icons/Calendar.svg) eller ange ett datumintervall manuellt. Du kan också välja en förinställning i listrutan Sökförinställningar.
+   Välj **[!UICONTROL Calendar]** om du vill välja ett dataintervall med ![Kalender](/help/assets/icons/Calendar.svg) eller ange ett datumintervall manuellt. Du kan också välja en förinställning i listrutan **[!UICONTROL _Sökförinställningar_]** .
 
-   Välj **[!UICONTROL From Cell]** om du vill definiera start- och slutdata baserat på en cell i det aktuella bladet.
+   Välj **[!UICONTROL From cell]** om du vill definiera start- och slutdata baserat på en cell i det aktuella bladet.
 
-1. Välj **Nästa**.
+   Mer information om alternativ för datumintervall finns i [Markera ett datumintervall](select-date-range.md).
+
+1. Välj **[!UICONTROL Next]**.
 
    ![Skärmbild som visar datumintervallalternativet och den aktiva knappen Nästa.](./assets/choose_date_data_view3.png)
 
-   När du har konfigurerat datablocket kan du välja mått, mätvärden och segment för att skapa datablocket. Flikarna Dimensioner, Metrisk och Segment visas ovanför rutan Tabellverktyg.
+   När du har konfigurerat datablocket kan du välja mått, mätvärden och segment för att skapa datablocket. Flikarna **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]** och **[!UICONTROL Segments]** visas ovanför rutan **[!UICONTROL Table]**.
 
 ## Bygg datablocket
 
 Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan layouten.
 
-1. Lägg till dimensioner, mått och segment.
+1. Lägg till **[!UICONTROL Dimensions]**-, **[!UICONTROL Metrics]**- och **[!UICONTROL Segments]**-komponenter.
 
-   Bläddra i komponentlistorna eller använd fältet **sök** för att hitta komponenter. Dra och släpp komponenter till tabellrutan eller dubbelklicka på ett komponentnamn i listan för att automatiskt lägga till komponenten i tabellrutan.
+   Bläddra i komponentlistorna eller använd fältet ![Sök](/help/assets/icons/Search.svg) **[!UICONTROL _Sök efter komponenter_]** för att söka efter komponenter. Dra och släpp komponenter i rutan [!UICONTROL Table] eller dubbelmarkera ett komponentnamn i listan för att lägga till komponenten i rutan [!UICONTROL Table].
 
-   Dubbelklicka på en komponent för att lägga till komponenten i ett standardavsnitt i tabellen.
+   Dubbelmarkera en komponent om du vill lägga till komponenten i ett standardavsnitt i tabellen.
 
-   - Dimension-komponenter läggs till i avsnittet Rad eller i kolumnavsnittet om du redan har en dimension i kolumnerna.
-   - Datumkomponenter läggs till i avsnittet Kolumn.
-   - Segmentkomponenter läggs till i segmentavsnittet.
-
-### Startdatum som Dimension
-
-Ange startdatumet som en dimension för att tydligt identifiera startdatumet för ditt datablock. Detta är praktiskt om du har en schemalagd rapport med ett löpande datumintervall eller om du har ett okonventionellt datumintervall och du behöver inte ta hänsyn till startdatumet.
-
-![Skärmbild som visar startdatumet i listan över dimensioner.](./assets/start-date-dimension.png)
+   - Dimension-komponenter läggs till i avsnittet ![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** eller i avsnittet ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** om du redan har en dimension i kolumnerna.
+   - Datumkomponenter läggs till i avsnittet ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]**.
+   - Segmentkomponenter läggs till i avsnittet ![Segmentering](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** .
+   - Mätkomponenter läggs till i avsnittet ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Values]** .
 
 1. Ordna objekten i tabellrutan för att anpassa layouten för ditt datablock.
 
-   Dra och släpp komponenter i tabellrutan för att ändra ordning på komponenterna eller högerklicka på ett komponentnamn och välj på Alternativ-menyn.
+   Dra och släpp komponenter i varje lista i tabellrutan om du vill ändra ordning på komponenterna eller markera ![MoreSmall](/help/assets/icons/MoreSmall.svg) och välj ![ArrowUp](/help/assets/icons/ArrowUp.svg) Move up, ![ArrowDown](/help/assets/icons/ArrowDown.svg) Move down, med mera för att flytta komponenterna i en lista.
 
    När du lägger till komponenter i tabellen visas en förhandsvisning av datablocket på datablockets plats i kalkylbladet. Layouten för förhandsgranskningen av datablocket uppdateras automatiskt när du lägger till, flyttar eller tar bort objekt i tabellen.
 
    ![Skärmbild som visar de tillagda komponenterna och det uppdaterade kalkylbladet.](./assets/image10.png)
 
-### Visa eller dölj rad- och kolumnrubriker
 
-1. Välj ikonen **[!UICONTROL Table]** ![Inställningar](/help/assets/icons/Setting.svg).
+1. Du kan även ange **[!UICONTROL Start date]** som en dimension för att identifiera startdatumet för ditt datablock. Det kan vara bra att lägga till startdata som en dimension om du har en regelbundet schemalagd rapport med ett löpande datumintervall. Eller om du har ett okonventionellt datumintervall och du måste vara explicit angående startdatumet.
 
-   ![Skärmbild med alternativet Tabellinställningar.](./assets/table-settings.png)
+   ![Skärmbild som visar startdatumet i listan över dimensioner.](./assets/start-date-dimension.png)
 
-1. Markera eller avmarkera alternativet Visa rad- och kolumnrubriker. Rubrikerna visas som standard.
+1. Du kan även visa eller dölja rad- och kolumnrubriker. Så här gör du:
 
-### Dölja eller visa dimensionsetiketter och måttrubriker
+   1. Välj ikonen **[!UICONTROL Table]** ![Inställningar](/help/assets/icons/Setting.svg).
 
-Markera ellipsikonen på dimensionerna eller kolumnrubrikerna för att visa inställningarna.
+      ![Skärmbild med alternativet Tabellinställningar.](./assets/table-settings.png)
 
-![Ellipsikonen i avsnittet Rad.](./assets/row-heading.png)
+   1. Markera eller avmarkera alternativet för **[!UICONTROL Display row and column headers]**. Rubrikerna visas som standard.
 
-1. Välj ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) **[!UICONTROL Hide]** eller ![Visibility](/help/assets/icons/Visibility.svg) **[!UICONTROL Show]** för att växla dimensionsetiketter eller kolumnrubriker. Alla etiketter visas som standard.
+1. Du kan även dölja eller visa dimensionsetiketter och metriska rubriker. Så här gör du:
 
-1. Välj **[!UICONTROL Finish]**.
+   1. Välj ![MoreSmall](/help/assets/icons/MoreSmall.svg) på dimensionsetiketten eller kolumnrubriken för att visa snabbmenyn.
+
+      ![Ellipsikonen i avsnittet Rad.](./assets/row-heading.png)
+
+   1. Välj ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) **[!UICONTROL Hide]** eller ![Visibility](/help/assets/icons/Visibility.svg) **[!UICONTROL Show]** för att växla dimensionsetikett eller kolumnrubrik. Alla etiketter visas som standard.
+
+1. Välj **[!UICONTROL Finish]** för att slutföra konfigurationen av ditt datablock.
+
+1. Ett bearbetningsmeddelande **[!UICONTROL #BUSY]** visas när analysdata hämtas.
+
+   ![Bearbetningsmeddelandet.](./assets/image11.png)
+
+1. Report Builder hämtar data och visar det ifyllda datablocket i kalkylbladet.
+
+   ![Det slutförda datablocket.](./assets/image12.png)
 
 
-Ett bearbetningsmeddelande visas när analysdata hämtas.
-
-![Bearbetningsmeddelandet.](./assets/image11.png)
-
-Report Builder hämtar data och visar det ifyllda datablocket i kalkylbladet.
-
-![Det slutförda datablocket.](./assets/image12.png)
+>[!MORELIKETHIS]
+>
+>[Välj en datavy](select-data-view.md)
+>[Välj ett datumintervall ](select-date-range.md)
+>[Filterdimensioner ](filter-dimensions.md)
+>[Arbeta med segment ](work-with-filters.md)
+>

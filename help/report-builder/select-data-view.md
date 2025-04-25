@@ -1,14 +1,14 @@
 ---
-title: Så här väljer du en datavy i Report Builder
+title: Välja en datavy i Report Builder
 description: Beskriver hur du väljer datavyer i Adobe Report Builder
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -17,43 +17,41 @@ ht-degree: 0%
 
 Du kan välja en datavy i listrutan eller välja en datavy från en cell och automatiskt uppdatera datablocket med en ny datavy.
 
-**Välj datavy från cell**
+## Välj datavy från en cell
 
-Om du väljer en datavy från en cell blir det enkelt att uppdatera datablock med hjälp av olika datavyer. Om din organisation har flera datavyer som liknar eller är identiska med varandra i strukturen, i stället för att skapa helt nya rapporter med separata datablock, kan du uppdatera datablocken med en datavy som är markerad från en cell. Detta är också användbart om du har komplicerade datablocksformat som innehåller anpassade komponenter och layouter.
+Om du väljer en datavy från en cell blir det enkelt att uppdatera datablock med hjälp av olika datavyer. I stället för att skapa helt nya rapporter med separata datablock, kan du uppdatera datablock med en datavy som är markerad från en cell.
 
-Om du vill välja en datavy från en cell skapar du först ett datablock och tilldelar flera datavyer till en cell utanför datablocket. Använd sedan datavyn från cellpanelen för att uppdatera dina datablock från olika datavyer.
+Det kan vara praktiskt att välja en datavy från en cell när du har:
 
-1. Skapa ett datablock.
-Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/help/report-builder/create-a-data-block.md).
+* Flera datavyer som liknar eller är identiska med varandra i strukturen.
+* Komplicerade datablockformat som innehåller anpassade komponenter och layouter.
 
-1. Klicka på *cellikonen* i avsnittet *Datavyer*.
+Om du vill välja en datavy från en cell skapar du först ett datablock och tilldelar flera datavyer till en cell utanför datablocket. Använd sedan panelen **[!UICONTROL Data view from cell]** för att uppdatera dina datablock från olika datavyer.
 
-   ![Skapa nytt fönster för datablock med cellikonen markerad.](/help/report-builder/assets/cell-icon.png)
+1. Skapa ett datablock. Mer information om hur du skapar ett datablock finns i [Skapa ett datablock](/help/report-builder/create-a-data-block.md).
 
-1. Välj en cellplats där datavyer ska läggas till i den markerade cellen.
+1. Välj ![DataViewSelector](/help/assets/icons/DataViewSelector.svg) i **[!UICONTROL Data views]**.
 
-   Du kan markera en cell tillräckligt långt bort från dina datablockceller så att de inte överlappar varandra.
+1. Markera en cell utanför datablocket med ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) .
 
-1. Bekräfta den markerade cellens placering.
+1. Lägg till en eller flera datavyer från **[!UICONTROL Select data views to add to data view from cell]** genom att dra och släppa. Du kan också dubbelmarkera en datavy för att lägga till datavyn i listan **[!UICONTROL Data views included]**.
 
-1. Markera de datavyer som du vill tilldela cellen.
+   * Du kan använda ![Sök](/help/assets/icons/Search.svg) **[!UICONTROL _Välj datavyer_]** för att söka efter datavyer.
+   * Använd ![MoreSmall](/help/assets/icons/MoreSmall.svg) för att öppna en snabbmeny så att du kan flytta datavyer uppåt eller nedåt i **[!UICONTROL Data views included]**-listan.
+   * Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en datavy från listan **[!UICONTROL Data views included]**.
 
-   ![Snabbredigeringsrutan för Report Builder med vyn Välj data.](/help/report-builder/assets/select-data-view.png)
+   ![Välj datavy från en cell](assets/dataviews-from-a-cell.png){zoomable="yes"}
 
-1. Klicka på **Använd**.
+1. Välj **[!UICONTROL Apply]** om du vill använda de markerade datavyerna på den markerade cellen.
 
-   När du är klar med datablocket kan du uppdatera datablocket med en annan datavy än den markerade cellen.
 
-   **Ändra datavyn från cellen**
+## Ändra datavyn från en cell
 
-1. Klicka på den cellplats för datavy som du valde i steg 3.
+1. Markera cellen i datavyn i bladet.
+1. I Report Builder-navet väljer du länken **[!UICONTROL Data views from cell]** i **[!UICONTROL Quick edit]**.
+1. Välj en datavy i listrutan **[!UICONTROL Data view]**.
 
-   En listruta med en lista över de datavyer som du valde tidigare i steg 5 visas.
+   ![Ändra datavy från en cell](assets/change-data-view-from-cell.png){zoomable="yes"}
+1. Valfritt, välj **[!UICONTROL Refresh data block(s) upon change]**.
 
-1. Välj en annan datavy i listrutan.
-
-1. (Valfritt) **Välj Uppdatera datablock** vid ändring.
-
-1. Klicka på **Använd**.
-
-   Report Builder uppdaterar datablocket med den valda datavyn.
+1. Välj **[!UICONTROL Apply]**. Report Builder uppdaterar datablocket baserat på den valda datavyn.

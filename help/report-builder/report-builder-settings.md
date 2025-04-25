@@ -6,57 +6,54 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
 
-# Inställningar för Report Builder
+# Report Builder-inställningar
 
 Använd rutan **Inställningar** om du vill konfigurera programnivåinställningar, t.ex. det språk som visas i användargränssnittet eller om du vill arbeta i offlineläge eller inte. Inställningarna används omedelbart och ställs in för alla framtida sessioner tills de ändras.
 
-Så här ändrar du inställningarna för Report Builder
+Så här ändrar du Report Builder-inställningar
 
-1. Klicka på ikonen **Inställningar** .
+1. Välj ikonen **Inställningar** .
 
-1. Gör ändringar i Aktivera offlineläge, välj ett språk eller aktivera inställningarna för felsökningsloggen.
+1. Gör ändringar i [aktivera inaktiverat offlineläge](#off-line-mode), [välj ett språk](#language) eller [aktivera felsökning](#troubleshooting).
 
-1. Klicka på **Använd**.
+1. Välj **[!UICONTROL Apply]**.
 
-   ![Report Builder datumintervallfönster med knappen Avbryt och använd.](./assets/image38.png)
+   ![Report Builder datumintervallfönster med knappen Avbryt och använd.](./assets/report-builder-settings.png){zoomable="yes"}
 
 ## Offline-läge
 
-Data hämtas inte när du skapar och redigerar ett datablock i offlineläge. I stället används simuleringsdata så att du snabbt kan skapa och redigera ett datablock utan att vänta på att begäran ska köras. När du är online igen uppdaterar kommandot *Uppdatera datablock* eller *Uppdatera alla datablock* de datablock som du har skapat med aktuella data.
+När du skapar och redigerar ett datablock i offlineläge hämtas inga data. I stället används simuleringsdata så att du snabbt kan arbeta utan att vänta på att begäran ska köras. När du är online igen väljer du ![Uppdatera](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh data block]** eller ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Refresh all data blocks]** om du vill uppdatera datablocken med aktuella data.
 
 Aktivera offline-läge
 
-1. Klicka på ikonen **Inställningar** .
+1. Välj ![Inställning](/help/assets/icons/Setting.svg).
 
-1. Välj **Aktivera offlineläge**.
+1. Växla **[!UICONTROL Enable off-line mode]** på.
 
-1. Ange ett positivt heltal i fältet **Visa mätdata som**.
+1. Ange ett positivt heltal i fältet **[!UICONTROL Display metric data]** som.
 
-1. Klicka på **Använd**.
+1. Välj **[!UICONTROL Apply]**.
+
 
 ## Språk
 
-Du kan välja språk för användargränssnittet i Report Builder. Alla Adobe Analytics-språk som stöds finns tillgängliga.
+Du kan välja språk för Report Builder-gränssnittet. Alla Customer Journey Analytics-språk som stöds finns tillgängliga.
 
-Välj det språk som ska användas i användargränssnittet i Report Builder
+Så här väljer du vilket språk som ska användas i Report Builder-gränssnittet:
 
-1. Klicka på Inställningar.
+1. Välj ett språk i listrutan **[!UICONTROL Language]**.
 
-1. Välj ett språk i listrutan **Språk**.
-
-   ![Datumintervallfönstret Report Builder visar språklistan med engelska markerat.](./assets/image39.png)
-
-1. Klicka på **Använd.**
+1. Välj **Använd.**
 
 ## Felsökning
 
-Använd felsökningsinställningen för att logga alla klient-/serverdata till en lokal fil. Använd det här alternativet för att lösa supportärenden.
+Inställningen **[!UICONTROL Troubleshooting logs]** loggar alla klient-/serverdata till en lokal fil. Använd det här alternativet för att lösa supportärenden.
 
-Om du vill aktivera felsökningsalternativet väljer du **Logga Report builder-begäran till den lokala filen**.
+Om du vill aktivera felsökningsloggar kontrollerar du **[!UICONTROL Log report builder request to local file]**.

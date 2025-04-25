@@ -1,21 +1,21 @@
 ---
-title: Konfigurera Report Builder i Customer Journey Analytics
+title: Så här konfigurerar du Report Builder i Customer Journey Analytics
 description: Beskriver hur du konfigurerar Report Builder i Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
-# Konfigurera Report Builder
+# Report Builder
 
-Du kommer snabbt åt Report Builder via Excel-tilläggsmenyn.
+I den här artikeln beskrivs kraven för att använda Report Builder för Customer Journey Analytics i Microsoft Excel. Och hur du installerar och konfigurerar tillägget.
 
 ## Krav
 
@@ -31,89 +31,91 @@ Report Builder för Customer Journey Analytics stöds av följande operativsyste
 - Windows 10, version 1904 eller senare
 - Excel version 2106 eller senare
 
-  Alla Excel-användare med Windows-datorer måste installera Microsoft Edge Webview2 för att kunna använda tillägget. Så här installerar du styrenheten:
+  Alla Excel-användare med Windows-datorer måste installera Microsoft Edge Webview2 för att kunna använda tillägget. Installera:
 
-   1. Gå till <https://aka.ms/webview2installer>.
-   1. Välj och hämta Evergreen Standalone Installer.
-   1. Följ installationsanvisningarna.
+   1. Gå till <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>.
+   1. Välj och hämta rätt version av **[!UICONTROL Evergreen Standalone Installer]** för din plattform.
+   1. Kör installationsprogrammet och följ installationsanvisningarna.
 
 ### Webbkontor
 
-- Stöder alla webbläsare och versioner
+- Stöder alla webbläsare och versioner.
 
 
-## Excel-tillägg för Report Builder
+## Report Builder Excel-tillägg
 
-Du måste installera Report Builder Excel-tillägget för att kunna använda Report Builder för Customer Journey Analytics. När du har installerat tillägget Report Builder Excel kan du komma åt Report Builder från en öppen Excel-arbetsbok.
+Installera Report Builder Excel-tillägget om du vill använda Report Builder för Customer Journey Analytics. När du har installerat Report Builder Excel-tillägget kan du komma åt Report Builder från en öppen Excel-arbetsbok.
 
-### Hämta och installera tillägget Report Builder
+### Hämta och installera Report Builder-tillägget
 
-Hämta och installera tillägget Report Builder
+Så här hämtar och installerar du Report Builder-tillägget
 
 1. Starta Excel och öppna en ny arbetsbok.
 
-1. Välj Infoga > Hämta tillägg.
+1. Välj **[!UICONTROL Insert]** > **[!UICONTROL Add-ins]** > **[!UICONTROL Get Add-ins]** på huvudmenyn.
 
-1. I dialogrutan för Office-tillägg väljer du fliken Store.
+1. I dialogrutan för Office-tillägg väljer du fliken **[!UICONTROL Store]**.
 
-1. Sök efter &quot;Report Builder&quot; och klicka på Lägg till.
+1. Sök efter `Report Builder` och välj **[!UICONTROL Add]**.
 
-1. Klicka på Fortsätt i dialogrutan Licensvillkor och Integritetspolicy.
+1. Välj **[!UICONTROL Continue]** i dialogrutan Licensvillkor och sekretesspolicy.
 
-**Om fliken Store inte visas**
+Om fliken **[!UICONTROL Store]** inte visas:
 
-1. I Excel väljer du Arkiv > Konto > Hantera inställningar.
+1. I Excel väljer du **[!UICONTROL File]** > **[!UICONTROL Account]** > **[!UICONTROL Manage Settings]** på huvudmenyn.
 
-1. Markera rutan bredvid&quot;Aktivera valfria anslutna upplevelser&quot;
+1. Markera rutan bredvid **[!UICONTROL Enable optional connected experiences]**.
 
 1. Starta om Excel.
 
-**Om din organisation blockerar åtkomsten till Microsoft Store**
+Om din organisation blockerar åtkomsten till Microsoft Store:
 
-Kontakta IT-avdelningen eller säkerhetsteamet och be om godkännande av tillägget Report Builder. När godkännande har beviljats väljer du fliken Administratörshanterad i dialogrutan för Office-tillägg.
+- Kontakta IT-avdelningen eller säkerhetsteamet för att få Report Builder-tillägget godkänt. Välj fliken **[!UICONTROL Admin Managed]** i Office **[!UICONTROL Add-ins]**-dialogrutan när du har godkänt.
 
-![Fliken Administratörshantering i dialogrutan Office-tillägg.](./assets/image1.png)
+  ![Fliken Administratörshantering i dialogrutan Office-tillägg.](./assets/image1.png){zoomable="yes"}
 
-När du har installerat tillägget Report Builder visas ikonen Report Builder i Excel-menyfliksområdet på fliken Hem.
+När du har installerat Report Builder-tillägget visas ikonen ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** i Excel-menyfliksområdet på fliken **[!UICONTROL Home]** .
 
-![Ikonen Report Builder i Excel](./assets/rb_app_icon.png)
+![Report Builder-ikonen i Excel](./assets/rb_app_icon.png){zoomable="yes"}
 
-## Logga in i Report Builder
 
-När du har installerat tillägget Report Builder for Excel för din operativplattform eller webbläsare följer du de här stegen för att logga in på Report Builder.
+## Logga in på Report Builder
+
+När du har installerat Report Builder for Excel-tillägget för din operativplattform eller webbläsare följer du de här stegen för att logga in på Report Builder.
 
 1. Öppna en Excel-arbetsbok.
 
-1. Klicka på ikonen Report Builder för att starta Report Builder.
+1. Välj ![AdobeLogoRedOnWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** för att starta Report Builder.
 
-1. Klicka på **Logga in** i verktygsfältet i Adobe Report Builder.
+1. Välj **[!UICONTROL Login]** i verktygsfältet Adobe Report Builder.
 
-   ![Klicka på inloggningsknappen för Report Builder.](./assets/rb_login.png)
+   ![Klicka på inloggningsknappen för Report Builder.](./assets/rb_login.png){zoomable="yes"}
 
-1. Ange din kontoinformation för Adobe Experience ID. Kontoinformationen bör överensstämma med dina Customer Journey Analytics-uppgifter.
+1. Ange din kontoinformation för Adobe. Kontoinformationen ska överensstämma med dina Customer Journey Analytics-uppgifter.
 
-   ![Din inloggningsikon och organisation.](./assets/image4.png)
+   ![Din inloggningsikon och organisation.](./assets/image4.png){zoomable="yes"}
 
 När du har loggat in visas din inloggningsikon och organisation högst upp på panelen
 
+
 ## Byt organisation
 
-När du loggar in första gången loggas du in på den standardorganisation som tilldelats din profil.
+När du loggar in första gången loggas du in på den standardorganisation som tilldelats din profil eller den organisation som du har valt som en del av inloggningsflödet.
 
-1. Klicka på namnet på organisationen som visas när du loggar in.
+1. Välj namnet på organisationen som visas när du loggar in.
 
 1. Välj en organisation i listan över tillgängliga organisationer. Endast organisationer som du har åtkomst till listas.
 
-   ![Listan över organisationer som du kan komma åt.](./assets/image5.png)
+   ![Listan över organisationer som du kan komma åt.](./assets/image5.png){zoomable="yes"}
 
 ## Logga ut
 
-Du kan logga ut från Report Builder från användarprofilen.
+Så här loggar du ut från Report Builder:
 
 1. Spara ändringar i alla öppna arbetsböcker.
 
-1. Klicka på avatarikonen för att visa din användarprofil.
+1. Välj avatarikonen för att visa din användarprofil.
 
-   ![Din användarprofilavatar och knappen Logga ut.](./assets/image6.png)
+   ![Din användarprofilavatar och knappen Logga ut.](./assets/image6.png){zoomable="yes"}
 
-1. Klicka på **Logga ut**.
+1. Välj **[!UICONTROL Sign Out]**.
