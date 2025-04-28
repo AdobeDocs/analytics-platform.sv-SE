@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+source-git-commit: c27d5f44243e2cda252ac6a484a70964f0999dfc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >Du måste ha paketet **Select** eller senare (för [fältbaserad sammanfogning](fbs.md)) eller paketet **Prime** eller senare (för [diagrambaserad sammanfogning](gbs.md)) för att kunna använda de funktioner som beskrivs i det här avsnittet. Kontakta administratören om du är osäker på vilket Customer Journey Analytics-paket du har.
 
-Identitetssammanfogning (eller helt enkelt sammanfogning) är en kraftfull funktion som ökar en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera, vilket gör att du kan kombinera och köra rapporter sömlöst på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID).
+Identitetssammanfogning (eller helt enkelt sammanfogning) är en kraftfull funktion som ökar en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera och som gör det möjligt att kombinera och köra rapporter sömlöst på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID).
 
 När du kombinerar datauppsättningar med liknande person-ID:n överförs attribueringen mellan enheter och kanaler. En användare besöker till exempel först din webbplats via en annons på sin dator. Användaren stöter på ett problem med sin beställning och ger sedan kundtjänstteamet ett samtal för att hjälpa till att lösa det. Med flerkanalsanalys kan ni attribuera callcenter-händelser till den annons som de ursprungligen klickade på.
 
@@ -50,7 +50,6 @@ Du kan dra nytta av flerkanalsanalys om du kombinerar en eller flera av dina sam
 
 >[!IMPORTANT]
 >
->- Det finns inget stöd för att använda `identityMap` som beständigt ID. Du måste definiera en specifik identifierare i datauppsättningen (till exempel `ECID`) som det beständiga ID:t.
 >
 >- Använd alla ändringar du gör i källhändelsens dataschema även i det nya sammanfogade dataschemat, annars bryts den sammanfogade datauppsättningen.
 >
@@ -66,7 +65,7 @@ Stitching är en banbrytande och robust funktion, men har begränsningar för hu
 
 Försäkra dig om att du inte förväxlar stygn med:
 
-- Sammanfogningen av två eller flera datauppsättningar. Gäller endast en datauppsättning. Sammanfogning av datauppsättningar sker som ett resultat av att du konfigurerar en Customer Journey Analytics-anslutning och väljer samma person-ID för de markerade datauppsättningarna i anslutningen.
+- Sammanfogningen av två eller flera datauppsättningar. Gäller endast en datauppsättning. Sammanfogning av datauppsättningar sker som ett resultat av att en Customer Journey Analytics-anslutning skapas och att samma person-ID väljs för de markerade datauppsättningarna i anslutningen.
 
 - Sammanfogning av två datauppsättningar. I Customer Journey Analytics används ofta en join för uppslag eller klassificeringar i Analysis Workspace. Även om sammanfogning använder sammanfogningsfunktioner innebär själva processen mer än sammanfogningar.
 

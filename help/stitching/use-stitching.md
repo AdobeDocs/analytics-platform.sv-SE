@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 157f70353f60da3fec83e016e7a09f69f7f514cf
+source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,12 @@ Det Customer Journey Analytics-paket som du är berättigad till avgör vilka me
    - En begäran om aktivering av sammanfogning.
    - Datauppsättnings-ID för den datauppsättning som du vill ändra inmatning för.
    - Kolumnnamnet (identitetssökväg och namnutrymme) för det beständiga ID:t för den önskade datauppsättningen (identifieraren som visas på varje rad).
-   - För fältbaserad sammanfogning är kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (personidentifieraren, som också fungerar som en länk mellan datauppsättningar i samband med en anslutning). För diagrambaserad sammanfogning används det identitetsnamnutrymme som ska användas för att fråga efter identitetsdiagrammet.
+   - Om datauppsättningen stöder `identityMap`:
+      - För fältbaserad sammanfogning anger du namnutrymmet för både beständiga och övergående ID:n.
+      - För diagrambaserad sammanfogning anger du namnutrymmet för det beständiga ID:t och det identitetsnamnutrymme som ska användas för att fråga efter identitetsdiagrammet.
+   - Om datauppsättningen inte stöder `identityMap`:
+      - För fältbaserad sammanfogning är kolumnnamnet för det tillfälliga ID:t för den önskade datauppsättningen (personidentifieraren, som också fungerar som en länk mellan datauppsättningar i samband med en anslutning).
+      - För diagrambaserad sammanfogning används det identitetsnamnutrymme som ska användas för att fråga efter identitetsdiagrammet.
    - Du kan välja mellan uppslagsfönster och uppspelningsfrekvens. Se ditt Customer Journey Analytics-paket för de [alternativ](#options) som är tillgängliga.
    - Namn på sandlåda.
 

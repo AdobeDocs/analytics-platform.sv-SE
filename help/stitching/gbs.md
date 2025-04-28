@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,77 @@ ht-degree: 0%
 # Diagrambaserad stygn
 
 
-I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det beständiga ID:t (cookie) och namnområdet för det tillfälliga ID:t (person-ID) för den datauppsättningen. Diagrambaserad sammanfogning skapar en ny kolumn för det sammanfogade ID:t i den nya sammanfogade datauppsättningen. Sedan används det beständiga ID:t för att fråga efter identitetsdiagrammet från identitetstjänsten i Experience Platform, med det namnområde som anges, för att uppdatera det sammanfogade ID:t.
+I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det beständiga ID:t (cookie) och namnområdet för det tillfälliga ID:t (person-ID) för den datauppsättningen. Diagrambaserad sammanfogning skapar en ny kolumn för det sammanfogade ID:t i den nya sammanfogade datauppsättningen. Sedan används det beständiga ID:t för att fråga efter identitetsdiagrammet från Experience Platform Identity Service med det namnområde som anges för att uppdatera det sammanfogade ID:t.
 
 ![Diagrambaserad utjämning](/help/stitching/assets/gbs.png)
+
+## IdentityMap
+
+Diagrambaserad sammanfogning stöder användning av fältgruppen [`identifyMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+
+- Använd den primära identiteten i namnområdet `identityMap` för att definiera persistentID:
+   - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexigrafiskt och den första identiteten markeras.
+   - Om flera primära identiteter hittas i ett och samma namnutrymme markeras den första lexikografiska tillgängliga primära identiteten.
+
+  I exemplet nedan resulterar namnutrymmen och identiteter i en sorterad lista med primära identiteter och slutligen den valda identiteten.
+
+  <table>
+     <tr>
+       <th>Namnutrymmen</th>
+       <th>Identitetslista</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>Listan Sorterade identiteter</th>
+      <th>Vald identitet</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
+    </tr>
+  </table>
+
+- Använd namnområdet `identityMap` för att definiera persistentID:
+   - Om flera värden för persistentID hittas i ett `identityMap`-namnområde används den första lexikografiska tillgängliga identiteten.
+
+  I exemplet nedan resulterar namnutrymmena och identiteterna i en lista med sorterade identiteter för det markerade namnutrymmet (ECID) och slutligen den valda identiteten.
+
+  <table>
+     <tr>
+       <th>Namnutrymmen</th>
+       <th>Identitetslista</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
+
+  <table>
+    <tr>
+      <th>Listan Sorterade identiteter</th>
+      <th>Vald identitet</th>
+    </tr>
+    <tr>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
+    </tr>
+  </table>
+
 
 ## Hur grafbaserad stygn fungerar
 
@@ -133,13 +201,13 @@ Följande tabell representerar samma data som ovan, men visar vilken effekt en s
 
 Följande krav gäller specifikt för diagrambaserad sammanfogning:
 
-- Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en besökare på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Experience Platform Identity Service.
+- Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en besökare på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Experience Platform identitetstjänst.
 - Det beständiga ID:t måste också vara [definierat som en identitet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) i schemat.
 - Identitetsdiagrammet från Experience Platform Identity Service måste ha ett namnutrymme (till exempel `Email` eller `Phone`) som du vill använda vid sammanfogning för att matcha **transient ID**. Mer information finns i [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home).
 
 >[!NOTE]
 >
->Du behöver **inte** en Real-time Customer Data Platform-licens för diagrambaserad sammanfogning. **Prime**-paketet eller senare av Customer Journey Analytics innehåller de berättiganden för Experience Platform Identity Service som krävs.
+>Du behöver **inte** en kunddataplattformslicens i realtid för diagrambaserad sammanfogning. **Prime**-paketet eller senare av Customer Journey Analytics innehåller de Experience Platform Identity Service-berättiganden som krävs.
 
 
 ## Begränsningar
@@ -148,7 +216,7 @@ Följande begränsningar gäller specifikt för diagrambaserad sammanfogning:
 
 - Tidsstämplar beaktas inte när du frågar efter ett tillfälligt ID med det angivna namnutrymmet. Det är alltså möjligt att ett beständigt ID sammanfogas med ett tillfälligt ID från en post som har en tidigare tidsstämpel.
 - I scenarier med delade enheter, där namnutrymmet i diagrammet innehåller flera identiteter, används den första lexikografiska identiteten. Om namnutrymmesbegränsningar och -prioriteringar konfigureras som en del av releasen av regler för diagramlänkning, används den senast autentiserade användarens identitet. Mer information finns i [Delade enheter](/help/use-cases/stitching/shared-devices.md).
-- I identitetsdiagrammet finns det en hård gräns på tre månader för att efterfylla identiteter. Du använder bakåtfyllnadsidentiteter om du inte använder ett Experience Platform-program, som Real-time Customer Data Platform, för att fylla i identitetsdiagrammet.
+- I identitetsdiagrammet finns det en hård gräns på tre månader för att efterfylla identiteter. Du använder bakåtfyllnadsidentiteter om du inte använder ett Experience Platform-program, som Customer Data Platform i realtid, för att fylla i identitetsdiagrammet.
 - [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximalt antal identiteter i ett diagram: 50.
    - Maximalt antal länkar till en identitet för ett enskilt batchintag: 50.
