@@ -1,7 +1,8 @@
 ---
 title: Översikt över delade mått och mått
 description: Använd samma mått eller måttreferens för flera datavyer.
-source-git-commit: 263767028893d9b04e5c8f8ae067b3e6283e4053
+exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
+source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -81,7 +82,7 @@ Alla delade mått och mått visas under de fyra översiktskorten.
    * **[!UICONTROL Last modified]**: Om komponenten har ändrats efter att den skapades, datumet då den senast ändrades.
 * **[!UICONTROL Job history]**: Välj ikonen ![ Historik ](/help/assets/icons/History.svg) för att öppna ett modalt fönster som visar alla instanser av import av dimensioner och mått från enskilda datavyer.
 
-## Redigera komponenter eller dela komponenter i datavyer
+## Redigera komponenter eller dela komponenter till datavyer
 
 Använd kryssrutan bredvid en komponent för att visa alla tillgängliga åtgärder som du kan utföra. Flera markeringar stöds.
 

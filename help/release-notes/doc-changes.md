@@ -4,7 +4,7 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: f3e1f5190024a38dc26199061fb7f466b8d0c472
+source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
 workflow-type: tm+mt
 source-wordcount: '5062'
 ht-degree: 5%
@@ -27,7 +27,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Adobe Content Analytics | Med [Content Analytics](/help/content-analytics/content-analytics.md) kan du snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering. |
 | Uppdaterade XDM-fält för att samla in Streaming Media-data till Adobe Experience Platform | När Streaming Media-data samlas in i Adobe Experience Platform bör de XDM-fältsökvägar som visas under rubriken &quot;XDM Field Path&quot; i dokumentationen för Streaming Media-parametrar inte längre användas. De här fältsökvägarna finns på följande sidor och markeras som &quot;Undertryckta&quot;: [Parametrar för ljud- och videoinnehåll](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Lägg till parametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Kapitelparametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parametrar för spelartillstånd](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) och [Kvalitetsparametrar](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |
 | Media Collection: Adobe Source Connector-uppdateringar för nya Media Reporting XDM | Analytics Source Connector mappar automatiskt strömmande mediedata i Adobe Analytics till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
-| **Terminologisk ändring: &quot;Filter&quot; till &quot;Segment&quot;** | Tidigare kallade Adobe Customer Journey Analytics segment för&quot;filter&quot;. Terminologin har nu anpassats till Adobe Analytics. &quot;Filter&quot; kallas nu &quot;segment&quot;. (Det är tydligt att sökfilter fortfarande kallas för &quot;filter&quot;.) Gränssnittet och dokumentationen har uppdaterats. |
+| Terminologisk förändring:&quot;Filter&quot; till&quot;segment&quot; | Tidigare kallade Adobe Customer Journey Analytics segment för&quot;filter&quot;. Terminologin har nu anpassats till Adobe Analytics. &quot;Filter&quot; kallas nu &quot;segment&quot;. (Det är tydligt att sökfilter fortfarande kallas för &quot;filter&quot;.) Gränssnittet och dokumentationen har uppdaterats. |
 | **Mars 2025** | |
 | Användningsexempel för Quantum Metric | Användningsexempel har lagts till för att samla in data från [kvantmätare](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | Produktanvändningsmall | Med en ny Workspace-mall kan du visa hur Customer Journey Analytics-produkten används i din organisation. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
