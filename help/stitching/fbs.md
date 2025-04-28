@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
+source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Fältbaserad sammanfogning stöder användning av fältgruppen [`identifyMap` ](
 
   I exemplet nedan resulterar namnutrymmen och identiteter i en sorterad lista med primära identiteter och slutligen den valda identiteten.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namnutrymmen</th>
        <th>Identitetslista</th>
@@ -44,7 +44,7 @@ Fältbaserad sammanfogning stöder användning av fältgruppen [`identifyMap` ](
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Listan Sorterade identiteter</th>
       <th>Vald identitet</th>
@@ -62,7 +62,7 @@ Fältbaserad sammanfogning stöder användning av fältgruppen [`identifyMap` ](
 
   I exemplet nedan resulterar namnutrymmena och identiteterna i en lista med sorterade identiteter för det markerade namnutrymmet (ECID) och slutligen den valda identiteten.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namnutrymmen</th>
        <th>Identitetslista</th>
@@ -77,7 +77,7 @@ Fältbaserad sammanfogning stöder användning av fältgruppen [`identifyMap` ](
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Listan Sorterade identiteter</th>
       <th>Vald identitet</th>
