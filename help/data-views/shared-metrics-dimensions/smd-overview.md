@@ -2,7 +2,7 @@
 title: Översikt över delade mått och mått
 description: Använd samma mått eller måttreferens för flera datavyer.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Använd kryssrutan bredvid en komponent för att visa alla tillgängliga åtgär
 ![Förhandsgranska tillgängliga åtgärder](assets/smd-actions.png)
 
 * ![Pennikon](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**: Öppna de valda dimensionerna och måtten i den [delade komponentredigeraren](shared-component-editor.md) där du kan justera deras [komponentinställningar](/help/data-views/component-settings/overview.md). När du markerar flera komponenter som ska redigeras öppnas alla i komponentredigeraren. Du kan skift + klicka på komponenter i komponentredigeraren om du vill redigera samma fält för flera komponenter.
-* ![Delningsikon](/help/assets/icons/Share.svg) **[!UICONTROL Share to data view(s)]**: Öppnar ett fönster som visar alla datavyer som är tillgängliga i den valda anslutningen. Markera kryssrutan för varje datavy som du vill göra den här komponenten tillgänglig i och välj sedan **[!UICONTROL Share]**.
-* ![Ikonen för att sluta dela ](/help/assets/icons/SaveTo.svg) **[!UICONTROL Unshare to data view(s)]**: Öppnar ett fönster som visar alla datavyer som den här komponenten för närvarande delas med. Markera kryssrutan för varje datavy som du vill ta bort den här komponentens tillgänglighet från och välj sedan **[!UICONTROL Unshare]**.
+* ![Delningsikon](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share to data view(s)]**: Öppnar ett fönster som visar alla datavyer som är tillgängliga i den valda anslutningen. Markera kryssrutan för varje datavy som du vill göra den här komponenten tillgänglig i och välj sedan **[!UICONTROL Share]**.
+* ![Ikonen för att sluta dela ](/help/assets/icons/SaveTo.svg) **[!UICONTROL Unshare from data view(s)]**: Öppnar ett fönster som visar alla datavyer som den här komponenten för närvarande delas med. Markera kryssrutan för varje datavy som du vill ta bort den här komponentens tillgänglighet från och välj sedan **[!UICONTROL Unshare]**.
 * ![Duplicera ikon](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicate]**: Skapar en kopia av de markerade komponenterna. Ett nytt komponent-ID genereras för duplicerade komponenter.
 * ![Ta bort ikon](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**: Tar bort de markerade komponenterna från gränssnittet. Om de markerade komponenterna delas med datavyer delas de inte.
