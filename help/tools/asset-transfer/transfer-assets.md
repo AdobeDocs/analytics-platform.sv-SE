@@ -4,9 +4,9 @@ description: Lär dig överföra komponenter från en användare till en annan
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Resursöverföring kräver produktadministratörsbehörighet för Customer Journ
 
 1. När du har valt en användare visas alternativet Överför resurser längst ned på skärmen.
 
-   ![menyalternativ](/help/tools/asset-transfer/assets/after-selection.png)
+   ![Menyalternativet Överför resurser](/help/tools/asset-transfer/assets/after-selection.png)
 
 1. Klicka på **[!UICONTROL Transfer assets]**.
 
@@ -75,6 +75,20 @@ Det finns tre möjliga konsekvenser för en överföring:
 
 - **Överföringsfel**: &quot;Det gick inte att överföra resurser. Försök igen.&quot;
 
+### Potentiella orsaker till misslyckad överföring av tillgångar
+
+- Beroende tjänster som orsakar fel: Resursöverföringen interagerar med olika tjänster för varje komponenttyp (t.ex. nätverksproblem, problem med underordnade tjänster), vilket kan orsaka ett partiellt eller fullständigt fel eller återkommande fel.
+
+- Komponent saknas eller har överförts av en annan administratör: En komponent togs bort av en annan användare, eller överfördes av en annan administratör till någon annan, medan ett överföringsjobb fortfarande pågår.
+
+- API POST-brödtexten fylls inte i korrekt: en komponent kan inte skickas i API POST-brödtexten när flera komponenttyper är markerade.
+
+- Användaren finns inte: Användaren togs bort från mellanöverföringen eller är ogiltig av en annan anledning. Om användaren är ogiltig innan överföringen startar kommer verktyget att fånga upp detta och kommer inte att bearbeta jobbet. Om användaren togs bort från mitten av överföringen kan detta orsaka partiella fel.
+
+- Anslutnings-/nätverksfel: anslutningen avbryts vid mellanöverföring. Eventuella batchar av överföringsjobb som redan har skickats till backend-servern fortsätter att slutföras, men användaren kommer inte att se överföringsresultatmeddelandet med en sammanfattning av vad som lyckades och vad som misslyckades.
+
+- Fliken Webbläsare stängd mitt i överföringen: För mycket stora överföringar, om webbläsarfliken är stängd eller sidan navigeras bort från mittöverföringen, kommer bara nätverksbegäranden som gjorts innan flikstängning/sidnavigering sker att överföra resurser korrekt. Om användaren går tillbaka till sidan får han/hon inte något svarsstatusmeddelande som anger vilka resurser som överfördes och vilka som inte gjorde det.
+
 ## Överför resurser under uppgradering från Adobe Analytics till Customer Journey Analytics
 
 Ett av de största användningsområdena för överföring av mediefiler är vid uppgradering från Adobe Analytics till Customer Journey Analytics.
@@ -91,6 +105,9 @@ Med det här verktyget kan administratörer sedan omtilldela komponenter till si
 
 Med alternativet **[!UICONTROL Export to CSV]** kan administratörer bara hämta en lista över användare som visas i en CSV-fil. De kan inte exportera en lista med överförda resurser till en CSV-fil.
 
-<!---## Unknown users
+## Inaktiva användare
 
-All previously deleted users appear under one unknown user entry, along with all their orphan components. These components can be transferred to a new recipient. This feature will be available in January.-->
+Alla tidigare borttagna användare visas under en Inaktiva användare-post tillsammans med alla deras överordnade komponenter. Dessa komponenter kan överföras till en ny mottagare. Den här funktionen blir tillgänglig i januari.
+
+![Inaktiva användare visas i gränssnittet för överföring av resurser](assets/inactive-users.png)
+
