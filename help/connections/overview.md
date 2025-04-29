@@ -1,22 +1,29 @@
 ---
 title: Customer Journey Analytics Connections overview
-description: Lär dig mer om anslutningar i Customer Journey Analytics.
+description: Läs mer om anslutningar i Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
 
 # Anslutningar - översikt
 
-Med anslutningar kan Customer Journey Analytics-produktadministratörer upprätta anslutningar med olika [!DNL Adobe Experience Platform]-datakällor, som till exempel händelseuppsättningar, uppslag och profildatamängder. Dessa anslutningar möjliggör integrering av data från en anslutning till en datavy som är en härledd datavy. Anslutningar är grunden för CJA och skapas från [!DNL Experience Platform] källdatauppsättningar. Med åtkomst till anslutningar kan du även visa anslutningshanteraren, där du kan visa de underliggande datauppsättningarna som anslutningen består av samt göra viktiga redigerings- och konfigurationsval.
+Med anslutningar kan Customer Journey Analytics-produktadministratörer upprätta anslutningar med olika [!DNL Adobe Experience Platform]-datakällor, till exempel händelseuppsättningar, sökningar, profiler och sammanfattningsdatauppsättningar. De här anslutningarna möjliggör integrering av data från en anslutning till en datavy som är en härledd. Anslutningar är grunden för Customer Journey Analytics och skapas från [!DNL Experience Platform] källdatauppsättningar.
 
-Vi rekommenderade att åtkomsten till anslutningshantering begränsas till en kärnhanteringsgrupp. Konfigurationer på anslutningsnivå har avtalsmässiga konsekvenser för volymtilldelningar för data som hämtas till Customer Journey Analytics.
+>[!IMPORTANT]
+>
+>Du kan kombinera flera [!DNL Experience Platform]-datauppsättningar till en enda anslutning.
+
+
+## Arbetsflöde för anslutningar
+
+![Anslutningsarbetsflöde](assets/connection-workflow.png)
 
 <!-- Outdated interface 
 
@@ -28,23 +35,24 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 
 -->
 
-## Nödvändiga behörigheter
+På en hög nivå ger anslutningsarbetsflödet dig möjlighet att:
 
-Om du vill skapa en anslutning till Customer Journey Analytics behöver du följande behörigheter. Mer information om behörigheter finns i dokumentationen för [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) och [Adobe Experience Platform Permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
+| Gränssnitt | Beskrivning |
+|:---:|---|
+| ➊ | [Hantera dina anslutningar och den övergripande användningen](manage-connections.md) av Customer Journey Analytics från Anslutningshanteraren. |
+| ➋ | [Granska informationen för en anslutning](manage-connections.md#connection-details), som datauppsättningsposter som har importerats, hoppats över eller tagits bort. |
+| ➌ | [Skapa eller redigera konfigurationen för en anslutning](create-connection.md#create-or-edit-a-connection), till exempel ett rullande datafönster, och vilka datauppsättningar som är en del av anslutningen. |
+| ○ | [Lägg till datauppsättningar i en anslutning](create-connection.md#add-datasets). Anslutningen bör ha minst en händelse- eller sammanfattningsdatauppsättning men kan innehålla en mängd olika datauppsättningar för händelse, profil, sökning och sammanfattning. |
+| ○ | [Konfigurera inställningarna](create-connection.md#dataset-settings) för datauppsättningar som du lägger till. Du kan alltså bestämma hur du ska länka olika datauppsättningar baserat på en gemensam personbaserad eller [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} kontobaserad identifierare. |
+| ➏ | [Redigera inställningarna för en befintlig datamängd](create-connection.md#edit-a-dataset). Du kan alltid gå tillbaka till datauppsättningsinställningarna i ett senare skede. |
 
-### Inom Adobe Admin Console:
 
-* Customer Journey Analytics: Produktadministratör
-* Adobe Experience Platform: Tillagd i produktprofilen med namnet *AEP-Default-All-Users*
 
-### Inom Adobe Experience Platform behörigheter:
+## Åtkomstkontroll
 
-* Datamodellering: Visa scheman, Hantera scheman
-* Datahantering: Visa datauppsättningar, Hantera datauppsättningar
-* Inmatning av data: Hantera källor
-* Identity Management: Visa identitetsnamnutrymmen
-* Sandlådor: Sandlådor som används i relaterade Customer Journey Analytics-anslutningar
+Åtkomst till anslutningshantering bör begränsas till en kärnhanteringsgrupp. Anslutningskonfigurationer har avtalsmässiga konsekvenser för volymtilldelningar för data som hämtas till Customer Journey Analytics.
 
->[!IMPORTANT]
+>[!MORELIKETHIS]
 >
->Du kan kombinera flera [!DNL Experience Platform]-datauppsättningar till en enda anslutning.
+>[Åtkomstkontroll](/help/technotes/access-control.md).
+
