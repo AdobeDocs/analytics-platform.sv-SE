@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '4048'
+source-wordcount: '3878'
 ht-degree: 0%
 
 ---
@@ -41,19 +41,19 @@ Följande kolumner eller ikoner är tillgängliga i tabellen.
 
 | Kolumn eller ikon | Beskrivning |
 | --- | --- |
-| **[!UICONTROL _Namn_]** | Anslutningens egna namn. Om du vill visa information om anslutningen markerar du namnet på den hyperlänkade anslutningen. Se [Anslutningsinformation](#connection-details). |
+| **[!UICONTROL _Namn_]** | Anslutningens egna namn. Markera det hyperlänkade namnet om du vill visa [information om anslutningen](#connection-details). |
 | ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Om du vill visa information om [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner] och mer väljer du ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) bredvid anslutningsnamnet.<p>Ett popup-fönster visar information om datauppsättningen. <p>![Popup för anslutningsinformation](assets/connection-info-popup.png) |
 | ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Välj ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) om du vill öppna en snabbmeny. Du kan välja: <p>![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** om du vill [redigera](#edit-a-connection) en anslutning.<p>![Ta bort](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** för att [ta bort](#delete-a-connection) en anslutning.<p>![Datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]** för att [skapa en ny datavy](#create-a-data-view) för anslutningen.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** om du vill visa en [anslutningskarta](#map-a-connection) för anslutningen. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Connection type]** | Anger om anslutningen är **[!UICONTROL Person]**-baserad eller **[!UICONTROL Account]**-baserad. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Connection type]** | Typ av anslutning: **[!UICONTROL Person]**-baserad eller **[!UICONTROL Account]**-baserad anslutning. |
 | **[!UICONTROL Datasets]** | En eller flera länkar till de datauppsättningar som är en del av anslutningen. Du kan välja datauppsättningens hyperlänk för att visa datauppsättningen i anslutningen. Om fler datauppsättningar ingår i den valda anslutningen väljer du **[!UICONTROL +*x *more]**för att visa en **[!UICONTROL Datasets included]**-panel. I den här panelen visas länkar till alla datauppsättningar och ett alternativ för att ![söka](/help/assets/icons/Search.svg) efter specifika datauppsättningar som ingår i anslutningen.<p>![Datauppsättningar ingår](assets/datasets-included.png)<p>Välj ett datauppsättningsnamn om du vill öppna datauppsättningen i Experience Platform-gränssnittet på en ny flik. |
-| **[!UICONTROL Sandbox]** | [Experience Platform-sandlådan](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som den här anslutningen ritar sina datauppsättningar från. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
+| **[!UICONTROL Sandbox]** | [Experience Platform-sandlådan](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som den här anslutningen ritar sina datauppsättningar från. Du markerar den här sandlådan när du skapade anslutningen. Du kan inte ändra sandlådan när en anslutning har sparats. |
 | **[!UICONTROL Owner]** | Den person som skapade anslutningen. |
 | **[!UICONTROL Import new data]** | Status för import av nya data för datauppsättningar: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**för datauppsättningar som konfigurerats för att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** för datauppsättningar som inte har konfigurerats för import av nya data. |
 | **[!UICONTROL Date created]** | Tidsstämpeln när anslutningen skapades. |
 | **[!UICONTROL Last modified]** | Tidsstämpeln när anslutningen senast uppdaterades. |
 | **[!UICONTROL Backfill data]** | Status för data som fylls i bakåt över datauppsättningar.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills across datasets,<p>![Statusorange](assets/status-orange.svg)   **[!UICONTROL _x _efterfyllnadsbearbetning]**för antal bearbetning av efterfyllningar i datauppsättningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antalet slutförda efterfyllningar för datauppsättningar, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om det inte finns några bakåtfyllningar definierade för datauppsättningarna i anslutningen. |
 
-Om du vill konfigurera vilka kolumner som ska visas väljer du ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), som visar dialogrutan **Anpassa tabell** där du kan aktivera och inaktivera kolumner i tabellen.
+Om du vill konfigurera vilka kolumner som ska visas i tabellen väljer du ![Kolumninställningar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). I dialogrutan Anpassa tabell markerar du de kolumner som ska visas.
 
 ### Redigera en anslutning
 
@@ -67,13 +67,6 @@ Du kan också:
 1. Markera anslutningsraden.
 
 1. Välj ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** i det blå åtgärdsfältet.
-
-När du redigerar en anslutning kan du:
-
-* Starta och sluta importera nya data.
-* Byt namn på en anslutning.
-* Uppdatera datauppsättningen/datauppsättningarna.
-* Ta bort datauppsättningar från anslutningarna.
 
 Mer information finns i [Skapa eller redigera en anslutning](create-connection.md).
 
@@ -106,7 +99,7 @@ Mer information om hur du tar bort en anslutning finns i [Ta bort konsekvenser](
 
 ### Skapa en datavy för en anslutning
 
-Så här skapar du en ny datavy för en anslutning:
+Så här skapar du en datavy för en anslutning:
 
 1. Välj ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bredvid anslutningsnamnet.
 1. Välj ![Lägg till datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]**.
@@ -142,35 +135,33 @@ Gränssnittet Anslutningsinformation ger en detaljerad vy över anslutningsstatu
 | Användargränssnitt | Beskrivning |
 | --- | --- |
 | ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]** | Om du vill redigera information om en anslutning väljer du ![Redigera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]**. Mer information finns i [Skapa eller redigera en anslutning](create-connection.md). |
-| **[!UICONTROL *Datauppsättningsväljare *]** | Gör att du kan välja en eller alla datauppsättningar i anslutningen. Du kan inte markera datauppsättningar i flera steg. Standardvärdet är **[!UICONTROL All datasets]**. |
-| **[!UICONTROL *Datumintervallväljare *]** | Redigera startdatum, slutdatum eller välj ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) för att öppna datumintervallväljaren. Välj ett datumintervall i datumintervallväljaren genom att använda någon av de fördefinierade perioderna (till exempel **[!UICONTROL Last 6 months]**) eller använd kalendern för att välja start- och slutdatum. Välj **[!UICONTROL Apply]** om du vill använda det nya datumintervallet på anslutningsinformationen. |
-| **[!UICONTROL Records of event data available]** | Det totala antalet händelsedatamängdsrader som är tillgängliga för rapportering, **för hela anslutningen**. Antalet är oberoende av eventuella kalenderinställningar. Antalet ändras om du väljer en datauppsättning från datauppsättningsväljaren eller genom att markera en datauppsättning i tabellen. När data har lagts till finns det en fördröjning på 1-2 timmar för att få data att visas vid rapportering. |
+| **[!UICONTROL *Datauppsättningsväljare *]** | Välj en eller alla datauppsättningar som du vill visa information för i anslutningen. Du kan inte markera datauppsättningar i flera steg. Standardvärdet är **[!UICONTROL All datasets]**. |
+| **[!UICONTROL *Datumintervallväljare *]** | Välj ett dataområde som du vill visa information om i anslutningen. Redigera startdatum, slutdatum eller välj ![Kalender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) för att öppna datumintervallväljaren. Välj ett datumintervall i datumintervallväljaren genom att använda någon av de fördefinierade perioderna (till exempel **[!UICONTROL Last 6 months]**) eller använd kalendern för att välja start- och slutdatum. Välj **[!UICONTROL Apply]** om du vill använda det nya datumintervallet på anslutningsinformationen. |
+| **[!UICONTROL Records of event data available]** | Det totala antalet händelsedatamängdsrader som är tillgängliga för rapportering, **för hela anslutningen**. Antalet är oberoende av datumintervall eller datauppsättningsval. |
 | [!UICONTROL **[!UICONTROL Metrics]**] | Sammanfatta de poster för händelse, sökning, profil och sammanfattning av datauppsättningar som har lagts till, hoppats över och tagits bort samt antalet grupper som har lagts till. Dessa mått baseras på **den datamängd och det datumintervall som du har valt**.<p>Välj **[!UICONTROL Check detail]** om du vill visa popup-fönstret **[!UICONTROL Check skipped detail]**. I popup-fönstret visas antalet poster som hoppats över och orsaken till alla händelsedatamängder eller valda datauppsättningar.<p>![Överhoppade poster](assets/skipped-records.png)<p>Välj popup-fönstret ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) med mer information. Av vissa orsaker som hoppats över, som [!UICONTROL Empty visitor ID], visas **[!UICONTROL Sample PSQL for EQS]** (Experience Platform for Query Service) som du kan använda i [frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) för att fråga efter de poster som hoppats över i datauppsättningen. Välj ![Kopiera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** om du vill kopiera SQL:en. |
-| **[!UICONTROL Records added]** | Anger hur många rader som har lagts till under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Uppdateringar var 10:e minut. |
-| **[!UICONTROL Records skipped]** | Anger hur många rader som hoppades över under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Orsaker till att poster hoppas över är bland annat: saknade tidsstämplar, person-ID eller konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} saknas eller är ogiltigt. Uppdateringar var 10:e minut. <p>Ogiltiga ID:n (till exempel `undefined` eller `00000000`, eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse mer än 1 miljon gånger i en viss månad) är ID:n som inte kan tilldelas någon specifik användare eller person. Dessa rader kan inte infogas i systemet och resulterar i felbenägen inmatning och rapportering. Om du vill korrigera ogiltiga person-ID:n eller konto-ID:n [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} har du tre alternativ:<ul><li>Använd [Stitching](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:n, som sedan hoppas över vid förtäring (helst ogiltiga eller helt nolla användar-ID:n).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
-| **[!UICONTROL Records deleted]** | Anger hur många rader som har tagits bort under den valda tidsperioden, **för den datamängd och det datumintervall som du har markerat**. Någon kanske har tagit bort en datauppsättning i [!DNL Experience Platform]. Uppdateringar var 10:e minut.<p>I vissa scenarier kan det här värdet även innehålla ersatta poster, som sammanfogning eller vissa uppdateringar av uppslagsdatauppsättningar. Titta på det här exemplet:</p><ul><li>Du överför en post till en XDM-datauppsättning för enskild profil, som Customer Journey Analytics har konfigurerats att importera som profilsökningsdata. I anslutningsinformationen skulle den här datauppsättningen visa 1 post som lagts till.</li><li>Du överför en kopia av den ursprungliga posten till samma AEP-datauppsättning, som nu innehåller två poster. Customer Journey Analytics importerar den extra posten från profilen eller kontot [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} i uppslagsdatauppsättningen. Eftersom en profil- eller kontopost redan är inkapslad i anslutningen för detta person-ID eller konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} tar Customer Journey Analytics bort den tidigare versionen och lägger till nya profildata. I anslutningsinformationen representerar den här åtgärden 1 post som lagts till och 1 post som tagits bort, eftersom Customer Journey Analytics bara behåller de senaste profilsökningsdata för inkapslade person-ID:n eller konto-ID:n [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.</li><li>Sammanlagt innehåller AEP datauppsättning två poster som råkar vara identiska. Customer Journey Analytics anslutningsinformation visar status för inkapslade data separat: 2 poster har lagts till och 1 post har tagits bort för profildatauppsättningen. </li></ul> |
-| ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Sökfält för datauppsättning. Du kan söka i datamängdstabellen efter datauppsättningsnamn eller [!UICONTROL Dataset ID]. |
-| [!UICONTROL Datasets table] | Visar de datauppsättningar som ingår i anslutningen. Se tabellen nedan för mer information. |
+| **[!UICONTROL Records added]** | En visualisering som visar hur många rader som har lagts till under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Uppdateringar var 10:e minut. |
+| **[!UICONTROL Records skipped]** | En visualisering som visar hur många rader som hoppades över under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Orsaker till att poster hoppas över är bland annat: saknade tidsstämplar, person-ID eller konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} saknas eller är ogiltigt. Uppdateringar var 10:e minut. <p>Ogiltiga ID:n (till exempel `undefined` eller `00000000`, eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som förekommer i en händelse mer än 1 miljon gånger i en viss månad) är ID:n som inte kan tilldelas någon specifik användare eller person. Dessa rader kan inte infogas i systemet och resulterar i felbenägen inmatning och rapportering. Om du vill korrigera ogiltiga person-ID:n eller konto-ID:n [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} har du tre alternativ:<ul><li>Använd [Stitching](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:n, som sedan hoppas över vid förtäring (helst ogiltiga eller helt nolla användar-ID:n).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
+| **[!UICONTROL Records deleted]** | En visualisering som visar hur många rader som har tagits bort under den valda tidsperioden, **för den datamängd och det datumintervall som du har valt**. Någon kanske har tagit bort en datauppsättning i [!DNL Experience Platform]. Uppdateringar var 10:e minut.<p>I vissa scenarier kan det här värdet även innehålla ersatta poster, som sammanfogning eller vissa uppdateringar av uppslagsdatauppsättningar. Titta på det här exemplet:</p><ul><li>Du överför en post till en XDM-datauppsättning för enskild profil, som Customer Journey Analytics har konfigurerats att importera som profilsökningsdata. I anslutningsinformationen skulle den här datauppsättningen visa 1 post som lagts till.</li><li>Du överför en kopia av den ursprungliga posten till samma AEP-datauppsättning, som nu innehåller två poster. Customer Journey Analytics importerar den extra posten från profilen eller kontot [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} i uppslagsdatauppsättningen. Eftersom en profil- eller kontopost redan är inkapslad i anslutningen för detta person-ID eller konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} tar Customer Journey Analytics bort den tidigare versionen och lägger till nya profildata. I anslutningsinformationen representerar den här åtgärden 1 post som lagts till och 1 post som tagits bort, eftersom Customer Journey Analytics bara behåller de senaste profilsökningsdata för inkapslade person-ID:n eller konto-ID:n [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.</li><li>Sammanlagt innehåller AEP datauppsättning två poster som råkar vara identiska. Customer Journey Analytics anslutningsinformation visar status för inkapslade data separat: 2 poster har lagts till och 1 post har tagits bort för profildatauppsättningen. </li></ul> |
+| ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Sökfält för datauppsättning. Du kan söka i datamängdstabellen efter datauppsättningsnamn eller datauppsättnings-ID. |
+| [!UICONTROL Datasets table] | De datauppsättningar som ingår i anslutningen. Se tabellen nedan för mer information. Välj ![SelectBox](/help/assets/icons/SelectBox.svg) om du bara vill visa anslutningsinformation för den valda datauppsättningen. Detta motsvarar valet av en datauppsättning från **[!UICONTROL _datauppsättningsväljaren_]**. |
 
-I datamängdstabellen visas följande kolumner:
+I datatabellen visas följande kolumner för varje datauppsättning:
 
 | Kolumn | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Datasets]** | Namnet på datauppsättningen som är en del av anslutningen. Du kan välja hyperlänken för att öppna datauppsättningen i Experience Platform-gränssnittet på en ny flik. Du kan markera raden eller kryssrutan om du bara vill visa information för den markerade datauppsättningen. |
-| **[!UICONTROL Dataset ID]** | Automatiskt genererad av Experience Platform. |
-| **[!UICONTROL Records added]** | Antalet datauppsättningsposter (rader) som lagts till i en anslutning under det valda tidsintervallet. |
-| **[!UICONTROL Records skipped]** | Antalet datauppsättningsposter (rader) som hoppats över under dataöverföring för en anslutning under det valda tidsintervallet. |
-| **[!UICONTROL Records deleted]** | Antalet datauppsättningsposter (rader) som tagits bort från en anslutning under det valda tidsintervallet. |
-| **[!UICONTROL Batches added]** | Antalet datauppsättningsbatchar har lagts till i en anslutning. |
-| **[!UICONTROL Last added]** | Tidsstämpeln för den senaste batchen från datauppsättningen som har lagts till i en anslutning. |
-| **[!UICONTROL Data source type]** | Datamängdens källtyp. Du definierar källtypen när du skapar en anslutning. |
-| **[!UICONTROL Dataset type]** | Datamängdstypen för den här datauppsättningen. Typen kan vara [!UICONTROL Event], [!UICONTROL Profile], [!UICONTROL Lookup] eller [!UICONTROL Summary]. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection) |
+| **[!UICONTROL Datasets]** | Datauppsättningens namn. Du kan välja hyperlänken för att öppna datauppsättningen i Experience Platform-gränssnittet på en ny flik. Du kan markera raden eller kryssrutan om du bara vill visa information för den markerade datauppsättningen. |
+| **[!UICONTROL Dataset ID]** | Datauppsättnings-ID som genererats av Experience Platform. |
+| **[!UICONTROL Records added]** | Antalet datauppsättningsposter (rader) som lagts till i en anslutning under det valda datumintervallet. |
+| **[!UICONTROL Records skipped]** | Antalet datauppsättningsposter (rader) som hoppades över under dataöverföring för en anslutning under det valda datumintervallet. |
+| **[!UICONTROL Records deleted]** | Antalet datauppsättningsposter (rader) som tagits bort från en anslutning under det valda datumintervallet. |
+| **[!UICONTROL Batches added]** | Antalet batchar som har lagts till i en anslutning under det valda datumintervallet. |
+| **[!UICONTROL Last added]** | Tidsstämpeln för den senaste batchen som har lagts till i en anslutning. |
+| **[!UICONTROL Data source type]** | Källtypen. Du definierar källtypen när du lägger till en datauppsättning i en anslutning. |
+| **[!UICONTROL Dataset type]** | Datamängdstypen [](create-connection.md#dataset-types). Typen kan vara [!UICONTROL Event], [!UICONTROL Profile], [!UICONTROL Lookup] eller [!UICONTROL Summary]. |
 | **[!UICONTROL Schema]** | Det Experience Platform-schema som datauppsättningen baseras på. |
 | **[!UICONTROL Import new data]** | Status för import av nya data för datauppsättningen: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**om datauppsättningen är konfigurerad att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** om datauppsättningen är konfigurerad att inte importera ny dataimport. |
 | **[!UICONTROL Transform data]** | Transformeringsstatus för tillämpliga B2B-sökdatauppsättningar. Mer information finns i [Omforma datauppsättningar för B2B-sökningar](transform-datasets-b2b-lookups.md).<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**för tillämpliga datauppsättningar aktiverade för omvandling, <p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** för tillämpliga datamängder som inte har aktiverats för omformning, och<p>**[!UICONTROL N/A]** för alla andra datauppsättningar, inte tillämpligt för transformering. |
 | **[!UICONTROL Backfill data]** | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _backfills processing]**för antal bearbetning av bakåtfyllningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om bakåtfyllningar inte har konfigurerats. |
-| **[!UICONTROL Import new data]** | Status för import av nya data för datauppsättningen: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**om datauppsättningen är konfigurerad att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** om datauppsättningen är konfigurerad att inte importera nya data. |
-| **[!UICONTROL Backfill data]** | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _backfills processing]**för antal bearbetning av bakåtfyllningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om inga bakåtfyllningar är konfigurerade. |
 
 >[!IMPORTANT]
 >
@@ -179,24 +170,26 @@ I datamängdstabellen visas följande kolumner:
 
 #### Anslutningspanelen
 
-När ingen datauppsättning har valts i datamängdstabellen visas anslutningsalternativ och detaljer på en panel till höger i anslutningsgränssnittet.
+När ingen enskild datauppsättning har valts i datamängdstabellen visas anslutningsalternativ och detaljer på den högra panelen.
 
 | Alternativ | Beskrivning |
 | --- | --- |
-| ![Uppdatera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) [!UICONTROL Refresh] | Om du vill uppdatera anslutningen och tillåta att nyligen tillagda poster återspeglas väljer du ![Uppdatera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]**. |
+| ![Uppdatera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]** | Om du vill uppdatera anslutningen och tillåta att nyligen tillagda poster återspeglas väljer du ![Uppdatera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]**. |
 | ![Ta bort](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** | [Ta bort](#delete-a-connection) den här anslutningen. |
 | ![Lägg till datavy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create data view]** | [Skapa en datavy](#create-a-data-view) utifrån den här anslutningen. Mer information finns i [Datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views). |
 | **[!UICONTROL Connection name]** | Anslutningens egna namn. |
-| **[!UICONTROL Connection description]** | En beskrivning av anslutningen. |
-| **[!UICONTROL Sandbox]** | [Experience Platform-sandlådan](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som den här anslutningen ritar sina datauppsättningar från. Den här sandlådan valdes när du först skapade anslutningen. Den kan inte ändras. |
-| **[!UICONTROL Connection ID]** | Detta ID genereras i Experience Platform. Du kan använda ![Kopiera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) för att kopiera ID:t. |
-| **[!UICONTROL Data views using connection]** | Visar alla datavyer som använder den här anslutningen. |
+| **[!UICONTROL Connection description]** | Beskrivningen för anslutningen. |
+| **[!UICONTROL Sandbox]** | [Experience Platform-sandlådan](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som den här anslutningen ritar sina datauppsättningar från. Du markerar den här sandlådan när du skapade anslutningen. Du kan inte ändra sandlådan när en anslutning har sparats. |
+| **[!UICONTROL Connection ID]** | En genererad identifierare för anslutningen. Du kan använda ![Kopiera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) för att kopiera värdet. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Primary ID type]** | Den primära ID-typen för anslutningen **[!UICONTROL Person]** för en personbaserad anslutning, **[!UICONTROL Account]** för en kontobaserad anslutning. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Containers]** | De konfigurerade behållarna för anslutningen. |
+| **[!UICONTROL Data views using connection]** | De datavyer som använder den här anslutningen. |
 | **[!UICONTROL Import new data]** | Status för import av nya data för datauppsättningar: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**för hur många datauppsättningar som har konfigurerats för att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** för hur många datauppsättningar som ny dataimport är inaktiverad. |
 | **[!UICONTROL Backfill data]** | Status för data för bakgrundsfyllning för datauppsättningar.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills across datasets,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _efterfyllnadsbearbetning]**för antal bearbetning av efterfyllningar i datauppsättningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antalet slutförda efterfyllningar för datauppsättningar, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om det inte finns några bakåtfyllningar definierade för datauppsättningarna i anslutningen. |
 | **[!UICONTROL Transform data]** | Transformeringsstatus för tillämpliga B2B-sökdatauppsättningar. Mer information finns i [Omforma datauppsättningar för B2B-sökningar](transform-datasets-b2b-lookups.md).<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**för antalet datauppsättningar som har aktiverats för omformning. |
 | **[!UICONTROL Created by]** | Namnet på den person som skapade anslutningen. |
 | **[!UICONTROL Last modified]** | Tidsstämpeln för den senaste ändringen av anslutningen. |
-| **[!UICONTROL Last modified by]** | Den person som senast ändrade anslutningen. |
+| **[!UICONTROL Last modified by]** | Namnet på den person som senast ändrade anslutningen. |
 
 #### Panelen Datauppsättning
 
@@ -204,22 +197,24 @@ När en datauppsättningsrad väljs i datamängdstabellen visas information för
 
 | Information | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Person ID]** | En identitet som definieras i datauppsättningsschemat i Experience Platform. Den här identiteten är det person-ID som du valde när anslutningen skapades. Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, återspeglas detta i rapporten. Om du vill sammanfoga datauppsättningar måste du använda samma person-ID för alla datauppsättningar. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account ID]** | Identiteten som du har angett som ID för det globala kontot för anslutningen. Gäller endast för en kontobaserad anslutning för vilken en global kontobehållare har konfigurerats. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account ID]** | Identiteten som du har angett som konto-ID för anslutningen. Gäller endast för en kontobaserad anslutning där ingen global kontobehållare har konfigurerats. |
+| **[!UICONTROL Person ID]** | Identiteten som du har angett som telefon-ID för anslutningen. |
 | **[!UICONTROL Key]** | Nyckeln som du har angett för en uppslagsdatauppsättning. |
 | **[!UICONTROL Matching Key]** | Den matchande nyckel som du har angett för en uppslagsdatauppsättning. |
 | **[!UICONTROL Timestamp]** | Tidsstämpeln som har definierats för en händelsedatamängd. |
 | **[!UICONTROL Records available]** | Det totala antalet rader som har kapslats in för den här datauppsättningen, för den angivna tidsperioden som valts genom kalendern. Det finns ingen fördröjning när det gäller att få fram data som ska visas i rapporter när de har lagts till. När du skapar en helt ny anslutning visas [latens](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
-| **[!UICONTROL Records added]** | Hur många rader som lades till under den valda tidsperioden. |
-| **[!UICONTROL Records deleted]** | Hur många poster som togs bort under den valda tidsperioden. |
-| **[!UICONTROL Batches added]** | Hur många datagrupper som har lagts till i den här datauppsättningen. |
-| **[!UICONTROL Records skipped]** | Hur många rader hoppades över under intag under den valda tidsperioden.<p>Orsaker till att poster hoppas över är bland annat: Tidsstämplar saknas, person-ID saknas eller är ogiltigt, konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} osv. Uppdateringar var 10:e minut.<p>Ogiltiga ID:n (till exempel `undefined` eller `00000000`, eller en kombination av siffror och bokstäver i en [!UICONTROL Person ID] som visas i en händelse mer än 1 miljon gånger i en given månad) är ID:n som inte kan tilldelas någon specifik användare eller person. Dessa rader kan inte infogas i systemet och resulterar i felbenägen inmatning och rapportering. Du kan åtgärda ogiltiga person-ID:n eller konto-ID:n genom att välja mellan tre alternativ:<ul><li>Använd [Stitching](/help/stitching/overview.md) för att fylla i användar-ID:n som inte definierats eller är helt noll med giltiga användar-ID:n.</li><li>Ta bort användar-ID:t, som sedan hoppas över vid förtäring (helst inte med ett ogiltigt eller helt nollfritt användar-ID).</li><li>Korrigera ogiltiga användar-ID:n i systemet innan data hämtas.</li></ul> |
-| **[!UICONTROL Last added]** | Tidsstämpeln när den senaste batchen lades till. |
+| **[!UICONTROL Records added]** | Antalet datauppsättningsposter (rader) som lagts till i en anslutning under det valda datumintervallet. |
+| **[!UICONTROL Records skipped]** | Antalet datauppsättningsposter (rader) som hoppades över under dataöverföring för en anslutning under det valda datumintervallet. |
+| **[!UICONTROL Batches added]** | Antalet batchar som har lagts till i en anslutning. |
+| **[!UICONTROL Records deleted]** | Antalet datauppsättningsposter (rader) som tagits bort från en anslutning under det valda datumintervallet. |
+| **[!UICONTROL Last added]** | Tidsstämpeln för den senaste batchen som har lagts till i en anslutning. |
 | **[!UICONTROL Import new data]** | Status för import av nya data för datauppsättningen: <p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _On]**om datauppsättningen är konfigurerad att importera nya data, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _x Av_]** om datauppsättningen är konfigurerad att inte importera nya data. |
 | **[!UICONTROL Backfill data]** | Status för data för bakgrundsfyllning för datauppsättningen.<p>![Status röd](assets/status-red.svg)   **[!UICONTROL _x _backfills failed]**for number of failed backfills,<p>![Status röd](assets/status-orange.svg)   **[!UICONTROL _x _backfills processing]**för antal bearbetning av bakåtfyllningar,<p>![Status grön](assets/status-green.svg)   **[!UICONTROL _x _backfills completed]**för antal slutförda backfiller, och<p>![Statusgrå](assets/status-gray.svg)   **[!UICONTROL _Av_]** om inga bakåtfyllningar är konfigurerade.<p>Om du vill visa en dialogruta med en översikt över de tidigare efterfyllningarna för datauppsättningen väljer du <img src="./assets/pastbackfill.svg" alt="Tidigare bakåtfyllningar" width="15"/> **[!UICONTROL Past backfills]**. |
-| **[!UICONTROL Data source type]** | Datakälltyp som definieras när datauppsättningen läggs till i anslutningen. |
-| **[!UICONTROL Dataset type]** | Antingen [!UICONTROL Event], [!UICONTROL Profile], [!UICONTROL Lookup] eller [!UICONTROL Summary]. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection) |
+| **[!UICONTROL Data source type]** | Datakälltyp som definierades när datauppsättningen lades till i anslutningen. |
+| **[!UICONTROL Dataset type]** | Datamängdstypen [](create-connection.md#dataset-types). |
 | **[!UICONTROL Schema]** | Det Experience Platform-schema som den här datauppsättningen baseras på. |
-| **[!UICONTROL Dataset ID]** | Detta datauppsättnings-ID genereras i Experience Platform. |
+| **[!UICONTROL Dataset ID]** | Datauppsättnings-ID som genererats i Experience Platform. |
 
 
 ## Användning {#connections-usage}
@@ -287,7 +282,7 @@ När en datauppsättningsrad väljs i datamängdstabellen visas information för
 >[!CONTEXTUALHELP]
 >id="cja_connections_corereportablerows"
 >title="Centrala rapporteringsbara rader"
->abstract="Visar det totala antalet rader som är tillgängliga de senaste 13 månaderna. Den 1 februari 2024 visar till exempel antalet totalt antal rader som är tillgängliga med en händelsetidsstämpel från januari 2023 till januari 2024."
+>abstract="Det totala antalet rader som är tillgängliga de senaste 13 månaderna. Den 1 februari 2024 visar till exempel antalet totalt antal rader som är tillgängliga med en händelsetidsstämpel från januari 2023 till januari 2024."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -295,7 +290,7 @@ När en datauppsättningsrad väljs i datamängdstabellen visas information för
 >[!CONTEXTUALHELP]
 >id="cja_connections_historicalreportablerows"
 >title="Historiska rader som ska rapporteras"
->abstract="Visar det totala antalet rader som är tillgängliga för en period som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
+>abstract="Det totala antalet rader som är tillgängliga för perioden som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -362,7 +357,7 @@ När en datauppsättningsrad väljs i datamängdstabellen visas information för
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="Centrala rapporteringsbara rader"
->abstract="Visar det totala antalet rader som är tillgängliga de senaste 13 månaderna. Den 1 februari 2024 visar till exempel antalet totalt antal rader som är tillgängliga med en händelsetidsstämpel från januari 2023 till januari 2024."
+>abstract="Det totala antalet rader som är tillgängliga de senaste 13 månaderna. Den 1 februari 2024 visar till exempel antalet totalt antal rader som är tillgängliga med en händelsetidsstämpel från januari 2023 till januari 2024."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -370,7 +365,7 @@ När en datauppsättningsrad väljs i datamängdstabellen visas information för
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="Historiska rader som ska rapporteras"
->abstract="Visar det totala antalet rader som är tillgängliga för en period som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
+>abstract="Det totala antalet rader som är tillgängliga för perioden som är äldre än 13 månader. Den 1 februari 2024 visar till exempel antalet alla rader som är tillgängliga med en händelselägestidsstämpel som är äldre än januari 2023."
 
 <!-- markdownlint-enable MD034 -->
 

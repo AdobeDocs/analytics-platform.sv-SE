@@ -4,9 +4,9 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 1a88be1f79bc6dc07f849af5f32f3472105ee3ed
 workflow-type: tm+mt
-source-wordcount: '5062'
+source-wordcount: '5077'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Funktion | Beskrivning |
 | --- | --- |
 | **April 2025** | |
+| Anslutningar | Uppdaterade och omarbetade dokumentationen om kundreseanslutningar för kommande B2B edition-kundresa. |
 | Produktanalys - användningsfall | [Produktanalys har lagts till i Customer Journey Analytics](/help/use-cases/product-analysis.md). |
 | Delade mått | Dokumentation för funktionen [Delade mått och dimensioner](/help/data-views/shared-metrics-dimensions/smd-overview.md) har lagts till. |
 | Report Builder | Granskade och uppdaterade dokumentationen för [Report Builder](/help/report-builder/report-buider-overview.md). |

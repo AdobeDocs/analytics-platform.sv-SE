@@ -1,7 +1,8 @@
 ---
 title: Redigerare för delad komponent
 description: Skapa eller redigera delade dimensioner och mätvärden.
-source-git-commit: d2c6605cc440c293aca279c1583bac964055d277
+exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
+source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Med den delade komponentredigeraren kan du skapa eller redigera delade dimension
 
 I det övre högra hörnet finns tre knappar:
 
-* **[!UICONTROL Close]** eller **[!UICONTROL Cancel]**: Om alla ändringar sparas stänger knappen **[!UICONTROL Close]** redigeraren. Om det finns ändringar som inte har sparats stänger knappen **[!UICONTROL Cancel] redigeraren utan att spara ändringarna.
+* **[!UICONTROL Close]** eller **[!UICONTROL Cancel]**: Om alla ändringar sparas stänger knappen **[!UICONTROL Close]** redigeraren. Om det finns ändringar som inte har sparats stänger knappen **[!UICONTROL Cancel]** redigeraren utan att spara ändringarna.
 * **[!UICONTROL Save]**: Sparar alla komponenter och håller redigeraren öppen.
 * **[!UICONTROL Save and finish]**: Sparar alla komponenter och stänger redigeraren.
 

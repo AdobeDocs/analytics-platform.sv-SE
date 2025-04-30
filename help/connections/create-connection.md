@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '6279'
+source-wordcount: '6347'
 ht-degree: 0%
 
 ---
@@ -210,6 +210,8 @@ På skärmen **[!UICONTROL Connections]** > **[!UICONTROL *Anslutningens namn *]
 
 På skärmen **[!UICONTROL Connections]** > **[!UICONTROL *Anslutningens namn *]**:
 
+![Namnlösa anslutningsinställningar](assets/create-conn1-b2b.png)
+
 1. Konfigurera anslutningsinställningarna.
 
    | Inställning | Beskrivning |
@@ -217,7 +219,7 @@ På skärmen **[!UICONTROL Connections]** > **[!UICONTROL *Anslutningens namn *]
    | **[!UICONTROL Connection name]** | Ange ett unikt namn för anslutningen. |
    | **[!UICONTROL Connection description]** | Beskriv syftet med den här anslutningen. |
    | **[!UICONTROL Tags]** | Ange taggar för att lägga till taggar i anslutningen så att du kan använda de här taggarna för att söka efter anslutningen i ett senare skede. |
-   | **[!UICONTROL Primary ID]** | Välj rätt primärt ID för anslutningen: <ul><li>![Användare](/help/assets/icons/User.svg) **[!UICONTROL Person]** för ett B2C-scenario</li><li> ![Bygger](/help/assets/icons/Building.svg) **[!UICONTROL Account]** för ett B2B-scenario.</li></ul>.<br/>När du lägger till en eller flera datauppsättningar i anslutningen kan du inte längre ändra det primära ID:t. <br/>Valet av primärt ID definierar om anslutningen är personbaserad eller kontobaserad. Anslutningsbasen avgör vilka [inställningar](#dataset-settings) som är tillgängliga för vissa typer av datauppsättningar. |
+   | **[!UICONTROL Primary ID]** | Välj rätt primärt ID för anslutningen: <ul><li>![Användare](/help/assets/icons/User.svg) **[!UICONTROL Person]** för en personbaserad anslutning som du vanligtvis använder i ett B2C-scenario.</li><li> ![Bygger](/help/assets/icons/Building.svg) **[!UICONTROL Account]** för en kontobaserad anslutning som du vanligtvis använder i ett B2B-scenario.</li></ul>När du lägger till en eller flera datauppsättningar i anslutningen kan du inte längre ändra det primära ID:t. <br/>Valet av det primära ID:t definierar om anslutningen är personbaserad eller kontobaserad. Anslutningsbasen avgör vilka [inställningar](#dataset-settings) som är tillgängliga för vissa typer av datauppsättningar. |
    | **[!UICONTROL Optional containers]** | Om du har valt ![Bygger](/help/assets/icons/Building.svg) **[!UICONTROL Account]** som **[!UICONTROL Primary ID]** väljer du ytterligare behållare.<ul><li>**[!UICONTROL Global account]**: aktiverar konfiguration av globala konton i en anslutning.</li><li>**[!UICONTROL Opportunity]**: aktiverar konfiguration av affärsmöjligheter i en anslutning.</li><li>**[!UICONTROL Buying group]**: aktiverar konfiguration av inköpsgrupper i en anslutning.</li><ul> |
    | **[!UICONTROL Sandbox]** | Välj en sandlåda i Experience Platform som innehåller de datauppsättningar som du vill skapa en anslutning till.<p>Adobe Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som partitionerar en enda plattformsinstans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.<p>När du har valt sandlådan visas alla datauppsättningar i den sandlådan som du kan hämta från den vänstra listen. |
    | **[!UICONTROL Enable rolling data window]** | Om den här kryssrutan är markerad kan du definiera Customer Journey Analytics datalagring som ett rullande fönster på anslutningsnivå i månader (1 månad, 3 månader, 6 månader och så vidare).<p>Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för rullande datafönster för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar. Om din anslutning innehåller en profil- eller uppslagsdatauppsättning (förutom en eller flera händelsedatamängder), behålls dessa data för samma tidsperiod.<p> Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.<p><ul><li>Om du låter standardinställningen (inte markerad) stå över kvarhållningsperioden för data i Adobe Experience Platform. Om ni har 25 månaders data i Experience Platform får Customer Journey Analytics 25 månaders data genom förifyllning. Om du raderade 10 av dessa månader i Platform behåller Customer Journey Analytics de återstående 15 månaderna.</li><li>Om du aktiverar ett rullande datafönster anger du i **[!UICONTROL Select number of months]** det antal månader som du aktiverar det rullande datafönstret för. |
@@ -238,7 +240,7 @@ På skärmen **[!UICONTROL Connections]** > **[!UICONTROL *Anslutningens namn *]
    | **[!UICONTROL Data source type]** | Datamängdens datakälltyp. Gäller inte för sammanfattningsdatauppsättningar. |
    | **[!UICONTROL Account ID]** | (visas endast för kontobaserade anslutningar) Det konto-ID som används för att stödja kontobaserad rapportering för datauppsättningen. |
    | **[!UICONTROL Global Account ID]** | (visas endast för kontobaserade anslutningar) Det globala konto-ID som används för att stödja kontobaserad rapportering för datauppsättningen. |
-   | **[!UICONTROL Buying Group ID]** | (visas endast för kontobaserade anslutningar) Det Buying Group-ID som används för att söka efter inköpsgruppsdata. |
+   | **[!UICONTROL Buying Group ID]** | (visas endast för kontobaserade anslutningar) Det ID för inköpsgrupp som används för att söka efter inköpsgruppsdata. |
    | **[!UICONTROL Opportunity ID]** | (visas endast för kontobaserade anslutningar) Det säljprojekt-ID som används för att söka efter affärsmöjlighetsdata. |
    | **[!UICONTROL Person ID]** | Det person-ID som används för att stödja personbaserad rapportering för datauppsättningen. |
    | **[!UICONTROL Key]** | Nyckeln som används för en uppslagsdatauppsättning. |
@@ -483,7 +485,7 @@ Du [lägger till en eller flera datauppsättningar](#add-datasets) eller [redige
 >title="Anslutningskarta"
 >abstract="Anslutningskartan visar relationerna mellan händelse-, person-, konto- och relevanta sökdatauppsättningar (som affärsmöjligheter, kampanjmedlemmar med mera)."
 
-## Lägg till datauppsättningar
+### Lägg till datauppsättningar
 
 Du kan lägga till en eller flera Experience Platform-datauppsättningar när du skapar eller redigerar en anslutning.
 
@@ -513,7 +515,7 @@ Du kan lägga till en eller flera Experience Platform-datauppsättningar när du
    * Om du vill visa information om en datauppsättning väljer du ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
 
-1. Markera en eller flera datauppsättningar och välj **[!UICONTROL Next]**. Minst en händelsedatamängd måste ingå i anslutningen.
+1. Markera en eller flera datauppsättningar och välj **[!UICONTROL Next]**. Minst en händelse- eller sammanfattningsdatauppsättning måste ingå i anslutningen.
 
 1. Konfigurera [inställningarna för var och en av de markerade datauppsättningarna](#dataset-settings), en i taget, i ➋ **[!UICONTROL Datasets settings]** i dialogrutan **[!UICONTROL Add datasets]**.
 
@@ -540,7 +542,7 @@ Om du vill redigera en datauppsättning som redan har konfigurerats för en ansl
 
 ### Inställningar för datauppsättning
 
-När du lägger till datauppsättningar eller redigerar en befintlig datauppsättning, konfigurerar du datauppsättningsinställningarna för varje datauppsättning. Vilka inställningar som är tillgängliga beror på [typen av datauppsättning](#dataset-types) och, för vissa datauppsättningstyper, på typen av anslutning (personbaserad eller [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}-kontobaserad).
+När du lägger till datauppsättningar eller redigerar en befintlig datauppsättning, konfigurerar du datauppsättningsinställningarna för varje datauppsättning. Vilka inställningar som är tillgängliga beror på [typen av datamängd](#dataset-types) och, för vissa datamängdstyper, på typen av anslutning (personbaserad eller [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} kontobaserad).
 
 Alla datauppsättningar och datauppsättningstyper har [allmänna inställningar och information](#general-dataset-settings-and-details), t.ex. om nya data ska importeras eller inte samt efterfyllnad av begäran ska begäras.
 
@@ -558,8 +560,8 @@ För en händelsedatamängd i en personbaserad anslutning kan du ange:
 | --- | --- |
 | **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Mer information om hur du använder identitetskartan som ett person-ID finns i [Använd identitetskarta som ett person-ID](#id-map).<p>Om det inte finns några person-ID:n att välja mellan, innebär det att inga person-ID:n definieras i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity). <p>Värdet för det valda person-ID:t anses vara skiftlägeskänsligt. `abc123` och `ABC123` är till exempel två olika värden. |
 | **[!UICONTROL Timestamp]** | Den här inställningen ställs automatiskt in på standardfältet för tidsstämpling från händelsebaserade scheman i Experience Platform. |
-| **[!UICONTROL Data source type]** | Välj en typ av datakälla. <br/>Typer av datakällor omfattar: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
-| **[!UICONTROL Data source description]** | Beskriv datakällan när du har valt Annan som datakälltyp. |
+| **[!UICONTROL Data source type]** | Välj en typ av datakälla. Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
+| **[!UICONTROL Data source description]** | En beskrivning av datakällan när du har valt Annan som datakälltyp. |
 
 
 ##### Kontobaserad anslutning
@@ -572,14 +574,14 @@ Du kan ange följande för en händelsedatamängd i en kontobaserad anslutning:
 
 | Inställning | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Account ID]** | Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform. |
-| **[!UICONTROL Global Account ID]** | Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform. |
+| **[!UICONTROL Account ID]** | Välj ett globalt konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform. Gäller när du har lagt till ett globalt konto som en behållare i anslutningen. |
+| **[!UICONTROL Global Account ID]** | Välj ett konto-ID (den unika identifieraren för ett konto) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform. Gäller när du inte har lagt till ett globalt konto som en behållare i anslutningen. |
 | **[!UICONTROL Opportunity ID]** | Välj ett affärsmöjlighets-ID (den unika identifieraren för en affärsmöjlighet) bland de tillgängliga identiteter som definieras i datauppsättningsschemat i Experience Platform. |
 | **[!UICONTROL Buying Group ID]** | Välj ett Buying Group ID (den unika identifieraren för en inköpsgrupp) bland de tillgängliga identiteter som definieras i dataschemat i Experience Platform. |
 | **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Mer information om hur du använder identitetskartan som ett person-ID finns i [Använd identitetskarta som ett person-ID](#id-map).<p>Om det inte finns några person-ID:n att välja mellan, innebär det att ett eller flera person-ID:n inte har definierats i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity). <p>Värdet för det valda person-ID:t anses vara skiftlägeskänsligt. `abc123` och `ABC123` är till exempel två olika värden. |
 | **[!UICONTROL Timestamp]** | Den här inställningen ställs automatiskt in på standardfältet för tidsstämpling från händelsebaserade scheman i Experience Platform. |
-| **[!UICONTROL Data source type]** | Välj en typ av datakälla. <br/>Typer av datakällor omfattar: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
-| **[!UICONTROL Data source description]** | Beskriv datakällan när du har valt Annan som datakälltyp. |
+| **[!UICONTROL Data source type]** | Välj en typ av datakälla. Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
+| **[!UICONTROL Data source description]** | En beskrivning av datakällan när du har valt Annan som datakälltyp. |
 
 
 #### Profildatamängd
@@ -594,9 +596,9 @@ För en profildatauppsättning i en personbaserad anslutning anger du:
 
 | Inställning | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Mer information om hur du använder identitetskartan som ett person-ID finns i [Använd identitetskarta som ett person-ID](#id-map).<p>Om det inte finns några person-ID:n att välja bland innebär det att inga person-ID:n har definierats i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity). <p>Värdet för det valda person-ID:t anses vara skiftlägeskänsligt. `abc123` och `ABC123` är till exempel två olika värden. |
-| **[!UICONTROL Data source type]** | Välj en typ av datakälla. <br/>Typer av datakällor omfattar: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
-| **[!UICONTROL Data source description]** | Beskriv datakällan när du har valt Annan som datakälltyp. |
+| **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Mer information om hur du använder identitetskartan som ett person-ID finns i [Använd identitetskarta som ett person-ID](#id-map).<p>Om det inte finns några person-ID:n att välja bland definieras inga person-ID:n i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity). <p>Värdet för det valda person-ID:t anses vara skiftlägeskänsligt. `abc123` och `ABC123` är till exempel två olika värden. |
+| **[!UICONTROL Data source type]** | Välj en typ av datakälla. Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
+| **[!UICONTROL Data source description]** | En beskrivning av datakällan när du har valt Annan som datakälltyp. |
 
 #### Kontobaserad anslutning
 
@@ -606,10 +608,11 @@ För en profildatauppsättning i en kontobaserad anslutning anger du:
 
 | Inställning | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Mer information om hur du använder identitetskartan som ett person-ID finns i [Använd identitetskarta som ett person-ID](#id-map).<p>Om det inte finns några person-ID:n att välja bland innebär det att inga person-ID:n har definierats i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity). <p>Värdet för det valda person-ID:t anses vara skiftlägeskänsligt. `abc123` och `ABC123` är till exempel två olika värden. |
-| **[!UICONTROL Account ID]** | Välj ett konto-ID som används för att stödja kontobaserad rapportering för datauppsättningen i listrutan med tillgängliga identiteter. |
-| **[!UICONTROL Data source type]** | Välj en typ av datakälla. <br/>Typer av datakällor omfattar: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
-| **[!UICONTROL Data source description]** | Beskriv datakällan när du har valt Annan som datakälltyp. |
+| **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Mer information om hur du använder identitetskartan som ett person-ID finns i [Använd identitetskarta som ett person-ID](#id-map).<p>Om det inte finns några person-ID:n att välja bland definieras inga person-ID:n i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity). <p>Värdet för det valda person-ID:t anses vara skiftlägeskänsligt. `abc123` och `ABC123` är till exempel två olika värden. |
+| **[!UICONTROL Global Account field]** | Välj ett globalt kontofält för att stödja kontobaserad rapportering för datauppsättningen i listrutan med tillgängliga identiteter. Gäller när du har lagt till ett globalt konto som en behållare i anslutningen. |
+| **[!UICONTROL Account field]** | Välj ett kontofält som ska ha stöd för kontobaserad rapportering för datauppsättningen i listrutan med tillgängliga identiteter. Gäller när du inte har lagt till ett globalt konto som en behållare i anslutningen. |
+| **[!UICONTROL Data source type]** | Välj en typ av datakälla. Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
+| **[!UICONTROL Data source description]** | En beskrivning av datakällan när du har valt Annan som datakälltyp. |
 
 #### Sök datauppsättning
 
@@ -617,7 +620,7 @@ De specifika inställningarna för en uppslagsdatauppsättning beror på anslutn
 
 ##### Personbaserad anslutning
 
-![Personbaserad](assets/lookup-dataset-settings-b2c.png) för inställningar för sökhändelsedatamängd
+![Sök efter händelsedatamängder, personbaserade](assets/lookup-dataset-settings-b2c.png)
 
 För en uppslagsdatauppsättning i en personbaserad anslutning anger du:
 
@@ -625,8 +628,8 @@ För en uppslagsdatauppsättning i en personbaserad anslutning anger du:
 |---|---|
 | **[!UICONTROL Key]** | Nyckeln som ska användas för en uppslagsdatauppsättning. |
 | **[!UICONTROL Matching key]** | Den matchande nyckeln som ska användas i en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd. |
-| **[!UICONTROL Data source type]** | Välj en typ av datakälla. <br/>Typer av datakällor omfattar: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
-| **[!UICONTROL Data source description]** | Beskriv datakällan när du har valt Annan som datakälltyp. |
+| **[!UICONTROL Data source type]** | Välj en typ av datakälla. Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
+| **[!UICONTROL Data source description]** | En beskrivning av datakällan när du har valt Annan som datakälltyp. |
 | **[!UICONTROL Transform dataset]** | För specifika B2B-sökdatauppsättningar kan du aktivera omvandling av en datauppsättning för korrekta B2B-personbaserade rapportscenarier. Mer information finns i [Omforma datauppsättningar för B2B-sökningar](transform-datasets-b2b-lookups.md). |
 
 
@@ -675,25 +678,6 @@ När du tar bort en datauppsättning får du ett meddelande om konsekvenserna av
 
 När du väljer ![Historik](/help/assets/icons/History.svg) **[!UICONTROL Past backfills]** i gränssnittet visar en **[!UICONTROL Past backfills: _Namn på datauppsättning_]** de senaste bakgrundsfyllningarna från datauppsättningen.
 
-## Förhandsgranska anslutning {#preview}
-
-Om du vill förhandsgranska anslutningen som du har skapat väljer du ![PageSearch](/help/assets/icons/PageSearch.svg) **[!UICONTROL Connection preview]** i dialogrutan Anslutningsinställningar.
-
-![Förhandsgranskning av anslutning](assets/create-conn4.png)
-
-Den här förhandsgranskningen innehåller några kolumner med en lista över anslutningskonfigurationen. Vilka kolumntyper som visas beror på dina enskilda datauppsättningar.
-
-
-## Anslutningskarta
-
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
-
-Om du vill se en karta över relationerna mellan datauppsättningarna som är en del av anslutningen väljer du ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** i dialogrutan Anslutningsinställningar.
-
-![Anslutningskarta](assets/connectionmap.png)
-
-Med hjälp av den här kartan får du en bättre förståelse för hur du har definierat din anslutning och hur du ställer in relationen mellan din händelse, profil, sökning och sammanfattning av datamängder med hjälp av identifierare.
-
 ## Datamängdstyper {#dataset-types}
 
 För varje datauppsättning som du lägger till i den här anslutningen anger [!UICONTROL Customer Journey Analytics] automatiskt datamängdstypen baserat på de data som kommer in.
@@ -711,9 +695,25 @@ Det finns olika datamängdstyper: [!UICONTROL Event] data, [!UICONTROL Profile] 
 | **[!UICONTROL Profile]** | Data som tillämpas på ditt konto, personer, användare eller kunder i [!UICONTROL Event]-data. Du kan till exempel överföra CRM-data om dina kunder. | Ej tillämpligt | Alla inbyggda eller anpassade scheman som baseras på klassen *XDM Individual Profile* . | Du kan välja vilket person-ID eller konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} du vill inkludera. Varje datauppsättning (utom sammanfattningsdatauppsättningar), som definieras i [!DNL Experience Platform], har en egen uppsättning med ett eller flera person-ID:n eller konto-ID:n [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} definierade. Till exempel cookie-ID, Stitched ID, User ID, Tracking Code, Account ID och så vidare.<br>![Person-ID ](assets/person-id.png)**Obs!** Om du skapar en anslutning som innehåller datauppsättningar med olika ID:n, visas detta i rapporten. Om du vill sammanfoga datauppsättningar måste du använda samma person-ID eller konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
 | **Sammanfattning** | Tidsseriedata som inte är associerade med ett enskilt person-ID. Sammanfattningsdata representerar aggregerade data på en annan aggregeringsnivå, till exempel kampanjer. Du kan använda dessa data i Customer Journey Analytics för att stödja olika användningsfall. Mer information finns i [Sammanfattningsdata](/help/data-views/summary-data.md). | Ställ automatiskt in standardtidsstämpelsfältet från händelsebaserade scheman för summering i Experience Platform. Endast kornighet varje timme eller dag stöds. | Alla inbyggda eller anpassade scheman som baseras på klassen *XDM Summary Metrics* . | Ej tillämpligt |
 
->[!MORELIKETHIS]
->
->Blogg: [Så här använder du händelse-, sökning- och profildatauppsättningar i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+## Förhandsgranska anslutning {#preview}
+
+Om du vill förhandsgranska anslutningen som du har skapat väljer du ![PageSearch](/help/assets/icons/PageSearch.svg) **[!UICONTROL Connection preview]** i dialogrutan Anslutningsinställningar.
+
+![Förhandsgranskning av anslutning](assets/create-conn4.png)
+
+Den här förhandsgranskningen innehåller några kolumner med en lista över anslutningskonfigurationen. Vilka kolumntyper som visas beror på dina enskilda datauppsättningar.
+
+
+## Anslutningskarta
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+
+Om du vill se en karta över relationerna mellan datauppsättningarna som är en del av anslutningen väljer du ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** i dialogrutan Anslutningsinställningar.
+
+![Anslutningskarta](assets/connectionmap.png)
+
+Kartan hjälper dig att få en bättre förståelse för hur du har definierat din anslutning och hur du ställer in relationen mellan din händelse, profil, sökning och sammanfattningsdatauppsättningar med hjälp av identifierare.
+
 
 ## Använd numeriska fält som söknycklar och sökvärden {#numeric}
 
@@ -779,5 +779,10 @@ När du skapar en anslutning kan du lägga till stora datauppsättningar för up
 Du kan begära en algoritmisk rensning av en stor uppslagsdatauppsättning. Den här algoritmiska rensningen sparar bara data i uppslagsdatauppsättningen som matchar nycklarna i händelsedatauppsättningen. På så sätt behöver du inte läsa in hela datauppsättningen för orensad sökning. Gamla eller mindre ofta använda objekt tas bort, vilket kan påverka rapporter något men ger avsevärda fördelar. Algoritmen tittar tillbaka 90 dagar och uppdateras varje vecka.
 
 Kontakta Adobe supportteam för mer information och aktivera den här funktionen.
+
+
+>[!MORELIKETHIS]
+>
+>Blogg: [Så här använder du händelse-, sökning- och profildatauppsättningar i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![Dela](/help/assets/icons/Share.svg)
