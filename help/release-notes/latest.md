@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Customer Journey Analytics
 description: Visa den senaste versionsinformationen om Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4e65e2fd1720b63b9dec341d4a67f7356df77fcb
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '890'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Customer Journey Analytics (april 2025)
 
-**Senast uppdaterad**: 28 april 2025
+**Senast uppdaterad**: 30 april 2025
 
 Versionsanteckningarna gäller den 27 mars-15 maj 2025. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Versionsanteckningarna gäller den 27 mars-15 maj 2025. Adobe Customer Journey A
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Ökning av de fullständiga gränserna för tabellexport** | Vi ökar antalet kolumner som kunder kan använda med fullständig tabellexport från 5 dimensioner och 5 mätvärden till 10 dimensioner och 10 mätvärden. Detta gäller alla Customer Journey Analytics-nivåer. Antalet rader som kan exporteras ändras inte. |  | 30 april 2025 |
 | **Uppdaterar radobjektet Inget värde på numeriska dimensioner** | För numeriska mått kan du med den här uppdateringen<ul><li>Använd dimensionsobjektet Inget värde i ett segment.</li><li>Utför en uppdelning i en rapport för radobjektet Inget värde.</li></ul> [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) | 27 mars 2025 |
 | **Adobe Content Analytics** | Med Adobe Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering.<p>Med färdiga rapportmallar och nya funktioner som Asset Inspector kan du spara tid. Med den här funktionen kan du inte bara visualisera mediefilen i linje med dina data, utan även öppna varje mediefil för sammanfattad information, inklusive prestanda, placeringar, attribut med mera.<p>Ni kan undersöka den nya uppsättningen innehållsdata i samband med hela kundresan för att besvara viktiga affärsfrågor, bedöma innehållsprestanda, förbättra segmenteringen, identifiera optimeringsmöjligheter och definiera nya målgrupper för aktivering.<p>Content Analytics är ett tillägg till Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics) |  | 27 mars 2025 |
 | **Mediesamling: Adobe Source Connector-uppdateringar för nya Media Reporting XDM** | Analytics Source Connector mappar automatiskt strömmande mediedata i Adobe Analytics till samma fält som används av Web SDK. Tidigare mappades data till både gamla och nya platser, men endast den nya platsen kommer att användas i framtiden. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 31 mars 2025 |

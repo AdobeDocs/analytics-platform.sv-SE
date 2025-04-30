@@ -5,7 +5,7 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 1%
@@ -189,7 +189,7 @@ Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bor
    * Har [persistence aktiverat](/help/data-views/component-settings/persistence.md)
    * Använder inte en [bindningsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Flera dimensioner från fält som refererar till olika [arrayer av objekt](/help/use-cases/object-arrays.md). (Flera dimensioner som refererar till samma array med objekt tillåts.)
-* Mer än 5 dimensioner och 5 mätvärden per rapport (upp till 5 dimensioner och 5 mätvärden stöds)
+* Mer än 10 dimensioner och 10 mätvärden per rapport (upp till 10 dimensioner och 10 mätvärden stöds)
 * I tabellkolumner:
    * Datumintervall
    * Mått
@@ -227,8 +227,8 @@ Om du tidigare använde Data Warehouse för att exportera Adobe Analytics-data k
 | Skapa en anpassad rapport | Ja | Ja |
 | Beräknade mått | Ja | Nej |
 | Segment | Ja | Begränsad |
-| Mått | Gräns på 5 | Obegränsad |
-| Mätvärden | Gräns på 5 | Obegränsad |
+| Mått | Gräns 10 | Obegränsad |
+| Mätvärden | Gräns 10 | Obegränsad |
 | Rapporteringsrader | Gräns på 3 miljoner, 30 miljoner, 150 miljoner eller 300 miljoner, beroende på skikt | Obegränsad |
 | Antal rapporter | Obegränsad | Obegränsad |
 | Ad hoc-leverans (en gång) | Ja | Ja |

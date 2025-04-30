@@ -4,9 +4,9 @@ description: Visar innehållsuppdateringar för Customer Journey Analytics-dokum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1a88be1f79bc6dc07f849af5f32f3472105ee3ed
+source-git-commit: 8a8244bff45017a4b021599df6ff3dc37cf8e1c6
 workflow-type: tm+mt
-source-wordcount: '5077'
+source-wordcount: '5107'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Funktion | Beskrivning |
 | --- | --- |
 | **April 2025** | |
+| Förbättrade fullständiga exportbegränsningar för tabeller | [antalet kolumner](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) som kunder kan använda med fullständig tabellexport har ändrats från 5 dimensioner och 5 mätvärden till 10 dimensioner och 10 mätvärden. |
 | Anslutningar | Uppdaterade och omarbetade dokumentationen om kundreseanslutningar för kommande B2B edition-kundresa. |
 | Produktanalys - användningsfall | [Produktanalys har lagts till i Customer Journey Analytics](/help/use-cases/product-analysis.md). |
 | Delade mått | Dokumentation för funktionen [Delade mått och dimensioner](/help/data-views/shared-metrics-dimensions/smd-overview.md) har lagts till. |
