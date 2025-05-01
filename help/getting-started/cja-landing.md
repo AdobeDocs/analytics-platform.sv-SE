@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '884'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,12 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics-produk
 Med Adobe Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering.
 
 [![bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
+>[!TAB Delade mått och dimensioner]
+
+Gemensamma mätvärden och dimensioner utgör en central plats för att hantera mått och mätvärden som kan användas i ett valfritt antal datavyer. Dessa komponenter är särskilt användbara för organisationer som använder flera datavyer, särskilt om dessa datavyer har gemensamma gemensamma komponentinställningar.
+
+[![bild](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
 >[!TAB AI-assistenten]
 
@@ -54,6 +60,7 @@ Intelligenta bildtexter stöds nu, med ytterligare gränssnittsförbättringar, 
 Med varningar kan du meddelas baserat på ändrade procentsatser eller specifika datapunkter. Du kan förhandsgranska hur ofta en avisering kommer att utlösas, skicka aviseringar via e-post eller SMS, skapa staplade aviseringar med mera.
 
 [![bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB Sammanfattningsdata]
 
